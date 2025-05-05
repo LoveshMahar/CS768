@@ -40,7 +40,7 @@ class PaperDataset:
         """Generate BERT embeddings for paper titles and abstracts"""
         features = {}
         for node, data in self.G.nodes(data=True):
-            print(node)
+            # print(node)
             title = data['title']
             folder = data['folder']
             
