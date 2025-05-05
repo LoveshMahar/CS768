@@ -1,0 +1,532 @@
+@STRING{NIPS="Proc. the Advances in Neural Information Processing Systems (NeurIPS)"}
+@STRING{ICML="Proc. the International Conference on Machine Learning (ICML)"}
+@STRING{JMLR="Journal of Machine Learning Research (JMLR)"}
+@STRING{ICWSM="Proc. the ACM International Conference on Web Search and Data Mining (ICWSM)"}
+@STRING{SDM="Proc. the ACM International Conference on Web Search and Data Mining (SDM)"}
+@STRING{ICDM="Proc. the IEEE International Conference on Data Mining (ICDM)"}
+@STRING{WWW="Proc. the International Conference on World Wide Web (WWW)"}
+@STRING{KDD="Proc. the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)"}
+@STRING{IJCAI="Proc. the International Joint Conference on Artificial Intelligence (IJCAI)"}
+@STRING{UAI="Proc. the Conference on Uncertainty in Artificial Intelligence (UAI)"}
+@STRING{RecSys="Proc. the ACM Conference on Recommender systems (RecSys)"}
+@STRING{ACL="Proc. the Annual Meeting of the Association for Computational Linguistics (ACL)"}
+@STRING(ICDE="Proc. the International Conference on Data Engineering (ICDE)")
+@STRING(CIKM="Proc. the ACM Conference on Information and Knowledge Management (CIKM)")
+@STRING(TVCG="IEEE Transactions on Visualization and Computer Graphics (TVCG)")
+@STRING(AAAI="Proc. the AAAI Conference on Artificial Intelligence (AAAI)")
+@STRING(ICLR="Proc. the International Conference on Learning Representations (ICLR)")
+@STRING(TOG="Proc. the ACM Transactions on Graphics (ToG)")
+@STRING{TPAMI="The IEEE Transactions on Pattern Analysis and Machine Intelligence (TPMAI)"}
+@STRING{EMNLP="Proc. of the Conference on Empirical Methods in Natural Language Processing (EMNLP)"}
+@STRING{CVPR="Proc. of the IEEE conference on computer vision and pattern recognition (CVPR)"}
+@STRING{NAACL="Proc. of The Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)"}
+@STRING{ECCV="Proc. of the European Conference on Computer Vision (ECCV)"}
+@STRING{ICCV="Proc. of the IEEE international conference on computer vision (ICCV)"}
+@STRING{CHI="Proc. of the CHI Conference on Human Factors in Computing Systems (CHI)"}
+@STRING{COLING="Proc. of the International Conference on Computational Linguistics (COLING)"}
+@STRING{BMVC="Proc. of the British Machine Vision Conference (BMVC)"}
+
+@STRING{SIGIR="Proc. of the International Conference on Research {\&} Development in Information Retrieval (SIGIR)"}
+@STRING{WACV="Proc. of the IEEE Winter Conference on Applications of Computer Vision, (WACV)"}
+
+% flooding
+@inproceedings{IshidaYS0S20,
+  author    = {Takashi Ishida and
+               Ikko Yamane and
+               Tomoya Sakai and
+               Gang Niu and
+               Masashi Sugiyama},
+  title     = {Do We Need Zero Training Loss After Achieving Zero Training Error?},
+  booktitle = ICML,
+  year      = {2020},
+}
+
+
+% Time series
+%% autoformer
+@inproceedings{WuXWL21,
+  author    = {Haixu Wu and
+               Jiehui Xu and
+               Jianmin Wang and
+               Mingsheng Long},
+  title     = {Autoformer: Decomposition Transformers with Auto-Correlation for Long-Term
+               Series Forecasting},
+  booktitle =NIPS,
+}
+
+%% Pyraformer
+@inproceedings{
+    liu2022pyraformer,
+    title={Pyraformer: Low-Complexity Pyramidal Attention for Long-Range Time Series Modeling and Forecasting},
+    author={Shizhan Liu and Hang Yu and Cong Liao and Jianguo Li and Weiyao Lin and Alex X. Liu and Schahram Dustdar},
+    booktitle=ICLR,
+    year={2022},
+}
+
+%% informer
+@inproceedings{ZhouZPZLXZ21,
+  author    = {Haoyi Zhou and
+               Shanghang Zhang and
+               Jieqi Peng and
+               Shuai Zhang and
+               Jianxin Li and
+               Hui Xiong and
+               Wancai Zhang},
+  title     = {Informer: Beyond Efficient Transformer for Long Sequence Time-Series
+               Forecasting},
+  booktitle =AAAI,
+  year      = {2021},
+}
+
+
+%% N-Beats
+@inproceedings{OreshkinCCB20,
+  author    = {Boris N. Oreshkin and
+               Dmitri Carpov and
+               Nicolas Chapados and
+               Yoshua Bengio},
+  title     = {{N-BEATS:} Neural basis expansion analysis for interpretable time
+               series forecasting},
+  booktitle = ICLR,
+  year      = {2020},
+}
+
+%% LogTrans
+@inproceedings{LiJXZCWY19,
+  author    = {Shiyang Li and
+               Xiaoyong Jin and
+               Yao Xuan and
+               Xiyou Zhou and
+               Wenhu Chen and
+               Yu{-}Xiang Wang and
+               Xifeng Yan},
+  title     = {Enhancing the Locality and Breaking the Memory Bottleneck of Transformer
+               on Time Series Forecasting},
+  booktitle = NIPS,
+  year      = {2019},
+}
+
+%% Reformer
+@inproceedings{KitaevKL20,
+  author    = {Nikita Kitaev and
+               Lukasz Kaiser and
+               Anselm Levskaya},
+  title     = {Reformer: The Efficient Transformer},
+  booktitle = ICLR,
+  year      = {2020},
+}
+
+
+
+%% RNNs
+
+
+@inproceedings{QinSCCJC17,
+  author    = {Yao Qin and
+               Dongjin Song and
+               Haifeng Chen and
+               Wei Cheng and
+               Guofei Jiang and
+               Garrison W. Cottrell},
+  editor    = {Carles Sierra},
+  title     = {A Dual-Stage Attention-Based Recurrent Neural Network for Time Series Prediction},
+  booktitle = IJCAI,
+  year      = {2017},
+}
+
+@article{wen2017multi,
+  title={A multi-horizon quantile recurrent forecaster},
+  author={Wen, Ruofeng and Torkkola, Kari and Narayanaswamy, Balakrishnan and Madeka, Dhruv},
+  journal={arXiv preprint arXiv:1711.11053},
+  year={2017}
+}
+
+@inproceedings{SongRTS18,
+  author    = {Huan Song and
+               Deepta Rajan and
+               Jayaraman J. Thiagarajan and
+               Andreas Spanias},
+  title     = {Attend and Diagnose: Clinical Time Series Analysis Using Attention
+               Models},
+  booktitle = AAAI,
+  year      = {2018},
+} %%% rnn, medical
+
+@inproceedings{LiYS018,
+  author    = {Yaguang Li and
+               Rose Yu and
+               Cyrus Shahabi and
+               Yan Liu},
+  title     = {Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting},
+  booktitle = ICLR,
+  year      = {2018},
+} %%% rnn, traffic
+
+%% CNNs
+
+@inproceedings{LaiCYL18,
+  author    = {Guokun Lai and
+               Wei{-}Cheng Chang and
+               Yiming Yang and
+               Hanxiao Liu},
+  title     = {Modeling Long- and Short-Term Temporal Patterns with Deep Neural Networks},
+  booktitle = {SIGIR}, 
+  year      = {2018},
+}
+
+@inproceedings{Stoller0ED20,
+  author    = {Daniel Stoller and
+               Mi Tian and
+               Sebastian Ewert and
+               Simon Dixon},
+  title     = {Seq-U-Net: {A} One-Dimensional Causal U-Net for Efficient Sequence
+               Modelling},
+  booktitle = IJCAI,
+  year      = {2020},
+}
+
+%% TCNs
+@inproceedings{OordDZSVGKSK16,
+  author    = {A{\"{a}}ron van den Oord and
+               Sander Dieleman and
+               Heiga Zen and
+               Karen Simonyan and
+               Oriol Vinyals and
+               Alex Graves and
+               Nal Kalchbrenner and
+               Andrew W. Senior and
+               Koray Kavukcuoglu},
+  title     = {WaveNet: {A} Generative Model for Raw Audio},
+  publisher = {{ISCA}},
+  year      = {2016},
+}
+
+@article{abs-1803-01271,
+  author    = {Shaojie Bai and
+               J. Zico Kolter and
+               Vladlen Koltun},
+  title     = {An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling},
+  journal   = {CoRR},
+  volume    = {abs/1803.01271},
+  year      = {2018},
+}
+
+@inproceedings{SenYD19,
+  author    = {Rajat Sen and
+               Hsiang{-}Fu Yu and
+               Inderjit S. Dhillon},
+  title     = {Think Globally, Act Locally: {A} Deep Neural Network Approach to High-Dimensional Time Series Forecasting},
+  booktitle = NIPS,
+  year      = {2019},
+}
+
+%% Others
+@article{box1974some,
+  title={Some recent advances in forecasting and control},
+  author={Box, George EP and Jenkins, Gwilym M and MacGregor, John F},
+  journal={Journal of the Royal Statistical Society: Series C (Applied Statistics)},
+  year={1974},
+  publisher={Wiley Online Library}
+}
+
+@article{taylor2018forecasting,
+  title={Forecasting at scale},
+  author={Taylor, Sean J and Letham, Benjamin},
+  journal={The American Statistician},
+  volume={72},
+  number={1},
+  pages={37--45},
+  year={2018},
+  publisher={Taylor \& Francis}
+}
+
+%% disease
+@inproceedings{MatsubaraSPF14,
+  author    = {Yasuko Matsubara and
+               Yasushi Sakurai and
+               Willem G. van Panhuis and
+               Christos Faloutsos},
+  title     = {{FUNNEL:} automatic mining of spatially coevolving epidemics},
+  booktitle = KDD,
+  year      = {2014},
+}
+
+
+%% economics/finance
+@inproceedings{DingZLD15,
+  author    = {Xiao Ding and
+               Yue Zhang and
+               Ting Liu and
+               Junwen Duan},
+  title     = {Deep Learning for Event-Driven Stock Prediction},
+  booktitle = IJCAI,
+  year      = {2015},
+}
+
+% energy
+@inproceedings{PangYZZXT18,
+  author    = {Yue Pang and
+               Bo Yao and
+               Xiangdong Zhou and
+               Yong Zhang and
+               Yiming Xu and
+               Zijing Tan},
+  title     = {Hierarchical Electricity Time Series Forecasting for Integrating Consumption Patterns Analysis and Aggregation Consistency},
+  booktitle = IJCAI,
+  year      = {2018},
+}
+
+% Regularization
+
+@article{abs-2109-11649,
+  author    = {Mahdy Shirdel and
+               Reza Asadi and
+               Duc Do and
+               Michael Hintlian},
+  title     = {Deep Learning with Kernel Flow Regularization for Time Series Forecasting},
+  journal   = {CoRR},
+  volume    = {abs/2109.11649},
+  year      = {2021},
+  eprinttype = {arXiv},
+}
+
+@inproceedings{TaiebYBR17,
+  author    = {Souhaib Ben Taieb and
+               Jiafan Yu and
+               Mateus Neves Barreto and
+               Ram Rajagopal},
+  title     = {Regularization in Hierarchical Time Series Forecasting with Application to Electricity Smart Meter Data},
+  booktitle = AAAI,
+  year      = {2017},
+}
+
+
+@inproceedings{HansonP88,
+  author    = {Stephen Jose Hanson and
+               Lorien Y. Pratt},
+  title     = {Comparing Biases for Minimal Network Construction with Back-Propagation},
+  booktitle = NIPS,
+  year      = {1988},
+}
+
+@inproceedings{MorganB89,
+  author    = {Nelson Morgan and
+               Herv{\'{e}} Bourlard},
+  title     = {Generalization and Parameter Estimation in Feedforward Netws: Some Experiments},
+  booktitle = NIPS,
+  year      = {1989},
+}
+
+@article{SrivastavaHKSS14,
+  author    = {Nitish Srivastava and
+               Geoffrey E. Hinton and
+               Alex Krizhevsky and
+               Ilya Sutskever and
+               Ruslan Salakhutdinov},
+  title     = {Dropout: a simple way to prevent neural networks from overfitting},
+  journal   = {Journal of Machine Learning Research},
+  volume    = {15},
+  pages     = {1929--1958},
+  year      = {2014},
+}
+
+% EMA
+
+%% mean teacher
+@inproceedings{TarvainenV17,
+  author    = {Antti Tarvainen and
+               Harri Valpola},
+  title     = {Mean teachers are better role models: Weight-averaged consistency targets improve semi-supervised deep learning results},
+  booktitle = NIPS,
+  year      = {2017},
+}
+
+%% MOCO
+@inproceedings{He0WXG20,
+  author    = {Kaiming He and
+               Haoqi Fan and
+               Yuxin Wu and
+               Saining Xie and
+               Ross B. Girshick},
+  title     = {Momentum Contrast for Unsupervised Visual Representation Learning},
+  booktitle = CVPR,
+  year      = {2020},
+}
+
+%% BYOL
+@inproceedings{GrillSATRBDPGAP20,
+  author    = {Jean{-}Bastien Grill and
+               Florian Strub and
+               Florent Altch{\'{e}} and
+               Corentin Tallec and
+               Pierre H. Richemond and
+               Elena Buchatskaya and
+               Carl Doersch and
+               Bernardo {\'{A}}vila Pires and
+               Zhaohan Guo and
+               Mohammad Gheshlaghi Azar and
+               Bilal Piot and
+               Koray Kavukcuoglu and
+               R{\'{e}}mi Munos and
+               Michal Valko},
+  title     = {Bootstrap Your Own Latent - {A} New Approach to Self-Supervised Learning},
+  booktitle = NIPS,
+  year      = {2020},
+}
+
+% Loss landscape
+@inproceedings{Li0TSG18,
+  author    = {Hao Li and
+               Zheng Xu and
+               Gavin Taylor and
+               Christoph Studer and
+               Tom Goldstein},
+  title     = {Visualizing the Loss Landscape of Neural Nets},
+  booktitle = NIPS,
+  year      = {2018},
+}
+
+@inproceedings{NamukHowDoVision,
+  author    = {Namuk Park and
+               Songkuk Kim},
+  title     = {How Do Vision Transformers Work?},
+  booktitle = ICLR,
+  year      = {2022},
+}
+
+@inproceedings{XiangningWhenVision,
+  author    = {Xiangning Chen and
+               Cho{-}Jui Hsieh and
+               Boqing Gong},
+  title     = {When Vision Transformers Outperform ResNets without Pretraining or Strong Data Augmentations},
+  booktitle = ICLR,
+  year      = {2022},
+}
+
+
+
+% State space models
+
+%% Traditional SSM
+@book{durbin2012time,
+  title={Time series analysis by state space methods},
+  author={Durbin, James and Koopman, Siem Jan},
+  volume={38},
+  year={2012},
+  publisher={OUP Oxford}
+}
+
+@book{hyndman2008forecasting,
+  title={Forecasting with exponential smoothing: the state space approach},
+  author={Hyndman, Rob and Koehler, Anne B and Ord, J Keith and Snyder, Ralph D},
+  year={2008},
+  publisher={Springer Science \& Business Media}
+}
+
+%% Deep SSM
+@inproceedings{RangapuramSGSWJ18,
+  author    = {Syama Sundar Rangapuram and
+               Matthias W. Seeger and
+               Jan Gasthaus and
+               Lorenzo Stella and
+               Yuyang Wang and
+               Tim Januschowski},
+  title     = {Deep State Space Models for Time Series Forecasting},
+  booktitle = NIPS,
+  year      = {2018},
+}
+
+%% Kalman filter base
+@inproceedings{BezenacRBBKSHGJ20,
+  author    = {Emmanuel de B{\'{e}}zenac and
+               Syama Sundar Rangapuram and
+               Konstantinos Benidis and
+               Michael Bohlke{-}Schneider and
+               Richard Kurle and
+               Lorenzo Stella and
+               Hilaf Hasson and
+               Patrick Gallinari and
+               Tim Januschowski},
+  title     = {Normalizing Kalman Filters for Multivariate Time Series Analysis},
+  booktitle = NIPS,
+  year      = {2020},
+}
+
+@inproceedings{KlushynKSCS21,
+  author    = {Alexej Klushyn and
+               Richard Kurle and
+               Maximilian Soelch and
+               Botond Cseke and
+               Patrick van der Smagt},
+  title     = {Latent Matters: Learning Deep State-Space Models},
+  booktitle = NIPS,
+  year      = {2021},
+}
+
+
+%% Non linear dynamics
+@inproceedings{KrishnanSS17,
+  author    = {Rahul G. Krishnan and
+               Uri Shalit and
+               David A. Sontag},
+  title     = {Structured Inference Networks for Nonlinear State Space Models},
+  booktitle = AAAI,
+  year      = {2017},
+}
+
+%% others
+@inproceedings{KurleRBGG20,
+  author    = {Richard Kurle and
+               Syama Sundar Rangapuram and
+               Emmanuel de B{\'{e}}zenac and
+               Stephan G{\"{u}}nnemann and
+               Jan Gasthaus},
+  title     = {Deep Rao-Blackwellised Particle Filters for Time Series Forecasting},
+  booktitle = NIPS,
+  year      = {2020},
+}
+
+@inproceedings{AnsariBKTSSWJ21,
+  author    = {Abdul Fatir Ansari and
+               Konstantinos Benidis and
+               Richard Kurle and
+               Ali Caner T{\"{u}}rkmen and
+               Harold Soh and
+               Alexander J. Smola and
+               Bernie Wang and
+               Tim Januschowski},
+  title     = {Deep Explicit Duration Switching Models for Time Series},
+  booktitle = NIPS,
+  year      = {2021},
+}
+
+% RevIn
+@inproceedings{kim2021reversible,
+  title={Reversible instance normalization for accurate time-series forecasting against distribution shift},
+  author={Kim, Taesung and Kim, Jinhee and Tae, Yunwon and Park, Cheonbok and Choi, Jang-Ho and Choo, Jaegul},
+  booktitle=ICLR,
+  year={2021}
+}
+
+% DeepAR
+@article{FlunkertSG17,
+  author    = {Valentin Flunkert and
+               David Salinas and
+               Jan Gasthaus},
+  title     = {DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks},
+  journal   = {CoRR},
+  volume    = {abs/1704.04110},
+  year      = {2017},
+}
+
+@inproceedings{WuPLJZ19,
+  author    = {Zonghan Wu and
+               Shirui Pan and
+               Guodong Long and
+               Jing Jiang and
+               Chengqi Zhang},
+  editor    = {Sarit Kraus},
+  title     = {Graph WaveNet for Deep Spatial-Temporal Graph Modeling},
+  booktitle = IJCAI,
+  year      = {2019},
+}

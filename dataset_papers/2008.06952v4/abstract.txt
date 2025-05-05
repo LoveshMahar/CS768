@@ -1,0 +1,13 @@
+Symmetric functions, which take as input an unordered, fixed-size set, are
+known to be universally representable by neural networks that enforce
+permutation invariance. These architectures only give guarantees for fixed
+input sizes, yet in many practical applications, including point clouds and
+particle physics, a relevant notion of generalization should include varying
+the input size. In this work we treat symmetric functions (of any size) as
+functions over probability measures, and study the learning and representation
+of neural networks defined on measures. By focusing on shallow architectures,
+we establish approximation and generalization bounds under different choices of
+regularization (such as RKHS and variation norms), that capture a hierarchy of
+functional spaces with increasing degree of non-linear learning. The resulting
+models can be learned efficiently and enjoy generalization guarantees that
+extend across input sizes, as we verify empirically.

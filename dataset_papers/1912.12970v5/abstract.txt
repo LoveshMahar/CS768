@@ -1,0 +1,16 @@
+This paper develops a Pontryagin Differentiable Programming (PDP)
+methodology, which establishes a unified framework to solve a broad class of
+learning and control tasks. The PDP distinguishes from existing methods by two
+novel techniques: first, we differentiate through Pontryagin's Maximum
+Principle, and this allows to obtain the analytical derivative of a trajectory
+with respect to tunable parameters within an optimal control system, enabling
+end-to-end learning of dynamics, policies, or/and control objective functions;
+and second, we propose an auxiliary control system in the backward pass of the
+PDP framework, and the output of this auxiliary control system is the
+analytical derivative of the original system's trajectory with respect to the
+parameters, which can be iteratively solved using standard control tools. We
+investigate three learning modes of the PDP: inverse reinforcement learning,
+system identification, and control/planning. We demonstrate the capability of
+the PDP in each learning mode on different high-dimensional systems, including
+multi-link robot arm, 6-DoF maneuvering quadrotor, and 6-DoF rocket powered
+landing.

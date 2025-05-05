@@ -1,0 +1,1080 @@
+% References Boris
+
+@article{Li2020,
+   abstract = {The classical development of neural networks has primarily focused on learning mappings between finite-dimensional Euclidean spaces. Recently, this has been generalized to neural operators that learn mappings between function spaces. For partial differential equations (PDEs), neural operators directly learn the mapping from any functional parametric dependence to the solution. Thus, they learn an entire family of PDEs, in contrast to classical methods which solve one instance of the equation. In this work, we formulate a new neural operator by parameterizing the integral kernel directly in Fourier space, allowing for an expressive and efficient architecture. We perform experiments on Burgers' equation, Darcy flow, and Navier-Stokes equation. The Fourier neural operator is the first ML-based method to successfully model turbulent flows with zero-shot super-resolution. It is up to three orders of magnitude faster compared to traditional PDE solvers. Additionally, it achieves superior accuracy compared to previous learning-based solvers under fixed resolution.},
+   author = {Zongyi Li and Nikola Kovachki and Kamyar Azizzadenesheli and Burigede Liu and Kaushik Bhattacharya and Andrew Stuart and Anima Anandkumar},
+   title = {Fourier Neural Operator for Parametric Partial Differential Equations},
+    journal={arXiv preprint arXiv:2010.08895},
+   year = {2020},
+}
+@article{Bonev2023,
+   abstract = {Fourier Neural Operators (FNOs) have proven to be an efficient and effective method for resolution-independent operator learning in a broad variety of application areas across scientific machine learning. A key reason for their success is their ability to accurately model long-range dependencies in spatio-temporal data by learning global convolutions in a computationally efficient manner. To this end, FNOs rely on the discrete Fourier transform (DFT), however, DFTs cause visual and spectral artifacts as well as pronounced dissipation when learning operators in spherical coordinates since they incorrectly assume a flat geometry. To overcome this limitation, we generalize FNOs on the sphere, introducing Spherical FNOs (SFNOs) for learning operators on spherical geometries. We apply SFNOs to forecasting atmospheric dynamics, and demonstrate stable auto\-regressive rollouts for a year of simulated time (1,460 steps), while retaining physically plausible dynamics. The SFNO has important implications for machine learning-based simulation of climate dynamics that could eventually help accelerate our response to climate change.},
+   author = {Boris Bonev and Thorsten Kurth and Christian Hundt and Jaideep Pathak and Maximilian Baust and Karthik Kashinath and Anima Anandkumar},
+   title = {Spherical {Fourier} Neural Operators: Learning Stable Dynamics on the Sphere},
+   journal={arXiv preprint arXiv:2306.03838},
+   year = {2023},
+}
+
+@article{li2020multipole,
+  title={Multipole graph neural operator for parametric partial differential equations},
+  author={Li, Zongyi and Kovachki, Nikola and Azizzadenesheli, Kamyar and Liu, Burigede and Stuart, Andrew and Bhattacharya, Kaushik and Anandkumar, Anima},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={6755--6766},
+  year={2020}
+}
+
+@article{rahman2023truly,
+  title={Truly Scale-Equivariant Deep Nets with {Fourier} Layers},
+  author={Rahman, Md Ashiqur and Yeh, Raymond A},
+  journal={arXiv preprint arXiv:2311.02922},
+  year={2023}
+}
+
+
+
+@article{ghosh2019scale,
+  title={Scale steerable filters for locally scale-invariant convolutional neural networks},
+  author={Ghosh, Rohan and Gupta, Anupam K},
+  journal={arXiv preprint arXiv:1906.03861},
+  year={2019}
+}
+
+
+@article{bekkers2019b,
+  title={B-spline {CNNs} on {Lie} groups},
+  author={Bekkers, Erik J},
+  journal={arXiv preprint arXiv:1909.12057},
+  year={2019}
+}
+
+@article{sosnovik2019scale,
+  title={Scale-equivariant steerable networks},
+  author={Sosnovik, Ivan and Szmaja, Micha{\l} and Smeulders, Arnold},
+  journal={arXiv preprint arXiv:1910.11093},
+  year={2019}
+}
+
+
+@inproceedings{wang2018deep,
+  title={Deep parametric continuous convolutional neural networks},
+  author={Wang, Shenlong and Suo, Simon and Ma, Wei-Chiu and Pokrovsky, Andrei and Urtasun, Raquel},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={2589--2597},
+  year={2018}
+}
+
+@article{sosnovik2021disco,
+  title={Disco: accurate discrete scale convolutions},
+  author={Sosnovik, Ivan and Moskalev, Artem and Smeulders, Arnold},
+  journal={arXiv preprint arXiv:2106.02733},
+  year={2021}
+}
+
+
+
+@article{xu2014scale,
+  title={Scale-invariant convolutional neural networks},
+  author={Xu, Yichong and Xiao, Tianjun and Zhang, Jiaxing and Yang, Kuiyuan and Zhang, Zheng},
+  journal={arXiv preprint arXiv:1411.6369},
+  year={2014}
+}
+
+@article{marcos2018scale,
+  title={Scale equivariance in CNNs with vector fields},
+  author={Marcos, Diego and Kellenberger, Benjamin and Lobry, Sylvain and Tuia, Devis},
+  journal={arXiv preprint arXiv:1807.11783},
+  year={2018}
+}
+
+
+
+@article{worrall2019deep,
+  title={Deep scale-spaces: Equivariance over scale},
+  author={Worrall, Daniel and Welling, Max},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+
+
+@article{li2020neural,
+  title={Neural operator: Graph kernel network for partial differential equations},
+  author={Li, Zongyi and Kovachki, Nikola and Azizzadenesheli, Kamyar and Liu, Burigede and Bhattacharya, Kaushik and Stuart, Andrew and Anandkumar, Anima},
+  journal={arXiv preprint arXiv:2003.03485},
+  year={2020}
+}
+
+
+@article{Kovachki2021,
+   abstract = {The classical development of neural networks has primarily focused on learning mappings between finite dimensional Euclidean spaces or finite sets. We propose a generalization of neural networks to learn operators, termed neural operators, that map between infinite dimensional function spaces. We formulate the neural operator as a composition of linear integral operators and nonlinear activation functions. We prove a universal approximation theorem for our proposed neural operator, showing that it can approximate any given nonlinear continuous operator. The proposed neural operators are also discretization-invariant, i.e., they share the same model parameters among different discretization of the underlying function spaces. Furthermore, we introduce four classes of efficient parameterization, viz., graph neural operators, multi-pole graph neural operators, low-rank neural operators, and Fourier neural operators. An important application for neural operators is learning surrogate maps for the solution operators of partial differential equations (PDEs). We consider standard PDEs such as the Burgers, Darcy subsurface flow, and the Navier-Stokes equations, and show that the proposed neural operators have superior performance compared to existing machine learning based methodologies, while being several orders of magnitude faster than conventional PDE solvers.},
+   author = {Nikola Kovachki and Zongyi Li and Burigede Liu and Kamyar Azizzadenesheli and Kaushik Bhattacharya and Andrew Stuart and Anima Anandkumar},
+   title = {Neural Operator: Learning Maps Between Function Spaces},
+   journal={arXiv preprint arXiv:2108.08481},
+   year = {2021},
+}
+@article{Rahman2022,
+   abstract = {Neural operators generalize classical neural networks to maps between infinite-dimensional spaces, e.g., function spaces. Prior works on neural operators proposed a series of novel methods to learn such maps and demonstrated unprecedented success in learning solution operators of partial differential equations. Due to their close proximity to fully connected architectures, these models mainly suffer from high memory usage and are generally limited to shallow deep learning models. In this paper, we propose U-shaped Neural Operator (U-NO), a U-shaped memory enhanced architecture that allows for deeper neural operators. U-NOs exploit the problem structures in function predictions and demonstrate fast training, data efficiency, and robustness with respect to hyperparameters choices. We study the performance of U-NO on PDE benchmarks, namely, Darcy's flow law and the Navier-Stokes equations. We show that U-NO results in an average of 26% and 44% prediction improvement on Darcy's flow and turbulent Navier-Stokes equations, respectively, over the state of the art. On Navier-Stokes 3D spatiotemporal operator learning task, we show U-NO provides 37% improvement over the state of art methods.},
+   author = {Md Ashiqur Rahman and Zachary E. Ross and Kamyar Azizzadenesheli},
+   journal={arXiv preprint arXiv:2204.11127},
+   url = {http://arxiv.org/abs/2204.11127},
+   year = {2022},
+}
+
+
+@article{Esteves2023,
+   abstract = {Spherical CNNs generalize CNNs to functions on the sphere, by using spherical convolutions as the main linear operation. The most accurate and efficient way to compute spherical convolutions is in the spectral domain (via the convolution theorem), which is still costlier than the usual planar convolutions. For this reason, applications of spherical CNNs have so far been limited to small problems that can be approached with low model capacity. In this work, we show how spherical CNNs can be scaled for much larger problems. To achieve this, we make critical improvements including novel variants of common model components, an implementation of core operations to exploit hardware accelerator characteristics, and application-specific input representations that exploit the properties of our model. Experiments show our larger spherical CNNs reach state-of-the-art on several targets of the QM9 molecular benchmark, which was previously dominated by equivariant graph neural networks, and achieve competitive performance on multiple weather forecasting tasks. Our code is available at https://github.com/google-research/spherical-cnn.},
+   author = {Carlos Esteves and Jean-Jacques Slotine and Ameesh Makadia},
+   month = {6},
+   title = {Scaling Spherical {CNNs}},
+   journal={arXiv preprint arXiv:2306.05420},
+   year = {2023},
+}
+@misc{,
+   abstract = {Learning equivariant representations is a promising way to reduce sample and model complexity and improve the generalization performance of deep neural networks. The spherical CNNs are successful examples, producing SO(3)-equivariant representations of spherical inputs. There are two main types of spherical CNNs. The first type lifts the inputs to functions on the rotation group SO(3) and applies convolutions on the group, which are computationally expensive since SO(3) has one extra dimension. The second type applies convolutions directly on the sphere, which are limited to zonal (isotropic) filters, and thus have limited expressivity. In this paper, we present a new type of spherical CNN that allows anisotropic filters in an efficient way, without ever leaving the spherical domain. The key idea is to consider spin-weighted spherical functions, which were introduced in physics in the study of gravitational waves. These are complex-valued functions on the sphere whose phases change upon rotation. We define a convolution between spin-weighted functions and build a CNN based on it. The spin-weighted functions can also be interpreted as spherical vector fields, allowing applications to tasks where the inputs or outputs are vector fields. Experiments show that our method outperforms previous methods on tasks like classification of spherical images, classification of 3D shapes and semantic segmentation of spherical panoramas.},
+   author = {Carlos Esteves and Ameesh Makadia and Google Research and Kostas Daniilidis},
+   title = {Spin-Weighted Spherical CNNs},
+   url = {https://github.com/},
+}
+
+@article{Paszke2019,
+   abstract = {Deep learning frameworks have often focused on either usability or speed, but not both. PyTorch is a machine learning library that shows that these two goals are in fact compatible: it provides an imperative and Pythonic programming style that supports code as a model, makes debugging easy and is consistent with other popular scientific computing libraries, while remaining efficient and supporting hardware accelerators such as GPUs. In this paper, we detail the principles that drove the implementation of PyTorch and how they are reflected in its architecture. We emphasize that every aspect of PyTorch is a regular Python program under the full control of its user. We also explain how the careful and pragmatic implementation of the key components of its runtime enables them to work together to achieve compelling performance. We demonstrate the efficiency of individual subsystems, as well as the overall speed of PyTorch on several common benchmarks.},
+   author = {Adam Paszke and Sam Gross and Francisco Massa and Adam Lerer and James Bradbury and Gregory Chanan and Trevor Killeen and Zeming Lin and Natalia Gimelshein and Luca Antiga and Alban Desmaison and Andreas Köpf and Edward Yang and Zach DeVito and Martin Raison and Alykhan Tejani and Sasank Chilamkurthy and Benoit Steiner and Lu Fang and Junjie Bai and Soumith Chintala},
+   month = {12},
+   title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+   url = {http://arxiv.org/abs/1912.01703},
+   year = {2019},
+}
+@article{McEwen2011,
+   abstract = {We develop a novel sampling theorem on the sphere and corresponding fast algorithms by associating the sphere with the torus through a periodic extension. The fundamental property of any sampling theorem is the number of samples required to represent a band-limited signal. To represent exactly a signal on the sphere band-limited at L, all sampling theorems on the sphere require O(L^2) samples. However, our sampling theorem requires less than half the number of samples of other equiangular sampling theorems on the sphere and an asymptotically identical, but smaller, number of samples than the Gauss-Legendre sampling theorem. The complexity of our algorithms scale as O(L^3), however, the continual use of fast Fourier transforms reduces the constant prefactor associated with the asymptotic scaling considerably, resulting in algorithms that are fast. Furthermore, we do not require any precomputation and our algorithms apply to both scalar and spin functions on the sphere without any change in computational complexity or computation time. We make our implementation of these algorithms available publicly and perform numerical experiments demonstrating their speed and accuracy up to very high band-limits. Finally, we highlight the advantages of our sampling theorem in the context of potential applications, notably in the field of compressive sampling.},
+   author = {J. D. McEwen and Y. Wiaux},
+   doi = {10.1109/TSP.2011.2166394},
+   month = {10},
+   title = {A novel sampling theorem on the sphere},
+   url = {http://arxiv.org/abs/1110.6298 http://dx.doi.org/10.1109/TSP.2011.2166394},
+   year = {2011},
+}
+@misc{Giraldo2001,
+   abstract = {The spectral element method for the two-dimensional shallow water equations on the sphere is presented. The equations are written in conservation form and the domains are discretized using quadrilateral elements obtained from the generalized icosahedral grid introduced previously (Giraldo FX. Lagrange-Galerkin methods on spherical geodesic grids: the shallow water equations. Journal of Computational Physics 2000; 160: 336-368). The equations are written in Cartesian coordinates that introduce an additional momentum equation, but the pole singularities disappear. This paper represents a departure from previously published work on solving the shallow water equations on the sphere in that the equations are all written, discretized, and solved in three-dimensional Cartesian space. Because the equations are written in a three-dimensional Cartesian coordinate system, the algorithm simplifies into the integration of surface elements on the sphere from the fully three-dimensional equations. A mapping (Song Ch, Wolf JP. The scaled boundary finite element method-alias consistent infinitesimal finite element cell method-for diffusion. International Journal for Numerical Methods in Engineering 1999; 45: 1403-1431) which simplifies these computations is described and is shown to contain the Eulerian version of the method introduced previously by Giraldo (Journal of Computational Physics 2000; 160: 336-368) for the special case of triangular elements. The significance of this mapping is that although the equations are written in Cartesian coordinates , the mapping takes into account the curvature of the high-order spectral elements, thereby allowing the elements to lie entirely on the surface of the sphere. In addition, using this mapping simplifies all of the three-dimensional spectral-type finite element surface integrals because any of the typical two-dimensional planar finite element or spectral element basis functions found in any textbook (for example, Huebner et al.},
+   author = {Francis X Giraldo},
+   doi = {10.1002/1097-0363(20010430)},
+   journal = {Int. J. Numer. Meth. Fluids},
+   keywords = {Adams-Bashforth,La-grange multiplier,Runge-Kutta,cubic gnomonic grid,finite element method,icosahedral grid,shallow water equations,spectral element method,spherical geometry,unstructured grid †},
+   pages = {869-901},
+   title = {A spectral element shallow water model on spherical geodesic grids},
+   volume = {35},
+   year = {2001},
+}
+@inbook{ECMWF2021,
+   author = {ECMWF},
+   journal = {IFS Documentation CY47R3},
+   month = {1},
+   publisher = {ECMWF},
+   title = {IFS Documentation CY47R3 - Part III- Dynamics and Numerical Procedures},
+   url = {https://www.ecmwf.int/node/20202},
+   year = {2021},
+}
+@inproceedings{Poulenard2021,
+   abstract = {Learning pose invariant representation is a fundamental problem in shape analysis. Most existing deep learning algorithms for 3D shape analysis are not robust to rotations and are often trained on synthetic datasets consisting of pre-aligned shapes, yielding poor generalization to unseen poses. This observation motivates a growing interest in rotation invariant and equivariant methods. The field of rotation equivariant deep learning is developing in recent years thanks to a well established theory of Lie group representations and convolutions. A fundamental problem in equivari-ant deep learning is to design activation functions which are both informative and preserve equivariance. The recently introduced Tensor Field Network (TFN) framework provides a rotation equivariant network design for point cloud analysis. TFN features undergo a rotation in feature space given a rotation of the input pointcloud. TFN and similar designs consider nonlinearities which operate only over rotation invariant features such as the norm of equivariant features to preserve equivariance, making them unable to capture the directional information. In a recent work entitled "Gauge Equivariant Mesh CNNs: Anisotropic Con-volutions on Geometric Graphs" Hann et al. interpret 2D rotation equivariant features as Fourier coefficients of functions on the circle. In this work we transpose the idea of Hann et al. to 3D by interpreting TFN features as spherical harmonics coefficients of functions on the sphere. We introduce a new equivariant nonlinearity and pooling for TFN. We show improvments over the original TFN design and other equivariant nonlinearities in classification and segmentation tasks. Furthermore our method is competitive with state of the art rotation invariant methods in some instances.},
+   author = {Adrien Poulenard and Leonidas J. Guibas},
+   doi = {10.1109/CVPR46437.2021.01297},
+   isbn = {978-1-6654-4509-2},
+   journal = {2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+   month = {6},
+   pages = {13169-13178},
+   publisher = {IEEE},
+   title = {A functional approach to rotation equivariant non-linearities for Tensor Field Networks},
+   url = {https://ieeexplore.ieee.org/document/9578769/},
+   year = {2021},
+}
+@article{Kondor2018,
+   abstract = {Convolutional neural networks have been extremely successful in the image recognition domain because they ensure equivariance to translations. There have been many recent attempts to generalize this framework to other domains, including graphs and data lying on manifolds. In this paper we give a rigorous, theoretical treatment of convolution and equivariance in neural networks with respect to not just translations, but the action of any compact group. Our main result is to prove that (given some natural constraints) convolutional structure is not just a sufficient, but also a necessary condition for equivariance to the action of a compact group. Our exposition makes use of concepts from representation theory and noncommutative harmonic analysis and derives new generalized convolution formulae.},
+   author = {Risi Kondor and Shubhendu Trivedi},
+   month = {2},
+   title = {On the Generalization of Equivariance and Convolution in Neural Networks to the Action of Compact Groups},
+   url = {http://arxiv.org/abs/1802.03690},
+   year = {2018},
+}
+@inproceedings{Cohen2016,
+  title={Group equivariant convolutional networks},
+  author={Cohen, Taco and Welling, Max},
+  booktitle={International conference on machine learning},
+  pages={2990--2999},
+  year={2016},
+  organization={PMLR}
+}
+@article{Bronstein2021,
+   abstract = {The last decade has witnessed an experimental revolution in data science and machine learning, epitomised by deep learning methods. Indeed, many high-dimensional learning tasks previously thought to be beyond reach -- such as computer vision, playing Go, or protein folding -- are in fact feasible with appropriate computational scale. Remarkably, the essence of deep learning is built from two simple algorithmic principles: first, the notion of representation or feature learning, whereby adapted, often hierarchical, features capture the appropriate notion of regularity for each task, and second, learning by local gradient-descent type methods, typically implemented as backpropagation. While learning generic functions in high dimensions is a cursed estimation problem, most tasks of interest are not generic, and come with essential pre-defined regularities arising from the underlying low-dimensionality and structure of the physical world. This text is concerned with exposing these regularities through unified geometric principles that can be applied throughout a wide spectrum of applications. Such a 'geometric unification' endeavour, in the spirit of Felix Klein's Erlangen Program, serves a dual purpose: on one hand, it provides a common mathematical framework to study the most successful neural network architectures, such as CNNs, RNNs, GNNs, and Transformers. On the other hand, it gives a constructive procedure to incorporate prior physical knowledge into neural architectures and provide principled way to build future architectures yet to be invented.},
+   author = {Michael M. Bronstein and Joan Bruna and Taco Cohen and Petar Veličković},
+   month = {4},
+   title = {Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges},
+   url = {http://arxiv.org/abs/2104.13478},
+   year = {2021},
+}
+
+@article{brandstetter2022message,
+  title={Message passing neural {PDE} solvers},
+  author={Brandstetter, Johannes and Worrall, Daniel and Welling, Max},
+  journal={arXiv preprint arXiv:2202.03376},
+  year={2022}
+}
+
+@article{takamoto2022pdebench,
+  title={{PDEBench}: An extensive benchmark for scientific machine learning},
+  author={Takamoto, Makoto and Praditia, Timothy and Leiteritz, Raphael and MacKinlay, Daniel and Alesiani, Francesco and Pfl{\"u}ger, Dirk and Niepert, Mathias},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={1596--1611},
+  year={2022}
+}
+
+
+@article{shocher2020discrete,
+  title={From discrete to continuous convolution layers},
+  author={Shocher, Assaf and Feinstein, Ben and Haim, Niv and Irani, Michal},
+  journal={arXiv preprint arXiv:2006.11120},
+  year={2020}
+}
+
+
+@article{raonic2023convolutional,
+  title={Convolutional Neural Operators},
+  author={Raoni{\'c}, Bogdan and Molinaro, Roberto and Rohner, Tobias and Mishra, Siddhartha and de Bezenac, Emmanuel},
+  journal={arXiv preprint arXiv:2302.01178},
+  year={2023}
+}
+
+@article{karras2021alias,
+  title={Alias-free generative adversarial networks},
+  author={Karras, Tero and Aittala, Miika and Laine, Samuli and H{\"a}rk{\"o}nen, Erik and Hellsten, Janne and Lehtinen, Jaakko and Aila, Timo},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={852--863},
+  year={2021}
+}
+
+
+
+@article{Ocampo2022,
+   abstract = {No existing spherical convolutional neural network (CNN) framework is both computationally scalable and rotationally equivariant. Continuous approaches capture rotational equivariance but are often prohibitively computationally demanding. Discrete approaches offer more favorable computational performance but at the cost of equivariance. We develop a hybrid discrete-continuous (DISCO) group convolution that is simultaneously equivariant and computationally scalable to high-resolution. While our framework can be applied to any compact group, we specialize to the sphere. Our DISCO spherical convolutions not only exhibit $\text\{SO\}(3)$ rotational equivariance but also a form of asymptotic $\text\{SO\}(3)/\text\{SO\}(2)$ rotational equivariance, which is more desirable for many applications (where $\text\{SO\}(n)$ is the special orthogonal group representing rotations in $n$-dimensions). Through a sparse tensor implementation we achieve linear scaling in number of pixels on the sphere for both computational cost and memory usage. For 4k spherical images we realize a saving of $10^9$ in computational cost and $10^4$ in memory usage when compared to the most efficient alternative equivariant spherical convolution. We apply the DISCO spherical CNN framework to a number of benchmark dense-prediction problems on the sphere, such as semantic segmentation and depth estimation, on all of which we achieve the state-of-the-art performance.},
+   author = {Jeremy Ocampo and Matthew A. Price and Jason D. McEwen},
+   month = {9},
+   title = {Scalable and Equivariant Spherical {CNNs} by Discrete-Continuous ({DISCO}) Convolutions},
+   journal={arXiv preprint arXiv:2209.13603},
+   year = {2022},
+}
+@article{Cohen2018,
+   abstract = {Convolutional Neural Networks (CNNs) have become the method of choice for learning problems involving 2D planar images. However, a number of problems of recent interest have created a demand for models that can analyze spherical images. Examples include omnidirectional vision for drones, robots, and autonomous cars, molecular regression problems, and global weather and climate modelling. A naive application of convolutional networks to a planar projection of the spherical signal is destined to fail, because the space-varying distortions introduced by such a projection will make translational weight sharing ineffective. In this paper we introduce the building blocks for constructing spherical CNNs. We propose a definition for the spherical cross-correlation that is both expressive and rotation-equivariant. The spherical correlation satisfies a generalized Fourier theorem, which allows us to compute it efficiently using a generalized (non-commutative) Fast Fourier Transform (FFT) algorithm. We demonstrate the computational efficiency, numerical accuracy, and effectiveness of spherical CNNs applied to 3D model recognition and atomization energy regression.},
+   author = {Taco S. Cohen and Mario Geiger and Jonas Koehler and Max Welling},
+   month = {1},
+   title = {Spherical {CNNs}},
+   url = {http://arxiv.org/abs/1801.10130},
+   year = {2018},
+}
+@misc{ecmwf,
+   title = {ECMWF Parameter Database},
+   url = {https://apps.ecmwf.int/codes/grib/param-db},
+}
+@article{Virtue2017,
+   abstract = {The task of MRI fingerprinting is to identify tissue parameters from complex-valued MRI signals. The prevalent approach is dictionary based, where a test MRI signal is compared to stored MRI signals with known tissue parameters and the most similar signals and tissue parameters retrieved. Such an approach does not scale with the number of parameters and is rather slow when the tissue parameter space is large. Our first novel contribution is to use deep learning as an efficient nonlinear inverse mapping approach. We generate synthetic (tissue, MRI) data from an MRI simulator, and use them to train a deep net to map the MRI signal to the tissue parameters directly. Our second novel contribution is to develop a complex-valued neural network with new cardioid activation functions. Our results demonstrate that complex-valued neural nets could be much more accurate than real-valued neural nets at complex-valued MRI fingerprinting.},
+   author = {Patrick Virtue and Stella X. Yu and Michael Lustig},
+   month = {6},
+   title = {Better than Real: Complex-valued Neural Nets for MRI Fingerprinting},
+   url = {http://arxiv.org/abs/1707.00070},
+   year = {2017},
+}
+@article{Voigtlaender2020,
+   abstract = {We generalize the classical universal approximation theorem for neural networks to the case of complex-valued neural networks. Precisely, we consider feedforward networks with a complex activation function $\sigma : \mathbb\{C\} \to \mathbb\{C\}$ in which each neuron performs the operation $\mathbb\{C\}^N \to \mathbb\{C\}, z \mapsto \sigma(b + w^T z)$ with weights $w \in \mathbb\{C\}^N$ and a bias $b \in \mathbb\{C\}$, and with $\sigma$ applied componentwise. We completely characterize those activation functions $\sigma$ for which the associated complex networks have the universal approximation property, meaning that they can uniformly approximate any continuous function on any compact subset of $\mathbb\{C\}^d$ arbitrarily well. Unlike the classical case of real networks, the set of "good activation functions" which give rise to networks with the universal approximation property differs significantly depending on whether one considers deep networks or shallow networks: For deep networks with at least two hidden layers, the universal approximation property holds as long as $\sigma$ is neither a polynomial, a holomorphic function, or an antiholomorphic function. Shallow networks, on the other hand, are universal if and only if the real part or the imaginary part of $\sigma$ is not a polyharmonic function.},
+   author = {Felix Voigtlaender},
+   month = {12},
+   title = {The universal approximation theorem for complex-valued neural networks},
+   url = {http://arxiv.org/abs/2012.03351},
+   year = {2020},
+}
+@article{Caragea2021,
+   abstract = {Until recently, applications of neural networks in machine learning have almost exclusively relied on real-valued networks. It was recently observed, however, that complex-valued neural networks (CVNNs) exhibit superior performance in applications in which the input is naturally complex-valued, such as MRI fingerprinting. While the mathematical theory of real-valued networks has, by now, reached some level of maturity, this is far from true for complex-valued networks. In this paper, we analyze the expressivity of complex-valued networks by providing explicit quantitative error bounds for approximating $C^n$ functions on compact subsets of $\mathbb\{C\}^d$ by complex-valued neural networks that employ the modReLU activation function, given by $\sigma(z) = \mathrm\{ReLU\}(|z| - 1) \, \mathrm\{sgn\} (z)$, which is one of the most popular complex activation functions used in practice. We show that the derived approximation rates are optimal (up to log factors) in the class of modReLU networks with weights of moderate growth.},
+   author = {A. Caragea and D. G. Lee and J. Maly and G. Pfander and F. Voigtlaender},
+   month = {2},
+   title = {Quantitative approximation results for complex-valued neural networks},
+   url = {http://arxiv.org/abs/2102.13092},
+   year = {2021},
+}
+@article{sprlak,
+   title = {zfv_2011_5_Sprlak},
+   url = {https://geodaesie.info/zfv/zfv-archiv/zfv-136-jahrgang/zfv-2011-5/on-the-numerical-problems-of-spherical-harmonics-numerical-and-algebraic-methods-avoiding-instabilities-of-the-associated-legendres-functions},
+}
+@article{Driscoll1994,
+   author = {J.R. Driscoll and D.M. Healy},
+   issue = {2},
+   journal = {Advances in Applied Mathematics},
+   month = {6},
+   pages = {202-250},
+   title = {Computing Fourier Transforms and Convolutions on the 2-Sphere},
+   volume = {15},
+   year = {1994},
+}
+@article{Karras2021,
+   abstract = {We observe that despite their hierarchical convolutional nature, the synthesis process of typical generative adversarial networks depends on absolute pixel coordinates in an unhealthy manner. This manifests itself as, e.g., detail appearing to be glued to image coordinates instead of the surfaces of depicted objects. We trace the root cause to careless signal processing that causes aliasing in the generator network. Interpreting all signals in the network as continuous, we derive generally applicable, small architectural changes that guarantee that unwanted information cannot leak into the hierarchical synthesis process. The resulting networks match the FID of StyleGAN2 but differ dramatically in their internal representations, and they are fully equivariant to translation and rotation even at subpixel scales. Our results pave the way for generative models better suited for video and animation.},
+   author = {Tero Karras and Miika Aittala and Samuli Laine and Erik Härkönen and Janne Hellsten and Jaakko Lehtinen and Timo Aila},
+   month = {6},
+   title = {Alias-Free Generative Adversarial Networks},
+   url = {http://arxiv.org/abs/2106.12423},
+   year = {2021},
+}
+@article{Bi2022,
+   abstract = {In this paper, we present Pangu-Weather, a deep learning based system for fast and accurate global weather forecast. For this purpose, we establish a data-driven environment by downloading $43$ years of hourly global weather data from the 5th generation of ECMWF reanalysis (ERA5) data and train a few deep neural networks with about $256$ million parameters in total. The spatial resolution of forecast is $0.25^\circ\times0.25^\circ$, comparable to the ECMWF Integrated Forecast Systems (IFS). More importantly, for the first time, an AI-based method outperforms state-of-the-art numerical weather prediction (NWP) methods in terms of accuracy (latitude-weighted RMSE and ACC) of all factors (e.g., geopotential, specific humidity, wind speed, temperature, etc.) and in all time ranges (from one hour to one week). There are two key strategies to improve the prediction accuracy: (i) designing a 3D Earth Specific Transformer (3DEST) architecture that formulates the height (pressure level) information into cubic data, and (ii) applying a hierarchical temporal aggregation algorithm to alleviate cumulative forecast errors. In deterministic forecast, Pangu-Weather shows great advantages for short to medium-range forecast (i.e., forecast time ranges from one hour to one week). Pangu-Weather supports a wide range of downstream forecast scenarios, including extreme weather forecast (e.g., tropical cyclone tracking) and large-member ensemble forecast in real-time. Pangu-Weather not only ends the debate on whether AI-based methods can surpass conventional NWP methods, but also reveals novel directions for improving deep learning weather forecast systems.},
+   author = {Kaifeng Bi and Lingxi Xie and Hengheng Zhang and Xin Chen and Xiaotao Gu and Qi Tian},
+   month = {11},
+   title = {Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global Weather Forecast},
+   url = {http://arxiv.org/abs/2211.02556},
+   year = {2022},
+}
+@article{Pathak2022,
+   abstract = {FourCastNet, short for Fourier Forecasting Neural Network, is a global data-driven weather forecasting model that provides accurate short to medium-range global predictions at $0.25^\{\circ\}$ resolution. FourCastNet accurately forecasts high-resolution, fast-timescale variables such as the surface wind speed, precipitation, and atmospheric water vapor. It has important implications for planning wind energy resources, predicting extreme weather events such as tropical cyclones, extra-tropical cyclones, and atmospheric rivers. FourCastNet matches the forecasting accuracy of the ECMWF Integrated Forecasting System (IFS), a state-of-the-art Numerical Weather Prediction (NWP) model, at short lead times for large-scale variables, while outperforming IFS for variables with complex fine-scale structure, including precipitation. FourCastNet generates a week-long forecast in less than 2 seconds, orders of magnitude faster than IFS. The speed of FourCastNet enables the creation of rapid and inexpensive large-ensemble forecasts with thousands of ensemble-members for improving probabilistic forecasting. We discuss how data-driven deep learning models such as FourCastNet are a valuable addition to the meteorology toolkit to aid and augment NWP models.},
+   author = {Jaideep Pathak and Shashank Subramanian and Peter Harrington and Sanjeev Raja and Ashesh Chattopadhyay and Morteza Mardani and Thorsten Kurth and David Hall and Zongyi Li and Kamyar Azizzadenesheli and Pedram Hassanzadeh and Karthik Kashinath and Animashree Anandkumar},
+   month = {2},
+   title = {{FourCastNet}: A Global Data-driven High-resolution Weather Model using Adaptive {Fourier} Neural Operators},
+   journal={arXiv preprint arXiv:2202.11214},
+   year = {2022},
+}
+@article{Lam2022,
+   abstract = {We introduce a machine-learning (ML)-based weather simulator--called "GraphCast"--which outperforms the most accurate deterministic operational medium-range weather forecasting system in the world, as well as all previous ML baselines. GraphCast is an autoregressive model, based on graph neural networks and a novel high-resolution multi-scale mesh representation, which we trained on historical weather data from the European Centre for Medium-Range Weather Forecasts (ECMWF)'s ERA5 reanalysis archive. It can make 10-day forecasts, at 6-hour time intervals, of five surface variables and six atmospheric variables, each at 37 vertical pressure levels, on a 0.25-degree latitude-longitude grid, which corresponds to roughly 25 x 25 kilometer resolution at the equator. Our results show GraphCast is more accurate than ECMWF's deterministic operational forecasting system, HRES, on 90.0% of the 2760 variable and lead time combinations we evaluated. GraphCast also outperforms the most accurate previous ML-based weather forecasting model on 99.2% of the 252 targets it reported. GraphCast can generate a 10-day forecast (35 gigabytes of data) in under 60 seconds on Cloud TPU v4 hardware. Unlike traditional forecasting methods, ML-based forecasting scales well with data: by training on bigger, higher quality, and more recent data, the skill of the forecasts can improve. Together these results represent a key step forward in complementing and improving weather modeling with ML, open new opportunities for fast, accurate forecasting, and help realize the promise of ML-based simulation in the physical sciences.},
+   author = {Remi Lam and Alvaro Sanchez-Gonzalez and Matthew Willson and Peter Wirnsberger and Meire Fortunato and Alexander Pritzel and Suman Ravuri and Timo Ewalds and Ferran Alet and Zach Eaton-Rosen and Weihua Hu and Alexander Merose and Stephan Hoyer and George Holland and Jacklynn Stott and Oriol Vinyals and Shakir Mohamed and Peter Battaglia},
+   month = {12},
+   title = {GraphCast: Learning skillful medium-range global weather forecasting},
+   url = {http://arxiv.org/abs/2212.12794},
+   year = {2022},
+}
+@article{Adhianto2010,
+   abstract = {HPCTOOLKIT is an integrated suite of tools that supports measurement, analysis, attribution, and presentation of application performance for both sequential and parallel programs. HPCTOOLKIT can pinpoint and quantify scalability bottlenecks in fully optimized parallel programs with a measurement overhead of only a few percent. Recently, new capabilities were added to HPCTOOLKIT for collecting call path profiles for fully optimized codes without any compiler support, pinpointing and quantifying bottlenecks in multithreaded programs, exploring performance information and source code using a new user interface, and displaying hierarchical space-time diagrams based on traces of asynchronous call path samples. This paper provides an overview of HPCTOOLKIT and illustrates its utility for performance analysis of parallel applications. Copyright © 2009 John Wiley & Sons, Ltd.},
+   author = {L. Adhianto and S. Banerjee and M. Fagan and M. Krentel and G. Marin and J. Mellor-Crummey and N. R. Tallent},
+   doi = {10.1002/cpe},
+   issn = {15320634},
+   issue = {6},
+   journal = {Concurrency and Computation: Practice and Experience},
+   keywords = {Binary analysis,Call path profiling,Execution monitoring,Performance tools,Tracing},
+   month = {4},
+   pages = {685-701},
+   publisher = {John Wiley and Sons Ltd},
+   title = {HPCTOOLKIT: Tools for performance analysis of optimized parallel programs},
+   volume = {22},
+   year = {2010},
+}
+
+@article{li2023geometry,
+  title={Geometry-informed neural operator for large-scale 3d pdes},
+  author={Li, Zongyi and Kovachki, Nikola Borislavov and Choy, Chris and Li, Boyi and Kossaifi, Jean and Otta, Shourya Prakash and Nabian, Mohammad Amin and Stadler, Maximilian and Hundt, Christian and Azizzadenesheli, Kamyar and others},
+  journal={arXiv preprint arXiv:2309.00583},
+  year={2023}
+}
+
+@article{wen2022u,
+  title={{U-FNO}—An enhanced {Fourier} neural operator-based deep-learning model for multiphase flow},
+  author={Wen, Gege and Li, Zongyi and Azizzadenesheli, Kamyar and Anandkumar, Anima and Benson, Sally M},
+  journal={Advances in Water Resources},
+  volume={163},
+  pages={104180},
+  year={2022},
+  publisher={Elsevier}
+}
+
+
+@article{mccabe2023multiple,
+  title={Multiple Physics Pretraining for Physical Surrogate Models},
+  author={McCabe, Michael and Blancard, Bruno R{\'e}galdo-Saint and Parker, Liam Holden and Ohana, Ruben and Cranmer, Miles and Bietti, Alberto and Eickenberg, Michael and Golkar, Siavash and Krawezik, Geraud and Lanusse, Francois and others},
+  journal={arXiv preprint arXiv:2310.02994},
+  year={2023}
+}
+
+@article{ye2023locality,
+  title={On the locality of local neural operator in learning fluid dynamics},
+  author={Ye, Ximeng and Li, Hongyu and Huang, Jingjie and Qin, Guoliang},
+  journal={arXiv preprint arXiv:2312.09820},
+  year={2023}
+}
+
+
+@article{ye2022learning,
+  title={Learning transient partial differential equations with local neural operators},
+  author={Ye, Ximeng and Li, Hongyu and Jiang, Peng and Wang, Tiejun and Qin, Guoliang},
+  journal={arXiv preprint arXiv:2203.08145},
+  year={2022}
+}
+
+
+@book{thomas2013numerical,
+  title={Numerical partial differential equations: finite difference methods},
+  author={Thomas, James William},
+  volume={22},
+  year={2013},
+  publisher={Springer Science \& Business Media}
+}
+
+
+@article{subramanian2023towards,
+  title={Towards Foundation Models for Scientific Machine Learning: Characterizing Scaling and Transfer Behavior},
+  author={Subramanian, Shashank and Harrington, Peter and Keutzer, Kurt and Bhimji, Wahid and Morozov, Dmitriy and Mahoney, Michael and Gholami, Amir},
+  journal={arXiv preprint arXiv:2306.00258},
+  year={2023}
+}
+
+
+
+@article{zhang2023artificial,
+  title={Artificial intelligence for science in quantum, atomistic, and continuum systems},
+  author={Zhang, Xuan and Wang, Limei and Helwig, Jacob and Luo, Youzhi and Fu, Cong and Xie, Yaochen and Liu, Meng and Lin, Yuchao and Xu, Zhao and Yan, Keqiang and others},
+  journal={arXiv preprint arXiv:2307.08423},
+  year={2023}
+}
+
+@article{li2021physics,
+  title={Physics-informed neural operator for learning partial differential equations},
+  author={Li, Zongyi and Zheng, Hongkai and Kovachki, Nikola and Jin, David and Chen, Haoxuan and Liu, Burigede and Azizzadenesheli, Kamyar and Anandkumar, Anima},
+  journal={arXiv preprint arXiv:2111.03794},
+  year={2021}
+}
+
+
+@article{cuomo2022scientific,
+  title={Scientific machine learning through physics--informed neural networks: Where we are and what’s next},
+  author={Cuomo, Salvatore and Di Cola, Vincenzo Schiano and Giampaolo, Fabio and Rozza, Gianluigi and Raissi, Maziar and Piccialli, Francesco},
+  journal={Journal of Scientific Computing},
+  volume={92},
+  number={3},
+  pages={88},
+  year={2022},
+  publisher={Springer}
+}
+
+@article{azizzadenesheli2024neural,
+  title={Neural operators for accelerating scientific simulations and design},
+  author={Azizzadenesheli, Kamyar and Kovachki, Nikola and Li, Zongyi and Liu-Schiaffini, Miguel and Kossaifi, Jean and Anandkumar, Anima},
+  journal={Nature Reviews Physics},
+  pages={1--9},
+  year={2024},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{Schaeffer2013,
+   abstract = {In this paper, we report on very efficient algorithms for spherical harmonic transform (SHT). Explicitly vectorized variations of the algorithm based on the Gauss-Legendre quadrature are discussed and implemented in the SHTns library, which includes scalar and vector transforms. The main breakthrough is to achieve very efficient on-the-fly computations of the Legendre-associated functions, even for very high resolutions, by taking advantage of the specific properties of the SHT and the advanced capabilities of current and future computers. This allows us to simultaneously and significantly reduce memory usage and computation time of the SHT. We measure the performance and accuracy of our algorithms. Although the complexity of the algorithms implemented in SHTns are in ON3 (where N is the maximum harmonic degree of the transform), they perform much better than any third-party implementation, including lower-complexity algorithms, even for truncations as high as N = 1023. SHTns is available at https://bitbucket.org/nschaeff/shtns as open source software. ©2013. American Geophysical Union. All Rights Reserved.},
+   author = {Nathanaël Schaeffer},
+   doi = {10.1002/ggge.20071},
+   issn = {15252027},
+   issue = {3},
+   journal = {Geochemistry, Geophysics, Geosystems},
+   keywords = {mathematical software,performance,spherical harmonics},
+   month = {3},
+   pages = {751-758},
+   publisher = {Blackwell Publishing Ltd},
+   title = {Efficient spherical harmonic transforms aimed at pseudospectral numerical simulations},
+   volume = {14},
+   year = {2013},
+}
+@article{Wang2018,
+   abstract = {We present in this paper a spectrally accurate numerical method for computing the spherical/vector spherical harmonic expansion of a function/vector field with given (elemental) nodal values on a spherical surface. Built upon suitable analytic formulas for dealing with the involved highly oscillatory integrands, the method is robust for high mode expansions. We apply the numerical method to the simulation of three-dimensional acoustic and electromagnetic multiple scattering problems. Various numerical evidences show that the high accuracy can be achieved within reasonable computational time. This also paves the way for spectral-element discretization of 3D scattering problems reduced by spherical transparent boundary conditions based on the Dirichlet-to-Neumann map.},
+   author = {Bo Wang and Li Lian Wang and Ziqing Xie},
+   doi = {10.1007/s10444-017-9569-1},
+   issn = {15729044},
+   issue = {3},
+   journal = {Advances in Computational Mathematics},
+   keywords = {Analytic formulas,Far-field scattering waves,Helmholtz equation,High mode expansions,Maxwell equations,Multiple scattering,Spectral elements,Spherical harmonics,Vector spherical harmonics},
+   month = {6},
+   pages = {951-985},
+   publisher = {Springer New York LLC},
+   title = {Accurate calculation of spherical and vector spherical harmonic expansions via spectral element grids},
+   volume = {44},
+   year = {2018},
+}
+@article{Nair2005,
+   abstract = {A discontinuous Galerkin shallow water model on the cubed sphere is developed, thereby extending the transport scheme developed by Nair et al. The continuous flux form nonlinear shallow water equations in curvilinear coordinates are employed. The spatial discretization employs a modal basis set consisting of Legendre polynomials. Fluxes along the element boundaries (internal interfaces) are approximated by a Lax–Friedrichs scheme. A third-order total variation diminishing Runge–Kutta scheme is applied for time integration, without any filter or limiter. Numerical results are reported for the standard shallow water test suite. The numerical solutions are very accurate, there are no spurious oscillations in test case 5, and the model conserves mass to machine precision. Although the scheme does not formally conserve global invariants such as total energy and potential enstrophy, conservation of these quantities is better preserved than in existing finite-volume models.},
+   author = {Ramachandran D. Nair and Stephen J. Thomas and Richard D. Loft},
+   doi = {10.1175/MWR2903.1},
+   issn = {0027-0644},
+   issue = {4},
+   journal = {Monthly Weather Review},
+   month = {4},
+   pages = {876-888},
+   title = {A Discontinuous Galerkin Global Shallow Water Model},
+   volume = {133},
+   url = {https://journals.ametsoc.org/doi/10.1175/MWR2903.1},
+   year = {2005},
+}
+@book{Hesthaven2018,
+   abstract = {Conservation laws are the mathematical expression of the principles of conservation and provide effective and accurate predictive models of our physical world. Although intense research activity during the last decades has led to substantial advances in the development of powerful computational methods for conservation laws, their solution remains a challenge and many questions are left open; thus it is an active and fruitful area of research. The text offers the first comprehensive introduction to modern computational methods and their analysis for hyperbolic conservation laws, building on intense research activities for more than four decades of development. It discusses classic results on monotone and finite difference/finite volume schemes, but emphasizes the successful development of high-order accurate methods for hyperbolic conservation laws. Through a modern approach, it addresses modern concepts of TVD and entropy stability, strongly stable Runge-Kutta schemes, and limiter-based methods before discussing essentially nonoscillatory schemes, discontinuous Galerkin methods, and spectral methods. A unique feature is its emphasis on algorithmic aspects of the methods, emphasizing one- and two-dimensional problems and the development and analysis of an extensive range of methods. MATLAB software is included for all main methods and computational results in the book can be reproduced and used to demonstrate the performance of many methods on a set of benchmark problems to allow direct comparisons.},
+   author = {Jan S. Hesthaven},
+   city = {Philadelphia, PA},
+   doi = {10.1137/1.9781611975109},
+   isbn = {978-1-61197-509-3},
+   journal = {Numerical Methods for Conservation Laws},
+   month = {12},
+   publisher = {Society for Industrial and Applied Mathematics},
+   title = {Numerical Methods for Conservation Laws},
+   url = {https://epubs.siam.org/doi/book/10.1137/1.9781611975109},
+   year = {2018},
+}
+@book{Evans1998,
+   author = {L C Evans},
+   publisher = {American Mathematical Society},
+   title = {Partial Differential Equations},
+   year = {1998},
+}
+@book{Bullett2017,
+   abstract = {The key idea in geometric group theory is to study infinite groups by endowing them with a metric and treating them as geometric spaces. This applies to many groups naturally appearing in topology, geometry, and algebra, such as fundamental groups of manifolds, groups of matrices with integer coefficients, etc. The primary focus of this book is to cover the foundations of geometric group theory, including coarse topology, ultralimits and asymptotic cones, hyperbolic groups, isoperimet- ric inequalities, growth of groups, amenability, Kazhdan’s Property (T) and the Haagerup property, as well as their characterizations in terms of group actions on median spaces and spaces with walls. The book contains proofs of several fundamental results of geometric group theory, such as Gromov’s theorem on groups of polynomial growth, Tits’s alterna- tive, Stallings’s theorem on ends of groups, Dunwoody’s accessibility theorem, the Mostow Rigidity Theorem, and quasiisometric rigidity theorems of Tukia and Schwartz. This is the first book in which geometric group theory is presented in a form accessible to advanced graduate students and young research mathematicians. It fills a big gap in the literature and will be used by researchers in geometric group theory and its applications.},
+   author = {Shaun Bullett and Tom Fearn and Frank Smith and Ian Chiswell},
+   doi = {10.1142/9781786341082_0003},
+   isbn = {9783319722535},
+   journal = {Geometry in Advanced Pure Mathematics},
+   pages = {85-123},
+   title = {Geometric Group Theory},
+   year = {2017},
+}
+@book{oden2017applied,
+   author = {J T Oden and L Demkowicz},
+   isbn = {9781498761154},
+   publisher = {CRC Press},
+   title = {Applied Functional Analysis, Third Edition},
+   url = {https://books.google.ch/books?id=1CBBDwAAQBAJ},
+   year = {2017},
+}
+@article{Bonev2018,
+   abstract = {We present a novel high-order discontinuous Galerkin discretization for the spherical shallow water equations, able to handle wetting/drying and non-conforming, curved meshes in a well-balanced manner. This requires a well-balanced discretization, that cannot rely on exact quadrature, due to the curved mesh. Using the strong form of the discontinuous Galerkin discretization, we achieve a splitting of the well-balanced condition into individual problems for the flux and volume terms, which has significant advantages: It allows for the construction of non-conforming, well-balanced flux discretizations, i.e. we can perform non-conforming mesh refinement while preserving the well-balanced property of the scheme. More importantly, this approach enables the development of a new method for handling wet/dry transitions. In contrast to other wetting/drying methods, it is well-balanced and able to handle wetting/drying robustly at any polynomial order, without the introduction of physical model assumptions such as viscosity, artificial porosity or cancellation of gravity. We perform a series of one-dimensional tests and analyze the properties of our scheme. In order to validate our method for the simulation of large-scale tsunami events on the rotating sphere, we perform numerical simulations of the 2011 Tohoku tsunami and compare our results to real-world buoy data. The method is able to predict arrival times and wave amplitudes accurately even over long distances. This indicates that our method accurately captures all physical phenomena relevant to the long-term evolution of tsunami waves.},
+   author = {Boris Bonev and Jan S. Hesthaven and Francis X. Giraldo and Michal A. Kopera},
+   journal = {Journal of Computational Physics},
+   keywords = {Curved mesh,Discontinuous Galerkin method,Non-conforming mesh,Shallow water equations,Well-balanced scheme,Wetting and drying},
+   title = {Discontinuous Galerkin scheme for the spherical shallow water equations with applications to tsunami modeling and prediction},
+   year = {2018},
+}
+@book{LeVeque1992,
+   author = {Randall J. LeVeque},
+   city = {Basel},
+   publisher = {Birkhäuser Basel},
+   title = {Numerical Methods for Conservation Laws},
+   year = {1992},
+}
+@article{Marques2014,
+   abstract = {We present a fast and accurate algorithm to solve Poisson problems in complex geometries, using regular Cartesian grids. We consider a variety of configurations, including Poisson problems with interfaces across which the solution is discontinuous (of the type arising in multi-fluid flows). The algorithm is based on a combination of the Correction Function Method (CFM) and Boundary Integral Methods (BIM). Interface and boundary conditions can be treated in a fast and accurate manner using boundary integral equations, and the associated BIM. Unfortunately, BIM can be costly when the solution is needed everywhere in a grid, e.g. fluid flow problems. We use the CFM to circumvent this issue. The solution from the BIM is used to rewrite the problem as a series of Poisson problems in rectangular domains - which requires the BIM solution at interfaces/boundaries only. These Poisson problems involve discontinuities at interfaces, of the type that the CFM can handle. Hence we use the CFM to solve them (to high order of accuracy) with finite differences and a Fast Fourier Transform based fast Poisson solver. We present 2-D examples of the algorithm applied to Poisson problems involving complex geometries, including cases in which the solution is discontinuous. We show that the algorithm produces solutions that converge with either 3rd or 4th order of accuracy, depending on the type of boundary condition and solution discontinuity.},
+   author = {Alexandre Noll Marques and Jean-Christophe Nave and Rodolfo Ruben Rosales},
+   doi = {10.1016/j.jcp.2017.01.029},
+   issn = {10902716},
+   journal = {Journal of Computational Physics},
+   keywords = {Correction Function Method,Embedded mesh,High oder,Immersed method,Interface jump,Poisson equation},
+   month = {1},
+   pages = {497-515},
+   title = {High order solution of Poisson problems with piecewise constant coefficients and interface jumps},
+   volume = {335},
+   url = {http://arxiv.org/abs/1401.8084 http://dx.doi.org/10.1016/j.jcp.2017.01.029},
+   year = {2014},
+}
+@article{Liu2000,
+   abstract = {Interfaces have a variety of boundary conditions (or jump conditions) that need to be enforced. The Ghost Fluid Method (GFM) was developed to capture the boundary conditions at a contact discontinuity in the inviscid Euler equations and has been extended to treat more general discontinuities such as shocks, detonations, and deflagrations and compressible viscous flows. In this paper, a similar boundary condition capturing approach is used to develop a new numerical method for the variable coefficient Poisson equation in the presence of interfaces where both the variable coefficients and the solution itself may be discontinuous. This new method is robust and easy to implement even in three spatial dimensions. Furthermore, the coefficient matrix of the associated linear system is the standard symmetric matrix for the variable coefficient Poisson equation in the absence of interfaces allowing for straightforward application of standard "black box" solvers. © 2000 Academic Press.},
+   author = {Xu Dong Liu and Ronald P. Fedkiw and Myungjoo Kang},
+   doi = {10.1006/jcph.2000.6444},
+   issn = {00219991},
+   issue = {1},
+   journal = {Journal of Computational Physics},
+   pages = {151-178},
+   title = {A Boundary Condition Capturing Method for Poisson's Equation on Irregular Domains},
+   volume = {160},
+   year = {2000},
+}
+@article{Engquist2018,
+   abstract = {Abstract The minimum number of terms that are needed in a separable approximation for a Green's function reveals the intrinsic complexity of the solution space of the underlying differential equation. It also has implications for whether low-rank structures exist in the linear system after numerical discretization. The Green's function for a coercive elliptic differential operator in divergence form was shown to be highly separable [2], and efficient numerical algorithms exploiting low-rank structures of the discretized systems were developed. In this work, a new approach to study the approximate separability of the Green's function of the Helmholtz equation in the high-frequency limit is developed. We show (1) lower bounds based on an explicit characterization of the correlation between two Green's functions and a tight dimension estimate for the best linear subspace to approximate a set of decorrelated Green's functions, (2) upper bounds based on constructing specific separable approximations, and (3) sharpness of these bounds for a few case studies of practical interest. © 2018 Wiley Periodicals, Inc.},
+   author = {Björn Engquist and Hongkai Zhao},
+   doi = {10.1002/cpa.21755},
+   issn = {00103640},
+   issue = {11},
+   journal = {Communications on Pure and Applied Mathematics},
+   month = {11},
+   pages = {2220-2274},
+   title = {Approximate Separability of the Green's Function of the Helmholtz Equation in the High Frequency Limit},
+   volume = {71},
+   url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/cpa.21755 http://doi.wiley.com/10.1002/cpa.21755},
+   year = {2018},
+}
+@article{Read1996,
+   abstract = {The Helmholtz partial differential equation occurs in many areas of applied mathematics, with solutions required for a wide range of boundary geometries and boundary conditions. In this paper, an analytical series method is presented to solve the Dirichlet boundary value problem, for arbitrary boundary geometries. Previously, analytical series methods for the Helmholtz equation have been restricted to regular boundary geometries. However, recently the classical approach has been extended to cater for arbitrary boundary geometry, using the principle of eigenfunction expansions applied to nonorthogonal basis functions. The solution method is applied to a direct Helmholtz problem, and demonstrated on a two-dimensional example from transport in porous media.},
+   author = {W.W. Read},
+   doi = {10.1016/0895-7177(96)00087-8},
+   issn = {08957177},
+   issue = {2},
+   journal = {Mathematical and Computer Modelling},
+   keywords = {Analytical series,Arbitrary boundaries,Dirichlet problem,Helmholtz equation},
+   month = {7},
+   pages = {23-34},
+   title = {Analytical solutions for a helmholtz equation with dirichlet boundary conditions and arbitrary boundaries},
+   volume = {24},
+   url = {https://linkinghub.elsevier.com/retrieve/pii/0895717796000878},
+   year = {1996},
+}
+@article{Moiola2014,
+   abstract = {The usual variational (or weak) formulations of the Helmholtz equation are sign-indefinite in the sense that the bilinear forms cannot be bounded below by a positive multiple of the appropriate norm squared. This is often for a good reason, since in bounded domains under certain boundary conditions the solution of the Helmholtz equation is not unique at wavenumbers that correspond to eigenvalues of the Laplacian, and thus the variational problem cannot be sign-definite. However, even in cases where the solution is unique for all wavenumbers, the standard variational formulations of the Helmholtz equation are still indefinite when the wavenumber is large. This indefiniteness has implications for both the analysis and the practical implementation of finite element methods. In this paper we introduce new sign-definite (also called coercive or elliptic) formulations of the Helmholtz equation posed in either the interior of a star-shaped domain with impedance boundary conditions or the exterior of a star-shaped domain with Dirichlet boundary conditions. Like the standard variational formulations, these new formulations arise from simply multiplying the Helmholtz equation by particular test functions and integrating by parts. © 2014 Society for Industrial and Applied Mathematics.},
+   author = {Andrea Moiola and Euan A. Spence},
+   doi = {10.1137/120901301},
+   issn = {0036-1445},
+   issue = {2},
+   journal = {SIAM Review},
+   keywords = {Coercivity,Finite element method,Frequency-explicit analysis,Helmholtz equation,High frequency,Morawetz identity,Sign-definiteness},
+   month = {1},
+   pages = {274-312},
+   title = {Is the Helmholtz Equation Really Sign-Indefinite?},
+   volume = {56},
+   url = {http://epubs.siam.org/doi/10.1137/120901301},
+   year = {2014},
+}
+@article{Treister2019,
+   abstract = {The Helmholtz equation arises when modeling wave propagation in the frequency domain. The equation is discretized as an indefinite linear system, which is difficult to solve at high wave numbers. In many applications, the solution of the Helmholtz equation is required for a point source. In this case, it is possible to reformulate the equation as two separate equations: one for the travel time of the wave and one for its amplitude. The travel time is obtained by a solution of the factored eikonal equation, and the amplitude is obtained by solving a complex-valued advection–diffusion–reaction equation. The reformulated equation is equivalent to the original Helmholtz equation, and the differences between the numerical solutions of these equations arise only from discretization errors. We develop an efficient multigrid solver for obtaining the amplitude given the travel time, which can be efficiently computed. This approach is advantageous because the amplitude is typically smooth in this case and, hence, more suitable for multigrid solvers than the standard Helmholtz discretization. We demonstrate that our second-order advection–diffusion–reaction discretization is more accurate than the standard second-order discretization at high wave numbers, as long as there are no reflections or caustics. Moreover, we show that using our approach, the problem can be solved more efficiently than using the common shifted Laplacian multigrid approach.},
+   author = {Eran Treister and Eldad Haber},
+   doi = {10.1002/nla.2206},
+   issn = {1070-5325},
+   issue = {1},
+   journal = {Numerical Linear Algebra with Applications},
+   keywords = {Helmholtz equation,factored eikonal equation,fast marching,multigrid,seismic modeling,shifted Laplacian},
+   month = {1},
+   pages = {e2206},
+   title = {A multigrid solver to the Helmholtz equation with a point source based on travel time and amplitude},
+   volume = {26},
+   url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nla.2206},
+   year = {2019},
+}
+@article{LeFloch2007,
+   abstract = {We construct the solution of the Riemann problem for the shallow water equations with discontinuous topography. The system under consideration is non-strictly hyperbolic and does not admit a fully conservative form, and we establish the existence of two-parameter wave sets, rather than wave curves. The selection of admissible waves is particularly challenging. Our construction is fully explicit, and leads to formulas that can be implemented numerically for the approximation of the general initial-value problem. © 2007 International Press.},
+   author = {Philippe G. LeFloch and Mai Duc Thanh},
+   doi = {10.4310/CMS.2007.v5.n4.a7},
+   issn = {15396746},
+   issue = {4},
+   journal = {Communications in Mathematical Sciences},
+   keywords = {Conservation law,Discontinuous topography,Riemann problem,Shallow water},
+   pages = {865-885},
+   title = {The Riemann problem for the shallow water equations with discontinuous topography},
+   volume = {5},
+   url = {http://www.intlpress.com/site/pub/pages/journals/items/cms/content/vols/0005/0004/a007/},
+   year = {2007},
+}
+@book{Mishra,
+   author = {Siddhartha Mishra},
+   title = {Numerical methods for conservation laws and related equations Siddhartha Mishra},
+}
+@article{Thanh2018,
+   abstract = {We consider the Riemann problem for the system of shallow water equations with horizontal temperature gradients (the Ripa system). The model under investigation has the form of a nonconservative system, and it is hyperbolic, but is not strictly hyperbolic. We construct all solutions of the Riemann problem. It turns out that there may be up to three distinct solutions. A resonant phenomenon which causes the colliding shock waves is observed, where multiple waves associated with different characteristic fields propagate with the same shock speed.},
+   author = {Mai Duc Thanh},
+   doi = {10.1016/j.amc.2017.12.031},
+   issn = {00963003},
+   journal = {Applied Mathematics and Computation},
+   keywords = {Riemann problem,Ripa system,Shallow water equations,Shock wave,Source term,Topography},
+   month = {5},
+   pages = {159-178},
+   publisher = {Elsevier Inc.},
+   title = {The Riemann problem for the shallow water equations with horizontal temperature gradients},
+   volume = {325},
+   url = {https://doi.org/10.1016/j.amc.2017.12.031 https://linkinghub.elsevier.com/retrieve/pii/S0096300317308901},
+   year = {2018},
+}
+@article{Snieder2002,
+   author = {Roel Snieder},
+   issue = {4},
+   pages = {528-542},
+   title = {528 General Theory of Elastic Wave Scattering Chapter 1.7.1 GENERAL THEORY OF ELASTIC WAVE SCATTERING PART 1 SCATTERING OF WAVES BY MACROSCOPIC TARGETS Topic 1.7 Elastodynamic Wave (Elastic) Scattering: Theory Contents},
+   url = {http://inside.mines.edu/~rsnieder/Ch1-7-1.pdf},
+   year = {2002},
+}
+@article{Wihler1998,
+   author = {Thomas P. Wihler},
+   doi = {https://doi.org/10.3929/ethz-a-004485719},
+   issue = {224},
+   keywords = {a posteriori error estimate,adaptive mesh refinement,and phrases,boundary ap-,c 1998 american mathematical,poisson,proximation,s equation,society},
+   pages = {1361-1382},
+   title = {Discontinuous Galerkin FEM for elliptic problems in polygonal domains},
+   volume = {67},
+   year = {1998},
+}
+@article{Dudouit2014,
+   author = {Yohann Dudouit},
+   journal = {Université De Bordeaux},
+   title = {Spatio-temporal refinement using a discontinuous Galerkin approach for elastodynamic in a high performance computing framework},
+   year = {2014},
+}
+@article{Klaseboer2019,
+   abstract = {The displacement field for three dimensional dynamic elasticity problems in the frequency domain can be decomposed into a sum of a longitudinal and a transversal part known as a Helmholtz decomposition. The Cartesian components of both the longitudinal and transverse fields satisfy scalar Helmholtz equations that can be solved using a desingularized boundary element method (BEM) framework. The curl free longitudinal and divergence free transversal conditions can also be cast as additional scalar Helmholtz equations. When compared to other BEM implementations, the current framework leads to smaller matrix dimensions and a simpler conceptual approach. The numerical implementation of this approach is benchmarked against the 3D elastic wave field generated by a rigid vibrating sphere embedded in an infinite linear elastic medium for which the analytical solution has been derived. Examples of focused 3D elastic waves generated by a vibrating bowl-shaped rigid object with convex and concave surfaces are also considered. In the static zero frequency limit, the Helmholtz decomposition becomes non-unique, and both the longitudinal and transverse components contain divergent terms that are proportional to the inverse square of the frequency. However, these divergences are equal and opposite so that their sum, that is the displacement field that reflects the physics of the problem, remains finite in the zero frequency limit.},
+   author = {Evert Klaseboer and Qiang Sun and Derek Y.C. Chan},
+   doi = {10.1007/s10659-018-09710-y},
+   issn = {15732681},
+   issue = {1},
+   journal = {Journal of Elasticity},
+   keywords = {Desingularized boundary element method,Harmonic waves in the frequency domain,Helmholtz equation,Navier equation},
+   pages = {83-100},
+   publisher = {Springer Nature B.V.},
+   title = {Helmholtz Decomposition and Boundary Element Method Applied to Dynamic Linear Elastic Problems},
+   volume = {137},
+   url = {http://dx.doi.org/10.1007/s10659-018-09710-y},
+   year = {2019},
+}
+@article{Schuberth2003,
+   author = {Bernhard S. a. Schuberth},
+   journal = {Assembly},
+   title = {The Spectral Element Method for Seismic Wave Propagation},
+   year = {2003},
+}
+@article{Martin2006,
+   abstract = {The original Marmousi model was created by a consortium led by the Institut Français du Pétrole (IFP) in 1988. Since its creation, the model and its acoustic finite-difference synthetic data have been used by hundreds of researchers throughout the world for a multitude of geophysical purposes, and to this day remains one of the most published geophysical data sets. The advancement in computer hardware capabilities since the late 1980s has made it possible to perform a major upgrade to the model and data set, thereby extending the usefulness of the model for, hopefully, some time to come. This paper outlines the creation of an updated and upgraded Marmousi model and data set which we have named Marmousi2.},
+   author = {Gary S. Martin and Robert Wiley and Kurt J. Marfurt},
+   doi = {10.1190/1.2172306},
+   issn = {1070-485X},
+   issue = {2},
+   journal = {The Leading Edge},
+   keywords = {Finite difference methods,Geophysical techniques,Inverse problems,Seismology},
+   month = {2},
+   pages = {156-166},
+   title = {Marmousi2: An elastic upgrade for Marmousi},
+   volume = {25},
+   url = {http://library.seg.org/doi/10.1190/1.2172306},
+   year = {2006},
+}
+@article{Kwak2014,
+   abstract = {A direct waveform inversion based on perturbation theory is proposed to delineate a subsurface velocity structure from seismic data. This technique can directly compute the difference between the actual subsurface velocity and an initial guess of the velocity, while full waveform inversion updates the velocity model in the directions of reducing the data residual. Unlike full waveform inversion using the steepest descent method, the direct waveform inversion does not require a proper step length to iteratively update the velocity model. We present an algorithm for the waveform inversion method in the frequency domain and numerical examples demonstrating how the inversion method can reconstruct subsurface velocity structures using surface seismic data. The time-domain seismograms synthesized in the inversion procedure match the corresponding shot-gather seismograms of field data. © The Authors 2014. Published by Oxford University Press on behalf of The Royal Astronomical Society.},
+   author = {Sangmin Kwak and Youngseo Kim and Changsoo Shin},
+   doi = {10.1093/gji/ggu026},
+   issn = {1365-246X},
+   issue = {2},
+   journal = {Geophysical Journal International},
+   keywords = {Acoustic properties,Computational seismology,Controlled source seismology,Inverse theory,Seismic tomography,Wave scattering and diffraction},
+   month = {5},
+   pages = {987-1001},
+   title = {Frequency-domain direct waveform inversion based on perturbation theory},
+   volume = {197},
+   url = {http://academic.oup.com/gji/article/197/2/987/616791/Frequencydomain-direct-waveform-inversion-based-on},
+   year = {2014},
+}
+@article{Erlangga2006,
+   abstract = {An iterative solution method, in the form of a preconditioner for a Krylov subspace method, is presented for the Helmholtz equation. The preconditioner is based on a Helmholtz-type differential operator with a complex term. A multigrid iteration is used for approximately inverting the preconditioner. The choice of multigrid components for the corresponding preconditioning matrix with a complex diagonal is validated with Fourier analysis. Multigrid analysis results are verified by numerical experiments. High wavenumber Helmholtz problems in heterogeneous media are solved indicating the performance of the preconditioner. © 2006 Society for Industrial and Applied Mathematics.},
+   author = {Y. A. Erlangga and C. W. Oosterlee and C. Vuik},
+   doi = {10.1137/040615195},
+   issn = {10648275},
+   issue = {4},
+   journal = {SIAM Journal on Scientific Computing},
+   keywords = {Complex multigrid preconditioner,Fourier analysis,Helmholtz equation,Nonconstant high wavenumber},
+   pages = {1471-1492},
+   title = {A novel multigrid based preconditioner for heterogeneous Helmholtz problems},
+   volume = {27},
+   year = {2006},
+}
+@article{Babuska1997,
+   author = {Ivo M. Babuška and Stefan A Sauter},
+   doi = {10.1137/S0036142994269186},
+   issn = {0036-1429},
+   issue = {6},
+   journal = {SIAM Journal on Numerical Analysis},
+   keywords = {65n12,65n15,65n30,ams subject classifications,generalized fem,helmholtz equation,high wave number,pii,pollution effect,s0036142994269186},
+   month = {12},
+   pages = {2392-2423},
+   title = {Is the Pollution Effect of the FEM Avoidable for the Helmholtz Equation Considering High Wave Numbers?},
+   volume = {34},
+   url = {http://epubs.siam.org/doi/10.1137/S0036142994269186},
+   year = {1997},
+}
+@article{Engquist2011,
+   author = {Björn Engquist and Lexing Ying},
+   doi = {10.1002/cpa.20358},
+   issn = {00103640},
+   issue = {5},
+   journal = {Communications on Pure and Applied Mathematics},
+   month = {5},
+   pages = {697-735},
+   title = {Sweeping preconditioner for the Helmholtz equation: Hierarchical matrix representation},
+   volume = {64},
+   url = {http://doi.wiley.com/10.1002/cpa.20358},
+   year = {2011},
+}
+@article{Erlangga2008,
+   abstract = {In this paper we survey the development of fast iterative solvers aimed at solving 2D/3D Helmholtz problems. In the first half of the paper, a survey on some recently developed methods is given. The second half of the paper focuses on the development of the shifted Laplacian preconditioner used to accelerate the convergence of Krylov subspace methods applied to the Helmholtz equation. Numerical examples are given for some difficult problems, which had not been solved iteratively before. © 2007 CIMNE, Barcelona, Spain.},
+   author = {Yogi A. Erlangga},
+   doi = {10.1007/s11831-007-9013-7},
+   issn = {11343060},
+   issue = {1},
+   journal = {Archives of Computational Methods in Engineering},
+   pages = {37-66},
+   title = {Advances in iterative methods and preconditioners for the Helmholtz equation},
+   volume = {15},
+   year = {2008},
+}
+@article{godunov1959finite,
+   author = {Sergei Godunov and I Bohachevsky},
+   issue = {3},
+   journal = {Matematičeskij sbornik},
+   pages = {271-306},
+   title = {Finite difference method for numerical computation of discontinuous solutions of the equations of fluid dynamics},
+   volume = {47},
+   year = {1959},
+}
+@misc{Mishraa,
+   abstract = {These notes present numerical methods for conservation laws and related time-dependent nonlinear partial differential equations. The focus is on both simple scalar problems as well as multi-dimensional systems. The Matlab package Compack (COnservation law Matlab PACKage) has been developed as an educational tool to be used with these notes. All the numerical experiments in the lecture notes have been performed in Compack. The scripts used to generate figures and tables are all in the +Notes sub- package. For instance, to generate the plots in Figure 2.3, run Notes.Chapter2.central() from the Compack base folder. Figures are saved to the output folder. Compack can be downloaded from https://github.com/ulriksf/compack},
+   author = {Siddhartha Mishra and Ulrie Fjordholm and Remi Abgrall},
+   title = {Numerical methods for conservation laws and related equations},
+}
+@article{Zangl2015,
+   abstract = {This article describes the non-hydrostatic dynamical core developed for the ICOsahedral Non-hydrostatic (ICON) modelling framework. ICON is a joint project of the German Weather Service (DWD) and the Max Planck Institute for Meteorology (MPI-M), targeting a unified modelling system for global numerical weather prediction (NWP) and climate modelling. Compared with the existing models at both institutions, the main achievements of ICON are exact local mass conservation, mass-consistent tracer transport, a flexible grid nesting capability and the use of non-hydrostatic equations on global domains. The dynamical core is formulated on an icosahedral-triangular Arakawa C grid. Achieving mass conservation is facilitated by a flux-form continuity equation with density as the prognostic variable. Time integration is performed with a two-time-level predictor-corrector scheme that is fully explicit, except for the terms describing vertical sound-wave propagation. To achieve competitive computational efficiency, time splitting is applied between the dynamical core on the one hand and tracer advection, physics parametrizations and horizontal diffusion on the other hand. A sequence of tests with varying complexity indicates that the ICON dynamical core combines high numerical stability over steep mountain slopes with good accuracy and reasonably low diffusivity. Preliminary NWP test suites initialized with interpolated analysis data reveal that the ICON modelling system already achieves better skill scores than its predecessor at DWD, the operational hydrostatic Global Model Europe (GME), and at the same time requires significantly fewer computational resources.},
+   author = {Günther Zängl and Daniel Reinert and Pilar Rípodas and Michael Baldauf},
+   doi = {10.1002/qj.2378},
+   issn = {00359009},
+   issue = {687},
+   journal = {Quarterly Journal of the Royal Meteorological Society},
+   keywords = {Dynamical cores,Model development,Numerical weather prediction},
+   month = {1},
+   pages = {563-579},
+   title = {The ICON (ICOsahedral Non-hydrostatic) modelling framework of DWD and MPI-M: Description of the non-hydrostatic dynamical core},
+   volume = {141},
+   url = {http://doi.wiley.com/10.1002/qj.2378},
+   year = {2015},
+}
+@article{Shu1988,
+   abstract = {The simulation of systems with dynamics on strongly varying time scales is quite challenging and demanding with regard to possible numerical methods. A rather naive approach is to use the smallest necessary time step to guarantee a stable integration of the fast frequencies. However, this typically leads to unacceptable computational loads. Alternatively, multirate methods integrate the slow part of the system with a relatively large step size while the fast part is integrated with a small time step. In this work, a multirate integrator for constrained dynamical systems is derived in closed form via a discrete variational principle on a time grid consisting of macro and micro time nodes. Being based on a discrete version of Hamilton's principle, the resulting variational multirate integrator is a symplectic and momentum preserving integration scheme and also exhibits good energy behaviour. Depending on the discrete approximations for the Lagrangian function, one obtains different integrators, e.g. purely implicit or purely explicit schemes, or methods that treat the fast and slow parts in different ways. The performance of the multirate integrator is demonstrated by means of several examples.},
+   author = {Chi-Wang Shu and Stanley Osher},
+   doi = {10.1016/0021-9991(88)90177-5},
+   isbn = {9789400754034},
+   issn = {00219991},
+   issue = {2},
+   journal = {Journal of Computational Physics},
+   month = {8},
+   pages = {439-471},
+   title = {Efficient implementation of essentially non-oscillatory shock-capturing schemes},
+   volume = {77},
+   url = {https://linkinghub.elsevier.com/retrieve/pii/0021999188901775},
+   year = {1988},
+}
+@article{Thuburn1997,
+   author = {John Thuburn},
+   doi = {10.1175/1520-0493(1997)125<2328:APBSWM>2.0.CO;2},
+   issn = {0027-0644},
+   issue = {9},
+   journal = {Monthly Weather Review},
+   month = {9},
+   pages = {2328-2347},
+   title = {A PV-Based Shallow-Water Model on a Hexagonal–Icosahedral Grid},
+   volume = {125},
+   url = {http://journals.ametsoc.org/doi/10.1175/1520-0493(1997)125%3C2328:APBSWM%3E2.0.CO;2},
+   year = {1997},
+}
+@article{Audusse2004,
+   author = {Emmanuel Audusse and François Bouchut and Marie-Odile Bristeau and Rupert Klein and Benoı⁁t Perthame},
+   doi = {10.1137/S1064827503431090},
+   issn = {1064-8275},
+   issue = {6},
+   journal = {SIAM Journal on Scientific Computing},
+   month = {1},
+   pages = {2050-2065},
+   title = {A Fast and Stable Well-Balanced Scheme with Hydrostatic Reconstruction for Shallow Water Flows},
+   volume = {25},
+   url = {http://epubs.siam.org/doi/10.1137/S1064827503431090},
+   year = {2004},
+}
+@article{Amini2000,
+   abstract = {Discretisation of the integral equations of acoustic scattering yields large dense systems of linear equations. Using the fast multipole method, an approximate solution to these systems can be computed with a low operation count. When implementing the method, various infinite sums must be truncated. In this paper, sharp computable bounds on the errors of these truncations are derived, which could form the basis for an automatic selection of truncation length. This choice will guarantee a given solution accuracy whilst minimising the operation count of the fast multipole algorithm. © 2000 Elsevier Science B.V.},
+   author = {Sia Amini and Anthony Profit},
+   doi = {10.1016/S0377-0427(99)00175-2},
+   issn = {03770427},
+   issue = {1-2},
+   journal = {Journal of Computational and Applied Mathematics},
+   keywords = {Boundary integral equation,Fast multipole method,Helmholtz equation,Multipole expansion},
+   month = {3},
+   pages = {23-33},
+   title = {Analysis of the truncation errors in the fast multipole method for scattering problems},
+   volume = {115},
+   url = {https://linkinghub.elsevier.com/retrieve/pii/S0377042799001752},
+   year = {2000},
+}
+@article{Giraldo2003,
+   abstract = {The Lagrange-Galerkin spectral element method for the two-dimensional shallow water equations is presented. The equations are written in conservation form and the domains are discretized using quadrilateral elements. Lagrangian methods integrate the governing equations along the characteristic curves, thus being well suited for resolving the nonlinearities introduced by the advection operator of the fluid dynamics equations. Two types of Lagrange-Galerkin methods are presented: the strong and weak formulations. The strong form relies mainly on interpolation to achieve high accuracy while the weak form relies primarily on integration. Lagrange-Galerkin schemes offer an increased efficiency by virtue of their less stringent CFL condition. The use of quadrilateral elements permits the construction of spectral-type finite-element methods that exhibit exponential convergence as in the conventional spectral method, yet they are constructed locally as in the finite-element method; this is the spectral element method. In this paper, we show how to fuse the Lagrange-Galerkin methods with the spectral element method and present results for two standard test cases in order to compare and contrast these two hybrid schemes. © 2003 Published by Elsevier Science Ltd.},
+   author = {F. X. Giraldo},
+   doi = {10.1016/S0898-1221(03)80010-X},
+   issn = {08981221},
+   issue = {1-3},
+   journal = {Computers and Mathematics with Applications},
+   keywords = {Finite element,Lagrange-Gaterkin,Semi-Lagrangian,Shallow water equations,Spectral element},
+   pages = {97-121},
+   title = {Strong and weak Lagrange-Galerkin spectral element methods for the shallow water equations},
+   volume = {45},
+   year = {2003},
+}
+@article{Thacker1981,
+   abstract = {These exact solutions correspond to time-dependent motions in parabolic basins. A characteristic feature is that the shoreline is not fixed. It is free to move and must be determined as part of the solution. In general, the motion is oscillatory and has the appropriate small-amplitude limit. For the case in which the parabolic basin reduces to a flat plane, there is a solution for a flood wave. These solutions provide a valuable test for numerical models of inundating storm tides. © 1981, Cambridge University Press. All rights reserved.},
+   author = {William Carlisle Thacker},
+   doi = {10.1017/S0022112081001882},
+   isbn = {0022112081},
+   issn = {0022-1120},
+   journal = {Journal of Fluid Mechanics},
+   month = {6},
+   pages = {499},
+   title = {Some exact solutions to the nonlinear shallow-water wave equations},
+   volume = {107},
+   url = {http://www.journals.cambridge.org/abstract_S0022112081001882},
+   year = {1981},
+}
+@article{Greenberg1996,
+   abstract = {In a variety of physical problems one encounters source terms that are balanced by internal forces and this balance supports multiple steady state solutions that are stable. Typical of these are gravity-driven flows such as those described by the shallow water equations over a nonuniform ocean bottom. (Formula Presented) Many classic numerical schemes cannot maintain these steady solutions or achieve them in the long time limit with an acceptable level of accuracy because they do not preserve the proper balance between the source terms and internal forces. We propose here a numerical scheme, adapted to a scalar conservation law, that preserves this balance and that can, it is hoped, be extended to more general hyperbolic systems. The proof of convergence of this scheme toward the entropy solution is given and some numerical tests are reported.},
+   author = {J. M. Greenberg and A. Y. Leroux},
+   doi = {10.1137/0733001},
+   issn = {0036-1429},
+   issue = {1},
+   journal = {SIAM Journal on Numerical Analysis},
+   keywords = {Balanced scheme,Conservation laws,Source terms,Steady solutions},
+   month = {2},
+   pages = {1-16},
+   title = {A Well-Balanced Scheme for the Numerical Processing of Source Terms in Hyperbolic Equations},
+   volume = {33},
+   url = {http://epubs.siam.org/doi/10.1137/0733001},
+   year = {1996},
+}
+@article{Delestre2013,
+   abstract = {In this two-part paper, we present a collection of numerical methods combined into a single framework, which has the potential for a successful application to wind turbine rotor modeling and simulation. In Part 1 of this paper we focus on: 1. The basics of geometry modeling and analysis-suitable geometry construction for wind turbine rotors; 2. The fluid mechanics formulation and its suitability and accuracy for rotating turbulent flows; 3. The coupling of air flow and a rotating rigid body. In Part 2, we focus on the structural discretization for wind turbine blades and the details of the fluid–structure interaction computational procedures. The methods developed are applied to the simulation of the NREL 5MW offshore baseline wind turbine rotor. The simulations are performed at realistic wind velocity and rotor speed conditions and at full spatial scale. Validation against published data is presented and possibilities of the newly developed computational framework are illustrated on several examples.},
+   author = {Olivier Delestre and Carine Lucas and Pierre-Antoine Ksinant and Frédéric Darboux and Christian Laguerre and T.-N.-Tuoi Vo and François James and Stéphane Cordier},
+   doi = {10.1002/fld.3741},
+   isbn = {0271-2091},
+   issn = {02712091},
+   issue = {3},
+   journal = {International Journal for Numerical Methods in Fluids},
+   keywords = {aerodynamic torque,composite materials,fluid,isogeometric analysis,kirchhoff,love shells,nurbs,structure interaction,wind turbine blades,wind turbine rotor},
+   month = {5},
+   pages = {269-300},
+   pmid = {21474103},
+   title = {SWASHES: a compilation of shallow water analytic solutions for hydraulic and environmental studies},
+   volume = {72},
+   url = {https://onlinelibrary.wiley.com/doi/10.1002/fld.3741},
+   year = {2013},
+}
+@article{Bermudez1994,
+   abstract = {This paper deals with the extension of some upwind schemes to hyperbolic systems of conservation laws with source term. More precisely we give methods to get natural upwind discretizations of the source term when the flux is approximated by using flux-difference or flux-splitting techniques. In particular, the Q-schemes of Roe and van Leer and the flux-splitting techniques of Steger-Warming and Vijayasundaram are considered. Numerical results for a scalar advection equation with nonlinear source and for the one-dimensional shallow water equations are presented. In the last case we compare the different schemes proposed in terms of a conservation property. When this property does not hold, spurious numerical waves can appear which is the case for the centred discretization of the source term. © 1994.},
+   author = {Alfredo Bermudez and Ma Elena Vazquez},
+   doi = {10.1016/0045-7930(94)90004-3},
+   issn = {00457930},
+   issue = {8},
+   journal = {Computers & Fluids},
+   month = {11},
+   pages = {1049-1071},
+   title = {Upwind methods for hyperbolic conservation laws with source terms},
+   volume = {23},
+   url = {https://linkinghub.elsevier.com/retrieve/pii/0045793094900043},
+   year = {1994},
+}
+@book{Cohen-Tannoudji1977,
+   author        = "Cohen-Tannoudji, Claude and Diu, Bernard and Laloë, Franck",
+   title         = "{Quantum mechanics; 1st ed.}",
+   publisher     = "Wiley",
+   address       = "New York, NY",
+   year          = "1977",
+   note          = "Trans. of : Mécanique quantique. Paris : Hermann, 1973",
+}
+
+
+@article{mixed_precision_no,
+  title={Speeding up {Fourier} neural operators via mixed precision},
+  author={White, Colin and Tu, Renbo and Kossaifi, Jean and Pekhimenko, Gennady and Azizzadenesheli, Kamyar and Anandkumar, Anima},
+  journal={arXiv preprint arXiv:2307.15034},
+  year={2023}
+}
+
+@article{gupta2022towards,
+  title={Towards multi-spatiotemporal-scale generalized pde modeling},
+  author={Gupta, Jayesh K and Brandstetter, Johannes},
+  journal={arXiv preprint arXiv:2209.15616},
+  year={2022}
+}
+
+@article{mno_paper,
+  title={Learning chaotic dynamics in dissipative systems},
+  author={Li, Zongyi and Liu-Schiaffini, Miguel and Kovachki, Nikola and Azizzadenesheli, Kamyar and Liu, Burigede and Bhattacharya, Kaushik and Stuart, Andrew and Anandkumar, Anima},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={16768--16781},
+  year={2022}
+}
+
+@article{hasani2024generating,
+  title={Generating synthetic data for neural operators},
+  author={Hasani, Erisa and Ward, Rachel A},
+  journal={arXiv preprint arXiv:2401.02398},
+  year={2024}
+}
+
+@article{pfaff2020learning,
+  title={Learning mesh-based simulation with graph networks},
+  author={Pfaff, Tobias and Fortunato, Meire and Sanchez-Gonzalez, Alvaro and Battaglia, Peter W},
+  journal={arXiv preprint arXiv:2010.03409},
+  year={2020}
+}
+
+@article{wen2023real,
+  title={Real-time high-resolution {CO$_2$} geological storage prediction using nested {Fourier} neural operators},
+  author={Wen, Gege and Li, Zongyi and Long, Qirui and Azizzadenesheli, Kamyar and Anandkumar, Anima and Benson, Sally M},
+  journal={Energy \& Environmental Science},
+  volume={16},
+  number={4},
+  pages={1732--1741},
+  year={2023},
+  publisher={Royal Society of Chemistry}
+}
+
+
+
+@article{lam2023learning,
+  title={Learning skillful medium-range global weather forecasting},
+  author={Lam, Remi and Sanchez-Gonzalez, Alvaro and Willson, Matthew and Wirnsberger, Peter and Fortunato, Meire and Alet, Ferran and Ravuri, Suman and Ewalds, Timo and Eaton-Rosen, Zach and Hu, Weihua and others},
+  journal={Science},
+  volume={382},
+  number={6677},
+  pages={1416--1421},
+  year={2023},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{sun2023phase,
+  title={Phase Neural Operator for Multi-Station Picking of Seismic Arrivals},
+  author={Sun, Hongyu and Ross, Zachary E and Zhu, Weiqiang and Azizzadenesheli, Kamyar},
+  journal={Geophysical Research Letters},
+  volume={50},
+  number={24},
+  pages={e2023GL106434},
+  year={2023},
+  publisher={Wiley Online Library}
+}
+
+@article{shi2023broadband,
+  title={Broadband Ground Motion Synthesis via Generative Adversarial Neural Operators: Development and Validation},
+  author={Shi, Yaozhong and Lavrentiadis, Grigorios and Asimaki, Domniki and Ross, Zachary E and Azizzadenesheli, Kamyar},
+  journal={arXiv preprint arXiv:2309.03447},
+  year={2023}
+}
+
+@inproceedings{ronneberger2015u,
+  title={{U-Net}: Convolutional networks for biomedical image segmentation},
+  author={Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+  booktitle={Medical Image Computing and Computer-Assisted Intervention},
+  pages={234--241},
+  year={2015},
+  organization={Springer}
+}
+
+@article{kovachki2021universal,
+  title={On universal approximation and error bounds for Fourier neural operators},
+  author={Kovachki, Nikola and Lanthaler, Samuel and Mishra, Siddhartha},
+  journal={The Journal of Machine Learning Research},
+  volume={22},
+  number={1},
+  pages={13237--13312},
+  year={2021},
+  publisher={JMLRORG}
+}
+
+@article{rahman2024pretraining,
+  title={Pretraining Codomain Attention Neural Operators for Solving Multiphysics {PDEs}},
+  author={Rahman, Md Ashiqur and George, Robert Joseph and Elleithy, Mogab and Leibovici, Daniel and Li, Zongyi and Bonev, Boris and White, Colin and Berner, Julius and Yeh, Raymond A and Kossaifi, Jean and others},
+  journal={arXiv preprint arXiv:2403.12553},
+  year={2024}
+}
+
+
+@article{li2022transformer,
+  title={Transformer for partial differential equations' operator learning},
+  author={Li, Zijie and Meidani, Kazem and Farimani, Amir Barati},
+  journal={arXiv preprint arXiv:2205.13671},
+  year={2022}
+}

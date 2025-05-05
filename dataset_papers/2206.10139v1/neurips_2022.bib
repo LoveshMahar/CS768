@@ -1,0 +1,804 @@
+@article{polu2020gptf,
+  author    = {Stanislas Polu and
+               Ilya Sutskever},
+  title     = {Generative Language Modeling for Automated Theorem Proving},
+  journal   = {CoRR},
+  volume    = {abs/2009.03393},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2009.03393},
+  eprinttype = {arXiv},
+  eprint    = {2009.03393},
+  timestamp = {Sat, 23 Jan 2021 01:12:25 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2009-03393.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{wikipedia,
+    title = "{W}iki-40{B}: Multilingual Language Model Dataset",
+    author = "Guo, Mandy  and
+      Dai, Zihang  and
+      Vrande{\v{c}}i{\'c}, Denny  and
+      Al-Rfou, Rami",
+    booktitle = "Proceedings of the 12th Language Resources and Evaluation Conference",
+    month = may,
+    year = "2020",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2020.lrec-1.297",
+    pages = "2440--2452",
+    abstract = "We propose a new multilingual language model benchmark that is composed of 40+ languages spanning several scripts and linguistic families. With around 40 billion characters, we hope this new resource will accelerate the research of multilingual modeling. We train monolingual causal language models using a state-of-the-art model (Transformer-XL) establishing baselines for many languages. We also introduce the task of multilingual causal language modeling where we train our model on the combined text of 40+ languages from Wikipedia with different vocabulary sizes and evaluate on the languages individually. We released the cleaned-up text of 40+ Wikipedia language editions, the corresponding trained monolingual language models, and several multilingual language models with different fixed vocabulary sizes.",
+    language = "English",
+    ISBN = "979-10-95546-34-4",
+}
+
+
+% t5
+
+@article{t5,
+  author    = {Colin Raffel and
+               Noam Shazeer and
+               Adam Roberts and
+               Katherine Lee and
+               Sharan Narang and
+               Michael Matena and
+               Yanqi Zhou and
+               Wei Li and
+               Peter J. Liu},
+  title     = {Exploring the Limits of Transfer Learning with a Unified Text-to-Text
+               Transformer},
+  journal   = {J. Mach. Learn. Res.},
+  volume    = {21},
+  pages     = {140:1--140:67},
+  year      = {2020},
+  url       = {http://jmlr.org/papers/v21/20-074.html},
+  timestamp = {Fri, 05 Feb 2021 15:43:41 +0100},
+  biburl    = {https://dblp.org/rec/journals/jmlr/RaffelSRLNMZLL20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+% synthetic task pretraining
+
+@inproceedings{nonsense_summary,
+  author={Kundan Krishna and Jeffrey P. Bigham and Zachary C. Lipton},
+  title={Does Pretraining for Summarization Require Knowledge Transfer?},
+  year={2021},
+  cdate={1609459200000},
+  pages={3178-3189},
+  url={https://aclanthology.org/2021.findings-emnlp.273},
+  booktitle={EMNLP (Findings)}
+}
+
+@inproceedings{Devlin2019bert,
+  author    = {Jacob Devlin and
+               Ming{-}Wei Chang and
+               Kenton Lee and
+               Kristina Toutanova},
+  title     = {{BERT:} Pre-training of Deep Bidirectional Transformers for Language
+               Understanding},
+  booktitle = {ACL},
+  year      = {2019},
+}
+
+@inproceedings{DBLP:conf/icml/ChenK0H20,
+  author    = {Ting Chen and
+               Simon Kornblith and
+               Mohammad Norouzi and
+               Geoffrey E. Hinton},
+  title     = {A Simple Framework for Contrastive Learning of Visual Representations},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning,
+               {ICML} 2020, 13-18 July 2020, Virtual Event},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {119},
+  pages     = {1597--1607},
+  publisher = {{PMLR}},
+  year      = {2020},
+  url       = {http://proceedings.mlr.press/v119/chen20j.html},
+  timestamp = {Tue, 15 Dec 2020 17:40:18 +0100},
+  biburl    = {https://dblp.org/rec/conf/icml/ChenK0H20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{brown2020gpt3,
+  author    = {Tom B. Brown and
+               Benjamin Mann and
+               Nick Ryder and
+               Melanie Subbiah and
+               Jared Kaplan and
+               Prafulla Dhariwal and
+               Arvind Neelakantan and
+               Pranav Shyam and
+               Girish Sastry and
+               Amanda Askell and
+               Sandhini Agarwal and
+               Ariel Herbert{-}Voss and
+               Gretchen Krueger and
+               Tom Henighan and
+               Rewon Child and
+               Aditya Ramesh and
+               Daniel M. Ziegler and
+               Jeffrey Wu and
+               Clemens Winter and
+               Christopher Hesse and
+               Mark Chen and
+               Eric Sigler and
+               Mateusz Litwin and
+               Scott Gray and
+               Benjamin Chess and
+               Jack Clark and
+               Christopher Berner and
+               Sam McCandlish and
+               Alec Radford and
+               Ilya Sutskever and
+               Dario Amodei},
+  title     = {Language Models are Few-Shot Learners},
+  booktitle = {NeurIPS},
+  year      = {2020},
+}
+
+@article{chen2021codex,
+  author    = {Mark Chen and
+               Jerry Tworek and
+               Heewoo Jun and
+               Qiming Yuan and
+               Henrique Ponde de Oliveira Pinto and
+               Jared Kaplan and
+               Harrison Edwards and
+               Yuri Burda and
+               Nicholas Joseph and
+               Greg Brockman and
+               Alex Ray and
+               Raul Puri and
+               Gretchen Krueger and
+               Michael Petrov and
+               Heidy Khlaaf and
+               Girish Sastry and
+               Pamela Mishkin and
+               Brooke Chan and
+               Scott Gray and
+               Nick Ryder and
+               Mikhail Pavlov and
+               Alethea Power and
+               Lukasz Kaiser and
+               Mohammad Bavarian and
+               Clemens Winter and
+               Philippe Tillet and
+               Felipe Petroski Such and
+               Dave Cummings and
+               Matthias Plappert and
+               Fotios Chantzis and
+               Elizabeth Barnes and
+               Ariel Herbert{-}Voss and
+               William Hebgen Guss and
+               Alex Nichol and
+               Alex Paino and
+               Nikolas Tezak and
+               Jie Tang and
+               Igor Babuschkin and
+               Suchir Balaji and
+               Shantanu Jain and
+               William Saunders and
+               Christopher Hesse and
+               Andrew N. Carr and
+               Jan Leike and
+               Joshua Achiam and
+               Vedant Misra and
+               Evan Morikawa and
+               Alec Radford and
+               Matthew Knight and
+               Miles Brundage and
+               Mira Murati and
+               Katie Mayer and
+               Peter Welinder and
+               Bob McGrew and
+               Dario Amodei and
+               Sam McCandlish and
+               Ilya Sutskever and
+               Wojciech Zaremba},
+  title     = {Evaluating Large Language Models Trained on Code},
+  journal   = {CoRR},
+  volume    = {abs/2107.03374},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2107.03374},
+  eprinttype = {arXiv},
+  eprint    = {2107.03374},
+  timestamp = {Tue, 20 Jul 2021 15:08:33 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2107-03374.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{ri,
+  author    = {Ryokan Ri and
+               Yoshimasa Tsuruoka},
+  title     = {Pretraining with Artificial Language: Studying Transferable Knowledge
+               in Language Models},
+  journal   = {CoRR},
+  volume    = {abs/2203.10326},
+  year      = {2022},
+  url       = {https://doi.org/10.48550/arXiv.2203.10326},
+  doi       = {10.48550/arXiv.2203.10326},
+  eprinttype = {arXiv},
+  eprint    = {2203.10326},
+  timestamp = {Tue, 29 Mar 2022 18:07:24 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2203-10326.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{lime,
+  title={Lime: Learning inductive bias for primitives of mathematical reasoning},
+  author={Wu, Yuhuai and Rabe, Markus N and Li, Wenda and Ba, Jimmy and Grosse, Roger B and Szegedy, Christian},
+  booktitle={International Conference on Machine Learning},
+  pages={11251--11262},
+  year={2021},
+  organization={PMLR}
+}
+
+@article{chiang,
+  author    = {David Cheng{-}Han Chiang and
+               Hung{-}yi Lee},
+  title     = {On the Transferability of Pre-trained Language Models: {A} Study from
+               Artificial Datasets},
+  journal   = {CoRR},
+  volume    = {abs/2109.03537},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2109.03537},
+  eprinttype = {arXiv},
+  eprint    = {2109.03537},
+  timestamp = {Mon, 20 Sep 2021 16:29:41 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2109-03537.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{isabel,
+  author    = {Isabel Papadimitriou and
+               Dan Jurafsky},
+  editor    = {Bonnie Webber and
+               Trevor Cohn and
+               Yulan He and
+               Yang Liu},
+  title     = {Learning Music Helps You Read: Using Transfer to Study Linguistic
+               Structure in Language Models},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural
+               Language Processing, {EMNLP} 2020, Online, November 16-20, 2020},
+  pages     = {6829--6839},
+  publisher = {Association for Computational Linguistics},
+  year      = {2020},
+  url       = {https://doi.org/10.18653/v1/2020.emnlp-main.554},
+  doi       = {10.18653/v1/2020.emnlp-main.554},
+  timestamp = {Wed, 23 Mar 2022 10:11:55 +0100},
+  biburl    = {https://dblp.org/rec/conf/emnlp/PapadimitriouJ20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+% downstream tasks
+
+@inproceedings{cnndm,
+    title = "Get To The Point: Summarization with Pointer-Generator Networks",
+    author = "See, Abigail  and
+      Liu, Peter J.  and
+      Manning, Christopher D.",
+    booktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P17-1099",
+    doi = "10.18653/v1/P17-1099",
+    pages = "1073--1083",
+}
+
+@article{chemistry_t5,
+author = {Lu, Jieyu and Zhang, Yingkai},
+title = {Unified Deep Learning Model for Multitask Reaction Predictions with Explanation},
+journal = {Journal of Chemical Information and Modeling},
+volume = {62},
+number = {6},
+pages = {1376-1387},
+year = {2022},
+doi = {10.1021/acs.jcim.1c01467},
+    note ={PMID: 35266390},
+URL = { 
+        https://doi.org/10.1021/acs.jcim.1c01467
+},
+eprint = { 
+        https://doi.org/10.1021/acs.jcim.1c01467
+}
+}
+
+@inproceedings{codexglue,
+  author    = {Shuai Lu and
+               Daya Guo and
+               Shuo Ren and
+               Junjie Huang and
+               Alexey Svyatkovskiy and
+               Ambrosio Blanco and
+               Colin B. Clement and
+               Dawn Drain and
+               Daxin Jiang and
+               Duyu Tang and
+               Ge Li and
+               Lidong Zhou and
+               Linjun Shou and
+               Long Zhou and
+               Michele Tufano and
+               Ming Gong and
+               Ming Zhou and
+               Nan Duan and
+               Neel Sundaresan and
+               Shao Kun Deng and
+               Shengyu Fu and
+               Shujie Liu},
+  editor    = {Joaquin Vanschoren and
+               Sai{-}Kit Yeung},
+  title     = {CodeXGLUE: {A} Machine Learning Benchmark Dataset for Code Understanding
+               and Generation},
+  booktitle = {Proceedings of the Neural Information Processing Systems Track on
+               Datasets and Benchmarks 1, NeurIPS Datasets and Benchmarks 2021, December
+               2021, virtual},
+  year      = {2021},
+  url       = {https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/c16a5320fa475530d9583c34fd356ef5-Abstract-round1.html},
+  timestamp = {Thu, 05 May 2022 16:53:59 +0200},
+  biburl    = {https://dblp.org/rec/conf/nips/LuGRHSBCDJTLZSZ21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{squad,
+  author    = {Pranav Rajpurkar and
+               Jian Zhang and
+               Konstantin Lopyrev and
+               Percy Liang},
+  title     = {SQuAD: 100, 000+ Questions for Machine Comprehension of Text},
+  journal   = {CoRR},
+  volume    = {abs/1606.05250},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1606.05250},
+  eprinttype = {arXiv},
+  eprint    = {1606.05250},
+  timestamp = {Mon, 24 Aug 2020 14:01:25 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/RajpurkarZLL16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{unifiedskg,
+  author    = {Tianbao Xie and
+               Chen Henry Wu and
+               Peng Shi and
+               Ruiqi Zhong and
+               Torsten Scholak and
+               Michihiro Yasunaga and
+               Chien{-}Sheng Wu and
+               Ming Zhong and
+               Pengcheng Yin and
+               Sida I. Wang and
+               Victor Zhong and
+               Bailin Wang and
+               Chengzu Li and
+               Connor Boyle and
+               Ansong Ni and
+               Ziyu Yao and
+               Dragomir R. Radev and
+               Caiming Xiong and
+               Lingpeng Kong and
+               Rui Zhang and
+               Noah A. Smith and
+               Luke Zettlemoyer and
+               Tao Yu},
+  title     = {UnifiedSKG: Unifying and Multi-Tasking Structured Knowledge Grounding
+               with Text-to-Text Language Models},
+  journal   = {CoRR},
+  volume    = {abs/2201.05966},
+  year      = {2022},
+  url       = {https://arxiv.org/abs/2201.05966},
+  eprinttype = {arXiv},
+  eprint    = {2201.05966},
+  timestamp = {Thu, 17 Mar 2022 09:26:15 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2201-05966.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{mtop,
+    title = "{MTOP}: A Comprehensive Multilingual Task-Oriented Semantic Parsing Benchmark",
+    author = "Li, Haoran  and
+      Arora, Abhinav  and
+      Chen, Shuohui  and
+      Gupta, Anchit  and
+      Gupta, Sonal  and
+      Mehdad, Yashar",
+    booktitle = "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
+    month = apr,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.eacl-main.257",
+    doi = "10.18653/v1/2021.eacl-main.257",
+    pages = "2950--2962",
+}
+
+@inproceedings{webqsp,
+    title = "The Value of Semantic Parse Labeling for Knowledge Base Question Answering",
+    author = "Yih, Wen-tau  and
+      Richardson, Matthew  and
+      Meek, Chris  and
+      Chang, Ming-Wei  and
+      Suh, Jina",
+    booktitle = "Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = aug,
+    year = "2016",
+    address = "Berlin, Germany",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P16-2033",
+    doi = "10.18653/v1/P16-2033",
+    pages = "201--206",
+}
+
+
+@article{uspto-50K,
+author = {Liu, Bowen and Ramsundar, Bharath and Kawthekar, Prasad and Shi, Jade and Gomes, Joseph and Luu Nguyen, Quang and Ho, Stephen and Sloane, Jack and Wender, Paul and Pande, Vijay},
+title = {Retrosynthetic Reaction Prediction Using Neural Sequence-to-Sequence Models},
+journal = {ACS Central Science},
+volume = {3},
+number = {10},
+pages = {1103-1113},
+year = {2017},
+doi = {10.1021/acscentsci.7b00303},
+    note ={PMID: 29104927},
+
+URL = { 
+        https://doi.org/10.1021/acscentsci.7b00303
+    
+},
+eprint = { 
+        https://doi.org/10.1021/acscentsci.7b00303
+    
+}
+
+}
+
+% related work section
+%%%% Synthetic Pre-training
+
+@inproceedings{fractal,
+  author    = {Connor Anderson and
+               Ryan Farrell},
+  title     = {Improving Fractal Pre-training},
+  booktitle = {{IEEE/CVF} Winter Conference on Applications of Computer Vision, {WACV}
+               2022, Waikoloa, HI, USA, January 3-8, 2022},
+  pages     = {2412--2421},
+  publisher = {{IEEE}},
+  year      = {2022},
+  url       = {https://doi.org/10.1109/WACV51458.2022.00247},
+  doi       = {10.1109/WACV51458.2022.00247},
+  timestamp = {Thu, 17 Feb 2022 14:51:17 +0100},
+  biburl    = {https://dblp.org/rec/conf/wacv/AndersonF22.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{zou,
+  author    = {Yanyan Zou and
+               Xingxing Zhang and
+               Wei Lu and
+               Furu Wei and
+               Ming Zhou},
+  title     = {{STEP:} Sequence-to-Sequence Transformer Pre-training for Document
+               Summarization},
+  journal   = {CoRR},
+  volume    = {abs/2004.01853},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2004.01853},
+  eprinttype = {arXiv},
+  eprint    = {2004.01853},
+  timestamp = {Mon, 24 Aug 2020 13:19:09 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2004-01853.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+
+
+
+@article{cross_lang_transfer,
+  author    = {Yinhan Liu and
+               Jiatao Gu and
+               Naman Goyal and
+               Xian Li and
+               Sergey Edunov and
+               Marjan Ghazvininejad and
+               Mike Lewis and
+               Luke Zettlemoyer},
+  title     = {Multilingual Denoising Pre-training for Neural Machine Translation},
+  journal   = {Trans. Assoc. Comput. Linguistics},
+  volume    = {8},
+  pages     = {726--742},
+  year      = {2020},
+  url       = {https://transacl.org/ojs/index.php/tacl/article/view/2107},
+  timestamp = {Wed, 17 Feb 2021 21:55:28 +0100},
+  biburl    = {https://dblp.org/rec/journals/tacl/LiuGGLEGLZ20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{chiang_old,
+  author    = {David Cheng{-}Han Chiang and
+               Hung{-}yi Lee},
+  title     = {Pre-Training a Language Model Without Human Language},
+  journal   = {CoRR},
+  volume    = {abs/2012.11995},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2012.11995},
+  eprinttype = {arXiv},
+  eprint    = {2012.11995},
+  timestamp = {Tue, 05 Jan 2021 16:02:31 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2012-11995.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{wiki_rl,
+  author    = {Machel Reid and
+               Yutaro Yamada and
+               Shixiang Shane Gu},
+  title     = {Can Wikipedia Help Offline Reinforcement Learning?},
+  journal   = {CoRR},
+  volume    = {abs/2201.12122},
+  year      = {2022},
+  url       = {https://arxiv.org/abs/2201.12122},
+  eprinttype = {arXiv},
+  eprint    = {2201.12122},
+  timestamp = {Wed, 02 Feb 2022 15:00:01 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2201-12122.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{understand_cross_lang_trans_1,
+  author    = {Karthikeyan K and
+               Zihan Wang and
+               Stephen Mayhew and
+               Dan Roth},
+  title     = {Cross-Lingual Ability of Multilingual {BERT:} An Empirical Study},
+  booktitle = {8th International Conference on Learning Representations, {ICLR} 2020,
+               Addis Ababa, Ethiopia, April 26-30, 2020},
+  publisher = {OpenReview.net},
+  year      = {2020},
+  url       = {https://openreview.net/forum?id=HJeT3yrtDr},
+  timestamp = {Thu, 04 Jun 2020 12:32:21 +0200},
+  biburl    = {https://dblp.org/rec/conf/iclr/KWMR20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{understand_cross_lang_trans_2,
+  author    = {Alexis Conneau and
+               Kartikay Khandelwal and
+               Naman Goyal and
+               Vishrav Chaudhary and
+               Guillaume Wenzek and
+               Francisco Guzm{\'{a}}n and
+               Edouard Grave and
+               Myle Ott and
+               Luke Zettlemoyer and
+               Veselin Stoyanov},
+  editor    = {Dan Jurafsky and
+               Joyce Chai and
+               Natalie Schluter and
+               Joel R. Tetreault},
+  title     = {Unsupervised Cross-lingual Representation Learning at Scale},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational
+               Linguistics, {ACL} 2020, Online, July 5-10, 2020},
+  pages     = {8440--8451},
+  publisher = {Association for Computational Linguistics},
+  year      = {2020},
+  url       = {https://doi.org/10.18653/v1/2020.acl-main.747},
+  doi       = {10.18653/v1/2020.acl-main.747},
+  timestamp = {Wed, 16 Mar 2022 23:55:02 +0100},
+  biburl    = {https://dblp.org/rec/conf/acl/ConneauKGCWGGOZ20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{probe_cross_lang_1,
+  author    = {Ethan A. Chi and
+               John Hewitt and
+               Christopher D. Manning},
+  editor    = {Dan Jurafsky and
+               Joyce Chai and
+               Natalie Schluter and
+               Joel R. Tetreault},
+  title     = {Finding Universal Grammatical Relations in Multilingual {BERT}},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational
+               Linguistics, {ACL} 2020, Online, July 5-10, 2020},
+  pages     = {5564--5577},
+  publisher = {Association for Computational Linguistics},
+  year      = {2020},
+  url       = {https://doi.org/10.18653/v1/2020.acl-main.493},
+  doi       = {10.18653/v1/2020.acl-main.493},
+  timestamp = {Fri, 06 Aug 2021 00:40:50 +0200},
+  biburl    = {https://dblp.org/rec/conf/acl/ChiHM20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{probe_cross_lang_2,
+  author    = {Isabel Papadimitriou and
+               Ethan A. Chi and
+               Richard Futrell and
+               Kyle Mahowald},
+  editor    = {Paola Merlo and
+               J{\"{o}}rg Tiedemann and
+               Reut Tsarfaty},
+  title     = {Deep Subjecthood: Higher-Order Grammatical Features in Multilingual
+               {BERT}},
+  booktitle = {Proceedings of the 16th Conference of the European Chapter of the
+               Association for Computational Linguistics: Main Volume, {EACL} 2021,
+               Online, April 19 - 23, 2021},
+  pages     = {2522--2532},
+  publisher = {Association for Computational Linguistics},
+  year      = {2021},
+  url       = {https://doi.org/10.18653/v1/2021.eacl-main.215},
+  doi       = {10.18653/v1/2021.eacl-main.215},
+  timestamp = {Thu, 20 Jan 2022 10:02:50 +0100},
+  biburl    = {https://dblp.org/rec/conf/eacl/PapadimitriouCF21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{understand_cross_lang_trans_3,
+  author    = {Philipp Dufter and
+               Hinrich Sch{\"{u}}tze},
+  editor    = {Bonnie Webber and
+               Trevor Cohn and
+               Yulan He and
+               Yang Liu},
+  title     = {Identifying Elements Essential for BERT's Multilinguality},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural
+               Language Processing, {EMNLP} 2020, Online, November 16-20, 2020},
+  pages     = {4423--4437},
+  publisher = {Association for Computational Linguistics},
+  year      = {2020},
+  url       = {https://doi.org/10.18653/v1/2020.emnlp-main.358},
+  doi       = {10.18653/v1/2020.emnlp-main.358},
+  timestamp = {Wed, 23 Mar 2022 10:11:55 +0100},
+  biburl    = {https://dblp.org/rec/conf/emnlp/DufterS20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{word_order,
+  author    = {Koustuv Sinha and
+               Robin Jia and
+               Dieuwke Hupkes and
+               Joelle Pineau and
+               Adina Williams and
+               Douwe Kiela},
+  editor    = {Marie{-}Francine Moens and
+               Xuanjing Huang and
+               Lucia Specia and
+               Scott Wen{-}tau Yih},
+  title     = {Masked Language Modeling and the Distributional Hypothesis: Order
+               Word Matters Pre-training for Little},
+  booktitle = {Proceedings of the 2021 Conference on Empirical Methods in Natural
+               Language Processing, {EMNLP} 2021, Virtual Event / Punta Cana, Dominican
+               Republic, 7-11 November, 2021},
+  pages     = {2888--2913},
+  publisher = {Association for Computational Linguistics},
+  year      = {2021},
+  url       = {https://doi.org/10.18653/v1/2021.emnlp-main.230},
+  doi       = {10.18653/v1/2021.emnlp-main.230},
+  timestamp = {Thu, 20 Jan 2022 10:02:06 +0100},
+  biburl    = {https://dblp.org/rec/conf/emnlp/SinhaJHPWK21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{init_1,
+  author    = {Hongyu Wang and
+               Shuming Ma and
+               Li Dong and
+               Shaohan Huang and
+               Dongdong Zhang and
+               Furu Wei},
+  title     = {DeepNet: Scaling Transformers to 1, 000 Layers},
+  journal   = {CoRR},
+  volume    = {abs/2203.00555},
+  year      = {2022},
+  url       = {https://doi.org/10.48550/arXiv.2203.00555},
+  doi       = {10.48550/arXiv.2203.00555},
+  eprinttype = {arXiv},
+  eprint    = {2203.00555},
+  timestamp = {Wed, 16 Mar 2022 16:39:52 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2203-00555.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{init_4,
+  author    = {Biao Zhang and
+               Ivan Titov and
+               Rico Sennrich},
+  editor    = {Kentaro Inui and
+               Jing Jiang and
+               Vincent Ng and
+               Xiaojun Wan},
+  title     = {Improving Deep Transformer with Depth-Scaled Initialization and Merged
+               Attention},
+  booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural
+               Language Processing and the 9th International Joint Conference on
+               Natural Language Processing, {EMNLP-IJCNLP} 2019, Hong Kong, China,
+               November 3-7, 2019},
+  pages     = {898--909},
+  publisher = {Association for Computational Linguistics},
+  year      = {2019},
+  url       = {https://doi.org/10.18653/v1/D19-1083},
+  doi       = {10.18653/v1/D19-1083},
+  timestamp = {Thu, 07 Apr 2022 09:14:07 +0200},
+  biburl    = {https://dblp.org/rec/conf/emnlp/ZhangTS19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{init_2,
+  author    = {Biao Zhang and
+               Philip Williams and
+               Ivan Titov and
+               Rico Sennrich},
+  editor    = {Dan Jurafsky and
+               Joyce Chai and
+               Natalie Schluter and
+               Joel R. Tetreault},
+  title     = {Improving Massively Multilingual Neural Machine Translation and Zero-Shot
+               Translation},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational
+               Linguistics, {ACL} 2020, Online, July 5-10, 2020},
+  pages     = {1628--1639},
+  publisher = {Association for Computational Linguistics},
+  year      = {2020},
+  url       = {https://doi.org/10.18653/v1/2020.acl-main.148},
+  doi       = {10.18653/v1/2020.acl-main.148},
+  timestamp = {Fri, 06 Aug 2021 00:41:02 +0200},
+  biburl    = {https://dblp.org/rec/conf/acl/ZhangWTS20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{init_3,
+  author    = {Xiao Shi Huang and
+               Felipe P{\'{e}}rez and
+               Jimmy Ba and
+               Maksims Volkovs},
+  title     = {Improving Transformer Optimization Through Better Initialization},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning,
+               {ICML} 2020, 13-18 July 2020, Virtual Event},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {119},
+  pages     = {4475--4483},
+  publisher = {{PMLR}},
+  year      = {2020},
+  url       = {http://proceedings.mlr.press/v119/huang20f.html},
+  timestamp = {Tue, 15 Dec 2020 17:40:19 +0100},
+  biburl    = {https://dblp.org/rec/conf/icml/HuangPBV20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+a service of  Schloss Dagstuhl - Leibniz Center for Informatics	homebrowsesearchabout
+
+
+
+@article{DBLP:journals/corr/abs-2012-07805,
+  author    = {Nicholas Carlini and
+               Florian Tram{\`{e}}r and
+               Eric Wallace and
+               Matthew Jagielski and
+               Ariel Herbert{-}Voss and
+               Katherine Lee and
+               Adam Roberts and
+               Tom B. Brown and
+               Dawn Song and
+               {\'{U}}lfar Erlingsson and
+               Alina Oprea and
+               Colin Raffel},
+  title     = {Extracting Training Data from Large Language Models},
+  journal   = {CoRR},
+  volume    = {abs/2012.07805},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2012.07805},
+  eprinttype = {arXiv},
+  eprint    = {2012.07805},
+  timestamp = {Sat, 02 Jan 2021 15:43:30 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2012-07805.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}

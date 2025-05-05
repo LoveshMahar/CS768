@@ -1,0 +1,19 @@
+Black-box attacks can generate adversarial examples without accessing the
+parameters of target model, largely exacerbating the threats of deployed deep
+neural networks (DNNs). However, previous works state that black-box attacks
+fail to mislead target models when their training data and outputs are
+inaccessible. In this work, we argue that black-box attacks can pose practical
+attacks in this extremely restrictive scenario where only several test samples
+are available. Specifically, we find that attacking the shallow layers of DNNs
+trained on a few test samples can generate powerful adversarial examples. As
+only a few samples are required, we refer to these attacks as lightweight
+black-box attacks. The main challenge to promoting lightweight attacks is to
+mitigate the adverse impact caused by the approximation error of shallow
+layers. As it is hard to mitigate the approximation error with few available
+samples, we propose Error TransFormer (ETF) for lightweight attacks. Namely,
+ETF transforms the approximation error in the parameter space into a
+perturbation in the feature space and alleviates the error by disturbing
+features. In experiments, lightweight black-box attacks with the proposed ETF
+achieve surprising results. For example, even if only 1 sample per category
+available, the attack success rate in lightweight black-box attacks is only
+about 3% lower than that of the black-box attacks with complete training data.

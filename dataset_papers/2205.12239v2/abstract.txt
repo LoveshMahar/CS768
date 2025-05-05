@@ -1,0 +1,13 @@
+We propose a notion of common information that allows one to quantify and
+separate the information that is shared between two random variables from the
+information that is unique to each. Our notion of common information is defined
+by an optimization problem over a family of functions and recovers the
+G\'acs-K\"orner common information as a special case. Importantly, our notion
+can be approximated empirically using samples from the underlying data
+distribution. We then provide a method to partition and quantify the common and
+unique information using a simple modification of a traditional variational
+auto-encoder. Empirically, we demonstrate that our formulation allows us to
+learn semantically meaningful common and unique factors of variation even on
+high-dimensional data such as images and videos. Moreover, on datasets where
+ground-truth latent factors are known, we show that we can accurately quantify
+the common information between the random variables.

@@ -1,0 +1,12 @@
+Several practical applications of reinforcement learning involve an agent
+learning from past data without the possibility of further exploration. Often
+these applications require us to 1) identify a near optimal policy or to 2)
+estimate the value of a target policy. For both tasks we derive
+\emph{exponential} information-theoretic lower bounds in discounted infinite
+horizon MDPs with a linear function representation for the action value
+function even if 1) \emph{realizability} holds, 2) the batch algorithm observes
+the exact reward and transition \emph{functions}, and 3) the batch algorithm is
+given the \emph{best} a priori data distribution for the problem class. Our
+work introduces a new `oracle + batch algorithm' framework to prove lower
+bounds that hold for every distribution. The work shows an exponential
+separation between batch and online reinforcement learning.

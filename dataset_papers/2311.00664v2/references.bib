@@ -1,0 +1,2810 @@
+@misc{bengio2014representation,
+      title={Representation Learning: A Review and New Perspectives}, 
+      author={Yoshua Bengio and Aaron Courville and Pascal Vincent},
+      year={2014},
+      eprint={1206.5538},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{mikolov2013exploiting,
+      title={Exploiting Similarities among Languages for Machine Translation}, 
+      author={Tomas Mikolov and Quoc V. Le and Ilya Sutskever},
+      year={2013},
+      eprint={1309.4168},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{Vulic2020-zb,
+  address   = {Online},
+  author    = {Vuli{\'c}, Ivan  and
+               Ruder, Sebastian  and
+               S{\o}gaard, Anders},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  doi       = {10.18653/v1/2020.emnlp-main.257},
+  pages     = {3178--3192},
+  publisher = {Association for Computational Linguistics},
+  title     = {Are All Good Word Vector Spaces Isomorphic?},
+  url       = {https://aclanthology.org/2020.emnlp-main.257},
+  year      = {2020}
+}
+
+@article{DBLP:journals/corr/MikolovLS13,
+ author = {Tom{\'{a}}s Mikolov and
+Quoc V. Le and
+Ilya Sutskever},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/journals/corr/MikolovLS13.bib},
+ eprint = {1309.4168},
+ eprinttype = {arXiv},
+ journal = {CoRR},
+ timestamp = {Mon, 28 Dec 2020 11:31:01 +0100},
+ title = {Exploiting Similarities among Languages for Machine Translation},
+ url = {http://arxiv.org/abs/1309.4168},
+ volume = {abs/1309.4168},
+ year = {2013}
+}
+@article{gower1975a,
+  title = {Generalized Procrustes Analysis},
+  author = {Gower, J. C.},
+  year = {1975},
+  month = mar,
+  journal = {Psychometrika},
+  volume = {40},
+  number = {1},
+  pages = {33--51},
+  issn = {1860-0980},
+  doi = {10.1007/BF02291478},
+  urldate = {2023-05-17},
+  abstract = {SupposePi(i)(i = 1, 2, ...,m, j = 1, 2, ...,n) give the locations ofmn points inp-dimensional space. Collectively these may be regarded asm configurations, or scalings, each ofn points inp-dimensions. The problem is investigated of translating, rotating, reflecting and scaling them configurations to minimize the goodness-of-fit criterion {$\Sigma$}i=1m{$\Sigma$}i=1n{$\Delta$}2(Pj(i)Gi), whereGiis the centroid of them pointsPi(i)(i = 1, 2, ...,m). The rotated positions of each configuration may be regarded as individual analyses with the centroid configuration representing a consensus, and this relationship with individual scaling analysis is discussed. A computational technique is given, the results of which can be summarized in analysis of variance form. The special casem = 2 corresponds to Classical Procrustes analysis but the choice of criterion that fits each configuration to the common centroid configuration avoids difficulties that arise when one set is fitted to the other, regarded as fixed.},
+  langid = {english},
+ }
+
+
+@article{Norelli2022-ni,
+ abstract = {Aligning the visual and language spaces requires to train
+deep neural networks from scratch on giant multimodal
+datasets; CLIP trains both an image and a text encoder,
+while LiT manages to train just the latter by taking
+advantage of a pretrained vision network. In this paper, we
+show that sparse relative representations are sufficient to
+align text and images without training any network. Our
+method relies on readily available single-domain encoders
+(trained with or without supervision) and a modest (in
+comparison) number of image-text pairs. ASIF redefines what
+constitutes a multimodal model by explicitly disentangling
+memory from processing: here the model is defined by the
+embedded pairs of all the entries in the multimodal dataset,
+in addition to the parameters of the two encoders.
+Experiments on standard zero-shot visual benchmarks
+demonstrate the typical transfer ability of image-text
+models. Overall, our method represents a simple yet
+surprisingly strong baseline for foundation multimodal
+models, raising important questions on their data efficiency
+and on the role of retrieval in machine learning.},
+ author = {Norelli, Antonio and Fumero, Marco and Maiorca, Valentino
+and Moschella, Luca and Rodol{\`a}, Emanuele and Locatello,
+Francesco},
+ title = {{ASIF}: Coupled Data Turns Unimodal Models to Multimodal
+Without Training},
+ booktitle={Advances in Neural Information Processing Systems 37: Annual Conference
+on Neural Information Processing Systems 2023, NeurIPS 2023, December
+10-16, 2023},
+year={2023},
+url={https://neurips.cc/virtual/2023/poster/71339}
+}
+
+@article{fps,
+ author = {Eldar, Y. and Lindenbaum, M. and Porat, M. and Zeevi, Y.Y.},
+ doi = {10.1109/83.623193},
+ journal = {IEEE Transactions on Image Processing},
+ number = {9},
+ pages = {1305-1315},
+ title = {The farthest point strategy for progressive image sampling},
+ volume = {6},
+ year = {1997}
+}
+
+@inproceedings{xlmr,
+ address = {Online},
+ author = {Conneau, Alexis  and
+Khandelwal, Kartikay  and
+Goyal, Naman  and
+Chaudhary, Vishrav  and
+Wenzek, Guillaume  and
+Guzm{\'a}n, Francisco  and
+Grave, Edouard  and
+Ott, Myle  and
+Zettlemoyer, Luke  and
+Stoyanov, Veselin},
+ booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+ doi = {10.18653/v1/2020.acl-main.747},
+ pages = {8440--8451},
+ publisher = {Association for Computational Linguistics},
+ title = {Unsupervised Cross-lingual Representation Learning at Scale},
+ url = {https://aclanthology.org/2020.acl-main.747},
+ year = {2020}
+}
+
+@inproceedings{Moschella2022-yf,
+ abstract = {Neural networks embed the geometric structure of a data
+manifold lying in a high-dimensional space into latent
+representations. Ideally, the distribution of the data
+points in the latent space should depend only on the task,
+the data, the loss, and other architecture-specific
+constraints. However, factors such as the random weights
+initialization, training hyperparameters, or other sources
+of randomness in the training phase may induce incoherent
+latent spaces that hinder any form of reuse. Nevertheless,
+we empirically observe that, under the same data and
+modeling choices, distinct latent spaces typically differ by
+an unknown quasi-isometric transformation: that is, in each
+space, the distances between the encodings do not change. In
+this work, we propose to adopt pairwise similarities as an
+alternative data representation, that can be used to enforce
+the desired invariance without any additional training. We
+show how neural architectures can leverage these relative
+representations to guarantee, in practice, latent isometry
+invariance, effectively enabling latent space communication:
+from zero-shot model stitching to latent space comparison
+between diverse settings. We extensively validate the
+generalization capability of our approach on different
+datasets, spanning various modalities (images, text,
+graphs), tasks (e.g., classification, reconstruction) and
+architectures (e.g., CNNs, GCNs, transformers).},
+ author = {Moschella, Luca and Maiorca, Valentino and Fumero, Marco and
+Norelli, Antonio and Locatello, Francesco and Rodol{\`a},
+Emanuele},
+ booktitle = {International Conference on Learning Representations },
+ title = {Relative representations enable zero-shot latent space communication},
+ url = {https://openreview.net/forum?id=SrC-nwieGJ},
+ year = {2023}
+}
+
+@misc{Zhihui_Xie_Handong_Zhao_Tong_Yu_Shuai_Li_undated-or,
+ author = {{Zhihui Xie Handong Zhao Tong Yu Shuai Li}},
+ howpublished = {\url{https://preview.aclanthology.org/emnlp-22-ingestion/2022.emnlp-main.379/}},
+ title = {Discovering Low-rank Subspaces for Language-agnostic
+Multilingual Representations}
+}
+
+@article{Marchisio2022-wp,
+ abstract = {The ability to extract high-quality translation dictionaries
+from monolingual word embedding spaces depends critically on
+the geometric similarity of the spaces -- their degree of
+``isomorphism.'' We address the root-cause of faulty
+cross-lingual mapping: that word embedding training resulted
+in the underlying spaces being non-isomorphic. We
+incorporate global measures of isomorphism directly into the
+Skip-gram loss function, successfully increasing the
+relative isomorphism of trained word embedding spaces and
+improving their ability to be mapped to a shared
+cross-lingual space. The result is improved bilingual
+lexicon induction in general data conditions, under domain
+mismatch, and with training algorithm dissimilarities. We
+release IsoVec at https://github.com/kellymarchisio/isovec.},
+ archiveprefix = {arXiv},
+ author = {Marchisio, Kelly and Verma, Neha and Duh, Kevin and Koehn,
+Philipp},
+ eprint = {2210.05098},
+ primaryclass = {cs.CL},
+ title = {{IsoVec}: Controlling the Relative Isomorphism of Word
+Embedding Spaces},
+ year = {2022}
+}
+
+@article{Xian2017-gx,
+ abstract = {Due to the importance of zero-shot learning, i.e.
+classifying images where there is a lack of labeled training
+data, the number of proposed approaches has recently
+increased steadily. We argue that it is time to take a step
+back and to analyze the status quo of the area. The purpose
+of this paper is three-fold. First, given the fact that
+there is no agreed upon zero-shot learning benchmark, we
+first define a new benchmark by unifying both the evaluation
+protocols and data splits of publicly available datasets
+used for this task. This is an important contribution as
+published results are often not comparable and sometimes
+even flawed due to, e.g. pre-training on zero-shot test
+classes. Moreover, we propose a new zero-shot learning
+dataset, the Animals with Attributes 2 (AWA2) dataset which
+we make publicly available both in terms of image features
+and the images themselves. Second, we compare and analyze a
+significant number of the state-of-the-art methods in depth,
+both in the classic zero-shot setting but also in the more
+realistic generalized zero-shot setting. Finally, we discuss
+in detail the limitations of the current status of the area
+which can be taken as a basis for advancing it.},
+ archiveprefix = {arXiv},
+ author = {Xian, Yongqin and Lampert, Christoph H and Schiele, Bernt
+and Akata, Zeynep},
+ eprint = {1707.00600},
+ primaryclass = {cs.CV},
+ title = {{Zero-Shot} Learning -- A Comprehensive Evaluation of the
+Good, the Bad and the Ugly},
+ year = {2017}
+}
+
+@inproceedings{Norouzi2013-yj,
+ author = {Mohammad Norouzi and
+Tom{\'{a}}s Mikolov and
+Samy Bengio and
+Yoram Singer and
+Jonathon Shlens and
+Andrea Frome and
+Greg Corrado and
+Jeffrey Dean},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/journals/corr/NorouziMBSSFCD13.bib},
+ booktitle = {2nd International Conference on Learning Representations, {ICLR} 2014,
+Banff, AB, Canada, April 14-16, 2014, Conference Track Proceedings},
+ editor = {Yoshua Bengio and
+Yann LeCun},
+ timestamp = {Mon, 28 Dec 2020 00:00:00 +0100},
+ title = {Zero-Shot Learning by Convex Combination of Semantic Embeddings},
+ url = {http://arxiv.org/abs/1312.5650},
+ year = {2014}
+}
+
+@article{vit,
+ author = {Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and Uszkoreit, Jakob and Houlsby, Neil},
+ journal = {ArXiv preprint},
+ title = {An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
+ url = {https://arxiv.org/abs/2010.11929},
+ volume = {abs/2010.11929},
+ year = {2020}
+}
+
+@article{clip,
+ author = {Radford, Alec and Kim, Jong Wook and Hallacy, Chris and Ramesh, Aditya and Goh, Gabriel and Agarwal, Sandhini and Sastry, Girish and Askell, Amanda and Mishkin, Pamela and Clark, Jack and Krueger, Gretchen and Sutskever, Ilya},
+ journal = {ArXiv preprint},
+ title = {Learning Transferable Visual Models From Natural Language Supervision},
+ url = {https://arxiv.org/abs/2103.00020},
+ volume = {abs/2103.00020},
+ year = {2021}
+}
+
+@article{https://doi.org/10.48550/arxiv.1310.0425,
+ author = {Fefferman, Charles and Mitter, Sanjoy and Narayanan, Hariharan},
+ journal = {ArXiv preprint},
+ title = {Testing the Manifold Hypothesis},
+ url = {https://arxiv.org/abs/1310.0425},
+ volume = {abs/1310.0425},
+ year = {2013}
+}
+
+@article{Mehta2022-mc,
+ abstract = {Spurious correlations in training data often lead to
+robustness issues since models learn to use them as
+shortcuts. For example, when predicting whether an object is
+a cow, a model might learn to rely on its green background,
+so it would do poorly on a cow on a sandy background. A
+standard dataset for measuring state-of-the-art on methods
+mitigating this problem is Waterbirds. The best method
+(Group Distributionally Robust Optimization - GroupDRO)
+currently achieves 89\% worst group accuracy and standard
+training from scratch on raw images only gets 72\%. GroupDRO
+requires training a model in an end-to-end manner with
+subgroup labels. In this paper, we show that we can achieve
+up to 90\% accuracy without using any sub-group information
+in the training set by simply using embeddings from a large
+pre-trained vision model extractor and training a linear
+classifier on top of it. With experiments on a wide range of
+pre-trained models and pre-training datasets, we show that
+the capacity of the pre-training model and the size of the
+pre-training dataset matters. Our experiments reveal that
+high capacity vision transformers perform better compared to
+high capacity convolutional neural networks, and larger
+pre-training dataset leads to better worst-group accuracy on
+the spurious correlation dataset.},
+ archiveprefix = {arXiv},
+ author = {Mehta, Raghav and Albiero, V{\'\i}tor and Chen, Li and
+Evtimov, Ivan and Glaser, Tamar and Li, Zhiheng and Hassner,
+Tal},
+ eprint = {2212.06254},
+ primaryclass = {cs.CV},
+ title = {You Only Need a Good Embeddings Extractor to Fix Spurious
+Correlations},
+ year = {2022}
+}
+
+@article{Dong2022-yx,
+ abstract = {The success of deep learning heavily relies on large-scale
+data with comprehensive labels, which is more expensive and
+time-consuming to fetch in 3D compared to 2D images or
+natural languages. This promotes the potential of utilizing
+models pretrained with data more than 3D as teachers for
+cross-modal knowledge transferring. In this paper, we
+revisit masked modeling in a unified fashion of knowledge
+distillation, and we show that foundational Transformers
+pretrained with 2D images or natural languages can help
+self-supervised 3D representation learning through training
+Autoencoders as Cross-Modal Teachers (ACT). The pretrained
+Transformers are transferred as cross-modal 3D teachers
+using discrete variational autoencoding self-supervision,
+during which the Transformers are frozen with prompt tuning
+for better knowledge inheritance. The latent features
+encoded by the 3D teachers are used as the target of masked
+point modeling, wherein the dark knowledge is distilled to
+the 3D Transformer students as foundational geometry
+understanding. Our ACT pretrained 3D learner achieves
+state-of-the-art generalization capacity across various
+downstream benchmarks, e.g., 88.21\% overall accuracy on
+ScanObjectNN. Codes will be released at
+https://github.com/RunpeiDong/ACT.},
+ archiveprefix = {arXiv},
+ author = {Dong, Runpei and Qi, Zekun and Zhang, Linfeng and Zhang,
+Junbo and Sun, Jianjian and Ge, Zheng and Yi, Li and Ma,
+Kaisheng},
+ eprint = {2212.08320},
+ primaryclass = {cs.CV},
+ title = {Autoencoders as {Cross-Modal} Teachers: Can Pretrained {2D}
+Image Transformers Help {3D} Representation Learning?},
+ year = {2022}
+}
+
+@article{Chang2022-ad,
+ abstract = {We assess how multilingual language models maintain a shared
+multilingual representation space while still encoding
+language-sensitive information in each language. Using XLM-R
+as a case study, we show that languages occupy similar
+linear subspaces after mean-centering, evaluated based on
+causal effects on language modeling performance and direct
+comparisons between subspaces for 88 languages. The subspace
+means differ along language-sensitive axes that are
+relatively stable throughout middle layers, and these axes
+encode information such as token vocabularies. Shifting
+representations by language means is sufficient to induce
+token predictions in different languages. However, we also
+identify stable language-neutral axes that encode
+information such as token positions and part-of-speech. We
+visualize representations projected onto language-sensitive
+and language-neutral axes, identifying language family and
+part-of-speech clusters, along with spirals, toruses, and
+curves representing token position information. These
+results demonstrate that multilingual language models encode
+information along orthogonal language-sensitive and
+language-neutral axes, allowing the models to extract a
+variety of features for downstream tasks and cross-lingual
+transfer learning.},
+ archiveprefix = {arXiv},
+ author = {Chang, Tyler A and Tu, Zhuowen and Bergen, Benjamin K},
+ eprint = {2205.10964},
+ primaryclass = {cs.CL},
+ title = {The Geometry of Multilingual Language Model Representations},
+ year = {2022}
+}
+
+@article{Wang2020-ap,
+ abstract = {Recently, the Transformer architecture has achieved
+state-of-the-art performance in many natural language processing
+tasks. One key component in the Transformer architecture is the
+attention layer, which captures the relation between tokens. In
+this paper, we show that the weight of the attention layer has
+scale-invariant property, i.e. the output is invariant to a
+rescaling of weights. However, optimization algorithms in the
+vector space of weight such as SGD are not scaling invariant.
+This mismatch will potentially hurt the optimization process. To
+solve the mismatch, we seek a new parameter space for attention
+layer that is both scale-invariant and can sufficiently represent
+the output of attention, so that we can employ optimization
+algorithms in the scale-invariant parameter space. To achieve
+this goal, we first show that the output of the attention layer
+can be represented using scale-invariant variables, which is
+called paths. Then, we define basis paths which are an
+independent subset of all paths and are sufficient to represent
+all other paths. We prove that the Scale-Invariant (SI) space for
+the attention layer is composed of the basis path. Finally, we
+design an Attention Basis Path Identification(ABPI) Method to
+identify the basis paths and propose optimizing the attention
+layer directly in its SI space. Several experiments on benchmark
+datasets show that we can obtain more effective neural networks
+with the attention layer by optimizing the attention layer
+directly in its SI space.},
+ author = {Wang, Yue and Liu, Yuting and Ma, Zhi-Ming},
+ journal = {Neurocomputing},
+ keywords = {Transformer; Neural network; Optimization; Scale-invariant;
+Attention layer},
+ pages = {1--10},
+ title = {The scale-invariant space for attention layer in neural network},
+ volume = {392},
+ year = {2020}
+}
+
+@inproceedings{Movshovitz-Attias2017-rn,
+ author = {Yair Movshovitz{-}Attias and
+Alexander Toshev and
+Thomas K. Leung and
+Sergey Ioffe and
+Saurabh Singh},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/iccv/Movshovitz-Attias17.bib},
+ booktitle = {{IEEE} International Conference on Computer Vision, {ICCV} 2017, Venice,
+Italy, October 22-29, 2017},
+ doi = {10.1109/ICCV.2017.47},
+ pages = {360--368},
+ publisher = {{IEEE} Computer Society},
+ timestamp = {Thu, 11 Jan 2018 00:00:00 +0100},
+ title = {No Fuss Distance Metric Learning Using Proxies},
+ url = {https://doi.org/10.1109/ICCV.2017.47},
+ year = {2017}
+}
+
+@article{Meng2018-te,
+ abstract = {It is well known that neural networks with rectified linear
+units (ReLU) activation functions are positively
+scale-invariant. Conventional algorithms like stochastic
+gradient descent optimize the neural networks in the vector
+space of weights, which is, however, not positively
+scale-invariant. This mismatch may lead to problems during
+the optimization process. Then, a natural question is:
+\textbackslashemph\{can we construct a new vector space that
+is positively scale-invariant and sufficient to represent
+ReLU neural networks so as to better facilitate the
+optimization process \}? In this paper, we provide our
+positive answer to this question. First, we conduct a formal
+study on the positive scaling operators which forms a
+transformation group, denoted as $\mathcal\{G\}$. We show
+that the value of a path (i.e. the product of the weights
+along the path) in the neural network is invariant to
+positive scaling and prove that the value vector of all the
+paths is sufficient to represent the neural networks under
+mild conditions. Second, we show that one can identify some
+basis paths out of all the paths and prove that the linear
+span of their value vectors (denoted as
+$\mathcal\{G\}$-space) is an invariant space with lower
+dimension under the positive scaling group. Finally, we
+design stochastic gradient descent algorithm in
+$\mathcal\{G\}$-space (abbreviated as $\mathcal\{G\}$-SGD)
+to optimize the value vector of the basis paths of neural
+networks with little extra cost by leveraging
+back-propagation. Our experiments show that
+$\mathcal\{G\}$-SGD significantly outperforms the
+conventional SGD algorithm in optimizing ReLU networks on
+benchmark datasets.},
+ archiveprefix = {arXiv},
+ author = {Meng, Qi and Zheng, Shuxin and Zhang, Huishuai and Chen, Wei
+and Ma, Zhi-Ming and Liu, Tie-Yan},
+ eprint = {1802.03713},
+ primaryclass = {stat.ML},
+ title = {{$\mathcal{G}$-SGD}: Optimizing {ReLU} Neural Networks in
+its Positively {Scale-Invariant} Space},
+ year = {2018}
+}
+
+@inproceedings{Li2018-gp,
+ author = {Hao Li and
+Zheng Xu and
+Gavin Taylor and
+Christoph Studer and
+Tom Goldstein},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/nips/Li0TSG18.bib},
+ booktitle = {Advances in Neural Information Processing Systems 31: Annual Conference
+on Neural Information Processing Systems 2018, NeurIPS 2018, December
+3-8, 2018, Montr{\'{e}}al, Canada},
+ editor = {Samy Bengio and
+Hanna M. Wallach and
+Hugo Larochelle and
+Kristen Grauman and
+Nicol{\`{o}} Cesa{-}Bianchi and
+Roman Garnett},
+ pages = {6391--6401},
+ timestamp = {Thu, 21 Jan 2021 00:00:00 +0100},
+ title = {Visualizing the Loss Landscape of Neural Nets},
+ url = {https://proceedings.neurips.cc/paper/2018/hash/a41b3bb3e6b050b6c9067c67f663b915-Abstract.html},
+ year = {2018}
+}
+
+@article{Bengio2012-ri,
+ abstract = {The success of machine learning algorithms generally depends
+on data representation, and we hypothesize that this is
+because different representations can entangle and hide more
+or less the different explanatory factors of variation
+behind the data. Although specific domain knowledge can be
+used to help design representations, learning with generic
+priors can also be used, and the quest for AI is motivating
+the design of more powerful representation-learning
+algorithms implementing such priors. This paper reviews
+recent work in the area of unsupervised feature learning and
+deep learning, covering advances in probabilistic models,
+auto-encoders, manifold learning, and deep networks. This
+motivates longer-term unanswered questions about the
+appropriate objectives for learning good representations,
+for computing representations (i.e., inference), and the
+geometrical connections between representation learning,
+density estimation and manifold learning.},
+ archiveprefix = {arXiv},
+ author = {Bengio, Yoshua and Courville, Aaron and Vincent, Pascal},
+ eprint = {1206.5538},
+ primaryclass = {cs.LG},
+ title = {Representation Learning: A Review and New Perspectives},
+ year = {2012}
+}
+
+@article{Somepalli2022-kw,
+ abstract = {We discuss methods for visualizing neural network decision
+boundaries and decision regions. We use these visualizations
+to investigate issues related to reproducibility and
+generalization in neural network training. We observe that
+changes in model architecture (and its associate inductive
+bias) cause visible changes in decision boundaries, while
+multiple runs with the same architecture yield results with
+strong similarities, especially in the case of wide
+architectures. We also use decision boundary methods to
+visualize double descent phenomena. We see that decision
+boundary reproducibility depends strongly on model width.
+Near the threshold of interpolation, neural network decision
+boundaries become fragmented into many small decision
+regions, and these regions are non-reproducible. Meanwhile,
+very narrows and very wide networks have high levels of
+reproducibility in their decision boundaries with relatively
+few decision regions. We discuss how our observations relate
+to the theory of double descent phenomena in convex models.
+Code is available at https://github.com/somepago/dbViz},
+ archiveprefix = {arXiv},
+ author = {Somepalli, Gowthami and Fowl, Liam and Bansal, Arpit and
+Yeh-Chiang, Ping and Dar, Yehuda and Baraniuk, Richard and
+Goldblum, Micah and Goldstein, Tom},
+ eprint = {2203.08124},
+ primaryclass = {cs.LG},
+ title = {Can Neural Nets Learn the Same Model Twice? Investigating
+Reproducibility and Double Descent from the Decision
+Boundary Perspective},
+ year = {2022}
+}
+
+@inproceedings{langley00,
+ author = {Pat Langley},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/icml/Langley00.bib},
+ booktitle = {Proceedings of the Seventeenth International Conference on Machine
+Learning {(ICML} 2000), Stanford University, Stanford, CA, USA, June
+29 - July 2, 2000},
+ editor = {Pat Langley},
+ pages = {1207--1216},
+ publisher = {Morgan Kaufmann},
+ timestamp = {Tue, 26 Nov 2002 00:00:00 +0100},
+ title = {Crafting Papers on Machine Learning},
+ year = {2000}
+}
+
+@techreport{mitchell80,
+ address = {New Brunswick, MA},
+ author = {T. M. Mitchell},
+ institution = {Computer Science Department, Rutgers University},
+ title = {The Need for Biases in Learning Generalizations},
+ year = {1980}
+}
+
+@phdthesis{kearns89,
+ author = {M. J. Kearns},
+ school = {Department of Computer Science, Harvard University},
+ title = {Computational Complexity of Machine Learning},
+ year = {1989}
+}
+
+@book{MachineLearningI,
+ address = {Palo Alto, CA},
+ editor = {R. S. Michalski and J. G. Carbonell and T.
+M. Mitchell},
+ publisher = {Tioga},
+ title = {Machine Learning: An Artificial Intelligence
+Approach, Vol. I},
+ year = {1983}
+}
+
+@book{DudaHart2nd,
+ author = {R. O. Duda and P. E. Hart and D. G. Stork},
+ edition = {2nd},
+ publisher = {John Wiley and Sons},
+ title = {Pattern Classification},
+ year = {2000}
+}
+
+@misc{anonymous,
+ author = {Author, N. N.},
+ title = {Suppressed for Anonymity},
+ year = {2021}
+}
+
+@incollection{Newell81,
+ address = {Hillsdale, NJ},
+ author = {A. Newell and P. S. Rosenbloom},
+ booktitle = {Cognitive Skills and Their Acquisition},
+ chapter = {1},
+ editor = {J. R. Anderson},
+ pages = {1--51},
+ publisher = {Lawrence Erlbaum Associates, Inc.},
+ title = {Mechanisms of Skill Acquisition and the Law of
+Practice},
+ year = {1981}
+}
+
+@article{Samuel59,
+ author = {A. L. Samuel},
+ journal = {IBM Journal of Research and Development},
+ number = {3},
+ pages = {211--229},
+ title = {Some Studies in Machine Learning Using the Game of
+Checkers},
+ volume = {3},
+ year = {1959}
+}
+
+@inproceedings{dbpedia,
+ author = {Xiang Zhang and
+Junbo Jake Zhao and
+Yann LeCun},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/nips/ZhangZL15.bib},
+ booktitle = {Advances in Neural Information Processing Systems 28: Annual Conference
+on Neural Information Processing Systems 2015, December 7-12, 2015,
+Montreal, Quebec, Canada},
+ editor = {Corinna Cortes and
+Neil D. Lawrence and
+Daniel D. Lee and
+Masashi Sugiyama and
+Roman Garnett},
+ pages = {649--657},
+ timestamp = {Thu, 21 Jan 2021 00:00:00 +0100},
+ title = {Character-level Convolutional Networks for Text Classification},
+ url = {https://proceedings.neurips.cc/paper/2015/hash/250cf8b51c773f3f8dc8b4be867a9a02-Abstract.html},
+ year = {2015}
+}
+
+@inproceedings{trec,
+ author = {Hovy, Eduard  and
+Gerber, Laurie  and
+Hermjakob, Ulf  and
+Lin, Chin-Yew  and
+Ravichandran, Deepak},
+ booktitle = {Proceedings of the First International Conference on Human Language Technology Research},
+ title = {Toward Semantics-Based Answer Pinpointing},
+ url = {https://aclanthology.org/H01-1069},
+ year = {2001}
+}
+
+@software{dvc,
+ author = {Ruslan Kuprieiev and
+skshetry and
+Dmitry Petrov and
+Paweł Redzyński and
+Peter Rowlands and
+Casper da Costa-Luis and
+Alexander Schepanovski and
+Ivan Shcheklein and
+Batuhan Taskaya and
+Gao and
+Jorge Orpinel and
+David de la Iglesia Castro and
+Fábio Santos and
+Aman Sharma and
+Dave Berenbaum and
+Zhanibek and
+Dani Hodovic and
+daniele and
+Nikita Kodenko and
+Andrew Grigorev and
+Earl and
+Nabanita Dash and
+George Vyshnya and
+Ronan Lamy and
+maykulkarni and
+Max Hora and
+Vera and
+Sanidhya Mangal},
+ doi = {10.5281/zenodo.7083378},
+ publisher = {Zenodo},
+ title = {DVC: Data Version Control - Git for Data \& Models},
+ url = {https://doi.org/10.5281/zenodo.7083378},
+ version = {2.26.2},
+ year = {2022}
+}
+
+@inproceedings{Soudry2017Oct,
+ author = {Daniel Soudry and
+Elad Hoffer and
+Mor Shpigel Nacson and
+Nathan Srebro},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/iclr/SoudryHNS18.bib},
+ booktitle = {6th International Conference on Learning Representations, {ICLR} 2018,
+Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track Proceedings},
+ publisher = {OpenReview.net},
+ timestamp = {Thu, 25 Jul 2019 01:00:00 +0200},
+ title = {The Implicit Bias of Gradient Descent on Separable Data},
+ url = {https://openreview.net/forum?id=r1q7n9gAb},
+ year = {2018}
+}
+
+@inproceedings{Bond2012-kx,
+ address = {Matsue},
+ author = {Bond, Francis and Paik, Kyonghee},
+ booktitle = {Proceedings of the 6th Global {WordNet} Conference ({GWC} 2012)},
+ title = {A Survey of {WordNets} and their Licenses},
+ year = {2012}
+}
+
+@inproceedings{Joulin2016-fi,
+ address = {Valencia, Spain},
+ author = {Joulin, Armand  and
+Grave, Edouard  and
+Bojanowski, Piotr  and
+Mikolov, Tomas},
+ booktitle = {Proceedings of the 15th Conference of the {E}uropean Chapter of the Association for Computational Linguistics: Volume 2, Short Papers},
+ pages = {427--431},
+ publisher = {Association for Computational Linguistics},
+ title = {Bag of Tricks for Efficient Text Classification},
+ url = {https://aclanthology.org/E17-2068},
+ year = {2017}
+}
+
+@inproceedings{Pennington2014-tq,
+ address = {Doha, Qatar},
+ author = {Pennington, Jeffrey  and
+Socher, Richard  and
+Manning, Christopher},
+ booktitle = {Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({EMNLP})},
+ doi = {10.3115/v1/D14-1162},
+ pages = {1532--1543},
+ publisher = {Association for Computational Linguistics},
+ title = {{G}lo{V}e: Global Vectors for Word Representation},
+ url = {https://aclanthology.org/D14-1162},
+ year = {2014}
+}
+
+@inproceedings{Speer2016-uz,
+ author = {Robyn Speer and
+Joshua Chin and
+Catherine Havasi},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/aaai/SpeerCH17.bib},
+ booktitle = {Proceedings of the Thirty-First {AAAI} Conference on Artificial Intelligence,
+February 4-9, 2017, San Francisco, California, {USA}},
+ editor = {Satinder P. Singh and
+Shaul Markovitch},
+ pages = {4444--4451},
+ publisher = {{AAAI} Press},
+ timestamp = {Fri, 31 May 2019 01:00:00 +0200},
+ title = {ConceptNet 5.5: An Open Multilingual Graph of General Knowledge},
+ url = {http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14972},
+ year = {2017}
+}
+
+@inproceedings{Mikolov2017-ex,
+ address = {Miyazaki, Japan},
+ author = {Mikolov, Tomas  and
+Grave, Edouard  and
+Bojanowski, Piotr  and
+Puhrsch, Christian  and
+Joulin, Armand},
+ booktitle = {Proceedings of the Eleventh International Conference on Language Resources and Evaluation ({LREC} 2018)},
+ publisher = {European Language Resources Association (ELRA)},
+ title = {Advances in Pre-Training Distributed Word Representations},
+ url = {https://aclanthology.org/L18-1008},
+ year = {2018}
+}
+
+@inproceedings{Schwenk2019-dr,
+ address = {Online},
+ author = {Schwenk, Holger  and
+Chaudhary, Vishrav  and
+Sun, Shuo  and
+Gong, Hongyu  and
+Guzm{\'a}n, Francisco},
+ booktitle = {Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume},
+ pages = {1351--1361},
+ publisher = {Association for Computational Linguistics},
+ title = {{W}iki{M}atrix: Mining 135{M} Parallel Sentences in 1620 Language Pairs from {W}ikipedia},
+ url = {https://aclanthology.org/2021.eacl-main.115},
+ year = {2021}
+}
+
+@inproceedings{Tsitsulin2019-gg,
+ author = {Anton Tsitsulin and
+Marina Munkhoeva and
+Davide Mottin and
+Panagiotis Karras and
+Alexander M. Bronstein and
+Ivan V. Oseledets and
+Emmanuel M{\"{u}}ller},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/iclr/TsitsulinMMKBOM20.bib},
+ booktitle = {8th International Conference on Learning Representations, {ICLR} 2020,
+Addis Ababa, Ethiopia, April 26-30, 2020},
+ publisher = {OpenReview.net},
+ timestamp = {Thu, 21 Jan 2021 00:00:00 +0100},
+ title = {The Shape of Data: Intrinsic Distance for Data Distributions},
+ url = {https://openreview.net/forum?id=HyebplHYwB},
+ year = {2020}
+}
+
+@article{cora,
+ author = {Sen, Prithviraj and Namata, Galileo and Bilgic, Mustafa and Getoor, Lise and Galligher, Brian and Eliassi-Rad, Tina},
+ doi = {10.1609/aimag.v29i3.2157},
+ issn = {2371-9621},
+ journal = {AIMag.},
+ number = {3},
+ pages = {93},
+ title = {{Collective Classification in Network Data}},
+ volume = {29},
+ year = {2008}
+}
+
+@inproceedings{amazon-reviews,
+ address = {Online},
+ author = {Keung, Phillip  and
+Lu, Yichao  and
+Szarvas, Gy{\"o}rgy  and
+Smith, Noah A.},
+ booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+ doi = {10.18653/v1/2020.emnlp-main.369},
+ pages = {4563--4568},
+ publisher = {Association for Computational Linguistics},
+ title = {The Multilingual {A}mazon Reviews Corpus},
+ url = {https://aclanthology.org/2020.emnlp-main.369},
+ year = {2020}
+}
+
+@article{roberta,
+ author = {Liu, Yinhan and Ott, Myle and Goyal, Naman and Du, Jingfei and Joshi, Mandar and Chen, Danqi and Levy, Omer and Lewis, Mike and Zettlemoyer, Luke and Stoyanov, Veselin},
+ journal = {ArXiv preprint},
+ title = {RoBERTa: A Robustly Optimized BERT Pretraining Approach},
+ url = {https://arxiv.org/abs/1907.11692},
+ volume = {abs/1907.11692},
+ year = {2019}
+}
+
+@inproceedings{wikimatrix,
+ address = {Online},
+ author = {Schwenk, Holger  and
+Chaudhary, Vishrav  and
+Sun, Shuo  and
+Gong, Hongyu  and
+Guzm{\'a}n, Francisco},
+ booktitle = {Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume},
+ pages = {1351--1361},
+ publisher = {Association for Computational Linguistics},
+ title = {{W}iki{M}atrix: Mining 135{M} Parallel Sentences in 1620 Language Pairs from {W}ikipedia},
+ url = {https://aclanthology.org/2021.eacl-main.115},
+ year = {2021}
+}
+
+@inproceedings{bert,
+ address = {Minneapolis, Minnesota},
+ author = {Devlin, Jacob  and
+Chang, Ming-Wei  and
+Lee, Kenton  and
+Toutanova, Kristina},
+ booktitle = {Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)},
+ doi = {10.18653/v1/N19-1423},
+ pages = {4171--4186},
+ publisher = {Association for Computational Linguistics},
+ title = {{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding},
+ url = {https://aclanthology.org/N19-1423},
+ year = {2019}
+}
+
+@inproceedings{electra,
+ author = {Kevin Clark and
+Minh{-}Thang Luong and
+Quoc V. Le and
+Christopher D. Manning},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/iclr/ClarkLLM20.bib},
+ booktitle = {8th International Conference on Learning Representations, {ICLR} 2020,
+Addis Ababa, Ethiopia, April 26-30, 2020},
+ publisher = {OpenReview.net},
+ timestamp = {Thu, 07 May 2020 01:00:00 +0200},
+ title = {{ELECTRA:} Pre-training Text Encoders as Discriminators Rather Than
+Generators},
+ url = {https://openreview.net/forum?id=r1xMH1BtvB},
+ year = {2020}
+}
+
+@article{rexnet,
+ author = {Han, Dongyoon and Yun, Sangdoo and Heo, Byeongho and Yoo, YoungJoon},
+ journal = {ArXiv preprint},
+ title = {Rethinking Channel Dimensions for Efficient Model Design},
+ url = {https://arxiv.org/abs/2007.00992},
+ volume = {abs/2007.00992},
+ year = {2020}
+}
+
+@inproceedings{Kingma2013-md,
+ author = {Diederik P. Kingma and
+Max Welling},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/journals/corr/KingmaW13.bib},
+ booktitle = {2nd International Conference on Learning Representations, {ICLR} 2014,
+Banff, AB, Canada, April 14-16, 2014, Conference Track Proceedings},
+ editor = {Yoshua Bengio and
+Yann LeCun},
+ timestamp = {Fri, 29 Mar 2019 00:00:00 +0100},
+ title = {Auto-Encoding Variational Bayes},
+ url = {http://arxiv.org/abs/1312.6114},
+ year = {2014}
+}
+
+@article{Hinton2006-sb,
+ abstract = {High-dimensional data can be converted to low-dimensional codes
+by training a multilayer neural network with a small central
+layer to reconstruct high-dimensional input vectors. Gradient
+descent can be used for fine-tuning the weights in such
+``autoencoder'' networks, but this works well only if the initial
+weights are close to a good solution. We describe an effective
+way of initializing the weights that allows deep autoencoder
+networks to learn low-dimensional codes that work much better
+than principal components analysis as a tool to reduce the
+dimensionality of data.},
+ author = {Hinton, G E and Salakhutdinov, R R},
+ journal = {Science},
+ language = {en},
+ number = {5786},
+ pages = {504--507},
+ title = {Reducing the dimensionality of data with neural networks},
+ volume = {313},
+ year = {2006}
+}
+
+@article{Li2021-yv,
+ author = {Li, Yang and Takehara, Hikari and Taketomi, Takafumi and
+Zheng, Bo and Nie{\ss}ner, Matthias},
+ journal = {IEEE International Conference on Computer Vision (ICCV)},
+ title = {4dcomplete: Non-rigid motion estimation beyond the observable surface.},
+ year = {2021}
+}
+
+@inproceedings{Varol2017-et,
+ author = {G{\"{u}}l Varol and
+Javier Romero and
+Xavier Martin and
+Naureen Mahmood and
+Michael J. Black and
+Ivan Laptev and
+Cordelia Schmid},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/cvpr/Varol0MMBLS17.bib},
+ booktitle = {2017 {IEEE} Conference on Computer Vision and Pattern Recognition,
+{CVPR} 2017, Honolulu, HI, USA, July 21-26, 2017},
+ doi = {10.1109/CVPR.2017.492},
+ pages = {4627--4635},
+ publisher = {{IEEE} Computer Society},
+ timestamp = {Sat, 19 Oct 2019 01:00:00 +0200},
+ title = {Learning from Synthetic Humans},
+ url = {https://doi.org/10.1109/CVPR.2017.492},
+ year = {2017}
+}
+
+@article{Zhou_undated-jc,
+ author = {Zhou, Qingnan and Jacobson, Alec},
+ journal = {ArXiv preprint},
+ title = {Thingi10K: A Dataset of 10,000 3D-Printing Models},
+ url = {https://arxiv.org/abs/1605.04797},
+ volume = {abs/1605.04797},
+ year = {2016}
+}
+
+@inproceedings{Auer2007-fb,
+ abstract = {DBpedia is a community effort to extract structured information
+from Wikipedia and to make this information available on the
+Web. DBpedia allows you to ask sophisticated queries against
+datasets derived from Wikipedia and to link other datasets on
+the Web to Wikipedia data. We describe the extraction of the
+DBpedia datasets, and how the resulting information is published
+on the Web for human- and machine-consumption. We describe some
+emerging applications from the DBpedia community and show how
+website authors can facilitate DBpedia content within their
+sites. Finally, we present the current status of interlinking
+DBpedia with other open datasets on the Web and outline how
+DBpedia could serve as a nucleus for an emerging Web of open
+data.},
+ author = {Auer, S{\"o}ren and Bizer, Christian and Kobilarov, Georgi and
+Lehmann, Jens and Cyganiak, Richard and Ives, Zachary},
+ booktitle = {The Semantic Web},
+ pages = {722--735},
+ publisher = {Springer Berlin Heidelberg},
+ title = {{DBpedia}: A Nucleus for a Web of Open Data},
+ year = {2007}
+}
+
+@inproceedings{Voorhees2000-ie,
+ address = {Athens, Greece},
+ author = {Voorhees, Ellen M.  and
+Tice, Dawn M.},
+ booktitle = {Proceedings of the Second International Conference on Language Resources and Evaluation ({LREC}{'}00)},
+ publisher = {European Language Resources Association (ELRA)},
+ title = {The {TREC}-8 Question Answering Track},
+ url = {http://www.lrec-conf.org/proceedings/lrec2000/pdf/26.pdf},
+ year = {2000}
+}
+
+@inproceedings{Zhang2015-gk,
+ author = {Xiang Zhang and
+Junbo Jake Zhao and
+Yann LeCun},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/nips/ZhangZL15.bib},
+ booktitle = {Advances in Neural Information Processing Systems 28: Annual Conference
+on Neural Information Processing Systems 2015, December 7-12, 2015,
+Montreal, Quebec, Canada},
+ editor = {Corinna Cortes and
+Neil D. Lawrence and
+Daniel D. Lee and
+Masashi Sugiyama and
+Roman Garnett},
+ pages = {649--657},
+ timestamp = {Thu, 21 Jan 2021 00:00:00 +0100},
+ title = {Character-level Convolutional Networks for Text Classification},
+ url = {https://proceedings.neurips.cc/paper/2015/hash/250cf8b51c773f3f8dc8b4be867a9a02-Abstract.html},
+ year = {2015}
+}
+
+@article{Chang2015-vc,
+ abstract = {We present ShapeNet: a richly-annotated, large-scale
+repository of shapes represented by 3D CAD models of
+objects. ShapeNet contains 3D models from a multitude of
+semantic categories and organizes them under the WordNet
+taxonomy. It is a collection of datasets providing many
+semantic annotations for each 3D model such as consistent
+rigid alignments, parts and bilateral symmetry planes,
+physical sizes, keywords, as well as other planned
+annotations. Annotations are made available through a public
+web-based interface to enable data visualization of object
+attributes, promote data-driven geometric analysis, and
+provide a large-scale quantitative benchmark for research in
+computer graphics and vision. At the time of this technical
+report, ShapeNet has indexed more than 3,000,000 models,
+220,000 models out of which are classified into 3,135
+categories (WordNet synsets). In this report we describe the
+ShapeNet effort as a whole, provide details for all
+currently available datasets, and summarize future plans.},
+ archiveprefix = {arXiv},
+ author = {Chang, Angel X and Funkhouser, Thomas and Guibas, Leonidas
+and Hanrahan, Pat and Huang, Qixing and Li, Zimo and
+Savarese, Silvio and Savva, Manolis and Song, Shuran and Su,
+Hao and Xiao, Jianxiong and Yi, Li and Yu, Fisher},
+ eprint = {1512.03012},
+ primaryclass = {cs.GR},
+ title = {{ShapeNet}: An {Information-Rich} {3D} Model Repository},
+ year = {2015}
+}
+
+@inproceedings{Bogo2014-bh,
+ author = {Federica Bogo and
+Javier Romero and
+Matthew Loper and
+Michael J. Black},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/cvpr/Bogo0LB14.bib},
+ booktitle = {2014 {IEEE} Conference on Computer Vision and Pattern Recognition,
+{CVPR} 2014, Columbus, OH, USA, June 23-28, 2014},
+ doi = {10.1109/CVPR.2014.491},
+ pages = {3794--3801},
+ publisher = {{IEEE} Computer Society},
+ timestamp = {Thu, 25 May 2017 01:00:00 +0200},
+ title = {{FAUST:} Dataset and Evaluation for 3D Mesh Registration},
+ url = {https://doi.org/10.1109/CVPR.2014.491},
+ year = {2014}
+}
+
+@inproceedings{Ranjan2018-zx,
+ author = {Ranjan, Anurag and Bolkart, Timo and Sanyal, Soubhik and Black,
+Michael J},
+ booktitle = {European Conference on Computer Vision ({ECCV})},
+ pages = {725--741},
+ title = {Generating {3D} faces using Convolutional Mesh Autoencoders},
+ year = {2018}
+}
+
+@article{fmnist,
+ author = {Xiao, Han and Rasul, Kashif and Vollgraf, Roland},
+ journal = {ArXiv preprint},
+ title = {Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learnin},
+ url = {https://arxiv.org/abs/1708.07747},
+ volume = {abs/1708.07747},
+ year = {2017}
+}
+
+@article{Krizhevsky2009-hv,
+ added-at = {2021-01-21T03:01:11.000+0100},
+ author = {Krizhevsky, Alex},
+ biburl = {https://www.bibsonomy.org/bibtex/2fe5248afe57647d9c85c50a98a12145c/s364315},
+ interhash = {cc2d42f2b7ef6a4e76e47d1a50c8cd86},
+ intrahash = {fe5248afe57647d9c85c50a98a12145c},
+ keywords = {},
+ pages = {32--33},
+ timestamp = {2021-01-21T03:01:11.000+0100},
+ title = {Learning Multiple Layers of Features from Tiny Images},
+ url = {https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf},
+ year = {2009}
+}
+
+@article{Arjovsky2019-ig,
+ abstract = {We introduce Invariant Risk Minimization (IRM), a learning
+paradigm to estimate invariant correlations across multiple
+training distributions. To achieve this goal, IRM learns a
+data representation such that the optimal classifier, on top
+of that data representation, matches for all training
+distributions. Through theory and experiments, we show how
+the invariances learned by IRM relate to the causal
+structures governing the data and enable out-of-distribution
+generalization.},
+ archiveprefix = {arXiv},
+ author = {Arjovsky, Martin and Bottou, L{\'e}on and Gulrajani, Ishaan
+and Lopez-Paz, David},
+ eprint = {1907.02893},
+ primaryclass = {stat.ML},
+ title = {Invariant Risk Minimization},
+ year = {2019}
+}
+
+@article{curse,
+ author = {Bellman, Richard},
+ journal = {Science},
+ number = {3731},
+ pages = {34--37},
+ publisher = {American Association for the Advancement of Science},
+ title = {Dynamic programming},
+ volume = {153},
+ year = {1966}
+}
+
+@article{mnist,
+ abstract = {Multilayer neural networks trained with the back-propagation
+algorithm constitute the best example of a successful gradient
+based learning technique. Given an appropriate network
+architecture, gradient-based learning algorithms can be used to
+synthesize a complex decision surface that can classify
+high-dimensional patterns, such as handwritten characters, with
+minimal preprocessing. This paper reviews various methods applied
+to handwritten character recognition and compares them on a
+standard handwritten digit recognition task. Convolutional neural
+networks, which are specifically designed to deal with the
+variability of 2D shapes, are shown to outperform all other
+techniques. Real-life document recognition systems are composed
+of multiple modules including field extraction, segmentation
+recognition, and language modeling. A new learning paradigm,
+called graph transformer networks (GTN), allows such multimodule
+systems to be trained globally using gradient-based methods so as
+to minimize an overall performance measure. Two systems for
+online handwriting recognition are described. Experiments
+demonstrate the advantage of global training, and the flexibility
+of graph transformer networks. A graph transformer network for
+reading a bank cheque is also described. It uses convolutional
+neural network character recognizers combined with global
+training techniques to provide record accuracy on business and
+personal cheques. It is deployed commercially and reads several
+million cheques per day.},
+ author = {Lecun, Y and Bottou, L and Bengio, Y and Haffner, P},
+ journal = {Proc. IEEE},
+ keywords = {Neural networks;Pattern recognition;Machine learning;Optical
+character recognition software;Character recognition;Feature
+extraction;Multi-layer neural network;Optical computing;Hidden
+Markov models;Principal component analysis},
+ number = {11},
+ pages = {2278--2324},
+ title = {Gradient-based learning applied to document recognition},
+ volume = {86},
+ year = {1998}
+}
+
+@article{bojanowski2016enriching,
+ author = {Bojanowski, Piotr  and
+Grave, Edouard  and
+Joulin, Armand  and
+Mikolov, Tomas},
+ doi = {10.1162/tacl_a_00051},
+ journal = {Transactions of the Association for Computational Linguistics},
+ pages = {135--146},
+ title = {Enriching Word Vectors with Subword Information},
+ url = {https://aclanthology.org/Q17-1010},
+ volume = {5},
+ year = {2017}
+}
+
+@article{word2vec,
+ author = {Mikolov, Tomas and Chen, Kai and Corrado, Greg and Dean, Jeffrey},
+ journal = {ArXiv preprint},
+ title = {Efficient Estimation of Word Representations in Vector Space},
+ url = {https://arxiv.org/abs/1301.3781},
+ volume = {abs/1301.3781},
+ year = {2013}
+}
+
+@inproceedings{Bansal2021-oj,
+ author = {Yamini Bansal and
+Preetum Nakkiran and
+Boaz Barak},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/nips/BansalNB21.bib},
+ booktitle = {Advances in Neural Information Processing Systems 34: Annual Conference
+on Neural Information Processing Systems 2021, NeurIPS 2021, December
+6-14, 2021, virtual},
+ editor = {Marc'Aurelio Ranzato and
+Alina Beygelzimer and
+Yann N. Dauphin and
+Percy Liang and
+Jennifer Wortman Vaughan},
+ pages = {225--236},
+ timestamp = {Tue, 03 May 2022 16:20:46 +0200},
+ title = {Revisiting Model Stitching to Compare Neural Representations},
+ url = {https://proceedings.neurips.cc/paper/2021/hash/01ded4259d101feb739b06c399e9cd9c-Abstract.html},
+ year = {2021}
+}
+
+@inproceedings{Barannikov2021-eb,
+ abstract = {Comparison of data representations is a complex multi-aspect problem. We propose a method for comparing two data representations. We introduce the Representation Topology Divergence (RTD) score measuring the dissimilarity in multi-scale topology between two point clouds of equal size with a one-to-one correspondence between points. The two data point clouds can lie in different ambient spaces. The RTD score is one of the few topological data analysis based practical methods applicable to real machine learning datasets. Experiments show the agreement of RTD with the intuitive assessment of data representation similarity. The proposed RTD score is sensitive to the data representation’s fine topological structure. We use the RTD score to gain insights on neural networks representations in computer vision and NLP domains for various problems: training dynamics analysis, data distribution shift, transfer learning, ensemble learning, disentanglement assessment.},
+ author = {Barannikov, Serguei and Trofimov, Ilya and Balabin, Nikita and Burnaev, Evgeny},
+ booktitle = {Proceedings of the 39th International Conference on Machine Learning},
+ editor = {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+ pages = {1607--1626},
+ pdf = {https://proceedings.mlr.press/v162/barannikov22a/barannikov22a.pdf},
+ publisher = {PMLR},
+ series = {Proceedings of Machine Learning Research},
+ title = {Representation Topology Divergence: A Method for Comparing Neural Network Representations.},
+ url = {https://proceedings.mlr.press/v162/barannikov22a.html},
+ volume = {162},
+ year = {2022}
+}
+
+@article{Gygli2021-qb,
+ author = {Gygli, Michael and Uijlings, Jasper and Ferrari, Vittorio},
+ journal = {AAAI},
+ language = {en},
+ number = {9},
+ pages = {7620--7629},
+ title = {Towards Reusable Network Components by Learning Compatible
+Representations},
+ volume = {35},
+ year = {2021}
+}
+
+@article{Csiszarik2021-yi,
+ author = {Csiszarik, Adrian and Korosi-Szabo, Peter and Matszangosz, Akos K. and Papp, Gergely and Varga, Daniel},
+ journal = {ArXiv preprint},
+ title = {Similarity and Matching of Neural Network Representations},
+ url = {https://arxiv.org/abs/2110.14633},
+ volume = {abs/2110.14633},
+ year = {2021}
+}
+
+@article{Bonheme2022-tk,
+ author = {Bonheme, Lisa and Grzes, Marek},
+ journal = {ArXiv preprint},
+ title = {How do Variational Autoencoders Learn? Insights from Representational Similarity},
+ url = {https://arxiv.org/abs/2205.08399},
+ volume = {abs/2205.08399},
+ year = {2022}
+}
+
+@article{Godfrey2022-ya,
+ abstract = {Symmetry has been a fundamental tool in the exploration of a
+broad range of complex systems. In machine learning,
+symmetry has been explored in both models and data. In this
+paper we seek to connect the symmetries arising from the
+architecture of a family of models with the symmetries of
+that family's internal representation of data. We do this by
+calculating a set of fundamental symmetry groups, which we
+call the \textbackslashemph\{intertwiner groups\} of the
+model. Each of these arises from a particular nonlinear
+layer of the model and different nonlinearities result in
+different symmetry groups. These groups change the weights
+of a model in such a way that the underlying function that
+the model represents remains constant but the internal
+representations of data inside the model may change. We
+connect intertwiner groups to a model's internal
+representations of data through a range of experiments that
+probe similarities between hidden states across models with
+the same architecture. Our work suggests that the symmetries
+of a network are propagated into the symmetries in that
+network's representation of data, providing us with a better
+understanding of how architecture affects the learning and
+prediction process. Finally, we speculate that for ReLU
+networks, the intertwiner groups may provide a justification
+for the common practice of concentrating model
+interpretability exploration on the activation basis in
+hidden layers rather than arbitrary linear combinations
+thereof.},
+ archiveprefix = {arXiv},
+ author = {Godfrey, Charles and Brown, Davis and Emerson, Tegan and
+Kvinge, Henry},
+ eprint = {2205.14258},
+ primaryclass = {cs.LG},
+ title = {On the Symmetries of Deep Learning Models and their Internal
+Representations},
+ year = {2022}
+}
+
+@article{Trosset2020-rl,
+ abstract = {Manifold learning techniques for nonlinear dimension
+reduction assume that high-dimensional feature vectors lie
+on a low-dimensional manifold, then attempt to exploit
+manifold structure to obtain useful low-dimensional
+Euclidean representations of the data. Isomap, a seminal
+manifold learning technique, is an elegant synthesis of two
+simple ideas: the approximation of Riemannian distances with
+shortest path distances on a graph that localizes manifold
+structure, and the approximation of shortest path distances
+with Euclidean distances by multidimensional scaling. We
+revisit the rationale for Isomap, clarifying what Isomap
+does and what it does not. In particular, we explore the
+widespread perception that Isomap should only be used when
+the manifold is parametrized by a convex region of Euclidean
+space. We argue that this perception is based on an
+extremely narrow interpretation of manifold learning as
+parametrization recovery, and we submit that Isomap is
+better understood as constructing Euclidean representations
+of geodesic structure. We reconsider a well-known example
+that was previously interpreted as evidence of Isomap's
+limitations, and we re-examine the original analysis of
+Isomap's convergence properties, concluding that convexity
+is not required for shortest path distances to converge to
+Riemannian distances.},
+ archiveprefix = {arXiv},
+ author = {Trosset, Michael W and Buyukbas, Gokcen},
+ eprint = {2006.10858},
+ primaryclass = {stat.ML},
+ title = {Rehabilitating Isomap: Euclidean Representation of Geodesic
+Structure},
+ year = {2020}
+}
+
+@article{Ghojogh2020-vg,
+ abstract = {This is a tutorial and survey paper for Locally Linear
+Embedding (LLE) and its variants. The idea of LLE is fitting
+the local structure of manifold in the embedding space. In
+this paper, we first cover LLE, kernel LLE, inverse LLE, and
+feature fusion with LLE. Then, we cover out-of-sample
+embedding using linear reconstruction, eigenfunctions, and
+kernel mapping. Incremental LLE is explained for embedding
+streaming data. Landmark LLE methods using the Nystrom
+approximation and locally linear landmarks are explained for
+big data embedding. We introduce the methods for parameter
+selection of number of neighbors using residual variance,
+Procrustes statistics, preservation neighborhood error, and
+local neighborhood selection. Afterwards, Supervised LLE
+(SLLE), enhanced SLLE, SLLE projection, probabilistic SLLE,
+supervised guided LLE (using Hilbert-Schmidt independence
+criterion), and semi-supervised LLE are explained for
+supervised and semi-supervised embedding. Robust LLE methods
+using least squares problem and penalty functions are also
+introduced for embedding in the presence of outliers and
+noise. Then, we introduce fusion of LLE with other manifold
+learning methods including Isomap (i.e., ISOLLE), principal
+component analysis, Fisher discriminant analysis,
+discriminant LLE, and Isotop. Finally, we explain weighted
+LLE in which the distances, reconstruction weights, or the
+embeddings are adjusted for better embedding; we cover
+weighted LLE for deformed distributed data, weighted LLE
+using probability of occurrence, SLLE by adjusting weights,
+modified LLE, and iterative LLE.},
+ archiveprefix = {arXiv},
+ author = {Ghojogh, Benyamin and Ghodsi, Ali and Karray, Fakhri and
+Crowley, Mark},
+ eprint = {2011.10925},
+ primaryclass = {stat.ML},
+ title = {Locally Linear Embedding and its Variants: Tutorial and
+Survey},
+ year = {2020}
+}
+
+@inproceedings{Vaswani2017-qw,
+ author = {Ashish Vaswani and
+Noam Shazeer and
+Niki Parmar and
+Jakob Uszkoreit and
+Llion Jones and
+Aidan N. Gomez and
+Lukasz Kaiser and
+Illia Polosukhin},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/nips/VaswaniSPUJGKP17.bib},
+ booktitle = {Advances in Neural Information Processing Systems 30: Annual Conference
+on Neural Information Processing Systems 2017, December 4-9, 2017,
+Long Beach, CA, {USA}},
+ editor = {Isabelle Guyon and
+Ulrike von Luxburg and
+Samy Bengio and
+Hanna M. Wallach and
+Rob Fergus and
+S. V. N. Vishwanathan and
+Roman Garnett},
+ pages = {5998--6008},
+ timestamp = {Thu, 21 Jan 2021 00:00:00 +0100},
+ title = {Attention is All you Need},
+ url = {https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html},
+ year = {2017}
+}
+
+@inproceedings{Lenc2014-gy,
+ author = {Karel Lenc and
+Andrea Vedaldi},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/cvpr/LencV15.bib},
+ booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR}
+2015, Boston, MA, USA, June 7-12, 2015},
+ doi = {10.1109/CVPR.2015.7298701},
+ pages = {991--999},
+ publisher = {{IEEE} Computer Society},
+ timestamp = {Thu, 25 May 2017 01:00:00 +0200},
+ title = {Understanding image representations by measuring their equivariance
+and equivalence},
+ url = {https://doi.org/10.1109/CVPR.2015.7298701},
+ year = {2015}
+}
+
+@inproceedings{Li2015-jo,
+ author = {Yixuan Li and
+Jason Yosinski and
+Jeff Clune and
+Hod Lipson and
+John E. Hopcroft},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/journals/corr/LiYCLH15.bib},
+ booktitle = {4th International Conference on Learning Representations, {ICLR} 2016,
+San Juan, Puerto Rico, May 2-4, 2016, Conference Track Proceedings},
+ editor = {Yoshua Bengio and
+Yann LeCun},
+ timestamp = {Fri, 29 Mar 2019 00:00:00 +0100},
+ title = {Convergent Learning: Do different neural networks learn the same representations?},
+ url = {http://arxiv.org/abs/1511.07543},
+ year = {2016}
+}
+
+@inproceedings{Morcos2018-ra,
+ author = {Ari S. Morcos and
+Maithra Raghu and
+Samy Bengio},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/nips/MorcosRB18.bib},
+ booktitle = {Advances in Neural Information Processing Systems 31: Annual Conference
+on Neural Information Processing Systems 2018, NeurIPS 2018, December
+3-8, 2018, Montr{\'{e}}al, Canada},
+ editor = {Samy Bengio and
+Hanna M. Wallach and
+Hugo Larochelle and
+Kristen Grauman and
+Nicol{\`{o}} Cesa{-}Bianchi and
+Roman Garnett},
+ pages = {5732--5741},
+ timestamp = {Thu, 21 Jan 2021 00:00:00 +0100},
+ title = {Insights on representational similarity in neural networks with canonical
+correlation},
+ url = {https://proceedings.neurips.cc/paper/2018/hash/a7a3d70c6d17a73140918996d03c014f-Abstract.html},
+ year = {2018}
+}
+
+@inproceedings{Kornblith2019-sz,
+ author = {Simon Kornblith and
+Mohammad Norouzi and
+Honglak Lee and
+Geoffrey E. Hinton},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/icml/Kornblith0LH19.bib},
+ booktitle = {Proceedings of the 36th International Conference on Machine Learning,
+{ICML} 2019, 9-15 June 2019, Long Beach, California, {USA}},
+ editor = {Kamalika Chaudhuri and
+Ruslan Salakhutdinov},
+ pages = {3519--3529},
+ publisher = {{PMLR}},
+ series = {Proceedings of Machine Learning Research},
+ timestamp = {Tue, 11 Jun 2019 01:00:00 +0200},
+ title = {Similarity of Neural Network Representations Revisited},
+ url = {http://proceedings.mlr.press/v97/kornblith19a.html},
+ volume = {97},
+ year = {2019}
+}
+
+@inproceedings{Wang2018-ho,
+ author = {Liwei Wang and
+Lunjia Hu and
+Jiayuan Gu and
+Zhiqiang Hu and
+Yue Wu and
+Kun He and
+John E. Hopcroft},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/nips/WangHGHW0H18.bib},
+ booktitle = {Advances in Neural Information Processing Systems 31: Annual Conference
+on Neural Information Processing Systems 2018, NeurIPS 2018, December
+3-8, 2018, Montr{\'{e}}al, Canada},
+ editor = {Samy Bengio and
+Hanna M. Wallach and
+Hugo Larochelle and
+Kristen Grauman and
+Nicol{\`{o}} Cesa{-}Bianchi and
+Roman Garnett},
+ pages = {9607--9616},
+ timestamp = {Thu, 21 Jan 2021 00:00:00 +0100},
+ title = {Towards Understanding Learning Representations: To What Extent Do
+Different Neural Networks Learn the Same Representation},
+ url = {https://proceedings.neurips.cc/paper/2018/hash/5fc34ed307aac159a30d81181c99847e-Abstract.html},
+ year = {2018}
+}
+
+@article{Alain2016-ob,
+ abstract = {Neural network models have a reputation for being black
+boxes. We propose to monitor the features at every layer of
+a model and measure how suitable they are for
+classification. We use linear classifiers, which we refer to
+as ``probes'', trained entirely independently of the model
+itself. This helps us better understand the roles and
+dynamics of the intermediate layers. We demonstrate how this
+can be used to develop a better intuition about models and
+to diagnose potential problems. We apply this technique to
+the popular models Inception v3 and Resnet-50. Among other
+things, we observe experimentally that the linear
+separability of features increase monotonically along the
+depth of the model.},
+ archiveprefix = {arXiv},
+ author = {Alain, Guillaume and Bengio, Yoshua},
+ eprint = {1610.01644},
+ primaryclass = {stat.ML},
+ title = {Understanding intermediate layers using linear classifier
+probes},
+ year = {2016}
+}
+
+@article{Gropp2020-lq,
+ abstract = {High dimensional data is often assumed to be concentrated on
+or near a low-dimensional manifold. Autoencoders (AE) is a
+popular technique to learn representations of such data by
+pushing it through a neural network with a low dimension
+bottleneck while minimizing a reconstruction error. Using
+high capacity AE often leads to a large collection of
+minimizers, many of which represent a low dimensional
+manifold that fits the data well but generalizes poorly. Two
+sources of bad generalization are: extrinsic, where the
+learned manifold possesses extraneous parts that are far
+from the data; and intrinsic, where the encoder and decoder
+introduce arbitrary distortion in the low dimensional
+parameterization. An approach taken to alleviate these
+issues is to add a regularizer that favors a particular
+solution; common regularizers promote sparsity, small
+derivatives, or robustness to noise. In this paper, we
+advocate an isometry (i.e., local distance preserving)
+regularizer. Specifically, our regularizer encourages: (i)
+the decoder to be an isometry; and (ii) the encoder to be
+the decoder's pseudo-inverse, that is, the encoder extends
+the inverse of the decoder to the ambient space by
+orthogonal projection. In a nutshell, (i) and (ii) fix both
+intrinsic and extrinsic degrees of freedom and provide a
+non-linear generalization to principal component analysis
+(PCA). Experimenting with the isometry regularizer on
+dimensionality reduction tasks produces useful
+low-dimensional data representations.},
+ archiveprefix = {arXiv},
+ author = {Gropp, Amos and Atzmon, Matan and Lipman, Yaron},
+ eprint = {2006.09289},
+ primaryclass = {cs.LG},
+ title = {Isometric Autoencoders},
+ year = {2020}
+}
+
+@article{Trauble2022-vk,
+ abstract = {Deep neural networks perform well on prediction and
+classification tasks in the canonical setting where data
+streams are i.i.d., labeled data is abundant, and class
+labels are balanced. Challenges emerge with distribution
+shifts, including non-stationary or imbalanced data streams.
+One powerful approach that has addressed this challenge
+involves self-supervised pretraining of large encoders on
+volumes of unlabeled data, followed by task-specific tuning.
+Given a new task, updating the weights of these encoders is
+challenging as a large number of weights needs to be
+fine-tuned, and as a result, they forget information about
+the previous tasks. In the present work, we propose a model
+architecture to address this issue, building upon a discrete
+bottleneck containing pairs of separate and learnable (key,
+value) codes. In this setup, we follow the encode; process
+the representation via a discrete bottleneck; and decode
+paradigm, where the input is fed to the pretrained encoder,
+the output of the encoder is used to select the nearest
+keys, and the corresponding values are fed to the decoder to
+solve the current task. The model can only fetch and re-use
+a limited number of these (key, value) pairs during
+inference, enabling localized and context-dependent model
+updates. We theoretically investigate the ability of the
+proposed model to minimize the effect of the distribution
+shifts and show that such a discrete bottleneck with (key,
+value) pairs reduces the complexity of the hypothesis class.
+We empirically verified the proposed methods' benefits under
+challenging distribution shift scenarios across various
+benchmark datasets and show that the proposed model reduces
+the common vulnerability to non-i.i.d. and non-stationary
+training distributions compared to various other baselines.},
+ archiveprefix = {arXiv},
+ author = {Tr{\"a}uble, Frederik and Goyal, Anirudh and Rahaman, Nasim
+and Mozer, Michael and Kawaguchi, Kenji and Bengio, Yoshua
+and Sch{\"o}lkopf, Bernhard},
+ eprint = {2207.11240},
+ primaryclass = {cs.LG},
+ title = {Discrete {Key-Value} Bottleneck},
+ year = {2022}
+}
+
+@article{Srinivasan2022-vj,
+ abstract = {Aligning image and text encoders from scratch using
+contrastive learning requires large amounts of paired
+image-text data. We alleviate this need by aligning
+individually pre-trained language and vision representation
+models using a much smaller amount of paired data, augmented
+with a curriculum learning algorithm to learn fine-grained
+vision-language alignments. TOnICS (Training with
+Ontology-Informed Contrastive Sampling) initially samples
+minibatches whose image-text pairs contain a wide variety of
+objects to learn object-level alignment, and progressively
+samples minibatches where all image-text pairs contain the
+same object to learn finer-grained contextual alignment.
+Aligning pre-trained BERT and VinVL models to each other
+using TOnICS outperforms CLIP on downstream zero-shot image
+retrieval while using less than 1\% as much training data.},
+ archiveprefix = {arXiv},
+ author = {Srinivasan, Tejas and Ren, Xiang and Thomason, Jesse},
+ eprint = {2207.14525},
+ primaryclass = {cs.CV},
+ title = {Curriculum Learning for {Data-Efficient} {Vision-Language}
+Alignment},
+ year = {2022}
+}
+
+@article{Kossen2021-mj,
+ author = {Kossen, Jannik and Band, Neil and Lyle, Clare and Gomez, Aidan N. and Rainforth, Tom and Gal, Yarin},
+ journal = {ArXiv preprint},
+ title = {Self-Attention Between Datapoints: Going Beyond Individual Input-Output Pairs in Deep Learning},
+ url = {https://arxiv.org/abs/2106.02584},
+ volume = {abs/2106.02584},
+ year = {2021}
+}
+
+@inproceedings{Tao2020-tx,
+ abstract = {A well-known issue for class-incremental learning is the
+catastrophic forgetting phenomenon, where the network's
+recognition performance on old classes degrades severely when
+incrementally learning new classes. To alleviate forgetting, we
+put forward to preserve the old class knowledge by maintaining
+the topology of the network's feature space. On this basis, we
+propose a novel topology-preserving class-incremental learning
+(TPCIL) framework. TPCIL uses an elastic Hebbian graph (EHG) to
+model the feature space topology, which is constructed with the
+competitive Hebbian learning rule. To maintain the topology, we
+develop the topology-preserving loss (TPL) that penalizes the
+changes of EHG's neighboring relationships during incremental
+learning phases. Comprehensive experiments on CIFAR100,
+ImageNet, and subImageNet datasets demonstrate the power of the
+TPCIL for continuously learning new classes with less
+forgetting. The code will be released.},
+ address = {Berlin, Heidelberg},
+ author = {Tao, Xiaoyu and Chang, Xinyuan and Hong, Xiaopeng and Wei, Xing
+and Gong, Yihong},
+ booktitle = {Computer Vision -- {ECCV} 2020: 16th European Conference,
+Glasgow, {UK}, August 23--28, 2020, Proceedings, Part {XIX}},
+ keywords = {Topology-Preserving Loss (TPL), Elastic Hebbian Graph (EHG),
+Class-Incremental Learning (CIL), Topology-Preserving
+Class-Incremental Learning (TPCIL)},
+ location = {Glasgow, United Kingdom},
+ pages = {254--270},
+ publisher = {Springer-Verlag},
+ title = {{Topology-Preserving} {Class-Incremental} Learning},
+ year = {2020}
+}
+
+@inproceedings{Alvarez-Melis2018-kr,
+ author = {David Alvarez{-}Melis and
+Stefanie Jegelka and
+Tommi S. Jaakkola},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/aistats/Alvarez-MelisJJ19.bib},
+ booktitle = {The 22nd International Conference on Artificial Intelligence and Statistics,
+{AISTATS} 2019, 16-18 April 2019, Naha, Okinawa, Japan},
+ editor = {Kamalika Chaudhuri and
+Masashi Sugiyama},
+ pages = {1870--1879},
+ publisher = {{PMLR}},
+ series = {Proceedings of Machine Learning Research},
+ timestamp = {Fri, 07 Jun 2019 01:00:00 +0200},
+ title = {Towards Optimal Transport with Global Invariances},
+ url = {http://proceedings.mlr.press/v89/alvarez-melis19a.html},
+ volume = {89},
+ year = {2019}
+}
+
+@article{Shalam2022-hj,
+ author = {Shalam, Daniel and Korman, Simon},
+ journal = {ArXiv preprint},
+ title = {The Self-Optimal-Transport Feature Transform},
+ url = {https://arxiv.org/abs/2204.03065},
+ volume = {abs/2204.03065},
+ year = {2022}
+}
+
+@article{Wu2018-he,
+ abstract = {Batch Normalization (BN) is a milestone technique in the
+development of deep learning, enabling various networks to
+train. However, normalizing along the batch dimension
+introduces problems --- BN's error increases rapidly when
+the batch size becomes smaller, caused by inaccurate batch
+statistics estimation. This limits BN's usage for training
+larger models and transferring features to computer vision
+tasks including detection, segmentation, and video, which
+require small batches constrained by memory consumption. In
+this paper, we present Group Normalization (GN) as a simple
+alternative to BN. GN divides the channels into groups and
+computes within each group the mean and variance for
+normalization. GN's computation is independent of batch
+sizes, and its accuracy is stable in a wide range of batch
+sizes. On ResNet-50 trained in ImageNet, GN has 10.6\% lower
+error than its BN counterpart when using a batch size of 2;
+when using typical batch sizes, GN is comparably good with
+BN and outperforms other normalization variants. Moreover,
+GN can be naturally transferred from pre-training to
+fine-tuning. GN can outperform its BN-based counterparts for
+object detection and segmentation in COCO, and for video
+classification in Kinetics, showing that GN can effectively
+replace the powerful BN in a variety of tasks. GN can be
+easily implemented by a few lines of code in modern
+libraries.},
+ archiveprefix = {arXiv},
+ author = {Wu, Yuxin and He, Kaiming},
+ copyright = {http://arxiv.org/licenses/nonexclusive-distrib/1.0/},
+ eprint = {1803.08494},
+ institution = {Github},
+ language = {en},
+ primaryclass = {cs.CV},
+ title = {Group Normalization},
+ year = {2018}
+}
+
+@inproceedings{Snell2017-fe,
+ author = {Jake Snell and
+Kevin Swersky and
+Richard S. Zemel},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/nips/SnellSZ17.bib},
+ booktitle = {Advances in Neural Information Processing Systems 30: Annual Conference
+on Neural Information Processing Systems 2017, December 4-9, 2017,
+Long Beach, CA, {USA}},
+ editor = {Isabelle Guyon and
+Ulrike von Luxburg and
+Samy Bengio and
+Hanna M. Wallach and
+Rob Fergus and
+S. V. N. Vishwanathan and
+Roman Garnett},
+ pages = {4077--4087},
+ timestamp = {Thu, 21 Jan 2021 00:00:00 +0100},
+ title = {Prototypical Networks for Few-shot Learning},
+ url = {https://proceedings.neurips.cc/paper/2017/hash/cb8da6767461f2812ae4290eac7cbc42-Abstract.html},
+ year = {2017}
+}
+
+@inproceedings{You2019-xl,
+ author = {Jiaxuan You and
+Rex Ying and
+Jure Leskovec},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/icml/YouYL19.bib},
+ booktitle = {Proceedings of the 36th International Conference on Machine Learning,
+{ICML} 2019, 9-15 June 2019, Long Beach, California, {USA}},
+ editor = {Kamalika Chaudhuri and
+Ruslan Salakhutdinov},
+ pages = {7134--7143},
+ publisher = {{PMLR}},
+ series = {Proceedings of Machine Learning Research},
+ timestamp = {Tue, 11 Jun 2019 01:00:00 +0200},
+ title = {Position-aware Graph Neural Networks},
+ url = {http://proceedings.mlr.press/v97/you19b.html},
+ volume = {97},
+ year = {2019}
+}
+
+@inproceedings{Yu2010-xa,
+ author = {Kai Yu and
+Tong Zhang},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/icml/YuZ10.bib},
+ booktitle = {Proceedings of the 27th International Conference on Machine Learning
+(ICML-10), June 21-24, 2010, Haifa, Israel},
+ editor = {Johannes F{\"{u}}rnkranz and
+Thorsten Joachims},
+ pages = {1215--1222},
+ publisher = {Omnipress},
+ timestamp = {Wed, 03 Apr 2019 01:00:00 +0200},
+ title = {Improved Local Coordinate Coding using Local Tangents},
+ url = {https://icml.cc/Conferences/2010/papers/454.pdf},
+ year = {2010}
+}
+
+@book{Borg2005-ax,
+ abstract = {
+Multidimensionalscaling(MDS)isatechniquefortheanalysisofsimilarity
+or dissimilarity data on a set of objects. Such data may be
+intercorrelations of test items, ratings of similarity on
+political candidates, or trade indices
+forasetofcountries.MDSattemptstomodelsuchdataasdistancesamong
+pointsinageometricspace.Themainreasonfordoingthisisthatonewants
+a graphical display of the structure of the data, one that is
+much easier to understand than an array of numbers and,
+moreover, one that displays the essential information in the
+data, smoothing out noise. There are numerous varieties of MDS.
+Some facets for distinguishing among them are the particular
+type of geometry into which one wants to
+mapthedata,themappingfunction,thealgorithmsusedto?ndanoptimal
+data representation, the treatment of statistical error in the
+models, or the possibility to represent not just one but several
+similarity matrices at the same time. Other facets relate to the
+di?erent purposes for which MDS has been used, to various ways
+of looking at or ``interpreting'' an MDS representation, or to
+di?erences in the data required for the particular models.
+Inthisbook,wegiveafairlycomprehensivepresentationofMDS.Forthe
+reader with applied interests only, the ?rst six chapters of
+Part I should be su?cient. They explain the basic notions of
+ordinary MDS, with an emphasis on how MDS can be helpful in
+answering substantive questions.},
+ author = {Borg, I and Groenen, P J F},
+ language = {en},
+ publisher = {Springer Science \& Business Media},
+ title = {Modern Multidimensional Scaling: Theory and Applications},
+ year = {2005}
+}
+
+@inproceedings{Arora2015-de,
+ author = {Sanjeev Arora and
+Rong Ge and
+Tengyu Ma and
+Ankur Moitra},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/colt/AroraGMM15.bib},
+ booktitle = {Proceedings of The 28th Conference on Learning Theory, {COLT} 2015,
+Paris, France, July 3-6, 2015},
+ editor = {Peter Gr{\"{u}}nwald and
+Elad Hazan and
+Satyen Kale},
+ pages = {113--149},
+ publisher = {JMLR.org},
+ series = {{JMLR} Workshop and Conference Proceedings},
+ timestamp = {Wed, 29 May 2019 01:00:00 +0200},
+ title = {Simple, Efficient, and Neural Algorithms for Sparse Coding},
+ url = {http://proceedings.mlr.press/v40/Arora15.html},
+ volume = {40},
+ year = {2015}
+}
+
+@article{Tenenbaum2000-xh,
+ abstract = {Scientists working with large volumes of high-dimensional data,
+such as global climate patterns, stellar spectra, or human gene
+distributions, regularly confront the problem of dimensionality
+reduction: finding meaningful low-dimensional structures hidden
+in their high-dimensional observations. The human brain confronts
+the same problem in everyday perception, extracting from its
+high-dimensional sensory inputs-30,000 auditory nerve fibers or
+10(6) optic nerve fibers-a manageably small number of
+perceptually relevant features. Here we describe an approach to
+solving dimensionality reduction problems that uses easily
+measured local metric information to learn the underlying global
+geometry of a data set. Unlike classical techniques such as
+principal component analysis (PCA) and multidimensional scaling
+(MDS), our approach is capable of discovering the nonlinear
+degrees of freedom that underlie complex natural observations,
+such as human handwriting or images of a face under different
+viewing conditions. In contrast to previous algorithms for
+nonlinear dimensionality reduction, ours efficiently computes a
+globally optimal solution, and, for an important class of data
+manifolds, is guaranteed to converge asymptotically to the true
+structure.},
+ author = {Tenenbaum, J B and de Silva, V and Langford, J C},
+ journal = {Science},
+ language = {en},
+ number = {5500},
+ pages = {2319--2323},
+ title = {A global geometric framework for nonlinear dimensionality
+reduction},
+ volume = {290},
+ year = {2000}
+}
+
+@article{Roweis2000-ft,
+ abstract = {Many areas of science depend on exploratory data analysis and
+visualization. The need to analyze large amounts of multivariate
+data raises the fundamental problem of dimensionality reduction:
+how to discover compact representations of high-dimensional data.
+Here, we introduce locally linear embedding (LLE), an
+unsupervised learning algorithm that computes low-dimensional,
+neighborhood-preserving embeddings of high-dimensional inputs.
+Unlike clustering methods for local dimensionality reduction, LLE
+maps its inputs into a single global coordinate system of lower
+dimensionality, and its optimizations do not involve local
+minima. By exploiting the local symmetries of linear
+reconstructions, LLE is able to learn the global structure of
+nonlinear manifolds, such as those generated by images of faces
+or documents of text.},
+ author = {Roweis, S T and Saul, L K},
+ journal = {Science},
+ language = {en},
+ number = {5500},
+ pages = {2323--2326},
+ title = {Nonlinear dimensionality reduction by locally linear embedding},
+ volume = {290},
+ year = {2000}
+}
+
+@article{Bottou1992-yv,
+ abstract = {Very rarely are training data evenly distributed in the input
+space. Local learning algorithms attempt to locally adjust the
+capacity of the training system to the properties of the
+training set in each area of the input space. The family of
+local learning algorithms contains known methods, like the
+k-nearest neighbors method (kNN) or the radial basis function
+networks (RBF), as well as new algorithms. A single analysis
+models some aspects of these algorithms. In particular, it
+suggests that neither kNN or RBF, nor nonlocal classifiers,
+achieve the best compromise between locality and capacity. A
+careful control of these parameters in a simple local learning
+algorithm has provided a performance breakthrough for an optical
+character recognition problem. Both the error rate and the
+rejection performance have been significantly improved.},
+ author = {Bottou, L{\'e}on and Vapnik, Vladimir},
+ journal = {Neural Comput.},
+ language = {en},
+ number = {6},
+ pages = {888--900},
+ publisher = {MIT Press - Journals},
+ title = {Local learning algorithms},
+ volume = {4},
+ year = {1992}
+}
+
+@article{Gray1998-nx,
+ abstract = {The history of the theory and practice of quantization dates to
+1948, although similar ideas had appeared in the literature as
+long ago as 1898. The fundamental role of quantization in
+modulation and analog-to-digital conversion was first recognized
+during the early development of pulse-code modulation systems,
+especially in the 1948 paper of Oliver, Pierce, and Shannon. Also
+in 1948, Bennett published the first high-resolution analysis of
+quantization and an exact analysis of quantization noise for
+Gaussian processes, and Shannon published the beginnings of rate
+distortion theory, which would provide a theory for quantization
+as analog-to-digital conversion and as data compression.
+Beginning with these three papers of fifty years ago, we trace
+the history of quantization from its origins through this decade,
+and we survey the fundamentals of the theory and many of the
+popular and promising techniques for quantization.},
+ author = {Gray, R M and Neuhoff, D L},
+ journal = {IEEE Trans. Inf. Theory},
+ keywords = {Quantization;Pulse modulation;History;Analog-digital
+conversion;Rate distortion theory;Gaussian noise;Gaussian
+processes;Data compression;Source coding},
+ number = {6},
+ pages = {2325--2383},
+ title = {Quantization},
+ volume = {44},
+ year = {1998}
+}
+
+@inproceedings{Lee2006-az,
+ author = {Honglak Lee and
+Alexis Battle and
+Rajat Raina and
+Andrew Y. Ng},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/nips/LeeBRN06.bib},
+ booktitle = {Advances in Neural Information Processing Systems 19, Proceedings
+of the Twentieth Annual Conference on Neural Information Processing
+Systems, Vancouver, British Columbia, Canada, December 4-7, 2006},
+ editor = {Bernhard Sch{\"{o}}lkopf and
+John C. Platt and
+Thomas Hofmann},
+ pages = {801--808},
+ publisher = {{MIT} Press},
+ timestamp = {Thu, 21 Jan 2021 00:00:00 +0100},
+ title = {Efficient sparse coding algorithms},
+ url = {https://proceedings.neurips.cc/paper/2006/hash/2d71b2ae158c7c5912cc0bbde2bb9d95-Abstract.html},
+ year = {2006}
+}
+
+@inproceedings{Yu2009-zk,
+ author = {Kai Yu and
+Tong Zhang and
+Yihong Gong},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/nips/YuZG09.bib},
+ booktitle = {Advances in Neural Information Processing Systems 22: 23rd Annual
+Conference on Neural Information Processing Systems 2009. Proceedings
+of a meeting held 7-10 December 2009, Vancouver, British Columbia,
+Canada},
+ editor = {Yoshua Bengio and
+Dale Schuurmans and
+John D. Lafferty and
+Christopher K. I. Williams and
+Aron Culotta},
+ pages = {2223--2231},
+ publisher = {Curran Associates, Inc.},
+ timestamp = {Thu, 21 Jan 2021 00:00:00 +0100},
+ title = {Nonlinear Learning using Local Coordinate Coding},
+ url = {https://proceedings.neurips.cc/paper/2009/hash/2afe4567e1bf64d32a5527244d104cea-Abstract.html},
+ year = {2009}
+}
+
+@misc{Colah2015,
+ author = {Olah, Christopher},
+ howpublished = {\url{http://colah.github.io/posts/2015-01-Visualizing-Representations/}},
+ language = {en},
+ note = {Accessed: 2022-8-2},
+ title = {Visualizing representations: Deep learning and human beings},
+ year = {2015}
+}
+
+@inproceedings{Cao2018-ii,
+ author = {Jiezhang Cao and
+Yong Guo and
+Qingyao Wu and
+Chunhua Shen and
+Junzhou Huang and
+Mingkui Tan},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/icml/CaoGWSHT18.bib},
+ booktitle = {Proceedings of the 35th International Conference on Machine Learning,
+{ICML} 2018, Stockholmsm{\"{a}}ssan, Stockholm, Sweden, July 10-15,
+2018},
+ editor = {Jennifer G. Dy and
+Andreas Krause},
+ pages = {706--714},
+ publisher = {{PMLR}},
+ series = {Proceedings of Machine Learning Research},
+ timestamp = {Wed, 03 Apr 2019 01:00:00 +0200},
+ title = {Adversarial Learning with Local Coordinate Coding},
+ url = {http://proceedings.mlr.press/v80/cao18a.html},
+ volume = {80},
+ year = {2018}
+}
+
+@inproceedings{marc_reviews,
+ address = {Online},
+ author = {Keung, Phillip  and
+Lu, Yichao  and
+Szarvas, Gy{\"o}rgy  and
+Smith, Noah A.},
+ booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+ doi = {10.18653/v1/2020.emnlp-main.369},
+ pages = {4563--4568},
+ publisher = {Association for Computational Linguistics},
+ title = {The Multilingual {A}mazon Reviews Corpus},
+ url = {https://aclanthology.org/2020.emnlp-main.369},
+ year = {2020}
+}
+
+@inproceedings{vulic-etal-2020-good,
+    title = "Are All Good Word Vector Spaces Isomorphic?",
+    author = "Vuli{\'c}, Ivan  and
+      Ruder, Sebastian  and
+      S{\o}gaard, Anders",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.257",
+    doi = "10.18653/v1/2020.emnlp-main.257",
+    pages = "3178--3192",
+    abstract = "Existing algorithms for aligning cross-lingual word vector spaces assume that vector spaces are approximately isomorphic. As a result, they perform poorly or fail completely on non-isomorphic spaces. Such non-isomorphism has been hypothesised to result from typological differences between languages. In this work, we ask whether non-isomorphism is also crucially a sign of degenerate word vector spaces. We present a series of experiments across diverse languages which show that variance in performance across language pairs is not only due to typological differences, but can mostly be attributed to the size of the monolingual resources available, and to the properties and duration of monolingual training (e.g. {``}under-training{''}).",
+}
+
+@inproceedings{
+albert,
+title={ALBERT: A Lite BERT for Self-supervised Learning of Language Representations},
+author={Zhenzhong Lan and Mingda Chen and Sebastian Goodman and Kevin Gimpel and Piyush Sharma and Radu Soricut},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=H1eA7AEtvS}
+}
+
+@inproceedings{Conneau2017-vv,
+ author = {Guillaume Lample and
+Alexis Conneau and
+Marc'Aurelio Ranzato and
+Ludovic Denoyer and
+Herv{\'{e}} J{\'{e}}gou},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/iclr/LampleCRDJ18.bib},
+ booktitle = {6th International Conference on Learning Representations, {ICLR} 2018,
+Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track Proceedings},
+ publisher = {OpenReview.net},
+ timestamp = {Thu, 25 Jul 2019 01:00:00 +0200},
+ title = {Word translation without parallel data},
+ url = {https://openreview.net/forum?id=H196sainb},
+ year = {2018}
+}
+
+@inproceedings{Planetoid,
+ author = {Zhilin Yang and
+William W. Cohen and
+Ruslan Salakhutdinov},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/icml/YangCS16.bib},
+ booktitle = {Proceedings of the 33nd International Conference on Machine Learning,
+{ICML} 2016, New York City, NY, USA, June 19-24, 2016},
+ editor = {Maria{-}Florina Balcan and
+Kilian Q. Weinberger},
+ pages = {40--48},
+ publisher = {JMLR.org},
+ series = {{JMLR} Workshop and Conference Proceedings},
+ timestamp = {Wed, 29 May 2019 01:00:00 +0200},
+ title = {Revisiting Semi-Supervised Learning with Graph Embeddings},
+ url = {http://proceedings.mlr.press/v48/yanga16.html},
+ volume = {48},
+ year = {2016}
+}
+
+@article{hofmann2008kernel,
+ author = {Hofmann, Thomas and Sch{\"o}lkopf, Bernhard and Smola, Alexander J},
+ journal = {The annals of statistics},
+ number = {3},
+ pages = {1171--1220},
+ publisher = {Institute of Mathematical Statistics},
+ title = {Kernel methods in machine learning},
+ volume = {36},
+ year = {2008}
+}
+
+@article{instance-norm,
+ author = {Ulyanov, Dmitry and Vedaldi, Andrea and Lempitsky, Victor},
+ journal = {ArXiv preprint},
+ title = {Instance Normalization: The Missing Ingredient for Fast Stylization},
+ url = {https://arxiv.org/abs/1607.08022},
+ volume = {abs/1607.08022},
+ year = {2016}
+}
+
+@article{DBLP:journals/corr/abs-2111-07632,
+ author = {Niccolo Biondi an},
+ journal = {ArXiv preprint},
+ title = {CoReS: Compatible Representations via Stationarity},
+ url = {https://arxiv.org/abs/2111.07632},
+ volume = {abs/2111.07632},
+ year = {2021}
+}
+
+@article{gitrebasin,
+ author = {Ainsworth, Samuel K. and Hayase, Jonathan and Srinivasa, Siddhartha},
+ journal = {ArXiv preprint},
+ title = {Git Re-Basin: Merging Models modulo Permutation Symmetries},
+ url = {https://arxiv.org/abs/2209.04836},
+ volume = {abs/2209.04836},
+ year = {2022}
+}
+
+@inproceedings{NEURIPS2021_46407417,
+ author = {Antonello, Richard and Turek, Javier S and Vo, Vy and Huth, Alexander},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+ pages = {8332--8344},
+ publisher = {Curran Associates, Inc.},
+ title = {Low-dimensional Structure in the Space of Language Representations is Reflected in Brain Responses},
+ url = {https://proceedings.neurips.cc/paper/2021/file/464074179972cbbd75a39abc6954cd12-Paper.pdf},
+ volume = {34},
+ year = {2021}
+}
+
+@article{https://doi.org/10.48550/arxiv.2208.03861,
+ author = {Yaman, Muammer Y. and Kalinin, Sergei V. and Guye, Kathryn N. and Ginger, David and Ziatdinov, Maxim},
+ journal = {ArXiv preprint},
+ title = {Learning and predicting photonic responses of plasmonic nanoparticle assemblies via dual variational autoencoders},
+ url = {https://arxiv.org/abs/2208.03861},
+ volume = {abs/2208.03861},
+ year = {2022}
+}
+
+@article{DBLP:journals/corr/abs-2007-14906,
+ author = {Federico Bianchi an},
+ journal = {ArXiv preprint},
+ title = {Fantastic Embeddings and How to Align Them: Zero-Shot Inference i},
+ url = {https://arxiv.org/abs/2007.14906},
+ volume = {abs/2007.14906},
+ year = {2020}
+}
+
+@article{RuleThemAll,
+ author = {Gontijo-Lopes, Raphael and Dauphin, Yann and Cubuk, Ekin D.},
+ journal = {ArXiv preprint},
+ title = {No One Representation to Rule Them All: Overlapping Features of Training Methods},
+ url = {https://arxiv.org/abs/2110.12899},
+ volume = {abs/2110.12899},
+ year = {2021}
+}
+
+@article{AnalyzingTransformers,
+ author = {Dar, Guy and Geva, Mor and Gupta, Ankit and Berant, Jonathan},
+ journal = {ArXiv preprint},
+ title = {Analyzing Transformers in Embedding Space},
+ url = {https://arxiv.org/abs/2209.02535},
+ volume = {abs/2209.02535},
+ year = {2022}
+}
+
+@inproceedings{wang-EtAl:2022:LREC3,
+ address = {Marseille, France},
+ author = {Wang, Zhen  and  Shan, Xu  and  Zhang, Xiangxie  and  Yang, Jie},
+ booktitle = {Proceedings of the Language Resources and Evaluation Conference},
+ pages = {6768--6775},
+ publisher = {European Language Resources Association},
+ title = {N24News: A New Dataset for Multimodal News Classification},
+ url = {https://aclanthology.org/2022.lrec-1.729},
+ year = {2022}
+}
+
+@inproceedings{Zhai_2022_CVPR,
+ author = {Zhai, Xiaohua and Wang, Xiao and Mustafa, Basil and Steiner, Andreas and Keysers, Daniel and Kolesnikov, Alexander and Beyer, Lucas},
+ booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+ pages = {18123-18133},
+ title = {LiT: Zero-Shot Transfer With Locked-Image Text Tuning},
+ year = {2022}
+}
+
+@article{es_roberta,
+ author = {Asier Gutiérrez Fandiño and Jordi Armengol Estapé and Marc Pàmies and Joan Llop Palao and Joaquin Silveira Ocampo and Casimiro Pio Carrino and Carme Armentano Oller and Carlos Rodriguez Penagos and Aitor Gonzalez Agirre and Marta Villegas},
+ doi = {10.26342/2022-68-3},
+ issn = {1135-5948},
+ journal = {Procesamiento del Lenguaje Natural},
+ publisher = {Sociedad Española para el Procesamiento del Lenguaje Natural},
+ title = {MarIA: Spanish Language Models},
+ url = {https://upcommons.upc.edu/handle/2117/367156#.YyMTB4X9A-0.mendeley},
+ volume = {68},
+ year = {2022}
+}
+
+@article{alipour2022,
+ abstract = {ABSTRACT Cross-lingual word embeddings display words from different languages in the same vector space. They provide reasoning about semantics, compare the meaning of words across languages and word meaning in multilingual contexts, necessary to bilingual lexicon induction, machine translation, and cross-lingual information retrieval. This paper proposes an efficient approach to learn bilingual transform mapping between monolingual word embeddings in language pairs. We choose ten different languages from three different language families and downloaded their last update Wikipedia dumps1 1. https://dumps.wikimedia.org. Then, with some pre-processing steps and using word2vec, we produce word embeddings for them. We select seven language pairs from chosen languages. Since the selected languages are relative, they have thousands of identical words with similar meanings. With these identical dictation words and word embedding models of each language, we create training, validation and, test sets for the language pairs. We then use a generative adversarial network (GAN) to learn the transform mapping between word embeddings of source and target languages. The average accuracy of our proposed method in all language pairs is 71.34\%. The highest accuracy is achieved for the Turkish-Azerbaijani language pair with the accuracy 78.32\%., which is noticeably higher than prior methods.},
+ author = {Alipour, Ghafour and Bagherzadeh Mohasefi, Jamshid and Feizi-Derakhshi, Mohammad-Reza},
+ date = {2022-12-31},
+ doi = {10.1080/08839514.2021.2019885},
+ issn = {0883-9514, 1087-6545},
+ journaltitle = {Applied Artificial Intelligence},
+ langid = {english},
+ number = {1},
+ pages = {2019885},
+ title = {Learning {{Bilingual Word Embedding Mappings}} with {{Similar Words}} in {{Related Languages Using GAN}}},
+ url = {https://www.tandfonline.com/doi/full/10.1080/08839514.2021.2019885},
+ urldate = {2023-05-12},
+ volume = {36}
+}
+
+@inproceedings{artetxe2016,
+ address = {Austin, Texas},
+ author = {Artetxe, Mikel  and
+Labaka, Gorka  and
+Agirre, Eneko},
+ booktitle = {Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing},
+ doi = {10.18653/v1/D16-1250},
+ pages = {2289--2294},
+ publisher = {Association for Computational Linguistics},
+ title = {Learning principled bilingual mappings of word embeddings while preserving monolingual invariance},
+ url = {https://aclanthology.org/D16-1250},
+ year = {2016}
+}
+
+@article{bengio2012,
+ author = {Bengio, Yoshua and Courville, Aaron and Vincent, Pascal},
+ journal = {ArXiv preprint},
+ title = {Representation {{Learning}}: {{A Review}} and {{New Perspectives}}},
+ url = {https://arxiv.org/abs/1206.5538},
+ volume = {abs/1206.5538},
+ year = {2012}
+}
+
+@article{chang2022,
+ author = {Chang, Tyler A. and Tu, Zhuowen and Bergen, Benjamin K.},
+ journal = {ArXiv preprint},
+ title = {The {{Geometry}} of {{Multilingual Language Model Representations}}},
+ url = {https://arxiv.org/abs/2205.10964},
+ volume = {abs/2205.10964},
+ year = {2022}
+}
+
+@inproceedings{conneau2017a,
+ author = {Guillaume Lample and
+Alexis Conneau and
+Marc'Aurelio Ranzato and
+Ludovic Denoyer and
+Herv{\'{e}} J{\'{e}}gou},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/iclr/LampleCRDJ18.bib},
+ booktitle = {6th International Conference on Learning Representations, {ICLR} 2018,
+Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track Proceedings},
+ publisher = {OpenReview.net},
+ timestamp = {Thu, 25 Jul 2019 01:00:00 +0200},
+ title = {Word translation without parallel data},
+ url = {https://openreview.net/forum?id=H196sainb},
+ year = {2018}
+}
+
+@book{cox2000,
+ abstract = {Multidimensional Scaling - 2},
+ author = {Cox, Michael, Trevor Cox},
+ date = {2000-09-28},
+ doi = {10.1201/9780367801700},
+ edition = {2},
+ isbn = {978-0-367-80170-0},
+ location = {{New York}},
+ pagetotal = {328},
+ publisher = {{Chapman and Hall/CRC}},
+ title = {Multidimensional {{Scaling}}}
+}
+
+@article{ding2021,
+ author = {Ding, Frances and Denain, Jean-Stanislas and Steinhardt, Jacob},
+ journal = {ArXiv preprint},
+ title = {Grounding {{Representation Similarity}} with {{Statistical Testing}}},
+ url = {https://arxiv.org/abs/2108.01661},
+ volume = {abs/2108.01661},
+ year = {2021}
+}
+
+@article{dong2022,
+ author = {Dong, Runpei and Qi, Zekun and Zhang, Linfeng and Zhang, Junbo and Sun, Jianjian and Ge, Zheng and Yi, Li and Ma, Kaisheng},
+ journal = {ArXiv preprint},
+ title = {Autoencoders as {{Cross-Modal Teachers}}: {{Can Pretrained 2D Image Transformers Help 3D Representation Learning}}?},
+ url = {https://arxiv.org/abs/2212.08320},
+ volume = {abs/2212.08320},
+ year = {2022}
+}
+
+@article{godfrey,
+ abstract = {Symmetry has been a fundamental tool in the exploration of a broad range of complex systems. In machine learning, symmetry has been explored in both models and data. In this paper we seek to connect the symmetries arising from the architecture of a family of models with the symmetries of that family’s internal representation of data. We do this by calculating a set of fundamental symmetry groups, which we call the intertwiner groups of the model. Each of these arises from a particular nonlinear layer of the model and different nonlinearities result in different symmetry groups. These groups change the weights of a model in such a way that the underlying function that the model represents remains constant but the internal representations of data inside the model may change. We connect intertwiner groups to a model’s internal representations of data through a range of experiments that probe similarities between hidden states across models with the same architecture. Our work suggests that the symmetries of a network are propagated into the symmetries in that network’s representation of data, providing us with a better understanding of how architecture affects the learning and prediction process. Finally, we speculate that for ReLU networks, the intertwiner groups may provide a justification for the common practice of concentrating model interpretability exploration on the activation basis in hidden layers rather than arbitrary linear combinations thereof.},
+ author = {Godfrey, Charles and Brown, Davis and Emerson, Tegan and Kvinge, Henry},
+ langid = {english},
+ title = {On the {{Symmetries}} of {{Deep Learning Models}} and Their {{Internal Representations}}}
+}
+
+@article{klabunde2023,
+ author = {Klabunde, Max and Schumacher, Tobias and Strohmaier, Markus and Lemmerich, Florian},
+ journal = {ArXiv preprint},
+ title = {Similarity of {{Neural Network Models}}: {{A Survey}} of {{Functional}} and {{Representational Measures}}},
+ url = {https://arxiv.org/abs/2305.06329},
+ volume = {abs/2305.06329},
+ year = {2023}
+}
+
+@inproceedings{li2018,
+ author = {Hao Li and
+Zheng Xu and
+Gavin Taylor and
+Christoph Studer and
+Tom Goldstein},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/nips/Li0TSG18.bib},
+ booktitle = {Advances in Neural Information Processing Systems 31: Annual Conference
+on Neural Information Processing Systems 2018, NeurIPS 2018, December
+3-8, 2018, Montr{\'{e}}al, Canada},
+ editor = {Samy Bengio and
+Hanna M. Wallach and
+Hugo Larochelle and
+Kristen Grauman and
+Nicol{\`{o}} Cesa{-}Bianchi and
+Roman Garnett},
+ pages = {6391--6401},
+ timestamp = {Thu, 21 Jan 2021 00:00:00 +0100},
+ title = {Visualizing the Loss Landscape of Neural Nets},
+ url = {https://proceedings.neurips.cc/paper/2018/hash/a41b3bb3e6b050b6c9067c67f663b915-Abstract.html},
+ year = {2018}
+}
+
+@article{marchisio2022,
+ author = {Marchisio, Kelly and Verma, Neha and Duh, Kevin and Koehn, Philipp},
+ journal = {ArXiv preprint},
+ title = {{{IsoVec}}: {{Controlling}} the {{Relative Isomorphism}} of {{Word Embedding Spaces}}},
+ url = {https://arxiv.org/abs/2210.05098},
+ volume = {abs/2210.05098},
+ year = {2022}
+}
+
+@article{mehta2022,
+ author = {Mehta, Raghav and Albiero, Vítor and Chen, Li and Evtimov, Ivan and Glaser, Tamar and Li, Zhiheng and Hassner, Tal},
+ journal = {ArXiv preprint},
+ title = {You {{Only Need}} a {{Good Embeddings Extractor}} to {{Fix Spurious Correlations}}},
+ url = {https://arxiv.org/abs/2212.06254},
+ volume = {abs/2212.06254},
+ year = {2022}
+}
+
+@article{meng2018,
+ author = {Meng, Qi and Zheng, Shuxin and Zhang, Huishuai and Chen, Wei and Ma, Zhi-Ming and Liu, Tie-Yan},
+ journal = {ArXiv preprint},
+ title = {\$\textbackslash mathcal\{\vphantom\}{{G}}\vphantom\{\}\$-{{SGD}}: {{Optimizing ReLU Neural Networks}} in Its {{Positively Scale-Invariant Space}}},
+ url = {https://arxiv.org/abs/1802.03713},
+ volume = {abs/1802.03713},
+ year = {2018}
+}
+
+@inproceedings{movshovitz-attias2017,
+ author = {Yair Movshovitz{-}Attias and
+Alexander Toshev and
+Thomas K. Leung and
+Sergey Ioffe and
+Saurabh Singh},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/iccv/Movshovitz-Attias17.bib},
+ booktitle = {{IEEE} International Conference on Computer Vision, {ICCV} 2017, Venice,
+Italy, October 22-29, 2017},
+ doi = {10.1109/ICCV.2017.47},
+ pages = {360--368},
+ publisher = {{IEEE} Computer Society},
+ timestamp = {Thu, 11 Jan 2018 00:00:00 +0100},
+ title = {No Fuss Distance Metric Learning Using Proxies},
+ url = {https://doi.org/10.1109/ICCV.2017.47},
+ year = {2017}
+}
+
+@inproceedings{norouzi2013,
+ author = {Mohammad Norouzi and
+Tom{\'{a}}s Mikolov and
+Samy Bengio and
+Yoram Singer and
+Jonathon Shlens and
+Andrea Frome and
+Greg Corrado and
+Jeffrey Dean},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/journals/corr/NorouziMBSSFCD13.bib},
+ booktitle = {2nd International Conference on Learning Representations, {ICLR} 2014,
+Banff, AB, Canada, April 14-16, 2014, Conference Track Proceedings},
+ editor = {Yoshua Bengio and
+Yann LeCun},
+ timestamp = {Mon, 28 Dec 2020 00:00:00 +0100},
+ title = {Zero-Shot Learning by Convex Combination of Semantic Embeddings},
+ url = {http://arxiv.org/abs/1312.5650},
+ year = {2014}
+}
+
+@article{pan2023,
+ author = {Pan, Zizheng and Cai, Jianfei and Zhuang, Bohan},
+ journal = {ArXiv preprint},
+ title = {Stitchable {{Neural Networks}}},
+ url = {https://arxiv.org/abs/2302.06586},
+ volume = {abs/2302.06586},
+ year = {2023}
+}
+
+@inproceedings{ruder2019,
+ address = {Florence, Italy},
+ author = {Ruder, Sebastian  and
+S{\o}gaard, Anders  and
+Vuli{\'c}, Ivan},
+ booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics: Tutorial Abstracts},
+ doi = {10.18653/v1/P19-4007},
+ pages = {31--38},
+ publisher = {Association for Computational Linguistics},
+ title = {Unsupervised Cross-Lingual Representation Learning},
+ url = {https://aclanthology.org/P19-4007},
+ year = {2019}
+}
+
+@inproceedings{smith2017,
+ author = {Samuel L. Smith and
+David H. P. Turban and
+Steven Hamblin and
+Nils Y. Hammerla},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/iclr/SmithTHH17.bib},
+ booktitle = {5th International Conference on Learning Representations, {ICLR} 2017,
+Toulon, France, April 24-26, 2017, Conference Track Proceedings},
+ publisher = {OpenReview.net},
+ timestamp = {Thu, 25 Jul 2019 01:00:00 +0200},
+ title = {Offline bilingual word vectors, orthogonal transformations and the
+inverted softmax},
+ url = {https://openreview.net/forum?id=r1Aab85gg},
+ year = {2017}
+}
+
+@article{somepalli2022,
+ author = {Somepalli, Gowthami and Fowl, Liam and Bansal, Arpit and Yeh-Chiang, Ping and Dar, Yehuda and Baraniuk, Richard and Goldblum, Micah and Goldstein, Tom},
+ journal = {ArXiv preprint},
+ title = {Can {{Neural Nets Learn}} the {{Same Model Twice}}? {{Investigating Reproducibility}} and {{Double Descent}} from the {{Decision Boundary Perspective}}},
+ url = {https://arxiv.org/abs/2203.08124},
+ volume = {abs/2203.08124},
+ year = {2022}
+}
+
+@inproceedings{wang2008,
+ author = {Chang Wang and
+Sridhar Mahadevan},
+ bibsource = {dblp computer science bibliography, https://dblp.org},
+ biburl = {https://dblp.org/rec/conf/icml/WangM08.bib},
+ booktitle = {Machine Learning, Proceedings of the Twenty-Fifth International Conference
+{(ICML} 2008), Helsinki, Finland, June 5-9, 2008},
+ doi = {10.1145/1390156.1390297},
+ editor = {William W. Cohen and
+Andrew McCallum and
+Sam T. Roweis},
+ pages = {1120--1127},
+ publisher = {{ACM}},
+ series = {{ACM} International Conference Proceeding Series},
+ timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
+ title = {Manifold alignment using Procrustes analysis},
+ url = {https://doi.org/10.1145/1390156.1390297},
+ volume = {307},
+ year = {2008}
+}
+
+@article{wang2020,
+ abstract = {Recently, the Transformer architecture has achieved state-of-the-art performance in many natural language processing tasks. One key component in the Transformer architecture is the attention layer, which captures the relation between tokens. In this paper, we show that the weight of the attention layer has scale-invariant property, i.e. the output is invariant to a rescaling of weights. However, optimization algorithms in the vector space of weight such as SGD are not scaling invariant. This mismatch will potentially hurt the optimization process. To solve the mismatch, we seek a new parameter space for attention layer that is both scale-invariant and can sufficiently represent the output of attention, so that we can employ optimization algorithms in the scale-invariant parameter space. To achieve this goal, we first show that the output of the attention layer can be represented using scale-invariant variables, which is called paths. Then, we define basis paths which are an independent subset of all paths and are sufficient to represent all other paths. We prove that the Scale-Invariant (SI) space for the attention layer is composed of the basis path. Finally, we design an Attention Basis Path Identification(ABPI) Method to identify the basis paths and propose optimizing the attention layer directly in its SI space. Several experiments on benchmark datasets show that we can obtain more effective neural networks with the attention layer by optimizing the attention layer directly in its SI space.},
+ author = {Wang, Yue and Liu, Yuting and Ma, Zhi-Ming},
+ date = {2020-06-07},
+ doi = {10.1016/j.neucom.2020.01.090},
+ issn = {0925-2312},
+ journaltitle = {Neurocomputing},
+ keywords = {Attention layer,Neural network,Optimization,Scale-invariant,Transformer},
+ langid = {english},
+ pages = {1--10},
+ title = {The Scale-Invariant Space for Attention Layer in Neural Network},
+ url = {https://www.sciencedirect.com/science/article/pii/S092523122030148X},
+ urldate = {2023-04-13},
+ volume = {392}
+}
+
+@inproceedings{wang2009manifold,
+  title={Manifold alignment without correspondence.},
+  author={Wang, Chang and Mahadevan, Sridhar},
+  booktitle={IJCAI},
+  volume={2},
+  pages={3},
+  year={2009}
+}
+
+@article{xian2017,
+ author = {Xian, Yongqin and Lampert, Christoph H. and Schiele, Bernt and Akata, Zeynep},
+ journal = {ArXiv preprint},
+ title = {Zero-{{Shot Learning}} -- {{A Comprehensive Evaluation}} of the {{Good}}, the {{Bad}} and the {{Ugly}}},
+ url = {https://arxiv.org/abs/1707.00600},
+ volume = {abs/1707.00600},
+ year = {2017}
+}
+
+@inproceedings{xie2022,
+ abstract = {Large pretrained multilingual language models (ML-LMs) have shown remarkable capabilities of zero-shot cross-lingual transfer, without direct cross-lingual supervision. While these results are promising, follow-up works found that, within the multilingual embedding spaces, there exists strong language identity information which hinders the expression of linguistic factors shared across languages. For semantic tasks like cross-lingual sentence retrieval, it is desired to remove such language identity signals to fully leverage semantic information. In this work, we provide a novel view of projecting away language-specific factors from a multilingual embedding space. Specifically, we discover that there exists a low-rank subspace that primarily encodes information irrelevant to semantics (e.g., syntactic information). To identify this subspace, we present a simple but effective unsupervised method based on singular value decomposition with multiple monolingual corpora as input. Once the subspace is found, we can directly project the original embeddings into the null space to boost language agnosticism without finetuning. We systematically evaluate our method on various tasks including the challenging language-agnostic QA retrieval task. Empirical results show that applying our method consistently leads to improvements over commonly used ML-LMs.},
+ author = {Xie, Zhihui and Zhao, Handong and Yu, Tong and Li, Shuai},
+ booktitle = {Proceedings of the 2022 {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing}}},
+ date = {2022-12},
+ eventtitle = {{EMNLP 2022}},
+ location = {{Abu Dhabi, United Arab Emirates}},
+ pages = {5617--5633},
+ publisher = {{Association for Computational Linguistics}},
+ title = {Discovering {{Low-rank Subspaces}} for {{Language-agnostic Multilingual Representations}}},
+ url = {https://aclanthology.org/2022.emnlp-main.379},
+ urldate = {2023-04-13}
+}
+
+@inproceedings{xing2015,
+ address = {Denver, Colorado},
+ author = {Xing, Chao  and
+Wang, Dong  and
+Liu, Chao  and
+Lin, Yiye},
+ booktitle = {Proceedings of the 2015 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies},
+ doi = {10.3115/v1/N15-1104},
+ pages = {1006--1011},
+ publisher = {Association for Computational Linguistics},
+ title = {Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation},
+ url = {https://aclanthology.org/N15-1104},
+ year = {2015}
+}
+
+@article{zhai2021,
+ author = {Zhai, Xiaohua and Wang, Xiao and Mustafa, Basil and Steiner, Andreas and Keysers, Daniel and Kolesnikov, Alexander and Beyer, Lucas},
+ journal = {ArXiv preprint},
+ title = {{{LiT}}: {{Zero-Shot Transfer}} with {{Locked-image}} Text {{Tuning}}},
+ url = {https://arxiv.org/abs/2111.07991},
+ volume = {abs/2111.07991},
+ year = {2021}
+}
+
+@inproceedings{xing-etal-2015-normalized,
+    title = "Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation",
+    author = "Xing, Chao  and
+      Wang, Dong  and
+      Liu, Chao  and
+      Lin, Yiye",
+    booktitle = "Proceedings of the 2015 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = may # "{--}" # jun,
+    year = "2015",
+    address = "Denver, Colorado",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N15-1104",
+    doi = "10.3115/v1/N15-1104",
+    pages = "1006--1011",
+}
+
+
+@misc{Lightning,
+  author  = {Falcon, William and {The PyTorch Lightning team}},
+  doi     = {10.5281/zenodo.3828935},
+  license = {Apache-2.0},
+  title   = {{PyTorch Lightning}},
+  url     = {https://github.com/Lightning-AI/lightning},
+  version = {1.4},
+  year    = {2019}
+}
+
+@misc{wandb,
+  author = {Biewald, Lukas},
+  note   = {Software available from wandb.com},
+  title  = {Experiment Tracking with Weights and Biases},
+  url    = {https://www.wandb.com/},
+  year   = {2020}
+}
+
+@misc{nn-template,
+  author = {GrokAI},
+  note   = {Software available from https://github.com/grok-ai/},
+  title  = {nn-template bootstraps PyTorch projects by advocating reproducibility \& best practices in deep learning},
+  url    = {https://github.com/grok-ai/nn-template},
+  year   = {2021}
+}
+
+@inproceedings{wolf-etal-2020-transformers,
+  address   = {Online},
+  author    = {Wolf, Thomas  and
+               Debut, Lysandre  and
+               Sanh, Victor  and
+               Chaumond, Julien  and
+               Delangue, Clement  and
+               Moi, Anthony  and
+               Cistac, Pierric  and
+               Rault, Tim  and
+               Louf, Remi  and
+               Funtowicz, Morgan  and
+               Davison, Joe  and
+               Shleifer, Sam  and
+               von Platen, Patrick  and
+               Ma, Clara  and
+               Jernite, Yacine  and
+               Plu, Julien  and
+               Xu, Canwen  and
+               Le Scao, Teven  and
+               Gugger, Sylvain  and
+               Drame, Mariama  and
+               Lhoest, Quentin  and
+               Rush, Alexander},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations},
+  doi       = {10.18653/v1/2020.emnlp-demos.6},
+  pages     = {38--45},
+  publisher = {Association for Computational Linguistics},
+  title     = {Transformers: State-of-the-Art Natural Language Processing},
+  url       = {https://aclanthology.org/2020.emnlp-demos.6},
+  year      = {2020}
+}
+
+@inproceedings{lhoest-etal-2021-datasets,
+  address   = {Online and Punta Cana, Dominican Republic},
+  author    = {Lhoest, Quentin  and
+               Villanova del Moral, Albert  and
+               Jernite, Yacine  and
+               Thakur, Abhishek  and
+               von Platen, Patrick  and
+               Patil, Suraj  and
+               Chaumond, Julien  and
+               Drame, Mariama  and
+               Plu, Julien  and
+               Tunstall, Lewis  and
+               Davison, Joe  and
+               {\v{S}}a{\v{s}}ko, Mario  and
+               Chhablani, Gunjan  and
+               Malik, Bhavitvya  and
+               Brandeis, Simon  and
+               Le Scao, Teven  and
+               Sanh, Victor  and
+               Xu, Canwen  and
+               Patry, Nicolas  and
+               McMillan-Major, Angelina  and
+               Schmid, Philipp  and
+               Gugger, Sylvain  and
+               Delangue, Cl{\'e}ment  and
+               Matussi{\`e}re, Th{\'e}o  and
+               Debut, Lysandre  and
+               Bekman, Stas  and
+               Cistac, Pierric  and
+               Goehringer, Thibault  and
+               Mustar, Victor  and
+               Lagunas, Fran{\c{c}}ois  and
+               Rush, Alexander  and
+               Wolf, Thomas},
+  booktitle = {Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing: System Demonstrations},
+  doi       = {10.18653/v1/2021.emnlp-demo.21},
+  pages     = {175--184},
+  publisher = {Association for Computational Linguistics},
+  title     = {Datasets: A Community Library for Natural Language Processing},
+  url       = {https://aclanthology.org/2021.emnlp-demo.21},
+  year      = {2021}
+}
+
+@article{scikit,
+ title={Scikit-learn: Machine Learning in {P}ython},
+ author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+ journal={Journal of Machine Learning Research},
+ volume={12},
+ pages={2825--2830},
+ year={2011}
+}
+
+@inproceedings{Williams_etal_2021_shapes,
+     author = {Alex H. Williams and Erin Kunz and Simon Kornblith and Scott W. Linderman},
+     booktitle = {Advances in Neural Information Processing Systems},
+     title = {Generalized Shape Metrics on Neural Representations},
+     volume = {34},
+     year = {2021},
+}
+
+
+@inproceedings{li-roth-2002-learning,
+    title = "Learning Question Classifiers",
+    author = "Li, Xin  and
+      Roth, Dan",
+    booktitle = "{COLING} 2002: The 19th International Conference on Computational Linguistics",
+    year = "2002",
+    url = "https://www.aclweb.org/anthology/C02-1150",
+}
+@inproceedings{hovy-etal-2001-toward,
+    title = "Toward Semantics-Based Answer Pinpointing",
+    author = "Hovy, Eduard  and
+      Gerber, Laurie  and
+      Hermjakob, Ulf  and
+      Lin, Chin-Yew  and
+      Ravichandran, Deepak",
+    booktitle = "Proceedings of the First International Conference on Human Language Technology Research",
+    year = "2001",
+    url = "https://www.aclweb.org/anthology/H01-1069",
+}
+
+
+@inproceedings{Zhang2015CharacterlevelCN,
+  title={Character-level Convolutional Networks for Text Classification},
+  author={Xiang Zhang and Junbo Jake Zhao and Yann LeCun},
+  booktitle={NIPS},
+  year={2015}
+}
+
+@InProceedings{maas-EtAl:2011:ACL-HLT2011,
+  author    = {Maas, Andrew L.  and  Daly, Raymond E.  and  Pham, Peter T.  and  Huang, Dan  and  Ng, Andrew Y.  and  Potts, Christopher},
+  title     = {Learning Word Vectors for Sentiment Analysis},
+  booktitle = {Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {June},
+  year      = {2011},
+  address   = {Portland, Oregon, USA},
+  publisher = {Association for Computational Linguistics},
+  pages     = {142--150},
+  url       = {http://www.aclweb.org/anthology/P11-1015}
+}
+
+@article{oyama2023norm,
+  title={Norm of word embedding encodes information gain},
+  author={Momose Oyama and Sho Yokoi and Hidetoshi Shimodaira},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2212.09663},
+  url={https://api.semanticscholar.org/CorpusID:254853643}
+}
+
+@article{cannistraci2023bricks,
+      title={From Bricks to Bridges: Product of Invariances to Enhance Latent Space Communication}, 
+      author={Irene Cannistraci and Luca Moschella and Marco Fumero and Valentino Maiorca and Emanuele Rodolà},
+  year      = {2023},
+  url       = {https://arxiv.org/abs/2310.01211},
+      eprint={2310.01211},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{
+    lahner2023on,
+    title={On the Direct Alignment of Latent Spaces},
+    author={Zorah L{\"a}hner and Michael Moeller},
+    booktitle={UniReps:  the First Workshop on Unifying Representations in Neural Models},
+    year={2023},
+    url={https://openreview.net/forum?id=nro8tEfIfw}
+}

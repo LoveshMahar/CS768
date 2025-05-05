@@ -1,0 +1,799 @@
+@STRING{lncs = {Lecture Notes in Computer Science (LNCS)}}
+@STRING{lnai = {Lecture Notes in Artificial Intelligence (LNAI)}}
+@STRING{proc = {Proceedings of the }}
+@STRING{cryptadv = {Advances in Cryptology - Proceedings of the }}
+@STRING{ijcai = { International Joint Conference on Artificial Intelligence (IJCAI)}}
+@STRING{stoc = { Annual ACM Symposium on Theory of Computing (STOC)}}
+@STRING{focs = { Symposium on Foundations of Computer Science (FOCS)}}
+@STRING{soda = { Annual ACM-SIAM Symposium on Discrete Algorithms (SODA)}}
+@STRING{eurocrypt = { Eurocrypt Conference}}
+@STRING{crypto = { Annual International Cryptology Conference (CRYPTO)}}
+@STRING{asiacrypt = { Asiacrypt Conference}}
+@STRING{aamas = { International Conference on Autonomous Agents and Multi-Agent Systems (AAMAS)}}
+@STRING{aaaiold = { National Conference on Artificial Intelligence (AAAI)}}
+@STRING{aaai = { AAAI Conference on Artificial Intelligence (AAAI)}}
+@STRING{fc = { Annual Conference on Financial Cryptography (FC)}}
+@STRING{fcds = { International Conference on Financial Cryptography and Data Security (FC)}}
+@STRING{pkc = { International Workshop on Practice and Theory in Public Key Cryptography (PKC)}}
+@STRING{ec = { ACM Conference on Economics and Computation (EC)}}
+@STRING{ecold = { ACM Conference on Electronic Commerce (EC)}}
+@STRING{stacs = { International Symposium on Theoretical Aspects of Computer Science (STACS)}}
+@STRING{uai = { Annual Conference on Uncertainty in Artificial Intelligence (UAI)}}
+@STRING{tark = { Conference on Theoretical Aspects of Rationality and Knowledge (TARK)}}
+@STRING{aaim = { International Conference on Algorithmic Aspects in Information and Management (AAIM)}}
+@STRING{agents = { Annual Conference on Autonomous Agents (AGENTS)}}
+@STRING{mpref = { Multidisciplinary Workshop on Advances in Preference Handling (M-PREF)}}
+@STRING{eacl = { Conference of the European Chapter of the Association for Computational Linguistics (EACL)}}
+@STRING{kdd = { International Conference on Knowledge Discovery and Data Mining (KDD)}}
+@STRING{swat = { Scandinavian Workshop on Algorithm Theory (SWAT)}}
+@STRING{mfcs = { International Symposium on Mathematical Foundations of Computer Science (MFCS)}}
+@STRING{comsoc = { International Workshop on Computational Social Choice (COMSOC)}}
+@STRING{colt = { Conference on Computational Learning Theory (COLT)}}
+@STRING{asiaccs = { ACM Symposium on Information, Computer and Communications Security (ASIACCS)}}
+@STRING{eumas = { European Workshop on Multi-Agent Systems (EUMAS)}}
+@STRING{wine = { Conference on Web and Internet Economics (WINE)}}
+@STRING{esa = { Annual European Symposium on Algorithms (ESA)}}
+@STRING{cia = { International Workshop on Cooperative Information Agents (CIA)}}
+@STRING{p2pecon = { Workshop on the Economics of Peer-to-Peer Systems (P2PECON)}}
+@STRING{www = { International World Wide Web Conference (WWW)}}
+@STRING{sagt = { International Symposium on Algorithmic Game Theory (SAGT)}}
+@STRING{isaac = { Annual International Symposium on Algorithms and Computation (ISAAC)}}
+@STRING{icml = { International Conference on Machine Learning (ICML)}}
+@STRING{nips = { Annual Conference on Neural Information Processing Systems (NeurIPS)}}
+@STRING{iclr = { International Conference on Learning Representations (ICLR)}}
+@STRING{nspw = { New Security Paradigms Workshop (NSPW)}}
+@STRING{iat = { IEEE/WIC/ACM International Conference on Intelligent Agent Technology (IAT)}}
+@STRING{atal = { International Workshop on Intelligent Agents (ATAL)}}
+@STRING{uist = { Annual ACM symposium on User interface software and technology (UIST)}}
+@STRING{hcomp = { Human Computation Workshop (HCOMP)}}
+@STRING{nsdi = { USENIX Conference on Networked Systems Design and Implementation (NSDI)}}
+@STRING{osdi = { USENIX Symposium on Operating Systems Design and Implementation (OSDI)}}
+@STRING{sigcomm = { ACM Symposium on Communications Architectures \& Protocols (SIGCOMM)}}
+@STRING{itcs = { Innovations in Theoretical Computer Science Conference (ITCS)}}
+@STRING{adt = { International Conference on Algorithmic Decision Theory (ADT)}}
+@STRING{sofsem = { International Conference on Current Trends in Theory and Practice of Computer Science (SOFSEM)}}
+@STRING{ecai = { European Conference on Artificial Intelligence (ECAI)}}
+@STRING{spaa = { ACM Symposium on Parallelism in Algorithms and Architectures (SPAA)}}
+@STRING{icalp = { International Colloquium on Automata, Languages and Programming (ICALP)}}
+@STRING{mcs = { International Workshop on Multiple Classifier Systems (MCS)}}
+@STRING{cig = { IEEE Conference on Computational Intelligence and Games (CIG)}}
+@STRING{ipco = { Conference on Integer Programming and Combinatorial Optimization (IPCO)}}
+@STRING{sea = { International Symposium on Experimental Algorithms (SEA)}}
+@STRING{random = { International Workshop on Randomization and Computation (RANDOM)}}
+@STRING{approx = { International Workshop on Approximation Algorithms for Combinatorial Optimization Problems (APPROX)}}
+@STRING{gamesec = { Conference on Decision and Game Theory for Security (GameSec)}}
+@STRING{cse = { International Conference on Computational Science and Engineering (CSE)}}
+@STRING{gtdt = { Workshop on Game Theoretic and Decision Theoretic Agents (GTDT)}}
+@STRING{dalt = { International Workshop on Declarative Agent Languages and Technologies (DALT)}}
+@STRING{allerton = { Annual Allerton Conference on Communication, Control, and Computing (Allerton)}}
+@STRING{ecml = { European Conference on Machine Learning (ECML)}}
+@STRING{ala = { Adaptive Learning Agents Workshop (ALA)}}
+@STRING{podc = { ACM Symposium on Principles of Distributed Computing (PODC)}}
+@STRING{optmas = { International Workshop on Optimization in Multi-Agent Systems (OptMas)}}
+@STRING{amec = { International Workshop on Agent-Mediated Electronic Commerce (AMEC)}}
+@STRING{latin = { Latin American Theoretical Informatics Symposium (LATIN)}}
+@STRING{socg = { Symposium on Computational geometry (SoCG)}}
+@STRING{ipdps = { International Parallel and Distributed Processing Symposium (IPDPS)}}
+@STRING{waoa = { Workshop on Approximation and Online Algorithms (WAOA)}}
+@STRING{forc = { Symposium on the foundations of responsible computing (FORC)}}
+@STRING{facct = { Conference on Fairness, Accountability and Transparency (FAccT)}}
+@STRING{ecmlpkdd = {European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD)}}
+@STRING{icdmw = {International Conference on Data Mining Workshops (ICDMW)}}
+@STRING{aistats = {International Conference on Artificial Intelligence and Statistics (AISTATS)}}
+@STRING{ssdbm = {International Conference on Scientific and Statistical Database Management (SSDBM)}}
+
+
+@STRING{jacm = {Journal of the ACM (JACM)}}
+@STRING{sicomp = { SIAM Journal on Computing (SICOMP)}}
+@STRING{sidma = {SIAM Journal on Discrete Mathematics (SIDMA)}}
+
+
+
+@STRING{springer = {Springer-Verlag}}
+@STRING{acm = {ACM Press}}
+@STRING{ieee = {IEEE Press}}
+
+@STRING{ip = {In Preparation}}
+@STRING{ur = {Preliminary Draft}}
+@string{ta = {To Appear}}
+
+
+
+% citations for fairness
+@article{FairLoanExample1,
+    author = {Mukerjee, Amitabha and Biswas, Rita and Deb, Kalyanmoy and Mathur, Amrit P.},
+    title = {Multi–objective Evolutionary Algorithms for the Risk–return Trade–off in Bank Loan Management},
+    journal = {International Transactions in Operational Research},
+    volume = {9},
+    number = {5},
+    pages = {583-597},
+    year = {2002}
+}
+
+@article{FairLoanExample2,
+title = {Consumer credit-risk models via machine-learning algorithms},
+journal = {Journal of Banking \& Finance},
+volume = {34},
+number = {11},
+pages = {2767-2787},
+year = {2010},
+url = {https://www.sciencedirect.com/science/article/pii/S0378426610002372},
+author = {Amir E. Khandani and Adlar J. Kim and Andrew W. Lo}
+}
+
+@article{FairLoanExample3,
+title = {Evaluating consumer loans using neural networks},
+author = {Malhotra, Rashmi and Malhotra, D. K.},
+year = {2003},
+journal = {Omega},
+volume = {31},
+number = {2},
+pages = {83-96},
+url = {https://EconPapers.repec.org/RePEc:eee:jomega:v:31:y:2003:i:2:p:83-96}
+}
+
+@article{FairHiringExample1,
+  title={Help wanted: an examination of hiring algorithms},
+  author={Bogen, Miranda and Rieke, Aaron},
+  journal={Equity, and Bias, Upturn (December 2018)},
+  year={2018}
+}
+
+@inproceedings{FairHiringExample2,
+author = {Cohen, Lee and Lipton, Zachary C. and Mansour, Yishay},
+title = {Efficient Candidate Screening Under Multiple
+Tests and Implications for Fairness},
+year = {2019},
+booktitle = proc # {1st} #forc,
+pages = {1–20},
+}
+
+
+@article{FairJusticeExample1,
+ author = {David B. Mustard},
+ journal = {The Review of Economics and Statistics},
+ number = {1},
+ pages = {205--211},
+ title = {Reexamining Criminal Behavior: The Importance of Omitted Variable Bias},
+ volume = {85},
+ year = {2003}
+}
+
+@article{FairJusticeExample2,
+  author    = {Angwin, Julia and Larson, Jeff and Mattu, Surya and Kirchner, Lauren},
+  title     = {Machine Bias: There's Software Used Across the Country to Predict Future Criminals. And It's Biased Against Blacks},
+  journal   = {ProPublica},
+  year      = {2016},
+  month     = {May 23},
+  url       = {https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing}
+}
+
+@article{FairJusticeExample3,
+    author = {Julia Dressel  and Hany Farid },
+    title = {The accuracy, fairness, and limits of predicting recidivism},
+    journal = {Science Advances},
+    volume = {4},
+    number = {1},
+    year = {2018}
+}
+
+@article{FairJusticeExample4,
+  author    = {Chouldechova, Alexandra},
+  title     = {Fair Prediction with Disparate Impact: A Study of Bias in Recidivism Prediction Instruments},
+  journal   = {Big Data},
+  year      = {2017},
+  volume    = {5},
+  number    = {2},
+  pages     = {153--163},
+  month     = {June}
+}
+
+
+@misc{COMPASSoftware,
+  author        = {{COMPAS (software)}},
+  howpublished = {\url{https://en.wikipedia.org/wiki/COMPAS_(software)}},
+    year = {}
+}
+
+
+@article{Faibeautycontestexample,
+  author    = {Hern, Alex},
+  title     = {Artificial Intelligence Beauty Contest Doesn't Like Black People},
+  journal   = {The Guardian},
+  year      = {2016},
+  month     = {September 8},
+  url       = {https://www.theguardian.com/technology/2016/sep/08/artificial-intelligence-beauty-contest-doesnt-like-black-people}
+}
+
+@article{Fairblinkingexample,
+  author    = {Grossman, Lev},
+  title     = {Are Face-Detection Cameras Racist?},
+  journal   = {Time},
+  year      = {2010}
+}
+
+@article{Fairrecommendationexample,
+  author    = {Lambrecht, Anja and Tucker, Catherine},
+  title     = {Algorithmic Bias? An Empirical Study of Apparent Gender-Based Discrimination in the Display of STEM Career Ads},
+  journal   = {Management Science},
+  year      = {2019},
+  volume    = {65},
+  number    = {7},
+  pages     = {2966--2981}
+}
+
+@article{choo2024short,
+  title={A short note about the learning-augmented secretary problem},
+  author={Choo, Davin and Ling, Chun Kai},
+  journal={arXiv preprint arXiv:2410.06583},
+  year={2024}
+}
+
+@inproceedings{Fairhealthexample,
+  author    = {Chouldechova, Alexandra and Benavides-Prado, Diana and Fialko, Oleksandr and Vaithianathan, Rhema},
+  title     = {A Case Study of Algorithm-Assisted Decision Making in Child Maltreatment Hotline Screening Decisions},
+  booktitle = proc # {1st} #facct,
+  pages     = {134--148},
+  year      = {2018}
+}
+
+@article{Fairrobotsexample,
+  author    = {Howard, A and Borenstein, J},
+  title     = {The Ugly Truth About Ourselves and Our Robot Creations: The Problem of Bias and Social Inequity},
+  journal   = {Science and Engineering Ethics},
+  year      = {2018},
+  volume    = {24},
+  number    = {5},
+  pages     = {1521--1536},
+  month     = {October},
+}
+
+@inproceedings{Fairnessnotionexample1,
+author = {Luong, Binh Thanh and Ruggieri, Salvatore and Turini, Franco},
+title = {k-NN as an implementation of situation testing for discrimination discovery and prevention},
+year = {2011},
+booktitle = proc # {17th} #kdd,
+pages = {502–510},
+}
+
+@inproceedings{Fairnessnotionexample2,
+  author    = {Kamishima, Toshihiro and Akaho, Shotaro and Asoh, Hideki and Sakuma, Jun},
+  title     = {Fairness-Aware Classifier with Prejudice Remover Regularizer},
+  booktitle = proc # ecmlpkdd,
+  year      = {2012},
+  editor    = {Flach, Peter A. and De Bie, Tijl and Cristianini, Nello},
+  volume    = {7524}
+}
+
+@inproceedings{Fairnessnotionexample3,
+    author = {Feldman, Michael and Friedler, Sorelle A. and Moeller, John and Scheidegger, Carlos and Venkatasubramanian, Suresh},
+    title = {Certifying and Removing Disparate Impact},
+    year = {2015},
+    booktitle = proc # {21th} #kdd,
+    pages = {259–268}
+}
+
+@inproceedings{Fairnessnotionexample4,
+    author = {Dwork, Cynthia and Hardt, Moritz and Pitassi, Toniann and Reingold, Omer and Zemel, Richard},
+    title = {Fairness through awareness},
+    year = {2012},
+    booktitle = proc # {3rd} # itcs,
+    pages = {214–226},
+}
+
+@inproceedings{Fairnessnotionexample5,
+    author = {Corbett-Davies, Sam and Pierson, Emma and Feller, Avi and Goel, Sharad and Huq, Aziz},
+    title = {Algorithmic Decision Making and the Cost of Fairness},
+    year = {2017},
+    booktitle = proc # {23rd} # kdd,
+    pages = {797–806}
+}
+
+@article{Fairnessnotionexample6,
+    author = {Kleinberg, Jon and Lakkaraju, Himabindu and Leskovec, Jure and Ludwig, Jens and Mullainathan, Sendhil},
+    title = "{Human Decisions and Machine Predictions}",
+    journal = {The Quarterly Journal of Economics},
+    volume = {133},
+    number = {1},
+    pages = {237-293},
+    year = {2017}
+}
+
+@inproceedings{Fairnessnotionexample7,
+  title={Inherent Trade-Offs in the Fair Determination of Risk Scores},
+  author={Kleinberg, Jon and Raghavan, Manish},
+  booktitle= proc # {8th} # itcs,
+  year={2017}
+}
+
+
+% some more work on fairness
+@inproceedings{Fairnessmoreworkexample1,
+  author={Kamishima, Toshihiro and Akaho, Shotaro and Sakuma, Jun},
+  booktitle= proc # {11th} # icdmw, 
+  title={Fairness-aware Learning through Regularization Approach}, 
+  year={2011},
+  pages={643-650}}
+
+@inproceedings{Fairnessmoreworkexample2,
+ author = {Joseph, Matthew and Kearns, Michael and Morgenstern, Jamie H and Roth, Aaron},
+ booktitle = proc # {29th} # nips,
+ title = {Fairness in Learning: Classic and Contextual Bandits},
+ year = {2016}
+}
+
+@inproceedings{Fairnessmoreworkexample3,
+  author    = {L. Elisa Celis and Damian Straszak and Nisheeth K. Vishnoi},
+  title     = {Ranking with Fairness Constraints},
+  booktitle = proc # {45th} #icalp,
+  year      = {2018},
+}
+
+
+@InProceedings{Fairnessmoreworkexample4,
+    title = {Matroids, Matchings, and Fairness},
+    author = {Chierichetti, Flavio and Kumar, Ravi and Lattanzi, Silvio and Vassilvtiskii, Sergei},
+    booktitle = proc # {22nd} # aistats,
+    pages = {2212--2220},
+    year = {2019}
+}
+
+@inproceedings{Fairnessmoreworkexample5,
+author = {Yang, Ke and Stoyanovich, Julia},
+title = {Measuring Fairness in Ranked Outputs},
+booktitle = proc # { 29th } # ssdbm,
+year = {2017}
+}
+
+
+
+%classical secretary papers
+@article{gardner,
+  author = {Martin Gardner},
+  title = {Mathematical Games},
+  journal = {Scientific American},
+  volume = {202},
+  number = {3},
+  pages = {172--186},
+  year = {1960}
+}
+
+@article{dynkin,
+  author = {E. B. Dynkin},
+  title = {The Optimum Choice of the Instant for Stopping a Markov Process},
+  journal = {Soviet Mathematics Doklady},
+  volume = {4},
+  pages = {627--629},
+  year = {1963}
+}
+
+@article{lindley,
+  author = {D. V. Lindley},
+  title = {Dynamic Programming and Decision Theory},
+  journal = {Journal of the Royal Statistical Society: Series C (Applied Statistics)},
+  volume = {10},
+  number = {1},
+  pages = {39--51},
+  year = {1961}
+}
+
+@article{gilbertmosteller,
+  author = {John P. Gilbert and Frederick Mosteller},
+  title = {Recognizing the Maximum of a Sequence},
+  journal = {Journal of the American Statistical Association},
+  volume = {61},
+  pages = {35--73},
+  year = {1966}
+}
+
+#multiple choice secretaries
+@inproceedings{kleinberg2005multiple,
+  author = {Robert D. Kleinberg},
+  title = {A Multiple-Choice Secretary Algorithm with Applications to Online Auctions},
+  booktitle = proc # {16th} # soda,
+  pages = {630--631},
+  year = {2005}
+}
+
+@inproceedings{babaioff2007multiple,
+  author = {Moshe Babaioff and Nicole Immorlica and David Kempe and Robert Kleinberg},
+  title = {A Knapsack Secretary Problem with Applications},
+  booktitle = proc # {10th} # approx,
+  pages = {16--28},
+  year = {2007}
+}
+@inproceedings{matroidbabioff,
+author = {Babaioff, Moshe and Immorlica, Nicole and Kleinberg, Robert},
+title = {Matroids, secretary problems, and online mechanisms},
+booktitle = proc # {18th} # soda,
+pages = {434–443},
+year = {2007}
+}
+
+@inproceedings{albers2019new,
+  author = {Susanne Albers and Leon Ladewig},
+  title = {New Results for the k-Secretary Problem},
+  booktitle = proc #{30th} # isaac,
+  pages = {18:1--18:19},
+  year = {2019}
+}
+
+% prophet secretary
+@article{esfandiari2017prophet,
+  author = {Hossein Esfandiari and MohammadTaghi Hajiaghayi and Vahid Liaghat and Morteza Monemizadeh},
+  title = {Prophet Secretary},
+  journal = sidma,
+  volume = {31},
+  number = {3},
+  pages = {1685--1701},
+  year = {2017}
+}
+
+@article{correa2021bposted,
+  author = {Jos{\'e} R. Correa and Patricio Foncea and Ruben Hoeksma and Tim Oosterwijk and Tjark Vredeveld},
+  title = {Posted Price Mechanisms and Optimal Threshold Strategies for Random Arrivals},
+  journal = {Mathematics of Operations Research},
+  volume = {46},
+  number = {4},
+  pages = {1452--1478},
+  year = {2021}
+}
+
+@article{correa2021cprophet,
+  author = {Jos{\'e} R. Correa and Raimundo Saona and Bruno Ziliotto},
+  title = {Prophet Secretary through Blind Strategies},
+  journal = {Mathematical Programming},
+  volume = {190},
+  number = {1},
+  pages = {483--521},
+  year = {2021}
+}
+
+@inproceedings{ehsani2018prophet,
+  author = {Pooya Hatami and Mohsen Ghaffari and Amir Montanari},
+  title = {Prophet Secretary for Combinatorial Auctions and Matroids},
+  booktitle = proc # {29th} # soda,
+  pages = {700--714},
+  year = {2018}
+}
+
+@inproceedings{azar2018prophet,
+  author = {Yossi Azar and Ashish Chiplunkar and Haim Kaplan},
+  title = {Prophet Secretary: Surpassing the $1 - 1/e$ Barrier},
+  booktitle = proc # {19th} # ec,
+  pages = {303--318},
+  year = {2018}
+}
+
+% variants of the secretary
+@article{campbell1981,
+  author = {Gregory Campbell and Stephen M. Samuels},
+  title = {Choosing the Best of the Current Crop},
+  journal = {Advances in Applied Probability},
+  volume = {13},
+  number = {3},
+  pages = {510--532},
+  year = {1981}
+}
+
+@inproceedings{kaplan2020competitive,
+  author = {Haim Kaplan and David Naori and Danny Raz},
+  title = {Competitive Analysis with a Sample and the Secretary Problem},
+  booktitle = proc # {31st} # soda,
+  pages = {2082--2095},
+  year = {2020}
+}
+
+@inproceedings{correa2021asecretary,
+  author = {Jos{\'e} R. Correa and Andr{\'e}s Cristi and Laurent Feuilloley and Tim Oosterwijk and Alexandros Tsigonias-Dimitriadis},
+  title = {The Secretary Problem with Independent Sampling},
+  booktitle = proc # {32nd} # soda,
+  pages = {2047--2058},
+  year = {2021}
+}
+
+@inproceedings{kesselheim2020knapsack,
+  author = {Thomas Kesselheim and Marco Molinaro},
+  title = {Knapsack Secretary with Bursty Adversary},
+  booktitle = proc # {47th} # icalp,
+  pages = {72:1--72:15},
+  year = {2020}
+}
+
+@inproceedings{bradac2020robust,
+  author = {Domagoj Bradac and Anupam Gupta and Sahil Singla and Goran Zuzic},
+  title = {Robust Algorithms for the Secretary Problem},
+  booktitle = proc # {11th} # itcs,
+  pages = {32:1--32:26},
+  year = {2020}
+}
+
+% cardinal vs value secretary problem
+% Theorem 2 in the Correa paper argues what we want
+@inproceedings{CardinalvsValueCorrea,
+author = {Correa, Jos\'{e} and D\"{u}tting, Paul and Fischer, Felix and Schewior, Kevin},
+title = {Prophet Inequalities for I.I.D. Random Variables from an Unknown Distribution},
+year = {2019},
+booktitle = proc # {20th} #ec,
+pages = {3–17},
+}
+
+@inproceedings {CardinalvsValueGravin,
+author = {N. Gravin and E. Sun and Z. Tang},
+booktitle =  proc # {64th} # focs,
+title = {Online Ordinal Problems: Optimality of Comparison-based Algorithms and their Cardinal Complexity},
+year = {2023},
+pages = {1863-1876},
+}
+
+% secretary with predictions papers
+@inproceedings{SecretarieswithAdviceDutting,
+author = {D\"{u}tting, Paul and Lattanzi, Silvio and Paes Leme, Renato and Vassilvitskii, Sergei},
+title = {Secretaries with Advice},
+year = {2021},
+booktitle = proc # {22nd} # ec,
+pages = {409–429}
+}
+
+@inproceedings{SecretarieswithAdviceAntoniadis,
+ author = {Antoniadis, Antonios and Gouleakis, Themis and Kleer, Pieter and Kolev, Pavel},
+ booktitle = proc # {33rd} # nips ,
+ pages = {7933--7944},
+ title = {Secretary and Online Matching Problems with Machine Learned Advice},
+ year = {2020}
+}
+
+@inproceedings{SecretarieswithAdviceYoshida,
+ author = {Fujii, Kaito and Yoshida, Yuichi},
+ booktitle = {Mathematics of Operations Research} ,
+ title = {The Secretary Problem with Predictions},
+ year = {2023}
+}
+
+% individual fairness notion by arsenis and kleinberg
+@inproceedings{individualfairnessarseniskleinberg,
+author = {Arsenis, Makis and Kleinberg, Robert},
+title = {Individual Fairness in Prophet Inequalities},
+year = {2022},
+booktitle = proc # {23rd} # ec,
+pages = {245}
+}
+
+
+
+
+
+% learning-augmented classical papers
+% beyond worst-case analysis
+@inbook{GuptaSingla2021ROmodels, 
+    place={Cambridge},
+    title={Random-Order Models},
+    booktitle={Beyond the Worst-Case Analysis of Algorithms},
+    publisher={Cambridge University Press}, 
+    author={Gupta, Anupam and Singla, Sahil},
+    year={2021},
+    pages={234–258}
+}
+
+
+% la-algorithms
+% survey website
+@misc{surveywebsiteforlaalgorithms,
+  title={Algorithms with Predictions},
+  author={Lindermayr, Alexander and Megow, Nicole},
+  year={},
+  howpublished={\url{https://algorithms-with-predictions.github.io/}}
+}
+
+
+% schedulling
+@inproceedings{LAS,
+    author = {Bamas, Etienne and Maggiori, Andreas and Rohwedder, Lars and Svensson, Ola},
+    booktitle = proc # {34th} # nips,
+    pages = {15350-15359},
+    title = {Learning Augmented Energy Minimization via Speed Scaling},
+    year = {2020}
+}
+@inproceedings{mitzenmacher2020scheduling,
+  title={Scheduling with Predictions and the Price of Misprediction},
+  author={Mitzenmacher, Michael},
+  booktitle={11th Innovations in Theoretical Computer Science Conference (ITCS 2020)},
+  pages={14:1--14:18},
+  year={2020}
+}
+@inproceedings{DBLP:conf/soda/LattanziLMV20,
+    author    = {Silvio Lattanzi and
+                Thomas Lavastida and
+                Benjamin Moseley and
+                Sergei Vassilvitskii},
+    title     = {Online Scheduling via Learned Weights},
+    booktitle = proc # {31st} # soda,
+    pages     = {1859-1877},
+    year      = {2020}
+}
+
+
+%sublinear algorithms
+@inproceedings{IndykFrequencyestimation,
+  author    = {Chen{-}Yu Hsu and
+               Piotr Indyk and
+               Dina Katabi and
+               Ali Vakilian},
+  title     = {Learning-Based Frequency Estimation Algorithms},
+  booktitle = proc # {7th} # iclr,
+  year      = {2019}
+}
+
+
+% caching  - online metric algorithms
+@inproceedings{caching_SODA,
+    author = {Rohatgi, Dhruv},
+    title = {Near-Optimal Bounds for Online Caching with Machine Learned Advice},
+    year = {2020},
+    booktitle = proc # {31st} # soda,
+    pages = {1834–1845}
+}
+
+@InProceedings{antoniadis2020online,
+    title = {Online metric algorithms with untrusted predictions},
+    author = {Antoniadis, Antonios and Coester, Christian and Elias, Marek and Polak, Adam and Simon, Bertrand},
+    booktitle = proc # {37th} # icml,
+    pages = {345-355},
+    year = {2020}
+}
+
+@inproceedings{DBLP:conf/icml/LykourisV18,
+    author    = {Thodoris Lykouris and
+               Sergei Vassilvitskii},
+    title     = {Competitive Caching with Machine Learned Advice},
+    booktitle = proc # {35th} # icml,
+    pages     = {3302-3311},
+    year      = {2018}
+}
+
+%%%%%%%%%%%%%%
+
+% clustering
+@InProceedings{LAclusteringwithNN,
+author = {Dong, Yihe and Indyk, Piotr and Razenshteyn, Ilya and Wagner, Tal},
+title = {Learning Space Partitions for Nearest Neighbor Search},
+booktitle = proc # {8th} # icml,
+year = {2020}
+}
+
+@inproceedings{BloomFilters,
+    title = {A Model for Learned Bloom Filters and Optimizing by Sandwiching},
+    author = {Mitzenmacher, Michael},
+    booktitle = proc # {31st} # nips,
+    pages = {464-473},
+    year = {2018}
+}
+
+@inproceedings{learnedduals,
+    title={Faster Matchings via Learned Duals},
+    author={Michael Dinitz and Sungjin Im and Thomas Lavastida and Benjamin Moseley and Sergei Vassilvitskii},
+    booktitle = proc # {35th} # nips,
+    year={2021}
+}
+
+@article{SaberiLAStart,
+    author = {Mahdian, Mohammad and Nazerzadeh, Hamid and Saberi, Amin},
+    title = {Online Optimization with Uncertain Information},
+    year = {2012},
+    volume = {8},
+    number = {1},
+    journal = {ACM Transactions on Algorithms}
+}
+
+@inproceedings{DBLP:conf/nips/MedinaV17,
+    author    = {Andres Mu{\~{n}}oz Medina and
+           Sergei Vassilvitskii},
+    title     = {Revenue Optimization with Approximate Bid Predictions},
+    booktitle = proc # {30th} # nips,
+    pages     = {1858-1866},
+    year      = {2017}
+}
+
+
+@inproceedings{DBLP:conf/icml/GollapudiP19,
+    author    = {Sreenivas Gollapudi and
+               Debmalya Panigrahi},
+    title     = {Online Algorithms for Rent-Or-Buy with Expert Advice},
+    booktitle = proc # {36th} # icml,
+    pages     = {2319-2327},
+    year      = {2019},
+}
+
+@inproceedings{WLW20_skirental,
+    author = {{Wang}, Shufan and {Li}, Jian and {Wang}, Shiqiang},
+    title = "{Online Algorithms for Multi-shop Ski Rental with Machine Learned Advice}",
+    booktitle = proc # {34th} # nips,
+    year = {2020}
+}
+
+@inproceedings{PDLA,
+     author = {Bamas, Etienne and Maggiori, Andreas and Svensson, Ola},
+     booktitle = proc # {34th} # nips,
+     pages = {20083-20094},
+     title = {The Primal-Dual method for Learning Augmented Algorithms},
+     year = {2020}
+}
+
+@inproceedings{skirentalwithML,
+    author    = {Manish Purohit and
+               Zoya Svitkina and
+               Ravi Kumar},
+    title     = {Improving Online Algorithms via {ML} Predictions},
+    booktitle = proc # {31st} # nips,
+    pages     = {9684-9693},
+    year      = {2018}
+}
+
+@inproceedings{balseirofairnessandbeyond,
+  title = 	 {Regularized Online Allocation Problems: Fairness and Beyond},
+  author =       {Balseiro, Santiago and Lu, Haihao and Mirrokni, Vahab},
+  booktitle = 	proc # {38th} # icml,
+  pages = 	 {630--639},
+  year = 	 {2021}
+}
+
+@article{thepriceoffairness,
+title = {The Price of Fairness},
+author = {Bertsimas, Dimitris and Farias, Vivek F. and Trichakis, Nikolaos},
+year = {2011},
+journal = {Operations Research},
+volume = {59},
+number = {1},
+pages = {17-31}
+}
+
+
+
+@article{efficiencyfairnesstradeoffs,
+title = { On the Efficiency-Fairness Trade-off},
+author = {Bertsimas, Dimitris and Farias, Vivek F. and Trichakis, Nikolaos},
+year = {2012},
+journal = {Management Science},
+volume = {12},
+pages = {2234-2250}
+}
+
+@inproceedings{Groupfairnessinmatching,
+author = {Ma, Will and Xu, Pan and Xu, Yifan},
+title = {Group-level Fairness Maximization in Online Bipartite Matching},
+year = {2022},
+booktitle = {Proceedings of the 21st International Conference on Autonomous Agents and Multiagent Systems},
+pages = {1687–1689},
+}
+
+@article{PriceDiscriminationwithFairnessConstraints,
+title = {Price Discrimination with Fairness Constraints},
+author = {Cohen, Maxime C. and Elmachtoub, Adam N. and Lei, Xiao},
+year = {2022},
+journal = {Management Science},
+volume = {68},
+number = {12},
+pages = {8536-8552},
+}
+
+@article{ManshadiNiazadehRodilitz2023,
+title = {Fair Dynamic Rationing},
+author = {Manshadi, Vahideh and Niazadeh, Rad and Rodilitz, Scott},
+year = {2023},
+journal = {Management Science},
+volume = {69},
+number = {11},
+pages = {6818-6836},
+}
+
+
+% poset secretary
+@article{posetsecretary,
+    author = {Salem, Jad and Gupta, Swati},
+    title = {Secretary Problems with Biased Evaluations Using Partial Ordinal Information},
+    journal = {Management Science},
+    year = {2023},
+    volume = {70},
+    number = {8},
+    pages = {5337-5366}
+}

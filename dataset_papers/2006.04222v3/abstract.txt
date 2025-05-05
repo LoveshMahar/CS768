@@ -1,0 +1,17 @@
+Multi-agent settings in the real world often involve tasks with varying types
+and quantities of agents and non-agent entities; however, common patterns of
+behavior often emerge among these agents/entities. Our method aims to leverage
+these commonalities by asking the question: ``What is the expected utility of
+each agent when only considering a randomly selected sub-group of its observed
+entities?'' By posing this counterfactual question, we can recognize
+state-action trajectories within sub-groups of entities that we may have
+encountered in another task and use what we learned in that task to inform our
+prediction in the current one. We then reconstruct a prediction of the full
+returns as a combination of factors considering these disjoint groups of
+entities and train this ``randomly factorized" value function as an auxiliary
+objective for value-based multi-agent reinforcement learning. By doing so, our
+model can recognize and leverage similarities across tasks to improve learning
+efficiency in a multi-task setting. Our approach, Randomized Entity-wise
+Factorization for Imagined Learning (REFIL), outperforms all strong baselines
+by a significant margin in challenging multi-task StarCraft micromanagement
+settings.

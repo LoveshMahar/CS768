@@ -1,0 +1,833 @@
+@article{achab2017uncovering,
+abstract = {We design a new nonparametric method that allows one to estimate the matrix of integrated kernels of a multivariate Hawkes process. This matrix not only encodes the mutual influences of each node of the process, but also disentangles the causality relationships between them. Our approach is the first that leads to an estimation of this matrix without any parametric modeling and estimation of the kernels themselves. As a consequence, it can give an estimation of causality relationships between nodes (or users), based on their activity timestamps (on a social network for instance), without knowing or estimating the shape of the activities lifetime. For that purpose, we introduce a moment matching method that fits the second-order and the third-order integrated cumulants of the process. A theoretical analysis allows us to prove that this new estimation technique is consistent. Moreover, we show, on numerical experiments, that our approach is indeed very robust with respect to the shape of the kernels and gives appealing results on the MemeTracker database and on financial order book data.},
+annote = {From Duplicate 1 (Uncovering Causality from Multivariate Hawkes Integrated Cumulants - )
+
+NPHC
+
+"Our approach is the first that leads to an estimation of this matrix without any parametric modeling and estimation of the kernels themselves."
+
+The key idea is that, instead of estimating the kenel matrix, it focuses on the direct estimation of the intergrals of those kernels.
+
+Maybe useful for ADR, as the goal of ADR discovery is not too much on estmating the matrix of internel but the causal relationship.
+
+However, the Hawkes assumption could be problematic.
+
+From Duplicate 3 (Uncovering Causality from Multivariate Hawkes Integrated Cumulants - Achab, Massil; Bacry, Emmanuel; Ga$\backslash$"$\backslash$iffas, St{\'{e}}phane; Mastromatteo, Iacopo; Muzy, Jean-Fran{\c{c}}ois)
+
+From Duplicate 2 (Uncovering Causality from Multivariate Hawkes Integrated Cumulants - )
+
+NPHC
+
+"Our approach is the first that leads to an estimation of this matrix without any parametric modeling and estimation of the kernels themselves."
+
+The key idea is that, instead of estimating the kenel matrix, it focuses on the direct estimation of the intergrals of those kernels.
+
+Maybe useful for ADR, as the goal of ADR discovery is not too much on estmating the matrix of internel but the causal relationship.
+
+However, the Hawkes assumption could be problematic.},
+archivePrefix = {arXiv},
+arxivId = {1607.06333},
+author = {Achab, Massil and Bacry, Emmanuel and Ga{\"{i}}ffas, St{\'{e}}phane and Mastromatteo, Iacopo and Muzy, Jean-Fran{\c{c}}ois},
+eprint = {1607.06333},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/The Journal of Machine Learning Research/Achab et al. - 2018 - Uncovering Causality from Multivariate Hawkes Integrated Cumulants.pdf:pdf},
+issn = {1938-7228},
+journal = {The Journal of Machine Learning Research},
+keywords = {Causality Inference,Cumulants,Generalized Method of Moments,Hawkes Process},
+mendeley-groups = {Point Process,ICML-20,Dissertation},
+number = {1},
+pages = {6998--7025},
+publisher = {JMLR. org},
+title = {{Uncovering Causality from Multivariate Hawkes Integrated Cumulants}},
+url = {http://jmlr.org/papers/v18/17-284.html.},
+volume = {18},
+year = {2018}
+}
+@inproceedings{Ancona2017,
+abstract = {Understanding the flow of information in Deep Neural Networks (DNNs) is a challenging problem that has gain increasing attention over the last few years. While several methods have been proposed to explain network predictions, there have been only a few attempts to compare them from a theoretical perspective. What is more, no exhaustive empirical comparison has been performed in the past. In this work, we analyze four gradient-based attribution methods and formally prove conditions of equivalence and approximation between them. By reformulating two of these methods, we construct a unified framework which enables a direct comparison, as well as an easier implementation. Finally, we propose a novel evaluation metric, called Sensitivity-n and test the gradient-based attribution methods alongside with a simple perturbation-based attribution method on several datasets in the domains of image and text classification, using various network architectures.},
+archivePrefix = {arXiv},
+arxivId = {1711.06104},
+author = {Ancona, Marco and Ceolini, Enea and {\"{O}}ztireli, Cengiz and Gross, Markus},
+booktitle = {International Conference on Learning Representations},
+doi = {10.3929/ethz-b-000237705},
+eprint = {1711.06104},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/International Conference on Learning Representations/Ancona et al. - 2018 - Towards better understanding of gradient-based attribution methods for Deep Neural Networks.pdf:pdf},
+keywords = {Interpretability},
+mendeley-groups = {0. Inbox,ICML-20,Dissertation},
+mendeley-tags = {Interpretability},
+pages = {1--16},
+title = {{Towards better understanding of gradient-based attribution methods for Deep Neural Networks}},
+url = {http://arxiv.org/abs/1711.06104},
+year = {2018}
+}
+@article{Arnold2007,
+abstract = {The need for mining , beyond mere statistical correla- tions, for real world problems has been recognized widely. Many of these applications naturally involve data, which raises the challenge of how best to leverage the information for},
+author = {Arnold, Andrew and Liu, Yan and Abe, Naoki},
+doi = {10.1145/1281192.1281203},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining/Arnold, Liu, Abe - 2007 - Temporal causal modeling with graphical granger methods.pdf:pdf},
+isbn = {1595936092},
+journal = {Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+keywords = {Causal modeling,Granger Causality,Graphical models,Time series data},
+mendeley-groups = {ICML-20,Dissertation},
+mendeley-tags = {Granger Causality},
+pages = {66--75},
+title = {{Temporal causal modeling with graphical granger methods}},
+year = {2007}
+}
+@article{Bach2015,
+abstract = {Understanding and interpreting classification decisions of automated image classification systems is of high value in many applications, as it allows to verify the reasoning of the system and provides additional information to the human expert. Although machine learning methods are solving very successfully a plethora of tasks, they have in most cases the disadvantage of acting as a black box, not providing any information about what made them arrive at a particular decision. This work proposes a general solution to the problem of understanding classification decisions by pixel-wise decomposition of nonlinear classifiers. We introduce a methodology that allows to visualize the contributions of single pixels to predictions for kernel-based classifiers over Bag of Words features and for multilayered neural networks. These pixel contributions can be visualized as heatmaps and are provided to a human expert who can intuitively not only verify the validity of the classification decision, but also focus further analysis on regions of potential interest.We evaluate our method for classifiers trained on PASCAL VOC 2009 images, synthetic image data containing geometric shapes, the MNIST handwritten digits data set and for the pre-trained ImageNet model available as part of the Caffe open source package.},
+author = {Bach, Sebastian and Binder, Alexander and Montavon, Gr{\'{e}}goire and Klauschen, Frederick and M{\"{u}}ller, Klaus Robert and Samek, Wojciech},
+doi = {10.1371/journal.pone.0130140},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/PLoS ONE/Bach et al. - 2015 - On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation.PDF:PDF},
+issn = {19326203},
+journal = {PLoS ONE},
+mendeley-groups = {Dissertation,ICML-20},
+number = {7},
+pages = {1--46},
+title = {{On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation}},
+volume = {10},
+year = {2015}
+}
+@article{bacry2017tick,
+author = {Bacry, Emmanuel and Bompaire, Martin and Ga{\"{i}}ffas, St{\'{e}}phane and Poulsen, Soren},
+journal = {arXiv preprint arXiv:1707.03003},
+mendeley-groups = {ICML-20,Dissertation},
+title = {{Tick: a Python library for statistical learning, with a particular emphasis on time-dependent modelling}},
+year = {2017}
+}
+@inproceedings{Bahdanau2015,
+abstract = {Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder–decoders and encode a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder–decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition.},
+annote = {The first NMT with attention mechanisim},
+archivePrefix = {arXiv},
+arxivId = {1409.0473},
+author = {Bahdanau, Dzmitry and Cho, Kyung Hyun and Bengio, Yoshua},
+booktitle = {International Conference on Learning Representations},
+eprint = {1409.0473},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/International Conference on Learning Representations/Bahdanau, Cho, Bengio - 2015 - Neural machine translation by jointly learning to align and translate.pdf:pdf},
+mendeley-groups = {ICML-20},
+pages = {1--15},
+title = {{Neural machine translation by jointly learning to align and translate}},
+year = {2015}
+}
+@inproceedings{Bao2017,
+abstract = {Adverse drug reaction (ADR) discovery is the task of identifying unexpected and nega-tive events caused by pharmaceutical products. This paper describes a log-linear Hawkes process model for ADR discovery from longitudinal observational data such as electronic health records (EHRs). The proposed method leverages the irregular time-stamped events in EHRs to represent the time-varying effect of various drugs on the occurrence rate of ad-verse events. Experimental results on a large-scale cohort of real-world EHRs demonstrate that the proposed method outperforms a leading approach, multiple self-controlled case series (Simpson et al., 2013), in identifying benchmark ADRs defined by the Observational Medical Outcomes Partnership.},
+author = {Bao, Yujia and Kuang, Zhaobin and Peissig, Peggy and Page, David and Willett, Rebecca},
+booktitle = {Machine Learning for Healthcare},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Machine Learning for Healthcare/Bao et al. - 2017 - Hawkes Process Modeling of Adverse Drug Reactions with Longitudinal Observational Data.pdf:pdf},
+keywords = {Adverse Drug Reaction},
+mendeley-groups = {Point Process,Dissertation,LA{\^{}}2H,ICML-20},
+mendeley-tags = {Adverse Drug Reaction},
+pages = {1--14},
+title = {{Hawkes Process Modeling of Adverse Drug Reactions with Longitudinal Observational Data}},
+volume = {68},
+year = {2017}
+}
+@inproceedings{Bhattacharjya2018,
+abstract = {Event datasets include events that occur irregularly over the timeline and are prevalent in numerous domains. We introduce proximal graphical event models (PGEM) as a representation of such datasets. PGEMs belong to a broader family of models that characterize relationships between various types of events, where the rate of occurrence of an event type depends only on whether or not its parents have occurred in the most recent history. The main advantage over the state of the art models is that they are entirely data driven and do not require additional inputs from the user, which can require knowledge of the domain such as choice of basis functions or hyperparameters in graphical event models. We theoretically justify our learning of optimal windows for parental history and the choices of parental sets, and the algorithm are sound and complete in terms of parent structure learning. We present additional efficient heuristics for learning PGEMs from data, demonstrating their effectiveness on synthetic and real datasets.},
+annote = {Since only the most-recent events in some risk windows are considers, it is essentially like constructing the drug era features.
+The paper does soften the requirement of risk windows by proposing algorithm to learn them.
+
+Also it is essentially piecewise constant CIM.},
+author = {Bhattacharjya, Debarun and Subramanian, Dharmashankar and Gao, Tian},
+booktitle = {Advances in Neural Information Processing System},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Advances in Neural Information Processing System/Bhattacharjya, Subramanian, Gao - 2018 - Proximal Graphical Event Models.pdf:pdf},
+keywords = {PCIM},
+mendeley-groups = {Point Process,Dissertation,ICML-20},
+mendeley-tags = {PCIM},
+pages = {8147--8156},
+title = {{Proximal Graphical Event Models}},
+url = {http://papers.nips.cc/paper/8036-proximal-graphical-event-models.pdf},
+year = {2018}
+}
+@article{Bremaud1996,
+abstract = {We address the problem of the convergence to equilibrium of a general class of point processes, containing, in particular, the nonlinear mutually exciting point processes, an extension of the linear Hawkes processes, and give general conditions guaranteeing the existence of a stationary version and the convergence to equilibrium of a nonstationary version, both in distribution and in variation. We also give a new proof of a result of Kerstan concerning point processes with bounded intensity and general nonlinear dynamics satisfying a Lipschitz condition.},
+author = {Br{\'{e}}maud, Pierre and Massouli{\'{e}}, Laurent},
+doi = {10.1214/aop/1065725193},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Annals of Probability/Br{\'{e}}maud, Massouli{\'{e}} - 1996 - Stability of nonlinear Hawkes processes.pdf:pdf},
+issn = {00911798},
+journal = {Annals of Probability},
+keywords = {Hawkes Process,Hawkes processes,Mutually exciting point processes,Nonlinear Hawkes Processes,Point processes,Stationary point processes,Stochastic intensity,Stochastic processes},
+mendeley-groups = {Point Process,ICML-20,Dissertation},
+mendeley-tags = {Hawkes Process,Nonlinear Hawkes Processes},
+month = {jul},
+number = {3},
+pages = {1563--1588},
+title = {{Stability of nonlinear Hawkes processes}},
+url = {http://projecteuclid.org/Dienst/getRecord?id=euclid.aop/1065725193/},
+volume = {24},
+year = {1996}
+}
+@article{Cho2014,
+abstract = {In this paper, we propose a novel neural network model called RNN Encoder- Decoder that consists of two recurrent neural networks (RNN). One RNN encodes a sequence of symbols into a fixedlength vector representation, and the other decodes the representation into another sequence of symbols. The encoder and decoder of the proposed model are jointly trained to maximize the conditional probability of a target sequence given a source sequence. The performance of a statistical machine translation system is empirically found to improve by using the conditional probabilities of phrase pairs computed by the RNN Encoder-Decoder as an additional feature in the existing log-linear model. Qualitatively, we show that the proposed model learns a semantically and syntactically meaningful representation of linguistic phrases.},
+annote = {The orginal "GRU" paper},
+archivePrefix = {arXiv},
+arxivId = {1406.1078},
+author = {Cho, Kyunghyun and {Van Merri{\"{e}}nboer}, Bart and Gulcehre, Caglar and Bahdanau, Dzmitry and Bougares, Fethi and Schwenk, Holger and Bengio, Yoshua},
+doi = {10.3115/v1/d14-1179},
+eprint = {1406.1078},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/EMNLP 2014 - 2014 Conference on Empirical Methods in Natural Language Processing, Proceedings of the Conference/Cho et al. - 2014 - Learning phrase representations using RNN encoder-decoder for statistical machine translation.pdf:pdf},
+isbn = {9781937284961},
+journal = {EMNLP 2014 - 2014 Conference on Empirical Methods in Natural Language Processing, Proceedings of the Conference},
+mendeley-groups = {ICML-20},
+pages = {1724--1734},
+title = {{Learning phrase representations using RNN encoder-decoder for statistical machine translation}},
+year = {2014}
+}
+@article{Dahlhaus2003,
+author = {Dahlhaus, Rainer and Eichler, Michael},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Oxford Statistical Science Series/Dahlhaus, Eichler - 2003 - Causality and graphical models in time series analysis.pdf:pdf},
+journal = {Oxford Statistical Science Series},
+keywords = {Granger Causality},
+mendeley-groups = {ICML-20,Dissertation},
+mendeley-tags = {Granger Causality},
+pages = {115--137},
+title = {{Causality and graphical models in time series analysis}},
+year = {2003}
+}
+@book{Daley2003,
+abstract = {Point processes and random measures find wide applicability in telecommunications, earthquakes, image analysis, spatial point patterns, and stereology, to name but a few areas. The authors have made a major reshaping of their work ...},
+address = {New York},
+annote = {From Duplicate 2 (An introduction to the theory of point processes. Vol. I - Daley, D J; Vere-Jones, D)
+
+From Duplicate 1 (An introduction to the theory of point processes. Vol. I - Daley, D J; Vere-Jones, D)
+
+From Duplicate 1 (An introduction to the theory of point processes. {\{}V{\}}ol. {\{}I{\}} - Daley, D J; Vere-Jones, D)
+
+Elementary theory and methods
+
+From Duplicate 2 (An introduction to the theory of point processes. {\{}V{\}}ol. {\{}I{\}} - Daley, D J; Vere-Jones, D)
+
+Elementary theory and methods},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1011.1669v3},
+author = {Daley, D J and Vere-Jones, D},
+booktitle = {Springer},
+doi = {10.1007/978-0-387-49835-5},
+edition = {Second},
+eprint = {arXiv:1011.1669v3},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Springer/Daley, Vere-Jones - 2003 - An Introduction to the Theory of Point Processes.pdf:pdf},
+isbn = {978-0-387-21337-8},
+issn = {01727397},
+keywords = {An Introduction to the Theory of Point Processes -,Probability Theory and Stochastic Processes,Statistical Theory and Methods,point{\_}processes reference},
+mendeley-groups = {Books,Dissertation,ICML-20},
+pmid = {15772297},
+publisher = {Springer-Verlag},
+series = {Probability and its Applications (New York)},
+title = {{An Introduction to the Theory of Point Processes}},
+url = {http://www.springerlink.com/index/10.1007/978-0-387-49835-5{\%}5Cnhttp://link.springer.com/10.1007/978-0-387-49835-5},
+volume = {I},
+year = {2003}
+}
+@inproceedings{Dhamdhere2018,
+abstract = {The problem of attributing a deep network's prediction to its $\backslash$emph{\{}input/base{\}} features is well-studied. We introduce the notion of $\backslash$emph{\{}conductance{\}} to extend the notion of attribution to the understanding the importance of $\backslash$emph{\{}hidden{\}} units. Informally, the conductance of a hidden unit of a deep network is the $\backslash$emph{\{}flow{\}} of attribution via this hidden unit. We use conductance to understand the importance of a hidden unit to the prediction for a specific input, or over a set of inputs. We evaluate the effectiveness of conductance in multiple ways, including theoretical properties, ablation studies, and a feature selection task. The empirical evaluations are done using the Inception network over ImageNet data, and a sentiment analysis network over reviews. In both cases, we demonstrate the effectiveness of conductance in identifying interesting insights about the internal workings of these networks.},
+archivePrefix = {arXiv},
+arxivId = {1805.12233},
+author = {Dhamdhere, Kedar and Sundararajan, Mukund and Yan, Qiqi},
+booktitle = {Advances in Neural Information Processing System},
+eprint = {1805.12233},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Advances in Neural Information Processing System/Dhamdhere, Sundararajan, Yan - 2018 - How Important Is a Neuron.pdf:pdf},
+mendeley-groups = {ICML-20,Dissertation},
+month = {may},
+title = {{How Important Is a Neuron?}},
+url = {http://arxiv.org/abs/1805.12233},
+year = {2018}
+}
+@article{Didelez2008,
+abstract = {A new class of graphical models capturing the dependence structure of events that occur in time is proposed. The graphs represent so-called local independences, meaning that the intensities of certain types of events are independent of some (but not necessarily all) events in the past. This dynamic concept of independence is asymmetric, similar to Granger non-causality, so that the corresponding local independence graphs differ considerably from classical graphical models. Hence a new notion of graph separation, called delta-separation, is introduced and implications for the underlying model as well as for likelihood inference are explored. Benefits regarding facilitation of reasoning about and understanding of dynamic dependencies as well as computational simplifications are discussed.},
+annote = {Although titled "marked point processes", what it includes the special case of multivariate point processes.
+
+High-level summarization:
+- Definition 2 defines local independence for multivariate point processes, which can be viewed as extension of the notion of Ganger non-causality from the setting of multivariate time-series to multivariate point processes.
+- Definition 4 defines local independence graph based on the notion of local independence
+- One can show that with local independence graph defined by in Defition 4 (based on the notion of local independence), we can deduce from the graph
+- local dynamic markdov property
+- global dynamic markov property (defined by D-seperation)},
+author = {Didelez, Vanessa},
+doi = {10.1111/j.1467-9868.2007.00634.x},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Journal of the Royal Statistical Society. Series B Statistical Methodology/Didelez - 2008 - Graphical models for marked point processes based on local independence.pdf:pdf},
+issn = {13697412},
+journal = {Journal of the Royal Statistical Society. Series B: Statistical Methodology},
+keywords = {Conditional independence,Counting processes,Event history analysis,Granger causality,Graphoid,Multistate models},
+mendeley-groups = {ICML-20,Dissertation},
+number = {1},
+pages = {245--264},
+title = {{Graphical models for marked point processes based on local independence}},
+volume = {70},
+year = {2008}
+}
+@article{Diks2006,
+abstract = {In this paper we introduce a new nonparametric test for Granger non-causality which avoids the over-rejection observed in the frequently used test proposed by Hiemstra and Jones [1994. Testing for linear and nonlinear Granger causality in the stock price-volume relation. Journal of Finance 49, 1639-1664]. After illustrating the problem by showing that rejection probabilities under the null hypothesis may tend to one as the sample size increases, we study the reason behind this phenomenon analytically. It turns out that the Hiemstra-Jones test for the null of Granger non-causality, which can be rephrased in terms of conditional independence of two vectors X and Z given a third vector Y, is sensitive to variations in the conditional distributions of X and Z that may be present under the null. To overcome this problem we replace the global test statistic by an average of local conditional dependence measures. By letting the bandwidth tend to zero at appropriate rates, the variations in the conditional distributions are accounted for automatically. Based on asymptotic theory we formulate practical guidelines for choosing the bandwidth depending on the sample size. We conclude with an application to historical returns and trading volumes of the Standard and Poor's index which indicates that the evidence for volume Granger-causing returns is weaker than suggested by the Hiemstra-Jones test. {\textcopyright} 2006 Elsevier B.V. All rights reserved.},
+author = {Diks, Cees and Panchenko, Valentyn},
+doi = {10.1016/j.jedc.2005.08.008},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Journal of Economic Dynamics and Control/Diks, Panchenko - 2006 - A New Statistic and Practical Guidelines for Nonparametric Granger Causality Testing.pdf:pdf},
+issn = {01651889},
+journal = {Journal of Economic Dynamics and Control},
+keywords = {Financial time series,Granger causality,Hypothesis testing,Nonparametric,Size distortion,U-statistics},
+mendeley-groups = {Dissertation,ICML-20},
+number = {9-10},
+pages = {1647--1669},
+title = {{A New Statistic and Practical Guidelines for Nonparametric Granger Causality Testing}},
+volume = {30},
+year = {2006}
+}
+@inproceedings{du2016recurrent,
+abstract = {Large volumes of event data are becoming increasingly avail-able in a wide variety of applications, such as healthcare an-alytics, smart cities and social network analysis. The precise time interval or the exact distance between two events car-ries a great deal of information about the dynamics of the underlying systems. These characteristics make such data fundamentally different from independently and identically distributed data and time-series data where time and space are treated as indexes rather than random variables. Marked temporal point processes are the mathematical framework for modeling event data with covariates. However, typical point process models often make strong assumptions about the generative processes of the event data, which may or may not reflect the reality, and the specifically fixed para-metric assumptions also have restricted the expressive power of the respective processes. Can we obtain a more expres-sive model of marked temporal point processes? How can we learn such a model from massive data? In this paper, we propose the Recurrent Marked Temporal Point Process (RMTPP) to simultaneously model the event timings and the markers. The key idea of our approach is to view the intensity function of a temporal point process as a nonlinear function of the history, and use a recurrent neural network to automatically learn a representation of influences from the event history. We develop an efficient stochastic gradient algorithm for learning the model param-eters which can readily scale up to millions of events. Using both synthetic and real world datasets, we show that, in the case where the true models have parametric specifica-tions, RMTPP can learn the dynamics of such models with-out the need to know the actual parametric forms; and in the case where the true models are unknown, RMTPP can also learn the dynamics and achieve better predictive per-formance than other parametric alternatives based on par-ticular prior assumptions.},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1508.06655v1},
+author = {Du, Nan and Dai, Hanjun and Trivedi, Rakshit and Upadhyay, Utkarsh and Gomez-Rodriguez, Manuel and Song, Le},
+booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+doi = {10.1145/2939672.2939875},
+eprint = {arXiv:1508.06655v1},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining/Du et al. - 2016 - Recurrent Marked Temporal Point Processes Embedding Event History to Vector.pdf:pdf},
+isbn = {9781450342322},
+issn = {9781450321389},
+keywords = {Event Sequence,Hawkes Process,RMTPP,RNN,importance sampling,marked temporal point process},
+mendeley-groups = {Point Process,Dissertation,ICML-20},
+mendeley-tags = {Hawkes Process,RNN},
+organization = {ACM},
+pages = {1555--1564},
+title = {{Recurrent Marked Temporal Point Processes: Embedding Event History to Vector}},
+url = {http://dl.acm.org/citation.cfm?doid=2939672.2939875},
+year = {2016}
+}
+@book{durrett2019probability,
+author = {Durrett, Rick},
+edition = {5},
+mendeley-groups = {Books,ICML-20,Dissertation},
+publisher = {Cambridge university press},
+title = {{Probability: Theory and Examples}},
+volume = {49},
+year = {2019}
+}
+@article{Eichler2012,
+abstract = {We introduce graphical time series models for the analysis of dynamic relationships among variables in multivariate time series. The modelling approach is based on the notion of strong Granger causality and can be applied to time series with non-linear dependencies. The models are derived from ordinary time series models by imposing constraints that are encoded by mixed graphs. In these graphs each component series is represented by a single vertex and directed edges indicate possible Granger-causal relationships between variables while undirected edges are used to map the contemporaneous dependence structure. We introduce various notions of Granger-causal Markov properties and discuss the relationships among them and to other Markov properties that can be applied in this context.},
+author = {Eichler, Michael},
+doi = {10.1007/s00440-011-0345-8},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Probability Theory and Related Fields/Eichler - 2012 - Graphical modelling of multivariate time series.pdf:pdf},
+issn = {01788051},
+journal = {Probability Theory and Related Fields},
+keywords = {Global Markov property,Granger Causality,Granger causality,Graphical models,Multivariate time series},
+mendeley-groups = {ICML-20,Dissertation},
+mendeley-tags = {Granger Causality},
+number = {1-2},
+pages = {233--268},
+title = {{Graphical modelling of multivariate time series}},
+volume = {153},
+year = {2012}
+}
+@article{Eichler2017,
+abstract = {Hawkes ([Hawkes AG, 1971a]) introduced a powerful multivariate point process model of mutually exciting processes to explain causal structure in data. In this article, it is shown that the Granger causality structure of such processes is fully encoded in the corresponding link functions of the model. A new nonparametric estimator of the link functions based on a time{\&}{\#}8208;discretized version of the point process is introduced by using an infinite order autoregression. Consistency of the new estimator is derived. The estimator is applied to simulated data and to neural spike train data from the spinal dorsal horn of a rat.},
+annote = {The paper that motivates the Hongteng Xu's 2016 ICML paper on learning Granger causality for Hawkes process. Specifically, the main Theorem 4.1 there, which establishes the connection between Granger causality and exitation kernel, comes from this paper directly.},
+author = {Eichler, Michael and Dahlhaus, Rainer and Dueck, Johannes},
+doi = {10.1111/jtsa.12213},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Journal of Time Series Analysis/Eichler, Dahlhaus, Dueck - 2017 - Graphical Modeling for Multivariate Hawkes Processes with Nonparametric Link Functions.pdf:pdf},
+issn = {14679892},
+journal = {Journal of Time Series Analysis},
+keywords = {Granger causality,Hawkes process,graphical model,mutually exciting process,nonparametric estimation},
+mendeley-groups = {ICML-20,Dissertation},
+number = {2},
+pages = {225--242},
+title = {{Graphical Modeling for Multivariate Hawkes Processes with Nonparametric Link Functions}},
+volume = {38},
+year = {2017}
+}
+@article{Granger1969,
+abstract = {No abstract is available for this item.},
+annote = {From Duplicate 1 (Investigating Causal Relations by Econometric Models and Cross-spectral Methods - Granger, Clive WJ)
+
+The original paper in which Ganger causality was proposed.
+
+Definition 1},
+author = {Granger, Clive WJ},
+doi = {10.2307/1912791},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Econometrica/Granger - 1969 - Investigating Causal Relations by Econometric Models and Cross-spectral Methods.pdf:pdf},
+isbn = {0012-9682},
+issn = {00129682},
+journal = {Econometrica},
+mendeley-groups = {ICML-20,Dissertation},
+month = {aug},
+number = {3},
+pages = {424},
+pmid = {1000172841},
+title = {{Investigating Causal Relations by Econometric Models and Cross-spectral Methods}},
+url = {http://links.jstor.org/sici?sici=0012-9682(196908)37:3{\%}3C424:ICRBEM{\%}3E2.0.CO;2-L{\%}5Cnhttp://www.jstor.org/stable/1912791 http://www.jstor.org/stable/1912791?origin=crossref},
+volume = {37},
+year = {1969}
+}
+@article{Gunawardana2011,
+abstract = {We introduce the Piecewise-Constant Conditional Intensity Model, a model for learning temporal dependencies in event streams. We describe a closed-form Bayesian approach to learning these models, and describe an importance sampling algorithm for forecasting future events using these models, using a proposal distri-bution based on Poisson superposition. We then use synthetic data, supercomputer event logs, and web search query logs to illustrate that our learning algorithm can efficiently learn nonlinear temporal dependencies, and that our importance sam-pling algorithm can effectively forecast future events.},
+annote = {PCIM
+
+The wring of this paper is very confusing. See Qin 2015 Section 3 for a much clearer explaination.
+
+
+
+Qin, Z., {\&} Shelton, C. R. (2015). Auxiliary Gibbs sampling for inference in piecewise-constant conditional intensity models. Uncertainty in Artificial Intelligence - Proceedings of the 31st Conference, UAI 2015, 722–731.},
+author = {Gunawardana, a. and Meek, C. and Xu, P.},
+doi = {10.1021/acs.jpcc.6b06964},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Advances in Neural Information Processing System/Gunawardana, Meek, Xu - 2011 - A Model for Temporal Dependencies in Event Streams.pdf:pdf},
+isbn = {9781618395993},
+issn = {1468-5833},
+journal = {Advances in Neural Information Processing System},
+keywords = {Piecewise-Constant Conditional Intensity Model (PC},
+mendeley-groups = {Dissertation,ICML-20},
+pages = {1962--1970},
+pmid = {11859052},
+title = {{A Model for Temporal Dependencies in Event Streams}},
+year = {2011}
+}
+@article{hawkes1971point,
+abstract = {JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of content in a trusted digital archive. We use information technology and tools to increase productivity and facilitate new forms of scholarship. For more information about JSTOR, please contact support@jstor.org. SUMMARY The point spectral matrix is obtained for a class of mutually exciting point processes. The solution makes use of methods similar to those used in solving Wiener-Hopf integral equations.},
+author = {Hawkes, Alan G},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Journal of the Royal Statistical Society. Series B (Methodological)/Hawkes - 1971 - Point spectra of some mutually exciting point processes.pdf:pdf},
+journal = {Journal of the Royal Statistical Society. Series B (Methodological)},
+keywords = {COVARIANCE DENSITY,Hawkes Process,POINT PROCESS,SPECTRUM},
+mendeley-groups = {Point Process,Dissertation,ICML-20},
+mendeley-tags = {Hawkes Process},
+number = {1},
+pages = {83--90},
+publisher = {JSTOR},
+title = {{Point spectra of some mutually exciting point processes}},
+url = {http://www.jstor.org/stable/2984686{\%}5Cnhttp://about.jstor.org/terms},
+volume = {58},
+year = {1971}
+}
+@article{hawkes1971spectra,
+abstract = {In recent years methods of data analysis for point processes have received some attention, for example, by Cox {\&} Lewis (1966) and Lewis (1964). In particular Bartlett (1963 a,b) has introduced methods of analysis based on the point spectrum. Theoretical models are relatively sparse. In this paper the theoretical properties of a class of processes with particular reference to the point spectrum or corresponding covariance density functions are discussed. A particular result is a self-exciting process with the same second-order properties as a certain doubly stochastic process. These are not distinguishable by methods of data analysis based on these properties.},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1011.1669v3},
+author = {Hawkes, Alan G},
+doi = {10.1093/biomet/58.1.83},
+eprint = {arXiv:1011.1669v3},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Biometrika/Hawkes - 1971 - Spectra of Some Self-Exciting and Mutually Exciting Point Processes.pdf:pdf},
+isbn = {0035-9246},
+issn = {00063444},
+journal = {Biometrika},
+keywords = {COVARIANCE DENSITY,Covariance density,Hawkes Process,POINT PROCESS,Point process,SPECTRUM,Self-exciting point process,Spectrum of point process},
+mendeley-groups = {Point Process,Dissertation,ICML-20},
+mendeley-tags = {Hawkes Process},
+number = {1},
+pages = {83--90},
+pmid = {17556540},
+publisher = {Oxford University Press},
+title = {{Spectra of Some Self-Exciting and Mutually Exciting Point Processes}},
+url = {http://www.jstor.org http://www.jstor.org/stable/2334319 http://www.jstor.org/page/info/about/policies/terms.jsp http://www.jstor.org/stable/2984686 http://biomet.oxfordjournals.org/cgi/doi/10.1093/biomet/58.1.83 http://www.jstor.org/stable/2984686{\%}5Cnhtt},
+volume = {58},
+year = {1971}
+}
+@article{Hiemstra1994,
+abstract = {Linear and nonlinear Granger causality tests are used to examine the dynamic relation between daily Dow Jones stock returns and percentage changes in New York Stock Exchange trading volume. We find evidence of significant bidirectional nonlinear causality between returns and volume. We also examine whether the nonlinear causality from volume to returns can be explained by volume serving as a proxy for information flow in the stochastic process generating stock return variance as suggested by Clark's (1973) latent common‐factor model. After controlling for volatility persistence in returns, we continue to find evidence of nonlinear causality from volume to returns. 1994 The American Finance Association},
+author = {Hiemstra, Craig and Jones, Jonathan D.},
+doi = {10.1111/j.1540-6261.1994.tb04776.x},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/The Journal of Finance/Hiemstra, Jones - 1994 - Testing for Linear and Nonlinear Granger Causality in the Stock Price‐Volume Relation.pdf:pdf},
+issn = {15406261},
+journal = {The Journal of Finance},
+mendeley-groups = {ICML-20,Dissertation},
+number = {5},
+pages = {1639--1664},
+publisher = {Wiley Online Library},
+title = {{Testing for Linear and Nonlinear Granger Causality in the Stock Price‐Volume Relation}},
+volume = {49},
+year = {1994}
+}
+@article{Hlavackova-Schindler2007,
+abstract = {Synchronization, a basic nonlinear phenomenon, is widely observed in diverse complex systems studied in physical, biological and other natural sciences, as well as in social sciences, economy and finance. While studying such complex systems, it is important not only to detect synchronized states, but also to identify causal relationships (i.e. who drives whom) between concerned (sub) systems. The knowledge of information-theoretic measures (i.e. mutual information, conditional entropy) is essential for the analysis of information flow between two systems or between constituent subsystems of a complex system. However, the estimation of these measures from a set of finite samples is not trivial. The current extensive literatures on entropy and mutual information estimation provides a wide variety of approaches, from approximation-statistical, studying rate of convergence or consistency of an estimator for a general distribution, over learning algorithms operating on partitioned data space to heuristical approaches. The aim of this paper is to provide a detailed overview of information theoretic approaches for measuring causal influence in multivariate time series and to focus on diverse approaches to the entropy and mutual information estimation. {\textcopyright} 2007 Elsevier B.V. All rights reserved.},
+author = {Hlavackova-Schindler, Katerina and Palus, Milan and Vejmelka, Martin and Bhattacharya, Joydeep},
+doi = {10.1016/j.physrep.2006.12.004},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Physics Reports/Hlavackova-Schindler et al. - 2007 - Causality detection based on information-theoretic approaches in time series analysis.pdf:pdf},
+issn = {03701573},
+journal = {Physics Reports},
+keywords = {Causality,Entropy,Estimation,Mutual information},
+mendeley-groups = {Dissertation,ICML-20},
+number = {1},
+pages = {1--46},
+title = {{Causality detection based on information-theoretic approaches in time series analysis}},
+volume = {441},
+year = {2007}
+}
+@book{imbens2015causal,
+author = {Imbens, Guido W and Rubin, Donald B},
+mendeley-groups = {ICML-20},
+publisher = {Cambridge University Press},
+title = {{Causal inference in statistics, social, and biomedical sciences}},
+year = {2015}
+}
+@article{isham1979self,
+author = {Isham, Valerie and Westcott, Mark},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Stochastic Processes and Their Applications/Isham, Westcott - 1979 - A self-correcting point process.pdf:pdf},
+journal = {Stochastic Processes and Their Applications},
+mendeley-groups = {Dissertation,ICML-20},
+number = {3},
+pages = {335--347},
+publisher = {Elsevier},
+title = {{A self-correcting point process}},
+volume = {8},
+year = {1979}
+}
+@inproceedings{jain2019attention,
+abstract = {Attention mechanisms have seen wide adoption in neural NLP models. In addition to improving predictive performance, these are often touted as affording transparency: models equipped with attention provide a distribution over attended-to input units, and this is often presented (at least implicitly) as communicating the relative importance of inputs. However, it is unclear what relationship exists between attention weights and model outputs. In this work, we perform extensive experiments across a variety of NLP tasks that aim to assess the degree to which attention weights provide meaningful `explanations' for predictions. We find that they largely do not. For example, learned attention weights are frequently uncorrelated with gradient-based measures of feature importance, and one can identify very different attention distributions that nonetheless yield equivalent predictions. Our findings show that standard attention modules do not provide meaningful explanations and should not be treated as though they do. Code for all experiments is available at https://github.com/successar/AttentionExplanation.},
+archivePrefix = {arXiv},
+arxivId = {1902.10186},
+author = {Jain, Sarthak and Wallace, Byron C.},
+booktitle = {Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)},
+eprint = {1902.10186},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics Human Language Technologie./Jain, Wallace - 2019 - Attention is not Explanation.pdf:pdf},
+mendeley-groups = {ICML-20,Good Writing,Dissertation},
+pages = {3543--3556},
+title = {{Attention is not Explanation}},
+url = {http://arxiv.org/abs/1902.10186},
+year = {2019}
+}
+@article{kaminski2001evaluating,
+author = {Kami{\'{n}}ski, Maciej and Ding, Mingzhou and Truccolo, Wilson A and Bressler, Steven L},
+journal = {Biological cybernetics},
+mendeley-groups = {ICML-20,Dissertation},
+number = {2},
+pages = {145--157},
+publisher = {Springer},
+title = {{Evaluating causal relations in neural systems: Granger causality, directed transfer function and statistical assessment of significance}},
+volume = {85},
+year = {2001}
+}
+@inproceedings{Lundberg2017,
+abstract = {Understanding why a model made a certain prediction is crucial in many applications. However, with large modern datasets the best accuracy is often achieved by complex models even experts struggle to interpret, such as ensemble or deep learning models. This creates a tension between accuracy and interpretability. In response, a variety of methods have recently been proposed to help users interpret the predictions of complex models. Here, we present a unified framework for interpreting predictions, namely SHAP (SHapley Additive exPlanations, which assigns each feature an importance for a particular prediction. The key novel components of the SHAP framework are the identification of a class of additive feature importance measures and theoretical results that there is a unique solution in this class with a set of desired properties. This class unifies six existing methods, and several recent methods in this class do not have these desired properties. This means that our framework can inform the development of new methods for explaining prediction models. We demonstrate that several new methods we presented in this paper based on the SHAP framework show better computational performance and better consistency with human intuition than existing methods.},
+archivePrefix = {arXiv},
+arxivId = {1705.07874},
+author = {Lundberg, Scott and Lee, Su-In},
+booktitle = {Advances in Neural Information Processing System},
+eprint = {1705.07874},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Advances in Neural Information Processing System/Lundberg, Lee - 2017 - A Unified Approach to Interpreting Model Predictions.pdf:pdf},
+mendeley-groups = {Good Writing,ICML-20,Dissertation},
+month = {may},
+number = {Section 3},
+title = {{A Unified Approach to Interpreting Model Predictions}},
+url = {http://arxiv.org/abs/1705.07874},
+year = {2017}
+}
+@article{Luo2015,
+abstract = {We propose a Multi-task Multi-dimensional Hawkes Process (MMHP) for modeling event sequences where there exist multiple triggering patterns within sequences and structures across sequences. MMHP is able to model the dynamics of multiple sequences jointly by imposing structural constraints and thus systematically uncover clustering structure among sequences. We propose an effective and robust optimization algorithm to learn MMHP models, which takes advantage of alternating direction method of multipliers (ADMM), majorization minimization and Euler-Lagrange equations. Our experimental results demonstrate that MMHP performs well on both synthetic and real data.},
+author = {Luo, Dixin and Xu, Hongteng and Zhen, Yi and Ning, Xia and Zha, Hongyuan and Yang, Xiaokang and Zhang, Wenjun},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/IJCAI International Joint Conference on Artificial Intelligence/Luo et al. - 2015 - Multi-task multi-dimensional hawkes processes for modeling event sequences.pdf:pdf},
+isbn = {9781577357384},
+issn = {10450823},
+journal = {IJCAI International Joint Conference on Artificial Intelligence},
+keywords = {Special Track on Machine Learning},
+mendeley-groups = {ICML-20,Dissertation},
+number = {Ijcai},
+pages = {3685--3691},
+title = {{Multi-task multi-dimensional hawkes processes for modeling event sequences}},
+volume = {2015-Janua},
+year = {2015}
+}
+@inproceedings{mei2017neuralhawkes,
+abstract = {Many events occur in the world. Some event types are stochastically excited or inhibited---in the sense of having their probabilities elevated or decreased---by patterns in the sequence of previous events. Discovering such patterns can help us predict which type of event will happen next and when. Learning such structure should benefit various applications, including medical prognosis, consumer behavior, and social media activity prediction. We propose to model streams of discrete events in continuous time, by constructing a neurally self-modulating multivariate point process. This generative model allows past events to influence the future in complex ways, by conditioning future event intensities on the hidden state of a recurrent neural network that has consumed the stream of past events. We evaluate our model on multiple datasets and show that it significantly outperforms other strong baselines.},
+address = {Long Beach},
+archivePrefix = {arXiv},
+arxivId = {1612.09328},
+author = {Mei, Hongyuan and Eisner, Jason},
+booktitle = {Advances in Neural Information Processing System},
+eprint = {1612.09328},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Advances in Neural Information Processing System/Mei, Eisner - 2017 - The Neural Hawkes Process A Neurally Self-Modulating Multivariate Point Process.pdf:pdf},
+keywords = {Continous-Time RNN},
+mendeley-groups = {Point Process,Dissertation,ICML-20},
+mendeley-tags = {Continous-Time RNN},
+month = {dec},
+pages = {1--21},
+title = {{The Neural Hawkes Process: A Neurally Self-Modulating Multivariate Point Process}},
+url = {https://arxiv.org/abs/1612.09328 http://arxiv.org/abs/1612.09328},
+year = {2017}
+}
+@book{pearl2009causality,
+author = {Pearl, Judea},
+mendeley-groups = {ICML-20},
+publisher = {Cambridge university press},
+title = {{Causality}},
+year = {2009}
+}
+@article{schaffer2003metaphysics,
+author = {Schaffer, Jonathan},
+mendeley-groups = {ICML-20},
+title = {{The metaphysics of causation}},
+year = {2003}
+}
+@inproceedings{Schwab2019,
+abstract = {Feature importance estimates that inform users about the degree to which given inputs influence the output of a predictive model are crucial for understanding, validating, and interpreting machine-learning models. However, providing fast and accurate estimates of feature importance for high-dimensional data, and quantifying the uncertainty of such estimates remain open challenges. Here, we frame the task of providing explanations for the decisions of machine-learning models as a causal learning task, and train causal explanation (CXPlain) models that learn to estimate to what degree certain inputs cause outputs in another machine-learning model. CXPlain can, once trained, be used to explain the target model in little time, and enables the quantification of the uncertainty associated with its feature importance estimates via bootstrap ensembling. We present experiments that demonstrate that CXPlain is significantly more accurate and faster than existing model-agnostic methods for estimating feature importance. In addition, we confirm that the uncertainty estimates provided by CXPlain ensembles are strongly correlated with their ability to accurately estimate feature importance on held-out data.},
+annote = {pros:
+1. simple idea: apply occluding methods on loss function and then use knowledge distillation to teach a student model (explaination model)
+2. since the explaination is learned, boostrap can be applied to obtain multiple such models so that uncertainty can be estimated as well.
+
+cons:
+1. inefficient for high dimensional data; to successfully apply, requires groupping of raw features.},
+archivePrefix = {arXiv},
+arxivId = {1910.12336},
+author = {Schwab, Patrick and Karlen, Walter},
+booktitle = {Advances in Neural Information Processing System},
+eprint = {1910.12336},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Advances in Neural Information Processing System/Schwab, Karlen - 2019 - CXPlain Causal Explanations for Model Interpretation under Uncertainty.pdf:pdf},
+mendeley-groups = {ICML-20,Dissertation},
+title = {{CXPlain: Causal Explanations for Model Interpretation under Uncertainty}},
+url = {http://arxiv.org/abs/1910.12336},
+year = {2019}
+}
+@inproceedings{Serrano2019,
+abstract = {Attention mechanisms have recently boosted performance on a range of NLP tasks. Because attention layers explicitly weight input components' representations, it is also often assumed that attention can be used to identify information that models found important (e.g., specific contextualized word tokens). We test whether that assumption holds by manipulating attention weights in already-trained text classification models and analyzing the resulting differences in their predictions. While we observe some ways in which higher attention weights correlate with greater impact on model predictions, we also find many ways in which this does not hold, i.e., where gradient-based rankings of attention weights better predict their effects than their magnitudes. We conclude that while attention noisily predicts input components' overall importance to a model, it is by no means a fail-safe indicator.},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1906.03731v1},
+author = {Serrano, Sofia and Smith, Noah A.},
+booktitle = {ACL},
+doi = {10.18653/v1/p19-1282},
+eprint = {arXiv:1906.03731v1},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/ACL/Serrano, Smith - 2019 - Is Attention Interpretable.pdf:pdf},
+mendeley-groups = {ICML-20,Dissertation},
+pages = {2931--2951},
+title = {{Is Attention Interpretable?}},
+year = {2019}
+}
+@article{shapley1953value,
+author = {Shapley, Lloyd S},
+journal = {Contributions to the Theory of Games},
+mendeley-groups = {Dissertation,ICML-20},
+number = {28},
+pages = {307--317},
+title = {{A value for n-person games}},
+volume = {2},
+year = {1953}
+}
+@inproceedings{shrikumar2017learning,
+abstract = {The purported "black box" nature of neural networks is a barrier to adoption in applications where interpretability is essential. Here we present DeepLIFT (Deep Learning Important FeaTures), a method for decomposing the output prediction of a neural network on a specific input by backpropagating the contributions of all neurons in the network to every feature of the input. DeepLIFT compares the activation of each neuron to its 'reference activation' and assigns contribution scores according to the difference. By optionally giving separate consideration to positive and negative contributions, DeepLIFT can also reveal dependencies which are missed by other approaches. Scores can be computed efficiently in a single backward pass. We apply DeepLIFT to models trained on MNIST and simulated genomic data, and show significant advantages over gradient-based methods. Video tutorial: http://goo.gl/qKb7pL, ICML slides: bit.ly/deeplifticmlslides, ICML talk: https://vimeo.com/238275076, code: http://goo.gl/RM8jvH.},
+archivePrefix = {arXiv},
+arxivId = {1704.02685},
+author = {Shrikumar, Avanti and Greenside, Peyton and Kundaje, Anshul},
+booktitle = {International Conference on Machine Learning},
+eprint = {1704.02685},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/International Conference on Machine Learning/Shrikumar, Greenside, Kundaje - 2017 - Learning Important Features Through Propagating Activation Differences.pdf:pdf},
+mendeley-groups = {ICML-20,Dissertation},
+month = {apr},
+title = {{Learning Important Features Through Propagating Activation Differences}},
+url = {http://arxiv.org/abs/1704.02685},
+year = {2017}
+}
+@inproceedings{Sundararajan2017,
+abstract = {We study the problem of attributing the prediction of a deep network to its input features, a problem previously studied by several other works. We identify two fundamental axioms---Sensitivity and Implementation Invariance that attribution methods ought to satisfy. We show that they are not satisfied by most known attribution methods, which we consider to be a fundamental weakness of those methods. We use the axioms to guide the design of a new attribution method called Integrated Gradients. Our method requires no modification to the original network and is extremely simple to implement; it just needs a few calls to the standard gradient operator. We apply this method to a couple of image models, a couple of text models and a chemistry model, demonstrating its ability to debug networks, to extract rules from a network, and to enable users to engage with models better.},
+archivePrefix = {arXiv},
+arxivId = {1703.01365},
+author = {Sundararajan, Mukund and Taly, Ankur and Yan, Qiqi},
+booktitle = {International Conference on Machine Learning},
+doi = {10.1007/s10144-009-0162-4},
+eprint = {1703.01365},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/International Conference on Machine Learning/Sundararajan, Taly, Yan - 2017 - Axiomatic Attribution for Deep Networks.pdf:pdf},
+isbn = {9781510855144},
+issn = {1938-7228},
+keywords = {Interpretability},
+mendeley-groups = {ICML-20,Dissertation},
+mendeley-tags = {Interpretability},
+title = {{Axiomatic Attribution for Deep Networks}},
+url = {http://arxiv.org/abs/1703.01365},
+year = {2017}
+}
+@inproceedings{Vaswani2017,
+abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.},
+archivePrefix = {arXiv},
+arxivId = {1706.03762},
+author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, Lukasz and Polosukhin, Illia},
+booktitle = {Advances in Neural Information Processing System},
+eprint = {1706.03762},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Advances in Neural Information Processing System/Vaswani et al. - 2017 - Attention is All you Need.pdf:pdf},
+keywords = {Attention,RNN},
+mendeley-groups = {WSDM-20,ICML-20},
+mendeley-tags = {Attention,RNN},
+title = {{Attention is All you Need.}},
+url = {http://arxiv.org/abs/1706.03762},
+year = {2017}
+}
+@inproceedings{Wang2016,
+author = {Wang, Yichen and Xie, Bo O and Du, Nan and Wang, Yichen and Xie, Bo O and Edu, Dunan Gatech},
+booktitle = {The 33rd International Conference on Machine Learning (ICML 2016)},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/The 33rd International Conference on Machine Learning (ICML 2016)/Wang et al. - 2016 - Isotonic Hawkes Processes.pdf:pdf},
+keywords = {Hawkes Process,Nonlinear Hawkes Processes},
+mendeley-groups = {Point Process,ICML-20,Dissertation},
+mendeley-tags = {Hawkes Process,Nonlinear Hawkes Processes},
+title = {{Isotonic Hawkes Processes}},
+volume = {48},
+year = {2016}
+}
+@article{Weiss2013,
+abstract = {Accurate prediction of future onset of disease from Electronic Health Records (EHRs) has important clinical and economic implications. In this domain the arrival of data comes at semi-irregular intervals and makes the prediction task challenging. We propose a method called multiplicative-forest point processes (MFPPs) that learns the rate of future events based on an event history. MFPPs join previous theory in multiplicative forest continuous-time Bayesian networks and piecewise-continuous conditional intensity models. We analyze the advantages of using MFPPs over previous methods and show that on synthetic and real EHR forecasting of heart attacks, MFPPs outperform earlier methods and augment off-the-shelf machine learning algorithms. {\textcopyright} 2013 Springer-Verlag.},
+author = {Weiss, Jeremy C. and Page, David},
+doi = {10.1007/978-3-642-40994-3_35},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)/Weiss, Page - 2013 - Forest-based point process for event prediction from electronic health records.pdf:pdf},
+isbn = {9783642409936},
+issn = {03029743},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+keywords = {PCIM},
+mendeley-groups = {ICML-20,Dissertation},
+mendeley-tags = {PCIM},
+number = {PART 3},
+pages = {547--562},
+title = {{Forest-based point process for event prediction from electronic health records}},
+volume = {8190 LNAI},
+year = {2013}
+}
+@inproceedings{xiao2017wasserstein,
+abstract = {Point processes are becoming very popular in modeling asynchronous sequential data due to their sound mathematical foundation and strength in modeling a variety of real-world phenomena. Currently, they are often characterized via intensity function which limits model's expressiveness due to unrealistic assumptions on its parametric form used in practice. Furthermore, they are learned via maximum likelihood approach which is prone to failure in multi-modal distributions of sequences. In this paper, we propose an intensity-free approach for point processes modeling that transforms nuisance processes to a target one. Furthermore, we train the model using a likelihood-free leveraging Wasserstein distance between point processes. Experiments on various synthetic and real-world data substantiate the superiority of the proposed point process model over conventional ones.},
+archivePrefix = {arXiv},
+arxivId = {1705.08051},
+author = {Xiao, Shuai and Farajtabar, Mehrdad and Ye, Xiaojing and Yan, Junchi and Yang, Xiaokang and Song, Le and Zha, Hongyuan},
+booktitle = {Advances in Neural Information Processing System},
+editor = {Guyon, Isabelle and von Luxburg, Ulrike and Bengio, Samy and Wallach, Hanna M and Fergus, Rob and Vishwanathan, S V N and Garnett, Roman},
+eprint = {1705.08051},
+mendeley-groups = {ICML-20,Dissertation},
+pages = {3247--3257},
+title = {{Wasserstein Learning of Deep Generative Point Process Models}},
+url = {http://papers.nips.cc/paper/6917-wasserstein-learning-of-deep-generative-point-process-models},
+year = {2017}
+}
+@article{xiao2018learning,
+author = {Xiao, Shuai and Xu, Honteng and Yan, Junchi and Farajtabar, Mehrdad and Yang, Xiaokang and Song, Le and Zha, Hongyuan},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Association for the Advancement of Artificial Intelligence/Xiao et al. - 2018 - Learning Conditional Generative Models for Temporal Point Processes.pdf:pdf},
+journal = {Association for the Advancement of Artificial Intelligence},
+keywords = {Planning and Scheduling Track},
+mendeley-groups = {ICML-20,Dissertation},
+pages = {6302--6309},
+title = {{Learning Conditional Generative Models for Temporal Point Processes}},
+year = {2018}
+}
+@inproceedings{xiao2017modeling,
+abstract = {Event sequence, asynchronously generated with random timestamp, is ubiquitous among applications. The precise and arbitrary timestamp can carry important clues about the underlying dynamics, and has lent the event data fundamentally different from the time-series whereby series is indexed with fixed and equal time interval. One expressive mathematical tool for modeling event is point process. The intensity functions of many point processes involve two components: the background and the effect by the history. Due to its inherent spontaneousness, the background can be treated as a time series while the other need to handle the history events. In this paper, we model the background by a Recurrent Neural Network (RNN) with its units aligned with time series indexes while the history effect is modeled by another RNN whose units are aligned with asynchronous events to capture the long-range dynamics. The whole model with event type and timestamp prediction output layers can be trained end-to-end. Our approach takes an RNN perspective to point process, and models its background and history effect. For utility, our method allows a black-box treatment for modeling the intensity which is often a pre-defined parametric form in point processes. Meanwhile end-to-end training opens the venue for reusing existing rich techniques in deep network for point process modeling. We apply our model to the predictive maintenance problem using a log dataset by more than 1000 ATMs from a global bank headquartered in North America.},
+archivePrefix = {arXiv},
+arxivId = {1705.08982},
+author = {Xiao, Shuai and Yan, Junchi and Chu, Stephen M. and Yang, Xiaokang and Zha, Hongyuan and Chu, Stephen M.},
+booktitle = {Proceedings of the 31st Conference on Artificial Intelligence (AAAI)},
+eprint = {1705.08982},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Proceedings of the 31st Conference on Artificial Intelligence (AAAI)/Xiao et al. - 2017 - Modeling the Intensity Function of Point Process via Recurrent Neural Networks.pdf:pdf},
+keywords = {Machine Learning Applications,RNN},
+mendeley-groups = {Dissertation,ICML-20},
+mendeley-tags = {RNN},
+pages = {1597--1603},
+title = {{Modeling the Intensity Function of Point Process via Recurrent Neural Networks}},
+url = {http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14391 http://arxiv.org/abs/1705.08982},
+year = {2017}
+}
+@article{Xiao2019,
+annote = {Event sequences carry a wealth of information about
+event types or participators and their underlying dynamics, andthe timestamps of occurrence is an important indicator foruncovering the underlying dynamics.},
+author = {Xiao, Shuai and Yan, Junchi and Farajtabar, Mehrdad and Song, Le and Yang, Xiaokang and Zha, Hongyuan},
+doi = {10.1109/TNNLS.2018.2889776},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/IEEE Transactions on Neural Networks and Learning Systems/Xiao et al. - 2019 - Learning Time Series Associated Event Sequences With Recurrent Point Process Networks.pdf:pdf},
+issn = {2162-237X},
+journal = {IEEE Transactions on Neural Networks and Learning Systems},
+mendeley-groups = {Dissertation,ICML-20},
+pages = {1--13},
+publisher = {IEEE},
+title = {{Learning Time Series Associated Event Sequences With Recurrent Point Process Networks}},
+url = {https://ieeexplore.ieee.org/document/8624540/},
+volume = {PP},
+year = {2019}
+}
+@article{xu2016learning,
+abstract = {Learning Granger causality for general point processes is a very challenging task. In this paper, we propose an effective method, learning Granger causality, for a special but significant type of point processes --- Hawkes process. We reveal the relationship between Hawkes process's impact function and its Granger causality graph. Specifically, our model represents impact functions using a series of basis functions and recovers the Granger causality graph via group sparsity of the impact functions' coefficients. We propose an effective learning algorithm combining a maximum likelihood estimator (MLE) with a sparse-group-lasso (SGL) regularizer. Additionally, the flexibility of our model allows to incorporate the clustering structure event types into learning framework. We analyze our learning algorithm and propose an adaptive procedure to select basis functions. Experiments on both synthetic and real-world data show that our method can learn the Granger causality graph and the triggering patterns of the Hawkes processes simultaneously.},
+archivePrefix = {arXiv},
+arxivId = {1602.04511},
+author = {Xu, Hongteng and Farajtabar, Mehrdad and Zha, Hongyuan},
+eprint = {1602.04511},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/International Conference on Machine Learning/Xu, Farajtabar, Zha - 2016 - Learning Granger Causality for Hawkes Processes.pdf:pdf},
+journal = {International Conference on Machine Learning},
+keywords = {Granger Causality,Hawkes Process,Variatioanl Inference},
+mendeley-groups = {Point Process,Dissertation,ICML-20},
+mendeley-tags = {Granger Causality,Hawkes Process,Variatioanl Inference},
+pages = {1717--1726},
+title = {{Learning Granger Causality for Hawkes Processes}},
+url = {http://arxiv.org/abs/1602.04511},
+volume = {48},
+year = {2016}
+}
+@article{Xu2015,
+abstract = {Inspired by recent work in machine translation and object detection, we introduce an attention based model that automatically learns to describe the content of images. We describe how we can train this model in a deterministic manner using standard backpropagation techniques and stochastically by maximizing a variational lower bound. We also show through visualization how the model is able to automatically learn to fix its gaze on salient objects while generating the corresponding words in the output sequence. We validate the use of attention with state-of-the-art performance on three benchmark datasets: Flickr8k, Flickr30k and MS COCO.},
+archivePrefix = {arXiv},
+arxivId = {1502.03044},
+author = {Xu, Kelvin and Ba, Jimmy and Kiros, Ryan and Cho, Kyunghyun and Courville, Aaron and Salakhutdinov, Ruslan and Zemel, Richard and Bengio, Yoshua},
+doi = {10.1109/72.279181},
+eprint = {1502.03044},
+isbn = {1045-9227 VO - 5},
+issn = {19410093},
+mendeley-groups = {ICML-20},
+pmid = {18267787},
+title = {{Show, Attend and Tell: Neural Image Caption Generation with Visual Attention}},
+url = {http://arxiv.org/abs/1502.03044},
+year = {2015}
+}
+@article{Zeiler2014,
+abstract = {Large Convolutional Network models have recently demonstrated impressive classification performance on the ImageNet benchmark Krizhevsky et al. [18]. However there is no clear understanding of why they perform so well, or how they might be improved. In this paper we explore both issues. We introduce a novel visualization technique that gives insight into the function of intermediate feature layers and the operation of the classifier. Used in a diagnostic role, these visualizations allow us to find model architectures that outperform Krizhevsky et al on the ImageNet classification benchmark. We also perform an ablation study to discover the performance contribution from different model layers. We show our ImageNet model generalizes well to other datasets: when the softmax classifier is retrained, it convincingly beats the current state-of-the-art results on Caltech-101 and Caltech-256 datasets. {\textcopyright} 2014 Springer International Publishing.},
+archivePrefix = {arXiv},
+arxivId = {1311.2901},
+author = {Zeiler, Matthew D. and Fergus, Rob},
+doi = {10.1007/978-3-319-10590-1_53},
+eprint = {1311.2901},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)/Zeiler, Fergus - 2014 - Visualizing and understanding convolutional networks.pdf:pdf;:Users/wei/Dropbox/Research/Mendeley Library/Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)/Zeiler, Fergus - 2014 - Visualizing and understanding convolutional networks(2).pdf:pdf},
+isbn = {9783319105895},
+issn = {16113349},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+mendeley-groups = {Dissertation,ICML-20},
+month = {nov},
+number = {PART 1},
+pages = {818--833},
+title = {{Visualizing and understanding convolutional networks}},
+volume = {8689 LNCS},
+year = {2014}
+}
+@article{zhang2011causality,
+author = {Zhang, David D and Lee, Harry F and Wang, Cong and Li, Baosheng and Pei, Qing and Zhang, Jane and An, Yulun},
+journal = {Proceedings of the National Academy of Sciences},
+mendeley-groups = {ICML-20,Dissertation},
+number = {42},
+pages = {17296--17301},
+publisher = {National Acad Sciences},
+title = {{The causality analysis of climate change and large-scale human crisis}},
+volume = {108},
+year = {2011}
+}
+@article{zhou2013learning,
+abstract = {How will the behaviors of individuals in a social network be influenced by their neighbors, the authorities and the communities? Such knowledge is often hidden from us and we only observe its manifestation in the form of recurrent and time-stamped events occurring at the individuals involved. It is an important yet challenging problem to infer the network of social inference based on the temporal patterns of these historical events. We propose a convex optimization approach to discover the hidden network of social influence by modeling the recurrent events at different individuals as multi-dimensional Hawkes processes. Furthermore, our estimation procedure, using nuclear and ℓ1ℓ1 norm regularization simultaneously on the parameters, is able to take into account the prior knowledge of the presence of neighbor interaction, authority influence, and community coordination. To efficiently solve the problem, we also design an algorithm ADM4 which combines techniques of alternating direction method of multipliers and majorization minimization. We experimented with both synthetic and real world data sets, and showed that the proposed method can discover the hidden network more accurately and produce a better predictive model.},
+annote = {Hawekes ADMM-MM (ADM4)},
+archivePrefix = {arXiv},
+arxivId = {1405.4175},
+author = {Zhou, Ke and Zha, Hongyuan and Song, Le},
+doi = {10.1007/978-3-662-44851-9_11},
+eprint = {1405.4175},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Proceedings of the 16th International Conference on Artificial Intelligence and Statistics/Zhou, Zha, Song - 2013 - Learning Social Infectivity in Sparse Low-rank Networks Using Multi-dimensional Hawkes Processes.pdf:pdf},
+isbn = {9783662448502},
+issn = {15337928},
+journal = {Proceedings of the 16th International Conference on Artificial Intelligence and Statistics},
+mendeley-groups = {Point Process,ICML-20,Dissertation},
+pages = {641--649},
+title = {{Learning Social Infectivity in Sparse Low-rank Networks Using Multi-dimensional Hawkes Processes}},
+url = {http://jmlr.org/proceedings/papers/v31/zhou13a.html},
+year = {2013}
+}
+@inproceedings{zhou2013learning,
+author = {Zhou, Ke and Zha, Hongyuan and Song, Le},
+booktitle = {Proceedings of the 30th International Conference on Machine Learning},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Proceedings of the 30th International Conference on Machine Learning/Zhou, Zha, Song - 2013 - Learning Triggering Kernels for Multi-dimensional Hawkes Processes.pdf:pdf},
+keywords = {Hawkes Process},
+mendeley-groups = {Point Process,Dissertation,ICML-20},
+mendeley-tags = {Hawkes Process},
+pages = {1301--1309},
+title = {{Learning Triggering Kernels for Multi-dimensional Hawkes Processes}},
+url = {http://jmlr.org/proceedings/papers/v28/zhou13.html},
+volume = {28},
+year = {2013}
+}
+@phdthesis{Zhu2013l,
+abstract = {The Hawkes process is a simple point process that has long memory, clustering effect, self-exciting property and is in general non-Markovian. The future evolution of a self-exciting point process is influenced by the timing of the past events. There are applications in finance, neuroscience, genome analysis, seismology, sociology, criminology and many other fields. We first survey the known results about the theory and applications of both linear and nonlinear Hawkes processes. Then, we obtain the central limit theorem and process-level, i.e. level-3 large deviations for nonlinear Hawkes processes. The level-1 large deviation principle holds as a result of the contraction principle. We also provide an alternative variational formula for the rate function of the level-1 large deviations in the Markovian case. Next, we drop the usual assumptions on the nonlinear Hawkes process and categorize it into different regimes, i.e. sublinear, sub-critical, critical, super-critical and explosive regimes. We show the different time asymptotics in different regimes and obtain other properties as well. Finally, we study the limit theorems of linear Hawkes processes with random marks.},
+archivePrefix = {arXiv},
+arxivId = {1304.7531},
+author = {Zhu, Lingjiong},
+eprint = {1304.7531},
+file = {:Users/wei/Dropbox/Research/Mendeley Library/Unknown/Zhu - 2013 - Nonlinear Hawkes Processes.pdf:pdf},
+keywords = {Nonlinear Hawkes Processes},
+mendeley-groups = {ICML-20,Dissertation},
+mendeley-tags = {Nonlinear Hawkes Processes},
+number = {May},
+title = {{Nonlinear Hawkes Processes}},
+url = {http://arxiv.org/abs/1304.7531},
+year = {2013}
+}

@@ -1,0 +1,13 @@
+We propose a probabilistic framework for modelling and exploring the latent
+structure of relational data. Given feature information for the nodes in a
+network, the scalable deep generative relational model (SDREM) builds a deep
+network architecture that can approximate potential nonlinear mappings between
+nodes' feature information and the nodes' latent representations. Our
+contribution is two-fold: (1) We incorporate high-order neighbourhood structure
+information to generate the latent representations at each node, which vary
+smoothly over the network. (2) Due to the Dirichlet random variable structure
+of the latent representations, we introduce a novel data augmentation trick
+which permits efficient Gibbs sampling. The SDREM can be used for large sparse
+networks as its computational cost scales with the number of positive links. We
+demonstrate its competitive performance through improved link prediction
+performance on a range of real-world datasets.

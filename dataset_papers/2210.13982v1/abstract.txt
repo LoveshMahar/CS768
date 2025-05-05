@@ -1,0 +1,18 @@
+We introduce the Lossy Implicit Network Activation Coding (LINAC) defence, an
+input transformation which successfully hinders several common adversarial
+attacks on CIFAR-$10$ classifiers for perturbations up to $\epsilon = 8/255$ in
+$L_\infty$ norm and $\epsilon = 0.5$ in $L_2$ norm. Implicit neural
+representations are used to approximately encode pixel colour intensities in
+$2\text{D}$ images such that classifiers trained on transformed data appear to
+have robustness to small perturbations without adversarial training or large
+drops in performance. The seed of the random number generator used to
+initialise and train the implicit neural representation turns out to be
+necessary information for stronger generic attacks, suggesting its role as a
+private key. We devise a Parametric Bypass Approximation (PBA) attack strategy
+for key-based defences, which successfully invalidates an existing method in
+this category. Interestingly, our LINAC defence also hinders some transfer and
+adaptive attacks, including our novel PBA strategy. Our results emphasise the
+importance of a broad range of customised attacks despite apparent robustness
+according to standard evaluations. LINAC source code and parameters of defended
+classifier evaluated throughout this submission are available:
+https://github.com/deepmind/linac

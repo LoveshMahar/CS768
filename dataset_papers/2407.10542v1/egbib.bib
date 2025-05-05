@@ -1,0 +1,2308 @@
+% Encoding: UTF-8
+
+@string{AAAI = {Proc. AAAI Conference on Artificial Intelligence (AAAI)}}
+@string{ACMMM = {Proc. ACM Multimedia Conference (ACMMM)}}
+@string{BMVC = {Proc. British Machine Vision Conference (BMVC)}}
+@string{CVIU = {Computer Vision and Image Understanding (CVIU)}}
+@string{CVPR = {Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}}
+@string{CVPRW = {Proc. IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)}}
+@string{ECCV = {Proc. European Conference on Computer Vision (ECCV)}}
+@string{ECCVW = {Proc. European Conference on Computer Vision Workshops (ECCVW)}}
+@string{ICCV = {Proc. IEEE International Conference on Computer Vision (ICCV)}}
+@string{ICLR = {International Conference on Learning Representations (ICLR)}}
+@string{ICLRW = {International Conference on Learning Representations Workshops (ICLRW)}}
+@string{ICML = {Proc. International Conference on Machine Learning (ICML)}}
+@string{MICCAI = {Proc. Medical Image Computing and Computer-Assisted Intervention (MICCAI)}}
+@string{WACV = {Proc. Winter Conference on Applications of Computer Vision (WACV)}}
+@string{NIPS = {Advances in Neural Information Processing Systems (NeurIPS)}}
+@string{MMM = {MultiMedia Modeling (MMM)}}
+@string{IJCAI = {Proc. International Joint Conference on Artificial Intelligence (IJCAI)}}
+
+@string{IJCV = {International Journal of Computer Vision (IJCV)}}
+@string{JMLR = {Journal of Machine Learning Research (JMLR)}}
+@string{TPAMI = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% [table of contents]
+%%   + geometric assembly
+%%   + few-shot semantic segmentation
+%%   + classic image representation
+%%   + deep learning and deep image representation 
+%%   + object detection: no deep learning
+%%   + object detection: deep learning
+%%   + semantic segmentation: no deep learning
+%%   + semantic segmentation: deep learning
+%%   + co-segmentation
+%%   + object proposals
+%%   + neural architecture search
+%%   + semantic correspondence
+%%   + wide-baseline matching
+%%   + multimodal learning
+%%   + depth estimation
+%%   + motion estimation
+%%   + datasets and evaluation
+%%   + misc. (not categorized yet) 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% geometric assembly
+@article{tian2022assemble,
+    title={Assemble Them All: Physics-Based Planning for Generalizable Assembly by Disassembly},
+    author={Tian, Yunsheng and Xu, Jie and Li, Yichen and Luo, Jieliang and Sueda, Shinjiro and Li, Hui and Willis, Karl D.D. and Matusik, Wojciech},
+    journal={ACM Trans. Graph.},
+    volume={41},
+    number={6},
+    articleno={278},
+    numpages={15},
+    year={2022},
+    publisher={ACM}
+}
+
+
+@inproceedings{sellan2022breakingbad,
+    title={Breaking Bad: A Dataset for Geometric Fracture and Reassembly},
+    author={Silvia Sell{\'a}n and Yun-Chun Chen and Ziyi Wu and Animesh Garg and Alec Jacobson},
+    booktitle={Thirty-sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track (NeurIPS)},
+    year={2022}
+}
+
+@inproceedings{swkim2022tfmatcher,
+    title={TransforMatcher:Match-to-Match Attention for Semantic Correspondence},
+    author={Kim, Seungwook and Min, Juhong and Cho, Minsu },
+    booktitle = CVPR,
+    year      = {2022}
+}
+
+@InProceedings{li2020global,
+    title     = {Learning Part Generation and Assembly for Structure-aware Shape Synthesis},
+    author    = {Jun Li and Chengjie Niu and Kai Xu},
+    booktitle = AAAI,
+    year      = {2020}
+}
+
+@InProceedings{schor2019componet,
+    title     = {CompoNet: Learning to Generate the Unseen by Part Synthesis and Composition},
+    author    = {Nadav Schor and Oren Katzir and Hao Zhang and Daniel Cohen-Or},
+    booktitle = ICCV,
+    year      = {2019}
+}
+
+@InProceedings{wu2020lstm,
+    title     = {PQ-NET: A Generative Part Seq2Seq Network for 3D Shapes},
+    author    = {Rundi Wu and Yixin Zhuang and Kai Xu and Hao Zhang and Baoquan Chen},
+    booktitle = CVPR,
+    year      = {2020}
+}
+
+@InProceedings{huang2020dgl,
+    title     = {Generative 3d part assembly via dynamic graph learning},
+    author    = {Jialei Huang and Guanqi Zhan and Qingnan Fan and Kaichun Mo and Lin Shao and Baoquan Chen and Leonidas Guibas and Hao Dong},
+    booktitle = NIPS,
+    year      = {2020}
+}
+
+@InProceedings{qin2022geotransformer,
+    title     = {Geometric Transformer for Fast and Robust Point Cloud Registration},
+    author    = {Zheng Qin and Hao Yu and Changjian Wang and Yulan Guo and Yuxing Peng and Kai Xu},
+    booktitle = CVPR,
+    year      = {2022}
+}
+
+@InProceedings{min2021hypercorrelation,
+   title={Hypercorrelation Squeeze for Few-Shot Segmentation},
+   author={Juhong Min and Dahyun Kang and Minsu Cho},
+   booktitle=ICCV,
+   year={2021}
+}
+
+@InProceedings{chen2022neural,
+  title={Neural shape mating: Self-supervised object assembly with adversarial shape priors},
+  author={Chen, Yun-Chun and Li, Haoda and Turpin, Dylan and Jacobson, Alec and Garg, Animesh},
+  booktitle=CVPR,
+  year={2022}
+}
+
+@article {Li_siga12,
+title = {Stackabilization},
+author = {Honghua Li and Ibraheem Alhashim and Hao Zhang and Ariel Shamir and Daniel Cohen-Or},
+journal = {ACM Transactions on Graphics, (Proc. of SIGGRAPH Asia 2012)},
+volume = {31},
+number = {6},
+year = {2012}
+}
+
+@article{chen2015dapper,
+  title={Dapper: decompose-and-pack for 3d printing.},
+  author={Chen, Xuelin and Zhang, Hao and Lin, Jinjie and Hu, Ruizhen and Lu, Lin and Huang, Qi-Xing and Benes, Bedrich and Cohen-Or, Daniel and Chen, Baoquan},
+  journal={ACM Trans. Graph.},
+  volume={34},
+  number={6},
+  pages={213--1},
+  year={2015},
+  publisher={Citeseer}
+}
+
+@inproceedings{jacobson2017generalized,
+  title={Generalized matryoshka: Computational design of nesting objects},
+  author={Jacobson, Alec},
+  booktitle={Computer Graphics Forum},
+  volume={36},
+  pages={27--35},
+  year={2017},
+  organization={Wiley Online Library}
+}
+
+@inproceedings{wang2019stable,
+  title={Stable bin packing of non-convex 3D objects with a robot manipulator},
+  author={Wang, Fan and Hauser, Kris},
+  booktitle={2019 International Conference on Robotics and Automation (ICRA)},
+  pages={8698--8704},
+  year={2019},
+  organization={IEEE}
+}
+
+@inproceedings{zeng2021transporter,
+  title={Transporter networks: Rearranging the visual world for robotic manipulation},
+  author={Zeng, Andy and Florence, Pete and Tompson, Jonathan and Welker, Stefan and Chien, Jonathan and Attarian, Maria and Armstrong, Travis and Krasin, Ivan and Duong, Dan and Sindhwani, Vikas and others},
+  booktitle={Conference on Robot Learning},
+  pages={726--747},
+  year={2021},
+  organization={PMLR}
+}
+
+@inproceedings{zakka2020form2fit,
+  title={Form2fit: Learning shape priors for generalizable assembly from disassembly},
+  author={Zakka, Kevin and Zeng, Andy and Lee, Johnny and Song, Shuran},
+  booktitle={2020 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={9404--9410},
+  year={2020},
+  organization={IEEE}
+}
+
+@article{cho2021cats,
+  title={Cats: Cost aggregation transformers for visual correspondence},
+  author={Cho, Seokju and Hong, Sunghwan and Jeon, Sangryul and Lee, Yunsung and Sohn, Kwanghoon and Kim, Seungryong},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={9011--9023},
+  year={2021}
+}
+
+@inproceedings{tulsiani2017learning,
+  title={Learning shape abstractions by assembling volumetric primitives},
+  author={Tulsiani, Shubham and Su, Hao and Guibas, Leonidas J and Efros, Alexei A and Malik, Jitendra},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={2635--2643},
+  year={2017}
+}
+
+@article{chung2021brick,
+  title={Brick-by-brick: Combinatorial construction with deep reinforcement learning},
+  author={Chung, Hyunsoo and Kim, Jungtaek and Knyazev, Boris and Lee, Jinhwi and Taylor, Graham W and Park, Jaesik and Cho, Minsu},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={5745--5757},
+  year={2021}
+}
+
+@article{jones2020shapeassembly,
+  title={Shapeassembly: Learning to generate programs for 3d shape structure synthesis},
+  author={Jones, R Kenny and Barton, Theresa and Xu, Xianghao and Wang, Kai and Jiang, Ellen and Guerrero, Paul and Mitra, Niloy J and Ritchie, Daniel},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={39},
+  number={6},
+  pages={1--20},
+  year={2020},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{khan2019unsupervised,
+  title={Unsupervised primitive discovery for improved 3D generative modeling},
+  author={Khan, Salman H and Guo, Yulan and Hayat, Munawar and Barnes, Nick},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={9739--9748},
+  year={2019}
+}
+
+@inproceedings{narayan2022rgl,
+  title={RGL-NET: A recurrent graph learning framework for progressive part assembly},
+  author={Narayan, Abhinav and Nagar, Rajendra and Raman, Shanmuganathan},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={78--87},
+  year={2022}
+}
+
+@inproceedings{willis2022joinable,
+  title={Joinable: Learning bottom-up assembly of parametric cad joints},
+  author={Willis, Karl DD and Jayaraman, Pradeep Kumar and Chu, Hang and Tian, Yunsheng and Li, Yifei and Grandi, Daniele and Sanghi, Aditya and Tran, Linh and Lambourne, Joseph G and Solar-Lezama, Armando and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={15849--15860},
+  year={2022}
+}
+
+@inproceedings{li2020learning,
+  title={Learning 3d part assembly from a single image},
+  author={Li, Yichen and Mo, Kaichun and Shao, Lin and Sung, Minhyuk and Guibas, Leonidas},
+  booktitle={Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part VI 16},
+  pages={664--682},
+  year={2020},
+  organization={Springer}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% few-shot semantic segmentation
+
+@InProceedings{gairola2020simpropnet,
+    title     = {SimPropNet: Improved Similarity Propagation for Few-shot Image Segmentation},
+    author    = {Siddhartha Gairola and Mayur Hemani and Ayush Chopra and and Balaji Krishnamurthy},
+    booktitle = IJCAI,
+    year      = {2020}
+}
+
+@InProceedings{fan2020fgn,
+    title     = {FGN: Fully Guided Network for Few-Shot Instance Segmentation},
+    author    = {Zhibo Fan and Jin-Gang Yu and Zhihao Liang and Jiarong Ou and Changxin Gao and Gui-Song Xia and Yuanqing Li},
+    booktitle = CVPR,
+    year      = {2020}
+}
+
+
+@InProceedings{tian2020differentiable,
+    title     = {Differentiable Meta-learning Model for Few-shot Semantic Segmentation},
+    author    = {Pinzhuo Tian and Zhangkai Wu and Lei Qi and Lei Wang and Yinghuan Shi and Yang Gao},
+    booktitle = AAAI,
+    year      = {2020}
+}
+
+@InProceedings{yang2020ltm,
+    title     = {A New Local Transformation Module for Few-Shot Segmentation},
+    author    = {Yuwei Yang and Fanman Meng and Hongliang Li and Qingbo Wu and Xiaolong Xu and Shuai Chen},
+    booktitle = MMM,
+    year      = {2020}
+}
+
+@InProceedings{shaban2017oslsm,
+    title     = {One-Shot Learning for Semantic Segmentation},
+    author    = {Shaban, Amirreza and Bansal, Shray and Liu, Zhen and Essa, Irfan and Boots, Byron},
+    booktitle = BMVC,
+    year      = {2017}
+}
+
+@InProceedings{rakelly2018cofcn,
+    title     = {Conditional Networks for Few-shot Semantic Segmentation},
+    author    = {Kate Rakelly and Evan Shelhamer and Trevor Darrell and Alexei Efros and Sergey Levine},
+    booktitle = ICLRW,
+    year      = {2018}
+}
+
+@InProceedings{malik2020repri,
+    author    = {Boudiaf, Malik and Kervadec, Hoel and Masud, Ziko Imtiaz and Piantanida, Pablo and Ben Ayed, Ismail and Dolz, Jose},
+    title     = {Few-Shot Segmentation Without Meta-Learning: A Good Transductive Inference Is All You Need?},
+    booktitle = CVPR,
+    year      = {2021},
+}
+
+@article{rakelly2018gnet,
+    title     = {Few-Shot Segmentation Propagation with Guided Networks},
+    author    = {Kate Rakelly and Evan Shelhamer and Trevor Darrell and Alexei Efros and Sergey Levine},
+    journal   = {arXiv preprint arXiv:1806.07373},
+    year      = {2018}
+}
+
+@InProceedings{dong2018pl,
+    title     = {Few-Shot Semantic Segmentation with Prototype Learning},
+    author    = {Nanqing Dong and Eric P. Xing},
+    booktitle = BMVC,
+    year      = {2018}
+}
+
+@article{zhang2020sgone,
+    title={Sg-one: Similarity guidance network for one-shot semantic segmentation},
+    author={Zhang, Xiaolin and Wei, Yunchao and Yang, Yi and Huang, Thomas S},
+    journal={IEEE Transactions on Cybernetics},
+    year={2020},
+    publisher={IEEE}
+}
+
+@InProceedings{zhang2019canet,
+    title     = {CANet: Class-Agnostic Segmentation Networks with Iterative Refinement and Attentive Few-Shot Learning},
+    author    = {Chi Zhang and Guosheng Lin and Fayao Liu and Rui Yao and Chunhua Shen},
+    booktitle = CVPR,
+    year      = {2019}
+}
+
+@InProceedings{siam2019amp,
+    author    = {Siam, Mennatullah and Oreshkin, Boris N. and Jagersand, Martin},
+    title     = {AMP: Adaptive Masked Proxies for Few-Shot Segmentation},
+    booktitle = ICCV,
+    year      = {2019}
+} 
+
+@InProceedings{zhang2019pgnet,
+    author    = {Chi Zhang and Guosheng Lin and Fayao Liu and Jiushuang Guo and Qingyao Wu and Rui Yao},
+    title     = {Pyramid Graph Networks with Connection Attentions for Region-Based One-Shot Semantic Segmentation},
+    booktitle = ICCV,
+    year      = {2019}
+} 
+
+@InProceedings{wang2019panet,
+    author    = {Wang, Kaixin and Liew, Jun Hao and Zou, Yingtian and Zhou, Daquan and Feng, Jiashi},
+    title     = {PANet: Few-Shot Image Semantic Segmentation With Prototype Alignment},
+    booktitle = ICCV,
+    year      = {2019}
+}
+
+@InProceedings{nguyen2019fwb,
+    author    = {Khoi Nguyen and Sinisa Todorovic},
+    title     = {Feature Weighting and Boosting for Few-Shot Segmentation},
+    booktitle = ICCV,
+    year      = {2019}
+}
+
+@InProceedings{li2020fss1000,
+    author    = {Xiang Li and Tianhan Wei and Yau Pun Chen and Yu-Wing Tai and Chi-Keung Tang},
+    title     = {FSS-1000: A 1000-Class Dataset for Few-Shot Segmentation},
+    year      = {2020},
+    booktitle = CVPR,
+}
+
+@InProceedings{liu2020crnet,
+    author    = {Weide Liu and Chi Zhang and Guosheng Lin and Fayao Liu},
+    title     = {CRNet: Cross-Reference Networks for Few-Shot Segmentation},
+    year      = {2020},
+    booktitle = CVPR,
+}
+
+@InProceedings{liu2020ppnet,
+    title     = {Part-aware Prototype Network for Few-shot Semantic Segmentation},
+    author    = {Liu, Yongfei and Zhang, Xiangyi and Zhang, Songyang and He, Xuming},
+    booktitle = ECCV,
+    year      = {2020},
+}
+
+@InProceedings{yang2020pmm,
+    title     = {Prototype Mixture Models for Few-shot Semantic Segmentation},
+    author    = {Boyu Yang and Chang Liu and Bohao Li and Jianbin Jiao and Ye Qixiang},
+    booktitle = ECCV,
+    year      = {2020}
+}
+
+@InProceedings{wang2020dan,
+    title     = {Few-Shot Semantic Segmentation with Democratic Attention Networks},
+    author    = {Haochen Wang and Xudong Zhang and Yutao Hu and Yandan Yang and Xianbin Cao and Xiantong Zhen},
+    booktitle = ECCV,
+    year      = {2020}
+}
+
+@InProceedings{tian2020pfenet,
+    title     = {Prior Guided Feature Enrichment Network for Few-Shot Segmentation},
+    author    = {Tian, Zhuotao and Zhao, Hengshuang and Shu, Michelle and Yang, Zhicheng and Li, Ruiyu and Jia, Jiaya},
+    booktitle = TPAMI,
+    year      = {2020}
+}
+
+@InProceedings{azad2021doglstm,
+    title     = {On the Texture Bias for Few-Shot CNN Segmentation},
+    author    = {Reza Azad and Abdur R Fayjie and Claude Kauffman and Ismail Ben Ayed and Marco Pedersoli1 and Jose Dolz1},
+    booktitle = WACV,
+    year      = {2021}
+}
+
+@InProceedings{hu2019amcg,
+    title     = {Attention-Based Multi-Context Guiding for Few-Shot Semantic Segmentation},
+    author    = {Tao Hu and Pengwan Yang and Chiliang Zhang and Gang Yu and Yadong Mu and Cees G. M. Snoek},
+    booktitle = AAAI,
+    year      = {2019}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% classic image representation
+@InProceedings{dalal2005histograms,
+    author    = {Navneet Dalal and Bill Triggs},
+    title     = {Histograms of Oriented Gradients for Human Detection},
+    booktitle = CVPR,
+    year      = {2005},
+    pages     = {886--893}
+}
+
+@ARTICLE{lowe2004sift,
+    author    = {David G. Lowe},
+    title     = {Distinctive Image Features from Scale-Invariant Keypoints},
+    journal   = {IJCV},
+    year      = {2004},
+    volume    = {60},
+    pages     = {91--110}
+}
+@InProceedings{lowe1999sift,
+    author    = {David G. Lowe},
+    booktitle = ICCV, 
+    title     = {Object recognition from local scale-invariant features}, 
+    year      = {1999},
+    volume    = {2},
+    number    = {},
+    pages     = {1150-1157 vol.2}
+}
+
+@InProceedings{cho2009agglomerative,
+    author    = {Minsu Cho and Jungmin Lee and Kyoung Mu Lee},
+    booktitle = ICCV, 
+    title     = {Feature Correspondence and Deformable Object Matching via Agglomerative Correspondence Clustering}, 
+    year      = {2009},
+}
+  
+
+@InProceedings{bay2006surf,
+    author={Bay, Herbert and Tuytelaars, Tinne and Van Gool, Luc},
+    title={SURF: Speeded Up Robust Features},
+    booktitle=ECCV,
+    year=2006,
+    publisher={Springer Berlin Heidelberg},
+    pages="404--417",
+    isbn="978-3-540-33833-8"
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% deep learning and deep image representation 
+
+@InProceedings{he2016deep,
+    title     = {Deep residual learning for image recognition},
+    author    = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+    booktitle = CVPR,
+    pages     = {770--778},
+    year      = {2016}
+}
+
+@InProceedings{krizhevsky2012imagenet,
+    title={Imagenet classification with deep convolutional neural networks},
+    author={Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+    booktitle=NIPS,
+    pages={1097--1105},
+    year={2012}
+}
+
+@InProceedings{zpoh2018cvpr,
+    author    = {Zoph, Barret and Vasudevan, Vijay and Shlens, Jonathon and Le, Quoc V.},
+    title     = {Learning Transferable Architectures for Scalable Image Recognition},
+    booktitle = CVPR,
+    month     = {June},
+    year      = {2018}
+}
+
+@InProceedings{simonyan2015vgg,
+    author    = {Karen Simonyan and Andrew Zisserman},
+    title     = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
+    booktitle = ICLR,
+    year      = {2015}
+}
+
+@InProceedings{huang2015dense,
+    author    = {Gao Huang* and Zhuang Liu* and Laurens van der Maaten and Kilian Weinberger},
+    title     = {Densely Connected Convolutional Networks },
+    booktitle = CVPR,
+    year      = {2017}
+}
+
+@InProceedings{hu2017senet,
+    author    = {Jie Hu and Li Shen and Gang Sun},
+    title     = {Squeeze-and-Excitation Networks},
+    booktitle = CVPR,
+    year      = {2018}
+}
+
+@InProceedings{yang2017object,
+    title     = {Object-aware dense semantic correspondence},
+    author    = {Yang, Fan and Li, Xin and Cheng, Hong and Li, Jianping and Chen, Leiting},
+    booktitle = CVPR,
+    pages     = {2777--2785},
+    year      = {2017}
+}
+
+@article{ba2016layernorm,
+    author   = {Ba, Jimmy and Kiros, Jamie and Hinton, Geoffrey},
+    year     = {2016},
+    month    = {07},
+    journal  = {arXiv preprint arXiv:1607.06450},
+    title    = {Layer Normalization}
+}
+
+@InProceedings{veit2018convolutional,
+    title     = {Convolutional networks with adaptive inference graphs},
+    author    = {Veit, Andreas and Belongie, Serge},
+    booktitle = ECCV,
+    pages     = {3--18},
+    year      = {2018}
+}
+
+@InProceedings{srivastava2015highway,
+    title     = {Highway Networks},
+    author    = {Rupesh Kumar Srivastava and Klaus Greff and Jürgen Schmidhuber},
+    booktitle = ICML,
+    year      = {2015}
+}
+
+@InProceedings{figurnov2017spatially,
+    title     = {Spatially adaptive computation time for residual networks},
+    author    = {Figurnov, Michael and Collins, Maxwell D and Zhu, Yukun and Zhang, Li and Huang, Jonathan and Vetrov, Dmitry and Salakhutdinov, Ruslan},
+    booktitle = CVPR,
+    pages     = {1039--1048},
+    year      = {2017}
+}
+
+@InProceedings{zeiler2014visual,
+    title     = {Visualizing and Understanding Convolutional Networks},
+    author    = {Matthew D Zeiler and Rob Fergus},
+    booktitle = ECCV,
+    year      = {2014}
+}
+
+@InProceedings{gao2018dynamic,
+    title     = {Dynamic Channel Pruning: Feature Boosting and Suppression},
+    author    = {Gao, Xitong and Zhao, Yiren and Dudziak, Lukasz and Mullins, Robert and Xu, Cheng-zhong},
+    booktitle = ICLR,
+    year      = {2019}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% object detection: no deep learning
+
+@InProceedings{zhang2009efficient,
+    author={Y. Zhang and T. Chen},
+    booktitle=CVPR, 
+    title={Efficient Kernels for identifying unbounded-order spatial features}, 
+    year={2009},
+    pages={1762-1769}
+}
+  
+@InProceedings{rubinstein2013unsupervised,
+    title     = {Unsupervised joint object discovery and segmentation in internet images},
+    author    = {Rubinstein, Michael and Joulin, Armand and Kopf, Johannes and Liu, Ce},
+    booktitle = CVPR,
+    pages     = {1939--1946},
+    year      = {2013}
+}
+
+@InProceedings{chen_cvpr14,
+    author       = {Xianjie Chen and Roozbeh Mottaghi and Xiaobai Liu and Sanja Fidler and Raquel Urtasun and Alan Yuille},
+    title        = {Detect What You Can: Detecting and Representing Objects using Holistic Models and Body Parts},
+    booktitle    = CVPR,
+    year         = {2014},
+}
+
+@InProceedings{cho2015unsupervised,
+    title     = {Unsupervised object discovery and localization in the wild: Part-based matching with bottom-up region proposals},
+    author    = {Cho, Minsu and Kwak, Suha and Schmid, Cordelia and Ponce, Jean},
+    booktitle = CVPR,
+    year      = {2015}
+}
+
+	
+@InProceedings{leibe2003interleaved,
+    title = {Interleaved Object Categorization and Segmentation},
+    author = {Leibe, B. and Schiele, B.},
+    year = {2003},
+    pages = {78.1-78.10},
+    booktitle = BMVC,
+    publisher = {BMVA Press},
+    editors = {Harvey, Richard and Bangham, Andrew},
+    isbn = {1-901725-23-5},
+    note = {doi:10.5244/C.17.78}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% object detection: deep learning
+
+@InProceedings{kong2016hypernet,
+    title     = {Hypernet: Towards accurate region proposal generation and joint object detection},
+    author    = {Kong, Tao and Yao, Anbang and Chen, Yurong and Sun, Fuchun},
+    booktitle = CVPR,
+    pages     = {845--853},
+    year      = {2016}
+}
+
+@InProceedings{lin2017feature,
+    title     = {Feature pyramid networks for object detection},
+    author    = {Lin, Tsung-Yi and Doll{\'a}r, Piotr and Girshick, Ross and He, Kaiming and Hariharan, Bharath and Belongie, Serge},
+    booktitle = CVPR,
+    pages     = {2117--2125},
+    year      = {2017}
+}
+
+@inproceedings{liu2018receptive,
+    title     = {Receptive field block net for accurate and fast object detection},
+    author    = {Liu, Songtao and Huang, Di and others},
+    booktitle = ECCV,
+    pages     = {385--400},
+    year      = {2018}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% semantic segmentation: no deep learning
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% semantic segmentation: deep learning
+
+@InProceedings{cermelli2020modeling,
+    author    = {Cermelli, Fabio and Mancini, Massimiliano and Bulo, Samuel Rota and Ricci, Elisa and Caputo, Barbara},
+    title     = {Modeling the Background for Incremental Learning in Semantic Segmentation},
+    booktitle = CVPR,
+    year      = {2020}
+}
+
+@InProceedings{wang2020dualsuper,
+    author    = {Wang, Li and Li, Dong and Zhu, Yousong and Tian, Lu and Shan, Yi},
+    title     = {Dual Super-Resolution Learning for Semantic Segmentation},
+    booktitle = CVPR,
+    year      = {2020}
+}
+
+@InProceedings{peng2017global,
+    author    = {Peng, Chao and Zhang, Xiangyu and Yu, Gang and Luo, Guiming and Sun, Jian},
+    title     = {Large Kernel Matters -- Improve Semantic Segmentation by Global Convolutional Network},
+    booktitle = CVPR,
+    year      = {2017}
+}
+
+
+@InProceedings{luo2020semiseg,
+    title     = {Semi-supervised Semantic Segmentation via Strong-weak Dual-branch Network},
+    author    = {Wenfeng Luo and Meng Yang},
+    booktitle = ECCV,
+    year      = {2020}
+}
+
+@InProceedings{koh2020sideinfnet,
+    title     = {SideInfNet: A Deep Neural Network for Semi-Automatic Semantic Segmentation with Side Information},
+    author    = {Jing Yu Koh and Duc Thanh Nguyen and Quang-Trung Truong and Sai-Kit Yeung and Alexander Binder},
+    booktitle = ECCV,
+    year      = {2020}
+}
+
+@InProceedings{veksler2020regularized,
+    title     = {Regularized Loss for Weakly Supervised Single Class Semantic Segmentation},
+    author    = {Olga Veksler},
+    booktitle = ECCV,
+    year      = {2020}
+}
+
+@InProceedings{sun2020mining,
+    title     = {Mining Cross-Image Semantics for Weakly Supervised Semantic Segmentation},
+    author    = {Guolei Sun and Wenguan Wang and Jifeng Dai and Luc Van Gool},
+    booktitle = ECCV,
+    year      = {2020}
+}
+
+@InProceedings{fan2020employing,
+    title     = {Employing Multi-Estimations for Weakly-Supervised Semantic Segmentation},
+    author    = {Junsong Fan and Zhaoxiang Zhang and Tieniu Tan},
+    booktitle = ECCV,
+    year      = {2020}
+}
+
+@InProceedings{zhang2020splitting,
+    title     = {Splitting vs. Merging: Mining Object Regions with Discrepancy and Intersection Loss for Weakly Supervised Semantic Segmentation},
+    author    = {Tianyi Zhang and Guosheng Lin and Weide Liu and Jianfei Cai and Alex Kot},
+    booktitle = ECCV,
+    year      = {2020}
+}
+
+@InProceedings{fan2020learning,
+    author    = {Fan, Junsong and Zhang, Zhaoxiang and Song, Chunfeng and Tan, Tieniu},
+    title     = {Learning Integral Objects With Intra-Class Discriminator for Weakly-Supervised Semantic Segmentation},
+    booktitle = CVPR,
+    year      = {2020}
+}
+
+@InProceedings{chang2020weakly,
+    author    = {Chang, Yu-Ting and Wang, Qiaosong and Hung, Wei-Chih and Piramuthu, Robinson and Tsai, Yi-Hsuan and Yang, Ming-Hsuan},
+    title     = {Weakly-Supervised Semantic Segmentation via Sub-Category Exploration},
+    booktitle = CVPR,
+    year      = {2020}
+}
+
+@InProceedings{wang2020selfweak,
+    author    = {Wang, Yude and Zhang, Jie and Kan, Meina and Shan, Shiguang and Chen, Xilin},
+    title     = {Self-Supervised Equivariant Attention Mechanism for Weakly Supervised Semantic Segmentation},
+    booktitle = CVPR,
+    year      = {2020}
+}
+
+@InProceedings{ahn2019weakly,
+    author    = {Jiwoon Ahn and Sunghyun Cho and Suha Kwak},
+    title     = {Weakly Supervised Learning of Instance Segmentation with Inter-pixel Relations},
+    booktitle = CVPR,
+    year      = {2019}
+}
+
+@InProceedings{ahn2018weakly,
+    author    = {Jiwoon Ahn and Suha Kwak},
+    title     = {Learning Pixel-level Semantic Affinity with Image-level Supervision for Weakly Supervised Semantic Segmentation},
+    booktitle = CVPR,
+    year      = {2018}
+}
+
+@InProceedings{hariharan2014sds,
+    title     = {Simultaneous Detection and Segmentation},
+    author    = {Bharath Hariharan and Pablo Arbeláez and Ross Girshick and Jitendra Malik},
+    booktitle = ECCV,
+    year      = {2014}
+}
+
+@article{lin2015coco,
+    title     = {Microsoft COCO: Common Objects in Context},
+    author    = {Tsung-Yi Lin and Michael Maire and Serge Belongie and Lubomir Bourdev and Ross Girshick and James Hays and Pietro Perona and Deva Ramanan and C. Lawrence Zitnick and Piotr Dollár},
+    journal   = {arXiv preprint arXiv:1504.00325},
+    year      = {2015}
+}
+
+@InProceedings{chen2018deeplabv3,
+    title     = {Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation},
+    author    = {Liang-Chieh Chen and Yukun Zhu and George Papandreou and Florian Schroff and Hartwig Adam},
+    booktitle = ECCV,
+    year      = {2018}
+}
+
+@InProceedings{noh2015learning,
+  title     = {Learning Deconvolution Network for Semantic Segmentation},
+  author    = {Noh, Hyeonwoo and Hong, Seunghoon and Han, Bohyung},
+  booktitle = ICCV,
+  year      = {2015}
+} 
+
+@article{shelhamer2017fcn,
+    title   = {Fully Convolutional Networks for Semantic Segmentation},
+    author  = {Shelhamer, Evan and Long, Jonathan and Darrell, Trevor},
+    journal = TPAMI,
+    year    = {2017}
+}
+
+@article{olaf2015unet,
+    title   = {U-Net: Convolutional Networks for Biomedical Image Segmentation},
+    author  = {Olaf Ronneberger, Philipp Fischer, Thomas Brox},
+    journal = MICCAI,
+    year    = {2015}
+}
+
+
+
+@InProceedings{hariharan2015hypercolumns,
+    title     = {Hypercolumns for object segmentation and fine-grained localization},
+    author    = {Hariharan, Bharath and Arbel{\'a}ez, Pablo and Girshick, Ross and Malik, Jitendra},
+    booktitle = CVPR,
+    pages     = {447--456},
+    year      = {2015}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% co-segmentation
+
+@InProceedings{yang2014daisy,
+    author    = {Hongsheng Yang and Wen-Yan Lin and Jiangbo Lu},
+    booktitle = CVPR, 
+    title     = {DAISY Filter Flow: A Generalized Discrete Approach to Dense Correspondences}, 
+    year      = {2014},
+}
+
+@article{chen2020show,
+    author  = {Yun-Chun Chen and Yen-Yu Lin and Ming-Hsuan Yang and Jia-Bin Huang},
+    title   = {Show, Match and Segment: Joint Weakly Supervised Learning of Semantic Matching and Object Co-segmentation}, 
+    journal = TPAMI, 
+    year={2020}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% object proposals
+
+@InProceedings{manen2013prime,
+    title     = {Prime object proposals with randomized prim's algorithm},
+    author    = {Manen, Santiago and Guillaumin, Matthieu and Van Gool, Luc},
+    booktitle = ICCV,
+    pages     = {2536--2543},
+    year      = {2013}
+}
+
+@article{pont2017multiscale,
+    title   = {Multiscale combinatorial grouping for image segmentation and object proposal generation},
+    author  = {Pont-Tuset, Jordi and Arbelaez, Pablo and Barron, Jonathan T and Marques, Ferran and Malik, Jitendra},
+    journal = TPAMI,
+    volume  = {39},
+    number  = {1},
+    pages   = {128--140},
+    year    = {2017},
+    publisher = {IEEE}
+}
+
+@article{uijlings2013selective,
+    title   = {Selective search for object recognition},
+    author  = {Uijlings, Jasper RR and Van De Sande, Koen EA and Gevers, Theo and Smeulders, Arnold WM},
+    journal = IJCV,
+    volume  = {104},
+    number  = {2},
+    pages   = {154--171},
+    year    = {2013},
+    publisher = {Springer}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% neural architecture search
+
+@InProceedings{maddison2017concrete,
+    title     = {The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables},
+    author    = {Maddison, Christopher and Mnih, Andriy and Whye Teh, Yee},
+    booktitle = ICLR,
+    year      = {2017}
+}
+
+@InProceedings{eric2017categorical,
+    title     = {Categorical Reparameterization with Gumbel-Softmax},
+    author    = {Eric Jang and Shixiang Gu and Ben Poole},
+    booktitle = ICLR,
+    year      = {2017}
+}
+
+@InProceedings{liu2018darts,
+    title     = {{DARTS}: Differentiable architecture search},
+    author    = {Liu, Hanxiao and Simonyan, Karen and Yang, Yiming},
+    booktitle = ICLR,
+    year      = {2019}
+}
+
+@article{randomwire,
+    title   = {Exploring Randomly Wired Neural Networks for Image Recognition},
+    author  = {Saining Xie and Alexander Kirillov and Ross B. Girshick and Kaiming He},
+    journal = ICCV,
+    year    = {2019}
+}
+
+@InProceedings{zoph2016neural,
+    title     = {Neural architecture search with reinforcement learning},
+    author    = {Zoph, Barret and Le, Quoc V},
+    booktitle = ICLR,
+    year      = {2017}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Graph matching
+
+
+@InProceedings{zanfir2020deep,
+    title     = {Deep Learning of Graph Matching},
+    author    = {Andrei Zanfir and Cristian Sminchisescu},
+    booktitle = {CVPR},
+    year      = {2020}
+}
+
+@InProceedings{yu2020learning,
+    title     = {Learning deep graph matching with channel-independent embedding and hungarian attention},
+    author    = {Tianshu Yu and Runzhong Wang and Junchi Yan and Baoxin Li},
+    booktitle = {ICLR},
+    year      = {2020}
+}
+
+@article{wang2019neural,
+    title   = {Neural Graph Matching Network: Learning Lawler's Quadratic Assignment Problem with Extension to Hypergraph and Multiple-graph Matching},
+    author  = {Runzhong Wang and Junchi Yan and Xiaokang Yang},
+    journal = {arXiv preprint arXiv:1911.11308},
+    year    = {2019}
+}
+
+@article{jiang2019glmnet,
+    title   = {GLMNet: Graph Learning-Matching Networks for Feature Matching},
+    author  = {Bo Jiang and Pengfei Sun and Jin Tang and Bin Luo},
+    journal = {arXiv preprint arXiv:1911.07681},
+    year    = {2019}
+}
+
+
+@InProceedings{wang2019learningcomb,
+    title     = {Learning Combinatorial Embedding Networks for Deep Graph Matching},
+    author    = {Runzhong Wang and Junchi Yan and Xiaokang Yang},
+    booktitle = {ICCV},
+    year      = {2019}
+}
+
+@InProceedings{fey2020deep,
+    title     = {Deep Graph Matching Consensus},
+    author    = {Matthias Fey and Jan E. Lenssen and Christopher Morris and Jonathan Masci and Nils M. Kriege},
+    booktitle = {ICLR},
+    year      = {2020}
+}
+
+
+
+
+
+@InProceedings{li2020structured,
+    title     = {Structured Landmark Detection via Topology-Adapting Deep Graph Learning},
+    author    = {Weijian Li and Yuhang Lu and Kang Zheng and Haofu Liao and Chihung Lin and Jiebo Luo and Chi-Tung Cheng and Jing Xiao and Le Lu and Chang-Fu Kuo and Shun Miao},
+    booktitle = ECCV,
+    year      = {2020}
+}
+
+@InProceedings{rolinek2020deep,
+    title     = {Deep Graph Matching via Blackbox Differentiation of Combinatorial Solvers},
+    author    = {Michal Rolínek and Paul Swoboda and Dominik Zietlow and Anselm Paulus and Vít Musil and Georg Martius},
+    booktitle = ECCV,
+    year      = {2020}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Human perception
+
+@article{markman1989chlidren,
+    title   = {Categorization and naming in children: Problems of induction},
+    author  = {Ellen M. Markman},
+    journal = {MIT Press},
+    year    = {1989}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Visual tracking
+@InProceedings{wu2013obtbenchmark,
+    title     = {Online Object Tracking: A Benchmark},
+    author    = {Yi Wu and Jongwoo Lim and Ming-Hsuan Yang},
+    booktitle = CVPR,
+    year      = {2013}
+}
+
+@InProceedings{nam2015mdnet,
+    title     = {Learning Multi-Domain Convolutional Neural Networks for Visual Tracking},
+    author    = {Hyeonseob Nam and Bohyung Han},
+    booktitle = CVPR,
+    year      = {2016}
+}
+
+@InProceedings{li2019simrpnpp,
+    author    = {Li, Bo and Wu, Wei and Wang, Qiang and Zhang, Fangyi and Xing, Junliang and Yan, Junjie},
+    title     = {SiamRPN++: Evolution of Siamese Visual Tracking With Very Deep Networks},
+    booktitle = CVPR,
+    year      = {2019}
+}
+
+@InProceedings{li2019siammask,
+    author    = {Bo Li and Wei Wu and Qiang Wang and Fangyi Zhang and Junliang Xing and Junjie Yan},
+    title     = {Fast Online Object Tracking and Segmentation: A Unifying Approach},
+    booktitle = CVPR,
+    year      = {2019}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Hough transform
+
+@InProceedings{sultani2016what,
+    title     = {What if we do not have multiple videos of the same action? — Video Action Localization Using Web Images},
+    author    = {Waqas Sultani and Mubarak Shah},
+    booktitle = CVPR,
+    year      = {2016}
+}
+
+
+@InProceedings{kawk2015unsupervised,
+    title     = {Unsupervised Object Discovery and Tracking in Video Collections},
+    author    = {Suha Kwak and Minsu Cho and Ivan Laptev and Jean Ponce and Cordelia Schmid},
+    booktitle = ICCV,
+    year      = {2015}
+}
+
+@article{Knopp2011SceneCC,
+    title={Scene Cut: Class-Specific Object Detection and Segmentation in 3D Scenes},
+    author={J. Knopp and M. Prasad and L. Gool},
+    journal={2011 International Conference on 3D Imaging, Modeling, Processing, Visualization and Transmission},
+    year={2011},
+    pages={180-187}
+}
+
+@inproceedings{jan2010orientation,
+    author = {Knopp, Jan and Prasad, Mukta and Van Gool, Luc},
+    title = {Orientation Invariant 3D Object Classification Using Hough Transform Based Methods},
+    year = {2010},
+    isbn = {9781450301602},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1877808.1877813},
+    doi = {10.1145/1877808.1877813},
+    abstract = {In comparison to the 2D case, object class recognition in 3D is a much less researched area. However, with the advent of affordable 3D acquisition technology and the growing popularity of 3D content, its relevance is steadily increasing. Just as in the 2D case, 3D data is often partial, noisy and without prior segmentation. Moreover, the object is rarely observed in a canonical frame of reference with respect to orientation (or scale). We propose a method, using Hough-voting for local 3D features, which is orientation (and scale) invariant.},
+    booktitle = {Proceedings of the ACM Workshop on 3D Object Retrieval},
+    pages = {15–20},
+    numpages = {6},
+    keywords = {hough transform, shape descriptors, orientation invariant, shape classification, SVM},
+    location = {Firenze, Italy},
+    series = {3DOR '10}
+}
+
+
+@InProceedings{sun2010depth,
+    title     = {Depth-Encoded Hough Voting for Joint Object Detection and Shape Recovery},
+    author    = {Min Sun and Gary Bradski and Bing-Xin Xu and Silvio Savarese},
+    booktitle = ECCV,
+    year      = {2010}
+}
+
+@InProceedings{novotny2018semi,
+    title     = {Semi-convolutional Operators for Instance Segmentation},
+    author    = {David Novotny and Samuel Albanie and Diane Larlus and Andrea Vedaldi},
+    booktitle = ECCV,
+    year      = {2018}
+}
+
+@article{MILLETARI201792,
+    title = "Hough-CNN: Deep learning for segmentation of deep brain regions in MRI and ultrasound",
+    journal = "Computer Vision and Image Understanding",
+    volume = "164",
+    pages = "92 - 102",
+    year = "2017",
+    note = "Deep Learning for Computer Vision",
+    issn = "1077-3142",
+    doi = "https://doi.org/10.1016/j.cviu.2017.04.002",
+    url = "http://www.sciencedirect.com/science/article/pii/S1077314217300620",
+    author = "Fausto Milletari and Seyed-Ahmad Ahmadi and Christine Kroll and Annika Plate and Verena Rozanski and Juliana Maiostre and Johannes Levin and Olaf Dietrich and Birgit Ertl-Wagner and Kai Bötzel and Nassir Navab"
+}
+
+@InProceedings{kehl2016eccv,
+    title     = {Deep Learning of Local RGB-D Patches for 3D Object Detection and 6D Pose Estimation},
+    author    = {Wadim Kehl and Fausto Milletari and Federico Tombari and Slobodan Ilic and Nassir Navab},
+    booktitle = ECCV,
+    year      = {2016}
+}
+
+@InProceedings{huan2017vehicle,
+    title     = {Vehicle Logo Retrieval Based on Hough Transform and Deep Learning},
+    author    = {Li Huan and Qin Yujian and Wang Li},
+    booktitle = {ICCV},
+    year      = {2017}
+}
+
+@Inbook{Gall2013,
+    author="Gall, J.
+    and Lempitsky, V.",
+    editor="Criminisi, A.
+    and Shotton, J.",
+    title="Class-Specific Hough Forests for Object Detection",
+    bookTitle="Decision Forests for Computer Vision and Medical Image Analysis",
+    year="2013",
+    pages="143--157"
+}
+
+@InProceedings{qi2019deep,
+    title     = {Deep Hough Voting for 3D Object Detection in Point Clouds},
+    author    = {Charles R. Qi and Or Litany and Kaiming He and Leonidas J. Guibas},
+    booktitle = {ICCV},
+    year      = {2019}
+}
+
+@InProceedings{chen2013robust,
+    title     = {Robust Feature Matching with Alternate Hough and Inverted Hough Transforms},
+    author    = {Hsin-Yi Chen and Yen-Yu Lin and Bing-Yu Chen},
+    booktitle = {CVPR},
+    year      = {2013}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% semantic correspondence
+
+@InProceedings{min2021chm, 
+    author    = {Min, Juhong and Cho, Minsu},
+    title     = {Convolutional Hough Matching Networks},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {2940-2950}
+}
+
+@inproceedings{li20dualrc,
+    author	  = {Xinghui Li and Kai Han and Shuda Li and Victor Prisacariu},
+    title     = {Dual-Resolution Correspondence Networks},
+    booktitle = NIPS,
+    year      = {2020},
+}
+
+@InProceedings{liu2020semantic,
+    title     = {Semantic Correspondence as an Optimal Transport Problem},
+    author    = {Liu, Yanbin and Zhu, Linchao and Yamada, Makoto and Yang, Yi},
+    booktitle = CVPR,
+    year      = {2020}
+}
+
+@InProceedings{min2020dhpf, 
+    title={Learning to Compose Hypercolumns for Visual Correspondence},
+    author={Juhong Min and Jongmin Lee and Jean Ponce and Minsu Cho},
+    booktitle=ECCV,
+    year={2020}
+}
+
+@InProceedings{jeon2020guided,
+    title={Guided Semantic Flow},
+    author={Sangryul Jeon and Dongbo Min and Seungryong Kim and Jihwan Choe and Kwanghoon Sohn},
+    booktitle=ECCV,
+    year={2020}
+}
+
+@InProceedings{cho2012progressive,
+    author={Minsu Cho and Kyoung Mu Lee},
+    title={Progressive graph matching: Making a move of graphs via probabilistic voting}, 
+    booktitle=CVPR, 
+    year={2012}
+}
+
+@ARTICLE{yan2016multigraph,
+    author={J. {Yan} and M. {Cho} and H. {Zha} and X. {Yang} and S. M. {Chu}},
+    journal=TPAMI, 
+    title={Multi-Graph Matching via Affinity Optimization with Graduated Consistency Regularization}, 
+    year={2016},
+    volume={38},
+    number={6},
+    pages={1228-1242},
+}
+
+@InProceedings{cho2010reweighted,
+    author={Minsu Cho and Jungmin Lee and Kyoung Mu Lee},
+    booktitle=ECCV, 
+    title={Reweighted Random Walks for Graph Matching}, 
+    year={2010}
+}
+
+
+
+@article{avrithis2014houghpyramid,
+    title   = {Hough Pyramid Matching: Speeded-Up Geometry Re-ranking for Large Scale Image Retrieval},
+    author  = {Avrithis, Yannis and Tolias, Giorgos},
+    journal = IJCV,
+    year    = {2014},
+    month   = {Mar},
+    day     = {01},
+    volume  = {107},
+}
+
+@article{liu2011sift,
+    title     = {Sift flow: Dense correspondence across scenes and its applications},
+    author    = {Liu, Ce and Yuen, Jenny and Torralba, Antonio},
+    journal   = TPAMI,
+    year      = {2011}
+}
+
+@InProceedings{schonberger2017comparative,
+    title     = {Comparative evaluation of hand-crafted and learned local features},
+    author    = {Schonberger, Johannes L and Hardmeier, Hans and Sattler, Torsten and Pollefeys, Marc},
+    booktitle = CVPR,
+    year      = {2017}
+}
+
+@InProceedings{min2019hyperpixel, 
+   title     = {Hyperpixel Flow: Semantic Correspondence with Multi-layer Neural Features},
+   author    = {Juhong Min and Jongmin Lee and Jean Ponce and Minsu Cho},
+   booktitle = ICCV,
+   year      = {2019}
+}
+
+@InProceedings{bristow2015dense,
+    title     = {Dense semantic correspondence where every pixel is a classifier},
+    author    = {Bristow, Hilton and Valmadre, Jack and Lucey, Simon},
+    booktitle = ICCV,
+    year      = {2015}
+}
+
+@InProceedings{cho2013learning,
+    title     = {Learning graphs to match},
+    author    = {Cho, Minsu and Alahari, Karteek and Ponce, Jean},
+    booktitle = ICCV,
+    year      = {2013}
+}
+
+@InProceedings{choy2016universal,
+    title     = {Universal correspondence network},
+    author    = {Choy, Christopher B and Gwak, JunYoung and Savarese, Silvio and Chandraker, Manmohan},
+    booktitle = NIPS,
+    year      = {2016}
+}
+
+@InProceedings{fathy2018hierarchical,
+    title     = {Hierarchical Metric Learning and Matching for 2D and 3D Geometric Correspondences},
+    author    = {Fathy, Mohammed E and Tran, Quoc-Huy and Zeeshan Zia, M and Vernaza, Paul and Chandraker, Manmohan},
+    booktitle = ECCV,
+    year      = {2018}
+}
+
+@InProceedings{girshick2015deformable,
+    title     = {Deformable part models are convolutional neural networks},
+    author    = {Girshick, Ross and Iandola, Forrest and Darrell, Trevor and Malik, Jitendra},
+    booktitle = CVPR,
+    year      = {2015}
+}
+
+@InProceedings{ham2016proposal,
+    title     = {Proposal flow},
+    author    = {Ham, Bumsub and Cho, Minsu and Schmid, Cordelia and Ponce, Jean},
+    booktitle = CVPR,
+    year      = {2016}
+}
+
+@article{ham2018proposal,
+    title   = {Proposal flow: Semantic correspondences from object proposals},
+    author  = {Ham, Bumsub and Cho, Minsu and Schmid, Cordelia and Ponce, Jean},
+    journal = TPAMI,
+    year    = {2018},
+}
+
+@InProceedings{lee2019sfnet,
+    title     = {SFNet: Learning Object-aware Semantic Correspondence},
+    author    = {Junghyup Lee and Dohyung Kim and Jean Ponce and Bumsub Ham},
+    booktitle = CVPR,
+    year      = {2019}
+}
+
+@InProceedings{huang2019dynamic,
+    title     = {Dynamic Context Correspondence Network for Semantic Alignment},
+    author    = {Shuaiyi Huang and Qiuyue Wang and Songyang Zhang and Shipeng Yan and Xuming He},
+    booktitle = ICCV,
+    year      = {2019}
+}
+
+@InProceedings{han2017scnet,
+    title     = {SCNet: Learning semantic correspondence},
+    author    = {Han, Kai and Rezende, Rafael S and Ham, Bumsub and Wong, Kwan-Yee K and Cho, Minsu and Schmid, Cordelia and Ponce, Jean},
+    booktitle = ICCV,
+    year      = {2017}
+}
+
+@InProceedings{kim2018recurrent,
+    title     = {Recurrent transformer networks for semantic correspondence},
+    author    = {Kim, Seungryong and Lin, Stephen and Jeon, Sangryul and Min, Dongbo and Sohn, Kwanghoon},
+    booktitle = NIPS,
+    year      = {2018}
+}
+
+@InProceedings{jeon2018parn,
+    title     = {PARN: Pyramidal Affine Regression Networks for Dense Semantic Correspondence},
+    author    = {Jeon, Sangryul and Kim, Seungryong and Min, Dongbo and Sohn, Kwanghoon},
+    booktitle = ECCV,
+    year      = {2018}
+}
+
+@InProceedings{kanazawa2016warpnet,
+    title     = {Warpnet: Weakly supervised matching for single-view reconstruction},
+    author    = {Kanazawa, Angjoo and Jacobs, David W and Chandraker, Manmohan},
+    booktitle = CVPR,
+    year      = {2016}
+}
+
+@InProceedings{kim2013deformable,
+    title     = {Deformable spatial pyramid matching for fast dense correspondences},
+    author    = {Kim, Jaechul and Liu, Ce and Sha, Fei and Grauman, Kristen},
+    booktitle = CVPR,
+    year      = {2013}
+}
+
+@InProceedings{NIPS2018_7851,
+    author    = {Seungryong Kim and Stephen Lin and Sangryul Jeon and Dongbo Min and Kwanghoon Sohn},
+    title     = {Recurrent Transformer Networks for Semantic Correspondence},
+    booktitle = NIPS,
+    year      = {2018}
+}
+
+@InProceedings{kim2017fcss,
+    title     = {FCSS: Fully Convolutional Self-Similarity for Dense Semantic Correspondence},
+    author    = {Kim, Seungryong and Min, Dongbo and Ham, Bumsub and Jeon, Sangryul and Lin, Stephen and Sohn, Kwanghoon},
+    booktitle = CVPR,
+    year      = {2017}
+}
+
+@InProceedings{kim2017dctm,
+    title     = {DCTM: Discrete-Continuous Transformation Matching for Semantic Flow},
+    author    = {Kim, Seungryong and Min, Dongbo and Lin, Stephen and Sohn, Kwanghoon},
+    booktitle = ICCV,
+    volume    = {6},
+    year      = {2017}
+}
+
+@article{laskar2019semantic,
+    title   = {Semantic Matching by Weakly Supervised 2D Point Set Registration},
+    author  = {Laskar, Zakaria and Tavakoli, Hamed R and Kannala, Juho},
+    journal = {arXiv preprint arXiv:1901.08341},
+    year    = {2019}
+}
+
+@InProceedings{long2014convnets,
+    title     = {Do convnets learn correspondence?},
+    author    = {Long, Jonathan L and Zhang, Ning and Darrell, Trevor},
+    booktitle = NIPS,
+    year      = {2014}
+}
+
+@InProceedings{zhou2016learning,
+    title     = {Learning dense correspondence via 3d-guided cycle consistency},
+    author    = {Zhou, Tinghui and Krahenbuhl, Philipp and Aubry, Mathieu and Huang, Qixing and Efros, Alexei A},
+    booktitle = {CVPR},
+    year      = {2016}
+}
+
+@InProceedings{novotny2017anchornet,
+    title     = {AnchorNet: A Weakly Supervised Network to Learn Geometry-Sensitive Features for Semantic Matching},
+    author    = {Novotny, David and Larlus, Diane and Vedaldi, Andrea},
+    booktitle = CVPR,
+    year      = {2017}
+}
+
+@InProceedings{rocco17geocnn,
+    author    = {Rocco, Ignacio and Arandjelovic, Relja and Sivic, Josef},
+    title     = {Convolutional neural network architecture for geometric matching},
+    booktitle = CVPR,
+    year      = {2017}
+}
+
+@InProceedings{wang2019learning,
+    author    = {Xiaolong Wang and Allan Jabri and Alexei A. Efros},
+    title     = {Learning Correspondence from the Cycle-Consistency of Time},
+    booktitle = CVPR,
+    year      = {2019},
+}
+
+@InProceedings{rocco18weak,
+    author    = {Rocco, Ignacio and Arandjelović, Relja and Sivic, Josef},
+    title     = {End-to-end weakly-supervised semantic alignment},
+    booktitle = CVPR,
+    year      = {2018}
+}
+
+@InProceedings{rocco2018neighbourhood,
+    title     = {Neighbourhood consensus networks},
+    author    = {Rocco, Ignacio and Cimpoi, Mircea and Arandjelovi{\'c}, Relja and Torii, Akihiko and Pajdla, Tomas and Sivic, Josef},
+    booktitle = NIPS,
+    year      = {2018}
+}
+
+@InProceedings{paul2018attentive,
+    title     = {Attentive Semantic Alignment with Offset-Aware Correlation Kernels},
+    author    = {Paul Hongsuck Seo and Jongmin Lee and Deunsol Jung and Bohyung Han and Minsu Cho},
+    booktitle = ECCV,
+    year      = {2018}
+}
+
+@InProceedings{taniai2016joint,
+    title     = {Joint recovery of dense correspondence and cosegmentation in two images},
+    author    = {Taniai, Tatsunori and Sinha, Sudipta N and Sato, Yoichi},
+    booktitle = CVPR,
+    year      = {2016}
+}
+
+@InProceedings{ufer2017deep,
+    title     = {Deep semantic feature matching},
+    author    = {Ufer, Nikolai and Ommer, Bj{\"o}rn},
+    booktitle = CVPR,
+    year      = {2017}
+}
+
+@InProceedings{zhou2015flowweb,
+    title     = {Flow{W}eb: Joint image set alignment by weaving consistent, pixel-wise correspondences},
+    author    = {Zhou, Tinghui and Jae Lee, Yong and Yu, Stella X and Efros, Alyosha A},
+    booktitle = CVPR,
+    pages     = {1191--1200},
+    year      = {2015}
+}
+
+@InProceedings{huang2020robust,
+    title     = {Robust Image Matching By Dynamic Feature Selection},
+    author    = {Hao Huang and Jianchun Chen and Xiang Li and Lingjing Wang and Yi Fang},
+    booktitle = BMVC,
+    year      = {2020}
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% wide-baseline matching
+
+@InProceedings{li2020dualrc,
+    author		= {Xinghui Li and Kai Han and Shuda Li and Victor Prisacariu},
+    title   	= {Dual-Resolution Correspondence Networks},
+    booktitle 	= NeurIPS,
+    year    	= {2020},
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  multimodal learning
+
+
+@InProceedings{andreas2016neural,
+    title     = {Neural module networks},
+    author    = {Andreas, Jacob and Rohrbach, Marcus and Darrell, Trevor and Klein, Dan},
+    booktitle = CVPR,
+    pages     = {39--48},
+    year      = {2016}
+}
+
+@InProceedings{andreas2016learning,
+    title     = {Learning to Compose Neural Networks for Question Answering},
+    author    = {Andreas, Jacob and Rohrbach, Marcus and Darrell, Trevor and Klein, Dan},
+    booktitle = {Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+    pages     = {1545--1554},
+    year      = {2016}
+}
+
+@InProceedings{li2020correspondence,
+    author    = {Shuda Li and Kai Han and Theo W. Costain and Henry Howard-Jenkins and Victor Prisacariu},
+    title     = {Correspondence Networks with Adaptive Neighbourhood Consensus},
+    booktitle = CVPR,
+    year      = {2020}
+}
+
+@InProceedings{truong2020glunet,
+    title     = {{GLU-Net}: Global-Local Universal Network for dense flow and correspondences},
+    author    = {Prune Truong and Martin Danelljan and Radu Timofte},
+    booktitle = CVPR,
+    year      = {2020}
+}
+
+@InProceedings{rocco2020sparsencnet,
+    author       = {Ignacio Rocco and Relja Arandjelovi\'c and Josef Sivic},
+    title        = {Efficient Neighbourhood Consensus Networks via Submanifold Sparse Convolutions},
+    booktitle    = ECCV,
+    year         = 2020
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Few-shot classification
+
+
+@InProceedings{satorras2018few,
+    title     = {Few-Shot Learning with Graph Neural Networks},
+    author    = {Satorras, Victor Garcia and Estrach, Joan Bruna},
+    booktitle = ICLR,
+    year      = {2018}
+}
+
+
+@InProceedings{sung2018relationnet,
+    title     = {Learning to compare: Relation network for few-shot learning},
+    author    = {Sung, Flood and Yang, Yongxin and Zhang, Li and Xiang, Tao and Torr, Philip HS and Hospedales, Timothy M},
+    booktitle = CVPR,
+    year      = {2018}
+}
+
+
+@InProceedings{wu2019parn,
+    title     = {Parn: Position-aware relation networks for few-shot learning},
+    author    = {Wu, Ziyang and Li, Yuwei and Guo, Lihua and Jia, Kui},
+    booktitle = ICCV,
+    year={2019}
+}
+
+@InProceedings{ye2020feat,
+    title     = {Few-shot learning via embedding adaptation with set-to-set functions},
+    author    = {Ye, Han-Jia and Hu, Hexiang and Zhan, De-Chuan and Sha, Fei},
+    booktitle = CVPR,
+    year      = {2020}
+}
+
+
+@InProceedings{zhang2020deepemd,
+    title     = {DeepEMD: Few-Shot Image Classification with Differentiable Earth Mover's Distance and Structured Classifiers},
+    author    = {Zhang, Chi and Cai, Yujun and Lin, Guosheng and Shen, Chunhua},
+    booktitle = CVPR,
+    year      = {2020}
+}
+
+% ================================
+
+@InProceedings{allen2019infinite,
+    title     = {Infinite Mixture Prototypes for Few-shot Learning},
+    author    = {Allen, Kelsey and Shelhamer, Evan and Shin, Hanul and Tenenbaum, Joshua},
+    booktitle = ICML,
+    year      = {2019}
+}
+
+
+@InProceedings{hou2019cross,
+    title     = {Cross attention network for few-shot classification},
+    author    = {Hou, Ruibing and Chang, Hong and Bingpeng, MA and Shan, Shiguang and Chen, Xilin},
+    booktitle = NIPS,
+    year      = {2019}
+}
+
+
+@InProceedings{koch2015siamese,
+    title     = {Siamese neural networks for one-shot image recognition},
+    author    = {Koch, Gregory and Zemel, Richard and Salakhutdinov, Ruslan},
+    booktitle = ICML,
+    year      = {2015}
+}
+
+
+@InProceedings{li2019revisiting,
+    title     = {Revisiting local descriptor based image-to-class measure for few-shot learning},
+    author    = {Li, Wenbin and Wang, Lei and Xu, Jinglin and Huo, Jing and Gao, Yang and Luo, Jiebo},
+    booktitle = CVPR,
+    year      = {2019}
+}
+
+
+@InProceedings{oreshkin2018tadam,
+    title     = {Tadam: Task dependent adaptive metric for improved few-shot learning},
+    author    = {Oreshkin, Boris and L{\'o}pez, Pau Rodr{\'\i}guez and Lacoste, Alexandre},
+    booktitle = NIPS,
+    year      = {2018}
+}
+
+
+
+@InProceedings{qiao2019transductive,
+    title     = {Transductive episodic-wise adaptive metric for few-shot learning},
+    author    = {Qiao, Limeng and Shi, Yemin and Li, Jia and Wang, Yaowei and Huang, Tiejun and Tian, Yonghong},
+    booktitle = ICCV,
+    year      = {2019}
+}
+
+@InProceedings{oriol2016oneshot,
+    author    = {Vinyals, Oriol and Blundell, Charles and Lillicrap, Timothy and kavukcuoglu, koray and Wierstra, Daan},
+    booktitle = NIPS,
+    title     = {Matching Networks for One Shot Learning},
+    year      = {2016}
+}
+
+@InProceedings{jake2017prototypical,
+ author    = {Snell, Jake and Swersky, Kevin and Zemel, Richard},
+ booktitle = NIPS,
+ title     = {Prototypical Networks for Few-shot Learning},
+ year      = {2017}
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  depth estimation
+
+@InProceedings{zhang2019exploiting,
+    author = {Zhang, Haokui and Shen, Chunhua and Li, Ying and Cao, Yuanzhouhan and Liu, Yu and Yan, Youliang},
+    title = {Exploiting Temporal Consistency for Real-Time Video Depth Estimation},
+    booktitle = ICCV,
+    month = {October},
+    year = {2019}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  motion estimation
+
+@InProceedings{kim2019instance,
+	author = {Kim, Kyung-Rae and Choi, Whan and Koh, Yeong Jun and Jeong, Seong-Gyun and Kim, Chang-Su},
+	title = {Instance-Level Future Motion Estimation in a Single Image Based on Ordinal Regression},
+	booktitle = ICCV,
+	month = {October},
+	year = {2019}
+}
+
+
+@InProceedings{huang2019clusterslam,
+	author = {Huang, Jiahui and Yang, Sheng and Zhao, Zishuo and Lai, Yu-Kun and Hu, Shi-Min},
+	title = {ClusterSLAM: A SLAM Backend for Simultaneous Rigid Body Clustering and Motion Estimation},
+	booktitle = ICCV,
+	month = {October},
+	year = {2019}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  datasets and evaluation
+
+@article{min2019spair,
+   title   = {{SPair}-71k: A Large-scale Benchmark for Semantic Correspondence},
+   author  = {Juhong Min and Jongmin Lee and Jean Ponce and Minsu Cho},
+   journal = {arXiv prepreint arXiv:1908.10543},
+   year    = {2019}
+}
+
+@InProceedings{deng2009imagenet,
+    title     = {Imagenet: A large-scale hierarchical image database},
+    author    = {Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+    booktitle = CVPR,
+    pages     = {248--255},
+    year      = {2009}
+}
+
+@article{everingham2015pascal,
+    title   = {The Pascal Visual Object Classes Challenge: A Retrospective},
+    author  = {Everingham, Mark and Eslami, S. M. Ali and Van Gool, Luc and Williams, Christopher K. I. and Winn, John and Zisserman, Andrew},
+    journal = IJCV,
+    year    = {2015},
+    month   = {Jan},
+    day     = {01},
+    volume  = {111},
+    number  = {1},
+    pages   = {98--136}
+}
+
+@article{griffin2007caltech,
+    author = {Griffin, Gregory and Holub, Alex and Perona, Pietro},
+    year   = {2007},
+    title  = {Caltech-256 Object Category Dataset},
+    journal = {CalTech Report}
+}
+
+@techreport{WahCUB_200_2011,
+	Title  = {{The Caltech-UCSD Birds-200-2011 Dataset}},
+	Author = {Wah, C. and Branson, S. and Welinder, P. and Perona, P. and Belongie, S.},
+	Year   = {2011},
+	Institution = {California Institute of Technology},
+	Number = {CNS-TR-2011-001}
+}
+
+@article{Xiang2014BeyondPA,
+    title   = {Beyond PASCAL: A benchmark for 3D object detection in the wild},
+    author  = {Yu Xiang and Roozbeh Mottaghi and Silvio Savarese},
+    journal = WACV,
+    year    = {2014},
+    pages   = {75-82}
+}
+
+@InProceedings{liu2009nonparam,
+    title   = {Nonparametric scene parsing: Label transfer via dense scene alignment},
+    author  = {Liu, Ce and Yuen, Jenny and Torralba, Antonio},
+    journal = TPAMI,
+    year    = 2009,
+    month   = {06},
+    pages   = {1972-1979},
+    doi     = {10.1109/CVPR.2009.5206536}
+}
+
+@article{everingham2010,
+    author  = {Everingham, Mark and Van Gool, Luc and Williams, Christopher K. I. and Winn, John and Zisserman, Andrew},
+    title   = {The Pascal Visual Object Classes (VOC) Challenge},
+    journal = IJCV,
+    year    = {2010},
+    month   = {Jun},
+    day     = {01},
+    volume  = {88},
+    number  = {2},
+    pages   = {303--338},
+}
+
+@inproceedings{mo2019partnet,
+  title={Partnet: A large-scale benchmark for fine-grained and hierarchical part-level 3d object understanding},
+  author={Mo, Kaichun and Zhu, Shilin and Chang, Angel X and Yi, Li and Tripathi, Subarna and Guibas, Leonidas J and Su, Hao},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={909--918},
+  year={2019}
+}
+
+@article{zhou2016thingi10k,
+  title={Thingi10k: A dataset of 10,000 3d-printing models},
+  author={Zhou, Qingnan and Jacobson, Alec},
+  journal={arXiv preprint arXiv:1605.04797},
+  year={2016}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% + misc. (not categorized yet)
+
+@InProceedings{donato2002approximate,
+    title     = {Approximate Thin Plate Spline Mappings},
+    author    = {Donato, Gianluca and Belongie, Serge},
+    booktitle = ECCV,
+    year      = {2002}
+}
+
+@InProceedings{fei2004learning,
+    title     = {Learning Generative Visual Models from Few Training Examples: An Incremental Bayesian Approach Tested on 101 Object Categories},
+    author    = {Fei-Fei, Li and Fergus, Rob and Perona, Pietro},
+    booktitle = CVPRW,
+    pages     = {178},
+    year      = {2004}
+}
+
+@InProceedings{hariharan2011semantic,
+    title={Semantic contours from inverse detectors},
+    author={Hariharan, Bharath and Arbel{\'a}ez, Pablo and Bourdev, Lubomir and Maji, Subhransu and Malik, Jitendra},
+    booktitle = ICCV,
+    year={2011}
+}
+
+@article{li2006one,
+    title   = {One-shot learning of object categories},
+    author  = {Li, Fei-Fei and Fergus, Rob and Perona, Pietro},
+    journal = TPAMI,
+    volume  = {28},
+    number  = {4},
+    pages   = {594--611},
+    year    = {2006},
+    publisher = {IEEE}
+}
+
+@InProceedings{lin2014jointly,
+    title     = {Jointly optimizing 3d model fitting and fine-grained classification},
+    author    = {Lin, Yen-Liang and Morariu, Vlad I and Hsu, Winston and Davis, Larry S},
+    booktitle = ECCV,
+    pages     = {466--480},
+    year      = {2014}
+}
+
+@article{beamsearch,
+    title = "Speech understanding systems: Report of a steering committee",
+    journal = "Artificial Intelligence",
+    volume = "9",
+    number = "3",
+    pages = "307 - 316",
+    year = "1977",
+    issn = "0004-3702",
+    doi = "https://doi.org/10.1016/0004-3702(77)90026-1",
+    url = "http://www.sciencedirect.com/science/article/pii/0004370277900261",
+    author = "M.F. Medress and F.S. Cooper and J.W. Forgie and C.C. Green and D.H. Klatt and M.H. O'Malley and E.P. Neuburg and A. Newell and D.R. Reddy and B. Ritea and J.E. Shoup-Hummel and D.E. Walker and W.A. Woods",
+    abstract = "A five-year interdisciplinary effort by speech scientists and computer scientists has demonstrated the feasibility of programming a computer system to “understand” connected speech, i.e., translate it into operational form and respond accordingly. An operational system (HARPY) accepts speech from five speakers, interprets a 1000-word vocabulary, and attains 91 percent sentence accuracy. This Steering Committee summary report describes the project history, problem, goals, and results."
+}
+
+@InProceedings{novotny2018self,
+    title     = {Self-supervised learning of geometrically stable features through probabilistic introspection},
+    author    = {Novotny, David and Albanie, Samuel and Larlus, Diane and Vedaldi, Andrea},
+    booktitle = CVPR,
+    pages     = {3637--3645},
+    year      = {2018}
+}
+
+@InProceedings{novotny16i-have,
+     author    = {Novotny, David and Larlus, Diane and Vedaldi, Andrea},
+     title     = {I Have Seen Enough: Transferring Parts Across Categories},
+     booktitle = BMVC,
+     year      = {2016}
+}
+
+@book{forsyth:hal-01063327,
+    TITLE       = {{Computer Vision: A Modern Approach. (Second edition)}},
+    AUTHOR      = {Forsyth, David and Ponce, Jean},
+    URL         = {https://hal.inria.fr/hal-01063327},
+    PUBLISHER   = {{Prentice Hall}},
+    PAGES       = {792},
+    YEAR        = {2011},
+    MONTH       = Nov,
+    HAL_ID      = {hal-01063327},
+    HAL_VERSION = {v1},
+}
+
+@book{gumbel1954statistical,
+    title     = {Statistical theory of extreme values and some practical applications: a series of lectures},
+    author    = {Gumbel, E.J.},
+    lccn      = {54061179},
+    issn      = {1049-4685},
+    series    = {Applied mathematics series},
+    year      = {1954},
+    publisher = {U. S. Govt. Print. Office}
+}
+@article{tibshirani1996regression,
+    title={Regression shrinkage and selection via the lasso},
+    author={Tibshirani, Robert},
+    journal={Journal of the Royal Statistical Society: Series B (Methodological)},
+    volume={58},
+    number={1},
+    pages={267--288},
+    year={1996},
+    publisher={Wiley Online Library}
+}
+
+@article{bookstein1989principal,
+    title={Principal warps: Thin-plate splines and the decomposition of deformations},
+    author={Bookstein, Fred L.},
+    journal=TPAMI,
+    volume={11},
+    number={6},
+    pages={567--585},
+    year={1989},
+    publisher={IEEE}
+}
+
+@inproceedings{balntas2017hpatches,
+    title={HPatches: A benchmark and evaluation of handcrafted and learned local descriptors},
+    author={Balntas, Vassileios and Lenc, Karel and Vedaldi, Andrea and Mikolajczyk, Krystian},
+    booktitle=CVPR,
+    pages={5173--5182},
+    year={2017}
+}
+
+@article{dusmanu2019d2,
+    title={D2-net: A trainable cnn for joint detection and description of local features},
+    author={Dusmanu, Mihai and Rocco, Ignacio and Pajdla, Tomas and Pollefeys, Marc and Sivic, Josef and Torii, Akihiko and Sattler, Torsten},
+    journal={arXiv preprint arXiv:1905.03561},
+    year={2019}
+}
+
+@article{revaud2019r2d2,
+    title={R2d2: Repeatable and reliable detector and descriptor},
+    author={Revaud, Jerome and Weinzaepfel, Philippe and De Souza, C{\'e}sar and Pion, Noe and Csurka, Gabriela and Cabon, Yohann and Humenberger, Martin},
+    journal={arXiv preprint arXiv:1906.06195},
+    year={2019}
+}
+
+@article{ballard1981generalhough,
+    author = {D.H. Ballard},
+    journal = {Pattern Recognition},
+    title = {Generalizing the Hough transform to detect arbitrary shapes},
+    volume = 13,
+    year = 1981
+}
+
+@article{hough1962transform,
+    title = {METHOD AND MEANS FOR RECOGNIZING COMPLEX PATTERNS},
+    author = {Hough, P V.C.},
+    place = {United States},
+    journal = {U.S. Patent, 3069654},
+    year = {1962}
+}
+
+
+@InProceedings{kingma2015adam,
+    title     = {Adam: A Method for Stochastic Optimization},
+    author    = {Diederik P. Kingma and Jimmy Ba},
+    booktitle = ICLR,
+    year      = {2015}
+}
+
+@InProceedings{kingma2014auto,
+  title={Auto-encoding variational bayes},
+  author={Kingma, Diederik P and Welling, Max},
+  booktitle = ICLR,
+  year={2014}
+}
+
+
+@article{ioffe2015batchnorm,
+    author   = {Ioffe, Sergey and Szegedy, Christian},
+    journal  = {arXiv preprint arXiv:1502.03167},
+    title    = {Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift}
+}
+
+@InProceedings{pytorch,
+    title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+    author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+    booktitle = NIPS,
+    year = {2019}
+}
+
+@article{fischler1981ransac,
+    added-at = {2013-12-10T15:04:12.000+0100},
+    author = {Fischler, M. and Bolles, R.},
+    biburl = {https://www.bibsonomy.org/bibtex/2cf7f4278e6687a425dbe2374f5b84d07/anas.razeq},
+    interhash = {8a99a961293d8dfe59a1f0838d77a24a},
+    intrahash = {cf7f4278e6687a425dbe2374f5b84d07},
+    journal = { Communications of the ACM},
+    keywords = {RANSAC},
+    number = { 6},
+    pages = { 381-395},
+    timestamp = {2013-12-10T15:04:12.000+0100},
+    title = { Random Sample Consensus: A Paradigm for Model Fitting with Applications to Image Analysis and Automated Cartography},
+    url = {/brokenurl# http://publication.wilsonwong.me/load.php?id=233282275},
+    volume = { 24},
+    year = { 1981}
+}
+
+@incollection{dong2018softgated,
+    title = {Soft-Gated Warping-GAN for Pose-Guided Person Image Synthesis},
+    author = {Dong, Haoye and Liang, Xiaodan and Gong, Ke and Lai, Hanjiang and Zhu, Jia and Yin, Jian},
+    booktitle = NIPS,
+    editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+    pages = {474--484},
+    year = {2018},
+    publisher = {Curran Associates, Inc.},
+    url = {http://papers.nips.cc/paper/7329-soft-gated-warping-gan-for-pose-guided-person-image-synthesis.pdf}
+}
+
+
+@article{zhou2019visualloc,
+    title={To Learn or Not to Learn: Visual Localization from Essential Matrices},
+    author={Qunjie Zhou and Torsten Sattler and Marc Pollefeys and Laura Leal-Taixe},
+    journal={arXiv preprint arXiv:1908.01293},
+    year={2019}
+}
+
+@InProceedings{yang2019optical,
+    title     = {Volumetric Correspondence Networks for Optical Flow},
+    author    = {Yang, Gengshan and Ramanan, Deva},
+    booktitle = NIPS,
+    year      = {2019},
+}
+
+@InProceedings{hussein2019timeception,
+    author = {Hussein, Noureldien and Gavves, Efstratios and Smeulders, Arnold W.M.},
+    title = {Timeception for Complex Action Recognition},
+    booktitle = CVPR,
+    month = {June},
+    year = {2019}
+}
+
+@article{KWON2018161,
+title = "First Person Action Recognition via Two-stream ConvNet with Long-term Fusion Pooling",
+journal = "Pattern Recognition Letters",
+volume = "112",
+pages = "161 - 167",
+year = "2018",
+issn = "0167-8655",
+doi = "https://doi.org/10.1016/j.patrec.2018.07.011",
+url = "http://www.sciencedirect.com/science/article/pii/S0167865518303027",
+author = "Heeseung Kwon and Yeonho Kim and Jin S. Lee and Minsu Cho",
+}
+
+@article{li2018siamrpn++,
+  Author    = {Li, Bo and Wu, Wei and Wang, Qiang and Zhang, Fangyi and Xing, Junliang and Yan, Junjie},
+  Title     = {SiamRPN++: Evolution of Siamese Visual Tracking with Very Deep Networks},
+  Journal   = {arXiv preprint arXiv:1812.11703},
+  Year      = {2018}
+}
+
+Paper: @InProceedings{Li_2018_CVPR,
+author = {Li, Bo and Yan, Junjie and Wu, Wei and Zhu, Zheng and Hu, Xiaolin},
+title = {High Performance Visual Tracking With Siamese Region Proposal Network},
+booktitle = CVPR,
+month = {June},
+year = {2018}
+}
+
+@inproceedings{bertinetto2016fully,
+  title={Fully-Convolutional Siamese Networks for Object Tracking},
+  author={Bertinetto, Luca and Valmadre, Jack and Henriques, Jo{\~a}o F and Vedaldi, Andrea and Torr, Philip H S},
+  booktitle=ECCVW,
+  pages={850--865},
+  year={2016}
+}
+
+
+@InProceedings{wu2018groupnorm,
+    title     = {Group Normalization},
+    author    = {Yuxin Wu and Kaiming He},
+    booktitle = ECCV,
+    year      = {2018}
+}
+
+
+
+@article{hamid2017invariant,
+    title     = {Invariant object recognition is a personalized selection of invariant features in humans, not simply explained by hierarchical feed-forward vision models},
+    author    = {Karimi-Rouzbahani, Hamid and Bagheri, Nasour and Ebrahimpour, Reza},
+    journal   = {Scientific Reports},
+    year      = {2017}
+}
+
+@article{hubelwiesel1959cat,
+    author = {Hubel, D. H. and Wiesel, T. N.},
+    title = {Receptive fields of single neurones in the cat's striate cortex},
+    journal = {The Journal of Physiology},
+    volume = {148},
+    number = {3},
+    pages = {574-591},
+    year = {1959}
+}
+
+    @InProceedings{sattler2018benchmarking,
+    author = {Sattler, Torsten and Maddern, Will and Toft, Carl and Torii, Akihiko and Hammarstrand, Lars and Stenborg, Erik and Safari, Daniel and Okutomi, Masatoshi and Pollefeys, Marc and Sivic, Josef and Kahl, Fredrik and Pajdla, Tomas},
+    title = {Benchmarking 6DOF Outdoor Visual Localization in Changing Conditions},
+    booktitle = CVPR,
+    year = {2018}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Point cloud registration
+
+@article{yu2021cofinet,
+  title={CoFiNet: Reliable Coarse-to-fine Correspondences for Robust PointCloud Registration},
+  author={Yu, Hao and Li, Fu and Saleh, Mahdi and Busam, Benjamin and Ilic, Slobodan},
+  journal=NIPS,
+  year={2021}
+}
+
+@InProceedings{huang2021predator,
+    author    = {Huang, Shengyu and Gojcic, Zan and Usvyatsov, Mikhail and Wieser, Andreas and Schindler, Konrad},
+    title     = {Predator: Registration of 3D Point Clouds With Low Overlap},
+    booktitle = CVPR,
+    year      = {2021}
+}
+
+@inproceedings{qin2022geometric,
+    title={Geometric Transformer for Fast and Robust Point Cloud Registration},
+    author={Zheng Qin and Hao Yu and Changjian Wang and Yulan Guo and Yuxing Peng and Kai Xu},
+    booktitle=CVPR,
+    year={2022}
+}
+
+@inproceedings{choy2020deep,
+  title={Deep Global Registration},
+  author={Choy, Christopher and Dong, Wei and Koltun, Vladlen},
+  booktitle=CVPR,
+  year={2020}
+}
+
+@inproceedings{besl1992icp,
+  title={Method for registration of 3-D shapes},
+  author={Besl, Paul J and McKay, Neil D},
+  booktitle={Sensor fusion IV: control paradigms and data structures},
+  volume={1611},
+  pages={586--606},
+  year={1992},
+  organization={Spie}
+}
+
+@inproceedings{bouaziz2013sparse,
+  title={Sparse iterative closest point},
+  author={Bouaziz, Sofien and Tagliasacchi, Andrea and Pauly, Mark},
+  booktitle={Computer graphics forum},
+  volume={32},
+  number={5},
+  pages={113--123},
+  year={2013},
+  organization={Wiley Online Library}
+}
+
+@inproceedings{dellaert2020shonan,
+  title={Shonan Rotation Averaging: Global Optimality by Surfing SO (p)\^{} n SO (p) n},
+  author={Dellaert, Frank and Rosen, David M and Wu, Jing and Mahony, Robert and Carlone, Luca},
+  booktitle=ECCV,
+  year={2020},
+}
+
+@inproceedings{lee2021deephough, 
+    title={Deep Hough Voting for Robust Global Registration},
+    author={Junha Lee and Seungwook Kim and Minsu Cho and Jaesik Park},
+    booktitle=ICCV,
+    year={2021}
+}
+
+@inproceedings{choy20194d,
+  title={4d spatio-temporal convnets: Minkowski convolutional neural networks},
+  author={Choy, Christopher and Gwak, JunYoung and Savarese, Silvio},
+  booktitle=CVPR,
+  year={2019}
+}
+
+@inproceedings{zhou2016fast,
+  title={Fast global registration},
+  author={Zhou, Qian-Yi and Park, Jaesik and Koltun, Vladlen},
+  booktitle=ECCV,
+  year={2016},
+}
+
+@inproceedings{segal2009generalized,
+  title={Generalized-icp.},
+  author={Segal, Aleksandr and Haehnel, Dirk and Thrun, Sebastian},
+  booktitle={Robotics: science and systems},
+  volume={2},
+  number={4},
+  pages={435},
+  year={2009},
+  organization={Seattle, WA}
+}
+
+@inproceedings{thomas2019kpconv,
+  title={Kpconv: Flexible and deformable convolution for point clouds},
+  author={Thomas, Hugues and Qi, Charles R and Deschaud, Jean-Emmanuel and Marcotegui, Beatriz and Goulette, Fran{\c{c}}ois and Guibas, Leonidas J},
+  booktitle=ICCV,
+  year={2019}
+}
+
+@inproceedings{sarlin2020superglue,
+  title={Superglue: Learning feature matching with graph neural networks},
+  author={Sarlin, Paul-Edouard and DeTone, Daniel and Malisiewicz, Tomasz and Rabinovich, Andrew},
+  booktitle=CVPR,
+  year={2020}
+}
+@inproceedings{carlone2015lagrangian,
+  title={Lagrangian duality in 3D SLAM: Verification techniques and optimal solutions},
+  author={Carlone, Luca and Rosen, David M and Calafiore, Giuseppe and Leonard, John J and Dellaert, Frank},
+  booktitle={2015 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={125--132},
+  year={2015},
+  organization={IEEE}
+}
+@article{boumal2014cramer,
+  title={Cram{\'e}r--Rao bounds for synchronization of rotations},
+  author={Boumal, Nicolas and Singer, Amit and Absil, P-A and Blondel, Vincent D},
+  journal={Information and Inference: A Journal of the IMA},
+  volume={3},
+  number={1},
+  pages={1--39},
+  year={2014},
+  publisher={OUP}
+}
+
+@inproceedings{choi2015robust,
+  title={Robust reconstruction of indoor scenes},
+  author={Choi, Sungjoon and Zhou, Qian-Yi and Koltun, Vladlen},
+  booktitle=CVPR,
+  year={2015}
+}
+
+@inproceedings{carlone2015initialization,
+  title={Initialization techniques for 3D SLAM: A survey on rotation estimation and its use in pose graph optimization},
+  author={Carlone, Luca and Tron, Roberto and Daniilidis, Kostas and Dellaert, Frank},
+  booktitle={2015 IEEE international conference on robotics and automation (ICRA)},
+  pages={4597--4604},
+  year={2015},
+  organization={IEEE}
+}
+
+@article{dellaert2012factor,
+  title={Factor graphs and GTSAM: A hands-on introduction},
+  author={Dellaert, Frank},
+  journal={Georgia Institute of Technology, Tech. Rep},
+  volume={2},
+  pages={4},
+  year={2012}
+}
+
+@article{vaswani2017attention,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  journal=NIPS,
+  year={2017}
+}
+
+@inproceedings{cordonnier2020relationship,
+  title={On the Relationship between Self-Attention and Convolutional Layers},
+  author={Cordonnier, Jean-Baptiste and Loukas, Andreas and Jaggi, Martin},
+  booktitle=ICLR,
+  year={2020}
+}
+
+@article{min2022peripheral,
+  title={Peripheral vision transformer},
+  author={Min, Juhong and Zhao, Yucheng and Luo, Chong and Cho, Minsu},
+  journal=NIPS,
+  year={2022}
+}
+
+@inproceedings{wu2021rethinking,
+  title={Rethinking and improving relative position encoding for vision transformer},
+  author={Wu, Kan and Peng, Houwen and Chen, Minghao and Fu, Jianlong and Chao, Hongyang},
+  booktitle=ICCV,
+  year={2021}
+}
+
+@inproceedings{lamb2023fantastic,
+  title={Fantastic Breaks: A Dataset of Paired 3D Scans of Real-World Broken Objects and Their Complete Counterparts},
+  author={Lamb, Nikolas and Palmer, Cameron and Molloy, Benjamin and Banerjee, Sean and Banerjee, Natasha Kholgade},
+  booktitle=CVPR,
+  year={2023}
+}
+
+@inproceedings{wu2023leveraging,
+  title={Leveraging SE (3) Equivariance for Learning 3D Geometric Shape Assembly},
+  author={Wu, Ruihai and Tie, Chenrui and Du, Yushi and Zhao, Yan and Dong, Hao},
+  booktitle=ICCV,
+  year={2023}
+}
+
+@article{lu2023jigsaw,
+  title={Jigsaw: Learning to Assemble Multiple Fractured Objects},
+  author={Lu, Jiaxin and Sun, Yifan and Huang, Qixing},
+  journal={arXiv preprint arXiv:2305.17975},
+  year={2023}
+}
+
+@inproceedings{zhao2023learning,
+  title={Learning Symmetry-Aware Geometry Correspondences for 6D Object Pose Estimation},
+  author={Zhao, Heng and Wei, Shenxing and Shi, Dahu and Tan, Wenming and Li, Zheyang and Ren, Ye and Wei, Xing and Yang, Yi and Pu, Shiliang},
+  booktitle=ICCV,
+  year={2023}
+}
+
+
+@inproceedings{wu2023graph,
+  title={Graph Matching Optimization Network for Point Cloud Registration},
+  author={Wu, Qianliang and Shen, Yaqi and Jiang, Haobo and Mei, Guofeng and Ding, Yaqing and Luo, Lei and Xie, Jin and Yang, Jian},
+  booktitle={2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year={2023},
+}
+
+@InProceedings{Chen_2023_ICCV,
+    author    = {Chen, Suyi and Xu, Hao and Li, Ru and Liu, Guanghui and Fu, Chi-Wing and Liu, Shuaicheng},
+    title     = {SIRA-PCR: Sim-to-Real Adaptation for 3D Point Cloud Registration},
+    booktitle = ICCV,
+    year      = {2023},
+}
+
+@InProceedings{Yu_2023_CVPR,
+    author    = {Yu, Junle and Ren, Luwei and Zhang, Yu and Zhou, Wenhui and Lin, Lili and Dai, Guojun},
+    title     = {PEAL: Prior-Embedded Explicit Attention Learning for Low-Overlap Point Cloud Registration},
+    booktitle = CVPR,
+    year      = {2023},
+}
+
+@InProceedings{Sun_2020_CVPR,
+author = {Sun, Yifan and Cheng, Changmao and Zhang, Yuhan and Zhang, Chi and Zheng, Liang and Wang, Zhongdao and Wei, Yichen},
+title = {Circle Loss: A Unified Perspective of Pair Similarity Optimization},
+booktitle = CVPR,
+year = {2020}
+}
+
+@inproceedings{zhang20233d,
+  title={3D registration with maximal cliques},
+  author={Zhang, Xiyu and Yang, Jiaqi and Zhang, Shikun and Zhang, Yanning},
+  booktitle=CVPR,
+  year={2023}
+}
+
+
+%%%%%%%%%%%%%% rebuttal %%%%%%%%%%%%%%
+
+@inproceedings{denton2014exploiting,
+    title={Exploiting Linear Structure Within Convolutional Networks for Efficient Evaluation}, 
+    author={Remi Denton and Wojciech Zaremba and Joan Bruna and Yann LeCun and Rob Fergus},
+    year={2014},
+    booktitle=NIPS
+}
+
+@inproceedings{zaheer2021big,
+    title={Big Bird: Transformers for Longer Sequences}, 
+    author={Manzil Zaheer and Guru Guruganesh and Avinava Dubey and Joshua Ainslie and Chris Alberti and Santiago Ontanon and Philip Pham and Anirudh Ravula and Qifan Wang and Li Yang and Amr Ahmed},
+    year={2021},
+    booktitle=NIPS
+}
+
+@inproceedings{chen2020compressed,
+  title     = {Compressed Self-Attention for Deep Metric Learning with Low-Rank Approximation},
+  author    = {Chen, Ziye and Gong, Mingming and Ge, Lingjuan and Du, Bo},
+  year={2020},
+  booktitle = IJCAI
+}
+
+@inproceedings{chen2021skyformer,
+    title={Skyformer: Remodel Self-Attention with Gaussian Kernel and Nystr\"om Method}, 
+    author={Yifan Chen and Qi Zeng and Heng Ji and Yun Yang},
+    year={2021},
+    booktitle=NIPS
+}
+
+@inproceedings{shi2023clustergnn,
+    title={ClusterGNN: Cluster-based Coarse-to-Fine Graph Neural Network for Efficient Feature Matching}, 
+    author={Yan Shi and Jun-Xiong Cai and Yoli Shavit and Tai-Jiang Mu and Wensen Feng and Kai Zhang},
+    year={2023},
+    booktitle=CVPR
+}
+
+@inproceedings{marin2020correspondence,
+    title={Correspondence Learning via Linearly-invariant Embedding}, 
+    author={Riccardo Marin and Marie-Julie Rakotosaona and Simone Melzi and Maks Ovsjanikov},
+    year={2020},
+    booktitle=NIPS
+}
+
+@inproceedings{trappolini2021shape,
+    title={Shape registration in the time of transformers}, 
+    author={Giovanni Trappolini and Luca Cosmo and Luca Moschella and Riccardo Marin and Simone Melzi and Emanuele Rodolà},
+    year={2021},
+    booktitle=NIPS
+}
+
+@inproceedings{sharp2022diffusionnet,
+    title={DiffusionNet: Discretization Agnostic Learning on Surfaces}, 
+    author={Nicholas Sharp and Souhaib Attaiki and Keenan Crane and Maks Ovsjanikov},
+    year={2022},
+    booktitle=SIGGRAPH
+}
+
+@misc{falcon2019lightning,
+  author       = {William Falcon and The PyTorch Lightning team},
+  title        = {PyTorch Lightning},
+  year         = {2019},
+  url          = {https://github.com/PyTorchLightning/pytorch-lightning}
+}

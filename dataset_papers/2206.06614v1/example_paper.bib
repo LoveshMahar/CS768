@@ -1,0 +1,854 @@
+@incollection{Bengio+chapter2007,
+author = {Bengio, Yoshua and LeCun, Yann},
+booktitle = {Large Scale Kernel Machines},
+publisher = {MIT Press},
+title = {Scaling Learning Algorithms Towards {AI}},
+year = {2007}
+}
+
+@article{Hinton06,
+author = {Hinton, Geoffrey E. and Osindero, Simon and Teh, Yee Whye},
+journal = {Neural Computation},
+pages = {1527--1554},
+title = {A Fast Learning Algorithm for Deep Belief Nets},
+volume = {18},
+year = {2006}
+}
+
+@book{goodfellow2016deep,
+title={Deep learning},
+author={Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron and Bengio, Yoshua},
+volume={1},
+year={2016},
+publisher={MIT Press}
+}
+
+@INPROCEEDINGS{155621,
+  author={Bengio, Y. and Bengio, S. and Cloutier, J.},
+  booktitle={IJCNN-91-Seattle International Joint Conference on Neural Networks}, 
+  title={Learning a synaptic learning rule}, 
+  year={1991},
+  volume={ii},
+  number={},
+  pages={969 vol.2-},
+  doi={10.1109/IJCNN.1991.155621}}
+  
+@techreport{10.5555/870510,
+author = {Schmidhuber, Juergen and Zhao, Jieyu and Wiering, Marco},
+title = {Simple Principles of Metalearning},
+year = {1996},
+publisher = {Istituto Dalle Molle Di Studi Sull Intelligenza Artificiale},
+abstract = {The goal of metalearning is to generate useful shifts of inductive bias by adapting
+the current learning strategy in a ``useful'''' way. Our learner leads a single life
+during which actions are continually executed according to the system''s internal
+state and current {em policy} (a modifiable, probabilistic algorithm mapping environmental
+inputs and internal states to outputs and new internal states). An action is considered
+a learning algorithm if it can modify the policy. Effects of learning processes on
+later learning processes are measured using reward/time ratios. Occasional backtracking
+enforces success histories of still valid policy modifications corresponding to histories
+of lifelong reward accelerations. The principle allows for plugging in a wide variety
+of learning algorithms. In particular, it allows for embedding the learner''s policy
+modification strategy within the policy itself (self-reference). To demonstrate the
+principle''s feasibility in cases where conventional reinforcement learning fails,
+we test it in complex, non-Markovian, changing environments (``POMDPs''''). One of
+the tasks involves more than $10^{13}$ states, two learners that both cooperate and
+compete, and strongly delayed reinforcement signals (initially separated by more than
+300,000 time steps).}
+}
+
+
+@inbook{10.5555/296635.296639,
+author = {Thrun, Sebastian and Pratt, Lorien},
+title = {Learning to Learn: Introduction and Overview},
+year = {1998},
+isbn = {0792380479},
+publisher = {Kluwer Academic Publishers},
+address = {USA},
+booktitle = {Learning to Learn},
+pages = {3–17},
+numpages = {15}
+}
+
+@inproceedings{NIPS2016_fb875828,
+ author = {Andrychowicz, Marcin and Denil, Misha and G\'{o}mez, Sergio and Hoffman, Matthew W and Pfau, David and Schaul, Tom and Shillingford, Brendan and de Freitas, Nando},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {D. Lee and M. Sugiyama and U. Luxburg and I. Guyon and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Learning to learn by gradient descent by gradient descent},
+ url = {https://proceedings.neurips.cc/paper/2016/file/fb87582825f9d28a8d42c5e5e5e8b23d-Paper.pdf},
+ volume = {29},
+ year = {2016}
+}
+
+
+@misc{li2016learning,
+      title={Learning to Optimize}, 
+      author={Ke Li and Jitendra Malik},
+      year={2016},
+      eprint={1606.01885},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@InProceedings{pmlr-v70-chen17e,
+  title = 	 {Learning to Learn without Gradient Descent by Gradient Descent},
+  author =       {Yutian Chen and Matthew W. Hoffman and Sergio G{\'o}mez Colmenarejo and Misha Denil and Timothy P. Lillicrap and Matt Botvinick and Nando de Freitas},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {748--756},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/chen17e/chen17e.pdf},
+  url = 	 {https://proceedings.mlr.press/v70/chen17e.html},
+  abstract = 	 {We learn recurrent neural network optimizers trained on simple synthetic functions by gradient descent. We show that these learned optimizers exhibit a remarkable degree of transfer in that they can be used to efficiently optimize a broad range of derivative-free black-box functions, including Gaussian process bandits, simple control objectives, global optimization benchmarks and hyper-parameter tuning tasks. Up to the training horizon, the learned optimizers learn to trade-off exploration and exploitation, and compare favourably with heavily engineered Bayesian optimization packages for hyper-parameter tuning.}
+}
+
+
+@book{10.5555/3360092,
+author = {Hutter, Frank and Kotthoff, Lars and Vanschoren, Joaquin},
+title = {Automated Machine Learning: Methods, Systems, Challenges},
+year = {2019},
+isbn = {3030053172},
+publisher = {Springer Publishing Company, Incorporated},
+edition = {1st},
+abstract = {This open access book presents the first comprehensive overview of general methods
+in Automated Machine Learning (AutoML), collects descriptions of existing systems
+based on these methods, and discusses the first series of international challenges
+of AutoML systems. The recent success of commercial ML applications and the rapid
+growth of the field has created a high demand for off-the-shelf ML methods that can
+be used easily and without expert knowledge. However, many of the recent machine learning
+successes crucially rely on human experts, who manually select appropriate ML architectures
+(deep learning architectures or more traditional ML workflows) and their hyperparameters.
+To overcome this problem, the field of AutoML targets a progressive automation of
+machine learning, based on principles from optimization and machine learning itself.
+This book serves as a point of entry into this quickly-developing field for researchers
+and advanced students alike, as well as providing a reference for practitioners aiming
+to use AutoML in their work.}
+}
+
+@inproceedings{45826,
+title	= {Neural Architecture Search with Reinforcement Learning},
+author	= {Barret Zoph and Quoc V. Le},
+year	= {2017},
+URL	= {https://arxiv.org/abs/1611.01578}
+}
+
+
+@inproceedings{NIPS2016_90e13578,
+ author = {Vinyals, Oriol and Blundell, Charles and Lillicrap, Timothy and kavukcuoglu, koray and Wierstra, Daan},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {D. Lee and M. Sugiyama and U. Luxburg and I. Guyon and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Matching Networks for One Shot Learning},
+ url = {https://proceedings.neurips.cc/paper/2016/file/90e1357833654983612fb05e3ec9148c-Paper.pdf},
+ volume = {29},
+ year = {2016}
+}
+
+
+@InProceedings{pmlr-v70-finn17a,
+  title = 	 {Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks},
+  author =       {Chelsea Finn and Pieter Abbeel and Sergey Levine},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {1126--1135},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/finn17a/finn17a.pdf},
+  url = 	 {https://proceedings.mlr.press/v70/finn17a.html},
+  abstract = 	 {We propose an algorithm for meta-learning that is model-agnostic, in the sense that it is compatible with any model trained with gradient descent and applicable to a variety of different learning problems, including classification, regression, and reinforcement learning. The goal of meta-learning is to train a model on a variety of learning tasks, such that it can solve new learning tasks using only a small number of training samples. In our approach, the parameters of the model are explicitly trained such that a small number of gradient steps with a small amount of training data from a new task will produce good generalization performance on that task. In effect, our method trains the model to be easy to fine-tune. We demonstrate that this approach leads to state-of-the-art performance on two few-shot image classification benchmarks, produces good results on few-shot regression, and accelerates fine-tuning for policy gradient reinforcement learning with neural network policies.}
+}
+
+@misc{nichol2018firstorder,
+      title={On First-Order Meta-Learning Algorithms}, 
+      author={Alex Nichol and Joshua Achiam and John Schulman},
+      year={2018},
+      eprint={1803.02999},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{10.5555/3327546.3327622,
+author = {Finn, Chelsea and Xu, Kelvin and Levine, Sergey},
+title = {Probabilistic Model-Agnostic Meta-Learning},
+year = {2018},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {Meta-learning for few-shot learning entails acquiring a prior over previous tasks
+and experiences, such that new tasks be learned from small amounts of data. However,
+a critical challenge in few-shot learning is task ambiguity: even when a powerful
+prior can be meta-learned from a large number of prior tasks, a small dataset for
+a new task can simply be too ambiguous to acquire a single model (e.g., a classifier)
+for that task that is accurate. In this paper, we propose a probabilistic meta-learning
+algorithm that can sample models for a new task from a model distribution. Our approach
+extends model-agnostic meta-learning, which adapts to new tasks via gradient descent,
+to incorporate a parameter distribution that is trained via a variational lower bound.
+At meta-test time, our algorithm adapts via a simple procedure that injects noise
+into gradient descent, and at meta-training time, the model is trained such that this
+stochastic adaptation procedure produces samples from the approximate model posterior.
+Our experimental results show that our method can sample plausible classifiers and
+regressors in ambiguous few-shot learning problems. We also show how reasoning about
+ambiguity can also be used for downstream active learning problems.},
+booktitle = {Proceedings of the 32nd International Conference on Neural Information Processing Systems},
+pages = {9537–9548},
+numpages = {12},
+location = {Montr\'{e}al, Canada},
+series = {NIPS'18}
+}
+
+@misc{zintgraf2019fast,
+      title={Fast Context Adaptation via Meta-Learning}, 
+      author={Luisa M Zintgraf and Kyriacos Shiarlis and Vitaly Kurin and Katja Hofmann and Shimon Whiteson},
+      year={2019},
+      eprint={1810.03642},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{melo2019bottomup,
+      title={Bottom-Up Meta-Policy Search}, 
+      author={Luckeciano C. Melo and Marcos R. O. A. Maximo and Adilson Marques da Cunha},
+      year={2019},
+      eprint={1910.10232},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{NEURIPS2020_0b96d81f,
+ author = {Oh, Junhyuk and Hessel, Matteo and Czarnecki, Wojciech M. and Xu, Zhongwen and van Hasselt, Hado P and Singh, Satinder and Silver, David},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+ pages = {1060--1070},
+ publisher = {Curran Associates, Inc.},
+ title = {Discovering Reinforcement Learning Algorithms},
+ url = {https://proceedings.neurips.cc/paper/2020/file/0b96d81f0494fde5428c7aea243c9157-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}
+
+
+@misc{coreyes2021evolving,
+      title={Evolving Reinforcement Learning Algorithms}, 
+      author={John D. Co-Reyes and Yingjie Miao and Daiyi Peng and Esteban Real and Sergey Levine and Quoc V. Le and Honglak Lee and Aleksandra Faust},
+      year={2021},
+      eprint={2101.03958},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@misc{ortega2019metalearning,
+      title={Meta-learning of Sequential Strategies}, 
+      author={Pedro A. Ortega and Jane X. Wang and Mark Rowland and Tim Genewein and Zeb Kurth-Nelson and Razvan Pascanu and Nicolas Heess and Joel Veness and Alex Pritzel and Pablo Sprechmann and Siddhant M. Jayakumar and Tom McGrath and Kevin Miller and Mohammad Azar and Ian Osband and Neil Rabinowitz and András György and Silvia Chiappa and Simon Osindero and Yee Whye Teh and Hado van Hasselt and Nando de Freitas and Matthew Botvinick and Shane Legg},
+      year={2019},
+      eprint={1905.03030},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{wang2017learning,
+      title={Learning to reinforcement learn}, 
+      author={Jane X Wang and Zeb Kurth-Nelson and Dhruva Tirumala and Hubert Soyer and Joel Z Leibo and Remi Munos and Charles Blundell and Dharshan Kumaran and Matt Botvinick},
+      year={2017},
+      eprint={1611.05763},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@misc{duan2016rl2,
+      title={RL$^2$: Fast Reinforcement Learning via Slow Reinforcement Learning}, 
+      author={Yan Duan and John Schulman and Xi Chen and Peter L. Bartlett and Ilya Sutskever and Pieter Abbeel},
+      year={2016},
+      eprint={1611.02779},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+@misc{mishra2018simple,
+      title={A Simple Neural Attentive Meta-Learner}, 
+      author={Nikhil Mishra and Mostafa Rohaninejad and Xi Chen and Pieter Abbeel},
+      year={2018},
+      eprint={1707.03141},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+
+@misc{ritter2021rapid,
+      title={Rapid Task-Solving in Novel Environments}, 
+      author={Sam Ritter and Ryan Faulkner and Laurent Sartran and Adam Santoro and Matt Botvinick and David Raposo},
+      year={2021},
+      eprint={2006.03662},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@InProceedings{pmlr-v80-ritter18a,
+  title = 	 {Been There, Done That: Meta-Learning with Episodic Recall},
+  author =       {Ritter, Samuel and Wang, Jane and Kurth-Nelson, Zeb and Jayakumar, Siddhant and Blundell, Charles and Pascanu, Razvan and Botvinick, Matthew},
+  booktitle = 	 {Proceedings of the 35th International Conference on Machine Learning},
+  pages = 	 {4354--4363},
+  year = 	 {2018},
+  editor = 	 {Dy, Jennifer and Krause, Andreas},
+  volume = 	 {80},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {10--15 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v80/ritter18a/ritter18a.pdf},
+  url = 	 {https://proceedings.mlr.press/v80/ritter18a.html},
+  abstract = 	 {Meta-learning agents excel at rapidly learning new tasks from open-ended task distributions; yet, they forget what they learn about each task as soon as the next begins. When tasks reoccur {–} as they do in natural environments {–} meta-learning agents must explore again instead of immediately exploiting previously discovered solutions. We propose a formalism for generating open-ended yet repetitious environments, then develop a meta-learning architecture for solving these environments. This architecture melds the standard LSTM working memory with a differentiable neural episodic memory. We explore the capabilities of agents with this episodic LSTM in five meta-learning environments with reoccurring tasks, ranging from bandits to navigation and stochastic sequential decision problems.}
+}
+
+
+@inproceedings{NEURIPS2019_02ed8122,
+ author = {Fortunato, Meire and Tan, Melissa and Faulkner, Ryan and Hansen, Steven and Puigdom\`{e}nech Badia, Adri\`{a} and Buttimore, Gavin and Deck, Charles and Leibo, Joel Z and Blundell, Charles},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Generalization of Reinforcement Learners with Working and Episodic Memory},
+ url = {https://proceedings.neurips.cc/paper/2019/file/02ed812220b0705fabb868ddbf17ea20-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+@article {Hoskin170720,
+	author = {Hoskin, Abigail N. and Bornstein, Aaron M. and Norman, Kenneth A. and Cohen, Jonathan D.},
+	title = {Refresh my memory: Episodic memory reinstatements intrude on working memory maintenance},
+	elocation-id = {170720},
+	year = {2018},
+	doi = {10.1101/170720},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {A fundamental question in memory research is how different forms of memory interact. Previous research has shown that people rely on working memory (WM) in short-term recognition tasks; a common view is that episodic memory (EM) only influences performance on these tasks when WM maintenance is disrupted. However, retrieval of memories from EM has been widely observed during brief periods of quiescence, raising the possibility that EM retrievals during maintenance-critically, before a response can be prepared-might affect short-term recognition memory performance even in the absence of distraction. We hypothesized that this influence would be mediated by the lingering presence of reactivated EM content in WM. We obtained support for this hypothesis in three experiments, showing that delay-period EM reactivation introduces incidentally-associated information (context) into WM, and that these retrieved associations negatively impact subsequent recognition, leading to substitution errors (Experiment 1) and slowing of accurate responses (Experiment 2). fMRI pattern analysis showed that slowing is mediated by the content of EM reinstatement (Experiment 3). These results expose a previously hidden influence of EM on WM, raising new questions about the adaptive nature of their interaction.},
+	URL = {https://www.biorxiv.org/content/early/2018/05/30/170720},
+	eprint = {https://www.biorxiv.org/content/early/2018/05/30/170720.full.pdf},
+	journal = {bioRxiv}
+}
+
+@Inbook{Rovee-Collier2012,
+author="Rovee-Collier, Carolyn",
+editor="Seel, Norbert M.",
+title="Reinstatement of Learning",
+bookTitle="Encyclopedia of the Sciences of Learning",
+year="2012",
+publisher="Springer US",
+address="Boston, MA",
+pages="2803--2805",
+isbn="978-1-4419-1428-6",
+doi="10.1007/978-1-4419-1428-6_346",
+url="https://doi.org/10.1007/978-1-4419-1428-6_346"
+}
+
+
+@misc{ritter2018there,
+      title={Been There, Done That: Meta-Learning with Episodic Recall}, 
+      author={Samuel Ritter and Jane X. Wang and Zeb Kurth-Nelson and Siddhant M. Jayakumar and Charles Blundell and Razvan Pascanu and Matthew Botvinick},
+      year={2018},
+      eprint={1805.09692},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+@inproceedings{DBLP:conf/cogsci/RitterWKB18,
+  author={Samuel Ritter and Jane X. Wang and Zeb Kurth-Nelson and Matthew Botvinick},
+  title={Episodic Control through Meta-Reinforcement Learning},
+  year={2018},
+  cdate={1514764800000},
+  url={https://mindmodeling.org/cogsci2018/papers/0190/index.html},
+  booktitle={CogSci}
+}
+
+@article {Wang295964,
+	author = {Wang, Jane X. and Kurth-Nelson, Zeb and Kumaran, Dharshan and Tirumala, Dhruva and Soyer, Hubert and Leibo, Joel Z. and Hassabis, Demis and Botvinick, Matthew},
+	title = {Prefrontal Cortex as a Meta-Reinforcement Learning System},
+	elocation-id = {295964},
+	year = {2018},
+	doi = {10.1101/295964},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Over the past twenty years, neuroscience research on reward-based learning has converged on a canonical model, under which the neurotransmitter dopamine {\textquoteleft}stamps in{\textquoteright} associations between situations, actions and rewards by modulating the strength of synaptic connections between neurons. However, a growing number of recent findings have placed this standard model under strain. In the present work, we draw on recent advances in artificial intelligence to introduce a new theory of reward-based learning. Here, the dopamine system trains another part of the brain, the prefrontal cortex, to operate as its own free-standing learning system. This new perspective accommodates the findings that motivated the standard model, but also deals gracefully with a wider range of observations, providing a fresh foundation for future research.},
+	URL = {https://www.biorxiv.org/content/early/2018/04/13/295964},
+	eprint = {https://www.biorxiv.org/content/early/2018/04/13/295964.full.pdf},
+	journal = {bioRxiv}
+}
+
+@misc{rakelly2019efficient,
+      title={Efficient Off-Policy Meta-Reinforcement Learning via Probabilistic Context Variables}, 
+      author={Kate Rakelly and Aurick Zhou and Deirdre Quillen and Chelsea Finn and Sergey Levine},
+      year={2019},
+      eprint={1903.08254},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{10.5555/3327345.3327436,
+author = {Gupta, Abhishek and Mendonca, Russell and Liu, YuXuan and Abbeel, Pieter and Levine, Sergey},
+title = {Meta-Reinforcement Learning of Structured Exploration Strategies},
+year = {2018},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {Exploration is a fundamental challenge in reinforcement learning (RL). Many current
+exploration methods for deep RL use task-agnostic objectives, such as information
+gain or bonuses based on state visitation. However, many practical applications of
+RL involve learning more than a single task, and prior tasks can be used to inform
+how exploration should be performed in new tasks. In this work, we study how prior
+tasks can inform an agent about how to explore effectively in new situations. We introduce
+a novel gradient-based fast adaptation algorithm – model agnostic exploration with
+structured noise (MAESN) – to learn exploration strategies from prior experience.
+The prior experience is used both to initialize a policy and to acquire a latent exploration
+space that can inject structured stochasticity into a policy, producing exploration
+strategies that are informed by prior knowledge and are more effective than random
+action-space noise. We show that MAESN is more effective at learning exploration strategies
+when compared to prior meta-RL methods, RL without learned exploration strategies,
+and task-agnostic exploration methods. We evaluate our method on a variety of simulated
+tasks: locomotion with a wheeled robot, locomotion with a quadrupedal walker, and
+object manipulation.},
+booktitle = {Proceedings of the 32nd International Conference on Neural Information Processing Systems},
+pages = {5307–5316},
+numpages = {10},
+location = {Montr\'{e}al, Canada},
+series = {NIPS'18}
+}
+
+
+@misc{fakoor2020metaqlearning,
+      title={Meta-Q-Learning}, 
+      author={Rasool Fakoor and Pratik Chaudhari and Stefano Soatto and Alexander J. Smola},
+      year={2020},
+      eprint={1910.00125},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@misc{zintgraf2020varibad,
+      title={VariBAD: A Very Good Method for Bayes-Adaptive Deep RL via Meta-Learning}, 
+      author={Luisa Zintgraf and Kyriacos Shiarlis and Maximilian Igl and Sebastian Schulze and Yarin Gal and Katja Hofmann and Shimon Whiteson},
+      year={2020},
+      eprint={1910.08348},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@misc{parisotto2019stabilizing,
+      title={Stabilizing Transformers for Reinforcement Learning}, 
+      author={Emilio Parisotto and H. Francis Song and Jack W. Rae and Razvan Pascanu and Caglar Gulcehre and Siddhant M. Jayakumar and Max Jaderberg and Raphael Lopez Kaufman and Aidan Clark and Seb Noury and Matthew M. Botvinick and Nicolas Heess and Raia Hadsell},
+      year={2019},
+      eprint={1910.06764},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{loynd2020working,
+      title={Working Memory Graphs}, 
+      author={Ricky Loynd and Roland Fernandez and Asli Celikyilmaz and Adith Swaminathan and Matthew Hausknecht},
+      year={2020},
+      eprint={1911.07141},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{janner2021reinforcement,
+      title={Reinforcement Learning as One Big Sequence Modeling Problem}, 
+      author={Michael Janner and Qiyang Li and Sergey Levine},
+      year={2021},
+      eprint={2106.02039},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{chen2021decision,
+      title={Decision Transformer: Reinforcement Learning via Sequence Modeling}, 
+      author={Lili Chen and Kevin Lu and Aravind Rajeswaran and Kimin Lee and Aditya Grover and Michael Laskin and Pieter Abbeel and Aravind Srinivas and Igor Mordatch},
+      year={2021},
+      eprint={2106.01345},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@inproceedings{10.5555/3295222.3295349,
+author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, \L{}ukasz and Polosukhin, Illia},
+title = {Attention is All You Need},
+year = {2017},
+isbn = {9781510860964},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional
+neural networks that include an encoder and a decoder. The best performing models
+also connect the encoder and decoder through an attention mechanism. We propose a
+new simple network architecture, the Transformer, based solely on attention mechanisms,
+dispensing with recurrence and convolutions entirely. Experiments on two machine translation
+tasks show these models to be superior in quality while being more parallelizable
+and requiring significantly less time to train. Our model achieves 28.4 BLEU on the
+WMT 2014 English-to-German translation task, improving over the existing best results,
+including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation
+task, our model establishes a new single-model state-of-the-art BLEU score of 41.0
+after training for 3.5 days on eight GPUs, a small fraction of the training costs
+of the best models from the literature.},
+booktitle = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+pages = {6000–6010},
+numpages = {11},
+location = {Long Beach, California, USA},
+series = {NIPS'17}
+}
+
+
+@inproceedings{
+dosovitskiy2021an,
+title={An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
+author={Alexey Dosovitskiy and Lucas Beyer and Alexander Kolesnikov and Dirk Weissenborn and Xiaohua Zhai and Thomas Unterthiner and Mostafa Dehghani and Matthias Minderer and Georg Heigold and Sylvain Gelly and Jakob Uszkoreit and Neil Houlsby},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=YicbFdNTTy}
+}
+
+@article{DBLP:journals/corr/abs-2005-14165,
+  author    = {Tom B. Brown and
+               Benjamin Mann and
+               Nick Ryder and
+               Melanie Subbiah and
+               Jared Kaplan and
+               Prafulla Dhariwal and
+               Arvind Neelakantan and
+               Pranav Shyam and
+               Girish Sastry and
+               Amanda Askell and
+               Sandhini Agarwal and
+               Ariel Herbert{-}Voss and
+               Gretchen Krueger and
+               Tom Henighan and
+               Rewon Child and
+               Aditya Ramesh and
+               Daniel M. Ziegler and
+               Jeffrey Wu and
+               Clemens Winter and
+               Christopher Hesse and
+               Mark Chen and
+               Eric Sigler and
+               Mateusz Litwin and
+               Scott Gray and
+               Benjamin Chess and
+               Jack Clark and
+               Christopher Berner and
+               Sam McCandlish and
+               Alec Radford and
+               Ilya Sutskever and
+               Dario Amodei},
+  title     = {Language Models are Few-Shot Learners},
+  journal   = {CoRR},
+  volume    = {abs/2005.14165},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2005.14165},
+  eprinttype = {arXiv},
+  eprint    = {2005.14165},
+  timestamp = {Wed, 03 Jun 2020 11:36:54 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2005-14165.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{he2015deep,
+      title={Deep Residual Learning for Image Recognition}, 
+      author={Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
+      year={2015},
+      eprint={1512.03385},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@misc{ba2016layer,
+      title={Layer Normalization}, 
+      author={Jimmy Lei Ba and Jamie Ryan Kiros and Geoffrey E. Hinton},
+      year={2016},
+      eprint={1607.06450},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+
+@InProceedings{pmlr-v119-huang20f,
+  title = 	 {Improving Transformer Optimization Through Better Initialization},
+  author =       {Huang, Xiao Shi and Perez, Felipe and Ba, Jimmy and Volkovs, Maksims},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {4475--4483},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--18 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v119/huang20f/huang20f.pdf},
+  url = 	 {https://proceedings.mlr.press/v119/huang20f.html},
+  abstract = 	 {The Transformer architecture has achieved considerable success recently; the key component of the Transformer is the attention layer that enables the model to focus on important regions within an input sequence. Gradient optimization with attention layers can be notoriously difficult requiring tricks such as learning rate warmup to prevent divergence. As Transformer models are becoming larger and more expensive to train, recent research has focused on understanding and improving optimization in these architectures. In this work our contributions are two-fold: we first investigate and empirically validate the source of optimization problems in the encoder-decoder Transformer architecture; we then propose a new weight initialization scheme with theoretical justification, that enables training without warmup or layer normalization. Empirical results on public machine translation benchmarks show that our approach achieves leading accuracy, allowing to train deep Transformer models with 200 layers in both encoder and decoder (over 1000 attention/MLP blocks) without difficulty. Code for this work is available here:&nbsp;\url{https://github.com/layer6ai-labs/T-Fixup}.}
+}
+
+
+@misc{liu2020variance,
+      title={On the Variance of the Adaptive Learning Rate and Beyond}, 
+      author={Liyuan Liu and Haoming Jiang and Pengcheng He and Weizhu Chen and Xiaodong Liu and Jianfeng Gao and Jiawei Han},
+      year={2020},
+      eprint={1908.03265},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{xiong2020layer,
+      title={On Layer Normalization in the Transformer Architecture}, 
+      author={Ruibin Xiong and Yunchang Yang and Di He and Kai Zheng and Shuxin Zheng and Chen Xing and Huishuai Zhang and Yanyan Lan and Liwei Wang and Tie-Yan Liu},
+      year={2020},
+      eprint={2002.04745},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{kingma2017adam,
+      title={Adam: A Method for Stochastic Optimization}, 
+      author={Diederik P. Kingma and Jimmy Ba},
+      year={2017},
+      eprint={1412.6980},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@INPROCEEDINGS{Glorot10understandingthe,
+    author = {Xavier Glorot and Yoshua Bengio},
+    title = {Understanding the difficulty of training deep feedforward neural networks},
+    booktitle = {In Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS’10). Society for Artificial Intelligence and Statistics},
+    year = {2010}
+}
+
+@inproceedings{kumar-byrne-2004-minimum,
+    title = "Minimum {B}ayes-Risk Decoding for Statistical Machine Translation",
+    author = "Kumar, Shankar  and
+      Byrne, William",
+    booktitle = "Proceedings of the Human Language Technology Conference of the North {A}merican Chapter of the Association for Computational Linguistics: {HLT}-{NAACL} 2004",
+    month = may # " 2 - " # may # " 7",
+    year = "2004",
+    address = "Boston, Massachusetts, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N04-1022",
+    pages = "169--176",
+}
+
+
+@misc{schulman2017proximal,
+      title={Proximal Policy Optimization Algorithms}, 
+      author={John Schulman and Filip Wolski and Prafulla Dhariwal and Alec Radford and Oleg Klimov},
+      year={2017},
+      eprint={1707.06347},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@INPROCEEDINGS{6386109,
+  author={Todorov, Emanuel and Erez, Tom and Tassa, Yuval},
+  booktitle={2012 IEEE/RSJ International Conference on Intelligent Robots and Systems}, 
+  title={MuJoCo: A physics engine for model-based control}, 
+  year={2012},
+  volume={},
+  number={},
+  pages={5026-5033},
+  doi={10.1109/IROS.2012.6386109}}
+  
+  
+  @misc{yu2021metaworld,
+      title={Meta-World: A Benchmark and Evaluation for Multi-Task and Meta Reinforcement Learning}, 
+      author={Tianhe Yu and Deirdre Quillen and Zhanpeng He and Ryan Julian and Avnish Narayan and Hayden Shively and Adithya Bellathur and Karol Hausman and Chelsea Finn and Sergey Levine},
+      year={2021},
+      eprint={1910.10897},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{rothfuss2018promp,
+      title={ProMP: Proximal Meta-Policy Search}, 
+      author={Jonas Rothfuss and Dennis Lee and Ignasi Clavera and Tamim Asfour and Pieter Abbeel},
+      year={2018},
+      eprint={1810.06784},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@InProceedings{pmlr-v37-schulman15,
+  title = 	 {Trust Region Policy Optimization},
+  author = 	 {Schulman, John and Levine, Sergey and Abbeel, Pieter and Jordan, Michael and Moritz, Philipp},
+  booktitle = 	 {Proceedings of the 32nd International Conference on Machine Learning},
+  pages = 	 {1889--1897},
+  year = 	 {2015},
+  editor = 	 {Bach, Francis and Blei, David},
+  volume = 	 {37},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Lille, France},
+  month = 	 {07--09 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v37/schulman15.pdf},
+  url = 	 {https://proceedings.mlr.press/v37/schulman15.html},
+  abstract = 	 {In this article, we describe a method for optimizing control policies, with guaranteed monotonic improvement. By making several approximations to the theoretically-justified scheme, we develop a practical algorithm, called Trust Region Policy Optimization (TRPO). This algorithm is effective for optimizing large nonlinear policies such as neural networks. Our experiments demonstrate its robust performance on a wide variety of tasks: learning simulated robotic swimming, hopping, and walking gaits; and playing Atari games using images of the screen as input. Despite its approximations that deviate from the theory, TRPO tends to give monotonic improvement, with little tuning of hyperparameters.}
+}
+
+
+
+
+@InProceedings{pmlr-v80-haarnoja18b,
+  title = 	 {Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor},
+  author =       {Haarnoja, Tuomas and Zhou, Aurick and Abbeel, Pieter and Levine, Sergey},
+  booktitle = 	 {Proceedings of the 35th International Conference on Machine Learning},
+  pages = 	 {1861--1870},
+  year = 	 {2018},
+  editor = 	 {Dy, Jennifer and Krause, Andreas},
+  volume = 	 {80},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {10--15 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v80/haarnoja18b/haarnoja18b.pdf},
+  url = 	 {https://proceedings.mlr.press/v80/haarnoja18b.html},
+  abstract = 	 {Model-free deep reinforcement learning (RL) algorithms have been demonstrated on a range of challenging decision making and control tasks. However, these methods typically suffer from two major challenges: very high sample complexity and brittle convergence properties, which necessitate meticulous hyperparameter tuning. Both of these challenges severely limit the applicability of such methods to complex, real-world domains. In this paper, we propose soft actor-critic, an off-policy actor-critic deep RL algorithm based on the maximum entropy reinforcement learning framework. In this framework, the actor aims to maximize expected reward while also maximizing entropy. That is, to succeed at the task while acting as randomly as possible. Prior deep RL methods based on this framework have been formulated as Q-learning methods. By combining off-policy updates with a stable stochastic actor-critic formulation, our method achieves state-of-the-art performance on a range of continuous control benchmark tasks, outperforming prior on-policy and off-policy methods. Furthermore, we demonstrate that, in contrast to other off-policy algorithms, our approach is very stable, achieving very similar performance across different random seeds.}
+}
+
+
+
+@misc{brown2020language,
+      title={Language Models are Few-Shot Learners}, 
+      author={Tom B. Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and Jared Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Sandhini Agarwal and Ariel Herbert-Voss and Gretchen Krueger and Tom Henighan and Rewon Child and Aditya Ramesh and Daniel M. Ziegler and Jeffrey Wu and Clemens Winter and Christopher Hesse and Mark Chen and Eric Sigler and Mateusz Litwin and Scott Gray and Benjamin Chess and Jack Clark and Christopher Berner and Sam McCandlish and Alec Radford and Ilya Sutskever and Dario Amodei},
+      year={2020},
+      eprint={2005.14165},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{dosovitskiy2021image,
+      title={An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale}, 
+      author={Alexey Dosovitskiy and Lucas Beyer and Alexander Kolesnikov and Dirk Weissenborn and Xiaohua Zhai and Thomas Unterthiner and Mostafa Dehghani and Matthias Minderer and Georg Heigold and Sylvain Gelly and Jakob Uszkoreit and Neil Houlsby},
+      year={2021},
+      eprint={2010.11929},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@misc{caron2021emerging,
+      title={Emerging Properties in Self-Supervised Vision Transformers}, 
+      author={Mathilde Caron and Hugo Touvron and Ishan Misra and Hervé Jégou and Julien Mairal and Piotr Bojanowski and Armand Joulin},
+      year={2021},
+      eprint={2104.14294},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@misc{yuan2021tokenstotoken,
+      title={Tokens-to-Token ViT: Training Vision Transformers from Scratch on ImageNet}, 
+      author={Li Yuan and Yunpeng Chen and Tao Wang and Weihao Yu and Yujun Shi and Zihang Jiang and Francis EH Tay and Jiashi Feng and Shuicheng Yan},
+      year={2021},
+      eprint={2101.11986},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@misc{devlin2019bert,
+      title={BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding}, 
+      author={Jacob Devlin and Ming-Wei Chang and Kenton Lee and Kristina Toutanova},
+      year={2019},
+      eprint={1810.04805},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{raffel2020exploring,
+      title={Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer}, 
+      author={Colin Raffel and Noam Shazeer and Adam Roberts and Katherine Lee and Sharan Narang and Michael Matena and Yanqi Zhou and Wei Li and Peter J. Liu},
+      year={2020},
+      eprint={1910.10683},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{tulving2002,
+author = {Tulving, Endel},
+year = {2002},
+month = {02},
+pages = {1-25},
+title = {Episodic Memory: From Mind to Brain},
+volume = {53},
+journal = {Annual review of psychology},
+doi = {10.1146/annurev.psych.53.100901.135114}
+}
+
+@article{BADDELEY2010R136,
+title = {Working memory},
+journal = {Current Biology},
+volume = {20},
+number = {4},
+pages = {R136-R140},
+year = {2010},
+issn = {0960-9822},
+doi = {https://doi.org/10.1016/j.cub.2009.12.014},
+url = {https://www.sciencedirect.com/science/article/pii/S0960982209021332},
+author = {Alan Baddeley},
+abstract = {Summary
+Working memory refers to the system or systems that are assumed to be necessary in order to keep things in mind while performing complex tasks such as reasoning, comprehension and learning. Over the last 30 years, the concept of working memory has been increasingly widely used, extending from its origin in cognitive psychology to many areas of cognitive science and neuroscience, and been applied within areas ranging from education, through psychiatry to paleoanthropology.}
+}
+
+@article{zilli2008modeling,
+  title={Modeling the role of working memory and episodic memory in behavioral tasks},
+  author={Zilli, Eric A and Hasselmo, Michael E},
+  journal={Hippocampus},
+  volume={18},
+  number={2},
+  pages={193--209},
+  year={2008},
+  publisher={Wiley Online Library}
+}
+
+@misc{garage,
+ author = {The garage contributors},
+ title = {Garage: A toolkit for reproducible reinforcement learning research},
+ year = {2019},
+ publisher = {GitHub},
+ journal = {GitHub repository},
+ howpublished = {\url{https://github.com/rlworkgroup/garage}},
+ commit = {be070842071f736eb24f28e4b902a9f144f5c97b}
+}
+
+@article{DBLP:journals/corr/abs-2010-15980,
+  author    = {Taylor Shin and
+               Yasaman Razeghi and
+               Robert L. Logan IV and
+               Eric Wallace and
+               Sameer Singh},
+  title     = {AutoPrompt: Eliciting Knowledge from Language Models with Automatically
+               Generated Prompts},
+  journal   = {CoRR},
+  volume    = {abs/2010.15980},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2010.15980},
+  eprinttype = {arXiv},
+  eprint    = {2010.15980},
+  timestamp = {Tue, 03 Nov 2020 11:44:23 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2010-15980.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{NIPS2016_2f885d0f,
+ author = {Norouzi, Mohammad and Bengio, Samy and Chen, zhifeng and Jaitly, Navdeep and Schuster, Mike and Wu, Yonghui and Schuurmans, Dale},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {D. Lee and M. Sugiyama and U. Luxburg and I. Guyon and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Reward Augmented Maximum Likelihood for Neural Structured Prediction},
+ url = {https://proceedings.neurips.cc/paper/2016/file/2f885d0fbe2e131bfc9d98363e55d1d4-Paper.pdf},
+ volume = {29},
+ year = {2016}
+}

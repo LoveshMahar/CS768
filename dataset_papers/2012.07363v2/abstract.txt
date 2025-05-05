@@ -1,0 +1,12 @@
+Optimal transport (OT) measures distances between distributions in a way that
+depends on the geometry of the sample space. In light of recent advances in
+computational OT, OT distances are widely used as loss functions in machine
+learning. Despite their prevalence and advantages, OT loss functions can be
+extremely sensitive to outliers. In fact, a single adversarially-picked outlier
+can increase the standard $W_2$-distance arbitrarily. To address this issue, we
+propose an outlier-robust formulation of OT. Our formulation is convex but
+challenging to scale at a first glance. Our main contribution is deriving an
+\emph{equivalent} formulation based on cost truncation that is easy to
+incorporate into modern algorithms for computational OT. We demonstrate the
+benefits of our formulation in mean estimation problems under the Huber
+contamination model in simulations and outlier detection tasks on real data.

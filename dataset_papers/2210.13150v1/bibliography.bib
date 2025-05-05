@@ -1,0 +1,793 @@
+
+@misc{valle-perez_generalization_2020,
+	title = {Generalization bounds for deep learning},
+	url = {http://arxiv.org/abs/2012.04115},
+	doi = {10.48550/arXiv.2012.04115},
+	abstract = {Generalization in deep learning has been the topic of much recent theoretical and empirical research. Here we introduce desiderata for techniques that predict generalization errors for deep learning models in supervised learning. Such predictions should 1) scale correctly with data complexity; 2) scale correctly with training set size; 3) capture differences between architectures; 4) capture differences between optimization algorithms; 5) be quantitatively not too far from the true error (in particular, be non-vacuous); 6) be efficiently computable; and 7) be rigorous. We focus on generalization error upper bounds, and introduce a categorisation of bounds depending on assumptions on the algorithm and data. We review a wide range of existing approaches, from classical VC dimension to recent PAC-Bayesian bounds, commenting on how well they perform against the desiderata. We next use a function-based picture to derive a marginal-likelihood PAC-Bayesian bound. This bound is, by one definition, optimal up to a multiplicative constant in the asymptotic limit of large training sets, as long as the learning curve follows a power law, which is typically found in practice for deep learning problems. Extensive empirical analysis demonstrates that our marginal-likelihood PAC-Bayes bound fulfills desiderata 1-3 and 5. The results for 6 and 7 are promising, but not yet fully conclusive, while only desideratum 4 is currently beyond the scope of our bound. Finally, we comment on why this function-based bound performs significantly better than current parameter-based PAC-Bayes bounds.},
+	urldate = {2022-08-08},
+	publisher = {arXiv},
+	author = {Valle-Pérez, Guillermo and Louis, Ard A.},
+	month = dec,
+	year = {2020},
+	note = {arXiv:2012.04115 [cs, stat]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing, Statistics - Machine Learning},
+	file = {arXiv.org Snapshot:C\:\\Users\\behboodi\\Zotero\\storage\\9KQPYUZ2\\2012.html:text/html},
+}
+
+
+@article{parrado-hernandez_pac-bayes_2012,
+	title = {{PAC}-{Bayes} {Bounds} with {Data} {Dependent} {Priors}},
+	volume = {13},
+	issn = {1533-7928},
+	number = {112},
+	urldate = {2022-05-19},
+	journal = {Journal of Machine Learning Research},
+	author = {Parrado-Hernández, Emilio and Ambroladze, Amiran and Shawe-Taylor, John and Sun, Shiliang},
+	year = {2012},
+	pages = {3507--3531},
+}
+
+@article{dziugaite_search_2020,
+	title = {In search of robust measures of generalization},
+	volume = {33},
+	journal = {Advances in Neural Information Processing Systems},
+	author = {Dziugaite, Gintare Karolina and Drouin, Alexandre and Neal, Brady and Rajkumar, Nitarshan and Caballero, Ethan and Wang, Linbo and Mitliagkas, Ioannis and Roy, Daniel M.},
+	year = {2020},
+	pages = {11723--11733},
+}
+
+@article{biggs_non-vacuous_2022,
+	title = {Non-{Vacuous} {Generalisation} {Bounds} for {Shallow} {Neural} {Networks}},
+	url = {http://arxiv.org/abs/2202.01627},
+	abstract = {We focus on a specific class of shallow neural networks with a single hidden layer, namely those with \$L\_2\$-normalised data and either a sigmoid-shaped Gaussian error function ("erf") activation or a Gaussian Error Linear Unit (GELU) activation. For these networks, we derive new generalisation bounds through the PAC-Bayesian theory; unlike most existing such bounds they apply to neural networks with deterministic rather than randomised parameters. Our bounds are empirically non-vacuous when the network is trained with vanilla stochastic gradient descent on MNIST and Fashion-MNIST.},
+	urldate = {2022-03-07},
+	journal = {arXiv:2202.01627 [cs, stat]},
+	author = {Biggs, Felix and Guedj, Benjamin},
+	month = feb,
+	year = {2022},
+	note = {arXiv: 2202.01627},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+}
+
+@inproceedings{ledent_norm-based_2021,
+	title = {Norm-based generalisation bounds for deep multi-class convolutional neural networks},
+	booktitle = {35th {AAAI} {Conference} on {Artificial} {Intelligence}},
+	publisher = {AAAI Press},
+	author = {Ledent, Antoine and Mustafa, Waleed and Lei, Yunwen and Kloft, Marius},
+	year = {2021},
+	pages = {8279--8287},
+}
+
+@techreport{negrea_defense_2021,
+	title = {In {Defense} of {Uniform} {Convergence}: {Generalization} via derandomization with an application to interpolating predictors},
+	shorttitle = {In {Defense} of {Uniform} {Convergence}},
+	url = {http://arxiv.org/abs/1912.04265},
+	number = {arXiv:1912.04265},
+	urldate = {2022-05-19},
+	institution = {arXiv},
+	author = {Negrea, Jeffrey and Dziugaite, Gintare Karolina and Roy, Daniel M.},
+	month = sep,
+	year = {2021},
+
+}
+
+
+@inproceedings{koehler_uniform_2021,
+	title = {Uniform {Convergence} of {Interpolators}: {Gaussian} {Width}, {Norm} {Bounds} and {Benign} {Overfitting}},
+	shorttitle = {Uniform {Convergence} of {Interpolators}},
+	url = {https://openreview.net/forum?id=FyOhThdDBM},
+	abstract = {Uniform convergence of interpolating predictors can explain consistency for high-dimensional linear regression.},
+	language = {en},
+	urldate = {2022-05-19},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Koehler, Frederic and Zhou, Lijia and Sutherland, Danica J. and Srebro, Nathan},
+	month = may,
+	year = {2021},
+}
+
+
+@article{vardi_sample_2022,
+	title = {The {Sample} {Complexity} of {One}-{Hidden}-{Layer} {Neural} {Networks}},
+	url = {http://arxiv.org/abs/2202.06233},
+	abstract = {We study norm-based uniform convergence bounds for neural networks, aiming at a tight understanding of how these are affected by the architecture and type of norm constraint, for the simple class of scalar-valued one-hidden-layer networks, and inputs bounded in Euclidean norm. We begin by proving that in general, controlling the spectral norm of the hidden layer weight matrix is insufficient to get uniform convergence guarantees (independent of the network width), while a stronger Frobenius norm control is sufficient, extending and improving on previous work. Motivated by the proof constructions, we identify and analyze two important settings where a mere spectral norm control turns out to be sufficient: First, when the network's activation functions are sufficiently smooth (with the result extending to deeper networks); and second, for certain types of convolutional networks. In the latter setting, we study how the sample complexity is additionally affected by parameters such as the amount of overlap between patches and the overall number of patches.},
+	urldate = {2022-03-06},
+	journal = {arXiv:2202.06233 [cs, stat]},
+	author = {Vardi, Gal and Shamir, Ohad and Srebro, Nathan},
+	month = feb,
+	year = {2022},
+}
+
+%%%%%%%%%%%%%%
+%% Equivariance
+
+@inproceedings{zhu_understanding_2021,
+	title = {Understanding the {Generalization} {Benefit} of {Model} {Invariance} from a {Data} {Perspective}},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Zhu, Sicheng and An, Bang and Huang, Furong},
+	year = {2021},
+}
+
+@inproceedings{elesedy_provably_2021,
+	title = {Provably strict generalisation benefit for equivariant models},
+	booktitle = {International {Conference} on {Machine} {Learning}},
+	publisher = {PMLR},
+	author = {Elesedy, Bryn and Zaidi, Sheheryar},
+	year = {2021},
+	pages = {2959--2969},
+}
+
+@inproceedings{sannai_improved_2021,
+	title = {Improved generalization bounds of group invariant/equivariant deep networks via quotient feature spaces},
+	booktitle = {Uncertainty in {Artificial} {Intelligence}},
+	publisher = {PMLR},
+	author = {Sannai, Akiyoshi and Imaizumi, Masaaki and Kawano, Makoto},
+	year = {2021},
+	pages = {771--780},
+}
+
+@inproceedings{elesedy_group_2022,
+	title = {Group symmetry in {PAC} learning},
+	abstract = {In this paper we show rigorously how learning in the PAC framework with invariant or equivariant hypotheses reduces to learning in a space of orbit representatives. Our results hold for any compact group, including inﬁnite groups such as rotations. In addition, we show how to use these equivalences to derive generalisation bounds for invariant/equivariant models in terms of the geometry of the input and output spaces. To the best of our knowledge, our results are the most general of their kind to date.},
+	language = {en},
+	booktitle = {{ICLR} 2022 {Workshop} on {Geometrical} and {Topological} {Representation} {Learning}},
+	author = {Elesedy, Bryn},
+	year = {2022},
+	pages = {9},
+}
+
+@inproceedings{defferrard_deepsphere_2019,
+	title = {{DeepSphere}: a graph-based spherical {CNN}},
+	shorttitle = {{DeepSphere}},
+	booktitle = {International {Conference} on {Learning} {Representations}},
+	author = {Defferrard, Michaël and Milani, Martino and Gusset, Frédérick and Perraudin, Nathanaël},
+	year = {2019},
+	file = {Snapshot:C\:\\Users\\abehbood\\Zotero\\storage\\VLSP4KY3\\forum.html:text/html},
+}
+
+@article{weiler_coordinate_2021,
+	title = {Coordinate {Independent} {Convolutional} {Networks}–{Isometry} and {Gauge} {Equivariant} {Convolutions} on {Riemannian} {Manifolds}},
+	journal = {arXiv preprint arXiv:2106.06020},
+	author = {Weiler, Maurice and Forré, Patrick and Verlinde, Erik and Welling, Max},
+	year = {2021},
+	file = {Snapshot:C\:\\Users\\abehbood\\Zotero\\storage\\MGIKM3XB\\2106.html:text/html},
+}
+
+@inproceedings{finzi_generalizing_2020,
+	title = {Generalizing convolutional neural networks for equivariance to lie groups on arbitrary continuous data},
+	booktitle = {International {Conference} on {Machine} {Learning}},
+	publisher = {PMLR},
+	author = {Finzi, Marc and Stanton, Samuel and Izmailov, Pavel and Wilson, Andrew Gordon},
+	year = {2020},
+	pages = {3165--3176},
+}
+
+@article{bloem-reddy_probabilistic_2020,
+	title = {Probabilistic {Symmetries} and {Invariant} {Neural} {Networks}},
+	volume = {21},
+	issn = {1533-7928},
+	url = {http://jmlr.org/papers/v21/19-322.html},
+	abstract = {Treating neural network inputs and outputs as random variables, we characterize the structure of neural networks that can be used to model data that are invariant or equivariant under the action of a compact group. Much recent research has been devoted to encoding invariance under symmetry transformations into neural network architectures, in an effort to improve the performance of deep neural networks in data-scarce, non-i.i.d., or unsupervised settings. By considering group invariance from the perspective of probabilistic symmetry, we establish a link between functional and probabilistic symmetry, and obtain generative functional representations of probability distributions that are invariant or equivariant under the action of a compact group. Our representations completely characterize the structure of neural networks that can be used to model such distributions and yield a general program for constructing invariant stochastic or deterministic neural networks. We demonstrate that examples from the recent literature are special cases, and develop the details of the general program for exchangeable sequences and arrays.},
+	number = {90},
+	urldate = {2022-05-19},
+	journal = {Journal of Machine Learning Research},
+	author = {Bloem-Reddy, Benjamin and Teh, \{ Yee Whye \}},
+	year = {2020},
+	pages = {1--61},
+}
+
+@article{shawe-taylor_representation_1996,
+	title = {Representation theory and invariant neural networks},
+	volume = {69},
+	abstract = {A feedforward neural network is a computational device used for pattern recognition. In many recognition problems, certain transformations exist which…},
+	language = {en},
+	number = {1-2},
+	urldate = {2022-05-19},
+	journal = {Discrete Applied Mathematics},
+	author = {Shawe-Taylor, John and Wood, Jeffrey},
+	month = aug,
+	year = {1996},
+	note = {Publisher: North-Holland},
+	pages = {33--60},
+}
+
+@inproceedings{cesa2022a,
+title={A Program to Build E(N)-Equivariant Steerable {CNN}s },
+author={Gabriele Cesa and Leon Lang and Maurice Weiler},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=WE4qe9xlnQw}
+}
+
+@book{serre1977linear,
+  title={Linear representations of finite groups},
+  author={Serre, Jean-Pierre},
+  year={1977},
+  publisher={Springer}
+}
+
+ @inproceedings{Shawe-Taylor_1989,
+ title={Building symmetries into feedforward networks}, 
+ booktitle={1989 First IEE International Conference on Artificial Neural Networks, (Conf. Publ. No. 313)},
+ author={Shawe-Taylor, J.},
+ year={1989},
+ month={Oct},
+ pages={158–162}
+}
+
+@article{Shawe-Taylor_1993,
+  title={Symmetries and discriminability in feedforward network architectures},
+  ISSN={1045-9227},
+  journal={IEEE Trans. Neural Netw.},
+  author={Shawe-Taylor, J},
+  year={1993},
+  pages={1–25}
+}
+
+@article{Wood_Shawe-Taylor_1996,
+    title = "Representation theory and invariant neural networks",
+    journal = "Discrete Applied Mathematics",
+    volume = "69",
+    number = "1",
+    pages = "33 - 60",
+    year = "1996",
+    issn = "0166-218X",
+    doi = "https://doi.org/10.1016/0166-218X(95)00075-3",
+    author = "Jeffrey Wood and John Shawe-Taylor",
+    abstract = "A feedforward neural network is a computational device used for pattern recognition. In many recognition problems, certain transformations exist which, when applied to a pattern, leave its classification unchanged. Invariance under a given group of transformations is therefore typically a desirable property of pattern classifiers. In this paper, we present a methodology, based on representation theory, for the construction of a neural network invariant under any given finite linear group. Such networks show improved generalization abilities and may also learn faster than corresponding networks without in-built invariance. We hope in the future to generalize this theory to approximate invariance under continuous groups."
+}
+
+@article{Wood_Shawe-Taylor,
+  title={A unifying framework for invariant pattern recognition}, author={Wood, Jeffrey and Shawe-Taylor, John},
+  pages={8}
+}
+
+
+@article{Freeman1991-STEER,
+  title={The design and use of steerable filters},
+  author={Freeman, William T. and Adelson, Edward H.},
+  journal={IEEE Transactions on Pattern Analysis \& Machine Intelligence},
+  number={9},
+  pages={891--906},
+  year={1991},
+  publisher={Ieee}
+}
+
+@article{mallat_group_2012,
+	title = {Group invariant scattering},
+	volume = {65},
+	number = {10},
+	journal = {Communications on Pure and Applied Mathematics},
+	author = {Mallat, Stéphane},
+	year = {2012},
+	pages = {1331--1398},
+}
+
+@INPROCEEDINGS{Dieleman2016-CYC,
+  title     = "Exploiting Cyclic Symmetry in Convolutional Neural Networks",
+  booktitle = "International Conference on Machine Learning ({ICML})",
+  author={Dieleman, Sander and De Fauw, Jeffrey and Kavukcuoglu, Koray},
+  abstract  = "Many classes of images exhibit rotational sym-metry.
+               Convolutional neural networks are some-times trained using data
+               augmentation to exploit this, but they are still required to
+               learn the ro-tation equivariance properties from the data.
+               En-coding these properties into the network architec-ture, as we
+               are already used to doing for transla-tion equivariance by using
+               convolutional layers, could result in a more efficient use of
+               the param-eter budget by relieving the model from learning them.
+               We introduce four operations which can be inserted into neural
+               network models as layers, and which can be combined to make
+               these mod-els partially equivariant to rotations. They also
+               enable parameter sharing across different orien-tations. We
+               evaluate the effect of these architec-tural modifications on
+               three datasets which ex-hibit rotational symmetry and
+               demonstrate im-proved performance with smaller models.",
+  year      =  2016
+}
+
+
+@article{cohen_group_2016,
+	title = {Group {Equivariant} {Convolutional} {Networks}},
+	abstract = {We introduce Group equivariant Convolutional Neural Networks (G-CNNs), a natural generalization of convolutional neural networks that reduces sample complexity by exploiting symmetries. G-CNNs use G-convolutions, a new type of layer that enjoys a substantially higher degree of weight sharing than regular convolution layers. G-convolutions increase the expressive capacity of the network without increasing the number of parameters. Group convolution layers are easy to use and can be implemented with negligible computational overhead for discrete groups generated by translations, reflections and rotations. G-CNNs achieve state of the art results on CIFAR10 and rotated MNIST.},
+	journal = {arXiv:1602.07576 [cs, stat]},
+	author = {Cohen, Taco S. and Welling, Max},
+	month = feb,
+	year = {2016},
+	note = {arXiv: 1602.07576},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+}
+
+@inproceedings{laptev2016ti,
+  title={TI-POOLING: transformation-invariant pooling for feature learning in Convolutional Neural Networks},
+  author={Laptev, Dmitry and Savinov, Nikolay and Buhmann, Joachim M and Pollefeys, Marc},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={289--297},
+  year={2016}
+}
+
+@INPROCEEDINGS{Worrall2017-HNET,
+  title     = "Harmonic Networks: Deep Translation and Rotation Equivariance",
+  booktitle = "{Conference on Computer Vision and Pattern Recognition (CVPR)}",
+  author    = "Worrall, Daniel E. and Garbin, Stephan J. and Turmukhambetov,
+               Daniyar and Brostow, Gabriel J.",
+  year      =  2017
+}
+
+
+@INPROCEEDINGS{Weiler2018-STEERABLE,
+  title     = "Learning Steerable Filters for Rotation Equivariant {CNNs}",
+  booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+  author    = "Weiler, Maurice and Hamprecht, Fred A. and Storath, Martin",
+  year      =  2018
+}
+
+@inproceedings{3d_steerableCNNs,
+  author    = {Maurice Weiler and
+  Mario Geiger and
+  Max Welling and
+  Wouter Boomsma and
+  Taco S. Cohen},
+  title     = {{3D} Steerable {CNN}s: Learning Rotationally Equivariant Features in Volumetric
+  Data},
+  year      = {2018},
+  booktitle = {Conference on Neural Information Processing Systems (NeurIPS)},
+
+}
+
+@article{TensorFieldNets,
+  author    = {Nathaniel Thomas and
+               Tess Smidt and
+               Steven M. Kearnes and
+               Lusann Yang and
+               Li Li and
+               Kai Kohlhoff and
+               Patrick Riley},
+  title     = {Tensor Field Networks: Rotation- and Translation-Equivariant Neural
+               Networks for 3D Point Clouds},
+  year      = {2018},
+  journal={arXiv preprint arXiv:1802.08219},
+}
+
+@inproceedings{cohen_steerable_2016,
+	title = {Steerable {CNNs}},
+	author = {Cohen, Taco S. and Welling, Max},
+	booktitle = {{ICLR} 2017},
+	month = nov,
+	year = {2016},
+}
+
+@inproceedings{Kondor2018-GENERAL,
+  title={On the generalization of equivariance and convolution in neural networks to the action of compact groups},
+  author={Kondor, Risi and Trivedi, Shubhendu},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year={2018}
+}
+
+@article{generaltheory,
+  author    = {Taco S. Cohen and
+  Mario Geiger and
+  Maurice Weiler},
+  title     = {A General Theory of Equivariant {CNN}s on Homogeneous Spaces},
+  journal={arXiv preprint arXiv:1811.02017},
+  year      = {2018},
+}
+
+
+@inproceedings{bekkers2018roto,
+  title={Roto-translation covariant convolutional networks for medical image analysis},
+  author={Bekkers, Erik J. and Lafarge, Maxime W and Veta, Mitko and Eppenhof, Koen A.J. and Pluim, Josien P.W. and Duits, Remco},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
+  year={2018},
+}
+
+
+
+% General E(2)-Equivariant Steerable CNNs
+@inproceedings{Weiler2019,
+    abstract = {The big empirical success of group equivariant networks has led in recent years to the sprouting of a great variety of equivariant network architectures. A particular focus has thereby been on rotation and reflection equivariant CNNs for planar images. Here we give a general description of {\$}E(2){\$}-equivariant convolutions in the framework of Steerable CNNs. The theory of Steerable CNNs thereby yields constraints on the convolution kernels which depend on group representations describing the transformation laws of feature spaces. We show that these constraints for arbitrary group representations can be reduced to constraints under irreducible representations. A general solution of the kernel space constraint is given for arbitrary representations of the Euclidean group {\$}E(2){\$} and its subgroups. We implement a wide range of previously proposed and entirely new equivariant network architectures and extensively compare their performances. {\$}E(2){\$}-steerable convolutions are further shown to yield remarkable gains on CIFAR-10, CIFAR-100 and STL-10 when used as a drop-in replacement for non-equivariant convolutions.},
+    author = {Weiler, Maurice and Cesa, Gabriele},
+    title = {{General $E(2)$-Equivariant Steerable CNNs}},
+    booktitle={Conference on Neural Information Processing Systems (NeurIPS)},
+    year = {2019}
+}
+
+
+@inproceedings{
+bekkers2020bspline,
+title={B-Spline {CNN}s on Lie groups},
+author={Erik J Bekkers},
+booktitle={International Conference on Learning Representations},
+year={2020},
+}
+
+@article{universalgroupmlp,
+  title={Universal Equivariant Multilayer Perceptrons},
+  author={Ravanbakhsh, Siamak},
+  journal={arXiv preprint arXiv:2002.02912},
+  year={2020}
+}
+
+
+@article{bietti2019stability,
+    author = {Bietti, Alberto and Mairal, Julien},
+    title = {Group Invariance, Stability to Deformations, and Complexity of Deep Convolutional Representations},
+    year = {2019},
+    issue_date = {January 2019},
+    publisher = {JMLR.org},
+    volume = {20},
+    number = {1},
+    issn = {1532-4435},
+    journal = {J. Mach. Learn. Res.},
+    month = jan,
+    pages = {876–924},
+    numpages = {49},
+    keywords = {kernel methods, invariant representations, stability, deep learning}
+}
+  
+@article{lyle2020benefits,
+  title={On the Benefits of Invariance in Neural Networks},
+  author={Lyle, Clare and van der Wilk, Mark and Kwiatkowska, Marta and Gal, Yarin and Bloem-Reddy, Benjamin},
+  journal={arXiv preprint arXiv:2005.00178},
+  year={2020}
+}
+
+%%%%%%%%%%%%%%
+%% Learning theory
+
+@article{donsker_asymptotic_1983,
+	title = {Asymptotic evaluation of certain markov process expectations for large time. {IV}},
+	volume = {36},
+	issn = {0010-3640},
+	doi = {10.1002/cpa.3160360204},
+	number = {2},
+	journal = {Communications on Pure and Applied Mathematics},
+	author = {Donsker, M. D. and Varadhan, S. R. S.},
+	month = mar,
+	year = {1983},
+	note = {Publisher: John Wiley \& Sons, Ltd},
+	pages = {183--212}
+}
+
+
+@article{asadi_chaining_2018,
+	title = {Chaining {Mutual} {Information} and {Tightening} {Generalization} {Bounds}},
+	abstract = {Bounding the generalization error of learning algorithms has a long history, that yet falls short in explaining various generalization successes including those of deep learning. Two important difficulties are (i) exploiting the dependencies between the hypotheses, (ii) exploiting the dependence between the algorithm's input and output. Progress on the first point was made with the chaining method, originating from the work of Kolmogorov and used in the VC-dimension bound. More recently, progress on the second point was made with the mutual information method by Russo and Zou '15. Yet, these two methods are currently disjoint. In this paper, we introduce a technique to combine chaining and mutual information methods, to obtain a generalization bound that is both algorithm-dependent and that exploits the dependencies between the hypotheses. We provide an example in which our bound significantly outperforms both the chaining and the mutual information bounds. As a corollary, we tighten Dudley inequality under the knowledge that a learning algorithm chooses its output from a small subset of hypotheses with high probability; an assumption motivated by the performance of SGD discussed in Zhang et al. '17.},
+	journal = {arXiv:1806.03803 [cs, math, stat]},
+	author = {Asadi, Amir R. and Abbe, Emmanuel and Verdú, Sergio},
+	month = jun,
+	year = {2018},
+	note = {arXiv: 1806.03803},
+	keywords = {Computer Science - Information Theory, Computer Science - Learning, Mathematics - Probability, Statistics - Machine Learning},
+	annote = {Comment: 23 pages, 1 figure},
+
+}
+
+@article{russo_how_2020,
+	title = {How {Much} {Does} {Your} {Data} {Exploration} {Overfit}? {Controlling} {Bias} via {Information} {Usage}},
+	volume = {66},
+	issn = {1557-9654},
+	shorttitle = {How {Much} {Does} {Your} {Data} {Exploration} {Overfit}?},
+	doi = {10.1109/TIT.2019.2945779},
+	abstract = {Modern data is messy and high-dimensional, and it is often not clear a priori what are the right questions to ask. Instead, the analyst typically needs to use the data to search for interesting analyses to perform and hypotheses to test. This is an adaptive process, where the choice of analysis to be performed next depends on the results of the previous analyses on the same data. Ultimately, which results are reported can be heavily influenced by the data. It is widely recognized that this process, even if well-intentioned, can lead to biases and false discoveries, contributing to the crisis of reproducibility in science. But while any data-exploration renders standard statistical theory invalid, experience suggests that different types of exploratory analysis can lead to disparate levels of bias, and the degree of bias also depends on the particulars of the data set. In this paper, we propose a general information usage framework to quantify and provably bound the bias and other error metrics of an arbitrary exploratory analysis. We prove that our mutual information based bound is tight in natural settings, and then use it to give rigorous insights into when commonly used procedures do or do not lead to substantially biased estimation. Through the lens of information usage, we analyze the bias of specific exploration procedures such as filtering, rank selection and clustering. Our general framework also naturally motivates randomization techniques that provably reduce exploration bias while preserving the utility of the data analysis. We discuss the connections between our approach and related ideas from differential privacy and blinded data analysis, and supplement our results with illustrative simulations.},
+	number = {1},
+	journal = {IEEE Transactions on Information Theory},
+	author = {Russo, Daniel and Zou, James},
+	month = jan,
+	year = {2020},
+	note = {Conference Name: IEEE Transactions on Information Theory},
+	keywords = {Adaptive data analysis, Analytical models, arbitrary exploratory analysis, Correlation, data analysis, Data analysis, data exploration, Data models, data snooping, error metrics, error statistics, estimation theory, exploration bias, information management, information usage framework, Measurement, mutual information, mutual information based bound, over-fitting, Standards, statistical analysis, Testing},
+	pages = {302--323},
+}
+
+
+@incollection{xu_information-theoretic_2017,
+	title = {Information-theoretic analysis of generalization capability of learning algorithms},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems} 30},
+	publisher = {Curran Associates, Inc.},
+	author = {Xu, Aolin and Raginsky, Maxim},
+	editor = {Guyon, I. and Luxburg, U. V. and Bengio, S. and Wallach, H. and Fergus, R. and Vishwanathan, S. and Garnett, R.},
+	year = {2017},
+	pages = {2521--2530},
+}
+
+@article{pitas_limitations_2019,
+	title = {Some limitations of norm based generalization bounds in deep neural networks},
+	abstract = {Deep convolutional neural networks have been shown to be able to fit a labeling over random data while still being able to generalize well on normal datasets. Describing deep convolutional neural network capacity through the measure of spectral complexity has been recently proposed to tackle this apparent paradox. Spectral complexity correlates with GE and can distinguish networks trained on normal and random labels. We propose the first GE bound based on spectral complexity for deep convolutional neural networks and provide tighter bounds by orders of magnitude from the previous estimate. We then investigate theoretically and empirically the insensitivity of spectral complexity to invariances of modern deep convolutional neural networks, and show several limitations of spectral complexity that occur as a result.},
+	journal = {arXiv:1905.09677 [cs, stat]},
+	author = {Pitas, Konstantinos and Loukas, Andreas and Davies, Mike and Vandergheynst, Pierre},
+	month = may,
+	year = {2019},
+	note = {arXiv: 1905.09677},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+}
+
+@article{sokolic_robust_2017,
+	title = {Robust {Large} {Margin} {Deep} {Neural} {Networks}},
+	volume = {65},
+	issn = {1053-587X},
+	doi = {10.1109/TSP.2017.2708039},
+	abstract = {The generalization error of deep neural networks via their classification margin is studied in this paper. Our approach is based on the Jacobian matrix of a deep neural network and can be applied to networks with arbitrary nonlinearities and pooling layers, and to networks with different architectures such as feed forward networks and residual networks. Our analysis leads to the conclusion that a bounded spectral norm of the network's Jacobian matrix in the neighbourhood of the training samples is crucial for a deep neural network of arbitrary depth and width to generalize well. This is a significant improvement over the current bounds in the literature, which imply that the generalization error grows with either the width or the depth of the network. Moreover, it shows that the recently proposed batch normalization and weight normalization reparametrizations enjoy good generalization properties, and leads to a novel network regularizer based on the network's Jacobian matrix. The analysis is supported with experimental results on the MNIST, CIFAR-10, LaRED, and ImageNet datasets.},
+	number = {16},
+	journal = {IEEE Transactions on Signal Processing},
+	author = {Sokolić, Jure and Giryes, Raja and Sapiro, Guillermo and Rodrigues, Miguel},
+	month = aug,
+	year = {2017},
+	keywords = {signal processing, Electronic mail, Neural networks, Robustness, Optimization, Deep learning, Training, deep neural networks, neural nets, CIFAR-10, Jacobian matrices, feed forward networks, generalization error, generalization properties, ImageNet datasets, Jacobian matrix, LaRED, MNIST, pooling layers, residual networks, robust large margin deep neural networks, robustness, Transforms},
+	pages = {4265--4280},
+}
+
+@inproceedings{arora_stronger_2018,
+	title = {Stronger {Generalization} {Bounds} for {Deep} {Nets} via a {Compression} {Approach}},
+	booktitle = {International {Conference} on {Machine} {Learning}},
+	author = {Arora, Sanjeev and Ge, Rong and Neyshabur, Behnam and Zhang, Yi},
+	year = {2018},
+	pages = {254--263},
+}
+
+@inproceedings{bartlett_for_1996,
+	address = {Cambridge, MA, USA},
+	series = {{NIPS}'96},
+	title = {For {Valid} {Generalization}, the {Size} of the {Weights} is {More} {Important} {Than} the {Size} of the {Network}},
+	booktitle = {Proceedings of the 9th {International} {Conference} on {Neural} {Information} {Processing} {Systems}},
+	publisher = {MIT Press},
+	author = {Bartlett, Peter L.},
+	year = {1996},
+	pages = {134--140}
+}
+
+@incollection{bartlett_spectrally-normalized_2017,
+	title = {Spectrally-normalized margin bounds for neural networks},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems} 30},
+	publisher = {Curran Associates, Inc.},
+	author = {Bartlett, Peter L and Foster, Dylan J and Telgarsky, Matus J},
+	editor = {Guyon, I. and Luxburg, U. V. and Bengio, S. and Wallach, H. and Fergus, R. and Vishwanathan, S. and Garnett, R.},
+	year = {2017},
+	pages = {6240--6249},
+
+}
+
+@inproceedings{neyshabur_pac-bayesian_2018,
+	title = {A {PAC}-{Bayesian} {Approach} to {Spectrally}-{Normalized} {Margin} {Bounds} for {Neural} {Networks}},
+	booktitle = {International {Conference} on {Learning} {Representations}},
+	author = {Neyshabur, Behnam and Bhojanapalli, Srinadh and Srebro, Nathan},
+	year = {2018}
+}
+
+@inproceedings{dziugaite_entropy-sgd_2018,
+	title = {Entropy-{SGD} optimizes the prior of a {PAC}-{Bayes} bound: {Generalization} properties of {Entropy}-{SGD} and data-dependent priors},
+	shorttitle = {Entropy-{SGD} optimizes the prior of a {PAC}-{Bayes} bound},
+	abstract = {We show that Entropy-SGD (Chaudhari et al., 2017), when viewed as a learning algorithm, optimizes a PAC-Bayes bound on the risk of a Gibbs (posterior) classifier, i.e., a randomized classifier obta...},
+	language = {en},
+	booktitle = {International {Conference} on {Machine} {Learning}},
+	author = {Dziugaite, Gintare Karolina and Roy, Daniel},
+	month = jul,
+	year = {2018},
+	pages = {1377--1386},
+}
+
+@inproceedings{golowich_size-independent_2018,
+	title = {Size-{Independent} {Sample} {Complexity} of {Neural} {Networks}},
+	abstract = {We study the sample complexity of learning neural networks, by  providing new bounds on their Rademacher complexity assuming norm constraints  on the parameter matrix of each layer. Compared to pre...},
+	language = {en},
+	booktitle = {Conference {On} {Learning} {Theory}},
+	author = {Golowich, Noah and Rakhlin, Alexander and Shamir, Ohad},
+	month = jul,
+	year = {2018},
+	pages = {297--299},
+}
+
+@book{vershynin_high-dimensional_2018,
+	address = {Cambridge},
+	series = {Cambridge series in statistical and probabilistic mathematics},
+	title = {High-dimensional probability: an introduction with applications in data science},
+	isbn = {978-1-108-41519-4},
+	shorttitle = {High-dimensional probability},
+	number = {47},
+	publisher = {Cambridge University Press},
+	author = {Vershynin, Roman},
+	year = {2018},
+	keywords = {Probabilities, Random variables, Stochastic processes},
+	annote = {Preliminaries on random variables -- Concentration of sums of independent random variables -- Random vectors in high dimensions -- Random matrices -- Concentration without independence -- Quadratic forms, symmetrization and contraction -- Random processes -- Chaining -- Deviations of random matrices and geometric consequences -- Sparse recovery -- Dvoretzky-Milman's theorem}
+}
+
+
+@inproceedings{germain_pac-bayesian_2009,
+	title = {{PAC}-{Bayesian} learning of linear classifiers},
+	booktitle = {Proceedings of the 26th {Annual} {International} {Conference} on {Machine} {Learning}},
+	author = {Germain, Pascal and Lacasse, Alexandre and Laviolette, François and Marchand, Mario},
+	year = {2009},
+	pages = {353--360},
+}
+
+
+@article{wei_improved_2019,
+	title = {Improved {Sample} {Complexities} for {Deep} {Networks} and {Robust} {Classification} via an {All}-{Layer} {Margin}},
+	abstract = {For linear classifiers, the relationship between (normalized) output margin and generalization is captured in a clear and simple bound -- a large output margin implies good generalization. Unfortunately, for deep models, this relationship is less clear: existing analyses of the output margin give complicated bounds which sometimes depend exponentially on depth. In this work, we propose to instead analyze a new notion of margin, which we call the "all-layer margin." Our analysis reveals that the all-layer margin has a clear and direct relationship with generalization for deep models. This enables the following concrete applications of the all-layer margin: 1) by analyzing the all-layer margin, we obtain tighter generalization bounds for neural nets which depend on Jacobian and hidden layer norms and remove the exponential dependency on depth 2) our neural net results easily translate to the adversarially robust setting, giving the first direct analysis of robust test error for deep networks, and 3) we present a theoretically inspired training algorithm for increasing the all-layer margin and demonstrate that our algorithm improves test performance over strong baselines in practice.},
+	journal = {arXiv:1910.04284 [cs, stat]},
+	author = {Wei, Colin and Ma, Tengyu},
+	month = oct,
+	year = {2019},
+	note = {arXiv: 1910.04284},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+}
+
+@inproceedings{neyshabur_norm-based_2015,
+	title = {Norm-based capacity control in neural networks},
+	booktitle = {Conference on {Learning} {Theory}},
+	author = {Neyshabur, Behnam and Tomioka, Ryota and Srebro, Nathan},
+	year = {2015},
+	pages = {1376--1401}
+}
+
+@inproceedings{dziugaite_data-dependent_2018,
+	title = {Data-dependent {PAC}-{Bayes} priors via differential privacy},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Dziugaite, Gintare Karolina and Roy, Daniel M.},
+	year = {2018},
+	pages = {8430--8441},
+}
+
+@article{antos_data-dependent_2002,
+	title = {Data-dependent margin-based generalization bounds for classification},
+	volume = {3},
+	number = {Jul},
+	journal = {Journal of Machine Learning Research},
+	author = {Antos, András and Kégl, Balázs and Linder, Tamás and Lugosi, Gábor},
+	year = {2002},
+	pages = {73--98},
+}
+
+
+@incollection{nagarajan_uniform_2019,
+	title = {Uniform convergence may be unable to explain generalization in deep learning},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems} 32},
+	publisher = {Curran Associates, Inc.},
+	author = {Nagarajan, Vaishnavh and Kolter, J. Zico},
+	editor = {Wallach, H. and Larochelle, H. and Beygelzimer, A. and Alché-Buc, F. d{\textbackslash}textquotesingle and Fox, E. and Garnett, R.},
+	year = {2019},
+	pages = {11615--11626}
+}
+
+
+@article{dziugaite_computing_2017,
+	title = {Computing nonvacuous generalization bounds for deep (stochastic) neural networks with many more parameters than training data},
+	journal = {arXiv preprint arXiv:1703.11008},
+	author = {Dziugaite, Gintare Karolina and Roy, Daniel M.},
+	year = {2017},
+}
+
+
+
+@article{lever_tighter_2013,
+	series = {Special {Issue} on {Algorithmic} {Learning} {Theory}},
+	title = {Tighter {PAC}-{Bayes} bounds through distribution-dependent priors},
+	volume = {473},
+	abstract = {We further develop the idea that the PAC-Bayes prior can be informed by the data-generating distribution. We use this framework to prove sharp risk bounds for stochastic exponential weights algorithms, and develop insights into controlling function class complexity in this method. In particular we consider controlling capacity with respect to the unknown geometry defined by the data-generating distribution. We also use the method to obtain new bounds for RKHS regularization schemes such as SVMs.},
+	language = {en},
+	journal = {Theoretical Computer Science},
+	author = {Lever, Guy and Laviolette, François and Shawe-Taylor, John},
+	month = feb,
+	year = {2013},
+	keywords = {Exponential weights algorithm, Localized bounds, PAC-Bayes, Semi-supervised learning, Statistical learning theory, SVM},
+	pages = {4--28},
+}
+
+    @inproceedings{zhang_understanding_2017,
+	title = {Understanding deep learning requires rethinking generalization},
+	abstract = {Despite their massive size, successful deep artificial neural networks can
+  exhibit a remarkably small difference between training and test performance.
+  Conventional wisdom attributes small...},
+	urldate = {2018-07-24},
+	booktitle = {{ICLR} 2017},
+	author = {Zhang, Chiyuan and Bengio, Samy and Hardt, Moritz and Recht, Benjamin and Vinyals, Oriol},
+	year = {2017},
+}
+
+
+@article{abu-mostafa_hints_1993,
+	title = {Hints and the {VC} dimension},
+	volume = {5},
+	number = {2},
+	journal = {Neural Computation},
+	author = {Abu-Mostafa, Yaser S.},
+	year = {1993},
+	pages = {278--288}
+}
+
+@inproceedings{sokolic_generalization_2017,
+	title = {Generalization {Error} of {Invariant} {Classifiers}},
+	booktitle = {Artificial {Intelligence} and {Statistics}},
+	author = {Sokolić, Jure and Giryes, Raja and Sapiro, Guillermo and Rodrigues, Miguel},
+	year = {2017},
+	pages = {1094--1103},
+}
+
+
+@inproceedings{attias_improved_2019,
+	title = {Improved {Generalization} {Bounds} for {Robust} {Learning}},
+	booktitle = {Algorithmic {Learning} {Theory}},
+	author = {Attias, Idan and Kontorovich, Aryeh and Mansour, Yishay},
+	year = {2019},
+	pages = {162--183},
+}
+
+
+@inproceedings{jiang_fantastic_2020,
+	title = {Fantastic {Generalization} {Measures} and {Where} to {Find} {Them}},
+	booktitle = {International {Conference} on {Learning} {Representations}},
+	author = {Jiang, Yiding and Neyshabur, Behnam and Krishnan, Dilip and Mobahi, Hossein and Bengio, Samy},
+	year = {2020}
+}
+
+
+@inproceedings{mcallester_pac-bayesian_1998,
+	title = {Some {PAC}-{Bayesian} {Theorems}},
+	booktitle = {Machine {Learning}},
+	publisher = {ACM Press},
+	author = {McAllester, David A.},
+	year = {1998},
+	pages = {230--234}
+}
+
+@inproceedings{langford_pac-bayes_2002,
+	title = {{PAC}-{Bayes} \& {Margins}},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems} 15},
+	publisher = {Citeseer},
+	author = {Langford, John and Shawe-taylor, John},
+	year = {2002},
+
+}
+
+
+@article{felix_krahmer_suprema_2014,
+	title = {Suprema of {Chaos} {Processes} and the {Restricted} {Isometry} {Property}},
+	volume = {67},
+	number = {11},
+	journal = {Communications on Pure and Applied Mathematics},
+	author = {{Felix Krahmer} and {Shahar Mendelson} and {Holger Rauhut}},
+	month = jan,
+	year = {2014},
+	pages = {1877--1904},
+
+}
+
+@article{laurent_adaptive_2000,
+	title = {Adaptive estimation of a quadratic functional by model selection},
+	volume = {28},
+	issn = {0090-5364, 2168-8966},
+	doi = {10.1214/aos/1015957395},
+	language = {en},
+	number = {5},
+	journal = {Annals of Statistics},
+	author = {Laurent, B. and Massart, P.},
+	month = oct,
+	year = {2000},
+	mrnumber = {MR1805785},
+	zmnumber = {1105.62328},
+	note = {Publisher: Institute of Mathematical Statistics},
+	keywords = {\$l\_p\$-bodies, Adaptive estimation, Besov bodies, efficient estimation, Gaussian sequence model, model selection, quadratic functionals},
+	pages = {1302--1338}
+}
+
+
+@article{long_size-free_2019,
+	title = {Size-free generalization bounds for convolutional neural networks},
+	abstract = {We prove bounds on the generalization error of convolutional networks. The bounds are in terms of the training loss, the number of parameters, the Lipschitz constant of the loss and the distance from the weights to the initial weights. They are independent of the number of pixels in the input, and the height and width of hidden feature maps; to our knowledge, they are the first bounds for deep convolutional networks with this property. We present experiments with CIFAR-10 and a scaled-down variant, along with varying hyperparameters of a deep convolutional network, comparing our bounds with practical generalization gaps.},
+	journal = {arXiv:1905.12600 [cs, math, stat]},
+	author = {Long, Philip M. and Sedghi, Hanie},
+	month = may,
+	year = {2019},
+	note = {arXiv: 1905.12600},
+	keywords = {Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing, Statistics - Machine Learning, Mathematics - Statistics Theory, Computer Science - Artificial Intelligence},
+}
+
+
+@article{tropp2012user,
+  title={User-friendly tail bounds for sums of random matrices},
+  author={Tropp, Joel A},
+  journal={Foundations of computational mathematics},
+  volume={12},
+  number={4},
+  pages={389--434},
+  year={2012},
+  publisher={Springer}
+}

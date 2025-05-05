@@ -1,0 +1,19 @@
+Algorithmic stability is a key characteristic to ensure the generalization
+ability of a learning algorithm. Among different notions of stability,
+\emph{uniform stability} is arguably the most popular one, which yields
+exponential generalization bounds. However, uniform stability only considers
+the worst-case loss change (or so-called sensitivity) by removing a single data
+point, which is distribution-independent and therefore undesirable. There are
+many cases that the worst-case sensitivity of the loss is much larger than the
+average sensitivity taken over the single data point that is removed,
+especially in some advanced models such as random feature models or neural
+networks. Many previous works try to mitigate the distribution independent
+issue by proposing weaker notions of stability, however, they either only yield
+polynomial bounds or the bounds derived do not vanish as sample size goes to
+infinity. Given that, we propose \emph{locally elastic stability} as a weaker
+and distribution-dependent stability notion, which still yields exponential
+generalization bounds. We further demonstrate that locally elastic stability
+implies tighter generalization bounds than those derived based on uniform
+stability in many situations by revisiting the examples of bounded support
+vector machines, regularized least square regressions, and stochastic gradient
+descent.

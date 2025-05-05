@@ -1,0 +1,1089 @@
+@inproceedings{devlin-etal-2019-bert,
+    title = "{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    author = "Devlin, Jacob  and
+      Chang, Ming-Wei  and
+      Lee, Kenton  and
+      Toutanova, Kristina",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1423",
+    doi = "10.18653/v1/N19-1423",
+    pages = "4171--4186",
+    abstract = "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5 (7.7 point absolute improvement), MultiNLI accuracy to 86.7{\%} (4.6{\%} absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).",
+}
+
+@misc{openai2023gpt4,
+      title={GPT-4 Technical Report}, 
+      author={OpenAI},
+      year={2023},
+      eprint={2303.08774},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{touvron2023llama,
+      title={LLaMA: Open and Efficient Foundation Language Models}, 
+      author={Hugo Touvron and Thibaut Lavril and Gautier Izacard and Xavier Martinet and Marie-Anne Lachaux and Timothée Lacroix and Baptiste Rozière and Naman Goyal and Eric Hambro and Faisal Azhar and Aurelien Rodriguez and Armand Joulin and Edouard Grave and Guillaume Lample},
+      year={2023},
+      eprint={2302.13971},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{wu2023bloomberggpt,
+      title={BloombergGPT: A Large Language Model for Finance}, 
+      author={Shijie Wu and Ozan Irsoy and Steven Lu and Vadim Dabravolski and Mark Dredze and Sebastian Gehrmann and Prabhanjan Kambadur and David Rosenberg and Gideon Mann},
+      year={2023},
+      eprint={2303.17564},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{lee2023lexgpt,
+      title={LexGPT 0.1: pre-trained GPT-J models with Pile of Law}, 
+      author={Jieh-Sheng Lee},
+      year={2023},
+      eprint={2306.05431},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{gururangan-etal-2020-dont,
+    title = "Don{'}t Stop Pretraining: Adapt Language Models to Domains and Tasks",
+    author = "Gururangan, Suchin  and
+      Marasovi{\'c}, Ana  and
+      Swayamdipta, Swabha  and
+      Lo, Kyle  and
+      Beltagy, Iz  and
+      Downey, Doug  and
+      Smith, Noah A.",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.740",
+    doi = "10.18653/v1/2020.acl-main.740",
+    pages = "8342--8360",
+    abstract = "Language models pretrained on text from a wide variety of sources form the foundation of today{'}s NLP. In light of the success of these broad-coverage models, we investigate whether it is still helpful to tailor a pretrained model to the domain of a target task. We present a study across four domains (biomedical and computer science publications, news, and reviews) and eight classification tasks, showing that a second phase of pretraining in-domain (domain-adaptive pretraining) leads to performance gains, under both high- and low-resource settings. Moreover, adapting to the task{'}s unlabeled data (task-adaptive pretraining) improves performance even after domain-adaptive pretraining. Finally, we show that adapting to a task corpus augmented using simple data selection strategies is an effective alternative, especially when resources for domain-adaptive pretraining might be unavailable. Overall, we consistently find that multi-phase adaptive pretraining offers large gains in task performance.",
+}
+
+@misc{cheng2023adapting,
+      title={Adapting Large Language Models via Reading Comprehension}, 
+      author={Daixuan Cheng and Shaohan Huang and Furu Wei},
+      year={2023},
+      eprint={2309.09530},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{yao-adapt-and-distill,
+  author       = {Yunzhi Yao and
+                  Shaohan Huang and
+                  Wenhui Wang and
+                  Li Dong and
+                  Furu Wei},
+  title        = {Adapt-and-Distill: Developing Small, Fast and Effective Pretrained
+                  Language Models for Domains},
+  journal      = {CoRR},
+  volume       = {abs/2106.13474},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2106.13474},
+  eprinttype    = {arXiv},
+  eprint       = {2106.13474},
+  timestamp    = {Wed, 30 Jun 2021 16:14:10 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2106-13474.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{gao2020pile,
+      title={The Pile: An 800GB Dataset of Diverse Text for Language Modeling}, 
+      author={Leo Gao and Stella Biderman and Sid Black and Laurence Golding and Travis Hoppe and Charles Foster and Jason Phang and Horace He and Anish Thite and Noa Nabeshima and Shawn Presser and Connor Leahy},
+      year={2020},
+      eprint={2101.00027},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{ruder-plank-2017-learning-bayes,
+    title = "Learning to select data for transfer learning with {B}ayesian Optimization",
+    author = "Ruder, Sebastian  and
+      Plank, Barbara",
+    booktitle = "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D17-1038",
+    doi = "10.18653/v1/D17-1038",
+    pages = "372--382",
+    abstract = "Domain similarity measures can be used to gauge adaptability and select suitable data for transfer learning, but existing approaches define ad hoc measures that are deemed suitable for respective tasks. Inspired by work on curriculum learning, we propose to learn data selection measures using Bayesian Optimization and evaluate them across models, domains and tasks. Our learned measures outperform existing domain similarity measures significantly on three tasks: sentiment analysis, part-of-speech tagging, and parsing. We show the importance of complementing similarity with diversity, and that learned measures are{--}to some degree{--}transferable across models, domains, and even tasks.",
+}
+
+@inproceedings{liu-etal-2019-reinforced,
+    title = "Reinforced Training Data Selection for Domain Adaptation",
+    author = "Liu, Miaofeng  and
+      Song, Yan  and
+      Zou, Hongbin  and
+      Zhang, Tong",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1189",
+    doi = "10.18653/v1/P19-1189",
+    pages = "1957--1968",
+    abstract = "Supervised models suffer from the problem of domain shifting where distribution mismatch in the data across domains greatly affect model performance. To solve the problem, training data selection (TDS) has been proven to be a prospective solution for domain adaptation in leveraging appropriate data. However, conventional TDS methods normally requires a predefined threshold which is neither easy to set nor can be applied across tasks, and models are trained separately with the TDS process. To make TDS self-adapted to data and task, and to combine it with model training, in this paper, we propose a reinforcement learning (RL) framework that synchronously searches for training instances relevant to the target domain and learns better representations for them. A selection distribution generator (SDG) is designed to perform the selection and is updated according to the rewards computed from the selected data, where a predictor is included in the framework to ensure a task-specific model can be trained on the selected data and provides feedback to rewards. Experimental results from part-of-speech tagging, dependency parsing, and sentiment analysis, as well as ablation studies, illustrate that the proposed framework is not only effective in data selection and representation, but also generalized to accommodate different NLP tasks.",
+}
+
+@InProceedings{pmlr-v162-yao22c-from-scratch,
+  title = 	 {{NLP} From Scratch Without Large-Scale Pretraining: A Simple and Efficient Framework},
+  author =       {Yao, Xingcheng and Zheng, Yanan and Yang, Xiaocong and Yang, Zhilin},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {25438--25451},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/yao22c/yao22c.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/yao22c.html},
+}
+
+@article{xie2023dsir,
+  author = {Sang Michael Xie and Shibani Santurkar and Tengyu Ma and Percy Liang},
+  journal = {arXiv preprint arXiv:2302.03169},
+  title = {Data Selection for Language Models via Importance Resampling},
+  year = {2023},
+}
+
+@misc{hernandez2022scaling,
+      title={Scaling Laws and Interpretability of Learning from Repeated Data}, 
+      author={Danny Hernandez and Tom Brown and Tom Conerly and Nova DasSarma and Dawn Drain and Sheer El-Showk and Nelson Elhage and Zac Hatfield-Dodds and Tom Henighan and Tristan Hume and Scott Johnston and Ben Mann and Chris Olah and Catherine Olsson and Dario Amodei and Nicholas Joseph and Jared Kaplan and Sam McCandlish},
+      year={2022},
+      eprint={2205.10487},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{lee-etal-2022-deduplicating,
+    title = "Deduplicating Training Data Makes Language Models Better",
+    author = "Lee, Katherine  and
+      Ippolito, Daphne  and
+      Nystrom, Andrew  and
+      Zhang, Chiyuan  and
+      Eck, Douglas  and
+      Callison-Burch, Chris  and
+      Carlini, Nicholas",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.577",
+    doi = "10.18653/v1/2022.acl-long.577",
+    pages = "8424--8445",
+    abstract = "We find that existing language modeling datasets contain many near-duplicate examples and long repetitive substrings. As a result, over 1{\%} of the unprompted output of language models trained on these datasets is copied verbatim from the training data. We develop two tools that allow us to deduplicate training datasets{---}for example removing from C4 a single 61 word English sentence that is repeated over 60,000 times. Deduplication allows us to train models that emit memorized text ten times less frequently and require fewer training steps to achieve the same or better accuracy. We can also reduce train-test overlap, which affects over 4{\%} of the validation set of standard datasets, thus allowing for more accurate evaluation. Code for deduplication is released at \url{https://github.com/google-research/deduplicate-text-datasets}.",
+}
+
+@InProceedings{coreset-survey,
+author="Guo, Chengcheng
+and Zhao, Bo
+and Bai, Yanbing",
+editor="Strauss, Christine
+and Cuzzocrea, Alfredo
+and Kotsis, Gabriele
+and Tjoa, A. Min
+and Khalil, Ismail",
+title="DeepCore: A Comprehensive Library for Coreset Selection in Deep Learning",
+booktitle="Database and Expert Systems Applications",
+year="2022",
+publisher="Springer International Publishing",
+address="Cham",
+pages="181--195",
+abstract="Coreset selection, which aims to select a subset of the most informative training samples, is a long-standing learning problem that can benefit many downstream tasks such as data-efficient learning, continual learning, neural architecture search, active learning, etc. However, many existing coreset selection methods are not designed for deep learning, which may have high complexity and poor generalization performance. In addition, the recently proposed methods are evaluated on models, datasets, and settings of different complexities. To advance the research of coreset selection in deep learning, we contribute a comprehensive code library (The code is available in https://github.com/PatrickZH/DeepCore.), namely DeepCore, and provide an empirical study on popular coreset selection methods on CIFAR10 and ImageNet datasets. Extensive experiments on CIFAR10 and ImageNet datasets verify that, although various methods have advantages in certain experiment settings, random selection is still a strong baseline.",
+isbn="978-3-031-12423-5"
+}
+
+@article{johnson2019-faiss,
+  title={Billion-scale similarity search with {GPUs}},
+  author={Johnson, Jeff and Douze, Matthijs and J{\'e}gou, Herv{\'e}},
+  journal={IEEE Transactions on Big Data},
+  volume={7},
+  number={3},
+  pages={535--547},
+  year={2019},
+  publisher={IEEE}
+}
+
+@article{parzen1962kde,
+  title={On estimation of a probability density function and mode},
+  author={Parzen, Emanuel},
+  journal={The annals of mathematical statistics},
+  volume={33},
+  number={3},
+  pages={1065--1076},
+  year={1962},
+  publisher={JSTOR}
+}
+
+@article{in-domain-pretrain,
+  author       = {Pierre{-}Louis Guhur and
+                  Makarand Tapaswi and
+                  Shizhe Chen and
+                  Ivan Laptev and
+                  Cordelia Schmid},
+  title        = {Airbert: In-domain Pretraining for Vision-and-Language Navigation},
+  journal      = {CoRR},
+  volume       = {abs/2108.09105},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2108.09105},
+  eprinttype    = {arXiv},
+  eprint       = {2108.09105},
+  timestamp    = {Mon, 23 Aug 2021 14:07:13 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2108-09105.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{copycat,
+author = {Fr\"{o}be, Maik and Bevendorff, Janek and Gienapp, Lukas and V\"{o}lske, Michael and Stein, Benno and Potthast, Martin and Hagen, Matthias},
+title = {CopyCat: Near-Duplicates Within and Between the ClueWeb and the Common Crawl},
+year = {2021},
+isbn = {9781450380379},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3404835.3463246},
+doi = {10.1145/3404835.3463246},
+abstract = {The amount of near-duplicates in web crawls like the ClueWeb or Common Crawl demands from their users either to develop a preprocessing pipeline for deduplication, which is costly both computationally and in person hours, or accepting the undesired effects that near-duplicates have on reliability and validity of experiments. We introduce ChatNoir-CopyCat-21, which simplifies deduplication significantly. It comes in two parts: (1) A compilation of near-duplicate documents within the ClueWeb09, the ClueWeb12, and two Common Crawl snapshots, as well as between selections of these crawls, and (2) a software library that implements the deduplication of arbitrary document sets. Our analysis shows that 14--52, of the documents within a crawl and around~0.7--2.5, between the crawls are near-duplicates. Two showcases demonstrate the application and usefulness of our resource.},
+booktitle = {Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+pages = {2398–2404},
+numpages = {7},
+keywords = {relevance transfer, TREC evaluation, near-duplicate detection},
+location = {Virtual Event, Canada},
+series = {SIGIR '21}
+}
+
+@inproceedings{aharoni-goldberg-2020-unsupervised,
+    title = "Unsupervised Domain Clusters in Pretrained Language Models",
+    author = "Aharoni, Roee  and
+      Goldberg, Yoav",
+    editor = "Jurafsky, Dan  and
+      Chai, Joyce  and
+      Schluter, Natalie  and
+      Tetreault, Joel",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.692",
+    doi = "10.18653/v1/2020.acl-main.692",
+    pages = "7747--7763",
+    abstract = "The notion of {``}in-domain data{''} in NLP is often over-simplistic and vague, as textual data varies in many nuanced linguistic aspects such as topic, style or level of formality. In addition, domain labels are many times unavailable, making it challenging to build domain-specific systems. We show that massive pre-trained language models implicitly learn sentence representations that cluster by domains without supervision {--} suggesting a simple data-driven definition of domains in textual data. We harness this property and propose domain data selection methods based on such models, which require only a small set of in-domain monolingual data. We evaluate our data selection methods for neural machine translation across five diverse domains, where they outperform an established approach as measured by both BLEU and precision and recall with respect to an oracle selection.",
+}
+
+@article{albert,
+  author       = {Zhenzhong Lan and
+                  Mingda Chen and
+                  Sebastian Goodman and
+                  Kevin Gimpel and
+                  Piyush Sharma and
+                  Radu Soricut},
+  title        = {{ALBERT:} {A} Lite {BERT} for Self-supervised Learning of Language
+                  Representations},
+  journal      = {CoRR},
+  volume       = {abs/1909.11942},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1909.11942},
+  eprinttype    = {arXiv},
+  eprint       = {1909.11942},
+  timestamp    = {Fri, 27 Sep 2019 13:04:21 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1909-11942.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{finetune-theory,
+ author = {Shachaf, Gal and Brutzkus, Alon and Globerson, Amir},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+ pages = {15382--15394},
+ publisher = {Curran Associates, Inc.},
+ title = {A Theoretical Analysis of Fine-tuning with Linear Teachers},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/82039d16dce0aab3913b6a7ac73deff7-Paper.pdf},
+ volume = {34},
+ year = {2021}
+}
+
+@article{kringelum2016chemprot,
+  title={ChemProt-3.0: a global chemical biology diseases mapping},
+  author={Kringelum, Jens and Kjaerulff, Sonny Kim and Brunak, S{\o}ren and Lund, Ole and Oprea, Tudor I and Taboureau, Olivier},
+  journal={Database},
+  volume={2016},
+  pages={bav123},
+  year={2016},
+  publisher={Oxford University Press}
+}
+
+@inproceedings{Dernoncourt2017PubMed2R,
+  title={PubMed 200k RCT: a Dataset for Sequential Sentence Classification in Medical Abstracts},
+  author={Franck Dernoncourt and Ji Young Lee},
+  booktitle={International Joint Conference on Natural Language Processing},
+  year={2017},
+  url={https://api.semanticscholar.org/CorpusID:151184}
+}
+
+@inproceedings{maas-etal-2011-imdb,
+    title = "Learning Word Vectors for Sentiment Analysis",
+    author = "Maas, Andrew L.  and
+      Daly, Raymond E.  and
+      Pham, Peter T.  and
+      Huang, Dan  and
+      Ng, Andrew Y.  and
+      Potts, Christopher",
+    editor = "Lin, Dekang  and
+      Matsumoto, Yuji  and
+      Mihalcea, Rada",
+    booktitle = "Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2011",
+    address = "Portland, Oregon, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P11-1015",
+    pages = "142--150",
+}
+
+@article{DBLP:journals/corr/McAuleyTSH15-helpfulness,
+  author       = {Julian J. McAuley and
+                  Christopher Targett and
+                  Qinfeng Shi and
+                  Anton van den Hengel},
+  title        = {Image-based Recommendations on Styles and Substitutes},
+  journal      = {CoRR},
+  volume       = {abs/1506.04757},
+  year         = {2015},
+  url          = {http://arxiv.org/abs/1506.04757},
+  eprinttype    = {arXiv},
+  eprint       = {1506.04757},
+  timestamp    = {Mon, 13 Aug 2018 16:46:37 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/McAuleyTSH15.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{jurgens-etal-2018-measuring,
+    title = "Measuring the Evolution of a Scientific Field through Citation Frames",
+    author = "Jurgens, David  and
+      Kumar, Srijan  and
+      Hoover, Raine  and
+      McFarland, Dan  and
+      Jurafsky, Dan",
+    editor = "Lee, Lillian  and
+      Johnson, Mark  and
+      Toutanova, Kristina  and
+      Roark, Brian",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "6",
+    year = "2018",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/Q18-1028",
+    doi = "10.1162/tacl_a_00028",
+    pages = "391--406",
+    abstract = "Citations have long been used to characterize the state of a scientific field and to identify influential works. However, writers use citations for different purposes, and this varied purpose influences uptake by future scholars. Unfortunately, our understanding of how scholars use and frame citations has been limited to small-scale manual citation analysis of individual papers. We perform the largest behavioral study of citations to date, analyzing how scientific works frame their contributions through different types of citations and how this framing affects the field as a whole. We introduce a new dataset of nearly 2,000 citations annotated for their function, and use it to develop a state-of-the-art classifier and label the papers of an entire field: Natural Language Processing. We then show how differences in framing affect scientific uptake and reveal the evolution of the publication venues and the field as a whole. We demonstrate that authors are sensitive to discourse structure and publication venue when citing, and that how a paper frames its work through citations is predictive of the citation count it will receive. Finally, we use changes in citation framing to show that the field of NLP is undergoing a significant increase in consensus.",
+}
+
+@inproceedings{luan-etal-2018-multi,
+    title = "Multi-Task Identification of Entities, Relations, and Coreference for Scientific Knowledge Graph Construction",
+    author = "Luan, Yi  and
+      He, Luheng  and
+      Ostendorf, Mari  and
+      Hajishirzi, Hannaneh",
+    editor = "Riloff, Ellen  and
+      Chiang, David  and
+      Hockenmaier, Julia  and
+      Tsujii, Jun{'}ichi",
+    booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+    month = oct # "-" # nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D18-1360",
+    doi = "10.18653/v1/D18-1360",
+    pages = "3219--3232",
+    abstract = "We introduce a multi-task setup of identifying entities, relations, and coreference clusters in scientific articles. We create SciERC, a dataset that includes annotations for all three tasks and develop a unified framework called SciIE with shared span representations. The multi-task setup reduces cascading errors between tasks and leverages cross-sentence relations through coreference links. Experiments show that our multi-task model outperforms previous models in scientific information extraction without using any domain-specific features. We further show that the framework supports construction of a scientific knowledge graph, which we use to analyze information in scientific literature.",
+}
+
+@inproceedings{kiesel-etal-2019-semeval,
+    title = "{S}em{E}val-2019 Task 4: Hyperpartisan News Detection",
+    author = "Kiesel, Johannes  and
+      Mestre, Maria  and
+      Shukla, Rishabh  and
+      Vincent, Emmanuel  and
+      Adineh, Payam  and
+      Corney, David  and
+      Stein, Benno  and
+      Potthast, Martin",
+    editor = "May, Jonathan  and
+      Shutova, Ekaterina  and
+      Herbelot, Aurelie  and
+      Zhu, Xiaodan  and
+      Apidianaki, Marianna  and
+      Mohammad, Saif M.",
+    booktitle = "Proceedings of the 13th International Workshop on Semantic Evaluation",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/S19-2145",
+    doi = "10.18653/v1/S19-2145",
+    pages = "829--839",
+    abstract = "Hyperpartisan news is news that takes an extreme left-wing or right-wing standpoint. If one is able to reliably compute this meta information, news articles may be automatically tagged, this way encouraging or discouraging readers to consume the text. It is an open question how successfully hyperpartisan news detection can be automated, and the goal of this SemEval task was to shed light on the state of the art. We developed new resources for this purpose, including a manually labeled dataset with 1,273 articles, and a second dataset with 754,000 articles, labeled via distant supervision. The interest of the research community in our task exceeded all our expectations: The datasets were downloaded about 1,000 times, 322 teams registered, of which 184 configured a virtual machine on our shared task cloud service TIRA, of which in turn 42 teams submitted a valid run. The best team achieved an accuracy of 0.822 on a balanced sample (yes : no hyperpartisan) drawn from the manually tagged corpus; an ensemble of the submitted systems increased the accuracy by 0.048.",
+}
+
+@article{DBLP:journals/corr/ZhangZL15,
+  author       = {Xiang Zhang and
+                  Junbo Jake Zhao and
+                  Yann LeCun},
+  title        = {Character-level Convolutional Networks for Text Classification},
+  journal      = {CoRR},
+  volume       = {abs/1509.01626},
+  year         = {2015},
+  url          = {http://arxiv.org/abs/1509.01626},
+  eprinttype    = {arXiv},
+  eprint       = {1509.01626},
+  timestamp    = {Fri, 13 Mar 2020 16:29:43 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/ZhangZL15.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:journals/corr/yao-nlp-scratch,
+  author       = {Xingcheng Yao and
+                  Yanan Zheng and
+                  Xiaocong Yang and
+                  Zhilin Yang},
+  title        = {{NLP} From Scratch Without Large-Scale Pretraining: {A} Simple and
+                  Efficient Framework},
+  journal      = {CoRR},
+  volume       = {abs/2111.04130},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2111.04130},
+  eprinttype    = {arXiv},
+  eprint       = {2111.04130},
+  timestamp    = {Wed, 10 Nov 2021 16:07:30 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2111-04130.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{cer2018universal,
+      title={Universal Sentence Encoder}, 
+      author={Daniel Cer and Yinfei Yang and Sheng-yi Kong and Nan Hua and Nicole Limtiaco and Rhomni St. John and Noah Constant and Mario Guajardo-Cespedes and Steve Yuan and Chris Tar and Yun-Hsuan Sung and Brian Strope and Ray Kurzweil},
+      year={2018},
+      eprint={1803.11175},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{DBLP:journals/corr/abs-2005-14165-gpt3,
+  author       = {Tom B. Brown and
+                  Benjamin Mann and
+                  Nick Ryder and
+                  Melanie Subbiah and
+                  Jared Kaplan and
+                  Prafulla Dhariwal and
+                  Arvind Neelakantan and
+                  Pranav Shyam and
+                  Girish Sastry and
+                  Amanda Askell and
+                  Sandhini Agarwal and
+                  Ariel Herbert{-}Voss and
+                  Gretchen Krueger and
+                  Tom Henighan and
+                  Rewon Child and
+                  Aditya Ramesh and
+                  Daniel M. Ziegler and
+                  Jeffrey Wu and
+                  Clemens Winter and
+                  Christopher Hesse and
+                  Mark Chen and
+                  Eric Sigler and
+                  Mateusz Litwin and
+                  Scott Gray and
+                  Benjamin Chess and
+                  Jack Clark and
+                  Christopher Berner and
+                  Sam McCandlish and
+                  Alec Radford and
+                  Ilya Sutskever and
+                  Dario Amodei},
+  title        = {Language Models are Few-Shot Learners},
+  journal      = {CoRR},
+  volume       = {abs/2005.14165},
+  year         = {2020},
+  url          = {https://arxiv.org/abs/2005.14165},
+  eprinttype    = {arXiv},
+  eprint       = {2005.14165},
+  timestamp    = {Thu, 25 May 2023 10:38:31 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2005-14165.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{chowdhery2022palm,
+      title={PaLM: Scaling Language Modeling with Pathways}, 
+      author={Aakanksha Chowdhery and Sharan Narang and Jacob Devlin and Maarten Bosma and Gaurav Mishra and Adam Roberts and Paul Barham and Hyung Won Chung and Charles Sutton and Sebastian Gehrmann and Parker Schuh and Kensen Shi and Sasha Tsvyashchenko and Joshua Maynez and Abhishek Rao and Parker Barnes and Yi Tay and Noam Shazeer and Vinodkumar Prabhakaran and Emily Reif and Nan Du and Ben Hutchinson and Reiner Pope and James Bradbury and Jacob Austin and Michael Isard and Guy Gur-Ari and Pengcheng Yin and Toju Duke and Anselm Levskaya and Sanjay Ghemawat and Sunipa Dev and Henryk Michalewski and Xavier Garcia and Vedant Misra and Kevin Robinson and Liam Fedus and Denny Zhou and Daphne Ippolito and David Luan and Hyeontaek Lim and Barret Zoph and Alexander Spiridonov and Ryan Sepassi and David Dohan and Shivani Agrawal and Mark Omernick and Andrew M. Dai and Thanumalayan Sankaranarayana Pillai and Marie Pellat and Aitor Lewkowycz and Erica Moreira and Rewon Child and Oleksandr Polozov and Katherine Lee and Zongwei Zhou and Xuezhi Wang and Brennan Saeta and Mark Diaz and Orhan Firat and Michele Catasta and Jason Wei and Kathy Meier-Hellstern and Douglas Eck and Jeff Dean and Slav Petrov and Noah Fiedel},
+      year={2022},
+      eprint={2204.02311},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{moore-lewis-2010-intelligent,
+    title = "Intelligent Selection of Language Model Training Data",
+    author = "Moore, Robert C.  and
+      Lewis, William",
+    editor = "Haji{\v{c}}, Jan  and
+      Carberry, Sandra  and
+      Clark, Stephen  and
+      Nivre, Joakim",
+    booktitle = "Proceedings of the {ACL} 2010 Conference Short Papers",
+    month = jul,
+    year = "2010",
+    address = "Uppsala, Sweden",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P10-2041",
+    pages = "220--224",
+}
+
+@article{DBLP:journals/corr/abs-2108-07258-foundation,
+  author       = {Rishi Bommasani and
+                  Drew A. Hudson and
+                  Ehsan Adeli and
+                  Russ B. Altman and
+                  Simran Arora and
+                  Sydney von Arx and
+                  Michael S. Bernstein and
+                  Jeannette Bohg and
+                  Antoine Bosselut and
+                  Emma Brunskill and
+                  Erik Brynjolfsson and
+                  Shyamal Buch and
+                  Dallas Card and
+                  Rodrigo Castellon and
+                  Niladri S. Chatterji and
+                  Annie S. Chen and
+                  Kathleen Creel and
+                  Jared Quincy Davis and
+                  Dorottya Demszky and
+                  Chris Donahue and
+                  Moussa Doumbouya and
+                  Esin Durmus and
+                  Stefano Ermon and
+                  John Etchemendy and
+                  Kawin Ethayarajh and
+                  Li Fei{-}Fei and
+                  Chelsea Finn and
+                  Trevor Gale and
+                  Lauren Gillespie and
+                  Karan Goel and
+                  Noah D. Goodman and
+                  Shelby Grossman and
+                  Neel Guha and
+                  Tatsunori Hashimoto and
+                  Peter Henderson and
+                  John Hewitt and
+                  Daniel E. Ho and
+                  Jenny Hong and
+                  Kyle Hsu and
+                  Jing Huang and
+                  Thomas Icard and
+                  Saahil Jain and
+                  Dan Jurafsky and
+                  Pratyusha Kalluri and
+                  Siddharth Karamcheti and
+                  Geoff Keeling and
+                  Fereshte Khani and
+                  Omar Khattab and
+                  Pang Wei Koh and
+                  Mark S. Krass and
+                  Ranjay Krishna and
+                  Rohith Kuditipudi and
+                  et al.},
+  title        = {On the Opportunities and Risks of Foundation Models},
+  journal      = {CoRR},
+  volume       = {abs/2108.07258},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2108.07258},
+  eprinttype    = {arXiv},
+  eprint       = {2108.07258},
+  timestamp    = {Fri, 17 Feb 2023 09:02:02 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2108-07258.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{bommasani2021foundation,
+  title={On the opportunities and risks of foundation models},
+  author={Bommasani, Rishi and Hudson, Drew A and Adeli, Ehsan and Altman, Russ and Arora, Simran and von Arx, Sydney and Bernstein, Michael S and Bohg, Jeannette and Bosselut, Antoine and Brunskill, Emma and others},
+  journal={arXiv preprint arXiv:2108.07258},
+  year={2021}
+}
+
+@article{DBLP:journals/corr/roberta,
+  author       = {Yinhan Liu and
+                  Myle Ott and
+                  Naman Goyal and
+                  Jingfei Du and
+                  Mandar Joshi and
+                  Danqi Chen and
+                  Omer Levy and
+                  Mike Lewis and
+                  Luke Zettlemoyer and
+                  Veselin Stoyanov},
+  title        = {RoBERTa: {A} Robustly Optimized {BERT} Pretraining Approach},
+  journal      = {CoRR},
+  volume       = {abs/1907.11692},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1907.11692},
+  eprinttype    = {arXiv},
+  eprint       = {1907.11692},
+  timestamp    = {Thu, 01 Aug 2019 08:59:33 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1907-11692.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{ji2023domainspecificcont,
+      title={Domain-specific Continued Pretraining of Language Models for Capturing Long Context in Mental Health}, 
+      author={Shaoxiong Ji and Tianlin Zhang and Kailai Yang and Sophia Ananiadou and Erik Cambria and Jörg Tiedemann},
+      year={2023},
+      eprint={2304.10447},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{zellers2019realnews,
+  title={Defending against neural fake news},
+  author={Zellers, Rowan and Holtzman, Ari and Rashkin, Hannah and Bisk, Yonatan and Farhadi, Ali and Roesner, Franziska and Choi, Yejin},
+  journal={Advances in neural information processing systems},
+  volume={32},
+  year={2019}
+}
+
+@article{rodriguez2021tighter,
+  title={Tighter expected generalization error bounds via Wasserstein distance},
+  author={Rodr{\'\i}guez G{\'a}lvez, Borja and Bassi, Germ{\'a}n and Thobaben, Ragnar and Skoglund, Mikael},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={19109--19121},
+  year={2021}
+}
+
+@article{li2023textbooks,
+  title={Textbooks are all you need ii: phi-1.5 technical report},
+  author={Li, Yuanzhi and Bubeck, S{\'e}bastien and Eldan, Ronen and Del Giorno, Allie and Gunasekar, Suriya and Lee, Yin Tat},
+  journal={arXiv preprint arXiv:2309.05463},
+  year={2023}
+}
+
+@inproceedings{
+mosbach2021ft_stable,
+title={On the Stability of Fine-tuning {\{}BERT{\}}: Misconceptions, Explanations, and Strong Baselines},
+author={Marius Mosbach and Maksym Andriushchenko and Dietrich Klakow},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=nzpLWnVAyah}
+}
+
+@book{collatz2014functional,
+  title={Functional analysis and numerical mathematics},
+  author={Collatz, Lothar},
+  year={2014},
+  publisher={Academic Press}
+}
+
+@inproceedings{linear_program,
+author = {Cohen, Michael B. and Lee, Yin Tat and Song, Zhao},
+title = {Solving Linear Programs in the Current Matrix Multiplication Time},
+year = {2019},
+isbn = {9781450367059},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3313276.3316303},
+doi = {10.1145/3313276.3316303},
+abstract = {This paper shows how to solve linear programs of the form minAx=b,x≥0 c⊤x with n variables in time O*((nω+n2.5−α/2+n2+1/6) log(n/δ)) where ω is the exponent of matrix multiplication, α is the dual exponent of matrix multiplication, and δ is the relative accuracy. For the current value of ω∼2.37 and α∼0.31, our algorithm takes O*(nω log(n/δ)) time. When ω = 2, our algorithm takes O*(n2+1/6 log(n/δ)) time. Our algorithm utilizes several new concepts that we believe may be of independent interest: (1) We define a stochastic central path method. (2) We show how to maintain a projection matrix       √W A⊤(AWA⊤)−1A √W in sub-quadratic time under ℓ2 multiplicative changes in the diagonal matrix W.},
+booktitle = {Proceedings of the 51st Annual ACM SIGACT Symposium on Theory of Computing},
+pages = {938–942},
+numpages = {5},
+keywords = {matrix multiplication, interior point method, linear program},
+location = {Phoenix, AZ, USA},
+series = {STOC 2019}
+}
+
+@article{xia2024less,
+  title={Less: Selecting Influential Data for Instruction Tuning},
+  author={Xia, Mengzhou and Malladi, Sadhika and Gururangan, Suchin and Arora, Sanjeev and Chen, Danqi},
+  year={2024}
+}
+
+@article{clark-etal-2020-tydi,
+    title = "{T}y{D}i {QA}: A Benchmark for Information-Seeking Question Answering in Typologically Diverse Languages",
+    author = "Clark, Jonathan H.  and
+      Choi, Eunsol  and
+      Collins, Michael  and
+      Garrette, Dan  and
+      Kwiatkowski, Tom  and
+      Nikolaev, Vitaly  and
+      Palomaki, Jennimaria",
+    editor = "Johnson, Mark  and
+      Roark, Brian  and
+      Nenkova, Ani",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "8",
+    year = "2020",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/2020.tacl-1.30",
+    doi = "10.1162/tacl_a_00317",
+    pages = "454--470",
+    abstract = "Confidently making progress on multilingual modeling requires challenging, trustworthy evaluations. We present TyDi QA{---}a question answering dataset covering 11 typologically diverse languages with 204K question-answer pairs. The languages of TyDi QA are diverse with regard to their typology{---}the set of linguistic features each language expresses{---}such that we expect models performing well on this set to generalize across a large number of the world{'}s languages. We present a quantitative analysis of the data quality and example-level qualitative linguistic analyses of observed language phenomena that would not be found in English-only corpora. To provide a realistic information-seeking task and avoid priming effects, questions are written by people who want to know the answer, but don{'}t know the answer yet, and the data is collected directly in each language without the use of translation.",
+}
+
+@inproceedings{
+hendrycks2021measuring-mmlu,
+title={Measuring Massive Multitask Language Understanding},
+author={Dan Hendrycks and Collin Burns and Steven Basart and Andy Zou and Mantas Mazeika and Dawn Song and Jacob Steinhardt},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=d7KBjmI3GmQ}
+}
+
+@article{suzgun2022challenging-bbh,
+  title={Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them},
+  author={Suzgun, Mirac and Scales, Nathan and Sch{\"a}rli, Nathanael and Gehrmann, Sebastian and Tay, Yi and Chung, Hyung Won and Chowdhery, Aakanksha and Le, Quoc V and Chi, Ed H and Zhou, Denny and and Wei, Jason},
+  journal={arXiv preprint arXiv:2210.09261},
+  year={2022}
+}
+
+@article{longpre2023flan,
+  title={The Flan Collection: Designing Data and Methods for Effective Instruction Tuning},
+  author={Longpre, Shayne and Hou, Le and Vu, Tu and Webson, Albert and Chung, Hyung Won and Tay, Yi and Zhou, Denny and Le, Quoc V and Zoph, Barret and Wei, Jason and others},
+  journal={arXiv preprint arXiv:2301.13688},
+  year={2023}
+}
+
+@inproceedings{
+wei2022chain-cot,
+title={Chain of Thought Prompting Elicits Reasoning in Large Language Models},
+author={Jason Wei and Xuezhi Wang and Dale Schuurmans and Maarten Bosma and brian ichter and Fei Xia and Ed H. Chi and Quoc V Le and Denny Zhou},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=_VjQlMeSB_J}
+}
+
+
+@misc{köpf2023openassistant,
+      title={OpenAssistant Conversations -- Democratizing Large Language Model Alignment}, 
+      author={Andreas Köpf and Yannic Kilcher and Dimitri von Rütte and Sotiris Anagnostidis and Zhi-Rui Tam and Keith Stevens and Abdullah Barhoum and Nguyen Minh Duc and Oliver Stanley and Richárd Nagyfi and Shahul ES and Sameer Suri and David Glushkov and Arnav Dantuluri and Andrew Maguire and Christoph Schuhmann and Huu Nguyen and Alexander Mattick},
+      year={2023},
+      eprint={2304.07327},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{wang2023far,
+      title={How Far Can Camels Go? Exploring the State of Instruction Tuning on Open Resources}, 
+      author={Yizhong Wang and Hamish Ivison and Pradeep Dasigi and Jack Hessel and Tushar Khot and Khyathi Raghavi Chandu and David Wadden and Kelsey MacMillan and Noah A. Smith and Iz Beltagy and Hannaneh Hajishirzi},
+      year={2023},
+      eprint={2306.04751},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{jiang2023mistral,
+      title={Mistral 7B}, 
+      author={Albert Q. Jiang and Alexandre Sablayrolles and Arthur Mensch and Chris Bamford and Devendra Singh Chaplot and Diego de las Casas and Florian Bressand and Gianna Lengyel and Guillaume Lample and Lucile Saulnier and Lélio Renard Lavaud and Marie-Anne Lachaux and Pierre Stock and Teven Le Scao and Thibaut Lavril and Thomas Wang and Timothée Lacroix and William El Sayed},
+      year={2023},
+      eprint={2310.06825},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{gpt3,
+ author = {Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel and Wu, Jeffrey and Winter, Clemens and Hesse, Chris and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+ pages = {1877--1901},
+ publisher = {Curran Associates, Inc.},
+ title = {Language Models are Few-Shot Learners},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}
+
+@inproceedings{influence,
+author = {Koh, Pang Wei and Liang, Percy},
+title = {Understanding black-box predictions via influence functions},
+year = {2017},
+publisher = {JMLR.org},
+abstract = {How can we explain the predictions of a black-box model? In this paper, we use influence functions — a classic technique from robust statistics — to trace a model's prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction. To scale up influence functions to modern machine learning settings, we develop a simple, efficient implementation that requires only oracle access to gradients and Hessian-vector products. We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information. On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks.},
+booktitle = {Proceedings of the 34th International Conference on Machine Learning - Volume 70},
+pages = {1885–1894},
+numpages = {10},
+location = {Sydney, NSW, Australia},
+series = {ICML'17}
+}
+
+@online{DatabricksBlog2023DollyV2,
+    author    = {Mike Conover and Matt Hayes and Ankit Mathur and Jianwei Xie and Jun Wan and Sam Shah and Ali Ghodsi and Patrick Wendell and Matei Zaharia and Reynold Xin},
+    title     = {Free Dolly: Introducing the World's First Truly Open Instruction-Tuned LLM},
+    year      = {2023},
+    url       = {https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm},
+    urldate   = {2023-06-30}
+}
+
+@inproceedings{
+elazar2024whats,
+title={What's In My Big Data?},
+author={Yanai Elazar and Akshita Bhagia and Ian Helgi Magnusson and Abhilasha Ravichander and Dustin Schwenk and Alane Suhr and Evan Pete Walsh and Dirk Groeneveld and Luca Soldaini and Sameer Singh and Hannaneh Hajishirzi and Noah A. Smith and Jesse Dodge},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=RvfPnOkPV4}
+}
+
+
+@inproceedings{gionis1999similarity-lsh,
+  title={Similarity search in high dimensions via hashing},
+  author={Gionis, Aristides and Indyk, Piotr and Motwani, Rajeev and others},
+  booktitle={Vldb},
+  volume={99},
+  number={6},
+  pages={518--529},
+  year={1999}
+}
+
+@misc{abbas2023semdedup,
+      title={SemDeDup: Data-efficient learning at web-scale through semantic deduplication}, 
+      author={Amro Abbas and Kushal Tirumala and Dániel Simig and Surya Ganguli and Ari S. Morcos},
+      year={2023},
+      eprint={2303.09540},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{palm,
+author = {Chowdhery, Aakanksha and Narang, Sharan and Devlin, Jacob and Bosma, Maarten and Mishra, Gaurav and Roberts, Adam and Barham, Paul and Chung, Hyung Won and Sutton, Charles and Gehrmann, Sebastian and Schuh, Parker and Shi, Kensen and Tsvyashchenko, Sashank and Maynez, Joshua and Rao, Abhishek and Barnes, Parker and Tay, Yi and Shazeer, Noam and Prabhakaran, Vinodkumar and Reif, Emily and Du, Nan and Hutchinson, Ben and Pope, Reiner and Bradbury, James and Austin, Jacob and Isard, Michael and Gur-Ari, Guy and Yin, Pengcheng and Duke, Toju and Levskaya, Anselm and Ghemawat, Sanjay and Dev, Sunipa and Michalewski, Henryk and Garcia, Xavier and Misra, Vedant and Robinson, Kevin and Fedus, Liam and Zhou, Denny and Ippolito, Daphne and Luan, David and Lim, Hyeontaek and Zoph, Barret and Spiridonov, Alexander and Sepassi, Ryan and Dohan, David and Agrawal, Shivani and Omernick, Mark and Dai, Andrew M. and Pillai, Thanumalayan Sankaranarayana and Pellat, Marie and Lewkowycz, Aitor and Moreira, Erica and Child, Rewon and Polozov, Oleksandr and Lee, Katherine and Zhou, Zongwei and Wang, Xuezhi and Saeta, Brennan and Diaz, Mark and Firat, Orhan and Catasta, Michele and Wei, Jason and Meier-Hellstern, Kathy and Eck, Douglas and Dean, Jeff and Petrov, Slav and Fiedel, Noah},
+title = {PaLM: scaling language modeling with pathways},
+year = {2024},
+issue_date = {January 2023},
+publisher = {JMLR.org},
+volume = {24},
+number = {1},
+issn = {1532-4435},
+abstract = {Large language models have been shown to achieve remarkable performance across a variety of natural language tasks using few-shot learning, which drastically reduces the number of task-specific training examples needed to adapt the model to a particular application. To further our understanding of the impact of scale on few-shot learning, we trained a 540- billion parameter, densely activated, Transformer language model, which we call Pathways Language Model (PaLM).We trained PaLM on 6144 TPU v4 chips using Pathways, a new ML system which enables highly efficient training across multiple TPU Pods. We demonstrate continued benefits of scaling by achieving state-of-the-art few-shot learning results on hundreds of language understanding and generation benchmarks. On a number of these tasks, PaLM 540B achieves breakthrough performance, outperforming the finetuned state-of-the-art on a suite of multi-step reasoning tasks, and outperforming average human performance on the recently released BIG-bench benchmark. A significant number of BIG-bench tasks showed discontinuous improvements from model scale, meaning that performance steeply increased as we scaled to our largest model. PaLM also has strong capabilities in multilingual tasks and source code generation, which we demonstrate on a wide array of benchmarks. We additionally provide a comprehensive analysis on bias and toxicity, and study the extent of training data memorization with respect to model scale. Finally, we discuss the ethical considerations related to large language models and discuss potential mitigation strategies.},
+journal = {J. Mach. Learn. Res.},
+month = {mar},
+articleno = {240},
+numpages = {113},
+keywords = {large language models, few-shot learning, natural language processing, scalable deep learning}
+}
+
+@inproceedings{wenzek-etal-2020-ccnet,
+    title = "{CCN}et: Extracting High Quality Monolingual Datasets from Web Crawl Data",
+    author = "Wenzek, Guillaume  and
+      Lachaux, Marie-Anne  and
+      Conneau, Alexis  and
+      Chaudhary, Vishrav  and
+      Guzm{\'a}n, Francisco  and
+      Joulin, Armand  and
+      Grave, Edouard",
+    editor = "Calzolari, Nicoletta  and
+      B{\'e}chet, Fr{\'e}d{\'e}ric  and
+      Blache, Philippe  and
+      Choukri, Khalid  and
+      Cieri, Christopher  and
+      Declerck, Thierry  and
+      Goggi, Sara  and
+      Isahara, Hitoshi  and
+      Maegaard, Bente  and
+      Mariani, Joseph  and
+      Mazo, H{\'e}l{\`e}ne  and
+      Moreno, Asuncion  and
+      Odijk, Jan  and
+      Piperidis, Stelios",
+    booktitle = "Proceedings of the Twelfth Language Resources and Evaluation Conference",
+    month = may,
+    year = "2020",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2020.lrec-1.494",
+    pages = "4003--4012",
+    abstract = "Pre-training text representations have led to significant improvements in many areas of natural language processing. The quality of these models benefits greatly from the size of the pretraining corpora as long as its quality is preserved. In this paper, we describe an automatic pipeline to extract massive high-quality monolingual datasets from Common Crawl for a variety of languages. Our pipeline follows the data processing introduced in fastText (Mikolov et al., 2017; Grave et al., 2018), that deduplicates documents and identifies their language. We augment this pipeline with a filtering step to select documents that are close to high quality corpora like Wikipedia.",
+    language = "English",
+    ISBN = "979-10-95546-34-4",
+}
+
+@misc{rae2022scaling,
+      title={Scaling Language Models: Methods, Analysis \& Insights from Training Gopher}, 
+      author={Jack W. Rae and Sebastian Borgeaud and Trevor Cai and Katie Millican and Jordan Hoffmann and Francis Song and John Aslanides and Sarah Henderson and Roman Ring and Susannah Young and Eliza Rutherford and Tom Hennigan and Jacob Menick and Albin Cassirer and Richard Powell and George van den Driessche and Lisa Anne Hendricks and Maribeth Rauh and Po-Sen Huang and Amelia Glaese and Johannes Welbl and Sumanth Dathathri and Saffron Huang and Jonathan Uesato and John Mellor and Irina Higgins and Antonia Creswell and Nat McAleese and Amy Wu and Erich Elsen and Siddhant Jayakumar and Elena Buchatskaya and David Budden and Esme Sutherland and Karen Simonyan and Michela Paganini and Laurent Sifre and Lena Martens and Xiang Lorraine Li and Adhiguna Kuncoro and Aida Nematzadeh and Elena Gribovskaya and Domenic Donato and Angeliki Lazaridou and Arthur Mensch and Jean-Baptiste Lespiau and Maria Tsimpoukelli and Nikolai Grigorev and Doug Fritz and Thibault Sottiaux and Mantas Pajarskas and Toby Pohlen and Zhitao Gong and Daniel Toyama and Cyprien de Masson d'Autume and Yujia Li and Tayfun Terzi and Vladimir Mikulik and Igor Babuschkin and Aidan Clark and Diego de Las Casas and Aurelia Guy and Chris Jones and James Bradbury and Matthew Johnson and Blake Hechtman and Laura Weidinger and Iason Gabriel and William Isaac and Ed Lockhart and Simon Osindero and Laura Rimell and Chris Dyer and Oriol Vinyals and Kareem Ayoub and Jeff Stanway and Lorrayne Bennett and Demis Hassabis and Koray Kavukcuoglu and Geoffrey Irving},
+      year={2022},
+      eprint={2112.11446},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{tirumala2023d4,
+      title={D4: Improving LLM Pretraining via Document De-Duplication and Diversification}, 
+      author={Kushal Tirumala and Daniel Simig and Armen Aghajanyan and Ari S. Morcos},
+      year={2023},
+      eprint={2308.12284},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{ruder-plank-2017-learning,
+    title = "Learning to select data for transfer learning with {B}ayesian Optimization",
+    author = "Ruder, Sebastian  and
+      Plank, Barbara",
+    editor = "Palmer, Martha  and
+      Hwa, Rebecca  and
+      Riedel, Sebastian",
+    booktitle = "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D17-1038",
+    doi = "10.18653/v1/D17-1038",
+    pages = "372--382",
+    abstract = "Domain similarity measures can be used to gauge adaptability and select suitable data for transfer learning, but existing approaches define ad hoc measures that are deemed suitable for respective tasks. Inspired by work on curriculum learning, we propose to learn data selection measures using Bayesian Optimization and evaluate them across models, domains and tasks. Our learned measures outperform existing domain similarity measures significantly on three tasks: sentiment analysis, part-of-speech tagging, and parsing. We show the importance of complementing similarity with diversity, and that learned measures are{--}to some degree{--}transferable across models, domains, and even tasks.",
+}
+
+@misc{engstrom2024dsdm,
+      title={DsDm: Model-Aware Dataset Selection with Datamodels}, 
+      author={Logan Engstrom and Axel Feldmann and Aleksander Madry},
+      year={2024},
+      eprint={2401.12926},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@InProceedings{datamodels-ilyas22a,
+  title = 	 {Datamodels: Understanding Predictions with Data and Data with Predictions},
+  author =       {Ilyas, Andrew and Park, Sung Min and Engstrom, Logan and Leclerc, Guillaume and Madry, Aleksander},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {9525--9587},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/ilyas22a/ilyas22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/ilyas22a.html},
+  abstract = 	 {We present a conceptual framework, <em>datamodeling</em>, for analyzing the behavior of a model class in terms of the training data. For any fixed “target” example $x$, training set $S$, and learning algorithm, a <em>datamodel</em> is a parameterized function $2^S \to \mathbb{R}$ that for any subset of $S’ \subset S$—using only information about which examples of $S$ are contained in $S’$—predicts the outcome of training a model on $S’$ and evaluating on $x$. Despite the complexity of the underlying process being approximated (e.g. end-to-end training and evaluation of deep neural networks), we show that even simple <em>linear</em> datamodels successfully predict model outputs. We then demonstrate that datamodels give rise to a variety of applications, such as: accurately predicting the effect of dataset counterfactuals; identifying brittle predictions; finding semantically similar examples; quantifying train-test leakage; and embedding data into a well-behaved and feature-rich representation space.}
+}
+
+@inproceedings{
+just2023lava,
+title={{LAVA}: Data Valuation without Pre-Specified Learning Algorithms},
+author={Hoang Anh Just and Feiyang Kang and Tianhao Wang and Yi Zeng and Myeongseob Ko and Ming Jin and Ruoxi Jia},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=JJuP86nBl4q}
+}
+
+@inproceedings{geometric_dataset_distances,
+author = {Alvarez-Melis, David and Fusi, Nicol\`{o}},
+title = {Geometric dataset distances via optimal transport},
+year = {2020},
+isbn = {9781713829546},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {The notion of task similarity is at the core of various machine learning paradigms, such as domain adaptation and meta-learning. Current methods to quantify it are often heuristic, make strong assumptions on the label sets across the tasks, and many are architecture-dependent, relying on task-specific optimal parameters (e. g., require training a model on each dataset). In this work we propose an alternative notion of distance between datasets that (i) is model-agnostic, (ii) does not involve training, (iii) can compare datasets even if their label sets are completely disjoint and (iv) has solid theoretical footing. This distance relies on optimal transport, which provides it with rich geometry awareness, interpretable correspondences and well-understood properties. Our results show that this novel distance provides meaningful comparison of datasets, and correlates well with transfer learning hardness across various experimental settings and datasets.},
+booktitle = {Proceedings of the 34th International Conference on Neural Information Processing Systems},
+articleno = {1799},
+numpages = {12},
+location = {, Vancouver, BC, Canada, },
+series = {NIPS '20}
+}
+
+@inproceedings{guo2020accelerating,
+  title={Accelerating large-scale inference with anisotropic vector quantization},
+  author={Guo, Ruiqi and Sun, Philip and Lindgren, Erik and Geng, Quan and Simcha, David and Chern, Felix and Kumar, Sanjiv},
+  booktitle={International Conference on Machine Learning},
+  pages={3887--3896},
+  year={2020},
+  organization={PMLR}
+}
+
+@article{malkov2018hnsw,
+  title={Efficient and robust approximate nearest neighbor search using hierarchical navigable small world graphs},
+  author={Malkov, Yu A and Yashunin, Dmitry A},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={42},
+  number={4},
+  pages={824--836},
+  year={2018},
+  publisher={IEEE}
+}
+
+@misc{zhang2024instruction,
+      title={Instruction Tuning for Large Language Models: A Survey}, 
+      author={Shengyu Zhang and Linfeng Dong and Xiaoya Li and Sen Zhang and Xiaofei Sun and Shuhe Wang and Jiwei Li and Runyi Hu and Tianwei Zhang and Fei Wu and Guoyin Wang},
+      year={2024},
+      eprint={2308.10792},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{
+hu2022lora,
+title={Lo{RA}: Low-Rank Adaptation of Large Language Models},
+author={Edward J Hu and Yelong Shen and Phillip Wallis and Zeyuan Allen-Zhu and Yuanzhi Li and Shean Wang and Lu Wang and Weizhu Chen},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=nZeVKeeFYf9}
+}
+
+@inproceedings{
+liu2024what,
+title={What Makes Good Data for Alignment? A Comprehensive Study of Automatic Data Selection in Instruction Tuning},
+author={Wei Liu and Weihao Zeng and Keqing He and Yong Jiang and Junxian He},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=BTKAeLqLMw}
+}
+
+@misc{bukharin2024datadiversitymattersrobust,
+      title={Data Diversity Matters for Robust Instruction Tuning}, 
+      author={Alexander Bukharin and Tuo Zhao},
+      year={2024},
+      eprint={2311.14736},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2311.14736}, 
+}
+
+@misc{wang2024diversitymeasurementsubsetselection,
+      title={Diversity Measurement and Subset Selection for Instruction Tuning Datasets}, 
+      author={Peiqi Wang and Yikang Shen and Zhen Guo and Matthew Stallone and Yoon Kim and Polina Golland and Rameswar Panda},
+      year={2024},
+      eprint={2402.02318},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2402.02318}, 
+}
+
+@inproceedings{cuturi2013sinkhorn,
+ author = {Cuturi, Marco},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {C.J. Burges and L. Bottou and M. Welling and Z. Ghahramani and K.Q. Weinberger},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Sinkhorn Distances: Lightspeed Computation of Optimal Transport},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2013/file/af21d0c97db2e27e13572cbf59eb343d-Paper.pdf},
+ volume = {26},
+ year = {2013}
+}

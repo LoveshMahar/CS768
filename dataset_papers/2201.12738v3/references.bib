@@ -1,0 +1,614 @@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Introduction 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%
+% sspark
+%%%%
+% SNN - 3rd gen nn
+@article{maass1997networks,
+  title={Networks of spiking neurons: the third generation of neural network models},
+  author={Maass, Wolfgang},
+  journal={Neural networks},
+  volume={10},
+  number={9},
+  pages={1659--1671},
+  year={1997},
+  publisher={Elsevier}
+}
+
+% the effect of spikes on neuromorphic chip
+@article{davies2021advancing,
+  title={Advancing neuromorphic computing with Loihi: A survey of results and outlook},
+  author={Davies, Mike and Wild, Andreas and Orchard, Garrick and Sandamirskaya, Yulia and Guerra, Gabriel A Fonseca and Joshi, Prasad and Plank, Philipp and Risbud, Sumedh R},
+  journal={Proceedings of the IEEE},
+  volume={109},
+  number={5},
+  pages={911--934},
+  year={2021},
+  publisher={IEEE}
+}
+
+% loihi
+@article{davies2018loihi,
+  title={Loihi: A neuromorphic manycore processor with on-chip learning},
+  author={Davies, Mike and Srinivasa, Narayan and Lin, Tsung-Han and Chinya, Gautham and Cao, Yongqiang and Choday, Sri Harsha and Dimou, Georgios and Joshi, Prasad and Imam, Nabil and Jain, Shweta and others},
+  journal={IEEE Micro},
+  volume={38},
+  number={1},
+  pages={82--99},
+  year={2018},
+  publisher={IEEE}
+}
+
+% TrueNorth chip
+@article{merolla2014million,
+  title={A million spiking-neuron integrated circuit with a scalable communication network and interface},
+  author={Merolla, Paul and Arthur, John V and Alvarez-Icaza, Rodrigo and Cassidy, Andrew S and Sawada, Jun and Akopyan, Filipp and Jackson, Bryan L and Imam, Nabil and Guo, Chen and Nakamura, Yutaka and others},
+  journal={Science},
+  volume={345},
+  number={6197},
+  pages={668--673},
+  year={2014},
+  publisher={American Association for the Advancement of Science}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SNN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LIF neuron model
+@book{gerstner2002spiking,
+  title={Spiking neuron models: Single neurons, populations, plasticity},
+  author={Gerstner, Wulfram and Kistler, Werner M},
+  year={2002},
+  publisher={Cambridge university press}
+}
+
+%% survey
+@article{tavanaei2019DL_in_SNN_1,
+  title={Deep learning in spiking neural networks},
+  author={Tavanaei, Amirhossein and Ghodrati, Masoud and Kheradpisheh, Saeed Reza and Masquelier, Timoth{\'e}e and Maida, Anthony},
+  journal={Neural Networks},
+  volume={111},
+  pages={47--63},
+  year={2019},
+  publisher={Elsevier}
+}
+@article{pfeiffer2018DL_in_SNN_2,
+  title={Deep learning with spiking neurons: opportunities and challenges},
+  author={Pfeiffer, Michael and Pfeil, Thomas},
+  journal={Frontiers in Neuroscience},
+  volume={12},
+  pages={774},
+  year={2018},
+  publisher={Frontiers}
+}
+
+%% direct training
+%% supervised learning
+@article{bohte2002error,
+  title={Error-backpropagation in temporally encoded networks of spiking neurons},
+  author={Bohte, Sander M and Kok, Joost N and La Poutre, Han},
+  journal={Neurocomputing},
+  volume={48},
+  number={1-4},
+  pages={17--37},
+  year={2002},
+  publisher={Elsevier}
+}
+
+@inproceedings{wu2019direct,
+  title={Direct training for spiking neural networks: Faster, larger, better},
+  author={Wu, Yujie and Deng, Lei and Li, Guoqi and Zhu, Jun and Xie, Yuan and Shi, Luping},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2019}
+}
+
+@article{lee2020enabling,
+  title={Enabling spike-based backpropagation for training deep neural network architectures},
+  author={Lee, Chankyu and Sarwar, Syed Shakib and Panda, Priyadarshini and Srinivasan, Gopalakrishnan and Roy, Kaushik},
+  journal={Frontiers in Neuroscience},
+  volume={14},
+  pages={119},
+  year={2020},
+  publisher={Frontiers}
+}
+
+@inproceedings{fang2021incorporating,
+  title={Incorporating learnable membrane time constant to enhance learning of spiking neural networks},
+  author={Fang, Wei and Yu, Zhaofei and Chen, Yanqi and Masquelier, Timoth{\'e}e and Huang, Tiejun and Tian, Yonghong},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={2661--2671},
+  year={2021}
+}
+
+@article{kaiser2020synaptic,
+  title={Synaptic plasticity dynamics for deep continuous local learning (DECOLLE)},
+  author={Kaiser, Jacques and Mostafa, Hesham and Neftci, Emre},
+  journal={Frontiers in Neuroscience},
+  volume={14},
+  pages={424},
+  year={2020},
+  publisher={Frontiers}
+}
+@article{he2020comparing,
+  title={Comparing snns and rnns on neuromorphic vision datasets: similarities and differences},
+  author={He, Weihua and Wu, YuJie and Deng, Lei and Li, Guoqi and Wang, Haoyu and Tian, Yang and Ding, Wei and Wang, Wenhui and Xie, Yuan},
+  journal={Neural Networks},
+  volume={132},
+  pages={108--120},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@inproceedings{chen2021pruning_ijcai,
+  title={Pruning of Deep Spiking Neural Networks through Gradient Rewiring},
+  author={Chen, Yanqi and Yu, Zhaofei and Fang, Wei and Huang, Tiejun and Tian, Yonghong},
+  booktitle={International Joint Conference on Artificial Intelligence},
+  year={2021}
+}
+
+@inproceedings{zheng2021going,
+  title={Going Deeper With Directly-Trained Larger Spiking Neural Networks},
+  author={Zheng, Hanle and Wu, Yujie and Deng, Lei and Hu, Yifan and Li, Guoqi},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2021}
+}
+
+@article{neftci2019surrogate,
+  title={Surrogate gradient learning in spiking neural networks: Bringing the power of gradient-based optimization to spiking neural networks},
+  author={Neftci, Emre O and Mostafa, Hesham and Zenke, Friedemann},
+  journal={IEEE Signal Processing Magazine},
+  volume={36},
+  number={6},
+  pages={51--63},
+  year={2019},
+  publisher={IEEE}
+}
+
+%% unsupervised learning
+@article{song2000competitive,
+  title={Competitive Hebbian learning through spike-timing-dependent synaptic plasticity},
+  author={Song, Sen and Miller, Kenneth D and Abbott, Larry F},
+  journal={Nature Neuroscience},
+  volume={3},
+  number={9},
+  pages={919--926},
+  year={2000},
+  publisher={Nature Publishing Group}
+}
+
+@article{diehl2015unsupervised,
+  title={Unsupervised learning of digit recognition using spike-timing-dependent plasticity},
+  author={Diehl, Peter U and Cook, Matthew},
+  journal={Frontiers in Computational Neuroscience},
+  volume={9},
+  pages={99},
+  year={2015},
+  publisher={Frontiers}
+}
+
+@article{kheradpisheh2018stdp,
+  title={STDP-based spiking deep convolutional neural networks for object recognition},
+  author={Kheradpisheh, Saeed Reza and Ganjtabesh, Mohammad and Thorpe, Simon J and Masquelier, Timoth{\'e}e},
+  journal={Neural Networks},
+  volume={99},
+  pages={56--67},
+  year={2018},
+  publisher={Elsevier}
+}
+
+@article{hao2020biologically,
+  title={A biologically plausible supervised learning method for spiking neural networks using the symmetric STDP rule},
+  author={Hao, Yunzhe and Huang, Xuhui and Dong, Meng and Xu, Bo},
+  journal={Neural Networks},
+  volume={121},
+  pages={387--395},
+  year={2020},
+  publisher={Elsevier}
+}
+
+%% indirect training (and reward-based training?)
+%% conversion
+@inproceedings{diehl2015fast,
+  title={Fast-classifying, high-accuracy spiking deep networks through weight and threshold balancing},
+  author={Diehl, Peter U and Neil, Daniel and Binas, Jonathan and Cook, Matthew and Liu, Shih-Chii and Pfeiffer, Michael},
+  booktitle={International Joint Conference on Neural Networks},
+  year={2015}
+}
+@article{rueckauer2017conversion,
+  title={Conversion of continuous-valued deep networks to efficient event-driven networks for image classification},
+  author={Rueckauer, Bodo and Lungu, Iulia-Alexandra and Hu, Yuhuang and Pfeiffer, Michael and Liu, Shih-Chii},
+  journal={Frontiers in Neuroscience},
+  volume={11},
+  pages={682},
+  year={2017},
+  publisher={Frontiers}
+}
+@article{sengupta2019going,
+  title={Going deeper in spiking neural networks: VGG and residual architectures},
+  author={Sengupta, Abhronil and Ye, Yuting and Wang, Robert and Liu, Chiao and Roy, Kaushik},
+  journal={Frontiers in Neuroscience},
+  volume={13},
+  pages={95},
+  year={2019},
+  publisher={Frontiers}
+}
+@inproceedings{park2019burst,
+  title={Fast and efficient information transmission with burst spikes in deep spiking neural networks},
+  author={Park, Seongsik and Kim, Seijoon and Choe, Hyeokjun and Yoon, Sungroh},
+  booktitle={ACM/IEEE Design Automation Conference (DAC)},
+  year={2019}
+}
+@inproceedings{park2020t2fsnn,
+  title={T2FSNN: deep spiking neural networks with time-to-first-spike coding},
+  author={Park, Seongsik and Kim, Seijoon and Na, Byunggook and Yoon, Sungroh},
+  booktitle={ACM/IEEE Design Automation Conference (DAC)},
+  year={2020}
+}
+@InProceedings{han2020rmpsnn,
+author = {Han, Bing and Srinivasan, Gopalakrishnan and Roy, Kaushik},
+title = {RMP-SNN: Residual membrane potential neuron for enabling deeper high-accuracy and low-latency spiking neural network},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+month = {June},
+year = {2020}
+}
+% Spiking-YOLO
+@inproceedings{kim2020spiking,
+  title={Spiking-YOLO: Spiking neural network for energy-efficient object detection},
+  author={Kim, Seijoon and Park, Seongsik and Na, Byunggook and Yoon, Sungroh},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2020}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NAS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@misc{xie2020survey,
+      title={Weight-sharing neural architecture search: A battle to shrink the optimization gap}, 
+      author={Lingxi Xie and Xin Chen and Kaifeng Bi and Longhui Wei and Yuhui Xu and Zhengsu Chen and Lanfei Wang and An Xiao and Jianlong Chang and Xiaopeng Zhang and Qi Tian},
+      year={2020},
+      eprint={2008.01475},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+%% early
+@inproceedings{real2017large,
+  title={Large-scale evolution of image classifiers},
+  author={Real, Esteban and Moore, Sherry and Selle, Andrew and Saxena, Saurabh and Suematsu, Yutaka Leon and Tan, Jie and Le, Quoc V and Kurakin, Alexey},
+  booktitle={Proceedings of the 34th International Conference on Machine Learning},
+  year={2017}
+}
+@inproceedings{real2019regularized,
+  title={Regularized evolution for image classifier architecture search},
+  author={Real, Esteban and Aggarwal, Alok and Huang, Yanping and Le, Quoc V},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2019}
+}
+@inproceedings{le2017naswithRL,
+  title={Neural architecture search with reinforcement learning},
+  author={Zoph, Barret and Le, Quoc V.},
+  booktitle={International Conference on Learning Representations},
+  year={2017}
+}
+@inproceedings{zoph2018nasnet,
+  title={Learning transferable architectures for scalable image recognition},
+  author={Zoph, Barret and Vasudevan, Vijay and Shlens, Jonathon and Le, Quoc V},
+  booktitle={Proceedings of the IEEE conference on Computer Vision and Pattern Recognition},
+  year={2018}
+}
+
+%% weight sharing
+@inproceedings{dean2018enas,
+  title={Efficient neural architecture search via parameter sharing},
+  author={Pham, Hieu and Guan, Melody Y. and Zoph, Barret and Le, Quoc V. and Dean, Jeff},
+  booktitle={Proceedings of the 35th International Conference on Machine Learning},
+  year={2018}
+}
+
+%% one-shot weight sharing
+@inproceedings{bender2018understanding,
+  title={Understanding and simplifying one-shot architecture search},
+  author={Bender, Gabriel and Kindermans, Pieter-Jan and Zoph, Barret and Vasudevan, Vijay and Le, Quoc},
+  booktitle={Proceedings of the 35th International Conference on Machine Learning},
+  year={2018}
+}
+@inproceedings{cai2020ofanet,
+  title={Once for all: Train one network and specialize it for efficient deployment},
+  author={Han Cai and Chuang Gan and Tianzhe Wang and Zhekai Zhang and Song Han},
+  booktitle={International Conference on Learning Representations},
+  year={2020}
+}
+@inproceedings{you2020greedynas,
+  title={Greedynas: Towards fast one-shot nas with greedy supernet},
+  author={You, Shan and Huang, Tao and Yang, Mingmin and Wang, Fei and Qian, Chen and Zhang, Changshui},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2020}
+}
+@inproceedings{zhang2020oneshot_novelty,
+  title={One-Shot Neural Architecture Search via Novelty Driven Sampling.},
+  author={Zhang, Miao and Li, Huiqi and Pan, Shirui and Liu, Taoping and Su, Steven W},
+  booktitle={International Joint Conference on Artificial Intelligence},
+  year={2020}
+}
+@inproceedings{guo2020spos,
+  title={Single path one-shot neural architecture search with uniform sampling},
+  author={Guo, Zichao and Zhang, Xiangyu and Mu, Haoyuan and Heng, Wen and Liu, Zechun and Wei, Yichen and Sun, Jian},
+  booktitle={European Conference on Computer Vision},
+  year={2020}
+}
+@inproceedings{li2020random,
+  title={Random search and reproducibility for neural architecture search},
+  author={Li, Liam and Talwalkar, Ameet},
+  booktitle={Uncertainty in Artificial Intelligence},
+  year={2020}
+}
+@inproceedings{peng2020cream,
+  title={Cream of the crop: Distilling prioritized paths for one-shot neural architecture search},
+  author={Peng, Houwen and Du, Hao and Yu, Hongyuan and Li, Qi and Liao, Jing and Fu, Jianlong},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2020}
+}
+@inproceedings{zhang2021rlnas,
+  title={Neural architecture search with random labels},
+  author={Zhang, Xuanyang and Hou, Pengfei and Zhang, Xiangyu and Sun, Jian},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2021}
+}
+
+%% differentiable
+@inproceedings{cai2019proxylessnas,
+  title={Proxylessnas: Direct neural architecture search on target task and hardware},
+  author={Cai, Han and Zhu, Ligeng and Han, Song},
+  booktitle={International Conference on Learning Representations},
+  year={2019}
+}
+@inproceedings{yang2019darts,
+  title={DARTS: Differentiable architecture search},
+  author={Liu, Hanxiao and Simonyan, Karen and Yang, Yiming},
+  booktitle={International Conference on Learning Representations},
+  year={2019}
+}
+@inproceedings{wu2019fbnet,
+  title={Fbnet: Hardware-aware efficient convnet design via differentiable neural architecture search},
+  author={Wu, Bichen and Dai, Xiaoliang and Zhang, Peizhao and Wang, Yanghan and Sun, Fei and Wu, Yiming and Tian, Yuandong and Vajda, Peter and Jia, Yangqing and Keutzer, Kurt},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2019}
+}
+@inproceedings{dong2019gdas,
+  title={Searching for a robust neural architecture in four GPU hours},
+  author={Dong, Xuanyi and Yang, Yi},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2019}
+}
+@inproceedings{xu2020pcdarts,
+  title={PC-DARTS: Partial channel connections for memory-efficient architecture search},
+  author={Xu, Yuhui and Xie, Lingxi and Zhang, Xiaopeng and Chen, Xin and Qi, Guo-Jun and Tian, Qi and Xiong, Hongkai},
+  booktitle={International Conference on Learning Representations},
+  year={2020}
+}
+@inproceedings{chen2020smoothdarts,
+  title={Stabilizing differentiable architecture search via perturbation-based regularization},
+  author={Chen, Xiangning and Hsieh, Cho-Jui},
+  booktitle={Proceedings of the 37th International Conference on Machine Learning},
+  year={2020}
+}
+@inproceedings{li2020sgas,
+  title={Sgas: Sequential greedy architecture search},
+  author={Li, Guohao and Qian, Guocheng and Delgadillo, Itzel C and Muller, Matthias and Thabet, Ali and Ghanem, Bernard},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2020}
+}
+@inproceedings{wang2021rethinking,
+    title={Rethinking architecture selection in differentiable NAS},
+    author={Ruochen Wang and Minhao Cheng and Xiangning Chen and Xiaocheng Tang and Cho-Jui Hsieh},
+    booktitle={International Conference on Learning Representations},
+    year={2021},
+    url={https://openreview.net/forum?id=PKubaeJkw3}
+}
+@inproceedings{zhou2020prdarts,
+  title={Theory-inspired path-regularized differential network architecture search},
+  author={Pan Zhou and Caiming Xiong and Richard Socher and Steven Hoi},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2020}
+}
+@inproceedings{chen2021drnas,
+    title={{DrNAS: Dirichlet neural architecture search}},
+    author={Xiangning Chen and Ruochen Wang and Minhao Cheng and Xiaocheng Tang and Cho-Jui Hsieh},
+    booktitle={International Conference on Learning Representations},
+    year={2021},
+}
+
+@inproceedings{tan2019mnasnet,
+  title={Mnasnet: Platform-aware neural architecture search for mobile},
+  author={Tan, Mingxing and Chen, Bo and Pang, Ruoming and Vasudevan, Vijay and Sandler, Mark and Howard, Andrew and Le, Quoc V},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2019}
+}
+
+%% application
+@article{chen2019detnas,
+  title={Detnas: Backbone search for object detection},
+  author={Chen, Yukang and Yang, Tong and Zhang, Xiangyu and Meng, Gaofeng and Xiao, Xinyu and Sun, Jian},
+  journal={Advances in Neural Information Processing Systems},
+  year={2019}
+}
+@inproceedings{jiang2020spnas,
+  title={SP-NAS: Serial-to-parallel backbone search for object detection},
+  author={Jiang, Chenhan and Xu, Hang and Zhang, Wei and Liang, Xiaodan and Li, Zhenguo},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2020}
+}
+@inproceedings{guo2020hitdetector,
+  title={Hit-detector: Hierarchical trinity architecture search for object detection},
+  author={Guo, Jianyuan and Han, Kai and Wang, Yunhe and Zhang, Chao and Yang, Zhaohui and Wu, Han and Chen, Xinghao and Xu, Chang},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2020}
+}
+@inproceedings{ding2021hrnas,
+  title={HR-NAS: Searching efficient high-resolution neural architectures with lightweight transformers},
+  author={Ding, Mingyu and Lian, Xiaochen and Yang, Linjie and Wang, Peng and Jin, Xiaojie and Lu, Zhiwu and Luo, Ping},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2021}
+}
+@inproceedings{yan2021lighttrack,
+  title={LightTrack: Finding lightweight neural networks for object tracking via one-shot architecture search},
+  author={Yan, Bin and Peng, Houwen and Wu, Kan and Wang, Dong and Fu, Jianlong and Lu, Huchuan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2021}
+}
+@inproceedings{zhang2021dcnas,
+  title={Dcnas: Densely connected neural architecture search for semantic image segmentation},
+  author={Zhang, Xiong and Xu, Hongmin and Mo, Hong and Tan, Jianchao and Yang, Cheng and Wang, Lei and Ren, Wenqi},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2021}
+}
+@inproceedings{kim2020est,
+  title={Evolved Speech-Transformer: Applying neural architecture search to end-to-end automatic speech recognition.},
+  author={Kim, Jihwan and Wang, Jisung and Kim, Sangki and Lee, Yeha},
+  booktitle={INTERSPEECH},
+  year={2020}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Dataset & ETC.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{lin2013nin_gap,
+  title={Network in network},
+  author={Lin, Min and Chen, Qiang and Yan, Shuicheng},
+  booktitle={International Conference on Learning Representations},
+  year={2014}
+}
+@inproceedings{Simonyan15vggnet,
+  title={Very deep convolutional networks for large-scale image recognition},
+  author={Simonyan, Karen and Zisserman, Andrew},
+  booktitle={International Conference on Learning Representations},
+  year={2015},
+}
+@inproceedings{szegedy2015inception,
+  title={Going deeper with convolutions},
+  author={Szegedy, Christian and Liu, Wei and Jia, Yangqing and Sermanet, Pierre and Reed, Scott and Anguelov, Dragomir and Erhan, Dumitru and Vanhoucke, Vincent and Rabinovich, Andrew},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  year={2015}
+}
+@inproceedings{he2016resnet,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  year={2016}
+}
+@inproceedings{sandler2018mobilenetv2,
+  title={Mobilenetv2: Inverted residuals and linear bottlenecks},
+  author={Sandler, Mark and Howard, Andrew and Zhu, Menglong and Zhmoginov, Andrey and Chen, Liang-Chieh},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  year={2018}
+}
+
+% cutout
+@article{devries2017cutout,
+  title={Improved regularization of convolutional neural networks with cutout},
+  author={DeVries, Terrance and Taylor, Graham W},
+  journal={arXiv preprint arXiv:1708.04552},
+  year={2017}
+}
+
+% SVHN
+@inproceedings{netzer2011svhn,
+title	= {Reading digits in natural images with unsupervised feature learning},
+author	= {Yuval Netzer and Tao Wang and Adam Coates and Alessandro Bissacco and Bo Wu and Andrew Y. Ng},
+year	= {2011},
+booktitle	= {NeurIPS Workshop on Deep Learning and Unsupervised Feature Learning}
+}
+% CIFAR10, CIFAR100
+@article{krizhevsky2009cifar10,
+  title={Learning multiple layers of features from tiny images},
+  author={Krizhevsky, Alex and Hinton, Geoffrey and others},
+  year={2009},
+  publisher={Technical report, Citeseer}
+}
+% ImageNet
+@article{russakovsky2015imagenet,
+  title={Imagenet large scale visual recognition challenge},
+  author={Russakovsky, Olga and Deng, Jia and Su, Hao and Krause, Jonathan and Satheesh, Sanjeev and Ma, Sean and Huang, Zhiheng and Karpathy, Andrej and Khosla, Aditya and Bernstein, Michael and others},
+  journal={International Journal of Computer Vision},
+  volume={115},
+  number={3},
+  pages={211--252},
+  year={2015},
+  publisher={Springer}
+}
+% CIFAR10-DVS
+@article{li2017cifar10dvs,
+  title={Cifar10-dvs: an event-stream dataset for object classification},
+  author={Li, Hongmin and Liu, Hanchao and Ji, Xiangyang and Li, Guoqi and Shi, Luping},
+  journal={Frontiers in Neuroscience},
+  volume={11},
+  pages={309},
+  year={2017},
+  publisher={Frontiers}
+}
+%DVS128Gesture
+@inproceedings{amir2017dvs128gesture,
+  title={A low power, fully event-based gesture recognition system},
+  author={Amir, Arnon and Taba, Brian and Berg, David and Melano, Timothy and McKinstry, Jeffrey and Di Nolfo, Carmelo and Nayak, Tapan and Andreopoulos, Alexander and Garreau, Guillaume and Mendoza, Marcela and others},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  year={2017}
+}
+% Adam
+@inproceedings{kingma2015adam,
+  author={Diederik P. Kingma and Jimmy Ba},
+  title={Adam: A Method for Stochastic Optimization},
+  year={2015},
+  booktitle={International Conference on Learning Representations},
+}
+
+
+%%% SNN + NAS 
+@article{kim2022SNASNet,
+  title={Neural Architecture Search for Spiking Neural Networks},
+  author={Kim, Youngeun and Li, Yuhang and Park, Hyoungseob and Venkatesha, Yeshwanth and Panda, Priyadarshini},
+  journal={arXiv preprint arXiv:2201.10355},
+  year={2022}
+}
+
+@article{kim2020BNTT,
+  title={Revisiting batch normalization for training low-latency deep spiking neural networks from scratch},
+  author={Kim, Youngeun and Panda, Priyadarshini},
+  journal={Frontiers in Neuroscience},
+  pages={1638},
+  year={2020},
+  publisher={Frontiers}
+}
+
+@article{kim2021SALT,
+  title={Optimizing deeper spiking neural networks for dynamic vision sensing},
+  author={Kim, Youngeun and Panda, Priyadarshini},
+  journal={Neural Networks},
+  volume={144},
+  pages={686--698},
+  year={2021},
+  publisher={Elsevier}
+}
+
+@article{fang2021SEW,
+  title={Deep residual learning in spiking neural networks},
+  author={Fang, Wei and Yu, Zhaofei and Chen, Yanqi and Huang, Tiejun and Masquelier, Timoth{\'e}e and Tian, Yonghong},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021}
+}
+
+@inproceedings{pellegrini2021spike_regularization,
+  title={Low-activity supervised convolutional spiking neural networks applied to speech commands recognition},
+  author={Pellegrini, Thomas and Zimmer, Romain and Masquelier, Timoth{\'e}e},
+  booktitle={IEEE Spoken Language Technology Workshop (SLT)},
+  pages={97--103},
+  year={2021},
+  organization={IEEE}
+}

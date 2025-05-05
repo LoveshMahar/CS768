@@ -1,0 +1,957 @@
+%%% introduction 
+
+% Deep Q-Learning
+
+@article{lin1992self,
+  author    = {Long Ji Lin},
+  title     = {Self-Improving Reactive Agents Based On Reinforcement Learning, Planning
+               and Teaching},
+  journal   = {Mach. Learn.},
+  volume    = {8},
+  pages     = {293--321},
+  year      = {1992}
+}
+
+@article{wang2020towards,
+  title={Towards understanding linear value decomposition in cooperative multi-agent Q-learning},
+  author={Wang, Jianhao and Ren, Zhizhou and Han, Beining and Ye, Jianing and Zhang, Chongjie},
+  journal={arXiv preprint arXiv:2006.00587},
+  year={2020}
+}
+
+@article{zhang2021finite,
+  title={Finite-sample analysis for decentralized batch multi-agent reinforcement learning with networked agents},
+  author={Zhang, Kaiqing and Yang, Zhuoran and Liu, Han and Zhang, Tong and Basar, Tamer},
+  journal={IEEE Transactions on Automatic Control},
+  doi = {10.1109/TAC.2021.3049345},
+  year={2021}
+}
+
+@book{anthony2009neural,
+  author    = {Martin Anthony and
+               Peter L. Bartlett},
+  title     = {Neural Network Learning - Theoretical Foundations},
+  publisher = {Cambridge University Press},
+  year      = {2002}
+}
+
+@article{schmidt2020nonparametric,
+  title={Nonparametric regression using deep neural networks with ReLU activation function},
+  author={Schmidt-Hieber, Johannes},
+  journal={The Annals of Statistics},
+  volume={48},
+  number={4},
+  pages={1875--1897},
+  year={2020}
+}
+
+@article{farahmand2016regularized,
+  title={Regularized policy iteration with nonparametric function spaces},
+  author={Farahmand, Amir-massoud and Ghavamzadeh, Mohammad and Szepesv{\'a}ri, Csaba and Mannor, Shie},
+  journal={The Journal of Machine Learning Research},
+  volume={17},
+  number={1},
+  pages={4809--4874},
+  year={2016}
+}
+
+@inproceedings{farahmand2010error,
+  author    = {Amir Massoud Farahmand and
+               R{\'{e}}mi Munos and
+               Csaba Szepesv{\'{a}}ri},
+  title     = {Error Propagation for Approximate Policy and Value Iteration},
+  booktitle = {{NIPS}},
+  year      = {2010}
+}
+
+@article{scherrer2015approximate,
+  title={Approximate Modified Policy Iteration and its Application to the Game of Tetris},
+  author={Scherrer, Bruno and Ghavamzadeh, Mohammad and Gabillon, Victor and Lesner, Boris and Geist, Matthieu},
+  journal={Journal of Machine Learning Research},
+  volume={16},
+  pages={1629--1676},
+  year={2015}
+}
+
+@article{lazaric2016analysis,
+  title={Analysis of Classification-based Policy Iteration Algorithms},
+  author={Lazaric, Alessandro and Ghavamzadeh, Mohammad and Munos, R{\'e}mi},
+  journal={Journal of Machine Learning Research},
+  volume={17},
+  pages={1--30},
+  year={2016}
+}
+
+@article{munos2008finite,
+  title={Finite-Time Bounds for Fitted Value Iteration.},
+  author={Munos, R{\'e}mi and Szepesv{\'a}ri, Csaba},
+  journal={Journal of Machine Learning Research},
+  volume={9},
+  number={5},
+  year={2008}
+}
+
+
+@inproceedings{fan2020theoretical,
+  title={A theoretical analysis of deep Q-learning},
+  author={Fan, Jianqing and Wang, Zhaoran and Xie, Yuchen and Yang, Zhuoran},
+  booktitle={{L4DC}},
+  year={2020}
+}
+
+% FQI 
+
+@article{ernst05a,
+  author    = {Damien Ernst and
+               Pierre Geurts and
+               Louis Wehenkel},
+  title     = {Tree-Based Batch Mode Reinforcement Learning},
+  journal   = {J. Mach. Learn. Res.},
+  volume    = {6},
+  pages     = {503--556},
+  year      = {2005}
+}
+
+@inproceedings{riedmiller2005neural,
+  author    = {Martin A. Riedmiller},
+  title     = {Neural Fitted {Q} Iteration - First Experiences with a Data Efficient
+               Neural Reinforcement Learning Method},
+  booktitle = {{ECML}},
+  year      = {2005}
+}
+
+% benchmark
+@inproceedings{papoudakis2021benchmarking,
+  author = {Papoudakis, Georgios and Christianos, Filippos and Sch{\"a}fer, Lukas and Albrecht, Stefano V},
+  title = {Benchmarking Multi-Agent Deep Reinforcement Learning Algorithms in Cooperative Tasks},
+  booktitle = {{NeurIPS}},
+  year = {2021}
+}
+
+% video game
+@article{vinyals2019grandmaster,
+  title={Grandmaster level in StarCraft II using multi-agent reinforcement learning},
+  author={Vinyals, Oriol and Babuschkin, Igor and Czarnecki, Wojciech M and Mathieu, Micha{\"e}l and Dudzik, Andrew and Chung, Junyoung and Choi, David H and Powell, Richard and Ewalds, Timo and Georgiev, Petko and others},
+  journal={Nature},
+  volume={575},
+  number={7782},
+  pages={350--354},
+  year={2019}
+}
+
+@inproceedings{baker2019emergent,
+  author    = {Bowen Baker and
+               Ingmar Kanitscheider and
+               Todor M. Markov and
+               Yi Wu and
+               Glenn Powell and
+               Bob McGrew and
+               Igor Mordatch},
+  title     = {Emergent Tool Use From Multi-Agent Autocurricula},
+  booktitle = {{ICLR}},
+  year      = {2020}
+}
+
+@article{berner2019dota,
+  title={Dota 2 with large scale deep reinforcement learning},
+  author={Berner, Christopher and Brockman, Greg and Chan, Brooke and Cheung, Vicki and D{\k{e}}biak, Przemys{\l}aw and Dennison, Christy and Farhi, David and Fischer, Quirin and Hashme, Shariq and Hesse, Chris and others},
+  journal={arXiv preprint arXiv:1912.06680},
+  year={2019}
+}
+
+@inproceedings{ye2020mastering,
+  title={Mastering complex control in moba games with deep reinforcement learning},
+  author={Ye, Deheng and Liu, Zhao and Sun, Mingfei and Shi, Bei and Zhao, Peilin and Wu, Hao and Yu, Hongsheng and Yang, Shaojie and Wu, Xipeng and Guo, Qingwei and others},
+  booktitle={{AAAI}},
+  year={2020}
+}
+
+% card game
+@article{silver2017mastering,
+  title={Mastering chess and shogi by self-play with a general reinforcement learning algorithm},
+  author={Silver, David and Hubert, Thomas and Schrittwieser, Julian and Antonoglou, Ioannis and Lai, Matthew and Guez, Arthur and Lanctot, Marc and Sifre, Laurent and Kumaran, Dharshan and Graepel, Thore and others},
+  journal={arXiv preprint arXiv:1712.01815},
+  year={2017}
+}
+@article{brown2019superhuman,
+  title={Superhuman AI for multiplayer poker},
+  author={Brown, Noam and Sandholm, Tuomas},
+  journal={Science},
+  volume={365},
+  number={6456},
+  pages={885--890},
+  year={2019}
+}
+@article{li2020suphx,
+  title={Suphx: Mastering mahjong with deep reinforcement learning},
+  author={Li, Junjie and Koyamada, Sotetsu and Ye, Qiwei and Liu, Guoqing and Wang, Chao and Yang, Ruihan and Zhao, Li and Qin, Tao and Liu, Tie-Yan and Hon, Hsiao-Wuen},
+  journal={arXiv preprint arXiv:2003.13590},
+  year={2020}
+}
+
+@inproceedings{zha2021douzero,
+  author    = {Daochen Zha and
+               Jingru Xie and
+               Wenye Ma and
+               Sheng Zhang and
+               Xiangru Lian and
+               Xia Hu and
+               Ji Liu},
+  title     = {DouZero: Mastering DouDizhu with Self-Play Deep Reinforcement Learning},
+  booktitle = {{ICML}},
+  year      = {2021}
+}
+
+% real work application
+@article{zhou2020smarts,
+  title={Smarts: Scalable multi-agent reinforcement learning training school for autonomous driving},
+  author={Zhou, Ming and Luo, Jun and Villella, Julian and Yang, Yaodong and Rusu, David and Miao, Jiayu and Zhang, Weinan and Alban, Montgomery and Fadakar, Iman and Chen, Zheng and others},
+  journal={arXiv preprint arXiv:2010.09776},
+  year={2020}
+}
+@article{zhu2021main,
+  title={MAIN: A Multi-agent Indoor Navigation Benchmark for Cooperative Learning},
+  author={Zhu, Fengda and Hu, Siyi and Zhang, Yi and Hong, Haodong and Zhu, Yi and Chang, Xiaojun and Liang, Xiaodan},
+  year={2021}
+}
+
+@inproceedings{zhong2021towards,
+  author    = {Fangwei Zhong and
+               Peng Sun and
+               Wenhan Luo and
+               Tingyun Yan and
+               Yizhou Wang},
+  title     = {Towards Distraction-Robust Active Visual Tracking},
+  booktitle = {{ICML}},
+  year      = {2021}
+}
+
+%%% single agent RL
+% off policy
+@article{mnih2015human,
+  title={Human-level control through deep reinforcement learning},
+  author={Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Rusu, Andrei A and Veness, Joel and Bellemare, Marc G and Graves, Alex and Riedmiller, Martin and Fidjeland, Andreas K and Ostrovski, Georg and others},
+  journal={Nature},
+  volume={518},
+  number={7540},
+  pages={529--533},
+  year={2015}
+}
+
+@inproceedings{hessel2018rainbow,
+  title={Rainbow: Combining improvements in deep reinforcement learning},
+  author={Hessel, Matteo and Modayil, Joseph and Van Hasselt, Hado and Schaul, Tom and Ostrovski, Georg and Dabney, Will and Horgan, Dan and Piot, Bilal and Azar, Mohammad and Silver, David},
+  booktitle={{AAAI}},
+  year={2018}
+}
+
+@inproceedings{haarnoja2018soft,
+  title={Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor},
+  author={Haarnoja, Tuomas and Zhou, Aurick and Abbeel, Pieter and Levine, Sergey},
+  booktitle={{ICML}},
+  year={2018}
+}
+
+% on policy
+@inproceedings{schulman2015trust,
+  title={Trust region policy optimization},
+  author={Schulman, John and Levine, Sergey and Abbeel, Pieter and Jordan, Michael and Moritz, Philipp},
+  booktitle={{ICML}},
+  year={2015}
+}
+
+@article{schulman2017proximal,
+  title={Proximal policy optimization algorithms},
+  author={Schulman, John and Wolski, Filip and Dhariwal, Prafulla and Radford, Alec and Klimov, Oleg},
+  journal={arXiv preprint arXiv:1707.06347},
+  year={2017}
+}
+@inproceedings{mnih2016asynchronous,
+  title={Asynchronous methods for deep reinforcement learning},
+  author={Mnih, Volodymyr and Badia, Adria Puigdomenech and Mirza, Mehdi and Graves, Alex and Lillicrap, Timothy and Harley, Tim and Silver, David and Kavukcuoglu, Koray},
+  booktitle={{ICML}},
+  year={2016}
+}
+
+% hierarchical
+@article{kulkarni2016hierarchical,
+  title={Hierarchical deep reinforcement learning: Integrating temporal abstraction and intrinsic motivation},
+  author={Kulkarni, Tejas D and Narasimhan, Karthik and Saeedi, Ardavan and Tenenbaum, Josh},
+  journal={{NIPS}},
+  year={2016}
+}
+
+%%% competitive multi-agent reinforcement learning task
+@book{bacsar1998dynamic,
+  title={Dynamic noncooperative game theory},
+  author={Ba{\c{s}}ar, Tamer and Olsder, Geert Jan},
+  year={1998},
+  publisher={SIAM}
+}
+
+@inproceedings{littman2001friend,
+  title={Friend-or-foe Q-learning in general-sum games},
+  author={Littman, Michael L},
+  booktitle={ICML},
+  year={2001}
+}
+
+@article{hu2003nash,
+  title={Nash Q-learning for general-sum stochastic games},
+  author={Hu, Junling and Wellman, Michael P},
+  journal={Journal of machine learning research},
+  volume={4},
+  number={Nov},
+  pages={1039--1069},
+  year={2003}
+}
+
+@inproceedings{yang2018mean,
+  title={Mean field multi-agent reinforcement learning},
+  author={Yang, Yaodong and Luo, Rui and Li, Minne and Zhou, Ming and Zhang, Weinan and Wang, Jun},
+  booktitle={{ICML}},
+  year={2018}
+}
+
+@inproceedings{mguni2021learning,
+  author    = {David Henry Mguni and
+               Yutong Wu and
+               Yali Du and
+               Yaodong Yang and
+               Ziyi Wang and
+               Minne Li and
+               Ying Wen and
+               Joel Jennings and
+               Jun Wang},
+  title     = {Learning in Nonzero-Sum Stochastic Games with Potentials},
+  booktitle = {{ICML}},
+  year      = {2021}
+}
+
+
+%%% cooperative multi-agent reinforcement learning task
+
+@inproceedings{lowe2017multi,
+  author    = {Ryan Lowe and
+               Yi Wu and
+               Aviv Tamar and
+               Jean Harb and
+               Pieter Abbeel and
+               Igor Mordatch},
+  title     = {Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments},
+  booktitle = {{NIPS}},
+  year      = {2017}
+}
+
+@inproceedings{zheng2017magent,
+  author    = {Lianmin Zheng and
+               Jiacheng Yang and
+               Han Cai and
+               Ming Zhou and
+               Weinan Zhang and
+               Jun Wang and
+               Yong Yu},
+  title     = {MAgent: {A} Many-Agent Reinforcement Learning Platform for Artificial
+               Collective Intelligence},
+  booktitle = {{AAAI}},
+  year      = {2018}
+}
+
+@article{samvelyan19smac,
+  title = {{The} {StarCraft} {Multi}-{Agent} {Challenge}},
+  author = {Mikayel Samvelyan and Tabish Rashid and Christian Schroeder de Witt and Gregory Farquhar and Nantas Nardelli and Tim G. J. Rudner and Chia-Man Hung and Philiph H. S. Torr and Jakob Foerster and Shimon Whiteson},
+  journal = {CoRR},
+  volume = {abs/1902.04043},
+  year = {2019},
+}
+
+@inproceedings{kurach2019google,
+  author    = {Karol Kurach and
+               Anton Raichuk and
+               Piotr Stanczyk and
+               Michal Zajac and
+               Olivier Bachem and
+               Lasse Espeholt and
+               Carlos Riquelme and
+               Damien Vincent and
+               Marcin Michalski and
+               Olivier Bousquet and
+               Sylvain Gelly},
+  title     = {Google Research Football: {A} Novel Reinforcement Learning Environment},
+  booktitle = {{AAAI}},
+  year      = {2020}
+}
+
+@article{bard2020hanabi,
+  title={The hanabi challenge: A new frontier for ai research},
+  author={Bard, Nolan and Foerster, Jakob N and Chandar, Sarath and Burch, Neil and Lanctot, Marc and Song, H Francis and Parisotto, Emilio and Dumoulin, Vincent and Moitra, Subhodeep and Hughes, Edward and others},
+  journal={Artificial Intelligence},
+  volume={280},
+  pages={103216},
+  year={2020}
+}
+
+
+@article{suarez2021neural,
+  author    = {Joseph Suarez and
+               Yilun Du and
+               Clare Zhu and
+               Igor Mordatch and
+               Phillip Isola},
+  title     = {The Neural {MMO} Platform for Massively Multiagent Research},
+  journal   = {CoRR},
+  volume    = {abs/2110.07594},
+  year      = {2021}
+}
+
+@article{tuyls2021game,
+  title={Game Plan: What AI can do for Football, and What Football can do for AI},
+  author={Tuyls, Karl and Omidshafiei, Shayegan and Muller, Paul and Wang, Zhe and Connor, Jerome and Hennes, Daniel and Graham, Ian and Spearman, William and Waskett, Tim and Steel, Dafydd and others},
+  journal={Journal of Artificial Intelligence Research},
+  volume={71},
+  pages={41--88},
+  year={2021}
+}
+
+% on policy MARL
+@inproceedings{foerster2017counterfactual,
+  author    = {Jakob N. Foerster and
+               Gregory Farquhar and
+               Triantafyllos Afouras and
+               Nantas Nardelli and
+               Shimon Whiteson},
+  title     = {Counterfactual Multi-Agent Policy Gradients},
+  booktitle = {{AAAI}},
+  year      = {2018}
+}
+
+@article{yu2021surprising,
+  title={The surprising effectiveness of mappo in cooperative, multi-agent games},
+  author={Yu, Chao and Velu, Akash and Vinitsky, Eugene and Wang, Yu and Bayen, Alexandre and Wu, Yi},
+  journal={arXiv preprint arXiv:2103.01955},
+  year={2021}
+}
+
+% off policy MARL
+@inproceedings{sunehag2017value,
+  author    = {Peter Sunehag and
+               Guy Lever and
+               Audrunas Gruslys and
+               Wojciech Marian Czarnecki and
+               Vin{\'{\i}}cius Flores Zambaldi and
+               Max Jaderberg and
+               Marc Lanctot and
+               Nicolas Sonnerat and
+               Joel Z. Leibo and
+               Karl Tuyls and
+               Thore Graepel},
+  title     = {Value-Decomposition Networks For Cooperative Multi-Agent Learning
+               Based On Team Reward},
+  booktitle = {{AAMAS}},
+  year      = {2018}
+}
+
+@inproceedings{rashid2018qmix,
+  author    = {Tabish Rashid and
+               Mikayel Samvelyan and
+               Christian Schr{\"{o}}der de Witt and
+               Gregory Farquhar and
+               Jakob N. Foerster and
+               Shimon Whiteson},
+  title     = {{QMIX:} Monotonic Value Function Factorisation for Deep Multi-Agent
+               Reinforcement Learning},
+  booktitle = {{ICML}},
+  year      = {2018}
+}
+
+@inproceedings{hostallero2019learning,
+  title={Learning to factorize with transformation for cooperative multi-agent reinforcement learning},
+  author={Hostallero, Wan Ju Kang David Earl and Son, Kyunghwan and Kim, Daewoo and Qtran, Yung Yi},
+  booktitle={{ICML}},
+  year={2019}
+}
+
+@inproceedings{wang2020rode,
+  author    = {Tonghan Wang and
+               Tarun Gupta and
+               Anuj Mahajan and
+               Bei Peng and
+               Shimon Whiteson and
+               Chongjie Zhang},
+  title     = {{RODE:} Learning Roles to Decompose Multi-Agent Tasks},
+  booktitle = {{ICLR}},
+  year      = {2021}
+}
+
+% Independent MARL
+@inproceedings{tan1993multi,
+  title={Multi-agent reinforcement learning: Independent vs. cooperative agents},
+  author={Tan, Ming},
+  booktitle={{ICML}},
+  year={1993}
+}
+
+
+%%% parameter sharing
+@inproceedings{christianos2021scaling,
+  author    = {Filippos Christianos and
+               Georgios Papoudakis and
+               Muhammad A. Rahman and
+               Stefano V. Albrecht},
+  title     = {Scaling Multi-Agent Reinforcement Learning with Selective Parameter
+               Sharing},
+  booktitle = {{ICML}},
+  year      = {2021}
+}
+
+@article{terry2020revisiting,
+  title={Revisiting parameter sharing in multi-agent deep reinforcement learning},
+  author={Terry, Justin K and Grammel, Nathaniel and Hari, Ananth and Santos, Luis and Black, Benjamin},
+  journal={arXiv preprint arXiv:2005.13625},
+  year={2020}
+}
+
+%%% communication
+
+@inproceedings{sukhbaatar2016learning,
+  author    = {Sainbayar Sukhbaatar and
+               Arthur Szlam and
+               Rob Fergus},
+  title     = {Learning Multiagent Communication with Backpropagation},
+  booktitle = {{NIPS}},
+  year      = {2016}
+}
+
+@inproceedings{jiang2018learning,
+  author    = {Jiechuan Jiang and
+               Zongqing Lu},
+  title     = {Learning Attentional Communication for Multi-Agent Cooperation},
+  booktitle = {{NeurIPS}},
+  year      = {2018}
+}
+
+@inproceedings{singh2018learning,
+  author    = {Amanpreet Singh and
+               Tushar Jain and
+               Sainbayar Sukhbaatar},
+  title     = {Learning when to Communicate at Scale in Multiagent Cooperative and
+               Competitive Tasks},
+  booktitle = {{ICLR}},
+  year      = {2019}
+}
+
+@inproceedings{raileanu2018modeling,
+  author    = {Roberta Raileanu and
+               Emily Denton and
+               Arthur Szlam and
+               Rob Fergus},
+  title     = {Modeling Others using Oneself in Multi-Agent Reinforcement Learning},
+  booktitle = {{ICML}},
+  year      = {2018}
+}
+
+
+@inproceedings{kim2019learning,
+  author    = {Daewoo Kim and
+               Sangwoo Moon and
+               David Hostallero and
+               Wan Ju Kang and
+               Taeyoung Lee and
+               Kyunghwan Son and
+               Yung Yi},
+  title     = {Learning to Schedule Communication in Multi-agent Reinforcement Learning},
+  booktitle = {{ICLR}},
+  year      = {2019}
+}
+
+@article{lazaridou2020emergent,
+  title={Emergent multi-agent communication in the deep learning era},
+  author={Lazaridou, Angeliki and Baroni, Marco},
+  journal={arXiv preprint arXiv:2006.02419},
+  year={2020}
+}
+
+
+%%% role + (rode and selective parameter sharing)
+@inproceedings{le2017coordinated,
+  author    = {Hoang Minh Le and
+               Yisong Yue and
+               Peter Carr and
+               Patrick Lucey},
+  title     = {Coordinated Multi-Agent Imitation Learning},
+  booktitle = {{ICML}},
+  year      = {2017}
+}
+
+
+@inproceedings{wang2020roma,
+  author    = {Tonghan Wang and
+               Heng Dong and
+               Victor R. Lesser and
+               Chongjie Zhang},
+  title     = {{ROMA:} Multi-Agent Reinforcement Learning with Emergent Roles},
+  booktitle = {{ICML}},
+  year      = {2020}
+}
+
+% vln
+
+@inproceedings{anderson2018vision,
+  author    = {Peter Anderson and
+               Qi Wu and
+               Damien Teney and
+               Jake Bruce and
+               Mark Johnson and
+               Niko S{\"{u}}nderhauf and
+               Ian D. Reid and
+               Stephen Gould and
+               Anton van den Hengel},
+  title     = {Vision-and-Language Navigation: Interpreting Visually-Grounded Navigation
+               Instructions in Real Environments},
+  booktitle = {{CVPR}},
+  year      = {2018}
+}
+
+@inproceedings{redmon2016you,
+  title={You only look once: Unified, real-time object detection},
+  author={Redmon, Joseph and Divvala, Santosh and Girshick, Ross and Farhadi, Ali},
+  booktitle={{CVPR}},
+  year={2016}
+}
+@article{ren2015faster,
+  title={Faster r-cnn: Towards real-time object detection with region proposal networks},
+  author={Ren, Shaoqing and He, Kaiming and Girshick, Ross and Sun, Jian},
+  journal={{NIPS}},
+  volume={28},
+  pages={91--99},
+  year={2015}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@incollection{Bengio+chapter2007,
+author = {Bengio, Yoshua and LeCun, Yann},
+booktitle = {Large Scale Kernel Machines},
+publisher = {MIT Press},
+title = {Scaling Learning Algorithms Towards {AI}},
+year = {2007}
+}
+
+@article{Hinton06,
+  author    = {Geoffrey E. Hinton and
+               Simon Osindero and
+               Yee Whye Teh},
+  title     = {A Fast Learning Algorithm for Deep Belief Nets},
+  journal   = {Neural Comput.},
+  volume    = {18},
+  number    = {7},
+  pages     = {1527--1554},
+  year      = {2006}
+}
+
+
+@book{goodfellow2016deep,
+title={Deep learning},
+author={Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron and Bengio, Yoshua},
+volume={1},
+year={2016},
+publisher={MIT Press}
+}
+
+@inproceedings{van2015deep,
+  author    = {Hado van Hasselt and
+               Arthur Guez and
+               David Silver},
+  title     = {Deep Reinforcement Learning with Double Q-Learning},
+  booktitle = {{AAAI}},
+  year      = {2016}
+}
+
+
+@inproceedings{wang2020few,
+  title={From Few to More: Large-Scale Dynamic Multiagent Curriculum Learning.},
+  author={Wang, Weixun and Yang, Tianpei and Liu, Yong and Hao, Jianye and Hao, Xiaotian and Hu, Yujing and Chen, Yingfeng and Fan, Changjie and Gao, Yang},
+  booktitle={AAAI},
+  year={2020}
+}
+
+@book{sutton2018reinforcement,
+  title={Reinforcement learning: An introduction},
+  author={Sutton, Richard S and Barto, Andrew G},
+  year={2018},
+  publisher={MIT press}
+}
+
+@inproceedings{hester2010generalized,
+  title={Generalized model learning for reinforcement learning on a humanoid robot},
+  author={Hester, Todd and Quinlan, Michael and Stone, Peter},
+  booktitle={{ICRA}},
+  year={2010}
+}
+
+@article{bojarski2016end,
+  title={End to end learning for self-driving cars},
+  author={Bojarski, Mariusz and Del Testa, Davide and Dworakowski, Daniel and Firner, Bernhard and Flepp, Beat and Goyal, Prasoon and Jackel, Lawrence D and Monfort, Mathew and Muller, Urs and Zhang, Jiakai and others},
+  journal={arXiv preprint arXiv:1604.07316},
+  year={2016}
+}
+
+@article{peng2017multiagent,
+  title={Multiagent bidirectionally-coordinated nets: Emergence of human-level coordination in learning to play starcraft combat games},
+  author={Peng, Peng and Wen, Ying and Yang, Yaodong and Yuan, Quan and Tang, Zhenkun and Long, Haitao and Wang, Jun},
+  journal={arXiv preprint arXiv:1703.10069},
+  year={2017}
+}
+
+@inproceedings{yang2017study,
+  author    = {Yaodong Yang and
+               Lantao Yu and
+               Yiwei Bai and
+               Ying Wen and
+               Weinan Zhang and
+               Jun Wang},
+  title     = {A Study of {AI} Population Dynamics with Million-agent Reinforcement
+               Learning},
+  booktitle = {{AAMAS}},
+  year      = {2018}
+}
+
+@inproceedings{du2019liir,
+  title={LIIR: Learning Individual Intrinsic Reward in Multi-Agent Reinforcement Learning},
+  author={Du, Yali and Han, Lei and Fang, Meng and Liu, Ji and Dai, Tianhong and Tao, Dacheng},
+  booktitle={{NeurIPS}},
+  year={2019}
+}
+
+@inproceedings{mahajan2019maven,
+  title={Maven: Multi-agent variational exploration},
+  author={Mahajan, Anuj and Rashid, Tabish and Samvelyan, Mikayel and Whiteson, Shimon},
+  booktitle={{NeurIPS}},
+  year={2019}
+}
+
+
+
+@article{zhou2020learning,
+  title={Learning Implicit Credit Assignment for Multi-Agent Actor-Critic},
+  author={Zhou, Meng and Liu, Ziyu and Sui, Pengwei and Li, Yixuan and Chung, Yuk Ying},
+  journal={arXiv preprint arXiv:2007.02529},
+  year={2020}
+}
+
+@inproceedings{yang2020multi,
+  author    = {Yaodong Yang and
+               Ying Wen and
+               Jun Wang and
+               Liheng Chen and
+               Kun Shao and
+               David Mguni and
+               Weinan Zhang},
+  title     = {Multi-Agent Determinantal Q-Learning},
+  booktitle = {{ICML}},
+  year      = {2020}
+}
+
+
+@inproceedings{vaswani2017attention,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  booktitle={{NIPS}},
+  year={2017}
+}
+
+@inproceedings{parikh2016decomposable,
+  author    = {Ankur P. Parikh and
+               Oscar T{\"{a}}ckstr{\"{o}}m and
+               Dipanjan Das and
+               Jakob Uszkoreit},
+  title     = {A Decomposable Attention Model for Natural Language Inference},
+  booktitle = {{EMNLP}},
+  year      = {2016}
+}
+
+
+@inproceedings{samvelyan2019starcraft,
+  author    = {Mikayel Samvelyan and
+               Tabish Rashid and
+               Christian Schr{\"{o}}der de Witt and
+               Gregory Farquhar and
+               Nantas Nardelli and
+               Tim G. J. Rudner and
+               Chia{-}Man Hung and
+               Philip H. S. Torr and
+               Jakob N. Foerster and
+               Shimon Whiteson},
+  title     = {The StarCraft Multi-Agent Challenge},
+  booktitle = {{AAMAS}},
+  year      = {2019}
+}
+
+
+
+@book{oliehoek2016concise,
+  title={A concise introduction to decentralized POMDPs},
+  author={Oliehoek, Frans A and Amato, Christopher and others},
+  volume={1},
+  year={2016},
+  publisher={Springer}
+}
+
+@article{parmar2018image,
+  title={Image transformer},
+  author={Parmar, Niki and Vaswani, Ashish and Uszkoreit, Jakob and Kaiser, {\L}ukasz and Shazeer, Noam and Ku, Alexander and Tran, Dustin},
+  journal={arXiv preprint arXiv:1802.05751},
+  year={2018}
+}
+
+@inproceedings{wang2018non,
+  title={Non-local neural networks},
+  author={Wang, Xiaolong and Girshick, Ross and Gupta, Abhinav and He, Kaiming},
+  booktitle={{CVPR}},
+  year={2018}
+}
+
+
+@article{taylor2009transfer,
+  title={Transfer learning for reinforcement learning domains: A survey.},
+  author={Taylor, Matthew E and Stone, Peter},
+  journal={Journal of Machine Learning Research},
+  volume={10},
+  number={7},
+  year={2009}
+}
+
+
+@inproceedings{parisotto2015actor,
+  author    = {Emilio Parisotto and
+               Lei Jimmy Ba and
+               Ruslan Salakhutdinov},
+  title     = {Actor-Mimic: Deep Multitask and Transfer Reinforcement Learning},
+  booktitle = {{ICLR}},
+  year      = {2016}
+}
+
+
+@inproceedings{ammar2012reinforcement,
+  author    = {Haitham Bou{-}Ammar and
+               Karl Tuyls and
+               Matthew E. Taylor and
+               Kurt Driessens and
+               Gerhard Weiss},
+  title     = {Reinforcement learning transfer via sparse coding},
+  booktitle = {{AAMAS}},
+  year      = {2012}
+}
+
+@inproceedings{gupta2017learning,
+  author    = {Abhishek Gupta and
+               Coline Devin and
+               Yuxuan Liu and
+               Pieter Abbeel and
+               Sergey Levine},
+  title     = {Learning Invariant Feature Spaces to Transfer Skills with Reinforcement
+               Learning},
+  booktitle = {{ICLR}},
+  year      = {2017}
+}
+
+@article{da2019survey,
+  title={A survey on transfer learning for multiagent reinforcement learning systems},
+  author={Da Silva, Felipe Leno and Costa, Anna Helena Reali},
+  journal={Journal of Artificial Intelligence Research},
+  volume={64},
+  pages={645--703},
+  year={2019}
+}
+
+@inproceedings{boutsioukis2011transfer,
+  title={Transfer learning in multi-agent reinforcement learning domains},
+  author={Boutsioukis, Georgios and Partalas, Ioannis and Vlahavas, Ioannis},
+  booktitle={{EWRL}},
+  year={2011}
+}
+
+
+@inproceedings{hausknecht2015deep,
+  author    = {Matthew J. Hausknecht and
+               Peter Stone},
+  title     = {Deep Recurrent Q-Learning for Partially Observable MDPs},
+  booktitle = {{AAAI} Fall Symposia},
+  year      = {2015}
+}
+
+@article{chung2014empirical,
+  title={Empirical evaluation of gated recurrent neural networks on sequence modeling},
+  author={Chung, Junyoung and Gulcehre, Caglar and Cho, KyungHyun and Bengio, Yoshua},
+  journal={arXiv preprint arXiv:1412.3555},
+  year={2014}
+}
+
+@article{hochreiter1997long,
+  title={Long short-term memory},
+  author={Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  journal={Neural computation},
+  volume={9},
+  number={8},
+  pages={1735--1780},
+  year={1997},
+  publisher={MIT Press}
+}
+
+
+@article{shao2018starcraft,
+  title={Starcraft micromanagement with reinforcement learning and curriculum transfer learning},
+  author={Shao, Kun and Zhu, Yuanheng and Zhao, Dongbin},
+  journal={IEEE Transactions on Emerging Topics in Computational Intelligence},
+  volume={3},
+  number={1},
+  pages={73--84},
+  year={2018}
+}
+
+@inproceedings{ChangHSLYH18,
+  author    = {Xiaojun Chang and
+               Po{-}Yao Huang and
+               Yi{-}Dong Shen and
+               Xiaodan Liang and
+               Yi Yang and
+               Alexander G. Hauptmann},
+  title     = {{RCAA:} Relational Context-Aware Agents for Person Search},
+  booktitle = {{ECCV}},
+  year      = {2018}
+}
+
+@inproceedings{HuZCL21,
+  author    = {Siyi Hu and
+               Fengda Zhu and
+               Xiaojun Chang and
+               Xiaodan Liang},
+  title     = {UPDeT: Universal Multi-agent {RL} via Policy Decoupling with Transformers},
+  booktitle = {ICLR},
+  year      = {2021},
+}

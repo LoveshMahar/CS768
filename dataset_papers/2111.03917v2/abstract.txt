@@ -1,0 +1,19 @@
+We study the problem of \emph{dynamic regret minimization} in $K$-armed
+Dueling Bandits under non-stationary or time varying preferences. This is an
+online learning setup where the agent chooses a pair of items at each round and
+observes only a relative binary `win-loss' feedback for this pair, sampled from
+an underlying preference matrix at that round. We first study the problem of
+static-regret minimization for adversarial preference sequences and design an
+efficient algorithm with $O(\sqrt{KT})$ high probability regret. We next use
+similar algorithmic ideas to propose an efficient and provably optimal
+algorithm for dynamic-regret minimization under two notions of
+non-stationarities. In particular, we establish $\tO(\sqrt{SKT})$ and
+$\tO({V_T^{1/3}K^{1/3}T^{2/3}})$ dynamic-regret guarantees, $S$ being the total
+number of `effective-switches' in the underlying preference relations and $V_T$
+being a measure of `continuous-variation' non-stationarity. The complexity of
+these problems have not been studied prior to this work despite the
+practicability of non-stationary environments in real world systems. We justify
+the optimality of our algorithms by proving matching lower bound guarantees
+under both the above-mentioned notions of non-stationarities. Finally, we
+corroborate our results with extensive simulations and compare the efficacy of
+our algorithms over state-of-the-art baselines.

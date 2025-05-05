@@ -1,0 +1,918 @@
+@book{natim,
+  editor = 	 "Aapo Hyvärinen and Jarmo Hurri and Patrick O. Hoyer",
+  title = 	 "Natural Image Statistics",
+  publisher = 	 "Springer-Verlag London",
+  year = 	 "2009",
+  address =	 "London, UK"
+}
+@article{pcbias,
+  author  = {Guy Hacohen and Daphna Weinshall},
+  title   = {Principal Components Bias in Over-parameterized Linear Models, and its Manifestation in Deep Neural Networks},
+  journal = {Journal of Machine Learning Research},
+  year    = {2022},
+  volume  = {23},
+  number  = {155},
+  pages   = {1--46},
+  url     = {http://jmlr.org/papers/v23/21-0991.html}
+}
+
+
+@inproceedings{
+SoudryHNGS18,
+title={The Implicit Bias of Gradient Descent on Separable Data},
+author={Daniel Soudry and Elad Hoffer and Nathan Srebro},
+booktitle={International Conference on Learning Representations},
+year={2018},
+url={https://openreview.net/forum?id=r1q7n9gAb},
+}
+
+@InProceedings{spectral_bias,
+  title = 	 {On the Spectral Bias of Neural Networks},
+  author =       {Rahaman, Nasim and Baratin, Aristide and Arpit, Devansh and Draxler, Felix and Lin, Min and Hamprecht, Fred and Bengio, Yoshua and Courville, Aaron},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  pages = 	 {5301--5310},
+  year = 	 {2019},
+  editor = 	 {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--15 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v97/rahaman19a/rahaman19a.pdf},
+  url = 	 {https://proceedings.mlr.press/v97/rahaman19a.html},
+  abstract = 	 {Neural networks are known to be a class of highly expressive functions able to fit even random input-output mappings with 100 accuracy. In this work we present properties of neural networks that complement this aspect of expressivity. By using tools from Fourier analysis, we highlight a learning bias of deep networks towards low frequency functions – i.e. functions that vary globally without local fluctuations – which manifests itself as a frequency-dependent learning speed. Intuitively, this property is in line with the observation that over-parameterized networks prioritize learning simple patterns that generalize across data samples. We also investigate the role of the shape of the data manifold by presenting empirical and theoretical evidence that, somewhat counter-intuitively, learning higher frequencies gets easier with increasing manifold complexity.}
+}
+
+@article{ding2021grounding,
+  title={Grounding representation similarity with statistical testing},
+  author={Ding, Frances and Denain, Jean-Stanislas and Steinhardt, Jacob},
+  journal={arXiv preprint arXiv:2108.01661},
+  year={2021}
+}
+
+@InProceedings{memorization,
+  title = 	 {A Closer Look at Memorization in Deep Networks},
+  author =       {Devansh Arpit and Stanis{\l}aw Jastrzebski and Nicolas Ballas and David Krueger and Emmanuel Bengio and Maxinder S. Kanwal and Tegan Maharaj and Asja Fischer and Aaron Courville and Yoshua Bengio and Simon Lacoste-Julien},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {233--242},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/arpit17a/arpit17a.pdf},
+  url = 	 {https://proceedings.mlr.press/v70/arpit17a.html},
+  abstract = 	 {We examine the role of memorization in deep learning, drawing connections to capacity, generalization, and adversarial robustness. While deep networks are capable of memorizing noise data, our results suggest that they tend to prioritize learning simple patterns first. In our experiments, we expose qualitative differences in gradient-based optimization of deep neural networks (DNNs) on noise vs.~real data. We also demonstrate that for appropriately tuned explicit regularization (e.g.,~dropout) we can degrade DNN training performance on noise datasets without compromising generalization on real data. Our analysis suggests that the notions of effective capacity which are dataset independent are unlikely to explain the generalization performance of deep networks when trained with gradient based methods because training data itself plays an important role in determining the degree of memorization.}
+}
+
+@InProceedings{bach_implicit_bias,
+  title = 	 {Implicit Bias of Gradient Descent for Wide Two-layer Neural Networks Trained with the Logistic Loss},
+  author =       {Chizat, L\'ena\"ic  and Bach, Francis},
+  booktitle = 	 {Proceedings of Thirty Third Conference on Learning Theory},
+  pages = 	 {1305--1338},
+  year = 	 {2020},
+  editor = 	 {Abernethy, Jacob and Agarwal, Shivani},
+  volume = 	 {125},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--12 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v125/chizat20a/chizat20a.pdf},
+  url = 	 {https://proceedings.mlr.press/v125/chizat20a.html},
+  abstract = 	 { Neural networks trained to minimize the logistic (a.k.a. cross-entropy) loss with gradient-based methods are observed to perform well in many supervised classification tasks. Towards understanding this phenomenon, we analyze the training and generalization behavior of infinitely wide two-layer neural networks with homogeneous activations. We show that the limits of the gradient flow on exponentially tailed losses can be fully characterized as a max-margin classifier in a certain non-Hilbertian space of functions. In presence of hidden low-dimensional structures, the resulting margin is independent of the ambiant dimension, which leads to strong generalization bounds. In contrast, training only the output layer implicitly solves a kernel support vector machine, which a priori does not enjoy such an adaptivity. Our analysis of training is non-quantitative in terms of running time but we prove computational guarantees in simplified settings by showing equivalences with online mirror descent. Finally, numerical experiments suggest that our analysis describes well the practical behavior of two-layer neural networks with ReLU activation and confirm the statistical benefits of this implicit bias.}
+}
+
+@misc{poggio2017theory,
+    title={Theory of Deep Learning III: explaining the non-overfitting puzzle},
+    author={Tomaso Poggio and Kenji Kawaguchi and Qianli Liao and Brando Miranda and Lorenzo Rosasco and Xavier Boix and Jack Hidary and Hrushikesh Mhaskar},
+    year={2017},
+    eprint={1801.00173},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@inproceedings{
+  lyu2020gradient,
+  title={Gradient Descent Maximizes the Margin of Homogeneous Neural Networks},
+  author={Kaifeng Lyu and Jian Li},
+  booktitle={International Conference on Learning Representations},
+  year={2020},
+  url={https://openreview.net/forum?id=SJeLIgBKPS}
+}
+
+
+@article{torralba,
+  author = 	 "Antonio Torralba and Aude Oliva",
+  title = 	 "Statistics of natural image categories",
+  journal =	 "Network: computation in neural systems",
+  year =	 "2003",
+  volume =	 "14",
+  number =	 "3",
+  pages =	 "391–412"
+}
+
+@InProceedings{CKA,
+  title = 	 {Similarity of Neural Network Representations Revisited},
+  author =       {Kornblith, Simon and Norouzi, Mohammad and Lee, Honglak and Hinton, Geoffrey},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  pages = 	 {3519--3529},
+  year = 	 {2019},
+  editor = 	 {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--15 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v97/kornblith19a/kornblith19a.pdf},
+  url = 	 {https://proceedings.mlr.press/v97/kornblith19a.html},
+  abstract = 	 {Recent work has sought to understand the behavior of neural networks by comparing representations between layers and between different trained models. We examine methods for comparing neural network representations based on canonical correlation analysis (CCA). We show that CCA belongs to a family of statistics for measuring multivariate similarity, but that neither CCA nor any other statistic that is invariant to invertible linear transformation can measure meaningful similarities between representations of higher dimension than the number of data points. We introduce a similarity index that measures the relationship between representational similarity matrices and does not suffer from this limitation. This similarity index is equivalent to centered kernel alignment (CKA) and is also closely connected to CCA. Unlike CCA, CKA can reliably identify correspondences between representations in networks trained from different initializations.}
+}
+
+@inproceedings{
+minibatchCKA,
+title={Do Wide and Deep Networks Learn the Same Things? Uncovering How Neural Network Representations Vary with Width and Depth},
+author={Thao Nguyen and Maithra Raghu and Simon Kornblith},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=KJNcAkY8tY4}
+}
+
+
+@InProceedings{bipartitematch,
+  title = 	 {Convergent Learning: Do different neural networks learn the same representations?},
+  author = 	 {Li, Yixuan and Yosinski, Jason and Clune, Jeff and Lipson, Hod and Hopcroft, John},
+  booktitle = 	 {Proceedings of the 1st International Workshop on Feature Extraction: Modern Questions and Challenges at NIPS 2015},
+  pages = 	 {196--212},
+  year = 	 {2015},
+  editor = 	 {Storcheus, Dmitry and Rostamizadeh, Afshin and Kumar, Sanjiv},
+  volume = 	 {44},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Montreal, Canada},
+  month = 	 {11 Dec},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v44/li15convergent.pdf},
+  url = 	 {https://proceedings.mlr.press/v44/li15convergent.html},
+  abstract = 	 {Recent successes in training large, deep neural networks (DNNs) have prompted active investigation into the underlying representations learned on their intermediate layers. Such research is difficult because it requires making sense of non-linear computations performed by millions of learned parameters. However, despite the difficulty, such research is valuable because it increases our ability to understand current models and training algorithms and thus create improved versions of them. We argue for the value of investigating whether neural networks exhibit what we call convergent learning, which is when separately trained DNNs learn features that converge to span similar spaces. We further begin research into this question by introducing two techniques to approximately align neurons from two networks: a bipartite matching approach that makes one-to-one assignments between neurons and a spectral clustering approach that finds many-to-many mappings. Our initial approach to answering this question reveals many interesting, previously unknown properties of neural networks, and we argue that future research into the question of convergent learning will yield many more. The insights described here include (1) that some features are learned reliably in multiple networks, yet other features are not consistently learned; and (2) that units learn to span low-dimensional subspaces and, while these subspaces are common to multiple networks, the specific basis vectors learned are not; (3) that the  average activation values of neurons vary considerably within a network, yet the mean activation values across different networks converge to an almost identical distribution.}
+}
+
+
+@article{cnn_viz1,
+  author    = {Matthew D. Zeiler and
+               Rob Fergus},
+  title     = {Visualizing and Understanding Convolutional Networks},
+  journal   = {CoRR},
+  volume    = {abs/1311.2901},
+  year      = {2013},
+  url       = {http://arxiv.org/abs/1311.2901},
+  eprinttype = {arXiv},
+  eprint    = {1311.2901},
+  timestamp = {Mon, 13 Aug 2018 16:48:37 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/ZeilerF13.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{cnn_viz2,
+  author    = {Ross B. Girshick and
+               Jeff Donahue and
+               Trevor Darrell and
+               Jitendra Malik},
+  title     = {Rich feature hierarchies for accurate object detection and semantic
+               segmentation},
+  journal   = {CoRR},
+  volume    = {abs/1311.2524},
+  year      = {2013},
+  url       = {http://arxiv.org/abs/1311.2524},
+  eprinttype = {arXiv},
+  eprint    = {1311.2524},
+  timestamp = {Mon, 13 Aug 2018 16:48:09 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/GirshickDDM13.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{googlenet,
+  author    = {Christian Szegedy and
+               Wei Liu and
+               Yangqing Jia and
+               Pierre Sermanet and
+               Scott E. Reed and
+               Dragomir Anguelov and
+               Dumitru Erhan and
+               Vincent Vanhoucke and
+               Andrew Rabinovich},
+  title     = {Going Deeper with Convolutions},
+  journal   = {CoRR},
+  volume    = {abs/1409.4842},
+  year      = {2014},
+  url       = {http://arxiv.org/abs/1409.4842},
+  eprinttype = {arXiv},
+  eprint    = {1409.4842},
+  timestamp = {Mon, 13 Aug 2018 16:48:52 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/SzegedyLJSRAEVR14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{densenet,
+  author    = {Gao Huang and
+               Zhuang Liu and
+               Kilian Q. Weinberger},
+  title     = {Densely Connected Convolutional Networks},
+  journal   = {CoRR},
+  volume    = {abs/1608.06993},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1608.06993},
+  eprinttype = {arXiv},
+  eprint    = {1608.06993},
+  timestamp = {Mon, 10 Sep 2018 15:49:32 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/HuangLW16a.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{resnet,
+  author    = {Kaiming He and
+               Xiangyu Zhang and
+               Shaoqing Ren and
+               Jian Sun},
+  title     = {Deep Residual Learning for Image Recognition},
+  journal   = {CoRR},
+  volume    = {abs/1512.03385},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1512.03385},
+  eprinttype = {arXiv},
+  eprint    = {1512.03385},
+  timestamp = {Wed, 17 Apr 2019 17:23:45 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/HeZRS15.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{humancontrast,
+  author={Mannos, J. and Sakrison, D.},
+  journal={IEEE Transactions on Information Theory}, 
+  title={The effects of a visual fidelity criterion of the encoding of images}, 
+  year={1974},
+  volume={20},
+  number={4},
+  pages={525-536},
+  doi={10.1109/TIT.1974.1055250}
+  }
+
+  @article {CSF,
+	Title = {Contrast sensitivity},
+	Author = {Owsley, Cynthia},
+	DOI = {10.1016/s0896-1549(03)00003-8},
+	Number = {2},
+	Volume = {16},
+	Month = {June},
+	Year = {2003},
+	Journal = {Ophthalmology clinics of North America},
+	ISSN = {0896-1549},
+	Pages = {171—177},
+	URL = {https://doi.org/10.1016/s0896-1549(03)00003-8},
+}
+
+
+
+@inproceedings{vgg,
+  author    = {Karen Simonyan and
+               Andrew Zisserman},
+  editor    = {Yoshua Bengio and
+               Yann LeCun},
+  title     = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
+  booktitle = {3rd International Conference on Learning Representations, {ICLR} 2015,
+               San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1409.1556},
+  timestamp = {Wed, 17 Jul 2019 10:40:54 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/SimonyanZ14a.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{AlexNet,
+ author = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {F. Pereira and C.J. Burges and L. Bottou and K.Q. Weinberger},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {ImageNet Classification with Deep Convolutional Neural Networks},
+ url = {https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf},
+ volume = {25},
+ year = {2012}
+}
+
+
+
+@article{gabor_visual_cortex,
+author = {John G. Daugman},
+journal = {J. Opt. Soc. Am. A},
+keywords = {Fourier transforms; Linear filtering; Spatial filtering; Spatial frequency; Spatial resolution; Spectroscopy},
+number = {7},
+pages = {1160--1169},
+publisher = {OSA},
+title = {Uncertainty relation for resolution in space, spatial frequency, and orientation optimized by two-dimensional visual cortical filters},
+volume = {2},
+month = {Jul},
+year = {1985},
+url = {http://www.osapublishing.org/josaa/abstract.cfm?URI=josaa-2-7-1160},
+doi = {10.1364/JOSAA.2.001160}
+}
+
+@article{gabor_detection,
+title = {Object detection using gabor filters},
+journal = {Pattern Recognition},
+volume = {30},
+number = {2},
+pages = {295-309},
+year = {1997},
+issn = {0031-3203},
+doi = {https://doi.org/10.1016/S0031-3203(96)00068-4},
+url = {https://www.sciencedirect.com/science/article/pii/S0031320396000684},
+author = {Anil K. Jain and Nalini K. Ratha and Sridhar Lakshmanan},
+keywords = {Texture-based segmentation, Object detection, Even-symmetric Gabor filters, Fingerprint, Target recognition}
+}
+
+@article{gabor_image_recognition,
+author = {Calderón, Andrés and Roa Ovalle, Sergio and Victorino, Jorge},
+year = {2003},
+month = {01},
+pages = {},
+url = {https://www.researchgate.net/publication/277285568_Handwritten_Digit_Recognition_using_Convolutional_Neural_Networks_and_Gabor_filters},
+title = {Handwritten Digit Recognition using Convolutional Neural Networks and Gabor filters}
+}
+
+@article{gabor_cnn,
+  author    = {Syed Shakib Sarwar and
+               Priyadarshini Panda and
+               Kaushik Roy},
+  title     = {Gabor Filter Assisted Energy Efficient Fast Learning Convolutional
+               Neural Networks},
+  journal   = {CoRR},
+  volume    = {abs/1705.04748},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1705.04748},
+  eprinttype = {arXiv},
+  eprint    = {1705.04748},
+  timestamp = {Mon, 13 Aug 2018 16:48:55 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/SarwarP017.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@INPROCEEDINGS{DalalTriggs, 
+author={Dalal, N. and Triggs, B.},
+booktitle={2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)},
+title={Histograms of oriented gradients for human detection},
+year={2005},  volume={1},  number={},  pages={886-893 vol. 1},  doi={10.1109/CVPR.2005.177}}
+
+@article{gabor_cnn2,
+  author    = {Shangzhen Luan and
+               Baochang Zhang and
+               Chen Chen and
+               Xianbin Cao and
+               Jungong Han and
+               Jianzhuang Liu},
+  title     = {Gabor Convolutional Networks},
+  journal   = {CoRR},
+  volume    = {abs/1705.01450},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1705.01450},
+  eprinttype = {arXiv},
+  eprint    = {1705.01450},
+  timestamp = {Thu, 27 Aug 2020 10:58:34 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/LuanZ0CHL17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{lecun_dynamics,
+ author = {LeCun, Yann and Kanter, Ido and Solla, Sara},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {R. P. Lippmann and J. Moody and D. Touretzky},
+ pages = {},
+ publisher = {Morgan-Kaufmann},
+ title = {Second Order Properties of Error Surfaces: Learning Time and Generalization},
+ url = {https://proceedings.neurips.cc/paper/1990/file/758874998f5bd0c393da094e1967a72b-Paper.pdf},
+ volume = {3},
+ year = {1991}
+}
+
+
+@inproceedings{lazytraining,
+ author = {Chizat, L\'{e}na\"{\i}c and Oyallon, Edouard and Bach, Francis},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {On Lazy Training in Differentiable Programming},
+ url = {https://proceedings.neurips.cc/paper/2019/file/ae614c557843b1df326cb29c57225459-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+
+@InProceedings{glorot_init,
+  title = 	 {Understanding the difficulty of training deep feedforward neural networks},
+  author = 	 {Glorot, Xavier and Bengio, Yoshua},
+  booktitle = 	 {Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {249--256},
+  year = 	 {2010},
+  editor = 	 {Teh, Yee Whye and Titterington, Mike},
+  volume = 	 {9},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Chia Laguna Resort, Sardinia, Italy},
+  month = 	 {13--15 May},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf},
+  url = 	 {https://proceedings.mlr.press/v9/glorot10a.html}
+}
+
+@inproceedings{bengio_transfer,
+ author = {Yosinski, Jason and Clune, Jeff and Bengio, Yoshua and Lipson, Hod},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {Z. Ghahramani and M. Welling and C. Cortes and N. Lawrence and K.Q. Weinberger},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {How transferable are features in deep neural networks?},
+ url = {https://proceedings.neurips.cc/paper/2014/file/375c71349b295fbe2dcdca9206f20a06-Paper.pdf},
+ volume = {27},
+ year = {2014}
+}
+
+
+
+@inproceedings{gidel,
+ author = {Gidel, Gauthier and Bach, Francis and Lacoste-Julien, Simon},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Implicit Regularization of Discrete Gradient Dynamics in Linear Neural Networks},
+ url = {https://proceedings.neurips.cc/paper/2019/file/f39ae9ff3a81f499230c4126e01f421b-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+
+
+
+@article{gissin,
+  author    = {Daniel Gissin and
+               Shai Shalev{-}Shwartz and
+               Amit Daniely},
+  title     = {The Implicit Bias of Depth: How Incremental Learning Drives Generalization},
+  journal   = {CoRR},
+  volume    = {abs/1909.12051},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1909.12051},
+  eprinttype = {arXiv},
+  eprint    = {1909.12051},
+  timestamp = {Fri, 27 Sep 2019 13:04:21 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1909-12051.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@inproceedings{gd_implicit_bias,
+ author = {Gunasekar, Suriya and Lee, Jason D and Soudry, Daniel and Srebro, Nati},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Implicit Bias of Gradient Descent on Linear Convolutional Networks},
+ url = {https://proceedings.neurips.cc/paper/2018/file/0e98aeeb54acf612b9eb4e48a269814c-Paper.pdf},
+ volume = {31},
+ year = {2018}
+}
+
+
+@inproceedings{doimo,
+author = {Doimo, Diego and Glielmo, Aldo and Ansuini, Alessio and Laio, Alessandro},
+title = {Hierarchical Nucleation in Deep Neural Networks},
+year = {2020},
+isbn = {9781713829546},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {Deep convolutional networks (DCNs) learn meaningful representations where data that share the same abstract characteristics are positioned closer and closer. Understanding these representations and how they are generated is of unquestioned practical and theoretical interest. In this work we study the evolution of the probability density of the ImageNet dataset across the hidden layers in some state-of-the-art DCNs. We find that the initial layers generate a unimodal probability density getting rid of any structure irrelevant for classification. In subsequent layers density peaks arise in a hierarchical fashion that mirrors the semantic hierarchy of the concepts. Density peaks corresponding to single categories appear only close to the output and via a very sharp transition which resembles the nucleation process of a heterogeneous liquid. This process leaves a footprint in the probability density of the output layer where the topography of the peaks allows reconstructing the semantic relationships of the categories.},
+booktitle = {Proceedings of the 34th International Conference on Neural Information Processing Systems},
+articleno = {631},
+numpages = {11},
+location = {Vancouver, BC, Canada},
+series = {NIPS'20}
+}
+
+@article{ganavim,
+
+  url = {https://arxiv.org/abs/2006.10455},
+  
+  author = {Maennel, Hartmut and Alabdulmohsin, Ibrahim and Tolstikhin, Ilya and Baldock, Robert J. N. and Bousquet, Olivier and Gelly, Sylvain and Keysers, Daniel},
+  
+ 
+  
+  title = {What Do Neural Networks Learn When Trained With Random Labels?},
+  
+  publisher = {arXiv},
+  
+  year = {2020},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+@article{perceptual,
+  author    = {Justin Johnson and
+               Alexandre Alahi and
+               Li Fei{-}Fei},
+  title     = {Perceptual Losses for Real-Time Style Transfer and Super-Resolution},
+  journal   = {CoRR},
+  volume    = {abs/1603.08155},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1603.08155},
+  eprinttype = {arXiv},
+  eprint    = {1603.08155},
+  timestamp = {Wed, 15 Sep 2021 14:13:01 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/JohnsonAL16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{neural-style,
+  author    = {Leon A. Gatys and
+               Alexander S. Ecker and
+               Matthias Bethge},
+  title     = {A Neural Algorithm of Artistic Style},
+  journal   = {CoRR},
+  volume    = {abs/1508.06576},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1508.06576},
+  eprinttype = {arXiv},
+  eprint    = {1508.06576},
+  timestamp = {Thu, 14 Oct 2021 09:16:23 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/GatysEB15a.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@InProceedings{AmirWeiss,
+    author    = {Amir, Dan and Weiss, Yair},
+    title     = {Understanding and Simplifying Perceptual Distances},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {12226-12235}
+}
+
+@article{Efros,
+  author    = {Richard Zhang and
+               Phillip Isola and
+               Alexei A. Efros and
+               Eli Shechtman and
+               Oliver Wang},
+  title     = {The Unreasonable Effectiveness of Deep Features as a Perceptual Metric},
+  journal   = {CoRR},
+  volume    = {abs/1801.03924},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1801.03924},
+  eprinttype = {arXiv},
+  eprint    = {1801.03924},
+  timestamp = {Wed, 14 Aug 2019 08:23:33 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1801-03924.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{gabor-tight-frame,
+  title={Directional Frames for Image Recovery: Multi-scale Discrete Gabor Frames},
+  author={Hui Ji and Zuowei Shen and Yufei Zhao},
+  journal={Journal of Fourier Analysis and Applications},
+  year={2017},
+  volume={23},
+  pages={729-757}
+}
+
+
+
+@article{self_training,
+  author    = {Attaullah Sahito and
+               Eibe Frank and
+               Bernhard Pfahringer},
+  title     = {Better Self-training for Image Classification through Self-supervision},
+  journal   = {CoRR},
+  volume    = {abs/2109.00778},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2109.00778},
+  eprinttype = {arXiv},
+  eprint    = {2109.00778},
+  timestamp = {Mon, 20 Sep 2021 16:29:41 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2109-00778.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@misc{li2021selfsupervised,
+      title={Self-Supervised Learning with Kernel Dependence Maximization}, 
+      author={Yazhe Li and Roman Pogodin and Danica J. Sutherland and Arthur Gretton},
+      year={2021},
+      eprint={2106.08320},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+@article{context_prediction,
+  author    = {Carl Doersch and
+               Abhinav Gupta and
+               Alexei A. Efros},
+  title     = {Unsupervised Visual Representation Learning by Context Prediction},
+  journal   = {CoRR},
+  volume    = {abs/1505.05192},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1505.05192},
+  eprinttype = {arXiv},
+  eprint    = {1505.05192},
+  timestamp = {Fri, 05 Apr 2019 07:29:46 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/DoerschGE15.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{predicting_rotations,
+  author    = {Spyros Gidaris and
+               Praveer Singh and
+               Nikos Komodakis},
+  title     = {Unsupervised Representation Learning by Predicting Image Rotations},
+  journal   = {CoRR},
+  volume    = {abs/1803.07728},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1803.07728},
+  eprinttype = {arXiv},
+  eprint    = {1803.07728},
+  timestamp = {Mon, 13 Aug 2018 16:46:04 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1803-07728.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{csis021similarity,
+      title={Similarity and Matching of Neural Network Representations}, 
+      author={Adrián Csiszárik and Péter Kőrösi-Szabó and Ákos K. Matszangosz and Gergely Papp and Dániel Varga},
+      year={2021},
+      eprint={2110.14633},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@INPROCEEDINGS{gabornet,
+
+  author={Alekseev, Andrey and Bobe, Anatoly},
+
+  booktitle={2019 International Conference on Engineering and Telecommunication (EnT)}, 
+
+  title={GaborNet: Gabor filters with learnable parameters in deep convolutional neural network}, 
+
+  year={2019},
+
+  volume={},
+
+  number={},
+
+  pages={1-4},
+
+  doi={10.1109/EnT47717.2019.9030571}}
+
+@inproceedings{stitching,
+ author = {Bansal, Yamini and Nakkiran, Preetum and Barak, Boaz},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+ pages = {225--236},
+ publisher = {Curran Associates, Inc.},
+ title = {Revisiting Model Stitching to Compare Neural Representations},
+ url = {https://proceedings.neurips.cc/paper/2021/file/01ded4259d101feb739b06c399e9cd9c-Paper.pdf},
+ volume = {34},
+ year = {2021}
+}
+
+
+@inproceedings{wnn,
+ author = {Desjardins, Guillaume and Simonyan, Karen and Pascanu, Razvan and kavukcuoglu, koray},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {C. Cortes and N. Lawrence and D. Lee and M. Sugiyama and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Natural Neural Networks},
+ url = {https://proceedings.neurips.cc/paper/2015/file/2de5d16682c3c35007e4e92982f1a2ba-Paper.pdf},
+ volume = {28},
+ year = {2015}
+}
+
+
+
+@InProceedings{coateswhitening,
+  title = 	 {An Analysis of Single-Layer Networks in Unsupervised Feature Learning},
+  author = 	 {Coates, Adam and Ng, Andrew and Lee, Honglak},
+  booktitle = 	 {Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {215--223},
+  year = 	 {2011},
+  editor = 	 {Gordon, Geoffrey and Dunson, David and Dudík, Miroslav},
+  volume = 	 {15},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Fort Lauderdale, FL, USA},
+  month = 	 {11--13 Apr},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v15/coates11a/coates11a.pdf},
+  url = 	 {https://proceedings.mlr.press/v15/coates11a.html},
+  abstract = 	 {A great deal of research has focused on algorithms for learning features from unlabeled data. Indeed, much progress has been made on benchmark datasets like NORB and CIFAR-10 by employing increasingly complex unsupervised learning algorithms and deep models. In this paper, however, we show that several simple factors, such as the number of hidden nodes in the model, may be more important to achieving high performance than the learning algorithm or the depth of the model. Specifically, we will apply several off-the-shelf feature learning algorithms (sparse auto-encoders, sparse RBMs, K-means clustering, and Gaussian mixtures) to CIFAR-10, NORB, and STL datasets using only single-layer networks. We then present a detailed analysis of the effect of changes in the model setup: the receptive field size, number of hidden nodes (features), the step-size (“stride”) between extracted features, and the effect of whitening. Our results show that large numbers of hidden nodes and dense feature extraction are critical to achieving high performance - so critical, in fact, that when these parameters are pushed to their limits, we achieve state-of-the-art performance on both CIFAR-10 and NORB using only a single layer of features. More surprisingly, our best performance is based on K-means clustering, which is extremely fast, has no hyper-parameters to tune beyond the model structure itself, and is very easy to implement. Despite the simplicity of our system, we achieve accuracy beyond all previously published results on the CIFAR-10 and NORB datasets (79.6 and 97.2 respectively).}
+}
+
+@INPROCEEDINGS{cnnwhitening,
+  author={Pal, Kuntal Kumar and Sudeep, K. S.},
+  booktitle={2016 IEEE International Conference on Recent Trends in Electronics, Information \& Communication Technology (RTEICT)}, 
+  title={Preprocessing for image classification by convolutional neural networks}, 
+  year={2016},
+  volume={},
+  number={},
+  pages={1778-1781},
+  doi={10.1109/RTEICT.2016.7808140}
+  }
+  
+@article{barlow,
+    author = {Barlow, H.B.},
+    title = "{Unsupervised Learning}",
+    journal = {Neural Computation},
+    volume = {1},
+    number = {3},
+    pages = {295-311},
+    year = {1989},
+    month = {09},
+    abstract = "{What use can the brain make of the massive flow of sensory information that occurs without any associated rewards or punishments? This question is reviewed in the light of connectionist models of unsupervised learning and some older ideas, namely the cognitive maps and working models of Tolman and Craik, and the idea that redundancy is important for understanding perception (Attneave 1954), the physiology of sensory pathways (Barlow 1959), and pattern recognition (Watanabe 1960). It is argued that (1) The redundancy of sensory messages provides the knowledge incorporated in the maps or models. (2) Some of this knowledge can be obtained by observations of mean, variance, and covariance of sensory messages, and perhaps also by a method called “minimum entropy coding.” (3) Such knowledge may be incorporated in a model of “what usually happens” with which incoming messages are automatically compared, enabling unexpected discrepancies to be immediately identified. (4) Knowledge of the sort incorporated into such a filter is a necessary prerequisite of ordinary learning, and a representation whose elements are independent makes it possible to form associations with logical functions of the elements, not just with the elements themselves.}",
+    issn = {0899-7667},
+    doi = {10.1162/neco.1989.1.3.295},
+    url = {https://doi.org/10.1162/neco.1989.1.3.295},
+    eprint = {https://direct.mit.edu/neco/article-pdf/1/3/295/811863/neco.1989.1.3.295.pdf},
+}
+
+@inproceedings{
+neuronactivation,
+title={On the importance of single directions for generalization},
+author={Ari S. Morcos and David G.T. Barrett and Neil C. Rabinowitz and Matthew Botvinick},
+booktitle={International Conference on Learning Representations},
+year={2018},
+url={https://openreview.net/forum?id=r1iuQjxCZ},
+}
+
+@inproceedings{subspacematching,
+ author = {Wang, Liwei and Hu, Lunjia and Gu, Jiayuan and Hu, Zhiqiang and Wu, Yue and He, Kun and Hopcroft, John},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Towards Understanding Learning Representations: To What Extent Do Different Neural Networks Learn the Same Representation},
+ url = {https://proceedings.neurips.cc/paper/2018/file/5fc34ed307aac159a30d81181c99847e-Paper.pdf},
+ volume = {31},
+ year = {2018}
+}
+
+
+
+  @article{dropoutinsteadofwhitening,
+  author    = {Guangyong Chen and
+               Pengfei Chen and
+               Yujun Shi and
+               Chang{-}Yu Hsieh and
+               Benben Liao and
+               Shengyu Zhang},
+  title     = {Rethinking the Usage of Batch Normalization and Dropout in the Training
+               of Deep Neural Networks},
+  journal   = {CoRR},
+  volume    = {abs/1905.05928},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1905.05928},
+  eprinttype = {arXiv},
+  eprint    = {1905.05928},
+  timestamp = {Thu, 01 Dec 2022 16:14:36 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1905-05928.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@InProceedings{Zhang_2021_CVPR,
+    author    = {Zhang, Shengdong and Nezhadarya, Ehsan and Fashandi, Homa and Liu, Jiayi and Graham, Darin and Shah, Mohak},
+    title     = {Stochastic Whitening Batch Normalization},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {10978-10987}
+}
+@InProceedings{zca_batch_normalization,
+author = {Huang, Lei and Yang, Dawei and Lang, Bo and Deng, Jia},
+title = {Decorrelated Batch Normalization},
+booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2018}
+}
+
+@InProceedings{Pan_2019_ICCV,
+author = {Pan, Xingang and Zhan, Xiaohang and Shi, Jianping and Tang, Xiaoou and Luo, Ping},
+title = {Switchable Whitening for Deep Representation Learning},
+booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+month = {October},
+year = {2019}
+}
+
+@InProceedings{gwnn,
+  title = 	 {Learning Deep Architectures via Generalized Whitened Neural Networks},
+  author =       {Ping Luo},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {2238--2246},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/luo17a/luo17a.pdf},
+  url = 	 {https://proceedings.mlr.press/v70/luo17a.html},
+  abstract = 	 {Whitened Neural Network (WNN) is a recent advanced deep architecture, which improves convergence and generalization of canonical neural networks by whitening their internal hidden representation. However, the whitening transformation increases computation time. Unlike WNN that reduced runtime by performing whitening every thousand iterations, which degenerates convergence due to the ill conditioning, we present generalized WNN (GWNN), which has three appealing properties. First, GWNN is able to learn compact representation to reduce computations. Second, it enables whitening transformation to be performed in a short period, preserving good conditioning. Third, we propose a data-independent estimation of the covariance matrix to further improve computational efficiency. Extensive experiments on various datasets demonstrate the benefits of GWNN.}
+}
+
+@article{AtickRedlich90,
+    author = {Atick, Joseph J. and Redlich, A. Norman},
+    title = "{Towards a Theory of Early Visual Processing}",
+    journal = {Neural Computation},
+    volume = {2},
+    number = {3},
+    pages = {308-320},
+    year = {1990},
+    month = {09},
+    abstract = "{We propose a theory of the early processing in the mammalian visual pathway. The theory is formulated in the language of information theory and hypothesizes that the goal of this processing is to recode in order to reduce a “generalized redundancy” subject to a constraint that specifies the amount of average information preserved. In the limit of no noise, this theory becomes equivalent to Barlow's redundancy reduction hypothesis, but it leads to very different computational strategies when noise is present. A tractable approach for finding the optimal encoding is to solve the problem in successive stages where at each stage the optimization is performed within a restricted class of transfer functions. We explicitly find the solution for the class of encodings to which the parvocellular retinal processing belongs, namely linear and nondivergent transformations. The solution shows agreement with the experimentally observed transfer functions at all levels of signal to noise.}",
+    issn = {0899-7667},
+    doi = {10.1162/neco.1990.2.3.308},
+    url = {https://doi.org/10.1162/neco.1990.2.3.308},
+    eprint = {https://direct.mit.edu/neco/article-pdf/2/3/308/812017/neco.1990.2.3.308.pdf},
+}
+
+
+@INPROCEEDINGS {understandingequivalences,
+author = {K. Lenc and A. Vedaldi},
+booktitle = {2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+title = {Understanding image representations by measuring their equivariance and equivalence},
+year = {2015},
+volume = {},
+issn = {1063-6919},
+pages = {991-999},
+abstract = {Despite the importance of image representations such as histograms of oriented gradients and deep Convolutional Neural Networks (CNN), our theoretical understanding of them remains limited. Aiming at filling this gap, we investigate three key mathematical properties of representations: equivariance, invariance, and equivalence. Equivariance studies how transformations of the input image are encoded by the representation, invariance being a special case where a transformation has no effect. Equivalence studies whether two representations, for example two different parametrisations of a CNN, capture the same visual information or not. A number of methods to establish these properties empirically are proposed, including introducing transformation and stitching layers in CNNs. These methods are then applied to popular representations to reveal insightful aspects of their structure, including clarifying at which layers in a CNN certain geometric invariances are achieved. While the focus of the paper is theoretical, direct applications to structured-output regression are demonstrated too.},
+keywords = {},
+doi = {10.1109/CVPR.2015.7298701},
+url = {https://doi.ieeecomputersociety.org/10.1109/CVPR.2015.7298701},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {jun}
+}
+
+@article{oldsimilarity,
+author = { Aarre   Laakso  and  Garrison   Cottrell },
+title = {Content and cluster analysis: Assessing representational similarity in neural systems},
+journal = {Philosophical Psychology},
+volume = {13},
+number = {1},
+pages = {47-76},
+year  = {2000},
+publisher = {Routledge},
+doi = {10.1080/09515080050002726},
+
+URL = { 
+        https://doi.org/10.1080/09515080050002726
+
+},
+eprint = { 
+    
+        https://doi.org/10.1080/09515080050002726}
+}
+
+@article{field1994goal,
+  title={What is the goal of sensory coding?},
+  author={Field, David J},
+  journal={Neural computation},
+  volume={6},
+  number={4},
+  pages={559--601},
+  year={1994},
+  publisher={MIT Press}
+}
+
+@article{olshausen1996emergence,
+  title={Emergence of simple-cell receptive field properties by learning a sparse code for natural images},
+  author={Olshausen, Bruno A and Field, David J},
+  journal={Nature},
+  volume={381},
+  number={6583},
+  pages={607--609},
+  year={1996},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{BELL19973327,
+title = {The “independent components” of natural scenes are edge filters},
+journal = {Vision Research},
+volume = {37},
+number = {23},
+pages = {3327-3338},
+year = {1997},
+issn = {0042-6989},
+doi = {https://doi.org/10.1016/S0042-6989(97)00121-1},
+url = {https://www.sciencedirect.com/science/article/pii/S0042698997001211},
+author = {Anthony J. Bell and Terrence J. Sejnowski},
+keywords = {Information theory, Independent components, Neural network learning},
+abstract = {It has previously been suggested that neurons with line and edge selectivities found in primary visual cortex of cats and monkeys form a sparse, distributed representation of natural scenes, and it has been reasoned that such responses should emerge from an unsupervised learning algorithm that attempts to find a factorial code of independent visual features. We show here that a new unsupervised learning algorithm based on information maximization, a nonlinear “infomax” network, when applied to an ensemble of natural scenes produces sets of visual filters that are localized and oriented. Some of these filters are Gabor-like and resemble those produced by the sparseness-maximization network. In addition, the outputs of these filters are as independent as possible, since this infomax network performs Independent Components Analysis or ICA, for sparse (super-gaussian) component distributions. We compare the resulting ICA filters and their associated basis functions, with other decorrelating filters produced by Principal Components Analysis (PCA) and zero-phase whitening filters (ZCA). The ICA filters have more sparsely distributed (kurtotic) outputs on natural scenes. They also resemble the receptive fields of simple cells in visual cortex, which suggests that these neurons form a natural, information-theoretic coordinate system for natural images.}
+}
+
+@book{goodfellow2016deep,
+  title={Deep learning},
+  author={Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron},
+  year={2016},
+  publisher={MIT press}
+}

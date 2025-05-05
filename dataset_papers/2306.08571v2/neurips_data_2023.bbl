@@ -1,0 +1,296 @@
+\providecommand{\latin}[1]{#1}
+\makeatletter
+\providecommand{\doi}
+  {\begingroup\let\do\@makeother\dospecials
+  \catcode`\{=1 \catcode`\}=2 \doi@aux}
+\providecommand{\doi@aux}[1]{\endgroup\texttt{#1}}
+\makeatother
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{31}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
+
+\bibitem[O'Sullivan and Passantino()O'Sullivan, and Passantino]{news}
+O'Sullivan,~D.; Passantino,~J. 'Verified' Twitter accounts share fake image of
+  ‘explosion’ near Pentagon, causing confusion.\relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lu \latin{et~al.}(2023)Lu, Huang, Bai, Liu, Qu, and
+  Ouyang]{lu2023seeing}
+Lu,~Z.; Huang,~D.; Bai,~L.; Liu,~X.; Qu,~J.; Ouyang,~W. Seeing is not always
+  believing: A Quantitative Study on Human Perception of AI-Generated Images.
+  \emph{arXiv preprint arXiv:2304.13023} \textbf{2023}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Yang \latin{et~al.}(2019)Yang, Li, and Lyu]{yang2019exposing}
+Yang,~X.; Li,~Y.; Lyu,~S. Exposing deep fakes using inconsistent head poses.
+  ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and
+  Signal Processing (ICASSP). 2019; pp 8261--8265\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wang \latin{et~al.}(2019)Wang, Juefei-Xu, Ma, Xie, Huang, Wang, and
+  Liu]{wang2019fakespotter}
+Wang,~R.; Juefei-Xu,~F.; Ma,~L.; Xie,~X.; Huang,~Y.; Wang,~J.; Liu,~Y.
+  Fakespotter: A simple yet robust baseline for spotting ai-synthesized fake
+  faces. \emph{arXiv preprint arXiv:1909.06122} \textbf{2019}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Dang \latin{et~al.}(2020)Dang, Liu, Stehouwer, Liu, and
+  Jain]{dang2020detection}
+Dang,~H.; Liu,~F.; Stehouwer,~J.; Liu,~X.; Jain,~A.~K. On the detection of
+  digital face manipulation. Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern recognition. 2020; pp 5781--5790\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Gandhi and Jain(2020)Gandhi, and Jain]{gandhi2020adversarial}
+Gandhi,~A.; Jain,~S. Adversarial perturbations fool deepfake detectors. 2020
+  international joint conference on neural networks (IJCNN). 2020; pp
+  1--8\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[He \latin{et~al.}(2021)He, Gan, Chen, Zhou, Yin, Song, Sheng, Shao,
+  and Liu]{he2021forgerynet}
+He,~Y.; Gan,~B.; Chen,~S.; Zhou,~Y.; Yin,~G.; Song,~L.; Sheng,~L.; Shao,~J.;
+  Liu,~Z. Forgerynet: A versatile benchmark for comprehensive forgery analysis.
+  Proceedings of the IEEE/CVF conference on computer vision and pattern
+  recognition. 2021; pp 4360--4369\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wang \latin{et~al.}(2023)Wang, Huang, and Hong]{wang2023benchmarking}
+Wang,~Y.; Huang,~Z.; Hong,~X. Benchmarking Deepart Detection. \emph{arXiv
+  preprint arXiv:2302.14475} \textbf{2023}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wang \latin{et~al.}(2020)Wang, Wang, Zhang, Owens, and
+  Efros]{wang2020cnn}
+Wang,~S.-Y.; Wang,~O.; Zhang,~R.; Owens,~A.; Efros,~A.~A. CNN-generated images
+  are surprisingly easy to spot... for now. Proceedings of the IEEE/CVF
+  conference on computer vision and pattern recognition. 2020; pp
+  8695--8704\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Verdoliva \latin{et~al.}()Verdoliva, Cozzolino, and
+  Nagano]{verdoliva2022}
+Verdoliva,~L.; Cozzolino,~D.; Nagano,~K. 2022 IEEE Image and Video Processing
+  Cup Synthetic Image Detection. \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sha \latin{et~al.}(2022)Sha, Li, Yu, and Zhang]{sha2022fake}
+Sha,~Z.; Li,~Z.; Yu,~N.; Zhang,~Y. DE-FAKE: Detection and Attribution of Fake
+  Images Generated by Text-to-Image Diffusion Models. \emph{arXiv preprint
+  arXiv:2210.06998} \textbf{2022}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bird and Lotfi(2023)Bird, and Lotfi]{bird2023cifake}
+Bird,~J.~J.; Lotfi,~A. CIFAKE: Image Classification and Explainable
+  Identification of AI-Generated Synthetic Images. \emph{arXiv preprint
+  arXiv:2303.14126} \textbf{2023}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Karras \latin{et~al.}(2017)Karras, Aila, Laine, and
+  Lehtinen]{karras2017progressive}
+Karras,~T.; Aila,~T.; Laine,~S.; Lehtinen,~J. Progressive growing of gans for
+  improved quality, stability, and variation. \emph{arXiv preprint
+  arXiv:1710.10196} \textbf{2017}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Krizhevsky \latin{et~al.}(2009)Krizhevsky, Hinton, \latin{et~al.}
+  others]{krizhevsky2009learning}
+Krizhevsky,~A.; Hinton,~G., \latin{et~al.}  Learning multiple layers of
+  features from tiny images. \textbf{2009}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Deng \latin{et~al.}(2009)Deng, Dong, Socher, Li, Li, and
+  Fei-Fei]{deng2009imagenet}
+Deng,~J.; Dong,~W.; Socher,~R.; Li,~L.-J.; Li,~K.; Fei-Fei,~L. Imagenet: A
+  large-scale hierarchical image database. 2009 IEEE conference on computer
+  vision and pattern recognition. 2009; pp 248--255\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Midjourney(2022)]{midjourney}
+Midjourney, https://www.midjourney.com/home/. 2022\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rombach \latin{et~al.}(2022)Rombach, Blattmann, Lorenz, Esser, and
+  Ommer]{Rombach_2022_CVPR}
+Rombach,~R.; Blattmann,~A.; Lorenz,~D.; Esser,~P.; Ommer,~B. High-Resolution
+  Image Synthesis With Latent Diffusion Models. Proceedings of the IEEE/CVF
+  Conference on Computer Vision and Pattern Recognition (CVPR). 2022; pp
+  10684--10695\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Brock \latin{et~al.}(2018)Brock, Donahue, and
+  Simonyan]{brock2018large}
+Brock,~A.; Donahue,~J.; Simonyan,~K. Large scale GAN training for high fidelity
+  natural image synthesis. \emph{arXiv preprint arXiv:1809.11096}
+  \textbf{2018}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Nichol \latin{et~al.}(2021)Nichol, Dhariwal, Ramesh, Shyam, Mishkin,
+  McGrew, Sutskever, and Chen]{nichol2021glide}
+Nichol,~A.; Dhariwal,~P.; Ramesh,~A.; Shyam,~P.; Mishkin,~P.; McGrew,~B.;
+  Sutskever,~I.; Chen,~M. Glide: Towards photorealistic image generation and
+  editing with text-guided diffusion models. \emph{arXiv preprint
+  arXiv:2112.10741} \textbf{2021}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Gu \latin{et~al.}(2022)Gu, Chen, Bao, Wen, Zhang, Chen, Yuan, and
+  Guo]{gu2022vector}
+Gu,~S.; Chen,~D.; Bao,~J.; Wen,~F.; Zhang,~B.; Chen,~D.; Yuan,~L.; Guo,~B.
+  Vector quantized diffusion model for text-to-image synthesis. Proceedings of
+  the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2022; pp
+  10696--10706\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Dhariwal and Nichol(2021)Dhariwal, and Nichol]{dhariwal2021diffusion}
+Dhariwal,~P.; Nichol,~A. Diffusion models beat gans on image synthesis.
+  \emph{Advances in Neural Information Processing Systems} \textbf{2021},
+  \emph{34}, 8780--8794\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wukong(2022)]{wukong}
+Wukong, https://xihe.mindspore.cn/modelzoo/wukong. 2022\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[He \latin{et~al.}(2016)He, Zhang, Ren, and Sun]{he2016deep}
+He,~K.; Zhang,~X.; Ren,~S.; Sun,~J. Deep residual learning for image
+  recognition. Proceedings of the IEEE conference on computer vision and
+  pattern recognition. 2016; pp 770--778\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Touvron \latin{et~al.}(2021)Touvron, Cord, Douze, Massa, Sablayrolles,
+  and J{\'e}gou]{touvron2021training}
+Touvron,~H.; Cord,~M.; Douze,~M.; Massa,~F.; Sablayrolles,~A.; J{\'e}gou,~H.
+  Training data-efficient image transformers \& distillation through attention.
+  International conference on machine learning. 2021; pp 10347--10357\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Liu \latin{et~al.}(2021)Liu, Lin, Cao, Hu, Wei, Zhang, Lin, and
+  Guo]{liu2021swin}
+Liu,~Z.; Lin,~Y.; Cao,~Y.; Hu,~H.; Wei,~Y.; Zhang,~Z.; Lin,~S.; Guo,~B. Swin
+  transformer: Hierarchical vision transformer using shifted windows.
+  Proceedings of the IEEE/CVF international conference on computer vision.
+  2021; pp 10012--10022\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Qian \latin{et~al.}(2020)Qian, Yin, Sheng, Chen, and
+  Shao]{qian2020thinking}
+Qian,~Y.; Yin,~G.; Sheng,~L.; Chen,~Z.; Shao,~J. Thinking in frequency: Face
+  forgery detection by mining frequency-aware clues. Computer Vision--ECCV
+  2020: 16th European Conference, Glasgow, UK, August 23--28, 2020,
+  Proceedings, Part XII. 2020; pp 86--103\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Liu \latin{et~al.}(2020)Liu, Qi, and Torr]{liu2020global}
+Liu,~Z.; Qi,~X.; Torr,~P.~H. Global texture enhancement for fake face detection
+  in the wild. Proceedings of the IEEE/CVF conference on computer vision and
+  pattern recognition. 2020; pp 8060--8069\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Zhang \latin{et~al.}(2019)Zhang, Karaman, and
+  Chang]{zhang2019detecting}
+Zhang,~X.; Karaman,~S.; Chang,~S.-F. Detecting and simulating artifacts in gan
+  fake images. 2019 IEEE international workshop on information forensics and
+  security (WIFS). 2019; pp 1--6\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Huang \latin{et~al.}(2007)Huang, Jain, and Learned-Miller]{Huang2007a}
+Huang,~G.~B.; Jain,~V.; Learned-Miller,~E. Unsupervised Joint Alignment of
+  Complex Images. ICCV. 2007\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Schuhmann \latin{et~al.}(2022)Schuhmann, Beaumont, Vencu, Gordon,
+  Wightman, Cherti, Coombes, Katta, Mullis, Wortsman, \latin{et~al.}
+  others]{schuhmann2022laion}
+Schuhmann,~C.; Beaumont,~R.; Vencu,~R.; Gordon,~C.; Wightman,~R.; Cherti,~M.;
+  Coombes,~T.; Katta,~A.; Mullis,~C.; Wortsman,~M., \latin{et~al.}  Laion-5b:
+  An open large-scale dataset for training next generation image-text models.
+  \emph{arXiv preprint arXiv:2210.08402} \textbf{2022}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wang \latin{et~al.}(2022)Wang, Montoya, Munechika, Yang, Hoover, and
+  Chau]{wangDiffusionDBLargescalePrompt2022}
+Wang,~Z.~J.; Montoya,~E.; Munechika,~D.; Yang,~H.; Hoover,~B.; Chau,~D.~H.
+  {{DiffusionDB}}: {{A}} Large-Scale Prompt Gallery Dataset for Text-to-Image
+  Generative Models. \emph{arXiv:2210.14896 [cs]} \textbf{2022}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

@@ -1,0 +1,18 @@
+Data containing human or social attributes may over- or under-represent
+groups with respect to salient social attributes such as gender or race, which
+can lead to biases in downstream applications. This paper presents an
+algorithmic framework that can be used as a data preprocessing method towards
+mitigating such bias. Unlike prior work, it can efficiently learn distributions
+over large domains, controllably adjust the representation rates of protected
+groups and achieve target fairness metrics such as statistical parity, yet
+remains close to the empirical distribution induced by the given dataset. Our
+approach leverages the principle of maximum entropy - amongst all distributions
+satisfying a given set of constraints, we should choose the one closest in
+KL-divergence to a given prior. While maximum entropy distributions can
+succinctly encode distributions over large domains, they can be difficult to
+compute. Our main contribution is an instantiation of this framework for our
+set of constraints and priors, which encode our bias mitigation goals, and that
+runs in time polynomial in the dimension of the data. Empirically, we observe
+that samples from the learned distribution have desired representation rates
+and statistical rates, and when used for training a classifier incurs only a
+slight loss in accuracy while maintaining fairness properties.

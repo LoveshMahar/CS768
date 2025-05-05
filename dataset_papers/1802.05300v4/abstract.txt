@@ -1,0 +1,13 @@
+The growing importance of massive datasets used for deep learning makes
+robustness to label noise a critical property for classifiers to have. Sources
+of label noise include automatic labeling, non-expert labeling, and label
+corruption by data poisoning adversaries. Numerous previous works assume that
+no source of labels can be trusted. We relax this assumption and assume that a
+small subset of the training data is trusted. This enables substantial label
+corruption robustness performance gains. In addition, particularly severe label
+noise can be combated by using a set of trusted data with clean labels. We
+utilize trusted data by proposing a loss correction technique that utilizes
+trusted examples in a data-efficient manner to mitigate the effects of label
+noise on deep neural network classifiers. Across vision and natural language
+processing tasks, we experiment with various label noises at several strengths,
+and show that our method significantly outperforms existing methods.

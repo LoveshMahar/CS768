@@ -1,0 +1,18 @@
+Several works have aimed to explain why overparameterized neural networks
+generalize well when trained by Stochastic Gradient Descent (SGD). The
+consensus explanation that has emerged credits the randomized nature of SGD for
+the bias of the training process towards low-complexity models and, thus, for
+implicit regularization. We take a careful look at this explanation in the
+context of image classification with common deep neural network architectures.
+We find that if we do not regularize \emph{explicitly}, then SGD can be easily
+made to converge to poorly-generalizing, high-complexity models: all it takes
+is to first train on a random labeling on the data, before switching to
+properly training with the correct labels. In contrast, we find that in the
+presence of explicit regularization, pretraining with random labels has no
+detrimental effect on SGD. We believe that our results give evidence that
+explicit regularization plays a far more important role in the success of
+overparameterized neural networks than what has been understood until now.
+Specifically, by penalizing complicated models independently of their fit to
+the data, regularization affects training dynamics also far away from optima,
+making simple models that fit the data well discoverable by local methods, such
+as SGD.

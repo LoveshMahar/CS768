@@ -1,0 +1,14 @@
+Human reasoning involves recognising common underlying principles across many
+examples. The by-products of such reasoning are invariants that capture
+patterns such as "if someone went somewhere then they are there", expressed
+using variables "someone" and "somewhere" instead of mentioning specific people
+or places. Humans learn what variables are and how to use them at a young age.
+This paper explores whether machines can also learn and use variables solely
+from examples without requiring human pre-engineering. We propose Unification
+Networks, an end-to-end differentiable neural network approach capable of
+lifting examples into invariants and using those invariants to solve a given
+task. The core characteristic of our architecture is soft unification between
+examples that enables the network to generalise parts of the input into
+variables, thereby learning invariants. We evaluate our approach on five
+datasets to demonstrate that learning invariants captures patterns in the data
+and can improve performance over baselines.

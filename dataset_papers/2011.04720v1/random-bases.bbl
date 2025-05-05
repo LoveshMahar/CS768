@@ -1,0 +1,1374 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{AbadiTensorflowsystemlargescale2016}{inproceedings}{}
+      \name{author}{10}{}{%
+        {{hash=9a04ae935da573a7aa9c83afdf2fd845}{%
+           family={Abadi},
+           familyi={A\bibinitperiod},
+           given={Martín},
+           giveni={M\bibinitperiod}}}%
+        {{hash=08cf514c08137f94d73b590060797f5b}{%
+           family={Barham},
+           familyi={B\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f756003cc97f5981d94995af3bd6862b}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jianmin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c0d10aaf985cebf8d0497e1828f9313f}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zhifeng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=a4c859221cc41e2db6d63b486f955ba2}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4aecfb0cc2e1e3b7899129fa2a94e2b8}{%
+           family={Dean},
+           familyi={D\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bd7f88635b51bc5abb3d5a2cab967724}{%
+           family={Devin},
+           familyi={D\bibinitperiod},
+           given={Matthieu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=193bcec5240237591ad8fb697869f013}{%
+           family={Ghemawat},
+           familyi={G\bibinitperiod},
+           given={Sanjay},
+           giveni={S\bibinitperiod}}}%
+        {{hash=edc6964c6549e1839ca94d3d61e03f76}{%
+           family={Irving},
+           familyi={I\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod}}}%
+        {{hash=3b62e7eedeec9f7a7f7f3c3ec88637f1}{%
+           family={Isard},
+           familyi={I\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{81c000a0a65f285988c565c98b3492c3}
+      \strng{fullhash}{81c000a0a65f285988c565c98b3492c3}
+      \strng{authornamehash}{81c000a0a65f285988c565c98b3492c3}
+      \strng{authorfullhash}{81c000a0a65f285988c565c98b3492c3}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Proceedings of 12th {{Symposium}} on {{Operating Systems Design}} and {{Implementation}} ({{OSDI}} 16)}
+      \field{shorttitle}{Tensorflow}
+      \field{title}{Tensorflow: {{A}} System for Large-Scale Machine Learning}
+      \field{year}{2016}
+      \field{pages}{265\bibrangedash 283}
+      \range{pages}{19}
+    \endentry
+    \entry{AlistarhQSGDCommunicationEfficientSGD2016}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f03360e92167899bed76b84077d1b13f}{%
+           family={Alistarh},
+           familyi={A\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=eb7cee5f7c50f77800520a07b887485b}{%
+           family={Grubic},
+           familyi={G\bibinitperiod},
+           given={Demjan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3b3012e4ca17639feb14b7bd7910c117}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a913d7d5cce289c85c9bfab142ba0636}{%
+           family={Tomioka},
+           familyi={T\bibinitperiod},
+           given={Ryota},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a0ad6e077859bcfa4492e19988c3ba0d}{%
+           family={Vojnovic},
+           familyi={V\bibinitperiod},
+           given={Milan},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c9b69aae0760311119fa9c6d7f442e72}
+      \strng{fullhash}{c9b69aae0760311119fa9c6d7f442e72}
+      \strng{authornamehash}{c9b69aae0760311119fa9c6d7f442e72}
+      \strng{authorfullhash}{c9b69aae0760311119fa9c6d7f442e72}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Parallel implementations of stochastic gradient descent (SGD) have received significant research attention, thanks to excellent scalability properties of this algorithm, and to its efficiency in the context of training deep neural networks. A fundamental barrier for parallelizing large-scale SGD is the fact that the cost of communicating the gradient updates between nodes can be very large. Consequently, lossy compression heuristics have been proposed, by which nodes only communicate quantized gradients. Although effective in practice, these heuristics do not always provably converge, and it is not clear whether they are optimal. In this paper, we propose Quantized SGD (QSGD), a family of compression schemes which allow the compression of gradient updates at each node, while guaranteeing convergence under standard assumptions. QSGD allows the user to trade off compression and convergence time: it can communicate a sublinear number of bits per iteration in the model dimension, and can achieve asymptotically optimal communication cost. We complement our theoretical results with empirical data, showing that QSGD can significantly reduce communication cost, while being competitive with standard uncompressed techniques on a variety of real tasks. In particular, experiments show that gradient quantization applied to training of deep neural networks for image classification and automated speech recognition can lead to significant reductions in communication cost, and end-to-end training time. For instance, on 16 GPUs, we are able to train a ResNet-152 network on ImageNet 1.8x faster to full accuracy. Of note, we show that there exist generic parameter settings under which all known network architectures preserve or slightly improve their full accuracy when using quantization.}
+      \field{journaltitle}{arXiv preprint arXiv:1610.02132 [cs.LG]}
+      \field{shorttitle}{{{QSGD}}}
+      \field{title}{{{QSGD}}: {{Communication}}-{{Efficient SGD}} via {{Gradient Quantization}} and {{Encoding}}}
+      \field{year}{2016}
+    \endentry
+    \entry{BarberEvolutionaryOptimizationVariational2017}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9a97f74e5fb11fe785cbe0a83fc5276c}{%
+           family={Barber},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{9a97f74e5fb11fe785cbe0a83fc5276c}
+      \strng{fullhash}{9a97f74e5fb11fe785cbe0a83fc5276c}
+      \strng{authornamehash}{9a97f74e5fb11fe785cbe0a83fc5276c}
+      \strng{authorfullhash}{9a97f74e5fb11fe785cbe0a83fc5276c}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{David Barber}
+      \field{langid}{american}
+      \field{title}{Evolutionary {{Optimization}} as a {{Variational Method}}}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb https://davidbarber.github.io/blog/2017/04/03/variational-optimisation/
+      \endverb
+    \endentry
+    \entry{Berahastheoreticalempiricalcomparison2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5ee889056e3cd9eb984e222f6b26fa8a}{%
+           family={Berahas},
+           familyi={B\bibinitperiod},
+           given={Albert\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=149ce3f60571d76f98536e6ca4ed6a7c}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Liyuan},
+           giveni={L\bibinitperiod}}}%
+        {{hash=3790fd4d63272e6ab60c1356f8e70d94}{%
+           family={Choromanski},
+           familyi={C\bibinitperiod},
+           given={Krzysztof},
+           giveni={K\bibinitperiod}}}%
+        {{hash=227fd756890273896e67d801c215790f}{%
+           family={Scheinberg},
+           familyi={S\bibinitperiod},
+           given={Katya},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{42e314a7da204f715626232271be66e9}
+      \strng{fullhash}{42e314a7da204f715626232271be66e9}
+      \strng{authornamehash}{42e314a7da204f715626232271be66e9}
+      \strng{authorfullhash}{42e314a7da204f715626232271be66e9}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1905.01332 [math.OC]}
+      \field{title}{A Theoretical and Empirical Comparison of Gradient Approximations in Derivative-Free Optimization}
+      \field{year}{2019}
+    \endentry
+    \entry{BernsteinsignSGDCompressedoptimisation2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ace0098662f7a6b41db48aa2d2bf2584}{%
+           family={Bernstein},
+           familyi={B\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ee8c94532b654eef549c5252a0eab051}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yu-Xiang},
+           giveni={Y\bibinithyphendelim X\bibinitperiod}}}%
+        {{hash=3648b51d63e1ae389e46f87296d4c89a}{%
+           family={Azizzadenesheli},
+           familyi={A\bibinitperiod},
+           given={Kamyar},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bd4a2be6ede169a3c794a1cd7e3fb9a2}{%
+           family={Anandkumar},
+           familyi={A\bibinitperiod},
+           given={Anima},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b03721fd026d21e0001ff7dff8dade2}
+      \strng{fullhash}{4b03721fd026d21e0001ff7dff8dade2}
+      \strng{authornamehash}{4b03721fd026d21e0001ff7dff8dade2}
+      \strng{authorfullhash}{4b03721fd026d21e0001ff7dff8dade2}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{arXiv preprint arXiv:1802.04434 [cs.LG]}
+      \field{shorttitle}{{{signSGD}}}
+      \field{title}{{{signSGD}}: {{Compressed}} Optimisation for Non-Convex Problems}
+      \field{year}{2018}
+    \endentry
+    \entry{brown2020language}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=fc935f867706b0b1df2dcb7717f7c832}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Tom\bibnamedelima B},
+           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=d4543c3bcd6aaf414da4296b349603e5}{%
+           family={Mann},
+           familyi={M\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9ac58bd43db2434e8e1ffd6182c3fcda}{%
+           family={Ryder},
+           familyi={R\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9ed243177743da3e650f1cff6376bb3c}{%
+           family={Subbiah},
+           familyi={S\bibinitperiod},
+           given={Melanie},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9e85370e215d552f72c95a2b63a37802}{%
+           family={Kaplan},
+           familyi={K\bibinitperiod},
+           given={Jared},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4164e43d8cf919f5e3f8d80f5ea23f36}{%
+           family={Dhariwal},
+           familyi={D\bibinitperiod},
+           given={Prafulla},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4ca421ceeb5b516dd8fc64bea5a23f2a}{%
+           family={Neelakantan},
+           familyi={N\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ab5d7d7b9cfeaad635c4a60e8950d7dd}{%
+           family={Shyam},
+           familyi={S\bibinitperiod},
+           given={Pranav},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3c1d9a663596faaf544c1a65aac581be}{%
+           family={Sastry},
+           familyi={S\bibinitperiod},
+           given={Girish},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1e84eff933be9f4887bf369cf181bf12}{%
+           family={Askell},
+           familyi={A\bibinitperiod},
+           given={Amanda},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{df37b1c0a982e23f05130f3af5cc9c8b}
+      \strng{fullhash}{f05c8bcee0a936c4739e5c1223a687cd}
+      \strng{authornamehash}{df37b1c0a982e23f05130f3af5cc9c8b}
+      \strng{authorfullhash}{f05c8bcee0a936c4739e5c1223a687cd}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2005.14165 [cs.CL]}
+      \field{title}{Language Models are Few-Shot Learners}
+      \field{year}{2020}
+    \endentry
+    \entry{ChoromanskiStructuredEvolutionCompact2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=3790fd4d63272e6ab60c1356f8e70d94}{%
+           family={Choromanski},
+           familyi={C\bibinitperiod},
+           given={Krzysztof},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bbebaeb4d3852537e477b7749599505f}{%
+           family={Rowland},
+           familyi={R\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4f9c34b413772edc3b1cd5671b79dca7}{%
+           family={Sindhwani},
+           familyi={S\bibinitperiod},
+           given={Vikas},
+           giveni={V\bibinitperiod}}}%
+        {{hash=47eba2bcb70c17f9d7acedef680d0c1b}{%
+           family={Turner},
+           familyi={T\bibinitperiod},
+           given={Richard\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=89be134d6b955c508c4267860047bdd9}{%
+           family={Weller},
+           familyi={W\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6204ab94d39111aa7348bb43b317da9d}
+      \strng{fullhash}{6204ab94d39111aa7348bb43b317da9d}
+      \strng{authornamehash}{6204ab94d39111aa7348bb43b317da9d}
+      \strng{authorfullhash}{6204ab94d39111aa7348bb43b317da9d}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a new method of blackbox optimization via gradient approximation with the use of structured random orthogonal matrices, providing more accurate estimators than baselines and with provable theoretical guarantees. We show that this algorithm can be successfully applied to learn better quality compact policies than those using standard gradient estimation techniques. The compact policies we learn have several advantages over unstructured ones, including faster training algorithms and faster inference. These benefits are important when the policy is deployed on real hardware with limited resources. Further, compact policies provide more scalable architectures for derivative-free optimization (DFO) in high-dimensional spaces. We show that most robotics tasks from the OpenAI Gym can be solved using neural networks with less than 300 parameters, with almost linear time complexity of the inference phase, with up to 13x fewer parameters relative to the Evolution Strategies (ES) algorithm introduced by Salimans et al. (2017). We do not need heuristics such as fitness shaping to learn good quality policies, resulting in a simple and theoretically motivated training mechanism.}
+      \field{journaltitle}{arXiv preprint arXiv:1804.02395 [cs.LG]}
+      \field{title}{Structured {{Evolution}} with {{Compact Architectures}} for {{Scalable Policy Optimization}}}
+      \field{year}{2018}
+    \endentry
+    \entry{Dasguptaelementaryprooftheorem2003}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d98b5fd15360757d9d9f94eec243d6cb}{%
+           family={Dasgupta},
+           familyi={D\bibinitperiod},
+           given={Sanjoy},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5986a2ed6c50067dd6fc98838b12178a}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Anupam},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{585c20a0719ffd98eb62ac3145d9f9b7}
+      \strng{fullhash}{585c20a0719ffd98eb62ac3145d9f9b7}
+      \strng{authornamehash}{585c20a0719ffd98eb62ac3145d9f9b7}
+      \strng{authorfullhash}{585c20a0719ffd98eb62ac3145d9f9b7}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Random Structures \& Algorithms}
+      \field{number}{1}
+      \field{title}{An Elementary Proof of a Theorem of {{Johnson}} and {{Lindenstrauss}}}
+      \field{volume}{22}
+      \field{year}{2003}
+      \field{pages}{60\bibrangedash 65}
+      \range{pages}{6}
+    \endentry
+    \entry{DenilPredictingParametersDeep2013}{incollection}{}
+      \name{author}{5}{}{%
+        {{hash=8a2a310cc5bd33d36b7e82bf952e3597}{%
+           family={Denil},
+           familyi={D\bibinitperiod},
+           given={Misha},
+           giveni={M\bibinitperiod}}}%
+        {{hash=79ec7cefc2c31bc4fcf5a0c52aec6694}{%
+           family={Shakibi},
+           familyi={S\bibinitperiod},
+           given={Babak},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0976c27ff012c9556f4206afd4b48c1f}{%
+           family={Dinh},
+           familyi={D\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6d93a2b5e4e1f368f5ffe4344bfec8ef}{%
+           family={Ranzato},
+           familyi={R\bibinitperiod},
+           given={{Marc'Aurelio}},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1994ac0b27318c1756b682694fc6fc0d}{%
+           family={{de Freitas}},
+           familyi={d\bibinitperiod},
+           given={Nando},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6e57bacc984a3f5eb17fe8f14d6a3b2}
+      \strng{fullhash}{d6e57bacc984a3f5eb17fe8f14d6a3b2}
+      \strng{authornamehash}{d6e57bacc984a3f5eb17fe8f14d6a3b2}
+      \strng{authorfullhash}{d6e57bacc984a3f5eb17fe8f14d6a3b2}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in {{Neural Information Processing Systems}} 26 (NIPS 2013)}
+      \field{title}{Predicting {{Parameters}} in {{Deep Learning}}}
+      \field{year}{2013}
+      \field{pages}{2148\bibrangedash 2156}
+      \range{pages}{9}
+    \endentry
+    \entry{FortEmergentpropertieslocal2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=020854510082aaea4cd6023ea62c9387}{%
+           family={Fort},
+           familyi={F\bibinitperiod},
+           given={Stanislav},
+           giveni={S\bibinitperiod}}}%
+        {{hash=05b3e391388084df874ede60f2210c12}{%
+           family={Ganguli},
+           familyi={G\bibinitperiod},
+           given={Surya},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1fc5e34ea00e844fa78c7e4d3039b5f}
+      \strng{fullhash}{b1fc5e34ea00e844fa78c7e4d3039b5f}
+      \strng{authornamehash}{b1fc5e34ea00e844fa78c7e4d3039b5f}
+      \strng{authorfullhash}{b1fc5e34ea00e844fa78c7e4d3039b5f}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The local geometry of high dimensional neural network loss landscapes can both challenge our cherished theoretical intuitions as well as dramatically impact the practical success of neural network training. Indeed recent works have observed 4 striking local properties of neural loss landscapes on classification tasks: (1) the landscape exhibits exactly \$C\$ directions of high positive curvature, where \$C\$ is the number of classes; (2) gradient directions are largely confined to this extremely low dimensional subspace of positive Hessian curvature, leaving the vast majority of directions in weight space unexplored; (3) gradient descent transiently explores intermediate regions of higher positive curvature before eventually finding flatter minima; (4) training can be successful even when confined to low dimensional \{\textbackslash{}it random\} affine hyperplanes, as long as these hyperplanes intersect a Goldilocks zone of higher than average curvature. We develop a simple theoretical model of gradients and Hessians, justified by numerical experiments on architectures and datasets used in practice, that \{\textbackslash{}it simultaneously\} accounts for all \$4\$ of these surprising and seemingly unrelated properties. Our unified model provides conceptual insights into the emergence of these properties and makes connections with diverse topics in neural networks, random matrix theory, and spin glasses, including the neural tangent kernel, BBP phase transitions, and Derrida's random energy model.}
+      \field{journaltitle}{arXiv preprint arXiv:1910.05929 [cs.LG]}
+      \field{title}{Emergent Properties of the Local Geometry of Neural Loss Landscapes}
+      \field{year}{2019}
+    \endentry
+    \entry{Fortgoldilockszonebetter2019}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=020854510082aaea4cd6023ea62c9387}{%
+           family={Fort},
+           familyi={F\bibinitperiod},
+           given={Stanislav},
+           giveni={S\bibinitperiod}}}%
+        {{hash=95fef9b6b05f621daf4e5661bcf8b12e}{%
+           family={Scherlis},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ce9dc1d34a1758b8b2393bbdc1a2d26e}
+      \strng{fullhash}{ce9dc1d34a1758b8b2393bbdc1a2d26e}
+      \strng{authornamehash}{ce9dc1d34a1758b8b2393bbdc1a2d26e}
+      \strng{authorfullhash}{ce9dc1d34a1758b8b2393bbdc1a2d26e}
+      \field{sortinit}{F}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Proceedings of 33rd {{AAAI Conference}} on {{Artificial Intelligence}}}
+      \field{shorttitle}{The Goldilocks Zone}
+      \field{title}{The Goldilocks Zone: {{Towards}} Better Understanding of Neural Network Loss Landscapes}
+      \field{year}{2019}
+      \field{pages}{3574\bibrangedash 3581}
+      \range{pages}{8}
+    \endentry
+    \entry{garcia2019estimation}{article}{}
+      \name{author}{4}{}{%
+        {{hash=8437ab6ded214ef4127c0d497a03c3d5}{%
+           family={García-Martína},
+           familyi={G\bibinithyphendelim M\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod}}}%
+        {{hash=5cbdd0f794a35ae11f95799c655b03bf}{%
+           family={Rodrigues},
+           familyi={R\bibinitperiod},
+           given={Crefeda\bibnamedelima Faviola},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=6e27e521c84aeaa01b595defa256d2b7}{%
+           family={Riley},
+           familyi={R\bibinitperiod},
+           given={Graham},
+           giveni={G\bibinitperiod}}}%
+        {{hash=75ab799e8ec3604b8fd56ddcaf186ee3}{%
+           family={Grahn},
+           familyi={G\bibinitperiod},
+           given={Håkan},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{fb689b895a97dfc0731a9b55bc3ce35f}
+      \strng{fullhash}{fb689b895a97dfc0731a9b55bc3ce35f}
+      \strng{authornamehash}{fb689b895a97dfc0731a9b55bc3ce35f}
+      \strng{authorfullhash}{fb689b895a97dfc0731a9b55bc3ce35f}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Parallel and Distributed Computing}
+      \field{title}{Estimation of energy consumption in machine learning}
+      \field{volume}{134}
+      \field{year}{2019}
+      \field{pages}{75\bibrangedash 88}
+      \range{pages}{14}
+    \endentry
+    \entry{GorbanApproximationrandombases2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=85b26cacc497b0549c6c057a4f812e78}{%
+           family={Gorban},
+           familyi={G\bibinitperiod},
+           given={Alexander\bibnamedelima N.},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=44e6499f19cd474c6b3407440fee7403}{%
+           family={Tyukin},
+           familyi={T\bibinitperiod},
+           given={Ivan\bibnamedelima Yu},
+           giveni={I\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=1fa0dfe23bbdf5656310d745e086ea54}{%
+           family={Prokhorov},
+           familyi={P\bibinitperiod},
+           given={Danil\bibnamedelima V.},
+           giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=74e57df592f8e98be4bc8c3598e7197a}{%
+           family={Sofeikov},
+           familyi={S\bibinitperiod},
+           given={Konstantin\bibnamedelima I.},
+           giveni={K\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{36eb95b20cd0dcb8bfc1e7f136bc06c2}
+      \strng{fullhash}{36eb95b20cd0dcb8bfc1e7f136bc06c2}
+      \strng{authornamehash}{36eb95b20cd0dcb8bfc1e7f136bc06c2}
+      \strng{authorfullhash}{36eb95b20cd0dcb8bfc1e7f136bc06c2}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Information Sciences}
+      \field{shorttitle}{Approximation with Random Bases}
+      \field{title}{Approximation with Random Bases: {{Pro}} et Contra}
+      \field{volume}{364}
+      \field{year}{2016}
+      \field{pages}{129\bibrangedash 145}
+      \range{pages}{17}
+    \endentry
+    \entry{Gur-AriGradientDescentHappens2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4150a424a61199cfaf36bb11ca192b7b}{%
+           family={{Gur-Ari}},
+           familyi={G\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=f4df3d6f43b249b00a0d416dd6c17976}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={Daniel\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=301dda56039ff100f54f7daf1143a73a}{%
+           family={Dyer},
+           familyi={D\bibinitperiod},
+           given={Ethan},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{19e2f1500566def5fdac763b2293197b}
+      \strng{fullhash}{19e2f1500566def5fdac763b2293197b}
+      \strng{authornamehash}{19e2f1500566def5fdac763b2293197b}
+      \strng{authorfullhash}{19e2f1500566def5fdac763b2293197b}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We show that in a variety of large-scale deep learning scenarios the gradient dynamically converges to a very small subspace after a short period of training. The subspace is spanned by a few top eigenvectors of the Hessian (equal to the number of classes in the dataset), and is mostly preserved over long periods of training. A simple argument then suggests that gradient descent may happen mostly in this subspace. We give an example of this effect in a solvable model of classification, and we comment on possible implications for optimization and learning.}
+      \field{journaltitle}{arXiv preprint arXiv:1812.04754 [cs.LG]}
+      \field{title}{Gradient {{Descent Happens}} in a {{Tiny Subspace}}}
+      \field{year}{2018}
+    \endentry
+    \entry{HanDeepcompressionCompressing2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=873e4e07ff73d563d2651d20ffaf99e0}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Song},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1341c7c7f8d6acc2c0c244d6526ff658}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Huizi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=0ea138b81cd15c0a1081231fedfaf445}{%
+           family={Dally},
+           familyi={D\bibinitperiod},
+           given={William\bibnamedelima J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2928a4071224572314d9c0e28732e0b0}
+      \strng{fullhash}{2928a4071224572314d9c0e28732e0b0}
+      \strng{authornamehash}{2928a4071224572314d9c0e28732e0b0}
+      \strng{authorfullhash}{2928a4071224572314d9c0e28732e0b0}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{arXiv preprint arXiv:1510.00149 [cs.CV]}
+      \field{shorttitle}{Deep Compression}
+      \field{title}{Deep Compression: {{Compressing}} Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding}
+      \field{year}{2015}
+    \endentry
+    \entry{HansenCMAEvolutionStrategy2016}{article}{}
+      \name{author}{1}{}{%
+        {{hash=71bc70e7c119a2151bf105823920cf83}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Nikolaus},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{71bc70e7c119a2151bf105823920cf83}
+      \strng{fullhash}{71bc70e7c119a2151bf105823920cf83}
+      \strng{authornamehash}{71bc70e7c119a2151bf105823920cf83}
+      \strng{authorfullhash}{71bc70e7c119a2151bf105823920cf83}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This tutorial introduces the CMA Evolution Strategy (ES), where CMA stands for Covariance Matrix Adaptation. The CMA-ES is a stochastic, or randomized, method for real-parameter (continuous domain) optimization of non-linear, non-convex functions. We try to motivate and derive the algorithm from intuitive concepts and from requirements of non-linear, non-convex search in continuous domain.}
+      \field{journaltitle}{arXiv preprint arXiv:1604.00772 [cs.LG]}
+      \field{shorttitle}{The {{CMA Evolution Strategy}}}
+      \field{title}{The {{CMA Evolution Strategy}}: {{A Tutorial}}}
+      \field{year}{2016}
+    \endentry
+    \entry{HassibiSecondorderderivatives1993}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=9a3ee20fcdff97d76ca8c93e3ea76655}{%
+           family={Hassibi},
+           familyi={H\bibinitperiod},
+           given={Babak},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1ce43e8ecd81979c4848e2b5666f122f}{%
+           family={Stork},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb265e1c6730f0fe461d5686d7028228}
+      \strng{fullhash}{eb265e1c6730f0fe461d5686d7028228}
+      \strng{authornamehash}{eb265e1c6730f0fe461d5686d7028228}
+      \strng{authorfullhash}{eb265e1c6730f0fe461d5686d7028228}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Advances in Neural Information Processing Systems 5 (NIPS 1992)}
+      \field{shorttitle}{Second Order Derivatives for Network Pruning}
+      \field{title}{Second Order Derivatives for Network Pruning: {{Optimal}} Brain Surgeon}
+      \field{year}{1992}
+      \field{pages}{164\bibrangedash 171}
+      \range{pages}{8}
+    \endentry
+    \entry{HeAsymmetricValleysSharp2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6806efee9c247fa251ec75b6439ab1a4}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Haowei},
+           giveni={H\bibinitperiod}}}%
+        {{hash=0d12f90a1d1945cb1b98f583c9dc9572}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Gao},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7f4bdfc46ec1f536d2518b86929790dc}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{08003018c42d753ede63cf478a384548}
+      \strng{fullhash}{08003018c42d753ede63cf478a384548}
+      \strng{authornamehash}{08003018c42d753ede63cf478a384548}
+      \strng{authorfullhash}{08003018c42d753ede63cf478a384548}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Despite the non-convex nature of their loss functions, deep neural networks are known to generalize well when optimized with stochastic gradient descent (SGD). Recent work conjectures that SGD with proper configuration is able to find wide and flat local minima, which have been proposed to be associated with good generalization performance. In this paper, we observe that local minima of modern deep networks are more than being flat or sharp. Specifically, at a local minimum there exist many asymmetric directions such that the loss increases abruptly along one side, and slowly along the opposite side--we formally define such minima as asymmetric valleys. Under mild assumptions, we prove that for asymmetric valleys, a solution biased towards the flat side generalizes better than the exact minimizer. Further, we show that simply averaging the weights along the SGD trajectory gives rise to such biased solutions implicitly. This provides a theoretical explanation for the intriguing phenomenon observed by Izmailov et al. (2018). In addition, we empirically find that batch normalization (BN) appears to be a major cause for asymmetric valleys.}
+      \field{journaltitle}{arXiv preprint arXiv:1902.00744 [cs.LG]}
+      \field{shorttitle}{Asymmetric {{Valleys}}}
+      \field{title}{Asymmetric {{Valleys}}: {{Beyond Sharp}} and {{Flat Local Minima}}}
+      \field{year}{2019}
+    \endentry
+    \entry{HeDeepresiduallearning2016}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5e72bc22dbcf0984c6d113d280e36990}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiangyu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=bb295293acacd54387339079ebbe4ead}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Shaoqing},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f85751488058842b5777c7b4074077b5}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{fullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authornamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of {{IEEE}} Conference on Computer Vision and Pattern Recognition}
+      \field{title}{Deep Residual Learning for Image Recognition}
+      \field{year}{2016}
+      \field{pages}{770\bibrangedash 778}
+      \range{pages}{9}
+    \endentry
+    \entry{IgelnikStochasticchoicebasis1995}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c0f741b81920b2d3963f0527957f698a}{%
+           family={Igelnik},
+           familyi={I\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e8e2834df20115f3b8738ed5b3e697bd}{%
+           family={Pao},
+           familyi={P\bibinitperiod},
+           given={Yoh-Han},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{adfb493809d88cf41d2e9d24a3ad1ea5}
+      \strng{fullhash}{adfb493809d88cf41d2e9d24a3ad1ea5}
+      \strng{authornamehash}{adfb493809d88cf41d2e9d24a3ad1ea5}
+      \strng{authorfullhash}{adfb493809d88cf41d2e9d24a3ad1ea5}
+      \field{sortinit}{I}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Neural Networks}
+      \field{number}{6}
+      \field{title}{Stochastic Choice of Basis Functions in Adaptive Function Approximation and the Functional-Link Net}
+      \field{volume}{6}
+      \field{year}{1995}
+      \field{pages}{1320\bibrangedash 1329}
+      \range{pages}{10}
+    \endentry
+    \entry{JaderbergSpeedingconvolutionalneural2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7dc1446dea7ff50b2b02fb83780cc9c6}{%
+           family={Jaderberg},
+           familyi={J\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+        {{hash=85ab53268da1006b51b453d57d3566f2}{%
+           family={Vedaldi},
+           familyi={V\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c72fc39e94030f67717052309266a44d}{%
+           family={Zisserman},
+           familyi={Z\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2ebcce81900df83b3f29e4afeb6f9fa}
+      \strng{fullhash}{f2ebcce81900df83b3f29e4afeb6f9fa}
+      \strng{authornamehash}{f2ebcce81900df83b3f29e4afeb6f9fa}
+      \strng{authorfullhash}{f2ebcce81900df83b3f29e4afeb6f9fa}
+      \field{sortinit}{J}
+      \field{sortinithash}{c86bd6cced82a15683b396c2169909ef}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1405.3866 [cs.CV]}
+      \field{title}{Speeding up Convolutional Neural Networks with Low Rank Expansions}
+      \field{year}{2014}
+    \endentry
+    \entry{JiaDissectingGraphcoreIPU2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9dd54699b2c2473b656e16cb77363635}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Zhe},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=71964047c52bfd9a1c291f776d2841c1}{%
+           family={Tillman},
+           familyi={T\bibinitperiod},
+           given={Blake},
+           giveni={B\bibinitperiod}}}%
+        {{hash=58a5f8d773a19f091221ced01fdcd125}{%
+           family={Maggioni},
+           familyi={M\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=529cbc49e245fc7d29d66d5273a6cf9f}{%
+           family={Scarpazza},
+           familyi={S\bibinitperiod},
+           given={Daniele\bibnamedelima Paolo},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad63faf6f2878a3e598f396b0225abbd}
+      \strng{fullhash}{ad63faf6f2878a3e598f396b0225abbd}
+      \strng{authornamehash}{ad63faf6f2878a3e598f396b0225abbd}
+      \strng{authorfullhash}{ad63faf6f2878a3e598f396b0225abbd}
+      \field{sortinit}{J}
+      \field{sortinithash}{c86bd6cced82a15683b396c2169909ef}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This report focuses on the architecture and performance of the Intelligence Processing Unit (IPU), a novel, massively parallel platform recently introduced by Graphcore and aimed at Artificial Intelligence/Machine Learning (AI/ML) workloads. We dissect the IPU's performance behavior using microbenchmarks that we crafted for the purpose. We study the IPU's memory organization and performance. We study the latency and bandwidth that the on-chip and off-chip interconnects offer, both in point-to-point transfers and in a spectrum of collective operations, under diverse loads. We evaluate the IPU's compute power over matrix multiplication, convolution, and AI/ML primitives. We discuss actual performance in comparison with its theoretical limits. Our findings reveal how the IPU's architectural design affects its performance. Moreover, they offer simple mental models to predict an application's performance on the IPU, on the basis of the computation and communication steps it involves. This report is the natural extension to a novel architecture of a continuing effort of ours that focuses on the microbenchmark-based discovery of massively parallel architectures.}
+      \field{journaltitle}{arXiv preprint arXiv:1912.03413 [cs.DC]}
+      \field{title}{Dissecting the {{Graphcore IPU Architecture}} via {{Microbenchmarking}}}
+      \field{year}{2019}
+    \endentry
+    \entry{Kozakstochasticsubspaceapproach2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=085c5b32a01b10eef47eeca2e94979fe}{%
+           family={Kozak},
+           familyi={K\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=826bbcdd9468549354a788874ccdb653}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cd200d7733a5d1cc13b11e6a2d51e5f0}{%
+           family={Doostan},
+           familyi={D\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod}}}%
+        {{hash=df9d27b7a115e800ebe67f3bd954e145}{%
+           family={Tenorio},
+           familyi={T\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{da4bd79bccb5331cc0d25e82023ab0f5}
+      \strng{fullhash}{da4bd79bccb5331cc0d25e82023ab0f5}
+      \strng{authornamehash}{da4bd79bccb5331cc0d25e82023ab0f5}
+      \strng{authorfullhash}{da4bd79bccb5331cc0d25e82023ab0f5}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2003.02684 [math.OC]}
+      \field{title}{A Stochastic Subspace Approach to Gradient-Free Optimization in High Dimensions}
+      \field{year}{2020}
+    \endentry
+    \entry{LeFastfoodapproximatingkernelexpansions2013}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=841a83a4bb5e622d6e1bde4818879016}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Quoc},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=027965377ff1b07ef7042c6f9eed7448}{%
+           family={Sarlós},
+           familyi={S\bibinitperiod},
+           given={Tamás},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a4d2eb3aadfce48c1b00303f0988e905}{%
+           family={Smola},
+           familyi={S\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{1e1725314ce5211810d6b3623d1955aa}
+      \strng{fullhash}{1e1725314ce5211810d6b3623d1955aa}
+      \strng{authornamehash}{1e1725314ce5211810d6b3623d1955aa}
+      \strng{authorfullhash}{1e1725314ce5211810d6b3623d1955aa}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of 30th International Conference on Machine Learning (ICML 2013)}
+      \field{title}{Fastfood-Approximating Kernel Expansions in Loglinear Time}
+      \field{volume}{85}
+      \field{year}{2013}
+    \endentry
+    \entry{LencNonDifferentiableSupervisedLearning2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=37d21c72ca2bcb0f9f7aa10c5158a02b}{%
+           family={Lenc},
+           familyi={L\bibinitperiod},
+           given={Karel},
+           giveni={K\bibinitperiod}}}%
+        {{hash=6aa92a937d4d30dd0b5ec0eecbad1bf1}{%
+           family={Elsen},
+           familyi={E\bibinitperiod},
+           given={Erich},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a56e72b23778a835bdade7d0511e43a3}{%
+           family={Schaul},
+           familyi={S\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9d16b7284df92c9adaee86c37ab992df}{%
+           family={Simonyan},
+           familyi={S\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{7bea68cb60341c3e74dc0365c593cbfd}
+      \strng{fullhash}{7bea68cb60341c3e74dc0365c593cbfd}
+      \strng{authornamehash}{7bea68cb60341c3e74dc0365c593cbfd}
+      \strng{authorfullhash}{7bea68cb60341c3e74dc0365c593cbfd}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this work we show that Evolution Strategies (ES) are a viable method for learning non-differentiable parameters of large supervised models. ES are black-box optimization algorithms that estimate distributions of model parameters; however they have only been used for relatively small problems so far. We show that it is possible to scale ES to more complex tasks and models with millions of parameters. While using ES for differentiable parameters is computationally impractical (although possible), we show that a hybrid approach is practically feasible in the case where the model has both differentiable and non-differentiable parameters. In this approach we use standard gradient-based methods for learning differentiable weights, while using ES for learning non-differentiable parameters - in our case sparsity masks of the weights. This proposed method is surprisingly competitive, and when parallelized over multiple devices has only negligible training time overhead compared to training with gradient descent. Additionally, this method allows to train sparse models from the first training step, so they can be much larger than when using methods that require training dense models first. We present results and analysis of supervised feed-forward models (such as MNIST and CIFAR-10 classification), as well as recurrent models, such as SparseWaveRNN for text-to-speech.}
+      \field{journaltitle}{arXiv preprint arXiv:1906.03139 [cs.NE]}
+      \field{title}{Non-{{Differentiable Supervised Learning}} with {{Evolution Strategies}} and {{Hybrid Methods}}}
+      \field{year}{2019}
+    \endentry
+    \entry{LiMeasuringIntrinsicDimension2018}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=307cd2ff14b0ecd5a0ae2ca42e7c71b2}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Chunyuan},
+           giveni={C\bibinitperiod}}}%
+        {{hash=228dfe80c9faadcafdeb5ae4508de44b}{%
+           family={Farkhoor},
+           familyi={F\bibinitperiod},
+           given={Heerad},
+           giveni={H\bibinitperiod}}}%
+        {{hash=0601c437ba55f05a3dd1e353269ab24a}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Rosanne},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9f400712248e594ce887c5cd06d9767b}{%
+           family={Yosinski},
+           familyi={Y\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2e9cf379f986be945a3b06593d65441}
+      \strng{fullhash}{e2e9cf379f986be945a3b06593d65441}
+      \strng{authornamehash}{e2e9cf379f986be945a3b06593d65441}
+      \strng{authorfullhash}{e2e9cf379f986be945a3b06593d65441}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Learning Representations (ICLR 2018)}
+      \field{title}{Measuring the {{Intrinsic Dimension}} of {{Objective Landscapes}}}
+      \field{year}{2018}
+    \endentry
+    \entry{LiVisualizingLossLandscape2018}{incollection}{}
+      \name{author}{5}{}{%
+        {{hash=2620b9afd37cca5b9b7354f67c036d4d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=05cfd0bcb3bc857f515fc6e69d6ca277}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Zheng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=3a2adb4bdc707f5f21becb12b393db90}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Gavin},
+           giveni={G\bibinitperiod}}}%
+        {{hash=45fe5ab966df2ae2a98ac0437e84e46f}{%
+           family={Studer},
+           familyi={S\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3b1fea9d27f10122cd27336b3dc68ea7}{%
+           family={Goldstein},
+           familyi={G\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{81b803b4f93b59feebc04c40d625a5a6}
+      \strng{fullhash}{81b803b4f93b59feebc04c40d625a5a6}
+      \strng{authornamehash}{81b803b4f93b59feebc04c40d625a5a6}
+      \strng{authorfullhash}{81b803b4f93b59feebc04c40d625a5a6}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in {{Neural Information Processing Systems}} 31 (NeurIPS 2018)}
+      \field{title}{Visualizing the {{Loss Landscape}} of {{Neural Nets}}}
+      \field{year}{2018}
+      \field{pages}{6389\bibrangedash 6399}
+      \range{pages}{11}
+    \endentry
+    \entry{LiVerysparserandom2006}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=456dd6a18b8241b9d36da968a7c4d624}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3ad0da7179f50bc7834b8e729db67c5b}{%
+           family={Hastie},
+           familyi={H\bibinitperiod},
+           given={Trevor\bibnamedelima J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=22437e93b5390e9d0d2373a680e3f1de}{%
+           family={Church},
+           familyi={C\bibinitperiod},
+           given={Kenneth\bibnamedelima W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{8674374738c7f57468c687afe64bda5c}
+      \strng{fullhash}{8674374738c7f57468c687afe64bda5c}
+      \strng{authornamehash}{8674374738c7f57468c687afe64bda5c}
+      \strng{authorfullhash}{8674374738c7f57468c687afe64bda5c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of 12th {{ACM SIGKDD}} International Conference on {{Knowledge}} Discovery and Data Mining}
+      \field{title}{Very Sparse Random Projections}
+      \field{year}{2006}
+      \field{pages}{287\bibrangedash 296}
+      \range{pages}{10}
+    \endentry
+    \entry{LinDeepgradientcompression2017}{article}{}
+      \name{author}{5}{}{%
+        {{hash=7dd57f26499c599986eb169137eb06b6}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Yujun},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=873e4e07ff73d563d2651d20ffaf99e0}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Song},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1341c7c7f8d6acc2c0c244d6526ff658}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Huizi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b2eccb185095fccfeb40fdffd8b2105f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0ea138b81cd15c0a1081231fedfaf445}{%
+           family={Dally},
+           familyi={D\bibinitperiod},
+           given={William\bibnamedelima J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e98c0f17ec2a9c485d8c6a50d2ea2b8e}
+      \strng{fullhash}{e98c0f17ec2a9c485d8c6a50d2ea2b8e}
+      \strng{authornamehash}{e98c0f17ec2a9c485d8c6a50d2ea2b8e}
+      \strng{authorfullhash}{e98c0f17ec2a9c485d8c6a50d2ea2b8e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{arXiv preprint arXiv:1712.01887 [cs.CV]}
+      \field{shorttitle}{Deep Gradient Compression}
+      \field{title}{Deep Gradient Compression: {{Reducing}} the Communication Bandwidth for Distributed Training}
+      \field{year}{2017}
+    \endentry
+    \entry{NesterovRandomgradientfreeminimization2011}{report}{}
+      \name{author}{2}{}{%
+        {{hash=8a41b35fe7b3d1725cb95bd7eec40b01}{%
+           family={Nesterov},
+           familyi={N\bibinitperiod},
+           given={Yurii},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5237ad50ec9db3920605aa5094d0dc28}{%
+           family={Spokoiny},
+           familyi={S\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Université catholique de Louvain, Center for Operations Research and Econometrics (CORE)}%
+      }
+      \strng{namehash}{aaae930921b7c189c467844747e92ea6}
+      \strng{fullhash}{aaae930921b7c189c467844747e92ea6}
+      \strng{authornamehash}{aaae930921b7c189c467844747e92ea6}
+      \strng{authorfullhash}{aaae930921b7c189c467844747e92ea6}
+      \field{sortinit}{N}
+      \field{sortinithash}{1163c28585427c673ad5a010cbf82f52}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Random Gradient-Free Minimization of Convex Functions}
+      \field{type}{techreport}
+      \field{year}{2011}
+    \endentry
+    \entry{RahimiUniformapproximationfunctions2008}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=b2a647ccd84fe455f793167cbe4e9c81}{%
+           family={Rahimi},
+           familyi={R\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3503059e1c0c778913607c87d8c5173a}{%
+           family={Recht},
+           familyi={R\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{3901ba1a79fcedc2c5a8b2b74bd94b9a}
+      \strng{fullhash}{3901ba1a79fcedc2c5a8b2b74bd94b9a}
+      \strng{authornamehash}{3901ba1a79fcedc2c5a8b2b74bd94b9a}
+      \strng{authorfullhash}{3901ba1a79fcedc2c5a8b2b74bd94b9a}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of 46th {{Annual Allerton Conference}} on {{Communication}}, {{Control}}, and {{Computing}}}
+      \field{title}{Uniform Approximation of Functions with Random Bases}
+      \field{year}{2008}
+      \field{pages}{555\bibrangedash 561}
+      \range{pages}{7}
+    \endentry
+    \entry{SainathLowrankmatrixfactorization2013}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=19eb851113b22ee397d413b852d23b04}{%
+           family={Sainath},
+           familyi={S\bibinitperiod},
+           given={Tara\bibnamedelima N.},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=8f101126b3acf3a5a0f51d86f0fe89b8}{%
+           family={Kingsbury},
+           familyi={K\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4f9c34b413772edc3b1cd5671b79dca7}{%
+           family={Sindhwani},
+           familyi={S\bibinitperiod},
+           given={Vikas},
+           giveni={V\bibinitperiod}}}%
+        {{hash=3904aec1bbb863e3ddd042a93650cca5}{%
+           family={Arisoy},
+           familyi={A\bibinitperiod},
+           given={Ebru},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e958692c2ffac06aacd0b29bb1482fc8}{%
+           family={Ramabhadran},
+           familyi={R\bibinitperiod},
+           given={Bhuvana},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{a722ee9b9c99077f8d09acc7f007dd15}
+      \strng{fullhash}{a722ee9b9c99077f8d09acc7f007dd15}
+      \strng{authornamehash}{a722ee9b9c99077f8d09acc7f007dd15}
+      \strng{authorfullhash}{a722ee9b9c99077f8d09acc7f007dd15}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of {{IEEE}} International Conference on Acoustics, Speech and Signal Processing}
+      \field{title}{Low-Rank Matrix Factorization for Deep Neural Network Training with High-Dimensional Output Targets}
+      \field{year}{2013}
+      \field{pages}{6655\bibrangedash 6659}
+      \range{pages}{5}
+    \endentry
+    \entry{SalimansEvolutionStrategiesScalable2017}{article}{}
+      \name{author}{5}{}{%
+        {{hash=e6f76e1a4d058df028530916774ad3a7}{%
+           family={Salimans},
+           familyi={S\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2ac2ca10b22e4d13af1767e87495412f}{%
+           family={Ho},
+           familyi={H\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c6649d02b24225ca4c9012cee6c790de}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=6657859de18e844e4b1b815e03694c71}{%
+           family={Sidor},
+           familyi={S\bibinitperiod},
+           given={Szymon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8d569d1d5b8b5a7836017a98b430f959}{%
+           family={Sutskever},
+           familyi={S\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f28e4fb4d3d0a22ea2d8e7ba9233437}
+      \strng{fullhash}{3f28e4fb4d3d0a22ea2d8e7ba9233437}
+      \strng{authornamehash}{3f28e4fb4d3d0a22ea2d8e7ba9233437}
+      \strng{authorfullhash}{3f28e4fb4d3d0a22ea2d8e7ba9233437}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1703.03864 [stat.ML]}
+      \field{title}{Evolution {{Strategies}} as a {{Scalable Alternative}} to {{Reinforcement Learning}}}
+      \field{year}{2017}
+    \endentry
+    \entry{StromScalabledistributedDNN2015}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=9e5943a2d3c160d76de2ab63586a4e67}{%
+           family={Strom},
+           familyi={S\bibinitperiod},
+           given={Nikko},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e5943a2d3c160d76de2ab63586a4e67}
+      \strng{fullhash}{9e5943a2d3c160d76de2ab63586a4e67}
+      \strng{authornamehash}{9e5943a2d3c160d76de2ab63586a4e67}
+      \strng{authorfullhash}{9e5943a2d3c160d76de2ab63586a4e67}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of 16th Annual Conference of the International Speech Communication Association}
+      \field{title}{Scalable Distributed {{DNN}} Training Using Commodity {{GPU}} Cloud Computing}
+      \field{year}{2015}
+      \field{pages}{1488\bibrangedash 1492}
+      \range{pages}{5}
+    \endentry
+    \entry{strubell2019energy}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d3bf550429e9ba5e3e93b995e9b40d85}{%
+           family={Strubell},
+           familyi={S\bibinitperiod},
+           given={Emma},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f6ed9182b4527a73a06c24556f54acef}{%
+           family={Ganesh},
+           familyi={G\bibinitperiod},
+           given={Ananya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=17d73a3a5be48993791cbe4db8855331}{%
+           family={McCallum},
+           familyi={M\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{885b3b62ebd4bca1bb8cde91020e4c6f}
+      \strng{fullhash}{885b3b62ebd4bca1bb8cde91020e4c6f}
+      \strng{authornamehash}{885b3b62ebd4bca1bb8cde91020e4c6f}
+      \strng{authorfullhash}{885b3b62ebd4bca1bb8cde91020e4c6f}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1906.02243 [cs.CL]}
+      \field{title}{Energy and Policy Considerations for Deep Learning in NLP}
+      \field{year}{2019}
+    \endentry
+    \entry{VogelsPowerSGDPracticalLowRank2019}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=c7003cab20a5f4a7d853db86e2a23b87}{%
+           family={Vogels},
+           familyi={V\bibinitperiod},
+           given={Thijs},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8db2202edc664a429abc546233431db6}{%
+           family={Karimireddy},
+           familyi={K\bibinitperiod},
+           given={Sai\bibnamedelima Praneeth},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=bd642ce031840ac707e5caf1affef744}{%
+           family={Jaggi},
+           familyi={J\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6e88f94b227f597b3b9a416b771cdef1}
+      \strng{fullhash}{6e88f94b227f597b3b9a416b771cdef1}
+      \strng{authornamehash}{6e88f94b227f597b3b9a416b771cdef1}
+      \strng{authorfullhash}{6e88f94b227f597b3b9a416b771cdef1}
+      \field{sortinit}{V}
+      \field{sortinithash}{555737dafdcf1396ebfeae5822e5bde2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Advances in {{Neural Information Processing Systems}} 32 (NeurIPS 2019)}
+      \field{shorttitle}{{{PowerSGD}}}
+      \field{title}{{{PowerSGD}}: {{Practical Low}}-{{Rank Gradient Compression}} for {{Distributed Optimization}}}
+      \field{year}{2019}
+      \field{pages}{14259\bibrangedash 14268}
+      \range{pages}{10}
+    \endentry
+    \entry{WierstraNaturalevolutionstrategies2014}{article}{}
+      \name{author}{6}{}{%
+        {{hash=d7805381550fb5f8360345f7f72c0b49}{%
+           family={Wierstra},
+           familyi={W\bibinitperiod},
+           given={Daan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a56e72b23778a835bdade7d0511e43a3}{%
+           family={Schaul},
+           familyi={S\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4874e13f7817a49d297988fd81545e53}{%
+           family={Glasmachers},
+           familyi={G\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4ecf6f19fcc21ef32abbea3a7f2a885c}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c2cb77a864f65a21da0f69121b89835b}{%
+           family={Peters},
+           familyi={P\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1811f269d47d3a9aa2f644a670f659fa}
+      \strng{fullhash}{1811f269d47d3a9aa2f644a670f659fa}
+      \strng{authornamehash}{1811f269d47d3a9aa2f644a670f659fa}
+      \strng{authorfullhash}{1811f269d47d3a9aa2f644a670f659fa}
+      \field{sortinit}{W}
+      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{number}{1}
+      \field{title}{Natural Evolution Strategies.}
+      \field{volume}{15}
+      \field{year}{2014}
+      \field{pages}{949\bibrangedash 980}
+      \range{pages}{32}
+    \endentry
+    \entry{ZhangRelationshipOpenAIEvolution2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c5cc7ebd8a83ff72700df041b6807b85}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xingwen},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ec864655608cdb84e55422b0797b6419}{%
+           family={Clune},
+           familyi={C\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6efbd8468c509d77f9d16e4715165f22}{%
+           family={Stanley},
+           familyi={S\bibinitperiod},
+           given={Kenneth\bibnamedelima O.},
+           giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \strng{namehash}{56b12bf29bf6789930d7c2c1e5c67d88}
+      \strng{fullhash}{56b12bf29bf6789930d7c2c1e5c67d88}
+      \strng{authornamehash}{56b12bf29bf6789930d7c2c1e5c67d88}
+      \strng{authorfullhash}{56b12bf29bf6789930d7c2c1e5c67d88}
+      \field{sortinit}{Z}
+      \field{sortinithash}{35589aa085e881766b72503e53fd4c97}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Because stochastic gradient descent (SGD) has shown promise optimizing neural networks with millions of parameters and few if any alternatives are known to exist, it has moved to the heart of leading approaches to reinforcement learning (RL). For that reason, the recent result from OpenAI showing that a particular kind of evolution strategy (ES) can rival the performance of SGD-based deep RL methods with large neural networks provoked surprise. This result is difficult to interpret in part because of the lingering ambiguity on how ES actually relates to SGD. The aim of this paper is to significantly reduce this ambiguity through a series of MNIST-based experiments designed to uncover their relationship. As a simple supervised problem without domain noise (unlike in most RL), MNIST makes it possible (1) to measure the correlation between gradients computed by ES and SGD and (2) then to develop an SGD-based proxy that accurately predicts the performance of different ES population sizes. These innovations give a new level of insight into the real capabilities of ES, and lead also to some unconventional means for applying ES to supervised problems that shed further light on its differences from SGD. Incorporating these lessons, the paper concludes by demonstrating that ES can achieve 99\% accuracy on MNIST, a number higher than any previously published result for any evolutionary method. While not by any means suggesting that ES should substitute for SGD in supervised learning, the suite of experiments herein enables more informed decisions on the application of ES within RL and other paradigms.}
+      \field{journaltitle}{arXiv preprint arXiv:1712.06564 [cs.NE]}
+      \field{title}{On the {{Relationship Between}} the {{OpenAI Evolution Strategy}} and {{Stochastic Gradient Descent}}}
+      \field{year}{2017}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

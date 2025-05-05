@@ -1,0 +1,867 @@
+% Use this file for citations not found in the ACL Anthology (contained in "anthology.bib").
+
+@book{Aho:72,
+    author  = {Alfred V. Aho and Jeffrey D. Ullman},
+    title   = {The Theory of Parsing, Translation and Compiling},
+    year    = "1972",
+    volume  = "1",
+    publisher = {Prentice-Hall},
+    address = {Englewood Cliffs, NJ}
+}
+
+@incollection{pezik_lrec_2022,
+	title = {DiaBiz -- an Annotated Corpus of Polish Call Center Dialogs},
+		booktitle = {{Language Resources and Evaluation Conference} {2022}},
+	author = {Pęzik, Piotr and Krawentek, Gosia and Karasińska, Sylwia and Wilk, Paweł and Rybińska, Paulina and Peljak-Łapińska, Angelika and Cichosz, Anna and Deckert, Mikołaj and Adamczyk, Michał},
+	month = jun,
+	year = {2022},
+	publisher = {European Language Resources Association (ELRA)}
+}
+
+@article{falcon2019pytorch,
+  title={PyTorch Lightning},
+  author={Falcon, WA},
+  journal={GitHub. Note: https://github.com/PyTorchLightning/pytorch-lightning Cited by},
+  volume={3},
+  year={2019}
+}
+
+@inproceedings{li-etal-2020-dice,
+    title = "Dice Loss for Data-imbalanced {NLP} Tasks",
+    author = "Li, Xiaoya  and
+      Sun, Xiaofei  and
+      Meng, Yuxian  and
+      Liang, Junjun  and
+      Wu, Fei  and
+      Li, Jiwei",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.45",
+    doi = "10.18653/v1/2020.acl-main.45",
+    pages = "465--476",
+    abstract = "Many NLP tasks such as tagging and machine reading comprehension are faced with the severe data imbalance issue: negative examples significantly outnumber positive examples, and the huge number of easy-negative examples overwhelms the training. The most commonly used cross entropy (CE) criteria is actually an accuracy-oriented objective, and thus creates a discrepancy between training and test: at training time, each training instance contributes equally to the objective function, while at test time F1 score concerns more about positive examples. In this paper, we propose to use dice loss in replacement of the standard cross-entropy objective for data-imbalanced NLP tasks. Dice loss is based on the S{\o}rensen--Dice coefficient or Tversky index , which attaches similar importance to false positives and false negatives, and is more immune to the data-imbalance issue. To further alleviate the dominating influence from easy-negative examples in training, we propose to associate training examples with dynamically adjusted weights to deemphasize easy-negative examples. Theoretical analysis shows that this strategy narrows down the gap between the F1 score in evaluation and the dice loss in training. With the proposed training objective, we observe significant performance boost on a wide range of data imbalanced NLP tasks. Notably, we are able to achieve SOTA results on CTB5, CTB6 and UD1.4 for the part of speech tagging task; SOTA results on CoNLL03, OntoNotes5.0, MSRA and OntoNotes4.0 for the named entity recognition task; along with competitive results on the tasks of machine reading comprehension and paraphrase identification.",
+}
+
+@inproceedings{augustyniak-etal-2020-political,
+    title = "Political Advertising Dataset: the use case of the Polish 2020 Presidential Elections",
+    author = "Augustyniak, Lukasz and Rajda, Krzysztof and Kajdanowicz, Tomasz and Bernaczyk, Micha{\l}",
+    booktitle = "Proceedings of the The Fourth Widening Natural Language Processing Workshop",
+    month = jul,
+    year = "2020",
+    address = "Seattle, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.winlp-1.28",
+    pages = "110--114"
+}
+
+@article{Gorman2020,
+abstract = {It is standard practice in speech {\&} language technology to rank systems according to performance on a test set held out for evaluation. However, few researchers apply statistical tests to determine whether differences in performance are likely to arise by chance, and few examine the stability of system ranking across multiple training-testing splits. We conduct replication and reproduction experiments with nine part-of-speech taggers published between 2000 and 2018, each of which reports state-of-the-art performance on a widely-used “standard split”. We fail to reliably reproduce some rankings using randomly generated splits. We suggest that randomly generated splits should be used in system comparison.},
+author = {Gorman, Kyle and Bedrick, Steven},
+doi = {10.18653/v1/p19-1267},
+file = {:E$\backslash$:/OneDrive/Dokumenty/Papers/P19-1267.pdf:pdf},
+isbn = {9781950737482},
+journal = {ACL 2019 - 57th Annual Meeting of the Association for Computational Linguistics, Proceedings of the Conference},
+pages = {2786--2791},
+title = {{We need to talk about standard splits}},
+year = {2020}
+}
+
+
+@inproceedings{ethayarajh-jurafsky-2020-utility,
+    title = "Utility is in the Eye of the User: A Critique of {NLP} Leaderboards",
+    author = "Ethayarajh, Kawin  and
+      Jurafsky, Dan",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.393",
+    doi = "10.18653/v1/2020.emnlp-main.393",
+    pages = "4846--4853",
+    abstract = "Benchmarks such as GLUE have helped drive advances in NLP by incentivizing the creation of more accurate models. While this leaderboard paradigm has been remarkably successful, a historical focus on performance-based evaluation has been at the expense of other qualities that the NLP community values in models, such as compactness, fairness, and energy efficiency. In this opinion paper, we study the divergence between what is incentivized by leaderboards and what is useful in practice through the lens of microeconomic theory. We frame both the leaderboard and NLP practitioners as consumers and the benefit they get from a model as its utility to them. With this framing, we formalize how leaderboards {--} in their current form {--} can be poor proxies for the NLP community at large. For example, a highly inefficient model would provide less utility to practitioners but not to a leaderboard, since it is a cost that only the former must bear. To allow practitioners to better estimate a model{'}s utility to them, we advocate for more transparency on leaderboards, such as the reporting of statistics that are of practical concern (e.g., model size, energy efficiency, and inference latency).",
+}
+
+@inproceedings{NEURIPS2019_dc6a7e65,
+ author = {Yang, Zhilin and Dai, Zihang and Yang, Yiming and Carbonell, Jaime and Salakhutdinov, Russ R and Le, Quoc V},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {XLNet: Generalized Autoregressive Pretraining for Language Understanding},
+ url = {https://proceedings.neurips.cc/paper/2019/file/dc6a7e655d7e5840e66733e9ee67cc69-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+@inproceedings{bingyu-arefyev-2022-document,
+    title = "The Document Vectors Using Cosine Similarity Revisited",
+    author = "Bingyu, Zhang  and
+      Arefyev, Nikolay",
+    booktitle = "Proceedings of the Third Workshop on Insights from Negative Results in NLP",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.insights-1.17",
+    doi = "10.18653/v1/2022.insights-1.17",
+    pages = "129--133",
+    abstract = {The current state-of-the-art test accuracy (97.42{\%}) on the IMDB movie reviews dataset was reported by Thongtan and Phienthrakul (2019) and achieved by the logistic regression classifier trained on the Document Vectors using Cosine Similarity (DV-ngrams-cosine) proposed in their paper and the Bag-of-N-grams (BON) vectors scaled by Na{\"\i}ve Bayesian weights. While large pre-trained Transformer-based models have shown SOTA results across many datasets and tasks, the aforementioned model has not been surpassed by them, despite being much simpler and pre-trained on the IMDB dataset only. In this paper, we describe an error in the evaluation procedure of this model, which was found when we were trying to analyze its excellent performance on the IMDB dataset. We further show that the previously reported test accuracy of 97.42{\%} is invalid and should be corrected to 93.68{\%}. We also analyze the model performance with different amounts of training data (subsets of the IMDB dataset) and compare it to the Transformer-based RoBERTa model. The results show that while RoBERTa has a clear advantage for larger training sets, the DV-ngrams-cosine performs better than RoBERTa when the labeled training set is very small (10 or 20 documents). Finally, we introduce a sub-sampling scheme based on Na{\"\i}ve Bayesian weights for the training process of the DV-ngrams-cosine, which leads to faster training and better quality.},
+}
+
+@inproceedings{peters-etal-2018-deep,
+    title = "Deep Contextualized Word Representations",
+    author = "Peters, Matthew E.  and
+      Neumann, Mark  and
+      Iyyer, Mohit  and
+      Gardner, Matt  and
+      Clark, Christopher  and
+      Lee, Kenton  and
+      Zettlemoyer, Luke",
+    booktitle = "Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)",
+    month = jun,
+    year = "2018",
+    address = "New Orleans, Louisiana",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N18-1202",
+    doi = "10.18653/v1/N18-1202",
+    pages = "2227--2237",
+    abstract = "We introduce a new type of deep contextualized word representation that models both (1) complex characteristics of word use (e.g., syntax and semantics), and (2) how these uses vary across linguistic contexts (i.e., to model polysemy). Our word vectors are learned functions of the internal states of a deep bidirectional language model (biLM), which is pre-trained on a large text corpus. We show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including question answering, textual entailment and sentiment analysis. We also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.",
+}
+
+@inproceedings{Lan2020ALBERT,
+title={ALBERT: A Lite BERT for Self-supervised Learning of Language Representations},
+author={Zhenzhong Lan and Mingda Chen and Sebastian Goodman and Kevin Gimpel and Piyush Sharma and Radu Soricut},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=H1eA7AEtvS}
+}
+
+@inproceedings{ye-etal-2022-packed,
+    title = "Packed Levitated Marker for Entity and Relation Extraction",
+    author = "Ye, Deming  and
+      Lin, Yankai  and
+      Li, Peng  and
+      Sun, Maosong",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.337",
+    doi = "10.18653/v1/2022.acl-long.337",
+    pages = "4904--4917",
+    abstract = "Recent entity and relation extraction works focus on investigating how to obtain a better span representation from the pre-trained encoder. However, a major limitation of existing works is that they ignore the interrelation between spans (pairs). In this work, we propose a novel span representation approach, named Packed Levitated Markers (PL-Marker), to consider the interrelation between the spans (pairs) by strategically packing the markers in the encoder. In particular, we propose a neighborhood-oriented packing strategy, which considers the neighbor spans integrally to better model the entity boundary information. Furthermore, for those more complicated span pair classification tasks, we design a subject-oriented packing strategy, which packs each subject and all its objects to model the interrelation between the same-subject span pairs. The experimental results show that, with the enhanced marker feature, our model advances baselines on six NER benchmarks, and obtains a 4.1{\%}-4.3{\%} strict relation F1 improvement with higher speed over previous state-of-the-art models on ACE04 and ACE05. Our code and models are publicly available at https://github.com/thunlp/PL-Marker",
+}
+
+@article{Brown2020,
+abstract = {We demonstrate that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even becoming competitive with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks. We also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora.},
+archivePrefix = {arXiv},
+arxivId = {2005.14165},
+author = {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel M. and Wu, Jeffrey and Winter, Clemens and Hesse, Christopher and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+eprint = {2005.14165},
+file = {:E$\backslash$:/OneDrive/Dokumenty/Papers/NeurIPS-2020-language-models-are-few-shot-learners-Paper.pdf:pdf},
+issn = {10495258},
+journal = {Advances in Neural Information Processing Systems},
+number = {NeurIPS},
+title = {{Language models are few-shot learners}},
+volume = {2020-Decem},
+year = {2020}
+}
+
+@misc{Hoffmann2022,
+  doi = {10.48550/ARXIV.2203.15556},
+  
+  url = {https://arxiv.org/abs/2203.15556},
+  
+  author = {Hoffmann, Jordan and Borgeaud, Sebastian and Mensch, Arthur and Buchatskaya, Elena and Cai, Trevor and Rutherford, Eliza and Casas, Diego de Las and Hendricks, Lisa Anne and Welbl, Johannes and Clark, Aidan and Hennigan, Tom and Noland, Eric and Millican, Katie and Driessche, George van den and Damoc, Bogdan and Guy, Aurelia and Osindero, Simon and Simonyan, Karen and Elsen, Erich and Rae, Jack W. and Vinyals, Oriol and Sifre, Laurent},
+  
+  keywords = {Computation and Language (cs.CL), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Training Compute-Optimal Large Language Models},
+  
+  publisher = {arXiv},
+  
+  year = {2022},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+@inproceedings{Rae2021-bak,
+abstract = {Language modelling provides a step towards intelligent communication systems by harnessing large repositories of written human knowledge to better predict and understand the world. In this paper, we present an analysis of Transformer-based language model performance across a wide range of model scales -- from models with tens of millions of parameters up to a 280 billion parameter model called Gopher. These models are evaluated on 152 diverse tasks, achieving state-of-the-art performance across the majority. Gains from scale are largest in areas such as reading comprehension, fact-checking, and the identification of toxic language, but logical and mathematical reasoning see less benefit. We provide a holistic analysis of the training dataset and model's behaviour, covering the intersection of model scale with bias and toxicity. Finally we discuss the application of language models to AI safety and the mitigation of downstream harms.},
+archivePrefix = {arXiv},
+arxivId = {2112.11446},
+author = {Rae, Jack W. and Borgeaud, Sebastian and Cai, Trevor and Millican, Katie and Hoffmann, Jordan and Song, Francis and Aslanides, John and Henderson, Sarah and Ring, Roman and Young, Susannah and Rutherford, Eliza and Hennigan, Tom and Menick, Jacob and Cassirer, Albin and Powell, Richard and van den Driessche, George and Hendricks, Lisa Anne and Rauh, Maribeth and Huang, Po-Sen and Glaese, Amelia and Welbl, Johannes and Dathathri, Sumanth and Huang, Saffron and Uesato, Jonathan and Mellor, John and Higgins, Irina and Creswell, Antonia and McAleese, Nat and Wu, Amy and Elsen, Erich and Jayakumar, Siddhant and Buchatskaya, Elena and Budden, David and Sutherland, Esme and Simonyan, Karen and Paganini, Michela and Sifre, Laurent and Martens, Lena and Li, Xiang Lorraine and Kuncoro, Adhiguna and Nematzadeh, Aida and Gribovskaya, Elena and Donato, Domenic and Lazaridou, Angeliki and Mensch, Arthur and Lespiau, Jean-Baptiste and Tsimpoukelli, Maria and Grigorev, Nikolai and Fritz, Doug and Sottiaux, Thibault and Pajarskas, Mantas and Pohlen, Toby and Gong, Zhitao and Toyama, Daniel and D'Autume, Cyprien de Masson and Li, Yujia and Terzi, Tayfun and Mikulik, Vladimir and Babuschkin, Igor and Clark, Aidan and Casas, Diego de Las and Guy, Aurelia and Jones, Chris and Bradbury, James and Johnson, Matthew and Hechtman, Blake and Weidinger, Laura and Gabriel, Iason and Isaac, William and Lockhart, Ed and Osindero, Simon and Rimell, Laura and Dyer, Chris and Vinyals, Oriol and Ayoub, Kareem and Stanway, Jeff and Bennett, Lorrayne and Hassabis, Demis and Kavukcuoglu, Koray and Irving, Geoffrey},
+title = {{Scaling Language Models: Methods, Analysis {\&} Insights from Training Gopher}},
+url = {http://arxiv.org/abs/2112.11446},
+year = {2021}
+}
+
+@misc{Rae2021,
+  doi = {10.48550/ARXIV.2112.11446},
+  
+  url = {https://arxiv.org/abs/2112.11446},
+  
+  author = {Rae, Jack W. and Borgeaud, Sebastian and Cai, Trevor and Millican, Katie and Hoffmann, Jordan and Song, Francis and Aslanides, John and Henderson, Sarah and Ring, Roman and Young, Susannah and Rutherford, Eliza and Hennigan, Tom and Menick, Jacob and Cassirer, Albin and Powell, Richard and Driessche, George van den and Hendricks, Lisa Anne and Rauh, Maribeth and Huang, Po-Sen and Glaese, Amelia and Welbl, Johannes and Dathathri, Sumanth and Huang, Saffron and Uesato, Jonathan and Mellor, John and Higgins, Irina and Creswell, Antonia and McAleese, Nat and Wu, Amy and Elsen, Erich and Jayakumar, Siddhant and Buchatskaya, Elena and Budden, David and Sutherland, Esme and Simonyan, Karen and Paganini, Michela and Sifre, Laurent and Martens, Lena and Li, Xiang Lorraine and Kuncoro, Adhiguna and Nematzadeh, Aida and Gribovskaya, Elena and Donato, Domenic and Lazaridou, Angeliki and Mensch, Arthur and Lespiau, Jean-Baptiste and Tsimpoukelli, Maria and Grigorev, Nikolai and Fritz, Doug and Sottiaux, Thibault and Pajarskas, Mantas and Pohlen, Toby and Gong, Zhitao and Toyama, Daniel and d'Autume, Cyprien de Masson and Li, Yujia and Terzi, Tayfun and Mikulik, Vladimir and Babuschkin, Igor and Clark, Aidan and Casas, Diego de Las and Guy, Aurelia and Jones, Chris and Bradbury, James and Johnson, Matthew and Hechtman, Blake and Weidinger, Laura and Gabriel, Iason and Isaac, William and Lockhart, Ed and Osindero, Simon and Rimell, Laura and Dyer, Chris and Vinyals, Oriol and Ayoub, Kareem and Stanway, Jeff and Bennett, Lorrayne and Hassabis, Demis and Kavukcuoglu, Koray and Irving, Geoffrey},
+  
+  keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Scaling Language Models: Methods, Analysis \& Insights from Training Gopher},
+  
+  publisher = {arXiv},
+  
+  year = {2021},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+
+@book{APA:83,
+    author  = {{American Psychological Association}},
+    title   = {Publications Manual},
+    year    = "1983",
+    publisher = {American Psychological Association},
+    address = {Washington, DC}
+}
+
+@article{Chandra:81,
+	author = {Ashok K. Chandra and Dexter C. Kozen and Larry J. Stockmeyer},
+	year = "1981",
+	title = {Alternation},
+	journal = {Journal of the Association for Computing Machinery},
+	volume = "28",
+	number = "1",
+	pages = "114--133",
+	doi = "10.1145/322234.322243",
+}
+
+@inproceedings{andrew2007scalable,
+  title={Scalable training of {L1}-regularized log-linear models},
+  author={Andrew, Galen and Gao, Jianfeng},
+  booktitle={Proceedings of the 24th International Conference on Machine Learning},
+  pages={33--40},
+  year={2007},
+}
+
+@book{Gusfield:97,
+    author  = {Dan Gusfield},
+    title   = {Algorithms on Strings, Trees and Sequences},
+    year    = "1997",
+    publisher = {Cambridge University Press},
+    address = {Cambridge, UK}
+}
+
+@article{rasooli-tetrault-2015,
+    author    = {Mohammad Sadegh Rasooli and Joel R. Tetreault},
+    title     = {Yara Parser: {A} Fast and Accurate Dependency Parser},
+    journal   = {Computing Research Repository},
+    volume    = {arXiv:1503.06733},
+    year      = {2015},
+    url       = {http://arxiv.org/abs/1503.06733},
+    note    = {version 2}
+}
+
+@article{Ando2005,
+	Acmid = {1194905},
+	Author = {Ando, Rie Kubota and Zhang, Tong},
+	Issn = {1532-4435},
+	Issue_Date = {12/1/2005},
+	Journal = {Journal of Machine Learning Research},
+	Month = dec,
+	Numpages = {37},
+	Pages = {1817--1853},
+	Publisher = {JMLR.org},
+	Title = {A Framework for Learning Predictive Structures from Multiple Tasks and Unlabeled Data},
+	Volume = {6},
+	Year = {2005}
+}
+@inproceedings{Wang2019,
+ author = {Wang, Alex and Pruksachatkun, Yada and Nangia, Nikita and Singh, Amanpreet and Michael, Julian and Hill, Felix and Levy, Omer and Bowman, Samuel},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {SuperGLUE: A Stickier Benchmark for General-Purpose Language Understanding Systems},
+ url = {https://proceedings.neurips.cc/paper/2019/file/4496bf24afe7fab6f046bf4923da8de6-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+@inproceedings{akiba2019optuna,
+  title={Optuna: A next-generation hyperparameter optimization framework},
+  author={Akiba, Takuya and Sano, Shotaro and Yanase, Toshihiko and Ohta, Takeru and Koyama, Masanori},
+  booktitle={Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery \& data mining},
+  pages={2623--2631},
+  year={2019}
+}
+
+@inproceedings{kocon-etal-2019-multi,
+    title = "Multi-Level Sentiment Analysis of {P}ol{E}mo 2.0: Extended Corpus of Multi-Domain Consumer Reviews",
+    author = "Koco{\'n}, Jan  and
+      Mi{\l}kowski, Piotr  and
+      Za{\'s}ko-Zieli{\'n}ska, Monika",
+    booktitle = "Proceedings of the 23rd Conference on Computational Natural Language Learning (CoNLL)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/K19-1092",
+    doi = "10.18653/v1/K19-1092",
+    pages = "980--991",
+    abstract = "In this article we present an extended version of PolEmo {--} a corpus of consumer reviews from 4 domains: medicine, hotels, products and school. Current version (PolEmo 2.0) contains 8,216 reviews having 57,466 sentences. Each text and sentence was manually annotated with sentiment in 2+1 scheme, which gives a total of 197,046 annotations. We obtained a high value of Positive Specific Agreement, which is 0.91 for texts and 0.88 for sentences. PolEmo 2.0 is publicly available under a Creative Commons copyright license. We explored recent deep learning approaches for the recognition of sentiment, such as Bi-directional Long Short-Term Memory (BiLSTM) and Bidirectional Encoder Representations from Transformers (BERT).",
+}
+
+@article{Koco2021AspectEmoMC,
+  title={AspectEmo: Multi-Domain Corpus of Consumer Reviews for Aspect-Based Sentiment Analysis},
+  author={Jan Kocoń and Jarema Radom and Ewa Kaczmarz-Wawryk and Kamil Wabnic and Ada Zajączkowska and Monika Zaśko-Zielińska},
+  journal={2021 International Conference on Data Mining Workshops (ICDMW)},
+  year={2021},
+  pages={166-173}
+}
+
+@book{przepiorkowski_narodowy_2012,
+title = {Narodowy korpus języka polskiego},
+isbn = {978-83-01-16700-4},
+language = {pl},
+publisher = {Wydawnictwo Naukowe PWN},
+editor = {Przepiórkowski, Adam and Bańko, Mirosław and Górski, Rafał L. and Lewandowska-Tomaszczyk, Barbara},
+year = {2012}
+}
+
+@inproceedings{wroblewska-krasnowska-kieras-2017-polish,
+    title = "{P}olish evaluation dataset for compositional distributional semantics models",
+    author = "Wr{\'o}blewska, Alina  and
+      Krasnowska-Kiera{\'s}, Katarzyna",
+    booktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P17-1073",
+    doi = "10.18653/v1/P17-1073",
+    pages = "784--792",
+    abstract = "The paper presents a procedure of building an evaluation dataset. for the validation of compositional distributional semantics models estimated for languages other than English. The procedure generally builds on steps designed to assemble the SICK corpus, which contains pairs of English sentences annotated for semantic relatedness and entailment, because we aim at building a comparable dataset. However, the implementation of particular building steps significantly differs from the original SICK design assumptions, which is caused by both lack of necessary extraneous resources for an investigated language and the need for language-specific transformation rules. The designed procedure is verified on Polish, a fusional language with a relatively free word order, and contributes to building a Polish evaluation dataset. The resource consists of 10K sentence pairs which are human-annotated for semantic relatedness and entailment. The dataset may be used for the evaluation of compositional distributional semantics models of Polish.",
+}
+
+@inproceedings{wolf-etal-2020-transformers,
+    title = "Transformers: State-of-the-Art Natural Language Processing",
+    author = "Wolf, Thomas  and
+      Debut, Lysandre  and
+      Sanh, Victor  and
+      Chaumond, Julien  and
+      Delangue, Clement  and
+      Moi, Anthony  and
+      Cistac, Pierric  and
+      Rault, Tim  and
+      Louf, Remi  and
+      Funtowicz, Morgan  and
+      Davison, Joe  and
+      Shleifer, Sam  and
+      von Platen, Patrick  and
+      Ma, Clara  and
+      Jernite, Yacine  and
+      Plu, Julien  and
+      Xu, Canwen  and
+      Le Scao, Teven  and
+      Gugger, Sylvain  and
+      Drame, Mariama  and
+      Lhoest, Quentin  and
+      Rush, Alexander",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+    month = oct,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-demos.6",
+    doi = "10.18653/v1/2020.emnlp-demos.6",
+    pages = "38--45",
+    abstract = "Recent progress in natural language processing has been driven by advances in both model architecture and model pretraining. Transformer architectures have facilitated building higher-capacity models and pretraining has made it possible to effectively utilize this capacity for a wide variety of tasks. Transformers is an open-source library with the goal of opening up these advances to the wider machine learning community. The library consists of carefully engineered state-of-the art Transformer architectures under a unified API. Backing this library is a curated collection of pretrained models made by and available for the community. Transformers is designed to be extensible by researchers, simple for practitioners, and fast and robust in industrial deployments. The library is available at https://github.com/huggingface/transformers.",
+}
+
+@article{Pineau2021,
+abstract = {One of the challenges in machine learning research is to ensure that presented and published results are sound and reliable. Reproducibility, that is obtaining similar results as presented in a paper or talk, using the same code and data (when available), is a necessary step to verify the reliability of research findings. Reproducibility is also an important step to promote open and accessible research, thereby allowing the scientific community to quickly integrate new findings and convert ideas to practice. Reproducibility also promotes the use of robust experimental workows, which potentially reduce unintentional errors. In 2019, the Neural Information Processing Systems (NeurIPS) conference, the premier international conference for research in machine learning, introduced a reproducibility program, designed to improve the standards across the community for how we conduct, communicate, and evaluate machine learning research. The program contained three components: A code submission policy, a community-wide reproducibility challenge, and the inclusion of the Machine Learning Reproducibility checklist as part of the paper submission process. In this paper, we describe each of these components, how it was deployed, as well as what we were able to learn from this initiative.},
+archivePrefix = {arXiv},
+arxivId = {2003.12206},
+author = {Pineau, Joelle and Vincent-Lamarre, Philippe and Sinha, Koustuv and Larivi{\'{e}}re, Vincent and Beygelzimer, Alina and D'Alch{\'{e}}-Buc, Florence and Fox, Emily and Larochelle, Hugo},
+eprint = {2003.12206},
+file = {:E$\backslash$:/OneDrive/Dokumenty/Papers/2003.12206.pdf:pdf},
+issn = {15337928},
+journal = {Journal of Machine Learning Research},
+keywords = {NeurIPS 2019,Reproducibility},
+pages = {1--20},
+title = {{Improving reproducibility in machine learning research (a report from the neurips 2019 reproducibility program)}},
+volume = {22},
+year = {2021}
+}
+
+
+@inproceedings{ogrodniczuk-kopec-2014-polish,
+    title = "The {P}olish Summaries Corpus",
+    author = "Ogrodniczuk, Maciej  and
+      Kope{\'c}, Mateusz",
+    booktitle = "Proceedings of the Ninth International Conference on Language Resources and Evaluation ({LREC}'14)",
+    month = may,
+    year = "2014",
+    address = "Reykjavik, Iceland",
+    publisher = "European Language Resources Association (ELRA)",
+    url = "http://www.lrec-conf.org/proceedings/lrec2014/pdf/1211_Paper.pdf",
+    pages = "3712--3715",
+    abstract = "This article presents the Polish Summaries Corpus, a new resource created to support the development and evaluation of the tools for automated single-document summarization of Polish. The Corpus contains a large number of manual summaries of news articles, with many independently created summaries for a single text. Such approach is supposed to overcome the annotator bias, which is often described as a problem during the evaluation of the summarization algorithms against a single gold standard. There are several summarizers developed specifically for Polish language, but their in-depth evaluation and comparison was impossible without a large, manually created corpus. We present in detail the process of text selection, annotation process and the contents of the corpus, which includes both abstract free-word summaries, as well as extraction-based summaries created by selecting text spans from the original document. Finally, we describe how that resource could be used not only for the evaluation of the existing summarization tools, but also for studies on the human summarization process in Polish language.",
+}
+
+@inproceedings{Kleczek2020,
+  author = {Dariusz Kłeczek},
+  title = {Polbert: Attacking Polish NLP Tasks with Transformers},
+  booktitle = {Proceedings of the PolEval 2020 Workshop},
+  year = {2020},
+  editor = {Maciej Ogrodniczuk and Łukasz Kobyliński},
+  publisher = {Institute of Computer Science, Polish Academy of Sciences},
+ }
+ 
+ @inproceedings{broda-etal-2012-kpwr,
+    title = "{KPW}r: Towards a Free Corpus of {P}olish",
+    author = "Broda, Bartosz  and
+      Marci{\'n}czuk, Micha{\l}  and
+      Maziarz, Marek  and
+      Radziszewski, Adam  and
+      Wardy{\'n}ski, Adam",
+    booktitle = "Proceedings of the Eighth International Conference on Language Resources and Evaluation ({LREC}'12)",
+    month = may,
+    year = "2012",
+    address = "Istanbul, Turkey",
+    publisher = "European Language Resources Association (ELRA)",
+    url = "http://www.lrec-conf.org/proceedings/lrec2012/pdf/965_Paper.pdf",
+    pages = "3218--3222",
+    abstract = "This paper presents our efforts aimed at collecting and annotating a free Polish corpus. The corpus will serve for us as training and testing material for experiments with Machine Learning algorithms. As others may also benefit from the resource, we are going to release it under a Creative Commons licence, which is hoped to remove unnecessary usage restrictions, but also to facilitate reproduction of our experimental results. The corpus is being annotated with various types of linguistic entities: chunks and named entities, selected syntactic and semantic relations, word senses and anaphora. We report on the current state of the project as well as our ultimate goals.",
+}
+
+@inproceedings{mroczkowski-etal-2021-herbert,
+    title = "{H}er{BERT}: Efficiently Pretrained Transformer-based Language Model for {P}olish",
+    author = "Mroczkowski, Robert  and
+      Rybak, Piotr  and
+      Wr{\'o}blewska, Alina  and
+      Gawlik, Ireneusz",
+    booktitle = "Proceedings of the 8th Workshop on Balto-Slavic Natural Language Processing",
+    month = apr,
+    year = "2021",
+    address = "Kiyv, Ukraine",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2021.bsnlp-1.1",
+    pages = "1--10",
+}
+
+@inproceedings{reimers-2019-sentence-bert,
+    title = "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+    author = "Reimers, Nils and Gurevych, Iryna",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing",
+    month = "11",
+    year = "2019",
+    publisher = "Association for Computational Linguistics",
+    url = "http://arxiv.org/abs/1908.10084",
+}
+
+@book{ethno2022,
+  title = {Ethnologue: Languages of the World},
+  year = {2022},
+  url = {http://www.ethnologue.com},
+  edition = {Twenty-fifth},
+  editor = {Fennig, Charles and Eberhard, David and Simons, Gary F.},
+  address = {Dallas, TX, USA},
+  publisher = {SIL International},
+}
+
+@article{WANG2020103418,
+title = {A study of entity-linking methods for normalizing Chinese diagnosis and procedure terms to ICD codes},
+journal = {Journal of Biomedical Informatics},
+volume = {105},
+pages = {103418},
+year = {2020},
+issn = {1532-0464},
+doi = {https://doi.org/10.1016/j.jbi.2020.103418},
+url = {https://www.sciencedirect.com/science/article/pii/S1532046420300460},
+author = {Qiong Wang and Zongcheng Ji and Jingqi Wang and Stephen Wu and Weiyan Lin and Wenzhen Li and Li Ke and Guohong Xiao and Qing Jiang and Hua Xu and Yi Zhou},
+}
+
+
+@inproceedings{seelawi2021alue,
+  title={Alue: Arabic language understanding evaluation},
+  author={Seelawi, Haitham and Tuffaha, Ibraheem and Gzawi, Mahmoud and Farhan, Wael and Talafha, Bashar and Badawi, Riham and Sober, Zyad and Al-Dweik, Oday and Freihat, Abed Alhakim and Al-Natsheh, Hussein},
+  booktitle={Proceedings of the Sixth Arabic Natural Language Processing Workshop},
+  pages={173--184},
+  year={2021}
+}
+
+@article{zhang2021cblue,
+  title={CBLUE: A Chinese Biomedical Language Understanding Evaluation Benchmark},
+  author={Zhang, Ningyu and Chen, Mosha and Bi, Zhen and Liang, Xiaozhuan and Li, Lei and Shang, Xin and Yin, Kangping and Tan, Chuanqi and Xu, Jian and Huang, Fei and others},
+  journal={arXiv preprint arXiv:2106.08087},
+  year={2021}
+}
+
+
+@inproceedings{xu2020clue,
+  title={CLUE: A Chinese Language Understanding Evaluation Benchmark},
+  author={Xu, Liang and Hu, Hai and Zhang, Xuanwei and Li, Lu and Cao, Chenjie and Li, Yudong and Xu, Yechen and Sun, Kai and Yu, Dian and Yu, Cong and others},
+  booktitle={Proceedings of the 28th International Conference on Computational Linguistics},
+  pages={4762--4772},
+  year={2020}
+}
+
+@article{yao2021cuge,
+  title={CUGE: A Chinese Language Understanding and Generation Evaluation Benchmark},
+  author={Yao, Yuan and Dong, Qingxiu and Guan, Jian and Cao, Boxi and Zhang, Zhengyan and Xiao, Chaojun and Wang, Xiaozhi and Qi, Fanchao and Bao, Junwei and Nie, Jinran and others},
+  journal={arXiv preprint arXiv:2112.13610},
+  year={2021}
+}
+
+@article{mccann2018natural,
+  title={The natural language decathlon: Multitask learning as question answering},
+  author={McCann, Bryan and Keskar, Nitish Shirish and Xiong, Caiming and Socher, Richard},
+  journal={arXiv preprint arXiv:1806.08730},
+  year={2018}
+}
+
+@inproceedings{kiela2021dynabench,
+  title={Dynabench: Rethinking Benchmarking in NLP},
+  author={Kiela, Douwe and Bartolo, Max and Nie, Yixin and Kaushik, Divyansh and Geiger, Atticus and Wu, Zhengxuan and Vidgen, Bertie and Prasad, Grusha and Singh, Amanpreet and Ringshia, Pratik and others},
+  booktitle={Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  pages={4110--4124},
+  year={2021}
+}
+
+@inproceedings{chen2022kar,
+  title={E-KAR: A Benchmark for Rationalizing Natural Language Analogical Reasoning},
+  author={Chen, Jiangjie and Xu, Rui and Fu, Ziquan and Shi, Wei and Li, Zhongqiao and Zhang, Xinbo and Sun, Changzhi and Li, Lei and Xiao, Yanghua and Zhou, Hao},
+  booktitle={Findings of the Association for Computational Linguistics: ACL 2022},
+  pages={3941--3955},
+  year={2022}
+}
+
+@article{xu2021fewclue,
+  title={Fewclue: A chinese few-shot learning evaluation benchmark},
+  author={Xu, Liang and Lu, Xiaojing and Yuan, Chenyang and Zhang, Xuanwei and Xu, Huilin and Yuan, Hu and Wei, Guoao and Pan, Xiang and Tian, Xin and Qin, Libo and others},
+  journal={arXiv preprint arXiv:2107.07498},
+  year={2021}
+}
+
+@inproceedings{le2020flaubert,
+  title={FlauBERT: Unsupervised Language Model Pre-training for French},
+  author={Le, Hang and Vial, Lo{\"\i}c and Frej, Jibril and Segonne, Vincent and Coavoux, Maximin and Lecouteux, Benjamin and Allauzen, Alexandre and Crabb{\'e}, Benoit and Besacier, Laurent and Schwab, Didier},
+  booktitle={Proceedings of the 12th Language Resources and Evaluation Conference},
+  pages={2479--2490},
+  year={2020}
+}
+
+@inproceedings{gehrmann2021gem,
+  title={The GEM Benchmark: Natural Language Generation, its Evaluation and Metrics},
+  author={Gehrmann, Sebastian and Adewumi, Tosin and Aggarwal, Karmanya and Ammanamanchi, Pawan Sasanka and Aremu, Anuoluwapo and Bosselut, Antoine and Chandu, Khyathi Raghavi and Clinciu, Miruna-Adriana and Das, Dipanjan and Dhole, Kaustubh and others},
+  booktitle={Proceedings of the 1st Workshop on Natural Language Generation, Evaluation, and Metrics (GEM 2021)},
+  pages={96--120},
+  year={2021}
+}
+
+@inproceedings{liu2021glge,
+  title={GLGE: A New General Language Generation Evaluation Benchmark},
+  author={Liu, Dayiheng and Yan, Yu and Gong, Yeyun and Qi, Weizhen and Zhang, Hang and Jiao, Jian and Chen, Weizhu and Fu, Jie and Shou, Linjun and Gong, Ming and others},
+  booktitle={Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021},
+  pages={408--420},
+  year={2021}
+}
+
+@article{wang2018glue,
+  title={GLUE: A multi-task benchmark and analysis platform for natural language understanding},
+  author={Wang, Alex and Singh, Amanpreet and Michael, Julian and Hill, Felix and Levy, Omer and Bowman, Samuel R},
+  journal={arXiv preprint arXiv:1804.07461},
+  year={2018}
+}
+
+
+@inproceedings{canete2020spanish,
+  title={Spanish pre-trained bert model and evaluation data},
+  author={Canete, Jos{\'e} and Chaperon, Gabriel and Fuentes, Rodrigo and Ho, Jou-Hui and Kang, Hojin and P{\'e}rez, Jorge},
+  booktitle={Proceedings of the Practical Machine Learning for Developing Countries @ ICLR 2022},
+  year={2022}
+}
+
+@inproceedings{kakwani2020indicnlpsuite,
+  title={IndicNLPSuite: Monolingual corpora, evaluation benchmarks and pre-trained multilingual language models for Indian languages},
+  author={Kakwani, Divyanshu and Kunchukuttan, Anoop and Golla, Satish and Gokul, NC and Bhattacharyya, Avik and Khapra, Mitesh M and Kumar, Pratyush},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2020},
+  pages={4948--4961},
+  year={2020}
+}
+
+@inproceedings{koto2020indolem,
+  title={IndoLEM and IndoBERT: A Benchmark Dataset and Pre-trained Language Model for Indonesian NLP},
+  author={Koto, Fajri and Rahimi, Afshin and Lau, Jey Han and Baldwin, Timothy},
+  booktitle={Proceedings of the 28th International Conference on Computational Linguistics},
+  pages={757--770},
+  year={2020}
+}
+
+@inproceedings{cahyawijaya2021indonlg,
+  title={IndoNLG: Benchmark and Resources for Evaluating Indonesian Natural Language Generation},
+  author={Cahyawijaya, Samuel and Winata, Genta Indra and Wilie, Bryan and Vincentio, Karissa and Li, Xiaohong and Kuncoro, Adhiguna and Ruder, Sebastian and Lim, Zhi Yuan and Bahar, Syafri and Khodra, Masayu and others},
+  booktitle={Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing},
+  pages={8875--8898},
+  year={2021}
+}
+
+@inproceedings{wilie2020indonlu,
+  title={IndoNLU: Benchmark and Resources for Evaluating Indonesian Natural Language Understanding},
+  author={Wilie, Bryan and Vincentio, Karissa and Winata, Genta Indra and Cahyawijaya, Samuel and Li, Xiaohong and Lim, Zhi Yuan and Soleman, Sidik and Mahendra, Rahmad and Fung, Pascale and Bahar, Syafri and others},
+  booktitle={Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing},
+  pages={843--857},
+  year={2020}
+}
+
+@inproceedings{petroni2021kilt,
+  title={KILT: a Benchmark for Knowledge Intensive Language Tasks},
+  author={Petroni, Fabio and Piktus, Aleksandra and Fan, Angela and Lewis, Patrick and Yazdani, Majid and De Cao, Nicola and Thorne, James and Jernite, Yacine and Karpukhin, Vladimir and Maillard, Jean and others},
+  booktitle={Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  pages={2523--2544},
+  year={2021}
+}
+
+@inproceedings{klej,
+  title={KLEJ: Comprehensive Benchmark for Polish Language Understanding},
+  author={Rybak, Piotr and Mroczkowski, Robert and Tracz, Janusz and Gawlik, Ireneusz},
+  booktitle={Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  pages={1191--1201},
+  year={2020}
+}
+
+
+@article{park2021klue,
+  title={Klue: Korean language understanding evaluation},
+  author={Park, Sungjoon and Moon, Jihyung and Kim, Sungdong and Cho, Won Ik and Han, Jiyoon and Park, Jangwon and Song, Chisung and Kim, Junseong and Song, Yongsook and Oh, Taehwan and others},
+  journal={arXiv preprint arXiv:2105.09680},
+  year={2021}
+}
+
+@article{kim2022kobest,
+  title={KOBEST: Korean Balanced Evaluation of Significant Tasks},
+  author={Kim, Dohyeong and Jang, Myeongjun and Kwon, Deuk Sin and Davis, Eric},
+  journal={arXiv preprint arXiv:2204.04541},
+  year={2022}
+}
+
+@inproceedings{dumitrescu2021liro,
+  title={Liro: Benchmark and leaderboard for romanian language tasks},
+  author={Dumitrescu, Stefan Daniel and Rebeja, Petru and Lorincz, Beata and Gaman, Mihaela and Avram, Andrei and Ilie, Mihai and Pruteanu, Andrei and Stan, Adriana and Rosia, Lorena and Iacobescu, Cristina and others},
+  booktitle={Thirty-fifth Conference on Neural Information Processing Systems Datasets and Benchmarks Track (Round 1)},
+  year={2021}
+}
+
+@article{guan2022lot,
+  title={LOT: A Story-Centric Benchmark for Evaluating Chinese Long Text Understanding and Generation},
+  author={Guan, Jian and Feng, Zhuoer and Chen, Yamei and He, Ruilin and Mao, Xiaoxi and Fan, Changjie and Huang, Minlie},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={10},
+  pages={434--451},
+  year={2022}
+}
+
+@inproceedings{safaya2022mukayese,
+  title={Mukayese: Turkish NLP Strikes Back},
+  author={Safaya, Ali and Kurtulu{\c{s}}, Emirhan and Goktogan, Arda and Yuret, Deniz},
+  booktitle={Findings of the Association for Computational Linguistics: ACL 2022},
+  pages={846--863},
+  year={2022}
+}
+
+@article{khashabi2021parsinlu,
+  title={ParsiNLU: A Suite of Language Understanding Challenges for Persian},
+  author={Khashabi, Daniel and Cohan, Arman and Shakeri, Siamak and Hosseini, Pedram and Pezeshkpour, Pouya and Alikhani, Malihe and Aminnaseri, Moin and Bitaab, Marzieh and Brahman, Faeze and Ghazarian, Sarik and others},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={9},
+  pages={1147--1162},
+  year={2021}
+}
+
+@article{farahani2021parsbert,
+  title={Parsbert: Transformer-based model for persian language understanding},
+  author={Farahani, Mehrdad and Gharachorloo, Mohammad and Farahani, Marzieh and Manthouri, Mohammad},
+  journal={Neural Processing Letters},
+  volume={53},
+  number={6},
+  pages={3831--3847},
+  year={2021},
+  publisher={Springer}
+}
+
+@misc{Gomes2020,
+  author = {Gomes, J. R. S.},
+  title = {PLUE: Portuguese Language Understanding Evaluation},
+  year = {2020},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/jubs12/PLUE}},
+  commit = {e7d01cb17173fe54deddd421dd735920964eb26f}
+}
+
+@article{blinov2022rumedbench,
+  title={RuMedBench: A Russian Medical Language Understanding Benchmark},
+  author={Blinov, Pavel and Reshetnikova, Arina and Nesterov, Aleksandr and Zubkova, Galina and Kokh, Vladimir},
+  journal={arXiv preprint arXiv:2201.06499},
+  year={2022}
+}
+
+@inproceedings{shavrina-etal-2020-russiansuperglue,
+    title = "{R}ussian{S}uper{GLUE}: A {R}ussian Language Understanding Evaluation Benchmark",
+    author = "Shavrina, Tatiana  and
+      Fenogenova, Alena  and
+      Anton, Emelyanov  and
+      Shevelev, Denis  and
+      Artemova, Ekaterina  and
+      Malykh, Valentin  and
+      Mikhailov, Vladislav  and
+      Tikhonova, Maria  and
+      Chertok, Andrey  and
+      Evlampiev, Andrey",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.381",
+    doi = "10.18653/v1/2020.emnlp-main.381",
+    pages = "4717--4726"
+}
+
+
+@article{vzagar2022slovene,
+  title={Slovene SuperGLUE Benchmark: Translation and Evaluation},
+  author={{\v{Z}}agar, Ale{\v{s}} and Robnik-{\v{S}}ikonja, Marko},
+  journal={arXiv preprint arXiv:2202.04994},
+  year={2022}
+}
+
+@article{conneau2018senteval,
+  title={Senteval: An evaluation toolkit for universal sentence representations},
+  author={Conneau, Alexis and Kiela, Douwe},
+  journal={arXiv preprint arXiv:1803.05449},
+  year={2018}
+}
+
+
+@article{wang2019superglue,
+  title={Superglue: A stickier benchmark for general-purpose language understanding systems},
+  author={Wang, Alex and Pruksachatkun, Yada and Nangia, Nikita and Singh, Amanpreet and Michael, Julian and Hill, Felix and Levy, Omer and Bowman, Samuel},
+  journal={Advances in neural information processing systems},
+  volume={32},
+  year={2019}
+}
+
+
+@inproceedings{liang-etal-2020-xglue,
+    title = "{XGLUE}: A New Benchmark Datasetfor Cross-lingual Pre-training, Understanding and Generation",
+    author = "Liang, Yaobo  and
+      Duan, Nan  and
+      Gong, Yeyun  and
+      Wu, Ning  and
+      Guo, Fenfei  and
+      Qi, Weizhen  and
+      Gong, Ming  and
+      Shou, Linjun  and
+      Jiang, Daxin  and
+      Cao, Guihong  and
+      Fan, Xiaodong  and
+      Zhang, Ruofei  and
+      Agrawal, Rahul  and
+      Cui, Edward  and
+      Wei, Sining  and
+      Bharti, Taroon  and
+      Qiao, Ying  and
+      Chen, Jiun-Hung  and
+      Wu, Winnie  and
+      Liu, Shuguang  and
+      Yang, Fan  and
+      Campos, Daniel  and
+      Majumder, Rangan  and
+      Zhou, Ming",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.484",
+    doi = "10.18653/v1/2020.emnlp-main.484",
+    pages = "6008--6018"
+}
+
+@inproceedings{hu2020xtreme,
+  title={Xtreme: A massively multilingual multi-task benchmark for evaluating cross-lingual generalisation},
+  author={Hu, Junjie and Ruder, Sebastian and Siddhant, Aditya and Neubig, Graham and Firat, Orhan and Johnson, Melvin},
+  booktitle={International Conference on Machine Learning},
+  pages={4411--4421},
+  year={2020},
+  organization={PMLR}
+}
+
+
+@article{wang2022fine,
+  title={A Fine-grained Interpretability Evaluation Benchmark for Neural NLP},
+  author={Wang, Lijie and Shen, Yaozong and Peng, Shuyuan and Zhang, Shuai and Xiao, Xinyan and Liu, Hao and Tang, Hongxuan and Chen, Ying and Wu, Hua and Wang, Haifeng},
+  journal={arXiv preprint arXiv:2205.11097},
+  year={2022}
+}
+
+@misc{ruslan_kuprieiev_2022_7020480,
+  author       = {Ruslan Kuprieiev and
+                  skshetry and
+                  Dmitry Petrov and
+                  Paweł Redzyński and
+                  Peter Rowlands and
+                  Casper da Costa-Luis and
+                  Alexander Schepanovski and
+                  Ivan Shcheklein and
+                  Batuhan Taskaya and
+                  Gao and
+                  Jorge Orpinel and
+                  David de la Iglesia Castro and
+                  Fábio Santos and
+                  Aman Sharma and
+                  Zhanibek and
+                  Dani Hodovic and
+                  Dave Berenbaum and
+                  Nikita Kodenko and
+                  Andrew Grigorev and
+                  Earl and
+                  Nabanita Dash and
+                  daniele and
+                  George Vyshnya and
+                  maykulkarni and
+                  Max Hora and
+                  Vera and
+                  Sanidhya Mangal and
+                  Wojciech Baranowski},
+  title        = {DVC: Data Version Control - Git for Data \& Models},
+  month        = aug,
+  year         = 2022,
+  publisher    = {Zenodo},
+  version      = {2.20.1},
+  doi          = {10.5281/zenodo.7020480},
+  url          = {https://doi.org/10.5281/zenodo.7020480}
+}
+
+@misc{wandb,
+title = {Experiment Tracking with Weights and Biases},
+year = {2020},
+note = {Software available from wandb.com},
+url={https://www.wandb.com/},
+author = {Biewald, Lukas},
+}
+@misc{persian-nlp-benchmark,
+  author = { Zohreh Fallahnejad and Ali Zarezade},
+  title = {Persian NLP Benchmark},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/Mofid-AI/persian-nlp-benchmark#persian-nlp-benchmark}}
+}

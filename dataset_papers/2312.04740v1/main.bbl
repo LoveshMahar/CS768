@@ -1,0 +1,292 @@
+\providecommand{\latin}[1]{#1}
+\makeatletter
+\providecommand{\doi}
+  {\begingroup\let\do\@makeother\dospecials
+  \catcode`\{=1 \catcode`\}=2 \doi@aux}
+\providecommand{\doi@aux}[1]{\endgroup\texttt{#1}}
+\makeatother
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{44}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
+
+\bibitem[Brown \latin{et~al.}(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal, Neelakantan, Shyam, Sastry, Askell, \latin{et~al.} others]{brown2020language}
+Brown,~T.; Mann,~B.; Ryder,~N.; Subbiah,~M.; Kaplan,~J.~D.; Dhariwal,~P.; Neelakantan,~A.; Shyam,~P.; Sastry,~G.; Askell,~A.; others Language models are few-shot learners. \emph{Advances in neural information processing systems} \textbf{2020}, \emph{33}, 1877--1901\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Raffel \latin{et~al.}(2020)Raffel, Shazeer, Roberts, Lee, Narang, Matena, Zhou, Li, Liu, \latin{et~al.} others]{raffel2020exploring}
+Raffel,~C.; Shazeer,~N.; Roberts,~A.; Lee,~K.; Narang,~S.; Matena,~M.; Zhou,~Y.; Li,~W.; Liu,~P.~J.; others Exploring the limits of transfer learning with a unified text-to-text transformer. \emph{J. Mach. Learn. Res.} \textbf{2020}, \emph{21}, 1--67\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chowdhery \latin{et~al.}(2022)Chowdhery, Narang, Devlin, Bosma, Mishra, Roberts, Barham, Chung, Sutton, Gehrmann, \latin{et~al.} others]{chowdhery2022palm}
+Chowdhery,~A.; Narang,~S.; Devlin,~J.; Bosma,~M.; Mishra,~G.; Roberts,~A.; Barham,~P.; Chung,~H.~W.; Sutton,~C.; Gehrmann,~S.; others Palm: Scaling language modeling with pathways. \emph{arXiv preprint arXiv:2204.02311} \textbf{2022}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Scao \latin{et~al.}(2022)Scao, Fan, Akiki, Pavlick, Ili{\'c}, Hesslow, Castagn{\'e}, Luccioni, Yvon, Gall{\'e}, \latin{et~al.} others]{scao2022bloom}
+Scao,~T.~L.; Fan,~A.; Akiki,~C.; Pavlick,~E.; Ili{\'c},~S.; Hesslow,~D.; Castagn{\'e},~R.; Luccioni,~A.~S.; Yvon,~F.; Gall{\'e},~M.; others Bloom: A 176b-parameter open-access multilingual language model. \emph{arXiv preprint arXiv:2211.05100} \textbf{2022}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Zhang \latin{et~al.}(2022)Zhang, Roller, Goyal, Artetxe, Chen, Chen, Dewan, Diab, Li, Lin, \latin{et~al.} others]{zhang2022opt}
+Zhang,~S.; Roller,~S.; Goyal,~N.; Artetxe,~M.; Chen,~M.; Chen,~S.; Dewan,~C.; Diab,~M.; Li,~X.; Lin,~X.~V.; others Opt: Open pre-trained transformer language models. \emph{arXiv preprint arXiv:2205.01068} \textbf{2022}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sharir \latin{et~al.}(2020)Sharir, Peleg, and Shoham]{sharir2020cost}
+Sharir,~O.; Peleg,~B.; Shoham,~Y. The cost of training nlp models: A concise overview. \emph{arXiv preprint arXiv:2004.08900} \textbf{2020}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[He \latin{et~al.}(2018)He, Bian, and Jaggi]{he2018cola}
+He,~L.; Bian,~A.; Jaggi,~M. Cola: Decentralized linear learning. \emph{Advances in Neural Information Processing Systems} \textbf{2018}, \emph{31}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Tang \latin{et~al.}(2018)Tang, Lian, Yan, Zhang, and Liu]{tang2018d}
+Tang,~H.; Lian,~X.; Yan,~M.; Zhang,~C.; Liu,~J. $D^2$: Decentralized training over decentralized data. International Conference on Machine Learning. 2018; pp 4848--4856\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Luo \latin{et~al.}(2019)Luo, Lin, Zhuo, and Qian]{luo2019hop}
+Luo,~Q.; Lin,~J.; Zhuo,~Y.; Qian,~X. Hop: Heterogeneity-aware decentralized training. Proceedings of the Twenty-Fourth International Conference on Architectural Support for Programming Languages and Operating Systems. 2019; pp 893--907\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Yuan \latin{et~al.}(2022)Yuan, He, Davis, Zhang, Dao, Chen, Liang, Re, and Zhang]{yuan2022decentralized}
+Yuan,~B.; He,~Y.; Davis,~J.~Q.; Zhang,~T.; Dao,~T.; Chen,~B.; Liang,~P.; Re,~C.; Zhang,~C. Decentralized Training of Foundation Models in Heterogeneous Environments. \emph{arXiv preprint arXiv:2206.01288} \textbf{2022}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Garipov \latin{et~al.}(2018)Garipov, Izmailov, Podoprikhin, Vetrov, and Wilson]{garipov2018loss}
+Garipov,~T.; Izmailov,~P.; Podoprikhin,~D.; Vetrov,~D.~P.; Wilson,~A.~G. Loss surfaces, mode connectivity, and fast ensembling of dnns. \emph{Advances in neural information processing systems} \textbf{2018}, \emph{31}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Frankle \latin{et~al.}(2020)Frankle, Dziugaite, Roy, and Carbin]{frankle2020linear}
+Frankle,~J.; Dziugaite,~G.~K.; Roy,~D.; Carbin,~M. Linear mode connectivity and the lottery ticket hypothesis. International Conference on Machine Learning. 2020; pp 3259--3269\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Tatro \latin{et~al.}(2020)Tatro, Chen, Das, Melnyk, Sattigeri, and Lai]{tatro2020optimizing}
+Tatro,~N.; Chen,~P.-Y.; Das,~P.; Melnyk,~I.; Sattigeri,~P.; Lai,~R. Optimizing mode connectivity via neuron alignment. \emph{Advances in Neural Information Processing Systems} \textbf{2020}, \emph{33}, 15300--15311\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Mirzadeh \latin{et~al.}(2020)Mirzadeh, Farajtabar, Gorur, Pascanu, and Ghasemzadeh]{mirzadeh2020linear}
+Mirzadeh,~S.~I.; Farajtabar,~M.; Gorur,~D.; Pascanu,~R.; Ghasemzadeh,~H. Linear mode connectivity in multitask and continual learning. \emph{arXiv preprint arXiv:2010.04495} \textbf{2020}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Entezari \latin{et~al.}(2021)Entezari, Sedghi, Saukh, and Neyshabur]{entezari2021role}
+Entezari,~R.; Sedghi,~H.; Saukh,~O.; Neyshabur,~B. The role of permutation invariance in linear mode connectivity of neural networks. \emph{arXiv preprint arXiv:2110.06296} \textbf{2021}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ainsworth \latin{et~al.}(2022)Ainsworth, Hayase, and Srinivasa]{ainsworth2022git}
+Ainsworth,~S.~K.; Hayase,~J.; Srinivasa,~S. Git re-basin: Merging models modulo permutation symmetries. \emph{arXiv preprint arXiv:2209.04836} \textbf{2022}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jordan \latin{et~al.}(2022)Jordan, Sedghi, Saukh, Entezari, and Neyshabur]{jordan2022repair}
+Jordan,~K.; Sedghi,~H.; Saukh,~O.; Entezari,~R.; Neyshabur,~B. REPAIR: REnormalizing Permuted Activations for Interpolation Repair. \emph{arXiv preprint arXiv:2211.08403} \textbf{2022}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Du \latin{et~al.}(2019)Du, Jia, and Song]{du2019robust}
+Du,~M.; Jia,~R.; Song,~D. Robust anomaly detection and backdoor attack detection via differential privacy. \emph{arXiv preprint arXiv:1911.07116} \textbf{2019}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Zhu and Li(2021)Zhu, and Li]{zhu2021privacy}
+Zhu,~X.; Li,~H. Privacy-preserving decentralized federated deep learning. ACM Turing Award Celebration Conference-China (ACM TURC 2021). 2021; pp 33--38\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Pasquini \latin{et~al.}(2022)Pasquini, Raynal, and Troncoso]{pasquini2022privacy}
+Pasquini,~D.; Raynal,~M.; Troncoso,~C. On the privacy of decentralized machine learning. \emph{arXiv preprint arXiv:2205.08443} \textbf{2022}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Song \latin{et~al.}(2021)Song, Cao, Sun, Li, and Xu]{song2021try}
+Song,~Q.; Cao,~J.; Sun,~K.; Li,~Q.; Xu,~K. Try before You Buy: Privacy-preserving Data Evaluation on Cloud-based Machine Learning Data Marketplace. Annual Computer Security Applications Conference. 2021; pp 260--272\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Azcoitia and Laoutaris(2022)Azcoitia, and Laoutaris]{azcoitia2022try}
+Azcoitia,~S.~A.; Laoutaris,~N. Try Before You Buy: A practical data purchasing algorithm for real-world data marketplaces. Proceedings of the 1st International Workshop on Data Economy. 2022; pp 27--33\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Myerson(1981)]{myerson1981optimal}
+Myerson,~R.~B. Optimal auction design. \emph{Mathematics of operations research} \textbf{1981}, \emph{6}, 58--73\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Nash~Jr(1950)]{nash1950bargaining}
+Nash~Jr,~J.~F. The bargaining problem. \emph{Econometrica: Journal of the econometric society} \textbf{1950}, 155--162\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ghorbani and Zou(2019)Ghorbani, and Zou]{ghorbani2019data}
+Ghorbani,~A.; Zou,~J. Data shapley: Equitable valuation of data for machine learning. International Conference on Machine Learning. 2019; pp 2242--2251\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Agarwal \latin{et~al.}(2019)Agarwal, Dahleh, and Sarkar]{agarwal2019marketplace}
+Agarwal,~A.; Dahleh,~M.; Sarkar,~T. A marketplace for data: An algorithmic solution. Proceedings of the 2019 ACM Conference on Economics and Computation. 2019; pp 701--726\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Fernandez \latin{et~al.}(2020)Fernandez, Subramaniam, and Franklin]{fernandez2020data}
+Fernandez,~R.~C.; Subramaniam,~P.; Franklin,~M.~J. Data market platforms: Trading data assets to solve data problems. \emph{arXiv preprint arXiv:2002.01047} \textbf{2020}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chen \latin{et~al.}(2022)Chen, Li, and Xu]{chen2022selling}
+Chen,~J.; Li,~M.; Xu,~H. Selling Data To a Machine Learner: Pricing via Costly Signaling. International Conference on Machine Learning. 2022; pp 3336--3359\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jagadeesan \latin{et~al.}(2022)Jagadeesan, Jordan, and Haghtalab]{jagadeesan2022competition}
+Jagadeesan,~M.; Jordan,~M.~I.; Haghtalab,~N. Competition, Alignment, and Equilibria in Digital Marketplaces. \emph{arXiv preprint arXiv:2208.14423} \textbf{2022}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chen \latin{et~al.}(2019)Chen, Koutris, and Kumar]{chen2019towards}
+Chen,~L.; Koutris,~P.; Kumar,~A. Towards model-based pricing for machine learning in a data marketplace. Proceedings of the 2019 International Conference on Management of Data. 2019; pp 1535--1552\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Liu \latin{et~al.}(2021)Liu, Lou, Liu, Xiong, Pei, and Sun]{liu2021dealer}
+Liu,~J.; Lou,~J.; Liu,~J.; Xiong,~L.; Pei,~J.; Sun,~J. Dealer: An End-to-End Model Marketplace with Differential Privacy. \emph{Proc. VLDB Endow.} \textbf{2021}, \emph{14}, 957–969\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Cobb and Douglas(1928)Cobb, and Douglas]{cobb1928theory}
+Cobb,~C.~W.; Douglas,~P.~H. A Theory of Production. \emph{The American Economic Review} \textbf{1928}, \emph{18}, 139--165\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[LeCun \latin{et~al.}(1998)LeCun, Bottou, Bengio, and Haffner]{lecun1998gradient}
+LeCun,~Y.; Bottou,~L.; Bengio,~Y.; Haffner,~P. Gradient-based learning applied to document recognition. \emph{Proceedings of the IEEE} \textbf{1998}, \emph{86}, 2278--2324\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Krizhevsky \latin{et~al.}(2009)Krizhevsky, Hinton, \latin{et~al.} others]{Krizhevsky09learningmultiple}
+Krizhevsky,~A.; Hinton,~G.; others Learning multiple layers of features from tiny images. \textbf{2009}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Le and Yang(2015)Le, and Yang]{le2015tiny}
+Le,~Y.; Yang,~X. Tiny imagenet visual recognition challenge. \emph{CS 231N} \textbf{2015}, \emph{7}, 3\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[He \latin{et~al.}(2016)He, Zhang, Ren, and Sun]{he2016deep}
+He,~K.; Zhang,~X.; Ren,~S.; Sun,~J. Deep residual learning for image recognition. Proceedings of the IEEE conference on computer vision and pattern recognition. 2016; pp 770--778\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[McMahan \latin{et~al.}(2017)McMahan, Moore, Ramage, Hampson, and y~Arcas]{mcmahan2017communication}
+McMahan,~B.; Moore,~E.; Ramage,~D.; Hampson,~S.; y~Arcas,~B.~A. Communication-efficient learning of deep networks from decentralized data. Artificial intelligence and statistics. 2017; pp 1273--1282\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[YAVA{\c{S}}(1994)]{yavacs1994economics}
+YAVA{\c{S}},~A. Economics of brokerage: an overview. \emph{Journal of Real Estate Literature} \textbf{1994}, \emph{2}, 169--195\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Khanuja \latin{et~al.}(2021)Khanuja, Johnson, and Talukdar]{khanuja2021mergedistill}
+Khanuja,~S.; Johnson,~M.; Talukdar,~P. Mergedistill: Merging pre-trained language models using distillation. \emph{arXiv preprint arXiv:2106.02834} \textbf{2021}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lawrenz \latin{et~al.}(2019)Lawrenz, Sharma, and Rausch]{lawrenz2019blockchain}
+Lawrenz,~S.; Sharma,~P.; Rausch,~A. Blockchain technology as an approach for data marketplaces. Proceedings of the 2019 international conference on blockchain technology. 2019; pp 55--59\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Boenisch(2021)]{boenisch2021systematic}
+Boenisch,~F. A systematic review on model watermarking for neural networks. \emph{Frontiers in big Data} \textbf{2021}, \emph{4}, 729663\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Aminabadi \latin{et~al.}(2022)Aminabadi, Rajbhandari, Awan, Li, Li, Zheng, Ruwase, Smith, Zhang, Rasley, \latin{et~al.} others]{aminabadi2022deepspeed}
+Aminabadi,~R.~Y.; Rajbhandari,~S.; Awan,~A.~A.; Li,~C.; Li,~D.; Zheng,~E.; Ruwase,~O.; Smith,~S.; Zhang,~M.; Rasley,~J.; others DeepSpeed-inference: enabling efficient inference of transformer models at unprecedented scale. SC22: International Conference for High Performance Computing, Networking, Storage and Analysis. 2022; pp 1--15\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kossen \latin{et~al.}(2021)Kossen, Farquhar, Gal, and Rainforth]{kossen2021active}
+Kossen,~J.; Farquhar,~S.; Gal,~Y.; Rainforth,~T. Active testing: Sample-efficient model evaluation. International Conference on Machine Learning. 2021; pp 5753--5763\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{\'C}usti{\'c} \latin{et~al.}(2017){\'C}usti{\'c}, Sokol, Punnen, and Bhattacharya]{custic2017bilinear}
+{\'C}usti{\'c},~A.; Sokol,~V.; Punnen,~A.~P.; Bhattacharya,~B. The bilinear assignment problem: complexity and polynomially solvable special cases. \emph{Mathematical programming} \textbf{2017}, \emph{166}, 185--205\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

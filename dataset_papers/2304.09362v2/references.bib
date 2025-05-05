@@ -1,0 +1,604 @@
+@comment //  _   _  ____ ____
+@comment // | | | |/ ___| __ )
+@comment // | | | | |   |  _ \
+@comment // | |_| | |___| |_) |
+@comment //  \___/ \____|____/
+@comment //
+
+% \begin{itemize}
+%     \item $\tilde{\mathcal{O}}\left(H^{3.2} T^{0.8} \sqrt{|\mathcal{S} \| \mathcal{A}|}\right)$ regret with NO constraint violation.
+%     \item Designed on tabular settings.(Discrete state space, discrete action space.
+%     \item A two time scale algorithm with three components.
+%     \begin{itemize}
+%         \item a Q-function for the cumulative reward.
+%         \item a Q-function for the cumulative utility for constraint.
+%         \item a virtual-Queue that estimates the cumulative constraint violation.
+%     \end{itemize}
+%     \item \url{https://proceedings.mlr.press/v151/wei22a/wei22a.pdf}
+% \end{itemize}
+
+% \texttt{Provably Efficient Model-Free Constrained RL with
+% Linear Function Approximation}
+% \begin{itemize}
+%     \item $\tilde{\mathcal{O}}\left(\sqrt{d^{3} H^{3} T}\right)$ regret with $\tilde{\mathcal{O}}\left(\sqrt{d^{3} H^{3} T}\right)$ constraint violation.
+%     \item Transition dynamics/reward function represented as a linear function.
+%     \item \url{https://arxiv.org/pdf/2206.11889.pdf}
+%     \item Another similar paper with different MDP setting(Link). \url{http://proceedings.mlr.press/v130/ding21d/ding21d.pdf}
+% \end{itemize}
+
+
+@comment Model-Free RL learner
+@comment Lagrangian formulation where lambda is determined by a
+@comment Q-learning algorithm to provide tradeoffs
+@comment (cumulative reward vs constraint satisfaction).
+@comment https://proceedings.mlr.press/v151/wei22a/wei22a.pdf
+@inproceedings{wei2022triple,
+  title={Triple-Q: A Model-Free Algorithm for Constrained Reinforcement Learning with Sublinear Regret and Zero Constraint Violation},
+  author={Wei, Honghao and Liu, Xin and Ying, Lei},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={3274--3307},
+  year={2022},
+  organization={PMLR}
+}
+
+
+@comment https://arxiv.org/pdf/2206.11889.pdf
+@article{ghosh2022provably,
+  title={Provably efficient model-free constrained rl with linear function approximation},
+  author={Ghosh, Arnob and Zhou, Xingyu and Shroff, Ness},
+  journal={arXiv preprint arXiv:2206.11889},
+  year={2022}
+}
+
+@comment https://proceedings.mlr.press/v130/ding21d/ding21d.pdf
+@inproceedings{ding2021provably,
+  title={Provably efficient safe exploration via primal-dual policy optimization},
+  author={Ding, Dongsheng and Wei, Xiaohan and Yang, Zhuoran and Wang, Zhaoran and Jovanovic, Mihailo},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={3304--3312},
+  year={2021},
+  organization={PMLR}
+}
+
+@inproceedings{jin2020provably,
+  title={Provably efficient reinforcement learning with linear function approximation},
+  author={Jin, Chi and Yang, Zhuoran and Wang, Zhaoran and Jordan, Michael I},
+  booktitle={Conference on Learning Theory},
+  pages={2137--2143},
+  year={2020},
+  organization={PMLR}
+}
+
+@comment //  _                            _
+@comment // | |__   __ _ ______ _ _ __ __| |___
+@comment // | '_ \ / _` |_  / _` | '__/ _` / __|
+@comment // | | | | (_| |/ / (_| | | | (_| \__ \
+@comment // |_| |_|\__,_/___\__,_|_|  \__,_|___/
+@comment //
+
+
+% Not superintelligent killer AI, but disparity as chief problem of AI
+@article{crawford2016there,
+  title={There is a blind spot in {A}{I} Research},
+  author={Crawford, Kate and Calo, Ryan},
+  journal={Nature News},
+  volume={538},
+  number={7625},
+  pages={311},
+  year={2016}
+}
+
+% recommender systems can create a "pernicious feedback loop", decreasing diversity and utility
+@inproceedings{chaney2018algorithmic,
+  title={How Algorithmic Confounding in Recommendation Systems Increases Homogeneity and Decreases Utility},
+  author={Chaney, Allison JB and Stewart, Brandon M and Engelhardt, Barbara E},
+  booktitle={Proceedings of the 12th ACM Conference on Recommender Systems},
+  pages={224--232},
+  year={2018},
+  organization={ACM}
+}
+
+% Machine learning can exacerbate credit disparities
+@article{fuster2018predictably,
+  title={Predictably Unequal? {T}he Effects of Machine Learning on Credit Markets},
+  author={Fuster, Andreas and Goldsmith-Pinkham, Paul and Ramadorai, Tarun and Walther, Ansgar},
+  journal={The Effects of Machine Learning on Credit Markets},
+  year={2018}
+}
+
+
+@article{liu2017calibrated,
+  title={Calibrated fairness in bandits},
+  author={Liu, Yang and Radanovic, Goran and Dimitrakakis, Christos and Mandal, Debmalya and Parkes, David C},
+  journal={arXiv preprint arXiv:1707.01875},
+  year={2017}
+}
+
+@article{joseph2016fairness,
+  title={Fairness in learning: Classic and contextual bandits},
+  author={Joseph, Matthew and Kearns, Michael and Morgenstern, Jamie H and Roth, Aaron},
+  journal={Advances in neural information processing systems},
+  volume={29},
+  year={2016}
+}
+@article{tang2021bandit,
+  title={Bandit learning with delayed impact of actions},
+  author={Tang, Wei and Ho, Chien-Ju and Liu, Yang},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={26804--26817},
+  year={2021}
+}
+@inproceedings{jabbari2017fairness,
+  title={Fairness in reinforcement learning},
+  author={Jabbari, Shahin and Joseph, Matthew and Kearns, Michael and Morgenstern, Jamie and Roth, Aaron},
+  booktitle={International conference on machine learning},
+  pages={1617--1626},
+  year={2017},
+  organization={PMLR}
+}
+@article{auer2002finite,
+  title={Finite-time analysis of the multiarmed bandit problem},
+  author={Auer, Peter and Cesa-Bianchi, Nicolo and Fischer, Paul},
+  journal={Machine learning},
+  volume={47},
+  number={2},
+  pages={235--256},
+  year={2002},
+  publisher={Springer}
+}
+% self-reinforcing policing bias
+@inproceedings{ensign2018runaway,
+  title={Runaway Feedback Loops in Predictive Policing},
+  author={Ensign, Danielle and Friedler, Sorelle A and Neville, Scott and Scheidegger, Carlos and Venkatasubramanian, Suresh},
+  booktitle={Conference of Fairness, Accountability, and Transparency},
+  year={2018}
+}
+
+
+@comment //  ____                              _
+@comment // |  _ \ _   _ _ __   __ _ _ __ ___ (_) ___ ___
+@comment // | | | | | | | '_ \ / _` | '_ ` _ \| |/ __/ __|
+@comment // | |_| | |_| | | | | (_| | | | | | | | (__\__ \
+@comment // |____/ \__, |_| |_|\__,_|_| |_| |_|_|\___|___/
+@comment //        |___/
+
+% Our setting with heterogenous costs and rational updates; Group-specific
+% classifiers. Statistical discrimination
+@article{coate1993will,
+  title={Will Affirmative-Action Policies Eliminate Negative Stereotypes?},
+  author={Coate, Stephen and Loury, Glenn C},
+  journal={The American Economic Review},
+  pages={1220--1240},
+  year={1993}
+}
+
+% Fairness is not static
+% contrasts findings with liu2018delayed; recurses with updating classifiers
+@inproceedings{d2020fairness,
+  title={Fairness is not Static: Deeper Understanding of Long Term Fairness via Simulation Studies},
+  author={D'Amour, Alexander and Srinivasan, Hansa and Atwood, James and Baljekar, Pallavi and Sculley, D and Halpern, Yoni},
+  booktitle={Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency},
+  pages={525--534},
+  year={2020}
+}
+
+% Long-Term Qualification (Markov updates to label); Full dynamics
+@article{zhang2020fair,
+  title={How do Fair Decisions Fare in Long-Term Qualification?},
+  author={Zhang, Xueru and Tu, Ruibo and Liu, Yang and Liu, Mingyan and Kjellstr{\"o}m, Hedvig and Zhang, Kun and Zhang, Cheng},
+  journal={arXiv preprint arXiv:2010.11300},
+  year={2020}
+}
+
+% Effort and "Social Models" (best existing strategy in population); Full dynamics
+@article{heidari2019on,
+  title = {On the Long-term Impact of Algorithmic Decision Policies: Effort Unfairness and Feature Segregation through Social Learning},
+  author = {Hoda Heidari and Vedant Nanda and Krishna P. Gummadi},
+  journal = {the International Conference on Machine Learning (ICML)},
+  year = {2019}
+}
+
+% Markov updates with transitions that must be learned with time.
+@article{wen2019fairness,
+  title={Fairness with Dynamics},
+  author={Wen, Min and Bastani, Osbert and Topcu, Ufuk},
+  journal={arXiv preprint arXiv:1901.08568},
+  year={2019}
+}
+
+% best-response like coate1993will, but with group-dependent feature distributions.
+@inproceedings{liu2019disparate,
+  title={The Disparate Equilibria of Algorithmic Decision Making when Individuals Invest Rationally},
+  author={Liu, Lydia T and Wilson, Ashia and Haghtalab, Nika and Kalai, Adam Tauman and Borgs, Christian and Chayes, Jennifer},
+  booktitle={Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency},
+  pages={381--391},
+  year={2020}
+}
+
+% Hu, chen; Uses statistical discriminiation mechanism; Full Dynamics
+@inproceedings{hu2018short,
+  title={A Short-Term Intervention for Long-Term Fairness in the Labor Market},
+  author={Hu, Lily and Chen, Yiling},
+  booktitle={Proceedings of the 2018 World Wide Web Conference on World Wide Web},
+  pages={1389--1398},
+  year={2018},
+  organization={International World Wide Web Conferences Steering Committee}
+}
+
+% population-level adaptation; Full dynamics
+% considers tao(v ; g)  as probability of prediction v in {0, 1} for group g, but assumes in section 4.1
+% that tao(v ; g) = v -- i.e., the classifier is perfect.
+% When imposing affimative action, utility depends only on whether someone is qualified or not.
+% There is no idea of error rates. Section 4.3 only treats miscalibration in applying affirmative action
+@inproceedings{mouzannar2019fair,
+  title={From Fair Decision Making to Social Equality},
+  author={Mouzannar, Hussein and Ohannessian, Mesrob I and Srebro, Nathan},
+  booktitle={Proceedings of the Conference on Fairness, Accountability, and Transparency},
+  pages={359--368},
+  year={2019},
+  organization={ACM}
+}
+
+@article{williams2019dynamic,
+  title={Dynamic modeling and equilibria in fair decision making},
+  author={Williams, Joshua and Kolter, J Zico},
+  journal={arXiv preprint arXiv:1911.06837},
+  year={2019}
+}
+
+% Delayed Impact (Markov updates to features); Single-step
+@inproceedings{liu2018delayed,
+  title={Delayed Impact of Fair Machine Learning},
+  author={Liu, Lydia T and Dean, Sarah and Rolf, Esther and Simchowitz, Max and Hardt, Moritz},
+  booktitle={International Conference on Machine Learning},
+  pages={3150--3158},
+  year={2018},
+  organization={PMLR}
+}
+
+% Strategic Manipulation; costs differ between groups; Stackelberg formulation
+@inproceedings{hu2019disparate,
+  title={The Disparate Effects of Strategic Manipulation},
+  author={Hu, Lily and Immorlica, Nicole and Vaughan, Jennifer Wortman},
+  booktitle={Proceedings of the Conference on Fairness, Accountability, and Transparency},
+  pages={259--268},
+  year={2019}
+}
+
+% Considers fixed point of induced distribution, but does not consider
+% fairness
+@inproceedings{perdomo2020performative,
+  title={Performative prediction},
+  author={Perdomo, Juan and Zrnic, Tijana and Mendler-D{\"u}nner, Celestine and Hardt, Moritz},
+  booktitle={International Conference on Machine Learning},
+  pages={7599--7609},
+  year={2020},
+  organization={PMLR}
+}
+
+
+@article{raab2021unintended,
+  title={Unintended selection: Persistent qualification rate disparities and interventions},
+  author={Raab, Reilly and Liu, Yang},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={26053--26065},
+  year={2021}
+}
+
+
+@comment //   __       _                                _       __
+@comment //  / _| __ _(_)_ __ _ __   ___  ___ ___    __| | ___ / _|___
+@comment // | |_ / _` | | '__| '_ \ / _ \/ __/ __|  / _` |/ _ \ |_/ __|
+@comment // |  _| (_| | | |  | | | |  __/\__ \__ \ | (_| |  __/  _\__ \
+@comment // |_|  \__,_|_|_|  |_| |_|\___||___/___/  \__,_|\___|_| |___/
+@comment //
+
+% Most statistical definitions of fairness are bad
+@article{corbett2018measure,
+  title={ThE Measure and Mismeasure of Fairness: A Critical Review of Fair Machine Learning},
+  author={Corbett-Davies, Sam and Goel, Sharad},
+  journal={arXiv preprint arXiv:1808.00023},
+  year={2018}
+}
+
+
+@article{chen2022fairness,
+  title={Fairness Transferability Subject to Bounded Distribution Shift},
+  author={Chen, Yatong and Raab, Reilly and Wang, Jialu and Liu, Yang},
+  journal={arXiv preprint arXiv:2206.00129},
+  year={2022}
+}
+
+% Combines group and individual notions of fairness:
+% "similar individuals are treated similarly. We also present an
+% adaptation of our approach to achieve the complementary goal of
+% “fair affirmative action,” which guarantees statistical parity.
+% Statistical parity is "demographics of acceptance same as general
+% demographics"
+@inproceedings{dwork2012fairness,
+  title={Fairness Through Awareness},
+  author={Dwork, Cynthia and Hardt, Moritz and Pitassi, Toniann and Reingold, Omer and Zemel, Richard},
+  booktitle={Proceedings of the 3rd innovations in theoretical computer science conference},
+  pages={214--226},
+  year={2012}
+}
+
+% Extends approach of dwork2012fairness; learning distance metric
+% Demographic parity plus individual fairness using learned metric
+@inproceedings{zemel2013learning,
+  title={Learning Fair Representations},
+  author={Zemel, Rich and Wu, Yu and Swersky, Kevin and Pitassi, Toni and Dwork, Cynthia},
+  booktitle={International conference on machine learning},
+  pages={325--333},
+  year={2013},
+  organization={PMLR}
+}
+
+% Defines disparate impact as 80/20 rule
+@inproceedings{feldman2015certifying,
+  title={CertIfying and Removing Disparate Impact},
+  author={Feldman, Michael and Friedler, Sorelle A and Moeller, John and Scheidegger, Carlos and Venkatasubramanian, Suresh},
+  booktitle={proceedings of the 21th ACM SIGKDD international conference on knowledge discovery and data mining},
+  pages={259--268},
+  year={2015}
+}
+
+% Defines Equalized Odds: Prediction and Group are independent conditioned on label
+% and Equal Opportunity: Prediction and Group are independent conditioned on Y = 1
+@misc{hardt2016equality,
+      title={Equality of Opportunity in Supervised Learning},
+      author={Moritz Hardt and Eric Price and Nathan Srebro},
+      year={2016},
+      eprint={1610.02413},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+% Concurrently defined Equalized odds as "disparate mistreatment"
+@inproceedings{zafar2017fairness,
+  title={Fairness0 Beyond Disparate Treatment \& Disparate Impact: Learning Classification without Disparate Mistreatment},
+  author={Zafar, Muhammad Bilal and Valera, Isabel and Gomez Rodriguez, Manuel and Gummadi, Krishna P},
+  booktitle={Proceedings of the 26th international conference on world wide web},
+  pages={1171--1180},
+  year={2017}
+}
+
+% Introduces equal error rates (false positive and negative rates) as fairness criteria.
+% Same as equalized odds, but for non-deterministic classifier.
+% Shown to be incompatible with Demographic Parity when unequal qualification rates.
+@article{chouldechova2017fair,
+  title={Fair Prediction with Disparate Impact: A Study of Bias in Recidivism Prediction Instruments},
+  author={Chouldechova, Alexandra},
+  journal={Big data},
+  volume={5},
+  number={2},
+  pages={153--163},
+  year={2017}
+}
+
+% Introduces Calibration (estimated probability = true probability)
+% As criteria for group fairness
+% "well-calibrated"
+@article{kleinberg2016inherent,
+  title={Inherent Trade-Offs in the Fair Determination of Risk Scores},
+  author={Kleinberg, Jon and Mullainathan, Sendhil and Raghavan, Manish},
+  journal={arXiv preprint arXiv:1609.05807},
+  year={2016}
+}
+
+@comment //  ____  _     _       ____  _     _  __ _
+@comment // |  _ \(_)___| |_    / ___|| |__ (_)/ _| |_
+@comment // | | | | / __| __|   \___ \| '_ \| | |_| __|
+@comment // | |_| | \__ \ |_ _   ___) | | | | |  _| |_
+@comment // |____/|_|___/\__(_) |____/|_| |_|_|_|  \__|
+@comment //
+
+
+
+
+@comment //  ____         __      ____  _
+@comment // / ___|  __ _ / _| ___|  _ \| |
+@comment // \___ \ / _` | |_ / _ \ |_) | |
+@comment //  ___) | (_| |  _|  __/  _ <| |___
+@comment // |____/ \__,_|_|  \___|_| \_\_____|
+@comment //
+
+@comment connects RL and control theory for robotics, but the
+@comment mathematical formalisms are the same for our domain
+@comment delineates HARD, PROBABALISTIC, and SOFT (Regularized) constraints
+@comment outlines challenge of synthesizing HARD constaints that
+@comment are typical in control theory with the SOFT constraints
+@comment typical of data-driven approaches
+@comment https://arxiv.org/pdf/2108.06266.pdf
+@article{brunke2022safe,
+  title={Safe learning in robotics: From learning-based control to safe reinforcement learning},
+  author={Brunke, Lukas and Greeff, Melissa and Hall, Adam W and Yuan, Zhaocong and Zhou, Siqi and Panerati, Jacopo and Schoellig, Angela P},
+  journal={Annual Review of Control, Robotics, and Autonomous Systems},
+  volume={5},
+  pages={411--444},
+  year={2022},
+  publisher={Annual Reviews}
+}
+
+@comment HARD contraints
+@comment Provides contraints on RL, but these contraints must be convex
+@comment in mixed-stratedy space.
+@comment Does not account for utility; only constraints.
+@comment https://proceedings.neurips.cc/paper/2019/file/873be0705c80679f2c71fbf4d872df59-Paper.pdf
+@article{miryoosefi2019reinforcement,
+  title={Reinforcement learning with convex constraints},
+  author={Miryoosefi, Sobhan and Brantley, Kiant{\'e} and Daume III, Hal and Dudik, Miro and Schapire, Robert E},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+@comment Family of HARD constraints (family of Lambda)
+@comment by reducing well-known myopic fairness definitions in binary-classification
+@comment to convex constraints, but requires randomized classifiers and does
+@comment not consider dynamics.
+@comment https://arxiv.org/abs/1803.02453
+@inproceedings{agarwal2018reductions,
+  title={A reductions approach to fair classification},
+  author={Agarwal, Alekh and Beygelzimer, Alina and Dud{\'\i}k, Miroslav and Langford, John and Wallach, Hanna},
+  booktitle={International Conference on Machine Learning},
+  pages={60--69},
+  year={2018},
+  organization={PMLR}
+}
+
+
+@comment Saftey of sample complexity (dynamical considerations) as "Safety Cmplexity"
+@comment https://arxiv.org/abs/2205.10330
+@article{gu2022review,
+  title={A Review of Safe Reinforcement Learning: Methods, Theory and Applications},
+  author={Gu, Shangding and Yang, Long and Du, Yali and Chen, Guang and Walter, Florian and Wang, Jun and Yang, Yaodong and Knoll, Alois},
+  journal={arXiv preprint arXiv:2205.10330},
+  year={2022}
+}
+
+
+@comment python modules for experiment.
+@article{stable-baselines3,
+  author  = {Antonin Raffin and Ashley Hill and Adam Gleave and Anssi Kanervisto and Maximilian Ernestus and Noah Dormann},
+  title   = {Stable-Baselines3: Reliable Reinforcement Learning Implementations},
+  journal = {Journal of Machine Learning Research},
+  year    = {2021},
+  volume  = {22},
+  number  = {268},
+  pages   = {1-8},
+}
+
+% TD3
+@inproceedings{fujimoto2018addressing,
+  title={Addressing function approximation error in actor-critic methods},
+  author={Fujimoto, Scott and Hoof, Herke and Meger, David},
+  booktitle={International conference on machine learning},
+  pages={1587--1596},
+  year={2018},
+  organization={PMLR}
+}
+
+@incollection{NEURIPS2019_9015,
+title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+booktitle = {Advances in Neural Information Processing Systems 32},
+pages = {8024--8035},
+year = {2019},
+publisher = {Curran Associates, Inc.},
+}
+
+@comment softmax property
+@article{epasto2020optimal,
+  title={Optimal approximation-smoothness tradeoffs for soft-max functions},
+  author={Epasto, Alessandro and Mahdian, Mohammad and Mirrokni, Vahab and Zampetakis, Emmanouil},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={2651--2660},
+  year={2020}
+}
+
+% UCI dataset
+@misc{Dua:2019 ,
+author = "Dua, Dheeru and Graff, Casey",
+year = "2017",
+title = "{UCI} Machine Learning Repository",
+url = "http://archive.ics.uci.edu/ml",
+institution = "University of California, Irvine, School of Information and Computer Sciences" }
+
+% model based
+@comment slater condition
+@article{efroni2020exploration,
+  title={Exploration-exploitation in constrained mdps},
+  author={Efroni, Yonathan and Mannor, Shie and Pirotta, Matteo},
+  journal={arXiv preprint arXiv:2003.02189},
+  year={2020}
+}
+
+@article{singh2020learning,
+  title={Learning in Markov decision processes under constraints},
+  author={Singh, Rahul and Gupta, Abhishek and Shroff, Ness B},
+  journal={arXiv preprint arXiv:2002.12435},
+  year={2020}
+}
+
+@article{brantley2020constrained,
+  title={Constrained episodic reinforcement learning in concave-convex and knapsack settings},
+  author={Brantley, Kiant{\'e} and Dudik, Miro and Lykouris, Thodoris and Miryoosefi, Sobhan and Simchowitz, Max and Slivkins, Aleksandrs and Sun, Wen},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={16315--16326},
+  year={2020}
+}
+
+@inproceedings{zheng2020constrained,
+  title={Constrained upper confidence reinforcement learning},
+  author={Zheng, Liyuan and Ratliff, Lillian},
+  booktitle={Learning for Dynamics and Control},
+  pages={620--629},
+  year={2020},
+  organization={PMLR}
+}
+
+@inproceedings{kalagarla2021sample,
+  title={A sample-efficient algorithm for episodic finite-horizon mdp with constraints},
+  author={Kalagarla, Krishna C and Jain, Rahul and Nuzzo, Pierluigi},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={35},
+  number={9},
+  pages={8030--8037},
+  year={2021}
+}
+
+@article{liu2021learning,
+  title={Learning policies with zero or bounded constraint violation for constrained mdps},
+  author={Liu, Tao and Zhou, Ruida and Kalathil, Dileep and Kumar, Panganamala and Tian, Chao},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={17183--17193},
+  year={2021}
+}
+
+@inproceedings{xu2021crpo,
+  title={Crpo: A new approach for safe reinforcement learning with convergence guarantee},
+  author={Xu, Tengyu and Liang, Yingbin and Lan, Guanghui},
+  booktitle={International Conference on Machine Learning},
+  pages={11480--11491},
+  year={2021},
+  organization={PMLR}
+}
+
+@article{ding2020natural,
+  title={Natural policy gradient primal-dual method for constrained markov decision processes},
+  author={Ding, Dongsheng and Zhang, Kaiqing and Basar, Tamer and Jovanovic, Mihailo},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={8378--8390},
+  year={2020}
+}
+
+@inproceedings{bai2022achieving,
+  title={Achieving zero constraint violation for constrained reinforcement learning via primal-dual approach},
+  author={Bai, Qinbo and Bedi, Amrit Singh and Agarwal, Mridul and Koppel, Alec and Aggarwal, Vaneet},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={36},
+  number={4},
+  pages={3682--3689},
+  year={2022}
+}
+
+@article{brunton2021modern,
+  title={Modern Koopman theory for dynamical systems},
+  author={Brunton, Steven L and Budi{\v{s}}i{\'c}, Marko and Kaiser, Eurika and Kutz, J Nathan},
+  journal={arXiv preprint arXiv:2102.12086},
+  year={2021}
+}
+
+@article{pan2019reinforcement,
+  title={Reinforcement learning with dynamic boltzmann softmax updates},
+  author={Pan, Ling and Cai, Qingpeng and Meng, Qi and Chen, Wei and Huang, Longbo and Liu, Tie-Yan},
+  journal={arXiv preprint arXiv:1903.05926},
+  year={2019}
+}

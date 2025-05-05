@@ -1,0 +1,2110 @@
+
+@Article{subweibull,
+AUTHOR = {Zhang, Huiming and Wei, Haoyu},
+TITLE = {Sharper Sub-Weibull Concentrations},
+JOURNAL = {Mathematics},
+VOLUME = {10},
+YEAR = {2022},
+NUMBER = {13},
+ARTICLE-NUMBER = {2252},
+URL = {https://www.mdpi.com/2227-7390/10/13/2252},
+ISSN = {2227-7390},
+DOI = {10.3390/math10132252}
+}
+
+
+
+
+
+@inproceedings{Liu20pruningNTK,
+  author    = {Tianlin Liu and
+               Friedemann Zenke},
+  title     = {Finding trainable sparse networks through Neural Tangent Transfer},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning (ICML'20)},
+  pages     = {6336--6347},
+  year      = {2020}
+}
+
+@inproceedings{Yang22Transfer,
+ author = {Yang, Ge and Hu, Edward and Babuschkin, Igor and Sidor, Szymon and Liu, Xiaodong and Farhi, David and Ryder, Nick and Pachocki, Jakub and Chen, Weizhu and Gao, Jianfeng},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+ pages = {17084--17097},
+ publisher = {Curran Associates, Inc.},
+ title = {Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/8df7c2e3c3c3be098ef7b382bd2c37ba-Paper.pdf},
+ volume = {34},
+ year = {2021}
+}
+
+
+@inproceedings{Yang21FeatureLearning,
+title = 	 {Tensor Programs IV: Feature Learning in Infinite-Width Neural Networks},
+author =       {Yang, Greg and Hu, Edward J.},
+booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+pages = 	 {11727--11737},
+year = 	 {2021},
+editor = 	 {Meila, Marina and Zhang, Tong},
+volume = 	 {139},
+series = 	 {Proceedings of Machine Learning Research},
+month = 	 {18--24 Jul},
+publisher =    {PMLR},
+pdf = 	 {http://proceedings.mlr.press/v139/yang21c/yang21c.pdf},
+url = 	 {https://proceedings.mlr.press/v139/yang21c.html},
+abstract = 	 {As its width tends to infinity, a deep neural network’s behavior under gradient descent can become simplified and predictable (e.g. given by the Neural Tangent Kernel (NTK)), if it is parametrized appropriately (e.g. the NTK parametrization). However, we show that the standard and NTK parametrizations of a neural network do not admit infinite-width limits that can *learn* features, which is crucial for pretraining and transfer learning such as with BERT. We propose simple modifications to the standard parametrization to allow for feature learning in the limit. Using the *Tensor Programs* technique, we derive explicit formulas for such limits. On Word2Vec and few-shot learning on Omniglot via MAML, two canonical tasks that rely crucially on feature learning, we compute these limits exactly. We find that they outperform both NTK baselines and finite-width networks, with the latter approaching the infinite-width feature learning performance as width increases.}
+}
+
+@inproceedings{
+lee2018deep,
+author       = {Jaehoon Lee and
+                  Yasaman Bahri and
+                  Roman Novak and
+                  Samuel S. Schoenholz and
+                  Jeffrey Pennington and
+                  Jascha Sohl{-}Dickstein},
+  title        = {Deep Neural Networks as Gaussian Processes},
+  booktitle    = {6th International Conference on Learning Representations, {ICLR} 2018,
+                  Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track Proceedings},
+  publisher    = {OpenReview.net},
+  year         = {2018},
+  url          = {https://openreview.net/forum?id=B1EA-M-0Z},
+  timestamp    = {Mon, 17 Jan 2022 07:47:59 +0100},
+  biburl       = {https://dblp.org/rec/conf/iclr/LeeBNSPS18.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@book{GPbook,
+author = {Rasmussen, Carl Edward and Williams, Christopher K. I.},
+title = {Gaussian Processes for Machine Learning (Adaptive Computation and Machine Learning)},
+year = {2005},
+isbn = {026218253X},
+publisher = {The MIT Press}
+}
+
+@inproceedings{Yang2019TensorPI,
+author = {Yang, Greg},
+booktitle = {Advances in Neural Information Processing Systems},
+editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+pages = {},
+publisher = {Curran Associates, Inc.},
+title = {Wide Feedforward or Recurrent Neural Networks of Any Architecture are Gaussian Processes},
+url = {https://proceedings.neurips.cc/paper_files/paper/2019/file/5e69fda38cda2060819766569fd93aa5-Paper.pdf},
+volume = {32},
+year = {2019}
+}
+
+
+@inproceedings{Yang21NTK,
+title = 	 {Tensor Programs IIb: Architectural Universality Of Neural Tangent Kernel Training Dynamics},
+author =       {Yang, Greg and Littwin, Etai},
+booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+pages = 	 {11762--11772},
+year = 	 {2021},
+editor = 	 {Meila, Marina and Zhang, Tong},
+volume = 	 {139},
+series = 	 {Proceedings of Machine Learning Research},
+month = 	 {18--24 Jul},
+publisher =    {PMLR},
+pdf = 	 {http://proceedings.mlr.press/v139/yang21f/yang21f.pdf},
+url = 	 {https://proceedings.mlr.press/v139/yang21f.html},
+abstract = 	 {Yang (2020) recently showed that the Neural Tangent Kernel (NTK) at initialization has an infinite-width limit for a large class of architectures including modern staples such as ResNet and Transformers. However, their analysis does not apply to training. Here, we show the same neural networks (in the so-called NTK parametrization) during training follow a kernel gradient descent dynamics in function space, where the kernel is the infinite-width NTK. This completes the proof of the architectural universality of NTK behavior. To achieve this result, we apply the Tensor Programs technique: Write the entire SGD dynamics inside a Tensor Program and analyze it via the Master Theorem. To facilitate this proof, we develop a graphical notation for Tensor Programs, which we believe is also an important contribution toward the pedagogy and exposition of the Tensor Programs technique.}
+}
+
+
+@inproceedings{Lee19NTKLinear,
+author = {Lee, Jaehoon and Xiao, Lechao and Schoenholz, Samuel and Bahri, Yasaman and Novak, Roman and Sohl-Dickstein, Jascha and Pennington, Jeffrey},
+booktitle = {Advances in Neural Information Processing Systems},
+editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+pages = {},
+publisher = {Curran Associates, Inc.},
+title = {Wide Neural Networks of Any Depth Evolve as Linear Models Under Gradient Descent},
+url = {https://proceedings.neurips.cc/paper_files/paper/2019/file/0d1a9651497a38d8b1c3871c84528bd4-Paper.pdf},
+volume = {32},
+year = {2019}
+}
+
+@inproceedings{
+Hanin2020Finite,
+title={Finite Depth and Width Corrections to the Neural Tangent Kernel},
+author={Boris Hanin and Mihai Nica},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=SJgndT4KwB}
+}
+
+@Article{harris2020array,
+ title         = {Array programming with {NumPy}},
+ author        = {Charles R. Harris and K. Jarrod Millman and St{\'{e}}fan J.
+                 van der Walt and Ralf Gommers and Pauli Virtanen and David
+                 Cournapeau and Eric Wieser and Julian Taylor and Sebastian
+                 Berg and Nathaniel J. Smith and Robert Kern and Matti Picus
+                 and Stephan Hoyer and Marten H. van Kerkwijk and Matthew
+                 Brett and Allan Haldane and Jaime Fern{\'{a}}ndez del
+                 R{\'{i}}o and Mark Wiebe and Pearu Peterson and Pierre
+                 G{\'{e}}rard-Marchant and Kevin Sheppard and Tyler Reddy and
+                 Warren Weckesser and Hameer Abbasi and Christoph Gohlke and
+                 Travis E. Oliphant},
+ year          = {2020},
+ month         = sep,
+ journal       = {Nature},
+ volume        = {585},
+ number        = {7825},
+ pages         = {357--362},
+ doi           = {10.1038/s41586-020-2649-2},
+ publisher     = {Springer Science and Business Media {LLC}},
+ url           = {https://doi.org/10.1038/s41586-020-2649-2}
+}
+
+@incollection{NEURIPS2019_9015,
+title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+booktitle = {Advances in Neural Information Processing Systems 32},
+editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+pages = {8024--8035},
+year = {2019},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf}
+}
+
+
+@InProceedings{barsbey2021heavy,
+  author    = {Melih Barsbey and
+               Milad Sefidgaran and
+               Murat A. Erdogdu and
+               Ga{\"{e}}l Richard and
+               Umut Simsekli},
+  title     = {Heavy Tails in {SGD} and Compressibility of Overparametrized Neural Networks},
+booktitle = {Proceedings of the 35th Conference on Neural Information Processing Systems (NeurIPS'21)},
+  pages     = {29364--29378},
+  year      = {2021}
+}
+
+@Article{Bhadra2017,
+  Title                    = {The horseshoe+ estimator of ultra-sparse signals},
+  Author                   = {Bhadra, A. and Datta, J. and Polson, N. G. and Willard, B.},
+  Journal                  = {Bayesian Analysis},
+  Year                     = {2017},
+  Number                   = {4},
+  Pages                    = {1105--1131},
+  Volume                   = {12},
+
+  Publisher                = {International Society for Bayesian Analysis}
+}
+
+@article{bordenave2012around,
+	title={Around the circular law},
+	author={Bordenave, Charles and Chafa{\"\i}, Djalil},
+	journal={Probability surveys},
+	volume={9},
+	pages={1--89},
+	year={2012},
+	publisher={Institute of Mathematical Statistics and Bernoulli Society}
+}
+
+@InProceedings{Caron2008,
+  author       = {Caron, F. and Doucet, A.},
+  booktitle    = {Proceedings of the 25th International Conference on Machine learning (ICML'08)},
+  title        = {Sparse {B}ayesian nonparametric regression},
+  year         = {2008},
+  pages        = {88--95}
+}
+
+@Article{Carvalho2010,
+  Title                    = {The horseshoe estimator for sparse signals},
+  Author                   = {Carvalho, C. M. and Polson, N. G. and Scott, J. G.},
+  Journal                  = {Biometrika},
+  Year                     = {2010},
+  Number                   = {2},
+  Pages                    = {465--480},
+  Volume                   = {97},
+
+  Publisher                = {Oxford University Press}
+}
+
+@Book{Daley2003,
+  Title                    = {An Introduction to the Theory of Point Processes. Vol. I. Elementary Theory and Methods},
+  Author                   = {Daley, D. J. J and Vere-Jones, D.},
+  Publisher                = {Springer},
+  Year                     = {2003},
+  Edition                  = {Second Edition}
+}
+
+@article{davydov2008strictly,
+	title={Strictly stable distributions on convex cones},
+	author={Davydov, Youri and Molchanov, Ilya and Zuyev, Sergei},
+	journal={Electronic Journal of Probability},
+	volume={13},
+	pages={259--321},
+	year={2008},
+	publisher={Institute of Mathematical Statistics and Bernoulli Society}
+}
+
+@Article{Ghosh2017,
+  Title                    = {Model selection in {B}ayesian neural networks via horseshoe priors},
+  Author                   = {Ghosh, S. and Doshi-Velez, F.},
+  Journal                  = {arXiv preprint arXiv:1705.10388},
+  Year                     = {2017}
+}
+
+@Article{Griffin2017,
+  Title                    = {Hierarchical shrinkage priors for regression models},
+  Author                   = {Griffin, J. E. and Brown, P. J.},
+  Journal                  = {Bayesian Analysis},
+  Year                     = {2017},
+  Number                   = {1},
+  Pages                    = {135--159},
+  Volume                   = {12},
+
+  Publisher                = {International Society for Bayesian Analysis}
+}
+
+@Article{Griffin2011,
+  Title                    = {{B}ayesian hyper-lassos with non-convex penalization},
+  Author                   = {Griffin, J. E. and Brown, P. J.},
+  Journal                  = {Australian \& New Zealand Journal of Statistics},
+  Year                     = {2011},
+  Number                   = {4},
+  Pages                    = {423--442},
+  Volume                   = {53},
+  Publisher                = {Wiley Online Library}
+}
+
+@Article{Griffin2010,
+  Title                    = {Inference with normal-gamma prior distributions in regression problems},
+  Author                   = {Griffin, J. E. and Brown, P. J.},
+  Journal                  = {Bayesian Analysis},
+  Year                     = {2010},
+  Number                   = {1},
+  Pages                    = {171--188},
+  Volume                   = {5},
+  Publisher                = {International Society for Bayesian Analysis}
+}
+
+@Book{Kallenberg2002,
+  author    = {Kallenberg, O.},
+  publisher = {Springer},
+  title     = {Foundations of Modern Probability},
+  year      = {2002},
+  edition   = {Second},
+}
+
+@Article{Lee2019,
+  Title                    = {A unified construction for series representations and finite approximations of completely random measures},
+  Author                   = {Lee, J. and Miscouridou, X. and Caron, F.},
+  Journal                  = {arXiv preprint arXiv:1905.10733},
+  Year                     = {2019}
+}
+
+@article{Lepage81,
+	title={Convergence to a stable distribution via order statistics},
+	author={LePage, Raoul and Woodroofe, Michael and Zinn, Joel},
+	journal={The Annals of Probability},
+	pages={624--632},
+	year={1981},
+	publisher={JSTOR}
+}
+
+@Article{McCullagh2018,
+  Title                    = {Statistical sparsity},
+  Author                   = {McCullagh, P. and Polson, N.},
+  Journal                  = {Biometrika},
+  Year                     = {2018},
+  Number                   = {4},
+  Pages                    = {797--814},
+  Volume                   = {105},
+
+  Publisher                = {Oxford University Press}
+}
+
+@Article{Perman1992,
+  Title                    = {Size-biased sampling of {P}oisson point processes and excursions},
+  Author                   = {Perman, M. and Pitman, J. and Yor, M.},
+  Journal                  = {Probability Theory and Related Fields},
+  Year                     = {1992},
+  Number                   = {1},
+  Pages                    = {21--39},
+  Volume                   = {92},
+
+  Publisher                = {Springer}
+}
+
+@Article{Piironen2017,
+  Title                    = {Sparsity information and regularization in the horseshoe and other shrinkage priors},
+  Author                   = {Piironen, J. and Vehtari, A.},
+  Journal                  = {Electronic Journal of Statistics},
+  Year                     = {2017},
+  Number                   = {2},
+  Pages                    = {5018--5051},
+  Volume                   = {11},
+
+  Publisher                = {The Institute of Mathematical Statistics and the Bernoulli Society}
+}
+
+@Article{Polson2012,
+  Title                    = {Local shrinkage rules, {L}{\'e}vy processes and regularized regression},
+  Author                   = {Polson, N. and Scott, J.},
+  Journal                  = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+  Year                     = {2012},
+  Number                   = {2},
+  Pages                    = {287--311},
+  Volume                   = {74},
+
+  Publisher                = {Wiley Online Library}
+}
+
+@Article{Polson2010,
+  Title                    = {Shrink globally, act locally: Sparse {B}ayesian regularization and prediction},
+  Author                   = {Polson, N. G. and Scott, J. G.},
+  Journal                  = {Bayesian statistics},
+  Year                     = {2010},
+  Pages                    = {501--538},
+  Volume                   = {9},
+
+  Publisher                = {Citeseer}
+}
+
+@Article{Resnick1986,
+  Title                    = {Point processes, regular variation and weak convergence},
+  Author                   = {Resnick, S.},
+  Journal                  = {Advances in Applied Probability},
+  Year                     = {1986},
+  Number                   = {1},
+  Pages                    = {66--138},
+  Volume                   = {18},
+
+  Publisher                = {Cambridge University Press}
+}
+
+@Book{Resnick2007,
+  Title                    = {Heavy-tail phenomena: probabilistic and statistical modeling},
+  Author                   = {Resnick, S. I.},
+  Publisher                = {Springer Science \& Business Media},
+  Year                     = {2007}
+}
+
+@Book{Resnick1987,
+  Title                    = {Extreme values, regular variation and point processes},
+  Author                   = {Resnick, S. I.},
+  Publisher                = {Springer},
+  Year                     = {1987}
+}
+
+@InProceedings{Teh2009,
+  Title                    = {Indian buffet processes with power-law behavior},
+  Author                   = {Teh, Y. W. and Gorur, D.},
+  Booktitle                = {Proceedings of the 23rd Conference on Neural Information Processing Systems (NeurIPS'09)},
+  Year                     = {2009},
+  Pages                    = {1838--1846}
+}
+
+@Article{VanDerPas2014,
+  Title                    = {The horseshoe estimator: Posterior concentration around nearly black vectors},
+  Author                   = {Van Der Pas, S. and Kleijn, B. and Van Der Vaart, A.},
+  Journal                  = {Electronic Journal of Statistics},
+  Year                     = {2014},
+  Number                   = {2},
+  Pages                    = {2585--2618},
+  Volume                   = {8},
+
+  Publisher                = {The Institute of Mathematical Statistics and the Bernoulli Society}
+}
+
+@Article{Rubio2011,
+  author    = {Rubio, F. and Mestre, X.},
+  title     = {Spectral convergence for a general class of random matrices},
+  journal   = {Statistics \& probability letters},
+  year      = {2011},
+  volume    = {81},
+  number    = {5},
+  pages     = {592--602},
+  publisher = {Elsevier},
+}
+
+@Article{Marchenko1967,
+  author    = {Marchenko, V. A. and Pastur, L. A.},
+  title     = {Distribution of eigenvalues for some sets of random matrices},
+  journal   = {Matematicheskii Sbornik},
+  year      = {1967},
+  volume    = {114},
+  number    = {4},
+  pages     = {507--536},
+  publisher = {Russian Academy of Sciences, Steklov Mathematical Institute of Russian~?},
+}
+
+@Book{Yao2015,
+  title     = {Large sample covariance matrices and high-dimensional data analysis},
+  publisher = {Cambridge University Press Cambridge},
+  year      = {2015},
+  author    = {Yao, J. and Zheng, S.g and Bai, Z.},
+}
+
+@InProceedings{Liu2020,
+  author    = {Liu, S. and Dobriban, E.},
+  title     = {Ridge regression: Structure, cross-validation, and sketching},
+  booktitle = {Proceedings of the 10th International Conference on Learning Representations (ICLR'20)},
+  year      = {2020}
+}
+
+@Article{Dobriban2018,
+  author    = {Dobriban, E. and Wager, S.},
+  title     = {High-dimensional asymptotics of prediction: Ridge regression and classification},
+  journal   = {The Annals of Statistics},
+  year      = {2018},
+  volume    = {46},
+  number    = {1},
+  pages     = {247--279},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{Dobriban2021,
+  author    = {Dobriban, E. and Sheng, Y.},
+  title     = {Distributed linear regression by averaging},
+  journal   = {The Annals of Statistics},
+  year      = {2021},
+  volume    = {49},
+  number    = {2},
+  pages     = {918--943},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@InProceedings{Sheng2020,
+  author       = {Sheng, Y. and Dobriban, E.},
+  title        = {One-shot Distributed Ridge Regression in High Dimensions},
+  booktitle    = {Proceedings of the 37th International Conference on Machine Learning (ICML'20)},
+  year         = {2020},
+  pages        = {8763--8772}
+}
+
+@Article{Dobriban2020,
+  author  = {Dobriban, E. and Sheng, Y.},
+  title   = {{WONDER}: Weighted One-shot Distributed Ridge Regression in High Dimensions.},
+  journal = {Journal of Machine Learning Research},
+  year    = {2020},
+  volume  = {21},
+  number  = {66},
+  pages   = {1--52},
+}
+
+@Article{Heiny2019,
+  author    = {Heiny, J},
+  journal   = {Journal of Mathematical Sciences},
+  title     = {Random Matrix Theory for Heavy-Tailed Time Series},
+  year      = {2019},
+  number    = {5},
+  pages     = {652--666},
+  volume    = {237},
+  publisher = {Springer},
+}
+
+@Article{Belinschi2009,
+  author    = {Belinschi, S. and Dembo, A. and Guionnet, A.},
+  journal   = {Communications in Mathematical Physics},
+  title     = {Spectral measure of heavy tailed band and covariance random matrices},
+  year      = {2009},
+  number    = {3},
+  pages     = {1023--1055},
+  volume    = {289},
+  publisher = {Springer},
+}
+
+@Article{BenArous2008,
+  author    = {{Ben Arous}, G. Ben and Guionnet, A},
+  journal   = {Communications in Mathematical Physics},
+  title     = {The spectrum of heavy tailed random matrices},
+  year      = {2008},
+  number    = {3},
+  pages     = {715--751},
+  volume    = {278},
+  publisher = {Springer},
+}
+
+@InProceedings{Lee2016,
+  Title                    = {Finite-dimensional {BFRY} priors and variational {B}ayesian inference for power law models},
+  Author                   = {Lee, J. and James, L. F. and Choi, S.},
+  Booktitle                = {Proceedings of the 30th Conference on Neural Information Processing Systems (NeurIPS'16)},
+  Year                     = {2016},
+  Pages                    = {3162--3170}
+}
+
+
+@Article{Bertoin2006,
+  Title                    = {On a particular class of self-decomposable random variables: the durations of {B}essel excursions straddling independent exponential times.},
+  Author                   = {Bertoin, J. and Fujita, T. and Roynette, B. and Yor, M.},
+  Year                     = {2006}
+}
+
+@Article{Ayed2020,
+  author  = {Ayed, F. and Lee, J. and Caron, F.},
+  journal = {arXiv preprint arXiv:2006.10968},
+  title   = {The Normal-Generalised Gamma-{P}areto process: A novel pure-jump {L}\'evy process with flexible tail and jump-activity properties},
+  year    = {2020},
+}
+
+@Article{Hastie2019,
+  author  = {Hastie, T. and Montanari, A. and Rosset, S. and Tibshirani, R.},
+  journal = {arXiv preprint arXiv:1903.08560},
+  title   = {Surprises in high-dimensional ridgeless least squares interpolation},
+  year    = {2019},
+}
+
+@Article{Jung2021,
+  author  = {Jung, P. and Lee, H. and Lee, J. and Yang, H.},
+  journal = {arXiv preprint arXiv:2106.11064},
+  title   = {$\alpha $-Stable convergence of heavy-tailed infinitely-wide neural networks},
+  year    = {2021},
+}
+
+@Article{Aalen1992,
+  author    = {Aalen, O.},
+  journal   = {The Annals of Applied Probability},
+  title     = {Modelling heterogeneity in survival analysis by the compound Poisson distribution},
+  year      = {1992},
+  pages     = {951--972},
+  publisher = {JSTOR},
+}
+
+@Article{Andrieu2009,
+  author    = {Andrieu, C. and Roberts, G. O.},
+  journal   = {The Annals of Statistics},
+  title     = {The pseudo-marginal approach for efficient {M}onte {C}arlo computations},
+  year      = {2009},
+  number    = {2},
+  pages     = {697--725},
+  volume    = {37},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{Andrieu2010,
+  Title                    = {Particle {M}arkov chain {M}onte {M}arlo methods},
+  Author                   = {Andrieu, C. and Doucet, A. and Holenstein, R.},
+  Journal                  = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+  Year                     = {2010},
+  Number                   = {3},
+  Pages                    = {269--342},
+  Volume                   = {72},
+
+  Publisher                = {Wiley Online Library}
+}
+
+@InProceedings{Ayed2019,
+  author    = {Ayed, F. and Lee, J. and Caron, F.},
+  booktitle = {Proceedings of the 36th International Conference on Machine Learning (ICML'19)},
+  title     = {Beyond the {C}hinese Restaurant and {P}itman-{Y}or processes: Statistical Models with double power-law behavior},
+  year      = {2019},
+  pages     = {395--404}
+}
+
+@Article{AitSahalia2009,
+  author    = {A{\"\i}t-Sahalia, Y. and Jacod, J.},
+  journal   = {The Annals of Statistics},
+  title     = {Estimating the degree of activity of jumps in high frequency data},
+  year      = {2009},
+  number    = {5A},
+  pages     = {2202--2244},
+  volume    = {37},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{Barndorff-Nielsen1997,
+  Title                    = {Processes of normal inverse {G}aussian type},
+  Author                   = {Barndorff-Nielsen, O. E.},
+  Journal                  = {Finance and stochastics},
+  Year                     = {1997},
+  Number                   = {1},
+  Pages                    = {41--68},
+  Volume                   = {2},
+
+  Publisher                = {Springer}
+}
+
+@Article{Barndorff-Nielsen2001,
+  Title                    = {Non-{G}aussian {O}rnstein--{U}hlenbeck-based models and some of their uses in financial economics},
+  Author                   = {Barndorff-Nielsen, O. E. and Shephard, N.},
+  Journal                  = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+  Year                     = {2001},
+  Number                   = {2},
+  Pages                    = {167--241},
+  Volume                   = {63},
+
+  Publisher                = {Wiley Online Library}
+}
+
+@Article{BarndorffNielsen2002,
+  author  = {Barndorff-Nielsen, O. and Shephard, N.},
+  journal = {Theory Probab. Math. Statist},
+  title   = {Normal modified stable processes},
+  year    = {2002},
+  pages   = {1--20},
+  volume  = {65},
+}
+
+@Article{Beaumont2003,
+  author    = {Beaumont, M. A.},
+  journal   = {Genetics},
+  title     = {Estimation of population growth or decline in genetically monitored populations},
+  year      = {2003},
+  number    = {3},
+  pages     = {1139--1160},
+  volume    = {164},
+  publisher = {Genetics Soc America},
+}
+
+@Article{Belomestny2010,
+  author    = {Belomestny, D.},
+  journal   = {The Annals of Statistics},
+  title     = {Spectral estimation of the fractional order of a {L}{\'e}vy process},
+  year      = {2010},
+  number    = {1},
+  pages     = {317--351},
+  volume    = {38},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{Belomestny2013,
+  author    = {Belomestny, D. and Panov, V.},
+  journal   = {Electronic Journal of Statistics},
+  title     = {Estimation of the activity of jumps in time-changed {L}{\'e}vy models},
+  year      = {2013},
+  pages     = {2970--3003},
+  volume    = {7},
+  publisher = {The Institute of Mathematical Statistics and the Bernoulli Society},
+}
+
+@Book{Bingham1989,
+  author    = {Bingham, N. H. and Goldie, C. M. and Teugels, J. L.},
+  publisher = {Cambridge university press},
+  title     = {Regular Variation},
+  year      = {1989},
+}
+
+@Article{Blattberg1974,
+  Title                    = {A comparison of the stable and student distributions as statistical models for stock prices},
+  Author                   = {Blattberg, R. C. and Gonedes, N. J.},
+  Journal                  = {The journal of business},
+  Year                     = {1974},
+  Number                   = {2},
+  Pages                    = {244--280},
+  Volume                   = {47},
+
+  Publisher                = {JSTOR}
+}
+
+@Article{Blumenthal1961,
+  Title                    = {Sample functions of stochastic processes with stationary independent increments},
+  Author                   = {Blumenthal, R. M. and Getoor, R. K.},
+  Journal                  = {Journal of Mathematics and Mechanics},
+  Year                     = {1961},
+  Number                   = {3},
+  Pages                    = {493--516},
+  Volume                   = {10},
+
+  Publisher                = {JSTOR}
+}
+
+@Book{Bondesson1992,
+  author    = {Bondesson, L.},
+  publisher = {Lecture notes in Statistics. Springer Verlag.},
+  title     = {Generalized gamma convolutions and related classes of distributions and densities},
+  year      = {1992},
+  volume    = {76},
+}
+
+@Article{Brix1999,
+  Title                    = {Generalized gamma measures and shot-noise {C}ox processes},
+  Author                   = {Brix, A.},
+  Journal                  = {Advances in Applied Probability},
+  Year                     = {1999},
+  Number                   = {4},
+  Pages                    = {929--953},
+  Volume                   = {31},
+
+  Publisher                = {Cambridge University Press}
+}
+
+@Article{Carr2002,
+  Title                    = {The fine structure of asset returns: An empirical investigation},
+  Author                   = {Carr, P. and Geman, H. and Madan, D. B. and Yor, M.},
+  Journal                  = {The Journal of Business},
+  Year                     = {2002},
+  Number                   = {2},
+  Pages                    = {305--332},
+  Volume                   = {75},
+
+  Publisher                = {JSTOR}
+}
+
+@Article{Champagnat2013,
+  Title                    = {An empirical analysis of heavy-tails behavior of financial data: The case for power laws},
+  Author                   = {Champagnat, N. and Deaconu, M. and Lejay, A.e and Navet, N. and Boukherouaa, S.},
+  Year                     = {2013}
+}
+
+@Misc{Chopin,
+  author       = {Chopin, N.},
+  howpublished = {\url{https://github.com/nchopin/particles}},
+  title        = {Particles library: {S}equential {M}onte {C}arlo in {P}ython.},
+  journal      = {GitHub repository},
+}
+
+@Article{Chopin2013,
+  author    = {Chopin, N. and Jacob, P. E. and Papaspiliopoulos, O.},
+  journal   = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+  title     = {{SMC$^2$}: an efficient algorithm for sequential analysis of state space models},
+  year      = {2013},
+  number    = {3},
+  pages     = {397--426},
+  volume    = {75},
+  publisher = {Wiley Online Library},
+}
+
+@Book{Cont2004,
+  Title                    = {Financial modelling with jump processes},
+  Author                   = {Cont, R. and Tankov, P.},
+  Publisher                = {CRC press},
+  Year                     = {2004},
+  Volume                   = {2}
+}
+
+@InCollection{Cont1997,
+  Title                    = {Scaling in stock market data: stable laws and beyond},
+  Author                   = {Cont, R. and Potters, M. and Bouchaud, J. P.},
+  Booktitle                = {Scale invariance and beyond},
+  Publisher                = {Springer},
+  Year                     = {1997},
+  Pages                    = {75--85}
+}
+
+@Article{Devroye2009,
+  Title                    = {Random variate generation for exponentially and polynomially tilted stable distributions},
+  Author                   = {Devroye, L.},
+  Journal                  = {ACM Transactions on Modeling and Computer Simulation (TOMACS)},
+  Year                     = {2009},
+  Number                   = {4},
+  Pages                    = {18},
+  Volume                   = {19},
+
+  Publisher                = {ACM}
+}
+
+@Article{Devroye2014,
+  author = {Devroye, L. and James, L. F.},
+  title = {On simulation and properties of the stable law},
+  journal = {Statistical Methods and Applications},
+  volume = 23,
+  number =3,
+  pages = {307--343},
+  year = 2014
+ }
+
+@Article{Dusenberry2020,
+  author  = {Dusenberry, M. W. and Jerfel, G. and Wen, Y. and Ma, Y.-A. and Snoek, J. and Heller, K. and Lakshminarayanan, B. and Tran, D.},
+  journal = {arXiv preprint arXiv:2005.07186},
+  title   = {Efficient and Scalable {B}ayesian Neural Nets with Rank-1 Factors},
+  year    = {2020},
+}
+
+@Article{Eberlein1998,
+  Title                    = {New insights into smile, mispricing, and value at risk: The hyperbolic model},
+  Author                   = {Eberlein, E. and Keller, U. and Prause, K.},
+  Journal                  = {The Journal of Business},
+  Year                     = {1998},
+  Number                   = {3},
+  Pages                    = {371--405},
+  Volume                   = {71},
+
+  Publisher                = {JSTOR}
+}
+
+@InProceedings{Favaro2020,
+title = 	 {Stable behaviour of infinitely wide deep neural networks},
+author =       {Peluchetti, Stefano and Favaro, Stefano and Fortini, Sandra},
+booktitle = 	 {Proceedings of the Twenty Third International Conference on Artificial Intelligence and Statistics},
+pages = 	 {1137--1146},
+year = 	 {2020},
+editor = 	 {Chiappa, Silvia and Calandra, Roberto},
+volume = 	 {108},
+series = 	 {Proceedings of Machine Learning Research},
+month = 	 {26--28 Aug},
+publisher =    {PMLR},
+pdf = 	 {http://proceedings.mlr.press/v108/peluchetti20b/peluchetti20b.pdf},
+url = 	 {https://proceedings.mlr.press/v108/peluchetti20b.html},
+abstract = 	 {We consider fully connected feed-forward deep neural networks (NNs) where weights and biases are independent and identically distributed as symmetric centered stable distributions. Then, we show that the infinite wide limit of the NN, under suitable scaling on the weights, is a stochastic process whose finite-dimensional distributions are multivariate stable distributions. The limiting process is referred to as the stable process, and it generalizes the class of Gaussian processes recently obtained as infinite wide limits of NNs (Matthews at al., 2018b). Parameters of the stable process can be computed via an explicit recursion over the layers of the network. Our result contributes to the theory of fully connected feed-forward deep NNs, and it paves the way to expand recent lines of research that rely on Gaussian infinite wide limits.}
+}
+
+@Book{Feller1971,
+  author    = {Feller, W.},
+  publisher = {John Wiley and Sons},
+  title     = {An Introduction to Probability Theory and Its Application Vol II},
+  year      = {1971},
+}
+
+@Article{Fruehwirth-Schnatter2009,
+  Title                    = {{B}ayesian estimation of stochastic volatility models based on {OU} processes with marginal Gamma law},
+  Author                   = {Fr{\"u}hwirth-Schnatter, S. and S{\"o}gner, L.},
+  Journal                  = {Annals of the Institute of Statistical Mathematics},
+  Year                     = {2009},
+  Number                   = {1},
+  Pages                    = {159--179},
+  Volume                   = {61},
+
+  Publisher                = {Springer}
+}
+
+@InProceedings{Gal2016,
+  author    = {Gal, Y. and Ghahramani, Z.},
+  booktitle = {Proceedings of the 33rd International Conference on Machine Learning (ICML'16)},
+  title     = {Dropout as a {B}ayesian approximation: Representing model uncertainty in deep learning},
+  year      = {2016},
+  pages     = {1050--1059}
+}
+
+@Article{Gander2007,
+  Title                    = {Stochastic volatility modelling in continuous time with general marginal distributions: Inference, prediction and model selection},
+  Author                   = {Gander, M. and Stephens, D. A.},
+  Journal                  = {Journal of Statistical Planning and Inference},
+  Year                     = {2007},
+  Number                   = {10},
+  Pages                    = {3068--3081},
+  Volume                   = {137},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{Ghosh2019,
+  author  = {Ghosh, S. and Yao, J. and Doshi-Velez, F.},
+  journal = {Journal of Machine Learning Research},
+  title   = {Model Selection in {B}ayesian Neural Networks via Horseshoe Priors.},
+  year    = {2019},
+  number  = {182},
+  pages   = {1--46},
+  volume  = {20},
+}
+
+@Article{Gnedin2007,
+  Title                    = {Notes on the occupancy problem with infinitely many boxes: general asymptotics and power laws},
+  Author                   = {Gnedin, A. and Hansen, B. and Pitman, J.},
+  Journal                  = {Probability surveys},
+  Year                     = {2007},
+  Pages                    = {146--171},
+  Volume                   = {4},
+
+  Publisher                = {The Institute of Mathematical Statistics and the Bernoulli Society}
+}
+
+@Article{Griffin2006,
+  author    = {Griffin, J. E. and Steel, M. F. J.},
+  journal   = {Journal of Econometrics},
+  title     = {Inference with non-{G}aussian {O}rnstein--{U}hlenbeck processes for stochastic volatility},
+  year      = {2006},
+  number    = {2},
+  pages     = {605--644},
+  volume    = {134},
+  publisher = {Elsevier},
+}
+
+@Article{Grigelionis2007,
+  author    = {Grigelionis, B.},
+  journal   = {Lithuanian Mathematical Journal},
+  title     = {Extended Thorin classes and stochastic integrals},
+  year      = {2007},
+  number    = {4},
+  pages     = {406--411},
+  volume    = {47},
+  publisher = {Springer},
+}
+
+@InBook{Hazan2017,
+  Title                    = {Data Augmentation via L\'evy Processes},
+  Author                   = {T. {Hazan} and G. {Papandreou} and D. {Tarlow}},
+  Publisher                = {MITP},
+  Year                     = {2017},
+
+  Booktitle                = {Perturbations, Optimization, and Statistics},
+  ISBN                     = {9780262337939},
+  Url                      = {https://ieeexplore.ieee.org/document/8093853}
+}
+
+@Article{Hofert2011,
+  author    = {Hofert, M.},
+  journal   = {ACM Transactions on Modeling and Computer Simulation (TOMACS)},
+  title     = {Sampling exponentially tilted stable distributions},
+  year      = {2011},
+  number    = {1},
+  pages     = {3},
+  volume    = {22},
+  publisher = {ACM},
+}
+
+@Article{Hougaard1986,
+  Title                    = {Survival models for heterogeneous populations derived from stable distributions},
+  Author                   = {Hougaard, P.},
+  Journal                  = {Biometrika},
+  Year                     = {1986},
+  Number                   = {2},
+  Pages                    = {387--396},
+  Volume                   = {73},
+
+  Publisher                = {Oxford University Press}
+}
+
+@InProceedings{Hron2018,
+  author    = {Hron, J. and Matthews, A. and Ghahramani, Z.},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning (ICML'18)},
+  title     = {Variational {B}ayesian dropout: pitfalls and fixes},
+  year      = {2018},
+  pages     = {2019--2028}
+}
+
+@Article{Huang2004,
+  author    = {Huang, J.-Z. and Wu, L.},
+  journal   = {The Journal of Finance},
+  title     = {Specification analysis of option pricing models based on time-changed {L}{\'e}vy processes},
+  year      = {2004},
+  number    = {3},
+  pages     = {1405--1439},
+  volume    = {59},
+  publisher = {Wiley Online Library},
+}
+
+@InProceedings{Jacot2018,
+author = {Jacot, Arthur and Gabriel, Franck and Hongler, Clement},
+booktitle = {Advances in Neural Information Processing Systems},
+editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+pages = {},
+publisher = {Curran Associates, Inc.},
+title = {Neural Tangent Kernel: Convergence and Generalization in Neural Networks},
+url = {https://proceedings.neurips.cc/paper_files/paper/2018/file/5a4be1fa34e62bb8a6ec6b91d2462f5a-Paper.pdf},
+volume = {31},
+year = {2018}
+}
+
+@Article{James2011,
+  author    = {James, L. F. and Zhang, Z.},
+  journal   = {Ann. Appl. Probab.},
+  title     = {Quantile clocks},
+  year      = {2011},
+  number    = {5},
+  pages     = {1627--1662},
+  volume    = {21},
+  doi       = {10.1214/10-AAP752},
+  fjournal  = {Annals of Applied Probability},
+  publisher = {The Institute of Mathematical Statistics},
+  url       = {https://doi.org/10.1214/10-AAP752},
+}
+
+@Article{James2008,
+  author    = {James, L. F. and Roynette, B. and Yor, M.},
+  journal   = {Probability Surveys},
+  title     = {Generalized gamma convolutions, {D}irichlet means, {T}horin measures, with explicit examples},
+  year      = {2008},
+  pages     = {346--415},
+  volume    = {5},
+  publisher = {The Institute of Mathematical Statistics and the Bernoulli Society},
+}
+
+@Article{James2008a,
+  author    = {James, L. F. and Roynette, B. and Yor, M.},
+  journal   = {Probability Surveys},
+  title     = {Generalized gamma convolutions, {D}irichlet means, {T}horin measures, with explicit examples},
+  year      = {2008},
+  pages     = {346--415},
+  volume    = {5},
+  publisher = {The Institute of Mathematical Statistics and the Bernoulli Society},
+}
+
+@InProceedings{Jang2017,
+  Title                    = {Scalable {L}\'evy process priors for spectral kernel learning},
+  Author                   = {Jang, P. A. and Loeb, A. and Davidow, M. and Wilson, A. G.},
+  Booktitle                = {Proceedings of the 31st Conference on Neural Information Processing Systems (NeurIPS'17)},
+  Year                     = {2017},
+  Pages                    = {3940--3949}
+}
+
+@Article{Jasra2011,
+  Title                    = {Inference for {L}{\'e}vy-driven stochastic volatility models via adaptive sequential {M}onte {C}arlo},
+  Author                   = {Jasra, A. and Stephens, D. A. and Doucet, A. and Tsagaris, T.},
+  Journal                  = {Scandinavian Journal of Statistics},
+  Year                     = {2011},
+  Number                   = {1},
+  Pages                    = {1--22},
+  Volume                   = {38},
+
+  Publisher                = {Wiley Online Library}
+}
+
+@Article{Jing2012,
+  author    = {Jing, B.-Y. and Kong, X.-B. and Liu, Z.},
+  journal   = {The Annals of Statistics},
+  title     = {Modeling high-frequency financial data by pure jump processes},
+  year      = {2012},
+  number    = {2},
+  pages     = {759--784},
+  volume    = {40},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@InProceedings{Kingma2015,
+  author    = {Kingma, D. P. and Salimans, T. and Welling, M.},
+  booktitle = {Proceedings of the 29th Conference on Neural Information Processing Systems (NeurIPS'15)},
+  title     = {Variational dropout and the local reparameterization trick},
+  year      = {2015},
+  pages     = {2575--2583}
+}
+
+@Article{Landis2017,
+  Title                    = {Pulsed evolution shaped modern vertebrate body sizes},
+  Author                   = {Landis, M. J. and Schraiber, J. G.},
+  Journal                  = {Proceedings of the National Academy of Sciences},
+  Year                     = {2017},
+  Number                   = {50},
+  Pages                    = {13224--13229},
+  Volume                   = {114},
+
+  Publisher                = {National Acad Sciences}
+}
+
+@Article{Landis2012,
+  Title                    = {Phylogenetic analysis using {L}{\'e}vy processes: finding jumps in the evolution of continuous traits},
+  Author                   = {Landis, M. J. and Schraiber, J. G. and Liang, M.},
+  Journal                  = {Systematic biology},
+  Year                     = {2012},
+  Number                   = {2},
+  Pages                    = {193--204},
+  Volume                   = {62},
+
+  Publisher                = {Oxford University Press}
+}
+
+@Article{Lee2020,
+  author  = {Lee, J. and Schoenholz, S. S. and Pennington, J. and Adlam, B. and Xiao, L. and Novak, R. and Sohl-Dickstein, J.},
+  journal = {arXiv preprint arXiv:2007.15801},
+  title   = {Finite Versus Infinite Neural Networks: an Empirical Study},
+  year    = {2020},
+}
+
+@InProceedings{Lee2018,
+  author    = {Lee, J. and Bahri, Y. and Novak, R. and Schoenholz, S. S. and Pennington, J. and Sohl-Dickstein, J.},
+  booktitle = {Proceedings of the 6th International Conference on Learning Representations (ICLR'18)},
+  title     = {Deep Neural Networks as {G}aussian Processes},
+  year      = {2018}
+}
+
+@Article{Liang2015,
+  author    = {Liang, C. and Li, S.},
+  journal   = {Journal of mathematical Analysis and Applications},
+  title     = {Option pricing and hedging in incomplete market driven by Normal Tempered Stable process with stochastic volatility},
+  year      = {2015},
+  number    = {1},
+  pages     = {701--719},
+  volume    = {423},
+  publisher = {Elsevier},
+}
+
+@Article{Lin2000,
+  author    = {Lin, L. and Liu, K.F. and Sloan, J.},
+  journal   = {Physical Review D},
+  title     = {A noisy {M}onte {C}arlo algorithm},
+  year      = {2000},
+  number    = {7},
+  pages     = {074505},
+  volume    = {61},
+  publisher = {APS},
+}
+
+@InProceedings{Louizos2017a,
+  author    = {Louizos, C. and Welling, M.},
+  booktitle = {Proceedings of the 34th International Conference on Machine Learning (ICML'17)},
+  title     = {Multiplicative Normalizing Flows for Variational {B}ayesian Neural Networks},
+  year      = {2017},
+}
+
+@InProceedings{Louizos2017,
+  author    = {Louizos, C. and Ullrich, K. and Welling, M.},
+  booktitle = {Proceedings of the 31st Conference on Neural Information Processing Systems (NeurIPS'17)},
+  title     = {{B}ayesian compression for deep learning},
+  year      = {2017},
+  pages     = {3288--3298}
+}
+
+@Article{Madan1998,
+  author    = {Madan, D. B. and Carr, P. and Chang, E.},
+  journal   = {Review of Finance},
+  title     = {The variance gamma process and option pricing},
+  year      = {1998},
+  number    = {1},
+  pages     = {79--105},
+  volume    = {2},
+  publisher = {European Finance Association},
+}
+
+@Article{Mandelbrot1963,
+  Title                    = {THE VARIATION OF CERTAIN SPECULATIVE PRICES},
+  Author                   = {Mandelbrot, B.},
+  Journal                  = {The Journal of Business},
+  Year                     = {1963},
+  Number                   = {4},
+  Pages                    = {394--419},
+  Volume                   = {36}
+}
+
+@Article{Martin2019,
+  author  = {Martin, C. H. and Mahoney, M. W.},
+  journal = {arXiv preprint arXiv:1901.08276},
+  title   = {Traditional and heavy-tailed self regularization in neural network models},
+  year    = {2019},
+}
+
+@InProceedings{Martin2020,
+  author       = {Martin, C. H. and Mahoney, M. W.},
+  booktitle    = {Proceedings of the 2020 SIAM International Conference on Data Mining},
+  title        = {Heavy-tailed Universality predicts trends in test accuracies for very large pre-trained deep neural networks},
+  year         = {2020},
+  organization = {SIAM},
+  pages        = {505--513},
+}
+
+@InProceedings{Matthews2018,
+author       = {Alexander G. Matthews and
+Jiri Hron and
+Mark Rowland and
+Richard E. Turner and
+Zoubin Ghahramani},
+title        = {Gaussian Process Behaviour in Wide Deep Neural Networks},
+booktitle    = {6th International Conference on Learning Representations, {ICLR} 2018,
+Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track Proceedings},
+publisher    = {OpenReview.net},
+year         = {2018},
+url          = {https://openreview.net/forum?id=H1-nGgWC-},
+timestamp    = {Thu, 25 Jul 2019 14:25:43 +0200},
+biburl       = {https://dblp.org/rec/conf/iclr/MatthewsHRTG18.bib},
+bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@Article{Naulet2018,
+  author    = {Naulet, Z. and Barat, E.},
+  journal   = {Bayesian Analysis},
+  title     = {Some aspects of symmetric Gamma process mixtures},
+  year      = {2018},
+  number    = {3},
+  pages     = {703--720},
+  volume    = {13},
+  publisher = {International Society for Bayesian Analysis},
+}
+
+@InCollection{Neal1996,
+author="Neal, Radford M.",
+title="Priors for Infinite Networks",
+booktitle="Bayesian Learning for Neural Networks",
+year="1996",
+publisher="Springer New York",
+pages="29--53"
+}
+
+
+@InProceedings{Neklyudov2017,
+  author    = {Neklyudov, K. and Molchanov, D. and Ashukha, A. and Vetrov, D. P.},
+  booktitle = {Proceedings of the 31st Conference on Neural Information Processing Systems (NeurIPS'17)},
+  title     = {Structured {B}ayesian pruning via log-normal multiplicative noise},
+  year      = {2017},
+  pages     = {6775--6784},
+}
+
+@Article{Pitman1997,
+  Title                    = {The two-parameter {P}oisson-{D}irichlet distribution derived from a stable subordinator},
+  Author                   = {Pitman, J. and Yor, M.},
+  Journal                  = {The Annals of Probability},
+  Year                     = {1997},
+  Pages                    = {855--900},
+
+  Publisher                = {JSTOR}
+}
+
+@Article{Roberts2004,
+  Title                    = {{B}ayesian inference for non-{G}aussian {O}rnstein--{U}hlenbeck stochastic volatility processes},
+  Author                   = {Roberts, G. O. and Papaspiliopoulos, O. and Dellaportas, P.},
+  Journal                  = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+  Year                     = {2004},
+  Number                   = {2},
+  Pages                    = {369--393},
+  Volume                   = {66},
+
+  Publisher                = {Wiley Online Library}
+}
+
+@Article{Rosinski2007,
+  Title                    = {Tempering stable processes},
+  Author                   = {Rosi{\'n}ski, J.},
+  Journal                  = {Stochastic processes and their applications},
+  Year                     = {2007},
+  Number                   = {6},
+  Pages                    = {677--707},
+  Volume                   = {117},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{Sato2001,
+  author    = {Sato, K.I.},
+  journal   = {Statistics \& probability letters},
+  title     = {Subordination and self-decomposability},
+  year      = {2001},
+  number    = {3},
+  pages     = {317--324},
+  volume    = {54},
+  publisher = {Elsevier},
+}
+
+@book{Sato1999levy,
+	title={L{\'e}vy Processes and Infinitely Divisible Distributions},
+	author={Sato, K.I.},
+	year={1999},
+	publisher={Cambridge university press}
+}
+
+@InProceedings{SimSekli2017,
+  Title                    = {Fractional {L}angevin {M}onte {C}arlo: Exploring {L}{\'e}vy driven stochastic differential equations for {M}arkov Chain {M}onte {C}arlo},
+  Author                   = {{\c{S}}im{\v{S}}ekli, U.},
+  Booktitle                = {Proceedings of the 34th International Conference on Machine Learning (ICML'17)},
+  Year                     = {2017},
+  Pages                    = {3200--3209}
+}
+
+@Article{Thorin1977,
+  author    = {Thorin, O.},
+  journal   = {Scandinavian Actuarial Journal},
+  title     = {On the infinite divisibility of the lognormal distribution},
+  year      = {1977},
+  number    = {3},
+  pages     = {121--148},
+  volume    = {1977},
+  publisher = {Taylor \& Francis},
+}
+
+@InProceedings{Williams1997,
+  author    = {Williams, C. K. I.},
+  booktitle = {Proceedings of the 11th Conference on Neural Information Processing Systems (NeurIPS'97)},
+  title     = {Computing with infinite networks},
+  year      = {1997},
+  pages     = {295--301},
+}
+
+@Article{Winkel2005,
+  Title                    = {Electronic foreign-exchange markets and passage events of independent subordinators},
+  Author                   = {Winkel, M.},
+  Journal                  = {Journal of applied probability},
+  Year                     = {2005},
+  Number                   = {1},
+  Pages                    = {138--152},
+  Volume                   = {42},
+
+  Publisher                = {Cambridge University Press}
+}
+
+@InProceedings{Woerner2011,
+  author       = {Woerner, J.},
+  booktitle    = {Seminar on Stochastic Analysis, Random Fields and Applications VI},
+  title        = {Analyzing the fine structure of continuous time stochastic processes},
+  year         = {2011},
+  organization = {Springer},
+  pages        = {473--492},
+}
+
+@Article{Wolpert2011,
+  author    = {Wolpert, R. L. and Clyde, M. A. and Tu, C.},
+  journal   = {Annals of Statistics},
+  title     = {Stochastic expansions using continuous dictionaries: L{\'e}vy adaptive regression kernels},
+  year      = {2011},
+  number    = {4},
+  pages     = {1916--1962},
+  volume    = {39},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@InProceedings{Zhang2018,
+  author    = {Zhang, A. and Paisley, J.},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning (ICML'18)},
+  title     = {Deep {B}ayesian Nonparametric Tracking},
+  year      = {2018},
+  pages     = {5828--5836}
+}
+
+@Article{Datta2013,
+  author    = {Datta, J. and Ghosh, J.},
+  journal   = {Bayesian Analysis},
+  title     = {Asymptotic properties of Bayes risk for the horseshoe prior},
+  year      = {2013},
+  number    = {1},
+  pages     = {111--132},
+  volume    = {8},
+  publisher = {International Society for Bayesian Analysis},
+}
+
+@Article{VanDerPas2017,
+  author    = {Van Der Pas, St{\'e}phanie and Szab{\'o}, Botond and van der Vaart, Aad},
+  journal   = {Bayesian Analysis},
+  title     = {Uncertainty quantification for the horseshoe (with discussion)},
+  year      = {2017},
+  number    = {4},
+  pages     = {1221--1274},
+  volume    = {12},
+  publisher = {International Society for Bayesian Analysis},
+}
+
+@Article{VanDerPas2017a,
+  author    = {Van Der Pas, St{\'e}phanie and Szab{\'o}, Botond and van der Vaart, Aad},
+  journal   = {Electronic Journal of Statistics},
+  title     = {Adaptive posterior contraction rates for the horseshoe},
+  year      = {2017},
+  number    = {2},
+  pages     = {3196--3225},
+  volume    = {11},
+  publisher = {Institute of Mathematical Statistics and Bernoulli Society},
+}
+
+@InProceedings{Adamczewski2021,
+  author       = {Adamczewski, K. and Park, M.},
+  booktitle    = {Proceedings of the 24th International Conference on Artificial Intelligence and Statistics (AISTATS'21)},
+  title        = {{D}irichlet Pruning for Convolutional Neural Networks},
+  year         = {2021},
+  pages        = {3637--3645}
+}
+
+@Article{Liao2020,
+  author  = {Liao, Z. and Couillet, R. and Mahoney, M.},
+  journal = {arXiv preprint arXiv:2006.05013},
+  title   = {A random matrix analysis of random fourier features: beyond the gaussian kernel, a precise phase transition, and the corresponding double descent},
+  year    = {2020},
+}
+
+
+@Article{Yuan2006,
+  author    = {Yuan, M. and Lin, Y.},
+  journal   = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+  title     = {Model selection and estimation in regression with grouped variables},
+  year      = {2006},
+  number    = {1},
+  pages     = {49--67},
+  volume    = {68},
+  publisher = {Wiley Online Library},
+}
+
+@InProceedings{Raman2009,
+  author    = {Raman, S. and Fuchs, T. and Wild, P. and Dahl, E. and Roth, V.},
+  booktitle = {Proceedings of the 26th International Conference on Machine Learning (ICML'09)},
+  title     = {The {B}ayesian group-lasso for analyzing contingency tables},
+  year      = {2009},
+  pages     = {881--888}
+}
+
+@Article{Casella2010,
+  author    = {Casella, G. and Ghosh, M. and Gill, J. and Kyung, M.},
+  journal   = {Bayesian analysis},
+  title     = {Penalized regression, standard errors, and {B}ayesian lassos},
+  year      = {2010},
+  number    = {2},
+  pages     = {369--411},
+  volume    = {5},
+  publisher = {International Society for Bayesian Analysis},
+}
+
+@InProceedings{Ghosh2018,
+  author       = {Ghosh, S. and Yao, J. and Doshi-Velez, F.},
+  booktitle    = {Proceedings of the 35th International Conference on Machine Learning (ICML'18)},
+  title        = {Structured variational learning of {B}ayesian neural networks with horseshoe priors},
+  year         = {2018},
+  pages        = {1744--1753}
+}
+
+@Article{Popkes2019,
+  author  = {Popkes, A.-L. and Overweg, H. and Ercole, A. and Li, Y. and Hern{\'a}ndez-Lobato, J. M. and Zaykov, Y. and Zhang, C.},
+  journal = {arXiv preprint arXiv:1905.02599},
+  title   = {Interpretable outcome prediction with sparse {B}ayesian neural networks in intensive care},
+  year    = {2019},
+}
+
+@PhdThesis{Jong2018,
+  author = {de Jong, S.},
+  school = {University of Cambridge},
+  title  = {Compressing Neural Networks},
+  year   = {2018},
+}
+
+@Article{Wang2017,
+  author    = {Wang, J. and Xu, C. and Yang, X. and Zurada, J. M.},
+  journal   = {IEEE Transactions on Neural Networks and Learning Systems},
+  title     = {A novel pruning algorithm for smoothing feedforward neural networks based on group lasso method},
+  year      = {2017},
+  number    = {5},
+  pages     = {2012--2024},
+  volume    = {29},
+  publisher = {IEEE},
+}
+
+@Article{Scardapane2017,
+  author    = {Scardapane, S. and Comminiello, D. and Hussain, A. and Uncini, A.},
+  journal   = {Neurocomputing},
+  title     = {Group sparse regularization for deep neural networks},
+  year      = {2017},
+  pages     = {81--89},
+  volume    = {241},
+  publisher = {Elsevier},
+}
+
+@Article{Fortuin2021,
+  author  = {Fortuin, V.},
+  journal = {arXiv preprint arXiv:2105.06868},
+  title   = {Priors in {B}ayesian deep learning: A review},
+  year    = {2021},
+}
+
+@InProceedings{Ober2021,
+  author       = {Ober, S. W. and Aitchison, L.},
+  booktitle    = {Proceedings of the 38th International Conference on Machine Learning (ICML'21)},
+  title        = {Global inducing point variational posteriors for {B}ayesian neural networks and deep {G}aussian processes},
+  year         = {2021},
+  pages        = {8248--8259}
+}
+
+@Article{Wolinski2020,
+  author  = {Wolinski, P. and Charpiat, G. and Ollivier, Y.},
+  journal = {arXiv preprint arXiv:2002.00178},
+  title   = {An Equivalence between {B}ayesian Priors and Penalties in Variational Inference},
+  year    = {2020},
+}
+
+@InProceedings{Der2006,
+  author    = {Der, R. and Lee, D.},
+  booktitle = {Proceedings of the 20th Conference on Neural Information Processing Systems (NeurIPS'06)},
+  title     = {Beyond {G}aussian Processes: On the Distributions of Infinite Networks},
+  pages     = {275--282},
+  year      = {2006}
+}
+
+@InProceedings{adamczewski2021dirichlet,
+  author       = {Adamczewski, Kamil and Park, Mijung},
+  booktitle    = {Proceedings of the 24th International Conference on Artificial Intelligence and Statistics (AISTATS'21)},
+  title        = {{D}irichlet Pruning for Convolutional Neural Networks},
+  year         = {2021},
+  pages        = {3637--3645}
+}
+
+@Article{Wolinski2020a,
+  author = {Wolinski, P. and Charpiat, G. and Ollivier, Y.},
+  title  = {Asymmetrical Scaling Layers for Stable Network Pruning},
+  year   = {2020},
+}
+
+@InProceedings{Blier2018,
+  title={Learning with random learning rates},
+  author={Blier, L{\'e}onard and Wolinski, Pierre and Ollivier, Yann},
+booktitle={Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD'19)},
+  pages={449--464},
+  year={2019}
+}
+
+@Article{Jantre2021,
+  author  = {Jantre, S. and Bhattacharya, S. and Maiti, T.},
+  journal = {arXiv preprint arXiv:2108.11000},
+  title   = {Layer Adaptive Node Selection in {B}ayesian Neural Networks: Statistical Guarantees and Implementation Details},
+  year    = {2021},
+}
+
+@InProceedings{NIPS2005_e2c61965,
+  author    = {Der, Ricky and Lee, Daniel},
+  booktitle = {Proceedings of the 20th Conference on Neural Information Processing Systems (NeurIPS'06)},
+  title     = {Beyond {G}aussian Processes: On the Distributions of Infinite Networks},
+  year      = {2006}
+}
+
+@InProceedings{Wenzel2020,
+  author    = {Florian Wenzel and
+               Kevin Roth and
+               Bastiaan S. Veeling and
+               Jakub Swiatkowski and
+               Linh Tran and
+               Stephan Mandt and
+               Jasper Snoek and
+               Tim Salimans and
+               Rodolphe Jenatton and
+               Sebastian Nowozin},
+  title     = {How Good is the Bayes Posterior in Deep Neural Networks Really?},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning (ICML'20)},
+  pages     = {10248--10259},
+  year      = {2020}
+}
+
+@InProceedings{Glorot2010,
+  author       = {Glorot, X. and Bengio, Y.},
+  booktitle    = {Proceedings of the 13th International Conference on Artificial Intelligence and Statistics (AISTATS'10)},
+  title        = {Understanding the difficulty of training deep feedforward neural networks},
+  year         = {2010},
+  pages        = {249--256}
+}
+
+@Article{Resnick2005,
+  author = {Resnick, S.},
+  title  = {HEAVY TAILED ANALYSIS EURANDOM SUMMER 2005},
+  year   = {2005},
+}
+
+@Article{Jessen2006,
+  author  = {Jessen, H. A. and Mikosch, T.},
+  journal = {Publications de L'institut Mathematique},
+  title   = {Regularly varying functions},
+  year    = {2006},
+  number  = {94},
+  pages   = {171--192},
+  volume  = {80},
+}
+
+@PhDThesis{Neal1995,
+  author  = {Neal, R. M.},
+  school = {Department of Computer Science, University of Toronto},
+  title   = {{B}ayesian Learning for Neural Networks},
+  year    = {1995},
+}
+
+@InProceedings{Rahimi2007,
+  author       = {Rahimi, A. and Recht, B.},
+  booktitle    = {NIPS},
+  title        = {Random Features for Large-Scale Kernel Machines.},
+  year         = {2007},
+  number       = {4},
+  organization = {Citeseer},
+  pages        = {5},
+  volume       = {3},
+}
+
+@Article{Tsuchida2019,
+  author  = {Tsuchida, R. and Roosta, F. and Gallagher, M.},
+  journal = {arXiv preprint arXiv:1911.12927},
+  title   = {Richer priors for infinitely wide multi-layer perceptrons},
+  year    = {2019},
+}
+
+@InProceedings{Murray2015,
+  author  = {Murray, K. and Chiang, D.},
+  booktitle = {Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing (EMNLP'15)},
+  title   = {Auto-sizing neural networks: With applications to n-gram language models},
+  pages   = {908--916},
+  year    = {2015},
+}
+
+@Article{Bracale2021,
+  author  = {Bracale, D. and Favaro, S. and Fortini, S. and Peluchetti, S.},
+  journal = {arXiv preprint arXiv:2102.10307},
+  title   = {Large-width functional asymptotics for deep {G}aussian neural networks},
+  year    = {2021},
+}
+
+@InProceedings{Ochiai2017,
+  author       = {Ochiai, T. and Matsuda, S. and Watanabe, H. and Katagiri, S.},
+  booktitle    = {Proceedings of the 2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP'17)},
+  title        = {Automatic node selection for deep neural networks using group lasso regularization},
+  year         = {2017},
+  organization = {IEEE},
+  pages        = {5485--5489}
+}
+
+@Book{Mikosch1999,
+  author = {Mikosch, T.},
+  title  = {Regular variation, subexponentiality and their applications in probability theory},
+  year   = {1999},
+  volume = {99},
+}
+
+@InProceedings{Cho2009,
+  author  = {Cho, Y. and Saul, L.},
+  booktitle = {Proceedings of the 23rd Conference on Neural Information Processing Systems (NeurIPS'09)},
+  title   = {Kernel Methods for Deep Learning},
+  year    = {2009},
+  pages   = {342--350}
+}
+
+@InProceedings{He2015,
+  author    = {He, K. and Zhang, X. and Ren, S. and Sun, J.},
+  booktitle = {Proceedings of the IEEE International Conference on Computer Vision (ICCV'15)},
+  title     = {Delving deep into rectifiers: Surpassing human-level performance on imagenet classification},
+  year      = {2015},
+  pages     = {1026--1034},
+}
+
+@Article{Hjort1990,
+  author    = {Hjort, N. L.},
+  journal   = {The Annals of Statistics},
+  title     = {Nonparametric {B}ayes estimators based on beta processes in models for life history data},
+  year      = {1990},
+  pages     = {1259--1294},
+  publisher = {JSTOR},
+}
+
+@Article{Fortuin2021a,
+  author  = {Fortuin, V. and Garriga-Alonso, A. and Wenzel, F. and R{\"a}tsch, G. and Turner, R. and van der Wilk, M. and Aitchison, L.},
+  journal = {arXiv preprint arXiv:2102.06571},
+  title   = {{B}ayesian neural network priors revisited},
+  year    = {2021},
+}
+
+@InProceedings{Thibaux2007,
+  author       = {Thibaux, R. and Jordan, M. I.},
+  booktitle    = {Proceedings of the 11th International Conference on Artificial Intelligence and Statistics (AISTATS'07)},
+  title        = {Hierarchical beta processes and the {I}ndian buffet process},
+  year         = {2007},
+  pages        = {564--571}
+}
+
+@Article{Griffin2017a,
+  author    = {Griffin, J. E. and Leisen, F.},
+  journal   = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+  title     = {Compound random measures and their use in {B}ayesian non-parametrics},
+  year      = {2017},
+  number    = {2},
+  pages     = {525--545},
+  volume    = {79},
+  publisher = {Wiley Online Library},
+}
+
+@Article{Janson2011,
+  author  = {Janson, S.},
+  journal = {arXiv preprint arXiv:1112.0220},
+  title   = {Stable distributions},
+  year    = {2011},
+}
+
+@Book{samorodnitsky1994stable,
+  author    = {Samorodnitsky, G. and Taqqu, M.},
+  publisher = {Chapman \& Hall},
+  title     = {Stable Non-{G}aussian Random Processes: Stochastic Models with Infinite Variance: Stochastic Modeling},
+  year      = {1994},
+}
+
+@article {Cuchiero2011,
+	AUTHOR = {Cuchiero, Christa and Filipovi\'{c}, Damir and Mayerhofer,
+	Eberhard and Teichmann, Josef},
+	TITLE = {Affine processes on positive semidefinite matrices},
+	JOURNAL = {Ann. Appl. Probab.},
+	FJOURNAL = {The Annals of Applied Probability},
+	VOLUME = {21},
+	YEAR = {2011},
+	NUMBER = {2},
+	PAGES = {397--463},
+	ISSN = {1050-5164},
+	MRCLASS = {60J25 (60G51 60H30 91B70)},
+	MRNUMBER = {2807963},
+	MRREVIEWER = {Ingo Fahrner},
+	DOI = {10.1214/10-AAP710},
+	URL = {http://lps3.doi.org.libra.kaist.ac.kr/10.1214/10-AAP710},
+}
+
+@InProceedings{Aitchison2020,
+  author       = {Aitchison, L.},
+  booktitle    = {Proceedings of the 37th International Conference on Machine Learning (ICML'20)},
+  title        = {Why bigger is not always better: on finite and infinite neural networks},
+  year         = {2020},
+  pages        = {156--164}
+}
+
+@Article{,
+}
+
+
+% Heavy tail, compression and generalization
+
+@InProceedings{arora2018stronger,
+  author       = {Arora, S. and Ge, R. and Neyshabur, B. and Zhang, Y.},
+  booktitle    = {Proceedings of the 35th International Conference on Machine Learning (ICML'18)},
+  title        = {Stronger generalization bounds for deep nets via a compression approach},
+  year         = {2018},
+  pages        = {254--263}
+}
+
+@Article{suzuki2019compression,
+  author  = {Suzuki, T. and Abe, H. and Nishimura, T.},
+  journal = {arXiv preprint arXiv:1909.11274},
+  title   = {Compression based bound for non-compressed network: unified generalization error analysis of large compressible deep neural network},
+  year    = {2019},
+}
+
+@Article{kuhn2021robustness,
+  author  = {Kuhn, L. and Lyle, C. and Gomez, A. N. and Rothfuss, J. and Gal, Y.},
+  journal = {arXiv preprint arXiv:2103.06002},
+  title   = {Robustness to Pruning Predicts Generalization in Deep Neural Networks},
+  year    = {2021},
+}
+
+@InProceedings{suzuki2018spectral,
+  author    = {Taiji Suzuki and
+               Hiroshi Abe and
+               Tomoya Murata and
+               Shingo Horiuchi and
+               Kotaro Ito and
+               Tokuma Wachi and
+               So Hirai and
+               Masatoshi Yukishima and
+               Tomoaki Nishimura},
+  title     = {Spectral Pruning: Compressing Deep Neural Networks via Spectral Analysis
+               and its Generalization Error},
+  booktitle = {Proceedings of the 29th International Joint Conference on Artificial Intelligence (IJCAI'20)},
+  pages     = {2839--2846},
+  year      = {2020}
+}
+
+@Article{gribonval2012compressible,
+  author    = {Gribonval, R. and Cevher, V. and Davies, M. E.},
+  journal   = {IEEE Transactions on Information Theory},
+  title     = {Compressible distributions for high-dimensional statistics},
+  year      = {2012},
+  number    = {8},
+  pages     = {5016--5034},
+  volume    = {58},
+  publisher = {IEEE},
+}
+
+@Article{shin2021compressing,
+  author  = {Shin, J. Y.},
+  journal = {arXiv preprint arXiv:2105.11025},
+  title   = {Compressing Heavy-Tailed Weight Matrices for Non-Vacuous Generalization Bounds},
+  year    = {2021},
+}
+
+% Training with SGD
+@InProceedings{mandt2016variational,
+  title={A variational analysis of stochastic gradient algorithms},
+  author={Mandt, Stephan and Hoffman, Matthew and Blei, David},
+  booktitle={Proceedings of the 33rd International Conference on Machine Learning (ICML'16)},
+  pages={354--363},
+  year={2016}
+}
+@article{hu2017diffusion,
+  title={On the diffusion approximation of nonconvex stochastic gradient descent},
+  author={Hu, Wenqing and Li, Chris Junchi and Li, Lei and Liu, Jian-Guo},
+  journal={arXiv preprint arXiv:1705.07562},
+  year={2017}
+}
+
+@InProceedings{chaudhari2018stochastic,
+  author       = {Chaudhari, P. and Soatto, S.},
+  booktitle    = {Proceedings of the 2018 Information Theory and Applications Workshop (ITA'18)},
+  title        = {Stochastic gradient descent performs variational inference, converges to limit cycles for deep networks},
+  year         = {2018},
+  organization = {IEEE},
+  pages        = {1--10}
+}
+
+@InProceedings{zhu2018anisotropic,
+  author    = {Zhanxing Zhu and
+               Jingfeng Wu and
+               Bing Yu and
+               Lei Wu and
+               Jinwen Ma},
+  title     = {The Anisotropic Noise in Stochastic Gradient Descent: Its Behavior
+               of Escaping from Sharp Minima and Regularization Effects},
+booktitle = {Proceedings of the 36th International Conference on Machine Learning (ICML'19)},
+  pages     = {7654--7663},
+  year      = {2019}
+}
+
+@InProceedings{hodgkinson2021multiplicative,
+  author       = {Hodgkinson, L. and Mahoney, M.},
+  booktitle    = {Proceedings of the 38th International Conference on Machine Learning (ICML'21)},
+  title        = {Multiplicative noise and heavy tails in stochastic optimization},
+  year         = {2021},
+  pages        = {4262--4274}
+}
+
+@InProceedings{gurbuzbalaban2021heavy,
+  author       = {Gurbuzbalaban, M. and Simsekli, U. and Zhu, L.},
+  booktitle    = {Proceedings of the 38th International Conference on Machine Learning (ICML'21)},
+  title        = {The heavy-tail phenomenon in {SGD}},
+  year         = {2021},
+  pages        = {3964--3975}
+}
+
+@article{mei2018mean,
+  title={A mean field view of the landscape of two-layer neural networks},
+  author={Mei, Song and Montanari, Andrea and Nguyen, Phan-Minh},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={115},
+  number={33},
+  pages={E7665--E7671},
+  year={2018},
+  publisher={National Acad Sciences}
+}
+@article{sirignano2020mean,
+  title={Mean field analysis of neural networks: A central limit theorem},
+  author={Sirignano, Justin and Spiliopoulos, Konstantinos},
+  journal={Stochastic Processes and their Applications},
+  volume={130},
+  number={3},
+  pages={1820--1852},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@InProceedings{LeeYYL22,
+author       = {Hyungi Lee and
+Eunggu Yun and
+Hongseok Yang and
+Juho Lee},
+title        = {Scale Mixtures of Neural Network Gaussian Processes},
+booktitle    = {The Tenth International Conference on Learning Representations, {ICLR}
+2022, Virtual Event, April 25-29, 2022},
+publisher    = {OpenReview.net},
+year         = {2022},
+url          = {https://openreview.net/forum?id=YVPBh4k78iZ},
+timestamp    = {Sat, 20 Aug 2022 01:15:42 +0200},
+biburl       = {https://dblp.org/rec/conf/iclr/LeeYYL22.bib},
+bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@InProceedings{Damianou2013,
+  author       = {Damianou, A. and Lawrence, N. D.},
+  booktitle    = {Proceedings of the 16th International Conference on Artificial Intelligence and Statistics (AISTATS'13)},
+  title        = {Deep {G}aussian processes},
+  year         = {2013},
+  pages        = {207--215}
+}
+
+@Article{Dunlop2018,
+  author    = {Dunlop, M. and Girolami, M. A. and Stuart, A. M. and Teckentrup, A. L.},
+  journal   = {Journal of Machine Learning Research},
+  title     = {How deep are deep {G}aussian processes?},
+  year      = {2018},
+  number    = {54},
+  pages     = {1--46},
+  volume    = {19},
+  publisher = {Journal of Machine Learning Research},
+}
+
+@InProceedings{Bui2016,
+  author       = {Bui, T. and Hern{\'a}ndez-Lobato, D. and Hernandez-Lobato, J. and Li, Y. and Turner, R.},
+  booktitle    = {Proceedings of the 33rd International Conference on Machine Learning (ICML'16)},
+  title        = {Deep {G}aussian processes for regression using approximate expectation propagation},
+  year         = {2016},
+  pages        = {1472--1481}
+}
+
+@article{Littwin2021,
+  author    = {Etai Littwin and
+               Omid Saremi and
+               Shuangfei Zhai and
+               Vimal Thilak and
+               Hanlin Goh and
+               Joshua M. Susskind and
+               Greg Yang},
+  title     = {Implicit Acceleration and Feature Learning in Infinitely Wide Neural Networks with Bottlenecks},
+  journal   = {CoRR},
+  volume    = {abs/2107.00364},
+  year      = {2021}
+}
+
+@InProceedings{Chen2014,
+author = {Chen, T. and Fox, E. B. and Guestrin, C.},
+title = {Stochastic gradient {Hamiltonian Monte-Carlo}},
+booktitle = {Proceedings of the 31st International Conference on Machine Learning (ICML'14)},
+pages = {1683--1691},
+year = {2014}
+}
+
+@InProceedings{Zhang2020,
+author = {Zhang, R. and Li, C. and Zhang, J. and Chen, C. and Wilson, A. G.},
+title = {Cyclical stochastic gradient {MCMC} for {Bayesian} deep learning},
+booktitle = {Proceedings of the 8th International Conference on Learning Representations (ICLR'20)},
+year = {2020}
+}
+
+@book{durrett2019probability,
+  title={Probability: Theory and Examples},
+  author={Durrett, Rick},
+  volume={49},
+  year={2019},
+  publisher={Cambridge university press}
+}
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@inbook{Wang2021,
+author = {Wang, Jingyi and Chen, Jialuo and Sun, Youcheng and Ma, Xingjun and Wang, Dongxia and Sun, Jun and Cheng, Peng},
+title = {RobOT: Robustness-Oriented Testing for Deep Learning Systems},
+year = {2021},
+isbn = {9781450390859},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ICSE43902.2021.00038},
+booktitle = {Proceedings of the 43rd International Conference on Software Engineering},
+pages = {300–311},
+numpages = {12}
+}
+
+
+@inproceedings{Goodfellow2014,
+author       = {Ian J. Goodfellow and
+Jonathon Shlens and
+Christian Szegedy},
+editor       = {Yoshua Bengio and
+Yann LeCun},
+title        = {Explaining and Harnessing Adversarial Examples},
+booktitle    = {3rd International Conference on Learning Representations, {ICLR} 2015,
+San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings},
+year         = {2015},
+url          = {http://arxiv.org/abs/1412.6572},
+timestamp    = {Thu, 25 Jul 2019 14:25:38 +0200},
+biburl       = {https://dblp.org/rec/journals/corr/GoodfellowSS14.bib},
+bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{Peck2017,
+author = {Peck, Jonathan and Roels, Joris and Goossens, Bart and Saeys, Yvan},
+booktitle = {Advances in Neural Information Processing Systems},
+editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+pages = {},
+publisher = {Curran Associates, Inc.},
+title = {Lower bounds on the robustness to adversarial perturbations},
+url = {https://proceedings.neurips.cc/paper_files/paper/2017/file/298f95e1bf9136124592c8d4825a06fc-Paper.pdf},
+volume = {30},
+year = {2017}
+}
+
+@inproceedings{Zhang2019,
+author       = {Huan Zhang and
+Pengchuan Zhang and
+Cho{-}Jui Hsieh},
+title        = {RecurJac: An Efficient Recursive Algorithm for Bounding Jacobian Matrix
+of Neural Networks and Its Applications},
+booktitle    = {The Thirty-Third {AAAI} Conference on Artificial Intelligence, {AAAI}
+2019, Honolulu, Hawaii,
+USA, January 27 - February 1, 2019},
+pages        = {5757--5764},
+publisher    = {{AAAI} Press},
+year         = {2019},
+url          = {https://doi.org/10.1609/aaai.v33i01.33015757},
+doi          = {10.1609/aaai.v33i01.33015757},
+timestamp    = {Tue, 02 Feb 2021 07:59:46 +0100},
+biburl       = {https://dblp.org/rec/conf/aaai/ZhangZH19.bib},
+bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{Wang2021a,
+author = {Wang, Sifan and Yu, Xinling and Perdikaris, Paris},
+year = {2021},
+month = {10},
+pages = {110768},
+title = {When and why PINNs fail to train: A Neural Tangent Kernel perspective},
+journal = {Journal of Computational Physics},
+doi = {10.1016/j.jcp.2021.110768}
+}
+
+@article{Yang2020,
+  author    = {Greg Yang},
+  title     = {Tensor Programs {III:} Neural Matrix Laws},
+  journal   = {CoRR},
+  volume    = {abs/2009.10685},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2009.10685},
+  eprinttype = {arXiv},
+  eprint    = {2009.10685},
+  timestamp = {Wed, 23 Sep 2020 15:51:46 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2009-10685.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{yang2020a,
+      title={Tensor Programs II: Neural Tangent Kernel for Any Architecture}, 
+      author={Greg Yang},
+      year={2020},
+      eprint={2006.14548},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+@InProceedings{Abid2020,
+author="Abid, Faroudja
+and Izeboudjen, Nouma",
+editor="Ezziyyani, Mostafa",
+title="Predicting Forest Fire in Algeria Using Data Mining Techniques: Case Study of the Decision Tree Algorithm",
+booktitle="Advanced Intelligent Systems for Sustainable Development (AI2SD'2019)",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="363--370",
+abstract="Forest fire is a disaster that causes economic and ecological damage and human life threat. Thus predicting such critical environmental issue is essential to mitigate this threat. In this paper we propose a decision tree based system for forest fire prediction. The aim being the integration of the decision tree classifier as a part of the smart sensor node architecture that allows fire prediction in automated and intelligent way without requiring human intervention. The fire prediction is based on the meteorological data corresponding to the critical weather elements that influence the forest fire occurrence, namely temperature, relative humidity and wind speed. We have obtained accuracy about 82.92{\%} regarding the software implementation of the proposed DT based forest fire prediction system.",
+isbn="978-3-030-36674-2"
+}
+
+
+@InProceedings{du2019,
+  title = 	 {Gradient Descent Finds Global Minima of Deep Neural Networks},
+  author =       {Du, Simon and Lee, Jason and Li, Haochuan and Wang, Liwei and Zhai, Xiyu},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  pages = 	 {1675--1685},
+  year = 	 {2019},
+  editor = 	 {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--15 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v97/du19c/du19c.pdf},
+  url = 	 {https://proceedings.mlr.press/v97/du19c.html},
+  abstract = 	 {Gradient descent finds a global minimum in training deep neural networks despite the objective function being non-convex. The current paper proves gradient descent achieves zero training loss in polynomial time for a deep over-parameterized neural network with residual connections (ResNet). Our analysis relies on the particular structure of the Gram matrix induced by the neural network architecture. This structure allows us to show the Gram matrix is stable throughout the training process and this stability implies the global optimality of the gradient descent algorithm. We further extend our analysis to deep residual convolutional neural networks and obtain a similar convergence result.}
+}
+
+@InProceedings{nguyen2021,
+  title = 	 {Tight Bounds on the Smallest Eigenvalue of the Neural Tangent Kernel for Deep ReLU Networks},
+  author =       {Nguyen, Quynh and Mondelli, Marco and Montufar, Guido F},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {8119--8129},
+  year = 	 {2021},
+  editor = 	 {Meila, Marina and Zhang, Tong},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {18--24 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v139/nguyen21g/nguyen21g.pdf},
+  url = 	 {https://proceedings.mlr.press/v139/nguyen21g.html},
+  abstract = 	 {A recent line of work has analyzed the theoretical properties of deep neural networks via the Neural Tangent Kernel (NTK). In particular, the smallest eigenvalue of the NTK has been related to the memorization capacity, the global convergence of gradient descent algorithms and the generalization of deep nets. However, existing results either provide bounds in the two-layer setting or assume that the spectrum of the NTK matrices is bounded away from 0 for multi-layer networks. In this paper, we provide tight bounds on the smallest eigenvalue of NTK matrices for deep ReLU nets, both in the limiting case of infinite widths and for finite widths. In the finite-width setting, the network architectures we consider are fairly general: we require the existence of a wide layer with roughly order of $N$ neurons, $N$ being the number of data samples; and the scaling of the remaining layer widths is arbitrary (up to logarithmic factors). To obtain our results, we analyze various quantities of independent interest: we give lower bounds on the smallest singular value of hidden feature matrices, and upper bounds on the Lipschitz constant of input-output feature maps.}
+}
+
+@misc{connectionistbench,
+  author       = {Sejnowski,Terry and Gorman,R.},
+  title        = {{Connectionist Bench (Sonar, Mines vs. Rocks)}},
+  year         = {2017},
+  howpublished = {UCI Machine Learning Repository},
+  note         = {{DOI}: https://doi.org/10.24432/C5T01Q}
+}
+
+@misc{banknote,
+  author       = {Lohweg,Volker},
+  title        = {{{B}anknote authentication}},
+  year         = {2013},
+  howpublished = {UCI Machine Learning Repository},
+  note         = {{DOI}: https://doi.org/10.24432/C55P57}
+}
+
+@article{liu2024,
+author = {Liu, Deyin and Wu, Lin Yuanbo and Li, Bo and Boussaid, Farid and Bennamoun, Mohammed and Xie, Xianghua and Liang, Chengwu},
+title = {Jacobian norm with Selective Input Gradient Regularization for interpretable adversarial defense},
+year = {2024},
+issue_date = {Jan 2024},
+publisher = {Elsevier Science Inc.},
+address = {USA},
+volume = {145},
+number = {C},
+issn = {0031-3203},
+url = {https://doi.org/10.1016/j.patcog.2023.109902},
+doi = {10.1016/j.patcog.2023.109902},
+journal = {Pattern Recogn.},
+month = {jan},
+numpages = {11},
+keywords = {Adversarial robustness, Jacobian normalization, Selective input gradient regularization}
+}
+
+@inproceedings{chao2021,
+ author = {Ma, Chao and Ying, Lexing},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+ pages = {16805--16817},
+ publisher = {Curran Associates, Inc.},
+ title = {On Linear Stability of SGD and Input-Smoothness of Neural Networks},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/8c26d2fad09dc76f3ff36b6ea752b0e1-Paper.pdf},
+ volume = {34},
+ year = {2021}
+}

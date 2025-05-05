@@ -1,0 +1,19 @@
+The Neural Tangent Kernel (NTK), defined as $\Theta_\theta^f(x_1, x_2) =
+\left[\partial f(\theta, x_1)\big/\partial \theta\right] \left[\partial
+f(\theta, x_2)\big/\partial \theta\right]^T$ where $\left[\partial f(\theta,
+\cdot)\big/\partial \theta\right]$ is a neural network (NN) Jacobian, has
+emerged as a central object of study in deep learning. In the infinite width
+limit, the NTK can sometimes be computed analytically and is useful for
+understanding training and generalization of NN architectures. At finite
+widths, the NTK is also used to better initialize NNs, compare the conditioning
+across models, perform architecture search, and do meta-learning.
+Unfortunately, the finite width NTK is notoriously expensive to compute, which
+severely limits its practical utility. We perform the first in-depth analysis
+of the compute and memory requirements for NTK computation in finite width
+networks. Leveraging the structure of neural networks, we further propose two
+novel algorithms that change the exponent of the compute and memory
+requirements of the finite width NTK, dramatically improving efficiency. Our
+algorithms can be applied in a black box fashion to any differentiable
+function, including those implementing neural networks. We open-source our
+implementations within the Neural Tangents package (arXiv:1912.02803) at
+https://github.com/google/neural-tangents.

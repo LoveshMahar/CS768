@@ -1,0 +1,471 @@
+# downlaoded from https://aclanthology.org
+# the citations have to be copied in due to the file being too large...
+
+@inproceedings{muennighoff-etal-2023-mteb,
+    title = "{MTEB}: Massive Text Embedding Benchmark",
+    author = "Muennighoff, Niklas  and
+      Tazi, Nouamane  and
+      Magne, Loic  and
+      Reimers, Nils",
+    editor = "Vlachos, Andreas  and
+      Augenstein, Isabelle",
+    booktitle = "Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.eacl-main.148",
+    doi = "10.18653/v1/2023.eacl-main.148",
+    pages = "2014--2037",
+}
+
+
+@inproceedings{nielsen-2023-scandeval,
+    title = "{S}cand{E}val: A Benchmark for {S}candinavian Natural Language Processing",
+    author = "Nielsen, Dan",
+    editor = {Alum{\"a}e, Tanel  and
+      Fishel, Mark},
+    booktitle = "Proceedings of the 24th Nordic Conference on Computational Linguistics (NoDaLiDa)",
+    month = may,
+    year = "2023",
+    address = "T{\'o}rshavn, Faroe Islands",
+    publisher = "University of Tartu Library",
+    url = "https://aclanthology.org/2023.nodalida-1.20",
+    pages = "185--201",
+}
+@inproceedings{hengchen-tahmasebi-2021-supersim,
+    title = "{S}uper{S}im: a test set for word similarity and relatedness in {S}wedish",
+    author = "Hengchen, Simon  and
+      Tahmasebi, Nina",
+    editor = "Dobnik, Simon  and
+      {\O}vrelid, Lilja",
+    booktitle = "Proceedings of the 23rd Nordic Conference on Computational Linguistics (NoDaLiDa)",
+    month = may # " 31--2 " # jun,
+    year = "2021",
+    address = "Reykjavik, Iceland (Online)",
+    publisher = {Link{\"o}ping University Electronic Press, Sweden},
+    url = "https://aclanthology.org/2021.nodalida-main.27",
+    pages = "268--275",
+}
+
+@inproceedings{feng-etal-2022-language,
+    title = "Language-agnostic {BERT} Sentence Embedding",
+    author = "Feng, Fangxiaoyu  and
+      Yang, Yinfei  and
+      Cer, Daniel  and
+      Arivazhagan, Naveen  and
+      Wang, Wei",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.62",
+    doi = "10.18653/v1/2022.acl-long.62",
+    pages = "878--891",
+    abstract = "While BERT is an effective method for learning monolingual sentence embeddings for semantic similarity and embedding based transfer learning BERT based cross-lingual sentence embeddings have yet to be explored. We systematically investigate methods for learning multilingual sentence embeddings by combining the best methods for learning monolingual and cross-lingual representations including: masked language modeling (MLM), translation language modeling (TLM), dual encoder translation ranking, and additive margin softmax. We show that introducing a pre-trained multilingual language model dramatically reduces the amount of parallel training data required to achieve good performance by 80{\%}. Composing the best of these methods produces a model that achieves 83.7{\%} bi-text retrieval accuracy over 112 languages on Tatoeba, well above the 65.5{\%} achieved by LASER, while still performing competitively on monolingual transfer learning benchmarks. Parallel data mined from CommonCrawl using our best model is shown to train competitive NMT models for en-zh and en-de. We publicly release our best multilingual sentence embedding model for 109+ languages at \url{https://tfhub.dev/google/LaBSE}.",
+}
+
+@inproceedings{reimers-gurevych-2019-sentence,
+    title = "Sentence-{BERT}: Sentence Embeddings using {S}iamese {BERT}-Networks",
+    author = "Reimers, Nils  and
+      Gurevych, Iryna",
+    editor = "Inui, Kentaro  and
+      Jiang, Jing  and
+      Ng, Vincent  and
+      Wan, Xiaojun",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1410",
+    doi = "10.18653/v1/D19-1410",
+    pages = "3982--3992",
+    abstract = "BERT (Devlin et al., 2018) and RoBERTa (Liu et al., 2019) has set a new state-of-the-art performance on sentence-pair regression tasks like semantic textual similarity (STS). However, it requires that both sentences are fed into the network, which causes a massive computational overhead: Finding the most similar pair in a collection of 10,000 sentences requires about 50 million inference computations ({\textasciitilde}65 hours) with BERT. The construction of BERT makes it unsuitable for semantic similarity search as well as for unsupervised tasks like clustering. In this publication, we present Sentence-BERT (SBERT), a modification of the pretrained BERT network that use siamese and triplet network structures to derive semantically meaningful sentence embeddings that can be compared using cosine-similarity. This reduces the effort for finding the most similar pair from 65 hours with BERT / RoBERTa to about 5 seconds with SBERT, while maintaining the accuracy from BERT. We evaluate SBERT and SRoBERTa on common STS tasks and transfer learning tasks, where it outperforms other state-of-the-art sentence embeddings methods.",
+}
+
+@inproceedings{wang-etal-2021-minilmv2,
+    title = "{M}ini{LM}v2: Multi-Head Self-Attention Relation Distillation for Compressing Pretrained Transformers",
+    author = "Wang, Wenhui  and
+      Bao, Hangbo  and
+      Huang, Shaohan  and
+      Dong, Li  and
+      Wei, Furu",
+    editor = "Zong, Chengqing  and
+      Xia, Fei  and
+      Li, Wenjie  and
+      Navigli, Roberto",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-acl.188",
+    doi = "10.18653/v1/2021.findings-acl.188",
+    pages = "2140--2151",
+}
+@inproceedings{gao-etal-2021-simcse,
+    title = "{S}im{CSE}: Simple Contrastive Learning of Sentence Embeddings",
+    author = "Gao, Tianyu  and
+      Yao, Xingcheng  and
+      Chen, Danqi",
+    editor = "Moens, Marie-Francine  and
+      Huang, Xuanjing  and
+      Specia, Lucia  and
+      Yih, Scott Wen-tau",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.552",
+    doi = "10.18653/v1/2021.emnlp-main.552",
+    pages = "6894--6910",
+}
+
+@inproceedings{conneau-etal-2020-unsupervised,
+    title = "Unsupervised Cross-lingual Representation Learning at Scale",
+    author = "Conneau, Alexis  and
+      Khandelwal, Kartikay  and
+      Goyal, Naman  and
+      Chaudhary, Vishrav  and
+      Wenzek, Guillaume  and
+      Guzm{\'a}n, Francisco  and
+      Grave, Edouard  and
+      Ott, Myle  and
+      Zettlemoyer, Luke  and
+      Stoyanov, Veselin",
+    editor = "Jurafsky, Dan  and
+      Chai, Joyce  and
+      Schluter, Natalie  and
+      Tetreault, Joel",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.747",
+    doi = "10.18653/v1/2020.acl-main.747",
+    pages = "8440--8451",
+    abstract = "This paper shows that pretraining multilingual language models at scale leads to significant performance gains for a wide range of cross-lingual transfer tasks. We train a Transformer-based masked language model on one hundred languages, using more than two terabytes of filtered CommonCrawl data. Our model, dubbed XLM-R, significantly outperforms multilingual BERT (mBERT) on a variety of cross-lingual benchmarks, including +14.6{\%} average accuracy on XNLI, +13{\%} average F1 score on MLQA, and +2.4{\%} F1 score on NER. XLM-R performs particularly well on low-resource languages, improving 15.7{\%} in XNLI accuracy for Swahili and 11.4{\%} for Urdu over previous XLM models. We also present a detailed empirical analysis of the key factors that are required to achieve these gains, including the trade-offs between (1) positive transfer and capacity dilution and (2) the performance of high and low resource languages at scale. Finally, we show, for the first time, the possibility of multilingual modeling without sacrificing per-language performance; XLM-R is very competitive with strong monolingual models on the GLUE and XNLI benchmarks. We will make our code and models publicly available.",
+}
+
+@inproceedings{stromberg-derczynski-etal-2021-danish,
+    title = "The {D}anish {G}igaword Corpus",
+    author = "Str{\o}mberg-Derczynski, Leon  and
+      Ciosici, Manuel  and
+      Baglini, Rebekah  and
+      Christiansen, Morten H.  and
+      Dalsgaard, Jacob Aarup  and
+      Fusaroli, Riccardo  and
+      Henrichsen, Peter Juel  and
+      Hvingelby, Rasmus  and
+      Kirkedal, Andreas  and
+      Kjeldsen, Alex Speed  and
+      Ladefoged, Claus  and
+      Nielsen, Finn {\AA}rup  and
+      Madsen, Jens  and
+      Petersen, Malte Lau  and
+      Rystr{\o}m, Jonathan Hvithamar  and
+      Varab, Daniel",
+    editor = "Dobnik, Simon  and
+      {\O}vrelid, Lilja",
+    booktitle = "Proceedings of the 23rd Nordic Conference on Computational Linguistics (NoDaLiDa)",
+    month = may # " 31--2 " # jun,
+    year = "2021",
+    address = "Reykjavik, Iceland (Online)",
+    publisher = {Link{\"o}ping University Electronic Press, Sweden},
+    url = "https://aclanthology.org/2021.nodalida-main.46",
+    pages = "413--421",
+    abstract = "Danish language technology has been hindered by a lack of broad-coverage corpora at the scale modern NLP prefers. This paper describes the Danish Gigaword Corpus, the result of a focused effort to provide a diverse and freely-available one billion word corpus of Danish text. The Danish Gigaword corpus covers a wide array of time periods, domains, speakers{'} socio-economic status, and Danish dialects.",
+}
+
+@inproceedings{ekgren-etal-2022-lessons,
+    title = "Lessons Learned from {GPT}-{SW}3: Building the First Large-Scale Generative Language Model for {S}wedish",
+    author = {Ekgren, Ariel  and
+      Cuba Gyllensten, Amaru  and
+      Gogoulou, Evangelia  and
+      Heiman, Alice  and
+      Verlinden, Severine  and
+      {\"O}hman, Joey  and
+      Carlsson, Fredrik  and
+      Sahlgren, Magnus},
+    editor = "Calzolari, Nicoletta  and
+      B{\'e}chet, Fr{\'e}d{\'e}ric  and
+      Blache, Philippe  and
+      Choukri, Khalid  and
+      Cieri, Christopher  and
+      Declerck, Thierry  and
+      Goggi, Sara  and
+      Isahara, Hitoshi  and
+      Maegaard, Bente  and
+      Mariani, Joseph  and
+      Mazo, H{\'e}l{\`e}ne  and
+      Odijk, Jan  and
+      Piperidis, Stelios",
+    booktitle = "Proceedings of the Thirteenth Language Resources and Evaluation Conference",
+    month = jun,
+    year = "2022",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2022.lrec-1.376",
+    pages = "3509--3518",
+    abstract = "We present GTP-SW3, a 3.5 billion parameter autoregressive language model, trained on a newly created 100 GB Swedish corpus. This paper provides insights with regards to data collection and training, while highlights the challenges of proper model evaluation. The results of quantitive evaluation through perplexity indicate that GPT-SW3 is a competent model in comparison with existing autoregressive models of similar size. Additionally, we perform an extensive prompting study which reveals the good text generation capabilities of GTP-SW3.",
+}
+
+@inproceedings{reimers-gurevych-2020-making,
+    title = "Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation",
+    author = "Reimers, Nils  and
+      Gurevych, Iryna",
+    editor = "Webber, Bonnie  and
+      Cohn, Trevor  and
+      He, Yulan  and
+      Liu, Yang",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.365",
+    doi = "10.18653/v1/2020.emnlp-main.365",
+    pages = "4512--4525",
+    abstract = "We present an easy and efficient method to extend existing sentence embedding models to new languages. This allows to create multilingual versions from previously monolingual models. The training is based on the idea that a translated sentence should be mapped to the same location in the vector space as the original sentence. We use the original (monolingual) model to generate sentence embeddings for the source language and then train a new system on translated sentences to mimic the original model. Compared to other methods for training multilingual sentence embeddings, this approach has several advantages: It is easy to extend existing models with relatively few samples to new languages, it is easier to ensure desired properties for the vector space, and the hardware requirements for training are lower. We demonstrate the effectiveness of our approach for 50+ languages from various language families. Code to extend sentence embeddings models to more than 400 languages is publicly available.",
+}
+
+@inproceedings{nivre-etal-2017-universal,
+    title = "{U}niversal {D}ependencies",
+    author = "Nivre, Joakim  and
+      Zeman, Daniel  and
+      Ginter, Filip  and
+      Tyers, Francis",
+    editor = "Klementiev, Alexandre  and
+      Specia, Lucia",
+    booktitle = "Proceedings of the 15th Conference of the {E}uropean Chapter of the Association for Computational Linguistics: Tutorial Abstracts",
+    month = apr,
+    year = "2017",
+    address = "Valencia, Spain",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/E17-5001",
+    abstract = "Universal Dependencies (UD) is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages. This tutorial gives an introduction to the UD framework and resources, from basic design principles to annotation guidelines and existing treebanks. We also discuss tools for developing and exploiting UD treebanks and survey applications of UD in NLP and linguistics.",
+}
+
+@inproceedings{conneau-kiela-2018-senteval,
+    title = "{S}ent{E}val: An Evaluation Toolkit for Universal Sentence Representations",
+    author = "Conneau, Alexis  and
+      Kiela, Douwe",
+    editor = "Calzolari, Nicoletta  and
+      Choukri, Khalid  and
+      Cieri, Christopher  and
+      Declerck, Thierry  and
+      Goggi, Sara  and
+      Hasida, Koiti  and
+      Isahara, Hitoshi  and
+      Maegaard, Bente  and
+      Mariani, Joseph  and
+      Mazo, H{\'e}l{\`e}ne  and
+      Moreno, Asuncion  and
+      Odijk, Jan  and
+      Piperidis, Stelios  and
+      Tokunaga, Takenobu",
+    booktitle = "Proceedings of the Eleventh International Conference on Language Resources and Evaluation ({LREC} 2018)",
+    month = may,
+    year = "2018",
+    address = "Miyazaki, Japan",
+    publisher = "European Language Resources Association (ELRA)",
+    url = "https://aclanthology.org/L18-1269",
+}
+
+@inproceedings{wang-etal-2018-glue,
+    title = "{GLUE}: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding",
+    author = "Wang, Alex  and
+      Singh, Amanpreet  and
+      Michael, Julian  and
+      Hill, Felix  and
+      Levy, Omer  and
+      Bowman, Samuel",
+    editor = "Linzen, Tal  and
+      Chrupa{\l}a, Grzegorz  and
+      Alishahi, Afra",
+    booktitle = "Proceedings of the 2018 {EMNLP} Workshop {B}lackbox{NLP}: Analyzing and Interpreting Neural Networks for {NLP}",
+    month = nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W18-5446",
+    doi = "10.18653/v1/W18-5446",
+    pages = "353--355",
+    abstract = "Human ability to understand language is \textit{general, flexible, and robust}. In contrast, most NLU models above the word level are designed for a specific task and struggle with out-of-domain data. If we aspire to develop models with understanding beyond the detection of superficial correspondences between inputs and outputs, then it is critical to develop a unified model that can execute a range of linguistic tasks across different domains. To facilitate research in this direction, we present the General Language Understanding Evaluation (GLUE, gluebenchmark.com): a benchmark of nine diverse NLU tasks, an auxiliary dataset for probing models for understanding of specific linguistic phenomena, and an online platform for evaluating and comparing models. For some benchmark tasks, training data is plentiful, but for others it is limited or does not match the genre of the test set. GLUE thus favors models that can represent linguistic knowledge in a way that facilitates sample-efficient learning and effective knowledge-transfer across tasks. While none of the datasets in GLUE were created from scratch for the benchmark, four of them feature privately-held test data, which is used to ensure that the benchmark is used fairly. We evaluate baselines that use ELMo (Peters et al., 2018), a powerful transfer learning technique, as well as state-of-the-art sentence representation models. The best models still achieve fairly low absolute scores. Analysis with our diagnostic dataset yields similarly weak performance over all phenomena tested, with some exceptions.",
+}
+
+
+@inproceedings{devlin-etal-2019-bert,
+    title = "{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    author = "Devlin, Jacob  and
+      Chang, Ming-Wei  and
+      Lee, Kenton  and
+      Toutanova, Kristina",
+    editor = "Burstein, Jill  and
+      Doran, Christy  and
+      Solorio, Thamar",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1423",
+    doi = "10.18653/v1/N19-1423",
+    pages = "4171--4186",
+    abstract = "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5 (7.7 point absolute improvement), MultiNLI accuracy to 86.7{\%} (4.6{\%} absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).",
+}
+
+@inproceedings{pauli-etal-2021-danlp,
+    title = "{D}a{NLP}: An open-source toolkit for {D}anish Natural Language Processing",
+    author = "Pauli, Amalie Brogaard  and
+      Barrett, Maria  and
+      Lacroix, Oph{\'e}lie  and
+      Hvingelby, Rasmus",
+    editor = "Dobnik, Simon  and
+      {\O}vrelid, Lilja",
+    booktitle = "Proceedings of the 23rd Nordic Conference on Computational Linguistics (NoDaLiDa)",
+    month = may # " 31--2 " # jun,
+    year = "2021",
+    address = "Reykjavik, Iceland (Online)",
+    publisher = {Link{\"o}ping University Electronic Press, Sweden},
+    url = "https://aclanthology.org/2021.nodalida-main.53",
+    pages = "460--466",
+    abstract = "We present an open-source toolkit for Danish Natural Language Processing, enabling easy access to Danish NLP{'}s latest advancements. The toolkit features wrapper-functions for loading models and datasets in a unified way using third-party NLP frameworks. The toolkit is developed to enhance community building, understanding the need from industry and knowledge sharing. As an example of this, we present Angry Tweets: An Annotation Game to create awareness of Danish NLP and create a new sentiment-annotated dataset.",
+}
+
+@inproceedings{derczynski-kjeldsen-2019-bornholmsk,
+    title = "Bornholmsk Natural Language Processing: Resources and Tools",
+    author = "Derczynski, Leon  and
+      Kjeldsen, Alex Speed",
+    editor = "Hartmann, Mareike  and
+      Plank, Barbara",
+    booktitle = "Proceedings of the 22nd Nordic Conference on Computational Linguistics",
+    month = sep # "{--}" # oct,
+    year = "2019",
+    address = "Turku, Finland",
+    publisher = {Link{\"o}ping University Electronic Press},
+    url = "https://aclanthology.org/W19-6138",
+    pages = "338--344",
+    abstract = {This paper introduces language processing resources and tools for Bornholmsk, a language spoken on the island of Bornholm, with roots in Danish and closely related to Scanian. This presents an overview of the language and available data, and the first NLP models for this living, minority Nordic language. Sammenfattnijng p{\aa} borrijnholmst: D{\ae}jnna artikkelijn introduserer naturspr{\aa}gsresurser {\aa} varktoi for borrijnholmst, ed spr{\aa}g a d{\ae}r snakkes p{\aa} {\"o}n Borrijnholm me r{\o}dder i danst {\aa} i n{\ae}r familia me sk{\aa}nst. Artikkelijn gjer ed {\^a}uersyn {\^a}uer spr{\aa}ged {\aa} di datan som fijnnes, {\aa} di fosste NLP mod{\ae}llarna for d{\ae}tta l{\ae}wenes nordiska minnret{\^a}lsspr{\aa}ged.},
+}
+
+@inproceedings{sigurbergsson-derczynski-2020-offensive,
+    title = "Offensive Language and Hate Speech Detection for {D}anish",
+    author = "Sigurbergsson, Gudbjartur Ingi  and
+      Derczynski, Leon",
+    editor = "Calzolari, Nicoletta  and
+      B{\'e}chet, Fr{\'e}d{\'e}ric  and
+      Blache, Philippe  and
+      Choukri, Khalid  and
+      Cieri, Christopher  and
+      Declerck, Thierry  and
+      Goggi, Sara  and
+      Isahara, Hitoshi  and
+      Maegaard, Bente  and
+      Mariani, Joseph  and
+      Mazo, H{\'e}l{\`e}ne  and
+      Moreno, Asuncion  and
+      Odijk, Jan  and
+      Piperidis, Stelios",
+    booktitle = "Proceedings of the Twelfth Language Resources and Evaluation Conference",
+    month = may,
+    year = "2020",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2020.lrec-1.430",
+    pages = "3498--3508",
+    abstract = "The presence of offensive language on social media platforms and the implications this poses is becoming a major concern in modern society. Given the enormous amount of content created every day, automatic methods are required to detect and deal with this type of content. Until now, most of the research has focused on solving the problem for the English language, while the problem is multilingual. We construct a Danish dataset DKhate containing user-generated comments from various social media platforms, and to our knowledge, the first of its kind, annotated for various types and target of offensive language. We develop four automatic classification systems, each designed to work for both the English and the Danish language. In the detection of offensive language in English, the best performing system achieves a macro averaged F1-score of 0.74, and the best performing system for Danish achieves a macro averaged F1-score of 0.70. In the detection of whether or not an offensive post is targeted, the best performing system for English achieves a macro averaged F1-score of 0.62, while the best performing system for Danish achieves a macro averaged F1-score of 0.73. Finally, in the detection of the target type in a targeted offensive post, the best performing system for English achieves a macro averaged F1-score of 0.56, and the best performing system for Danish achieves a macro averaged F1-score of 0.63. Our work for both the English and the Danish language captures the type and targets of offensive language, and present automatic methods for detecting different kinds of offensive language such as hate speech and cyberbullying.",
+    language = "English",
+    ISBN = "979-10-95546-34-4",
+}
+@inproceedings{norregaard-derczynski-2021-danfever,
+    title = "{D}an{FEVER}: claim verification dataset for {D}anish",
+    author = "N{\o}rregaard, Jeppe  and
+      Derczynski, Leon",
+    editor = "Dobnik, Simon  and
+      {\O}vrelid, Lilja",
+    booktitle = "Proceedings of the 23rd Nordic Conference on Computational Linguistics (NoDaLiDa)",
+    month = may # " 31--2 " # jun,
+    year = "2021",
+    address = "Reykjavik, Iceland (Online)",
+    publisher = {Link{\"o}ping University Electronic Press, Sweden},
+    url = "https://aclanthology.org/2021.nodalida-main.47",
+    pages = "422--428",
+    abstract = "We present a dataset, DanFEVER, intended for multilingual misinformation research. The dataset is in Danish and has the same format as the well-known English FEVER dataset. It can be used for testing methods in multilingual settings, as well as for creating models in production for the Danish language.",
+}
+
+@inproceedings{haas-derczynski-2021-discriminating,
+    title = "Discriminating Between Similar {N}ordic Languages",
+    author = "Haas, Ren{\'e}  and
+      Derczynski, Leon",
+    editor = {Zampieri, Marcos  and
+      Nakov, Preslav  and
+      Ljube{\v{s}}i{\'c}, Nikola  and
+      Tiedemann, J{\"o}rg  and
+      Scherrer, Yves  and
+      Jauhiainen, Tommi},
+    booktitle = "Proceedings of the Eighth Workshop on NLP for Similar Languages, Varieties and Dialects",
+    month = apr,
+    year = "2021",
+    address = "Kiyv, Ukraine",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.vardial-1.8",
+    pages = "67--75",
+    abstract = "Automatic language identification is a challenging problem. Discriminating between closely related languages is especially difficult. This paper presents a machine learning approach for automatic language identification for the Nordic languages, which often suffer miscategorisation by existing state-of-the-art tools. Concretely we will focus on discrimination between six Nordic languages: Danish, Swedish, Norwegian (Nynorsk), Norwegian (Bokm{\aa}l), Faroese and Icelandic.",
+}
+
+@inproceedings{velldal-etal-2018-norec,
+    title = "{N}o{R}e{C}: The {N}orwegian Review Corpus",
+    author = "Velldal, Erik  and
+      {\O}vrelid, Lilja  and
+      Bergem, Eivind Alexander  and
+      Stadsnes, Cathrine  and
+      Touileb, Samia  and
+      J{\o}rgensen, Fredrik",
+    editor = "Calzolari, Nicoletta  and
+      Choukri, Khalid  and
+      Cieri, Christopher  and
+      Declerck, Thierry  and
+      Goggi, Sara  and
+      Hasida, Koiti  and
+      Isahara, Hitoshi  and
+      Maegaard, Bente  and
+      Mariani, Joseph  and
+      Mazo, H{\'e}l{\`e}ne  and
+      Moreno, Asuncion  and
+      Odijk, Jan  and
+      Piperidis, Stelios  and
+      Tokunaga, Takenobu",
+    booktitle = "Proceedings of the Eleventh International Conference on Language Resources and Evaluation ({LREC} 2018)",
+    month = may,
+    year = "2018",
+    address = "Miyazaki, Japan",
+    publisher = "European Language Resources Association (ELRA)",
+    url = "https://aclanthology.org/L18-1661",
+}
+
+@inproceedings{ivanova-etal-2023-norquad,
+    title = "{N}or{Q}u{AD}: {N}orwegian Question Answering Dataset",
+    author = "Ivanova, Sardana  and
+      Andreassen, Fredrik  and
+      Jentoft, Matias  and
+      Wold, Sondre  and
+      {\O}vrelid, Lilja",
+    editor = {Alum{\"a}e, Tanel  and
+      Fishel, Mark},
+    booktitle = "Proceedings of the 24th Nordic Conference on Computational Linguistics (NoDaLiDa)",
+    month = may,
+    year = "2023",
+    address = "T{\'o}rshavn, Faroe Islands",
+    publisher = "University of Tartu Library",
+    url = "https://aclanthology.org/2023.nodalida-1.17",
+    pages = "159--168",
+    abstract = "In this paper we present NorQuAD: the first Norwegian question answering dataset for machine reading comprehension. The dataset consists of 4,752 manually created question-answer pairs. We here detail the data collection procedure and present statistics of the dataset. We also benchmark several multilingual and Norwegian monolingual language models on the dataset and compare them against human performance. The dataset will be made freely available.",
+}

@@ -1,0 +1,17 @@
+Many modern data analyses benefit from explicitly modeling dependence
+structure in data -- such as measurements across time or space, ordered words
+in a sentence, or genes in a genome. A gold standard evaluation technique is
+structured cross-validation (CV), which leaves out some data subset (such as
+data within a time interval or data in a geographic region) in each fold. But
+CV here can be prohibitively slow due to the need to re-run already-expensive
+learning algorithms many times. Previous work has shown approximate
+cross-validation (ACV) methods provide a fast and provably accurate alternative
+in the setting of empirical risk minimization. But this existing ACV work is
+restricted to simpler models by the assumptions that (i) data across CV folds
+are independent and (ii) an exact initial model fit is available. In structured
+data analyses, both these assumptions are often untrue. In the present work, we
+address (i) by extending ACV to CV schemes with dependence structure between
+the folds. To address (ii), we verify -- both theoretically and empirically --
+that ACV quality deteriorates smoothly with noise in the initial fit. We
+demonstrate the accuracy and computational benefits of our proposed methods on
+a diverse set of real-world applications.

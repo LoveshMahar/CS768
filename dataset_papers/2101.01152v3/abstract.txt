@@ -1,0 +1,10 @@
+We consider a one-hidden-layer leaky ReLU network of arbitrary width trained
+by stochastic gradient descent (SGD) following an arbitrary initialization. We
+prove that SGD produces neural networks that have classification accuracy
+competitive with that of the best halfspace over the distribution for a broad
+class of distributions that includes log-concave isotropic and hard margin
+distributions. Equivalently, such networks can generalize when the data
+distribution is linearly separable but corrupted with adversarial label noise,
+despite the capacity to overfit. To the best of our knowledge, this is the
+first work to show that overparameterized neural networks trained by SGD can
+generalize when the data is corrupted with adversarial label noise.

@@ -1,0 +1,706 @@
+@article{chen2023reconcile,
+  title={Reconcile: Round-table conference improves reasoning via consensus among diverse llms},
+  author={Chen, Justin Chih-Yao and Saha, Swarnadeep and Bansal, Mohit},
+  journal={arXiv preprint arXiv:2309.13007},
+url={https://arxiv.org/abs/2309.13007},
+  year={2023}
+}
+
+@inproceedings{hsieh2023distilling,
+    title = "Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes",
+    author = "Hsieh, Cheng-Yu  and
+      Li, Chun-Liang  and
+      Yeh, Chih-kuan  and
+      Nakhost, Hootan  and
+      Fujii, Yasuhisa  and
+      Ratner, Alex  and
+      Krishna, Ranjay  and
+      Lee, Chen-Yu  and
+      Pfister, Tomas",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023"
+}
+
+
+@InProceedings{fu2023specializing,
+  title = 	 {Specializing Smaller Language Models towards Multi-Step Reasoning},
+  author =       {Fu, Yao and Peng, Hao and Ou, Litu and Sabharwal, Ashish and Khot, Tushar},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {10421--10430},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/fu23d/fu23d.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/fu23d.html}
+}
+
+
+@article{hinton2015distilling,
+  title={Distilling the knowledge in a neural network},
+  author={Hinton, Geoffrey and Vinyals, Oriol and Dean, Jeff},
+  journal={arXiv preprint arXiv:1503.02531},
+url={https://arxiv.org/abs/1503.02531},
+  year={2015}
+}
+
+@article{mukherjee2023orca,
+  title={Orca: Progressive learning from complex explanation traces of gpt-4},
+  author={Mukherjee, Subhabrata and Mitra, Arindam and Jawahar, Ganesh and Agarwal, Sahaj and Palangi, Hamid and Awadallah, Ahmed},
+  journal={arXiv preprint arXiv:2306.02707},
+  url={https://arxiv.org/abs/2306.02707},
+  year={2023}
+}
+
+@inproceedings{li-etal-2023-symbolic,
+    title = "Symbolic Chain-of-Thought Distillation: Small Models Can Also {``}Think{''} Step-by-Step",
+    author = "Li, Liunian Harold  and
+      Hessel, Jack  and
+      Yu, Youngjae  and
+      Ren, Xiang  and
+      Chang, Kai-Wei  and
+      Choi, Yejin",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.150",
+    doi = "10.18653/v1/2023.acl-long.150",
+    pages = "2665--2679",
+    abstract = "Chain-of-thought prompting (e.g., {``}Let{'}s think step-by-ste{''}) primes large language models to verbalize rationalization for their predictions. While chain-of-thought can lead to dramatic performance gains, benefits appear to emerge only for sufficiently large models (beyond 50B parameters). We show that orders-of-magnitude smaller models (125M{---}1.3B parameters) can still benefit from chain-of-thought prompting. To achieve this, we introduce Symbolic Chain-of-Thought Distillation (SCoTD), a method to train a smaller student model on rationalizations sampled from a significantly larger teacher model. Experiments across several commonsense benchmarks show that: 1) SCoTD enhances the performance of the student model in both supervised and few-shot settings, and especially for challenge sets; 2) sampling many reasoning chains per instance from the teacher is paramount; and 3) after distillation, student chain-of-thoughts are judged by humans as comparable to the teacher, despite orders of magnitude fewer parameters. We test several hypotheses regarding what properties of chain-of-thought samples are important, e.g., diversity vs. teacher likelihood vs. open-endedness. We release our corpus of chain-of-thought samples and code.",
+}
+
+@inproceedings{west-etal-2022-symbolic,
+    title = "Symbolic Knowledge Distillation: from General Language Models to Commonsense Models",
+    author = "West, Peter  and
+      Bhagavatula, Chandra  and
+      Hessel, Jack  and
+      Hwang, Jena  and
+      Jiang, Liwei  and
+      Le Bras, Ronan  and
+      Lu, Ximing  and
+      Welleck, Sean  and
+      Choi, Yejin",
+    editor = "Carpuat, Marine  and
+      de Marneffe, Marie-Catherine  and
+      Meza Ruiz, Ivan Vladimir",
+    booktitle = "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.naacl-main.341",
+    doi = "10.18653/v1/2022.naacl-main.341",
+    pages = "4602--4625",
+    abstract = "The common practice for training commonsense models has gone from{--}human{--}to{--}corpus{--}to{--}machine: humans author commonsense knowledge graphs in order to train commonsense models. In this work, we investigate an alternative, from{--}machine{--}to{--}corpus{--}to{--}machine: general language models author these commonsense knowledge graphs to train commonsense models. Our study leads to a new framework, Symbolic Knowledge Distillation. As with prior art in Knowledge Distillation (Hinton et al. 2015), our approach uses larger models to teach smaller models. A key difference is that we distill knowledge symbolically{--}as text{--}in addition to the neural model. We distill only one aspect{--}the commonsense of a general language model teacher, allowing the student to be a different type, a commonsense model. Altogether, we show that careful prompt engineering and a separately trained critic model allow us to selectively distill high-quality causal commonsense from GPT-3, a general language model. Empirical results demonstrate that, for the first time, a human-authored commonsense knowledge graph is surpassed by our automatically distilled variant in all three criteria: quantity, quality, and diversity. In addition, it results in a neural commonsense model that surpasses the teacher model{'}s commonsense capabilities despite its 100x smaller size. We apply this to the ATOMIC resource, and will share our new symbolic knowledge graph and commonsense models.",
+}
+
+@article{wei2023chainofthought,
+  title={Chain-of-thought prompting elicits reasoning in large language models},
+  author={Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Xia, Fei and Chi, Ed and Le, Quoc V and Zhou, Denny and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={24824--24837},
+  url={https://arxiv.org/abs/2201.11903},
+  year={2022}
+}
+
+@inproceedings{magister2022teaching,
+    title = "Teaching Small Language Models to Reason",
+    author = "Magister, Lucie Charlotte  and
+      Mallinson, Jonathan  and
+      Adamek, Jakub  and
+      Malmi, Eric  and
+      Severyn, Aliaksei",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-short.151",
+    doi = "10.18653/v1/2023.acl-short.151",
+    pages = "1773--1781"
+}
+
+@inproceedings{ho2022large,
+    title = "Large Language Models Are Reasoning Teachers",
+    author = "Ho, Namgyu  and
+      Schmid, Laura  and
+      Yun, Se-Young",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.830",
+    doi = "10.18653/v1/2023.acl-long.830",
+    pages = "14852--14882",
+}
+
+@inproceedings{saha2023can,
+  title={Can Language Models Teach Weaker Agents? Teacher Explanations Improve Students via Personalization},
+  author={Saha, Swarnadeep and Hase, Peter and Bansal, Mohit},
+  booktitle={NeurIPS},
+  url={https://arxiv.org/abs/2306.09299},
+  year={2023}
+}
+
+@article{kojima2022large,
+  title={Large language models are zero-shot reasoners},
+  author={Kojima, Takeshi and Gu, Shixiang Shane and Reid, Machel and Matsuo, Yutaka and Iwasawa, Yusuke},
+  journal={Advances in neural information processing systems},
+  volume={35},
+  pages={22199--22213},
+  url={https://arxiv.org/abs/2205.11916},
+  year={2022}
+}
+
+@article{weng2023prompt,
+  title   = {LLM-powered Autonomous Agents},
+  author  = {Weng, Lilian},
+  journal = {lilianweng.github.io},
+  year    = {2023},
+  month   = {Jun},
+  url     = {https://lilianweng.github.io/posts/2023-06-23-agent/}
+}
+
+@inproceedings{yao2023react,
+title={ReAct: Synergizing Reasoning and Acting in Language Models},
+author={Shunyu Yao and Jeffrey Zhao and Dian Yu and Nan Du and Izhak Shafran and Karthik R Narasimhan and Yuan Cao},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=WE_vluYUL-X}
+}
+
+@article{chen2023fireact,
+  title={Fireact: Toward language agent fine-tuning},
+  author={Chen, Baian and Shu, Chang and Shareghi, Ehsan and Collier, Nigel and Narasimhan, Karthik and Yao, Shunyu},
+  journal={arXiv preprint arXiv:2310.05915},
+  url={https://arxiv.org/abs/2310.05915},
+  year={2023}
+}
+
+@article{deng2023implicit,
+  title={Implicit Chain of Thought Reasoning via Knowledge Distillation},
+  author={Deng, Yuntian and Prasad, Kiran and Fernandez, Roland and Smolensky, Paul and Chaudhary, Vishrav and Shieber, Stuart},
+  journal={arXiv preprint arXiv:2311.01460},
+  url={https://arxiv.org/abs/2311.01460},
+  year={2023}
+}
+
+@article{chung.h.2022flant5,
+  title={Scaling instruction-finetuned language models},
+  author={Chung, Hyung Won and Hou, Le and Longpre, Shayne and Zoph, Barret and Tay, Yi and Fedus, William and Li, Yunxuan and Wang, Xuezhi and Dehghani, Mostafa and Brahma, Siddhartha and others},
+  journal={arXiv preprint arXiv:2210.11416},
+  url={https://arxiv.org/abs/2210.11416},
+  year={2022}
+}
+
+@inproceedings{wang.y.2023super,
+    title = "Super-{N}atural{I}nstructions: Generalization via Declarative Instructions on 1600+ {NLP} Tasks",
+    author = "Wang, Yizhong  and
+      Mishra, Swaroop  and
+      Alipoormolabashi, Pegah  and
+      Kordi, Yeganeh  and
+      Mirzaei, Amirreza  and
+      Naik, Atharva  and
+      Ashok, Arjun  and
+      Dhanasekaran, Arut Selvan  and
+      Arunkumar, Anjana  and
+      Stap, David  and
+      Pathak, Eshaan  and
+      Karamanolakis, Giannis  and
+      Lai, Haizhi  and
+      Purohit, Ishan  and
+      Mondal, Ishani  and
+      Anderson, Jacob  and
+      Kuznia, Kirby  and
+      Doshi, Krima  and
+      Pal, Kuntal Kumar  and
+      Patel, Maitreya  and
+      Moradshahi, Mehrad  and
+      Parmar, Mihir  and
+      Purohit, Mirali  and
+      Varshney, Neeraj  and
+      Kaza, Phani Rohitha  and
+      Verma, Pulkit  and
+      Puri, Ravsehaj Singh  and
+      Karia, Rushang  and
+      Doshi, Savan  and
+      Sampat, Shailaja Keyur  and
+      Mishra, Siddhartha  and
+      Reddy A, Sujan  and
+      Patro, Sumanta  and
+      Dixit, Tanay  and
+      Shen, Xudong",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.340",
+    doi = "10.18653/v1/2022.emnlp-main.340",
+    pages = "5085--5109",
+}
+
+@inproceedings{wang.y.2022self,
+    title = "Self-Instruct: Aligning Language Models with Self-Generated Instructions",
+    author = "Wang, Yizhong  and
+      Kordi, Yeganeh  and
+      Mishra, Swaroop  and
+      Liu, Alisa  and
+      Smith, Noah A.  and
+      Khashabi, Daniel  and
+      Hajishirzi, Hannaneh",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.754",
+    doi = "10.18653/v1/2023.acl-long.754",
+    pages = "13484--13508",
+    abstract = "Large {``}instruction-tuned{''} language models (i.e., finetuned to respond to instructions) have demonstrated a remarkable ability to generalize zero-shot to new tasks. Nevertheless, they depend heavily on human-written instruction data that is often limited in quantity, diversity, and creativity, therefore hindering the generality of the tuned model. We introduce Self-Instruct, a framework for improving the instruction-following capabilities of pretrained language models by bootstrapping off their own generations. Our pipeline generates instructions, input, and output samples from a language model, then filters invalid or similar ones before using them to finetune the original model. Applying our method to the vanilla GPT3, we demonstrate a 33{\%} absolute improvement over the original model on Super-NaturalInstructions, on par with the performance of InstructGPT-001, which was trained with private user data and human annotations. For further evaluation, we curate a set of expert-written instructions for novel tasks, and show through human evaluation that tuning GPT3 with Self-Instruct outperforms using existing public instruction datasets by a large margin, leaving only a 5{\%} absolute gap behind InstructGPT-001. Self-Instruct provides an almost annotation-free method for aligning pre-trained language models with instructions, and we release our large synthetic dataset to facilitate future studies on instruction tuning.",
+}
+
+@misc{taori.r.2023stanford,
+  title={Stanford alpaca: An instruction-following llama model},
+  author={Taori, Rohan and Gulrajani, Ishaan and Zhang, Tianyi and Dubois, Yann and Li, Xuechen and Guestrin, Carlos and Liang, Percy and Hashimoto, Tatsunori B},
+  year={2023}
+}
+
+@misc{vicuna2023,
+    title = {Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90\%* ChatGPT Quality},
+    url = {https://lmsys.org/blog/2023-03-30-vicuna/},
+    author = {Chiang, Wei-Lin and Li, Zhuohan and Lin, Zi and Sheng, Ying and Wu, Zhanghao and Zhang, Hao and Zheng, Lianmin and Zhuang, Siyuan and Zhuang, Yonghao and Gonzalez, Joseph E. and Stoica, Ion and Xing, Eric P.},
+    month = {March},
+    year = {2023}
+}
+
+@inproceedings{bucilua.c.2006model,
+  title={Model compression},
+  author={Buciluǎ, Cristian and Caruana, Rich and Niculescu-Mizil, Alexandru},
+  booktitle={Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining},
+  pages={535--541},
+  url={https://dl.acm.org/doi/abs/10.1145/1150402.1150464},
+  year={2006}
+}
+
+@article{chen.t.2020big,
+  title={Big self-supervised models are strong semi-supervised learners},
+  author={Chen, Ting and Kornblith, Simon and Swersky, Kevin and Norouzi, Mohammad and Hinton, Geoffrey E},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={22243--22255},
+  url={https://arxiv.org/abs/2006.10029},
+  year={2020}
+}
+
+@inproceedings{you2017learning,
+  title={Learning from multiple teacher networks},
+  author={You, Shan and Xu, Chang and Xu, Chao and Tao, Dacheng},
+  booktitle={Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  pages={1285--1294},
+  url={https://dl.acm.org/doi/pdf/10.1145/3097983.3098135},
+  year={2017}
+}
+
+@inproceedings{hu2022lora,
+title={Lo{RA}: Low-Rank Adaptation of Large Language Models},
+author={Edward J Hu and Yelong Shen and Phillip Wallis and Zeyuan Allen-Zhu and Yuanzhi Li and Shean Wang and Lu Wang and Weizhu Chen},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=nZeVKeeFYf9}
+}
+
+@article{jiang2023mistral,
+  title={Mistral 7B},
+  author={Jiang, Albert Q and Sablayrolles, Alexandre and Mensch, Arthur and Bamford, Chris and Chaplot, Devendra Singh and Casas, Diego de las and Bressand, Florian and Lengyel, Gianna and Lample, Guillaume and Saulnier, Lucile and others},
+  journal={arXiv preprint arXiv:2310.06825},
+  url={https://arxiv.org/abs/2310.06825},
+  year={2023}
+}
+
+@misc{du2023improving,
+      title={Improving Factuality and Reasoning in Language Models through Multiagent Debate}, 
+      author={Yilun Du and Shuang Li and Antonio Torralba and Joshua B. Tenenbaum and Igor Mordatch},
+      year={2023},
+      eprint={2305.14325},
+      url={https://arxiv.org/abs/2305.14325},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{wu2023autogen,
+  title={Autogen: Enabling next-gen llm applications via multi-agent conversation framework},
+  author={Wu, Qingyun and Bansal, Gagan and Zhang, Jieyu and Wu, Yiran and Zhang, Shaokun and Zhu, Erkang and Li, Beibin and Jiang, Li and Zhang, Xiaoyun and Wang, Chi},
+  journal={arXiv preprint arXiv:2308.08155},
+  url={https://arxiv.org/abs/2308.08155},
+  year={2023}
+}
+
+@article{chenglin.l.2023mixed,
+  title={Mixed Distillation Helps Smaller Language Model Better Reasoning},
+  author={Chenglin, Li and Qianglong, Chen and Caiyu, Wang and Yin, Zhang},
+  journal={arXiv preprint arXiv:2312.10730},
+  url={https://arxiv.org/abs/2312.10730},
+  year={2023}
+}
+
+@article{liu.b.2023tinygsm,
+  title={TinyGSM: achieving $>$80\% on GSM8k with small language models},
+  author={Liu, Bingbin and Bubeck, Sebastien and Eldan, Ronen and Kulkarni, Janardhan and Li, Yuanzhi and Nguyen, Anh and Ward, Rachel and Zhang, Yi},
+  journal={arXiv preprint arXiv:2312.09241},
+  url={https://arxiv.org/abs/2312.09241},
+  year={2023}
+}
+
+@inproceedings{yang2020model,
+  title={Model compression with two-stage multi-teacher knowledge distillation for web question answering system},
+  author={Yang, Ze and Shou, Linjun and Gong, Ming and Lin, Wutao and Jiang, Daxin},
+  booktitle={Proceedings of the 13th International Conference on Web Search and Data Mining},
+  pages={690--698},
+  url={https://arxiv.org/abs/1910.08381},
+  year={2020}
+}
+
+@article{geva-etal-2021-aristotle,
+    title = "Did Aristotle Use a Laptop? A Question Answering Benchmark with Implicit Reasoning Strategies",
+    author = "Geva, Mor  and
+      Khashabi, Daniel  and
+      Segal, Elad  and
+      Khot, Tushar  and
+      Roth, Dan  and
+      Berant, Jonathan",
+    editor = "Roark, Brian  and
+      Nenkova, Ani",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "9",
+    year = "2021",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/2021.tacl-1.21",
+    doi = "10.1162/tacl_a_00370",
+    pages = "346--361",
+    abstract = "A key limitation in current datasets for multi-hop reasoning is that the required steps for answering the question are mentioned in it explicitly. In this work, we introduce StrategyQA, a question answering (QA) benchmark where the required reasoning steps are implicit in the question, and should be inferred using a strategy. A fundamental challenge in this setup is how to elicit such creative questions from crowdsourcing workers, while covering a broad range of potential strategies. We propose a data collection procedure that combines term-based priming to inspire annotators, careful control over the annotator population, and adversarial filtering for eliminating reasoning shortcuts. Moreover, we annotate each question with (1) a decomposition into reasoning steps for answering it, and (2) Wikipedia paragraphs that contain the answers to each step. Overall, StrategyQA includes 2,780 examples, each consisting of a strategy question, its decomposition, and evidence paragraphs. Analysis shows that questions in StrategyQA are short, topic-diverse, and cover a wide range of strategies. Empirically, we show that humans perform well (87{\%}) on this task, while our best baseline reaches an accuracy of ∼ 66{\%}.",
+}
+
+@inproceedings{aggarwaletal2021ecqa,
+  title={{E}xplanations for {C}ommonsense{QA}: {N}ew {D}ataset and {M}odels},
+  author={Shourya Aggarwal and Divyanshu Mandowara and Vishwajeet Agrawal and Dinesh Khandelwal and Parag Singla and Dinesh Garg},
+  booktitle="Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+  Pages = "3050-3065",
+  year = "2021",
+  url={https://aclanthology.org/2021.acl-long.238/},
+  publisher = "Association for Computational Linguistics"
+}
+
+@inproceedings{talmor-etal-2019-commonsenseqa,
+    title = "{C}ommonsense{QA}: A Question Answering Challenge Targeting Commonsense Knowledge",
+    author = "Talmor, Alon  and
+      Herzig, Jonathan  and
+      Lourie, Nicholas  and
+      Berant, Jonathan",
+    editor = "Burstein, Jill  and
+      Doran, Christy  and
+      Solorio, Thamar",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1421",
+    doi = "10.18653/v1/N19-1421",
+    pages = "4149--4158",
+    abstract = "When answering a question, people often draw upon their rich world knowledge in addition to the particular context. Recent work has focused primarily on answering questions given some relevant document or context, and required very little general background. To investigate question answering with prior knowledge, we present CommonsenseQA: a challenging new dataset for commonsense question answering. To capture common sense beyond associations, we extract from ConceptNet (Speer et al., 2017) multiple target concepts that have the same semantic relation to a single source concept. Crowd-workers are asked to author multiple-choice questions that mention the source concept and discriminate in turn between each of the target concepts. This encourages workers to create questions with complex semantics that often require prior knowledge. We create 12,247 questions through this procedure and demonstrate the difficulty of our task with a large number of strong baselines. Our best baseline is based on BERT-large (Devlin et al., 2018) and obtains 56{\%} accuracy, well below human performance, which is 89{\%}.",
+}
+
+@article{cobbe2021gsm8k,
+  title={Training Verifiers to Solve Math Word Problems},
+  author={Cobbe, Karl and Kosaraju, Vineet and Bavarian, Mohammad and Chen, Mark and Jun, Heewoo and Kaiser, Lukasz and Plappert, Matthias and Tworek, Jerry and Hilton, Jacob and Nakano, Reiichiro and Hesse, Christopher and Schulman, John},
+  journal={arXiv preprint arXiv:2110.14168},
+  url={https://arxiv.org/abs/2110.14168},
+  year={2021}
+}
+
+@article{hendrycksmath2021,
+  title={Measuring Mathematical Problem Solving With the MATH Dataset},
+  author={Dan Hendrycks and Collin Burns and Saurav Kadavath and Akul Arora and Steven Basart and Eric Tang and Dawn Song and Jacob Steinhardt},
+  journal={NeurIPS},
+url={https://arxiv.org/abs/2103.03874},
+  year={2021}
+}
+
+@article{touvron2023llama,
+      title={Llama 2: Open Foundation and Fine-Tuned Chat Models}, 
+      author={Hugo Touvron and Louis Martin and Kevin Stone and Peter Albert and Amjad Almahairi and Yasmine Babaei and Nikolay Bashlykov and Soumya Batra and Prajjwal Bhargava and Shruti Bhosale and Dan Bikel and Lukas Blecher and Cristian Canton Ferrer and Moya Chen and Guillem Cucurull and David Esiobu and Jude Fernandes and Jeremy Fu and Wenyin Fu and Brian Fuller and Cynthia Gao and Vedanuj Goswami and Naman Goyal and Anthony Hartshorn and Saghar Hosseini and Rui Hou and Hakan Inan and Marcin Kardas and Viktor Kerkez and Madian Khabsa and Isabel Kloumann and Artem Korenev and Punit Singh Koura and Marie-Anne Lachaux and Thibaut Lavril and Jenya Lee and Diana Liskovich and Yinghai Lu and Yuning Mao and Xavier Martinet and Todor Mihaylov and Pushkar Mishra and Igor Molybog and Yixin Nie and Andrew Poulton and Jeremy Reizenstein and Rashi Rungta and Kalyan Saladi and Alan Schelten and Ruan Silva and Eric Michael Smith and Ranjan Subramanian and Xiaoqing Ellen Tan and Binh Tang and Ross Taylor and Adina Williams and Jian Xiang Kuan and Puxin Xu and Zheng Yan and Iliyan Zarov and Yuchen Zhang and Angela Fan and Melanie Kambadur and Sharan Narang and Aurelien Rodriguez and Robert Stojnic and Sergey Edunov and Thomas Scialom},
+      year={2023},
+      eprint={2307.09288},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{yao2023tree,
+  title={Tree of thoughts: Deliberate problem solving with large language models},
+  author={Yao, Shunyu and Yu, Dian and Zhao, Jeffrey and Shafran, Izhak and Griffiths, Thomas L and Cao, Yuan and Narasimhan, Karthik},
+  journal={arXiv preprint arXiv:2305.10601},
+  year={2023}
+}
+
+@inproceedings{shridhar2023distilling,
+  title={Distilling reasoning capabilities into smaller language models},
+  author={Shridhar, Kumar and Stolfo, Alessandro and Sachan, Mrinmaya},
+  booktitle={Findings of the Association for Computational Linguistics: ACL 2023},
+  pages={7059--7073},
+  url={https://arxiv.org/abs/2212.00193},
+  year={2023}
+}
+
+@article{mitra2023orca,
+  title={Orca 2: Teaching small language models how to reason},
+  author={Mitra, Arindam and Del Corro, Luciano and Mahajan, Shweti and Codas, Andres and Simoes, Clarisse and Agarwal, Sahaj and Chen, Xuxi and Razdaibiedina, Anastasia and Jones, Erik and Aggarwal, Kriti and others},
+  journal={arXiv preprint arXiv:2311.11045},
+  url={https://arxiv.org/abs/2311.11045},
+  year={2023}
+}
+
+@article{mialon2023augmented,
+  title={Augmented language models: a survey},
+  author={Mialon, Gr{\'e}goire and Dess{\`\i}, Roberto and Lomeli, Maria and Nalmpantis, Christoforos and Pasunuru, Ram and Raileanu, Roberta and Rozi{\`e}re, Baptiste and Schick, Timo and Dwivedi-Yu, Jane and Celikyilmaz, Asli and others},
+  journal={arXiv preprint arXiv:2302.07842},
+  year={2023}
+}
+
+@article{bubeck2023sparks,
+  title={Sparks of artificial general intelligence: Early experiments with gpt-4},
+  author={Bubeck, S{\'e}bastien and Chandrasekaran, Varun and Eldan, Ronen and Gehrke, Johannes and Horvitz, Eric and Kamar, Ece and Lee, Peter and Lee, Yin Tat and Li, Yuanzhi and Lundberg, Scott and others},
+  journal={arXiv preprint arXiv:2303.12712},
+  url={https://arxiv.org/abs/2303.12712},
+  year={2023}
+}
+
+@inproceedings{
+kipf2017semisupervised,
+title={Semi-Supervised Classification with Graph Convolutional Networks},
+author={Thomas N. Kipf and Max Welling},
+booktitle={International Conference on Learning Representations},
+year={2017},
+url={https://openreview.net/forum?id=SJU4ayYgl}
+}
+
+@article{chen2022program,
+  title={Program of thoughts prompting: Disentangling computation from reasoning for numerical reasoning tasks},
+  author={Chen, Wenhu and Ma, Xueguang and Wang, Xinyi and Cohen, William W},
+  journal={arXiv preprint arXiv:2211.12588},
+  url={https://arxiv.org/abs/2211.12588},
+  year={2022}
+}
+
+@article{clark2018think,
+  title={Think you have solved question answering? try arc, the ai2 reasoning challenge},
+  author={Clark, Peter and Cowhey, Isaac and Etzioni, Oren and Khot, Tushar and Sabharwal, Ashish and Schoenick, Carissa and Tafjord, Oyvind},
+  journal={arXiv preprint arXiv:1803.05457},
+  url={https://arxiv.org/abs/1803.05457},
+  year={2018}
+}
+
+@article{yin2023lumos,
+  title={Lumos: Learning agents with unified data, modular design, and open-source llms},
+  author={Yin, Da and Brahman, Faeze and Ravichander, Abhilasha and Chandu, Khyathi and Chang, Kai-Wei and Choi, Yejin and Lin, Bill Yuchen},
+  journal={arXiv preprint arXiv:2311.05657},
+  url={https://arxiv.org/abs/2311.05657},
+  year={2023}
+}
+
+
+@article{liang2023encouraging,
+  title={Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate},
+  author={Liang, Tian and He, Zhiwei and Jiao, Wenxiang and Wang, Xing and Wang, Yan and Wang, Rui and Yang, Yujiu and Tu, Zhaopeng and Shi, Shuming},
+  journal={arXiv preprint arXiv:2305.19118},
+  url={https://arxiv.org/abs/2305.19118},
+  year={2023}
+}
+
+@inproceedings{clark-etal-2019-boolq,
+    title = "{B}ool{Q}: Exploring the Surprising Difficulty of Natural Yes/No Questions",
+    author = "Clark, Christopher  and
+      Lee, Kenton  and
+      Chang, Ming-Wei  and
+      Kwiatkowski, Tom  and
+      Collins, Michael  and
+      Toutanova, Kristina",
+    editor = "Burstein, Jill  and
+      Doran, Christy  and
+      Solorio, Thamar",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1300",
+    doi = "10.18653/v1/N19-1300",
+    pages = "2924--2936",
+    abstract = "In this paper we study yes/no questions that are naturally occurring {---} meaning that they are generated in unprompted and unconstrained settings. We build a reading comprehension dataset, BoolQ, of such questions, and show that they are unexpectedly challenging. They often query for complex, non-factoid information, and require difficult entailment-like inference to solve. We also explore the effectiveness of a range of transfer learning baselines. We find that transferring from entailment data is more effective than transferring from paraphrase or extractive QA data, and that it, surprisingly, continues to be very beneficial even when starting from massive pre-trained language models such as BERT. Our best method trains BERT on MultiNLI and then re-trains it on our train set. It achieves 80.4{\%} accuracy compared to 90{\%} accuracy of human annotators (and 62{\%} majority-baseline), leaving a significant gap for future work.",
+}
+
+@inproceedings{patel-etal-2021-nlp,
+    title = "Are {NLP} Models really able to Solve Simple Math Word Problems?",
+    author = "Patel, Arkil  and
+      Bhattamishra, Satwik  and
+      Goyal, Navin",
+    editor = "Toutanova, Kristina  and
+      Rumshisky, Anna  and
+      Zettlemoyer, Luke  and
+      Hakkani-Tur, Dilek  and
+      Beltagy, Iz  and
+      Bethard, Steven  and
+      Cotterell, Ryan  and
+      Chakraborty, Tanmoy  and
+      Zhou, Yichao",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.168",
+    doi = "10.18653/v1/2021.naacl-main.168",
+    pages = "2080--2094",
+    abstract = "The problem of designing NLP solvers for math word problems (MWP) has seen sustained research activity and steady gains in the test accuracy. Since existing solvers achieve high performance on the benchmark datasets for elementary level MWPs containing one-unknown arithmetic word problems, such problems are often considered {``}solved{''} with the bulk of research attention moving to more complex MWPs. In this paper, we restrict our attention to English MWPs taught in grades four and lower. We provide strong evidence that the existing MWP solvers rely on shallow heuristics to achieve high performance on the benchmark datasets. To this end, we show that MWP solvers that do not have access to the question asked in the MWP can still solve a large fraction of MWPs. Similarly, models that treat MWPs as bag-of-words can also achieve surprisingly high accuracy. Further, we introduce a challenge dataset, SVAMP, created by applying carefully chosen variations over examples sampled from existing datasets. The best accuracy achieved by state-of-the-art models is substantially lower on SVAMP, thus showing that much remains to be done even for the simplest of the MWPs.",
+}
+
+@article{wei2023multi,
+  title={Multi-party chat: Conversational agents in group settings with humans and models},
+  author={Wei, Jimmy and Shuster, Kurt and Szlam, Arthur and Weston, Jason and Urbanek, Jack and Komeili, Mojtaba},
+  journal={arXiv preprint arXiv:2304.13835},
+  url={https://arxiv.org/abs/2304.13835},
+  year={2023}
+}
+
+@inproceedings{ghosal2019dialoguegcn,
+  title={DialogueGCN: A Graph Convolutional Neural Network for Emotion Recognition in Conversation},
+  author={Ghosal, Deepanway and Majumder, Navonil and Poria, Soujanya and Chhaya, Niyati and Gelbukh, Alexander},
+  booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+  pages={154--164},
+  year={2019}
+}
+
+@inproceedings{qin2021co,
+  title={Co-gat: A co-interactive graph attention network for joint dialog act recognition and sentiment classification},
+  author={Qin, Libo and Li, Zhouyang and Che, Wanxiang and Ni, Minheng and Liu, Ting},
+  booktitle={Proceedings of the AAAI conference on artificial intelligence},
+  volume={35},
+  pages={13709--13717},
+  url={https://arxiv.org/abs/2012.13260},
+  year={2021}
+}
+
+@inproceedings{shen2021directed,
+  title={Directed Acyclic Graph Network for Conversational Emotion Recognition},
+  author={Shen, Weizhou and Wu, Siyue and Yang, Yunyi and Quan, Xiaojun},
+  booktitle={Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)},
+  pages={1551--1560},
+  url={https://arxiv.org/abs/2105.12907},
+  year={2021}
+}
+
+@inproceedings{chen2021structure,
+  title={Structure-Aware Abstractive Conversation Summarization via Discourse and Action Graphs},
+  author={Chen, Jiaao and Yang, Diyi},
+  booktitle={Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  pages={1380--1391},
+  url={https://aclanthology.org/2021.naacl-main.109/},
+  year={2021}
+}
+
+@inproceedings{ouyang2021dialogue,
+  title={Dialogue Graph Modeling for Conversational Machine Reading},
+  author={Ouyang, Siru and Zhang, Zhuosheng and Zhao, Hai},
+  booktitle={Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021},
+  pages={3158--3169},
+  url={https://arxiv.org/abs/2012.14827},
+  year={2021}
+}
+
+@inproceedings{kirchhoff2003directions,
+  title={Directions for multi-party human-computer interaction research},
+  author={Kirchhoff, Katrin and Ostendorf, Mari},
+  booktitle={Proceedings of the HLT-NAACL 2003 Workshop on Research Directions in Dialogue Processing},
+  pages={7--9},
+  url={https://aclanthology.org/W03-0703/},
+  year={2003}
+}
+
+
+@misc{leifeld2018discourse,
+  title={Discourse Network Analysis. Policy Debates as Dynamic Networks,[w:] JN Victor, AH Montgomery, M. Lubell (red.)},
+  author={Leifeld, P},
+  year={2018},
+  publisher={The Oxford Handbook of Political Networks, Oxford}
+}
+
+@article{ji2023survey,
+  title={Survey of hallucination in natural language generation},
+  author={Ji, Ziwei and Lee, Nayeon and Frieske, Rita and Yu, Tiezheng and Su, Dan and Xu, Yan and Ishii, Etsuko and Bang, Ye Jin and Madotto, Andrea and Fung, Pascale},
+  journal={ACM Computing Surveys},
+  volume={55},
+  number={12},
+  pages={1--38},
+  year={2023},
+  url={https://arxiv.org/abs/2202.03629},
+  publisher={ACM New York, NY}
+}
+
+@article{cortes1995support,
+  title={Support-vector networks},
+  author={Cortes, Corinna and Vapnik, Vladimir},
+  journal={Machine learning},
+  volume={20},
+  pages={273--297},
+  year={1995},
+  publisher={Springer}
+}
+
+@article{yu2023metamath,
+  title={MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models},
+  author={Yu, Longhui and Jiang, Weisen and Shi, Han and Yu, Jincheng and Liu, Zhengying and Zhang, Yu and Kwok, James T and Li, Zhenguo and Weller, Adrian and Liu, Weiyang},
+  journal={arXiv preprint arXiv:2309.12284},
+  year={2023}
+}
+
+@inproceedings{strubell2019energy,
+  title={Energy and Policy Considerations for Deep Learning in NLP},
+  author={Strubell, Emma and Ganesh, Ananya and McCallum, Andrew},
+  booktitle={Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+  pages={3645--3650},
+  year={2019}
+}
+
+@article{weidinger2021ethical,
+  title={Ethical and social risks of harm from language models},
+  author={Weidinger, Laura and Mellor, John and Rauh, Maribeth and Griffin, Conor and Uesato, Jonathan and Huang, Po-Sen and Cheng, Myra and Glaese, Mia and Balle, Borja and Kasirzadeh, Atoosa and others},
+  journal={arXiv preprint arXiv:2112.04359},
+  url={https://arxiv.org/abs/2112.04359},
+  year={2021}
+}
+
+@article{vaswani2017attention,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  journal={Advances in neural information processing systems},
+  volume={30},
+  url={https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html},
+  year={2017}
+}

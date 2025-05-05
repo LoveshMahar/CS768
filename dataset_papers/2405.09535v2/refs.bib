@@ -1,0 +1,1389 @@
+% refs for theory of supervised learning with imbalance
+
+@Article{japkowicz2002systematic,
+author={Japkowicz, Nathalie
+and Stephen, Shaju},
+title={The class imbalance problem: A systematic study},
+journal={Intelligent Data Analysis},
+year={2002},
+publisher={IOS Press},
+volume={6},
+pages={429-449},
+keywords={concept learning; class imbalances; re-sampling; misclassification costs; C5.0; Multi-Layer Perceptrons; Support Vector Machines},
+abstract={In machine learning problems, differences in prior class probabilities -- or class imbalances -- have been reported to hinder the performance of some standard classifiers, such as decision trees. This paper presents a systematic study aimed at answering three different questions. First, we attempt to understand the nature of the class imbalance problem by establishing a relationship between concept complexity, size of the training set and class imbalance level. Second, we discuss several basic re-sampling or cost-modifying methods previously proposed to deal with the class imbalance problem and compare their effectiveness. The results obtained by such methods on artificial domains are linked to results in real-world domains. Finally, we investigate the assumption that the class imbalance problem does not only affect decision tree systems but also affects other classification systems such as Neural Networks and Support Vector Machines.},
+issue={5},
+issn={1571-4128},
+doi={10.3233/IDA-2002-6504},
+url={https://doi.org/10.3233/IDA-2002-6504}
+}
+
+@InProceedings{japkowicz2004svm,
+author="Akbani, Rehan
+and Kwek, Stephen
+and Japkowicz, Nathalie",
+editor="Boulicaut, Jean-Fran{\c{c}}ois
+and Esposito, Floriana
+and Giannotti, Fosca
+and Pedreschi, Dino",
+title="Applying Support Vector Machines to Imbalanced Datasets",
+booktitle="Machine Learning: ECML 2004",
+year="2004",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="39--50",
+doi="10.1007/978-3-540-30115-8_7",
+abstract="Support Vector Machines (SVM) have been extensively studied and have shown remarkable success in many applications. However the success of SVM is very limited when it is applied to the problem of learning from imbalanced datasets in which negative instances heavily outnumber the positive instances (e.g. in gene profiling and detecting credit card fraud). This paper discusses the factors behind this failure and explains why the common strategy of undersampling the training data may not be the best choice for SVM. We then propose an algorithm for overcoming these problems which is based on a variant of the SMOTE algorithm by Chawla et al, combined with Veropoulos et al's different error costs algorithm. We compare the performance of our algorithm against these two algorithms, along with undersampling and regular SVM and show that our algorithm outperforms all of them.",
+isbn="978-3-540-30115-8",
+url="https://doi.org/10.1007/978-3-540-30115-8_7"
+}
+
+@article{chawla2004editorial,
+author = {Chawla, Nitesh V. and Japkowicz, Nathalie and Kotcz, Aleksander},
+title = {Editorial: Special Issue on Learning from Imbalanced Data Sets},
+year = {2004},
+issue_date = {June 2004},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {6},
+number = {1},
+issn = {1931-0145},
+url = {https://doi.org/10.1145/1007730.1007733},
+doi = {10.1145/1007730.1007733},
+journal = {SIGKDD Explor. Newsl.},
+month = {jun},
+pages = {1–6},
+numpages = {6}
+}
+
+@Inbook{chawla2010overview,
+author="Chawla, Nitesh V.",
+editor="Maimon, Oded
+and Rokach, Lior",
+title="Data Mining for Imbalanced Datasets: An Overview",
+bookTitle="Data Mining and Knowledge Discovery Handbook",
+year="2010",
+publisher="Springer US",
+address="Boston, MA",
+pages="875--886",
+abstract="A dataset is imbalanced if the classification categories are not approximately equally represented. Recent years brought increased interest in applying machine learning techniques to difficult ``real-world'' problems, many of which are characterized by imbalanced data. Additionally the distribution of the testing data may differ from that of the training data, and the true misclassification costs may be unknown at learning time. Predictive accuracy, a popular choice for evaluating performance of a classifier, might not be appropriate when the data is imbalanced and/or the costs of different errors vary markedly. In this Chapter, we discuss some of the sampling techniques used for balancing the datasets, and the performance measures more appropriate for mining imbalanced datasets.",
+isbn="978-0-387-09823-4",
+doi="10.1007/978-0-387-09823-4_45",
+url="https://doi.org/10.1007/978-0-387-09823-4_45"
+}
+
+@InProceedings{lemnaru2012systematic,
+author="Lemnaru, Camelia
+and Potolea, Rodica",
+editor="Zhang, Runtong
+and Zhang, Juliang
+and Zhang, Zhenji
+and Filipe, Joaquim
+and Cordeiro, Jos{\'e}",
+title="Imbalanced Classification Problems: Systematic Study, Issues and Best Practices",
+booktitle="Enterprise Information Systems",
+year="2012",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="35--50",
+doi="10.1007/978-3-642-29958-2_3",
+abstract="This paper provides a systematic study of the issues and possible solutions to the class imbalance problem. A set of standard classification algorithms is considered and their performance on benchmark data is analyzed. Our experiments show that, in an imbalanced problem, the imbalance ratio (IR) can be used in conjunction with the instances per attribute ratio (IAR), to evaluate the appropriate classifier that best fits the situation. Also, MLP and C4.5 are less affected by the imbalance, while SVM generally performs poorly in imbalanced problems. The possible solutions for overcoming these classifier issues are also presented. The overall vision is that when dealing with imbalanced problems, one should consider a wider context, taking into account several factors simultaneously: the imbalance, together with other data-related particularities and the classification algorithms with their associated parameters.",
+isbn="978-3-642-29958-2",
+url="https://doi.org/10.1007/978-3-642-29958-2_3"
+}
+
+@article{buda2018cnn,
+title = {A systematic study of the class imbalance problem in convolutional neural networks},
+journal = {Neural Networks},
+volume = {106},
+pages = {249-259},
+year = {2018},
+issn = {0893-6080},
+doi = {10.1016/j.neunet.2018.07.011},
+url = {https://www.sciencedirect.com/science/article/pii/S0893608018302107},
+eprint = {1710.05381},
+author = {Mateusz Buda and Atsuto Maki and Maciej A. Mazurowski},
+keywords = {Class imbalance, Convolutional neural networks, Deep learning, Image classification},
+abstract = {In this study, we systematically investigate the impact of class imbalance on classification performance of convolutional neural networks (CNNs) and compare frequently used methods to address the issue. Class imbalance is a common problem that has been comprehensively studied in classical machine learning, yet very limited systematic research is available in the context of deep learning. In our study, we use three benchmark datasets of increasing complexity, MNIST, CIFAR-10 and ImageNet, to investigate the effects of imbalance on classification and perform an extensive comparison of several methods to address the issue: oversampling, undersampling, two-phase training, and thresholding that compensates for prior class probabilities. Our main evaluation metric is area under the receiver operating characteristic curve (ROC AUC) adjusted to multi-class tasks since overall accuracy metric is associated with notable difficulties in the context of imbalanced data. Based on results from our experiments we conclude that (i) the effect of class imbalance on classification performance is detrimental; (ii) the method of addressing class imbalance that emerged as dominant in almost all analyzed scenarios was oversampling; (iii) oversampling should be applied to the level that completely eliminates the imbalance, whereas the optimal undersampling ratio depends on the extent of imbalance; (iv) as opposed to some classical machine learning models, oversampling does not cause overfitting of CNNs; (v) thresholding should be applied to compensate for prior class probabilities when overall number of properly classified cases is of interest.}
+}
+
+@article{weiss2004rarity,
+author = {Weiss, Gary M.},
+title = {Mining with Rarity: A Unifying Framework},
+year = {2004},
+issue_date = {June 2004},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {6},
+number = {1},
+issn = {1931-0145},
+url = {https://doi.org/10.1145/1007730.1007734},
+doi = {10.1145/1007730.1007734},
+abstract = {Rare objects are often of great interest and great value. Until recently, however, rarity has not received much attention in the context of data mining. Now, as increasingly complex real-world problems are addressed, rarity, and the related problem of imbalanced data, are taking center stage. This article discusses the role that rare classes and rare cases play in data mining. The problems that can result from these two forms of rarity are described in detail, as are methods for addressing these problems. These descriptions utilize examples from existing research. So that this article provides a good survey of the literature on rarity in data mining. This article also demonstrates that rare classes and rare cases are very similar phenomena---both forms of rarity are shown to cause similar problems during data mining and benefit from the same remediation methods.},
+journal = {SIGKDD Explor. Newsl.},
+month = {jun},
+pages = {7–19},
+numpages = {13},
+keywords = {class imbalance, rare cases, sampling, cost-sensitive learning, rare classes, small disjuncts, inductive bias}
+}
+
+
+@inproceedings{kubat1997curse,
+  author       = {Miroslav Kubat and
+                  Stan Matwin},
+  editor       = {Douglas H. Fisher},
+  title        = {Addressing the Curse of Imbalanced Training Sets: One-Sided Selection},
+  booktitle    = {Proceedings of the Fourteenth International Conference on Machine
+                  Learning {(ICML} 1997), Nashville, Tennessee, USA, July 8-12, 1997},
+  pages        = {179--186},
+  publisher    = {Morgan Kaufmann},
+  year         = {1997},
+  timestamp    = {Thu, 29 Apr 2004 07:55:29 +0200},
+  biburl       = {https://dblp.org/rec/conf/icml/KubatM97.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@Article{johnson2019deep,
+author={Johnson, Justin M.
+and Khoshgoftaar, Taghi M.},
+title={Survey on deep learning with class imbalance},
+journal={Journal of Big Data},
+year={2019},
+month={Mar},
+day={19},
+volume={6},
+number={1},
+pages={27},
+abstract={The purpose of this study is to examine existing deep learning techniques for addressing class imbalanced data. Effective classification with imbalanced data is an important area of research, as high class imbalance is naturally inherent in many real-world applications, e.g., fraud detection and cancer detection. Moreover, highly imbalanced data poses added difficulty, as most learners will exhibit bias towards the majority class, and in extreme cases, may ignore the minority class altogether. Class imbalance has been studied thoroughly over the last two decades using traditional machine learning models, i.e. non-deep learning. Despite recent advances in deep learning, along with its increasing popularity, very little empirical work in the area of deep learning with class imbalance exists. Having achieved record-breaking performance results in several complex domains, investigating the use of deep neural networks for problems containing high levels of class imbalance is of great interest. Available studies regarding class imbalance and deep learning are surveyed in order to better understand the efficacy of deep learning when applied to class imbalanced data. This survey discusses the implementation details and experimental results for each study, and offers additional insight into their strengths and weaknesses. Several areas of focus include: data complexity, architectures tested, performance interpretation, ease of use, big data application, and generalization to other domains. We have found that research in this area is very limited, that most existing work focuses on computer vision tasks with convolutional neural networks, and that the effects of big data are rarely considered. Several traditional methods for class imbalance, e.g. data sampling and cost-sensitive learning, prove to be applicable in deep learning, while more advanced methods that exploit neural network feature learning abilities show promising results. The survey concludes with a discussion that highlights various gaps in deep learning from class imbalanced data for the purpose of guiding future research.},
+issn={2196-1115},
+doi={10.1186/s40537-019-0192-5},
+url={https://doi.org/10.1186/s40537-019-0192-5}
+}
+
+
+
+@article{ghosh2022deep,
+author={Ghosh, Kushankur
+and Bellinger, Colin
+and Corizzo, Roberto
+and Branco, Paula
+and Krawczyk, Bartosz
+and Japkowicz, Nathalie},
+title={The class imbalance problem in deep learning},
+journal={Machine Learning},
+year={2022},
+month={Dec},
+day={28},
+abstract={Deep learning has recently unleashed the ability for Machine learning (ML) to make unparalleled strides. It did so by confronting and successfully addressing, at least to a certain extent, the knowledge bottleneck that paralyzed ML and artificial intelligence for decades. The community is currently basking in deep learning's success, but a question that comes to mind is: have all of the issues previously affecting machine learning systems been solved by deep learning or do some issues remain for which deep learning is not a bulletproof solution? This question in the context of the class imbalance becomes a motivation for this paper. Imbalance problem was first recognized almost three decades ago and has remained a critical challenge at least for traditional learning approaches. Our goal is to investigate whether the tight dependency between class imbalances, concept complexities, dataset size and classifier performance, known to exist in traditional learning systems, is alleviated in any way in deep learning approaches and to what extent, if any, network depth and regularization can help. To answer these questions we conduct a survey of the recent literature focused on deep learning and the class imbalance problem as well as a series of controlled experiments on both artificial and real-world domains. This allows us to formulate lessons learned about the impact of class imbalance on deep learning models, as well as pose open challenges that should be tackled by researchers in this field.},
+issn={1573-0565},
+Ndoi={10.1007/s10994-022-06268-8},
+url={https://doi.org/10.1007/s10994-022-06268-8}
+}
+
+@article{lemaitre2017curse,
+  author  = {Guillaume  Lema{{\^i}}tre and Fernando Nogueira and Christos K. Aridas},
+  title   = {Imbalanced-learn: A {P}ython Toolbox to Tackle the Curse of Imbalanced Datasets in Machine Learning},
+  journal = {Journal of Machine Learning Research},
+  year    = {2017},
+  volume  = {18},
+  number  = {17},
+  pages   = {1--5},
+  url     = {http://jmlr.org/papers/v18/16-365.html},
+  eprint = {1609.06570}
+}
+
+@article{fotouhi2019cancer,
+title = {A comprehensive data level analysis for cancer diagnosis on imbalanced data},
+journal = {Journal of Biomedical Informatics},
+volume = {90},
+pages = {103089},
+year = {2019},
+issn = {1532-0464},
+doi = {10.1016/j.jbi.2018.12.003},
+url = {https://www.sciencedirect.com/science/article/pii/S1532046418302302},
+author = {Sara Fotouhi and Shahrokh Asadi and Michael W. Kattan},
+keywords = {Diagnosis of cancer, Imbalanced data, Classification, Data pre-processing},
+abstract = {The early diagnosis of cancer, as one of the major causes of death, is vital for cancerous patients. Diagnosing diseases in general and cancer in particular is a considerable application of data analysis for medical science. However, imbalanced data distribution and imbalanced quality of the majority and minority classes, which lead to misclassification, is a great challenge in this field. Though the samples of the majority class and their proper classification are more important to classifier, cancer is diagnosed by relying on the minority class samples (cancer data class). While the consequence of wrong diagnosis for non-cancerous patients is several additional clinical tests, the cancerous patients pay the price of wrong diagnosis with their lives. As such, studying the class imbalance problem is vital from the medical’s perspective. To serve this purpose, a comprehensive study on the consequences of imbalanced data problem is performed in this paper on the data of cancer patients for the first time. In this context, oversampling and under sampling as two main balancing techniques including 18 algorithms are employed. The techniques used in oversampling are ADASYN, ADOMS, AHC, Borderline-SMOTE, ROS, Safe-Level-SMOTE, SMOTE, SMOTE-ENN, SMOTE-TL, SPIDER and SPIDER2, while under sampling techniques are CNN, CNNTL, NCL, OSS, RUS, SBC and TL. To examine the impact of balancers on the performance of classifiers, four classifiers named RIPPER, MLP, KNN, and C4.5 are employed as learners. In addition, 15 cancer data sets from SEER program used for the study are kidney, soft tissue, bladder, rectum, colon, bone, larynx, breast, cervix, prostate, oropharynx, melanoma, thyroid, testis, and lip. The findings of the study are centered on examining the impact of class imbalance on the function of classifiers, a general comparing of the function of pre-processing techniques and classifying all data sets and finally determining the best balancer and classifier for each kind of cancer data set. According to the results, significant improvement is obtained through using balancers. Assessing by AUC, the performance of different classifiers of cancer imbalanced data sets has improved in 90% of the cases after using balancing techniques. To be more precise, Friedman statistical tests are applied and interestingly, each kind of cancer data set responded differently to different balancing techniques and classifiers. Moreover, considering the mean rank of each technique and classifier that were used for data sets, oversampling balancing techniques result in better outcomes than under sampling ones.}
+}
+
+@article{krawczyk2016cancer,
+title = {Evolutionary undersampling boosting for imbalanced classification of breast cancer malignancy},
+journal = {Applied Soft Computing},
+volume = {38},
+pages = {714-726},
+year = {2016},
+issn = {1568-4946},
+doi = {10.1016/j.asoc.2015.08.060},
+url = {https://www.sciencedirect.com/science/article/pii/S1568494615005815},
+author = {Bartosz Krawczyk and Mikel Galar and Łukasz Jeleń and Francisco Herrera},
+keywords = {Machine Learning, Classifier ensemble, Imbalanced classification, Evolutionary algorithms, Clinical decision support, Breast cancer},
+abstract = {In this paper, we propose a complete, fully automatic and efficient clinical decision support system for breast cancer malignancy grading. The estimation of the level of a cancer malignancy is important to assess the degree of its progress and to elaborate a personalized therapy. Our system makes use of both Image Processing and Machine Learning techniques to perform the analysis of biopsy slides. Three different image segmentation methods (fuzzy c-means color segmentation, level set active contours technique and grey-level quantization method) are considered to extract the features used by the proposed classification system. In this classification problem, the highest malignancy grade is the most important to be detected early even though it occurs in the lowest number of cases, and hence the malignancy grading is an imbalanced classification problem. In order to overcome this difficulty, we propose the usage of an efficient ensemble classifier named EUSBoost, which combines a boosting scheme with evolutionary undersampling for producing balanced training sets for each one of the base classifiers in the final ensemble. The usage of the evolutionary approach allows us to select the most significant samples for the classifier learning step (in terms of accuracy and a new diversity term included in the fitness function), thus alleviating the problems produced by the imbalanced scenario in a guided and effective way. Experiments, carried on a large dataset collected by the authors, confirm the high efficiency of the proposed system, shows that level set active contours technique leads to an extraction of features with the highest discriminative power, and prove that EUSBoost is able to outperform state-of-the-art ensemble classifiers in a real-life imbalanced medical problem.}
+}
+
+@article{liu2017twitter,
+title = {Addressing the class imbalance problem in Twitter spam detection using ensemble learning},
+journal = {{Computers \& Security}},
+volume = {69},
+pages = {35-49},
+year = {2017},
+Nnote = {Security Data Science and Cyber Threat Management},
+issn = {0167-4048},
+doi = {10.1016/j.cose.2016.12.004},
+url = {https://www.sciencedirect.com/science/article/pii/S0167404816301754},
+author = {Shigang Liu and Yu Wang and Jun Zhang and Chao Chen and Yang Xiang},
+keywords = {Online social networks, Twitter, Spam detection, Machine learning, Class imbalance},
+abstract = {In recent years, microblogging sites like Twitter have become an important and popular source for real-time information and news dissemination, and they have become a prime target of spammers inevitably. A series of incidents have shown that the security threats caused by Twitter spam can reach far beyond the social media platform to impact the real world. To mitigate the threat, a lot of recent studies apply machine learning techniques to classify Twitter spam and promising results are reported. However, most of these studies overlook the class imbalance problem in real-world Twitter data. In this paper, we experimentally demonstrate that the unequal distribution between spam and non-spam classes has a great impact on spam detection rate. To address the problem, we propose FOS, a fuzzy-based oversampling method that generates synthetic data samples from limited observed samples based on the idea of fuzzy-based information decomposition. Moreover, we develop an ensemble learning approach that learns more accurate classifiers from imbalanced data in three steps. In the first step, the class distribution in the imbalanced data set is adjusted by using various strategies, including random oversampling, random undersampling and FOS. In the second step, a classification model is built upon each of the redistributed data sets. In the final step, a majority voting scheme is introduced to combine the predictions from all the classification models. We conduct experiments on real-world Twitter data for the purpose of evaluation. The results indicate that the proposed learning approach can significantly improve the spam detection rate in data sets with imbalanced class distribution.}
+}
+
+@Article{ansari2023peptide,
+author ="Ansari, Mehrad and White, Andrew D.",
+title  ="Learning peptide properties with positive examples only",
+journal  ="Digital Discovery",
+year  ="2024",
+volume  ="3",
+issue  ="5",
+pages  ="977-986",
+publisher  ="RSC",
+doi  ="10.1039/D3DD00218G",
+url  ="http://dx.doi.org/10.1039/D3DD00218G",
+abstract  ="Deep learning can create accurate predictive models by exploiting existing large-scale experimental data{,} and guide the design of molecules. However{,} a major barrier is the requirement of both positive and negative examples in the classical supervised learning frameworks. Notably{,} most peptide databases come with missing information and low number of observations on negative examples{,} as such sequences are hard to obtain using high-throughput screening methods. To address this challenge{,} we solely exploit the limited known positive examples in a semi-supervised setting{,} and discover peptide sequences that are likely to map to certain antimicrobial properties via positive-unlabeled learning (PU). In particular{,} we use the two learning strategies of adapting base classifier and reliable negative identification to build deep learning models for inferring solubility{,} hemolysis{,} binding against SHP-2{,} and non-fouling activity of peptides{,} given their sequence. We evaluate the predictive performance of our PU learning method and show that by only using the positive data{,} it can achieve competitive performance when compared with the classical positive–negative (PN) classification approach{,} where there is access to both positive and negative examples."}
+
+@article{yang2012gene,
+    author = {Yang, Peng and Li, Xiao-Li and Mei, Jian-Ping and Kwoh, Chee-Keong and Ng, See-Kiong},
+    title = "{Positive-unlabeled learning for disease gene identification}",
+    journal = {Bioinformatics},
+    volume = {28},
+    number = {20},
+    pages = {2640-2647},
+    year = {2012},
+    month = {08},
+    abstract = "{Background: Identifying disease genes from human genome is an important but challenging task in biomedical research. Machine learning methods can be applied to discover new disease genes based on the known ones. Existing machine learning methods typically use the known disease genes as the positive training set P and the unknown genes as the negative training set N (non-disease gene set does not exist) to build classifiers to identify new disease genes from the unknown genes. However, such kind of classifiers is actually built from a noisy negative set N as there can be unknown disease genes in N itself. As a result, the classifiers do not perform as well as they could be.Result: Instead of treating the unknown genes as negative examples in N, we treat them as an unlabeled set U. We design a novel positive-unlabeled (PU) learning algorithm PUDI (PU learning for disease gene identification) to build a classifier using P and U. We first partition U into four sets, namely, reliable negative set RN, likely positive set LP, likely negative set LN and weak negative set WN. The weighted support vector machines are then used to build a multi-level classifier based on the four training sets and positive training set P to identify disease genes. Our experimental results demonstrate that our proposed PUDI algorithm outperformed the existing methods significantly.Conclusion: The proposed PUDI algorithm is able to identify disease genes more accurately by treating the unknown data more appropriately as unlabeled set U instead of negative set N. Given that many machine learning problems in biomedical research do involve positive and unlabeled data instead of negative data, it is possible that the machine learning methods for these problems can be further improved by adopting PU learning methods, as we have done here for disease gene identification.Availability and implementation: The executable program and data are available at http://www1.i2r.a-star.edu.sg/∼xlli/PUDI/PUDI.html.Contact:  xlli@i2r.a-star.edu.sg or yang0293@e.ntu.edu.sgSupplementary information:  Supplementary Data are available at Bioinformatics online.}",
+    issn = {1367-4803},
+    doi = {10.1093/bioinformatics/bts504},
+    url = {https://doi.org/10.1093/bioinformatics/bts504},
+    NNeprint = {https://academic.oup.com/bioinformatics/article-pdf/28/20/2640/48871440/bioinformatics\_28\_20\_2640.pdf},
+}
+
+@article{cheng2015proteinRNA,
+author = {Cheng, Zhanzhan and Zhou, Shuigeng and Guan, Jihong},
+title = {Computationally predicting protein-{RNA} interactions using only positive and unlabeled examples},
+journal = {Journal of Bioinformatics and Computational Biology},
+volume = {13},
+number = {03},
+pages = {1541005},
+year = {2015},
+doi = {10.1142/S021972001541005X},
+    Nnote ={PMID: 25790785},
+    URL = {https://doi.org/10.1142/S021972001541005X},
+    NNeprint = {https://doi.org/10.1142/S021972001541005X},
+    abstract = { Protein–RNA interactions (PRIs) are considerably important in a wide variety of cellular processes, ranging from transcriptional and post-transcriptional regulations of gene expression to the active defense of host against virus. With the development of high throughput technology, large amounts of PRI information is available for computationally predicting unknown PRIs. In recent years, a number of computational methods for predicting PRIs have been developed in the literature, which usually artificially construct negative samples based on verified nonredundant datasets of PRIs to train classifiers. However, such negative samples are not real negative samples, some even may be unknown positive samples. Consequently, the classifiers trained with such training datasets cannot achieve satisfactory prediction performance. In this paper, we propose a novel method PRIPU that employs biased-support vector machine (SVM) for predicting Protein-RNA Interactions using only Positive and Unlabeled examples. To the best of our knowledge, this is the first work that predicts PRIs using only positive and unlabeled samples. We first collect known PRIs as our benchmark datasets and extract sequence-based features to represent each PRI. To reduce the dimension of feature vectors for lowering computational cost, we select a subset of features by a filter-based feature selection method. Then, biased-SVM is employed to train prediction models with different PRI datasets. To evaluate the new method, we also propose a new performance measure called explicit positive recall (EPR), which is specifically suitable for the task of learning positive and unlabeled data. Experimental results over three datasets show that our method not only outperforms four existing methods, but also is able to predict unknown PRIs. Source code, datasets and related documents of PRIPU are available at: http://admis.fudan.edu.cn/projects/pripu.htm. }
+}
+
+@article{song2021proteinFunc,
+title = {Inferring Protein Sequence-Function Relationships with Large-Scale Positive-Unlabeled Learning},
+journal = {Cell Systems},
+volume = {12},
+number = {1},
+pages = {92-101.e8},
+year = {2021},
+issn = {2405-4712},
+doi = {10.1016/j.cels.2020.10.007},
+url = {https://www.sciencedirect.com/science/article/pii/S2405471220304142},
+author = {Hyebin Song and Bennett J. Bremer and Emily C. Hinds and Garvesh Raskutti and Philip A. Romero},
+keywords = {protein sequence function relationships, deep mutational scanning, protein engineering, statistical learning, supervised learning, positive-unlabeled learning},
+abstract = {Summary
+Machine learning can infer how protein sequence maps to function without requiring a detailed understanding of the underlying physical or biological mechanisms. It is challenging to apply existing supervised learning frameworks to large-scale experimental data generated by deep mutational scanning (DMS) and related methods. DMS data often contain high-dimensional and correlated sequence variables, experimental sampling error and bias, and the presence of missing data. Notably, most DMS data do not contain examples of negative sequences, making it challenging to directly estimate how sequence affects function. Here, we develop a positive-unlabeled (PU) learning framework to infer sequence-function relationships from large-scale DMS data. Our PU learning method displays excellent predictive performance across ten large-scale sequence-function datasets, representing proteins of different folds, functions, and library types. The estimated parameters pinpoint key residues that dictate protein structure and function. Finally, we apply our statistical sequence-function model to design highly stabilized enzymes.}
+}
+
+@INPROCEEDINGS{alshammari2022tail,
+  author={Alshammari, Shaden and Wang, Yu-Xiong and Ramanan, Deva and Kong, Shu},
+  booktitle={2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  title={Long-Tailed Recognition via Weight Balancing}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={6887-6897},
+  keywords={Training;Computer vision;Art;Benchmark testing;Data models;Pattern recognition;Tuning;Transfer/low-shot/long-tail learning},
+doi={10.1109/CVPR52688.2022.00677},
+url={https://doi.org/10.1109/CVPR52688.2022.00677}}
+
+
+@Article{krawczyk2016future,
+author={Krawczyk, Bartosz},
+title={Learning from imbalanced data: open challenges and future directions},
+journal={Progress in Artificial Intelligence},
+year={2016},
+month={Nov},
+day={01},
+volume={5},
+number={4},
+pages={221-232},
+abstract={Despite more than two decades of continuous development learning from imbalanced data is still a focus of intense research. Starting as a problem of skewed distributions of binary tasks, this topic evolved way beyond this conception. With the expansion of machine learning and data mining, combined with the arrival of big data era, we have gained a deeper insight into the nature of imbalanced learning, while at the same time facing new emerging challenges. Data-level and algorithm-level methods are constantly being improved and hybrid approaches gain increasing popularity. Recent trends focus on analyzing not only the disproportion between classes, but also other difficulties embedded in the nature of data. New real-life problems motivate researchers to focus on computationally efficient, adaptive and real-time methods. This paper aims at discussing open issues and challenges that need to be addressed to further develop the field of imbalanced learning. Seven vital areas of research in this topic are identified, covering the full spectrum of learning from imbalanced data: classification, regression, clustering, data streams, big data analytics and applications, e.g., in social media and computer vision. This paper provides a discussion and suggestions concerning lines of future research for each of them.},
+issn={2192-6360},
+doi={10.1007/s13748-016-0094-0},
+url={https://doi.org/10.1007/s13748-016-0094-0}
+}
+
+@ARTICLE{anand1993improved,
+  author={Anand, R. and Mehrotra, K.G. and Mohan, C.K. and Ranka, S.},
+  journal={IEEE Transactions on Neural Networks}, 
+  title={An improved algorithm for neural network classification of imbalanced training sets}, 
+  year={1993},
+  volume={4},
+  number={6},
+  pages={962-969},
+  doi={10.1109/72.286891},
+url={https://doi.org/10.1109/72.286891}}
+
+@ARTICLE{he2009learning,
+  author={He, Haibo and Garcia, Edwardo A.},
+  journal={IEEE Transactions on Knowledge and Data Engineering}, 
+  title={Learning from Imbalanced Data}, 
+  year={2009},
+  volume={21},
+  number={9},
+  pages={1263-1284},
+  doi={10.1109/TKDE.2008.239},
+url={https://doi.org/10.1109/TKDE.2008.239}}
+
+
+
+
+
+
+@article{wang2006ncRNA,
+    author = {Wang, Chunlin and Ding, Chris and Meraz, Richard F. and Holbrook, Stephen R.},
+    title = "{PSoL: a positive sample only learning algorithm for finding non-coding RNA genes}",
+    journal = {Bioinformatics},
+    volume = {22},
+    number = {21},
+    pages = {2590-2596},
+    year = {2006},
+    month = {08},
+    abstract = "{Motivation: Small non-coding RNA (ncRNA) genes play important regulatory roles in a variety of cellular processes. However, detection of ncRNA genes is a great challenge to both experimental and computational approaches. In this study, we describe a new approach called positive sample only learning (PSoL) to predict ncRNA genes in the Escherichia coli genome. Although PSoL is a machine learning method for classification, it requires no negative training data, which, in general, is hard to define properly and affects the performance of machine learning dramatically. In addition, using the support vector machine (SVM) as the core learning algorithm, PSoL can integrate many different kinds of information to improve the accuracy of prediction. Besides the application of PSoL for predicting ncRNAs, PSoL is applicable to many other bioinformatics problems as well.Results: The PSoL method is assessed by 5-fold cross-validation experiments which show that PSoL can achieve about 80\\% accuracy in recovery of known ncRNAs. We compared PSoL predictions with five previously published results. The PSoL method has the highest percentage of predictions overlapping with those from other methods.Contact:  srholbrook@lbl.govSupplementary information: Supplementary data are available at Bioinformatics online.}",
+    issn = {1367-4803},
+    doi = {10.1093/bioinformatics/btl441},
+    url = {https://doi.org/10.1093/bioinformatics/btl441},
+    NNeprint = {https://academic.oup.com/bioinformatics/article-pdf/22/21/2590/48839722/bioinformatics\_22\_21\_2590.pdf},
+}
+
+@article{liu2009text,
+title = {Imbalanced text classification: A term weighting approach},
+journal = {Expert Systems with Applications},
+volume = {36},
+number = {1},
+pages = {690-701},
+year = {2009},
+issn = {0957-4174},
+doi = {10.1016/j.eswa.2007.10.042},
+url = {https://www.sciencedirect.com/science/article/pii/S0957417407005350},
+author = {Ying Liu and Han Tong Loh and Aixin Sun},
+keywords = {Text classification, Imbalanced data, Term weighting scheme},
+abstract = {The natural distribution of textual data used in text classification is often imbalanced. Categories with fewer examples are under-represented and their classifiers often perform far below satisfactory. We tackle this problem using a simple probability based term weighting scheme to better distinguish documents in minor categories. This new scheme directly utilizes two critical information ratios, i.e. relevance indicators. Such relevance indicators are nicely supported by probability estimates which embody the category membership. Our experimental study using both Support Vector Machines and Naïve Bayes classifiers and extensive comparison with other classic weighting schemes over two benchmarking data sets, including Reuters-21578, shows significant improvement for minor categories, while the performance for major categories are not jeopardized. Our approach has suggested a simple and effective solution to boost the performance of text classification over skewed data sets.}
+}
+
+@article{batista2004methods,
+author = {Batista, Gustavo E. A. P. A. and Prati, Ronaldo C. and Monard, Maria Carolina},
+title = {A Study of the Behavior of Several Methods for Balancing Machine Learning Training Data},
+year = {2004},
+issue_date = {June 2004},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {6},
+number = {1},
+issn = {1931-0145},
+url = {https://doi.org/10.1145/1007730.1007735},
+doi = {10.1145/1007730.1007735},
+abstract = {There are several aspects that might influence the performance achieved by existing learning systems. It has been reported that one of these aspects is related to class imbalance in which examples in training data belonging to one class heavily outnumber the examples in the other class. In this situation, which is found in real world data describing an infrequent but important event, the learning system may have difficulties to learn the concept related to the minority class. In this work we perform a broad experimental evaluation involving ten methods, three of them proposed by the authors, to deal with the class imbalance problem in thirteen UCI data sets. Our experiments provide evidence that class imbalance does not systematically hinder the performance of learning systems. In fact, the problem seems to be related to learning with too few minority class examples in the presence of other complicating factors, such as class overlapping. Two of our proposed methods deal with these conditions directly, allying a known over-sampling method with data cleaning methods in order to produce better-defined class clusters. Our comparative experiments show that, in general, over-sampling methods provide more accurate results than under-sampling methods considering the area under the ROC curve (AUC). This result seems to contradict results previously published in the literature. Two of our proposed methods, Smote + Tomek and Smote + ENN, presented very good results for data sets with a small number of positive examples. Moreover, Random over-sampling, a very simple over-sampling method, is very competitive to more complex over-sampling methods. Since the over-sampling methods provided very good performance results, we also measured the syntactic complexity of the decision trees induced from over-sampled data. Our results show that these trees are usually more complex then the ones induced from original data. Random over-sampling usually produced the smallest increase in the mean number of induced rules and Smote + ENN the smallest increase in the mean number of conditions per rule, when compared among the investigated over-sampling methods.},
+journal = {SIGKDD Explor. Newsl.},
+month = {jun},
+pages = {20–29},
+numpages = {10}
+}
+
+@InProceedings{laurikkala2001improving,
+author="Laurikkala, Jorma",
+editor="Quaglini, Silvana
+and Barahona, Pedro
+and Andreassen, Steen",
+title="Improving Identification of Difficult Small Classes by Balancing Class Distribution",
+booktitle="Artificial Intelligence in Medicine",
+year="2001",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="63--66",
+abstract="We studied three methods to improve identification of difficult small classes by balancing imbalanced class distribution with data reduction. The new method, neighborhood cleaning rule (NCL), outperformed simple random and one-sided selection methods in experiments with ten data sets. All reduction methods improved identification of small classes (20--30{\%}), but the differences were insignificant. However, significant differences in accuracies, true-positive rates and true-negative rates obtained with the 3-nearest neighbor method and C4.5 from the reduced data favored NCL. The results suggest that NCL is a useful method for improving the modeling of difficult small classes, and for building classifiers to identify these classes from the real-world data.",
+isbn="978-3-540-48229-1",
+url="https://doi.org/10.1007/3-540-48229-6_9"
+}
+
+
+@book{he2013book,
+publisher = {{John Wiley \& Sons, Ltd}},
+isbn = {9781118646106},
+title = {Imbalanced Learning: Foundations, Algorithms, and Applications},
+doi = {10.1002/9781118646106},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/9781118646106},
+year = {2013},
+editor = {Haibo He and Yunqian Ma},
+abstract = {The first book of its kind to review the current status and future direction of the exciting new branch of machine learning/data mining called imbalanced learning}
+}
+
+@book{fernandez2018book,
+  title={Learning from Imbalanced Data Sets},
+  author={Alberto Fern{\'a}ndez and Salvador Garc{\'i}a and Mikel Galar and Ronaldo Cristiano Prati and B. Krawczyk and Francisco Herrera},
+  doi={10.1007/978-3-319-98074-4},
+  publisher={Springer Cham},
+  year={2018},
+url={https://doi.org/10.1007/978-3-319-98074-4}
+}
+
+
+@article{nadal1991potts,
+	author = {Jean-Pierre Nadal and Albrecht Rau},
+	title = {Storage capacity of a Potts-perceptron},
+	DOI= "10.1051/jp1:1991104",
+	url= "https://doi.org/10.1051/jp1:1991104",
+	journal = {J. Phys. I France},
+	year = 1991,
+	volume = 1,
+	number = 8,
+	pages = "1109-1121",
+	month = "",
+}
+
+@inproceedings{mignacco2020,
+ author = {Mignacco, Francesca and Krzakala, Florent and Urbani, Pierfrancesco and Zdeborov\'{a}, Lenka},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+ pages = {9540--9550},
+ publisher = {Curran Associates, Inc.},
+ title = {Dynamical mean-field theory for stochastic gradient descent in Gaussian mixture classification},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2020/file/6c81c83c4bd0b58850495f603ab45a93-Paper.pdf},
+ volume = {33},
+ year = {2020},
+ eprint={2006.06098}
+}
+
+@inproceedings{
+mannelli2023unfair,
+title={Bias-inducing geometries: exactly solvable data model with fairness implications},
+author={Stefano Sarao Mannelli and Federica Gerace and Negar Rostamzadeh and Luca Saglietti},
+booktitle={ICML 2024 Workshop on Geometry-grounded Representation Learning and Generative Modeling},
+year={2024},
+url={https://openreview.net/forum?id=oupizzpMpY}
+}
+
+@InProceedings{francazi2023theoretical,
+  title = 	 {A Theoretical Analysis of the Learning Dynamics under Class Imbalance},
+  author =       {Francazi, Emanuele and Baity-Jesi, Marco and Lucchi, Aurelien},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {10285--10322},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/francazi23a/francazi23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/francazi23a.html},
+  abstract = 	 {Data imbalance is a common problem in machine learning that can have a critical effect on the performance of a model. Various solutions exist but their impact on the convergence of the learning dynamics is not understood. Here, we elucidate the significant negative impact of data imbalance on learning, showing that the learning curves for minority and majority classes follow sub-optimal trajectories when training with a gradient-based optimizer. This slowdown is related to the imbalance ratio and can be traced back to a competition between the optimization of different classes. Our main contribution is the analysis of the convergence of full-batch (GD) and stochastic gradient descent (SGD), and of variants that renormalize the contribution of each per-class gradient. We find that GD is not guaranteed to decrease the loss for each class but that this problem can be addressed by performing a per-class normalization of the gradient. With SGD, class imbalance has an additional effect on the direction of the gradients: the minority class suffers from a higher directional noise, which reduces the effectiveness of the per-class gradient normalization. Our findings not only allow us to understand the potential and limitations of strategies involving the per-class gradients, but also the reason for the effectiveness of previously used solutions for class imbalancesuch as oversampling.}
+}
+
+
+@article{cocco2018proteins,
+doi = {10.1088/1361-6633/aa9965},
+url = {https://dx.doi.org/10.1088/1361-6633/aa9965},
+year = {2018},
+month = {Jan},
+publisher = {IOP Publishing},
+volume = {81},
+number = {3},
+pages = {032601},
+author = {Simona Cocco and Christoph Feinauer and Matteo Figliuzzi and Rémi Monasson and Martin Weigt},
+title = {Inverse statistical physics of protein sequences: a key issues review},
+journal = {Reports on Progress in Physics},
+abstract = {In the course of evolution, proteins undergo important changes in their amino acid sequences, while their three-dimensional folded structure and their biological function remain remarkably conserved. Thanks to modern sequencing techniques, sequence data accumulate at unprecedented pace. This provides large sets of so-called homologous, i.e. evolutionarily related protein sequences, to which methods of inverse statistical physics can be applied. Using sequence data as the basis for the inference of Boltzmann distributions from samples of microscopic configurations or observables, it is possible to extract information about evolutionary constraints and thus protein function and structure. Here we give an overview over some biologically important questions, and how statistical-mechanics inspired modeling approaches can help to answer them. Finally, we discuss some open questions, which we expect to be addressed over the next years.}
+}
+
+@inbook{cocco2023beyond,
+author = { Simona   Cocco  and  Andrea   De Martino  and  Andrea   Pagnani  and  Martin   Weigt  and  Felix   Ritort },
+title = {Statistical Physics of Biological Molecules},
+booktitle = {Spin Glass Theory and Far Beyond},
+chapter = {Chapter 26},
+pages = {523-559},
+doi = {10.1142/9789811273926_0026},
+URL = {https://www.worldscientific.com/doi/abs/10.1142/9789811273926_0026},
+eprint = {2207.13402},
+    abstract = { This chapter reviews the use of statistical mechanics techniques, and in particular those inspired by disordered systems and spin glasses, for the study of biological molecules. In a first contribution (Sec. 26.1), Cocco, De Martino, Pagnani, and Weigt review how statistical mechanics methods can give insight into the properties of RNA molecules at many different scales. They first discuss models and algorithms for the prediction of the secondary structure, how a random RNA sequence freezes into a disorder structure via a glass-like transition, and how the free energy landscape of folding into such structures can be inferred from data (a topic that is covered in more depth in the second contribution by Ritort, Sec. 26.2). Next, they describe how pairwise disordered Potts models can be used to obtain insight into the secondary and tertiary structure of RNA, via the so-called direct coupling analysis, and to generate artificial RNA with similar properties to natural ones. Finally, they discuss how distinct RNAs interact in the cell, giving rise to a complex regulatory network. In a second contribution (Sec. 26.2), Ritort reviews experimental techniques for the study of single biological molecules, in particular with the goal of measuring the free energy landscape for folding and unfolding. A complex landscape full of local minima emerges, and the analogies and differences with similar rough landscapes characteristic of spin glasses are discussed. },
+year={2003},
+publisher = {World Scientific}
+}
+
+@book{cocco2022book,
+  title={From Statistical Physics to Data-driven Modelling: With Applications to Quantitative Biology},
+  author={Cocco, S. and Monasson, R. and Zamponi, F.},
+  isbn={9780198864745},
+  lccn={2022937922},
+  url={https://books.google.fr/books?id=lWiLEAAAQBAJ},
+  year={2022},
+  publisher={Oxford University Press}
+}
+
+@article{chawla2002smote,
+  title={{SMOTE}: synthetic minority over-sampling technique},
+  author={Chawla, Nitesh V and Bowyer, Kevin W and Hall, Lawrence O and Kegelmeyer, W Philip},
+  journal={Journal of artificial intelligence research},
+  volume={16},
+  pages={321--357},
+  year={2002},
+doi = {10.1613/jair.953 },
+url={https://doi.org/10.1613/jair.953}
+}
+
+@INPROCEEDINGS{he2008adasyn,
+
+  author={Haibo He and Yang Bai and Garcia, Edwardo A. and Shutao Li},
+
+  booktitle={2008 IEEE International Joint Conference on Neural Networks (IEEE World Congress on Computational Intelligence)}, 
+
+  title={{ADASYN}: Adaptive synthetic sampling approach for imbalanced learning}, 
+
+  year={2008},
+
+  volume={},
+
+  number={},
+
+  pages={1322-1328},
+
+  doi={10.1109/IJCNN.2008.4633969},
+url={https://doi.org/10.1109/IJCNN.2008.4633969}}
+
+@article{franz2019perceptron,
+  title = {Critical Jammed Phase of the Linear Perceptron},
+  author = {Franz, Silvio and Sclocchi, Antonio and Urbani, Pierfrancesco},
+  journal = {Phys. Rev. Lett.},
+  volume = {123},
+  issue = {11},
+  pages = {115702},
+  numpages = {5},
+  year = {2019},
+  month = {Sep},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.123.115702},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.123.115702}
+}
+
+@book{engel2001book, 
+place={Cambridge}, 
+title={Statistical Mechanics of Learning}, 
+doi={10.1017/CBO9781139164542}, 
+publisher={Cambridge University Press}, 
+author={Engel, A. and Van den Broeck, C.}, 
+year={2001},
+url={https://doi.org/10.1017/CBO9781139164542}
+}
+
+@InProceedings{zieba2015rbm,
+author="Zi{\k{e}}ba, Maciej
+and Tomczak, Jakub M.
+and Gonczarek, Adam",
+editor="Nguyen, Ngoc Thanh
+and Trawi{\'{n}}ski, Bogdan
+and Kosala, Raymond",
+title="{RBM-SMOTE}: {R}estricted {B}oltzmann Machines for Synthetic Minority Oversampling Technique",
+booktitle="Intelligent Information and Database Systems",
+year="2015",
+publisher="Springer International Publishing",
+address="Cham",
+pages="377--386",
+abstract="The problem of imbalanced data, i.e., when the class labels are unequally distributed, is encountered in many real-life application, e.g., credit scoring, medical diagnostics. Various approaches aimed at dealing with the imbalanced data have been proposed. One of the most well known data pre-processing method is the Synthetic Minority Oversampling Technique (SMOTE). However, SMOTE may generate examples which are artificial in the sense that they are impossible to be drawn from the true distribution. Therefore, in this paper, we propose to apply Restricted Boltzmann Machine to learn an intermediate representation which transform the SMOTE examples to the ones approximately drawn from the true distribution. At the end of the paper we perform an experiment using credit scoring dataset.",
+isbn="978-3-319-15702-3",
+url="https://doi.org/10.1007/978-3-319-15702-3_37"
+}
+
+@article{kovacs2019emp,
+title = {An empirical comparison and evaluation of minority oversampling techniques on a large number of imbalanced datasets},
+journal = {Applied Soft Computing},
+volume = {83},
+pages = {105662},
+year = {2019},
+issn = {1568-4946},
+doi = {10.1016/j.asoc.2019.105662},
+url = {https://www.sciencedirect.com/science/article/pii/S1568494619304429},
+author = {György Kovács},
+keywords = {Imbalanced learning, SMOTE, Minority oversampling, SMOTE variants},
+abstract = {Learning and mining from imbalanced datasets gained increased interest in recent years. One simple but efficient way to increase the performance of standard machine learning techniques on imbalanced datasets is the synthetic generation of minority samples. In this paper, a detailed, empirical comparison of 85 variants of minority oversampling techniques is presented and discussed involving 104 imbalanced datasets for evaluation. The goal of the work is to set a new baseline in the field, determine the oversampling principles leading to the best results under general circumstances, and also give guidance to practitioners on which techniques to use with certain types of datasets.}
+}
+
+@article{douzas2018gan,
+title = {Effective data generation for imbalanced learning using conditional generative adversarial networks},
+journal = {Expert Systems with Applications},
+volume = {91},
+pages = {464-471},
+year = {2018},
+issn = {0957-4174},
+doi = {10.1016/j.eswa.2017.09.030},
+url = {https://www.sciencedirect.com/science/article/pii/S0957417417306346},
+author = {Georgios Douzas and Fernando Bacao},
+keywords = {GAN, Imbalanced learning, Artificial data, Minority class},
+abstract = {Learning from imbalanced datasets is a frequent but challenging task for standard classification algorithms. Although there are different strategies to address this problem, methods that generate artificial data for the minority class constitute a more general approach compared to algorithmic modifications. Standard oversampling methods are variations of the SMOTE algorithm, which generates synthetic samples along the line segment that joins minority class samples. Therefore, these approaches are based on local information, rather on the overall minority class distribution. Contrary to these algorithms, in this paper the conditional version of Generative Adversarial Networks (cGAN) is used to approximate the true data distribution and generate data for the minority class of various imbalanced datasets. The performance of cGAN is compared against multiple standard oversampling algorithms. We present empirical results that show a significant improvement in the quality of the generated data when cGAN is used as an oversampling algorithm.}
+}
+
+@INPROCEEDINGS{wan2017vae,
+  author={Wan, Zhiqiang and Zhang, Yazhou and He, Haibo},
+  booktitle={2017 IEEE Symposium Series on Computational Intelligence (SSCI)}, 
+  title={Variational autoencoder based synthetic data generation for imbalanced learning}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={1-7},
+  doi={10.1109/SSCI.2017.8285168},
+url={https://doi.org/10.1109/SSCI.2017.8285168}
+}
+
+
+@InProceedings{mignacco2020gmm,
+  title = 	 {The Role of Regularization in Classification of High-dimensional Noisy {G}aussian Mixture},
+  author =       {Mignacco, Francesca and Krzakala, Florent and Lu, Yue and Urbani, Pierfrancesco and Zdeborova, Lenka},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {6874--6883},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--18 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v119/mignacco20a/mignacco20a.pdf},
+  url = 	 {https://proceedings.mlr.press/v119/mignacco20a.html},
+  abstract = 	 {We consider a high-dimensional mixture of two Gaussians in the noisy regime where even an oracle knowing the centers of the clusters misclassifies a small but finite fraction of the points. We provide a rigorous analysis of the generalization error of regularized convex classifiers, including ridge, hinge and logistic regression, in the high-dimensional limit where the number $n$ of samples and their dimension $d$ go to infinity while their ratio is fixed to $\alpha=n/d$. We discuss surprising effects of the regularization that in some cases allows to reach the Bayes-optimal performances. We also illustrate the interpolation peak at low regularization, and analyze the role of the respective sizes of the two clusters.}
+}
+
+@article{delgiudice1989,
+	author = {{Del Giudice, P.} and {Franz, S.} and {Virasoro, M. A.}},
+	title = {Perceptron beyond the limit of capacity},
+	DOI= "10.1051/jphys:01989005002012100",
+	url= "https://doi.org/10.1051/jphys:01989005002012100",
+	journal = {J. Phys. France},
+	year = 1989,
+	volume = 50,
+	number = 2,
+	pages = "121-134",
+}
+
+@book{jurafsky2009speech,
+  title={Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition},
+  author={Jurafsky, D. and Martin, J.H.},
+  isbn={9780131873216},
+  lccn={2008010335},
+  series={Prentice Hall series in artificial intelligence},
+  url={https://books.google.fr/books?id=fZmj5UNK8AQC},
+  year={2009},
+  publisher={Pearson Prentice Hall}
+}
+
+@misc{wu2020visual,
+      title={Visual Transformers: Token-based Image Representation and Processing for Computer Vision}, 
+      author={Bichen Wu and Chenfeng Xu and Xiaoliang Dai and Alvin Wan and Peizhao Zhang and Zhicheng Yan and Masayoshi Tomizuka and Joseph Gonzalez and Kurt Keutzer and Peter Vajda},
+      year={2020},
+      eprint={2006.03677},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2006.03677}, 
+}
+
+@inproceedings{loureiro2021real,
+ author = {Loureiro, Bruno and Gerbelot, Cedric and Cui, Hugo and Goldt, Sebastian and Krzakala, Florent and Mezard, Marc and Zdeborov\'{a}, Lenka},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+ pages = {18137--18151},
+ publisher = {Curran Associates, Inc.},
+ title = {Learning curves of generic features maps for realistic datasets with a teacher-student model},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/9704a4fc48ae88598dcbdcdf57f3fdef-Paper.pdf},
+ volume = {34},
+ year = {2021}
+}
+
+@InProceedings{ai2023vae,
+  title = 	 {Generative Oversampling for Imbalanced Data via Majority-Guided VAE},
+  author =       {Ai, Qingzhong and Wang, Pengyun and He, Lirong and Wen, Liangjian and Pan, Lujia and Xu, Zenglin},
+  booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {3315--3330},
+  year = 	 {2023},
+  editor = 	 {Ruiz, Francisco and Dy, Jennifer and van de Meent, Jan-Willem},
+  volume = 	 {206},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {25--27 Apr},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v206/ai23a/ai23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v206/ai23a.html},
+  abstract = 	 {Learning with imbalanced data is a challenging problem in deep learning. Over-sampling is a widely used technique to re-balance the sampling distribution of training data. However, most existing over-sampling methods only use intra-class information of minority classes to augment the data but ignore the inter-class relationships with the majority ones, which is prone to overfitting, especially when the imbalance ratio is large. To address this issue, we propose a novel over-sampling model, called Majority-Guided VAE(MGVAE), which generates new minority samples under the guidance of a majority-based prior. In this way, the newly generated minority samples can inherit the diversity and richness of the majority ones, thus mitigating overfitting in downstream tasks. Furthermore, to prevent model collapse under limited data, we first pre-train MGVAE on sufficient majority samples and then fine-tune based on minority samples with Elastic Weight Consolidation(EWC) regularization. Experimental results on benchmark image datasets and real-world tabular data show that MGVAE achieves competitive improvements over other over-sampling methods in downstream classification tasks, demonstrating the effectiveness of our method.}
+}
+
+@InProceedings{mondal2023ae,
+  title = 	 {Minority Oversampling for Imbalanced Data via Class-Preserving Regularized Auto-Encoders},
+  author =       {Mondal, Arnab Kumar and Singhal, Lakshya and Tiwary, Piyush and Singla, Parag and {AP}, Prathosh},
+  booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {3440--3465},
+  year = 	 {2023},
+  editor = 	 {Ruiz, Francisco and Dy, Jennifer and van de Meent, Jan-Willem},
+  volume = 	 {206},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {25--27 Apr},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v206/mondal23a/mondal23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v206/mondal23a.html},
+  abstract = 	 {Class imbalance is a common phenomenon in multiple application domains such as healthcare, where the sample occurrence of one or few class categories is more prevalent in the dataset than the rest. This work addresses the class-imbalance issue by proposing an over-sampling method for the minority classes in the latent space of a Regularized Auto-Encoder (RAE). Specifically, we construct a latent space by maximizing the conditional data likelihood using an Encoder-Decoder structure, such that oversampling through convex combinations of latent samples preserves the class identity. A jointly-trained linear classifier that separates convexly coupled latent vectors from different classes is used to impose this property on the AE’s latent space. Further, the aforesaid linear classifier is used for final classification without retraining. We theoretically show that our method can achieve a low variance risk estimate compared to naive oversampling methods and is robust to overfitting. We conduct several experiments on benchmark datasets and show that our method outperforms the existing oversampling techniques for handling class imbalance. The code of the proposed method is available at: https://github.com/arnabkmondal/oversamplingrae.}
+}
+
+@inproceedings{loureiro2021gmm,
+ author = {Loureiro, Bruno and Sicuro, Gabriele and Gerbelot, Cedric and Pacco, Alessandro and Krzakala, Florent and Zdeborov\'{a}, Lenka},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+ pages = {10144--10157},
+ publisher = {Curran Associates, Inc.},
+ title = {Learning Gaussian Mixtures with Generalized Linear Models: Precise Asymptotics in High-dimensions},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/543e83748234f7cbab21aa0ade66565f-Paper.pdf},
+ volume = {34},
+ year = {2021}
+}
+
+@article{gardner1988space,
+doi = {10.1088/0305-4470/21/1/030},
+url = {https://dx.doi.org/10.1088/0305-4470/21/1/030},
+year = {1988},
+month = {Jan},
+publisher = {},
+volume = {21},
+number = {1},
+pages = {257},
+author = {E Gardner},
+title = {The space of interactions in neural network models},
+journal = {Journal of Physics A: Mathematical and General},
+abstract = {The typical fraction of the space of interactions between each pair of N Ising spins which solve the problem of storing a given set of p random patterns as N-bit spin configurations is considered. The volume is calculated explicitly as a function of the storage ratio, alpha =p/N, of the value kappa (&gt;0) of the product of the spin and the magnetic field at each site and of the magnetisation, m. Here m may vary between 0 (no correlation) and 1 (completely correlated). The capacity increases with the correlation between patterns from alpha =2 for correlated patterns with kappa =0 and tends to infinity as m tends to 1. The calculations use a saddle-point method and the order parameters at the saddle point are assumed to be replica symmetric. This solution is shown to be locally stable. A local iterative learning algorithm for updating the interactions is given which will converge to a solution of given kappa provided such solutions exist.}
+}
+
+@article{lecun2010mnist,
+  title={{MNIST} handwritten digit database},
+  author={LeCun, Yann and Cortes, Corinna and Burges, CJ},
+  journal={ATT Labs [Online]. Available: \url{http://yann.lecun.com/exdb/mnist}},
+  volume={2},
+  year={2010}
+}
+
+@TECHREPORT{krizhevsky2009cifar,
+    author = {Alex Krizhevsky},
+    title = {Learning multiple layers of features from tiny images},
+    institution = {},
+    year = {2009}
+}
+
+@article{monasson1992,
+doi = {10.1088/0305-4470/25/13/019},
+url = {https://dx.doi.org/10.1088/0305-4470/25/13/019},
+year = {1992},
+month = {jul},
+publisher = {},
+volume = {25},
+number = {13},
+pages = {3701},
+author = {R Monasson},
+title = {Properties of neural networks storing spatially correlated patterns},
+journal = {Journal of Physics A: Mathematical and General},
+abstract = {The author studies the behaviour of a feedforward neural network supplied with spatially organized data. This inner structure is taken into account by a matrix Cij, whose coefficients equal the average correlation between two pixels i and j of the input patterns. The storage capacity alpha is computed as a function of the required stability and of the eigenvalues of C. The author proposes a geometrical transformation allowing an intuitive interpretation of these results. Numerical simulations using real and binary patterns show a very good agreement with the theory. Finally, the author analyses the synaptic couplings correlations resulting from the training of the network with structured patterns. Focusing on exponentially decreasing correlations one and two dimensions, the author finds that they exhibit a 'Mexican hat' profile, the excitatory centre size of which depends on alpha .}
+}
+
+@article{goldt2020gep,
+  title = {Modeling the Influence of Data Structure on Learning in Neural Networks: The Hidden Manifold Model},
+  author = {Goldt, Sebastian and M\'ezard, Marc and Krzakala, Florent and Zdeborov\'a, Lenka},
+  journal = {Phys. Rev. X},
+  volume = {10},
+  issue = {4},
+  pages = {041044},
+  numpages = {32},
+  year = {2020},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevX.10.041044},
+  url = {https://link.aps.org/doi/10.1103/PhysRevX.10.041044}
+}
+
+@article{chung2018manifold,
+  title = {Classification and Geometry of General Perceptual Manifolds},
+  author = {Chung, SueYeon and Lee, Daniel D. and Sompolinsky, Haim},
+  journal = {Phys. Rev. X},
+  volume = {8},
+  issue = {3},
+  pages = {031003},
+  numpages = {26},
+  year = {2018},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevX.8.031003},
+  url = {https://link.aps.org/doi/10.1103/PhysRevX.8.031003}
+}
+
+@article{pastore2020structure,
+  title = {Statistical learning theory of structured data},
+  author = {Pastore, Mauro and Rotondo, Pietro and Erba, Vittorio and Gherardi, Marco},
+  journal = {Phys. Rev. E},
+  volume = {102},
+  issue = {3},
+  pages = {032119},
+  numpages = {17},
+  year = {2020},
+  month = {Sep},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevE.102.032119},
+  url = {https://link.aps.org/doi/10.1103/PhysRevE.102.032119}
+}
+
+@article{rotondo2020beyond,
+  title = {Beyond the Storage Capacity: Data-Driven Satisfiability Transition},
+  author = {Rotondo, Pietro and Pastore, Mauro and Gherardi, Marco},
+  journal = {Phys. Rev. Lett.},
+  volume = {125},
+  issue = {12},
+  pages = {120601},
+  numpages = {6},
+  year = {2020},
+  month = {Sep},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.125.120601},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.125.120601}
+}
+
+@inproceedings{jacot2018NTK,
+ author = {Jacot, Arthur and Gabriel, Franck and Hongler, Clement},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Neural Tangent Kernel: Convergence and Generalization in Neural Networks},
+ url = {https://proceedings.neurips.cc/paper/2018/file/5a4be1fa34e62bb8a6ec6b91d2462f5a-Paper.pdf},
+ volume = {31},
+ year = {2018}
+}
+
+@article{pacelli2022finitewidth,
+author={Pacelli, R.
+and Ariosto, S.
+and Pastore, M.
+and Ginelli, F.
+and Gherardi, M.
+and Rotondo, P.},
+title={A statistical mechanics framework for Bayesian deep neural networks beyond the infinite-width limit},
+journal={Nature Machine Intelligence},
+year={2023},
+month={Dec},
+day={01},
+volume={5},
+number={12},
+pages={1497-1507},
+abstract={Despite the practical success of deep neural networks, a comprehensive theoretical framework that can predict practically relevant scores, such as the test accuracy, from knowledge of the training data is currently lacking. Huge simplifications arise in the infinite-width limit, in which the number of units Nℓ in each hidden layer (ℓ{\thinspace}={\thinspace}1,{\thinspace}{\ldots},{\thinspace}L, where L is the depth of the network) far exceeds the number P of training examples. This idealization, however, blatantly departs from the reality of deep learning practice. Here we use the toolset of statistical mechanics to overcome these limitations and derive an approximate partition function for fully connected deep neural architectures, which encodes information on the trained models. The computation holds in the thermodynamic limit, where both Nℓ and P are large and their ratio $\alpha$ℓ{\thinspace}={\thinspace}P/Nℓ is finite. This advance allows us to obtain: (1) a closed formula for the generalization error associated with a regression task in a one-hidden layer network with finite $\alpha$1; (2) an approximate expression of the partition function for deep architectures (via an effective action that depends on a finite number of order parameters); and (3) a link between deep neural networks in the proportional asymptotic limit and Student's t-processes.},
+issn={2522-5839},
+doi={10.1038/s42256-023-00767-6},
+url={https://doi.org/10.1038/s42256-023-00767-6}
+}
+
+
+
+@inproceedings{lee2018gaussian,
+title={Deep Neural Networks as {G}aussian Processes},
+author={Jaehoon Lee and Jascha Sohl-dickstein and Jeffrey Pennington and Roman Novak and Sam Schoenholz and Yasaman Bahri},
+booktitle={International Conference on Learning Representations},
+year={2018},
+url={https://openreview.net/forum?id=B1EA-M-0Z},
+}
+
+
+@InProceedings{cui2023optimal,
+  title = 	 {{B}ayes-optimal Learning of Deep Random Networks of Extensive-width},
+  author =       {Cui, Hugo and Krzakala, Florent and Zdeborova, Lenka},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {6468--6521},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/cui23b/cui23b.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/cui23b.html},
+  abstract = 	 {We consider the problem of learning a target function corresponding to a deep, extensive-width, non-linear neural network with random Gaussian weights. We consider the asymptotic limit where the number of samples, the input dimension and the network width are proportionally large and propose a closed-form expression for the Bayes-optimal test error, for regression and classification tasks. We further compute closed-form expressions for the test errors of ridge regression, kernel and random features regression. We find, in particular, that optimally regularized ridge regression, as well as kernel regression, achieve Bayes-optimal performances, while the logistic loss yields a near-optimal test error for classification. We further show numerically that when the number of samples grows faster than the dimension, ridge and kernel methods become suboptimal, while neural networks achieve test error close to zero from quadratically many samples.}
+}
+
+
+
+@Article{aiudi2023local,
+author={Aiudi, R.
+and Pacelli, R.
+and Baglioni, P.
+and Vezzani, A.
+and Burioni, R.
+and Rotondo, P.},
+title={Local kernel renormalization as a mechanism for feature learning in overparametrized convolutional neural networks},
+journal={Nature Communications},
+year={2025},
+month={Jan},
+day={10},
+volume={16},
+number={1},
+pages={568},
+abstract={Empirical evidence shows that fully-connected neural networks in the infinite-width limit (lazy training) eventually outperform their finite-width counterparts in most computer vision tasks; on the other hand, modern architectures with convolutional layers often achieve optimal performances in the finite-width regime. In this work, we present a theoretical framework that provides a rationale for these differences in one-hidden-layer networks; we derive an effective action in the so-called proportional limit for an architecture with one convolutional hidden layer and compare it with the result available for fully-connected networks. Remarkably, we identify a completely different form of kernel renormalization: whereas the kernel of the fully-connected architecture is just globally renormalized by a single scalar parameter, the convolutional kernel undergoes a local renormalization, meaning that the network can select the local components that will contribute to the final prediction in a data-dependent way. This finding highlights a simple mechanism for feature learning that can take place in overparametrized shallow convolutional neural networks, but not in shallow fully-connected architectures or in locally connected neural networks without weight sharing.},
+issn={2041-1723},
+doi={10.1038/s41467-024-55229-3},
+url={https://doi.org/10.1038/s41467-024-55229-3}
+}
+
+@inproceedings{naveh2021,
+ author = {Naveh, Gadi and Ringel, Zohar},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+ pages = {21352--21364},
+ publisher = {Curran Associates, Inc.},
+ title = {A self consistent theory of Gaussian Processes captures feature learning effects in finite {CNNs}},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/b24d21019de5e59da180f1661904f49a-Paper.pdf},
+ volume = {34},
+ year = {2021}
+}
+
+@article{dietrich1999svm,
+  title = {Statistical Mechanics of Support Vector Networks},
+  author = {Dietrich, Rainer and Opper, Manfred and Sompolinsky, Haim},
+  journal = {Phys. Rev. Lett.},
+  volume = {82},
+  issue = {14},
+  pages = {2975--2978},
+  numpages = {0},
+  year = {1999},
+  month = {04},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.82.2975},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.82.2975}
+}
+
+
+@InProceedings{agoritsas2023ebm,
+  title = 	 {Explaining the effects of non-convergent {MCMC} in the training of Energy-Based Models},
+  author =       {Agoritsas, Elisabeth and Catania, Giovanni and Decelle, Aur\'{e}lien and Seoane, Beatriz},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {322--336},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/agoritsas23a/agoritsas23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/agoritsas23a.html},
+  abstract = 	 {In this paper, we quantify the impact of using non-convergent Markov chains to train Energy-Based models (EBMs). In particular, we show analytically that EBMs trained with non-persistent short runs to estimate the gradient can perfectly reproduce a set of empirical statistics of the data, not at the level of the equilibrium measure, but through a precise dynamical process. Our results provide a first-principles explanation for the observations of recent works proposing the strategy of using short runs starting from random initial conditions as an efficient way to generate high-quality samples in EBMs, and lay the groundwork for using EBMs as diffusion models. After explaining this effect in generic EBMs, we analyze two solvable models in which the effect of the non-convergent sampling in the trained parameters can be described in detail. Finally, we test these predictions numerically on a ConvNet EBM and a Boltzmann machine.}
+}
+
+@inproceedings{
+carbone2023fast,
+title={Fast and Functional structured data generator},
+author={Alessandra Carbone and Aur{\'e}lien Decelle and Lorenzo Rosset and Beatriz Seoane},
+booktitle={ICML 2023 Workshop on Structured Probabilistic Inference {\&} Generative Modeling},
+year={2023},
+url={https://openreview.net/forum?id=uXkfPvjYeM}
+}
+
+
+@InProceedings{shang2023yahoo,
+  title = 	 {Precision/Recall on Imbalanced Test Data},
+  author =       {Shang, Hongwei and Langlois, Jean-Marc and Tsioutsiouliklis, Kostas and Kang, Changsung},
+  booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {9879--9891},
+  year = 	 {2023},
+  editor = 	 {Ruiz, Francisco and Dy, Jennifer and van de Meent, Jan-Willem},
+  volume = 	 {206},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {25--27 Apr},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v206/shang23a/shang23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v206/shang23a.html},
+  abstract = 	 {In this paper we study the problem of estimating accurately the precision and recall for binary classification when the classes are imbalanced and only a limited number of human labels are available. One common strategy is to over-sample the small positive class predicted by the classifier. Rather than random sampling where the values in a confusion matrix are observations coming from a multinomial distribution, we over-sample the minority positive class predicted by the classifier, resulting in two independent binomial distributions. But how much should we over-sample? And what confidence/credible intervals can we deduce based on our over-sampling? We provide formulas for (1) the confidence intervals of the adjusted precision/recall after over-sampling; (2) Bayesian credible intervals of adjusted precision/recall. For precision, the higher the over-sampling rate, the narrower the confidence/credible interval. For recall, there exists an optimal over-sampling ratio, which minimizes the width of the confidence/credible interval. Also, we present experiments on synthetic data and real data to demonstrate the capability of our method to construct accurate intervals. Finally, we demonstrate how we can apply our techniques to Yahoo mail’s quality monitoring system.}
+}
+
+@article{lopez1995storage,
+doi = {10.1088/0305-4470/28/16/005},
+url = {https://dx.doi.org/10.1088/0305-4470/28/16/005},
+year = {1995},
+month = {aug},
+publisher = {},
+volume = {28},
+number = {16},
+pages = {L447},
+author = {B Lopez and  M Schroder and  M Opper},
+title = {Storage of correlated patterns in a perceptron},
+journal = {Journal of Physics A: Mathematical and General},
+abstract = {We calculate the storage capacity of a perceptron for correlated Gaussian patterns. We find that the storage capacity alpha c can be less than 2 if similar patterns are mapped onto different outputs and vice versa. As long as the patterns are in a general position we obtain, in contrast to previous works, that alpha c&gt;or=1 in agreement with Cover's theorem. Numerical simulations confirm the results.}
+}
+
+@article{
+li1996emergence,
+author = {Hao Li  and Robert Helling  and Chao Tang  and Ned Wingreen },
+title = {Emergence of Preferred Structures in a Simple Model of Protein Folding},
+journal = {Science},
+volume = {273},
+number = {5275},
+pages = {666-669},
+year = {1996},
+doi = {10.1126/science.273.5275.666},
+URL = {https://www.science.org/doi/abs/10.1126/science.273.5275.666},
+eprint = {https://www.science.org/doi/pdf/10.1126/science.273.5275.666},
+abstract = {Protein structures in nature often exhibit a high degree of regularity (for example, secondary structure and tertiary symmetries) that is absent from random compact conformations. With the use of a simple lattice model of protein folding, it was demonstrated that structural regularities are related to high “designability” and evolutionary stability. The designability of each compact structure is measured by the number of sequences that can design the structure—that is, sequences that possess the structure as their nondegenerate ground state. Compact structures differ markedly in terms of their designability; highly designable structures emerge with a number of associated sequences much larger than the average. These highly designable structures possess “proteinlike” secondary structure and even tertiary symmetries. In addition, they are thermodynamically more stable than other structures. These results suggest that protein structures are selected in nature because they are readily designed and stable against mutations, and that such a selection simultaneously leads to thermodynamic stability.}}
+
+
+@article{mezard1989cavity,
+doi = {10.1088/0305-4470/22/12/018},
+url = {https://dx.doi.org/10.1088/0305-4470/22/12/018},
+year = {1989},
+month = {jun},
+publisher = {},
+volume = {22},
+number = {12},
+pages = {2181},
+author = {Marc Mezard},
+title = {The space of interactions in neural networks: Gardner's computation with the cavity method},
+journal = {Journal of Physics A: Mathematical and General},
+abstract = {Gardner's (1987,1988) computation of the number of N-bit patterns which can be stored in an optical neural network used as an associative memory is derived without replicas, using the cavity method. This allows for a unified presentation whatever the basic measure in the space of coupling constants, but above all it gives the clear physical content of the assumption of replica symmetry. TAP equations are also derived.}
+}
+
+@article{agoritsas2018cavity,
+doi = {10.1088/1751-8121/aaa68d},
+url = {https://dx.doi.org/10.1088/1751-8121/aaa68d},
+year = {2018},
+month = {Jan},
+publisher = {IOP Publishing},
+volume = {51},
+number = {8},
+pages = {085002},
+author = {Elisabeth Agoritsas and Giulio Biroli and Pierfrancesco Urbani and Francesco Zamponi},
+title = {Out-of-equilibrium dynamical mean-field equations for the perceptron model},
+journal = {Journal of Physics A: Mathematical and Theoretical},
+abstract = {Perceptrons are the building blocks of many theoretical approaches to a wide range of complex systems, ranging from neural networks and deep learning machines, to constraint satisfaction problems, glasses and ecosystems. Despite their applicability and importance, a detailed study of their Langevin dynamics has never been performed yet. Here we derive the mean-field dynamical equations that describe the continuous random perceptron in the thermodynamic limit, in a very general setting with arbitrary noise and friction kernels, not necessarily related by equilibrium relations. We derive the equations in two ways: via a dynamical cavity method, and via a path-integral approach in its supersymmetric formulation. The end point of both approaches is the reduction of the dynamics of the system to an effective stochastic process for a representative dynamical variable. Because the perceptron is formally very close to a system of interacting particles in a high dimensional space, the methods we develop here can be transferred to the study of liquid and glasses in high dimensions. Potentially interesting applications are thus the study of the glass transition in active matter, the study of the dynamics around the jamming transition, and the calculation of rheological properties in driven systems.}
+}
+
+@article{abbott1989domains,
+	author = {Kepler, Thomas B. and Abbott, L.F.},
+	title = {Domains of attraction in neural networks},
+	DOI= "10.1051/jphys:0198800490100165700",
+	url= "https://doi.org/10.1051/jphys:0198800490100165700",
+	journal = {J. Phys. France},
+	year = 1988,
+	volume = 49,
+	number = 10,
+	pages = "1657-1662",
+}
+
+@Article{urbani2017jamming,
+	title={{Universality of the SAT-UNSAT (jamming) threshold in non-convex  continuous constraint satisfaction problems}},
+	author={Silvio Franz and Giorgio Parisi and Maksim Sevelev and Pierfrancesco Urbani and Francesco Zamponi},
+	journal={SciPost Phys.},
+	volume={2},
+	pages={019},
+	year={2017},
+	publisher={SciPost},
+	doi={10.21468/SciPostPhys.2.3.019},
+	url={https://scipost.org/10.21468/SciPostPhys.2.3.019},
+}
+
+
+@inproceedings{tieleman2008training,
+author = {Tieleman, Tijmen},
+title = {Training restricted {B}oltzmann machines using approximations to the likelihood gradient},
+year = {2008},
+isbn = {9781605582054},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1390156.1390290},
+doi = {10.1145/1390156.1390290},
+abstract = {A new algorithm for training Restricted Boltzmann Machines is introduced. The algorithm, named Persistent Contrastive Divergence, is different from the standard Contrastive Divergence algorithms in that it aims to draw samples from almost exactly the model distribution. It is compared to some standard Contrastive Divergence and Pseudo-Likelihood algorithms on the tasks of modeling and classifying various types of data. The Persistent Contrastive Divergence algorithm outperforms the other algorithms, and is equally fast and simple.},
+booktitle = {Proceedings of the 25th International Conference on Machine Learning},
+pages = {1064–1071},
+numpages = {8},
+location = {Helsinki, Finland},
+series = {ICML '08}
+}
+
+  
+
+
+
+@misc{jones_scipy:_2001,
+  added-at = {2014-01-19T07:04:32.000+0100},
+  author = {Jones, Eric and Oliphant, Travis and Peterson, Pearu},
+  bdsk-url-1 = {http://www.scipy.org},
+  keywords = {python},
+  timestamp = {2014-01-19T07:04:32.000+0100},
+  title = {{SciPy:} Open Source Scientific Tools for {Python}},
+  url = {http://www.scipy.org},
+  year = {2001}
+}
+
+@article{pedregosa2011scikitlearn,
+  added-at = {2016-02-11T14:53:30.000+0100},
+  author = {Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V. and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P. and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+  journal = {Journal of Machine Learning Research},
+  keywords = {python sklearn software},
+  pages = {2825-2830},
+  timestamp = {2017-03-29T14:43:14.000+0200},
+  title = {Scikit-learn: Machine Learning in {P}ython},
+  url = {http://www.jmlr.org/papers/volume12/pedregosa11a/pedregosa11a.pdf},
+  volume = {12},
+  year = {2011}
+}
+
+@article{xiao2017fashion,
+  title={Fashion-{MNIST}: a novel image dataset for benchmarking machine learning algorithms},
+  author={Xiao, Han and Rasul, Kashif and Vollgraf, Roland},
+  journal={arXiv preprint arXiv:1708.07747},
+  year={2017}
+}
+
+@article{mirny2001protein,
+   author = "Mirny, Leonid and Shakhnovich, Eugene",
+   title = "Protein Folding Theory: From Lattice to All-Atom Models", 
+   journal= "Annual Review of Biophysics",
+   year = "2001",
+   volume = "30",
+   number = "Volume 30, 2001",
+   pages = "361-396",
+   doi = "10.1146/annurev.biophys.30.1.361",
+   url = "https://www.annualreviews.org/content/journals/10.1146/annurev.biophys.30.1.361",
+   publisher = "Annual Reviews",
+   issn = "1936-1238",
+   type = "Journal Article",
+   keywords = "folding nucleus prediction",
+   keywords = "nucleation",
+   keywords = "structure prediction",
+   keywords = "folding nucleus conservation",
+   keywords = "molecular dynamics",
+   abstract = "Abstract This review focuses on recent advances in understanding protein folding kinetics in the context of nucleation theory. We present basic concepts such as nucleation, folding nucleus, and transition state ensemble and then discuss recent advances and challenges in theoretical understanding of several key aspects of protein folding kinetics. We cover recent topology-based approaches as well as evolutionary studies and molecular dynamics approaches to determine protein folding nucleus and analyze other aspects of folding kinetics. Finally, we briefly discuss successful all-atom Monte-Carlo simulations of protein folding and conclude with a brief outlook for the future.",
+  }
+
+
+@article{shakhnovich1990enumeration,
+    author = {Shakhnovich, Eugene and Gutin, Alexander},
+    title = {Enumeration of all compact conformations of copolymers with random sequence of links},
+    journal = {The Journal of Chemical Physics},
+    volume = {93},
+    number = {8},
+    pages = {5967-5971},
+    year = {1990},
+    month = {10},
+    abstract = {Exhaustive enumeration of all compact self‐avoiding conformations of a chain of 27 monomers on the 3*3*3 fragment of a simple cubic lattice is given. Total number of conformations unrelated by symmetry is 103 346. This number is relatively small which makes it possible to make a numerically exact calculation of all thermodynamic functions this chain. Heteropolymers with random sequence of links were considered, and the freezing transition at finite temperature was observed. This transition is analogous to folding transition in proteins where unique structure is formed. The numeric results demonstrate the equivalence between random 3‐dimensional heteropolymers and the random energy model found previously in analytical investigations. The possible application of these results to some problems of combinational optimization is discussed.},
+    issn = {0021-9606},
+    doi = {10.1063/1.459480},
+    url = {https://doi.org/10.1063/1.459480},
+    eprint = {https://pubs.aip.org/aip/jcp/article-pdf/93/8/5967/18988440/5967\_1\_online.pdf},
+}
+
+
+
+
+@article{LP_data,
+Ddoi = {10.1088/1751-8121/acfddc},
+year={2023},
+Uurl = {https://dx.doi.org/10.1088/1751-8121/acfddc},
+Aauthor = {E Loffredo and E Vesconi and R Razban and O Peleg and E Shakhnovich and S Cocco and R Monasson},
+author = {{Anonymous}},
+Ttitle = {Evolutionary dynamics of a lattice dimer: a toy model for stability vs. affinity trade-offs in proteins},
+title = {Removed for anonymous submission},
+}
+
+
+@InProceedings{pesce2023,
+  title = 	 {Are {G}aussian Data All You Need? {T}he Extents and Limits of Universality in High-Dimensional Generalized Linear Estimation},
+  author =       {Pesce, Luca and Krzakala, Florent and Loureiro, Bruno and Stephan, Ludovic},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {27680--27708},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/pesce23a/pesce23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/pesce23a.html},
+  abstract = 	 {In this manuscript we consider the problem of generalized linear estimation on Gaussian mixture data with labels given by a single-index model. Our first result is a sharp asymptotic expression for the test and training errors in the high-dimensional regime. Motivated by the recent stream of results on the Gaussian universality of the test and training errors in generalized linear estimation, we ask ourselves the question: "when is a single Gaussian enough to characterize the error?". Our formula allows us to give sharp answers to this question, both in the positive and negative directions. More precisely, we show that the sufficient conditions for Gaussian universality (or lack thereof) crucially depend on the alignment between the target weights and the means and covariances of the mixture clusters, which we precisely quantify. In the particular case of least-squares interpolation, we prove a strong universality property of the training error and show it follows a simple, closed-form expression. Finally, we apply our results to real datasets, clarifying some recent discussions in the literature about Gaussian universality of the errors in this context.}
+}
+
+
+
+@InProceedings{chaudhuri2023,
+  title = 	 {Why does Throwing Away Data Improve Worst-Group Error?},
+  author =       {Chaudhuri, Kamalika and Ahuja, Kartik and Arjovsky, Martin and Lopez-Paz, David},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {4144--4188},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/chaudhuri23a/chaudhuri23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/chaudhuri23a.html},
+  abstract = 	 {When facing data with imbalanced classes or groups, practitioners follow an intriguing strategy to achieve best results. They throw away examples until the classes or groups are balanced in size, and then perform empirical risk minimization on the reduced training set. This opposes common wisdom in learning theory, where the expected error is supposed to decrease as the dataset grows in size. In this work, we leverage extreme value theory to address this apparent contradiction. Our results show that the tails of the data distribution play an important role in determining the worst-group-accuracy of linear classifiers. When learning on data with heavy tails, throwing away data restores the geometric symmetry of the resulting classifier, and therefore improves its worst-group generalization.}
+}
+
+@article{SAUVOLA2000225,
+title = {Adaptive document image binarization},
+journal = {Pattern Recognition},
+volume = {33},
+number = {2},
+pages = {225-236},
+year = {2000},
+issn = {0031-3203},
+doi = {10.1016/S0031-3203(99)00055-2},
+url = {https://www.sciencedirect.com/science/article/pii/S0031320399000552},
+author = {J. Sauvola and M. Pietikäinen},
+keywords = {Adaptive binarization, Soft decision, Document segmentation, Document analysis, Document understanding},
+abstract = {A new method is presented for adaptive document image binarization, where the page is considered as a collection of subcomponents such as text, background and picture. The problems caused by noise, illumination and many source type-related degradations are addressed. Two new algorithms are applied to determine a local threshold for each pixel. The performance evaluation of the algorithm utilizes test images with ground-truth, evaluation metrics for binarization of textual and synthetic images, and a weight-based ranking procedure for the final result presentation. The proposed algorithms were tested with images including different types of document components and degradations. The results were compared with a number of known techniques in the literature. The benchmarking results show that the method adapts and performs well in each case qualitatively and quantitatively.}
+}
+
+@ARTICLE{mirza2021deep,
+
+  author={Mirza, Behroz and Haroon, Danish and Khan, Behraj and Padhani, Ali and Syed, Tahir Q.},
+
+  journal={IEEE Access}, 
+
+  title={Deep Generative Models to Counter Class Imbalance: A Model-Metric Mapping With Proportion Calibration Methodology}, 
+
+  year={2021},
+
+  volume={9},
+
+  number={},
+
+  pages={55879-55897},
+
+  keywords={Measurement;Data models;Mathematical model;Context modeling;Clustering algorithms;Sensitivity;Manifolds;Adversarial networks;anomaly detection;class imbalance;deep generative models;density estimation;generative variational auto encoders;instance hardness threshold;machine learning best practices;restricted Boltzmann machines},
+
+  doi={10.1109/ACCESS.2021.3071389},
+url={https://doi.org/10.1109/ACCESS.2021.3071389}}
+
+@InProceedings{menon2013statistical,
+  title = 	 {On the Statistical Consistency of Algorithms for Binary Classification under Class Imbalance},
+  author = 	 {Menon, Aditya and Narasimhan, Harikrishna and Agarwal, Shivani and Chawla, Sanjay},
+  booktitle = 	 {Proceedings of the 30th International Conference on Machine Learning},
+  pages = 	 {603--611},
+  year = 	 {2013},
+  editor = 	 {Dasgupta, Sanjoy and McAllester, David},
+  volume = 	 {28-3},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Atlanta, Georgia, USA},
+  month = 	 {17--19 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v28/menon13a.pdf},
+  url = 	 {https://proceedings.mlr.press/v28/menon13a.html},
+  abstract = 	 {Class imbalance situations, where one class is rare compared to the other, arise frequently in machine learning applications. It is well known that the usual misclassification error is ill-suited for measuring performance in such settings. A wide range of performance measures have been proposed for this problem, in machine learning as well as in data mining, artificial intelligence, and various applied fields. However, despite the large number of studies on this problem, little is understood about the statistical consistency of the algorithms proposed with respect to the performance measures of interest. In this paper, we study consistency with respect to one such performance measure, namely the arithmetic mean of the true positive and true negative rates (AM), and establish that some simple methods that have been used in practice, such as applying an empirically determined threshold to a suitable class probability estimate or performing an empirically balanced form of risk minimization, are in fact consistent with respect to the AM (under mild conditions on the underlying distribution). Our results employ balanced losses that have been used recently in analyses of ranking problems (Kotlowski et al., 2011) and build on recent results on consistent surrogates for cost-sensitive losses (Scott, 2012). Experimental results confirm our consistency theorems.  }
+}
+
+
+
+@InProceedings{cui2024asymptotics,
+  title = 	 {Asymptotics of feature learning in two-layer networks after one gradient-step},
+  author =       {Cui, Hugo and Pesce, Luca and Dandi, Yatin and Krzakala, Florent and Lu, Yue and Zdeborova, Lenka and Loureiro, Bruno},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+  pages = 	 {9662--9695},
+  year = 	 {2024},
+  editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume = 	 {235},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {21--27 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/cui24d/cui24d.pdf},
+  url = 	 {https://proceedings.mlr.press/v235/cui24d.html},
+  abstract = 	 {In this manuscript, we investigate the problem of how two-layer neural networks learn features from data, and improve over the kernel regime, after being trained with a single gradient descent step. Leveraging the insight from (Ba et al., 2022), we model the trained network by a spiked Random Features (sRF) model. Further building on recent progress on Gaussian universality (Dandi et al., 2023), we provide an exact asymptotic description of the generalization error of the sRF in the high-dimensional limit where the number of samples, the width, and the input dimension grow at a proportional rate. The resulting characterization for sRFs also captures closely the learning curves of the original network model. This enables us to understand how adapting to the data is crucial for the network to efficiently learn non-linear functions in the direction of the gradient - where at initialization it can only express linear functions in this regime.}
+}
+
+
+@Article{aguirrelopez2024random,
+	title={{Random features and polynomial rules}},
+	author={Fabián Aguirre-López and Silvio Franz and Mauro Pastore},
+	journal={SciPost Phys.},
+	volume={18},
+	pages={039},
+	year={2025},
+	publisher={SciPost},
+	doi={10.21468/SciPostPhys.18.1.039},
+	url={https://scipost.org/10.21468/SciPostPhys.18.1.039},
+}
+
+@article{baroffio2024resolution,
+title = {Resolution of similar patterns in a solvable model of unsupervised deep learning with structured data},
+journal = {Chaos, Solitons \& Fractals},
+volume = {182},
+pages = {114848},
+year = {2024},
+issn = {0960-0779},
+doi = {10.1016/j.chaos.2024.114848},
+url = {https://www.sciencedirect.com/science/article/pii/S0960077924004004},
+author = {Andrea Baroffio and Pietro Rotondo and Marco Gherardi},
+keywords = {Deep learning, Structured disorder, Bifurcations, Mean field},
+abstract = {Empirical data, on which deep learning relies, has substantial internal structure, yet prevailing theories often disregard this aspect. Recent research has led to the definition of structured data ensembles, aimed at equipping established theoretical frameworks with interpretable structural elements, a pursuit that aligns with the broader objectives of spin glass theory. We consider a one-parameter structured ensemble where data consists of correlated pairs of patterns, and a simplified model of unsupervised learning, whereby the internal representation of the training set is fixed at each layer. A mean field solution of the model identifies a set of layer-wise recurrence equations for the overlaps between the internal representations of an unseen input and of the training set. The bifurcation diagram of this discrete-time dynamics is topologically inequivalent to the unstructured one, and displays transitions between different phases, selected by varying the load (the number of training pairs divided by the width of the network). The network’s ability to resolve different patterns undergoes a discontinuous transition to a phase where signal processing along the layers dissipates differential information about an input’s proximity to the different patterns in a pair. A critical value of the parameter tuning the correlations separates regimes where data structure improves or hampers the identification of a given pair of patterns.}
+}
+
+@article{pastore2021critical,
+doi = {10.1088/1742-5468/ac312b},
+url = {https://dx.doi.org/10.1088/1742-5468/ac312b},
+year = {2021},
+month = {11},
+publisher = {IOP Publishing and SISSA},
+volume = {2021},
+number = {11},
+pages = {113301},
+author = {Mauro Pastore},
+title = {Critical properties of the SAT/UNSAT transitions in the classification problem of structured data},
+journal = {Journal of Statistical Mechanics: Theory and Experiment},
+abstract = {The classification problem of structured data can be solved with different strategies: a supervised learning approach, starting from a labeled training set, and an unsupervised learning one, where only the structure of the patterns in the dataset is used to find a classification compatible with it. The two strategies can be interpreted as extreme cases of a semi-supervised approach to learn multi-view data, relevant for applications. In this paper I study the critical properties of the two storage problems associated with these tasks, in the case of the linear binary classification of doublets of points sharing the same label, within replica theory. While the first approach presents an SAT/UNSAT transition in a (marginally) stable replica-symmetric phase, in the second one the satisfiability line lies in a full replica-symmetry-broken phase. A similar behavior in the problem of learning with a margin is also pointed out.}
+}
+
+
+@InProceedings{gerace2020generalisation,
+  title = 	 {Generalisation error in learning with random features and the hidden manifold model},
+  author =       {Gerace, Federica and Loureiro, Bruno and Krzakala, Florent and Mezard, Marc and Zdeborova, Lenka},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {3452--3462},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--18 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v119/gerace20a/gerace20a.pdf},
+  url = 	 {https://proceedings.mlr.press/v119/gerace20a.html},
+  abstract = 	 {We study generalised linear regression and classification for a synthetically generated dataset encompassing different problems of interest, such as learning with random features, neural networks in the lazy training regime, and the hidden manifold model. We consider the high-dimensional regime and using the replica method from statistical physics, we provide a closed-form expression for the asymptotic generalisation performance in these problems, valid in both the under- and over-parametrised regimes and for a broad choice of generalised linear model loss functions. In particular, we show how to obtain analytically the so-called double descent behaviour for logistic regression with a peak at the interpolation threshold, we illustrate the superiority of orthogonal against random Gaussian projections in learning with random features, and discuss the role played by correlations in the data generated by the hidden manifold model. Beyond the interest in these particular problems, the theoretical formalism introduced in this manuscript provides a path to further extensions to more complex tasks.}
+}
+
+
+@InProceedings{bordelon2020spectrum,
+  title = 	 {Spectrum Dependent Learning Curves in Kernel Regression and Wide Neural Networks},
+  author =       {Bordelon, Blake and Canatar, Abdulkadir and Pehlevan, Cengiz},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {1024--1034},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--18 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v119/bordelon20a/bordelon20a.pdf},
+  url = 	 {https://proceedings.mlr.press/v119/bordelon20a.html},
+  abstract = 	 {We derive analytical expressions for the generalization performance of kernel regression as a function of the number of training samples using theoretical methods from Gaussian processes and statistical physics. Our expressions apply to wide neural networks due to an equivalence between training them and kernel regression with the Neural Tangent Kernel (NTK). By computing the decomposition of the total generalization error due to different spectral components of the kernel, we identify a new spectral principle: as the size of the training set grows, kernel machines and neural networks fit successively higher spectral modes of the target function. When data are sampled from a uniform distribution on a high-dimensional hypersphere, dot product kernels, including NTK, exhibit learning stages where different frequency modes of the target function are learned. We verify our theory with simulations on synthetic data and MNIST dataset.}
+}
+
+@inproceedings{dandi2023universality,
+ author = {Dandi, Yatin and Stephan, Ludovic and Krzakala, Florent and Loureiro, Bruno and Zdeborov\'{a}, Lenka},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+ pages = {54754--54768},
+ publisher = {Curran Associates, Inc.},
+ title = {Universality laws for {G}aussian mixtures in generalized linear models},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/abccb8a90b30d45b948360ba41f5a20f-Paper-Conference.pdf},
+ volume = {36},
+ year = {2023}
+}

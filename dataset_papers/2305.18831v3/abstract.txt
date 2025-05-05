@@ -1,0 +1,15 @@
+In many machine learning applications on signals and biomedical data,
+especially electroencephalogram (EEG), one major challenge is the variability
+of the data across subjects, sessions, and hardware devices. In this work, we
+propose a new method called Convolutional Monge Mapping Normalization (CMMN),
+which consists in filtering the signals in order to adapt their power spectrum
+density (PSD) to a Wasserstein barycenter estimated on training data. CMMN
+relies on novel closed-form solutions for optimal transport mappings and
+barycenters and provides individual test time adaptation to new data without
+needing to retrain a prediction model. Numerical experiments on sleep EEG data
+show that CMMN leads to significant and consistent performance gains
+independent from the neural network architecture when adapting between
+subjects, sessions, and even datasets collected with different hardware.
+Notably our performance gain is on par with much more numerically intensive
+Domain Adaptation (DA) methods and can be used in conjunction with those for
+even better performances.

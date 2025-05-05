@@ -1,0 +1,725 @@
+@inproceedings{schenck2018spnets,
+  title={SPNets: Differentiable Fluid Dynamics for Deep Neural Networks},
+  author={Schenck, Connor and Fox, Dieter},
+  booktitle={Conference on Robot Learning},
+  pages={317--335},
+  year={2018}
+} %  implement Position Based Fluids (PBF) with a deep neural network (SPNets), to exactly replicate the PBF algorithm; evaluate SPNets on the task of learning, or estimating, some of the λ∗ fluid parameters from data. 
+% 用网络实现了一个position based fluid，但可学习的参数是fluid的一些参数；特定于fluid
+
+
+@inproceedings{battaglia2016interaction, 
+  title={Interaction networks for learning about objects, relations and physics},
+  author={Battaglia, Peter and Pascanu, Razvan and Lai, Matthew and Rezende, Danilo Jimenez and others},
+  booktitle={Advances in neural information processing systems},
+  pages={4502--4510},
+  year={2016}
+} % interactio net
+% battaglia这个作者出现了好多好多次啊...
+
+@article{chang2016compositional, 
+  title={A compositional object-based approach to learning physical dynamics},
+  author={Chang, Michael B and Ullman, Tomer and Torralba, Antonio and Tenenbaum, Joshua B},
+  journal={International Conference on Learning Representations},
+  year={2017}
+} % https://openreview.net/forum?id=Bkab5dqxe
+
+@inproceedings{gilmer2017neural,
+  title={Neural message passing for quantum chemistry},
+  author={Gilmer, Justin and Schoenholz, Samuel S and Riley, Patrick F and Vinyals, Oriol and Dahl, George E},
+  booktitle={Proceedings of the 34th International Conference on Machine Learning-Volume 70},
+  pages={1263--1272},
+  year={2017},
+  organization={JMLR. org}
+} % message passing on graph... 但是是quantum chemistry的...但是看到了好几个引用它的....
+
+@inproceedings{li2019propagation,
+  title={Propagation networks for model-based control under partial observation},
+  author={Li, Yunzhu and Wu, Jiajun and Zhu, Jun-Yan and Tenenbaum, Joshua B and Torralba, Antonio and Tedrake, Russ},
+  booktitle={2019 International Conference on Robotics and Automation (ICRA)},
+  pages={1205--1211},
+  year={2019},
+  organization={IEEE}
+} % multi-step message passing, NN learns to decide whether an effect should be propagated; 
+
+@inproceedings{mrowca2018flexible,
+  title={Flexible neural representation for physics prediction},
+  author={Mrowca, Damian and Zhuang, Chengxu and Wang, Elias and Haber, Nick and Fei-Fei, Li F and Tenenbaum, Josh and Yamins, Daniel L},
+  booktitle={Advances in neural information processing systems},
+  pages={8799--8810},
+  year={2018}
+} % hierarchical particle-based object representation; hierarchical GCN 
+
+
+@inproceedings{
+li2018learning,
+title={Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids},
+author={Yunzhu Li and Jiajun Wu and Russ Tedrake and Joshua B. Tenenbaum and Antonio Torralba},
+booktitle={International Conference on Learning Representations},
+year={2019},
+url={https://openreview.net/forum?id=rJgbSn09Ym},
+}
+
+% https://openreview.net/forum?id=rJgbSn09Ym
+@inproceedings{sanchez2018graph,
+  title={Graph Networks as Learnable Physics Engines for Inference and Control},
+  author={Sanchez-Gonzalez, Alvaro and Heess, Nicolas and Springenberg, Jost Tobias and Merel, Josh and Riedmiller, Martin and Hadsell, Raia and Battaglia, Peter},
+  booktitle={International Conference on Machine Learning},
+  pages={4470--4479},
+  year={2018}
+}
+% arXiv preprint arXiv:1806.01242
+
+
+@article{battaglia2018relational,
+  title={Relational inductive biases, deep learning, and graph networks},
+  author={Battaglia, Peter W and Hamrick, Jessica B and Bapst, Victor and Sanchez-Gonzalez, Alvaro and Zambaldi, Vinicius and Malinowski, Mateusz and Tacchetti, Andrea and Raposo, David and Santoro, Adam and Faulkner, Ryan and others},
+  journal={arXiv preprint arXiv:1806.01261},
+  year={2018}
+} % 好长并且好多作者...
+
+
+% ?
+@article{seo2019differentiable,
+  title={Differentiable physics-informed graph networks},
+  author={Seo, Sungyong and Liu, Yan},
+  journal={arXiv preprint arXiv:1902.02950},
+  year={2019}
+}
+
+@article{sanchez2020learning,
+  title={Learning to simulate complex physics with graph networks},
+  author={Sanchez-Gonzalez, Alvaro and Godwin, Jonathan and Pfaff, Tobias and Ying, Rex and Leskovec, Jure and Battaglia, Peter W},
+  journal={arXiv preprint arXiv:2002.09405},
+  year={2020}
+} % represents the state of a physical system with particles, expressed as nodes in a graph, and computes dynamics via learned message-passing
+
+
+%% ==========================================
+% 只做一种场景的 
+@article{wang20183d,
+  title={3d-physnet: Learning the intuitive physics of non-rigid object deformations},
+  author={Wang, Zhihua and Rosa, Stefano and Yang, Bo and Wang, Sen and Trigoni, Niki and Markham, Andrew},
+  journal={arXiv preprint arXiv:1805.00328},
+  year={2018}
+} %  encode the physical properties of the material and the applied force; predict how a three-dimensional solid will deform under an applied force using intuitive physics modelling; GAN; generator maps the undistorted 3-D model into a deformed 3-D model, conditioned on the supplied parameters; 只用于non-rigid object deformations这一种场景...
+@inproceedings{rempe2019learning,
+  title={Learning Generalizable Final-State Dynamics of 3D Rigid Objects},
+  author={Rempe, Davis and Sridhar, Srinath and Wang, He and Guibas, Leonidas},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops},
+  pages={17--20},
+  year={2019}
+} % represent object shape as a 3D point cloud; predicting the dynamics of 3D rigid objects; 特定于rigid body
+@inproceedings{byravan2017se3,
+  title={Se3-nets: Learning rigid body motion using deep neural networks},
+  author={Byravan, Arunkumar and Fox, Dieter},
+  booktitle={2017 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={173--180},
+  year={2017},
+  organization={IEEE}
+} % model and learn rigid body motion from raw point cloud data; depth images/action vectors/point wise data associations -> segment objects and predict; 只做rigid body
+@article{zhang2020fluidsnet,
+  title={FluidsNet: End-to-end learning for Lagrangian fluid simulation},
+  author={Zhang, Yalan and Ban, Xiaojuan and Du, Feilong and Di, Wu},
+  journal={Expert Systems with Applications},
+  pages={113410},
+  year={2020},
+  publisher={Elsevier}
+} % 只做fluid，end-to-end直接学了个fluid...directly operate on Lagrangian fluid simulation data and use machine learned features. 
+@inproceedings{wiewel2019latent,
+  title={Latent space physics: Towards learning the temporal evolution of fluid flow},
+  author={Wiewel, Steffen and Becher, Moritz and Thuerey, Nils},
+  booktitle={Computer Graphics Forum},
+  volume={38},
+  number={2},
+  pages={71--82},
+  year={2019},
+  organization={Wiley Online Library}
+} % 只做fluid; encode inputs to latent representations -> LSTM prediction
+%% ==========================================
+
+
+@inproceedings{silver2017predictron,
+  title={The predictron: End-to-end learning and planning},
+  author={Silver, David and van Hasselt, Hado and Hessel, Matteo and Schaul, Tom and Guez, Arthur and Harley, Tim and Dulac-Arnold, Gabriel and Reichert, David and Rabinowitz, Neil and Barreto, Andre and others},
+  booktitle={Proceedings of the 34th International Conference on Machine Learning-Volume 70},
+  pages={3191--3199},
+  year={2017},
+  organization={JMLR. org}
+} %% https://dl.acm.org/doi/pdf/10.5555/3305890.3306011
+
+
+@inproceedings{de2018end,
+  title={End-to-end differentiable physics for learning and control},
+  author={de Avila Belbute-Peres, Filipe and Smith, Kevin and Allen, Kelsey and Tenenbaum, Josh and Kolter, J Zico},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={7178--7189},
+  year={2018}
+} % learn physical parameters from data...
+
+%% ==========================================
+% 主要是用于control的differentiable physics
+@inproceedings{todorov2012mujoco,
+  title={Mujoco: A physics engine for model-based control},
+  author={Todorov, Emanuel and Erez, Tom and Tassa, Yuval},
+  booktitle={2012 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  pages={5026--5033},
+  year={2012},
+  organization={IEEE}
+}
+@inproceedings{toussaint2018differentiable,
+  title={Differentiable Physics and Stable Modes for Tool-Use and Manipulation Planning.},
+  author={Toussaint, Marc and Allen, Kelsey and Smith, Kevin A and Tenenbaum, Joshua B},
+  booktitle={Robotics: Science and Systems},
+  year={2018}
+}
+@article{degrave2019differentiable,
+  title={A differentiable physics engine for deep learning in robotics},
+  author={Degrave, Jonas and Hermans, Michiel and Dambre, Joni and Wyffels, Francis},
+  journal={Frontiers in neurorobotics},
+  volume={13},
+  pages={6},
+  year={2019},
+  publisher={Frontiers}
+}
+%% ==========================================
+
+
+
+@article{kipf2018neural,
+  title={Neural relational inference for interacting systems},
+  author={Kipf, Thomas and Fetaya, Ethan and Wang, Kuan-Chieh and Welling, Max and Zemel, Richard},
+  journal={International Conference on Learning Representations},
+  year={2017}
+} % https://openreview.net/forum?id=Bkab5dqxe&noteId=SkhyaywUe
+
+% ?
+@article{cranmer2019learning,
+  title={Learning Symbolic Physics with Graph Networks},
+  author={Cranmer, Miles D and Xu, Rui and Battaglia, Peter and Ho, Shirley},
+  journal={arXiv preprint arXiv:1909.05862},
+  year={2019}
+} 
+
+
+%% ==========================================
+% on 2d image/video
+
+@inproceedings{greff2017neural,
+  title={Neural expectation maximization},
+  author={Greff, Klaus and Van Steenkiste, Sjoerd and Schmidhuber, J{\"u}rgen},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={6691--6701},
+  year={2017}
+} % 多个物体混合在一起的情况... dealing with multi objects by learning how to group and represent individual entities; next-step prediction with multiple objects; 2d images. "So far, these methods have mostly focused on the single object case whereas, for real world tasks such as reasoning and physical interaction, it is often necessary to identify and manipulate multiple entities and their relationships."
+
+
+@article{ehrhardt2019taking,
+  title={Taking visual motion prediction to new heightfields},
+  author={Ehrhardt, Sebastien and Monszpart, Aron and Mitra, Niloy J and Vedaldi, Andrea},
+  journal={Computer Vision and Image Understanding},
+  volume={181},
+  pages={14--25},
+  year={2019},
+  publisher={Elsevier}
+} 
+
+@article{van2018relational,
+  title={Relational neural expectation maximization: Unsupervised discovery of objects and their interactions},
+  author={Van Steenkiste, Sjoerd and Chang, Michael and Greff, Klaus and Schmidhuber, J{\"u}rgen},
+  journal={arXiv preprint arXiv:1802.10353},
+  year={2018}
+} % from raw visual images 
+
+@inproceedings{wu2017learning,
+  title={Learning to see physics via visual de-animation},
+  author={Wu, Jiajun and Lu, Erika and Kohli, Pushmeet and Freeman, Bill and Tenenbaum, Josh},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={153--164},
+  year={2017}
+}
+% 好多都是在image上做的啊...是我搜的不对么。。。
+
+
+@article{xu2019unsupervised,
+  title={Unsupervised discovery of parts, structure, and dynamics},
+  author={Xu, Zhenjia and Liu, Zhijian and Sun, Chen and Murphy, Kevin and Freeman, William T and Tenenbaum, Joshua B and Wu, Jiajun},
+  journal={arXiv preprint arXiv:1903.05136},
+  year={2019}
+} % video; a hierarchical, disentangled object representation 
+
+@article{janner2018reasoning,
+  title={Reasoning about physical interactions with object-oriented prediction and planning},
+  author={Janner, Michael and Levine, Sergey and Freeman, William T and Tenenbaum, Joshua B and Finn, Chelsea and Wu, Jiajun},
+  journal={arXiv preprint arXiv:1812.10972},
+  year={2018}
+} % input -> object representations -> a pairwise physics interaction function to predict -> a rendering function to map objects back to pixels; 2d pixels
+
+@inproceedings{santoro2017simple,
+  title={A simple neural network module for relational reasoning},
+  author={Santoro, Adam and Raposo, David and Barrett, David G and Malinowski, Mateusz and Pascanu, Razvan and Battaglia, Peter and Lillicrap, Timothy},
+  booktitle={Advances in neural information processing systems},
+  pages={4967--4976},
+  year={2017}
+} % image of objects -> answer questions about objects relations
+
+@article{raposo2017discovering,
+  title={Discovering objects and their relations from entangled scene representations},
+  author={Raposo, David and Santoro, Adam and Barrett, David and Pascanu, Razvan and Lillicrap, Timothy and Battaglia, Peter},
+  journal={arXiv preprint arXiv:1702.05068},
+  year={2017}
+} % reasoning about object-relations; operate on pairs of objects
+
+
+@inproceedings{hoshen2017vain,
+  title={Vain: Attentional multi-agent predictive modeling},
+  author={Hoshen, Yedid},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={2701--2711},
+  year={2017}
+} % derived from IN... attentional architecture for multi-agent predictive modeling that scales linearly with the number of agents; multi-agent prediction domains: chess and soccer
+
+
+@article{shanahan2019explicitly,
+  title={An explicitly relational neural network architecture},
+  author={Shanahan, Murray and Nikiforou, Kyriacos and Creswell, Antonia and Kaplanis, Christos and Barrett, David and Garnelo, Marta},
+  journal={arXiv preprint arXiv:1905.10307},
+  year={2019}
+} %  form propositional representations with an explicitly relational structure from raw pixel data.
+
+
+@inproceedings{watters2017visual,
+  title={Visual interaction networks: Learning a physics simulator from video},
+  author={Watters, Nicholas and Zoran, Daniel and Weber, Theophane and Battaglia, Peter and Pascanu, Razvan and Tacchetti, Andrea},
+  booktitle={Advances in neural information processing systems},
+  pages={4539--4547},
+  year={2017}
+}
+@article{fragkiadaki2015learning,
+  title={Learning visual predictive models of physics for playing billiards},
+  author={Fragkiadaki, Katerina and Agrawal, Pulkit and Levine, Sergey and Malik, Jitendra},
+  journal={arXiv preprint arXiv:1511.07404},
+  year={2015}
+}
+@inproceedings{agrawal2016learning,
+  title={Learning to poke by poking: Experiential learning of intuitive physics},
+  author={Agrawal, Pulkit and Nair, Ashvin V and Abbeel, Pieter and Malik, Jitendra and Levine, Sergey},
+  booktitle={Advances in neural information processing systems},
+  pages={5074--5082},
+  year={2016}
+}
+@inproceedings{finn2016unsupervised,
+  title={Unsupervised learning for physical interaction through video prediction},
+  author={Finn, Chelsea and Goodfellow, Ian and Levine, Sergey},
+  booktitle={Advances in neural information processing systems},
+  pages={64--72},
+  year={2016}
+}
+@inproceedings{haber2018learning,
+  title={Learning to play with intrinsically-motivated, self-aware agents},
+  author={Haber, Nick and Mrowca, Damian and Wang, Stephanie and Fei-Fei, Li F and Yamins, Daniel L},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={8388--8399},
+  year={2018}
+}
+@article{lerer2016learning,
+  title={Learning physical intuition of block towers by example},
+  author={Lerer, Adam and Gross, Sam and Fergus, Rob},
+  journal={arXiv preprint arXiv:1603.01312},
+  year={2016}
+}
+@article{li2016fall,
+  title={To fall or not to fall: A visual approach to physical stability prediction},
+  author={Li, Wenbin and Azimi, Seyedmajid and Leonardis, Ale{\v{s}} and Fritz, Mario},
+  journal={arXiv preprint arXiv:1604.00066},
+  year={2016}
+}
+@inproceedings{mottaghi2016newtonian,
+  title={Newtonian scene understanding: Unfolding the dynamics of objects in static images},
+  author={Mottaghi, Roozbeh and Bagherinezhad, Hessam and Rastegari, Mohammad and Farhadi, Ali},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={3521--3529},
+  year={2016}
+}
+
+%% ==========================================
+
+
+%% ==========================================
+% position-based dynamics
+@article{muller2007position,
+  title={Position based dynamics},
+  author={M{\"u}ller, Matthias and Heidelberger, Bruno and Hennix, Marcus and Ratcliff, John},
+  journal={Journal of Visual Communication and Image Representation},
+  volume={18},
+  number={2},
+  pages={109--118},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@article{macklin2014unified,
+  title={Unified particle physics for real-time applications},
+  author={Macklin, Miles and M{\"u}ller, Matthias and Chentanez, Nuttapong and Kim, Tae-Yong},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={33},
+  number={4},
+  pages={1--12},
+  year={2014},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{bender2015position,
+  title={Position-Based Simulation Methods in Computer Graphics.},
+  author={Bender, Jan and M{\"u}ller, Matthias and Macklin, Miles},
+  booktitle={Eurographics (tutorials)},
+  year={2015}
+}
+
+@inproceedings{bender2014survey,
+  title={A survey on position-based simulation methods in computer graphics},
+  author={Bender, Jan and M{\"u}ller, Matthias and Otaduy, Miguel A and Teschner, Matthias and Macklin, Miles},
+  booktitle={Computer graphics forum},
+  volume={33},
+  number={6},
+  pages={228--251},
+  year={2014},
+  organization={Wiley Online Library}
+}
+
+@article{macklin2013position,
+  title={Position based fluids},
+  author={Macklin, Miles and M{\"u}ller, Matthias},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={32},
+  number={4},
+  pages={1--12},
+  year={2013},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{guendelman2003nonconvex,
+  title={Nonconvex rigid bodies with stacking},
+  author={Guendelman, Eran and Bridson, Robert and Fedkiw, Ronald},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={22},
+  number={3},
+  pages={871--878},
+  year={2003},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{baraff1998large,
+  title={Large steps in cloth simulation},
+  author={Baraff, David and Witkin, Andrew},
+  booktitle={Proceedings of the 25th annual conference on Computer graphics and interactive techniques},
+  pages={43--54},
+  year={1998}
+}
+
+@incollection{selle2008mass,
+  title={A mass spring model for hair simulation},
+  author={Selle, Andrew and Lentine, Michael and Fedkiw, Ronald},
+  booktitle={ACM SIGGRAPH 2008 papers},
+  pages={1--11},
+  year={2008}
+}
+
+@article{muller2005meshless,
+  title={Meshless deformations based on shape matching},
+  author={M{\"u}ller, Matthias and Heidelberger, Bruno and Teschner, Matthias and Gross, Markus},
+  journal={ACM transactions on graphics (TOG)},
+  volume={24},
+  number={3},
+  pages={471--478},
+  year={2005},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{baraff1997introduction,
+  title={An introduction to physically based modeling: rigid body simulation II—nonpenetration constraints},
+  author={Baraff, David},
+  journal={SIGGRAPH course notes},
+  pages={D31--D68},
+  year={1997},
+  publisher={Association for Computing Machinery}
+} % articulated 
+@article{weinstein2006dynamic,
+  title={Dynamic simulation of articulated rigid bodies with contact and collision},
+  author={Weinstein, Rachel and Teran, Joseph and Fedkiw, Ronald},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  volume={12},
+  number={3},
+  pages={365--374},
+  year={2006},
+  publisher={IEEE}
+}% articulated
+
+@incollection{goldenthal2007efficient,
+  title={Efficient simulation of inextensible cloth},
+  author={Goldenthal, Rony and Harmon, David and Fattal, Raanan and Bercovier, Michel and Grinspun, Eitan},
+  booktitle={ACM SIGGRAPH 2007 papers},
+  pages={49--es},
+  year={2007}
+} % inextensible cloth
+
+@inproceedings{bridson2002robust,
+  title={Robust treatment of collisions, contact and friction for cloth animation},
+  author={Bridson, Robert and Fedkiw, Ronald and Anderson, John},
+  booktitle={Proceedings of the 29th annual conference on Computer graphics and interactive techniques},
+  pages={594--603},
+  year={2002}
+} % contact
+
+
+
+%% ==========================================
+%% 只看了标题... 
+%% http://papers.nips.cc/paper/6721-linearly-constrained-gaussian-processes
+%% https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=995659
+%% https://ieeexplore.ieee.org/abstract/document/6064898?casa_token=bn8fx8eHACsAAAAA:KZfrS93cHakSAmpbcX3sA3y3K4EKB6Tx3BMAAlL4j04lvEv7TixYWoBsjLF_gczfFfTyjlKU01U
+%% https://www.sciencedirect.com/science/article/pii/S0893608013002712?casa_token=vk9bCZQkrlUAAAAA:C0Px0KEQSxmx62GB6ESRLir1CVpnbYv769y81gvxyWuj4p2tDS8fnasvy7og85ka_cp581LFqR4
+%% https://ieeexplore.ieee.org/abstract/document/6680760?casa_token=cgB67RyP_EAAAAAA:mFoxM3QfAyGQR9bzDOamPPE1tWAXdjl_57letR8DQyeGGjsQNHUQbRd7usJ5xPilD_0I7RqfU_o
+%% ==========================================
+@inproceedings{amos2017optnet,
+  title={Optnet: Differentiable optimization as a layer in neural networks},
+  author={Amos, Brandon and Kolter, J Zico},
+  booktitle={Proceedings of the 34th International Conference on Machine Learning-Volume 70},
+  pages={136--145},
+  year={2017},
+  organization={JMLR. org}
+}
+%% ==========================================
+
+
+%% ==========================================
+
+@article{wang1999lagrangian,
+  title={A Lagrangian network for kinematic control of redundant robot manipulators},
+  author={Wang, Jun and Hu, Qingni and Jiang, Danchi},
+  journal={IEEE Transactions on Neural Networks},
+  volume={10},
+  number={5},
+  pages={1123--1132},
+  year={1999},
+  publisher={IEEE}
+}
+
+@article{modellen2018deep,
+  title={Deep Learning of Inverse Dynamic Models},
+  author={Modellen, Deep Learning von Inversen Dynamik},
+  year={2018}
+}
+
+@inproceedings{
+lutter2018deep,
+title={Deep Lagrangian Networks: Using Physics as Model Prior for Deep Learning},
+author={Michael Lutter and Christian Ritter and Jan Peters},
+booktitle={International Conference on Learning Representations},
+year={2019},
+url={https://openreview.net/forum?id=BklHpjCqKm},
+}
+
+@inproceedings{cranmer2020lagrangian,
+  title={Lagrangian Neural Networks},
+  author={Cranmer, Miles and Greydanus, Sam and Hoyer, Stephan and Battaglia, Peter and Spergel, David and Ho, Shirley},
+  booktitle={ICLR 2020 Workshop on Integration of Deep Neural Models and Differential Equations},
+  year={2020}
+}
+
+
+@inproceedings{greydanus2019hamiltonian,
+  title={Hamiltonian neural networks},
+  author={Greydanus, Samuel and Dzamba, Misko and Yosinski, Jason},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={15353--15363},
+  year={2019}
+}
+
+@inproceedings{Chen2019symplectic,
+  author =  {Z. Chen and J. Zhang and M. Arjovsky and L. Bottou},
+  title={{Symplectic recurrent neural networks}},
+  booktitle={International Conference on Learning Representations},
+  year={2020}
+}
+
+@Article{Jin2020sympnets,
+  author =  {Jin, P. and Zhu, A. and Karniadakis, G. E. and Tang, Y.},
+  title={{Symplectic networks: intrinsic structure-preserving networks for identifying Hamiltonian systems}},
+  journal = {arXiv:2001.03750 },
+  year={2020}
+}
+
+@misc{tong2020symplectic,
+    title={Symplectic Neural Networks in Taylor Series Form for Hamiltonian Systems},
+    author={Yunjin Tong and Shiying Xiong and Xingzhe He and Guanghan Pan and Bo Zhu},
+    year={2020},
+    eprint={2005.04986},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@inproceedings{
+mohan2020embedding,
+title={Embedding Hard Physical Constraints in Convolutional Neural Networks for 3D Turbulence},
+author={Arvind T. Mohan and Nicholas Lubbers and Daniel Livescu and Michael Chertkov},
+booktitle={ICLR 2020 Workshop on Integration of Deep Neural Models and Differential Equations},
+year={2020},
+url={https://openreview.net/forum?id=IaXBtMNFaa}
+}
+
+@article{ling2016Galilean,
+  title={Machine learning strategies for systems with invariance properties},
+  author={Ling, Julia and Jones, Reese and Templeton, Jeremy},
+  journal={J. Comput. Phys.},
+  volume={318},
+  pages={22--35},
+  year={2016},
+  publisher={Elsevier}
+}
+
+%% differential simulation
+%% ==========================================
+@inproceedings{hu2019chainqueen,
+  title={ChainQueen: A real-time differentiable physical simulator for soft robotics},
+  author={Hu, Yuanming and Liu, Jiancheng and Spielberg, Andrew and Tenenbaum, Joshua B and Freeman, William T and Wu, Jiajun and Rus, Daniela and Matusik, Wojciech},
+  booktitle={2019 International Conference on Robotics and Automation (ICRA)},
+  pages={6265--6271},
+  year={2019},
+  organization={IEEE}
+}
+
+@article{holl2020learning,
+  title={Learning to Control PDEs with Differentiable Physics},
+  author={Holl, Philipp and Koltun, Vladlen and Thuerey, Nils},
+  journal={arXiv preprint arXiv:2001.07457},
+  year={2020}
+}
+
+@inproceedings{liang2019differentiable,
+  title={Differentiable Cloth Simulation for Inverse Problems},
+  author={Liang, Junbang and Lin, Ming and Koltun, Vladlen},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={771--780},
+  year={2019}
+}
+
+@article{hwangbo2019learning,
+  title={Learning agile and dynamic motor skills for legged robots},
+  author={Hwangbo, Jemin and Lee, Joonho and Dosovitskiy, Alexey and Bellicoso, Dario and Tsounis, Vassilios and Koltun, Vladlen and Hutter, Marco},
+  journal={Science Robotics},
+  volume={4},
+  number={26},
+  pages={eaau5872},
+  year={2019},
+  publisher={Science Robotics}
+}
+
+%% MIT branch
+%% ==========================================
+@inproceedings{
+Yi*2020CLEVRER:,
+title={CLEVRER: Collision Events for Video Representation and Reasoning},
+author={Kexin Yi* and Chuang Gan* and Yunzhu Li and Pushmeet Kohli and Jiajun Wu and Antonio Torralba and Joshua B. Tenenbaum},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=HkxYzANYDB}
+}
+
+@inproceedings{
+Li2020Learning,
+title={Learning Compositional Koopman Operators for Model-Based Control},
+author={Yunzhu Li and Hao He and Jiajun Wu and Dina Katabi and Antonio Torralba},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=H1ldzA4tPr}
+}
+
+@misc{li2020visual,
+    title={Visual Grounding of Learned Physical Models},
+    author={Yunzhu Li and Toru Lin and Kexin Yi and Daniel Bear and Daniel L. K. Yamins and Jiajun Wu and Joshua B. Tenenbaum and Antonio Torralba},
+    year={2020},
+    eprint={2004.13664},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@inproceedings{ajay2018augmenting,
+  title={Augmenting physical simulators with stochastic neural networks: Case study of planar pushing and bouncing},
+  author={Ajay, Anurag and Wu, Jiajun and Fazeli, Nima and Bauza, Maria and Kaelbling, Leslie P and Tenenbaum, Joshua B and Rodriguez, Alberto},
+  booktitle={2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={3066--3073},
+  year={2018},
+  organization={IEEE}
+}
+
+@inproceedings{xue2016visual,
+  title={Visual dynamics: Probabilistic future frame synthesis via cross convolutional networks},
+  author={Xue, Tianfan and Wu, Jiajun and Bouman, Katherine and Freeman, Bill},
+  booktitle={Advances in neural information processing systems},
+  pages={91--99},
+  year={2016}
+}
+
+@article{PhysRevAccelBeams.23.044601,
+  title = {Machine learning for orders of magnitude speedup in multiobjective optimization of particle accelerator systems},
+  author = {Edelen, Auralee and Neveu, Nicole and Frey, Matthias and Huber, Yannick and Mayes, Christopher and Adelmann, Andreas},
+  journal = {Phys. Rev. Accel. Beams},
+  volume = {23},
+  issue = {4},
+  pages = {044601},
+  numpages = {23},
+  year = {2020},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevAccelBeams.23.044601},
+  url = {https://link.aps.org/doi/10.1103/PhysRevAccelBeams.23.044601}
+}
+
+
+%% Stanford branch
+%% ====================================
+@inproceedings{edelen2019machine,
+  title={Machine learning models for optimization and control of x-ray free electron lasers},
+  author={Edelen, Auralee and Neveu, Nicole},
+  booktitle={InNeurIPS Machine Learning for the Physical Sciences Workshop 2019.},
+}
+
+@article{rezende2019equivariant,
+  title={Equivariant Hamiltonian Flows},
+  author={Rezende, Danilo Jimenez and Racani{\`e}re, S{\'e}bastien and Higgins, Irina and Toth, Peter},
+  journal={arXiv preprint arXiv:1909.13739},
+  year={2019}
+}
+
+@article{toth2019hamiltonian,
+  title={Hamiltonian generative networks},
+  author={Toth, Peter and Rezende, Danilo Jimenez and Jaegle, Andrew and Racani{\`e}re, S{\'e}bastien and Botev, Aleksandar and Higgins, Irina},
+  journal={arXiv preprint arXiv:1909.13789},
+  year={2019}
+}
+
+@article{Adam2014,
+  title={Adam: A method for stochastic optimization},
+  author={D. P. Kingma and J. Ba},
+  journal={arXiv:1412.6980},
+  year={2014}
+}
+
+@article{sanchez2019hamiltonian,
+  title={Hamiltonian graph networks with ode integrators},
+  author={Sanchez-Gonzalez, Alvaro and Bapst, Victor and Cranmer, Kyle and Battaglia, Peter},
+  journal={arXiv preprint arXiv:1909.12790},
+  year={2019}
+}
+
+@article{xia2002projection,
+  title={A projection neural network and its application to constrained optimization problems},
+  author={Xia, Youshen and Leung, Henry and Wang, Jun},
+  journal={IEEE Transactions on Circuits and Systems I: Fundamental Theory and Applications},
+  volume={49},
+  number={4},
+  pages={447--458},
+  year={2002},
+  publisher={IEEE}
+}

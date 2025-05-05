@@ -1,0 +1,18 @@
+Dealing with severe class imbalance poses a major challenge for real-world
+applications, especially when the accurate classification and generalization of
+minority classes is of primary interest. In computer vision, learning from long
+tailed datasets is a recurring theme, especially for natural image datasets.
+While existing solutions mostly appeal to sampling or weighting adjustments to
+alleviate the pathological imbalance, or imposing inductive bias to prioritize
+non-spurious associations, we take novel perspectives to promote sample
+efficiency and model generalization based on the invariance principles of
+causality. Our proposal posits a meta-distributional scenario, where the data
+generating mechanism is invariant across the label-conditional feature
+distributions. Such causal assumption enables efficient knowledge transfer from
+the dominant classes to their under-represented counterparts, even if the
+respective feature distributions show apparent disparities. This allows us to
+leverage a causal data inflation procedure to enlarge the representation of
+minority classes. Our development is orthogonal to the existing extreme
+classification techniques thus can be seamlessly integrated. The utility of our
+proposal is validated with an extensive set of synthetic and real-world
+computer vision tasks against SOTA solutions.

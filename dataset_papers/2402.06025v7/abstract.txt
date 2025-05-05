@@ -1,0 +1,11 @@
+We give a model of how to infer natural language rules by doing experiments.
+The model integrates Large Language Models (LLMs) with Monte Carlo algorithms
+for probabilistic inference, interleaving online belief updates with experiment
+design under information-theoretic criteria. We conduct a human-model
+comparison on a Zendo-style task, finding that a critical ingredient for
+modeling the human data is to assume that humans also consider fuzzy,
+probabilistic rules, in addition to assuming that humans perform
+approximately-Bayesian belief updates. We also compare with recent algorithms
+for using LLMs to generate and revise hypotheses, finding that our online
+inference method yields higher accuracy at recovering the true underlying rule,
+and provides better support for designing optimal experiments.

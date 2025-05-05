@@ -1,0 +1,494 @@
+@article{fiete2006gradient,
+  title={Gradient learning in spiking neural networks by dynamic perturbation of conductances},
+  author={Fiete, Ila R and Seung, H Sebastian},
+  journal={Physical review letters},
+  volume={97},
+  number={4},
+  pages={048104},
+  year={2006},
+  publisher={APS}
+}
+
+@article{fiete2007model,
+  title={Model of birdsong learning based on gradient estimation by dynamic perturbation of neural conductances},
+  author={Fiete, Ila R and Fee, Michale S and Seung, H Sebastian},
+  journal={Journal of neurophysiology},
+  volume={98},
+  number={4},
+  pages={2038--2057},
+  year={2007},
+  publisher={American Physiological Society}
+}
+
+@article{kingma2014adam,
+  title={Adam: A method for stochastic optimization},
+  author={Kingma, Diederik P and Ba, Jimmy},
+  journal={arXiv preprint arXiv:1412.6980},
+  year={2014}
+}
+
+@article{lillicrap_random_2016,
+	title = {Random synaptic feedback weights support error backpropagation for deep learning},
+	volume = {7},
+	copyright = {2016 Nature Publishing Group},
+	issn = {2041-1723},
+	url = {https://www.nature.com/articles/ncomms13276},
+	doi = {10.1038/ncomms13276},
+	abstract = {The brain processes information through multiple layers of neurons. This deep architecture is representationally powerful, but complicates learning because it is difficult to identify the responsible neurons when a mistake is made. In machine learning, the backpropagation algorithm assigns blame by multiplying error signals with all the synaptic weights on each neuron’s axon and further downstream. However, this involves a precise, symmetric backward connectivity pattern, which is thought to be impossible in the brain. Here we demonstrate that this strong architectural constraint is not required for effective error propagation. We present a surprisingly simple mechanism that assigns blame by multiplying errors by even random synaptic weights. This mechanism can transmit teaching signals across multiple layers of neurons and performs as effectively as backpropagation on a variety of tasks. Our results help reopen questions about how the brain could use error signals and dispel long-held assumptions about algorithmic constraints on learning.},
+	language = {en},
+	urldate = {2019-07-15},
+	journal = {Nature Communications},
+	author = {Lillicrap, Timothy P. and Cownden, Daniel and Tweed, Douglas B. and Akerman, Colin J.},
+	month = nov,
+	year = {2016},
+	pages = {13276},
+	file = {Full Text PDF:/Users/jvrsgsty/Zotero/storage/SE7QETVQ/Lillicrap et al. - 2016 - Random synaptic feedback weights support error bac.pdf:application/pdf;Snapshot:/Users/jvrsgsty/Zotero/storage/JTMEQKN8/ncomms13276.html:text/html}
+}
+
+@article{akrout_deep_2019,
+	title = {Deep {Learning} without {Weight} {Transport}},
+	url = {http://arxiv.org/abs/1904.05391},
+	abstract = {Current algorithms for deep learning probably cannot run in the brain because they rely on weight transport, where forward-path neurons transmit their synaptic weights to a feedback path, in a way that is likely impossible biologically. An algorithm called feedback alignment achieves deep learning without weight transport by using random feedback weights, but it performs poorly on hard visual-recognition tasks. Here we describe two mechanisms - a neural circuit called a weight mirror and a modification of an algorithm proposed by Kolen and Pollack in 1994 - both of which let the feedback path learn appropriate synaptic weights quickly and accurately even in large networks, without weight transport or complex wiring.Tested on the ImageNet visual-recognition task, these mechanisms outperform both feedback alignment and the newer sign-symmetry method, and nearly match backprop, the standard algorithm of deep learning, which uses weight transport.},
+	urldate = {2019-07-15},
+	journal = {arXiv:1904.05391 [cs, stat]},
+	author = {Akrout, Mohamed and Wilson, Collin and Humphreys, Peter C. and Lillicrap, Timothy and Tweed, Douglas},
+	month = apr,
+	year = {2019},
+	note = {arXiv: 1904.05391},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {arXiv\:1904.05391 PDF:/Users/jvrsgsty/Zotero/storage/UG5USXWS/Akrout et al. - 2019 - Deep Learning without Weight Transport.pdf:application/pdf;arXiv.org Snapshot:/Users/jvrsgsty/Zotero/storage/74JSPAGZ/1904.html:text/html}
+}
+
+@article{guerguiev_spike-based_2019,
+	title = {Spike-based causal inference for weight alignment},
+	url = {http://arxiv.org/abs/1910.01689},
+	abstract = {In artificial neural networks trained with gradient descent, the weights used for processing stimuli are also used during backward passes to calculate gradients. For the real brain to approximate gradients, gradient information would have to be propagated separately, such that one set of synaptic weights is used for processing and another set is used for backward passes. This produces the so-called "weight transport problem" for biological models of learning, where the backward weights used to calculate gradients need to mirror the forward weights used to process stimuli. This weight transport problem has been considered so hard that popular proposals for biological learning assume that the backward weights are simply random, as in the feedback alignment algorithm. However, such random weights do not appear to work well for large networks. Here we show how the discontinuity introduced in a spiking system can lead to a solution to this problem. The resulting algorithm is a special case of an estimator used for causal inference in econometrics, regression discontinuity design. We show empirically that this algorithm rapidly makes the backward weights approximate the forward weights. As the backward weights become correct, this improves learning performance over feedback alignment on tasks such as Fashion-MNIST and CIFAR-10. Our results demonstrate that a simple learning rule in a spiking network can allow neurons to produce the right backward connections and thus solve the weight transport problem.},
+	urldate = {2019-10-14},
+	journal = {arXiv:1910.01689 [cs, q-bio]},
+	author = {Guerguiev, Jordan and Kording, Konrad P. and Richards, Blake A.},
+	month = oct,
+	year = {2019},
+	note = {arXiv: 1910.01689},
+	keywords = {Computer Science - Machine Learning, Quantitative Biology - Neurons and Cognition},
+	file = {arXiv\:1910.01689 PDF:/Users/jvrsgsty/Zotero/storage/RI4GED2P/Guerguiev et al. - 2019 - Spike-based causal inference for weight alignment.pdf:application/pdf;arXiv.org Snapshot:/Users/jvrsgsty/Zotero/storage/ALGNECYP/1910.html:text/html}
+}
+
+
+@InProceedings{kunin_loss_2019,
+  title = 	 {Loss {L}andscapes of {R}egularized {L}inear {A}utoencoders},
+  author = 	 {Kunin, Daniel and Bloom, Jonathan and Goeva, Aleksandrina and Seed, Cotton},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  pages = 	 {3560--3569},
+  year = 	 {2019},
+  editor = 	 {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Long Beach, California, USA},
+  month = 	 {09--15 Jun},
+  publisher = 	 {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v97/kunin19a/kunin19a.pdf},
+  url = 	 {http://proceedings.mlr.press/v97/kunin19a.html},
+  abstract = 	 {Autoencoders are a deep learning model for representation learning. When trained to minimize the distance between the data and its reconstruction, linear autoencoders (LAEs) learn the subspace spanned by the top principal directions but cannot learn the principal directions themselves. In this paper, we prove that $L_2$-regularized LAEs are symmetric at all critical points and learn the principal directions as the left singular vectors of the decoder. We smoothly parameterize the critical manifold and relate the minima to the MAP estimate of probabilistic PCA. We illustrate these results empirically and consider implications for PCA algorithms, computational neuroscience, and the algebraic topology of learning.}
+}
+
+@incollection{bartunov_assessing_2018,
+title = {Assessing the {S}calability of {B}iologically-{M}otivated {D}eep {L}earning {A}lgorithms and {A}rchitectures},
+author = {Bartunov, Sergey and Santoro, Adam and Richards, Blake and Marris, Luke and Hinton, Geoffrey E and Lillicrap, Timothy},
+booktitle = {Advances in Neural Information Processing Systems 31},
+editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+pages = {9368--9378},
+year = {2018},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/8148-assessing-the-scalability-of-biologically-motivated-deep-learning-algorithms-and-architectures.pdf}
+}
+
+@inproceedings{he_deep_2016,
+	title = {Deep {Residual} {Learning} for {Image} {Recognition}},
+	doi = {10.1109/CVPR.2016.90},
+	abstract = {Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers - 8× deeper than VGG nets [40] but still having lower complexity. An ensemble of these residual nets achieves 3.57\% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28\% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC \& COCO 2015 competitions1, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.},
+	booktitle = {2016 {IEEE} {Conference} on {Computer} {Vision} and {Pattern} {Recognition} ({CVPR})},
+	author = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+	month = jun,
+	year = {2016},
+	note = {ISSN: 1063-6919},
+	keywords = {CIFAR-10, COCO object detection dataset, COCO segmentation, Complexity theory, deep residual learning, deep residual nets, deeper neural network training, Degradation, ILSVRC \& COCO 2015 competitions, ILSVRC 2015 classification task, image classification, image recognition, Image recognition, Image segmentation, ImageNet dataset, ImageNet localization, ImageNet test set, learning (artificial intelligence), neural nets, Neural networks, object detection, residual function learning, residual nets, Training, VGG nets, visual recognition tasks, Visualization},
+	pages = {770--778},
+	file = {IEEE Xplore Abstract Record:/Users/jvrsgsty/Zotero/storage/V8DXTE6N/7780459.html:text/html;IEEE Xplore Full Text PDF:/Users/jvrsgsty/Zotero/storage/QL6P7BT6/He et al. - 2016 - Deep Residual Learning for Image Recognition.pdf:application/pdf}
+}
+
+@inproceedings{laurent18a,
+  title = 	 {Deep {Linear} {Networks} with {Arbitrary} {Loss}: {All} {Local} {Minima} {Are} {Global}},
+  author = 	 {Laurent, Thomas and von Brecht, James},
+  booktitle = 	 {Proceedings of the 35th International Conference on Machine Learning},
+  pages = 	 {2902--2907},
+  year = 	 {2018},
+  editor = 	 {Dy, Jennifer and Krause, Andreas},
+  volume = 	 {80},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Stockholmsmässan, Stockholm Sweden},
+  month = 	 {10--15 Jul},
+  publisher = 	 {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v80/laurent18a/laurent18a.pdf},
+  url = 	 {http://proceedings.mlr.press/v80/laurent18a.html},
+  abstract = 	 {We consider deep linear networks with arbitrary convex differentiable loss. We provide a short and elementary proof of the fact that all local minima are global minima if the hidden layers are either 1) at least as wide as the input layer, or 2) at least as wide as the output layer. This result is the strongest possible in the following sense: If the loss is convex and Lipschitz but not differentiable then deep linear networks can have sub-optimal local minima.}
+}
+
+@article{oja_flow,
+author = {Yan, Wei-Yong and Helmke, Uwe and Moore, John},
+year = {1994},
+month = {10},
+pages = {674 - 683},
+title = {Global {A}nalysis of {O}ja’s {F}low for {N}eural {N}etworks},
+volume = {5},
+journal = {Neural Networks, IEEE Transactions on},
+doi = {10.1109/72.317720}
+}
+
+@article{oja_neuron,
+author = {Oja, Erkki},
+year = {1982},
+pages = {267 - 273},
+title = {A simplified neuron model as a principal component analyzer},
+number = {3},
+volume = {15},
+journal = {E. J. Math. Biology},
+doi = {10.1007/BF00275687}
+}
+
+@book{moore,
+author = {Helmke, Uwe and Moore, John},
+year = {2010},
+month = {12},
+pages = {},
+title = {Optimization and Dynamical Systems},
+volume = {84},
+journal = {Proceedings of the IEEE},
+doi = {10.1007/978-1-4471-3467-1}
+}
+
+@incollection{k-pca,
+title = {Exponentially convergent stochastic k-PCA without variance reduction},
+author = {Tang, Cheng},
+booktitle = {Advances in Neural Information Processing Systems 32},
+editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d' Alch\'{e}-Buc and E. Fox and R. Garnett},
+pages = {12393--12404},
+year = {2019},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/9406-exponentially-convergent-stochastic-k-pca-without-variance-reduction.pdf}
+}
+
+@article{baldi_learning_2018,
+	title = {Learning in the machine: {R}andom backpropagation and the deep learning channel},
+	journal = {Artificial Intelligence},
+	author = {Baldi, Pierre and Sadowski, Peter and Lu, Zhiqin},
+	volume = {260},
+	pages = {1-35},
+	year = {2018},
+	doi = {10.1016/j.artint.2018.03.003}
+}
+
+@article{grossberg_competitive_1987,
+  title={Competitive {L}earning: {F}rom {I}nteractive {A}ctivation to {A}daptive {R}esonance},
+  author={Stephen Grossberg},
+  journal={Cognitive Science},
+  year={1987},
+  volume={11},
+  pages={23-63}
+}
+
+@inproceedings{xiao_biologically-plausible_2019,
+title={Biologically-{P}lausible {L}earning {A}lgorithms {C}an {S}cale to {L}arge {D}atasets},
+author={Will Xiao and Honglin Chen and Qianli Liao and Tomaso Poggio},
+booktitle={International Conference on Learning Representations},
+year={2019},
+url={https://openreview.net/forum?id=SygvZ209F7},
+}
+
+@article{guerguiev_towards_2017,
+  title={Towards deep learning with segregated dendrites},
+  author={Guerguiev, Jordan and Lillicrap, Timothy P and Richards, Blake A},
+  journal={eLife},
+  year = {2017},
+  volume = {6},
+  doi = {10.7554/eLife.22901}
+}
+
+@inproceedings{liao_how_2016,
+ author = {Liao, Qianli and Leibo, Joel Z. and Poggio, Tomaso},
+ title = {How {I}mportant is {W}eight {S}ymmetry in {B}ackpropagation?},
+ booktitle = {Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence},
+ series = {AAAI'16},
+ year = {2016},
+ location = {Phoenix, Arizona},
+ pages = {1837--1844},
+ numpages = {8},
+ url = {http://dl.acm.org/citation.cfm?id=3016100.3016156},
+ acmid = {3016156},
+ publisher = {AAAI Press},
+} 
+
+@article{bengio_how_2014,
+  title={How {A}uto-{E}ncoders {C}ould {P}rovide {C}redit {A}ssignment in {D}eep {N}etworks via {T}arget {P}ropagation},
+  author={Yoshua Bengio},
+  journal={ArXiv},
+  year={2014},
+  volume={abs/1407.7906}
+}
+
+@inproceedings{lee_difference_2015,
+  title={Difference target propagation},
+  author={Lee, Dong-Hyun and Zhang, Saizheng and Fischer, Asja and Bengio, Yoshua},
+  booktitle={Joint european conference on machine learning and knowledge discovery in databases},
+  pages={498--515},
+  year={2015},
+  organization={Springer}
+}
+
+
+@article{moskovitz_feedback_2018,
+  author    = {Theodore H. Moskovitz and
+               Ashok Litwin{-}Kumar and
+               L. F. Abbott},
+  title     = {Feedback alignment in deep convolutional networks},
+  journal   = {CoRR},
+  volume    = {abs/1812.06488},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1812.06488},
+  archivePrefix = {arXiv},
+  eprint    = {1812.06488},
+  timestamp = {Tue, 01 Jan 2019 15:01:25 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1812-06488},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{rumelhart_learning_1986,
+  title={Learning representations by back-propagating errors},
+  author={Rumelhart, David E. and Hinton, Geoffrey E. and Williams, Ronald J.},
+  journal={Nature},
+  year={1986},
+  month={October},
+  volume={323},
+  pages={533–536},
+  doi={10.1038/323533a0},
+}
+
+@article{crick_recent_1989,
+  title={The recent excitement about neural networks},
+  author={Crick, Francis},
+  journal={Nature},
+  year={1989},
+  volume={337},
+  pages={129–132},
+  doi={10.1038/337129a0},
+}
+
+@inproceedings{nokland_direct_2016,
+    title={Direct {F}eedback {A}lignment {P}rovides {L}earning in {D}eep {N}eural {N}etworks},
+    author={N{\o}kland, Arild},
+    booktitle={Advances in neural information processing systems},
+    pages={1037--1045},
+    year={2016}
+}
+
+@article {majaj2015simple,
+	title = {Simple {L}earned {W}eighted {S}ums of {I}nferior {T}emporal {N}euronal {F}iring {R}ates {A}ccurately {P}redict {H}uman {C}ore {O}bject {R}ecognition {P}erformance.},
+	journal = {The Journal of neuroscience : the official journal of the Society for Neuroscience},
+	volume = {35},
+	year = {2015},
+	month = {2015 Sep 30},
+	pages = {13402-18},
+	issn = {1529-2401},
+	doi = {10.1523/JNEUROSCI.5181-14.2015},
+	author = {Majaj, Najib J and Hong, Ha and Solomon, Ethan A and James J {DiCarlo}}
+}
+
+
+@article{saxe_exact_2013,
+    author = {Saxe, Andrew and Mcclelland, James and Ganguli, Surya},
+    year = {2013},
+    month = {12},
+    pages = {},
+    journal={arXiv preprint arXiv:1312.6120},
+    title = {Exact solutions to the nonlinear dynamics of learning in deep linear neural networks}
+}
+
+@inproceedings{bergstra_tpe_2011,
+  title={Algorithms for hyper-parameter optimization},
+  author={Bergstra, James S and Bardenet, R{\'e}mi and Bengio, Yoshua and K{\'e}gl, Bal{\'a}zs},
+  booktitle={Advances in neural information processing systems},
+  pages={2546--2554},
+  year={2011}
+}
+
+@article{yamins2014performance,
+  title={Performance-optimized hierarchical models predict neural responses in higher visual cortex},
+  author={Yamins, Daniel LK and Hong, Ha and Cadieu, Charles F and Solomon, Ethan A and Seibert, Darren and DiCarlo, James J},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={111},
+  number={23},
+  pages={8619--8624},
+  year={2014},
+  publisher={National Acad Sciences}
+}
+
+@article{khaligh2014deep,
+  title={Deep supervised, but not unsupervised, models may explain IT cortical representation},
+  author={Khaligh-Razavi, Seyed-Mahdi and Kriegeskorte, Nikolaus},
+  journal={PLoS computational biology},
+  volume={10},
+  number={11},
+  pages={e1003915},
+  year={2014},
+  publisher={Public Library of Science}
+}
+
+@article{gucclu2015deep,
+  title={Deep neural networks reveal a gradient in the complexity of neural representations across the ventral stream},
+  author={G{\"u}{\c{c}}l{\"u}, Umut and van Gerven, Marcel AJ},
+  journal={The Journal of Neuroscience},
+  volume={35},
+  number={27},
+  pages={10005--10014},
+  year={2015},
+  publisher={Soc Neuroscience}
+}
+
+@article{cadena2019deep,
+  title={Deep convolutional models improve predictions of macaque V1 responses to natural images},
+  author={Cadena, Santiago A and Denfield, George H and Walker, Edgar Y and Gatys, Leon A and Tolias, Andreas S and Bethge, Matthias and Ecker, Alexander S},
+  journal={PLoS computational biology},
+  volume={15},
+  number={4},
+  pages={e1006897},
+  year={2019},
+  publisher={Public Library of Science}
+}
+
+@article{yamins2016using,
+  title={Using goal-driven deep learning models to understand sensory cortex},
+  author={Yamins, Daniel LK and DiCarlo, James J},
+  journal={Nature neuroscience},
+  volume={19},
+  number={3},
+  pages={356},
+  year={2016},
+  publisher={Nature Publishing Group}
+}
+
+@article{buchlovsky2019tf,
+  title={TF-Replicator: {D}istributed machine learning for researchers},
+  author={Buchlovsky, Peter and Budden, David and Grewe, Dominik and Jones, Chris and Aslanides, John and Besse, Frederic and Brock, Andy and Clark, Aidan and Colmenarejo, Sergio G{\'o}mez and Pope, Aedan and others},
+  journal={arXiv preprint arXiv:1902.00465},
+  year={2019}
+}
+
+@article{whittington2017approximation,
+  title={An {A}pproximation of the {E}rror {B}ackpropagation {A}lgorithm in a {P}redictive {C}oding {N}etwork with {L}ocal {H}ebbian {S}ynaptic {P}lasticity},
+  author={Whittington, James C R and Bogacz, Rafal},
+  journal={Neural computation},
+  volume={29},
+  number={5},
+  pages={1229-1262},
+  year={2017},
+}
+
+@article{lansdell2019spiking,
+  title={Spiking allows neurons to estimate their causal effect},
+  author={Lansdell, Benjamin James and Kording, Konrad Paul},
+  journal={bioRxiv},
+  pages={253351},
+  year={2019},
+  publisher={Cold Spring Harbor Laboratory}
+}
+
+@incollection{Sacramento2018Dendritic,
+    title = {Dendritic cortical microcircuits approximate the backpropagation algorithm},
+    author = {Sacramento, Jo\~{a}o and Ponte Costa, Rui and Bengio, Yoshua and Senn, Walter},
+    booktitle = {Advances in Neural Information Processing Systems 31},
+    editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+    pages = {8721--8732},
+    year = {2018},
+    publisher = {Curran Associates, Inc.},
+    url = {http://papers.nips.cc/paper/8089-dendritic-cortical-microcircuits-approximate-the-backpropagation-algorithm.pdf}
+}
+
+@article{bengio2017STDP,
+    author = {Bengio, Yoshua and Mesnard, Thomas and Fischer, Asja and Zhang, Saizheng and Wu, Yuhuai},
+    title = {{STDP}-{C}ompatible {A}pproximation of {B}ackpropagation in an {E}nergy-{B}ased {M}odel},
+    journal = {Neural Computation},
+    volume = {29},
+    number = {3},
+    pages = {555-577},
+    year = {2017},
+    doi = {10.1162/NECO\_a\_00934},
+        note ={PMID: 28095200},
+    
+    URL = { 
+            https://doi.org/10.1162/NECO_a_00934
+        
+    },
+    eprint = { 
+            https://doi.org/10.1162/NECO_a_00934
+        
+    }
+}
+
+@article{Xie2003Equivalence,
+    author = {Xie, Xiaohui and Seung, Hyunjune},
+    year = {2003},
+    month = {03},
+    pages = {441-54},
+    title = {Equivalence of {B}ackpropagation and {C}ontrastive {H}ebbian {L}earning in a {L}ayered {N}etwork},
+    volume = {15},
+    journal = {Neural computation},
+    doi = {10.1162/089976603762552988}
+}
+
+@article{Scellier2017Equilibrium,
+    AUTHOR={Scellier, Benjamin and Bengio, Yoshua},   
+    TITLE={Equilibrium {P}ropagation: {B}ridging the {G}ap between {E}nergy-{B}ased {M}odels and {B}ackpropagation},      
+    JOURNAL={Frontiers in Computational Neuroscience},      
+    VOLUME={11},      
+    PAGES={24},     
+    YEAR={2017},      
+    URL={https://www.frontiersin.org/article/10.3389/fncom.2017.00024},       
+    DOI={10.3389/fncom.2017.00024},      
+    ISSN={1662-5188}
+}
+
+@article{ioffe2015batch,
+  title={Batch normalization: Accelerating deep network training by reducing internal covariate shift},
+  author={Ioffe, Sergey and Szegedy, Christian},
+  journal={arXiv preprint arXiv:1502.03167},
+  year={2015}
+}
+
+@article{ba2016layer,
+  title={Layer normalization},
+  author={Ba, Jimmy Lei and Kiros, Jamie Ryan and Hinton, Geoffrey E},
+  journal={arXiv preprint arXiv:1607.06450},
+  year={2016}
+}
+
+@article{imbens2008regression,
+  title={Regression discontinuity designs: A guide to practice},
+  author={Imbens, Guido W and Lemieux, Thomas},
+  journal={Journal of econometrics},
+  volume={142},
+  number={2},
+  pages={615--635},
+  year={2008},
+  publisher={Elsevier}
+}
+
+@inproceedings{Kolen1994backpropagation,
+    author = {Kolen, John and Pollack, Jordan},
+    year = {1994},
+    month = {07},
+    pages = {1375 - 1380 vol.3},
+    title = {Backpropagation without weight transport},
+    booktitle={Proceedings of 1994 IEEE International Conference on Neural Networks (ICNN'94)},
+    volume = {3},
+    isbn = {0-7803-1901-X},
+    doi = {10.1109/ICNN.1994.374486}
+}

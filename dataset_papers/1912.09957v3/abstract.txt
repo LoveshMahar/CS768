@@ -1,0 +1,15 @@
+Safety in terms of collision avoidance for multi-robot systems is a difficult
+challenge under uncertainty, non-determinism and lack of complete information.
+This paper aims to propose a collision avoidance method that accounts for both
+measurement uncertainty and motion uncertainty. In particular, we propose
+Probabilistic Safety Barrier Certificates (PrSBC) using Control Barrier
+Functions to define the space of admissible control actions that are
+probabilistically safe with formally provable theoretical guarantee. By
+formulating the chance constrained safety set into deterministic control
+constraints with PrSBC, the method entails minimally modifying an existing
+controller to determine an alternative safe controller via quadratic
+programming constrained to PrSBC constraints. The key advantage of the approach
+is that no assumptions about the form of uncertainty are required other than
+finite support, also enabling worst-case guarantees. We demonstrate
+effectiveness of the approach through experiments on realistic simulation
+environments.

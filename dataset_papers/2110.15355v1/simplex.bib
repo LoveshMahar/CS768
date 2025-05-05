@@ -1,0 +1,628 @@
+@article{Caruana1999,
+abstract = {We show how to generate case-based explanations for non-case-based learning methods such as artificial neural nets or decision trees. The method uses the trained model (e.g., the neural net or the decision tree) as a distance metric to determine which cases in the training set are most similar to the case that needs to be explained. This approach is well suited to medical domains, where it is important to understand predictions made by complex machine learning models, and where training and clinical practice makes users adept at case interpretation.},
+author = {Caruana, R. and Kangarloo, H. and Dionisio, J. D. and Sinha, U. and Johnson, D.},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Caruana et al.{\_}1999{\_}Case-based explanation of non-case-based learning methods.{\_}Proceedings AMIA ... Annual Symposium. AMIA Symposium.pdf:pdf},
+issn = {1531605X},
+journal = {AMIA Symposium},
+mendeley-groups = {Machine Learning/Interpretability,Machine Learning},
+pages = {212--215},
+pmid = {10566351},
+publisher = {American Medical Informatics Association},
+title = {{Case-based explanation of non-case-based learning methods.}},
+url = {/pmc/articles/PMC2232607/?report=abstract https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2232607/},
+year = {1999}
+}
+
+@article{Kim2016,
+abstract = {Example-based explanations are widely used in the effort to improve the inter-pretability of highly complex distributions. However, prototypes alone are rarely sufficient to represent the gist of the complexity. In order for users to construct better mental models and understand complex data distributions, we also need criticism to explain what are not captured by prototypes. Motivated by the Bayesian model criticism framework, we develop MMD-critic which efficiently learns prototypes and criticism, designed to aid human interpretability. A human subject pilot study shows that the MMD-critic selects prototypes and criticism that are useful to facilitate human understanding and reasoning. We also evaluate the prototypes selected by MMD-critic via a nearest prototype classifier, showing competitive performance compared to baselines.},
+author = {Kim, Been and Khanna, Rajiv and Koyejo, Oluwasanmi},
+journal = {Advances in Neural Information Processing Systems},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Kim, Khanna, Koyejo{\_}2016{\_}Examples are not Enough, Learn to Criticize! Criticism for Interpretability{\_}Advances in Neural Information Proc.pdf:pdf},
+mendeley-groups = {Machine Learning/Interpretability,Machine Learning},
+title = {{Examples are not Enough, Learn to Criticize! Criticism for Interpretability}},
+volume = {29},
+year = {2016}
+}
+
+@article{Gurumoorthy2017,
+abstract = {Prototypical examples that best summarizes and compactly represents an underlying complex data distribution communicate meaningful insights to humans in domains where simple explanations are hard to extract. In this paper we present algorithms with strong theoretical guarantees to mine these data sets and select prototypes a.k.a. representatives that optimally describes them. Our work notably generalizes the recent work by Kim et al. (2016) where in addition to selecting prototypes, we also associate non-negative weights which are indicative of their importance. This extension provides a single coherent framework under which both prototypes and criticisms (i.e. outliers) can be found. Furthermore, our framework works for any symmetric positive definite kernel thus addressing one of the key open questions laid out in Kim et al. (2016). By establishing that our objective function enjoys a key property of that of weak submodularity, we present a fast ProtoDash algorithm and also derive approximation guarantees for the same. We demonstrate the efficacy of our method on diverse domains such as retail, digit recognition (MNIST) and on publicly available 40 health questionnaires obtained from the Center for Disease Control (CDC) website maintained by the US Dept. of Health. We validate the results quantitatively as well as qualitatively based on expert feedback and recently published scientific studies on public health, thus showcasing the power of our technique in providing actionability (for retail), utility (for MNIST) and insight (on CDC datasets) which arguably are the hallmarks of an effective data mining method.},
+archivePrefix = {arXiv},
+arxivId = {1707.01212},
+author = {Gurumoorthy, Karthik S. and Dhurandhar, Amit and Cecchi, Guillermo and Aggarwal, Charu},
+eprint = {1707.01212},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Gurumoorthy et al.{\_}2017{\_}Efficient Data Representation by Selecting Prototypes with Importance Weights{\_}Proceedings - IEEE International C.pdf:pdf},
+journal = {Proceedings - IEEE International Conference on Data Mining, ICDM},
+keywords = {Data summarization,Outlier detection,Prototype selection,Submodularity},
+mendeley-groups = {Machine Learning/Interpretability,Machine Learning},
+pages = {260--269},
+publisher = {Institute of Electrical and Electronics Engineers Inc.},
+title = {{Efficient Data Representation by Selecting Prototypes with Importance Weights}},
+url = {http://arxiv.org/abs/1707.01212},
+year = {2017}
+}
+
+@article{Kim2017,
+abstract = {The interpretation of deep learning models is a challenge due to their size, complexity, and often opaque internal state. In addition, many systems, such as image classifiers, operate on low-level features rather than high-level concepts. To address these challenges, we introduce Concept Activation Vectors (CAVs), which provide an interpretation of a neural net's internal state in terms of human-friendly concepts. The key idea is to view the high-dimensional internal state of a neural net as an aid, not an obstacle. We show how to use CAVs as part of a technique, Testing with CAVs (TCAV), that uses directional derivatives to quantify the degree to which a user-defined concept is important to a classification result--for example, how sensitive a prediction of "zebra" is to the presence of stripes. Using the domain of image classification as a testing ground, we describe how CAVs may be used to explore hypotheses and generate insights for a standard image classification network as well as a medical application.},
+archivePrefix = {arXiv},
+arxivId = {1711.11279},
+author = {Kim, Been and Wattenberg, Martin and Gilmer, Justin and Cai, Carrie and Wexler, James and Viegas, Fernanda and Sayres, Rory},
+eprint = {1711.11279},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Kim et al.{\_}2017{\_}Interpretability Beyond Feature Attribution Quantitative Testing with Concept Activation Vectors (TCAV){\_}35th Internation.pdf:pdf},
+journal = {35th International Conference on Machine Learning, ICML 2018},
+mendeley-groups = {Machine Learning/Interpretability,Machine Learning},
+pages = {4186--4195},
+publisher = {International Machine Learning Society (IMLS)},
+title = {{Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)}},
+url = {http://arxiv.org/abs/1711.11279},
+volume = {6},
+year = {2017}
+}
+
+@article{Papernot2018,
+abstract = {Deep neural networks (DNNs) enable innovative applications of machine learning like image recognition, machine translation, or malware detection. However, deep learning is often criticized for its lack of robustness in adversarial settings (e.g., vulnerability to adversarial inputs) and general inability to rationalize its predictions. In this work, we exploit the structure of deep learning to enable new learning-based inference and decision strategies that achieve desirable properties such as robustness and interpretability. We take a first step in this direction and introduce the Deep k-Nearest Neighbors (DkNN). This hybrid classifier combines the k-nearest neighbors algorithm with representations of the data learned by each layer of the DNN: a test input is compared to its neighboring training points according to the distance that separates them in the representations. We show the labels of these neighboring points afford confidence estimates for inputs outside the model's training manifold, including on malicious inputs like adversarial examples--and therein provides protections against inputs that are outside the models understanding. This is because the nearest neighbors can be used to estimate the nonconformity of, i.e., the lack of support for, a prediction in the training data. The neighbors also constitute human-interpretable explanations of predictions. We evaluate the DkNN algorithm on several datasets, and show the confidence estimates accurately identify inputs outside the model, and that the explanations provided by nearest neighbors are intuitive and useful in understanding model failures.},
+archivePrefix = {arXiv},
+arxivId = {1803.04765},
+author = {Papernot, Nicolas and McDaniel, Patrick},
+eprint = {1803.04765},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Papernot, McDaniel{\_}2018{\_}Deep k-Nearest Neighbors Towards Confident, Interpretable and Robust Deep Learning{\_}arXiv.pdf:pdf},
+journal = {arXiv},
+mendeley-groups = {Machine Learning/Interpretability,Machine Learning},
+publisher = {arXiv},
+title = {{Deep k-Nearest Neighbors: Towards Confident, Interpretable and Robust Deep Learning}},
+url = {http://arxiv.org/abs/1803.04765},
+year = {2018}
+}
+
+@article{Koh2017,
+abstract = {How can we explain the predictions of a black-box model? In this paper, we use influence functions -- a classic technique from robust statistics -- to trace a model's prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction. To scale up influence functions to modern machine learning settings, we develop a simple, efficient implementation that requires only oracle access to gradients and Hessian-vector products. We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information. On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks.},
+archivePrefix = {arXiv},
+arxivId = {1703.04730},
+author = {Koh, Pang Wei and Liang, Percy},
+eprint = {1703.04730},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Koh, Liang{\_}2017{\_}Understanding Black-box Predictions via Influence Functions{\_}34th International Conference on Machine Learning, ICML 2017.pdf:pdf},
+journal = {34th International Conference on Machine Learning, ICML 2017},
+mendeley-groups = {Machine Learning,Machine Learning/Interpretability},
+pages = {2976--2987},
+publisher = {International Machine Learning Society (IMLS)},
+title = {{Understanding Black-box Predictions via Influence Functions}},
+url = {http://arxiv.org/abs/1703.04730},
+volume = {4},
+year = {2017}
+}
+
+
+@article{Ghorbani2020,
+abstract = {Shapley value is a classic notion from game theory, historically used to quantify the contributions of individuals within groups, and more recently applied to assign values to data points when training machine learning models. Despite its foundational role, a key limitation of the data Shapley framework is that it only provides valuations for points within a fixed data set. It does not account for statistical aspects of the data and does not give a way to reason about points outside the data set. To address these limitations, we propose a novel framework -- distributional Shapley -- where the value of a point is defined in the context of an underlying data distribution. We prove that distributional Shapley has several desirable statistical properties; for example, the values are stable under perturbations to the data points themselves and to the underlying data distribution. We leverage these properties to develop a new algorithm for estimating values from data, which comes with formal guarantees and runs two orders of magnitude faster than state-of-the-art algorithms for computing the (non-distributional) data Shapley values. We apply distributional Shapley to diverse data sets and demonstrate its utility in a data market setting.},
+archivePrefix = {arXiv},
+arxivId = {2002.12334},
+author = {Ghorbani, Amirata and Kim, Michael P. and Zou, James},
+eprint = {2002.12334},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Ghorbani, Kim, Zou{\_}2020{\_}A Distributional Framework for Data Valuation{\_}arXiv.pdf:pdf},
+journal = {arXiv},
+mendeley-groups = {Machine Learning/Interpretability,Machine Learning/Game Theory,Machine Learning},
+publisher = {arXiv},
+title = {{A Distributional Framework for Data Valuation}},
+url = {http://arxiv.org/abs/2002.12334},
+year = {2020}
+}
+
+@article{Ghorbani2019,
+abstract = {As data becomes the fuel driving technological and economic growth, a fundamental challenge is how to quantify the value of data in algorithmic predictions and decisions. For example, in healthcare and consumer markets, it has been suggested that individuals should be compensated for the data that they generate, but it is not clear what is an equitable valuation for individual data. In this work, we develop a principled framework to address data valuation in the context of supervised machine learning. Given a learning algorithm trained on {\$}n{\$} data points to produce a predictor, we propose data Shapley as a metric to quantify the value of each training datum to the predictor performance. Data Shapley value uniquely satisfies several natural properties of equitable data valuation. We develop Monte Carlo and gradient-based methods to efficiently estimate data Shapley values in practical settings where complex learning algorithms, including neural networks, are trained on large datasets. In addition to being equitable, extensive experiments across biomedical, image and synthetic data demonstrate that data Shapley has several other benefits: 1) it is more powerful than the popular leave-one-out or leverage score in providing insight on what data is more valuable for a given learning task; 2) low Shapley value data effectively capture outliers and corruptions; 3) high Shapley value data inform what type of new data to acquire to improve the predictor.},
+archivePrefix = {arXiv},
+arxivId = {1904.02868},
+author = {Ghorbani, Amirata and Zou, James},
+eprint = {1904.02868},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Ghorbani, Zou{\_}2019{\_}Data Shapley Equitable Valuation of Data for Machine Learning{\_}36th International Conference on Machine Learning, ICML.pdf:pdf},
+journal = {36th International Conference on Machine Learning, ICML 2019},
+mendeley-groups = {Machine Learning/Interpretability,Machine Learning},
+pages = {4053--4065},
+publisher = {International Machine Learning Society (IMLS)},
+title = {{Data Shapley: Equitable Valuation of Data for Machine Learning}},
+url = {http://arxiv.org/abs/1904.02868},
+year = {2019}
+}
+
+@article{BarredoArrieta2020,
+abstract = {In the last few years, Artificial Intelligence (AI) has achieved a notable momentum that, if harnessed appropriately, may deliver the best of expectations over many application sectors across the field. For this to occur shortly in Machine Learning, the entire community stands in front of the barrier of explainability, an inherent problem of the latest techniques brought by sub-symbolism (e.g. ensembles or Deep Neural Networks) that were not present in the last hype of AI (namely, expert systems and rule based models). Paradigms underlying this problem fall within the so-called eXplainable AI (XAI) field, which is widely acknowledged as a crucial feature for the practical deployment of AI models. The overview presented in this article examines the existing literature and contributions already done in the field of XAI, including a prospect toward what is yet to be reached. For this purpose we summarize previous efforts made to define explainability in Machine Learning, establishing a novel definition of explainable Machine Learning that covers such prior conceptual propositions with a major focus on the audience for which the explainability is sought. Departing from this definition, we propose and discuss about a taxonomy of recent contributions related to the explainability of different Machine Learning models, including those aimed at explaining Deep Learning methods for which a second dedicated taxonomy is built and examined in detail. This critical literature analysis serves as the motivating background for a series of challenges faced by XAI, such as the interesting crossroads of data fusion and explainability. Our prospects lead toward the concept of Responsible Artificial Intelligence, namely, a methodology for the large-scale implementation of AI methods in real organizations with fairness, model explainability and accountability at its core. Our ultimate goal is to provide newcomers to the field of XAI with a thorough taxonomy that can serve as reference material in order to stimulate future research advances, but also to encourage experts and professionals from other disciplines to embrace the benefits of AI in their activity sectors, without any prior bias for its lack of interpretability.},
+author = {{Barredo Arrieta}, Alejandro and D{\'{i}}az-Rodr{\'{i}}guez, Natalia and {Del Ser}, Javier and Bennetot, Adrien and Tabik, Siham and Barbado, Alberto and Garcia, Salvador and Gil-Lopez, Sergio and Molina, Daniel and Benjamins, Richard and Chatila, Raja and Herrera, Francisco},
+doi = {10.1016/j.inffus.2019.12.012},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Barredo Arrieta et al.{\_}2020{\_}Explainable Artificial Intelligence (XAI) Concepts, taxonomies, opportunities and challenges toward responsi.pdf:pdf},
+issn = {15662535},
+journal = {Information Fusion},
+keywords = {Accountability,Comprehensibility,Data Fusion,Deep Learning,Explainable Artificial Intelligence,Fairness,Interpretability,Machine Learning,Privacy,Responsible Artificial Intelligence,Transparency},
+mendeley-groups = {Machine Learning/Interpretability},
+pages = {82--115},
+publisher = {Elsevier B.V.},
+title = {{Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S1566253519308103},
+volume = {58},
+year = {2020}
+}
+
+@article{Dhurandhar2018,
+abstract = {In this paper we propose a novel method that provides contrastive explanations justifying the classification of an input by a black box classifier such as a deep neural network. Given an input we find what should be {\%}necessarily and minimally and sufficiently present (viz. important object pixels in an image) to justify its classification and analogously what should be minimally and necessarily $\backslash$emph{\{}absent{\}} (viz. certain background pixels). We argue that such explanations are natural for humans and are used commonly in domains such as health care and criminology. What is minimally but critically $\backslash$emph{\{}absent{\}} is an important part of an explanation, which to the best of our knowledge, has not been explicitly identified by current explanation methods that explain predictions of neural networks. We validate our approach on three real datasets obtained from diverse domains; namely, a handwritten digits dataset MNIST, a large procurement fraud dataset and a brain activity strength dataset. In all three cases, we witness the power of our approach in generating precise explanations that are also easy for human experts to understand and evaluate.},
+archivePrefix = {arXiv},
+arxivId = {1802.07623},
+author = {Dhurandhar, Amit and Chen, Pin-Yu and Luss, Ronny and Tu, Chun-Chen and Ting, Paishun and Shanmugam, Karthikeyan and Das, Payel},
+eprint = {1802.07623},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Dhurandhar et al.{\_}2018{\_}Explanations based on the Missing Towards Contrastive Explanations with Pertinent Negatives{\_}Advances in Neural In.pdf:pdf},
+journal = {Advances in Neural Information Processing Systems},
+mendeley-groups = {Machine Learning,Machine Learning/Interpretability},
+pages = {592--603},
+publisher = {Neural information processing systems foundation},
+title = {{Explanations based on the Missing: Towards Contrastive Explanations with Pertinent Negatives}},
+url = {http://arxiv.org/abs/1802.07623},
+year = {2018}
+}
+
+@article{Kim2015,
+abstract = {We present the Bayesian Case Model (BCM), a general framework for Bayesian case-based reasoning (CBR) and prototype classification and clustering. BCM brings the intuitive power of CBR to a Bayesian generative framework. The BCM learns prototypes, the "quintessential" observations that best represent clusters in a dataset, by performing joint inference on cluster labels, prototypes and important features. Simultaneously, BCM pursues sparsity by learning subspaces, the sets of features that play important roles in the characterization of the prototypes. The prototype and subspace representation provides quantitative benefits in interpretability while preserving classification accuracy. Human subject experiments verify statistically significant improvements to participants' understanding when using explanations produced by BCM, compared to those given by prior art.},
+archivePrefix = {arXiv},
+arxivId = {1503.01161},
+author = {Kim, Been and Rudin, Cynthia and Shah, Julie},
+eprint = {1503.01161},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Kim, Rudin, Shah{\_}2015{\_}The Bayesian Case Model A Generative Approach for Case-Based Reasoning and Prototype Classification{\_}Advances in Ne.pdf:pdf},
+journal = {Advances in Neural Information Processing Systems},
+mendeley-groups = {Machine Learning,Machine Learning/Interpretability},
+pages = {1952--1960},
+publisher = {Neural information processing systems foundation},
+title = {{The Bayesian Case Model: A Generative Approach for Case-Based Reasoning and Prototype Classification}},
+url = {http://arxiv.org/abs/1503.01161},
+volume = {3},
+year = {2015}
+}
+
+@inproceedings{Bichindaritz2006,
+abstract = {Objectives: This paper presents current work in case-based reasoning (CBR) in the health sciences, describes current trends and issues, and projects future directions for work in this field. Methods and material: It represents the contributions of researchers at two workshops on case-based reasoning in the health sciences. These workshops were held at the Fifth International Conference on Case-Based Reasoning (ICCBR-03) and the Seventh European Conference on Case-Based Reasoning (ECCBR-04). Results: Current research in CBR in the health sciences is marked by its richness. Highlighted trends include work in bioinformatics, support to the elderly and people with disabilities, formalization of CBR in biomedicine, and feature and case mining. Conclusion: CBR systems are being better designed to account for the complexity of biomedicine, to integrate into clinical settings and to communicate and interact with diverse systems and methods. {\textcopyright} 2005 Elsevier B.V. All rights reserved.},
+author = {Bichindaritz, Isabelle and Marling, Cindy},
+booktitle = {Artificial Intelligence in Medicine},
+doi = {10.1016/j.artmed.2005.10.008},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Bichindaritz, Marling{\_}2006{\_}Case-based reasoning in the health sciences What's next{\_}Artificial Intelligence in Medicine.pdf:pdf},
+issn = {09333657},
+keywords = {Artificial intelligence in medicine,Bioinformatics,Case-based reasoning,Medical informatics},
+mendeley-groups = {Machine Learning,Machine Learning/Interpretability,Machine Learning/ML Medicine},
+pages = {127--135},
+pmid = {16459064},
+publisher = {Elsevier},
+title = {{Case-based reasoning in the health sciences: What's next?}},
+volume = {36},
+year = {2006}
+}
+
+@book{Cook1982,
+author = {Cook, R. Dennis and Weisenberg, Sanford},
+publisher = {New York: Chapman and Hall},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Cook, Weisenberg{\_}1982{\_}Residuals and influence in regression{\_}Chapman and Hall.pdf:pdf},
+mendeley-groups = {Machine Learning/Interpretability,Machine Learning},
+title = {{Residuals and influence in regression}},
+year = {1982}
+}
+
+@inproceedings{Datta2016,
+abstract = {Algorithmic systems that employ machine learning play an increasing role in making substantive decisions in modern society, ranging from online personalization to insurance and credit decisions to predictive policing. But their decision-making processes are often opaque - it is difficult to explain why a certain decision was made. We develop a formal foundation to improve the transparency of such decision-making systems. Specifically, we introduce a family of Quantitative Input Influence (QII) measures that capture the degree of influence of inputs on outputs of systems. These measures provide a foundation for the design of transparency reports that accompany system decisions (e.g., explaining a specific credit decision) and for testing tools useful for internal and external oversight (e.g., to detect algorithmic discrimination). Distinctively, our causal QII measures carefully account for correlated inputs while measuring influence. They support a general class of transparency queries and can, in particular, explain decisions about individuals (e.g., a loan decision) and groups (e.g., disparate impact based on gender). Finally, since single inputs may not always have high influence, the QII measures also quantify the joint influence of a set of inputs (e.g., age and income) on outcomes (e.g. loan decisions) and the marginal influence of individual inputs within such a set (e.g., income). Since a single input may be part of multiple influential sets, the average marginal influence of the input is computed using principled aggregation measures, such as the Shapley value, previously applied to measure influence in voting. Further, since transparency reports could compromise privacy, we explore the transparency-privacy tradeoff and prove that a number of useful transparency reports can be made differentially private with very little addition of noise. Our empirical validation with standard machine learning algorithms demonstrates that QII measures are a useful transparency mechanism when black box access to the learning system is available. In particular, they provide better explanations than standard associative measures for a host of scenarios that we consider. Further, we show that in the situations we consider, QII is efficiently approximable and can be made differentially private while preserving accuracy.},
+author = {Datta, Anupam and Sen, Shayak and Zick, Yair},
+booktitle = {Proceedings - 2016 IEEE Symposium on Security and Privacy, SP 2016},
+doi = {10.1109/SP.2016.42},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Datta, Sen, Zick{\_}2016{\_}Algorithmic Transparency via Quantitative Input Influence Theory and Experiments with Learning Systems{\_}Proceedings.pdf:pdf},
+isbn = {9781509008247},
+keywords = {fairness,machine learning,transparency},
+mendeley-groups = {Machine Learning/Interpretability,Machine Learning/Game Theory,Machine Learning},
+pages = {598--617},
+publisher = {Institute of Electrical and Electronics Engineers Inc.},
+title = {{Algorithmic Transparency via Quantitative Input Influence: Theory and Experiments with Learning Systems}},
+year = {2016}
+}
+
+@article{Lundberg2017,
+abstract = {Understanding why a model makes a certain prediction can be as crucial as the prediction's accuracy in many applications. However, the highest accuracy for large modern datasets is often achieved by complex models that even experts struggle to interpret, such as ensemble or deep learning models, creating a tension between accuracy and interpretability. In response, various methods have recently been proposed to help users interpret the predictions of complex models, but it is often unclear how these methods are related and when one method is preferable over another. To address this problem, we present a unified framework for interpreting predictions, SHAP (SHapley Additive exPlanations). SHAP assigns each feature an importance value for a particular prediction. Its novel components include: (1) the identification of a new class of additive feature importance measures, and (2) theoretical results showing there is a unique solution in this class with a set of desirable properties. The new class unifies six existing methods, notable because several recent methods in the class lack the proposed desirable properties. Based on insights from this unification, we present new methods that show improved computational performance and/or better consistency with human intuition than previous approaches.},
+archivePrefix = {arXiv},
+arxivId = {1705.07874},
+author = {Lundberg, Scott and Lee, Su-In},
+eprint = {1705.07874},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Lundberg, Lee{\_}2017{\_}A Unified Approach to Interpreting Model Predictions{\_}Advances in Neural Information Processing Systems.pdf:pdf;:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Lundberg, Lee{\_}2017{\_}A Unified Approach to Interpreting Model Predictions{\_}Advances in Neural Information Processing Systems(2).pdf:pdf},
+journal = {Advances in Neural Information Processing Systems},
+mendeley-groups = {Machine Learning/Interpretability,Machine Learning},
+pages = {4766--4775},
+publisher = {Neural information processing systems foundation},
+title = {{A Unified Approach to Interpreting Model Predictions}},
+url = {http://arxiv.org/abs/1705.07874},
+year = {2017}
+}
+
+@article{Shapley1953,
+author = {Shapley, Lloyd},
+journal = {Contributions to the Theory of Games},
+mendeley-groups = {Machine Learning/Game Theory},
+number = {28},
+pages = {307--317},
+title = {{A value for n-person games}},
+volume = {2},
+year = {1953}
+}
+
+@article{Sundararajan2017,
+abstract = {We study the problem of attributing the prediction of a deep network to its input features, a problem previously studied by several other works. We identify two fundamental axioms---Sensitivity and Implementation Invariance that attribution methods ought to satisfy. We show that they are not satisfied by most known attribution methods, which we consider to be a fundamental weakness of those methods. We use the axioms to guide the design of a new attribution method called Integrated Gradients. Our method requires no modification to the original network and is extremely simple to implement; it just needs a few calls to the standard gradient operator. We apply this method to a couple of image models, a couple of text models and a chemistry model, demonstrating its ability to debug networks, to extract rules from a network, and to enable users to engage with models better.},
+archivePrefix = {arXiv},
+arxivId = {1703.01365},
+author = {Sundararajan, Mukund and Taly, Ankur and Yan, Qiqi},
+eprint = {1703.01365},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Sundararajan, Taly, Yan{\_}2017{\_}Axiomatic Attribution for Deep Networks{\_}34th International Conference on Machine Learning, ICML 2017.pdf:pdf},
+journal = {34th International Conference on Machine Learning, ICML 2017},
+mendeley-groups = {Machine Learning,Machine Learning/Interpretability},
+pages = {5109--5118},
+publisher = {International Machine Learning Society (IMLS)},
+title = {{Axiomatic Attribution for Deep Networks}},
+url = {http://arxiv.org/abs/1703.01365},
+volume = {7},
+year = {2017}
+}
+
+
+@article{Yeh2018,
+abstract = {We propose to explain the predictions of a deep neural network, by pointing to the set of what we call representer points in the training set, for a given test point prediction. Specifically, we show that we can decompose the pre-activation prediction of a neural network into a linear combination of activations of training points, with the weights corresponding to what we call representer values, which thus capture the importance of that training point on the learned parameters of the network. But it provides a deeper understanding of the network than simply training point influence: with positive representer values corresponding to excitatory training points, and negative values corresponding to inhibitory points, which as we show provides considerably more insight. Our method is also much more scalable, allowing for real-time feedback in a manner not feasible with influence functions.},
+archivePrefix = {arXiv},
+arxivId = {1811.09720},
+author = {Yeh, Chih-Kuan and Kim, Joon Sik and Yen, Ian E. H. and Ravikumar, Pradeep},
+eprint = {1811.09720},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Yeh et al.{\_}2018{\_}Representer Point Selection for Explaining Deep Neural Networks{\_}Advances in Neural Information Processing Systems.pdf:pdf},
+journal = {Advances in Neural Information Processing Systems},
+mendeley-groups = {Machine Learning,Machine Learning/Interpretability},
+pages = {9291--9301},
+publisher = {Neural information processing systems foundation},
+title = {{Representer Point Selection for Explaining Deep Neural Networks}},
+url = {http://arxiv.org/abs/1811.09720},
+year = {2018}
+}
+
+@article{Anirudh2017,
+abstract = {Interpretability has emerged as a crucial aspect of building trust in machine learning systems, aimed at providing insights into the working of complex neural networks that are otherwise opaque to a user. There are a plethora of existing solutions addressing various aspects of interpretability ranging from identifying prototypical samples in a dataset to explaining image predictions or explaining mis-classifications. While all of these diverse techniques address seemingly different aspects of interpretability, we hypothesize that a large family of interepretability tasks are variants of the same central problem which is identifying $\backslash$emph{\{}relative{\}} change in a model's prediction. This paper introduces MARGIN, a simple yet general approach to address a large set of interpretability tasks MARGIN exploits ideas rooted in graph signal analysis to determine influential nodes in a graph, which are defined as those nodes that maximally describe a function defined on the graph. By carefully defining task-specific graphs and functions, we demonstrate that MARGIN outperforms existing approaches in a number of disparate interpretability challenges.},
+archivePrefix = {arXiv},
+arxivId = {1711.05407},
+author = {Anirudh, Rushil and Thiagarajan, Jayaraman J. and Sridhar, Rahul and Bremer, Peer-Timo},
+eprint = {1711.05407},
+file = {:C$\backslash$:/Users/jonat/Documents/Mendeley Desktop/Anirudh et al.{\_}2017{\_}MARGIN Uncovering Deep Neural Networks using Graph Signal Analysis{\_}arXiv.pdf:pdf},
+journal = {arXiv},
+mendeley-groups = {Machine Learning/Interpretability,Machine Learning},
+publisher = {arXiv},
+title = {{MARGIN: Uncovering Deep Neural Networks using Graph Signal Analysis}},
+url = {http://arxiv.org/abs/1711.05407},
+year = {2017}
+}
+
+@article{Deng2012,
+  title={The mnist database of handwritten digit images for machine learning research},
+  author={Deng, Li},
+  journal={IEEE Signal Processing Magazine},
+  volume={29},
+  number={6},
+  pages={141--142},
+  year={2012},
+  publisher={IEEE}
+}
+
+@article{Cohen2017,
+abstract = {The MNIST dataset has become a standard benchmark for learning, classification and computer vision systems. Contributing to its widespread adoption are the understandable and intuitive nature of the task, its relatively small size and storage requirements and the accessibility and ease-of-use of the database itself. The MNIST database was derived from a larger dataset known as the NIST Special Database 19 which contains digits, uppercase and lowercase handwritten letters. This paper introduces a variant of the full NIST dataset, which we have called Extended MNIST (EMNIST), which follows the same conversion paradigm used to create the MNIST dataset. The result is a set of datasets that constitute a more challenging classification tasks involving letters and digits, and that shares the same image structure and parameters as the original MNIST task, allowing for direct compatibility with all existing classifiers and systems. Benchmark results are presented along with a validation of the conversion process through the comparison of the classification results on converted NIST digits and the MNIST digits.},
+archivePrefix = {arXiv},
+journal = {arXiv},
+arxivId = {1702.05373},
+author = {Cohen, Gregory and Afshar, Saeed and Tapson, Jonathan and van Schaik, Andr{\'{e}}},
+eprint = {1702.05373},
+file = {::},
+mendeley-groups = {Machine Learning},
+title = {{EMNIST: an extension of MNIST to handwritten letters}},
+url = {http://arxiv.org/abs/1702.05373},
+year = {2017}
+}
+
+@Unpublished{Seer2019,
+author = {National Cancer Institute, DCCPS, Surveillance Research Program},
+title = {Surveillance, Epidemiology, and End Results (SEER) Program},
+note = {www.seer.cancer.gov},
+OPTkey = {•},
+OPTmonth = {•},
+year = {2019},
+}
+
+@Unpublished{Cutract2019,
+author = {Prostate Cancer UK},
+title = {CUTRACT},
+note = {www.prostatecanceruk.org},
+OPTkey = {•},
+OPTmonth = {•},
+year = {2019},
+}
+
+@article{Abadie2020,
+author = {Abadie, Alberto},
+doi = {10.1257/JEL.20191450},
+issn = {0022-0515},
+journal = {Journal of Economic Literature},
+mendeley-groups = {Machine Learning},
+title = {{Using Synthetic Controls: Feasibility, Data Requirements, and Methodological Aspects}},
+year = {2020}
+}
+
+@article{Abadie2010,
+abstract = {Building on an idea in Abadie and Gardeazabal (2003), this article investigates the application of synthetic control methods to comparative case studies. We discuss the advantages of these methods and apply them to study the effects of Proposition 99, a large-scale tobacco control program that California implemented in 1988. We demonstrate that, following Proposition 99, tobacco consumption fell markedly in California relative to a comparable synthetic control region. We estimate that by the year 2000 annual per-capita cigarette sales in California were about 26 packs lower than what they would have been in the absence of Proposition 99. Using new inferential methods proposed in this article, we demonstrate the significance of our estimates. Given that many policy interventions and events of interest in social sciences take place at an aggregate level (countries, regions, cities, etc.) and affect a small number of aggregate units, the potential applicability of synthetic control methods to comparative case studies is very large, especially in situations where traditional regression methods are not appropriate. {\textcopyright} 2010 American Statistical Association.},
+author = {Abadie, Alberto and Diamond, Alexis and Hainmueller, Jens},
+doi = {10.1198/jasa.2009.ap08746},
+issn = {01621459},
+journal = {Journal of the American Statistical Association},
+keywords = {Observational studies,Proposition 99,Tobacco control legislation,Treatment effects},
+mendeley-groups = {Machine Learning},
+number = {490},
+pages = {493--505},
+publisher = {Taylor & Francis},
+title = {{Synthetic control methods for comparative case studies: Estimating the effect of California's Tobacco control program}},
+url = {https://www.tandfonline.com/doi/abs/10.1198/jasa.2009.ap08746},
+volume = {105},
+year = {2010}
+}
+
+@article{Athey2017,
+abstract = {In this paper we study methods for estimating causal effects in settings with panel data, where some units are exposed to a treatment during some periods and the goal is estimating counterfactual (untreated) outcomes for the treated unit/period combinations. We propose a class of matrix completion estimators that uses the observed elements of the matrix of control outcomes corresponding to untreated unit/periods to impute the "missing" elements of the control outcome matrix, corresponding to treated units/periods. This leads to a matrix that well-approximates the original (incomplete) matrix, but has lower complexity according to the nuclear norm for matrices. We generalize results from the matrix completion literature by allowing the patterns of missing data to have a time series dependency structure that is common in social science applications. We present novel insights concerning the connections between the matrix completion literature, the literature on interactive fixed effects models and the literatures on program evaluation under unconfoundedness and synthetic control methods. We show that all these estimators can be viewed as focusing on the same objective function. They differ solely in the way they deal with identification, in some cases solely through regularization (our proposed nuclear norm matrix completion estimator) and in other cases primarily through imposing hard restrictions (the unconfoundedness and synthetic control approaches). The proposed method outperforms unconfoundedness-based or synthetic control estimators in simulations based on real data.},
+archivePrefix = {arXiv},
+arxivId = {1710.10251},
+author = {Athey, Susan and Bayati, Mohsen and Doudchenko, Nikolay and Imbens, Guido and Khosravi, Khashayar},
+eprint = {1710.10251},
+file = {:C\:/Users/jonat/Documents/Mendeley Desktop/Athey et al._2017_Matrix Completion Methods for Causal Panel Data Models_arXiv.pdf:pdf},
+journal = {arXiv},
+keywords = {Causality,Interactive Fixed Effects,Synthetic Controls,Unconfoundedness},
+mendeley-groups = {Machine Learning},
+publisher = {arXiv},
+title = {{Matrix Completion Methods for Causal Panel Data Models}},
+url = {http://arxiv.org/abs/1710.10251},
+year = {2017}
+}
+
+@article{Amjad2018,
+abstract = {We present a robust generalization of the synthetic control method for comparative case studies. Like the classical method cf. Abadie and Gardeazabal (2003), we present an algorithm to estimate the unobservable counterfactual of a treatment unit. A distinguishing feature of our algorithm is that of de-noising the data matrix via singular value thresholding, which renders our approach robust in multiple facets: it automatically identifies a good subset of donors for the synthetic control, overcomes the challenges of missing data, and continues to work well in settings where covariate information may not be provided. We posit that the setting can be viewed as an instance of the Latent Variable Model and provide the first finite sample analysis (coupled with asymptotic results) for the estimation of the counterfactual. Our algorithm accurately imputes missing entries and filters corrupted observations in producing a consistent estimator of the underlying signal matrix, provided p = Ω(T −1+$\zeta$) for some $\zeta$ > 0; here, p is the fraction of observed data and T is the time interval of interest. Under the same proportion of observations, we demonstrate that the mean-squared error in our counterfactual estimation scales as O($\sigma$ 2 /p + 1/ √ T), where $\sigma$ 2 is the variance of the inherent noise. Additionally, we introduce a Bayesian framework to quantify the estimation uncertainty. Our experiments, using both synthetic and real-world datasets, demonstrate that our robust generalization yields an improvement over the classical synthetic control method.},
+author = {Amjad, Muhammad and Shah, Devavrat and Shen, Dennis},
+journal = {Journal of Machine Learning Research},
+file = {:C\:/Users/jonat/Documents/Mendeley Desktop/Amjad, Shah, Shen_2018_Robust Synthetic Control_Journal of Machine Learning Research.pdf:pdf},
+issn = {1533-7928},
+keywords = {Causal Inference,Matrix Estimation,Observation Studies},
+mendeley-groups = {Machine Learning},
+number = {22},
+pages = {1--51},
+title = {{Robust Synthetic Control}},
+url = {http://jmlr.org/papers/v19/17-777.html.},
+volume = {19},
+year = {2018}
+}
+
+@article{Lipton2016,
+abstract = {Supervised machine learning models boast remarkable predictive capabilities. But can you trust your model? Will it work in deployment? What else can it tell you about the world? We want models to be not only good, but interpretable. And yet the task of interpretation appears underspecified. Papers provide diverse and sometimes non-overlapping motivations for interpretability, and offer myriad notions of what attributes render models interpretable. Despite this ambiguity, many papers proclaim interpretability axiomatically, absent further explanation. In this paper, we seek to refine the discourse on interpretability. First, we examine the motivations underlying interest in interpretability, finding them to be diverse and occasionally discordant. Then, we address model properties and techniques thought to confer interpretability, identifying transparency to humans and post-hoc explanations as competing notions. Throughout, we discuss the feasibility and desirability of different notions, and question the oft-made assertions that linear models are interpretable and that deep neural networks are not.},
+archivePrefix = {arXiv},
+arxivId = {1606.03490},
+author = {Lipton, Zachary C.},
+eprint = {1606.03490},
+file = {:C\:/Users/jonat/Documents/Mendeley Desktop/Lipton_2016_The Mythos of Model Interpretability_Communications of the ACM.pdf:pdf},
+journal = {Communications of the ACM},
+mendeley-groups = {Machine Learning/Interpretability,Machine Learning},
+number = {10},
+pages = {35--43},
+publisher = {Association for Computing Machinery},
+title = {{The Mythos of Model Interpretability}},
+url = {http://arxiv.org/abs/1606.03490},
+volume = {61},
+year = {2016}
+}
+
+@article{Ching2018,
+abstract = {Deep learning describes a class of machine learning algorithms that are capable of combining raw inputs into layers of intermediate features. These algorithms have recently shown impressive results across a variety of domains. Biology and medicine are data-rich disciplines, but the data are complex and often ill-understood. Hence, deep learning techniques may be particularly well suited to solve problems of these fields. We examine applications of deep learning to a variety of biomedical problems—patient classification, fundamental biological processes and treatment of patients—and discuss whether deep learning will be able to transform these tasks or if the biomedical sphere poses unique challenges. Following from an extensive literature review, we find that deep learning has yet to revolutionize biomedicine or definitively resolve any of the most pressing challenges in the field, but promising advances have been made on the prior state of the art. Even though improvements over previous baselines have been modest in general, the recent progress indicates that deep learning methods will provide valuable means for speeding up or aiding human investigation. Though progress has been made linking a specific neural network's prediction to input features, understanding how users should interpret these models to make testable hypotheses about the system under study remains an open challenge. Furthermore, the limited amount of labelled data for training presents problems in some domains, as do legal and privacy constraints on work with sensitive health records. Nonetheless, we foresee deep learning enabling changes at both bench and bedside with the potential to transform several areas of biology and medicine.},
+author = {Ching, Travers and Himmelstein, Daniel S. and Beaulieu-Jones, Brett K. and Kalinin, Alexandr A. and Do, Brian T. and Way, Gregory P. and Ferrero, Enrico and Agapow, Paul-Michael and Zietz, Michael and Hoffman, Michael M. and Xie, Wei and Rosen, Gail L. and Lengerich, Benjamin J. and Israeli, Johnny and Lanchantin, Jack and Woloszynek, Stephen and Carpenter, Anne E. and Shrikumar, Avanti and Xu, Jinbo and Cofer, Evan M. and Lavender, Christopher A. and Turaga, Srinivas C. and Alexandari, Amr M. and Lu, Zhiyong and Harris, David J. and DeCaprio, Dave and Qi, Yanjun and Kundaje, Anshul and Peng, Yifan and Wiley, Laura K. and Segler, Marwin H. S. and Boca, Simina M. and Swamidass, S. Joshua and Huang, Austin and Gitter, Anthony and Greene, Casey S.},
+doi = {10.1098/rsif.2017.0387},
+file = {:C\:/Users/jonat/Documents/Mendeley Desktop/Ching et al._2018_Opportunities and obstacles for deep learning in biology and medicine_Journal of The Royal Society Interface.pdf:pdf},
+isbn = {0000000305396},
+issn = {1742-5689},
+journal = {Journal of The Royal Society Interface},
+mendeley-groups = {Machine Learning/ML Medicine},
+number = {141},
+pages = {20170387},
+pmid = {29618526},
+title = {{Opportunities and obstacles for deep learning in biology and medicine}},
+url = {https://royalsocietypublishing.org/doi/10.1098/rsif.2017.0387},
+volume = {15},
+year = {2018}
+}
+
+@article{Das2020,
+abstract = {Nowadays, deep neural networks are widely used in mission critical systems such as healthcare, self-driving vehicles, and military which have direct impact on human lives. However, the black-box nature of deep neural networks challenges its use in mission critical applications, raising ethical and judicial concerns inducing lack of trust. Explainable Artificial Intelligence (XAI) is a field of Artificial Intelligence (AI) that promotes a set of tools, techniques, and algorithms that can generate high-quality interpretable, intuitive, human-understandable explanations of AI decisions. In addition to providing a holistic view of the current XAI landscape in deep learning, this paper provides mathematical summaries of seminal work. We start by proposing a taxonomy and categorizing the XAI techniques based on their scope of explanations, methodology behind the algorithms, and explanation level or usage which helps build trustworthy, interpretable, and self-explanatory deep learning models. We then describe the main principles used in XAI research and present the historical timeline for landmark studies in XAI from 2007 to 2020. After explaining each category of algorithms and approaches in detail, we then evaluate the explanation maps generated by eight XAI algorithms on image data, discuss the limitations of this approach, and provide potential future directions to improve XAI evaluation.},
+archivePrefix = {arXiv},
+arxivId = {2006.11371},
+author = {Das, Arun and Rad, Paul},
+eprint = {2006.11371},
+file = {:C\:/Users/jonat/Documents/Mendeley Desktop/Das, Rad_2020_Opportunities and Challenges in Explainable Artificial Intelligence (XAI) A Survey_arXiv.pdf:pdf},
+journal = {arXiv},
+keywords = {Computer vision,Explainable ai,Interpretable deep learning,Machine learning,Neural network,Xai},
+mendeley-groups = {Machine Learning/Interpretability,Machine Learning},
+publisher = {arXiv},
+title = {{Opportunities and Challenges in Explainable Artificial Intelligence (XAI): A Survey}},
+url = {http://arxiv.org/abs/2006.11371},
+year = {2020}
+}
+
+@article{Tjoa2020,
+abstract = {Recently, artificial intelligence and machine learning in general have demonstrated remarkable performances in many tasks, from image processing to natural language processing, especially with the advent of deep learning. Along with research progress, they have encroached upon many different fields and disciplines. Some of them require high level of accountability and thus transparency, for example the medical sector. Explanations for machine decisions and predictions are thus needed to justify their reliability. This requires greater interpretability, which often means we need to understand the mechanism underlying the algorithms. Unfortunately, the blackbox nature of the deep learning is still unresolved, and many machine decisions are still poorly understood. We provide a review on interpretabilities suggested by different research works and categorize them. The different categories show different dimensions in interpretability research, from approaches that provide "obviously" interpretable information to the studies of complex patterns. By applying the same categorization to interpretability in medical research, it is hoped that (1) clinicians and practitioners can subsequently approach these methods with caution, (2) insights into interpretability will be born with more considerations for medical practices, and (3) initiatives to push forward data-based, mathematically- and technically-grounded medical education are encouraged.},
+archivePrefix = {arXiv},
+arxivId = {1907.07374},
+author = {Tjoa, Erico and Guan, Cuntai},
+doi = {10.1109/tnnls.2020.3027314},
+eprint = {1907.07374},
+file = {:C\:/Users/jonat/Documents/Mendeley Desktop/Tjoa, Guan_2020_A Survey on Explainable Artificial Intelligence (XAI) Toward Medical XAI_IEEE Transactions on Neural Networks and Learni.pdf:pdf},
+issn = {2162-237X},
+journal = {IEEE Transactions on Neural Networks and Learning Systems},
+mendeley-groups = {Machine Learning/Interpretability},
+pages = {1--21},
+title = {{A Survey on Explainable Artificial Intelligence (XAI): Toward Medical XAI}},
+year = {2020}
+}
+
+@inproceedings{Ribeiro2016,
+abstract = {Despite widespread adoption, machine learning models remain mostly black boxes. Understanding the reasons behind predictions is, however, quite important in assessing trust, which is fundamental if one plans to take action based on a prediction, or when choosing whether to deploy a new model. Such understanding also provides insights into the model, which can be used to transform an untrustworthy model or prediction into a trustworthy one. In this work, we propose LIME, a novel explanation technique that explains the predictions of any classifier in an interpretable and faithful manner, by learning an interpretable model locally around the prediction. We also propose a method to explain models by presenting representative individual predictions and their explanations in a non-redundant way, framing the task as a submodular optimization problem. We demonstrate the flexibility of these methods by explaining different models for text (e.g. random forests) and image classification (e.g. neural networks). We show the utility of explanations via novel experiments, both simulated and with human subjects, on various scenarios that require trust: deciding if one should trust a prediction, choosing between models, improving an untrustworthy classifier, and identifying why a classifier should not be trusted.},
+archivePrefix = {arXiv},
+arxivId = {1602.04938},
+author = {Ribeiro, Marco Tulio and Singh, Sameer and Guestrin, Carlos},
+booktitle = {Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+doi = {10.1145/2939672.2939778},
+eprint = {1602.04938},
+file = {:C\:/Users/jonat/Documents/Mendeley Desktop/Ribeiro, Singh, Guestrin_2016_Why should i trust you Explaining the predictions of any classifier_Proceedings of the ACM SIGKDD Internat.pdf:pdf},
+isbn = {9781450342322},
+mendeley-groups = {Machine Learning/Interpretability},
+pages = {1135--1144},
+publisher = {Association for Computing Machinery},
+title = {{"Why should i trust you?" Explaining the predictions of any classifier}},
+url = {http://dx.doi.org/10.1145/2939672.2939778},
+year = {2016}
+}
+
+@inproceedings{Keane2019,
+abstract = {This paper proposes a theoretical analysis of one approach to the eXplainable AI (XAI) problem, using post-hoc explanation-by-example, that relies on the twinning of artificial neural networks (ANNs) with case-based reasoning (CBR) systems; so-called ANN-CBR twins. It surveys these systems to advance a new theoretical interpretation of previous work and define a road map for CBR's further role in XAI. A systematic survey of 1,102 papers was conducted to identify a fragmented literature on this topic and trace its influence to more recent work involving deep neural networks (DNNs). The twin-systems approach is advanced as one possible coherent, generic solution to the XAI problem. The paper concludes by road-mapping future directions for this XAI solution, considering (i) further tests of feature-weighting techniques, (ii) how explanatory cases might be deployed (e.g., in counterfactuals, a fortori cases), and (iii) the unwelcome, much-ignored issue of user evaluation.},
+author = {Keane, Mark T. and Kenny, Eoin M.},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-030-29249-2_11},
+file = {:C\:/Users/jonat/Documents/Mendeley Desktop/Keane, Kenny_2019_How Case-Based Reasoning Explains Neural Networks A Theoretical Analysis of XAI Using Post-Hoc Explanation-by-Example.pdf:pdf},
+isbn = {9783030292485},
+issn = {16113349},
+keywords = {Artificial neural networks,CBR,Deep learning,Explanation,XAI},
+mendeley-groups = {Machine Learning,Machine Learning/Interpretability},
+pages = {155--171},
+publisher = {Springer Verlag},
+title = {{How Case-Based Reasoning Explains Neural Networks: A Theoretical Analysis of XAI Using Post-Hoc Explanation-by-Example from a Survey of ANN-CBR Twin-Systems}},
+url = {https://doi.org/10.1007/978-3-030-29249-2_11},
+volume = {11680 LNAI},
+year = {2019}
+}
+
+@article{Keane2019b,
+abstract = {The notion of twin systems is proposed to address the eXplainable AI (XAI) problem, where an uninterpretable black-box system is mapped to a white-box 'twin' that is more interpretable. In this short paper, we overview very recent work that advances a generic solution to the XAI problem, the so called twin system approach. The most popular twinning in the literature is that between an Artificial Neural Networks (ANN ) as a black box and Case Based Reasoning (CBR) system as a white-box, where the latter acts as an interpretable proxy for the former. We outline how recent work reviving this idea has applied it to deep learning methods. Furthermore, we detail the many fruitful directions in which this work may be taken; such as, determining the most (i) accurate feature-weighting methods to be used, (ii) appropriate deployments for explanatory cases, (iii) useful cases of explanatory value to users.},
+archivePrefix = {arXiv},
+arxivId = {1905.08069},
+author = {Keane, Mark T. and Kenny, Eoin M.},
+eprint = {1905.08069},
+file = {:C\:/Users/jonat/Documents/Mendeley Desktop/Keane, Kenny_2019_The Twin-System Approach as One Generic Solution for XAI An Overview of ANN-CBR Twins for Explaining Deep Learning_arX.pdf:pdf},
+journal = {arXiv},
+mendeley-groups = {Machine Learning,Machine Learning/Interpretability},
+publisher = {arXiv},
+title = {{The Twin-System Approach as One Generic Solution for XAI: An Overview of ANN-CBR Twins for Explaining Deep Learning}},
+url = {http://arxiv.org/abs/1905.08069},
+year = {2019}
+}
+
+@article{Wu2021,
+abstract = {A comprehensive overview of medical AI devices approved by the US Food and Drug Administration sheds new light on limitations of the evaluation process that can mask vulnerabilities of devices when they are deployed on patients. M edical artificial-intelligence (AI) algorithms are being increasingly proposed for the assessment and care of patients. Although the academic community has started to develop reporting guidelines for AI clinical trials 1-3 , there are no established best practices for evaluating commercially available algorithms to ensure their reliability and safety. The path to safe and robust clinical AI requires that important regulatory questions be addressed. Are medical devices able to demonstrate performance that can be generalized to the entire intended population? Are commonly faced shortcomings of AI (overfitting to training data, vulnerability to data shifts, and bias against underrepresented patient subgroups) adequately quantified and addressed? In the USA, the US Food and Drug Administration (FDA) is responsible for approving commercially marketed medical AI devices. The FDA releases publicly available information on approved devices in the form of a summary document that generally contains information about the device description, indications for use, and performance data of the device's evaluation study. The FDA has recently called for improvement of test-data quality, improvement of trust and transparency with users, monitoring of algorithmic performance and bias on the intended population, and testing with clinicians in the loop 4,5. To understand the extent to which these concerns are addressed in practice, we have created an annotated database of FDA-approved medical AI devices and systematically analyzed how these devices were evaluated before approval. Additionally, we have conducted a case study of pneumothorax-triage devices and found that evaluating deep-learning models at a single site alone, which is often done, can mask weaknesses in the models and lead to worse performance across sites. Curating a comprehensive database of FDA-approved medical AI We aggregated all of the medical AI devices approved by the FDA between January 2015 and December 2020 (refs. 6-8). Because searching for specific terms is not possible on the FDA website (https://www.fda. gov/) 9 , we downloaded the PDF file for the summary document of each approved device, extracted the text, and searched for AI keywords to create our initial corpus. We then merged this corpus with two existing databases of FDA-approved AI devices 9,10 and filtered for AI relevance to create a comprehensive database (https://ericwu09. github.io/medical-ai-evaluation). From the summary document of each device, we extracted the following information about how the algorithm was evaluated: the number of patients enrolled in the evaluation study; the number of sites used in the evaluation; whether the test data were collected and evaluated concurrently with device deployment (prospective) or the test set was collected before device deployment (retrospective); and whether stratified performance by disease subtypes or across demographic subgroups was reported. Additionally, we assigned a risk level from 1 to 4 to each device (1 and 2 indicate low risk; 3 and 4 indicate high risk) according to guidelines from an FDA proposal 4. In total, we compiled 130 approved devices that met our review criteria. We present a compilation of all the devices, organized by body area, risk level, prospective/retrospective studies, and multi-site evaluation (Fig. 1). Most evaluations perform only retrospective studies Almost all of the AI devices (126 of 130) underwent only retrospective studies at their submission, based on the FDA summaries. Chest Breast Heart Head Multiple/ other Multi-site reported Prospective studies High risk (3 and 4) Low risk (1 and 2) Total devices 13 15 17 25 60 37 4 54 76 130 Chest Breast Heart Head Multiple/other Fig. 1 | Breakdown of 130 FDA-approved medical AI devices by body area. Devices are categorized by risk level (square, high risk; circle, low risk). Blue indicates that a multi-site evaluation was reported; otherwise, symbols are gray. Red outline indicates a prospective study (key, right margin). Numbers in key indicate the number of devices with each characteristic. NAture MeDICINe | www.nature.com/naturemedicine},
+author = {Wu, Eric and Wu, Kevin and Daneshjou, Roxana and Ouyang, David and Ho, Daniel E and Zou, James},
+doi = {10.1038/s41591-021-01312-x},
+file = {:C\:/Users/jonat/Documents/Mendeley Desktop/Wu et al._2021_How medical AI devices are evaluated limitations and recommendations from an analysis of FDA approvals_Nature Medicine.pdf:pdf},
+journal = {Nature Medicine},
+mendeley-groups = {Machine Learning/Interpretability,Machine Learning,Machine Learning/ML Medicine},
+title = {{How medical AI devices are evaluated: limitations and recommendations from an analysis of FDA approvals}},
+url = {https://doi.org/10.1038/s41591-021-01312-x},
+year = {2021}
+}
+
+@article{Fong2017,
+abstract = {As machine learning algorithms are increasingly applied to high impact yet high risk tasks, such as medical diagnosis or autonomous driving, it is critical that researchers can explain how such algorithms arrived at their predictions. In recent years, a number of image saliency methods have been developed to summarize where highly complex neural networks 'look' in an image for evidence for their predictions. However, these techniques are limited by their heuristic nature and architectural constraints. In this paper, we make two main contributions: First, we propose a general framework for learning different kinds of explanations for any black box algorithm. Second, we specialise the framework to find the part of an image most responsible for a classifier decision. Unlike previous works, our method is model-agnostic and testable because it is grounded in explicit and interpretable image perturbations.},
+archivePrefix = {arXiv},
+arxivId = {1704.03296},
+author = {Fong, Ruth C. and Vedaldi, Andrea},
+doi = {10.1109/ICCV.2017.371},
+eprint = {1704.03296},
+file = {:C\:/Users/jonat/Documents/Mendeley Desktop/Fong, Vedaldi_2017_Interpretable Explanations of Black Boxes by Meaningful Perturbation_Proceedings of the IEEE International Conference.pdf:pdf},
+isbn = {9781538610329},
+issn = {15505499},
+journal = {Proceedings of the IEEE International Conference on Computer Vision},
+mendeley-groups = {Machine Learning/Interpretability},
+pages = {3449--3457},
+title = {{Interpretable Explanations of Black Boxes by Meaningful Perturbation}},
+year = {2017}
+}
+
+@article{Fong2019,
+abstract = {Attribution is the problem of finding which parts of an image are the most responsible for the output of a deep neural network. An important family of attribution methods is based on measuring the effect of perturbations applied to the input image, either via exhaustive search or by finding representative perturbations via optimization. In this paper, we discuss some of the shortcomings of existing approaches to perturbation analysis and address them by introducing the concept of extremal perturbations, which are theoretically grounded and interpretable. We also introduce a number of technical innovations to compute these extremal perturbations, including a new area constraint and a parametric family of smooth perturbations, which allow us to remove all tunable weighing factors from the optimization problem. We analyze the effect of perturbations as a function of their area, demonstrating excellent sensitivity to the spatial properties of the network under stimulation. We also extend perturbation analysis to the intermediate layers of a deep neural network. This application allows us to show how compactly an image can be represented (in terms of the number of channels it requires). We also demonstrate that the consistency with which images of a given class rely on the same intermediate channel correlates well with class accuracy.},
+archivePrefix = {arXiv},
+arxivId = {1910.08485},
+author = {Fong, Ruth and Patrick, Mandela and Vedaldi, Andrea},
+doi = {10.1109/ICCV.2019.00304},
+eprint = {1910.08485},
+file = {:C\:/Users/jonat/Documents/Mendeley Desktop/Fong, Patrick, Vedaldi_2019_Understanding deep networks via extremal perturbations and smooth masks_Proceedings of the IEEE Internationa.pdf:pdf},
+isbn = {9781728148038},
+issn = {15505499},
+journal = {Proceedings of the IEEE International Conference on Computer Vision},
+mendeley-groups = {Machine Learning/Interpretability},
+pages = {2950--2958},
+title = {{Understanding deep networks via extremal perturbations and smooth masks}},
+year = {2019}
+}
+
+@article{Ji2017,
+abstract = {We present a novel deep neural network architecture for unsupervised subspace clustering. This architecture is built upon deep auto-encoders, which non-linearly map the input data into a latent space. Our key idea is to introduce a novel self-expressive layer between the encoder and the decoder to mimic the "self-expressiveness" property that has proven effective in traditional subspace clustering. Being differentiable, our new self-expressive layer provides a simple but effective way to learn pairwise affinities between all data points through a standard back-propagation procedure. Being nonlinear, our neural-network based method is able to cluster data points having complex (often nonlinear) structures. We further propose pre-training and fine-tuning strategies that let us effectively learn the parameters of our subspace clustering networks. Our experiments show that the proposed method significantly outperforms the state-of-the-art unsupervised subspace clustering methods.},
+archivePrefix = {arXiv},
+arxivId = {1709.02508},
+author = {Ji, Pan and Zhang, Tong and Li, Hongdong and Salzmann, Mathieu and Reid, Ian},
+eprint = {1709.02508},
+file = {::},
+journal = {Advances in Neural Information Processing Systems},
+mendeley-groups = {Machine Learning,Machine Learning/Unsupervised Learning,Machine Learning/Interpretability},
+pages = {24--33},
+publisher = {Neural information processing systems foundation},
+title = {{Deep Subspace Clustering Networks}},
+url = {http://arxiv.org/abs/1709.02508},
+year = {2017}
+}
+
+@article{Nguyen2021,
+	archivePrefix = {arXiv},
+	arxivId = {2105.14944},
+	author = {Nguyen, Giang and Kim, Daeyoung and Nguyen, Anh},
+	eprint = {2105.14944},
+	file = {:home/jonathan/.var/app/com.elsevier.MendeleyDesktop/data/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Nguyen, Kim, Nguyen - 2021 - The effectiveness of feature attribution methods and its correlation with automatic evaluation scores.pdf:pdf},
+	journal = {Advances in Neural Information Processing Systems},
+	volume = {35},
+	title = {{The effectiveness of feature attribution methods and its correlation with automatic evaluation scores}},
+	url = {https://arxiv.org/abs/2105.14944v2},
+	year = {2021}
+}
+
+@article{Crabbe2021,
+	archivePrefix = {arXiv},
+	arxivId = {2106.05303},
+	author = {Crabb{\'{e}}, Jonathan and van der Schaar, Mihaela},
+	eprint = {2106.05303},
+	journal = {International Conference on Machine Learning},
+	volume = {38},
+	title = {{Explaining Time Series Predictions with Dynamic Masks}},
+	url = {http://arxiv.org/abs/2106.05303},
+	year = {2021}
+}
+
+@article{Rai2019,
+	author = {Rai, Arun},
+	doi = {10.1007/S11747-019-00710-5},
+	issn = {1552-7824},
+	journal = {Journal of the Academy of Marketing Science 2019 48:1},
+	keywords = {Business and Management,Marketing,Social Sciences,general},
+	number = {1},
+	pages = {137--141},
+	publisher = {Springer},
+	title = {{Explainable AI: from black box to glass box}},
+	url = {https://link.springer.com/article/10.1007/s11747-019-00710-5},
+	volume = {48},
+	year = {2019}
+}
+
+@article{Gordetsky2016,
+	author = {Gordetsky, Jennifer and Epstein, Jonathan},
+	doi = {10.1186/S13000-016-0478-2},
+	journal = {Diagnostic Pathology},
+	keywords = {Grading,Prognosis,Prostate cancer},
+	number = {1},
+	pmid = {26956509},
+	publisher = {BioMed Central},
+	title = {{Grading of prostatic adenocarcinoma: current state and prognostic implications}},
+	url = {/pmc/articles/PMC4784293/ /pmc/articles/PMC4784293/?report=abstract https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4784293/},
+	volume = {11},
+	year = {2016}
+}
+

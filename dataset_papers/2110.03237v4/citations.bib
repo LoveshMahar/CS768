@@ -1,0 +1,112 @@
+ @article{benamou2020capacity,
+  title={Capacity constrained entropic optimal transport, Sinkhorn saturated domain out-summation and vanishing temperature},
+  author={Benamou, Jean-David and Martinet, M{\'e}lanie},
+  year={2020}
+}
+ 
+ @inproceedings{Allen-Zhu_Li_Song_2019, series={Proceedings of Machine Learning Research}, title={A Convergence Theory for Deep Learning via Over-Parameterization}, volume={97}, url={http://proceedings.mlr.press/v97/allen-zhu19a.html}, abstractNote={Deep neural networks (DNNs) have demonstrated dominating performance in many fields; since AlexNet, networks used in practice are going wider and deeper. On the theoretical side, a long line of works have been focusing on why we can train neural networks when there is only one hidden layer. The theory of multi-layer networks remains unsettled. In this work, we prove simple algorithms such as stochastic gradient descent (SGD) can find Global Minima on the training objective of DNNs in Polynomial Time. We only make two assumptions: the inputs do not degenerate and the network is over-parameterized. The latter means the number of hidden neurons is sufficiently large: polynomial in L, the number of DNN layers and in n, the number of training samples. As concrete examples, starting from randomly initialized weights, we show that SGD attains 100% training accuracy in classification tasks, or minimizes regression loss in linear convergence speed eps &nbsp; e^-T, with running time polynomial in n and L. Our theory applies to the widely-used but non-smooth ReLU activation, and to any smooth and possibly non-convex loss functions. In terms of network architectures, our theory at least applies to fully-connected neural networks, convolutional neural networks (CNN), and residual neural networks (ResNet).}, booktitle={Proceedings of the 36th International Conference on Machine Learning}, publisher={PMLR}, author={Allen-Zhu, Zeyuan and Li, Yuanzhi and Song, Zhao}, editor={Chaudhuri, Kamalika and Salakhutdinov, Ruslan}, year={2019}, month={Jun}, pages={242–252}, collection={Proceedings of Machine Learning Research} }
+ @inproceedings{Blondel_Seguy_Rolet_2018, series={Proceedings of Machine Learning Research}, title={Smooth and Sparse Optimal Transport}, volume={84}, url={http://proceedings.mlr.press/v84/blondel18a.html}, abstractNote={Entropic regularization is quickly emerging as a new standard in optimal transport (OT). It enables to cast the OT computation as a differentiable and unconstrained convex optimization problem, which can be efficiently solved using the Sinkhorn algorithm. However, entropy keeps the transportation plan strictly positive and therefore completely dense, unlike unregularized OT. This lack of sparsity can be problematic in applications where the transportation plan itself is of interest. In this paper, we explore regularizing the primal and dual OT formulations with a strongly convex term, which corresponds to relaxing the dual and primal constraints with smooth approximations. We show how to incorporate squared $2$-norm and group lasso regularizations within that framework, leading to sparse and group-sparse transportation plans. On the theoretical side, we bound the approximation error introduced by regularizing the primal and dual formulations. Our results suggest that, for the regularized primal, the approximation error can often be smaller with squared $2$-norm than with entropic regularization. We showcase our proposed framework on the task of color transfer.}, booktitle={Proceedings of the Twenty-First International Conference on Artificial Intelligence and Statistics}, publisher={PMLR}, author={Blondel, Mathieu and Seguy, Vivien and Rolet, Antoine}, editor={Storkey, Amos and Perez-Cruz, Fernando}, year={2018}, month={Apr}, pages={880–889}, collection={Proceedings of Machine Learning Research} }
+ @book{Borwein_Lewis_2005, title={Convex Analysis and Nonlinear Optimization: Theory and Examples}, ISBN={978-0-387-29570-1}, publisher={Springer Science & Business Media}, author={Borwein, Jonathan M. and Lewis, Adrian S.}, year={2005}, month={Nov} }
+ @article{Chizat_Peyré_Schmitzer_Vialard_2018, title={Scaling algorithms for unbalanced optimal transport problems}, volume={87}, number={314}, journal={Mathematics of Computation}, author={Chizat, Lenaic and Peyré, Gabriel and Schmitzer, Bernhard and Vialard, François-Xavier}, year={2018}, pages={2563–2609} }
+ @article{Chizat_Roussillon_Léger_Vialard_Peyré_2020, title={Faster Wasserstein Distance Estimation with the Sinkhorn Divergence}, volume={33}, journal={Advances in Neural Information Processing Systems}, author={Chizat, Lenaic and Roussillon, Pierre and Léger, Flavien and Vialard, François-Xavier and Peyré, Gabriel}, year={2020} }
+ @inproceedings{Cuturi_2013, title={Sinkhorn Distances: Lightspeed Computation of Optimal Transport}, volume={26}, url={https://proceedings.neurips.cc/paper/2013/file/af21d0c97db2e27e13572cbf59eb343d-Paper.pdf}, booktitle={Advances in Neural Information Processing Systems}, publisher={Curran Associates, Inc.}, author={Cuturi, Marco}, editor={Burges, C. J. C. and Bottou, L. and Welling, M. and Ghahramani, Z. and Weinberger, K. Q.}, year={2013} }
+ 
+ 
+ @inproceedings{Du_Hu_2019, series={Proceedings of Machine Learning Research}, title={Width Provably Matters in Optimization for Deep Linear Neural Networks}, volume={97}, url={http://proceedings.mlr.press/v97/du19a.html}, abstractNote={We prove that for an $L$-layer fully-connected linear neural network, if the width of every hidden layer is $widetildeØmegaleft(L cdot r cdot d_out cdot kappa^3 right)$, where $r$ and κ are the rank and the condition number of the input data, and out is the output dimension, then gradient descent with Gaussian random initialization converges to a global minimum at a linear rate. The number of iterations to find an ϵ-suboptimal solution is $O(kappa log(frac1epsilon))$. Our polynomial upper bound on the total running time for wide deep linear networks and the $expleft(Ømegaleft(Lright)right)$ lower bound for narrow deep linear neural networks [Shamir, 2018] together demonstrate that wide layers are necessary for optimizing deep models.}, booktitle={Proceedings of the 36th International Conference on Machine Learning}, publisher={PMLR}, author={Du, Simon and Hu, Wei}, editor={Chaudhuri, Kamalika and Salakhutdinov, Ruslan}, year={2019}, month={Jun}, pages={1655–1664}, collection={Proceedings of Machine Learning Research} }
+ @inproceedings{Du_Lee_Li_Wang_Zhai_2019, series={Proceedings of Machine Learning Research}, title={Gradient Descent Finds Global Minima of Deep Neural Networks}, volume={97}, url={http://proceedings.mlr.press/v97/du19c.html}, abstractNote={Gradient descent finds a global minimum in training deep neural networks despite the objective function being non-convex. The current paper proves gradient descent achieves zero training loss in polynomial time for a deep over-parameterized neural network with residual connections (ResNet). Our analysis relies on the particular structure of the Gram matrix induced by the neural network architecture. This structure allows us to show the Gram matrix is stable throughout the training process and this stability implies the global optimality of the gradient descent algorithm. We further extend our analysis to deep residual convolutional neural networks and obtain a similar convergence result.}, booktitle={Proceedings of the 36th International Conference on Machine Learning}, publisher={PMLR}, author={Du, Simon and Lee, Jason and Li, Haochuan and Wang, Liwei and Zhai, Xiyu}, editor={Chaudhuri, Kamalika and Salakhutdinov, Ruslan}, year={2019}, month={Jun}, pages={1675–1685}, collection={Proceedings of Machine Learning Research} }
+ @inproceedings{Genevay_Chizat_Bach_Cuturi_Peyré_2019, title={Sample complexity of sinkhorn divergences}, booktitle={The 22nd International Conference on Artificial Intelligence and Statistics}, publisher={PMLR}, author={Genevay, Aude and Chizat, Lénaic and Bach, Francis and Cuturi, Marco and Peyré, Gabriel}, year={2019}, pages={1574–1583} }
+ @article{Kakade_Shalev-Shwartz_Tewari, title={On the duality of strong convexity and strong smoothness: Learning applications and matrix regularization}, author={Kakade, Sham M and Shalev-Shwartz, Shai and Tewari, Ambuj}, pages={10} }
+ @article{MNIST, title={MNIST handwritten digit database}, volume={2}, journal={ATT Labs [Online]. Available: http://yann.lecun.com/exdb/mnist}, author={LeCun, Yann and Cortes, Corinna and Burges, CJ}, year={2010} }
+ @inproceedings{Li_Genevay_Yurochkin_Solomon_2020, title={Continuous Regularized Wasserstein Barycenters}, volume={33}, url={https://proceedings.neurips.cc/paper/2020/file/cdf1035c34ec380218a8cc9a43d438f9-Paper.pdf}, booktitle={Advances in Neural Information Processing Systems}, publisher={Curran Associates, Inc.}, author={Li, Lingxiao and Genevay, Aude and Yurochkin, Mikhail and Solomon, Justin M}, editor={Larochelle, H. and Ranzato, M. and Hadsell, R. and Balcan, M. F. and Lin, H.}, year={2020}, pages={17755–17765} }
+ @inproceedings{Liu_Zhu_Belkin_2020, title={On the linearity of large non-linear models: when and why the tangent kernel is constant}, volume={33}, url={https://proceedings.neurips.cc/paper/2020/file/b7ae8fecf15b8b6c3c69eceae636d203-Paper.pdf}, booktitle={Advances in Neural Information Processing Systems}, publisher={Curran Associates, Inc.}, author={Liu, Chaoyue and Zhu, Libin and Belkin, Misha}, editor={Larochelle, H. and Ranzato, M. and Hadsell, R. and Balcan, M. F. and Lin, H.}, year={2020}, pages={15954–15964} }
+ @inproceedings{Luise_Salzo_Pontil_Ciliberto_2019, title={Sinkhorn Barycenters with Free Support via Frank-Wolfe Algorithm}, volume={32}, url={https://proceedings.neurips.cc/paper/2019/file/9f96f36b7aae3b1ff847c26ac94c604e-Paper.pdf}, booktitle={Advances in Neural Information Processing Systems}, publisher={Curran Associates, Inc.}, author={Luise, Giulia and Salzo, Saverio and Pontil, Massimiliano and Ciliberto, Carlo}, editor={Wallach, H. and Larochelle, H. and Beygelzimer, A. and Alché-Buc, F. d\textquotesingle and Fox, E. and Garnett, R.}, year={2019}, pages={9322–9333} }
+ @book{usps, title={Handwritten character recognition using neural network architectures}, url={/paper/Handwritten-character-recognition-using-neural-Matan-Kiang/8f2b909fa1aad7e9f13603d721ff953325a4f97d}, journal={undefined}, author={Matan, O. and Kiang, R. and Stenard, C. E. and Boser, B. E. and Denker, J. and Denker, J. and Henderson, D. and Howard, R. and Hubbard, W. and Jackel, L. and et al.}, year={1990} }
+ @article{Melbourne_2020, title={Strongly Convex Divergences}, volume={22}, DOI={10.3390/e22111327}, number={1111}, journal={Entropy}, publisher={Multidisciplinary Digital Publishing Institute}, author={Melbourne, James}, year={2020}, month={Nov}, pages={1327} }
+ @inproceedings{Mena_Niles-Weed_2019, title={Statistical bounds for entropic optimal transport: sample complexity and the central limit theorem}, volume={32}, url={https://proceedings.neurips.cc/paper/2019/file/5acdc9ca5d99ae66afdfe1eea0e3b26b-Paper.pdf}, booktitle={Advances in Neural Information Processing Systems}, publisher={Curran Associates, Inc.}, author={Mena, Gonzalo and Niles-Weed, Jonathan}, editor={Wallach, H. and Larochelle, H. and Beygelzimer, A. and Alché-Buc, F. d\textquotesingle and Fox, E. and Garnett, R.}, year={2019}, pages={4541–4551} }
+ @inbook{Owen_2013, title={Importance Sampling}, booktitle={Monte Carlo theory, methods and examples}, author={Owen, Art B.}, year={2013} }
+ @article{Rockafellar_1967, title={Duality and stability in extremum problems involving convex functions}, volume={21}, number={1}, journal={Pacific Journal of Mathematics}, publisher={Mathematical Sciences Publishers}, author={Rockafellar, Ralph}, year={1967}, pages={167–187} }
+ @inproceedings{Scetbon_Cuturi_2020, title={Linear Time Sinkhorn Divergences using Positive Features}, booktitle={Neurips 2020}, author={Scetbon, Meyer and Cuturi, Marco}, year={2020} }
+ @inproceedings{Seguy_Damodaran_Flamary_Courty_Rolet_Blondel_2018, title={Large Scale Optimal Transport and Mapping Estimation}, url={https://openreview.net/forum?id=B1zlp1bRW}, booktitle={International Conference on Learning Representations}, author={Seguy, Vivien and Damodaran, Bharath Bhushan and Flamary, Remi and Courty, Nicolas and Rolet, Antoine and Blondel, Mathieu}, year={2018} }
+ @article{Singh_Póczos_2018, title={Minimax distribution estimation in Wasserstein distance}, journal={arXiv preprint arXiv:1802.08855}, author={Singh, Shashank and Póczos, Barnabás}, year={2018} }
+ @article{Sinkhorn_1966, title={A Relationship between Arbitrary Positive Matrices and Stochastic Matrices}, volume={18}, ISSN={0008-414X, 1496-4279}, DOI={10.4153/CJM-1966-033-9}, journal={Canadian Journal of Mathematics}, publisher={Cambridge University Press}, author={Sinkhorn, Richard}, year={1966}, pages={303–306} }
+ @inproceedings{Song_Ermon_2020, title={Improved Techniques for Training Score-Based Generative Models}, booktitle={Advances in Neural Information Processing Systems 33: Annual Conference on Neural Information Processing Systems 2020, NeurIPS 2020, December 6-12, 2020, virtual}, author={Song, Yang and Ermon, Stefano}, editor={Larochelle, Hugo and Ranzato, Marc’Aurelio and Hadsell, Raia and Balcan, Maria-Florina and Lin, Hsuan-Tien}, year={2020} }
+ @article{Thorpe, title={Introduction to Optimal Transport}, author={Thorpe, Matthew}, pages={56} }
+ @book{Vacher_Muzellec_Rudi_Bach_Vialard_2021, title={A Dimension-free Computational Upper-bound for Smooth Optimal Transport Estimation}, author={Vacher, Adrien and Muzellec, Boris and Rudi, Alessandro and Bach, Francis and Vialard, Francois-Xavier}, year={2021} }
+ @book{Villani_2009, series={Grundlehren der mathematischen Wissenschaften}, title={Optimal Transport: Old and New}, ISBN={978-3-540-71049-3}, url={https://www.springer.com/gp/book/9783540710493}, DOI={10.1007/978-3-540-71050-9}, publisher={Springer-Verlag}, author={Villani, Cédric}, year={2009}, collection={Grundlehren der mathematischen Wissenschaften} }
+ @inproceedings{Weed_Berthet_2019, title={Estimation of smooth densities in Wasserstein distance}, booktitle={Conference on Learning Theory}, publisher={PMLR}, author={Weed, Jonathan and Berthet, Quentin}, year={2019}, pages={3118–3119} }
+
+ @article{Kouw_Loog_2019, title={An introduction to domain adaptation and transfer learning}, url={http://arxiv.org/abs/1812.11806}, abstractNote={In machine learning, if the training data is an unbiased sample of an underlying distribution, then the learned classification function will make accurate predictions for new samples. However, if the training data is not an unbiased sample, then there will be differences between how the training data is distributed and how the test data is distributed. Standard classifiers cannot cope with changes in data distributions between training and test phases, and will not perform well. Domain adaptation and transfer learning are sub-fields within machine learning that are concerned with accounting for these types of changes. Here, we present an introduction to these fields, guided by the question: when and how can a classifier generalize from a source to a target domain? We will start with a brief introduction into risk minimization, and how transfer learning and domain adaptation expand upon this framework. Following that, we discuss three special cases of data set shift, namely prior, covariate and concept shift. For more complex domain shifts, there are a wide variety of approaches. These are categorized into: importance-weighting, subspace mapping, domain-invariant spaces, feature augmentation, minimax estimators and robust algorithms. A number of points will arise, which we will discuss in the last section. We conclude with the remark that many open questions will have to be addressed before transfer learners and domain-adaptive classifiers become practical.}, note={arXiv: 1812.11806}, journal={arXiv:1812.11806 [cs, stat]}, author={Kouw, Wouter M. and Loog, Marco}, year={2019}, month={Jan} }
+
+ @book{Villani_Society_2003, series={Graduate studies in mathematics}, title={Topics in Optimal Transportation}, ISBN={978-0-8218-3312-4}, url={https://books.google.com/books?id=R_nWqjq89oEC}, publisher={American Mathematical Society}, author={Villani, C.}, year={2003}, collection={Graduate studies in mathematics} }
+
+ @article{Nowozin_Cseke_Tomioka_2016, title={f-GAN: Training Generative Neural Samplers using Variational Divergence Minimization}, volume={29}, url={https://proceedings.neurips.cc/paper/2016/hash/cedebb6e872f539bef8c3f919874e9d7-Abstract.html}, journal={Advances in Neural Information Processing Systems}, author={Nowozin, Sebastian and Cseke, Botond and Tomioka, Ryota}, year={2016} }
+
+ @book{Boyd_Boyd_Vandenberghe_Press_2004, series={Berichte über verteilte messysteme}, title={Convex Optimization}, ISBN={978-0-521-83378-3}, url={https://books.google.com/books?id=mYm0bLd3fcoC}, publisher={Cambridge University Press}, author={Boyd, S. and Boyd, S.P. and Vandenberghe, L. and Press, Cambridge University}, year={2004}, collection={Berichte über verteilte messysteme} }
+
+@inproceedings{liu2015faceattributes,
+ title = {Deep Learning Face Attributes in the Wild},
+ author = {Liu, Ziwei and Luo, Ping and Wang, Xiaogang and Tang, Xiaoou},
+ booktitle = {Proceedings of International Conference on Computer Vision (ICCV)},
+ month = {December},
+ year = {2015} 
+}
+@inproceedings{
+jalal2020compressed,
+title={Compressed Sensing with Approximate Priors via Conditional Resampling},
+author={Ajil Jalal and Sushrut Karmalkar and Alex Dimakis and Eric Price},
+booktitle={NeurIPS 2020 Workshop on Deep Learning and Inverse Problems},
+year={2020},
+url={https://openreview.net/forum?id=8ozSD4Oymw}
+}
+
+@inproceedings{
+jolicoeur-martineau2021adversarial,
+title={Adversarial score matching and improved sampling for image generation},
+author={Alexia Jolicoeur-Martineau and R{\'e}mi Pich{\'e}-Taillefer and Ioannis Mitliagkas and Remi Tachet des Combes},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=eLfqMl3z3lq}
+}
+
+@inproceedings{janati2020,
+title	= {Entropic Optimal Transport between Unbalanced Gaussian Measures has a Closed Form},
+author	= {Hicham Janati and Boris Muzellec and Gabriel Peyré and Marco Cuturi},
+year	= {2020},
+booktitle	= {Neurips 2020}
+}
+
+
+
+@InProceedings{chen-2021,
+  title = 	 {Scalable Computations of Wasserstein Barycenter via Input Convex Neural Networks},
+  author =       {Chen, Yongxin and Fan, Jiaojiao and Taghvaei, Amirhossein},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {1571--1581},
+  year = 	 {2021},
+  editor = 	 {Meila, Marina and Zhang, Tong},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {18--24 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v139/chen21e/chen21e.pdf},
+  url = 	 {https://proceedings.mlr.press/v139/chen21e.html},
+  abstract = 	 {Wasserstein Barycenter is a principled approach to represent the weighted mean of a given set of probability distributions, utilizing the geometry induced by optimal transport. In this work, we present a novel scalable algorithm to approximate the Wasserstein Barycenters aiming at high-dimensional applications in machine learning. Our proposed algorithm is based on the Kantorovich dual formulation of the Wasserstein-2 distance as well as a recent neural network architecture, input convex neural network, that is known to parametrize convex functions. The distinguishing features of our method are: i) it only requires samples from the marginal distributions; ii) unlike the existing approaches, it represents the Barycenter with a generative model and can thus generate infinite samples from the barycenter without querying the marginal distributions; iii) it works similar to Generative Adversarial Model in one marginal case. We demonstratethe efficacy of our algorithm by comparing it with the state-of-art methods in multiple experiments.}
+} 
+
+@inproceedings{
+korotin2021wasserstein,
+title={Wasserstein-2 Generative Networks},
+author={Alexander Korotin and Vage Egiazarian and Arip Asadulaev and Alexander Safin and Evgeny Burnaev},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=bEoxzW_EXsa}
+}
+
+@misc{leygonie2019adversarial,
+      title={Adversarial Computation of Optimal Transport Maps}, 
+      author={Jacob Leygonie and Jennifer She and Amjad Almahairi and Sai Rajeswar and Aaron Courville},
+      year={2019},
+      eprint={1906.09691},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}

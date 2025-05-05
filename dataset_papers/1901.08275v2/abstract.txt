@@ -1,0 +1,19 @@
+In a standard setting of Bayesian optimization (BO), the objective function
+evaluation is assumed to be highly expensive. Multi-fidelity Bayesian
+optimization (MFBO) accelerates BO by incorporating lower fidelity observations
+available with a lower sampling cost. In this paper, we focus on the
+information-based approach, which is a popular and empirically successful
+approach in BO. For MFBO, however, existing information-based methods are
+plagued by difficulty in estimating the information gain. We propose an
+approach based on max-value entropy search (MES), which greatly facilitates
+computations by considering the entropy of the optimal function value instead
+of the optimal input point. We show that, in our multi-fidelity MES (MF-MES),
+most of additional computations, compared with usual MES, is reduced to
+analytical computations. Although an additional numerical integration is
+necessary for the information across different fidelities, this is only in one
+dimensional space, which can be performed efficiently and accurately. Further,
+we also propose parallelization of MF-MES. Since there exist a variety of
+different sampling costs, queries typically occur asynchronously in MFBO. We
+show that similar simple computations can be derived for asynchronous parallel
+MFBO. We demonstrate effectiveness of our approach by using benchmark datasets
+and a real-world application to materials science data.

@@ -1,0 +1,14 @@
+This paper studies how neural network architecture affects the speed of
+training. We introduce a simple concept called gradient confusion to help
+formally analyze this. When gradient confusion is high, stochastic gradients
+produced by different data samples may be negatively correlated, slowing down
+convergence. But when gradient confusion is low, data samples interact
+harmoniously, and training proceeds quickly. Through theoretical and
+experimental results, we demonstrate how the neural network architecture
+affects gradient confusion, and thus the efficiency of training. Our results
+show that, for popular initialization techniques, increasing the width of
+neural networks leads to lower gradient confusion, and thus faster model
+training. On the other hand, increasing the depth of neural networks has the
+opposite effect. Our results indicate that alternate initialization techniques
+or networks using both batch normalization and skip connections help reduce the
+training burden of very deep networks.

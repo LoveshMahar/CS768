@@ -1,0 +1,26 @@
+Offline (or batch) reinforcement learning (RL) algorithms seek to learn an
+optimal policy from a fixed dataset without active data collection. Based on
+the composition of the offline dataset, two main categories of methods are
+used: imitation learning which is suitable for expert datasets and vanilla
+offline RL which often requires uniform coverage datasets. From a practical
+standpoint, datasets often deviate from these two extremes and the exact data
+composition is usually unknown a priori. To bridge this gap, we present a new
+offline RL framework that smoothly interpolates between the two extremes of
+data composition, hence unifying imitation learning and vanilla offline RL. The
+new framework is centered around a weak version of the concentrability
+coefficient that measures the deviation from the behavior policy to the expert
+policy alone.
+  Under this new framework, we further investigate the question on algorithm
+design: can one develop an algorithm that achieves a minimax optimal rate and
+also adapts to unknown data composition? To address this question, we consider
+a lower confidence bound (LCB) algorithm developed based on pessimism in the
+face of uncertainty in offline RL. We study finite-sample properties of LCB as
+well as information-theoretic limits in multi-armed bandits, contextual
+bandits, and Markov decision processes (MDPs). Our analysis reveals surprising
+facts about optimality rates. In particular, in all three settings, LCB
+achieves a faster rate of $1/N$ for nearly-expert datasets compared to the
+usual rate of $1/\sqrt{N}$ in offline RL, where $N$ is the number of samples in
+the batch dataset. In the case of contextual bandits with at least two
+contexts, we prove that LCB is adaptively optimal for the entire data
+composition range, achieving a smooth transition from imitation learning to
+offline RL. We further show that LCB is almost adaptively optimal in MDPs.

@@ -1,0 +1,21 @@
+Sliced mutual information (SMI) is defined as an average of mutual
+information (MI) terms between one-dimensional random projections of the random
+variables. It serves as a surrogate measure of dependence to classic MI that
+preserves many of its properties but is more scalable to high dimensions.
+However, a quantitative characterization of how SMI itself and estimation rates
+thereof depend on the ambient dimension, which is crucial to the understanding
+of scalability, remain obscure. This work provides a multifaceted account of
+the dependence of SMI on dimension, under a broader framework termed $k$-SMI,
+which considers projections to $k$-dimensional subspaces. Using a new result on
+the continuity of differential entropy in the 2-Wasserstein metric, we derive
+sharp bounds on the error of Monte Carlo (MC)-based estimates of $k$-SMI, with
+explicit dependence on $k$ and the ambient dimension, revealing their interplay
+with the number of samples. We then combine the MC integrator with the neural
+estimation framework to provide an end-to-end $k$-SMI estimator, for which
+optimal convergence rates are established. We also explore asymptotics of the
+population $k$-SMI as dimension grows, providing Gaussian approximation results
+with a residual that decays under appropriate moment bounds. All our results
+trivially apply to SMI by setting $k=1$. Our theory is validated with numerical
+experiments and is applied to sliced InfoGAN, which altogether provide a
+comprehensive quantitative account of the scalability question of $k$-SMI,
+including SMI as a special case when $k=1$.

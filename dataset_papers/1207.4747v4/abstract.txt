@@ -1,0 +1,11 @@
+We propose a randomized block-coordinate variant of the classic Frank-Wolfe
+algorithm for convex optimization with block-separable constraints. Despite its
+lower iteration cost, we show that it achieves a similar convergence rate in
+duality gap as the full Frank-Wolfe algorithm. We also show that, when applied
+to the dual structural support vector machine (SVM) objective, this yields an
+online algorithm that has the same low iteration complexity as primal
+stochastic subgradient methods. However, unlike stochastic subgradient methods,
+the block-coordinate Frank-Wolfe algorithm allows us to compute the optimal
+step-size and yields a computable duality gap guarantee. Our experiments
+indicate that this simple algorithm outperforms competing structural SVM
+solvers.

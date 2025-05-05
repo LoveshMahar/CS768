@@ -1,0 +1,595 @@
+
+@inproceedings{liu2022masked,
+  title={Masked Autoencoding for Scalable and Generalizable Decision Making},
+  author={Liu, Fangchen and Liu, Hao and Grover, Aditya and Abbeel, Pieter},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  pdf={https://arxiv.org/abs/2211.12740},
+  year={2022},
+  abstract={We are interested in learning scalable agents for reinforcement learning that can learn from large-scale, diverse sequential data similar to current large vision and language models. To this end, this paper presents masked decision prediction (MaskDP), a simple and scalable self-supervised pretraining method for reinforcement learning (RL) and behavioral cloning (BC). In our MaskDP approach, we employ a masked autoencoder (MAE) to state-action trajectories, wherein we randomly mask state and action tokens and reconstruct the missing data. By doing so, the model is required to infer masked out states and actions and extract information about dynamics. We find that masking different proportions of the input sequence significantly helps with learning a better model that generalizes well to multiple downstream tasks. In our empirical study we ﬁnd that a MaskDP model gains the capability of zero-shot transfer to new BC tasks, such as single and multiple goal reaching, and it can zero-shot infer skills from a few example transitions. In addition, MaskDP transfers well to offline RL and shows promising scaling behavior w.r.t. to model size. It is amenable to data efficient finetuning, achieving competitive results with prior methods based on autoregressive pretraining.},
+  code={https://github.com/FangchenLiu/MaskDP_public},
+  abbr={NeurIPS}
+}
+
+@inproceedings{onlinedt, 
+  title={Online decision transformer}, 
+  author={Zheng, Qinqing and Zhang, Amy and Grover, Aditya}, 
+  booktitle={International Conference on Machine Learning (ICML)}, 
+  pages={27042--27059}, 
+  year={2022}, 
+  abbr={ICML},
+  pdf={https://arxiv.org/abs/2202.05607},
+  abstract={Recent work has shown that offline reinforcement learning (RL) can be formulated as a sequence modeling problem (Chen et al., 2021; Janner et al., 2021) and solved via approaches similar to large-scale language modeling. However, any practical instantiation of RL also involves an online component, where policies pretrained on passive offline datasets are finetuned via task-specific interactions with the environment. We propose Online Decision Transformers (ODT), an RL algorithm based on sequence modeling that blends offline pretraining with online finetuning in a unified framework. Our framework uses sequence-level entropy regularizers in conjunction with autoregressive modeling objectives for sample-efficient exploration and finetuning. Empirically, we show that ODT is competitive with the state-of-the-art in abstractolute performance on the D4RL benchmark but shows much more significant gains during the finetuning procedure.},
+  award={Long Oral Presentation}
+  }
+@InProceedings{guo2021learning,
+  title={Learning from an Exploring Demonstrator: Optimal Reward Estimation for Bandits},
+  author={Guo, Wenshuo and Agrawal, Kumar Krishna and Grover, Aditya and Muthukumar, Vidya and Pananjady, Ashwin},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  pdf={https://arxiv.org/abs/2106.14866},
+  year={2021},
+  abstract={We introduce the "inverse bandit" problem of estimating the rewards of a multi-armed bandit instance from observing the learning process of a low-regret demonstrator. Existing approaches to the related problem of inverse reinforcement learning assume the execution of an optimal policy, and thereby suffer from an identifiability issue. In contrast, we propose to leverage the demonstrator's behavior en route to optimality, and in particular, the exploration phase, for reward estimation. We begin by establishing a general information-theoretic lower bound under this paradigm that applies to any demonstrator algorithm, which characterizes a fundamental tradeoff between reward estimation and the amount of exploration of the demonstrator. Then, we develop simple and efficient reward estimators for upper-confidence-based demonstrator algorithms that attain the optimal tradeoff, showing in particular that consistent reward estimation -- free of identifiability issues -- is possible under our paradigm. Extensive simulations on both synthetic and semi-synthetic data corroborate our theoretical results.},
+  abbr={AISTATS}
+}
+
+@article{design-bench,
+	title        = {Design-Bench: Benchmarks for Data-Driven Offline Model-Based Optimization},
+	author       = {Brandon Trabucco and Xinyang Geng and Aviral Kumar and Sergey Levine},
+	year         = 2022,
+	journal      = {CoRR},
+	volume       = {abs/2202.08450},
+	eprinttype   = {arXiv},
+	eprint       = {2202.08450},
+	timestamp    = {Tue, 01 Mar 2022 14:36:22 +0100},
+	biburl       = {https://dblp.org/rec/journals/corr/abs-2202-08450.bib},
+	bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+@inproceedings{mins,
+	title        = {Model Inversion Networks for Model-Based Optimization},
+	author       = {Kumar, Aviral and Levine, Sergey},
+	year         = 2020,
+	booktitle    = {Advances in Neural Information Processing Systems},
+}
+@inproceedings{coms,
+	title        = {Conservative Objective Models for Effective Offline Model-Based Optimization},
+	author       = {Trabucco, Brandon and Kumar, Aviral and Geng, Xinyang and Levine, Sergey},
+	year         = 2021,
+	month        = {18--24 Jul},
+	booktitle    = {Proceedings of the 38th International Conference on Machine Learning},
+	abstract     = {In this paper, we aim to solve data-driven model-based optimization (MBO) problems, where the goal is to find a design input that maximizes an unknown objective function provided access to only a static dataset of inputs and their corresponding objective values. Such data-driven optimization procedures are the only practical methods in many real-world domains where active data collection is expensive (e.g., when optimizing over proteins) or dangerous (e.g., when optimizing over aircraft designs, actively evaluating malformed aircraft designs is unsafe). Typical methods for MBO that optimize the input against a learned model of the unknown score function are affected by erroneous overestimation in the learned model caused due to distributional shift, that drives the optimizer to low-scoring or invalid inputs. To overcome this, we propose conservative objective models (COMs), a method that learns a model of the objective function which lower bounds the actual value of the ground-truth objective on out-of-distribution inputs and uses it for optimization. In practice, COMs outperform a number existing methods on a wide range of MBO problems, including optimizing controller parameters, robot morphologies, and superconducting materials.}
+}
+@inproceedings{cnp,
+	title        = {Conditional Neural Processes},
+	author       = {Garnelo, Marta and Rosenbaum, Dan and Maddison, Christopher and Ramalho, Tiago and Saxton, David and Shanahan, Murray and Teh, Yee Whye and Rezende, Danilo and Eslami, S. M. Ali},
+	year         = 2018,
+	month        = {10--15 Jul},
+	booktitle    = {Proceedings of the 35th International Conference on Machine Learning},
+	publisher    = {PMLR},
+	series       = {Proceedings of Machine Learning Research},
+	abstract     = {Deep neural networks excel at function approximation, yet they are typically trained from scratch for each new function. On the other hand, Bayesian methods, such as Gaussian Processes (GPs), exploit prior knowledge to quickly infer the shape of a new function at test time. Yet, GPs are computationally expensive, and it can be hard to design appropriate priors. In this paper we propose a family of neural models, Conditional Neural Processes (CNPs), that combine the benefits of both. CNPs are inspired by the flexibility of stochastic processes such as GPs, but are structured as neural networks and trained via gradient descent. CNPs make accurate predictions after observing only a handful of training data points, yet scale to complex functions and large datasets. We demonstrate the performance and versatility of the approach on a range of canonical machine learning tasks, including regression, classification and image completion.}
+}
+@article{chen2021decisiontransformer,
+	title        = {Decision Transformer: Reinforcement Learning via Sequence Modeling},
+	author       = {Lili Chen and Kevin Lu and Aravind Rajeswaran and Kimin Lee and Aditya Grover and Michael Laskin and Pieter Abbeel and Aravind Srinivas and Igor Mordatch},
+	year         = 2021,
+	journal      = {arXiv preprint arXiv:2106.01345}
+}
+@inproceedings{transformer,
+	title        = {Attention is All you Need},
+	author       = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, \L ukasz and Polosukhin, Illia},
+	year         = 2017,
+	booktitle    = {Advances in Neural Information Processing Systems},
+	editor       = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett}
+}
+@article{radford2019language,
+	title        = {Language Models are Unsupervised Multitask Learners},
+	author       = {Radford, Alec and Wu, Jeff and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya},
+	year         = 2019
+}
+@inproceedings{cbas,
+	title        = {Conditioning by adaptive sampling for robust design},
+	author       = {Brookes, David and Park, Hahnbeom and Listgarten, Jennifer},
+	year         = 2019,
+	month        = {09--15 Jun},
+	booktitle    = {Proceedings of the 36th International Conference on Machine Learning},
+	publisher    = {PMLR},
+	series       = {Proceedings of Machine Learning Research},
+	volume       = 97,
+	pages        = {773--782},
+	abstract     = {We present a method for design problems wherein the goal is to maximize or specify the value of one or more properties of interest (e.g. maximizing the fluorescence of a protein). We assume access to black box, stochastic “oracle" predictive functions, each of which maps from design space to a distribution over properties of interest. Because many state-of-the-art predictive models are known to suffer from pathologies, especially for data far from the training distribution, the problem becomes different from directly optimizing the oracles. Herein, we propose a method to solve this problem that uses model-based adaptive sampling to estimate a distribution over the design space, conditioned on the desired properties.}
+}
+@inproceedings{reinforce,
+	title        = {Policy Gradient Methods for Reinforcement Learning with Function Approximation},
+	author       = {Sutton, Richard S and McAllester, David and Singh, Satinder and Mansour, Yishay},
+	year         = 1999,
+	booktitle    = {Advances in Neural Information Processing Systems},
+}
+@misc{autocbas,
+	title        = {Autofocused oracles for model-based design},
+	author       = {Fannjiang, Clara and Listgarten, Jennifer},
+	year         = 2020,
+	publisher    = {arXiv},
+	copyright    = {Creative Commons Attribution 4.0 International},
+	keywords     = {Machine Learning (cs.LG), Quantitative Methods (q-bio.QM), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Biological sciences, FOS: Biological sciences}
+}
+@article{riquelme2018deepbandit,
+	title        = {Deep bayesian bandits showdown: An empirical comparison of bayesian deep networks for thompson sampling},
+	author       = {Riquelme, Carlos and Tucker, George and Snoek, Jasper},
+	year         = 2018,
+	journal      = {arXiv preprint arXiv:1802.09127}
+}
+@misc{snoek_bayesopt,
+	title        = {Practical Bayesian Optimization of Machine Learning Algorithms},
+	author       = {Snoek, Jasper and Larochelle, Hugo and Adams, Ryan P.},
+	year         = 2012,
+	publisher    = {arXiv},
+	copyright    = {arXiv.org perpetual, non-exclusive license},
+	keywords     = {Machine Learning (stat.ML), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences}
+}
+@article{cmaes_2,
+  title={The CMA evolution strategy: A tutorial},
+  author={Hansen, Nikolaus},
+  journal={arXiv preprint arXiv:1604.00772},
+  year={2016}
+}
+
+@misc{gato_deepmind,
+	title        = {A Generalist Agent},
+	author       = {Reed, Scott and Zolna, Konrad and Parisotto, Emilio and Colmenarejo, Sergio Gomez and Novikov, Alexander and Barth-Maron, Gabriel and Gimenez, Mai and Sulsky, Yury and Kay, Jackie and Springenberg, Jost Tobias and Eccles, Tom and Bruce, Jake and Razavi, Ali and Edwards, Ashley and Heess, Nicolas and Chen, Yutian and Hadsell, Raia and Vinyals, Oriol and Bordbar, Mahyar and de Freitas, Nando},
+	year         = 2022,
+	publisher    = {arXiv},
+	doi          = {10.48550/ARXIV.2205.06175},
+	url          = {https://arxiv.org/abs/2205.06175},
+	copyright    = {Creative Commons Attribution 4.0 International},
+	keywords     = {Artificial Intelligence (cs.AI), Computation and Language (cs.CL), Machine Learning (cs.LG), Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences}
+}
+
+
+@article{attia2019closed,
+  title={Closed-loop optimization of extreme fast charging for batteries using machine learning},
+  author={Attia, Peter and Grover, Aditya and Jin, Norman and Severson, Kristen and Cheong, Bryan and Liao, Jerry and Chen, Michael H and Perkins, Nicholas and Yang, Zi and Herring, Patrick and Aykol, Muratahan and Harris, Stephen and Braatz, Richard and
+Ermon,Stefano and Chueh, William},
+journal={Nature},
+pdf={https://www.nature.com/articles/s41586-020-1994-5},
+abstract={Simultaneously optimizing many design parameters in time-consuming experiments causes bottlenecks in a broad range of scientific and engineering disciplines1,2. One such example is process and control optimization for lithium-ion batteries during materials selection, cell manufacturing and operation. A typical objective is to maximize battery lifetime; however, conducting even a single experiment to evaluate lifetime can take months to years3,4,5. Furthermore, both large parameter spaces and high sampling variability3,6,7 necessitate a large number of experiments. Hence, the key challenge is to reduce both the number and the duration of the experiments required. Here we develop and demonstrate a machine learning methodology  to efficiently optimize a parameter space specifying the current and voltage profiles of six-step, ten-minute fast-charging protocols for maximizing battery cycle life, which can alleviate range anxiety for electric-vehicle users8,9. We combine two key elements to reduce the optimization cost: an early-prediction model5, which reduces the time per experiment by predicting the final cycle life using data from the first few cycles, and a Bayesian optimization algorithm10,11, which reduces the number of experiments by balancing exploration and exploitation to efficiently probe the parameter space of charging protocols. Using this methodology, we rapidly identify high-cycle-life charging protocols among 224 candidates in 16 days (compared with over 500 days using exhaustive search without early prediction), and subsequently validate the accuracy and efficiency of our optimization approach. Our closed-loop methodology automatically incorporates feedback from past experiments to inform future decisions and can be generalized to other applications in battery design and, more broadly, other scientific domains that involve time-intensive experiments and multi-dimensional design spaces.},
+  year={2020},
+  abbr={Nature}
+}
+
+@inproceedings{zhuscaling,
+  title={Scaling Pareto-Efficient Decision Making via Offline Multi-Objective RL},
+  author={Zhu, Baiting and Dang, Meihua and Grover, Aditya},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2023},
+  abstract={The goal of multi-objective reinforcement learning (MORL) is to learn policies that simultaneously optimize multiple competing objectives. In practice, an agent's preferences over the objectives may not be known apriori, and hence, we require policies that can generalize to arbitrary preferences at test time. In this work, we propose a new data-driven setup for offline MORL, where we wish to learn a preference-agnostic policy agent using only a finite dataset of offline demonstrations of other agents and their preferences. The key contributions of this work are two-fold. First, we introduce D4MORL, (D)atasets for MORL that are specifically designed for offline settings. It contains 1.8 million annotated demonstrations obtained by rolling out reference policies that optimize for randomly sampled preferences on 6 MuJoCo environments with 2-3 objectives each. Second, we propose Pareto-Efficient Decision Agents (PEDA), a family of offline MORL algorithms that builds and extends Decision Transformers via a novel preference-and-return-conditioned policy. Empirically, we show that PEDA closely approximates the behavioral policy on the D4MORL benchmark and provides an excellent approximation of the Pareto-front with appropriate conditioning, as measured by the hypervolume and sparsity metrics. },
+  pdf={https://openreview.net/forum?id=Ki4ocDm364},
+  abbr={ICLR}
+}
+
+
+@inproceedings{zheng2022semi,
+  title={Semi-Supervised Offline Reinforcement Learning with Action-Free Trajectories},
+  author={Zheng, Qinqing and Henaff, Mikael and Amos, Brandon and Grover, Aditya},
+  booktitle={International Conference on Machine Learning (ICML)}, 
+  pdf={https://arxiv.org/abs/2210.06518},
+  abstract={Natural agents can effectively learn from multiple data sources that differ in size, quality, and types of measurements. We study this heterogeneity in the context of offline reinforcement learning (RL) by introducing a new, practically motivated semi-supervised setting. Here, an agent has access to two sets of trajectories: labelled trajectories containing state, action, reward triplets at every timestep, along with unlabelled trajectories that contain only state and reward information. For this setting, we develop and study a simple meta-algorithmic pipeline that learns an inverse dynamics model on the labelled data to obtain proxy-labels for the unlabelled data, followed by the use of any offline RL algorithm on the true and proxy-labelled trajectories. Empirically, we find this simple pipeline to be highly successful - on several D4RL benchmarks, certain offline RL algorithms can match the performance of variants trained on a fully labelled dataset even when we label only 10\% trajectories from the low return regime. To strengthen our understanding, we perform a large-scale controlled empirical study investigating the interplay of data-centric properties of the labelled and unlabelled datasets, with algorithmic design choices (e.g., choice of inverse dynamics, offline RL algorithm) to identify general trends and best practices for training RL agents on semi-supervised offline datasets.},
+  year={2023},
+  abbr={ICML}
+}
+
+
+@inproceedings{aistats18b,
+  title={Best arm identification in multi-armed bandits with delayed feedback},
+  author={Grover, Aditya and Markov, Todor and Attia, Peter and Jin, Norman and Perkins, Nicholas and Cheong, Bryan and Chen, Michael and Yang, Zi and Harris, Stephen and Chueh, William and Ermon, Stefano},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year={2018},
+  abstract={We propose a generalization of the best arm identification problem in stochastic multi-armed bandits (MAB) to the setting where every pull of an arm is associated with delayed feedback. The delay in feedback increases the effective sample complexity of standard algorithms, but can be offset if we have access to partial feedback received before a pull is completed. We propose a general framework to model the relationship between partial and delayed feedback, and as a special case we introduce efficient algorithms for settings where the partial feedback are biased or unbiased estimators of the delayed feedback. Additionally, we propose a novel extension of the algorithms to the parallel MAB setting where an agent can control a batch of arms. Our experiments in real-world settings, involving policy search and hyperparameter optimization in computational sustainability domains for fast charging of batteries and wildlife corridor construction, demonstrate that exploiting the structure of partial feedback can lead to significant improvements over baselines in both sequential and parallel MAB.},
+  pdf={https://arxiv.org/abs/1803.10937},
+  abbr={AISTATS}
+}
+
+
+@inproceedings{NIPS2013_f33ba15e,
+	title        = {Multi-Task Bayesian Optimization},
+	author       = {Swersky, Kevin and Snoek, Jasper and Adams, Ryan P},
+	year         = 2013,
+	booktitle    = {Advances in Neural Information Processing Systems},
+
+	editor       = {C.J. Burges and L. Bottou and M. Welling and Z. Ghahramani and K.Q. Weinberger}
+}
+@inproceedings{yu2021roma,
+	title        = {Ro{MA}: Robust Model Adaptation for Offline Model-based Optimization},
+	author       = {Sihyun Yu and Sungsoo Ahn and Le Song and Jinwoo Shin},
+	year         = 2021,
+	booktitle    = {Advances in Neural Information Processing Systems},
+	editor       = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan}
+}
+@article{kim2019attentive,
+	title        = {Attentive neural processes},
+	author       = {Kim, Hyunjik and Mnih, Andriy and Schwarz, Jonathan and Garnelo, Marta and Eslami, Ali and Rosenbaum, Dan and Vinyals, Oriol and Teh, Yee Whye},
+	year         = 2019,
+	journal      = {arXiv preprint arXiv:1901.05761}
+}
+@article{chen2016variational,
+	title        = {Variational lossy autoencoder},
+	author       = {Chen, Xi and Kingma, Diederik P and Salimans, Tim and Duan, Yan and Dhariwal, Prafulla and Schulman, John and Sutskever, Ilya and Abbeel, Pieter},
+	year         = 2016,
+	journal      = {arXiv preprint arXiv:1611.02731}
+}
+@article{singh2019sequential,
+	title        = {Sequential neural processes},
+	author       = {Singh, Gautam and Yoon, Jaesik and Son, Youngsung and Ahn, Sungjin},
+	year         = 2019,
+	journal      = {arXiv preprint arXiv:1906.10264}
+}
+@article{garnelo2018neural,
+	title        = {Neural processes},
+	author       = {Garnelo, Marta and Schwarz, Jonathan and Rosenbaum, Dan and Viola, Fabio and Rezende, Danilo J and Eslami, SM and Teh, Yee Whye},
+	year         = 2018,
+	journal      = {arXiv preprint arXiv:1807.01622}
+}
+@article{lee2020bootstrapping,
+	title        = {Bootstrapping neural processes},
+	author       = {Lee, Juho and Lee, Yoonho and Kim, Jungtaek and Yang, Eunho and Hwang, Sung Ju and Teh, Yee Whye},
+	year         = 2020,
+	journal      = {arXiv preprint arXiv:2008.02956}
+}
+
+
+@inproceedings{nguyen2022transformer,
+  title={Transformer neural processes: Uncertainty-aware meta learning via sequence modeling},
+  author={Nguyen, Tung and Grover, Aditya},
+  booktitle={International Conference on Machine Learning (ICML)},
+  pdf={https://arxiv.org/abs/2207.04179},
+  year={2022},
+  abstract={Neural Processes (NPs) are a popular class of approaches for meta-learning. Similar to Gaussian Processes (GPs), NPs define distributions over functions and can estimate uncertainty in their predictions. However, unlike GPs, NPs and their variants suffer from underfitting and often have intractable likelihoods, which limit their applications in sequential decision making. We propose Transformer Neural Processes (TNPs), a new member of the NP family that casts uncertainty-aware meta learning as a sequence modeling problem. We learn TNPs via an autoregressive likelihood-based objective and instantiate it with a novel transformer-based architecture. The model architecture respects the inductive biases inherent to the problem structure, such as invariance to the observed data points and equivariance to the unobserved points. We further investigate knobs within the TNP framework that tradeoff expressivity of the decoding distribution with extra computation. Empirically, we show that TNPs achieve state-of-the-art performance on various benchmark problems, outperforming all previous NP variants on meta regression, image completion, contextual multi-armed bandits, and Bayesian optimization.},
+  code={https://github.com/tung-nd/TNP-pytorch},
+  abbr={ICML}
+}
+
+
+@article{gordon2019convolutional,
+	title        = {Convolutional conditional neural processes},
+	author       = {Gordon, Jonathan and Bruinsma, Wessel P and Foong, Andrew YK and Requeima, James and Dubois, Yann and Turner, Richard E},
+	year         = 2019,
+	journal      = {arXiv preprint arXiv:1910.13556}
+}
+@inproceedings{holderrieth2021equivariant,
+	title        = {Equivariant Learning of Stochastic Fields: Gaussian Processes and Steerable Conditional Neural Processes},
+	author       = {Holderrieth, Peter and Hutchinson, Michael J and Teh, Yee Whye},
+	year         = 2021,
+	booktitle    = {International Conference on Machine Learning},
+	pages        = {4297--4307},
+	organization = {PMLR}
+}
+@misc{bayesnn_1,
+	title        = {Bayesian Neural Networks: Essentials},
+	author       = {Chang, Daniel T.},
+	year         = 2021,
+	publisher    = {arXiv},
+	copyright    = {arXiv.org perpetual, non-exclusive license},
+	keywords     = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences}
+}
+@incollection{bayesnn_2,
+	title        = {Bayesian Neural Networks: An Introduction and Survey},
+	author       = {Ethan Goan and Clinton Fookes},
+	year         = 2020,
+	booktitle    = {Case Studies in Applied Bayesian Data Science},
+	publisher    = {Springer International Publishing},
+	pages        = {45--87},
+
+}
+@inproceedings{ICML-2010-SrinivasKKS,
+	title        = {{Gaussian Process Optimization in the Bandit Setting: No Regret and Experimental Design}},
+	author       = {Niranjan Srinivas and Andreas Krause and Sham Kakade and Matthias W. Seeger},
+	year         = 2010,
+	booktitle    = {{Proceedings of the 27th International Conference on Machine Learning}},
+	publisher    = {{Omnipress}},
+	pages        = {1015--1022},
+	ee           = {http://www.icml2010.org/papers/422.pdf}
+}
+@inproceedings{rl_reward_weighted_reg,
+	title        = {Reinforcement Learning by Reward-Weighted Regression for Operational Space Control},
+	author       = {Peters, Jan and Schaal, Stefan},
+	year         = 2007,
+	booktitle    = {Proceedings of the 24th International Conference on Machine Learning},
+	location     = {Corvalis, Oregon, USA},
+	publisher    = {Association for Computing Machinery},
+	address      = {New York, NY, USA},
+	series       = {ICML '07},
+	pages        = {745–750},
+	doi          = {10.1145/1273496.1273590},
+	isbn         = 9781595937933,
+	abstract     = {Many robot control problems of practical importance, including operational space control, can be reformulated as immediate reward reinforcement learning problems. However, few of the known optimization or reinforcement learning algorithms can be used in online learning control for robots, as they are either prohibitively slow, do not scale to interesting domains of complex robots, or require trying out policies generated by random search, which are infeasible for a physical system. Using a generalization of the EM-base reinforcement learning framework suggested by Dayan &amp; Hinton, we reduce the problem of learning with immediate rewards to a reward-weighted regression problem with an adaptive, integrated reward transformation for faster convergence. The resulting algorithm is efficient, learns smoothly without dangerous jumps in solution space, and works well in applications of complex high degree-of-freedom robots.},
+	numpages     = 6
+}
+@inproceedings{nemo,
+	title        = {Offline Model-Based Optimization via Normalized Maximum Likelihood Estimation},
+	author       = {Justin Fu and Sergey Levine},
+	year         = 2021,
+	booktitle    = {International Conference on Learning Representations},
+}
+@inproceedings{GAN,
+	title        = {Generative Adversarial Nets},
+	author       = {Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+	year         = 2014,
+	booktitle    = {Advances in Neural Information Processing Systems},
+}
+@inproceedings{fgan,
+	title        = {f-GAN: Training Generative Neural Samplers using Variational Divergence Minimization},
+	author       = {Nowozin, Sebastian and Cseke, Botond and Tomioka, Ryota},
+	year         = 2016,
+	booktitle    = {Advances in Neural Information Processing Systems},
+}
+@inproceedings{wgan,
+	title        = {{W}asserstein Generative Adversarial Networks},
+	author       = {Martin Arjovsky and Soumith Chintala and L{\'e}on Bottou},
+	year         = 2017,
+	month        = {06--11 Aug},
+	booktitle    = {Proceedings of the 34th International Conference on Machine Learning},
+	abstract     = {We introduce a new algorithm named WGAN, an alternative to traditional GAN training. In this new model, we show that we can improve the stability of learning, get rid of problems like mode collapse, and provide meaningful learning curves useful for debugging and hyperparameter searches. Furthermore, we show that the corresponding optimization problem is sound, and provide extensive theoretical work highlighting the deep connections to different distances between distributions.}
+}
+@misc{gumbelgan,
+	title        = {GANS for Sequences of Discrete Elements with the Gumbel-softmax Distribution},
+	author       = {Kusner, Matt J. and Hernández-Lobato, José Miguel},
+	year         = 2016,
+	publisher    = {arXiv},
+	copyright    = {arXiv.org perpetual, non-exclusive license},
+	keywords     = {Machine Learning (stat.ML), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences}
+}
+@misc{cgan,
+	title        = {Conditional Generative Adversarial Nets},
+	author       = {Mirza, Mehdi and Osindero, Simon},
+	year         = 2014,
+	publisher    = {arXiv},
+	copyright    = {arXiv.org perpetual, non-exclusive license},
+	keywords     = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences}
+}
+
+@article{hansen2006cma,
+  title={The CMA evolution strategy: a comparing review},
+  author={Hansen, Nikolaus},
+  journal={Towards a new evolutionary computation: Advances in the estimation of distribution algorithms},
+  pages={75--102},
+  year={2006},
+  publisher={Springer}
+}
+
+@article{JMLR:v16:swaminathan15a_bandit,
+	title        = {Batch Learning from Logged Bandit Feedback through Counterfactual Risk Minimization},
+	author       = {Adith Swaminathan and Thorsten Joachims},
+	year         = 2015,
+	journal      = {Journal of Machine Learning Research},
+	volume       = 16,
+	number       = 52,
+	pages        = {1731--1755},
+}
+@inproceedings{Joachims/etal/18a_bandit,
+	title        = {Deep Learning with Logged Bandit Feedback},
+	author       = {T. Joachims and A. Swaminathan and M. de Rijke},
+	year         = 2018,
+	booktitle    = {International Conference on Learning Representations (ICLR)}
+}
+@inproceedings{joachims2018deep_bandit,
+	title        = {Deep Learning with Logged Bandit Feedback},
+	author       = {Thorsten Joachims and Adith Swaminathan and Maarten de Rijke},
+	year         = 2018,
+	booktitle    = {International Conference on Learning Representations},
+}
+@article{nando-bayesopt,
+	title        = {Taking the Human Out of the Loop: A Review of Bayesian Optimization},
+	author       = {Shahriari, Bobak and Swersky, Kevin and Wang, Ziyu and Adams, Ryan P. and de Freitas, Nando},
+	year         = 2016,
+	journal      = {Proceedings of the IEEE},
+	volume       = 104,
+	number       = 1,
+	pages        = {148--175},
+}
+@inproceedings{bandit_exp_then_commit,
+	title        = {On Explore-Then-Commit Strategies},
+	author       = {Garivier, Aur\'{e}lien and Kaufmann, Emilie and Lattimore, Tor},
+	year         = 2016,
+	booktitle    = {Proceedings of the 30th International Conference on Neural Information Processing Systems},
+	location     = {Barcelona, Spain},
+	abstract     = {We study the problem of minimising regret in two-armed bandit problems with Gaussian rewards. Our objective is to use this simple setting to illustrate that strategies based on an exploration phase (up to a stopping time) followed by exploitation are necessarily suboptimal. The results hold regardless of whether or not the difference in means between the two arms is known. Besides the main message, we also refine existing deviation inequalities, which allow us to design fully sequential strategies with finite-time regret guarantees that are (a) asymptotically optimal as the horizon grows and (b) order-optimal in the minimax sense. Furthermore we provide empirical evidence that the theory also holds in practice and discuss extensions to non-gaussian and multiple-armed case.},
+	numpages     = 9
+}
+@inproceedings{gpt3,
+	title        = {Language Models are Few-Shot Learners},
+	author       = {Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel and Wu, Jeffrey and Winter, Clemens and Hesse, Chris and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+	year         = 2020,
+	booktitle    = {Advances in Neural Information Processing Systems},
+	publisher    = {Curran Associates, Inc.},
+	volume       = 33,
+	pages        = {1877--1901},
+	editor       = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin}
+}
+@misc{openaigym,
+	title        = {OpenAI Gym},
+	author       = {Greg Brockman and Vicki Cheung and Ludwig Pettersson and Jonas Schneider and John Schulman and Jie Tang and Wojciech Zaremba},
+	year         = 2016,
+	eprint       = {arXiv:1606.01540}
+}
+
+@article{robel,
+	title        = {ROBEL: Robotics Benchmarks for Learning with Low-Cost Robots},
+	author       = {Ahn, Michael and Zhu, Henry and Hartikainen, Kristian and Ponte, Hugo and Gupta, Abhishek and Levine, Sergey and Kumar, Vikash},
+	year         = 2019,
+	publisher    = {arXiv},
+	doi          = {10.48550/ARXIV.1909.11639},
+	copyright    = {arXiv.org perpetual, non-exclusive license},
+	keywords     = {Robotics (cs.RO), Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences}
+}
+
+@misc{udrl,
+	title        = {Reinforcement Learning Upside Down: Don't Predict Rewards -- Just Map Them to Actions},
+	author       = {Schmidhuber, Juergen},
+	year         = 2019,
+	publisher    = {arXiv},
+	doi          = {10.48550/ARXIV.1912.02875},
+	copyright    = {arXiv.org perpetual, non-exclusive license},
+	keywords     = {Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences}
+}
+
+@inproceedings{janner2021sequence,
+	title        = {Offline Reinforcement Learning as One Big Sequence Modeling Problem},
+	author       = {Michael Janner and Qiyang Li and Sergey Levine},
+	year         = 2021,
+	booktitle    = {Advances in Neural Information Processing Systems}
+}
+@article{cql,
+  title={Conservative q-learning for offline reinforcement learning},
+  author={Kumar, Aviral and Zhou, Aurick and Tucker, George and Levine, Sergey},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={1179--1191},
+  year={2020}
+}
+
+  
+@inproceedings{vit,
+	title        = {An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
+	author       = {Alexey Dosovitskiy and Lucas Beyer and Alexander Kolesnikov and Dirk Weissenborn and Xiaohua Zhai and Thomas Unterthiner and Mostafa Dehghani and Matthias Minderer and Georg Heigold and Sylvain Gelly and Jakob Uszkoreit and Neil Houlsby},
+	year         = 2021,
+	booktitle    = {International Conference on Learning Representations},
+	url          = {https://openreview.net/forum?id=YicbFdNTTy}
+}
+@misc{detr,
+	title        = {End-to-End Object Detection with Transformers},
+	author       = {Carion, Nicolas and Massa, Francisco and Synnaeve, Gabriel and Usunier, Nicolas and Kirillov, Alexander and Zagoruyko, Sergey},
+	year         = 2020,
+	publisher    = {arXiv},
+	doi          = {10.48550/ARXIV.2005.12872},
+	url          = {https://arxiv.org/abs/2005.12872},
+	copyright    = {Creative Commons Zero v1.0 Universal},
+	keywords     = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences}
+}
+@article{der_free_opt,
+	title        = {Derivative-free optimization methods},
+	author       = {Jeffrey Larson and Matt Menickelly and Stefan M. Wild},
+	year         = 2019,
+	month        = {may},
+	journal      = {Acta Numerica},
+	publisher    = {Cambridge University Press ({CUP})},
+	volume       = 28,
+	pages        = {287--404},
+	doi          = {10.1017/s0962492919000060},
+}
+@book{cem,
+	title        = {The Cross Entropy Method: A Unified Approach To Combinatorial Optimization, Monte-Carlo Simulation (Information Science and Statistics)},
+	author       = {Rubinstein, Reuven Y. and Kroese, Dirk P.},
+	year         = 2004,
+	publisher    = {Springer-Verlag},
+	address      = {Berlin, Heidelberg},
+	isbn         = {038721240X}
+}
+@inproceedings{learningfromlearner,
+	title        = {Learning from a Learner},
+	author       = {Jacq, Alexis and Geist, Matthieu and Paiva, Ana and Pietquin, Olivier},
+	year         = 2019,
+	month        = {09--15 Jun},
+	booktitle    = {Proceedings of the 36th International Conference on Machine Learning},
+	abstract     = {In this paper, we propose a novel setting for Inverse Reinforcement Learning (IRL), namely "Learning from a Learner" (LfL). As opposed to standard IRL, it does not consist in learning a reward by observing an optimal agent but from observations of another learning (and thus sub-optimal) agent. To do so, we leverage the fact that the observed agent’s policy is assumed to improve over time. The ultimate goal of this approach is to recover the actual environment’s reward and to allow the observer to outperform the learner. To recover that reward in practice, we propose methods based on the entropy-regularized policy iteration framework. We discuss different approaches to learn solely from trajectories in the state-action space. We demonstrate the genericity of our method by observing agents implementing various reinforcement learning algorithms. Finally, we show that, on both discrete and continuous state/action tasks, the observer’s performance (that optimizes the recovered reward) can surpass those of the observed agent.}
+}
+
+@inproceedings{l2lwgd,
+ author = {Andrychowicz, Marcin and Denil, Misha and G\'{o}mez, Sergio and Hoffman, Matthew W and Pfau, David and Schaul, Tom and Shillingford, Brendan and de Freitas, Nando},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Learning to learn by gradient descent by gradient descent},
+ year = {2016}
+}
+
+
+@InProceedings{l2lwogd,
+  title = 	 {Learning to Learn without Gradient Descent by Gradient Descent},
+  author =       {Yutian Chen and Matthew W. Hoffman and Sergio G{\'o}mez Colmenarejo and Misha Denil and Timothy P. Lillicrap and Matt Botvinick and Nando de Freitas},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  year = 	 {2017},
+  abstract = 	 {We learn recurrent neural network optimizers trained on simple synthetic functions by gradient descent. We show that these learned optimizers exhibit a remarkable degree of transfer in that they can be used to efficiently optimize a broad range of derivative-free black-box functions, including Gaussian process bandits, simple control objectives, global optimization benchmarks and hyper-parameter tuning tasks. Up to the training horizon, the learned optimizers learn to trade-off exploration and exploitation, and compare favourably with heavily engineered Bayesian optimization packages for hyper-parameter tuning.}
+}
+
+@misc{qei,
+  doi = {10.48550/ARXIV.1712.00424},
+  
+  author = {Wilson, James T. and Moriconi, Riccardo and Hutter, Frank and Deisenroth, Marc Peter},
+  
+  keywords = {Machine Learning (stat.ML), Machine Learning (cs.LG), Optimization and Control (math.OC), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Mathematics, FOS: Mathematics},
+  
+  title = {The reparameterization trick for acquisition functions},
+  
+  publisher = {arXiv},
+  
+  year = {2017},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@misc{new_bo,
+  author = {Bijl, Hildo and Schön, Thomas B. and van Wingerden, Jan-Willem and Verhaegen, Michel},
+  
+  keywords = {Machine Learning (stat.ML), Systems and Control (eess.SY), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Electrical engineering, electronic engineering, information engineering, FOS: Electrical engineering, electronic engineering, information engineering},
+  
+  title = {A sequential Monte Carlo approach to Thompson sampling for Bayesian optimization},
+  
+  publisher = {arXiv},
+  
+  year = {2016},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@article{mbo1,
+  title={Multiple adaptive Bayesian linear regression for scalable Bayesian optimization with warm start},
+  author={Perrone, Valerio and Jenatton, Rodolphe and Seeger, Matthias and Archambeau, Cedric},
+  journal={arXiv preprint arXiv:1712.02902},
+  year={2017}
+}
+
+@misc{mbo2,
+  doi = {10.48550/ARXIV.1608.03585},
+  
+  url = {https://arxiv.org/abs/1608.03585},
+  
+  author = {Poloczek, Matthias and Wang, Jialei and Frazier, Peter I.},
+  
+  keywords = {Machine Learning (stat.ML), Machine Learning (cs.LG), Applications (stat.AP), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Warm Starting Bayesian Optimization},
+  
+  publisher = {arXiv},
+  
+  year = {2016},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@article{krizhevsky2010cifar,
+title= {CIFAR-10 (Canadian Institute for Advanced Research)},
+journal= {},
+author= {Alex Krizhevsky and Vinod Nair and Geoffrey Hinton},
+year= {},
+abstract= {The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images. 
+
+The dataset is divided into five training batches and one test batch, each with 10000 images. The test batch contains exactly 1000 randomly-selected images from each class. The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class. },
+keywords= {Dataset},
+terms= {}
+}
+
+@InProceedings{pmlr-v119-nguyen20d,
+  title = 	 {Knowing The What But Not The Where in {B}ayesian Optimization},
+  author =       {Nguyen, Vu and Osborne, Michael A.},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {7317--7326},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  abstract = 	 {Bayesian optimization has demonstrated impressive success in finding the optimum input x$\ast$ and output f$\ast$ = f(x$\ast$) = max f(x) of a black-box function f. In some applications, however, the optimum output is known in advance and the goal is to find the corresponding optimum input. Existing work in Bayesian optimization (BO) has not effectively exploited the knowledge of f$\ast$ for optimization. In this paper, we consider a new setting in BO in which the knowledge of the optimum output is available. Our goal is to exploit the knowledge about f$\ast$ to search for the input x$\ast$ efficiently. To achieve this goal, we first transform the Gaussian process surrogate using the information about the optimum output. Then, we propose two acquisition functions, called confidence bound minimization and expected regret minimization, which exploit the knowledge about the optimum output to identify the optimum input more efficient. We show that our approaches work intuitively and quantitatively better performance against standard BO methods. We demonstrate real applications in tuning a deep reinforcement learning algorithm on the CartPole problem and XGBoost on Skin Segmentation dataset in which the optimum values are publicly available.}
+}
+
+@inproceedings{
+zhang2022unifying,
+title={Unifying Likelihood-free Inference with Black-box Sequence Design and Beyond},
+author={Dinghuai Zhang and Jie Fu and Yoshua Bengio and Aaron Courville},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=1HxTO6CTkz}
+}

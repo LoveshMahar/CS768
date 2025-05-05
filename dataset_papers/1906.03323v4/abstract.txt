@@ -1,0 +1,10 @@
+We propose an estimator and confidence interval for computing the value of a
+policy from off-policy data in the contextual bandit setting. To this end we
+apply empirical likelihood techniques to formulate our estimator and confidence
+interval as simple convex optimization problems. Using the lower bound of our
+confidence interval, we then propose an off-policy policy optimization
+algorithm that searches for policies with large reward lower bound. We
+empirically find that both our estimator and confidence interval improve over
+previous proposals in finite sample regimes. Finally, the policy optimization
+algorithm we propose outperforms a strong baseline system for learning from
+off-policy data.

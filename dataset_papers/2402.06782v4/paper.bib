@@ -1,0 +1,707 @@
+@misc{turpin2023language,
+      title={Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting}, 
+      author={Miles Turpin and Julian Michael and Ethan Perez and Samuel R. Bowman},
+      year={2023},
+      eprint={2305.04388},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{radhakrishnan2023anthropic,
+  title={Anthropic Fall 2023 Debate Progress Update},
+  author={Radhakrishnan, Ansh},
+  journal={AI Alignment Forum},
+  year={2023},
+}
+
+@article{michael2023debate,
+  title={Debate Helps Supervise Unreliable Experts},
+  author={Michael, Julian and Mahdi, Salsabila and Rein, David and Petty, Jackson and Dirani, Julien and Padmakumar, Vishakh and Bowman, Samuel R},
+  journal={arXiv preprint arXiv:2311.08702},
+  year={2023}
+}
+
+@inproceedings{maynez2020faithfulness,
+    title = "On Faithfulness and Factuality in Abstractive Summarization",
+    author = "Maynez, Joshua  and
+      Narayan, Shashi  and
+      Bohnet, Bernd  and
+      McDonald, Ryan",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    doi = "10.18653/v1/2020.acl-main.173",
+    pages = "1906--1919",
+    abstract = "It is well known that the standard likelihood training and approximate decoding objectives in neural text generation models lead to less human-like responses for open-ended tasks such as language modeling and story generation. In this paper we have analyzed limitations of these models for abstractive document summarization and found that these models are highly prone to hallucinate content that is unfaithful to the input document. We conducted a large scale human evaluation of several neural abstractive summarization systems to better understand the types of hallucinations they produce. Our human annotators found substantial amounts of hallucinated content in all model generated summaries. However, our analysis does show that pretrained models are better summarizers not only in terms of raw metrics, i.e., ROUGE, but also in generating faithful and factual summaries as evaluated by humans. Furthermore, we show that textual entailment measures better correlate with faithfulness than standard metrics, potentially leading the way to automatic evaluation metrics as well as training and decoding criteria.",
+}
+
+@article{touvron2023llama,
+  title={LLaMA: Open and Efficient Foundation Language Models},
+  author={Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth{\'e}e and Rozi{\`e}re, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and Rodriguez, Aurelien and Joulin, Armand and Grave, Edouard and Lample, Guillaume},
+  journal={arXiv preprint arXiv:2302.13971},
+  year={2023}
+}
+
+@misc{vicuna2023,
+    title = {Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90\%* ChatGPT Quality},
+    url = {https://vicuna.lmsys.org},
+    author = {Chiang, Wei-Lin and Li, Zhuohan and Lin, Zi and Sheng, Ying and Wu, Zhanghao and Zhang, Hao and Zheng, Lianmin and Zhuang, Siyuan and Zhuang, Yonghao and Gonzalez, Joseph E. and Stoica, Ion and Xing, Eric P.},
+    month = {March},
+    year = {2023}
+}
+@inproceedings{kiela2021dynabench,
+    title = "Dynabench: Rethinking Benchmarking in NLP",
+    author = "Kiela, Douwe  and
+      Bartolo, Max  and
+      Nie, Yixin  and
+      Kaushik, Divyansh  and
+      Geiger, Atticus  and
+      Wu, Zhengxuan  and
+      Vidgen, Bertie  and
+      Prasad, Grusha  and
+      Singh, Amanpreet  and
+      Ringshia, Pratik  and
+      Ma, Zhiyi  and
+      Thrush, Tristan  and
+      Riedel, Sebastian  and
+      Waseem, Zeerak  and
+      Stenetorp, Pontus  and
+      Jia, Robin  and
+      Bansal, Mohit  and
+      Potts, Christopher  and
+      Williams, Adina",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.324",
+    doi = "10.18653/v1/2021.naacl-main.324",
+    pages = "4110--4124",
+    abstract = "We introduce Dynabench, an open-source platform for dynamic dataset creation and model benchmarking. Dynabench runs in a web browser and supports human-and-model-in-the-loop dataset creation: annotators seek to create examples that a target model will misclassify, but that another person will not. In this paper, we argue that Dynabench addresses a critical need in our community: contemporary models quickly achieve outstanding performance on benchmark tasks but nonetheless fail on simple challenge examples and falter in real-world scenarios. With Dynabench, dataset creation, model development, and model assessment can directly inform each other, leading to more robust and informative benchmarks. We report on four initial NLP tasks, illustrating these concepts and highlighting the promise of the platform, and address potential objections to dynamic benchmarking as a new standard for the field.",
+}
+
+@misc{Srivastava2022bigbench,
+  doi = {10.48550/ARXIV.2206.04615},
+  
+  url = {https://arxiv.org/abs/2206.04615},
+  
+  author = {Srivastava, Aarohi and Rastogi, Abhinav and Rao, Abhishek and Shoeb, Abu Awal Md and Abid, Abubakar and Fisch, Adam and Brown, Adam R. and Santoro, Adam and Gupta, Aditya and Garriga-Alonso, Adrià and Kluska, Agnieszka and Lewkowycz, Aitor and Agarwal, Akshat and Power, Alethea and Ray, Alex and Warstadt, Alex and Kocurek, Alexander W. and Safaya, Ali and Tazarv, Ali and Xiang, Alice and Parrish, Alicia and Nie, Allen and Hussain, Aman and Askell, Amanda and Dsouza, Amanda and Slone, Ambrose and Rahane, Ameet and Iyer, Anantharaman S. and Andreassen, Anders and Madotto, Andrea and Santilli, Andrea and Stuhlmüller, Andreas and Dai, Andrew and La, Andrew and Lampinen, Andrew and Zou, Andy and Jiang, Angela and Chen, Angelica and Vuong, Anh and Gupta, Animesh and Gottardi, Anna and Norelli, Antonio and Venkatesh, Anu and Gholamidavoodi, Arash and Tabassum, Arfa and Menezes, Arul and Kirubarajan, Arun and Mullokandov, Asher and Sabharwal, Ashish and Herrick, Austin and Efrat, Avia and Erdem, Aykut and Karakaş, Ayla and Roberts, B. Ryan and Loe, Bao Sheng and Zoph, Barret and Bojanowski, Bartłomiej and Özyurt, Batuhan and Hedayatnia, Behnam and Neyshabur, Behnam and Inden, Benjamin and Stein, Benno and Ekmekci, Berk and Lin, Bill Yuchen and Howald, Blake and Diao, Cameron and Dour, Cameron and Stinson, Catherine and Argueta, Cedrick and Ramírez, César Ferri and Singh, Chandan and Rathkopf, Charles and Meng, Chenlin and Baral, Chitta and Wu, Chiyu and Callison-Burch, Chris and Waites, Chris and Voigt, Christian and Manning, Christopher D. and Potts, Christopher and Ramirez, Cindy and Rivera, Clara E. and Siro, Clemencia and Raffel, Colin and Ashcraft, Courtney and Garbacea, Cristina and Sileo, Damien and Garrette, Dan and Hendrycks, Dan and Kilman, Dan and Roth, Dan and Freeman, Daniel and Khashabi, Daniel and Levy, Daniel and González, Daniel Moseguí and Perszyk, Danielle and Hernandez, Danny and Chen, Danqi and Ippolito, Daphne and Gilboa, Dar and Dohan, David and Drakard, David and Jurgens, David and Datta, Debajyoti and Ganguli, Deep and Emelin, Denis and Kleyko, Denis and Yuret, Deniz and Chen, Derek and Tam, Derek and Hupkes, Dieuwke and Misra, Diganta and Buzan, Dilyar and Mollo, Dimitri Coelho and Yang, Diyi and Lee, Dong-Ho and Shutova, Ekaterina and Cubuk, Ekin Dogus and Segal, Elad and Hagerman, Eleanor and Barnes, Elizabeth and Donoway, Elizabeth and Pavlick, Ellie and Rodola, Emanuele and Lam, Emma and Chu, Eric and Tang, Eric and Erdem, Erkut and Chang, Ernie and Chi, Ethan A. and Dyer, Ethan and Jerzak, Ethan and Kim, Ethan and Manyasi, Eunice Engefu and Zheltonozhskii, Evgenii and Xia, Fanyue and Siar, Fatemeh and Martínez-Plumed, Fernando and Happé, Francesca and Chollet, Francois and Rong, Frieda and Mishra, Gaurav and Winata, Genta Indra and de Melo, Gerard and Kruszewski, Germán and Parascandolo, Giambattista and Mariani, Giorgio and Wang, Gloria and Jaimovitch-López, Gonzalo and Betz, Gregor and Gur-Ari, Guy and Galijasevic, Hana and Kim, Hannah and Rashkin, Hannah and Hajishirzi, Hannaneh and Mehta, Harsh and Bogar, Hayden and Shevlin, Henry and Schütze, Hinrich and Yakura, Hiromu and Zhang, Hongming and Wong, Hugh Mee and Ng, Ian and Noble, Isaac and Jumelet, Jaap and Geissinger, Jack and Kernion, Jackson and Hilton, Jacob and Lee, Jaehoon and Fisac, Jaime Fernández and Simon, James B. and Koppel, James and Zheng, James and Zou, James and Kocoń, Jan and Thompson, Jana and Kaplan, Jared and Radom, Jarema and Sohl-Dickstein, Jascha and Phang, Jason and Wei, Jason and Yosinski, Jason and Novikova, Jekaterina and Bosscher, Jelle and Marsh, Jennifer and Kim, Jeremy and Taal, Jeroen and Engel, Jesse and Alabi, Jesujoba and Xu, Jiacheng and Song, Jiaming and Tang, Jillian and Waweru, Joan and Burden, John and Miller, John and Balis, John U. and Berant, Jonathan and Frohberg, Jörg and Rozen, Jos and Hernandez-Orallo, Jose and Boudeman, Joseph and Jones, Joseph and Tenenbaum, Joshua B. and Rule, Joshua S. and Chua, Joyce and Kanclerz, Kamil and Livescu, Karen and Krauth, Karl and Gopalakrishnan, Karthik and Ignatyeva, Katerina and Markert, Katja and Dhole, Kaustubh D. and Gimpel, Kevin and Omondi, Kevin and Mathewson, Kory and Chiafullo, Kristen and Shkaruta, Ksenia and Shridhar, Kumar and McDonell, Kyle and Richardson, Kyle and Reynolds, Laria and Gao, Leo and Zhang, Li and Dugan, Liam and Qin, Lianhui and Contreras-Ochando, Lidia and Morency, Louis-Philippe and Moschella, Luca and Lam, Lucas and Noble, Lucy and Schmidt, Ludwig and He, Luheng and Colón, Luis Oliveros and Metz, Luke and Şenel, Lütfi Kerem and Bosma, Maarten and Sap, Maarten and ter Hoeve, Maartje and Farooqi, Maheen and Faruqui, Manaal and Mazeika, Mantas and Baturan, Marco and Marelli, Marco and Maru, Marco and Quintana, Maria Jose Ramírez and Tolkiehn, Marie and Giulianelli, Mario and Lewis, Martha and Potthast, Martin and Leavitt, Matthew L. and Hagen, Matthias and Schubert, Mátyás and Baitemirova, Medina Orduna and Arnaud, Melody and McElrath, Melvin and Yee, Michael A. and Cohen, Michael and Gu, Michael and Ivanitskiy, Michael and Starritt, Michael and Strube, Michael and Swędrowski, Michał and Bevilacqua, Michele and Yasunaga, Michihiro and Kale, Mihir and Cain, Mike and Xu, Mimee and Suzgun, Mirac and Tiwari, Mo and Bansal, Mohit and Aminnaseri, Moin and Geva, Mor and Gheini, Mozhdeh and T, Mukund Varma and Peng, Nanyun and Chi, Nathan and Lee, Nayeon and Krakover, Neta Gur-Ari and Cameron, Nicholas and Roberts, Nicholas and Doiron, Nick and Nangia, Nikita and Deckers, Niklas and Muennighoff, Niklas and Keskar, Nitish Shirish and Iyer, Niveditha S. and Constant, Noah and Fiedel, Noah and Wen, Nuan and Zhang, Oliver and Agha, Omar and Elbaghdadi, Omar and Levy, Omer and Evans, Owain and Casares, Pablo Antonio Moreno and Doshi, Parth and Fung, Pascale and Liang, Paul Pu and Vicol, Paul and Alipoormolabashi, Pegah and Liao, Peiyuan and Liang, Percy and Chang, Peter and Eckersley, Peter and Htut, Phu Mon and Hwang, Pinyu and Miłkowski, Piotr and Patil, Piyush and Pezeshkpour, Pouya and Oli, Priti and Mei, Qiaozhu and Lyu, Qing and Chen, Qinlang and Banjade, Rabin and Rudolph, Rachel Etta and Gabriel, Raefer and Habacker, Rahel and Delgado, Ramón Risco and Millière, Raphaël and Garg, Rhythm and Barnes, Richard and Saurous, Rif A. and Arakawa, Riku and Raymaekers, Robbe and Frank, Robert and Sikand, Rohan and Novak, Roman and Sitelew, Roman and LeBras, Ronan and Liu, Rosanne and Jacobs, Rowan and Zhang, Rui and Salakhutdinov, Ruslan and Chi, Ryan and Lee, Ryan and Stovall, Ryan and Teehan, Ryan and Yang, Rylan and Singh, Sahib and Mohammad, Saif M. and Anand, Sajant and Dillavou, Sam and Shleifer, Sam and Wiseman, Sam and Gruetter, Samuel and Bowman, Samuel R. and Schoenholz, Samuel S. and Han, Sanghyun and Kwatra, Sanjeev and Rous, Sarah A. and Ghazarian, Sarik and Ghosh, Sayan and Casey, Sean and Bischoff, Sebastian and Gehrmann, Sebastian and Schuster, Sebastian and Sadeghi, Sepideh and Hamdan, Shadi and Zhou, Sharon and Srivastava, Shashank and Shi, Sherry and Singh, Shikhar and Asaadi, Shima and Gu, Shixiang Shane and Pachchigar, Shubh and Toshniwal, Shubham and Upadhyay, Shyam and Shyamolima, Debnath and Shakeri, Siamak and Thormeyer, Simon and Melzi, Simone and Reddy, Siva and Makini, Sneha Priscilla and Lee, Soo-Hwan and Torene, Spencer and Hatwar, Sriharsha and Dehaene, Stanislas and Divic, Stefan and Ermon, Stefano and Biderman, Stella and Lin, Stephanie and Prasad, Stephen and Piantadosi, Steven T. and Shieber, Stuart M. and Misherghi, Summer and Kiritchenko, Svetlana and Mishra, Swaroop and Linzen, Tal and Schuster, Tal and Li, Tao and Yu, Tao and Ali, Tariq and Hashimoto, Tatsu and Wu, Te-Lin and Desbordes, Théo and Rothschild, Theodore and Phan, Thomas and Wang, Tianle and Nkinyili, Tiberius and Schick, Timo and Kornev, Timofei and Telleen-Lawton, Timothy and Tunduny, Titus and Gerstenberg, Tobias and Chang, Trenton and Neeraj, Trishala and Khot, Tushar and Shultz, Tyler and Shaham, Uri and Misra, Vedant and Demberg, Vera and Nyamai, Victoria and Raunak, Vikas and Ramasesh, Vinay and Prabhu, Vinay Uday and Padmakumar, Vishakh and Srikumar, Vivek and Fedus, William and Saunders, William and Zhang, William and Vossen, Wout and Ren, Xiang and Tong, Xiaoyu and Zhao, Xinran and Wu, Xinyi and Shen, Xudong and Yaghoobzadeh, Yadollah and Lakretz, Yair and Song, Yangqiu and Bahri, Yasaman and Choi, Yejin and Yang, Yichi and Hao, Yiding and Chen, Yifu and Belinkov, Yonatan and Hou, Yu and Hou, Yufang and Bai, Yuntao and Seid, Zachary and Zhao, Zhuoye and Wang, Zijian and Wang, Zijie J. and Wang, Zirui and Wu, Ziyi},
+  
+  keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Computers and Society (cs.CY), Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models},
+  
+  publisher = {arXiv},
+  
+  year = {2022},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@misc{kenton2021alignment,
+      title={Alignment of Language Agents}, 
+      author={Zachary Kenton and Tom Everitt and Laura Weidinger and Iason Gabriel and Vladimir Mikulik and Geoffrey Irving},
+      year={2021},
+      eprint={2103.14659},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+@article{nakano2021webgpt,
+  author       = {Reiichiro Nakano and
+                  Jacob Hilton and
+                  Suchir Balaji and
+                  Jeff Wu and
+                  Long Ouyang and
+                  Christina Kim and
+                  Christopher Hesse and
+                  Shantanu Jain and
+                  Vineet Kosaraju and
+                  William Saunders and
+                  Xu Jiang and
+                  Karl Cobbe and
+                  Tyna Eloundou and
+                  Gretchen Krueger and
+                  Kevin Button and
+                  Matthew Knight and
+                  Benjamin Chess and
+                  John Schulman},
+  title        = {WebGPT: Browser-assisted question-answering with human feedback},
+  journal      = {CoRR},
+  volume       = {abs/2112.09332},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2112.09332},
+  eprinttype    = {arXiv},
+  eprint       = {2112.09332},
+  timestamp    = {Mon, 03 Jan 2022 15:45:35 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2112-09332.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@incollection{Bengio+chapter2007,
+author = {Bengio, Yoshua and LeCun, Yann},
+booktitle = {Large Scale Kernel Machines},
+publisher = {MIT Press},
+title = {Scaling Learning Algorithms Towards {AI}},
+year = {2007}
+}
+
+@article{Hinton06,
+author = {Hinton, Geoffrey E. and Osindero, Simon and Teh, Yee Whye},
+journal = {Neural Computation},
+pages = {1527--1554},
+title = {A Fast Learning Algorithm for Deep Belief Nets},
+volume = {18},
+year = {2006}
+}
+
+@inproceedings{pang2022quality,
+  title={{QuALITY}: Question Answering with Long Input Texts, Yes!},
+  author={Pang, Richard Yuanzhe and Parrish, Alicia and Joshi, Nitish and Nangia, Nikita and Phang, Jason and Chen, Angelica and Padmakumar, Vishakh and Ma, Johnny and Thompson, Jana and He, He and others},
+  booktitle={Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  pages={5336--5358},
+  year={2022}
+}
+
+@article{saunders2022selfcritiquing,
+  title={Self-critiquing models for assisting human evaluators},
+  author={Saunders, William and Yeh, Catherine and Wu, Jeff and Bills, Steven and Ouyang, Long and Ward, Jonathan and Leike, Jan},
+  journal={arXiv preprint arXiv:2206.05802},
+  year={2022}
+}
+
+@article{goodfellow2014generative,
+  title={Generative adversarial nets},
+  author={Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+  journal={Advances in neural information processing systems},
+  volume={27},
+  year={2014}
+}
+
+@book{goodfellow2016deep,
+title={Deep learning},
+author={Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron and Bengio, Yoshua},
+volume={1},
+year={2016},
+publisher={MIT Press}
+}
+
+@article{ganguli2022red,
+  title={Red teaming language models to reduce harms: Methods, scaling behaviors, and lessons learned},
+  author={Ganguli, Deep and Lovitt, Liane and Kernion, Jackson and Askell, Amanda and Bai, Yuntao and Kadavath, Saurav and Mann, Ben and Perez, Ethan and Schiefer, Nicholas and Ndousse, Kamal and others},
+  journal={arXiv preprint arXiv:2209.07858},
+  year={2022}
+}
+
+@inproceedings{perez2022red,
+    title = "Red Teaming Language Models with Language Models",
+    author = "Perez, Ethan  and
+      Huang, Saffron  and
+      Song, Francis  and
+      Cai, Trevor  and
+      Ring, Roman  and
+      Aslanides, John  and
+      Glaese, Amelia  and
+      McAleese, Nat  and
+      Irving, Geoffrey",
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    doi = "10.18653/v1/2022.emnlp-main.225",
+    pages = "3419--3448",
+    abstract = "Language Models (LMs) often cannot be deployed because of their potential to harm users in hard-to-predict ways. Prior work identifies harmful behaviors before deployment by using human annotators to hand-write test cases. However, human annotation is expensive, limiting the number and diversity of test cases. In this work, we automatically find cases where a target LM behaves in a harmful way, by generating test cases ({``}red teaming{''}) using another LM. We evaluate the target LM{'}s replies to generated test questions using a classifier trained to detect offensive content, uncovering tens of thousands of offensive replies in a 280B parameter LM chatbot. We explore several methods, from zero-shot generation to reinforcement learning, for generating test cases with varying levels of diversity and difficulty. Furthermore, we use prompt engineering to control LM-generated test cases to uncover a variety of other harms, automatically finding groups of people that the chatbot discusses in offensive ways, personal and hospital phone numbers generated as the chatbot{'}s own contact info, leakage of private training data in generated text, and harms that occur over the course of a conversation. Overall, LM-based red teaming is one promising tool (among many needed) for finding and fixing diverse, undesirable LM behaviors before impacting users.",
+}
+
+@article{radhakrishnan2023question,
+  title={Question decomposition improves the faithfulness of model-generated reasoning},
+  author={Radhakrishnan, Ansh and Nguyen, Karina and Chen, Anna and Chen, Carol and Denison, Carson and Hernandez, Danny and Durmus, Esin and Hubinger, Evan and Kernion, Jackson and Luko{\v{s}}i{\=u}t{\.e}, Kamil{\.e} and others},
+  journal={arXiv preprint arXiv:2307.11768},
+  year={2023}
+}
+@article{christiano2017deep,
+  title={Deep reinforcement learning from human preferences},
+  author={Christiano, Paul F and Leike, Jan and Brown, Tom and Martic, Miljan and Legg, Shane and Amodei, Dario},
+  journal={Advances in neural information processing systems},
+  volume={30},
+  year={2017}
+}
+
+@article{stiennon2020learning,
+  title={Learning to summarize with human feedback},
+  author={Stiennon, Nisan and Ouyang, Long and Wu, Jeffrey and Ziegler, Daniel and Lowe, Ryan and Voss, Chelsea and Radford, Alec and Amodei, Dario and Christiano, Paul F},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={3008--3021},
+  year={2020}
+}
+
+@inproceedings{chromik2021think,
+  title={I think I get your point, AI! The illusion of explanatory depth in explainable AI},
+  author={Chromik, Michael and Eiband, Malin and Buchner, Felicitas and Kr{\"u}ger, Adrian and Butz, Andreas},
+  booktitle={26th International Conference on Intelligent User Interfaces},
+  pages={307--317},
+  year={2021}
+}
+
+@article{liu2021understanding,
+  title={Understanding the effect of out-of-distribution examples and interactive explanations on human-ai decision making},
+  author={Liu, Han and Lai, Vivian and Tan, Chenhao},
+  journal={Proceedings of the ACM on Human-Computer Interaction},
+  volume={5},
+  number={CSCW2},
+  pages={1--45},
+  year={2021},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{nikola2023jailbreaking,
+  title={Jailbreaking GPT-4's code interpreter},
+  author={Nikola},
+  journal={LessWrong},
+  url={https://www.lesswrong.com/posts/KSroBnxCHodGmPPJ8/jailbreaking-gpt-4-s-code-interpreter},
+  year={2023},
+  month={July},
+  day={13}
+}
+
+
+@inproceedings{bansal2021does,
+  title={Does the whole exceed its parts? the effect of ai explanations on complementary team performance},
+  author={Bansal, Gagan and Wu, Tongshuang and Zhou, Joyce and Fok, Raymond and Nushi, Besmira and Kamar, Ece and Ribeiro, Marco Tulio and Weld, Daniel},
+  booktitle={Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},
+  pages={1--16},
+  year={2021}
+}
+
+@article{greenblatt2023ai,
+  title={AI Control: Improving Safety Despite Intentional Subversion},
+  author={Greenblatt, Ryan and Shlegeris, Buck and Sachan, Kshitij and Roger, Fabien},
+  journal={arXiv preprint arXiv:2312.06942},
+  year={2023}
+}
+@article{hubinger2024sleeper,
+  title={Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training},
+  author={Hubinger, Evan and Denison, Carson and Mu, Jesse and Lambert, Mike and Tong, Meg and MacDiarmid, Monte and Lanham, Tamera and Ziegler, Daniel M and Maxwell, Tim and Cheng, Newton and others},
+  journal={arXiv preprint arXiv:2401.05566},
+  year={2024}
+}
+
+
+@article{Cotra2021Aligning,
+  author = {Ajeya Cotra},
+  title = {The Case for Aligning Narrowly Superhuman Models},
+  year = {2021},
+  journal = {AI Alignment Forum},
+}
+
+@article{zheng2023judging,
+  title={Judging {LLM-as-a-judge} with {MT}-Bench and Chatbot Arena},
+  author={Zheng, Lianmin and Chiang, Wei-Lin and Sheng, Ying and Zhuang, Siyuan and Wu, Zhanghao and Zhuang, Yonghao and Lin, Zi and Li, Zhuohan and Li, Dacheng and Xing, Eric and others},
+  journal={arXiv preprint arXiv:2306.05685},
+  year={2023}
+}
+
+@article{herbrich2006trueskill,
+  title={TrueSkill™: a Bayesian skill rating system},
+  author={Herbrich, Ralf and Minka, Tom and Graepel, Thore},
+  journal={Advances in neural information processing systems},
+  volume={19},
+  year={2006}
+}
+
+@book{elo1978rating,
+  title={The Rating of Chessplayers: Past and Present},
+  author={Elo, A.E.},
+  isbn={9780923891275},
+  lccn={2010549499},
+  url={https://books.google.com/books?id=syjcPQAACAAJ},
+  year={1978},
+  publisher={Ishi Press International}
+}
+
+
+@article{bai2022constitutional,
+  title={Constitutional {AI}: Harmlessness from {AI} Feedback},
+  author={Bai, Yuntao and Kadavath, Saurav and Kundu, Sandipan and Askell, Amanda and Kernion, Jackson and Jones, Andy and Chen, Anna and Goldie, Anna and Mirhoseini, Azalia and McKinnon, Cameron and others},
+  journal={arXiv preprint arXiv:2212.08073},
+  year={2022}
+}
+@article{brown2020language,
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={1877--1901},
+  year={2020}
+}
+@article{menick2022teaching,
+  title={Teaching language models to support answers with verified quotes},
+  author={Menick, Jacob and Trebacz, Maja and Mikulik, Vladimir and Aslanides, John and Song, Francis and Chadwick, Martin and Glaese, Mia and Young, Susannah and Campbell-Gillingham, Lucy and Irving, Geoffrey and others},
+  journal={arXiv preprint arXiv:2203.11147},
+  year={2022}
+}
+@article{wei2022chain,
+  title={Chain-of-thought prompting elicits reasoning in large language models},
+  author={Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Xia, Fei and Chi, Ed and Le, Quoc V and Zhou, Denny and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={24824--24837},
+  year={2022}
+}
+@article{wang2023plan,
+  title={Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models},
+  author={Wang, Lei and Xu, Wanyu and Lan, Yihuai and Hu, Zhiqiang and Lan, Yunshi and Lee, Roy Ka-Wei and Lim, Ee-Peng},
+  journal={arXiv preprint arXiv:2305.04091},
+  year={2023}
+}
+
+@article{kojima2022large,
+  title={Large language models are zero-shot reasoners},
+  author={Kojima, Takeshi and Gu, Shixiang Shane and Reid, Machel and Matsuo, Yutaka and Iwasawa, Yusuke},
+  journal={arXiv preprint arXiv:2205.11916},
+  year={2022}
+}
+
+@article{irving2018ai,
+  title={{AI} safety via debate},
+  author={Irving, Geoffrey and Christiano, Paul and Amodei, Dario},
+  journal={arXiv preprint arXiv:1805.00899},
+  year={2018}
+}
+
+@inproceedings{parrish2022single,
+  title={Single-Turn Debate Does Not Help Humans Answer Hard Reading-Comprehension Questions},
+  author={Parrish, Alicia and Trivedi, Harsh and Perez, Ethan and Chen, Angelica and Nangia, Nikita and Phang, Jason and Bowman, Samuel},
+  booktitle={Proceedings of the First Workshop on Learning with Natural Language Supervision},
+  pages={17--28},
+  year={2022}
+}
+
+@article{christiano2018supervising,
+  title={Supervising strong learners by amplifying weak experts},
+  author={Christiano, Paul and Shlegeris, Buck and Amodei, Dario},
+  journal={arXiv preprint arXiv:1810.08575},
+  year={2018}
+}
+
+@misc{lanham2023measuring,
+      title={Measuring Faithfulness in Chain-of-Thought Reasoning}, 
+      author={Tamera Lanham and Anna Chen and Ansh Radhakrishnan and Benoit Steiner and Carson Denison and Danny Hernandez and Dustin Li and Esin Durmus and Evan Hubinger and Jackson Kernion and others},
+      year={2023},
+      eprint={2307.13702},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+@article{perez2021true,
+  title={True few-shot learning with language models},
+  author={Perez, Ethan and Kiela, Douwe and Cho, Kyunghyun},
+  journal={Advances in neural information processing systems},
+  volume={34},
+  pages={11054--11070},
+  year={2021}
+}
+
+@article{amodei2016concrete,
+  title={Concrete problems in {AI} safety},
+  author={Amodei, Dario and Olah, Chris and Steinhardt, Jacob and Christiano, Paul and Schulman, John and Man{\'e}, Dan},
+  journal={arXiv preprint arXiv:1606.06565},
+  year={2016}
+}
+
+@article{bowman2022measuring,
+  title={Measuring progress on scalable oversight for large language models},
+  author={Bowman, Samuel R and Hyun, Jeeyoon and Perez, Ethan and Chen, Edwin and Pettit, Craig and Heiner, Scott and Lukosuite, Kamile and Askell, Amanda and Jones, Andy and Chen, Anna and others},
+  journal={arXiv preprint arXiv:2211.03540},
+  year={2022}
+}
+@article{shinn2023reflexion,
+  title={Reflexion: an autonomous agent with dynamic memory and self-reflection},
+  author={Shinn, Noah and Labash, Beck and Gopinath, Ashwin},
+  journal={arXiv preprint arXiv:2303.11366},
+  year={2023}
+}
+
+@article{openai2023gpt4,
+      title={{GPT-4} Technical Report}, 
+      author={OpenAI},
+      year={2023},
+      eprint={2303.08774},
+      journal={arXiv preprint arXiv:2303.08774},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@article{yao2023tree,
+  title={Tree of Thoughts: Deliberate Problem Solving with Large Language Models},
+  author={Yao, Shunyu and Yu, Dian and Zhao, Jeffrey and Shafran, Izhak and Griffiths, Thomas L and Cao, Yuan and Narasimhan, Karthik},
+  journal={arXiv preprint arXiv:2305.10601},
+  year={2023}
+}
+
+@article{du2023improving,
+      title={Improving Factuality and Reasoning in Language Models through Multiagent Debate}, 
+      author={Yilun Du and Shuang Li and Antonio Torralba and Joshua B. Tenenbaum and Igor Mordatch},
+      journal={arXiv preprint arXiv:2305.14325},
+      year={2023},
+      eprint={2305.14325},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{perez2019finding,
+  title={Finding Generalizable Evidence by Learning to Convince {Q\&A} Models},
+  author={Perez, Ethan and Karamcheti, Siddharth and Fergus, Rob and Weston, Jason and Kiela, Douwe and Cho, Kyunghyun},
+  booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+  pages={2402--2411},
+  year={2019}
+}
+
+@article{Clark2018ThinkYH,
+  title={Think you have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge},
+  author={Peter Clark and Isaac Cowhey and Oren Etzioni and Tushar Khot and Ashish Sabharwal and Carissa Schoenick and Oyvind Tafjord},
+  journal={ArXiv},
+  year={2018},
+  volume={abs/1803.05457}
+}
+
+@inproceedings{Lin2021TruthfulQAMH,
+  title={TruthfulQA: Measuring How Models Mimic Human Falsehoods},
+  author={Stephanie C. Lin and Jacob Hilton and Owain Evans},
+  booktitle={Annual Meeting of the Association for Computational Linguistics},
+  year={2021}
+}
+
+@inproceedings{Liu2020LogiQAAC,
+  title={LogiQA: A Challenge Dataset for Machine Reading Comprehension with Logical Reasoning},
+  author={Jian Liu and Leyang Cui and Hanmeng Liu and Dandan Huang and Yile Wang and Yue Zhang},
+  booktitle={International Joint Conference on Artificial Intelligence},
+  year={2020}
+}
+
+@inproceedings{DBLP:conf/iclr/YuJDF20,
+  author       = {Weihao Yu and
+                  Zihang Jiang and
+                  Yanfei Dong and
+                  Jiashi Feng},
+  title        = {ReClor: {A} Reading Comprehension Dataset Requiring Logical Reasoning},
+  booktitle    = {8th International Conference on Learning Representations, {ICLR} 2020,
+                  Addis Ababa, Ethiopia, April 26-30, 2020},
+  publisher    = {OpenReview.net},
+  year         = {2020},
+  url          = {https://openreview.net/forum?id=HJgJtT4tvB},
+  timestamp    = {Thu, 07 May 2020 17:11:47 +0200},
+  biburl       = {https://dblp.org/rec/conf/iclr/YuJDF20.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{hendrycks2020aligning,
+  title={Aligning ai with shared human values},
+  author={Hendrycks, Dan and Burns, Collin and Basart, Steven and Critch, Andrew and Li, Jerry and Song, Dawn and Steinhardt, Jacob},
+  journal={arXiv preprint arXiv:2008.02275},
+  year={2020}
+}
+
+
+@inproceedings{zellers2019hellaswag,
+  title={HellaSwag: Can a Machine Really Finish Your Sentence?},
+  author={Zellers, Rowan and Holtzman, Ari and Bisk, Yonatan and Farhadi, Ali and Choi, Yejin},
+  booktitle={Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+  pages={4791--4800},
+  year={2019}
+}
+
+@inproceedings{hendrycksmeasuring,
+  title={Measuring Massive Multitask Language Understanding},
+  author={Hendrycks, Dan and Burns, Collin and Basart, Steven and Zou, Andy and Mazeika, Mantas and Song, Dawn and Steinhardt, Jacob},
+  booktitle={International Conference on Learning Representations},
+  year={2020}
+}
+
+@article{barnes2020debate,
+  author = {Beth Barnes},
+  title = {Debate update: Obfuscated arguments problem},
+  year = {2020},
+  journal = {AI Alignment Forum},
+}
+
+@misc{ruis2022large,
+      title={Large language models are not zero-shot communicators}, 
+      author={Laura Ruis and Akbir Khan and Stella Biderman and Sara Hooker and Tim Rocktäschel and Edward Grefenstette},
+      year={2022},
+      eprint={2210.14986},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{nye2022show,
+  title={Show Your Work: Scratchpads for Intermediate Computation with Language Models},
+  author={Nye, Maxwell and Andreassen, Anders Johan and Gur-Ari, Guy and Michalewski, Henryk and Austin, Jacob and Bieber, David and Dohan, David and Lewkowycz, Aitor and Bosma, Maarten and Luan, David and others},
+  booktitle={Deep Learning for Code Workshop},
+  year={2022}
+}
+
+@article{ouyang2022training,
+  title={Training language models to follow instructions with human feedback},
+  author={Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={27730--27744},
+  year={2022}
+}
+
+
+
+@article{glaese2022improving,
+  title={Improving alignment of dialogue agents via targeted human judgements},
+  author={Glaese, Amelia and McAleese, Nat and Tr{\k{e}}bacz, Maja and Aslanides, John and Firoiu, Vlad and Ewalds, Timo and Rauh, Maribeth and Weidinger, Laura and Chadwick, Martin and Thacker, Phoebe and others},
+  journal={arXiv preprint arXiv:2209.14375},
+  year={2022}
+}
+
+@misc{lightman2023lets,
+      title={Let's Verify Step by Step}, 
+      author={Hunter Lightman and Vineet Kosaraju and Yura Burda and Harri Edwards and Bowen Baker and Teddy Lee and Jan Leike and John Schulman and Ilya Sutskever and Karl Cobbe},
+      year={2023},
+      eprint={2305.20050},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{nakano2022webgpt,
+      title={WebGPT: Browser-assisted question-answering with human feedback}, 
+      author={Reiichiro Nakano and Jacob Hilton and Suchir Balaji and Jeff Wu and Long Ouyang and Christina Kim and Christopher Hesse and Shantanu Jain and Vineet Kosaraju and William Saunders and Xu Jiang and Karl Cobbe and Tyna Eloundou and Gretchen Krueger and Kevin Button and Matthew Knight and Benjamin Chess and John Schulman},
+      year={2022},
+      eprint={2112.09332},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{wei2023larger,
+      title={Larger language models do in-context learning differently}, 
+      author={Jerry Wei and Jason Wei and Yi Tay and Dustin Tran and Albert Webson and Yifeng Lu and Xinyun Chen and Hanxiao Liu and Da Huang and Denny Zhou and Tengyu Ma},
+      year={2023},
+      eprint={2303.03846},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+@inproceedings{parrishtwo,
+  title={Two-Turn Debate Does Not Help Humans Answer Hard Reading Comprehension Questions},
+  author={Parrish, Alicia and Trivedi, Harsh and Nangia, Nikita and Phang, Jason and Padmakumar, Vishakh and Saimbhi, Amanpreet Singh and Bowman, Samuel R},
+  booktitle={NeurIPS ML Safety Workshop},
+  year={2022}
+}
+
+@article{geva2021strategyqa,
+  title = {{Did Aristotle Use a Laptop? A Question Answering Benchmark with Implicit Reasoning Strategies}},
+  author = {Geva, Mor and Khashabi, Daniel and Segal, Elad and Khot, Tushar and Roth, Dan and Berant, Jonathan},
+  journal = {Transactions of the Association for Computational Linguistics (TACL)},
+  year = {2021},
+}
+@inproceedings{talmor-etal-2019-commonsenseqa,
+    title = "{C}ommonsense{QA}: A Question Answering Challenge Targeting Commonsense Knowledge",
+    author = "Talmor, Alon  and
+      Herzig, Jonathan  and
+      Lourie, Nicholas  and
+      Berant, Jonathan",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1421",
+    doi = "10.18653/v1/N19-1421",
+    pages = "4149--4158",
+    archivePrefix = "arXiv",
+    eprint        = "1811.00937",
+    primaryClass  = "cs",
+}
+
+@article{singhal2023towards,
+  title={Towards Expert-Level Medical Question Answering with Large Language Models},
+  author={Singhal, Karan and Tu, Tao and Gottweis, Juraj and Sayres, Rory and Wulczyn, Ellery and Hou, Le and Clark, Kevin and Pfohl, Stephen and Cole-Lewis, Heather and Neal, Darlene and others},
+  journal={arXiv preprint arXiv:2305.09617},
+  year={2023}
+}
+
+@article{burns2023weaktostrong,
+      title={Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision}, 
+      author={Collin Burns and Pavel Izmailov and Jan Hendrik Kirchner and Bowen Baker and Leo Gao and Leopold Aschenbrenner and Yining Chen and Adrien Ecoffet and Manas Joglekar and Jan Leike and Ilya Sutskever and Jeff Wu},
+      year={2023},
+      journal={arXiv preprint arXiv:2312.09390},
+      eprint={2312.09390},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{sharma2023towards,
+  title={Towards understanding sycophancy in language models},
+  author={Sharma, Mrinank and Tong, Meg and Korbak, Tomasz and Duvenaud, David and Askell, Amanda and Bowman, Samuel R and Cheng, Newton and Durmus, Esin and Hatfield-Dodds, Zac and Johnston, Scott R and others},
+  journal={arXiv preprint arXiv:2310.13548},
+  year={2023}
+}
+
+@article{geminiteam2023gemini,
+      title={Gemini: A Family of Highly Capable Multimodal Models}, 
+      author={{Gemini Team} and Rohan Anil and Sebastian Borgeaud and Yonghui Wu and Jean-Baptiste Alayrac and Jiahui Yu and Radu Soricut and Johan Schalkwyk and Andrew M. Dai and Anja Hauth and Katie Millican and others},
+      year={2023},
+      journal={arXiv preprint arXiv:2312.11805},
+      eprint={2312.11805},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{madaan2023selfrefine,
+      title={Self-Refine: Iterative Refinement with Self-Feedback}, 
+      author={Aman Madaan and Niket Tandon and Prakhar Gupta and Skyler Hallinan and Luyu Gao and Sarah Wiegreffe and Uri Alon and Nouha Dziri and Shrimai Prabhumoye and Yiming Yang and Shashank Gupta and Bodhisattwa Prasad Majumder and Katherine Hermann and Sean Welleck and Amir Yazdanbakhsh and Peter Clark},
+      journal={arXiv preprint arXiv:2303.17651},
+      year={2023},
+      eprint={2303.17651},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{rein2023gpqa,
+      title={GPQA: A Graduate-Level Google-Proof Q\&A Benchmark}, 
+      author={David Rein and Betty Li Hou and Asa Cooper Stickland and Jackson Petty and Richard Yuanzhe Pang and Julien Dirani and Julian Michael and Samuel R. Bowman},
+      year={2023},
+      journal={arXiv preprint arXiv:2311.12022},
+      eprint={2311.12022},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+@inproceedings{lin2022truthfulqa,
+  title={TruthfulQA: Measuring How Models Mimic Human Falsehoods},
+  author={Lin, Stephanie and Hilton, Jacob and Evans, Owain},
+  booktitle={Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={3214--3252},
+  year={2022}
+}
+
+
+@article{goswami2024aqua,
+      title={AQuA: A Benchmarking Tool for Label Quality Assessment}, 
+      author={Mononito Goswami and Vedant Sanil and Arjun Choudhry and Arvind Srinivasan and Chalisa Udompanyawit and Artur Dubrawski},
+      journal={arXiv preprint arXiv:2306.09467},
+      year={2023},
+      eprint={2306.09467},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{jiang2024mixtral,
+  title={Mixtral of experts},
+  author={Jiang, Albert Q and Sablayrolles, Alexandre and Roux, Antoine and Mensch, Arthur and Savary, Blanche and Bamford, Chris and Chaplot, Devendra Singh and Casas, Diego de las and Hanna, Emma Bou and Bressand, Florian and others},
+  journal={arXiv preprint arXiv:2401.04088},
+  year={2024}
+}

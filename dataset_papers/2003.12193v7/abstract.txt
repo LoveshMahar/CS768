@@ -1,0 +1,17 @@
+{\em Hypernetworks} are architectures that produce the weights of a
+task-specific {\em primary network}. A notable application of hypernetworks in
+the recent literature involves learning to output functional representations.
+In these scenarios, the hypernetwork learns a representation corresponding to
+the weights of a shallow MLP, which typically encodes shape or image
+information. While such representations have seen considerable success in
+practice, they remain lacking in the theoretical guarantees in the wide regime
+of the standard architectures. In this work, we study wide over-parameterized
+hypernetworks. We show that unlike typical architectures, infinitely wide
+hypernetworks do not guarantee convergence to a global minima under gradient
+descent. We further show that convexity can be achieved by increasing the
+dimensionality of the hypernetwork's output, to represent wide MLPs. In the
+dually infinite-width regime, we identify the functional priors of these
+architectures by deriving their corresponding GP and NTK kernels, the latter of
+which we refer to as the {\em hyperkernel}. As part of this study, we make a
+mathematical contribution by deriving tight bounds on high order Taylor
+expansion terms of standard fully connected ReLU networks.

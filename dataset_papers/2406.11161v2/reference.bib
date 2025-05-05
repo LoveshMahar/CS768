@@ -1,0 +1,928 @@
+% === introduce ===
+
+% === instruction tuning
+% alpaca
+@article{taori2023stanford,
+  title={Stanford alpaca: an instruction-following llama model (2023)},
+  author={Taori, Rohan and Gulrajani, Ishaan and Zhang, Tianyi and Dubois, Yann and Li, Xuechen and Guestrin, Carlos and Liang, Percy and Hashimoto, Tatsunori B},
+  journal={URL https://github. com/tatsu-lab/stanford\_alpaca},
+  year={2023}
+}
+
+@article{chiang2023vicuna,
+  title={Vicuna: An open-source chatbot impressing gpt-4 with 90\%* chatgpt quality},
+  author={Chiang, Wei-Lin and Li, Zhuohan and Lin, Zi and Sheng, Ying and Wu, Zhanghao and Zhang, Hao and Zheng, Lianmin and Zhuang, Siyuan and Zhuang, Yonghao and Gonzalez, Joseph E and others},
+  journal={See https://vicuna. lmsys. org (accessed 14 April 2023)},
+  volume={2},
+  number={3},
+  pages={6},
+  year={2023}
+}
+
+% GPT-4-LLM
+@article{peng2023instruction,
+  title={Instruction tuning with gpt-4},
+  author={Peng, Baolin and Li, Chunyuan and He, Pengcheng and Galley, Michel and Gao, Jianfeng},
+  journal={arXiv preprint arXiv:2304.03277},
+  year={2023}
+}
+
+% Otter
+@article{li2023mimic,
+  title={Mimic-it: Multi-modal in-context instruction tuning},
+  author={Li, Bo and Zhang, Yuanhan and Chen, Liangyu and Wang, Jinghao and Pu, Fanyi and Yang, Jingkang and Li, Chunyuan and Liu, Ziwei},
+  journal={arXiv preprint arXiv:2306.05425},
+  year={2023}
+}
+
+% VideoChat2
+@inproceedings{li2024mvbench,
+  title={Mvbench: A comprehensive multi-modal video understanding benchmark},
+  author={Li, Kunchang and Wang, Yali and He, Yinan and Li, Yizhuo and Wang, Yi and Liu, Yi and Wang, Zun and Xu, Jilan and Chen, Guo and Luo, Ping and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={22195--22206},
+  year={2024}
+}
+
+% SALMONN 
+@article{tang2023salmonn,
+  title={Salmonn: Towards generic hearing abilities for large language models},
+  author={Tang, Changli and Yu, Wenyi and Sun, Guangzhi and Chen, Xianzhao and Tan, Tian and Li, Wei and Lu, Lu and Ma, Zejun and Zhang, Chao},
+  journal={arXiv preprint arXiv:2310.13289},
+  year={2023}
+}
+
+% mPLUG-Ow
+@article{ye2023mplug,
+  title={mplug-owl: Modularization empowers large language models with multimodality},
+  author={Ye, Qinghao and Xu, Haiyang and Xu, Guohai and Ye, Jiabo and Yan, Ming and Zhou, Yiyang and Wang, Junyang and Hu, Anwen and Shi, Pengcheng and Shi, Yaya and others},
+  journal={arXiv preprint arXiv:2304.14178},
+  year={2023}
+}
+
+% GPT-4V
+@misc{openai2023gpt4v,
+    title = {GPT-4V(ision) system card},
+    url = {https://openai.com/research/gpt-4v-system-card},
+    author = {OpenAI},
+    year = {2023}
+}
+
+% === Motivation ===
+% AffectGPT / EMER dataset
+@article{lian2023explainable,
+  title={Explainable multimodal emotion reasoning},
+  author={Lian, Zheng and Sun, Licai and Xu, Mingyu and Sun, Haiyang and Xu, Ke and Wen, Zhuofan and Chen, Shun and Liu, Bin and Tao, Jianhua},
+  journal={arXiv preprint arXiv:2306.15401},
+  year={2023}
+}
+
+% === Datasets ===
+% MER2024
+@article{lian2024mer,
+  title={MER 2024: Semi-Supervised Learning, Noise Robustness, and Open-Vocabulary Multimodal Emotion Recognition},
+  author={Lian, Zheng and Sun, Haiyang and Sun, Licai and Wen, Zhuofan and Zhang, Siyuan and Chen, Shun and Gu, Hao and Zhao, Jinming and Ma, Ziyang and Chen, Xie and others},
+  journal={arXiv preprint arXiv:2404.17113},
+  year={2024}
+}
+
+% MER2023
+@inproceedings{lian2023mer,
+  title={Mer 2023: Multi-label learning, modality robustness, and semi-supervised learning},
+  author={Lian, Zheng and Sun, Haiyang and Sun, Licai and Chen, Kang and Xu, Mngyu and Wang, Kexin and Xu, Ke and He, Yu and Li, Ying and Zhao, Jinming and others},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+  pages={9610--9614},
+  year={2023}
+}
+
+% DFEW / EC-STFl
+@inproceedings{jiang2020dfew,
+  title={Dfew: A large-scale database for recognizing dynamic facial expressions in the wild},
+  author={Jiang, Xingxun and Zong, Yuan and Zheng, Wenming and Tang, Chuangao and Xia, Wanchuang and Lu, Cheng and Liu, Jiateng},
+  booktitle={Proceedings of the 28th ACM international conference on multimedia},
+  pages={2881--2889},
+  year={2020}
+}
+
+% CC
+@inproceedings{changpinyo2021conceptual,
+  title={Conceptual 12m: Pushing web-scale image-text pre-training to recognize long-tail visual concepts},
+  author={Changpinyo, Soravit and Sharma, Piyush and Ding, Nan and Soricut, Radu},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={3558--3568},
+  year={2021}
+}
+
+% LAION
+@article{schuhmann2022laion,
+  title={Laion-5b: An open large-scale dataset for training next generation image-text models},
+  author={Schuhmann, Christoph and Beaumont, Romain and Vencu, Richard and Gordon, Cade and Wightman, Ross and Cherti, Mehdi and Coombes, Theo and Katta, Aarush and Mullis, Clayton and Wortsman, Mitchell and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={25278--25294},
+  year={2022}
+}
+
+% EmoSet
+@inproceedings{yang2023emoset,
+  title={EmoSet: A large-scale visual emotion dataset with rich attributes},
+  author={Yang, Jingyuan and Huang, Qirui and Ding, Tingting and Lischinski, Dani and Cohen-Or, Danny and Huang, Hui},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={20383--20394},
+  year={2023}
+}
+
+% EmoVIT
+@article{xie2024emovit,
+  title={EmoVIT: Revolutionizing Emotion Insights with Visual Instruction Tuning},
+  author={Xie, Hongxia and Peng, Chu-Jun and Tseng, Yu-Wen and Chen, Hung-Jen and Hsu, Chan-Feng and Shuai, Hong-Han and Cheng, Wen-Huang},
+  journal={arXiv preprint arXiv:2404.16670},
+  year={2024}
+}
+
+
+% === MER2024 SOTA Method ====
+@article{qi2024multimodal,
+  title={Multimodal Emotion Recognition with Vision-language Prompting and Modality Dropout},
+  author={QI, Anbin and Liu, Zhongliang and Zhou, Xinyong and Xiao, Jinba and Zhang, Fengrun and Gan, Qi and Tao, Ming and Zhang, Gaozheng and Zhang, Lu},
+  journal={arXiv preprint arXiv:2409.07078},
+  year={2024}
+}
+
+@article{shi2024audio,
+  title={Audio-Guided Fusion Techniques for Multimodal Emotion Analysis},
+  author={Shi, Pujin and Gao, Fei},
+  journal={arXiv preprint arXiv:2409.05007},
+  year={2024}
+}
+
+@article{chen2024improving,
+  title={Improving Multimodal Emotion Recognition by Leveraging Acoustic Adaptation and Visual Alignment},
+  author={Chen, Haifeng and Li, Xi and Jiang, Dongmei and Xie, Lei and others},
+  journal={arXiv preprint arXiv:2409.05015},
+  year={2024}
+}
+
+@article{fan2024leveraging,
+  title={Leveraging Contrastive Learning and Self-Training for Multimodal Emotion Recognition with Limited Labeled Samples},
+  author={Fan, Qi and Li, Yutong and Xin, Yi and Cheng, Xinyu and Gao, Guanglai and Ma, Miao},
+  journal={arXiv preprint arXiv:2409.04447},
+  year={2024}
+}
+
+@article{fan2023learning,
+  title={Learning noise-robust joint representation for multimodal emotion recognition under realistic incomplete data scenarios},
+  author={Fan, Qi and Zuo, Haolin and Liu, Rui and Lian, Zheng and Gao, Guanglai},
+  journal={arXiv preprint arXiv:2311.16114},
+  year={2023}
+}
+
+@article{cheng2024sztu,
+  title={SZTU-CMU at MER2024: Improving Emotion-LLaMA with Conv-Attention for Multimodal Emotion Recognition},
+  author={Cheng, Zebang and Tu, Shuyuan and Huang, Dawei and Li, Minghan and Peng, Xiaojiang and Cheng, Zhi-Qi and Hauptmann, Alexander G},
+  journal={arXiv preprint arXiv:2408.10500},
+  year={2024}
+}
+
+@article{zhang2024microemo,
+  title={MicroEmo: Time-Sensitive Multimodal Emotion Recognition with Micro-Expression Dynamics in Video Dialogues},
+  author={Zhang, Liyun},
+  journal={arXiv preprint arXiv:2407.16552},
+  year={2024}
+}
+
+@article{ge2024video,
+  title={Video Emotion Open-vocabulary Recognition Based on Multimodal Large Language Model},
+  author={Ge, Mengying and Tang, Dongkai and Li, Mingyang},
+  journal={arXiv preprint arXiv:2408.11286},
+  year={2024}
+}
+
+
+% === MER2023 SOTA Method ====
+@inproceedings{hershey2017vggish,
+  title={CNN architectures for large-scale audio classification},
+  author={Hershey, Shawn and Chaudhuri, Sourish and Ellis, Daniel PW and Gemmeke, Jort F and Jansen, Aren and Moore, R Channing and Plakal, Manoj and Platt, Devin and Saurous, Rif A and Seybold, Bryan and others},
+  booktitle={2017 ieee international conference on acoustics, speech and signal processing (icassp)},
+  pages={131--135},
+  year={2017},
+  organization={IEEE}
+}
+
+@article{baevski2020wav2vec,
+  title={wav2vec 2.0: A framework for self-supervised learning of speech representations},
+  author={Baevski, Alexei and Zhou, Yuhao and Mohamed, Abdelrahman and Auli, Michael},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={12449--12460},
+  year={2020}
+}
+
+@article{hsu2021hubert,
+  title={Hubert: Self-supervised speech representation learning by masked prediction of hidden units},
+  author={Hsu, Wei-Ning and Bolte, Benjamin and Tsai, Yao-Hung Hubert and Lakhotia, Kushal and Salakhutdinov, Ruslan and Mohamed, Abdelrahman},
+  journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+  volume={29},
+  pages={3451--3460},
+  year={2021},
+  publisher={IEEE}
+}
+
+@inproceedings{he2016resnet,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={770--778},
+  year={2016}
+}
+
+% MAE
+@inproceedings{he2022masked,
+  title={Masked autoencoders are scalable vision learners},
+  author={He, Kaiming and Chen, Xinlei and Xie, Saining and Li, Yanghao and Doll{\'a}r, Piotr and Girshick, Ross},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={16000--16009},
+  year={2022}
+}
+
+@article{tong2022videomae,
+  title={Videomae: Masked autoencoders are data-efficient learners for self-supervised video pre-training},
+  author={Tong, Zhan and Song, Yibing and Wang, Jue and Wang, Limin},
+  journal={Advances in neural information processing systems},
+  volume={35},
+  pages={10078--10093},
+  year={2022}
+}
+
+@article{devlin2018bert,
+  title={Bert: Pre-training of deep bidirectional transformers for language understanding},
+  author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  journal={arXiv preprint arXiv:1810.04805},
+  year={2018}
+}
+
+@article{liu2019roberta,
+  title={Roberta: A robustly optimized bert pretraining approach},
+  author={Liu, Yinhan and Ott, Myle and Goyal, Naman and Du, Jingfei and Joshi, Mandar and Chen, Danqi and Levy, Omer and Lewis, Mike and Zettlemoyer, Luke and Stoyanov, Veselin},
+  journal={arXiv preprint arXiv:1907.11692},
+  year={2019}
+}
+
+% MacBERT
+@article{cui2020revisiting,
+  title={Revisiting pre-trained models for Chinese natural language processing},
+  author={Cui, Yiming and Che, Wanxiang and Liu, Ting and Qin, Bing and Wang, Shijin and Hu, Guoping},
+  journal={arXiv preprint arXiv:2004.13922},
+  year={2020}
+}
+
+% Transformer / 0.8853 / rank3
+@inproceedings{chen2023semi,
+  title={Semi-Supervised Multimodal Emotion Recognition with Class-Balanced Pseudo-labeling},
+  author={Chen, Haifeng and Guo, Chujia and Li, Yan and Zhang, Peng and Jiang, Dongmei},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+  pages={9556--9560},
+  year={2023}
+}
+
+% FBP / Expression MAE
+@inproceedings{cheng2023semi,
+  title={Semi-Supervised Multimodal Emotion Recognition with Expression MAE},
+  author={Cheng, Zebang and Lin, Yuxiang and Chen, Zhaoru and Li, Xiang and Mao, Shuyi and Zhang, Fan and Ding, Daijun and Zhang, Bowen and Peng, Xiaojiang},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+  pages={9436--9440},
+  year={2023}
+}
+
+% VAT
+@inproceedings{ding2023learning,
+  title={Learning Aligned Audiovisual Representations for Multimodal Sentiment Analysis},
+  author={Ding, Chaoyue and Zong, Daoming and Li, Baoxiang and Zheng, Ken and Zhou, Dinghao and Li, Jiakui and Zhou, Qunyan},
+  booktitle={Proceedings of the 1st International Workshop on Multimodal and Responsible Affective Computing},
+  pages={21--28},
+  year={2023}
+}
+
+% === DFEW SOTA Method ===
+% Former-DFER
+@inproceedings{zhao2021former,
+  title={Former-dfer: Dynamic facial expression recognition transformer},
+  author={Zhao, Zengqun and Liu, Qingshan},
+  booktitle={Proceedings of the 29th ACM International Conference on Multimedia},
+  pages={1553--1561},
+  year={2021}
+}
+
+% IAL
+@inproceedings{li2023intensity,
+  title={Intensity-aware loss for dynamic facial expression recognition in the wild},
+  author={Li, Hanting and Niu, Hongjing and Zhu, Zhaoqing and Zhao, Feng},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={37},
+  pages={67--75},
+  year={2023}
+}
+
+% MAE-DFER
+@inproceedings{sun2023mae,
+  title={Mae-dfer: Efficient masked autoencoder for self-supervised dynamic facial expression recognition},
+  author={Sun, Licai and Lian, Zheng and Liu, Bin and Tao, Jianhua},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+  pages={6110--6121},
+  year={2023}
+}
+
+@article{chen2024static,
+  title={From static to dynamic: Adapting landmark-aware image models for facial expression recognition in videos},
+  author={Chen, Yin and Li, Jia and Shan, Shiguang and Wang, Meng and Hong, Richang},
+  journal={IEEE Transactions on Affective Computing},
+  year={2024},
+  publisher={IEEE}
+}
+
+% === Multimodal Encoder ===
+% CLIP
+@inproceedings{radford2021learning,
+  title={Learning transferable visual models from natural language supervision},
+  author={Radford, Alec and Kim, Jong Wook and Hallacy, Chris and Ramesh, Aditya and Goh, Gabriel and Agarwal, Sandhini and Sastry, Girish and Askell, Amanda and Mishkin, Pamela and Clark, Jack and others},
+  booktitle={International conference on machine learning},
+  pages={8748--8763},
+  year={2021},
+  organization={PMLR}
+}
+
+% Blip-2
+@inproceedings{li2023blip,
+  title={Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models},
+  author={Li, Junnan and Li, Dongxu and Savarese, Silvio and Hoi, Steven},
+  booktitle={International conference on machine learning},
+  pages={19730--19742},
+  year={2023},
+  organization={PMLR}
+}
+
+@inproceedings{girdhar2023imagebind,
+  title={Imagebind: One embedding space to bind them all},
+  author={Girdhar, Rohit and El-Nouby, Alaaeldin and Liu, Zhuang and Singh, Mannat and Alwala, Kalyan Vasudev and Joulin, Armand and Misra, Ishan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={15180--15190},
+  year={2023}
+}
+
+% === Multimodal large language model ===
+@article{guo2024stimuvar,
+  title={StimuVAR: Spatiotemporal Stimuli-aware Video Affective Reasoning with Multimodal Large Language Models},
+  author={Guo, Yuxiang and Siddiqui, Faizan and Zhao, Yang and Chellappa, Rama and Lo, Shao-Yuan},
+  journal={arXiv preprint arXiv:2409.00304},
+  year={2024}
+}
+
+@article{lei2024large,
+  title={Large Vision-Language Models as Emotion Recognizers in Context Awareness},
+  author={Lei, Yuxuan and Yang, Dingkang and Chen, Zhaoyu and Chen, Jiawei and Zhai, Peng and Zhang, Lihua},
+  journal={arXiv preprint arXiv:2407.11300},
+  year={2024}
+}
+
+
+@article{li2023videochat,
+  title={Videochat: Chat-centric video understanding},
+  author={Li, KunChang and He, Yinan and Wang, Yi and Li, Yizhuo and Wang, Wenhai and Luo, Ping and Wang, Yali and Wang, Limin and Qiao, Yu},
+  journal={arXiv preprint arXiv:2305.06355},
+  year={2023}
+}
+
+% Video-llama
+@article{zhang2023video,
+  title={Video-llama: An instruction-tuned audio-visual language model for video understanding},
+  author={Zhang, Hang and Li, Xin and Bing, Lidong},
+  journal={arXiv preprint arXiv:2306.02858},
+  year={2023}
+}
+
+@article{su2023pandagpt,
+  title={Pandagpt: One model to instruction-follow them all},
+  author={Su, Yixuan and Lan, Tian and Li, Huayang and Xu, Jialu and Wang, Yan and Cai, Deng},
+  journal={arXiv preprint arXiv:2305.16355},
+  year={2023}
+}
+
+% Video-chatgpt
+@article{maaz2023video,
+  title={Video-chatgpt: Towards detailed video understanding via large vision and language models},
+  author={Maaz, Muhammad and Rasheed, Hanoona and Khan, Salman and Khan, Fahad Shahbaz},
+  journal={arXiv preprint arXiv:2306.05424},
+  year={2023}
+}
+
+% Valley
+@article{luo2023valley,
+  title={Valley: Video assistant with large language model enhanced ability},
+  author={Luo, Ruipu and Zhao, Ziwang and Yang, Min and Dong, Junwei and Qiu, Minghui and Lu, Pengcheng and Wang, Tao and Wei, Zhongyu},
+  journal={arXiv preprint arXiv:2306.07207},
+  year={2023}
+}
+
+@article{chen2023minigpt,
+  title={Minigpt-v2: large language model as a unified interface for vision-language multi-task learning},
+  author={Chen, Jun and Zhu, Deyao and Shen, Xiaoqian and Li, Xiang and Liu, Zechun and Zhang, Pengchuan and Krishnamoorthi, Raghuraman and Chandra, Vikas and Xiong, Yunyang and Elhoseiny, Mohamed},
+  journal={arXiv preprint arXiv:2310.09478},
+  year={2023}
+}
+
+@inproceedings{fang2023eva,
+  title={Eva: Exploring the limits of masked visual representation learning at scale},
+  author={Fang, Yuxin and Wang, Wen and Xie, Binhui and Sun, Quan and Wu, Ledell and Wang, Xinggang and Huang, Tiejun and Wang, Xinlong and Cao, Yue},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={19358--19369},
+  year={2023}
+}
+
+@article{zhu2023minigpt,
+  title={Minigpt-4: Enhancing vision-language understanding with advanced large language models},
+  author={Zhu, Deyao and Chen, Jun and Shen, Xiaoqian and Li, Xiang and Elhoseiny, Mohamed},
+  journal={arXiv preprint arXiv:2304.10592},
+  year={2023}
+}
+
+@inproceedings{zadeh2018multimodal,
+  title={Multimodal language analysis in the wild: Cmu-mosei dataset and interpretable dynamic fusion graph},
+  author={Zadeh, AmirAli Bagher and Liang, Paul Pu and Poria, Soujanya and Cambria, Erik and Morency, Louis-Philippe},
+  booktitle={Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={2236--2246},
+  year={2018}
+}
+
+% LLaVA
+@article{liu2024visual,
+  title={Visual instruction tuning},
+  author={Liu, Haotian and Li, Chunyuan and Wu, Qingyang and Lee, Yong Jae},
+  journal={NeurIPS},
+  volume={36},
+  year={2024}
+}
+
+@article{touvron2023llama,
+  title={Llama 2: Open foundation and fine-tuned chat models},
+  author={Touvron, Hugo and Martin, Louis and Stone, Kevin and Albert, Peter and Almahairi, Amjad and Babaei, Yasmine and Bashlykov, Nikolay and Batra, Soumya and Bhargava, Prajjwal and Bhosale, Shruti and others},
+  journal={arXiv preprint arXiv:2307.09288},
+  year={2023}
+}
+
+% QwenAudio
+@article{chu2023qwen,
+  title={Qwen-audio: Advancing universal audio understanding via unified large-scale audio-language models},
+  author={Chu, Yunfei and Xu, Jin and Zhou, Xiaohuan and Yang, Qian and Zhang, Shiliang and Yan, Zhijie and Zhou, Chang and Zhou, Jingren},
+  journal={arXiv preprint arXiv:2311.07919},
+  year={2023}
+}
+
+@article{alayrac2022flamingo,
+  title={Flamingo: a visual language model for few-shot learning},
+  author={Alayrac, Jean-Baptiste and Donahue, Jeff and Luc, Pauline and Miech, Antoine and Barr, Iain and Hasson, Yana and Lenc, Karel and Mensch, Arthur and Millican, Katherine and Reynolds, Malcolm and others},
+  journal={Advances in neural information processing systems},
+  volume={35},
+  pages={23716--23736},
+  year={2022}
+}
+
+@misc{vicuna2023,
+    title = {Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90\%* ChatGPT Quality},
+    url = {https://vicuna.lmsys.org},
+    author = {Chiang, Wei-Lin and Li, Zhuohan and Lin, Zi and Sheng, Ying and Wu, Zhanghao and Zhang, Hao and Zheng, Lianmin and Zhuang, Siyuan and Zhuang, Yonghao and Gonzalez, Joseph E. and Stoica, Ion and Xing, Eric P.},
+    month = {March},
+    year = {2023}
+}
+
+@article{wang2023visionllm,
+  title={Visionllm: Large language model is also an open-ended decoder for vision-centric tasks},
+  author={Wang, Wenhai and Chen, Zhe and Chen, Xiaokang and Wu, Jiannan and Zhu, Xizhou and Zeng, Gang and Luo, Ping and Lu, Tong and Zhou, Jie and Qiao, Yu and others},
+  journal={arXiv preprint arXiv:2305.11175},
+  year={2023}
+}
+
+@article{peng2023kosmos,
+  title={Kosmos-2: Grounding Multimodal Large Language Models to the World},
+  author={Peng, Zhiliang and Wang, Wenhui and Dong, Li and Hao, Yaru and Huang, Shaohan and Ma, Shuming and Wei, Furu},
+  journal={arXiv preprint arXiv:2306.14824},
+  year={2023}
+}
+
+@article{shikra,
+  title={Shikra: Unleashing Multimodal LLM's Referential Dialogue Magic},
+  author={Chen, Keqin and Zhang, Zhao and Zeng, Weili and Zhang, Richong and Zhu, Feng and Zhao, Rui},
+  journal={arXiv preprint arXiv:2306.15195},
+  year={2023}
+}
+
+@article{qwen,
+  title={Qwen-VL: A Frontier Large Vision-Language Model with Versatile Abilities},
+  author={Bai, Jinze and Bai, Shuai and Yang, Shusheng and Wang, Shijie and Tan, Sinan and Wang, Peng and Lin, Junyang and Zhou, Chang and Zhou, Jingren},
+  journal={arXiv preprint arXiv:2308.12966},
+  year={2023}
+}
+
+% === instruction tuning ===
+@article{yue2023mammoth,
+  title={Mammoth: Building math generalist models through hybrid instruction tuning},
+  author={Yue, Xiang and Qu, Xingwei and Zhang, Ge and Fu, Yao and Huang, Wenhao and Sun, Huan and Su, Yu and Chen, Wenhu},
+  journal={arXiv preprint arXiv:2309.05653},
+  year={2023}
+}
+
+% LLaVA-NEXT
+@misc{liu2024llava,
+  title={Llava-next: Improved reasoning, ocr, and world knowledge},
+  author={Liu, Haotian and Li, Chunyuan and Li, Yuheng and Li, Bo and Zhang, Yuanhan and Shen, Sheng and Lee, Yong Jae},
+  year={2024}
+}
+
+% GPT3
+@article{brown2020gpt3,
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={Advances in Neural Information Processing Systems},
+  year={2020}
+}
+
+% T5
+@article{raffel2020exploring,
+  title={Exploring the limits of transfer learning with a unified text-to-text transformer},
+  author={Raffel, Colin and Shazeer, Noam and Roberts, Adam and Lee, Katherine and Narang, Sharan and Matena, Michael and Zhou, Yanqi and Li, Wei and Liu, Peter J},
+  journal={The Journal of Machine Learning Research},
+  year={2020}
+}
+
+% PALM
+@article{chowdhery2022palm,
+  title={Palm: Scaling language modeling with pathways},
+  author={Chowdhery, Aakanksha and Narang, Sharan and Devlin, Jacob and Bosma, Maarten and Mishra, Gaurav and Roberts, Adam and Barham, Paul and Chung, Hyung Won and Sutton, Charles and Gehrmann, Sebastian and others},
+  journal={arXiv preprint arXiv:2204.02311},
+  year={2022}
+}
+
+% OPT
+@article{zhang2022opt,
+  title={{OPT}: Open pre-trained transformer language models},
+  author={Zhang, Susan and Roller, Stephen and Goyal, Naman and Artetxe, Mikel and Chen, Moya and Chen, Shuohui and Dewan, Christopher and Diab, Mona and Li, Xian and Lin, Xi Victoria and others},
+  journal={arXiv preprint arXiv:2205.01068},
+  year={2022}
+}
+
+% InstructionGPT
+@article{ouyang2022instruct-tuning,
+  title={Training language models to follow instructions with human feedback},
+  author={Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and others},
+  journal={Advances in Neural Information Processing Systems},
+  year={2022}
+}
+
+% FLAN
+@article{chung2022scaling,
+  title={Scaling instruction-finetuned language models},
+  author={Chung, Hyung Won and Hou, Le and Longpre, Shayne and Zoph, Barret and Tay, Yi and Fedus, William and Li, Eric and Wang, Xuezhi and Dehghani, Mostafa and Brahma, Siddhartha and others},
+  journal={arXiv preprint arXiv:2210.11416},
+  year={2022}
+}
+
+% OPT-IML
+@article{iyer2022opt-iml,
+  title={OPT-IML: Scaling Language Model Instruction Meta Learning through the Lens of Generalization},
+  author={Iyer, Srinivasan and Lin, Xi Victoria and Pasunuru, Ramakanth and Mihaylov, Todor and Simig, D{\'a}niel and Yu, Ping and Shuster, Kurt and Wang, Tianlu and Liu, Qing and Koura, Punit Singh and others},
+  journal={arXiv preprint arXiv:2212.12017},
+  year={2022}
+}
+
+@article{wang2022benchmarking,
+  title={Benchmarking generalization via in-context instructions on 1,600+ language tasks},
+  author={Wang, Yizhong and Mishra, Swaroop and Alipoormolabashi, Pegah and Kordi, Yeganeh and Mirzaei, Amirreza and Arunkumar, Anjana and Ashok, Arjun and Dhanasekaran, Arut Selvan and Naik, Atharva and Stap, David and others},
+  journal={arXiv preprint arXiv:2204.07705},
+  year={2022}
+}
+
+@article{wang2022self_instruct,
+  title={Self-Instruct: Aligning Language Model with Self Generated Instructions},
+  author={Wang, Yizhong and Kordi, Yeganeh and Mishra, Swaroop and Liu, Alisa and Smith, Noah A and Khashabi, Daniel and Hajishirzi, Hannaneh},
+  journal={arXiv preprint arXiv:2212.10560},
+  year={2022}
+}
+
+@article{koh2023grounding,
+  title={Grounding language models to images for multimodal generation},
+  author={Koh, Jing Yu and Salakhutdinov, Ruslan and Fried, Daniel},
+  journal={arXiv preprint arXiv:2301.13823},
+  year={2023}
+}
+
+@article{huang2023language,
+  title={Language is not all you need: Aligning perception with language models},
+  author={Huang, Shaohan and Dong, Li and Wang, Wenhui and Hao, Yaru and Singhal, Saksham and Ma, Shuming and Lv, Tengchao and Cui, Lei and Mohammed, Owais Khan and Liu, Qiang and others},
+  journal={arXiv preprint arXiv:2302.14045},
+  year={2023}
+}
+
+@article{driess2023palm,
+  title={{PaLM-E}: An embodied multimodal language model},
+  author={Driess, Danny and Xia, Fei and Sajjadi, Mehdi SM and Lynch, Corey and Chowdhery, Aakanksha and Ichter, Brian and Wahid, Ayzaan and Tompson, Jonathan and Vuong, Quan and Yu, Tianhe and others},
+  journal={arXiv preprint arXiv:2303.03378},
+  year={2023}
+}
+
+@misc{anas_awadalla_2023_7733589,
+  author = {Awadalla, Anas and Gao, Irena and Gardner, Joshua and Hessel, Jack and Hanafy, Yusuf and Zhu, Wanrong and Marathe, Kalyani and Bitton, Yonatan and Gadre, Samir and Jitsev, Jenia and Kornblith, Simon and Koh, Pang Wei and Ilharco, Gabriel and Wortsman, Mitchell and Schmidt, Ludwig},
+  title = {OpenFlamingo},
+  month        = mar,
+  year         = 2023,
+  publisher    = {Zenodo},
+  version      = {v0.1.1},
+  doi          = {10.5281/zenodo.7733589},
+  url          = {https://doi.org/10.5281/zenodo.7733589}
+}
+
+@article{zhang2023llama,
+  title={LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention},
+  author={Zhang, Renrui and Han, Jiaming and Zhou, Aojun and Hu, Xiangfei and Yan, Shilin and Lu, Pan and Li, Hongsheng and Gao, Peng and Qiao, Yu},
+  journal={arXiv preprint arXiv:2303.16199},
+  year={2023}
+}
+
+
+% === introduction ===
+% Human-computer interaction
+@inproceedings{sinha2010human,
+  title={Human computer interaction},
+  author={Sinha, Gaurav and Shahi, Rahul and Shankar, Mani},
+  booktitle={2010 3rd International Conference on Emerging Trends in Engineering and Technology},
+  pages={1--4},
+  year={2010},
+  organization={IEEE}
+}
+
+% Educational Assistant
+@article{imani2019survey,
+  title={A survey of emotion recognition methods with emphasis on E-Learning environments},
+  author={Imani, Maryam and Montazer, Gholam Ali},
+  journal={Journal of Network and Computer Applications},
+  volume={147},
+  pages={102423},
+  year={2019},
+  publisher={Elsevier}
+}
+
+% counseling
+@article{hutchison2017emotion,
+  title={Emotion recognition, emotion expression, and cultural display rules: Implications for counseling.},
+  author={Hutchison, Ashley and Gerstein, Larry},
+  journal={Journal of Asia Pacific Counseling},
+  volume={7},
+  number={1},
+  year={2017}
+}
+
+@article{cao2020psychological,
+  title={Psychological counseling and character analysis algorithm based on image emotion},
+  author={Cao, Min and Wan, Zhendong},
+  journal={IEEE Access},
+  year={2020},
+  publisher={IEEE}
+}
+
+@article{li2024two,
+  title={Two in One Go: Single-stage Emotion Recognition with Decoupled Subject-context Transformer},
+  author={Li, Xinpeng and Wang, Teng and Zhao, Jian and Mao, Shuyi and Wang, Jinbao and Zheng, Feng and Peng, Xiaojiang and Li, Xuelong},
+  journal={arXiv preprint arXiv:2404.17205},
+  year={2024}
+}
+
+
+@inproceedings{wang2020suppressing,
+  title={Suppressing uncertainties for large-scale facial expression recognition},
+  author={Wang, Kai and Peng, Xiaojiang and Yang, Jianfei and Lu, Shijian and Qiao, Yu},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={6897--6906},
+  year={2020}
+}
+
+@article{ngwe2023patt,
+  title={PAtt-Lite: Lightweight Patch and Attention MobileNet for Challenging Facial Expression Recognition},
+  author={Ngwe, Jia Le and Lim, Kian Ming and Lee, Chin Poo and Ong, Thian Song},
+  journal={arXiv preprint arXiv:2306.09626},
+  year={2023}
+}
+
+@article{lei2023instructerc,
+  title={Instructerc: Reforming emotion recognition in conversation with a retrieval multi-task llms framework},
+  author={Lei, Shanglin and Dong, Guanting and Wang, Xiaoping and Wang, Keheng and Wang, Sirui},
+  journal={arXiv preprint arXiv:2309.11911},
+  year={2023}
+}
+
+@article{hung2023beyond,
+  title={Beyond sentiment analysis: A review of recent trends in text based sentiment analysis and emotion detection},
+  author={Hung, Lai Po and Alias, Suraya},
+  journal={Journal of Advanced Computational Intelligence and Intelligent Informatics},
+  volume={27},
+  number={1},
+  pages={84--95},
+  year={2023},
+  publisher={Fuji Technology Press Ltd.}
+}
+
+@article{lin2023video,
+  title={Video-llava: Learning united visual representation by alignment before projection},
+  author={Lin, Bin and Zhu, Bin and Ye, Yang and Ning, Munan and Jin, Peng and Yuan, Li},
+  journal={arXiv preprint arXiv:2311.10122},
+  year={2023}
+}
+
+% Speech Emotion Recognition / datastets
+@article{kondratenko2022large,
+  title={Large Raw Emotional Dataset with Aggregation Mechanism},
+  author={Kondratenko, Vladimir and Sokolov, Artem and Karpov, Nikolay and Kutuzov, Oleg and Savushkin, Nikita and Minkin, Fyodor},
+  journal={arXiv preprint arXiv:2212.12266},
+  year={2022}
+}
+
+@inproceedings{fan2021lssed,
+  title={LSSED: a large-scale dataset and benchmark for speech emotion recognition},
+  author={Fan, Weiquan and Xu, Xiangmin and Xing, Xiaofen and Chen, Weidong and Huang, Dongyan},
+  booktitle={ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={641--645},
+  year={2021},
+  organization={IEEE}
+}
+
+% === Fuse ===
+% DMD
+@inproceedings{li2023decoupled,
+  title={Decoupled multimodal distilling for emotion recognition},
+  author={Li, Yong and Wang, Yuanzhi and Cui, Zhen},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={6631--6640},
+  year={2023}
+}
+
+% IMDer
+@article{wang2024incomplete,
+  title={Incomplete multimodality-diffused emotion recognition},
+  author={Wang, Yuanzhi and Li, Yong and Cui, Zhen},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
+
+@article{richet2024text,
+  title={Text-and Feature-based Models for Compound Multimodal Emotion Recognition in the Wild},
+  author={Richet, Nicolas and Belharbi, Soufiane and Aslam, Haseeb and Schadt, Meike Emilie and Gonz{\'a}lez-Gonz{\'a}lez, Manuela and Cortal, Gustave and Koerich, Alessandro Lameiras and Pedersoli, Marco and Finkel, Alain and Bacon, Simon and others},
+  journal={arXiv preprint arXiv:2407.12927},
+  year={2024}
+}
+
+% === AU ===
+@article{ekman1978facial,
+  title={Facial action coding system},
+  author={Ekman, Paul and Friesen, Wallace V},
+  journal={Environmental Psychology \& Nonverbal Behavior},
+  year={1978}
+}
+
+% === related work ===
+@inproceedings{zhou2019exploring,
+  title={Exploring emotion features and fusion strategies for audio-video emotion recognition},
+  author={Zhou, Hengshun and Meng, Debin and Zhang, Yuanyuan and Peng, Xiaojiang and Du, Jun and Wang, Kai and Qiao, Yu},
+  booktitle={2019 International conference on multimodal interaction},
+  pages={562--566},
+  year={2019}
+}
+
+@inproceedings{zhang2023learning,
+  title={Learning emotion representations from verbal and nonverbal communication},
+  author={Zhang, Sitao and Pan, Yimu and Wang, James Z},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={18993--19004},
+  year={2023}
+}
+
+@article{cheng2024mips,
+  title={MIPS at SemEval-2024 Task 3: Multimodal Emotion-Cause Pair Extraction in Conversations with Multimodal Language Models},
+  author={Cheng, Zebang and Niu, Fuqiang and Lin, Yuxiang and Cheng, Zhi-Qi and Zhang, Bowen and Peng, Xiaojiang},
+  journal={arXiv preprint arXiv:2404.00511},
+  year={2024}
+}
+
+@article{ansari2024jmi,
+  title={JMI at SemEval 2024 Task 3: Two-step approach for multimodal ECAC using in-context learning with GPT and instruction-tuned Llama models},
+  author={Ansari, Mohammed Abbas and Saxena, Chandni and Ahmad, Tanvir and others},
+  journal={arXiv preprint arXiv:2403.04798},
+  year={2024}
+}
+
+% GPT-4V with emotion
+@article{lian2024gpt,
+  title={GPT-4V with emotion: A zero-shot benchmark for Generalized Emotion Recognition},
+  author={Lian, Zheng and Sun, Licai and Sun, Haiyang and Chen, Kang and Wen, Zhuofan and Gu, Hao and Liu, Bin and Tao, Jianhua},
+  journal={Information Fusion},
+  pages={102367},
+  year={2024},
+  publisher={Elsevier}
+}
+
+@article{davison2016samm,
+  title={Samm: A spontaneous micro-facial movement dataset},
+  author={Davison, Adrian K and Lansley, Cliff and Costen, Nicholas and Tan, Kevin and Yap, Moi Hoon},
+  journal={IEEE transactions on affective computing},
+  volume={9},
+  number={1},
+  pages={116--129},
+  year={2016},
+  publisher={IEEE}
+}
+
+@inproceedings{mcduff2013affectiva,
+  title={Affectiva-mit facial expression dataset (am-fed): Naturalistic and spontaneous facial expressions collected},
+  author={McDuff, Daniel and Kaliouby, Rana and Senechal, Thibaud and Amr, May and Cohn, Jeffrey and Picard, Rosalind},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition workshops},
+  pages={881--888},
+  year={2013}
+}
+
+@article{kudo2018sentencepiece,
+  title={Sentencepiece: A simple and language independent subword tokenizer and detokenizer for neural text processing},
+  author={Kudo, Taku and Richardson, John},
+  journal={arXiv preprint arXiv:1808.06226},
+  year={2018}
+}
+
+@article{li2024mm,
+  title={MM-TTS: A Unified Framework for Multimodal, Prompt-Induced Emotional Text-to-Speech Synthesis},
+  author={Li, Xiang and Cheng, Zhi-Qi and He, Jun-Yan and Peng, Xiaojiang and Hauptmann, Alexander G},
+  journal={arXiv preprint arXiv:2404.18398},
+  year={2024}
+}
+
+@inproceedings{xu2024facechain,
+  title={FaceChain-ImagineID: Freely Crafting High-Fidelity Diverse Talking Faces from Disentangled Audio},
+  author={Xu, Chao and Liu, Yang and Xing, Jiazheng and Wang, Weida and Sun, Mingze and Dan, Jun and Huang, Tianxin and Li, Siyuan and Cheng, Zhi-Qi and Tai, Ying and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={1292--1302},
+  year={2024}
+}
+
+@inproceedings{cheng2017video2shop,
+  title={Video2shop: Exact matching clothes in videos to online shopping images},
+  author={Cheng, Zhi-Qi and Wu, Xiao and Liu, Yang and Hua, Xian-Sheng},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={4048--4056},
+  year={2017}
+}
+
+@inproceedings{cheng2016video,
+  title={Video ecommerce: Towards online video advertising},
+  author={Cheng, Zhi-Qi and Liu, Yang and Wu, Xiao and Hua, Xian-Sheng},
+  booktitle={Proceedings of the 24th ACM international conference on Multimedia},
+  pages={1365--1374},
+  year={2016}
+}
+
+@article{cheng2017video,
+  title={Video ecommerce++: Toward large scale online video advertising},
+  author={Cheng, Zhi-Qi and Wu, Xiao and Liu, Yang and Hua, Xian-Sheng},
+  journal={IEEE transactions on multimedia},
+  volume={19},
+  number={6},
+  pages={1170--1183},
+  year={2017},
+  publisher={IEEE}
+}
+
+@inproceedings{bao2023keyposs,
+  title={KeyPosS: Plug-and-Play Facial Landmark Detection through GPS-Inspired True-Range Multilateration},
+  author={Bao, Xu and Cheng, Zhi-Qi and He, Jun-Yan and Xiang, Wangmeng and Li, Chenyang and Sun, Jingdong and Liu, Hanbing and Liu, Wei and Luo, Bin and Geng, Yifeng and others},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+  pages={5746--5755},
+  year={2023}
+}
+
+@inproceedings{cheng2022gsrformer,
+  title={Gsrformer: Grounded situation recognition transformer with alternate semantic attention refinement},
+  author={Cheng, Zhi-Qi and Dai, Qi and Li, Siyao and Mitamura, Teruko and Hauptmann, Alexander},
+  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},
+  pages={3272--3281},
+  year={2022}
+}
+
+@inproceedings{tu2023implicit,
+  title={Implicit temporal modeling with learnable alignment for video recognition},
+  author={Tu, Shuyuan and Dai, Qi and Wu, Zuxuan and Cheng, Zhi-Qi and Hu, Han and Jiang, Yu-Gang},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={19936--19947},
+  year={2023}
+}
+
+# byte-level Byte Pair Encoding (BPE)
+@article{sennrich2015neural,
+  title={Neural machine translation of rare words with subword units},
+  author={Sennrich, Rico and Haddow, Barry and Birch, Alexandra},
+  journal={arXiv preprint arXiv:1508.07909},
+  year={2015}
+}

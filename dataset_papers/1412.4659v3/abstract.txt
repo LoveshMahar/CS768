@@ -1,0 +1,15 @@
+Is it possible to find the sparsest vector (direction) in a generic subspace
+$\mathcal{S} \subseteq \mathbb{R}^p$ with $\mathrm{dim}(\mathcal{S})= n < p$?
+This problem can be considered a homogeneous variant of the sparse recovery
+problem, and finds connections to sparse dictionary learning, sparse PCA, and
+many other problems in signal processing and machine learning. In this paper,
+we focus on a **planted sparse model** for the subspace: the target sparse
+vector is embedded in an otherwise random subspace. Simple convex heuristics
+for this planted recovery problem provably break down when the fraction of
+nonzero entries in the target sparse vector substantially exceeds
+$O(1/\sqrt{n})$. In contrast, we exhibit a relatively simple nonconvex approach
+based on alternating directions, which provably succeeds even when the fraction
+of nonzero entries is $\Omega(1)$. To the best of our knowledge, this is the
+first practical algorithm to achieve linear scaling under the planted sparse
+model. Empirically, our proposed algorithm also succeeds in more challenging
+data models, e.g., sparse dictionary learning.

@@ -1,0 +1,341 @@
+\providecommand{\latin}[1]{#1}
+\makeatletter
+\providecommand{\doi}
+  {\begingroup\let\do\@makeother\dospecials
+  \catcode`\{=1 \catcode`\}=2 \doi@aux}
+\providecommand{\doi@aux}[1]{\endgroup\texttt{#1}}
+\makeatother
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{36}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
+
+\bibitem[Cooijmans \latin{et~al.}(2017)Cooijmans, Ballas, Laurent,
+  G{\"{u}}l{\c{c}}ehre, and Courville]{Cooijmans2017recurrentbatch}
+Cooijmans,~T.; Ballas,~N.; Laurent,~C.; G{\"{u}}l{\c{c}}ehre,~{\c{C}}.;
+  Courville,~A.~C. Recurrent Batch Normalization. 5th International Conference
+  on Learning Representations, {ICLR}. 2017\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Dai \latin{et~al.}(2019)Dai, Yang, Yang, Carbonell, Le, and
+  Salakhutdinov]{dai2019transformerxl}
+Dai,~Z.; Yang,~Z.; Yang,~Y.; Carbonell,~J.~G.; Le,~Q.~V.; Salakhutdinov,~R.
+  Transformer-XL: Attentive Language Models beyond a Fixed-Length Context.
+  Proceedings of the 57th Conference of the Association for Computational
+  Linguistics, {ACL} 2019. 2019\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Uria \latin{et~al.}(2013)Uria, Murray, and Larochelle]{uria2013rnade}
+Uria,~B.; Murray,~I.; Larochelle,~H. RNADE: The Real-valued Neural
+  Autoregressive Density-estimator. Advances in Neural Information Processing
+  Systems. 2013; pp 2175--2183\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Theis \latin{et~al.}(2016)Theis, van~den Oord, and
+  Bethge]{theis2016note}
+Theis,~L.; van~den Oord,~A.; Bethge,~M. A note on the evaluation of generative
+  models. International Conference on Learning Representations. 2016\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ho \latin{et~al.}(2019)Ho, Chen, Srinivas, Duan, and
+  Abbeel]{ho2019flow++}
+Ho,~J.; Chen,~X.; Srinivas,~A.; Duan,~Y.; Abbeel,~P. Flow++: Improving
+  Flow-Based Generative Models with Variational Dequantization and Architecture
+  Design. \emph{36th International Conference on Machine Learning}
+  \textbf{2019}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sohl{-}Dickstein \latin{et~al.}(2015)Sohl{-}Dickstein, Weiss,
+  Maheswaranathan, and Ganguli]{sohl2015diffusion}
+Sohl{-}Dickstein,~J.; Weiss,~E.~A.; Maheswaranathan,~N.; Ganguli,~S. Deep
+  Unsupervised Learning using Nonequilibrium Thermodynamics. Proceedings of the
+  32nd International Conference on Machine Learning, {ICML}. 2015\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ho \latin{et~al.}(2020)Ho, Jain, and Abbeel]{ho2020denoising}
+Ho,~J.; Jain,~A.; Abbeel,~P. Denoising Diffusion Probabilistic Models.
+  \emph{CoRR} \textbf{2020}, \emph{abs/2006.11239}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Song \latin{et~al.}(2020)Song, Meng, and
+  Ermon]{song2020denoisingimplicit}
+Song,~J.; Meng,~C.; Ermon,~S. Denoising Diffusion Implicit Models. \emph{CoRR}
+  \textbf{2020}, \emph{abs/2010.02502}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Nichol and Dhariwal(2021)Nichol, and Dhariwal]{nichol2021improved}
+Nichol,~A.~Q.; Dhariwal,~P. Improved Denoising Diffusion Probabilistic Models.
+  2021; \url{https://openreview.net/forum?id=-NEXDKk8gZ}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rezende and Mohamed(2015)Rezende, and Mohamed]{rezende2015norm}
+Rezende,~D.; Mohamed,~S. {Variational Inference with Normalizing Flows}.
+  Proceedings of the 32nd International Conference on Machine Learning. 2015;
+  pp 1530--1538\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Nielsen \latin{et~al.}(2020)Nielsen, Jaini, Hoogeboom, Winther, and
+  Welling]{nielsen2007survae}
+Nielsen,~D.; Jaini,~P.; Hoogeboom,~E.; Winther,~O.; Welling,~M. SurVAE Flows:
+  Surjections to Bridge the Gap between VAEs and Flows. \emph{CoRR}
+  \textbf{2020}, \emph{abs/2007.02731}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Maddison \latin{et~al.}(2014)Maddison, Tarlow, and
+  Minka]{Maddison2014Astarsampling}
+Maddison,~C.~J.; Tarlow,~D.; Minka,~T. A* Sampling. Advances in Neural
+  Information Processing Systems 27: Annual Conference on Neural Information
+  Processing Systems. 2014\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kool \latin{et~al.}(2019)Kool, Van~Hoof, and Welling]{kool2019}
+Kool,~W.; Van~Hoof,~H.; Welling,~M. Stochastic Beams and Where To Find Them:
+  The {G}umbel-Top-k Trick for Sampling Sequences Without Replacement.
+  Proceedings of the 36th International Conference on Machine Learning.
+  2019\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Winkler \latin{et~al.}(2019)Winkler, Worrall, Hoogeboom, and
+  Welling]{winkler2019learning}
+Winkler,~C.; Worrall,~D.~E.; Hoogeboom,~E.; Welling,~M. Learning Likelihoods
+  with Conditional Normalizing Flows. \emph{CoRR} \textbf{2019},
+  \emph{abs/1912.00042}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Germain \latin{et~al.}(2015)Germain, Gregor, Murray, and
+  Larochelle]{germain2015made}
+Germain,~M.; Gregor,~K.; Murray,~I.; Larochelle,~H. Made: Masked autoencoder
+  for distribution estimation. International Conference on Machine Learning.
+  2015; pp 881--889\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kingma and Welling(2014)Kingma, and Welling]{kingma2014auto}
+Kingma,~D.~P.; Welling,~M. {Auto-Encoding Variational Bayes}. Proceedings of
+  the 2nd International Conference on Learning Representations. 2014\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rezende \latin{et~al.}(2014)Rezende, Mohamed, and
+  Wierstra]{rezende2014stochasticvariationalinference}
+Rezende,~D.~J.; Mohamed,~S.; Wierstra,~D. Stochastic Backpropagation and
+  Approximate Inference in Deep Generative Models. Proceedings of the 31th
+  International Conference on Machine Learning, {ICML}. 2014\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Goodfellow \latin{et~al.}(2014)Goodfellow, Pouget-Abadie, Mirza, Xu,
+  Warde-Farley, Ozair, Courville, and Bengio]{goodfellow2014generative}
+Goodfellow,~I.; Pouget-Abadie,~J.; Mirza,~M.; Xu,~B.; Warde-Farley,~D.;
+  Ozair,~S.; Courville,~A.; Bengio,~Y. Generative adversarial nets. Advances in
+  neural information processing systems. 2014; pp 2672--2680\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Dinh \latin{et~al.}(2017)Dinh, Sohl-Dickstein, and
+  Bengio]{dinh2016density}
+Dinh,~L.; Sohl-Dickstein,~J.; Bengio,~S. {Density estimation using Real NVP}.
+  \emph{5th International Conference on Learning Representations, {ICLR}}
+  \textbf{2017}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kingma \latin{et~al.}(2016)Kingma, Salimans, Jozefowicz, Chen,
+  Sutskever, and Welling]{kingma2016improved}
+Kingma,~D.~P.; Salimans,~T.; Jozefowicz,~R.; Chen,~X.; Sutskever,~I.;
+  Welling,~M. {Improved variational inference with inverse autoregressive
+  flow}. Advances in Neural Information Processing Systems. 2016; pp
+  4743--4751\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Papamakarios \latin{et~al.}(2017)Papamakarios, Murray, and
+  Pavlakou]{papamakarios2017masked}
+Papamakarios,~G.; Murray,~I.; Pavlakou,~T. Masked autoregressive flow for
+  density estimation. Advances in Neural Information Processing Systems. 2017;
+  pp 2338--2347\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chen \latin{et~al.}(2018)Chen, Rubanova, Bettencourt, and
+  Duvenaud]{chen2018neural}
+Chen,~T.~Q.; Rubanova,~Y.; Bettencourt,~J.; Duvenaud,~D.~K. Neural ordinary
+  differential equations. Advances in Neural Information Processing Systems.
+  2018; pp 6572--6583\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Song \latin{et~al.}(2019)Song, Meng, and Ermon]{song2019mintnet}
+Song,~Y.; Meng,~C.; Ermon,~S. MintNet: Building Invertible Neural Networks with
+  Masked Convolutions. Advances in Neural Information Processing Systems 32:
+  Annual Conference on Neural Information Processing Systems 2019, NeurIPS
+  2019. 2019\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Perugachi{-}Diaz \latin{et~al.}(2020)Perugachi{-}Diaz, Tomczak, and
+  Bhulai]{perugachi2020idensenets}
+Perugachi{-}Diaz,~Y.; Tomczak,~J.~M.; Bhulai,~S. Invertible DenseNets.
+  \emph{CoRR} \textbf{2020}, \emph{abs/2010.02125}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Nielsen and Winther(2020)Nielsen, and
+  Winther]{nielsen2020closingdequantizationgap}
+Nielsen,~D.; Winther,~O. Closing the Dequantization Gap: PixelCNN as a
+  Single-Layer Flow. Advances in Neural Information Processing Systems 33:
+  Annual Conference on Neural Information Processing Systems 2020, {NeurIPS}.
+  2020\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Tran \latin{et~al.}(2019)Tran, Vafa, Agrawal, Dinh, and
+  Poole]{discrete2019tran}
+Tran,~D.; Vafa,~K.; Agrawal,~K.; Dinh,~L.; Poole,~B. Discrete Flows: Invertible
+  Generative Models of Discrete Data. \emph{ICLR 2019 Workshop DeepGenStruct}
+  \textbf{2019}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hoogeboom \latin{et~al.}(2019)Hoogeboom, Peters, van~den Berg, and
+  Welling]{hoogeboom2019integer}
+Hoogeboom,~E.; Peters,~J. W.~T.; van~den Berg,~R.; Welling,~M. Integer Discrete
+  Flows and Lossless Compression. Neural Information Processing Systems 2019,
+  NeurIPS 2019. 2019; pp 12134--12144\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[van~den Berg \latin{et~al.}(2020)van~den Berg, Gritsenko, Dehghani,
+  S{\o}nderby, and Salimans]{berg2020idfpp}
+van~den Berg,~R.; Gritsenko,~A.~A.; Dehghani,~M.; S{\o}nderby,~C.~K.;
+  Salimans,~T. {IDF++:} Analyzing and Improving Integer Discrete Flows for
+  Lossless Compression. \emph{CoRR} \textbf{2020}, \emph{abs/2006.12459}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ziegler and Rush(2019)Ziegler, and Rush]{ziegler2019latent}
+Ziegler,~Z.~M.; Rush,~A.~M. Latent Normalizing Flows for Discrete Sequences.
+  Proceedings of the 36th International Conference on Machine Learning, {ICML}.
+  2019\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lippe and Gavves(2020)Lippe, and Gavves]{lippe2020categorical}
+Lippe,~P.; Gavves,~E. Categorical Normalizing Flows via Continuous
+  Transformations. \emph{CoRR} \textbf{2020}, \emph{abs/2006.09790}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Song \latin{et~al.}(2020)Song, Sohl{-}Dickstein, Kingma, Kumar, Ermon,
+  and Poole]{song2020scorebasedSDEs}
+Song,~Y.; Sohl{-}Dickstein,~J.; Kingma,~D.~P.; Kumar,~A.; Ermon,~S.; Poole,~B.
+  Score-Based Generative Modeling through Stochastic Differential Equations.
+  \emph{CoRR} \textbf{2020}, \emph{abs/2011.13456}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Al{-}Rfou \latin{et~al.}(2019)Al{-}Rfou, Choe, Constant, Guo, and
+  Jones]{alrfou2019transformer}
+Al{-}Rfou,~R.; Choe,~D.; Constant,~N.; Guo,~M.; Jones,~L. Character-Level
+  Language Modeling with Deeper Self-Attention. The Thirty-Third {AAAI}
+  Conference on Artificial Intelligence, {AAAI} 2019. 2019\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Huang \latin{et~al.}(2017)Huang, Liu, Van Der~Maaten, and
+  Weinberger]{huang2017densely}
+Huang,~G.; Liu,~Z.; Van Der~Maaten,~L.; Weinberger,~K.~Q. Densely connected
+  convolutional networks. Proceedings of the IEEE conference on computer vision
+  and pattern recognition. 2017; pp 4700--4708\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Burda \latin{et~al.}(2016)Burda, Grosse, and Salakhutdinov]{burda2016}
+Burda,~Y.; Grosse,~R.~B.; Salakhutdinov,~R. Importance Weighted Autoencoders.
+  4th International Conference on Learning Representations. 2016\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Dinh \latin{et~al.}(2015)Dinh, Krueger, and Bengio]{dinh2014nice}
+Dinh,~L.; Krueger,~D.; Bengio,~Y. {NICE: Non-linear independent components
+  estimation}. \emph{3rd International Conference on Learning Representations,
+  {ICLR}, Workshop Track Proceedings} \textbf{2015}, \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Cordts \latin{et~al.}(2016)Cordts, Omran, Ramos, Rehfeld, Enzweiler,
+  Benenson, Franke, Roth, and Schiele]{Cordts2016cityscapes}
+Cordts,~M.; Omran,~M.; Ramos,~S.; Rehfeld,~T.; Enzweiler,~M.; Benenson,~R.;
+  Franke,~U.; Roth,~S.; Schiele,~B. The Cityscapes Dataset for Semantic Urban
+  Scene Understanding. 2016 {IEEE} Conference on Computer Vision and Pattern
+  Recognition, {CVPR}. 2016; pp 3213--3223\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

@@ -1,0 +1,483 @@
+@InProceedings{ioffe2015batch,
+  title = 	 {Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift},
+  author = 	 {Sergey Ioffe and Christian Szegedy},
+  booktitle = 	 {Proceedings of the 32nd International Conference on Machine Learning},
+  pages = 	 {448--456},
+  year = 	 {2015},
+  editor = 	 {Francis Bach and David Blei},
+  volume = 	 {37},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Lille, France},
+  month = 	 {07--09 Jul},
+  publisher = 	 {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v37/ioffe15.pdf},
+  url = 	 {http://proceedings.mlr.press/v37/ioffe15.html},
+  abstract = 	 {Training Deep Neural Networks is complicated by the fact that the distribution of each layer’s inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlinearities. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normalization a part of the model architecture and performing the normalization for each training mini-batch. Batch Normalization allows us to use much higher learning rates and be less careful about initialization, and in some cases eliminates the need for Dropout. Applied to a stateof-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Using an ensemble of batch-normalized networks, we improve upon the best published result on ImageNet classification: reaching 4.82% top-5 test error, exceeding the accuracy of human raters.}
+}
+
+@InProceedings{finn2017model,
+  title = 	 {Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks},
+  author = 	 {Chelsea Finn and Pieter Abbeel and Sergey Levine},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {1126--1135},
+  year = 	 {2017},
+  editor = 	 {Doina Precup and Yee Whye Teh},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {International Convention Centre, Sydney, Australia},
+  month = 	 {06--11 Aug},
+  publisher = 	 {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/finn17a/finn17a.pdf},
+  url = 	 {http://proceedings.mlr.press/v70/finn17a.html},
+  abstract = 	 {We propose an algorithm for meta-learning that is model-agnostic, in the sense that it is compatible with any model trained with gradient descent and applicable to a variety of different learning problems, including classification, regression, and reinforcement learning. The goal of meta-learning is to train a model on a variety of learning tasks, such that it can solve new learning tasks using only a small number of training samples. In our approach, the parameters of the model are explicitly trained such that a small number of gradient steps with a small amount of training data from a new task will produce good generalization performance on that task. In effect, our method trains the model to be easy to fine-tune. We demonstrate that this approach leads to state-of-the-art performance on two few-shot image classification benchmarks, produces good results on few-shot regression, and accelerates fine-tuning for policy gradient reinforcement learning with neural network policies.}
+}
+
+@incollection{snell2017prototypical,
+  title      = {Prototypical Networks for Few-shot Learning},
+  author     = {Snell, Jake and Swersky, Kevin and Zemel, Richard},
+  booktitle  = {Advances in Neural Information Processing Systems 30},
+  editor     = {I. Guyon and U. V. Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+  pages      = {4077--4087},
+  year       = {2017},
+  publisher  = {Curran Associates, Inc.},
+}
+
+@incollection{requeima2019cnaps,
+  title      = {Fast and Flexible Multi-Task Classification using Conditional Neural Adaptive Processes},
+  author     = {Requeima, James and Gordon, Jonathan and Bronskill, John and Nowozin, Sebastian and Turner, Richard E},
+  booktitle  = {Advances in Neural Information Processing Systems 32},
+  editor     = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\' Alch\'{e}-Buc and E. Fox and R. Garnett},
+  pages      = {7957--7968},
+  year       = {2019},
+  publisher  = {Curran Associates, Inc.},
+}
+
+@incollection{vinyals2016matching,
+  title      = {Matching Networks for One Shot Learning},
+  author     = {Vinyals, Oriol and Blundell, Charles and Lillicrap, Timothy and kavukcuoglu, koray and Wierstra, Daan},
+  booktitle  = {Advances in Neural Information Processing Systems 29},
+  editor     = {D. D. Lee and M. Sugiyama and U. V. Luxburg and I. Guyon and R. Garnett},
+  pages      = {3630--3638},
+  year       = {2016},
+  publisher  = {Curran Associates, Inc.},
+}
+
+@inproceedings{gordon2018meta,
+  title     = {Meta-Learning Probabilistic Inference for Prediction},
+  author    = {Jonathan Gordon and John Bronskill and Matthias Bauer and Sebastian Nowozin and Richard Turner},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2019},
+  url       = {https://openreview.net/forum?id=HkxStoC5F7},
+}
+
+@misc{wang2019generalizing,
+  title            = {Generalizing from a Few Examples: A Survey on Few-Shot Learning},
+  author           = {Yaqing Wang and Quanming Yao and James Kwok and Lionel M. Ni},
+  year             = {2019},
+  eprint           = {1904.05046},
+  archivePrefix    = {arXiv},
+  primaryClass     = {cs.LG}
+}
+
+@incollection{ioffe2017batch,
+  title     = {Batch Renormalization: Towards Reducing Minibatch Dependence in Batch-Normalized Models},
+  author    = {Ioffe, Sergey},
+  booktitle = {Advances in Neural Information Processing Systems 30},
+  editor    = {I. Guyon and U. V. Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+  pages     = {1945--1953},
+  year      = {2017},
+  publisher = {Curran Associates, Inc.},
+}
+
+@InProceedings{wu2018group,
+  title     = {Group normalization},
+  author    = {Wu, Yuxin and He, Kaiming},
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+  month     = {September},
+  pages     = {3--19},
+  year      = {2018}
+}
+
+@inproceedings{liu2018learning,
+  title     = {Learning to propagate labels: transductive propagation network for few-shot learning},
+  author    = {Yanbin Liu and Juho Lee and Minseop Park and Saehoon Kim and Eunho Yang and Sungju Hwang and Yi Yang},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2019},
+  url       = {https://openreview.net/forum?id=SyVuRiC5K7},
+}
+
+@article{ulyanov2016instance,
+  title     = {Instance normalization: The missing ingredient for fast stylization},
+  author    = {Ulyanov, Dmitry and Vedaldi, Andrea and Lempitsky, Victor},
+  journal   = {arXiv preprint arXiv:1607.08022},
+  year      = {2016}
+}
+
+@article{ba2016layer,
+  title     = {Layer normalization},
+  author    = {Ba, Jimmy Lei and Kiros, Jamie Ryan and Hinton, Geoffrey E},
+  journal   = {arXiv preprint arXiv:1607.06450},
+  year      = {2016}
+}
+
+@article{nichol2018first,
+  title     = {On first-order meta-learning algorithms},
+  author    = {Nichol, Alex and Achiam, Joshua and Schulman, John},
+  journal   = {arXiv preprint arXiv:1803.02999},
+  year      = {2018}
+}
+
+@inproceedings{kingma2014adam,
+  title     = {Adam: A method for stochastic optimization},
+  author    = {Kingma, Diederik P and Ba, Jimmy},
+  booktitle = {Proceedings of the International Conference on Learning Representations},
+  year      = {2015},
+  url       = {https://arxiv.org/pdf/1412.6980.pdf}
+}
+
+@misc{Triantafillou2019code,
+  author = {Triantafillou, Eleni and Zhu, Tyler and Dumoulin, Vincent and Lamblin, Pascal and Xu, Kelvin and Goroshin, Ross and Gelada, Carles and Swersky, Kevin  and Manzagol, Pierre-Antoine and Larochelle, Hugo},
+  title = {Code for "{M}eta-Dataset: A Dataset of Datasets for Learning to Learn from Few Examples"},
+  year = {2019},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/google-research/meta-dataset}},
+  commit = {b95f66e42739b80b58cc22f0fffa0c97a34d7890}
+}
+
+@inproceedings{ravi2016optimization,
+  title      = {Optimization as a model for few-shot learning},
+  author     = {Ravi, Sachin and Larochelle, Hugo},
+  booktitle  = {Proceedings of the International Conference on Learning Representations},
+  year       = {2017},
+  url        = {https://openreview.net/pdf?id=rJY0-Kcll}
+}
+
+@inproceedings{he2016deep,
+  title      = {Deep residual learning for image recognition},
+  author     = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle  = {Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages      = {770--778},
+  year       = {2016}
+}
+
+@inproceedings{triantafillou2019meta,
+  title      = {Meta-Dataset: A Dataset of Datasets for Learning to Learn from Few Examples},
+  author     = {Eleni Triantafillou and Tyler Zhu and Vincent Dumoulin and Pascal Lamblin and Utku Evci and Kelvin Xu and Ross Goroshin and Carles Gelada and Kevin Swersky and Pierre-Antoine Manzagol and Hugo Larochelle},
+  booktitle  = {International Conference on Learning Representations},
+  year       = {2020},
+  url        = {https://openreview.net/forum?id=rkgAGAVKPr}
+}
+
+@inproceedings{grant2018recasting,
+  title     = {Recasting Gradient-Based Meta-Learning as Hierarchical Bayes},
+  author    = {Erin Grant and Chelsea Finn and Sergey Levine and Trevor Darrell and Thomas Griffiths},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2018},
+  url       = {https://openreview.net/forum?id=BJ_UL-k0b},
+}
+
+@article{bakker2003task,
+  title     = {Task clustering and gating for {Bayesian} multitask learning},
+  author    = {Bakker, Bart and Heskes, Tom},
+  journal   = {Journal of Machine Learning Research},
+  volume    = {4},
+  month     = {May},
+  pages     = {83--99},
+  year      = {2003}
+}
+
+@InProceedings{heskes2000empirical,
+  author    = {Heskes, Tom},
+  title     = {Empirical Bayes for Learning to Learn},
+  booktitle = {Proceedings of the Seventeenth International Conference on Machine Learning},
+  series    = {ICML '00},
+  year      = {2000},
+  isbn      = {1-55860-707-2},
+  pages     = {367--374},
+  numpages  = {8},
+  url       = {http://dl.acm.org/citation.cfm?id=645529.658133},
+  acmid     = {658133},
+  publisher = {Morgan Kaufmann Publishers Inc.},
+  address   = {San Francisco, CA, USA},
+} 
+
+@article{lake2015human,
+  title     = {Human-level concept learning through probabilistic program induction},
+  author    = {Lake, Brenden M and Salakhutdinov, Ruslan and Tenenbaum, Joshua B},
+  journal   = {Science},
+  volume    = {350},
+  number    = {6266},
+  pages     = {1332--1338},
+  year      = {2015},
+  publisher = {American Association for the Advancement of Science}
+}
+
+@incollection{bjorck2018understanding,
+  title     = {Understanding Batch Normalization},
+  author    = {Bjorck, Nils and Gomes, Carla P and Selman, Bart and Weinberger, Kilian Q},
+  booktitle = {Advances in Neural Information Processing Systems 31},
+  editor    = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+  pages     = {7694--7705},
+  year      = {2018},
+  publisher = {Curran Associates, Inc.},
+}
+
+@incollection{santurkar2018does,
+  title     = {How Does Batch Normalization Help Optimization?},
+  author    = {Santurkar, Shibani and Tsipras, Dimitris and Ilyas, Andrew and Madry, Aleksander},
+  booktitle = {Advances in Neural Information Processing Systems 31},
+  editor    = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+  pages     = {2483--2493},
+  year      = {2018},
+  publisher = {Curran Associates, Inc.},
+}
+
+@inproceedings{lake2011one,
+  title     = {One shot learning of simple visual concepts},
+  author    = {Lake, Brenden and Salakhutdinov, Ruslan and Gross, Jason and Tenenbaum, Joshua},
+  booktitle = {Proceedings of the annual meeting of the cognitive science society},
+  volume    = {33},
+  year      = {2011}
+}
+
+@incollection{rajeswaran2019meta,
+  title     = {Meta-Learning with Implicit Gradients},
+  author    = {Rajeswaran, Aravind and Finn, Chelsea and Kakade, Sham M and Levine, Sergey},
+  booktitle = {Advances in Neural Information Processing Systems 32},
+  editor    = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d' Alch\'{e}-Buc and E. Fox and R. Garnett},
+  pages     = {113--124},
+  year      = {2019},
+  publisher = {Curran Associates, Inc.},
+}
+
+@inproceedings{ha2016hypernetworks,
+  title     = {Hypernetworks},
+  author    = {Ha, David and Dai, Andrew and Le, Quoc V},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2016},
+  url       = {https://openreview.net/forum?id=rkpACe1lx},
+}
+
+@misc{Finn2017code,
+  author       = {Finn, C. B.},
+  title        = {Code for "{M}odel-Agnostic Meta-Learning for Fast Adaptation of Deep Networks"},
+  year         = {2017},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/cbfinn/maml}},
+  commit       = {a7f45f1bcd7457fe97b227a21e89b8a82cc5fa49}
+}
+
+@inproceedings{ren2018metalearning,
+  title     = {Meta-Learning for Semi-Supervised Few-Shot Classification},
+  author    = {Mengye Ren and Sachin Ravi and Eleni Triantafillou and Jake Snell and Kevin Swersky and Josh B. Tenenbaum and Hugo Larochelle and Richard S. Zemel},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2018},
+  url       = {https://openreview.net/forum?id=HJcSzz-CZ},
+}
+
+@misc{tensorflow2015-whitepaper,
+  title     = { {TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems},
+  url       = {https://www.tensorflow.org/},
+  note      = {Software available from tensorflow.org},
+  author    = {
+    Mart\'{\i}n~Abadi and
+    Ashish~Agarwal and
+    Paul~Barham and
+    Eugene~Brevdo and
+    Zhifeng~Chen and
+    Craig~Citro and
+    Greg~S.~Corrado and
+    Andy~Davis and
+    Jeffrey~Dean and
+    Matthieu~Devin and
+    Sanjay~Ghemawat and
+    Ian~Goodfellow and
+    Andrew~Harp and
+    Geoffrey~Irving and
+    Michael~Isard and
+    Yangqing Jia and
+    Rafal~Jozefowicz and
+    Lukasz~Kaiser and
+    Manjunath~Kudlur and
+    Josh~Levenberg and
+    Dandelion~Man\'{e} and
+    Rajat~Monga and
+    Sherry~Moore and
+    Derek~Murray and
+    Chris~Olah and
+    Mike~Schuster and
+    Jonathon~Shlens and
+    Benoit~Steiner and
+    Ilya~Sutskever and
+    Kunal~Talwar and
+    Paul~Tucker and
+    Vincent~Vanhoucke and
+    Vijay~Vasudevan and
+    Fernanda~Vi\'{e}gas and
+    Oriol~Vinyals and
+    Pete~Warden and
+    Martin~Wattenberg and
+    Martin~Wicke and
+    Yuan~Yu and
+    Xiaoqiang~Zheng},
+  year={2015},
+}
+
+@incollection{paszke2017automatic,
+  title     = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+  author    = {
+      Paszke, Adam and 
+      Gross, Sam and 
+      Massa, Francisco and 
+      Lerer, Adam and 
+      Bradbury, James and 
+      Chanan, Gregory and 
+      Killeen, Trevor and 
+      Lin, Zeming and 
+      Gimelshein, Natalia and
+      Antiga, Luca and
+      Desmaison, Alban and
+      Kopf, Andreas and
+      Yang, Edward and
+      DeVito, Zachary and
+      Raison, Martin and
+      Tejani, Alykhan and
+      Chilamkurthy, Sasank and
+      Steiner, Benoit and
+      Fang, Lu and
+      Bai, Junjie and 
+      Chintala, Soumith},
+  booktitle = {Advances in Neural Information Processing Systems 32},
+  editor    = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d' Alch\'{e}-Buc and E. Fox and R. Garnett},
+  pages     = {8024--8035},
+  year      = {2019},
+  publisher = {Curran Associates, Inc.},
+}
+
+@article{lecun2010mnist,
+  title     = {{MNIST} handwritten digit database},
+  author    = {LeCun, Yann and Cortes, Corinna and Burges, CJ},
+  journal   = {AT\&T Labs [Online]. Available: http://yann. lecun. com/exdb/mnist},
+  volume    = {2},
+  pages     = {18},
+  year      = {2010}
+}
+
+@techreport{krizhevsky2009learning,
+  title       = {Learning multiple layers of features from tiny images},
+  author      = {Krizhevsky, Alex and Hinton, Geoffrey},
+  year        = {2009},
+  institution = {Citeseer}
+}
+
+@misc{requeima2019code,
+  author       = {Requeima, James and Gordon, Jonathan and Bronskill, John and Nowozin, Sebastian and Turner, Richard E},
+  title        = {Code for "{F}ast and Flexible Multi-Task Classification Using Conditional Neural Adaptive Processes"},
+  year         = {2019},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {https://github.com/cambridge-mlg/cnaps},
+  commit       = {5a11dc0c450b0b0728de98eb64a0d1bc83035a2e}
+}
+
+@book{thrun2012learning,
+  title       = {Learning to learn},
+  author      = {Thrun, Sebastian and Pratt, Lorien},
+  year        = {2012},
+  publisher   = {Springer Science \& Business Media}
+}
+
+@phdthesis{schmidhuber1987evolutionary,
+  title       = {Evolutionary principles in self-referential learning, or on learning how to learn: the meta-meta-... hook},
+  author      = {Schmidhuber, J{\"u}rgen},
+  year        = {1987},
+  school      = {Technische Universit{\"a}t M{\"u}nchen}
+}
+
+@inproceedings{nagabandi2018deep,
+  title       = {Deep Online Learning Via Meta-Learning: Continual Adaptation for Model-Based {RL}},
+  author      = {Anusha Nagabandi and Chelsea Finn and Sergey Levine},
+  booktitle   = {International Conference on Learning Representations}, 
+  year        = {2019},
+  url         = {https://openreview.net/forum?id=HyxAfnA5tm},
+}
+
+@incollection{jerfel2019reconciling,
+  title       = {Reconciling meta-learning and continual learning with online mixtures of tasks},
+  author      = {Jerfel, Ghassen and Grant, Erin and Griffiths, Tom and Heller, Katherine A},
+  booktitle   = {Advances in Neural Information Processing Systems 32},
+  editor      = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\' Alch\'{e}-Buc and E. Fox and R. Garnett},
+  pages       = {9119--9130},
+  year        = {2019},
+  publisher   = {Curran Associates, Inc.},
+}
+
+@inproceedings{mishra2018simple,
+  title       = {A Simple Neural Attentive Meta-Learner},
+  author      = {Nikhil Mishra and Mostafa Rohaninejad and Xi Chen and Pieter Abbeel},
+  booktitle   = {International Conference on Learning Representations},
+  year        = {2018},
+  url         = {https://openreview.net/forum?id=B1DmUzWAW},
+}
+
+@inproceedings{salimans2016weight,
+  title={Weight normalization: A simple reparameterization to accelerate training of deep neural networks},
+  author={Salimans, Tim and Kingma, Durk P},
+  booktitle={Advances in neural information processing systems},
+  pages={901--909},
+  year={2016}
+}
+
+@inproceedings{luo2018cosine,
+  title={Cosine normalization: Using cosine similarity instead of dot product in neural networks},
+  author={Luo, Chunjie and Zhan, Jianfeng and Xue, Xiaohe and Wang, Lei and Ren, Rui and Yang, Qiang},
+  booktitle={International Conference on Artificial Neural Networks},
+  pages={382--391},
+  year={2018},
+  organization={Springer}
+}
+
+@article{singh2019filter,
+  title={Filter Response Normalization Layer: Eliminating Batch Dependence in the Training of Deep Neural Networks},
+  author={Singh, Saurabh and Krishnan, Shankar},
+  journal={arXiv preprint arXiv:1911.09737},
+  year={2019}
+}
+
+@inproceedings{nam2018batch,
+  title={Batch-instance normalization for adaptively style-invariant neural networks},
+  author={Nam, Hyeonseob and Kim, Hyo-Eun},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={2558--2567},
+  year={2018}
+}
+
+@misc{snell2017code,
+  author       = {Snell, Jake},
+  title        = {Code for the NIPS 2017 Paper "Prototypical Networks for Few-shot Learning"},
+  year         = {2017},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/jakesnell/prototypical-networks}},
+  commit       = {c9bb4d258267c11cb6e23f0a19242d24ca98ad8a}
+}
+
+@misc{chen2017code,
+  author       = {Chen, Yinbo},
+  title        = {A re-implementation of "Prototypical Networks for Few-shot Learning"},
+  year         = {2018},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/cyvius96/prototypical-network-pytorch}},
+  commit       = {36ecfe600f381c2bc19993138ab42fd8cc8a48ea}
+}
+
+@article{hospedales2020meta,
+  title={Meta-Learning in Neural Networks: A Survey},
+  author={Hospedales, Timothy and Antoniou, Antreas and Micaelli, Paul and Storkey, Amos},
+  journal={arXiv preprint arXiv:2004.05439},
+  year={2020}
+}
+

@@ -1,0 +1,16 @@
+Deep generative models (DGMs) seem a natural fit for detecting
+out-of-distribution (OOD) inputs, but such models have been shown to assign
+higher probabilities or densities to OOD images than images from the training
+distribution. In this work, we explain why this behavior should be attributed
+to model misestimation. We first prove that no method can guarantee performance
+beyond random chance without assumptions on which out-distributions are
+relevant. We then interrogate the typical set hypothesis, the claim that
+relevant out-distributions can lie in high likelihood regions of the data
+distribution, and that OOD detection should be defined based on the data
+distribution's typical set. We highlight the consequences implied by assuming
+support overlap between in- and out-distributions, as well as the arbitrariness
+of the typical set for OOD detection. Our results suggest that estimation error
+is a more plausible explanation than the misalignment between likelihood-based
+OOD detection and out-distributions of interest, and we illustrate how even
+minimal estimation error can lead to OOD detection failures, yielding
+implications for future work in deep generative modeling and OOD detection.

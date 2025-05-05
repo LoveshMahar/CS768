@@ -1,0 +1,20 @@
+Offline methods for reinforcement learning have a potential to help bridge
+the gap between reinforcement learning research and real-world applications.
+They make it possible to learn policies from offline datasets, thus overcoming
+concerns associated with online data collection in the real-world, including
+cost, safety, or ethical concerns. In this paper, we propose a benchmark called
+RL Unplugged to evaluate and compare offline RL methods. RL Unplugged includes
+data from a diverse range of domains including games (e.g., Atari benchmark)
+and simulated motor control problems (e.g., DM Control Suite). The datasets
+include domains that are partially or fully observable, use continuous or
+discrete actions, and have stochastic vs. deterministic dynamics. We propose
+detailed evaluation protocols for each domain in RL Unplugged and provide an
+extensive analysis of supervised learning and offline RL methods using these
+protocols. We will release data for all our tasks and open-source all
+algorithms presented in this paper. We hope that our suite of benchmarks will
+increase the reproducibility of experiments and make it possible to study
+challenging tasks with a limited computational budget, thus making RL research
+both more systematic and more accessible across the community. Moving forward,
+we view RL Unplugged as a living benchmark suite that will evolve and grow with
+datasets contributed by the research community and ourselves. Our project page
+is available on https://git.io/JJUhd.

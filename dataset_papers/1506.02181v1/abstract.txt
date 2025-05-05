@@ -1,0 +1,26 @@
+Consider estimating an unknown, but structured, signal $x_0\in R^n$ from $m$
+measurement $y_i=g_i(a_i^Tx_0)$, where the $a_i$'s are the rows of a known
+measurement matrix $A$, and, $g$ is a (potentially unknown) nonlinear and
+random link-function. Such measurement functions could arise in applications
+where the measurement device has nonlinearities and uncertainties. It could
+also arise by design, e.g., $g_i(x)=\text{sign}(x+z_i)$, corresponds to noisy
+1-bit quantized measurements. Motivated by the classical work of Brillinger,
+and more recent work of Plan and Vershynin, we estimate $x_0$ via solving the
+Generalized-LASSO for some regularization parameter $\lambda>0$ and some
+(typically non-smooth) convex structure-inducing regularizer function. While
+this approach seems to naively ignore the nonlinear function $g$, both
+Brillinger (in the non-constrained case) and Plan and Vershynin have shown
+that, when the entries of $A$ are iid standard normal, this is a good estimator
+of $x_0$ up to a constant of proportionality $\mu$, which only depends on $g$.
+In this work, we considerably strengthen these results by obtaining explicit
+expressions for the squared error, for the \emph{regularized} LASSO, that are
+asymptotically \emph{precise} when $m$ and $n$ grow large. A main result is
+that the estimation performance of the Generalized LASSO with non-linear
+measurements is \emph{asymptotically the same} as one whose measurements are
+linear $y_i=\mu a_i^Tx_0 + \sigma z_i$, with $\mu = E\gamma g(\gamma)$ and
+$\sigma^2 = E(g(\gamma)-\mu\gamma)^2$, and, $\gamma$ standard normal. To the
+best of our knowledge, the derived expressions on the estimation performance
+are the first-known precise results in this context. One interesting
+consequence of our result is that the optimal quantizer of the measurements
+that minimizes the estimation error of the LASSO is the celebrated Lloyd-Max
+quantizer.

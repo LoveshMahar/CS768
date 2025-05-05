@@ -1,0 +1,446 @@
+@article{brown2020language,
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={1877--1901},
+  year={2020}
+}
+
+@misc{dong2023survey,
+      title={A Survey on In-context Learning}, 
+      author={Qingxiu Dong and Lei Li and Damai Dai and Ce Zheng and Zhiyong Wu and Baobao Chang and Xu Sun and Jingjing Xu and Lei Li and Zhifang Sui},
+      year={2023},
+      eprint={2301.00234},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@InProceedings{pmlr-v139-zhao21c,
+  title = 	 {Calibrate Before Use: Improving Few-shot Performance of Language Models},
+  author =       {Zhao, Zihao and Wallace, Eric and Feng, Shi and Klein, Dan and Singh, Sameer},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {12697--12706},
+  year = 	 {2021},
+  editor = 	 {Meila, Marina and Zhang, Tong},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {18--24 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v139/zhao21c/zhao21c.pdf},
+  url = 	 {https://proceedings.mlr.press/v139/zhao21c.html},
+  abstract = 	 {GPT-3 can perform numerous tasks when provided a natural language prompt that contains a few training examples. We show that this type of few-shot learning can be unstable: the choice of prompt format, training examples, and even the order of the examples can cause accuracy to vary from near chance to near state-of-the-art. We demonstrate that this instability arises from the bias of language models towards predicting certain answers, e.g., those that are placed near the end of the prompt or are common in the pre-training data. To mitigate this, we first estimate the model’s bias towards each answer by asking for its prediction when given a training prompt and a content-free test input such as "N/A". We then fit calibration parameters that cause the prediction for this input to be uniform across answers. On a diverse set of tasks, this contextual calibration procedure substantially improves GPT-3 and GPT-2’s accuracy (up to 30.0% absolute) across different choices of the prompt, while also making learning considerably more stable.}
+}
+
+@inproceedings{lu-etal-2022-fantastically,
+    title = "Fantastically Ordered Prompts and Where to Find Them: Overcoming Few-Shot Prompt Order Sensitivity",
+    author = "Lu, Yao  and
+      Bartolo, Max  and
+      Moore, Alastair  and
+      Riedel, Sebastian  and
+      Stenetorp, Pontus",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.556",
+    doi = "10.18653/v1/2022.acl-long.556",
+    pages = "8086--8098",
+    abstract = "When primed with only a handful of training samples, very large, pretrained language models such as GPT-3 have shown competitive results when compared to fully-supervised, fine-tuned, large, pretrained language models. We demonstrate that the order in which the samples are provided can make the difference between near state-of-the-art and random guess performance: essentially some permutations are {``}fantastic{''} and some not. We analyse this phenomenon in detail, establishing that: it is present across model sizes (even for the largest current models), it is not related to a specific subset of samples, and that a given good permutation for one model is not transferable to another. While one could use a development set to determine which permutations are performant, this would deviate from the true few-shot setting as it requires additional annotated data. Instead, we use the generative nature of language models to construct an artificial development set and based on entropy statistics of the candidate permutations on this set, we identify performant prompts. Our method yields a 13{\%} relative improvement for GPT-family models across eleven different established text classification tasks.",
+}
+
+@inproceedings{min-etal-2022-rethinking,
+    title = "Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?",
+    author = "Min, Sewon  and
+      Lyu, Xinxi  and
+      Holtzman, Ari  and
+      Artetxe, Mikel  and
+      Lewis, Mike  and
+      Hajishirzi, Hannaneh  and
+      Zettlemoyer, Luke",
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.759",
+    doi = "10.18653/v1/2022.emnlp-main.759",
+    pages = "11048--11064",
+    abstract = "Large language models (LMs) are able to in-context learn{---}perform a new task via inference alone by conditioning on a few input-label pairs (demonstrations) and making predictions for new inputs. However, there has been little understanding of how the model learns and which aspects of the demonstrations contribute to end task performance. In this paper, we show that ground truth demonstrations are in fact not required{---}randomly replacing labels in the demonstrations barely hurts performance on a range of classification and multi-choce tasks, consistently over 12 different models including GPT-3. Instead, we find that other aspects of the demonstrations are the key drivers of endtask performance, including the fact that they provide a few examples of (1) the label space, (2) the distribution of the input text, and (3) the overall format of the sequence. Together, our analysis provides a new way of understanding how and why in-context learning works, while opening up new questions about how much can be learned from large language models through inference alone.",
+}
+
+@inproceedings{fei-etal-2023-mitigating,
+    title = "Mitigating Label Biases for In-context Learning",
+    author = "Fei, Yu  and
+      Hou, Yifan  and
+      Chen, Zeming  and
+      Bosselut, Antoine",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.783",
+    doi = "10.18653/v1/2023.acl-long.783",
+    pages = "14014--14031",
+    abstract = "Various design settings for in-context learning (ICL), such as the choice and order of the in-context examples, can bias the model{'}s predictions. While many studies discuss these design choices, there have been few systematic investigations into categorizing them and mitigating their impact. In this work, we define a typology for three types of label biases in ICL for text classification: vanilla-label bias, context-label bias, and domain-label bias (which we conceptualize and detect for the first time). Our analysis demonstrates that prior label bias calibration methods fall short of addressing all three types of biases. Specifically, domain-label bias restricts LLMs to random-level performance on many tasks regardless of the choice of in-context examples. To mitigate the effect of these biases, we propose a simple bias calibration method that estimates a language model{'}s label bias using random in-domain words from the task corpus. After controlling for this estimated bias when making predictions, our novel domain-context calibration significantly improves the ICL performance of GPT-J and GPT-3 on a wide range of tasks. The gain is substantial on tasks with large domain-label bias (up to 37{\%} in Macro-F1). Furthermore, our results generalize to models with different scales, pretraining methods, and manually-designed task instructions, showing the prevalence of label biases in ICL.",
+}
+
+@inproceedings{han2022prototypical,
+  title={Prototypical calibration for few-shot learning of language models},
+  author={Han, Zhixiong and Hao, Yaru and Dong, Li and Sun, Yutao and Wei, Furu},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2023}
+}
+
+@inproceedings{zheng2023large,
+  title={Large language models are not robust multiple choice selectors},
+  author={Zheng, Chujie and Zhou, Hao and Meng, Fandong and Zhou, Jie and Huang, Minlie},
+  booktitle={The Twelfth International Conference on Learning Representations},
+  year={2023}
+}
+
+@article{wang2023large,
+  title={Large language models are not fair evaluators},
+  author={Wang, Peiyi and Li, Lei and Chen, Liang and Zhu, Dawei and Lin, Binghuai and Cao, Yunbo and Liu, Qi and Liu, Tianyu and Sui, Zhifang},
+  journal={arXiv preprint arXiv:2305.17926},
+  year={2023}
+}
+
+@article{elhage2021mathematical,
+   title={A Mathematical Framework for Transformer Circuits},
+   author={Elhage, Nelson and Nanda, Neel and Olsson, Catherine and Henighan, Tom and Joseph, Nicholas and Mann, Ben and Askell, Amanda and Bai, Yuntao and Chen, Anna and Conerly, Tom and DasSarma, Nova and Drain, Dawn and Ganguli, Deep and Hatfield-Dodds, Zac and Hernandez, Danny and Jones, Andy and Kernion, Jackson and Lovitt, Liane and Ndousse, Kamal and Amodei, Dario and Brown, Tom and Clark, Jack and Kaplan, Jared and McCandlish, Sam and Olah, Chris},
+   year={2021},
+   journal={Transformer Circuits Thread},
+   note={https://transformer-circuits.pub/2021/framework/index.html}
+}
+
+@inproceedings{wang2022interpretability,
+  title={Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 Small},
+  author={Wang, Kevin Ro and Variengien, Alexandre and Conmy, Arthur and Shlegeris, Buck and Steinhardt, Jacob},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2022}
+}
+
+@inproceedings{geva-etal-2021-transformer,
+    title = "Transformer Feed-Forward Layers Are Key-Value Memories",
+    author = "Geva, Mor  and
+      Schuster, Roei  and
+      Berant, Jonathan  and
+      Levy, Omer",
+    editor = "Moens, Marie-Francine  and
+      Huang, Xuanjing  and
+      Specia, Lucia  and
+      Yih, Scott Wen-tau",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.446",
+    doi = "10.18653/v1/2021.emnlp-main.446",
+    pages = "5484--5495",
+    abstract = "Feed-forward layers constitute two-thirds of a transformer model{'}s parameters, yet their role in the network remains under-explored. We show that feed-forward layers in transformer-based language models operate as key-value memories, where each key correlates with textual patterns in the training examples, and each value induces a distribution over the output vocabulary. Our experiments show that the learned patterns are human-interpretable, and that lower layers tend to capture shallow patterns, while upper layers learn more semantic ones. The values complement the keys{'} input patterns by inducing output distributions that concentrate probability mass on tokens likely to appear immediately after each pattern, particularly in the upper layers. Finally, we demonstrate that the output of a feed-forward layer is a composition of its memories, which is subsequently refined throughout the model{'}s layers via residual connections to produce the final output distribution.",
+}
+
+@misc{Nostalgebraist2020,
+  author = {Nostalgebraist},
+  title = {Interpreting gpt: the logit lens},
+  year = {2020},
+  url = {https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens},
+}
+
+@inproceedings{dar-etal-2023-analyzing,
+    title = "Analyzing Transformers in Embedding Space",
+    author = "Dar, Guy  and
+      Geva, Mor  and
+      Gupta, Ankit  and
+      Berant, Jonathan",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.893",
+    doi = "10.18653/v1/2023.acl-long.893",
+    pages = "16124--16170",
+    abstract = "Understanding Transformer-based models has attracted significant attention, as they lie at the heart of recent technological advances across machine learning. While most interpretability methods rely on running models over inputs, recent work has shown that a zero-pass approach, where parameters are interpreted directly without a forward/backward pass is feasible for some Transformer parameters, and for two-layer attention networks. In this work, we present a theoretical analysis where all parameters of a trained Transformer are interpreted by projecting them into the embedding space, that is, the space of vocabulary items they operate on. We derive a simple theoretical framework to support our arguments and provide ample evidence for its validity. First, an empirical analysis showing that parameters of both pretrained and fine-tuned models can be interpreted in embedding space. Second, we present two applications of our framework: (a) aligning the parameters of different models that share a vocabulary, and (b) constructing a classifier without training by {``}translating{''} the parameters of a fine-tuned classifier to parameters of a different model that was only pretrained. Overall, our findings open the door to interpretation methods that, at least in part, abstract away from model specifics and operate in the embedding space only.",
+}
+
+@inproceedings{geva-etal-2022-transformer,
+    title = "Transformer Feed-Forward Layers Build Predictions by Promoting Concepts in the Vocabulary Space",
+    author = "Geva, Mor  and
+      Caciularu, Avi  and
+      Wang, Kevin  and
+      Goldberg, Yoav",
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.3",
+    doi = "10.18653/v1/2022.emnlp-main.3",
+    pages = "30--45",
+    abstract = "Transformer-based language models (LMs) are at the core of modern NLP, but their internal prediction construction process is opaque and largely not understood. In this work, we make a substantial step towards unveiling this underlying prediction process, by reverse-engineering the operation of the feed-forward network (FFN) layers, one of the building blocks of transformer models. We view the token representation as a changing distribution over the vocabulary, and the output from each FFN layer as an additive update to that distribution. Then, we analyze the FFN updates in the vocabulary space, showing that each update can be decomposed to sub-updates corresponding to single FFN parameter vectors, each promoting concepts that are often human-interpretable. We then leverage these findings for controlling LM predictions, where we reduce the toxicity of GPT2 by almost 50{\%}, and for improving computation efficiency with a simple early exit rule, saving 20{\%} of computation on average.",
+}
+
+@inproceedings{NEURIPS2023_efbba771,
+ author = {Hanna, Michael and Liu, Ollie and Variengien, Alexandre},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+ pages = {76033--76060},
+ publisher = {Curran Associates, Inc.},
+ title = {How does GPT-2 compute greater-than?: Interpreting mathematical abilities in a pre-trained language model},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/efbba7719cc5172d175240f24be11280-Paper-Conference.pdf},
+ volume = {36},
+ year = {2023}
+}
+
+@inproceedings{yu-etal-2023-characterizing,
+    title = "Characterizing Mechanisms for Factual Recall in Language Models",
+    author = "Yu, Qinan  and
+      Merullo, Jack  and
+      Pavlick, Ellie",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.615",
+    doi = "10.18653/v1/2023.emnlp-main.615",
+    pages = "9924--9959",
+    abstract = "Language Models (LMs) often must integrate facts they memorized in pretraining with new information that appears in a given context. These two sources can disagree, causing competition within the model, and it is unclear how an LM will resolve the conflict. On a dataset that queries for knowledge of world capitals, we investigate both distributional and mechanistic determinants of LM behavior in such situations. Specifically, we measure the proportion of the time an LM will use a counterfactual prefix (e.g., {``}The capital of Poland is London{''}) to overwrite what it learned in pretraining ({``}Warsaw{''}). On Pythia and GPT2, the training frequency of both the query country ({''}Poland{''}) and the in-context city ({''}London{''}) highly affect the models{'} likelihood of using the counterfactual. We then use head attribution to identify individual attention heads that either promote the memorized answer or the in-context answer in the logits. By scaling up or down the value vector of these heads, we can control the likelihood of using the in-context answer on new data. This method can increase the rate of generating the in-context answer to 88{\%} of the time simply by scaling a single head at runtime. Our work contributes to a body of evidence showing that we can often localize model behaviors to specific components and provides a proof of concept for how future methods might control model behavior dynamically at runtime.",
+}
+
+
+@article{touvron2023llama,
+  title={Llama 2: Open foundation and fine-tuned chat models},
+  author={Touvron, Hugo and Martin, Louis and Stone, Kevin and Albert, Peter and Almahairi, Amjad and Babaei, Yasmine and Bashlykov, Nikolay and Batra, Soumya and Bhargava, Prajjwal and Bhosale, Shruti and others},
+  journal={arXiv preprint arXiv:2307.09288},
+  year={2023}
+}
+
+@article{voita2023neurons,
+  title={Neurons in large language models: Dead, n-gram, positional},
+  author={Voita, Elena and Ferrando, Javier and Nalmpantis, Christoforos},
+  journal={arXiv preprint arXiv:2309.04827},
+  year={2023}
+}
+
+@article{clark2018think,
+  title={Think you have solved question answering? try arc, the ai2 reasoning challenge},
+  author={Clark, Peter and Cowhey, Isaac and Etzioni, Oren and Khot, Tushar and Sabharwal, Ashish and Schoenick, Carissa and Tafjord, Oyvind},
+  journal={arXiv preprint arXiv:1803.05457},
+  year={2018}
+}
+
+@inproceedings{hendrycks2020measuring,
+  title={Measuring Massive Multitask Language Understanding},
+  author={Hendrycks, Dan and Burns, Collin and Basart, Steven and Zou, Andy and Mazeika, Mantas and Song, Dawn and Steinhardt, Jacob},
+  booktitle={International Conference on Learning Representations},
+  year={2020}
+}
+
+@inproceedings{roemmele2011choice,
+  title={Choice of plausible alternatives: An evaluation of commonsense causal reasoning},
+  author={Roemmele, Melissa and Bejan, Cosmin Adrian and Gordon, Andrew S},
+  booktitle={2011 AAAI Spring Symposium Series},
+  year={2011}
+}
+
+@inproceedings{williams-etal-2018-broad,
+    title = "A Broad-Coverage Challenge Corpus for Sentence Understanding through Inference",
+    author = "Williams, Adina  and
+      Nangia, Nikita  and
+      Bowman, Samuel",
+    editor = "Walker, Marilyn  and
+      Ji, Heng  and
+      Stent, Amanda",
+    booktitle = "Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)",
+    month = jun,
+    year = "2018",
+    address = "New Orleans, Louisiana",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N18-1101",
+    doi = "10.18653/v1/N18-1101",
+    pages = "1112--1122",
+    abstract = "This paper introduces the Multi-Genre Natural Language Inference (MultiNLI) corpus, a dataset designed for use in the development and evaluation of machine learning models for sentence understanding. At 433k examples, this resource is one of the largest corpora available for natural language inference (a.k.a. recognizing textual entailment), improving upon available resources in both its coverage and difficulty. MultiNLI accomplishes this by offering data from ten distinct genres of written and spoken English, making it possible to evaluate systems on nearly the full complexity of the language, while supplying an explicit setting for evaluating cross-genre domain adaptation. In addition, an evaluation using existing machine learning models designed for the Stanford NLI corpus shows that it represents a substantially more difficult task than does that corpus, despite the two showing similar levels of inter-annotator agreement.",
+}
+
+@inproceedings{dagan2005pascal,
+  title={The pascal recognising textual entailment challenge},
+  author={Dagan, Ido and Glickman, Oren and Magnini, Bernardo},
+  booktitle={Machine learning challenges workshop},
+  pages={177--190},
+  year={2005},
+  organization={Springer}
+}
+
+@inproceedings{socher-etal-2013-recursive,
+    title = "Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank",
+    author = "Socher, Richard  and
+      Perelygin, Alex  and
+      Wu, Jean  and
+      Chuang, Jason  and
+      Manning, Christopher D.  and
+      Ng, Andrew  and
+      Potts, Christopher",
+    editor = "Yarowsky, David  and
+      Baldwin, Timothy  and
+      Korhonen, Anna  and
+      Livescu, Karen  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2013",
+    address = "Seattle, Washington, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D13-1170",
+    pages = "1631--1642",
+}
+
+@inproceedings{pang-lee-2005-seeing,
+    title = "Seeing Stars: Exploiting Class Relationships for Sentiment Categorization with Respect to Rating Scales",
+    author = "Pang, Bo  and
+      Lee, Lillian",
+    editor = "Knight, Kevin  and
+      Ng, Hwee Tou  and
+      Oflazer, Kemal",
+    booktitle = "Proceedings of the 43rd Annual Meeting of the Association for Computational Linguistics ({ACL}{'}05)",
+    month = jun,
+    year = "2005",
+    address = "Ann Arbor, Michigan",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P05-1015",
+    doi = "10.3115/1219840.1219855",
+    pages = "115--124",
+}
+
+@inproceedings{hu2004mining,
+  title={Mining and summarizing customer reviews},
+  author={Hu, Minqing and Liu, Bing},
+  booktitle={Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining},
+  pages={168--177},
+  year={2004}
+}
+
+@inproceedings{pilehvar-camacho-collados-2019-wic,
+    title = "{W}i{C}: the Word-in-Context Dataset for Evaluating Context-Sensitive Meaning Representations",
+    author = "Pilehvar, Mohammad Taher  and
+      Camacho-Collados, Jose",
+    editor = "Burstein, Jill  and
+      Doran, Christy  and
+      Solorio, Thamar",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1128",
+    doi = "10.18653/v1/N19-1128",
+    pages = "1267--1273",
+    abstract = "By design, word embeddings are unable to model the dynamic nature of words{'} semantics, i.e., the property of words to correspond to potentially different meanings. To address this limitation, dozens of specialized meaning representation techniques such as sense or contextualized embeddings have been proposed. However, despite the popularity of research on this topic, very few evaluation benchmarks exist that specifically focus on the dynamic semantics of words. In this paper we show that existing models have surpassed the performance ceiling of the standard evaluation dataset for the purpose, i.e., Stanford Contextual Word Similarity, and highlight its shortcomings. To address the lack of a suitable benchmark, we put forward a large-scale Word in Context dataset, called WiC, based on annotations curated by experts, for generic evaluation of context-sensitive representations. WiC is released in \url{https://pilehvar.github.io/wic/}.",
+}
+
+@inproceedings{NIPS2015_250cf8b5,
+ author = {Zhang, Xiang and Zhao, Junbo and LeCun, Yann},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {C. Cortes and N. Lawrence and D. Lee and M. Sugiyama and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Character-level Convolutional Networks for Text Classification},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2015/file/250cf8b51c773f3f8dc8b4be867a9a02-Paper.pdf},
+ volume = {28},
+ year = {2015}
+}
+
+@inproceedings{voorhees2000building,
+  title={Building a question answering test collection},
+  author={Voorhees, Ellen M and Tice, Dawn M},
+  booktitle={Proceedings of the 23rd annual international ACM SIGIR conference on Research and development in information retrieval},
+  pages={200--207},
+  year={2000}
+}
+
+@inproceedings{wang-etal-2023-label,
+    title = "Label Words are Anchors: An Information Flow Perspective for Understanding In-Context Learning",
+    author = "Wang, Lean  and
+      Li, Lei  and
+      Dai, Damai  and
+      Chen, Deli  and
+      Zhou, Hao  and
+      Meng, Fandong  and
+      Zhou, Jie  and
+      Sun, Xu",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.609",
+    doi = "10.18653/v1/2023.emnlp-main.609",
+    pages = "9840--9855",
+    abstract = "In-context learning (ICL) emerges as a promising capability of large language models (LLMs) by providing them with demonstration examples to perform diverse tasks. However, the underlying mechanism of how LLMs learn from the provided context remains under-explored. In this paper, we investigate the working mechanism of ICL through an information flow lens. Our findings reveal that label words in the demonstration examples function as anchors: (1) semantic information aggregates into label word representations during the shallow computation layers{'} processing; (2) the consolidated information in label words serves as a reference for LLMs{'} final predictions. Based on these insights, we introduce an anchor re-weighting method to improve ICL performance, a demonstration compression technique to expedite inference, and an analysis framework for diagnosing ICL errors in GPT2-XL. The promising applications of our findings again validate the uncovered ICL working mechanism and pave the way for future studies.",
+}
+
+@inproceedings{fengunveiling,
+  title={Unveiling and Manipulating Prompt Influence in Large Language Models},
+  author={Feng, Zijian and Zhou, Hanzhang and ZHU, ZIXIAO and Qian, Junlang and Mao, Kezhi},
+  booktitle={The Twelfth International Conference on Learning Representations},
+    year={2024}
+}
+
+@article{radford2019language,
+  title={Language models are unsupervised multitask learners},
+  author={Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya and others},
+  journal={OpenAI blog},
+  volume={1},
+  number={8},
+  pages={9},
+  year={2019}
+}
+
+@misc{wang2021gpt,
+  title={GPT-J-6B: A 6 billion parameter autoregressive language model},
+  author={Wang, Ben and Komatsuzaki, Aran},
+  year={2021}
+}
+
+@article{wei2022chain,
+  title={Chain-of-thought prompting elicits reasoning in large language models},
+  author={Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Xia, Fei and Chi, Ed and Le, Quoc V and Zhou, Denny and others},
+  journal={Advances in neural information processing systems},
+  volume={35},
+  pages={24824--24837},
+  year={2022}
+}
+
+@inproceedings{zhou2024llms,
+  title={Llms learn task heuristics from demonstrations: A heuristic-driven prompting strategy for document-level event argument extraction},
+  author={Zhou, Hanzhang and Qian, Junlang and Feng, Zijian and Hui, Lu and Zhu, Zixiao and Mao, Kezhi},
+  booktitle={Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={11972--11990},
+  year={2024}
+}

@@ -1,0 +1,1713 @@
+@misc{rlberry,
+    author = {Domingues, Omar Darwiche and Flet-Berliac, Yannis and Leurent, Edouard and M{\'e}nard, Pierre and Shang, Xuedong and Valko, Michal},
+    doi = {10.5281/zenodo.5544540},
+    month = {10},
+    title = {{rlberry - A Reinforcement Learning Library for Research and Education}},
+    url = {https://github.com/rlberry-py/rlberry},
+    year = {2021}
+}
+
+
+@inproceedings{garivier2011the,
+  title = 	 {The KL-UCB Algorithm for Bounded Stochastic Bandits and Beyond},
+  author = 	 {Garivier, Aur\'{e}lien and Capp\'{e}, Olivier},
+  booktitle = 	 {Proceedings of the 24th Annual Conference on Learning Theory},
+  pages = 	 {359--376},
+  year = 	 {2011},
+  editor = 	 {Kakade, Sham M. and von Luxburg, Ulrike},
+  volume = 	 {19},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Budapest, Hungary},
+  month = 	 {09--11 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v19/garivier11a/garivier11a.pdf},
+  url = 	 {https://proceedings.mlr.press/v19/garivier11a.html},
+  abstract = 	 {This paper presents a finite-time analysis of the KL-UCB algorithm, an online, horizon-free  index policy for stochastic bandit problems.  We prove two distinct results: first, for arbitrary bounded rewards, the KL-UCB algorithm  satisfies a uniformly better regret bound than UCB and its variants; second, in the special case of  Bernoulli rewards, it reaches the lower bound of Lai and Robbins.  Furthermore, we show that simple adaptations of the KL-UCB algorithm are also optimal for  specific classes of (possibly unbounded) rewards, including those generated from exponential  families of distributions.  A large-scale numerical study comparing KL-UCB with its main competitors (UCB, MOSS,  UCB-Tuned, UCB-V, DMED) shows that KL-UCB is remarkably efficient and stable, including for short time horizons. KL-UCB is also the only method that always performs better  than the basic UCB policy.  Our regret bounds rely on deviations results of independent interest which are stated and proved  in the Appendix. As a by-product, we also obtain an improved regret bound for the standard UCB  algorithm.}
+}
+
+
+
+@inproceedings{menard2021ucb,
+  author    = {Pierre M{\'{e}}nard and
+               Omar Darwiche Domingues and
+               Xuedong Shang and
+               Michal Valko},
+  editor    = {Marina Meila and
+               Tong Zhang},
+  title     = {{UCB} Momentum Q-learning: Correcting the bias without forgetting},
+  booktitle = {Proceedings of the 38th International Conference on Machine Learning,
+               {ICML} 2021, 18-24 July 2021, Virtual Event},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {139},
+  pages     = {7609--7618},
+  publisher = {{PMLR}},
+  year      = {2021},
+  url       = {http://proceedings.mlr.press/v139/menard21b.html},
+  timestamp = {Wed, 25 Aug 2021 01:00:00 +0200},
+  biburl    = {https://dblp.org/rec/conf/icml/MenardDSV21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{russo2014learning,
+ author = {Russo, Daniel and Van Roy, Benjamin},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {Z. Ghahramani and M. Welling and C. Cortes and N. Lawrence and K. Q. Weinberger},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Learning to Optimize via Information-Directed Sampling},
+ url = {https://proceedings.neurips.cc/paper/2014/file/301ad0e3bd5cb1627a2044908a42fdc2-Paper.pdf},
+ volume = {27},
+ year = {2014}
+}
+
+@article{qian2020concentration,
+  author    = {Jian Qian and
+               Ronan Fruit and
+               Matteo Pirotta and
+               Alessandro Lazaric},
+  title     = {Concentration Inequalities for Multinoulli Random Variables},
+  journal   = {CoRR},
+  volume    = {abs/2001.11595},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2001.11595},
+  eprinttype = {arXiv},
+  eprint    = {2001.11595},
+  timestamp = {Mon, 03 Feb 2020 11:21:05 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2001-11595.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+
+@inproceedings{badia2020never,
+abstract = {We propose a reinforcement learning agent to solve hard exploration games by learning a range of directed exploratory policies. We construct an episodic memory-based intrinsic reward using k-nearest neighbors over the agent's recent experience to train the directed exploratory policies, thereby encouraging the agent to repeatedly revisit all states in its environment. A self-supervised inverse dynamics model is used to train the embeddings of the nearest neighbour lookup, biasing the novelty signal towards what the agent can control. We employ the framework of Universal Value Function Approximators (UVFA) to simultaneously learn many directed exploration policies with the same neural network, with different trade-offs between exploration and exploitation. By using the same neural network for different degrees of exploration/exploitation, transfer is demonstrated from predominantly exploratory policies yielding effective exploitative policies. The proposed method can be incorporated to run with modern distributed RL agents that collect large amounts of experience from many actors running in parallel on separate environment instances. Our method doubles the performance of the base agent in all hard exploration in the Atari-57 suite while maintaining a very high score across the remaining games, obtaining a median human normalised score of 1344.0{\%}. Notably, the proposed method is the first algorithm to achieve non-zero rewards (with a mean score of 8,400) in the game of Pitfall! without using demonstrations or hand-crafted features.},
+archivePrefix = {arXiv},
+arxivId = {2002.06038},
+author = {Badia, Adri{\`{a}} Puigdom{\`{e}}nech and Sprechmann, Pablo and Vitvitskyi, Alex and Guo, Daniel and Piot, Bilal and Kapturowski, Steven and Tieleman, Olivier and Arjovsky, Mart{\'{i}}n and Pritzel, Alexander and Bolt, Andew and Blundell, Charles},
+booktitle = {International Conference on Learning Representations},
+eprint = {2002.06038},
+month = {feb},
+title = {{Never Give Up: Learning directed exploration Strategies}},
+url = {https://arxiv.org/abs/2002.06038},
+year = {2020}
+}
+
+
+@article{efron1979bootstrap,
+author = {B. Efron},
+title = {Bootstrap Methods: Another Look at the Jackknife},
+volume = {7},
+journal = {The Annals of Statistics},
+number = {1},
+publisher = {Institute of Mathematical Statistics},
+pages = {1 -- 26},
+keywords = {bootstrap, discriminant analysis, error rate estimation, jackknife, Nonlinear regression, nonparametric variance estimation, Resampling, subsample values},
+year = {1979},
+doi = {10.1214/aos/1176344552},
+URL = {https://doi.org/10.1214/aos/1176344552}
+}
+
+
+
+@inproceedings{fruit2018efficient,
+  title={Efficient bias-span-constrained exploration-exploitation in reinforcement learning},
+  author={Fruit, Ronan and Pirotta, Matteo and Lazaric, Alessandro and Ortner, Ronald},
+  booktitle={International Conference on Machine Learning},
+  pages={1578--1586},
+  year={2018},
+  organization={PMLR}
+}
+
+
+@article{thompson1933on,
+    author = {Thompson, William R},
+    title = {On the likelihood that one unknown probability exceeds another in view of the evidence of two samples},
+    journal = {Biometrika},
+    volume = {25},
+    number = {3-4},
+    pages = {285-294},
+    year = {1933},
+    month = {12},
+    issn = {0006-3444},
+    doi = {10.1093/biomet/25.3-4.285},
+    url = {https://doi.org/10.1093/biomet/25.3-4.285},
+    eprint = {https://academic.oup.com/biomet/article-pdf/25/3-4/285/513725/25-3-4-285.pdf},
+}
+
+
+
+
+
+@InProceedings{kveton2019garbage,
+  title = 	 {Garbage In, Reward Out: Bootstrapping Exploration in Multi-Armed Bandits},
+  author =       {Kveton, Branislav and Szepesvari, Csaba and Vaswani, Sharan and Wen, Zheng and Lattimore, Tor and Ghavamzadeh, Mohammad},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  pages = 	 {3601--3610},
+  year = 	 {2019},
+  editor = 	 {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--15 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v97/kveton19a/kveton19a.pdf},
+  url = 	 {https://proceedings.mlr.press/v97/kveton19a.html},
+  abstract = 	 {We propose a bandit algorithm that explores by randomizing its history of rewards. Specifically, it pulls the arm with the highest mean reward in a non-parametric bootstrap sample of its history with pseudo rewards. We design the pseudo rewards such that the bootstrap mean is optimistic with a sufficiently high probability. We call our algorithm Giro, which stands for garbage in, reward out. We analyze Giro in a Bernoulli bandit and derive a $O(K \Delta^{-1} \log n)$ bound on its $n$-round regret, where $\Delta$ is the difference in the expected rewards of the optimal and the best suboptimal arms, and $K$ is the number of arms. The main advantage of our exploration design is that it easily generalizes to structured problems. To show this, we propose contextual Giro with an arbitrary reward generalization model. We evaluate Giro and its contextual variant on multiple synthetic and real-world problems, and observe that it performs well.}
+}
+
+
+
+@article{yang2021exploration,
+  author    = {Tianpei Yang and
+               Hongyao Tang and
+               Chenjia Bai and
+               Jinyi Liu and
+               Jianye Hao and
+               Zhaopeng Meng and
+               Peng Liu},
+  title     = {Exploration in Deep Reinforcement Learning: {A} Comprehensive Survey},
+  journal   = {CoRR},
+  volume    = {abs/2109.06668},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2109.06668},
+  eprinttype = {arXiv},
+  eprint    = {2109.06668},
+  timestamp = {Tue, 21 Sep 2021 17:46:04 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2109-06668.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{tang2017exploration,
+ author = {Tang, Haoran and Houthooft, Rein and Foote, Davis and Stooke, Adam and Xi Chen, OpenAI and Duan, Yan and Schulman, John and DeTurck, Filip and Abbeel, Pieter},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {I. Guyon and U. V. Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {\#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning},
+ url = {https://proceedings.neurips.cc/paper/2017/file/3a20f62a0af1aa152670bab3c602feed-Paper.pdf},
+ volume = {30},
+ year = {2017}
+}
+
+
+
+
+@article{osband2017gaussian,
+  author    = {Ian Osband and
+               Benjamin Van Roy},
+  title     = {Gaussian-Dirichlet Posterior Dominance in Sequential Learning},
+  journal   = {CoRR},
+  volume    = {abs/1702.04126},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1702.04126},
+  eprinttype = {arXiv},
+  eprint    = {1702.04126},
+  timestamp = {Mon, 13 Aug 2018 16:46:25 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/OsbandR17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{hinton2012neural,
+  title={Neural networks for machine learning lecture 6a overview of mini-batch gradient descent},
+  author={Hinton, Geoffrey and Srivastava, Nitish and Swersky, Kevin},
+  journal={Cited on},
+  volume={14},
+  number={8},
+  pages={2},
+  year={2012}
+}
+
+
+@article{watkins1992q,
+author = {Watkins, Chris J. and Dayan, Peter},
+journal = {Machine Learning},
+number = {3-4},
+pages = {279--292},
+title = {{Q-learning}},
+url = {https://link.springer.com/content/pdf/10.1007/BF00992698.pdf},
+volume = {8},
+year = {1992}
+}
+
+@inproceedings{zhang2020advantage,
+author = {Zhang, Zihan and Zhou, Yuan and Ji, Xiangyang},
+title = {Almost Optimal Model-Free Reinforcement Learning via Reference-Advantage Decomposition},
+year = {2020},
+isbn = {9781713829546},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {We study the reinforcement learning problem in the setting of finite-horizon episodic Markov Decision Processes (MDPs) with S states, A actions, and episode length H. We propose a model-free algorithm UCB-ADVANTAGE and prove that it achieves \~{O}(√H2SAT) regret where T = KH and K is the number of episodes to play. Our regret bound improves upon the results of [Jin et al., 2018] and matches the best known model-based algorithms as well as the information theoretic lower bound up to logarithmic factors. We also show that UCB-ADVANTAGE achieves low local switching cost and applies to concurrent reinforcement learning, improving upon the recent results of [Bai et al., 2019].},
+booktitle = {Proceedings of the 34th International Conference on Neural Information Processing Systems},
+articleno = {1274},
+numpages = {10},
+location = {Vancouver, BC, Canada},
+series = {NIPS'20}
+}
+
+
+
+@article{osband2015bootstrap,
+  author    = {Ian Osband and
+               Van Roy, Benjamin},
+  title     = {Bootstrapped Thompson Sampling and Deep Exploration},
+  journal   = {CoRR},
+  volume    = {abs/1507.00300},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1507.00300},
+  eprinttype = {arXiv},
+  eprint    = {1507.00300},
+  timestamp = {Mon, 13 Aug 2018 16:48:40 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/OsbandR15.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@InProceedings{pacchiano2021towards,
+  title = 	 {Towards tractable optimism in model-based reinforcement learning},
+  author =       {Pacchiano, Aldo and Ball, Philip and Parker-Holder, Jack and Choromanski, Krzysztof and Roberts, Stephen},
+  booktitle = 	 {Proceedings of the Thirty-Seventh Conference on Uncertainty in Artificial Intelligence},
+  pages = 	 {1413--1423},
+  year = 	 {2021},
+  editor = 	 {de Campos, Cassio and Maathuis, Marloes H.},
+  volume = 	 {161},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {27--30 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v161/pacchiano21a/pacchiano21a.pdf},
+  url = 	 {https://proceedings.mlr.press/v161/pacchiano21a.html},
+  abstract = 	 {The principle of optimism in the face of uncertainty is prevalent throughout sequential decision making problems such as multi-armed bandits and reinforcement learning (RL). To be successful, an optimistic RL algorithm must over-estimate the true value function (optimism) but not by so much that it is inaccurate (estimation error). In the tabular setting, many state-of-the-art methods produce the required optimism through approaches which are intractable when scaling to deep RL. We re-interpret these scalable optimistic model-based algorithms as solving a tractable noise augmented MDP. This formulation achieves a competitive regret bound: $\tilde{\mathcal{O}}( |\mathcal{S}|H\sqrt{|\mathcal{A}| T } )$ when augmenting using Gaussian noise, where $T$ is the total number of environment steps. We also explore how this trade-off changes in the deep RL setting, where we show empirically that estimation error is significantly more troublesome. However, we also show that if this error is reduced, optimistic model-based RL algorithms can match state-of-the-art performance in continuous control problems.}
+}
+
+
+
+@inproceedings{azizzadenesheli2018efficient,
+  author    = {Kamyar Azizzadenesheli and
+               Emma Brunskill and
+               Animashree Anandkumar},
+  title     = {Efficient Exploration Through Bayesian Deep Q-Networks},
+  booktitle = {2018 Information Theory and Applications Workshop, {ITA} 2018, San
+               Diego, CA, USA, February 11-16, 2018},
+  pages     = {1--9},
+  publisher = {{IEEE}},
+  year      = {2018},
+  url       = {https://doi.org/10.1109/ITA.2018.8503252},
+  doi       = {10.1109/ITA.2018.8503252},
+  timestamp = {Wed, 16 Oct 2019 14:14:51 +0200},
+  biburl    = {https://dblp.org/rec/conf/ita/Azizzadenesheli18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{nikolov2019information,
+  author    = {Nikolay Nikolov and
+               Johannes Kirschner and
+               Felix Berkenkamp and
+               Andreas Krause},
+  title     = {Information-Directed Exploration for Deep Reinforcement Learning},
+  booktitle = {7th International Conference on Learning Representations, {ICLR} 2019,
+               New Orleans, LA, USA, May 6-9, 2019},
+  publisher = {OpenReview.net},
+  year      = {2019},
+  url       = {https://openreview.net/forum?id=Byx83s09Km},
+  timestamp = {Thu, 25 Jul 2019 14:26:00 +0200},
+  biburl    = {https://dblp.org/rec/conf/iclr/NikolovKBK19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+
+@article{mnih2015humanlevel,
+  added-at = {2015-08-26T14:46:40.000+0200},
+  author = {Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Rusu, Andrei A. and Veness, Joel and Bellemare, Marc G. and Graves, Alex and Riedmiller, Martin and Fidjeland, Andreas K. and Ostrovski, Georg and Petersen, Stig and Beattie, Charles and Sadik, Amir and Antonoglou, Ioannis and King, Helen and Kumaran, Dharshan and Wierstra, Daan and Legg, Shane and Hassabis, Demis},
+  biburl = {https://www.bibsonomy.org/bibtex/2fb15f4471c81dc2b9edf2304cb2f7083/hotho},
+  description = {Human-level control through deep reinforcement learning - nature14236.pdf},
+  interhash = {eac59980357d99db87b341b61ef6645f},
+  intrahash = {fb15f4471c81dc2b9edf2304cb2f7083},
+  issn = {00280836},
+  journal = {Nature},
+  keywords = {deep learning toread},
+  month = feb,
+  number = 7540,
+  pages = {529--533},
+  publisher = {Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.},
+  timestamp = {2015-08-26T14:46:40.000+0200},
+  title = {Human-level control through deep reinforcement learning},
+  url = {http://dx.doi.org/10.1038/nature14236},
+  volume = 518,
+  year = 2015
+}
+
+
+
+@incollection{mnih2013playing,
+  title = {Playing Atari With Deep Reinforcement Learning},
+  author = {Volodymyr Mnih and Koray Kavukcuoglu and David Silver and Alex Graves and Ioannis Antonoglou and Daan Wierstra and Martin Riedmiller},
+  booktitle = {NIPS Deep Learning Workshop},
+  year = {2013}
+}
+
+
+@inproceedings{
+choshen2018dora,
+title={{DORA} The Explorer: Directed Outreaching Reinforcement Action-Selection},
+author={Lior Fox and Leshem Choshen and Yonatan Loewenstein},
+booktitle={International Conference on Learning Representations},
+year={2018},
+url={https://openreview.net/forum?id=ry1arUgCW},
+}
+
+
+
+
+@inproceedings{haber2018learning,
+ author = {Haber, Nick and Mrowca, Damian and Wang, Stephanie and Fei-Fei, Li F and Yamins, Daniel L},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Learning to Play With Intrinsically-Motivated, Self-Aware Agents},
+ url = {https://proceedings.neurips.cc/paper/2018/file/71e63ef5b7249cfc60852f0e0f5bf4c8-Paper.pdf},
+ volume = {31},
+ year = {2018}
+}
+
+
+
+@InProceedings{pathak2017curiosity,
+  title = 	 {Curiosity-driven Exploration by Self-supervised Prediction},
+  author =       {Deepak Pathak and Pulkit Agrawal and Alexei A. Efros and Trevor Darrell},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {2778--2787},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/pathak17a/pathak17a.pdf},
+  url = 	 {https://proceedings.mlr.press/v70/pathak17a.html},
+  abstract = 	 {In many real-world scenarios, rewards extrinsic to the agent are extremely sparse, or absent altogether. In such cases, curiosity can serve as an intrinsic reward signal to enable the agent to explore its environment and learn skills that might be useful later in its life. We formulate curiosity as the error in an agent’s ability to predict the consequence of its own actions in a visual feature space learned by a self-supervised inverse dynamics model. Our formulation scales to high-dimensional continuous state spaces like images, bypasses the difficulties of directly predicting pixels, and, critically, ignores the aspects of the environment that cannot affect the agent. The proposed approach is evaluated in two environments: VizDoom and Super Mario Bros. Three broad settings are investigated: 1) sparse extrinsic reward, where curiosity allows for far fewer interactions with the environment to reach the goal; 2) exploration with no extrinsic reward, where curiosity pushes the agent to explore more efficiently; and 3) generalization to unseen scenarios (e.g. new levels of the same game) where the knowledge gained from earlier experience helps the agent explore new places much faster than starting from scratch.}
+}
+
+
+
+@article{achiam2017surprise,
+  author    = {Joshua Achiam and
+               Shankar Sastry},
+  title     = {Surprise-Based Intrinsic Motivation for Deep Reinforcement Learning},
+  journal   = {CoRR},
+  volume    = {abs/1703.01732},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1703.01732},
+  eprinttype = {arXiv},
+  eprint    = {1703.01732},
+  timestamp = {Mon, 13 Aug 2018 01:00:00 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/AchiamS17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{schmidhuber1991possibility,
+  title={A possibility for implementing curiosity and boredom in model-building neural controllers},
+  author={Schmidhuber, J{\"u}rgen},
+  booktitle={Proc. of the international conference on simulation of adaptive behavior: From animals to animats},
+  pages={222--227},
+  year={1991}
+}
+
+
+@inproceedings{burda2019exploration,
+  author    = {Yuri Burda and
+               Harrison Edwards and
+               Amos J. Storkey and
+               Oleg Klimov},
+  title     = {Exploration by random network distillation},
+  booktitle = {7th International Conference on Learning Representations, {ICLR} 2019,
+               New Orleans, LA, USA, May 6-9, 2019},
+  publisher = {OpenReview.net},
+  year      = {2019},
+  url       = {https://openreview.net/forum?id=H1lJJnR5Ym},
+  timestamp = {Thu, 25 Jul 2019 14:25:55 +0200},
+  biburl    = {https://dblp.org/rec/conf/iclr/BurdaESK19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@inproceedings{bellemare2016unifying,
+ author = {Bellemare, Marc and Srinivasan, Sriram and Ostrovski, Georg and Schaul, Tom and Saxton, David and Munos, Remi},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {D. Lee and M. Sugiyama and U. Luxburg and I. Guyon and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Unifying Count-Based Exploration and Intrinsic Motivation},
+ url = {https://proceedings.neurips.cc/paper/2016/file/afda332245e2af431fb7b672a68b659d-Paper.pdf},
+ volume = {29},
+ year = {2016}
+}
+
+
+@article{osband2019deep,
+  author  = {Ian Osband and Benjamin Van Roy and Daniel J. Russo and Zheng Wen},
+  title   = {Deep Exploration via Randomized Value Functions},
+  journal = {Journal of Machine Learning Research},
+  year    = {2019},
+  volume  = {20},
+  number  = {124},
+  pages   = {1-62},
+  url     = {http://jmlr.org/papers/v20/18-339.html}
+}
+
+
+@inproceedings{osband2016deep,
+ author = {Osband, Ian and Blundell, Charles and Pritzel, Alexander and Van Roy, Benjamin},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {D. Lee and M. Sugiyama and U. Luxburg and I. Guyon and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Deep Exploration via Bootstrapped DQN},
+ url = {https://proceedings.neurips.cc/paper/2016/file/8d8818c8e140c64c743113f563cf750f-Paper.pdf},
+ volume = {29},
+ year = {2016}
+}
+
+
+
+
+@inproceedings{fortunato2018noisy,
+  author    = {Meire Fortunato and
+               Mohammad Gheshlaghi Azar and
+               Bilal Piot and
+               Jacob Menick and
+               Matteo Hessel and
+               Ian Osband and
+               Alex Graves and
+               Volodymyr Mnih and
+               R{\'{e}}mi Munos and
+               Demis Hassabis and
+               Olivier Pietquin and
+               Charles Blundell and
+               Shane Legg},
+  title     = {Noisy Networks For Exploration},
+  booktitle = {6th International Conference on Learning Representations, {ICLR} 2018,
+               Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track Proceedings},
+  publisher = {OpenReview.net},
+  year      = {2018},
+  url       = {https://openreview.net/forum?id=rywHCPkAW},
+  timestamp = {Thu, 25 Jul 2019 14:25:43 +0200},
+  biburl    = {https://dblp.org/rec/conf/iclr/FortunatoAPMHOG18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+
+@inproceedings{russo2019worst,
+ author = {Russo, Daniel},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Worst-Case Regret Bounds for Exploration via Randomized Value Functions},
+ url = {https://proceedings.neurips.cc/paper/2019/file/451ae86722d26a608c2e174b2b2773f1-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+
+
+@InProceedings{osband16generalization,
+  title = 	 {Generalization and Exploration via Randomized Value Functions},
+  author = 	 {Osband, Ian and Roy, Benjamin Van and Wen, Zheng},
+  booktitle = 	 {Proceedings of The 33rd International Conference on Machine Learning},
+  pages = 	 {2377--2386},
+  year = 	 {2016},
+  editor = 	 {Balcan, Maria Florina and Weinberger, Kilian Q.},
+  volume = 	 {48},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {New York, New York, USA},
+  month = 	 {20--22 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v48/osband16.pdf},
+  url = 	 {https://proceedings.mlr.press/v48/osband16.html},
+  abstract = 	 {We propose randomized least-squares value iteration (RLSVI) – a new reinforcement learning algorithm designed to explore and generalize efficiently via linearly parameterized value functions. We explain why versions of least-squares value iteration that use Boltzmann or epsilon-greedy exploration can be highly inefficient, and we present computational results that demonstrate dramatic efficiency gains enjoyed by RLSVI. Further, we establish an upper bound on the expected regret of RLSVI that demonstrates near-optimality in a tabula rasa learning context. More broadly, our results suggest that randomized value functions offer a promising approach to tackling a critical challenge in reinforcement learning: synthesizing efficient exploration and effective generalization.}
+}
+
+
+
+
+@InProceedings{osband2017why,
+  title = 	 {Why is Posterior Sampling Better than Optimism for Reinforcement Learning?},
+  author =       {Ian Osband and Van Roy, Benjamin},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {2701--2710},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/osband17a/osband17a.pdf},
+  url = 	 {https://proceedings.mlr.press/v70/osband17a.html},
+  abstract = 	 {Computational results demonstrate that posterior sampling for reinforcement learning (PSRL) dramatically outperforms existing algorithms driven by optimism, such as UCRL2. We provide insight into the extent of this performance boost and the phenomenon that drives it. We leverage this insight to establish an $\tilde{O}(H\sqrt{SAT})$ Bayesian regret bound for PSRL in finite-horizon episodic Markov decision processes. This improves upon the best previous Bayesian regret bound of $\tilde{O}(H S \sqrt{AT})$ for any reinforcement learning algorithm. Our theoretical results are supported by extensive empirical evaluation.}
+}
+
+@InProceedings{bai21principled,
+  title = 	 {Principled Exploration via Optimistic Bootstrapping and Backward Induction},
+  author =       {Bai, Chenjia and Wang, Lingxiao and Han, Lei and Hao, Jianye and Garg, Animesh and Liu, Peng and Wang, Zhaoran},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {577--587},
+  year = 	 {2021},
+  editor = 	 {Meila, Marina and Zhang, Tong},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {18--24 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v139/bai21d/bai21d.pdf},
+  url = 	 {https://proceedings.mlr.press/v139/bai21d.html},
+  abstract = 	 {One principled approach for provably efficient exploration is incorporating the upper confidence bound (UCB) into the value function as a bonus. However, UCB is specified to deal with linear and tabular settings and is incompatible with Deep Reinforcement Learning (DRL). In this paper, we propose a principled exploration method for DRL through Optimistic Bootstrapping and Backward Induction (OB2I). OB2I constructs a general-purpose UCB-bonus through non-parametric bootstrap in DRL. The UCB-bonus estimates the epistemic uncertainty of state-action pairs for optimistic exploration. We build theoretical connections between the proposed UCB-bonus and the LSVI-UCB in linear setting. We propagate future uncertainty in a time-consistent manner through episodic backward update, which exploits the theoretical advantage and empirically improves the sample-efficiency. Our experiments in MNIST maze and Atari suit suggest that OB2I outperforms several state-of-the-art exploration approaches.}
+}
+
+
+
+@misc{xiong2021nearoptimal,
+      title={Near-Optimal Randomized Exploration for Tabular MDP}, 
+      author={Zhihan Xiong and Ruoqi Shen and Qiwen Cui and Simon S. Du},
+      year={2021},
+      eprint={2102.09703},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@inproceedings{obsband2013more,
+ author = {Osband, Ian and Russo, Daniel and Van Roy, Benjamin},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {C. J. C. Burges and L. Bottou and M. Welling and Z. Ghahramani and K. Q. Weinberger},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {(More) Efficient Reinforcement Learning via Posterior Sampling},
+ url = {https://proceedings.neurips.cc/paper/2013/file/6a5889bb0190d0211a991f47bb19a777-Paper.pdf},
+ volume = {26},
+ year = {2013}
+}
+
+@inproceedings{agrawal2020posterior,
+ author = {Agrawal, Shipra and Jia, Randy},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {I. Guyon and U. V. Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Optimistic posterior sampling for reinforcement learning: worst-case regret bounds},
+ url = {https://proceedings.neurips.cc/paper/2017/file/3621f1454cacf995530ea53652ddf8fb-Paper.pdf},
+ volume = {30},
+ year = {2017}
+}
+
+
+
+@inproceedings{osband18randomized,
+ author = {Osband, Ian and Aslanides, John and Cassirer, Albin},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Randomized Prior Functions for Deep Reinforcement Learning},
+ url = {https://proceedings.neurips.cc/paper/2018/file/5a7b238ba0f6502e5d6be14424b20ded-Paper.pdf},
+ volume = {31},
+ year = {2018}
+}
+
+
+
+@InProceedings{kveton19a,
+  title = 	 {Garbage In, Reward Out: Bootstrapping Exploration in Multi-Armed Bandits},
+  author =       {Kveton, Branislav and Szepesvari, Csaba and Vaswani, Sharan and Wen, Zheng and Lattimore, Tor and Ghavamzadeh, Mohammad},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  pages = 	 {3601--3610},
+  year = 	 {2019},
+  editor = 	 {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--15 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v97/kveton19a/kveton19a.pdf},
+  url = 	 {https://proceedings.mlr.press/v97/kveton19a.html},
+  abstract = 	 {We propose a bandit algorithm that explores by randomizing its history of rewards. Specifically, it pulls the arm with the highest mean reward in a non-parametric bootstrap sample of its history with pseudo rewards. We design the pseudo rewards such that the bootstrap mean is optimistic with a sufficiently high probability. We call our algorithm Giro, which stands for garbage in, reward out. We analyze Giro in a Bernoulli bandit and derive a $O(K \Delta^{-1} \log n)$ bound on its $n$-round regret, where $\Delta$ is the difference in the expected rewards of the optimal and the best suboptimal arms, and $K$ is the number of arms. The main advantage of our exploration design is that it easily generalizes to structured problems. To show this, we propose contextual Giro with an arbitrary reward generalization model. We evaluate Giro and its contextual variant on multiple synthetic and real-world problems, and observe that it performs well.}
+}
+
+
+
+@inproceedings{szita2008,
+author = {Szita, Istv\'{a}n and L\H{o}rincz, Andr\'{a}s},
+title = {The Many Faces of Optimism: A Unifying Approach},
+year = {2008},
+isbn = {9781605582054},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1390156.1390288},
+doi = {10.1145/1390156.1390288},
+abstract = {The exploration-exploitation dilemma has been an intriguing and unsolved problem within the framework of reinforcement learning. "Optimism in the face of uncertainty" and model building play central roles in advanced exploration methods. Here, we integrate several concepts and obtain a fast and simple algorithm. We show that the proposed algorithm finds a near-optimal policy in polynomial time, and give experimental evidence that it is robust and efficient compared to its ascendants.},
+booktitle = {Proceedings of the 25th International Conference on Machine Learning},
+pages = {1048–1055},
+numpages = {8},
+location = {Helsinki, Finland},
+series = {ICML '08}
+}
+
+
+
+@InProceedings{kaufmann12,
+  title = 	 {On Bayesian Upper Confidence Bounds for Bandit Problems},
+  author = 	 {Kaufmann, Emilie and Cappe, Olivier and Garivier, Aurelien},
+  booktitle = 	 {Proceedings of the Fifteenth International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {592--600},
+  year = 	 {2012},
+  editor = 	 {Lawrence, Neil D. and Girolami, Mark},
+  volume = 	 {22},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {La Palma, Canary Islands},
+  month = 	 {21--23 Apr},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v22/kaufmann12/kaufmann12.pdf},
+  url = 	 {https://proceedings.mlr.press/v22/kaufmann12.html},
+  abstract = 	 {Stochastic bandit problems have been analyzed from two different perspectives: a frequentist view, where the parameter is a deterministic unknown quantity, and a Bayesian approach, where the parameter is drawn from a prior distribution.  We show in this paper that methods derived from this second perspective prove optimal when evaluated using the frequentist cumulated regret as a measure of performance. We give a general formulation for a class of Bayesian index policies that rely on quantiles of the posterior distribution. For binary bandits, we prove that the corresponding algorithm, termed Bayes-UCB, satisfies finite-time regret bounds that imply its asymptotic optimality.  More generally, Bayes-UCB appears as an unifying framework for several variants of the UCB algorithm addressing different bandit problems (parametric multi-armed bandits, Gaussian bandits with unknown mean and variance, linear bandits). But the generality of the Bayesian approach makes it possible to address more challenging models. In particular, we show how to handle linear bandits with sparsity constraints by resorting to Gibbs sampling.}
+}
+
+
+@article{rubin1981bayesian,
+  title={The bayesian bootstrap},
+  author={Rubin, Donald B},
+  journal={The annals of statistics},
+  pages={130--134},
+  year={1981},
+  publisher={JSTOR}
+}
+
+
+
+@article{hjort1991bayesian,
+  title={Bayesian and empirical Bayesian bootstrapping},
+  author={Hjort, Nils Lid},
+  journal={Preprint series. Statistical Research Report http://urn. nb. no/URN: NBN: no-23420},
+  year={1991},
+  publisher={Matematisk Institutt, Universitetet i Oslo}
+}
+
+
+@inproceedings{baudry2021optimality,
+  title={From Optimality to Robustness: Dirichlet Sampling Strategies in Stochastic Bandits},
+  author={Baudry, Dorian and Saux, Patrick and Maillard, Odalric-Ambrym},
+  booktitle={Neurips 2021},
+  year={2021}
+}
+
+
+@InProceedings{riou20a,
+  title = 	 {Bandit Algorithms Based on Thompson Sampling for Bounded Reward Distributions},
+  author =       {Riou, Charles and Honda, Junya},
+  booktitle = 	 {Proceedings of the 31st International Conference  on Algorithmic Learning Theory},
+  pages = 	 {777--826},
+  year = 	 {2020},
+  editor = 	 {Kontorovich, Aryeh and Neu, Gergely},
+  volume = 	 {117},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {08 Feb--11 Feb},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v117/riou20a/riou20a.pdf},
+  url = 	 {https://proceedings.mlr.press/v117/riou20a.html},
+  abstract = 	 {We focus on a classic reinforcement learning problem, called a multi-armed bandit, and more specifically in the stochastic setting with reward distributions bounded in $[0,1]$. For this model, an optimal problem-dependent asymptotic regret lower bound has been derived. However, the existing algorithms achieving this regret lower bound all require to solve an optimization problem at each step, inducing a large complexity. In this paper, we propose two new algorithms, which we prove to achieve the problem-dependent asymptotic regret lower bound. The first one, which we call Multinomial TS, is an adaptation of Thompson Sampling for Bernoulli rewards to multinomial reward distributions whose support is included in $\{0, \frac{1}{M}, …, 1\}$. This algorithm achieves the regret lower bound in the case of multinomial distributions with the aforementioned support, and it can be easily generalized to bounded reward distributions in $[0, 1]$ by randomly rounding the observed rewards. The second algorithm we introduce, which we call Non-parametric TS, is a randomized algorithm but not based on the posterior sampling in the strict sense. At each step, it computes an average of the observed rewards with random weight. Not only is it asymptotically optimal, but also it performs very well even for small horizons.}
+}
+
+
+
+@inproceedings{dann2019policy,
+  title={Policy certificates: Towards accountable reinforcement learning},
+  author={Dann, Christoph and Li, Lihong and Wei, Wei and Brunskill, Emma},
+  booktitle={International Conference on Machine Learning},
+  pages={1507--1516},
+  year={2019},
+  organization={PMLR}
+}
+
+
+@inproceedings{talebi2018variance,
+  title={Variance-Aware Regret Bounds for Undiscounted Reinforcement Learning in MDPs},
+  author={Talebi, Mohammad Sadegh and Maillard, Odalric-Ambrym},
+  booktitle={Algorithmic Learning Theory},
+  pages={770--805},
+  year={2018}
+}
+
+
+@inproceedings{sidford2018near,
+author = {Sidford, Aaron and Wang, Mengdi and Wu, Xian and Yang, Lin F. and Ye, Yinyu},
+booktitle = {Neural Information Processing Systems},
+title = {{Near-optimal time and sample complexities for solving discounted Markov decision process with a generative model}},
+url = {https://arxiv.org/pdf/1806.01492.pdf},
+year = {2018}
+}
+
+
+
+
+
+@inproceedings{agarwal2020model,
+author = {Agarwal, Alekh and Kakade, Sham and Yang, Lin F},
+booktitle = {Conference on Learning Theory},
+title = {{Model-based reinforcement learning with a generative model is minimax optimal}},
+url = {https://arxiv.org/pdf/1906.03804.pdf},
+year = {2020}
+}
+
+
+
+@inproceedings{bartlett2009regal,
+author = {Bartlett, Peter L. and Tewari, Ambuj},
+booktitle = {Uncertainty in Artificial Intelligence},
+keywords = {bandits},
+mendeley-tags = {bandits},
+title = {{REGAL: A regularization based algorithm for reinforcement learning in weakly communicating MDPs}},
+url = {https://arxiv.org/pdf/1205.2661.pdf},
+year = {2009}
+}
+
+
+
+@inproceedings{auer2009near,
+author = {Auer, Peter and Jaksch, Thomas and Ortner, Ronald},
+booktitle = {Neural Information Processing Systems},
+title = {{Near-optimal regret bounds for reinforcement learning}},
+url = {https://papers.nips.cc/paper/3401-near-optimal-regret-bounds-for-reinforcement-learning.pdf},
+year = {2009}
+}
+
+
+
+@article{azar2013minimax,
+abstract = {We consider the problems of learning the optimal action-value function and the optimal policy in discounted-reward Markov decision processes (MDPs). We prove new PAC bounds on the sample-complexity of two well-known model-based reinforcement learning (RL) algorithms in the presence of a generative model of the MDP: value iteration and policy iteration. The first result indicates that for an MDP with N state-action pairs and the discount factor $\gamma${\^{a}}̂̂[0,1) only O(Nlog(N/$\delta$)/((1-$\gamma$)3 $\epsilon$ 2)) state-transition samples are required to find an $\epsilon$-optimal estimation of the action-value function with the probability (w.p.) 1-$\delta$. Further, we prove that, for small values of $\epsilon$, an order of O(Nlog(N/$\delta$)/((1-$\gamma$)3 $\epsilon$ 2)) samples is required to find an $\epsilon$-optimal policy w.p. 1-$\delta$. We also prove a matching lower bound of $\Theta$(Nlog(N/$\delta$)/((1-$\gamma$)3 $\epsilon$ 2)) on the sample complexity of estimating the optimal action-value function with $\epsilon$ accuracy. To the best of our knowledge, this is the first minimax result on the sample complexity of RL: the upper bounds match the lower bound in terms of N, $\epsilon$, $\delta$ and 1/(1-$\gamma$) up to a constant factor. Also, both our lower bound and upper bound improve on the state-of-the-art in terms of their dependence on 1/(1-$\gamma$). {\textcopyright} 2013 The Author(s).},
+author = {Azar,  Mohammad Gheshlaghi and Munos, R{\'{e}}mi and Kappen, Hilbert J.},
+file = {:Users/valkom/Library/Application Support/Mendeley Desktop/Downloaded/Gheshlaghi Azar et al. - 2013 - Minimax PAC bounds on the sample complexity of reinforcement learning with a generative model bounds on.pdf:pdf},
+journal = {Machine Learning},
+number = {3},
+pages = {325--349},
+title = {{Minimax PAC bounds on the sample complexity of reinforcement learning with a generative model}},
+url = {https://hal.archives-ouvertes.fr/hal-00831875},
+volume = {91},
+year = {2013}
+}
+
+
+@article{zhang2020task-agnostic,
+author = {Zhang, Xuezhou and Ma, Yuzhe and Singla, Adish},
+journal = {arXiv preprint: arXiv:2006.09497},
+title = {{Task-agnostic exploration in reinforcement learning}},
+url = {https://arxiv.org/pdf/2006.09497.pdf},
+year = {2020}
+}
+
+
+@article{wang2020on,
+archivePrefix = {arXiv},
+arxivId = {cs.LG/2006.11274},
+author = {Wang, Ruosong and Du, Simon S and Yang, Lin F and Salakhutdinov, Ruslan},
+eprint = {2006.11274},
+journal = {arXiv preprint arXiv:2006.11274},
+primaryClass = {cs.LG},
+title = {{On reward-free reinforcement learning with linear function approximation}},
+url = {https://arxiv.org/pdf/2006.11274.pdf},
+year = {2020}
+}
+
+
+
+@article{garivier2019explore,
+author = {Garivier, Aur{\'{e}}lien and M{\'{e}}nard, Pierre and Stoltz, Gilles},
+journal = {Mathematics of Operations Research},
+number = {2},
+pages = {377--399},
+title = {{Explore first, exploit next: The true shape of regret in bandit problems}},
+url = {https://arxiv.org/pdf/1602.07182.pdf},
+volume = {44},
+year = {2019}
+}
+
+
+
+@book{boucheron2013concentration,
+author = {Boucheron, St{\'{e}}phane and Lugosi, G{\'{a}}bor and Massart, Pascal},
+publisher = {Oxford University Press},
+title = {{Concentration inequalities}},
+url = {https://www.hse.ru/data/2016/11/24/1113029206/Concentration inequalities.pdf},
+year = {2013}
+}
+
+
+@inproceedings{jonsson2020planning,
+author = {Jonsson, Anders and Kaufmann, Emilie and M\'{e}nard, Pierre and Domingues, Omar Darwiche and Leurent, Edouard and Valko, Michal},
+title = {Planning in Markov Decision Processes with Gap-Dependent Sample Complexity},
+year = {2020},
+isbn = {9781713829546},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {We propose MDP-GapE, a new trajectory-based Monte-Carlo Tree Search algorithm for planning in a Markov Decision Process in which transitions have a finite support. We prove an upper bound on the number of calls to the generative model needed for MDP-GapE to identify a near-optimal action with high probability. This problem-dependent sample complexity result is expressed in terms of the sub-optimality gaps of the state-action pairs that are visited during exploration. Our experiments reveal that MDP-GapE is also effective in practice, in contrast with other algorithms with sample complexity guarantees in the fixed-confidence setting, that are mostly theoretical.},
+booktitle = {Proceedings of the 34th International Conference on Neural Information Processing Systems},
+articleno = {106},
+numpages = {11},
+location = {Vancouver, BC, Canada},
+series = {NIPS'20}
+}
+
+
+@inproceedings{domingues2021episodic,
+   author = {Omar Darwiche Domingues and Pierre M{\'e}nard and Emilie Kaufmann and Michal Valko},
+   booktitle = {Algorithmic Learning Theory},
+   title = {Episodic reinforcement learning in finite MDPs: Minimax lower bounds revisited},
+   url = {https://arxiv.org/pdf/2010.03531.pdf},
+   year = {2021},
+}
+
+
+@InProceedings{domingues2020regret,
+  title = 	 {Kernel-Based Reinforcement Learning: A Finite-Time Analysis},
+  author =       {Domingues, Omar Darwiche and Menard, Pierre and Pirotta, Matteo and Kaufmann, Emilie and Valko, Michal},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {2783--2792},
+  year = 	 {2021},
+  editor = 	 {Meila, Marina and Zhang, Tong},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {18--24 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v139/domingues21a/domingues21a.pdf},
+  url = 	 {https://proceedings.mlr.press/v139/domingues21a.html},
+  abstract = 	 {We consider the exploration-exploitation dilemma in finite-horizon reinforcement learning problems whose state-action space is endowed with a metric. We introduce Kernel-UCBVI, a model-based optimistic algorithm that leverages the smoothness of the MDP and a non-parametric kernel estimator of the rewards and transitions to efficiently balance exploration and exploitation. For problems with $K$ episodes and horizon $H$, we provide a regret bound of $\widetilde{O}\left( H^3 K^{\frac{2d}{2d+1}}\right)$, where $d$ is the covering dimension of the joint state-action space. This is the first regret bound for kernel-based RL using smoothing kernels, which requires very weak assumptions on the MDP and applies to a wide range of tasks. We empirically validate our approach in continuous MDPs with sparse rewards.}
+}
+
+
+
+@article{lattimore2016end,
+  title={The end of optimism? an asymptotic analysis of finite-armed linear bandits},
+  author={Lattimore, Tor and Szepesvari, Csaba},
+  journal={arXiv preprint arXiv:1610.04491},
+  year={2016}
+}
+
+
+@InProceedings{kaufmann2020adaptive,
+  title = 	 {Adaptive Reward-Free Exploration},
+  author =       {Kaufmann, Emilie and M{\'e}nard, Pierre and Darwiche Domingues, Omar and Jonsson, Anders and Leurent, Edouard and Valko, Michal},
+  booktitle = 	 {Proceedings of the 32nd International Conference on Algorithmic Learning Theory},
+  pages = 	 {865--891},
+  year = 	 {2021},
+  editor = 	 {Feldman, Vitaly and Ligett, Katrina and Sabato, Sivan},
+  volume = 	 {132},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {16--19 Mar},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v132/kaufmann21a/kaufmann21a.pdf},
+  url = 	 {https://proceedings.mlr.press/v132/kaufmann21a.html},
+  abstract = 	 {Reward-free exploration is a reinforcement learning setting recently studied by (Jin et al. 2020), who address it by running several algorithms with regret guarantees in parallel. In our work, we instead propose a more natural adaptive approach for reward-free exploration which directly reduces upper bounds on the maximum MDP estimation error. We show that, interestingly, our reward-free UCRL algorithm can be seen as a variant of an algorithm by Fiechter from 1994, originally proposed for a different objective that we call best-policy identification. We prove that RF-UCRL needs of order (SAH^4/\epsilon^2)(log(1/\delta) + S) episodes to output, with probability 1-\delta, an \epsilon-approximation of the optimal policy for any reward function. This bound improves over existing sample complexity bounds in both the small \epsilon and the small \delta regimes. We further investigate the relative complexities of reward-free exploration and best policy identification. }
+}
+
+
+
+
+@inproceedings{hazan2019provably,
+author = {Hazan, Elad and Kakade, Sham and Singh, Karan and Soest, Abby Van},
+booktitle = {International Conference on Machine Learning},
+title = {{Provably efficient maximum entropy exploration}},
+url = {https://arxiv.org/pdf/1812.02690.pdf},
+year = {2019}
+}
+
+
+@inproceedings{strehl2006pac,
+  title={PAC model-free reinforcement learning},
+  author={Strehl, Alexander L and Li, Lihong and Wiewiora, Eric and Langford, John and Littman, Michael L},
+  booktitle={Proceedings of the 23rd international conference on Machine learning},
+  pages={881--888},
+  year={2006}
+}
+
+@inproceedings{ostrovski2017count,
+  title={Count-based exploration with neural density models},
+  author={Ostrovski, Georg and Bellemare, Marc G and van den Oord, A{\"a}ron and Munos, R{\'e}mi},
+  booktitle={Proceedings of the 34th International Conference on Machine Learning-Volume 70},
+  pages={2721--2730},
+  year={2017},
+  organization={JMLR. org}
+}
+
+@article{schrittwieser2020mastering,
+  title={Mastering atari, go, chess and shogi by planning with a learned model},
+  author={Schrittwieser, Julian and Antonoglou, Ioannis and Hubert, Thomas and Simonyan, Karen and Sifre, Laurent and Schmitt, Simon and Guez, Arthur and Lockhart, Edward and Hassabis, Demis and Graepel, Thore and others},
+  journal={Nature},
+  volume={588},
+  number={7839},
+  pages={604--609},
+  year={2020},
+  publisher={Nature Publishing Group}
+}
+
+
+@InProceedings{bas2020logistic,
+  title = 	 { Logistic Q-Learning },
+  author =       {Bas-Serrano, Joan and Curi, Sebastian and Krause, Andreas and Neu, Gergely},
+  booktitle = 	 {Proceedings of The 24th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {3610--3618},
+  year = 	 {2021},
+  editor = 	 {Banerjee, Arindam and Fukumizu, Kenji},
+  volume = 	 {130},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--15 Apr},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v130/bas-serrano21a/bas-serrano21a.pdf},
+  url = 	 {https://proceedings.mlr.press/v130/bas-serrano21a.html},
+  abstract = 	 { We propose a new reinforcement learning algorithm derived from a regularized linear-programming formulation of optimal control in MDPs. The method is closely related to the classic Relative Entropy Policy Search (REPS) algorithm of Peters et al. (2010), with the key difference that our method introduces a Q-function that enables efficient exact model-free implementation. The main feature of our algorithm (called QREPS) is a convex loss function for policy evaluation that serves as a theoretically sound alternative to the widely used squared Bellman error. We provide a practical saddle-point optimization method for minimizing this loss function and provide an error-propagation analysis that relates the quality of the individual updates to the performance of the output policy. Finally, we demonstrate the effectiveness of our method on a range of benchmark problems. }
+}
+
+
+@article{hasselt2010double,
+  title={Double Q-learning},
+  author={Hasselt, Hado},
+  journal={Advances in neural information processing systems},
+  volume={23},
+  pages={2613--2621},
+  year={2010}
+}
+
+@inproceedings{van2016deep,
+  title={Deep reinforcement learning with double q-learning},
+  author={Van Hasselt, Hado and Guez, Arthur and Silver, David},
+  booktitle={Proceedings of the AAAI conference on artificial intelligence},
+  volume={30},
+  number={1},
+  year={2016}
+}
+
+
+
+@article{bellemare2013arcade,
+  title={The arcade learning environment: An evaluation platform for general agents},
+  author={Bellemare, Marc G and Naddaf, Yavar and Veness, Joel and Bowling, Michael},
+  journal={Journal of Artificial Intelligence Research},
+  volume={47},
+  pages={253--279},
+  year={2013}
+}
+
+
+@misc{gajane2019autonomous,
+    title={Autonomous exploration for navigating in non-stationary CMPs},
+    author={Pratik Gajane and Ronald Ortner and Peter Auer and Csaba Szepesvari},
+    year={2019},
+    eprint={1910.08446},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+
+@inproceedings{lim2012autonomous,
+  title={Autonomous exploration for navigating in mdps},
+  author={Lim, Shiau Hong and Auer, Peter},
+  booktitle={Conference on Learning Theory},
+  pages={40--1},
+  year={2012}
+}
+
+
+
+@article{cohen2020near,
+  title={Near-optimal Regret Bounds for Stochastic Shortest Path},
+  author={Cohen, Alon and Kaplan, Haim and Mansour, Yishay and Rosenberg, Aviv},
+  journal={arXiv preprint arXiv:2002.09869},
+  year={2020}
+}
+
+@article{tarbouriech2019no,
+  title={No-Regret Exploration in Goal-Oriented Reinforcement Learning},
+  author={Tarbouriech, Jean and Garcelon, Evrard and Valko, Michal and Pirotta, Matteo and Lazaric, Alessandro},
+  journal={arXiv preprint arXiv:1912.03517},
+  year={2019}
+}
+
+
+
+@inproceedings{hren2008optimistic,
+	title = {{Optimistic planning of deterministic systems}},
+	year = {2008},
+	booktitle = {European Workshop on Reinforcement Learning},
+	author = {Hren, Jean-Francois and Munos, Rémi}
+}
+
+@inproceedings{coquelin2007bandit,
+	title = {{Bandit algorithms for tree search}},
+	year = {2007},
+	booktitle = {Uncertainty in Artificial Intelligence},
+	author = {Coquelin, Pierre-Arnaud and Munos, Rémi},
+	url = {https://arxiv.org/pdf/1408.2028.pdf}
+}
+
+@inproceedings{Zanette19Euler,
+  author    = {Andrea Zanette and
+               Emma Brunskill},
+  title     = {Tighter Problem-Dependent Regret Bounds in Reinforcement Learning
+               without Domain Knowledge using Value Function Bounds},
+  booktitle = {Proceedings of the 36th International Conference on Machine Learning,
+               (ICML)},
+  year      = {2019}
+}
+
+@inproceedings{hamrick2019combining,
+title={Combining Q-Learning and Search with Amortized Value Estimates},
+author={Jessica B. Hamrick and Victor Bapst and Alvaro Sanchez-Gonzalez and Tobias Pfaff and Theophane Weber and Lars Buesing and Peter W. Battaglia},
+booktitle={International Conference on Learning Representations},
+year={2020}
+}
+
+@article{kearns02E3,
+  author    = {Michael J. Kearns and
+               Satinder P. Singh},
+  title     = {Near-Optimal Reinforcement Learning in Polynomial Time},
+  journal   = {Machine Learning},
+  volume    = {49},
+  number    = {2-3},
+  pages     = {209--232},
+  year      = {2002}
+}
+
+
+@book{cover2006elements,
+author = {Cover, Thomas M. and Thomas, Joy A.},
+publisher = {John Wiley {\&} Sons},
+title = {{Elements of information theory}},
+url = {https://www.amazon.com/Elements-Information-Theory-Telecommunications-Processing/dp/0471241954},
+year = {2006}
+}
+
+
+@article{de2004self,
+author = {de la Pe{\~{n}}a, Victor H. and Klass, Michael J. and Lai, Tze Leung},
+journal = {Annals of probability},
+pages = {1902--1933},
+title = {{Self-normalized processes: {E}xponential inequalities, moment bounds and iterated logarithm laws}},
+url = {https://arxiv.org/pdf/math/0410102.pdf},
+volume = {32},
+year = {2004}
+}
+
+
+
+
+@inproceedings{garivier2011kl,
+  title={The KL-UCB algorithm for bounded stochastic bandits and beyond},
+  author={Garivier, Aur{\'e}lien and Capp{\'e}, Olivier},
+  booktitle={Proceedings of the 24th annual conference on learning theory},
+  pages={359--376},
+  year={2011}
+}
+
+@Article{KLUCBJournal,
+  Title                    = {{{K}ullback-{L}eibler upper confidence bounds for optimal sequential allocation}},
+  Author                   = {Capp{\'e}, O. and Garivier, A. and Maillard, O-A. and Munos, R. and Stoltz, G.},
+  Journal                  = {Annals of Statistics},
+  Year                     = {2013},
+  Pages                    = {1516--1541},
+  Volume                   = {41(3)}
+}
+
+@inproceedings{dann2017unifying,
+author = {Dann, Christoph and Lattimore, Tor and Brunskill, Emma},
+booktitle = {Neural Information Processing Systems},
+ year={2017},
+title = {{Unifying {PAC} and regret: Uniform {PAC} bounds for episodic reinforcement learning}},
+url = {https://arxiv.org/pdf/1703.07710.pdf}
+}
+
+
+@inproceedings{jin2020reward-free,
+abstract = {Exploration is widely regarded as one of the most challenging aspects of reinforcement learning (RL), with many naive approaches succumbing to exponential sample complexity. To isolate the challenges of exploration, we propose a new "reward-free RL" framework. In the exploration phase, the agent first collects trajectories from an MDP {\$}\backslashmathcal{\{}M{\}}{\$} without a pre-specified reward function. After exploration, it is tasked with computing near-optimal policies under for {\$}\backslashmathcal{\{}M{\}}{\$} for a collection of given reward functions. This framework is particularly suitable when there are many reward functions of interest, or when the reward function is shaped by an external agent to elicit desired behavior. We give an efficient algorithm that conducts {\$}\backslashtilde{\{}\backslashmathcal{\{}O{\}}{\}}(S{\^{}}2A\backslashmathrm{\{}poly{\}}(H)/\backslashepsilon{\^{}}2){\$} episodes of exploration and returns {\$}\backslashepsilon{\$}-suboptimal policies for an arbitrary number of reward functions. We achieve this by finding exploratory policies that visit each "significant" state with probability proportional to its maximum visitation probability under any possible policy. Moreover, our planning procedure can be instantiated by any black-box approximate planner, such as value iteration or natural policy gradient. We also give a nearly-matching {\$}\backslashOmega(S{\^{}}2AH{\^{}}2/\backslashepsilon{\^{}}2){\$} lower bound, demonstrating the near-optimality of our algorithm in this setting.},
+archivePrefix = {arXiv},
+arxivId = {2002.02794},
+author = {Jin, Chi and Krishnamurthy, Akshay and Simchowitz, Max and Yu, Tiancheng},
+booktitle = {International Conference on Machine Learning},
+eprint = {2002.02794},
+file = {:Users/valkom/Library/Application Support/Mendeley Desktop/Downloaded/Jin et al. - 2020 - Reward-Free Exploration for Reinforcement Learning.pdf:pdf},
+title = {{Reward-free exploration for reinforcement learning}},
+url = {http://arxiv.org/abs/2002.02794},
+year = {2020}
+}
+
+
+@inproceedings{jin2018is,
+author = {Jin, Chi and Allen-Zhu, Zeyuan and Bubeck, S{\'{e}}bastien and Jordan, Michael I.},
+booktitle = {Neural Information Processing Systems},
+file = {:Users/valkom/Library/Application Support/Mendeley Desktop/Downloaded/Jin et al. - 2018 - Is Q-learning Provably Efficient.pdf:pdf},
+title = {{Is Q-learning provably efficient?}},
+url = {https://arxiv.org/pdf/1807.03765.pdf},
+year = {2018}
+}
+
+
+
+
+@article{garivier2018kl,
+  title={KL-UCB-switch: optimal regret bounds for stochastic bandits from both a distribution-dependent and a distribution-free viewpoints},
+  author={Garivier, Aur{\'e}lien and Hadiji, H{\'e}di and Menard, Pierre and Stoltz, Gilles},
+  journal={arXiv preprint arXiv:1805.05071},
+  year={2018}
+}
+
+@book{puterman1994markov,
+address = {New York, NY},
+author = {Puterman, Martin L.},
+howpublished = {Hardcover},
+isbn = {0471619779},
+publisher = {John Wiley {\&} Sons},
+title = {{Markov decision processes: Discrete stochastic dynamic programming}},
+url = {https://onlinelibrary.wiley.com/doi/book/10.1002/9780470316887},
+year = {1994}
+}
+
+
+
+@Book{SurveyRemiMCTS,
+  Title                    = {From bandits to Monte-Carlo Tree Search: The optimistic principle applied to optimization and planning.},
+  Author                   = {Munos, R.},
+  Publisher                = {Foundations and Trends in Machine Learning},
+  Year                     = {2014},
+  Number                   = {1},
+  Volume                   = {7}
+}
+
+@inproceedings{SmoothCruiser19,
+  author    = {Jean{-}Bastien Grill and
+               Omar Darwiche Domingues and
+               Pierre M{\'{e}}nard and
+               R{\'{e}}mi Munos and
+               Michal Valko},
+  title     = {Planning in entropy-regularized Markov decision processes and games},
+  booktitle = {Neural Information Processing Systems},
+  year      = {2019}
+}
+
+@inproceedings{Huang17StructuredBAI,
+  author    = {Ruitong Huang and
+               Mohammad M. Ajallooeian and
+               Csaba Szepesv{\'{a}}ri and
+               Martin M{\"{u}}ller},
+  title     = {Structured Best Arm Identification with Fixed Confidence},
+  booktitle = {International Conference on Algorithmic Learning Theory (ALT)},
+  year      = {2017}
+}
+
+
+@InProceedings{Kocsis06UCT,
+  Title                    = {Bandit Based Monte-carlo Planning},
+  Author                   = {Kocsis, Levente and Szepesv\'{a}ri, Csaba},
+  Booktitle                = {Proceedings of the 17th European Conference on Machine Learning (ECML)},
+  Year                     = {2006}
+}
+
+
+@article{even2006action,
+author = {Even-Dar, Eyal and Mannor, Shie and Mansour, Yishay},
+journal = {Journal of Machine Learning Research},
+pages = {1079--1105},
+title = {{Action elimination and stopping conditions for the multi-armed bandit and reinforcement learning problems}},
+url = {https://jmlr.csail.mit.edu/papers/volume7/evendar06a/evendar06a.pdf},
+volume = {7},
+year = {2006}
+}
+
+
+@book{BanditBook,
+author = {Lattimore, Tor and Szepesvari, Csaba},
+publisher = {Cambridge University Press},
+title = {{Ba
+@inproceedinndit Algorithms}},
+year = {2019}
+}
+
+@Article{Aueral02,
+  Title                    = {{Finite-time analysis of the multiarmed bandit problem}},
+  Author                   = {Auer, P. and Cesa-Bianchi, N. and Fischer, P.},
+  Journal                  = {Machine Learning},
+  Year                     = {2002},
+  Number                   = {2},
+  Pages                    = {235--256},
+  Volume                   = {47},
+  Publisher                = {Springer}
+}
+
+@article{jaksch2010near,
+author = {Jaksch, Thomas and Ortner, Ronald and Auer, Peter},
+journal = {Journal of Machine Learning Research},
+keywords = {bandits},
+mendeley-tags = {bandits},
+pages = {1563--1600},
+title = {{Near-optimal regret bounds for reinforcement learning}},
+url = {http://www.jmlr.org/papers/volume11/jaksch10a/jaksch10a.pdf},
+volume = {99},
+year = {2010}
+}
+
+@inproceedings{Tolpin12SRMCTS,
+  author    = {David Tolpin and
+               Solomon Eyal Shimony},
+  title     = {{MCTS} Based on Simple Regret},
+  booktitle = {Proceedings of the Twenty-Sixth {AAAI} Conference on Artificial Intelligence,
+               July 22-26, 2012, Toronto, Ontario, Canada.},
+  year      = {2012}
+}
+
+@inproceedings{Pepels14SimpleMCTS,
+  author    = {Tom Pepels and
+               Tristan Cazenave and
+               Mark H. M. Winands and
+               Marc Lanctot},
+  title     = {Minimizing Simple and Cumulative Regret in Monte-Carlo Tree Search},
+  booktitle = {Third Workshop on Computer Games (CGW)},
+  pages     = {1--15},
+  year      = {2014}
+}
+
+@article{Feldman14BRUE,
+  author    = {Zohar Feldman and
+               Carmel Domshlak},
+  title     = {Simple Regret Optimization in Online Planning for Markov Decision
+               Processes},
+  journal   = {Journal of Artifial Intelligence Research},
+  volume    = {51},
+  pages     = {165--205},
+  year      = {2014}
+}
+
+
+
+@article{Kearns02SS,
+  author    = {Michael J. Kearns and
+               Yishay Mansour and
+               Andrew Y. Ng},
+  title     = {A Sparse Sampling Algorithm for Near-Optimal Planning in Large Markov
+               Decision Processes},
+  journal   = {Machine Learning},
+  volume    = {49},
+  number    = {2-3},
+  pages     = {193--208},
+  year      = {2002}
+}
+
+@InProceedings{STOP14,
+  Title                    = {Optimistic Planning in Markov Decision Processes using a generative model},
+  Author                   = {Szorenyi, B. and Kedenburg, G. and Munos, R.},
+  Booktitle                = {Advances in Neural Information Processing Systems (NIPS)},
+  Year                     = {2014}
+}
+
+@Book{SuttonBarto98,
+  Title                    = {Reinforcement Learning: an Introduction},
+  Author                   = {Sutton, R. and Barto, A.},
+  Publisher                = {MIT press},
+  Year                     = {1998},
+
+  Owner                    = {emilie},
+  Timestamp                = {2016.11.07}
+}
+
+
+@article{AlphaZero,
+  author    = {David Silver and
+               Thomas Hubert and
+               Julian Schrittwieser and
+               Ioannis Antonoglou and
+               Matthew Lai and
+               Arthur Guez and
+               Marc Lanctot and
+               Laurent Sifre and
+               Dharshan Kumaran and
+               Thore Graepel and
+               Timothy P. Lillicrap and
+               Karen Simonyan and
+               Demis Hassabis},
+  title     = {A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play},
+  journal   = {Science},
+  volume    = {362},
+  issue = {6419},
+  page = {1140-1144},
+  year      = {2018},
+}
+
+@inproceedings{dann2015sample,
+author = {Dann, Christoph and Brunskill, Emma},
+booktitle = {Neural Information Processing Systems},
+title = {{Sample complexity of episodic fixed-horizon reinforcement learning}},
+url = {https://arxiv.org/pdf/1510.08906.pdf},
+year = {2015}
+}
+
+@article{MuZero,
+  author    = {Julian Schrittwieser and
+               Ioannis Antonoglou and
+               Thomas Hubert and
+               Karen Simonyan and
+               Laurent Sifre and
+               Simon Schmitt and
+               Arthur Guez and
+               Edward Lockhart and
+               Demis Hassabis and
+               Thore Graepel and
+               Timothy P. Lillicrap and
+               David Silver},
+  title     = {Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model},
+  journal   = {arXiv:1911.08265},
+  year      = {2019}
+}
+
+
+@Article{SurveyMCTS12,
+  Title                    = {A Survey of Monte Carlo Tree Search Methods},
+  Author                   = {Browne, C. and Powley, E. and Whitehouse, D. and Lucas, S. and Cowling, P. and Rohlfshagen, P. and Tavener, S. and Perez, D. and Samothrakis, S. and Colton, S.},
+  Journal                  = {IEEE Transactions on Computational Intelligence and AI in games,},
+  Year                     = {2012},
+  Number                   = {1},
+  Pages                    = {1-49},
+  Volume                   = {4}
+}
+
+
+@InProceedings{TrailBlazer16,
+  Title                    = {Blazing the trails before beating the path: Sample-efficient Monte-Carlo planning},
+  Author                   = {Grill, J.-B. and Valko, M. and Munos, R.},
+  Booktitle                = {Neural Information Processing Systems (NIPS)},
+  Year                     = {2016}
+}
+
+
+
+@inproceedings{gabillon2012best,
+  title={Best arm identification: A unified approach to fixed budget and fixed confidence},
+  author={Gabillon, Victor and Ghavamzadeh, Mohammad and Lazaric, Alessandro},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={3212--3220},
+  year={2012}
+}
+
+
+
+@inproceedings{azar2017minimax,
+archivePrefix = {arXiv},
+arxivId = {arXiv:1703.05449v2},
+author = {Azar, Mohammad Gheshlaghi and Osband, Ian and Munos, R{\'{e}}mi},
+booktitle = {International Conference on Machine Learning},
+eprint = {arXiv:1703.05449v2},
+file = {:Users/valkom/Library/Application Support/Mendeley Desktop/Downloaded/Azar, Osband, Munos - 2017 - Minimax regret bounds for reinforcement learning.pdf:pdf},
+title = {{Minimax regret bounds for reinforcement learning}},
+url = {https://arxiv.org/pdf/1703.05449.pdf},
+year = {2017}
+}
+
+
+
+@inproceedings{azar2012on,
+author = {Azar, Mohammad Gheshlaghi and Munos, R{\'{e}}mi and Kappen, Bert},
+booktitle = {International Conference on Machine Learning},
+title = {{On the sample complexity of reinforcement learning with a generative model}},
+url = {https://arxiv.org/pdf/1206.6461.pdf},
+year = {2012}
+}
+
+
+@inproceedings{kearns1998finite-sample,
+author = {Kearns, Michael J. and Singh, Satinder P.},
+booktitle = {Neural Information Processing Systems},
+title = {{Finite-sample convergence rates for Q-learning and indirect algorithms}},
+url = {http://papers.neurips.cc/paper/1531-finite-sample-convergence-rates-for-q-learning-and-indirect-algorithms.pdf},
+year = {1998}
+}
+
+
+
+@inproceedings{fiechter1994efficient,
+author = {Fiechter, Claude-Nicolas},
+booktitle = {Conference on Learning Theory},
+title = {{Efficient reinforcement learning}},
+url = {http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=7F5F8FCD1AA7ED07356410DDD5B384FE?doi=10.1.1.49.8652\&rep=rep1\&type=pdf},
+year = {1994}
+}
+
+@inproceedings{Fiechter97,
+  author    = {Claude{-}Nicolas Fiechter},
+  title     = {Expected Mistake Bound Model for On-Line Reinforcement Learning},
+  booktitle = {Proceedings of the Fourteenth International Conference on Machine Learning (ICML)},
+  year      = {1997}
+}
+
+@phdthesis{kakade2013on,
+author = {Kakade, Sham},
+school = {University College London},
+title = {{On the sample complexity of reinforcement learning}},
+url = {https://homes.cs.washington.edu/~sham/papers/thesis/sham_thesis.pdf},
+year = {2003}
+}
+
+
+
+@InProceedings{filippi2010optimism,
+  Title                    = {{Optimism in Reinforcement Learning and {K}ullback-{L}eibler Divergence}},
+  Author                   = {Filippi, S. and Capp{\'e}, O. and Garivier, A.},
+  Booktitle                = {{Allerton Conference on Communication, Control, and Computing}},
+  Year                     = {2010},
+}
+
+@article{Brafman02RMAX,
+  author    = {Ronen I. Brafman and
+               Moshe Tennenholtz},
+  title     = {{R-MAX} - {A} General Polynomial Time Algorithm for Near-Optimal Reinforcement
+               Learning},
+  journal   = {Journal of Machine Learning Research},
+  volume    = {3},
+  pages     = {213--231},
+  year      = {2002}
+}
+
+@inproceedings{Strehl06DelayedQL,
+  author    = {Alexander L. Strehl and
+               Lihong Li and
+               Eric Wiewiora and
+               John Langford and
+               Michael L. Littman},
+  title     = {{PAC} model-free reinforcement learning},
+  booktitle = {Proceedings of the Twenty-Third International Conference on Machine Learning (ICML},
+  year      = {2006}
+}
+
+@article{Strehl08MBIE,
+  author    = {Alexander L. Strehl and
+               Michael L. Littman},
+  title     = {An analysis of model-based Interval Estimation for Markov Decision
+               Processes},
+  journal   = {Journal of Computer and System Sciences},
+  volume    = {74},
+  number    = {8},
+  pages     = {1309--1331},
+  year      = {2008}
+}
+
+@inproceedings{bubeck2010open,
+  title={Open Loop Optimistic Planning},
+  author={Bubeck, S and Munos, R},
+  booktitle={Conference on Learning Theory},
+  year={2010}
+}
+
+
+@inproceedings{leurent2019practical,
+	title={Practical Open-Loop Optimistic Planning},
+	author={Edouard Leurent and Odalric-Ambrym Maillard},
+	year={2019},
+	booktitle={Proceedings of the 19th European Conference on Machine Learning and Principles and Practice (ECML-PKDD)}
+}
+
+@inproceedings{busoniu2012optimistic,
+  title={Optimistic planning for Markov decision processes},
+  author={Busoniu, Lucian and Munos, R{\'e}mi},
+  booktitle={Artificial Intelligence and Statistics},
+  pages={182--189},
+  year={2012}
+}
+
+@incollection{NIPS2015_5668,
+title = {Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning},
+author = {Mohamed, Shakir and Jimenez Rezende, Danilo},
+booktitle = {Advances in Neural Information Processing Systems 28},
+editor = {C. Cortes and N. D. Lawrence and D. D. Lee and M. Sugiyama and R. Garnett},
+pages = {2125--2133},
+year = {2015},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/5668-variational-information-maximisation-for-intrinsically-motivated-reinforcement-learning.pdf}
+}
+
+@misc{montufar2016information,
+    title={Information Theoretically Aided Reinforcement Learning for Embodied Agents},
+    author={Guido Montufar and Keyan Ghazi-Zahedi and Nihat Ay},
+    year={2016},
+    eprint={1605.09735},
+    archivePrefix={arXiv},
+    primaryClass={cs.AI}
+}
+
+@article {PMID:22791268,
+	Title = {An information-theoretic approach to curiosity-driven reinforcement learning},
+	Author = {Still, Susanne and Precup, Doina},
+	DOI = {10.1007/s12064-011-0142-z},
+	Number = {3},
+	Volume = {131},
+	Month = {September},
+	Year = {2012},
+	Journal = {Theory in biosciences = Theorie in den Biowissenschaften},
+	ISSN = {1431-7613},
+	Pages = {139—148},
+	URL = {https://doi.org/10.1007/s12064-011-0142-z},
+}
+
+@incollection{NIPS2004_2552,
+title = {Intrinsically Motivated Reinforcement Learning},
+author = {Nuttapong Chentanez and Andrew G. Barto and Satinder P. Singh},
+booktitle = {Advances in Neural Information Processing Systems 17},
+editor = {L. K. Saul and Y. Weiss and L. Bottou},
+pages = {1281--1288},
+year = {2005},
+publisher = {MIT Press},
+url = {http://papers.nips.cc/paper/2552-intrinsically-motivated-reinforcement-learning.pdf}
+}
+
+@inproceedings{zanette2019tighter,
+author = {Zanette, Andrea and Brunskill, Emma},
+booktitle = {International Conference on Machine Learning},
+title = {{Tighter problem-dependent regret bounds in reinforcement learning without domain knowledge using value function bounds}},
+url = {https://arxiv.org/pdf/1901.00210.pdf},
+year = {2019}
+}
+
+@book{Boucheron2013,
+	TITLE = {{Concentration inequalities : a non asymptotic theory of independence}},
+	AUTHOR = {Boucheron, St{\'e}phane and Lugosi, Gabor and Massart, Pascal},
+	URL = {https://hal.inria.fr/hal-00942704},
+	PUBLISHER = {{Oxford University Press}},
+	PAGES = {481},
+	YEAR = {2013},
+	HAL_ID = {hal-00942704},
+	HAL_VERSION = {v1},
+}
+
+@book{durrett2010probability,
+author = {Durrett, Rick},
+edition = {4},
+isbn = {978-0-521-76539-8},
+publisher = {Cambridge University Press},
+series = {Cambridge Series in Statistical and Probabilistic Mathematics},
+title = {{Probability: Theory and Examples}},
+url = {https://services.math.duke.edu/{~}rtd/PTE/PTE5{\_}011119.pdf},
+year = {2010}
+}
+
+
+
+@article{lasserre2020simple,
+author = {Lasserre, Jean-Bernard},
+year = {2020},
+month = {08},
+pages = {},
+title = {Simple formula for integration of polynomials on a simplex},
+volume = {61},
+journal = {BIT Numerical Mathematics},
+doi = {10.1007/s10543-020-00828-x}
+}
+
+@phdthesis{dirksen2015sections, title={Sections of simplices and cylinders: Volume formulas and estimates}, url={https://macau.uni-kiel.de/receive/diss_mods_00018308}, abstractNote={We investigate sections of simplices and generalized cylinders. We are interested in the volume of sections of these bodies with affine subspaces and give formulas and estimates for these volumes. For the regular n-simplex we state a general formula to compute the volume of the intersection with some k-dimensional subspace. A formula for central hyperplane sections was given by S. Webb. He also showed that the hyperplane through the centroid containing n-1 vertices gives the maximal volume. We generalize the formula to arbitrary dimensional sections that do not necessarily have to contain the centroid. And we show that, for a prescribed small distance of a hyperplane to the centroid, still the hyperplane containing n-1 vertices is volume maximizing. The proof also yields a new and short argument for Webb’s result. The minimal hyperplane section is conjectured to be the one parallel to a face. We show that this hyperplane section is indeed minimal for dimensions n=2,3,4 and that it is a local minimum in general. Using results by Brehm e.a. we compute the average hyperplane section volume. For k-dimensional sections we give an upper bound. Finally we modify our volume formula to compute the section volume of irregular simplices. As an application we show that in odd dimensions larger than 4 there exist irregular simplices whose maximal section is not a face. A generalized cylinder is the Cartesian product of a n-dimensional cube and a m-dimensional ball of radius r. We study the behavior of the hyperplane section volume depending on the radius of the cylinder. First we show for the 3-dimensional cylinder that always a truncated ellipse gives the maximal volume. This is done by elementary geometric considerations and calculus. For the generalized cylinder we use the Fourier transform to derive an explicit formula. Then we estimate this by Hölder’s inequality. Finally it remains to prove an integral inequality that is similar to the inequality of K. Ball for the cube.}, author={Dirksen, Hauke Carl-Erwin}, year={2015} }
+
+
+
+@book {olver1997asymptotics,
+    AUTHOR = {Olver, Frank W. J.},
+     TITLE = {Asymptotics and special functions},
+    SERIES = {AKP Classics},
+      NOTE = {Reprint of the 1974 original [Academic Press, New York;
+              MR0435697 (55 \#8655)]},
+ PUBLISHER = {A K Peters, Ltd., Wellesley, MA},
+      YEAR = {1997},
+     PAGES = {xviii+572},
+      ISBN = {1-56881-069-5},
+   MRCLASS = {41-02 (33Cxx 41A60 65D20)},
+  MRNUMBER = {1429619},
+}
+
+
+@inproceedings{honda2010asymptotically,
+  added-at = {2013-02-19T00:00:00.000+0100},
+  author = {Honda, Junya and Takemura, Akimichi},
+  biburl = {https://www.bibsonomy.org/bibtex/2b5226653f70c05722e4f8529cd73b3c3/dblp},
+  booktitle = {COLT},
+  editor = {Kalai, Adam Tauman and Mohri, Mehryar},
+  ee = {http://colt2010.haifa.il.ibm.com/papers/COLT2010proceedings.pdf#page=75},
+  interhash = {1b5a7fad600cbc3d260b38f5dacc6a63},
+  intrahash = {b5226653f70c05722e4f8529cd73b3c3},
+  isbn = {978-0-9822529-2-5},
+  keywords = {dblp},
+  pages = {67-79},
+  publisher = {Omnipress},
+  timestamp = {2013-02-20T11:39:32.000+0100},
+  title = {An Asymptotically Optimal Bandit Algorithm for Bounded Support Models.},
+  url = {http://dblp.uni-trier.de/db/conf/colt/colt2010.html#HondaT10},
+  year = 2010
+}
+
+
+@article{borwein2007uniform,
+author = {Borwein, Jonathan (Jon) and Chan, O-Yeat},
+year = {2007},
+month = {01},
+pages = {},
+title = {Uniform bounds for the complementary incomplete Gamma function},
+volume = {12},
+journal = {Mathematical Inequalities and Applications},
+doi = {10.7153/mia-12-10}
+}
+
+@article{qi2010bounds,
+author = {Qi, Feng},
+year = {2010},
+month = {03},
+pages = {Article ID 493058, 84 pages},
+title = {Bounds for the Ratio of Two Gamma Functions},
+volume = {2010},
+journal = {Journal of Inequalities and Applications},
+doi = {10.1155/2010/493058}
+}
+
+@book {fedoryuk1977metod,
+    AUTHOR = {Fedoryuk, M. V.},
+     TITLE = {Metod perevala},
+ PUBLISHER = {Izdat. ``Nauka'', Moscow},
+      YEAR = {1977},
+     PAGES = {368},
+  MRCLASS = {30A84 (41A60)},
+  MRNUMBER = {0507923},
+MRREVIEWER = {E. Riekstins},
+}
+
+@book{evans2018measure,
+  title={Measure theory and fine properties of functions},
+  author={Evans, Lawrence C and Garzepy, Ronald F},
+  year={2018},
+  publisher={Routledge}
+}
+
+
+@article{groeneveld1977mode,
+author = { Richard A.   Groeneveld  and  Glen   Meeden },
+title = {The Mode, Median, and Mean Inequality},
+journal = {The American Statistician},
+volume = {31},
+number = {3},
+pages = {120-121},
+year  = {1977},
+publisher = {Taylor & Francis},
+doi = {10.1080/00031305.1977.10479215},
+
+URL = { 
+        https://www.tandfonline.com/doi/abs/10.1080/00031305.1977.10479215
+    
+},
+eprint = { 
+        https://www.tandfonline.com/doi/pdf/10.1080/00031305.1977.10479215
+    
+}
+
+}
+

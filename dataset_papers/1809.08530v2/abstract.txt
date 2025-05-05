@@ -1,0 +1,14 @@
+The Cheap Gradient Principle (Griewank 2008) --- the computational cost of
+computing the gradient of a scalar-valued function is nearly the same (often
+within a factor of $5$) as that of simply computing the function itself --- is
+of central importance in optimization; it allows us to quickly obtain (high
+dimensional) gradients of scalar loss functions which are subsequently used in
+black box gradient-based optimization procedures. The current state of affairs
+is markedly different with regards to computing subderivatives: widely used ML
+libraries, including TensorFlow and PyTorch, do not correctly compute
+(generalized) subderivatives even on simple examples. This work considers the
+question: is there a Cheap Subgradient Principle? Our main result shows that,
+under certain restrictions on our library of nonsmooth functions (standard in
+nonlinear programming), provably correct generalized subderivatives can be
+computed at a computational cost that is within a (dimension-free) factor of
+$6$ of the cost of computing the scalar function itself.

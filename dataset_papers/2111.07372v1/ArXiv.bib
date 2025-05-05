@@ -1,0 +1,1356 @@
+
+% systems using gibbs
+
+@inproceedings{system1,
+author = {Newman, David and Asuncion, Arthur and Smyth, Padhraic and Welling, Max},
+title = {Distributed Inference for Latent {D}irichlet Allocation},
+year = {2007},
+isbn = {9781605603520},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+pages = {1081--1088},
+numpages = {8},
+location = {Vancouver, British Columbia, Canada},
+series = {NIPS'07}
+}
+@MISC{libDAI,
+    author = {Joris M. Mooij and Soon Ong},
+    title = {{libDAI}: A free/open source {C++} library for discrete approximate inference methods},
+    year = {2008}
+}
+
+@article{topicmodel,
+author = {Smola, Alexander and Narayanamurthy, Shravan},
+title = {An Architecture for Parallel Topic Models},
+year = {2010},
+issue_date = {September 2010},
+publisher = {VLDB Endowment},
+volume = {3},
+number = {1--2},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/1920841.1920931},
+doi = {10.14778/1920841.1920931},
+journal = {Proceedings of the VLDB Endowment},
+month = sep,
+pages = {703--710},
+numpages = {8}
+}
+
+@inproceedings{image,
+author = {Theis, Lucas and Sohl-Dickstein, Jascha and Bethge, Matthias},
+title = {Training Sparse Natural Image Models with a Fast {G}ibbs Sampler of an Extended State Space},
+year = {2012},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+booktitle = {Proceedings of the 25th International Conference on Neural Information Processing Systems - Volume 1},
+pages = {1124--1132},
+numpages = {9},
+location = {Lake Tahoe, Nevada},
+series = {NIPS'12}
+}
+
+@inproceedings{Afshar2016ClosedFormGS,
+  title={Closed-Form {G}ibbs Sampling for Graphical Models with Algebraic Constraints},
+  author={H. Afshar and S. Sanner and Christfried Webers},
+  booktitle={AAAI},
+  year={2016}
+}
+
+@inproceedings{Plummer2003JAGSAP,
+  title={{JAGS}: A program for analysis of {B}ayesian graphical models using {G}ibbs sampling},
+  author={M. Plummer},
+  year={2003}
+}
+
+@InProceedings{Pgibbs, 
+title = {Parallel {G}ibbs Sampling: From Colored Fields to Thin Junction Trees}, 
+author = {Gonzalez, Joseph and Low, Yucheng and Gretton, Arthur and Guestrin, Carlos}, 
+booktitle = {Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics}, 
+pages = {324--332}, 
+year = {2011}, 
+
+url = { http://proceedings.mlr.press/v15/gonzalez11a.html } 
+}
+@article{Openbugs,
+title={The {BUGS} project: Evolution, critique and future directions},
+author={D. Lunn and D. Spiegelhalter and A. Thomas and N. Best},
+journal={Stat Med.},
+year={2009 Nov 10},
+volume={28(25):3049-67},
+doi={10.1002/sim.3680} 
+}
+%author={Lunn D, Spiegelhalter D, Thomas A, Best N.},
+
+%mean Estimation
+@article{Lugosi2019MeanEA,
+  title={Mean Estimation and Regression Under Heavy-Tailed Distributions: A Survey},
+  author={G. Lugosi and S. Mendelson},
+  journal={Foundations of Computational Mathematics},
+  year={2019},
+  volume={19},
+  pages={1145-1190}
+}
+@article{MeanEA,
+title={Estimation of the Mean of a Multivariate Normal Distribution},
+author={Charles M. Stein},
+journal={Ann. Statist.},
+volume={9(6)},
+pages={1135-1151}, 
+DOI={10.1214/aos/1176345632}
+}
+
+% smaller than mixing
+@article{White2019CouplingFF,
+  title={Coupling for features of random walks},
+  author={Graham White},
+  journal={arXiv: Probability},
+  year={2019}
+}
+@inproceedings{LEinpractice2017,
+author = {Talvitie, Topi and Niinim\"{a}ki, Teppo and Koivisto, Mikko},
+title = {The Mixing of {M}arkov Chains on Linear Extensions in Practice},
+year = {2017},
+isbn = {9780999241103},
+publisher = {AAAI Press},
+booktitle = {Proceedings of the 26th International Joint Conference on Artificial Intelligence},
+pages = {524--530},
+numpages = {7},
+location = {Melbourne, Australia},
+series = {IJCAI'17}
+}
+
+
+
+
+
+@article{TPAhuber_schott_2014, title={Random Construction of Interpolating Sets for High-Dimensional Integration}, volume={51}, DOI={10.1239/jap/1395771416}, number={1}, journal={Journal of Applied Probability}, publisher={Cambridge University Press}, author={Huber, Mark and Schott, Sarah}, year={2014}, pages={92–105}}
+
+@inproceedings{Factorie,
+ author = {McCallum, Andrew and Schultz, Karl and Singh, Sameer},
+ booktitle = {Advances in Neural Information Processing Systems},
+
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {{FACTORIE}: Probabilistic Programming via Imperatively Defined Factor Graphs},
+ url = {https://proceedings.neurips.cc/paper/2009/file/847cc55b7032108eee6dd897f3bca8a5-Paper.pdf},
+ volume = {22},
+ year = {2009}
+}
+
+@inproceedings{QuantumGibbsSODA2020,
+author = {Harrow, Aram W. and Wei, Annie Y.},
+title = {Adaptive Quantum Simulated Annealing for {B}ayesian Inference and Estimating Partition Functions},
+year = {2020},
+publisher = {Society for Industrial and Applied Mathematics},
+address = {USA},
+pages = {193--212},
+numpages = {20},
+location = {Salt Lake City, Utah},
+series = {SODA '20}
+}
+
+@inproceedings{DeSaICML2016,
+author = {De Sa, Christopher and Olukotun, Kunle and R\'{e}, Christopher},
+title = {Ensuring Rapid Mixing and Low Bias for Asynchronous {G}ibbs Sampling},
+year = {2016},
+abstract = {Gibbs sampling is a {M}arkov chain {M}onte {C}arlo technique commonly used for estimating marginal distributions. To speed up {G}ibbs sampling, there has recently been interest in parallelizing it by executing asynchronously. While empirical results suggest that many models can be efficiently sampled asynchronously, traditional {M}arkov chain analysis does not apply to the asynchronous case, and thus asynchronous {G}ibbs sampling is poorly understood. In this paper, we derive a better understanding of the two main challenges of asynchronous Gibbs: bias and mixing time. We show experimentally that our theoretical results match practical outcomes.},
+booktitle = {Proceedings of the 33rd International Conference on International Conference on Machine Learning - Volume 48},
+pages = {1567--1576},
+numpages = {10},
+location = {New York, NY, USA},
+series = {ICML'16}
+} %publisher = {JMLR.org},
+
+
+@inproceedings{Bezkov2006AcceleratingSA,
+  title={Accelerating simulated annealing for the permanent and combinatorial counting problems},
+  author={I. Bez{\'a}kov{\'a} and Daniel Stefankovic and V. Vazirani and Eric Vigoda},
+  booktitle={SODA 2006},
+  year={2006}
+}
+@article{Fishman1994ChoosingSP,
+  title={Choosing sample path length and number of sample paths when starting in steady state},
+  author={G. S. Fishman},
+  journal={Oper. Res. Lett.},
+  year={1994},
+  volume={16},
+  pages={209-219}
+}
+@article{Stefankovich2009simulateannealing,
+author = {\v{S}tefankovi\v{c}, Daniel and Vempala, Santosh and Vigoda, Eric},
+title = {Adaptive Simulated Annealing: A near-Optimal Connection between Sampling and Counting},
+year = {2009},
+issue_date = {May 2009},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {56},
+number = {3},
+issn = {0004-5411},
+url = {https://doi.org/10.1145/1516512.1516520},
+doi = {10.1145/1516512.1516520},
+journal = {J. ACM},
+month = may,
+articleno = {18},
+numpages = {36},
+keywords = {Counting, {M}arkov chain {M}onte {C}arlo, simulated annealing}
+}
+
+
+
+@article{HuberTPA2010,
+  title={Using {TPA} for {B}ayesian inference},
+  author={Huber, Mark and Schott, Sarah and others},
+  journal={{B}ayesian Statistics},
+  volume={9},
+  pages={257--282},
+  year={2010}
+}
+
+
+@inproceedings{RBMTosh2016,
+  title={Mixing Rates for the Alternating {G}ibbs Sampler over Restricted {B}oltzmann Machines and Friends},
+  author={Christopher Tosh},
+  booktitle={ICML},
+  year={2016}
+}
+@article{Valleau1972MonteCE,
+  title={{M}onte {C}arlo Estimation of the Free Energy by Multistage Sampling},
+  author={J. Valleau and D. N. Card},
+  journal={Journal of Chemical Physics},
+  year={1972},
+  volume={57},
+  pages={5457-5462}
+}
+@article{Cheng2015Gibbs,
+  title={A fast and efficient {G}ibbs sampler for {BayesB} in whole-genome analyses},
+  author={H. Cheng and L. Qu and D. Garrick and R. Fernando},
+  journal={Genetics, Selection, Evolution : GSE},
+  year={2015},
+  volume={47}
+}
+@article{RBMKrause2019,
+author = {Krause, Oswin and Fischer, Asja and Igel, Christian},
+year = {2019},
+month = {10},
+pages = {103--195},
+title = {Algorithms for estimating the partition function of restricted {B}oltzmann machines},
+volume = {278},
+journal = {Artificial Intelligence},
+doi = {10.1016/j.artint.2019.103195}
+}
+@article{functionMixingRabinovish,
+author = {Rabinovich, Maxim and Ramdas, Aaditya and Jordan, Michael and Wainwright, Martin},
+year = {2016},
+month = {05},
+pages = {},
+title = {Function-Specific Mixing Times and Concentration Away from Equilibrium},
+volume = {15},
+journal = {{B}ayesian Analysis},
+doi = {10.1214/19-BA1151}
+}
+
+@article{GibbsVigoda2021,
+  title={On Mixing of {M}arkov Chains: Coupling, Spectral Independence, and Entropy Factorization},
+  author={A. Blanca and P. Caputo and Z. Chen and D. Parisi and Daniel Stefankovic and Eric Vigoda},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2103.07459}
+}
+@article{DeSa2015GIBBSHW,
+  title={Rapidly Mixing {G}ibbs Sampling for a Class of Factor Graphs Using Hierarchy Width},
+  author={De Sa, C. and Ce Zhang and K. Olukotun and C. R{\'e}},
+  journal={Advances in neural information processing systems},
+  year={2015},
+  volume={28},
+  pages={3079--3087}
+}
+@InProceedings{GibbsPLMRdesa18a, 
+title = {Minibatch {G}ibbs Sampling on Large Graphical Models}, author = {De Sa, Chris and Chen, Vincent and Wong, Wing}, booktitle = {Proceedings of the 35th International Conference on Machine Learning}, pages = {1165--1173}, year = {2018}, volume = {80}, series = {Proceedings of Machine Learning Research}, month = {10--15 Jul}, publisher = {PMLR}, pdf = {http://proceedings.mlr.press/v80/desa18a/desa18a.pdf}, url = { http://proceedings.mlr.press/v80/desa18a.html },  }
+%editor = {Dy, Jennifer and Krause, Andreas},
+
+@inproceedings{Desa2019Gibbs,
+  title={Poisson-Minibatching for {G}ibbs Sampling with Convergence Rate Guarantees},
+  author={Ruqi Zhang and De Sa, C.},
+  booktitle={NeurIPS},
+  year={2019}
+}
+
+@article{Dynamite,
+  author    = {Cyrus Cousins and
+               Shahrzad Haddadan and
+               Eli Upfal},
+  title     = {Making mean-estimation more efficient using an {MCMC} trace variance approach: {DynaMITE}},
+  journal   = {CoRR},
+  volume    = {abs/2011.11129},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2011.11129},
+  archivePrefix = {arXiv},
+  eprint    = {2011.11129},
+}
+@INPROCEEDINGS{gibbsvigoda2007,
+  author={D. {Stefankovic} and S. {Vempala} and E. {Vigoda}},
+  booktitle={48th Annual IEEE Symposium on Foundations of Computer Science (FOCS'07)}, 
+  title={Adaptive Simulated Annealing: A Near-optimal Connection between Sampling and Counting}, 
+  year={2007},
+  volume={},
+  number={},
+  pages={183--193},
+  doi={10.1109/FOCS.2007.67}}
+
+@article{hubergibbs,
+ ISSN = {10505164},
+ URL = {http://www.jstor.org/stable/24519939},
+ abstract = {Consider a family of distributions {πβ} where X ∼ πβ means that ℙ(X = x) = exp(−βH(x))/Z(β). Here Z(β) is the proper normalizing constant, equal to Σx exp(−βH(x)). Then {πβ} is known as a {G}ibbs distribution, and Z(β) is the partition function. This work presents a new method for approximating the partition function to a specified level of relative accuracy using only a number of samples, that is, O(ln(Z(β)) ln(ln(Z(β)))) when Z(0) ≥ 1. This is a sharp improvement over previous, similar approaches that used a much more complicated algorithm, requiring O(ln(Z(β)) ln(ln(Z(β)))5) samples.},
+ author = {Mark Huber},
+ journal = {The Annals of Applied Probability},
+ number = {2},
+ pages = {974--985},
+ publisher = {Institute of Mathematical Statistics},
+ title = {APPROXIMATION ALGORITHMS FOR THE NORMALIZING CONSTANT OF {G}ibbs  DISTRIBUTIONS},
+ volume = {25},
+ year = {2015}
+}
+@article{KolmoHarrisGibbs,
+  author    = {David G. Harris and
+               Vladimir Kolmogorov},
+  title     = {Parameter estimation for {G}ibbs distributions},
+  journal   = {CoRR},
+  volume    = {abs/2007.10824},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2007.10824},
+  archivePrefix = {arXiv},
+  eprint    = {2007.10824},
+}
+
+
+
+@inproceedings{Kolmogorovgibbs,
+  title={A faster approximation algorithm for the {G}ibbs partition function},
+  author={Kolmogorov, Vladimir},
+  booktitle={Conference On Learning Theory},
+  pages={228--249},
+  year={2018},
+  organization={PMLR}
+}
+
+
+@article{wilson,
+title={Mixing times of lozenge tiling and card shuffling {M}arkov chains
+},
+author={David Bruce Wilson},
+journal={The Annals of Applied Probability},
+Vol={ 14}, 
+Number={ 1},
+year={2004}, 
+pages={274--325},
+}
+@article{danasurvey,
+author = {Randall, Dana},
+title = {Rapidly Mixing {M}arkov Chains with Applications in Computer Science and Physics},
+year = {2006},
+issue_date = {March 2006},
+publisher = {IEEE Educational Activities Department},
+address = {USA},
+volume = {8},
+number = {2},
+issn = {1521-9615},
+url = {https://doi.org/10.1109/MCSE.2006.30},
+doi = {10.1109/MCSE.2006.30},
+month = mar,
+pages = {30--41},
+numpages = {12},
+keywords = {{M}onte {C}arlo simulation, {M}arkov processes, analysis of algorithm and problem complexity}
+}
+@article{mixingAld,
+title={Mixing times for uniformly ergodic {M}arkov chains},
+Author={D. Aldous and L. Lovasz and P. Winkler},
+journal={Stochastic Processes and their Applications},
+Volume={71}, 
+Issue={2}, year={1997}, 
+Pages={165-185}
+}
+
+@ARTICLE{LovazWinklermixingtimes,
+    author = {László Lovász and Peter Winkler},
+    title = {Mixing Times},
+    journal = {AMS DIMACS Series},
+    year = {1998},
+    volume = {41},
+    pages = {189--204}
+}
+
+@article{surveyMixing,
+  title={Rapidly Mixing {M}arkov Chains: A Comparison of Techniques (A Survey)},
+  author={V. Guruswami},
+  journal={ArXiv},
+  year={2016},
+  volume={abs/1603.01512}
+}
+
+
+
+
+
+
+@article{kipnis1986central,
+  title={Central limit theorem for additive functionals of reversible {M}arkov processes and applications to simple exclusions},
+  author={Kipnis, Claude and Varadhan, SR Srinivasa},
+  journal={Communications in Mathematical Physics},
+  volume={104},
+  number={1},
+  pages={1--19},
+  year={1986},
+  publisher={Springer}
+}
+
+
+@article{geyer1992practical,
+  title={Practical {M}arkov chain {M}onte {C}arlo},
+  author={Geyer, Charles J},
+  journal={Statistical science},
+  pages={473--483},
+  year={1992},
+  publisher={JSTOR}
+}
+
+@article{rosenthal2003asymptotic,
+  title={Asymptotic variance and convergence rates of nearly-periodic {M}arkov chain {M}onte {C}arlo algorithms},
+  author={Rosenthal, Jeffrey S},
+  journal={Journal of the American Statistical Association},
+  volume={98},
+  number={461},
+  pages={169--177},
+  year={2003},
+  publisher={Taylor \& Francis}
+}
+
+@article{doukhan2007probability,
+  title={Probability and moment inequalities for sums of weakly dependent random variables, with applications},
+  author={Doukhan, Paul and Neumann, Michael H},
+  journal={Stochastic Processes and their Applications},
+  volume={117},
+  number={7},
+  pages={878--903},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@article{chung2012chernoff,
+  title={Chernoff-{H}oeffding bounds for {M}arkov chains: Generalized and simplified},
+  author={Chung, Kai-Min and Lam, Henry and Liu, Zhenming and Mitzenmacher, Michael},
+  journal={arXiv:1201.0559},
+  year={2012}
+}
+
+%books 
+@book{levin2017markov,
+  title={{M}arkov chains and mixing times},
+  author={Levin, David A and Peres, Yuval},
+  volume={107},
+  year={2017},
+  publisher={American Mathematical Soc.}
+}
+
+@book{GraphicalmodelsBook,
+author = {Koller, Daphne and Friedman, Nir},
+title = {Probabilistic Graphical Models: Principles and Techniques - Adaptive Computation and Machine Learning},
+year = {2009},
+isbn = {0262013193},
+publisher = {The MIT Press}
+}
+
+@article{fan2018hoeffding,
+  title={{H}oeffding's lemma for {M}arkov Chains and its applications to statistical learning},
+  author={Fan, Jianqing and Jiang, Bai and Sun, Qiang},
+  journal={arXiv:1802.00211},
+  year={2018}
+}
+
+@article{jiang2018bernstein,
+  title={{B}ernstein's inequality for general {M}arkov chains},
+  author={Jiang, Bai and Sun, Qiang and Fan, Jianqing},
+  journal={arXiv:1805.10721},
+  year={2018}
+}
+
+
+
+@book{mitzenmacher2017probability,
+  title={Probability and computing: Randomization and probabilistic techniques in algorithms and data analysis},
+  author={Mitzenmacher, Michael and Upfal, Eli},
+  year={2017},
+  publisher={Cambridge university press}
+}
+
+
+
+
+@article{paulin2015,
+title={Concentration inequalities for {M}arkov chains by {M}arton couplings and spectral methods},
+author={Daniel Paulin},
+journal={
+Electron. J. Probab.},
+Volume={20},
+year={2015}
+}
+
+
+%%%%%%%%%%%%%%%%%%
+%Nonreversibility:
+
+@article{jerison2013general,
+  title={General mixing time bounds for finite {M}arkov chains via the absolute spectral gap},
+  author={Jerison, Daniel},
+  journal={arXiv:1310.8021},
+  year={2013}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%Classical Probability:
+
+@article{tate1953double,
+  title={On a double inequality of the normal distribution},
+  author={Tate, Robert F},
+  journal={The Annals of Mathematical Statistics},
+  volume={24},
+  number={1},
+  pages={132--134},
+  year={1953},
+  publisher={JSTOR}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%Counting Applications:
+
+@inproceedings{Vazirani2006counting,
+author = {Bez\'{a}kov\'{a}, Ivona and \v{S}tefankovi\v{c}, Daniel and Vazirani, Vijay V. and Vigoda, Eric},
+title = {Accelerating Simulated Annealing for the Permanent and Combinatorial Counting Problems},
+year = {2006},
+publisher = {Society for Industrial and Applied Mathematics},
+address = {USA},
+booktitle = {Proceedings of the Seventeenth Annual ACM-SIAM Symposium on Discrete Algorithm},
+pages = {900--907},
+numpages = {8},
+location = {Miami, Florida},
+series = {SODA ’06}
+}
+
+@article{countingsamplingreduction1986jurrumvaziranivalient,
+  title={Random Generation of Combinatorial Structures from a Uniform Distribution},
+  author={Mark Jerrum and Leslie G. Valiant and Vijay V. Vazirani},
+  journal={Theoretical Computer Science},
+  year={1986},
+  volume={43},
+  pages={169-188}
+}
+
+
+
+
+
+  
+
+
+@article{jurrumSamplingiscounting,
+author = {Jerrum, Mark},
+title = {A Very Simple Algorithm for Estimating the Number of K-Colorings of a Low-Degree Graph},
+year = {1995},
+issue_date = {September 1995},
+publisher = {John Wiley & Sons, Inc.},
+address = {USA},
+volume = {7},
+number = {2},
+issn = {1042-9832},
+journal = {Random Struct. Algorithms},
+month = sep,
+pages = {157--165},
+numpages = {9}
+}
+
+@inproceedings{Chen2019ImprovedBF,
+  title={Improved Bounds for Randomly Sampling Colorings via Linear Programming},
+  author={Sitan Chen and Michelle Delcourt and Ankur Moitra and Guillem Perarnau and Luke Postle},
+  booktitle={SODA},
+  year={2019}
+}
+
+
+
+@article{ValiantHardness,
+  title={The Complexity of Enumeration and Reliability Problems},
+  author={Leslie G. Valiant},
+  journal={SIAM J. Comput.},
+  year={1979},
+  volume={8},
+  pages={410-421}
+}
+
+
+
+
+
+
+@article{devroye2016sub,
+  title={Sub-Gaussian mean estimators},
+  author={Devroye, Luc and Lerasle, Matthieu and Lugosi, Gabor and Oliveira, Roberto I and others},
+  journal={The Annals of Statistics},
+  volume={44},
+  number={6},
+  pages={2695--2725},
+  year={2016},
+  publisher={Institute of Mathematical Statistics}
+}
+
+
+
+
+
+%Other applications
+
+@inproceedings{chehreghani2019metropolis,
+  title={Metropolis-Hastings Algorithms for Estimating Betweenness Centrality},
+  author={Chehreghani, Mostafa Haghir and Abdessalem, Talel and Bifet, Albert},
+  booktitle={22nd International Conference on Extending Database Technology EDBT 2019},
+  year={2019}
+}
+
+@InProceedings{biopaper2015,
+author="Vandin, Fabio
+and Raphael, Benjamin J.
+and Upfal, Eli",
+
+title="On the Sample Complexity of Cancer Pathways Identification",
+booktitle="Research in Computational Molecular Biology",
+year="2015",
+publisher="Springer International Publishing",
+address="Cham",
+pages="326--337",
+
+}
+@article{bio2011,
+author = {Vandin, Fabio and Upfal, Eli and Raphael, Ben},
+year = {2011},
+month = {03},
+pages = {507-22},
+title = {Algorithms for Detecting Significantly Mutated Pathways in Cancer},
+volume = {18},
+journal = {Journal of computational biology : a journal of computational molecular cell biology},
+doi = {10.1089/cmb.2010.0265}
+}
+
+@article{countingleWinklerBrightwell,
+author={G. Brightwell and P. Winkler}, title={Counting Linear Extensions},
+journal={Order},
+volume={8}, 
+year={1991}, 
+pages={225-242},
+}
+@article{permanent,
+author = {Jerrum, Mark and Sinclair, Alistair and Vigoda, Eric},
+title = {A Polynomial-Time Approximation Algorithm for the Permanent of a Matrix with Nonnegative Entries},
+year = {2004},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {51},
+number = {4},
+journal = {J. ACM},
+pages = {671--697},
+}
+
+
+@article{bioref1,
+author = {Enright, Anton and Dongen, S and Ouzounis, C.A.},
+year = {2002},
+month = {05},
+pages = {1575-84},
+title = {An efficient algorithm for large-scale detection of protein families},
+volume = {30},
+journal = {Nucleic acids research},
+doi = {10.1093/nar/30.7.1575}
+}
+
+@article{bioref2,
+author = {Azad, Ariful and Pavlopoulos, Georgios and Ouzounis, Christos and Kyrpides, Nikos and Buluç, Aydin},
+year = {2018},
+month = {01},
+pages = {1-11},
+title = {{H}ip{MCL}: a high-performance parallel implementation of the {M}arkov clustering algorithm for large-scale networks},
+volume = {46},
+journal = {Nucleic Acids Research},
+doi = {10.1093/nar/gkx1313}
+}
+@article{statisticalphyref1,
+author = {Del Moral, Pierre and Miclo, L.},
+year = {2007},
+month = {05},
+pages = {1-145},
+title = {Branching and Interacting Particle Systems Approximations of Feynman--Kac Formulae with Applications to Non-linear Filtering},
+volume = {34},
+journal = {Sem. Probab. Stras.},
+doi = {10.1007/BFb0103798}
+}
+@article{statisticalphyref2,
+author={Mignani, Stefania and Rodolfo, Rosa},
+title={{M}arkov Chain {M}onte {C}arlo in Statistical Mechanics: The Problem of Accuracy}, journal={Technometrics},
+volume={43},
+no={3},
+year={2001},
+pages={347-55}
+}
+
+@article{statisticalphysics3,
+author={Flinn, P. A.},
+title={{M}onte {C}arlo calculation of phase separation in a two-dimensional {I}sing system},
+journal={
+Journal of Statistical Physics}, 
+volume={10}, pages={89--97},
+year={1974}
+}
+
+@article{ref1,
+author = {Diaconis, Persi},
+year = {2009},
+month = {04},
+pages = {179--205},
+title = {The {M}arkov Chain {M}onte {C}arlo Revolution},
+volume = {46},
+journal = {Bulletin of the American Mathematical Society},
+doi = {10.1090/S0273-0979-08-01238-X}
+}
+
+
+@article{chemref,
+author = {Gillespie, Daniel T.},
+title = {Stochastic Simulation of Chemical Kinetics},
+journal = {Annual Review of Physical Chemistry},
+volume = {58},
+number = {1},
+pages = {35-55},
+year = {2007},
+doi = {10.1146/annurev.physchem.58.032806.104637},
+eprint = {         https://doi.org/10.1146/annurev.physchem.58.032806.104637
+},
+}
+
+@article{staticref,
+journal={Computer Physics Communications},
+Volume={205}, 
+year={2016}, 
+Pages={48-60},
+title={Adaptive multi-GPU Exchange {M}onte {C}arlo for the 3D Random Field {I}sing Model},
+author={Crist\'obal A.Navarro, Wei Huang, Youjin Deng},
+}
+
+
+
+%Empirical variance in CS papers
+
+@inproceedings{audibert2007tuning,
+  title={Tuning bandit algorithms in stochastic environments},
+  author={Audibert, Jean-Yves and Munos, R{\'e}mi and Szepesv{\'a}ri, Csaba},
+  booktitle={International conference on algorithmic learning theory},
+  pages={150--165},
+  year={2007},
+  organization={Springer}
+}
+
+@inproceedings{mnih2008empirical,
+  title={Empirical {B}ernstein stopping},
+  author={Mnih, Volodymyr and Szepesv{\'a}ri, Csaba and Audibert, Jean-Yves},
+  booktitle={Proceedings of the 25th international conference on Machine learning},
+  pages={672--679},
+  year={2008},
+  organization={ACM}
+}
+
+@article{audibert2009exploration,
+  title={Exploration--exploitation tradeoff using variance estimates in multi-armed bandits},
+  author={Audibert, Jean-Yves and Munos, R{\'e}mi and Szepesv{\'a}ri, Csaba},
+  journal={Theoretical Computer Science},
+  volume={410},
+  number={19},
+  pages={1876--1902},
+  year={2009},
+  publisher={Elsevier}
+}
+
+@article{maurer2009empirical,
+  title={Empirical {B}ernstein bounds and sample variance penalization},
+  author={Maurer, Andreas and Pontil, Massimiliano},
+  journal={arXiv:0907.3740},
+  year={2009}
+}
+@article{leonhoeffdingbound2004,
+author = {Leon, Carlos and Perron, François},
+year = {2004},
+month = {05},
+pages = {},
+title = {Optimal {H}oeffding bounds for discrete reversible {M}arkov chains},
+volume = {14},
+journal = {The Annals of Applied Probability},
+doi = {10.1214/105051604000000170}
+}
+@article{peskunconsentration1973,
+author={Peskun, P. H.},
+title={Optimum {M}onte-{C}arlo Sampling Using {M}arkov Chain.}, journal={Biometrika}, volume={60}, 
+number={3}, 
+year={1973}, 
+pages={607--612},
+url={JSTOR, www.jstor.org/stable/2335011},
+}
+
+@article{LezaudChernoff,
+author = {Lezaud, Pascal},
+year = {1998},
+month = {08},
+pages = {},
+title = {Chernoff-type bound for finite {M}arkov chains},
+volume = {8},
+journal = {The Annals of Applied Probability},
+doi = {10.1214/aoap/1028903453}
+}
+@article{miachernof,
+author = {Miasojedow, Blazej},
+year = {2012},
+month = {01},
+pages = {},
+title = {{H}oeffding's inequalities for geometrically ergodic {M}arkov chains on general state space},
+volume = {87},
+journal = {Statistics \& Probability Letters},
+doi = {10.1016/j.spl.2014.01.013}
+}
+
+@article{learningYuan,
+author = {Yuan, Ming and Kendziorski, Christina},
+year = {2006},
+month = {02},
+pages = {1323-1332},
+title = {Hidden {M}arkov Models for Microarray Time Course Data in Multiple Biological Conditions},
+volume = {101},
+journal = {Journal of the American Statistical Association},
+doi = {10.1198/016214505000000394}
+}
+@article{LearningFan,
+author = {Fan, Jianqing and Liao, Yuan and Mincheva, Martina},
+year = {2013},
+month = {09},
+pages = {},
+title = {Large Covariance Estimation by Thresholding Principal Orthogonal Complements},
+volume = {75},
+journal = {Journal of the Royal Statistical Society. Series B, Statistical methodology},
+doi = {10.1111/rssb.12016}
+}
+
+
+@TECHREPORT{Griffiths02gibbssamplingLDA,
+    author = {Tom Griffiths},
+    title = {Gibbs sampling in the generative model of Latent {D}irichlet Allocation},
+    institution = {},
+    year = {2002}
+}
+
+@inproceedings{LDA2008,
+author = {Porteous, Ian and Newman, David and Ihler, Alexander and Asuncion, Arthur and Smyth, Padhraic and Welling, Max},
+title = {Fast Collapsed {G}ibbs Sampling for Latent {D}irichlet Allocation},
+year = {2008},
+isbn = {9781605581934},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1401890.1401960},
+doi = {10.1145/1401890.1401960},
+booktitle = {Proceedings of the 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+pages = {569--577},
+numpages = {9},
+keywords = {latent {D}irichlet allocation, sampling},
+location = {Las Vegas, Nevada, USA},
+series = {KDD '08}
+}
+@inproceedings{NIPS2007_LDA,
+ author = {Newman, David and Smyth, Padhraic and Welling, Max and Asuncion, Arthur},
+ booktitle = {Advances in Neural Information Processing Systems},
+
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Distributed Inference for Latent {D}irichlet Allocation},
+ url = {https://proceedings.neurips.cc/paper/2007/file/2dea61eed4bceec564a00115c4d21334-Paper.pdf},
+ volume = {20},
+ year = {2008}
+}
+@ARTICLE{learningSalatino,
+  author={M. {Salatino} and J. {Austermann} and J. A. {Beall} and S. {Choi} and K. T. {Crowley} and S. {Duff} and S. W. {Henderson} and G. {Hilton} and S. -. P. {Ho} and J. {Hubmayr} and Y. {Li} and M. D. {Niemack} and S. M. {Simon} and S. T. {Staggs} and E. J. {Wollack}},
+  journal={IEEE Transactions on Applied Superconductivity}, 
+  title={Machine Learning, {M}arkov Chain {M}onte {C}arlo, and Optimal Algorithms to Characterize the {AdvACT} Kilopixel Transition-Edge Sensor Arrays}, 
+  year={2019},
+  volume={29},
+  number={5},
+  pages={1-5},}
+
+  
+  % other chains
+  
+
+@inproceedings{SodaColoring,
+  title={Rapid mixing for colorings via spectral independence},
+  author={Chen, Zongchen and Galanis, Andreas and {\v{S}}tefankovi{\v{c}}, Daniel and Vigoda, Eric},
+  booktitle={Proceedings of the 2021 ACM-SIAM Symposium on Discrete Algorithms (SODA)},
+  pages={1548--1557},
+  year={2021},
+  organization={SIAM}
+}
+
+
+
+
+@article{matchingsanari,
+  title={Fractionally Log-Concave and Sector-Stable Polynomials: Counting Planar Matchings and More},
+  author={Y. Alimohammadi and Nima Anari and Kirankumar Shiragur and T. Vuong},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2102.02708}
+}
+
+@inproceedings{Tosh2016MixingRF,
+  title={Mixing Rates for the Alternating {G}ibbs Sampler over Restricted {B}oltzmann Machines and Friends},
+  author={Christopher Tosh},
+  booktitle={ICML},
+  year={2016}
+}
+
+%image segmentation
+
+@article
+{imageGibbs1984,
+  author={Elliott, H. and Derin, H. and Cristi, R. and Geman, D.},
+  booktitle={ICASSP '84. IEEE International Conference on Acoustics, Speech, and Signal Processing}, 
+  title={Application of the {G}ibbs distribution to image segmentation}, 
+  year={1984},
+  volume={9},
+  number={},
+  pages={678-681},
+  doi={10.1109/ICASSP.1984.1172637}}
+  
+  
+  @ARTICLE{imageGibbs,
+  author={Geman, Stuart and Geman, Donald},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Stochastic Relaxation, {G}ibbs Distributions, and the {B}ayesian Restoration of Images}, 
+  year={1984},
+  volume={PAMI-6},
+  number={6},
+  pages={721-741},
+  doi={10.1109/TPAMI.1984.4767596}}
+  
+  @article {imageGibbs2017,
+	Title = {Gibbs distribution for statistical analysis of graphical data with a sample application to fcMRI brain images},
+	Author = {La Rosa, Patricio S and Brooks, Terrence L and Deych, Elena and Shands, Berkley and Prior, Fred and Larson-Prior, Linda J and Shannon, William D},
+	DOI = {10.1002/sim.6757},
+	Number = {4},
+	Volume = {35},
+	Month = {February},
+	Year = {2016},
+	Journal = {Statistics in medicine},
+	ISSN = {0277-6715},
+	Pages = {566—580},
+	URL = {https://doi.org/10.1002/sim.6757},
+}
+
+
+%econ
+@article{econ2012,
+title={Permit allocation in emissions trading using the {B}oltzmann distribution},
+authors={
+Park, J.-W., Kim, C. U. and Isard, W.},
+year={2012},  
+journal={Physica},
+volume={A 391},
+pages={4883-4890}
+}
+
+@article{econ2,
+title = {Gibbs versus non-Gibbs distributions in money dynamics},
+journal = {Physica A: Statistical Mechanics and its Applications},
+volume = {340},
+number = {1},
+pages = {334-339},
+year = {2004},
+note = {News and Expectations in Thermostatistics},
+issn = {0378-4371},
+doi = {https://doi.org/10.1016/j.physa.2004.04.024},
+url = {https://www.sciencedirect.com/science/article/pii/S0378437104004327},
+author = {Marco Patriarca and Anirban Chakraborti and Kimmo Kaski},
+keywords = {Econophysics, Money dynamics, Gamma distribution, {G}ibbs distribution},
+}
+%othernames
+@article{BayesianNet,
+title = {Gibbs sampling in {B}ayesian networks},
+journal = {Artificial Intelligence},
+volume = {46},
+number = {3},
+pages = {351-363},
+year = {1990},
+issn = {0004-3702},
+doi = {https://doi.org/10.1016/0004-3702(90)90020-Z},
+url = {https://www.sciencedirect.com/science/article/pii/000437029090020Z},
+author = {Tomas Hrycej},
+}
+
+@article{clifford1990markov,
+  title={{M}arkov random fields in statistics},
+  author={Clifford, Peter},
+  journal={Disorder in physical systems: A volume in honour of John M. Hammersley},
+  pages={19--32},
+  year={1990}
+}
+
+@article{tsallis1988possible,
+  title={Possible generalization of {B}oltzmann-Gibbs statistics},
+  author={Tsallis, Constantino},
+  journal={Journal of statistical physics},
+  volume={52},
+  number={1},
+  pages={479--487},
+  year={1988},
+  publisher={Springer}
+}
+
+%Isinghardcoremodel
+
+@article{cipra1987introduction,
+  title={An introduction to the {I}sing model},
+  author={Cipra, Barry A},
+  journal={The American Mathematical Monthly},
+  volume={94},
+  number={10},
+  pages={937--959},
+  year={1987},
+  publisher={Taylor \& Francis}
+}
+
+
+
+@article{anari2020spectral,
+  title={Spectral independence in high-dimensional expanders and applications to the hardcore model},
+  author={Anari, Nima and Liu, Kuikui and Gharan, Shayan Oveis},
+  journal={SIAM Journal on Computing},
+  number={0},
+  pages={FOCS20--1},
+  year={2021},
+  publisher={SIAM}
+}
+
+
+
+@incollection{bhatnagar2010reconstruction,
+  title={Reconstruction threshold for the hardcore model},
+  author={Bhatnagar, Nayantara and Sly, Allan and Tetali, Prasad},
+  booktitle={Approximation, Randomization, and Combinatorial Optimization. Algorithms and Techniques},
+  pages={434--447},
+  year={2010},
+  publisher={Springer}
+}
+
+@book{kemeny2012denumerable,
+  title={Denumerable {M}arkov chains: with a chapter of {M}arkov random fields by David Griffeath},
+  author={Kemeny, John G and Snell, J Laurie and Knapp, Anthony W},
+  volume={40},
+  year={2012},
+  publisher={Springer Science \& Business Media}
+}
+
+@book{Gibbs1902,
+  title={Elementary Principles in Statistical Mechanics},
+  author={Gibbs, Josiah Willard},
+  year={1902},
+  publisher={Scribner}
+} %publisher={Charles Scribner's Sons}
+
+
+%more {G}ibbs ref
+
+@inproceedings{liftingGibbs12,
+author = {Venugopal, Deepak and Gogate, Vibhav},
+title = {On Lifting the {G}ibbs Sampling Algorithm},
+year = {2012},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+booktitle = {Proceedings of the 25th International Conference on Neural Information Processing Systems - Volume 1},
+pages = {1655--1663},
+numpages = {9},
+location = {Lake Tahoe, Nevada},
+series = {NIPS'12}
+}
+
+@inproceedings{MRFref2014,
+author = {Liu, Xianghang and Domke, Justin},
+title = {Projecting {M}arkov Random Field Parameters for Fast Mixing},
+year = {2014},
+publisher = {MIT Press},
+address = {Cambridge, MA, USA},
+pages = {1377--1385},
+numpages = {9},
+location = {Montreal, Canada},
+series = {NIPS'14}
+}
+
+@InProceedings{Gibbsredpmlr-v15-gonzalez11a, 
+title = {Parallel {G}ibbs Sampling: From Colored Fields to Thin Junction Trees}, author = {Gonzalez, Joseph and Low, Yucheng and Gretton, Arthur and Guestrin, Carlos}, booktitle = {Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics}, pages = {324--332}, year = {2011}, editor = {Gordon, Geoffrey and Dunson, David and Dudík, Miroslav}, volume = {15}, series = {Proceedings of Machine Learning Research}, address = {Fort Lauderdale, FL, USA}, month = {11--13 Apr}, publisher = {PMLR}, pdf = {http://proceedings.mlr.press/v15/gonzalez11a/gonzalez11a.pdf}, url = { http://proceedings.mlr.press/v15/gonzalez11a.html } }
+
+%ch {G}ibbs app
+
+@article{gibbs1976chm,
+  title={Characterization and application of ferrozine iron reagent as a ferrous iron indicator},
+  author={Gibbs, Charles R},
+  journal={Analytical Chemistry},
+  volume={48},
+  number={8},
+  pages={1197--1201},
+  year={1976},
+  publisher={ACS Publications}
+}
+
+@article{hellweg2017chm,
+  title={Brick by brick computation of the {G}ibbs free energy of reaction in solution using quantum chemistry and {COSMO-RS}},
+  author={Hellweg, Arnim and Eckert, Frank},
+  journal={AIChE Journal},
+  volume={63},
+  number={9},
+  pages={3944--3954},
+  year={2017},
+  publisher={Wiley Online Library}
+}
+ 
+ 
+ %prob graphical models:
+ 
+ @article{PGM2016scan,
+  title={Scan order in {G}ibbs sampling: Models in which it matters and bounds on how much},
+  author={He, Bryan and De Sa, Christopher and Mitliagkas, Ioannis and R{\'e}, Christopher},
+  journal={Advances in neural information processing systems},
+  volume={29},
+  year={2016},
+  publisher={NIH Public Access}
+}
+
+%ising 
+
+@book{aldous2013probability,
+  title={Probability on discrete structures},
+  author={Aldous, David and Grimmett, Geoffrey R and Howard, C Douglas and Martinelli, Fabio and Steele, J Michael and Saloff-Coste, Laurent},
+  volume={110},
+  year={2013},
+  publisher={Springer Science \& Business Media}
+}
+
+@article{dyer1991computing,
+  title={Computing the volume of convex bodies: a case where randomness provably helps},
+  author={Dyer, Martin and Frieze, Alan},
+  journal={Probabilistic combinatorics and its applications},
+  volume={44},
+  pages={123--170},
+  year={1991}
+}
+
+
+%suggested by NIPS reviewers:
+@article{roberts2009examples,
+  title={Examples of adaptive {MCMC}},
+  author={Roberts, Gareth O and Rosenthal, Jeffrey S},
+  journal={Journal of computational and graphical statistics},
+  volume={18},
+  number={2},
+  pages={349--367},
+  year={2009},
+  publisher={Taylor \& Francis}
+}
+
+@article{neal2001annealed,
+  title={Annealed importance sampling},
+  author={Neal, Radford M},
+  journal={Statistics and computing},
+  volume={11},
+  number={2},
+  pages={125--139},
+  year={2001},
+  publisher={Springer}
+}
+
+@article{prasad2020learning,
+  title={On Learning {I}sing Models under {H}uber's Contamination Model},
+  author={Prasad, Adarsh and Srinivasan, Vishwak and Balakrishnan, Sivaraman and Ravikumar, Pradeep},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  year={2020}
+}
+
+
+%more references on annealed importance sampling 
+
+@article{karagiannis2013annealed,
+  title={Annealed importance sampling reversible jump {MCMC} algorithms},
+  author={Karagiannis, Georgios and Andrieu, Christophe},
+  journal={Journal of Computational and Graphical Statistics},
+  volume={22},
+  number={3},
+  pages={623--648},
+  year={2013},
+  publisher={Taylor \& Francis}
+}
+
+@article{stordal2015iterative,
+  title={Iterative ensemble smoothers in the annealed importance sampling framework},
+  author={Stordal, Andreas S and Elsheikh, Ahmed H},
+  journal={Advances in Water Resources},
+  volume={86},
+  pages={231--239},
+  year={2015},
+  publisher={Elsevier}
+}
+
+%% other refrences to check
+@inproceedings{salakhutdinov2010learning,
+  title={Learning deep {B}oltzmann machines using adaptive {MCMC}},
+  author={Salakhutdinov, Ruslan},
+  booktitle={Proceedings of the 27th International Conference on Machine Learning (ICML-10)},
+  pages={943--950},
+  year={2010}
+}
+
+@article{salakhutdinov2008learning,
+  title={Learning and evaluating {B}oltzmann machines},
+  author={Salakhutdinov, Ruslan},
+  journal={Utml Tr},
+  volume={2},
+  pages={21},
+  year={2008},
+  publisher={Citeseer}
+}
+
+@inproceedings{ma2013estimating,
+  title={Estimating the partition function of graphical models using Langevin importance sampling},
+  author={Ma, Jianzhu and Peng, Jian and Wang, Sheng and Xu, Jinbo},
+  booktitle={Artificial Intelligence and Statistics},
+  pages={433--441},
+  year={2013},
+  organization={PMLR}
+}
+
+@article{salakhutdinov2009learning,
+  title={Learning in {M}arkov random fields using tempered transitions},
+  author={Salakhutdinov, Russ R},
+  journal={Advances in neural information processing systems},
+  volume={22},
+  pages={1598--1606},
+  year={2009},
+  publisher={Citeseer}
+}
+@article{trelestHsuPeres2019,
+author = {Daniel Hsu and Aryeh Kontorovich and David A. Levin and Yuval Peres and Csaba Szepesvári and Geoffrey Wolfer},
+title = {Mixing time estimation in reversible {M}arkov chains from a single sample path},
+volume = {29},
+journal = {The Annals of Applied Probability},
+number = {4},
+publisher = {Institute of Mathematical Statistics},
+pages = {2439--2480},
+keywords = {empirical confidence interval, {M}arkov chains, mixing time, spectral gap},
+year = {2019},
+doi = {10.1214/18-AAP1457},
+URL = {https://doi.org/10.1214/18-AAP1457}
+}
+
+
+@article{diagno2autho,
+title = "{M}arkov Chain {M}onte {C}arlo Convergence Diagnostics: A Comparative Review",
+keywords = "Autocorrelation, {G}ibbs sampler, Metropolis-Hastings algorithm",
+author = "Cowles, {Mary Kathryn} and Carlin, {Bradley P.}",
+year = "1996",
+month = jun,
+day = "1",
+doi = "10.1080/01621459.1996.10476956",
+language = "English (US)",
+volume = "91",
+pages = "883--904",
+journal = "Journal of the American Statistical Association",
+issn = "0162-1459",
+publisher = "Taylor and Francis Ltd.",
+number = "434",
+}
+@article{diag4,
+  title={General methods for monitoring convergence of iterative simulations},
+  author={Brooks, Stephen P and Gelman, Andrew},
+  journal={Journal of computational and graphical statistics},
+  volume={7},
+  number={4},
+  pages={434--455},
+  year={1998},
+  publisher={Taylor \& Francis Group}
+}
+@article{diag3,
+  title={Assessing convergence of {M}arkov chain {M}onte {C}arlo algorithms},
+  author={Brooks, Stephen P and Roberts, Gareth O},
+  journal={Statistics and Computing},
+  volume={8},
+  number={4},
+  pages={319--335},
+  year={1998},
+  publisher={Citeseer}
+}
+@article{diag1,
+author = {Anand Dixit and Vivekananda Roy},
+title = {{MCMC} diagnostics for higher dimensions using {K}ullback {L}eibler divergence},
+journal = {Journal of Statistical Computation and Simulation},
+volume = {87},
+number = {13},
+pages = {2622-2638},
+year  = {2017},
+publisher = {Taylor & Francis},
+doi = {10.1080/00949655.2017.1335313},
+URL = {        https://doi.org/10.1080/00949655.2017.1335313}
+}
+
+@article{diag5,
+  title={Quantitative convergence rates of {M}arkov chains: A simple account},
+  author={Rosenthal, Jeffrey and others},
+  journal={Electronic Communications in Probability},
+  volume={7},
+  pages={123--128},
+  year={2002},
+  publisher={The Institute of Mathematical Statistics and the Bernoulli Society}
+}
+
+@incollection{bhatnagar2011computational,
+  title={The computational complexity of estimating {MCMC} convergence time},
+  author={Bhatnagar, Nayantara and Bogdanov, Andrej and Mossel, Elchanan},
+  booktitle={Approximation, Randomization, and Combinatorial Optimization. Algorithms and Techniques},
+  pages={424--435},
+  year={2011},
+  publisher={Springer}
+}
+
+@inproceedings{kleer,
+author = {Kleer, Pieter},
+title = {Sampling from the {G}ibbs Distribution in Congestion Games},
+year = {2021},
+isbn = {9781450385541},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3465456.3467597},
+doi = {10.1145/3465456.3467597},
+booktitle = {Proceedings of the 22nd ACM Conference on Economics and Computation},
+pages = {679--680},
+numpages = {2},
+keywords = {logit dynamics, congestion games, sampling, {G}ibbs distribution},
+location = {Budapest, Hungary},
+series = {EC '21}
+}
+
+@article{haddadan2019mixing,
+  title={Mixing of Permutations by Biased Transpositions},
+  author={Haddadan, Shahrzad and Winkler, Peter},
+  journal={Theory of Computing Systems},
+  volume={63},
+  number={5},
+  pages={1068--1088},
+  year={2019},
+  publisher={Springer}
+}

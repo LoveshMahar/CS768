@@ -1,0 +1,872 @@
+%aipnum4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (1) range
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{69}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Behler}(2016)}]{behler2016perspective}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Behler}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{P}erspective:
+  {M}achine learning potentials for atomistic simulations},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {J. Chem. Phys}\ }\textbf
+  {\bibinfo {volume} {145}},\ \bibinfo {pages} {170901} (\bibinfo {year}
+  {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Unke}\ \emph {et~al.}(2020)\citenamefont {Unke},
+  \citenamefont {Chmiela}, \citenamefont {Sauceda}, \citenamefont {Gastegger},
+  \citenamefont {Poltavsky}, \citenamefont {Sch{\"u}tt}, \citenamefont
+  {Tkatchenko},\ and\ \citenamefont {M{\"u}ller}}]{Unke2020mlforce}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.~T.}\ \bibnamefont
+  {Unke}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Chmiela}},
+  \bibinfo {author} {\bibfnamefont {H.~E.}\ \bibnamefont {Sauceda}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Gastegger}}, \bibinfo {author}
+  {\bibfnamefont {I.}~\bibnamefont {Poltavsky}}, \bibinfo {author}
+  {\bibfnamefont {K.~T.}\ \bibnamefont {Sch{\"u}tt}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Tkatchenko}},\ and\ \bibinfo {author}
+  {\bibfnamefont {K.-R.}\ \bibnamefont {M{\"u}ller}},\ }\bibfield  {title}
+  {\enquote {\bibinfo {title} {{M}achine {L}earning {F}orce {F}ields},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint
+  arXiv:2010.07067}\ } (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {von Lilienfeld}, \citenamefont {M{\"u}ller},\ and\
+  \citenamefont {Tkatchenko}(2020)}]{von2020exploring}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.~A.}\ \bibnamefont
+  {von Lilienfeld}}, \bibinfo {author} {\bibfnamefont {K.-R.}\ \bibnamefont
+  {M{\"u}ller}},\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Tkatchenko}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Exploring
+  chemical compound space with quantum-based machine learning},}\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Nat. Rev. Chem.}\ }\textbf
+  {\bibinfo {volume} {4}},\ \bibinfo {pages} {347--358} (\bibinfo {year}
+  {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chmiela}\ \emph {et~al.}(2018)\citenamefont
+  {Chmiela}, \citenamefont {Sauceda}, \citenamefont {M{\"u}ller},\ and\
+  \citenamefont {Tkatchenko}}]{chmiela2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Chmiela}}, \bibinfo {author} {\bibfnamefont {H.~E.}\ \bibnamefont
+  {Sauceda}}, \bibinfo {author} {\bibfnamefont {K.-R.}\ \bibnamefont
+  {M{\"u}ller}},\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Tkatchenko}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Towards
+  exact molecular dynamics simulations with machine-learned force fields},}\
+  }\href {https://doi.org/10.1038/s41467-018-06169-2} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nat. Commun.}\ }\textbf {\bibinfo {volume} {9}},\
+  \bibinfo {pages} {3887} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Westermayr}, \citenamefont {Gastegger},\ and\
+  \citenamefont {Marquetand}(2020)}]{westermayr2020combining}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Westermayr}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Gastegger}},\ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Marquetand}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{C}ombining
+  {SchNet} and {SHARC}: {T}he {SchNarc} machine learning approach for
+  excited-state dynamics},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Phys. Chem. Lett.}\ }\textbf {\bibinfo {volume} {11}},\
+  \bibinfo {pages} {3828--3834} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Morawietz}\ \emph {et~al.}(2016)\citenamefont
+  {Morawietz}, \citenamefont {Singraber}, \citenamefont {Dellago},\ and\
+  \citenamefont {Behler}}]{morawietz2016van}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Morawietz}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Singraber}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Dellago}},\
+  and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Behler}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{H}ow van der {W}aals
+  interactions determine the unique properties of water},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Proc. Natl. Acad. Sci.}\ }\textbf
+  {\bibinfo {volume} {113}},\ \bibinfo {pages} {8368--8373} (\bibinfo {year}
+  {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bart{\'o}k}\ \emph {et~al.}(2018)\citenamefont
+  {Bart{\'o}k}, \citenamefont {Kermode}, \citenamefont {Bernstein},\ and\
+  \citenamefont {Cs{\'a}nyi}}]{bartok2018machine}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~P.}\ \bibnamefont
+  {Bart{\'o}k}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Kermode}},
+  \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Bernstein}},\ and\
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Cs{\'a}nyi}},\ }\bibfield
+   {title} {\enquote {\bibinfo {title} {Machine learning a general-purpose
+  interatomic potential for silicon},}\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. X}\ }\textbf {\bibinfo {volume} {8}},\
+  \bibinfo {pages} {041048} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lu}\ \emph {et~al.}(2020)\citenamefont {Lu},
+  \citenamefont {Wang}, \citenamefont {Chen}, \citenamefont {Liu},
+  \citenamefont {Lin}, \citenamefont {Car}, \citenamefont {Jia}, \citenamefont
+  {Zhang} \emph {et~al.}}]{lu202086}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Lu}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Wang}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Chen}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Liu}}, \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {Lin}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Car}}, \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont {Jia}}, \bibinfo
+  {author} {\bibfnamefont {L.}~\bibnamefont {Zhang}}, \emph {et~al.},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {86 {PFLOPS} {D}eep
+  {P}otential {M}olecular {D}ynamics simulation of 100 million atoms with ab
+  initio accuracy},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {arXiv preprint arXiv:2004.11658}\ } (\bibinfo {year} {2020})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Gilmer}\ \emph {et~al.}(2017)\citenamefont {Gilmer},
+  \citenamefont {Schoenholz}, \citenamefont {Riley}, \citenamefont {Vinyals},\
+  and\ \citenamefont {Dahl}}]{gilmer2017neural}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Gilmer}}, \bibinfo {author} {\bibfnamefont {S.~S.}\ \bibnamefont
+  {Schoenholz}}, \bibinfo {author} {\bibfnamefont {P.~F.}\ \bibnamefont
+  {Riley}}, \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Vinyals}},\
+  and\ \bibinfo {author} {\bibfnamefont {G.~E.}\ \bibnamefont {Dahl}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Neural message passing for
+  quantum chemistry},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Interational Conference on Machine Learning}\ } (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chmiela}\ \emph {et~al.}(2017)\citenamefont
+  {Chmiela}, \citenamefont {Tkatchenko}, \citenamefont {Sauceda}, \citenamefont
+  {Poltavsky}, \citenamefont {Sch{\"u}tt},\ and\ \citenamefont
+  {M{\"u}ller}}]{chmiela2017machine}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Chmiela}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Tkatchenko}},
+  \bibinfo {author} {\bibfnamefont {H.~E.}\ \bibnamefont {Sauceda}}, \bibinfo
+  {author} {\bibfnamefont {I.}~\bibnamefont {Poltavsky}}, \bibinfo {author}
+  {\bibfnamefont {K.~T.}\ \bibnamefont {Sch{\"u}tt}},\ and\ \bibinfo {author}
+  {\bibfnamefont {K.-R.}\ \bibnamefont {M{\"u}ller}},\ }\bibfield  {title}
+  {\enquote {\bibinfo {title} {{M}achine {L}earning of {A}ccurate
+  {E}nergy-{C}onserving {M}olecular {F}orce {F}ields},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Sci. Adv.}\ }\textbf {\bibinfo
+  {volume} {3}},\ \bibinfo {pages} {e1603015} (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Christensen}\ \emph {et~al.}(2020)\citenamefont
+  {Christensen}, \citenamefont {Bratholm}, \citenamefont {Faber},\ and\
+  \citenamefont {Anatole~von Lilienfeld}}]{christensen2020fchl}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~S.}\ \bibnamefont
+  {Christensen}}, \bibinfo {author} {\bibfnamefont {L.~A.}\ \bibnamefont
+  {Bratholm}}, \bibinfo {author} {\bibfnamefont {F.~A.}\ \bibnamefont
+  {Faber}},\ and\ \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
+  {Anatole~von Lilienfeld}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {{FCHL} revisited: {F}aster and more accurate quantum machine learning},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J. Chem. Phys}\
+  }\textbf {\bibinfo {volume} {152}},\ \bibinfo {pages} {044107} (\bibinfo
+  {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bart{\'o}k}\ \emph {et~al.}(2010)\citenamefont
+  {Bart{\'o}k}, \citenamefont {Payne}, \citenamefont {Kondor},\ and\
+  \citenamefont {Cs{\'a}nyi}}]{bartok2010gaussian}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~P.}\ \bibnamefont
+  {Bart{\'o}k}}, \bibinfo {author} {\bibfnamefont {M.~C.}\ \bibnamefont
+  {Payne}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Kondor}},\ and\
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Cs{\'a}nyi}},\ }\bibfield
+   {title} {\enquote {\bibinfo {title} {{G}aussian approximation potentials:
+  {T}he accuracy of quantum mechanics, without the electrons},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {104}},\ \bibinfo {pages} {136403} (\bibinfo {year}
+  {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sch{\"u}tt}\ \emph {et~al.}(2017)\citenamefont
+  {Sch{\"u}tt}, \citenamefont {Kindermans}, \citenamefont {Sauceda},
+  \citenamefont {Chmiela}, \citenamefont {Tkatchenko},\ and\ \citenamefont
+  {M{\"u}ller}}]{schutt2017schnet}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Sch{\"u}tt}}, \bibinfo {author} {\bibfnamefont {P.-J.}\ \bibnamefont
+  {Kindermans}}, \bibinfo {author} {\bibfnamefont {H.~E.}\ \bibnamefont
+  {Sauceda}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Chmiela}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Tkatchenko}},\ and\
+  \bibinfo {author} {\bibfnamefont {K.-R.}\ \bibnamefont {M{\"u}ller}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{S}ch{N}et: {A}
+  continuous-filter convolutional neural network for modeling quantum
+  interactions},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Advances in Neural Information Processing Systems}\ ,\ \bibinfo {pages}
+  {991--1001}} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Miller}\ \emph {et~al.}(2020)\citenamefont {Miller},
+  \citenamefont {Geiger}, \citenamefont {Smidt},\ and\ \citenamefont
+  {No{\'e}}}]{miller2020relevance}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont
+  {Miller}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Geiger}},
+  \bibinfo {author} {\bibfnamefont {T.~E.}\ \bibnamefont {Smidt}},\ and\
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {No{\'e}}},\ }\bibfield
+  {title} {\enquote {\bibinfo {title} {Relevance of rotationally equivariant
+  convolutions for predicting molecular properties},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint arXiv:2008.08461}\
+  } (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Klicpera}, \citenamefont {Gro{\ss}},\ and\
+  \citenamefont {G{\"u}nnemann}(2020{\natexlab{a}})}]{klicpera2020directional}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Klicpera}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Gro{\ss}}},\
+  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {G{\"u}nnemann}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Directional message passing
+  for molecular graphs},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {International Conference on Learning Representations}\ } (\bibinfo
+  {year} {2020}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cohen}\ and\ \citenamefont
+  {Welling}(2017)}]{cohen2016steerable}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~S.}\ \bibnamefont
+  {Cohen}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Welling}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Steerable
+  {CNN}s},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {International Conference on Learning Representations}\ } (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Weiler}, \citenamefont {Hamprecht},\ and\
+  \citenamefont {Storath}(2018)}]{weiler2018learning}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Weiler}}, \bibinfo {author} {\bibfnamefont {F.~A.}\ \bibnamefont
+  {Hamprecht}},\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Storath}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{L}earning
+  {S}teerable {F}ilters for {R}otation {E}quivariant {CNN}s},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Proceedings of the IEEE
+  Conference on Computer Vision and Pattern Recognition}\ ,\ \bibinfo {pages}
+  {849--858}} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Worrall}\ and\ \citenamefont
+  {Brostow}(2018)}]{worrall2018cubenet}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Worrall}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Brostow}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{C}ube{N}et:
+  {E}quivariance to {3D} {R}otation and {T}ranslation},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Proceedings of the European
+  Conference on Computer Vision (ECCV)}\ ,\ \bibinfo {pages} {567--584}}
+  (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Thomas}\ \emph {et~al.}(2018)\citenamefont {Thomas},
+  \citenamefont {Smidt}, \citenamefont {Kearnes}, \citenamefont {Yang},
+  \citenamefont {Li}, \citenamefont {Kohlhoff},\ and\ \citenamefont
+  {Riley}}]{thomas2018tensor}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Thomas}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Smidt}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Kearnes}}, \bibinfo
+  {author} {\bibfnamefont {L.}~\bibnamefont {Yang}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {Li}}, \bibinfo {author} {\bibfnamefont
+  {K.}~\bibnamefont {Kohlhoff}},\ and\ \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Riley}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {{T}ensor field networks: {R}otation-and translation-equivariant neural
+  networks for {3D} point clouds},}\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {arXiv preprint arXiv:1802.08219}\ } (\bibinfo {year}
+  {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Anderson}, \citenamefont {Hy},\ and\ \citenamefont
+  {Kondor}(2019)}]{anderson2019cormorant}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Anderson}}, \bibinfo {author} {\bibfnamefont {T.~S.}\ \bibnamefont {Hy}},\
+  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Kondor}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{C}ormorant: {C}ovariant
+  {M}olecular {N}eural {N}etworks},}\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Advances in Neural Information Processing Systems}\
+  }\textbf {\bibinfo {volume} {32}},\ \bibinfo {pages} {14537--14546} (\bibinfo
+  {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Behler}\ and\ \citenamefont
+  {Parrinello}(2007)}]{behler2007generalized}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Behler}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Parrinello}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Generalized
+  neural-network representation of high-dimensional potential-energy
+  surfaces},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Rev. Lett.}\ }\textbf {\bibinfo {volume} {98}},\ \bibinfo {pages} {146401}
+  (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Scarselli}\ \emph {et~al.}(2008)\citenamefont
+  {Scarselli}, \citenamefont {Gori}, \citenamefont {Tsoi}, \citenamefont
+  {Hagenbuchner},\ and\ \citenamefont {Monfardini}}]{scarselli2008graph}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Scarselli}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Gori}},
+  \bibinfo {author} {\bibfnamefont {A.~C.}\ \bibnamefont {Tsoi}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Hagenbuchner}},\ and\ \bibinfo
+  {author} {\bibfnamefont {G.}~\bibnamefont {Monfardini}},\ }\bibfield  {title}
+  {\enquote {\bibinfo {title} {The graph neural network model},}\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {IEEE Trans. Neural Netw.}\
+  }\textbf {\bibinfo {volume} {20}},\ \bibinfo {pages} {61--80} (\bibinfo
+  {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Duvenaud}\ \emph {et~al.}(2015)\citenamefont
+  {Duvenaud}, \citenamefont {Maclaurin}, \citenamefont {Iparraguirre},
+  \citenamefont {Bombarell}, \citenamefont {Hirzel}, \citenamefont
+  {Aspuru-Guzik},\ and\ \citenamefont {Adams}}]{duvenaud2015convolutional}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~K.}\ \bibnamefont
+  {Duvenaud}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Maclaurin}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Iparraguirre}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Bombarell}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Hirzel}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Aspuru-Guzik}},\ and\ \bibinfo {author} {\bibfnamefont
+  {R.~P.}\ \bibnamefont {Adams}},\ }\bibfield  {title} {\enquote {\bibinfo
+  {title} {Convolutional networks on graphs for learning molecular
+  fingerprints},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Advances in Neural Information Processing Systems}\ }\textbf {\bibinfo
+  {volume} {28}},\ \bibinfo {pages} {2224--2232} (\bibinfo {year}
+  {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kearnes}\ \emph {et~al.}(2016)\citenamefont
+  {Kearnes}, \citenamefont {McCloskey}, \citenamefont {Berndl}, \citenamefont
+  {Pande},\ and\ \citenamefont {Riley}}]{kearnes2016molecular}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Kearnes}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {McCloskey}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Berndl}}, \bibinfo
+  {author} {\bibfnamefont {V.}~\bibnamefont {Pande}},\ and\ \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {Riley}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {Molecular graph convolutions: moving beyond
+  fingerprints},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {J. Comput. Aided Mol. Des.}\ }\textbf {\bibinfo {volume} {30}},\ \bibinfo
+  {pages} {595--608} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sch{\"{u}}tt}\ \emph {et~al.}(2017)\citenamefont
+  {Sch{\"{u}}tt}, \citenamefont {Arbabzadah}, \citenamefont {Chmiela},
+  \citenamefont {M{\"{u}}ller},\ and\ \citenamefont
+  {Tkatchenko}}]{schutt2017deep}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~T.}\ \bibnamefont
+  {Sch{\"{u}}tt}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Arbabzadah}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Chmiela}},
+  \bibinfo {author} {\bibfnamefont {K.~R.}\ \bibnamefont {M{\"{u}}ller}},\ and\
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Tkatchenko}},\ }\bibfield
+   {title} {\enquote {\bibinfo {title} {{Quantum-chemical insights from deep
+  tensor neural networks}},}\ }\href {https://doi.org/10.1038/ncomms13890}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nat. Commun.}\ }\textbf {\bibinfo
+  {volume} {8}} (\bibinfo {year} {2017}),\ 10.1038/ncomms13890}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Sch{\"u}tt}\ \emph {et~al.}(2018)\citenamefont
+  {Sch{\"u}tt}, \citenamefont {Sauceda}, \citenamefont {Kindermans},
+  \citenamefont {Tkatchenko},\ and\ \citenamefont
+  {M{\"u}ller}}]{schutt2018schnet}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~T.}\ \bibnamefont
+  {Sch{\"u}tt}}, \bibinfo {author} {\bibfnamefont {H.~E.}\ \bibnamefont
+  {Sauceda}}, \bibinfo {author} {\bibfnamefont {P.-J.}\ \bibnamefont
+  {Kindermans}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Tkatchenko}},\ and\ \bibinfo {author} {\bibfnamefont {K.-R.}\ \bibnamefont
+  {M{\"u}ller}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {{S}ch{N}et--{A} deep learning architecture for molecules and materials},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J. Chem. Phys}\
+  }\textbf {\bibinfo {volume} {148}},\ \bibinfo {pages} {241722} (\bibinfo
+  {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Unke}\ and\ \citenamefont
+  {Meuwly}(2019)}]{unke2019physnet}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.~T.}\ \bibnamefont
+  {Unke}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Meuwly}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{PhysNet}: {A} {N}eural
+  {N}etwork for {P}redicting {E}nergies, {F}orces, {D}ipole {M}oments, and
+  {P}artial {C}harges},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Chem. Theory Comput.}\ }\textbf {\bibinfo {volume} {15}},\
+  \bibinfo {pages} {3678--3693} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lubbers}, \citenamefont {Smith},\ and\ \citenamefont
+  {Barros}(2018)}]{lubbers2018hierarchical}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Lubbers}}, \bibinfo {author} {\bibfnamefont {J.~S.}\ \bibnamefont {Smith}},\
+  and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Barros}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Hierarchical modeling of
+  molecular energies using a deep neural network},}\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {J. Chem. Phys}\ }\textbf {\bibinfo {volume}
+  {148}},\ \bibinfo {pages} {241715} (\bibinfo {year} {2018})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Weiler}\ \emph {et~al.}(2018)\citenamefont {Weiler},
+  \citenamefont {Geiger}, \citenamefont {Welling}, \citenamefont {Boomsma},\
+  and\ \citenamefont {Cohen}}]{weiler20183d}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Weiler}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Geiger}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Welling}}, \bibinfo
+  {author} {\bibfnamefont {W.}~\bibnamefont {Boomsma}},\ and\ \bibinfo {author}
+  {\bibfnamefont {T.~S.}\ \bibnamefont {Cohen}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {{3D} {S}teerable {CNN}s: {L}earning {R}otationally
+  {E}quivariant {F}eatures in {V}olumetric {D}ata},}\ }\href@noop {} {\bibfield
+   {journal} {\bibinfo  {journal} {Advances in Neural Information Processing
+  Systems}\ }\textbf {\bibinfo {volume} {31}},\ \bibinfo {pages} {10381--10392}
+  (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Batzner}\ \emph {et~al.}(2021)\citenamefont
+  {Batzner}, \citenamefont {Smidt}, \citenamefont {Sun}, \citenamefont
+  {Mailoa}, \citenamefont {Kornbluth}, \citenamefont {Molinari},\ and\
+  \citenamefont {Kozinsky}}]{batzner2021se}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Batzner}}, \bibinfo {author} {\bibfnamefont {T.~E.}\ \bibnamefont {Smidt}},
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Sun}}, \bibinfo {author}
+  {\bibfnamefont {J.~P.}\ \bibnamefont {Mailoa}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Kornbluth}}, \bibinfo {author}
+  {\bibfnamefont {N.}~\bibnamefont {Molinari}},\ and\ \bibinfo {author}
+  {\bibfnamefont {B.}~\bibnamefont {Kozinsky}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {{SE} (3)-{E}quivariant {G}raph {N}eural {N}etworks for
+  {D}ata-{E}fficient and {A}ccurate {I}nteratomic {P}otentials},}\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint
+  arXiv:2101.03164}\ } (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kondor}\ and\ \citenamefont
+  {Trivedi}(2018)}]{kondor2018generalization}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Kondor}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Trivedi}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {On the
+  {G}eneralization of {E}quivariance and {C}onvolution in {N}eural {N}etworks
+  to the {A}ction of {C}ompact {G}roups},}\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {International Conference on Machine
+  Learning}\ ,\ \bibinfo {pages} {2747--2755}} (\bibinfo {year}
+  {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Jing}\ \emph {et~al.}(2021)\citenamefont {Jing},
+  \citenamefont {Eismann}, \citenamefont {Suriana}, \citenamefont {Townshend},\
+  and\ \citenamefont {Dror}}]{jing2021learning}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Jing}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Eismann}},
+  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Suriana}}, \bibinfo
+  {author} {\bibfnamefont {R.~J.~L.}\ \bibnamefont {Townshend}},\ and\ \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Dror}},\ }\bibfield  {title}
+  {\enquote {\bibinfo {title} {Learning from protein structure with geometric
+  vector perceptrons},}\ }in\ \href
+  {https://openreview.net/forum?id=1YLJDvSx6J4} {\emph {\bibinfo {booktitle}
+  {International Conference on Learning Representations}}}\ (\bibinfo {year}
+  {2021})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hinton}, \citenamefont {Krizhevsky},\ and\
+  \citenamefont {Wang}(2011)}]{hinton2011transforming}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~E.}\ \bibnamefont
+  {Hinton}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Krizhevsky}},\
+  and\ \bibinfo {author} {\bibfnamefont {S.~D.}\ \bibnamefont {Wang}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Transforming
+  auto-encoders},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {International Conference on Artificial Neural Networks}\ ,\ \bibinfo {pages}
+  {44--51}} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Klicpera}, \citenamefont {Gro{\ss}},\ and\
+  \citenamefont {G{\"u}nnemann}(2020{\natexlab{b}})}]{klicpera2020fast}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Klicpera}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Gro{\ss}}},\
+  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {G{\"u}nnemann}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{F}ast and
+  {U}ncertainty-{A}ware {D}irectional {M}essage {P}assing for
+  {N}on-{E}quilibrium {M}olecules},}\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Machine Learning for Molecules Workshop at NeurIPS}\ }
+  (\bibinfo {year} {2020}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Pozdnyakov}\ \emph {et~al.}(2020)\citenamefont
+  {Pozdnyakov}, \citenamefont {Willatt}, \citenamefont {Bart{\'o}k},
+  \citenamefont {Ortner}, \citenamefont {Cs{\'a}nyi},\ and\ \citenamefont
+  {Ceriotti}}]{pozdnyakov2020incompleteness}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~N.}\ \bibnamefont
+  {Pozdnyakov}}, \bibinfo {author} {\bibfnamefont {M.~J.}\ \bibnamefont
+  {Willatt}}, \bibinfo {author} {\bibfnamefont {A.~P.}\ \bibnamefont
+  {Bart{\'o}k}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Ortner}},
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Cs{\'a}nyi}},\ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Ceriotti}},\ }\bibfield
+  {title} {\enquote {\bibinfo {title} {Incompleteness of atomic structure
+  representations},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {125}},\ \bibinfo
+  {pages} {166001} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hermann}\ \emph {et~al.}(2007)\citenamefont
+  {Hermann}, \citenamefont {Krawczyk}, \citenamefont {Lein}, \citenamefont
+  {Schwerdtfeger}, \citenamefont {Hamilton},\ and\ \citenamefont
+  {Stewart}}]{hermann2007convergence}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Hermann}}, \bibinfo {author} {\bibfnamefont {R.~P.}\ \bibnamefont
+  {Krawczyk}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Lein}},
+  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Schwerdtfeger}}, \bibinfo
+  {author} {\bibfnamefont {I.~P.}\ \bibnamefont {Hamilton}},\ and\ \bibinfo
+  {author} {\bibfnamefont {J.~J.}\ \bibnamefont {Stewart}},\ }\bibfield
+  {title} {\enquote {\bibinfo {title} {Convergence of the many-body expansion
+  of interaction potentials: From van der waals to covalent and metallic
+  systems},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review A}\ }\textbf {\bibinfo {volume} {76}},\ \bibinfo {pages}
+  {013202} (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bart{\'o}k}, \citenamefont {Kondor},\ and\
+  \citenamefont {Cs{\'a}nyi}(2013)}]{bartok2013representing}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~P.}\ \bibnamefont
+  {Bart{\'o}k}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Kondor}},\
+  and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Cs{\'a}nyi}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {On representing chemical
+  environments},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {87}},\ \bibinfo {pages} {184115}
+  (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gastegger}, \citenamefont {Sch{\"u}tt},\ and\
+  \citenamefont {M{\"u}ller}(2020)}]{gastegger2020machine}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Gastegger}}, \bibinfo {author} {\bibfnamefont {K.~T.}\ \bibnamefont
+  {Sch{\"u}tt}},\ and\ \bibinfo {author} {\bibfnamefont {K.-R.}\ \bibnamefont
+  {M{\"u}ller}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Machine
+  learning of solvent effects on molecular spectra and reactions},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint
+  arXiv:2010.14942}\ } (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Behler}(2011)}]{behler2011atom}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Behler}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Atom-centered
+  symmetry functions for constructing high-dimensional neural network
+  potentials},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J.
+  Chem. Phys}\ }\textbf {\bibinfo {volume} {134}},\ \bibinfo {pages} {074106}
+  (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gastegger}, \citenamefont {Behler},\ and\
+  \citenamefont {Marquetand}(2017)}]{gastegger2017machine}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Gastegger}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Behler}},\
+  and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Marquetand}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Machine learning molecular
+  dynamics for the simulation of infrared spectra},}\ }\href@noop {} {\bibfield
+   {journal} {\bibinfo  {journal} {Chem. Sci.}\ }\textbf {\bibinfo {volume}
+  {8}},\ \bibinfo {pages} {6924--6935} (\bibinfo {year} {2017})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Veit}\ \emph {et~al.}(2020)\citenamefont {Veit},
+  \citenamefont {Wilkins}, \citenamefont {Yang}, \citenamefont {DiStasio~Jr},\
+  and\ \citenamefont {Ceriotti}}]{veit2020predicting}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Veit}}, \bibinfo {author} {\bibfnamefont {D.~M.}\ \bibnamefont {Wilkins}},
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Yang}}, \bibinfo {author}
+  {\bibfnamefont {R.~A.}\ \bibnamefont {DiStasio~Jr}},\ and\ \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Ceriotti}},\ }\bibfield  {title} {\enquote
+  {\bibinfo {title} {Predicting molecular dipole moments by combining atomic
+  partial charges and atomic dipoles},}\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {J. Chem. Phys.}\ }\textbf {\bibinfo {volume} {153}},\
+  \bibinfo {pages} {024113} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Paszke}\ \emph {et~al.}(2019)\citenamefont {Paszke},
+  \citenamefont {Gross}, \citenamefont {Massa}, \citenamefont {Lerer},
+  \citenamefont {Bradbury}, \citenamefont {Chanan}, \citenamefont {Killeen},
+  \citenamefont {Lin}, \citenamefont {Gimelshein}, \citenamefont {Antiga} \emph
+  {et~al.}}]{paszke2019pytorch}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Paszke}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Gross}},
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Massa}}, \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Lerer}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Bradbury}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Chanan}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {Killeen}}, \bibinfo {author} {\bibfnamefont
+  {Z.}~\bibnamefont {Lin}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Gimelshein}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Antiga}},
+  \emph {et~al.},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{P}ytorch:
+  {A}n imperative style, high-performance deep learning library},}\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint
+  arXiv:1912.01703}\ } (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sch\"utt}\ \emph {et~al.}(2018)\citenamefont
+  {Sch\"utt}, \citenamefont {Kessel}, \citenamefont {Gastegger}, \citenamefont
+  {Nicoli}, \citenamefont {Tkatchenko},\ and\ \citenamefont
+  {M{\"u}ller}}]{schutt2018schnetpack}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Sch\"utt}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Kessel}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Gastegger}}, \bibinfo
+  {author} {\bibfnamefont {K.}~\bibnamefont {Nicoli}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Tkatchenko}},\ and\ \bibinfo {author}
+  {\bibfnamefont {K.-R.}\ \bibnamefont {M{\"u}ller}},\ }\bibfield  {title}
+  {\enquote {\bibinfo {title} {{SchNetPack}: A deep learning toolbox for
+  atomistic systems},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Chem. Theory Comput.}\ }\textbf {\bibinfo {volume} {15}},\
+  \bibinfo {pages} {448--455} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kingma}\ and\ \citenamefont
+  {Ba}(2014)}]{kingma2014adam}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~P.}\ \bibnamefont
+  {Kingma}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Ba}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{A}dam: {A} method for
+  {S}tochastic {O}ptimization},}\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {arXiv preprint arXiv:1412.6980}\ } (\bibinfo {year}
+  {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ramakrishnan}\ \emph {et~al.}(2014)\citenamefont
+  {Ramakrishnan}, \citenamefont {Dral}, \citenamefont {Rupp},\ and\
+  \citenamefont {Von~Lilienfeld}}]{ramakrishnan2014quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Ramakrishnan}}, \bibinfo {author} {\bibfnamefont {P.~O.}\ \bibnamefont
+  {Dral}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Rupp}},\ and\
+  \bibinfo {author} {\bibfnamefont {O.~A.}\ \bibnamefont {Von~Lilienfeld}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Quantum chemistry structures
+  and properties of 134 kilo molecules},}\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Sci. Data}\ }\textbf {\bibinfo {volume} {1}},\ \bibinfo
+  {pages} {1--7} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
+\bibitem [{Note1()}]{Note1}%
+  \BibitemOpen
+  \bibinfo {note} {\protect \url
+  {https://github.com/klicperajo/dimenet}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Christensen}\ and\ \citenamefont {von
+  Lilienfeld}(2020)}]{christensen2020role}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~S.}\ \bibnamefont
+  {Christensen}}\ and\ \bibinfo {author} {\bibfnamefont {O.~A.}\ \bibnamefont
+  {von Lilienfeld}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {On the
+  role of gradients for machine learning of molecular energies and forces},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Mach. Learn.: Sci.
+  Technol.}\ }\textbf {\bibinfo {volume} {1}},\ \bibinfo {pages} {045018}
+  (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Thomas}\ \emph {et~al.}(2013)\citenamefont {Thomas},
+  \citenamefont {Brehm}, \citenamefont {Fligg}, \citenamefont {V{\"o}hringer},\
+  and\ \citenamefont {Kirchner}}]{thomas2013computing}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Thomas}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Brehm}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Fligg}}, \bibinfo
+  {author} {\bibfnamefont {P.}~\bibnamefont {V{\"o}hringer}},\ and\ \bibinfo
+  {author} {\bibfnamefont {B.}~\bibnamefont {Kirchner}},\ }\bibfield  {title}
+  {\enquote {\bibinfo {title} {Computing vibrational spectra from ab initio
+  molecular dynamics},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Chem. Chem. Phys.}\ }\textbf {\bibinfo {volume} {15}},\
+  \bibinfo {pages} {6608--6622} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sauceda}\ \emph {et~al.}(2021)\citenamefont
+  {Sauceda}, \citenamefont {Vassilev-Galindo}, \citenamefont {Chmiela},
+  \citenamefont {M{\"u}ller},\ and\ \citenamefont
+  {Tkatchenko}}]{sauceda2021dynamical}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~E.}\ \bibnamefont
+  {Sauceda}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Vassilev-Galindo}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Chmiela}}, \bibinfo {author} {\bibfnamefont {K.-R.}\ \bibnamefont
+  {M{\"u}ller}},\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Tkatchenko}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Dynamical
+  strengthening of covalent and non-covalent molecular interactions by nuclear
+  quantum effects at finite temperature},}\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Nat. Commun.}\ }\textbf {\bibinfo {volume}
+  {12}},\ \bibinfo {pages} {1--10} (\bibinfo {year} {2021})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Linstrom}\ and\ \citenamefont
+  {Mallard}(2020)}]{NIST}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Linstrom}}\ and\ \bibinfo {author} {\bibfnamefont {W.~G.}\ \bibnamefont
+  {Mallard}},\ }\href@noop {} {\emph {\bibinfo {title} {{NIST} {C}hemistry
+  {W}eb{B}ook {NIST} {S}tandard {R}eference {D}atabase {N}umber 69}}}\
+  (\bibinfo  {publisher} {National Institute of Standards and Technology},\
+  \bibinfo {address} {doi:10.18434/T4D303, (retrieved September 24, 2020),
+  Gaithersburg MD, 20899},\ \bibinfo {year} {2020})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kiefer}(2017)}]{kiefer2017simultaneous}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Kiefer}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Simultaneous
+  acquisition of the polarized and depolarized {R}aman signal with a single
+  detector},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Anal.
+  Chem.}\ }\textbf {\bibinfo {volume} {89}},\ \bibinfo {pages} {5725--5728}
+  (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gebauer}, \citenamefont {Gastegger},\ and\
+  \citenamefont {Sch{\"u}tt}(2019)}]{gebauer2019symmetry}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Gebauer}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Gastegger}},\
+  and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Sch{\"u}tt}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Symmetry-adapted generation
+  of 3d point sets for the targeted discovery of molecules},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Advances in Neural Information
+  Processing Systems}\ ,\ \bibinfo {pages} {7564--7576}} (\bibinfo {year}
+  {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {K{\"o}hler}, \citenamefont {Klein},\ and\
+  \citenamefont {No{\'e}}(2019)}]{kohler2019equivariant}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {K{\"o}hler}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Klein}},\
+  and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {No{\'e}}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{E}quivariant {F}lows:
+  sampling configurations for multi-body systems with symmetric energies},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Proceedings of the
+  37th International Conference on Machine Learning}\ } (\bibinfo {year}
+  {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Simm}\ \emph {et~al.}(2020)\citenamefont {Simm},
+  \citenamefont {Pinsler}, \citenamefont {Cs{\'a}nyi},\ and\ \citenamefont
+  {Hern{\'a}ndez-Lobato}}]{simm2020symmetry}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~N.}\ \bibnamefont
+  {Simm}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Pinsler}},
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Cs{\'a}nyi}},\ and\
+  \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Hern{\'a}ndez-Lobato}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {{S}ymmetry-{A}ware {A}ctor-{C}ritic for {3D} {M}olecular {D}esign},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint
+  arXiv:2011.12747}\ } (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hegde}\ and\ \citenamefont
+  {Bowen}(2017)}]{hegde2017machine}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Hegde}}\ and\ \bibinfo {author} {\bibfnamefont {R.~C.}\ \bibnamefont
+  {Bowen}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{M}achine-learned
+  approximations to {D}ensity {F}unctional {T}heory {H}amiltonians},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Sci. Rep.}\
+  }\textbf {\bibinfo {volume} {7}},\ \bibinfo {pages} {1--11} (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sch{\"u}tt}\ \emph {et~al.}(2019)\citenamefont
+  {Sch{\"u}tt}, \citenamefont {Gastegger}, \citenamefont {Tkatchenko},
+  \citenamefont {M{\"u}ller},\ and\ \citenamefont
+  {Maurer}}]{schutt2019unifying}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Sch{\"u}tt}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Gastegger}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Tkatchenko}}, \bibinfo {author} {\bibfnamefont {K.-R.}\ \bibnamefont
+  {M{\"u}ller}},\ and\ \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont
+  {Maurer}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Unifying machine
+  learning and quantum chemistry with a deep neural network for molecular
+  wavefunctions},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Nat. Commun.}\ }\textbf {\bibinfo {volume} {10}},\ \bibinfo {pages} {1--10}
+  (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hermann}, \citenamefont {Sch{\"a}tzle},\ and\
+  \citenamefont {No{\'e}}(2020)}]{hermann2020deep}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Hermann}}, \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
+  {Sch{\"a}tzle}},\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {No{\'e}}},\ }\bibfield  {title} {\enquote {\bibinfo {title}
+  {{D}eep-neural-network solution of the electronic {S}chr{\"o}dinger
+  equation},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Nat.
+  Chem.}\ }\textbf {\bibinfo {volume} {12}},\ \bibinfo {pages} {891--897}
+  (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Goyal}\ and\ \citenamefont
+  {Ferrara}(2018)}]{goyal2018graph}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Goyal}}\ and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Ferrara}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Graph embedding
+  techniques, applications, and performance: A survey},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Knowledge-Based Systems}\
+  }\textbf {\bibinfo {volume} {151}},\ \bibinfo {pages} {78--94} (\bibinfo
+  {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bannwarth}, \citenamefont {Ehlert},\ and\
+  \citenamefont {Grimme}(2019)}]{bannwarth2019gfn2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Bannwarth}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Ehlert}},\
+  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Grimme}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{GFN2}-x{TB} -- {A}n
+  accurate and broadly parametrized self-consistent tight-binding quantum
+  chemical method with multipole electrostatics and density-dependent
+  dispersion contributions},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Chem. Theory Comput.}\ }\textbf {\bibinfo {volume} {15}},\
+  \bibinfo {pages} {1652--1671} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{Note2()}]{Note2}%
+  \BibitemOpen
+  \bibinfo {note} {\protect \url
+  {https://github.com/grimme-lab/xtb}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Smith}, \citenamefont {Isayev},\ and\ \citenamefont
+  {Roitberg}(2017)}]{smith2017ani}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~S.}\ \bibnamefont
+  {Smith}}, \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Isayev}},\ and\
+  \bibinfo {author} {\bibfnamefont {A.~E.}\ \bibnamefont {Roitberg}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{ANI-1}: an extensible
+  neural network potential with {DFT} accuracy at force field computational
+  cost},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Chem.
+  Sci.}\ }\textbf {\bibinfo {volume} {8}},\ \bibinfo {pages} {3192--3203}
+  (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Adamo}\ and\ \citenamefont
+  {Barone}(1999)}]{adamo1999toward}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Adamo}}\ and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Barone}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {Toward reliable density
+  functional methods without adjustable parameters: The {PBE0} model},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J. Chem. Phys.}\
+  }\textbf {\bibinfo {volume} {110}},\ \bibinfo {pages} {6158--6170} (\bibinfo
+  {year} {1999})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Weigend}\ and\ \citenamefont
+  {Ahlrichs}(2005)}]{Weigend2005PCCP}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Weigend}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Ahlrichs}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Balanced basis
+  sets of split valence, triple zeta valence and quadruple zeta valence quality
+  for {H} to {Rn}: {D}esign and assessment of accuracy},}\ }\href
+  {https://doi.org/10.1039/B508541A} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Chem. Chem. Phys.}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo
+  {pages} {3297--3305} (\bibinfo {year} {2005})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Neese}(2012)}]{Neese2012WCMS}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Neese}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {The {ORCA}
+  program system},}\ }\href {https://doi.org/10.1002/wcms.81} {\bibfield
+  {journal} {\bibinfo  {journal} {WIREs Comput. Mol. Sci.}\ }\textbf {\bibinfo
+  {volume} {2}},\ \bibinfo {pages} {73--78} (\bibinfo {year}
+  {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Weigend}(2002)}]{weigend2002fully}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Weigend}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{A} fully
+  direct {RI-HF} algorithm: {I}mplementation, optimised auxiliary basis sets,
+  demonstration of accuracy and efficiency},}\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Chem. Chem. Phys.}\ }\textbf {\bibinfo
+  {volume} {4}},\ \bibinfo {pages} {4285--4291} (\bibinfo {year}
+  {2002})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Martyna}, \citenamefont {Klein},\ and\ \citenamefont
+  {Tuckerman}(1992)}]{martyna1992nhc}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~J.}\ \bibnamefont
+  {Martyna}}, \bibinfo {author} {\bibfnamefont {M.~L.}\ \bibnamefont {Klein}},\
+  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Tuckerman}},\
+  }\bibfield  {title} {\enquote {\bibinfo {title} {{N}os{\'e}–{H}oover
+  chains: {T}he canonical ensemble via continuous dynamics},}\ }\href
+  {https://doi.org/10.1063/1.463940} {\bibfield  {journal} {\bibinfo  {journal}
+  {J. Chem. Phys.}\ }\textbf {\bibinfo {volume} {97}},\ \bibinfo {pages}
+  {2635--2643} (\bibinfo {year} {1992})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ceriotti}\ \emph {et~al.}(2010)\citenamefont
+  {Ceriotti}, \citenamefont {Parrinello}, \citenamefont {Markland},\ and\
+  \citenamefont {Manolopoulos}}]{ceriotti2010stochastic}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Ceriotti}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Parrinello}}, \bibinfo {author} {\bibfnamefont {T.~E.}\ \bibnamefont
+  {Markland}},\ and\ \bibinfo {author} {\bibfnamefont {D.~E.}\ \bibnamefont
+  {Manolopoulos}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {Efficient
+  stochastic thermostatting of path integral molecular dynamics},}\ }\href
+  {https://doi.org/10.1063/1.3489925} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Chem. Phys.}\ }\textbf {\bibinfo {volume} {133}},\ \bibinfo
+  {pages} {124104} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{W}iener}(1930)}]{wiener1930}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {{W}iener}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{G}eneralized
+  harmonic analysis},}\ }\href {https://doi.org/10.1007/BF02546511} {\bibfield
+  {journal} {\bibinfo  {journal} {Acta Math.}\ }\textbf {\bibinfo {volume}
+  {55}},\ \bibinfo {pages} {117--258} (\bibinfo {year} {1930})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{B}lackman}\ and\ \citenamefont
+  {{T}ukey}(1958)}]{6768513}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~B.}\ \bibnamefont
+  {{B}lackman}}\ and\ \bibinfo {author} {\bibfnamefont {J.~W.}\ \bibnamefont
+  {{T}ukey}},\ }\bibfield  {title} {\enquote {\bibinfo {title} {{T}he
+  measurement of power spectra from the point of view of communications
+  engineering -- {P}art {I}},}\ }\href
+  {https://doi.org/10.1002/j.1538-7305.1958.tb03874.x} {\bibfield  {journal}
+  {\bibinfo  {journal} {Bell Syst. Tech. J.}\ }\textbf {\bibinfo {volume}
+  {37}},\ \bibinfo {pages} {185--282} (\bibinfo {year} {1958})}\BibitemShut
+  {NoStop}%
+\end{thebibliography}%

@@ -1,0 +1,20 @@
+Generative adversarial nets (GANs) have become a preferred tool for tasks
+involving complicated distributions. To stabilise the training and reduce the
+mode collapse of GANs, one of their main variants employs the integral
+probability metric (IPM) as the loss function. This provides extensive IPM-GANs
+with theoretical support for basically comparing moments in an embedded domain
+of the \textit{critic}. We generalise this by comparing the distributions
+rather than their moments via a powerful tool, i.e., the characteristic
+function (CF), which uniquely and universally comprising all the information
+about a distribution. For rigour, we first establish the physical meaning of
+the phase and amplitude in CF, and show that this provides a feasible way of
+balancing the accuracy and diversity of generation. We then develop an
+efficient sampling strategy to calculate the CFs. Within this framework, we
+further prove an equivalence between the embedded and data domains when a
+reciprocal exists, where we naturally develop the GAN in an auto-encoder
+structure, in a way of comparing everything in the embedded space (a
+semantically meaningful manifold). This efficient structure uses only two
+modules, together with a simple training strategy, to achieve bi-directionally
+generating clear images, which is referred to as the reciprocal CF GAN
+(RCF-GAN). Experimental results demonstrate the superior performances of the
+proposed RCF-GAN in terms of both generation and reconstruction.

@@ -1,0 +1,18 @@
+Motivated by economic applications such as recommender systems, we study the
+behavior of stochastic bandits algorithms under \emph{strategic behavior}
+conducted by rational actors, i.e., the arms. Each arm is a
+\emph{self-interested} strategic player who can modify its own reward whenever
+pulled, subject to a cross-period budget constraint, in order to maximize its
+own expected number of times of being pulled. We analyze the robustness of
+three popular bandit algorithms: UCB, $\varepsilon$-Greedy, and Thompson
+Sampling. We prove that all three algorithms achieve a regret upper bound
+$\mathcal{O}(\max \{ B, K\ln T\})$ where $B$ is the total budget across arms,
+$K$ is the total number of arms and $T$ is length of the time horizon. This
+regret guarantee holds under \emph{arbitrary adaptive} manipulation strategy of
+arms. Our second set of main results shows that this regret bound is
+\emph{tight} -- in fact for UCB it is tight even when we restrict the arms'
+manipulation strategies to form a \emph{Nash equilibrium}. The lower bound
+makes use of a simple manipulation strategy, the same for all three algorithms,
+yielding a bound of $\Omega(\max \{ B, K\ln T\})$. Our results illustrate the
+robustness of classic bandits algorithms against strategic manipulations as
+long as $B=o(T)$.

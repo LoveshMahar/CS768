@@ -1,0 +1,894 @@
+@String(PAMI = {IEEE Trans. Pattern Anal. Mach. Intell.})
+@String(IJCV = {Int. J. Comput. Vis.})
+@String(CVPR= {IEEE Conf. Comput. Vis. Pattern Recog.})
+@String(ICCV= {Int. Conf. Comput. Vis.})
+@String(ECCV= {Eur. Conf. Comput. Vis.})
+@String(NIPS= {Adv. Neural Inform. Process. Syst.})
+@String(ICPR = {Int. Conf. Pattern Recog.})
+@String(BMVC= {Brit. Mach. Vis. Conf.})
+@String(TOG= {ACM Trans. Graph.})
+@String(TIP  = {IEEE Trans. Image Process.})
+@String(TVCG  = {IEEE Trans. Vis. Comput. Graph.})
+@String(TMM  = {IEEE Trans. Multimedia})
+@String(ACMMM= {ACM Int. Conf. Multimedia})
+@String(ICME = {Int. Conf. Multimedia and Expo})
+@String(ICASSP=	{ICASSP})
+@String(ICIP = {IEEE Int. Conf. Image Process.})
+@String(ACCV  = {ACCV})
+@String(ICLR = {Int. Conf. Learn. Represent.})
+@String(IJCAI = {IJCAI})
+@String(PR   = {Pattern Recognition})
+@String(AAAI = {AAAI})
+@String(CVPRW= {IEEE Conf. Comput. Vis. Pattern Recog. Worksh.})
+@String(CSVT = {IEEE Trans. Circuit Syst. Video Technol.})
+
+@String(SPL	= {IEEE Sign. Process. Letters})
+@String(VR   = {Vis. Res.})
+@String(JOV	 = {J. Vis.})
+@String(TVC  = {The Vis. Comput.})
+@String(JCST  = {J. Comput. Sci. Tech.})
+@String(CGF  = {Comput. Graph. Forum})
+@String(CVM = {Computational Visual Media})
+
+
+@String(PAMI  = {IEEE TPAMI})
+@String(IJCV  = {IJCV})
+@String(CVPR  = {CVPR})
+@String(ICCV  = {ICCV})
+@String(ECCV  = {ECCV})
+@String(NIPS  = {NeurIPS})
+@String(ICPR  = {ICPR})
+@String(BMVC  =	{BMVC})
+@String(TOG   = {ACM TOG})
+@String(TIP   = {IEEE TIP})
+@String(TVCG  = {IEEE TVCG})
+@String(TCSVT = {IEEE TCSVT})
+@String(TMM   =	{IEEE TMM})
+@String(ACMMM = {ACM MM})
+@String(ICME  =	{ICME})
+@String(ICASSP=	{ICASSP})
+@String(ICIP  = {ICIP})
+@String(ACCV  = {ACCV})
+@String(ICLR  = {ICLR})
+@String(IJCAI = {IJCAI})
+@String(PR = {PR})
+@String(AAAI = {AAAI})
+@String(CVPRW= {CVPRW})
+@String(CSVT = {IEEE TCSVT})
+
+% Foundation Models
+%% GPT-3
+@article{brown2020language, 
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={1877--1901},
+  year={2020}
+}
+%% BART
+@article{lewis2019bart,
+  title={Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension},
+  author={Lewis, Mike and Liu, Yinhan and Goyal, Naman and Ghazvininejad, Marjan and Mohamed, Abdelrahman and Levy, Omer and Stoyanov, Ves and Zettlemoyer, Luke},
+  journal={arXiv preprint arXiv:1910.13461},
+  year={2019}
+}
+
+%% CLIP
+@inproceedings{radford2021learning, 
+  title={Learning transferable visual models from natural language supervision},
+  author={Radford, Alec and Kim, Jong Wook and Hallacy, Chris and Ramesh, Aditya and Goh, Gabriel and Agarwal, Sandhini and Sastry, Girish and Askell, Amanda and Mishkin, Pamela and Clark, Jack and others},
+  booktitle={International Conference on Machine Learning},
+  pages={8748--8763},
+  year={2021},
+  organization={PMLR}
+}
+%% ALIGN
+@inproceedings{jia2021scaling,
+  title={Scaling up visual and vision-language representation learning with noisy text supervision},
+  author={Jia, Chao and Yang, Yinfei and Xia, Ye and Chen, Yi-Ting and Parekh, Zarana and Pham, Hieu and Le, Quoc and Sung, Yun-Hsuan and Li, Zhen and Duerig, Tom},
+  booktitle={International Conference on Machine Learning},
+  pages={4904--4916},
+  year={2021},
+  organization={PMLR}
+}
+
+%% CLOOB
+@article{furst2021cloob,  
+  title={CLOOB: Modern Hopfield Networks with InfoLOOB Outperform CLIP},
+  author={F{\"u}rst, Andreas and Rumetshofer, Elisabeth and Tran, Viet and Ramsauer, Hubert and Tang, Fei and Lehner, Johannes and Kreil, David and Kopp, Michael and Klambauer, G{\"u}nter and Bitto-Nemling, Angela and others},
+  journal={arXiv preprint arXiv:2110.11316},
+  year={2021}
+}
+
+%% DECLIP
+@article{li2021supervision,
+  title={Supervision exists everywhere: A data efficient contrastive language-image pre-training paradigm},
+  author={Li, Yangguang and Liang, Feng and Zhao, Lichen and Cui, Yufeng and Ouyang, Wanli and Shao, Jing and Yu, Fengwei and Yan, Junjie},
+  journal={arXiv preprint arXiv:2110.05208},
+  year={2021}
+}
+
+%% SLIP
+@article{mu2021slip, 
+  title={SLIP: Self-supervision meets Language-Image Pre-training},
+  author={Mu, Norman and Kirillov, Alexander and Wagner, David and Xie, Saining},
+  journal={arXiv preprint arXiv:2112.12750},
+  year={2021}
+}
+
+%% FLAVA
+@article{singh2021flava,  
+  title={FLAVA: A Foundational Language And Vision Alignment Model},
+  author={Singh, Amanpreet and Hu, Ronghang and Goswami, Vedanuj and Couairon, Guillaume and Galuba, Wojciech and Rohrbach, Marcus and Kiela, Douwe},
+  journal={arXiv preprint arXiv:2112.04482},
+  year={2021}
+}
+
+%% Embeddings
+@article{neelakantan2022text,
+  title={Text and Code Embeddings by Contrastive Pre-Training},
+  author={Neelakantan, Arvind and Xu, Tao and Puri, Raul and Radford, Alec and Han, Jesse Michael and Tworek, Jerry and Yuan, Qiming and Tezak, Nikolas and Kim, Jong Wook and Hallacy, Chris and others},
+  journal={arXiv preprint arXiv:2201.10005},
+  year={2022}
+}
+
+%% GPT-Neo
+@article{gpt-neo,
+  author       = {Black, Sid and
+                  Gao, Leo and
+                  Wang, Phil and
+                  Leahy, Connor and
+                  Biderman, Stella},
+  title        = {{GPT-Neo: Large Scale Autoregressive Language 
+                   Modeling with Mesh-Tensorflow}},
+  month        = mar,
+  year         = 2021,
+  note         = {{If you use this software, please cite it using 
+                   these metadata.}},
+  publisher    = {Zenodo},
+  version      = {1.0},
+  doi          = {10.5281/zenodo.5297715},
+  url          = {https://doi.org/10.5281/zenodo.5297715}
+}
+
+@article{gao2020pile,
+  title={The Pile: An 800GB Dataset of Diverse Text for Language Modeling},
+  author={Gao, Leo and Biderman, Stella and Black, Sid and Golding, Laurence and Hoppe, Travis and Foster, Charles and Phang, Jason and He, Horace and Thite, Anish and Nabeshima, Noa and others},
+  journal={arXiv preprint arXiv:2101.00027},
+  year={2020}
+}
+
+% ConVIRT
+@article{zhang2020contrastive,
+  title={Contrastive learning of medical visual representations from paired images and text},
+  author={Zhang, Yuhao and Jiang, Hang and Miura, Yasuhide and Manning, Christopher D and Langlotz, Curtis P},
+  journal={arXiv preprint arXiv:2010.00747},
+  year={2020}
+}
+
+% VirTex
+@inproceedings{desai2021virtex,
+  title={Virtex: Learning visual representations from textual annotations},
+  author={Desai, Karan and Johnson, Justin},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={11162--11173},
+  year={2021}
+}
+
+
+
+%% Robust finetuning
+@article{wortsman2021robust, 
+  title={Robust fine-tuning of zero-shot models},
+  author={Wortsman, Mitchell and Ilharco, Gabriel and Li, Mike and Kim, Jong Wook and Hajishirzi, Hannaneh and Farhadi, Ali and Namkoong, Hongseok and Schmidt, Ludwig},
+  journal={arXiv preprint arXiv:2109.01903},
+  year={2021}
+}
+
+@article{kumar2022fine, 
+  title={Fine-Tuning can Distort Pretrained Features and Underperform Out-of-Distribution},
+  author={Kumar, Ananya and Raghunathan, Aditi and Jones, Robbie and Ma, Tengyu and Liang, Percy},
+  journal={arXiv preprint arXiv:2202.10054},
+  year={2022}
+}
+
+%% Bias related work
+@article{berg2022prompt,
+  title={A Prompt Array Keeps the Bias Away: Debiasing Vision-Language Models with Adversarial Learning},
+  author={Berg, Hugo and Hall, Siobhan Mackenzie and Bhalgat, Yash and Yang, Wonsuk and Kirk, Hannah Rose and Shtedritski, Aleksandar and Bain, Max},
+  journal={arXiv preprint arXiv:2203.11933},
+  year={2022}
+}
+
+@article{singla2022core,
+  title={Core Risk Minimization using Salient ImageNet},
+  author={Singla, Sahil and Moayeri, Mazda and Feizi, Soheil},
+  journal={arXiv preprint arXiv:2203.15566},
+  year={2022}
+}
+
+%% Untapped frozen embeddings
+@article{levine2022standing,
+  title={Standing on the Shoulders of Giant Frozen Language Models},
+  author={Levine, Yoav and Dalmedigos, Itay and Ram, Ori and Zeldes, Yoel and Jannai, Daniel and Muhlgay, Dor and Osin, Yoni and Lieber, Opher and Lenz, Barak and Shalev-Shwartz, Shai and others},
+  journal={arXiv preprint arXiv:2204.10019},
+  year={2022}
+}
+
+% -------------------
+
+% Adapters and friends -----
+
+%% LoRA
+%%
+@article{hu2021lora,
+  title={Lora: Low-rank adaptation of large language models},
+  author={Hu, Edward J and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zeyuan and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu},
+  journal={arXiv preprint arXiv:2106.09685},
+  year={2021}
+}
+
+%% Image adapters
+
+%%% OG image adapter
+@inproceedings{Rebuffi17, 
+  author       = "Rebuffi, S-A and Bilen, H. and Vedaldi, A.",
+  title        = "Learning multiple visual domains with residual adapters",
+  booktitle    = "Advances in Neural Information Processing Systems",
+  year         = "2017",
+}
+
+@article{gao2021clip,   
+  title={Clip-adapter: Better vision-language models with feature adapters},
+  author={Gao, Peng and Geng, Shijie and Zhang, Renrui and Ma, Teli and Fang, Rongyao and Zhang, Yongfeng and Li, Hongsheng and Qiao, Yu},
+  journal={arXiv preprint arXiv:2110.04544},
+  year={2021}
+}
+
+@article{zhang2021tip, 
+  title={Tip-Adapter: Training-free CLIP-Adapter for Better Vision-Language Modeling},
+  author={Zhang, Renrui and Fang, Rongyao and Gao, Peng and Zhang, Wei and Li, Kunchang and Dai, Jifeng and Qiao, Yu and Li, Hongsheng},
+  journal={arXiv preprint arXiv:2111.03930},
+  year={2021}
+}
+
+%% Text adapters
+
+%%% OG text adapter
+@inproceedings{pmlr-v97-houlsby19a,   
+  title =    {Parameter-Efficient Transfer Learning for {NLP}},
+  author =       {Houlsby, Neil and Giurgiu, Andrei and Jastrzebski, Stanislaw and Morrone, Bruna and De Laroussilhe, Quentin and Gesmundo, Andrea and Attariyan, Mona and Gelly, Sylvain},
+  booktitle =    {Proceedings of the 36th International Conference on Machine Learning},
+  pages =    {2790--2799},
+  year =     {2019},
+  editor =   {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume =   {97},
+  series =   {Proceedings of Machine Learning Research},
+  month =    {09--15 Jun},
+  publisher =    {PMLR},
+  pdf =      {http://proceedings.mlr.press/v97/houlsby19a/houlsby19a.pdf},
+  url =      {https://proceedings.mlr.press/v97/houlsby19a.html},
+  abstract =     {Fine-tuning large pretrained models is an effective transfer mechanism in NLP. However, in the presence of many downstream tasks, fine-tuning is parameter inefficient: an entire new model is required for every task. As an alternative, we propose transfer with adapter modules. Adapter modules yield a compact and extensible model; they add only a few trainable parameters per task, and new tasks can be added without revisiting previous ones. The parameters of the original network remain fixed, yielding a high degree of parameter sharing. To demonstrate adapter’s effectiveness, we transfer the recently proposed BERT Transformer model to $26$ diverse text classification tasks, including the GLUE benchmark. Adapters attain near state-of-the-art performance, whilst adding only a few parameters per task. On GLUE, we attain within $0.8\%$ of the performance of full fine-tuning, adding only $3.6\%$ parameters per task. By contrast, fine-tuning trains $100\%$ of the parameters per task.}
+}
+
+@inproceedings{pfeiffer-etal-2020-adapterhub, 
+    title = "{A}dapter{H}ub: A Framework for Adapting Transformers",
+    author = {Pfeiffer, Jonas  and
+      R{\"u}ckl{\'e}, Andreas  and
+      Poth, Clifton  and
+      Kamath, Aishwarya  and
+      Vuli{\'c}, Ivan  and
+      Ruder, Sebastian  and
+      Cho, Kyunghyun  and
+      Gurevych, Iryna},
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+    month = oct,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-demos.7",
+    doi = "10.18653/v1/2020.emnlp-demos.7",
+    pages = "46--54",
+    abstract = "The current modus operandi in NLP involves downloading and fine-tuning pre-trained models consisting of millions or billions of parameters. Storing and sharing such large trained models is expensive, slow, and time-consuming, which impedes progress towards more general and versatile NLP methods that learn from and for many tasks. Adapters{---}small learnt bottleneck layers inserted within each layer of a pre-trained model{---} ameliorate this issue by avoiding full fine-tuning of the entire model. However, sharing and integrating adapter layers is not straightforward. We propose AdapterHub, a framework that allows dynamic {``}stiching-in{''} of pre-trained adapters for different tasks and languages. The framework, built on top of the popular HuggingFace Transformers library, enables extremely easy and quick adaptations of state-of-the-art pre-trained models (e.g., BERT, RoBERTa, XLM-R) across tasks and languages. Downloading, sharing, and training adapters is as seamless as possible using minimal changes to the training scripts and a specialized infrastructure. Our framework enables scalable and easy access to sharing of task-specific models, particularly in low-resource scenarios. AdapterHub includes all recent adapter architectures and can be found at AdapterHub.ml",
+}
+
+@inproceedings{pfeiffer-etal-2021-adapterfusion,  
+    title = "{A}dapter{F}usion: Non-Destructive Task Composition for Transfer Learning",
+    author = {Pfeiffer, Jonas  and
+      Kamath, Aishwarya  and
+      R{\"u}ckl{\'e}, Andreas  and
+      Cho, Kyunghyun  and
+      Gurevych, Iryna},
+    booktitle = "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
+    month = apr,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.eacl-main.39",
+    doi = "10.18653/v1/2021.eacl-main.39",
+    pages = "487--503",
+    abstract = "Sequential fine-tuning and multi-task learning are methods aiming to incorporate knowledge from multiple tasks; however, they suffer from catastrophic forgetting and difficulties in dataset balancing. To address these shortcomings, we propose AdapterFusion, a new two stage learning algorithm that leverages knowledge from multiple tasks. First, in the knowledge extraction stage we learn task specific parameters called adapters, that encapsulate the task-specific information. We then combine the adapters in a separate knowledge composition step. We show that by separating the two stages, i.e., knowledge extraction and knowledge composition, the classifier can effectively exploit the representations learned from multiple tasks in a non-destructive manner. We empirically evaluate AdapterFusion on 16 diverse NLU tasks, and find that it effectively combines various types of knowledge at different layers of the model. We show that our approach outperforms traditional strategies such as full fine-tuning as well as multi-task learning. Our code and adapters are available at AdapterHub.ml.",
+}
+
+@inproceedings{wang-etal-2021-k,
+    title = "{K-Adapter}: {I}nfusing {K}nowledge into {P}re-{T}rained {M}odels with {A}dapters",
+    author = "Wang, Ruize  and
+      Tang, Duyu  and
+      Duan, Nan  and
+      Wei, Zhongyu  and
+      Huang, Xuanjing  and
+      Ji, Jianshu  and
+      Cao, Guihong  and
+      Jiang, Daxin  and
+      Zhou, Ming",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-acl.121",
+    doi = "10.18653/v1/2021.findings-acl.121",
+    pages = "1405--1418",
+}
+
+% Robust adapter
+@article{han2021robust,
+  title={Robust transfer learning with pretrained language models through adapters},
+  author={Han, Wenjuan and Pang, Bo and Wu, Yingnian},
+  journal={arXiv preprint arXiv:2108.02340},
+  year={2021}
+}
+
+%% Prompt tuning / engineering
+
+%% CoOP
+@article{zhou2021learning, 
+  title={Learning to prompt for vision-language models},
+  author={Zhou, Kaiyang and Yang, Jingkang and Loy, Chen Change and Liu, Ziwei},
+  journal={arXiv preprint arXiv:2109.01134},
+  year={2021}
+}
+
+%% CocoOP
+@article{zhou2022conditional,
+  title={Conditional Prompt Learning for Vision-Language Models},
+  author={Zhou, Kaiyang and Yang, Jingkang and Loy, Chen Change and Liu, Ziwei},
+  journal={arXiv preprint arXiv:2203.05557},
+  year={2022}
+}
+
+%% Prefix Tuning
+@article{li2021prefix,
+  title={Prefix-tuning: Optimizing continuous prompts for generation},
+  author={Li, Xiang Lisa and Liang, Percy},
+  journal={arXiv preprint arXiv:2101.00190},
+  year={2021}
+}
+
+%% Images
+@article{yao2021cpt,
+  title={Cpt: Colorful prompt tuning for pre-trained vision-language models},
+  author={Yao, Yuan and Zhang, Ao and Zhang, Zhengyan and Liu, Zhiyuan and Chua, Tat-Seng and Sun, Maosong},
+  journal={arXiv preprint arXiv:2109.11797},
+  year={2021}
+}
+
+@article{bahng2022visual, 
+  title={Visual Prompting: Modifying Pixel Space to Adapt Pre-trained Models},
+  author={Bahng, Hyojin and Jahanian, Ali and Sankaranarayanan, Swami and Isola, Phillip},
+  journal={arXiv preprint arXiv:2203.17274},
+  year={2022}
+}
+
+
+
+% -------------------
+
+% Robustness
+% -------------------
+
+%% Problems
+@inproceedings{beery2018recognition,
+  title={Recognition in terra incognita},
+  author={Beery, Sara and Van Horn, Grant and Perona, Pietro},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+  pages={456--473},
+  year={2018}
+}
+
+@inproceedings{buolamwini2018gender,
+  title={Gender shades: Intersectional accuracy disparities in commercial gender classification},
+  author={Buolamwini, Joy and Gebru, Timnit},
+  booktitle={Conference on fairness, accountability and transparency},
+  pages={77--91},
+  year={2018},
+  organization={PMLR}
+}
+
+@article{blodgett2016demographic,
+  title={Demographic dialectal variation in social media: A case study of African-American English},
+  author={Blodgett, Su Lin and Green, Lisa and O'Connor, Brendan},
+  journal={arXiv preprint arXiv:1608.08868},
+  year={2016}
+}
+
+% Failing at minority groups
+@inproceedings{hashimoto2018fairness,
+  title={Fairness without demographics in repeated loss minimization},
+  author={Hashimoto, Tatsunori and Srivastava, Megha and Namkoong, Hongseok and Liang, Percy},
+  booktitle={International Conference on Machine Learning},
+  pages={1929--1938},
+  year={2018},
+  organization={PMLR}
+}
+
+%%% Hidden Strat
+@inproceedings{oakden2020hidden,
+  title={Hidden stratification causes clinically meaningful failures in machine learning for medical imaging},
+  author={Oakden-Rayner, Luke and Dunnmon, Jared and Carneiro, Gustavo and R{\'e}, Christopher},
+  booktitle={Proceedings of the ACM conference on health, inference, and learning},
+  pages={151--159},
+  year={2020}
+}
+
+% -------------------
+%%% Methods
+
+% Last layer retraining
+@article{kirichenko2022last,
+  title={Last Layer Re-Training is Sufficient for Robustness to Spurious Correlations},
+  author={Kirichenko, Polina and Izmailov, Pavel and Wilson, Andrew Gordon},
+  journal={arXiv preprint arXiv:2204.02937},
+  year={2022}
+}
+
+%% IRM
+@article{arjovsky2019invariant,
+  title={Invariant risk minimization},
+  author={Arjovsky, Martin and Bottou, L{\'e}on and Gulrajani, Ishaan and Lopez-Paz, David},
+  journal={arXiv preprint arXiv:1907.02893},
+  year={2019}
+}
+
+@inproceedings{sohoni2020no, 
+ author = {Sohoni, Nimit and Dunnmon, Jared and Angus, Geoffrey and Gu, Albert and R\'{e}, Christopher},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {19339--19352},
+ title = {No Subclass Left Behind: Fine-Grained Robustness in Coarse-Grained Classification Problems},
+ volume = {33},
+ year = {2020}
+}
+
+%% Lff
+@inproceedings{nam2020learning,
+ author = {Nam, Junhyun and Cha, Hyuntak and Ahn, Sungsoo and Lee, Jaeho and Shin, Jinwoo},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {20673--20684},
+ title = {Learning from Failure: De-biasing Classifier from Biased Classifier},
+ volume = {33},
+ year = {2020}
+}
+
+%% JTT 
+@inproceedings{liu2021just,
+  title={Just Train Twice: Improving Group Robustness without Training Group Information},
+  author={Liu, Evan Z and Haghgoo, Behzad and Chen, Annie S and Raghunathan, Aditi and Koh, Pang Wei and Sagawa, Shiori and Liang, Percy and Finn, Chelsea},
+  booktitle={International Conference on Machine Learning},
+  pages={6781--6792},
+  year={2021},
+  organization={PMLR}
+}
+
+%%SUBY
+@article{idrissi2021simple,
+  title={Simple data balancing achieves competitive worst-group-accuracy},
+  author={Idrissi, Badr Youbi and Arjovsky, Martin and Pezeshki, Mohammad and Lopez-Paz, David},
+  journal={arXiv preprint arXiv:2110.14503},
+  year={2021}
+}
+
+%% SSA
+@article{nam2022spread,
+  title={Spread Spurious Attribute: Improving Worst-group Accuracy with Spurious Attribute Estimation},
+  author={Nam, Junhyun and Kim, Jaehyung and Lee, Jaeho and Shin, Jinwoo},
+  journal={arXiv preprint arXiv:2204.02070},
+  year={2022}
+}
+
+
+
+%% Easy to learn features
+@inproceedings{arpit2017closer,
+  title={A closer look at memorization in deep networks},
+  author={Arpit, Devansh and Jastrz{\k{e}}bski, Stanis{\l}aw and Ballas, Nicolas and Krueger, David and Bengio, Emmanuel and Kanwal, Maxinder S and Maharaj, Tegan and Fischer, Asja and Courville, Aaron and Bengio, Yoshua and others},
+  booktitle={International Conference on Machine Learning},
+  pages={233--242},
+  year={2017},
+  organization={PMLR}
+}
+
+@inproceedings{sagawa2020investigation,
+  title={An investigation of why overparameterization exacerbates spurious correlations},
+  author={Sagawa, Shiori and Raghunathan, Aditi and Koh, Pang Wei and Liang, Percy},
+  booktitle={International Conference on Machine Learning},
+  pages={8346--8356},
+  year={2020},
+  organization={PMLR}
+}
+
+@article{zhang2022correct,
+  title={Correct-N-Contrast: A Contrastive Approach for Improving Robustness to Spurious Correlations},
+  author={Zhang, Michael and Sohoni, Nimit S and Zhang, Hongyang R and Finn, Chelsea and R{\'e}, Christopher},
+  journal={arXiv preprint arXiv:2203.01517},
+  year={2022}
+}
+
+@article{ge2021robust,
+  title={Robust Contrastive Learning Using Negative Samples with Diminished Semantics},
+  author={Ge, Songwei and Mishra, Shlok and Li, Chun-Liang and Wang, Haohan and Jacobs, David},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021}
+}
+
+%%% PGI
+@inproceedings{Ahmed2021SystematicGW,
+  title={Systematic generalisation with group invariant predictions},
+  author={Faruk Ahmed and Yoshua Bengio and Harm van Seijen and Aaron C. Courville},
+  booktitle={ICLR},
+  year={2021}
+}
+
+@inproceedings{creager2021environment,
+  title={Environment inference for invariant learning},
+  author={Creager, Elliot and Jacobsen, J{\"o}rn-Henrik and Zemel, Richard},
+  booktitle={International Conference on Machine Learning},
+  pages={2189--2200},
+  year={2021},
+  organization={PMLR}
+}
+
+% Methods that rely on subgroup labels
+%% Group DRO
+@inproceedings{sagawa2019distributionally,
+  title={Distributionally robust neural networks for group shifts: On the importance of regularization for worst-case generalization},
+  author={Sagawa, Shiori and Koh, Pang Wei and Hashimoto, Tatsunori B and Liang, Percy},
+  booktitle={International Conference on Learning Representations},
+  year={2019}
+}
+
+%% Model Patching
+@inproceedings{goel2020model, 
+  title={Model Patching: Closing the Subgroup Performance Gap with Data Augmentation},
+  author={Goel, Karan and Gu, Albert and Li, Yixuan and R{\'e}, Christopher},
+  booktitle={International Conference on Learning Representations},
+  year={2020}
+}
+
+%% Other data transformation
+@article{taghanaki2021robust, 
+  title={Robust Representation Learning via Perceptual Similarity Metrics},
+  author={Taghanaki, Saeid Asgari and Choi, Kristy and Khasahmadi, Amir and Goyal, Anirudh},
+  journal={arXiv preprint arXiv:2106.06620},
+  year={2021}
+}
+
+%% Older Stuff
+%% Rebalancing Error / Class imbalance
+@article{he2009learning,
+  title={Learning from imbalanced data},
+  author={He, Haibo and Garcia, Edwardo A},
+  journal={IEEE Transactions on knowledge and data engineering},
+  volume={21},
+  number={9},
+  pages={1263--1284},
+  year={2009},
+  publisher={Ieee}
+}
+
+@inproceedings{cui2019class, 
+  title={Class-balanced loss based on effective number of samples},
+  author={Cui, Yin and Jia, Menglin and Lin, Tsung-Yi and Song, Yang and Belongie, Serge},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={9268--9277},
+  year={2019}
+}
+%%% Importance reweighting
+@article{shimodaira2000improving,  
+  title={Improving predictive inference under covariate shift by weighting the log-likelihood function},
+  author={Shimodaira, Hidetoshi},
+  journal={Journal of statistical planning and inference},
+  volume={90},
+  number={2},
+  pages={227--244},
+  year={2000},
+  publisher={Elsevier}
+}
+
+@inproceedings{byrd2019effect,
+  title={What is the effect of importance weighting in deep learning?},
+  author={Byrd, Jonathon and Lipton, Zachary},
+  booktitle={International Conference on Machine Learning},
+  pages={872--881},
+  year={2019},
+  organization={PMLR}
+}
+
+%% End Methods
+% ----------------
+
+%% Datasets -----------------
+
+%% WILDS
+@inproceedings{koh2021wilds, 
+  title={Wilds: A benchmark of in-the-wild distribution shifts},
+  author={Koh, Pang Wei and Sagawa, Shiori and Xie, Sang Michael and Zhang, Marvin and Balsubramani, Akshay and Hu, Weihua and Yasunaga, Michihiro and Phillips, Richard Lanas and Gao, Irena and Lee, Tony and others},
+  booktitle={International Conference on Machine Learning},
+  pages={5637--5664},
+  year={2021},
+  organization={PMLR}
+}
+
+%% Waterbirds
+@techreport{WelinderEtal2010,
+	Author = {P. Welinder and S. Branson and T. Mita and C. Wah and F. Schroff and S. Belongie and P. Perona},
+	Institution = {California Institute of Technology},
+	Number = {CNS-TR-2010-001},
+	Title = {{Caltech-UCSD Birds 200}},
+	Year = {2010}
+}
+
+%% CelebA
+@inproceedings{liu2015deep, 
+  title={Deep learning face attributes in the wild},
+  author={Liu, Ziwei and Luo, Ping and Wang, Xiaogang and Tang, Xiaoou},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={3730--3738},
+  year={2015}
+}
+
+%% BREEDS
+@article{santurkar2020breeds,
+  title={Breeds: Benchmarks for subpopulation shift},
+  author={Santurkar, Shibani and Tsipras, Dimitris and Madry, Aleksander},
+  journal={arXiv preprint arXiv:2008.04859},
+  year={2020}
+}
+
+%% OXFORD pets
+@inproceedings{parkhi2012cats,
+  title={Cats and dogs},
+  author={Parkhi, Omkar M and Vedaldi, Andrea and Zisserman, Andrew and Jawahar, CV},
+  booktitle={2012 IEEE conference on computer vision and pattern recognition},
+  pages={3498--3505},
+  year={2012},
+  organization={IEEE}
+}
+
+%% CIFAR-10
+@inproceedings{Krizhevsky2009LearningML,
+  title={Learning Multiple Layers of Features from Tiny Images},
+  author={Alex Krizhevsky},
+  year={2009}
+}
+
+%% CIFAR-10.1
+@article{recht2018cifar,
+  title={Do CIFAR-10 classifiers generalize to CIFAR-10?},
+  author={Recht, Benjamin and Roelofs, Rebecca and Schmidt, Ludwig and Shankar, Vaishaal},
+  journal={arXiv preprint arXiv:1806.00451},
+  year={2018}
+}
+
+%% CIFAR-10.2
+@inproceedings{lu2020harder,
+  title={Harder or different? a closer look at distribution shift in dataset reproduction},
+  author={Lu, Shangyun and Nott, Bradley and Olson, Aaron and Todeschini, Alberto and Vahabi, Hossein and Carmon, Yair and Schmidt, Ludwig},
+  booktitle={ICML Workshop on Uncertainty and Robustness in Deep Learning},
+  year={2020}
+}
+
+%% FMoW
+@inproceedings{christie2018functional,
+  title={Functional map of the world},
+  author={Christie, Gordon and Fendley, Neil and Wilson, James and Mukherjee, Ryan},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={6172--6180},
+  year={2018}
+}
+
+%% iWildCam
+@article{beery2021iwildcam,
+  title={The iWildCam 2021 competition dataset},
+  author={Beery, Sara and Agarwal, Arushi and Cole, Elijah and Birodkar, Vighnesh},
+  journal={arXiv preprint arXiv:2105.03494},
+  year={2021}
+}
+
+%% CivilComments
+@article{DBLP:journals/corr/abs-1903-04561,
+  author    = {Daniel Borkan and
+               Lucas Dixon and
+               Jeffrey Sorensen and
+               Nithum Thain and
+               Lucy Vasserman},
+  title     = {Nuanced Metrics for Measuring Unintended Bias with Real Data for Text
+               Classification},
+  journal   = {CoRR},
+  volume    = {abs/1903.04561},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1903.04561},
+  eprinttype = {arXiv},
+  eprint    = {1903.04561},
+  timestamp = {Sun, 31 Mar 2019 19:01:24 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1903-04561.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+%% Amazon
+@inproceedings{ni-etal-2019-justifying,
+    title = "Justifying Recommendations using Distantly-Labeled Reviews and Fine-Grained Aspects",
+    author = "Ni, Jianmo  and
+      Li, Jiacheng  and
+      McAuley, Julian",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1018",
+    doi = "10.18653/v1/D19-1018",
+    pages = "188--197",
+    abstract = "Several recent works have considered the problem of generating reviews (or {`}tips{'}) as a form of explanation as to why a recommendation might match a customer{'}s interests. While promising, we demonstrate that existing approaches struggle (in terms of both quality and content) to generate justifications that are relevant to users{'} decision-making process. We seek to introduce new datasets and methods to address the recommendation justification task. In terms of data, we first propose an {`}extractive{'} approach to identify review segments which justify users{'} intentions; this approach is then used to distantly label massive review corpora and construct large-scale personalized recommendation justification datasets. In terms of generation, we are able to design two personalized generation models with this data: (1) a reference-based Seq2Seq model with aspect-planning which can generate justifications covering different aspects, and (2) an aspect-conditional masked language model which can generate diverse justifications based on templates extracted from justification histories. We conduct experiments on two real-world datasets which show that our model is capable of generating convincing and diverse justifications.",
+}
+
+%% MultiNLI
+@inproceedings{williams-etal-2018-broad,
+    title = "A Broad-Coverage Challenge Corpus for Sentence Understanding through Inference",
+    author = "Williams, Adina  and
+      Nangia, Nikita  and
+      Bowman, Samuel",
+    booktitle = "Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)",
+    month = jun,
+    year = "2018",
+    address = "New Orleans, Louisiana",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N18-1101",
+    doi = "10.18653/v1/N18-1101",
+    pages = "1112--1122",
+    abstract = "This paper introduces the Multi-Genre Natural Language Inference (MultiNLI) corpus, a dataset designed for use in the development and evaluation of machine learning models for sentence understanding. At 433k examples, this resource is one of the largest corpora available for natural language inference (a.k.a. recognizing textual entailment), improving upon available resources in both its coverage and difficulty. MultiNLI accomplishes this by offering data from ten distinct genres of written and spoken English, making it possible to evaluate systems on nearly the full complexity of the language, while supplying an explicit setting for evaluating cross-genre domain adaptation. In addition, an evaluation using existing machine learning models designed for the Stanford NLI corpus shows that it represents a substantially more difficult task than does that corpus, despite the two showing similar levels of inter-annotator agreement.",
+}
+
+% ---- Contrastive
+
+% InfoNCE
+@article{oord2018representation,
+  title={Representation learning with contrastive predictive coding},
+  author={Oord, Aaron van den and Li, Yazhe and Vinyals, Oriol},
+  journal={arXiv preprint arXiv:1807.03748},
+  year={2018}
+}
+% SimCLR
+@inproceedings{chen2020simple,
+  title={A simple framework for contrastive learning of visual representations},
+  author={Chen, Ting and Kornblith, Simon and Norouzi, Mohammad and Hinton, Geoffrey},
+  booktitle={International conference on machine learning},
+  pages={1597--1607},
+  year={2020},
+  organization={PMLR}
+}
+
+%%% Hard negatives, class collisions
+@inproceedings{Robinson2020ContrastiveLW,
+  title={Contrastive Learning with Hard Negative Samples},
+  author={J. Robinson and Ching-Yao Chuang and S. Sra and S. Jegelka},
+  booktitle={International Conference on Learning Representations},
+  year={2021},
+}
+
+%%% SupCon
+@inproceedings{Khosla2020Supcon, 
+ author = {Khosla, Prannay and Teterwak, Piotr and Wang, Chen and Sarna, Aaron and Tian, Yonglong and Isola, Phillip and Maschinot, Aaron and Liu, Ce and Krishnan, Dilip},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {18661--18673},
+ title = {Supervised Contrastive Learning},
+ volume = {33},
+ year = {2020}
+}
+
+%% Lipschitz
+
+@article{fazlyab2019efficient,
+  title={Efficient and accurate estimation of lipschitz constants for deep neural networks},
+  author={Fazlyab, Mahyar and Robey, Alexander and Hassani, Hamed and Morari, Manfred and Pappas, George},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+@article{virmaux2018lipschitz,
+  title={Lipschitz regularity of deep neural networks: analysis and efficient estimation},
+  author={Virmaux, Aladin and Scaman, Kevin},
+  journal={Advances in Neural Information Processing Systems},
+  volume={31},
+  year={2018}
+}
+
+@article{gouk2021regularisation,
+  title={Regularisation of neural networks by enforcing lipschitz continuity},
+  author={Gouk, Henry and Frank, Eibe and Pfahringer, Bernhard and Cree, Michael J},
+  journal={Machine Learning},
+  volume={110},
+  number={2},
+  pages={393--416},
+  year={2021},
+  publisher={Springer}
+}
+
+@article{yoshida2017spectral, 
+  title={Spectral norm regularization for improving the generalizability of deep learning},
+  author={Yoshida, Yuichi and Miyato, Takeru},
+  journal={arXiv preprint arXiv:1705.10941},
+  year={2017}
+}
+
+@article{neyshabur2017pac,
+  title={A pac-bayesian approach to spectrally-normalized margin bounds for neural networks},
+  author={Neyshabur, Behnam and Bhojanapalli, Srinadh and Srebro, Nathan},
+  journal={arXiv preprint arXiv:1707.09564},
+  year={2017}
+}
+
+@article{jordan2020exactly,
+  title={Exactly computing the local lipschitz constant of relu networks},
+  author={Jordan, Matt and Dimakis, Alexandros G},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={7344--7353},
+  year={2020}
+}
+
+% Model Editing
+% -------------------
+
+% Continual Learning
+% -------------------
+
+
+
+
+
+@article{bommasani2021opportunities, 
+  title={On the opportunities and risks of foundation models},
+  author={Bommasani, Rishi and Hudson, Drew A and Adeli, Ehsan and Altman, Russ and Arora, Simran and von Arx, Sydney and Bernstein, Michael S and Bohg, Jeannette and Bosselut, Antoine and Brunskill, Emma and others},
+  journal={arXiv preprint arXiv:2108.07258},
+  year={2021}
+}
+
+% Resiudal Connection
+@inproceedings{he2016deep,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={770--778},
+  year={2016}
+}
+
+% Batch norm
+@inproceedings{ioffe2015batch,
+  title={Batch normalization: Accelerating deep network training by reducing internal covariate shift},
+  author={Ioffe, Sergey and Szegedy, Christian},
+  booktitle={International conference on machine learning},
+  pages={448--456},
+  year={2015},
+  organization={PMLR}
+}
+
+% UMAP
+@article{mcinnes2018umap,
+  title={Umap: Uniform manifold approximation and projection for dimension reduction},
+  author={McInnes, Leland and Healy, John and Melville, James},
+  journal={arXiv preprint arXiv:1802.03426},
+  year={2018}
+}

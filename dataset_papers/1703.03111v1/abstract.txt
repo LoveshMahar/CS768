@@ -1,0 +1,18 @@
+We study the cost sharing problem for cooperative games in situations where
+the cost function $C$ is not available via oracle queries, but must instead be
+derived from data, represented as tuples $(S, C(S))$, for different subsets $S$
+of players. We formalize this approach, which we call statistical cost sharing,
+and consider the computation of the core and the Shapley value, when the tuples
+are drawn from some distribution $\mathcal{D}$.
+  Previous work by Balcan et al. in this setting showed how to compute cost
+shares that satisfy the core property with high probability for limited classes
+of functions. We expand on their work and give an algorithm that computes such
+cost shares for any function with a non-empty core. We complement these results
+by proving an inapproximability lower bound for a weaker relaxation.
+  We then turn our attention to the Shapley value. We first show that when cost
+functions come from the family of submodular functions with bounded curvature,
+$\kappa$, the Shapley value can be approximated from samples up to a $\sqrt{1 -
+\kappa}$ factor, and that the bound is tight. We then define statistical
+analogues of the Shapley axioms, and derive a notion of statistical Shapley
+value. We show that these can always be approximated arbitrarily well for
+general functions over any distribution $\mathcal{D}$.

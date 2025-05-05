@@ -1,0 +1,792 @@
+%----------------------------- Introduction -------------------------------------
+@article{vinyals2019grandmaster,
+  title={Grandmaster level in StarCraft II using multi-agent reinforcement learning},
+  author={Vinyals, Oriol and Babuschkin, Igor and Czarnecki, Wojciech M and Mathieu, Micha{\"e}l and Dudzik, Andrew and Chung, Junyoung and Choi, David H and Powell, Richard and Ewalds, Timo and Georgiev, Petko and others},
+  journal={Nature},
+  volume={575},
+  number={7782},
+  pages={350--354},
+  year={2019},
+  publisher={Nature Publishing Group}
+}   % StarCraft
+
+@article{berner2019dota,
+  title={Dota 2 with large scale deep reinforcement learning},
+  author={Berner, Christopher and Brockman, Greg and Chan, Brooke and Cheung, Vicki and D{\k{e}}biak, Przemys{\l}aw and Dennison, Christy and Farhi, David and Fischer, Quirin and Hashme, Shariq and Hesse, Chris and others},
+  journal={arXiv preprint arXiv:1912.06680},
+  year={2019}
+}   % DoTA2
+
+@inproceedings{Tsividis2017HumanLI,
+  title={Human Learning in Atari},
+  author={Pedro Tsividis and Thomas Pouncy and J. L. Xu and J. Tenenbaum and S. Gershman},
+  booktitle={AAAI Spring Symposia},
+  year={2017}
+}   % Human learning
+
+%---- robotic control
+@inproceedings{zhang2019solar,
+  title={Solar: Deep structured representations for model-based reinforcement learning},
+  author={Zhang, Marvin and Vikram, Sharad and Smith, Laura and Abbeel, Pieter and Johnson, Matthew and Levine, Sergey},
+  booktitle={International Conference on Machine Learning},
+  pages={7444--7453},
+  year={2019},
+  organization={PMLR}
+}
+
+@article{nagabandi2018learning,
+  title={Learning to adapt in dynamic, real-world environments through meta-reinforcement learning},
+  author={Nagabandi, Anusha and Clavera, Ignasi and Liu, Simin and Fearing, Ronald S and Abbeel, Pieter and Levine, Sergey and Finn, Chelsea},
+  journal={arXiv preprint arXiv:1803.11347},
+  year={2018}
+}
+
+@article{kalashnikov2018qt,
+  title={Qt-opt: Scalable deep reinforcement learning for vision-based robotic manipulation},
+  author={Kalashnikov, Dmitry and Irpan, Alex and Pastor, Peter and Ibarz, Julian and Herzog, Alexander and Jang, Eric and Quillen, Deirdre and Holly, Ethan and Kalakrishnan, Mrinal and Vanhoucke, Vincent and others},
+  journal={arXiv preprint arXiv:1806.10293},
+  year={2018}
+}
+
+
+@article{lake2017building,
+  title={Building machines that learn and think like people},
+  author={Lake, Brenden M and Ullman, Tomer D and Tenenbaum, Joshua B and Gershman, Samuel J},
+  journal={Behavioral and brain sciences},
+  volume={40},
+  year={2017},
+  publisher={Cambridge University Press}
+}
+
+@article{yu2019reinforcement,
+  title={Reinforcement learning in healthcare: A survey},
+  author={Yu, Chao and Liu, Jiming and Nemati, Shamim},
+  journal={arXiv preprint arXiv:1908.08796},
+  year={2019}
+}   % RL for healthcare
+
+%----------------------------- Related Work -------------------------------------
+% ------------- Representation Learning for RL
+% Model-based, world model as auxiliary task
+@inproceedings{srinivas2018universal,
+  title={Universal planning networks: Learning generalizable representations for visuomotor control},
+  author={Srinivas, Aravind and Jabri, Allan and Abbeel, Pieter and Levine, Sergey and Finn, Chelsea},
+  booktitle={International Conference on Machine Learning},
+  pages={4732--4741},
+  year={2018},
+  organization={PMLR}
+}
+
+@inproceedings{lee2020slac,
+ author = {Lee, Alex X. and Nagabandi, Anusha and Abbeel, Pieter and Levine, Sergey},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Stochastic Latent Actor-Critic: Deep Reinforcement Learning with a Latent Variable Model},
+ year = {2020}
+}   % SLAC
+
+@article{ha2018world,
+  title={World models},
+  author={Ha, David and Schmidhuber, J{\"u}rgen},
+  journal={arXiv preprint arXiv:1803.10122},
+  year={2018}
+}
+
+@inproceedings{franccois2019combined,
+  title={Combined reinforcement learning via abstract representations},
+  author={Fran{\c{c}}ois-Lavet, Vincent and Bengio, Yoshua and Precup, Doina and Pineau, Joelle},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={33},
+  number={01},
+  pages={3582--3589},
+  year={2019}
+}   % CRAR
+
+@inproceedings{hafner2019learning,
+  title={Learning latent dynamics for planning from pixels},
+  author={Hafner, Danijar and Lillicrap, Timothy and Fischer, Ian and Villegas, Ruben and Ha, David and Lee, Honglak and Davidson, James},
+  booktitle={International Conference on Machine Learning},
+  pages={2555--2565},
+  year={2019},
+  organization={PMLR}
+}   % PlaNet
+
+@inproceedings{
+Hafner2020Dream,
+title={Dream to Control: Learning Behaviors by Latent Imagination},
+author={Danijar Hafner and Timothy Lillicrap and Jimmy Ba and Mohammad Norouzi},
+booktitle={International Conference on Learning Representations},
+year={2020},
+}   % Dreamer
+
+@inproceedings{
+Kaiser2020Model,
+title={Model Based Reinforcement Learning for Atari},
+author={Łukasz Kaiser and Mohammad Babaeizadeh and Piotr Miłos and Błażej Osiński and Roy H Campbell and Konrad Czechowski and Dumitru Erhan and Chelsea Finn and Piotr Kozakowski and Sergey Levine and Afroz Mohiuddin and Ryan Sepassi and George Tucker and Henryk Michalewski},
+booktitle={International Conference on Learning Representations},
+year={2020},
+}   % SimPLe
+
+% Contrastive Losses as auxiliary task
+@article{oord2018representation,
+  title={Representation learning with contrastive predictive coding},
+  author={Oord, Aaron van den and Li, Yazhe and Vinyals, Oriol},
+  journal={arXiv preprint arXiv:1807.03748},
+  year={2018}
+}   % CPC
+
+@article{bialek1999predictive,
+  title={Predictive information},
+  author={Bialek, William and Tishby, Naftali},
+  journal={arXiv preprint cond-mat/9902341},
+  year={1999}
+}   % predictive information
+
+@inproceedings{laskin2020curl,
+  title={Curl: Contrastive unsupervised representations for reinforcement learning},
+  author={Laskin, Michael and Srinivas, Aravind and Abbeel, Pieter},
+  booktitle={International Conference on Machine Learning},
+  pages={5639--5650},
+  year={2020},
+  organization={PMLR}
+}   % CURL
+
+@inproceedings{mazoure2020deep,
+  title={Deep Reinforcement and InfoMax Learning},
+  author={Mazoure, Bogdan and Tachet des Combes, Remi and DOAN, Thang Long and Bachman, Philip and Hjelm, R Devon},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2020}
+}   % DRIML
+
+@article{zhu2020masked,
+  title={Masked Contrastive Representation Learning for Reinforcement Learning},
+  author={Zhu, Jinhua and Xia, Yingce and Wu, Lijun and Deng, Jiajun and Zhou, Wengang and Qin, Tao and Li, Houqiang},
+  journal={arXiv preprint arXiv:2010.07470},
+  year={2020}
+}   % MCURL
+
+@inproceedings{
+liu2021returnbased,
+title={Return-Based Contrastive Representation Learning for Reinforcement  Learning},
+author={Guoqing Liu and Chuheng Zhang and Li Zhao and Tao Qin and Jinhua Zhu and Li Jian and Nenghai Yu and Tie-Yan Liu},
+booktitle={International Conference on Learning Representations},
+year={2021},
+}   % RCRL
+
+% Predictive Representations as auxiliary task
+@article{jaderberg2016reinforcement,
+  title={Reinforcement learning with unsupervised auxiliary tasks},
+  author={Jaderberg, Max and Mnih, Volodymyr and Czarnecki, Wojciech Marian and Schaul, Tom and Leibo, Joel Z and Silver, David and Kavukcuoglu, Koray},
+  journal={arXiv preprint arXiv:1611.05397},
+  year={2016}
+}   % UNREAL
+
+@article{Shelhamer2017LossII,
+  title={Loss is its own Reward: Self-Supervision for Reinforcement Learning},
+  author={Evan Shelhamer and Parsa Mahmoudieh and Max Argus and Trevor Darrell},
+  journal={ArXiv},
+  year={2017},
+  volume={abs/1612.07307}
+}   % loss is its own reward
+
+@inproceedings{guo2020bootstrap,
+  title={Bootstrap latent-predictive representations for multitask reinforcement learning},
+  author={Guo, Zhaohan Daniel and Pires, Bernardo Avila and Piot, Bilal and Grill, Jean-Bastien and Altch{\'e}, Florent and Munos, R{\'e}mi and Azar, Mohammad Gheshlaghi},
+  booktitle={International Conference on Machine Learning},
+  pages={3875--3886},
+  year={2020},
+  organization={PMLR}
+}   % PBL
+
+@article{lee2020predictive,
+  title={Predictive information accelerates learning in {RL}},
+  author={Lee, Kuang-Huei and Fischer, Ian and Liu, Anthony and Guo, Yijie and Lee, Honglak and Canny, John and Guadarrama, Sergio},
+  journal={arXiv preprint arXiv:2007.12401},
+  year={2020}
+}   % PI-SAC
+
+@article{zheng2021learning,
+  title={Learning State Representations from Random Deep Action-conditional Predictions},
+  author={Zheng, Zeyu and Veeriah, Vivek and Vuorio, Risto and Lewis, Richard and Singh, Satinder},
+  journal={arXiv preprint arXiv:2102.04897},
+  year={2021}
+}   % RADAR
+
+@inproceedings{
+schwarzer2021dataefficient,
+title={Data-Efficient Reinforcement Learning with Self-Predictive Representations},
+author={Max Schwarzer and Ankesh Anand and Rishab Goel and R Devon Hjelm and Aaron Courville and Philip Bachman},
+booktitle={International Conference on Learning Representations},
+year={2021}
+}   % SPR
+
+% Reconstruction as auxiliary task
+@article{yarats2019improving,
+  title={Improving sample efficiency in model-free reinforcement learning from images},
+  author={Yarats, Denis and Zhang, Amy and Kostrikov, Ilya and Amos, Brandon and Pineau, Joelle and Fergus, Rob},
+  journal={arXiv preprint arXiv:1910.01741},
+  year={2019}
+}
+
+@inproceedings{higgins2017darla,
+  title={Darla: Improving zero-shot transfer in reinforcement learning},
+  author={Higgins, Irina and Pal, Arka and Rusu, Andrei and Matthey, Loic and Burgess, Christopher and Pritzel, Alexander and Botvinick, Matthew and Blundell, Charles and Lerchner, Alexander},
+  booktitle={International Conference on Machine Learning},
+  pages={1480--1490},
+  year={2017},
+  organization={PMLR}
+}   % DARLA
+
+% Improving RAINBOW
+@inproceedings{van2019der,
+ author = {van Hasselt, Hado P and Hessel, Matteo and Aslanides, John},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {When to use parametric models in reinforcement learning?},
+ year = {2019}
+}   % Data-efficient Rainbow (DER)
+
+@article{kielak2020recent,
+  title={Do recent advancements in model-based deep reinforcement learning really improve data efficiency?},
+  author={Kielak, Kacper},
+  journal={arXiv preprint arXiv:2003.10181},
+  year={2020}
+}   % Over-training Rainbow (OTR)
+
+@inproceedings{hessel2018rainbow,
+  title={Rainbow: Combining improvements in deep reinforcement learning},
+  author={Hessel, Matteo and Modayil, Joseph and Van Hasselt, Hado and Schaul, Tom and Ostrovski, Georg and Dabney, Will and Horgan, Dan and Piot, Bilal and Azar, Mohammad and Silver, David},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={32},
+  number={1},
+  year={2018}
+}   % Rainbow
+
+% Data Augmentation
+@inproceedings{
+yarats2021image,
+title={Image Augmentation Is All You Need: Regularizing Deep Reinforcement Learning from Pixels},
+author={Denis Yarats and Ilya Kostrikov and Rob Fergus},
+booktitle={International Conference on Learning Representations},
+year={2021}
+}   % DrQ
+
+@inproceedings{laskin2020reinforcement,
+  title={Reinforcement Learning with Augmented Data},
+  author={Laskin, Misha and Lee, Kimin and Stooke, Adam and Pinto, Lerrel and Abbeel, Pieter and Srinivas, Aravind},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2020}
+}   % RAD
+
+% ------------- Representation Learning for RL
+@article{devlin2018bert,
+  title={Bert: Pre-training of deep bidirectional transformers for language understanding},
+  author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  journal={arXiv preprint arXiv:1810.04805},
+  year={2018}
+}   % BERT
+
+@article{liu2019roberta,
+  title={Roberta: A robustly optimized bert pretraining approach},
+  author={Liu, Yinhan and Ott, Myle and Goyal, Naman and Du, Jingfei and Joshi, Mandar and Chen, Danqi and Levy, Omer and Lewis, Mike and Zettlemoyer, Luke and Stoyanov, Veselin},
+  journal={arXiv preprint arXiv:1907.11692},
+  year={2019}
+}   % RoBERTa
+
+@inproceedings{he2020momentum,
+  title={Momentum contrast for unsupervised visual representation learning},
+  author={He, Kaiming and Fan, Haoqi and Wu, Yuxin and Xie, Saining and Girshick, Ross},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={9729--9738},
+  year={2020}
+}   % MoCo
+
+@inproceedings{chen2020simple,
+  title={A simple framework for contrastive learning of visual representations},
+  author={Chen, Ting and Kornblith, Simon and Norouzi, Mohammad and Hinton, Geoffrey},
+  booktitle={International Conference on Machine Learning},
+  pages={1597--1607},
+  year={2020},
+  organization={PMLR}
+}   % SimCLR
+
+@article{chen2020improved,
+  title={Improved baselines with momentum contrastive learning},
+  author={Chen, Xinlei and Fan, Haoqi and Girshick, Ross and He, Kaiming},
+  journal={arXiv preprint arXiv:2003.04297},
+  year={2020}
+}   % Moco v2
+
+@inproceedings{caron2020unsupervised,
+  title={Unsupervised Learning of Visual Features by Contrasting Cluster Assignments},
+  author={Caron, Mathilde and Misra, Ishan and Mairal, Julien and Goyal, Priya and Bojanowski, Piotr and Joulin, Armand},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2020}
+}   % SWAV
+
+@inproceedings{grill2020byol,
+ author = {Grill, Jean-Bastien and Strub, Florian and Altch\'{e}, Florent and Tallec, Corentin and Richemond, Pierre and Buchatskaya, Elena and Doersch, Carl and Avila Pires, Bernardo and Guo, Zhaohan and Gheshlaghi Azar, Mohammad and Piot, Bilal and kavukcuoglu, koray and Munos, Remi and Valko, Michal},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Bootstrap Your Own Latent - A New Approach to Self-Supervised Learning},
+ year = {2020}
+}   % BYOL
+
+
+@inproceedings{anand2019stdim,
+ author = {Anand, Ankesh and Racah, Evan and Ozair, Sherjil and Bengio, Yoshua and C\^{o}t\'{e}, Marc-Alexandre and Hjelm, R Devon},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Unsupervised State Representation Learning in Atari},
+ year = {2019}
+}   % ST-DIM
+
+@article{guo2018neural,
+  title={Neural predictive belief representations},
+  author={Guo, Zhaohan Daniel and Azar, Mohammad Gheshlaghi and Piot, Bilal and Pires, Bernardo A and Munos, R{\'e}mi},
+  journal={arXiv preprint arXiv:1811.06407},
+  year={2018}
+}   % CPC|Action
+
+@article{stooke2020decoupling,
+  title={Decoupling representation learning from reinforcement learning},
+  author={Stooke, Adam and Lee, Kimin and Abbeel, Pieter and Laskin, Michael},
+  journal={arXiv preprint arXiv:2009.08319},
+  year={2020}
+}   % ATC
+
+@inproceedings{hjelm2018learning,
+  title={Learning deep representations by mutual information estimation and maximization},
+  author={Hjelm, R Devon and Fedorov, Alex and Lavoie-Marchildon, Samuel and Grewal, Karan and Bachman, Phil and Trischler, Adam and Bengio, Yoshua},
+  booktitle={International Conference on Learning Representations},
+  year={2018}
+}   % DIM
+
+@article{fischer2020conditional,
+  title={The conditional entropy bottleneck},
+  author={Fischer, Ian},
+  journal={Entropy},
+  volume={22},
+  number={9},
+  pages={999},
+  year={2020},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}   % CEB
+
+@inproceedings{
+Kipf2020Contrastive,
+title={Contrastive Learning of Structured World Models},
+author={Thomas Kipf and Elise van der Pol and Max Welling},
+booktitle={International Conference on Learning Representations},
+year={2020}
+}   % C-SWMs
+
+% ------------- Cycle Consistency
+% Cycle consistency in I2I translation
+@inproceedings{zhu2017unpaired,
+  title={Unpaired image-to-image translation using cycle-consistent adversarial networks},
+  author={Zhu, Jun-Yan and Park, Taesung and Isola, Phillip and Efros, Alexei A},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+  pages={2223--2232},
+  year={2017}
+}   % CycleGAN
+
+@inproceedings{yi2017dualgan,
+  title={Dualgan: Unsupervised dual learning for image-to-image translation},
+  author={Yi, Zili and Zhang, Hao and Tan, Ping and Gong, Minglun},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+  pages={2849--2857},
+  year={2017}
+}   % DualGAN
+
+@inproceedings{kim2017learning,
+  title={Learning to discover cross-domain relations with generative adversarial networks},
+  author={Kim, Taeksoo and Cha, Moonsu and Kim, Hyunsoo and Lee, Jung Kwon and Kim, Jiwon},
+  booktitle={International Conference on Machine Learning},
+  pages={1857--1865},
+  year={2017},
+  organization={PMLR}
+}   % DiscoGAN
+
+
+% Cycle consistency in Sim2Real
+@inproceedings{stein2018genesis,
+  title={Genesis-rt: Generating synthetic images for training secondary real-world tasks},
+  author={Stein, Gregory J and Roy, Nicholas},
+  booktitle={2018 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={7151--7158},
+  year={2018},
+  organization={IEEE}
+}
+
+@inproceedings{james2019sim,
+  title={Sim-to-real via sim-to-sim: Data-efficient robotic grasping via randomized-to-canonical adaptation networks},
+  author={James, Stephen and Wohlhart, Paul and Kalakrishnan, Mrinal and Kalashnikov, Dmitry and Irpan, Alex and Ibarz, Julian and Levine, Sergey and Hadsell, Raia and Bousmalis, Konstantinos},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={12627--12637},
+  year={2019}
+}
+
+@inproceedings{rao2020rl,
+  title={Rl-cyclegan: Reinforcement learning aware simulation-to-real},
+  author={Rao, Kanishka and Harris, Chris and Irpan, Alex and Levine, Sergey and Ibarz, Julian and Khansari, Mohi},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={11157--11166},
+  year={2020}
+}
+
+@article{zhang2020learning,
+  title={Learning Cross-Domain Correspondence for Control with Dynamics Cycle-Consistency},
+  author={Zhang, Qiang and Xiao, Tete and Efros, Alexei A and Pinto, Lerrel and Wang, Xiaolong},
+  journal={arXiv preprint arXiv:2012.09811},
+  year={2020}
+}
+
+% Cycle consistency in imitation learning
+@article{smith2019avid,
+  title={Avid: Learning multi-stage tasks via pixel-level translation of human videos},
+  author={Smith, Laura and Dhawan, Nikita and Zhang, Marvin and Abbeel, Pieter and Levine, Sergey},
+  journal={arXiv preprint arXiv:1912.04443},
+  year={2019}
+}
+
+% Cycle consistency in UDA
+@inproceedings{hoffman2018cycada,
+  title={Cycada: Cycle-consistent adversarial domain adaptation},
+  author={Hoffman, Judy and Tzeng, Eric and Park, Taesung and Zhu, Jun-Yan and Isola, Phillip and Saenko, Kate and Efros, Alexei and Darrell, Trevor},
+  booktitle={International Conference on Machine Learning},
+  pages={1989--1998},
+  year={2018},
+  organization={PMLR}
+}   % Cycada
+
+@inproceedings{
+hosseini-asl2018augmented,
+title={Augmented Cyclic Adversarial Learning for Low Resource Domain Adaptation},
+author={Ehsan Hosseini-Asl and Yingbo Zhou and Caiming Xiong and Richard Socher},
+booktitle={International Conference on Learning Representations},
+year={2019}
+}   %  an augmented cyclic adversarial learning model that enforces the cycle-consistency constraint via an external task specific model, which encourages the preservation of task-relevant content as opposed to exact reconstruction. 
+
+@inproceedings{kang2020pixel,
+  title={Pixel-Level Cycle Association: A New Perspective for Domain Adaptive Semantic Segmentation},
+  author={Kang, Guoliang and Wei, Yunchao and Yang, Yi and Zhuang, Yueting and Hauptmann, Alexander},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2020}
+}   % UDA
+
+% Cycle consistency in time
+@inproceedings{wang2019learning,
+  title={Learning correspondence from the cycle-consistency of time},
+  author={Wang, Xiaolong and Jabri, Allan and Efros, Alexei A},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={2566--2576},
+  year={2019}
+}   % unsupervised tracking
+
+@inproceedings{dwibedi2019temporal,
+  title={Temporal cycle-consistency learning},
+  author={Dwibedi, Debidatta and Aytar, Yusuf and Tompson, Jonathan and Sermanet, Pierre and Zisserman, Andrew},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={1801--1810},
+  year={2019}
+}   % 
+
+@article{yang2020back,
+  title={Back to the Future: Cycle Encoding Prediction for Self-supervised Contrastive Video Representation Learning},
+  author={Yang, Xinyu and Mirmehdi, Majid and Burghardt, Tilo},
+  journal={arXiv preprint arXiv:2010.07217},
+  year={2020}
+}
+
+% Cycle consistency in video domain and frame domain
+@inproceedings{kong2020ccl,
+ author = {Kong, Quan and Wei, Wenpeng and Deng, Ziwei and Yoshinaga, Tomoaki and Murakami, Tomokazu},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Cycle-Contrast for Self-Supervised Video Representation Learning},
+ year = {2020}
+}
+
+% Cycle consistency in image matching
+@inproceedings{zhou2015flowweb,
+  title={Flowweb: Joint image set alignment by weaving consistent, pixel-wise correspondences},
+  author={Zhou, Tinghui and Jae Lee, Yong and Yu, Stella X and Efros, Alyosha A},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={1191--1200},
+  year={2015}
+}
+
+@inproceedings{zhou2016learning,
+  title={Learning dense correspondence via 3d-guided cycle consistency},
+  author={Zhou, Tinghui and Krahenbuhl, Philipp and Aubry, Mathieu and Huang, Qixing and Efros, Alexei A},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={117--126},
+  year={2016}
+}
+
+@inproceedings{zhou2015multi,
+  title={Multi-image matching via fast alternating minimization},
+  author={Zhou, Xiaowei and Zhu, Menglong and Daniilidis, Kostas},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+  pages={4032--4040},
+  year={2015}
+}
+
+% other
+@inproceedings{goodfellow2014generative,
+  title={Generative Adversarial Nets},
+  author={Goodfellow, Ian J and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron C and Bengio, Yoshua},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2014}
+}
+
+
+%----------------------------- Background -------------------------------------
+@article{bellman1957markovian,
+  title={A Markovian decision process},
+  author={Bellman, Richard},
+  journal={Journal of mathematics and mechanics},
+  volume={6},
+  number={5},
+  pages={679--684},
+  year={1957},
+  publisher={JSTOR}
+}   % MDP
+
+@article{kaelbling1998planning,
+  title={Planning and acting in partially observable stochastic domains},
+  author={Kaelbling, Leslie Pack and Littman, Michael L and Cassandra, Anthony R},
+  journal={Artificial intelligence},
+  volume={101},
+  number={1-2},
+  pages={99--134},
+  year={1998},
+  publisher={Elsevier}
+}   % POMDP
+
+@article{mnih2013playing,
+  title={Playing atari with deep reinforcement learning},
+  author={Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Graves, Alex and Antonoglou, Ioannis and Wierstra, Daan and Riedmiller, Martin},
+  journal={arXiv preprint arXiv:1312.5602},
+  year={2013}
+}   % practice: POMDP -> MDP
+
+@article{haarnoja2018soft,
+  title={Soft actor-critic algorithms and applications},
+  author={Haarnoja, Tuomas and Zhou, Aurick and Hartikainen, Kristian and Tucker, George and Ha, Sehoon and Tan, Jie and Kumar, Vikash and Zhu, Henry and Gupta, Abhishek and Abbeel, Pieter and others},
+  journal={arXiv preprint arXiv:1812.05905},
+  year={2018}
+}   % SAC
+
+@inproceedings{Ziebart2008MaximumEI,
+  title={Maximum Entropy Inverse Reinforcement Learning},
+  author={Brian D. Ziebart and Andrew L. Maas and J. Bagnell and A. Dey},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2008}
+}   % Maximum Entropy IRL
+
+@article{mnih2015human,
+  title={Human-level control through deep reinforcement learning},
+  author={Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Rusu, Andrei A and Veness, Joel and Bellemare, Marc G and Graves, Alex and Riedmiller, Martin and Fidjeland, Andreas K and Ostrovski, Georg and others},
+  journal={Nature},
+  volume={518},
+  number={7540},
+  pages={529--533},
+  year={2015},
+  publisher={Nature Publishing Group}
+}   % DQN
+
+@inproceedings{van2016deep,
+  title={Deep reinforcement learning with double q-learning},
+  author={Van Hasselt, Hado and Guez, Arthur and Silver, David},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={30},
+  number={1},
+  year={2016}
+}   % Double DQN
+
+@inproceedings{wang2016dueling,
+  title={Dueling network architectures for deep reinforcement learning},
+  author={Wang, Ziyu and Schaul, Tom and Hessel, Matteo and Hasselt, Hado and Lanctot, Marc and Freitas, Nando},
+  booktitle={International Conference on Machine Learning},
+  pages={1995--2003},
+  year={2016},
+  organization={PMLR}
+}   % Dueling DQN
+
+@article{schaul2015prioritized,
+  title={Prioritized experience replay},
+  author={Schaul, Tom and Quan, John and Antonoglou, Ioannis and Silver, David},
+  journal={arXiv preprint arXiv:1511.05952},
+  year={2015}
+}   % PER
+
+@book{sutton2018reinforcement,
+  title={Reinforcement learning: An introduction},
+  author={Sutton, Richard S and Barto, Andrew G},
+  year={2018},
+  publisher={MIT press}
+}   % Sutton, introduction
+
+@inproceedings{bellemare2017distributional,
+  title={A distributional perspective on reinforcement learning},
+  author={Bellemare, Marc G and Dabney, Will and Munos, R{\'e}mi},
+  booktitle={International Conference on Machine Learning},
+  pages={449--458},
+  year={2017},
+  organization={PMLR}
+}   % C51
+
+@article{fortunato2017noisy,
+  title={Noisy networks for exploration},
+  author={Fortunato, Meire and Azar, Mohammad Gheshlaghi and Piot, Bilal and Menick, Jacob and Osband, Ian and Graves, Alex and Mnih, Vlad and Munos, Remi and Hassabis, Demis and Pietquin, Olivier and others},
+  journal={arXiv preprint arXiv:1706.10295},
+  year={2017}
+}   % noisy network
+
+@article{pavse2020ridm,
+  title={Ridm: Reinforced inverse dynamics modeling for learning from a single observed demonstration},
+  author={Pavse, Brahma S and Torabi, Faraz and Hanna, Josiah and Warnell, Garrett and Stone, Peter},
+  journal={IEEE Robotics and Automation Letters},
+  volume={5},
+  number={4},
+  pages={6262--6269},
+  year={2020},
+  publisher={IEEE}
+}   % RIDM
+
+@article{christiano2016transfer,
+  title={Transfer from simulation to real world through learning deep inverse dynamics model},
+  author={Christiano, Paul and Shah, Zain and Mordatch, Igor and Schneider, Jonas and Blackwell, Trevor and Tobin, Joshua and Abbeel, Pieter and Zaremba, Wojciech},
+  journal={arXiv preprint arXiv:1610.03518},
+  year={2016}
+}
+
+@article{edwards2018forward,
+  title={Forward-backward reinforcement learning},
+  author={Edwards, Ashley D and Downs, Laura and Davidson, James C},
+  journal={arXiv preprint arXiv:1803.10227},
+  year={2018}
+}   % FBRL
+
+@inproceedings{goyal2019recall,
+  title={Recall Traces: Backtracking Models for Efficient Reinforcement Learning},
+  author={Goyal, Anirudh and Brakel, Philemon and Fedus, William and Singhal, Soumye and Lillicrap, Timothy and Levine, Sergey and Larochelle, Hugo and Bengio, Yoshua},
+  booktitle={International Conference on Learning Representations},
+  year={2019}
+}
+
+@inproceedings{nair2020trass,
+  title={TRASS: Time Reversal as Self-Supervision},
+  author={Nair, Suraj and Babaeizadeh, Mohammad and Finn, Chelsea and Levine, Sergey and Kumar, Vikash},
+  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={115--121},
+  year={2020},
+  organization={IEEE}
+}
+
+%----------------------------- Method -------------------------------------
+@inproceedings{gelada2019deepmdp,
+  title={Deepmdp: Learning continuous latent space models for representation learning},
+  author={Gelada, Carles and Kumar, Saurabh and Buckman, Jacob and Nachum, Ofir and Bellemare, Marc G},
+  booktitle={International Conference on Machine Learning},
+  pages={2170--2179},
+  year={2019},
+  organization={PMLR}
+}   % deepMDP
+
+@article{schrittwieser2020mastering,
+  title={Mastering atari, go, chess and shogi by planning with a learned model},
+  author={Schrittwieser, Julian and Antonoglou, Ioannis and Hubert, Thomas and Simonyan, Karen and Sifre, Laurent and Schmitt, Simon and Guez, Arthur and Lockhart, Edward and Hassabis, Demis and Graepel, Thore and others},
+  journal={Nature},
+  volume={588},
+  number={7839},
+  pages={604--609},
+  year={2020},
+  publisher={Nature Publishing Group}
+}   % Muzero
+
+@inproceedings{lee2020context,
+  title={Context-aware dynamics model for generalization in model-based reinforcement learning},
+  author={Lee, Kimin and Seo, Younggyo and Lee, Seunghyun and Lee, Honglak and Shin, Jinwoo},
+  booktitle={International Conference on Machine Learning},
+  pages={5757--5766},
+  year={2020},
+  organization={PMLR}
+}   % Context-aware
+
+@inproceedings{
+hansen2021selfsupervised,
+title={Self-Supervised Policy Adaptation during Deployment},
+author={Nicklas Hansen and Rishabh Jangir and Yu Sun and Guillem Aleny{\`a} and Pieter Abbeel and Alexei A Efros and Lerrel Pinto and Xiaolong Wang},
+booktitle={International Conference on Learning Representations},
+year={2021}
+}   % IDM
+
+@inproceedings{DBLP:conf/iclr/LaineA17,
+  author    = {Samuli Laine and
+               Timo Aila},
+  title     = {Temporal Ensembling for Semi-Supervised Learning},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2017}
+}
+
+@inproceedings{qiao2018deep,
+  title={Deep co-training for semi-supervised image recognition},
+  author={Qiao, Siyuan and Shen, Wei and Zhang, Zhishuai and Wang, Bo and Yuille, Alan},
+  booktitle={Proceedings of the European Conference on Computer Vision (eccv)},
+  pages={135--152},
+  year={2018}
+}
+
+%----------------------------- Experiments -------------------------------------
+@article{bellemare2013arcade,
+  title={The arcade learning environment: An evaluation platform for general agents},
+  author={Bellemare, Marc G and Naddaf, Yavar and Veness, Joel and Bowling, Michael},
+  journal={Journal of Artificial Intelligence Research},
+  volume={47},
+  pages={253--279},
+  year={2013}
+}   % Atari
+
+@article{tassa2018deepmind,
+  title={Deepmind control suite},
+  author={Tassa, Yuval and Doron, Yotam and Muldal, Alistair and Erez, Tom and Li, Yazhe and Casas, Diego de Las and Budden, David and Abdolmaleki, Abbas and Merel, Josh and Lefrancq, Andrew and others},
+  journal={arXiv preprint arXiv:1801.00690},
+  year={2018}
+}   % DMC
+
+@inproceedings{
+zhang2021learning,
+title={Learning Invariant Representations for Reinforcement Learning without Reconstruction},
+author={Amy Zhang and Rowan Thomas McAllister and Roberto Calandra and Yarin Gal and Sergey Levine},
+booktitle={International Conference on Learning Representations},
+year={2021}
+}   % DBC
+
+@article{paszke2019pytorch,
+  title={Pytorch: An imperative style, high-performance deep learning library},
+  author={Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and others},
+  journal={arXiv preprint arXiv:1912.01703},
+  year={2019}
+}   % PyTorch
+
+@inproceedings{ioffe2015batch,
+  title={Batch normalization: Accelerating deep network training by reducing internal covariate shift},
+  author={Ioffe, Sergey and Szegedy, Christian},
+  booktitle={International Conference on Machine Learning},
+  pages={448--456},
+  year={2015},
+  organization={PMLR}
+}   % BN
+
+@article{ba2016layer,
+  title={Layer normalization},
+  author={Ba, Jimmy Lei and Kiros, Jamie Ryan and Hinton, Geoffrey E},
+  journal={arXiv preprint arXiv:1607.06450},
+  year={2016}
+}   % LN
+
+% prediction in the latent space
+@inproceedings{watter2015embed,
+  title={Embed to control: a locally Linear Latent dynamics model for control from raw images},
+  author={Watter, Manuel and Springenberg, Jost Tobias and Boedecker, Joschka and Riedmiller, Martin},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2015}
+}

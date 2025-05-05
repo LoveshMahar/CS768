@@ -1,0 +1,836 @@
+% Long verion
+%@STRING{PAMI	= "IEEE Transactions on Pattern Analysis and Machine Intelligence"}
+%@STRING{IJCV	= "International Journal of Computer Vision"}
+%@STRING{TIP	= "IEEE Transactions on Image Processing"}
+%@STRING{TIT	= "IEEE Transactions on Information Theory"}
+%@STRING{CVIU	= "Computer Vision and Image Understanding"}
+%@STRING{PR		= "Pattern Recognition"}
+%@STRING{JMLR	= "Journal of Machine Learning Research"}
+%@STRING{ACMTOG	= "ACM Transactions on Graphics"}
+
+%@STRING{NIPS	= "Neural Information Processing Systems"}
+%@STRING{CVPR	= "IEEE Conference on Computer Vision and Pattern Recognition"}
+%@STRING{ECCV	= "European Conference on Computer Vision"}
+%@STRING{ICCV	= "IEEE International Conference on Computer Vision"}
+%@STRING{ICIP	= "IEEE International Conference on Image Processing"}
+%@STRING{ICCP	= "IEEE International Conference on Computational Photography"}
+%@STRING{BMVC	= "British Machine Vision Conference"}
+%@STRING{ACMMM	= "ACM International conference on Multimedia"}
+%@STRING{ICPR 	= "International Conference on Pattern Recognition"}
+%@STRING{ICME 	= "IEEE International Conference on Multimedia and Expo"}
+%@STRING{VMV	= "Vision, Modelling and Visualization"}
+%@STRING{ICASSP	= "IEEE International Conference on Acoustics, Speech, and Signal Processing"}
+
+% Short version
+@STRING{TPAMI	= "TPAMI"}
+@STRING{IJCV	= "IJCV"}
+@STRING{TIP		= "TIP"}
+@STRING{TIT		= "TIT"}
+@STRING{CVIU	= "CVIU"}
+@STRING{PR		= "PR"}
+@STRING{JMLR	= "JMLR"}
+@STRING{TOG		= "ACM TOG (Proc. SIGGRAPH)"}
+@STRING{TOGA	= "ACM TOG (Proc. SIGGRAPH Asia)"}
+@STRING{NeurIPS	= "NeurIPS"}
+@STRING{CVPR	= "CVPR"}
+@STRING{ECCV	= "ECCV"}
+@STRING{ICCV	= "ICCV"}
+@STRING{ICIP	= "ICIP"}
+@STRING{ICCP	= "ICCP"}
+@STRING{BMVC	= "BMVC"}
+@STRING{ACMMM	= "ACM MM"}
+@STRING{ICPR 	= "ICPR"}
+@STRING{ICME 	= "ICME"}
+@STRING{VMV 	= "VMV"}
+@STRING{ICASSP 	= "ICASSP"}
+@STRING{ICML 	= "ICML"}
+@STRING{ICLR 	= "ICLR"}
+@STRING{AAAI 	= "AAAI"}
+@STRING{EMNLP 	= "EMNLP"}
+@STRING{ACL 	= "ACL"}
+
+% === Guideline for formating bibtex entries === 
+% Jia-Bin Huang 
+% Paper title:
+% 	- Use correct capital letter, e.g., ImageNet -> Image{N}et
+% 	- The first letter after ``:'' should be capital, e.g., DeepPose: Human pose estimation ... -> Deep{P}ose: {H}uman pose estimation ...
+% Authors:
+%   - Make sure that you use ``'' for special letters, e.g., Durand, Fr{\'e}do.
+% Journal papers
+% 	- Fill in authors, title, journal, volume, number, pages, year.
+% Conference papers
+% 	- Only fill in authors, title, booktitle, and year. Do not fill in volume, number, page, and publisher.
+% Journal/conference venue: 
+% 	- Use the pre-defined string, e.g., booktitle = ECCV, 
+%   - Homogenize the venues. Do not use ``IEEE Transcations on Pattern Analysis and Machine Intelligence'', ``Pattern Analysis and Machine    
+%     Intelligence, IEEE Trasactions on'', ``IEEE Trans. PAMI'', ``TPAMI'' at the same time. Using the pre-defined strings can help avoid this issue.
+% Label: 
+%   - Recommended naming convention: Last name of the first author-Publication-Year, e.g., Huang-CVPR-2015.
+%   - Avoid multiple entries of the same paper.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Bias
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@inproceedings{li2018resound,
+  title={RESOUND: Towards Action Recognition without Representation Bias},
+  author={Li, Yingwei and Li, Yi and Vasconcelos, Nuno},
+  booktitle=ECCV,
+  year={2018}
+}
+
+@inproceedings{Choi-NeurIPS-2019,
+    author    = {Choi, Jinwoo and Gao, Chen and Messou, Joseph CE and Huang, Jia-Bin},
+    title     = {Why Can't I Dance in the Mall? Learning to Mitigate Scene Bias in Action Recognition},
+    booktitle = NeurIPS,
+    year      = {2019}
+}
+
+@inproceedings{sevilla2021only,
+  title={Only time can tell: Discovering temporal data for temporal modeling},
+  author={Sevilla-Lara, Laura and Zha, Shengxin and Yan, Zhicheng and Goswami, Vedanuj and Feiszli, Matt and Torresani, Lorenzo},
+  booktitle={WACV},
+  year={2021}
+}
+
+@inproceedings{kowal2022deeper,
+  title={A deeper dive into what deep spatiotemporal networks encode: Quantifying static vs. dynamic information},
+  author={Kowal, Matthew and Siam, Mennatullah and Islam, Md Amirul and Bruce, Neil DB and Wildes, Richard P and Derpanis, Konstantinos G},
+  booktitle=CVPR,  
+  year={2022}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Semi-supervised classification
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{lee2013pseudo,
+  title={Pseudo-label: The simple and efficient semi-supervised learning method for deep neural networks},
+  author={Lee, Dong-Hyun},
+  booktitle={ICML Workshop},
+  year={2013}
+}
+
+@inproceedings{tarvainen2017mean,
+  title={Mean teachers are better role models: Weight-averaged consistency targets improve semi-supervised deep learning results},
+  author={Tarvainen, Antti and Valpola, Harri},
+  booktitle=NeurIPS,
+  year={2017}
+}
+
+@inproceedings{zhai2019s4l,
+  title={S4l: Self-supervised semi-supervised learning},
+  author={Zhai, Xiaohua and Oliver, Avital and Kolesnikov, Alexander and Beyer, Lucas},
+  booktitle=ICCV,
+  year={2019}
+}
+
+%%%% Video
+%% VideoSSL
+@inproceedings{jing2020videossl,
+  title={VideoSSL: Semi-Supervised Learning for Video Classification},
+  author={Jing, Longlong and Parag, Toufiq and Wu, Zhe and Tian, Yingli and Wang, Hongcheng},
+  booktitle={WACV},
+  year={2021}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% cross-attention in visual modal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@InProceedings{Zhu_2022_CVPR,
+    author    = {Zhu, Haowei and Ke, Wenjing and Li, Dong and Liu, Ji and Tian, Lu and Shan, Yi},
+    title     = {Dual Cross-Attention Learning for Fine-Grained Visual Categorization and Object Re-Identification},
+    booktitle = CVPR,
+    year      = {2022}
+}
+@InProceedings{Kim_2022_ACCV,
+    author    = {Kim, Hannah Halin and Yu, Shuzhi and Yuan, Shuai and Tomasi, Carlo},
+    title     = {Cross-Attention Transformer for Video Interpolation},
+    booktitle = {ACCV},
+    year      = {2022}
+}
+@inproceedings{chen2021crossvit,
+  title={Crossvit: Cross-attention multi-scale vision transformer for image classification},
+  author={Chen, Chun-Fu Richard and Fan, Quanfu and Panda, Rameswar},
+  booktitle=ICCV,
+  year={2021}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% activation fucntion
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{hendrycks2016gaussian,
+  title={Gaussian error linear units (gelus)},
+  author={Hendrycks, Dan and Gimpel, Kevin},
+  journal={arXiv preprint arXiv:1606.08415},
+  year={2016}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% foundation models
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{bommasani2021opportunities,
+  title={On the opportunities and risks of foundation models},
+  author={Bommasani, Rishi and Hudson, Drew A and Adeli, Ehsan and Altman, Russ and Arora, Simran and von Arx, Sydney and Bernstein, Michael S and Bohg, Jeannette and Bosselut, Antoine and Brunskill, Emma and others},
+  journal={arXiv preprint arXiv:2108.07258},
+  year={2021}
+}
+
+@inproceedings{brown2020language,
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  booktitle=NeurIPS,
+  year={2020}
+}
+
+@inproceedings{ramesh2021zero,
+  title={Zero-shot text-to-image generation},
+  author={Ramesh, Aditya and Pavlov, Mikhail and Goh, Gabriel and Gray, Scott and Voss, Chelsea and Radford, Alec and Chen, Mark and Sutskever, Ilya},
+  booktitle=ICML,
+  year={2021}
+}
+
+@inproceedings{kenton2019bert,
+  title={BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding},
+  author={Kenton, Jacob Devlin Ming-Wei Chang and Toutanova, Lee Kristina},
+  booktitle={NAACL-HLT},
+  year={2019}
+}
+
+@inproceedings{radford2021learning,
+  title={Learning transferable visual models from natural language supervision},
+  author={Radford, Alec and Kim, Jong Wook and Hallacy, Chris and Ramesh, Aditya and Goh, Gabriel and Agarwal, Sandhini and Sastry, Girish and Askell, Amanda and Mishkin, Pamela and Clark, Jack and others},
+  booktitle=ICML,
+  year={2021},
+}
+
+@inproceedings{alayrac2022flamingo,
+  title={Flamingo: a visual language model for few-shot learning},
+  author={Alayrac, Jean-Baptiste and Donahue, Jeff and Luc, Pauline and Miech, Antoine and Barr, Iain and Hasson, Yana and Lenc, Karel and Mensch, Arthur and Millican, Katherine and Reynolds, Malcolm and others},
+  booktitle=NeurIPS,
+  year={2022}
+}
+
+@article{scao2022bloom,
+  title={Bloom: A 176b-parameter open-access multilingual language model},
+  author={Scao, Teven Le and Fan, Angela and Akiki, Christopher and Pavlick, Ellie and Ili{\'c}, Suzana and Hesslow, Daniel and Castagn{\'e}, Roman and Luccioni, Alexandra Sasha and Yvon, Fran{\c{c}}ois and Gall{\'e}, Matthias and others},
+  journal={arXiv preprint arXiv:2211.05100},
+  year={2022}
+}
+@inproceedings{rombach2022high,
+  title={High-resolution image synthesis with latent diffusion models},
+  author={Rombach, Robin and Blattmann, Andreas and Lorenz, Dominik and Esser, Patrick and Ommer, Bj{\"o}rn},
+  booktitle=CVPR,
+  year={2022}
+}
+@inproceedings{jia2021scaling,
+  title={Scaling up visual and vision-language representation learning with noisy text supervision},
+  author={Jia, Chao and Yang, Yinfei and Xia, Ye and Chen, Yi-Ting and Parekh, Zarana and Pham, Hieu and Le, Quoc and Sung, Yun-Hsuan and Li, Zhen and Duerig, Tom},
+  booktitle=ICML,
+  year={2021}
+}
+
+@article{kirillov2023segment,
+  title={Segment anything},
+  author={Kirillov, Alexander and Mintun, Eric and Ravi, Nikhila and Mao, Hanzi and Rolland, Chloe and Gustafson, Laura and Xiao, Tete and Whitehead, Spencer and Berg, Alexander C and Lo, Wan-Yen and others},
+  journal={arXiv preprint arXiv:2304.02643},
+  year={2023}
+}
+@article{touvron2023llama,
+  title={Llama: Open and efficient foundation language models},
+  author={Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth{\'e}e and Rozi{\`e}re, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and others},
+  journal={arXiv preprint arXiv:2302.13971},
+  year={2023}
+}
+@article{girdhar2023imagebind,
+  title={ImageBind: One Embedding Space To Bind Them All},
+  author={Girdhar, Rohit and El-Nouby, Alaaeldin and Liu, Zhuang and Singh, Mannat and Alwala, Kalyan Vasudev and Joulin, Armand and Misra, Ishan},
+  journal={arXiv preprint arXiv:2305.05665},
+  year={2023}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CNN Based model
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{krizhevsky2017imagenet,
+  title={Imagenet classification with deep convolutional neural networks},
+  author={Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+  journal=ACMMM,
+  volume={60},
+  number={6},
+  pages={84--90},
+  year={2017},
+  publisher={AcM New York, NY, USA}
+}
+@inproceedings{tran2015learning,
+  title={Learning spatiotemporal features with 3d convolutional networks},
+  author={Tran, Du and Bourdev, Lubomir and Fergus, Rob and Torresani, Lorenzo and Paluri, Manohar},
+  booktitle=ICCV,
+  year={2015}
+}
+
+@inproceedings{tran2018closer,
+  title={A closer look at spatiotemporal convolutions for action recognition},
+  author={Tran, Du and Wang, Heng and Torresani, Lorenzo and Ray, Jamie and LeCun, Yann and Paluri, Manohar},
+  booktitle=CVPR,
+  year={2018}
+}
+
+@inproceedings{Xie-ECCV-2018,
+  title={Rethinking Spatiotemporal Feature Learning For Video Understanding},
+  author={Xie, Saining and Sun, Chen and Huang, Jonathan and Tu, Zhuowen and Murphy, Kevin},
+  booktitle   = ECCV,
+  year      = {2018},
+}
+
+@inproceedings{zhou2018temporal,
+  title={Temporal relational reasoning in videos},
+  author={Zhou, Bolei and Andonian, Alex and Oliva, Aude and Torralba, Antonio},
+  booktitle=ECCV,
+  year={2018}
+}
+
+@inproceedings{Simonyan-NIPS-2014,
+  title={Two-stream convolutional networks for action recognition in videos},
+  author={Simonyan, Karen and Zisserman, Andrew},
+  booktitle=NeurIPS,
+  year={2014}
+}
+
+@inproceedings{feichtenhofer2016convolutional,
+  title={Convolutional two-stream network fusion for video action recognition},
+  author={Feichtenhofer, Christoph and Pinz, Axel and Zisserman, Andrew},
+  booktitle=CVPR,
+  year={2016}
+}
+@inproceedings{carreira2017quo,
+  title={Quo vadis, action recognition? a new model and the kinetics dataset},
+  author={Carreira, Joao and Zisserman, Andrew},
+  booktitle=CVPR,
+  year={2017}
+}
+@article{wang2018temporal,
+  title={Temporal segment networks for action recognition in videos},
+  author={Wang, Limin and Xiong, Yuanjun and Wang, Zhe and Qiao, Yu and Lin, Dahua and Tang, Xiaoou and Van Gool, Luc},
+  journal={TPAMI},
+  volume={41},
+  number={11},
+  pages={2740--2755},
+  year={2018},
+  publisher={IEEE}
+}
+@inproceedings{wang2018non,
+  title={Non-local neural networks},
+  author={Wang, Xiaolong and Girshick, Ross and Gupta, Abhinav and He, Kaiming},
+  booktitle=CVPR,
+  year={2018}
+}
+@inproceedings{lin2019tsm,
+  title={Tsm: Temporal shift module for efficient video understanding},
+  author={Lin, Ji and Gan, Chuang and Han, Song},
+  booktitle=ICCV,
+  year={2019}
+}
+@inproceedings{feichtenhofer2019slowfast,
+  title={Slowfast networks for video recognition},
+  author={Feichtenhofer, Christoph and Fan, Haoqi and Malik, Jitendra and He, Kaiming},
+  booktitle=ICCV,
+  year={2019}
+}
+
+@inproceedings{kondratyuk2021movinets,
+  title={Movinets: Mobile video networks for efficient video recognition},
+  author={Kondratyuk, Dan and Yuan, Liangzhe and Li, Yandong and Zhang, Li and Tan, Mingxing and Brown, Matthew and Gong, Boqing},
+  booktitle=CVPR,
+  year={2021}
+}
+
+@article{sudhakaran2022gate,
+  title={Gate-Shift-Fuse for Video Action Recognition},
+  author={Sudhakaran, Swathikiran and Escalera, Sergio and Lanz, Oswald},
+  journal={arXiv:2203.08897},
+  year={2022}
+}
+
+@inproceedings{feichtenhofer2020x3d,
+  title={X3d: Expanding architectures for efficient video recognition},
+  author={Feichtenhofer, Christoph},
+  booktitle=CVPR,
+  year={2020}
+}
+@inproceedings{karpathy2014large,
+  title={Large-scale video classification with convolutional neural networks},
+  author={Karpathy, Andrej and Toderici, George and Shetty, Sanketh and Leung, Thomas and Sukthankar, Rahul and Fei-Fei, Li},
+  booktitle=CVPR,
+  year={2014}
+}
+@article{zhang2022tfcnet,
+  title={Tfcnet: Temporal fully connected networks for static unbiased temporal reasoning},
+  author={Zhang, Shiwen},
+  journal={arXiv preprint arXiv:2203.05928},
+  year={2022}
+}
+@InProceedings{Zhang_2021_CVPR,
+    author    = {Zhang, Chuhan and Gupta, Ankush and Zisserman, Andrew},
+    title     = {Temporal Query Networks for Fine-Grained Video Understanding},
+    booktitle = {CVPR},
+    year      = {2021}
+}
+@inproceedings{xie2018rethinking,
+  title={Rethinking spatiotemporal feature learning: Speed-accuracy trade-offs in video classification},
+  author={Xie, Saining and Sun, Chen and Huang, Jonathan and Tu, Zhuowen and Murphy, Kevin},
+  booktitle={ECCV},
+  year={2018}
+}
+@inproceedings{hao2022group,
+  title={Group Contextualization for Video Recognition},
+  author={Hao, Yanbin and Zhang, Hao and Ngo, Chong-Wah and He, Xiangnan},
+  booktitle={CVPR},
+  year={2022}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Multi-modal Based model
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@inproceedings{gorti2022xpool,
+  title={X-Pool: Cross-Modal Language-Video Attention for Text-Video Retrieval},
+  author={Gorti, Satya Krishna and Vouitsis, No{\"e}l and Ma, Junwei and Golestan, Keyvan and Volkovs, Maksims and Garg, Animesh and Yu, Guangwei},
+  booktitle=CVPR,
+  year={2022}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ViT Based model
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@inproceedings{vaswani2017attention,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  booktitle=NeurIPS,
+  year={2017}
+}
+
+
+@inproceedings{bertasius2021space,
+  title={Is space-time attention all you need for video understanding?},
+  author={Bertasius, Gedas and Wang, Heng and Torresani, Lorenzo},
+  booktitle=ICML,
+  year={2021}
+}
+
+@inproceedings{dosovitskiy2020vit,
+  title={An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
+  author={Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and  Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and Uszkoreit, Jakob and Houlsby, Neil},
+  booktitle=ICLR,
+  year={2021}
+}
+
+@inproceedings{arnab2021vivit,
+  title={Vivit: A video vision transformer},
+  author={Arnab, Anurag and Dehghani, Mostafa and Heigold, Georg and Sun, Chen and Lu{\v{c}}i{\'c}, Mario and Schmid, Cordelia},
+  booktitle=ICCV,
+  year={2021}
+}
+
+@inproceedings{he2022masked,
+  title={Masked autoencoders are scalable vision learners},
+  author={He, Kaiming and Chen, Xinlei and Xie, Saining and Li, Yanghao and Doll{\'a}r, Piotr and Girshick, Ross},
+  booktitle=CVPR,
+  year={2022}
+}
+
+
+@article{wang2022internvideo,
+  title={InternVideo: General Video Foundation Models via Generative and Discriminative Learning},
+  author={Wang, Yi and Li, Kunchang and Li, Yizhuo and He, Yinan and Huang, Bingkun and Zhao, Zhiyu and Zhang, Hongjie and Xu, Jilan and Liu, Yi and Wang, Zun and Xing, Sen and Chen, Guo and Pan, Junting and Yu, Jiashuo and Wang, Yali and Wang, Limin and Qiao, Yu},
+  journal={arXiv preprint arXiv:2212.03191},
+  year={2022}
+}
+
+@inproceedings{patrick2021keeping,
+   title={Keeping Your Eye on the Ball: Trajectory Attention in Video Transformers}, 
+   author={Mandela Patrick and Dylan Campbell and Yuki M. Asano and Ishan Misra Florian Metze and Christoph Feichtenhofer and Andrea Vedaldi and Jo{\~a}o F. Henriques},
+   booktitle=NeurIPS,
+   year={2021}
+}
+
+@inproceedings{herzig2022object,
+  title={Object-region video transformers},
+  author={Herzig, Roei and Ben-Avraham, Elad and Mangalam, Karttikeya and Bar, Amir and Chechik, Gal and Rohrbach, Anna and Darrell, Trevor and Globerson, Amir},
+  booktitle=CVPR,
+  year={2022}
+}
+
+@inproceedings{liu2022video,
+  title={Video swin transformer},
+  author={Liu, Ze and Ning, Jia and Cao, Yue and Wei, Yixuan and Zhang, Zheng and Lin, Stephen and Hu, Han},
+  booktitle=CVPR,
+  year={2022}
+}
+
+@inproceedings{wu2022memvit,
+  title={Memvit: Memory-augmented multiscale vision transformer for efficient long-term video recognition},
+  author={Wu, Chao-Yuan and Li, Yanghao and Mangalam, Karttikeya and Fan, Haoqi and Xiong, Bo and Malik, Jitendra and Feichtenhofer, Christoph},
+  booktitle=CVPR,
+  year={2022}
+}
+
+@inproceedings{fan2021multiscale,
+  title={Multiscale vision transformers},
+  author={Fan, Haoqi and Xiong, Bo and Mangalam, Karttikeya and Li, Yanghao and Yan, Zhicheng and Malik, Jitendra and Feichtenhofer, Christoph},
+  booktitle=ICCV,
+  year={2021}
+}
+
+@inproceedings{yan2022multiview,
+  title={Multiview transformers for video recognition},
+  author={Yan, Shen and Xiong, Xuehan and Arnab, Anurag and Lu, Zhichao and Zhang, Mi and Sun, Chen and Schmid, Cordelia},
+  booktitle=CVPR,
+  year={2022}
+}
+
+@inproceedings{wang2022bevt,
+  title={Bevt: Bert pretraining of video transformers},
+  author={Wang, Rui and Chen, Dongdong and Wu, Zuxuan and Chen, Yinpeng and Dai, Xiyang and Liu, Mengchen and Jiang, Yu-Gang and Zhou, Luowei and Yuan, Lu},
+  booktitle=CVPR,
+  year={2022}
+}
+
+@InProceedings{nagrani2021mbt,
+  title={Attention Bottlenecks for Multimodal Fusion},
+  author={Nagrani, Arsha and Yang, Shan and Arnab, Anurag and Jansen, Aren and Schmid, Cordelia and Sun, Chen},
+  booktitle=NeurIPS,
+  year={2021}
+}
+@inproceedings{girdhar2022omnivore,
+  title={{Omnivore: A Single Model for Many Visual Modalities}},
+  author={Girdhar, Rohit and Singh, Mannat and Ravi, Nikhila and van der Maaten, Laurens and Joulin, Armand and Misra, Ishan},
+  booktitle=CVPR,
+  year={2022}
+}
+@InProceedings{ECLIPSE_ECCV22,
+    author = {Yan-Bo Lin and Jie Lei and Mohit Bansal and Gedas Bertasius},
+    title = {ECLIPSE: Efficient Long-range Video Retrieval using Sight and Sound},
+    booktitle = ECCV,
+    year = {2022}
+}
+@inproceedings{wei2020multi,
+  title={Multi-modality cross attention network for image and sentence matching},
+  author={Wei, Xi and Zhang, Tianzhu and Li, Yan and Zhang, Yongdong and Wu, Feng},
+  booktitle=CVPR,
+  year={2020}
+}
+@article{li2021align,
+  title={Align before fuse: Vision and language representation learning with momentum distillation},
+  author={Li, Junnan and Selvaraju, Ramprasaath and Gotmare, Akhilesh and Joty, Shafiq and Xiong, Caiming and Hoi, Steven Chu Hong},
+  journal=NeurIPS,
+  year={2021}
+}
+@article{sun2023eva,
+  title={Eva-clip: Improved training techniques for clip at scale},
+  author={Sun, Quan and Fang, Yuxin and Wu, Ledell and Wang, Xinlong and Cao, Yue},
+  journal={arXiv preprint arXiv:2303.15389},
+  year={2023}
+}
+@article{tan2021vimpac,
+  title={Vimpac: Video pre-training via masked token prediction and contrastive learning},
+  author={Tan, Hao and Lei, Jie and Wolf, Thomas and Bansal, Mohit},
+  journal={arXiv preprint arXiv:2106.11250},
+  year={2021}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Video SSL'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@inproceedings{jenni2020video,
+  title={Video representation learning by recognizing temporal transformations},
+  author={Jenni, Simon and Meishvili, Givi and Favaro, Paolo},
+  booktitle=ECCV,
+  year={2020}
+}
+@inproceedings{wang2021enhancing,
+  title={Enhancing unsupervised video representation learning by decoupling the scene and the motion},
+  author={Wang, Jinpeng and Gao, Yuting and Li, Ke and Hu, Jianguo and Jiang, Xinyang and Guo, Xiaowei and Ji, Rongrong and Sun, Xing},
+  booktitle=AAAI,
+  year={2021}
+}
+@inproceedings{wang2022masked,
+  title={Masked Video Distillation: Rethinking Masked Feature Modeling for Self-supervised Video Representation Learning},
+  author={Wang, Rui and Chen, Dongdong and Wu, Zuxuan and Chen, Yinpeng and Dai, Xiyang and Liu, Mengchen and Yuan, Lu and Jiang, Yu-Gang},
+  booktitle=CVPR,
+  year={2023}
+}
+@inproceedings{tong2022videomae,
+  title={Video{MAE}: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training},
+  author={Zhan Tong and Yibing Song and Jue Wang and Limin Wang},
+  booktitle=NeurIPS,
+  year={2022}
+}
+@inproceedings{wei2022masked,
+  title={Masked feature prediction for self-supervised visual pre-training},
+  author={Wei, Chen and Fan, Haoqi and Xie, Saining and Wu, Chao-Yuan and Yuille, Alan and Feichtenhofer, Christoph},
+  booktitle=CVPR,
+  year={2022}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Parameter-efficient trasfer learning
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@inproceedings{rebuffi2017learning,
+  title={Learning multiple visual domains with residual adapters},
+  author={Rebuffi, Sylvestre-Alvise and Bilen, Hakan and Vedaldi, Andrea},
+  booktitle=NeurIPS,
+  year={2017}
+}
+@inproceedings{rebuffi2018efficient,
+  title={Efficient parametrization of multi-domain deep neural networks},
+  author={Rebuffi, Sylvestre-Alvise and Bilen, Hakan and Vedaldi, Andrea},
+  booktitle=CVPR,
+  year={2018}
+}
+@inproceedings{lester2021power,
+  title={The power of scale for parameter-efficient prompt tuning},
+  author={Lester, Brian and Al-Rfou, Rami and Constant, Noah},
+  booktitle=EMNLP,
+  year={2021}
+}
+@inproceedings{li2021prefix,
+  title={Prefix-Tuning: Optimizing Continuous Prompts for Generation},
+  author={Li, Xiang Lisa and Liang, Percy},
+  booktitle=ACL,
+  year={2021}
+}
+@inproceedings{houlsby2019parameter,
+  title={Parameter-efficient transfer learning for NLP},
+  author={Houlsby, Neil and Giurgiu, Andrei and Jastrzebski, Stanislaw and Morrone, Bruna and De Laroussilhe, Quentin and Gesmundo, Andrea and Attariyan, Mona and Gelly, Sylvain},
+  booktitle=ICML,
+  year={2019}
+}
+@inproceedings{karimi2021compacter,
+  title={Compacter: Efficient low-rank hypercomplex adapter layers},
+  author={Karimi Mahabadi, Rabeeh and Henderson, James and Ruder, Sebastian},
+  booktitle=NeurIPS,
+  year={2021}
+}
+@inproceedings{sung2022lst,
+  title={Lst: Ladder side-tuning for parameter and memory efficient transfer learning},
+  author={Sung, Yi-Lin and Cho, Jaemin and Bansal, Mohit},
+  booktitle=NeurIPS,
+  year={2022}
+}
+@inproceedings{wang2022learning,
+  title={Learning to prompt for continual learning},
+  author={Wang, Zifeng and Zhang, Zizhao and Lee, Chen-Yu and Zhang, Han and Sun, Ruoxi and Ren, Xiaoqi and Su, Guolong and Perot, Vincent and Dy, Jennifer and Pfister, Tomas},
+  booktitle=CVPR,
+  year={2022}
+}
+@inproceedings{wang2022dualprompt,
+  title={Dualprompt: Complementary prompting for rehearsal-free continual learning},
+  author={Wang, Zifeng and Zhang, Zizhao and Ebrahimi, Sayna and Sun, Ruoxi and Zhang, Han and Lee, Chen-Yu and Ren, Xiaoqi and Su, Guolong and Perot, Vincent and Dy, Jennifer and others},
+  booktitle=ECCV,
+  year={2022}
+}
+@inproceedings{liu2022polyhistor,
+  title={Polyhistor: Parameter-Efficient Multi-Task Adaptation for Dense Vision Tasks},
+  author={Liu, Yen-Cheng and Ma, Chih-Yao and Tian, Junjiao and He, Zijian and Kira, Zsolt},
+  booktitle=NeurIPS,
+  year={2022}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Extend to CLIP to video
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{
+yang2023aim,
+title={AIM: Adapting Image Models for Efficient Video Understanding},
+author={Taojiannan Yang and Yi Zhu and Yusheng Xie and Aston Zhang and Chen Chen and Mu Li},
+booktitle=ICLR,
+year={2023},
+}
+
+@inproceedings{lin2022frozen,
+  title={Frozen clip models are efficient video learners},
+  author={Lin, Ziyi and Geng, Shijie and Zhang, Renrui and Gao, Peng and de Melo, Gerard and Wang, Xiaogang and Dai, Jifeng and Qiao, Yu and Li, Hongsheng},
+  booktitle=ECCV,
+  year={2022}
+}
+
+@inproceedings{pan2022st,
+  title={ST-Adapter: Parameter-Efficient Image-to-Video Transfer Learning},
+  author={Pan, Junting and Lin, Ziyi and Zhu, Xiatian and Shao, Jing and Li, Hongsheng},
+  booktitle=NeurIPS,
+  year={2022}
+}
+
+@inproceedings{li2022uniformer,
+  title={Uniformer: Unified transformer for efficient spatiotemporal representation learning},
+  author={Li, Kunchang and Wang, Yali and Gao, Peng and Song, Guanglu and Liu, Yu and Li, Hongsheng and Qiao, Yu},
+  booktitle=ICLR,
+  year={2022}
+}
+@inproceedings{bike,
+  title={Bidirectional Cross-Modal Knowledge Exploration for Video Recognition with Pre-trained Vision-Language Models},
+  author={Wu, Wenhao and Wang, Xiaohan and Luo, Haipeng and Wang, Jingdong and Yang, Yi and Ouyang, Wanli},
+  booktitle=CVPR,
+  year={2023}
+}
+@inproceedings{wu2023revisiting,
+  title={Revisiting Classifier: Transferring Vision-Language Models for Video Recognition},
+  author={Wu, Wenhao and Sun, Zhun and Ouyang, Wanli},
+  booktitle=AAAI,
+  year={2023}
+}
+
+@inproceedings{XCLIP,
+  title={Expanding Language-Image Pretrained Models for General Video Recognition},
+  author={Ni, Bolin and Peng, Houwen and Chen, Minghao and Zhang, Songyang and Meng, Gaofeng and Fu, Jianlong and Xiang, Shiming and Ling, Haibin},
+  booktitle=ECCV,
+  year={2022}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Dataset
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{kay2017kinetics,
+  title={The kinetics human action video dataset},
+  author={Kay, Will and Carreira, Joao and Simonyan, Karen and Zhang, Brian and Hillier, Chloe and Vijayanarasimhan, Sudheendra and Viola, Fabio and Green, Tim and Back, Trevor and Natsev, Paul and others},
+  journal={arXiv preprint arXiv:1705.06950},
+  year={2017}
+}
+
+%% Epickitchens55
+@inproceedings{damen2018scaling,
+  title={Scaling egocentric vision: The epic-kitchens dataset},
+  author={Damen, Dima and Doughty, Hazel and Farinella, Giovanni Maria and Fidler, Sanja and Furnari, Antonino and Kazakos, Evangelos and Moltisanti, Davide and Munro, Jonathan and Perrett, Toby and Price, Will and others},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+  pages={720--736},
+  year={2018}
+}
+
+%% Epickitchens 100
+@article{damen2022rescaling,
+   title={Rescaling Egocentric Vision},
+   author={Damen, Dima and Doughty, Hazel and Farinella, Giovanni Maria  and and Furnari, Antonino 
+           and Ma, Jian and Kazakos, Evangelos and Moltisanti, Davide and Munro, Jonathan 
+           and Perrett, Toby and Price, Will and Wray, Michael},
+           journal=IJCV,
+           volume={130},
+           number={1},
+           pages={33--55},
+           year={2022},
+           publisher={Springer}
+} 
+
+@inproceedings{goyal2017something,
+  title={The" something something" video database for learning and evaluating visual common sense},
+  author={Goyal, Raghav and Ebrahimi Kahou, Samira and Michalski, Vincent and Materzynska, Joanna and Westphal, Susanne and Kim, Heuna and Haenel, Valentin and Fruend, Ingo and Yianilos, Peter and Mueller-Freitag, Moritz and others},
+  booktitle=ICCV,
+  year={2017}
+}
+
+@article{stroud2020learning,
+  title={Learning video representations from textual web supervision},
+  author={Stroud, Jonathan C and Lu, Zhichao and Sun, Chen and Deng, Jia and Sukthankar, Rahul and Schmid, Cordelia and Ross, David A},
+  journal={arXiv preprint arXiv:2007.14937},
+  year={2020}
+}
+
+%% Something else.
+@inproceedings{materzynska2020something,
+  title={Something-else: Compositional action recognition with spatial-temporal interaction networks},
+  author={Materzynska, Joanna and Xiao, Tete and Herzig, Roei and Xu, Huijuan and Wang, Xiaolong and Darrell, Trevor},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={1049--1059},
+  year={2020}
+}
+@article{russakovsky2015imagenet,
+  title={Imagenet large scale visual recognition challenge},
+  author={Russakovsky, Olga and Deng, Jia and Su, Hao and Krause, Jonathan and Satheesh, Sanjeev and Ma, Sean and Huang, Zhiheng and Karpathy, Andrej and Khosla, Aditya and Bernstein, Michael and others},
+  journal=IJCV,
+  volume={115},
+  pages={211--252},
+  year={2015},
+  publisher={Springer}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Implementation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%Cosine decay
+@article{loshchilov2016sgdr,
+  title={Sgdr: Stochastic gradient descent with warm restarts},
+  author={Loshchilov, Ilya and Hutter, Frank},
+  journal={arXiv preprint arXiv:1608.03983},
+  year={2016}
+}
+
+%% Rand aug
+@inproceedings{cubuk2020randaugment,
+  title={Randaugment: Practical automated data augmentation with a reduced search space},
+  author={Cubuk, Ekin D and Zoph, Barret and Shlens, Jonathon and Le, Quoc V},
+  booktitle={CVPR workshops},
+  year={2020}
+}
+
+%% mixup
+@inproceedings{zhang2017mixup,
+  title={mixup: Beyond empirical risk minimization},
+  author={Zhang, Hongyi and Cisse, Moustapha and Dauphin, Yann N and Lopez-Paz, David},
+  booktitle=ICLR,
+  year={2017}
+}
+
+%layer decay
+@article{bao2021beit,
+  title={Beit: Bert pre-training of image transformers},
+  author={Bao, Hangbo and Dong, Li and Piao, Songhao and Wei, Furu},
+  journal={arXiv preprint arXiv:2106.08254},
+  year={2021}
+}
+% optimizer momentum
+@inproceedings{chen2020generative,
+  title={Generative pretraining from pixels},
+  author={Chen, Mark and Radford, Alec and Child, Rewon and Wu, Jeffrey and Jun, Heewoo and Luan, David and Sutskever, Ilya},
+  booktitle=ICML,
+  year={2020}
+}
+
+%label smoothing
+@inproceedings{szegedy2016rethinking,
+  title={Rethinking the inception architecture for computer vision},
+  author={Szegedy, Christian and Vanhoucke, Vincent and Ioffe, Sergey and Shlens, Jon and Wojna, Zbigniew},
+  booktitle=CVPR,
+  year={2016}
+}
+
+% AdamW
+@inproceedings{loshchilov2017decoupled,
+  title={Decoupled weight decay regularization},
+  author={Loshchilov, Ilya and Hutter, Frank},
+  booktitle=ICLR,
+  year={2019}
+}
+
+%Gradient accumlation
+@misc{ott2018scaling,
+      title={Scaling Neural Machine Translation}, 
+      author={Myle Ott and Sergey Edunov and David Grangier and Michael Auli},
+      year={2018},
+      eprint={1806.00187},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+%Repeated augmentations
+@inproceedings{hoffer2020augment,
+  title={Augment your batch: Improving generalization through instance repetition},
+  author={Hoffer, Elad and Ben-Nun, Tal and Hubara, Itay and Giladi, Niv and Hoefler, Torsten and Soudry, Daniel},
+  booktitle={CVPR},
+  year={2020}
+}
+
+%GradCAM
+@inproceedings{selvaraju2017grad,
+  title={Grad-cam: Visual explanations from deep networks via gradient-based localization},
+  author={Selvaraju, Ramprasaath R and Cogswell, Michael and Das, Abhishek and Vedantam, Ramakrishna and Parikh, Devi and Batra, Dhruv},
+  booktitle={ICCV},
+  year={2017}
+}
+@misc{jacobgilpytorchcam,
+  title={PyTorch library for CAM methods},
+  author={Jacob Gildenblat and contributors},
+  year={2021},
+  publisher={GitHub},
+  howpublished={\url{https://github.com/jacobgil/pytorch-grad-cam}},
+}

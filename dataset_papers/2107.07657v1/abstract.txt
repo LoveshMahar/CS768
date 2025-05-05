@@ -1,0 +1,18 @@
+We give the first single-pass streaming algorithm for Column Subset Selection
+with respect to the entrywise $\ell_p$-norm with $1 \leq p < 2$. We study the
+$\ell_p$ norm loss since it is often considered more robust to noise than the
+standard Frobenius norm. Given an input matrix $A \in \mathbb{R}^{d \times n}$
+($n \gg d$), our algorithm achieves a multiplicative $k^{\frac{1}{p} -
+\frac{1}{2}}\text{poly}(\log nd)$-approximation to the error with respect to
+the best possible column subset of size $k$. Furthermore, the space complexity
+of the streaming algorithm is optimal up to a logarithmic factor. Our streaming
+algorithm also extends naturally to a 1-round distributed protocol with nearly
+optimal communication cost. A key ingredient in our algorithms is a reduction
+to column subset selection in the $\ell_{p,2}$-norm, which corresponds to the
+$p$-norm of the vector of Euclidean norms of each of the columns of $A$. This
+enables us to leverage strong coreset constructions for the Euclidean norm,
+which previously had not been applied in this context. We also give the first
+provable guarantees for greedy column subset selection in the $\ell_{1, 2}$
+norm, which can be used as an alternative, practical subroutine in our
+algorithms. Finally, we show that our algorithms give significant practical
+advantages on real-world data analysis tasks.

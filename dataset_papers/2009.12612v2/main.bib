@@ -1,0 +1,5040 @@
+%%% ====================================================================
+%%%  BibTeX-file{
+	%%%     author          = "Gerry Murray",
+	%%%     version         = "1.2",
+	%%%     date            = "2 April 2012",
+	%%%     filename        = "acmsmall-sample-bibfile.bib",
+	%%%     address         = "ACM, NY",
+	%%%     email           = "murray at hq.acm.org",
+	%%%     codetable       = "ISO/ASCII",
+	%%%     keywords        = "ACM Reference Format, bibliography, citation, references",
+	%%%     supported       = "yes",
+	%%%     docstring       = "This BibTeX database file contains 'bibdata' entries
+	%%%                        that 'match' the examples provided in the Specifications Document
+	%%%                        AND, also, 'legacy'-type bibs. It should assist authors in 
+	%%%                        choosing the 'correct' at-bibtype and necessary bib-fields
+	%%%                        so as to obtain the appropriate ACM Reference Format output. 
+	%%%			   It also contains many 'Standard Abbreviations'. "
+	%%%  }
+%%% ====================================================================
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+%{AMS}
+@String{AMSTrans = "American Mathematical Society Translations" }
+@String{AMSTrans = "Amer. Math. Soc. Transl." }
+@String{BullAMS = "Bulletin of the American Mathematical Society" }
+@String{BullAMS = "Bull. Amer. Math. Soc." }
+@String{ProcAMS = "Proceedings of the American Mathematical Society" }
+@String{ProcAMS = "Proc. Amer. Math. Soc." }
+@String{TransAMS = "Transactions of the American Mathematical Society" }
+@String{TransAMS = "Trans. Amer. Math. Soc." }
+
+%ACM
+@String{CACM = "Communications of the {ACM}" }
+@String{CACM = "Commun. {ACM}" }
+@String{CompServ = "Comput. Surveys" }
+@String{JACM = "J. ACM" }
+@String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+@String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+@String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+@String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+@String{AmerSocio = "American Journal of Sociology" }
+@String{AmerStatAssoc = "Journal of the American Statistical Association" }
+@String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+@String{ApplMathComp = "Applied Mathematics and Computation" }
+@String{ApplMathComp = "Appl. Math. Comput." }
+@String{AmerMathMonthly = "American Mathematical Monthly" }
+@String{AmerMathMonthly = "Amer. Math. Monthly" }
+@String{BIT = "{BIT}" }
+@String{BritStatPsych = "British Journal of Mathematical and Statistical
+	Psychology" }
+@String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+@String{CanMathBull = "Canadian Mathematical Bulletin" }
+@String{CanMathBull = "Canad. Math. Bull." }
+@String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+@String{CompApplMath = "J. Comput. Appl. Math." }
+@String{CompPhys = "Journal of Computational Physics" }
+@String{CompPhys = "J. Comput. Phys." }
+@String{CompStruct = "Computers and Structures" }
+@String{CompStruct = "Comput. \& Structures" }
+@String{CompJour = "The Computer Journal" }
+@String{CompJour = "Comput. J." }
+@String{CompSysSci = "Journal of Computer and System Sciences" }
+@String{CompSysSci = "J. Comput. System Sci." }
+@String{Computing = "Computing" }
+@String{ContempMath = "Contemporary Mathematics" }
+@String{ContempMath = "Contemp. Math." }
+@String{Crelle = "Crelle's Journal" }
+@String{GiornaleMath = "Giornale di Mathematiche" }
+@String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+%IEEE
+@String{Computer = "{IEEE} Computer" }
+@String{IEEETransComp = "{IEEE} Transactions on Computers" }
+@String{IEEETransComp = "{IEEE} Trans. Comput." }
+@String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+@String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+@String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+@String{ProcIEEE = "Proceedings of the {IEEE}" }
+@String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+@String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+	Systems" }
+@String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+@String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+@String{IMANumerAna = "{IMA} J. Numer. Anal." }
+@String{InfProcLet = "Information Processing Letters" }
+@String{InfProcLet = "Inform. Process. Lett." }
+@String{InstMathApp = "Journal of the Institute of Mathematics and
+	its Applications" }
+@String{InstMathApp = "J. Inst. Math. Appl." }
+@String{IntControl = "International Journal of Control" }
+@String{IntControl = "Internat. J. Control" }
+@String{IntNumerEng = "International Journal for Numerical Methods in
+	Engineering" }
+@String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+@String{IntSuper = "International Journal of Supercomputing Applications" }
+@String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+@String{Kibernetika = "Kibernetika" }
+@String{JResNatBurStand = "Journal of Research of the National Bureau
+	of Standards" }
+@String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+@String{LinAlgApp = "Linear Algebra and its Applications" }
+@String{LinAlgApp = "Linear Algebra Appl." }
+@String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+@String{MathAnaAppl = "J. Math. Anal. Appl." }
+@String{MathAnnalen = "Mathematische Annalen" }
+@String{MathAnnalen = "Math. Ann." }
+@String{MathPhys = "Journal of Mathematical Physics" }
+@String{MathPhys = "J. Math. Phys." }
+@String{MathComp = "Mathematics of Computation" }
+@String{MathComp = "Math. Comp." }
+@String{MathScand = "Mathematica Scandinavica" }
+@String{MathScand = "Math. Scand." }
+@String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+@String{TablesAidsComp = "Math. Tables Aids Comput." }
+@String{NumerMath = "Numerische Mathematik" }
+@String{NumerMath = "Numer. Math." }
+@String{PacificMath = "Pacific Journal of Mathematics" }
+@String{PacificMath = "Pacific J. Math." }
+@String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+@String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+@String{ParComputing = "Parallel Computing" }
+@String{ParComputing = "Parallel Comput." }
+@String{PhilMag = "Philosophical Magazine" }
+@String{PhilMag = "Philos. Mag." }
+@String{ProcNAS = "Proceedings of the National Academy of Sciences
+	of the USA" }
+@String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+@String{Psychometrika = "Psychometrika" }
+@String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+@String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+@String{QuartApplMath = "Quarterly of Applied Mathematics" }
+@String{QuartApplMath = "Quart. Appl. Math." }
+@String{RevueInstStat = "Review of the International Statisical Institute" }
+@String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+%SIAM
+@String{JSIAM = "Journal of the Society for Industrial and Applied
+	Mathematics" }
+@String{JSIAM = "J. Soc. Indust. Appl. Math." }
+@String{JSIAMB = "Journal of the Society for Industrial and Applied
+	Mathematics, Series B, Numerical Analysis" }
+@String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+@String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+@String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+@String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+@String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+@String{SIAMComp = "{SIAM} Journal on Computing" }
+@String{SIAMComp = "{SIAM} J. Comput." }
+@String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+@String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+@String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+@String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+@String{SIAMReview = "{SIAM} Review" }
+@String{SIAMReview = "{SIAM} Rev." }
+@String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+	Computing" }
+@String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+@String{SoftPracExp = "Software Practice and Experience" }
+@String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+@String{StatScience = "Statistical Science" }
+@String{StatScience = "Statist. Sci." }
+@String{Techno = "Technometrics" }
+@String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+	Physics" }
+@String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+@String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+@String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+@String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+	Mechanik" }
+@String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+@String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+@String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+@String{Academic = "Academic Press" }
+@String{ACMPress = "{ACM} Press" }
+@String{AdamHilger = "Adam Hilger" }
+@String{AddisonWesley = "Addison-Wesley" }
+@String{AllynBacon = "Allyn and Bacon" }
+@String{AMS = "American Mathematical Society" }
+@String{Birkhauser = "Birkha{\"u}ser" }
+@String{CambridgePress = "Cambridge University Press" }
+@String{Chelsea = "Chelsea" }
+@String{ClaredonPress = "Claredon Press" }
+@String{DoverPub = "Dover Publications" }
+@String{Eyolles = "Eyolles" }
+@String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+@String{Interscience = "Interscience" }
+@String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+@String{JohnWileySons = "John Wiley and Sons" }
+@String{Macmillan = "Macmillan" }
+@String{MathWorks = "The Math Works Inc." }
+@String{McGrawHill = "McGraw-Hill" }
+@String{NatBurStd = "National Bureau of Standards" }
+@String{NorthHolland = "North-Holland" }
+@String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+@String{PergamonPress = "Pergamon Press" }
+@String{PlenumPress = "Plenum Press" }
+@String{PrenticeHall = "Prentice-Hall" }
+@String{SIAMPub = "{SIAM} Publications" }
+@String{Springer = "Springer-Verlag" }
+@String{TexasPress = "University of Texas Press" }
+@String{VanNostrand = "Van Nostrand" }
+@String{WHFreeman = "W. H. Freeman and Co." }
+
+
+%Entries
+@article{PIDControl,
+	title = "Automatic tuning of simple regulators with specifications on phase and amplitude margins",
+	journal = "Automatica",
+	volume = "20",
+	number = "5",
+	pages = "645 - 651",
+	year = "1984",
+	issn = "0005-1098",
+	doi = "https://doi.org/10.1016/0005-1098(84)90014-1",
+	author = "K.J. Astrom and T. Hagglund",
+	keywords = "Adaptive control, control nonlinearities, describing function, identification, limit cycles, Nyquist criterion, PID control, relay control"
+}
+
+@article{duel,
+	author    = {Ziyu Wang and
+	Nando de Freitas and
+	Marc Lanctot},
+	title     = {Dueling Network Architectures for Deep Reinforcement Learning},
+	journal   = {CoRR},
+	volume    = {abs/1511.06581},
+	year      = {2015},
+	url       = {http://arxiv.org/abs/1511.06581},
+	archivePrefix = {arXiv},
+	eprint    = {1511.06581}
+}
+
+@inproceedings{pirl,
+	title={Programmatically Interpretable Reinforcement Learning},
+	author={Verma, Abhinav and Murali, Vijayaraghavan and Singh, Rishabh and Kohli, Pushmeet and Chaudhuri, Swarat},
+	booktitle={International Conference on Machine Learning},
+	pages={5052--5061},
+	year={2018}
+}
+
+@inproceedings{corerl,
+	title={Control regularization for reduced variance reinforcement learning},
+	author={Cheng, Richard and Verma, Abhinav and Orosz, Gabor and Chaudhuri, Swarat and Yue, Yisong and Burdick, Joel},
+	booktitle={International Conference on Machine Learning (ICML)},
+	year={2019}
+}
+
+
+@article{schaal1999imitation,
+	title={Is imitation learning the route to humanoid robots?},
+	author={Schaal, Stefan},
+	journal={Trends in cognitive sciences},
+	volume={3},
+	number={6},
+	pages={233--242},
+	year={1999},
+	publisher={Elsevier}
+}
+
+@article{ddpg,
+	title={Continuous control with deep reinforcement learning},
+	author={Lillicrap, Timothy P and Hunt, Jonathan J and Pritzel, Alexander and Heess, Nicolas and Erez, Tom and Tassa, Yuval and Silver, David and Wierstra, Daan},
+	journal={arXiv preprint arXiv:1509.02971},
+	year={2015}
+}
+
+@inproceedings{RaychevBVK16,
+	author    = {Veselin Raychev and
+	Pavol Bielik and
+	Martin T. Vechev and
+	Andreas Krause},
+	title     = {Learning programs from noisy data},
+	booktitle = {Proceedings of the 43rd Annual {ACM} {SIGPLAN-SIGACT} Symposium on
+	Principles of Programming Languages, {POPL} 2016, St. Petersburg,
+	FL, USA, January 20 - 22, 2016},
+	pages     = {761--774},
+	year      = {2016}
+}
+
+@inproceedings{chow2018lyapunov,
+  title={A {L}yapunov-based approach to safe reinforcement learning},
+  author={Chow, Yinlam and Nachum, Ofir and Duenez-Guzman, Edgar and Ghavamzadeh, Mohammad},
+  booktitle={Advances in neural information processing systems},
+  pages={8092--8101},
+  year={2018}
+}
+
+@inproceedings{moldovan2012safe,
+  title={Safe exploration in Markov decision processes},
+  author={Moldovan, Teodor Mihai and Abbeel, Pieter},
+  booktitle={ICML},
+  year={2012}
+}
+
+@inproceedings{hans2008safe,
+  title={Safe exploration for reinforcement learning},
+  author={Hans, Alexander and Schneega{\ss}, Daniel and Sch{\"a}fer, Anton Maximilian and Udluft, Steffen},
+  booktitle={ESANN},
+  pages={143--148},
+  year={2008}
+}
+
+@inproceedings{Bayou,
+	author    = {Vijayaraghavan Murali and
+	Swarat Chaudhuri and
+	Chris Jermaine},
+	title     = {Neural Sketch Learning for Conditional Program Generation},
+	booktitle   = {ICLR},
+	year      = {2018},
+}
+
+@article{SymbRL2,
+	author    = {Tom Zahavy and
+	Nir Ben{-}Zrihem and
+	Shie Mannor},
+	title     = {Graying the black box: Understanding DQNs},
+	journal   = {CoRR},
+	volume    = {abs/1602.02658},
+	year      = {2016},
+	archivePrefix = {arXiv},
+	eprint    = {1602.02658},
+	timestamp = {Wed, 07 Jun 2017 14:43:15 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/ZahavyBM16},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article {SymbRL3,
+	author = {Shanahan, Murray},
+	title = {Perception as Abduction: Turning Sensor Data Into Meaningful Representation},
+	journal = {Cognitive Science},
+	volume = {29},
+	number = {1},
+	publisher = {Lawrence Erlbaum Associates, Inc.},
+	issn = {1551-6709},
+	doi = {10.1207/s15516709cog2901_5},
+	pages = {103--134},
+	keywords = {Perception, Abduction, Robotics, Vision, Knowledge representation, Logic},
+	year = {2005},
+}
+
+@article{ZhuART,
+  author    = {Xuankang Lin and
+               He Zhu and
+               Roopsha Samanta and
+               Suresh Jagannathan},
+  title     = {{ART:} Abstraction Refinement-Guided Training for Provably Correct
+               Neural Networks},
+  journal   = {CoRR},
+  volume    = {abs/1907.10662},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1907.10662},
+  archivePrefix = {arXiv},
+  eprint    = {1907.10662},
+  timestamp = {Mon, 21 Oct 2019 08:07:02 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1907-10662.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{Marabou,
+  author    = {Guy Katz and
+               Derek A. Huang and
+               Duligur Ibeling and
+               Kyle Julian and
+               Christopher Lazarus and
+               Rachel Lim and
+               Parth Shah and
+               Shantanu Thakoor and
+               Haoze Wu and
+               Aleksandar Zeljic and
+               David L. Dill and
+               Mykel J. Kochenderfer and
+               Clark W. Barrett},
+  editor    = {Isil Dillig and
+               Serdar Tasiran},
+  title     = {The Marabou Framework for Verification and Analysis of Deep Neural
+               Networks},
+  booktitle = {Computer Aided Verification - 31st International Conference, {CAV}
+               2019, New York City, NY, USA, July 15-18, 2019, Proceedings, Part
+               {I}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11561},
+  pages     = {443--452},
+  publisher = {Springer},
+  year      = {2019},
+  url       = {https://doi.org/10.1007/978-3-030-25540-4\_26},
+  doi       = {10.1007/978-3-030-25540-4\_26},
+  timestamp = {Fri, 31 Jan 2020 21:32:18 +0100},
+  biburl    = {https://dblp.org/rec/conf/cav/KatzHIJLLSTWZDK19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{SymbolicRL,
+	author    = {Marta Garnelo and
+	Kai Arulkumaran and
+	Murray Shanahan},
+	title     = {Towards Deep Symbolic Reinforcement Learning},
+	journal   = {CoRR},
+	volume    = {abs/1609.05518},
+	year      = {2016},
+	archivePrefix = {arXiv},
+	eprint    = {1609.05518},
+	timestamp = {Wed, 07 Jun 2017 14:40:11 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/GarneloAS16},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{SymbRL4,
+	author    = {Brenden M. Lake and
+	Tomer D. Ullman and
+	Joshua B. Tenenbaum and
+	Samuel J. Gershman},
+	title     = {Building Machines That Learn and Think Like People},
+	journal   = {CoRR},
+	volume    = {abs/1604.00289},
+	year      = {2016},
+	archivePrefix = {arXiv},
+	eprint    = {1604.00289},
+	timestamp = {Wed, 07 Jun 2017 14:42:13 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/LakeUTG16},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{DDQN,
+	author    = {Ziyu Wang and
+	Nando de Freitas and
+	Marc Lanctot},
+	title     = {Dueling Network Architectures for Deep Reinforcement Learning},
+	journal   = {CoRR},
+	volume    = {abs/1511.06581},
+	year      = {2015},
+	archivePrefix = {arXiv},
+	eprint    = {1511.06581},
+	timestamp = {Tue, 08 Aug 2017 15:06:57 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/WangFL15},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{FoldVerification,
+	title={Linear invariant generation using non-linear constraint solving},
+	author={Col{\'o}n, Michael A and Sankaranarayanan, Sriram and Sipma, Henny B},
+	booktitle={International Conference on Computer Aided Verification},
+	pages={420--432},
+	year={2003},
+	organization={Springer}
+}
+
+@article{HintonTrees,
+	author    = {Nicholas Frosst and
+	Geoffrey E. Hinton},
+	title     = {Distilling a Neural Network Into a Soft Decision Tree},
+	journal   = {CoRR},
+	volume    = {abs/1711.09784},
+	year      = {2017},
+	archivePrefix = {arXiv},
+	eprint    = {1711.09784},
+	timestamp = {Mon, 04 Dec 2017 18:34:59 +0100},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/abs-1711-09784},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{BayesianOpt,
+	author = {Snoek, Jasper and Larochelle, Hugo and Adams, Ryan P.},
+	title = {Practical Bayesian Optimization of Machine Learning Algorithms},
+	booktitle = {Proceedings of the 25th International Conference on Neural Information Processing Systems - Volume 2},
+	series = {NIPS'12},
+	year = {2012},
+	location = {Lake Tahoe, Nevada},
+	pages = {2951--2959},
+	numpages = {9},
+	acmid = {2999464},
+	publisher = {Curran Associates Inc.},
+	address = {USA},
+} 
+
+@article{NN:DDPG,
+	author    = {Timothy P. Lillicrap and
+	Jonathan J. Hunt and
+	Alexander Pritzel and
+	Nicolas Heess and
+	Tom Erez and
+	Yuval Tassa and
+	David Silver and
+	Daan Wierstra},
+	title     = {Continuous control with deep reinforcement learning},
+	journal   = {CoRR},
+	volume    = {abs/1509.02971},
+	year      = {2015},
+	archivePrefix = {arXiv},
+	eprint    = {1509.02971},
+	timestamp = {Wed, 07 Jun 2017 14:40:26 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/LillicrapHPHETS15},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@conference{Moore-1991-15826,
+	title = {Variable Resolution Dynamic Programming: Efficiently Learning Action Maps in Multivariate Real-valued State-spaces},
+	author = {Andrew Moore},
+	booktitle = {Proceedings of the Eighth International Conference on Machine Learning},
+	publisher = {Morgan Kaufmann},
+	month = {January},
+	year = {1991},
+}
+
+@article{JMLR:v16:geramifard15a,
+	author  = {Alborz Geramifard and Christoph Dann and Robert H. Klein and William Dabney and Jonathan P. How},
+	title   = {RLPy: A Value-Function-Based Reinforcement Learning Framework for Education and Research},
+	journal = {Journal of Machine Learning Research},
+	year    = {2015},
+	volume  = {16},
+	pages   = {1573-1578}
+}
+
+@ARTICLE{Barto83, 
+	author={A. G. Barto and R. S. Sutton and C. W. Anderson}, 
+	journal={IEEE Transactions on Systems, Man, and Cybernetics}, 
+	title={Neuronlike adaptive elements that can solve difficult learning control problems}, 
+	year={1983}, 
+	volume={SMC-13}, 
+	number={5}, 
+	pages={834-846}, 
+	keywords={adaptive control;learning systems;neural nets;adaptive control;adaptive critic element;animal learning studies;associative search element;learning control problem;movable cart;neural nets;neuronlike adaptive elements;Adaptive systems;Biological neural networks;Neurons;Pattern recognition;Problem-solving;Supervised learning;Training}, 
+	doi={10.1109/TSMC.1983.6313077}, 
+	ISSN={0018-9472}, 
+	month={Sept},}
+
+@book{RLBook,
+	author = {Sutton, Richard S. and Barto, Andrew G.},
+	title = {Introduction to Reinforcement Learning},
+	year = {1998},
+	isbn = {0262193981},
+	edition = {1st},
+	publisher = {MIT Press},
+	address = {Cambridge, MA, USA},
+} 
+
+@book{Bertsekas:1996:NP:560669,
+	author = {Bertsekas, Dimitri P. and Tsitsiklis, John N.},
+	title = {Neuro-Dynamic Programming},
+	year = {1996},
+	isbn = {1886529108},
+	edition = {1st},
+	publisher = {Athena Scientific},
+} 
+
+@inproceedings{DBLP:conf/pldi/FeserCD15,
+	author    = {John K. Feser and
+	Swarat Chaudhuri and
+	Isil Dillig},
+	title     = {Synthesizing data structure transformations from input-output examples},
+	booktitle = {Proceedings of the 36th {ACM} {SIGPLAN} Conference on Programming
+	Language Design and Implementation, Portland, OR, USA, June 15-17,
+	2015},
+	pages     = {229--239},
+	year      = {2015},
+	crossref  = {DBLP:conf/pldi/2015},
+	doi       = {10.1145/2737924.2737977},
+	timestamp = {Fri, 05 Jun 2015 07:31:54 +0200},
+	biburl    = {http://dblp.org/rec/bib/conf/pldi/FeserCD15},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{Sketch:Main,
+	author    = {Armando Solar{-}Lezama},
+	title     = {The Sketching Approach to Program Synthesis},
+	booktitle = {Programming Languages and Systems, 7th Asian Symposium, {APLAS} 2009,
+	Seoul, Korea, December 14-16, 2009. Proceedings},
+	pages     = {4--13},
+	year      = {2009},
+	crossref  = {DBLP:conf/aplas/2009},
+	doi       = {10.1007/978-3-642-10672-9_3},
+	timestamp = {Fri, 19 May 2017 01:25:54 +0200},
+	biburl    = {http://dblp.org/rec/bib/conf/aplas/Solar-Lezama09},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{NN:Mythos,
+	author    = {Zachary Chase Lipton},
+	title     = {The Mythos of Model Interpretability},
+	journal   = {CoRR},
+	volume    = {abs/1606.03490},
+	year      = {2016},
+	archivePrefix = {arXiv},
+	eprint    = {1606.03490},
+	timestamp = {Wed, 07 Jun 2017 14:40:56 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/Lipton16a},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{NN:Understanding,
+	author    = {Gr{\'{e}}goire Montavon and
+	Wojciech Samek and
+	Klaus{-}Robert M{\"{u}}ller},
+	title     = {Methods for Interpreting and Understanding Deep Neural Networks},
+	journal   = {CoRR},
+	volume    = {abs/1706.07979},
+	year      = {2017},
+	archivePrefix = {arXiv},
+	eprint    = {1706.07979},
+	timestamp = {Mon, 03 Jul 2017 13:29:02 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/MontavonSM17},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+
+@inproceedings{TORCS:Overtake,
+	author    = {Daniele Loiacono and
+	Alessandro Prete and
+	Pier Luca Lanzi and
+	Luigi Cardamone},
+	title     = {Learning to overtake in {TORCS} using simple reinforcement learning},
+	booktitle = {Proceedings of the {IEEE} Congress on Evolutionary Computation, {CEC}
+	2010, Barcelona, Spain, 18-23 July 2010},
+	pages     = {1--8},
+	year      = {2010},
+	crossref  = {DBLP:conf/cec/2010},
+	doi       = {10.1109/CEC.2010.5586191},
+	timestamp = {Sun, 21 May 2017 00:21:52 +0200},
+	biburl    = {http://dblp.org/rec/bib/conf/cec/LoiaconoPLC10},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{TORCS:NN,
+	author    = {Jan Koutn{\'{\i}}k and
+	Giuseppe Cuccu and
+	J{\"{u}}rgen Schmidhuber and
+	Faustino J. Gomez},
+	title     = {Evolving large-scale neural networks for vision-based {TORCS}},
+	booktitle = {Proceedings of the 8th International Conference on the Foundations
+	of Digital Games, {FDG} 2013, Chania, Crete, Greece, May 14-17, 2013.},
+	pages     = {206--212},
+	year      = {2013},
+	crossref  = {DBLP:conf/fdg/2013},
+	timestamp = {Sat, 18 Jun 2016 11:20:25 +0200},
+	biburl    = {http://dblp.org/rec/bib/conf/fdg/KoutnikCSG13},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{TORCS:FuzzyControl,
+	author    = {Mohammed Salem and
+	Antonio Miguel Mora and
+	Juan J. Merelo and
+	Pablo Garc{\'{\i}}a{-}S{\'{a}}nchez},
+	title     = {Driving in {TORCS} Using Modular Fuzzy Controllers},
+	booktitle = {Applications of Evolutionary Computation - 20th European Conference,
+	EvoApplications 2017, Amsterdam, The Netherlands, April 19-21, 2017,
+	Proceedings, Part {I}},
+	pages     = {361--376},
+	year      = {2017},
+	crossref  = {DBLP:conf/evoW/2017a-1},
+	timestamp = {Thu, 15 Jun 2017 21:41:44 +0200},
+	biburl    = {http://dblp.org/rec/bib/conf/evoW/SalemMMG17},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+@article{RoboFarm,
+	author    = {Sergey Levine and
+	Peter Pastor and
+	Alex Krizhevsky and
+	Deirdre Quillen},
+	title     = {Learning Hand-Eye Coordination for Robotic Grasping with Deep Learning
+	and Large-Scale Data Collection},
+	journal   = {CoRR},
+	volume    = {abs/1603.02199},
+	year      = {2016},
+	archivePrefix = {arXiv},
+	eprint    = {1603.02199},
+	timestamp = {Wed, 07 Jun 2017 14:41:34 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/LevinePKQ16},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{silver2017mastering,
+	title={Mastering Chess and {Shogi} by Self-Play with a General Reinforcement Learning Algorithm},
+	author={Silver, David and Hubert, Thomas and Schrittwieser, Julian and Antonoglou, Ioannis and Lai, Matthew and Guez, Arthur and Lanctot, Marc and Sifre, Laurent and Kumaran, Dharshan and Graepel, Thore and others},
+	journal={arXiv preprint arXiv:1712.01815},
+	year={2017}
+}
+
+@article{mnih2015human,
+	title={Human-level control through deep reinforcement learning},
+	author={Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Rusu, Andrei A and Veness, Joel and Bellemare, Marc G and Graves, Alex and Riedmiller, Martin and Fidjeland, Andreas K and Ostrovski, Georg and others},
+	journal={Nature},
+	volume={518},
+	number={7540},
+	pages={529},
+	year={2015}
+}
+
+@article{AlphaGo,
+	author    = {David Silver and
+	Aja Huang and
+	Chris J. Maddison and
+	Arthur Guez and
+	Laurent Sifre and
+	George van den Driessche and
+	Julian Schrittwieser and
+	Ioannis Antonoglou and
+	Vedavyas Panneershelvam and
+	Marc Lanctot and
+	Sander Dieleman and
+	Dominik Grewe and
+	John Nham and
+	Nal Kalchbrenner and
+	Ilya Sutskever and
+	Timothy P. Lillicrap and
+	Madeleine Leach and
+	Koray Kavukcuoglu and
+	Thore Graepel and
+	Demis Hassabis},
+	title     = {Mastering the game of {Go} with deep neural networks and tree search},
+	journal   = {Nature},
+	volume    = {529},
+	number    = {7587},
+	pages     = {484--489},
+	year      = {2016}
+}
+
+
+@article{DeepAtari,
+	author    = {Volodymyr Mnih and
+	Koray Kavukcuoglu and
+	David Silver and
+	Alex Graves and
+	Ioannis Antonoglou and
+	Daan Wierstra and
+	Martin A. Riedmiller},
+	title     = {Playing Atari with Deep Reinforcement Learning},
+	journal   = {CoRR},
+	volume    = {abs/1312.5602},
+	year      = {2013},
+	archivePrefix = {arXiv},
+	eprint    = {1312.5602},
+	timestamp = {Wed, 07 Jun 2017 14:43:06 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/MnihKSGAWR13},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@incollection{sygus,
+	author    = {Rajeev Alur and
+	Rastislav Bod{\'{\i}}k and
+	Eric Dallal and
+	Dana Fisman and
+	Pranav Garg and
+	Garvit Juniwal and
+	Hadas Kress{-}Gazit and
+	P. Madhusudan and
+	Milo M. K. Martin and
+	Mukund Raghothaman and
+	Shambwaditya Saha and
+	Sanjit A. Seshia and
+	Rishabh Singh and
+	Armando Solar{-}Lezama and
+	Emina Torlak and
+	Abhishek Udupa},
+	title     = {Syntax-Guided Synthesis},
+	booktitle = {Dependable Software Systems Engineering},
+	pages     = {1--25},
+	year      = {2015},
+	doi       = {10.3233/978-1-61499-495-4-1},
+	timestamp = {Wed, 14 Jun 2017 20:39:07 +0200},
+	biburl    = {http://dblp.org/rec/bib/series/natosec/AlurBDF0JKMMRSSSSTU15},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{DeepCoder,
+	author    = {Matej Balog and
+	Alexander L. Gaunt and
+	Marc Brockschmidt and
+	Sebastian Nowozin and
+	Daniel Tarlow},
+	title     = {DeepCoder: Learning to Write Programs},
+	journal   = {CoRR},
+	volume    = {abs/1611.01989},
+	year      = {2016},
+	archivePrefix = {arXiv},
+	eprint    = {1611.01989},
+	timestamp = {Wed, 07 Jun 2017 14:43:01 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/BalogGBNT16},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+@book{aastrom1995pid,
+	title={PID controllers: Theory, Design, and Tuning},
+	author={{\AA}str{\"o}m, Karl J. and H{\"a}gglund, Tore},
+	year={1995},
+	publisher={Instrument society of America}
+}
+
+@article{RobustFill,
+	author    = {Jacob Devlin and
+	Jonathan Uesato and
+	Surya Bhupatiraju and
+	Rishabh Singh and
+	Abdel{-}rahman Mohamed and
+	Pushmeet Kohli},
+	title     = {RobustFill: Neural Program Learning under Noisy {I/O}},
+	journal   = {CoRR},
+	volume    = {abs/1703.07469},
+	year      = {2017},
+	archivePrefix = {arXiv},
+	eprint    = {1703.07469},
+	timestamp = {Wed, 07 Jun 2017 14:41:04 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/DevlinUBSMK17},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@misc{TORCS,
+	author = "Bernhard Wymann and Eric Espi{\'e} and Christophe Guionneau and Christos Dimitrakakis and R{\'e}mi Coulom and Andrew Sumner",
+	howpublished = "http://www.torcs.org",
+	title = "{TORCS}, {T}he {O}pen {R}acing {C}ar {S}imulator",
+	year = "2014"
+}
+
+@misc{Blog:DDPG,
+	author = "Ben Lau",
+	howpublished = "https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html",
+	title = "Using Keras and Deep Deterministic Policy Gradient to play TORCS",
+	year = "2016",
+	month = "October"
+}
+
+@article { lecun-98,
+	original =    "orig/lecun-98.ps.gz",
+	author = 	"LeCun, Y. and Bottou, L. and Bengio, Y. and Haffner, P.",
+	title = 	"Gradient-Based Learning Applied to Document Recognition",
+	journal =	"Proceedings of the IEEE",
+	month =         "November",
+	volume =        "86",
+	number =        "11",
+	pages =         "2278-2324",
+	year =		1998
+}
+
+@article{DBLP:journals/corr/SimonyanZ14a,
+	author    = {Karen Simonyan and
+	Andrew Zisserman},
+	title     = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
+	journal   = {CoRR},
+	volume    = {abs/1409.1556},
+	year      = {2014},
+	url       = {http://arxiv.org/abs/1409.1556},
+	timestamp = {Wed, 01 Oct 2014 15:00:05 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/SimonyanZ14a},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@misc{tensorflow2015-whitepaper,
+	title={ {TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems},
+	url={http://tensorflow.org/},
+	note={Software available from tensorflow.org},
+	author={
+	Mart\'{\i}n~Abadi and
+	Ashish~Agarwal and
+	Paul~Barham and
+	Eugene~Brevdo and
+	Zhifeng~Chen and
+	Craig~Citro and
+	Greg~S.~Corrado and
+	Andy~Davis and
+	Jeffrey~Dean and
+	Matthieu~Devin and
+	Sanjay~Ghemawat and
+	Ian~Goodfellow and
+	Andrew~Harp and
+	Geoffrey~Irving and
+	Michael~Isard and
+	Yangqing Jia and
+	Rafal~Jozefowicz and
+	Lukasz~Kaiser and
+	Manjunath~Kudlur and
+	Josh~Levenberg and
+	Dan~Man\'{e} and
+	Rajat~Monga and
+	Sherry~Moore and
+	Derek~Murray and
+	Chris~Olah and
+	Mike~Schuster and
+	Jonathon~Shlens and
+	Benoit~Steiner and
+	Ilya~Sutskever and
+	Kunal~Talwar and
+	Paul~Tucker and
+	Vincent~Vanhoucke and
+	Vijay~Vasudevan and
+	Fernanda~Vi\'{e}gas and
+	Oriol~Vinyals and
+	Pete~Warden and
+	Martin~Wattenberg and
+	Martin~Wicke and
+	Yuan~Yu and
+	Xiaoqiang~Zheng},
+	year={2015},
+}
+
+@inproceedings{dagger,
+	author    = {St{\'{e}}phane Ross and
+	Geoffrey J. Gordon and
+	Drew Bagnell},
+	title     = {A Reduction of Imitation Learning and Structured Prediction to No-Regret
+	Online Learning},
+	booktitle = {Proceedings of the Fourteenth International Conference on Artificial
+	Intelligence and Statistics, {AISTATS} 2011, Fort Lauderdale, USA,
+	April 11-13, 2011},
+	pages     = {627--635},
+	year      = {2011},
+	timestamp = {Thu, 11 Sep 2014 07:28:56 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/jmlr/RossGB11},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{nram,
+	author    = {Karol Kurach and
+	Marcin Andrychowicz and
+	Ilya Sutskever},
+	title     = {Neural Random-Access Machines},
+	journal   = {CoRR},
+	volume    = {abs/1511.06392},
+	year      = {2015},
+	archivePrefix = {arXiv},
+	eprint    = {1511.06392},
+	timestamp = {Wed, 07 Jun 2017 14:41:02 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/KurachAS15},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{ntm,
+	author    = {Alex Graves and
+	Greg Wayne and
+	Ivo Danihelka},
+	title     = {Neural Turing Machines},
+	journal   = {CoRR},
+	volume    = {abs/1410.5401},
+	year      = {2014},
+	archivePrefix = {arXiv},
+	eprint    = {1410.5401},
+	timestamp = {Wed, 07 Jun 2017 14:42:19 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/GravesWD14},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{stackrnn,
+	author    = {Armand Joulin and
+	Tomas Mikolov},
+	title     = {Inferring Algorithmic Patterns with Stack-Augmented Recurrent Nets},
+	booktitle = {Advances in Neural Information Processing Systems 28: Annual Conference
+	on Neural Information Processing Systems 2015, December 7-12, 2015,
+	Montreal, Quebec, Canada},
+	pages     = {190--198},
+	year      = {2015},
+	crossref  = {DBLP:conf/nips/2015},
+	timestamp = {Fri, 08 Apr 2016 19:32:53 +0200},
+	biburl    = {http://dblp.org/rec/bib/conf/nips/JoulinM15},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{rlkarel,
+	author    = {Rudy Bunel and Matthew Hausknecht and Jacob Devlin and Rishabh Singh and Pushmeet Kohli},
+	title     = {Leveraging Grammar and Reinforcement Learning for Neural Program Synthesis},
+	booktitle   = {ICLR},
+	year      = {2018}
+}
+
+@article{rlbf,
+	author    = {Daniel A. Abolafia and
+	Mohammad Norouzi and
+	Quoc V. Le},
+	title     = {Neural Program Synthesis with Priority Queue Training},
+	journal   = {CoRR},
+	volume    = {abs/1801.03526},
+	year      = {2018},
+	archivePrefix = {arXiv},
+	eprint    = {1801.03526},
+	timestamp = {Thu, 01 Feb 2018 19:52:26 +0100},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/abs-1801-03526},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{king1976symbolic,
+	title={Symbolic execution and program testing},
+	author={King, James C},
+	journal={Communications of the ACM},
+	volume={19},
+	number={7},
+	pages={385--394},
+	year={1976},
+	publisher={ACM}
+}
+
+
+@string{acsac = "ACSAC"}
+@string{acta = "Acta Inf."}
+@string{aplas = "Asian Symp.\ on Prog.\ Lang.\ and Systems"}
+@string{ase = "Int.\ Conf.\ on Automated Softw.\ Eng."}
+@string{asian = "Asian Comp.\ Sci.\ Conf."}
+@string{asplos = "Architectural Support for Prog.\ Lang.\ and Op.\ Syst."}
+@string{cacm = "Commun.\ ACM"}
+@string{cade = "Conf.\ on Automated Deduction"}
+@string{cav = "Computer Aided Verif."}
+@string{cc = "Comp.\ Construct."}
+@string{cccs = "Conf.\ on Comp.\ and Commun.\ Sec."}
+@string{cgo = "Int.\ Symp.\ on Code Generation and Optimization"}
+@string{crc = "CRC Press"}
+@string{compsac = "Comp.\ Softw.\ and Applications Conf."}
+@string{dac = "Design Automation Conf."}
+@string{dlt = "Developments in Lang.\ Theory"}
+@string{ecoop = "European Conf.\ on Obj.-Oriented Prog."}
+@string{entcs = "Electr.\ Notes Theor.\ Comp.\ Sci."}
+@string{ese = "Empirical Software Engineering"}
+@string{esop = "European Symp.\ on Programming"}
+@string{fac = "Formal Aspects of Computing"}
+@string{fm = "Int.\ Symp.\ on Formal Methods"}
+@string{fmcad = "Int.\ Conf.\ on Formal Methods in Computer-Aided Design"}
+@string{fme = "Int.\ Symp.\ of Formal Methods Europe"}
+@string{fmco = "Formal Methods for Components and Objects"}
+@string{fmsd = "Formal Methods in System Design"}
+@string{fse = "Found.\ of Softw.\ Eng."}
+@string{fase = "Formal Approaches in Softw.\ Eng."}
+@string{fsttcs = "Found.\ of Software Tech.\ and Theoretical Comp.\ Sci."}
+@string{hosc = "Higher-Order and Symbolic Computation"}
+@string{icalp = "Int. Colloq. on Automata, Langs., and Programming"}
+@string{iccad = "Int.\ Conf.\ on Computer Aided Design"}
+@string{iccl = "Int.\ Conf.\ on Computer Languages"}
+@string{icis = "Int.\ Conf.\ on Comp.\ and Inf.\ Sci."}
+@string{ics = "Int.\ Conf.\ Supercomputing"}
+@string{icse = "Int.\ Conf.\ on Softw.\ Eng."}
+@string{ipl = "Inf.\ Proc.\ Let."}
+@string{issta = "Int.\ Symp.\ on Softw.\ Testing and Analysis"}
+@string{jacm = "J.\ ACM"}
+@string{jalg = "J.\ Alg."}
+@string{jcss = "J.\ Comput.\ Syst.\ Sci."}
+@string{jlp = "J.\ Log.\ Program."}
+@string{jss = "J.\ Systems and Software"}
+@string{kap = "Kluwer Acad."}
+@string{lctes = "LCTES"}
+@string{lics = "Logic in Computer Science"}
+@string{lmcs = "Logical Methods in Comp.\ Sci."}
+@string{lncs = "Lec.\ Notes in Comp.\ Sci."}
+@string{loplas = "Let.\ on Prog.\ Lang.\ and Syst."}
+@string{lopstr = "Int.\ Workshop on Logic Based Prog.\ Dev.\ and Transformation"}
+@string{nasafms = "Proc.\ of the First NASA Formal Methods Symposium"}
+@string{ndss = "Network and Dist.\ Syst.\ Security"}
+@string{osdi = "Op.\ Syst.\ Design and Impl."}
+@string{parle = "Par.\ Arch.\ and Lang.\ Europe"}
+@string{paste = "Prog.\ Analysis for Softw.\ Tools and Eng."}
+@string{pepm = "Part.\ Eval.\ and Semantics-Based Prog.\ Manip."}
+@string{pldi = "Prog.\ Lang.\ Design and Impl."}
+@string{plilp = "Prog.\ Lang.\ Impl.\ and Logic Prog."}
+@string{popl = "Princ.\ of Prog.\ Lang."}
+@string{ppopp = "PPoPP"}
+@string{prentice = "Prentice-Hall"}
+@string{sas = "Static Analysis Symp."}
+@string{sat = "Theory and App.\ of Satisfiability Testing"}
+@string{scam = "Workshop on Source Code Analysis and Manipulation"}
+@string{scp = "Sci.\ of Comp.\ Prog."}
+@string{seke = "Int.\ Conf.\ on Softw.\ Eng.\ and Knowledge Eng."}
+@string{sigmod = "Conf.\ on Management of Data"}
+@string{socc = "Symp.\ on Comp.\ Construct."}
+@string{softmc = "Workshop on Software Model Checking"}
+@string{spin = "Spin Workshop"}
+@string{spv = "Springer-Verlag"}
+@string{spe = "Software: Practice and Experience"}
+@string{stoc = "STOC"}
+@string{sttt = "Softw.\ Tools for Tech.\ Transfer"}
+@string{tacas = "Tools and Algs.\ for the Construct.\ and Anal.\ of Syst."}
+@string{tacs = "Theor.\ Aspects of Comp.\ Softw."}
+@string{toplas = "Trans.\ on Prog.\ Lang.\ and Syst."}
+@string{tosem = "Trans.\ on Softw.\ Eng.\ and Method."}
+@string{tcs = "Theor.\ Comp.\ Sci."}
+@string{toc = "IEEE Trans.\ on Computers"}
+@string{tse = "Trans.\ on Softw.\ Eng."}
+@string{uss = "USENIX Sec. Symp."}
+@string{vldb = "Very Large Data Bases"}
+@string{vmcai = "Verif., Model Checking, and Abs.\ Interp."}
+@string{vstte = "IFIP Working Conf.\ on Verified Software: Theories, Tools, Experiments"}
+@string{wcre = "Working Conf.\ on Rev.\ Eng."}
+
+@misc{bayou-github,
+	title = {Github Bayou page},
+	howpublished = "\url{http://www.github.com/capergroup/bayou}",
+	note = "[Online; accessed 25-Jun-2017]",
+	author = {},
+	year = 2017
+}
+
+@inproceedings{gulwani11,
+	author    = {Sumit Gulwani},
+	title     = {Automating string processing in spreadsheets using input-output examples},
+	booktitle = {Proceedings of the 38th {ACM} {SIGPLAN-SIGACT} Symposium on Principles
+	of Programming Languages, {POPL} 2011, Austin, TX, USA, January 26-28,
+	2011},
+	pages     = {317--330},
+	year      = {2011},
+	crossref  = {DBLP:conf/popl/2011},
+	url       = {https://doi.org/10.1145/1926385.1926423},
+	doi       = {10.1145/1926385.1926423},
+	timestamp = {Tue, 06 Nov 2018 11:07:44 +0100},
+	biburl    = {https://dblp.org/rec/bib/conf/popl/Gulwani11},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{gulwani-survey,
+	title={Program synthesis},
+	author={Gulwani, Sumit and Polozov, Oleksandr and Singh, Rishabh},
+	journal={Foundations and Trends in Programming Languages},
+	volume={4},
+	number={1-2},
+	pages={1--119},
+	year={2017},
+	publisher={Now Publishers, Inc.}
+}
+
+@article{student1908probable,
+	title={The probable error of a mean},
+	author={Student},
+	journal={Biometrika},
+	pages={1--25},
+	year={1908},
+	publisher={JSTOR}
+}
+
+@misc{askbayou,
+	title = {AskBayou},
+	howpublished = "\url{http://www.askbayou.com}",
+	note = "[Online; accessed 25-Jun-2017]",
+	author = {},
+	year = 2017
+}
+
+
+@misc{tensorflow,
+	title = {TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems},
+	author  = {Martin Abadi and Ashish Agarwal and Paul Barham and Eugene Brevdo and Zhifeng Chen and Craig Citro and Greg Corrado and Andy Davis and Jeffrey Dean and Matthieu Devin and Sanjay Ghemawat and Ian Goodfellow and Andrew Harp and Geoffrey Irving and Michael Isard and Yangqing Jia and Rafal Jozefowicz and Lukasz Kaiser and Manjunath Kudlur and Josh Levenberg and Dan Mane and Rajat Monga and Sherry Moore and Derek Murray and Chris Olah and Mike Schuster and Jonathon Shlens and Benoit Steiner and Ilya Sutskever and Kunal Talwar and Paul Tucker and Vincent Vanhoucke and Vijay Vasudevan and Fernanda Viegas and Oriol Vinyals and Pete Warden and Martin Wattenberg and Martin Wicke and Yuan Yu and Xiaoqiang Zheng},
+	year  = 2015,
+	URL = {http://download.tensorflow.org/paper/whitepaper2015.pdf}
+}
+
+@article{cadar2013symbolic,
+	title={Symbolic execution for software testing: three decades later},
+	author={Cadar, Cristian and Sen, Koushik},
+	journal={Communications of the ACM},
+	volume={56},
+	number={2},
+	pages={82--90},
+	year={2013},
+	publisher={ACM}
+}
+
+@article{Schkufza0A16,
+	author    = {Eric Schkufza and
+	Rahul Sharma and
+	Alex Aiken},
+	title     = {Stochastic program optimization},
+	journal   = {Commun. {ACM}},
+	volume    = {59},
+	number    = {2},
+	pages     = {114--122},
+	year      = {2016}
+}
+
+@article{kusner2017grammar,
+	title={Grammar Variational Autoencoder},
+	author={Kusner, Matt J and Paige, Brooks and Hern{\'a}ndez-Lobato, Jos{\'e} Miguel},
+	journal={arXiv preprint arXiv:1703.01925},
+	year={2017}
+}
+
+@article{zhang89,
+	title={Simple fast algorithms for the editing distance between trees and related problems},
+	author={Zhang, Kaizhong and Shasha, Dennis},
+	journal={SIAM journal on computing},
+	volume={18},
+	number={6},
+	pages={1245--1262},
+	year={1989},
+	publisher={SIAM}
+}
+
+@Misc{scipy,
+	author =    {Eric Jones and Travis Oliphant and Pearu Peterson and others},
+	title =     {{SciPy}: Open source scientific tools for {Python}},
+	year =      {2001--},
+	url = "http://www.scipy.org/",
+	note = {[Online; accessed 2016-11-09]}
+}
+
+@inproceedings{green1969,
+	author = {Green, Cordell},
+	title = {Application of Theorem Proving to Problem Solving},
+	booktitle = {Proceedings of the 1st International Joint Conference on Artificial Intelligence},
+	series = {IJCAI},
+	year = {1969},
+	pages = {219--239}
+}
+
+
+@article{simon1963experiments,
+	title={Experiments with a heuristic compiler},
+	author={Simon, Herbert A},
+	journal={Journal of the ACM (JACM)},
+	volume={10},
+	number={4},
+	pages={493--506},
+	year={1963},
+	publisher={ACM}
+}
+
+@article{mannawaldinger,
+	author = {Manna, Zohar and Waldinger, Richard J.},
+	title = {Toward Automatic Program Synthesis},
+	journal = {Communications of the {ACM}},
+	volume = {14},
+	number = {3},
+	year = {1971},
+	pages = {151--165}
+} 
+
+@inproceedings{topicRNN,
+	title={Context dependent recurrent neural network language model.},
+	author={Mikolov, Tomas and Zweig, Geoffrey},
+	booktitle={SLT},
+	pages={234--239},
+	year={2012}
+}
+
+@article{LDA,
+	author    = {David M. Blei and
+	Andrew Y. Ng and
+	Michael I. Jordan},
+	title     = {Latent Dirichlet Allocation},
+	journal   = {Journal of Machine Learning Research},
+	volume    = {3},
+	pages     = {993--1022},
+	year      = {2003},
+	url       = {http://www.jmlr.org/papers/v3/blei03a.html},
+	timestamp = {Thu, 05 Feb 2004 13:43:02 +0100},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/journals/jmlr/BleiNJ03},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+@article{KLD,
+	author = "Kullback, S. and Leibler, R. A.",
+	doi = "10.1214/aoms/1177729694",
+	fjournal = "The Annals of Mathematical Statistics",
+	journal = "Ann. Math. Statist.",
+	month = "03",
+	number = "1",
+	pages = "79--86",
+	publisher = "The Institute of Mathematical Statistics",
+	title = "On Information and Sufficiency",
+	url = "http://dx.doi.org/10.1214/aoms/1177729694",
+	volume = "22",
+	year = "1951"
+}
+
+@inproceedings{vechevPOPL16,
+	author    = {Veselin Raychev and
+	Pavol Bielik and
+	Martin T. Vechev and
+	Andreas Krause},
+	title     = {Learning programs from noisy data},
+	booktitle = {Proceedings of the 43rd Annual {ACM} {SIGPLAN-SIGACT} Symposium on
+	Principles of Programming Languages, {POPL} 2016, St. Petersburg,
+	FL, USA, January 20 - 22, 2016},
+	pages     = {761--774},
+	year      = {2016},
+	url       = {http://doi.acm.org/10.1145/2837614.2837671},
+	doi       = {10.1145/2837614.2837671},
+	timestamp = {Thu, 30 Jun 2016 12:29:26 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/popl/RaychevBVK16},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{vechevOOPSLA16,
+	author    = {Veselin Raychev and
+	Pavol Bielik and
+	Martin T. Vechev},
+	title     = {Probabilistic model for code with decision trees},
+	booktitle = {Proceedings of the 2016 {ACM} {SIGPLAN} International Conference on
+	Object-Oriented Programming, Systems, Languages, and Applications,
+	{OOPSLA} 2016, part of {SPLASH} 2016, Amsterdam, The Netherlands,
+	October 30 - November 4, 2016},
+	pages     = {731--747},
+	year      = {2016},
+	crossref  = {DBLP:conf/oopsla/2016},
+	url       = {http://doi.acm.org/10.1145/2983990.2984041},
+	doi       = {10.1145/2983990.2984041},
+	timestamp = {Tue, 25 Oct 2016 15:23:23 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/oopsla/RaychevBV16},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{sliceSampling,
+	title={Slice sampling},
+	author={Neal, Radford M},
+	journal={Annals of statistics},
+	pages={705--741},
+	year={2003},
+	publisher={JSTOR}
+}
+
+@inproceedings{chuEMSOFT13,
+	author = {Chu, Duc-Hiep and Jaffar, Joxan},
+	title = {Path-sensitive Resource Analysis Compliant with Assertions},
+	booktitle = {Proceedings of the Eleventh ACM International Conference on Embedded Software},
+	series = {EMSOFT '13},
+	year = {2013},
+	isbn = {978-1-4799-1443-2},
+	location = {Montreal, Quebec, Canada},
+	pages = {15:1--15:10},
+	articleno = {15},
+	numpages = {10},
+	url = {http://dl.acm.org/citation.cfm?id=2555754.2555769},
+	acmid = {2555769},
+	publisher = {IEEE Press},
+	address = {Piscataway, NJ, USA},
+}
+
+@article{biermann1978inference,
+	title={The inference of regular {LISP} programs from examples},
+	author={Biermann, Alan W},
+	journal={IEEE transactions on Systems, Man, and Cybernetics},
+	volume={8},
+	number={8},
+	pages={585--600},
+	year={1978},
+	publisher={IEEE}
+}
+
+@article{kingma2014semi,
+	author    = {Diederik P. Kingma and
+	Danilo Jimenez Rezende and
+	Shakir Mohamed and
+	Max Welling},
+	title     = {Semi-Supervised Learning with Deep Generative Models},
+	journal   = {CoRR},
+	volume    = {abs/1406.5298},
+	year      = {2014},
+	url       = {http://arxiv.org/abs/1406.5298},
+	timestamp = {Wed, 07 Jun 2017 14:42:55 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/KingmaRMW14},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{amodio2017nam,
+	author    = {Matthew Amodio and
+	Swarat Chaudhuri and
+	Thomas W. Reps},
+	title     = {Neural Attribute Machines for Program Generation},
+	journal   = {CoRR},
+	volume    = {abs/1705.09231},
+	year      = {2017},
+	url       = {http://arxiv.org/abs/1705.09231},
+	timestamp = {Mon, 19 Jun 2017 08:34:10 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/AmodioCR17},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{bielik2016phog,
+	title={{PHOG}: probabilistic model for code},
+	author={Bielik, Pavol and Raychev, Veselin and Vechev, Martin T},
+	booktitle={ICML},
+	pages={19--24},
+	year={2016}
+}
+
+
+
+@inproceedings{robustfill,
+	title={RobustFill: Neural Program Learning under Noisy {I/O}},
+	author={Jacob Devlin and
+	Jonathan Uesato and
+	Surya Bhupatiraju and
+	Rishabh Singh and
+	Abdel{-}rahman Mohamed and
+	Pushmeet Kohli},
+	booktitle={ICML},
+	year={2017}
+}
+
+
+
+@inproceedings{solar2009sketching,
+	title={The sketching approach to program synthesis},
+	author={Solar-Lezama, Armando},
+	booktitle={Asian Symposium on Programming Languages and Systems},
+	pages={4--13},
+	year={2009},
+	organization={Springer}
+}
+
+@article{summers1977methodology,
+	title={A methodology for {LISP} program construction from examples},
+	author={Summers, Phillip D},
+	journal={Journal of the ACM (JACM)},
+	volume={24},
+	number={1},
+	pages={161--175},
+	year={1977},
+	publisher={ACM}
+}
+
+@article{inductive-realworld,
+	author = {Gulwani, Sumit and Hern\'{a}ndez-Orallo, Jos{\'e} and Kitzelmann, Emanuel and Muggleton, Stephen H. and Schmid, Ute and Zorn, Benjamin},
+	title = {Inductive Programming Meets the Real World},
+	journal = {Commun. ACM},
+	issue_date = {November 2015},
+	volume = {58},
+	number = {11},
+	year = {2015},
+	issn = {0001-0782},
+	pages = {90--99},
+	numpages = {10},
+	url = {http://doi.acm.org/10.1145/2736282},
+	doi = {10.1145/2736282},
+	acmid = {2736282},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+} 
+
+@article{Ball:2011:DSM:1965724.1965743,
+	author = {Ball, Thomas and Levin, Vladimir and Rajamani, Sriram K.},
+	title = {A Decade of Software Model Checking with SLAM},
+	journal = {Commun. ACM},
+	issue_date = {July 2011},
+	volume = {54},
+	number = {7},
+	month = jul,
+	year = {2011},
+	issn = {0001-0782},
+	pages = {68--76},
+	numpages = {9}
+} 
+
+@article{Bessey:2010:FBL:1646353.1646374,
+	author = {Bessey, Al and Block, Ken and Chelf, Ben and Chou, Andy and Fulton, Bryan and Hallem, Seth and Henri-Gros, Charles and Kamsky, Asya and McPeak, Scott and Engler, Dawson},
+	title = {A Few Billion Lines of Code Later: Using Static Analysis to Find Bugs in the Real World},
+	journal = {Communications of the ACM},
+	issue_date = {February 2010},
+	volume = {53},
+	number = {2},
+	month = feb,
+	year = {2010},
+	issn = {0001-0782},
+	pages = {66--75},
+	numpages = {10}
+} 
+
+@article{bengio03neural,
+	title={A neural probabilistic language model},
+	author={Bengio, Yoshua and Ducharme, R{\'e}jean and Vincent, Pascal and Jauvin, Christian},
+	journal={journal of machine learning research},
+	volume={3},
+	number={Feb},
+	pages={1137--1155},
+	year={2003}
+}
+
+@inproceedings{bugramASE16,
+	author = {Wang, Song and Chollak, Devin and Movshovitz-Attias, Dana and Tan, Lin},
+	title = {Bugram: Bug Detection with N-gram Language Models},
+	booktitle = {Proceedings of the 31st IEEE/ACM International Conference on Automated Software Engineering},
+	series = {ASE 2016},
+	year = {2016},
+	isbn = {978-1-4503-3845-5},
+	location = {Singapore, Singapore},
+	pages = {708--719},
+	numpages = {12},
+	url = {http://doi.acm.org/10.1145/2970276.2970341},
+	doi = {10.1145/2970276.2970341},
+	acmid = {2970341},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {Bug Detection, N-gram Language Model, Static Code Analysis},
+} 
+
+@inproceedings{nguyenFSE13,
+	author = {Nguyen, Tung Thanh and Nguyen, Anh Tuan and Nguyen, Hoan Anh and Nguyen, Tien N.},
+	title = {A Statistical Semantic Language Model for Source Code},
+	booktitle = {Proceedings of the 2013 9th Joint Meeting on Foundations of Software Engineering},
+	series = {ESEC/FSE 2013},
+	year = {2013},
+	isbn = {978-1-4503-2237-9},
+	location = {Saint Petersburg, Russia},
+	pages = {532--542},
+	numpages = {11},
+	url = {http://doi.acm.org/10.1145/2491411.2491458},
+	doi = {10.1145/2491411.2491458},
+	acmid = {2491458},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {Code Completion, Statistical Semantic Language Model},
+} 
+
+@inproceedings{nguyenICSE15,
+	author = {Nguyen, Anh Tuan and Nguyen, Tien N.},
+	title = {Graph-based Statistical Language Model for Code},
+	booktitle = {Proceedings of the 37th International Conference on Software Engineering - Volume 1},
+	series = {ICSE '15},
+	year = {2015},
+	isbn = {978-1-4799-1934-5},
+	location = {Florence, Italy},
+	pages = {858--868},
+	numpages = {11},
+	url = {http://dl.acm.org/citation.cfm?id=2818754.2818858},
+	acmid = {2818858},
+	publisher = {IEEE Press},
+	address = {Piscataway, NJ, USA},
+} 
+
+
+@article{sourcerer,
+	author = {Linstead, Erik and Bajracharya, Sushil and Ngo, Trung and Rigor, Paul and Lopes, Cristina and Baldi, Pierre},
+	title = {Sourcerer: Mining and Searching Internet-scale Software Repositories},
+	journal = {Data Min. Knowl. Discov.},
+	issue_date = {April     2009},
+	volume = {18},
+	number = {2},
+	month = apr,
+	year = {2009},
+	issn = {1384-5810},
+	pages = {300--336},
+	numpages = {37}
+} 
+
+@article{deepAPI,
+	author    = {Xiaodong Gu and
+	Hongyu Zhang and
+	Dongmei Zhang and
+	Sunghun Kim},
+	title     = {Deep {API} Learning},
+	journal   = {CoRR},
+	volume    = {abs/1605.08535},
+	year      = {2016},
+	url       = {http://arxiv.org/abs/1605.08535},
+	timestamp = {Wed, 01 Jun 2016 15:51:07 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/GuZZK16},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{idiomsFSE14,
+	author = {Allamanis, Miltiadis and Sutton, Charles},
+	title = {Mining Idioms from Source Code},
+	booktitle = {Proceedings of the 22Nd ACM SIGSOFT International Symposium on Foundations of Software Engineering},
+	series = {FSE 2014},
+	year = {2014},
+	isbn = {978-1-4503-3056-5},
+	location = {Hong Kong, China},
+	pages = {472--483},
+	numpages = {12},
+	url = {http://doi.acm.org/10.1145/2635868.2635901},
+	doi = {10.1145/2635868.2635901},
+	acmid = {2635901},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {code idioms, naturalness of source code, syntactic code patterns},
+} 
+
+@article{gveroPLDI13,
+	author = {Gvero, Tihomir and Kuncak, Viktor and Kuraj, Ivan and Piskac, Ruzica},
+	title = {Complete Completion Using Types and Weights},
+	journal = {SIGPLAN Not.},
+	issue_date = {June 2013},
+	volume = {48},
+	number = {6},
+	month = jun,
+	year = {2013},
+	issn = {0362-1340},
+	pages = {27--38},
+	numpages = {12},
+	url = {http://doi.acm.org/10.1145/2499370.2462192},
+	doi = {10.1145/2499370.2462192},
+	acmid = {2462192},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {code completion, program synthesis, ranking, type inhabitation, type-driven synthesis},
+} 
+
+@inproceedings{WangCMT16,
+	author    = {Song Wang and
+	Devin Chollak and
+	Dana Movshovitz{-}Attias and
+	Lin Tan},
+	title     = {Bugram: bug detection with n-gram language models},
+	booktitle = {Proceedings of the 31st {IEEE/ACM} International Conference on Automated
+	Software Engineering, {ASE} 2016, Singapore, September 3-7, 2016},
+	pages     = {708--719},
+	year      = {2016},
+	url       = {http://doi.acm.org/10.1145/2970276.2970341},
+	doi       = {10.1145/2970276.2970341},
+	timestamp = {Mon, 10 Oct 2016 15:09:35 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/kbse/WangCMT16},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@Inbook{GPA2,
+	author="Sokolova, Ana
+	and de Vink, Erik P.",
+	editor="Baier, Christel
+	and Haverkort, Boudewijn R.
+	and Hermanns, Holger
+	and Katoen, Joost-Pieter
+	and Siegle, Markus",
+	title="Probabilistic Automata: System Types, Parallel Composition and Comparison",
+	bookTitle="Validation of Stochastic Systems: A Guide to Current Research",
+	year="2004",
+	publisher="Springer Berlin Heidelberg",
+	address="Berlin, Heidelberg",
+	pages="1--43",
+	isbn="978-3-540-24611-4",
+	doi="10.1007/978-3-540-24611-4_1",
+	url="http://dx.doi.org/10.1007/978-3-540-24611-4_1"
+}
+
+
+
+@incollection{GPA1,
+	author = {Murawski, Andrzej S. and Ouaknine, Jo\"{e}l},
+	chapter = {On Probabilistic Program Equivalence and Refinement},
+	title = {CONCUR 2005 - Concurrency Theory},
+	editor = {Abadi, Mart\'{\i}n and de Alfaro, Luca},
+	year = {2005},
+	isbn = {3-540-28309-9},
+	pages = {156--170},
+	numpages = {15},
+	url = {http://dx.doi.org/10.1007/11539452_15},
+	doi = {10.1007/11539452_15},
+	acmid = {1099348},
+	publisher = {Springer-Verlag},
+	address = {London, UK, UK},
+} 
+
+@article{LSTM,
+	author = {Hochreiter, Sepp and Schmidhuber, J\"{u}rgen},
+	title = {Long Short-Term Memory},
+	journal = {Neural Comput.},
+	issue_date = {November 15, 1997},
+	volume = {9},
+	number = {8},
+	month = nov,
+	year = {1997},
+	issn = {0899-7667},
+	pages = {1735--1780},
+	numpages = {46},
+	url = {http://dx.doi.org/10.1162/neco.1997.9.8.1735},
+	doi = {10.1162/neco.1997.9.8.1735},
+	acmid = {1246450},
+	publisher = {MIT Press},
+	address = {Cambridge, MA, USA},
+} 
+
+@inproceedings{KLEE,
+	author = {Cadar, Cristian and Dunbar, Daniel and Engler, Dawson},
+	title = {KLEE: Unassisted and Automatic Generation of High-coverage Tests for Complex Systems Programs},
+	booktitle = {Proceedings of the 8th USENIX Conference on Operating Systems Design and Implementation},
+	series = {OSDI'08},
+	year = {2008},
+	location = {San Diego, California},
+	pages = {209--224},
+	numpages = {16},
+	url = {http://dl.acm.org/citation.cfm?id=1855741.1855756},
+	acmid = {1855756},
+	publisher = {USENIX Association},
+	address = {Berkeley, CA, USA},
+}
+
+@inproceedings{tracercav12,
+	author = {Jaffar, Joxan and Murali, Vijayaraghavan and Navas, Jorge A. and Santosa, Andrew E.},
+	title = {TRACER: A Symbolic Execution Tool for Verification},
+	booktitle = {Proceedings of the 24th International Conference on Computer Aided Verification},
+	series = {CAV'12},
+	year = {2012},
+	isbn = {978-3-642-31423-0},
+	location = {Berkeley, CA},
+	pages = {758--766},
+	numpages = {9},
+	url = {http://dx.doi.org/10.1007/978-3-642-31424-7_61},
+	doi = {10.1007/978-3-642-31424-7_61},
+	acmid = {2362291},
+	publisher = {Springer-Verlag},
+	address = {Berlin, Heidelberg},
+} 
+
+@inproceedings{PSE,
+	author = {Geldenhuys, Jaco and Dwyer, Matthew B. and Visser, Willem},
+	title = {Probabilistic Symbolic Execution},
+	booktitle = {Proceedings of the 2012 International Symposium on Software Testing and Analysis},
+	series = {ISSTA 2012},
+	year = {2012},
+	isbn = {978-1-4503-1454-1},
+	location = {Minneapolis, MN, USA},
+	pages = {166--176},
+	numpages = {11},
+	url = {http://doi.acm.org/10.1145/2338965.2336773},
+	doi = {10.1145/2338965.2336773},
+	acmid = {2336773},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+} 
+
+
+@inproceedings{vechevPLDI14,
+	author = {Raychev, Veselin and Vechev, Martin and Yahav, Eran},
+	title = {Code Completion with Statistical Language Models},
+	booktitle = {Proceedings of the 35th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+	series = {PLDI '14},
+	year = {2014},
+	NOOPisbn = {978-1-4503-2784-8},
+	location = {Edinburgh, United Kingdom},
+	pages = {419--428},
+	numpages = {10}
+} 
+
+@inproceedings{vechevPOPL15,
+	author = {Raychev, Veselin and Vechev, Martin and Krause, Andreas},
+	title = {Predicting Program Properties from "Big Code"},
+	booktitle = {Proceedings of the 42Nd Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+	series = {POPL '15},
+	year = {2015},
+	NOOPisbn = {978-1-4503-3300-9},
+	location = {Mumbai, India},
+	pages = {111--124},
+	numpages = {14}
+} 
+
+@article{ngrams,
+	author = {Brown, Peter F. and deSouza, Peter V. and Mercer, Robert L. and Pietra, Vincent J. Della and Lai, Jenifer C.},
+	title = {Class-based N-gram Models of Natural Language},
+	journal = {Comput. Linguist.},
+	issue_date = {December 1992},
+	volume = {18},
+	number = {4},
+	month = dec,
+	year = {1992},
+	issn = {0891-2017},
+	pages = {467--479},
+	numpages = {13},
+	NOOPurl = {http://dl.acm.org/citation.cfm?id=176313.176316},
+	acmid = {176316},
+	publisher = {MIT Press},
+	address = {Cambridge, MA, USA},
+} 
+
+@inproceedings{z3,
+	author    = {Leonardo Mendon\c{c}a de Moura and
+	Nikolaj Bj{\o}rner},
+	title     = {{Z3: An Efficient SMT Solver}},
+	booktitle = {TACAS},
+	year      = {2008},
+	pages     = {337-340}
+}
+
+
+@article{al2012intelligent,
+	Author = {Al Shamsi, Fatima and Elnagar, Ashraf},
+	Date-Added = {2014-02-21 22:06:06 -0600},
+	Date-Modified = {2014-02-21 22:06:06 -0600},
+	Journal = {Journal of Intelligent Learning Systems and Applications},
+	Number = {1},
+	Pages = {59--69},
+	Publisher = {Journal of Intelligent Learning Systems and Applications},
+	Title = {An Intelligent Assessment Tool for Students Java Submissions in Introductory Programming Courses},
+	Volume = {4},
+	Year = {2012}}
+
+@article{wang2007semantic,
+	Author = {Wang, Tiantian and Su, Xiaohong and Wang, Yuying and Ma, Peijun},
+	Date-Added = {2014-02-21 22:05:58 -0600},
+	Date-Modified = {2014-02-21 22:05:58 -0600},
+	Journal = {Information and Software Technology},
+	Number = {2},
+	Pages = {99--107},
+	Publisher = {Elsevier},
+	Title = {Semantic similarity-based grading of student programs},
+	Volume = {49},
+	Year = {2007}}
+
+@inproceedings{morris2003automatic,
+	Author = {Morris, Derek S},
+	Booktitle = {Frontiers in Education, 2003. FIE 2003 33rd Annual},
+	Date-Added = {2014-02-21 22:05:48 -0600},
+	Date-Modified = {2014-02-21 22:05:48 -0600},
+	Organization = {IEEE},
+	Pages = {S3F--1},
+	Title = {Automatic grading of student's programming assignments: an interactive process and suite of programs},
+	Volume = {3},
+	Year = {2003}}
+
+@article{ala2004supporting,
+	Author = {Ala-Mutka, Kirsti and Uimonen, Toni and Jarvinen, Hannu-Matti},
+	Date-Added = {2014-02-21 22:04:37 -0600},
+	Date-Modified = {2014-02-21 22:04:37 -0600},
+	Journal = {Journal of Information Technology Education},
+	Number = {1},
+	Pages = {245--262},
+	Publisher = {Citeseer},
+	Title = {Supporting students in C++ programming courses with automatic program style assessment},
+	Volume = {3},
+	Year = {2004}}
+
+@article{naude2010marking,
+	Author = {Naud{\'e}, Kevin A and Greyling, Jean H and Vogts, Dieter},
+	Date-Added = {2014-02-21 22:03:45 -0600},
+	Date-Modified = {2014-02-21 22:03:45 -0600},
+	Journal = {Computers \& Education},
+	Number = {2},
+	Pages = {545--561},
+	Publisher = {Elsevier},
+	Title = {Marking student programs using graph similarity},
+	Volume = {54},
+	Year = {2010}}
+
+@inproceedings{wu2007analysec,
+	Author = {Wu, Weimin and Li, Guangqiang and Sun, Yinai and Wang, Jing and Lai, Tianwu},
+	Booktitle = {ICCA},
+	Date-Added = {2014-02-21 22:03:27 -0600},
+	Date-Modified = {2014-02-21 22:03:27 -0600},
+	Pages = {742--747},
+	Publisher = {IEEE},
+	Title = {AnalyseC: A Framework for Assessing Students' Programs at Structural and Semantic Level},
+	Year = {2007}}
+
+@inproceedings{truong2004static,
+	Author = {Truong, Nghi and Roe, Paul and Bancroft, Peter},
+	Booktitle = {Australasian Conference on Computing Education},
+	Date-Added = {2014-02-21 22:03:19 -0600},
+	Date-Modified = {2014-02-21 22:03:19 -0600},
+	Organization = {Australian Computer Society, Inc.},
+	Pages = {317--325},
+	Title = {Static analysis of students' Java programs},
+	Volume = {30},
+	Year = {2004}}
+
+@inproceedings{rahman2007design,
+	Author = {Rahman, Khirulnizam Abd and Ahmad, Syarbaini and Nordin, Md Jan},
+	Booktitle = {National Conference on Software Engineering and Computer Systems, at University Malaysia Pahang},
+	Date-Added = {2014-02-21 22:03:08 -0600},
+	Date-Modified = {2014-02-21 22:03:08 -0600},
+	Title = {The design of an automated C programming assessment using pseudo-code comparison technique},
+	Year = {2007}}
+
+@article{higgins2003coursemarker,
+	Author = {Higgins, Colin and Hegazy, Tarek and Symeonidis, Pavlos and Tsintsifas, Athanasios},
+	Date-Added = {2014-02-21 22:02:47 -0600},
+	Date-Modified = {2014-02-21 22:02:47 -0600},
+	Journal = {Education and Information Technologies},
+	Number = {3},
+	Pages = {287--304},
+	Publisher = {Springer},
+	Title = {The coursemarker cba system: Improvements over ceilidh},
+	Volume = {8},
+	Year = {2003}}
+
+@inproceedings{jackson1997grading,
+	Author = {Jackson, David and Usher, Michelle},
+	Booktitle = {ACM SIGCSE Bulletin},
+	Date-Added = {2014-02-21 22:02:41 -0600},
+	Date-Modified = {2014-02-21 22:02:41 -0600},
+	Organization = {ACM},
+	Pages = {335--339},
+	Title = {Grading student programs using ASSYST},
+	Volume = {29},
+	Year = {1997}}
+
+@article{cheang2003automated,
+	Author = {Cheang, Brenda and Kurnia, Andy and Lim, Andrew and Oon, Wee-Chong},
+	Date-Added = {2014-02-21 22:02:28 -0600},
+	Date-Modified = {2014-02-21 22:02:28 -0600},
+	Journal = {Computers \& Education},
+	Number = {2},
+	Pages = {121--131},
+	Publisher = {Elsevier},
+	Title = {On automated grading of programming assignments in an academic institution},
+	Volume = {41},
+	Year = {2003}}
+
+@inproceedings{blitzer2005distance,
+	Author = {Blitzer, John and Weinberger, Kilian Q and Saul, Lawrence K},
+	Booktitle = {NIPS},
+	Pages = {1473--1480},
+	Title = {Distance metric learning for large margin nearest neighbor classification},
+	Year = {2005}}
+
+@article{schultz2004learning,
+	Author = {Schultz, Matthew and Joachims, Thorsten},
+	Journal = {NIPS},
+	Pages = {41},
+	Title = {Learning a distance metric from relative comparisons},
+	Volume = {16},
+	Year = {2004}}
+
+@inproceedings{xing2002distance,
+	Author = {Xing, Eric P and Jordan, Michael I and Russell, Stuart and Ng, Andrew},
+	Booktitle = {NIPS},
+	Pages = {505--512},
+	Title = {Distance metric learning with application to clustering with side-information},
+	Year = {2002}}
+
+@article{williams1995bayesian,
+	Author = {Williams, Peter M},
+	Journal = {Neural Computation},
+	Number = {1},
+	Pages = {117--143},
+	Publisher = {MIT Press},
+	Title = {Bayesian regularization and pruning using a Laplace prior},
+	Volume = {7},
+	Year = {1995}}
+
+@inproceedings{AlurRU17,
+	author    = {Rajeev Alur and
+	Arjun Radhakrishna and
+	Abhishek Udupa},
+	title     = {Scaling Enumerative Program Synthesis via Divide and Conquer},
+	booktitle = {Tools and Algorithms for the Construction and Analysis of Systems
+	- 23rd International Conference, {TACAS} 2017, Held as Part of the
+	European Joint Conferences on Theory and Practice of Software, {ETAPS}
+	2017, Uppsala, Sweden, April 22-29, 2017, Proceedings, Part {I}},
+	pages     = {319--336},
+	year      = {2017}
+}
+
+@book{palloff1999building,
+	Author = {Palloff, Rena M and Pratt, Keith},
+	Publisher = {Jossey-Bass Publishers San Francisco},
+	Title = {Building learning communities in cyberspace},
+	Year = {1999}}
+
+@article{pappano2012year,
+	Author = {Pappano, Laura},
+	Journal = {The New York Times},
+	Title = {The Year of the MOOC},
+	Volume = {4},
+	Year = {2012}}
+
+@inproceedings{SGS13,
+	Author = {Rishabh Singh and Sumit Gulwani and Armando Solar-Lezama},
+	Booktitle = {PLDI},
+	Pages = {15-26},
+	Title = {Automated feedback generation for introductory programming assignments},
+	Year = {2013}}
+
+@inproceedings{SGHAN13,
+	Author = {Rahul Sharma and Saurabh Gupta and Bharath Hariharan and Alex Aiken and Aditya V. Nori},
+	Booktitle = {SAS},
+	Pages = {388-411},
+	Title = {Verification as Learning Geometric Concepts},
+	Year = {2013}}
+
+@article{prechelt2002finding,
+	Author = {Prechelt, Lutz and Malpohl, Guido and Philippsen, Michael},
+	Journal = {J. UCS},
+	Number = {11},
+	Pages = {1016},
+	Title = {Finding plagiarisms among a set of programs with JPlag},
+	Volume = {8},
+	Year = {2002}}
+
+@article{vujovsevic2012software,
+	Author = {Vujo{\v{s}}evi{\'c}-Jani{\v{c}}i{\'c}, Milena and Nikoli{\'c}, Mladen and To{\v{s}}i{\'c}, Du{\v{s}}an and Kuncak, Viktor},
+	Journal = {Information and Software Technology},
+	Publisher = {Elsevier},
+	Title = {Software Verification and Graph Similarity for Automated Evaluation of Students' Assignments},
+	Year = {2012}}
+
+@inproceedings{jiang2007deckard,
+	Author = {Jiang, Lingxiao and Misherghi, Ghassan and Su, Zhendong and Glondu, Stephane},
+	Booktitle = {ICSE},
+	Pages = {96--105},
+	Title = {Deckard: Scalable and accurate tree-based detection of code clones},
+	Year = {2007}}
+
+@inproceedings{GouesTACAS09,
+	author = {Goues, Claire and Weimer, Westley},
+	title = {Specification Mining with Few False Positives},
+	booktitle = {TACAS},
+	year = {2009},
+	location = {York, UK},
+	pages = {292--306},
+	numpages = {15}
+} 
+
+
+@inproceedings{schleimer2003winnowing,
+	Author = {Schleimer, Saul and Wilkerson, Daniel and Aiken, Alex},
+	Booktitle = {SIGMOD},
+	Pages = {76--85},
+	Title = {Winnowing: local algorithms for document fingerprinting},
+	Year = {2003}}
+
+@inproceedings{liu2006gplag,
+	Author = {Liu, Chao and Chen, Chen and Han, Jiawei and Yu, Philip S},
+	Booktitle = {KDD},
+	Organization = {ACM},
+	Pages = {872--881},
+	Title = {{GPLAG}: detection of software plagiarism by program dependence graph analysis},
+	Year = {2006}}
+
+@inproceedings{Mandelin05,
+	author = {Mandelin, David and Xu, Lin and Bod\'{\i}k,
+	Rastislav and Kimelman, Doug},
+	title = {Jungloid Mining: Helping to Navigate the API
+	Jungle},
+	booktitle = {PLDI},
+	year = {2005},
+	NOOPisbn = {1-59593-056-6},
+	location = {Chicago, IL, USA},
+	pages = {48--61},
+	numpages = {14},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {mining, program synthesis, reuse},
+} 
+
+
+@inproceedings{Zhong09,
+	author = {Zhong, Hao and Xie, Tao and Zhang, Lu and Pei, Jian and
+	Mei, Hong},
+	title = {MAPO: Mining and Recommending API Usage Patterns},
+	booktitle = {Proceedings of the 23rd European Conference on
+	ECOOP 2009 --- Object-Oriented Programming},
+	series = {Genoa},
+	year = {2009},
+	NOOPisbn = {978-3-642-03012-3},
+	location = {Italy},
+	pages = {318--343},
+	numpages = {26}
+} 
+
+
+@inproceedings{OcteauPOPL16,
+	author = {Octeau, Damien and Jha, Somesh and Dering, Matthew and
+	McDaniel, Patrick and Bartel, Alexandre and Li, Li and Klein,
+	Jacques and Le Traon, Yves},
+	title = {Combining Static Analysis with Probabilistic Models to
+	Enable Market-scale Android Inter-component Analysis},
+	booktitle = {Proceedings of the 43rd Annual ACM SIGPLAN-SIGACT
+	Symposium on Principles of Programming Languages},
+	series = {POPL 2016},
+	year = {2016},
+	NOOPisbn = {978-1-4503-3549-2},
+	location = {St. Petersburg, FL, USA},
+	pages = {469--484},
+	numpages = {16}
+} 
+
+
+@inproceedings{Bastani15,
+	author = {Bastani, Osbert and Anand, Saswat and Aiken, Alex},
+	title = {Specification Inference Using Context-Free Language
+	Reachability},
+	booktitle = {Proceedings of the 42Nd Annual ACM SIGPLAN-SIGACT
+	Symposium on Principles of Programming Languages},
+	series = {POPL '15},
+	year = {2015},
+	NOOPisbn = {978-1-4503-3300-9},
+	location = {Mumbai, India},
+	pages = {553--566},
+	numpages = {14}
+} 
+
+
+@inproceedings{viper,
+  title={Verifiable reinforcement learning via policy extraction},
+  author={Bastani, Osbert and Pu, Yewen and Solar-Lezama, Armando},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={2494--2504},
+  year={2018}
+}
+
+@inproceedings{SafiFSE15,
+	author = {Safi, Gholamreza and Shahbazian, Arman and Halfond,
+	William G. J. and Medvidovic, Nenad},
+	title = {Detecting Event Anomalies in Event-based Systems},
+	booktitle = {Proceedings of the 2015 10th Joint Meeting on
+	Foundations of Software Engineering},
+	series = {ESEC/FSE 2015},
+	year = {2015},
+	NOOPisbn = {978-1-4503-3675-8},
+	location = {Bergamo, Italy},
+	pages = {25--37},
+	numpages = {13}
+} 
+
+@inproceedings{Livshits09,
+	author = {Livshits, Benjamin and Nori, Aditya V. and Rajamani,
+	Sriram K. and Banerjee, Anindya},
+	title = {Merlin: Specification Inference for Explicit
+	Information Flow Problems},
+	booktitle = {Proceedings of the 30th ACM SIGPLAN Conference on
+	Programming Language Design and Implementation},
+	series = {PLDI '09},
+	year = {2009},
+	NOOPisbn = {978-1-60558-392-1},
+	location = {Dublin, Ireland},
+	pages = {75--86},
+	numpages = {12}
+} 
+
+@misc{GSL,
+	title = {{GNU Scientific Library}},
+	howpublished = "\url{http://www.gnu.org/software/gsl}",
+	note = "[Online; accessed 09-Mar-2016]"
+}
+
+@misc{androiddrawer,
+	title = {AndroidDrawer},
+	howpublished = "\url{http://www.androiddrawer.com}",
+	note = "[Online; accessed 06-Jul-2017]",
+	author = {Androiddrawer},
+	year = {2017}
+}
+
+@misc{JADX,
+	title = {{JADX} - {D}ex to {J}ava decompiler},
+	howpublished = "\url{https://github.com/skylot/jadx}",
+	note = "[Online; accessed 06-Jul-2017]",
+	author = {skylot},
+	year = {2017}
+}
+
+@article{maaten2008tsne,
+	title={Visualizing data using t-SNE},
+	author={Maaten, Laurens van der and Hinton, Geoffrey},
+	journal={Journal of Machine Learning Research},
+	volume={9},
+	number={Nov},
+	pages={2579--2605},
+	year={2008}
+}
+
+@article{kingma2014adam,
+	title={Adam: A method for stochastic optimization},
+	author={Kingma, Diederik and Ba, Jimmy},
+	journal={arXiv preprint arXiv:1412.6980},
+	year={2014}
+}
+
+@misc{adobePwdLeak,
+	title = {{Anatomy of a password disaster - Adobe's giant-sized cryptographic blunder}},
+	howpublished = "\url{https://nakedsecurity.sophos.com/2013/11/04/anatomy-of-a-password-disaster-adobes-giant-sized-cryptographic-blunder}",
+	note = "[Online; accessed 06-Jul-2016]"
+}
+
+@misc{salento-release,
+	title = {\salento\ {online release}},
+	howpublished = "\url{https://github.com/vm4422/salento-release}",
+	note = "[Online; accessed 11-Mar-2016]"
+}
+
+@misc{fdroid,
+	title = {{F-Droid}},
+	howpublished = "\url{https://f-droid.org}",
+	note = "[Online; accessed 06-Jul-2016]"
+}
+
+@book{MPI,
+	author = {Snir, Marc and Otto, Steve and Huss-Lederman, Steven and Walker, David and Dongarra, Jack},
+	title = {MPI-The Complete Reference, Volume 1: The MPI Core},
+	year = {1998},
+	NOOPisbn = {0262692155},
+	edition = {2nd. (Revised)},
+	publisher = {MIT Press},
+	address = {Cambridge, MA, USA},
+} 
+
+
+@inproceedings{soot,
+	author = {Vall{\'e}e-Rai, Raja and Co, Phong and Gagnon, Etienne and Hendren, Laurie and Lam, Patrick and Sundaresan, Vijay},
+	title = {Soot - a Java Bytecode Optimization Framework},
+	booktitle = {Proceedings of the 1999 Conference of the Centre for Advanced Studies on Collaborative Research},
+	series = {CASCON '99},
+	year = {1999},
+	location = {Mississauga, Ontario, Canada},
+	pages = {13--},
+	NOOPurl = {http://dl.acm.org/citation.cfm?id=781995.782008},
+	acmid = {782008},
+	publisher = {IBM Press},
+} 
+
+@article{typestate,
+	author = {Strom, R E and Yemini, S},
+	title = {Typestate: A Programming Language Concept for Enhancing Software Reliability},
+	journal = {IEEE Trans. Softw. Eng.},
+	issue_date = {January 1986},
+	volume = {12},
+	number = {1},
+	month = jan,
+	year = {1986},
+	issn = {0098-5589},
+	pages = {157--171},
+	numpages = {15},
+	NOOPurl = {http://dx.doi.org/10.1109/TSE.1986.6312929},
+	NOOPdoi = {10.1109/TSE.1986.6312929},
+	acmid = {10693},
+	publisher = {IEEE Press},
+	address = {Piscataway, NJ, USA},
+	keywords = {Computer languages,Context,Software reliability,Program processors,Law,typestate,Program analysis,program verification,security,software reliability,type checking},
+} 
+
+@article{King76SE,
+	author = {King, James C.},
+	title = {Symbolic Execution and Program Testing},
+	journal = {Commun. ACM},
+	issue_date = {July 1976},
+	volume = {19},
+	number = {7},
+	month = jul,
+	year = {1976},
+	issn = {0001-0782},
+	pages = {385--394},
+	numpages = {10}
+} 
+
+@inproceedings{ippg,
+	title={Imitation-Projected Policy Gradient for Programmatic Reinforcement Learning},
+	author={Verma, Abhinav and Le, Hoang and Yue, Yisong and Chaudhuri, Swarat},
+	booktitle={Advances in neural information processing systems},
+	pages={1008--1014},
+	year={2000}
+}
+
+
+@Inbook{Robbins85,
+	author="Robbins, H.
+	and Siegmund, D.",
+	editor="Lai, T. L.
+	and Siegmund, D.",
+	chapter="A Convergence Theorem for Non Negative Almost Supermartingales and Some Applications",
+	title="Herbert Robbins Selected Papers",
+	year="1985",
+	publisher="Springer New York",
+	address="New York, NY",
+	pages="111--135",
+	NOOPisbn="978-1-4612-5110-1"
+}
+
+
+@article{GibbsSampling,
+	author = {Geman, Stuart and Geman, Donald},
+	title = {Stochastic Relaxation, Gibbs Distributions, and the Bayesian Restoration of Images},
+	journal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+	issue_date = {November 1984},
+	volume = {6},
+	number = {6},
+	month = nov,
+	year = {1984},
+	issn = {0162-8828},
+	pages = {721--741},
+	numpages = {21},
+	NOOPurl = {http://dx.doi.org/10.1109/TPAMI.1984.4767596},
+	NOOPdoi = {10.1109/TPAMI.1984.4767596},
+	acmid = {2286617},
+	publisher = {IEEE Computer Society},
+	address = {Washington, DC, USA},
+	keywords = {Annealing, Gibbs distribution, MAP estimate, Markov random field, image restoration, line process, relaxation, scene modeling, spatial degradation},
+} 
+
+
+@article{MLE,
+	author = {Fisher,R. A.},
+	title = {Theory of Statistical Estimation},
+	journal = {Mathematical Proceedings of the Cambridge Philosophical Society},
+	volume = {22},
+	issue = {05},
+	month = {7},
+	year = {1925},
+	issn = {1469-8064},
+	pages = {700--725},
+	numpages = {26},
+	NOOPdoi = {10.1017/S0305004100009580},
+	NOOPURL = {http://journals.cambridge.org/article_S0305004100009580},
+}
+
+@unpublished{hammersley71,
+	author = {Hammersley, J. M. and Clifford, P.},
+	title = {Markov field on finite graphs and lattices},
+	year = {1971}
+}
+
+@book{MRF,
+	author = {Kindermann, Ross and Snell, J. L.},
+	publisher = {AMS},
+	title = {Markov Random Fields and Their Applications},
+	year = {1980}
+}
+
+@article{Blei03LDA,
+	author = {Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.},
+	title = {Latent Dirichlet Allocation},
+	journal = {J. Mach. Learn. Res.},
+	issue_date = {3/1/2003},
+	volume = {3},
+	month = mar,
+	year = {2003},
+	issn = {1532-4435},
+	pages = {993--1022},
+	numpages = {30},
+	NOOPurl = {http://dl.acm.org/citation.cfm?id=944919.944937},
+	acmid = {944937},
+	publisher = {JMLR.org},
+} 
+
+@INPROCEEDINGS{Chen03,
+	author = {Feng Chen},
+	title = {Towards monitoring-oriented programming: A paradigm combining specification and implementation},
+	booktitle = {Electronic Notes in Theoretical Computer Science},
+	year = {2003},
+	pages = {106--125},
+	publisher = {Elsevier Science}
+}
+
+@inproceedings{Bodden07,
+	author = {Bodden, Eric and Hendren, Laurie and Lhot\'{a}k, Ondrej},
+	title = {A Staged Static Program Analysis to Improve the Performance of Runtime Monitoring},
+	booktitle = {Proceedings of the 21st European Conference on Object-Oriented Programming},
+	series = {ECOOP'07},
+	year = {2007},
+	NOOPisbn = {3-540-73588-7, 978-3-540-73588-5},
+	location = {Berlin, Germany},
+	pages = {525--549},
+	numpages = {25},
+	NOOPurl = {http://dl.acm.org/citation.cfm?id=2394758.2394793},
+	acmid = {2394793},
+	publisher = {Springer-Verlag},
+	address = {Berlin, Heidelberg},
+} 
+
+
+@inproceedings{Shoham07,
+	author = {Shoham, Sharon and Yahav, Eran and Fink, Stephen and Pistoia, Marco},
+	title = {Static Specification Mining Using Automata-based Abstractions},
+	booktitle = {Proceedings of the 2007 International Symposium on Software Testing and Analysis},
+	series = {ISSTA '07},
+	year = {2007},
+	NOOPisbn = {978-1-59593-734-6},
+	location = {London, United Kingdom},
+	pages = {174--184},
+	numpages = {11},
+	NOOPurl = {http://doi.acm.org/10.1145/1273463.1273487},
+	NOOPdoi = {10.1145/1273463.1273487},
+	acmid = {1273487},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {abstract interpretation, specification mining, static analysis, typestate},
+} 
+
+
+@inproceedings{Alur05,
+	author = {Alur, Rajeev and \v{C}ern\'{y}, Pavol and Madhusudan,
+	P. and Nam, Wonhong},
+	title = {Synthesis of Interface Specifications for Java
+	Classes},
+	booktitle = {POPL},
+	year = {2005},
+	NOOPisbn = {1-58113-830-X},
+	location = {Long Beach, California, USA},
+	pages = {98--109},
+	numpages = {12}
+} 
+
+@inproceedings{hangal2002tracking,
+	title={Tracking down software bugs using automatic anomaly detection},
+	author={Hangal, Sudheendra and Lam, Monica S},
+	booktitle={Proceedings of the 24th international conference on Software engineering},
+	pages={291--301},
+	year={2002},
+	organization={ACM}
+}
+
+
+
+@inproceedings{Whaley02,
+	author = {Whaley, John and Martin, Michael C. and Lam, Monica
+	S.},
+	title = {Automatic Extraction of Object-oriented Component
+	Interfaces},
+	booktitle = {Proceedings of the 2002 ACM SIGSOFT International
+	Symposium on Software Testing and Analysis},
+	series = {ISSTA '02},
+	year = {2002},
+	NOOPisbn = {1-58113-562-9},
+	location = {Roma, Italy},
+	pages = {218--228},
+	numpages = {11},
+	NOOPurl = {http://doi.acm.org/10.1145/566172.566212},
+	NOOPdoi = {10.1145/566172.566212},
+	acmid = {566212},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+} 
+
+@INPROCEEDINGS{Ammons03,
+	author = {Glenn Ammons and David Mandelin and James R. Larus},
+	title = {Debugging temporal specifications with concept
+	analysis},
+	booktitle = {In ACM SIGPLAN Conf on Prog Lang Design
+	and Implem},
+	year = {2003},
+	pages = {182--195},
+	publisher = {ACM Press}
+}
+
+@inproceedings{Yang06,
+	author = {Yang, Jinlin and Evans, David and Bhardwaj, Deepali and
+	Bhat, Thirumalesh and Das, Manuvir},
+	title = {Perracotta: Mining Temporal API Rules from Imperfect
+	Traces},
+	booktitle = {Proceedings of the 28th International Conference
+	on Software Engineering},
+	series = {ICSE '06},
+	year = {2006},
+	NOOPisbn = {1-59593-375-1},
+	location = {Shanghai, China},
+	pages = {282--291},
+	numpages = {10},
+	NOOPurl = {http://doi.acm.org/10.1145/1134285.1134325},
+	NOOPdoi = {10.1145/1134285.1134325},
+	acmid = {1134325},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {dynamic analysis, specification
+	inference, temporal properties},
+} 
+
+@inproceedings{Ramanathan07,
+	author = {Ramanathan, Murali Krishna and Grama, Ananth and
+	Jagannathan, Suresh},
+	title = {Static Specification Inference Using Predicate Mining},
+	booktitle = {Proceedings of the 28th ACM SIGPLAN Conference on
+	Programming Language Design and Implementation},
+	series = {PLDI '07},
+	year = {2007},
+	NOOPisbn = {978-1-59593-633-2},
+	location = {San Diego, California, USA},
+	pages = {123--134},
+	numpages = {12},
+	NOOPurl = {http://doi.acm.org/10.1145/1250734.1250749},
+	NOOPdoi = {10.1145/1250734.1250749},
+	acmid = {1250749},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {preconditions, predicate mining,
+	program analysis, specification inference},
+} 
+
+@inproceedings{Kremenek06,
+	author = {Kremenek, Ted and Twohey, Paul and Back, Godmar and Ng,
+	Andrew and Engler, Dawson},
+	title = {From Uncertainty to Belief: Inferring the Specification
+	Within},
+	booktitle = {Proceedings of the 7th Symposium on Operating
+	Systems Design and Implementation},
+	series = {OSDI '06},
+	year = {2006},
+	NOOPisbn = {1-931971-47-1},
+	location = {Seattle, Washington},
+	pages = {161--176},
+	numpages = {16},
+	NOOPurl =
+	{http://dl.acm.org/citation.cfm?id=1298455.1298471},
+	acmid = {1298471},
+	publisher = {USENIX Association},
+	address = {Berkeley, CA, USA},
+} 
+
+@inproceedings{Kremenek07,
+	author = {Kremenek, Ted and Ng, Andrew Y. and Engler, Dawson},
+	title = {A Factor Graph Model for Software Bug Finding},
+	booktitle = {Proceedings of the 20th International Joint
+	Conference on Artifical Intelligence},
+	series = {IJCAI'07},
+	year = {2007},
+	location = {Hyderabad, India},
+	pages = {2510--2516},
+	numpages = {7},
+	NOOPurl =
+	{http://dl.acm.org/citation.cfm?id=1625275.1625680},
+	acmid = {1625680},
+	publisher = {Morgan Kaufmann Publishers Inc.},
+	address = {San Francisco, CA, USA},
+} 
+
+@article{BeckmanPLDI11,
+	author = {Beckman, Nels E. and Nori, Aditya V.},
+	title = {Probabilistic, Modular and Scalable Inference of
+	Typestate Specifications},
+	journal = {SIGPLAN Not.},
+	issue_date = {June 2011},
+	volume = {46},
+	number = {6},
+	year = {2011},
+	pages = {211--221},
+	numpages = {11}
+} 
+
+
+@inproceedings{Weimer05,
+	author = {Weimer, Westley and Necula, George C.},
+	title = {Mining Temporal Specifications for Error Detection},
+	booktitle = {Proceedings of the 11th International Conference
+	on Tools and Algorithms for the Construction and Analysis
+	of Systems},
+	series = {TACAS'05},
+	year = {2005},
+	NOOPisbn = {3-540-25333-5, 978-3-540-25333-4},
+	location = {Edinburgh, UK},
+	pages = {461--476},
+	numpages = {16}
+}
+
+@inproceedings{Ernst99,
+	author = {Ernst, Michael D. and Cockrell, Jake and Griswold,
+	William G. and Notkin, David},
+	title = {Dynamically Discovering Likely Program Invariants to
+	Support Program Evolution},
+	booktitle = {ICSE},
+	year = {1999},
+	pages = {213--224},
+	numpages = {12}
+} 
+
+@article{ryan1998intrusion,
+	title={Intrusion detection with neural networks},
+	author={Ryan, Jake and Lin, Meng-Jang and Miikkulainen, Risto},
+	journal={Advances in neural information processing systems},
+	pages={943--949},
+	year={1998}
+}
+
+
+@inproceedings{lee1999data,
+	title={A data mining framework for building intrusion detection models},
+	author={Lee, Wenke and Stolfo, Salvatore J and Mok, Kui W},
+	booktitle={Security and Privacy, 1999. Proceedings of the 1999 IEEE Symposium on},
+	pages={120--132},
+	year={1999},
+	organization={IEEE}
+}
+
+@article{denning1987intrusion,
+	title={An intrusion-detection model},
+	author={Denning, Dorothy E},
+	journal={IEEE Transactions on software engineering},
+	number={2},
+	pages={222--232},
+	year={1987},
+	publisher={IEEE}
+}
+
+
+@inproceedings{Nimmer02,
+	author = {Jeremy W. Nimmer and Michael D. Ernst},
+	title = {Automatic generation of program specifications},
+	booktitle = {ISSTA 2002, Proceedings of the 2002
+	International
+	Symposium on Software Testing and Analysis},
+	pages = {232--242},
+	address = {Rome, Italy},
+	month = {July~22--24,},
+	year = {2002}
+}
+
+@inproceedings{ErnstICSE99,
+	author = {Ernst, Michael D. and Cockrell, Jake and Griswold,
+	William G. and Notkin, David},
+	title = {Dynamically Discovering Likely Program Invariants
+	to Support Program Evolution},
+	booktitle = {Proceedings of the 21st International
+	Conference on Software Engineering},
+	series = {ICSE '99},
+	year = {1999},
+	NOOPisbn = {1-58113-074-0},
+	location = {Los Angeles, California, USA},
+	pages = {213--224},
+	numpages = {12},
+	NOOPurl = {http://doi.acm.org/10.1145/302405.302467},
+	NOOPdoi = {10.1145/302405.302467},
+	acmid = {302467},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {dynamic analysis, execution traces,
+	formal specification, logical inference,
+	pattern recognition, program invariants,
+	software evolution},
+} 
+
+@article{ball2011decade,
+	title={A decade of software model checking with SLAM},
+	author={Ball, Thomas and Levin, Vladimir and Rajamani, Sriram K},
+	journal={Communications of the ACM},
+	volume={54},
+	number={7},
+	pages={68--76},
+	year={2011}
+}
+
+@inproceedings{raychev2015predicting,
+	title={Predicting program properties from Big Code},
+	author={Raychev, Veselin and Vechev, Martin and Krause, Andreas},
+	booktitle={POPL},
+	volume={50},
+	number={1},
+	pages={111--124},
+	year={2015}
+}
+
+
+@incollection{bierhoff2009practical,
+	title={Practical API protocol checking with access permissions},
+	author={Bierhoff, Kevin and Beckman, Nels E and Aldrich, Jonathan},
+	booktitle={ECOOP 2009--Object-Oriented Programming},
+	pages={195--219},
+	year={2009},
+	publisher={Springer}
+}
+
+
+@article{fink2008effective,
+	title={Effective typestate verification in the presence of aliasing},
+	author={Fink, Stephen J and Yahav, Eran and Dor, Nurit and Ramalingam, G and Geay, Emmanuel},
+	journal={ACM Transactions on Software Engineering and Methodology (TOSEM)},
+	volume={17},
+	number={2},
+	pages={9},
+	year={2008},
+	publisher={ACM}
+}
+
+@inproceedings{fu2009execution,
+	title={Execution Anomaly Detection in Distributed Systems through Unstructured Log Analysis.},
+	author={Fu, Qiang and Lou, Jian-Guang and Wang, Yi and Li, Jiang},
+	booktitle={ICDM},
+	volume={9},
+	pages={149--158},
+	year={2009}
+}
+
+@inproceedings{barthe2012probabilistic,
+	title={Probabilistic relational reasoning for differential privacy},
+	author={Barthe, Gilles and K{\"o}pf, Boris and Olmedo, Federico and Zanella B{\'e}guelin, Santiago},
+	booktitle={POPL},
+	volume={47},
+	number={1},
+	pages={97--110},
+	year={2012},
+	organization={ACM}
+}
+
+
+@inproceedings{chatterjee2015quantitative,
+	title={Quantitative interprocedural analysis},
+	author={Chatterjee, Krishnendu and Pavlogiannis, Andreas and Velner, Yaron},
+	booktitle={POPL},
+	volume={50},
+	number={1},
+	pages={539--551},
+	year={2015},
+	organization={ACM}
+}
+
+
+@inproceedings{gustafsson2006automatic,
+	title={Automatic derivation of loop bounds and infeasible paths for WCET analysis using abstract execution},
+	author={Gustafsson, Jan and Ermedahl, Andreas and Sandberg, Christer and Lisper, Bjorn},
+	booktitle={2006 27th IEEE International Real-Time Systems Symposium (RTSS'06)},
+	pages={57--66},
+	year={2006},
+	organization={IEEE}
+}
+
+
+@inproceedings{gulwani2009speed,
+	title={Speed: precise and efficient static estimation of program computational complexity},
+	author={Gulwani, Sumit and Mehra, Krishna K and Chilimbi, Trishul},
+	booktitle={ACM SIGPLAN Notices},
+	volume={44},
+	number={1},
+	pages={127--139},
+	year={2009},
+	organization={ACM}
+}
+
+
+@inproceedings{gao2007dmtracker,
+	title={DMTracker: finding bugs in large-scale parallel programs by detecting anomaly in data movements},
+	author={Gao, Qi and Qin, Feng and Panda, Dhabaleswar K},
+	booktitle={Proceedings of the 2007 ACM/IEEE conference on Supercomputing},
+	pages={15},
+	year={2007},
+	organization={ACM}
+}
+
+
+@inproceedings{bugsdeviant,
+	author    = {Dawson R. Engler and
+	David Yu Chen and
+	Andy Chou},
+	title     = {Bugs as Inconsistent Behavior: {A} General Approach to Inferring Errors
+	in Systems Code},
+	booktitle = {SOSP},
+	pages     = {57--72},
+	year      = {2001}
+}
+
+@article{EPGMPTX07,
+	Author = {Michael D. Ernst and Jeff H. Perkins and Philip J. Guo and Stephen McCamant and Carlos Pacheco and Matthew S. Tschantz and Chen Xiao},
+	Journal = {Sci. Comput. Program.},
+	Number = {1-3},
+	Pages = {35-45},
+	Title = {The Daikon system for dynamic detection of likely invariants},
+	Volume = {69},
+	Year = {2007}}
+
+@inproceedings{ABL02,
+	Author = {Glenn Ammons and Rastislav Bod\'{\i}k and James R. Larus},
+	Booktitle = {POPL},
+	Pages = {4-16},
+	Title = {Mining specifications},
+	Year = {2002}}
+
+@inproceedings{WarrenPDG,
+	Author = {Jeanne Ferrante and Karl J. Ottenstein and Joe D. Warren},
+	Booktitle = {Symposium on Programming},
+	Pages = {125-132},
+	Title = {The program Dependence Graph and its Use in Optimization},
+	Year = {1984}}
+
+@article{ZTWFZ09,
+	Author = {Zhiping Zeng and Anthony K. H. Tung and Jianyong Wang and Jianhua Feng and Lizhu Zhou},
+	Journal = {PVLDB},
+	Number = {1},
+	Pages = {25-36},
+	Title = {Comparing Stars: On Approximating Graph Edit Distance},
+	Volume = {2},
+	Year = {2009}}
+
+@inproceedings{NS13,
+	Author = {Aditya V. Nori and Rahul Sharma},
+	Booktitle = {ESEC/SIGSOFT FSE},
+	Pages = {246-256},
+	Title = {Termination proofs from tests},
+	Year = {2013}}
+
+@inproceedings{chilimbi2006heapmd,
+	title={Heapmd: Identifying heap-based bugs using anomaly detection},
+	author={Chilimbi, Trishul M and Ganapathy, Vinod},
+	booktitle={ASPLOS},
+	volume={34},
+	number={5},
+	pages={219--228},
+	year={2006},
+	organization={ACM}
+}
+
+@article{ZhuShielding,
+	author    = {He Zhu and
+	Zikang Xiong and
+	Stephen Magill and
+	Suresh Jagannathan},
+	title     = {An Inductive Synthesis Framework for Verifiable Reinforcement Learning},
+	journal   = {CoRR},
+	volume    = {abs/1907.07273},
+	year      = {2019},
+	url       = {http://arxiv.org/abs/1907.07273},
+	archivePrefix = {arXiv},
+	eprint    = {1907.07273},
+	timestamp = {Mon, 21 Oct 2019 08:07:00 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/abs-1907-07273.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{baah2006line,
+	title={On-line anomaly detection of deployed software: a statistical machine learning approach},
+	author={Baah, George K and Gray, Alexander and Harrold, Mary Jean},
+	booktitle={Proceedings of the 3rd international workshop on Software quality assurance},
+	pages={70--77},
+	year={2006},
+	organization={ACM}
+}
+
+
+@inproceedings{LNZAJ05,
+	Author = {Ben Liblit and Mayur Naik and Alice X. Zheng and Alexander Aiken and Michael I. Jordan},
+	Booktitle = {PLDI},
+	Pages = {15-26},
+	Title = {Scalable statistical bug isolation},
+	Year = {2005}}
+
+@article{hofmeyr1998intrusion,
+	title={Intrusion detection using sequences of system calls},
+	author={Hofmeyr, Steven A and Forrest, Stephanie and Somayaji, Anil},
+	journal={Journal of computer security},
+	volume={6},
+	number={3},
+	pages={151--180},
+	year={1998},
+	publisher={IOS Press}
+}
+
+
+@inproceedings{ZJLNA06,
+	Author = {Alice X. Zheng and Michael I. Jordan and Ben Liblit and Mayur Naik and Alex Aiken},
+	Booktitle = {ICML},
+	Pages = {1105-1112},
+	Title = {Statistical debugging: simultaneous identification of multiple bugs},
+	Year = {2006}}
+
+@inproceedings{ZJLA03,
+	Author = {Alice X. Zheng and Michael I. Jordan and Ben Liblit and Alexander Aiken},
+	Booktitle = {NIPS},
+	Title = {Statistical Debugging of Sampled Programs},
+	Year = {2003}}
+
+@inproceedings{LAZJ03,
+	Author = {Ben Liblit and Alexander Aiken and Alice X. Zheng and Michael I. Jordan},
+	Booktitle = {PLDI},
+	Pages = {141-154},
+	Title = {Bug isolation via remote program sampling},
+	Year = {2003}}
+
+@Inproceedings{VMCAI:RSY04,
+	Author    = "T. Reps and M. Sagiv and G. Yorsh",
+	Title     = "Symbolic Implementation of the Best Transformer",
+	Booktitle = vmcai,
+	Year      = 2004,
+	Pages     = "252--266"
+}
+
+@InProceedings{CAV:TR12,
+	Author    = "A. Thakur and T. Reps",
+	Title     = "A Method for Symbolic Computation of Abstract Operations",
+	Booktitle = cav,
+	Year      = 2012
+}
+
+@InProceedings{SAS:TER12,
+	Author    = "A. Thakur and M. Elder and T. Reps",
+	Title     = "Bilateral Algorithms for Symbolic Abstraction",
+	Booktitle = sas,
+	Year      = 2012
+}
+
+@InProceedings{SAS:TR12,
+	Author    = "A. Thakur and T. Reps",
+	Title     = "A Generalization of {St\r{a}lmarck's} Method",
+	Booktitle = sas,
+	Year      = 2012
+}
+
+@Article{ENTCS:TLLR13,
+	Author  = "A. Thakur and A. Lal and J. Lim and T. Reps",
+	Title   = "{PostHat} and All That: {A}utomating Abstract Interpretation",
+	Journal = entcs,
+	Year    = 2013
+}
+
+@Inproceedings{POPL:CC77,
+	Author    = "P. Cousot and R. Cousot",
+	Title     = "Abstract Interpretation: A Unified Lattice Model for Static Analysis of Programs by Construction or Approximation of Fixpoints",
+	Booktitle = popl,
+	Year      = 1977
+}
+
+@Inproceedings{POPL:CC79,
+	Author    = "P. Cousot and R. Cousot",
+	Title     = "Systematic Design of Program Analysis Frameworks",
+	Booktitle = popl,
+	Year      = 1979
+}
+
+@incollection{dillig-tacas13,
+	title={Synthesis of circular compositional program proofs via abduction},
+	author={Li, Boyang and Dillig, Isil and Dillig, Thomas and McMillan, Ken and Sagiv, Mooly},
+	booktitle={Tools and Algorithms for the Construction and Analysis of Systems},
+	pages={370--384},
+	year={2013},
+	publisher={Springer}
+}
+
+@article{weimer2010automatic,
+	title={Automatic program repair with evolutionary computation},
+	author={Weimer, Westley and Forrest, Stephanie and Le Goues, Claire and Nguyen, ThanhVu},
+	journal={Communications of the ACM},
+	volume={53},
+	number={5},
+	pages={109--116},
+	year={2010},
+	publisher={ACM}
+}
+
+@inproceedings{semfix,
+	title={SemFix: Program repair via semantic analysis},
+	author={Nguyen, Hoang Duong Thien and Qi, Dawei and Roychoudhury, Abhik and Chandra, Satish},
+	booktitle={Proceedings of the 2013 International Conference on Software Engineering},
+	pages={772--781},
+	year={2013},
+	organization={IEEE Press}
+}
+
+@article{groce2006error,
+	title={Error explanation with distance metrics},
+	author={Groce, Alex and Chaki, Sagar and Kroening, Daniel and Strichman, Ofer},
+	journal={International Journal on Software Tools for Technology Transfer},
+	volume={8},
+	number={3},
+	pages={229--247},
+	year={2006},
+	publisher={Springer}
+}
+
+
+@inproceedings{ball2003symptom,
+	author    = {Thomas Ball and
+	Mayur Naik and
+	Sriram K. Rajamani},
+	title     = {From symptom to cause: localizing errors in counterexample
+	traces},
+	booktitle = {POPL},
+	year      = {2003},
+	pages     = {97-105}
+}
+
+
+@Article{JALG:RR96,
+	author  = {G. Ramalingam and Thomas Reps},
+	title   = {An Incremental Algorithm for a Generalization of the Shortest-Path Problem},
+	journal = {Journal of Algorithms},
+	year    = {1996},
+	volume  = {21},
+	pages   = {267--305}
+}
+
+@Article{COA:FT04,
+	Author  = "B. Fortz and M. Thorup",
+	Title   = "Increasing {I}nternet Capacity Using Local Search",
+	Journal = "Comp.\ Opt.\ and Applications",
+	Volume  = 29,
+	Number  = 1,
+	Year    = 2004,
+	Pages   = "13--48"
+}
+
+@Inproceedings{CC:BGRT05,
+	Author      = "G. Balakrishnan and R. Gruian and T. Reps and T. Teitelbaum",
+	Title       = "CodeSurfer/x86 -- {A} Platform for Analyzing x86 Executables, (Tool Demonstration Paper)",
+	Booktitle   = cc,
+	Year        = 2005
+}
+
+@Article{IJRR:LF09,
+	Author  = "M. Likhachev and D. Ferguson",
+	Title   = "Planning Long Dynamically-Feasible Maneuvers for Autonomous Vehicles",
+	Journal = "Int.\ Journal of Robotics Research",
+	Year    = 2009
+}
+
+@Misc{Agreement:UW-GT:05,
+	title = "{Collaborative Research Agreement between GrammaTech, the University of Wisconsin-Madison, and certain students/other individuals associated with the University of Wisconsin}",
+	note = "Executed Nov.\ 16, 2005.",
+	key  = "collaborative research agreement"
+}
+
+@article{TOPLAS:AHJR14,
+	author  = "M. Aung and S. Horwitz and R. Joiner and T. Reps",
+	title   = "Specialization Slicing",
+	journal = toplas,
+	volume  = 36,
+	number  = 2,
+	year    = 2014
+}
+
+@Article{FMSD:SS00,
+	author    = "M. Sheeran and G. St\r{a}lmarck",
+	title     = "A Tutorial on {S}t\r{a}lmarck's Proof Procedure for Propositional Logic",
+	journal   = fmsd,
+	volume    = 16,
+	number    = 1,
+	year      = 2000,
+	pages     = "23--58"
+}
+
+@inproceedings{DBLP:conf/iwmm/RavitchL13,
+	author    = {Tristan Ravitch and
+	Ben Liblit},
+	title     = {Analyzing memory ownership patterns in {C} libraries},
+	booktitle = {ISMM},
+	year      = {2013},
+	pages     = {97-108},
+	ee        = {http://doi.acm.org/10.1145/2464157.2464162},
+	crossref  = {DBLP:conf/iwmm/2013},
+	bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/iwmm/2013,
+	editor    = {Perry Cheng and
+	Erez Petrank},
+	title     = {International Symposium on Memory Management, ISMM '13,
+	Seattle, WA, USA - June 20 - 20, 2013},
+	booktitle = {ISMM},
+	publisher = {ACM},
+	year      = {2013},
+	NOOPisbn      = {978-1-4503-2100-6},
+	ee        = {http://dl.acm.org/citation.cfm?id=2491894},
+	bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/pldi/RavitchJAL09,
+	author    = {Tristan Ravitch and
+	Steve Jackson and
+	Eric Aderhold and
+	Ben Liblit},
+	title     = {Automatic generation of library bindings using static analysis},
+	booktitle = {PLDI},
+	year      = {2009},
+	pages     = {352-362},
+	ee        = {http://doi.acm.org/10.1145/1542476.1542516},
+	crossref  = {DBLP:conf/pldi/2009},
+	bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/pldi/2009,
+	editor    = {Michael Hind and
+	Amer Diwan},
+	title     = {Proceedings of the 2009 ACM SIGPLAN Conference on Programming
+	Language Design and Implementation, PLDI 2009, Dublin, Ireland,
+	June 15-21, 2009},
+	booktitle = {PLDI},
+	publisher = {ACM},
+	year      = {2009},
+	NOOPisbn      = {978-1-60558-392-1},
+	bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{cerny2013quantitative,
+	title={Quantitative abstraction refinement},
+	author={Cerny, Pavol and Henzinger, Thomas A and Radhakrishna, Arjun},
+	journal={POPL},
+	volume={48},
+	number={1},
+	pages={115--128},
+	year={2013},
+	publisher={ACM}
+}
+
+
+@inproceedings{DBLP:conf/oopsla/JinTLL10,
+	author    = {Guoliang Jin and
+	Aditya V. Thakur and
+	Ben Liblit and
+	Shan Lu},
+	title     = {Instrumentation and sampling strategies for cooperative
+	concurrency bug isolation},
+	booktitle = {OOPSLA},
+	year      = {2010},
+	pages     = {241-255},
+	ee        = {http://doi.acm.org/10.1145/1869459.1869481},
+	crossref  = {DBLP:conf/oopsla/2010},
+	bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{carbin2012proving,
+	title={Proving acceptability properties of relaxed nondeterministic approximate programs},
+	author={Carbin, Michael and Kim, Deokhwan and Misailovic, Sasa and Rinard, Martin C},
+	journal={PLDI},
+	volume={47},
+	number={6},
+	pages={169--180},
+	year={2012},
+	publisher={ACM}
+}
+
+
+@inproceedings{Carbin:2013:VQR:2509136.2509546,
+	author = {Carbin, Michael and Misailovic, Sasa and Rinard, Martin C.},
+	title = {Verifying Quantitative Reliability for Programs That Execute on Unreliable Hardware},
+	booktitle = {Proceedings of the 2013 ACM SIGPLAN International Conference on Object Oriented Programming Systems Languages \&\#38; Applications},
+	series = {OOPSLA '13},
+	year = {2013},
+	NOOPisbn = {978-1-4503-2374-1},
+	location = {Indianapolis, Indiana, USA},
+	pages = {33--52},
+	numpages = {20},
+	NOOPurl = {http://doi.acm.org/10.1145/2509136.2509546},
+	NOOPdoi = {10.1145/2509136.2509546},
+	acmid = {2509546},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {approximate computing},
+} 
+
+
+
+@proceedings{DBLP:conf/oopsla/2010,
+	editor    = {William R. Cook and
+	Siobh{\'a}n Clarke and
+	Martin C. Rinard},
+	title     = {Proceedings of the 25th Annual ACM SIGPLAN Conference on
+	Object-Oriented Programming, Systems, Languages, and Applications,
+	OOPSLA 2010, October 17-21, 2010, Reno/Tahoe, Nevada, USA},
+	booktitle = {OOPSLA},
+	publisher = {ACM},
+	year      = {2010},
+	NOOPisbn      = {978-1-4503-0203-6},
+	bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/icse/NainarL10,
+	author    = {Piramanayagam Arumuga Nainar and
+	Ben Liblit},
+	title     = {Adaptive bug isolation},
+	booktitle = {ICSE (1)},
+	year      = {2010},
+	pages     = {255-264},
+	ee        = {http://doi.acm.org/10.1145/1806799.1806839},
+	crossref  = {DBLP:conf/icse/2010-1},
+	bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@book{barber2012bayesian,
+	title={Bayesian reasoning and machine learning},
+	author={Barber, David},
+	year={2012},
+	publisher={Cambridge University Press}
+}
+
+@proceedings{DBLP:conf/icse/2010-1,
+	editor    = {Jeff Kramer and
+	Judith Bishop and
+	Premkumar T. Devanbu and
+	Sebasti{\'a}n Uchitel},
+	title     = {Proceedings of the 32nd ACM/IEEE International Conference
+	on Software Engineering - Volume 1, ICSE 2010, Cape Town,
+	South Africa, 1-8 May 2010},
+	booktitle = {ICSE (1)},
+	publisher = {ACM},
+	year      = {2010},
+	NOOPisbn      = {978-1-60558-719-6},
+	bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/icse/ChilimbiLMNV09,
+	author    = {Trishul M. Chilimbi and
+	Ben Liblit and
+	Krishna K. Mehra and
+	Aditya V. Nori and
+	Kapil Vaswani},
+	title     = {\textsc{HOLMES}: Effective statistical debugging via efficient path
+	profiling},
+	booktitle = {ICSE},
+	year      = {2009},
+	pages     = {34-44},
+	ee        = {http://dx.doi.org/10.1109/ICSE.2009.5070506},
+	crossref  = {DBLP:conf/icse/2009},
+	bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/icse/2009,
+	title     = {31st International Conference on Software Engineering, ICSE
+	2009, May 16-24, 2009, Vancouver, Canada, Proceedings},
+	booktitle = {ICSE},
+	publisher = {IEEE},
+	year      = {2009},
+	NOOPisbn      = {978-1-4244-3452-7},
+	bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/ecml/AndrzejewskiMLZ07,
+	author    = {David Andrzejewski and
+	Anne Mulhern and
+	Ben Liblit and
+	Xiaojin Zhu},
+	title     = {Statistical Debugging Using Latent Topic Models},
+	booktitle = {ECML},
+	year      = {2007},
+	pages     = {6-17},
+	ee        = {http://dx.doi.org/10.1007/978-3-540-74958-5_5},
+	crossref  = {DBLP:conf/ecml/2007},
+	bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/ecml/2007,
+	editor    = {Joost N. Kok and
+	Jacek Koronacki and
+	Ramon L{\'o}pez de M{\'a}ntaras and
+	Stan Matwin and
+	Dunja Mladenic and
+	Andrzej Skowron},
+	title     = {Machine Learning: ECML 2007, 18th European Conference on
+	Machine Learning, Warsaw, Poland, September 17-21, 2007,
+	Proceedings},
+	booktitle = {ECML},
+	publisher = {Springer},
+	series    = {Lecture Notes in Computer Science},
+	volume    = {4701},
+	year      = {2007},
+	NOOPisbn      = {978-3-540-74957-8},
+	bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@misc{DOE-ASCAC-Data-Subcommittee-13,
+	author = {Vivek Sarkar and Jacqueline Chen and Stuart Feldman and Bruce Hendrickson and Chris Johnson and Richard Mount and Victoria White and Dean Williams},
+	title = {{Synergistic Challenges in Data-Intensive Science and Exascale Computing}},
+	howpublished = {DOE ASCAC Data Subcommittee Report},
+	year = 2013, month = "March"
+}
+
+@misc{oauth4,
+	title = {Blog post about {Oauth}},
+	
+	howpublished = {\url{http://blogs.steeplesoft.com/posts/2013/07/11/a-simple-oauth2-client-and-server-example-part-i/}}
+}
+
+@misc{oauth2,
+	title = {Blog post about {Oauth}},
+	howpublished = {\url{https://lukasa.co.uk/2012/08/OAuth_Needs_To_Die_In_A_Fire/}}
+}
+
+@misc{oauth3,
+	title = {Blog post about {Oauth}},
+	howpublished = {\url{http://thewayofcode.wordpress.com/2014/03/+}}
+}
+
+@misc{oauth1,
+	title = {Blog post about {Oauth}},
+	howpublished = {\url{https://www.codersclan.net/ticket/131}}
+}
+
+@article{boogie,
+	title={This is {Boogie} 2},
+	author={Leino, K. Rustan M.},
+	journal={Manuscript {KRML}},
+	volume={178},
+	pages={131},
+	howpublished = {\url{http://research.microsoft.com/en-us/um/people/leino/papers/krml178.pdf}},
+	year={2008}
+}
+
+
+@inproceedings{dillig-pldi12,
+	author    = {Isil Dillig and
+	Thomas Dillig and
+	Alex Aiken},
+	title     = {Automated error diagnosis using abductive inference},
+	booktitle = {PLDI},
+	year      = {2012},
+	pages     = {181-192}
+}
+
+@article{tvla1,
+	title={Parametric shape analysis via 3-valued logic},
+	author={Sagiv, Mooly and Reps, Thomas and Wilhelm, Reinhard},
+	journal={ACM Transactions on Programming Languages and Systems (TOPLAS)},
+	volume={24},
+	number={3},
+	pages={217--298},
+	year={2002},
+	publisher={ACM}
+}
+
+@inproceedings{tvla2,
+	title={Revamping TVLA: Making parametric shape analysis competitive},
+	author={Bogudlov, Igor and Lev-Ami, Tal and Reps, Thomas and Sagiv, Mooly},
+	booktitle={Computer aided verification},
+	pages={221--225},
+	year={2007},
+	organization={Springer}
+}
+
+
+@inproceedings{dillig-collection,
+	author    = {Isil Dillig and
+	Thomas Dillig and
+	Alex Aiken},
+	title     = {Precise reasoning for programs using containers},
+	booktitle = {POPL},
+	year      = {2011},
+	pages     = {187-200}
+}
+
+
+@incollection{dillig-array,
+	title={Fluid updates: Beyond strong vs. weak updates},
+	author={Dillig, Isil and Dillig, Thomas and Aiken, Alex},
+	booktitle={Programming Languages and Systems},
+	pages={246--266},
+	year={2010},
+	publisher={Springer}
+}
+
+
+@inproceedings{dillig-pointer,
+	author    = {Isil Dillig and
+	Thomas Dillig and
+	Alex Aiken and
+	Mooly Sagiv},
+	title     = {Precise and compact modular procedure summaries for heap
+	manipulating programs},
+	booktitle = {PLDI},
+	year      = {2011},
+	pages     = {567-577}
+}
+
+
+@inproceedings{dillig-oopsla10,
+	author    = {Isil Dillig and
+	Thomas Dillig and
+	Alex Aiken},
+	title     = {Symbolic heap abstraction with demand-driven axiomatization
+	of memory invariants},
+	booktitle = {OOPSLA},
+	year      = {2010},
+	pages     = {397-410}
+}
+
+@inproceedings{cousot1977,
+	title={Abstract interpretation: a unified lattice model for static analysis of programs by construction or approximation of fixpoints},
+	author={Cousot, Patrick and Cousot, Radhia},
+	booktitle={Proceedings of the 4th ACM SIGACT-SIGPLAN symposium on Principles of programming languages},
+	pages={238--252},
+	year={1977},
+	organization={ACM}
+}
+
+@inproceedings{polyhedra,
+	title={Automatic discovery of linear restraints among variables of a program},
+	author={Cousot, Patrick and Halbwachs, Nicolas},
+	booktitle={Proceedings of the 5th ACM SIGACT-SIGPLAN symposium on Principles of programming languages},
+	pages={84--96},
+	year={1978},
+	organization={ACM}
+}
+
+@article{interproc,
+	title={Interproc analyzer for recursive programs with numerical variables},
+	author={Jeannet, Bertrand},
+	journal={INRIA, software and documentation are available at the following URL: http://pop-art. inrialpes. fr/interproc/interprocweb. cgi. Last accessed},
+	pages={06--11},
+	year={2010}
+}
+
+@inproceedings{dillig-oopsla13,
+	title={Inductive invariant generation via abductive inference},
+	author={Dillig, Isil and Dillig, Thomas and Li, Boyang and McMillan, Ken},
+	booktitle={Proceedings of the 2013 ACM SIGPLAN international conference on Object oriented programming systems languages \& applications},
+	pages={443--456},
+	year={2013},
+	organization={ACM}
+}
+
+@article{blast,
+	title={The software model checker Blast},
+	author={Beyer, Dirk and Henzinger, Thomas A and Jhala, Ranjit and Majumdar, Rupak},
+	journal={International Journal on Software Tools for Technology Transfer},
+	volume={9},
+	number={5-6},
+	pages={505--525},
+	year={2007},
+	publisher={Springer}
+}
+
+@inproceedings{slam,
+	title={SLAM and Static Driver Verifier: Technology transfer of formal methods inside Microsoft},
+	author={Ball, Thomas and Cook, Byron and Levin, Vladimir and Rajamani, Sriram K},
+	booktitle={Integrated formal methods},
+	pages={1--20},
+	year={2004},
+	organization={Springer}
+}
+
+@inproceedings{impact,
+	title={Lazy abstraction with interpolants},
+	author={McMillan, Kenneth L},
+	booktitle={Computer Aided Verification},
+	pages={123--136},
+	year={2006},
+	organization={Springer}
+}
+
+@inproceedings{swarat-popl14-games,
+	title={A constraint-based approach to solving games on infinite graphs},
+	author={Beyene, Tewodros and Chaudhuri, Swarat and Popeea, Corneliu and Rybalchenko, Andrey},
+	booktitle={Proceedings of the 41st annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
+	pages={221--234},
+	year={2014},
+	organization={ACM}
+}
+
+@misc{abduction-synthesis-unpublished,
+	title = {Optimal Guard Synthesis for Memory Safety},
+	author = {Isil Dillig and Thomas Dillig and Swarat Chaudhuri},
+	year = {2014},
+	howpublished = {\url{http://www.cs.rice.edu/~swarat/pubs/synth-mem.pdf}}
+}
+
+@misc{comp-repair-unpublished,
+	title={Compositional Repair of Reactive Programs},
+	author={Beyene, Tewodros and Chaudhuri, Swarat and Popeea, Corneliu and Rybalchenko, Andrey},
+	year={2014},
+	howpublished = {\url{http://www.cs.rice.edu/~sc40/pubs/comp-repair.pdf}}
+}
+
+@misc{autograde,
+	title={Learning to Grade Student Programs in a Massive Open
+	Online Course},
+	author={Anna Drummond and Yanxin Lu and Swarat Chaudhuri and Christopher Jermaine and Scott Rixner and Joe Warren},
+	year={2014},
+	howpublished = {\url{http://www.cs.rice.edu/~sc40/pubs/autograde.pdf}}
+}
+
+
+
+@inproceedings{GKS05,
+	author    = {Patrice Godefroid and
+	Nils Klarlund and
+	Koushik Sen},
+	title     = {DART: directed automated random testing},
+	booktitle = {PLDI},
+	year      = {2005},
+	pages     = {213-223}
+}
+
+@article{GodefroidLM12,
+	author    = {Patrice Godefroid and
+	Michael Y. Levin and
+	David A. Molnar},
+	title     = {{SAGE}: whitebox fuzzing for security testing},
+	journal   = {Communications of the {ACM}},
+	volume    = {55},
+	number    = {3},
+	year      = {2012},
+	pages     = {40-44}
+}
+
+@inproceedings{JPFSE,
+	title={JPF--SE: A symbolic execution extension to java pathfinder},
+	author={Anand, Saswat and P{\u{a}}s{\u{a}}reanu, Corina S and Visser, Willem},
+	booktitle={International Conference on Tools and Algorithms for the Construction and Analysis of Systems},
+	pages={134--138},
+	year={2007},
+	organization={Springer}
+}
+
+@article{srivastava2012template,
+	title={Template-based program verification and program synthesis},
+	author={Srivastava, Saurabh and Gulwani, Sumit and Foster, Jeffrey S},
+	journal={International Journal on Software Tools for Technology Transfer (STTT)},
+	pages={1--22},
+	year={2012},
+	publisher={Springer}
+}
+
+@inproceedings{srivastava2012path,
+	author    = {Saurabh Srivastava and
+	Sumit Gulwani and
+	Swarat Chaudhuri and
+	Jeffrey S. Foster},
+	title     = {Path-based inductive synthesis for program inversion},
+	booktitle = {PLDI},
+	year      = {2011},
+	pages     = {492-503}
+}
+
+@inproceedings{comp-pldi14,
+	author    = {Daniel Perelman and
+	Sumit Gulwani and
+	Dan Grossman and
+	Peter Provost},
+	title     = {Test-driven synthesis},
+	booktitle = {PLDI},
+	pages     = {43},
+	year      = {2014},
+	publisher = {ACM}
+}
+
+
+@article{graves2014neural,
+	title={Neural turing machines},
+	author={Graves, Alex and Wayne, Greg and Danihelka, Ivo},
+	journal={arXiv preprint arXiv:1410.5401},
+	year={2014}
+}
+
+@inproceedings{bunel2016adaptive,
+	title={Adaptive neural compilation},
+	author={Bunel, Rudy R and Desmaison, Alban and Mudigonda, Pawan K and Kohli, Pushmeet and Torr, Philip},
+	booktitle={Advances in Neural Information Processing Systems},
+	pages={1444--1452},
+	year={2016}
+}
+
+@article{gaunt2016terpret,
+	title={Terpret: A probabilistic programming language for program induction},
+	author={Gaunt, Alexander L and Brockschmidt, Marc and Singh, Rishabh and Kushman, Nate and Kohli, Pushmeet and Taylor, Jonathan and Tarlow, Daniel},
+	journal={arXiv preprint arXiv:1608.04428},
+	year={2016}
+}
+
+@article{riedel2016programming,
+	title={Programming with a differentiable Forth interpreter},
+	author={Riedel, Sebastian and Bosnjak, Matko and Rockt{\"a}schel, Tim},
+	journal={CoRR, abs/1605.06640},
+	year={2016}
+}
+
+@inproceedings{treeRNN,
+	author    = {Xingxing Zhang and
+	Liang Lu and
+	Mirella Lapata},
+	title     = {Top-down Tree Long Short-Term Memory Networks},
+	booktitle = {{NAACL} {HLT} 2016, The 2016 Conference of the North American Chapter
+	of the Association for Computational Linguistics: Human Language Technologies,
+	San Diego California, USA, June 12-17, 2016},
+	pages     = {310--320},
+	year      = {2016}
+}
+
+@inproceedings{kingma2013auto,
+	title={Auto-encoding variational bayes},
+	author={Kingma, Diederik P and Welling, Max},
+	booktitle={ICLR},
+	year={2014}
+}
+
+
+@inproceedings{joulin2015inferring,
+	title={Inferring algorithmic patterns with stack-augmented recurrent nets},
+	author={Joulin, Armand and Mikolov, Tomas},
+	booktitle={Advances in neural information processing systems},
+	pages={190--198},
+	year={2015}
+}
+
+@article{kurach2015neural,
+	title={Neural random-access machines},
+	author={Kurach, Karol and Andrychowicz, Marcin and Sutskever, Ilya},
+	journal={arXiv preprint arXiv:1511.06392},
+	year={2015}
+}
+
+@article{neelakantan2015neural,
+	title={Neural programmer: Inducing latent programs with gradient descent},
+	author={Neelakantan, Arvind and Le, Quoc V and Sutskever, Ilya},
+	journal={arXiv preprint arXiv:1511.04834},
+	year={2015}
+}
+
+@article{reed2015neural,
+	title={Neural programmer-interpreters},
+	author={Reed, Scott and De Freitas, Nando},
+	journal={arXiv preprint arXiv:1511.06279},
+	year={2015}
+}
+
+@inproceedings{armandosketching,
+	author    = {Armando Solar-Lezama and
+	Liviu Tancau and
+	Rastislav Bod\'{\i}k and
+	Sanjit A. Seshia and
+	Vijay A. Saraswat},
+	title     = {Combinatorial sketching for finite programs},
+	booktitle = {ASPLOS},
+	year      = {2006},
+	pages     = {404-415}
+}
+
+@inproceedings{LeeHAN18,
+	author    = {Woosuk Lee and
+	Kihong Heo and
+	Rajeev Alur and
+	Mayur Naik},
+	title     = {Accelerating search-based program synthesis using learned probabilistic
+	models},
+	booktitle = {Proceedings of the 39th {ACM} {SIGPLAN} Conference on Programming
+	Language Design and Implementation, {PLDI} 2018, Philadelphia, PA,
+	USA, June 18-22, 2018},
+	pages     = {436--449},
+	year      = {2018}
+}
+
+@inproceedings{ellis2018learning,
+	title={Learning to infer graphics programs from hand-drawn images},
+	author={Ellis, Kevin and Ritchie, Daniel and Solar-Lezama, Armando and Tenenbaum, Josh},
+	booktitle={Advances in Neural Information Processing Systems},
+	pages={6059--6068},
+	year={2018}
+}
+
+@inproceedings{valkov2018houdini,
+	title={HOUDINI: Lifelong Learning as Program Synthesis},
+	author={Valkov, Lazar and Chaudhari, Dipak and Srivastava, Akash and Sutton, Charles and Chaudhuri, Swarat},
+	booktitle={Advances in Neural Information Processing Systems},
+	pages={8687--8698},
+	year={2018}
+}
+
+
+@inproceedings{CS10,
+	author    = {Swarat Chaudhuri and
+	Armando Solar-Lezama},
+	title     = {Smooth interpretation},
+	booktitle = {PLDI},
+	year      = {2010},
+	pages     = {279-291}
+}
+
+@inproceedings{jha2010oracle,
+	title={Oracle-guided component-based program synthesis},
+	author={Jha, Susmit and Gulwani, Sumit and Seshia, Sanjit A and Tiwari, Ashish},
+	booktitle={Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering-Volume 1},
+	pages={215--224},
+	year={2010},
+	organization={ACM}
+}
+
+@article{DuIPSSRSM18,
+	author    = {Tao Du and
+	Jeevana Priya Inala and
+	Yewen Pu and
+	Andrew Spielberg and
+	Adriana Schulz and
+	Daniela Rus and
+	Armando Solar{-}Lezama and
+	Wojciech Matusik},
+	title     = {InverseCSG: automatic conversion of 3D models to {CSG} trees},
+	journal   = {{ACM} Trans. Graph.},
+	volume    = {37},
+	number    = {6},
+	pages     = {213:1--213:16},
+	year      = {2018}
+}
+
+@inproceedings{CCS14,
+	author    = {Swarat Chaudhuri and
+	Martin Clochard and
+	Armando Solar-Lezama},
+	title     = {Bridging boolean and quantitative synthesis using smoothed
+	proof search},
+	booktitle = {POPL},
+	year      = {2014},
+	pages     = {207-220}
+}
+
+@inproceedings{CS11,
+	author    = {Swarat Chaudhuri and
+	Armando Solar-Lezama},
+	title     = {Smoothing a Program Soundly and Robustly},
+	booktitle = {CAV},
+	year      = {2011},
+	pages     = {277-292}
+}
+
+@inproceedings{CS12,
+	author    = {Swarat Chaudhuri and
+	Armando Solar-Lezama},
+	title     = {{Euler}: A System for Numerical Optimization of Programs},
+	booktitle = {CAV},
+	year      = {2012},
+	pages     = {732-737}
+}
+
+@inproceedings{UdupaRDMMA13,
+	author    = {Abhishek Udupa and
+	Arun Raghavan and
+	Jyotirmoy V. Deshmukh and
+	Sela Mador-Haim and
+	Milo M. K. Martin and
+	Rajeev Alur},
+	title     = {{Transit}: specifying protocols with concolic snippets},
+	booktitle = {PLDI},
+	year      = {2013},
+	pages     = {287-296}
+}
+
+@inproceedings{BloemCHJ09,
+	author    = {Roderick Bloem and
+	Krishnendu Chatterjee and
+	Thomas A. Henzinger and
+	Barbara Jobstmann},
+	title     = {Better Quality in Synthesis through Quantitative Objectives},
+	booktitle = {Computer Aided Verification, 21st International Conference, {CAV}
+	2009, Grenoble, France, June 26 - July 2, 2009. Proceedings},
+	pages     = {140--156},
+	year      = {2009}
+}
+
+@inproceedings{JobstmannCAV05,
+	author    = {Barbara Jobstmann and
+	Andreas Griesmayer and
+	Roderick Bloem},
+	title     = {Program Repair as a Game},
+	booktitle = {CAV},
+	year      = {2005},
+	pages     = {226-238},
+	ee        = {http://dx.doi.org/10.1007/11513988_23},
+	bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{griesmayer2006repair,
+	title={Repair of boolean programs with an application to {C}},
+	author={Griesmayer, Andreas and Bloem, Roderick and Cook, Byron},
+	booktitle={CAV},
+	pages={358--371},
+	year={2006},
+	organization={Springer}
+}
+
+
+@inproceedings{GSNN,
+	author    = {Kihyuk Sohn and
+	Honglak Lee and
+	Xinchen Yan},
+	title     = {Learning Structured Output Representation using Deep Conditional Generative
+	Models},
+	booktitle = {Advances in Neural Information Processing Systems 28: Annual Conference
+	on Neural Information Processing Systems 2015, December 7-12, 2015,
+	Montreal, Quebec, Canada},
+	pages     = {3483--3491},
+	year      = {2015}
+}
+
+@inproceedings{samanta2008automatic,
+	title={Automatic generation of local repairs for boolean programs},
+	author={Samanta, Roopsha and Deshmukh, Jyotirmoy V and Emerson, E Allen},
+	booktitle={FMCAD},
+	pages={1--10},
+	year={2008},
+	organization={IEEE}
+}
+
+@inproceedings{WCGY09,
+	author    = {Chao Wang and
+	Swarat Chaudhuri and
+	Aarti Gupta and
+	Yu Yang},
+	title     = {Symbolic pruning of concurrent program executions},
+	booktitle = {ESEC/SIGSOFT FSE},
+	year      = {2009},
+	pages     = {23-32}
+}
+
+
+
+@inproceedings{bmc1,
+	title={Symbolic model checking using SAT procedures instead of BDDs},
+	author={Biere, Armin and Cimatti, Alessandro and Clarke, Edmund M and Fujita, Masahiro and Zhu, Yunshan},
+	booktitle={Proceedings of the 36th annual ACM/IEEE Design Automation Conference},
+	pages={317--320},
+	year={1999},
+	organization={ACM}
+}
+
+@incollection{bmc2,
+	title={A tool for checking ANSI-C programs},
+	author={Clarke, Edmund and Kroening, Daniel and Lerda, Flavio},
+	booktitle={Tools and Algorithms for the Construction and Analysis of Systems},
+	pages={168--176},
+	year={2004},
+	publisher={Springer}
+}
+
+@incollection{cegis1,
+	title={The sketching approach to program synthesis},
+	author={Solar-Lezama, Armando},
+	booktitle={Programming Languages and Systems},
+	pages={4--13},
+	year={2009},
+	publisher={Springer}
+}
+
+@inproceedings{cegis2,
+	title={Sketching concurrent data structures},
+	author={Solar-Lezama, Armando and Jones, Christopher Grant and Bodik, Rastislav},
+	booktitle={ACM SIGPLAN Notices},
+	volume={43},
+	number={6},
+	pages={136--148},
+	year={2008},
+	organization={ACM}
+}
+
+@article{cegis3,
+	title={Synthesis of loop-free programs},
+	author={Gulwani, Sumit and Jha, Susmit and Tiwari, Ashish and Venkatesan, Ramarathnam},
+	journal={ACM SIGPLAN Notices},
+	volume={46},
+	number={6},
+	pages={62--73},
+	year={2011},
+	publisher={ACM}
+}
+
+@Article{PSC-2005,
+	author = {K.Ebcioglu and V.Sarkar and T.El-Ghazawi and J.Urbanic},
+	title = {An Experiment in Measuring the Productivity of Three Parallel Programming Languages},
+	journal = {Proceedings of the 
+	Third Workshop on 
+	Productivity and Performance in 
+	High-End Computing 
+	(PPHEC-06)},
+	year = {2006},
+	month = {February},
+	pages = {30-36},
+	note = "www.research.ibm.com/arl/pphec/PPHEC2006-Proceedings-FINAL.pdf"
+}
+
+@article{jordan1999introduction,
+	title={An introduction to variational methods for graphical models},
+	author={Jordan, Michael I and Ghahramani, Zoubin and Jaakkola, Tommi S and Saul, Lawrence K},
+	journal={Machine learning},
+	volume={37},
+	number={2},
+	pages={183--233},
+	year={1999},
+	publisher={Springer}
+}
+
+@book{efron1994introduction,
+	title={An introduction to the bootstrap},
+	author={Efron, Bradley and Tibshirani, Robert J},
+	year={1994},
+	publisher={CRC press}
+}
+
+@inproceedings{StreamBit,
+	author = {Armando Solar-Lezama and Rodric Rabbah and Rastislav Bod\'{\i}k and Kemal Ebcio\u{g}lu},
+	title = {Programming by sketching for bit-streaming programs},
+	booktitle = {PLDI '05: Proceedings of the 2005 ACM SIGPLAN conference on Programming language design and implementation},
+	year = {2005},
+	NOOPisbn = {1-59593-056-6},
+	pages = {281--294},
+	location = {Chicago, IL, USA},
+	NOOPdoi = {http://doi.acm.org/10.1145/1065010.1065045},
+	publisher = {ACM},
+	address = {New York, NY, USA}
+}
+
+@inproceedings{GauntBKT17,
+	author    = {Alexander L. Gaunt and
+	Marc Brockschmidt and
+	Nate Kushman and
+	Daniel Tarlow},
+	title     = {Differentiable Programs with Neural Libraries},
+	booktitle = {Proceedings of the 34th International Conference on Machine Learning,
+	{ICML} 2017, Sydney, NSW, Australia, 6-11 August 2017},
+	pages     = {1213--1222},
+	year      = {2017}
+}
+
+
+@inproceedings{BunelDMKT16,
+	author    = {Rudy R. Bunel and
+	Alban Desmaison and
+	Pawan Kumar Mudigonda and
+	Pushmeet Kohli and
+	Philip H. S. Torr},
+	title     = {Adaptive Neural Compilation},
+	booktitle = {Advances in Neural Information Processing Systems 29: Annual Conference
+	on Neural Information Processing Systems 2016, December 5-10, 2016,
+	Barcelona, Spain},
+	pages     = {1444--1452},
+	year      = {2016}
+}
+
+@inproceedings{BosnjakRNR17,
+	author    = {Matko Bosnjak and
+	Tim Rockt{\"{a}}schel and
+	Jason Naradowsky and
+	Sebastian Riedel},
+	title     = {Programming with a Differentiable Forth Interpreter},
+	booktitle = {Proceedings of the 34th International Conference on Machine Learning,
+	{ICML} 2017, Sydney, NSW, Australia, 6-11 August 2017},
+	pages     = {547--556},
+	year      = {2017}
+}
+
+@article{Solar-Lezama13,
+	author    = {Armando Solar{-}Lezama},
+	title     = {Program sketching},
+	journal   = {{STTT}},
+	volume    = {15},
+	number    = {5-6},
+	pages     = {475--495},
+	year      = {2013},
+	url       = {https://doi.org/10.1007/s10009-012-0249-7},
+	doi       = {10.1007/s10009-012-0249-7},
+	timestamp = {Thu, 18 May 2017 09:53:11 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/sttt/Solar-Lezama13},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+@inproceedings{SmithA16,
+	author    = {Calvin Smith and
+	Aws Albarghouthi},
+	title     = {MapReduce program synthesis},
+	booktitle = {Proceedings of the 37th {ACM} {SIGPLAN} Conference on Programming
+	Language Design and Implementation, {PLDI} 2016, Santa Barbara, CA,
+	USA, June 13-17, 2016},
+	pages     = {326--340},
+	year      = {2016}
+}
+
+@article{bellman1958routing,
+	title={On a routing problem},
+	author={Bellman, Richard},
+	journal={Quarterly of applied mathematics},
+	volume={16},
+	number={1},
+	pages={87--90},
+	year={1958}
+}
+
+@inproceedings{flashmeta,
+	author    = {Oleksandr Polozov and
+	Sumit Gulwani},
+	title     = {FlashMeta: a framework for inductive program synthesis},
+	booktitle = {Proceedings of the 2015 {ACM} {SIGPLAN} International Conference on
+	Object-Oriented Programming, Systems, Languages, and Applications,
+	{OOPSLA} 2015, part of {SPLASH} 2015, Pittsburgh, PA, USA, October
+	25-30, 2015},
+	pages     = {107--126},
+	year      = {2015}
+}
+
+@inproceedings{LeG14,
+	author    = {Vu Le and
+	Sumit Gulwani},
+	title     = {FlashExtract: a framework for data extraction by examples},
+	booktitle = {{ACM} {SIGPLAN} Conference on Programming Language Design and Implementation,
+	{PLDI} '14, Edinburgh, United Kingdom - June 09 - 11, 2014},
+	pages     = {542--553},
+	year      = {2014}
+}
+
+@article{GravesWD14,
+	author    = {Alex Graves and
+	Greg Wayne and
+	Ivo Danihelka},
+	title     = {Neural Turing Machines},
+	journal   = {CoRR},
+	volume    = {abs/1410.5401},
+	year      = {2014},
+	url       = {http://arxiv.org/abs/1410.5401},
+	archivePrefix = {arXiv},
+	eprint    = {1410.5401},
+	timestamp = {Wed, 07 Jun 2017 14:42:19 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/corr/GravesWD14},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+
+@inproceedings{FeserCD15,
+	author    = {John K. Feser and
+	Swarat Chaudhuri and
+	Isil Dillig},
+	title     = {Synthesizing data structure transformations from input-output examples},
+	booktitle = {Proceedings of the 36th {ACM} {SIGPLAN} Conference on Programming
+	Language Design and Implementation, Portland, OR, USA, June 15-17,
+	2015},
+	pages     = {229--239},
+	year      = {2015}
+}
+
+@article{ThrunM95,
+	author    = {Sebastian Thrun and
+	Tom M. Mitchell},
+	title     = {Lifelong robot learning},
+	journal   = {Robotics and Autonomous Systems},
+	volume    = {15},
+	number    = {1-2},
+	pages     = {25--46},
+	year      = {1995}
+}
+
+@article{GauntBSKKTT16,
+	author    = {Alexander L. Gaunt and
+	Marc Brockschmidt and
+	Rishabh Singh and
+	Nate Kushman and
+	Pushmeet Kohli and
+	Jonathan Taylor and
+	Daniel Tarlow},
+	title     = {TerpreT: {A} Probabilistic Programming Language for Program Induction},
+	journal   = {CoRR},
+	volume    = {abs/1608.04428},
+	year      = {2016}
+}
+
+@inproceedings{SilverYL13,
+	author    = {Daniel L. Silver and
+	Qiang Yang and
+	Lianghao Li},
+	title     = {Lifelong Machine Learning Systems: Beyond Learning Algorithms},
+	booktitle = {Lifelong Machine Learning, Papers from the 2013 {AAAI} Spring Symposium,
+	Palo Alto, California, USA, March 25-27, 2013},
+	year      = {2013}
+}
+
+
+
+@inproceedings{ai2,
+  title={Ai2: Safety and robustness certification of neural networks with abstract interpretation},
+  author={Gehr, Timon and Mirman, Matthew and Drachsler-Cohen, Dana and Tsankov, Petar and Chaudhuri, Swarat and Vechev, Martin},
+  booktitle={2018 IEEE Symposium on Security and Privacy (SP)},
+  pages={3--18},
+  year={2018},
+  organization={IEEE}
+}
+
+@inproceedings{reluplex,
+  title={Reluplex: An efficient SMT solver for verifying deep neural networks},
+  author={Katz, Guy and Barrett, Clark and Dill, David L and Julian, Kyle and Kochenderfer, Mykel J},
+  booktitle={International Conference on Computer Aided Verification},
+  pages={97--117},
+  year={2017},
+  organization={Springer}
+}
+
+@inproceedings{charon,
+  title={Optimization and abstraction: a synergistic approach for analyzing neural network robustness},
+  author={Anderson, Greg and Pailoor, Shankara and Dillig, Isil and Chaudhuri, Swarat},
+  booktitle={Proceedings of the 40th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+  pages={731--744},
+  year={2019}
+}
+
+
+
+@inproceedings{fulton2019verifiably,
+  title={Verifiably safe off-model reinforcement learning},
+  author={Fulton, Nathan and Platzer, Andr{\'e}},
+  booktitle={International Conference on Tools and Algorithms for the Construction and Analysis of Systems},
+  pages={413--430},
+  year={2019},
+  organization={Springer}
+}
+
+@inproceedings{fulton2018safe,
+  title={Safe reinforcement learning via formal methods: Toward safe control through proof and learning},
+  author={Fulton, Nathan and Platzer, Andr{\'e}},
+  booktitle={Thirty-Second AAAI Conference on Artificial Intelligence},
+  year={2018}
+}
+
+@article{hasanbeig2018logically,
+  title={Logically-constrained reinforcement learning},
+  author={Hasanbeig, Mohammadhosein and Abate, Alessandro and Kroening, Daniel},
+  journal={arXiv preprint arXiv:1801.08099},
+  year={2018}
+}
+
+@inproceedings{reluval,
+  title={Formal security analysis of neural networks using symbolic intervals},
+  author={Wang, Shiqi and Pei, Kexin and Whitehouse, Justin and Yang, Junfeng and Jana, Suman},
+  booktitle={27th $\{$USENIX$\}$ Security Symposium ($\{$USENIX$\}$ Security 18)},
+  pages={1599--1614},
+  year={2018}
+}
+
+
+
+@inproceedings{propel,
+  title={Imitation-Projected Programmatic Reinforcement Learning},
+  author={Verma, Abhinav and Le, Hoang and Yue, Yisong and Chaudhuri, Swarat},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={15726--15737},
+  year={2019}
+}
+
+
+
+@article{chow_safe_2019,
+	title = {Safe {Policy} {Learning} for {Continuous} {Control}},
+	url = {https://openreview.net/forum?id=HkxeThNFPH},
+	abstract = {We study continuous action reinforcement learning problems in which it is crucial that the agent interacts with the environment only through safe policies, i.e.,{\textasciitilde}policies that keep the agent in...},
+	urldate = {2020-04-10},
+	author = {Chow, Yinlam and Nachum, Ofir and Faust, Aleksandra and Duenez-Guzman, Edgar and Ghavamzadeh, Mohammad},
+	month = sep,
+	year = {2019},
+	file = {Full Text PDF:/Users/averma/Zotero/storage/GVPR53XP/Chow et al. - 2019 - Safe Policy Learning for Continuous Control.pdf:application/pdf;Snapshot:/Users/averma/Zotero/storage/HWMJ7FE3/forum.html:text/html}
+}
+
+@article{fulton_safe_nodate,
+	title = {Safe {Reinforcement} {Learning} via {Formal} {Methods}: {Toward} {Safe} {Control} {Through} {Proof} and {Learning}},
+	abstract = {Formal veriﬁcation provides a high degree of conﬁdence in safe system operation, but only if reality matches the veriﬁed model. Although a good model will be accurate most of the time, even the best models are incomplete. This is especially true in Cyber-Physical Systems because high-ﬁdelity physical models of systems are expensive to develop and often intractable to verify. Conversely, reinforcement learning-based controllers are lauded for their ﬂexibility in unmodeled environments, but do not provide guarantees of safe operation.},
+	language = {en},
+	author = {Fulton, Nathan and Platzer, Andre},
+	pages = {8},
+	file = {Fulton and Platzer - Safe Reinforcement Learning via Formal Methods To.pdf:/Users/averma/Zotero/storage/IXBAUB7J/Fulton and Platzer - Safe Reinforcement Learning via Formal Methods To.pdf:application/pdf}
+}
+
+@article{van_wesel_challenges_2017,
+	title = {Challenges in the {Veriﬁcation} of {Reinforcement} {Learning} {Algorithms}},
+	language = {en},
+	author = {van Wesel, Perry},
+	year = {2017},
+	pages = {30},
+	file = {van Wesel - 2017 - Challenges in the Veriﬁcation of Reinforcement Lea.pdf:/Users/averma/Zotero/storage/QSX5VMZ4/van Wesel - 2017 - Challenges in the Veriﬁcation of Reinforcement Lea.pdf:application/pdf}
+}
+
+
+@article{li_temporal_2019,
+	title = {Temporal {Logic} {Guided} {Safe} {Reinforcement} {Learning} {Using} {Control} {Barrier} {Functions}},
+	url = {http://arxiv.org/abs/1903.09885},
+	abstract = {Using reinforcement learning to learn control policies is a challenge when the task is complex with potentially long horizons. Ensuring adequate but safe exploration is also crucial for controlling physical systems. In this paper, we use temporal logic to facilitate speciﬁcation and learning of complex tasks. We combine temporal logic with control Lyapunov functions to improve exploration. We incorporate control barrier functions to safeguard the exploration and deployment process. We develop a ﬂexible and learnable system that allows users to specify task objectives and constraints in different forms and at various levels. The framework is also able to take advantage of known system dynamics and handle unknown environmental dynamics by integrating model-free learning with model-based planning.},
+	language = {en},
+	urldate = {2020-04-10},
+	journal = {arXiv:1903.09885 [cs, stat]},
+	author = {Li, Xiao and Belta, Calin},
+	month = mar,
+	year = {2019},
+	note = {arXiv: 1903.09885},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Li and Belta - 2019 - Temporal Logic Guided Safe Reinforcement Learning .pdf:/Users/averma/Zotero/storage/FCVUGNBJ/Li and Belta - 2019 - Temporal Logic Guided Safe Reinforcement Learning .pdf:application/pdf;Li and Belta - 2019 - Temporal Logic Guided Safe Reinforcement Learning .pdf:/Users/averma/Zotero/storage/HZ8XHY97/Li and Belta - 2019 - Temporal Logic Guided Safe Reinforcement Learning .pdf:application/pdf}
+}
+
+@article{Ray2019,
+    author = {Ray, Alex and Achiam, Joshua and Amodei, Dario},
+    title = {{Benchmarking Safe Exploration in Deep Reinforcement Learning}},
+    year = {2019}
+}
+
+
+@article{ray_benchmarking_nodate,
+	title = {Benchmarking {Safe} {Exploration} in {Deep} {Reinforcement} {Learning}},
+	abstract = {Reinforcement learning (RL) agents need to explore their environments in order to learn optimal policies by trial and error. In many environments, safety is a critical concern and certain errors are unacceptable: for example, robotics systems that interact with humans should never cause injury to the humans while exploring. While it is currently typical to train RL agents mostly or entirely in simulation, where safety concerns are minimal, we anticipate that challenges in simulating the complexities of the real world (such as human-AI interactions) will cause a shift towards training RL agents directly in the real world, where safety concerns are paramount. Consequently we take the position that safe exploration should be viewed as a critical focus area for RL research, and in this work we make three contributions to advance the study of safe exploration. First, building on a wide range of prior work on safe reinforcement learning, we propose to standardize constrained RL as the main formalism for safe exploration. Second, we present the Safety Gym benchmark suite, a new slate of high-dimensional continuous control environments for measuring research progress on constrained RL. Finally, we benchmark several constrained deep RL algorithms on Safety Gym environments to establish baselines that future work can build on.},
+	language = {en},
+	author = {Ray, Alex and Achiam, Joshua and Amodei, Dario},
+	pages = {25},
+	file = {Ray et al. - Benchmarking Safe Exploration in Deep Reinforcemen.pdf:/Users/averma/Zotero/storage/NJ5IC5I4/Ray et al. - Benchmarking Safe Exploration in Deep Reinforcemen.pdf:application/pdf}
+}
+
+@incollection{vojnar_verifiably_2019,
+	address = {Cham},
+	title = {Verifiably {Safe} {Off}-{Model} {Reinforcement} {Learning}},
+	volume = {11427},
+	isbn = {978-3-030-17461-3 978-3-030-17462-0},
+	url = {http://link.springer.com/10.1007/978-3-030-17462-0_28},
+	abstract = {The desire to use reinforcement learning in safety-critical settings has inspired a recent interest in formal methods for learning algorithms. Existing formal methods for learning and optimization primarily consider the problem of constrained learning or constrained optimization. Given a single correct model and associated safety constraint, these approaches guarantee eﬃcient learning while provably avoiding behaviors outside the safety constraint. Acting well given an accurate environmental model is an important pre-requisite for safe learning, but is ultimately insuﬃcient for systems that operate in complex heterogeneous environments. This paper introduces veriﬁcation-preserving model updates, the ﬁrst approach toward obtaining formal safety guarantees for reinforcement learning in settings where multiple possible environmental models must be taken into account. Through a combination of inductive data and deductive proving with design-time model updates and runtime model falsiﬁcation, we provide a ﬁrst approach toward obtaining formal safety proofs for autonomous systems acting in heterogeneous environments.},
+	language = {en},
+	urldate = {2020-04-11},
+	booktitle = {Tools and {Algorithms} for the {Construction} and {Analysis} of {Systems}},
+	publisher = {Springer International Publishing},
+	author = {Fulton, Nathan and Platzer, André},
+	editor = {Vojnar, Tomáš and Zhang, Lijun},
+	year = {2019},
+	doi = {10.1007/978-3-030-17462-0_28},
+	note = {Series Title: Lecture Notes in Computer Science},
+	pages = {413--430},
+	file = {Fulton and Platzer - 2019 - Verifiably Safe Off-Model Reinforcement Learning.pdf:/Users/averma/Zotero/storage/3U684U2W/Fulton and Platzer - 2019 - Verifiably Safe Off-Model Reinforcement Learning.pdf:application/pdf;Fulton and Platzer - 2019 - Verifiably Safe Off-Model Reinforcement Learning.pdf:/Users/averma/Zotero/storage/DZEEGLRK/Fulton and Platzer - 2019 - Verifiably Safe Off-Model Reinforcement Learning.pdf:application/pdf}
+}
+
+@misc{sibai_safe_2019,
+	title = {Safe {Reinforcement} {Learning} for {Control} {Systems}: {A} {Hybrid} {Systems} {Perspective} and {Case} {Study}},
+	shorttitle = {Safe {Reinforcement} {Learning} for {Control} {Systems}},
+	url = {https://www.semanticscholar.org/paper/Safe-Reinforcement-Learning-for-Control-Systems%3A-A-Sibai-Potok/b1c2f6b0b88091f65b8082d1c3273952e1508bef},
+	abstract = {Reinforcement learning (RL) is a general method for learning optimal policies through exploration and experience. Although impressive results have been achieved with RL in recent years, particularly in the domain of video games, RL has been predominantly used in systems with both discrete environments and agents. A key barrier to using RL in safety-criftical cyber-physical system applications is the difficulty of ensuring their safety while enabling learning. This paper presents a framework called FoRShield for learning safe policies for control systems with nonlinear continuous dynamics. A generic hybrid systems model of a control system using online RL is developed. This model is then used to formalize the notion of a shield that can filter unsafe action choices and provide feedback to the learning system. A concrete approach for computing the shield is presented using existing hybrid reachability analysis tools. Finally, to illustrate the feasibility of the approach, a substantial case study is presented involving a quadcopter that uses RL to plan for a dynamic fire-fighting task. The implementation of the approach shows that interesting fire-fighting strategies can be safely learned for discrete environment with 232 states and a 9-dimensional plant model using a standard laptop computer. 1},
+	language = {en},
+	urldate = {2020-04-11},
+	author = {Sibai, Hussein and Potok, Matthew and Mitra, Sayan},
+	year = {2019},
+	note = {Library Catalog: www.semanticscholar.org},
+	file = {Snapshot:/Users/averma/Zotero/storage/B8LA3G5P/b1c2f6b0b88091f65b8082d1c3273952e1508bef.html:text/html;Snapshot:/Users/averma/Zotero/storage/HDFBK73I/b1c2f6b0b88091f65b8082d1c3273952e1508bef.html:text/html;Snapshot:/Users/averma/Zotero/storage/BNWS493H/b1c2f6b0b88091f65b8082d1c3273952e1508bef.html:text/html}
+}
+
+@article{garcia_safe_2012,
+	title = {Safe {Exploration} of {State} and {Action} {Spaces} in {Reinforcement} {Learning}},
+	url = {https://arxiv.org/abs/1402.0560v1},
+	doi = {10.1613/jair.3761},
+	abstract = {In this paper, we consider the important problem of safe exploration in
+	reinforcement learning. While reinforcement learning is well-suited to domains
+	with complex transition dynamics and high-dimensional state-action spaces, an
+	additional challenge is posed by the need for safe and efficient exploration.
+	Traditional exploration techniques are not particularly useful for solving
+	dangerous tasks, where the trial and error process may lead to the selection of
+	actions whose execution in some states may result in damage to the learning
+	system (or any other system). Consequently, when an agent begins an interaction
+	with a dangerous and high-dimensional state-action space, an important question
+	arises; namely, that of how to avoid (or at least minimize) damage caused by
+	the exploration of the state-action space. We introduce the PI-SRL algorithm
+	which safely improves suboptimal albeit robust behaviors for continuous state
+	and action control tasks and which efficiently learns from the experience
+	gained from the environment. We evaluate the proposed method in four complex
+	tasks: automatic car parking, pole-balancing, helicopter hovering, and business
+	management.},
+	language = {en},
+	urldate = {2020-04-23},
+	journal = {Journal Of Artificial Intelligence Research},
+	author = {Garcia, Javier and Fernandez, Fernando},
+	year = {2012},
+	file = {Full Text PDF:/Users/averma/Zotero/storage/WVGSFVMC/Garcia and Fernandez - 2012 - Safe Exploration of State and Action Spaces in Rei.pdf:application/pdf;Snapshot:/Users/averma/Zotero/storage/YZ3C8KX2/1402.html:text/html}
+}
+
+@article{dalal_safe_2018,
+	title = {Safe {Exploration} in {Continuous} {Action} {Spaces}},
+	url = {https://arxiv.org/abs/1801.08757v1},
+	abstract = {We address the problem of deploying a reinforcement learning (RL) agent on a
+	physical system such as a datacenter cooling unit or robot, where critical
+	constraints must never be violated. We show how to exploit the typically smooth
+	dynamics of these systems and enable RL algorithms to never violate constraints
+	during learning. Our technique is to directly add to the policy a safety layer
+	that analytically solves an action correction formulation per each state. The
+	novelty of obtaining an elegant closed-form solution is attained due to a
+	linearized model, learned on past trajectories consisting of arbitrary actions.
+	This is to mimic the real-world circumstances where data logs were generated
+	with a behavior policy that is implausible to describe mathematically; such
+	cases render the known safety-aware off-policy methods inapplicable. We
+	demonstrate the efficacy of our approach on new representative physics-based
+	environments, and prevail where reward shaping fails by maintaining zero
+	constraint violations.},
+	language = {en},
+	urldate = {2020-04-23},
+	author = {Dalal, Gal and Dvijotham, Krishnamurthy and Vecerik, Matej and Hester, Todd and Paduraru, Cosmin and Tassa, Yuval},
+	month = jan,
+	year = {2018},
+	file = {Full Text PDF:/Users/averma/Zotero/storage/NSFLZ5J7/Dalal et al. - 2018 - Safe Exploration in Continuous Action Spaces.pdf:application/pdf;Snapshot:/Users/averma/Zotero/storage/VW6ZTLZR/1801.html:text/html}
+}
+
+@article{garcia_comprehensive_nodate,
+	title = {A {Comprehensive} {Survey} on {Safe} {Reinforcement} {Learning}},
+	abstract = {Safe Reinforcement Learning can be deﬁned as the process of learning policies that maximize the expectation of the return in problems in which it is important to ensure reasonable system performance and/or respect safety constraints during the learning and/or deployment processes. We categorize and analyze two approaches of Safe Reinforcement Learning. The ﬁrst is based on the modiﬁcation of the optimality criterion, the classic discounted ﬁnite/inﬁnite horizon, with a safety factor. The second is based on the modiﬁcation of the exploration process through the incorporation of external knowledge or the guidance of a risk metric. We use the proposed classiﬁcation to survey the existing literature, as well as suggesting future directions for Safe Reinforcement Learning.},
+	language = {en},
+	author = {Garcıa, Javier and Fernandez, Fernando},
+	pages = {44},
+	file = {Garcıa and Fernandez - A Comprehensive Survey on Safe Reinforcement Learn.pdf:/Users/averma/Zotero/storage/F7JGIVC8/Garcıa and Fernandez - A Comprehensive Survey on Safe Reinforcement Learn.pdf:application/pdf}
+}
+
+@article{lin__nodate,
+	title = {A : {Abstraction} {Refinement}-{Guided} {Training} for {Provably} {Correct} {Neural} {Networks}},
+	volume = {1},
+	language = {en},
+	author = {Lin, Xuankang and Zhu, He and Samanta, Roopsha and Jagannathan, Suresh},
+	pages = {29},
+	file = {Lin et al. - A  Abstraction Refinement-Guided Training for Pro.pdf:/Users/averma/Zotero/storage/JLUA9GCW/Lin et al. - A  Abstraction Refinement-Guided Training for Pro.pdf:application/pdf;Lin et al. - A  Abstraction Refinement-Guided Training for Pro.pdf:/Users/averma/Zotero/storage/UIVQWR5T/Lin et al. - A  Abstraction Refinement-Guided Training for Pro.pdf:application/pdf}
+}
+
+@article{ruderman_uncovering_2018,
+	title = {Uncovering {Surprising} {Behaviors} in {Reinforcement} {Learning} via {Worst}-case {Analysis}},
+	url = {https://openreview.net/forum?id=SkgZNnR5tX},
+	abstract = {Reinforcement learning agents are typically trained and evaluated according to their performance averaged over some distribution of environment settings. But does the distribution over environment...},
+	urldate = {2020-05-15},
+	author = {Ruderman, Avraham and Everett, Richard and Sikder, Bristy and Soyer, Hubert and Uesato, Jonathan and Kumar, Ananya and Beattie, Charlie and Kohli, Pushmeet},
+	month = sep,
+	year = {2018},
+	file = {Full Text PDF:/Users/averma/Zotero/storage/UF6Z69GB/Ruderman et al. - 2018 - Uncovering Surprising Behaviors in Reinforcement L.pdf:application/pdf;Snapshot:/Users/averma/Zotero/storage/ZCZ2SAQQ/forum.html:text/html;Full Text PDF:/Users/averma/Zotero/storage/RERFNHJW/Ruderman et al. - 2018 - Uncovering Surprising Behaviors in Reinforcement L.pdf:application/pdf;Snapshot:/Users/averma/Zotero/storage/TSAS4BGC/forum.html:text/html}
+}
+
+@article{lin_art_2019,
+	title = {{ART}: {Abstraction} {Refinement}-{Guided} {Training} for {Provably} {Correct} {Neural} {Networks}},
+	shorttitle = {{ART}},
+	url = {http://arxiv.org/abs/1907.10662},
+	abstract = {Artificial neural networks (ANNs) have demonstrated remarkable utility in a variety of challenging machine learning applications. However, their complex architecture makes asserting any formal guarantees about their behavior difficult. Existing approaches to this problem typically consider verification as a post facto white-box process, one that reasons about the safety of an existing network through exploration of its internal structure, rather than via a methodology that ensures the network is correct-by-construction. In this paper, we present a novel learning framework that takes an important first step towards realizing such a methodology. Our technique enables the construction of provably correct networks with respect to a broad class of safety properties, a capability that goes well-beyond existing approaches. Overcoming the challenge of general safety property enforcement within the network training process in a supervised learning pipeline, however, requires a fundamental shift in how we architect and build ANNs. Our key insight is that we can integrate an optimization-based abstraction refinement loop into the learning process that iteratively splits the input space from which training data is drawn, based on the efficacy with which such a partition enables safety verification. To do so, our approach enables training to take place over an abstraction of a concrete network that operates over dynamically constructed partitions of the input space. We provide theoretical results that show that classical gradient descent methods used to optimize these networks can be seamlessly adopted to this framework to ensure soundness of our approach. Moreover, we empirically demonstrate that realizing soundness does not come at the price of accuracy, giving us a meaningful pathway for building both precise and correct networks.},
+	urldate = {2020-05-18},
+	journal = {arXiv:1907.10662 [cs, stat]},
+	author = {Lin, Xuankang and Zhu, He and Samanta, Roopsha and Jagannathan, Suresh},
+	month = jul,
+	year = {2019},
+	note = {arXiv: 1907.10662},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Programming Languages, Computer Science - Symbolic Computation},
+	file = {arXiv Fulltext PDF:/Users/averma/Zotero/storage/UMNJXMBR/Lin et al. - 2019 - ART Abstraction Refinement-Guided Training for Pr.pdf:application/pdf;arXiv.org Snapshot:/Users/averma/Zotero/storage/8S4WNAK5/1907.html:text/html}
+}
+
+@article{sun_formal_2018,
+	title = {Formal {Verification} of {Neural} {Network} {Controlled} {Autonomous} {Systems}},
+	url = {http://arxiv.org/abs/1810.13072},
+	abstract = {In this paper, we consider the problem of formally verifying the safety of an autonomous robot equipped with a Neural Network (NN) controller that processes LiDAR images to produce control actions. Given a workspace that is characterized by a set of polytopic obstacles, our objective is to compute the set of safe initial conditions such that a robot trajectory starting from these initial conditions is guaranteed to avoid the obstacles. Our approach is to construct a finite state abstraction of the system and use standard reachability analysis over the finite state abstraction to compute the set of the safe initial states. The first technical problem in computing the finite state abstraction is to mathematically model the imaging function that maps the robot position to the LiDAR image. To that end, we introduce the notion of imaging-adapted sets as partitions of the workspace in which the imaging function is guaranteed to be affine. We develop a polynomial-time algorithm to partition the workspace into imaging-adapted sets along with computing the corresponding affine imaging functions. Given this workspace partitioning, a discrete-time linear dynamics of the robot, and a pre-trained NN controller with Rectified Linear Unit (ReLU) nonlinearity, the second technical challenge is to analyze the behavior of the neural network. To that end, we utilize a Satisfiability Modulo Convex (SMC) encoding to enumerate all the possible segments of different ReLUs. SMC solvers then use a Boolean satisfiability solver and a convex programming solver and decompose the problem into smaller subproblems. To accelerate this process, we develop a pre-processing algorithm that could rapidly prune the space feasible ReLU segments. Finally, we demonstrate the efficiency of the proposed algorithms using numerical simulations with increasing complexity of the neural network controller.},
+	urldate = {2020-05-20},
+	journal = {arXiv:1810.13072 [cs]},
+	author = {Sun, Xiaowu and Khedr, Haitham and Shoukry, Yasser},
+	month = oct,
+	year = {2018},
+	note = {arXiv: 1810.13072},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Robotics, Electrical Engineering and Systems Science - Systems and Control},
+	file = {arXiv Fulltext PDF:/Users/averma/Zotero/storage/R6SATKLT/Sun et al. - 2018 - Formal Verification of Neural Network Controlled A.pdf:application/pdf;arXiv.org Snapshot:/Users/averma/Zotero/storage/SZATJQCS/1810.html:text/html}
+}
+
+@article{ivanov_verisig_2018,
+	title = {Verisig: verifying safety properties of hybrid systems with neural network controllers},
+	shorttitle = {Verisig},
+	url = {http://arxiv.org/abs/1811.01828},
+	abstract = {This paper presents Verisig, a hybrid system approach to verifying safety properties of closed-loop systems using neural networks as controllers. Although techniques exist for verifying input/output properties of the neural network itself, these methods cannot be used to verify properties of the closed-loop system (since they work with piecewise-linear constraints that do not capture non-linear plant dynamics). To overcome this challenge, we focus on sigmoid-based networks and exploit the fact that the sigmoid is the solution to a quadratic differential equation, which allows us to transform the neural network into an equivalent hybrid system. By composing the network's hybrid system with the plant's, we transform the problem into a hybrid system verification problem which can be solved using state-of-the-art reachability tools. We show that reachability is decidable for networks with one hidden layer and decidable for general networks if Schanuel's conjecture is true. We evaluate the applicability and scalability of Verisig in two case studies, one from reinforcement learning and one in which the neural network is used to approximate a model predictive controller.},
+	urldate = {2020-05-20},
+	journal = {arXiv:1811.01828 [cs]},
+	author = {Ivanov, Radoslav and Weimer, James and Alur, Rajeev and Pappas, George J. and Lee, Insup},
+	month = nov,
+	year = {2018},
+	note = {arXiv: 1811.01828},
+	keywords = {Electrical Engineering and Systems Science - Systems and Control},
+	file = {arXiv Fulltext PDF:/Users/averma/Zotero/storage/5VVICLEY/Ivanov et al. - 2018 - Verisig verifying safety properties of hybrid sys.pdf:application/pdf;arXiv.org Snapshot:/Users/averma/Zotero/storage/AKJDVBZN/1811.html:text/html}
+}
+
+
+
+@inproceedings{Altman1999ConstrainedMD,
+	title={Constrained Markov Decision Processes},
+	author={Eitan Altman},
+	year={1999}
+}
+
+@inproceedings{ivanov2019verisig,
+  title={Verisig: verifying safety properties of hybrid systems with neural network controllers},
+  author={Ivanov, Radoslav and Weimer, James and Alur, Rajeev and Pappas, George J and Lee, Insup},
+  booktitle={Proceedings of the 22nd ACM International Conference on Hybrid Systems: Computation and Control},
+  pages={169--178},
+  year={2019}
+}
+
+@inproceedings{sun2019formal,
+  title={Formal verification of neural network controlled autonomous systems},
+  author={Sun, Xiaowu and Khedr, Haitham and Shoukry, Yasser},
+  booktitle={Proceedings of the 22nd ACM International Conference on Hybrid Systems: Computation and Control},
+  pages={147--156},
+  year={2019}
+}
+
+@ARTICLE{Friedman91multivariateadaptive,
+    author = {Jerome H. Friedman},
+    title = {Multivariate adaptive regression splines},
+    journal = {Ann. Statist},
+    year = {1991}
+}
+
+
+
+
+@inproceedings{cpo_main,
+  author    = {Joshua Achiam and
+               David Held and
+               Aviv Tamar and
+               Pieter Abbeel},
+  editor    = {Doina Precup and
+               Yee Whye Teh},
+  title     = {Constrained Policy Optimization},
+  booktitle = {Proceedings of the 34th International Conference on Machine Learning,
+               {ICML} 2017, Sydney, NSW, Australia, 6-11 August 2017},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {70},
+  pages     = {22--31},
+  publisher = {{PMLR}},
+  year      = {2017},
+  url       = {http://proceedings.mlr.press/v70/achiam17a.html},
+  timestamp = {Wed, 29 May 2019 08:41:45 +0200},
+  biburl    = {https://dblp.org/rec/conf/icml/AchiamHTA17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{PerkinsB02,
+  author    = {Theodore J. Perkins and
+               Andrew G. Barto},
+  title     = {Lyapunov Design for Safe Reinforcement Learning},
+  journal   = {J. Mach. Learn. Res.},
+  volume    = {3},
+  pages     = {803--832},
+  year      = {2002},
+  url       = {http://jmlr.org/papers/v3/perkins02a.html},
+  timestamp = {Wed, 10 Jul 2019 15:27:56 +0200},
+  biburl    = {https://dblp.org/rec/journals/jmlr/PerkinsB02.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{ChowNDG18,
+  author    = {Yinlam Chow and
+               Ofir Nachum and
+               Edgar A. Du{\'{e}}{\~{n}}ez{-}Guzm{\'{a}}n and
+               Mohammad Ghavamzadeh},
+  title     = {A Lyapunov-based Approach to Safe Reinforcement Learning},
+  booktitle = {Advances in Neural Information Processing Systems 31: Annual Conference
+               on Neural Information Processing Systems 2018, NeurIPS 2018, 3-8 December
+               2018, Montr{\'{e}}al, Canada},
+  pages     = {8103--8112},
+  url       = {http://papers.nips.cc/paper/8032-a-lyapunov-based-approach-to-safe-reinforcement-learning},
+  timestamp = {Fri, 06 Mar 2020 17:00:31 +0100},
+  biburl    = {https://dblp.org/rec/conf/nips/ChowNDG18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{AkametaluKFZGT14,
+  author    = {Anayo K. Akametalu and
+               Shahab Kaynama and
+               Jaime F. Fisac and
+               Melanie Nicole Zeilinger and
+               Jeremy H. Gillula and
+               Claire J. Tomlin},
+  title     = {Reachability-based safe learning with Gaussian processes},
+  booktitle = {53rd {IEEE} Conference on Decision and Control, {CDC} 2014, Los Angeles,
+               CA, USA, December 15-17, 2014},
+  pages     = {1424--1431},
+  year      = {2014},
+  url       = {https://doi.org/10.1109/CDC.2014.7039601},
+  doi       = {10.1109/CDC.2014.7039601},
+  timestamp = {Wed, 16 Oct 2019 14:14:56 +0200},
+  biburl    = {https://dblp.org/rec/conf/cdc/AkametaluKFZGT14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{GillulaT12,
+  author    = {Jeremy H. Gillula and
+               Claire J. Tomlin},
+  title     = {Guaranteed Safe Online Learning via Reachability: tracking a ground
+               target using a quadrotor},
+  booktitle = {{IEEE} International Conference on Robotics and Automation, {ICRA}
+               2012, 14-18 May, 2012, St. Paul, Minnesota, {USA}},
+  pages     = {2723--2730},
+  year      = {2012},
+  url       = {https://doi.org/10.1109/ICRA.2012.6225136},
+  doi       = {10.1109/ICRA.2012.6225136},
+  timestamp = {Wed, 16 Oct 2019 14:14:51 +0200},
+  biburl    = {https://dblp.org/rec/conf/icra/GillulaT12.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{AlshiekhBEKNT18,
+  author    = {Mohammed Alshiekh and
+               Roderick Bloem and
+               R{\"{u}}diger Ehlers and
+               Bettina K{\"{o}}nighofer and
+               Scott Niekum and
+               Ufuk Topcu},
+  editor    = {Sheila A. McIlraith and
+               Kilian Q. Weinberger},
+  title     = {Safe Reinforcement Learning via Shielding},
+  booktitle = {Proceedings of the Thirty-Second {AAAI} Conference on Artificial Intelligence,
+               (AAAI-18), the 30th innovative Applications of Artificial Intelligence
+               (IAAI-18), and the 8th {AAAI} Symposium on Educational Advances in
+               Artificial Intelligence (EAAI-18), New Orleans, Louisiana, USA, February
+               2-7, 2018},
+  pages     = {2669--2678},
+  publisher = {{AAAI} Press},
+  year      = {2018},
+  url       = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17211},
+  timestamp = {Tue, 23 Oct 2018 06:42:15 +0200},
+  biburl    = {https://dblp.org/rec/conf/aaai/AlshiekhBEKNT18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{MirmanGV18,
+  author    = {Matthew Mirman and
+               Timon Gehr and
+               Martin T. Vechev},
+  title     = {Differentiable Abstract Interpretation for Provably Robust Neural
+               Networks},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning,
+               {ICML} 2018, Stockholmsm{\"{a}}ssan, Stockholm, Sweden, July
+               10-15, 2018},
+  pages     = {3575--3583},
+  year      = {2018},
+  crossref  = {DBLP:conf/icml/2018},
+  url       = {http://proceedings.mlr.press/v80/mirman18b.html},
+  timestamp = {Wed, 03 Apr 2019 18:17:30 +0200},
+  biburl    = {https://dblp.org/rec/conf/icml/MirmanGV18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@inproceedings{MoldovanA12,
+  author    = {Teodor Mihai Moldovan and
+               Pieter Abbeel},
+  title     = {Safe Exploration in Markov Decision Processes},
+  booktitle = {Proceedings of the 29th International Conference on Machine Learning,
+               {ICML} 2012, Edinburgh, Scotland, UK, June 26 - July 1, 2012},
+  year      = {2012},
+  crossref  = {DBLP:conf/icml/2012},
+  url       = {http://icml.cc/2012/papers/838.pdf},
+  timestamp = {Wed, 03 Apr 2019 17:43:36 +0200},
+  biburl    = {https://dblp.org/rec/conf/icml/MoldovanA12.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@proceedings{DBLP:conf/icml/2012,
+  title     = {Proceedings of the 29th International Conference on Machine Learning,
+               {ICML} 2012, Edinburgh, Scotland, UK, June 26 - July 1, 2012},
+  publisher = {icml.cc / Omnipress},
+  year      = {2012},
+  timestamp = {Wed, 29 Mar 2017 16:45:25 +0200},
+  biburl    = {https://dblp.org/rec/conf/icml/2012.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@inproceedings{le2019batch,
+  title={Batch Policy Learning under Constraints},
+  author={Le, Hoang M and Voloshin, Cameron and Yue, Yisong},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year={2019}
+}
+
+@inproceedings{simile,
+  title={Smooth Imitation Learning for Online Sequence Prediction},
+  author={Hoang M. Le and Andrew Kang and Yisong Yue and Peter Carr},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year={2016}
+}
+
+@inproceedings{jiang2016doubly,
+  title={Doubly robust off-policy value evaluation for reinforcement learning},
+  author={Jiang, Nan and Li, Lihong},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year={2016}
+}
+
+@article{dalal2018safe,
+  title={Safe exploration in continuous action spaces},
+  author={Dalal, Gal and Dvijotham, Krishnamurthy and Vecerik, Matej and Hester, Todd and Paduraru, Cosmin and Tassa, Yuval},
+  journal={arXiv preprint arXiv:1801.08757},
+  year={2018}
+}
+
+@article{ang2005pid,
+  title={PID control system analysis, design, and technology},
+  author={Ang, Kiam Heong and Chong, Gregory and Li, Yun},
+  journal={IEEE transactions on control systems technology},
+  volume={13},
+  number={4},
+  pages={559--576},
+  year={2005},
+  publisher={IEEE}
+}
+
+@inproceedings{moldovan2012safe,
+  title={Safe exploration in Markov decision processes},
+  author={Moldovan, Teodor Mihai and Abbeel, Pieter},
+  booktitle = {International Conference on Machine Learing (ICML)},
+  year={2012}
+}
+
+@article{bellman1956bang,
+  title={On the ``bang-bang'' control problem},
+  author={Bellman, Richard and Glicksberg, Irving and Gross, Oliver},
+  journal={Quarterly of Applied Mathematics},
+  volume={14},
+  number={1},
+  pages={11--18},
+  year={1956}
+}
+
+@inproceedings{berkenkamp2017safe,
+  title={Safe model-based reinforcement learning with stability guarantees},
+  author={Berkenkamp, Felix and Turchetta, Matteo and Schoellig, Angela and Krause, Andreas},
+  booktitle={Advances in neural information processing systems},
+  pages={908--918},
+  year={2017}
+}
+
+@inproceedings{munos2016safe,
+  title={Safe and efficient off-policy reinforcement learning},
+  author={Munos, R{\'e}mi and Stepleton, Tom and Harutyunyan, Anna and Bellemare, Marc},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={1054--1062},
+  year={2016}
+}
+
+@inproceedings{deepcoder,
+  author    = {Matej Balog and
+               Alexander L. Gaunt and
+               Marc Brockschmidt and
+               Sebastian Nowozin and
+               Daniel Tarlow},
+  title     = {DeepCoder: Learning to Write Programs},
+  booktitle = {5th International Conference on Learning Representations, {ICLR} 2017,
+               Toulon, France, April 24-26, 2017, Conference Track Proceedings},
+  year      = {2017}
+}
+
+@inproceedings{wachi2018safe,
+  title={Safe exploration and optimization of constrained mdps using gaussian processes},
+  author={Wachi, Akifumi and Sui, Yanan and Yue, Yisong and Ono, Masahiro},
+  booktitle={Thirty-Second AAAI Conference on Artificial Intelligence},
+  year={2018}
+}
+
+@inproceedings{turchetta2016safe,
+  title={Safe exploration in finite markov decision processes with gaussian processes},
+  author={Turchetta, Matteo and Berkenkamp, Felix and Krause, Andreas},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={4312--4320},
+  year={2016}
+}
+
+@inproceedings{alshiekh2018safe,
+  title={Safe reinforcement learning via shielding},
+  author={Alshiekh, Mohammed and Bloem, Roderick and Ehlers, R{\"u}diger and K{\"o}nighofer, Bettina and Niekum, Scott and Topcu, Ufuk},
+  booktitle={Thirty-Second AAAI Conference on Artificial Intelligence},
+  year={2018}
+}
+
+@inproceedings{bastani2018verifiable,
+  title={Verifiable reinforcement learning via policy extraction},
+  author={Bastani, Osbert and Pu, Yewen and Solar-Lezama, Armando},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={2494--2504},
+  year={2018}
+}
+
+@article{cobbe2018quantifying,
+  title={Quantifying generalization in reinforcement learning},
+  author={Cobbe, Karl and Klimov, Oleg and Hesse, Chris and Kim, Taehoon and Schulman, John},
+  journal={arXiv preprint arXiv:1812.02341},
+  year={2018}
+}
+
+@article{schulman2017proximal,
+  title={Proximal policy optimization algorithms},
+  author={Schulman, John and Wolski, Filip and Dhariwal, Prafulla and Radford, Alec and Klimov, Oleg},
+  journal={arXiv preprint arXiv:1707.06347},
+  year={2017}
+}
+
+@inproceedings{schulman2015trust,
+  title={Trust region policy optimization},
+  author={Schulman, John and Levine, Sergey and Abbeel, Pieter and Jordan, Michael and Moritz, Philipp},
+  booktitle={International Conference on Machine Learning},
+  pages={1889--1897},
+  year={2015}
+}
+
+@inproceedings{henderson2018deep,
+  title={Deep reinforcement learning that matters},
+  author={Henderson, Peter and Islam, Riashat and Bachman, Philip and Pineau, Joelle and Precup, Doina and Meger, David},
+  booktitle={Thirty-Second AAAI Conference on Artificial Intelligence},
+  year={2018}
+}
+
+@inproceedings{sun2018dual,
+  title={Dual policy iteration},
+  author={Sun, Wen and Gordon, Geoffrey J and Boots, Byron and Bagnell, J},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={7059--7069},
+  year={2018}
+}
+
+
+@inproceedings{duan2016benchmarking,
+  title={Benchmarking deep reinforcement learning for continuous control},
+  author={Duan, Yan and Chen, Xi and Houthooft, Rein and Schulman, John and Abbeel, Pieter},
+  booktitle={International Conference on Machine Learning},
+  pages={1329--1338},
+  year={2016}
+}
+
+@inproceedings{corerl,
+  title={Control regularization for reduced variance reinforcement learning},
+  author={Cheng, Richard and Verma, Abhinav and Orosz, Gabor and Chaudhuri, Swarat and Yue, Yisong and Burdick, Joel},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2019}
+}
+
+@inproceedings{chang2015learning,
+  title={Learning to search better than your teacher},
+  author={Chang, Kai-Wei and Krishnamurthy, Akshay and Agarwal, Alekh and Daum{\'e} III, Hal and Langford, John},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2015},
+}
+
+@inproceedings{cheng2019fast,
+  title={Fast Policy Learning through Imitation and Reinforcement},
+  author={Cheng, Ching-An and Yan, Xinyan and Wagener, Nolan and Boots, Byron},
+  booktitle={Uncertainty in artificial intelligence},
+  year={2019}
+}
+
+@inproceedings{katz2017reluplex,
+  title={Reluplex: An efficient SMT solver for verifying deep neural networks},
+  author={Katz, Guy and Barrett, Clark and Dill, David L and Julian, Kyle and Kochenderfer, Mykel J},
+  booktitle={International Conference on Computer Aided Verification},
+  year={2017},
+}
+
+@article{cadar2013symbolic,
+  title={Symbolic execution for software testing: three decades later.},
+  author={Cadar, Cristian and Sen, Koushik},
+  journal={Commun. ACM},
+  volume={56},
+  number={2},
+  pages={82--90},
+  year={2013}
+}
+
+
+@article{king1976symbolic,
+  title={Symbolic execution and program testing},
+  author={King, James C},
+  journal={Communications of the ACM},
+  volume={19},
+  number={7},
+  pages={385--394},
+  year={1976},
+  publisher={ACM}
+}
+
+@article{garcia2015comprehensive,
+  title={A comprehensive survey on safe reinforcement learning},
+  author={Garc{\i}a, Javier and Fern{\'a}ndez, Fernando},
+  journal={Journal of Machine Learning Research},
+  volume={16},
+  number={1},
+  pages={1437--1480},
+  year={2015}
+}
+
+@article{kurakin2016adversarial,
+title	= {Adversarial examples in the physical world},
+author	= {Alexey Kurakin and Ian Goodfellow and Samy Bengio},
+year	= {2017},
+URL	= {https://arxiv.org/abs/1607.02533},
+journal	= {ICLR Workshop}
+}
+
+@inproceedings{le2018hierarchical,
+  title={Hierarchical Imitation and Reinforcement Learning},
+  author={Le, Hoang and Jiang, Nan and Agarwal, Alekh and Dudik, Miroslav and Yue, Yisong and Daum{\'e}, Hal},
+  booktitle={International Conference on Machine Learning},
+  pages={2923--2932},
+  year={2018}
+}
+
+@inproceedings{li2018policy,
+  title={A policy search method for temporal logic specified reinforcement learning tasks},
+  author={Li, Xiao and Ma, Yao and Belta, Calin},
+  booktitle={2018 Annual American Control Conference (ACC)},
+  pages={240--245},
+  year={2018},
+  organization={IEEE}
+}
+
+@article{ross2014reinforcement,
+  title={Reinforcement and imitation learning via interactive no-regret learning},
+  author={Ross, Stephane and Bagnell, J Andrew},
+  journal={arXiv preprint arXiv:1406.5979},
+  year={2014}
+}
+
+
+
+inproceedings{jha2010oracle,
+  title={Oracle-guided component-based program synthesis},
+  author={Jha, Susmit and Gulwani, Sumit and Seshia, Sanjit A and Tiwari, Ashish},
+  booktitle={Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering-Volume 1},
+  pages={215--224},
+  year={2010},
+  organization={ACM}
+}
+
+@inproceedings{sun2017deeply,
+  title={Deeply aggrevated: Differentiable imitation learning for sequential prediction},
+  author={Sun, Wen and Venkatraman, Arun and Gordon, Geoffrey J and Boots, Byron and Bagnell, J Andrew},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2017},
+}
+
+@book{sutton2018reinforcement,
+  title={Reinforcement learning: An introduction},
+  author={Sutton, Richard S and Barto, Andrew G},
+  year={2018},
+  publisher={MIT press}
+}
+
+@inproceedings{cheng2019predictor,
+  title={Predictor-Corrector Policy Optimization},
+  author={Cheng, Ching-An and Yan, Xinyan and Ratliff, Nathan and Boots, Byron},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year={2019}
+}
+
+@inproceedings{sun2018truncated,
+  title={Truncated horizon policy search: Combining reinforcement learning \& imitation learning},
+  author={Sun, Wen and Bagnell, J Andrew and Boots, Byron},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year={2018}
+}
+
+
+@inproceedings{cheng2019accelerating,
+  title={Accelerating imitation learning with predictive models},
+  author={Cheng, Ching-An and Yan, Xinyan and Theodorou, Evangelos and Boots, Byron},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year={2019}
+}
+
+@article{price2003accelerating,
+  title={Accelerating reinforcement learning through implicit imitation},
+  author={Price, Bob and Boutilier, Craig},
+  journal={Journal of Artificial Intelligence Research},
+  volume={19},
+  pages={569--629},
+  year={2003}
+}
+
+@article{perkins2002lyapunov,
+  title={Lyapunov design for safe reinforcement learning},
+  author={Perkins, Theodore J and Barto, Andrew G},
+  journal={Journal of Machine Learning Research},
+  volume={3},
+  number={Dec},
+  pages={803--832},
+  year={2002}
+}
+
+@inproceedings{sutton2000policy,
+  title={Policy gradient methods for reinforcement learning with function approximation},
+  author={Sutton, Richard S and McAllester, David A and Singh, Satinder P and Mansour, Yishay},
+  booktitle={Advances in neural information processing systems},
+  pages={1057--1063},
+  year={2000}
+}
+
+@inproceedings{szegedy2013intriguing,
+title	= {Intriguing properties of neural networks},
+author	= {Christian Szegedy and Wojciech Zaremba and Ilya Sutskever and Joan Bruna and Dumitru Erhan and Ian Goodfellow and Rob Fergus},
+year	= {2014},
+URL	= {http://arxiv.org/abs/1312.6199},
+booktitle	= {International Conference on Learning Representations}
+}
+
+@inproceedings{whiteson2011protecting,
+  title={Protecting against evaluation overfitting in empirical reinforcement learning},
+  author={Whiteson, Shimon and Tanner, Brian and Taylor, Matthew E and Stone, Peter},
+  booktitle={2011 IEEE Symposium on Adaptive Dynamic Programming and Reinforcement Learning (ADPRL)},
+  pages={120--127},
+  year={2011},
+  organization={IEEE}
+}
+
+@inproceedings{montgomery2016guided,
+  title={Guided policy search via approximate mirror descent},
+  author={Montgomery, William H and Levine, Sergey},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={4008--4016},
+  year={2016}
+}
+
+@inproceedings{konda2000actor,
+  title={Actor-critic algorithms},
+  author={Konda, Vijay R and Tsitsiklis, John N},
+  booktitle={Advances in neural information processing systems},
+  pages={1008--1014},
+  year={2000}
+}
+
+@article{aastrom1984automatic,
+  title={Automatic tuning of simple regulators with specifications on phase and amplitude margins},
+  author={{\AA}str{\"o}m, Karl Johan and H{\"a}gglund, Tore},
+  journal={Automatica},
+  volume={20},
+  number={5},
+  pages={645--651},
+  year={1984},
+  publisher={Elsevier}
+}
+
+@inproceedings{achiam2017constrained,
+  title={Constrained policy optimization},
+  author={Achiam, Joshua and Held, David and Tamar, Aviv and Abbeel, Pieter},
+  booktitle={Proceedings of the 34th International Conference on Machine Learning-Volume 70},
+  pages={22--31},
+  year={2017},
+  organization={JMLR. org}
+}
+
+@book{boyd2004convex,
+  title={Convex optimization},
+  author={Boyd, Stephen and Vandenberghe, Lieven},
+  year={2004},
+  publisher={Cambridge university press}
+}
+
+@inproceedings{srebro2011universality,
+  title={On the universality of online mirror descent},
+  author={Srebro, Nati and Sridharan, Karthik and Tewari, Ambuj},
+  booktitle={Advances in neural information processing systems},
+  pages={2645--2653},
+  year={2011}
+}
+
+@article{zhang2018study,
+  title={A study on overfitting in deep reinforcement learning},
+  author={Zhang, Chiyuan and Vinyals, Oriol and Munos, Remi and Bengio, Samy},
+  journal={arXiv preprint arXiv:1804.06893},
+  year={2018}
+}
+
+@inproceedings{zhu2019an,
+  title={An Inductive Synthesis Framework for Verifiable Reinforcement Learning},
+  author={Zhu, He and Xiong, Zikang and Magill, Stephen and Jagannathan, Suresh},
+  booktitle={ACM Conference on Programming Language Design and
+Implementation (SIGPLAN)},
+  year={2019},
+}
+
+@inproceedings{ross2011reduction,
+  title={A reduction of imitation learning and structured prediction to no-regret online learning},
+  author={Ross, St{\'e}phane and Gordon, Geoffrey and Bagnell, Drew},
+  booktitle={Proceedings of the fourteenth international conference on artificial intelligence and statistics},
+  pages={627--635},
+  year={2011}
+}
+
+@book{bauschke2011convex,
+  title={Convex analysis and monotone operator theory in Hilbert spaces},
+  author={Bauschke, Heinz H and Combettes, Patrick L and others},
+  volume={408},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{nemirovski2009robust,
+  title={Robust stochastic approximation approach to stochastic programming},
+  author={Nemirovski, Arkadi and Juditsky, Anatoli and Lan, Guanghui and Shapiro, Alexander},
+  journal={SIAM Journal on optimization},
+  volume={19},
+  number={4},
+  pages={1574--1609},
+  year={2009},
+  publisher={SIAM}
+}
+
+@article{nemirovsky1983problem,
+  title={Problem complexity and method efficiency in optimization.},
+  author={Nemirovsky, Arkadii Semenovich and Yudin, David Borisovich},
+  year={1983}
+}
+
+@article{beck2003mirror,
+  title={Mirror descent and nonlinear projected subgradient methods for convex optimization},
+  author={Beck, Amir and Teboulle, Marc},
+  journal={Operations Research Letters},
+  volume={31},
+  number={3},
+  pages={167--175},
+  year={2003},
+  publisher={Elsevier}
+}
+
+@inproceedings{flaxman2005online,
+  title={Online convex optimization in the bandit setting: gradient descent without a gradient},
+  author={Flaxman, Abraham D and Kalai, Adam Tauman and McMahan, H Brendan},
+  booktitle={Proceedings of the sixteenth annual ACM-SIAM symposium on Discrete algorithms},
+  pages={385--394},
+  year={2005},
+  organization={Society for Industrial and Applied Mathematics}
+}
+
+@phdthesis{kakade2003sample,
+  title={On the sample complexity of reinforcement learning},
+  author={Kakade, Sham Machandranath and others},
+  year={2003},
+  school={University of London London, England}
+}
+
+@article{bismut1973conjugate,
+  title={Conjugate convex functions in optimal stochastic control},
+  author={Bismut, Jean-Michel},
+  journal={Journal of Mathematical Analysis and Applications},
+  volume={44},
+  number={2},
+  pages={384--404},
+  year={1973},
+  publisher={Academic Press}
+}
+
+@inproceedings{mahadevan2012sparse,
+  title={Sparse Q-learning with mirror descent},
+  author={Mahadevan, Sridhar and Liu, Bo},
+  booktitle={Proceedings of the Twenty-Eighth Conference on Uncertainty in Artificial Intelligence},
+  pages={564--573},
+  year={2012},
+  organization={AUAI Press}
+}
+
+@inproceedings{liu2016proximal,
+  title={Proximal Gradient Temporal Difference Learning Algorithms.},
+  author={Liu, Bo and Liu, Ji and Ghavamzadeh, Mohammad and Mahadevan, Sridhar and Petrik, Marek},
+  booktitle={IJCAI},
+  pages={4195--4199},
+  year={2016}
+}
+
+@inproceedings{thomas2013projected,
+  title={Projected natural actor-critic},
+  author={Thomas, Philip S and Dabney, William C and Giguere, Stephen and Mahadevan, Sridhar},
+  booktitle={Advances in neural information processing systems},
+  pages={2337--2345},
+  year={2013}
+}
+
+@inproceedings{duchi2010composite,
+  title={Composite Objective Mirror Descent.},
+  author={Duchi, John C and Shalev-Shwartz, Shai and Singer, Yoram and Tewari, Ambuj},
+  booktitle={COLT},
+  pages={14--26},
+  year={2010}
+}
+
+@article{bunel2018leveraging,
+  title={Leveraging grammar and reinforcement learning for neural program synthesis},
+  author={Bunel, Rudy and Hausknecht, Matthew and Devlin, Jacob and Singh, Rishabh and Kohli, Pushmeet},
+  journal={arXiv preprint arXiv:1805.04276},
+  year={2018}
+}
+
+@article{parisotto2016neuro,
+  title={Neuro-symbolic program synthesis},
+  author={Parisotto, Emilio and Mohamed, Abdel-rahman and Singh, Rishabh and Li, Lihong and Zhou, Dengyong and Kohli, Pushmeet},
+  journal={arXiv preprint arXiv:1611.01855},
+  year={2016}
+}
+
+@inproceedings{sun2018neural,
+  title={Neural program synthesis from diverse demonstration videos},
+  author={Sun, Shao-Hua and Noh, Hyeonwoo and Somasundaram, Sriram and Lim, Joseph},
+  booktitle={International Conference on Machine Learning},
+  pages={4797--4806},
+  year={2018}
+}
+
+@inproceedings{devlin2017robustfill,
+  title={Robustfill: Neural program learning under noisy I/O},
+  author={Devlin, Jacob and Uesato, Jonathan and Bhupatiraju, Surya and Singh, Rishabh and Mohamed, Abdel-rahman and Kohli, Pushmeet},
+  booktitle={Proceedings of the 34th International Conference on Machine Learning-Volume 70},
+  pages={990--998},
+  year={2017},
+  organization={JMLR. org}
+}

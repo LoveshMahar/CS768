@@ -1,0 +1,15 @@
+Meta-learning can successfully acquire useful inductive biases from data.
+Yet, its generalization properties to unseen learning tasks are poorly
+understood. Particularly if the number of meta-training tasks is small, this
+raises concerns about overfitting. We provide a theoretical analysis using the
+PAC-Bayesian framework and derive novel generalization bounds for
+meta-learning. Using these bounds, we develop a class of PAC-optimal
+meta-learning algorithms with performance guarantees and a principled
+meta-level regularization. Unlike previous PAC-Bayesian meta-learners, our
+method results in a standard stochastic optimization problem which can be
+solved efficiently and scales well. When instantiating our PAC-optimal
+hyper-posterior (PACOH) with Gaussian processes and Bayesian Neural Networks as
+base learners, the resulting methods yield state-of-the-art performance, both
+in terms of predictive accuracy and the quality of uncertainty estimates.
+Thanks to their principled treatment of uncertainty, our meta-learners can also
+be successfully employed for sequential decision problems.

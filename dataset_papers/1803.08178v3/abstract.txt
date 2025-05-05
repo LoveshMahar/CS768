@@ -1,0 +1,13 @@
+There has recently been a steady increase in the number iterative approaches
+to density estimation. However, an accompanying burst of formal convergence
+guarantees has not followed; all results pay the price of heavy assumptions
+which are often unrealistic or hard to check. The Generative Adversarial
+Network (GAN) literature --- seemingly orthogonal to the aforementioned pursuit
+--- has had the side effect of a renewed interest in variational divergence
+minimisation (notably $f$-GAN). We show that by introducing a weak learning
+assumption (in the sense of the classical boosting framework) we are able to
+import some recent results from the GAN literature to develop an iterative
+boosted density estimation algorithm, including formal convergence results with
+rates, that does not suffer the shortcomings other approaches. We show that the
+density fit is an exponential family, and as part of our analysis obtain an
+improved variational characterisation of $f$-GAN.

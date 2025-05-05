@@ -1,0 +1,18 @@
+This paper studies the prediction of a target $\mathbf{z}$ from a pair of
+random variables $(\mathbf{x},\mathbf{y})$, where the ground-truth predictor is
+additive $\mathbb{E}[\mathbf{z} \mid \mathbf{x},\mathbf{y}] =
+f_\star(\mathbf{x}) +g_{\star}(\mathbf{y})$. We study the performance of
+empirical risk minimization (ERM) over functions $f+g$, $f \in F$ and $g \in
+G$, fit on a given training distribution, but evaluated on a test distribution
+which exhibits covariate shift. We show that, when the class $F$ is "simpler"
+than $G$ (measured, e.g., in terms of its metric entropy), our predictor is
+more resilient to heterogeneous covariate shifts} in which the shift in
+$\mathbf{x}$ is much greater than that in $\mathbf{y}$. Our analysis proceeds
+by demonstrating that ERM behaves qualitatively similarly to orthogonal machine
+learning: the rate at which ERM recovers the $f$-component of the predictor has
+only a lower-order dependence on the complexity of the class $G$, adjusted for
+partial non-indentifiability introduced by the additive structure. These
+results rely on a novel H\"older style inequality for the Dudley integral which
+may be of independent interest. Moreover, we corroborate our theoretical
+findings with experiments demonstrating improved resilience to shifts in
+"simpler" features across numerous domains.

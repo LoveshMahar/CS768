@@ -1,0 +1,629 @@
+% The file contains Dan Roth's and the Cognitive Computation Group papers
+%
+%
+% The key for an entry should be the concatenation of:
+%   (1) The full last name of the first author (first letter capitalized),
+%   (2) The first two characters of the last name of each following
+%           author (first letter capitalized),
+%   (3) The last two digits of the year of the publication, and
+%   (4) [Optional] A letter from "bcdefg..." or other text (e.g. volume
+%       number) if necessary to yield unique keys.
+%
+% Example: AhoHoUl74
+%
+% The entries in this file should be alphabetically sorted by key value.
+%
+% Entries with more than 3 authors should replace (1) and (2) with
+% the first letter of each author's last name, capitalized.
+
+
+
+% The bibfile has a number of extensions that are designed to work with
+% the DB update scripts and allow its use as a master file for multiple option on the
+% Cogcomp group web page.
+% Here is a list of the extension and what they do:
+%
+%    * url: a URL where the publication can be downloaded.
+%      All the papers are placed in the /home/roth/danr/public_html/Papers directory on l2r.
+%      Publications appear in reverse chronological order (years) and, within a year,
+%      in the order they appear in the bibfile.
+%    * projects: a list of space or comma-delimited keys for the projects related to the publication.
+%      The keys and their respective projects are listed in the projects section below.
+%    * funding: a list of keys for the grants which helped to produce the publication.
+%      The keys and their respective grants are listed at the top of the bibfile.
+%    * comment: a short comment which will be displayed in fixed-width type under the
+%      citation for the publication on the group website.
+%      This is a good place to put relevant keywords for the paper and to facilitate googling it.
+%    * invisible: a way to specify that this entry should not appear on the group web site.
+%      say: invisible = {true}. All other values will be assumed to be false.
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%        PROJECTS           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@comment{FLKR = {Foundations: Learning, Knowledge Representations, Reasoning}}
+@comment{ML = {Machine Learning}}
+@comment{KR = {Knowledge Representation and Inference}}
+@comment{LnI = {Learning and Inference}}
+@comment{NLP = {Natural Language Processing}}
+@comment{IIA = {Intelligent Information Access}}
+%%
+%%                 FLKR
+%%                 |
+%%                 DPL MCR LCC LT LP KR
+%%
+%%                 LnI
+%%                 |
+%%                 SI ILP SM
+%%
+%%                 IIA
+%%                 |
+%%                 IE LV MIRROR NE QA KINDLE
+%%
+%%                 NLP
+%%                 |
+%%                 LNLP CSD SP
+@comment{CSD = {Context Sensitive Disambiguation}}
+@comment{DPL = {Discriminative and Probabilistic Learning}}
+@comment{LNLP = {Learning in NLP}}
+@comment{IE = {Information Extraction}}
+@comment{ILP = {Integer Linear Programming Inference}}
+@comment{KR = {Relational Knowledge Representations and Kernels}}
+@comment{LBP = {Learning Based Programming}}
+@comment{LCC = {Learning Coherent Concepts}}
+@comment{LINL = {Learning and Inference in Natural Language}}
+@comment{LV = {Learning for Visual Recognition}}
+@comment{LP = {Learning Protocols}}
+@comment{LT = {Learning Theory}}
+@comment{KINDLE = {Knowledge Representation and Inference for Natural Language using Feature Description Logic}}
+@comment{MCR = {Multiclass Classification and Ranking}}
+@comment{MIRROR = {Mirroring Entities: Name Identification and Tracing}}
+@comment{NE = {Named Entity Recognition}}
+@comment{NLP = {Natural Language Processing}}
+@comment{QA = {Question Answering Systems}}
+@comment{SI = {Sequential Inference}}
+@comment{SM = {Structural Mapping}}
+@comment{SP = {Semantic Parsing}}
+@comment{PHRASENET = {PhraseNet}}
+%% NEW PROJECTS (2008)
+@comment{CSTC = {Context Sensitive Text Correction}}
+@comment{USS = {Unsupervised and Semi-supervised Learning}}
+@comment{DC = {Dataless Classification}}
+@comment{AL = {Active and Interactive Learning}}
+@comment{RANK = {Learning to Rank}}
+@comment{ADAPT = {Adaptation}}
+@comment{PL = {Pipeline Models}}
+@comment{MC = {Multiclass Classification}}
+@comment{PASTML = {Past Projects}}
+@comment{FOPI = {First-order Probabilistic Inference}}
+@comment{KRNLP = {Knowledge Representation for Natural Language}}
+@comment{CCM = {Constrained Conditional Models}}
+@comment{LBP = {Learning Based Programming}}
+@comment{SRL = {Semantic Parsing (Semantic Role Labeling)}}
+@comment{TE = {Semantic Entailment and Question Answering}}
+@comment{COREF = {Cofereference Within and Across Documents}}
+@comment{DP = {Dependency Parsing}}
+@comment{COMP = {Natural Language Comprehension in Context}}
+@comment{PSYCHO = {Psycholinguistics}}
+@comment{TL = {Transliteration}}
+@comment{LS = {Lexical Semantics}}
+@comment{PASTNLP = {Past Projects}}
+@comment{IE = {Information Extraction}}
+@comment{NER = {Named Entities and Relations}}
+@comment{SEARCH = {NLP Based Search}}
+@comment{TRUST = {Trustworthiness}}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%         GRANTS            %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% The key of a past projects is prefiexed by p-
+
+%%% NSF
+
+@comment{Psych = {Verb Learning and The Early Development of Sentence Comprehension:
+Experimental and Computational Studies}}
+% ACTIVE: NSF BCS-0620257
+% ACTIVE NIH grant R01-HD054448.
+@comment{SoD = {Learning Based Programming}}
+% ACTIVE: NSF SoD-HCER-0613885
+
+%%% EDU
+@comment{EDU = {Asses As you Go}}
+
+@comment{ITR-EDU = {Natural Language Processing Technology for Guided Study of Bioinformatics}}
+% NSF ITR IIS-0428472
+@comment{p-ITR-BI = {Multimodal Human Computer Interaction: Toward a Proactive Computer}}
+% NSF IIS -- 0085980
+@comment{p-ITR-MIT = {From Bits to Information: Statistical Learning Technologies for
+Digital Information Management and Search}}
+% NSF ITR IIS 0085836
+@comment{NSF-REU = (research experience for undergraduates)}
+@comment{p-CAREER = {Learning Coherent Concepts: Theory and Applications to Natural Language}}
+% NSF IIS 9984168
+@comment{p-KDI = {The Role of Experience in Natural Language}}
+% NSF SBR 9872450
+@comment{p-NSF98 = {Learning to Perform Knowledge Intensive Inferences}}
+% NSF IIS 9801638
+@comment{CLUSTER = {Programming Environments and Applications for Clusters and Grids}}
+%
+% Library of Congress ECHO Depository Index code: A60754 FOPAL: 490167-434040-191100
+@comment{Library = {Meta-Data}}
+
+
+%%%%
+%%% DOI
+@comment{p-KINDLE = {Knowledge and Inference via Description Logics for Natural Language}}
+%Advanced Research and Development Activity (ARDA)'s Advanced Question Answering for Intelligence (AQUAINT)
+@comment{p-REFLEX = {Named Entity Recognition and Transliteration for 50 Languages.}}
+@comment{p-LbR = {DARPA seedling for Learning by Reading.}}
+
+%
+%Index code: A28981
+%FOPAL: 488889-434040-191100
+% Title: AF Sub SRI 2009-02926
+@comment{MR = {DARPA funding under the Machine Reading Program.}}
+%% ACTIVE:
+
+@comment{MIAS = {DHS-IDS-Center for Multimodal Information Access and Synthesis.}}
+%% ACTIVE:
+% Index code: A46411
+% CFOP: 491233-434040-191100
+% Title: Navy N00014-07-1-0151
+@comment{BL = {DARPA funding under the Bootstrap Learning Program.}}
+%% ACTIVE:
+
+%%% ONR
+@comment{ONR = {Guiding Learning and Decision Making in the
+    Presence of Multiple Forms of Information}}
+%% ACTIVE:
+@comment{p-MURI = {Decision Making Under Uncertainty}}
+@comment{p-TRECC = {Cross-Document Entity Identification \& Tracing.}}
+
+%%% Industry
+@comment{p-BOEING = {Machine Learning for Security: Digital Guards for Insider Threat Detection}}
+@comment{BOEING-L = {Focused Textual Entailment}}
+%% ACTIVE
+
+@comment{GOOGLE = {Textual Entailment}}
+%% ACTIVE: GIft
+
+@comment{MSR = {Textual Entailment}}
+%% ACTIVE: Gift
+%% Index code: 434U8K
+%% Title: Microsoft-Roth
+%% FOPAL: 630246-434028-191100
+
+
+@comment{p-MOTOROLA = {Business Intelligence Systems}}
+@comment{XPRESSMP = {XPress-MP Optimization Suite}}
+%Dash Optimization for the free academic use of Xpress-MP.
+@comment{p-IBM = {Context-Sensitive Natural Language Inferences}}
+
+%%% UIUC
+@comment{p-CRI = {The Role of Sensorimotor Function, Associative Memory and Reinforcement Learning in
+Automatic Acquisition of Spoken Language by an Autonomous Robot}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%        PACKAGES           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@comment{SNOW = {SNoW}}
+@comment{FEX = {FEX}}
+@comment{POS = {POS Tagger}}
+@comment{NE = {NE Tagger}}
+@comment{SP = {Shallow Parser}}
+@comment{SRL = {Semantic Role labeling}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%        JOURNALS           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@string{AI = {Artificial Intelligence}}
+@string{CACM = {Communications of the ACM}}
+@string{CSL = {Computer Speech and Language}}
+@string{CL = {Computational Linguistics}}
+@string{InfCtrl = {Information and Control}}
+@string{IT = {IEEE Transactions on information theory}}
+@string{JACM = {Journal of the ACM}}
+@string{JAIR = {Journal of AI Research}}
+@string{JMLR = {Journal of Machine Learning Research}}
+@string{ML = {Machine Learning}}
+@string{NLE = {Journal of Natural Language Engineering}}
+@string{MM = {IEEE Transactions on Multimedia}}
+@string{PAMI = {IEEE Transactions on Pattern Analysis and Machine Intelligence}}
+@string{SIJAD = {SIAM Journal of Algebraic and Discrete Methods}}
+@string{SIJC = {SIAM Journal of Computing}}
+@string{TASSP = {IEEE Transactions on Acoustics, speech, and Signal Processing}}
+@string{TASSP = {IEEE Transactions on Acoustics, speech, and Signal Processing}}
+@string{TCS = {Theoretical Computer Science}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%       CONFERENCES         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@string{*SEM = {Proc. of the Joint Conference on Lexical and Computational Sematics}}
+@string{AAAI = {Proc. of the Conference on Artificial Intelligence (AAAI)}}
+@string{ACCCC = {Proc. of the Allerton Conference on Communications, Control and Computing}}
+@string{ACCV = {Proc. of the Asian Conference on Computer Vision (ACCV)}}
+@string{ACL = {Proc. of the Annual Meeting of the Association for Computational Linguistics (ACL)}}
+@string{AFS = {Proc. of the AAAI Fall Symposium}}
+@string{AIM = {Proc. of the International Symposium on Artificial Intelligence and Mathematics (AIM)}}
+@string{AISTATS = {Proc. of the International Workshop on Artificial Intelligence and Statistics (AISTATS)}}
+@string{ALT = {Proc. of the International Workshop on Algorithmic Learning Theory (ALT)}}
+@string{ASC = {Proc. of the Army Science Conference (ASC)}}
+@string{ASIST = {Proc. of the Annual Meeting of the American Society for Information Science and Technology}}
+@string{BCB = {Proc. of the ACM Conference on Bioinformatics, Computational Biology, and Health Informatics}}
+@string{Bioinformatics = {Proc. of the International Conference on Bioinformatics Models, Methods and Algorithms}}
+@string{BISFAI = {Proc. of the Bar-Ilan Symposium on Foundations of Artificial Intelligence (BISFAI)}}
+@string{BUCLD = {Proc. of the Boston University Conference on Language Development}}
+@string{CCCG = {Proc. of the Canadian Conference on Computational Geometry (CCCG)}}
+@string{CIKM = {Proc. of the ACM Conference on Information and Knowledge Management (CIKM)}}
+@string{COLING = {Proc. of the International Conference on Computational Linguistics (COLING)}}
+@string{COLING-ACL = {Proc. of the International Conference on Computational Linguistics and Annual Meeting of the Association for Computational Linguistics (COLING-ACL)}}
+@string{COLT = {Proc. of the ACM Conference on Computational Learning Theory (COLT)}}
+@string{CoNLL = {Proc. of the Conference on Computational Natural Language Learning (CoNLL)}}
+@string{CVPR = {Proc. of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}}
+@string{DHCS = {Proc. of the Chicago Colloquium on Digital Humanities and Computer Science (DHCS)}}
+@string{EACL = {Proc. of the Conference of the European Chapter of the Association for Computational Linguistics (EACL)}}
+@string{ECCV = {Proc. of the European Conference on Computer Vision (ECCV)}}
+@string{ECIR = {Proc. of the European Conference on Information Retrieval}}
+@string{ECML = {Proc. of the European Conference on Machine Learning (ECML)}}
+@string{ECML-PKDD = {Proc. of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)}}
+@string{EMNLP = {Proc. of the Conference on Empirical Methods in Natural Language Processing (EMNLP)}}
+@string{EMNLP-VLC = {Proc. of the Joint Conference on Empirical Methods in Natural Language Processing and Very Large Corpora (EMNLP-VLC)}}
+@string{Fusion = {Proc. of the International Conference on Information Fusion}}
+@string{HLT-EMNLP = {Proc. of the Human Language Technology Conference and Conference on Empirical Methods in Natural Language Processing (HLT-EMNLP)}}
+@string{IAAI = {Proc. of the Conference on Innovative Applications of Artificial Intelligence (IAAI)}}
+@string{ICAC = {Proc. of the International Conference on Autonomic Computing (ICAC)}}
+@string{ICDM = {Proc. of the IEEE International Conference on Data Mining (ICDM)}}
+@string{ICIP = {Proc. of the IEEE International Conference on Image Processing (ICIP)}}
+@string{ICLR = {Proc. of the International Conference on Learning Representations}}
+@string{ICMI = {Proc. of the International Conference on Multimodal Interfaces (ICMI)}}
+@string{ICML = {Proc. of the International Conference on Machine Learning (ICML)}}
+@string{ICSC = {Proc. of the IEEE International Conference on Semantic Computing (ICSC)}}
+@string{IJCAI = {Proc. of the International Joint Conference on Artificial Intelligence (IJCAI)}}
+@string{IJCNLP = {Proc. of the International Joint Conference on Natural Language Processing (IJCNLP)}}
+@string{IJMLC = {International Journal of Machine Learning and Computing (IJMLC)}}
+@string{ILP = {Proc. of the International Conference on Inductive Logic Programming (ILP)}}
+@string{IPSN = {Proc. of the International Conference on Information Processing in Sensor Networks (IPSN)}}
+@string{ISIT = {Proc. of the IEEE International Symposium on Information Theory}}
+@string{ISMB = {Proc. of the International Conference on Intelligent Systems for Molecular Biology (ISMB)}}
+@string{KDD = {Proc. of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)}}
+@string{KR = {Proc. of the International Conference on Principles of Knowledge Representation and Reasoning (KR)}}
+@string{LAK = {Proceedings of the International Conference on Learning Analytics & Knowledge (LAK)}}
+@string{LREC = {Proc. of the International Conference on Language Resources and Evaluation (LREC)}}
+@string{MCLC = {Proc. of the Midwest Computational Linguistics Colloquium (MCLC)}}
+@string{MFCS = {Proc. of the International Symposium on the Mathematical Foundations of Computer Science (MFCS)}}
+@string{NAACL = {Proc. of the Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)}}
+@string{NeurIPS = {Proc. of the Conference on Neural Information Processing Systems (NeurIPS)}}
+@string{RANLP = {Proc. of the Conference on Recent Advances in Natural Language Processing}}
+@string{SemEval = {Proc. of the International Workshop on Semantic Evaluation}}
+@string{SIGIR = {Proc. of the ACM SIGIR Conference (SIGIR)}}
+@string{SOFSEM = {Proc. of the Conference on Current Trends in Theory and Practice of Informatics (SOFSEM)}}
+@string{StarAI = {Proc. of the International Workshop on Statistical Relational AI (StarAI)}}
+@string{TAC = {Proc. of the Text Analysis Conference (TAC)}}
+@string{TACL = {Transactions of the Association for Computational Linguistics (TACL)}}
+@string{TREC = {Proc. of the Text Retrieval Conference (TREC)}}
+@string{VW = {Proc. of the Interdisciplinary Workshop on Verb Features and Verb Classes (Verb Workshop)}}
+@string{WI = {Proc. of the IEEE/WIC/ACM International Conference on Web Intelligence (WI)}}
+@string{WWW = {Proc. of the International World Wide Web Conference (WWW)}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%       PUBLISHERS          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@string{Cambridge = {Cambridge University Press}}
+@string{Benjamin = {Benjamin/Cummings Publishing Company, Inc.}}
+@string{MIT = {MIT Press}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%        New Terms          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@InProceedings{LiuDi14,
+ Acmid = {3045074},
+ Author = {Li-Ping Liu and Thomas G. Dietterich},
+ Booktitle = {Proceedings of the 31st International Conference on International Conference on Machine Learning - Volume 32},
+ Location = {Beijing, China},
+ Pages = {II-1629--II-1637},
+ Publisher = {JMLR.org},
+ Series = {ICML'14},
+ Title = {{Learnability of the Superset Label Learning Problem}},
+ Url = {http://dl.acm.org/citation.cfm?id=3044805.3045074},
+ Year = {2014}
+}
+
+@Article{CourSaTa11,
+ Author = {Timoth{\'e}e Cour and Benjamin Sapp and Ben Taskar},
+ Journal = {Journal of Machine Learning Research},
+ Pages = {1501-1536},
+ Title = {Learning from Partial Labels},
+ Volume = {12},
+ Year = {2011}
+}
+
+@Article{RooyenWi18,
+ Author = {Brendan van Rooyen and Robert C. Williamson},
+ Journal = {Journal of Machine Learning Research},
+ Number = {228},
+ Pages = {1-50},
+ Title = {{A Theory of Learning with Corrupted Labels}},
+ Url = {http://jmlr.org/papers/v18/16-315.html},
+ Volume = {18},
+ Year = {2018}
+}
+
+@InProceedings{NDRT13,
+ Acmid = {2999745},
+ Address = {USA},
+ Author = {Nagarajan Natarajan and Inderjit S. Dhillon and Pradeep Ravikumar and Ambuj Tewari},
+ Booktitle = {Proceedings of the 26th International Conference on Neural Information Processing Systems - Volume 1},
+ Location = {Lake Tahoe, Nevada},
+ Numpages = {9},
+ Pages = {1196--1204},
+ Publisher = {Curran Associates Inc.},
+ Series = {NIPS'13},
+ Title = {{Learning with Noisy Labels}},
+ Url = {http://dl.acm.org/citation.cfm?id=2999611.2999745},
+ Year = {2013}
+}
+
+@Article{Baraud16,
+ Author = {Yannick Baraud},
+ Doi = {10.1214/15-EJS1055},
+ Fjournal = {Electronic Journal of Statistics},
+ Journal = {Electron. J. Statist.},
+ Number = {2},
+ Pages = {1709--1728},
+ Publisher = {The Institute of Mathematical Statistics and the Bernoulli Society},
+ Title = {{Bounding the expectation of the supremum of an empirical process over a (weak) VC-major class}},
+ Url = {https://doi.org/10.1214/15-EJS1055},
+ Volume = {10},
+ Year = {2016}
+}
+
+@Article{BartlettMe03,
+ Author = {Peter L. Bartlett and Shahar Mendelson},
+ Issue_date = {March 2003},
+ Journal = {Journal of Machine Learning Research},
+ Number = {null},
+ Pages = {463–482},
+ Title = {{Rademacher and Gaussian Complexities: Risk Bounds and Structural Results}},
+ Volume = {3},
+ Year = {2003}
+}
+
+@Article{RVBS17,
+ Author = {David Rolnick and Andreas Veit and Serge Belongie and Nir Shavit},
+ Month = {05},
+ Pages = {},
+ Title = {{Deep Learning is Robust to Massive Label Noise}},
+ Year = {2017}
+}
+
+@Article{MassartNe06,
+ Author = {Pascal Massart and Élodie Nédélec},
+ Doi = {10.1214/009053606000000786},
+ Fjournal = {Annals of Statistics},
+ Journal = {Ann. Statist.},
+ Month = {10},
+ Number = {5},
+ Pages = {2326--2366},
+ Publisher = {The Institute of Mathematical Statistics},
+ Title = {{Risk bounds for statistical learning}},
+ Url = {https://doi.org/10.1214/009053606000000786},
+ Volume = {34},
+ Year = {2006}
+}
+
+@Article{MenonRoNa18,
+ Author = {Aditya Krishna Menon and Brendan van Rooyen and Nagarajan Natarajan},
+ Bdsk-url-1 = {https://doi.org/10.1007/s10994-018-5715-3},
+ Doi = {10.1007/s10994-018-5715-3},
+ Id = {Menon2018},
+ Isbn = {1573-0565},
+ Journal = {Machine Learning},
+ Number = {8},
+ Pages = {1561--1595},
+ Title = {{Learning from binary labels with instance-dependent noise}},
+ Url = {https://doi.org/10.1007/s10994-018-5715-3},
+ Volume = {107},
+ Year = {2018}
+}
+
+@Book{Tsybakov08,
+ Author = {A.B. Tsybakov},
+ Isbn = {9780387790527},
+ Lccn = {2008939894},
+ Publisher = {Springer New York},
+ Series = {Springer Series in Statistics},
+ Title = {{Introduction to Nonparametric Estimation}},
+ Year = {2008}
+}
+
+@InProceedings{Cid-Sueiro12,
+ Address = {Red Hook, NY, USA},
+ Author = {Jes\'{u}s Cid-Sueiro},
+ Booktitle = {Proceedings of the 25th International Conference on Neural Information Processing Systems - Volume 1},
+ Location = {Lake Tahoe, Nevada},
+ Numpages = {9},
+ Pages = {1565–1573},
+ Publisher = {Curran Associates Inc.},
+ Series = {NIPS’12},
+ Title = {{Proper Losses for Learning from Partial Labels}},
+ Year = {2012}
+}
+
+@InProceedings{Cid-SueiroGaSa14,
+ Address = {Berlin, Heidelberg},
+ Author = {Jes{\'u}s Cid-Sueiro and Dar{\'i}o Garc{\'i}a-Garc{\'i}a and Ra{\'u}l Santos-Rodr{\'i}guez},
+ Booktitle = {Machine Learning and Knowledge Discovery in Databases},
+ Editor = {Calders, Toon
+and Esposito, Floriana
+and H{\"u}llermeier, Eyke
+and Meo, Rosa},
+ Isbn = {978-3-662-44848-9},
+ Pages = {197--210},
+ Publisher = {Springer Berlin Heidelberg},
+ Title = {{Consistency of Losses for Learning from Weak Labels}},
+ Year = {2014}
+}
+
+@InProceedings{SBHy13,
+ Address = {Princeton, NJ, USA},
+ Author = {Clayton Scott and Gilles Blanchard and Gregory H and  y},
+ Booktitle = {Proceedings of the 26th Annual Conference on Learning Theory},
+ Editor = {Shai Shalev-Shwartz and Ingo Steinwart},
+ Month = {12--14 Jun},
+ Pages = {489--511},
+ Publisher = {PMLR},
+ Series = {Proceedings of Machine Learning Research},
+ Title = {{Classification with Asymmetric Label Noise: Consistency and Maximal Denoising}},
+ Url = {http://proceedings.mlr.press/v30/Scott13.html},
+ Volume = {30},
+ Year = {2013}
+}
+
+@InProceedings{RalaivolaDeMa06,
+ Author = {L. Ralaivola and F. Denis and C. Magnan},
+ Booktitle = {ICML '06},
+ Title = {{CN = CPCN}},
+ Year = {2006}
+}
+
+@InProceedings{BootkrajangKa12,
+ Address = {Berlin, Heidelberg},
+ Author = {Jakramate Bootkrajang and Ata Kab{\'a}n},
+ Booktitle = {Machine Learning and Knowledge Discovery in Databases},
+ Editor = {Flach, Peter A.
+and De Bie, Tijl
+and Cristianini, Nello},
+ Isbn = {978-3-642-33460-3},
+ Pages = {143--158},
+ Publisher = {Springer Berlin Heidelberg},
+ Title = {{Label-Noise Robust Logistic Regression and Its Applications}},
+ Year = {2012}
+}
+
+@InProceedings{BCFL13,
+ Author = {Jonathan Berant and Andrew Chou and Roy Frostig and Percy Liang},
+ Booktitle = {Proc. of the Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+ Title = {{Semantic Parsing on Freebase from Question-Answer Pairs}},
+ Year = {2013}
+}
+
+@InProceedings{DiakonikolasGoTz19,
+ Author = {Ilias Diakonikolas and Themis Gouleakis and Christos Tzamos},
+ Booktitle = {NeurIPS},
+ Title = {{Distribution-Independent PAC Learning of Halfspaces with Massart Noise}},
+ Year = {2019}
+}
+
+@InProceedings{RFDL16,
+ Address = {New York, New York, USA},
+ Author = {Aditi Raghunathan and Roy Frostig and John Duchi and Percy Liang},
+ Booktitle = {Proceedings of The 33rd International Conference on Machine Learning},
+ Editor = {Maria Florina Balcan and Kilian Q. Weinberger},
+ Month = {20--22 Jun},
+ Pages = {2568--2577},
+ Pdf = {http://proceedings.mlr.press/v48/raghunathan16.pdf},
+ Publisher = {PMLR},
+ Series = {Proceedings of Machine Learning Research},
+ Title = {{Estimation from Indirect Supervision with Linear Moments}},
+ Url = {http://proceedings.mlr.press/v48/raghunathan16.html},
+ Volume = {48},
+ Year = {2016}
+}
+
+@Book{Pinsker,
+ Author = {M.S. Pinsker},
+ Lccn = {lc64014623},
+ Publisher = {Holden-Day},
+ Series = {Holden-Day series in time series analysis},
+ Title = {{Information and information stability of random variables and processes}}
+}
+
+@InProceedings{INHS17,
+ Author = {T. Ishida and Gang Niu and Weihua Hu and Masashi Sugiyama},
+ Booktitle = {NIPS},
+ Title = {{Learning from Complementary Labels}},
+ Year = {2017}
+}
+
+@InProceedings{SteinhardtLi15,
+ Author = {Jacob Steinhardt and Percy Liang},
+ Booktitle = {NIPS},
+ Title = {{Learning with Relaxed Supervision}},
+ Year = {2015}
+}
+
+@Article{GhoshMaSa15,
+ Author = {Aritra Ghosh and Naresh Manwani and P.S. Sastry},
+ Doi = {https://doi.org/10.1016/j.neucom.2014.09.081},
+ Issn = {0925-2312},
+ Journal = {Neurocomputing},
+ Keywords = {Classification, Label noise, Loss function, Risk minimization, Noise tolerance},
+ Pages = {93 - 107},
+ Title = {{Making risk minimization tolerant to label noise}},
+ Url = {http://www.sciencedirect.com/science/article/pii/S0925231215001204},
+ Volume = {160},
+ Year = {2015}
+}
+
+@InProceedings{ABHU15,
+ Address = {Paris, France},
+ Author = {Pranjal Awasthi and Maria-Florina Balcan and Nika Haghtalab and Ruth Urner},
+ Booktitle = {Proceedings of The 28th Conference on Learning Theory},
+ Editor = {Peter Grünwald and Elad Hazan and Satyen Kale},
+ Month = {03--06 Jul},
+ Pages = {167--190},
+ Pdf = {http://proceedings.mlr.press/v40/Awasthi15b.pdf},
+ Publisher = {PMLR},
+ Series = {Proceedings of Machine Learning Research},
+ Title = {{Efficient Learning of Linear Separators under Bounded Noise}},
+ Url = {http://proceedings.mlr.press/v40/Awasthi15b.html},
+ Volume = {40},
+ Year = {2015}
+}
+
+@Article{CLRT17,
+ Author = {Jiacheng Cheng and Tongliang Liu and Kotagiri Ramamohanarao and Dacheng Tao},
+ Month = {09},
+ Pages = {},
+ Title = {{Learning with Bounded Instance- and Label-dependent Label Noise}},
+ Year = {2017}
+}
+
+@Article{SBPBF14,
+ Author = {Sainbayar Sukhbaatar and Joan Bruna and Manohar Paluri and Lubomir D. Bourdev and Rob Fergus},
+ Journal = {arXiv: Computer Vision and Pattern Recognition},
+ Title = {{Training Convolutional Networks with Noisy Labels}},
+ Year = {2014}
+}
+
+@InProceedings{GevaGoBe19,
+ Author = {Mor Geva and Yoav Goldberg and Jonathan Berant},
+ Booktitle = {EMNLP/IJCNLP},
+ Title = {{Are We Modeling the Task or the Annotator? An Investigation of Annotator Bias in Natural Language Understanding Datasets}},
+ Year = {2019}
+}
+
+
+@InProceedings{Ben-DavidBo03,
+ Author = {Shai Ben-David and Reba Schuller Borbely},
+ Booktitle = {Proc. of the ACM Conference on Computational Learning Theory (COLT)},
+ Title = {{Exploiting Task Relatedness for Mulitple Task Learning}},
+ Year = {2003}
+}
+
+@Article{Ben-DavidBo07,
+ Author = {S. Ben-David and Reba Schuller Borbely},
+ Journal = {Machine Learning},
+ Pages = {273-287},
+ Title = {{A notion of task relatedness yielding provable multiple-task learning guarantees}},
+ Volume = {73},
+ Year = {2007}
+}

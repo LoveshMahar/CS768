@@ -1,0 +1,1451 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{abu1993hints}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AMYS}{%
+         family={Abu-Mostafa},
+         familyi={A\bibinithyphendelim M\bibinitperiod},
+         given={Yaser\bibnamedelima S},
+         giveni={Y\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \strng{namehash}{AMYS1}
+    \strng{fullhash}{AMYS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{2}
+    \field{pages}{278\bibrangedash 288}
+    \field{title}{Hints and the {VC} dimension}
+    \field{volume}{5}
+    \field{journaltitle}{Neural Computation}
+    \field{year}{1993}
+  \endentry
+
+  \entry{anselmi2014unsupervised}{misc}{}
+    \name{author}{6}{}{%
+      {{hash=AF}{%
+         family={Anselmi},
+         familyi={A\bibinitperiod},
+         given={Fabio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=LJZ}{%
+         family={Leibo},
+         familyi={L\bibinitperiod},
+         given={Joel\bibnamedelima Z.},
+         giveni={J\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Rosasco},
+         familyi={R\bibinitperiod},
+         given={Lorenzo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Mutch},
+         familyi={M\bibinitperiod},
+         given={Jim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tacchetti},
+         familyi={T\bibinitperiod},
+         given={Andrea},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Poggio},
+         familyi={P\bibinitperiod},
+         given={Tomaso},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AF+1}
+    \strng{fullhash}{AFLJZRLMJTAPT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{eprint}
+    \verb 1311.4158
+    \endverb
+    \field{title}{Unsupervised Learning of Invariant Representations in
+  Hierarchical Architectures}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CV}
+    \field{year}{2014}
+  \endentry
+
+  \entry{arora2019fine}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=AS}{%
+         family={Arora},
+         familyi={A\bibinitperiod},
+         given={Sanjeev},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Du},
+         familyi={D\bibinitperiod},
+         given={Simon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HW}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Zhiyuan},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Ruosong},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=CK}{%
+         family={Chaudhuri},
+         familyi={C\bibinitperiod},
+         given={Kamalika},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Salakhutdinov},
+         familyi={S\bibinitperiod},
+         given={Ruslan},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {PMLR}%
+    }
+    \strng{namehash}{AS+1}
+    \strng{fullhash}{ASDSHWLZWR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    Recent works have cast some light on the mystery of why deep nets fit any
+  data and generalize despite being very overparametrized. This paper analyzes
+  training and generalization for a simple 2-layer ReLU net with random
+  initialization, and provides the following improvements over recent works:
+  (i) Using a tighter characterization of training speed than recent papers, an
+  explanation for why training a neural net with random labels leads to slower
+  training, as originally observed in [Zhang et al. ICLR’17]. (ii)
+  Generalization bound independent of network size, using a data-dependent
+  complexity measure. Our measure distinguishes clearly between random labels
+  and true labels on MNIST and CIFAR, as shown by experiments. Moreover, recent
+  papers require sample complexity to increase (slowly) with the size, while
+  our sample complexity is completely independent of the network size. (iii)
+  Learnability of a broad class of smooth functions by 2-layer ReLU nets
+  trained via gradient descent. The key idea is to track dynamics of training
+  and generalization via properties of a related kernel.%
+    }
+    \field{booktitle}{Proceedings of the 36th International Conference on
+  Machine Learning}
+    \field{pages}{322\bibrangedash 332}
+    \field{series}{Proceedings of Machine Learning Research}
+    \field{title}{Fine-Grained Analysis of Optimization and Generalization for
+  Overparameterized Two-Layer Neural Networks}
+    \verb{url}
+    \verb http://proceedings.mlr.press/v97/arora19a.html
+    \endverb
+    \field{volume}{97}
+    \verb{file}
+    \verb http://proceedings.mlr.press/v97/arora19a/arora19a.pdf
+    \endverb
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{cohen2016group}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=CT}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Taco},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Welling},
+         familyi={W\bibinitperiod},
+         given={Max},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CTWM1}
+    \strng{fullhash}{CTWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{International conference on machine learning}
+    \field{pages}{2990\bibrangedash 2999}
+    \field{title}{Group equivariant convolutional networks}
+    \field{year}{2016}
+  \endentry
+
+  \entry{cohen2019general}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=CTS}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Taco\bibnamedelima S},
+         giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Geiger},
+         familyi={G\bibinitperiod},
+         given={Mario},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Weiler},
+         familyi={W\bibinitperiod},
+         given={Maurice},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CTSGMWM1}
+    \strng{fullhash}{CTSGMWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{Advances in Neural Information Processing Systems}
+    \field{pages}{9145\bibrangedash 9156}
+    \field{title}{A general theory of equivariant cnns on homogeneous spaces}
+    \field{year}{2019}
+  \endentry
+
+  \entry{cohen2018spherical}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CTS}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Taco\bibnamedelima S},
+         giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Geiger},
+         familyi={G\bibinitperiod},
+         given={Mario},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={K{\"o}hler},
+         familyi={K\bibinitperiod},
+         given={Jonas},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Welling},
+         familyi={W\bibinitperiod},
+         given={Max},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CTS+1}
+    \strng{fullhash}{CTSGMKJWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Spherical cnns}
+    \field{journaltitle}{arXiv preprint arXiv:1801.10130}
+    \field{year}{2018}
+  \endentry
+
+  \entry{cohn2013measure}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CDL}{%
+         family={Cohn},
+         familyi={C\bibinitperiod},
+         given={Donald\bibnamedelima L},
+         giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{S}pringer}%
+    }
+    \strng{namehash}{CDL1}
+    \strng{fullhash}{CDL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{edition}{2}
+    \field{title}{{Measure Theory}}
+    \field{year}{2013}
+  \endentry
+
+  \entry{elesedy2021provably}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=EB}{%
+         family={Elesedy},
+         familyi={E\bibinitperiod},
+         given={Bryn},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=ZS}{%
+         family={Zaidi},
+         familyi={Z\bibinitperiod},
+         given={Sheheryar},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=MM}{%
+         family={Meila},
+         familyi={M\bibinitperiod},
+         given={Marina},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ZT}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Tong},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{PMLR}}%
+    }
+    \strng{namehash}{EBZS1}
+    \strng{fullhash}{EBZS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{booktitle}{Proceedings of the 38th International Conference on
+  Machine Learning, {ICML} 2021, 18-24 July 2021, Virtual Event}
+    \field{pages}{2959\bibrangedash 2969}
+    \field{series}{Proceedings of Machine Learning Research}
+    \field{title}{Provably Strict Generalisation Benefit for Equivariant
+  Models}
+    \verb{url}
+    \verb http://proceedings.mlr.press/v139/elesedy21a.html
+    \endverb
+    \field{volume}{139}
+    \field{year}{2021}
+  \endentry
+
+  \entry{foster2020improving}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FA}{%
+         family={Foster},
+         familyi={F\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PR}{%
+         family={Pukdee},
+         familyi={P\bibinitperiod},
+         given={Rattana},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=RT}{%
+         family={Rainforth},
+         familyi={R\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FAPRRT1}
+    \strng{fullhash}{FAPRRT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Improving Transformation Invariance in Contrastive
+  Representation Learning}
+    \field{journaltitle}{arXiv preprint arXiv:2010.09515}
+    \field{year}{2020}
+  \endentry
+
+  \entry{haasdonk05invariancein}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=HB}{%
+         family={Haasdonk},
+         familyi={H\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=VA}{%
+         family={Vossen},
+         familyi={V\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BH}{%
+         family={Burkhardt},
+         familyi={B\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \strng{namehash}{HBVABH1}
+    \strng{fullhash}{HBVABH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{SCIA 2005, Scandinavian Conference on Image Analysis}
+    \field{pages}{841\bibrangedash 851}
+    \field{title}{Invariance in Kernel Methods by Haar Integration Kernels}
+    \field{year}{2005}
+  \endentry
+
+  \entry{hodge1961}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HPG}{%
+         family={Hodge},
+         familyi={H\bibinitperiod},
+         given={Philip\bibnamedelima G.},
+         giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \list{publisher}{1}{%
+      {Mathematical Association of America}%
+    }
+    \keyw{Mathematics -- Mathematical objects -- Tensors ; Philosophy --
+  Metaphysics -- Philosophy of mind}
+    \strng{namehash}{HPG1}
+    \strng{fullhash}{HPG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{issn}{00029890}
+    \field{number}{8}
+    \field{pages}{793\bibrangedash 795}
+    \field{title}{On Isotropic Cartesian Tensors}
+    \field{volume}{68}
+    \field{journaltitle}{The American Mathematical Monthly}
+    \field{year}{1961}
+  \endentry
+
+  \entry{jacot2018neural}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=JA}{%
+         family={Jacot},
+         familyi={J\bibinitperiod},
+         given={Arthur},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Gabriel},
+         familyi={G\bibinitperiod},
+         given={Franck},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hongler},
+         familyi={H\bibinitperiod},
+         given={Cl{\'e}ment},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JAGFHC1}
+    \strng{fullhash}{JAGFHC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{booktitle}{Advances in neural information processing systems}
+    \field{pages}{8571\bibrangedash 8580}
+    \field{title}{Neural tangent kernel: Convergence and generalization in
+  neural networks}
+    \field{year}{2018}
+  \endentry
+
+  \entry{kallenberg2006foundations}{book}{}
+    \name{author}{1}{}{%
+      {{hash=KO}{%
+         family={Kallenberg},
+         familyi={K\bibinitperiod},
+         given={Olav},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Science \& Business Media}%
+    }
+    \strng{namehash}{KO1}
+    \strng{fullhash}{KO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Foundations of modern probability}
+    \field{year}{2006}
+  \endentry
+
+  \entry{kondor2018generalization}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=KR}{%
+         family={Kondor},
+         familyi={K\bibinitperiod},
+         given={Risi},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Trivedi},
+         familyi={T\bibinitperiod},
+         given={Shubhendu},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KRTS1}
+    \strng{fullhash}{KRTS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{International Conference on Machine Learning}
+    \field{pages}{2747\bibrangedash 2755}
+    \field{title}{On the Generalization of Equivariance and Convolution in
+  Neural Networks to the Action of Compact Groups}
+    \field{year}{2018}
+  \endentry
+
+  \entry{lee2019wide}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=LJ}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Jaehoon},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=XL}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Lechao},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Schoenholz},
+         familyi={S\bibinitperiod},
+         given={Samuel},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bahri},
+         familyi={B\bibinitperiod},
+         given={Yasaman},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=NR}{%
+         family={Novak},
+         familyi={N\bibinitperiod},
+         given={Roman},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SDJ}{%
+         family={Sohl-Dickstein},
+         familyi={S\bibinithyphendelim D\bibinitperiod},
+         given={Jascha},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Pennington},
+         familyi={P\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LJ+1}
+    \strng{fullhash}{LJXLSSBYNRSDJPJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{Advances in neural information processing systems}
+    \field{pages}{8572\bibrangedash 8583}
+    \field{title}{Wide neural networks of any depth evolve as linear models
+  under gradient descent}
+    \field{year}{2019}
+  \endentry
+
+  \entry{lee2019set}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=LJ}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Juho},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Yoonho},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Jungtaek},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kosiorek},
+         familyi={K\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Choi},
+         familyi={C\bibinitperiod},
+         given={Seungjin},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TYW}{%
+         family={Teh},
+         familyi={T\bibinitperiod},
+         given={Yee\bibnamedelima Whye},
+         giveni={Y\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=CK}{%
+         family={Chaudhuri},
+         familyi={C\bibinitperiod},
+         given={Kamalika},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Salakhutdinov},
+         familyi={S\bibinitperiod},
+         given={Ruslan},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {PMLR}%
+    }
+    \strng{namehash}{LJ+2}
+    \strng{fullhash}{LJLYKJKACSTYW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    Many machine learning tasks such as multiple instance learning, 3D shape
+  recognition, and few-shot image classification are defined on sets of
+  instances. Since solutions to such problems do not depend on the order of
+  elements of the set, models used to address them should be permutation
+  invariant. We present an attention-based neural network module, the Set
+  Transformer, specifically designed to model interactions among elements in
+  the input set. The model consists of an encoder and a decoder, both of which
+  rely on attention mechanisms. In an effort to reduce computational
+  complexity, we introduce an attention scheme inspired by inducing point
+  methods from sparse Gaussian process literature. It reduces the computation
+  time of self-attention from quadratic to linear in the number of elements in
+  the set. We show that our model is theoretically attractive and we evaluate
+  it on a range of tasks, demonstrating the state-of-the-art performance
+  compared to recent methods for set-structured data.%
+    }
+    \field{booktitle}{Proceedings of the 36th International Conference on
+  Machine Learning}
+    \field{pages}{3744\bibrangedash 3753}
+    \field{series}{Proceedings of Machine Learning Research}
+    \field{title}{Set Transformer: A Framework for Attention-based
+  Permutation-Invariant Neural Networks}
+    \verb{url}
+    \verb http://proceedings.mlr.press/v97/lee19d.html
+    \endverb
+    \field{volume}{97}
+    \verb{file}
+    \verb http://proceedings.mlr.press/v97/lee19d/lee19d.pdf
+    \endverb
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{lyle2019analysis}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=LC}{%
+         family={Lyle},
+         familyi={L\bibinitperiod},
+         given={Clare},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kwiatkowksa},
+         familyi={K\bibinitperiod},
+         given={Marta},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Gal},
+         familyi={G\bibinitperiod},
+         given={Yarin},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LCKMGY1}
+    \strng{fullhash}{LCKMGY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{International conference on machine learning Workshop on
+  Understanding and Improving Generalization in Deep Learning}
+    \field{title}{An analysis of the effect of invariance on generalization in
+  neural networks}
+    \field{year}{2019}
+  \endentry
+
+  \entry{lyle2020benefits}{misc}{}
+    \name{author}{5}{}{%
+      {{hash=LC}{%
+         family={Lyle},
+         familyi={L\bibinitperiod},
+         given={Clare},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=vdWM}{%
+         prefix={van\bibnamedelima der},
+         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Wilk},
+         familyi={W\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kwiatkowska},
+         familyi={K\bibinitperiod},
+         given={Marta},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Gal},
+         familyi={G\bibinitperiod},
+         given={Yarin},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=BRB}{%
+         family={Bloem-Reddy},
+         familyi={B\bibinithyphendelim R\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LC+1}
+    \strng{fullhash}{LCWMvdKMGYBRB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{eprint}
+    \verb 2005.00178
+    \endverb
+    \field{title}{On the Benefits of Invariance in Neural Networks}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.LG}
+    \field{year}{2020}
+  \endentry
+
+  \entry{manton2014primer}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MJH}{%
+         family={Manton},
+         familyi={M\bibinitperiod},
+         given={Jonathan\bibnamedelima H},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=APO}{%
+         family={Amblard},
+         familyi={A\bibinitperiod},
+         given={Pierre-Olivier},
+         giveni={P\bibinithyphendelim O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJHAPO1}
+    \strng{fullhash}{MJHAPO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{A primer on reproducing kernel hilbert spaces}
+    \field{journaltitle}{arXiv preprint arXiv:1408.0952}
+    \field{year}{2014}
+  \endentry
+
+  \entry{maron2019universality}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=MH}{%
+         family={Maron},
+         familyi={M\bibinitperiod},
+         given={Haggai},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=FE}{%
+         family={Fetaya},
+         familyi={F\bibinitperiod},
+         given={Ethan},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Segol},
+         familyi={S\bibinitperiod},
+         given={Nimrod},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Lipman},
+         familyi={L\bibinitperiod},
+         given={Yaron},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MH+1}
+    \strng{fullhash}{MHFESNLY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{International Conference on Machine Learning}
+    \field{pages}{4363\bibrangedash 4371}
+    \field{title}{On the Universality of Invariant Networks}
+    \field{year}{2019}
+  \endentry
+
+  \entry{mei2021learning}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MS}{%
+         family={Mei},
+         familyi={M\bibinitperiod},
+         given={Song},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Misiakiewicz},
+         familyi={M\bibinitperiod},
+         given={Theodor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Montanari},
+         familyi={M\bibinitperiod},
+         given={Andrea},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MSMTMA1}
+    \strng{fullhash}{MSMTMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Learning with invariances in random features and kernel
+  models}
+    \field{journaltitle}{arXiv preprint arXiv:2102.13219}
+    \field{year}{2021}
+  \endentry
+
+  \entry{mori1988trace}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MT}{%
+         family={Mori},
+         familyi={M\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MT1}
+    \strng{fullhash}{MT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.1109/9.14428
+    \endverb
+    \field{number}{11}
+    \field{pages}{1088\bibrangedash }
+    \field{title}{Comments on "A matrix inequality associated with bounds on
+  solutions of algebraic Riccati and Lyapunov equation" by J.M. Saniuk and I.B.
+  Rhodes}
+    \field{volume}{33}
+    \field{journaltitle}{IEEE Transactions on Automatic Control}
+    \field{year}{1988}
+  \endentry
+
+  \entry{mroueh2015learning}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=MY}{%
+         family={Mroueh},
+         familyi={M\bibinitperiod},
+         given={Youssef},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Voinea},
+         familyi={V\bibinitperiod},
+         given={Stephen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PTA}{%
+         family={Poggio},
+         familyi={P\bibinitperiod},
+         given={Tomaso\bibnamedelima A},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MYVSPTA1}
+    \strng{fullhash}{MYVSPTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Advances in Neural Information Processing Systems}
+    \field{pages}{1558\bibrangedash 1566}
+    \field{title}{Learning with Group Invariant Features: A Kernel
+  Perspective.}
+    \field{year}{2015}
+  \endentry
+
+  \entry{raj2017local}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=RA}{%
+         family={Raj},
+         familyi={R\bibinitperiod},
+         given={Anant},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kumar},
+         familyi={K\bibinitperiod},
+         given={Abhishek},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Mroueh},
+         familyi={M\bibinitperiod},
+         given={Youssef},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=FT}{%
+         family={Fletcher},
+         familyi={F\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Sch{\"o}lkopf},
+         familyi={S\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {PMLR}%
+    }
+    \strng{namehash}{RA+1}
+    \strng{fullhash}{RAKAMYFTSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{Artificial Intelligence and Statistics}
+    \field{pages}{1225\bibrangedash 1235}
+    \field{title}{Local group invariant representations via orbit embeddings}
+    \field{year}{2017}
+  \endentry
+
+  \entry{ravanbakhsh2017equivariance}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=RS}{%
+         family={Ravanbakhsh},
+         familyi={R\bibinitperiod},
+         given={Siamak},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schneider},
+         familyi={S\bibinitperiod},
+         given={Jeff},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PB}{%
+         family={Poczos},
+         familyi={P\bibinitperiod},
+         given={Barnabas},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {PMLR}%
+    }
+    \strng{namehash}{RSSJPB1}
+    \strng{fullhash}{RSSJPB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{International Conference on Machine Learning}
+    \field{pages}{2892\bibrangedash 2901}
+    \field{title}{Equivariance through parameter-sharing}
+    \field{year}{2017}
+  \endentry
+
+  \entry{sannai2019improved}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=SA}{%
+         family={Sannai},
+         familyi={S\bibinitperiod},
+         given={Akiyoshi},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Imaizumi},
+         familyi={I\bibinitperiod},
+         given={Masaaki},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SAIM1}
+    \strng{fullhash}{SAIM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{eprint}
+    \verb 1910.06552
+    \endverb
+    \field{title}{Improved Generalization Bound of Group Invariant /
+  Equivariant Deep Networks via Quotient Feature Space}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{stat.ML}
+    \field{year}{2019}
+  \endentry
+
+  \entry{scholkopf96incorporatinginvariances}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SB}{%
+         family={Sch{\"o}lkopf},
+         familyi={S\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Burges},
+         familyi={B\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=VV}{%
+         family={Vapnik},
+         familyi={V\bibinitperiod},
+         given={Vladimir},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{SBBCVV1}
+    \strng{fullhash}{SBBCVV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{pages}{47\bibrangedash 52}
+    \field{title}{Incorporating Invariances in Support Vector Learning
+  Machines}
+    \field{year}{1996}
+  \endentry
+
+  \entry{schulz1994constructing}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=SH}{%
+         family={{Schulz-Mirbach}},
+         familyi={S\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SH1}
+    \strng{fullhash}{SH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Proceedings of the 12th IAPR International Conference on
+  Pattern Recognition, Vol. 3 - Conference C: Signal Processing (Cat.
+  No.94CH3440-5)}
+    \field{pages}{387\bibrangedash 390 vol.2}
+    \field{title}{Constructing invariant features by averaging techniques}
+    \field{volume}{2}
+    \field{year}{1994}
+  \endentry
+
+  \entry{schulz1992existence}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=SMH}{%
+         family={Schulz-Mirbach},
+         familyi={S\bibinithyphendelim M\bibinitperiod},
+         given={Hanns},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{SMH1}
+    \strng{fullhash}{SMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{International Conference On Pattern Recognition}
+    \field{pages}{178\bibrangedash 178}
+    \field{title}{On the existence of complete invariant feature spaces in
+  pattern recognition}
+    \field{year}{1992}
+  \endentry
+
+  \entry{sokolic2017generalization}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SJ}{%
+         family={Sokolic},
+         familyi={S\bibinitperiod},
+         given={Jure},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Giryes},
+         familyi={G\bibinitperiod},
+         given={Raja},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Sapiro},
+         familyi={S\bibinitperiod},
+         given={Guillermo},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Rodrigues},
+         familyi={R\bibinitperiod},
+         given={Miguel},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJ+1}
+    \strng{fullhash}{SJGRSGRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Artificial Intelligence and Statistics}
+    \field{pages}{1094\bibrangedash 1103}
+    \field{title}{Generalization error of invariant classifiers}
+    \field{year}{2017}
+  \endentry
+
+  \entry{spencer2020better}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SJS}{%
+         family={Spencer},
+         familyi={S\bibinitperiod},
+         given={James\bibnamedelima S},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Pfau},
+         familyi={P\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Botev},
+         familyi={B\bibinitperiod},
+         given={Aleksandar},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FW}{%
+         family={Foulkes},
+         familyi={F\bibinitperiod},
+         given={WMC},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJS+1}
+    \strng{fullhash}{SJSPDBAFW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Better, Faster Fermionic Neural Networks}
+    \field{journaltitle}{arXiv preprint arXiv:2011.07125}
+    \field{year}{2020}
+  \endentry
+
+  \entry{steinwart2008support}{book}{}
+    \name{author}{2}{}{%
+      {{hash=SI}{%
+         family={Steinwart},
+         familyi={S\bibinitperiod},
+         given={Ingo},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Christmann},
+         familyi={C\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{SICA1}
+    \strng{fullhash}{SICA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{isbn}{978-0-387-77241-7}
+    \field{series}{Information science and statistics}
+    \field{title}{Support Vector Machines}
+    \field{year}{2008}
+  \endentry
+
+  \entry{steinwart2012mercer}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SI}{%
+         family={Steinwart},
+         familyi={S\bibinitperiod},
+         given={Ingo},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Scovel},
+         familyi={S\bibinitperiod},
+         given={Clint},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{SISC1}
+    \strng{fullhash}{SISC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{3}
+    \field{pages}{363\bibrangedash 417}
+    \field{title}{Mercer’s theorem on general domains: On the interaction
+  between measures, kernels, and RKHSs}
+    \field{volume}{35}
+    \field{journaltitle}{Constructive Approximation}
+    \field{year}{2012}
+  \endentry
+
+  \entry{winkels20183d}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WM}{%
+         family={Winkels},
+         familyi={W\bibinitperiod},
+         given={Marysia},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CTS}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Taco\bibnamedelima S},
+         giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WMCTS1}
+    \strng{fullhash}{WMCTS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{3D G-CNNs for pulmonary nodule detection}
+    \field{journaltitle}{arXiv preprint arXiv:1804.04656}
+    \field{year}{2018}
+  \endentry
+
+  \entry{wood1996representation}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WJ}{%
+         family={Wood},
+         familyi={W\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=STJ}{%
+         family={Shawe-Taylor},
+         familyi={S\bibinithyphendelim T\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{WJSTJ1}
+    \strng{fullhash}{WJSTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{number}{1-2}
+    \field{pages}{33\bibrangedash 60}
+    \field{title}{Representation theory and invariant neural networks}
+    \field{volume}{69}
+    \field{journaltitle}{Discrete applied mathematics}
+    \field{year}{1996}
+  \endentry
+
+  \entry{xu2012robustness}{article}{}
+    \name{author}{2}{}{%
+      {{hash=XH}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Huan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mannor},
+         familyi={M\bibinitperiod},
+         given={Shie},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{XHMS1}
+    \strng{fullhash}{XHMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \field{number}{3}
+    \field{pages}{391\bibrangedash 423}
+    \field{title}{Robustness and generalization}
+    \field{volume}{86}
+    \field{journaltitle}{Machine learning}
+    \field{year}{2012}
+  \endentry
+
+  \entry{yarotsky2018universal}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=YD}{%
+         family={Yarotsky},
+         familyi={Y\bibinitperiod},
+         given={Dmitry},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YD1}
+    \strng{fullhash}{YD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \verb{eprint}
+    \verb 1804.10306
+    \endverb
+    \field{title}{Universal approximations of invariant maps by neural
+  networks}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.NE}
+    \field{year}{2018}
+  \endentry
+
+  \entry{zaheer2017deep}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=ZM}{%
+         family={Zaheer},
+         familyi={Z\bibinitperiod},
+         given={Manzil},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kottur},
+         familyi={K\bibinitperiod},
+         given={Satwik},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Ravanbakhsh},
+         familyi={R\bibinitperiod},
+         given={Siamak},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PB}{%
+         family={Poczos},
+         familyi={P\bibinitperiod},
+         given={Barnabas},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SRR}{%
+         family={Salakhutdinov},
+         familyi={S\bibinitperiod},
+         given={Russ\bibnamedelima R},
+         giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=SAJ}{%
+         family={Smola},
+         familyi={S\bibinitperiod},
+         given={Alexander\bibnamedelima J},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZM+1}
+    \strng{fullhash}{ZMKSRSPBSRRSAJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{Advances in neural information processing systems}
+    \field{pages}{3391\bibrangedash 3401}
+    \field{title}{Deep sets}
+    \field{year}{2017}
+  \endentry
+\enddatalist
+\endinput

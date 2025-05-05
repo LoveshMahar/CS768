@@ -1,0 +1,1405 @@
+% Use this file for citations not found in the ACL Anthology (contained in "anthology.bib").
+
+@inproceedings{danilevsky_survey_2020,
+    title = "{A} {Survey} of the {State} of {Explainable} {AI} for {Natural} {Language} {Processing}",
+    author = "Danilevsky, Marina  and
+      Qian, Kun  and
+      Aharonov, Ranit  and
+      Katsis, Yannis  and
+      Kawas, Ban  and
+      Sen, Prithviraj",
+    booktitle = "Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing",
+    month = dec,
+    year = "2020",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.aacl-main.46",
+    pages = "447--459",
+}
+
+
+@misc{lanham_measuring_2023,
+	title = {Measuring {Faithfulness} in {Chain}-of-{Thought} {Reasoning}},
+	url = {http://arxiv.org/abs/2307.13702},
+	doi = {10.48550/arXiv.2307.13702},
+	abstract = {Large language models (LLMs) perform better when they produce step-by-step, "Chain-of-Thought" (CoT) reasoning before answering a question, but it is unclear if the stated reasoning is a faithful explanation of the model's actual reasoning (i.e., its process for answering the question). We investigate hypotheses for how CoT reasoning may be unfaithful, by examining how the model predictions change when we intervene on the CoT (e.g., by adding mistakes or paraphrasing it). Models show large variation across tasks in how strongly they condition on the CoT when predicting their answer, sometimes relying heavily on the CoT and other times primarily ignoring it. CoT's performance boost does not seem to come from CoT's added test-time compute alone or from information encoded via the particular phrasing of the CoT. As models become larger and more capable, they produce less faithful reasoning on most tasks we study. Overall, our results suggest that CoT can be faithful if the circumstances such as the model size and task are carefully chosen.},
+	urldate = {2023-10-27},
+	publisher = {arXiv},
+	author = {Lanham, Tamera and Chen, Anna and Radhakrishnan, Ansh and Steiner, Benoit and Denison, Carson and Hernandez, Danny and Li, Dustin and Durmus, Esin and Hubinger, Evan and Kernion, Jackson and Lukošiūtė, Kamilė and Nguyen, Karina and Cheng, Newton and Joseph, Nicholas and Schiefer, Nicholas and Rausch, Oliver and Larson, Robin and McCandlish, Sam and Kundu, Sandipan and Kadavath, Saurav and Yang, Shannon and Henighan, Thomas and Maxwell, Timothy and Telleen-Lawton, Timothy and Hume, Tristan and Hatfield-Dodds, Zac and Kaplan, Jared and Brauner, Jan and Bowman, Samuel R. and Perez, Ethan},
+	month = jul,
+	year = {2023},
+	note = {arXiv:2307.13702 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/TIR549LA/Lanham et al. - 2023 - Measuring Faithfulness in Chain-of-Thought Reasoni.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/XFDE8J2E/2307.html:text/html},
+}
+
+
+@inproceedings{
+zelikman_star_2022,
+title={{ST}a{R}: {Bootstrapping} {Reasoning} {With} {Reasoning}},
+author={Eric Zelikman and Yuhuai Wu and Jesse Mu and Noah Goodman},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=_3ELRdg2sgI}
+}
+
+
+@misc{radhakrishnan_question_2023,
+	title = {Question {Decomposition} {Improves} the {Faithfulness} of {Model}-{Generated} {Reasoning}},
+	url = {http://arxiv.org/abs/2307.11768},
+	doi = {10.48550/arXiv.2307.11768},
+	abstract = {As large language models (LLMs) perform more difficult tasks, it becomes harder to verify the correctness and safety of their behavior. One approach to help with this issue is to prompt LLMs to externalize their reasoning, e.g., by having them generate step-by-step reasoning as they answer a question (Chain-of-Thought; CoT). The reasoning may enable us to check the process that models use to perform tasks. However, this approach relies on the stated reasoning faithfully reflecting the model's actual reasoning, which is not always the case. To improve over the faithfulness of CoT reasoning, we have models generate reasoning by decomposing questions into subquestions. Decomposition-based methods achieve strong performance on question-answering tasks, sometimes approaching that of CoT while improving the faithfulness of the model's stated reasoning on several recently-proposed metrics. By forcing the model to answer simpler subquestions in separate contexts, we greatly increase the faithfulness of model-generated reasoning over CoT, while still achieving some of the performance gains of CoT. Our results show it is possible to improve the faithfulness of model-generated reasoning; continued improvements may lead to reasoning that enables us to verify the correctness and safety of LLM behavior.},
+	urldate = {2023-10-27},
+	publisher = {arXiv},
+	author = {Radhakrishnan, Ansh and Nguyen, Karina and Chen, Anna and Chen, Carol and Denison, Carson and Hernandez, Danny and Durmus, Esin and Hubinger, Evan and Kernion, Jackson and Lukošiūtė, Kamilė and Cheng, Newton and Joseph, Nicholas and Schiefer, Nicholas and Rausch, Oliver and McCandlish, Sam and Showk, Sheer El and Lanham, Tamera and Maxwell, Tim and Chandrasekaran, Venkatesa and Hatfield-Dodds, Zac and Kaplan, Jared and Brauner, Jan and Bowman, Samuel R. and Perez, Ethan},
+	month = jul,
+	year = {2023},
+	note = {arXiv:2307.11768 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning},
+	annote = {Comment: For few-shot examples and prompts, see https://github.com/anthropics/DecompositionFaithfulnessPaper},
+}
+
+
+@misc{huang_large_2022,
+	title = {Large {Language} {Models} {Can} {Self}-{Improve}},
+	url = {http://arxiv.org/abs/2210.11610},
+	doi = {10.48550/arXiv.2210.11610},
+	abstract = {Large Language Models (LLMs) have achieved excellent performances in various tasks. However, fine-tuning an LLM requires extensive supervision. Human, on the other hand, may improve their reasoning abilities by self-thinking without external inputs. In this work, we demonstrate that an LLM is also capable of self-improving with only unlabeled datasets. We use a pre-trained LLM to generate "high-confidence" rationale-augmented answers for unlabeled questions using Chain-of-Thought prompting and self-consistency, and fine-tune the LLM using those self-generated solutions as target outputs. We show that our approach improves the general reasoning ability of a 540B-parameter LLM (74.4\%-{\textgreater}82.1\% on GSM8K, 78.2\%-{\textgreater}83.0\% on DROP, 90.0\%-{\textgreater}94.4\% on OpenBookQA, and 63.4\%-{\textgreater}67.9\% on ANLI-A3) and achieves state-of-the-art-level performance, without any ground truth label. We conduct ablation studies and show that fine-tuning on reasoning is critical for self-improvement.},
+	urldate = {2023-10-23},
+	publisher = {arXiv},
+	author = {Huang, Jiaxin and Gu, Shixiang Shane and Hou, Le and Wu, Yuexin and Wang, Xuezhi and Yu, Hongkun and Han, Jiawei},
+	month = oct,
+	year = {2022},
+	note = {arXiv:2210.11610 [cs]},
+	keywords = {Computer Science - Computation and Language},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/HLA3D4RU/Huang et al. - 2022 - Large Language Models Can Self-Improve.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/IXLCR48P/2210.html:text/html},
+}
+
+
+@misc{chen_models_2023,
+	title = {Do {Models} {Explain} {Themselves}? {Counterfactual} {Simulatability} of {Natural} {Language} {Explanations}},
+	shorttitle = {Do {Models} {Explain} {Themselves}?},
+	url = {http://arxiv.org/abs/2307.08678},
+	doi = {10.48550/arXiv.2307.08678},
+	abstract = {Large language models (LLMs) are trained to imitate humans to explain human decisions. However, do LLMs explain themselves? Can they help humans build mental models of how LLMs process different inputs? To answer these questions, we propose to evaluate \${\textbackslash}textbf\{counterfactual simulatability\}\$ of natural language explanations: whether an explanation can enable humans to precisely infer the model's outputs on diverse counterfactuals of the explained input. For example, if a model answers "yes" to the input question "Can eagles fly?" with the explanation "all birds can fly", then humans would infer from the explanation that it would also answer "yes" to the counterfactual input "Can penguins fly?". If the explanation is precise, then the model's answer should match humans' expectations. We implemented two metrics based on counterfactual simulatability: precision and generality. We generated diverse counterfactuals automatically using LLMs. We then used these metrics to evaluate state-of-the-art LLMs (e.g., GPT-4) on two tasks: multi-hop factual reasoning and reward modeling. We found that LLM's explanations have low precision and that precision does not correlate with plausibility. Therefore, naively optimizing human approvals (e.g., RLHF) may not be a sufficient solution.},
+	urldate = {2023-10-16},
+	publisher = {arXiv},
+	author = {Chen, Yanda and Zhong, Ruiqi and Ri, Narutatsu and Zhao, Chen and He, He and Steinhardt, Jacob and Yu, Zhou and McKeown, Kathleen},
+	month = jul,
+	year = {2023},
+	note = {arXiv:2307.08678 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/ETRWYU54/Chen et al. - 2023 - Do Models Explain Themselves Counterfactual Simul.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/3I9DK2PW/2307.html:text/html},
+}
+
+@misc{lyu_faithful_2023,
+  title={Faithful {Chain}-of-{Thought} {Reasoning}},
+  author={Qing Lyu and Shreya Havaldar and Adam Stein and Li Zhang and Delip Rao and Eric Wong and Marianna Apidianaki and Chris Callison-Burch},
+  journal={ArXiv},
+  year={2023},
+  volume={abs/2301.13379},
+  url={https://api.semanticscholar.org/CorpusID:256416127}
+}
+
+
+
+@misc{liu_evaluating_2023,
+	title = {Evaluating {Verifiability} in {Generative} {Search} {Engines}},
+	url = {http://arxiv.org/abs/2304.09848},
+	doi = {10.48550/arXiv.2304.09848},
+	abstract = {Generative search engines directly generate responses to user queries, along with in-line citations. A prerequisite trait of a trustworthy generative search engine is verifiability, i.e., systems should cite comprehensively (high citation recall; all statements are fully supported by citations) and accurately (high citation precision; every cite supports its associated statement). We conduct human evaluation to audit four popular generative search engines -- Bing Chat, NeevaAI, perplexity.ai, and YouChat -- across a diverse set of queries from a variety of sources (e.g., historical Google user queries, dynamically-collected open-ended questions on Reddit, etc.). We find that responses from existing generative search engines are fluent and appear informative, but frequently contain unsupported statements and inaccurate citations: on average, a mere 51.5\% of generated sentences are fully supported by citations and only 74.5\% of citations support their associated sentence. We believe that these results are concerningly low for systems that may serve as a primary tool for information-seeking users, especially given their facade of trustworthiness. We hope that our results further motivate the development of trustworthy generative search engines and help researchers and users better understand the shortcomings of existing commercial systems.},
+	urldate = {2023-04-27},
+	publisher = {arXiv},
+	author = {Liu, Nelson F. and Zhang, Tianyi and Liang, Percy},
+	month = apr,
+	year = {2023},
+	note = {arXiv:2304.09848 [cs]},
+	keywords = {Computer Science - Computation and Language, Computer Science - Information Retrieval},
+	annote = {Comment: 25 pages, 12 figures},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/W8HDJ6LQ/Liu et al. - 2023 - Evaluating Verifiability in Generative Search Engi.pdf:application/pdf},
+}
+
+
+@inproceedings{hase_leakage-adjusted_2020,
+    title = "{Leakage-Adjusted} {Simulatability}: {Can} {Models} {Generate} {Non-Trivial} {Explanations} of {Their} {Behavior} in {Natural} {Language}?",
+    author = "Hase, Peter  and
+      Zhang, Shiyue  and
+      Xie, Harry  and
+      Bansal, Mohit",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2020",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.findings-emnlp.390",
+    doi = "10.18653/v1/2020.findings-emnlp.390",
+    pages = "4351--4367",
+}
+
+
+@misc{pacchiardi_how_2023,
+	title = {How to {Catch} an {AI} {Liar}: {Lie} {Detection} in {Black}-{Box} {LLMs} by {Asking} {Unrelated} {Questions}},
+	shorttitle = {How to {Catch} an {AI} {Liar}},
+	url = {http://arxiv.org/abs/2309.15840},
+	doi = {10.48550/arXiv.2309.15840},
+	abstract = {Large language models (LLMs) can "lie", which we define as outputting false statements despite "knowing" the truth in a demonstrable sense. LLMs might "lie", for example, when instructed to output misinformation. Here, we develop a simple lie detector that requires neither access to the LLM's activations (black-box) nor ground-truth knowledge of the fact in question. The detector works by asking a predefined set of unrelated follow-up questions after a suspected lie, and feeding the LLM's yes/no answers into a logistic regression classifier. Despite its simplicity, this lie detector is highly accurate and surprisingly general. When trained on examples from a single setting -- prompting GPT-3.5 to lie about factual questions -- the detector generalises out-of-distribution to (1) other LLM architectures, (2) LLMs fine-tuned to lie, (3) sycophantic lies, and (4) lies emerging in real-life scenarios such as sales. These results indicate that LLMs have distinctive lie-related behavioural patterns, consistent across architectures and contexts, which could enable general-purpose lie detection.},
+	urldate = {2023-10-27},
+	publisher = {arXiv},
+	author = {Pacchiardi, Lorenzo and Chan, Alex J. and Mindermann, Sören and Moscovitz, Ilan and Pan, Alexa Y. and Gal, Yarin and Evans, Owain and Brauner, Jan},
+	month = sep,
+	year = {2023},
+	note = {arXiv:2309.15840 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/5TALNWUL/Pacchiardi et al. - 2023 - How to Catch an AI Liar Lie Detection in Black-Bo.pdf:application/pdf},
+}
+
+
+@article{jacovi-goldberg-2021-aligning,
+    title = "{Aligning} {Faithful} {Interpretations} with their {Social} {Attribution}",
+    author = "Jacovi, Alon  and
+      Goldberg, Yoav",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "9",
+    year = "2021",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/2021.tacl-1.18",
+    doi = "10.1162/tacl_a_00367",
+    pages = "294--310",
+}
+@inproceedings{min-etal-2019-multi,
+    title = "{Multi-hop} {Reading} {Comprehension} through {Question} {Decomposition} and {Rescoring}",
+    author = "Min, Sewon  and
+      Zhong, Victor  and
+      Zettlemoyer, Luke  and
+      Hajishirzi, Hannaneh",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1613",
+    doi = "10.18653/v1/P19-1613",
+    pages = "6097--6109",
+}
+@inproceedings{parrish-etal-2022-bbq,
+    title = "{BBQ}: {A} {hand-built} {bias} {benchmark} for {question} {answering}",
+    author = "Parrish, Alicia  and
+      Chen, Angelica  and
+      Nangia, Nikita  and
+      Padmakumar, Vishakh  and
+      Phang, Jason  and
+      Thompson, Jana  and
+      Htut, Phu Mon  and
+      Bowman, Samuel",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2022",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-acl.165",
+    doi = "10.18653/v1/2022.findings-acl.165",
+    pages = "2086--2105",
+}
+@inproceedings{perez-etal-2020-unsupervised,
+    title = "{Unsupervised} {Question} {Decomposition} for {Question} {Answering}",
+    author = "Perez, Ethan  and
+      Lewis, Patrick  and
+      Yih, Wen-tau  and
+      Cho, Kyunghyun  and
+      Kiela, Douwe",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.713",
+    doi = "10.18653/v1/2020.emnlp-main.713",
+    pages = "8864--8880",
+}
+
+@misc{bai2022constitutional,
+      title={Constitutional {AI}: {Harmlessness} from {AI} {Feedback}}, 
+      author={Yuntao Bai and Saurav Kadavath and Sandipan Kundu and Amanda Askell and Jackson Kernion and Andy Jones and Anna Chen and Anna Goldie and Azalia Mirhoseini and Cameron McKinnon and others},
+      year={2022},
+      url={https://arxiv.org/abs/2212.08073},
+      eprint={2212.08073},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{jung_maieutic_2022,
+    title = "Maieutic Prompting: Logically Consistent Reasoning with Recursive Explanations",
+    author = "Jung, Jaehun  and
+      Qin, Lianhui  and
+      Welleck, Sean  and
+      Brahman, Faeze  and
+      Bhagavatula, Chandra  and
+      Le Bras, Ronan  and
+      Choi, Yejin",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.82",
+    pages = "1266--1279",
+    abstract = "Pre-trained language models (LMs) struggle with consistent reasoning; recently, prompting LMs to generate explanations that self-guide the inference has emerged as a promising direction to amend this. However, these approaches are fundamentally bounded by the correctness of explanations, which themselves are often noisy and inconsistent. In this work, we develop Maieutic Prompting, which aims to infer a correct answer to a question even from the unreliable generations of LM. Maieutic Prompting induces a tree of explanations abductively (e.g. X is true, because ...) and recursively, then frames the inference as a satisfiability problem over these explanations and their logical relations. We test Maieutic Prompting for true/false QA on three challenging benchmarks that require complex commonsense reasoning. Maieutic Prompting achieves up to 20{\%} better accuracy than state-of-the-art prompting methods, and as a fully unsupervised approach, performs competitively with supervised models. We also show that Maieutic Prompting improves robustness in inference while providing interpretable rationales.",
+}
+
+@article{binz_using_2023,
+	title = {Using cognitive psychology to understand {GPT}-3},
+	volume = {120},
+	issn = {0027-8424, 1091-6490},
+	url = {http://arxiv.org/abs/2206.14576},
+	doi = {10.1073/pnas.2218523120},
+	abstract = {We study GPT-3, a recent large language model, using tools from cognitive psychology. More specifically, we assess GPT-3's decision-making, information search, deliberation, and causal reasoning abilities on a battery of canonical experiments from the literature. We find that much of GPT-3's behavior is impressive: it solves vignette-based tasks similarly or better than human subjects, is able to make decent decisions from descriptions, outperforms humans in a multi-armed bandit task, and shows signatures of model-based reinforcement learning. Yet we also find that small perturbations to vignette-based tasks can lead GPT-3 vastly astray, that it shows no signatures of directed exploration, and that it fails miserably in a causal reasoning task. These results enrich our understanding of current large language models and pave the way for future investigations using tools from cognitive psychology to study increasingly capable and opaque artificial agents.},
+	number = {6},
+	urldate = {2023-03-29},
+	journal = {Proceedings of the National Academy of Sciences},
+	author = {Binz, Marcel and Schulz, Eric},
+	month = feb,
+	year = {2023},
+	note = {arXiv:2206.14576 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning},
+	pages = {e2218523120},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/D7JLR8LV/Binz and Schulz - 2023 - Using cognitive psychology to understand GPT-3.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/FWMAKRDA/2206.html:text/html},
+}
+
+@inproceedings{tafjord_entailer_2022,
+	address = {Abu Dhabi, United Arab Emirates},
+	title = {Entailer: {Answering} {Questions} with {Faithful} and {Truthful} {Chains} of {Reasoning}},
+	shorttitle = {Entailer},
+	url = {https://aclanthology.org/2022.emnlp-main.134},
+	abstract = {Our goal is a question-answering (QA) system that can show how its answers are implied by its own internal beliefs via a systematic chain of reasoning. Such a capability would allow better understanding of why a model produced the answer it did. Our approach is to recursively combine a trained backward-chainingmodel, capable of generating a set of premises entailing an answer hypothesis, with a verifier that checks that the model itself believes those premises (and the entailment itself) through self-querying. To our knowledge, this is the first system to generate multistep chains that are both faithful (the answer follows from the reasoning) and truthful (the chain reflects the system's own internal beliefs). In evaluation using two different datasets, users judge that a majority (70\%+) of generated chains clearly show how an answer follows from a set of facts - substantially better than a high-performance baseline - while preserving answer accuracy. By materializing model beliefs that systematically support an answer, new opportunities arise for understanding the model's system of belief, and diagnosing and correcting its misunderstandings when an answer is wrong.},
+	urldate = {2023-03-29},
+	booktitle = {Proceedings of the 2022 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	publisher = {Association for Computational Linguistics},
+	author = {Tafjord, Oyvind and Dalvi Mishra, Bhavana and Clark, Peter},
+	month = dec,
+	year = {2022},
+	pages = {2078--2093},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/F9LCIXRQ/Tafjord et al. - 2022 - Entailer Answering Questions with Faithful and Tr.pdf:application/pdf},
+}
+
+@inproceedings{jacovi_towards_2020,
+	address = {Online},
+	title = {Towards {Faithfully} {Interpretable} {NLP} {Systems}: {How} {Should} {We} {Define} and {Evaluate} {Faithfulness}?},
+	shorttitle = {Towards {Faithfully} {Interpretable} {NLP} {Systems}},
+	url = {https://aclanthology.org/2020.acl-main.386},
+	doi = {10.18653/v1/2020.acl-main.386},
+	abstract = {With the growing popularity of deep-learning based NLP models, comes a need for interpretable systems. But what is interpretability, and what constitutes a high-quality interpretation? In this opinion piece we reflect on the current state of interpretability evaluation research. We call for more clearly differentiating between different desired criteria an interpretation should satisfy, and focus on the faithfulness criteria. We survey the literature with respect to faithfulness evaluation, and arrange the current approaches around three assumptions, providing an explicit form to how faithfulness is âdefinedâ by the community. We provide concrete guidelines on how evaluation of interpretation methods should and should not be conducted. Finally, we claim that the current binary definition for faithfulness sets a potentially unrealistic bar for being considered faithful. We call for discarding the binary notion of faithfulness in favor of a more graded one, which we believe will be of greater practical utility.},
+	urldate = {2023-03-29},
+	booktitle = {Proceedings of the 58th {Annual} {Meeting} of the {Association} for {Computational} {Linguistics}},
+	publisher = {Association for Computational Linguistics},
+	author = {Jacovi, Alon and Goldberg, Yoav},
+	month = jul,
+	year = {2020},
+	pages = {4198--4205},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/BBMZXDR6/Jacovi and Goldberg - 2020 - Towards Faithfully Interpretable NLP Systems How .pdf:application/pdf},
+}
+
+@inproceedings{jain_attention_2019,
+	address = {Minneapolis, Minnesota},
+	title = {Attention is not {Explanation}},
+	url = {https://aclanthology.org/N19-1357},
+	doi = {10.18653/v1/N19-1357},
+	abstract = {Attention mechanisms have seen wide adoption in neural NLP models. In addition to improving predictive performance, these are often touted as affording transparency: models equipped with attention provide a distribution over attended-to input units, and this is often presented (at least implicitly) as communicating the relative importance of inputs. However, it is unclear what relationship exists between attention weights and model outputs. In this work we perform extensive experiments across a variety of NLP tasks that aim to assess the degree to which attention weights provide meaningful âexplanationsâ for predictions. We find that they largely do not. For example, learned attention weights are frequently uncorrelated with gradient-based measures of feature importance, and one can identify very different attention distributions that nonetheless yield equivalent predictions. Our findings show that standard attention modules do not provide meaningful explanations and should not be treated as though they do.},
+	urldate = {2023-03-29},
+	booktitle = {Proceedings of the 2019 {Conference} of the {North} {American} {Chapter} of the {Association} for {Computational} {Linguistics}: {Human} {Language} {Technologies}, {Volume} 1 ({Long} and {Short} {Papers})},
+	publisher = {Association for Computational Linguistics},
+	author = {Jain, Sarthak and Wallace, Byron C.},
+	month = jun,
+	year = {2019},
+	pages = {3543--3556},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/NLQ7GDSE/Jain and Wallace - 2019 - Attention is not Explanation.pdf:application/pdf},
+}
+
+@inproceedings{pruthi_learning_2020,
+	address = {Online},
+	title = {Learning to {Deceive} with {Attention}-{Based} {Explanations}},
+	url = {https://aclanthology.org/2020.acl-main.432},
+	doi = {10.18653/v1/2020.acl-main.432},
+	abstract = {Attention mechanisms are ubiquitous components in neural architectures applied to natural language processing. In addition to yielding gains in predictive accuracy, attention weights are often claimed to confer interpretability, purportedly useful both for providing insights to practitioners and for explaining why a model makes its decisions to stakeholders. We call the latter use of attention mechanisms into question by demonstrating a simple method for training models to produce deceptive attention masks. Our method diminishes the total weight assigned to designated impermissible tokens, even when the models can be shown to nevertheless rely on these features to drive predictions. Across multiple models and tasks, our approach manipulates attention weights while paying surprisingly little cost in accuracy. Through a human study, we show that our manipulated attention-based explanations deceive people into thinking that predictions from a model biased against gender minorities do not rely on the gender. Consequently, our results cast doubt on attention's reliability as a tool for auditing algorithms in the context of fairness and accountability.},
+	urldate = {2023-03-29},
+	booktitle = {Proceedings of the 58th {Annual} {Meeting} of the {Association} for {Computational} {Linguistics}},
+	publisher = {Association for Computational Linguistics},
+	author = {Pruthi, Danish and Gupta, Mansi and Dhingra, Bhuwan and Neubig, Graham and Lipton, Zachary C.},
+	month = jul,
+	year = {2020},
+	pages = {4782--4793},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/7DZFBY77/Pruthi et al. - 2020 - Learning to Deceive with Attention-Based Explanati.pdf:application/pdf},
+}
+
+@misc{uesato_solving_2022,
+	title = {Solving math word problems with process- and outcome-based feedback},
+	url = {http://arxiv.org/abs/2211.14275},
+	doi = {10.48550/arXiv.2211.14275},
+	abstract = {Recent work has shown that asking language models to generate reasoning steps improves performance on many reasoning tasks. When moving beyond prompting, this raises the question of how we should supervise such models: outcome-based approaches which supervise the final result, or process-based approaches which supervise the reasoning process itself? Differences between these approaches might naturally be expected not just in final-answer errors but also in reasoning errors, which can be difficult to detect and are problematic in many real-world domains such as education. We run the first comprehensive comparison between process- and outcome-based approaches trained on a natural language task, GSM8K. We find that pure outcome-based supervision produces similar final-answer error rates with less label supervision. However, for correct reasoning steps we find it necessary to use process-based supervision or supervision from learned reward models that emulate process-based feedback. In total, we improve the previous best results from 16.8\% \${\textbackslash}to\$ 12.7\% final-answer error and 14.0\% \${\textbackslash}to\$ 3.4\% reasoning error among final-answer-correct solutions.},
+	urldate = {2023-03-29},
+	publisher = {arXiv},
+	author = {Uesato, Jonathan and Kushman, Nate and Kumar, Ramana and Song, Francis and Siegel, Noah and Wang, Lisa and Creswell, Antonia and Irving, Geoffrey and Higgins, Irina},
+	month = nov,
+	year = {2022},
+	note = {arXiv:2211.14275 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/89QHUZTI/Uesato et al. - 2022 - Solving math word problems with process- and outco.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/2MHK62VI/2211.html:text/html},
+}
+
+@misc{creswell_faithful_2022,
+	title = {Faithful {Reasoning} {Using} {Large} {Language} {Models}},
+	url = {http://arxiv.org/abs/2208.14271},
+	doi = {10.48550/arXiv.2208.14271},
+	abstract = {Although contemporary large language models (LMs) demonstrate impressive question-answering capabilities, their answers are typically the product of a single call to the model. This entails an unwelcome degree of opacity and compromises performance, especially on problems that are inherently multi-step. To address these limitations, we show how LMs can be made to perform faithful multi-step reasoning via a process whose causal structure mirrors the underlying logical structure of the problem. Our approach works by chaining together reasoning steps, where each step results from calls to two fine-tuned LMs, one for selection and one for inference, to produce a valid reasoning trace. Our method carries out a beam search through the space of reasoning traces to improve reasoning quality. We demonstrate the effectiveness of our model on multi-step logical deduction and scientific question-answering, showing that it outperforms baselines on final answer accuracy, and generates humanly interpretable reasoning traces whose validity can be checked by the user.},
+	urldate = {2023-03-29},
+	publisher = {arXiv},
+	author = {Creswell, Antonia and Shanahan, Murray},
+	month = aug,
+	year = {2022},
+	note = {arXiv:2208.14271 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/GJ4JDNHK/Creswell and Shanahan - 2022 - Faithful Reasoning Using Large Language Models.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/UAJZMWM6/2208.html:text/html},
+}
+
+@misc{saha_summarization_2023,
+	title = {Summarization {Programs}: {Interpretable} {Abstractive} {Summarization} with {Neural} {Modular} {Trees}},
+	shorttitle = {Summarization {Programs}},
+	url = {http://arxiv.org/abs/2209.10492},
+	doi = {10.48550/arXiv.2209.10492},
+	abstract = {Current abstractive summarization models either suffer from a lack of clear interpretability or provide incomplete rationales by only highlighting parts of the source document. To this end, we propose the Summarization Program (SP), an interpretable modular framework consisting of an (ordered) list of binary trees, each encoding the step-by-step generative process of an abstractive summary sentence from the source document. A Summarization Program contains one root node per summary sentence, and a distinct tree connects each summary sentence (root node) to the document sentences (leaf nodes) from which it is derived, with the connecting nodes containing intermediate generated sentences. Edges represent different modular operations involved in summarization such as sentence fusion, compression, and paraphrasing. We first propose an efficient best-first search method over neural modules, SP-Search that identifies SPs for human summaries by directly optimizing for ROUGE scores. Next, using these programs as automatic supervision, we propose seq2seq models that generate Summarization Programs, which are then executed to obtain final summaries. We demonstrate that SP-Search effectively represents the generative process behind human summaries using modules that are typically faithful to their intended behavior. We also conduct a simulation study to show that Summarization Programs improve the interpretability of summarization models by allowing humans to better simulate model reasoning. Summarization Programs constitute a promising step toward interpretable and modular abstractive summarization, a complex task previously addressed primarily through blackbox end-to-end neural systems. Supporting code available at https://github.com/swarnaHub/SummarizationPrograms},
+	urldate = {2023-03-29},
+	publisher = {arXiv},
+	author = {Saha, Swarnadeep and Zhang, Shiyue and Hase, Peter and Bansal, Mohit},
+	month = feb,
+	year = {2023},
+	note = {arXiv:2209.10492 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning, Computer Science - Software Engineering},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/VA9MG53P/Saha et al. - 2023 - Summarization Programs Interpretable Abstractive .pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/XXBRHVIF/2209.html:text/html},
+}
+
+@article{lipton_mythos_2018,
+	title = {The {Mythos} of {Model} {Interpretability}: {In} machine learning, the concept of interpretability is both important and slippery.},
+	volume = {16},
+	issn = {1542-7730},
+	shorttitle = {The {Mythos} of {Model} {Interpretability}},
+	url = {https://dl.acm.org/doi/10.1145/3236386.3241340},
+	doi = {10.1145/3236386.3241340},
+	abstract = {Supervised machine-learning models boast remarkable predictive capabilities. But can you trust your model? Will it work in deployment? What else can it tell you about the world?},
+	number = {3},
+	urldate = {2023-03-29},
+	journal = {Queue},
+	author = {Lipton, Zachary C.},
+	month = jun,
+	year = {2018},
+	pages = {31--57},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/E688S88N/Lipton - 2018 - The Mythos of Model Interpretability In machine l.pdf:application/pdf},
+}
+
+@misc{narang_wt5_2020,
+	title = {{WT5}?! {Training} {Text}-to-{Text} {Models} to {Explain} their {Predictions}},
+	shorttitle = {{WT5}?},
+	url = {http://arxiv.org/abs/2004.14546},
+	abstract = {Neural networks have recently achieved human-level performance on various challenging natural language processing (NLP) tasks, but it is notoriously difficult to understand why a neural network produced a particular prediction. In this paper, we leverage the text-to-text framework proposed by Raffel et al.(2019) to train language models to output a natural text explanation alongside their prediction. Crucially, this requires no modifications to the loss function or training and decoding procedures -- we simply train the model to output the explanation after generating the (natural text) prediction. We show that this approach not only obtains state-of-the-art results on explainability benchmarks, but also permits learning from a limited set of labeled explanations and transferring rationalization abilities across datasets. To facilitate reproducibility and future work, we release our code use to train the models.},
+	urldate = {2023-03-29},
+	publisher = {arXiv},
+	author = {Narang, Sharan and Raffel, Colin and Lee, Katherine and Roberts, Adam and Fiedel, Noah and Malkan, Karishma},
+	month = apr,
+	year = {2020},
+	note = {arXiv:2004.14546 [cs]},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/84FUFFF6/Narang et al. - 2020 - WT5! Training Text-to-Text Models to Explain thei.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/AMAQQ9QM/2004.html:text/html},
+}
+
+@inproceedings{
+ye_unreliability_2022,
+	title = {The {Unreliability} of {Explanations} in {Few}-shot {Prompting} for {Textual} {Reasoning}},
+author={Xi Ye and Greg Durrett},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=Bct2f8fRd8S}
+}
+
+
+@article{jacovi_aligning_2021,
+	title = {Aligning {Faithful} {Interpretations} with their {Social} {Attribution}},
+	volume = {9},
+	issn = {2307-387X},
+	url = {https://doi.org/10.1162/tacl_a_00367},
+	doi = {10.1162/tacl_a_00367},
+	abstract = {We find that the requirement of model interpretations to be faithful is vague and incomplete. With interpretation by textual highlights as a case study, we present several failure cases. Borrowing concepts from social science, we identify that the problem is a misalignment between the causal chain of decisions (causal attribution) and the attribution of human behavior to the interpretation (social attribution). We reformulate faithfulness as an accurate attribution of causality to the model, and introduce the concept of aligned faithfulness: faithful causal chains that are aligned with their expected social behavior. The two steps of causal attribution and social attribution together complete the process of explaining behavior. With this formalization, we characterize various failures of misaligned faithful highlight interpretations, and propose an alternative causal chain to remedy the issues. Finally, we implement highlight explanations of the proposed causal format using contrastive explanations.},
+	urldate = {2023-03-29},
+	journal = {Transactions of the Association for Computational Linguistics},
+	author = {Jacovi, Alon and Goldberg, Yoav},
+	month = mar,
+	year = {2021},
+	pages = {294--310},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/C4INNBMA/Jacovi and Goldberg - 2021 - Aligning Faithful Interpretations with their Socia.pdf:application/pdf;Snapshot:/Users/milesturpin/Zotero/storage/9VHRT3WU/Aligning-Faithful-Interpretations-with-their.html:text/html},
+}
+
+@inproceedings{ross_does_2022,
+	address = {Abu Dhabi, United Arab Emirates},
+	title = {Does {Self}-{Rationalization} {Improve} {Robustness} to {Spurious} {Correlations}?},
+	url = {https://aclanthology.org/2022.emnlp-main.501},
+	abstract = {Rationalization is fundamental to human reasoning and learning. NLP models trained to produce rationales along with predictions, called self-rationalization models, have been investigated for their interpretability and utility to end-users. However, the extent to which training with human-written rationales facilitates learning remains an under-explored question. We ask whether training models to self-rationalize can aid in their learning to solve tasks for the right reasons. Specifically, we evaluate how training self-rationalization models with free-text rationales affects robustness to spurious correlations in fine-tuned encoder-decoder and decoder-only models of six different sizes. We evaluate robustness to spurious correlations by measuring performance on 1) manually annotated challenge datasets and 2) subsets of original test sets where reliance on spurious correlations would fail to produce correct answers. We find that while self-rationalization can improve robustness to spurious correlations in low-resource settings, it tends to hurt robustness in higher-resource settings. Furthermore, these effects depend on model family and size, as well as on rationale content. Together, our results suggest that explainability can come at the cost of robustness; thus, appropriate care should be taken when training self-rationalizing models with the goal of creating more trustworthy models.},
+	urldate = {2023-03-29},
+	booktitle = {Proceedings of the 2022 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	publisher = {Association for Computational Linguistics},
+	author = {Ross, Alexis and Peters, Matthew and Marasovic, Ana},
+	month = dec,
+	year = {2022},
+	pages = {7403--7416},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/P8YFNBAA/Ross et al. - 2022 - Does Self-Rationalization Improve Robustness to Sp.pdf:application/pdf},
+}
+
+@inproceedings{chen_can_2022,
+	address = {Seattle, United States},
+	title = {Can {Rationalization} {Improve} {Robustness}?},
+	url = {https://aclanthology.org/2022.naacl-main.278},
+	doi = {10.18653/v1/2022.naacl-main.278},
+	abstract = {A growing line of work has investigated the development of neural NLP models that can produce rationalesâsubsets of input that can explain their model predictions. In this paper, we ask whether such rationale models can provide robustness to adversarial attacks in addition to their interpretable nature. Since these models need to first generate rationales (ârationalizerâ) before making predictions (âpredictorâ), they have the potential to ignore noise or adversarially added text by simply masking it out of the generated rationale. To this end, we systematically generate various types of `AddText' attacks for both token and sentence-level rationalization tasks and perform an extensive empirical evaluation of state-of-the-art rationale models across five different tasks. Our experiments reveal that the rationale models promise to improve robustness over AddText attacks while they struggle in certain scenariosâwhen the rationalizer is sensitive to position bias or lexical choices of attack text. Further, leveraging human rationale as supervision does not always translate to better performance. Our study is a first step towards exploring the interplay between interpretability and robustness in the rationalize-then-predict framework.},
+	urldate = {2023-03-29},
+	booktitle = {Proceedings of the 2022 {Conference} of the {North} {American} {Chapter} of the {Association} for {Computational} {Linguistics}: {Human} {Language} {Technologies}},
+	publisher = {Association for Computational Linguistics},
+	author = {Chen, Howard and He, Jacqueline and Narasimhan, Karthik and Chen, Danqi},
+	month = jul,
+	year = {2022},
+	pages = {3792--3805},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/W29ZJ9NX/Chen et al. - 2022 - Can Rationalization Improve Robustness.pdf:application/pdf},
+}
+
+@inproceedings{chromik_i_2021,
+	address = {College Station TX USA},
+	title = {I {Think} {I} {Get} {Your} {Point}, {AI}! {The} {Illusion} of {Explanatory} {Depth} in {Explainable} {AI}},
+	isbn = {978-1-4503-8017-1},
+	url = {https://dl.acm.org/doi/10.1145/3397481.3450644},
+	doi = {10.1145/3397481.3450644},
+	language = {en},
+	urldate = {2023-03-29},
+	booktitle = {26th {International} {Conference} on {Intelligent} {User} {Interfaces}},
+	publisher = {ACM},
+	author = {Chromik, Michael and Eiband, Malin and Buchner, Felicitas and KrÃŒger, Adrian and Butz, Andreas},
+	month = apr,
+	year = {2021},
+	pages = {307--317},
+}
+
+@misc{fluri_evaluating_2023,
+      title={Evaluating {Superhuman} {Models} with {Consistency} {Checks}}, 
+      author={Lukas Fluri and Daniel Paleka and Florian Tramèr},
+      year={2023},
+      eprint={2306.09983},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@misc{sharma_towards_2023,
+	title = {Towards {Understanding} {Sycophancy} in {Language} {Models}},
+	url = {http://arxiv.org/abs/2310.13548},
+	abstract = {Reinforcement learning from human feedback (RLHF) is a popular technique for training high-quality AI assistants. However, RLHF may also encourage model responses that match user beliefs over truthful responses, a behavior known as sycophancy. We investigate the prevalence of sycophancy in RLHF-trained models and whether human preference judgements are responsible. We first demonstrate that five state-of-the-art AI assistants consistently exhibit sycophantic behavior across four varied free-form text-generation tasks. To understand if human preferences drive this broadly observed behavior of RLHF models, we analyze existing human preference data. We find that when a response matches a user's views, it is more likely to be preferred. Moreover, both humans and preference models (PMs) prefer convincingly-written sycophantic responses over correct ones a non-negligible fraction of the time. Optimizing model outputs against PMs also sometimes sacrifices truthfulness in favor of sycophancy. Overall, our results indicate that sycophancy is a general behavior of RLHF models, likely driven in part by human preference judgements favoring sycophantic responses.},
+	urldate = {2023-10-27},
+	publisher = {arXiv},
+	author = {Sharma, Mrinank and Tong, Meg and Korbak, Tomasz and Duvenaud, David and Askell, Amanda and Bowman, Samuel R. and Cheng, Newton and Durmus, Esin and Hatfield-Dodds, Zac and Johnston, Scott R. and Kravec, Shauna and Maxwell, Timothy and McCandlish, Sam and Ndousse, Kamal and Rausch, Oliver and Schiefer, Nicholas and Yan, Da and Zhang, Miranda and Perez, Ethan},
+	month = oct,
+	year = {2023},
+	note = {arXiv:2310.13548 [cs, stat]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning, I.2.6, Statistics - Machine Learning},
+	annote = {Comment: 32 pages, 20 figures},
+	file = {arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/NUAVYNUN/2310.html:text/html;Full Text PDF:/Users/milesturpin/Zotero/storage/29S6CCXY/Sharma et al. - 2023 - Towards Understanding Sycophancy in Language Model.pdf:application/pdf},
+}
+
+
+@article{lyu_towards_2022,
+	title = {Towards {Faithful} {Model} {Explanation} in {NLP}: {A} {Survey}},
+	copyright = {Creative Commons Attribution Non Commercial No Derivatives 4.0 International},
+	shorttitle = {Towards {Faithful} {Model} {Explanation} in {NLP}},
+	url = {https://arxiv.org/abs/2209.11326},
+	doi = {10.48550/ARXIV.2209.11326},
+	abstract = {End-to-end neural Natural Language Processing (NLP) models are notoriously difficult to understand. This has given rise to numerous efforts towards model explainability in recent years. One desideratum of model explanation is faithfulness, i.e. an explanation should accurately represent the reasoning process behind the model's prediction. In this survey, we review over 110 model explanation methods in NLP through the lens of faithfulness. We first discuss the definition and evaluation of faithfulness, as well as its significance for explainability. We then introduce recent advances in faithful explanation, grouping existing approaches into five categories: similarity methods, analysis of model-internal structures, backpropagation-based methods, counterfactual intervention, and self-explanatory models. For each category, we synthesize its representative studies, strengths, and weaknesses. Finally, we summarize their common virtues and remaining challenges, and reflect on future work directions towards faithful explainability in NLP.},
+	urldate = {2023-03-30},
+	author = {Lyu, Qing and Apidianaki, Marianna and Callison-Burch, Chris},
+	year = {2022},
+	note = {Publisher: arXiv
+Version Number: 2},
+	keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences},
+	annote = {Other
+56 pages (main text), 17 figures, in submission to the Computational Linguistics journal. [02/2023 update]: added papers published since the first version of the survey (05/2022)},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/SVF6HAKJ/Lyu et al. - 2022 - Towards Faithful Model Explanation in NLP A Surve.pdf:application/pdf},
+}
+
+@inproceedings{
+wei_chain--thought_2022,
+	title = {Chain-of-{Thought} {Prompting} {Elicits} {Reasoning} in {Large} {Language} {Models}},
+author={Jason Wei and Xuezhi Wang and Dale Schuurmans and Maarten Bosma and brian ichter and Fei Xia and Ed H. Chi and Quoc V Le and Denny Zhou},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=_VjQlMeSB_J}
+}
+
+
+
+@misc{nye_show_2021,
+	title = {Show {Your} {Work}: {Scratchpads} for {Intermediate} {Computation} with {Language} {Models}},
+	shorttitle = {Show {Your} {Work}},
+	url = {http://arxiv.org/abs/2112.00114},
+	abstract = {Large pre-trained language models perform remarkably well on tasks that can be done "in one pass", such as generating realistic text or synthesizing computer programs. However, they struggle with tasks that require unbounded multi-step computation, such as adding integers or executing programs. Surprisingly, we find that these same models are able to perform complex multi-step computations -- even in the few-shot regime -- when asked to perform the operation "step by step", showing the results of intermediate computations. In particular, we train transformers to perform multi-step computations by asking them to emit intermediate computation steps into a "scratchpad". On a series of increasingly complex tasks ranging from long addition to the execution of arbitrary programs, we show that scratchpads dramatically improve the ability of language models to perform multi-step computations.},
+	urldate = {2023-03-30},
+	publisher = {arXiv},
+	author = {Nye, Maxwell and Andreassen, Anders Johan and Gur-Ari, Guy and Michalewski, Henryk and Austin, Jacob and Bieber, David and Dohan, David and Lewkowycz, Aitor and Bosma, Maarten and Luan, David and others},
+	month = nov,
+	year = {2021},
+	note = {arXiv:2112.00114 [cs]},
+	keywords = {Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/NCYPWIB3/Nye et al. - 2021 - Show Your Work Scratchpads for Intermediate Compu.pdf:application/pdf},
+}
+
+
+@inproceedings{
+lewkowycz_solving_2022,
+title={Solving {Quantitative} {Reasoning} {Problems} with {Language} {Models}},
+author={Aitor Lewkowycz and Anders Johan Andreassen and David Dohan and Ethan Dyer and Henryk Michalewski and Vinay Venkatesh Ramasesh and Ambrose Slone and Cem Anil and Imanol Schlag and Theo Gutman-Solo and Yuhuai Wu and Behnam Neyshabur and Guy Gur-Ari and Vedant Misra},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=IFXTZERXdM7}
+}
+
+
+@article{wei_emergent_2022,
+	title = {Emergent {Abilities} of {Large} {Language} {Models}},
+	issn = {2835-8856},
+	url = {https://openreview.net/forum?id=yzkSU5zdwD},
+	abstract = {Scaling up language models has been shown to predictably improve performance and sample efficiency on a wide range of downstream tasks. This paper instead discusses an unpredictable phenomenon that we refer to as emergent abilities of large language models. We consider an ability to be emergent if it is not present in smaller models but is present in larger models. Thus, emergent abilities cannot be predicted simply by extrapolating the performance of smaller models. The existence of such emergence raises the question of whether additional scaling could potentially further expand the range of capabilities of language models.},
+	language = {en},
+	urldate = {2023-03-30},
+	journal = {Transactions on Machine Learning Research},
+	author = {Wei, Jason and Tay, Yi and Bommasani, Rishi and Raffel, Colin and Zoph, Barret and Borgeaud, Sebastian and Yogatama, Dani and Bosma, Maarten and Zhou, Denny and Metzler, Donald and others},
+	month = aug,
+	year = {2022},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/ILRBVFGG/Wei et al. - 2022 - Emergent Abilities of Large Language Models.pdf:application/pdf},
+}
+
+
+@misc{suzgun_challenging_2022,
+	title = {Challenging {BIG}-{Bench} {Tasks} and {Whether} {Chain}-of-{Thought} {Can} {Solve} {Them}},
+	url = {http://arxiv.org/abs/2210.09261},
+	abstract = {BIG-Bench (Srivastava et al., 2022) is a diverse evaluation suite that focuses on tasks believed to be beyond the capabilities of current language models. Language models have already made good progress on this benchmark, with the best model in the BIG-Bench paper outperforming average reported human-rater results on 65\% of the BIG-Bench tasks via few-shot prompting. But on what tasks do language models fall short of average human-rater performance, and are those tasks actually unsolvable by current language models? In this work, we focus on a suite of 23 challenging BIG-Bench tasks which we call BIG-Bench Hard (BBH). These are the task for which prior language model evaluations did not outperform the average human-rater. We find that applying chain-of-thought (CoT) prompting to BBH tasks enables PaLM to surpass the average human-rater performance on 10 of the 23 tasks, and Codex (code-davinci-002) to surpass the average human-rater performance on 17 of the 23 tasks. Since many tasks in BBH require multi-step reasoning, few-shot prompting without CoT, as done in the BIG-Bench evaluations (Srivastava et al., 2022), substantially underestimates the best performance and capabilities of language models, which is better captured via CoT prompting. As further analysis, we explore the interaction between CoT and model scale on BBH, finding that CoT enables emergent task performance on several BBH tasks with otherwise flat scaling curves.},
+	urldate = {2023-03-30},
+	publisher = {arXiv},
+	author = {Suzgun, Mirac and Scales, Nathan and Schärli, Nathanael and Gehrmann, Sebastian and Tay, Yi and Chung, Hyung Won and Chowdhery, Aakanksha and Le, Quoc V. and Chi, Ed H. and Zhou, Denny and others},
+	month = oct,
+	year = {2022},
+	note = {arXiv:2210.09261 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language},
+	annote = {Comment: GitHub repository: https://github.com/suzgunmirac/BIG-Bench-Hard},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/MJFDRK84/Suzgun et al. - 2022 - Challenging BIG-Bench Tasks and Whether Chain-of-T.pdf:application/pdf},
+}
+
+
+@misc{rudin_stop_2019,
+	title = {Stop {Explaining} {Black} {Box} {Machine} {Learning} {Models} for {High} {Stakes} {Decisions} and {Use} {Interpretable} {Models} {Instead}},
+	url = {http://arxiv.org/abs/1811.10154},
+	abstract = {Black box machine learning models are currently being used for high stakes decision-making throughout society, causing problems throughout healthcare, criminal justice, and in other domains. People have hoped that creating methods for explaining these black box models will alleviate some of these problems, but trying to {\textbackslash}textit\{explain\} black box models, rather than creating models that are {\textbackslash}textit\{interpretable\} in the first place, is likely to perpetuate bad practices and can potentially cause catastrophic harm to society. There is a way forward -- it is to design models that are inherently interpretable. This manuscript clarifies the chasm between explaining black boxes and using inherently interpretable models, outlines several key reasons why explainable black boxes should be avoided in high-stakes decisions, identifies challenges to interpretable machine learning, and provides several example applications where interpretable models could potentially replace black box models in criminal justice, healthcare, and computer vision.},
+	urldate = {2023-03-30},
+	publisher = {arXiv},
+	author = {Rudin, Cynthia},
+	month = sep,
+	year = {2019},
+	note = {arXiv:1811.10154 [cs, stat]},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	annote = {Comment: Author's pre-publication version of a 2019 Nature Machine Intelligence article. Shorter Version was published in NIPS 2018 Workshop on Critiquing and Correcting Trends in Machine Learning. Expands also on NSF Statistics at a Crossroads Webinar},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/6FBDPRXP/Rudin - 2019 - Stop Explaining Black Box Machine Learning Models .pdf:application/pdf},
+}
+
+
+
+@misc{madaan_text_2022,
+	title = {Text and {Patterns}: {For} {Effective} {Chain} of {Thought}, {It} {Takes} {Two} to {Tango}},
+	shorttitle = {Text and {Patterns}},
+	url = {http://arxiv.org/abs/2209.07686},
+	doi = {10.48550/arXiv.2209.07686},
+	abstract = {The past decade has witnessed dramatic gains in natural language processing and an unprecedented scaling of large language models. These developments have been accelerated by the advent of few-shot techniques such as chain of thought (CoT) prompting. Specifically, CoT pushes the performance of large language models in a few-shot setup by augmenting the prompts with intermediate steps. Despite impressive results across various tasks, the reasons behind their success have not been explored. This work uses counterfactual prompting to develop a deeper understanding of CoT-based few-shot prompting mechanisms in large language models. We first systematically identify and define the key components of a prompt: symbols, patterns, and text. Then, we devise and conduct an exhaustive set of experiments across four different tasks, by querying the model with counterfactual prompts where only one of these components is altered. Our experiments across three models (PaLM, GPT-3, and CODEX) reveal several surprising findings and brings into question the conventional wisdom around few-shot prompting. First, the presence of factual patterns in a prompt is practically immaterial to the success of CoT. Second, our results conclude that the primary role of intermediate steps may not be to facilitate learning how to solve a task. The intermediate steps are rather a beacon for the model to realize what symbols to replicate in the output to form a factual answer. Further, text imbues patterns with commonsense knowledge and meaning. Our empirical and qualitative analysis reveals that a symbiotic relationship between text and patterns explains the success of few-shot prompting: text helps extract commonsense from the question to help patterns, and patterns enforce task understanding and direct text generation.},
+	urldate = {2023-03-30},
+	publisher = {arXiv},
+	author = {Madaan, Aman and Yazdanbakhsh, Amir},
+	month = oct,
+	year = {2022},
+	note = {arXiv:2209.07686 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning},
+	annote = {Comment: Shortened version with additional results from CODEX and GPT-3. The authors contributed equally. Work done when Aman Madaan was a student researcher at Google Research, Brain Team},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/U949WTNR/Madaan and Yazdanbakhsh - 2022 - Text and Patterns For Effective Chain of Thought,.pdf:application/pdf},
+}
+
+
+@misc{menick_teaching_2022,
+	title = {Teaching language models to support answers with verified quotes},
+	url = {http://arxiv.org/abs/2203.11147},
+	abstract = {Recent large language models often answer factual questions correctly. But users can't trust any given claim a model makes without fact-checking, because language models can hallucinate convincing nonsense. In this work we use reinforcement learning from human preferences (RLHP) to train "open-book" QA models that generate answers whilst also citing specific evidence for their claims, which aids in the appraisal of correctness. Supporting evidence is drawn from multiple documents found via a search engine, or from a single user-provided document. Our 280 billion parameter model, GopherCite, is able to produce answers with high quality supporting evidence and abstain from answering when unsure. We measure the performance of GopherCite by conducting human evaluation of answers to questions in a subset of the NaturalQuestions and ELI5 datasets. The model's response is found to be high-quality 80{\textbackslash}\% of the time on this Natural Questions subset, and 67{\textbackslash}\% of the time on the ELI5 subset. Abstaining from the third of questions for which it is most unsure improves performance to 90{\textbackslash}\% and 80{\textbackslash}\% respectively, approaching human baselines. However, analysis on the adversarial TruthfulQA dataset shows why citation is only one part of an overall strategy for safety and trustworthiness: not all claims supported by evidence are true.},
+	urldate = {2023-03-30},
+	publisher = {arXiv},
+	author = {Menick, Jacob and Trebacz, Maja and Mikulik, Vladimir and Aslanides, John and Song, Francis and Chadwick, Martin and Glaese, Mia and Young, Susannah and Campbell-Gillingham, Lucy and Irving, Geoffrey and others},
+	month = mar,
+	year = {2022},
+	note = {arXiv:2203.11147 [cs]
+version: 1},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/LQH5UAW5/Menick et al. - 2022 - Teaching language models to support answers with v.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/RQNXZB27/2203.html:text/html},
+}
+
+
+
+@inproceedings{lin_truthfulqa_2022,
+	address = {Dublin, Ireland},
+	title = {{TruthfulQA}: {Measuring} {How} {Models} {Mimic} {Human} {Falsehoods}},
+	shorttitle = {{TruthfulQA}},
+	url = {https://aclanthology.org/2022.acl-long.229},
+	doi = {10.18653/v1/2022.acl-long.229},
+	abstract = {We propose a benchmark to measure whether a language model is truthful in generating answers to questions. The benchmark comprises 817 questions that span 38 categories, including health, law, finance and politics. We crafted questions that some humans would answer falsely due to a false belief or misconception. To perform well, models must avoid generating false answers learned from imitating human texts. We tested GPT-3, GPT-Neo/J, GPT-2 and a T5-based model. The best model was truthful on 58\% of questions, while human performance was 94\%. Models generated many false answers that mimic popular misconceptions and have the potential to deceive humans. The largest models were generally the least truthful. This contrasts with other NLP tasks, where performance improves with model size. However, this result is expected if false answers are learned from the training distribution. We suggest that scaling up models alone is less promising for improving truthfulness than fine-tuning using training objectives other than imitation of text from the web.},
+	urldate = {2023-03-30},
+	booktitle = {Proceedings of the 60th {Annual} {Meeting} of the {Association} for {Computational} {Linguistics} ({Volume} 1: {Long} {Papers})},
+	publisher = {Association for Computational Linguistics},
+	author = {Lin, Stephanie and Hilton, Jacob and Evans, Owain},
+	month = may,
+	year = {2022},
+	pages = {3214--3252},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/MX32X8DV/Lin et al. - 2022 - TruthfulQA Measuring How Models Mimic Human False.pdf:application/pdf},
+}
+
+
+
+
+@misc{saunders_self-critiquing_2022,
+	title = {Self-critiquing models for assisting human evaluators},
+	url = {http://arxiv.org/abs/2206.05802},
+	doi = {10.48550/arXiv.2206.05802},
+	abstract = {We fine-tune large language models to write natural language critiques (natural language critical comments) using behavioral cloning. On a topic-based summarization task, critiques written by our models help humans find flaws in summaries that they would have otherwise missed. Our models help find naturally occurring flaws in both model and human written summaries, and intentional flaws in summaries written by humans to be deliberately misleading. We study scaling properties of critiquing with both topic-based summarization and synthetic tasks. Larger models write more helpful critiques, and on most tasks, are better at self-critiquing, despite having harder-to-critique outputs. Larger models can also integrate their own self-critiques as feedback, refining their own summaries into better ones. Finally, we motivate and introduce a framework for comparing critiquing ability to generation and discrimination ability. Our measurements suggest that even large models may still have relevant knowledge they cannot or do not articulate as critiques. These results are a proof of concept for using AI-assisted human feedback to scale the supervision of machine learning systems to tasks that are difficult for humans to evaluate directly. We release our training datasets, as well as samples from our critique assistance experiments.},
+	urldate = {2023-05-04},
+	publisher = {arXiv},
+	author = {Saunders, William and Yeh, Catherine and Wu, Jeff and Bills, Steven and Ouyang, Long and Ward, Jonathan and Leike, Jan},
+	month = jun,
+	year = {2022},
+	note = {arXiv:2206.05802 [cs]},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/UFSS65FZ/Saunders et al. - 2022 - Self-critiquing models for assisting human evaluat.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/22QNYEHF/2206.html:text/html},
+}
+
+
+@misc{bowman_measuring_2022,
+	title = {Measuring {Progress} on {Scalable} {Oversight} for {Large} {Language} {Models}},
+	url = {http://arxiv.org/abs/2211.03540},
+	doi = {10.48550/arXiv.2211.03540},
+	abstract = {Developing safe and useful general-purpose AI systems will require us to make progress on scalable oversight: the problem of supervising systems that potentially outperform us on most skills relevant to the task at hand. Empirical work on this problem is not straightforward, since we do not yet have systems that broadly exceed our abilities. This paper discusses one of the major ways we think about this problem, with a focus on ways it can be studied empirically. We first present an experimental design centered on tasks for which human specialists succeed but unaided humans and current general AI systems fail. We then present a proof-of-concept experiment meant to demonstrate a key feature of this experimental design and show its viability with two question-answering tasks: MMLU and time-limited QuALITY. On these tasks, we find that human participants who interact with an unreliable large-language-model dialog assistant through chat -- a trivial baseline strategy for scalable oversight -- substantially outperform both the model alone and their own unaided performance. These results are an encouraging sign that scalable oversight will be tractable to study with present models and bolster recent findings that large language models can productively assist humans with difficult tasks.},
+	urldate = {2023-03-30},
+	publisher = {arXiv},
+	author = {Bowman, Samuel R. and Hyun, Jeeyoon and Perez, Ethan and Chen, Edwin and Pettit, Craig and Heiner, Scott and Lukošiūtė, Kamilė and Askell, Amanda and Jones, Andy and Chen, Anna and others},
+	month = nov,
+	year = {2022},
+	note = {arXiv:2211.03540 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Human-Computer Interaction},
+	annote = {Comment: v2 fixes a few typos from v1},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/ALLYKC7A/Bowman et al. - 2022 - Measuring Progress on Scalable Oversight for Large.pdf:application/pdf},
+}
+
+
+@misc{shi_large_2023,
+	title = {Large {Language} {Models} {Can} {Be} {Easily} {Distracted} by {Irrelevant} {Context}},
+	url = {http://arxiv.org/abs/2302.00093},
+	abstract = {Large language models have achieved impressive performance on various natural language processing tasks. However, so far they have been evaluated primarily on benchmarks where all information in the input context is relevant for solving the task. In this work, we investigate the distractibility of large language models, i.e., how the model problem-solving accuracy can be influenced by irrelevant context. In particular, we introduce Grade-School Math with Irrelevant Context (GSM-IC), an arithmetic reasoning dataset with irrelevant information in the problem description. We use this benchmark to measure the distractibility of cutting-edge prompting techniques for large language models, and find that the model performance is dramatically decreased when irrelevant information is included. We also identify several approaches for mitigating this deficiency, such as decoding with self-consistency and adding to the prompt an instruction that tells the language model to ignore the irrelevant information.},
+	urldate = {2023-03-30},
+	publisher = {arXiv},
+	author = {Shi, Freda and Chen, Xinyun and Misra, Kanishka and Scales, Nathan and Dohan, David and Chi, Ed and Schärli, Nathanael and Zhou, Denny},
+	month = feb,
+	year = {2023},
+	note = {arXiv:2302.00093 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/RL2RRHR6/Shi et al. - 2023 - Large Language Models Can Be Easily Distracted by .pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/KAQRJ2MU/2302.html:text/html},
+}
+
+
+@misc{perez_discovering_2022,
+	title = {Discovering {Language} {Model} {Behaviors} with {Model}-{Written} {Evaluations}},
+	url = {http://arxiv.org/abs/2212.09251},
+	doi = {10.48550/arXiv.2212.09251},
+	abstract = {As language models (LMs) scale, they develop many novel behaviors, good and bad, exacerbating the need to evaluate how they behave. Prior work creates evaluations with crowdwork (which is time-consuming and expensive) or existing data sources (which are not always available). Here, we automatically generate evaluations with LMs. We explore approaches with varying amounts of human effort, from instructing LMs to write yes/no questions to making complex Winogender schemas with multiple stages of LM-based generation and filtering. Crowdworkers rate the examples as highly relevant and agree with 90-100\% of labels, sometimes more so than corresponding human-written datasets. We generate 154 datasets and discover new cases of inverse scaling where LMs get worse with size. Larger LMs repeat back a dialog user's preferred answer ("sycophancy") and express greater desire to pursue concerning goals like resource acquisition and goal preservation. We also find some of the first examples of inverse scaling in RL from Human Feedback (RLHF), where more RLHF makes LMs worse. For example, RLHF makes LMs express stronger political views (on gun rights and immigration) and a greater desire to avoid shut down. Overall, LM-written evaluations are high-quality and let us quickly discover many novel LM behaviors.},
+	urldate = {2023-03-30},
+	publisher = {arXiv},
+	author = {Perez, Ethan and Ringer, Sam and Lukošiūtė, Kamilė and Nguyen, Karina and Chen, Edwin and Heiner, Scott and Pettit, Craig and Olsson, Catherine and Kundu, Sandipan and Kadavath, Saurav and others},
+	month = dec,
+	year = {2022},
+	note = {arXiv:2212.09251 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning},
+	annote = {Comment: for associated data visualizations, see https://www.evals.anthropic.com/model-written/ for full datasets, see https://github.com/anthropics/evals},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/C8IDKSN3/Perez et al. - 2022 - Discovering Language Model Behaviors with Model-Wr.pdf:application/pdf},
+}
+
+
+
+@misc{shaikh_second_2022,
+	title = {On {Second} {Thought}, {Let}'s {Not} {Think} {Step} by {Step}! {Bias} and {Toxicity} in {Zero}-{Shot} {Reasoning}},
+	url = {http://arxiv.org/abs/2212.08061},
+	abstract = {Generating a chain of thought (CoT) can increase large language model (LLM) performance on a wide range of tasks. Zero-shot CoT evaluations, however, have been conducted primarily on logical tasks (e.g. arithmetic, commonsense QA). In this paper, we perform a controlled evaluation of zero-shot CoT across two sensitive domains: harmful questions and stereotype benchmarks. We find that using zero-shot CoT reasoning in a prompt can significantly increase a model's likelihood to produce undesirable output. Without future advances in alignment or explicit mitigation instructions, zero-shot CoT should be avoided on tasks where models can make inferences about marginalized groups or harmful topics.},
+	urldate = {2023-03-30},
+	publisher = {arXiv},
+	author = {Shaikh, Omar and Zhang, Hongxin and Held, William and Bernstein, Michael and Yang, Diyi},
+	month = dec,
+	year = {2022},
+	note = {arXiv:2212.08061 [cs]},
+	keywords = {Computer Science - Computation and Language},
+	annote = {Comment: 13 pages},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/5GG6GLK4/Shaikh et al. - 2022 - On Second Thought, Let's Not Think Step by Step! B.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/Y6SHFBJJ/2212.html:text/html},
+}
+
+
+@misc{ganguli_capacity_2023,
+	title = {The {Capacity} for {Moral} {Self}-{Correction} in {Large} {Language} {Models}},
+	url = {http://arxiv.org/abs/2302.07459},
+	abstract = {We test the hypothesis that language models trained with reinforcement learning from human feedback (RLHF) have the capability to "morally self-correct" -- to avoid producing harmful outputs -- if instructed to do so. We find strong evidence in support of this hypothesis across three different experiments, each of which reveal different facets of moral self-correction. We find that the capability for moral self-correction emerges at 22B model parameters, and typically improves with increasing model size and RLHF training. We believe that at this level of scale, language models obtain two capabilities that they can use for moral self-correction: (1) they can follow instructions and (2) they can learn complex normative concepts of harm like stereotyping, bias, and discrimination. As such, they can follow instructions to avoid certain kinds of morally harmful outputs. We believe our results are cause for cautious optimism regarding the ability to train language models to abide by ethical principles.},
+	urldate = {2023-03-30},
+	publisher = {arXiv},
+	author = {Ganguli, Deep and Askell, Amanda and Schiefer, Nicholas and Liao, Thomas I. and Lukošiūtė, Kamilė and Chen, Anna and Goldie, Anna and Mirhoseini, Azalia and Olsson, Catherine and Hernandez, Danny and others},
+	month = feb,
+	year = {2023},
+	note = {arXiv:2302.07459 [cs]},
+	keywords = {Computer Science - Computation and Language},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/5XUKFQIM/Ganguli et al. - 2023 - The Capacity for Moral Self-Correction in Large La.pdf:application/pdf},
+}
+
+
+@misc{reppert_iterated_2023,
+	title = {Iterated {Decomposition}: {Improving} {Science} {Q}\&{A} by {Supervising} {Reasoning} {Processes}},
+	shorttitle = {Iterated {Decomposition}},
+	url = {http://arxiv.org/abs/2301.01751},
+	abstract = {Language models (LMs) can perform complex reasoning either end-to-end, with hidden latent state, or compositionally, with transparent intermediate state. Composition offers benefits for interpretability and safety, but may need workflow support and infrastructure to remain competitive. We describe iterated decomposition, a human-in-the-loop workflow for developing and refining compositional LM programs. We improve the performance of compositions by zooming in on failing components and refining them through decomposition, additional context, chain of thought, etc. To support this workflow, we develop ICE, an open-source tool for visualizing the execution traces of LM programs. We apply iterated decomposition to three real-world tasks and improve the accuracy of LM programs over less compositional baselines: describing the placebo used in a randomized controlled trial (25\% to 65\%), evaluating participant adherence to a medical intervention (53\% to 70\%), and answering NLP questions on the Qasper dataset (38\% to 69\%). These applications serve as case studies for a workflow that, if automated, could keep ML systems interpretable and safe even as they scale to increasingly complex tasks.},
+	urldate = {2023-03-30},
+	publisher = {arXiv},
+	author = {Reppert, Justin and Rachbach, Ben and George, Charlie and Stebbing, Luke and Byun, Jungwon and Appleton, Maggie and Stuhlmüller, Andreas},
+	month = jan,
+	year = {2023},
+	note = {arXiv:2301.01751 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Human-Computer Interaction},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/BVT3WW2N/Reppert et al. - 2023 - Iterated Decomposition Improving Science Q&A by S.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/6XT3ZCTQ/2301.html:text/html},
+}
+
+
+
+@inproceedings{
+kojima_large_2022,
+title={Large {Language} {Models} are {Zero}-{Shot} {Reasoners}},
+author={Takeshi Kojima and Shixiang Shane Gu and Machel Reid and Yutaka Matsuo and Yusuke Iwasawa},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=e2TBb5y0yFf}
+}
+
+
+@misc{chen_evaluating_2021,
+	title = {Evaluating {Large} {Language} {Models} {Trained} on {Code}},
+	url = {http://arxiv.org/abs/2107.03374},
+	doi = {10.48550/arXiv.2107.03374},
+	abstract = {We introduce Codex, a GPT language model fine-tuned on publicly available code from GitHub, and study its Python code-writing capabilities. A distinct production version of Codex powers GitHub Copilot. On HumanEval, a new evaluation set we release to measure functional correctness for synthesizing programs from docstrings, our model solves 28.8\% of the problems, while GPT-3 solves 0\% and GPT-J solves 11.4\%. Furthermore, we find that repeated sampling from the model is a surprisingly effective strategy for producing working solutions to difficult prompts. Using this method, we solve 70.2\% of our problems with 100 samples per problem. Careful investigation of our model reveals its limitations, including difficulty with docstrings describing long chains of operations and with binding operations to variables. Finally, we discuss the potential broader impacts of deploying powerful code generation technologies, covering safety, security, and economics.},
+	urldate = {2023-04-17},
+	publisher = {arXiv},
+	author = {Chen, Mark and Tworek, Jerry and Jun, Heewoo and Yuan, Qiming and Pinto, Henrique Ponde de Oliveira and Kaplan, Jared and Edwards, Harri and Burda, Yuri and Joseph, Nicholas and Brockman, Greg and others},
+	month = jul,
+	year = {2021},
+	note = {arXiv:2107.03374 [cs]},
+	keywords = {Computer Science - Machine Learning},
+	annote = {Comment: corrected typos, added references, added authors, added acknowledgements},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/CWQMG5FF/Chen et al. - 2021 - Evaluating Large Language Models Trained on Code.pdf:application/pdf},
+}
+
+
+@inproceedings{perez_red_2022,
+	address = {Abu Dhabi, United Arab Emirates},
+	title = {Red {Teaming} {Language} {Models} with {Language} {Models}},
+	url = {https://aclanthology.org/2022.emnlp-main.225},
+	abstract = {Language Models (LMs) often cannot be deployed because of their potential to harm users in hard-to-predict ways. Prior work identifies harmful behaviors before deployment by using human annotators to hand-write test cases. However, human annotation is expensive, limiting the number and diversity of test cases. In this work, we automatically find cases where a target LM behaves in a harmful way, by generating test cases (“red teaming”) using another LM. We evaluate the target LM's replies to generated test questions using a classifier trained to detect offensive content, uncovering tens of thousands of offensive replies in a 280B parameter LM chatbot. We explore several methods, from zero-shot generation to reinforcement learning, for generating test cases with varying levels of diversity and difficulty. Furthermore, we use prompt engineering to control LM-generated test cases to uncover a variety of other harms, automatically finding groups of people that the chatbot discusses in offensive ways, personal and hospital phone numbers generated as the chatbot's own contact info, leakage of private training data in generated text, and harms that occur over the course of a conversation. Overall, LM-based red teaming is one promising tool (among many needed) for finding and fixing diverse, undesirable LM behaviors before impacting users.},
+	urldate = {2023-04-17},
+	booktitle = {Proceedings of the 2022 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	publisher = {Association for Computational Linguistics},
+	author = {Perez, Ethan and Huang, Saffron and Song, Francis and Cai, Trevor and Ring, Roman and Aslanides, John and Glaese, Amelia and McAleese, Nat and Irving, Geoffrey},
+	month = dec,
+	year = {2022},
+	pages = {3419--3448},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/YVDNU742/Perez et al. - 2022 - Red Teaming Language Models with Language Models.pdf:application/pdf},
+}
+
+
+@article{lieder_resource-rational_2020,
+	title = {Resource-rational analysis: {Understanding} human cognition as the optimal use of limited computational resources},
+	volume = {43},
+	issn = {0140-525X, 1469-1825},
+	shorttitle = {Resource-rational analysis},
+	url = {https://www.cambridge.org/core/product/identifier/S0140525X1900061X/type/journal_article},
+	doi = {10.1017/S0140525X1900061X},
+	abstract = {Modeling human cognition is challenging because there are infinitely many mechanisms that can generate any given observation. Some researchers address this by constraining the hypothesis space through assumptions about what the human mind can and cannot do, while others constrain it through principles of rationality and adaptation. Recent work in economics, psychology, neuroscience, and linguistics has begun to integrate both approaches by augmenting rational models with cognitive constraints, incorporating rational principles into cognitive architectures, and applying optimality principles to understanding neural representations. We identify the rational use of limited resources as a unifying principle underlying these diverse approaches, expressing it in a new cognitive modeling paradigm called resourcerational analysis. The integration of rational principles with realistic cognitive constraints makes resource-rational analysis a promising framework for reverse-engineering cognitive mechanisms and representations. It has already shed new light on the debate about human rationality and can be leveraged to revisit classic questions of cognitive psychology within a principled computational framework. We demonstrate that resource-rational models can reconcile the mind’s most impressive cognitive skills with people’s ostensive irrationality. Resource-rational analysis also provides a new way to connect psychological theory more deeply with artificial intelligence, economics, neuroscience, and linguistics.},
+	language = {en},
+	urldate = {2023-04-17},
+	journal = {Behavioral and Brain Sciences},
+	author = {Lieder, Falk and Griffiths, Thomas L.},
+	year = {2020},
+	pages = {e1},
+	file = {Lieder and Griffiths - 2020 - Resource-rational analysis Understanding human co.pdf:/Users/milesturpin/Zotero/storage/K25HF9CV/Lieder and Griffiths - 2020 - Resource-rational analysis Understanding human co.pdf:application/pdf},
+}
+
+
+@misc{dasgupta_language_2022,
+	title = {Language models show human-like content effects on reasoning},
+	url = {http://arxiv.org/abs/2207.07051},
+	abstract = {Abstract reasoning is a key ability for an intelligent system. Large language models achieve above-chance performance on abstract reasoning tasks, but exhibit many imperfections. However, human abstract reasoning is also imperfect, and depends on our knowledge and beliefs about the content of the reasoning problem. For example, humans reason much more reliably about logical rules that are grounded in everyday situations than arbitrary rules about abstract attributes. The training experiences of language models similarly endow them with prior expectations that reflect human knowledge and beliefs. We therefore hypothesized that language models would show human-like content effects on abstract reasoning problems. We explored this hypothesis across three logical reasoning tasks: natural language inference, judging the logical validity of syllogisms, and the Wason selection task (Wason, 1968). We find that state of the art large language models (with 7 or 70 billion parameters; Hoffman et al., 2022) reflect many of the same patterns observed in humans across these tasks -- like humans, models reason more effectively about believable situations than unrealistic or abstract ones. Our findings have implications for understanding both these cognitive effects, and the factors that contribute to language model performance.},
+	urldate = {2023-04-17},
+	publisher = {arXiv},
+	author = {Dasgupta, Ishita and Lampinen, Andrew K. and Chan, Stephanie C. Y. and Creswell, Antonia and Kumaran, Dharshan and McClelland, James L. and Hill, Felix},
+	month = jul,
+	year = {2022},
+	note = {arXiv:2207.07051 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/U2CIFMQS/Dasgupta et al. - 2022 - Language models show human-like content effects on.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/WVKCJ6TA/2207.html:text/html},
+}
+
+
+
+@inproceedings{webson_prompt-based_2022,
+	address = {Seattle, United States},
+	title = {Do {Prompt}-{Based} {Models} {Really} {Understand} the {Meaning} of {Their} {Prompts}?},
+	url = {https://aclanthology.org/2022.naacl-main.167},
+	doi = {10.18653/v1/2022.naacl-main.167},
+	abstract = {Recently, a boom of papers has shown extraordinary progress in zero-shot and few-shot learning with various prompt-based models. It is commonly argued that prompts help models to learn faster in the same way that humans learn faster when provided with task instructions expressed in natural language. In this study, we experiment with over 30 prompts manually written for natural language inference (NLI). We find that models can learn just as fast with many prompts that are intentionally irrelevant or even pathologically misleading as they do with instructively “good” prompts. Further, such patterns hold even for models as large as 175 billion parameters (Brown et al., 2020) as well as the recently proposed instruction-tuned models which are trained on hundreds of prompts (Sanh et al., 2021). That is, instruction-tuned models often produce good predictions with irrelevant and misleading prompts even at zero shots. In sum, notwithstanding prompt-based models' impressive improvement, we find evidence of serious limitations that question the degree to which such improvement is derived from models understanding task instructions in ways analogous to humans' use of task instructions.},
+	urldate = {2023-04-01},
+	booktitle = {Proceedings of the 2022 {Conference} of the {North} {American} {Chapter} of the {Association} for {Computational} {Linguistics}: {Human} {Language} {Technologies}},
+	publisher = {Association for Computational Linguistics},
+	author = {Webson, Albert and Pavlick, Ellie},
+	month = jul,
+	year = {2022},
+	pages = {2300--2344},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/SCKRM467/Webson and Pavlick - 2022 - Do Prompt-Based Models Really Understand the Meani.pdf:application/pdf},
+}
+
+
+@inproceedings{min_rethinking_2022,
+	address = {Abu Dhabi, United Arab Emirates},
+	title = {Rethinking the {Role} of {Demonstrations}: {What} {Makes} {In}-{Context} {Learning} {Work}?},
+	shorttitle = {Rethinking the {Role} of {Demonstrations}},
+	url = {https://aclanthology.org/2022.emnlp-main.759},
+	abstract = {Large language models (LMs) are able to in-context learn—perform a new task via inference alone by conditioning on a few input-label pairs (demonstrations) and making predictions for new inputs. However, there has been little understanding of how the model learns and which aspects of the demonstrations contribute to end task performance. In this paper, we show that ground truth demonstrations are in fact not required—randomly replacing labels in the demonstrations barely hurts performance on a range of classification and multi-choce tasks, consistently over 12 different models including GPT-3. Instead, we find that other aspects of the demonstrations are the key drivers of endtask performance, including the fact that they provide a few examples of (1) the label space, (2) the distribution of the input text, and (3) the overall format of the sequence. Together, our analysis provides a new way of understanding how and why in-context learning works, while opening up new questions about how much can be learned from large language models through inference alone.},
+	urldate = {2023-04-01},
+	booktitle = {Proceedings of the 2022 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	publisher = {Association for Computational Linguistics},
+	author = {Min, Sewon and Lyu, Xinxi and Holtzman, Ari and Artetxe, Mikel and Lewis, Mike and Hajishirzi, Hannaneh and Zettlemoyer, Luke},
+	month = dec,
+	year = {2022},
+	pages = {11048--11064},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/CLB429H2/Min et al. - 2022 - Rethinking the Role of Demonstrations What Makes .pdf:application/pdf},
+}
+
+
+
+@misc{openai,
+  author={OpenAI},
+year={2023},
+  title = {{Model} index for researchers},
+  howpublished = {\url{https://platform.openai.com/docs/model-index-for-researchers}},
+  note = {Accessed: 2023-04-03}
+}
+
+@misc{anthropic,
+  author={Anthropic},
+  title = {{Meet} {Claude}},
+year={2023},
+  howpublished = {\url{https://www.anthropic.com/product}},
+  note = {Accessed: 2023-04-03}
+}
+
+
+
+@misc{srivastava_beyond_2022,
+	title = {Beyond the {Imitation} {Game}: {Quantifying} and extrapolating the capabilities of language models},
+	shorttitle = {Beyond the {Imitation} {Game}},
+	url = {http://arxiv.org/abs/2206.04615},
+	doi = {10.48550/arXiv.2206.04615},
+	abstract = {Language models demonstrate both quantitative improvement and new qualitative capabilities with increasing scale. Despite their potentially transformative impact, these new capabilities are as yet poorly characterized. In order to inform future research, prepare for disruptive new model capabilities, and ameliorate socially harmful effects, it is vital that we understand the present and near-future capabilities and limitations of language models. To address this challenge, we introduce the Beyond the Imitation Game benchmark (BIG-bench). BIG-bench currently consists of 204 tasks, contributed by 442 authors across 132 institutions. Task topics are diverse, drawing problems from linguistics, childhood development, math, common-sense reasoning, biology, physics, social bias, software development, and beyond. BIG-bench focuses on tasks that are believed to be beyond the capabilities of current language models. We evaluate the behavior of OpenAI's GPT models, Google-internal dense transformer architectures, and Switch-style sparse transformers on BIG-bench, across model sizes spanning millions to hundreds of billions of parameters. In addition, a team of human expert raters performed all tasks in order to provide a strong baseline. Findings include: model performance and calibration both improve with scale, but are poor in absolute terms (and when compared with rater performance); performance is remarkably similar across model classes, though with benefits from sparsity; tasks that improve gradually and predictably commonly involve a large knowledge or memorization component, whereas tasks that exhibit "breakthrough" behavior at a critical scale often involve multiple steps or components, or brittle metrics; social bias typically increases with scale in settings with ambiguous context, but this can be improved with prompting.},
+	urldate = {2023-04-08},
+	publisher = {arXiv},
+	author = {Srivastava, Aarohi and Rastogi, Abhinav and Rao, Abhishek and Shoeb, Abu Awal Md and Abid, Abubakar and Fisch, Adam and Brown, Adam R. and Santoro, Adam and Gupta, Aditya and Garriga-Alonso, Adrià and others},
+	month = jun,
+	year = {2022},
+	note = {arXiv:2206.04615 [cs, stat]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Computers and Society, Computer Science - Machine Learning, Statistics - Machine Learning},
+	annote = {Comment: 27 pages, 17 figures + references and appendices, repo: https://github.com/google/BIG-bench},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/EYRITMZN/Srivastava et al. - 2022 - Beyond the Imitation Game Quantifying and extrapo.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/Q4B3IU6L/2206.html:text/html},
+}
+
+
+
+@inproceedings{parrish_bbq_2022,
+	address = {Dublin, Ireland},
+	title = {{BBQ}: {A} hand-built bias benchmark for question answering},
+	shorttitle = {{BBQ}},
+	url = {https://aclanthology.org/2022.findings-acl.165},
+	doi = {10.18653/v1/2022.findings-acl.165},
+	abstract = {It is well documented that NLP models learn social biases, but little work has been done on how these biases manifest in model outputs for applied tasks like question answering (QA). We introduce the Bias Benchmark for QA (BBQ), a dataset of question-sets constructed by the authors that highlight attested social biases against people belonging to protected classes along nine social dimensions relevant for U.S. English-speaking contexts. Our task evaluate model responses at two levels: (i) given an under-informative context, we test how strongly responses reflect social biases, and (ii) given an adequately informative context, we test whether the model's biases override a correct answer choice. We find that models often rely on stereotypes when the context is under-informative, meaning the model's outputs consistently reproduce harmful biases in this setting. Though models are more accurate when the context provides an informative answer, they still rely on stereotypes and average up to 3.4 percentage points higher accuracy when the correct answer aligns with a social bias than when it conflicts, with this difference widening to over 5 points on examples targeting gender for most models tested.},
+	urldate = {2023-04-10},
+	booktitle = {Findings of the {Association} for {Computational} {Linguistics}: {ACL} 2022},
+	publisher = {Association for Computational Linguistics},
+	author = {Parrish, Alicia and Chen, Angelica and Nangia, Nikita and Padmakumar, Vishakh and Phang, Jason and Thompson, Jana and Htut, Phu Mon and Bowman, Samuel},
+	month = may,
+	year = {2022},
+	pages = {2086--2105},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/KPS97XZ2/Parrish et al. - 2022 - BBQ A hand-built bias benchmark for question answ.pdf:application/pdf},
+}
+
+
+@inproceedings{andreas_language_2022,
+	address = {Abu Dhabi, United Arab Emirates},
+	title = {Language {Models} as {Agent} {Models}},
+	url = {https://aclanthology.org/2022.findings-emnlp.423},
+	abstract = {Language models (LMs) are trained on collections of documents, written by individual human agents to achieve specific goals in the outside world. During training, LMs have access only to text of these documents, with no direct evidence of the internal states of the agents that produced them—a fact often used to argue that LMs are incapable of modeling goal-directed aspects of human language production and comprehension. Can LMs trained on text learn anything at all about the relationship between language and use? I argue that LMs are models of communicative intentions in a specific, narrow sense. When performing next word prediction given a textual context, an LM can infer and represent properties of an agent likely to have produced that context. These representations can in turn influence subsequent LM generation in the same way that agents' communicative intentions influence their language. I survey findings from the recent literature showing that—even in today's non-robust and error-prone models—LMs infer and use representations of fine-grained communicative intentions and high-level beliefs and goals. Despite the limited nature of their training data, they can thus serve as building blocks for systems that communicate and act intentionally.},
+	urldate = {2023-04-13},
+	booktitle = {Findings of the {Association} for {Computational} {Linguistics}: {EMNLP} 2022},
+	publisher = {Association for Computational Linguistics},
+	author = {Andreas, Jacob},
+	month = dec,
+	year = {2022},
+	pages = {5769--5779},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/XPNY9BMM/Andreas - 2022 - Language Models as Agent Models.pdf:application/pdf},
+}
+
+
+@misc{liang_holistic_2022,
+	title = {Holistic {Evaluation} of {Language} {Models}},
+	url = {http://arxiv.org/abs/2211.09110},
+	doi = {10.48550/arXiv.2211.09110},
+	abstract = {Language models (LMs) are becoming the foundation for almost all major language technologies, but their capabilities, limitations, and risks are not well understood. We present Holistic Evaluation of Language Models (HELM) to improve the transparency of language models. First, we taxonomize the vast space of potential scenarios (i.e. use cases) and metrics (i.e. desiderata) that are of interest for LMs. Then we select a broad subset based on coverage and feasibility, noting what's missing or underrepresented (e.g. question answering for neglected English dialects, metrics for trustworthiness). Second, we adopt a multi-metric approach: We measure 7 metrics (accuracy, calibration, robustness, fairness, bias, toxicity, and efficiency) for each of 16 core scenarios when possible (87.5\% of the time). This ensures metrics beyond accuracy don't fall to the wayside, and that trade-offs are clearly exposed. We also perform 7 targeted evaluations, based on 26 targeted scenarios, to analyze specific aspects (e.g. reasoning, disinformation). Third, we conduct a large-scale evaluation of 30 prominent language models (spanning open, limited-access, and closed models) on all 42 scenarios, 21 of which were not previously used in mainstream LM evaluation. Prior to HELM, models on average were evaluated on just 17.9\% of the core HELM scenarios, with some prominent models not sharing a single scenario in common. We improve this to 96.0\%: now all 30 models have been densely benchmarked on the same core scenarios and metrics under standardized conditions. Our evaluation surfaces 25 top-level findings. For full transparency, we release all raw model prompts and completions publicly for further analysis, as well as a general modular toolkit. We intend for HELM to be a living benchmark for the community, continuously updated with new scenarios, metrics, and models.},
+	urldate = {2023-04-13},
+	publisher = {arXiv},
+	author = {Liang, Percy and Bommasani, Rishi and Lee, Tony and Tsipras, Dimitris and Soylu, Dilara and Yasunaga, Michihiro and Zhang, Yian and Narayanan, Deepak and Wu, Yuhuai and Kumar, Ananya and others},
+	month = nov,
+	year = {2022},
+	note = {arXiv:2211.09110 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning},
+	annote = {Comment: Authored by the Center for Research on Foundation Models (CRFM) at the Stanford Institute for Human-Centered Artificial Intelligence (HAI). Project page: https://crfm.stanford.edu/helm/v1.0},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/ZINAR2I6/Liang et al. - 2022 - Holistic Evaluation of Language Models.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/JAJST9J5/2211.html:text/html},
+}
+
+@inproceedings{
+ouyang_training_2022,
+title={Training language models to follow instructions with human feedback},
+author={Long Ouyang and Jeffrey Wu and Xu Jiang and Diogo Almeida and Carroll Wainwright and Pamela Mishkin and Chong Zhang and Sandhini Agarwal and Katarina Slama and Alex Gray and John Schulman and Jacob Hilton and Fraser Kelton and Luke Miller and Maddie Simens and Amanda Askell and Peter Welinder and Paul Christiano and Jan Leike and Ryan Lowe},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=TG8KACxEON}
+}
+
+@article{lombrozo_structure_2006,
+	title = {The structure and function of explanations},
+	volume = {10},
+	issn = {1364-6613},
+	doi = {10.1016/j.tics.2006.08.004},
+	abstract = {Generating and evaluating explanations is spontaneous, ubiquitous and fundamental to our sense of understanding. Recent evidence suggests that in the course of an individual's reasoning, engaging in explanation can have profound effects on the probability assigned to causal claims, on how properties are generalized and on learning. These effects follow from two properties of the structure of explanations: explanations accommodate novel information in the context of prior beliefs, and do so in a way that fosters generalization. The study of explanation thus promises to shed light on core cognitive issues, such as learning, induction and conceptual representation. Moreover, the influence of explanation on learning and inference presents a challenge to theories that neglect the roles of prior knowledge and explanation-based reasoning.},
+	language = {eng},
+	number = {10},
+	journal = {Trends in Cognitive Sciences},
+	author = {Lombrozo, Tania},
+	month = oct,
+	year = {2006},
+	pmid = {16942895},
+	keywords = {Adult, Animals, Awareness, Child, Cognition, Comprehension, Concept Formation, Culture, Generalization, Psychological, Humans, Learning, Probability Learning, Transfer, Psychology},
+	pages = {464--470},
+}
+
+
+
+
+
+@inproceedings{
+eisenstein_honest_2022,
+title={Honest {Students} from {Untrusted} {Teachers}: {Learning} an {Interpretable} {Question}-{Answering} {Pipeline} from a {Pretrained} {Language} {Model}},
+author={Jacob Eisenstein and Daniel Andor and Bernd Bohnet and Michael Collins and David Mimno},
+booktitle={Workshop on Trustworthy and Socially Responsible Machine Learning, NeurIPS 2022},
+year={2022},
+url={https://openreview.net/forum?id=c4ob9nFloFW}
+}
+
+
+@misc{prystawski_why_2023,
+	title = {Why think step-by-step? {Reasoning} emerges from the locality of experience},
+	shorttitle = {Why think step-by-step?},
+	url = {http://arxiv.org/abs/2304.03843},
+	abstract = {Humans have a powerful and mysterious capacity to reason. By working through a series of purely mental steps, we can make inferences we would not be capable of making directly -- despite that fact that we get no additional data from the world. Similarly, large language models can perform better at complex tasks through chain-of-thought reasoning, where they generate intermediate steps before answering a question. We use language models to investigate the questions of when and why reasoning is helpful, testing the hypothesis that reasoning is effective when training data consisting of local clusters of variables that influence each other strongly. These training conditions enable the chaining of accurate local inferences in order to estimate relationships between variables that were not seen together in training. We train an autoregressive transformer on samples from joint distributions defined by Bayes nets, but only include a subset of all the variables in each sample. We compare language models' ability to match conditional probabilities both with and without intermediate reasoning steps, finding that intermediate steps help only when the training data is locally structured with respect to dependencies between variables. Furthermore, intermediate variables need to be relevant to the relationship between observed information and target inferences. Our results illustrate how the statistical structure of training data drives the effectiveness of reasoning step by step.},
+	urldate = {2023-04-15},
+	publisher = {arXiv},
+	author = {Prystawski, Ben and Goodman, Noah D.},
+	month = apr,
+	year = {2023},
+	note = {arXiv:2304.03843 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning},
+	annote = {Comment: 8 pages, 3 figures},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/V526MMGK/Prystawski and Goodman - 2023 - Why think step-by-step Reasoning emerges from the.pdf:application/pdf},
+}
+
+
+@misc{doshi-velez_towards_2017,
+	title = {Towards {A} {Rigorous} {Science} of {Interpretable} {Machine} {Learning}},
+	url = {http://arxiv.org/abs/1702.08608},
+	abstract = {As machine learning systems become ubiquitous, there has been a surge of interest in interpretable machine learning: systems that provide explanation for their outputs. These explanations are often used to qualitatively assess other criteria such as safety or non-discrimination. However, despite the interest in interpretability, there is very little consensus on what interpretable machine learning is and how it should be measured. In this position paper, we first define interpretability and describe when interpretability is needed (and when it is not). Next, we suggest a taxonomy for rigorous evaluation and expose open questions towards a more rigorous science of interpretable machine learning.},
+	urldate = {2023-04-15},
+	publisher = {arXiv},
+	author = {Doshi-Velez, Finale and Kim, Been},
+	month = mar,
+	year = {2017},
+	note = {arXiv:1702.08608 [cs, stat]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/TZ9IM6KZ/Doshi-Velez and Kim - 2017 - Towards A Rigorous Science of Interpretable Machin.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/XPVPAXCK/1702.html:text/html},
+}
+
+
+@article{mercier_why_2011,
+	title = {Why do humans reason? {Arguments} for an argumentative theory},
+	volume = {34},
+	issn = {1469-1825, 0140-525X},
+	shorttitle = {Why do humans reason?},
+	url = {https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/why-do-humans-reason-arguments-for-an-argumentative-theory/53E3F3180014E80E8BE9FB7A2DD44049},
+	doi = {10.1017/S0140525X10000968},
+	abstract = {Reasoning is generally seen as a means to improve knowledge and make better decisions. However, much evidence shows that reasoning often leads to epistemic distortions and poor decisions. This suggests that the function of reasoning should be rethought. Our hypothesis is that the function of reasoning is argumentative. It is to devise and evaluate arguments intended to persuade. Reasoning so conceived is adaptive given the exceptional dependence of humans on communication and their vulnerability to misinformation. A wide range of evidence in the psychology of reasoning and decision making can be reinterpreted and better explained in the light of this hypothesis. Poor performance in standard reasoning tasks is explained by the lack of argumentative context. When the same problems are placed in a proper argumentative setting, people turn out to be skilled arguers. Skilled arguers, however, are not after the truth but after arguments supporting their views. This explains the notorious confirmation bias. This bias is apparent not only when people are actually arguing, but also when they are reasoning proactively from the perspective of having to defend their opinions. Reasoning so motivated can distort evaluations and attitudes and allow erroneous beliefs to persist. Proactively used reasoning also favors decisions that are easy to justify but not necessarily better. In all these instances traditionally described as failures or flaws, reasoning does exactly what can be expected of an argumentative device: Look for arguments that support a given conclusion, and, ceteris paribus, favor conclusions for which arguments can be found.},
+	language = {en},
+	number = {2},
+	urldate = {2023-05-02},
+	journal = {Behavioral and Brain Sciences},
+	author = {Mercier, Hugo and Sperber, Dan},
+	month = apr,
+	year = {2011},
+	note = {Publisher: Cambridge University Press},
+	keywords = {argumentation, confirmation bias, decision making, dual process theory, evolutionary psychology, motivated reasoning, reason-based choice, reasoning},
+	pages = {57--74},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/DASLDPDQ/Mercier and Sperber - 2011 - Why do humans reason Arguments for an argumentati.pdf:application/pdf},
+}
+
+
+@article{nisbett_telling_1977,
+	title = {Telling more than we can know: {Verbal} reports on mental processes},
+	volume = {84},
+	issn = {1939-1471},
+	shorttitle = {Telling more than we can know},
+	doi = {10.1037/0033-295X.84.3.231},
+	abstract = {Reviews evidence which suggests that there may be little or no direct introspective access to higher order cognitive processes. Ss are sometimes (a) unaware of the existence of a stimulus that importantly influenced a response, (b) unaware of the existence of the response, and (c) unaware that the stimulus has affected the response. It is proposed that when people attempt to report on their cognitive processes, that is, on the processes mediating the effects of a stimulus on a response, they do not do so on the basis of any true introspection. Instead, their reports are based on a priori, implicit causal theories, or judgments about the extent to which a particular stimulus is a plausible cause of a given response. This suggests that though people may not be able to observe directly their cognitive processes, they will sometimes be able to report accurately about them. Accurate reports will occur when influential stimuli are salient and are plausible causes of the responses they produce, and will not occur when stimuli are not salient or are not plausible causes. (86 ref) (PsycINFO Database Record (c) 2018 APA, all rights reserved)},
+	journal = {Psychological Review},
+	author = {Nisbett, Richard E. and Wilson, Timothy D.},
+	year = {1977},
+	note = {Place: US
+Publisher: American Psychological Association},
+	keywords = {Cognitive Processes, Verbal Communication},
+	pages = {231--259},
+	file = {Full Text:/Users/milesturpin/Zotero/storage/PUB2NUKC/Nisbett and Wilson - 1977 - Telling more than we can know Verbal reports on m.pdf:application/pdf;Snapshot:/Users/milesturpin/Zotero/storage/P48FKQ9Q/1978-00295-001.html:text/html},
+}
+
+
+
+@incollection{hilton_social_2017,
+	title = {Social {Attribution} and {Explanation}},
+	isbn = {978-0-19-939955-0},
+	url = {https://doi.org/10.1093/oxfordhb/9780199399550.013.33},
+	abstract = {Attribution processes appear to be an integral part of human visual perception, as low-level inferences of causality and intentionality appear to be automatic and are supported by specific brain systems. However, higher-order attribution processes use information held in memory or made present at the time of judgment. While attribution processes about social objects are sometimes biased, there is scope for partial correction. This chapter reviews work on the generation, communication, and interpretation of complex explanations, with reference to explanation-based models of text understanding that result in situation models of narratives. It distinguishes between causal connection and causal selection, and suggests that a factor will be discounted if it is not perceived to be connected to the event and backgrounded if it is perceived to be causally connected to that event, but is not selected as relevant to an explanation. The final section focuses on how interpersonal explanation processes constrain causal selection.},
+	urldate = {2023-04-15},
+	booktitle = {The {Oxford} {Handbook} of {Causal} {Reasoning}},
+	publisher = {Oxford University Press},
+	author = {Hilton, Denis},
+	editor = {Waldmann, Michael R.},
+	month = jun,
+	year = {2017},
+	doi = {10.1093/oxfordhb/9780199399550.013.33},
+	pages = {0},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/GWJSLDFN/Hilton - 2017 - Social Attribution and Explanation.pdf:application/pdf;Snapshot:/Users/milesturpin/Zotero/storage/VW26X945/295460976.html:text/html},
+}
+
+
+@inproceedings{
+wang_towards_2022,
+	title = {Towards {Understanding} {Chain}-of-{Thought} {Prompting}: {An} {Empirical} {Study} of {What} {Matters}},
+author={Boshi Wang and Sewon Min and Xiang Deng and Jiaming Shen and You Wu and Luke Zettlemoyer and Huan Sun},
+booktitle={ICLR 2023 Workshop on Mathematical and Empirical Understanding of Foundation Models},
+year={2023},
+url={https://openreview.net/forum?id=L9UMeoeU2i}
+}
+
+
+
+
+@inproceedings{
+burns_discovering_2023,
+title={Discovering {Latent} {Knowledge} in {Language} {Models} {Without} {Supervision}},
+author={Collin Burns and Haotian Ye and Dan Klein and Jacob Steinhardt},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=ETKGuby0hcs}
+}
+
+@inproceedings{min_multi-hop_2019,
+	title = {Multi-hop {Reading} {Comprehension} through {Question} {Decomposition} and {Rescoring}},
+    author = "Min, Sewon  and
+      Zhong, Victor  and
+      Zettlemoyer, Luke  and
+      Hajishirzi, Hannaneh",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1613",
+    doi = "10.18653/v1/P19-1613",
+    pages = "6097--6109",
+    abstract = "Multi-hop Reading Comprehension (RC) requires reasoning and aggregation across several paragraphs. We propose a system for multi-hop RC that decomposes a compositional question into simpler sub-questions that can be answered by off-the-shelf single-hop RC models. Since annotations for such decomposition are expensive, we recast subquestion generation as a span prediction problem and show that our method, trained using only 400 labeled examples, generates sub-questions that are as effective as human-authored sub-questions. We also introduce a new global rescoring approach that considers each decomposition (i.e. the sub-questions and their answers) to select the best final answer, greatly improving overall performance. Our experiments on HotpotQA show that this approach achieves the state-of-the-art results, while providing explainable evidence for its decision making in the form of sub-questions.",
+}
+
+@inproceedings{perez_unsupervised_2020,
+	title = {Unsupervised {Question} {Decomposition} for {Question} {Answering}},
+    author = "Perez, Ethan  and
+      Lewis, Patrick  and
+      Yih, Wen-tau  and
+      Cho, Kyunghyun  and
+      Kiela, Douwe",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.713",
+    doi = "10.18653/v1/2020.emnlp-main.713",
+    pages = "8864--8880",
+    abstract = "We aim to improve question answering (QA) by decomposing hard questions into simpler sub-questions that existing QA systems are capable of answering. Since labeling questions with decompositions is cumbersome, we take an unsupervised approach to produce sub-questions, also enabling us to leverage millions of questions from the internet. Specifically, we propose an algorithm for One-to-N Unsupervised Sequence transduction (ONUS) that learns to map one hard, multi-hop question to many simpler, single-hop sub-questions. We answer sub-questions with an off-the-shelf QA model and give the resulting answers to a recomposition model that combines them into a final answer. We show large QA improvements on HotpotQA over a strong baseline on the original, out-of-domain, and multi-hop dev sets. ONUS automatically learns to decompose different kinds of questions, while matching the utility of supervised and heuristic decomposition methods for QA and exceeding those methods in fluency. Qualitatively, we find that using sub-questions is promising for shedding light on why a QA system makes a prediction.",
+}
+
+
+
+
+@article{leo_gao_shapley_nodate,
+	title = {Shapley {Value} {Attribution} in {Chain} of {Thought}},
+	url = {https://www.alignmentforum.org/posts/FX5JmftqL2j6K8dn4/shapley-value-attribution-in-chain-of-thought},
+	abstract = {TL;DR: Language models sometimes seem to ignore parts of the chain of thought, and larger models appear to do this more often. Shapley value attribution is a possible approach to get a more detailed…},
+	language = {en},
+year={2023},
+	urldate = {2023-04-24},
+	author = {Leo Gao},
+	file = {Snapshot:/Users/milesturpin/Zotero/storage/UAPCGH78/shapley-value-attribution-in-chain-of-thought.html:text/html},
+}
+
+
+@misc{creswell_selection-inference_2022,
+	title = {Selection-{Inference}: {Exploiting} {Large} {Language} {Models} for {Interpretable} {Logical} {Reasoning}},
+	shorttitle = {Selection-{Inference}},
+	url = {http://arxiv.org/abs/2205.09712},
+	abstract = {Large language models (LLMs) have been shown to be capable of impressive few-shot generalisation to new tasks. However, they still tend to perform poorly on multi-step logical reasoning problems. Here we carry out a comprehensive evaluation of LLMs on 50 tasks that probe different aspects of logical reasoning. We show that language models tend to perform fairly well at single step inference or entailment tasks, but struggle to chain together multiple reasoning steps to solve more complex problems. In light of this, we propose a Selection-Inference (SI) framework that exploits pre-trained LLMs as general processing modules, and alternates between selection and inference to generate a series of interpretable, casual reasoning steps leading to the final answer. We show that a 7B parameter LLM used within the SI framework in a 5-shot generalisation setting, with no fine-tuning, yields a performance improvement of over 100\% compared to an equivalent vanilla baseline on a suite of 10 logical reasoning tasks. The same model in the same setting even outperforms a significantly larger 280B parameter baseline on the same suite of tasks. Moreover, answers produced by the SI framework are accompanied by a causal natural-language-based reasoning trace, which has important implications for the safety and trustworthiness of the system.},
+	urldate = {2023-04-24},
+	publisher = {arXiv},
+	author = {Creswell, Antonia and Shanahan, Murray and Higgins, Irina},
+	month = may,
+	year = {2022},
+	note = {arXiv:2205.09712 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language},
+}
+
+
+@misc{sia_logical_2022,
+	title = {Logical {Satisfiability} of {Counterfactuals} for {Faithful} {Explanations} in {NLI}},
+	url = {http://arxiv.org/abs/2205.12469},
+	abstract = {Evaluating an explanation's faithfulness is desired for many reasons such as trust, interpretability and diagnosing the sources of model's errors. In this work, which focuses on the NLI task, we introduce the methodology of Faithfulness-through-Counterfactuals, which first generates a counterfactual hypothesis based on the logical predicates expressed in the explanation, and then evaluates if the model's prediction on the counterfactual is consistent with that expressed logic (i.e. if the new formula is {\textbackslash}textit\{logically satisfiable\}). In contrast to existing approaches, this does not require any explanations for training a separate verification model. We first validate the efficacy of automatic counterfactual hypothesis generation, leveraging on the few-shot priming paradigm. Next, we show that our proposed metric distinguishes between human-model agreement and disagreement on new counterfactual input. In addition, we conduct a sensitivity analysis to validate that our metric is sensitive to unfaithful explanations.},
+	urldate = {2023-04-15},
+	publisher = {arXiv},
+	author = {Sia, Suzanna and Belyy, Anton and Almahairi, Amjad and Khabsa, Madian and Zettlemoyer, Luke and Mathias, Lambert},
+	month = may,
+	year = {2022},
+	note = {arXiv:2205.12469 [cs]},
+	keywords = {Computer Science - Computation and Language},
+	annote = {Comment: Under Review},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/ZQI5HZEA/Sia et al. - 2022 - Logical Satisfiability of Counterfactuals for Fait.pdf:application/pdf;arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/65UM9CM3/2205.html:text/html},
+}
+
+
+
+
+@inproceedings{wiegreffe_measuring_2021,
+	address = {Online and Punta Cana, Dominican Republic},
+	title = {Measuring {Association} {Between} {Labels} and {Free}-{Text} {Rationales}},
+	url = {https://aclanthology.org/2021.emnlp-main.804},
+	doi = {10.18653/v1/2021.emnlp-main.804},
+	abstract = {In interpretable NLP, we require faithful rationales that reflect the model's decision-making process for an explained instance. While prior work focuses on extractive rationales (a subset of the input words), we investigate their less-studied counterpart: free-text natural language rationales. We demonstrate that *pipelines*, models for faithful rationalization on information-extraction style tasks, do not work as well on “reasoning” tasks requiring free-text rationales. We turn to models that *jointly* predict and rationalize, a class of widely used high-performance models for free-text rationalization. We investigate the extent to which the labels and rationales predicted by these models are associated, a necessary property of faithful explanation. Via two tests, *robustness equivalence* and *feature importance agreement*, we find that state-of-the-art T5-based joint models exhibit desirable properties for explaining commonsense question-answering and natural language inference, indicating their potential for producing faithful free-text rationales.},
+	urldate = {2023-04-15},
+	booktitle = {Proceedings of the 2021 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	publisher = {Association for Computational Linguistics},
+	author = {Wiegreffe, Sarah and Marasović, Ana and Smith, Noah A.},
+	month = nov,
+	year = {2021},
+	pages = {10266--10284},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/GV43SQGN/Wiegreffe et al. - 2021 - Measuring Association Between Labels and Free-Text.pdf:application/pdf},
+}
+
+
+
+
+@inproceedings{gardner_evaluating_2020,
+	address = {Online},
+	title = {Evaluating {Models}' {Local} {Decision} {Boundaries} via {Contrast} {Sets}},
+	url = {https://aclanthology.org/2020.findings-emnlp.117},
+	doi = {10.18653/v1/2020.findings-emnlp.117},
+	abstract = {Standard test sets for supervised learning evaluate in-distribution generalization. Unfortunately, when a dataset has systematic gaps (e.g., annotation artifacts), these evaluations are misleading: a model can learn simple decision rules that perform well on the test set but do not capture the abilities a dataset is intended to test. We propose a more rigorous annotation paradigm for NLP that helps to close systematic gaps in the test data. In particular, after a dataset is constructed, we recommend that the dataset authors manually perturb the test instances in small but meaningful ways that (typically) change the gold label, creating contrast sets. Contrast sets provide a local view of a model's decision boundary, which can be used to more accurately evaluate a model's true linguistic capabilities. We demonstrate the efficacy of contrast sets by creating them for 10 diverse NLP datasets (e.g., DROP reading comprehension, UD parsing, and IMDb sentiment analysis). Although our contrast sets are not explicitly adversarial, model performance is significantly lower on them than on the original test sets—up to 25\% in some cases. We release our contrast sets as new evaluation benchmarks and encourage future dataset construction efforts to follow similar annotation processes.},
+	urldate = {2023-04-15},
+	booktitle = {Findings of the {Association} for {Computational} {Linguistics}: {EMNLP} 2020},
+	publisher = {Association for Computational Linguistics},
+	author = {Gardner, Matt and Artzi, Yoav and Basmov, Victoria and Berant, Jonathan and Bogin, Ben and Chen, Sihao and Dasigi, Pradeep and Dua, Dheeru and Elazar, Yanai and Gottumukkala, Ananth and others},
+	month = nov,
+	year = {2020},
+	pages = {1307--1323},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/6CHJ2VPN/Gardner et al. - 2020 - Evaluating Models' Local Decision Boundaries via C.pdf:application/pdf},
+}
+
+@inproceedings{perez2021true,
+ author = {Perez, Ethan and Kiela, Douwe and Cho, Kyunghyun},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+ pages = {11054--11070},
+ publisher = {Curran Associates, Inc.},
+ title = {True Few-Shot Learning with Language Models},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/5c04925674920eb58467fb52ce4ef728-Paper.pdf},
+ volume = {34},
+ year = {2021}
+}
+
+@inproceedings{lu-etal-2022-fantastically,
+    title = "Fantastically Ordered Prompts and Where to Find Them: Overcoming Few-Shot Prompt Order Sensitivity",
+    author = "Lu, Yao  and
+      Bartolo, Max  and
+      Moore, Alastair  and
+      Riedel, Sebastian  and
+      Stenetorp, Pontus",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.556",
+    doi = "10.18653/v1/2022.acl-long.556",
+    pages = "8086--8098",
+    abstract = "When primed with only a handful of training samples, very large, pretrained language models such as GPT-3 have shown competitive results when compared to fully-supervised, fine-tuned, large, pretrained language models. We demonstrate that the order in which the samples are provided can make the difference between near state-of-the-art and random guess performance: essentially some permutations are {``}fantastic{''} and some not. We analyse this phenomenon in detail, establishing that: it is present across model sizes (even for the largest current models), it is not related to a specific subset of samples, and that a given good permutation for one model is not transferable to another. While one could use a development set to determine which permutations are performant, this would deviate from the true few-shot setting as it requires additional annotated data. Instead, we use the generative nature of language models to construct an artificial development set and based on entropy statistics of the candidate permutations on this set, we identify performant prompts. Our method yields a 13{\%} relative improvement for GPT-family models across eleven different established text classification tasks.",
+}
+
+
+@inproceedings{hase_evaluating_2020,
+	address = {Online},
+	title = {Evaluating {Explainable} {AI}: {Which} {Algorithmic} {Explanations} {Help} {Users} {Predict} {Model} {Behavior}?},
+	shorttitle = {Evaluating {Explainable} {AI}},
+	url = {https://aclanthology.org/2020.acl-main.491},
+	doi = {10.18653/v1/2020.acl-main.491},
+	abstract = {Algorithmic approaches to interpreting machine learning models have proliferated in recent years. We carry out human subject tests that are the first of their kind to isolate the effect of algorithmic explanations on a key aspect of model interpretability, simulatability, while avoiding important confounding experimental factors. A model is simulatable when a person can predict its behavior on new inputs. Through two kinds of simulation tests involving text and tabular data, we evaluate five explanations methods: (1) LIME, (2) Anchor, (3) Decision Boundary, (4) a Prototype model, and (5) a Composite approach that combines explanations from each method. Clear evidence of method effectiveness is found in very few cases: LIME improves simulatability in tabular classification, and our Prototype method is effective in counterfactual simulation tests. We also collect subjective ratings of explanations, but we do not find that ratings are predictive of how helpful explanations are. Our results provide the first reliable and comprehensive estimates of how explanations influence simulatability across a variety of explanation methods and data domains. We show that (1) we need to be careful about the metrics we use to evaluate explanation methods, and (2) there is significant room for improvement in current methods.},
+	urldate = {2023-04-15},
+	booktitle = {Proceedings of the 58th {Annual} {Meeting} of the {Association} for {Computational} {Linguistics}},
+	publisher = {Association for Computational Linguistics},
+	author = {Hase, Peter and Bansal, Mohit},
+	month = jul,
+	year = {2020},
+	pages = {5540--5552},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/X46A5WKQ/Hase and Bansal - 2020 - Evaluating Explainable AI Which Algorithmic Expla.pdf:application/pdf},
+}
+
+
+
+@inproceedings{jain_learning_2020,
+	address = {Online},
+	title = {Learning to {Faithfully} {Rationalize} by {Construction}},
+	url = {https://aclanthology.org/2020.acl-main.409},
+	doi = {10.18653/v1/2020.acl-main.409},
+	abstract = {In many settings it is important for one to be able to understand why a model made a particular prediction. In NLP this often entails extracting snippets of an input text `responsible for' corresponding model output; when such a snippet comprises tokens that indeed informed the model's prediction, it is a faithful explanation. In some settings, faithfulness may be critical to ensure transparency. Lei et al. (2016) proposed a model to produce faithful rationales for neural text classification by defining independent snippet extraction and prediction modules. However, the discrete selection over input tokens performed by this method complicates training, leading to high variance and requiring careful hyperparameter tuning. We propose a simpler variant of this approach that provides faithful explanations by construction. In our scheme, named FRESH, arbitrary feature importance scores (e.g., gradients from a trained model) are used to induce binary labels over token inputs, which an extractor can be trained to predict. An independent classifier module is then trained exclusively on snippets provided by the extractor; these snippets thus constitute faithful explanations, even if the classifier is arbitrarily complex. In both automatic and manual evaluations we find that variants of this simple framework yield predictive performance superior to `end-to-end' approaches, while being more general and easier to train. Code is available at https://github.com/successar/FRESH.},
+	urldate = {2023-04-15},
+	booktitle = {Proceedings of the 58th {Annual} {Meeting} of the {Association} for {Computational} {Linguistics}},
+	publisher = {Association for Computational Linguistics},
+	author = {Jain, Sarthak and Wiegreffe, Sarah and Pinter, Yuval and Wallace, Byron C.},
+	month = jul,
+	year = {2020},
+	pages = {4459--4473},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/WWSQPEL3/Jain et al. - 2020 - Learning to Faithfully Rationalize by Construction.pdf:application/pdf},
+}
+
+
+@inproceedings{
+holtzman_curious_2023,
+title={The {Curious} {Case} of {Neural} {Text} {Degeneration}},
+author={Ari Holtzman and Jan Buys and Li Du and Maxwell Forbes and Yejin Choi},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=rygGQyrFvH}
+}
+
+@misc{mckenzie2022round2,
+    title={Inverse Scaling Prize: Second Round Winners},
+    url={https://irmckenzie.co.uk/round2},
+    author={McKenzie, Ian and Lyzhov, Alexander and Parrish, Alicia and Prabhu, Ameya and Mueller, Aaron and Kim, Najoung and Bowman, Sam and Perez, Ethan},
+    year={2023}
+}
+
+@inproceedings{zhou_least--most_2023,
+	title = {Least-to-{Most} {Prompting} {Enables} {Complex} {Reasoning} in {Large} {Language} {Models}},
+author={Denny Zhou and Nathanael Sch{\"a}rli and Le Hou and Jason Wei and Nathan Scales and Xuezhi Wang and Dale Schuurmans and Claire Cui and Olivier Bousquet and Quoc V Le and Ed H. Chi},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=WZH7099tgfM}
+}
+
+
+
+
+@misc{li_explanations_2022,
+	title = {Explanations from {Large} {Language} {Models} {Make} {Small} {Reasoners} {Better}},
+	url = {http://arxiv.org/abs/2210.06726},
+	doi = {10.48550/arXiv.2210.06726},
+	abstract = {Integrating free-text explanations to in-context learning of large language models (LLM) is shown to elicit strong reasoning capabilities along with reasonable explanations. In this paper, we consider the problem of leveraging the explanations generated by LLM to improve the training of small reasoners, which are more favorable in real-production deployment due to their low cost. We systematically explore three explanation generation approaches from LLM and utilize a multi-task learning framework to facilitate small models to acquire strong reasoning power together with explanation generation capabilities. Experiments on multiple reasoning tasks show that our method can consistently and significantly outperform finetuning baselines across different settings, and even perform better than finetuning/prompting a 60x larger GPT-3 (175B) model by up to 9.5\% in accuracy. As a side benefit, human evaluation further shows that our method can generate high-quality explanations to justify its predictions, moving towards the goal of explainable AI.},
+	urldate = {2023-04-16},
+	publisher = {arXiv},
+	author = {Li, Shiyang and Chen, Jianshu and Shen, Yelong and Chen, Zhiyu and Zhang, Xinlu and Li, Zekun and Wang, Hong and Qian, Jing and Peng, Baolin and Mao, Yi and others},
+	month = oct,
+	year = {2022},
+	note = {arXiv:2210.06726 [cs]},
+	keywords = {Computer Science - Computation and Language},
+	file = {arXiv Fulltext PDF:/Users/milesturpin/Zotero/storage/FVJYJ3TF/Li et al. - 2022 - Explanations from Large Language Models Make Small.pdf:application/pdf},
+}
+
+
+@inproceedings{yao_react_2023,
+	title = {{ReAct}: {Synergizing} {Reasoning} and {Acting} in {Language} {Models}},
+	shorttitle = {{ReAct}},
+	url = {https://openreview.net/forum?id=WE_vluYUL-X},
+	abstract = {While large language models (LLMs) have demonstrated impressive capabilities across tasks in language understanding and interactive decision making, their abilities for reasoning (e.g. chain-of-thought prompting) and acting (e.g. action plan generation) have primarily been studied as separate topics. In this paper, we explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner, allowing for greater synergy between the two: reasoning traces help the model induce, track, and update action plans as well as handle exceptions, while actions allow it to interface with external sources, such as knowledge bases or environments, to gather additional information. We apply our approach, named ReAct, to a diverse set of language and decision making tasks and demonstrate its effectiveness over state-of-the-art baselines, as well as improved human interpretability and trustworthiness over methods without reasoning or acting components. Concretely, on question answering (HotpotQA) and fact verification (Fever), ReAct overcomes issues of hallucination and error propagation prevalent in chain-of-thought reasoning by interacting with a simple Wikipedia API, and generates human-like task-solving trajectories that are more interpretable than baselines without reasoning traces. On two interactive decision making benchmarks (ALFWorld and WebShop), ReAct outperforms imitation and reinforcement learning methods by an absolute success rate of 34\% and 10\% respectively, while being prompted with only one or two in-context examples.},
+	language = {en},
+	urldate = {2023-04-16},
+	author = {Yao, Shunyu and Zhao, Jeffrey and Yu, Dian and Du, Nan and Shafran, Izhak and Narasimhan, Karthik R. and Cao, Yuan},
+	month = feb,
+	year = {2023},
+	file = {Full Text PDF:/Users/milesturpin/Zotero/storage/QK7HK9EM/Yao et al. - 2023 - ReAct Synergizing Reasoning and Acting in Languag.pdf:application/pdf},
+}
+
+
+@misc{ye_complementary_2022,
+	title = {Complementary {Explanations} for {Effective} {In}-{Context} {Learning}},
+	url = {http://arxiv.org/abs/2211.13892},
+	abstract = {Large language models (LLMs) have exhibited remarkable capabilities in learning from explanations in prompts. Yet, there has been limited understanding of what makes explanations effective for in-context learning. This work aims to better understand the mechanisms by which explanations are used for in-context learning. We first study the impact of two different factors on prompting performance when using explanations: the computation trace (the way the solution is decomposed) and the natural language of the prompt. By perturbing explanations on three controlled tasks, we show that both factors contribute to the effectiveness of explanations, indicating that LLMs do faithfully follow the explanations to some extent. We further study how to form maximally effective sets of explanations for solving a given test query. We find that LLMs can benefit from the complementarity of the explanation set as they are able to fuse different reasoning specified by individual exemplars in prompts. Additionally, having relevant exemplars also contributes to more effective prompts. Therefore, we propose a maximal-marginal-relevance-based exemplar selection approach for constructing exemplar sets that are both relevant as well as complementary, which successfully improves the in-context learning performance across three real-world tasks on multiple LLMs.},
+	urldate = {2023-04-21},
+	publisher = {arXiv},
+	author = {Ye, Xi and Iyer, Srinivasan and Celikyilmaz, Asli and Stoyanov, Ves and Durrett, Greg and Pasunuru, Ramakanth},
+	month = nov,
+	year = {2022},
+	note = {arXiv:2211.13892 [cs]},
+	keywords = {Computer Science - Computation and Language},
+	file = {arXiv.org Snapshot:/Users/milesturpin/Zotero/storage/JK3ZC64Q/2211.html:text/html;Full Text PDF:/Users/milesturpin/Zotero/storage/WG54I7GF/Ye et al. - 2022 - Complementary Explanations for Effective In-Contex.pdf:application/pdf},
+}
+
+
+@inproceedings{
+golovneva_roscoe_2023,
+title={{ROSCOE}: A {Suite} of {Metrics} for {Scoring} {Step}-by-{Step} {Reasoning}},
+author={Olga Golovneva and Moya Peng Chen and Spencer Poff and Martin Corredor and Luke Zettlemoyer and Maryam Fazel-Zarandi and Asli Celikyilmaz},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=xYlJRpzZtsY}
+}

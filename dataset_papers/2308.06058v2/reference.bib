@@ -1,0 +1,636 @@
+@article{feddyn,
+  title={Federated learning based on dynamic regularization},
+  author={Acar, Durmus Alp Emre and Zhao, Yue and Navarro, Ramon Matas and Mattina, Matthew and Whatmough, Paul N and Saligrama, Venkatesh},
+  journal={arXiv preprint arXiv:2111.04263},
+  year={2021}
+}
+@inproceedings{proxskip,
+  title={Proxskip: Yes! local gradient steps provably lead to communication acceleration! finally!},
+  author={Mishchenko, Konstantin and Malinovsky, Grigory and Stich, Sebastian and Richt{\'a}rik, Peter},
+  booktitle={International Conference on Machine Learning},
+  pages={15750--15769},
+  year={2022},
+  organization={PMLR}
+}
+
+@InProceedings{scaffold,
+  title = 	 {{SCAFFOLD}: Stochastic Controlled Averaging for Federated Learning},
+  author =       {Karimireddy, Sai Praneeth and Kale, Satyen and Mohri, Mehryar and Reddi, Sashank and Stich, Sebastian and Suresh, Ananda Theertha},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {5132--5143},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--18 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v119/karimireddy20a/karimireddy20a.pdf},
+  url = 	 {https://proceedings.mlr.press/v119/karimireddy20a.html},
+  abstract = 	 {Federated learning is a key scenario in modern large-scale machine learning where the data remains distributed over a large number of clients and the task is to learn a centralized model without transmitting the client data. The standard optimization algorithm used in this setting is Federated Averaging (FedAvg) due to its low communication cost. We obtain a tight characterization of the convergence of FedAvg and prove that heterogeneity (non-iid-ness) in the client’s data results in a ‘drift’ in the local updates resulting in poor performance. As a solution, we propose a new algorithm (SCAFFOLD) which uses control variates (variance reduction) to correct for the ‘client drift’. We prove that SCAFFOLD requires significantly fewer communication rounds and is not affected by data heterogeneity or client sampling. Further, we show that (for quadratics) SCAFFOLD can take advantage of similarity in the client’s data yielding even faster convergence. The latter is the first result to quantify the usefulness of local-steps in distributed optimization.}
+}
+
+
+@article{adagrad+ls,
+  title={Adaptive gradient methods converge faster with over-parameterization (but you should do a line-search)},
+  author={Vaswani, Sharan and Laradji, Issam and Kunstner, Frederik and Meng, Si Yi and Schmidt, Mark and Lacoste-Julien, Simon},
+  journal={arXiv preprint arXiv:2006.06835},
+  year={2020}
+}
+
+@misc{multidimls,
+      title={Searching for Optimal Per-Coordinate Step-sizes with Multidimensional Backtracking}, 
+      author={Frederik Kunstner and Victor S. Portella and Mark Schmidt and Nick Harvey},
+      year={2023},
+      eprint={2306.02527},
+      archivePrefix={arXiv},
+      primaryClass={math.OC}
+}
+
+@misc{relax_ls,
+      title={Don't be so Monotone: Relaxing Stochastic Line Search in Over-Parameterized Models}, 
+      author={Leonardo Galli and Holger Rauhut and Mark Schmidt},
+      year={2023},
+      eprint={2306.12747},
+      archivePrefix={arXiv},
+      primaryClass={math.OC}
+}
+
+@InProceedings{page,
+  title = 	 {PAGE: A Simple and Optimal Probabilistic Gradient Estimator for Nonconvex Optimization},
+  author =       {Li, Zhize and Bao, Hongyan and Zhang, Xiangliang and Richtarik, Peter},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {6286--6295},
+  year = 	 {2021},
+  editor = 	 {Meila, Marina and Zhang, Tong},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {18--24 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v139/li21a/li21a.pdf},
+  url = 	 {https://proceedings.mlr.press/v139/li21a.html},
+  abstract = 	 {In this paper, we propose a novel stochastic gradient estimator—ProbAbilistic Gradient Estimator (PAGE)—for nonconvex optimization. PAGE is easy to implement as it is designed via a small adjustment to vanilla SGD: in each iteration, PAGE uses the vanilla minibatch SGD update with probability $p_t$ or reuses the previous gradient with a small adjustment, at a much lower computational cost, with probability $1-p_t$. We give a simple formula for the optimal choice of $p_t$. Moreover, we prove the first tight lower bound $\Omega(n+\frac{\sqrt{n}}{\epsilon^2})$ for nonconvex finite-sum problems, which also leads to a tight lower bound $\Omega(b+\frac{\sqrt{b}}{\epsilon^2})$ for nonconvex online problems, where $b:= \min\{\frac{\sigma^2}{\epsilon^2}, n\}$. Then, we show that PAGE obtains the optimal convergence results $O(n+\frac{\sqrt{n}}{\epsilon^2})$ (finite-sum) and $O(b+\frac{\sqrt{b}}{\epsilon^2})$ (online) matching our lower bounds for both nonconvex finite-sum and online problems. Besides, we also show that for nonconvex functions satisfying the Polyak-Ł{ojasiewicz} (PL) condition, PAGE can automatically switch to a faster linear convergence rate $O(\cdot\log \frac{1}{\epsilon})$. Finally, we conduct several deep learning experiments (e.g., LeNet, VGG, ResNet) on real datasets in PyTorch showing that PAGE not only converges much faster than SGD in training but also achieves the higher test accuracy, validating the optimal theoretical results and confirming the practical superiority of PAGE.}
+}
+
+
+@article{cifar100,
+title= {CIFAR-100 (Canadian Institute for Advanced Research)},
+journal= {},
+author= {Alex Krizhevsky and Vinod Nair and Geoffrey Hinton},
+year= {},
+url= {http://www.cs.toronto.edu/~kriz/cifar.html},
+abstract= {This dataset is just like the CIFAR-10, except it has 100 classes containing 600 images each. There are 500 training images and 100 testing images per class. The 100 classes in the CIFAR-100 are grouped into 20 superclasses. Each image comes with a "fine" label (the class to which it belongs) and a "coarse" label (the superclass to which it belongs).
+Here is the list of classes in the CIFAR-100:
+
+Superclass	Classes
+aquatic mammals	beaver, dolphin, otter, seal, whale
+fish	aquarium fish, flatfish, ray, shark, trout
+flowers	orchids, poppies, roses, sunflowers, tulips
+food containers	bottles, bowls, cans, cups, plates
+fruit and vegetables	apples, mushrooms, oranges, pears, sweet peppers
+household electrical devices	clock, computer keyboard, lamp, telephone, television
+household furniture	bed, chair, couch, table, wardrobe
+insects	bee, beetle, butterfly, caterpillar, cockroach
+large carnivores	bear, leopard, lion, tiger, wolf
+large man-made outdoor things	bridge, castle, house, road, skyscraper
+large natural outdoor scenes	cloud, forest, mountain, plain, sea
+large omnivores and herbivores	camel, cattle, chimpanzee, elephant, kangaroo
+medium-sized mammals	fox, porcupine, possum, raccoon, skunk
+non-insect invertebrates	crab, lobster, snail, spider, worm
+people	baby, boy, girl, man, woman
+reptiles	crocodile, dinosaur, lizard, snake, turtle
+small mammals	hamster, mouse, rabbit, shrew, squirrel
+trees	maple, oak, palm, pine, willow
+vehicles 1	bicycle, bus, motorcycle, pickup truck, train
+vehicles 2	lawn-mower, rocket, streetcar, tank, tractor
+
+Yes, I know mushrooms aren't really fruit or vegetables and bears aren't really carnivores. },
+keywords= {Dataset},
+terms= {}
+}
+
+@article{cifar10,
+title= {CIFAR-10 (Canadian Institute for Advanced Research)},
+journal= {},
+author= {Alex Krizhevsky and Vinod Nair and Geoffrey Hinton},
+year= {},
+url= {http://www.cs.toronto.edu/~kriz/cifar.html},
+abstract= {The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images. 
+
+The dataset is divided into five training batches and one test batch, each with 10000 images. The test batch contains exactly 1000 randomly-selected images from each class. The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class. },
+keywords= {Dataset},
+terms= {}
+}
+
+
+@INPROCEEDINGS{resnet,
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  title={Deep Residual Learning for Image Recognition}, 
+  year={2016},
+  volume={},
+  number={},
+  pages={770-778},
+  doi={10.1109/CVPR.2016.90}}
+
+
+@inproceedings{
+warmupstepsize,
+title={{SGDR}: Stochastic Gradient Descent with Warm Restarts},
+author={Ilya Loshchilov and Frank Hutter},
+booktitle={International Conference on Learning Representations},
+year={2017},
+url={https://openreview.net/forum?id=Skq89Scxx}
+}
+
+@book{nesterov_book, author = {Nesterov, Yurii}, title = {Introductory Lectures on Convex Optimization: A Basic Course}, year = {2014}, isbn = {1461346916}, publisher = {Springer Publishing Company, Incorporated}, edition = {1}, abstract = {It was in the middle of the 1980s, when the seminal paper by Kar markar opened a new epoch in nonlinear optimization. The importance of this paper, containing a new polynomial-time algorithm for linear op timization problems, was not only in its complexity bound. At that time, the most surprising feature of this algorithm was that the theoretical pre diction of its high efficiency was supported by excellent computational results. This unusual fact dramatically changed the style and direc tions of the research in nonlinear optimization. Thereafter it became more and more common that the new methods were provided with a complexity analysis, which was considered a better justification of their efficiency than computational experiments. In a new rapidly develop ing field, which got the name "polynomial-time interior-point methods", such a justification was obligatory. Afteralmost fifteen years of intensive research, the main results of this development started to appear in monographs [12, 14, 16, 17, 18, 19]. Approximately at that time the author was asked to prepare a new course on nonlinear optimization for graduate students. The idea was to create a course which would reflect the new developments in the field. Actually, this was a major challenge. At the time only the theory of interior-point methods for linear optimization was polished enough to be explained to students. The general theory of self-concordant functions had appeared in print only once in the form of research monograph [12].} }
+
+
+@article{armijo-line-search,
+	author = {Larry Armijo},
+	date = {1966/1/1},
+	date-added = {2023-05-19 14:14:20 +0200},
+	date-modified = {2023-05-19 14:14:20 +0200},
+	journal = {Pacific Journal of Mathematics},
+	journal1 = {Pacific Journal of Mathematics},
+	journal2 = {Pacific Journal of Mathematics},
+	month = {1},
+	number = {1},
+	pages = {1--3 },
+	title = {Minimization of functions having Lipschitz continuous first partial derivatives.},
+	volume = {16},
+	year = {1966}}
+
+
+@Book{num_opt_book,
+  author    = {Jorge Nocedal and Stephen J. Wright},
+  publisher = {Springer},
+  title     = {Numerical Optimization},
+  year      = {2006},
+  address   = {New York, NY, USA},
+  edition   = {2e},
+}
+
+@inbook{increment-polyak,
+	abstract = {We consider a class of subgradient methods for minimizing a convex function that consists of the sum of a large number of component functions. This type of minimization arises in a dual context from Lagrangian relaxation of the coupling constraints of large scale separable problems. The idea is to perform the subgradient iteration incrementally, by sequentially taking steps along the subgradients of the component functions, with intermediate adjustment of the variables after processing each component function. This incremental approach has been very successful in solving large differentiable least squares problems, such as those arising in the training of neural networks, and it has resulted in a much better practical rate of convergence than the steepest descent method.},
+	address = {Boston, MA},
+	author = {Nedi{\'c}, Angelia and Bertsekas, Dimitri},
+	booktitle = {Stochastic Optimization: Algorithms and Applications},
+	date = {2001//},
+	date-added = {2023-05-16 12:08:32 +0200},
+	date-modified = {2023-05-16 12:08:32 +0200},
+	doi = {10.1007/978-1-4757-6594-6{\_}11},
+	editor = {Uryasev, Stanislav and Pardalos, Panos M.},
+	id = {Nedi{\'c}2001},
+	isbn = {978-1-4757-6594-6},
+	pages = {223--264},
+	publisher = {Springer US},
+	title = {Convergence Rate of Incremental Subgradient Algorithms},
+	url = {https://doi.org/10.1007/978-1-4757-6594-6_11},
+	year = {2001},
+	bdsk-url-1 = {https://doi.org/10.1007/978-1-4757-6594-6_11},
+	bdsk-url-2 = {https://doi.org/10.1007/978-1-4757-6594-6%7B%5C_%7D11}}
+
+@inproceedings{fedprox,
+  author       = {Tian Li and
+                  Anit Kumar Sahu and
+                  Manzil Zaheer and
+                  Maziar Sanjabi and
+                  Ameet Talwalkar and
+                  Virginia Smith},
+  editor       = {Inderjit S. Dhillon and
+                  Dimitris S. Papailiopoulos and
+                  Vivienne Sze},
+  title        = {Federated Optimization in Heterogeneous Networks},
+  booktitle    = {Proceedings of Machine Learning and Systems 2020, MLSys 2020, Austin,
+                  TX, USA, March 2-4, 2020},
+  publisher    = {mlsys.org},
+  year         = {2020},
+  url          = {https://proceedings.mlsys.org/book/316.pdf},
+  timestamp    = {Wed, 23 Dec 2020 09:35:18 +0100},
+  biburl       = {https://dblp.org/rec/conf/mlsys/LiSZSTS20.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{gower2022cutting,
+  title={Cutting some slack for SGD with adaptive Polyak stepsizes},
+  author={Gower, Robert M and Blondel, Mathieu and Gazagnadou, Nidham and Pedregosa, Fabian},
+  journal={arXiv preprint arXiv:2202.12328},
+  year={2022}
+}
+
+@article{sp2,
+  title={SP2: A second order stochastic Polyak method},
+  author={Li, Shuang and Swartworth, William J and Tak{\'a}{\v{c}}, Martin and Needell, Deanna and Gower, Robert M},
+  journal={arXiv preprint arXiv:2207.08171},
+  year={2022}
+}
+
+@article{oberman2019,
+  title={Stochastic Gradient Descent with Polyak's Learning Rate},
+  author={Oberman, Adam M and Prazeres, Mariana},
+  journal={arXiv preprint arXiv:1903.08688},
+  year={2019}
+}
+
+@inproceedings{alig, author = {Berrada, Leonard and Zisserman, Andrew and Kumar, M. Pawan}, title = {Training Neural Networks for and by Interpolation}, year = {2020}, publisher = {JMLR.org}, abstract = {In modern supervised learning, many deep neural networks are able to interpolate the data: the empirical loss can be driven to near zero on all samples simultaneously. In this work, we explicitly exploit this interpolation property for the design of a new optimization algorithm for deep learning, which we term Adaptive Learning-rates for Interpolation with Gradients (ALI-G). ALI-G retains the two main advantages of Stochastic Gradient Descent (SGD), which are (i) a low computational cost per iteration and (ii) good generalization performance in practice. At each iteration, ALI-G exploits the interpolation property to compute an adaptive learning-rate in closed form. In addition, ALI-G clips the learning-rate to a maximal value, which we prove to be helpful for non-convex problems. Crucially, in contrast to the learning-rate of SGD, the maximal learning-rate of ALI-G does not require a decay schedule, which makes it considerably easier to tune. We provide convergence guarantees of ALI-G in various stochastic settings. Notably, we tackle the realistic case where the interpolation property is satisfied up to some tolerance. We provide experiments on a variety of architectures and tasks: (i) learning a differentiable neural computer; (ii) training a wide residual network on the SVHN data set; (iii) training a Bi-LSTM on the SNLI data set; and (iv) training wide residual networks and densely connected networks on the CIFAR data sets. ALI-G produces state-of-the-art results among adaptive methods, and even yields comparable performance with SGD, which requires manually tuned learning-rate schedules. Furthermore, ALI-G is simple to implement in any standard deep learning framework and can be used as a drop-in replacement in existing code.}, booktitle = {Proceedings of the 37th International Conference on Machine Learning}, articleno = {75}, numpages = {11}, series = {ICML'20} }
+ 
+
+@inproceedings{L4,
+  title = {L4: Practical loss-based stepsize adaptation for deep learning},
+  author = {Rolinek, Michal and Martius, Georg},
+  booktitle = {Advances in Neural Information Processing Systems 31 (NeurIPS 2018)},
+  pages = {6434--6444},
+  editors = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  year = {2018},
+  doi = {},
+  url = {http://papers.nips.cc/paper/7879-l4-practical-loss-based-stepsize-adaptation-for-deep-learning.pdf}
+}
+
+@article{stop,
+  title={Adaptive Learning Rates for Faster Stochastic Gradient Methods},
+  author={Horv{\'a}th, Samuel and Mishchenko, Konstantin and Richt{\'a}rik, Peter},
+  journal={arXiv preprint arXiv:2208.05287},
+  year={2022}
+}
+
+@book{polyak-book,
+	address = {New York},
+	author = {Polyak, B.  T. },
+	date-added = {2023-05-08 14:57:19 +0200},
+	date-modified = {2023-05-08 14:57:19 +0200},
+	isbn = {0911575146; 9780911575149},
+	la = {eng},
+	lk = {https://worldcat.org/title/15590328},
+	publisher = {Optimization Software, Publications Division},
+	series = {Translations series in mathematics and engineering},
+	title = {Introduction to optimization},
+	year = {1987}}
+
+@report{hazan_polyak,
+	abstract = {This paper revisits the Polyak step size schedule for convex optimization problems, proving that a simple variant of it simultaneously attains near optimal convergence rates for the gradient descent algorithm, for all ranges of strong convexity, smoothness, and Lipschitz parameters, without a-priory knowledge of these parameters.},
+	author = {Elad Hazan and Sham Kakade},
+	institution = {ArXiv Report},
+	title = {Revisiting the Polyak step size},
+	url = {https://arxiv.org/abs/1905.00313},
+	year = {2019},
+	bdsk-url-1 = {https://arxiv.org/abs/1905.00313}}
+
+
+@inproceedings{svrg-nonconvex,
+	author = {Kavis, Ali and Skoulakis, Stratis and Antonakopoulos, Kimon and Dadi, Leello Tadesse and Cevher, Volkan},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+	pages = {23524--23538},
+	publisher = {Curran Associates, Inc.},
+	title = {Adaptive Stochastic Variance Reduction for Non-convex Finite-Sum Minimization},
+	url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/94f625dcdec313cd432d65f96fcc51c8-Paper-Conference.pdf},
+	volume = {35},
+	year = {2022},
+	bdsk-url-1 = {https://proceedings.neurips.cc/paper_files/paper/2022/file/94f625dcdec313cd432d65f96fcc51c8-Paper-Conference.pdf}}
+
+
+@article{libsvm, author = {Chang, Chih-Chung and Lin, Chih-Jen}, title = {LIBSVM: A Library for Support Vector Machines}, year = {2011}, issue_date = {April 2011}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, volume = {2}, number = {3}, issn = {2157-6904}, url = {https://doi.org/10.1145/1961189.1961199}, doi = {10.1145/1961189.1961199}, abstract = {LIBSVM is a library for Support Vector Machines (SVMs). We have been actively developing this package since the year 2000. The goal is to help users to easily apply SVM to their applications. LIBSVM has gained wide popularity in machine learning and many other areas. In this article, we present all implementation details of LIBSVM. Issues such as solving SVM optimization problems theoretical convergence multiclass classification probability estimates and parameter selection are discussed in detail.}, journal = {ACM Trans. Intell. Syst. Technol.}, month = {may}, articleno = {27}, numpages = {27}, keywords = {Classification LIBSVM optimization regression support vector machines SVM} }
+
+
+@InProceedings{log-adagrad,
+  title = 	 {Variants of {RMSP}rop and {A}dagrad with Logarithmic Regret Bounds},
+  author =       {Mahesh Chandra Mukkamala and Matthias Hein},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {2545--2553},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/mukkamala17a/mukkamala17a.pdf},
+  url = 	 {https://proceedings.mlr.press/v70/mukkamala17a.html},
+  abstract = 	 {Adaptive gradient methods have become recently very popular, in particular as they have been shown to be useful in the training of deep neural networks. In this paper we have analyzed RMSProp, originally proposed for the training of deep neural networks, in the context of online convex optimization and show $\sqrt{T}$-type regret bounds. Moreover, we propose two variants SC-Adagrad and SC-RMSProp for which we show logarithmic regret bounds for strongly convex functions. Finally, we demonstrate in the experiments that these new variants outperform other adaptive gradient techniques or stochastic gradient descent in the optimization of strongly convex functions as well as in training of deep neural networks.}
+}
+
+
+
+@inproceedings{unbound_adp, author = {Cutkosky, Ashok and Boahen, Kwabena}, title = {Online Convex Optimization with Unconstrained Domains and Losses}, year = {2016}, isbn = {9781510838819}, publisher = {Curran Associates Inc.}, address = {Red Hook, NY, USA}, abstract = {We propose an online convex optimization algorithm (RESCALEDEXP) that achieves optimal regret in the unconstrained setting without prior knowledge of any bounds on the loss functions. We prove a lower bound showing an exponential separation between the regret of existing algorithms that require a known bound on the loss functions and any algorithm that does not require such knowledge. RES CALEDEXP matches this lower bound asymptotically in the number of iterations. RESCALEDEXP is naturally hyperparameter-free and we demonstrate empirically that it matches prior optimization algorithms that require hyperparameter optimization.}, booktitle = {Proceedings of the 30th International Conference on Neural Information Processing Systems}, pages = {748–756}, numpages = {9}, location = {Barcelona, Spain}, series = {NIPS'16} }
+
+
+@inproceedings{adanorm-2015,
+	abstract = {We design algorithms for online linear optimization that have optimal regret and at the same time do not need to know any upper or lower bounds on the norm of the loss vectors. We achieve adaptiveness to norms of loss vectors by scale invariance, i.e., our algorithms make exactly the same decisions if the sequence of loss vectors is multiplied by any positive constant. Our algorithms work for any decision set, bounded or unbounded. For unbounded decisions sets, these are the first truly adaptive algorithms for online linear optimization.},
+	address = {Cham},
+	author = {Orabona, Francesco and P{\'a}l, D{\'a}vid},
+	booktitle = {Algorithmic Learning Theory},
+	editor = {Chaudhuri, Kamalika and GENTILE, CLAUDIO and Zilles, Sandra},
+	isbn = {978-3-319-24486-0},
+	pages = {287--301},
+	publisher = {Springer International Publishing},
+	title = {Scale-Free Algorithms for Online Linear Optimization},
+	year = {2015}}
+
+
+@article{adanorm-2010,
+  author       = {Matthew J. Streeter and
+                  H. Brendan McMahan},
+  title        = {Less Regret via Online Conditioning},
+  journal      = {CoRR},
+  volume       = {abs/1002.4862},
+  year         = {2010},
+  url          = {http://arxiv.org/abs/1002.4862},
+  eprinttype    = {arXiv},
+  eprint       = {1002.4862},
+  timestamp    = {Mon, 13 Aug 2018 16:48:20 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1002-4862.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{spsmt,
+  author       = {Robert M. Gower and
+                  Aaron Defazio and
+                  Michael G. Rabbat},
+  title        = {Stochastic Polyak Stepsize with a Moving Target},
+  journal      = {CoRR},
+  volume       = {abs/2106.11851},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2106.11851},
+  eprinttype    = {arXiv},
+  eprint       = {2106.11851},
+  timestamp    = {Wed, 30 Jun 2021 16:14:10 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2106-11851.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{BB,
+	author = {Tan, Conghui and Ma, Shiqian and Dai, Yu-Hong and Qian, Yuqiu},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {D. Lee and M. Sugiyama and U. Luxburg and I. Guyon and R. Garnett},
+	publisher = {Curran Associates, Inc.},
+	title = {Barzilai-Borwein Step Size for Stochastic Gradient Descent},
+	url = {https://proceedings.neurips.cc/paper_files/paper/2016/file/c86a7ee3d8ef0b551ed58e354a836f2b-Paper.pdf},
+	volume = {29},
+	year = {2016},
+	bdsk-url-1 = {https://proceedings.neurips.cc/paper_files/paper/2016/file/c86a7ee3d8ef0b551ed58e354a836f2b-Paper.pdf}}
+
+
+@inproceedings{BB_free, author = {Li, Bingcong and Wang, Lingda and Giannakis, Georgios B.}, title = {Almost Tune-Free Variance Reduction}, year = {2020}, publisher = {JMLR.org}, abstract = {The variance reduction class of algorithms including the representative ones, SVRG and SARAH, have well documented merits for empirical risk minimization problems. However, they require grid search to tune parameters (step size and the number of iterations per inner loop) for optimal performance. This work introduces 'almost tunefree' SVRG and SARAH schemes equipped with i) Barzilai-Borwein (BB) step sizes; ii) averaging; and, iii) the inner loop length adjusted to the BB step sizes. In particular, SVRG, SARAH, and their BB variants are first reexamined through an 'estimate sequence' lens to enable new averaging methods that tighten their convergence rates theoretically, and improve their performance empirically when the step size or the inner loop length is chosen large. Then a simple yet effective means to adjust the number of iterations per inner loop is developed to enhance the merits of the proposed averaging schemes and BB step sizes. Numerical tests corroborate the proposed methods.}, booktitle = {Proceedings of the 37th International Conference on Machine Learning}, articleno = {554}, numpages = {10}, series = {ICML'20} }
+
+@InProceedings{loopless_svrg,
+  title = 	 {Don’t Jump Through Hoops and Remove Those Loops:  SVRG and Katyusha are Better Without the Outer Loop},
+  author =       {Kovalev, Dmitry and Horv{\'a}th, Samuel and Richt{\'a}rik, Peter},
+  booktitle = 	 {Proceedings of the 31st International Conference  on Algorithmic Learning Theory},
+  pages = 	 {451--467},
+  year = 	 {2020},
+  editor = 	 {Kontorovich, Aryeh and Neu, Gergely},
+  volume = 	 {117},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {08 Feb--11 Feb},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v117/kovalev20a/kovalev20a.pdf},
+  url = 	 {https://proceedings.mlr.press/v117/kovalev20a.html},
+  abstract = 	 {The stochastic variance-reduced gradient method (<tt>SVRG</tt>) and its accelerated variant (<tt>Katyusha</tt>) have attracted enormous attention in the machine learning community in the last few years due to their superior theoretical properties and empirical behaviour on training supervised machine learning models via the empirical risk minimization paradigm. A key structural element in both of these methods is the inclusion of an outer loop at the beginning of which  a full pass over the training data is made in order to compute the exact gradient, which is then used in an inner loop to construct a variance-reduced estimator of the gradient using new stochastic gradient information. In this work, we design <em>loopless variants</em> of both of these methods. In particular,  we remove the outer loop and replace its function by a coin flip performed in each iteration designed to trigger, with a small probability, the computation of the gradient. We prove that the new methods enjoy the same superior theoretical convergence properties as the original methods. For loopless <tt>SVRG</tt>,  the same rate is obtained for a large interval of coin flip probabilities, including the probability $\frac{1}{n}$, where $n$ is the number of functions. This is the first result where a variant of <tt>SVRG</tt> is shown to converge with the same rate without the need for the algorithm to know the condition number, which is often unknown or hard to estimate correctly. We demonstrate through numerical experiments that the loopless methods can have  superior and more robust practical behavior.}
+}
+
+
+@article{sag,
+	abstract = {We analyze the stochastic average gradient (SAG) method for optimizing the sum of a finite number of smooth convex functions. Like stochastic gradient (SG) methods, the SAG method's iteration cost is independent of the number of terms in the sum. However, by incorporating a memory of previous gradient values the SAG method achieves a faster convergence rate than black-box SG methods. The convergence rate is improved from {\$}{\$}O(1/{$\backslash$}sqrt{\{}k{\}}){\$}{\$}to O(1 / k) in general, and when the sum is strongly-convex the convergence rate is improved from the sub-linear O(1 / k) to a linear convergence rate of the form {\$}{\$}O({$\backslash$}rho \^{}k){\$}{\$}for {\$}{\$}{$\backslash$}rho < 1{\$}{\$}. Further, in many cases the convergence rate of the new method is also faster than black-box deterministic gradient methods, in terms of the number of gradient evaluations. This extends our earlier work Le Roux et al. (Adv Neural Inf Process Syst, 2012), which only lead to a faster rate for well-conditioned strongly-convex problems. Numerical experiments indicate that the new algorithm often dramatically outperforms existing SG and deterministic gradient methods, and that the performance may be further improved through the use of non-uniform sampling strategies.},
+	author = {Schmidt, Mark and Le Roux, Nicolas and Bach, Francis},
+	date = {2017/03/01},
+	date-added = {2023-05-04 11:36:00 +0200},
+	date-modified = {2023-05-04 11:36:00 +0200},
+	doi = {10.1007/s10107-016-1030-6},
+	id = {Schmidt2017},
+	isbn = {1436-4646},
+	journal = {Mathematical Programming},
+	number = {1},
+	pages = {83--112},
+	title = {Minimizing finite sums with the stochastic average gradient},
+	url = {https://doi.org/10.1007/s10107-016-1030-6},
+	volume = {162},
+	year = {2017},
+	bdsk-url-1 = {https://doi.org/10.1007/s10107-016-1030-6}}
+
+
+@inproceedings{saga,
+	author = {Defazio, Aaron and Bach, Francis and Lacoste-Julien, Simon},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {Z. Ghahramani and M. Welling and C. Cortes and N. Lawrence and K.Q. Weinberger},
+	publisher = {Curran Associates, Inc.},
+	title = {SAGA: A Fast Incremental Gradient Method With Support for Non-Strongly Convex Composite Objectives},
+	url = {https://proceedings.neurips.cc/paper_files/paper/2014/file/ede7e2b6d13a41ddf9f4bdef84fdc737-Paper.pdf},
+	volume = {27},
+	year = {2014},
+	bdsk-url-1 = {https://proceedings.neurips.cc/paper_files/paper/2014/file/ede7e2b6d13a41ddf9f4bdef84fdc737-Paper.pdf}}
+
+
+@InProceedings{sarah,
+  title = 	 {{SARAH}: A Novel Method for Machine Learning Problems Using Stochastic Recursive Gradient},
+  author =       {Lam M. Nguyen and Jie Liu and Katya Scheinberg and Martin Tak{\'a}{\v{c}}},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {2613--2621},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/nguyen17b/nguyen17b.pdf},
+  url = 	 {https://proceedings.mlr.press/v70/nguyen17b.html},
+  abstract = 	 {In this paper, we propose a StochAstic Recursive grAdient algoritHm (SARAH), as well as its practical variant SARAH+, as a novel approach to the finite-sum minimization problems. Different from the vanilla SGD and other modern stochastic methods such as SVRG, S2GD, SAG and SAGA, SARAH admits a simple recursive framework for updating stochastic gradient estimates; when comparing to SAG/SAGA, SARAH does not require a storage of past gradients. The linear convergence rate of SARAH is proven under strong convexity assumption. We also prove a linear convergence rate (in the strongly convex case) for an inner loop of SARAH, the property that SVRG does not possess. Numerical experiments demonstrate the efficiency of our algorithm.}
+}
+
+
+@inproceedings{VR_zhang,
+	author = {Johnson, Rie and Zhang, Tong},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {C.J. Burges and L. Bottou and M. Welling and Z. Ghahramani and K.Q. Weinberger},
+	publisher = {Curran Associates, Inc.},
+	title = {Accelerating Stochastic Gradient Descent using Predictive Variance Reduction},
+	url = {https://proceedings.neurips.cc/paper_files/paper/2013/file/ac1dd209cbcc5e5d1c6e28598e8cbbe8-Paper.pdf},
+	volume = {26},
+	year = {2013},
+	bdsk-url-1 = {https://proceedings.neurips.cc/paper_files/paper/2013/file/ac1dd209cbcc5e5d1c6e28598e8cbbe8-Paper.pdf}}
+
+
+@article{FL, author = {Kairouz, Peter and McMahan, H. Brendan and Avent, Brendan and Bellet, Aur\'{e}lien and Bennis, Mehdi and Nitin Bhagoji, Arjun and Bonawitz, Kallista and Charles, Zachary and Cormode, Graham and Cummings, Rachel and D’Oliveira, Rafael G. L. and Eichner, Hubert and El Rouayheb, Salim and Evans, David and Gardner, Josh and Garrett, Zachary and Gasc\'{o}n, Adri\`{a} and Ghazi, Badih and Gibbons, Phillip B. and Gruteser, Marco and Harchaoui, Zaid and He, Chaoyang and He, Lie and Huo, Zhouyuan and Hutchinson, Ben and Hsu, Justin and Jaggi, Martin and Javidi, Tara and Joshi, Gauri and Khodak, Mikhail and Konecn\'{y}, Jakub and Korolova, Aleksandra and Koushanfar, Farinaz and Koyejo, Sanmi and Lepoint, Tancr\`{e}de and Liu, Yang and Mittal, Prateek and Mohri, Mehryar and Nock, Richard and \"{O}zg\"{u}r, Ayfer and Pagh, Rasmus and Qi, Hang and Ramage, Daniel and Raskar, Ramesh and Raykova, Mariana and Song, Dawn and Song, Weikang and Stich, Sebastian U. and Sun, Ziteng and Suresh, Ananda Theertha and Tram\`{e}r, Florian and Vepakomma, Praneeth and Wang, Jianyu and Xiong, Li and Xu, Zheng and Yang, Qiang and Yu, Felix X. and Yu, Han and Zhao, Sen}, title = {Advances and Open Problems in Federated Learning}, year = {2021}, issue_date = {Jun 2021}, publisher = {Now Publishers Inc.}, address = {Hanover, MA, USA}, volume = {14}, number = {1–2}, issn = {1935-8237}, url = {https://doi.org/10.1561/2200000083}, doi = {10.1561/2200000083}, abstract = {Federated learning (FL) is a machine learning setting where many clients (e.g., mobile devices or whole organizations) collaboratively train a model under the orchestration of a central server (e.g., service provider), while keeping the training data decentralized. FL embodies the principles of focused data collection and minimization, and can mitigate many of the systemic privacy risks and costs resulting from traditional, centralized machine learning and data science approaches. Motivated by the explosive growth in FL research, this monograph discusses recent advances and presents an extensive collection of open problems and challenges.}, journal = {Found. Trends Mach. Learn.}, month = {jun}, pages = {1–210}, numpages = {214} }
+
+
+@inproceedings{adam,
+  author       = {Diederik P. Kingma and
+                  Jimmy Ba},
+  editor       = {Yoshua Bengio and
+                  Yann LeCun},
+  title        = {Adam: {A} Method for Stochastic Optimization},
+  booktitle    = {3rd International Conference on Learning Representations, {ICLR} 2015,
+                  San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings},
+  year         = {2015},
+  url          = {http://arxiv.org/abs/1412.6980},
+  timestamp    = {Thu, 25 Jul 2019 14:25:37 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/KingmaB14.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{adagrad, author = {Duchi, John and Hazan, Elad and Singer, Yoram}, title = {Adaptive Subgradient Methods for Online Learning and Stochastic Optimization}, year = {2011}, issue_date = {2/1/2011}, publisher = {JMLR.org}, volume = {12}, number = {null}, issn = {1532-4435}, abstract = {We present a new family of subgradient methods that dynamically incorporate knowledge of the geometry of the data observed in earlier iterations to perform more informative gradient-based learning. Metaphorically, the adaptation allows us to find needles in haystacks in the form of very predictive but rarely seen features. Our paradigm stems from recent advances in stochastic optimization and online learning which employ proximal functions to control the gradient steps of the algorithm. We describe and analyze an apparatus for adaptively modifying the proximal function, which significantly simplifies setting a learning rate and results in regret guarantees that are provably as good as the best proximal function that can be chosen in hindsight. We give several efficient algorithms for empirical risk minimization problems with common and important regularization functions and domain constraints. We experimentally study our theoretical analysis and show that adaptive subgradient methods outperform state-of-the-art, yet non-adaptive, subgradient algorithms.}, journal = {J. Mach. Learn. Res.}, month = {jul}, pages = {2121–2159}, numpages = {39} }
+
+
+@article{bubek_convex, author = {Bubeck, S\'{e}bastien}, title = {Convex Optimization: Algorithms and Complexity}, year = {2015}, issue_date = {11 2015}, publisher = {Now Publishers Inc.}, address = {Hanover, MA, USA}, volume = {8}, number = {3–4}, issn = {1935-8237}, url = {https://doi.org/10.1561/2200000050}, doi = {10.1561/2200000050}, abstract = {This monograph presents the main complexity theorems in convex optimization and their corresponding algorithms. Starting from the fundamental theory of black-box optimization, the material progresses towards recent advances in structural optimization and stochastic optimization. Our presentation of black-box optimization, strongly influenced by the seminal book of Nesterov, includes the analysis of cutting plane methods, as well as accelerated gradient descent schemes. We also pay special attention to non-Euclidean settings relevant algorithms include Frank-Wolfe, mirror descent, and dual averaging and discuss their relevance in machine learning. We provide a gentle introduction to structural optimization with FISTA to optimize a sum of a smooth and a simple non-smooth term, saddle-point mirror prox Nemirovski's alternative to Nesterov's smoothing, and a concise description of interior point methods. In stochastic optimization we discuss stochastic gradient descent, mini-batches, random coordinate descent, and sublinear algorithms. We also briefly touch upon convex relaxation of combinatorial problems and the use of randomness to round solutions, as well as random walks based methods.}, journal = {Found. Trends Mach. Learn.}, month = {nov}, pages = {231–357}, numpages = {127} }
+
+@article{large_opt_book,
+	abstract = { This paper provides a review and commentary on the past, present, and future of numerical optimization algorithms in the context of machine learning applications. Through case studies on text classification and the training of deep neural networks, we discuss how optimization problems arise in machine learning and what makes them challenging. A major theme of our study is that large-scale machine learning represents a distinctive setting in which the stochastic gradient (SG) method has traditionally played a central role while conventional gradient-based nonlinear optimization techniques typically falter. Based on this viewpoint, we present a comprehensive theory of a straightforward, yet versatile SG algorithm, discuss its practical behavior, and highlight opportunities for designing algorithms with improved performance. This leads to a discussion about the next generation of optimization methods for large-scale machine learning, including an investigation of two main streams of research on techniques that diminish noise in the stochastic directions and methods that make use of second-order derivative approximations. },
+	author = {Bottou, L\'{e}on and Curtis, Frank E. and Nocedal, Jorge},
+	doi = {10.1137/16M1080173},
+	eprint = {https://doi.org/10.1137/16M1080173},
+	journal = {SIAM Review},
+	number = {2},
+	pages = {223-311},
+	title = {Optimization Methods for Large-Scale Machine Learning},
+	url = {https://doi.org/10.1137/16M1080173},
+	volume = {60},
+	year = {2018},
+	bdsk-url-1 = {https://doi.org/10.1137/16M1080173}}
+
+
+@book{hastie,
+  added-at = {2010-06-03T15:15:09.000+0200},
+  author = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome},
+  biburl = {https://www.bibsonomy.org/bibtex/200d858c0bd2826d4eb5f39450192d1f5/ukoethe},
+  edition = 2,
+  file = {:Books\\HastieTibshiraniFriedman-09-Elements-of-Statistical-Learning-2nd-edition\\hastie_09_elements-of.statistical-learning.pdf:PDF},
+  interhash = {52d1772f39be836e3b298d37b8c0cfa1},
+  intrahash = {00d858c0bd2826d4eb5f39450192d1f5},
+  keywords = {inference mathmatics dataanalysis method clutering statistics},
+  publisher = {Springer},
+  timestamp = {2010-06-03T15:15:09.000+0200},
+  title = {The elements of statistical learning: data mining, inference and prediction},
+  url = {http://www-stat.stanford.edu/~tibs/ElemStatLearn/},
+  year = 2009
+}
+
+@article{sgd_robbin,
+	author = {Herbert Robbins and Sutton Monro},
+	doi = {10.1214/aoms/1177729586},
+	journal = {The Annals of Mathematical Statistics},
+	number = {3},
+	pages = {400 -- 407},
+	publisher = {Institute of Mathematical Statistics},
+	title = {{A Stochastic Approximation Method}},
+	url = {https://doi.org/10.1214/aoms/1177729586},
+	volume = {22},
+	year = {1951},
+	bdsk-url-1 = {https://doi.org/10.1214/aoms/1177729586}}
+
+
+
+@inproceedings{sls,
+  author    = {Sharan Vaswani and
+               Aaron Mishkin and
+               Issam H. Laradji and
+               Mark Schmidt and
+               Gauthier Gidel and
+               Simon Lacoste{-}Julien},
+  editor    = {Hanna M. Wallach and
+               Hugo Larochelle and
+               Alina Beygelzimer and
+               Florence d'Alch{\'{e}}{-}Buc and
+               Emily B. Fox and
+               Roman Garnett},
+  title     = {Painless Stochastic Gradient: Interpolation, Line-Search, and Convergence
+               Rates},
+  booktitle = {Advances in Neural Information Processing Systems 32: Annual Conference
+               on Neural Information Processing Systems 2019, NeurIPS 2019, December
+               8-14, 2019, Vancouver, BC, Canada},
+  pages     = {3727--3740},
+  year      = {2019},
+  url       = {https://proceedings.neurips.cc/paper/2019/hash/2557911c1bf75c2b643afb4ecbfc8ec2-Abstract.html},
+  timestamp = {Mon, 16 May 2022 15:41:51 +0200},
+  biburl    = {https://dblp.org/rec/conf/nips/VaswaniMLSGL19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{ada-svrg,
+  author    = {Benjamin Dubois{-}Taine and
+               Sharan Vaswani and
+               Reza Babanezhad and
+               Mark Schmidt and
+               Simon Lacoste{-}Julien},
+  title     = {{SVRG} meets AdaGrad: painless variance reduction},
+  journal   = {Mach. Learn.},
+  volume    = {111},
+  number    = {12},
+  pages     = {4359--4409},
+  year      = {2022},
+  url       = {https://doi.org/10.1007/s10994-022-06265-x},
+  doi       = {10.1007/s10994-022-06265-x},
+  timestamp = {Sun, 25 Dec 2022 14:03:29 +0100},
+  biburl    = {https://dblp.org/rec/journals/ml/Dubois-TaineVBS22.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{sps,
+  author    = {Nicolas Loizou and
+               Sharan Vaswani and
+               Issam Hadj Laradji and
+               Simon Lacoste{-}Julien},
+  editor    = {Arindam Banerjee and
+               Kenji Fukumizu},
+  title     = {Stochastic Polyak Step-size for {SGD:} An Adaptive Learning Rate for
+               Fast Convergence},
+  booktitle = {The 24th International Conference on Artificial Intelligence and Statistics,
+               {AISTATS} 2021, April 13-15, 2021, Virtual Event},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {130},
+  pages     = {1306--1314},
+  publisher = {{PMLR}},
+  year      = {2021},
+  url       = {http://proceedings.mlr.press/v130/loizou21a.html},
+  timestamp = {Wed, 14 Apr 2021 18:58:38 +0200},
+  biburl    = {https://dblp.org/rec/conf/aistats/LoizouVLL21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{decsps,
+	author = {Orvieto, Antonio and Lacoste-Julien, Simon and Loizou, Nicolas},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+	pages = {26943--26954},
+	publisher = {Curran Associates, Inc.},
+	title = {Dynamics of SGD with Stochastic Polyak Stepsizes: Truly Adaptive Variants and Convergence to Exact Solution},
+	url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/ac662d74829e4407ce1d126477f4a03a-Paper-Conference.pdf},
+	volume = {35},
+	year = {2022},
+	bdsk-url-1 = {https://proceedings.neurips.cc/paper_files/paper/2022/file/ac662d74829e4407ce1d126477f4a03a-Paper-Conference.pdf}}
+
+
+
+@InProceedings{wald,
+  title = 	 {{A}da{G}rad Stepsizes: Sharp Convergence Over Nonconvex Landscapes},
+  author =       {Ward, Rachel and Wu, Xiaoxia and Bottou, Leon},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  pages = 	 {6677--6686},
+  year = 	 {2019},
+  editor = 	 {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--15 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v97/ward19a/ward19a.pdf},
+  url = 	 {https://proceedings.mlr.press/v97/ward19a.html},
+  abstract = 	 {Adaptive gradient methods such as AdaGrad and its variants update the stepsize in stochastic gradient descent on the fly according to the gradients received along the way; such methods have gained widespread use in large-scale optimization for their ability to converge robustly, without the need to fine-tune parameters such as the stepsize schedule. Yet, the theoretical guarantees to date for AdaGrad are for online and convex optimization. We bridge this gap by providing strong theoretical guarantees for the convergence of AdaGrad over smooth, nonconvex landscapes. We show that the norm version of AdaGrad (AdaGrad-Norm) converges to a stationary point at the $\mathcal{O}(\log(N)/\sqrt{N})$ rate in the stochastic setting, and at the optimal $\mathcal{O}(1/N)$ rate in the batch (non-stochastic) setting – in this sense, our convergence guarantees are “sharp”. In particular, both our theoretical results and extensive numerical experiments imply that AdaGrad-Norm is robust to the <em>unknown Lipschitz constant and level of stochastic noise on the gradient</em>.}
+}
+
+
+@InProceedings{linear-adagrad,
+  title = 	 {Linear Convergence of Adaptive Stochastic Gradient Descent},
+  author =       {Xie, Yuege and Wu, Xiaoxia and Ward, Rachel},
+  booktitle = 	 {Proceedings of the Twenty Third International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {1475--1485},
+  year = 	 {2020},
+  editor = 	 {Chiappa, Silvia and Calandra, Roberto},
+  volume = 	 {108},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {26--28 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v108/xie20a/xie20a.pdf},
+  url = 	 {https://proceedings.mlr.press/v108/xie20a.html},
+  abstract = 	 {We prove that the norm version of the adaptive stochastic gradient method (AdaGrad-Norm) achieves a linear convergence rate for a subset of either strongly convex functions or non-convex functions that satisfy the Polyak Lojasiewicz (PL) inequality. The paper introduces the notion of Restricted Uniform Inequality of Gradients (RUIG)—which is a measure of the balanced-ness of the stochastic gradient norms—to depict the landscape of a function. RUIG plays a key role in proving the robustness of AdaGrad-Norm to its hyper-parameter tuning in the stochastic setting. On top of RUIG, we develop a two-stage framework to prove the linear convergence of AdaGrad-Norm without knowing the parameters of the objective functions. This framework can likely be extended to other adaptive stepsize algorithms. The numerical experiments validate the theory and suggest future directions for improvement.}
+}
+
+

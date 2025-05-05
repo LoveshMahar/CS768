@@ -1,0 +1,785 @@
+%******************************************
+%% Refs for the paper
+%******************************************
+
+
+%******************************************
+%% Datasets
+%******************************************
+
+%CIFAR100 paper
+@article{krizhevsky2009learning,
+  title={Learning multiple layers of features from tiny images},
+  author={Krizhevsky, Alex and Hinton, Geoffrey and others},
+  year={2009},
+  publisher={Citeseer}
+}
+
+
+% mCE paper
+@article{hendrycks2019benchmarking,
+  title={Benchmarking neural network robustness to common corruptions and perturbations},
+  author={Hendrycks, Dan and Dietterich, Thomas},
+  journal={arXiv preprint arXiv:1903.12261},
+  year={2019}
+}
+
+
+
+%******************************************
+%% Networks and Libraries
+%******************************************
+
+%AlexNet
+@inproceedings{krizhevsky2012imagenet,
+  title={Imagenet classification with deep convolutional neural networks},
+  author={Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+  booktitle={Advances in neural information processing systems},
+  pages={1097--1105},
+  year={2012}
+}
+
+%VGG paper
+@article{simonyan2014very,
+  title={Very deep convolutional networks for large-scale image recognition},
+  author={Simonyan, Karen and Zisserman, Andrew},
+  journal={arXiv preprint arXiv:1409.1556},
+  year={2014}
+}
+
+%ResNet paper
+@misc{he2015deep,
+  title={Deep residual learning for image recognition. CoRR abs/1512.03385 (2015)},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  year={2015}
+}
+
+%DenseNet
+@article{huang2016densely,
+  title={Densely connected convolutional networks. CoRR abs/1608.06993 (2016)},
+  author={Huang, Gao and Liu, Zhuang and Weinberger, Kilian Q},
+  journal={arXiv preprint arXiv:1608.06993},
+  year={2016}
+}
+
+
+% efficient net
+@inproceedings{tan2019efficientnet,
+  title={Efficientnet: Rethinking model scaling for convolutional neural networks},
+  author={Tan, Mingxing and Le, Quoc},
+  booktitle={International Conference on Machine Learning},
+  pages={6105--6114},
+  year={2019},
+  organization={PMLR}
+}
+
+
+@incollection{NEURIPS2019_9015,
+title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+booktitle = {Advances in Neural Information Processing Systems 32},
+editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+pages = {8024--8035},
+year = {2019},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf}
+}
+
+%foolbox
+@inproceedings{rauber2017foolbox,
+  title={Foolbox: A Python toolbox to benchmark the robustness of machine learning models},
+  author={Rauber, Jonas and Brendel, Wieland and Bethge, Matthias},
+  booktitle={Reliable Machine Learning in the Wild Workshop, 34th International Conference on Machine Learning},
+  year={2017},
+  url={http://arxiv.org/abs/1707.04131},
+}
+
+%******************************************
+%% Adversarial Attacks/Defenses
+%******************************************
+
+%BIM,FGSM
+@inproceedings{goodfellow2014explaining,
+title	= {Explaining and Harnessing Adversarial Examples},
+author	= {Ian Goodfellow and Jonathon Shlens and Christian Szegedy},
+year	= {2015},
+URL	= {http://arxiv.org/abs/1412.6572},
+booktitle	= {International Conference on Learning Representations}
+}
+
+
+%Szegedy
+@article{szegedy2013intriguing,
+  title={Intriguing properties of neural networks},
+  author={Szegedy, Christian and Zaremba, Wojciech and Sutskever, Ilya and Bruna, Joan and Erhan, Dumitru and Goodfellow, Ian and Fergus, Rob},
+  journal={arXiv preprint arXiv:1312.6199},
+  year={2013}
+}
+
+
+%CarliniWagner Attack
+@article{carlini2016towards,
+  title={Towards evaluating the robustness of neural networks. CoRR abs/1608.04644 (2016)},
+  author={Carlini, Nicholas and Wagner, David A},
+  journal={arXiv preprint arXiv:1608.04644},
+  year={2016}
+}
+
+
+%BoundaryAttacks
+@article{brendel2017decision,
+  title={Decision-based adversarial attacks: Reliable attacks against black-box machine learning models},
+  author={Brendel, Wieland and Rauber, Jonas and Bethge, Matthias},
+  journal={arXiv preprint arXiv:1712.04248},
+  year={2017}
+}
+
+
+
+%RPGD attacks
+@inproceedings{
+madry2018towards,
+title={Towards Deep Learning Models Resistant to Adversarial Attacks},
+author={Aleksander Madry and Aleksandar Makelov and Ludwig Schmidt and Dimitris Tsipras and Adrian Vladu},
+booktitle={International Conference on Learning Representations},
+year={2018},
+url={https://openreview.net/forum?id=rJzIBfZAb},
+}
+
+%Feature adversaries -- showing that representations can be/are different
+@article{sabour2015adversarial,
+  title={Adversarial manipulation of deep representations},
+  author={Sabour, Sara and Cao, Yanshuai and Faghri, Fartash and Fleet, David J},
+  journal={arXiv preprint arXiv:1511.05122},
+  year={2015}
+}
+
+%pixeldefend
+@inproceedings{song2018pixeldefend,
+  title={Pixeldefend: Leveraging generative models to understand and defend against adversarial examples},
+  author={Song, Yang and Kim, Taesup and Nowozin, Sebastian and Ermon, Stefano and Kushman, Nate},
+  booktitle={International Conference on Learning Representations},
+  year={2018}
+}
+
+
+%AmI paper - representation cleaning
+@inproceedings{tao2018attacks,
+  title={Attacks meet interpretability: Attribute-steered detection of adversarial samples},
+  author={Tao, Guanhong and Ma, Shiqing and Liu, Yingqi and Zhang, Xiangyu},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={7717--7728},
+  year={2018}
+}
+
+
+
+%Emin Orhan - episodic memory (basically caching) to clean representations
+@article{orhan2019improving,
+  title={Improving the robustness of ImageNet classifiers using elements of human visual cognition},
+  author={Orhan, A Emin and Lake, Brenden M},
+  journal={arXiv preprint arXiv:1906.08416},
+  year={2019}
+}
+
+
+%Semantic Feature Manipulation - Wang
+@article{wang2020defending,
+  title={Defending Adversarial Attacks via Semantic Feature Manipulation},
+  author={Wang, Shuo and Chen, Tianle and Nepal, Surya and Rudolph, Carsten and Grobler, Marthie and Chen, Shangyu},
+  journal={arXiv preprint arXiv:2002.02007},
+  year={2020}
+}
+
+
+%MagNet
+@inproceedings{meng2017magnet,
+  title={Magnet: a two-pronged defense against adversarial examples},
+  author={Meng, Dongyu and Chen, Hao},
+  booktitle={Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security},
+  pages={135--147},
+  year={2017}
+}
+
+%Defense-GAN
+@article{samangouei2018defense,
+  title={Defense-GAN: Protecting classifiers against adversarial attacks using generative models},
+  author={Samangouei, Pouya and Kabkab, Maya and Chellappa, Rama},
+  journal={International Conference on Learning Representations},
+  year={2018}
+}
+
+
+%APE-GAN
+@INPROCEEDINGS{shen2017ape,
+  author={Jin, Guoqing and Shen, Shiwei and Zhang, Dongming and Dai, Feng and Zhang, Yongdong},
+  booktitle={ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={APE-GAN: Adversarial Perturbation Elimination with GAN}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={3842-3846},
+  doi={10.1109/ICASSP.2019.8683044}}
+
+%Robust manifold defense
+@article{jalal2017robust,
+  title={The robust manifold defense: Adversarial training using generative models},
+  author={Jalal, Ajil and Ilyas, Andrew and Daskalakis, Constantinos and Dimakis, Alexandros G},
+  journal={arXiv preprint arXiv:1712.09196},
+  year={2017}
+}
+
+%Odds are odds - sort of representation-cleaning by looking at statistics of representations
+@inproceedings{roth2019odds,
+  title={The odds are odd: A statistical test for detecting adversarial examples},
+  author={Roth, Kevin and Kilcher, Yannic and Hofmann, Thomas},
+  booktitle={International Conference on Machine Learning},
+  pages={5498--5507},
+  year={2019},
+  organization={PMLR}
+}
+
+
+%noisy features
+@inproceedings{xie2019feature,
+  title={Feature denoising for improving adversarial robustness},
+  author={Xie, Cihang and Wu, Yuxin and Maaten, Laurens van der and Yuille, Alan L and He, Kaiming},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={501--509},
+  year={2019}
+}
+
+%phi-GAN paper
+@article{vargas2020perceptual,
+  title={Perceptual Deep Neural Networks: Adversarial Robustness through Input Recreation},
+  author={Vargas, Danilo Vasconcellos and Liao, Bingli and Kanzaki, Takahiro},
+  journal={arXiv preprint arXiv:2009.01110},
+  year={2020}
+}
+
+
+%Nyugen EE paper
+
+@article{nguyen2014deep,
+  title={Deep Neural Networks are Easily Fooled: High Confidence Predictions for Unrecognizable Images. arXiv e-prints, art},
+  author={Nguyen, Anh and Yosinski, Jason and Clune, Jeff},
+  journal={arXiv preprint arXiv:1412.1897},
+  year={2014}
+}
+
+
+%feature scattering
+@inproceedings{zhang2019defense,
+  title={Defense against adversarial attacks using feature scattering-based adversarial training},
+  author={Zhang, Haichao and Wang, Jianyu},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={1831--1841},
+  year={2019}
+}
+
+@article{tanay2016boundary,
+  title={A boundary tilting persepective on the phenomenon of adversarial examples},
+  author={Tanay, Thomas and Griffin, Lewis},
+  journal={arXiv preprint arXiv:1608.07690},
+  year={2016}
+}
+
+%guidebook
+@article{carlini2019evaluating,
+  title={On evaluating adversarial robustness},
+  author={Carlini, Nicholas and Athalye, Anish and Papernot, Nicolas and Brendel, Wieland and Rauber, Jonas and Tsipras, Dimitris and Goodfellow, Ian and Madry, Aleksander and Kurakin, Alexey},
+  journal={arXiv preprint arXiv:1902.06705},
+  year={2019}
+}
+
+%obfuscated gradients
+@article{athalye2018obfuscated,
+  title={Obfuscated gradients give a false sense of security: Circumventing defenses to adversarial examples},
+  author={Athalye, Anish and Carlini, Nicholas and Wagner, David},
+  journal={arXiv preprint arXiv:1802.00420},
+  year={2018}
+}
+
+%more data 
+@inproceedings{schmidt2018adversarially,
+  title={Adversarially robust generalization requires more data},
+  author={Schmidt, Ludwig and Santurkar, Shibani and Tsipras, Dimitris and Talwar, Kunal and Madry, Aleksander},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={5014--5026},
+  year={2018}
+}
+
+%******************************************
+%% Recurrence/Predictive Coding
+%******************************************
+@article{vanrullen2007power,
+  title={The power of the feed-forward sweep},
+  author={VanRullen, Rufin},
+  journal={Advances in Cognitive Psychology},
+  volume={3},
+  number={1-2},
+  pages={167},
+  year={2007},
+  publisher={University of Economics and Human Sciences in Warsaw}
+}
+
+
+@article{thorpe1996speed,
+  title={Speed of processing in the human visual system},
+  author={Thorpe, Simon and Fize, Denis and Marlot, Catherine},
+  journal={nature},
+  volume={381},
+  number={6582},
+  pages={520--522},
+  year={1996},
+  publisher={Nature Publishing Group}
+}
+
+@article{hung2005fast,
+  title={Fast readout of object identity from macaque inferior temporal cortex},
+  author={Hung, Chou P and Kreiman, Gabriel and Poggio, Tomaso and DiCarlo, James J},
+  journal={Science},
+  volume={310},
+  number={5749},
+  pages={863--866},
+  year={2005},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{linsley2020stable,
+  title={Stable and expressive recurrent vision models},
+  author={Linsley, Drew and Ashok, Alekh Karkada and Govindarajan, Lakshmi Narasimhan and Liu, Rex and Serre, Thomas},
+  journal={arXiv preprint arXiv:2005.11362},
+  year={2020}
+}
+
+
+% Heeger
+@article{heeger2017theory,
+  title={Theory of cortical function},
+  author={Heeger, David J},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={114},
+  number={8},
+  pages={1773--1782},
+  year={2017},
+  publisher={National Acad Sciences}
+}
+
+%zhao's paper
+@inproceedings{
+pang2020predictive,
+title={Predictive coding results in perceived illusory contours in a recurrent neural network},
+author={Zhaoyang Pang and Bhavin Choksi and Callum Biggs O'May and Rufin VanRullen},
+booktitle={NeurIPS 2020 Workshop SVRHM},
+year={2020},
+url={https://openreview.net/forum?id=l7Gkd1vQBkC}
+}
+
+@article{PANG2021164,
+title = {Predictive coding feedback results in perceived illusory contours in a recurrent neural network},
+journal = {Neural Networks},
+volume = {144},
+pages = {164-175},
+year = {2021},
+issn = {0893-6080},
+doi = {https://doi.org/10.1016/j.neunet.2021.08.024},
+url = {https://www.sciencedirect.com/science/article/pii/S0893608021003373},
+author = {Zhaoyang Pang and Callum Biggs O’May and Bhavin Choksi and Rufin VanRullen},
+keywords = {Illusory contours, Predictive coding, Deep learning, Kanizsa squares, Feedback, Generative models},
+abstract = {Modern feedforward convolutional neural networks (CNNs) can now solve some computer vision tasks at super-human levels. However, these networks only roughly mimic human visual perception. One difference from human vision is that they do not appear to perceive illusory contours (e.g. Kanizsa squares) in the same way humans do. Physiological evidence from visual cortex suggests that the perception of illusory contours could involve feedback connections. Would recurrent feedback neural networks perceive illusory contours like humans? In this work we equip a deep feedforward convolutional network with brain-inspired recurrent dynamics. The network was first pretrained with an unsupervised reconstruction objective on a natural image dataset, to expose it to natural object contour statistics. Then, a classification decision head was added and the model was finetuned on a form discrimination task: squares vs. randomly oriented inducer shapes (no illusory contour). Finally, the model was tested with the unfamiliar “illusory contour” configuration: inducer shapes oriented to form an illusory square. Compared with feedforward baselines, the iterative “predictive coding” feedback resulted in more illusory contours being classified as physical squares. The perception of the illusory contour was measurable in the luminance profile of the image reconstructions produced by the model, demonstrating that the model really “sees” the illusion. Ablation studies revealed that natural image pretraining and feedback error correction are both critical to the perception of the illusion. Finally we validated our conclusions in a deeper network (VGG): adding the same predictive coding feedback dynamics again leads to the perception of illusory contours.}
+}
+
+%bastos 
+@article{bastos2012canonical,
+  title={Canonical microcircuits for predictive coding},
+  author={Bastos, Andre M and Usrey, W Martin and Adams, Rick A and Mangun, George R and Fries, Pascal and Friston, Karl J},
+  journal={Neuron},
+  volume={76},
+  number={4},
+  pages={695--711},
+  year={2012},
+  publisher={Elsevier}
+}
+
+%predictive coding review
+@article{huang2011predictive,
+  title={Predictive coding},
+  author={Huang, Yanping and Rao, Rajesh PN},
+  journal={Wiley Interdisciplinary Reviews: Cognitive Science},
+  volume={2},
+  number={5},
+  pages={580--593},
+  year={2011},
+  publisher={Wiley Online Library}
+}
+
+
+% Great expectations
+@article{heilbron2018great,
+  title={Great expectations: is there evidence for predictive coding in auditory cortex?},
+  author={Heilbron, Micha and Chait, Maria},
+  journal={Neuroscience},
+  volume={389},
+  pages={54--73},
+  year={2018},
+  publisher={Elsevier}
+}
+
+@article{aitchison2017or,
+  title={With or without you: predictive coding and Bayesian inference in the brain},
+  author={Aitchison, Laurence and Lengyel, M{\'a}t{\'e}},
+  journal={Current opinion in neurobiology},
+  volume={46},
+  pages={219--227},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@article{walsh2020evaluating,
+  title={Evaluating the neurophysiological evidence for predictive processing as a model of perception},
+  author={Walsh, Kevin S and McGovern, David P and Clark, Andy and O'Connell, Redmond G},
+  journal={Annals of the New York Academy of Sciences},
+  volume={1464},
+  number={1},
+  pages={242},
+  year={2020},
+  publisher={Wiley-Blackwell}
+}
+
+% Huang 2020
+@article{huang2020neural,
+  title={Neural Networks with Recurrent Generative Feedback},
+  author={Huang, Yujia and Gornet, James and Dai, Sihui and Yu, Zhiding and Nguyen, Tan and Tsao, Doris and Anandkumar, Anima},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  year={2020}
+}
+@article{spratling2008predictive,
+  title={Predictive coding as a model of biased competition in visual attention},
+  author={Spratling, Michael W},
+  journal={Vision research},
+  volume={48},
+  number={12},
+  pages={1391--1408},
+  year={2008},
+  publisher={Elsevier}
+}
+
+% Rao and Ballard
+@article{rao1999predictive,
+  title={Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects},
+  author={Rao, Rajesh PN and Ballard, Dana H},
+  journal={Nature neuroscience},
+  volume={2},
+  number={1},
+  pages={79--87},
+  year={1999},
+  publisher={Nature Publishing Group}
+}
+
+
+
+% Purdue model
+@article{wen2018deep,
+  title={Deep predictive coding network for object recognition},
+  author={Wen, Haiguang and Han, Kuan and Shi, Junxing and Zhang, Yizhen and Culurciello, Eugenio and Liu, Zhongming},
+  journal={arXiv preprint arXiv:1802.04762},
+  year={2018}
+}
+
+
+%hGRU
+@inproceedings{linsley2018learning,
+  title={Learning long-range spatial dependencies with horizontal gated recurrent units},
+  author={Linsley, Drew and Kim, Junkyung and Veerabadran, Vijay and Windolf, Charles and Serre, Thomas},
+  booktitle={Advances in neural information processing systems},
+  pages={152--164},
+  year={2018}
+}
+
+
+
+% Wyatte 
+@article{wyatte2012limits,
+  title={The limits of feedforward vision: Recurrent processing promotes robust object recognition when objects are degraded},
+  author={Wyatte, Dean and Curran, Tim and O'Reilly, Randall},
+  journal={Journal of Cognitive Neuroscience},
+  volume={24},
+  number={11},
+  pages={2248--2261},
+  year={2012},
+  publisher={MIT Press}
+}
+
+%Kriegeskorte's paper - LT BLT FF etc?
+@article{kietzmann2019recurrence,
+  title={Recurrence is required to capture the representational dynamics of the human visual system},
+  author={Kietzmann, Tim C and Spoerer, Courtney J and S{\"o}rensen, Lynn KA and Cichy, Radoslaw M and Hauk, Olaf and Kriegeskorte, Nikolaus},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={116},
+  number={43},
+  pages={21854--21863},
+  year={2019},
+  publisher={National Acad Sciences}
+}
+
+
+% Jochen Triesch  -- Occlusion
+@inproceedings{ernst2019recurrent,
+  title={Recurrent connections aid occluded object recognition by discounting occluders},
+  author={Ernst, Markus Roland and Triesch, Jochen and Burwick, Thomas},
+  booktitle={International Conference on Artificial Neural Networks},
+  pages={294--305},
+  year={2019},
+  organization={Springer}
+}
+
+
+
+% DiCarlo's paper
+@article{kar2019evidence,
+  title={Evidence that recurrent circuits are critical to the ventral stream’s execution of core object recognition behavior},
+  author={Kar, Kohitij and Kubilius, Jonas and Schmidt, Kailyn and Issa, Elias B and DiCarlo, James J},
+  journal={Nature neuroscience},
+  volume={22},
+  number={6},
+  pages={974--983},
+  year={2019},
+  publisher={Nature Publishing Group}
+}
+
+
+%Mohsenzadeh
+
+
+% PredNet - LSTM one
+@article{lotter2016deep,
+  title={Deep predictive coding networks for video prediction and unsupervised learning},
+  author={Lotter, William and Kreiman, Gabriel and Cox, David},
+  journal={arXiv preprint arXiv:1605.08104},
+  year={2016}
+}
+
+
+%Chalasani
+@article{chalasani2013deep,
+  title={Deep predictive coding networks},
+  author={Chalasani, Rakesh and Principe, Jose C},
+  journal={arXiv preprint arXiv:1301.3541},
+  year={2013}
+}
+
+
+%Perrinet
+@article{boutin2019sparse,
+  title={Sparse Deep Predictive Coding captures contour integration capabilities of the early visual system},
+  author={Boutin, Victor and Franciosini, Angelo and Chavane, Frederic and Ruffier, Franck and Perrinet, Laurent},
+  journal={arXiv preprint arXiv:1902.07651},
+  year={2019}
+}
+
+%Spratling
+@article{spratling2017hierarchical,
+  title={A hierarchical predictive coding model of object recognition in natural images},
+  author={Spratling, Michael W},
+  journal={Cognitive computation},
+  volume={9},
+  number={2},
+  pages={151--167},
+  year={2017},
+  publisher={Springer}
+}
+
+% Sparse Coding
+@article{chalk2018toward,
+  title={Toward a unified theory of efficient, predictive, and sparse coding},
+  author={Chalk, Matthew and Marre, Olivier and Tka{\v{c}}ik, Ga{\v{s}}per},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={115},
+  number={1},
+  pages={186--191},
+  year={2018},
+  publisher={National Acad Sciences}
+}
+
+@article{olshausen1996emergence,
+  title={Emergence of simple-cell receptive field properties by learning a sparse code for natural images},
+  author={Olshausen, Bruno A and Field, David J},
+  journal={Nature},
+  volume={381},
+  number={6583},
+  pages={607--609},
+  year={1996},
+  publisher={Nature Publishing Group}
+}
+
+@article{oja1999image,
+  title={Image feature extraction and denoising by sparse coding},
+  author={Oja, Erkki and Hyv{\"a}rinen, Aapo and Hoyer, Patrik},
+  journal={Pattern Analysis \& Applications},
+  volume={2},
+  number={2},
+  pages={104--110},
+  year={1999},
+  publisher={Springer}
+}
+
+@inproceedings{perez2020gabor,
+  title={Gabor layers enhance network robustness},
+  author={P{\'e}rez, Juan C and Alfarra, Motasem and Jeanneret, Guillaume and Bibi, Adel and Thabet, Ali and Ghanem, Bernard and Arbel{\'a}ez, Pablo},
+  booktitle={European Conference on Computer Vision},
+  pages={450--466},
+  year={2020},
+  organization={Springer}
+}
+
+@inproceedings{dapello2020simulating,
+  title={Simulating a Primary Visual Cortex at the Front of CNNs Improves Robustness to Image Perturbations},
+  author={Dapello, Joel and Marques, Tiago and Schrimpf, Martin and Geiger, Franziska and Cox, David D and DiCarlo, James J},
+  booktitle={NeurIPS},
+  year={2020}
+}
+
+@article{lu2013sparse,
+  title={Sparse coding for image denoising using spike and slab prior},
+  author={Lu, Xiaoqiang and Yuan, Yuan and Yan, Pingkun},
+  journal={Neurocomputing},
+  volume={106},
+  pages={12--20},
+  year={2013},
+  publisher={Elsevier}
+}
+
+@article{sulam2020adversarial,
+  title={Adversarial Robustness of Supervised Sparse Coding},
+  author={Sulam, Jeremias and Muthukumar, Ramchandran and Arora, Raman},
+  journal={Advances in neural information processing systems},
+  year={2020}
+}
+
+@inproceedings{kim2020modeling,
+  title={Modeling biological immunity to adversarial examples},
+  author={Kim, Edward and Rego, Jocelyn and Watkins, Yijing and Kenyon, Garrett T},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4666--4675},
+  year={2020}
+}
+
+
+@article{alamia2021role,
+  title={On the role of feedback in visual processing: a predictive coding perspective},
+  author={Alamia, Andrea and Mozafari, Milad and Choksi, Bhavin and VanRullen, Rufin},
+  journal={arXiv preprint arXiv:2106.04225},
+  year={2021}
+}
+
+
+@article{dicarlo2021does,
+  title={How does the brain combine generative models and direct discriminative computations in high-level vision?},
+  author={DiCarlo, James J and Haefner, Ralf and Isik, Leyla and Konkle, Talia and Kriegeskorte, Nikolaus and Peters, Benjamin and Rust, Nicole and Stachenfeld, Kim and Tenenbaum, Joshua B and Tsao, Doris and others},
+  year={2021},
+  journal={CCN 2021 Workshop GAC},
+  note={\url{https://openreview.net/forum?id=zlTiwFtLlR4}}
+}
+
+@article{huffman2014multivariate,
+  title={Multivariate pattern analysis of the human medial temporal lobe revealed representationally categorical cortex and representationally agnostic hippocampus},
+  author={Huffman, Derek J and Stark, Craig EL},
+  journal={Hippocampus},
+  volume={24},
+  number={11},
+  pages={1394--1403},
+  year={2014},
+  publisher={Wiley Online Library}
+}
+@article{al2021reconstructing,
+  title={Reconstructing feedback representations in the ventral visual pathway with a generative adversarial autoencoder},
+  author={Al-Tahan, Haider and Mohsenzadeh, Yalda},
+  journal={PLoS Computational Biology},
+  volume={17},
+  number={3},
+  pages={e1008775},
+  year={2021},
+  publisher={Public Library of Science San Francisco, CA USA}
+}
+
+@inproceedings{chen2020hopskipjumpattack,
+  title={HopSkipJumpAttack: A Query-Efficient Decision-Based Attack},
+  author={Chen, Jianbo and Jordan, Michael I and Wainwright, Martin J},
+  booktitle={2020 IEEE Symposium on Security and Privacy (SP)},
+  pages={1277--1294},
+  year={2020},
+  organization={IEEE Computer Society}
+}
+
+@inproceedings{xie2020adversarial,
+  title={Adversarial examples improve image recognition},
+  author={Xie, Cihang and Tan, Mingxing and Gong, Boqing and Wang, Jiang and Yuille, Alan L and Le, Quoc V},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={819--828},
+  year={2020}
+}
+
+@article{rajaei2019beyond,
+  title={Beyond core object recognition: Recurrent processes account for object recognition under occlusion},
+  author={Rajaei, Karim and Mohsenzadeh, Yalda and Ebrahimpour, Reza and Khaligh-Razavi, Seyed-Mahdi},
+  journal={PLoS computational biology},
+  volume={15},
+  number={5},
+  pages={e1007001},
+  year={2019},
+  publisher={Public Library of Science San Francisco, CA USA}
+}
+
+@article{paiton2020selectivity,
+  title={Selectivity and robustness of sparse coding networks},
+  author={Paiton, Dylan M and Frye, Charles G and Lundquist, Sheng Y and Bowen, Joel D and Zarcone, Ryan and Olshausen, Bruno A},
+  journal={Journal of Vision},
+  volume={20},
+  number={12},
+  pages={10--10},
+  year={2020},
+  publisher={The Association for Research in Vision and Ophthalmology}
+}
+
+@article{Frosst2018DARCCCDA,
+  title={DARCCC: Detecting Adversaries by Reconstruction from Class Conditional Capsules},
+  author={Nicholas Frosst and Sara Sabour and Geoffrey E. Hinton},
+  journal={ArXiv},
+  year={2018},
+  volume={abs/1811.06969}
+}
+
+@article{spoerer2017recurrent,
+  title={Recurrent convolutional neural networks: a better model of biological object recognition},
+  author={Spoerer, Courtney J and McClure, Patrick and Kriegeskorte, Nikolaus},
+  journal={Frontiers in psychology},
+  volume={8},
+  pages={1551},
+  year={2017},
+  publisher={Frontiers}
+}
+
+@inproceedings{kubilius2019brain,
+ author = {Kubilius, Jonas and Schrimpf, Martin and Kar, Kohitij and Rajalingham, Rishi and Hong, Ha and Majaj, Najib and Issa, Elias and Bashivan, Pouya and Prescott-Roy, Jonathan and Schmidt, Kailyn and Nayebi, Aran and Bear, Daniel and Yamins, Daniel L and DiCarlo, James J},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Brain-Like Object Recognition with High-Performing Shallow Recurrent ANNs},
+ url = {https://proceedings.neurips.cc/paper/2019/file/7813d1590d28a7dd372ad54b5d29d033-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+@article{krotov2018dense,
+  title={Dense associative memory is robust to adversarial inputs},
+  author={Krotov, Dmitry and Hopfield, John},
+  journal={Neural computation},
+  volume={30},
+  number={12},
+  pages={3151--3167},
+  year={2018},
+  publisher={MIT Press One Rogers Street, Cambridge, MA 02142-1209, USA journals-info~…}
+}

@@ -1,0 +1,631 @@
+
+%
+%
+%
+%
+% ------ Score Matching
+%
+%
+%
+%
+
+% Hyvarinen 2005
+@article{scorematching1,
+  author  = {Aapo Hyv{{\"a}}rinen},
+  title   = {Estimation of Non-Normalized Statistical Models by Score Matching},
+  journal = {Journal of Machine Learning Research},
+  year    = {2005},
+  volume  = {6},
+  number  = {24},
+  pages   = {695--709}
+}
+% Hyvarinen 2007
+@article{scorematching2,
+  title={Some extensions of score matching},
+  author={Hyv{\"a}rinen, Aapo},
+  journal={Computational statistics \& data analysis},
+  volume={51},
+  number={5},
+  pages={2499--2512},
+  year={2007},
+  publisher={Elsevier}
+}	
+
+% Not sure?
+@article{interpretation,
+      title={Interpretation and Generalization of Score Matching}, 
+      author={Siwei Lyu},
+      year={2012},
+      eprint={1205.2629},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{yu2021,
+    author = {Yu, Shiqing and Drton, Mathias and Shojaie, Ali},
+    title = {Generalized score matching for general domains},
+    journal = {Information and Inference: A Journal of the IMA},
+    year = {2021}
+}
+  
+@article{yu2019,
+  author  = {Shiqing Yu and Mathias Drton and Ali Shojaie},
+  title   = {Generalized Score Matching for Non-Negative Data},
+  journal = {Journal of Machine Learning Research},
+  year    = {2019},
+  volume  = {20},
+  number  = {76},
+  pages   = {1--70},
+}
+
+@inproceedings{bdksd,
+  title={Standardisation-function kernel Stein discrepancy: A unifying view on kernel Stein discrepancy tests for goodness-of-fit},
+  author={Xu, Wenkai},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={1575--1597},
+  year={2022},
+  organization={PMLR}
+}
+
+% mirrored stein operators (bounded theta, non-euclidean)
+@article{shi2021,
+  title={Sampling with Mirrored Stein Operators},
+  author={Shi, Jiaxin and Liu, Chang and Mackey, Lester},
+  journal={arXiv preprint arXiv:2106.12506},
+  year={2021}
+}
+
+% discrete stein operator
+@InProceedings{yang2018,
+  title = 	 {Goodness-of-Fit Testing for Discrete Distributions via Stein Discrepancy},
+  author =       {Yang, Jiasen and Liu, Qiang and Rao, Vinayak and Neville, Jennifer},
+  booktitle = 	 {Proceedings of the 35th International Conference on Machine Learning},
+  pages = 	 {5561--5570},
+  year = 	 {2018},
+  volume = 	 {80},
+  series = 	 {Proceedings of Machine Learning Research},
+  publisher =    {PMLR}
+}
+
+
+% stein operator riemannian
+@InProceedings{xu2021,
+  title = 	 {Interpretable Stein Goodness-of-fit Tests on Riemannian Manifold},
+  author =       {Xu, Wenkai and Matsuda, Takeru},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {11502--11513},
+  year = 	 {2021},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  publisher =    {PMLR}
+}
+
+% Manifold SM
+@article{mardia2016,
+  title={Score matching estimators for directional distributions},
+  author={Mardia, Kanti V and Kent, John T and Laha, Arnab K},
+  journal={arXiv preprint arXiv:1604.08470},
+  year={2016}
+}
+
+% Song paper
+@article{song,
+  author  = {Song Liu and Takafumi Kanamori and Daniel J. Williams},
+  title   = {Estimating Density Models with Truncation Boundaries using Score Matching},
+  journal = {Journal of Machine Learning Research},
+  year    = {2022},
+  volume  = {23},
+  number  = {186},
+  pages   = {1--38}
+}
+
+
+@article{highdgraphical,
+  title={Estimation of high-dimensional graphical models using regularized score matching},
+  author={Lin, Lina and Drton, Mathias and Shojaie, Ali},
+  journal={Electronic journal of statistics},
+  volume={10},
+  number={1},
+  pages={806},
+  year={2016},
+  publisher={NIH Public Access}
+}
+
+@inproceedings{pairwisegraphical,
+ author = {Yu, Ming and Kolar, Mladen and Gupta, Varun},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Statistical Inference for Pairwise Graphical Models Using Score Matching},
+ volume = {29},
+ year = {2016}
+}
+
+@article{infinitedimensional,
+  title={Density estimation in infinite dimensional exponential families},
+  author={Sriperumbudur, Bharath and Fukumizu, Kenji and Gretton, Arthur and Hyv{\"a}rinen, Aapo and Kumar, Revant},
+  journal={The Journal of Machine Learning Research},
+  volume={18},
+  number={1},
+  pages={1830--1888},
+  year={2017},
+  publisher={JMLR. org}
+}
+
+@ARTICLE{Wu2022,
+  author={Wu, Suya and Diao, Enmao and Elkhalil, Khalil and Ding, Jie and Tarokh, Vahid},
+  journal={IEEE Access}, 
+  title={Score-Based Hypothesis Testing for Unnormalized Models}, 
+  year={2022},
+  volume={10},
+  number={},
+  pages={71936-71950}
+}
+
+%
+%
+%
+%
+% ------ Unnormalised Models
+%
+%
+%
+%
+
+% Unnormalised Model overview
+@inproceedings{unnormalised,
+  title={Estimation of unnormalized statistical models without numerical integration},
+  author={Gutmann, Michael and Hyv{\"a}rinen, Aapo and others},
+  booktitle={Proceedings of the Sixth Workshop on Information Theoretic Methods in Science and Engineering (WITMSE)},
+  year={2013},
+  organization={Citeseer}
+}
+
+% Noise contrastive estimation (estimation for unnormalised)
+@InProceedings{gutmann2010,
+  title = 	 {Noise-contrastive estimation: A new estimation principle for unnormalized statistical models},
+  author = 	 {Gutmann, Michael and Hyvärinen, Aapo},
+  booktitle = 	 {Proceedings of the 13th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {297--304},
+  year = 	 {2010},
+  volume = 	 {9},
+  series = 	 {Proceedings of Machine Learning Research},
+  publisher =    {PMLR},
+}
+
+
+% Noise contrastive estimation 2(estimation for unnormalised)
+@article{gutmann2012,
+  author  = {Michael U. Gutmann and Aapo Hyv{{\"a}}rinen},
+  title   = {Noise-Contrastive Estimation of Unnormalized Statistical Models, with Applications to Natural Image Statistics},
+  journal = {Journal of Machine Learning Research},
+  year    = {2012},
+  volume  = {13},
+  number  = {11},
+  pages   = {307-361}
+}
+
+
+
+%
+%
+%
+%
+% ------ RKHS
+%
+%
+%
+%
+
+% RKHS overview
+@article{RKHSoverview,
+      title={Gaussian Processes and Kernel Methods: A Review on Connections and Equivalences}, 
+      author={Motonobu Kanagawa and Philipp Hennig and Dino Sejdinovic and Bharath K Sriperumbudur},
+      year={2018},
+      eprint={1807.02582},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+% Gaussian kernel fit all L2 space
+@article{gaussiankernel,
+  author  = {Bharath K. Sriperumbudur and Kenji Fukumizu and Gert R.G. Lanckriet},
+  title   = {Universality, Characteristic Kernels and RKHS Embedding of Measures},
+  journal = {Journal of Machine Learning Research},
+  year    = {2011},
+  volume  = {12},
+  number  = {70},
+  pages   = {2389-2410},
+  url     = {http://jmlr.org/papers/v12/sriperumbudur11a.html}
+}
+
+% Overview of kernel methods
+@article{KernelOverview,
+title = {Kernel methods and the exponential family},
+journal = {Neurocomputing},
+volume = {69},
+number = {7},
+pages = {714-720},
+year = {2006},
+note = {New Issues in Neurocomputing: 13th European Symposium on Artificial Neural Networks},
+issn = {0925-2312},
+doi = {https://doi.org/10.1016/j.neucom.2005.12.009},
+url = {https://www.sciencedirect.com/science/article/pii/S0925231205003280},
+author = {Stéphane Canu and Alex Smola}
+}
+
+% Kernel book
+@book{learningwithkernels,
+  title={Learning with kernels: support vector machines, regularization, optimization, and beyond},
+  author={Scholkopf, Bernhard and Smola, Alexander J},
+  year={2018},
+  publisher={Adaptive Computation and Machine Learning Series}
+}
+
+@book{kalos2009monte,
+  title={Monte carlo methods},
+  author={Kalos, Malvin H and Whitlock, Paula A},
+  year={2009},
+  publisher={John Wiley \& Sons}
+}
+
+%
+%
+%
+%
+% ------ Unnormalised model examples
+%
+%
+%
+%
+
+
+
+% Image analysis?
+@book{li2009,
+  title={Markov random field modeling in image analysis},
+  author={Li, Stan Z},
+  year={2009},
+  publisher={Springer Science \& Business Media}
+}
+
+
+%
+%
+%
+%
+% ------  Stein discrepancy
+%
+%
+%
+%
+
+% Steins original paper
+@inproceedings{stein1972,
+  title={A bound for the error in the normal approximation to the distribution of a sum of dependent random variables},
+  author={Stein, Charles},
+  booktitle={Proceedings of the sixth Berkeley symposium on mathematical statistics and probability, volume 2: Probability theory},
+  pages={583--602},
+  year={1972},
+  organization={University of California Press}
+}
+
+@inproceedings{jitkrittum2017,
+ author = {Jitkrittum, Wittawat and Xu, Wenkai and Szabo, Zoltan and Fukumizu, Kenji and Gretton, Arthur},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {A Linear-Time Kernel Goodness-of-Fit Test},
+ volume = {30},
+ year = {2017}
+}
+
+% Stein 2004 example
+@incollection{stein2004,
+  title={Use of exchangeable pairs in the analysis of simulations},
+  author={Stein, Charles and Diaconis, Persi and Holmes, Susan and Reinert, Gesine},
+  booktitle={Stein's Method},
+  pages={1--25},
+  year={2004},
+  publisher={Institute of Mathematical Statistics}
+}
+
+@inproceedings{barp2019,
+  title={Minimum stein discrepancy estimators},
+  author={Barp, Alessandro and Briol, Francois-Xavier and Duncan, Andrew and Girolami, Mark and Mackey, Lester},
+  booktitle={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+@article{kanagawa2019,
+  title={A kernel stein test for comparing latent variable models},
+  author={Kanagawa, Heishiro and Jitkrittum, Wittawat and Mackey, Lester and Fukumizu, Kenji and Gretton, Arthur},
+  journal={arXiv preprint arXiv:1907.00586},
+  year={2019}
+}
+
+
+@InProceedings{kernelgoodness,
+  title = 	 {A Kernel Test of Goodness of Fit},
+  author = 	 {Chwialkowski, Kacper and Strathmann, Heiko and Gretton, Arthur},
+  booktitle = 	 {Proceedings of The 33rd International Conference on Machine Learning},
+  pages = 	 {2606--2615},
+  year = 	 {2016},
+  volume = 	 {48},
+  series = 	 {Proceedings of Machine Learning Research},
+  publisher =    {PMLR}
+}
+
+@inproceedings{gorham2015,
+ author = {Gorham, Jackson and Mackey, Lester},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Measuring Sample Quality with Stein\textquotesingle s Method},
+ volume = {28},
+ year = {2015}
+}
+
+
+@inproceedings{Gorham2020,
+ author = {Gorham, Jackson and Raj, Anant and Mackey, Lester},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {17931--17942},
+ publisher = {Curran Associates, Inc.},
+ title = {Stochastic Stein Discrepancies},
+ volume = {33},
+ year = {2020}
+}
+
+@inproceedings{gorham2017,
+  title={Measuring sample quality with kernels},
+  author={Gorham, Jackson and Mackey, Lester},
+  booktitle={International Conference on Machine Learning},
+  pages={1292--1301},
+  year={2017},
+  organization={PMLR}
+}
+
+@article{gorham2019,
+  title={Measuring sample quality with diffusions},
+  author={Gorham, Jackson and Duncan, Andrew B and Vollmer, Sebastian J and Mackey, Lester},
+  journal={The Annals of Applied Probability},
+  volume={29},
+  number={5},
+  pages={2884--2928},
+  year={2019},
+  publisher={Institute of Mathematical Statistics}
+}
+
+
+@book{chen2011,
+  title={Normal approximation by Stein's method},
+  author={Chen, Louis HY and Goldstein, Larry and Shao, Qi-Man},
+  volume={2},
+  year={2011},
+  publisher={Springer}
+}
+
+@book{convex,
+  title={Convex optimization},
+  author={Boyd, Stephen and Vandenberghe, Lieven},
+  year={2004},
+  publisher={Cambridge university press}
+}
+
+
+@InProceedings{ksd,
+  title = 	 {A Kernelized Stein Discrepancy for Goodness-of-fit Tests},
+  author = 	 {Liu, Qiang and Lee, Jason and Jordan, Michael},
+  booktitle = 	 {Proceedings of The 33rd International Conference on Machine Learning},
+  pages = 	 {276--284},
+  year = 	 {2016},
+  volume = 	 {48},
+  series = 	 {Proceedings of Machine Learning Research},
+  publisher =    {PMLR}
+}
+
+
+
+%
+%
+%
+%
+% ------ Software
+%
+%
+%
+%
+@software{jax,
+  author = {James Bradbury and Roy Frostig and Peter Hawkins and Matthew James Johnson and Chris Leary and Dougal Maclaurin and George Necula and Adam Paszke and Jake Vander{P}las and Skye Wanderman-{M}ilne and Qiao Zhang},
+  title = {{JAX}: composable transformations of {P}ython+{N}um{P}y programs},
+  url = {http://github.com/google/jax},
+  version = {0.2.5},
+  year = {2018}
+}
+
+
+%
+%
+%
+%
+% ------ Datasets
+%
+%
+%
+%
+
+@misc{chicagodata,
+author = {{Chicago Police Department}},
+note = {Accessed 25 November 2019},
+title = {Data: Crimes - 2001 to present},
+year = {2019}
+}
+
+@article{cifar10,
+author = {Krizhevsky, Alex},
+year = {2009},
+pages = {},
+title = {Learning Multiple Layers of Features from Tiny Images},
+journal = {University of Toronto}
+}
+
+
+
+%
+%
+%
+%
+% ------ Other
+%
+%
+%
+%
+
+@article{truncatedMVN,
+author = {Daskalakis, Constantinos and Gouleakis, Themis and Tzamos, Christos and Zampetakis, Manolis},
+year = {2018},
+pages = {},
+title = {Efficient Statistics, in High Dimensions, from Truncated Samples}
+}
+
+
+@article{truncatedMVN2,
+  title = 	 {Computationally and Statistically Efficient Truncated Regression},
+  author =       {Daskalakis, Constantinos and Gouleakis, Themis and Tzamos, Christos and Zampetakis, Manolis},
+  booktitle = 	 {Proceedings of the 32nd Conference on Learning Theory},
+  pages = 	 {955--960},
+  year = 	 {2019},
+  volume = 	 {99},
+  series = 	 {Proceedings of Machine Learning Research},
+  publisher =    {PMLR}
+}
+
+@article{infinitedimensional,
+  title={Density estimation in infinite dimensional exponential families},
+  author={Sriperumbudur, Bharath and Fukumizu, Kenji and Gretton, Arthur and Hyv{\"a}rinen, Aapo and Kumar, Revant},
+  journal={The Journal of Machine Learning Research},
+  volume={18},
+  number={1},
+  pages={1830--1888},
+  year={2017},
+  publisher={JMLR. org}
+}
+
+@article{clustering,
+    title={Clustering via Mode Seeking by Direct Estimation of the Gradient of a Log-Density},
+    author={Hiroaki Sasaki and Aapo Hyvärinen and Masashi Sugiyama},
+    year={2014},
+    eprint={1404.5028},
+    archivePrefix={arXiv},
+    primaryClass={stat.ML}
+}
+
+% information geometry book
+@book{amari2016,
+  title={Information geometry and its applications},
+  author={Amari, Shun-ichi},
+  volume={194},
+  year={2016},
+  publisher={Springer}
+}
+
+% For bochner integral
+@book{steinwart2008support,
+  title={Support vector machines},
+  author={Steinwart, Ingo and Christmann, Andreas},
+  year={2008},
+  publisher={Springer Science \& Business Media}
+}
+
+% monte carlo integration
+@book{binder1993,
+  title={Monte Carlo simulation in statistical physics},
+  author={Binder, Kurt and Heermann, Dieter and Roelofs, Lyle and Mallinckrodt, A John and McKay, Susan},
+  journal={Computers in Physics},
+  volume={7},
+  number={2},
+  pages={156--157},
+  year={1993},
+  publisher={American Institute of Physics}
+}
+
+% u statistics
+@book{serfling2009,
+  title={Approximation theorems of mathematical statistics},
+  author={Serfling, Robert J},
+  year={2009},
+  publisher={John Wiley \& Sons}
+}
+
+@article{trainebm,
+  title={How to train your energy-based models},
+  author={Song, Yang and Kingma, Diederik P},
+  journal={arXiv preprint arXiv:2101.03288},
+  year={2021}
+}
+
+@article{jack,
+  title={Sequential Neural Score Estimation: Likelihood-Free Inference with Conditional Score Based Diffusion Models},
+  author={Sharrock, Louis and Simons, Jack and Liu, Song and Beaumont, Mark},
+  journal={arXiv preprint arXiv:2210.04872},
+  year={2022}
+}
+
+@inproceedings{pang2020,
+  title={Efficient learning of generative models via finite-difference score matching},
+  author={Pang, Tianyu and Xu, Kun and Li, Chongxuan and Song, Yang and Ermon, Stefano and Zhu, Jun},
+  booktitle={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={19175--19188},
+  year={2020}
+}
+
+@inproceedings{song2020score,
+    title={Score-Based Generative Modeling through Stochastic Differential Equations},
+    author={Yang Song and Jascha Sohl-Dickstein and Diederik P Kingma and Abhishek Kumar and Stefano Ermon and Ben Poole},
+    booktitle={International Conference on Learning Representations},
+    year={2021},
+}
+
+@inproceedings{song2019generative,
+  title={Generative modeling by estimating gradients of the data distribution},
+  author={Song, Yang and Ermon, Stefano},
+  booktitle={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+@book{asymptoticstatistics,
+  title={Asymptotic statistics},
+  author={Van der Vaart, Aad W},
+  volume={3},
+  year={2000},
+  publisher={Cambridge university press}
+}
+
+@inproceedings{cholesky,
+  title={Matrix inversion using Cholesky decomposition},
+  author={Krishnamoorthy, Aravindh and Menon, Deepak},
+  booktitle={2013 signal processing: Algorithms, architectures, arrangements, and applications (SPA)},
+  pages={70--72},
+  year={2013},
+  organization={IEEE}
+}
+
+
+@inproceedings{williams2022,
+  title={Score Matching for Truncated Density Estimation on a Manifold},
+  author={Williams, Daniel J and Liu, Song},
+  booktitle={Topological, Algebraic and Geometric Learning Workshops 2022},
+  pages={312--321},
+  year={2022},
+  organization={PMLR}
+}
+
+@online{statatruncated,
+  author = {{UCLA: Statistical Consulting Group}},
+  title = {Truncated Regression | Stata Data Analysis Examples},
+  note = {Accessed March 17, 2023},
+  year = {2022},
+  url = {https://stats.oarc.ucla.edu/stata/dae/truncated-regression/}
+}

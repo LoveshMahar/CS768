@@ -1,0 +1,11 @@
+The local Lipschitz constant of a neural network is a useful metric with
+applications in robustness, generalization, and fairness evaluation. We provide
+novel analytic results relating the local Lipschitz constant of nonsmooth
+vector-valued functions to a maximization over the norm of the generalized
+Jacobian. We present a sufficient condition for which backpropagation always
+returns an element of the generalized Jacobian, and reframe the problem over
+this broad class of functions. We show strong inapproximability results for
+estimating Lipschitz constants of ReLU networks, and then formulate an
+algorithm to compute these quantities exactly. We leverage this algorithm to
+evaluate the tightness of competing Lipschitz estimators and the effects of
+regularized training on the Lipschitz constant.

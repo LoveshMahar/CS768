@@ -1,0 +1,119 @@
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal, Neelakantan, Shyam, Sastry, Askell, et~al.]{brown2020language}
+Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared~D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et~al.
+\newblock Language models are few-shot learners.
+\newblock \emph{Advances in neural information processing systems}, 33:\penalty0 1877--1901, 2020.
+
+\bibitem[Chen et~al.(2016)Chen, Xu, Zhang, and Guestrin]{chen2016training}
+Tianqi Chen, Bing Xu, Chiyuan Zhang, and Carlos Guestrin.
+\newblock Training deep nets with sublinear memory cost.
+\newblock \emph{arXiv preprint arXiv:1604.06174}, 2016.
+
+\bibitem[Dao(2023)]{dao2023flashattention}
+Tri Dao.
+\newblock Flashattention-2: Faster attention with better parallelism and work partitioning.
+\newblock \emph{arXiv preprint arXiv:2307.08691}, 2023.
+
+\bibitem[Dao et~al.(2022)Dao, Fu, Ermon, Rudra, and R{\'e}]{dao2022flashattention}
+Tri Dao, Dan Fu, Stefano Ermon, Atri Rudra, and Christopher R{\'e}.
+\newblock Flashattention: Fast and memory-efficient exact attention with io-awareness.
+\newblock \emph{Advances in Neural Information Processing Systems}, 35:\penalty0 16344--16359, 2022.
+
+\bibitem[Fan et~al.(2021)Fan, Rong, Meng, Cao, Wang, Zheng, Wu, Long, Yang, Xia, et~al.]{fan2021dapple}
+Shiqing Fan, Yi~Rong, Chen Meng, Zongyan Cao, Siyu Wang, Zhen Zheng, Chuan Wu, Guoping Long, Jun Yang, Lixue Xia, et~al.
+\newblock Dapple: A pipelined data parallel approach for training large models.
+\newblock In \emph{Proceedings of the 26th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming}, pages 431--445, 2021.
+
+\bibitem[Gaunt et~al.(2017)Gaunt, Johnson, Riechert, Tarlow, Tomioka, Vytiniotis, and Webster]{gaunt2017ampnet}
+Alexander~L Gaunt, Matthew~A Johnson, Maik Riechert, Daniel Tarlow, Ryota Tomioka, Dimitrios Vytiniotis, and Sam Webster.
+\newblock Ampnet: Asynchronous model-parallel training for dynamic neural networks.
+\newblock \emph{arXiv preprint arXiv:1705.09786}, 2017.
+
+\bibitem[Goyal et~al.(2017)Goyal, Doll{\'a}r, Girshick, Noordhuis, Wesolowski, Kyrola, Tulloch, Jia, and He]{goyal2017accurate}
+Priya Goyal, Piotr Doll{\'a}r, Ross Girshick, Pieter Noordhuis, Lukasz Wesolowski, Aapo Kyrola, Andrew Tulloch, Yangqing Jia, and Kaiming He.
+\newblock Accurate, large minibatch sgd: Training imagenet in 1 hour.
+\newblock \emph{arXiv preprint arXiv:1706.02677}, 2017.
+
+\bibitem[Harlap et~al.(2018)Harlap, Narayanan, Phanishayee, Seshadri, Devanur, Ganger, and Gibbons]{harlap2018pipedream}
+Aaron Harlap, Deepak Narayanan, Amar Phanishayee, Vivek Seshadri, Nikhil Devanur, Greg Ganger, and Phil Gibbons.
+\newblock Pipedream: Fast and efficient pipeline parallel dnn training.
+\newblock \emph{arXiv preprint arXiv:1806.03377}, 2018.
+
+\bibitem[Huang et~al.(2019)Huang, Cheng, Bapna, Firat, Chen, Chen, Lee, Ngiam, Le, Wu, et~al.]{huang2019gpipe}
+Yanping Huang, Youlong Cheng, Ankur Bapna, Orhan Firat, Dehao Chen, Mia Chen, HyoukJoong Lee, Jiquan Ngiam, Quoc~V Le, Yonghui Wu, et~al.
+\newblock Gpipe: Efficient training of giant neural networks using pipeline parallelism.
+\newblock \emph{Advances in neural information processing systems}, 32, 2019.
+
+\bibitem[Jain et~al.(2020)Jain, Awan, Aljuhani, Hashmi, Anthony, Subramoni, Panda, Machiraju, and Parwani]{jain2020gems}
+Arpan Jain, Ammar~Ahmad Awan, Asmaa~M Aljuhani, Jahanzeb~Maqbool Hashmi, Quentin~G Anthony, Hari Subramoni, Dhableswar~K Panda, Raghu Machiraju, and Anil Parwani.
+\newblock Gems: Gpu-enabled memory-aware model-parallelism system for distributed dnn training.
+\newblock In \emph{SC20: International Conference for High Performance Computing, Networking, Storage and Analysis}, pages 1--15. IEEE, 2020.
+
+\bibitem[Kim et~al.(2023)Kim, Kim, Yu, and Chun]{kim2023bpipe}
+Taebum Kim, Hyoungjoo Kim, Gyeong-In Yu, and Byung-Gon Chun.
+\newblock Bpipe: Memory-balanced pipeline parallelism for training large language models.
+\newblock In \emph{International Conference on Machine Learning}, pages 16639--16653. PMLR, 2023.
+
+\bibitem[Korthikanti et~al.(2023)Korthikanti, Casper, Lym, McAfee, Andersch, Shoeybi, and Catanzaro]{korthikanti2023reducing}
+Vijay~Anand Korthikanti, Jared Casper, Sangkug Lym, Lawrence McAfee, Michael Andersch, Mohammad Shoeybi, and Bryan Catanzaro.
+\newblock Reducing activation recomputation in large transformer models.
+\newblock \emph{Proceedings of Machine Learning and Systems}, 5, 2023.
+
+\bibitem[Li and Hoefler(2021)]{li2021chimera}
+Shigang Li and Torsten Hoefler.
+\newblock Chimera: efficiently training large-scale neural networks with bidirectional pipelines.
+\newblock In \emph{Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis}, pages 1--14, 2021.
+
+\bibitem[Lian et~al.(2018)Lian, Zhang, Zhang, and Liu]{lian2018asynchronous}
+Xiangru Lian, Wei Zhang, Ce~Zhang, and Ji~Liu.
+\newblock Asynchronous decentralized parallel stochastic gradient descent.
+\newblock In \emph{International Conference on Machine Learning}, pages 3043--3052. PMLR, 2018.
+
+\bibitem[Liu et~al.(2023)Liu, Cheng, Zhou, and You]{Liu2023HanayoHW}
+Ziming Liu, Shenggan Cheng, Hao Zhou, and Yang You.
+\newblock Hanayo: Harnessing wave-like pipeline parallelism for enhanced large model training efficiency.
+\newblock \emph{The International Conference for High Performance Computing, Networking, Storage, and Analysis}, pages 1--13, 2023.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:261339639}.
+
+\bibitem[Narayanan et~al.(2021)Narayanan, Shoeybi, Casper, LeGresley, Patwary, Korthikanti, Vainbrand, Kashinkunti, Bernauer, Catanzaro, et~al.]{narayanan2021efficient}
+Deepak Narayanan, Mohammad Shoeybi, Jared Casper, Patrick LeGresley, Mostofa Patwary, Vijay Korthikanti, Dmitri Vainbrand, Prethvi Kashinkunti, Julie Bernauer, Bryan Catanzaro, et~al.
+\newblock Efficient large-scale language model training on gpu clusters using megatron-lm.
+\newblock In \emph{Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis}, pages 1--15, 2021.
+
+\bibitem[Qi et~al.(2023)Qi, Wan, Huang, and Lin]{qi2023zero}
+Penghui Qi, Xinyi Wan, Guangxing Huang, and Min Lin.
+\newblock Zero bubble pipeline parallelism.
+\newblock In \emph{The Twelfth International Conference on Learning Representations}, 2023.
+
+\bibitem[Shoeybi et~al.(2019)Shoeybi, Patwary, Puri, LeGresley, Casper, and Catanzaro]{shoeybi2019megatron}
+Mohammad Shoeybi, Mostofa Patwary, Raul Puri, Patrick LeGresley, Jared Casper, and Bryan Catanzaro.
+\newblock Megatron-lm: Training multi-billion parameter language models using model parallelism.
+\newblock \emph{arXiv preprint arXiv:1909.08053}, 2019.
+
+\bibitem[Tang et~al.(2020)Tang, Shi, Wang, Li, and Chu]{tang2020communication}
+Zhenheng Tang, Shaohuai Shi, Wei Wang, Bo~Li, and Xiaowen Chu.
+\newblock Communication-efficient distributed deep learning: A comprehensive survey.
+\newblock \emph{arXiv preprint arXiv:2003.06307}, 2020.
+
+\bibitem[Yang et~al.(2021)Yang, Zhang, Li, R{\'e}, Aberger, and De~Sa]{yang2021pipemare}
+Bowen Yang, Jian Zhang, Jonathan Li, Christopher R{\'e}, Christopher Aberger, and Christopher De~Sa.
+\newblock Pipemare: Asynchronous pipeline parallel dnn training.
+\newblock \emph{Proceedings of Machine Learning and Systems}, 3:\penalty0 269--296, 2021.
+
+\bibitem[Zheng et~al.(2022)Zheng, Li, Zhang, Zhuang, Chen, Huang, Wang, Xu, Zhuo, Xing, et~al.]{zheng2022alpa}
+Lianmin Zheng, Zhuohan Li, Hao Zhang, Yonghao Zhuang, Zhifeng Chen, Yanping Huang, Yida Wang, Yuanzhong Xu, Danyang Zhuo, Eric~P Xing, et~al.
+\newblock Alpa: Automating inter-and $\{$Intra-Operator$\}$ parallelism for distributed deep learning.
+\newblock In \emph{16th USENIX Symposium on Operating Systems Design and Implementation (OSDI 22)}, pages 559--578, 2022.
+
+\bibitem[Zhuang et~al.(2023)Zhuang, Zheng, Li, Xing, Ho, Gonzalez, Stoica, Zhang, and Zhao]{zhuang2023optimizing}
+Yonghao Zhuang, Lianmin Zheng, Zhuohan Li, Eric Xing, Qirong Ho, Joseph Gonzalez, Ion Stoica, Hao Zhang, and Hexu Zhao.
+\newblock On optimizing the communication of model parallelism.
+\newblock \emph{Proceedings of Machine Learning and Systems}, 5, 2023.
+
+\end{thebibliography}

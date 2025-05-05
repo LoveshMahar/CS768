@@ -1,0 +1,479 @@
+%% Differential Privacy citations
+
+% Strong composition
+
+@article{kairouz2017composition,
+  title={The composition theorem for differential privacy},
+  author={Kairouz, Peter and Oh, Sewoong and Viswanath, Pramod},
+  journal={IEEE Transactions on Information Theory},
+  volume={63},
+  number={6},
+  pages={4037--4049},
+  year={2017},
+  publisher={IEEE}
+}
+
+% GDP
+
+@article{dong2019gaussian,
+  title={Gaussian differential privacy},
+  author={Dong, Jinshuo and Roth, Aaron and Su, Weijie J},
+  journal={arXiv preprint arXiv:1905.02383},
+  year={2019}
+}
+
+@article{bu2020deep,
+  title={Deep learning with Gaussian differential privacy},
+  author={Bu, Zhiqi and Dong, Jinshuo and Long, Qi and Su, Weijie J},
+  journal={Harvard data science review},
+  volume={2020},
+  number={23},
+  year={2020},
+  publisher={NIH Public Access}
+}
+
+% Foundations of DP
+
+@article{dwork2014algorithmic,
+  title={The algorithmic foundations of differential privacy},
+  author={Dwork, Cynthia and Roth, Aaron and others},
+  journal={Foundations and Trends{\textregistered} in Theoretical Computer Science},
+  volume={9},
+  number={3--4},
+  pages={211--407},
+  year={2014},
+  publisher={Now Publishers, Inc.}
+}
+
+@inproceedings{dwork2006calibrating,
+  title={Calibrating noise to sensitivity in private data analysis},
+  author={Dwork, Cynthia and McSherry, Frank and Nissim, Kobbi and Smith, Adam},
+  booktitle={Theory of cryptography conference},
+  pages={265--284},
+  year={2006},
+  organization={Springer}
+}
+
+% Motivating examples
+
+@article{carlini2018secret,
+  title={The secret sharer: Measuring unintended neural network memorization \& extracting secrets},
+  author={Carlini, Nicholas and Liu, Chang and Kos, Jernej and Erlingsson, {\'U}lfar and Song, Dawn},
+  year={2018}
+}
+
+@inproceedings{melis2019exploiting,
+  title={Exploiting unintended feature leakage in collaborative learning},
+  author={Melis, Luca and Song, Congzheng and De Cristofaro, Emiliano and Shmatikov, Vitaly},
+  booktitle={2019 IEEE Symposium on Security and Privacy (SP)},
+  pages={691--706},
+  year={2019},
+  organization={IEEE}
+}
+
+% Fairness and privacy
+
+@inproceedings{cummings2019compatibility,
+  title={On the compatibility of privacy and fairness},
+  author={Cummings, Rachel and Gupta, Varun and Kimpara, Dhamma and Morgenstern, Jamie},
+  booktitle={Adjunct Publication of the 27th Conference on User Modeling, Adaptation and Personalization},
+  pages={309--315},
+  year={2019}
+}
+
+@article{bagdasaryan2019differential,
+  title={Differential privacy has disparate impact on model accuracy},
+  author={Bagdasaryan, Eugene and Shmatikov, Vitaly},
+  journal={arXiv preprint arXiv:1905.12101},
+  year={2019}
+}
+
+% Parameter tuning
+
+@inproceedings{liu2019private,
+  title={Private selection from private candidates},
+  author={Liu, Jingcheng and Talwar, Kunal},
+  booktitle={Proceedings of the 51st Annual ACM SIGACT Symposium on Theory of Computing},
+  pages={298--309},
+  year={2019}
+}
+
+@inproceedings{kusner2015differentially,
+  title={Differentially private Bayesian optimization},
+  author={Kusner, Matt and Gardner, Jacob and Garnett, Roman and Weinberger, Kilian},
+  booktitle={International conference on machine learning},
+  pages={918--927},
+  year={2015},
+  organization={PMLR}
+}
+% ---------------------
+
+% Decision Trees
+@book{breiman1984classification,
+  title={Classification and regression trees},
+  author={Breiman, Leo and Friedman, Jerome and Stone, Charles J and Olshen, Richard A},
+  year={1984},
+  publisher={CRC press}
+}
+
+% DPBoost
+@inproceedings{li2020privacy,
+  title={Privacy-Preserving Gradient Boosting Decision Trees},
+  author={Li, Qinbin and Wu, Zhaomin and Wen, Zeyi and He, Bingsheng},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={34},
+  number={01},
+  pages={784--791},
+  year={2020}
+}
+
+% LightGBM (which DPBoost builds on top of)
+@inproceedings{ke2017lightgbm,
+  title={Lightgbm: A highly efficient gradient boosting decision tree},
+  author={Ke, Guolin and Meng, Qi and Finley, Thomas and Wang, Taifeng and Chen, Wei and Ma, Weidong and Ye, Qiwei and Liu, Tie-Yan},
+  booktitle={Advances in neural information processing systems},
+  pages={3146--3154},
+  year={2017}
+}
+
+% XGBoost
+@inproceedings{chen2016xgboost,
+  title={Xgboost: A scalable tree boosting system},
+  author={Chen, Tianqi and Guestrin, Carlos},
+  booktitle={Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining},
+  pages={785--794},
+  year={2016}
+}
+
+%Random Forest
+@article{breiman2001random,
+  title={Random forests},
+  author={Breiman, Leo},
+  journal={Machine learning},
+  volume={45},
+  number={1},
+  pages={5--32},
+  year={2001},
+  publisher={Springer}
+}
+% ---------------------
+
+% DP Decision Tree Algorithms
+
+% Random Trees
+@article{geurts2006extremely,
+  title={Extremely randomized trees},
+  author={Geurts, Pierre and Ernst, Damien and Wehenkel, Louis},
+  journal={Machine learning},
+  volume={63},
+  number={1},
+  pages={3--42},
+  year={2006},
+  publisher={Springer}
+}
+
+% Calculate splits with budget
+@article{wangscalable,
+  title={Scalable and provably accurate algorithms for differentially private distributed decision tree learning},
+  author={Wang, Kai Wen and Dick, Travis and Balcan, Maria-Florina}
+}
+
+% Learn features and nodes randomly, choose split points with budget
+@inproceedings{jagannathan2009practical,
+  title={A practical differentially private random decision tree classifier},
+  author={Jagannathan, Geetha and Pillaipakkamnatt, Krishnan and Wright, Rebecca N},
+  booktitle={2009 IEEE International Conference on Data Mining Workshops},
+  pages={114--121},
+  year={2009},
+  organization={IEEE}
+}
+
+% Spend budget on trees again
+@article{fletcher2015differentially,
+  title={A Differentially Private Decision Forest.},
+  author={Fletcher, Sam and Islam, Md Zahidul},
+  journal={AusDM},
+  volume={15},
+  pages={99--108},
+  year={2015}
+}
+
+@article{fletcher2019decision,
+  title={Decision tree classification with differential privacy: A survey},
+  author={Fletcher, Sam and Islam, Md Zahidul},
+  journal={ACM Computing Surveys (CSUR)},
+  volume={52},
+  number={4},
+  pages={1--33},
+  year={2019},
+  publisher={ACM New York, NY, USA}
+}
+
+% DP Linear Regression: 
+
+@article{sheffet2015private,
+  title={Private approximations of the 2nd-moment matrix using existing techniques in linear regression},
+  author={Sheffet, Or},
+  journal={arXiv preprint arXiv:1507.00056},
+  year={2015}
+}
+
+% Algorithmic description of linear regression
+@inproceedings{imtiaz2016symmetric,
+  title={Symmetric matrix perturbation for differentially-private principal component analysis},
+  author={Imtiaz, Hafiz and Sarwate, Anand D},
+  booktitle={2016 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={2339--2343},
+  year={2016},
+  organization={IEEE}
+}
+
+% Algorithmic description of logistic regression
+@article{chaudhuri2011differentially,
+  title={Differentially private empirical risk minimization},
+  author={Chaudhuri, Kamalika and Monteleoni, Claire and Sarwate, Anand D},
+  journal={Journal of Machine Learning Research},
+  volume={12},
+  number={Mar},
+  pages={1069--1109},
+  year={2011}
+}
+
+%  Software implementation of linear/logistic regression
+@misc{ibm2019diffprivlib,
+  author = {Holohan, Naoise},
+  title = {Diffprivlib: The IBM Differential Privacy Library},
+  year = {2019},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/IBM/differential-privacy-library}}
+}
+% ---------------------
+
+%% GAM/EBM citations
+@book{hastie1990generalized,
+  title={Generalized additive models},
+  author={Hastie, Trevor J and Tibshirani, Robert J},
+  volume={43},
+  year={1990},
+  publisher={CRC press}
+}
+
+% Original cyclic boosting definition
+@inproceedings{lou2012intelligible,
+  title={Intelligible models for classification and regression},
+  author={Lou, Yin and Caruana, Rich and Gehrke, Johannes},
+  booktitle={Proceedings of the 18th ACM SIGKDD international conference on Knowledge discovery and data mining},
+  pages={150--158},
+  year={2012}
+}
+
+% Pairwise interaction desrcription [Future Work]
+@inproceedings{lou2013accurate,
+  title={Accurate intelligible models with pairwise interactions},
+  author={Lou, Yin and Caruana, Rich and Gehrke, Johannes and Hooker, Giles},
+  booktitle={Proceedings of the 19th ACM SIGKDD international conference on Knowledge discovery and data mining},
+  pages={623--631},
+  year={2013}
+}
+
+% Application in medicine
+@inproceedings{caruana2015intelligible,
+  title={Intelligible models for healthcare: Predicting pneumonia risk and hospital 30-day readmission},
+  author={Caruana, Rich and Lou, Yin and Gehrke, Johannes and Koch, Paul and Sturm, Marc and Elhadad, Noemie},
+  booktitle={Proceedings of the 21th ACM SIGKDD international conference on knowledge discovery and data mining},
+  pages={1721--1730},
+  year={2015}
+}
+
+% Modern EBM description + software implementation
+@article{nori2019interpretml,
+  title={InterpretML: A Unified Framework for Machine Learning Interpretability},
+  author={Nori, Harsha and Jenkins, Samuel and Koch, Paul and Caruana, Rich},
+  journal={arXiv preprint arXiv:1909.09223},
+  year={2019}
+}
+
+% Multiclass EBMs [future work]
+@article{zhang2019interpretability,
+  title={Interpretability is Harder in the Multiclass Setting: Axiomatic Interpretability for Multiclass Additive Models},
+  author={Zhang, Xuezhou and Tan, Sarah and Koch, Paul and Lou, Yin and Chajewska, Urszula and Caruana, Rich},
+  journal={age},
+  volume={25},
+  number={50},
+  pages={75--100},
+  year={2019}
+}
+
+% ---------------------
+
+% Interpretability
+
+% Best glassbox models perform as well as blackbox ones
+@article{wang2020pursuit,
+  title={In Pursuit of Interpretable, Fair and Accurate Machine Learning for Criminal Recidivism Prediction},
+  author={Wang, Caroline and Han, Bin and Patel, Bhrij and Mohideen, Feroze and Rudin, Cynthia},
+  journal={arXiv preprint arXiv:2005.04176},
+  year={2020}
+}
+
+% Espouses glassbox models
+@article{rudin2019stop,
+  title={Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead},
+  author={Rudin, Cynthia},
+  journal={Nature Machine Intelligence},
+  volume={1},
+  number={5},
+  pages={206--215},
+  year={2019},
+  publisher={Nature Publishing Group}
+}
+
+% For distilling blackboxes into private, interpretable models
+@inproceedings{tan2018distill,
+  title={Distill-and-compare: Auditing black-box models using transparent model distillation},
+  author={Tan, Sarah and Caruana, Rich and Hooker, Giles and Lou, Yin},
+  booktitle={Proceedings of the 2018 AAAI/ACM Conference on AI, Ethics, and Society},
+  pages={303--310},
+  year={2018}
+}
+
+% Benchmark against NN alternative
+@article{agarwal2020neural,
+  title={Neural additive models: Interpretable machine learning with neural nets},
+  author={Agarwal, Rishabh and Frosst, Nicholas and Zhang, Xuezhou and Caruana, Rich and Hinton, Geoffrey E},
+  journal={arXiv preprint arXiv:2004.13912},
+  year={2020}
+}
+
+% Extend to multiclass
+@inproceedings{zhang2019axiomatic,
+  title={Axiomatic Interpretability for Multiclass Additive Models},
+  author={Zhang, Xuezhou and Tan, Sarah and Koch, Paul and Lou, Yin and Chajewska, Urszula and Caruana, Rich},
+  booktitle={Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  pages={226--234},
+  year={2019}
+}
+
+% Extend to other Depth-1 tree GAMs
+@article{chang2020interpretable,
+  title={How Interpretable and Trustworthy are GAMs?},
+  author={Chang, Chun-Hao and Tan, Sarah and Lengerich, Ben and Goldenberg, Anna and Caruana, Rich},
+  journal={arXiv preprint arXiv:2006.06466},
+  year={2020}
+}
+
+% LIME/SHAP/PDP? 
+
+@inproceedings{lundberg2017unified,
+  title={A unified approach to interpreting model predictions},
+  author={Lundberg, Scott M and Lee, Su-In},
+  booktitle={Advances in neural information processing systems},
+  pages={4765--4774},
+  year={2017}
+}
+
+%---------- Datasets ---------
+@misc{Dua:2019 ,
+author = "Dua, Dheeru and Graff, Casey",
+year = "2017",
+title = "{UCI} Machine Learning Repository",
+url = "http://archive.ics.uci.edu/ml",
+institution = "University of California, Irvine, School of Information and Computer Sciences" } 
+
+%---------- Other ------------
+
+% Isotonic Regression
+
+@article{vaneeden1958testing,
+  title={Testing and estimating ordered parameters of probability distribution},
+  author={vanEeden, Constance},
+  year={1958}
+}
+
+@article{chakravarti1989isotonic,
+  title={Isotonic median regression: a linear programming approach},
+  author={Chakravarti, Nilotpal},
+  journal={Mathematics of operations research},
+  volume={14},
+  number={2},
+  pages={303--308},
+  year={1989},
+  publisher={INFORMS}
+}
+
+% Software? Scikit-learn, plotly, etc.
+
+@online{plotly, author = {Plotly Technologies Inc.}, title = {Collaborative data science}, publisher = {Plotly Technologies Inc.}, address = {Montreal, QC}, year = {2015}, url = {https://plot.ly} }
+
+@inproceedings{sklearn_api,
+  author    = {Lars Buitinck and Gilles Louppe and Mathieu Blondel and
+               Fabian Pedregosa and Andreas Mueller and Olivier Grisel and
+               Vlad Niculae and Peter Prettenhofer and Alexandre Gramfort
+               and Jaques Grobler and Robert Layton and Jake VanderPlas and
+               Arnaud Joly and Brian Holt and Ga{\"{e}}l Varoquaux},
+  title     = {{API} design for machine learning software: experiences from the scikit-learn
+               project},
+  booktitle = {ECML PKDD Workshop: Languages for Data Mining and Machine Learning},
+  year      = {2013},
+  pages = {108--122},
+}
+
+@article{scikit-learn,
+ title={Scikit-learn: Machine Learning in {P}ython},
+ author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+ journal={Journal of Machine Learning Research},
+ volume={12},
+ pages={2825--2830},
+ year={2011}
+}
+
+@Article{         harris2020array,
+ title         = {Array programming with {NumPy}},
+ author        = {Charles R. Harris and K. Jarrod Millman and St{\'{e}}fan J.
+                 van der Walt and Ralf Gommers and Pauli Virtanen and David
+                 Cournapeau and Eric Wieser and Julian Taylor and Sebastian
+                 Berg and Nathaniel J. Smith and Robert Kern and Matti Picus
+                 and Stephan Hoyer and Marten H. van Kerkwijk and Matthew
+                 Brett and Allan Haldane and Jaime Fern{\'{a}}ndez del
+                 R{\'{i}}o and Mark Wiebe and Pearu Peterson and Pierre
+                 G{\'{e}}rard-Marchant and Kevin Sheppard and Tyler Reddy and
+                 Warren Weckesser and Hameer Abbasi and Christoph Gohlke and
+                 Travis E. Oliphant},
+ year          = {2020},
+ month         = sep,
+ journal       = {Nature},
+ volume        = {585},
+ number        = {7825},
+ pages         = {357--362},
+ doi           = {10.1038/s41586-020-2649-2},
+ publisher     = {Springer Science and Business Media {LLC}},
+ url           = {https://doi.org/10.1038/s41586-020-2649-2}
+}
+
+@ARTICLE{2020SciPy-NMeth,
+  author  = {Virtanen, Pauli and Gommers, Ralf and Oliphant, Travis E. and
+            Haberland, Matt and Reddy, Tyler and Cournapeau, David and
+            Burovski, Evgeni and Peterson, Pearu and Weckesser, Warren and
+            Bright, Jonathan and {van der Walt}, St{\'e}fan J. and
+            Brett, Matthew and Wilson, Joshua and Millman, K. Jarrod and
+            Mayorov, Nikolay and Nelson, Andrew R. J. and Jones, Eric and
+            Kern, Robert and Larson, Eric and Carey, C J and
+            Polat, {\.I}lhan and Feng, Yu and Moore, Eric W. and
+            {VanderPlas}, Jake and Laxalde, Denis and Perktold, Josef and
+            Cimrman, Robert and Henriksen, Ian and Quintero, E. A. and
+            Harris, Charles R. and Archibald, Anne M. and
+            Ribeiro, Ant{\^o}nio H. and Pedregosa, Fabian and
+            {van Mulbregt}, Paul and {SciPy 1.0 Contributors}},
+  title   = {{{SciPy} 1.0: Fundamental Algorithms for Scientific
+            Computing in Python}},
+  journal = {Nature Methods},
+  year    = {2020},
+  volume  = {17},
+  pages   = {261--272},
+  adsurl  = {https://rdcu.be/b08Wh},
+  doi     = {10.1038/s41592-019-0686-2},
+}

@@ -1,0 +1,21 @@
+We study the cluster recovery problem in the semi-supervised active
+clustering framework. Given a finite set of input points, and an oracle
+revealing whether any two points lie in the same cluster, our goal is to
+recover all clusters exactly using as few queries as possible. To this end, we
+relax the spherical $k$-means cluster assumption of Ashtiani et al.\ to allow
+for arbitrary ellipsoidal clusters with margin. This removes the assumption
+that the clustering is center-based (i.e., defined through an optimization
+problem), and includes all those cases where spherical clusters are
+individually transformed by any combination of rotations, axis scalings, and
+point deletions. We show that, even in this much more general setting, it is
+still possible to recover the latent clustering exactly using a number of
+queries that scales only logarithmically with the number of input points. More
+precisely, we design an algorithm that, given $n$ points to be partitioned into
+$k$ clusters, uses $O(k^3 \ln k \ln n)$ oracle queries and $\tilde{O}(kn +
+k^3)$ time to recover the clustering with zero misclassification error. The
+$O(\cdot)$ notation hides an exponential dependence on the dimensionality of
+the clusters, which we show to be necessary thus characterizing the query
+complexity of the problem. Our algorithm is simple, easy to implement, and can
+also learn the clusters using low-stretch separators, a class of ellipsoids
+with additional theoretical guarantees. Experiments on large synthetic datasets
+confirm that we can reconstruct clusterings exactly and efficiently.

@@ -1,0 +1,1148 @@
+
+@article{deng_adaptive_2020,
+	title = {Adaptive {Personalized} {Federated} {Learning}},
+	url = {http://arxiv.org/abs/2003.13461},
+	abstract = {Investigation of the degree of personalization in federated learning algorithms has shown that only maximizing the performance of the global model will confine the capacity of the local models to personalize. In this paper, we advocate an adaptive personalized federated learning (APFL) algorithm, where each client will train their local models while contributing to the global model. Theoretically, we show that the mixture of local and global models can reduce the generalization error, using the multi-domain learning theory. We also prop?ose a communication-reduced bilevel optimization method, which reduces the communication rounds to O( T ) and show that under strong convexity and smoothness assumptions, the proposed algorithm can achieve a convergence rate of O(1/T ) with some residual error. The residual error is related to the gradient diversity among local models, and the gap between optimal local and global models.},
+	language = {en},
+	urldate = {2020-04-10},
+	journal = {arXiv:2003.13461 [cs, stat]},
+	author = {Deng, Yuyang and Kamani, Mohammad Mahdi and Mahdavi, Mehrdad},
+	month = mar,
+	year = {2020},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 2003.13461}
+}
+
+@article{almeida_djam_2018,
+	title = {{DJAM}: {Distributed} {Jacobi} {Asynchronous} {Method} for {Learning} {Personal} {Models}},
+	volume = {25},
+	issn = {1558-2361},
+	shorttitle = {{DJAM}},
+	doi = {10.1109/LSP.2018.2859596},
+	abstract = {Processing data collected by a network of agents often boils down to solving an optimization problem. The distributed nature of these problems calls for methods that are, themselves, distributed. While most collaborative learning problems require agents to reach a common (or consensus) model, there are situations in which the consensus solution may not be optimal. For instance, agents may want to reach a compromise between agreeing with their neighbors and minimizing a personal loss function. We present DJAM, a Jacobi-like distributed algorithm for learning personalized models. This method is implementation-friendly: it has no hyperparameters that need tuning, it is asynchronous, and its updates only require single-neighbor interactions. We prove that DJAM converges with probability one to the solution, provided that the personal loss functions are strongly convex and have Lipschitz gradient. We then give evidence that DJAM is on par with state-of-the-art methods: our method reaches a solution with error similar to the error of a carefully tuned alternating direction method of multipliers (ADMM) in about the same number of single-neighbor interactions.},
+	number = {9},
+	journal = {IEEE Signal Processing Letters},
+	author = {Almeida, In{\^e}s and Xavier, Jo{\~a}o},
+	month = sep,
+	year = {2018},
+	keywords = {optimisation, Signal processing algorithms, Convergence, optimization, learning (artificial intelligence), distributed computing, carefully tuned alternating direction method, collaborative learning problems, Collaborative work, consensus solution, data handling, distributed algorithms, Distributed algorithms, distributed Jacobi asynchronous method, DJAM, Jacobi-like distributed algorithm, Jacobian matrices, multi-agent systems, Nickel, Optimization, optimization problem, personal loss function, personalized models, probability, processing data, Radio frequency, single-neighbor interactions},
+	pages = {1389--1392},
+	annote = {Conference Name: IEEE Signal Processing Letters}
+}
+
+@article{wu_personalized_2020,
+	title = {Personalized {Federated} {Learning} for {Intelligent} {IoT} {Applications}: {A} {Cloud}-{Edge} based {Framework}},
+	shorttitle = {Personalized {Federated} {Learning} for {Intelligent} {IoT} {Applications}},
+	url = {http://arxiv.org/abs/2002.10671},
+	abstract = {Internet of Things (IoT) have widely penetrated in different aspects of modern life and many intelligent IoT services and applications are emerging. Recently, federated learning is proposed to train a globally shared model by exploiting a massive amount of user-generated data samples on IoT devices while preventing data leakage. However, the device, statistical and model heterogeneities inherent in the complex IoT environments pose great challenges to traditional federated learning, making it unsuitable to be directly deployed. In this article we advocate a personalized federated learning framework in a cloud-edge architecture for intelligent IoT applications. To cope with the heterogeneity issues in IoT environments, we investigate emerging personalized federated learning methods which are able to mitigate the negative effects caused by heterogeneities in different aspects. With the power of edge computing, the requirements for fast-processing capacity and low latency in intelligent IoT applications can also be achieved. We finally provide a case study of IoT based human activity recognition to demonstrate the effectiveness of personalized federated learning for intelligent IoT applications.},
+	language = {en},
+	urldate = {2020-04-10},
+	journal = {arXiv:2002.10671 [cs]},
+	author = {Wu, Qiong and He, Kaiwen and Chen, Xu},
+	month = mar,
+	year = {2020},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Computer Science - Machine Learning, Computer Science - Networking and Internet Architecture},
+	annote = {arXiv: 2002.10671},
+	annote = {Comment: Submitted for review}
+}
+
+@article{ben-david_analysis_nodate,
+	title = {Analysis of {Representations} for {Domain} {Adaptation}},
+	abstract = {Discriminative learning methods for classification perform well when training and test data are drawn from the same distribution. In many situations, though, we have labeled training data for a source domain, and we wish to learn a classifier which performs well on a target domain with a different distribution. Under what conditions can we adapt a classifier trained on the source domain for use in the target domain? Intuitively, a good feature representation is a crucial factor in the success of domain adaptation. We formalize this intuition theoretically with a generalization bound for domain adaption. Our theory illustrates the tradeoffs inherent in designing a representation for domain adaptation and gives a new justification for a recently proposed model. It also points toward a promising new model for domain adaptation: one which explicitly minimizes the difference between the source and target domains, while at the same time maximizing the margin of the training set.},
+	language = {en},
+	author = {Ben-David, Shai and Blitzer, John and Crammer, Koby and Pereira, Fernando},
+	pages = {8}
+}
+
+@article{bellet_personalized_2018,
+	title = {Personalized and {Private} {Peer}-to-{Peer} {Machine} {Learning}},
+	url = {http://arxiv.org/abs/1705.08435},
+	abstract = {The rise of connected personal devices together with privacy concerns call for machine learning algorithms capable of leveraging the data of a large number of agents to learn personalized models under strong privacy requirements. In this paper, we introduce an efficient algorithm to address the above problem in a fully decentralized (peer-to-peer) and asynchronous fashion, with provable convergence rate. We show how to make the algorithm differentially private to protect against the disclosure of information about the personal datasets, and formally analyze the trade-off between utility and privacy. Our experiments show that our approach dramatically outperforms previous work in the non-private case, and that under privacy constraints, we can significantly improve over models learned in isolation.},
+	language = {en},
+	urldate = {2020-04-10},
+	journal = {arXiv:1705.08435 [cs, stat]},
+	author = {Bellet, Aur{\'e}lien and Guerraoui, Rachid and Taziki, Mahsa and Tommasi, Marc},
+	month = feb,
+	year = {2018},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Computer Science - Machine Learning, Computer Science - Cryptography and Security, Electrical Engineering and Systems Science - Systems and Control},
+	annote = {arXiv: 1705.08435},
+	annote = {Comment: 20 pages, to appear in the Proceedings of the 21st International Conference on Artificial Intelligence and Statistics (AISTATS 2018)}
+}
+
+@article{ben-david_theory_2010,
+	title = {A theory of learning from different domains},
+	volume = {79},
+	issn = {1573-0565},
+	url = {https://doi.org/10.1007/s10994-009-5152-4},
+	doi = {10.1007/s10994-009-5152-4},
+	abstract = {Discriminative learning methods for classification perform well when training and test data are drawn from the same distribution. Often, however, we have plentiful labeled training data from a source domain but wish to learn a classifier which performs well on a target domain with a different distribution and little or no labeled training data. In this work we investigate two questions. First, under what conditions can a classifier trained from source data be expected to perform well on target data? Second, given a small amount of labeled target data, how should we combine it during training with the large amount of labeled source data to achieve the lowest target error at test time?},
+	language = {en},
+	number = {1},
+	urldate = {2020-04-10},
+	journal = {Mach Learn},
+	author = {Ben-David, Shai and Blitzer, John and Crammer, Koby and Kulesza, Alex and Pereira, Fernando and Vaughan, Jennifer Wortman},
+	month = may,
+	year = {2010},
+	pages = {151--175}
+}
+
+@article{boucheron_concentration_nodate,
+	title = {Concentration {Inequalities}},
+	abstract = {Concentration inequalities deal with deviations of functions of independent random variables from their expectation. In the last decade new tools have been introduced making it possible to establish simple and powerful inequalities. These inequalities are at the heart of the mathematical analysis of various problems in machine learning and made it possible to derive new efficient algorithms. This text attempts to summarize some of the basic tools.},
+	language = {en},
+	author = {Boucheron, Stephane and Lugosi, Gabor and Bousquet, Olivier},
+	pages = {33}
+}
+
+@article{crammer_learning_2008,
+	title = {Learning from {Multiple} {Sources}},
+	volume = {9},
+	issn = {ISSN 1533-7928},
+	url = {http://www.jmlr.org/papers/v9/crammer08a.html},
+	number = {Aug},
+	urldate = {2020-04-10},
+	journal = {Journal of Machine Learning Research},
+	author = {Crammer, Koby and Kearns, Michael and Wortman, Jennifer},
+	year = {2008},
+	pages = {1757--1774}
+}
+
+@incollection{dean_large_2012,
+	title = {Large {Scale} {Distributed} {Deep} {Networks}},
+	url = {http://papers.nips.cc/paper/4687-large-scale-distributed-deep-networks.pdf},
+	urldate = {2020-04-10},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems} 25},
+	publisher = {Curran Associates, Inc.},
+	author = {Dean, Jeffrey and Corrado, Greg and Monga, Rajat and Chen, Kai and Devin, Matthieu and Mao, Mark and Ranzato, Marc{\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextquotesingle aurelio and Senior, Andrew and Tucker, Paul and Yang, Ke and Le, Quoc V. and Ng, Andrew Y.},
+	editor = {Pereira, F. and Burges, C. J. C. and Bottou, L. and Weinberger, K. Q.},
+	year = {2012},
+	pages = {1223--1231}
+}
+
+@article{fallah_personalized_2020,
+	title = {Personalized {Federated} {Learning}: {A} {Meta}-{Learning} {Approach}},
+	shorttitle = {Personalized {Federated} {Learning}},
+	url = {http://arxiv.org/abs/2002.07948},
+	abstract = {The goal of federated learning is to design algorithms in which several agents communicate with a central node, in a privacy-protecting manner, to minimize the average of their loss functions. In this approach, each node not only shares the required computational budget but also has access to a larger data set, which improves the quality of the resulting model. However, this method only develops a common output for all the agents, and therefore, does not adapt the model to each user data. This is an important missing feature especially given the heterogeneity of the underlying data distribution for various agents. In this paper, we study a personalized variant of the federated learning in which our goal is to find a shared initial model in a distributed manner that can be slightly updated by either a current or a new user by performing one or a few steps of gradient descent with respect to its own loss function. This approach keeps all the benefits of the federated learning architecture while leading to a more personalized model for each user. We show this problem can be studied within the Model-Agnostic Meta-Learning (MAML) framework. Inspired by this connection, we propose a personalized variant of the well-known Federated Averaging algorithm and evaluate its performance in terms of gradient norm for non-convex loss functions. Further, we characterize how this performance is affected by the closeness of underlying distributions of user data, measured in terms of distribution distances such as Total Variation and 1-Wasserstein metric.},
+	language = {en},
+	urldate = {2020-04-10},
+	journal = {arXiv:2002.07948 [cs, math, stat]},
+	author = {Fallah, Alireza and Mokhtari, Aryan and Ozdaglar, Asuman},
+	month = feb,
+	year = {2020},
+	keywords = {Statistics - Machine Learning, Mathematics - Optimization and Control, Computer Science - Machine Learning},
+	annote = {arXiv: 2002.07948}
+}
+
+@article{finn_model-agnostic_2017,
+	title = {Model-{Agnostic} {Meta}-{Learning} for {Fast} {Adaptation} of {Deep} {Networks}},
+	url = {http://arxiv.org/abs/1703.03400},
+	abstract = {We propose an algorithm for meta-learning that is model-agnostic, in the sense that it is compatible with any model trained with gradient descent and applicable to a variety of different learning problems, including classification, regression, and reinforcement learning. The goal of meta-learning is to train a model on a variety of learning tasks, such that it can solve new learning tasks using only a small number of training samples. In our approach, the parameters of the model are explicitly trained such that a small number of gradient steps with a small amount of training data from a new task will produce good generalization performance on that task. In effect, our method trains the model to be easy to fine-tune. We demonstrate that this approach leads to state-of-the-art performance on two fewshot image classification benchmarks, produces good results on few-shot regression, and accelerates fine-tuning for policy gradient reinforcement learning with neural network policies.},
+	language = {en},
+	urldate = {2020-04-10},
+	journal = {arXiv:1703.03400 [cs]},
+	author = {Finn, Chelsea and Abbeel, Pieter and Levine, Sergey},
+	month = jul,
+	year = {2017},
+	keywords = {Computer Science - Machine Learning, Computer Science - Artificial Intelligence, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Neural and Evolutionary Computing},
+	annote = {arXiv: 1703.03400},
+	annote = {Comment: ICML 2017. Code at https://github.com/cbfinn/maml, Videos of RL results at https://sites.google.com/view/maml, Blog post at http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/}
+}
+
+@article{dean_large_nodate,
+	title = {Large {Scale} {Distributed} {Deep} {Networks}},
+	abstract = {Recent work in unsupervised feature learning and deep learning has shown that being able to train large models can dramatically improve performance. In this paper, we consider the problem of training a deep network with billions of parameters using tens of thousands of CPU cores. We have developed a software framework called DistBelief that can utilize computing clusters with thousands of machines to train large models. Within this framework, we have developed two algorithms for large-scale distributed training: (i) Downpour SGD, an asynchronous stochastic gradient descent procedure supporting a large number of model replicas, and (ii) Sandblaster, a framework that supports a variety of distributed batch optimization procedures, including a distributed implementation of L-BFGS. Downpour SGD and Sandblaster L-BFGS both increase the scale and speed of deep network training. We have successfully used our system to train a deep network 30x larger than previously reported in the literature, and achieves state-of-the-art performance on ImageNet, a visual object recognition task with 16 million images and 21k categories. We show that these same techniques dramatically accelerate the training of a more modestly- sized deep network for a commercial speech recognition service. Although we focus on and report performance of these methods as applied to training large neural networks, the underlying algorithms are applicable to any gradient-based machine learning algorithm.},
+	language = {en},
+	author = {Dean, Jeffrey and Corrado, Greg and Monga, Rajat and Chen, Kai and Devin, Matthieu and Mao, Mark and Ranzato, Marc'aurelio and Senior, Andrew and Tucker, Paul and Yang, Ke and Le, Quoc V and Ng, Andrew Y},
+	pages = {9}
+}
+
+@article{haddadpour_convergence_2019,
+	title = {On the {Convergence} of {Local} {Descent} {Methods} in {Federated} {Learning}},
+	url = {http://arxiv.org/abs/1910.14425},
+	abstract = {In federated distributed learning, the goal is to optimize a global training objective defined over distributed devices, where the data shard at each device is sampled from a possibly different distribution (a.k.a., heterogeneous or non i.i.d. data samples). In this paper, we generalize the local stochastic and full gradient descent with periodic averaging{\textendash} originally designed for homogeneous distributed optimization, to solve nonconvex optimization problems in federated learning. Although scant research is available on the effectiveness of local SGD in reducing the number of communication rounds in homogeneous setting, its convergence and communication complexity in heterogeneous setting is mostly demonstrated empirically and lacks through theoretical understating. To bridge this gap, we demonstrate that by properly analyzing the effect of unbiased gradients and sampling schema in federated setting, under mild assumptions, the implicit variance reduction feature of local distributed methods generalize to heterogeneous data shards and exhibits the best known convergence rates of homogeneous setting both in general nonconvex and under \{{\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashpl\}{\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextasciitilde condition (generalization of strong-convexity). Our theoretical results complement the recent empirical studies that demonstrate the applicability of local GD/SGD to federated learning. We also specialize the proposed local method for networked distributed optimization. To the best of our knowledge, the obtained convergence rates are the sharpest known to date on the convergence of local decant methods with periodic averaging for solving nonconvex federated optimization in both centralized and networked distributed optimization.},
+	urldate = {2020-04-10},
+	journal = {arXiv:1910.14425 [cs, stat]},
+	author = {Haddadpour, Farzin and Mahdavi, Mehrdad},
+	month = dec,
+	year = {2019},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1910.14425},
+	annote = {Comment: 47 pages, "Updates from v1: A technical error in Lemma B3 is corrected"}
+}
+
+@incollection{haddadpour_local_2019,
+	title = {Local {SGD} with {Periodic} {Averaging}: {Tighter} {Analysis} and {Adaptive} {Synchronization}},
+	shorttitle = {Local {SGD} with {Periodic} {Averaging}},
+	url = {http://papers.nips.cc/paper/9288-local-sgd-with-periodic-averaging-tighter-analysis-and-adaptive-synchronization.pdf},
+	urldate = {2020-04-10},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems} 32},
+	publisher = {Curran Associates, Inc.},
+	author = {Haddadpour, Farzin and Kamani, Mohammad Mahdi and Mahdavi, Mehrdad and Cadambe, Viveck},
+	editor = {Wallach, H. and Larochelle, H. and Beygelzimer, A. and Alch{\'e}-Buc, F. d{\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextquotesingle and Fox, E. and Garnett, R.},
+	year = {2019},
+	pages = {11082--11094}
+}
+
+@article{haddadpour_trading_nodate,
+	title = {Trading {Redundancy} for {Communication}: {Speeding} up {Distributed} {SGD} for {Non}-convex {Optimization}},
+	abstract = {Communication overhead is one of the key challenges that hinders the scalability of distributed optimization algorithms to train large neural networks. In recent years, there has been a great deal of research to alleviate communication cost by compressing the gradient vector or using local updates and periodic model averaging. In this paper, we advocate the use of redundancy towards communication-efficient distributed stochastic algorithms for non-convex optimization. In particular, we, both theoretically and practically, show that by properly infusing redundancy to the training data with model averaging, it is possible to significantly reduce the number of communication rounds. To be more precise, we show that redundancy reduces residual error in local averaging, thereby reaching the same level of accuracy with fewer rounds of communication as compared with previous algorithms. Empirical studies on CIFAR10, CIFAR100 and ImageNet datasets in a distributed environment complement our theoretical results; they show that our algorithms have additional beneficial aspects including tolerance to failures, as well as greater gradient diversity.},
+	language = {en},
+	journal = {convex Optimization},
+	author = {Haddadpour, Farzin and Kamani, Mohammad Mahdi and Mahdavi, Mehrdad and Cadambe, Viveck R},
+	pages = {10}
+}
+
+@article{hanzely_federated_2020,
+	title = {Federated {Learning} of a {Mixture} of {Global} and {Local} {Models}},
+	url = {http://arxiv.org/abs/2002.05516},
+	abstract = {We propose a new optimization formulation for training federated learning models. The standard formulation has the form of an empirical risk minimization problem constructed to find a single global model trained from the private data stored across all participating devices. In contrast, our formulation seeks an explicit trade-off between this traditional global model and the local models, which can be learned by each device from its own private data without any communication. Further, we develop several efficient variants of SGD (with and without partial participation and with and without variance reduction) for solving the new formulation and prove communication complexity guarantees. Notably, our methods are similar but not identical to federated averaging / local SGD, thus shedding some light on the essence of the elusive method. In particular, our methods do not perform full averaging steps and instead merely take steps towards averaging. We argue for the benefits of this new paradigm for federated learning.},
+	urldate = {2020-04-10},
+	journal = {arXiv:2002.05516 [cs, math, stat]},
+	author = {Hanzely, Filip and Richt{\'a}rik, Peter},
+	month = feb,
+	year = {2020},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Mathematics - Optimization and Control, Computer Science - Machine Learning},
+	annote = {arXiv: 2002.05516},
+	annote = {Comment: 43 pages, 8 algorithms, 6 figures, 1 table (minor formatting changes compared to the previous version)}
+}
+
+@article{jiang_improving_2019,
+	title = {Improving {Federated} {Learning} {Personalization} via {Model} {Agnostic} {Meta} {Learning}},
+	url = {http://arxiv.org/abs/1909.12488},
+	abstract = {Federated Learning (FL) refers to learning a high quality global model based on decentralized data storage, without ever copying the raw data. A natural scenario arises with data created on mobile phones by the activity of their users. Given the typical data heterogeneity in such situations, it is natural to ask how can the global model be personalized for every such device, individually. In this work, we point out that the setting of Model Agnostic Meta Learning (MAML), where one optimizes for a fast, gradient-based, few-shot adaptation to a heterogeneous distribution of tasks, has a number of similarities with the objective of personalization for FL. We present FL as a natural source of practical applications for MAML algorithms, and make the following observations. 1) The popular FL algorithm, Federated Averaging, can be interpreted as a meta learning algorithm. 2) Careful fine-tuning can yield a global model with higher accuracy, which is at the same time easier to personalize. However, solely optimizing for the global model accuracy yields a weaker personalization result. 3) A model trained using a standard datacenter optimization method is much harder to personalize, compared to one trained using Federated Averaging, supporting the first claim. These results raise new questions for FL, MAML, and broader ML research.},
+	urldate = {2020-04-10},
+	journal = {arXiv:1909.12488 [cs, stat]},
+	author = {Jiang, Yihan and Kone{\v c}n{\'y}, Jakub and Rush, Keith and Kannan, Sreeram},
+	month = sep,
+	year = {2019},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1909.12488}
+}
+
+@inproceedings{kairouz_advances_2019,
+  title = {Advances and {{Open Problems}} in {{Federated Learning}}},
+  author = {Kairouz, Peter and McMahan, H. Brendan and Avent, Brendan and Bellet, Aur{\'e}lien and Bennis, Mehdi and Bhagoji, Arjun Nitin and Bonawitz, Keith and Charles, Zachary and Cormode, Graham and Cummings, Rachel and D'Oliveira, Rafael G. L. and Rouayheb, Salim El and Evans, David and Gardner, Josh and Garrett, Zachary and Gasc{\'o}n, Adri{\`a} and Ghazi, Badih and Gibbons, Phillip B. and Gruteser, Marco and Harchaoui, Zaid and He, Chaoyang and He, Lie and Huo, Zhouyuan and Hutchinson, Ben and Hsu, Justin and Jaggi, Martin and Javidi, Tara and Joshi, Gauri and Khodak, Mikhail and Kone{\v c}n{\'y}, Jakub and Korolova, Aleksandra and Koushanfar, Farinaz and Koyejo, Sanmi and Lepoint, Tancr{\`e}de and Liu, Yang and Mittal, Prateek and Mohri, Mehryar and Nock, Richard and {\"O}zg{\"u}r, Ayfer and Pagh, Rasmus and Raykova, Mariana and Qi, Hang and Ramage, Daniel and Raskar, Ramesh and Song, Dawn and Song, Weikang and Stich, Sebastian U. and Sun, Ziteng and Suresh, Ananda Theertha and Tram{\`e}r, Florian and Vepakomma, Praneeth and Wang, Jianyu and Xiong, Li and Xu, Zheng and Yang, Qiang and Yu, Felix X. and Yu, Han and Zhao, Sen},
+  year = {2019},
+  month = dec,
+  publisher = {{arXiv: 1912.04977}},
+  abstract = {Federated learning (FL) is a machine learning setting where many clients (e.g. mobile devices or whole organizations) collaboratively train a model under the orchestration of a central server (e.g. service provider), while keeping the training data decentralized. FL embodies the principles of focused data collection and minimization, and can mitigate many of the systemic privacy risks and costs resulting from traditional, centralized machine learning and data science approaches. Motivated by the explosive growth in FL research, this paper discusses recent advances and presents an extensive collection of open problems and challenges.},
+  archivePrefix = {arXiv},
+  eprint = {1912.04977},
+  eprinttype = {arxiv},
+  file = {/Users/joshnguyen/Zotero/storage/SXQHXX8X/Kairouz et al. - 2019 - Advances and Open Problems in Federated Learning.pdf;/Users/joshnguyen/Zotero/storage/GL2FM2XN/1912.html},
+  keywords = {Computer Science - Cryptography and Security,Computer Science - Machine Learning,Statistics - Machine Learning}
+}
+
+@article{karimireddy_scaffold_2020,
+	title = {{SCAFFOLD}: {Stochastic} {Controlled} {Averaging} for {Federated} {Learning}},
+	shorttitle = {{SCAFFOLD}},
+	url = {http://arxiv.org/abs/1910.06378},
+	abstract = {Federated Averaging (FedAvg) has emerged as the algorithm of choice for federated learning due to its simplicity and low communication cost. However, in spite of recent research efforts, its performance is not fully understood. We obtain tight convergence rates for FedAvg and prove that it suffers from `client-drift' when the data is heterogeneous (non-iid), resulting in unstable and slow convergence. As a solution, we propose a new algorithm (SCAFFOLD) which uses control variates (variance reduction) to correct for the `client-drift' in its local updates. We prove that SCAFFOLD requires significantly fewer communication rounds and is not affected by data heterogeneity or client sampling. Further, we show that (for quadratics) SCAFFOLD can take advantage of similarity in the client's data yielding even faster convergence. The latter is the first result to quantify the usefulness of local-steps in distributed optimization.},
+	urldate = {2020-04-10},
+	journal = {arXiv:1910.06378 [cs, math, stat]},
+	author = {Karimireddy, Sai Praneeth and Kale, Satyen and Mohri, Mehryar and Reddi, Sashank J. and Stich, Sebastian U. and Suresh, Ananda Theertha},
+	month = feb,
+	year = {2020},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Mathematics - Optimization and Control, 90C06, Computer Science - Machine Learning, 68W15, 90C25, G.1.6, 68W40, F.2.1, E.4},
+	annote = {arXiv: 1910.06378},
+	annote = {Comment: V2 contains analysis of FedAvg, non-convex rates of Scaffold, and experimental evaluation}
+}
+
+@article{khodak_adaptive_2019,
+	title = {Adaptive {Gradient}-{Based} {Meta}-{Learning} {Methods}},
+	url = {http://arxiv.org/abs/1906.02717},
+	abstract = {We build a theoretical framework for designing and understanding practical meta-learning methods that integrates sophisticated formalizations of task-similarity with the extensive literature on online convex optimization and sequential prediction algorithms. Our approach enables the task-similarity to be learned adaptively, provides sharper transfer-risk bounds in the setting of statistical learning-to-learn, and leads to straightforward derivations of average-case regret bounds for efficient algorithms in settings where the task-environment changes dynamically or the tasks share a certain geometric structure. We use our theory to modify several popular meta-learning algorithms and improve their meta-test-time performance on standard problems in few-shot learning and federated learning.},
+	urldate = {2020-04-10},
+	journal = {arXiv:1906.02717 [cs, stat]},
+	author = {Khodak, Mikhail and Balcan, Maria-Florina and Talwalkar, Ameet},
+	month = dec,
+	year = {2019},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning, Computer Science - Artificial Intelligence},
+	annote = {arXiv: 1906.02717},
+	annote = {Comment: NeurIPS 2019}
+}
+
+@article{li_fedmd_2019,
+	title = {{FedMD}: {Heterogenous} {Federated} {Learning} via {Model} {Distillation}},
+	shorttitle = {{FedMD}},
+	url = {http://arxiv.org/abs/1910.03581},
+	abstract = {Federated learning enables the creation of a powerful centralized model without compromising data privacy of multiple participants. While successful, it does not incorporate the case where each participant independently designs its own model. Due to intellectual property concerns and heterogeneous nature of tasks and data, this is a widespread requirement in applications of federated learning to areas such as health care and AI as a service. In this work, we use transfer learning and knowledge distillation to develop a universal framework that enables federated learning when each agent owns not only their private data, but also uniquely designed models. We test our framework on the MNIST/FEMNIST dataset and the CIFAR10/CIFAR100 dataset and observe fast improvement across all participating models. With 10 distinct participants, the final test accuracy of each model on average receives a 20\% gain on top of what's possible without collaboration and is only a few percent lower than the performance each model would have obtained if all private datasets were pooled and made directly available for all participants.},
+	urldate = {2020-04-10},
+	journal = {arXiv:1910.03581 [cs, stat]},
+	author = {Li, Daliang and Wang, Junpu},
+	month = oct,
+	year = {2019},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1910.03581},
+	annote = {Comment: 4 pages, 2 figures, NeurIPS 2019 Workshop on Federated Learning for Data Privacy and Confidentiality}
+}
+
+@inproceedings{li_scaling_2014,
+	address = {Beijing, China},
+	title = {Scaling {Distributed} {Machine} {Learning} with the {Parameter} {Server}},
+	isbn = {978-1-4503-2891-3},
+	url = {http://dl.acm.org/citation.cfm?doid=2640087.2644155},
+	doi = {10.1145/2640087.2644155},
+	abstract = {We propose a parameter server framework for distributed machine learning problems. Both data and workloads are distributed over worker nodes, while the server nodes maintain globally shared parameters, represented as dense or sparse vectors and matrices. The framework manages asynchronous data communication between nodes, and supports flexible consistency models, elastic scalability, and continuous fault tolerance.},
+	language = {en},
+	urldate = {2020-04-10},
+	booktitle = {Proceedings of the 2014 {International} {Conference} on {Big} {Data} {Science} and {Computing} - {BigDataScience} '14},
+	publisher = {ACM Press},
+	author = {Li, Mu},
+	year = {2014},
+	pages = {1--1}
+}
+
+@article{li_federated_2019,
+	title = {Federated {Optimization} in {Heterogeneous} {Networks}},
+	url = {http://arxiv.org/abs/1812.06127},
+	abstract = {Federated Learning is a distributed learning paradigm with two key challenges that differentiate it from traditional distributed optimization: (1) significant variability in terms of the systems characteristics on each device in the network (systems heterogeneity), and (2) non-identically distributed data across the network (statistical heterogeneity). In this work, we introduce a framework, FedProx, to tackle heterogeneity in federated networks. FedProx can be viewed as a generalization and re-parametrization of FedAvg, the current state-of-the-art method for federated learning. While FedProx makes only minor algorithmic modifications to FedAvg, these modifications have important ramifications both in theory and in practice. Theoretically, we provide convergence guarantees for our framework when learning over data from non-identical distributions (statistical heterogeneity), and while adhering to device-level systems constraints by allowing each participating device to perform a variable amount of work (systems heterogeneity). Practically, we demonstrate that FedProx allows for more robust convergence than FedAvg across a suite of federated datasets. In particular, in highly heterogeneous settings, FedProx demonstrates significantly more stable and accurate convergence behavior relative to FedAvg{\textemdash}improving absolute test accuracy by 22\% on average.},
+	urldate = {2020-04-10},
+	journal = {arXiv:1812.06127 [cs, stat]},
+	author = {Li, Tian and Sahu, Anit Kumar and Zaheer, Manzil and Sanjabi, Maziar and Talwalkar, Ameet and Smith, Virginia},
+	month = sep,
+	year = {2019},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1812.06127}
+}
+
+@article{li_feddane_2020,
+	title = {{FedDANE}: {A} {Federated} {Newton}-{Type} {Method}},
+	shorttitle = {{FedDANE}},
+	url = {http://arxiv.org/abs/2001.01920},
+	abstract = {Federated learning aims to jointly learn statistical models over massively distributed remote devices. In this work, we propose FedDANE, an optimization method that we adapt from DANE, a method for classical distributed optimization, to handle the practical constraints of federated learning. We provide convergence guarantees for this method when learning over both convex and non-convex functions. Despite encouraging theoretical results, we find that the method has underwhelming performance empirically. In particular, through empirical simulations on both synthetic and real-world datasets, FedDANE consistently underperforms baselines of FedAvg and FedProx in realistic federated settings. We identify low device participation and statistical device heterogeneity as two underlying causes of this underwhelming performance, and conclude by suggesting several directions of future work.},
+	urldate = {2020-04-10},
+	journal = {arXiv:2001.01920 [cs, stat]},
+	author = {Li, Tian and Sahu, Anit Kumar and Zaheer, Manzil and Sanjabi, Maziar and Talwalkar, Ameet and Smith, Virginia},
+	month = jan,
+	year = {2020},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 2001.01920},
+	annote = {Comment: Asilomar Conference on Signals, Systems, and Computers 2019}
+}
+
+@article{mansour_three_2020,
+	title = {Three {Approaches} for {Personalization} with {Applications} to {Federated} {Learning}},
+	url = {http://arxiv.org/abs/2002.10619},
+	abstract = {The standard objective in machine learning is to train a single model for all users. However, in many learning scenarios, such as cloud computing and federated learning, it is possible to learn one personalized model per user. In this work, we present a systematic learning-theoretic study of personalization. We propose and analyze three approaches: user clustering, data interpolation, and model interpolation. For all three approaches, we provide learning-theoretic guarantees and efficient algorithms for which we also demonstrate the performance empirically. All of our algorithms are model agnostic and work for any hypothesis class.},
+	urldate = {2020-04-10},
+	journal = {arXiv:2002.10619 [cs, stat]},
+	author = {Mansour, Yishay and Mohri, Mehryar and Ro, Jae and Suresh, Ananda Theertha},
+	month = feb,
+	year = {2020},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 2002.10619},
+	annote = {Comment: 23 pages}
+}
+
+@article{mansour_domain_2009,
+	title = {Domain {Adaptation}: {Learning} {Bounds} and {Algorithms}},
+	shorttitle = {Domain {Adaptation}},
+	url = {http://arxiv.org/abs/0902.3430},
+	abstract = {This paper addresses the general problem of domain adaptation which arises in a variety of applications where the distribution of the labeled sample available somewhat differs from that of the test data. Building on previous work by Ben-David et al. (2007), we introduce a novel distance between distributions, discrepancy distance, that is tailored to adaptation problems with arbitrary loss functions. We give Rademacher complexity bounds for estimating the discrepancy distance from finite samples for different loss functions. Using this distance, we derive novel generalization bounds for domain adaptation for a wide family of loss functions. We also present a series of novel adaptation bounds for large classes of regularization-based algorithms, including support vector machines and kernel ridge regression based on the empirical discrepancy. This motivates our analysis of the problem of minimizing the empirical discrepancy for various loss functions for which we also give novel algorithms. We report the results of preliminary experiments that demonstrate the benefits of our discrepancy minimization algorithms for domain adaptation.},
+	urldate = {2020-04-10},
+	journal = {arXiv:0902.3430 [cs]},
+	author = {Mansour, Yishay and Mohri, Mehryar and Rostamizadeh, Afshin},
+	month = feb,
+	year = {2009},
+	keywords = {Computer Science - Machine Learning, Computer Science - Artificial Intelligence},
+	annote = {arXiv: 0902.3430},
+	annote = {Comment: 12 pages, 4 figures}
+}
+
+@article{mcmahan_communication-efficient_2017,
+	title = {Communication-{Efficient} {Learning} of {Deep} {Networks} from {Decentralized} {Data}},
+	url = {http://arxiv.org/abs/1602.05629},
+	abstract = {Modern mobile devices have access to a wealth of data suitable for learning models, which in turn can greatly improve the user experience on the device. For example, language models can improve speech recognition and text entry, and image models can automatically select good photos. However, this rich data is often privacy sensitive, large in quantity, or both, which may preclude logging to the data center and training there using conventional approaches. We advocate an alternative that leaves the training data distributed on the mobile devices, and learns a shared model by aggregating locally-computed updates. We term this decentralized approach Federated Learning. We present a practical method for the federated learning of deep networks based on iterative model averaging, and conduct an extensive empirical evaluation, considering five different model architectures and four datasets. These experiments demonstrate the approach is robust to the unbalanced and non-IID data distributions that are a defining characteristic of this setting. Communication costs are the principal constraint, and we show a reduction in required communication rounds by 10-100x as compared to synchronized stochastic gradient descent.},
+	urldate = {2020-04-10},
+	journal = {arXiv:1602.05629 [cs]},
+	author = {McMahan, H. Brendan and Moore, Eider and Ramage, Daniel and Hampson, Seth and Arcas, Blaise Ag{\"u}era y},
+	month = feb,
+	year = {2017},
+	keywords = {Computer Science - Machine Learning},
+	annote = {arXiv: 1602.05629},
+	annote = {Comment: This version updates the large-scale LSTM experiments, along with other minor changes. In earlier versions, an inconsistency in our implementation of FedSGD caused us to report much lower learning rates for the large-scale LSTM. We reran these experiments, and also found that fewer local epochs offers better performance, leading to slightly better results for FedAvg than previously reported}
+}
+
+@book{press_foundations_nodate,
+	title = {Foundations of {Machine} {Learning} {\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbar {The} {MIT} {Press}},
+	url = {https://mitpress.mit.edu/books/foundations-machine-learning},
+	abstract = {Fundamental topics in machine learning are presented along with theoretical and conceptual tools for the discussion and proof of algorithms. This graduate-level textbook introduces fundamental concepts and methods in machine learning. It describes several important modern algorithms, provides the theoretical underpinnings of these algorithms, and illustrates key aspects for their application. The authors aim to present novel theoretical tools and concepts while giving concise proofs even for relatively advanced topics. Foundations of Machine Learning fills the need for a general textbook that also offers theoretical details and an emphasis on proofs. Certain topics that are often treated with insufficient attention are discussed in more detail here; for example, entire chapters are devoted to regression, multi-class classification, and ranking. The first three chapters lay the theoretical foundation for what follows, but each remaining chapter is mostly self-contained. The appendix offers a concise probability review, a short introduction to convex optimization, tools for concentration bounds, and several basic properties of matrices and norms used in the book.The book is intended for graduate students and researchers in machine learning, statistics, and related areas; it can be used either as a textbook or as a reference text for a research seminar.},
+	language = {en},
+	urldate = {2020-04-10},
+	author = {Press, The MIT},
+	annote = {Library Catalog: mitpress.mit.edu Publisher: The MIT Press}
+}
+
+@article{mohri_agnostic_2019,
+	title = {Agnostic {Federated} {Learning}},
+	url = {http://arxiv.org/abs/1902.00146},
+	abstract = {A key learning scenario in large-scale applications is that of federated learning, where a centralized model is trained based on data originating from a large number of clients. We argue that, with the existing training and inference, federated models can be biased towards different clients. Instead, we propose a new framework of agnostic federated learning, where the centralized model is optimized for any target distribution formed by a mixture of the client distributions. We further show that this framework naturally yields a notion of fairness. We present data-dependent Rademacher complexity guarantees for learning with this objective, which guide the definition of an algorithm for agnostic federated learning. We also give a fast stochastic optimization algorithm for solving the corresponding optimization problem, for which we prove convergence bounds, assuming a convex loss function and hypothesis set. We further empirically demonstrate the benefits of our approach in several datasets. Beyond federated learning, our framework and algorithm can be of interest to other learning scenarios such as cloud computing, domain adaptation, drifting, and other contexts where the training and test distributions do not coincide.},
+	urldate = {2020-04-10},
+	journal = {arXiv:1902.00146 [cs, stat]},
+	author = {Mohri, Mehryar and Sivek, Gary and Suresh, Ananda Theertha},
+	month = jan,
+	year = {2019},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1902.00146},
+	annote = {Comment: 30 pages}
+}
+
+@article{nichol_first-order_2018,
+	title = {On {First}-{Order} {Meta}-{Learning} {Algorithms}},
+	url = {http://arxiv.org/abs/1803.02999},
+	abstract = {This paper considers meta-learning problems, where there is a distribution of tasks, and we would like to obtain an agent that performs well (i.e., learns quickly) when presented with a previously unseen task sampled from this distribution. We analyze a family of algorithms for learning a parameter initialization that can be fine-tuned quickly on a new task, using only first-order derivatives for the meta-learning updates. This family includes and generalizes first-order MAML, an approximation to MAML obtained by ignoring second-order derivatives. It also includes Reptile, a new algorithm that we introduce here, which works by repeatedly sampling a task, training on it, and moving the initialization towards the trained weights on that task. We expand on the results from Finn et al. showing that first-order meta-learning algorithms perform well on some well-established benchmarks for few-shot classification, and we provide theoretical analysis aimed at understanding why these algorithms work.},
+	urldate = {2020-04-10},
+	journal = {arXiv:1803.02999 [cs]},
+	author = {Nichol, Alex and Achiam, Joshua and Schulman, John},
+	month = oct,
+	year = {2018},
+	keywords = {Computer Science - Machine Learning},
+	annote = {arXiv: 1803.02999}
+}
+
+@article{pan_survey_2010,
+	title = {A {Survey} on {Transfer} {Learning}},
+	volume = {22},
+	issn = {1558-2191},
+	doi = {10.1109/TKDE.2009.191},
+	abstract = {A major assumption in many machine learning and data mining algorithms is that the training and future data must be in the same feature space and have the same distribution. However, in many real-world applications, this assumption may not hold. For example, we sometimes have a classification task in one domain of interest, but we only have sufficient training data in another domain of interest, where the latter data may be in a different feature space or follow a different data distribution. In such cases, knowledge transfer, if done successfully, would greatly improve the performance of learning by avoiding much expensive data-labeling efforts. In recent years, transfer learning has emerged as a new learning framework to address this problem. This survey focuses on categorizing and reviewing the current progress on transfer learning for classification, regression, and clustering problems. In this survey, we discuss the relationship between transfer learning and other related machine learning techniques such as domain adaptation, multitask learning and sample selection bias, as well as covariate shift. We also explore some potential future issues in transfer learning research.},
+	number = {10},
+	journal = {IEEE Transactions on Knowledge and Data Engineering},
+	author = {Pan, Sinno Jialin and Yang, Qiang},
+	month = oct,
+	year = {2010},
+	keywords = {optimisation, Machine learning, Machine learning algorithms, machine learning, data mining, Data mining, data mining., inductive transfer learning, knowledge engineering, Knowledge engineering, knowledge transfer, Knowledge transfer, Labeling, learning by example, Learning systems, Space technology, survey, Testing, Training data, transductive transfer learning, Transfer learning, unsupervised learning, unsupervised transfer learning},
+	pages = {1345--1359},
+	annote = {Conference Name: IEEE Transactions on Knowledge and Data Engineering}
+}
+
+@incollection{paszke_pytorch_2019,
+	title = {{PyTorch}: {An} {Imperative} {Style}, {High}-{Performance} {Deep} {Learning} {Library}},
+	shorttitle = {{PyTorch}},
+	url = {http://papers.nips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf},
+	urldate = {2020-04-10},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems} 32},
+	publisher = {Curran Associates, Inc.},
+	author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+	editor = {Wallach, H. and Larochelle, H. and Beygelzimer, A. and Alch{\'e}-Buc, F. d{\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextquotesingle and Fox, E. and Garnett, R.},
+	year = {2019},
+	pages = {8026--8037}
+}
+
+@article{pillutla_robust_2019,
+	title = {Robust {Aggregation} for {Federated} {Learning}},
+	url = {http://arxiv.org/abs/1912.13445},
+	abstract = {We present a robust aggregation approach to make federated learning robust to settings when a fraction of the devices may be sending corrupted updates to the server. The proposed approach relies on a robust secure aggregation oracle based on the geometric median, which returns a robust aggregate using a constant number of calls to a regular non-robust secure average oracle. The robust aggregation oracle is privacy-preserving, similar to the secure average oracle it builds upon. We provide experimental results of the proposed approach with linear models and deep networks for two tasks in computer vision and natural language processing. The robust aggregation approach is agnostic to the level of corruption; it outperforms the classical aggregation approach in terms of robustness when the level of corruption is high, while being competitive in the regime of low corruption.},
+	urldate = {2020-04-10},
+	journal = {arXiv:1912.13445 [cs, stat]},
+	author = {Pillutla, Krishna and Kakade, Sham M. and Harchaoui, Zaid},
+	month = dec,
+	year = {2019},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning, Computer Science - Cryptography and Security},
+	annote = {arXiv: 1912.13445}
+}
+
+@book{shalev-shwartz_understanding_2014,
+	address = {Cambridge},
+	title = {Understanding {Machine} {Learning}: {From} {Theory} to {Algorithms}},
+	isbn = {978-1-107-29801-9},
+	shorttitle = {Understanding {Machine} {Learning}},
+	url = {http://ebooks.cambridge.org/ref/id/CBO9781107298019},
+	language = {en},
+	urldate = {2020-04-10},
+	publisher = {Cambridge University Press},
+	author = {Shalev-Shwartz, Shai and Ben-David, Shai},
+	year = {2014},
+	doi = {10.1017/CBO9781107298019}
+}
+
+@article{stich_local_2019,
+	title = {Local {SGD} {Converges} {Fast} and {Communicates} {Little}},
+	url = {http://arxiv.org/abs/1805.09767},
+	abstract = {Mini-batch stochastic gradient descent (SGD) is state of the art in large scale distributed training. The scheme can reach a linear speedup with respect to the number of workers, but this is rarely seen in practice as the scheme often suffers from large network delays and bandwidth limits. To overcome this communication bottleneck recent works propose to reduce the communication frequency. An algorithm of this type is local SGD that runs SGD independently in parallel on different workers and averages the sequences only once in a while. This scheme shows promising results in practice, but eluded thorough theoretical analysis. We prove concise convergence rates for local SGD on convex problems and show that it converges at the same rate as mini-batch SGD in terms of number of evaluated gradients, that is, the scheme achieves linear speedup in the number of workers and mini-batch size. The number of communication rounds can be reduced up to a factor of T{\textasciicircum}\{1/2\}{\textemdash}where T denotes the number of total steps{\textemdash}compared to mini-batch SGD. This also holds for asynchronous implementations. Local SGD can also be used for large scale training of deep learning models. The results shown here aim serving as a guideline to further explore the theoretical and practical aspects of local SGD in these applications.},
+	urldate = {2020-04-10},
+	journal = {arXiv:1805.09767 [cs, math]},
+	author = {Stich, Sebastian U.},
+	month = may,
+	year = {2019},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Mathematics - Optimization and Control, 90C06, Computer Science - Machine Learning, G.1.6, 68W10, 68W40, F.2.1},
+	annote = {arXiv: 1805.09767},
+	annote = {Comment: to appear at ICLR 2019, 19 pages}
+}
+
+@article{vanhaesebrouck_decentralized_2017,
+	title = {Decentralized {Collaborative} {Learning} of {Personalized} {Models} over {Networks}},
+	url = {http://arxiv.org/abs/1610.05202},
+	abstract = {We consider a set of learning agents in a collaborative peer-to-peer network, where each agent learns a personalized model according to its own learning objective. The question addressed in this paper is: how can agents improve upon their locally trained model by communicating with other agents that have similar objectives? We introduce and analyze two asynchronous gossip algorithms running in a fully decentralized manner. Our first approach, inspired from label propagation, aims to smooth pre-trained local models over the network while accounting for the confidence that each agent has in its initial model. In our second approach, agents jointly learn and propagate their model by making iterative updates based on both their local dataset and the behavior of their neighbors. To optimize this challenging objective, our decentralized algorithm is based on ADMM.},
+	urldate = {2020-04-10},
+	journal = {arXiv:1610.05202 [cs, stat]},
+	author = {Vanhaesebrouck, Paul and Bellet, Aur{\'e}lien and Tommasi, Marc},
+	month = feb,
+	year = {2017},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Computer Science - Machine Learning, Computer Science - Artificial Intelligence, Electrical Engineering and Systems Science - Systems and Control},
+	annote = {arXiv: 1610.05202},
+	annote = {Comment: To appear in the Proceedings of the 20th International Conference on Artificial Intelligence and Statistics (AISTATS 2017)}
+}
+
+@article{wang_federated_2019,
+	title = {Federated {Evaluation} of {On}-device {Personalization}},
+	url = {http://arxiv.org/abs/1910.10252},
+	abstract = {Federated learning is a distributed, on-device computation framework that enables training global models without exporting sensitive user data to servers. In this work, we describe methods to extend the federation framework to evaluate strategies for personalization of global models. We present tools to analyze the effects of personalization and evaluate conditions under which personalization yields desirable models. We report on our experiments personalizing a language model for a virtual keyboard for smartphones with a population of tens of millions of users. We show that a significant fraction of users benefit from personalization.},
+	urldate = {2020-04-10},
+	journal = {arXiv:1910.10252 [cs, stat]},
+	author = {Wang, Kangkang and Mathews, Rajiv and Kiddon, Chlo{\'e} and Eichner, Hubert and Beaufays, Fran{\c c}oise and Ramage, Daniel},
+	month = oct,
+	year = {2019},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1910.10252},
+	annote = {Comment: 4 pages, 4 figures}
+}
+
+@article{yu_salvaging_2020,
+	title = {Salvaging {Federated} {Learning} by {Local} {Adaptation}},
+	url = {http://arxiv.org/abs/2002.04758},
+	abstract = {Federated learning (FL) is a heavily promoted approach for training ML models on sensitive data, e.g., text typed by users on their smartphones. FL is expressly designed for training on data that are unbalanced and non-iid across the participants. To ensure privacy and integrity of the federated model, latest FL approaches use differential privacy or robust aggregation to limit the influence of "outlier" participants. First, we show that on standard tasks such as next-word prediction, many participants gain no benefit from FL because the federated model is less accurate on their data than the models they can train locally on their own. Second, we show that differential privacy and robust aggregation make this problem worse by further destroying the accuracy of the federated model for many participants. Then, we evaluate three techniques for local adaptation of federated models: fine-tuning, multi-task learning, and knowledge distillation. We analyze where each technique is applicable and demonstrate that all participants benefit from local adaptation. Participants whose local models are poor obtain big accuracy improvements over conventional FL. Participants whose local models are better than the federated model and who have no incentive to participate in FL today improve less, but sufficiently to make the adapted federated model better than their local models.},
+	urldate = {2020-04-10},
+	journal = {arXiv:2002.04758 [cs, stat]},
+	author = {Yu, Tao and Bagdasaryan, Eugene and Shmatikov, Vitaly},
+	month = feb,
+	year = {2020},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Computer Science - Machine Learning, Computer Science - Artificial Intelligence},
+	annote = {arXiv: 2002.04758}
+}
+
+@article{zantedeschi_fully_2020,
+	title = {Fully {Decentralized} {Joint} {Learning} of {Personalized} {Models} and {Collaboration} {Graphs}},
+	url = {http://arxiv.org/abs/1901.08460},
+	abstract = {We consider the fully decentralized machine learning scenario where many users with personal datasets collaborate to learn models through local peer-to-peer exchanges, without a central coordinator. We propose to train personalized models that leverage a collaboration graph describing the relationships between user personal tasks, which we learn jointly with the models. Our fully decentralized optimization procedure alternates between training nonlinear models given the graph in a greedy boosting manner, and updating the collaboration graph (with controlled sparsity) given the models. Throughout the process, users exchange messages only with a small number of peers (their direct neighbors when updating the models, and a few random users when updating the graph), ensuring that the procedure naturally scales with the number of users. Overall, our approach is communication-efficient and avoids exchanging personal data. We provide an extensive analysis of the convergence rate, memory and communication complexity of our approach, and demonstrate its benefits compared to competing techniques on synthetic and real datasets.},
+	urldate = {2020-04-10},
+	journal = {arXiv:1901.08460 [cs, stat]},
+	author = {Zantedeschi, Valentina and Bellet, Aur{\'e}lien and Tommasi, Marc},
+	month = mar,
+	year = {2020},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Computer Science - Machine Learning, Computer Science - Artificial Intelligence, Electrical Engineering and Systems Science - Systems and Control},
+	annote = {arXiv: 1901.08460},
+	annote = {Comment: To appear in the proceedings of the 23rd International Conference on Artificial Intelligence and Statistics (AISTATS 2020)}
+}
+
+@article{fallah_convergence_2020,
+	title = {On the {Convergence} {Theory} of {Gradient}-{Based} {Model}-{Agnostic} {Meta}-{Learning} {Algorithms}},
+	url = {http://arxiv.org/abs/1908.10400},
+	abstract = {We study the convergence of a class of gradient-based Model-Agnostic Meta-Learning (MAML) methods and characterize their overall complexity as well as their best achievable accuracy in terms of gradient norm for nonconvex loss functions. We start with the MAML method and its first-order approximation (FO-MAML) and highlight the challenges that emerge in their analysis. By overcoming these challenges not only we provide the first theoretical guarantees for MAML and FO-MAML in nonconvex settings, but also we answer some of the unanswered questions for the implementation of these algorithms including how to choose their learning rate and the batch size for both tasks and datasets corresponding to tasks. In particular, we show that MAML can find an \${\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashepsilon\$-first-order stationary point (\${\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashepsilon\$-FOSP) for any positive \${\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashepsilon\$ after at most \${\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashmathcal\{O\}(1/{\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashepsilon{\textasciicircum}2)\$ iterations at the expense of requiring second-order information. We also show that FO-MAML which ignores the second-order information required in the update of MAML cannot achieve any small desired level of accuracy, i.e., FO-MAML cannot find an \${\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashepsilon\$-FOSP for any \${\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashepsilon{\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextgreater0\$. We further propose a new variant of the MAML algorithm called Hessian-free MAML which preserves all theoretical guarantees of MAML, without requiring access to second-order information.},
+	urldate = {2020-04-13},
+	journal = {arXiv:1908.10400 [cs, math, stat]},
+	author = {Fallah, Alireza and Mokhtari, Aryan and Ozdaglar, Asuman},
+	month = mar,
+	year = {2020},
+	keywords = {Statistics - Machine Learning, Mathematics - Optimization and Control, Computer Science - Machine Learning},
+	annote = {arXiv: 1908.10400},
+	annote = {Comment: To appear in the proceedings of the \$23{\textasciicircum}\{rd\}\$ International Conference on Artificial Intelligence and Statistics (AISTATS) 2020}
+}
+
+@article{arivazhagan_federated_2019,
+	title = {Federated {Learning} with {Personalization} {Layers}},
+	url = {http://arxiv.org/abs/1912.00818},
+	abstract = {The emerging paradigm of federated learning strives to enable collaborative training of machine learning models on the network edge without centrally aggregating raw data and hence, improving data privacy. This sharply deviates from traditional machine learning and necessitates design of algorithms robust to various sources of heterogeneity. Specifically, statistical heterogeneity of data across user devices can severely degrade performance of standard federated averaging for traditional machine learning applications like personalization with deep learning. This paper proposes FedPer, a base + personalization layer approach for federated training of deep feed forward neural networks, which can combat the ill-effects of statistical heterogeneity. We demonstrate effectiveness of FedPer for nonidentical data partitions of CIFAR datasets and on a personalized image aesthetics dataset from Flickr.},
+	language = {en},
+	urldate = {2020-04-13},
+	journal = {arXiv:1912.00818 [cs, stat]},
+	author = {Arivazhagan, Manoj Ghuhan and Aggarwal, Vinay and Singh, Aaditya Kumar and Choudhary, Sunav},
+	month = dec,
+	year = {2019},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1912.00818}
+}
+
+@article{lin_catalyst_2018,
+	title = {Catalyst {Acceleration} for {First}-order {Convex} {Optimization}: from {Theory} to {Practice}},
+	shorttitle = {Catalyst {Acceleration} for {First}-order {Convex} {Optimization}},
+	url = {http://arxiv.org/abs/1712.05654},
+	abstract = {We introduce a generic scheme for accelerating gradient-based optimization methods in the sense of Nesterov. The approach, called Catalyst, builds upon the inexact accelerated proximal point algorithm for minimizing a convex objective function, and consists of approximately solving a sequence of well-chosen auxiliary problems, leading to faster convergence. One of the keys to achieve acceleration in theory and in practice is to solve these sub-problems with appropriate accuracy by using the right stopping criterion and the right warm-start strategy. We give practical guidelines to use Catalyst and present a comprehensive analysis of its global complexity. We show that Catalyst applies to a large class of algorithms, including gradient descent, block coordinate descent, incremental algorithms such as SAG, SAGA, SDCA, SVRG, MISO/Finito, and their proximal variants. For all of these methods, we establish faster rates using the Catalyst acceleration, for strongly convex and non-strongly convex objectives. We conclude with extensive experiments showing that acceleration is useful in practice, especially for ill-conditioned problems.},
+	language = {en},
+	urldate = {2020-04-29},
+	journal = {arXiv:1712.05654 [math, stat]},
+	author = {Lin, Hongzhou and Mairal, Julien and Harchaoui, Zaid},
+	month = jun,
+	year = {2018},
+	keywords = {Statistics - Machine Learning, Mathematics - Optimization and Control},
+	annote = {arXiv: 1712.05654},
+	annote = {Comment: link to publisher website: http://jmlr.org/papers/volume18/17-748/17-748.pdf}
+}
+
+@article{lin_catalyst_2018-1,
+	title = {Catalyst {Acceleration} for {First}-order {Convex} {Optimization}: from {Theory} to {Practice}},
+	shorttitle = {Catalyst {Acceleration} for {First}-order {Convex} {Optimization}},
+	url = {http://arxiv.org/abs/1712.05654},
+	abstract = {We introduce a generic scheme for accelerating gradient-based optimization methods in the sense of Nesterov. The approach, called Catalyst, builds upon the inexact accelerated proximal point algorithm for minimizing a convex objective function, and consists of approximately solving a sequence of well-chosen auxiliary problems, leading to faster convergence. One of the keys to achieve acceleration in theory and in practice is to solve these sub-problems with appropriate accuracy by using the right stopping criterion and the right warm-start strategy. We give practical guidelines to use Catalyst and present a comprehensive analysis of its global complexity. We show that Catalyst applies to a large class of algorithms, including gradient descent, block coordinate descent, incremental algorithms such as SAG, SAGA, SDCA, SVRG, MISO/Finito, and their proximal variants. For all of these methods, we establish faster rates using the Catalyst acceleration, for strongly convex and non-strongly convex objectives. We conclude with extensive experiments showing that acceleration is useful in practice, especially for ill-conditioned problems.},
+	language = {en},
+	urldate = {2020-04-29},
+	journal = {arXiv:1712.05654 [math, stat]},
+	author = {Lin, Hongzhou and Mairal, Julien and Harchaoui, Zaid},
+	month = jun,
+	year = {2018},
+	keywords = {Statistics - Machine Learning, Mathematics - Optimization and Control},
+	annote = {arXiv: 1712.05654},
+	annote = {Comment: link to publisher website: http://jmlr.org/papers/volume18/17-748/17-748.pdf}
+}
+
+@book{lecun_mnist_nodate,
+	title = {The {MNIST} database of handwritten digits},
+	url = {http://yann.lecun.com/exdb/mnist/},
+	urldate = {2020-04-29},
+	author = {LeCun, Yann and Cortes, Corinna and Burges, Christopher J.C.}
+}
+
+@article{arjevani_tight_2018,
+	title = {A {Tight} {Convergence} {Analysis} for {Stochastic} {Gradient} {Descent} with {Delayed} {Updates}},
+	url = {http://arxiv.org/abs/1806.10188},
+	abstract = {We provide tight finite-time convergence bounds for gradient descent and stochastic gradient descent on quadratic functions, when the gradients are delayed and reflect iterates from $\tau$ rounds ago. First, we show that without stochastic noise, delays strongly affect the attainable optimization error: In fact, the error can be as bad as non-delayed gradient descent ran on only 1/$\tau$ of the gradients. In sharp contrast, we quantify how stochastic noise makes the effect of delays negligible, improving on previous work which only showed this phenomenon asymptotically or for much smaller delays. Also, in the context of distributed optimization, the results indicate that the performance of gradient descent with delays is competitive with synchronous approaches such as mini-batching. Our results are based on a novel technique for analyzing convergence of optimization algorithms using generating functions.},
+	language = {en},
+	urldate = {2020-05-01},
+	journal = {arXiv:1806.10188 [cs, math, stat]},
+	author = {Arjevani, Yossi and Shamir, Ohad and Srebro, Nathan},
+	month = jun,
+	year = {2018},
+	keywords = {Statistics - Machine Learning, Mathematics - Optimization and Control, Computer Science - Machine Learning},
+	annote = {arXiv: 1806.10188}
+}
+
+@article{stich_unified_2019,
+	title = {Unified {Optimal} {Analysis} of the ({Stochastic}) {Gradient} {Method}},
+	url = {https://arxiv.org/abs/1907.04232v2},
+	abstract = {In this note we give a simple proof for the convergence of stochastic gradient (SGD) methods on \$$\mu$\$-convex functions under a (milder than standard) \$L\$-smoothness assumption. We show that for carefully chosen stepsizes SGD converges after \$T\$ iterations as \$O{\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashleft( LR{\textasciicircum}2 {\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashexp {\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashbigl[-{\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashfrac$\mu$\{4L\}T{\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashbigr] + {\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashfrac\{$\sigma${\textasciicircum}2\}\{$\mu$T\} {\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtextbackslashright)\$ where \$$\sigma${\textasciicircum}2\$ measures the variance in the stochastic noise. For deterministic gradient descent (GD) and SGD in the interpolation setting we have \$$\sigma${\textasciicircum}2 =0\$ and we recover the exponential convergence rate. The bound matches with the best known iteration complexity of GD and SGD, up to constants.},
+	language = {en},
+	urldate = {2020-05-01},
+	author = {Stich, Sebastian U.},
+	month = jul,
+	year = {2019}
+}
+
+@article{lecun_gradient-based_1998,
+	title = {Gradient-{Based} {Learning} {Applied} to {Document} {Recognition}},
+	volume = {86},
+	issn = {00189219},
+	doi = {10.1109/5.726791},
+	language = {en},
+	number = {11},
+	journal = {Proceedings of the IEEE},
+	author = {Lecun, Y. and Bottou, L. and Bengio, Y. and Haffner, P.},
+	month = nov,
+	year = {1998},
+	pages = {2278--2324}
+}
+
+@article{khaled_first_2020,
+	title = {First {Analysis} of {Local} {GD} on {Heterogeneous} {Data}},
+	url = {http://arxiv.org/abs/1909.04715},
+	abstract = {We provide the first convergence analysis of local gradient descent for minimizing the average of smooth and convex but otherwise arbitrary functions. Problems of this form and local gradient descent as a solution method are of importance in federated learning, where each function is based on private data stored by a user on a mobile device, and the data of different users can be arbitrarily heterogeneous. We show that in a low accuracy regime, the method has the same communication complexity as gradient descent.},
+	urldate = {2020-05-15},
+	journal = {arXiv:1909.04715 [cs, math, stat]},
+	author = {Khaled, Ahmed and Mishchenko, Konstantin and Richt{\'a}rik, Peter},
+	month = mar,
+	year = {2020},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Mathematics - Optimization and Control, Computer Science - Machine Learning, Mathematics - Numerical Analysis},
+	annote = {arXiv: 1909.04715},
+	annote = {Comment: NeurIPS 2019 Workshop on Federated Learning for Data Privacy and Confidentiality. 11 pages, 4 lemmas, 1 theorem}
+}
+
+@article{yu_linear_2019,
+	title = {On the {Linear} {Speedup} {Analysis} of {Communication} {Efficient} {Momentum} {SGD} for {Distributed} {Non}-{Convex} {Optimization}},
+	url = {http://arxiv.org/abs/1905.03817},
+	abstract = {Recent developments on large-scale distributed machine learning applications, e.g., deep neural networks, benefit enormously from the advances in distributed non-convex optimization techniques, e.g., distributed Stochastic Gradient Descent (SGD). A series of recent works study the linear speedup property of distributed SGD variants with reduced communication. The linear speedup property enable us to scale out the computing capability by adding more computing nodes into our system. The reduced communication complexity is desirable since communication overhead is often the performance bottleneck in distributed systems. Recently, momentum methods are more and more widely adopted in training machine learning models and can often converge faster and generalize better. For example, many practitioners use distributed SGD with momentum to train deep neural networks with big data. However, it remains unclear whether any distributed momentum SGD possesses the same linear speedup property as distributed SGD and has reduced communication complexity. This paper fills the gap by considering a distributed communication efficient momentum SGD method and proving its linear speedup property.},
+	urldate = {2020-05-15},
+	journal = {arXiv:1905.03817 [cs, math]},
+	author = {Yu, Hao and Jin, Rong and Yang, Sen},
+	month = may,
+	year = {2019},
+	keywords = {Mathematics - Optimization and Control, Computer Science - Machine Learning},
+	annote = {arXiv: 1905.03817},
+	annote = {Comment: A short version of this paper is accepted to ICML 2019}
+}
+
+@article{khaled_tighter_2020,
+	title = {Tighter {Theory} for {Local} {SGD} on {Identical} and {Heterogeneous} {Data}},
+	url = {http://arxiv.org/abs/1909.04746},
+	abstract = {We provide a new analysis of local SGD, removing unnecessary assumptions and elaborating on the difference between two data regimes: identical and heterogeneous. In both cases, we improve the existing theory and provide values of the optimal stepsize and optimal number of local iterations. Our bounds are based on a new notion of variance that is specific to local SGD methods with different data. The tightness of our results is guaranteed by recovering known statements when we plug \$H=1\$, where \$H\$ is the number of local steps. The empirical evidence further validates the severe impact of data heterogeneity on the performance of local SGD.},
+	urldate = {2020-05-15},
+	journal = {arXiv:1909.04746 [cs, math, stat]},
+	author = {Khaled, Ahmed and Mishchenko, Konstantin and Richt{\'a}rik, Peter},
+	month = mar,
+	year = {2020},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Mathematics - Optimization and Control, Computer Science - Machine Learning, Mathematics - Numerical Analysis},
+	annote = {arXiv: 1909.04746},
+	annote = {Comment: To appear in AISTATS 2020. 31 pages, 1 algorithm, 5 theorems, 6 figures}
+}
+
+@article{reddi_adaptive_2020,
+	title = {Adaptive {Federated} {Optimization}},
+	url = {http://arxiv.org/abs/2003.00295},
+	abstract = {Federated learning is a distributed machine learning paradigm in which a large number of clients coordinate with a central server to learn a model without sharing their own training data. Due to the heterogeneity of the client datasets, standard federated optimization methods such as Federated Averaging (FedAvg) are often difficult to tune and exhibit unfavorable convergence behavior. In non-federated settings, adaptive optimization methods have had notable success in combating such issues. In this work, we propose federated versions of adaptive optimizers, including Adagrad, Adam, and Yogi, and analyze their convergence in the presence of heterogeneous data for general nonconvex settings. Our results highlight the interplay between client heterogeneity and communication efficiency. We also perform extensive experiments on these methods and show that the use of adaptive optimizers can significantly improve the performance of federated learning.},
+	urldate = {2020-05-15},
+	journal = {arXiv:2003.00295 [cs, math, stat]},
+	author = {Reddi, Sashank and Charles, Zachary and Zaheer, Manzil and Garrett, Zachary and Rush, Keith and Kone{\v c}n{\'y}, Jakub and Kumar, Sanjiv and McMahan, H. Brendan},
+	month = feb,
+	year = {2020},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Mathematics - Optimization and Control, Computer Science - Machine Learning},
+	annote = {arXiv: 2003.00295}
+}
+
+@article{guha_one-shot_2019,
+	title = {One-{Shot} {Federated} {Learning}},
+	url = {http://arxiv.org/abs/1902.11175},
+	abstract = {We present one-shot federated learning, where a central server learns a global model over a network of federated devices in a single round of communication. Our approach - drawing on ensemble learning and knowledge aggregation - achieves an average relative gain of 51.5\% in AUC over local baselines and comes within 90.1\% of the (unattainable) global ideal. We discuss these methods and identify several promising directions of future work.},
+	urldate = {2020-05-15},
+	journal = {arXiv:1902.11175 [cs, stat]},
+	author = {Guha, Neel and Talwalkar, Ameet and Smith, Virginia},
+	month = mar,
+	year = {2019},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1902.11175},
+	annote = {Comment: 5 pages, 3 figures, 1 table. 2nd Workshop on Machine Learning on the Phone and other Consumer Devices, NeurIPs 2018}
+}
+
+@article{reisizadeh_fedpaq_2020,
+	title = {{FedPAQ}: {A} {Communication}-{Efficient} {Federated} {Learning} {Method} with {Periodic} {Averaging} and {Quantization}},
+	shorttitle = {{FedPAQ}},
+	url = {http://arxiv.org/abs/1909.13014},
+	abstract = {Federated learning is a distributed framework according to which a model is trained over a set of devices, while keeping data localized. This framework faces several systems-oriented challenges which include (i) communication bottleneck since a large number of devices upload their local updates to a parameter server, and (ii) scalability as the federated network consists of millions of devices. Due to these systems challenges as well as issues related to statistical heterogeneity of data and privacy concerns, designing a provably efficient federated learning method is of significant importance yet it remains challenging. In this paper, we present FedPAQ, a communication-efficient Federated Learning method with Periodic Averaging and Quantization. FedPAQ relies on three key features: (1) periodic averaging where models are updated locally at devices and only periodically averaged at the server; (2) partial device participation where only a fraction of devices participate in each round of the training; and (3) quantized message-passing where the edge nodes quantize their updates before uploading to the parameter server. These features address the communications and scalability challenges in federated learning. We also show that FedPAQ achieves near-optimal theoretical guarantees for strongly convex and non-convex loss functions and empirically demonstrate the communication-computation tradeoff provided by our method.},
+	urldate = {2020-05-15},
+	journal = {arXiv:1909.13014 [cs, math, stat]},
+	author = {Reisizadeh, Amirhossein and Mokhtari, Aryan and Hassani, Hamed and Jadbabaie, Ali and Pedarsani, Ramtin},
+	month = mar,
+	year = {2020},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Mathematics - Optimization and Control, Computer Science - Machine Learning},
+	annote = {arXiv: 1909.13014}
+}
+
+@article{dai_hyper-sphere_2019,
+	title = {Hyper-{Sphere} {Quantization}: {Communication}-{Efficient} {SGD} for {Federated} {Learning}},
+	shorttitle = {Hyper-{Sphere} {Quantization}},
+	url = {http://arxiv.org/abs/1911.04655},
+	abstract = {The high cost of communicating gradients is a major bottleneck for federated learning, as the bandwidth of the participating user devices is limited. Existing gradient compression algorithms are mainly designed for data centers with high-speed network and achieve \$O({\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashsqrt\{d\} {\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashlog d)\$ per-iteration communication cost at best, where \$d\$ is the size of the model. We propose hyper-sphere quantization (HSQ), a general framework that can be configured to achieve a continuum of trade-offs between communication efficiency and gradient accuracy. In particular, at the high compression ratio end, HSQ provides a low per-iteration communication cost of \$O({\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashlog d)\$, which is favorable for federated learning. We prove the convergence of HSQ theoretically and show by experiments that HSQ significantly reduces the communication cost of model training without hurting convergence accuracy.},
+	urldate = {2020-05-15},
+	journal = {arXiv:1911.04655 [cs, stat]},
+	author = {Dai, Xinyan and Yan, Xiao and Zhou, Kaiwen and Yang, Han and Ng, Kelvin K. W. and Cheng, James and Fan, Yu},
+	month = nov,
+	year = {2019},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning, Computer Science - Information Retrieval},
+	annote = {arXiv: 1911.04655}
+}
+
+@article{lin_dont_2020,
+	title = {Don't {Use} {Large} {Mini}-{Batches}, {Use} {Local} {SGD}},
+	url = {http://arxiv.org/abs/1808.07217},
+	abstract = {Mini-batch stochastic gradient methods (SGD) are state of the art for distributed training of deep neural networks. Drastic increases in the mini-batch sizes have lead to key efficiency and scalability gains in recent years. However, progress faces a major roadblock, as models trained with large batches often do not generalize well, i.e. they do not show good accuracy on new data. As a remedy, we propose a {\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashemph\{post-local\} SGD and show that it significantly improves the generalization performance compared to large-batch training on standard benchmarks while enjoying the same efficiency (time-to-accuracy) and scalability. We further provide an extensive study of the communication efficiency vs. performance trade-offs associated with a host of {\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashemph\{local SGD\} variants.},
+	urldate = {2020-05-15},
+	journal = {arXiv:1808.07217 [cs, stat]},
+	author = {Lin, Tao and Stich, Sebastian U. and Patel, Kumar Kshitij and Jaggi, Martin},
+	month = feb,
+	year = {2020},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1808.07217},
+	annote = {Comment: To appear in ICLR 2020}
+}
+
+@article{wang_cooperative_2019,
+	title = {Cooperative {SGD}: {A} unified {Framework} for the {Design} and {Analysis} of {Communication}-{Efficient} {SGD} {Algorithms}},
+	shorttitle = {Cooperative {SGD}},
+	url = {http://arxiv.org/abs/1808.07576},
+	abstract = {Communication-efficient SGD algorithms, which allow nodes to perform local updates and periodically synchronize local models, are highly effective in improving the speed and scalability of distributed SGD. However, a rigorous convergence analysis and comparative study of different communication-reduction strategies remains a largely open problem. This paper presents a unified framework called Cooperative SGD that subsumes existing communication-efficient SGD algorithms such as periodic-averaging, elastic-averaging and decentralized SGD. By analyzing Cooperative SGD, we provide novel convergence guarantees for existing algorithms. Moreover, this framework enables us to design new communication-efficient SGD algorithms that strike the best balance between reducing communication overhead and achieving fast error convergence with low error floor.},
+	urldate = {2020-05-15},
+	journal = {arXiv:1808.07576 [cs, stat]},
+	author = {Wang, Jianyu and Joshi, Gauri},
+	month = jan,
+	year = {2019},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1808.07576}
+}
+
+@article{agarwal_cpsgd_nodate,
+	title = {{cpSGD}: {Communication}-efficient and differentially-private distributed {SGD}},
+	abstract = {Distributed stochastic gradient descent is an important subroutine in distributed learning. A setting of particular interest is when the clients are mobile devices, where two important concerns are communication efficiency and the privacy of the clients. Several recent works have focused on reducing the communication cost or introducing privacy guarantees, but none of the proposed communication efficient methods are known to be privacy preserving and none of the known privacy mechanisms are known to be communication efficient. To this end, we study algorithms that achieve both communication efficiency and differential privacy. For d variables and n ? d clients, the proposed method uses O(log log(nd)) bits of communication per client per coordinate and ensures constant privacy.},
+	language = {en},
+	author = {Agarwal, Naman and Suresh, Ananda Theertha and Yu, Felix Xinnan X and Kumar, Sanjiv and McMahan, Brendan},
+	pages = {12}
+}
+
+@article{antoniou_how_2019,
+	title = {How to train your {MAML}},
+	url = {http://arxiv.org/abs/1810.09502},
+	abstract = {The field of few-shot learning has recently seen substantial advancements. Most of these advancements came from casting few-shot learning as a meta-learning problem. Model Agnostic Meta Learning or MAML is currently one of the best approaches for few-shot learning via meta-learning. MAML is simple, elegant and very powerful, however, it has a variety of issues, such as being very sensitive to neural network architectures, often leading to instability during training, requiring arduous hyperparameter searches to stabilize training and achieve high generalization and being very computationally expensive at both training and inference times. In this paper, we propose various modifications to MAML that not only stabilize the system, but also substantially improve the generalization performance, convergence speed and computational overhead of MAML, which we call MAML++.},
+	urldate = {2020-05-15},
+	journal = {arXiv:1810.09502 [cs, stat]},
+	author = {Antoniou, Antreas and Edwards, Harrison and Storkey, Amos},
+	month = mar,
+	year = {2019},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1810.09502},
+	annote = {Comment: Published in ICLR 2019}
+}
+
+@article{behl_alpha_2019,
+	title = {Alpha {MAML}: {Adaptive} {Model}-{Agnostic} {Meta}-{Learning}},
+	shorttitle = {Alpha {MAML}},
+	url = {http://arxiv.org/abs/1905.07435},
+	abstract = {Model-agnostic meta-learning (MAML) is a meta-learning technique to train a model on a multitude of learning tasks in a way that primes the model for few-shot learning of new tasks. The MAML algorithm performs well on few-shot learning problems in classification, regression, and fine-tuning of policy gradients in reinforcement learning, but comes with the need for costly hyperparameter tuning for training stability. We address this shortcoming by introducing an extension to MAML, called Alpha MAML, to incorporate an online hyperparameter adaptation scheme that eliminates the need to tune meta-learning and learning rates. Our results with the Omniglot database demonstrate a substantial reduction in the need to tune MAML training hyperparameters and improvement to training stability with less sensitivity to hyperparameter choice.},
+	urldate = {2020-05-15},
+	journal = {arXiv:1905.07435 [cs, stat]},
+	author = {Behl, Harkirat Singh and Baydin, At{\i}l{\i}m G{\"u}ne{\c s} and Torr, Philip H. S.},
+	month = may,
+	year = {2019},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning, Computer Science - Artificial Intelligence},
+	annote = {arXiv: 1905.07435},
+	annote = {Comment: 6th ICML Workshop on Automated Machine Learning (2019)}
+}
+
+@article{chen_federated_2019,
+	title = {Federated {Meta}-{Learning} with {Fast} {Convergence} and {Efficient} {Communication}},
+	url = {http://arxiv.org/abs/1802.07876},
+	abstract = {Statistical and systematic challenges in collaboratively training machine learning models across distributed networks of mobile devices have been the bottlenecks in the real-world application of federated learning. In this work, we show that meta-learning is a natural choice to handle these issues, and propose a federated meta-learning framework FedMeta, where a parameterized algorithm (or metalearner) is shared, instead of a global model in previous approaches. We conduct an extensive empirical evaluation on LEAF datasets and a real-world production dataset, and demonstrate that FedMeta achieves a reduction in required communication cost by 2.82-4.33 times with faster convergence, and an increase in accuracy by 3.23\%-14.84\% as compared to Federated Averaging (FedAvg) which is a leading optimization algorithm in federated learning. Moreover, FedMeta preserves user privacy since only the parameterized algorithm is transmitted between mobile devices and central servers, and no raw data is collected onto the servers.},
+	language = {en},
+	urldate = {2020-05-15},
+	journal = {arXiv:1802.07876 [cs]},
+	author = {Chen, Fei and Luo, Mi and Dong, Zhenhua and Li, Zhenguo and He, Xiuqiang},
+	month = dec,
+	year = {2019},
+	keywords = {Computer Science - Machine Learning, Computer Science - Information Retrieval},
+	annote = {arXiv: 1802.07876}
+}
+
+@article{duchi_privacy_2014,
+	title = {Privacy {Aware} {Learning}},
+	volume = {61},
+	issn = {0004-5411, 1557-735X},
+	url = {https://dl.acm.org/doi/10.1145/2666468},
+	doi = {10.1145/2666468},
+	abstract = {We study statistical risk minimization problems under a version of privacy in which the data is kept confidential even from the learner. In this local privacy framework, we establish sharp upper and lower bounds on the convergence rates of statistical estimation procedures. As a consequence, we exhibit a precise tradeoff between the amount of privacy the data preserves and the utility, measured by convergence rate, of any statistical estimator.},
+	language = {en},
+	number = {6},
+	urldate = {2020-05-15},
+	journal = {J. ACM},
+	author = {Duchi, John C. and Jordan, Michael I. and Wainwright, Martin J.},
+	month = dec,
+	year = {2014},
+	pages = {1--57}
+}
+
+@article{grant_recasting_2018,
+	title = {Recasting {Gradient}-{Based} {Meta}-{Learning} as {Hierarchical} {Bayes}},
+	url = {http://arxiv.org/abs/1801.08930},
+	abstract = {Meta-learning allows an intelligent agent to leverage prior learning episodes as a basis for quickly improving performance on a novel task. Bayesian hierarchical modeling provides a theoretical framework for formalizing meta-learning as inference for a set of parameters that are shared across tasks. Here, we reformulate the model-agnostic meta-learning algorithm (MAML) of Finn et al. (2017) as a method for probabilistic inference in a hierarchical Bayesian model. In contrast to prior methods for meta-learning via hierarchical Bayes, MAML is naturally applicable to complex function approximators through its use of a scalable gradient descent procedure for posterior inference. Furthermore, the identification of MAML as hierarchical Bayes provides a way to understand the algorithm's operation as a meta-learning procedure, as well as an opportunity to make use of computational strategies for efficient inference. We use this opportunity to propose an improvement to the MAML algorithm that makes use of techniques from approximate inference and curvature estimation.},
+	urldate = {2020-05-15},
+	journal = {arXiv:1801.08930 [cs]},
+	author = {Grant, Erin and Finn, Chelsea and Levine, Sergey and Darrell, Trevor and Griffiths, Thomas},
+	month = jan,
+	year = {2018},
+	keywords = {Computer Science - Machine Learning},
+	annote = {arXiv: 1801.08930}
+}
+
+@article{hard_federated_2019,
+	title = {Federated {Learning} for {Mobile} {Keyboard} {Prediction}},
+	url = {http://arxiv.org/abs/1811.03604},
+	abstract = {We train a recurrent neural network language model using a distributed, on-device learning framework called federated learning for the purpose of next-word prediction in a virtual keyboard for smartphones. Server-based training using stochastic gradient descent is compared with training on client devices using the Federated Averaging algorithm. The federated algorithm, which enables training on a higher-quality dataset for this use case, is shown to achieve better prediction recall. This work demonstrates the feasibility and benefit of training language models on client devices without exporting sensitive user data to servers. The federated learning environment gives users greater control over the use of their data and simplifies the task of incorporating privacy by default with distributed training and aggregation across a population of client devices.},
+	urldate = {2020-05-18},
+	journal = {arXiv:1811.03604 [cs]},
+	author = {Hard, Andrew and Rao, Kanishka and Mathews, Rajiv and Ramaswamy, Swaroop and Beaufays, Fran{\c c}oise and Augenstein, Sean and Eichner, Hubert and Kiddon, Chlo{\'e} and Ramage, Daniel},
+	month = feb,
+	year = {2019},
+	keywords = {Computer Science - Computation and Language},
+	annote = {arXiv: 1811.03604},
+	annote = {Comment: 7 pages, 4 figures}
+}
+
+@article{chen_federated_2018,
+	title = {Federated {Meta}-{Learning} for {Recommendation}},
+	abstract = {Recommender systems have been widely studied from the machine learning perspective, where it is crucial to share information among users while preserving user privacy. In this work, we present a federated meta-learning framework for recommendation in which user information is shared at the level of algorithm, instead of model or data adopted in previous approaches. In this framework, user-specific recommendation models are locally trained by a shared parameterized algorithm, which preserves user privacy and at the same time utilizes information from other users to help model training. Interestingly, the model thus trained exhibits a high capacity at a small scale, which is energy- and communication-efficient. Experimental results show that recommendation models trained by meta-learning algorithms in the proposed framework outperform the state-of-the-art in accuracy and scale. For example, on a production dataset, a shared model under Google Federated Learning (McMahan et al., 2017) with 900,000 parameters has prediction accuracy 76.72\%, while a shared algorithm under federated meta-learning with less than 30,000 parameters achieves accuracy of 86.23\%.},
+	author = {Chen, Fei and Dong, Zhenhua and Li, Zhenguo and He, Xiuqiang},
+	month = feb,
+	year = {2018}
+}
+
+@article{konecny_federated_2017,
+	title = {Federated {Learning}: {Strategies} for {Improving} {Communication} {Efficiency}},
+	shorttitle = {Federated {Learning}},
+	url = {http://arxiv.org/abs/1610.05492},
+	abstract = {Federated Learning is a machine learning setting where the goal is to train a high-quality centralized model while training data remains distributed over a large number of clients each with unreliable and relatively slow network connections. We consider learning algorithms for this setting where on each round, each client independently computes an update to the current model based on its local data, and communicates this update to a central server, where the client-side updates are aggregated to compute a new global model. The typical clients in this setting are mobile phones, and communication efficiency is of the utmost importance. In this paper, we propose two ways to reduce the uplink communication costs: structured updates, where we directly learn an update from a restricted space parametrized using a smaller number of variables, e.g. either low-rank or a random mask; and sketched updates, where we learn a full model update and then compress it using a combination of quantization, random rotations, and subsampling before sending it to the server. Experiments on both convolutional and recurrent networks show that the proposed methods can reduce the communication cost by two orders of magnitude.},
+	urldate = {2020-05-18},
+	journal = {arXiv:1610.05492 [cs]},
+	author = {Kone{\v c}n{\'y}, Jakub and McMahan, H. Brendan and Yu, Felix X. and Richt{\'a}rik, Peter and Suresh, Ananda Theertha and Bacon, Dave},
+	month = oct,
+	year = {2017},
+	keywords = {Computer Science - Machine Learning},
+	annote = {arXiv: 1610.05492}
+}
+
+@article{li_convergence_2020,
+	title = {On the {Convergence} of {FedAvg} on {Non}-{IID} {Data}},
+	url = {http://arxiv.org/abs/1907.02189},
+	abstract = {Federated learning enables a large amount of edge computing devices to jointly learn a model without data sharing. As a leading algorithm in this setting, Federated Averaging ({\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtexttt\{FedAvg\}) runs Stochastic Gradient Descent (SGD) in parallel on a small subset of the total devices and averages the sequences only once in a while. Despite its simplicity, it lacks theoretical guarantees under realistic settings. In this paper, we analyze the convergence of {\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtexttt\{FedAvg\} on non-iid data and establish a convergence rate of \${\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashmathcal\{O\}({\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashfrac\{1\}\{T\})\$ for strongly convex and smooth problems, where \$T\$ is the number of SGDs. Importantly, our bound demonstrates a trade-off between communication-efficiency and convergence rate. As user devices may be disconnected from the server, we relax the assumption of full device participation to partial device participation and study different averaging schemes; low device participation rate can be achieved without severely slowing down the learning. Our results indicate that heterogeneity of data slows down the convergence, which matches empirical observations. Furthermore, we provide a necessary condition for {\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashtexttt\{FedAvg\} on non-iid data: the learning rate \${\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslasheta\$ must decay, even if full-gradient is used; otherwise, the solution will be \${\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslashOmega ({\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashtextbackslasheta)\$ away from the optimal.},
+	urldate = {2020-05-18},
+	journal = {arXiv:1907.02189 [cs, math, stat]},
+	author = {Li, Xiang and Huang, Kaixuan and Yang, Wenhao and Wang, Shusen and Zhang, Zhihua},
+	month = feb,
+	year = {2020},
+	keywords = {Statistics - Machine Learning, Mathematics - Optimization and Control, Computer Science - Machine Learning},
+	annote = {arXiv: 1907.02189},
+	annote = {Comment: 2020 International Conference on Learning Representations}
+}
+
+@article{li_meta-sgd_2017,
+	title = {Meta-{SGD}: {Learning} to {Learn} {Quickly} for {Few}-{Shot} {Learning}},
+	shorttitle = {Meta-{SGD}},
+	url = {http://arxiv.org/abs/1707.09835},
+	abstract = {Few-shot learning is challenging for learning algorithms that learn each task in isolation and from scratch. In contrast, meta-learning learns from many related tasks a meta-learner that can learn a new task more accurately and faster with fewer examples, where the choice of meta-learners is crucial. In this paper, we develop Meta-SGD, an SGD-like, easily trainable meta-learner that can initialize and adapt any differentiable learner in just one step, on both supervised learning and reinforcement learning. Compared to the popular meta-learner LSTM, Meta-SGD is conceptually simpler, easier to implement, and can be learned more efficiently. Compared to the latest meta-learner MAML, Meta-SGD has a much higher capacity by learning to learn not just the learner initialization, but also the learner update direction and learning rate, all in a single meta-learning process. Meta-SGD shows highly competitive performance for few-shot learning on regression, classification, and reinforcement learning.},
+	urldate = {2020-05-18},
+	journal = {arXiv:1707.09835 [cs]},
+	author = {Li, Zhenguo and Zhou, Fengwei and Chen, Fei and Li, Hang},
+	month = sep,
+	year = {2017},
+	keywords = {Computer Science - Machine Learning},
+	annote = {arXiv: 1707.09835},
+	annote = {Comment: reinforcement learning included, 20-way classification on MiniImagenet included}
+}
+
+@article{zhao_federated_2018,
+	title = {Federated {Learning} with {Non}-{IID} {Data}},
+	url = {http://arxiv.org/abs/1806.00582},
+	abstract = {Federated learning enables resource-constrained edge compute devices, such as mobile phones and IoT devices, to learn a shared model for prediction, while keeping the training data local. This decentralized approach to train models provides privacy, security, regulatory and economic benefits. In this work, we focus on the statistical challenge of federated learning when local data is non-IID. We first show that the accuracy of federated learning reduces significantly, by up to 55\% for neural networks trained for highly skewed non-IID data, where each client device trains only on a single class of data. We further show that this accuracy reduction can be explained by the weight divergence, which can be quantified by the earth mover's distance (EMD) between the distribution over classes on each device and the population distribution. As a solution, we propose a strategy to improve training on non-IID data by creating a small subset of data which is globally shared between all the edge devices. Experiments show that accuracy can be increased by 30\% for the CIFAR-10 dataset with only 5\% globally shared data.},
+	urldate = {2020-05-18},
+	journal = {arXiv:1806.00582 [cs, stat]},
+	author = {Zhao, Yue and Li, Meng and Lai, Liangzhen and Suda, Naveen and Civin, Damon and Chandra, Vikas},
+	month = jun,
+	year = {2018},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1806.00582}
+}
+
+@article{zhu_federated_2020,
+	title = {Federated {Heavy} {Hitters} {Discovery} with {Differential} {Privacy}},
+	url = {http://arxiv.org/abs/1902.08534},
+	abstract = {The discovery of heavy hitters (most frequent items) in user-generated data streams drives improvements in the app and web ecosystems, but can incur substantial privacy risks if not done with care. To address these risks, we propose a distributed and privacy-preserving algorithm for discovering the heavy hitters in a population of user-generated data streams. We leverage the sampling and thresholding properties of our distributed algorithm to prove that it is inherently differentially private, without requiring additional noise. We also examine the trade-off between privacy and utility, and show that our algorithm provides excellent utility while also achieving strong privacy guarantees. A significant advantage of this approach is that it eliminates the need to centralize raw data while also avoiding the significant loss in utility incurred by local differential privacy. We validate our findings both theoretically, using worst-case analyses, and practically, using a Twitter dataset with 1.6M tweets and over 650k users. Finally, we carefully compare our approach to Apple's local differential privacy method for discovering heavy hitters.},
+	urldate = {2020-05-18},
+	journal = {arXiv:1902.08534 [cs]},
+	author = {Zhu, Wennan and Kairouz, Peter and McMahan, Brendan and Sun, Haicheng and Li, Wei},
+	month = feb,
+	year = {2020},
+	keywords = {Computer Science - Cryptography and Security},
+	annote = {arXiv: 1902.08534}
+}
+
+@article{zintgraf_fast_2019,
+	title = {Fast {Context} {Adaptation} via {Meta}-{Learning}},
+	url = {http://arxiv.org/abs/1810.03642},
+	abstract = {We propose CAVIA for meta-learning, a simple extension to MAML that is less prone to meta-overfitting, easier to parallelise, and more interpretable. CAVIA partitions the model parameters into two parts: context parameters that serve as additional input to the model and are adapted on individual tasks, and shared parameters that are meta-trained and shared across tasks. At test time, only the context parameters are updated, leading to a low-dimensional task representation. We show empirically that CAVIA outperforms MAML for regression, classification, and reinforcement learning. Our experiments also highlight weaknesses in current benchmarks, in that the amount of adaptation needed in some cases is small.},
+	urldate = {2020-05-18},
+	journal = {arXiv:1810.03642 [cs, stat]},
+	author = {Zintgraf, Luisa M. and Shiarlis, Kyriacos and Kurin, Vitaly and Hofmann, Katja and Whiteson, Shimon},
+	month = jun,
+	year = {2019},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1810.03642},
+	annote = {Comment: Published at the International Conference on Machine Learning (ICML) 2019}
+}
+
+@article{mcmahan_learning_2018,
+	title = {Learning {Differentially} {Private} {Recurrent} {Language} {Models}},
+	url = {http://arxiv.org/abs/1710.06963},
+	abstract = {We demonstrate that it is possible to train large recurrent language models with user-level differential privacy guarantees with only a negligible cost in predictive accuracy. Our work builds on recent advances in the training of deep networks on user-partitioned data and privacy accounting for stochastic gradient descent. In particular, we add user-level privacy protection to the federated averaging algorithm, which makes "large step" updates from user-level data. Our work demonstrates that given a dataset with a sufficiently large number of users (a requirement easily met by even small internet-scale datasets), achieving differential privacy comes at the cost of increased computation, rather than in decreased utility as in most prior work. We find that our private LSTM language models are quantitatively and qualitatively similar to un-noised models when trained on a large dataset.},
+	urldate = {2020-05-18},
+	journal = {arXiv:1710.06963 [cs]},
+	author = {McMahan, H. Brendan and Ramage, Daniel and Talwar, Kunal and Zhang, Li},
+	month = feb,
+	year = {2018},
+	keywords = {Computer Science - Machine Learning},
+	annote = {arXiv: 1710.06963},
+	annote = {Comment: Camera-ready ICLR 2018 version, minor edits from previous}
+}
+
+@article{smith_federated_2018,
+	title = {Federated {Multi}-{Task} {Learning}},
+	url = {http://arxiv.org/abs/1705.10467},
+	abstract = {Federated learning poses new statistical and systems challenges in training machine learning models over distributed networks of devices. In this work, we show that multi-task learning is naturally suited to handle the statistical challenges of this setting, and propose a novel systems-aware optimization method, MOCHA, that is robust to practical systems issues. Our method and theory for the first time consider issues of high communication cost, stragglers, and fault tolerance for distributed multi-task learning. The resulting method achieves significant speedups compared to alternatives in the federated setting, as we demonstrate through simulations on real-world federated datasets.},
+	urldate = {2020-05-18},
+	journal = {arXiv:1705.10467 [cs, stat]},
+	author = {Smith, Virginia and Chiang, Chao-Kai and Sanjabi, Maziar and Talwalkar, Ameet},
+	month = feb,
+	year = {2018},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1705.10467}
+}
+
+@article{rajeswaran_meta-learning_2019,
+	title = {Meta-{Learning} with {Implicit} {Gradients}},
+	url = {http://arxiv.org/abs/1909.04630},
+	abstract = {A core capability of intelligent systems is the ability to quickly learn new tasks by drawing on prior experience. Gradient (or optimization) based meta-learning has recently emerged as an effective approach for few-shot learning. In this formulation, meta-parameters are learned in the outer loop, while task-specific models are learned in the inner-loop, by using only a small amount of data from the current task. A key challenge in scaling these approaches is the need to differentiate through the inner loop learning process, which can impose considerable computational and memory burdens. By drawing upon implicit differentiation, we develop the implicit MAML algorithm, which depends only on the solution to the inner level optimization and not the path taken by the inner loop optimizer. This effectively decouples the meta-gradient computation from the choice of inner loop optimizer. As a result, our approach is agnostic to the choice of inner loop optimizer and can gracefully handle many gradient steps without vanishing gradients or memory constraints. Theoretically, we prove that implicit MAML can compute accurate meta-gradients with a memory footprint that is, up to small constant factors, no more than that which is required to compute a single inner loop gradient and at no overall increase in the total computational cost. Experimentally, we show that these benefits of implicit MAML translate into empirical gains on few-shot image recognition benchmarks.},
+	urldate = {2020-05-18},
+	journal = {arXiv:1909.04630 [cs, math, stat]},
+	author = {Rajeswaran, Aravind and Finn, Chelsea and Kakade, Sham and Levine, Sergey},
+	month = sep,
+	year = {2019},
+	keywords = {Statistics - Machine Learning, Mathematics - Optimization and Control, Computer Science - Machine Learning, Computer Science - Artificial Intelligence},
+	annote = {arXiv: 1909.04630},
+	annote = {Comment: NeurIPS 2019. First two authors contributed equally}
+}
+
+@article{li_communication-efficient_2020,
+	title = {Communication-{Efficient} {Local} {Decentralized} {SGD} {Methods}},
+	url = {http://arxiv.org/abs/1910.09126},
+	abstract = {Recently, the technique of local updates is a powerful tool in centralized settings to improve communication efficiency via periodical communication. For decentralized settings, it is still unclear how to efficiently combine local updates and decentralized communication. In this work, we propose an algorithm named as LD-SGD, which incorporates arbitrary update schemes that alternate between multiple Local updates and multiple Decentralized SGDs, and provide an analytical framework for LD-SGD. Under the framework, we present a sufficient condition to guarantee the convergence. We show that LD-SGD converges to a critical point for a wide range of update schemes when the objective is non-convex and the training data are non-identically independent distributed. Moreover, our framework brings many insights into the design of update schemes for decentralized optimization. As examples, we specify two update schemes and show how they help improve communication efficiency. Specifically, the first scheme alternates the number of local and global update steps. From our analysis, the ratio of the number of local updates to that of decentralized SGD trades off communication and computation. The second scheme is to periodically shrink the length of local updates. We show that the decaying strategy helps improve communication efficiency both theoretically and empirically.},
+	urldate = {2020-05-18},
+	journal = {arXiv:1910.09126 [cs, math, stat]},
+	author = {Li, Xiang and Yang, Wenhao and Wang, Shusen and Zhang, Zhihua},
+	month = feb,
+	year = {2020},
+	keywords = {Statistics - Machine Learning, Mathematics - Optimization and Control, Computer Science - Machine Learning},
+	annote = {arXiv: 1910.09126}
+}
+
+@book{li_communication_2019,
+	title = {Communication {Efficient} {Decentralized} {Training} with {Multiple} {Local} {Updates}},
+	abstract = {Communication efficiency plays a significant role in decentralized optimization, especially when the data is highly non-identically distributed. In this paper, we propose a novel algorithm that we call Periodic Decentralized SGD (PD-SGD), to reduce the communication cost in a decentralized heterogeneous network. PD-SGD alternates between multiple local updates and multiple decentralized communications, making communication more flexible and controllable. We theoretically prove PD-SGD convergence at speed \$O({\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashfrac\{1\}\{{\textbackslash}textbackslashtextbackslashtextbackslashtextbackslashsqrt\{nT\}\})\$ under the setting of stochastic non-convex optimization and non-i.i.d. data where \$n\$ is the number of worker nodes. We also propose a novel decay strategy which periodically shrinks the length of local updates. PD-SGD equipped with this strategy can better balance the communication-convergence trade-off both theoretically and empirically.},
+	author = {Li, Xiang and Yang, Wenhao and Wang, Shusen and Zhang, Zhihua},
+	month = oct,
+	year = {2019}
+}
+
+@article{nguyen_new_2019,
+	title = {New {Convergence} {Aspects} of {Stochastic} {Gradient} {Algorithms}},
+	volume = {20},
+	abstract = {The classical convergence analysis of SGD is carried out under the assumption that the norm of the stochastic gradient is uniformly bounded. While this might hold for some loss functions, it is violated for cases where the objective function is strongly convex. In Bottou et al. (2018), a new analysis of convergence of SGD is performed under the assumption that stochastic gradients are bounded with respect to the true gradient norm. We show that for stochastic problems arising in machine learning such bound always holds; and we also propose an alternative convergence analysis of SGD with diminishing learning rate regime. We then move on to the asynchronous parallel setting, and prove convergence of Hogwild! algorithm in the same regime in the case of diminished learning rate. It is well-known that SGD converges if a sequence of learning rates \{$\eta$ t \} satisfies \${\i}nfty\$ t=0 $\eta$ t {\textrightarrow} \${\i}nfty\$ and \${\i}nfty\$ t=0 $\eta$ 2 t {\textbackslash}textbackslashtextbackslashtextbackslashtextless \${\i}nfty\$. We show the convergence of SGD for strongly convex objective function without using bounded gradient assumption when \{$\eta$ t \} is a diminishing sequence and \${\i}nfty\$ t=0 $\eta$ t {\textrightarrow} \${\i}nfty\$. In other words, we extend the current state-of-the-art class of learning rates satisfying the convergence of SGD.},
+	journal = {Journal of Machine Learning Research},
+	author = {Nguyen, Lam and Nguyen, Phuong and Richt{\'a}rik, Peter and Scheinberg, Katya and Tak{\'a}{\v c}, Martin and van Dijk, Marten},
+	month = nov,
+	year = {2019}
+}
+
+@article{li_federated_2019-1,
+	title = {Federated {Learning}: {Challenges}, {Methods}, and {Future} {Directions}},
+	shorttitle = {Federated {Learning}},
+	url = {http://arxiv.org/abs/1908.07873},
+	abstract = {Federated learning involves training statistical models over remote devices or siloed data centers, such as mobile phones or hospitals, while keeping data localized. Training in heterogeneous and potentially massive networks introduces novel challenges that require a fundamental departure from standard approaches for large-scale machine learning, distributed optimization, and privacy-preserving data analysis. In this article, we discuss the unique characteristics and challenges of federated learning, provide a broad overview of current approaches, and outline several directions of future work that are relevant to a wide range of research communities.},
+	urldate = {2020-05-23},
+	journal = {arXiv:1908.07873 [cs, stat]},
+	author = {Li, Tian and Sahu, Anit Kumar and Talwalkar, Ameet and Smith, Virginia},
+	month = aug,
+	year = {2019},
+	keywords = {and Cluster Computing, Computer Science - Distributed, Parallel, Statistics - Machine Learning, Computer Science - Machine Learning},
+	annote = {arXiv: 1908.07873}
+}
+
+@article{li_preserving_2020,
+	title = {Preserving {Data} {Privacy} via {Federated} {Learning}: {Challenges} and {Solutions}},
+	volume = {9},
+	issn = {2162-2248, 2162-2256},
+	shorttitle = {Preserving {Data} {Privacy} via {Federated} {Learning}},
+	url = {https://ieeexplore.ieee.org/document/9055478/},
+	doi = {10.1109/MCE.2019.2959108},
+	number = {3},
+	urldate = {2020-05-23},
+	journal = {IEEE Consumer Electronics Magazine},
+	author = {Li, Zengpeng and Sharma, Vishal and P. Mohanty, Saraju},
+	month = may,
+	year = {2020},
+	pages = {8--16}
+}
+
+@incollection{zhou_efficient_2019,
+	title = {Efficient {Meta} {Learning} via {Minibatch} {Proximal} {Update}},
+	url = {http://papers.nips.cc/paper/8432-efficient-meta-learning-via-minibatch-proximal-update.pdf},
+	urldate = {2020-05-24},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems} 32},
+	publisher = {Curran Associates, Inc.},
+	author = {Zhou, Pan and Yuan, Xiaotong and Xu, Huan and Yan, Shuicheng and Feng, Jiashi},
+	editor = {Wallach, H. and Larochelle, H. and Beygelzimer, A. and Alch{\'e}-Buc, F. d{\textbackslash}textbackslashtextbackslashtextbackslashtextquotesingle and Fox, E. and Garnett, R.},
+	year = {2019},
+	pages = {1534--1544}
+}
+
+@article{lemarechal_practical_1997,
+	title = {Practical {Aspects} of the {Moreau}{\textendash}{Yosida} {Regularization}: {Theoretical} {Preliminaries}},
+	volume = {7},
+	issn = {1052-6234, 1095-7189},
+	shorttitle = {Practical {Aspects} of the {Moreau}{\textendash}{Yosida} {Regularization}},
+	url = {http://epubs.siam.org/doi/10.1137/S1052623494267127},
+	doi = {10.1137/S1052623494267127},
+	language = {en},
+	number = {2},
+	urldate = {2020-05-29},
+	journal = {SIAM J. Optim.},
+	author = {Lemar{\'e}chal, Claude and Sagastiz{\'a}bal, Claudia},
+	month = may,
+	year = {1997},
+	pages = {367--385}
+}
+
+@article{planiden_strongly_2016,
+	title = {Strongly {Convex} {Functions}, {Moreau} {Envelopes}, and the {Generic} {Nature} of {Convex} {Functions} with {Strong} {Minimizers}},
+	volume = {26},
+	issn = {1052-6234, 1095-7189},
+	url = {http://epubs.siam.org/doi/10.1137/15M1035550},
+	doi = {10.1137/15M1035550},
+	language = {en},
+	number = {2},
+	urldate = {2020-05-29},
+	journal = {SIAM J. Optim.},
+	author = {Planiden, C. and Wang, X.},
+	month = jan,
+	year = {2016},
+	pages = {1341--1364}
+}
+
+@article{hoheisel_regularization_2020,
+	title = {A regularization interpretation of the proximal point method for weakly convex functions},
+	volume = {7},
+	issn = {2164-6074},
+	url = {http://aimsciences.org//article/doi/10.3934/jdg.2020005},
+	doi = {10.3934/jdg.2020005},
+	language = {en},
+	number = {1},
+	urldate = {2020-05-29},
+	journal = {Journal of Dynamics \& Games},
+	author = {Hoheisel, Tim and Laborde, Maxime and Oberman, Adam and {,Department of Mathematics and Statistics, McGill University, Montreal, Canada}},
+	year = {2020},
+	pages = {79--96}
+}
+
+@article{moreau_proprietes_1963,
+	title = {Propri{\'e}t{\'e}s des applications {\textquoteleft}prox{\textquoteright}},
+	language = {French},
+	number = {256},
+	journal = {Compte Rendus Acad. Sci.},
+	author = {Moreau, Jean-Jacques},
+	year = {1963},
+	pages = {1069--1071}
+}
+
+@article{bubeck_convex_2015,
+	title = {Convex {Optimization}: {Algorithms} and {Complexity}},
+	shorttitle = {Convex {Optimization}},
+	url = {http://arxiv.org/abs/1405.4980},
+	abstract = {This monograph presents the main complexity theorems in convex optimization and their corresponding algorithms. Starting from the fundamental theory of black-box optimization, the material progresses towards recent advances in structural optimization and stochastic optimization. Our presentation of black-box optimization, strongly influenced by Nesterov's seminal book and Nemirovski's lecture notes, includes the analysis of cutting plane methods, as well as (accelerated) gradient descent schemes. We also pay special attention to non-Euclidean settings (relevant algorithms include Frank-Wolfe, mirror descent, and dual averaging) and discuss their relevance in machine learning. We provide a gentle introduction to structural optimization with FISTA (to optimize a sum of a smooth and a simple non-smooth term), saddle-point mirror prox (Nemirovski's alternative to Nesterov's smoothing), and a concise description of interior point methods. In stochastic optimization we discuss stochastic gradient descent, mini-batches, random coordinate descent, and sublinear algorithms. We also briefly touch upon convex relaxation of combinatorial problems and the use of randomness to round solutions, as well as random walks based methods.},
+	urldate = {2020-06-02},
+	journal = {arXiv:1405.4980 [cs, math, stat]},
+	author = {Bubeck, S{\'e}bastien},
+	month = nov,
+	year = {2015},
+	keywords = {Statistics - Machine Learning, Mathematics - Optimization and Control, Computer Science - Machine Learning, Mathematics - Numerical Analysis, Computer Science - Computational Complexity},
+	annote = {arXiv: 1405.4980},
+	annote = {Comment: A previous version of the manuscript was titled "Theory of Convex Optimization for Machine Learning"},
+	file = {arXiv Fulltext PDF:/Users/joshnguyen/Zotero/storage/VFHZZAEY/Bubeck - 2015 - Convex Optimization Algorithms and Complexity.pdf:application/pdf;arXiv.org Snapshot:/Users/joshnguyen/Zotero/storage/U3SI77IC/1405.html:text/html}
+}
+
+@book{nesterov_lectures_2018,
+	address = {New York, NY},
+	title = {Lectures on convex optimization},
+	isbn = {978-3-319-91577-7},
+	url = {https://www.springer.com/gp/book/9783319915777},
+	abstract = {This book provides a comprehensive, modern introduction to convex optimization, a field that is becoming increasingly important in applied mathematics, economics and finance, engineering, and computer science, notably in data science and machine learning.
+
+Written by a leading expert in the field, this book includes recent advances in the algorithmic theory of convex optimization, naturally complementing the existing literature. It contains a unified and rigorous presentation of the acceleration techniques for minimization schemes of first- and second-order. It provides readers with a full treatment of the smoothing technique, which has tremendously extended the abilities of gradient-type methods. Several powerful approaches in structural optimization, including optimization in relative scale and polynomial-time interior-point methods, are also discussed in detail.
+
+Researchers in theoretical optimization as well as professionals working on optimization problems will find this book very useful. It presents many successful examples of how to develop very fast specialized minimization algorithms. Based on the author{\textquoteright}s lectures, it can naturally serve as the basis for introductory and advanced courses in convex optimization for students in engineering, economics, computer science and mathematics.},
+	publisher = {Springer Berlin Heidelberg},
+	author = {Nesterov, Yurii},
+	year = {2018}
+}

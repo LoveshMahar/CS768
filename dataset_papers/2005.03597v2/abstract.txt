@@ -1,0 +1,18 @@
+Concerned with the reliability of neural networks, researchers have developed
+verification techniques to prove their robustness. Most verifiers work with
+real-valued networks. Unfortunately, the exact (complete and sound) verifiers
+face scalability challenges and provide no correctness guarantees due to
+floating point errors. We argue that Binarized Neural Networks (BNNs) provide
+comparable robustness and allow exact and significantly more efficient
+verification. We present a new system, EEV, for efficient and exact
+verification of BNNs. EEV consists of two parts: (i) a novel SAT solver that
+speeds up BNN verification by natively handling the reified cardinality
+constraints arising in BNN encodings; and (ii) strategies to train
+solver-friendly robust BNNs by inducing balanced layer-wise sparsity and low
+cardinality bounds, and adaptively cancelling the gradients. We demonstrate the
+effectiveness of EEV by presenting the first exact verification results for
+L-inf-bounded adversarial robustness of nontrivial convolutional BNNs on the
+MNIST and CIFAR10 datasets. Compared to exact verification of real-valued
+networks of the same architectures on the same tasks, EEV verifies BNNs
+hundreds to thousands of times faster, while delivering comparable verifiable
+accuracy in most cases.

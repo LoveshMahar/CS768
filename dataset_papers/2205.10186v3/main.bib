@@ -1,0 +1,738 @@
+@article{Gardner2018,
+abstract = {Despite advances in scalable models, the inference tools used for Gaussian processes (GPs) have yet to fully capitalize on developments in computing hardware. We present an efficient and general approach to GP inference based on Blackbox Matrix-Matrix multiplication (BBMM). BBMM inference uses a modified batched version of the conjugate gradients algorithm to derive all terms for training and inference in a single call. BBMM reduces the asymptotic complexity of exact GP inference from O(n3) to O(n2). Adapting this algorithm to scalable approximations and complex GP models simply requires a routine for efficient matrix-matrix multiplication with the kernel and its derivative. In addition, BBMM uses a specialized preconditioner to substantially speed up convergence. In experiments we show that BBMM effectively uses GPU hardware to dramatically accelerate both exact GP inference and scalable approximations. Additionally, we provide GPyTorch, a software platform for scalable GP inference via BBMM, built on PyTorch.},
+archivePrefix = {arXiv},
+arxivId = {1809.11165},
+author = {Gardner, Jacob R. and Pleiss, Geoff and Bindel, David and Weinberger, Kilian Q. and Wilson, Andrew Gordon},
+eprint = {1809.11165},
+file = {:Users/christofferriis/Downloads/1809.11165.pdf:pdf},
+issn = {10495258},
+journal = {Advances in Neural Information Processing Systems},
+pages = {7576--7586},
+title = {{Gpytorch: Blackbox matrix-matrix Gaussian process inference with GPU acceleration}},
+volume = {31},
+year = {2018}
+}
+@article{MacKay1992,
+abstract = {Learning can be made more efficient if we can actively select particularly salient data points. Within a Bayesian learning framework, objective functions are discussed that measure the expected informativeness of candidate measurements. Three alternative specifications of what we want to gain information about lead to three different criteria for data selection. All these criteria depend on the assumption that the hypothesis space is correct, which may prove to be their main weakness.},
+annote = {Variance criterion for NN},
+author = {MacKay, David J. C.},
+doi = {10.1162/neco.1992.4.4.590},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/MacKay1992.pdf:pdf},
+issn = {0899-7667},
+journal = {Neural Computation},
+keywords = {Variance},
+mendeley-groups = {Active learning},
+mendeley-tags = {Variance},
+number = {4},
+pages = {590--604},
+title = {{Information-Based Objective Functions for Active Data Selection}},
+volume = {4},
+year = {1992}
+}
+
+@incollection{ONeill2017,
+annote = {Read 10/3/21
+
+Problem: Benchmark of EGAL in regression and test of different batch-sizes
+
+Method: Distinguish between model-free and model-based criteria. They found that Diversity is best, but actually QBC is better. The larger batches, the worse performance..},
+author = {O'Neill, Jack and {Jane Delany}, Sarah and MacNamee, Brian},
+doi = {10.1007/978-3-319-46562-3_24},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/ONeill2017.pdf:pdf},
+isbn = {9783319465623},
+issn = {2194-5357},
+keywords = {Batch,Computers,Density,Diversity,Linear Regression,MEMC,Pool-based,QBC,Sampling criteria},
+mendeley-groups = {Active learning},
+mendeley-tags = {Batch,Density,Diversity,Linear Regression,MEMC,Pool-based,QBC,Sampling criteria},
+booktitle={Advances in computational intelligence systems},
+publisher={Springer},
+pages = {375--386},
+title = {{Model-Free and Model-Based Active Learning for Regression}},
+url = {http://link.springer.com/10.1007/978-3-319-46562-3{\_}24},
+year = {2017}
+}
+
+
+@book{Gramacy2020,
+author = {Gramacy, Robert B.},
+doi = {10.1201/9780367815493},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Books/surrogates.pdf:pdf},
+isbn = {9780367815493},
+mendeley-groups = {Metamodels},
+month = {mar},
+publisher = {Chapman and Hall/CRC},
+title = {{Surrogates}},
+url = {https://www.taylorfrancis.com/books/9781000766202},
+year = {2020}
+}
+
+@inproceedings{Lalchand2019,
+  title={Approximate inference for fully Bayesian Gaussian process regression},
+  author={Lalchand, Vidhi and Rasmussen, Carl Edward},
+  booktitle={Symposium on Advances in Approximate Bayesian Inference},
+  pages={1--12},
+  year={2020},
+  organization={PMLR}
+}
+
+@article{Hoffman2014,
+  title={The No-U-Turn sampler: adaptively setting path lengths in Hamiltonian Monte Carlo.},
+  author={Hoffman, Matthew D and Gelman, Andrew},
+  journal={J. Mach. Learn. Res.},
+  volume={15},
+  number={1},
+  pages={1593--1623},
+  year={2014}
+}
+
+@book{Settles2009,
+  title={Active learning literature survey},
+  author={Settles, Burr},
+  year={2009},
+  publisher={University of Wisconsin-Madison Department of Computer Sciences}
+}
+
+@article{Chen2018,
+abstract = {The hyperparameters in Gaussian process regression (GPR) model with a specified kernel are often estimated from the data via the maximum marginal likelihood. Due to the non-convexity of marginal likelihood with respect to the hyperparameters, the optimisation may not converge to the global maxima. A common approach to tackle this issue is to use multiple starting points randomly selected from a specific prior distribution. As a result the choice of prior distribution may play a vital role in the predictability of this approach. However, there exists little research in the literature to study the impact of the prior distributions on the hyperparameter estimation and the performance of GPR. In this paper, we provide the first empirical study on this problem using simulated and real data experiments. We consider different types of priors for the initial values of hyperparameters for some commonly used kernels and investigate the influence of the priors on the predictability of GPR models. The results reveal that, once a kernel is chosen, different priors for the initial hyperparameters have no significant impact on the performance of GPR prediction, despite that the estimates of the hyperparameters are very different to the true values in some cases.},
+archivePrefix = {arXiv},
+arxivId = {1605.07906},
+author = {Chen, Zexun and Wang, Bo},
+doi = {10.1016/j.neucom.2017.10.028},
+eprint = {1605.07906},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Gaussian Processes/Chen2016{\_}priors.pdf:pdf},
+issn = {18728286},
+journal = {Neurocomputing},
+keywords = {Gaussian process regression,Hyperparameters,Kernel selection,Maximum marginal likelihood,Prior distribution},
+mendeley-groups = {Gaussian Processes},
+pages = {1702--1710},
+publisher = {Elsevier B.V.},
+title = {{How priors of initial hyperparameters affect Gaussian process regression models}},
+url = {https://doi.org/10.1016/j.neucom.2017.10.028},
+volume = {275},
+year = {2018}
+}
+
+@article{Williams1996,
+  title={Gaussian processes for regression},
+  author={Williams, Christopher and Rasmussen, Carl},
+  journal={Advances in Neural Information Processing Systems},
+  volume={8},
+  year={1995}
+}
+
+@inproceedings{Snoek2012,
+   author = {Jasper Snoek and Hugo Larochelle and Ryan P. Adams},
+   issn = {10495258},
+   booktitle = {Advances in Neural Information Processing Systems},
+   title = {Practical Bayesian optimization of machine learning algorithms},
+   volume = {4},
+   year = {2012},
+}
+
+@book{Rasmussen2006,
+author = {Williams, Christopher K and Rasmussen, Carl Edward},
+mendeley-groups = {Gaussian Processes},
+publisher = {MIT press Cambridge, MA},
+title = {{Gaussian processes for machine learning}},
+volume = {2},
+year = {2006}
+}
+
+
+@article{Malkomes2019,
+author = {Malkomes, Gustavo},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/Automating Active Learning for Gaussian Processes.pdf:pdf},
+mendeley-groups = {Gaussian Processes},
+title = {{Automating Active Learning for Gaussian Processes}},
+year = {2019}
+}
+
+@article{Houlsby2011,
+abstract = {Information theoretic active learning has been widely studied for probabilistic models. For simple regression an optimal myopic policy is easily tractable. However, for other tasks and with more complex models, such as classification with nonparametric models, the optimal solution is harder to compute. Current approaches make approximations to achieve tractability. We propose an approach that expresses information gain in terms of predictive entropies, and apply this method to the Gaussian Process Classifier (GPC). Our approach makes minimal approximations to the full information theoretic objective. Our experimental performance compares favourably to many popular active learning algorithms, and has equal or lower computational complexity. We compare well to decision theoretic approaches also, which are privy to more information and require much more computational time. Secondly, by developing further a reformulation of binary preference learning to a classification problem, we extend our algorithm to Gaussian Process preference learning.},
+archivePrefix = {arXiv},
+arxivId = {1112.5745},
+author = {Houlsby, Neil and Husz{\'{a}}r, Ferenc and Ghahramani, Zoubin and Lengyel, M{\'{a}}t{\'{e}}},
+eprint = {1112.5745},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/Houslby2011{\_}BALD.pdf:pdf},
+mendeley-groups = {Active learning},
+pages = {1--17},
+title = {{Bayesian Active Learning for Classification and Preference Learning}},
+url = {http://arxiv.org/abs/1112.5745},
+year = {2011},
+journal={arXiv}
+}
+
+@article{Kirsch2019a,
+abstract = {We develop BatchBALD, a tractable approximation to the mutual information between a batch of points and model parameters, which we use as an acquisition function to select multiple informative points jointly for the task of deep Bayesian active learning. BatchBALD is a greedy linear-time 1 - 1e -approximate algorithm amenable to dynamic programming and efficient caching. We compare BatchBALD to the commonly used approach for batch data acquisition and find that the current approach acquires similar and redundant points, sometimes performing worse than randomly acquiring data. We finish by showing that, using BatchBALD to consider dependencies within an acquisition batch, we achieve new state of the art performance on standard benchmarks, providing substantial data efficiency improvements in batch acquisition.},
+archivePrefix = {arXiv},
+arxivId = {1906.08158},
+author = {Kirsch, Andreas and van Amersfoort, Joost and Gal, Yarin},
+eprint = {1906.08158},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/Kirsch2019{\_}BatchBALD.pdf:pdf},
+issn = {10495258},
+journal = {Advances in Neural Information Processing Systems},
+mendeley-groups = {Active learning},
+title = {{BatchBALD: Efficient and diverse batch acquisition for deep Bayesian active learning}},
+volume = {32},
+year = {2019}
+}
+
+
+@article{Abe1998,
+abstract = {Proposes new query learning strategies by combining the idea of query-by-committee and that of boosting and bagging. Query-by-committee is a query learning strategy which makes use of a randomized component learning algorithm and works by querying the function value of a point at which the predictions made by many copies of the component algorithm are maximally spread. The requirement of query-by-committee on the component algorithm that it should be an ideal randomized algorithm makes it hard to apply in practice, when we have only a moderately-performing deterministic algorithm. To address this issue, we borrow the ideas of boosting and bagging, which are both techniques to enhance the performance of an existing learning algorithm by running it many times on a set of re-sampled data and combining the output hypotheses to make a prediction by (weighted) majority voting. We propose two query learning methods (query-by-bagging and query-by-boosting) which select the next query point by picking a point on which the (weighted) majority voting by the obtained hypotheses has the least margin. We empirically evaluate the performance of these methods on a wide range of real-world data. Our experiments show that, when using C4.5 as the component learning algorithm and run on data sets in the UCI Machine Learning repository, both query learning methods significantly improve the data efficiency as compared to both C4.5 itself and boosting applied on C4.5. A typical increase in the data efficiency achieved was 2-to-4-fold},
+author = {Abe, Naoki and Mamitsuka, Hiroshi},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/Abe1998{\_}QBC.pdf:pdf},
+isbn = {1558605568},
+journal = {Proceedings of the 25th international conference on Machine learning},
+mendeley-groups = {Active learning},
+number = {October},
+pages = {1--9},
+title = {{Query learning strategies using boosting and bagging}},
+url = {http://webia.lip6.fr/{~}amini/RelatedWorks/Abe98.pdf},
+volume = {388},
+year = {1998}
+}
+@article{Cohn1994,
+abstract = {... with demonstrating how an approx- imation of selective sampling may be implemented using a ... The observation that a neural network implementation of a concept learner may produce a real ... s and g concepts described above, then it is a simple matter to implement the modified ...},
+author = {Cohn, David and Atlas, Les and Ladner, Richard},
+doi = {10.1007/bf00993277},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/Cohn1994{\_}ExtremeQBC.pdf:pdf},
+issn = {0885-6125},
+journal = {Machine Learning},
+keywords = {1,active learning,and the network is,chosen at random,generalization,introduction,most neural network generalization,neural networks,pling,problems are studied only,queries,random sampling vs,sam-,simply a passive,the training examples are,version space,with respect to random},
+mendeley-groups = {Active learning},
+number = {2},
+pages = {201--221},
+title = {{Improving generalization with active learning}},
+volume = {15},
+year = {1994}
+}
+@inproceedings{Seung1992,
+address = {New York, New York, USA},
+author = {Seung, H. S. and Opper, M. and Sompolinsky, H.},
+booktitle = {Proceedings of the fifth annual workshop on Computational learning theory - COLT '92},
+doi = {10.1145/130385.130417},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/Seung1992{\_}QBC.pdf:pdf},
+isbn = {089791497X},
+mendeley-groups = {Active learning},
+pages = {287--294},
+publisher = {ACM Press},
+title = {{Query by committee}},
+url = {http://portal.acm.org/citation.cfm?doid=130385.130417},
+year = {1992}
+}
+@article{Burbidge2007,
+abstract = {We investigate a committee-based approach for active learning of real-valued functions. This is a variance-only strategy for selection of informative training data. As such it is shown to suffer when the model class is misspecified since the learner's bias is high. Conversely, the strategy outperforms passive selection when the model class is very expressive since active minimization of the variance avoids over fit ting. {\textcopyright} Springer-Verlag Berlin Heidelberg 2007.},
+annote = {Shows that if the model is misspecified (poor fit), then QBC is not good (passive sampling is better).
+
+To different kinds of QBC:
+1) With different initialization of weights in network
+2) Subsampling with different inits. This is found to work better in the literature.},
+author = {Burbidge, Robert and Rowland, Jem J. and King, Ross D.},
+doi = {10.1007/978-3-540-77226-2_22},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/Burbidge2007{\_}QBC.pdf:pdf},
+isbn = {9783540772255},
+issn = {16113349},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+keywords = {QBC,Subsampling},
+mendeley-groups = {Active learning},
+mendeley-tags = {QBC,Subsampling},
+pages = {209--218},
+title = {{Active learning for regression based on query by committee}},
+volume = {4881 LNCS},
+year = {2007}
+}
+
+@article{Cai2013,
+abstract = {Active learning is well-motivated in many supervised learning tasks where unlabeled data may be abundant but labeled examples are expensive to obtain. The goal of active learning is to maximize the performance of a learning model using as few labeled training data as possible, thereby minimizing the cost of data annotation. So far, there is still very limited work on active learning for regression. In this paper, we propose a new active learning framework for regression called Expected Model Change Maximization (EMCM), which aims to choose the examples that lead to the largest change to the current model. The model change is measured as the difference between the current model parameters and the updated parameters after training with the enlarged training set. Inspired by the Stochastic Gradient Descent (SGD) update rule, the change is estimated as the gradient of the loss with respect to a candidate example for active learning. Under this framework, we derive novel active learning algorithms for both linear regression and nonlinear regression to select the most informative examples. Extensive experimental results on the benchmark data sets from UCI machine learning repository have demonstrated that the proposed algorithms are highly effective in choosing the most informative examples and robust to various types of data distributions. {\textcopyright} 2013 IEEE.},
+annote = {Read 3/3/21
+
+Problem: How to sample the next point if you want the maximum model change?
+
+Method: Boostrapping to estimate gradient for different predictions. Estimate the expected model change based on the gradient
+
+Applies: They provide direct algorithm with linear regression and GBDT (regression)
+
+Unclear: Size of boostrapping?},
+author = {Cai, Wenbin and Zhang, Ya and Zhou, Jun},
+doi = {10.1109/ICDM.2013.104},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/MEMC{\_}2013.pdf:pdf},
+issn = {15504786},
+journal = {Proceedings - IEEE International Conference on Data Mining, ICDM},
+pages = {51--60},
+title = {{Maximizing expected model change for active learning in regression}},
+year = {2013}
+}
+@article{Wu2019a,
+abstract = {Regression problems are pervasive in real-world applications. Generally a substantial amount of labeled samples are needed to build a regression model with good generalization ability. However, many times it is relatively easy to collect a large number of unlabeled samples, but time-consuming or expensive to label them. Active learning for regression (ALR) is a methodology to reduce the number of labeled samples, by selecting the most beneficial ones to label, instead of random selection. This paper proposes two new ALR approaches based on greedy sampling (GS). The first approach (GSy) selects new samples to increase the diversity in the output space, and the second (iGS) selects new samples to increase the diversity in both input and output spaces. Extensive experiments on 10 UCI and CMU StatLib datasets from various domains, and on 15 subjects on EEG-based driver drowsiness estimation, verified their effectiveness and robustness.},
+annote = {Read 8/3/21
+
+Problem: How to optimize the greedy-sampling approch
+
+Method: Both consider diversity in the input and output space},
+archivePrefix = {arXiv},
+arxivId = {1808.04245},
+author = {Wu, Dongrui and Lin, Chin Teng and Huang, Jian},
+doi = {10.1016/j.ins.2018.09.060},
+eprint = {1808.04245},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/Wu2019a.pdf:pdf},
+issn = {00200255},
+journal = {Information Sciences},
+keywords = {Active learning,Diversity,Driver drowsiness estimation,Greedy Sampling,Greedy sampling,Linear Regression,Pool-based,Regression,Sampling criteria,Sequential},
+mendeley-groups = {Active learning},
+mendeley-tags = {Diversity,Greedy Sampling,Linear Regression,Pool-based,Sampling criteria,Sequential},
+pages = {90--105},
+publisher = {Elsevier Inc.},
+title = {{Active learning for regression using greedy sampling}},
+url = {https://doi.org/10.1016/j.ins.2018.09.060},
+volume = {474},
+year = {2019}
+}
+@article{Wu2018,
+abstract = {Active learning is a machine learning approach for reducing the data labeling effort. Given a pool of unlabeled samples, it tries to select the most useful ones to label so that a model built from them can achieve the best possible performance. This paper focuses on pool-based sequential active learning for regression (ALR). We first propose three essential criteria that an ALR approach should consider in selecting the most useful unlabeled samples: informativeness, representativeness, and diversity, and compare four existing ALR approaches against them. We then propose a new ALR approach using passive sampling, which considers both the representativeness and the diversity in both the initialization and subsequent iterations. Remarkably, this approach can also be integrated with other existing ALR approaches in the literature to further improve the performance. Extensive experiments on 11 UCI, CMU StatLib, and UFL Media Core datasets from various domains verified the effectiveness of our proposed ALR approaches.},
+annote = {Read 8/3/21
+
+Problem: How to ensure representativeness and diversty in sequential sampling.
+
+Method: cluster the data (knn) and then apply an informativeness critierion inside a cluster, e.g. EMCM
+
+Unclear: Can we also apply it with batch-sampling and population-based?},
+author = {Wu, Dongrui},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/Wu2018.pdf:pdf},
+issn = {23318422},
+journal = {Transactions on Neural Networks and Learning Systems},
+keywords = {Active learning,Diversity,Inductive learning,Linear Regression,MEMC,Passive sampling,Pool-based,Representativeness,Ridge regression,Sampling criteria,Sequential,Transductive learning},
+mendeley-groups = {Active learning},
+mendeley-tags = {Diversity,Linear Regression,MEMC,Pool-based,Representativeness,Sampling criteria,Sequential},
+number = {5},
+pages = {1348--1359},
+publisher = {IEEE},
+title = {{Pool-Based Sequential Active Learning for Regression}},
+volume = {30},
+year = {2018}
+}
+@inproceedings{Krogh1995,
+author = {Krogh, Anders and Vedelsby, Jesper},
+booktitle = {Advances in Neural Information Processing Systems},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/Krogh1994{\_}QBC.pdf:pdf},
+mendeley-groups = {Active learning},
+pages = {231--238},
+title = {{Neural network ensembles, cross validation, and active learning}},
+year = {1995},
+volume={7}
+}
+@article{RayChaudhuri1995,
+abstract = {We use the `query-by-committee' approach for building an active scheme for data collection. In this method data gathering is reduced to a minimum, yet modelling accuracy is uncompromised. Our active querying criterion is determined by whether or not several models agree when they are fitted to random subsamples of a small amount of collected data. Experiments with neural network models to establish the feasibility of our algorithm have produced encouraging results.},
+author = {RayChaudhuri, Tirthankar and Hamey, Leonard G.C.},
+doi = {10.1109/icnn.1995.487351},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/RayChaudhuri1995{\_}QBC.pdf:pdf},
+journal = {IEEE International Conference on Neural Networks - Conference Proceedings},
+mendeley-groups = {Active learning},
+pages = {1338--1341},
+title = {{Minimization of data collection by active learning}},
+volume = {3},
+year = {1995}
+}
+
+@article{Gramacy2012,
+   abstract = {Most surrogate models for computer experiments are interpolators, and the most common interpolator is a Gaussian process (GP) that deliberately omits a small-scale (measurement) error term called the nugget. The explanation is that computer experiments are, by definition, "deterministic", and so there is no measurement error. We think this is too narrow a focus for a computer experiment and a statistically inefficient way to model them. We show that estimating a (non-zero) nugget can lead to surrogate models with better statistical properties, such as predictive accuracy and coverage, in a variety of common situations. © 2010 Springer Science+Business Media, LLC.},
+   author = {Robert B. Gramacy and Herbert K.H. Lee},
+   doi = {10.1007/s11222-010-9224-x},
+   issn = {09603174},
+   issue = {3},
+   journal = {Statistics and Computing},
+   title = {Cases for the nugget in modeling computer experiments},
+   volume = {22},
+   year = {2012},
+}
+
+@book_section{Higdon2002,
+   abstract = {A continuous spatial model can be constructed by convolving a very simple, perhaps independent, process with a kernel or point spread function. This approach for constructing a spatial process o ers a number of advantages over speci cation through a spatial covariogram. In particular, this process convolution speci cation leads to compuational simpli cations and easily extends beyond simple stationary models. This paper uses process convolution models to build space and space-time models that are flexible and able to accomodate large amounts of data. Data from environmental monitoring is considered.},
+   author = {Dave Higdon},
+   doi = {10.1007/978-1-4471-0657-9_2},
+   journal = {Quantitative Methods for Current Environmental Issues},
+   title = {Space and Space-Time Modeling using Process Convolutions},
+   year = {2002},
+}
+
+
+@article{Silverman1985,
+   abstract = {Non-parametric regression using cubic splines is an attractive, flexible and widely-applicable approach to curve estimation. Although the basic idea was formulated many years ago, the method is not as widely known or adopted as perhaps it should be. The topics and examples discussed in this paper are intended to promote the understanding and extend the practicability of the spline smoothing methodology. Particular subjects covered include the basic principles of the method; the relation with moving average and other smoothing methods; the automatic choice of the amount of smoothing; and the use of residuals for diagnostic checking and model adaptation. The question of providing inference regions for curves-and for relevant properties of curves--is approached via a finite-dimensional Bayesian formulation.},
+   author = {B. W. Silverman},
+   doi = {10.1111/j.2517-6161.1985.tb01327.x},
+   issn = {0035-9246},
+   issue = {1},
+   journal = {Journal of the Royal Statistical Society: Series B (Methodological)},
+   title = {Some Aspects of the Spline Smoothing Approach to Non-Parametric Regression Curve Fitting},
+   volume = {47},
+   year = {1985},
+}
+
+@article{Gramacy2009,
+abstract = {Computer experiments often are performed to allow modeling of a response surface of a physical experiment that can be too costly or difficult to run except by using a simulator. Running the experiment over a dense grid can be prohibitively expensive, yet running over a sparse design chosen in advance can result in insufficient information in parts of the space, particularly when the surface calls for a nonstationary model. We propose an approach that automatically explores the space while simultaneously fitting the response surface, using predictive uncertainty to guide subsequent experimental runs. We use the newly developed Bayesian treed Gaussian process as the surrogate model; a fully Bayesian approach allows explicit measures of uncertainty. We develop an adaptive sequential design framework to cope with an asynchronous, random, agent-based supercomputing environment by using a hybrid approach that melds optimal strategies from the statistics literature with flexible strategies from the active learning literature. The merits of this approach are borne out in several examples, including the motivating computational fluid dynamics simulation of a rocket booster. {\textcopyright} 2009 American Statistical Association and the American Society for Quality.},
+annote = {Read 6/4/21
+
+Problem: How to use Bayesian treed GP LLM as a surrogate model.
+
+
+Method: Extends ALM and ALC to this model. Uses candidate points to sample batches of data in high dimensions. Have a prior on the parameters of the Bayesian treed GP LLM
+
+Unclear: How to use the priors? and how to specify them?},
+archivePrefix = {arXiv},
+arxivId = {0805.4359},
+author = {Gramacy, Robert B. and Lee, Herbert K.H.},
+doi = {10.1198/TECH.2009.0015},
+eprint = {0805.4359},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/Gramacy2009.pdf:pdf},
+issn = {00401706},
+journal = {Technometrics},
+keywords = {Active learning,Batch,Bayesian GP,Cohn's criterion,Computer experiment,High Dimensional,Nonstationary spatial model,Population-based,Sequential design,Simulator,Treed partitioning,Variance},
+mendeley-groups = {Active learning},
+mendeley-tags = {Active learning,Batch,Bayesian GP,Cohn's criterion,High Dimensional,Population-based,Simulator,Variance},
+number = {2},
+pages = {130--145},
+title = {{Adaptive design and analysis of supercomputer experiments}},
+url = {https://doi.org/10.1198/TECH.2009.0015},
+volume = {51},
+year = {2009}
+}
+
+@book{Keane2008,
+   abstract = {Summary The prelims comprise: Half-Title Page Title Page Copyright Page Table of Contents Preface About the Authors Foreword Prologue Summary The colour illustrations for Chapters 1, 4 and 5 are included, as follows: Plate I Plates II, III Plates IV, V, VI, VII, VIII, IX, X, XI, XII, XIII, XIV Summary This chapter contains sections titled: The ?Curse of Dimensionality? and How to Avoid It Physical versus Computational Experiments Designing Preliminary Experiments (Screening) Designing a Sampling Plan A Note on Harmonic Responses Some Pointers for Further Reading References Summary This chapter contains sections titled: The Modelling Process Polynomial Models Radial Basis Function Models Kriging Support Vector Regression The Big(ger) Picture References Summary This chapter contains sections titled: Searching the Surrogate Infill Criteria Managing a Surrogate Based Optimization Process Search of the Vibration Isolator Geometry Feasibility Using Kriging Goal Seeking References Summary This chapter contains sections titled: Matrices of Contour Plots Nested Dimensions Reference Summary This chapter contains sections titled: Satisfaction of Constraints by Construction Penalty Functions Example Constrained Problem Expected Improvement Based Approaches Missing Data Design of a Helical Compression Spring Using Constrained Expected Improvement Summary References Summary This chapter contains sections titled: Regressing Kriging Searching the Regression Model A Note on Matrix Ill-Conditioning Summary References Summary This chapter contains sections titled: Obtaining Gradients Gradient-enhanced Modelling Hessian-enhanced Modelling Summary References Summary This chapter contains sections titled: Co-Kriging One-variable Demonstration Choosing Xc and Xe Summary References Summary This chapter contains sections titled: Pareto Optimization Multi-objective Expected Improvement Design of the Nowacki Cantilever Beam Using Multi-objective, Constrained Expected Improvement Design of a Helical Compression Spring Using Multi-objective, Constrained Expected Improvement Summary References Summary This appendix contains sections titled: One-Variable Test Function Branin Test Function Aerofoil Design The Nowacki Beam Multi-objective, Constrained Optimal Design of a Helical Compression Spring Novel Passive Vibration Isolator Feasibility References},
+   author = {Andy Keane and Alexander Forrester and Andras Sobester},
+   doi = {10.2514/4.479557},
+   journal = {Engineering Design via Surrogate Modelling: A Practical Guide},
+   title = {Engineering Design via Surrogate Modelling: A Practical Guide},
+   year = {2008},
+   publisher={John Wiley \& Sons},
+}
+
+
+@article{Marrel2009,
+   abstract = {Global sensitivity analysis of complex numerical models can be performed by calculating variance-based importance measures of the input variables, such as the Sobol indices. However, these techniques, requiring a large number of model evaluations, are often unacceptable for time expensive computer codes. A well-known and widely used decision consists in replacing the computer code by a metamodel, predicting the model responses with a negligible computation time and rending straightforward the estimation of Sobol indices. In this paper, we discuss about the Gaussian process model which gives analytical expressions of Sobol indices. Two approaches are studied to compute the Sobol indices: the first based on the predictor of the Gaussian process model and the second based on the global stochastic process model. Comparisons between the two estimates, made on analytical examples, show the superiority of the second approach in terms of convergence and robustness. Moreover, the second approach allows to integrate the modeling error of the Gaussian process model by directly giving some confidence intervals on the Sobol indices. These techniques are finally applied to a real case of hydrogeological modeling. © 2009 Elsevier Ltd. All rights reserved.},
+   author = {Amandine Marrel and Bertrand Iooss and Béatrice Laurent and Olivier Roustant},
+   doi = {10.1016/j.ress.2008.07.008},
+   issn = {09518320},
+   issue = {3},
+   journal = {Reliability Engineering and System Safety},
+   title = {Calculations of Sobol indices for the Gaussian process metamodel},
+   volume = {94},
+   year = {2009},
+}
+
+@article{Picheny2013,
+   abstract = {Responses of many real-world problems can only be evaluated perturbed by noise. In order to make an efficient optimization of these problems possible, intelligent optimization strategies successfully coping with noisy evaluations are required. In this article, a comprehensive review of existing kriging-based methods for the optimization of noisy functions is provided. In summary, ten methods for choosing the sequential samples are described using a unified formalism. They are compared on analytical benchmark problems, whereby the usual assumption of homoscedastic Gaussian noise made in the underlying models is meet. Different problem configurations (noise level, maximum number of observations, initial number of observations) and setups (covariance functions, budget, initial sample size) are considered. It is found that the choices of the initial sample size and the covariance function are not critical. The choice of the method, however, can result in significant differences in the performance. In particular, the three most intuitive criteria are found as poor alternatives. Although no criterion is found consistently more efficient than the others, two specialized methods appear more robust on average. © 2013 Springer-Verlag Berlin Heidelberg.},
+   author = {Victor Picheny and Tobias Wagner and David Ginsbourger},
+   doi = {10.1007/s00158-013-0919-4},
+   issn = {16151488},
+   issue = {3},
+   journal = {Structural and Multidisciplinary Optimization},
+   title = {A benchmark of kriging-based infill criteria for noisy optimization},
+   volume = {48},
+   year = {2013},
+}
+@article{Sauer2020,
+author = {Annie Sauer and Robert B. Gramacy and David Higdon},
+title = {Active Learning for Deep Gaussian Process Surrogates},
+journal = {Technometrics},
+volume = {0},
+number = {0},
+pages = {1-15},
+year  = {2022},
+publisher = {Taylor & Francis},
+doi = {10.1080/00401706.2021.2008505},
+URL = { 
+        https://doi.org/10.1080/00401706.2021.2008505
+},
+eprint = { 
+        https://doi.org/10.1080/00401706.2021.2008505
+}
+}
+@article{Cole2021,
+  title={Entropy-based adaptive design for contour finding and estimating reliability},
+  author={Cole, D Austin and Gramacy, Robert B and Warner, James E and Bomarito, Geoffrey F and Leser, Patrick E and Leser, William P},
+  journal={Journal of Quality Technology},
+  pages={1--18},
+  year={2022},
+  publisher={Taylor \& Francis},
+  url={https://doi.org/10.1080/00224065.2022.2053795}
+}
+
+
+@article{Gramacy2008,
+   abstract = {Motivated by a computer experiment for the design of a rocket booster, this article explores nonstationary modeling methodologies that couple stationary Gaussian processes with treed partitioning. Partitioning is a simple but effective method for dealing with nonstationarity. The methodological developments and statistical computing details that make this approach efficient are described in detail. In addition to providing an analysis of the rocket booster simulator, we show that our approach is effective in other arenas as well. © 2008 American Statistical Association.},
+   author = {Robert B. Gramacy and Herbert K.H. Lee},
+   doi = {10.1198/016214508000000689},
+   issn = {01621459},
+   issue = {483},
+   journal = {Journal of the American Statistical Association},
+   title = {Bayesian treed Gaussian process models with an application to computer modeling},
+   volume = {103},
+   year = {2008},
+}
+@article{Chen2009,
+abstract = {This paper proposes the application of bagging to obtain more robust and accurate predictions using Gaussian process regression models. The training data are re-sampled using the bootstrap method to form several training sets, from which multiple Gaussian process models are developed and combined through weighting to provide predictions. A number of weighting methods for model combination are discussed, including the simple averaging and the weighted averaging rules. We propose to weight the models by the inverse of their predictive variance, and thus the prediction uncertainty of the models is automatically accounted for. The bagging method for Gaussian process regression is successfully applied to the inferential estimation of quality variables in an industrial chemical plant. {\textcopyright} 2008 Elsevier B.V. All rights reserved.},
+author = {Chen, Tao and Ren, Jianghong},
+doi = {10.1016/j.neucom.2008.09.002},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Gaussian Processes/GP{\_}Bagging2008.pdf:pdf},
+issn = {09252312},
+journal = {Neurocomputing},
+keywords = {Bagging,Bayesian method,Bootstrap,Gaussian process,Model robustness,Soft sensor},
+mendeley-groups = {Gaussian Processes},
+number = {7-9},
+pages = {1605--1610},
+title = {{Bagging for Gaussian process regression}},
+volume = {72},
+year = {2009}
+}
+@article{He2019,
+abstract = {The Gaussian process (GP) model is a powerful tool for regression problems. However, the high computational costs of the GP model has constrained its applications over large-scale data sets. To overcome this limitation, aggregation models employ distributed GP submodels (experts) for parallel training and predicting, and then merge the predictions of all submodels to produce an approximated result. The state-of-the-art aggregation models are based on Bayesian committee machines, where a prior is assumed at the start and then updated by each submodel. In this paper, we investigate the impact of the prior on the accuracy of aggregations. We propose a query-aware Bayesian committee machine (QBCM). The QBCM model partitions the testing data (i.e., queries) into subsets, and incorporates a query-aware prior when merging the predictions of submodels. This model improves the prediction accuracy, while retaining the advantages of aggregation models, i.e., closed-form inference and parallelizability. We conduct both theoretical analysis and empirical experiments on real data. The results confirm the effectiveness and efficiency of the proposed model QBCM.},
+author = {He, Jiayuan and Qi, Jianzhong and Ramamohanarao, Kotagiri},
+doi = {10.1137/1.9781611975673.24},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Gaussian Processes/He2019{\_}QBCM{\_}GP.pdf:pdf},
+isbn = {9781611975673},
+journal = {SIAM International Conference on Data Mining, SDM 2019},
+keywords = {Aggregation methods,Bayesian committee machine,Gaussian process},
+mendeley-groups = {Gaussian Processes},
+pages = {208--216},
+title = {{Query-aware bayesian committee machine for scalable gaussian process regression}},
+year = {2019}
+}
+@article{Iswanto2021,
+author = {Iswanto, B. H.},
+doi = {10.1088/1757-899X/1098/3/032036},
+file = {:Users/christofferriis/Downloads/Active{\_}learning{\_}by{\_}increasing{\_}.pdf:pdf},
+issn = {1757-8981},
+journal = {IOP Conference Series: Materials Science and Engineering},
+mendeley-groups = {Active learning},
+month = {mar},
+number = {3},
+pages = {032036},
+title = {{Active learning by increasing model likelihood for Gaussian mixture models based classifiers}},
+url = {https://iopscience.iop.org/article/10.1088/1757-899X/1098/3/032036},
+volume = {1098},
+year = {2021}
+}
+@article{Zhao2020a,
+abstract = {Active learning is an effective methodology to relieve the tedious and expensive work of manual annotation for many supervised learning applications. The active learning framework with good performance usually contains powerful learning models and delicate active learning strategies. Gaussian process (GP)-based active learning was proposed to be one of the most effective methods. However, the single GP suffers from the limitation of not modeling multimodal data well enough, and thus existing active learning strategies based on GPs only make use of limited information from data. In this paper, we propose three novel active learning methods, in which the existing mixture of GP model (MGP) is adjusted as the learning model and three active learning strategies are designed based on the adjusted MGP. Through experiments on multiple data sets, we analyze the performance and characteristics of the three proposed active learning methods, and further compare with popular GP-based methods and some other state-of-the-art methods.},
+author = {Zhao, Jing and Sun, Shiliang and Wang, Huijuan and Cao, Zehui},
+doi = {10.1016/j.knosys.2019.105044},
+file = {:Users/christofferriis/Downloads/1-s2.0-S0950705119304411-main.pdf:pdf},
+issn = {09507051},
+journal = {Knowledge-Based Systems},
+keywords = {Active learning,Mixtures of Gaussian processes},
+mendeley-groups = {Active learning},
+pages = {105044},
+publisher = {Elsevier B.V.},
+title = {{Promoting active learning with mixtures of Gaussian processes}},
+url = {https://doi.org/10.1016/j.knosys.2019.105044},
+volume = {188},
+year = {2020}
+}
+@article{Kingma2015,
+abstract = {We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the infinity norm.},
+archivePrefix = {arXiv},
+arxivId = {1412.6980},
+author = {Kingma, Diederik P. and Ba, Jimmy Lei},
+eprint = {1412.6980},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/DTU/9. semester/Optimering af Neurale Netv{\ae}rk/Papers/Adam.pdf:pdf},
+journal = {3rd International Conference on Learning Representations, ICLR 2015 - Conference Track Proceedings},
+mendeley-groups = {Optimization},
+pages = {1--15},
+title = {{Adam: A method for stochastic optimization}},
+year = {2015}
+}
+@article{bingham2018pyro,
+  title={Pyro: Deep universal probabilistic programming},
+  author={Bingham, Eli and Chen, Jonathan P and Jankowiak, Martin and Obermeyer, Fritz and Pradhan, Neeraj and Karaletsos, Theofanis and Singh, Rohit and Szerlip, Paul and Horsfall, Paul and Goodman, Noah D},
+  journal={The Journal of Machine Learning Research},
+  volume={20},
+  number={1},
+  pages={973--978},
+  year={2019},
+  publisher={JMLR. org},
+  url={https://jmlr.csail.mit.edu/papers/v20/18-403}
+}
+@inproceedings{hensman2015scalable,
+  title={Scalable variational Gaussian process classification},
+  author={Hensman, James and Matthews, Alexander and Ghahramani, Zoubin},
+  booktitle={Artificial Intelligence and Statistics},
+  pages={351--360},
+  year={2015},
+  organization={PMLR}
+}
+@article{Yao2020,
+  author  = {Yuling Yao and Aki Vehtari and Andrew Gelman},
+  title   = {Stacking for Non-mixing Bayesian Computations: The Curse and Blessing of Multimodal Posteriors},
+  journal = {Journal of Machine Learning Research},
+  year    = {2022},
+  volume  = {23},
+  number  = {79},
+  pages   = {1--45},
+  url     = {http://jmlr.org/papers/v23/20-1426}
+}
+@book{Bishop2006,
+author = {Bishop, Christopher M},
+isbn = {978-0387-31073-2},
+publisher = {Springer},
+title = {{Pattern Recognition and Machine Learning}},
+url = {http://research.microsoft.com/en-us/um/people/cmbishop/prml/},
+year = {2006}
+}
+@article{yang2018benchmark,
+  title={A benchmark and comparison of active learning for logistic regression},
+  author={Yang, Yazhou and Loog, Marco},
+  journal={Pattern Recognition},
+  volume={83},
+  pages={401--415},
+  year={2018},
+  publisher={Elsevier}
+}
+@inproceedings{Riis2021,
+title = "Active Learning Metamodels for ATM Simulation Modeling",
+keywords = "Active Learning, Simulation Metamodeling, Air Traffic Management Simulation Modeling, Gaussian Processes",
+author = "Christoffer Riis and Francisco Antunes and G{\'e}rald Gurtner and Pereira, Francisco Camara and Luis Delgado and {Lima Azevedo}, Carlos M.",
+year = "2021",
+language = "English",
+booktitle = "Proceedings of the 11th SESAR Innovation Days, 2021",
+url = "https://www.sesarju.eu/SIDs2021",
+}
+@inproceedings{Guestrin2005,
+abstract = {When monitoring spatial phenomena, which are often modeled as Gaussian Processes (GPs), choosing sensor locations is a fundamental task. A common strategy is to place sensors at the points of highest entropy (variance) in the GP model. We propose a mutual information criteria, and show that it produces better placements. Furthermore, we prove that finding the configuration that maximizes mutual information is NP-complete. To address this issue, we describe a polynomial-time approximation that is within (1 - 1/e) of the optimum by exploiting the subrnodularity of our criterion. This algorithm is extended to handle local structure in the GP, yielding significant speedups. We demonstrate the advantages of our approach on two real-world data sets.},
+address = {New York, New York, USA},
+annote = {Read 8/3/21
+
+Problem: How to choose the next data point?
+
+
+Method: Use mutual information to minimize uncertainty.
+They also provide theoretical analysis of the performance.
+
+showed that this criterion (Mutual Information) selects locations which most effectively reduce the uncertainty at the unobserved locations, hence it often leads to better predictions compared to the entropy criterion.
+
+Unclear: Initial sampling?},
+author = {Guestrin, Carlos and Krause, Andreas and Singh, Ajit Paul},
+booktitle = {Proceedings of the 22nd international conference on Machine learning - ICML '05},
+doi = {10.1145/1102351.1102385},
+file = {:Users/christofferriis/Library/Application Support/Mendeley Desktop/Downloaded/Guestrin, Krause, Singh - 2005 - Near-optimal sensor placements in Gaussian processes.pdf:pdf},
+isbn = {1595931805},
+keywords = {Entropy,Gaussian Processes,Mutual Information,Sequential},
+mendeley-groups = {Active learning},
+mendeley-tags = {Entropy,Gaussian Processes,Mutual Information,Sequential},
+pages = {265--272},
+publisher = {ACM Press},
+title = {{Near-optimal sensor placements in Gaussian processes}},
+url = {http://portal.acm.org/citation.cfm?doid=1102351.1102385},
+volume = {1},
+year = {2005}
+}
+@article{Antunes2018b,
+abstract = {Simulation modeling is a well-known and recurrent approach to study the performance of urban systems. Taking into account the recent and continuous transformations within increasingly complex and multidimensional cities, the use of simulation tools is, in many cases, the only feasible and reliable approach to analyze such dynamic systems. However, simulation models can become very time consuming when detailed input-space exploration is needed. To tackle this problem, simulation metamodels are often used to approximate the simulators' results. In this paper, we propose an active learning algorithm based on the Gaussian process (GP) framework that gathers the most informative simulation data points in batches, according to both their predictive variances and to the relative distance between them. This allows us to explore the simulators' input space with fewer data points and in parallel, and thus in a more efficient way, while avoiding computationally expensive simulation runs in the process. We take advantage of the closeness notion encoded into the GP to select batches of points in such a way that they do not belong to the same high-variance neighborhoods. In addition, we also suggest two simple and practical user-defined stopping criteria so that the iterative learning procedure can be fully automated. We illustrate this methodology using three experimental settings. The results show that the proposed methodology is able to improve the exploration efficiency of the simulation input space in comparison with non-restricted batch-mode active learning procedures.},
+annote = {Read 3/11/20
+
+Problem: How to query a batch of data points in active learning, and then to stop?
+
+Method: Batch is computed by ensurign that points are spread out, and stopping criteria are computed using the initial variance.
+
+Applies: Every time you should query a batch of data points for a metamodel},
+author = {Antunes, Francisco and Ribeiro, Bernardete and Pereira, Francisco C. and Gomes, Rui},
+doi = {10.1109/TITS.2018.2842695},
+file = {:Users/christofferriis/Library/Application Support/Mendeley Desktop/Downloaded/Antunes et al. - 2018 - Efficient Transport Simulation With Restricted Batch-Mode Active Learning.pdf:pdf},
+issn = {1524-9050},
+journal = {IEEE Transactions on Intelligent Transportation Systems},
+keywords = {Active learning,Gaussian Processes,Gaussian processes,Metamodeling,Simulation,Transport,simulation metamodels,transport simulation},
+mendeley-groups = {Metamodels},
+mendeley-tags = {Active learning,Gaussian Processes,Metamodeling,Simulation,Transport},
+month = {nov},
+number = {11},
+pages = {3642--3651},
+publisher = {IEEE},
+title = {{Efficient Transport Simulation With Restricted Batch-Mode Active Learning}},
+url = {https://ieeexplore.ieee.org/document/8419064/},
+volume = {19},
+year = {2018}
+}
+@article{houlsby2012collaborative,
+  title={Collaborative gaussian processes for preference learning},
+  author={Houlsby, Neil and Huszar, Ferenc and Ghahramani, Zoubin and Hern{\'a}ndez-lobato, Jose},
+  journal={Advances in Neural Information Processing Systems},
+  volume={25},
+  year={2012}
+}
+@article{scikit-learn,
+ title={Scikit-learn: Machine Learning in {P}ython},
+ author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+ journal={Journal of Machine Learning Research},
+ volume={12},
+ pages={2825--2830},
+ year={2011}
+}
+@MISC{simulationlib, 
+ author = {Surjanovic, S. and Bingham, D.}, 
+ title = {Virtual Library of Simulation Experiments: Test Functions and Datasets}, 
+ year= {2022},
+ howpublished = {Retrieved June 3, 2022, from \url{http://www.sfu.ca/~ssurjano}} 
+}
+@article{Svendsen2020,
+abstract = {Many fields of science and engineering rely on running simulations with complex and computationally expensive models to understand the involved processes in the system of interest. Nevertheless, the high cost involved hamper reliable and exhaustive simulations. Very often such codes incorporate heuristics that ironically make them less tractable and transparent. This paper introduces an active learning methodology for adaptively constructing surrogate models, i.e. emulators, of such costly computer codes in a multi-output setting. The proposed technique is sequential and adaptive, and is based on the optimization of a suitable acquisition function. It aims to achieve accurate approximations, model tractability, as well as compact and expressive simulated datasets. In order to achieve this, the proposed Active Multi-Output Gaussian Process Emulator (AMOGAPE) combines the predictive capacity of Gaussian Processes (GPs) with the design of an acquisition function that favors sampling in low density and fluctuating regions of the approximation functions. Comparing different acquisition functions, we illustrate the promising performance of the method for the construction of emulators with toy examples, as well as for a widely used remote sensing transfer code.},
+author = {Svendsen, Daniel Heestermans and Martino, Luca and Camps-Valls, Gustau},
+doi = {10.1016/j.patcog.2019.107103},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/Svendsen2020.pdf:pdf},
+issn = {00313203},
+journal = {Pattern Recognition},
+keywords = {Active learning,Computer code,Design of experiments,Emulation,Gaussian process,Radiative transfer model,Remote sensing},
+mendeley-groups = {Active learning},
+pages = {107103},
+publisher = {Elsevier Ltd},
+title = {{Active emulation of computer codes with Gaussian processes – Application to remote sensing}},
+url = {https://doi.org/10.1016/j.patcog.2019.107103},
+volume = {100},
+year = {2020}
+}
+@article{Fernandez2020,
+abstract = {We propose novel adaptive quadrature schemes based on an active learning procedure. We consider an interpolative approach for building a surrogate posterior density, combining it with Monte Carlo sampling methods and other quadrature rules. The nodes of the quadrature are sequentially chosen by maximizing a suitable acquisition function, which takes into account the current approximation of the posterior and the positions of the nodes. This maximization does not require additional evaluations of the true posterior. We introduce two specific schemes based on Gaussian and Nearest Neighbors bases. For the Gaussian case, we also provide a novel procedure for fitting the bandwidth parameter, in order to build a suitable emulator of a density function. With both techniques, we always obtain a positive estimation of the marginal likelihood (a.k.a., Bayesian evidence). An equivalent importance sampling interpretation is also described, which allows the design of extended schemes. Several theoretical results are provided and discussed. Numerical results show the advantage of the proposed approach, including a challenging inference problem in an astronomic dynamical model, with the goal of revealing the number of planets orbiting a star.},
+archivePrefix = {arXiv},
+arxivId = {2006.00535},
+author = {Fernandez, Fernando Llorente and Martino, Luca and Elvira, Victor and Delgado, David and Lopez-Santiago, Javier},
+doi = {10.1109/ACCESS.2020.3038333},
+eprint = {2006.00535},
+file = {:Users/christofferriis/OneDrive - Danmarks Tekniske Universitet/PhD/Literature/Active Learning/Llorente2020.pdf:pdf},
+issn = {21693536},
+journal = {IEEE Access},
+keywords = {Active learning,Bayesian quadrature,Monte Carlo methods,emulation,experimental design,numerical integration},
+mendeley-groups = {Active learning},
+pages = {208462--208483},
+title = {{Adaptive Quadrature Schemes for Bayesian Inference via Active Learning}},
+volume = {8},
+year = {2020}
+}
+@article{chabanet2021coupling,
+  title={Coupling digital simulation and machine learning metamodel through an active learning approach in Industry 4.0 context},
+  author={Chabanet, Sylvain and El-Haouzi, Hind Bril and Thomas, Philippe},
+  journal={Computers in Industry},
+  volume={133},
+  pages={103529},
+  year={2021},
+  publisher={Elsevier}
+}
+@incollection{gorissen2009automatic,
+  title={Automatic approximation of expensive functions with active learning},
+  author={Gorissen, Dirk and Crombecq, Karel and Couckuyt, Ivo and Dhaene, Tom},
+  booktitle={Foundations of Computational, Intelligence Volume 1},
+  pages={35--62},
+  year={2009},
+  publisher={Springer}
+}
+@article{vanKempen2000,
+  title={Mean and variance of ratio estimators used in fluorescence ratio imaging},
+  author={Van Kempen, GMP and Van Vliet, LJ},
+  journal={Cytometry: The Journal of the International Society for Analytical Cytology},
+  volume={39},
+  number={4},
+  pages={300--305},
+  year={2000},
+  publisher={Wiley Online Library}
+}

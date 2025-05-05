@@ -1,0 +1,22 @@
+In humans and animals, curriculum learning -- presenting data in a curated
+order - is critical to rapid learning and effective pedagogy. Yet in machine
+learning, curricula are not widely used and empirically often yield only
+moderate benefits. This stark difference in the importance of curriculum raises
+a fundamental theoretical question: when and why does curriculum learning help?
+  In this work, we analyse a prototypical neural network model of curriculum
+learning in the high-dimensional limit, employing statistical physics methods.
+Curricula could in principle change both the learning speed and asymptotic
+performance of a model. To study the former, we provide an exact description of
+the online learning setting, confirming the long-standing experimental
+observation that curricula can modestly speed up learning. To study the latter,
+we derive performance in a batch learning setting, in which a network trains to
+convergence in successive phases of learning on dataset slices of varying
+difficulty. With standard training losses, curriculum does not provide
+generalisation benefit, in line with empirical observations. However, we show
+that by connecting different learning phases through simple Gaussian priors,
+curriculum can yield a large improvement in test performance. Taken together,
+our reduced analytical descriptions help reconcile apparently conflicting
+empirical results and trace regimes where curriculum learning yields the
+largest gains. More broadly, our results suggest that fully exploiting a
+curriculum may require explicit changes to the loss function at curriculum
+boundaries.

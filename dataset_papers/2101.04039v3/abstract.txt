@@ -1,0 +1,22 @@
+Discrepancy measures between probability distributions, often termed
+statistical distances, are ubiquitous in probability theory, statistics and
+machine learning. To combat the curse of dimensionality when estimating these
+distances from data, recent work has proposed smoothing out local
+irregularities in the measured distributions via convolution with a Gaussian
+kernel. Motivated by the scalability of this framework to high dimensions, we
+investigate the structural and statistical behavior of the Gaussian-smoothed
+$p$-Wasserstein distance $\mathsf{W}_p^{(\sigma)}$, for arbitrary $p\geq 1$.
+After establishing basic metric and topological properties of
+$\mathsf{W}_p^{(\sigma)}$, we explore the asymptotic statistical behavior of
+$\mathsf{W}_p^{(\sigma)}(\hat{\mu}_n,\mu)$, where $\hat{\mu}_n$ is the
+empirical distribution of $n$ independent observations from $\mu$. We prove
+that $\mathsf{W}_p^{(\sigma)}$ enjoys a parametric empirical convergence rate
+of $n^{-1/2}$, which contrasts the $n^{-1/d}$ rate for unsmoothed
+$\mathsf{W}_p$ when $d \geq 3$. Our proof relies on controlling
+$\mathsf{W}_p^{(\sigma)}$ by a $p$th-order smooth Sobolev distance
+$\mathsf{d}_p^{(\sigma)}$ and deriving the limit distribution of
+$\sqrt{n}\,\mathsf{d}_p^{(\sigma)}(\hat{\mu}_n,\mu)$, for all dimensions $d$.
+As applications, we provide asymptotic guarantees for two-sample testing and
+minimum distance estimation using $\mathsf{W}_p^{(\sigma)}$, with experiments
+for $p=2$ using a maximum mean discrepancy formulation of
+$\mathsf{d}_2^{(\sigma)}$.

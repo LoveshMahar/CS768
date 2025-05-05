@@ -1,0 +1,435 @@
+@inproceedings{optimalErrorHuberModel,
+  author       = {Ilias Diakonikolas and
+                  Gautam Kamath and
+                  Daniel M. Kane and
+                  Jerry Li and
+                  Ankur Moitra and
+                  Alistair Stewart},
+  editor       = {Artur Czumaj},
+  title        = {Robustly Learning a Gaussian: Getting Optimal Error, Efficiently},
+  booktitle    = {Proceedings of the Twenty-Ninth Annual {ACM-SIAM} Symposium on Discrete
+                  Algorithms, {SODA} 2018, New Orleans, LA, USA, January 7-10, 2018},
+  pages        = {2683--2702},
+  publisher    = {{SIAM}},
+  year         = {2018},
+  url          = {https://doi.org/10.1137/1.9781611975031.171},
+  doi          = {10.1137/1.9781611975031.171},
+  timestamp    = {Tue, 02 Feb 2021 17:07:58 +0100},
+  biburl       = {https://dblp.org/rec/conf/soda/DiakonikolasKK018.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{ivkov2022list,
+  title={List-decodable covariance estimation},
+  author={Ivkov, Misha and Kothari, Pravesh K},
+  booktitle={Proceedings of the 54th Annual ACM SIGACT Symposium on Theory of Computing},
+  pages={1276--1283},
+  year={2022}
+}
+
+@article{lloyd1982least,
+  title={Least squares quantization in PCM},
+  author={Lloyd, Stuart},
+  journal={IEEE transactions on information theory},
+  pages={129--137},
+  year={1982},
+}
+@article{chhabra2021,
+  title={An overview of fairness in clustering},
+  author={Chhabra, Anshuman and Masalkovait{\.e}, Karina and Mohapatra, Prasant},
+  journal={IEEE Access},
+  volume={9},
+  pages={130698--130720},
+  year={2021},
+  publisher={IEEE}
+}
+@misc{fairclustering,
+  title = {A Tutorial and Resources for Fair Clustering},
+howpublished = {\url{http://www.fairclustering.com}},
+  note = {Accessed: 2024-02-01},
+author={},
+year={}
+}
+@article{garcia2010,
+  title={A review of robust clustering methods},
+  author={Garc{\'\i}a-Escudero, Luis Angel and Gordaliza, Alfonso and Matr{\'a}n, Carlos and Mayo-Iscar, Agust{\'\i}n},
+  journal={Advances in Data Analysis and Classification},
+  volume={4},
+  pages={89--109},
+  year={2010},
+  publisher={Springer}
+}
+
+@article{brownlees2015empirical,
+  title={Empirical risk minimization for heavy-tailed losses},
+  author={Brownlees, Christian and Joly, Emilien and Lugosi, G{\'a}bor},
+  year={2015}
+}
+
+@inproceedings{ester1996density,
+  title={A density-based algorithm for discovering clusters in large spatial databases with noise},
+  author={Ester, Martin and Kriegel, Hans-Peter and Sander, J{\"o}rg and Xu, Xiaowei and others},
+  booktitle={kdd},
+  pages={226--231},
+  year={1996}
+}
+
+@inproceedings{bakshi2022robustly,
+  title={Robustly learning mixtures of k arbitrary {G}aussians},
+  author={Bakshi, Ainesh and Diakonikolas, Ilias and Jia, He and Kane, Daniel M and Kothari, Pravesh K and Vempala, Santosh S},
+  booktitle={Proceedings of the 54th Annual ACM SIGACT Symposium on Theory of Computing},
+  pages={1234--1247},
+  year={2022}
+}
+
+@inproceedings{liu2021settling,
+  title={Settling the robust learnability of mixtures of {G}aussians},
+  author={Liu, Allen and Moitra, Ankur},
+  booktitle={Proceedings of the 53rd Annual ACM SIGACT Symposium on Theory of Computing},
+  pages={518--531},
+  year={2021}
+}
+
+@inproceedings{bakshi2020outlier,
+  title={Outlier-robust clustering of {G}aussians and other non-spherical mixtures},
+  author={Bakshi, Ainesh and Diakonikolas, Ilias and Hopkins, Samuel B and Kane, Daniel and Karmalkar, Sushrut and Kothari, Pravesh K},
+  booktitle={2020 IEEE 61st Annual Symposium on Foundations of Computer Science (FOCS)},
+  pages={149--159},
+  year={2020},
+  organization={IEEE}
+}
+
+@inproceedings{liu2022clustering,
+  title={Clustering mixtures with almost optimal separation in polynomial time},
+  author={Liu, Allen and Li, Jerry},
+  booktitle={Proceedings of the 54th Annual ACM SIGACT Symposium on Theory of Computing},
+  pages={1248--1261},
+  year={2022}
+}
+
+@Article{CLWE_2,
+  author        = {Aparna Gupte and Neekon Vafa and Vinod Vaikuntanathan},
+  title         = {Continuous LWE is as Hard as LWE \& Applications to Learning Gaussian Mixtures},
+  year          = {2022},
+  month         = apr,
+  abstract      = {We show direct and conceptually simple reductions between the classical learning with errors (LWE) problem and its continuous analog, CLWE (Bruna, Regev, Song and Tang, STOC 2021). This allows us to bring to bear the powerful machinery of LWE-based cryptography to the applications of CLWE. For example, we obtain the hardness of CLWE under the classical worst-case hardness of the gap shortest vector problem. Previously, this was known only under quantum worst-case hardness of lattice problems. More broadly, with our reductions between the two problems, any future developments to LWE will also apply to CLWE and its downstream applications. As a concrete application, we show an improved hardness result for density estimation for mixtures of Gaussians. In this computational problem, given sample access to a mixture of Gaussians, the goal is to output a function that estimates the density function of the mixture. Under the (plausible and widely believed) exponential hardness of the classical LWE problem, we show that Gaussian mixture density estimation in $\mathbb{R}^n$ with roughly $\log n$ Gaussian components given $\mathsf{poly}(n)$ samples requires time quasi-polynomial in $n$. Under the (conservative) polynomial hardness of LWE, we show hardness of density estimation for $n^{\epsilon}$ Gaussians for any constant $\epsilon > 0$, which improves on Bruna, Regev, Song and Tang (STOC 2021), who show hardness for at least $\sqrt{n}$ Gaussians under polynomial (quantum) hardness assumptions. Our key technical tool is a reduction from classical LWE to LWE with $k$-sparse secrets where the multiplicative increase in the noise is only $O(\sqrt{k})$, independent of the ambient dimension $n$.},
+  archiveprefix = {arXiv},
+  eprint        = {2204.02550},
+  file          = {:- Continuous LWE Is As Hard As LWE \& Applications to Learning Gaussian Mixtures.pdf:PDF},
+  keywords      = {cs.CR, cs.LG},
+  primaryclass  = {cs.CR},
+}
+
+@InProceedings{CLWE,
+  author    = {Joan Bruna and Oded Regev and Min Jae Song and Yi Tang},
+  booktitle = {{STOC} '21: 53rd Annual {ACM} {SIGACT} Symposium on Theory of Computing, Virtual Event, Italy, June 21-25, 2021},
+  title     = {Continuous {LWE}},
+  year      = {2021},
+  editor    = {Samir Khuller and Virginia Vassilevska Williams},
+  pages     = {694--707},
+  publisher = {{ACM}},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/conf/stoc/Bruna0ST21.bib},
+  doi       = {10.1145/3406325.3451000},
+}
+
+@inproceedings{DKS17,
+  title={Statistical query lower bounds for robust estimation of high-dimensional gaussians and gaussian mixtures},
+  author={Diakonikolas, Ilias and Kane, Daniel M and Stewart, Alistair},
+  booktitle={2017 IEEE 58th Annual Symposium on Foundations of Computer Science (FOCS)},
+  pages={73--84},
+  year={2017},
+  organization={IEEE}
+}
+
+@inproceedings{kothari2018robust,
+  title={Robust moment estimation and improved clustering via sum of squares},
+  author={Kothari, Pravesh K and Steinhardt, Jacob and Steurer, David},
+  booktitle={Proceedings of the 50th Annual ACM SIGACT Symposium on Theory of Computing},
+  pages={1035--1046},
+  year={2018}
+}
+
+@inproceedings{hopkins2018mixture,
+  title={Mixture models, robustness, and sum of squares proofs},
+  author={Hopkins, Samuel B and Li, Jerry},
+  booktitle={Proceedings of the 50th Annual ACM SIGACT Symposium on Theory of Computing},
+  pages={1021--1034},
+  year={2018}
+}
+
+@inproceedings{diakonikolas2017being,
+  title={Being robust (in high dimensions) can be practical},
+  author={Diakonikolas, Ilias and Kamath, Gautam and Kane, Daniel M and Li, Jerry and Moitra, Ankur and Stewart, Alistair},
+  booktitle={International Conference on Machine Learning},
+  pages={999--1008},
+  year={2017},
+  organization={PMLR}
+}
+
+@inproceedings{lai2016agnostic,
+  title={Agnostic estimation of mean and covariance},
+  author={Lai, Kevin A and Rao, Anup B and Vempala, Santosh},
+  booktitle={2016 IEEE 57th Annual Symposium on Foundations of Computer Science (FOCS)},
+  pages={665--674},
+  year={2016},
+  organization={IEEE}
+}
+
+Robust estimators in high-dimensions without the computational intractability
+@book{diakonikolas2023algorithmic,
+  title={Algorithmic high-dimensional robust statistics},
+  author={Diakonikolas, Ilias and Kane, Daniel M},
+  year={2023},
+  publisher={Cambridge University Press}
+}
+
+@inproceedings{diakonikolas2018list,
+  title={List-decodable robust mean estimation and learning mixtures of spherical gaussians},
+  author={Diakonikolas, Ilias and Kane, Daniel M and Stewart, Alistair},
+  booktitle={Proceedings of the 50th Annual ACM SIGACT Symposium on Theory of Computing},
+  pages={1047--1060},
+  year={2018}
+}
+
+@inproceedings{charikar2017learning,
+  title={Learning from untrusted data},
+  author={Charikar, Moses and Steinhardt, Jacob and Valiant, Gregory},
+  booktitle={Proceedings of the 49th Annual ACM SIGACT Symposium on Theory of Computing},
+  pages={47--60},
+  year={2017}
+}
+
+@inproceedings{balcan2008discriminative,
+  title={A discriminative framework for clustering via similarity functions},
+  author={Balcan, Maria-Florina and Blum, Avrim and Vempala, Santosh},
+  booktitle={Proceedings of the fortieth annual ACM symposium on Theory of computing},
+  pages={671--680},
+  year={2008}
+}
+
+@inproceedings{meister2018data,
+  title={A data prism: Semi-verified learning in the small-alpha regime},
+  author={Meister, Michela and Valiant, Gregory},
+  booktitle={Conference On Learning Theory},
+  pages={1530--1546},
+  year={2018},
+  organization={PMLR}
+}
+
+@article{diakonikolas2020list,
+  title={List-decodable mean estimation via iterative multi-filtering},
+  author={Diakonikolas, Ilias and Kane, Daniel and Kongsgaard, Daniel},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={9312--9323},
+  year={2020}
+}
+
+@article{diakonikolas2021list,
+  title={List-decodable mean estimation in nearly-{PCA} time},
+  author={Diakonikolas, Ilias and Kane, Daniel and Kongsgaard, Daniel and Li, Jerry and Tian, Kevin},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={10195--10208},
+  year={2021}
+}
+
+@inproceedings{cherapanamjeri2020list,
+  title={List decodable mean estimation in nearly linear time},
+  author={Cherapanamjeri, Yeshwanth and Mohanty, Sidhanth and Yau, Morris},
+  booktitle={2020 IEEE 61st Annual Symposium on Foundations of Computer Science (FOCS)},
+  pages={141--148},
+  year={2020},
+  organization={IEEE}
+}
+
+@inproceedings{diakonikolas2022clustering,
+  title={Clustering mixture models in almost-linear time via list-decodable mean estimation},
+  author={Diakonikolas, Ilias and Kane, Daniel M and Kongsgaard, Daniel and Li, Jerry and Tian, Kevin},
+  booktitle={Proceedings of the 54th Annual ACM SIGACT Symposium on Theory of Computing},
+  pages={1262--1275},
+  year={2022}
+}
+
+@article{zeng2022list,
+  title={List-decodable sparse mean estimation},
+  author={Zeng, Shiwei and Shen, Jie},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={24031--24045},
+  year={2022}
+}
+
+@article{diakonikolas2022list,
+  title={List-decodable sparse mean estimation via difference-of-pairs filtering},
+  author={Diakonikolas, Ilias and Kane, Daniel and Karmalkar, Sushrut and Pensia, Ankit and Pittas, Thanasis},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={13947--13960},
+  year={2022}
+}
+
+@article{kothari2017better,
+  title={Better agnostic clustering via relaxed tensor norms},
+  author={Kothari, Pravesh K and Steinhardt, Jacob},
+  journal={arXiv preprint arXiv:1711.07465},
+  year={2017}
+}
+
+@inproceedings{raghavendra2020alist,
+  title={List decodable learning via sum of squares},
+  author={Raghavendra, Prasad and Yau, Morris},
+  booktitle={Proceedings of the Fourteenth Annual ACM-SIAM Symposium on Discrete Algorithms},
+  pages={161--180},
+  year={2020},
+  organization={SIAM}
+}
+
+@article{karmalkar2019list,
+  title={List-decodable linear regression},
+  author={Karmalkar, Sushrut and Klivans, Adam and Kothari, Pravesh},
+  journal={Advances in neural information processing systems},
+  volume={32},
+  year={2019}
+}
+
+@article{diakonikolas2021statistical,
+  title={Statistical query lower bounds for list-decodable linear regression},
+  author={Diakonikolas, Ilias and Kane, Daniel and Pensia, Ankit and Pittas, Thanasis and Stewart, Alistair},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={3191--3204},
+  year={2021}
+}
+
+@inproceedings{bakshi2021list,
+  title={List-decodable subspace recovery: Dimension independent error in polynomial time},
+  author={Bakshi, Ainesh and Kothari, Pravesh K},
+  booktitle={Proceedings of the 2021 ACM-SIAM Symposium on Discrete Algorithms (SODA)},
+  pages={1279--1297},
+  year={2021},
+  organization={SIAM}
+}
+
+@inproceedings{raghavendra2020blist,
+  title={List decodable subspace recovery},
+  author={Raghavendra, Prasad and Yau, Morris},
+  booktitle={Conference on Learning Theory},
+  pages={3206--3226},
+  year={2020},
+  organization={PMLR}
+}
+
+@article{kearns1998efficient,
+  title={Efficient noise-tolerant learning from statistical queries},
+  author={Kearns, Michael},
+  journal={Journal of the ACM (JACM)},
+  volume={45},
+  number={6},
+  pages={983--1006},
+  year={1998},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{regev2017learning,
+  title={On learning mixtures of well-separated {G}aussians},
+  author={Regev, Oded and Vijayaraghavan, Aravindan},
+  booktitle={2017 IEEE 58th Annual Symposium on Foundations of Computer Science (FOCS)},
+  pages={85--96},
+  year={2017},
+  organization={IEEE}
+}
+
+@article{diakonikolas2019robust,
+  title={Robust estimators in high-dimensions without the computational intractability},
+  author={Diakonikolas, Ilias and Kamath, Gautam and Kane, Daniel and Li, Jerry and Moitra, Ankur and Stewart, Alistair},
+  journal={SIAM Journal on Computing},
+  volume={48},
+  number={2},
+  pages={742--864},
+  year={2019},
+  publisher={SIAM}
+}
+
+@article{kothari2017outlier,
+  title={Outlier-robust moment-estimation via sum-of-squares},
+  author={Kothari, Pravesh K and Steurer, David},
+  journal={arXiv preprint arXiv:1711.11581},
+  year={2017}
+}
+
+@inproceedings{kwon2020algorithm,
+  title={The EM algorithm gives sample-optimality for learning mixtures of well-separated gaussians},
+  author={Kwon, Jeongyeol and Caramanis, Constantine},
+  booktitle={Conference on Learning Theory},
+  pages={2425--2487},
+  year={2020},
+  organization={PMLR}
+}
+
+@article{diakonikolas2018algorithmic,
+  title={Algorithmic high-dimensional robust statistics},
+  author={Diakonikolas, Ilias and Kane, Daniel M},
+  journal={Webpage http://www. iliasdiakonikolas. org/simons-tutorial-robust. html},
+  year={2018}
+}
+
+@techreport{elias1957list,
+  title={List decoding for noisy channels},
+  author={Elias, Peter},
+  year={1957},
+  institution={Research Laboratory of Electronics, Massachusetts Institute of Technology}
+}
+
+@inproceedings{diakonikolas2017statistical,
+  title={Statistical query lower bounds for robust estimation of high-dimensional gaussians and gaussian mixtures},
+  author={Diakonikolas, Ilias and Kane, Daniel M and Stewart, Alistair},
+  booktitle={2017 IEEE 58th Annual Symposium on Foundations of Computer Science (FOCS)},
+  pages={73--84},
+  year={2017},
+  organization={IEEE}
+}
+
+@article{feigelson2012statistical,
+  title={Statistical methods for Astronomy},
+  author={Feigelson, Eric D and Babu, G Jogesh},
+  journal={arXiv preprint arXiv:1205.2064},
+  year={2012}
+}
+
+@article{bickel2003robust,
+  title={Robust cluster analysis of microarray gene expression data with the number of clusters determined biologically},
+  author={Bickel, David R},
+  journal={Bioinformatics},
+  volume={19},
+  number={7},
+  pages={818--824},
+  year={2003},
+  publisher={Oxford University Press}
+}
+
+@inproceedings{hardt2015tight,
+  title={Tight bounds for learning a mixture of two gaussians},
+  author={Hardt, Moritz and Price, Eric},
+  booktitle={Proceedings of the forty-seventh annual ACM symposium on Theory of computing},
+  pages={753--760},
+  year={2015}
+}
+
+@inproceedings{moitra2010settling,
+  title={Settling the polynomial learnability of mixtures of gaussians},
+  author={Moitra, Ankur and Valiant, Gregory},
+  booktitle={2010 IEEE 51st Annual Symposium on Foundations of Computer Science},
+  pages={93--102},
+  year={2010},
+  organization={IEEE}
+}
+
+@article{diakonikolas2024near,
+  title={Near-Optimal Algorithms for Gaussians with Huber Contamination: Mean Estimation and Linear Regression},
+  author={Diakonikolas, Ilias and Kane, Daniel and Pensia, Ankit and Pittas, Thanasis},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}

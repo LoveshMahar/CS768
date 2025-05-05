@@ -1,0 +1,507 @@
+@InProceedings{do_BNN_need_fully_stochastic,
+  title = 	 {Do Bayesian Neural Networks Need To Be Fully Stochastic?},
+  author =       {Sharma, Mrinank and Farquhar, Sebastian and Nalisnick, Eric and Rainforth, Tom},
+  booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {7694--7722},
+  year = 	 {2023},
+  volume = 	 {206},
+  abstract = 	 {We investigate the benefit of treating all the parameters in a Bayesian neural network stochastically and find compelling theoretical and empirical evidence that this standard construction may be unnecessary. To this end, we prove that expressive predictive distributions require only small amounts of stochasticity. In particular, partially stochastic networks with only n stochastic biases are universal probabilistic predictors for n-dimensional predictive problems. In empirical investigations, we find no systematic benefit of full stochasticity across four different inference modalities and eight datasets; partially stochastic networks can match and sometimes even outperform fully stochastic networks, despite their reduced memory costs.}
+}
+
+@InProceedings{expr_approx_inf_BNN,
+ author = {Foong, Andrew and Burt, David and Li, Yingzhen and Turner, Richard},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+ pages = {15897--15908},
+ title = {On the Expressiveness of Approximate Inference in Bayesian Neural Networks},
+ volume = {33},
+ year = {2020}
+}
+
+@InProceedings{gal_liberty_or_depth,
+ author = {Farquhar, Sebastian and Smith, Lewis and Gal, Yarin},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {4346--4357},
+ title = {Liberty or Depth: Deep Bayesian Neural Nets Do Not Need Complex Weight Posterior Approximations},
+ volume = {33},
+ year = {2020}
+}
+
+
+@InProceedings{how_to_train_neuralODE,
+  title = 	 {How to Train Your Neural {ODE}: the World of {J}acobian and Kinetic Regularization},
+  author =       {Finlay, Chris and Jacobsen, Joern-Henrik and Nurbekyan, Levon and Oberman, Adam},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {3154--3164},
+  year = 	 {2020},
+  volume = 	 {119},
+  month = 	 {13--18 Jul},
+  abstract = 	 {Training neural ODEs on large datasets has not been tractable due to the necessity of allowing the adaptive numerical ODE solver to refine its step size to very small values. In practice this leads to dynamics equivalent to many hundreds or even thousands of layers. In this paper, we overcome this apparent difficulty by introducing a theoretically-grounded combination of both optimal transport and stability regularizations which encourage neural ODEs to prefer simpler dynamics out of all the dynamics that solve a problem well. Simpler dynamics lead to faster convergence and to fewer discretizations of the solver, considerably decreasing wall-clock time without loss in performance. Our approach allows us to train neural ODE-based generative models to the same performance as the unregularized dynamics, with significant reductions in training time. This brings neural ODEs closer to practical relevance in large-scale applications.}
+}
+
+@InProceedings{Neural_ODEs,
+ author = {Chen, Ricky T. Q. and Rubanova, Yulia and Bettencourt, Jesse and Duvenaud, David K},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Neural Ordinary Differential Equations},
+ volume = {31},
+ year = {2018}
+}
+
+
+@InProceedings{scalable_gradients_for_SDE,
+  title = 	 {Scalable Gradients for Stochastic Differential Equations},
+  author =       {Li, Xuechen and Wong, Ting-Kam Leonard and Chen, Ricky T. Q. and Duvenaud, David},
+  booktitle = 	 {Proceedings of the 23rd International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {3870--3882},
+  year = 	 {2020},
+  volume = 	 {108},
+  abstract = 	 {The adjoint sensitivity method scalably computes gradients of solutions to ordinary differential equations. We generalize this method to stochastic differential equations, allowing time-efficient and constant-memory computation of gradients with high-order adaptive solvers. Specifically, we derive a stochastic differentialequation whose solution is the gradient, a memory-efficient algorithm for cachingnoise, and conditions under which numerical solutions converge. In addition, we combine our method with gradient-based stochastic variational inference for latent stochastic differential equations. We use our method to fit stochastic dynamics defined by neural networks, achieving competitive performance ona 50-dimensional motion capture dataset.}
+}
+
+@article{dinh2016density,
+  title={Density estimation using real nvp},
+  author={Dinh, Laurent and Sohl-Dickstein, Jascha and Bengio, Samy},
+  journal={arXiv preprint arXiv:1605.08803},
+  year={2016}
+}
+
+@inproceedings{xu2022infinitely,
+  title={Infinitely deep bayesian neural networks with stochastic differential equations},
+  author={Xu, Winnie and Chen, Ricky TQ and Li, Xuechen and Duvenaud, David},
+  booktitle={ Proceedings of The 25th International Conference on Artificial Intelligence and Statistics},
+  pages={721--738},
+  year={2022},
+  volume = {151}
+}
+
+
+@article{Haber_2017,
+  title={Stable architectures for deep neural networks},
+  author={Haber, Eldad and Ruthotto, Lars},
+  journal={Inverse problems},
+  volume={34},
+  number={1},
+  pages={014004},
+  year={2017},
+  publisher={IOP Publishing}
+}
+
+@phdthesis{article-mackay,
+  title={Bayesian methods for adaptive models},
+  author={Mackay, David John Cameron},
+  year={1992},
+  school={California Institute of Technology}
+}
+
+@article{deng2012mnist,
+  title={The mnist database of handwritten digit images for machine learning research [best of the web]},
+  author={Deng, Li},
+  journal={IEEE signal processing magazine},
+  volume={29},
+  number={6},
+  pages={141--142},
+  year={2012},
+  publisher={IEEE}
+}
+% READ WHATSAPP WHENEVER YOU CAN PLS
+@misc{Krizhevsky09learningmultiple,
+    author = {Alex Krizhevsky},
+    title = {Learning multiple layers of features from tiny images},
+    year = {2009}
+}
+
+@phdthesis{Neal1995BayesianLF,
+  title={Bayesian Learning For Neural Networks},
+  author={Neal, Radford M},
+  year={1995},
+  school={University of Toronto}
+}
+
+@article{liu2019neural,
+      title={Neural SDE: Stabilizing Neural ODE Networks with Stochastic Noise}, 
+      author={Xuanqing Liu and Tesi Xiao and Si Si and Qin Cao and Sanjiv Kumar and Cho-Jui Hsieh},
+      year={2019},
+      journal={arXiv preprint arXiv:1906.02355},
+}
+
+@article{kingma2014adam,
+  title={Adam: A method for stochastic optimization},
+  author={Kingma, Diederik P and Ba, Jimmy},
+  journal={arXiv preprint arXiv:1412.6980},
+  year={2014}
+}
+
+@InProceedings{blundell2015weight,
+  title={Weight uncertainty in neural networks},
+  author={Blundell, Charles and Cornebise, Julien and Kavukcuoglu, Koray and Wierstra, Daan},
+  booktitle={Proceedings of the 32nd International Conference on Machine Learning},
+  pages={1613--1622},
+  year={2015},
+  volume={37}
+}
+
+@inproceedings{daxberger2022bayesian,
+  title={Bayesian deep learning via subnetwork inference},
+  author={Daxberger, Erik and Nalisnick, Eric and Allingham, James U and Antor{\'a}n, Javier and Hern{\'a}ndez-Lobato, Jos{\'e} Miguel},
+  booktitle={Proceedings of the 38th International Conference on Machine Learning},
+  pages={2510--2521},
+  year={2021},
+  volume = {139}
+}
+
+@inproceedings{kristiadi2020bayesian,
+  title={Being bayesian, even just a bit, fixes overconfidence in relu networks},
+  author={Kristiadi, Agustinus and Hein, Matthias and Hennig, Philipp},
+  booktitle={Proceedings of the 37th International Conference on Machine Learning},
+  pages={5436--5446},
+  year={2020},
+  volume = {119}
+}
+
+@inproceedings{dupont2019augmented,
+  title={Augmented neural odes},
+  author={Dupont, Emilien and Doucet, Arnaud and Teh, Yee Whye},
+  booktitle={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+@inproceedings{kidger2020universal,
+  title={Universal approximation with deep narrow networks},
+  author={Kidger, Patrick and Lyons, Terry},
+  booktitle={Conference on Learning Theory},
+  pages={2306--2327},
+  year={2020},
+  organization={PMLR}
+}
+
+@inproceedings{lu2017expressive,
+ author = {Lu, Zhou and Pu, Hongming and Wang, Feicheng and Hu, Zhiqiang and Wang, Liwei},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {The Expressive Power of Neural Networks: A View from the Width},
+ volume = {30},
+ year = {2017}
+}
+
+@book{kallenberg_foundations_2010,
+	address = {New York, NY Berlin Heidelberg},
+	edition = {2. ed},
+	series = {Probability and its {Applications}},
+	title = {Foundations of {Modern} {Probability}},
+	isbn = {9781441929495},
+	language = {eng},
+	publisher = {Springer},
+	author = {Kallenberg, Olav},
+	year = {2010},
+}
+
+
+@InProceedings{zhang20h,
+  title = 	 {Approximation Capabilities of Neural {ODE}s and Invertible Residual Networks},
+  author =       {Zhang, Han and Gao, Xi and Unterman, Jacob and Arodz, Tom},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {11086--11095},
+  year = 	 {2020},
+  volume = 	 {119},
+}
+
+@article{yarotsky17,
+title = {Error bounds for approximations with deep ReLU networks},
+journal = {Neural Networks},
+volume = {94},
+pages = {103-114},
+year = {2017},
+issn = {0893-6080},
+author = {Dmitry Yarotsky},
+}
+
+@article{leshno93,
+title = {Multilayer feedforward networks with a nonpolynomial activation function can approximate any function},
+journal = {Neural Networks},
+volume = {6},
+number = {6},
+pages = {861-867},
+year = {1993},
+author = {Moshe Leshno and Vladimir Ya. Lin and Allan Pinkus and Shimon Schocken},
+}
+
+@article{bergna2023graph,
+      title={Graph Neural Stochastic Differential Equations}, 
+      author={Richard Bergna and Felix Opolka and Pietro Liò and Jose Miguel Hernandez-Lobato},
+      year={2023},
+      journal={arXiv preprint arXiv:2308.12316},
+}
+
+@inproceedings{vanamersfoort2020uncertainty,
+  title={Uncertainty estimation using a single deep deterministic neural network},
+  author={Van Amersfoort, Joost and Smith, Lewis and Teh, Yee Whye and Gal, Yarin},
+  booktitle={Proceedings of the 37th International Conference on Machine Learning},
+  pages={9690--9700},
+  year={2020},
+  volume = {119}
+}
+
+
+@InProceedings{pmlr-v124-ustyuzhaninov20a,
+  title = {Compositional uncertainty in deep Gaussian processes},
+  author =       {Ustyuzhaninov, Ivan and Kazlauskaite, Ieva and Kaiser, Markus and Bodin, Erik and Campbell, Neill and Henrik Ek, Carl},
+  booktitle = {Proceedings of the 36th Conference on Uncertainty in Artificial Intelligence (UAI)},
+  pages = 	 {480--489},
+  year = 	 {2020},
+  volume = 	 {124},
+  abstract = 	 {Gaussian processes (GPs) are nonparametric priors over functions. Fitting a GP implies computing a posterior distribution of functions consistent with the observed data. Similarly, deep Gaussian processes (DGPs) should allow us to compute a posterior distribution of compositions of multiple functions giving rise to the observations. However, exact Bayesian inference is intractable for DGPs, motivating the use of various approximations. We show that the application of simplifying mean-field assumptions across the hierarchy leads to the layers of a DGP collapsing to near-deterministic transformations. We argue that such an inference scheme is suboptimal, not taking advantage of the potential of the model to discover the compositional structure in the data. To address this issue, we examine alternative variational inference schemes allowing for dependencies across different layers and discuss their advantages and limitations.}
+}
+
+@article{hoffman13-svi,
+  author  = {Matthew D. Hoffman and David M. Blei and Chong Wang and John Paisley},
+  title   = {Stochastic Variational Inference},
+  journal = {Journal of Machine Learning Research},
+  year    = {2013},
+  volume  = {14},
+  number  = {40},
+  pages   = {1303--1347},
+}
+
+@Article{cybenko1989,
+author={Cybenko, G.},
+title={Approximation by superpositions of a sigmoidal function},
+journal={Mathematics of Control, Signals and Systems},
+year={1989},
+month={Dec},
+day={01},
+volume={2},
+number={4},
+pages={303-314},
+}
+
+@article{calvoordonez2023missing,
+      title={The Missing U for Efficient Diffusion Models}, 
+      author={Sergio Calvo-Ordoñez and Chun-Wun Cheng and Jiahao Huang and Lipei Zhang and Guang Yang and Carola-Bibiane Schonlieb and Angelica I Aviles-Rivero},
+      year={2023},
+      journal={arXiv preprint arXiv:2310.20092},
+}
+
+@article{hoglund2023neural,
+  title={A Neural RDE approach for continuous-time non-Markovian stochastic control problems},
+  author={Hoglund, Melker and Ferrucci, Emilio and Hernandez, Camilo and Gonzalez, Aitor Muguruza and Salvi, Cristopher and Sanchez-Betancourt, Leandro and Zhang, Yufei},
+  journal={arXiv preprint arXiv:2306.14258},
+  year={2023}
+}
+
+@article{he2023recombiner,
+  title={RECOMBINER: Robust and Enhanced Compression with Bayesian Implicit Neural Representations},
+  author={He, Jiajun and Flamich, Gergely and Guo, Zongyu and Hern{\'a}ndez-Lobato, Jos{\'e} Miguel},
+  journal={arXiv preprint arXiv:2309.17182},
+  year={2023}
+}
+
+@article{hornik1989multilayer,
+  title={Multilayer feedforward networks are universal approximators},
+  author={Hornik, Kurt and Stinchcombe, Maxwell and White, Halbert},
+  journal={Neural networks},
+  volume={2},
+  number={5},
+  pages={359--366},
+  year={1989},
+}
+
+@article{tzen2019neural,
+      title={Neural Stochastic Differential Equations: Deep Latent Gaussian Models in the Diffusion Limit}, 
+      author={Belinda Tzen and Maxim Raginsky},
+      year={2019},
+      journal={arXiv preprint arXiv:1905.09883},
+}
+
+@article{lampinen2001bayesian,
+  title={Bayesian approach for neural networks—review and case studies},
+  author={Lampinen, J. and Vehtari, A.},
+  journal={Neural Networks},
+  volume={14},
+  number={3},
+  pages={257--274},
+  year={2001}
+}
+
+@article{titterington2004bayesian,
+  title={Bayesian methods for neural networks and related models},
+  author={Titterington, D. M.},
+  journal={Statistical Science},
+  volume={19},
+  number={1},
+  pages={128--139},
+  year={2004},
+  month={February},
+}
+
+@inproceedings{daxberger2022laplace,
+  title={Laplace redux-effortless bayesian deep learning},
+  author={Daxberger, Erik and Kristiadi, Agustinus and Immer, Alexander and Eschenhagen, Runa and Bauer, Matthias and Hennig, Philipp},
+  booktitle={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={20089--20103},
+  year={2021}
+}
+
+@inproceedings{duranmartin2021efficient,
+  title={Efficient online bayesian inference for neural bandits},
+  author={Duran-Martin, Gerardo and Kara, Aleyna and Murphy, Kevin},
+  booktitle={Proceedings of the 25th International Conference on Artificial Intelligence and Statistics},
+  pages={6002--6021},
+  year={2022},
+  volume = {151},
+}
+
+@InProceedings{immer2021improving,
+  title = 	 { Improving predictions of Bayesian neural nets via local linearization },
+  author =       {Immer, Alexander and Korzepa, Maciej and Bauer, Matthias},
+  booktitle = 	 {Proceedings of The 24th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {703--711},
+  year = 	 {2021},
+  volume = 	 {130},
+  abstract = 	 { The generalized Gauss-Newton (GGN) approximation is often used to make practical Bayesian deep learning approaches scalable by replacing a second order derivative with a product of first order derivatives. In this paper we argue that the GGN approximation should be understood as a local linearization of the underlying Bayesian neural network (BNN), which turns the BNN into a generalized linear model (GLM). Because we use this linearized model for posterior inference, we should also predict using this modified model instead of the original one. We refer to this modified predictive as "GLM predictive" and show that it effectively resolves common underfitting problems of the Laplace approximation. It extends previous results in this vein to general likelihoods and has an equivalent Gaussian process formulation, which enables alternative inference schemes for BNNs in function space. We demonstrate the effectiveness of our approach on several standard classification datasets as well as on out-of-distribution detection. We provide an implementation at https://github.com/AlexImmer/BNN-predictions. }
+}
+
+
+@article{antorán2023samplingbased,
+      title={Sampling-based inference for large linear models, with application to linearised Laplace}, 
+      author={Javier Antorán and Shreyas Padhy and Riccardo Barbano and Eric Nalisnick and David Janz and José Miguel Hernández-Lobato},
+      year={2023},
+      journal={arXiv preprint arXiv:2210.04994},
+      archivePrefix={arXiv},
+}
+
+@book{oksendal2013stochastic,
+  title={Stochastic differential equations: an introduction with applications},
+  author={Oksendal, Bernt},
+  year={2013},
+  publisher={Springer Science \& Business Media}
+}
+
+@article{hu2020revealing,
+      title={Revealing hidden dynamics from time-series data by ODENet}, 
+      author={Pipi Hu and Wuyue Yang and Yi Zhu and Liu Hong},
+      year={2020},
+      journal={arXiv preprint arXiv:2005.04849},
+}
+
+@article{arroyo2024deep,
+  title={Deep attentive survival analysis in limit order books: Estimating fill probabilities with convolutional-transformers},
+  author={Arroyo, Alvaro and Cartea, Alvaro and Moreno-Pino, Fernando and Zohren, Stefan},
+  journal={Quantitative Finance},
+  pages={1--23},
+  year={2024},
+  publisher={Taylor \& Francis}
+}
+
+@article{moreno2022deepvol,
+  title={Deepvol: Volatility forecasting from high-frequency data with dilated causal convolutions},
+  author={Moreno-Pino, Fernando and Zohren, Stefan},
+  journal={arXiv preprint arXiv:2210.04797},
+  year={2022}
+}
+
+@article{moreno2022heterogeneous,
+  title={Heterogeneous Hidden Markov Models for Sleep Activity Recognition from Multi-Source Passively Sensed Data},
+  author={Moreno-Pino, Fernando and Mart{\'\i}nez-Garc{\'\i}a, Mar{\'\i}a and Olmos, Pablo M and Art{\'e}s-Rodr{\'\i}guez, Antonio},
+  journal={arXiv preprint arXiv:2211.10371},
+  year={2022}
+}
+
+@article{vanderschueren2023accounting,
+  title={Accounting For Informative Sampling When Learning to Forecast Treatment Outcomes Over Time},
+  author={Vanderschueren, Toon and Curth, Alicia and Verbeke, Wouter and van der Schaar, Mihaela},
+  journal={arXiv preprint arXiv:2306.04255},
+  year={2023}
+}
+
+@inproceedings{he2016deep,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={770--778},
+  year={2016}
+}
+
+@article{lecun2010mnist,
+  title={MNIST handwritten digit database},
+  author={LeCun, Yann and Cortes, Corinna and Burges, CJ},
+  journal={ATT Labs [Online]. Available: http://yann.lecun.com/exdb/mnist},
+  volume={2},
+  year={2010}
+}
+
+@inproceedings{roeder2017stl,
+ author = {Roeder, Geoffrey and Wu, Yuhuai and Duvenaud, David K},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Sticking the Landing: Simple, Lower-Variance Gradient Estimators for Variational Inference},
+ volume = {30},
+ year = {2017}
+}
+
+@article{hendrycks2019robustness,
+      title={Benchmarking Neural Network Robustness to Common Corruptions and Perturbations},
+      author={Hendrycks, Dan and Dietterich, Thomas},
+      journal={Proceedings of the International Conference on Learning Representations},
+      year={2019}
+    }
+
+@article{harrison2024variational,
+  title={Variational Bayesian last layers},
+  author={Harrison, James and Willes, John and Snoek, Jasper},
+  journal={arXiv preprint arXiv:2404.11599},
+  year={2024}
+}
+
+@article{li2024training,
+  title={Training Bayesian Neural Networks with Sparse Subspace Variational Inference},
+  author={Li, Junbo and Miao, Zichen and Qiu, Qiang and Zhang, Ruqi},
+  journal={arXiv preprint arXiv:2402.11025},
+  year={2024}
+}
+
+@inproceedings{cattiaux1994minimization,
+  title={Minimization of the Kullback information of diffusion processes},
+  author={Cattiaux, Patrick and L{\'e}onard, Christian},
+  booktitle={Annales de l'IHP Probabilit{\'e}s et statistiques},
+  volume={30},
+  pages={83--132},
+  year={1994}
+}
+@article{vargas2024transport,
+    title={Transport meets Variational Inference: Controlled Monte Carlo Diffusions}, 
+    author={Francisco Vargas and Shreyas Padhy and Denis Blessing and Nikolas Nüsken},
+    year={2024},
+    journal={Proceedings of the International Conference on Learning Representations},
+}
+@article{richter2024improved,
+    title={Improved sampling via learned diffusions}, 
+    author={Lorenz Richter and Julius Berner and Guan-Horng Liu},
+    year={2024},
+    journal={Proceedings of the International Conference on Learning Representations},
+}
+@article{vargas2023bayesian,
+  title={Bayesian learning via neural Schr{\"o}dinger--F{\"o}llmer flows},
+  author={Vargas, Francisco and Ovsianas, Andrius and Fernandes, David and Girolami, Mark and Lawrence, Neil D and N{\"u}sken, Nikolas},
+  journal={Statistics and Computing},
+  volume={33},
+  number={1},
+  pages={3},
+  year={2023},
+  publisher={Springer}
+}
+
+@article{archambeau2007variational,
+  title={Variational inference for diffusion processes},
+  author={Archambeau, C{\'e}dric and Opper, Manfred and Shen, Yuan and Cornford, Dan and Shawe-Taylor, John},
+  journal={Advances in neural information processing systems},
+  volume={20},
+  year={2007}
+}
+
+@article{ghosh2022differentiable,
+  title = 	 { Differentiable Bayesian inference of SDE parameters using a pathwise series expansion of Brownian motion },
+  author =       {Ghosh, Sanmitra and Birrell, Paul J. and De Angelis, Daniela},
+  journal = 	 {Proceedings of The 25th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {10982--10998},
+  year = 	 {2022},
+}

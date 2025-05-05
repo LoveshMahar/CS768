@@ -1,0 +1,13 @@
+Distributed model training suffers from communication overheads due to
+frequent gradient updates transmitted between compute nodes. To mitigate these
+overheads, several studies propose the use of sparsified stochastic gradients.
+We argue that these are facets of a general sparsification method that can
+operate on any possible atomic decomposition. Notable examples include
+element-wise, singular value, and Fourier decompositions. We present ATOMO, a
+general framework for atomic sparsification of stochastic gradients. Given a
+gradient, an atomic decomposition, and a sparsity budget, ATOMO gives a random
+unbiased sparsification of the atoms minimizing variance. We show that recent
+methods such as QSGD and TernGrad are special cases of ATOMO and that
+sparsifiying the singular value decomposition of neural networks gradients,
+rather than their coordinates, can lead to significantly faster distributed
+training.

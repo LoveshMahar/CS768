@@ -1,0 +1,16 @@
+We tackle the problem of conditioning probabilistic programs on distributions
+of observable variables. Probabilistic programs are usually conditioned on
+samples from the joint data distribution, which we refer to as deterministic
+conditioning. However, in many real-life scenarios, the observations are given
+as marginal distributions, summary statistics, or samplers. Conventional
+probabilistic programming systems lack adequate means for modeling and
+inference in such scenarios. We propose a generalization of deterministic
+conditioning to stochastic conditioning, that is, conditioning on the marginal
+distribution of a variable taking a particular form. To this end, we first
+define the formal notion of stochastic conditioning and discuss its key
+properties. We then show how to perform inference in the presence of stochastic
+conditioning. We demonstrate potential usage of stochastic conditioning on
+several case studies which involve various kinds of stochastic conditioning and
+are difficult to solve otherwise. Although we present stochastic conditioning
+in the context of probabilistic programming, our formalization is general and
+applicable to other settings.

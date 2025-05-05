@@ -1,0 +1,1785 @@
+%%% ====================================================================
+%%%  BibTeX-file{
+%%%     author          = "Gerry Murray",
+%%%     version         = "1.2",
+%%%     date            = "2 April 2012",
+%%%     filename        = "acmsmall-sample-bibfile.bib",
+%%%     address         = "ACM, NY",
+%%%     email           = "murray at hq.acm.org",
+%%%     codetable       = "ISO/ASCII",
+%%%     keywords        = "ACM Reference Format, bibliography, citation, references",
+%%%     supported       = "yes",
+%%%     docstring       = "This BibTeX database file contains 'bibdata' entries
+%%%                        that 'match' the examples provided in the Specifications Document
+%%%                        AND, also, 'legacy'-type bibs. It should assist authors in
+%%%                        choosing the 'correct' at-bibtype and necessary bib-fields
+%%%                        so as to obtain the appropriate ACM Reference Format output.
+%%%                        It also contains many 'Standard Abbreviations'. "
+%%%  }
+%%% ====================================================================
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+@inproceedings{cormode2018privacy,
+  title={Privacy at scale: Local differential privacy in practice},
+  author={Cormode, Graham and Jha, Somesh and Kulkarni, Tejas and Li, Ninghui and Srivastava, Divesh and Wang, Tianhao},
+  booktitle={SIGMOD},
+  pages={1655--1658},
+  year={2018},
+}
+
+@article{ren2018textsf,
+  title={High-Dimensional Crowdsourced Data Publication with Local Differential Privacy},
+  author={Ren, Xuebin and Yu, Chia-Mu and Yu, Weiren and Yang, Shusen and Yang, Xinyu and McCann, Julie A and Philip, S Yu},
+  journal={TIFS},
+  pages={2151--2166},
+  year={2018},
+}
+
+@inproceedings{kairouz2014extremal,
+  title={Extremal mechanisms for local differential privacy},
+  author={Kairouz, Peter and Oh, Sewoong and Viswanath, Pramod},
+  booktitle={NIPS},
+  pages={2879--2887},
+  year={2014}
+}
+
+@inproceedings{qin2016heavy,
+  title={Heavy hitter estimation over set-valued data with local differential privacy},
+  author={Qin, Zhan and Yang, Yin and Yu, Ting and Khalil, Issa and Xiao, Xiaokui and Ren, Kui},
+  booktitle={CCS},
+  pages={192--203},
+  year={2016},
+  organization={ACM}
+}
+
+@article{thakkar2019differentially,
+  title={Differentially Private Learning with Adaptive Clipping},
+  author={Thakkar, Om and Andrew, Galen and McMahan, H Brendan},
+  journal={arXiv preprint arXiv:1905.03871},
+  year={2019}
+}
+
+@inproceedings{glorot2011deep,
+  title={Deep sparse rectifier neural networks},
+  author={Glorot, Xavier and Bordes, Antoine and Bengio, Yoshua},
+  booktitle={AISTATS},
+  pages={315--323},
+  year={2011}
+}
+
+@inproceedings{pennington2014glove,
+  title={Glove: Global vectors for word representation},
+  author={Pennington, Jeffrey and Socher, Richard and Manning, Christopher},
+  booktitle={EMNLP},
+  pages={1532--1543},
+  year={2014}
+}
+
+@article{srivastava2014dropout,
+  title={Dropout: A simple way to prevent neural networks from overfitting},
+  author={Srivastava, Nitish and Hinton, Geoffrey and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan},
+  journal={JMLR},
+  pages={1929--1958},
+  year={2014},
+}
+
+@inproceedings{kingma2014adam,
+  author={Kingma, Diederik P and Ba, Jimmy},
+  title     = {Adam: A Method for Stochastic Optimization},
+  booktitle = {ICLR},
+  year      = {2015}
+}
+
+
+@article{rendle2012factorization,
+  title={Factorization machines with libfm},
+  author={Rendle, Steffen},
+  journal={TIST},
+  pages={57},
+  year={2012},
+}
+
+@inproceedings{chen2018neural,
+  title={Neural attentional rating regression with review-level explanations},
+  author={Chen, Chong and Zhang, Min and Liu, Yiqun and Ma, Shaoping},
+  booktitle={WWW},
+  pages={1583--1592},
+  year={2018},
+  organization={International World Wide Web Conferences Steering Committee}
+}
+
+@inproceedings{huang2013learning,
+  title={Learning deep structured semantic models for web search using clickthrough data},
+  author={Huang, Po-Sen and He, Xiaodong and Gao, Jianfeng and Deng, Li and Acero, Alex and Heck, Larry},
+  booktitle={CIKM},
+  pages={2333--2338},
+  year={2013},
+}
+
+@inproceedings{cheng2016wide,
+  title={Wide \& deep learning for recommender systems},
+  author={Cheng, Heng-Tze and Koc, Levent and Harmsen, Jeremiah and Shaked, Tal and Chandra, Tushar and Aradhye, Hrishi and Anderson, Glen and Corrado, Greg and Chai, Wei and Ispir, Mustafa and others},
+  booktitle={Proceedings of the 1st workshop on deep learning for recommender systems},
+  pages={7--10},
+  year={2016},
+}
+
+@inproceedings{guo2017deepfm,
+  title={DeepFM: a factorization-machine based neural network for CTR prediction},
+  author={Guo, Huifeng and Tang, Ruiming and Ye, Yunming and Li, Zhenguo and He, Xiuqiang},
+  booktitle={IJCAI},
+  pages={1725--1731},
+  year={2017},
+}
+
+
+@inproceedings{wuuser,
+  title={User modeling with click preference and reading satisfaction for news recommendation},
+  author={Wu, Chuhan and Wu, Fangzhao and Qi, Tao and Huang, Yongfeng},
+  booktitle={IJCAI},
+  pages={3023--3029},
+  year={2020}
+}
+
+@inproceedings{lian2018towards,
+  title={Towards better representation learning for personalized news recommendation: a multi-channel deep fusion approach.},
+  author={Lian, Jianxun and Zhang, Fuzheng and Xie, Xing and Sun, Guangzhong},
+  booktitle={IJCAI},
+  pages={3805--3811},
+  year={2018}
+}
+
+@inproceedings{wang2018dkn,
+  title={DKN: Deep knowledge-aware network for news recommendation},
+  author={Wang, Hongwei and Zhang, Fuzheng and Xie, Xing and Guo, Minyi},
+  booktitle={WWW},
+  pages={1835--1844},
+  year={2018},
+}
+
+@inproceedings{okura2017embedding,
+  title={Embedding-based news recommendation for millions of users},
+  author={Okura, Shumpei and Tagami, Yukihiro and Ono, Shingo and Tajima, Akira},
+  booktitle={KDD},
+  pages={1933--1942},
+  year={2017},
+}
+
+@article{jones2004statistical,
+  title={A statistical interpretation of term specificity and its application in retrieval},
+  author={Jones, Karen Sp{\"a}rck},
+  journal={Journal of documentation},
+  year={2004},
+}
+
+@inproceedings{ying2018graph,
+  title={Graph convolutional neural networks for web-scale recommender systems},
+  author={Ying, Rex and He, Ruining and Chen, Kaifeng and Eksombatchai, Pong and Hamilton, William L and Leskovec, Jure},
+  booktitle={KDD},
+  pages={974--983},
+  year={2018},
+}
+
+@article{wu2018socialgcn,
+  title={SocialGCN: An Efficient Graph Convolutional Network based Model for Social Recommendation},
+  author={Wu, Le and Sun, Peijie and Hong, Richang and Fu, Yanjie and Wang, Xiting and Wang, Meng},
+  journal={arXiv preprint arXiv:1811.02815},
+  year={2018}
+}
+
+@inproceedings{cho2014properties,
+  title={On the Properties of Neural Machine Translation: Encoder--Decoder Approaches},
+  author={Cho, Kyunghyun and van Merrienboer, Bart and Bahdanau, Dzmitry and Bengio, Yoshua},
+  booktitle={Proceedings of Eighth Workshop on Syntax, Semantics and Structure in Statistical Translation},
+  pages={103--111},
+  year={2014}
+}
+
+@inproceedings{bradley2001improving,
+  title={Improving recommendation diversity},
+  author={Bradley, Keith and Smyth, Barry},
+  booktitle={Proceedings of the Twelfth Irish Conference on Artificial Intelligence and Cognitive Science},
+  pages={85--94},
+  year={2001},
+}
+
+@inproceedings{khattar2018weave,
+  title={Weave\&Rec: A word embedding based 3-D Convolutional network for news recommendation},
+  author={Khattar, Dhruv and Kumar, Vaibhav and Varma, Vasudeva and Gupta, Manish},
+  booktitle={CIKM},
+  pages={1855--1858},
+  year={2018},
+}
+
+@inproceedings{khattar2018hram,
+  title={HRAM: A Hybrid Recurrent Attention Machine for News Recommendation},
+  author={Khattar, Dhruv and Kumar, Vaibhav and Varma, Vasudeva and Gupta, Manish},
+  booktitle={CIKM},
+  pages={1619--1622},
+  year={2018},
+}
+
+@inproceedings{kumar2017deep,
+  title={Deep Neural Architecture for News Recommendation.},
+  author={Kumar, Vaibhav and Khattar, Dhruv and Gupta, Shashank and Gupta, Manish and Varma, Vasudeva},
+  booktitle={CLEF},
+  year={2017}
+}
+
+@inproceedings{bansal2015content,
+  title={Content driven user profiling for comment-worthy recommendations of news and blog articles},
+  author={Bansal, Trapit and Das, Mrinal and Bhattacharyya, Chiranjib},
+  booktitle={RecSys.},
+  pages={195--202},
+  year={2015},
+}
+
+@inproceedings{li2010contextual,
+  title={A contextual-bandit approach to personalized news article recommendation},
+  author={Li, Lihong and Chu, Wei and Langford, John and Schapire, Robert E},
+  booktitle={WWW},
+  pages={661--670},
+  year={2010},
+}
+
+@inproceedings{liu2010personalized,
+  title={Personalized news recommendation based on click behavior},
+  author={Liu, Jiahui and Dolan, Peter and Pedersen, Elin R{\o}nby},
+  booktitle={IUI},
+  pages={31--40},
+  year={2010},
+}
+
+@inproceedings{phelan2009using,
+  title={Using twitter to recommend real-time topical news},
+  author={Phelan, Owen and McCarthy, Kevin and Smyth, Barry},
+  booktitle={RecSys.},
+  pages={385--388},
+  year={2009},
+}
+
+@inproceedings{son2013location,
+  title={A location-based news article recommendation with explicit localized semantic analysis},
+  author={Son, Jeong-Woo and Kim, A and Park, Seong-Bae and others},
+  booktitle={SIGIR},
+  pages={293--302},
+  year={2013},
+}
+
+@article{lavie2010user,
+  title={User attitudes towards news content personalization},
+  author={Lavie, Talia and Sela, Michal and Oppenheim, Ilit and Inbar, Ohad and Meyer, Joachim},
+  journal={International journal of human-computer studies},
+  pages={483--495},
+  year={2010},
+}
+
+@inproceedings{an2019neural,
+  title={Neural news recommendation with long-and short-term user representations},
+  author={An, Mingxiao and Wu, Fangzhao and Wu, Chuhan and Zhang, Kun and Liu, Zheng and Xie, Xing},
+  booktitle={ACL},
+  pages={336--345},
+  year={2019}
+}
+
+@inproceedings{lv2011learning,
+  title={Learning to model relatedness for news recommendation},
+  author={Lv, Yuanhua and Moon, Taesup and Kolari, Pranam and Zheng, Zhaohui and Wang, Xuanhui and Chang, Yi},
+  booktitle={WWW},
+  pages={57--66},
+  year={2011},
+}
+
+@inproceedings{wang2017dynamic,
+  title={Dynamic attention deep model for article recommendation by learning human editors' demonstration},
+  author={Wang, Xuejian and Yu, Lantao and Ren, Kan and Tao, Guanyu and Zhang, Weinan and Yu, Yong and Wang, Jun},
+  booktitle={KDD},
+  pages={2051--2059},
+  year={2017},
+}
+
+@inproceedings{wang2011collaborative,
+  title={Collaborative topic modeling for recommending scientific articles},
+  author={Wang, Chong and Blei, David M},
+  booktitle={KDD},
+  pages={448--456},
+  year={2011},
+}
+
+@article{konstan1997grouplens,
+  title={GroupLens: applying collaborative filtering to Usenet news},
+  author={Konstan, Joseph A and Miller, Bradley N and Maltz, David and Herlocker, Jonathan L and Gordon, Lee R and Riedl, John},
+  journal={Communications of the ACM},
+  pages={77--87},
+  year={1997},
+}
+
+@inproceedings{kompan2010content,
+  title={Content-based news recommendation},
+  author={Kompan, Michal and Bielikov{\'a}, M{\'a}ria},
+  booktitle={EC-Web},
+  pages={61--72},
+  year={2010},
+}
+
+@inproceedings{zheng2018drn,
+  title={DRN: A deep reinforcement learning framework for news recommendation},
+  author={Zheng, Guanjie and Zhang, Fuzheng and Zheng, Zihan and Xiang, Yang and Yuan, Nicholas Jing and Xie, Xing and Li, Zhenhui},
+  booktitle={WWW},
+  pages={167--176},
+  year={2018},
+}
+
+@inproceedings{kim2014convolutional,
+  title={Convolutional neural networks for sentence classification},
+  author={Kim, Yoon},
+  booktitle={EMNLP},
+   pages={1746--1751},
+  year={2014}
+}
+
+@article{lecun1998gradient,
+  title={Gradient-based learning applied to document recognition},
+  author={LeCun, Yann and Bottou, L{\'e}on and Bengio, Yoshua and Haffner, Patrick and others},
+  journal={Proceedings of the IEEE},
+  pages={2278--2324},
+  year={1998}
+}
+
+@article{bahdanau2014neural,
+  title={Neural machine translation by jointly learning to align and translate},
+  author={Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua},
+  journal={arXiv preprint arXiv:1409.0473},
+  year={2014}
+}
+
+
+@inproceedings{mikolov2013distributed,
+  title={Distributed representations of words and phrases and their compositionality},
+  author={Mikolov, Tomas and Sutskever, Ilya and Chen, Kai and Corrado, Greg S and Dean, Jeff},
+  booktitle={NIPS},
+  pages={3111--3119},
+  year={2013}
+}
+
+@inproceedings{zhai2016deepintent,
+  title={Deepintent: Learning attentions for online advertising with recurrent neural networks},
+  author={Zhai, Shuangfei and Chang, Keng-hao and Zhang, Ruofei and Zhang, Zhongfei Mark},
+  booktitle={KDD},
+  pages={1295--1304},
+  year={2016},
+}
+
+@article{kipf2016semi,
+  title={Semi-supervised classification with graph convolutional networks},
+  author={Kipf, Thomas N and Welling, Max},
+  journal={arXiv preprint arXiv:1609.02907},
+  year={2016}
+}
+
+@article{wu2019neural,
+  title={A Neural Influence Diffusion Model for Social Recommendation},
+  author={Wu, Le and Sun, Peijie and Fu, Yanjie and Hong, Richang and Wang, Xiting and Wang, Meng},
+  journal={arXiv preprint arXiv:1904.10322},
+  year={2019}
+}
+
+@inproceedings{song2019session,
+  title={Session-based social recommendation via dynamic graph attention networks},
+  author={Song, Weiping and Xiao, Zhiping and Wang, Yifan and Charlin, Laurent and Zhang, Ming and Tang, Jian},
+  booktitle={WSDM},
+  pages={555--563},
+  year={2019},
+}
+
+@inproceedings{fan2019graph,
+  title={Graph Neural Networks for Social Recommendation},
+  author={Fan, Wenqi and Ma, Yao and Li, Qing and He, Yuan and Zhao, Eric and Tang, Jiliang and Yin, Dawei},
+  booktitle={WWW},
+  pages={417--426},
+  year={2019},
+}
+
+@article{lin2014personalized,
+  title={Personalized news recommendation via implicit social experts},
+  author={Lin, Chen and Xie, Runquan and Guan, Xinjun and Li, Lei and Li, Tao},
+  journal={Information Sciences},
+  pages={1--18},
+  year={2014},
+}
+
+@inproceedings{elkahky2015multi,
+  title={A multi-view deep learning approach for cross domain user modeling in recommendation systems},
+  author={Elkahky, Ali Mamdouh and Song, Yang and He, Xiaodong},
+  booktitle={WWW},
+  pages={278--288},
+  year={2015},
+}
+
+@inproceedings{trevisiol2014cold,
+  title={Cold-start news recommendation with domain-dependent browse graph},
+  author={Trevisiol, Michele and Aiello, Luca Maria and Schifanella, Rossano and Jaimes, Alejandro},
+  booktitle={RecSys.},
+  pages={81--88},
+  year={2014},
+}
+
+@inproceedings{danzhu2019,
+  title={DAN: Deep attention neural network for news recommendation},
+  author={Zhu, Qiannan and Zhou, Xiaofei and Song, Zeliang and Tan, Jianlong and Li, Guo},
+  booktitle={AAAI},
+  pages={5973-5980},
+  year={2019},
+}
+
+@article{hochreiter1997long,
+  title={Long short-term memory},
+  author={Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  journal={Neural computation},
+  pages={1735--1780},
+  year={1997},
+}
+
+
+@inproceedings{das2007google,
+  title={Google news personalization: scalable online collaborative filtering},
+  author={Das, Abhinandan S and Datar, Mayur and Garg, Ashutosh and Rajaram, Shyam},
+  booktitle={WWW},
+  pages={271--280},
+  year={2007},
+}
+
+@article{hofmann2004latent,
+  title={Latent semantic models for collaborative filtering},
+  author={Hofmann, Thomas},
+  journal={TOIS},
+  pages={89--115},
+  year={2004},
+}
+
+@inproceedings{broder1997resemblance,
+  title={On the resemblance and containment of documents},
+  author={Broder, Andrei Z},
+  booktitle={Proceedings. Compression and Complexity of SEQUENCES 1997 (Cat. No. 97TB100171)},
+  pages={21--29},
+  year={1997},
+}
+
+
+@inproceedings{mcmahan2017communication,
+  title={Communication-Efficient Learning of Deep Networks from Decentralized Data},
+  author={McMahan, Brendan and Moore, Eider and Ramage, Daniel and Hampson, Seth and y Arcas, Blaise Aguera},
+  booktitle={AISTATS},
+  pages={1273--1282},
+  year={2017}
+}
+
+@article{ammad2019federated,
+  title={Federated Collaborative Filtering for Privacy-Preserving Personalized Recommendation System},
+  author={Ammad, Muhammad and Ivannikova, Elena and Khan, Suleiman A and Oyomno, Were and Fu, Qiang and Tan, Kuan Eeik and Flanagan, Adrian},
+  journal={arXiv preprint arXiv:1901.09888},
+  year={2019}
+}
+
+@inproceedings{wu2019npa,
+  title={Npa: Neural news recommendation with personalized attention},
+  author={Wu, Chuhan and Wu, Fangzhao and An, Mingxiao and Huang, Jianqiang and Huang, Yongfeng and Xie, Xing},
+  booktitle={KDD},
+  pages={2576--2584},
+  year={2019},
+}
+
+@inproceedings{wu2019ijcai,
+  title={Neural news recommendation with attentive multi-view learning},
+  author={Wu, Chuhan and Wu, Fangzhao and An, Mingxiao and Huang, Jianqiang and Huang, Yongfeng and Xie, Xing},
+  booktitle={IJCAI},
+   pages={3863--3869},
+  year={2019}
+}
+
+@inproceedings{vaswani2017attention,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  booktitle={NIPS},
+  pages={6000--6010},
+  year={2017},
+}
+
+@inproceedings{lu2018between,
+  title={Between Clicks and Satisfaction: Study on Multi-Phase User Preferences and Satisfaction for Online News Reading},
+  author={Lu, Hongyu and Zhang, Min and Ma, Shaoping},
+  booktitle={SIGIR},
+  pages={435--444},
+  year={2018},
+}
+
+@inproceedings{yu2019adaptive,
+  title={Adaptive user modeling with long and short-term preferences for personalized recommendation},
+  author={Yu, Zeping and Lian, Jianxun and Mahmoody, Ahmad and Liu, Gongshen and Xie, Xing},
+  booktitle={IJCAI},
+  pages={4213--4219},
+  year={2019},
+}
+
+@inproceedings{wu2019neuralc,
+  title={Neural news recommendation with multi-head self-attention},
+  author={Wu, Chuhan and Wu, Fangzhao and Ge, Suyu and Qi, Tao and Huang, Yongfeng and Xie, Xing},
+  booktitle={EMNLP},
+  pages={6390--6395},
+  year={2019}
+}
+
+@inproceedings{wu2019neurald,
+  title={Neural news recommendation with heterogeneous user behavior},
+  author={Wu, Chuhan and Wu, Fangzhao and An, Mingxiao and Qi, Tao and Huang, Jianqiang and Huang, Yongfeng and Xie, Xing},
+  booktitle={EMNLP},
+  pages={4876--4885},
+  year={2019}
+}
+
+
+@article{chai2019secure,
+  title={Secure Federated Matrix Factorization},
+  author={Chai, Di and Wang, Leye and Chen, Kai and Yang, Qiang},
+  journal={arXiv preprint arXiv:1906.05108},
+  year={2019}
+}
+
+
+@inproceedings{deepleakge,
+  title     = {Deep Leakage from Gradients},
+  author    = {Zhu, Ligeng and Liu, Zhijian and Han, Song},
+  booktitle={NeurIPS},
+  pages={4876--4885},
+  year={2019}
+}
+
+
+@inproceedings{evfimievski2003limiting,
+  title={Limiting privacy breaches in privacy preserving data mining},
+  author={Evfimievski, Alexandre and Gehrke, Johannes and Srikant, Ramakrishnan},
+  booktitle={SIGMOD-SIGACT-SIGART},
+  pages={211--222},
+  year={2003},
+}
+
+@inproceedings{dwork2006calibrating,
+  title={Calibrating noise to sensitivity in private data analysis},
+  author={Dwork, Cynthia and McSherry, Frank and Nissim, Kobbi and Smith, Adam},
+  booktitle={Theory of cryptography conference},
+  pages={265--284},
+  year={2006},
+}
+
+@article{dwork2011differential,
+  title={Differential privacy},
+  author={Dwork, Cynthia},
+  journal={Encyclopedia of Cryptography and Security},
+  pages={338--340},
+  year={2011},
+}
+
+@article{dwork2014algorithmic,
+  title={The algorithmic foundations of differential privacy},
+  author={Dwork, Cynthia and Roth, Aaron and others},
+  journal={Foundations and Trends in Theoretical Computer Science},
+  pages={211--407},
+  year={2014},
+}
+
+@article{pascanu2012understanding,
+  title={Understanding the exploding gradient problem},
+  author={Pascanu, Razvan and Mikolov, Tomas and Bengio, Yoshua},
+  journal={CoRR, abs/1211.5063},
+  volume={2},
+  year={2012}
+}
+
+@inproceedings{sarathy2010some,
+  title={Some additional insights on applying differential privacy for numeric data},
+  author={Sarathy, Rathindra and Muralidhar, Krish},
+  booktitle={International Conference on Privacy in Statistical Databases},
+  pages={210--219},
+  year={2010},
+}
+
+@inproceedings{duchi2013local,
+  title={Local privacy and statistical minimax rates},
+  author={Duchi, John C and Jordan, Michael I and Wainwright, Martin J},
+  booktitle={FOCS},
+  pages={429--438},
+  year={2013},
+}
+
+@inproceedings{choi2018guaranteeing,
+  title={Guaranteeing local differential privacy on ultra-low-power systems},
+  author={Choi, Woo-Seok and Tomei, Matthew and Vicarte, Jose Rodrigo Sanchez and Hanumolu, Pavan Kumar and Kumar, Rakesh},
+  booktitle={ISCA},
+  pages={561--574},
+  year={2018}
+  }
+  
+@inproceedings{FedTM,
+ author = {Jiang, Di and Song, Yuanfeng and Tong, Yongxin and Wu, Xueyang and Zhao, Weiwei and Xu, Qian and Yang, Qiang},
+ title = {Federated Topic Modeling},
+ year = {2019},
+ booktitle = {CIKM},
+ pages = {1071–1080}
+ }
+
+
+
+@inproceedings{chen2018fast,
+  title={Fast greedy map inference for determinantal point process to improve recommendation diversity},
+  author={Chen, Laming and Zhang, Guoxin and Zhou, Eric},
+  booktitle={NIPS},
+  pages={5622--5633},
+  year={2018}
+}
+
+@inproceedings{zhang2008avoiding,
+  title={Avoiding monotony: improving the diversity of recommendation lists},
+  author={Zhang, Mi and Hurley, Neil},
+  booktitle={RecSys.},
+  pages={123--130},
+  year={2008}
+}
+
+@inproceedings{bordes2013translating,
+  title={Translating embeddings for modeling multi-relational data},
+  author={Bordes, Antoine and Usunier, Nicolas and Garcia-Duran, Alberto and Weston, Jason and Yakhnenko, Oksana},
+  booktitle={NIPS},
+  pages={2787--2795},
+  year={2013}
+}
+
+@article{tatar2014popularity,
+  title={From popularity prediction to ranking online news},
+  author={Tatar, Alexandru and Antoniadis, Panayotis and De Amorim, Marcelo Dias and Fdida, Serge},
+  journal={Social Network Analysis and Mining},
+  pages={174-186},
+  year={2014},
+}
+
+@article{yang2016effects,
+  title={Effects of popularity-based news recommendations (“most-viewed”) on users' exposure to online news},
+  author={Yang, JungAe},
+  journal={Media Psychology},
+  pages={243--271},
+  year={2016},
+}
+
+
+@inproceedings{lee2010approach,
+  title={An approach to model and predict the popularity of online contents with explanatory factors},
+  author={Lee, Jong Gun and Moon, Sue and Salamatian, Kave},
+  booktitle={IEEE/WIC/ACM International Conference on Web Intelligence and Intelligent Agent Technology},
+  pages={623--630},
+  year={2010},
+}
+
+@inproceedings{lerman2010using,
+  title={Using a model of social dynamics to predict popularity of news},
+  author={Lerman, Kristina and Hogg, Tad},
+  booktitle={WWW},
+  pages={621--630},
+  year={2010}
+}
+
+@article{szabo2010predicting,
+  title={Predicting the popularity of online content},
+  author={Szabo, Gabor and Huberman, Bernardo A},
+  journal={Communications of the ACM},
+  pages={80--88},
+  year={2010},
+}
+
+@inproceedings{garcia2010real,
+  title={On the real-time web as a source of recommendation knowledge},
+  author={Garcia Esparza, Sandra and O'Mahony, Michael P and Smyth, Barry},
+  booktitle={RecSys.},
+  pages={305--308},
+  year={2010}
+}
+
+@inproceedings{gulla2017adressa,
+  title={The Adressa dataset for news recommendation},
+  author={Gulla, Jon Atle and Zhang, Lemei and Liu, Peng and {\"O}zg{\"o}bek, {\"O}zlem and Su, Xiaomeng},
+  booktitle={Proceedings of the International Conference on Web Intelligence},
+  pages={1042--1048},
+  year={2017},
+  organization={ACM}
+}
+
+@inproceedings{de2018news,
+  title={News session-based recommendations using deep neural networks},
+  author={de Souza Pereira Moreira, Gabriel and Ferreira, Felipe and da Cunha, Adilson Marques},
+  booktitle={DLRS},
+  pages={15--23},
+  year={2018},
+  organization={ACM}
+}
+
+@inproceedings{rendle2009bpr,
+  title={BPR: Bayesian personalized ranking from implicit feedback},
+  author={Rendle, Steffen and Freudenthaler, Christoph and Gantner, Zeno and Schmidt-Thieme, Lars},
+  booktitle={Proceedings of the Twenty-Fifth Conference on Uncertainty in Artificial Intelligence},
+  pages={452--461},
+  year={2009}
+}
+
+
+@article{jiang2016research,
+  title={Research on ctr prediction for contextual advertising based on deep architecture model},
+  author={Jiang, Zilong},
+  journal={Journal of Control Engineering and Applied Informatics},
+  pages={11--19},
+  year={2016}
+}
+
+@inproceedings{ji2020re,
+  title={A re-visit of the popularity baseline in recommender systems},
+  author={Ji, Yitong and Sun, Aixin and Zhang, Jie and Li, Chenliang},
+  booktitle={SIGIR},
+  pages={1749--1752},
+  year={2020},
+}
+
+
+
+@article{moreira2019contextual,
+  title={Contextual hybrid session-based news recommendation with recurrent neural networks},
+  author={Moreira, Gabriel de Souza Pereira and Jannach, Dietmar and da Cunha, Adilson Marques},
+  journal={arXiv preprint arXiv:1904.10367},
+  year={2019}
+}
+
+@inproceedings{houidi2019news,
+  title={The news we like are not the news we visit: news categories popularity in usage data},
+  author={Houidi, Zied Ben and Scavo, Giuseppe and Traverso, Stefano and Teixeira, Renata and Mellia, Marco and Ganguly, Soumen},
+  booktitle={Proceedings of the International AAAI Conference on Web and Social Media},
+  pages={91--102},
+  year={2019}
+}
+
+@inproceedings{li2011scene,
+  title={SCENE: a scalable two-stage personalized news recommendation system},
+  author={Li, Lei and Wang, Dingding and Li, Tao and Knox, Daniel and Padmanabhan, Balaji},
+  booktitle={SIGIR},
+  pages={125--134},
+  year={2011}
+}
+
+@article{jonnalagedda2016incorporating,
+  title={Incorporating popularity in a personalized news recommender system},
+  author={Jonnalagedda, Nirmal and Gauch, Susan and Labille, Kevin and Alfarhood, Sultan},
+  journal={PeerJ Computer Science},
+  volume={2},
+  pages={e63},
+  year={2016},
+  publisher={PeerJ Inc.}
+}
+
+@inproceedings{sedhain2014social,
+  title={Social collaborative filtering for cold-start recommendations},
+  author={Sedhain, Suvash and Sanner, Scott and Braziunas, Darius and Xie, Lexing and Christensen, Jordan},
+  booktitle={RecSys.},
+  pages={345--348},
+  year={2014}
+}
+
+@article{son2016dealing,
+  title={Dealing with the new user cold-start problem in recommender systems: A comparative review},
+  author={Son, Le Hoang},
+  journal={Information Systems},
+  volume={58},
+  pages={87--104},
+  year={2016},
+  publisher={PERGAMON-ELSEVIER SCIENCE LTD THE BOULEVARD, LANGFORD LANE, KIDLINGTON~…}
+}
+
+@inproceedings{zheng2010clicks,
+  title={Do clicks measure recommendation relevancy? an empirical user study},
+  author={Zheng, Hua and Wang, Dong and Zhang, Qi and Li, Hang and Yang, Tinghao},
+  booktitle={RecSys.},
+  pages={249--252},
+  year={2010}
+}
+
+@inproceedings{wu2020mind,
+  title={MIND: A large-scale dataset for news recommendation},
+  author={Wu, Fangzhao and Qiao, Ying and Chen, Jiun-Hung and Wu, Chuhan and Qi, Tao and Lian, Jianxun and Liu, Danyang and Xie, Xing and Gao, Jianfeng and Wu, Winnie and others},
+  booktitle={ACL},
+  pages={3597--3606},
+  year={2020}
+}
+
+@inproceedings{liu2020kred,
+  title={KRED: Knowledge-aware document representation for news recommendations},
+  author={Liu, Danyang and Lian, Jianxun and Wang, Shiyin and Qiao, Ying and Chen, Jiun-Hung and Sun, Guangzhong and Xie, Xing},
+  booktitle={RecSys.},
+  pages={200--209},
+  year={2020}
+}
+
+@inproceedings{wang2020fine,
+  title={Fine-grained interest matching for neural news recommendation},
+  author={Wang, Heyuan and Wu, Fangzhao and Liu, Zheng and Xie, Xing},
+  booktitle={ACL},
+  pages={836--845},
+  year={2020}
+}
+
+@inproceedings{shu2019defend,
+  title={defend: Explainable fake news detection},
+  author={Shu, Kai and Cui, Limeng and Wang, Suhang and Lee, Dongwon and Liu, Huan},
+  booktitle={Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  pages={395--405},
+  year={2019}
+}
+
+@inproceedings{wan2008single,
+  title={Single document keyphrase extraction using neighborhood knowledge.},
+  author={Wan, Xiaojun and Xiao, Jianguo},
+  booktitle={AAAI},
+  pages={855--860},
+  year={2008}
+}
+
+@inproceedings{hamaguchi2017knowledge,
+  title={Knowledge transfer for out-of-knowledge-base entities: a graph neural network approach},
+  author={Hamaguchi, Takuo and Oiwa, Hidekazu and Shimbo, Masashi and Matsumoto, Yuji},
+  booktitle={IJCAI},
+  pages={1802--1808},
+  year={2017}
+}
+
+
+@inproceedings{velivckovic2017graph,
+  title={Graph Attention Networks},
+  author={Veli{\v{c}}kovi{\'c}, Petar and Cucurull, Guillem and Casanova, Arantxa and Romero, Adriana and Li{\`o}, Pietro and Bengio, Yoshua},
+  booktitle={ICLR},
+  year={2018}
+}
+
+@inproceedings{jiang2018recommendation,
+  title={Recommendation in heterogeneous information networks based on generalized random walk model and bayesian personalized ranking},
+  author={Jiang, Zhengshen and Liu, Hongzhi and Fu, Bin and Wu, Zhonghai and Zhang, Tao},
+  booktitle={WSDM},
+  pages={288--296},
+  year={2018}
+}
+
+@inproceedings{he2018adversarial,
+  title={Adversarial personalized ranking for recommendation},
+  author={He, Xiangnan and He, Zhankui and Du, Xiaoyu and Chua, Tat-Seng},
+  booktitle={SIGIR},
+  pages={355--364},
+  year={2018}
+}
+
+@inproceedings{zhou2018deep,
+  title={Deep interest network for click-through rate prediction},
+  author={Zhou, Guorui and Zhu, Xiaoqiang and Song, Chenru and Fan, Ying and Zhu, Han and Ma, Xiao and Yan, Yanghui and Jin, Junqi and Li, Han and Gai, Kun},
+  booktitle={KDD},
+  pages={1059--1068},
+  year={2018}
+}
+
+@inproceedings{dai2019transformer,
+  title={Transformer-XL: Attentive language models beyond a fixed-length context},
+  author={Dai, Zihang and Yang, Zhilin and Yang, Yiming and Carbonell, Jaime G and Le, Quoc and Salakhutdinov, Ruslan},
+  booktitle={ACL},
+  pages={2978--2988},
+  year={2019}
+}
+
+@article{chiu2016named,
+  title={Named entity recognition with bidirectional LSTM-CNNs},
+  author={Chiu, Jason PC and Nichols, Eric},
+  journal={TACL},
+  pages={357--370},
+  year={2016},
+  publisher={MIT Press}
+}
+
+@inproceedings{zhang2018improving,
+  title={Improving the transformer translation model with document-Level context},
+  author={Zhang, Jiacheng and Luan, Huanbo and Sun, Maosong and Zhai, Feifei and Xu, Jingfang and Zhang, Min and Liu, Yang},
+  booktitle={EMNLP},
+  pages={533--542},
+  year={2018}
+}
+
+
+@article{song2019abstractive,
+  title={Abstractive text summarization using LSTM-CNN based deep learning},
+  author={Song, Shengli and Huang, Haitao and Ruan, Tongxiao},
+  journal={Multimedia Tools and Applications},
+  pages={857--875},
+  year={2019},
+}
+
+@inproceedings{liu2019hi,
+  title={Hi-Fi ark: deep user representation via high-fidelity archive network},
+  author={Liu, Zheng and Xing, Yu and Wu, Fangzhao and An, Mingxiao and Xie, Xing},
+  booktitle={IJCAI},
+  pages={3059--3065},
+  year={2019},
+}
+
+@inproceedings{wang2014knowledge,
+  title={Knowledge graph embedding by translating on hyperplanes},
+  author={Wang, Zhen and Zhang, Jianwen and Feng, Jianlin and Chen, Zheng},
+  booktitle={AAAI},
+  pages={1112--1119},
+  year={2014},
+}
+
+
+@inproceedings{chung2014empirical,
+  title={Empirical evaluation of gated recurrent neural networks on sequence modeling},
+  author={Chung, Junyoung and Gulcehre, Caglar and Cho, Kyunghyun and Bengio, Yoshua},
+  booktitle={NIPS Workshop on Deep Learning},
+  year={2014}
+}
+
+@inproceedings{chu2019next,
+  title={Next news recommendation via knowledge-aware sequential model},
+  author={Chu, Qianfeng and Liu, Gongshen and Sun, Huanrong and Zhou, Cheng},
+  booktitle={CCL},
+  pages={221--232},
+  year={2019},
+}
+
+@inproceedings{gao2018fine,
+  title={Fine-grained deep knowledge-aware network for news recommendation with self-attention},
+  author={Gao, Jie and Xin, Xin and Liu, Junshuai and Wang, Rui and Lu, Jing and Li, Biao and Fan, Xin and Guo, Ping},
+  booktitle={WI},
+  pages={81--88},
+  year={2018},
+}
+
+
+@article{hu2020graph,
+  title={Graph neural news recommendation with long-term and short-term interest modeling},
+  author={Hu, Linmei and Li, Chen and Shi, Chuan and Yang, Cheng and Shao, Chao},
+  journal={Information Processing \& Management},
+  pages={102142},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@inproceedings{wutanr,
+  author={Wu,Chuhan and Wu, Fangzhao and An, Mingxiao and Huang, Yongfeng and Xie, Xing},
+  title={Neural News Recommendation with Topic-Aware News Representation},
+  booktitle = {ACL},
+  pages     = {1154--1159},
+  year      = {2019},
+}
+
+@inproceedings{qi2020privacy,
+  title={Privacy-Preserving News Recommendation Model Learning},
+  author={Qi, Tao and Wu, Fangzhao and Wu, Chuhan and Huang, Yongfeng and Xie, Xing},
+  booktitle={EMNLP: Findings},
+  pages={1423--1432},
+  year={2020}
+}
+
+@article{wu2021two,
+  title={Two Birds with One Stone: Unified Model Learning for Both Recall and Ranking in News Recommendation},
+  author={Wu, Chuhan and Wu, Fangzhao and Qi, Tao and Huang, Yongfeng},
+  journal={arXiv preprint arXiv:2104.07404},
+  year={2021}
+}
+
+@inproceedings{liu2020octopus,
+  title={Octopus: Comprehensive and Elastic User Representation for the Generation of Recommendation Candidates},
+  author={Liu, Zheng and Lian, Jianxun and Yang, Junhan and Lian, Defu and Xie, Xing},
+  booktitle={SIGIR},
+  pages={289--298},
+  year={2020}
+}
+
+@article{wu2020fedctr,
+  title={FedCTR: Federated Native Ad CTR Prediction with Multi-Platform User Behavior Data},
+  author={Wu, Chuhan and Wu, Fangzhao and Di, Tao and Huang, Yongfeng and Xie, Xing},
+  journal={arXiv preprint arXiv:2007.12135},
+  year={2020}
+}
+
+@inproceedings{wu2020sentirec,
+  title={SentiRec: Sentiment Diversity-aware Neural News Recommendation},
+  author={Wu, Chuhan and Wu, Fangzhao and Qi, Tao and Huang, Yongfeng},
+  booktitle={AACL},
+  pages={44--53},
+  year={2020}
+}
+
+
+@inproceedings{wu2020fairness,
+  title={FairRec:Fairness-aware News Recommendation with Decomposed Adversarial Learning},
+  author={Wu, Chuhan and Wu, Fangzhao and Wang, Xiting and Huang, Yongfeng and Xie, Xing},
+  booktitle={AAAI},
+  pages={4462-4469},
+  year={2021}
+}
+
+@inproceedings{ge2020graph,
+  title={Graph enhanced representation learning for news recommendation},
+  author={Ge, Suyu and Wu, Chuhan and Wu, Fangzhao and Qi, Tao and Huang, Yongfeng},
+  booktitle={WWW},
+  pages={2863--2869},
+  year={2020}
+}
+
+@inproceedings{pal2020pinnersage,
+  title={PinnerSage: Multi-Modal User Embedding Framework for Recommendations at Pinterest},
+  author={Pal, Aditya and Eksombatchai, Chantat and Zhou, Yitong and Zhao, Bo and Rosenberg, Charles and Leskovec, Jure},
+  booktitle={KDD},
+  pages={2311--2320},
+  year={2020}
+}
+
+@inproceedings{flanagan2020federated,
+  title={Federated multi-view matrix factorization for personalized recommendations},
+  author={Flanagan, Adrian and Oyomno, Were and Grigorievskiy, Alexander and Tan, Kuan Eeik and Khan, Suleiman A and Ammad-Ud-Din, Muhammad},
+  booktitle={ECML-PKDD},
+  pages={324--347},
+  year={2020}
+}
+
+@article{lin2020fedrec,
+  title={FedRec: Federated Recommendation with Explicit Feedback},
+  author={Lin, Guanyu and Liang, Feng and Pan, Weike and Ming, Zhong},
+  journal={IEEE Intelligent Systems},
+  year={2020},
+}
+
+@article{qin2020novel,
+  title={A Novel Privacy-Preserved Recommender System Framework based on Federated Learning},
+  author={Qin, Jiangcheng and Liu, Baisong},
+  journal={arXiv preprint arXiv:2011.05614},
+  year={2020}
+}
+
+@article{wang2021fast,
+  title={Fast-adapting and Privacy-preserving Federated Recommender System},
+  author={Wang, Qinyong and Yin, Hongzhi and Chen, Tong and Yu, Junliang and Zhou, Alexander and Zhang, Xiangliang},
+  journal={arXiv preprint arXiv:2104.00919},
+  year={2021}
+}
+
+@inproceedings{muhammad2020fedfast,
+  title={Fedfast: Going beyond average for faster training of federated recommender systems},
+  author={Muhammad, Khalil and Wang, Qinqin and O'Reilly-Morgan, Diarmuid and Tragos, Elias and Smyth, Barry and Hurley, Neil and Geraci, James and Lawlor, Aonghus},
+  booktitle={KDD},
+  pages={1234--1242},
+  year={2020}
+}
+
+@article{yang2021fcmf,
+  title={FCMF: Federated collective matrix factorization for heterogeneous collaborative filtering},
+  author={Yang, Enyue and Huang, Yunfeng and Liang, Feng and Pan, Weike and Ming, Zhong},
+  journal={KBS},
+  pages={106946},
+  year={2021},
+}
+
+
+@inproceedings{gentry2009fully,
+  title={Fully homomorphic encryption using ideal lattices},
+  author={Gentry, Craig},
+  booktitle={STOC},
+  pages={169--178},
+  year={2009}
+}
+
+
+@article{johnson1967hierarchical,
+  title={Hierarchical clustering schemes},
+  author={Johnson, Stephen C},
+  journal={Psychometrika},
+  pages={241--254},
+  year={1967},
+}
+
+
+@article{arya1998optimal,
+  title={An optimal algorithm for approximate nearest neighbor searching fixed dimensions},
+  author={Arya, Sunil and Mount, David M and Netanyahu, Nathan S and Silverman, Ruth and Wu, Angela Y},
+  journal={JACM},
+  pages={891--923},
+  year={1998},
+}
+
+@article{oord2018representation,
+  title={Representation learning with contrastive predictive coding},
+  author={Oord, Aaron van den and Li, Yazhe and Vinyals, Oriol},
+  journal={arXiv preprint arXiv:1807.03748},
+  year={2018}
+}
+
+@inproceedings{covington2016deep,
+  title={Deep neural networks for youtube recommendations},
+  author={Covington, Paul and Adams, Jay and Sargin, Emre},
+  booktitle={RecSys.},
+  pages={191--198},
+  year={2016}
+}
+
+@inproceedings{li2019multi,
+  title={Multi-interest network with dynamic routing for recommendation at Tmall},
+  author={Li, Chao and Liu, Zhiyuan and Wu, Mengmeng and Xu, Yuchi and Zhao, Huan and Huang, Pipei and Kang, Guoliang and Chen, Qiwei and Li, Wei and Lee, Dik Lun},
+  booktitle={CIKM},
+  pages={2615--2623},
+  year={2019}
+}
+
+@inproceedings{kang2018self,
+  title={Self-attentive sequential recommendation},
+  author={Kang, Wang-Cheng and McAuley, Julian},
+  booktitle={ICDM},
+  pages={197--206},
+  year={2018},
+}
+
+@inproceedings{wu2019hierarchical,
+  title={Hierarchical user and item representation with three-tier attention for recommendation},
+  author={Wu, Chuhan and Wu, Fangzhao and Liu, Junxin and Huang, Yongfeng},
+  booktitle={NAACL},
+  pages={1818--1826},
+  year={2019}
+}
+
+
+@inproceedings{qi2021hierec,
+  title={HieRec: Hierarchical User Interest Modeling for Personalized News Recommendation},
+  author={Qi, Tao and Wu, Fangzhao and Wu, Chuhan and Yang, Peiru and Yu, Yang and Xie, Xing and Huang, Yongfeng},
+  booktitle={ACL},
+  pages={5446--5456},
+  year={2021}
+}
+
+@inproceedings{qi2021pprec,
+  title={PP-Rec: News Recommendation with Personalized User Interest and Time-aware News Popularity},
+  author={Qi, Tao and Wu, Fangzhao and Wu, Chuhan and Huang, Yongfeng},
+  booktitle={ACL},
+  pages={5457--5467},
+  year={2021}
+}
+
+@inproceedings{qi2021kim,
+  title={Personalized News Recommendation with Knowledge-aware Interactive Matching},
+  author={Qi, Tao and Wu, Fangzhao and Wu, Chuhan and Huang, Yongfeng},
+  booktitle={SIGIR},
+  pages={61--70},
+  year={2021}
+}
+
+@inproceedings{wu2021uag,
+  title={User-as-Graph: User Modeling with Heterogeneous Graph Pooling for News Recommendation},
+  author={Wu, Chuhan and Wu, Fangzhao and Huang, Yongfeng and Xie, Xing},
+  year={2021},
+  booktitle={IJCAI},
+  pages={1624--1630},
+}
+
+@article{wu2021fedgnn,
+  title={Fedgnn: Federated graph neural network for privacy-preserving recommendation},
+  author={Wu, Chuhan and Wu, Fangzhao and Cao, Yang and Huang, Yongfeng and Xie, Xing},
+  journal={arXiv preprint arXiv:2102.04925},
+  year={2021}
+}
+
+@article{wu2021personalized,
+  title={Personalized News Recommendation: A Survey},
+  author={Wu, Chuhan and Wu, Fangzhao and Huang, Yongfeng},
+  journal={arXiv preprint arXiv:2106.08934},
+  year={2021}
+}
+@inproceedings{wu2020ptum,
+  title={PTUM: Pre-training User Model from Unlabeled User Behaviors via Self-supervision},
+  author={Wu, Chuhan and Wu, Fangzhao and Qi, Tao and Lian, Jianxun and Huang, Yongfeng and Xie, Xing},
+  booktitle={EMNLP:Findings},
+  pages={1939--1944},
+  year={2020}
+}
+
+@inproceedings{wu2021empowering,
+  title={Empowering News Recommendation with Pre-trained Language Models},
+  author={Wu, Chuhan and Wu, Fangzhao and Qi, Tao and Huang, Yongfeng},
+  booktitle={SIGIR},
+  pages={1652--1656},
+  year={2021}
+}
+
+@inproceedings{wu2021learning,
+  title={Learning Fair Representations for Recommendation: A Graph-based Perspective},
+  author={Wu, Le and Chen, Lei and Shao, Pengyang and Hong, Richang and Wang, Xiting and Wang, Meng},
+  booktitle={WWW},
+  pages={2198--2208},
+  year={2021}
+}
+
+
+@inproceedings{li2021towards,
+  title={Towards Personalized Fairness based on Causal Notion},
+  author={Li, Yunqi and Chen, Hanxiong and Xu, Shuyuan and Ge, Yingqiang and Zhang, Yongfeng},
+  booktitle={SIGIR},
+  pages={1054--1063},
+  year={2021}
+}
+
+
+@inproceedings{li2021user,
+  title={User-oriented Fairness in Recommendation},
+  author={Li, Yunqi and Chen, Hanxiong and Fu, Zuohui and Ge, Yingqiang and Zhang, Yongfeng},
+  booktitle={WWW},
+  pages={624--632},
+  year={2021}
+}
+
+@article{zafar2019fairness,
+  title={Fairness constraints: A flexible approach for fair classification},
+  author={Zafar, Muhammad Bilal and Valera, Isabel and Gomez-Rodriguez, Manuel and Gummadi, Krishna P},
+  journal={JMLR},
+  pages={2737--2778},
+  year={2019},
+}
+
+@article{xu2021federated,
+  title={Federated learning for healthcare informatics},
+  author={Xu, Jie and Glicksberg, Benjamin S and Su, Chang and Walker, Peter and Bian, Jiang and Wang, Fei},
+  journal={Journal of Healthcare Informatics Research},
+  pages={1--19},
+  year={2021},
+}
+
+@article{kaissis2020secure,
+  title={Secure, privacy-preserving and federated machine learning in medical imaging},
+  author={Kaissis, Georgios A and Makowski, Marcus R and R{\"u}ckert, Daniel and Braren, Rickmer F},
+  journal={Nature Machine Intelligence},
+  pages={305--311},
+  year={2020},
+}
+
+@inproceedings{fu2021vf2boost,
+  title={VF2Boost: Very Fast Vertical Federated Gradient Boosting for Cross-Enterprise Learning},
+  author={Fu, Fangcheng and Shao, Yingxia and Yu, Lele and Jiang, Jiawei and Xue, Huanran and Tao, Yangyu and Cui, Bin},
+  booktitle={SIGMOD},
+  pages={563--576},
+  year={2021}
+}
+
+@inproceedings{liu2020federated,
+  title={Federated learning for vision-and-language grounding problems},
+  author={Liu, Fenglin and Wu, Xian and Ge, Shen and Fan, Wei and Zou, Yuexian},
+  booktitle={AAAI},
+  pages={11572--11579},
+  year={2020}
+}
+
+@inproceedings{yao2021fedps,
+  title={FedPS: A Privacy Protection Enhanced Personalized Search Framework},
+  author={Yao, Jing and Dou, Zhicheng and Wen, Ji-Rong},
+  booktitle={WWW},
+  pages={3757--3766},
+  year={2021}
+}
+
+@article{cheng2021secureboost,
+  title={Secureboost: A lossless federated learning framework},
+  author={Cheng, Kewei and Fan, Tao and Jin, Yilun and Liu, Yang and Chen, Tianjian and Papadopoulos, Dimitrios and Yang, Qiang},
+  journal={IEEE Intelligent Systems},
+  year={2021},
+}
+
+@article{chen2020bias,
+  title={Bias and debias in recommender system: A survey and future directions},
+  author={Chen, Jiawei and Dong, Hande and Wang, Xiang and Feng, Fuli and Wang, Meng and He, Xiangnan},
+  journal={arXiv preprint arXiv:2010.03240},
+  year={2020}
+}
+
+@inproceedings{khademi2019fairness,
+  title={Fairness in algorithmic decision making: An excursion through the lens of causality},
+  author={Khademi, Aria and Lee, Sanghack and Foley, David and Honavar, Vasant},
+  booktitle={WWW},
+  pages={2907--2914},
+  year={2019}
+}
+
+@inproceedings{ge2021towards,
+  title={Towards Long-term Fairness in Recommendation},
+  author={Ge, Yingqiang and Liu, Shuchang and Gao, Ruoyuan and Xian, Yikun and Li, Yunqi and Zhao, Xiangyu and Pei, Changhua and Sun, Fei and Ge, Junfeng and Ou, Wenwu and others},
+  booktitle={WSDM},
+  pages={445--453},
+  year={2021}
+}
+
+@inproceedings{beutel2019fairness,
+  title={Fairness in recommendation ranking through pairwise comparisons},
+  author={Beutel, Alex and Chen, Jilin and Doshi, Tulsee and Qian, Hai and Wei, Li and Wu, Yi and Heldt, Lukasz and Zhao, Zhe and Hong, Lichan and Chi, Ed H and others},
+  booktitle={KDD},
+  pages={2212--2220},
+  year={2019}
+}
+
+@inproceedings{kohavi1996scaling,
+  title={Scaling up the accuracy of naive-bayes classifiers: A decision-tree hybrid.},
+  author={Kohavi, Ron and others},
+  booktitle={KDD},
+  pages={202--207},
+  year={1996}
+}
+
+@inproceedings{zemel2013learning,
+  title={Learning fair representations},
+  author={Zemel, Rich and Wu, Yu and Swersky, Kevin and Pitassi, Toni and Dwork, Cynthia},
+  booktitle={ICML},
+  pages={325--333},
+  year={2013},
+}
+
+@inproceedings{huang2019stable,
+  title={Stable and fair classification},
+  author={Huang, Lingxiao and Vishnoi, Nisheeth},
+  booktitle={ICML},
+  pages={2879--2890},
+  year={2019},
+}
+
+@inproceedings{madras2018learning,
+  title={Learning adversarially fair and transferable representations},
+  author={Madras, David and Creager, Elliot and Pitassi, Toniann and Zemel, Richard},
+  booktitle={ICML},
+  pages={3384--3393},
+  year={2018},
+}
+
+@inproceedings{lee2021fair,
+  title={Fair Selective Classification via Sufficiency},
+  author={Lee, Joshua K and Bu, Yuheng and Rajan, Deepta and Sattigeri, Prasanna and Panda, Rameswar and Das, Subhro and Wornell, Gregory W},
+  booktitle={ICML},
+  pages={6076--6086},
+  year={2021},
+}
+
+@article{ge2020fedner,
+  title={Fedner: Medical named entity recognition with federated learning},
+  author={Ge, Suyu and Wu, Fangzhao and Wu, Chuhan and Qi, Tao and Huang, Yongfeng and Xie, Xing},
+  journal={arXiv preprint arXiv:2003.09288},
+  year={2020}
+}
+
+@inproceedings{burke2018balanced,
+  title={Balanced neighborhoods for multi-sided fairness in recommendation},
+  author={Burke, Robin and Sonboli, Nasim and Ordonez-Gauger, Aldo},
+  booktitle={ACM FAccT},
+  pages={202--214},
+  year={2018},
+}
+
+
+@inproceedings{luong2011k,
+  title={k-NN as an implementation of situation testing for discrimination discovery and prevention},
+  author={Luong, Binh Thanh and Ruggieri, Salvatore and Turini, Franco},
+  booktitle={KDD},
+  pages={502--510},
+  year={2011}
+}
+
+@inproceedings{feldman2015certifying,
+  title={Certifying and removing disparate impact},
+  author={Feldman, Michael and Friedler, Sorelle A and Moeller, John and Scheidegger, Carlos and Venkatasubramanian, Suresh},
+  booktitle={KDD},
+  pages={259--268},
+  year={2015}
+}
+
+@inproceedings{calmon2017optimized,
+  title={Optimized pre-processing for discrimination prevention},
+  author={Calmon, Flavio P and Wei, Dennis and Vinzamuri, Bhanukiran and Ramamurthy, Karthikeyan Natesan and Varshney, Kush R},
+  booktitle={NIPS},
+  pages={3995--4004},
+  year={2017}
+}
+
+@inproceedings{hardt2016equality,
+  title={Equality of opportunity in supervised learning},
+  author={Hardt, Moritz and Price, Eric and Srebro, Nati},
+  booktitle={NIPS},
+  pages={3315--3323},
+  year={2016}
+}
+
+@inproceedings{lapuschkin2017understanding,
+  title={Understanding and comparing deep neural networks for age and gender classification},
+  author={Lapuschkin, Sebastian and Binder, Alexander and Muller, Klaus-Robert and Samek, Wojciech},
+  booktitle={ICCV},
+  pages={1629--1638},
+  year={2017}
+}
+
+@inproceedings{dwivedi2017gender,
+  title={Gender Classification of Blog Authors: With Feature Engineering and Deep Learning using LSTM Networks},
+  author={Dwivedi, Vijay Prakash and Singh, Deepak Kumar and Jha, Saurav and others},
+  booktitle={ICoAC},
+  pages={142--148},
+  year={2017},
+}
+
+@inproceedings{song2019autoint,
+  title={Autoint: Automatic feature interaction learning via self-attentive neural networks},
+  author={Song, Weiping and Shi, Chence and Xiao, Zhiping and Duan, Zhijian and Xu, Yewen and Zhang, Ming and Tang, Jian},
+  booktitle={CIKM},
+  pages={1161--1170},
+  year={2019},
+}
+
+@inproceedings{arik2020tabnet,
+  title={Tabnet: Attentive interpretable tabular learning},
+  author={Ar{\i}k, Sercan O and Pfister, Tomas},
+  booktitle={AAAI},
+  pages={6679--6687},
+  year={2020}
+}
+
+@article{gorishniy2021revisiting,
+  title={Revisiting Deep Learning Models for Tabular Data},
+  author={Gorishniy, Yury and Rubachev, Ivan and Khrulkov, Valentin and Babenko, Artem},
+  journal={arXiv preprint arXiv:2106.11959},
+  year={2021}
+}
+
+@inproceedings{devlin2019bert,
+  title={BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding},
+  author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  booktitle={NAACL},
+  pages={4171--4186},
+  year={2019}
+}
+
+@inproceedings{wu2020privacy,
+  title={Privacy preserving vertical federated learning for tree-based models},
+  author={Wu, Yuncheng and Cai, Shaofeng and Xiao, Xiaokui and Chen, Gang and Ooi, Beng Chin},
+  booktitle={VLDB},
+  pages={2090--2103},
+  year={2020},
+}
+
+@inproceedings{zhang2021secure,
+  title={Secure Bilevel Asynchronous Vertical Federated Learning with Backward Updating},
+  author={Zhang, Qingsong and Gu, Bin and Deng, Cheng and Huang, Heng},
+  booktitle={AAAI},
+  pages={10896--10904},
+  year={2021}
+}
+
+@inproceedings{luo2021feature,
+  title={Feature inference attack on model predictions in vertical federated learning},
+  author={Luo, Xinjian and Wu, Yuncheng and Xiao, Xiaokui and Ooi, Beng Chin},
+  booktitle={ICDE},
+  pages={181--192},
+  year={2021}
+}
+
+@article{weng2020privacy,
+  title={Privacy leakage of real-world vertical federated learning},
+  author={Weng, Haiqin and Zhang, Juntao and Xue, Feng and Wei, Tao and Ji, Shouling and Zong, Zhiyuan},
+  journal={arXiv preprint arXiv:2011.09290},
+  year={2020}
+}
+@inproceedings{lyu2020differentially,
+  title={Differentially private representation for nlp: Formal guarantee and an empirical study on privacy and fairness},
+  author={Lyu, Lingjuan and He, Xuanli and Li, Yitong},
+  booktitle={EMNLP},
+  pages={2355–2365},
+  year={2020}
+}
+@inproceedings{lyu2020towards,
+  title={Towards differentially private text representations},
+  author={Lyu, Lingjuan and Li, Yitong and He, Xuanli and Xiao, Tong},
+  booktitle={Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages={1813--1816},
+  year={2020}
+}
+@article{cheng2020federated,
+  title={Federated learning for privacy-preserving AI},
+  author={Cheng, Yong and Liu, Yang and Chen, Tianjian and Yang, Qiang},
+  journal={Communications of the ACM},
+  pages={33--36},
+  year={2020}
+}
+
+@article{yang2019parallel,
+  title={Parallel distributed logistic regression for vertical federated learning without third-party coordinator},
+  author={Yang, Shengwen and Ren, Bing and Zhou, Xuhui and Liu, Liping},
+  journal={arXiv preprint arXiv:1911.09824},
+  year={2019}
+}
+
+@article{yang2019quasi,
+  title={A quasi-newton method based vertical federated learning framework for logistic regression},
+  author={Yang, Kai and Fan, Tao and Chen, Tianjian and Shi, Yuanming and Yang, Qiang},
+  journal={arXiv preprint arXiv:1912.00513},
+  year={2019}
+}
+
+@article{che2021federated,
+  title={Federated Multi-View Learning for Private Medical Data Integration and Analysis},
+  author={Che, Sicong and Peng, Hao and Sun, Lichao and Chen, Yong and He, Lifang},
+  journal={TIST},
+  year={2021}
+}
+
+@inproceedings{sui2020feded,
+  title={Feded: Federated learning via ensemble distillation for medical relation extraction},
+  author={Sui, Dianbo and Chen, Yubo and Zhao, Jun and Jia, Yantao and Xie, Yuantao and Sun, Weijian},
+  booktitle={EMNLP},
+  pages={2118--2128},
+  year={2020
+  }
+}
+
+@article{goodfellow2020generative,
+  title={Generative adversarial networks},
+  author={Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+  journal={Communications of the ACM},
+  pages={139--144},
+  year={2020},
+}
+
+@inproceedings{bose2019compositional,
+  title={Compositional fairness constraints for graph embeddings},
+  author={Bose, Avishek and Hamilton, William},
+  booktitle={ICML},
+  pages={715--724},
+  year={2019},
+}
+
+@inproceedings{elazar2018adversarial,
+  title={Adversarial Removal of Demographic Attributes from Text Data},
+  author={Elazar, Yanai and Goldberg, Yoav},
+  booktitle={EMNLP},
+  pages={11--21},
+  year={2018}
+}
+
+@article{liu2021achieving,
+  title={Achieving Model Fairness in Vertical Federated Learning},
+  author={Liu, Changxin and Zhou, Zirui and Shi, Yang and Pei, Jian and Chu, Lingyang and Zhang, Yong},
+  journal={arXiv preprint arXiv:2109.08344},
+  year={2021}
+}
+
+@inproceedings{liu2015deep,
+  title={Deep learning face attributes in the wild},
+  author={Liu, Ziwei and Luo, Ping and Wang, Xiaogang and Tang, Xiaoou},
+  booktitle={ICCV},
+  pages={3730--3738},
+  year={2015}
+}
+
+@inproceedings{he2016deep,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={CVPR},
+  pages={770--778},
+  year={2016}
+}

@@ -1,0 +1,12 @@
+We introduce a framework for inference in general state-space hidden Markov
+models (HMMs) under likelihood misspecification. In particular, we leverage the
+loss-theoretic perspective of Generalized Bayesian Inference (GBI) to define
+generalised filtering recursions in HMMs, that can tackle the problem of
+inference under model misspecification. In doing so, we arrive at principled
+procedures for robust inference against observation contamination by utilising
+the $\beta$-divergence. Operationalising the proposed framework is made
+possible via sequential Monte Carlo methods (SMC), where most standard particle
+methods, and their associated convergence results, are readily adapted to the
+new setting. We apply our approach to object tracking and Gaussian process
+regression problems, and observe improved performance over both standard
+filtering algorithms and other robust filters.

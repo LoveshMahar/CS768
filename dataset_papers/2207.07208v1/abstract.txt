@@ -1,0 +1,18 @@
+Nearest prototype classifiers (NPCs) assign to each input point the label of
+the nearest prototype with respect to a chosen distance metric. A direct
+advantage of NPCs is that the decisions are interpretable. Previous work could
+provide lower bounds on the minimal adversarial perturbation in the
+$\ell_p$-threat model when using the same $\ell_p$-distance for the NPCs. In
+this paper we provide a complete discussion on the complexity when using
+$\ell_p$-distances for decision and $\ell_q$-threat models for certification
+for $p,q \in \{1,2,\infty\}$. In particular we provide scalable algorithms for
+the \emph{exact} computation of the minimal adversarial perturbation when using
+$\ell_2$-distance and improved lower bounds in other cases. Using efficient
+improved lower bounds we train our Provably adversarially robust NPC (PNPC),
+for MNIST which have better $\ell_2$-robustness guarantees than neural
+networks. Additionally, we show up to our knowledge the first certification
+results w.r.t. to the LPIPS perceptual metric which has been argued to be a
+more realistic threat model for image classification than $\ell_p$-balls. Our
+PNPC has on CIFAR10 higher certified robust accuracy than the empirical robust
+accuracy reported in (Laidlaw et al., 2021). The code is available in our
+repository.

@@ -1,0 +1,1425 @@
+
+
+@inproceedings{
+bertsch2024context,
+title={In-Context Learning with Long-Context Models: An In-Depth Exploration},
+author={Amanda Bertsch and Maor Ivgi and Uri Alon and Jonathan Berant and Matthew R. Gormley and Graham Neubig},
+booktitle={First Workshop on Long-Context Foundation Models @ ICML 2024},
+year={2024},
+url={https://openreview.net/forum?id=4KAmc7vUbq}
+}
+
+
+@inproceedings{
+agarwal2024many,
+title={Many-shot In-Context Learning},
+author={Rishabh Agarwal and Avi Singh and Lei M Zhang and Bernd Bohnet and Luis Rosias and Stephanie C.Y. Chan and Biao Zhang and Aleksandra Faust and Hugo Larochelle},
+booktitle={ICML 2024 Workshop on In-Context Learning},
+year={2024},
+url={https://openreview.net/forum?id=goi7DFHlqS}
+}
+
+@article{chang2024parts,
+  title={When Parts are Greater Than Sums: Individual LLM Components Can Outperform Full Models},
+  author={Chang, Ting-Yun and Thomason, Jesse and Jia, Robin},
+  journal={arXiv preprint arXiv:2406.13131},
+  year={2024}
+}
+
+@article{li2024long,
+  publtype={informal},
+  author={Tianle Li and Ge Zhang and Quy Duc Do and Xiang Yue and Wenhu Chen},
+  title={Long-context LLMs Struggle with Long In-context Learning},
+  year={2024},
+  cdate={1704067200000},
+  journal={CoRR},
+  volume={abs/2404.02060},
+  url={https://doi.org/10.48550/arXiv.2404.02060}
+}
+
+@inproceedings{meta-in-context-learning-neurips23,
+ author = {Coda-Forno, Julian and Binz, Marcel and Akata, Zeynep and Botvinick, Matt and Wang, Jane and Schulz, Eric},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+ pages = {65189--65201},
+ publisher = {Curran Associates, Inc.},
+ title = {Meta-in-context learning in large language models},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/cda04d7ea67ea1376bf8c6962d8541e0-Paper-Conference.pdf},
+ volume = {36},
+ year = {2023}
+}
+
+@inproceedings{ye2024investigating,
+  title={Investigating the effectiveness of task-agnostic prefix prompt for instruction following},
+  author={Ye, Seonghyeon and Hwang, Hyeonbin and Yang, Sohee and Yun, Hyeongu and Kim, Yireun and Seo, Minjoon},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  pages={19386--19394},
+  year={2024}
+}
+
+@article{su2024roformer,
+  title={Roformer: Enhanced transformer with rotary position embedding},
+  author={Su, Jianlin and Ahmed, Murtadha and Lu, Yu and Pan, Shengfeng and Bo, Wen and Liu, Yunfeng},
+  journal={Neurocomputing},
+  volume={568},
+  pages={127063},
+  year={2024},
+  publisher={Elsevier}
+}
+
+@article{bai2023longbench,
+  title={LongBench: A Bilingual, Multitask Benchmark for Long Context Understanding},
+  author={Bai, Yushi and Lv, Xin and Zhang, Jiajie and Lyu, Hongchang and Tang, Jiankai and Huang, Zhidian and Du, Zhengxiao and Liu, Xiao and Zeng, Aohan and Hou, Lei and Dong, Yuxiao and Tang, Jie and Li, Juanzi},
+  journal={arXiv preprint arXiv:2308.14508},
+  year={2023}
+}
+
+
+@inproceedings{
+liu2023ring,
+title={RingAttention with Blockwise Transformers for Near-Infinite Context},
+author={Hao Liu and Matei Zaharia and Pieter Abbeel},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=WsRHpHH4s0}
+}
+
+@inproceedings{climb_neurips2022,
+ author = {Srinivasan, Tejas and Chang, Ting-Yun and Pinto Alva, Leticia and Chochlakis, Georgios and Rostami, Mohammad and Thomason, Jesse},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {29440--29453},
+ publisher = {Curran Associates, Inc.},
+ title = {CLiMB: A Continual Learning Benchmark for Vision-and-Language Tasks},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/bd3611971089d466ab4ca96a20f7ab13-Paper-Datasets_and_Benchmarks.pdf},
+ volume = {35},
+ year = {2022}
+}
+
+
+@article{shi2024continual,
+  title={Continual Learning of Large Language Models: A Comprehensive Survey},
+  author={Shi, Haizhou and Xu, Zihao and Wang, Hengyi and Qin, Weiyi and Wang, Wenyuan and Wang, Yibin and Wang, Hao},
+  journal={arXiv preprint arXiv:2404.16789},
+  year={2024}
+}
+
+
+@article{Ye_Hwang_Yang_Yun_Kim_Seo_2024, title={Investigating the Effectiveness of Task-Agnostic Prefix Prompt for Instruction Following}, volume={38}, url={https://ojs.aaai.org/index.php/AAAI/article/view/29909}, DOI={10.1609/aaai.v38i17.29909}, abstractNote={In this paper, we present our finding that prepending a Task-Agnostic Prefix Prompt (TAPP) to the input improves the instruction-following ability of various Large Language Models (LLMs) during inference. TAPP is different from canonical prompts for LLMs in that it is a fixed prompt prepended to the beginning of every input regardless of the target task for zero-shot generalization. We observe that both base LLMs (i.e. not fine-tuned to follow instructions) and instruction-tuned models benefit from TAPP, resulting in 34.58% and 12.26% improvement on average, respectively. This implies that the instruction-following ability of LLMs can be improved during inference time with a fixed prompt constructed with simple heuristics. We hypothesize that TAPP assists language models to better estimate the output distribution by focusing more on the instruction of the target task during inference. In other words, such ability does not seem to be sufficiently activated in not only base LLMs but also many instruction-fine-tuned LLMs.}, number={17}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Ye, Seonghyeon and Hwang, Hyeonbin and Yang, Sohee and Yun, Hyeongu and Kim, Yireun and Seo, Minjoon}, year={2024}, month={Mar.}, pages={19386-19394} }
+
+@article{lifelong_jmlr2023,
+  author  = {Sanket Vaibhav Mehta and Darshan Patil and Sarath Chandar and Emma Strubell},
+  title   = {An Empirical Investigation of the Role of Pre-training in Lifelong Learning},
+  journal = {Journal of Machine Learning Research},
+  year    = {2023},
+  volume  = {24},
+  number  = {214},
+  pages   = {1--50},
+  url     = {http://jmlr.org/papers/v24/22-0496.html}
+}
+
+@inproceedings{lifelong_neurips19,
+ author = {de Masson d\textquotesingle Autume, Cyprien and Ruder, Sebastian and Kong, Lingpeng and Yogatama, Dani},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Episodic Memory in Lifelong Language Learning},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2019/file/f8d2e80c1458ea2501f98a2cafadb397-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+
+@InProceedings{pmlr-v202-shi23a,
+  title = 	 {Large Language Models Can Be Easily Distracted by Irrelevant Context},
+  author =       {Shi, Freda and Chen, Xinyun and Misra, Kanishka and Scales, Nathan and Dohan, David and Chi, Ed H. and Sch\"{a}rli, Nathanael and Zhou, Denny},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {31210--31227},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/shi23a/shi23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/shi23a.html},
+  abstract = 	 {Large language models have achieved impressive performance on various natural language processing tasks. However, so far they have been evaluated primarily on benchmarks where all information in the input context is relevant for solving the task. In this work, we investigate the <em>distractibility</em> of large language models, i.e., how the model prediction can be distracted by irrelevant context. In particular, we introduce Grade-School Math with Irrelevant Context (GSM-IC), an arithmetic reasoning dataset with irrelevant information in the problem description. We use this benchmark to measure the distractibility of different prompting techniques for large language models, and find that the model is easily distracted by irrelevant information. We also identify several approaches for mitigating this deficiency, such as decoding with self-consistency and adding to the prompt an instruction that tells the language model to ignore the irrelevant information.}
+}
+
+
+
+@inproceedings{gpt3,
+ author = {Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel and Wu, Jeffrey and Winter, Clemens and Hesse, Chris and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+ pages = {1877--1901},
+ publisher = {Curran Associates, Inc.},
+ title = {Language Models are Few-Shot Learners},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}
+
+
+@article{kirkpatrick2017overcoming,
+  title={Overcoming catastrophic forgetting in neural networks},
+  author={Kirkpatrick, James and Pascanu, Razvan and Rabinowitz, Neil and Veness, Joel and Desjardins, Guillaume and Rusu, Andrei A and Milan, Kieran and Quan, John and Ramalho, Tiago and Grabska-Barwinska, Agnieszka and others},
+  journal={Proceedings of the national academy of sciences},
+  volume={114},
+  number={13},
+  pages={3521--3526},
+  year={2017},
+  publisher={National Acad Sciences}
+}
+
+
+
+@article{JMLR:v24:22-0496,
+  author  = {Sanket Vaibhav Mehta and Darshan Patil and Sarath Chandar and Emma Strubell},
+  title   = {An Empirical Investigation of the Role of Pre-training in Lifelong Learning},
+  journal = {Journal of Machine Learning Research},
+  year    = {2023},
+  volume  = {24},
+  number  = {214},
+  pages   = {1--50},
+  url     = {http://jmlr.org/papers/v24/22-0496.html}
+}
+
+
+@misc{bai2024longbench,
+      title={LongBench: A Bilingual, Multitask Benchmark for Long Context Understanding}, 
+      author={Yushi Bai and Xin Lv and Jiajie Zhang and Hongchang Lyu and Jiankai Tang and Zhidian Huang and Zhengxiao Du and Xiao Liu and Aohan Zeng and Lei Hou and Yuxiao Dong and Jie Tang and Juanzi Li},
+      year={2024},
+      eprint={2308.14508},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2308.14508}, 
+}
+
+@misc{an2023leval,
+      title={L-Eval: Instituting Standardized Evaluation for Long Context Language Models}, 
+      author={Chenxin An and Shansan Gong and Ming Zhong and Xingjian Zhao and Mukai Li and Jun Zhang and Lingpeng Kong and Xipeng Qiu},
+      year={2023},
+      eprint={2307.11088},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{zhang2024inftybench,
+      title={$\infty$Bench: Extending Long Context Evaluation Beyond 100K Tokens}, 
+      author={Xinrong Zhang and Yingfa Chen and Shengding Hu and Zihang Xu and Junhao Chen and Moo Khai Hao and Xu Han and Zhen Leng Thai and Shuo Wang and Zhiyuan Liu and Maosong Sun},
+      year={2024},
+      eprint={2402.13718},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{halawi2023overthinking,
+  title={Overthinking the truth: Understanding how language models process false demonstrations},
+  author={Halawi, Danny and Denain, Jean-Stanislas and Steinhardt, Jacob},
+  journal={arXiv preprint arXiv:2307.09476},
+  year={2023}
+}
+
+@article{dubey2024llama,
+  title={The llama 3 herd of models},
+  author={Dubey, Abhimanyu and Jauhri, Abhinav and Pandey, Abhinav and Kadian, Abhishek and Al-Dahle, Ahmad and Letman, Aiesha and Mathur, Akhil and Schelten, Alan and Yang, Amy and Fan, Angela and others},
+  journal={arXiv preprint arXiv:2407.21783},
+  year={2024}
+}
+
+@misc{tay2020long,
+      title={Long Range Arena: A Benchmark for Efficient Transformers}, 
+      author={Yi Tay and Mostafa Dehghani and Samira Abnar and Yikang Shen and Dara Bahri and Philip Pham and Jinfeng Rao and Liu Yang and Sebastian Ruder and Donald Metzler},
+      year={2020},
+      eprint={2011.04006},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{li2023loogle,
+      title={LooGLE: Can Long-Context Language Models Understand Long Contexts?}, 
+      author={Jiaqi Li and Mengmeng Wang and Zilong Zheng and Muhan Zhang},
+      year={2023},
+      eprint={2311.04939},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{kamradt2023needle,
+  author = {Gregory Kamradt},
+  title = {Needle In A Haystack - Pressure Testing LLMs},
+  year = {2023},
+  howpublished = {\url{https://github.com/gkamradt/LLMTest_NeedleInAHaystack/tree/main}},
+}
+
+
+@inproceedings{
+li2023how,
+title={How Long Can Context Length of Open-Source {LLM}s truly Promise?},
+author={Dacheng Li and Rulin Shao and Anze Xie and Ying Sheng and Lianmin Zheng and Joseph Gonzalez and Ion Stoica and Xuezhe Ma and Hao Zhang},
+booktitle={NeurIPS 2023 Workshop on Instruction Tuning and Instruction Following},
+year={2023},
+url={https://openreview.net/forum?id=LywifFNXV5}
+}
+
+
+@inproceedings{
+hsieh2024ruler,
+title={{RULER}: What{\textquoteright}s the Real Context Size of Your Long-Context Language Models?},
+author={Cheng-Ping Hsieh and Simeng Sun and Samuel Kriman and Shantanu Acharya and Dima Rekesh and Fei Jia and Boris Ginsburg},
+booktitle={First Conference on Language Modeling},
+year={2024},
+url={https://openreview.net/forum?id=kIoBbc76Sy}
+}
+
+
+@inproceedings{zhang2016characterlevel,
+ author = {Zhang, Xiang and Zhao, Junbo and LeCun, Yann},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {C. Cortes and N. Lawrence and D. Lee and M. Sugiyama and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Character-level Convolutional Networks for Text Classification},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2015/file/250cf8b51c773f3f8dc8b4be867a9a02-Paper.pdf},
+ volume = {28},
+ year = {2015}
+}
+
+
+
+@inproceedings{ji2023beavertails,
+ author = {Ji, Jiaming and Liu, Mickel and Dai, Josef and Pan, Xuehai and Zhang, Chi and Bian, Ce and Chen, Boyuan and Sun, Ruiyang and Wang, Yizhou and Yang, Yaodong},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+ pages = {24678--24704},
+ publisher = {Curran Associates, Inc.},
+ title = {BeaverTails: Towards Improved Safety Alignment of LLM via a Human-Preference Dataset},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/4dbb61cb68671edc4ca3712d70083b9f-Paper-Datasets_and_Benchmarks.pdf},
+ volume = {36},
+ year = {2023}
+}
+
+@inbook{Patwa_2021,
+   title={Fighting an Infodemic: COVID-19 Fake News Dataset},
+   ISBN={9783030736965},
+   ISSN={1865-0937},
+   url={http://dx.doi.org/10.1007/978-3-030-73696-5_3},
+   DOI={10.1007/978-3-030-73696-5_3},
+   booktitle={Communications in Computer and Information Science},
+   publisher={Springer International Publishing},
+   author={Patwa, Parth and Sharma, Shivam and Pykl, Srinivas and Guptha, Vineeth and Kumari, Gitanjali and Akhtar, Md Shad and Ekbal, Asif and Das, Amitava and Chakraborty, Tanmoy},
+   year={2021},
+   pages={21–29} }
+
+@inproceedings{santus2016nine,
+    title = "Nine Features in a Random Forest to Learn Taxonomical Semantic Relations",
+    author = "Santus, Enrico  and
+      Lenci, Alessandro  and
+      Chiu, Tin-Shing  and
+      Lu, Qin  and
+      Huang, Chu-Ren",
+    editor = "Calzolari, Nicoletta  and
+      Choukri, Khalid  and
+      Declerck, Thierry  and
+      Goggi, Sara  and
+      Grobelnik, Marko  and
+      Maegaard, Bente  and
+      Mariani, Joseph  and
+      Mazo, Helene  and
+      Moreno, Asuncion  and
+      Odijk, Jan  and
+      Piperidis, Stelios",
+    booktitle = "Proceedings of the Tenth International Conference on Language Resources and Evaluation ({LREC}'16)",
+    month = may,
+    year = "2016",
+    address = "Portoro{\v{z}}, Slovenia",
+    publisher = "European Language Resources Association (ELRA)",
+    url = "https://aclanthology.org/L16-1722",
+    pages = "4557--4564",
+    abstract = "ROOT9 is a supervised system for the classification of hypernyms, co-hyponyms and random words that is derived from the already introduced ROOT13 (Santus et al., 2016). It relies on a Random Forest algorithm and nine unsupervised corpus-based features. We evaluate it with a 10-fold cross validation on 9,600 pairs, equally distributed among the three classes and involving several Parts-Of-Speech (i.e. adjectives, nouns and verbs). When all the classes are present, ROOT9 achieves an F1 score of 90.7{\%}, against a baseline of 57.2{\%} (vector cosine). When the classification is binary, ROOT9 achieves the following results against the baseline. hypernyms-co-hyponyms 95.7{\%} vs. 69.8{\%}, hypernyms-random 91.8{\%} vs. 64.1{\%} and co-hyponyms-random 97.8{\%} vs. 79.4{\%}. In order to compare the performance with the state-of-the-art, we have also evaluated ROOT9 in subsets of the Weeds et al. (2014) datasets, proving that it is in fact competitive. Finally, we investigated whether the system learns the semantic relation or it simply learns the prototypical hypernyms, as claimed by Levy et al. (2015). The second possibility seems to be the most likely, even though ROOT9 can be trained on negative examples (i.e., switched hypernyms) to drastically reduce this bias.",
+}
+
+@inproceedings{liu2021token,
+    title = "A Token-level Reference-free Hallucination Detection Benchmark for Free-form Text Generation",
+    author = "Liu, Tianyu  and
+      Zhang, Yizhe  and
+      Brockett, Chris  and
+      Mao, Yi  and
+      Sui, Zhifang  and
+      Chen, Weizhu  and
+      Dolan, Bill",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.464",
+    doi = "10.18653/v1/2022.acl-long.464",
+    pages = "6723--6737",
+    abstract = "Large pretrained generative models like GPT-3 often suffer from hallucinating non-existent or incorrect content, which undermines their potential merits in real applications. Existing work usually attempts to detect these hallucinations based on a corresponding oracle reference at a sentence or document level. However ground-truth references may not be readily available for many free-form text generation applications, and sentence- or document-level detection may fail to provide the fine-grained signals that would prevent fallacious content in real time. As a first step to addressing these issues, we propose a novel token-level, reference-free hallucination detection task and an associated annotated dataset named HaDeS (HAllucination DEtection dataSet). To create this dataset, we first perturb a large number of text segments extracted from English language Wikipedia, and then verify these with crowd-sourced annotations. To mitigate label imbalance during annotation, we utilize an iterative model-in-loop strategy. We conduct comprehensive data analyses and create multiple baseline models.",
+}
+
+@inproceedings{bhagavatula2022i2d2,
+    title = "{I}2{D}2: Inductive Knowledge Distillation with {N}euro{L}ogic and Self-Imitation",
+    author = "Bhagavatula, Chandra  and
+      Hwang, Jena D.  and
+      Downey, Doug  and
+      Le Bras, Ronan  and
+      Lu, Ximing  and
+      Qin, Lianhui  and
+      Sakaguchi, Keisuke  and
+      Swayamdipta, Swabha  and
+      West, Peter  and
+      Choi, Yejin",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.535",
+    doi = "10.18653/v1/2023.acl-long.535",
+    pages = "9614--9630",
+    abstract = "Commonsense capabilities of pre-trained language models dramatically improve with scale, leading many to believe that scale is the only winning recipe. But is it? Here, we investigate an alternative that a priori seems impossible: can smaller language models (e.g., GPT-2) win over models that are orders of magnitude larger and better (e.g., GPT-3), if powered with novel commonsense distillation algorithms?The key intellectual challenge is to design a learning algorithm that achieve a competitive level of commonsense acquisition, without relying on the benefits of scale. In particular, we study generative models of commonsense knowledge, focusing on the task of generating generics, statements of commonsense facts about everyday concepts, e.g., birds can fly. We introduce I2D2, a novel commonsense distillation framework that loosely follows the Symbolic Knowledge Distillation of West et al. but breaks the dependence on the extreme-scale teacher model with two innovations: (1) the novel adaptation of NeuroLogic Decoding to enhance the generation quality of the weak, off-the-shelf language models, and (2) self-imitation learning to iteratively learn from the model{'}s own enhanced commonsense acquisition capabilities. Empirical results suggest that scale is not the only way, as novel algorithms can be a promising alternative. Moreover, our study leads to a new corpus of generics, Gen-A-tomic, that is the largest and highest quality available to date.",
+}
+
+
+@INPROCEEDINGS{chakraborty2016stop,
+  author={Chakraborty, Abhijnan and Paranjape, Bhargavi and Kakarla, Sourya and Ganguly, Niloy},
+  booktitle={2016 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM)}, 
+  title={Stop Clickbait: Detecting and preventing clickbaits in online news media}, 
+  year={2016},
+  volume={},
+  number={},
+  pages={9-16},
+  keywords={Media;Syntactics;Facebook;Internet;Browsers;Web pages},
+  doi={10.1109/ASONAM.2016.7752207}}
+
+@inproceedings{fitzgerald2022massive,
+    title = "{MASSIVE}: A 1{M}-Example Multilingual Natural Language Understanding Dataset with 51 Typologically-Diverse Languages",
+    author = "FitzGerald, Jack  and
+      Hench, Christopher  and
+      Peris, Charith  and
+      Mackie, Scott  and
+      Rottmann, Kay  and
+      Sanchez, Ana  and
+      Nash, Aaron  and
+      Urbach, Liam  and
+      Kakarala, Vishesh  and
+      Singh, Richa  and
+      Ranganath, Swetha  and
+      Crist, Laurie  and
+      Britan, Misha  and
+      Leeuwis, Wouter  and
+      Tur, Gokhan  and
+      Natarajan, Prem",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.235",
+    doi = "10.18653/v1/2023.acl-long.235",
+    pages = "4277--4302",
+    abstract = "We present the MASSIVE dataset{--}Multilingual Amazon Slu resource package (SLURP) for Slot-filling, Intent classification, and Virtual assistant Evaluation. MASSIVE contains 1M realistic, parallel, labeled virtual assistant utterances spanning 51 languages, 18 domains, 60 intents, and 55 slots. MASSIVE was created by tasking professional translators to localize the English-only SLURP dataset into 50 typologically diverse languages from 29 genera. We also present modeling results on XLM-R and mT5, including exact match accuracy, intent classification accuracy, and slot-filling F1 score. We have released our dataset, modeling code, and models publicly.",
+}
+
+@article{webersinke2022climatebert,
+      title={ClimateBert: A Pretrained Language Model for Climate-Related Text}, 
+      author={Webersinke, Nicolas and Kraus, Mathias and Bingler, Julia Anna and Leippold, Markus},
+      journal={arXiv preprint arXiv:2110.12010},
+      year={2021} 
+}
+
+@article{bingler2023cheaptalk,
+title = {How cheap talk in climate disclosures relates to climate initiatives, corporate emissions, and reputation risk},
+journal = {Journal of Banking \& Finance},
+volume = {164},
+pages = {107191},
+year = {2024},
+issn = {0378-4266},
+doi = {https://doi.org/10.1016/j.jbankfin.2024.107191},
+url = {https://www.sciencedirect.com/science/article/pii/S0378426624001080},
+author = {Julia Anna Bingler and Mathias Kraus and Markus Leippold and Nicolas Webersinke},
+keywords = {Corporate climate disclosures, Voluntary reporting, Commitments, Greenhouse gas emissions, Negative news coverage, Textual analysis},
+abstract = {Navigating the complex landscape of corporate climate disclosures and their real impacts is crucial for managing climate-related financial risks. However, current disclosures oftentimes suffer from imprecision, inaccuracy, and greenwashing. We introduce ClimateBert CTI, a deep learning algorithm, to identify climate-related cheap talk in MSCI World index firms’ annual reports. We find that only targeted climate engagement is associated with less cheap talk. Voluntary climate disclosures are associated with more cheap talk. Moreover, cheap talk correlates with increased negative news coverage and higher emissions growth. Hence, cheap talk helps assess climate initiatives’ effectiveness and anticipate reputation and transition risk exposure.}
+}
+
+
+@inproceedings{wang2020superglue,
+ author = {Wang, Alex and Pruksachatkun, Yada and Nangia, Nikita and Singh, Amanpreet and Michael, Julian and Hill, Felix and Levy, Omer and Bowman, Samuel},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {SuperGLUE: A Stickier Benchmark for General-Purpose Language Understanding Systems},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2019/file/4496bf24afe7fab6f046bf4923da8de6-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+
+@inproceedings{levesque2011winograd,
+  title={The {W}inograd schema challenge},
+  author={Levesque, Hector J and Davis, Ernest and Morgenstern, Leora},
+  booktitle={{AAAI} Spring Symposium: Logical Formalizations of Commonsense Reasoning},
+  volume={46},
+  pages={47},
+  year={2011}
+}
+
+
+
+@misc{jigsaw-unintended-bias-in-toxicity-classification,
+    author = {cjadams and Borkan, Daniel and inversion and Sorensen, Jeffrey and Dixon, Lucas and Vasserman, Lucy and nithum},
+    title = {Jigsaw Unintended Bias in Toxicity Classification},
+    publisher = {Kaggle},
+    year = {2019},
+    url = {https://kaggle.com/competitions/jigsaw-unintended-bias-in-toxicity-classification}
+}
+
+@misc{StudentsQuestionsData,
+  author = {Biswal, Mrutyunjay},
+  title = {IITJEE NEET AIIMS Students Questions Data},
+  year = {2020},
+  publisher = {Kaggle},
+  howpublished = {\url{https://www.kaggle.com/datasets/mrutyunjaybiswal/iitjee-neet-aims-students-questions-data}}
+}
+
+@inproceedings{mohammad2016semeval,
+    title = "{S}em{E}val-2016 Task 6: Detecting Stance in Tweets",
+    author = "Mohammad, Saif  and
+      Kiritchenko, Svetlana  and
+      Sobhani, Parinaz  and
+      Zhu, Xiaodan  and
+      Cherry, Colin",
+    editor = "Bethard, Steven  and
+      Carpuat, Marine  and
+      Cer, Daniel  and
+      Jurgens, David  and
+      Nakov, Preslav  and
+      Zesch, Torsten",
+    booktitle = "Proceedings of the 10th International Workshop on Semantic Evaluation ({S}em{E}val-2016)",
+    month = jun,
+    year = "2016",
+    address = "San Diego, California",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/S16-1003",
+    doi = "10.18653/v1/S16-1003",
+    pages = "31--41",
+}
+
+@inproceedings{sms-spam,
+author = {Almeida, Tiago A. and Hidalgo, Jos\'{e} Mar\'{\i}a G. and Yamakami, Akebo},
+title = {Contributions to the study of SMS spam filtering: new collection and results},
+year = {2011},
+isbn = {9781450308632},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2034691.2034742},
+doi = {10.1145/2034691.2034742},
+booktitle = {Proceedings of the 11th ACM Symposium on Document Engineering},
+pages = {259–262},
+numpages = {4},
+keywords = {classification, mobile spam, spam filtering},
+location = {Mountain View, California, USA},
+series = {DocEng '11}
+}
+
+
+
+@inproceedings{senteval-cr,
+author = {Hu, Minqing and Liu, Bing},
+title = {Mining and summarizing customer reviews},
+year = {2004},
+isbn = {1581138881},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1014052.1014073},
+doi = {10.1145/1014052.1014073},
+booktitle = {Proceedings of the Tenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+pages = {168–177},
+numpages = {10},
+keywords = {text mining, summarization, sentiment classification, reviews},
+location = {Seattle, WA, USA},
+series = {KDD '04}
+}
+
+
+@inproceedings{luan2018multitask,
+    title = "Multi-Task Identification of Entities, Relations, and Coreference for Scientific Knowledge Graph Construction",
+    author = "Luan, Yi  and
+      He, Luheng  and
+      Ostendorf, Mari  and
+      Hajishirzi, Hannaneh",
+    editor = "Riloff, Ellen  and
+      Chiang, David  and
+      Hockenmaier, Julia  and
+      Tsujii, Jun{'}ichi",
+    booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+    month = oct # "-" # nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D18-1360",
+    doi = "10.18653/v1/D18-1360",
+    pages = "3219--3232",
+    abstract = "We introduce a multi-task setup of identifying entities, relations, and coreference clusters in scientific articles. We create SciERC, a dataset that includes annotations for all three tasks and develop a unified framework called SciIE with shared span representations. The multi-task setup reduces cascading errors between tasks and leverages cross-sentence relations through coreference links. Experiments show that our multi-task model outperforms previous models in scientific information extraction without using any domain-specific features. We further show that the framework supports construction of a scientific knowledge graph, which we use to analyze information in scientific literature.",
+}
+
+@article{holzenberger2020dataset,
+  title={A dataset for statutory reasoning in tax law entailment and question answering},
+  author={Holzenberger, Nils and Blair-Stanek, Andrew and Van Durme, Benjamin},
+  journal={arXiv preprint arXiv:2005.05257},
+  year={2020}
+}
+
+@inproceedings{pang+lee:05a,
+    title = "Seeing Stars: Exploiting Class Relationships for Sentiment Categorization with Respect to Rating Scales",
+    author = "Pang, Bo  and
+      Lee, Lillian",
+    editor = "Knight, Kevin  and
+      Ng, Hwee Tou  and
+      Oflazer, Kemal",
+    booktitle = "Proceedings of the 43rd Annual Meeting of the Association for Computational Linguistics ({ACL}{'}05)",
+    month = jun,
+    year = "2005",
+    address = "Ann Arbor, Michigan",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P05-1015",
+    doi = "10.3115/1219840.1219855",
+    pages = "115--124",
+}
+
+@inproceedings{dernoncourt2017pubmed,
+    title = "{P}ub{M}ed 200k {RCT}: a Dataset for Sequential Sentence Classification in Medical Abstracts",
+    author = "Dernoncourt, Franck  and
+      Lee, Ji Young",
+    editor = "Kondrak, Greg  and
+      Watanabe, Taro",
+    booktitle = "Proceedings of the Eighth International Joint Conference on Natural Language Processing (Volume 2: Short Papers)",
+    month = nov,
+    year = "2017",
+    address = "Taipei, Taiwan",
+    publisher = "Asian Federation of Natural Language Processing",
+    url = "https://aclanthology.org/I17-2052",
+    pages = "308--313",
+    abstract = "We present PubMed 200k RCT, a new dataset based on PubMed for sequential sentence classification. The dataset consists of approximately 200,000 abstracts of randomized controlled trials, totaling 2.3 million sentences. Each sentence of each abstract is labeled with their role in the abstract using one of the following classes: background, objective, method, result, or conclusion. The purpose of releasing this dataset is twofold. First, the majority of datasets for sequential short-text classification (i.e., classification of short texts that appear in sequences) are small: we hope that releasing a new large dataset will help develop more accurate algorithms for this task. Second, from an application perspective, researchers need better tools to efficiently skim through the literature. Automatically classifying each sentence in an abstract would help researchers read abstracts more efficiently, especially in fields where abstracts may be long, such as the medical field.",
+}
+
+@misc{Quora_2021_QuestionPairs,
+  author = {Iyer, Shankar and Dandekar, Nikhil and Csernai, Kornel},
+  title = {First Quora Dataset Release: Question Pairs},
+  year = {2016},
+  publisher = {Quora},
+  howpublished = {\url{https://quoradata.quora.com/First-Quora-Dataset-Release-Question-Pairs}}
+}
+
+@inproceedings{rajpurkar2016squad,
+    title = "{SQ}u{AD}: 100,000+ Questions for Machine Comprehension of Text",
+    author = "Rajpurkar, Pranav  and
+      Zhang, Jian  and
+      Lopyrev, Konstantin  and
+      Liang, Percy",
+    editor = "Su, Jian  and
+      Duh, Kevin  and
+      Carreras, Xavier",
+    booktitle = "Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2016",
+    address = "Austin, Texas",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D16-1264",
+    doi = "10.18653/v1/D16-1264",
+    pages = "2383--2392",
+}
+
+@inproceedings{kim2022prosocialdialog,
+    title = "{P}rosocial{D}ialog: A Prosocial Backbone for Conversational Agents",
+    author = "Kim, Hyunwoo  and
+      Yu, Youngjae  and
+      Jiang, Liwei  and
+      Lu, Ximing  and
+      Khashabi, Daniel  and
+      Kim, Gunhee  and
+      Choi, Yejin  and
+      Sap, Maarten",
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.267",
+    doi = "10.18653/v1/2022.emnlp-main.267",
+    pages = "4005--4029",
+    abstract = "Most existing dialogue systems fail to respond properly to potentially unsafe user utterances by either ignoring or passively agreeing with them. To address this issue, we introduce ProsocialDialog, the first large-scale multi-turn dialogue dataset to teach conversational agents to respond to problematic content following social norms. Covering diverse unethical, problematic, biased, and toxic situations, ProsocialDialog contains responses that encourage prosocial behavior, grounded in commonsense social rules (i.e., rules-of-thumb, RoTs). Created via a human-AI collaborative framework, ProsocialDialog consists of 58K dialogues, with 331K utterances, 160K unique RoTs, and 497K dialogue safety labels accompanied by free-form rationales.With this dataset, we introduce a dialogue safety detection module, Canary, capable of generating RoTs given conversational context, and a socially-informed dialogue agent, Prost. Empirical results show that Prost generates more socially acceptable dialogues compared to other state-of-the-art language and dialogue models in both in-domain and out-of-domain settings. Additionally, Canary effectively guides conversational agents and off-the-shelf language models to generate significantly more prosocial responses. Our work highlights the promise and importance of creating and steering conversational AI to be socially responsible.",
+}
+
+@inproceedings{sheng2020investigating,
+    title = "Investigating Societal Biases in a Poetry Composition System",
+    author = "Sheng, Emily  and
+      Uthus, David",
+    editor = "Costa-juss{\`a}, Marta R.  and
+      Hardmeier, Christian  and
+      Radford, Will  and
+      Webster, Kellie",
+    booktitle = "Proceedings of the Second Workshop on Gender Bias in Natural Language Processing",
+    month = dec,
+    year = "2020",
+    address = "Barcelona, Spain (Online)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.gebnlp-1.9",
+    pages = "93--106",
+    abstract = "There is a growing collection of work analyzing and mitigating societal biases in language understanding, generation, and retrieval tasks, though examining biases in creative tasks remains underexplored. Creative language applications are meant for direct interaction with users, so it is important to quantify and mitigate societal biases in these applications. We introduce a novel study on a pipeline to mitigate societal biases when retrieving next verse suggestions in a poetry composition system. Our results suggest that data augmentation through sentiment style transfer has potential for mitigating societal biases.",
+}
+
+@misc{news-data,
+  author = {Huggingface}, 
+  title = {The News Dataset},
+  year = {2022},
+  publisher = {huggingface},
+  howpublished = {\url{https://huggingface.co/datasets/okite97/news-data}}
+}
+
+
+@inproceedings{mccreery2020effective,
+author = {McCreery, Clara H. and Katariya, Namit and Kannan, Anitha and Chablani, Manish and Amatriain, Xavier},
+title = {Effective Transfer Learning for Identifying Similar Questions: Matching User Questions to COVID-19 FAQs},
+year = {2020},
+isbn = {9781450379984},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3394486.3412861},
+doi = {10.1145/3394486.3412861},
+abstract = {People increasingly search online for answers to their medical questions but the rate at which medical questions are asked online significantly exceeds the capacity of qualified people to answer them. This leaves many questions unanswered or inadequately answered. Many of these questions are not unique, and reliable identification of similar questions would enable more efficient and effective question answering schema. COVID-19 has only exacerbated this problem. Almost every government agency and healthcare organization has tried to meet the informational need of users by building online FAQs, but there is no way for people to ask their question and know if it is answered on one of these pages. While many research efforts have focused on the problem of general question similarity, these approaches do not generalize well to domains that require expert knowledge to determine semantic similarity, such as the medical domain. In this paper, we show how a double fine-tuning approach of pretraining a neural network on medical question-answer pairs followed by fine-tuning on medical question-question pairs is a particularly useful intermediate task for the ultimate goal of determining medical question similarity. While other pretraining tasks yield an accuracy below 78.7\% on this task, our model achieves an accuracy of 82.6\% with the same number of training examples, an accuracy of 80.0\% with a much smaller training set, and an accuracy of 84.5\% when the full corpus of medical question-answer data is used. We also describe a currently live system that uses the trained model to match user questions to COVID-related FAQs.},
+booktitle = {Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+pages = {3458–3465},
+numpages = {8},
+keywords = {expert domains, healthcare, medicine, question similarity, transfer learning},
+location = {Virtual Event, CA, USA},
+series = {KDD '20}
+}
+
+
+@article{
+srivastava2022beyond,
+title={Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models},
+author={Aarohi Srivastava and Abhinav Rastogi and Abhishek Rao and Abu Awal Md Shoeb and Abubakar Abid and Adam Fisch and Adam R. Brown and Adam Santoro and Aditya Gupta and Adri{\`a} Garriga-Alonso and Agnieszka Kluska and Aitor Lewkowycz and Akshat Agarwal and Alethea Power and Alex Ray and Alex Warstadt and Alexander W. Kocurek and Ali Safaya and Ali Tazarv and Alice Xiang et al.},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2023},
+url={https://openreview.net/forum?id=uyTL5Bvosj},
+note={}
+}
+
+
+@misc{jailbreak-classification,
+  author = {Huggingface},
+  title = {Jailbreak Classification Dataset},
+  year = {2022},
+  publisher = {huggingface},
+  howpublished = {\url{https://huggingface.co/datasets/jackhhao/jailbreak-classification}}
+}
+
+
+@misc{quora-insincere-questions-classification,
+    author = {Ellis, Alex  and Elliott, Julia  and Griffin, Paula  and Chen, William },
+    title = {Quora Insincere Questions Classification},
+    publisher = {Kaggle},
+    year = {2018},
+    url = {https://kaggle.com/competitions/quora-insincere-questions-classification}
+}
+
+@InProceedings{maas-EtAl:2011:ACL-HLT2011,
+  author    = {Maas, Andrew L.  and  Daly, Raymond E.  and  Pham, Peter T.  and  Huang, Dan  and  Ng, Andrew Y.  and  Potts, Christopher},
+  title     = {Learning Word Vectors for Sentiment Analysis},
+  booktitle = {Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {June},
+  year      = {2011},
+  address   = {Portland, Oregon, USA},
+  publisher = {Association for Computational Linguistics},
+  pages     = {142--150},
+  url       = {http://www.aclweb.org/anthology/P11-1015}
+}
+
+
+@inproceedings{de2018hate,
+    title = "Hate Speech Dataset from a White Supremacy Forum",
+    author = "de Gibert, Ona  and
+      Perez, Naiara  and
+      Garc{\'\i}a-Pablos, Aitor  and
+      Cuadros, Montse",
+    editor = "Fi{\v{s}}er, Darja  and
+      Huang, Ruihong  and
+      Prabhakaran, Vinodkumar  and
+      Voigt, Rob  and
+      Waseem, Zeerak  and
+      Wernimont, Jacqueline",
+    booktitle = "Proceedings of the 2nd Workshop on Abusive Language Online ({ALW}2)",
+    month = oct,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W18-5102",
+    doi = "10.18653/v1/W18-5102",
+    pages = "11--20",
+    abstract = "Hate speech is commonly defined as any communication that disparages a target group of people based on some characteristic such as race, colour, ethnicity, gender, sexual orientation, nationality, religion, or other characteristic. Due to the massive rise of user-generated web content on social media, the amount of hate speech is also steadily increasing. Over the past years, interest in online hate speech detection and, particularly, the automation of this task has continuously grown, along with the societal impact of the phenomenon. This paper describes a hate speech dataset composed of thousands of sentences manually labelled as containing hate speech or not. The sentences have been extracted from Stormfront, a white supremacist forum. A custom annotation tool has been developed to carry out the manual labelling task which, among other things, allows the annotators to choose whether to read the context of a sentence before labelling it. The paper also provides a thoughtful qualitative and quantitative study of the resulting dataset and several baseline experiments with different classification models. The dataset is publicly available.",
+}
+
+@inproceedings{guha2024legalbench,
+ author = {Guha, Neel and Nyarko, Julian and Ho, Daniel and R\'{e}, Christopher and Chilton, Adam and K, Aditya and Chohlas-Wood, Alex and Peters, Austin and Waldon, Brandon and Rockmore, Daniel and Zambrano, Diego and Talisman, Dmitry and Hoque, Enam and Surani, Faiz and Fagan, Frank and Sarfaty, Galit and Dickinson, Gregory and Porat, Haggai and Hegland, Jason and Wu, Jessica and Nudell, Joe and Niklaus, Joel and Nay, John and Choi, Jonathan and Tobia, Kevin and Hagan, Margaret and Ma, Megan and Livermore, Michael and Rasumov-Rahe, Nikon and Holzenberger, Nils and Kolt, Noam and Henderson, Peter and Rehaag, Sean and Goel, Sharad and Gao, Shang and Williams, Spencer and Gandhi, Sunny and Zur, Tom and Iyer, Varun and Li, Zehua},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+ pages = {44123--44279},
+ publisher = {Curran Associates, Inc.},
+ title = {LegalBench: A Collaboratively Built Benchmark for Measuring Legal Reasoning in Large Language Models},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/89e44582fd28ddfea1ea4dcb0ebbf4b0-Paper-Datasets_and_Benchmarks.pdf},
+ volume = {36},
+ year = {2023}
+}
+
+@article{Malo2014GoodDO,
+  title={Good Debt or Bad Debt: Detecting Semantic Orientations in Economic Texts},
+  author={Malo, Pekka and Sinha, Ankur and Takala, Pyry and Korhonen, Pekka and Wallenius, Jyrki},
+  journal={arXiv preprint arXiv:1307.5336},
+  year={2013}
+}
+
+@inproceedings{Thorne18Fever,
+    title = "{FEVER}: a Large-scale Dataset for Fact Extraction and {VER}ification",
+    author = "Thorne, James  and
+      Vlachos, Andreas  and
+      Christodoulopoulos, Christos  and
+      Mittal, Arpit",
+    editor = "Walker, Marilyn  and
+      Ji, Heng  and
+      Stent, Amanda",
+    booktitle = "Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)",
+    month = jun,
+    year = "2018",
+    address = "New Orleans, Louisiana",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N18-1074",
+    doi = "10.18653/v1/N18-1074",
+    pages = "809--819",
+    abstract = "In this paper we introduce a new publicly available dataset for verification against textual sources, FEVER: Fact Extraction and VERification. It consists of 185,445 claims generated by altering sentences extracted from Wikipedia and subsequently verified without knowledge of the sentence they were derived from. The claims are classified as Supported, Refuted or NotEnoughInfo by annotators achieving 0.6841 in Fleiss kappa. For the first two classes, the annotators also recorded the sentence(s) forming the necessary evidence for their judgment. To characterize the challenge of the dataset presented, we develop a pipeline approach and compare it to suitably designed oracles. The best accuracy we achieve on labeling a claim accompanied by the correct evidence is 31.87{\%}, while if we ignore the evidence we achieve 50.91{\%}. Thus we believe that FEVER is a challenging testbed that will help stimulate progress on claim verification against textual sources.",
+}
+
+@article{mollas2020ethos,
+   title={ETHOS: a multi-label hate speech detection dataset},
+   volume={8},
+   ISSN={2198-6053},
+   url={http://dx.doi.org/10.1007/s40747-021-00608-2},
+   DOI={10.1007/s40747-021-00608-2},
+   number={6},
+   journal={Complex \& Intelligent Systems},
+   publisher={Springer Science and Business Media LLC},
+   author={Mollas, Ioannis and Chrysopoulou, Zoe and Karlos, Stamatis and Tsoumakas, Grigorios},
+   year={2022},
+   month=jan, pages={4663–4678} 
+}
+
+
+@misc{disaster-response-message,
+  author = {Huggingface},
+  title = {Disaster Response Message Dataset},
+  year = {2022},
+  publisher = {huggingface},
+  howpublished = {\url{https://huggingface.co/datasets/community-datasets/disaster_response_messages}}
+}
+
+@inproceedings{roemmele2011choice,
+  title={Choice of plausible alternatives: An evaluation of commonsense causal reasoning},
+  author={Roemmele, Melissa and Bejan, Cosmin Adrian and Gordon, Andrew S},
+  booktitle={2011 AAAI Spring Symposium Series},
+  year={2011}
+}
+
+@article{warstadt2018neural,
+    title = "Neural Network Acceptability Judgments",
+    author = "Warstadt, Alex  and
+      Singh, Amanpreet  and
+      Bowman, Samuel R.",
+    editor = "Lee, Lillian  and
+      Johnson, Mark  and
+      Roark, Brian  and
+      Nenkova, Ani",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "7",
+    year = "2019",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/Q19-1040",
+    doi = "10.1162/tacl_a_00290",
+    pages = "625--641",
+    abstract = "This paper investigates the ability of artificial neural networks to judge the grammatical acceptability of a sentence, with the goal of testing their linguistic competence. We introduce the Corpus of Linguistic Acceptability (CoLA), a set of 10,657 English sentences labeled as grammatical or ungrammatical from published linguistics literature. As baselines, we train several recurrent neural network models on acceptability classification, and find that our models outperform unsupervised models by Lau et al. (2016) on CoLA. Error-analysis on specific grammatical phenomena reveals that both Lau et al.{'}s models and ours learn systematic generalizations like subject-verb-object order. However, all models we test perform far below human level on a wide range of grammatical constructions.",
+}
+
+@article{diggelmann2020climatefever,
+  title={Climate-fever: A dataset for verification of real-world climate claims},
+  author={Diggelmann, Thomas and Boyd-Graber, Jordan and Bulian, Jannis and Ciaramita, Massimiliano and Leippold, Markus},
+  journal={arXiv preprint arXiv:2012.00614},
+  year={2020}
+}
+
+
+
+@inproceedings{louis_emnlp2020,
+    title = "{``}{I}{'}d rather just go to bed{''}: Understanding Indirect Answers",
+    author = "Louis, Annie  and
+      Roth, Dan  and
+      Radlinski, Filip",
+    editor = "Webber, Bonnie  and
+      Cohn, Trevor  and
+      He, Yulan  and
+      Liu, Yang",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.601",
+    doi = "10.18653/v1/2020.emnlp-main.601",
+    pages = "7411--7425",
+    abstract = "We revisit a pragmatic inference problem in dialog: Understanding indirect responses to questions. Humans can interpret {`}I{'}m starving.{'} in response to {`}Hungry?{'}, even without direct cue words such as {`}yes{'} and {`}no{'}. In dialog systems, allowing natural responses rather than closed vocabularies would be similarly beneficial. However, today{'}s systems are only as sensitive to these pragmatic moves as their language model allows. We create and release the first large-scale English language corpus {`}Circa{'} with 34,268 (polar question, indirect answer) pairs to enable progress on this task. The data was collected via elaborate crowdsourcing, and contains utterances with yes/no meaning, as well as uncertain, middle-ground, and conditional responses. We also present BERT-based neural models to predict such categories for a question-answer pair. We find that while transfer learning from entailment works reasonably, performance is not yet sufficient for robust dialog. Our models reach 82-88{\%} accuracy for a 4-class distinction, and 74-85{\%} for 6 classes.",
+}
+
+@article{de2019commitmentbank, title={The CommitmentBank: Investigating projection in naturally occurring discourse}, volume={23}, url={https://ojs.ub.uni-konstanz.de/sub/index.php/sub/article/view/601}, DOI={10.18148/sub/2019.v23i2.601}, abstractNote={&amp;lt;p&amp;gt;This paper describes a new resource, the CommitmentBank, developed for the empirical investigation of the projection of finite clausal complements. A clausal complement is said to project when its content is understood as a commitment of the speaker even though the clause occurs under the scope of an entailment canceling operator such as negation or a question. The study of projection is therefore part of the study of commitments expressed by speakers to non-asserted sentence content. The content of clausal complements has been a central case for the study of projection, as there is a long-standing claim that clause-taking predicates fall into two classes—factives and nonfactives—distinguished on the basis of whether the contents of their complements project. This claim identifies the embedding predicate as the primary determinant of the projection behavior of these contents. The CommitmentBank is a corpus of naturally occurring discourses whose final sentence contains a clause-embedding predicate under an entailment canceling operator. In this paper, we describe the CommitmentBank and present initial results of analyses designed to evaluate the factive/nonfactive distinction and to investigate additional factors which affect the projectivity of clausal complements.&amp;lt;/p&amp;gt;}, number={2}, journal={Proceedings of Sinn und Bedeutung}, author={de Marneffe, Marie-Catherine and Simons, Mandy and Tonhauser, Judith}, year={2019}, month={Jul.}, pages={107–124} }
+
+@inproceedings{zora139426,
+           pages = {8--11},
+          series = {WAMA 2017},
+           title = {Android Apps and User Feedback: A Dataset for Software Evolution and Quality Improvement},
+          author = {Giovanni Grano and Andrea Di Sorbo and Francesco Mercaldo and Corrado A Visaggio and Gerardo Canfora and Sebastiano Panichella},
+            year = {2017},
+       booktitle = {Proceedings of the 2Nd ACM SIGSOFT International Workshop on App Market Analytics},
+       publisher = {ACM},
+           month = {January},
+         address = {New York, NY, USA},
+             url = {https://doi.org/10.5167/uzh-139426},
+        language = {english},
+             doi = {10.1145/3121264.3121266}
+}
+
+
+@article{anthropic2024claude,
+  title={The claude 3 model family: Opus, sonnet, haiku},
+  author={Anthropic, AI},
+  journal={Claude-3 Model Card},
+  year={2024},
+  url = "https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf"
+}
+
+
+@inproceedings{
+fu2024data,
+title={Data Engineering for Scaling Language Models to 128K Context},
+author={Yao Fu and Rameswar Panda and Xinyao Niu and Xiang Yue and Hannaneh Hajishirzi and Yoon Kim and Hao Peng},
+booktitle={Forty-first International Conference on Machine Learning},
+year={2024},
+url={https://openreview.net/forum?id=TaAqeo7lUh}
+}
+
+
+
+@article{nasr2023scalable,
+  publtype={informal},
+  author={Milad Nasr and Nicholas Carlini and Jonathan Hayase and Matthew Jagielski and A. Feder Cooper and Daphne Ippolito and Christopher A. Choquette-Choo and Eric Wallace and Florian Tramèr and Katherine Lee},
+  title={Scalable Extraction of Training Data from (Production) Language Models},
+  year={2023},
+  cdate={1672531200000},
+  journal={CoRR},
+  volume={abs/2311.17035},
+  url={https://doi.org/10.48550/arXiv.2311.17035}
+}
+
+
+@inproceedings{levy2024same,
+    title = "Same Task, More Tokens: the Impact of Input Length on the Reasoning Performance of Large Language Models",
+    author = "Levy, Mosh  and
+      Jacoby, Alon  and
+      Goldberg, Yoav",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.818",
+    doi = "10.18653/v1/2024.acl-long.818",
+    pages = "15339--15353",
+    abstract = "This paper explores the impact of extending input lengths on the capabilities of Large Language Models (LLMs). Despite LLMs advancements in recent times, their performance consistency across different input lengths is not well understood. We investigate this aspect by introducing a novel QA reasoning framework, specifically designed to assess the impact of input length. We isolate the effect of input length using multiple versions of the same sample, each being extended with padding of different lengths, types and locations. Our findings show a notable degradation in LLMs{'} reasoning performance at much shorter input lengths than their technical maximum. We show that the degradation trend appears in every version of our dataset, although at different intensities.Additionally, our study reveals that the traditional metric of next word prediction correlates negatively with performance of LLMs{'} on our reasoning dataset. We analyse our results and identify failure modes that can serve as useful guides for future research, potentially informing strategies to address the limitations observed in LLMs.",
+}
+
+@article{liu2024world,
+  title={World model on million-length video and language with blockwise ringattention},
+  author={Liu, Hao and Yan, Wilson and Zaharia, Matei and Abbeel, Pieter},
+  journal={arXiv preprint arXiv:2402.08268},
+  year={2024}
+}
+
+@misc{Beltagy2020Longformer,
+      title={Longformer: The Long-Document Transformer}, 
+      author={Iz Beltagy and Matthew E. Peters and Arman Cohan},
+      year={2020},
+      eprint={2004.05150},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2004.05150}, 
+}
+
+@inproceedings{dao2022flashattention,
+ author = {Dao, Tri and Fu, Dan and Ermon, Stefano and Rudra, Atri and R\'{e}, Christopher},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {16344--16359},
+ publisher = {Curran Associates, Inc.},
+ title = {FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/67d57c32e20fd0a7a302cb81d36e40d5-Paper-Conference.pdf},
+ volume = {35},
+ year = {2022}
+}
+
+
+@article{liu2024lost,
+  title={Lost in the middle: How language models use long contexts},
+  author={Liu, Nelson F and Lin, Kevin and Hewitt, John and Paranjape, Ashwin and Bevilacqua, Michele and Petroni, Fabio and Liang, Percy},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={12},
+  pages={157--173},
+  year={2024},
+  publisher={MIT Press One Broadway, 12th Floor, Cambridge, Massachusetts 02142, USA~…}
+}
+
+@article{an2024make,
+  title={Make Your LLM Fully Utilize the Context},
+  author={An, Shengnan and Ma, Zexiong and Lin, Zeqi and Zheng, Nanning and Lou, Jian-Guang},
+  journal={arXiv preprint arXiv:2404.16811},
+  year={2024}
+}
+
+@inproceedings{tworkowski2023focused,
+ author = {Tworkowski, Szymon and Staniszewski, Konrad and Pacek, Miko\l aj and Wu, Yuhuai and Michalewski, Henryk and Mi\l o\'{s}, Piotr},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+ pages = {42661--42688},
+ publisher = {Curran Associates, Inc.},
+ title = {Focused Transformer: Contrastive Training for Context Scaling},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/8511d06d5590f4bda24d42087802cc81-Paper-Conference.pdf},
+ volume = {36},
+ year = {2023}
+}
+
+
+@article{team2023gemini,
+  title={Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context},
+  author={{Gemini Team}},
+  journal={arXiv preprint arXiv:2403.05530},
+  year={2024}
+}
+
+@inproceedings{
+zhao2024wildchat,
+title={WildChat: 1M Chat{GPT} Interaction Logs in the Wild},
+author={Wenting Zhao and Xiang Ren and Jack Hessel and Claire Cardie and Yejin Choi and Yuntian Deng},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=Bl8u7ZRlbM}
+}
+
+@article{weston2015towards,
+  title={Towards ai-complete question answering: A set of prerequisite toy tasks},
+  author={Weston, Jason and Bordes, Antoine and Chopra, Sumit and Rush, Alexander M and Van Merri{\"e}nboer, Bart and Joulin, Armand and Mikolov, Tomas},
+  journal={arXiv preprint arXiv:1502.05698},
+  year={2015}
+}
+
+@inproceedings{kwon2023efficient,
+author = {Kwon, Woosuk and Li, Zhuohan and Zhuang, Siyuan and Sheng, Ying and Zheng, Lianmin and Yu, Cody Hao and Gonzalez, Joseph and Zhang, Hao and Stoica, Ion},
+title = {Efficient Memory Management for Large Language Model Serving with PagedAttention},
+year = {2023},
+isbn = {9798400702297},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3600006.3613165},
+doi = {10.1145/3600006.3613165},
+abstract = {High throughput serving of large language models (LLMs) requires batching sufficiently many requests at a time. However, existing systems struggle because the key-value cache (KV cache) memory for each request is huge and grows and shrinks dynamically. When managed inefficiently, this memory can be significantly wasted by fragmentation and redundant duplication, limiting the batch size. To address this problem, we propose PagedAttention, an attention algorithm inspired by the classical virtual memory and paging techniques in operating systems. On top of it, we build vLLM, an LLM serving system that achieves (1) near-zero waste in KV cache memory and (2) flexible sharing of KV cache within and across requests to further reduce memory usage. Our evaluations show that vLLM improves the throughput of popular LLMs by 2--4\texttimes{} with the same level of latency compared to the state-of-the-art systems, such as FasterTransformer and Orca. The improvement is more pronounced with longer sequences, larger models, and more complex decoding algorithms. vLLM's source code is publicly available at https://github.com/vllm-project/vllm.},
+booktitle = {Proceedings of the 29th Symposium on Operating Systems Principles},
+pages = {611–626},
+numpages = {16},
+location = {Koblenz, Germany},
+series = {SOSP '23}
+}
+
+
+@misc{ai2024yi,
+      title={Yi: Open Foundation Models by 01.AI}, 
+      author={01.AI and : and Alex Young and Bei Chen and Chao Li and Chengen Huang and Ge Zhang and Guanwei Zhang and Heng Li and Jiangcheng Zhu and Jianqun Chen and Jing Chang and Kaidong Yu and Peng Liu and Qiang Liu and Shawn Yue and Senbin Yang and Shiming Yang and Tao Yu and Wen Xie and Wenhao Huang and Xiaohui Hu and Xiaoyi Ren and Xinyao Niu and Pengcheng Nie and Yuchi Xu and Yudong Liu and Yue Wang and Yuxuan Cai and Zhenyu Gu and Zhiyuan Liu and Zonghong Dai},
+      year={2024},
+      eprint={2403.04652},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2403.04652}, 
+}
+
+@misc{llama3-8b-1048k-model-card,
+title={Llama-3-8B-Instruct-Gradient-1048K Model Card},
+author={GradientAI},
+year={2024},
+url = {https://huggingface.co/gradientai/Llama-3-8B-Instruct-Gradient-1048k}
+}
+
+@misc{stella-model-card,
+title={Stella-en-1.5B-v5 Model Card},
+author={Dun Zhang},
+year={2024},
+url = {https://huggingface.co/dunzhang/stella_en_1.5B_v5}
+}
+
+@inproceedings{liu2022fewshot,
+ author = {Liu, Haokun and Tam, Derek and Muqeeth, Mohammed and Mohta, Jay and Huang, Tenghao and Bansal, Mohit and Raffel, Colin A},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {1950--1965},
+ publisher = {Curran Associates, Inc.},
+ title = {Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/0cde695b83bd186c1fd456302888454c-Paper-Conference.pdf},
+ volume = {35},
+ year = {2022}
+}
+
+@misc{llama3-70b-1048k-model-card,
+title={Llama-3-70B-Instruct-Gradient-1048K Model Card},
+author={GradientAI},
+year={2024},
+url = {https://huggingface.co/gradientai/Llama-3-70B-Instruct-Gradient-1048k}
+}
+
+@misc{llama3.1-70b-model-card,
+title={Llama-3.1-70B Model Card},
+author={Meta},
+year={2024},
+url = {https://huggingface.co/meta-llama/Llama-3.1-70B}
+}
+
+@misc{llama3.2-1b-model-card,
+title={Llama-3.2-1B-Instruct Model Card},
+author={Meta},
+year={2024},
+url = {https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct}
+}
+
+@misc{llama3.2-3b-model-card,
+title={Llama-3.2-3B-Instruct Model Card},
+author={Meta},
+year={2024},
+url = {https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct}
+}
+
+@misc{paul-graham-essays,
+title={Paul Graham Essays},
+author={Paul Graham},
+year={2024},
+url = {https://www.paulgraham.com/articles.html}
+}
+
+@misc{c4ai-command-r-model-card,
+title={C4AI Command-R Model Card},
+author={{Cohere for AI}},
+year={2024},
+url = {https://huggingface.co/CohereForAI/c4ai-command-r-v01}
+}
+
+@misc{jiang2023mistral,
+      title={Mistral 7B}, 
+      author={Albert Q. Jiang and Alexandre Sablayrolles and Arthur Mensch and Chris Bamford and Devendra Singh Chaplot and Diego de las Casas and Florian Bressand and Gianna Lengyel and Guillaume Lample and Lucile Saulnier and Lélio Renard Lavaud and Marie-Anne Lachaux and Pierre Stock and Teven Le Scao and Thibaut Lavril and Thomas Wang and Timothée Lacroix and William El Sayed},
+      year={2023},
+      eprint={2310.06825},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2310.06825}, 
+}
+
+@misc{llama-2-7b-32k,
+title={Llama-2-7B-32K Model Card},
+author={TogetherAI},
+year={2024},
+url = {https://huggingface.co/togethercomputer/LLaMA-2-7B-32K}
+}
+
+
+@inproceedings{
+tanzer2024a,
+title={A Benchmark for Learning to Translate a New Language from One Grammar Book},
+author={Garrett Tanzer and Mirac Suzgun and Eline Visser and Dan Jurafsky and Luke Melas-Kyriazi},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=tbVWug9f2h}
+}
+
+@inproceedings{
+jimenez2024swebench,
+title={{SWE}-bench: Can Language Models Resolve Real-world Github Issues?},
+author={Carlos E Jimenez and John Yang and Alexander Wettig and Shunyu Yao and Kexin Pei and Ofir Press and Karthik R Narasimhan},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=VTF8yNQM66}
+}
+
+@inproceedings{
+press2022train,
+title={Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation},
+author={Ofir Press and Noah Smith and Mike Lewis},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=R8sQPpGCv0}
+}
+
+@inproceedings{
+hu2024can,
+title={Can Perplexity Reflect Large Language Model's Ability in Long Text Understanding?},
+author={Yutong Hu and Quzhe Huang and Mingxu Tao and Chen Zhang and Yansong Feng},
+booktitle={The Second Tiny Papers Track at ICLR 2024},
+year={2024},
+url={https://openreview.net/forum?id=Cjp6YKVeAa}
+}
+
+@inproceedings{pang-lee-2005-seeing,
+    title = "Seeing Stars: Exploiting Class Relationships for Sentiment Categorization with Respect to Rating Scales",
+    author = "Pang, Bo  and
+      Lee, Lillian",
+    editor = "Knight, Kevin  and
+      Ng, Hwee Tou  and
+      Oflazer, Kemal",
+    booktitle = "Proceedings of the 43rd Annual Meeting of the Association for Computational Linguistics ({ACL}{'}05)",
+    month = jun,
+    year = "2005",
+    address = "Ann Arbor, Michigan",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P05-1015",
+    doi = "10.3115/1219840.1219855",
+    pages = "115--124",
+}
+
+@inproceedings{bird-etal-2008-acl,
+    title = "The {ACL} {A}nthology Reference Corpus: A Reference Dataset for Bibliographic Research in Computational Linguistics",
+    author = "Bird, Steven  and
+      Dale, Robert  and
+      Dorr, Bonnie  and
+      Gibson, Bryan  and
+      Joseph, Mark  and
+      Kan, Min-Yen  and
+      Lee, Dongwon  and
+      Powley, Brett  and
+      Radev, Dragomir  and
+      Tan, Yee Fan",
+    editor = "Calzolari, Nicoletta  and
+      Choukri, Khalid  and
+      Maegaard, Bente  and
+      Mariani, Joseph  and
+      Odijk, Jan  and
+      Piperidis, Stelios  and
+      Tapias, Daniel",
+    booktitle = "Proceedings of the Sixth International Conference on Language Resources and Evaluation ({LREC}'08)",
+    month = may,
+    year = "2008",
+    address = "Marrakech, Morocco",
+    publisher = "European Language Resources Association (ELRA)",
+    url = "http://www.lrec-conf.org/proceedings/lrec2008/pdf/445_paper.pdf",
+    abstract = "The ACL Anthology is a digital archive of conference and journal papers in natural language processing and computational linguistics. Its primary purpose is to serve as a reference repository of research results, but we believe that it can also be an object of study and a platform for research in its own right. We describe an enriched and standardized reference corpus derived from the ACL Anthology that can be used for research in scholarly document processing. This corpus, which we call the ACL Anthology Reference Corpus (ACL ARC), brings together the recent activities of a number of research groups around the world. Our goal is to make the corpus widely available, and to encourage other researchers to use it as a standard testbed for experiments in both bibliographic and bibliometric research.",
+}
+
+@inproceedings{li-roth-2002-learning,
+    title = "Learning Question Classifiers",
+    author = "Li, Xin  and
+      Roth, Dan",
+    booktitle = "{COLING} 2002: The 19th International Conference on Computational Linguistics",
+    year = "2002",
+    url = "https://aclanthology.org/C02-1150",
+}
+
+
+@inproceedings{dolan-brockett-2005-automatically,
+    title = "Automatically Constructing a Corpus of Sentential Paraphrases",
+    author = "Dolan, William B.  and
+      Brockett, Chris",
+    booktitle = "Proceedings of the Third International Workshop on Paraphrasing ({IWP}2005)",
+    year = "2005",
+    url = "https://aclanthology.org/I05-5002",
+}
+@inproceedings{pontiki-etal-2015-semeval,
+    title = "{S}em{E}val-2015 Task 12: Aspect Based Sentiment Analysis",
+    author = "Pontiki, Maria  and
+      Galanis, Dimitris  and
+      Papageorgiou, Haris  and
+      Manandhar, Suresh  and
+      Androutsopoulos, Ion",
+    editor = "Nakov, Preslav  and
+      Zesch, Torsten  and
+      Cer, Daniel  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 9th International Workshop on Semantic Evaluation ({S}em{E}val 2015)",
+    month = jun,
+    year = "2015",
+    address = "Denver, Colorado",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/S15-2082",
+    doi = "10.18653/v1/S15-2082",
+    pages = "486--495",
+}
+@inproceedings{marelli-etal-2014-sick,
+    title = "A {SICK} cure for the evaluation of compositional distributional semantic models",
+    author = "Marelli, Marco  and
+      Menini, Stefano  and
+      Baroni, Marco  and
+      Bentivogli, Luisa  and
+      Bernardi, Raffaella  and
+      Zamparelli, Roberto",
+    editor = "Calzolari, Nicoletta  and
+      Choukri, Khalid  and
+      Declerck, Thierry  and
+      Loftsson, Hrafn  and
+      Maegaard, Bente  and
+      Mariani, Joseph  and
+      Moreno, Asuncion  and
+      Odijk, Jan  and
+      Piperidis, Stelios",
+    booktitle = "Proceedings of the Ninth International Conference on Language Resources and Evaluation ({LREC}'14)",
+    month = may,
+    year = "2014",
+    address = "Reykjavik, Iceland",
+    publisher = "European Language Resources Association (ELRA)",
+    url = "http://www.lrec-conf.org/proceedings/lrec2014/pdf/363_Paper.pdf",
+    pages = "216--223",
+    abstract = "Shared and internationally recognized benchmarks are fundamental for the development of any computational system. We aim to help the research community working on compositional distributional semantic models (CDSMs) by providing SICK (Sentences Involving Compositional Knowldedge), a large size English benchmark tailored for them. SICK consists of about 10,000 English sentence pairs that include many examples of the lexical, syntactic and semantic phenomena that CDSMs are expected to account for, but do not require dealing with other aspects of existing sentential data sets (idiomatic multiword expressions, named entities, telegraphic language) that are not within the scope of CDSMs. By means of crowdsourcing techniques, each pair was annotated for two crucial semantic tasks: relatedness in meaning (with a 5-point rating scale as gold score) and entailment relation between the two elements (with three possible gold labels: entailment, contradiction, and neutral). The SICK data set was used in SemEval-2014 Task 1, and it freely available for research purposes.",
+}
+@inproceedings{socher-etal-2013-recursive,
+    title = "Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank",
+    author = "Socher, Richard  and
+      Perelygin, Alex  and
+      Wu, Jean  and
+      Chuang, Jason  and
+      Manning, Christopher D.  and
+      Ng, Andrew  and
+      Potts, Christopher",
+    editor = "Yarowsky, David  and
+      Baldwin, Timothy  and
+      Korhonen, Anna  and
+      Livescu, Karen  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2013",
+    address = "Seattle, Washington, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D13-1170",
+    pages = "1631--1642",
+}
+@inproceedings{yang-etal-2015-wikiqa,
+    title = "{W}iki{QA}: A Challenge Dataset for Open-Domain Question Answering",
+    author = "Yang, Yi  and
+      Yih, Wen-tau  and
+      Meek, Christopher",
+    editor = "M{\`a}rquez, Llu{\'\i}s  and
+      Callison-Burch, Chris  and
+      Su, Jian",
+    booktitle = "Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2015",
+    address = "Lisbon, Portugal",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D15-1237",
+    doi = "10.18653/v1/D15-1237",
+    pages = "2013--2018",
+}
+
+
+@inproceedings{park-cardie-2014-identifying,
+    title = "Identifying Appropriate Support for Propositions in Online User Comments",
+    author = "Park, Joonsuk  and
+      Cardie, Claire",
+    editor = "Green, Nancy  and
+      Ashley, Kevin  and
+      Litman, Diane  and
+      Reed, Chris  and
+      Walker, Vern",
+    booktitle = "Proceedings of the First Workshop on Argumentation Mining",
+    month = jun,
+    year = "2014",
+    address = "Baltimore, Maryland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W14-2105",
+    doi = "10.3115/v1/W14-2105",
+    pages = "29--38",
+}
+
+
+@inproceedings{pang-lee-2004-sentimental,
+    title = "A Sentimental Education: Sentiment Analysis Using Subjectivity Summarization Based on Minimum Cuts",
+    author = "Pang, Bo  and
+      Lee, Lillian",
+    booktitle = "Proceedings of the 42nd Annual Meeting of the Association for Computational Linguistics ({ACL}-04)",
+    month = jul,
+    year = "2004",
+    address = "Barcelona, Spain",
+    url = "https://aclanthology.org/P04-1035",
+    doi = "10.3115/1218955.1218990",
+    pages = "271--278",
+}
+
+
+@misc{goldman2024reallylongcontextneed,
+      title={Is It Really Long Context if All You Need Is Retrieval? Towards Genuinely Difficult Long Context NLP}, 
+      author={Omer Goldman and Alon Jacovi and Aviv Slobodkin and Aviya Maimon and Ido Dagan and Reut Tsarfaty},
+      year={2024},
+      eprint={2407.00402},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2407.00402}, 
+}
+
+@misc{lee2024longcontextlanguagemodelssubsume,
+      title={Can Long-Context Language Models Subsume Retrieval, RAG, SQL, and More?}, 
+      author={Jinhyuk Lee and Anthony Chen and Zhuyun Dai and Dheeru Dua and Devendra Singh Sachan and Michael Boratko and Yi Luan and Sébastien M. R. Arnold and Vincent Perot and Siddharth Dalmia and Hexiang Hu and Xudong Lin and Panupong Pasupat and Aida Amini and Jeremy R. Cole and Sebastian Riedel and Iftekhar Naim and Ming-Wei Chang and Kelvin Guu},
+      year={2024},
+      eprint={2406.13121},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2406.13121}, 
+}
+
+@misc{yen2024helmetevaluatelongcontextlanguage,
+      title={HELMET: How to Evaluate Long-Context Language Models Effectively and Thoroughly}, 
+      author={Howard Yen and Tianyu Gao and Minmin Hou and Ke Ding and Daniel Fleischer and Peter Izsak and Moshe Wasserblat and Danqi Chen},
+      year={2024},
+      eprint={2410.02694},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.02694}, 
+}
+
+@misc{sharma2024losingvisualneedlesimage,
+      title={Losing Visual Needles in Image Haystacks: Vision Language Models are Easily Distracted in Short and Long Contexts}, 
+      author={Aditya Sharma and Michael Saxon and William Yang Wang},
+      year={2024},
+      eprint={2406.16851},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2406.16851}, 
+}

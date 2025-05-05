@@ -1,0 +1,20 @@
+To make decisions based on a model fit with auto-encoding variational Bayes
+(AEVB), practitioners often let the variational distribution serve as a
+surrogate for the posterior distribution. This approach yields biased estimates
+of the expected risk, and therefore leads to poor decisions for two reasons.
+First, the model fit with AEVB may not equal the underlying data distribution.
+Second, the variational distribution may not equal the posterior distribution
+under the fitted model. We explore how fitting the variational distribution
+based on several objective functions other than the ELBO, while continuing to
+fit the generative model based on the ELBO, affects the quality of downstream
+decisions. For the probabilistic principal component analysis model, we
+investigate how importance sampling error, as well as the bias of the model
+parameter estimates, varies across several approximate posteriors when used as
+proposal distributions. Our theoretical results suggest that a posterior
+approximation distinct from the variational distribution should be used for
+making decisions. Motivated by these theoretical results, we propose learning
+several approximate proposals for the best model and combining them using
+multiple importance sampling for decision-making. In addition to toy examples,
+we present a full-fledged case study of single-cell RNA sequencing. In this
+challenging instance of multiple hypothesis testing, our proposed approach
+surpasses the current state of the art.

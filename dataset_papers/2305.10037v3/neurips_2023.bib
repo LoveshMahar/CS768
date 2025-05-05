@@ -1,0 +1,434 @@
+@misc{he2021empirical,
+      title={An Empirical Study on Few-shot Knowledge Probing for Pretrained Language Models}, 
+      author={Tianxing He and Kyunghyun Cho and James Glass},
+      year={2021},
+      eprint={2109.02772},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+@article{chen2023exploring,
+  title={Exploring the potential of large language models (llms) in learning on graphs},
+  author={Chen, Zhikai and Mao, Haitao and Li, Hang and Jin, Wei and Wen, Hongzhi and Wei, Xiaochi and Wang, Shuaiqiang and Yin, Dawei and Fan, Wenqi and Liu, Hui and others},
+  journal={arXiv preprint arXiv:2307.03393},
+  year={2023}
+}
+@inproceedings{liu-etal-2023-code,
+    title = "Code Execution with Pre-trained Language Models",
+    author = "Liu, Chenxiao  and
+      Lu, Shuai  and
+      Chen, Weizhu  and
+      Jiang, Daxin  and
+      Svyatkovskiy, Alexey  and
+      Fu, Shengyu  and
+      Sundaresan, Neel  and
+      Duan, Nan",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.308",
+    doi = "10.18653/v1/2023.findings-acl.308",
+    pages = "4984--4999",
+    abstract = "Code execution is a fundamental aspect of programming language semantics that reflects the exact behavior of the code. However, most pre-trained models for code intelligence ignore the execution trace and only rely on source code and syntactic structures. In this paper, we investigate how well pre-trained models can understand and perform code execution. We develop a mutation-based data augmentation technique to create a large-scale and realistic Python dataset and task for code execution, which challenges existing models such as Codex. We then present CodeExecutor, a Transformer model that leverages code execution pre-training and curriculum learning to enhance its semantic comprehension. We evaluate CodeExecutor on code execution and show its promising performance and limitations. We also demonstrate its potential benefits for code intelligence tasks such as zero-shot code-to-code search and text-to-code generation. Our analysis provides insights into the learning and generalization abilities of pre-trained models for code execution.",
+}
+@inproceedings{shi2023large,
+  title={Large language models can be easily distracted by irrelevant context},
+  author={Shi, Freda and Chen, Xinyun and Misra, Kanishka and Scales, Nathan and Dohan, David and Chi, Ed H and Sch{\"a}rli, Nathanael and Zhou, Denny},
+  booktitle={International Conference on Machine Learning},
+  pages={31210--31227},
+  year={2023},
+  organization={PMLR}
+}
+@article{srivastava2023beyond,
+  title={Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models},
+  author={Srivastava, Aarohi and Rastogi, Abhinav and Rao, Abhishek and Shoeb, Abu Awal Md and Abid, Abubakar and Fisch, Adam and Brown, Adam R and Santoro, Adam and Gupta, Aditya and Garriga-Alonso, Adri{\`a} and others},
+  journal={Transactions on Machine Learning Research},
+  year={2023}
+}
+@inproceedings{lee-kim-2023-recursion,
+    title = "Recursion of Thought: A Divide-and-Conquer Approach to Multi-Context Reasoning with Language Models",
+    author = "Lee, Soochan  and
+      Kim, Gunhee",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.40",
+    doi = "10.18653/v1/2023.findings-acl.40",
+    pages = "623--658",
+    abstract = "Generating intermediate steps, or Chain of Thought (CoT), is an effective way to significantly improve language models{'} (LM) multi-step reasoning capability. However, the CoT lengths can grow rapidly with the problem complexity, easily exceeding the maximum context size. Instead of increasing the context limit, which has already been heavily investigated, we explore an orthogonal direction: making LMs divide a problem into multiple contexts. We propose a new inference framework, called Recursion of Thought (RoT), which introduces several special tokens that the models can output to trigger context-related operations. Extensive experiments with multiple architectures including GPT-3 show that RoT dramatically improves LMs{'} inference capability to solve problems, whose solution consists of hundreds of thousands of tokens.",
+}
+@inproceedings{huang2022language,
+  title={Language models as zero-shot planners: Extracting actionable knowledge for embodied agents},
+  author={Huang, Wenlong and Abbeel, Pieter and Pathak, Deepak and Mordatch, Igor},
+  booktitle={International Conference on Machine Learning},
+  pages={9118--9147},
+  year={2022},
+  organization={PMLR}
+}
+@article{feng2022twibot,
+  title={TwiBot-22: Towards graph-based Twitter bot detection},
+  author={Feng, Shangbin and Tan, Zhaoxuan and Wan, Herun and Wang, Ningnan and Chen, Zilong and Zhang, Binchi and Zheng, Qinghua and Zhang, Wenqian and Lei, Zhenyu and Yang, Shujie and others},
+  journal={arXiv preprint arXiv:2206.04564},
+  year={2022}
+}
+@inproceedings{
+valmeekam2022large,
+title={Large Language Models Still Can't Plan (A Benchmark for {LLM}s on Planning and Reasoning about Change)},
+author={Karthik Valmeekam and Alberto Olmo and Sarath Sreedharan and Subbarao Kambhampati},
+booktitle={NeurIPS 2022 Foundation Models for Decision Making Workshop},
+year={2022},
+url={https://openreview.net/forum?id=wUU-7XTL5XO}
+}
+@inproceedings{madaan-etal-2022-language,
+    title = "Language Models of Code are Few-Shot Commonsense Learners",
+    author = "Madaan, Aman  and
+      Zhou, Shuyan  and
+      Alon, Uri  and
+      Yang, Yiming  and
+      Neubig, Graham",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.90",
+    pages = "1384--1403",
+    abstract = "We address the general task of structured commonsense reasoning: given a natural language input, the goal is to generate a graph such as an event or a reasoning-graph.To employ large language models (LMs) for this task, existing approaches {`}serialize{'} the output graph as a flat list of nodes and edges.Although feasible, these serialized graphs strongly deviate from the natural language corpora that LMs were pre-trained on, hindering LMs from generating them correctly. In this paper, we show that when we instead frame structured commonsense reasoning tasks as code generation tasks, pre-trained LMs of code are better structured commonsense reasoners than LMs of natural language, even when the downstream task does not involve source code at all.We demonstrate our approach across three diverse structured commonsense reasoning tasks. In all these natural language tasks, we show that using our approach, a code generation LM (codex) outperforms natural-LMs that are fine-tuned on the target task (T5) and other strong LMs such as GPT-3 in the few-shot setting.",
+}
+@article{creswell2022selection,
+  title={Selection-inference: Exploiting large language models for interpretable logical reasoning},
+  author={Creswell, Antonia and Shanahan, Murray and Higgins, Irina},
+  journal={arXiv preprint arXiv:2205.09712},
+  year={2022}
+}
+@inproceedings{andreas-2022-language,
+    title = "Language Models as Agent Models",
+    author = "Andreas, Jacob",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-emnlp.423",
+    pages = "5769--5779",
+    abstract = "Language models (LMs) are trained on collections of documents, written by individual human agents to achieve specific goals in the outside world. During training, LMs have access only to text of these documents, with no direct evidence of the internal states of the agents that produced them{---}a fact often used to argue that LMs are incapable of modeling goal-directed aspects of human language production and comprehension. Can LMs trained on text learn anything at all about the relationship between language and use? I argue that LMs are models of communicative intentions in a specific, narrow sense. When performing next word prediction given a textual context, an LM can infer and represent properties of an agent likely to have produced that context. These representations can in turn influence subsequent LM generation in the same way that agents{'} communicative intentions influence their language. I survey findings from the recent literature showing that{---}even in today{'}s non-robust and error-prone models{---}LMs infer and use representations of fine-grained communicative intentions and high-level beliefs and goals. Despite the limited nature of their training data, they can thus serve as building blocks for systems that communicate and act intentionally.",
+}
+@article{brown2020language,
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={1877--1901},
+  year={2020}
+}
+@article{ouyang2022training,
+  title={Training language models to follow instructions with human feedback},
+  author={Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={27730--27744},
+  year={2022}
+}
+@article{bubeck2023sparks,
+  title={Sparks of artificial general intelligence: Early experiments with gpt-4},
+  author={Bubeck, S{\'e}bastien and Chandrasekaran, Varun and Eldan, Ronen and Gehrke, Johannes and Horvitz, Eric and Kamar, Ece and Lee, Peter and Lee, Yin Tat and Li, Yuanzhi and Lundberg, Scott and others},
+  journal={arXiv preprint arXiv:2303.12712},
+  year={2023}
+}
+@inproceedings{
+wei2022chain,
+title={Chain of Thought Prompting Elicits Reasoning in Large Language Models},
+author={Jason Wei and Xuezhi Wang and Dale Schuurmans and Maarten Bosma and brian ichter and Fei Xia and Ed H. Chi and Quoc V Le and Denny Zhou},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=_VjQlMeSB_J}
+}
+@inproceedings{
+zhou2023leasttomost,
+title={Least-to-Most Prompting Enables Complex Reasoning in Large Language Models},
+author={Denny Zhou and Nathanael Sch{\"a}rli and Le Hou and Jason Wei and Nathan Scales and Xuezhi Wang and Dale Schuurmans and Claire Cui and Olivier Bousquet and Quoc V Le and Ed H. Chi},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=WZH7099tgfM}
+}
+@inproceedings{
+wang2023selfconsistency,
+title={Self-Consistency Improves Chain of Thought Reasoning in Language Models},
+author={Xuezhi Wang and Jason Wei and Dale Schuurmans and Quoc V Le and Ed H. Chi and Sharan Narang and Aakanksha Chowdhery and Denny Zhou},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=1PL1NIMMrw}
+}
+
+@inproceedings{
+kojima2022large,
+title={Large Language Models are Zero-Shot Reasoners},
+author={Takeshi Kojima and Shixiang Shane Gu and Machel Reid and Yutaka Matsuo and Yusuke Iwasawa},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=e2TBb5y0yFf}
+}
+@inproceedings{welleck2021naturalproofs,
+  title={NaturalProofs: Mathematical Theorem Proving in Natural Language},
+  author={Sean Welleck and Jiacheng Liu and Ronan Le Bras and Hannaneh Hajishirzi and Yejin Choi and Kyunghyun Cho},
+  booktitle={Thirty-fifth Conference on Neural Information Processing Systems Datasets and Benchmarks Track (Round 1)},
+  year={2021},
+  url={https://openreview.net/forum?id=Jvxa8adr3iY}
+}
+@inproceedings{welleck2022naturalprover,
+    title={NaturalProver: Grounded Mathematical Proof Generation with Language Models},
+    author={Sean Welleck and Jiacheng Liu and Ximing Lu and Hannaneh Hajishirzi and Yejin Choi},
+    booktitle={Advances in Neural Information Processing Systems},
+    editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+    year={2022},
+    url={https://openreview.net/forum?id=rhdfTOiXBng}
+}
+@article{cobbe2021training,
+  title={Training verifiers to solve math word problems},
+  author={Cobbe, Karl and Kosaraju, Vineet and Bavarian, Mohammad and Chen, Mark and Jun, Heewoo and Kaiser, Lukasz and Plappert, Matthias and Tworek, Jerry and Hilton, Jacob and Nakano, Reiichiro and others},
+  journal={arXiv preprint arXiv:2110.14168},
+  year={2021}
+}
+@inproceedings{ling-etal-2017-program,
+    title = "Program Induction by Rationale Generation: Learning to Solve and Explain Algebraic Word Problems",
+    author = "Ling, Wang  and
+      Yogatama, Dani  and
+      Dyer, Chris  and
+      Blunsom, Phil",
+    booktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P17-1015",
+    doi = "10.18653/v1/P17-1015",
+    pages = "158--167",
+    abstract = "Solving algebraic word problems requires executing a series of arithmetic operations{---}a program{---}to obtain a final answer. However, since programs can be arbitrarily complicated, inducing them directly from question-answer pairs is a formidable challenge. To make this task more feasible, we solve these problems by generating answer rationales, sequences of natural language and human-readable mathematical expressions that derive the final answer through a series of small steps. Although rationales do not explicitly specify programs, they provide a scaffolding for their structure via intermediate milestones. To evaluate our approach, we have created a new 100,000-sample dataset of questions, answers and rationales. Experimental results show that indirect supervision of program learning via answer rationales is a promising strategy for inducing arithmetic programs.",
+}
+@inproceedings{patel-etal-2021-nlp,
+    title = "Are {NLP} Models really able to Solve Simple Math Word Problems?",
+    author = "Patel, Arkil  and
+      Bhattamishra, Satwik  and
+      Goyal, Navin",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.168",
+    doi = "10.18653/v1/2021.naacl-main.168",
+    pages = "2080--2094",
+    abstract = "The problem of designing NLP solvers for math word problems (MWP) has seen sustained research activity and steady gains in the test accuracy. Since existing solvers achieve high performance on the benchmark datasets for elementary level MWPs containing one-unknown arithmetic word problems, such problems are often considered {``}solved{''} with the bulk of research attention moving to more complex MWPs. In this paper, we restrict our attention to English MWPs taught in grades four and lower. We provide strong evidence that the existing MWP solvers rely on shallow heuristics to achieve high performance on the benchmark datasets. To this end, we show that MWP solvers that do not have access to the question asked in the MWP can still solve a large fraction of MWPs. Similarly, models that treat MWPs as bag-of-words can also achieve surprisingly high accuracy. Further, we introduce a challenge dataset, SVAMP, created by applying carefully chosen variations over examples sampled from existing datasets. The best accuracy achieved by state-of-the-art models is substantially lower on SVAMP, thus showing that much remains to be done even for the simplest of the MWPs.",
+}
+@inproceedings{talmor-etal-2019-commonsenseqa,
+    title = "{C}ommonsense{QA}: A Question Answering Challenge Targeting Commonsense Knowledge",
+    author = "Talmor, Alon  and
+      Herzig, Jonathan  and
+      Lourie, Nicholas  and
+      Berant, Jonathan",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1421",
+    doi = "10.18653/v1/N19-1421",
+    pages = "4149--4158",
+    abstract = "When answering a question, people often draw upon their rich world knowledge in addition to the particular context. Recent work has focused primarily on answering questions given some relevant document or context, and required very little general background. To investigate question answering with prior knowledge, we present CommonsenseQA: a challenging new dataset for commonsense question answering. To capture common sense beyond associations, we extract from ConceptNet (Speer et al., 2017) multiple target concepts that have the same semantic relation to a single source concept. Crowd-workers are asked to author multiple-choice questions that mention the source concept and discriminate in turn between each of the target concepts. This encourages workers to create questions with complex semantics that often require prior knowledge. We create 12,247 questions through this procedure and demonstrate the difficulty of our task with a large number of strong baselines. Our best baseline is based on BERT-large (Devlin et al., 2018) and obtains 56{\%} accuracy, well below human performance, which is 89{\%}.",
+}
+@article{geva2021strategyqa,
+  title = {{Did Aristotle Use a Laptop? A Question Answering Benchmark with Implicit Reasoning Strategies}},
+  author = {Geva, Mor and Khashabi, Daniel and Segal, Elad and Khot, Tushar and Roth, Dan and Berant, Jonathan},
+  journal = {Transactions of the Association for Computational Linguistics (TACL)},
+  year = {2021},
+}
+@article{srivastava2022beyond,
+  title={Beyond the imitation game: Quantifying and extrapolating the capabilities of language models},
+  author={Srivastava, Aarohi and Rastogi, Abhinav and Rao, Abhishek and Shoeb, Abu Awal Md and Abid, Abubakar and Fisch, Adam and Brown, Adam R and Santoro, Adam and Gupta, Aditya and Garriga-Alonso, Adri{\`a} and others},
+  journal={arXiv preprint arXiv:2206.04615},
+  year={2022}
+}
+@inproceedings{
+ammanabrolu2021learning,
+title={Learning Knowledge Graph-based World Models of Textual Environments},
+author={Prithviraj Ammanabrolu and Mark Riedl},
+booktitle={Advances in Neural Information Processing Systems},
+editor={A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+year={2021},
+url={https://openreview.net/forum?id=o24k_XfIe6_}
+}
+@article{adhikari2020learning,
+  title={Learning dynamic belief graphs to generalize on text-based games},
+  author={Adhikari, Ashutosh and Yuan, Xingdi and C{\^o}t{\'e}, Marc-Alexandre and Zelinka, Mikul{\'a}{\v{s}} and Rondeau, Marc-Antoine and Laroche, Romain and Poupart, Pascal and Tang, Jian and Trischler, Adam and Hamilton, Will},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={3045--3057},
+  year={2020}
+}
+@inproceedings{tandon-etal-2019-wiqa,
+    title = "{WIQA}: A dataset for {``}What if...{''} reasoning over procedural text",
+    author = "Tandon, Niket  and
+      Dalvi, Bhavana  and
+      Sakaguchi, Keisuke  and
+      Clark, Peter  and
+      Bosselut, Antoine",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1629",
+    doi = "10.18653/v1/D19-1629",
+    pages = "6076--6085",
+    abstract = "We introduce WIQA, the first large-scale dataset of {``}What if...{''} questions over procedural text. WIQA contains a collection of paragraphs, each annotated with multiple influence graphs describing how one change affects another, and a large (40k) collection of {``}What if...?{''} multiple-choice questions derived from these. For example, given a paragraph about beach erosion, would stormy weather hasten or decelerate erosion? WIQA contains three kinds of questions: perturbations to steps mentioned in the paragraph; external (out-of-paragraph) perturbations requiring commonsense knowledge; and irrelevant (no effect) perturbations. We find that state-of-the-art models achieve 73.8{\%} accuracy, well below the human performance of 96.3{\%}. We analyze the challenges, in particular tracking chains of influences, and present the dataset as an open challenge to the community.",
+}
+@inproceedings{madaan-etal-2021-give,
+    title = "Could you give me a hint ? Generating inference graphs for defeasible reasoning",
+    author = "Madaan, Aman  and
+      Rajagopal, Dheeraj  and
+      Tandon, Niket  and
+      Yang, Yiming  and
+      Hovy, Eduard",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-acl.456",
+    doi = "10.18653/v1/2021.findings-acl.456",
+    pages = "5138--5147",
+}
+@inproceedings{saha-etal-2021-explagraphs,
+    title = "{E}xpla{G}raphs: An Explanation Graph Generation Task for Structured Commonsense Reasoning",
+    author = "Saha, Swarnadeep  and
+      Yadav, Prateek  and
+      Bauer, Lisa  and
+      Bansal, Mohit",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.609",
+    doi = "10.18653/v1/2021.emnlp-main.609",
+    pages = "7716--7740",
+    abstract = "Recent commonsense-reasoning tasks are typically discriminative in nature, where a model answers a multiple-choice question for a certain context. Discriminative tasks are limiting because they fail to adequately evaluate the model{'}s ability to reason and explain predictions with underlying commonsense knowledge. They also allow such models to use reasoning shortcuts and not be {``}right for the right reasons{''}. In this work, we present ExplaGraphs, a new generative and structured commonsense-reasoning task (and an associated dataset) of explanation graph generation for stance prediction. Specifically, given a belief and an argument, a model has to predict if the argument supports or counters the belief and also generate a commonsense-augmented graph that serves as non-trivial, complete, and unambiguous explanation for the predicted stance. We collect explanation graphs through a novel Create-Verify-And-Refine graph collection framework that improves the graph quality (up to 90{\%}) via multiple rounds of verification and refinement. A significant 79{\%} of our graphs contain external commonsense nodes with diverse structures and reasoning depths. Next, we propose a multi-level evaluation framework, consisting of automatic metrics and human evaluation, that check for the structural and semantic correctness of the generated graphs and their degree of match with ground-truth graphs. Finally, we present several structured, commonsense-augmented, and text generation models as strong starting points for this explanation graph generation task, and observe that there is a large gap with human performance, thereby encouraging future work for this new challenging task.",
+}
+@inproceedings{
+patel2022mapping,
+title={Mapping Language Models to Grounded Conceptual Spaces},
+author={Roma Patel and Ellie Pavlick},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=gJcEM8sxHK}
+}
+
+@article{sun2022recitation,
+  title={Recitation-Augmented Language Models},
+  author={Sun, Zhiqing and Wang, Xuezhi and Tay, Yi and Yang, Yiming and Zhou, Denny},
+  journal={arXiv preprint arXiv:2210.01296},
+  year={2022}
+}
+
+@article{leerecursion,
+  title={Recursion of Thought: Divide and Conquer Reasoning with Language Models},
+  author={Lee, Soochan and Kim, Gunhee},
+  year={2023}
+}
+
+@article{zelikman2023parsel,
+  title={Parsel: A (De-) compositional Framework for Algorithmic Reasoning with Language Models},
+  author={Zelikman, Eric and Huang, Qian and Poesia, Gabriel and Goodman, Noah D and Haber, Nick},
+  journal={arXiv preprint arXiv:2212.10561},
+  year={2023}
+}
+
+@article{zhou2022teaching,
+  title={Teaching Algorithmic Reasoning via In-context Learning},
+  author={Zhou, Hattie and Nova, Azade and Larochelle, Hugo and Courville, Aaron and Neyshabur, Behnam and Sedghi, Hanie},
+  journal={arXiv preprint arXiv:2211.09066},
+  year={2022}
+}
+
+@article{yu2022crepe,
+    title={CREPE: Open-Domain Question Answering with False Presuppositions}, 
+    author={Xinyan Velocity Yu and Sewon Min and Luke Zettlemoyer and Hannaneh Hajishirzi},
+    year={2022},
+    journal={arXiv preprint arXiv:2211.17257},
+    url={https://arxiv.org/abs/2211.17257}
+}
+@inproceedings{
+zhang2022greaselm,
+title={Grease{LM}: Graph {REAS}oning Enhanced Language Models},
+author={Xikun Zhang and Antoine Bosselut and Michihiro Yasunaga and Hongyu Ren and Percy Liang and Christopher D Manning and Jure Leskovec},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=41e9o6cQPj}
+}
+
+@article{he2023solving,
+  title={Solving Math Word Problems by Combining Language Models With Symbolic Solvers},
+  author={He-Yueya, Joy and Poesia, Gabriel and Wang, Rose E and Goodman, Noah D},
+  journal={arXiv preprint arXiv:2304.09102},
+  year={2023}
+}
+@article{touvron2023llama,
+  title={Llama: Open and efficient foundation language models},
+  author={Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth{\'e}e and Rozi{\`e}re, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and others},
+  journal={arXiv preprint arXiv:2302.13971},
+  year={2023}
+}
+@inproceedings{
+sun2023recitationaugmented,
+title={Recitation-Augmented Language Models},
+author={Zhiqing Sun and Xuezhi Wang and Yi Tay and Yiming Yang and Denny Zhou},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=-cqvvvb-NkI}
+}
+@inproceedings{
+creswell2023selectioninference,
+title={Selection-Inference: Exploiting Large Language Models for Interpretable Logical Reasoning},
+author={Antonia Creswell and Murray Shanahan and Irina Higgins},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=3Pf3Wg6o-A4}
+}
+@inproceedings{sclar-etal-2023-minding,
+    title = "Minding Language Models{'} (Lack of) Theory of Mind: A Plug-and-Play Multi-Character Belief Tracker",
+    author = "Sclar, Melanie  and
+      Kumar, Sachin  and
+      West, Peter  and
+      Suhr, Alane  and
+      Choi, Yejin  and
+      Tsvetkov, Yulia",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.780",
+    doi = "10.18653/v1/2023.acl-long.780",
+    pages = "13960--13980",
+    abstract = "Theory of Mind (ToM){---}the ability to reason about the mental states of other people{---}is a key element of our social intelligence. Yet, despite their ever more impressive performance, large-scale neural language models still lack basic theory of mind capabilities out-of-the-box. We posit that simply scaling up models will not imbue them with theory of mind due to the inherently symbolic and implicit nature of the phenomenon, and instead investigate an alternative: can we design a decoding-time algorithm that enhances theory of mind of off-the-shelf neural language models without explicit supervision? We present SymbolicToM, a plug-and-play approach to reason about the belief states of multiple characters in reading comprehension tasks via explicit symbolic representation. More concretely, our approach tracks each entity{'}s beliefs, their estimation of other entities{'} beliefs, and higher-order levels of reasoning, all through graphical representations, allowing for more precise and interpretable reasoning than previous approaches. Empirical results on the well-known ToMi benchmark (Le et al., 2019) demonstrate that SymbolicToM dramatically enhances off-the-shelf neural networks{'} theory of mind in a zero-shot setting while showing robust out-of-distribution performance compared to supervised baselines. Our work also reveals spurious patterns in existing theory of mind benchmarks, emphasizing the importance of out-of-distribution evaluation and methods that do not overfit a particular dataset.",
+}
+@misc{liu2023code,
+      title={Code Execution with Pre-trained Language Models}, 
+      author={Chenxiao Liu and Shuai Lu and Weizhu Chen and Daxin Jiang and Alexey Svyatkovskiy and Shengyu Fu and Neel Sundaresan and Nan Duan},
+      year={2023},
+      eprint={2305.05383},
+      archivePrefix={arXiv},
+      primaryClass={cs.PL}
+}
+@article{zhang2022opt,
+  title={Opt: Open pre-trained transformer language models},
+  author={Zhang, Susan and Roller, Stephen and Goyal, Naman and Artetxe, Mikel and Chen, Moya and Chen, Shuohui and Dewan, Christopher and Diab, Mona and Li, Xian and Lin, Xi Victoria and others},
+  journal={arXiv preprint arXiv:2205.01068},
+  year={2022}
+}

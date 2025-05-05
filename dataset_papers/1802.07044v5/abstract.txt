@@ -1,0 +1,14 @@
+Solomonoff's general theory of inference and the Minimum Description Length
+principle formalize Occam's razor, and hold that a good model of data is a
+model that is good at losslessly compressing the data, including the cost of
+describing the model itself. Deep neural networks might seem to go against this
+principle given the large number of parameters to be encoded.
+  We demonstrate experimentally the ability of deep neural networks to compress
+the training data even when accounting for parameter encoding. The compression
+viewpoint originally motivated the use of variational methods in neural
+networks. Unexpectedly, we found that these variational methods provide
+surprisingly poor compression bounds, despite being explicitly built to
+minimize such bounds. This might explain the relatively poor practical
+performance of variational methods in deep learning. On the other hand, simple
+incremental encoding methods yield excellent compression values on deep
+networks, vindicating Solomonoff's approach.

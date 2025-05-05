@@ -1,0 +1,352 @@
+% 1. Introduction
+
+% 
+@article{Rustichini99general,
+title = "Minimizing Regret: The General Case",
+keywords = "Approachability, Differential information, Minimize regret",
+author = "Aldo Rustichini",
+year = "1999",
+volume = "29",
+pages = "224--243",
+journal = "Games and Economic Behavior",
+number = "1",
+}
+
+%%%%%%%%%%%%%%%%%%%
+% application
+%%%%%%%%%%%%%%%%%%%
+
+% mutli-armed bandit
+@article{LaiRobbins85,
+author = {Lai, T.~L. and Robbins, Herbert},
+title = {Asymptotically Efficient Adaptive Allocation Rules},
+year = {1985},
+issue_date = {March 1985},
+publisher = {Academic Press, Inc.},
+volume = {6},
+number = {1},
+journal = {Advances in Applied Mathematics},
+pages = {4--22},
+numpages = {19}
+}
+
+% online learning with full feedback
+@inproceedings{Zinkevich03linearfull,
+author = {Zinkevich, Martin},
+title = {Online Convex Programming and Generalized Infinitesimal Gradient Ascent},
+year = {2003},
+publisher = {AAAI Press},
+booktitle = {the Twentieth International Conference on Machine Learning},
+pages = {928-935},
+}
+
+% online learning with bandit feedback
+@inproceedings{Dani08linearbandit,
+author    = {Varsha Dani and
+Thomas P. Hayes and
+Sham M. Kakade},
+title     = {Stochastic Linear Optimization under Bandit Feedback},
+booktitle = {21st Annual Conference on Learning Theory},
+pages = {355-366},
+year      = {2008}
+}
+
+% dynamic pricing
+@inproceedings{Kleinberg03dp,
+author = {Kleinberg, Robert and Leighton, Tom},
+title = {The Value of Knowing a Demand Curve: Bounds on Regret for Online Posted-Price Auctions},
+year = {2003},
+booktitle = {the 44th Annual IEEE Symposium on Foundations of Computer Science},
+pages = {594-605},
+numpages = {1},
+}
+
+% label efficient prediction
+@article{CesaBianchi04lep,
+author    = {Nicol{\`{o}} Cesa{-}Bianchi and
+G{\'{a}}bor Lugosi and
+Gilles Stoltz},
+title = {Minimizing Regret with Label Efficient Prediction},
+year = {2005},
+volume = {51},
+number = {6},
+journal = {IEEE Transactions on Information Theory},
+pages = {2152-2162}
+}
+
+%%%%%%%%%%%%%%%%%%%
+% related work
+%%%%%%%%%%%%%%%%%%%
+
+% O(T^3/4)
+@inproceedings{Piccolboni01FeedExp3,
+title={Discrete Prediction Games with Arbitrary Feedback and Loss},
+author={Antonio Piccolboni and Christian Schindelhauer},
+booktitle={COLT/EuroCOLT},
+year={2001},
+pages = {208--223}
+}
+
+% O(T^2/3)
+@article{CesaBianchi06regret,
+author    = {Nicol{\`{o}} Cesa{-}Bianchi and
+G{\'{a}}bor Lugosi and
+Gilles Stoltz},
+title     = {Regret Minimization Under Partial Monitoring},
+journal   = {Mathematics of Operations Research},
+volume    = {31},
+number    = {3},
+pages     = {562--580},
+year      = {2006}
+}
+
+% classification into four difficulties
+@inproceedings{Bartok11minimax,
+title = 	 {Minimax Regret of Finite Partial-Monitoring Games in Stochastic Environments},
+author = 	 {Gábor Bartók and Dávid Pál and Csaba Szepesvári},
+booktitle = 	{the 24th Annual Conference on Learning Theory},
+pages = 	 {133--154},
+year = 	 {2011},
+volume = 	 {19},
+}
+
+@inproceedings{Bartok12CBP,
+author    = {G{\'{a}}bor Bart{\'{o}}k and
+Navid Zolghadr and
+Csaba Szepesv{\'{a}}ri},
+title     = {An adaptive algorithm for finite stochastic partial monitoring},
+booktitle = {the 29th International Conference on Machine Learning},
+pages = {1--20},
+year      = {2012},
+}
+
+@inproceedings{Vanchinathan14BPM,
+title = {Efficient Partial Monitoring with Prior Information},
+author = {Vanchinathan, Hastagiri P and Bart\'{o}k, G\'{a}bor and Krause, Andreas},
+booktitle = {Advances in Neural Information Processing Systems 27},
+pages = {1691--1699},
+year = {2014},
+}
+
+@inproceedings{Komiyama15PMDEMD,
+title = {Regret Lower Bound and Optimal Algorithm in Finite Stochastic Partial Monitoring},
+author = {Komiyama, Junpei and Honda, Junya and Nakagawa, Hiroshi},
+booktitle = {Advances in Neural Information Processing Systems 28},
+pages = {1792--1800},
+year = {2015},
+}
+
+% Thompson sampling
+@article{Thompson1933likelihood,
+author = {Thompson, William R},
+title = {On the Likelihood that One Unknown Probability Exceeds Another in View of the Evidence of Two Samples},
+journal = {Biometrika},
+volume = {25},
+number = {3-4},
+pages = {285-294},
+year = {1933},
+month = {12}
+}
+
+% (remark: high probability regret bound)
+@inproceedings{Agrawal13payoff,
+title = 	 {{T}hompson Sampling for Contextual Bandits with Linear Payoffs},
+author = 	 {Shipra Agrawal and Navin Goyal},
+booktitle = 	 {the 30th International Conference on Machine Learning},
+pages = 	 {127--135},
+year = 	 {2013},
+}
+
+% TS empirical
+@inproceedings{Chapelle11empirical,
+title = {An Empirical Evaluation of {T}hompson Sampling},
+author = {Olivier Chapelle and Li, Lihong},
+booktitle = {Advances in Neural Information Processing Systems 24},
+pages = {2249--2257},
+year = {2011},
+}
+
+% TS theoretical
+@inproceedings{Kaufmann12finitetime,
+author="Kaufmann, Emilie
+and Korda, Nathaniel
+and Munos, R{\'e}mi",
+title="Thompson Sampling: An Asymptotically Optimal Finite-Time Analysis",
+booktitle="Algorithmic Learning Theory",
+year="2012",
+pages="199--213",
+}
+
+
+% TS theoretical & for expected regret
+@inproceedings{Agrawal13further,
+title = 	 {Further Optimal Regret Bounds for {T}hompson Sampling},
+author = 	 {Shipra Agrawal and Navin Goyal},
+booktitle = 	 {the Sixteenth International Conference on Artificial Intelligence and Statistics},
+pages = 	 {99--107},
+year = 	 {2013},
+volume = 	 {31},
+}
+
+@inproceedings{Honda14prior,
+title = 	 {Optimality of {T}hompson Sampling for {G}aussian Bandits Depends on Priors},
+author = 	 {Junya Honda and Akimichi Takemura},
+booktitle = 	 {the Seventeenth International Conference on Artificial Intelligence and Statistics},
+pages = 	 {375--383},
+year = 	 {2014},
+volume = 	 {33},
+}
+
+% concurrent work
+@article{Kirschner20ids,
+title={Information directed sampling for linear partial monitoring},
+author={Kirschner, Johannes and Lattimore, Tor and Krause, Andreas},
+journal={arXiv preprint arXiv:2002.11182},
+year={2020}
+}
+
+% types of regret bounds (expected regret bound)
+@inproceedings{Agrawal12analysis,
+title = 	 {Analysis of {T}hompson Sampling for the Multi-armed Bandit Problem},
+author = 	 {Shipra Agrawal and Navin Goyal},
+booktitle = 	 {the 25th Annual Conference on Learning Theory},
+pages = 	 {39.1--39.26},
+year = 	 {2012},
+volume = 	 {23},
+}
+
+% Sec 3. proposed method
+% general technique approximation of posterior distribution
+
+@article{Russo18tutorial,
+author = {Russo, Daniel J. and Van Roy, Benjamin and Kazerouni, Abbas and Osband, Ian and Wen, Zheng},
+title = {A Tutorial on {T}hompson Sampling},
+year = {2018},
+volume = {11},
+number = {1},
+journal = {Foundations and Trends in Machine Learning},
+pages = {1--96},
+}
+
+% recent work to approximate
+@inproceedings{Lu17ensamble,
+title = {Ensemble Sampling},
+author = {Lu, Xiuyuan and Van Roy, Benjamin},
+booktitle = {Advances in Neural Information Processing Systems 30},
+pages = {3258--3266},
+year = {2017},
+}
+
+@inproceedings{Phan19inference,
+title = {{T}hompson Sampling and Approximate Inference},
+author = {Phan, My and Abbasi Yadkori, Yasin and Domke, Justin},
+booktitle = {Advances in Neural Information Processing Systems 32},
+pages = {8804--8813},
+year = {2019},
+}
+
+% rejection sampling
+@inbook{Casella04acceptreject,
+author = "Casella, George and Robert, Christian P. and Wells, Martin T.",
+booktitle = "A Festschrift for Herman Rubin",
+pages = "342--347",
+publisher = "Institute of Mathematical Statistics",
+series = "Lecture Notes--Monograph Series",
+title = "Generalized accept-reject sampling schemes",
+volume = "45",
+year = "2004"
+}
+
+% sampling from Gaussian truncated on a sm
+@inproceedings{Altmann14simplex,
+author={Yoann {Altmann} and Steve {McLaughlin} and Nicolas {Dobigeon}},
+booktitle={2014 IEEE Workshop on Statistical Signal Processing (SSP)},
+title={Sampling from a multivariate Gaussian distribution truncated on a simplex: A review},
+year={2014},
+pages={113-116},
+}
+
+% Sec 5. theoretical analysis
+% linear partial monitoring
+@inproceedings{Zimmert19mirror,
+title = {Connections Between Mirror Descent, Thompson Sampling and the Information Ratio},
+author = {Zimmert, Julian and Lattimore, Tor},
+booktitle = {Advances in Neural Information Processing Systems 32},
+pages = {11973--11982},
+year = {2019},
+}
+
+% LIL
+@inproceedings{Jamieson14lil,
+  title = 	 {lil' UCB : An Optimal Exploration Algorithm for Multi-Armed Bandits},
+  author = 	 {Kevin Jamieson and Matthew Malloy and Robert Nowak and Sébastien Bubeck},
+  booktitle = 	 {The 27th Conference on Learning Theory},
+  pages = 	 {423--439},
+  year = 	 {2014},
+}
+
+
+% Sec 5. experiments
+% dp-easy
+@article{Blum04auctions,
+author = "Avrim Blum and Vijay Kumar and Atri Rudra and Felix Wu",
+title = "Online learning in online auctions",
+journal = "Theoretical Computer Science",
+volume = "324",
+number = "2",
+pages = {137--146},
+year = "2004",
+}
+
+% ------------
+@inproceedings{Bartok10toward,
+author="Bart{\'o}k, G{\'a}bor
+and P{\'a}l, D{\'a}vid
+and Szepesv{\'a}ri, Csaba",
+title="Toward a Classification of Finite Partial-Monitoring Games",
+booktitle="Algorithmic Learning Theory",
+year="2010",
+pages="224--238"
+}
+
+
+% theory
+@inproceedings{Abbasi11improved,
+title = {Improved Algorithms for Linear Stochastic Bandits},
+author = {Yasin Abbasi-{Y}adkori and P\'{a}l, D\'{a}vid and Csaba Szepesv\'{a}ri},
+booktitle = {Advances in Neural Information Processing Systems 24},
+pages = {2312--2320},
+year = {2011},
+}
+
+
+% added after review
+@inproceedings{Korda13onedim,
+title = {Thompson Sampling for 1-Dimensional Exponential Family Bandits},
+author = {Korda, Nathaniel and Kaufmann, Emilie and Munos, Remi},
+booktitle = {Advances in Neural Information Processing Systems 26},
+pages = {1448--1456},
+year = {2013},
+}
+
+@inproceedings{Lattimore19information,
+  title = 	 {An Information-Theoretic Approach to Minimax Regret in Partial Monitoring},
+  author =       {Lattimore, Tor and Szepesv{\'a}ri, Csaba},
+  booktitle = 	{the 32nd Annual Conference on Learning Theory},
+  pages = 	 {2111--2139},
+  year = 	 {2019},
+  volume = 	 {99},
+}
+
+
+% not used
+% theoretical analysis
+@article{Binette2019,
+author={O. {Binette}},
+journal={IEEE Transactions on Information Theory},
+title={A Note on Reverse Pinsker Inequalities},
+year={2019},
+volume={65},
+number={7},
+pages={4094-4096}
+}

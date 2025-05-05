@@ -1,0 +1,16 @@
+We present deep learning methods for the design of arrays and single
+instances of small antennas. Each design instance is conditioned on a target
+radiation pattern and is required to conform to specific spatial dimensions and
+to include, as part of its metallic structure, a set of predetermined
+locations. The solution, in the case of a single antenna, is based on a
+composite neural network that combines a simulation network, a hypernetwork,
+and a refinement network. In the design of the antenna array, we add an
+additional design level and employ a hypernetwork within a hypernetwork. The
+learning objective is based on measuring the similarity of the obtained
+radiation pattern to the desired one. Our experiments demonstrate that our
+approach is able to design novel antennas and antenna arrays that are compliant
+with the design requirements, considerably better than the baseline methods. We
+compare the solutions obtained by our method to existing designs and
+demonstrate a high level of overlap. When designing the antenna array of a
+cellular phone, the obtained solution displays improved properties over the
+existing one.

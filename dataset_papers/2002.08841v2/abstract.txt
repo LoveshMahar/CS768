@@ -1,0 +1,19 @@
+We study the problem of learning a linear model to set the reserve price in
+an auction, given contextual information, in order to maximize expected revenue
+from the seller side. First, we show that it is not possible to solve this
+problem in polynomial time unless the \emph{Exponential Time Hypothesis} fails.
+Second, we present a strong mixed-integer programming (MIP) formulation for
+this problem, which is capable of exactly modeling the nonconvex and
+discontinuous expected reward function. Moreover, we show that this MIP
+formulation is ideal (i.e. the strongest possible formulation) for the revenue
+function of a single impression. Since it can be computationally expensive to
+exactly solve the MIP formulation in practice, we also study the performance of
+its linear programming (LP) relaxation. Though it may work well in practice, we
+show that, unfortunately, in the worst case the optimal objective of the LP
+relaxation can be O(number of samples) times larger than the optimal objective
+of the true problem. Finally, we present computational results, showcasing that
+the MIP formulation, along with its LP relaxation, are able to achieve superior
+in- and out-of-sample performance, as compared to state-of-the-art algorithms
+on both real and synthetic datasets. More broadly, we believe this work offers
+an indication of the strength of optimization methodologies like MIP to exactly
+model intrinsic discontinuities in machine learning problems.

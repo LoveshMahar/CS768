@@ -1,0 +1,14 @@
+We present a data-driven optimal control framework that can be viewed as a
+generalization of the path integral (PI) control approach. We find iterative
+feedback control laws without parameterization based on probabilistic
+representation of learned dynamics model. The proposed algorithm operates in a
+forward-backward manner which differentiate from other PI-related methods that
+perform forward sampling to find optimal controls. Our method uses
+significantly less samples to find optimal controls compared to other
+approaches within the PI control family that relies on extensive sampling from
+given dynamics models or trials on physical systems in model-free fashions. In
+addition, the learned controllers can be generalized to new tasks without
+re-sampling based on the compositionality theory for the linearly-solvable
+optimal control framework. We provide experimental results on three different
+systems and comparisons with state-of-the-art model-based methods to
+demonstrate the efficiency and generalizability of the proposed framework.

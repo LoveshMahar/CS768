@@ -1,0 +1,1148 @@
+%Introduction [56,115,117,125,127]
+@misc{fortmann-roe_2012, title={{Understanding the Bias-Variance Tradeoff}}, url={http://scott.fortmann-roe.com/docs/BiasVariance.html}, author={Fortmann-Roe, Scott}, year={2012}, month={Jun}} 
+
+@article{Belkin2019ReconcilingMM,
+  title={Reconciling {M}odern {M}achine-{L}earning {P}ractice and the {C}lassical {B}ias–{V}ariance {T}rade-off},
+  author={Mikhail Belkin and Daniel J. Hsu and Siyuan Ma and Soumik Mandal},
+  journal={Proceedings of the National Academy of Sciences},
+  year={2019}
+}
+
+@article{xiao2022precise,
+  title={Precise learning curves and higher-order scaling limits for dot product kernel regression},
+  author={Xiao, Lechao and Pennington, Jeffrey},
+  journal={arXiv preprint arXiv:2205.14846},
+  year={2022}
+}
+
+@inproceedings{kini2020analytic,
+  title={Analytic study of double descent in binary classification: The impact of loss},
+  author={Kini, Ganesh Ramachandra and Thrampoulidis, Christos},
+  booktitle={2020 IEEE International Symposium on Information Theory (ISIT)},
+  pages={2527--2532},
+  year={2020},
+  organization={IEEE}
+}
+
+@article{deng2022model,
+  title={A model of double descent for high-dimensional binary linear classification},
+  author={Deng, Zeyu and Kammoun, Abla and Thrampoulidis, Christos},
+  journal={Information and Inference: A Journal of the IMA},
+  volume={11},
+  number={2},
+  pages={435--495},
+  year={2022},
+  publisher={Oxford University Press}
+}
+
+@article{sur2019modern,
+  title={A modern maximum-likelihood theory for high-dimensional logistic regression},
+  author={Sur, Pragya and Cand{\`e}s, Emmanuel J},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={116},
+  number={29},
+  pages={14516--14525},
+  year={2019},
+  publisher={National Acad Sciences}
+}
+
+@inproceedings{mignacco2020role,
+  title={The role of regularization in classification of high-dimensional noisy gaussian mixture},
+  author={Mignacco, Francesca and Krzakala, Florent and Lu, Yue and Urbani, Pierfrancesco and Zdeborova, Lenka},
+  booktitle={International conference on machine learning},
+  pages={6874--6883},
+  year={2020},
+  organization={PMLR}
+}
+
+@inproceedings{
+curth2023a,
+title={A U-turn on Double Descent: Rethinking Parameter Counting in Statistical Learning},
+author={Alicia Curth and Alan Jeffares and Mihaela van der Schaar},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=O0Lz8XZT2b}
+}
+
+
+
+%Prior Work
+
+%%Noise - Feature Learning [50,61,116,123]
+@InProceedings{simclr,
+  title = 	 {A {S}imple {F}ramework for {C}ontrastive {L}earning of {V}isual {R}epresentations},
+  author =       {Chen, Ting and Kornblith, Simon and Norouzi, Mohammad and Hinton, Geoffrey},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  year = 	 {2020}
+}
+
+@inproceedings{bert,
+  title={{BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding}},
+  author={Jacob Devlin and Ming-Wei Chang and Kenton Lee and Kristina Toutanova},
+  booktitle={Annual Conference of the North American Chapter of the Association for Computational Linguistics},
+  year={2019}
+}
+
+%%Noise - Generative Modelling [102,104,105]
+
+%%Noise - Robust[113]
+@article{Akhtar2018ThreatOA,
+  title={{Threat of Adversarial Attacks on Deep Learning in Computer Vision: A Survey}},
+  author={Naveed Akhtar and Ajmal Mian},
+  journal={IEEE Access},
+  year={2018}
+}
+
+@book{ben2009robust,
+  title={Robust {O}ptimization},
+  author={Ben-Tal, Aharon. and Ghaoui, Laurent E. and Nemirovski, Arkadi},
+  series={Princeton Series in Applied Mathematics},
+  year={2009}
+}
+
+@article{Bertsimas2011TheoryAA,
+  title={Theory and {A}pplications of {R}obust {O}ptimization},
+  author={Dimitris Bertsimas and David Brown and Constatine Caramanis},
+  year={2011},
+  journal={SIAM Review}
+}
+
+@InProceedings{pmlr-v139-dhifallah21a,
+  title = 	 {On the Inherent Regularization Effects of Noise Injection During Training},
+  author =       {Dhifallah, Oussama and Lu, Yue},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {2665--2675},
+  year = 	 {2021},
+  editor = 	 {Meila, Marina and Zhang, Tong},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {18--24 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v139/dhifallah21a/dhifallah21a.pdf},
+  url = 	 {https://proceedings.mlr.press/v139/dhifallah21a.html},
+  abstract = 	 {Randomly perturbing networks during the training process is a commonly used approach to improving generalization performance. In this paper, we present a theoretical study of one particular way of random perturbation, which corresponds to injecting artificial noise to the training data. We provide a precise asymptotic characterization of the training and generalization errors of such randomly perturbed learning problems on a random feature model. Our analysis shows that Gaussian noise injection in the training process is equivalent to introducing a weighted ridge regularization, when the number of noise injections tends to infinity. The explicit form of the regularization is also given. Numerical results corroborate our asymptotic predictions, showing that they are accurate even in moderate problem dimensions. Our theoretical predictions are based on a new correlated Gaussian equivalence conjecture that generalizes recent results in the study of random feature models.}
+}
+
+
+
+@article{Chakraborty2018AdversarialAA,
+author = {Chakraborty, Anirban and Alam, Manaar and Dey, Vishal and Chattopadhyay, Anupam and Mukhopadhyay, Debdeep},
+title = {A {S}urvey on {A}dversarial {A}ttacks and {D}efences},
+journal = {CAAI Transactions on Intelligence Technology},
+year={2018}
+}
+
+@article{GORISSEN2015124,
+title = "A {P}ractical {G}uide to {R}obust {O}ptimization",
+year = "2015",
+author = "Bram L. Gorissen and İhsan Yanıkoğlu and Dick {den Hertog}",
+}
+
+ @article{Poole2014AnalyzingNI,
+  title={{Analyzing Noise in Autoencoders and Deep Networks}},
+  author={Ben Poole and Jascha Narain Sohl-Dickstein and Surya Ganguli},
+  journal={ArXiv},
+  year={2014}
+}
+
+%Double Descent
+@inproceedings{
+singh2022phenomenology,
+title={{Phenomenology of Double Descent in Finite-Width Neural Networks}},
+author={Sidak Pal Singh and Aurelien Lucchi and Thomas Hofmann and Bernhard Sch{\"o}lkopf},
+booktitle={International Conference on Learning Representations},
+year={2022}
+}
+
+@inproceedings{
+Nakkiran2020Deep,
+title={{Deep Double Descent: Where Bigger Models and More Data Hurt}},
+author={Preetum Nakkiran and Gal Kaplun and Yamini Bansal and Tristan Yang and Boaz Barak and Ilya Sutskever},
+booktitle={International Conference on Learning Representations},
+year={2020}
+}
+
+% Has multiple descent of an upper bound in underparameterized regime
+@inproceedings{Liang2020OnTM,
+  title={{On the Multiple Descent of Minimum-Norm Interpolants and Restricted Lower Isometry of Kernels}},
+  author={Tengyuan Liang and Alexander Rakhlin and Xiyu Zhai},
+  booktitle={Conference on Learning Theory},
+  year={2020}
+}
+
+
+%%Linear Regression Generalization[48,53,83,85]
+
+% Training dynamics for linear models and generalization risk
+@article{ADVANI2020428,
+title = {{High-dimensional Dynamics of Generalization Error in Neural Networks}},
+author = {Madhu S. Advani and Andrew M. Saxe and Haim Sompolinsky},
+journal = {Neural Networks},
+year = {2020}
+}
+
+% Linear Regression, different covariances. 
+@InProceedings{pmlr-v139-mel21a,
+  title = 	 {A {T}heory of {H}igh {D}imensional {R}egression with {A}rbitrary {C}orrelations {B}etween {I}nput {F}eatures and {T}arget {F}unctions: {S}ample {C}omplexity, {M}ultiple {D}escent {C}urves and a {H}ierarchy of {P}hase {T}ransitions},
+  author =       {Mel, Gabriel and Ganguli, Surya},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  year = {2021}
+}
+
+% Linear regression output noise
+@article{Muthukumar2019HarmlessIO,
+  title={Harmless {I}nterpolation of {N}oisy {D}ata in {R}egression},
+  author={Vidya Muthukumar and Kailas Vodrahalli and Anant Sahai},
+  journal={2019 IEEE International Symposium on Information Theory (ISIT)},
+  year={2019},
+}
+
+% Linear Regression
+@article{Bartlett2020BenignOI,
+  title={Benign {O}verfitting in {L}inear {R}egression},
+  author={Peter Bartlett and Philip M. Long and Gábor Lugosi and Alexander Tsigler},
+  journal={Proceedings of the National Academy of Sciences},
+  year={2020}
+}
+
+% Linear Regression
+@article{Belkin2020TwoMO,
+  title={Two {M}odels of {D}ouble {D}escent for {W}eak {F}eatures},
+  author={Mikhail Belkin and Daniel J. Hsu and Ji Xu},
+  journal={SIAM Journal on Mathematics of Data Science },
+  year={2020}
+}
+
+% Linear Regression
+@article{Dobriban2015HighDimensionalAO,
+  title={High-dimensional asymptotics of prediction: Ridge regression and classification},
+  author={Dobriban, Edgar and Wager, Stefan},
+  journal={The Annals of Statistics},
+  year={2018}
+}
+
+% Linear Regression
+@article{Hastie2019SurprisesIH,
+author = {Trevor Hastie and Andrea Montanari and Saharon Rosset and Ryan J. Tibshirani},
+title = {{Surprises in {H}igh-{D}imensional {R}idgeless {L}east {S}quares {I}nterpolation}},
+journal = {The Annals of Statistics},
+year = {2022}
+}
+
+% Linear regression but the target is Gaussian mixtures
+@inproceedings{
+loureiro2021learning,
+title={{Learning Gaussian Mixtures with Generalized Linear Models: Precise Asymptotics in High-dimensions}},
+author={Bruno Loureiro and Gabriele Sicuro and Cedric Gerbelot and Alessandro Pacco and Florent Krzakala and Lenka Zdeborova},
+booktitle={Advances in Neural Information Processing Systems},
+year={2021}
+}
+
+%PCR
+@article{teresa2022,
+author = {Huang, Ningyuan and Hogg, David W. and Villar, Soledad},
+title = {Dimensionality Reduction, Regularization, and Generalization in Overparameterized Regressions},
+journal = {SIAM Journal on Mathematics of Data Science},
+year = {2022}
+}
+
+@article{xu2019number,
+  title={On the number of variables to use in principal component regression},
+  author={Xu, Ji and Hsu, Daniel J},
+  journal={Advances in neural information processing systems},
+  year={2019}
+}
+
+@inproceedings{Derezinski2020ExactEF,
+ author = {Derezinski, Michal and Liang, Feynman T and Mahoney, Michael W},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Exact {E}xpressions for {D}ouble {D}escent and {I}mplicit {R}egularization {V}ia {S}urrogate {R}andom {D}esign},
+ year = {2020}
+}
+
+%%Kernel Regression Generalization[55,80,81,82]
+@article{MEI20223,
+title = {Generalization {E}rror of {R}andom {F}eature and {K}ernel {M}ethods: {H}ypercontractivity and {K}ernel {M}atrix {C}oncentration},
+journal = {Applied and Computational Harmonic Analysis},
+year = {2022},
+author = {Song Mei and Theodor Misiakiewicz and Andrea Montanari},
+}
+
+@article{Mei2021TheGE,
+  title={{The Generalization Error of Random Features Regression: Precise Asymptotics and the Double Descent Curve}},
+  author={Song Mei and Andrea Montanari},
+  journal={Communications on Pure and Applied Mathematics},
+  year={2021},
+  volume={75}
+}
+
+@article{Mei2018AMF,
+  title={A {M}ean {F}ield {V}iew of the {L}andscape of {T}wo-layer {N}eural {N}etworks},
+  author={Song Mei and Andrea Montanari and Phan-Minh Nguyen},
+  journal={Proceedings of the National Academy of Sciences of the United States of America},
+  year={2018}
+}
+
+@article{Tripuraneni2021CovariateSI,
+  title={{Covariate Shift in High-Dimensional Random Feature Regression}},
+  author={Nilesh Tripuraneni and Ben Adlam and Jeffrey Pennington},
+  journal={ArXiv},
+  year={2021}
+}
+
+@InProceedings{pmlr-v125-woodworth20a,
+  title = 	 {{Kernel and Rich Regimes in Overparametrized Models}},
+  author =       {Woodworth, Blake and Gunasekar, Suriya and Lee, Jason D. and Moroshko, Edward and Savarese, Pedro and Golan, Itay and Soudry, Daniel and Srebro, Nathan},
+  booktitle = 	 {Proceedings of Thirty Third Conference on Learning Theory},
+  year = 	 {2020}
+}
+
+@article{Geiger2019ScalingDO,
+  title={Scaling {D}escription of {G}eneralization with {N}umber of {P}arameters in {D}eep {L}earning},
+  author={Mario Geiger and Arthur Jacot and Stefano Spigler and Franck Gabriel and Levent Sagun and St{\'e}phane d'Ascoli and Giulio Biroli and Cl{\'e}ment Hongler and Matthieu Wyart},
+  journal={Journal of Statistical Mechanics: Theory and Experiment},
+  year={2020},
+}
+
+@article{ledoit2011eigenvectors,
+  title={Eigenvectors of some large sample covariance matrix ensembles},
+  author={Ledoit, Olivier and P{\'e}ch{\'e}, Sandrine},
+  journal={Probability Theory and Related Fields},
+  volume={151},
+  number={1},
+  pages={233--264},
+  year={2011},
+  publisher={Springer}
+}
+
+@incollection{NEURIPS2019_9015,
+title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+booktitle = {Advances in Neural Information Processing Systems 32},
+editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+pages = {8024--8035},
+year = {2019},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf}
+}
+
+@article{benigni2021eigenvalue,
+  title={Eigenvalue distribution of some nonlinear models of random matrices},
+  author={Benigni, Lucas and P{\'e}ch{\'e}, Sandrine},
+  journal={Electronic Journal of Probability},
+  volume={26},
+  pages={1--37},
+  year={2021},
+  publisher={The Institute of Mathematical Statistics and the Bernoulli Society}
+}
+
+
+@InProceedings{pmlr-v238-wang24k,
+  title = 	 { Near-Interpolators: Rapid Norm Growth and the Trade-Off between Interpolation and Generalization },
+  author =       {Wang, Yutong and Sonthalia, Rishi and Hu, Wei},
+  booktitle = 	 {Proceedings of The 27th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {4483--4491},
+  year = 	 {2024},
+  editor = 	 {Dasgupta, Sanjoy and Mandt, Stephan and Li, Yingzhen},
+  volume = 	 {238},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {02--04 May},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v238/wang24k/wang24k.pdf},
+  url = 	 {https://proceedings.mlr.press/v238/wang24k.html},
+  abstract = 	 { We study the generalization capability of nearly-interpolating linear regressors: ${\beta}$’s whose training error $\tau$ is positive but small, i.e., below the noise floor. Under a random matrix theoretic assumption on the data distribution and an eigendecay assumption on the data covariance matrix ${\Sigma}$, we demonstrate that any near-interpolator exhibits rapid norm growth: for $\tau$ fixed, ${\beta}$ has squared $\ell_2$-norm $\mathbb{E}[\|{{\beta}}\|_{2}^{2}] = \Omega(n^{\alpha})$ where $n$ is the number of samples and $\alpha &gt;1$ is the exponent of the eigendecay, i.e., $\lambda_i({\Sigma}) \sim i^{-\alpha}$. This implies that existing data-independent norm-based bounds are necessarily loose. On the other hand, in the same regime we precisely characterize the asymptotic trade-off between interpolation and generalization. Our characterization reveals that larger norm scaling exponents $\alpha$ correspond to worse trade-offs between interpolation and generalization. We verify empirically that a similar phenomenon holds for nearly-interpolating shallow neural networks. }
+}
+
+
+% Tests on real data
+@inproceedings{Loureiro2021LearningCO,
+  title={Learning {C}urves of {G}eneric {F}eatures {M}aps for {R}ealistic {D}atasets with a {T}eacher-{S}tudent {M}odel},
+  author={Bruno Loureiro and C'edric Gerbelot and Hugo Cui and Sebastian Goldt and Florent Krzakala and Marc M'ezard and Lenka Zdeborov'a},
+  booktitle={NeurIPS},
+  year={2021}
+}
+
+@InProceedings{pmlr-v119-gerace20a,
+  title = 	 {Generalisation {E}rror in {L}earning with {R}andom {F}eatures and the {H}idden {M}anifold {M}odel},
+  author =       {Gerace, Federica and Loureiro, Bruno and Krzakala, Florent and Mezard, Marc and Zdeborova, Lenka},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  year = 	 {2020},
+}
+
+@inproceedings{NEURIPS2019_c133fb1b,
+ author = {Ghorbani, Behrooz and Mei, Song and Misiakiewicz, Theodor and Montanari, Andrea},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Limitations of {L}azy {T}raining of {T}wo-layers {N}eural {N}etwork},
+ year = {2019}
+}
+
+@inproceedings{NEURIPS2020_a9df2255,
+ author = {Ghorbani, Behrooz and Mei, Song and Misiakiewicz, Theodor and Montanari, Andrea},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {{When Do Neural Networks Outperform Kernel Methods?}},
+ year = {2020}
+}
+
+@article{Ghorbani2019LinearizedTN,
+author = {Behrooz Ghorbani and Song Mei and Theodor Misiakiewicz and Andrea Montanari},
+title = {{Linearized {T}wo-layers {N}eural {N}etworks in {H}igh {D}imension}},
+journal = {The Annals of Statistics},
+year = {2021},
+}
+
+%%Multiple Descent[72]
+@inproceedings{Adlam2020TheNT,
+  title={{The Neural Tangent Kernel in High Dimensions: Triple Descent and a Multi-Scale Theory of Generalization}},
+  author={Ben Adlam and Jeffrey Pennington},
+  booktitle={International Conference on Machine Learning},
+  year={2020}
+}
+
+@inproceedings{
+nakkiran2021optimal,
+title={{Optimal Regularization can Mitigate Double Descent}},
+author={Preetum Nakkiran and Prayaag Venkat and Sham M. Kakade and Tengyu Ma},
+booktitle={International Conference on Learning Representations},
+year={2020},
+}
+
+@inproceedings{dAscoli2020TripleDA,
+ author = {d\textquotesingle Ascoli, St\'{e}phane and Sagun, Levent and Biroli, Giulio},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Triple {D}escent and the {T}wo {K}inds of {O}verfitting: {W}here and {W}hy {D}o {T}hey {A}ppear?},
+ year = {2020}
+}
+
+%%%%% Implicit Bias
+
+@inproceedings{Ali2020TheIR,
+  title={{The Implicit Regularization of Stochastic Gradient Flow for Least Squares}},
+  author={Alnur Ali and Edgar Dobriban and Ryan J. Tibshirani},
+  booktitle={International Conference on Machine Learning},
+  year={2020}
+}
+
+@InProceedings{pmlr-v119-jacot20a,
+  title = 	 {{Implicit Regularization of Random Feature Models}},
+  author =       {Jacot, Arthur and Simsek, Berfin and Spadaro, Francesco and Hongler, Clement and Gabriel, Franck},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  year = 	 {2020},
+}
+
+@article{Soudry2018TheIB,
+  title={{The Implicit Bias of Gradient Descent on Separable Data}},
+  author={Daniel Soudry and Elad Hoffer and Suriya Gunasekar and Nathan Srebro},
+  journal={Journal of Machine Learning Research},
+  year={2018},
+  volume={19},
+}
+
+@InProceedings{pmlr-v178-shamir22a,
+  title = 	 {{The Implicit Bias of Benign Overfitting}},
+  author =       {Shamir, Ohad},
+  booktitle = 	 {Proceedings of Thirty Fifth Conference on Learning Theory},
+  year = 	 {2022},
+}
+@article{Neyshabur2017ImplicitRI,
+  title={{Implicit Regularization in Deep Learning}},
+  author={Behnam Neyshabur},
+  journal={ArXiv},
+  year={2017},
+  volume={abs/1709.01953}
+}
+
+@inproceedings{
+Lyu2020GradientDM,
+title={{Gradient Descent Maximizes the Margin of Homogeneous Neural Networks}},
+author={Kaifeng Lyu and Jian Li},
+booktitle={International Conference on Learning Representations},
+year={2020},
+}
+
+@InProceedings{pmlr-v99-ji19a,
+  title = 	 {The {I}mplicit {B}ias of {G}radient {D}escent on {N}onseparable {D}ata},
+  author =       {Ji, Ziwei and Telgarsky, Matus},
+  booktitle = 	 {Proceedings of the Thirty-Second Conference on Learning Theory},
+  year = 	 {2019},
+}
+
+@inproceedings{NIPS2017_10ce03a1,
+ author = {Neyshabur, Behnam and Bhojanapalli, Srinadh and Mcallester, David and Srebro, Nati},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {{Exploring Generalization in Deep Learning}},
+ year = {2017}
+}
+
+@article{Neyshabur2015InSO,
+  title={{In Search of the Real Inductive Bias: On the Role of Implicit Regularization in Deep Learning}},
+  author={Behnam Neyshabur and Ryota Tomioka and Nathan Srebro},
+  journal={CoRR},
+  year={2015},
+  volume={abs/1412.6614}
+}
+
+%%Transfer Learning[62,79,84,112,119,120]
+@inproceedings{NIPS2006_b1b0432c,
+ author = {Ben-David, Shai and Blitzer, John and Crammer, Koby and Pereira, Fernando},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {{Analysis of Representations for Domain Adaptation}},
+ year = {2006}
+}
+
+@article{10.1016/j.tcs.2013.09.027,
+author = {Cortes, Corinna and Mohri, Mehryar},
+title = {Domain {A}daptation and {S}ample {B}ias {C}orrection {T}heory and {A}lgorithm for {R}egression},
+year = {2014},
+journal = {Theoretical Computer Science},
+}
+
+%%Other[76,99,101,129]
+@inproceedings{Cohen2019CertifiedAR,
+  title={Certified {A}dversarial {R}obustness via {R}andomized {S}moothing},
+  author={Jeremy M. Cohen and Elan Rosenfeld and J. Zico Kolter},
+  booktitle={International Conference on Machine Learning},
+  year={2019}
+}
+
+
+%%SGD[57,58,66,77,97,110]
+@inproceedings{bowman2022implicit,
+title={Implicit {B}ias of {MSE} {G}radient {O}ptimization in {U}nderparameterized {N}eural {N}etworks},
+author={Benjamin Bowman and
+               Guido Mont{\'{u}}far}, 
+booktitle={International Conference on Learning Representations},
+year={2022},
+}
+
+@InProceedings{Chizat2020ImplicitBO,
+  title = 	 {Implicit {B}ias of {G}radient {D}escent for {W}ide {T}wo-{L}ayer {N}eural {N}etworks {T}rained with the {L}ogistic {L}oss},
+  author =       {Chizat, L\'ena\"ic  and Bach, Francis},
+  booktitle = 	 {Proceedings of Thirty Third Conference on Learning Theory},
+  year = 	 {2020},
+}
+
+@InProceedings{du2019gradient,
+  title = 	 {Gradient {D}escent {F}inds {G}lobal {M}inima of {D}eep {N}eural {N}etworks},
+  author =       {Du, Simon and Lee, Jason and Li, Haochuan and Wang, Liwei and Zhai, Xiyu},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  year = 	 {2019},
+}
+
+@inproceedings{du2018gradient,
+title={Gradient {D}escent {P}rovably {O}ptimizes {O}ver-parameterized {N}eural {N}etworks},
+author={Simon S. Du and Xiyu Zhai and Barnabas Poczos and Aarti Singh},
+booktitle={International Conference on Learning Representations},
+year={2019},
+}
+
+
+%%Regularizer Noise[51,91,100,107,111,124]
+@inproceedings{NEURIPS2020_c16a5320,
+ author = {Camuto, Alexander and Willetts, Matthew and Simsekli, Umut and Roberts, Stephen J and Holmes, Chris C},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {16603--16614},
+ title = {Explicit {R}egularisation in {G}aussian {N}oise {I}njections},
+ year = {2020}}
+
+@InProceedings{Cho2013BoltzmannMA,
+author="Cho, KyungHyun",
+title="Boltzmann Machines for Image Denoising",
+booktitle="{Artificial Neural Networks and Machine Learning}",
+year="2013",
+}
+
+@inproceedings{
+Soltanolkotabi2020Denoising,
+title={{Denoising and Regularization via Exploiting the Structural Bias of Convolutional Generators}},
+author={Reinhard Heckel and Mahdi Soltanolkotabi},
+booktitle={International Conference on Learning Representations},
+year={2020},
+}
+
+@inproceedings{
+Hu2020Simple,
+title={{Simple and Effective Regularization Methods for Training on Noisily Labeled Data with Generalization Guarantee}},
+author={Wei Hu and Zhiyuan Li and Dingli Yu},
+booktitle={International Conference on Learning Representations},
+year={2020},
+}
+
+
+%%Bayes Noise[67,68,78,87,121]
+
+%%Infinite Width NNGPs [65,90,98]
+@inproceedings{matthews2018gaussian,
+title={{Gaussian Process Behaviour in Wide Deep Neural Networks}},
+author={Alexander G. {de G. Matthews} and Jiri Hron and Mark Rowland and Richard E. Turner and Zoubin Ghahramani},
+booktitle={International Conference on Learning Representations},
+year={2018},
+}
+
+@inproceedings{garriga-alonso2018deep,
+title={Deep {C}onvolutional {N}etworks as {S}hallow {G}aussian {P}rocesses},
+author={Adrià Garriga-Alonso and Carl Edward Rasmussen and Laurence Aitchison},
+booktitle={International Conference on Learning Representations},
+year={2019},
+}
+
+%%NTK[49,52,54,59,64,73,74,109,114,126,130]
+@inproceedings{arora_exact_comp, 
+ author = {Arora, Sanjeev and Du, Simon S and Hu, Wei and Li, Zhiyuan and Salakhutdinov, Russ R and Wang, Ruosong},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {{On Exact Computation with an Infinitely Wide Neural Net}},
+ year = {2019}
+}
+
+@article{Hanin2020FiniteDA,
+  title={{Finite Depth and Width Corrections to the Neural Tangent Kernel}},
+  author={Boris Hanin and Mihai Nica},
+  journal={International Conference on Learning Representations},
+  year={2020},
+}
+
+@InProceedings{fine_grain_arora,
+  title = 	 {{Fine-Grained Analysis of Optimization and Generalization for Overparameterized Two-Layer Neural Networks}},
+  author =       {Arora, Sanjeev and Du, Simon and Hu, Wei and Li, Zhiyuan and Wang, Ruosong},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  year = 	 {2019},
+}
+
+@article{caponnetto2007optimal,
+  title={Optimal {R}ates for the {R}egularized {L}east-{S}quares {A}lgorithm},
+  author={Caponnetto, Andrea and De Vito, Ernesto},
+  journal={Foundations of Computational Mathematics},
+  year={2007}
+}
+
+@inproceedings{cui2021generalization,
+title={{Generalization Error Rates in Kernel Regression: The Crossover from the Noiseless to Noisy Regime}},
+author={Hugo Cui and Bruno Loureiro and Florent Krzakala and Lenka Zdeborov{\'a}},
+booktitle={Advances in Neural Information Processing Systems},
+year={2021},
+}
+
+%%Early Stopping
+@inproceedings{Ali2019ACV,
+  title={{A Continuous-Time View of Early Stopping for Least Squares Regression}},
+  author={Alnur Ali and J. Zico Kolter and Ryan J. Tibshirani},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  year={2019}
+}
+
+%Other 
+@article{10.1162/neco.1995.7.1.108,
+author = {Bishop, Chris M.},
+title = {Training with {N}oise is {E}quivalent to {T}ikhonov {R}egularization},
+year = {1995},
+journal = {Neural Computation},
+}
+
+@article{Gunasekar2018ImplicitRI,
+  title={{Implicit Regularization in Matrix Factorization}},
+  author={Suriya Gunasekar and Blake E. Woodworth and Srinadh Bhojanapalli and Behnam Neyshabur and Nathan Srebro},
+  journal={Information Theory and Applications Workshop},
+  year={2018},
+}
+
+@inproceedings{Hill2016LearningDR,
+  title={{Learning Distributed Representations of Sentences from Unlabelled Data}},
+  author={Felix Hill and Kyunghyun Cho and Anna Korhonen},
+  booktitle={Annual Conference of the North American Chapter of the Association for Computational Linguistics},
+  year={2016}
+}
+
+@article{Hinton2012ImprovingNN,
+  title={Improving {N}eural {N}etworks by {P}reventing {C}o-adaptation of {F}eature {D}etectors},
+  author={Geoffrey E. Hinton and Nitish Srivastava and A. Krizhevsky and Ilya Sutskever and R. Salakhutdinov},
+  journal={ArXiv},
+  year={2012},
+  volume={abs/1207.0580}
+}
+
+@inproceedings{James1992EstimationWQ,
+author="James, W.
+and Stein, Charles",
+title="Estimation with {Q}uadratic {L}oss",
+booktitle="{Breakthroughs in Statistics: Foundations and Basic Theory}",
+year="1992",
+}
+
+@inproceedings{
+Ji2019GradientDA,
+title={Gradient {D}escent {A}ligns the {L}ayers of {D}eep {L}inear {N}etworks},
+author={Ziwei Ji and Matus Telgarsky},
+booktitle={International Conference on Learning Representations},
+year={2019},
+}
+
+
+@inproceedings{
+jin2022learning,
+title={{Learning Curves for Gaussian Process Regression with Power-Law Priors and Targets}},
+author={Hui Jin and Pradeep Kr. Banerjee and Guido Mont\'ufar},
+booktitle={International Conference on Learning Representations},
+year={2022},
+}
+
+@article{10.5555/3455716.3455885,
+author = {Kobak, Dmitry and Lomond, Jonathan and Sanchez, Benoit},
+title = {{The Optimal Ridge Penalty for Real-World High-Dimensional Data Can Be Zero or Negative Due to the Implicit Ridge Regularization}},
+year = {2022},
+journal = {Journal of Machine Learning Research},
+}
+
+@article{Krizhevsky2012ImageNetCW,
+  title={ImageNet {C}lassification with {D}eep {C}onvolutional {N}eural {N}etworks},
+  author={Alex Krizhevsky and Ilya Sutskever and Geoffrey E. Hinton},
+  journal={Communications of the ACM},
+  year={2012},
+}
+
+@InProceedings{pmlr-v119-kumar20c,
+  title = 	 {{Understanding Self-Training for Gradual Domain Adaptation}},
+  author =       {Kumar, Ananya and Ma, Tengyu and Liang, Percy},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  year = 	 {2020},
+}
+
+@inproceedings{
+Lampinen2019AnAT,
+title={An {A}nalytic {T}heory of {G}eneralization {D}ynamics and {T}ransfer {L}earning in {D}eep {L}inear {N}etworks},
+author={Andrew K. Lampinen and Surya Ganguli},
+booktitle={International Conference on Learning Representations},
+year={2019},
+}
+
+@inproceedings{finite_vs_infinite,
+ author = {Lee, Jaehoon and Schoenholz, Samuel and Pennington, Jeffrey and Adlam, Ben and Xiao, Lechao and Novak, Roman and Sohl-Dickstein, Jascha},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {{Finite Versus Infinite Neural Networks: an Empirical Study}},
+ year = {2020}
+}
+
+@article{10.5555/3546258.3546283,
+author = {Lei, Yunwen and Hu, Ting and Tang, Ke},
+title = {{Generalization Performance of Multi-Pass Stochastic Gradient Descent with Convex Loss Functions}},
+year = {2022},
+journal = {Journal of Machine Learning Research},
+}
+
+@InProceedings{pmlr-v65-lelarge17a,
+  title = 	 {Fundamental {L}imits of {S}ymmetric {L}ow-{R}ank {M}atrix {E}stimation},
+  author = 	 {Lelarge, Marc and Miolane, Léo},
+  booktitle = 	 {Proceedings of the 2017 Conference on Learning Theory},
+  year = 	 {2017},
+}
+
+@article{Lesieur_2017,
+year = {2017},
+author = {Thibault Lesieur and Florent Krzakala and Lenka Zdeborová},
+title = {Constrained {L}ow-{R}ank {M}atrix {E}stimation: {P}hase {T}ransitions, {A}pproximate {M}essage {P}assing and {A}pplications},
+journal = {Journal of Statistical Mechanics: Theory and Experiment},
+}
+
+@inproceedings{Li2018MeasuringTI,
+title={{Measuring the Intrinsic Dimension of Objective Landscapes}},
+author={Chunyuan Li and Heerad Farkhoor and Rosanne Liu and Jason Yosinski},
+booktitle={International Conference on Learning Representations},
+year={2018},
+}
+
+@InProceedings{pmlr-v108-li20j,
+  title = 	 {{Gradient Descent with Early Stopping is Provably Robust to Label Noise for Overparameterized Neural Networks}},
+  author =       {Li, Mingchen and Soltanolkotabi, Mahdi and Oymak, Samet},
+  booktitle = 	 {Proceedings of the Twenty Third International Conference on Artificial Intelligence and Statistics},
+  year = 	 {2020},
+}
+
+ @inproceedings{NEURIPS2020_b7ae8fec,
+ author = {Liu, Chaoyue and Zhu, Libin and Belkin, Misha},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {On the {L}inearity of {L}arge {N}on-{L}inear {M}odels: {W}hen and {W}hy the {T}angent {K}ernel is {C}onstant},
+ year = {2020}
+}
+
+@inproceedings{
+liu2022transition,
+title={{Transition to Linearity of Wide Neural Networks is an Emerging Property of Assembling Weak Models}},
+author={Chaoyue Liu and Libin Zhu and Misha Belkin},
+booktitle={International Conference on Learning Representations},
+year={2022},
+}
+
+
+@article{Maillard_2022,
+year = {2022},
+author = {Antoine Maillard and Florent Krzakala and Marc Mézard and Lenka Zdeborová},
+title = {Perturbative {C}onstruction of {M}ean-{F}ield {E}quations in {E}xtensive-{R}ank {M}atrix {F}actorization and {D}enoising},
+journal = {Journal of Statistical Mechanics: Theory and Experiment},
+}
+
+@article{Mania2020WhyDC,
+  title={Why {D}o {C}lassifier {A}ccuracies {S}how {L}inear {T}rends {U}nder {D}istribution {S}hift?},
+  author={Horia Mania and Suvrit Sra},
+  journal={ArXiv},
+  year={2020},
+  volume={abs/2012.15483}
+}
+
+
+@inproceedings{10.5555/3524938.3525579,
+author = {Miller, John and Krauth, Karl and Recht, Benjamin and Schmidt, Ludwig},
+title = {{The Effect of Natural Distribution Shift on Question Answering Models}},
+year = {2020},
+booktitle = {Proceedings of the 37th International Conference on Machine Learning},
+}
+
+@ARTICLE{optshrink,  
+author={Raj R. {Nadakuditi}},  
+journal={IEEE Transactions on Information Theory},   
+title={{OptShrink: An Algorithm for Improved Low-Rank Signal Matrix Denoising by Optimal, Data-Driven Singular Value Shrinkage}},   
+year={2014}
+}
+
+@book{neal1996,
+author = {Neal, Radford M.},
+title = {{Bayesian Learning for Neural Networks}},
+year = {1996},
+}
+
+@article{Neelakantan2015AddingGN,
+  title={{Adding Gradient Noise Improves Learning for Very Deep Networks}},
+  author={Arvind Neelakantan and L. Vilnis and Quoc V. Le and Ilya Sutskever and L. Kaiser and Karol Kurach and J. Martens},
+  journal={ArXiv},
+  year={2015},
+  volume={abs/1511.06807}
+}
+
+
+@article{solt_mod_over,
+title = {{Toward Moderate Overparameterization: Global Convergence Guarantees for Training Shallow Neural Networks}}, 
+journal = {IEEE Journal on Selected Areas in Information Theory}, 
+author = {Oymak, Samet and Soltanolkotabi, Mahdi}, 
+year = {2020}}
+
+@inproceedings{Paquette2022HomogenizationOS,
+  title={{Homogenization of SGD in High-dimensions: Exact Dynamics and Generalization Properties}},
+  author={Courtney Paquette and Elliot Paquette and Ben Adlam and Jeffrey Pennington},
+  year={2022}
+}
+
+@article{Paquette2022ImplicitRO,
+  title={{Implicit Regularization or Implicit Conditioning? Exact Risk Trajectories of SGD in High Dimensions}},
+  author={Courtney Paquette and Elliot Paquette and Ben Adlam and Jeffrey Pennington},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2206.07252}
+}
+
+@inproceedings{Poole2016,
+ author = {Poole, Ben and Lahiri, Subhaneil and Raghu, Maithra and Sohl-Dickstein, Jascha and Ganguli, Surya},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Exponential {E}xpressivity in {D}eep {N}eural {N}etworks {T}hrough {T}ransient {C}haos},
+ year = {2016}
+}
+
+@inproceedings{Pretorius2018LearningDO,
+  title={{Learning Dynamics of Linear Denoising Autoencoders}},
+  author={Pretorius, Arnu and Kroon, Steve and Kamper, Herman},
+  booktitle={International Conference on Machine Learning},
+  year={2018},
+}
+
+ @article{Rakin2019ParametricNI,
+  title={{Parametric Noise Injection: Trainable Randomness to Improve Deep Neural Network Robustness Against Adversarial Attack}},
+  author={Adnan Siraj Rakin and Zhezhi He and Deliang Fan},
+  journal={2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2019},
+}
+
+@article{Ramesh2022HierarchicalTI,
+  title={{Hierarchical Text-Conditional Image Generation with CLIP Latents}},
+  author={Aditya Ramesh and Prafulla Dhariwal and Alex Nichol and Casey Chu and Mark Chen},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2204.06125}
+}
+
+@book{PDLT-2022,
+    title = "The {P}rinciples of {D}eep {L}earning {T}heory",
+    author = "Roberts, Daniel A. and Yaida, Sho and Hanin, Boris",
+    publisher = "Cambridge University Press",
+    year = "2022",
+}
+
+@article{Rombach2022HighResolutionIS,
+  title={{High-Resolution Image Synthesis with Latent Diffusion Models}},
+  author={Robin Rombach and A. Blattmann and Dominik Lorenz and Patrick Esser and Bj{\"o}rn Ommer},
+  journal={2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2022},
+}
+
+@article{Saharia2022PhotorealisticTD,
+  title={{Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding}},
+  author={Chitwan Saharia and William Chan and Saurabh Saxena and Lala Li and Jay Whang and Emily L. Denton and Seyed Kamyar Seyed Ghasemipour and Burcu Karagol Ayan and Seyedeh Sara Mahdavi and Raphael Gontijo Lopes and Tim Salimans and Jonathan Ho and David J. Fleet and Mohammad Norouzi},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2205.11487}
+}
+
+@article{Sietsma1991CreatingAN,
+  title={Creating {A}rtificial {N}eural {N}etworks that {G}eneralize},
+  author={Jocelyn Sietsma and Robert J. F. Dow},
+  journal={Neural Networks},
+  year={1991},
+}
+
+@inproceedings{Simon2021TheEF,
+  title={{The Eigenlearning Framework: A Conservation Law Perspective on Kernel Regression and Wide Neural Networks}},
+  author={James B. Simon and Madeline Dickens and Dhruva Karkada and Michael Robert DeWeese},
+  year={2021}
+}
+
+
+
+@article{JMLR:v15:srivastava14a,
+  author  = {Nitish Srivastava and Geoffrey Hinton and Alex Krizhevsky and Ilya Sutskever and Ruslan Salakhutdinov},
+  title   = {{Dropout: A Simple Way to Prevent Neural Networks from Overfitting}},
+  journal = {Journal of Machine Learning Research},
+  year    = {2014},
+}
+
+@inproceedings{
+stojanov2021domain,
+title={{Domain Adaptation with Invariant Representation Learning: What Transformations to Learn?}},
+author={Petar Stojanov and Zijian Li and Mingming Gong and Ruichu Cai and Jaime G. Carbonell and Kun Zhang},
+booktitle={Advances in Neural Information Processing Systems},
+year={2021},
+}
+
+@article{Szegedy2014IntriguingPO,
+  title={Intriguing {P}roperties of {N}eural {N}etworks},
+  author={Christian Szegedy and W. Zaremba and Ilya Sutskever and Joan Bruna and D. Erhan and Ian J. Goodfellow and R. Fergus},
+  journal={CoRR},
+  year={2014},
+}
+
+@INPROCEEDINGS{davies_denoising,
+  author={Tachella, Julián and Tang, Junqi and Davies, Mike},
+  booktitle={2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  title={{The Neural Tangent Link Between CNN Denoisers and Non-Local Filters}}, 
+  year={2021},}
+
+@article{Takeda2007KernelRF,
+  title={{Kernel Regression for Image Processing and Reconstruction}},
+  author={H. Takeda and Sina Farsiu and P. Milanfar},
+  journal={IEEE Transactions on Image Processing},
+  year={2007},
+}
+
+@misc{Tay2022UL2UL,
+  title={{UL2: Unifying Language Learning Paradigms}},
+  author={Yi Tay and Mostafa Dehghani and Vinh Quang Tran and Xavier Garc{\'i}a and Jason Wei and Xuezhi Wang and Hyung Won Chung and Dara Bahri and Tal Schuster and Huaixiu Zheng and Denny Zhou and Neil Houlsby and Donald Metzler},
+  year={2022}
+}
+
+@article{Tian2020DeepLO,
+  title={{Deep Learning on Image Denoising: An Overview}},
+  author={Chunwei Tian and Lunke Fei and Wenxian Zheng and Yanchen Xu and Wangmeng Zuo and Chia-Wen Lin},
+  journal={Neural Networks},
+  year={2020},
+}
+
+@article{Tibshirani1996RegressionSA,
+  title={{Regression Shrinkage and Selection via the Lasso}},
+  author={Robert Tibshirani},
+  journal={Journal of the Royal Statistical Society Series B-Methodological},
+  year={1996},
+}
+
+@article{big-data-low-rank,
+author = {Udell, Madeleine and Townsend, Alex},
+title = {{Why Are Big Data Matrices Approximately Low Rank?}},
+journal = {SIAM Journal on Mathematics of Data Science},
+year = {2019},
+}
+
+@inproceedings{NEURIPS2021_73fed7fd,
+ author = {Tripuraneni, Nilesh and Adlam, Ben and Pennington, Jeffrey},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {{Overparameterization Improves Robustness to Covariate Shift in High Dimensions}},
+ year = {2021}
+}
+
+@article{Troiani2022OptimalDO,
+  title={Optimal {D}enoising of {R}otationally {I}nvariant {R}ectangular {M}atrices},
+  author={Emanuele Troiani and Vittorio Erba and Florent Krzakala and Antoine Maillard and Lenka Zdeborov'a},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2203.07752}
+}
+
+@article{vincent, 
+author = {Vincent, Pascal and Larochelle, Hugo and Lajoie, Isabelle and Bengio, Yoshua and Manzagol, Pierre-Antoine}, 
+title = {{Stacked Denoising Autoencoders: Learning Useful Representations in a Deep Network with a Local Denoising Criterion}}, 
+year = {2010}, 
+journal = {Journal of Machine Learning Research}
+}
+
+@InProceedings{pmlr-v28-wan13, 
+    title = {{Regularization of Neural Networks using DropConnect}}, author = {Li Wan and Matthew Zeiler and Sixin Zhang and Yann Le Cun and Rob Fergus}, 
+    booktitle = {Proceedings of the 30th International Conference on Machine Learning}, 
+    year = {2013}, 
+    }
+
+@article{ma_reg_nns_ntk,
+title = "{Regularization Matters: Generalization and Optimization of Neural Nets v.s. their Induced Kernel}",
+author = "Colin Wei and Lee, {Jason D.} and Qiang Liu and Tengyu Ma",
+year = "2019",
+journal = "Advances in Neural Information Processing Systems",
+}
+
+@InProceedings{pmlr-v139-yang21c,
+  title = 	 {{Tensor Programs IV: Feature Learning in Infinite-Width Neural Networks}},
+  author =       {Yang, Greg and Hu, Edward J.},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  year = 	 {2021},
+}
+
+@INPROCEEDINGS{9926712,
+  author={Xiao, Li and Zhang, Zeliang and Jiang, Jinyang and Peng, Yijie},
+  booktitle={IEEE 18th International Conference on Automation Science and Engineering}, 
+  title={{Noise Optimization in Artificial Neural Networks}}, 
+  year={2022},
+}
+  
+@inproceedings{Lee2019WideNN-SHORT,
+ author = {Lee, Jaehoon and Xiao, Lechao and Schoenholz, Samuel and Bahri, Yasaman and Novak, Roman and Sohl-Dickstein, Jascha and Pennington, Jeffrey},
+ title = {{Wide Neural Networks of Any Depth Evolve as Linear Models Under Gradient Descent}},
+ year = {2019}
+}
+
+@inproceedings{ntk,
+ author = {Jacot, Arthur and Gabriel, Franck and Hongler, Clement},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {{Neural Tangent Kernel: Convergence and Generalization in Neural Networks}},
+ year = {2018}
+}
+
+@inproceedings{L2regTrainingDyn, 
+author = {Lewkowycz, Aitor and Gur-Ari, Guy}, 
+title = {{On the Training Dynamics of Deep Networks with L2 Regularization}}, 
+year = {2020}, 
+booktitle = {Advances in Neural Information Processing Systems} 
+}
+
+@article{ng2000cs229,
+  title={{CS229 Lecture notes}},
+  author={Ng, Andrew},
+  journal={CS229 Lecture notes},
+  year={2000}
+}
+
+@article{wu2020optimal,
+  title={{On the Optimal Weighted $\backslash ell\_2 $ Regularization in Overparameterized Linear Regression}},
+  author={Wu, Denny and Xu, Ji},
+  journal={Advances in Neural Information Processing Systems},
+  year={2020}
+}
+
+@inproceedings{richards2021asymptotics,
+  title={Asymptotics of {R}idge ({L}ess) {R}egression under {G}eneral {S}ource {C}ondition},
+  author={Richards, Dominic and Mourtada, Jaouad and Rosasco, Lorenzo},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  year={2021},
+}
+
+@article{
+sonthalia2023training,
+title={Training Data Size Induced Double Descent For Denoising Feedforward Neural Networks and the Role of Training Noise},
+author={Rishi Sonthalia and Raj Rao Nadakuditi},
+journal={Transactions on Machine Learning Research},
+year={2023},
+}
+
+@article{chen2021multiple,
+  title={Multiple {D}escent: {D}esign {Y}our {O}wn {G}eneralization {C}urve},
+  author={Chen, Lin and Min, Yifei and Belkin, Mikhail and Karbasi, Amin},
+  journal={Advances in Neural Information Processing Systems},
+  year={2021}
+}
+
+@article{sonthaliaLowRank2023,
+  title={{Generalization Error without Independence: Denoising, Linear Regression, and Transfer Learning}},
+  author={Chinmaya Kausik and Kashvi Srivastava and Rishi Sonthalia},
+  year={2023}
+}
+
+@article{opper1996statistical,
+  title={Statistical {M}echanics of {G}eneralization},
+  author={Opper, Manfred and Kinzel, Wolfgang},
+  journal={Models of Neural Networks III: Association, Generalization, and Representation},
+  year={1996},
+}
+
+@inproceedings{yilmaz2022regularization,
+  title={Regularization-{W}ise {D}ouble {D}escent: {W}hy it {O}ccurs and {H}ow to {E}liminate it},
+  author={Yilmaz, Fatih Furkan and Heckel, Reinhard},
+  booktitle={IEEE International Symposium on Information Theory },
+  year={2022},
+}
+
+@article{cheng2022dimension,
+  title={Dimension {F}ree {R}idge {R}egression},
+  author={Cheng, Chen and Montanari, Andrea},
+  journal={arXiv preprint arXiv:2210.08571},
+  year={2022}
+}
+
+@article{meyer,
+author = {Meyer, Jr., Carl D.},
+title = {{Generalized Inversion of Modified Matrices}},
+journal = {SIAM Journal on Applied Mathematics},
+year = {1973},
+}
+
+@inproceedings{NIPS2007_013a006f,
+ author = {Rahimi, Ali and Recht, Benjamin},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {{Random Features for Large-Scale Kernel Machines}},
+ year = {2007}
+}
+
+@article{Gtze2003RateOC,
+  title={{Rate of Convergence to the Semi-Circular Law}},
+  author={Friedrich G{\"o}tze and Alexander Tikhomirov},
+  journal={Probability Theory and Related Fields},
+  year={2003},
+}
+
+@article{Bai2003ConvergenceRO,
+  title={{Convergence Rates of Spectral Distributions of Large Sample Covariance Matrices}},
+  author={Z. Bai and Baiqi. Miao and Jian-Feng. Yao},
+  journal={SIAM Journal on Matrix Analysis and Applications},
+  year={2003},
+}
+
+@article{Gtze2005TheRO,
+  title={The {R}ate of {C}onvergence for {S}pectra of {GUE} and {LUE} {M}atrix {E}nsembles},
+  author={Friedrich G{\"o}tze and Alexander Tikhomirov},
+  journal={Central European Journal of Mathematics},
+  year={2005},
+}
+
+@article{Gtze2004RateOC,
+  title={Rate of {C}onvergence in {P}robability to the {M}archenko-{P}astur {L}aw},
+  author={Friedrich G{\"o}tze and Alexander Tikhomirov},
+  journal={Bernoulli},
+  year={2004},
+}
+
+@article{Marenko1967DISTRIBUTIONOE,
+  title={{D}ISTRIBUTION OF {E}IGENVALUES FOR {S}OME {S}ETS OF {R}ANDOM {M}ATRICES},
+  author={Vladimir Marcenko and Leonid Pastur},
+  journal={Mathematics of The Ussr-sbornik},
+  year={1967},
+}
+
+

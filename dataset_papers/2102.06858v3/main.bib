@@ -1,0 +1,914 @@
+@comment Macros for common words
+@preamble{" \providecommand{\Proceedings}{Proceedings\xspace}" }
+
+@preamble{" \providecommand{\International}{International\xspace}"}
+
+@preamble{" \providecommand{\Conference}{Conference\xspace}"}
+
+@preamble{" \providecommand{\Artificial}{Artificial\xspace}"}
+
+@preamble{" \providecommand{\Intelligence}{Intelligence\xspace}"}
+
+@preamble{" \providecommand{\AI}{Artificial Intelligence}"}
+
+@preamble{" \providecommand{\Scheduling}{Sched.\xspace}"}
+
+@preamble{" \providecommand{\ofthe}{of the\xspace}"}
+
+
+
+%%% Do *not* want to abbreviate journal names? Add arroba before preamble
+@preamble{" \providecommand{\longshortnopar}[2]{#1}"}
+@comment preamble{" \providecommand{\longshortnopar}[2]{#1}"}
+
+%%% Want to abbreviate conference names? Add arroba before preamble
+@preamble{" \providecommand{\longshort[2]}{#1 (#2)}"}
+@comment preamble{" \providecommand{\longshort[2]}{#2}"}
+
+
+
+
+@string{AAMAS04  = "\longshort{\Proceedings \ofthe 3rd \International \Conference on Autonomous Agents and Multiagent Systems}{AAMAS}"}
+@string{AAMAS06  = "\longshort{\Proceedings \ofthe 5th \International \Conference on Autonomous Agents and Multiagent Systems}{AAMAS}"}
+@string{AAMAS09  = "\longshort{\Proceedings \ofthe 8th \International \Conference on Autonomous Agents and Multiagent Systems}{AAMAS}"}
+@string{AAMAS10  = "\longshort{\Proceedings \ofthe 9th \International \Conference on Autonomous Agents and Multiagent Systems}{AAMAS}"}
+@string{AAMAS11  = "\longshort{\Proceedings \ofthe 10th \International \Conference on Autonomous Agents and Multiagent Systems}{AAMAS}"}
+@string{AAMAS18  = "\longshort{\Proceedings \ofthe 17th \International \Conference on Autonomous Agents and Multiagent Systems}{AAMAS}"}
+
+@string{AIIDE11  = "\longshort{\Proceedings \ofthe 7th Annual \International AIIDE Conference}{AIIDE}"}
+
+@string{AIMAG     = "\longshortnopar{\AI{} Magazine}{AIM}"}
+@string{AIJ     = "\longshortnopar{\Artificial \Intelligence}{AIJ}"}
+@string{AMAI    = "\longshortnopar{Annals of Mathematics and \AI{}}{Annals of Math and AI}"}
+
+@string{AIPS96 = "\longshort{\Proceedings \ofthe 3rd \International \Conference on \AI{} Planning and Systems}{AIPS}"}
+@string{AIPS00 = "\longshort{\Proceedings \ofthe 5th \International \Conference on \AI{} Planning and Systems}{AIPS}"}
+@string{AIPS02 = "\longshort{\Proceedings \ofthe 6th \International \Conference on \AI{} Planning and Systems}{AIPS}"}
+
+
+@string{CAV99   = "\longshort{\Proceedings \ofthe 11th \International \Conference on Computer Aided Verification}{CAV}"}
+@string{CIAA03  = "\longshort{\Proceedings \ofthe 8th \International \Conference on Implementation and Application of Automata}{CIAA}"}
+
+@string{COMPINT     = "\longshortnopar{Computational \Intelligence}{Comp. Int.}"}
+@string{CONCUR00= "\longshort{\Proceedings \ofthe 11th \International \Conference on Concurrency Theory}{CONCUR}"}
+@string{CORR = "\longshortnopar{Computing Research Repository}{CoRR}"}
+
+
+@string{DX94  = "\longshort{\Proceedings of the 5th \International Workshop on Principles of Diagnosis}{DX}"}
+
+@string{DX04  = "\longshort{\Proceedings of the 15th \International Workshop on Principles of Diagnosis}{DX}"}
+
+@string{DX07  = "\longshort{\Proceedings of the 18th \International Workshop on Principles of Diagnosis}{DX}"}
+
+
+@string{ECAI00  = "\longshort{\Proceedings \ofthe 14th European \Conference on \AI{}}{ECAI}"}
+@string{ECAI04  = "\longshort{\Proceedings \ofthe 16th European \Conference on \AI{}}{ECAI}"}
+@string{ECP97   = "\longshort{\Proceedings \ofthe 4th European \Conference on Planning}{ECP}"}
+@string{ECP99   = "\longshort{\Proceedings \ofthe 5th European \Conference on Planning}{ECP}"}
+@string{ECP01   = "\longshort{\Proceedings \ofthe 6th European \Conference on Planning}{ECP}"}
+
+@string{ETAI   = "\longshortnopar{Electronic Transactions on \AI}{ETAI}"}
+
+
+@string{FOCS77  = "\longshort{\Proceedings \ofthe 18th IEEE Symposium on Foundations of Computer Science}{FOCS}"}
+@string{FOCS83  = "\longshort{\Proceedings \ofthe 24th IEEE Symposium on Foundations of Computer Science}{FOCS}"}
+
+@string{CDC16  = "\longshort{\Proceedings \ofthe 55th IEEE Annual \Conference on Decision and Control}{CDC}"}
+@string{CDC17  = "\longshort{\Proceedings \ofthe 56th IEEE Annual \Conference on Decision and Control}{CDC}"}
+@string{CDC18  = "\longshort{\Proceedings \ofthe 57th IEEE Annual \Conference on Decision and Control}{CDC}"}
+@string{CDC19  = "\longshort{\Proceedings \ofthe 58th IEEE Annual \Conference on Decision and Control}{CDC}"}
+@string{CDC20  = "\longshort{\Proceedings \ofthe 59th IEEE Annual \Conference on Decision and Control}{CDC}"}
+
+@string{ICAPS04 = "\longshort{\Proceedings \ofthe 14th \International \Conference on Automated Planning and Scheduling}{ICAPS}"}
+@string{ICAPS05 = "\longshort{\Proceedings \ofthe 15th \International \Conference on Automated Planning and Scheduling}{ICAPS}"}
+@string{ICAPS06 = "\longshort{\Proceedings \ofthe 16th \International \Conference on Automated Planning and Scheduling}{ICAPS}"}
+@string{ICAPS07 = "\longshort{\Proceedings \ofthe 17th \International \Conference on Automated Planning and Scheduling}{ICAPS}"}
+@string{ICAPS08 = "\longshort{\Proceedings \ofthe 18th \International \Conference on Automated Planning and \Scheduling}{ICAPS}"}
+@string{ICAPS09 = "\longshort{\Proceedings \ofthe 19th \International \Conference on Automated Planning and \Scheduling}{ICAPS}"}
+@string{ICAPS10 = "\longshort{\Proceedings \ofthe 20th \International \Conference on Automated Planning and \Scheduling}{ICAPS}"}
+@string{ICAPS11 = "\longshort{\Proceedings \ofthe 21st \International \Conference on Automated Planning and \Scheduling}{ICAPS}"}
+@string{ICAPS12 = "\longshort{\Proceedings \ofthe 22nd \International \Conference on Automated Planning and \Scheduling}{ICAPS}"}
+
+
+@string{ICMAS96 = "\longshort{\Proceedings \ofthe 2nd \International \Conference on Multiagent Systems}{ICMAS}"}
+
+@string{ISWC06 = "\longshort{\Proceedings \ofthe 5th \International Semantic Web \Conference}{ISWC}"}
+
+@string{IPC5    = "\longshort{5th International Planning Competition Booklet}{IPC-2006}"}
+
+@string{JLP     = "\longshortnopar{Journal of Logic Programming}{JLP}"}
+@string{KI     = "\longshortnopar{K\"{u}nstliche Intelligenz}{KI}"}
+@string{KI14    = "\longshortnopar{\Proceedings of the 37th \International \Conference on Artificial Intelligence}{KI14}"}
+
+@string{KI01 = "\longshort{\Proceedings of the Joint German/Austrian Conference on Artificial Intelligence}{KI/\"{O}GAI}"}
+
+
+@string{KR89    = "\longshort{\Proceedings \ofthe 1st \International \Conference of Knowledge Representation and Reasoning}{KR}"}
+@string{KR98    = "\longshort{\Proceedings \ofthe 6th \International \Conference on Knowledge Representation and Reasoning}{KR}"}
+@string{KR00    = "\longshort{\Proceedings \ofthe 7th \International \Conference on Knowledge Representation and Reasoning}{KR}"}
+@string{KR02    = "\longshort{\Proceedings \ofthe 8th \International \Conference on Knowledge Representation and Reasoning}{KR}"}
+@string{KR04    = "\longshort{\Proceedings \ofthe 9th \International \Conference on Knowledge Representation and Reasoning}{KR}"}
+@string{KR06    = "\longshort{\Proceedings \ofthe 10th \International \Conference on Knowledge Representation and Reasoning}{KR}"}
+@string{KR08    = "\longshort{\Proceedings \ofthe 11th \International \Conference on Knowledge Representation and Reasoning}{KR}"}
+@string{KR10    = "\longshort{\Proceedings \ofthe 12th \International \Conference on Knowledge Representation and Reasoning}{KR}"}
+@string{KR20    = "\longshort{\Proceedings \ofthe 17th \International \Conference on Principles of Knowledge Representation and Reasoning}{KR}"}
+
+@string{LNCS    = "LNCS"}
+
+@string{LPAR99 = "\longshort{\Proceedings of 6th \International \Conference on Logic Programming and Automated Reasoning}{LPAR}"}  
+@string{LPNMR04 = "\longshort{\Proceedings \ofthe 7th \International \Conference on Logic Programming and Nonmonotonic Reasoning}{LPNMR}"}
+@string{LPNMR07 = "\longshort{\Proceedings \ofthe 9th \International \Conference on Logic Programming and Nonmonotonic Reasoning}{LPNMR}"}
+@string{NRAC05 = "\longshort{5th Workshop on Nonmonotonic Reasoning, Action and Change}{NRAC}"}
+@string{NRAC07 = "\longshort{7th Workshop on Nonmonotonic Reasoning, Action and Change}{NRAC}"}
+
+@string{JAIR    = "\longshortnopar{Journal of \AI{} Research}{JAIR}"}
+@string{JCSS    = "\longshortnopar{Journal of Computer and System Sciences}{JCSS}"}
+@string{JETAI    = "\longshortnopar{Journal of Theoretical and Experimental \AI{}}{JETAI}"}
+@string{JLC    = "\longshortnopar{Journal of Logic and Computation}{JLC}"}
+
+@string{PSTV95  = "\longshort{\Proceedings \ofthe 15th \International Symposium on Protocol Specification, Testing and Verification}{PSTV}"}
+
+
+@string{TARK90 = "\longshort{\Proceedings \ofthe 3rd \Conference on Theoretical Aspects of Reasoning about Knowledge}{TARK}"}
+@string{TOCL	= "\longshortnopar{{ACM} Transactions on Computational Logic}{TOCL}"}
+@string{TPLP    = "\longshortnopar{Theory and Practice of Logic Programming}{TPLP}"}
+
+@string{SCCC99 = "\longshort{\Proceedings \ofthe 19th \International \Conference of the Chilean Computer Science Society}{SCCC}"}
+@string{SCCC02 = "\longshort{\Proceedings \ofthe 22nd \International \Conference of the Chilean Computer Science Society}{SCCC}"}
+
+@string{SOCS10 = "\longshort{\Proceedings \ofthe 3rd Symposium on Combinatorial Search}{SOCS}"}
+@string{SOCS17 = "\longshort{\Proceedings \ofthe 10th Symposium on Combinatorial Search}{SOCS}"}
+
+@string{SPIN01 = "\longshort{\Proceedings \ofthe 8th \International {SPIN} Workshop}{SPIN}"}
+@string{SPIN03 = "\longshort{\Proceedings \ofthe 10th \International {SPIN} Workshop}{SPIN}"}
+@string{SPIN06 = "\longshort{\Proceedings \ofthe 13th \International {SPIN} Workshop}{SPIN}"}
+
+@string{STTT    = "\longshortnopar{\International Journal on Software Tools for Technology Transfer}{STTT}"}
+
+@string{TACAS17 = "\longshort{\Proceedings \ofthe 23rd \International \Conference on Tools and Algorithms for the Construction and Analysis of Systems}{TACAS}"}
+
+@string{AAAI92  = "\longshort{\Proceedings \ofthe 10th National \Conference on \AI{}}{AAAI}"}
+@string{AAAI93  = "\longshort{\Proceedings \ofthe 11th National \Conference on \AI{}}{AAAI}"}
+@string{AAAI94  = "\longshort{\Proceedings \ofthe 12th National \Conference on \AI{}}{AAAI}"}
+@string{AAAI96  = "\longshort{\Proceedings \ofthe 13th National \Conference on \AI{}}{AAAI}"}
+@string{AAAI98  = "\longshort{\Proceedings \ofthe 15th National \Conference on \AI{}}{AAAI}"}
+@string{AAAI99  = "\longshort{\Proceedings \ofthe 16th National \Conference on \AI{}}{AAAI}"}
+@string{AAAI00  = "\longshort{\Proceedings \ofthe 17th National \Conference on \AI{}}{AAAI}"}
+@string{AAAI02  = "\longshort{\Proceedings \ofthe 18th National \Conference on \AI{}}{AAAI}"}
+@string{AAAI04  = "\longshort{\Proceedings \ofthe 19th National \Conference on \AI{}}{AAAI}"}
+@string{AAAI05  = "\longshort{\Proceedings \ofthe 20th National \Conference on \AI{}}{AAAI}"}
+@string{AAAI06  = "\longshort{\Proceedings \ofthe 21st National \Conference on \AI{}}{AAAI}"}
+@string{AAAI07  = "\longshort{\Proceedings \ofthe 22nd AAAI \Conference on \AI{}}{AAAI}"}
+@string{AAAI08  = "\longshort{\Proceedings \ofthe 23rd AAAI \Conference on \AI{}}{AAAI}"}
+@string{AAAI12  = "\longshort{\Proceedings \ofthe 26th AAAI \Conference on \AI{}}{AAAI}"}
+@string{AAAI14  = "\longshort{\Proceedings \ofthe 28th AAAI \Conference on \AI{}}{AAAI}"}
+@string{AAAI16  = "\longshort{\Proceedings \ofthe 30th AAAI \Conference on \AI{}}{AAAI}"}
+@string{AAAI17  = "\longshort{\Proceedings \ofthe 31st AAAI \Conference on \AI{}}{AAAI}"}
+@string{AAAI18  = "\longshort{\Proceedings \ofthe 32nd AAAI \Conference on \AI{}}{AAAI}"}
+@string{AAAI19  = "\longshort{\Proceedings \ofthe 33rd AAAI \Conference on \AI{}}{AAAI}"}
+@string{AAAI20  = "\longshort{\Proceedings \ofthe 34th AAAI \Conference on \AI{}}{AAAI}"}
+@string{AAAI21  = "\longshort{\Proceedings \ofthe 35th AAAI \Conference on \AI{}}{AAAI}"}
+
+@string{IJCAI89 = "\longshort{\Proceedings \ofthe 11th
+                  \International Joint \Conference on
+                  \AI{}}{IJCAI}"}
+@string{IJCAI93 = "\longshort{\Proceedings \ofthe 13th \International Joint \Conference on \AI{}}{IJCAI}"}
+@string{IJCAI95 = "\longshort{\Proceedings \ofthe 14th \International Joint \Conference on \AI{}}{IJCAI}"}
+@string{IJCAI99 = "\longshort{\Proceedings \ofthe 16th \International Joint \Conference on \AI{}}{IJCAI}"}
+@string{IJCAI01 = "\longshort{\Proceedings \ofthe 17th \International Joint \Conference on \AI{}}{IJCAI}"}
+@string{IJCAI05 = "\longshort{\Proceedings \ofthe 19th \International Joint \Conference on \AI{}}{IJCAI}"}
+@string{IJCAI07 = "\longshort{\Proceedings \ofthe 20th \International Joint \Conference on \AI{}}{IJCAI}"}
+@string{IJCAI09 = "\longshort{\Proceedings \ofthe 21st \International Joint \Conference on \AI{}}{IJCAI}"}
+@string{IJCAI11 = "\longshort{\Proceedings \ofthe 22nd \International Joint \Conference on \AI{}}{IJCAI}"}
+@string{IJCAI13 = "\longshort{\Proceedings \ofthe 23rd \International Joint \Conference on \AI{}}{IJCAI}"}
+@string{IJCAI15 = "\longshort{\Proceedings \ofthe 24th \International Joint \Conference on \AI{}}{IJCAI}"}
+@string{IJCAI16 = "\longshort{\Proceedings \ofthe 25th \International Joint \Conference on \AI{}}{IJCAI}"}
+@string{IJCAI17 = "\longshort{\Proceedings \ofthe 26th \International Joint \Conference on \AI{}}{IJCAI}"}
+@string{IJCAI19 = "\longshort{\Proceedings \ofthe 28th \International Joint \Conference on \AI{}}{IJCAI}"}
+@string{IJCAI20 = "\longshort{\Proceedings \ofthe 29th \International Joint \Conference on \AI{}}{IJCAI}"}
+
+@string{ICML94  = "\longshort{\Proceedings \ofthe 11th \International \Conference on Machine Learning}{ICML}"}
+@string{ICML99  = "\longshort{\Proceedings \ofthe 16th \International \Conference on Machine Learning}{ICML}"}
+@string{ICML03  = "\longshort{\Proceedings \ofthe 20th \International \Conference on Machine Learning}{ICML}"}
+@string{ICML04  = "\longshort{\Proceedings \ofthe 21st \International \Conference on Machine Learning}{ICML}"}
+@string{ICML07  = "\longshort{\Proceedings \ofthe 24th \International \Conference on Machine Learning}{ICML}"}
+@string{ICML10  = "\longshort{\Proceedings \ofthe 27th \International \Conference on Machine Learning}{ICML}"}
+@string{ICML14  = "\longshort{\Proceedings \ofthe 31st \International \Conference on Machine Learning}{ICML}"}
+@string{ICML15  = "\longshort{\Proceedings \ofthe 32nd \International \Conference on Machine Learning}{ICML}"}
+@string{ICML16  = "\longshort{\Proceedings \ofthe 33rd \International \Conference on Machine Learning}{ICML}"}
+@string{ICML17  = "\longshort{\Proceedings \ofthe 34th \International \Conference on Machine Learning}{ICML}"}
+@string{ICML18  = "\longshort{\Proceedings \ofthe 35th \International \Conference on Machine Learning}{ICML}"}
+@string{ICML19  = "\longshort{\Proceedings \ofthe 36th \International \Conference on Machine Learning}{ICML}"}
+@string{ICML20  = "\longshort{\Proceedings \ofthe 37th \International \Conference on Machine Learning}{ICML}"}
+
+
+
+@string{UAI99  = "\longshort{\Proceedings \ofthe 15th \Conference on Uncertainty in Artificial Intelligence}{UAI}"}
+@string{UAI08  = "\longshort{\Proceedings \ofthe 24th \Conference on Uncertainty in Artificial Intelligence}{UAI}"}
+@string{UAI13  = "\longshort{\Proceedings \ofthe 29th \Conference on Uncertainty in Artificial Intelligence}{UAI}"}
+
+@string{NIPS94    = "\longshort{\Proceedings \ofthe 7th \Conference on Advances in Neural Information Processing Systems}{NIPS}"}
+@string{NIPS95    = "\longshort{\Proceedings \ofthe 8th \Conference on Advances in Neural Information Processing Systems}{NIPS}"}
+@string{NIPS98    = "\longshort{\Proceedings \ofthe 11th \Conference on Advances in Neural Information Processing Systems}{NIPS}"}
+@string{NIPS02    = "\longshort{\Proceedings \ofthe 15th \Conference on Advances in Neural Information Processing Systems}{NIPS}"}
+@string{NIPS11    = "\longshort{\Proceedings \ofthe 24th \Conference on Advances in Neural Information Processing Systems}{NIPS}"}
+@string{NIPS15    = "\longshort{\Proceedings \ofthe 28th \Conference on Advances in Neural Information Processing Systems}{NIPS}"}
+@string{NIPS16    = "\longshort{\Proceedings \ofthe 29th \Conference on Advances in Neural Information Processing Systems}{NIPS}"}
+@string{NIPS17    = "\longshort{\Proceedings \ofthe 30th \Conference on Advances in Neural Information Processing Systems}{NIPS}"}
+@string{NIPS18    = "\longshort{\Proceedings \ofthe 31st \Conference on Advances in Neural Information Processing Systems}{NeurIPS}"}
+@string{NIPS19    = "\longshort{\Proceedings \ofthe 32nd \Conference on Advances in Neural Information Processing Systems}{NeurIPS}"}
+@string{NIPS20    = "\longshort{\Proceedings \ofthe 33rd \Conference on Advances in Neural Information Processing Systems}{NeurIPS}"}
+
+
+@string{ICRA09    = "\longshort{\Proceedings \ofthe 2009 IEEE \International \Conference on Robotics and Automation}{ICRA}"}
+@string{ICRA16    = "\longshort{\Proceedings \ofthe 2016 IEEE \International \Conference on Robotics and Automation}{ICRA}"}
+@string{ICRA17    = "\longshort{\Proceedings \ofthe 2017 IEEE \International \Conference on Robotics and Automation}{ICRA}"}
+@string{ICRA18    = "\longshort{\Proceedings \ofthe 2018 IEEE \International \Conference on Robotics and Automation}{ICRA}"}
+
+
+@string{CIRA03    = "\longshort{\Proceedings \ofthe 2nd IEEE \International Symposium on Computational Intelligence in Robotics and Automation}{CIRA}"}
+@string{CIRA09    = "\longshort{\Proceedings \ofthe 8th IEEE \International Symposium on Computational Intelligence in Robotics and Automation}{CIRA}"}
+
+@string{ICDL08    = "\longshort{\Proceedings \ofthe 7th IEEE \International \Conference on Development and Learning}{ICDL}"}
+
+
+@string{IROS12    = "\longshort{\Proceedings \ofthe 2012 IEEE/RSJ \International \Conference on Intelligent Robots and Systems}{IROS}"}
+@string{IROS14    = "\longshort{\Proceedings \ofthe 2014 IEEE/RSJ \International \Conference on Intelligent Robots and Systems}{IROS}"}
+@string{IROS17    = "\longshort{\Proceedings \ofthe 2017 IEEE/RSJ \International \Conference on Intelligent Robots and Systems}{IROS}"}
+
+@string{ROMAN06    = "\longshort{\Proceedings \ofthe 15th IEEE \International Symposium on Robot and Human Interactive Communication}{ROMAN}"}
+
+@string{CCAI18    = "\longshort{\Proceedings \ofthe 31st Canadian \Conference on Artificial Intelligence}{CCAI}"}
+
+@string{CVPR17    = "\longshort{\Proceedings \ofthe 2017 IEEE \Conference on Computer Vision and Pattern Recognition}{CVPR}"}
+
+@string{AIMSA12    = "\longshort{\Proceedings \ofthe 15th \International \Conference on Artificial Intelligence: Methodology, Systems, and Applications}{AIMSA}"}
+
+@string{FM16    = "\longshort{\Proceedings \ofthe 21st \International Symposium on Formal Methods}{FM}"}
+
+@string{ISAIM08    = "\longshort{\Proceedings \ofthe 10th \International Symposium on Artificial Intelligence and Mathematics}{ISAIM}"}
+
+@string{RLDM17    = "\longshort{\Proceedings \ofthe 3rd Multi-disciplinary \Conference on Reinforcement Learning and Decision}{RLDM}"}
+@string{RLDM19    = "\longshort{\Proceedings \ofthe 4th Multi-disciplinary \Conference on Reinforcement Learning and Decision}{RLDM}"}
+
+
+@string{SAB94    = "\longshort{\Proceedings \ofthe 3rd \International \Conference on Simulation of Adaptive Behavior}{SAB}"}
+
+
+@string{IJCNN05    = "\longshort{\Proceedings \ofthe 2005 IEEE \International Joint \Conference on Neural Networks}{IJCNN}"}
+
+
+@string{ESWC18    = "\longshort{\Proceedings \ofthe 15th European Semantic Web \Conference}{ESWC}"}
+
+
+
+@string{ICLR15  = "\longshort{\Proceedings \ofthe 3rd  \International \Conference on Learning Representations}{ICLR}"}
+@string{ICLR16  = "\longshort{\Proceedings \ofthe 4th  \International \Conference on Learning Representations}{ICLR}"}
+@string{ICLR17  = "\longshort{\Proceedings \ofthe 5th  \International \Conference on Learning Representations}{ICLR}"}
+@string{ICLR18  = "\longshort{\Proceedings \ofthe 6th  \International \Conference on Learning Representations}{ICLR}"}
+@string{ICLR19  = "\longshort{\Proceedings \ofthe 7th  \International \Conference on Learning Representations}{ICLR}"}
+@string{ICLR20  = "\longshort{\Proceedings \ofthe 8th  \International \Conference on Learning Representations}{ICLR}"}
+@string{ICLR21  = "\longshort{\Proceedings \ofthe 9th  \International \Conference on Learning Representations}{ICLR}"}
+
+@string{HRI20  = "\longshort{Companion \ofthe 2020 ACM/IEEE  \International \Conference on Human-Robot Interaction}{HRI}"}
+
+@string{FORMATS17  = "\longshort{\Proceedings \ofthe 15th \International \Conference on Formal Modeling and Analysis of Timed Systems}{FORMATS}"}
+@string{FORMATS18  = "\longshort{\Proceedings \ofthe 16th \International \Conference on Formal Modeling and Analysis of Timed Systems}{FORMATS}"}
+@string{FORMATS19  = "\longshort{\Proceedings \ofthe 17th \International \Conference on Formal Modeling and Analysis of Timed Systems}{FORMATS}"}
+@string{FORMATS20  = "\longshort{\Proceedings \ofthe 18th \International \Conference on Formal Modeling and Analysis of Timed Systems}{FORMATS}"}
+
+
+@string{ACC18  = "\longshort{\Proceedings \ofthe 2018 Annual American Control \Conference}{ACC}"}
+
+@string{MRS17  = "\longshort{\Proceedings \ofthe 2017 \International Symposium on Multi-Robot and Multi-Agent Systems}{MRS}"}
+
+@string{TIME19  = "\longshort{\Proceedings \ofthe 26th \International Symposium on Temporal Representation and Reasoning}{TIME}"}
+
+@string{ATVA16  = "\longshort{\Proceedings \ofthe 14th \International Symposium on Automated Technology for Verification and Analysis}{ATVA}"}
+
+@inproceedings{gnn_gori,
+  title={{A New Model for Learning in Graph Domains}},
+  author={Gori, Marco and Monfardini, Gabriele and Scarselli, Franco},
+  booktitle=IJCNN05,
+  volume={2},
+  pages={729--734},
+  year={2005}
+}
+
+@article{scarselli2008graph,
+  title={The graph neural network model},
+  author={Scarselli, Franco and Gori, Marco and Tsoi, Ah Chung and Hagenbuchner, Markus and Monfardini, Gabriele},
+  journal={IEEE transactions on neural networks},
+  volume={20},
+  number={1},
+  pages={61--80},
+  year={2008},
+  publisher={IEEE}
+}
+
+@article{safetygym,
+  title={{Benchmarking Safe Exploration in Deep Reinforcement Learning}},
+  author={Ray, Alex and Achiam, Joshua and Amodei, Dario},
+  journal={arXiv preprint arXiv:1910.01708},
+  year={2019}
+}
+
+@inproceedings{bacchus1996rewarding,
+  title={{Rewarding Behaviors}},
+  author={Bacchus, Fahiem and Boutilier, Craig and Grove, Adam},
+  booktitle=AAAI96,
+  pages={1160--1167},
+  year={1996}
+}
+
+@inproceedings{DBLP:journals/corr/abs-1711-00740,
+  title={{Learning to Represent Programs with Graphs}},
+  author={Allamanis, Miltiadis and Brockschmidt, Marc and Khademi, Mahmoud},
+  booktitle=ICLR18,
+  year={2018}
+}
+
+
+@inproceedings{DBLP:conf/nips/SiDRNS18,
+  title={{Learning Loop Invariants for Program Verification}},
+  author={Si, Xujie and Dai, Hanjun and Raghothaman, Mukund and Naik, Mayur and Song, Le},
+  booktitle=NIPS18,
+  year={2018}
+}
+
+@inproceedings{DBLP:conf/esws/SchlichtkrullKB18,
+  title={{Modeling Relational Data with Graph Convolutional Networks}},
+  author={Schlichtkrull, Michael and Kipf, Thomas N and Bloem, Peter and Van Den Berg, Rianne and Titov, Ivan and Welling, Max},
+  booktitle=ESWC18,
+  pages={593--607},
+  year={2018},
+  organization={Springer}
+}
+
+@inproceedings{DBLP:conf/atal/IcarteKVM18,
+  title={{Teaching Multiple Tasks to an RL Agent using LTL}},
+  author={Rodrigo {Toro Icarte} and
+               Toryn Q. Klassen and
+               Richard Valenzano and
+               Sheila A. McIlraith},
+  booktitle=AAMAS18,
+  pages={452--461},
+  year={2018}
+}
+
+@inproceedings{DBLP:conf/icml/IcarteKVM18,
+  title={{Using Reward Machines for High-Level Task Specification and Decomposition in Reinforcement Learning}},
+  author={Rodrigo {Toro Icarte} and
+               Toryn Q. Klassen and
+               Richard Valenzano and
+               Sheila A. McIlraith},
+  booktitle=ICML18,
+  pages={2107--2116},
+  year={2018}
+}
+
+@article{DBLP:journals/corr/abs-2010-03950,
+  title={{Reward Machines: Exploiting Reward Function Structure in Reinforcement Learning}},
+  author={Rodrigo {Toro Icarte} and
+               Toryn Q. Klassen and
+               Richard Valenzano and
+               Sheila A. McIlraith},
+  journal={arXiv preprint arXiv:2010.03950},
+  year={2020}
+}
+
+@misc{gym_minigrid,
+  author = {Chevalier-Boisvert, Maxime and Willems, Lucas and Pal, Suman},
+  title = {{Minimalistic Gridworld Environment for OpenAI Gym}},
+  year = {2018},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/maximecb/gym-minigrid}},
+}
+
+
+@inproceedings{camacho2017decision,
+  title={{Decision-Making with non-Markovian Rewards: From LTL to Automata-based Reward Shaping}},
+  author={Camacho, Alberto and Chen, Oscar and Sanner, Scott and McIlraith, Sheila A},
+  booktitle=RLDM17,
+  pages={279--283},
+  year={2017}
+}
+
+@inproceedings{alur2019,
+ author = {Jothimurugan, Kishor and Alur, Rajeev and Bastani, Osbert},
+ booktitle = NIPS19,
+ pages = {13041--13051},
+ title = {{A Composable Specification Language for Reinforcement Learning Tasks}},
+ volume = {32},
+ year = {2019}
+}
+
+@article{deeplcrl,
+title={{Modular Deep Reinforcement Learning with Temporal Logic Specifications}},
+author={Yuan, Lim Zun and Hasanbeig, Mohammadhosein and Abate, Alessandro and Kroening, Daniel},
+journal={arXiv preprint arXiv:1909.11591},
+year={2019}
+}
+
+
+@inproceedings{DBLP:conf/icra/XuNZGGFS18,
+  title={{Neural Task Programming: Learning to Generalize Across Hierarchical Tasks}},
+  author={Xu, Danfei and Nair, Suraj and Zhu, Yuke and Gao, Julian and Garg, Animesh and Fei-Fei, Li and Savarese, Silvio},
+  booktitle=ICRA18,
+  pages={3795--3802},
+  year={2018},
+  organization={IEEE}
+}
+
+@article{leon2020systematic,
+  title={{Systematic Generalisation through Task Temporal Logic and Deep Reinforcement Learning}},
+  author={Leon, Borja G and Shanahan, Murray and Belardinelli, Francesco},
+  journal={arXiv preprint arXiv:2006.08767},
+  year={2020}
+}
+
+@inproceedings{andreas2017modular,
+  title={{Modular Multitask Reinforcement Learning with Policy Sketches}},
+  author={Andreas, Jacob and Klein, Dan and Levine, Sergey},
+  booktitle=ICML17,
+  pages={166--175},
+  year={2017},
+  organization={PMLR}
+}
+
+@inproceedings{DBLP:conf/iclr/BahdanauHLHHKG19,
+  title={{Learning to Understand Goal Specifications by Modelling Reward}},
+  author={Bahdanau, Dzmitry and Hill, Felix and Leike, Jan and Hughes, Edward and Hosseini, Arian and Kohli, Pushmeet and Grefenstette, Edward},
+  booktitle=ICLR18,
+  year={2018}
+}
+
+@inproceedings{DBLP:conf/iclr/HillLSCBMS20,
+  title={{Environmental Drivers of Systematicity and Generalization in a Situated Agent}},
+  author={Hill, Felix and Lampinen, Andrew and Schneider, Rosalia and Clark, Stephen and Botvinick, Matthew and McClelland, James L and Santoro, Adam},
+  booktitle=ICLR19,
+  year={2019}
+}
+
+@inproceedings{
+DBLP:journals/corr/abs-2012-02419,
+title={{Planning from Pixels using Inverse Dynamics Models}},
+author={Keiran Paster and Sheila A. McIlraith and Jimmy Ba},
+booktitle=ICLR21,
+year={2021},
+}
+
+
+@inproceedings{DBLP:conf/icml/CorneilGB18,
+  title={{Efficient Model-based Deep Reinforcement Learning with Variational State Tabulation}},
+  author={Corneil, Dane and Gerstner, Wulfram and Brea, Johanni},
+  booktitle=ICML18,
+  pages={1049--1058},
+  year={2018},
+  organization={PMLR}
+}
+
+
+@inproceedings{DBLP:conf/ijcai/CamachoIKVM19,
+  title={{LTL and Beyond: Formal Languages for Reward Function Specification in Reinforcement Learning}},
+  author={Alberto Camacho and
+            Rodrigo {Toro Icarte} and
+            Toryn Q. Klassen and
+            Richard Valenzano and
+            Sheila A. McIlraith},
+  booktitle=IJCAI19,
+  volume={19},
+  pages={6065--6073},
+  year={2019}
+}
+
+@inproceedings{DBLP:conf/icml/OhSLK17,
+  title={{Zero-Shot Task Generalization with Multi-Task Deep Reinforcement Learning}},
+  author={Oh, Junhyuk and Singh, Satinder and Lee, Honglak and Kohli, Pushmeet},
+  booktitle=ICML17,
+  pages={2661--2670},
+  year={2017},
+  organization={PMLR}
+}
+
+@article{DBLP:journals/corr/HermannHGWFSSCJ17,
+  title={{Grounded Language Learning in a Simulated 3D World}},
+  author={Hermann, Karl Moritz and Hill, Felix and Green, Simon and Wang, Fumin and Faulkner, Ryan and Soyer, Hubert and Szepesvari, David and Czarnecki, Wojciech Marian and Jaderberg, Max and Teplyashin, Denis and others},
+  journal={arXiv preprint arXiv:1706.06551},
+  year={2017}
+}
+
+@inproceedings{DBLP:conf/iclr/YuZX18,
+  title={{Interactive Grounded Language Acquisition and Generalization in a 2D World}},
+  author={Yu, Haonan and Zhang, Haichao and Xu, Wei},
+  booktitle=ICLR18,
+  year={2018}
+}
+
+@inproceedings{DBLP:conf/focs/Pnueli77,
+  title={{The Temporal Logic of Programs}},
+  author={Pnueli, Amir},
+  booktitle=FOCS77,
+  pages={46--57},
+  year={1977},
+  organization={IEEE}
+}
+
+@inproceedings{DBLP:conf/icml/CobbeKHKS19,
+  title={{Quantifying Generalization in Reinforcement Learning}},
+  author={Cobbe, Karl and Klimov, Oleg and Hesse, Chris and Kim, Taehoon and Schulman, John},
+  booktitle=ICML19,
+  pages={1282--1289},
+  year={2019},
+  organization={PMLR}
+}
+
+@article{DBLP:journals/corr/SchulmanWDRK17,
+  title={{Proximal Policy Optimization Algorithms}},
+  author={Schulman, John and Wolski, Filip and Dhariwal, Prafulla and Radford, Alec and Klimov, Oleg},
+  journal={arXiv preprint arXiv:1707.06347},
+  year={2017}
+}
+
+@inproceedings{DBLP:conf/ijcai/LuketinaNFFAGWR19,
+  title={{A Survey of Reinforcement Learning Informed by Natural Language}},
+  author={Luketina, J and Nardelli, N and Farquhar, G and Foerster, J and Andreas, J and Grefenstette, E and Whiteson, S and Rockt{\"a}schel, T},
+  booktitle=IJCAI19,
+  volume={57},
+  pages={6309--6317},
+  year={2019}
+}
+
+@inproceedings{
+DBLP:conf/iclr/Co-ReyesGSAADAL19,
+title={{Meta-Learning Language-Guided Policy Learning}},
+author={John D Co-Reyes and Abhishek Gupta and Suvansh Sanjeev and Nick Altieri and John DeNero and Pieter Abbeel and Sergey Levine},
+booktitle=ICLR19,
+year={2019},
+}
+
+@inproceedings{DBLP:conf/aaai/ChaplotSPRS18,
+  title={{Gated-Attention Architectures for Task-Oriented Language Grounding}},
+  author={Chaplot, Devendra Singh and Sathyendra, Kanthashree Mysore and Pasumarthi, Rama Kumar and Rajagopal, Dheeraj and Salakhutdinov, Ruslan},
+  booktitle=AAAI18,
+  volume={32},
+  number={1},
+  year={2018}
+}
+
+@article{DBLP:journals/corr/DenilCCSF17,
+  title={{Programmable Agents}},
+  author={Denil, Misha and Colmenarejo, Sergio G{\'o}mez and Cabi, Serkan and Saxton, David and de Freitas, Nando},
+  journal={arXiv preprint arXiv:1706.06383},
+  year={2017}
+}
+
+%TODO{IROS2020}
+@article{kuo2020encoding,
+  title={{Encoding Formulas as Deep Networks: Reinforcement Learning for Zero-Shot Execution of LTL Formulas}},
+  author={Kuo, Yen-Ling and Katz, Boris and Barbu, Andrei},
+  journal={arXiv preprint arXiv:2006.01110},
+  year={2020}
+}
+
+@inproceedings{DBLP:conf/ijcai/0005T19,
+  author    = {Zhe Xu and
+               Ufuk Topcu},
+  title     = {{Transfer of Temporal Logic Formulas in Reinforcement Learning}},
+  booktitle = IJCAI19,
+  pages     = {4010--4018},
+  year      = {2019},
+}
+
+@inproceedings{DBLP:conf/kr/GiacomoFIPR20,
+  title={{Temporal Logic Monitoring Rewards via Transducers}},
+  author={de Giacomo, Giuseppe and Favorito, Marco and Iocchi, Luca and Patrizi, Fabio and Ronca, Alessandro},
+  booktitle=KR20,
+  volume={17},
+  number={1},
+  pages={860--870},
+  year={2020}
+}
+
+@inproceedings{DBLP:conf/aaai/GiacomoIFP20,
+  title={{Restraining Bolts for Reinforcement Learning Agents}},
+  author={de Giacomo, Giuseppe and Iocchi, Luca and Favorito, Marco and Patrizi, Fabio},
+  booktitle=AAAI20,
+  volume={34},
+  number={09},
+  pages={13659--13662},
+  year={2020}
+}
+
+
+@inproceedings{DBLP:conf/nips/JiangGMF19,
+  author    = {Yiding Jiang and
+               Shixiang Gu and
+               Kevin Murphy and
+               Chelsea Finn},
+  title     = {{Language as an Abstraction for Hierarchical Deep Reinforcement Learning}},
+  booktitle = NIPS19,
+  pages     = {9414--9426},
+  volume = {32},
+  year      = {2019}
+}
+
+@inproceedings{DBLP:conf/iclr/SunWL20,
+  title={{Program Guided Agent}},
+  author={Sun, Shao-Hua and Wu, Te-Lin and Lim, Joseph J},
+  booktitle=ICLR19,
+  year={2019}
+}
+
+@book{mccarthy1960programs,
+  title={Programs with common sense},
+  author={McCarthy, John and others},
+  year={1960},
+  publisher={RLE and MIT computation center}
+}
+
+@book{goodfellow2016deep,
+  title={{Deep Learning}},
+  author={Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron and Bengio, Yoshua},
+  volume={1},
+  number={2},
+  year={2016},
+  publisher={MIT press Cambridge}
+}
+
+@book{sutton2018reinforcement,
+  title={{Reinforcement Learning: An Introduction}},
+  author={Sutton, Richard S and Barto, Andrew G},
+  year={2018},
+  publisher={MIT press}
+}
+
+@article{jiang2020temporal,
+  title={{Temporal-Logic-Based Reward Shaping for Continuing Learning Tasks}},
+  author={Jiang, Yuqian and Bharadwaj, Sudarshanan and Wu, Bo and Shah, Rishi and Topcu, Ufuk and Stone, Peter},
+  journal={arXiv preprint arXiv:2007.01498},
+  year={2020}
+}
+
+
+@inproceedings{icarte2018advice,
+  title={{Advice-based Exploration in Model-based Reinforcement Learning}},
+  author={Rodrigo {Toro Icarte} and
+               Toryn Q. Klassen and
+               Richard Valenzano and
+               Sheila A. McIlraith},
+  booktitle=CCAI18,
+  pages={72--83},
+  year={2018},
+  organization={Springer}
+}
+
+@article{DBLP:journals/ral/ShahLS20,
+  author    = {Ankit Shah and
+               Shen Li and
+               Julie Shah},
+  title     = {{Planning With Uncertain Specifications (PUnS)}},
+  journal   = {{IEEE} Robotics Autom. Lett.},
+  volume    = {5},
+  number    = {2},
+  pages     = {3414--3421},
+  year      = {2020}}
+
+@article{DBLP:journals/ai/BacchusK00,
+  title={{Using Temporal Logics to Express Search Control Knowledge for Planning}},
+  author={Bacchus, Fahiem and Kabanza, Froduald},
+  journal={Artificial Intelligence},
+  volume={116},
+  number={1-2},
+  pages={123--191},
+  year={2000},
+  publisher={Elsevier}
+}
+
+@book{DBLP:books/daglib/0020348,
+  author    = {Christel Baier and
+               Joost{-}Pieter Katoen},
+  title     = {{Principles of Model Checking}},
+  publisher = {{MIT} Press},
+  year      = {2008},
+}
+
+
+@inproceedings{DBLP:conf/nips/SohnOL18,
+ author = {Sohn, Sungryull and Oh, Junhyuk and Lee, Honglak},
+ booktitle = NIPS18,
+ pages = {7156--7166},
+ title = {{Hierarchical Reinforcement Learning for Zero-shot Generalization with Subtask Dependencies}},
+ volume = {31},
+ year = {2018}
+}
+
+@inproceedings{li2016temporal,
+  author={X. {Li} and C. {Vasile} and C. {Belta}},
+  booktitle= IROS17, 
+  title={{Reinforcement Learning with Temporal Logic Rewards}}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={3834-3839},
+}
+
+@inproceedings{DBLP:conf/nips/ShahKSL18,
+  author    = {Ankit Shah and
+               Pritish Kamath and
+               Julie A. Shah and
+               Shen Li},
+  title     = {{Bayesian Inference of Temporal Task Specifications from Demonstrations}},
+  booktitle = NIPS18,
+  pages     = {3808--3817},
+  year      = {2018}
+}
+
+@inproceedings{DBLP:conf/hri/ShahS20,
+  author    = {Ankit J. Shah and
+               Julie Shah},
+  editor    = {Tony Belpaeme and
+               James Young and
+               Hatice Gunes and
+               Laurel D. Riek},
+  title     = {{Interactive Robot Training for Temporal Tasks}},
+  booktitle = HRI20,
+  pages     = {603--605},
+  publisher = {{ACM}},
+  year      = {2020}
+}
+
+@inproceedings{DBLP:conf/cdc/KasenbergS17,
+  author    = {Daniel Kasenberg and
+               Matthias Scheutz},
+  title     = {Interpretable apprenticeship learning with temporal logic specifications},
+  booktitle = CDC17,
+  pages     = {4914--4921},
+  publisher = {{IEEE}},
+  year      = {2017}
+}
+
+@inproceedings{aksaray2016q,
+  title={{Q-learning for Robust Satisfaction of Signal Temporal Logic Specifications}},
+  author={Aksaray, Derya and Jones, Austin and Kong, Zhaodan and Schwager, Mac and Belta, Calin},
+  booktitle=CDC16,
+  pages={6565--6570},
+  year={2016},
+  organization={IEEE}
+}
+
+@article{littman2017environment,
+  title={{Environment-Independent Task Specifications via GLTL}},
+  author={Littman, Michael L and Topcu, Ufuk and Fu, Jie and Isbell, Charles and Wen, Min and MacGlashan, James},
+  journal={arXiv preprint arXiv:1704.04341},
+  year={2017}
+}
+
+@article{hasanbeig2018logically,
+  title={{Logically-Constrained Reinforcement Learning}},
+  author={Hasanbeig, Mohammadhosein and Abate, Alessandro and Kroening, Daniel},
+  journal={arXiv preprint arXiv:1801.08099},
+  year={2018}
+}
+
+@inproceedings{hasanbeig2020deep,
+  title={{Deep Reinforcement Learning with Temporal Logics}},
+  author={Hasanbeig, Mohammadhosein and Kroening, Daniel and Abate, Alessandro},
+  booktitle=FORMATS20,
+  pages={1--22},
+  year={2020},
+  organization={Springer}
+}
+
+@inproceedings{li2018policy,
+  title={{A Policy Search Method for Temporal Logic Specified Reinforcement Learning Tasks}},
+  author={Li, Xiao and Ma, Yao and Belta, Calin},
+  booktitle=ACC18,
+  pages={240--245},
+  year={2018},
+  organization={IEEE}
+}
+
+@inproceedings{fasel2009task,
+  title={{A Task Specification Language for Bootstrap Learning}},
+  author={Fasel, Ian R and Quinlan, Michael and Stone, Peter},
+  booktitle={Proceedings of the AAAI Spring Symposium on Agents that Learn from Human Teachers},
+  pages={48--55},
+  year={2009}
+}
+
+@article{DBLP:journals/arobots/MoarrefK20,
+  author    = {Salar Moarref and
+               Hadas Kress{-}Gazit},
+  title     = {Automated synthesis of decentralized controllers for robot swarmsfrom high-level temporal logic specifications},
+  journal   = {Autonomous Robots},
+  volume    = {44},
+  number    = {3-4},
+  pages     = {585--600},
+  year      = {2020}
+}
+
+@inproceedings{DBLP:conf/mrs/MoarrefK17,
+  author    = {Salar Moarref and
+               Hadas Kress{-}Gazit},
+  title     = {Decentralized control of robotic swarms from high-level temporal logic specifications},
+  booktitle = MRS17,
+  pages     = {17--23},
+  publisher = {{IEEE}},
+  year      = {2017}
+}
+
+@inproceedings{DBLP:conf/iros/RamanFK12,
+  author    = {Vasumathi Raman and
+               Cameron Finucane and
+               Hadas Kress{-}Gazit},
+  title     = {Temporal logic robot mission planning for slow and fast actions},
+  booktitle = IROS12,
+  pages     = {251--256},
+  publisher = {{IEEE}},
+  year      = {2012}
+}
+
+@inproceedings{scheutz2009,
+  title={{What to Do and How to Do It: Translating Natural Language Directives Into Temporal and Dynamic Logic Representation for Goal Management and Action Execution}},
+  author={Dzifcak, Juraj and Scheutz, Matthias and Baral, Chitta and Schermerhorn, Paul},
+  booktitle=ICRA09,
+  pages={4163--4168},
+  year={2009},
+  organization={IEEE}
+}
+
+@inproceedings{brunello2019synthesis,
+  title={{Synthesis of LTL formulas from natural language texts: State of the art and research directions}},
+  author={Brunello, Andrea and Montanari, Angelo and Reynolds, Mark},
+  booktitle=TIME19,
+  year={2019},
+  organization={Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik}
+}
+
+@article{wang2020learning,
+  title={{Learning a Natural-Language to LTL Executable Semantic Parser for Grounded Robotics}},
+  author={Wang, Christopher and Ross, Candace and Katz, Boris and Barbu, Andrei},
+  journal={arXiv preprint arXiv:2008.03277},
+  year={2020}
+}
+
+@inproceedings{spotsoftware,
+  title={{Spot 2.0—A Framework for LTL and $\omega$-Automata Manipulation}},
+  author={Duret-Lutz, Alexandre and Lewkowicz, Alexandre and Fauchille, Amaury and Michaud, Thibaud and Renault, Etienne and Xu, Laurent},
+  booktitle=ATVA16,
+  pages={122--129},
+  year={2016},
+  organization={Springer}
+}
+
+@article{DBLP:conf/nips/ParrR97,
+  title={{Reinforcement Learning with Hierarchies of Machines}},
+  author={Parr, Ronald and Russell, Stuart},
+  journal=NIPS98,
+  pages={1043--1049},
+  year={1998}
+}
+
+@article{vaezipoor2020learning,
+  title={Learning Branching Heuristics for Propositional Model Counting},
+  author={Vaezipoor, Pashootan and Lederman, Gil and Wu, Yuhuai and Maddison, Chris J and Grosse, Roger and Lee, Edward and Seshia, Sanjit A and Bacchus, Fahiem},
+  journal={arXiv preprint arXiv:2007.03204},
+  year={2020}
+}
+
+@article{selsam2018learning,
+  title={Learning a SAT solver from single-bit supervision},
+  author={Selsam, Daniel and Lamm, Matthew and B{\"u}nz, Benedikt and Liang, Percy and de Moura, Leonardo and Dill, David L},
+  journal={arXiv preprint arXiv:1802.03685},
+  year={2018}
+}
+
+@inproceedings{
+hill2021grounded,
+title={{Grounded Language Learning Fast and Slow}},
+author={Felix Hill and Olivier Tieleman and Tamara von Glehn and Nathaniel Wong and Hamza Merzic and Stephen Clark},
+booktitle=ICLR21,
+year={2021}
+}
+
+@article{kupferman2001model,
+  title={Model checking of safety properties},
+  author={Kupferman, Orna and Vardi, Moshe Y.},
+  journal={Formal Methods in System Design},
+  volume={19},
+  number={3},
+  pages={291--314},
+  year={2001},
+  publisher={Springer}
+}
+
+@inproceedings{lake2019compositional,
+ author = {Lake, Brenden M},
+ booktitle = NIPS19,
+ pages = {},
+ title = {{Compositional generalization through meta sequence-to-sequence learning}},
+ volume = {32},
+ year = {2019}
+}

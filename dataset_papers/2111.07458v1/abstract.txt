@@ -1,0 +1,16 @@
+This paper investigates the problem of best arm identification in
+$\textit{contaminated}$ stochastic multi-arm bandits. In this setting, the
+rewards obtained from any arm are replaced by samples from an adversarial model
+with probability $\varepsilon$. A fixed confidence (infinite-horizon) setting
+is considered, where the goal of the learner is to identify the arm with the
+largest mean. Owing to the adversarial contamination of the rewards, each arm's
+mean is only partially identifiable. This paper proposes two algorithms, a
+gap-based algorithm and one based on the successive elimination, for best arm
+identification in sub-Gaussian bandits. These algorithms involve mean estimates
+that achieve the optimal error guarantee on the deviation of the true mean from
+the estimate asymptotically. Furthermore, these algorithms asymptotically
+achieve the optimal sample complexity. Specifically, for the gap-based
+algorithm, the sample complexity is asymptotically optimal up to constant
+factors, while for the successive elimination-based algorithm, it is optimal up
+to logarithmic factors. Finally, numerical experiments are provided to
+illustrate the gains of the algorithms compared to the existing baselines.

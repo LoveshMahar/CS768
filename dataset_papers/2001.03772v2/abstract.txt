@@ -1,0 +1,15 @@
+In learning with noisy labels, for every instance, its label can randomly
+walk to other classes following a transition distribution which is named a
+noise model. Well-studied noise models are all instance-independent, namely,
+the transition depends only on the original label but not the instance itself,
+and thus they are less practical in the wild. Fortunately, methods based on
+instance-dependent noise have been studied, but most of them have to rely on
+strong assumptions on the noise models. To alleviate this issue, we introduce
+confidence-scored instance-dependent noise (CSIDN), where each instance-label
+pair is equipped with a confidence score. We find with the help of confidence
+scores, the transition distribution of each instance can be approximately
+estimated. Similarly to the powerful forward correction for
+instance-independent noise, we propose a novel instance-level forward
+correction for CSIDN. We demonstrate the utility and effectiveness of our
+method through multiple experiments under synthetic label noise and real-world
+unknown noise.

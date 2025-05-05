@@ -1,0 +1,15 @@
+We study the problem of learning from aggregate observations where
+supervision signals are given to sets of instances instead of individual
+instances, while the goal is still to predict labels of unseen individuals. A
+well-known example is multiple instance learning (MIL). In this paper, we
+extend MIL beyond binary classification to other problems such as multiclass
+classification and regression. We present a general probabilistic framework
+that accommodates a variety of aggregate observations, e.g., pairwise
+similarity/triplet comparison for classification and mean/difference/rank
+observation for regression. Simple maximum likelihood solutions can be applied
+to various differentiable models such as deep neural networks and gradient
+boosting machines. Moreover, we develop the concept of consistency up to an
+equivalence relation to characterize our estimator and show that it has nice
+convergence properties under mild assumptions. Experiments on three problem
+settings -- classification via triplet comparison and regression via mean/rank
+observation indicate the effectiveness of the proposed method.

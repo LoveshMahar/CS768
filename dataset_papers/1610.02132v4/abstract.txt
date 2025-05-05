@@ -1,0 +1,26 @@
+Parallel implementations of stochastic gradient descent (SGD) have received
+significant research attention, thanks to excellent scalability properties of
+this algorithm, and to its efficiency in the context of training deep neural
+networks. A fundamental barrier for parallelizing large-scale SGD is the fact
+that the cost of communicating the gradient updates between nodes can be very
+large. Consequently, lossy compression heuristics have been proposed, by which
+nodes only communicate quantized gradients. Although effective in practice,
+these heuristics do not always provably converge, and it is not clear whether
+they are optimal.
+  In this paper, we propose Quantized SGD (QSGD), a family of compression
+schemes which allow the compression of gradient updates at each node, while
+guaranteeing convergence under standard assumptions. QSGD allows the user to
+trade off compression and convergence time: it can communicate a sublinear
+number of bits per iteration in the model dimension, and can achieve
+asymptotically optimal communication cost. We complement our theoretical
+results with empirical data, showing that QSGD can significantly reduce
+communication cost, while being competitive with standard uncompressed
+techniques on a variety of real tasks.
+  In particular, experiments show that gradient quantization applied to
+training of deep neural networks for image classification and automated speech
+recognition can lead to significant reductions in communication cost, and
+end-to-end training time. For instance, on 16 GPUs, we are able to train a
+ResNet-152 network on ImageNet 1.8x faster to full accuracy. Of note, we show
+that there exist generic parameter settings under which all known network
+architectures preserve or slightly improve their full accuracy when using
+quantization.

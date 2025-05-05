@@ -1,0 +1,614 @@
+% --------------------Transformer, sequence modeling-----
+@article{transformer,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  journal={Advances in Neural Information Processing Systems},
+  volume={30},
+  year={2017}
+}
+@article{gpt3,
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={1877--1901},
+  year={2020}
+}
+
+@article{kashiri2018overview,
+  title={An overview on principles for energy efficient robot locomotion},
+  author={Kashiri, Navvab and Abate, Andy and Abram, Sabrina J and Albu-Schaffer, Alin and Clary, Patrick J and Daley, Monica and Faraji, Salman and Furnemont, Raphael and Garabini, Manolo and Geyer, Hartmut and others},
+  journal={Frontiers in Robotics and AI},
+  volume={5},
+  pages={129},
+  year={2018},
+  publisher={Frontiers Media SA}
+}
+
+@article{DT,
+  title={Decision transformer: Reinforcement learning via sequence modeling},
+  author={Chen, Lili and Lu, Kevin and Rajeswaran, Aravind and Lee, Kimin and Grover, Aditya and Laskin, Misha and Abbeel, Pieter and Srinivas, Aravind and Mordatch, Igor},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={15084--15097},
+  year={2021}
+}
+
+@article{TT,
+  title={Offline reinforcement learning as one big sequence modeling problem},
+  author={Janner, Michael and Li, Qiyang and Levine, Sergey},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={1273--1286},
+  year={2021}
+}
+@inproceedings{q_transformer,
+  title={Q-transformer: Scalable offline reinforcement learning via autoregressive q-functions},
+  author={Chebotar, Yevgen and Vuong, Quan and Hausman, Karol and Xia, Fei and Lu, Yao and Irpan, Alex and Kumar, Aviral and Yu, Tianhe and Herzog, Alexander and Pertsch, Karl and others},
+  booktitle={Conference on Robot Learning},
+  pages={3909--3928},
+  year={2023},
+  organization={PMLR}
+}
+@article{flashattention,
+  title={Flashattention: Fast and memory-efficient exact attention with io-awareness},
+  author={Dao, Tri and Fu, Dan and Ermon, Stefano and Rudra, Atri and R{\'e}, Christopher},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={16344--16359},
+  year={2022}
+}
+@article{flashattention2,
+  title={Flashattention-2: Faster attention with better parallelism and work partitioning},
+  author={Dao, Tri},
+  journal={arXiv preprint arXiv:2307.08691},
+  year={2023}
+}
+@article{Reformer,
+  title={Reformer: The efficient transformer},
+  author={Kitaev, Nikita and Kaiser, {\L}ukasz and Levskaya, Anselm},
+  journal={arXiv preprint arXiv:2001.04451},
+  year={2020}
+}
+@article{sparse_transformer,
+  title={Generating long sequences with sparse transformers},
+  author={Child, Rewon and Gray, Scott and Radford, Alec and Sutskever, Ilya},
+  journal={arXiv preprint arXiv:1904.10509},
+  year={2019}
+}
+@article{streamingllm,  
+ title={Efficient Streaming Language Models with Attention Sinks}, 
+ author={Xiao, Guangxuan and Tian, Yuandong and Chen, Beidi and Han, Song and Lewis, Mike}, 
+ year={2023}, 
+ month={Sep}, 
+ language={en-US} 
+ }
+@article{transformerxl,
+  title={Transformer-xl: Attentive language models beyond a fixed-length context},
+  author={Dai, Zihang and Yang, Zhilin and Yang, Yiming and Carbonell, Jaime and Le, Quoc V and Salakhutdinov, Ruslan},
+  journal={arXiv preprint arXiv:1901.02860},
+  year={2019}
+}
+@inproceedings{linear_transformers,
+  title={Transformers are rnns: Fast autoregressive transformers with linear attention},
+  author={Katharopoulos, Angelos and Vyas, Apoorv and Pappas, Nikolaos and Fleuret, Fran{\c{c}}ois},
+  booktitle={International conference on machine learning},
+  pages={5156--5165},
+  year={2020},
+  organization={PMLR}
+}
+@article{peng2023rwkv,
+  title={RWKV: Reinventing RNNs for the Transformer Era},
+  author={Peng, Bo and Alcaide, Eric and Anthony, Quentin and Albalak, Alon and Arcadinho, Samuel and Cao, Huanqi and Cheng, Xin and Chung, Michael and Grella, Matteo and GV, Kranthi Kiran and others},
+  journal={arXiv preprint arXiv:2305.13048},
+  year={2023}
+}
+@article{h3,
+  title={Hungry hungry hippos: Towards language modeling with state space models},
+  author={Fu, Daniel Y and Dao, Tri and Saab, Khaled K and Thomas, Armin W and Rudra, Atri and R{\'e}, Christopher},
+  journal={arXiv preprint arXiv:2212.14052},
+  year={2022}
+}
+@article{poli2023hyena,
+  title={Hyena hierarchy: Towards larger convolutional language models},
+  author={Poli, Michael and Massaroli, Stefano and Nguyen, Eric and Fu, Daniel Y and Dao, Tri and Baccus, Stephen and Bengio, Yoshua and Ermon, Stefano and R{\'e}, Christopher},
+  journal={arXiv preprint arXiv:2302.10866},
+  year={2023}
+}
+@article{retnet,
+  title={Retentive network: A successor to transformer for large language models},
+  author={Sun, Yutao and Dong, Li and Huang, Shaohan and Ma, Shuming and Xia, Yuqing and Xue, Jilong and Wang, Jianyong and Wei, Furu},
+  journal={arXiv preprint arXiv:2307.08621},
+  year={2023}
+}
+@article{mamba,
+  title={Mamba: Linear-time sequence modeling with selective state spaces},
+  author={Gu, Albert and Dao, Tri},
+  journal={arXiv preprint arXiv:2312.00752},
+  year={2023}
+}
+@article{ba2016layernorm,
+  title={Layer normalization},
+  author={Ba, Jimmy Lei and Kiros, Jamie Ryan and Hinton, Geoffrey E},
+  journal={arXiv preprint arXiv:1607.06450},
+  year={2016}
+}
+@article{vit,
+  title={An image is worth 16x16 words: Transformers for image recognition at scale},
+  author={Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and others},
+  journal={arXiv preprint arXiv:2010.11929},
+  year={2020}
+}
+% ---------------- large transformer decision model ----
+@article{gato,
+  title={A generalist agent},
+  author={Reed, Scott and Zolna, Konrad and Parisotto, Emilio and Colmenarejo, Sergio Gomez and Novikov, Alexander and Barth-Maron, Gabriel and Gimenez, Mai and Sulsky, Yury and Kay, Jackie and Springenberg, Jost Tobias and others},
+  journal={arXiv preprint arXiv:2205.06175},
+  year={2022}
+}
+@article{rt1,
+  title={Rt-1: Robotics transformer for real-world control at scale},
+  author={Brohan, Anthony and Brown, Noah and Carbajal, Justice and Chebotar, Yevgen and Dabis, Joseph and Finn, Chelsea and Gopalakrishnan, Keerthana and Hausman, Karol and Herzog, Alex and Hsu, Jasmine and others},
+  journal={arXiv preprint arXiv:2212.06817},
+  year={2022}
+}
+@article{rt2,
+  title={Rt-2: Vision-language-action models transfer web knowledge to robotic control},
+  author={Brohan, Anthony and Brown, Noah and Carbajal, Justice and Chebotar, Yevgen and Chen, Xi and Choromanski, Krzysztof and Ding, Tianli and Driess, Danny and Dubey, Avinava and Finn, Chelsea and others},
+  journal={arXiv preprint arXiv:2307.15818},
+  year={2023}
+}
+@article{robocat,
+  title={RoboCat: A Self-Improving Foundation Agent for Robotic Manipulation},
+  author={Bousmalis, Konstantinos and Vezzani, Giulia and Rao, Dushyant and Devin, Coline and Lee, Alex X and Bauza, Maria and Davchev, Todor and Zhou, Yuxiang and Gupta, Agrim and Raju, Akhil and others},
+  journal={arXiv preprint arXiv:2306.11706},
+  year={2023}
+}
+@inproceedings{vima,
+  title={Vima: General robot manipulation with multimodal prompts},
+  author={Jiang, Yunfan and Gupta, Agrim and Zhang, Zichen and Wang, Guanzhi and Dou, Yongqiang and Chen, Yanjun and Fei-Fei, Li and Anandkumar, Anima and Zhu, Yuke and Fan, Linxi},
+  booktitle={NeurIPS 2022 Foundation Models for Decision Making Workshop},
+  year={2022}
+}
+@article{rtx,
+  title={Open x-embodiment: Robotic learning datasets and rt-x models},
+  author={Padalkar, Abhishek and Pooley, Acorn and Jain, Ajinkya and Bewley, Alex and Herzog, Alex and Irpan, Alex and Khazatsky, Alexander and Rai, Anant and Singh, Anikait and Brohan, Anthony and others},
+  journal={arXiv preprint arXiv:2310.08864},
+  year={2023}
+}
+
+@article{gupta2022metamorph,
+  title={Metamorph: Learning universal controllers with transformers},
+  author={Gupta, Agrim and Fan, Linxi and Ganguli, Surya and Fei-Fei, Li},
+  journal={arXiv preprint arXiv:2203.11931},
+  year={2022}
+}
+@article{db1,
+  title={On Realization of Intelligent Decision-Making in the Real World: A Foundation Decision Model Perspective},
+  author={Wen, Ying and Wan, Ziyu and Zhou, Ming and Hou, Shufang and Cao, Zhe and Le, Chenyang and Chen, Jingxiao and Tian, Zheng and Zhang, Weinan and Wang, Jun},
+  journal={arXiv preprint arXiv:2212.12669},
+  year={2022}
+}
+@article{gu2023rttrajectory,
+  title={Rt-trajectory: Robotic task generalization via hindsight trajectory sketches},
+  author={Gu, Jiayuan and Kirmani, Sean and Wohlhart, Paul and Lu, Yao and Arenas, Montserrat Gonzalez and Rao, Kanishka and Yu, Wenhao and Fu, Chuyuan and Gopalakrishnan, Keerthana and Xu, Zhuo and others},
+  journal={arXiv preprint arXiv:2311.01977},
+  year={2023}
+}
+@article{gdm2024autort,
+  title={Autort: Embodied foundation models for large scale orchestration of robotic agents},
+  author={Ahn, Michael and Dwibedi, Debidatta and Finn, Chelsea and Arenas, Montse Gonzalez and Gopalakrishnan, Keerthana and Hausman, Karol and Ichter, Brian and Irpan, Alex and Joshi, Nikhil and Julian, Ryan and others},
+  journal={arXiv preprint arXiv:2401.12963},
+  year={2024}
+}
+@article{leal2023sarart,
+  title={Sara-rt: Scaling up robotics transformers with self-adaptive robust attention},
+  author={Leal, Isabel and Choromanski, Krzysztof and Jain, Deepali and Dubey, Avinava and Varley, Jake and Ryoo, Michael and Lu, Yao and Liu, Frederick and Sindhwani, Vikas and Vuong, Quan and others},
+  journal={arXiv preprint arXiv:2312.01990},
+  year={2023}
+}
+% ------------------- robotics/continuous control
+
+@article{cmu_xiong2024adaptive,
+  title={Adaptive mobile manipulation for articulated objects in the open world},
+  author={Xiong, Haoyu and Mendonca, Russell and Shaw, Kenneth and Pathak, Deepak},
+  journal={arXiv preprint arXiv:2401.14403},
+  year={2024}
+}
+@article{liu2024okrobot,
+  title={Ok-robot: What really matters in integrating open-knowledge models for robotics},
+  author={Liu, Peiqi and Orru, Yaswanth and Paxton, Chris and Shafiullah, Nur Muhammad Mahi and Pinto, Lerrel},
+  journal={arXiv preprint arXiv:2401.12202},
+  year={2024}
+}
+@article{eth2020,
+  title={Learning quadrupedal locomotion over challenging terrain},
+  author={Lee, Joonho and Hwangbo, Jemin and Wellhausen, Lorenz and Koltun, Vladlen and Hutter, Marco},
+  journal={Science robotics},
+  volume={5},
+  number={47},
+  pages={eabc5986},
+  year={2020},
+  publisher={American Association for the Advancement of Science}
+}
+@inproceedings{eth2022,
+  title={Learning to walk in minutes using massively parallel deep reinforcement learning},
+  author={Rudin, Nikita and Hoeller, David and Reist, Philipp and Hutter, Marco},
+  booktitle={Conference on Robot Learning},
+  pages={91--100},
+  year={2022},
+  organization={PMLR}
+}
+
+@inproceedings{mit2022,
+  title={Walk these ways: Tuning robot control for generalization with multiplicity of behavior},
+  author={Margolis, Gabriel B and Agrawal, Pulkit},
+  booktitle={Conference on Robot Learning},
+  pages={22--31},
+  year={2023},
+  organization={PMLR}
+}
+
+@inproceedings{genloco,
+  title={Genloco: Generalized locomotion controllers for quadrupedal robots},
+  author={Feng, Gilbert and Zhang, Hongbo and Li, Zhongyu and Peng, Xue Bin and Basireddy, Bhuvan and Yue, Linzhu and Song, Zhitao and Yang, Lizhi and Liu, Yunhui and Sreenath, Koushil and others},
+  booktitle={Conference on Robot Learning},
+  pages={1893--1903},
+  year={2023},
+  organization={PMLR}
+}
+@article{rma,
+  title={Rma: Rapid motor adaptation for legged robots},
+  author={Kumar, Ashish and Fu, Zipeng and Pathak, Deepak and Malik, Jitendra},
+  journal={arXiv preprint arXiv:2107.04034},
+  year={2021}
+}
+@inproceedings{tert,
+  title={Sim-to-real transfer for quadrupedal locomotion via terrain transformer},
+  author={Lai, Hang and Zhang, Weinan and He, Xialin and Yu, Chen and Tian, Zheng and Yu, Yong and Wang, Jun},
+  booktitle={2023 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={5141--5147},
+  year={2023},
+  organization={IEEE}
+}
+
+@inproceedings{eat,
+  title={Multi-embodiment legged robot control as a sequence modeling problem},
+  author={Yu, Chen and Zhang, Weinan and Lai, Hang and Tian, Zheng and Kneip, Laurent and Wang, Jun},
+  booktitle={2023 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={7250--7257},
+  year={2023},
+  organization={IEEE}
+}
+@inproceedings{egocentric,
+  title={Legged locomotion in challenging terrains using egocentric vision},
+  author={Agarwal, Ananye and Kumar, Ashish and Malik, Jitendra and Pathak, Deepak},
+  booktitle={Conference on Robot Learning},
+  pages={403--415},
+  year={2023},
+  organization={PMLR}
+}
+
+@article{LocoTransformer,
+  title={Learning vision-guided quadrupedal locomotion end-to-end with cross-modal transformers},
+  author={Yang, Ruihan and Zhang, Minghao and Hansen, Nicklas and Xu, Huazhe and Wang, Xiaolong},
+  journal={arXiv preprint arXiv:2107.03996},
+  year={2021}
+}
+@article{HumanoidTransformer,
+  title={Learning Humanoid Locomotion with Transformers},
+  author={Radosavovic, Ilija and Xiao, Tete and Zhang, Bike and Darrell, Trevor and Malik, Jitendra and Sreenath, Koushil},
+  journal={arXiv preprint arXiv:2303.03381},
+  year={2023}
+}
+@article{mobile_aloha,
+  title={Mobile aloha: Learning bimanual mobile manipulation with low-cost whole-body teleoperation},
+  author={Fu, Zipeng and Zhao, Tony Z and Finn, Chelsea},
+  journal={arXiv preprint arXiv:2401.02117},
+  year={2024}
+}
+
+# ------------------------ RL for robotic-------------------------------------------
+# manipulation
+@article{gu2016deep,
+  title={Deep reinforcement learning for robotic manipulation},
+  author={Gu, Shixiang and Holly, Ethan and Lillicrap, Timothy P and Levine, Sergey},
+  journal={arXiv preprint arXiv:1610.00633},
+  volume={1},
+  pages={1},
+  year={2016}
+}
+@inproceedings{gu2017deep,
+  title={Deep reinforcement learning for robotic manipulation with asynchronous off-policy updates},
+  author={Gu, Shixiang and Holly, Ethan and Lillicrap, Timothy and Levine, Sergey},
+  booktitle={2017 IEEE international conference on robotics and automation (ICRA)},
+  pages={3389--3396},
+  year={2017},
+  organization={IEEE}
+}
+@inproceedings{kalashnikov2018scalable,
+  title={Scalable deep reinforcement learning for vision-based robotic manipulation},
+  author={Kalashnikov, Dmitry and Irpan, Alex and Pastor, Peter and Ibarz, Julian and Herzog, Alexander and Jang, Eric and Quillen, Deirdre and Holly, Ethan and Kalakrishnan, Mrinal and Vanhoucke, Vincent and others},
+  booktitle={Conference on Robot Learning},
+  pages={651--673},
+  year={2018},
+  organization={PMLR}
+}
+@inproceedings{lee2022beyond,
+  title={Beyond pick-and-place: Tackling robotic stacking of diverse shapes},
+  author={Lee, Alex X and Devin, Coline Manon and Zhou, Yuxiang and Lampe, Thomas and Bousmalis, Konstantinos and Springenberg, Jost Tobias and Byravan, Arunkumar and Abdolmaleki, Abbas and Gileadi, Nimrod and Khosid, David and others},
+  booktitle={5th Annual Conference on Robot Learning},
+  year={2021}
+}
+
+% dexterous
+@inproceedings{zhu2019dexterous,
+  title={Dexterous manipulation with deep reinforcement learning: Efficient, general, and low-cost},
+  author={Zhu, Henry and Gupta, Abhishek and Rajeswaran, Aravind and Levine, Sergey and Kumar, Vikash},
+  booktitle={2019 International Conference on Robotics and Automation (ICRA)},
+  pages={3651--3657},
+  year={2019},
+  organization={IEEE}
+}
+@article{chen2022towards,
+  title={Towards human-level bimanual dexterous manipulation with reinforcement learning},
+  author={Chen, Yuanpei and Wu, Tianhao and Wang, Shengjie and Feng, Xidong and Jiang, Jiechuan and Lu, Zongqing and McAleer, Stephen and Dong, Hao and Zhu, Song-Chun and Yang, Yaodong},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={5150--5163},
+  year={2022}
+}
+@inproceedings{gupta2016learning,
+  title={Learning dexterous manipulation for a soft robotic hand from human demonstrations},
+  author={Gupta, Abhishek and Eppner, Clemens and Levine, Sergey and Abbeel, Pieter},
+  booktitle={2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={3786--3793},
+  year={2016},
+  organization={IEEE}
+}
+@article{rajeswaran2017learning,
+  title={Learning complex dexterous manipulation with deep reinforcement learning and demonstrations},
+  author={Rajeswaran, Aravind and Kumar, Vikash and Gupta, Abhishek and Vezzani, Giulia and Schulman, John and Todorov, Emanuel and Levine, Sergey},
+  journal={arXiv preprint arXiv:1709.10087},
+  year={2017}
+}
+@article{andrychowicz2020learning,
+  title={Learning dexterous in-hand manipulation},
+  author={Andrychowicz, OpenAI: Marcin and Baker, Bowen and Chociej, Maciek and Jozefowicz, Rafal and McGrew, Bob and Pachocki, Jakub and Petron, Arthur and Plappert, Matthias and Powell, Glenn and Ray, Alex and others},
+  journal={The International Journal of Robotics Research},
+  volume={39},
+  number={1},
+  pages={3--20},
+  year={2020},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+
+% multi-task
+@article{kumar2022pre,
+  title={Pre-training for robots: Offline rl enables learning new tasks from a handful of trials},
+  author={Kumar, Aviral and Singh, Anikait and Ebert, Frederik and Nakamoto, Mitsuhiko and Yang, Yanlai and Finn, Chelsea and Levine, Sergey},
+  journal={arXiv preprint arXiv:2210.05178},
+  year={2022}
+}
+@article{kalashnikov2021mt,
+  title={Mt-opt: Continuous multi-task robotic reinforcement learning at scale},
+  author={Kalashnikov, Dmitry and Varley, Jacob and Chebotar, Yevgen and Swanson, Benjamin and Jonschkowski, Rico and Finn, Chelsea and Levine, Sergey and Hausman, Karol},
+  journal={arXiv preprint arXiv:2104.08212},
+  year={2021}
+}
+@article{cabi2019scaling,
+  title={Scaling data-driven robotics with reward sketching and batch reinforcement learning},
+  author={Cabi, Serkan and Colmenarejo, Sergio G{\'o}mez and Novikov, Alexander and Konyushkova, Ksenia and Reed, Scott and Jeong, Rae and Zolna, Konrad and Aytar, Yusuf and Budden, David and Vecerik, Mel and others},
+  journal={arXiv preprint arXiv:1909.12200},
+  year={2019}
+}
+@article{yu2020gradient,
+  title={Gradient surgery for multi-task learning},
+  author={Yu, Tianhe and Kumar, Saurabh and Gupta, Abhishek and Levine, Sergey and Hausman, Karol and Finn, Chelsea},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={5824--5836},
+  year={2020}
+}
+
+# ------------------------ RL -------------------------------------------
+@article{ppo,
+  title={Proximal policy optimization algorithms},
+  author={Schulman, John and Wolski, Filip and Dhariwal, Prafulla and Radford, Alec and Klimov, Oleg},
+  journal={arXiv preprint arXiv:1707.06347},
+  year={2017}
+}
+@article{d4rl,
+  title={D4rl: Datasets for deep data-driven reinforcement learning},
+  author={Fu, Justin and Kumar, Aviral and Nachum, Ofir and Tucker, George and Levine, Sergey},
+  journal={arXiv preprint arXiv:2004.07219},
+  year={2020}
+}
+
+@article{kumar2020conservative,
+  title={Conservative q-learning for offline reinforcement learning},
+  author={Kumar, Aviral and Zhou, Aurick and Tucker, George and Levine, Sergey},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={1179--1191},
+  year={2020}
+}
+
+@article{wu2019behavior,
+  title={Behavior regularized offline reinforcement learning},
+  author={Wu, Yifan and Tucker, George and Nachum, Ofir},
+  journal={arXiv preprint arXiv:1911.11361},
+  year={2019}
+}
+
+@article{kumar2019stabilizing,
+  title={Stabilizing off-policy q-learning via bootstrapping error reduction},
+  author={Kumar, Aviral and Fu, Justin and Soh, Matthew and Tucker, George and Levine, Sergey},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+@article{peng2019advantage,
+  title={Advantage-weighted regression: Simple and scalable off-policy reinforcement learning},
+  author={Peng, Xue Bin and Kumar, Aviral and Zhang, Grace and Levine, Sergey},
+  journal={arXiv preprint arXiv:1910.00177},
+  year={2019}
+}
+@article{isaacgym,
+  title={Isaac gym: High performance gpu-based physics simulation for robot learning},
+  author={Makoviychuk, Viktor and Wawrzyniak, Lukasz and Guo, Yunrong and Lu, Michelle and Storey, Kier and Macklin, Miles and Hoeller, David and Rudin, Nikita and Allshire, Arthur and Handa, Ankur and others},
+  journal={arXiv preprint arXiv:2108.10470},
+  year={2021}
+}
+@article{gym,
+  title={Openai gym},
+  author={Brockman, Greg and Cheung, Vicki and Pettersson, Ludwig and Schneider, Jonas and Schulman, John and Tang, Jie and Zaremba, Wojciech},
+  journal={arXiv preprint arXiv:1606.01540},
+  year={2016}
+}
+@inproceedings{sandha2021sim2real,
+  title={Sim2real transfer for deep reinforcement learning with stochastic state transition delays},
+  author={Sandha, Sandeep Singh and Garcia, Luis and Balaji, Bharathan and Anwar, Fatima and Srivastava, Mani},
+  booktitle={Conference on Robot Learning},
+  pages={1066--1083},
+  year={2021},
+  organization={PMLR}
+}
+# ------------------------ others -------------------------------------------
+@article{trefethen1996finite,
+  title={Finite difference and spectral methods for ordinary and partial differential equations},
+  author={Trefethen, Lloyd Nicholas},
+  year={1996},
+  publisher={Cornell University-Department of Computer Science and Center for Applied~…}
+}
+
+@article{karniadakis2021physics,
+  title={Physics-informed machine learning},
+  author={Karniadakis, George Em and Kevrekidis, Ioannis G and Lu, Lu and Perdikaris, Paris and Wang, Sifan and Yang, Liu},
+  journal={Nature Reviews Physics},
+  volume={3},
+  number={6},
+  pages={422--440},
+  year={2021},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{hao2022physics,
+  title={Physics-informed machine learning: A survey on problems, methods and applications},
+  author={Hao, Zhongkai and Liu, Songming and Zhang, Yichi and Ying, Chengyang and Feng, Yao and Su, Hang and Zhu, Jun},
+  journal={arXiv preprint arXiv:2211.08064},
+  year={2022}
+}
+
+@inproceedings{qi2017pointnet,
+  title={Pointnet: Deep learning on point sets for 3d classification and segmentation},
+  author={Qi, Charles R and Su, Hao and Mo, Kaichun and Guibas, Leonidas J},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={652--660},
+  year={2017}
+}
+@article{zhang2019graph,
+  title={Graph convolutional networks: a comprehensive review},
+  author={Zhang, Si and Tong, Hanghang and Xu, Jiejun and Maciejewski, Ross},
+  journal={Computational Social Networks},
+  volume={6},
+  number={1},
+  pages={1--23},
+  year={2019},
+  publisher={Springer}
+}
+
+@article{chen2018neural,
+  title={Neural ordinary differential equations},
+  author={Chen, Ricky TQ and Rubanova, Yulia and Bettencourt, Jesse and Duvenaud, David K},
+  journal={Advances in Neural Information Processing Systems},
+  volume={31},
+  year={2018}
+}
+
+@article{li2020fourier,
+  title={Fourier neural operator for parametric partial differential equations},
+  author={Li, Zongyi and Kovachki, Nikola and Azizzadenesheli, Kamyar and Liu, Burigede and Bhattacharya, Kaushik and Stuart, Andrew and Anandkumar, Anima},
+  journal={arXiv preprint arXiv:2010.08895},
+  year={2020}
+}
+@misc{xu2024fits,
+      title={FITS: Modeling Time Series with $10k$ Parameters}, 
+      author={Zhijian Xu and Ailing Zeng and Qiang Xu},
+      year={2024},
+      eprint={2307.03756},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{lee2020context,
+  title={Context-aware dynamics model for generalization in model-based reinforcement learning},
+  author={Lee, Kimin and Seo, Younggyo and Lee, Seunghyun and Lee, Honglak and Shin, Jinwoo},
+  booktitle={International Conference on Machine Learning},
+  pages={5757--5766},
+  year={2020},
+  organization={PMLR}
+}
+
+@article{ying2023reward,
+  title={Reward Informed Dreamer for Task Generalization in Reinforcement Learning},
+  author={Ying, Chengyang and Hao, Zhongkai and Zhou, Xinning and Su, Hang and Liu, Songming and Li, Jialian and Yan, Dong and Zhu, Jun},
+  journal={arXiv preprint arXiv:2303.05092},
+  year={2023}
+}
+
+@article{ghosh2021generalization,
+  title={Why generalization in rl is difficult: Epistemic pomdps and implicit partial observability},
+  author={Ghosh, Dibya and Rahme, Jad and Kumar, Aviral and Zhang, Amy and Adams, Ryan P and Levine, Sergey},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={25502--25515},
+  year={2021}
+}
+
+
+@article{gelu,
+  title={Gaussian error linear units (gelus)},
+  author={Hendrycks, Dan and Gimpel, Kevin},
+  journal={arXiv preprint arXiv:1606.08415},
+  year={2016}
+}
+
+
+# ------- other fourier nets
+@article{spf,
+  title={State Sequences Prediction via Fourier Transform for Representation Learning},
+  author={Ye, Mingxuan and Kuang, Yufei and Wang, Jie and Rui, Yang and Zhou, Wengang and Li, Houqiang and Wu, Feng},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
+@inproceedings{fellows2018fourier,
+  title={Fourier policy gradients},
+  author={Fellows, Matthew and Ciosek, Kamil and Whiteson, Shimon},
+  booktitle={International Conference on Machine Learning},
+  pages={1486--1495},
+  year={2018},
+  organization={PMLR}
+}
+@article{fnet,
+  title={Fnet: Mixing tokens with fourier transforms},
+  author={Lee-Thorp, James and Ainslie, Joshua and Eckstein, Ilya and Ontanon, Santiago},
+  journal={arXiv preprint arXiv:2105.03824},
+  year={2021}
+}
+@article{fourier_transformer,
+  title={Fourier Transformer: Fast Long Range Modeling by Removing Sequence Redundancy with FFT Operator},
+  author={He, Ziwei and Yang, Meng and Feng, Minwei and Yin, Jingcheng and Wang, Xinbing and Leng, Jingwen and Lin, Zhouhan},
+  journal={arXiv preprint arXiv:2305.15099},
+  year={2023}
+}
+@article{fourierformer,
+  title={Fourierformer: Transformer meets generalized fourier integral theorem},
+  author={Nguyen, Tan and Pham, Minh and Nguyen, Tam and Nguyen, Khai and Osher, Stanley and Ho, Nhat},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={29319--29335},
+  year={2022}
+}

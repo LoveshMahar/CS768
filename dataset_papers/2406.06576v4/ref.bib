@@ -1,0 +1,652 @@
+@article{gsm8k,
+  title={Training Verifiers to Solve Math Word Problems},
+  author={Karl Cobbe and Vineet Kosaraju and Mohammad Bavarian and Mark Chen and Heewoo Jun and Lukasz Kaiser and Matthias Plappert and Jerry Tworek and Jacob Hilton and Reiichiro Nakano and Christopher Hesse and John Schulman},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2110.14168},
+  url={https://api.semanticscholar.org/CorpusID:239998651}
+}
+
+@inproceedings{svamp,
+    title = "Are {NLP} Models really able to Solve Simple Math Word Problems?",
+    author = "Patel, Arkil  and
+      Bhattamishra, Satwik  and
+      Goyal, Navin",
+    editor = "Toutanova, Kristina  and
+      Rumshisky, Anna  and
+      Zettlemoyer, Luke  and
+      Hakkani-Tur, Dilek  and
+      Beltagy, Iz  and
+      Bethard, Steven  and
+      Cotterell, Ryan  and
+      Chakraborty, Tanmoy  and
+      Zhou, Yichao",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.168",
+    doi = "10.18653/v1/2021.naacl-main.168",
+    pages = "2080--2094",
+    abstract = "The problem of designing NLP solvers for math word problems (MWP) has seen sustained research activity and steady gains in the test accuracy. Since existing solvers achieve high performance on the benchmark datasets for elementary level MWPs containing one-unknown arithmetic word problems, such problems are often considered {``}solved{''} with the bulk of research attention moving to more complex MWPs. In this paper, we restrict our attention to English MWPs taught in grades four and lower. We provide strong evidence that the existing MWP solvers rely on shallow heuristics to achieve high performance on the benchmark datasets. To this end, we show that MWP solvers that do not have access to the question asked in the MWP can still solve a large fraction of MWPs. Similarly, models that treat MWPs as bag-of-words can also achieve surprisingly high accuracy. Further, we introduce a challenge dataset, SVAMP, created by applying carefully chosen variations over examples sampled from existing datasets. The best accuracy achieved by state-of-the-art models is substantially lower on SVAMP, thus showing that much remains to be done even for the simplest of the MWPs.",
+}
+
+@article{singleeq,
+    title = "Parsing Algebraic Word Problems into Equations",
+    author = "Koncel-Kedziorski, Rik  and
+      Hajishirzi, Hannaneh  and
+      Sabharwal, Ashish  and
+      Etzioni, Oren  and
+      Ang, Siena Dumas",
+    editor = "Collins, Michael  and
+      Lee, Lillian",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "3",
+    year = "2015",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/Q15-1042",
+    doi = "10.1162/tacl_a_00160",
+    pages = "585--597",
+    abstract = "This paper formalizes the problem of solving multi-sentence algebraic word problems as that of generating and scoring equation trees. We use integer linear programming to generate equation trees and score their likelihood by learning local and global discriminative models. These models are trained on a small set of word problems and their answers, without any manual annotation, in order to choose the equation that best matches the problem text. We refer to the overall system as Alges. We compare Alges with previous work and show that it covers the full gamut of arithmetic operations whereas Hosseini et al. (2014) only handle addition and subtraction. In addition, Alges overcomes the brittleness of the Kushman et al. (2014) approach on single-equation problems, yielding a 15{\%} to 50{\%} reduction in error.",
+}
+
+@inproceedings{addsub,
+    title = "Learning to Solve Arithmetic Word Problems with Verb Categorization",
+    author = "Hosseini, Mohammad Javad  and
+      Hajishirzi, Hannaneh  and
+      Etzioni, Oren  and
+      Kushman, Nate",
+    editor = "Moschitti, Alessandro  and
+      Pang, Bo  and
+      Daelemans, Walter",
+    booktitle = "Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({EMNLP})",
+    month = oct,
+    year = "2014",
+    address = "Doha, Qatar",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D14-1058",
+    doi = "10.3115/v1/D14-1058",
+    pages = "523--533",
+}
+
+@misc{multiarith,
+      title={Solving General Arithmetic Word Problems}, 
+      author={Subhro Roy and Dan Roth},
+      year={2016},
+      eprint={1608.01413},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{math401,
+      title={How well do Large Language Models perform in Arithmetic tasks?}, 
+      author={Zheng Yuan and Hongyi Yuan and Chuanqi Tan and Wei Wang and Songfang Huang},
+      year={2023},
+      eprint={2304.02015},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@misc{peft_1,
+      title={Bayesian Parameter-Efficient Fine-Tuning for Overcoming Catastrophic Forgetting}, 
+      author={Haolin Chen and Philip N. Garner},
+      year={2024},
+      eprint={2402.12220},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS}
+}
+
+@misc{peft_2,
+      title={Delving into Parameter-Efficient Fine-Tuning in Code Change Learning: An Empirical Study}, 
+      author={Shuo Liu and Jacky Keung and Zhen Yang and Fang Liu and Qilin Zhou and Yihan Liao},
+      year={2024},
+      eprint={2402.06247},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE}
+}
+
+@misc{ft_adapters,
+      title={LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models}, 
+      author={Zhiqiang Hu and Lei Wang and Yihuai Lan and Wanyu Xu and Ee-Peng Lim and Lidong Bing and Xing Xu and Soujanya Poria and Roy Ka-Wei Lee},
+      year={2023},
+      eprint={2304.01933},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{ft_full,
+      title={Improving Large Language Model Fine-tuning for Solving Math Problems}, 
+      author={Yixin Liu and Avi Singh and C. Daniel Freeman and John D. Co-Reyes and Peter J. Liu},
+      year={2023},
+      eprint={2310.10047},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{multiagent_2,
+      title={Large Language Model based Multi-Agents: A Survey of Progress and Challenges}, 
+      author={Taicheng Guo and Xiuying Chen and Yaqi Wang and Ruidi Chang and Shichao Pei and Nitesh V. Chawla and Olaf Wiest and Xiangliang Zhang},
+      year={2024},
+      eprint={2402.01680},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{multiagent_1,
+      title={Generative Agents: Interactive Simulacra of Human Behavior}, 
+      author={Joon Sung Park and Joseph C. O'Brien and Carrie J. Cai and Meredith Ringel Morris and Percy Liang and Michael S. Bernstein},
+      year={2023},
+      eprint={2304.03442},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC}
+}
+
+@ARTICLE{sa_2,
+       author = {{Wang}, Zengzhi and {Xie}, Qiming and {Feng}, Yi and {Ding}, Zixiang and {Yang}, Zinong and {Xia}, Rui},
+        title = "{Is ChatGPT a Good Sentiment Analyzer? A Preliminary Study}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Computation and Language, Computer Science - Artificial Intelligence},
+         year = 2023,
+        month = apr,
+          eid = {arXiv:2304.04339},
+        pages = {arXiv:2304.04339},
+          doi = {10.48550/arXiv.2304.04339},
+archivePrefix = {arXiv},
+       eprint = {2304.04339},
+ primaryClass = {cs.CL},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2023arXiv230404339W},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@misc{sa_3,
+      title={Sentiment Analysis in the Era of Large Language Models: A Reality Check}, 
+      author={Wenxuan Zhang and Yue Deng and Bing Liu and Sinno Jialin Pan and Lidong Bing},
+      year={2023},
+      eprint={2305.15005},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{sa_1,
+author = {Deng, Xiang and Bashlovkina, Vasilisa and Han, Feng and Baumgartner, Simon and Bendersky, Michael},
+title = {LLMs to the Moon? Reddit Market Sentiment Analysis with Large Language Models},
+year = {2023},
+isbn = {9781450394192},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3543873.3587605},
+doi = {10.1145/3543873.3587605},
+abstract = {Market sentiment analysis on social media content requires knowledge of both financial markets and social media jargon, which makes it a challenging task for human raters. The resulting lack of high-quality labeled data stands in the way of conventional supervised learning methods. In this work, we conduct a case study approaching this problem with semi-supervised learning using a large language model (LLM). We select Reddit as the target social media platform due to its broad coverage of topics and content types. Our pipeline first generates weak financial sentiment labels for Reddit posts with an LLM and then uses that data to train a small model that can be served in production. We find that prompting the LLM to produce Chain-of-Thought summaries and forcing it through several reasoning paths helps generate more stable and accurate labels, while training the student model using a regression loss further improves distillation quality. With only a handful of prompts, the final model performs on par with existing supervised models. Though production applications of our model are limited by ethical considerations, the model’s competitive performance points to the great potential of using LLMs for tasks that otherwise require skill-intensive annotation.},
+booktitle = {Companion Proceedings of the ACM Web Conference 2023},
+pages = {1014–1019},
+numpages = {6},
+keywords = {Finance, Large Language Model, Natural Language Processing, Sentiment Analysis, Social Media},
+location = {, Austin, TX, USA, },
+series = {WWW '23 Companion}
+}
+
+
+@inproceedings{icl,
+ author = {Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel and Wu, Jeffrey and Winter, Clemens and Hesse, Chris and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+ pages = {1877--1901},
+ publisher = {Curran Associates, Inc.},
+ title = {Language Models are Few-Shot Learners},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}
+
+
+@misc{translation_multi,
+      title={Multilingual Machine Translation with Large Language Models: Empirical Results and Analysis}, 
+      author={Wenhao Zhu and Hongyi Liu and Qingxiu Dong and Jingjing Xu and Shujian Huang and Lingpeng Kong and Jiajun Chen and Lei Li},
+      year={2023},
+      eprint={2304.04675},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@misc{translation_1,
+      title={Prompting Large Language Model for Machine Translation: A Case Study}, 
+      author={Biao Zhang and Barry Haddow and Alexandra Birch},
+      year={2023},
+      eprint={2301.07069},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@ARTICLE{OccamNet,
+       author = {{Dugan}, Owen and {Dangovski}, Rumen and {Costa}, Allan and {Kim}, Samuel and {Goyal}, Pawan and {Jacobson}, Joseph and {Solja{\v{c}}i{\'c}}, Marin},
+        title = "{OccamNet: A Fast Neural Model for Symbolic Regression at Scale}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing, Statistics - Machine Learning},
+         year = 2020,
+        month = jul,
+          eid = {arXiv:2007.10784},
+        pages = {arXiv:2007.10784},
+          doi = {10.48550/arXiv.2007.10784},
+archivePrefix = {arXiv},
+       eprint = {2007.10784},
+ primaryClass = {cs.LG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2020arXiv200710784D},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{OccamNetSocialSci,
+       author = {{Balla}, Julia and {Huang}, Sihao and {Dugan}, Owen and {Dangovski}, Rumen and {Soljacic}, Marin},
+        title = "{AI-Assisted Discovery of Quantitative and Formal Models in Social Science}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Symbolic Computation, Computer Science - Machine Learning, Economics - Econometrics},
+         year = 2022,
+        month = oct,
+          eid = {arXiv:2210.00563},
+        pages = {arXiv:2210.00563},
+          doi = {10.48550/arXiv.2210.00563},
+archivePrefix = {arXiv},
+       eprint = {2210.00563},
+ primaryClass = {cs.SC},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2022arXiv221000563B},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2023arXiv230801154M,
+       author = {{Maltoni}, Davide and {Ferrara}, Matteo},
+        title = "{Arithmetic with Language Models: from Memorization to Computation}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language},
+         year = 2023,
+        month = aug,
+          eid = {arXiv:2308.01154},
+        pages = {arXiv:2308.01154},
+          doi = {10.48550/arXiv.2308.01154},
+archivePrefix = {arXiv},
+       eprint = {2308.01154},
+ primaryClass = {cs.AI},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2023arXiv230801154M},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2023arXiv230903241Y,
+       author = {{Yang}, Zhen and {Ding}, Ming and {Lv}, Qingsong and {Jiang}, Zhihuan and {He}, Zehai and {Guo}, Yuyi and {Bai}, Jinfeng and {Tang}, Jie},
+        title = "{GPT Can Solve Mathematical Problems Without a Calculator}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Machine Learning, Computer Science - Artificial Intelligence, Computer Science - Computation and Language},
+         year = 2023,
+        month = sep,
+          eid = {arXiv:2309.03241},
+        pages = {arXiv:2309.03241},
+          doi = {10.48550/arXiv.2309.03241},
+archivePrefix = {arXiv},
+       eprint = {2309.03241},
+ primaryClass = {cs.LG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2023arXiv230903241Y},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{Cobbe2021TrainingVT,
+  title={Training Verifiers to Solve Math Word Problems},
+  author={Karl Cobbe and Vineet Kosaraju and Mohammad Bavarian and Mark Chen and Heewoo Jun and Lukasz Kaiser and Matthias Plappert and Jerry Tworek and Jacob Hilton and Reiichiro Nakano and Christopher Hesse and John Schulman},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2110.14168},
+  url={https://api.semanticscholar.org/CorpusID:239998651}
+}
+
+@book{Goodfellow-et-al-2016,
+    title={Deep Learning},
+    author={Ian Goodfellow and Yoshua Bengio and Aaron Courville},
+    publisher={MIT Press},
+    note={\url{http://www.deeplearningbook.org}},
+    year={2016}
+}
+
+
+@article{llama3modelcard,
+  title={Llama 3 Model Card},
+  author={AI@Meta},
+  year={2024},
+  url = {https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md}
+}
+
+@article{gpt4o,
+  title={Hello GPT-4o},
+  author={OpenAI},
+  year={2024},
+  url = {https://openai.com/index/hello-gpt-4o/}
+}
+
+@article{french1999catastrophic,
+  title={Catastrophic forgetting in connectionist networks},
+  author={French, Robert M},
+  journal={Trends in cognitive sciences},
+  volume={3},
+  number={4},
+  pages={128--135},
+  year={1999},
+  publisher={Elsevier}
+}
+
+@inproceedings{huang2017densely,
+  title={Densely connected convolutional networks},
+  author={Huang, Gao and Liu, Zhuang and Van Der Maaten, Laurens and Weinberger, Kilian Q},
+  booktitle={CVPR},
+  year={2017}
+}
+
+@inproceedings{he2016deep,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={CVPR},
+  pages={770--778},
+  year={2016}
+}
+
+
+@misc{gemini,
+      title={Gemini: A Family of Highly Capable Multimodal Models}, 
+      author={Gemini Team and Rohan Anil and Sebastian Borgeaud and Jean-Baptiste Alayrac and Jiahui Yu and Radu Soricut and Johan Schalkwyk and Andrew M. Dai and Anja Hauth and Katie Millican and David Silver and Melvin Johnson and Ioannis Antonoglou and Julian Schrittwieser and Amelia Glaese and Jilin Chen and Emily Pitler and Timothy Lillicrap and Angeliki Lazaridou and Orhan Firat and ... and Oriol Vinyals},
+      year={2024},
+      eprint={2312.11805},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@misc{gpt4,
+      title={GPT-4 Technical Report}, 
+      author={OpenAI and Josh Achiam and Steven Adler and Sandhini Agarwal and Lama Ahmad and Ilge Akkaya and Florencia Leoni Aleman and Diogo Almeida and Janko Altenschmidt and Sam Altman and Shyamal Anadkat and Red Avila and Igor Babuschkin and Suchir Balaji and Valerie Balcom and Paul Baltescu and Haiming Bao and Mohammad Bavarian and Jeff Belgum and Irwan Bello and ... and Barret Zoph},
+      year={2024},
+      eprint={2303.08774},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{kadlčík2023calcx,
+      title={Calc-X and Calcformers: Empowering Arithmetical Chain-of-Thought through Interaction with Symbolic Systems}, 
+      author={Marek Kadlčík and Michal Štefánik and Ondřej Sotolář and Vlastimil Martinek},
+      year={2023},
+      eprint={2305.15017},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{komeili-etal-2022-internet,
+    title = "{I}nternet-Augmented Dialogue Generation",
+    author = "Komeili, Mojtaba  and
+      Shuster, Kurt  and
+      Weston, Jason",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.579",
+    doi = "10.18653/v1/2022.acl-long.579",
+    pages = "8460--8478",
+    abstract = "The largest store of continually updating knowledge on our planet can be accessed via internet search. In this work we study giving access to this information to conversational agents. Large language models, even though they store an impressive amount of knowledge within their weights, are known to hallucinate facts when generating dialogue (Shuster et al., 2021); moreover, those facts are frozen in time at the point of model training. In contrast, we propose an approach that learns to generate an internet search query based on the context, and then conditions on the search results to finally generate a response, a method that can employ up-to-the-minute relevant information. We train and evaluate such models on a newly collected dataset of human-human conversations whereby one of the speakers is given access to internet search during knowledgedriven discussions in order to ground their responses. We find that search-query based access of the internet in conversation provides superior performance compared to existing approaches that either use no augmentation or FAISS-based retrieval (Lewis et al., 2020b).",
+}
+
+@misc{nakano2022webgpt,
+      title={WebGPT: Browser-assisted question-answering with human feedback}, 
+      author={Reiichiro Nakano and Jacob Hilton and Suchir Balaji and Jeff Wu and Long Ouyang and Christina Kim and Christopher Hesse and Shantanu Jain and Vineet Kosaraju and William Saunders and Xu Jiang and Karl Cobbe and Tyna Eloundou and Gretchen Krueger and Kevin Button and Matthew Knight and Benjamin Chess and John Schulman},
+      year={2022},
+      eprint={2112.09332},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{thoppilan2022lamda,
+      title={LaMDA: Language Models for Dialog Applications}, 
+      author={Romal Thoppilan and Daniel De Freitas and Jamie Hall and Noam Shazeer and Apoorv Kulshreshtha and Heng-Tze Cheng and Alicia Jin and Taylor Bos and Leslie Baker and Yu Du and YaGuang Li and Hongrae Lee and Huaixiu Steven Zheng and Amin Ghafouri and Marcelo Menegali and Yanping Huang and Maxim Krikun and Dmitry Lepikhin and James Qin and Dehao Chen and Yuanzhong Xu and Zhifeng Chen and Adam Roberts and Maarten Bosma and Vincent Zhao and Yanqi Zhou and Chung-Ching Chang and Igor Krivokon and Will Rusch and Marc Pickett and Pranesh Srinivasan and Laichee Man and Kathleen Meier-Hellstern and Meredith Ringel Morris and Tulsee Doshi and Renelito Delos Santos and Toju Duke and Johnny Soraker and Ben Zevenbergen and Vinodkumar Prabhakaran and Mark Diaz and Ben Hutchinson and Kristen Olson and Alejandra Molina and Erin Hoffman-John and Josh Lee and Lora Aroyo and Ravi Rajakumar and Alena Butryna and Matthew Lamm and Viktoriya Kuzmina and Joe Fenton and Aaron Cohen and Rachel Bernstein and Ray Kurzweil and Blaise Aguera-Arcas and Claire Cui and Marian Croak and Ed Chi and Quoc Le},
+      year={2022},
+      eprint={2201.08239},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{gao2023pal,
+      title={PAL: Program-aided Language Models}, 
+      author={Luyu Gao and Aman Madaan and Shuyan Zhou and Uri Alon and Pengfei Liu and Yiming Yang and Jamie Callan and Graham Neubig},
+      year={2023},
+      eprint={2211.10435},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{schick2023toolformer,
+      title={Toolformer: Language Models Can Teach Themselves to Use Tools}, 
+      author={Timo Schick and Jane Dwivedi-Yu and Roberto Dessì and Roberta Raileanu and Maria Lomeli and Luke Zettlemoyer and Nicola Cancedda and Thomas Scialom},
+      year={2023},
+      eprint={2302.04761},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{wei2023chainofthought,
+      title={Chain-of-Thought Prompting Elicits Reasoning in Large Language Models}, 
+      author={Jason Wei and Xuezhi Wang and Dale Schuurmans and Maarten Bosma and Brian Ichter and Fei Xia and Ed Chi and Quoc Le and Denny Zhou},
+      year={2023},
+      eprint={2201.11903},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{chen2023program,
+      title={Program of Thoughts Prompting: Disentangling Computation from Reasoning for Numerical Reasoning Tasks}, 
+      author={Wenhu Chen and Xueguang Ma and Xinyi Wang and William W. Cohen},
+      year={2023},
+      eprint={2211.12588},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{zhou2023solving,
+      title={Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification}, 
+      author={Aojun Zhou and Ke Wang and Zimu Lu and Weikang Shi and Sichun Luo and Zipeng Qin and Shaoqing Lu and Anya Jia and Linqi Song and Mingjie Zhan and Hongsheng Li},
+      year={2023},
+      eprint={2308.07921},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{wang2023mathcoder,
+      title={MathCoder: Seamless Code Integration in LLMs for Enhanced Mathematical Reasoning}, 
+      author={Ke Wang and Houxing Ren and Aojun Zhou and Zimu Lu and Sichun Luo and Weikang Shi and Renrui Zhang and Linqi Song and Mingjie Zhan and Hongsheng Li},
+      year={2023},
+      eprint={2310.03731},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@ARTICLE{llama2,
+       author = {{Touvron}, Hugo and {Martin}, Louis and {Stone}, Kevin and {Albert}, Peter and {Almahairi}, Amjad and {Babaei}, Yasmine and {Bashlykov}, Nikolay and {Batra}, Soumya and {Bhargava}, Prajjwal and {Bhosale}, Shruti and {Bikel}, Dan and {Blecher}, Lukas and {Canton Ferrer}, Cristian and {Chen}, Moya and {Cucurull}, Guillem and {Esiobu}, David and {Fernandes}, Jude and {Fu}, Jeremy and {Fu}, Wenyin and {Fuller}, Brian and {Gao}, Cynthia and {Goswami}, Vedanuj and {Goyal}, Naman and {Hartshorn}, Anthony and {Hosseini}, Saghar and {Hou}, Rui and {Inan}, Hakan and {Kardas}, Marcin and {Kerkez}, Viktor and {Khabsa}, Madian and {Kloumann}, Isabel and {Korenev}, Artem and {Singh Koura}, Punit and {Lachaux}, Marie-Anne and {Lavril}, Thibaut and {Lee}, Jenya and {Liskovich}, Diana and {Lu}, Yinghai and {Mao}, Yuning and {Martinet}, Xavier and {Mihaylov}, Todor and {Mishra}, Pushkar and {Molybog}, Igor and {Nie}, Yixin and {Poulton}, Andrew and {Reizenstein}, Jeremy and {Rungta}, Rashi and {Saladi}, Kalyan and {Schelten}, Alan and {Silva}, Ruan and {Smith}, Eric Michael and {Subramanian}, Ranjan and {Tan}, Xiaoqing Ellen and {Tang}, Binh and {Taylor}, Ross and {Williams}, Adina and {Kuan}, Jian Xiang and {Xu}, Puxin and {Yan}, Zheng and {Zarov}, Iliyan and {Zhang}, Yuchen and {Fan}, Angela and {Kambadur}, Melanie and {Narang}, Sharan and {Rodriguez}, Aurelien and {Stojnic}, Robert and {Edunov}, Sergey and {Scialom}, Thomas},
+        title = "{Llama 2: Open Foundation and Fine-Tuned Chat Models}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Computation and Language, Computer Science - Artificial Intelligence},
+         year = 2023,
+        month = jul,
+          eid = {arXiv:2307.09288},
+        pages = {arXiv:2307.09288},
+          doi = {10.48550/arXiv.2307.09288},
+archivePrefix = {arXiv},
+       eprint = {2307.09288},
+ primaryClass = {cs.CL},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2023arXiv230709288T},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{spec_decoding,
+       author = {{Leviathan}, Yaniv and {Kalman}, Matan and {Matias}, Yossi},
+        title = "{Fast Inference from Transformers via Speculative Decoding}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Machine Learning, Computer Science - Computation and Language},
+         year = 2022,
+        month = nov,
+          eid = {arXiv:2211.17192},
+        pages = {arXiv:2211.17192},
+          doi = {10.48550/arXiv.2211.17192},
+archivePrefix = {arXiv},
+       eprint = {2211.17192},
+ primaryClass = {cs.LG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2022arXiv221117192L},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{staged_spec_decoding,
+       author = {{Spector}, Benjamin and {Re}, Chris},
+        title = "{Accelerating LLM Inference with Staged Speculative Decoding}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language},
+         year = 2023,
+        month = aug,
+          eid = {arXiv:2308.04623},
+        pages = {arXiv:2308.04623},
+          doi = {10.48550/arXiv.2308.04623},
+archivePrefix = {arXiv},
+       eprint = {2308.04623},
+ primaryClass = {cs.AI},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2023arXiv230804623S},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@article{reinforce,
+author = {Williams, Ronald J.},
+title = {Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning},
+year = {1992},
+noissue_date = {May 1992},
+publisher = {Kluwer Academic Publishers},
+noaddress = {USA},
+volume = {8},
+number = {3–4},
+noissn = {0885-6125},
+nourl = {https://doi.org/10.1007/BF00992696},
+nodoi = {10.1007/BF00992696},
+noabstract = {This article presents a general class of associative reinforcement learning algorithms for connectionist networks containing stochastic units. These algorithms, called REINFORCE algorithms, are shown to make weight adjustments in a direction that lies along the gradient of expected reinforcement in both immediate-reinforcement tasks and certain limited forms of delayed-reinforcement tasks, and they do this without explicitly computing gradient estimates or even storing information from which such estimates could be computed. Specific examples of such algorithms are presented, some of which bear a close relationship to certain existing algorithms while others are novel but potentially interesting in their own right. Also given are results that show how such algorithms can be naturally integrated with backpropagation. We close with a brief discussion of a number of additional issues surrounding the use of such algorithms, including what is known about their limiting behaviors as well as further considerations that might be used to help develop similar but potentially more powerful reinforcement learning algorithms.},
+journal = {Mach. Learn.},
+month = may,
+pages = {229–256},
+nonumpages = {28},
+nokeywords = {mathematical analysis, Reinforcement learning, gradient descent, connectionist networks}
+}
+
+@incollection{catastrophic,
+title = {Catastrophic Interference in Connectionist Networks: The Sequential Learning Problem},
+editor = {Gordon H. Bower},
+series = {Psychology of Learning and Motivation},
+publisher = {Academic Press},
+volume = {24},
+pages = {109-165},
+year = {1989},
+issn = {0079-7421},
+doi = {https://doi.org/10.1016/S0079-7421(08)60536-8},
+url = {https://www.sciencedirect.com/science/article/pii/S0079742108605368},
+author = {Michael McCloskey and Neal J. Cohen},
+abstract = {Publisher Summary
+Connectionist networks in which information is stored in weights on connections among simple processing units have attracted considerable interest in cognitive science. Much of the interest centers around two characteristics of these networks. First, the weights on connections between units need not be prewired by the model builder but rather may be established through training in which items to be learned are presented repeatedly to the network and the connection weights are adjusted in small increments according to a learning algorithm. Second, the networks may represent information in a distributed fashion. This chapter discusses the catastrophic interference in connectionist networks. Distributed representations established through the application of learning algorithms have several properties that are claimed to be desirable from the standpoint of modeling human cognition. These properties include content-addressable memory and so-called automatic generalization in which a network trained on a set of items responds correctly to other untrained items within the same domain. New learning may interfere catastrophically with old learning when networks are trained sequentially. The analysis of the causes of interference implies that at least some interference will occur whenever new learning may alter weights involved in representing old learning, and the simulation results demonstrate only that interference is catastrophic in some specific networks.}
+}
+
+@ARTICLE{EQLOriginal,
+       author = {{Martius}, Georg and {Lampert}, Christoph H.},
+        title = "{Extrapolation and learning equations}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Machine Learning, Computer Science - Artificial Intelligence, 68T05, 68T30, 68T40, 62J02, 65D15, I.2.6, I.2.8},
+         year = 2016,
+        month = oct,
+          eid = {arXiv:1610.02995},
+        pages = {arXiv:1610.02995},
+archivePrefix = {arXiv},
+       eprint = {1610.02995},
+ primaryClass = {cs.LG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2016arXiv161002995M},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@InProceedings{EQLWithDivision,
+  title = 	 {Learning Equations for Extrapolation and Control},
+  author = 	 {Sahoo, Subham and Lampert, Christoph and Martius, Georg},
+  booktitle = 	 {Proceedings of the 35th International Conference on Machine Learning},
+  pages = 	 {4442--4450},
+  year = 	 {2018},
+  editor = 	 {Dy, Jennifer and Krause, Andreas},
+  volume = 	 {80},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Stockholmsmässan, Stockholm Sweden},
+  month = 	 {10--15 Jul},
+  publisher = 	 {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v80/sahoo18a/sahoo18a.pdf},
+  url = 	 {http://proceedings.mlr.press/v80/sahoo18a.html},
+  abstract = 	 {We present an approach to identify concise equations from data using a shallow neural network approach. In contrast to ordinary black-box regression, this approach allows understanding functional relations and generalizing them from observed data to unseen parts of the parameter space. We show how to extend the class of learnable equations for a recently proposed equation learning network to include divisions, and we improve the learning and model selection strategy to be useful for challenging real-world data. For systems governed by analytical expressions, our method can in many cases identify the true underlying equation and extrapolate to unseen domains. We demonstrate its effectiveness by experiments on a cart-pendulum system, where only 2 random rollouts are required to learn the forward dynamics and successfully achieve the swing-up task.}
+}  
+
+@ARTICLE{attentionAllYouNeed,
+       author = {{Vaswani}, Ashish and {Shazeer}, Noam and {Parmar}, Niki and {Uszkoreit}, Jakob and {Jones}, Llion and {Gomez}, Aidan N. and {Kaiser}, Lukasz and {Polosukhin}, Illia},
+        title = "{Attention Is All You Need}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+         year = 2017,
+        month = jun,
+          eid = {arXiv:1706.03762},
+        pages = {arXiv:1706.03762},
+          doi = {10.48550/arXiv.1706.03762},
+archivePrefix = {arXiv},
+       eprint = {1706.03762},
+ primaryClass = {cs.CL},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2017arXiv170603762V},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@ARTICLE{rnns,
+       author = {{Schmidt}, Robin M.},
+        title = "{Recurrent Neural Networks (RNNs): A gentle Introduction and Overview}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+         year = 2019,
+        month = nov,
+          eid = {arXiv:1912.05911},
+        pages = {arXiv:1912.05911},
+          doi = {10.48550/arXiv.1912.05911},
+archivePrefix = {arXiv},
+       eprint = {1912.05911},
+ primaryClass = {cs.LG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2019arXiv191205911S},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{ppo,
+       author = {{Schulman}, John and {Wolski}, Filip and {Dhariwal}, Prafulla and {Radford}, Alec and {Klimov}, Oleg},
+        title = "{Proximal Policy Optimization Algorithms}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Machine Learning},
+         year = 2017,
+        month = jul,
+          eid = {arXiv:1707.06347},
+        pages = {arXiv:1707.06347},
+          doi = {10.48550/arXiv.1707.06347},
+archivePrefix = {arXiv},
+       eprint = {1707.06347},
+ primaryClass = {cs.LG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2017arXiv170706347S},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@misc{shi2022languagemodelsmultilingualchainofthought,
+      title={Language Models are Multilingual Chain-of-Thought Reasoners}, 
+      author={Freda Shi and Mirac Suzgun and Markus Freitag and Xuezhi Wang and Suraj Srivats and Soroush Vosoughi and Hyung Won Chung and Yi Tay and Sebastian Ruder and Denny Zhou and Dipanjan Das and Jason Wei},
+      year={2022},
+      eprint={2210.03057},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2210.03057}, 
+}

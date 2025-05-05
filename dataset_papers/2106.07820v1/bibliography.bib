@@ -1,0 +1,774 @@
+%%%%% Large batch (centralized) papers
+
+@inproceedings{keskar2017iclr,
+  title     = {On Large-Batch Training for Deep Learning: Generalization Gap and
+               Sharp Minima},
+  author    = {Nitish Shirish Keskar and
+               Dheevatsa Mudigere and
+               Jorge Nocedal and
+               Mikhail Smelyanskiy and
+               Ping Tak Peter Tang},
+  booktitle = {International Conference on Learning Representations},
+  year      = {2017},
+}
+
+@article{ribero2020communication,
+  title={Communication-efficient federated learning via optimal client sampling},
+  author={Ribero, Monica and Vikalo, Haris},
+  journal={arXiv preprint arXiv:2007.15197},
+  year={2020}
+}
+
+@article{goetz2019active,
+  title={Active federated learning},
+  author={Goetz, Jack and Malik, Kshitiz and Bui, Duc and Moon, Seungwhan and Liu, Honglei and Kumar, Anuj},
+  journal={arXiv preprint arXiv:1909.12641},
+  year={2019}
+}
+
+@article{nado2021large,
+  title={A Large Batch Optimizer Reality Check: Traditional, Generic Optimizers Suffice Across Batch Sizes},
+  author={Nado, Zachary and Gilmer, Justin M and Shallue, Christopher J and Anil, Rohan and Dahl, George E},
+  journal={arXiv preprint arXiv:2102.06356},
+  year={2021}
+}
+
+@article{krizhevsky2014one,
+  title={One weird trick for parallelizing convolutional neural networks},
+  author={Krizhevsky, Alex},
+  journal={arXiv preprint arXiv:1404.5997},
+  year={2014}
+}
+  
+@article{you2017large,
+  title={Large batch training of convolutional networks},
+  author={You, Yang and Gitman, Igor and Ginsburg, Boris},
+  journal={arXiv preprint arXiv:1708.03888},
+  year={2017}
+}
+
+@inproceedings{
+you2019large,
+title={Large Batch Optimization for Deep Learning: Training BERT in 76 minutes},
+author={Yang You and Jing Li and Sashank Reddi and Jonathan Hseu and Sanjiv Kumar and Srinadh Bhojanapalli and Xiaodan Song and James Demmel and Kurt Keutzer and Cho-Jui Hsieh},
+booktitle={International Conference on Learning Representations},
+year={2020},
+}
+
+@article{goyal2017accurate,
+  title={Accurate, large minibatch {SGD}: Training {I}mage{N}et in 1 hour},
+  author={Goyal, Priya and Doll{\'a}r, Piotr and Girshick, Ross and Noordhuis, Pieter and Wesolowski, Lukasz and Kyrola, Aapo and Tulloch, Andrew and Jia, Yangqing and He, Kaiming},
+  journal={arXiv preprint arXiv:1706.02677},
+  year={2017}
+}
+
+@inproceedings{lin2020iclr,
+    title={Don't Use Large Mini-batches, Use Local {SGD}},
+    author={Tao Lin and Sebastian U. Stich and Kumar Kshitij Patel and Martin Jaggi},
+    booktitle={International Conference on Learning Representations},
+    year={2020},
+}
+
+%%%%% Federated optimization papers
+
+% FedAvg, FedSGD
+@inproceedings{mcmahan2017aistats,
+  title = {Communication-Efficient Learning of Deep Networks from Decentralized Data},
+  author = {Brendan McMahan and
+            Eider Moore and
+            Daniel Ramage and
+            Seth Hampson and
+            Blaise {Aguera y Arcas}},
+  booktitle = {Proceedings of the 20th International Conference on Artificial Intelligence and Statistics},
+  year = {2017},
+  volume = {54},
+}
+
+% FedAdagrad, FedAdam, FedYogi
+@inproceedings{reddi2021adaptive,
+  title={Adaptive Federated Optimization},
+  author={Sashank J. Reddi and Zachary Charles and Manzil Zaheer and Zachary Garrett and Keith Rush and Jakub Kone{\v{c}}n{\'y} and Sanjiv Kumar and Hugh Brendan McMahan},
+  booktitle={International Conference on Learning Representations},
+  year={2021},
+}
+
+% SCAFFOLD
+@inproceedings{karimireddy2019scaffold,
+  title={{SCAFFOLD}: Stochastic Controlled Averaging for Federated Learning},
+  author={Karimireddy, Sai Praneeth and Kale, Satyen and Mohri, Mehryar and Reddi, Sashank and Stich, Sebastian and Suresh, Ananda Theertha},
+  booktitle={Proceedings of the 37th International Conference on Machine Learning},
+  year={2020},
+}
+
+@inproceedings{mohri2019agnostic,
+  title={Agnostic federated learning},
+  author={Mohri, Mehryar and Sivek, Gary and Suresh, Ananda Theertha},
+  booktitle={Proceedings of the 36th International Conference on Machine Learning},
+  year={2019},
+}
+
+
+% MIME
+@article{karimireddy2020mime,
+  title={Mime: {M}imicking Centralized Stochastic Algorithms in Federated Learning},
+  author={Karimireddy, Sai Praneeth and Jaggi, Martin and Kale, Satyen and Mohri, Mehryar and Reddi, Sashank J and Stich, Sebastian U and Suresh, Ananda Theertha},
+  journal={arXiv preprint arXiv:2008.03606},
+  year={2020}
+}
+
+% FedAvgM
+@article{hsu2019measuring,
+  title={Measuring the effects of non-identical data distribution for federated visual classification},
+  author={Hsu, Tzu-Ming Harry and Qi, Hang and Brown, Matthew},
+  journal={arXiv preprint arXiv:1909.06335},
+  year={2019}
+}
+
+% FedProx
+@inproceedings{li2018federated,
+  author = {Li, Tian and Sahu, Anit Kumar and Zaheer, Manzil and Sanjabi, Maziar and Talwalkar, Ameet and Smith, Virginia},
+  booktitle = {Proceedings of Machine Learning and Systems 2020},
+  pages = {429--450},
+  title = {Federated Optimization in Heterogeneous Networks},
+  year = {2020}
+}
+
+
+@inproceedings{
+li2019fair,
+title={Fair Resource Allocation in Federated Learning},
+author={Tian Li and Maziar Sanjabi and Ahmad Beirami and Virginia Smith},
+booktitle={International Conference on Learning Representations},
+year={2020},
+}
+
+% Adaptive clipping
+@article{andrew2019differentially,
+  title={Differentially private learning with adaptive clipping},
+  author={Andrew, Galen and Thakkar, Om and McMahan, H Brendan and Ramaswamy, Swaroop},
+  journal={arXiv preprint arXiv:1905.03871},
+  year={2019}
+}
+
+%%%%%% Theoretical Analyses of FL
+
+@inproceedings{yang2021achieving,
+    title={Achieving Linear Speedup with Partial Worker Participation in Non-{IID} Federated Learning},
+    author={Haibo Yang and Minghong Fang and Jia Liu},
+    booktitle={International Conference on Learning Representations},
+    year={2021},
+}
+
+@article{khaled2019first,
+  title={First analysis of local {GD} on heterogeneous data},
+  author={Khaled, Ahmed and Mishchenko, Konstantin and Richt{\'a}rik, Peter},
+  journal={arXiv preprint arXiv:1909.04715},
+  year={2019}
+}
+
+@inproceedings{khaled2020tighter,
+  title = 	 {Tighter Theory for Local {SGD} on Identical and Heterogeneous Data},
+  author =       {Khaled, Ahmed and Mishchenko, Konstantin and Richtarik, Peter},
+  booktitle = 	 {Proceedings of the Twenty Third International Conference on Artificial Intelligence and Statistics},
+  year={2020},
+}
+
+@inproceedings{
+li2019convergence,
+title={On the Convergence of FedAvg on Non-{IID} Data},
+author={Xiang Li and Kaixuan Huang and Wenhao Yang and Shusen Wang and Zhihua Zhang},
+booktitle={International Conference on Learning Representations},
+year={2020},
+}
+
+@article{li2020unified,
+  title={A unified analysis of stochastic gradient methods for nonconvex federated optimization},
+  author={Li, Zhize and Richt{\'a}rik, Peter},
+  journal={arXiv preprint arXiv:2006.07013},
+  year={2020}
+}
+
+%%%%% General references on federated learning
+
+@article{kairouz2019advances,
+    year = {2021},
+    volume = {14},
+    journal = {Foundations and Trends® in Machine Learning},
+    title = {Advances and Open Problems in Federated Learning},
+    issn = {1935-8237},
+    number = {1},
+    author = {Peter Kairouz and H. Brendan McMahan and contributors}
+}
+
+@article{li2020federated,
+  title={Federated learning: {C}hallenges, methods, and future directions},
+  author={Li, Tian and Sahu, Anit Kumar and Talwalkar, Ameet and Smith, Virginia},
+  journal={IEEE Signal Processing Magazine},
+  volume={37},
+  number={3},
+  pages={50--60},
+  year={2020},
+  publisher={IEEE}
+}
+
+
+%%%%%% Systems Aspects of FL
+
+@article{reisizadeh2020straggler,
+  title={Straggler-Resilient Federated Learning: Leveraging the Interplay Between Statistical Accuracy and System Heterogeneity},
+  author={Reisizadeh, Amirhossein and Tziotis, Isidoros and Hassani, Hamed and Mokhtari, Aryan and Pedarsani, Ramtin},
+  journal={arXiv preprint arXiv:2012.14453},
+  year={2020}
+}
+
+@inproceedings{hsieh2019non,
+  title={The Non-{IID} Data Quagmire of Decentralized Machine Learning},
+  author={Hsieh, Kevin and Phanishayee, Amar and Mutlu, Onur and Gibbons, Phillip},
+  booktitle={Proceedings of the 37th International Conference on Machine Learning},
+  year={2020},
+}
+
+@incollection{bonawitz2019towards,
+ author = {Bonawitz, Keith and Eichner, Hubert and Grieskamp, Wolfgang and Huba, Dzmitry and Ingerman, Alex and Ivanov, Vladimir and Kiddon, Chlo\'{e} and Kone\v{c}n\'{y}, Jakub and Mazzocchi, Stefano and McMahan, Brendan and Van Overveldt, Timon and Petrou, David and Ramage, Daniel and Roselander, Jason},
+ booktitle = {Proceedings of Machine Learning and Systems},
+ title = {Towards Federated Learning at Scale: System Design},
+ year = {2019},
+ publisher = {Proceedings of MLSys}
+}
+
+@inproceedings{ruan2021towards,
+  title = 	 { Towards Flexible Device Participation in Federated Learning },
+  author =       {Ruan, Yichen and Zhang, Xiaoxi and Liang, Shu-Che and Joe-Wong, Carlee},
+  booktitle = 	 {Proceedings of The 24th International Conference on Artificial Intelligence and Statistics},
+  year={2021},
+}
+
+@article{beutel2020flower,
+  title={Flower: A friendly federated learning research framework},
+  author={Beutel, Daniel J and Topal, Taner and Mathur, Akhil and Qiu, Xinchi and Parcollet, Titouan and de Gusm{\~a}o, Pedro PB and Lane, Nicholas D},
+  journal={arXiv preprint arXiv:2007.14390},
+  year={2020}
+}
+
+%%%%% Client Selection in Federated Learning
+
+@inproceedings{nishio2019client,
+  title={Client selection for federated learning with heterogeneous resources in mobile edge},
+  author={Nishio, Takayuki and Yonetani, Ryo},
+  booktitle={IEEE International Conference on Communications (ICC)},
+  year={2019},
+}
+
+@article{cho2020client,
+  title={Client Selection in Federated Learning: Convergence Analysis and Power-of-Choice Selection Strategies},
+  author={Cho, Yae Jee and Wang, Jianyu and Joshi, Gauri},
+  journal={arXiv preprint arXiv:2010.01243},
+  year={2020}
+}
+
+@article{chen2020optimal,
+  title={Optimal Client Sampling for Federated Learning},
+  author={Chen, Wenlin and Horvath, Samuel and Richtarik, Peter},
+  journal={arXiv preprint arXiv:2010.13723},
+  year={2020}
+}
+
+%%%% Understanding optimization dynamics of federated learning
+
+@inproceedings{malinovsky2020local,
+  title ={From Local {SGD} to Local Fixed-Point Methods for Federated Learning},
+  author ={Malinovskiy, Grigory and Kovalev, Dmitry and Gasanov, Elnur and Condat, Laurent and Richtarik, Peter},
+  booktitle ={Proceedings of the 37th International Conference on Machine Learning},
+  year={2020},
+}
+
+@inproceedings{pathak2020fedsplit,
+ author = {Pathak, Reese and Wainwright, Martin J},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {7057--7066},
+ title = {Fed{S}plit: {A}n algorithmic framework for fast federated optimization},
+ year = {2020}
+}
+
+@inproceedings{charles2021convergence,
+  title = 	 { Convergence and Accuracy Trade-Offs in Federated Learning and Meta-Learning },
+  author =       {Charles, Zachary and Kone\v{c}n\'y, Jakub},
+  booktitle = 	 {Proceedings of The 24th International Conference on Artificial Intelligence and Statistics},
+  year={2021},
+}
+
+@inproceedings{nacson2019convergence,
+  title={Convergence of gradient descent on separable data},
+  author={Nacson, Mor Shpigel and Lee, Jason and Gunasekar, Suriya and Savarese, Pedro Henrique Pamplona and Srebro, Nathan and Soudry, Daniel},
+  booktitle={The 22nd International Conference on Artificial Intelligence and Statistics},
+  year={2019},
+}
+
+@inproceedings{wang2020tackling,
+ author = {Wang, Jianyu and Liu, Qinghua and Liang, Hao and Joshi, Gauri and Poor, H. Vincent},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Tackling the Objective Inconsistency Problem in Heterogeneous Federated Optimization},
+ year = {2020}
+}
+
+%%%%% Centralized optimization algorithms
+
+% Adam
+@inproceedings{kingma2014adam,
+  author    = {Diederik P. Kingma and
+               Jimmy Ba},
+  title     = {Adam: {A} Method for Stochastic Optimization},
+  booktitle={International Conference on Learning Representations},
+  year      = {2015},
+}
+
+% Adagrad
+@inproceedings{mcmahan2010adaptive,
+  author    = {H. Brendan McMahan and
+               Matthew J. Streeter},
+  title     = {Adaptive Bound Optimization for Online Convex Optimization},
+  booktitle = {{COLT} The 23rd Conference on Learning Theory},
+  year      = {2010},
+}
+
+% Adagrad (again)
+@article{duchi2011adaptive,
+  title={Adaptive subgradient methods for online learning and stochastic optimization},
+  author={Duchi, John and Hazan, Elad and Singer, Yoram},
+  journal={Journal of Machine Learning Research},
+  volume={12},
+  number={Jul},
+  pages={2121--2159},
+  year={2011}
+}
+
+% Yogi
+@inproceedings{zaheer2018adaptive,
+  title={Adaptive methods for nonconvex optimization},
+  author={Zaheer, Manzil and Reddi, Sashank and Sachan, Devendra and Kale, Satyen and Kumar, Sanjiv},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={9815--9825},
+  year={2018}
+}
+
+%%%%% Centralized optimization theory
+
+@article{bubeck2014convex,
+  title={Convex Optimization: Algorithms and Complexity},
+  author={Bubeck, S{\'e}bastien},
+  journal={Foundations and Trends in Machine Learning},
+  year={2017}
+}
+
+@article{bottou2018optimization,
+  title={Optimization methods for large-scale machine learning},
+  author={Bottou, L{\'e}on and Curtis, Frank E and Nocedal, Jorge},
+  journal={Siam Review},
+  volume={60},
+  number={2},
+  pages={223--311},
+  year={2018}
+}
+
+
+%%%%% Software References
+
+@misc{tff,
+  author = "The TFF Authors",
+  title = "Tensor{F}low {F}ederated",
+  url = {https://www.tensorflow.org/federated},
+  year = {2019},
+}
+
+%%%%% Models and Dataset References
+
+@inproceedings{cohen2017emnist,
+  title={{EMNIST}: Extending {MNIST} to handwritten letters},
+  author={Cohen, Gregory and Afshar, Saeed and Tapson, Jonathan and Van Schaik, Andre},
+  booktitle={2017 International Joint Conference on Neural Networks (IJCNN)},
+  pages={2921--2926},
+  year={2017},
+  organization={IEEE}
+}
+
+@article{caldas2018leaf,
+  title={{LEAF}: A benchmark for federated settings},
+  author={Caldas, Sebastian and Wu, Peter and Li, Tian and Kone{\v{c}}n{\'y}, Jakub and McMahan, H Brendan and Smith, Virginia and Talwalkar, Ameet},
+  journal={arXiv preprint arXiv:1812.01097},
+  year={2018}
+}
+
+@techreport{krizhevsky2009learning,
+    author = {Alex Krizhevsky},
+    title = {Learning multiple layers of features from tiny images},
+    year = {2009}
+}
+
+@misc{stackoverflow,
+  author = "The TensorFlow Federated Authors",
+  title = "Tensor{F}low {F}ederated {Stack Overflow} Dataset",
+  url = {https://www.tensorflow.org/federated/api_docs/python/tff/simulation/datasets/stackoverflow/load_data},
+  year = {2019},
+}
+
+@misc{cifar100federated,
+  author = "The TensorFlow Federated Authors",
+  title = "Tensor{F}low {F}ederated {CIFAR-100} Dataset",
+  url = {https://www.tensorflow.org/federated/api_docs/python/tff/simulation/datasets/cifar100/load_data},
+  year = {2019},
+}
+
+@inproceedings{li2006pachinko,
+  title={Pachinko allocation: {DAG}-structured mixture models of topic correlations},
+  author={Li, Wei and McCallum, Andrew},
+  booktitle = {Proceedings of the 23rd International Conference on Machine Learning},
+  year={2006}
+}
+
+@inproceedings{he2016deep,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={770--778},
+  year={2016}
+}
+
+@inproceedings{he2016identity,
+  title={Identity mappings in deep residual networks},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Computer Vision -- ECCV 2016},
+  pages={630--645},
+  year={2016},
+}
+
+@inproceedings{mikolov2010recurrent,
+  title={Recurrent neural network based language model},
+  author={Mikolov, Tom{\'a}{\v{s}} and Karafi{\'a}t, Martin and Burget, Luk{\'a}{\v{s}} and {\v{C}}ernock{\`y}, Jan and Khudanpur, Sanjeev},
+  booktitle={Eleventh Annual Conference of the International Speech Communication Association},
+  year={2010}
+}
+
+@article{hochreiter1997long,
+  title={Long short-term memory},
+  author={Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  journal={Neural Computation},
+  volume={9},
+  number={8},
+  pages={1735--1780},
+  year={1997},
+  publisher={MIT Press}
+}
+
+%%%%% Model References
+
+@inproceedings{ioffe2015batch,
+  title = 	 {Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift},
+  author = 	 {Ioffe, Sergey and Szegedy, Christian},
+  booktitle = 	 {Proceedings of the 32nd International Conference on Machine Learning},
+  year={2015},
+}
+
+@inproceedings{wu2018group,
+  title={Group normalization},
+  author={Wu, Yuxin and He, Kaiming},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+  pages={3--19},
+  year={2018}
+}
+
+%%%%% Large-batch references
+
+@article{shallue2019measuring,
+  title={Measuring the Effects of Data Parallelism on Neural Network Training},
+  author={Shallue, Christopher J and Lee, Jaehoon and Antognini, Joseph and Sohl-Dickstein, Jascha and Frostig, Roy and Dahl, George E},
+  journal={Journal of Machine Learning Research},
+  volume={20},
+  pages={1--49},
+  year={2019}
+}
+
+@article{mccandlish2018empirical,
+  title={An empirical model of large-batch training},
+  author={McCandlish, Sam and Kaplan, Jared and Amodei, Dario and Team, OpenAI Dota},
+  journal={arXiv preprint arXiv:1812.06162},
+  year={2018}
+}
+
+@article{golmant2018computational,
+  title={On the computational inefficiency of large batch sizes for stochastic gradient descent},
+  author={Golmant, Noah and Vemuri, Nikita and Yao, Zhewei and Feinberg, Vladimir and Gholami, Amir and Rothauge, Kai and Mahoney, Michael W and Gonzalez, Joseph},
+  journal={arXiv preprint arXiv:1811.12941},
+  year={2018},
+}
+
+@inproceedings{dean2012large,
+ author = {Dean, Jeffrey and Corrado, Greg and Monga, Rajat and Chen, Kai and Devin, Matthieu and Mao, Mark and Ranzato, Marc'aurelio and Senior, Andrew and Tucker, Paul and Yang, Ke and Le, Quoc and Ng, Andrew},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Large Scale Distributed Deep Networks},
+ year = {2012},
+}
+
+@inproceedings{
+smith2017don,
+title={Don't Decay the Learning Rate, Increase the Batch Size},
+author={Samuel L. Smith and Pieter-Jan Kindermans and Quoc V. Le},
+booktitle={International Conference on Learning Representations},
+year={2018},
+}
+
+@inproceedings{ma2018power,
+  title = 	 {The Power of Interpolation: Understanding the Effectiveness of {SGD} in Modern Over-parametrized Learning},
+  author =       {Ma, Siyuan and Bassily, Raef and Belkin, Mikhail},
+  booktitle = 	 {Proceedings of the 35th International Conference on Machine Learning},
+  year={2018},
+}
+
+@inproceedings{yin2018gradient,
+  title = 	 {Gradient Diversity: a Key Ingredient for Scalable Distributed Learning},
+  author = 	 {Dong Yin and Ashwin Pananjady and Max Lam and Dimitris Papailiopoulos and Kannan Ramchandran and Peter Bartlett},
+  booktitle = 	 {Proceedings of the Twenty-First International Conference on Artificial Intelligence and Statistics},
+  year={2018},
+}
+
+@inproceedings{hoffer2017train,
+ author = {Hoffer, Elad and Hubara, Itay and Soudry, Daniel},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Train longer, generalize better: closing the generalization gap in large batch training of neural networks},
+ year = {2017}
+}
+
+@article{masters2018revisiting,
+  title={Revisiting small batch training for deep neural networks},
+  author={Masters, Dominic and Luschi, Carlo},
+  journal={arXiv preprint arXiv:1804.07612},
+  year={2018}
+}
+
+@inproceedings{lin2019don,
+  title={Don't Use Large Mini-batches, Use Local {SGD}},
+  author={Lin, Tao and Stich, Sebastian U and Patel, Kumar Kshitij and Jaggi, Martin},
+  booktitle={International Conference on Learning Representations},
+  year={2019}
+}
+
+@inproceedings{lin2020extrapolation,
+  title = 	 {Extrapolation for Large-batch Training in Deep Learning},
+  author =       {Lin, Tao and Kong, Lingjing and Stich, Sebastian and Jaggi, Martin},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  year={2020},
+}
+
+@inproceedings{
+Nakkiran2020Deep,
+title={Deep Double Descent: Where Bigger Models and More Data Hurt},
+author={Preetum Nakkiran and Gal Kaplun and Yamini Bansal and Tristan Yang and Boaz Barak and Ilya Sutskever},
+booktitle={International Conference on Learning Representations},
+year={2020},
+}
+
+@inproceedings{abadi2016deep,
+author = {Abadi, Martin and Chu, Andy and Goodfellow, Ian and McMahan, H. Brendan and Mironov, Ilya and Talwar, Kunal and Zhang, Li},
+title = {Deep Learning with Differential Privacy},
+year = {2016},
+booktitle = {Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {308–318},
+}
+
+@article{lee2017speeding,
+  title={Speeding up distributed machine learning using codes},
+  author={Lee, Kangwook and Lam, Maximilian and Pedarsani, Ramtin and Papailiopoulos, Dimitris and Ramchandran, Kannan},
+  journal={IEEE Transactions on Information Theory},
+  volume={64},
+  number={3},
+  pages={1514--1529},
+  year={2017},
+}
+
+% Differential Privacy
+
+@inproceedings{shi2011privacy,
+  title={Privacy-preserving aggregation of time-series data},
+  author={Shi, Elaine and Chan, TH Hubert and Rieffel, Eleanor and Chow, Richard and Song, Dawn},
+  booktitle={Proc. NDSS},
+  volume={2},
+  pages={1--17},
+  year={2011},
+}
+
+@inproceedings{cheu2019distributed,
+  title={Distributed differential privacy via shuffling},
+  author={Cheu, Albert and Smith, Adam and Ullman, Jonathan and Zeber, David and Zhilyaev, Maxim},
+  booktitle={Annual International Conference on the Theory and Applications of Cryptographic Techniques},
+  pages={375--403},
+  year={2019},
+}
+
+@inproceedings{bittau2017prochlo,
+  title={{PROCHLO}: Strong privacy for analytics in the crowd},
+  author={Bittau, Andrea and Erlingsson, {\'U}lfar and Maniatis, Petros and Mironov, Ilya and Raghunathan, Ananth and Lie, David and Rudominer, Mitch and Kode, Ushasree and Tinnes, Julien and Seefeld, Bernhard},
+  booktitle={Proceedings of the 26th Symposium on Operating Systems Principles},
+  pages={441--459},
+  year={2017}
+}
+
+@inproceedings{
+mcmahan2017learning,
+title={Learning Differentially Private Recurrent Language Models},
+author={H. Brendan McMahan and Daniel Ramage and Kunal Talwar and Li Zhang},
+booktitle={International Conference on Learning Representations},
+year={2018},
+}
+
+@article{erlingsson2020encode,
+  title={Encode, shuffle, analyze privacy revisited: Formalizations and empirical evaluation},
+  author={Erlingsson, {\'U}lfar and Feldman, Vitaly and Mironov, Ilya and Raghunathan, Ananth and Song, Shuang and Talwar, Kunal and Thakurta, Abhradeep},
+  journal={arXiv preprint arXiv:2001.03618},
+  year={2020}
+}
+
+@article{girgis2020shuffled,
+  title={Shuffled Model of Federated Learning: Privacy, Communication and Accuracy Trade-offs},
+  author={Girgis, Antonious M and Data, Deepesh and Diggavi, Suhas and Kairouz, Peter and Suresh, Ananda Theertha},
+  journal={arXiv preprint arXiv:2008.07180},
+  year={2020}
+}
+
+% Other federated optimization methods
+
+@inproceedings{
+al-shedivat2021federated,
+title={Federated Learning via Posterior Averaging: A New Perspective and Practical Algorithms},
+author={Maruan Al-Shedivat and Jennifer Gillenwater and Eric Xing and Afshin Rostamizadeh},
+booktitle={International Conference on Learning Representations},
+year={2021},
+}
+
+@article{albasyoni2020optimal,
+  title={Optimal Gradient Compression for Distributed and Federated Learning},
+  author={Albasyoni, Alyazeed and Safaryan, Mher and Condat, Laurent and Richt{\'a}rik, Peter},
+  journal={arXiv preprint arXiv:2010.03246},
+  year={2020}
+}
+
+@inproceedings{basu2019qsparse,
+ author = {Basu, Debraj and Data, Deepesh and Karakus, Can and Diggavi, Suhas},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Qsparse-local-{SGD}: Distributed {SGD} with Quantization, Sparsification and Local Computations},
+ year = {2019}
+}
+
+@inproceedings{briggs2020federated,
+  title={Federated learning with hierarchical clustering of local updates to improve training on non-{IID} data},
+  author={Briggs, Christopher and Fan, Zhong and Andras, Peter},
+  booktitle={2020 International Joint Conference on Neural Networks (IJCNN)},
+  year={2020},
+}
+
+@article{deng2021distributionally,
+  title={Distributionally robust federated averaging},
+  author={Deng, Yuyang and Kamani, Mohammad Mahdi and Mahdavi, Mehrdad},
+  journal={arXiv preprint arXiv:2102.12660},
+  year={2021}
+}
+
+@article{dennis2021heterogeneity,
+  title={Heterogeneity for the Win: One-Shot Federated Clustering},
+  author={Dennis, Don Kurian and Li, Tian and Smith, Virginia},
+  journal={arXiv preprint arXiv:2103.00697},
+  year={2021}
+}
+
+@article{ghosh2019robust,
+  title={Robust federated learning in a heterogeneous environment},
+  author={Ghosh, Avishek and Hong, Justin and Yin, Dong and Ramchandran, Kannan},
+  journal={arXiv preprint arXiv:1906.06629},
+  year={2019}
+}
+
+@inproceedings{NEURIPS2020_e32cc80b,
+ author = {Ghosh, Avishek and Chung, Jichan and Yin, Dong and Ramchandran, Kannan},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {An Efficient Framework for Clustered Federated Learning},
+ year = {2020}
+}
+
+@article{hu2020fedmgda+,
+  title={{FedMGDA}+: Federated Learning meets Multi-objective Optimization},
+  author={Hu, Zeou and Shaloudegi, Kiarash and Zhang, Guojun and Yu, Yaoliang},
+  journal={arXiv preprint arXiv:2006.11489},
+  year={2020}
+}
+
+@INPROCEEDINGS{laguel2020device,
+  author={Laguel, Yassine and Pillutla, Krishna and Malick, Jerôme and Harchaoui, Zaid},
+  booktitle={2021 55th Annual Conference on Information Sciences and Systems (CISS)}, 
+  title={A Superquantile Approach to Federated Learning with Heterogeneous Devices}, 
+  year={2021},
+}
+
+@article{konevcny2016federated,
+  title={Federated optimization: Distributed machine learning for on-device intelligence},
+  author={Kone{\v{c}}n{\`y}, Jakub and McMahan, H Brendan and Ramage, Daniel and Richt{\'a}rik, Peter},
+  journal={arXiv preprint arXiv:1610.02527},
+  year={2016}
+}
+
+@article{li2019fedmd,
+  title={Fed{MD}: Heterogenous federated learning via model distillation},
+  author={Li, Daliang and Wang, Junpu},
+  journal={arXiv preprint arXiv:1910.03581},
+  year={2019}
+}
+
+@inproceedings{li2019feddane,
+  title={Fed{DANE}: A federated newton-type method},
+  author={Li, Tian and Sahu, Anit Kumar and Zaheer, Manzil and Sanjabi, Maziar and Talwalkar, Ameet and Smithy, Virginia},
+  booktitle={2019 53rd Asilomar Conference on Signals, Systems, and Computers},
+  pages={1227--1231},
+  year={2019},
+  organization={IEEE}
+}
+
+@inproceedings{rothchild2020fetchsgd,
+  title = 	 {{F}etch{SGD}: Communication-Efficient Federated Learning with Sketching},
+  author =       {Rothchild, Daniel and Panda, Ashwinee and Ullah, Enayat and Ivkin, Nikita and Stoica, Ion and Braverman, Vladimir and Gonzalez, Joseph and Arora, Raman},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  year={2020},
+}
+
+@inproceedings{
+wang2020federated,
+title={Federated Learning with Matched Averaging},
+author={Hongyi Wang and Mikhail Yurochkin and Yuekai Sun and Dimitris Papailiopoulos and Yasaman Khazaeni},
+booktitle={International Conference on Learning Representations},
+year={2020},
+}
+
+@inproceedings{NEURIPS2020_39d0a890,
+ author = {Yuan, Honglin and Ma, Tengyu},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Federated Accelerated Stochastic Gradient Descent},
+ year = {2020}
+}
+
+
+@article{zhang2020fedpd,
+  title={Fed{PD}: A federated learning framework with optimal rates and adaptivity to non-{IID} data},
+  author={Zhang, Xinwei and Hong, Mingyi and Dhople, Sairaj and Yin, Wotao and Liu, Yang},
+  journal={arXiv preprint arXiv:2005.11418},
+  year={2020}
+}
+
+@article{paulik2021federated,
+  title={Federated Evaluation and Tuning for On-Device Personalization: System Design \& Applications},
+  author={Paulik, Matthias and Seigel, Matt and Mason, Henry and Telaar, Dominic and Kluivers, Joris and van Dalen, Rogier and Lau, Chi Wai and Carlson, Luke and Granqvist, Filip and Vandevelde, Chris and others},
+  journal={arXiv preprint arXiv:2102.08503},
+  year={2021}
+}
+
+@inproceedings{liang2014tofec,
+  title={TOFEC: Achieving optimal throughput-delay trade-off of cloud storage using erasure codes},
+  author={Liang, Guanfeng and Kozat, Ula{\c{s}} C},
+  booktitle={IEEE INFOCOM 2014-IEEE Conference on Computer Communications},
+  year={2014},
+}

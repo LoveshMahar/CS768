@@ -1,0 +1,682 @@
+%% Sources
+@string{PAMI = "IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)" }
+@string{TMLR = "IEEE Transactions on Machine Learning Research (T-MLR)" }
+@string{TIP = "IEEE Transactions on Image Processing (T-IP)"}
+@string{TNN = "IEEE Transactions on Neural Networks (T-NN)"}
+@string{TIT = "IEEE Transactions on Information Theory (T-IT)"}
+@string{IJCV = "International Journal of Computer Vision (IJCV)"}
+@string{JMLR = "Journal of Machine Learning Research (JMLR)"}
+@string{ML = "Machine Learning"}
+@string{PR = "Pattern Recognition"}
+@string{PRL = "Pattern Recognition Letters"}
+@string{AOP = "Annals of Probability"}
+@string{SPL = "Statistics and Probability Letters"}
+@string{JOE = "Journal of Econometrics"}
+@string{TPA = "Theory of Probability and Its Applications"}
+@string{TVP = "Teoriya Veroyatnostei i ee Primeneniya"}
+@string{AAP = "Advances in Applied Probability"}
+
+@string{CVPR = "Conference on Computer Vision and Pattern Recognition (CVPR)"}
+@string{ICPR = "International Conference on Pattern Recognition (ICPR)"}
+@string{ECCV = "European Conference on Computer Vision (ECCV)"}
+@string{ICANN = "International Conference on Artificial Neural Nertworks (ICANN)"}
+@string{ICCV = "International Conference on Computer Vision (ICCV)"}
+@string{NIPS = "Conference on Neural Information Processing Systems (NeurIPS)"}
+@string{ICML = "International Conference on Machine Learing (ICML)"}
+@string{COLT = "Conference on Learning Theory (COLT)"}
+@string{UAI = "Uncertainty in Artificial Intelligence (UAI)"}
+@string{ECML = "European Conference on Marchine Learning (ECML)"}
+@string{ECMLPKDD = "European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD)"}
+@string{AISTATS = " International Conference on Artificial Intelligence and Statistics (AISTATS)"} %"Conference on Uncertainty in Artificial Intelligence (AISTATS)"}
+@string{ALT = "Algorithmic Learning Theory (ALT)"}
+@string{AAAI = "Conference on Artificial Intelligence (AAAI)"}
+@string{IJCAI = "International Joint Conferences on Artificial Intelligence (IJCAI)"}
+@string{SODA = "Symposium on Discrete Algorithms (SODA)"}
+@string{ICLR = "International Conference on Learning Representations (ICLR)"}
+@string{ICLRW = "Workshops of the International Conference on Learning Representations (ICLR)"}
+@string{EMNLP = "Conference on Empirical Methods on Natural Language Processing (EMNLP)"}
+@string{SIGIR = "International Conference on Research and Development in Information Retrieval (SIGIR)"}
+@string{ICIP = "IEEE International Conference on Image Processing (ICIP)"}
+@string{SIGGRAPH = "ACM Transactions on Graphics (Proceedings of SIGGRAPH)"}
+@string{BMVC = "British Machine Vision Conference (BMVC)"}
+@string{WACV = "IEEE Winter Conference on Applications of Computer Vision (WACV)"}
+
+@string{ACL = "Annual Meeting of the Association for Computational Linguistics (ACL)"}
+@string{KDD = "Conference on Knowledge Discovery and Data Mining (KDD)"}
+@string{PKDD = "European Conference on Principles and Practice of Knowledge Discovery in Databases (PKDD)"}
+@string{WILEY = "Wiley"}
+@string{WILEYSONS = "John Wiley \& Sons"}
+@string{MIT = "The MIT Press"}
+@string{CAMBRIDGE = "Cambridge University Press"}
+@string{SPRINGER = "Springer"}
+@string{KLUWER = "Kluwer Academic Press"}
+@string{ELSEVIER = "Elsevier"}
+@string{OXFORD = "Oxford University Press"}
+@string{RSIF  = "Royal Society Interface Focus"}
+@string{ICASSP = "International Conference on Acoustics, Speech, and Signal Processing (ICASSP)"}
+
+
+%% Multi-objective works
+@article{Dsidri2012MultiplegradientDA,
+  title={Multiple-gradient descent algorithm (MGDA) for multiobjective optimization},
+  author={Jean-Antoine D{\'e}sid{\'e}ri},
+  journal={Comptes Rendus Mathematique},
+  year={2012},
+  volume={350},
+  pages={313-318}
+}
+
+
+@article{Liu2021ConflictAverseGD,
+  title={Conflict-averse gradient descent for multi-task learning},
+  author={Liu, Bo and Liu, Xingchao and Jin, Xiaojie and Stone, Peter and Liu, Qiang},
+  journal=NIPS,
+  volume={34},
+  pages={18878--18890},
+  year={2021}
+}
+
+@inproceedings{Lin2019ParetoML,
+  title={Pareto Multi-Task Learning},
+  author={Xi Lin and Hui-Ling Zhen and Zhenhua Li and Qingfu Zhang and Sam Tak Wu Kwong},
+  booktitle = NIPS,
+  year={2019}
+}
+
+% Arxiv title: Exact Pareto Optimal Search for Multi-Task Learning: Touring the Pareto Front
+@inproceedings{Mahapatra2021ExactPO,
+  title={Multi-Task Learning with User Preferences: Gradient Descent with Controlled Ascent in {P}areto Optimization},
+  author={Debabrata Mahapatra and Vaibhav Rajan},
+  booktitle=ICML,
+  year={2020}
+}
+
+@inproceedings{Sener2018MultiTaskLA,
+  title={Multi-Task Learning as Multi-Objective Optimization},
+  author={Ozan Sener and Vladlen Koltun},
+  booktitle=NIPS,
+  year={2018}
+}
+
+% Basically just applied their Pareto-MTL paper to Bayesian Optimization, too speicifc
+@inproceedings{Lin2022ParetoSL,
+  title={Pareto Set Learning for Expensive Multi-Objective %Optimization},
+  author={Xi Lin and Zhiyuan Yang and Xiao-Yan Zhang and %Qingfu Zhang},
+  booktitle=NIPS,
+  year={2022}
+}
+
+%% Scalarization
+@inproceedings{Kokkinos2016UberNetTA,
+  title={{UberNet}: Training a Universal Convolutional Neural Network for Low-, Mid-, and High-Level Vision Using Diverse Datasets and Limited Memory},
+  author={Iasonas Kokkinos},
+  booktitle=CVPR,
+  year={2016}
+}
+
+@inproceedings{Xin2022DoCM,
+  title={Do Current Multi-Task Optimization Methods in Deep Learning Even Help?},
+  author={Derrick Xin and B. Ghorbani and Ankush Garg and Orhan Firat and Justin Gilmer},
+  booktitle=NIPS,
+  year={2022}
+}
+
+@inproceedings{Kurin2022InDO,
+  title={In Defense of the Unitary Scalarization for Deep Multi-Task Learning},
+  author={Vitaly Kurin and Alessandro De Palma and Ilya Kostrikov and Shimon Whiteson and M. Pawan Kumar},
+  booktitle=NIPS,
+  year={2022}
+}
+
+@article{Ruchte2021MultitaskPA,
+  title={Multi-task problems are not multi-objective},
+  author={Michael Ruchte and Josif Grabocka},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2110.07301}
+}
+
+@inproceedings{Lin2022ReasonableEO,
+  title={Reasonable Eﬀectiveness of Random Weighting: A {L}itmus Test for Multi-Task Learning},
+  author={Baijiong Lin and Feiyang Ye and Yu Zhang and Ivor Wai-Hung Tsang},
+  booktitle = TMLR,
+  year={2022}
+}
+
+
+% Related work
+
+% This one  = add in the lreated work instead as it is generitc to any otpimizaton method
+@inproceedins{Ma2020EfficientCP,
+  title={Efficient Continuous {P}areto Exploration in Multi-Task Learning},
+  author={Pingchuan Ma and Tao Du and Wojciech Matusik},
+  booktitle=ICML,
+  year={2020}
+}
+
+@inproceedings{ruder2019latent,
+  title={Latent multi-task architecture learning},
+  author={Ruder, Sebastian and Bingel, Joachim and Augenstein, Isabelle and S{\o}gaard, Anders},
+  booktitle=AAAI,
+  year={2019}
+}
+
+@inproceedings{gao2019nddr,
+  title={{NDDR-CNN}: Layerwise feature fusing in multi-task cnns by neural discriminative dimensionality reduction},
+  author={Gao, Yuan and Ma, Jiayi and Zhao, Mingbo and Liu, Wei and Yuille, Alan L},
+  booktitle=CVPR,
+  pages={3205--3214},
+  year={2019}
+}
+
+@inproceedings{bragman2019stochastic,
+  title={Stochastic filter groups for multi-task cnns: Learning specialist and generalist convolution kernels},
+  author={Bragman, Felix JS and Tanno, Ryutaro and Ourselin, Sebastien and Alexander, Daniel C and Cardoso, Jorge},
+  booktitle=CVPR,
+  pages={1385--1394},
+  year={2019}
+}
+
+@inproceedings{strezoski2019many,
+  title={Many task learning with task routing},
+  author={Strezoski, Gjorgji and Noord, Nanne van and Worring, Marcel},
+  booktitle=ICCV,
+  pages={1375--1384},
+  year={2019}
+}
+
+% MDL
+@article{rebuffi2017learning,
+  title={Learning multiple visual domains with residual adapters},
+  author={Rebuffi, Sylvestre-Alvise and Bilen, Hakan and Vedaldi, Andrea},
+  journal=NIPS,
+  volume={30},
+  year={2017}
+}
+
+@article{rosenfeld2018incremental,
+  title={Incremental learning through deep adaptation},
+  author={Rosenfeld, Amir and Tsotsos, John K},
+  journal=PAMI,
+  volume={42},
+  number={3},
+  pages={651--663},
+  year={2018},
+  publisher={IEEE}
+}
+
+@inproceedings{rebuffi2018efficient,
+  title={Efficient parametrization of multi-domain deep neural networks},
+  author={Rebuffi, Sylvestre-Alvise and Bilen, Hakan and Vedaldi, Andrea},
+  booktitle=CVPR,
+  pages={8119--8127},
+  year={2018}
+}
+
+@article{li2022Universal,
+    author    = {Li, Wei-Hong and Liu, Xialei and Bilen, Hakan},
+    title     = {Universal Representations: {A} Unified Look at Multiple Task and Domain Learning},
+    journal   = {arXiv preprint arXiv:2204.02744},
+    year      = {2022}
+}
+
+@misc{universalgithub,
+  title = {PCGrad},
+  year = {2029},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/tianheyu927/PCGrad}},
+}
+
+% task Affinities
+@inproceedings{Fifty2021EfficientlyIT,
+  title={Efficiently Identifying Task Groupings for Multi-Task Learning},
+  author={Christopher Fifty and Ehsan Amid and Zhe Zhao and Tianhe Yu and Rohan Anil and Chelsea Finn},
+  booktitle=NIPS,
+  year={2021}
+}
+
+@article{taskgrouping,
+  title={Which Tasks Should Be Learned Together in Multi-task Learning?},
+  author={Trevor Scott Standley and Amir Roshan Zamir and Dawn Chen and Leonidas J. Guibas and Jitendra Malik and Silvio Savarese},
+  journal={ArXiv},
+  year={2019},
+  volume={abs/1905.07553}
+}
+
+@inproceedings{Han2015LearningMT,
+  title={Learning Multi-Level Task Groups in Multi-Task Learning},
+  author={Lei Han and Yu Zhang},
+  booktitle=AAAI,
+  year={2015}
+}
+
+@inproceedings{ben2003exploiting,
+  title={Exploiting task relatedness for multiple task learning},
+  author={Ben-David, Shai and Schuller, Reba},
+  booktitle={Learning Theory and Kernel Machines: 16th Annual Conference on Learning Theory and 7th Kernel Workshop, COLT/Kernel 2003, Washington, DC, USA, August 24-27, 2003. Proceedings},
+  pages={567--580},
+  year={2003},
+  organization={Springer}
+}
+
+% Adaptive weighing
+
+% Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics: Losses are inversely scaled by variance
+% cost: only need to compute the variance wrt to each task. But in terms of performance this performs even worse than GradNOrm
+@inproceedings{Kendall2017MultitaskLU,
+  title={Multi-task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics},
+  author={Alex Kendall and Yarin Gal and Roberto Cipolla},
+  booktitle=CVPR,
+  year={2017},
+  pages={7482-7491}
+}
+
+%GradNorm
+% define coeff ri = (loss at time i - loss at time 0) normalized across all tasks losses ~ normalized training speed
+% define Gi = target gradient norm = average gradient norm  rescaled by multiplying by ri
+% finally, define GradNorm regularization loss as a L1 loss between the target Gi and the actual gradient norm
+
+% Cost: need to compute Loss with resepct to task separatel Gradnorm is only applied in the last layer due to ocmpute cost
+% Essentially they claim to be better than GridSearch wich doesn't seem to be the case in later studies so maybe vey specific to one learning rate/study
+% ICML 2018 ?
+% but it was rejected: https://openreview.net/forum?id=H1bM1fZCW
+@article{Chen2017GradNormGN,
+  title={{GradNorm}: {G}radient Normalization for Adaptive Loss Balancing in Deep Multitask Networks},
+  author={Zhao Chen and Vijay Badrinarayanan and Chen-Yu Lee and Andrew Rabinovich},
+  journal={ArXiv},
+  year={2017},
+  volume={abs/1711.02257}
+}
+
+%PCGrad
+% Compute gradients wrt each task, and detect which gradients are interfering with each other (= cosine of the angle < 0, i.e. angle obtus). Then project on on the orthogonal plane of the other to remove the confliciting direction. If too much conflict, are we not just destorying information
+% if there are multiple conflicting gradients, the projection is done against all of them, in random order (quadratic loop), iteratively
+% teory = analyze the PCGrad in the convex setting, mouais
+% cost = same but implementedmore efficient; order bartch per task and only do projection once all tasks are mt. One update every T forward pass
+@inproceedings{Yu2020GradientSF,
+  title={Gradient Surgery for Multi-Task Learning},
+  author={Tianhe Yu and Saurabh Kumar and Abhishek Gupta and Sergey Levine and Karol Hausman and Chelsea Finn},
+  booktitle=NIPS,
+  year={2020}
+}
+
+%%IMTL
+% note: they also hae a nice reated section to check previous work
+% IMTL: Two scalings. one of the task private parameters where the losses are rescaled t have roughly equal magnitudes
+% second scalin is on the task shared parameters where they use projections
+% so they use both "gradient" balance and "loss" balance according to them
+% in essence, their scaling method is close-ish to GradNorm. And on top of that they also have the loss rescaling balance for the shared parameters
+@inproceedings{Liu2021TowardsIM,
+  title={Towards Impartial Multi-task Learning},
+  author={Liyang Liu and Yi Li and Zhanghui Kuang and Jing-Hao Xue and Yimin Chen and Wenming Yang and Qingmin Liao and Wayne Zhang},
+  booktitle=ICLR,
+  year={2021}
+}
+
+%% Gradient vaccine
+@inproceedings{wang2020gradient,
+  title={Gradient vaccine: {I}nvestigating and improving multi-task optimization in massively multilingual models},
+  author={Wang, Zirui and Tsvetkov, Yulia and Firat, Orhan and Cao, Yuan},
+  booktitle=ICLR,
+  year={2021}
+}
+
+
+@inproceedings{misra2016cross,
+  title={Cross-stitch networks for multi-task learning},
+  author={Misra, Ishan and Shrivastava, Abhinav and Gupta, Abhinav and Hebert, Martial},
+  booktitle=CVPR,
+  pages={3994--4003},
+  year={2016}
+}
+
+@inproceedings{guo2018dynamic,
+  title={Dynamic task prioritization for multitask learning},
+  author={Guo, Michelle and Haque, Albert and Huang, De-An and Yeung, Serena and Fei-Fei, Li},
+  booktitle=ECCV,
+  pages={270--287},
+  year={2018}
+}
+
+@article{lin2021closer,
+  title={A closer look at loss weighting in multi-task learning},
+  author={Lin, Baijiong and Ye, Feiyang and Zhang, Yu},
+  journal={arXiv preprint arXiv:2111.10603},
+  year={2021}
+}
+
+@article{du2018adapting,
+  title={Adapting auxiliary losses using gradient similarity},
+  author={Du, Yunshu and Czarnecki, Wojciech M and Jayakumar, Siddhant M and Farajtabar, Mehrdad and Pascanu, Razvan and Lakshminarayanan, Balaji},
+  journal={arXiv preprint arXiv:1812.02224},
+  year={2018}
+}
+
+@article{suteu2019regularizing,
+  title={Regularizing deep multi-task networks using orthogonal gradients},
+  author={Suteu, Mihai and Guo, Yike},
+  journal={arXiv preprint arXiv:1912.06844},
+  year={2019}
+}
+
+%% RotoGrad
+% Key idea is essentially to normalize training speed of all tasks
+% nice = in table 7 of appendix they have a table with training costs in hours
+@inproceedings{Javaloy2021RotoGradGH,
+  title={{RotoGrad}: {G}radient Homogenization in Multitask Learning},
+  author={Adri{\'a}n Javaloy and Isabel Valera},
+  booktitle=ICLR,
+  year={2021}
+}
+
+%% GradDrop
+% basically it is taking the opposite direction of Grad Surgery and saying that some noise is better than removing all conflicting directions.
+% basically they select one sign and mask out al directions that are not of that sign; it is a form of weaker projection no ?
+% this one is actually orthogonal to our approach, it's about ignoring conflicts, but doesn't impact the loss weights per say
+% gradient and loss methods can be combined as in ITML but often not due to cost
+% still, only done with respect to one layer (e.g. the last shared layer)
+@inproceedings{Chen2020JustPA,
+  title={Just Pick a Sign: {O}ptimizing Deep Multitask Models with Gradient Sign Dropout},
+  author={Zhao Chen and Jiquan Ngiam and Yanping Huang and Thang Luong and Henrik Kretzschmar and Yuning Chai and Dragomir Anguelov},
+  booktitle=NIPS,
+  year={2020}
+}
+
+%% Meta-Learning
+@article{Liu2022AutoLambdaDD,
+  title={{Auto-Lambda}: {D}isentangling Dynamic Task Relationships},
+  author={Shikun Liu and Stephen James and Andrew J. Davison and Edward Johns},
+  journal=TMLR,
+  year={2022},
+}
+
+@inproceedings{
+song2022efficient,
+title={Efficient and Effective Multi-task Grouping via Meta Learning on Task Combinations},
+author={Xiaozhuang Song and Shun Zheng and Wei Cao and James Yu and Jiang Bian},
+booktitle=NIPS,
+year={2022},
+}
+
+%% MDL
+@inproceedings{An2020WhyRO,
+  title={Why resampling outperforms reweighting for correcting sampling bias},
+  author={Jing An and Lexing Ying and Yuhua Zhu},
+  booktitle=ICLR,
+  year={2021},
+}
+
+@article{Krawczyk2016LearningFI,
+  title={Learning from imbalanced data: open challenges and future directions},
+  author={B. Krawczyk},
+  journal={Progress in Artificial Intelligence},
+  year={2016},
+  volume={5},
+  pages={221 - 232}
+}
+
+@article{Mathews2019LearningFI,
+  title={Learning From Imbalanced Data},
+  author={Lincy Mathews and Seetha Hari},
+  journal={Advances in Computer and Electrical Engineering},
+  year={2019}
+}
+
+%% Architectures
+@article{Liu2018EndToEndML,
+  title={End-To-End Multi-Task Learning With Attention},
+  author={Shikun Liu and Edward Johns and Andrew J. Davison},
+  journal=CVPR,
+  year={2018},
+  pages={1871-1880}
+}
+
+
+%%Datasets
+@inproceedings{taskonomy,
+  title={Taskonomy: {D}isentangling Task Transfer Learning},
+  author={Amir Roshan Zamir and Alexander Sax and Bokui (William) Shen and Leonidas J. Guibas and Jitendra Malik and Silvio Savarese},
+  booktitle=CVPR,
+  year={2018}
+}
+
+@inproceedings{domainnet,
+  title={Moment Matching for Multi-Source Domain Adaptation},
+  author={Xingchao Peng and Qinxun Bai and Xide Xia and Zijun Huang and Kate Saenko and Bo Wang},
+  booktitle=ICCV,
+  year={2018},
+  pages={1406-1415}
+}
+
+@inproceedings{li2021dynamic,
+  title={Dynamic transfer for multi-source domain adaptation},
+  author={Li, Yunsheng and Yuan, Lu and Chen, Yinpeng and Wang, Pei and Vasconcelos, Nuno},
+  booktitle=CVPR,
+  pages={10998--11007},
+  year={2021}
+}
+
+@inproceedings{celeba,
+  title = {Deep Learning Face Attributes in the Wild},
+  author = {Liu, Ziwei and Luo, Ping and Wang, Xiaogang and Tang, Xiaoou},
+  booktitle = ICCV,
+  year = {2015} 
+}
+
+@inproceedings{stl,
+  title={An Analysis of Single-Layer Networks in Unsupervised Feature Learning},
+  author={Adam Coates and A. Ng and Honglak Lee},
+  booktitle=AISTATS,
+  year={2011}
+}
+
+@techreport{cifar,
+  title={Learning Multiple Layers of Features from Tiny Images},
+  author={Alex Krizhevsky},
+  year={2009},
+institution={University of Toronto}
+}
+
+@inproceedings{vits4,
+author    = {Hanan Gani and Muzammal Naseer and Mohammad Yaqub},
+title     = {How to Train Vision Transformer on Small-scale Datasets?},
+booktitle = BMVC,
+year      = {2022},
+}
+
+
+% loss landscape
+@inproceedings{Li2017VisualizingTL,
+  title={Visualizing the Loss Landscape of Neural Nets},
+  author={Hao Li and Zheng Xu and Gavin Taylor and Tom Goldstein},
+  booktitle=NIPS,
+  year={2017}
+}
+
+@article{russakovsky2015imagenet,
+  title={Imagenet large scale visual recognition challenge},
+  author={Russakovsky, Olga and Deng, Jia and Su, Hao and Krause, Jonathan and Satheesh, Sanjeev and Ma, Sean and Huang, Zhiheng and Karpathy, Andrej and Khosla, Aditya and Bernstein, Michael and others},
+  journal={International journal of computer vision},
+  volume={115},
+  pages={211--252},
+  year={2015},
+  publisher={Springer}
+}
+
+
+@article{vandenhende2021multi,
+  title={Multi-task learning for dense prediction tasks: {A} survey},
+  author={Vandenhende, Simon and Georgoulis, Stamatios and Van Gansbeke, Wouter and Proesmans, Marc and Dai, Dengxin and Van Gool, Luc},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={44},
+  number={7},
+  pages={3614--3633},
+  year={2021},
+  publisher={IEEE}
+}
+
+@article{jaderberg2017population,
+  title={Population based training of neural networks},
+  author={Jaderberg, Max and Dalibard, Valentin and Osindero, Simon and Czarnecki, Wojciech M and Donahue, Jeff and Razavi, Ali and Vinyals, Oriol and Green, Tim and Dunning, Iain and Simonyan, Karen and others},
+  journal={arXiv preprint arXiv:1711.09846},
+  year={2017}
+}
+
+
+%% generalization ounds
+@inproceedings{gb1,
+  title={A Principled Approach for Learning Task Similarity in Multitask Learning},
+  author={Changjian Shui and Mahdieh Abbasi and Louis-{\'E}mile Robitaille and Boyu Wang and Christian Gagn{\'e}},
+  booktitle=IJCAI,
+  year={2019},
+  volume={abs/1903.09109}
+}
+
+@article{gb2,
+  title={The Benefit of Multitask Representation Learning},
+  author={Andreas Maurer and Massimiliano Pontil and Bernardino Romera-Paredes},
+  journal=JMLR,
+  year={2015},
+  volume={abs/1505.06279}
+}
+
+@inproceedings{gb3,
+  title={Multi-task Learning with Labeled and Unlabeled Tasks},
+  author={Anastasia Pentina and Christoph H. Lampert},
+  booktitle=ICML,
+  year={2016}
+}
+
+
+@article{gb4,
+  title={A theory of learning from different domains},
+  author={Shai Ben-David and John Blitzer and Koby Crammer and Alex Kulesza and Fernando C Pereira and Jennifer Wortman Vaughan},
+  journal={Machine Learning},
+  year={2010},
+  volume={79},
+  pages={151-175}
+}
+
+@inproceedings{cordts2016cityscapes,
+  title={The cityscapes dataset for semantic urban scene understanding},
+  author={Cordts, Marius and Omran, Mohamed and Ramos, Sebastian and Rehfeld, Timo and Enzweiler, Markus and Benenson, Rodrigo and Franke, Uwe and Roth, Stefan and Schiele, Bernt},
+  booktitle=CVPR,
+  pages={3213--3223},
+  year={2016}
+}
+
+@article{silberman2012indoor,
+  title={Indoor segmentation and support inference from rgbd images.},
+  author={Silberman, Nathan and Hoiem, Derek and Kohli, Pushmeet and Fergus, Rob},
+  journal=ECCV,
+  volume={7576},
+  pages={746--760},
+  year={2012}
+}
+
+
+@inproceedings{Ho2019PopulationBA,
+  title={Population Based Augmentation: Efficient Learning of Augmentation Policy Schedules},
+  author={Daniel Ho and Eric Liang and Ion Stoica and P. Abbeel and Xi Chen},
+  booktitle=ICML,
+  year={2019}
+}
+
+@inproceedings{Lopes2021TradeoffsID,
+  title={Tradeoffs in Data Augmentation: {A}n Empirical Study},
+  author={Raphael Gontijo Lopes and Sylvia J. Smullin and Ekin Dogus Cubuk and Ethan Dyer},
+  booktitle=ICLR,
+  year={2021}
+}
+
+@article{raytune,
+  title={Tune: {A} Research Platform for Distributed Model Selection and Training},
+  author={Richard Liaw and Eric Liang and Robert Nishihara and Philipp Moritz and Joseph E. Gonzalez and Ion Stoica},
+  journal={ArXiv},
+  year={2018},
+  volume={abs/1807.05118}
+}
+
+@article{ParkerHolder2020ProvablyEO,
+  title={Provably Efficient Online Hyperparameter Optimization with Population-Based Bandits},
+  author={Jack Parker-Holder and Vu Nguyen and Stephen J. Roberts},
+  journal={arXiv: Learning},
+  year={2020}
+}
+
+@article{Boyd2004ConvexO,
+  title={Convex Optimization},
+  author={Stephen P. Boyd and Lieven Vandenberghe},
+  journal={IEEE Transactions on Automatic Control},
+  year={2004},
+  volume={51},
+  pages={1859-1859}
+}
+
+
+%%Domain adaptation
+@article{da1,
+  title={Domain-Adversarial Training of Neural Networks},
+  author={Yaroslav Ganin and E. Ustinova and Hana Ajakan and Pascal Germain and H. Larochelle and François Laviolette and Mario Marchand and Victor S. Lempitsky},
+  journal={ArXiv},
+  year={2015},
+  volume={abs/1505.07818}
+}
+
+@inproceedings{da2,
+  title={Learning Bounds for Domain Adaptation},
+  author={John Blitzer and Koby Crammer and Alex Kulesza and Fernando C Pereira and Jennifer Wortman Vaughan},
+  booktitle=NIPS,
+  year={2007}
+}
+
+@inproceedings{da4,
+  title={Unsupervised Domain Adaptation by Domain Invariant Projection},
+  author={Mahsa Baktash and Mehrtash Tafazzoli Harandi and Brian C. Lovell and Mathieu Salzmann},
+  booktitle=ICCV,
+  year={2013},
+  pages={769-776}
+}
+
+@article{da3,
+  title={A Survey of Unsupervised Domain Adaptation for Visual Recognition},
+  author={Youshan Zhang},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2112.06745}
+}
+
+@article{Frazier2018ATO,
+  title={A Tutorial on {B}ayesian Optimization},
+  author={P. Frazier},
+  journal={ArXiv},
+  year={2018},
+  volume={abs/1807.02811}
+}
+
+
+@article{autoaugment,
+  title={{AutoAugment}: {L}earning Augmentation Strategies From Data},
+  author={Ekin Dogus Cubuk and Barret Zoph and Dandelion Man{\'e} and Vijay Vasudevan and Quoc V. Le},
+  journal=CVPR,
+  year={2019},
+  pages={113-123}
+}
+
+@article{randaugment,
+  title={{RandAugment}: {P}ractical automated data augmentation with a reduced search space},
+  author={Ekin Dogus Cubuk and Barret Zoph and Jonathon Shlens and Quoc V. Le},
+  journal={2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+  year={2019},
+  pages={3008-3017}
+}
+
+@inproceedings{dushatskiy2023multi,
+  title={Multi-Objective Population Based Training},
+  author={Dushatskiy, Arkadiy and Chebykin, Alexander and Alderliesten, Tanja and Bosman, Peter A.N.},
+  booktitle={International Conference on Machine Learning},
+  pages={8969--8989},
+  year={2023},
+  organization={PMLR}
+}

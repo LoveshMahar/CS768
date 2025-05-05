@@ -1,0 +1,693 @@
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+
+@article{wager2018estimation,
+  title={Estimation and inference of heterogeneous treatment effects using random forests},
+  author={Wager, Stefan and Athey, Susan},
+  journal={Journal of the American Statistical Association},
+  volume={113},
+  number={523},
+  pages={1228--1242},
+  year={2018},
+  publisher={Taylor \& Francis}
+}
+
+%Entries
+@inproceedings{tang2018ranking,
+  title={Ranking distillation: Learning compact ranking models with high performance for recommender system},
+  author={Tang, Jiaxi and Wang, Ke},
+  booktitle={Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  pages={2289--2298},
+  year={2018}
+}
+
+@inproceedings{mohri2014learning,
+  title={Learning theory and algorithms for revenue optimization in second price auctions with reserve},
+  author={Mohri, Mehryar and Medina, Andres Munoz},
+  booktitle={International Conference on Machine Learning},
+  pages={262--270},
+  year={2014},
+  organization={PMLR}
+}
+
+@article{bastani2017interpreting,
+  title={Interpreting blackbox models via model extraction},
+  author={Bastani, Osbert and Kim, Carolyn and Bastani, Hamsa},
+  journal={arXiv preprint arXiv:1705.08504},
+  year={2017}
+}
+
+@inproceedings{vongkulbhisal2019unifying,
+  title={Unifying heterogeneous classifiers with distillation},
+  author={Vongkulbhisal, Jayakorn and Vinayavekhin, Phongtharin and Visentini-Scarzanella, Marco},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={3175--3184},
+  year={2019}
+}
+@inproceedings{ding2018interpreting,
+  title={Interpreting social media-based substance use prediction models with knowledge distillation},
+  author={Ding, Tao and Hasan, Fatema and Bickel, Warren K and Pan, Shimei},
+  booktitle={2018 IEEE 30th International Conference on Tools with Artificial Intelligence (ICTAI)},
+  pages={623--630},
+  year={2018},
+  organization={IEEE}
+}
+
+@inproceedings{liu2020general,
+  title={A general knowledge distillation framework for counterfactual recommendation via uniform data},
+  author={Liu, Dugang and Cheng, Pengxiang and Dong, Zhenhua and He, Xiuqiang and Pan, Weike and Ming, Zhong},
+  booktitle={Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages={831--840},
+  year={2020}
+}
+
+@article{pan2019novel,
+  title={A novel enhanced collaborative autoencoder with knowledge distillation for top-N recommender systems},
+  author={Pan, Yiteng and He, Fazhi and Yu, Haiping},
+  journal={Neurocomputing},
+  volume={332},
+  pages={137--148},
+  year={2019},
+  publisher={Elsevier}
+}
+
+
+@article{che2015distilling,
+  title={Distilling knowledge from deep networks with applications to healthcare domain},
+  author={Che, Zhengping and Purushotham, Sanjay and Khemani, Robinder and Liu, Yan},
+  journal={arXiv preprint arXiv:1512.03542},
+  year={2015}
+}
+
+@article{miller2019explanation,
+  title={Explanation in artificial intelligence: Insights from the social sciences},
+  author={Miller, Tim},
+  journal={Artificial intelligence},
+  volume={267},
+  pages={1--38},
+  year={2019},
+  publisher={Elsevier}
+}
+
+@article{frosst2017distilling,
+  title={Distilling a neural network into a soft decision tree},
+  author={Frosst, Nicholas and Hinton, Geoffrey},
+  journal={arXiv preprint arXiv:1711.09784},
+  year={2017}
+}
+
+@inproceedings{lundberg2017unified,
+  title={A unified approach to interpreting model predictions},
+  author={Lundberg, Scott M and Lee, Su-In},
+  booktitle={Advances in neural information processing systems},
+  pages={4765--4774},
+  year={2017}
+}
+@article{doshi2017towards,
+  title={Towards a rigorous science of interpretable machine learning},
+  author={Doshi-Velez, Finale and Kim, Been},
+  journal={arXiv preprint arXiv:1702.08608},
+  year={2017}
+}
+
+@article{hirano2004propensity,
+  title={The propensity score with continuous treatments},
+  author={Hirano, Keisuke and Imbens, Guido W},
+  journal={Applied Bayesian modeling and causal inference from incomplete-data perspectives},
+  volume={226164},
+  pages={73--84},
+  year={2004}
+}
+
+@article{laurent1976constructing,
+  title={Constructing optimal binary decision trees is NP-complete},
+  author={Laurent, Hyafil and Rivest, Ronald L},
+  journal={Information processing letters},
+  volume={5},
+  number={1},
+  pages={15--17},
+  year={1976}
+}
+
+@book{devroye2013probabilistic,
+  title={A probabilistic theory of pattern recognition},
+  author={Devroye, Luc and Gy{\"o}rfi, L{\'a}szl{\'o} and Lugosi, G{\'a}bor},
+  volume={31},
+  year={2013},
+  publisher={Springer Science \& Business Media}
+}
+
+@book{breiman2017classification,
+  title={Classification and regression trees},
+  author={Breiman, Leo},
+  year={2017},
+  publisher={Routledge}
+}
+
+@book{breiman1984classification,
+  title={Classification and regression trees},
+  author={Breiman, Leo and Friedman, Jerome and Stone, Charles J and Olshen, Richard A},
+  year={1984},
+  publisher={CRC press}
+}
+
+@inproceedings{ke2017lightgbm,
+  title={Lightgbm: A highly efficient gradient boosting decision tree},
+  author={Ke, Guolin and Meng, Qi and Finley, Thomas and Wang, Taifeng and Chen, Wei and Ma, Weidong and Ye, Qiwei and Liu, Tie-Yan},
+  booktitle={Advances in neural information processing systems},
+  pages={3146--3154},
+  year={2017}
+}
+
+@inproceedings{kallus2017recursive,
+  title={Recursive partitioning for personalization using observational data},
+  author={Kallus, Nathan},
+  booktitle={Proceedings of the 34th International Conference on Machine Learning-Volume 70},
+  pages={1789--1798},
+  year={2017},
+  organization={JMLR. org}
+}
+
+@article{athey2016recursive,
+  title={Recursive partitioning for heterogeneous causal effects},
+  author={Athey, Susan and Imbens, Guido},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={113},
+  number={27},
+  pages={7353--7360},
+  year={2016},
+  publisher={National Acad Sciences}
+}
+
+@inproceedings{airbnb,
+author = {Ye, Peng and Qian, Julian and Chen, Jieying and Wu, Chen-hung and Zhou, Yitong and De Mars, Spencer and Yang, Frank and Zhang, Li},
+title = {Customized Regression Model for Airbnb Dynamic Pricing},
+year = {2018},
+isbn = {9781450355520},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3219819.3219830},
+doi = {10.1145/3219819.3219830},
+booktitle = {Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+pages = {932–940},
+numpages = {9},
+keywords = {customized regression model, dynamic pricing, price optimization},
+location = {London, United Kingdom},
+series = {KDD ’18}
+}
+
+
+@article{hinton2015distilling,
+  title={Distilling the knowledge in a neural network},
+  author={Hinton, Geoffrey and Vinyals, Oriol and Dean, Jeff},
+  journal={arXiv preprint arXiv:1503.02531},
+  year={2015}
+}
+
+@article{letham2015interpretable,
+  title={Interpretable classifiers using rules and bayesian analysis: Building a better stroke prediction model},
+  author={Letham, Benjamin and Rudin, Cynthia and McCormick, Tyler H and Madigan, David and others},
+  journal={The Annals of Applied Statistics},
+  volume={9},
+  number={3},
+  pages={1350--1371},
+  year={2015},
+  publisher={Institute of Mathematical Statistics}
+}
+
+@article{ustun2016supersparse,
+  title={Supersparse linear integer models for optimized medical scoring systems},
+  author={Ustun, Berk and Rudin, Cynthia},
+  journal={Machine Learning},
+  volume={102},
+  number={3},
+  pages={349--391},
+  year={2016},
+  publisher={Springer}
+}
+
+@inproceedings{lakkaraju2016interpretable,
+  title={Interpretable decision sets: A joint framework for description and prediction},
+  author={Lakkaraju, Himabindu and Bach, Stephen H and Leskovec, Jure},
+  booktitle={Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining},
+  pages={1675--1684},
+  year={2016}
+}
+
+@article{bertsimas2019price,
+  title={The Price of Interpretability},
+  author={Bertsimas, Dimitris and Delarue, Arthur and Jaillet, Patrick and Martin, Sebastien},
+  journal={arXiv preprint arXiv:1907.03419},
+  year={2019}
+}
+
+@inproceedings{craven1996extracting,
+  title={Extracting tree-structured representations of trained networks},
+  author={Craven, Mark and Shavlik, Jude W},
+  booktitle={Advances in neural information processing systems},
+  pages={24--30},
+  year={1996}
+}
+
+@inproceedings{ribeiro2016should,
+  title={" Why should i trust you?" Explaining the predictions of any classifier},
+  author={Ribeiro, Marco Tulio and Singh, Sameer and Guestrin, Carlos},
+  booktitle={Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining},
+  pages={1135--1144},
+  year={2016}
+}
+
+@inproceedings{ribeiro2018anchors,
+  title={Anchors: High-precision model-agnostic explanations},
+  author={Ribeiro, Marco Tulio and Singh, Sameer and Guestrin, Carlos},
+  booktitle={Thirty-Second AAAI Conference on Artificial Intelligence},
+  year={2018}
+}
+
+@article{baehrens2010explain,
+  title={How to explain individual classification decisions},
+  author={Baehrens, David and Schroeter, Timon and Harmeling, Stefan and Kawanabe, Motoaki and Hansen, Katja and M{\~A}{\v{z}}ller, Klaus-Robert},
+  journal={Journal of Machine Learning Research},
+  volume={11},
+  number={Jun},
+  pages={1803--1831},
+  year={2010}
+}
+
+@inproceedings{sanchez2015towards,
+  title={Towards extracting faithful and descriptive representations of latent variable models},
+  author={Sanchez, Ivan and Rocktaschel, Tim and Riedel, Sebastian and Singh, Sameer},
+  booktitle={AAAI Spring Syposium on Knowledge Representation and Reasoning (KRR): Integrating Symbolic and Neural Approaches},
+  volume={1},
+  pages={4--1},
+  year={2015}
+}
+
+@article{friedman2008predictive,
+  title={Predictive learning via rule ensembles},
+  author={Friedman, Jerome H and Popescu, Bogdan E and others},
+  journal={The Annals of Applied Statistics},
+  volume={2},
+  number={3},
+  pages={916--954},
+  year={2008},
+  publisher={Institute of Mathematical Statistics}
+}
+
+@inproceedings{bucilua2006model,
+  title={Model compression},
+  author={Buciluǎ, Cristian and Caruana, Rich and Niculescu-Mizil, Alexandru},
+  booktitle={Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining},
+  pages={535--541},
+  year={2006}
+}
+
+
+@article{ferreira2016analytics,
+  title={Analytics for an online retailer: Demand forecasting and price optimization},
+  author={Ferreira, Kris Johnson and Lee, Bin Hong Alex and Simchi-Levi, David},
+  journal={Manufacturing \& Service Operations Management},
+  volume={18},
+  number={1},
+  pages={69--88},
+  year={2016},
+  publisher={INFORMS}
+}
+
+@inproceedings{ye2018customized,
+  title={Customized regression model for airbnb dynamic pricing},
+  author={Ye, Peng and Qian, Julian and Chen, Jieying and Wu, Chen-hung and Zhou, Yitong and De Mars, Spencer and Yang, Frank and Zhang, Li},
+  booktitle={Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  pages={932--940},
+  year={2018}
+}
+
+@article{ban2020personalized,
+  title={Personalized dynamic pricing with machine learning: High dimensional features and heterogeneous elasticity},
+  author={Ban, Gah-Yi and Keskin, N Bora},
+  journal={Available at SSRN 2972985},
+  year={2020}
+}
+
+@article{chen2015statistical,
+  title={A statistical learning approach to personalization in revenue management},
+  author={Chen, Xi and Owen, Zachary and Pixton, Clark and Simchi-Levi, David},
+  journal={Available at SSRN 2579462},
+  year={2015}
+}
+
+@article{baardman2018detecting,
+  title={Detecting customer trends for optimal promotion targeting},
+  author={Baardman, Lennart and Borjian Boroujeni, Setareh and Cohen-Hillel, Tamar and Panchamgam, Kiran and Perakis, Georgia},
+  journal={Available at SSRN 3242529},
+  year={2018}
+}
+
+@article{javanmard2016dynamic,
+  title={Dynamic pricing in high-dimensions},
+  author={Javanmard, Adel and Nazerzadeh, Hamid},
+  journal={arXiv preprint arXiv:1609.07574},
+  year={2016}
+}
+
+@article{elmachtoub2018value,
+  title={The value of personalized pricing},
+  author={Elmachtoub, Adam N and Gupta, Vishal and Hamilton, Michael},
+  journal={Available at SSRN 3127719},
+  year={2018}
+}
+
+@misc{elmachtoub2020decision,
+    title={Decision Trees for Decision-Making under the Predict-then-Optimize Framework},
+    author={Adam N. Elmachtoub and Jason Cheuk Nam Liang and Ryan McNellis},
+    year={2020},
+    eprint={2003.00360},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@misc{elmachtoub2017smart,
+    title={Smart "Predict, then Optimize"},
+    author={Adam N. Elmachtoub and Paul Grigas},
+    year={2017},
+    eprint={1710.08005},
+    archivePrefix={arXiv},
+    primaryClass={math.OC}
+}
+
+@inproceedings{bertsimas2018optimization,
+  title={Optimization over continuous and multi-dimensional decisions with observational data},
+  author={Bertsimas, Dimitris and McCord, Christopher},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={2962--2970},
+  year={2018}
+}
+
+@article{mivsic2017optimization,
+  title={Optimization of tree ensembles},
+  author={Mi{\v{s}}ic, Velibor V},
+  journal={arXiv preprint arXiv:1705.10883},
+  year={2017},
+  publisher={Working Paper: arXiv preprint}
+}
+
+@article{biggs2017optimizing,
+  title={Optimizing objective functions determined from random forests},
+  author={Biggs, Max and Hariss, Rim and Perakis, Georgia},
+  journal={Available at SSRN 2986630},
+  year={2017}
+}
+
+@article{ban2019big,
+  title={The big data newsvendor: Practical insights from machine learning},
+  author={Ban, Gah-Yi and Rudin, Cynthia},
+  journal={Operations Research},
+  volume={67},
+  number={1},
+  pages={90--108},
+  year={2019},
+  publisher={INFORMS}
+}
+
+@article{bertsimas2016power,
+  title={The power and limits of predictive approaches to observational-data-driven optimization},
+  author={Bertsimas, Dimitris and Kallus, Nathan},
+  journal={arXiv preprint arXiv:1605.02347},
+  year={2016}
+}
+
+@article{bertsimas2020predictive,
+  title={From predictive to prescriptive analytics},
+  author={Bertsimas, Dimitris and Kallus, Nathan},
+  journal={Management Science},
+  volume={66},
+  number={3},
+  pages={1025--1044},
+  year={2020},
+  publisher={INFORMS}
+}
+
+@article{bertsimas2019optimal,
+  title={Optimal prescriptive trees},
+  author={Bertsimas, Dimitris and Dunn, Jack and Mundru, Nishanth},
+  journal={INFORMS Journal on Optimization},
+  volume={1},
+  number={2},
+  pages={164--183},
+  year={2019},
+  publisher={INFORMS}
+}
+
+
+@article{anderson2020strong,
+  title={Strong mixed-integer programming formulations for trained neural networks},
+  author={Anderson, Ross and Huchette, Joey and Ma, Will and Tjandraatmadja, Christian and Vielma, Juan Pablo},
+  journal={Mathematical Programming},
+  pages={1--37},
+  year={2020},
+  publisher={Springer}
+}
+
+@article{ciocan2018interpretable,
+  title={Interpretable optimal stopping},
+  author={Ciocan, Dragos and Mi{\v{s}}i{\'c}, Velibor},
+  year={2018},
+  publisher={INSEAD Working Paper}
+}
+
+@article{bastani2018interpreting,
+  title={Interpreting predictive models for human-in-the-loop analytics},
+  author={Bastani, Hamsa and Bastani, Osbert and Kim, Carolyn},
+  journal={arXiv preprint arXiv:1705.08504},
+  pages={1--45},
+  year={2018}
+}
+
+@article{bravo2018mining,
+  title={Mining optimal policies: A pattern recognition approach to model analysis},
+  author={Bravo, Fernanda and Shaposhnik, Yaron},
+  journal={Available at SSRN 3069690},
+  year={2018}
+}
+
+@article{bastani2020mostly,
+  title={Mostly exploration-free algorithms for contextual bandits},
+  author={Bastani, Hamsa and Bayati, Mohsen and Khosravi, Khashayar},
+  journal={Management Science},
+  year={2020},
+  publisher={INFORMS}
+}
+
+
+@article{mivsic2020data,
+  title={Data analytics in operations management: A review},
+  author={Mi{\v{s}}i{\'c}, Velibor V and Perakis, Georgia},
+  journal={Manufacturing \& Service Operations Management},
+  volume={22},
+  number={1},
+  pages={158--169},
+  year={2020},
+  publisher={INFORMS}
+}
+
+@article{zhou2018offline,
+  title={Offline multi-action policy learning: Generalization and optimization},
+  author={Zhou, Zhengyuan and Athey, Susan and Wager, Stefan},
+  journal={arXiv preprint arXiv:1810.04778},
+  year={2018}
+}

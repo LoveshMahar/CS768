@@ -1,0 +1,803 @@
+% Use this file for citations not found in the ACL Anthology (contained in "anthology.bib").
+@inproceedings{ma-etal-2020-simplify,
+    title = "Simplify the Usage of Lexicon in {C}hinese {NER}",
+    author = "Ma, Ruotian  and
+      Peng, Minlong  and
+      Zhang, Qi  and
+      Wei, Zhongyu  and
+      Huang, Xuanjing",
+    booktitle = "Proceedings of the ACL 2020",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    
+    url = "https://aclanthology.org/2020.acl-main.528",
+    doi = "10.18653/v1/2020.acl-main.528",
+    pages = "5951--5960",
+    abstract = "Recently, many works have tried to augment the performance of Chinese named entity recognition (NER) using word lexicons. As a representative, Lattice-LSTM has achieved new benchmark results on several public Chinese NER datasets. However, Lattice-LSTM has a complex model architecture. This limits its application in many industrial areas where real-time NER responses are needed. In this work, we propose a simple but effective method for incorporating the word lexicon into the character representations. This method avoids designing a complicated sequence modeling architecture, and for any neural NER model, it requires only subtle adjustment of the character representation layer to introduce the lexicon information. Experimental studies on four benchmark Chinese NER datasets show that our method achieves an inference speed up to 6.15 times faster than those of state-of-the-art methods, along with a better performance. The experimental results also show that the proposed method can be easily incorporated with pre-trained models like BERT.",
+}
+
+@article{feng2023unidoc,
+  title={Unidoc: A universal large multimodal model for simultaneous text detection, recognition, spotting and understanding},
+  author={Feng, Hao and Wang, Zijian and Tang, Jingqun and Lu, Jinghui and Zhou, Wengang and Li, Houqiang and Huang, Can},
+  journal={arXiv preprint arXiv:2308.11592},
+  year={2023}
+}
+
+@inproceedings{lu-etal-2022-rationale,
+    title = "A Rationale-Centric Framework for Human-in-the-loop Machine Learning",
+    author = "Lu, Jinghui  and
+      Yang, Linyi  and
+      Namee, Brian  and
+      Zhang, Yue",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.481",
+    doi = "10.18653/v1/2022.acl-long.481",
+    pages = "6986--6996",
+    abstract = "We present a novel rational-centric framework with human-in-the-loop {--} Rationales-centric Double-robustness Learning (RDL) {--} to boost model out-of-distribution performance in few-shot learning scenarios. By using static semi-factual generation and dynamic human-intervened correction, RDL, acting like a sensible {``}inductive bias{''}, exploits rationales (i.e. phrases that cause the prediction), human interventions and semi-factual augmentations to decouple spurious associations and bias models towards generally applicable underlying distributions, which enables fast and accurate generalisation. Experimental results show that RDL leads to significant prediction benefits on both in-distribution and out-of-distribution tests, especially for few-shot learning scenarios, compared to many state-of-the-art benchmarks. We also perform extensive ablation studies to support in-depth analyses of each component in our framework.",
+}
+
+@inproceedings{lu-etal-2023-makes,
+    title = "What Makes Pre-trained Language Models Better Zero-shot Learners?",
+    author = "Lu, Jinghui  and
+      Zhu, Dongsheng  and
+      Han, Weidong  and
+      Zhao, Rui  and
+      Mac Namee, Brian  and
+      Tan, Fei",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.128",
+    doi = "10.18653/v1/2023.acl-long.128",
+    pages = "2288--2303",
+    abstract = "Current methods for prompt learning in zero-shot scenarios widely rely on a development set with sufficient human-annotated data to select the best-performing prompt template a posteriori. This is not ideal because in a real-world zero-shot scenario of practical relevance, no labelled data is available. Thus, we propose a simple yet effective method for screening reasonable prompt templates in zero-shot text classification: Perplexity Selection (Perplection). We hypothesize that language discrepancy can be used to measure the efficacy of prompt templates, and thereby develop a substantiated perplexity-based scheme allowing for forecasting the performance of prompt templates in advance. Experiments show that our method leads to improved prediction performance in a realistic zero-shot setting, eliminating the need for any labelled examples.",
+}
+
+@article{lu2024bounding,
+  title={A Bounding Box is Worth One Token: Interleaving Layout and Text in a Large Language Model for Document Understanding},
+  author={Lu, Jinghui and Yu, Haiyang and Wang, Yanjie and Ye, Yongjie and Tang, Jingqun and Yang, Ziwei and Wu, Binghong and Liu, Qi and Feng, Hao and Wang, Han and others},
+  journal={arXiv preprint arXiv:2407.01976},
+  year={2024}
+}
+
+@inproceedings{santilli-etal-2023-accelerating,
+    title = "Accelerating Transformer Inference for Translation via Parallel Decoding",
+    author = "Santilli, Andrea  and
+      Severino, Silvio  and
+      Postolache, Emilian  and
+      Maiorca, Valentino  and
+      Mancusi, Michele  and
+      Marin, Riccardo  and
+      Rodola, Emanuele",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.689",
+    doi = "10.18653/v1/2023.acl-long.689",
+    pages = "12336--12355",
+    abstract = "Autoregressive decoding limits the efficiency of transformers for Machine Translation (MT). The community proposed specific network architectures and learning-based methods to solve this issue, which are expensive and require changes to the MT model, trading inference speed at the cost of the translation quality. In this paper, we propose to address the problem from the point of view of decoding algorithms, as a less explored but rather compelling direction. We propose to reframe the standard greedy autoregressive decoding of MT with a parallel formulation leveraging Jacobi and Gauss-Seidel fixed-point iteration methods for fast inference. This formulation allows to speed up existing models without training or modifications while retaining translation quality. We present three parallel decoding algorithms and test them on different languages and models showing how the parallelization introduces a speedup up to 38{\%} w.r.t. the standard autoregressive decoding and nearly 2x when scaling the method on parallel resources. Finally, we introduce a decoding dependency graph visualizer (DDGviz) that let us see how the model has learned the conditional dependence between tokens and inspect the decoding procedure.",
+}
+
+@inproceedings{liu-etal-2021-lexicon,
+    title = "Lexicon Enhanced {C}hinese Sequence Labeling Using {BERT} Adapter",
+    author = "Liu, Wei  and
+      Fu, Xiyan  and
+      Zhang, Yue  and
+      Xiao, Wenming",
+    booktitle = "Proceedings of the ACL 2021 and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    
+    url = "https://aclanthology.org/2021.acl-long.454",
+    doi = "10.18653/v1/2021.acl-long.454",
+    pages = "5847--5858",
+    abstract = "Lexicon information and pre-trained models, such as BERT, have been combined to explore Chinese sequence labeling tasks due to their respective strengths. However, existing methods solely fuse lexicon features via a shallow and random initialized sequence layer and do not integrate them into the bottom layers of BERT. In this paper, we propose Lexicon Enhanced BERT (LEBERT) for Chinese sequence labeling, which integrates external lexicon knowledge into BERT layers directly by a Lexicon Adapter layer. Compared with existing methods, our model facilitates deep lexicon knowledge fusion at the lower layers of BERT. Experiments on ten Chinese datasets of three tasks including Named Entity Recognition, Word Segmentation, and Part-of-Speech Tagging, show that LEBERT achieves state-of-the-art results.",
+}
+
+@article{raffel2020exploring,
+  title={Exploring the limits of transfer learning with a unified text-to-text transformer},
+  author={Raffel, Colin and Shazeer, Noam and Roberts, Adam and Lee, Katherine and Narang, Sharan and Matena, Michael and Zhou, Yanqi and Li, Wei and Liu, Peter J},
+  journal={The Journal of Machine Learning Research},
+  volume={21},
+  number={1},
+  pages={5485--5551},
+  year={2020},
+  publisher={JMLRORG}
+}
+
+@inproceedings{lester2021power,
+  title={The Power of Scale for Parameter-Efficient Prompt Tuning},
+  author={Lester, Brian and Al-Rfou, Rami and Constant, Noah},
+  booktitle={Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing},
+  pages={3045--3059},
+  year={2021}
+}
+
+@article{yang2023baichuan,
+  title={Baichuan 2: Open large-scale language models},
+  author={Yang, Aiyuan and Xiao, Bin and Wang, Bingning and Zhang, Borong and Bian, Ce and Yin, Chao and Lv, Chenxu and Pan, Da and Wang, Dian and Yan, Dong and others},
+  journal={arXiv preprint arXiv:2309.10305},
+  year={2023}
+}
+
+@inproceedings{lu2022unified,
+  title={Unified Structure Generation for Universal Information Extraction},
+  author={Lu, Yaojie and Liu, Qing and Dai, Dai and Xiao, Xinyan and Lin, Hongyu and Han, Xianpei and Sun, Le and Wu, Hua},
+  booktitle={Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={5755--5772},
+  year={2022}
+}
+
+@article{wang2023instructuie,
+  title={InstructUIE: Multi-task Instruction Tuning for Unified Information Extraction},
+  author={Wang, Xiao and Zhou, Weikang and Zu, Can and Xia, Han and Chen, Tianze and Zhang, Yuansen and Zheng, Rui and Ye, Junjie and Zhang, Qi and Gui, Tao and others},
+  journal={arXiv preprint arXiv:2304.08085},
+  year={2023}
+}
+
+@article{xu2023large,
+  title={Large Language Models for Generative Information Extraction: A Survey},
+  author={Xu, Derong and Chen, Wei and Peng, Wenjun and Zhang, Chao and Xu, Tong and Zhao, Xiangyu and Wu, Xian and Zheng, Yefeng and Chen, Enhong},
+  journal={arXiv preprint arXiv:2312.17617},
+  year={2023}
+}
+
+@inproceedings{xie2023empirical,
+  title={Empirical Study of Zero-Shot NER with ChatGPT},
+  author={Xie, Tingyu and Li, Qi and Zhang, Jian and Zhang, Yan and Liu, Zuozhu and Wang, Hongwei},
+  booktitle={Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing},
+  pages={7935--7956},
+  year={2023}
+}
+
+
+@article{achiam2023gpt,
+  title={Gpt-4 technical report},
+  author={Achiam, Josh and Adler, Steven and Agarwal, Sandhini and Ahmad, Lama and Akkaya, Ilge and Aleman, Florencia Leoni and Almeida, Diogo and Altenschmidt, Janko and Altman, Sam and Anadkat, Shyamal and others},
+  journal={arXiv preprint arXiv:2303.08774},
+  year={2023}
+}
+@article{touvron2023llama,
+  title={Llama: Open and efficient foundation language models},
+  author={Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth{\'e}e and Rozi{\`e}re, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and others},
+  journal={arXiv preprint arXiv:2302.13971},
+  year={2023}
+}
+
+@article{touvron2023llama2,
+  title={Llama 2: Open foundation and fine-tuned chat models},
+  author={Touvron, Hugo and Martin, Louis and Stone, Kevin and Albert, Peter and Almahairi, Amjad and Babaei, Yasmine and Bashlykov, Nikolay and Batra, Soumya and Bhargava, Prajjwal and Bhosale, Shruti and others},
+  journal={arXiv preprint arXiv:2307.09288},
+  year={2023}
+}
+
+@article{muennighoff2022crosslingual,
+  title={Crosslingual generalization through multitask finetuning},
+  author={Muennighoff, Niklas and Wang, Thomas and Sutawika, Lintang and Roberts, Adam and Biderman, Stella and Scao, Teven Le and Bari, M Saiful and Shen, Sheng and Yong, Zheng-Xin and Schoelkopf, Hailey and others},
+  journal={arXiv preprint arXiv:2211.01786},
+  year={2022}
+}
+
+@article{bai2023qwen,
+  title={Qwen technical report},
+  author={Bai, Jinze and Bai, Shuai and Chu, Yunfei and Cui, Zeyu and Dang, Kai and Deng, Xiaodong and Fan, Yang and Ge, Wenbin and Han, Yu and Huang, Fei and others},
+  journal={arXiv preprint arXiv:2309.16609},
+  year={2023}
+}
+
+@article{2020t5,
+  author  = {Colin Raffel and Noam Shazeer and Adam Roberts and Katherine Lee and Sharan Narang and Michael Matena and Yanqi Zhou and Wei Li and Peter J. Liu},
+  title   = {Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer},
+  journal = {Journal of Machine Learning Research},
+  year    = {2020},
+  volume  = {21},
+  number  = {140},
+  pages   = {1-67},
+  url     = {http://jmlr.org/papers/v21/20-074.html}
+}
+
+@article{peng2023rwkv,
+  title={RWKV: Reinventing RNNs for the Transformer Era},
+  author={Peng, Bo and Alcaide, Eric and Anthony, Quentin and Albalak, Alon and Arcadinho, Samuel and Cao, Huanqi and Cheng, Xin and Chung, Michael and Grella, Matteo and GV, Kranthi Kiran and others},
+  journal={arXiv preprint arXiv:2305.13048},
+  year={2023}
+}
+
+@article{brown2020language,
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={1877--1901},
+  year={2020}
+}
+
+
+@article{LuZhaoMacNameeTan2023, 
+title={PUnifiedNER: A Prompting-Based Unified NER System for Diverse Datasets}, volume={37}, url={https://ojs.aaai.org/index.php/AAAI/article/view/26564}, DOI={10.1609/aaai.v37i11.26564}, abstractNote={Much of named entity recognition (NER) research focuses on developing dataset-specific models based on data from the domain of interest, and a limited set of related entity types. This is frustrating as each new dataset requires a new model to be trained and stored. In this work, we present a ``versatile’’ model---the Prompting-based Unified NER system (PUnifiedNER)---that works with data from different domains and can recognise up to 37 entity types simultaneously, and theoretically it could be as many as possible. By using prompt learning, PUnifiedNER is a novel approach that is able to jointly train across multiple corpora, implementing intelligent on-demand entity recognition. Experimental results show that PUnifiedNER leads to significant prediction benefits compared to dataset-specific models with impressively reduced model deployment costs. Furthermore, the performance of PUnifiedNER can achieve competitive or even better performance than state-of-the-art domain-specific methods for some datasets. We also perform comprehensive pilot and ablation studies to support in-depth analysis of each component in PUnifiedNER.}, number={11}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Lu, Jinghui and Zhao, Rui and Mac Namee, Brian and Tan, Fei}, year={2023}, month={Jun.}, pages={13327-13335} }
+
+@article{zhang2023local,
+  title={A Local Information Perception Enhancement--Based Method for Chinese NER},
+  author={Zhang, Miao and Lu, Ling},
+  journal={Applied Sciences},
+  volume={13},
+  number={17},
+  pages={9948},
+  year={2023},
+  publisher={MDPI}
+}
+
+@inproceedings{zhang2022domain,
+  title={Domain-Specific NER via Retrieving Correlated Samples},
+  author={Zhang, Xin and Jiang, Yong and Wang, Xiaobin and Hu, Xuming and Sun, Yueheng and Xie, Pengjun and Zhang, Meishan},
+  booktitle={Proceedings of the 29th International Conference on Computational Linguistics},
+  pages={2398--2404},
+  year={2022}
+}
+
+@article{LiFeiLiuWuZhangTengJiLi2022, title={Unified Named Entity Recognition as Word-Word Relation Classification}, volume={36}, url={https://ojs.aaai.org/index.php/AAAI/article/view/21344}, DOI={10.1609/aaai.v36i10.21344}, abstractNote={So far, named entity recognition (NER) has been involved with three major types, including flat, overlapped (aka. nested), and discontinuous NER, which have mostly been studied individually. Recently, a growing interest has been built for unified NER, tackling the above three jobs concurrently with one single model. Current best-performing methods mainly include span-based and sequence-to-sequence models, where unfortunately the former merely focus on boundary identification and the latter may suffer from exposure bias. In this work, we present a novel alternative by modeling the unified NER as word-word relation classification, namely W^2NER. The architecture resolves the kernel bottleneck of unified NER by effectively modeling the neighboring relations between entity words with Next-Neighboring-Word (NNW) and Tail-Head-Word-* (THW-*) relations. Based on the W^2NER scheme we develop a neural framework, in which the unified NER is modeled as a 2D grid of word pairs. We then propose multi-granularity 2D convolutions for better refining the grid representations. Finally, a co-predictor is used to sufficiently reason the word-word relations. We perform extensive experiments on 14 widely-used benchmark datasets for flat, overlapped, and discontinuous NER (8 English and 6 Chinese datasets), where our model beats all the current top-performing baselines, pushing the state-of-the-art performances of unified NER.}, number={10}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Li, Jingye and Fei, Hao and Liu, Jiang and Wu, Shengqiong and Zhang, Meishan and Teng, Chong and Ji, Donghong and Li, Fei}, year={2022}, month={Jun.}, pages={10965-10973} }
+
+@inproceedings{das-etal-2023-unified,
+    title = "Unified Low-Resource Sequence Labeling by Sample-Aware Dynamic Sparse Finetuning",
+    author = "Das, Sarkar Snigdha Sarathi  and
+      Zhang, Haoran  and
+      Shi, Peng  and
+      Yin, Wenpeng  and
+      Zhang, Rui",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.433",
+    doi = "10.18653/v1/2023.emnlp-main.433",
+    pages = "6998--7010",
+    abstract = "Unified Sequence Labeling that articulates different sequence labeling problems such as Named Entity Recognition, Relation Extraction, Semantic Role Labeling, etc. in a generalized sequence-to-sequence format opens up the opportunity to make the maximum utilization of large language model knowledge toward structured prediction. Unfortunately, this requires formatting them into specialized augmented format unknown to the base pretrained language model (PLMs) necessitating finetuning to the target format. This significantly bounds its usefulness in data-limited settings where finetuning large models cannot properly generalize to the target format. To address this challenge and leverage PLM knowledge effectively, we propose FISH-DIP, a sample-aware dynamic sparse finetuning strategy that selectively focuses on a fraction of parameters, informed by feedback from highly regressing examples, during the fine-tuning process. By leveraging the dynamism of sparsity, our approach mitigates the impact of well-learned samples and prioritizes underperforming instances for improvement in generalization. Across five tasks of sequence labeling, we demonstrate that FISH-DIP can smoothly optimize the model in low resource settings offering upto 40{\%} performance improvements over full fine-tuning depending on target evaluation settings. Also, compared to in-context learning and other parameter-efficient fine-tuning approaches, FISH-DIP performs comparably or better, notably in extreme low-resource settings. The source code of FISH-DIP will be available at [this URL](https://github.com/psunlpgroup/FISH-DIP)",
+}
+
+@article{chen2023punica,
+  title={Punica: Multi-tenant lora serving},
+  author={Chen, Lequn and Ye, Zihao and Wu, Yongji and Zhuo, Danyang and Ceze, Luis and Krishnamurthy, Arvind},
+  journal={arXiv preprint arXiv:2310.18547},
+  year={2023}
+}
+
+@article{cai2024medusa,
+  title={Medusa: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads},
+  author={Cai, Tianle and Li, Yuhong and Geng, Zhengyang and Peng, Hongwu and Lee, Jason D and Chen, Deming and Dao, Tri},
+  journal={arXiv preprint arXiv:2401.10774},
+  year={2024}
+}
+@inproceedings{wang2021spatten,
+  title={Spatten: Efficient sparse attention architecture with cascade token and head pruning},
+  author={Wang, Hanrui and Zhang, Zhekai and Han, Song},
+  booktitle={2021 IEEE International Symposium on High-Performance Computer Architecture (HPCA)},
+  pages={97--110},
+  year={2021},
+  organization={IEEE}
+}
+
+@inproceedings{
+frantar2023optq,
+title={{OPTQ}: Accurate Quantization for Generative Pre-trained Transformers},
+author={Elias Frantar and Saleh Ashkboos and Torsten Hoefler and Dan Alistarh},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=tcbBPnfwxS}
+}
+
+@inproceedings{xiao2023smoothquant,
+  title={Smoothquant: Accurate and efficient post-training quantization for large language models},
+  author={Xiao, Guangxuan and Lin, Ji and Seznec, Mickael and Wu, Hao and Demouth, Julien and Han, Song},
+  booktitle={International Conference on Machine Learning},
+  pages={38087--38099},
+  year={2023},
+  organization={PMLR}
+}
+
+@article{ning2023skeleton,
+  title={Skeleton-of-thought: Large language models can do parallel decoding},
+  author={Ning, Xuefei and Lin, Zinan and Zhou, Zixuan and Yang, Huazhong and Wang, Yu},
+  journal={arXiv preprint arXiv:2307.15337},
+  year={2023}
+}
+
+
+@article{ashok2023promptner,
+  title={PromptNER: Prompting For Named Entity Recognition},
+  author={Ashok, Dhananjay and Lipton, Zachary C},
+  journal={arXiv preprint arXiv:2305.15444},
+  year={2023}
+}
+
+@inproceedings{chen-etal-2023-learning,
+    title = "Learning In-context Learning for Named Entity Recognition",
+    author = "Chen, Jiawei  and
+      Lu, Yaojie  and
+      Lin, Hongyu  and
+      Lou, Jie  and
+      Jia, Wei  and
+      Dai, Dai  and
+      Wu, Hua  and
+      Cao, Boxi  and
+      Han, Xianpei  and
+      Sun, Le",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.764",
+    doi = "10.18653/v1/2023.acl-long.764",
+    pages = "13661--13675",
+    abstract = "Named entity recognition in real-world applications suffers from the diversity of entity types, the emergence of new entity types, and the lack of high-quality annotations. To address the above problems, this paper proposes an in-context learning-based NER approach, which can effectively inject in-context NER ability into PLMs and recognize entities of novel types on-the-fly using only a few demonstrative instances. Specifically, we model PLMs as a meta-function Lambda{\_}instruction, demonstrations, text.M, and a new entity extractor can be implicitly constructed by applying new instruction and demonstrations to PLMs, i.e., (Lambda . M) (instruction, demonstrations) -{\textgreater}F where F will be a new entity extractor F: text -{\textgreater} entities. To inject the above in-context NER ability into PLMs, we propose a meta-function pre-training algorithm, which pre-trains PLMs by comparing the (instruction, demonstration)-initialized extractor with a surrogate golden extractor. Experimental results on 4 few-shot NER datasets show that our method can effectively inject in-context NER ability into PLMs and significantly outperforms the PLMs+fine-tuning counterparts.",
+}
+
+@inproceedings{wang-etal-2022-deepstruct,
+    title = "{D}eep{S}truct: Pretraining of Language Models for Structure Prediction",
+    author = "Wang, Chenguang  and
+      Liu, Xiao  and
+      Chen, Zui  and
+      Hong, Haoyun  and
+      Tang, Jie  and
+      Song, Dawn",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2022",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-acl.67",
+    doi = "10.18653/v1/2022.findings-acl.67",
+    pages = "803--823",
+    abstract = "We introduce a method for improving the structural understanding abilities of language models. Unlike previous approaches that finetune the models with task-specific augmentation, we pretrain language models to generate structures from the text on a collection of task-agnostic corpora. Our structure pretraining enables zero-shot transfer of the learned knowledge that models have about the structure tasks. We study the performance of this approach on 28 datasets, spanning 10 structure prediction tasks including open information extraction, joint entity and relation extraction, named entity recognition, relation classification, semantic role labeling, event extraction, coreference resolution, factual probe, intent detection, and dialogue state tracking. We further enhance the pretraining with the task-specific training sets. We show that a 10B parameter language model transfers non-trivially to most tasks and obtains state-of-the-art performance on 21 of 28 datasets that we evaluate. Our code and datasets will be made publicly available.",
+}
+
+
+@inproceedings{zhang2022optimizing,
+  title={Optimizing Bi-Encoder for Named Entity Recognition via Contrastive Learning},
+  author={Zhang, Sheng and Cheng, Hao and Gao, Jianfeng and Poon, Hoifung},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2022}
+}
+
+@article{ding2024rethinking,
+  title={Rethinking Negative Instances for Generative Named Entity Recognition},
+  author={Ding, Yuyang and Li, Juntao and Wang, Pinzheng and Tang, Zecheng and Yan, Bowen and Zhang, Min},
+  journal={arXiv preprint arXiv:2402.16602},
+  year={2024}
+}
+
+@article{zaratiana2023gliner,
+  title={Gliner: Generalist model for named entity recognition using bidirectional transformer},
+  author={Zaratiana, Urchade and Tomeh, Nadi and Holat, Pierre and Charnois, Thierry},
+  journal={arXiv preprint arXiv:2311.08526},
+  year={2023}
+}
+
+@article{gao2020pile,
+  title={The pile: An 800gb dataset of diverse text for language modeling},
+  author={Gao, Leo and Biderman, Stella and Black, Sid and Golding, Laurence and Hoppe, Travis and Foster, Charles and Phang, Jason and He, Horace and Thite, Anish and Nabeshima, Noa and others},
+  journal={arXiv preprint arXiv:2101.00027},
+  year={2020}
+}
+
+@inproceedings{liu2013asgard,
+  title={Asgard: A portable architecture for multilingual dialogue systems},
+  author={Liu, Jingjing and Pasupat, Panupong and Cyphers, Scott and Glass, Jim},
+  booktitle={2013 IEEE International Conference on Acoustics, Speech and Signal Processing},
+  pages={8386--8390},
+  year={2013},
+  organization={IEEE}
+}
+
+@inproceedings{liu2021crossner,
+  title={Crossner: Evaluating cross-domain named entity recognition},
+  author={Liu, Zihan and Xu, Yan and Yu, Tiezheng and Dai, Wenliang and Ji, Ziwei and Cahyawijaya, Samuel and Madotto, Andrea and Fung, Pascale},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={35},
+  number={15},
+  pages={13452--13460},
+  year={2021}
+}
+
+
+@article{zhou2023universalner,
+  title={Universalner: Targeted distillation from large language models for open named entity recognition},
+  author={Zhou, Wenxuan and Zhang, Sheng and Gu, Yu and Chen, Muhao and Poon, Hoifung},
+  journal={ICLR 2024},
+  year={2023}
+}
+
+@article{sainz2023gollie,
+  title={Gollie: Annotation guidelines improve zero-shot information-extraction},
+  author={Sainz, Oscar and Garc{\'\i}a-Ferrero, Iker and Agerri, Rodrigo and de Lacalle, Oier Lopez and Rigau, German and Agirre, Eneko},
+  journal={arXiv preprint arXiv:2310.03668},
+  year={2023}
+}
+
+@book{Aho:72,
+    author  = {Alfred V. Aho and Jeffrey D. Ullman},
+    title   = {The Theory of Parsing, Translation and Compiling},
+    year    = "1972",
+    volume  = "1",
+    publisher = {Prentice-Hall},
+    address = {Englewood Cliffs, NJ}
+}
+
+@book{APA:83,
+    author  = {{American Psychological Association}},
+    title   = {Publications Manual},
+    year    = "1983",
+    publisher = {American Psychological Association},
+    address = {Washington, DC}
+}
+
+@article{Chandra:81,
+	author = {Ashok K. Chandra and Dexter C. Kozen and Larry J. Stockmeyer},
+	year = "1981",
+	title = {Alternation},
+	journal = {Journal of the Association for Computing Machinery},
+	volume = "28",
+	number = "1",
+	pages = "114--133",
+	doi = "10.1145/322234.322243",
+}
+
+@inproceedings{andrew2007scalable,
+  title={Scalable training of {L1}-regularized log-linear models},
+  author={Andrew, Galen and Gao, Jianfeng},
+  booktitle={Proceedings of the 24th International Conference on Machine Learning},
+  pages={33--40},
+  year={2007},
+}
+
+@book{Gusfield:97,
+    author  = {Dan Gusfield},
+    title   = {Algorithms on Strings, Trees and Sequences},
+    year    = "1997",
+    publisher = {Cambridge University Press},
+    address = {Cambridge, UK}
+}
+
+@article{rasooli-tetrault-2015,
+    author    = {Mohammad Sadegh Rasooli and Joel R. Tetreault},
+    title     = {Yara Parser: {A} Fast and Accurate Dependency Parser},
+    journal   = {Computing Research Repository},
+    volume    = {arXiv:1503.06733},
+    year      = {2015},
+    url       = {http://arxiv.org/abs/1503.06733},
+    note    = {version 2}
+}
+
+@article{Ando2005,
+	Acmid = {1194905},
+	Author = {Ando, Rie Kubota and Zhang, Tong},
+	Issn = {1532-4435},
+	Issue_Date = {12/1/2005},
+	Journal = {Journal of Machine Learning Research},
+	Month = dec,
+	Numpages = {37},
+	Pages = {1817--1853},
+	Publisher = {JMLR.org},
+	Title = {A Framework for Learning Predictive Structures from Multiple Tasks and Unlabeled Data},
+	Volume = {6},
+	Year = {2005}
+}
+
+@inproceedings{paolini2020structured,
+  title={Structured Prediction as Translation between Augmented Natural Languages},
+  author={Paolini, Giovanni and Athiwaratkun, Ben and Krone, Jason and Ma, Jie and Achille, Alessandro and ANUBHAI, RISHITA and dos Santos, Cicero Nogueira and Xiang, Bing and Soatto, Stefano},
+  booktitle={International Conference on Learning Representations},
+  year={2020}
+}
+
+@inproceedings{wang2022self,
+  title={Self-Consistency Improves Chain of Thought Reasoning in Language Models},
+  author={Wang, Xuezhi and Wei, Jason and Schuurmans, Dale and Le, Quoc V and Chi, Ed H and Narang, Sharan and Chowdhery, Aakanksha and Zhou, Denny},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2022}
+}
+
+@inproceedings{min2022rethinking,
+  title={Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?},
+  author={Min, Sewon and Lyu, Xinxi and Holtzman, Ari and Artetxe, Mikel and Lewis, Mike and Hajishirzi, Hannaneh and Zettlemoyer, Luke},
+  booktitle={Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing},
+  pages={11048--11064},
+  year={2022}
+}
+
+@article{chen2023accelerating,
+  title={Accelerating large language model decoding with speculative sampling},
+  author={Chen, Charlie and Borgeaud, Sebastian and Irving, Geoffrey and Lespiau, Jean-Baptiste and Sifre, Laurent and Jumper, John},
+  journal={arXiv preprint arXiv:2302.01318},
+  year={2023}
+}
+
+
+ @inproceedings{Tjong_Kim_Sang_De_Meulder_2003,  
+ title={Introduction to the CoNLL-2003 shared task}, 
+ url={http://dx.doi.org/10.3115/1119176.1119195}, 
+ DOI={10.3115/1119176.1119195}, 
+ booktitle={Proceedings of the seventh conference on Natural language learning at HLT-NAACL 2003  -}, 
+ author={Tjong Kim Sang, Erik F. and De Meulder, Fien}, 
+ year={2003}, 
+ month={Jan}, 
+ language={en-US} 
+ }
+
+@inproceedings{pradhan-etal-2013-towards,
+    title = "Towards Robust Linguistic Analysis using {O}nto{N}otes",
+    author = {Pradhan, Sameer  and
+      Moschitti, Alessandro  and
+      Xue, Nianwen  and
+      Ng, Hwee Tou  and
+      Bj{\"o}rkelund, Anders  and
+      Uryupina, Olga  and
+      Zhang, Yuchen  and
+      Zhong, Zhi},
+    booktitle = "Proceedings of the Seventeenth Conference on Computational Natural Language Learning",
+    month = aug,
+    year = "2013",
+    address = "Sofia, Bulgaria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W13-3516",
+    pages = "143--152",
+}
+
+@inproceedings{zhang-yang-2018-chinese,
+    title = "{C}hinese {NER} Using Lattice {LSTM}",
+    author = "Zhang, Yue  and
+      Yang, Jie",
+    booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2018",
+    address = "Melbourne, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P18-1144",
+    doi = "10.18653/v1/P18-1144",
+    pages = "1554--1564",
+    abstract = "We investigate a lattice-structured LSTM model for Chinese NER, which encodes a sequence of input characters as well as all potential words that match a lexicon. Compared with character-based methods, our model explicitly leverages word and word sequence information. Compared with word-based methods, lattice LSTM does not suffer from segmentation errors. Gated recurrent cells allow our model to choose the most relevant characters and words from a sentence for better NER results. Experiments on various datasets show that lattice LSTM outperforms both word-based and character-based LSTM baselines, achieving the best results.",
+}
+@inproceedings{levow-2006-third,
+    title = "The Third International {C}hinese Language Processing Bakeoff: Word Segmentation and Named Entity Recognition",
+    author = "Levow, Gina-Anne",
+    booktitle = "Proceedings of the Fifth {SIGHAN} Workshop on {C}hinese Language Processing",
+    month = jul,
+    year = "2006",
+    address = "Sydney, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W06-0115",
+    pages = "108--117",
+}
+
+@inproceedings{jie2019better,  
+title={Better Modeling of Incomplete Annotations for Named Entity Recognition},
+  author={Jie, Zhanming and Xie, Pengjun and Lu, Wei and Ding, Ruixue and Li, Linlin},
+  booktitle={Proceedings of NAACL},
+  year={2019}
+}
+
+@article{liu2023large,
+  title={What Large Language Models Bring to Text-rich VQA?},
+  author={Liu, Xuejing and Tang, Wei and Ni, Xinzhe and Lu, Jinghui and Zhao, Rui and Li, Zechao and Tan, Fei},
+  journal={arXiv preprint arXiv:2311.07306},
+  year={2023}
+}
+
+@inproceedings{huang2019icdar2019,
+  title={Icdar2019 competition on scanned receipt ocr and information extraction},
+  author={Huang, Zheng and Chen, Kai and He, Jianhua and Bai, Xiang and Karatzas, Dimosthenis and Lu, Shijian and Jawahar, CV},
+  booktitle={2019 International Conference on Document Analysis and Recognition (ICDAR)},
+  pages={1516--1520},
+  year={2019},
+  organization={IEEE}
+}
+
+@misc{liu2023improvedllava,
+      author={Liu, Haotian and Li, Chunyuan and Li, Yuheng and Lee, Yong Jae},
+      title={Improved Baselines with Visual Instruction Tuning}, 
+      publisher={arXiv:2310.03744},
+      year={2023},
+}
+
+@inproceedings{liu2023llava,
+    author      = {Liu, Haotian and Li, Chunyuan and Wu, Qingyang and Lee, Yong Jae},
+    title       = {Visual Instruction Tuning},
+    booktitle   = {NeurIPS},
+    year        = {2023}
+  }
+
+@article{liu2023goat,
+  title={Goat: Fine-tuned LLaMA Outperforms GPT-4 on Arithmetic Tasks},
+  author={Liu, Tiedong and Low, Bryan Kian Hsiang},
+  journal={arXiv preprint arXiv:2305.14201},
+  year={2023}
+}
+
+@inproceedings{
+loshchilov2017sgdr,
+title={{SGDR}: Stochastic Gradient Descent with Warm Restarts},
+author={Ilya Loshchilov and Frank Hutter},
+booktitle={International Conference on Learning Representations},
+year={2017},
+url={https://openreview.net/forum?id=Skq89Scxx}
+}
+
+@inproceedings{loshchilov2018decoupled,
+  title={Decoupled Weight Decay Regularization},
+  author={Loshchilov, Ilya and Hutter, Frank},
+  booktitle={International Conference on Learning Representations},
+  year={2018}
+}
+
+@inproceedings{ding2019neural,
+  title={A neural multi-digraph model for Chinese NER with gazetteers},
+  author={Ding, Ruixue and Xie, Pengjun and Zhang, Xiaoyan and Lu, Wei and Li, Linlin and Si, Luo},
+  booktitle={Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+  pages={1462--1467},
+  year={2019}
+}
+
+ @inproceedings{Peng_Dredze_2015,  
+ title={Named Entity Recognition for Chinese Social Media with Jointly Trained Embeddings}, 
+ url={http://dx.doi.org/10.18653/v1/d15-1064}, 
+ DOI={10.18653/v1/d15-1064}, 
+ booktitle={Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing}, 
+ author={Peng, Nanyun and Dredze, Mark}, 
+ year={2015}, 
+ month={Jan}, 
+ language={en-US} 
+ }
+
+@inproceedings{ohta2002genia,
+  title={The GENIA corpus: An annotated research abstract corpus in molecular biology domain},
+  author={Ohta, Tomoko and Tateisi, Yuka and Kim, Jin-Dong and Mima, Hideki and Tsujii, Junichi},
+  booktitle={Proceedings of the human language technology conference},
+  pages={73--77},
+  year={2002},
+  organization={Citeseer}
+}
+
+@article{kirkpatrick2010researching,
+  title={Researching English as a lingua franca in Asia: The Asian Corpus of English (ACE) project},
+  author={Kirkpatrick, Andy},
+  journal={Asian Englishes},
+  volume={13},
+  number={1},
+  pages={4--18},
+  year={2010},
+  publisher={Taylor \& Francis}
+}
+
+@inproceedings{
+dettmers2022gptint,
+title={{GPT}3.int8(): 8-bit Matrix Multiplication for Transformers at Scale},
+author={Tim Dettmers and Mike Lewis and Younes Belkada and Luke Zettlemoyer},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=dXiGWqBoxaD}
+}
+
+@inproceedings{
+lan2023copy,
+title={Copy is All You Need},
+author={Tian Lan and Deng Cai and Yan Wang and Heyan Huang and Xian-Ling Mao},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=CROlOA9Nd8C}
+}
+
+@inproceedings{zhang2023nag,
+  title={NAG-NER: a Unified Non-Autoregressive Generation Framework for Various NER Tasks},
+  author={Zhang, Xinpeng and Tan, Ming and Zhang, Jingfan and Zhu, Wei},
+  booktitle={Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 5: Industry Track)},
+  pages={676--686},
+  year={2023}
+}
+
+@article{schuster2022confident,
+  title={Confident adaptive language modeling},
+  author={Schuster, Tal and Fisch, Adam and Gupta, Jai and Dehghani, Mostafa and Bahri, Dara and Tran, Vinh and Tay, Yi and Metzler, Donald},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={17456--17472},
+  year={2022}
+}
+
+@inproceedings{elbayad2019depth,
+  title={Depth-Adaptive Transformer},
+  author={Elbayad, Maha and Gu, Jiatao and Grave, Edouard and Auli, Michael},
+  booktitle={International Conference on Learning Representations},
+  year={2019}
+}
+
+@article{yang2023inference,
+  title={Inference with reference: Lossless acceleration of large language models},
+  author={Yang, Nan and Ge, Tao and Wang, Liang and Jiao, Binxing and Jiang, Daxin and Yang, Linjun and Majumder, Rangan and Wei, Furu},
+  journal={arXiv preprint arXiv:2304.04487},
+  year={2023}
+}
+
+@inproceedings{leviathan2023fast,
+  title={Fast inference from transformers via speculative decoding},
+  author={Leviathan, Yaniv and Kalman, Matan and Matias, Yossi},
+  booktitle={International Conference on Machine Learning},
+  pages={19274--19286},
+  year={2023},
+  organization={PMLR}
+}
+
+@inproceedings{
+zhou2023lima,
+title={{LIMA}: Less Is More for Alignment},
+author={Chunting Zhou and Pengfei Liu and Puxin Xu and Srini Iyer and Jiao Sun and Yuning Mao and Xuezhe Ma and Avia Efrat and Ping Yu and LILI YU and Susan Zhang and Gargi Ghosh and Mike Lewis and Luke Zettlemoyer and Omer Levy},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=KBMOKmX2he}
+}
+
+@inproceedings{wang-etal-2023-towards,
+    title = "Towards Understanding Chain-of-Thought Prompting: An Empirical Study of What Matters",
+    author = "Wang, Boshi  and
+      Min, Sewon  and
+      Deng, Xiang  and
+      Shen, Jiaming  and
+      Wu, You  and
+      Zettlemoyer, Luke  and
+      Sun, Huan",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.153",
+    doi = "10.18653/v1/2023.acl-long.153",
+    pages = "2717--2739",
+    abstract = "Chain-of-Thought (CoT) prompting can dramatically improve the multi-step reasoning abilities of large language models (LLMs). CoT explicitly encourages the LLM to generate intermediate rationales for solving a problem, by providing a series of reasoning steps in the demonstrations. Despite its success, there is still little understanding of what makes CoT prompting effective and which aspects of the demonstrated reasoning steps contribute to its performance. In this paper, we show that CoT reasoning is possible even with invalid demonstrations - prompting with invalid reasoning steps can achieve over 80-90{\%} of the performance obtained using CoT under various metrics, while still generating coherent lines of reasoning during inference. Further experiments show that other aspects of the rationales, such as being relevant to the query and correctly ordering the reasoning steps, are much more important for effective CoT reasoning. Overall, these findings both deepen our understanding of CoT prompting, and open up new questions regarding LLMs{'} capability to learn to reason in context.",
+}
+
+@article{wang2023gpt,
+  title={Gpt-ner: Named entity recognition via large language models},
+  author={Wang, Shuhe and Sun, Xiaofei and Li, Xiaoya and Ouyang, Rongbin and Wu, Fei and Zhang, Tianwei and Li, Jiwei and Wang, Guoyin},
+  journal={arXiv preprint arXiv:2304.10428},
+  year={2023}
+}
+
+@article{friedman2023learning,
+  title={Learning Transformer Programs},
+  author={Friedman, Dan and Wettig, Alexander and Chen, Danqi},
+  journal={arXiv preprint arXiv:2306.01128},
+  year={2023}
+}

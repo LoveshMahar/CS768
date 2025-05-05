@@ -1,0 +1,929 @@
+%%% ====================================================================
+%%%  BibTeX-file{
+%%%     author          = "Gerry Murray",
+%%%     version         = "1.2",
+%%%     date            = "2 April 2012",
+%%%     filename        = "acmsmall-sample-bibfile.bib",
+%%%     address         = "ACM, NY",
+%%%     email           = "murray at hq.acm.org",
+%%%     codetable       = "ISO/ASCII",
+%%%     keywords        = "ACM Reference Format, bibliography, citation, references",
+%%%     supported       = "yes",
+%%%     docstring       = "This BibTeX database file contains 'bibdata' entries
+%%%                        that 'match' the examples provided in the Specifications Document
+%%%                        AND, also, 'legacy'-type bibs. It should assist authors in
+%%%                        choosing the 'correct' at-bibtype and necessary bib-fields
+%%%                        so as to obtain the appropriate ACM Reference Format output.
+%%%                        It also contains many 'Standard Abbreviations'. "
+%%%  }
+%%% ====================================================================
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+%Entries
+
+
+@article{10.1145/3528223.3530087,
+author = {Wang, Peng-Shuai and Liu, Yang and Tong, Xin},
+title = {Dual Octree Graph Networks for Learning Adaptive Volumetric Shape Representations},
+year = {2022},
+}
+
+@inproceedings{DBLP:conf/nips/ShenGYLF21,
+  author       = {Tianchang Shen and
+                  Jun Gao and
+                  Kangxue Yin and
+                  Ming{-}Yu Liu and
+                  Sanja Fidler},
+  title        = {Deep Marching Tetrahedra: a Hybrid Representation for High-Resolution
+                  3D Shape Synthesis},
+  booktitle    = {NeurIPS},
+  year         = {2021},
+}
+
+
+
+@inproceedings{DBLP:conf/iccv/Gkioxari0M19,
+  author       = {Georgia Gkioxari and
+                  Justin Johnson and
+                  Jitendra Malik},
+  title        = {Mesh {R-CNN}},
+  booktitle    = {ICCV},
+  year         = {2019},
+}
+
+@inproceedings{DBLP:conf/cvpr/AtzmonL20,
+  author       = {Matan Atzmon and
+                  Yaron Lipman},
+  title        = {{SAL:} Sign Agnostic Learning of Shapes From Raw Data},
+  booktitle    = {CVPR},
+  year         = {2020},
+}
+
+@inproceedings{DBLP:conf/iclr/AtzmonL21,
+  author       = {Matan Atzmon and
+                  Yaron Lipman},
+  title        = {{SALD:} Sign Agnostic Learning with Derivatives},
+  booktitle    = {ICLR},
+  year         = {2021},
+}
+
+@inproceedings{DBLP:conf/nips/TancikSMFRSRBN20,
+  author       = {Matthew Tancik and
+                  Pratul P. Srinivasan and
+                  Ben Mildenhall and
+                  Sara Fridovich{-}Keil and
+                  Nithin Raghavan and
+                  Utkarsh Singhal and
+                  Ravi Ramamoorthi and
+                  Jonathan T. Barron and
+                  Ren Ng},
+  title        = {Fourier Features Let Networks Learn High Frequency Functions in Low
+                  Dimensional Domains},
+  booktitle    = {NeurIPS},
+  year         = {2020},
+}
+
+@InProceedings{Liu_2023_CVPR,
+    author    = {Liu, Weixiao and Wu, Yuwei and Ruan, Sipu and Chirikjian, Gregory S.},
+    title     = {Marching-Primitives: Shape Abstraction From Signed Distance Function},
+    booktitle = {CVPR},
+    year      = {2023},
+}
+
+@inproceedings{DBLP:conf/nips/ZhanFMSCGD20,
+  author       = {Guanqi Zhan and
+                  Qingnan Fan and
+                  Kaichun Mo and
+                  Lin Shao and
+                  Baoquan Chen and
+                  Leonidas J. Guibas and
+                  Hao Dong},
+  title        = {Generative 3D Part Assembly via Dynamic Graph Learning},
+  booktitle    = {NeurIPS},
+  year         = {2020},
+}
+
+@article{10.1145/3381866,
+author = {Zhang, Zaiwei and Yang, Zhenpei and Ma, Chongyang and Luo, Linjie and Huth, Alexander and Vouga, Etienne and Huang, Qixing},
+title = {Deep Generative Modeling for Scene Synthesis via Hybrid Representations},
+year = {2020},
+journal = {ACM Trans. Graph.},
+}
+
+@article{10.1145/3355089.3356488,
+author = {Gao, Lin and Yang, Jie and Wu, Tong and Yuan, Yu-Jie and Fu, Hongbo and Lai, Yu-Kun and Zhang, Hao},
+title = {SDM-NET: Deep Generative Network for Structured Deformable Mesh},
+year = {2019},
+journal = {ACM Trans. Graph.}
+}
+
+@article{10.1145/3355089.3356529,
+author = {Sun, Chun-Yu and Zou, Qian-Fang and Tong, Xin and Liu, Yang},
+title = {Learning Adaptive Hierarchical Cuboid Abstractions of 3D Shape Collections},
+year = {2019},
+journal = {ACM Trans. Graph.}
+}
+
+@article{10.1145/3306346.3322956,
+author = {Wu, Zhijie and Wang, Xiang and Lin, Di and Lischinski, Dani and Cohen-Or, Daniel and Huang, Hui},
+title = {SAGNet: Structure-Aware Generative Network for 3D-Shape Modeling},
+year = {2019},
+journal = {ACM Trans. Graph.}
+}
+
+@inproceedings{DBLP:conf/cvpr/Niu0018,
+  author       = {Chengjie Niu and
+                  Jun Li and
+                  Kai Xu},
+  title        = {Im2Struct: Recovering 3D Shape Structure From a Single RGB Image},
+  booktitle    = {CVPR},
+  year         = {2018}
+}
+
+@inproceedings{DBLP:conf/cvpr/WuZXZC20,
+  author       = {Rundi Wu and
+                  Yixin Zhuang and
+                  Kai Xu and
+                  Hao Zhang and
+                  Baoquan Chen},
+  title        = {{PQ-NET:} {A} Generative Part Seq2Seq Network for 3D Shapes},
+  booktitle    = {CVPR},
+  year         = {2020},
+}
+
+@inproceedings{DBLP:conf/iccv/ZouYYCH17,
+  author       = {Chuhang Zou and
+                  Ersin Yumer and
+                  Jimei Yang and
+                  Duygu Ceylan and
+                  Derek Hoiem},
+  title        = {3D-PRNN: Generating Shape Primitives with Recurrent Neural Networks},
+  booktitle    = {ICCV},
+  year         = {2017},
+}
+
+@inproceedings{DBLP:conf/cvpr/HuangZYFNG19,
+  author       = {Jingwei Huang and
+                  Haotian Zhang and
+                  Li Yi and
+                  Thomas A. Funkhouser and
+                  Matthias Nie{\ss}ner and
+                  Leonidas J. Guibas},
+  title        = {TextureNet: Consistent Local Parametrizations for Learning From High-Resolution
+                  Signals on Meshes},
+  booktitle    = {CVPR},
+  year         = {2019}
+}
+
+@article{10.1145/2611811,
+author = {Kaick, Oliver Van and Fish, Noa and Kleiman, Yanir and Asafi, Shmuel and Cohen-OR, Daniel},
+title = {Shape Segmentation by Approximate Convexity Analysis},
+year = {2015},
+journal = {ACM Trans. Graph.},
+}
+
+@article{10.1109/TVCG.2004.34,
+author = {Clarenz, Ulrich and Rumpf, Martin and Telea, Alexandru},
+title = {Robust Feature Detection and Local Classification for Surfaces Based on Moment Analysis},
+year = {2004},
+journal = {IEEE Transactions on Visualization and Computer Graphics},
+}
+
+@inproceedings{DBLP:conf/cvpr/Zheng0DL21,
+  author       = {Zerong Zheng and
+                  Tao Yu and
+                  Qionghai Dai and
+                  Yebin Liu},
+  title        = {Deep Implicit Templates for 3D Shape Representation},
+  booktitle    = {CVPR},
+  year         = {2021},
+}
+
+@article{10.1145/3355089.3356527,
+author = {Mo, Kaichun and Guerrero, Paul and Yi, Li and Su, Hao and Wonka, Peter and Mitra, Niloy J. and Guibas, Leonidas J.},
+title = {StructureNet: Hierarchical Graph Networks for 3D Shape Generation},
+year = {2019},
+journal = {ACM Trans. Graph.},
+}
+
+@inproceedings{DBLP:conf/cvpr/JiangSMHNF20,
+  author       = {Chiyu "Max" Jiang and
+                  Avneesh Sud and
+                  Ameesh Makadia and
+                  Jingwei Huang and
+                  Matthias Nie{\ss}ner and
+                  Thomas A. Funkhouser},
+  title        = {Local Implicit Grid Representations for 3D Scenes},
+  booktitle    = {CVPR},
+  year         = {2020},
+}
+
+@inproceedings{DBLP:conf/cvpr/TulsianiSGEM17,
+  author       = {Shubham Tulsiani and
+                  Hao Su and
+                  Leonidas J. Guibas and
+                  Alexei A. Efros and
+                  Jitendra Malik},
+  title        = {Learning Shape Abstractions by Assembling Volumetric Primitives},
+  booktitle    = {CVPR},
+  year         = {2017},
+}
+
+@inproceedings{DBLP:conf/nips/SitzmannMBLW20,
+  author       = {Vincent Sitzmann and
+                  Julien N. P. Martel and
+                  Alexander W. Bergman and
+                  David B. Lindell and
+                  Gordon Wetzstein},
+  title        = {Implicit Neural Representations with Periodic Activation Functions},
+  booktitle    = {NeurIPS},
+  year         = {2020}
+}
+
+@article{10.1145/3450626.3459863,
+author = {Lombardi, Stephen and Simon, Tomas and Schwartz, Gabriel and Zollhoefer, Michael and Sheikh, Yaser and Saragih, Jason},
+title = {Mixture of Volumetric Primitives for Efficient Neural Rendering},
+year = {2021},
+journal = {ACM Trans. Graph.}
+}
+
+  
+
+
+
+@inproceedings{DBLP:conf/nips/0001ZXFT16,
+  author       = {Jiajun Wu and
+                  Chengkai Zhang and
+                  Tianfan Xue and
+                  Bill Freeman and
+                  Josh Tenenbaum},
+  title        = {Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial
+                  Modeling},
+  booktitle    = {NIPS},
+  year         = {2016},
+}
+
+@inproceedings{10.1145/2492045.2492054,
+author = {Gu, Yan and He, Yong and Fatahalian, Kayvon and Blelloch, Guy},
+title = {Efficient BVH Construction via Approximate Agglomerative Clustering},
+year = {2013},
+booktitle = {Proceedings of the 5th High-Performance Graphics Conference}
+}
+
+@article{DBLP:journals/cgf/LauterbachGSLM09,
+  author       = {Christian Lauterbach and
+                  Michael Garland and
+                  Shubhabrata Sengupta and
+                  David P. Luebke and
+                  Dinesh Manocha},
+  title        = {Fast {BVH} Construction on GPUs},
+  journal      = {Comput. Graph. Forum},
+  year         = {2009},
+}
+
+
+
+@article{DBLP:journals/tog/WeiLLS22,
+  author       = {Xinyue Wei and
+                  Minghua Liu and
+                  Zhan Ling and
+                  Hao Su},
+  title        = {Approximate convex decomposition for 3D meshes with collision-aware
+                  concavity and tree search},
+  journal      = {{ACM} Trans. Graph.},
+  year         = {2022},
+}
+
+@article{10.1145/3072959.3073637,
+author = {Li, Jun and Xu, Kai and Chaudhuri, Siddhartha and Yumer, Ersin and Zhang, Hao and Guibas, Leonidas},
+title = {GRASS: Generative Recursive Autoencoders for Shape Structures},
+year = {2017},
+journal = {ACM Trans. Graph.},
+}
+
+  
+
+
+
+@article{10.1145/882262.882293,
+author = {Ohtake, Yutaka and Belyaev, Alexander and Alexa, Marc and Turk, Greg and Seidel, Hans-Peter},
+title = {Multi-Level Partition of Unity Implicits},
+year = {2003},
+journal = {ACM Trans. Graph.}
+}
+
+@inproceedings{DBLP:conf/cvpr/ChenZ19,
+  author       = {Zhiqin Chen and
+                  Hao Zhang},
+  title        = {Learning Implicit Fields for Generative Shape Modeling},
+  booktitle    = {CVPR},
+  year         = {2019},
+}
+
+@book{books/daglib/0090942,
+  added-at = {2011-03-16T00:00:00.000+0100},
+  author = {do Carmo, Manfredo P.},
+  title = {Differential geometry of curves and surfaces.},
+  year = {1976},
+}
+
+@inproceedings{DBLP:conf/icml/GroppYHAL20,
+  author       = {Amos Gropp and
+                  Lior Yariv and
+                  Niv Haim and
+                  Matan Atzmon and
+                  Yaron Lipman},
+  title        = {Implicit Geometric Regularization for Learning Shapes},
+  booktitle    = {ICML},
+  year         = {2020}
+}
+
+
+@inproceedings{DBLP:conf/eccv/ChabraLISSLN20,
+  author       = {Rohan Chabra and
+                  Jan Eric Lenssen and
+                  Eddy Ilg and
+                  Tanner Schmidt and
+                  Julian Straub and
+                  Steven Lovegrove and
+                  Richard A. Newcombe},
+  title        = {Deep Local Shapes: Learning Local {SDF} Priors for Detailed 3D Reconstruction},
+  booktitle    = {ECCV},
+  year         = {2020},
+}
+
+@inproceedings{DBLP:conf/cvpr/ZhangLWZH19,
+  author       = {Zaiwei Zhang and
+                  Zhenxiao Liang and
+                  Lemeng Wu and
+                  Xiaowei Zhou and
+                  Qixing Huang},
+  title        = {Path-Invariant Map Networks},
+  booktitle    = {CVPR},
+  year         = {2019}
+}
+
+@inproceedings{DBLP:conf/iccv/0005ZYHMZBH21,
+  author       = {Haitao Yang and
+                  Zaiwei Zhang and
+                  Siming Yan and
+                  Haibin Huang and
+                  Chongyang Ma and
+                  Yi Zheng and
+                  Chandrajit Bajaj and
+                  Qixing Huang},
+  title        = {Scene Synthesis via Uncertainty-Driven Attribute Synchronization},
+  booktitle    = {ICCV},
+  year         = {2021},
+}
+
+@inproceedings{DBLP:conf/nips/PaschalidouKSKG21,
+  author       = {Despoina Paschalidou and
+                  Amlan Kar and
+                  Maria Shugrina and
+                  Karsten Kreis and
+                  Andreas Geiger and
+                  Sanja Fidler},
+  title        = {{ATISS:} Autoregressive Transformers for Indoor Scene Synthesis},
+  booktitle    = {NeurIPS},
+  year         = {2021},
+}
+
+@inproceedings{DBLP:conf/eccv/ZhangSYH20,
+  author       = {Zaiwei Zhang and
+                  Bo Sun and
+                  Haitao Yang and
+                  Qixing Huang},
+  title        = {H3DNet: 3D Object Detection Using Hybrid Geometric Primitives},
+  booktitle    = {ECCV},
+  year         = {2020},
+}
+
+@article{10.1145/3526212,
+author = {Yang, Jie and Mo, Kaichun and Lai, Yu-Kun and Guibas, Leonidas J. and Gao, Lin},
+title = {DSG-Net: Learning Disentangled Structure and Geometry for 3D Shape Generation},
+year = {2022},
+journal = {ACM Trans. Graph.}
+}
+
+
+
+@inproceedings{DBLP:conf/iccv/YanYMHVH21,
+  author       = {Siming Yan and
+                  Zhenpei Yang and
+                  Chongyang Ma and
+                  Haibin Huang and
+                  Etienne Vouga and
+                  Qixing Huang},
+  title        = {HPNet: Deep Primitive Segmentation Using Hybrid Representations},
+  booktitle    = {ICCV},
+  year         = {2021},
+}
+
+
+@inproceedings{DBLP:conf/cvpr/SongSH20,
+  author       = {Chen Song and
+                  Jiaru Song and
+                  Qixing Huang},
+  title        = {HybridPose: 6D Object Pose Estimation Under Hybrid Representations},
+  booktitle    = {CVPR},
+  year         = {2020}
+}
+
+
+@inproceedings{DBLP:conf/cvpr/ParkFSNL19,
+  author       = {Jeong Joon Park and
+                  Peter R. Florence and
+                  Julian Straub and
+                  Richard A. Newcombe and
+                  Steven Lovegrove},
+  title        = {DeepSDF: Learning Continuous Signed Distance Functions for Shape Representation},
+  booktitle    = {CVPR},
+  year         = {2019}
+}
+
+@article{DBLP:journals/corr/abs-2302-00190,
+  author       = {Jingyu Hu and
+                  Ka{-}Hei Hui and
+                  Zhengzhe Liu and
+                  Ruihui Li and
+                  Chi{-}Wing Fu},
+  title        = {Neural Wavelet-domain Diffusion for 3D Shape Generation, Inversion,
+                  and Manipulation},
+  journal      = {CoRR},
+  volume       = {abs/2302.00190},
+  year         = {2023}
+}
+
+@article{10.1145/2980179.2982408,
+author = {Ray, Nicolas and Sokolov, Dmitry and L\'{e}vy, Bruno},
+title = {Practical 3D Frame Field Generation},
+year = {2016},
+journal = {ACM Trans. Graph.}
+}
+
+@article{10.1145/2601097.2601179,
+author = {Panozzo, Daniele and Puppo, Enrico and Tarini, Marco and Sorkine-Hornung, Olga},
+title = {Frame Fields: Anisotropic and Non-Orthogonal Cross Fields},
+year = {2014},
+journal = {ACM Trans. Graph.}
+}
+
+
+@article{10.1145/2461912.2462005,
+author = {Kn\"{o}ppel, Felix and Crane, Keenan and Pinkall, Ulrich and Schr\"{o}der, Peter},
+title = {Globally Optimal Direction Fields},
+year = {2013},
+journal = {ACM Trans. Graph.}
+}
+
+@inproceedings{10.1145/3084873.3084921,
+author = {Vaxman, Amir and Campen, Marcel and Diamanti, Olga and Bommes, David and Hildebrandt, Klaus and Technion, Mirela Ben-Chen and Panozzo, Daniele},
+title = {Directional Field Synthesis, Design, and Processing},
+year = {2017},
+booktitle = {ACM SIGGRAPH 2017 Courses}
+}
+
+@article{10.1145/2816795.2818078,
+author = {Jakob, Wenzel and Tarini, Marco and Panozzo, Daniele and Sorkine-Hornung, Olga},
+title = {Instant Field-Aligned Meshes},
+year = {2015},
+journal = {ACM Trans. Graph.}
+}
+
+@inproceedings{DBLP:journals/corr/KingmaB14,
+  author       = {Diederik P. Kingma and
+                  Jimmy Ba},
+  title        = {Adam: {A} Method for Stochastic Optimization},
+  booktitle    = {ICLR},
+  year         = {2015}
+}
+
+@article{10.1145/1183287.1183297,
+author = {Ray, Nicolas and Li, Wan Chiu and L\'{e}vy, Bruno and Sheffer, Alla and Alliez, Pierre},
+title = {Periodic Global Parameterization},
+year = {2006},
+journal = {ACM Trans. Graph.},
+}
+
+@misc{koo2023salad,
+      title={SALAD: Part-Level Latent Diffusion for 3D Shape Generation and Manipulation}, 
+      author={Juil Koo and Seungwoo Yoo and Minh Hieu Nguyen and Minhyuk Sung},
+      year={2023},
+      eprint={2303.12236},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+
+@misc{chang2015shapenet,
+  title={Shapenet: An information-rich 3d model repository},
+  author={Chang, Angel X and Funkhouser, Thomas and Guibas, Leonidas and Hanrahan, Pat and Huang, Qixing and Li, Zimo and Savarese, Silvio and Savva, Manolis and Song, Shuran and Su, Hao and others},
+  journal={arXiv preprint arXiv:1512.03012},
+  year={2015}
+}
+
+@inproceedings{takikawa2021nglod,
+  title={Neural geometric level of detail: Real-time rendering with implicit 3d shapes},
+  author={Takikawa, Towaki and Litalien, Joey and Yin, Kangxue and Kreis, Karsten and Loop, Charles and Nowrouzezahrai, Derek and Jacobson, Alec and McGuire, Morgan and Fidler, Sanja},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={11358--11367},
+  publisher = {IEEE},
+  address = {Washington, DC, USA},
+  year={2021}
+}
+
+@misc{zhou2016thingi10k,
+  title={Thingi10k: A dataset of 10,000 3d-printing models},
+  author={Zhou, Qingnan and Jacobson, Alec},
+  journal={arXiv preprint arXiv:1605.04797},
+  year={2016}
+}
+
+@inproceedings{tretschk2020patchnets,
+  title={Patchnets: Patch-based generalizable deep implicit 3d shape representations},
+  author={Tretschk, Edgar and Tewari, Ayush and Golyanik, Vladislav and Zollh{\"o}fer, Michael and Stoll, Carsten and Theobalt, Christian},
+  booktitle={Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part XVI 16},
+  pages={293--309},
+  year={2020},
+  publisher={Springer},
+  address = {New York, NY, USA},
+}
+
+@inproceedings{peng2020convolutional,
+  title={Convolutional occupancy networks},
+  author={Peng, Songyou and Niemeyer, Michael and Mescheder, Lars and Pollefeys, Marc and Geiger, Andreas},
+  booktitle={Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part III 16},
+  pages={523--540},
+  publisher = {Springer},
+  address = {New York, NY, USA},
+  year={2020}
+}
+
+@article{muller2022instantngp,
+  title={Instant neural graphics primitives with a multiresolution hash encoding},
+  author={M{\"u}ller, Thomas and Evans, Alex and Schied, Christoph and Keller, Alexander},
+  journal={ACM Transactions on Graphics (ToG)},
+  volume={41},
+  number={4},
+  pages={1--15},
+  year={2022},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{Ohtake2003MultilevelPO,
+  title={Multi-level partition of unity implicits},
+  author={Yutaka Ohtake and Alexander G. Belyaev and Marc Alexa and Greg Turk and Hans-Peter Seidel},
+  journal={ACM SIGGRAPH 2003 Papers},
+  year={2003}
+}
+
+@article{xiong2014shading,
+  title={From shading to local shape},
+  author={Xiong, Ying and Chakrabarti, Ayan and Basri, Ronen and Gortler, Steven J and Jacobs, David W and Zickler, Todd},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={37},
+  number={1},
+  pages={67--79},
+  year={2014},
+  publisher={IEEE}
+}
+
+@article{erens1993perception,
+  title={Perception of local shape from shading},
+  author={Erens, Roderik GF and Kappers, Astrid ML and Koenderink, Jan J},
+  journal={Perception \& psychophysics},
+  volume={54},
+  pages={145--156},
+  year={1993},
+  publisher={Springer}
+}
+
+@article{wallace1981three,
+  title={Three-dimensional shape analysis using local shape descriptors},
+  author={Wallace, Timothy P and Mitchell, Owen Robert and Fukunaga, Keinosuke},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  number={3},
+  pages={310--323},
+  year={1981},
+  publisher={IEEE}
+}
+
+
+@article{wang2018adaptive,
+  title={Adaptive O-CNN: A patch-based deep representation of 3D shapes},
+  author={Wang, Peng-Shuai and Sun, Chun-Yu and Liu, Yang and Tong, Xin},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={37},
+  number={6},
+  pages={1--11},
+  year={2018},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{liu2021octsurf,
+  title={OctSurf: Efficient hierarchical voxel-based molecular surface representation for protein-ligand affinity prediction},
+  author={Liu, Qinqing and Wang, Peng-Shuai and Zhu, Chunjiang and Gaines, Blake Blumenfeld and Zhu, Tan and Bi, Jinbo and Song, Minghu},
+  journal={Journal of Molecular Graphics and Modelling},
+  volume={105},
+  pages={107865},
+  year={2021},
+  publisher={Elsevier}
+}
+
+@article{tang2021octfield,
+  title={Octfield: Hierarchical implicit functions for 3d modeling},
+  author={Tang, Jia-Heng and Chen, Weikai and Yang, Jie and Wang, Bo and Liu, Songrun and Yang, Bo and Gao, Lin},
+  journal={arXiv preprint arXiv:2111.01067},
+  year={2021}
+}
+
+@inproceedings{aumentado2022representing,
+  title={Representing 3d shapes with probabilistic directed distance fields},
+  author={Aumentado-Armstrong, Tristan and Tsogkas, Stavros and Dickinson, Sven and Jepson, Allan D},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={19343--19354},
+  year={2022}
+}
+
+@article{shen2021tetrahedra,
+  title={Deep marching tetrahedra: a hybrid representation for high-resolution 3d shape synthesis},
+  author={Shen, Tianchang and Gao, Jun and Yin, Kangxue and Liu, Ming-Yu and Fidler, Sanja},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={6087--6101},
+  year={2021}
+}
+
+@inproceedings{yenamandra2024fire,
+  title={FIRe: Fast inverse rendering using directional and signed distance functions},
+  author={Yenamandra, Tarun and Tewari, Ayush and Yang, Nan and Bernard, Florian and Theobalt, Christian and Cremers, Daniel},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={3077--3087},
+  year={2024}
+}
+
+@article{wang2023neuralhessian,
+  title={Neural-Singular-Hessian: Implicit Neural Representation of Unoriented Point Clouds by Enforcing Singular Hessian},
+  author={Wang, Zixiong and Zhang, Yunxiao and Xu, Rui and Zhang, Fan and Wang, Peng-Shuai and Chen, Shuangmin and Xin, Shiqing and Wang, Wenping and Tu, Changhe},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={42},
+  number={6},
+  pages={1--14},
+  year={2023},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{kolluri2008provably,
+  title={Provably good moving least squares},
+  author={Kolluri, Ravikrishna},
+  journal={ACM Transactions on Algorithms (TALG)},
+  volume={4},
+  number={2},
+  pages={1--25},
+  year={2008},
+  publisher={ACM New York, NY, USA}
+}
+
+
+@article{zhang20233dshape2vecset,
+  title={3dshape2vecset: A 3d shape representation for neural fields and generative diffusion models},
+  author={Zhang, Biao and Tang, Jiapeng and Niessner, Matthias and Wonka, Peter},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={42},
+  number={4},
+  pages={1--16},
+  year={2023},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{lin2020constructing,
+  title={Constructing multilayer perceptrons as piecewise low-order polynomial approximators: a signal processing approach},
+  author={Lin, Ruiyuan and You, Suya and Rao, Raghuveer and Kuo, C-C Jay},
+  journal={arXiv preprint arXiv:2010.07871},
+  year={2020}
+}
+
+@article{hong2023lrm,
+  title={Lrm: Large reconstruction model for single image to 3d},
+  author={Hong, Yicong and Zhang, Kai and Gu, Jiuxiang and Bi, Sai and Zhou, Yang and Liu, Difan and Liu, Feng and Sunkavalli, Kalyan and Bui, Trung and Tan, Hao},
+  journal={arXiv preprint arXiv:2311.04400},
+  year={2023}
+}
+
+@inproceedings{chan2022efficient,
+  title={Efficient geometry-aware 3d generative adversarial networks},
+  author={Chan, Eric R and Lin, Connor Z and Chan, Matthew A and Nagano, Koki and Pan, Boxiao and De Mello, Shalini and Gallo, Orazio and Guibas, Leonidas J and Tremblay, Jonathan and Khamis, Sameh and others},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={16123--16133},
+  year={2022}
+}
+
+@article{jiang2022few,
+  title={Few-view object reconstruction with unknown categories and camera poses},
+  author={Jiang, Hanwen and Jiang, Zhenyu and Grauman, Kristen and Zhu, Yuke},
+  journal={arXiv preprint arXiv:2212.04492},
+  year={2022}
+}
+
+@article{jiang2023leap,
+  title={Leap: Liberate sparse-view 3d modeling from camera poses},
+  author={Jiang, Hanwen and Jiang, Zhenyu and Zhao, Yue and Huang, Qixing},
+  journal={arXiv preprint arXiv:2310.01410},
+  year={2023}
+}

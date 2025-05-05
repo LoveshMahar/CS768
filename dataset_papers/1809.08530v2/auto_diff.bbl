@@ -1,0 +1,205 @@
+\def\cfac#1{\ifmmode\setbox7\hbox{$\accent"5E#1$}\else
+  \setbox7\hbox{\accent"5E#1}\penalty 10000\relax\fi\raise 1\ht7
+  \hbox{\lower1.15ex\hbox to 1\wd7{\hss\accent"13\hss}}\penalty 10000
+  \hskip-1\wd7\penalty 10000\box7}
+\begin{thebibliography}{31}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abadi et~al.(2015)Abadi, Agarwal, Barham, Brevdo,
+  et~al.]{tensorflow2015-whitepaper}
+M.~Abadi, A.~Agarwal, P.~Barham, E.~Brevdo, et~al.
+\newblock {TensorFlow}: Large-scale machine learning on heterogeneous systems,
+  2015.
+\newblock URL \url{https://www.tensorflow.org/}.
+\newblock Software available from tensorflow.org.
+
+\bibitem[Abadie(1967)]{abadie}
+J.~Abadie.
+\newblock On the kuhn tucker theorem.
+\newblock \emph{Nonlinear Programming}, pages 19--36, 1967.
+
+\bibitem[A.Griewank(1995)]{dijon}
+A.Griewank.
+\newblock Automatic directional differentiation of nonsmooth composite
+  functions.
+\newblock In R.Durier, editor, \emph{Recent developments in Optimization /
+  Seventh French-German Conference on Optimization, Dijon 1994}, pages
+  155--169. Springer Verlag, 1995.
+
+\bibitem[Baur and Strassen(1983)]{Baur1983TCo}
+Walter Baur and Volker Strassen.
+\newblock The complexity of partial derivatives.
+\newblock \emph{Theoretical Computer Science}, 22:\penalty0 317--330, 1983.
+
+\bibitem[Baydin et~al.(2015)Baydin, Pearlmutter, and
+  Radul]{Baydin2015AutomaticDI}
+Atilim~Gunes Baydin, Barak~A. Pearlmutter, and Alexey Radul.
+\newblock Automatic differentiation in machine learning: a survey.
+\newblock \emph{CoRR}, abs/1502.05767, 2015.
+
+\bibitem[Blum et~al.(1988)Blum, Shub, and Smale]{DBLP:conf/focs/BlumSS88}
+Lenore Blum, Mike Shub, and Steve Smale.
+\newblock On a theory of computation over the real numbers; {NP} completeness,
+  recursive functions and universal machines (extended abstract).
+\newblock In \emph{{FOCS}}, pages 387--397. {IEEE} Computer Society, 1988.
+
+\bibitem[Clarke(1975)]{origin}
+F.H. Clarke.
+\newblock Generalized gradients and applications.
+\newblock \emph{Trans. Amer. Math. Soc.}, 205:\penalty0 247--262, Apr. 1975.
+
+\bibitem[Clarke et~al.(2008)Clarke, Ledyaev, Stern, and
+  Wolenski]{clarke2008nonsmooth}
+F.H. Clarke, Y.S. Ledyaev, R.J. Stern, and P.R. Wolenski.
+\newblock \emph{Nonsmooth analysis and control theory}, volume 178.
+\newblock Springer Science \& Business Media, 2008.
+
+\bibitem[Coste(2000)]{coste2000introduction}
+Michel Coste.
+\newblock \emph{An introduction to o-minimal geometry}.
+\newblock Istituti editoriali e poligrafici internazionali Pisa, 2000.
+
+\bibitem[Demmel(1997)]{demmel}
+J.~W. Demmel.
+\newblock \emph{{Applied numerical linear algebra}}.
+\newblock Society for Industrial Mathematics, 1997.
+
+\bibitem[Fiege et~al.(2017)Fiege, Walther, Kulshreshtha, and
+  Griewank]{griewank_study}
+Sabrina Fiege, Andrea Walther, Kshitij Kulshreshtha, and Andreas Griewank.
+\newblock Algorithmic differentiation for piecewise smooth functions: a case
+  study for robust optimization.
+\newblock pages 1--16, 06 2017.
+
+\bibitem[Gould and Tolle(1971)]{article}
+F.J. Gould and J.W. Tolle.
+\newblock A necessary and sufficient qualification for constrained
+  optimization.
+\newblock 20, 03 1971.
+
+\bibitem[Griewank(1989)]{Griewank89onautomatic}
+Andreas Griewank.
+\newblock On automatic differentiation.
+\newblock In \emph{Mathematical Programming: Recent Developments and
+  Applications}, pages 83--108. Kluwer Academic Publishers, 1989.
+
+\bibitem[Griewank(2012)]{griewank_invtented}
+Andreas Griewank.
+\newblock Who invented the reverse mode of differentiation?
+\newblock \emph{Optimization Stories}, Documenta Matematica, Extra Volume ISMP
+  (2012):\penalty0 389--400, 2012.
+
+\bibitem[Griewank(2013)]{Griewank_linearization}
+Andreas Griewank.
+\newblock On stable picewise linearization and generalized differentiation.
+\newblock \emph{Optimization Methods and Software}, 28(6):\penalty0 1139--1178,
+  2013.
+
+\bibitem[Griewank(2014)]{GRIEWANK2014}
+Andreas Griewank.
+\newblock {On Automatic Differentiation and Algorithmic Linearization}.
+\newblock \emph{{Pesquisa Operacional}}, 34:\penalty0 621 -- 645, 12 2014.
+\newblock ISSN 0101-7438.
+
+\bibitem[Griewank and Walther(2008)]{Griewank:2008:EDP:1455489}
+Andreas Griewank and Andrea Walther.
+\newblock \emph{Evaluating Derivatives: Principles and Techniques of
+  Algorithmic Differentiation}.
+\newblock Society for Industrial and Applied Mathematics, Philadelphia, PA,
+  USA, second edition, 2008.
+
+\bibitem[Khan and Barton(2013)]{khan_piecewise}
+K.~A. Khan and P.I. Barton.
+\newblock Evaluating an element of the clarke generalized jacobian of a
+  composite piecewise differentiable function.
+\newblock \emph{ACM Trans. Math. Softw.}, 39:\penalty0 23:1, 2013.
+
+\bibitem[Khan and Barton(2015)]{khan_vector}
+K.~A. Khan and P.I. Barton.
+\newblock A vector forward mode of automatic differentiation for generalized
+  derivative evaluation.
+\newblock \emph{Optim. Method Softw.}, 30:\penalty0 1185, 2015.
+
+\bibitem[Khan(2017)]{doi:10.1080/10556788.2017.1341506}
+Kamil~A. Khan.
+\newblock Branch-locking ad techniques for nonsmooth composite functions and
+  nonsmooth implicit functions.
+\newblock \emph{Optimization Methods and Software}, 0\penalty0 (0):\penalty0
+  1--29, 2017.
+
+\bibitem[Klatte and Kummer(2002)]{kk_book}
+D.~Klatte and B.~Kummer.
+\newblock \emph{Nonsmooth equations in optimization}, volume~60 of
+  \emph{Nonconvex Optimization and its Applications}.
+\newblock Kluwer Academic Publishers, Dordrecht, 2002.
+\newblock ISBN 1-4020-0550-4.
+\newblock Regularity, calculus, methods and applications.
+
+\bibitem[Maclaurin et~al.(2015)Maclaurin, Duvenaud, Johnson, and
+  Adams]{autograd}
+Dougal Maclaurin, David Duvenaud, Matthew Johnson, and Ryan~P. Adams.
+\newblock Autograd: Reverse-mode differentiation of native {P}ython, 2015.
+\newblock URL \url{http://github.com/HIPS/autograd}.
+
+\bibitem[Mordukhovich(2006)]{Mordukhovich}
+B.~S. Mordukhovich.
+\newblock \emph{Variational Analysis and Generalized Differentiation II:
+  Applications}.
+\newblock Springer Berlin Heidelberg, 2006.
+\newblock ISBN 9783540312468.
+\newblock URL \url{https://books.google.com/books?id=lmdmY75lrokC}.
+
+\bibitem[Morgenstern(1985)]{Morgenstern1985HowTC}
+Jacques Morgenstern.
+\newblock How to compute fast a function and all its derivatives: a variation
+  on the theorem of baur-strassen.
+\newblock In \emph{SIGA}, 1985.
+
+\bibitem[Nesterov(2005)]{DBLP:journals/mp/Nesterov05a}
+Yurii Nesterov.
+\newblock Lexicographic differentiation of nonsmooth functions.
+\newblock \emph{Math. Program.}, 104\penalty0 (2-3):\penalty0 669--700, 2005.
+
+\bibitem[Paszke et~al.(2017)Paszke, Gross, Chintala, Chanan, Yang, DeVito, Lin,
+  Desmaison, Antiga, and Lerer]{paszke2017automatic}
+A.~Paszke, S.~Gross, S.~Chintala, G.~Chanan, E.~Yang, Z.~DeVito, Z.~Lin,
+  A.~Desmaison, L.~Antiga, and A.~Lerer.
+\newblock Automatic differentiation in pytorch.
+\newblock In \emph{NIPS-W}, 2017.
+
+\bibitem[Peterson(1973)]{doi:10.1137/1015075}
+David~W. Peterson.
+\newblock A review of constraint qualifications in finite-dimensional spaces.
+\newblock \emph{SIAM Review}, 15\penalty0 (3):\penalty0 639--654, 1973.
+
+\bibitem[Rumelhart et~al.(1986)Rumelhart, Hinton, and
+  Williams]{Rumelhart:1986:LIR:104279.104293}
+D.~E. Rumelhart, G.~E. Hinton, and R.~J. Williams.
+\newblock Parallel distributed processing: Explorations in the microstructure
+  of cognition, vol. 1.
+\newblock chapter Learning Internal Representations by Error Propagation, pages
+  318--362. MIT Press, Cambridge, MA, USA, 1986.
+
+\bibitem[Seeger et~al.(2017)Seeger, Hetzel, Dai, and
+  Lawrence]{DBLP:journals/corr/abs-1710-08717}
+Matthias~W. Seeger, Asmus Hetzel, Zhenwen Dai, and Neil~D. Lawrence.
+\newblock Auto-differentiating linear algebra.
+\newblock \emph{CoRR}, abs/1710.08717, 2017.
+\newblock URL \url{http://arxiv.org/abs/1710.08717}.
+
+\bibitem[Shapiro(1990)]{Shapiro1990}
+A.~Shapiro.
+\newblock On concepts of directional differentiability.
+\newblock \emph{Journal of Optimization Theory and Applications}, 66\penalty0
+  (3):\penalty0 477--487, Sep 1990.
+
+\bibitem[Trefethen and Bau~III(1997)]{tref-nla-1997}
+Lloyd~N Trefethen and David Bau~III.
+\newblock \emph{Numerical linear algebra}, volume~50.
+\newblock {SIAM}, 1997.
+
+\end{thebibliography}

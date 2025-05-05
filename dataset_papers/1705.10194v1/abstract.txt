@@ -1,0 +1,13 @@
+We propose a novel adaptive approximation approach for test-time
+resource-constrained prediction. Given an input instance at test-time, a gating
+function identifies a prediction model for the input among a collection of
+models. Our objective is to minimize overall average cost without sacrificing
+accuracy. We learn gating and prediction models on fully labeled training data
+by means of a bottom-up strategy. Our novel bottom-up method first trains a
+high-accuracy complex model. Then a low-complexity gating and prediction model
+are subsequently learned to adaptively approximate the high-accuracy model in
+regions where low-cost models are capable of making highly accurate
+predictions. We pose an empirical loss minimization problem with cost
+constraints to jointly train gating and prediction models. On a number of
+benchmark datasets our method outperforms state-of-the-art achieving higher
+accuracy for the same cost.

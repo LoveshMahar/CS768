@@ -1,0 +1,16 @@
+Graph Convolutional Networks (GCNs) have shown to be effective in handling
+unordered data like point clouds and meshes. In this work we propose novel
+approaches for graph convolution, pooling and unpooling, inspired from finite
+differences and algebraic multigrid frameworks. We form a parameterized
+convolution kernel based on discretized differential operators, leveraging the
+graph mass, gradient and Laplacian. This way, the parameterization does not
+depend on the graph structure, only on the meaning of the network convolutions
+as differential operators. To allow hierarchical representations of the input,
+we propose pooling and unpooling operations that are based on algebraic
+multigrid methods, which are mainly used to solve partial differential
+equations on unstructured grids. To motivate and explain our method, we compare
+it to standard convolutional neural networks, and show their similarities and
+relations in the case of a regular grid. Our proposed method is demonstrated in
+various experiments like classification and part-segmentation, achieving on par
+or better than state of the art results. We also analyze the computational cost
+of our method compared to other GCNs.

@@ -1,0 +1,1842 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{arbel2021annealed}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AM}{%
+         family={Arbel},
+         familyi={A\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MAG}{%
+         family={Matthews},
+         familyi={M\bibinitperiod},
+         given={Alexander\bibnamedelima GDG},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Doucet},
+         familyi={D\bibinitperiod},
+         given={Arnaud},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AM+1}
+    \strng{fullhash}{AMMAGDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Annealed Flow Transport Monte Carlo}
+    \field{journaltitle}{arXiv preprint arXiv:2102.07501}
+    \field{year}{2021}
+  \endentry
+
+  \entry{bornschein2015reweighted}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BJ}{%
+         family={Bornschein},
+         familyi={B\bibinitperiod},
+         given={J{\"o}rg},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Machine Learning}
+    \strng{namehash}{BJBY1}
+    \strng{fullhash}{BJBY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Training deep directed graphical models with many hidden variables and
+  performing inference remains a major challenge. Helmholtz machines and deep
+  belief networks are such models, and the wake-sleep algorithm has been
+  proposed to train them. The wake-sleep algorithm relies on training not just
+  the directed generative model but also a conditional generative model (the
+  inference network) that runs backward from visible to latent, estimating the
+  posterior distribution of latent given visible. We propose a novel
+  interpretation of the wake-sleep algorithm which suggests that better
+  estimators of the gradient can be obtained by sampling latent variables
+  multiple times from the inference network. This view is based on importance
+  sampling as an estimator of the likelihood, with the approximate inference
+  network as a proposal distribution. This interpretation is confirmed
+  experimentally, showing that better likelihood can be achieved with this
+  reweighted wake-sleep procedure. Based on this interpretation, we propose
+  that a sigmoidal belief network is not sufficiently powerful for the layers
+  of the inference network in order to recover a good estimator of the
+  posterior distribution of latent variables. Our experiments show that using a
+  more powerful layer model, such as NADE, yields substantially better
+  generative models.%
+    }
+    \verb{eprint}
+    \verb 1406.2751
+    \endverb
+    \field{title}{Reweighted {{Wake}}-{{Sleep}}}
+    \verb{file}
+    \verb /Users/janwillem/Zotero/storage/GXPHP3SL/Bornschein - 2015 - Reweight
+    \verb ed Wake-Sleep.pdf
+    \endverb
+    \field{journaltitle}{International Conference on Learning Representations}
+    \field{eprinttype}{arxiv}
+    \field{year}{2015}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{burda2016importance}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=BY}{%
+         family={Burda},
+         familyi={B\bibinitperiod},
+         given={Yuri},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Grosse},
+         familyi={G\bibinitperiod},
+         given={Roger},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Salakhutdinov},
+         familyi={S\bibinitperiod},
+         given={Ruslan},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Machine Learning,Statistics - Machine Learning}
+    \strng{namehash}{BY+1}
+    \strng{fullhash}{BYGRSR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    The variational autoencoder (VAE; Kingma, Welling (2014)) is a recently
+  proposed generative model pairing a top-down generative network with a
+  bottom-up recognition network which approximates posterior inference. It
+  typically makes strong assumptions about posterior inference, for instance
+  that the posterior distribution is approximately factorial, and that its
+  parameters can be approximated with nonlinear regression from the
+  observations. As we show empirically, the VAE objective can lead to overly
+  simplified representations which fail to use the network's entire modeling
+  capacity. We present the importance weighted autoencoder (IWAE), a generative
+  model with the same architecture as the VAE, but which uses a strictly
+  tighter log-likelihood lower bound derived from importance weighting. In the
+  IWAE, the recognition network uses multiple samples to approximate the
+  posterior, giving it increased flexibility to model complex posteriors which
+  do not fit the VAE modeling assumptions. We show empirically that IWAEs learn
+  richer latent space representations than VAEs, leading to improved test
+  log-likelihood on density estimation benchmarks.%
+    }
+    \field{booktitle}{International {{Conference}} on {{Representations}}}
+    \verb{eprint}
+    \verb 1509.00519
+    \endverb
+    \field{title}{Importance {{Weighted Autoencoders}}}
+    \verb{file}
+    \verb /Users/janwillem/Zotero/storage/6X4GWDCZ/Burda et al. - 2015 - Import
+    \verb ance Weighted Autoencoders.pdf
+    \endverb
+    \field{eprinttype}{arxiv}
+    \field{year}{2016}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{chopin2002sequential}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CN}{%
+         family={Chopin},
+         familyi={C\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CN1}
+    \strng{fullhash}{CN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1093/biomet/89.3.539
+    \endverb
+    \field{number}{3}
+    \field{pages}{539\bibrangedash 552}
+    \field{title}{A Sequential Particle Filter Method for Static Models}
+    \field{volume}{89}
+    \verb{file}
+    \verb /Users/janwillem/Cloud/Zotero/storage/923GRZ68/Chopin - 2002 - A sequ
+    \verb ential particle filter method for static models.pdf
+    \endverb
+    \field{journaltitle}{Biometrika}
+    \field{month}{08}
+    \field{year}{2002}
+  \endentry
+
+  \entry{delmoral2006sequential}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DMP}{%
+         family={Del\bibnamedelima Moral},
+         familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={Pierre},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Doucet},
+         familyi={D\bibinitperiod},
+         given={Arnaud},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=JA}{%
+         family={Jasra},
+         familyi={J\bibinitperiod},
+         given={Ajay},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{markov chain monte carlo,constants,importance sampling,methods,ratio
+  of normalizing,resampling,sequential monte carlo methods,simulated annealing}
+    \strng{namehash}{DMP+1}
+    \strng{fullhash}{DMPDAJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1111/j.1467-9868.2006.00553.x
+    \endverb
+    \field{number}{3}
+    \field{pages}{411\bibrangedash 436}
+    \field{title}{Sequential {{Monte Carlo}} Samplers}
+    \field{volume}{68}
+    \verb{file}
+    \verb /Users/janwillem/Zotero/storage/5EEY5NTT/Del Moral - 2006 - Sequentia
+    \verb l Monte Carlo samplers.pdf
+    \endverb
+    \field{journaltitle}{Journal of the Royal Statistical Society: Series B
+  (Statistical Methodology)}
+    \field{month}{06}
+    \field{year}{2006}
+  \endentry
+
+  \entry{doucet2001sequential}{book}{}
+    \name{editor}{3}{}{%
+      {{hash=DA}{%
+         family={Doucet},
+         familyi={D\bibinitperiod},
+         given={Arnaud},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FN}{%
+         family={Freitas},
+         familyi={F\bibinitperiod},
+         given={Nando},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=GN}{%
+         family={Gordon},
+         familyi={G\bibinitperiod},
+         given={Neil},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Springer New York}}%
+    }
+    \strng{namehash}{DA+1}
+    \strng{fullhash}{DAFNGN1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1007/978-1-4757-3437-9
+    \endverb
+    \field{isbn}{978-1-4419-2887-0 978-1-4757-3437-9}
+    \field{title}{Sequential {{Monte Carlo Methods}} in {{Practice}}}
+    \list{location}{1}{%
+      {{New York, NY}}%
+    }
+    \field{year}{2001}
+  \endentry
+
+  \entry{hoffman2017learning}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=HMD}{%
+         family={Hoffman},
+         familyi={H\bibinitperiod},
+         given={Matthew\bibnamedelima D},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {JMLR. org}%
+    }
+    \strng{namehash}{HMD1}
+    \strng{fullhash}{HMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{Proceedings of the 34th International Conference on
+  Machine Learning-Volume 70}
+    \field{pages}{1510\bibrangedash 1519}
+    \field{title}{Learning deep latent Gaussian models with Markov chain Monte
+  Carlo}
+    \field{year}{2017}
+  \endentry
+
+  \entry{huang2018improving}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=HCW}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Chin-Wei},
+         giveni={C\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Shawn},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lacoste},
+         familyi={L\bibinitperiod},
+         given={Alexandre},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CAC}{%
+         family={Courville},
+         familyi={C\bibinitperiod},
+         given={Aaron\bibnamedelima C},
+         giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HCW+1}
+    \strng{fullhash}{HCWTSLACAC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{Advances in Neural Information Processing Systems}
+    \field{pages}{9701\bibrangedash 9711}
+    \field{title}{Improving explorability in variational inference with
+  annealed variational objectives}
+    \field{year}{2018}
+  \endentry
+
+  \entry{kingma2013auto}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KDP}{%
+         family={Kingma},
+         familyi={K\bibinitperiod},
+         given={Diederik\bibnamedelima P},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Welling},
+         familyi={W\bibinitperiod},
+         given={Max},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KDPWM1}
+    \strng{fullhash}{KDPWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Auto-encoding variational bayes}
+    \field{journaltitle}{arXiv preprint arXiv:1312.6114}
+    \field{year}{2013}
+  \endentry
+
+  \entry{lawson2018twisted}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=LD}{%
+         family={Lawson},
+         familyi={L\bibinitperiod},
+         given={Dieterich},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Tucker},
+         familyi={T\bibinitperiod},
+         given={George},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=NCA}{%
+         family={Naesseth},
+         familyi={N\bibinitperiod},
+         given={Christian\bibnamedelima A},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Maddison},
+         familyi={M\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ARP}{%
+         family={Adams},
+         familyi={A\bibinitperiod},
+         given={Ryan\bibnamedelima P},
+         giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=TYW}{%
+         family={Teh},
+         familyi={T\bibinitperiod},
+         given={Yee\bibnamedelima Whye},
+         giveni={Y\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LD+1}
+    \strng{fullhash}{LDTGNCAMCARPTYW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{Third workshop on Bayesian Deep Learning (NeurIPS)}
+    \field{title}{Twisted variational sequential monte carlo}
+    \field{year}{2018}
+  \endentry
+
+  \entry{le2018auto-encoding}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=LTA}{%
+         family={Le},
+         familyi={L\bibinitperiod},
+         given={Tuan\bibnamedelima Anh},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Igl},
+         familyi={I\bibinitperiod},
+         given={Maximilian},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RT}{%
+         family={Rainforth},
+         familyi={R\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=JT}{%
+         family={Jin},
+         familyi={J\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Wood},
+         familyi={W\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \keyw{Statistics - Machine Learning}
+    \strng{namehash}{LTA+1}
+    \strng{fullhash}{LTAIMRTJTWF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    We build on auto-encoding sequential Monte Carlo (AESMC): a method for
+  model and proposal learning based on maximizing the lower bound to the log
+  marginal likelihood in a broad family of structured probabilistic models. Our
+  approach relies on the efficiency of sequential Monte Carlo (SMC) for
+  performing inference in structured probabilistic models and the flexibility
+  of deep neural networks to model complex conditional probability
+  distributions. We develop additional theoretical insights and introduce a new
+  training procedure which improves both model and proposal learning. We
+  demonstrate that our approach provides a fast, easy-to-implement and scalable
+  means for simultaneous model learning and proposal adaptation in deep
+  generative models.%
+    }
+    \field{booktitle}{International {{Conference}} on {{Learning
+  Representations}}}
+    \verb{eprint}
+    \verb 1705.10306
+    \endverb
+    \field{title}{Auto-{{Encoding Sequential Monte Carlo}}}
+    \verb{file}
+    \verb /Users/janwillem/Zotero/storage/FDZEBMIF/Le et al. - 2017 - Auto-Enco
+    \verb ding Sequential Monte Carlo.pdf
+    \endverb
+    \field{eprinttype}{arxiv}
+    \field{year}{2018}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{le2019revisiting}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LTA}{%
+         family={Le},
+         familyi={L\bibinitperiod},
+         given={Tuan\bibnamedelima Anh},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kosiorek},
+         familyi={K\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=SN}{%
+         family={Siddharth},
+         familyi={S\bibinitperiod},
+         given={N},
+         giveni={N},
+      }}%
+      {{hash=TYW}{%
+         family={Teh},
+         familyi={T\bibinitperiod},
+         given={Yee\bibnamedelima Whye},
+         giveni={Y\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Wood},
+         familyi={W\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Uncertainty in Artificial Intelligence}%
+    }
+    \strng{namehash}{LTA+1}
+    \strng{fullhash}{LTAKASNTYWWF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Revisiting reweighted wake-sleep for models with stochastic
+  control flow}
+    \field{year}{2019}
+  \endentry
+
+  \entry{li2017approximate}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yingzhen},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=TRE}{%
+         family={Turner},
+         familyi={T\bibinitperiod},
+         given={Richard\bibnamedelima E},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=LQ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Qiang},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LY+1}
+    \strng{fullhash}{LYTRELQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Approximate inference with amortised mcmc}
+    \field{journaltitle}{arXiv preprint arXiv:1702.08343}
+    \field{year}{2017}
+  \endentry
+
+  \entry{NEURIPS2019_f82798ec}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=LGG}{%
+         family={Loaiza-Ganem},
+         familyi={L\bibinithyphendelim G\bibinitperiod},
+         given={Gabriel},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CJP}{%
+         family={Cunningham},
+         familyi={C\bibinitperiod},
+         given={John\bibnamedelima P},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \name{editor}{6}{}{%
+      {{hash=WH}{%
+         family={Wallach},
+         familyi={W\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Larochelle},
+         familyi={L\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Beygelzimer},
+         familyi={B\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=dABF}{%
+         prefix={d\textquotesingle},
+         prefixi={d\bibinitperiod},
+         family={Alch\'{e}-Buc},
+         familyi={A\bibinithyphendelim B\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=FE}{%
+         family={Fox},
+         familyi={F\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Garnett},
+         familyi={G\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Curran Associates, Inc.}%
+    }
+    \strng{namehash}{LGGCJP1}
+    \strng{fullhash}{LGGCJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{Advances in Neural Information Processing Systems}
+    \field{title}{The continuous Bernoulli: fixing a pervasive error in
+  variational autoencoders}
+    \field{volume}{32}
+    \field{year}{2019}
+  \endentry
+
+  \entry{maddison2017filtering}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=MCJ}{%
+         family={Maddison},
+         familyi={M\bibinitperiod},
+         given={Chris\bibnamedelima J},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Lawson},
+         familyi={L\bibinitperiod},
+         given={Dieterich},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Tucker},
+         familyi={T\bibinitperiod},
+         given={George},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=HN}{%
+         family={Heess},
+         familyi={H\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Norouzi},
+         familyi={N\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mnih},
+         familyi={M\bibinitperiod},
+         given={Andriy},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Doucet},
+         familyi={D\bibinitperiod},
+         given={Arnaud},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TYW}{%
+         family={Teh},
+         familyi={T\bibinitperiod},
+         given={Yee\bibnamedelima Whye},
+         giveni={Y\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MCJ+1}
+    \strng{fullhash}{MCJLDTGHNNMMADATYW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Proceedings of the 31st International Conference on
+  Neural Information Processing Systems}
+    \field{pages}{6576\bibrangedash 6586}
+    \field{title}{Filtering variational objectives}
+    \field{year}{2017}
+  \endentry
+
+  \entry{muller_neural_2019}{article}{}
+    \name{author}{5}{}{%
+      {{hash=MT}{%
+         family={Müller},
+         familyi={M\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={McWilliams},
+         familyi={M\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=RF}{%
+         family={Rousselle},
+         familyi={R\bibinitperiod},
+         given={Fabrice},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gross},
+         familyi={G\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Novák},
+         familyi={N\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Graphics, Computer Science - Machine Learning,
+  Statistics - Machine Learning}
+    \strng{namehash}{MT+1}
+    \strng{fullhash}{MTMBRFGMNJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    We propose to use deep neural networks for generating samples in Monte
+  Carlo integration. Our work is based on non-linear independent components
+  estimation (NICE), which we extend in numerous ways to improve performance
+  and enable its application to integration problems. First, we introduce
+  piecewise-polynomial coupling transforms that greatly increase the modeling
+  power of individual coupling layers. Second, we propose to preprocess the
+  inputs of neural networks using one-blob encoding, which stimulates
+  localization of computation and improves inference. Third, we derive a
+  gradient-descent-based optimization for the KL and the
+  \${\textbackslash}chi{\textasciicircum}2\$ divergence for the specific
+  application of Monte Carlo integration with unnormalized stochastic estimates
+  of the target distribution. Our approach enables fast and accurate inference
+  and efficient sample generation independently of the dimensionality of the
+  integration domain. We show its benefits on generating natural images and in
+  two applications to light-transport simulation: first, we demonstrate
+  learning of joint path-sampling densities in the primary sample space and
+  importance sampling of multi-dimensional path prefixes thereof. Second, we
+  use our technique to extract conditional directional densities driven by the
+  product of incident illumination and the BSDF in the rendering equation, and
+  we leverage the densities for path guiding. In all applications, our approach
+  yields on-par or higher performance than competing techniques at equal sample
+  count.%
+    }
+    \field{note}{arXiv: 1808.03856}
+    \field{title}{Neural {Importance} {Sampling}}
+    \field{journaltitle}{arXiv:1808.03856 [cs, stat]}
+    \field{month}{09}
+    \field{year}{2019}
+    \field{urlday}{14}
+    \field{urlmonth}{11}
+    \field{urlyear}{2020}
+  \endentry
+
+  \entry{naesseth2018variational}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=NC}{%
+         family={Naesseth},
+         familyi={N\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Linderman},
+         familyi={L\bibinitperiod},
+         given={Scott},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Ranganath},
+         familyi={R\bibinitperiod},
+         given={Rajesh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Blei},
+         familyi={B\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {PMLR}%
+    }
+    \strng{namehash}{NC+1}
+    \strng{fullhash}{NCLSRRBD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{booktitle}{International Conference on Artificial Intelligence and
+  Statistics}
+    \field{pages}{968\bibrangedash 977}
+    \field{title}{Variational sequential monte carlo}
+    \field{year}{2018}
+  \endentry
+
+  \entry{naesseth2015nested}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=NC}{%
+         family={Naesseth},
+         familyi={N\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Lindsten},
+         familyi={L\bibinitperiod},
+         given={Fredrik},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Schon},
+         familyi={S\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NC+1}
+    \strng{fullhash}{NCLFST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{booktitle}{International {{Conference}} on {{Machine Learning}}}
+    \field{pages}{1292\bibrangedash 1301}
+    \field{title}{Nested Sequential Monte Carlo Methods}
+    \verb{file}
+    \verb /Users/janwillem/Zotero/storage/8FMENE2H/Naesseth - 2015 - Nested seq
+    \verb uential monte carlo methods.pdf;/Users/janwillem/Zotero/storage/DX3UC
+    \verb GPF/Naesseth et al. - 2015 - Nested sequential monte carlo methods.pd
+    \verb f
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{naesseth2017variational}{article}{}
+    \name{author}{4}{}{%
+      {{hash=NCA}{%
+         family={Naesseth},
+         familyi={N\bibinitperiod},
+         given={Christian\bibnamedelima A},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=LSW}{%
+         family={Linderman},
+         familyi={L\bibinitperiod},
+         given={Scott\bibnamedelima W},
+         giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Ranganath},
+         familyi={R\bibinitperiod},
+         given={Rajesh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BDM}{%
+         family={Blei},
+         familyi={B\bibinitperiod},
+         given={David\bibnamedelima M},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NCA+1}
+    \strng{fullhash}{NCALSWRRBDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{title}{Variational sequential monte carlo}
+    \field{journaltitle}{arXiv preprint arXiv:1705.11140}
+    \field{year}{2017}
+  \endentry
+
+  \entry{naesseth_elements_2019}{article}{}
+    \name{author}{3}{}{%
+      {{hash=NCA}{%
+         family={Naesseth},
+         familyi={N\bibinitperiod},
+         given={Christian\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Lindsten},
+         familyi={L\bibinitperiod},
+         given={Fredrik},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=STB}{%
+         family={Schön},
+         familyi={S\bibinitperiod},
+         given={Thomas\bibnamedelima B.},
+         giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Machine Learning, Statistics - Computation,
+  Statistics - Machine Learning}
+    \strng{namehash}{NCA+2}
+    \strng{fullhash}{NCALFSTB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    A core problem in statistics and probabilistic machine learning is to
+  compute probability distributions and expectations. This is the fundamental
+  problem of Bayesian statistics and machine learning, which frames all
+  inference as expectations with respect to the posterior distribution. The key
+  challenge is to approximate these intractable expectations. In this tutorial,
+  we review sequential Monte Carlo (SMC), a random-sampling-based class of
+  methods for approximate inference. First, we explain the basics of SMC,
+  discuss practical issues, and review theoretical results. We then examine two
+  of the main user design choices: the proposal distributions and the so called
+  intermediate target distributions. We review recent results on how
+  variational inference and amortization can be used to learn efficient
+  proposals and target distributions. Next, we discuss the SMC estimate of the
+  normalizing constant, how this can be used for pseudo-marginal inference and
+  inference evaluation. Throughout the tutorial we illustrate the use of SMC on
+  various models commonly used in machine learning, such as stochastic
+  recurrent neural networks, probabilistic graphical models, and probabilistic
+  programs.%
+    }
+    \field{note}{arXiv: 1903.04797}
+    \field{title}{Elements of {Sequential} {Monte} {Carlo}}
+    \verb{file}
+    \verb arXiv Fulltext PDF:/Users/heiko/.zotero/storage/USYQHN8N/Naesseth et
+    \verb al. - 2019 - Elements of Sequential Monte Carlo.pdf:application/pdf;a
+    \verb rXiv.org Snapshot:/Users/heiko/.zotero/storage/KHUZ6XJW/1903.html:tex
+    \verb t/html
+    \endverb
+    \field{journaltitle}{arXiv:1903.04797 [cs, stat]}
+    \field{month}{03}
+    \field{year}{2019}
+    \field{urlday}{16}
+    \field{urlmonth}{12}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{neal2001annealed}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NRM}{%
+         family={Neal},
+         familyi={N\bibinitperiod},
+         given={Radford\bibnamedelima M},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{NRM1}
+    \strng{fullhash}{NRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{number}{2}
+    \field{pages}{125\bibrangedash 139}
+    \field{title}{Annealed importance sampling}
+    \field{volume}{11}
+    \field{journaltitle}{Statistics and computing}
+    \field{year}{2001}
+  \endentry
+
+  \entry{rainforth2018tighter}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=RT}{%
+         family={Rainforth},
+         familyi={R\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kosiorek},
+         familyi={K\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LTA}{%
+         family={Le},
+         familyi={L\bibinitperiod},
+         given={Tuan\bibnamedelima Anh},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Maddison},
+         familyi={M\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Igl},
+         familyi={I\bibinitperiod},
+         given={Maximilian},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Wood},
+         familyi={W\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=TYW}{%
+         family={Teh},
+         familyi={T\bibinitperiod},
+         given={Yee\bibnamedelima Whye},
+         giveni={Y\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{RT+1}
+    \strng{fullhash}{RTKALTAMCIMWFTYW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    We provide theoretical and empirical evidence that using tighter evidence
+  lower bounds (ELBOs) can be detrimental to the process of learning an
+  inference network by reducing the signal-to-noise rat...%
+    }
+    \field{booktitle}{International {{Conference}} on {{Machine Learning}}}
+    \field{pages}{4277\bibrangedash 4285}
+    \field{title}{Tighter {{Variational Bounds}} Are {{Not Necessarily
+  Better}}}
+    \verb{file}
+    \verb /Users/janwillem/Zotero/storage/IJ49RVWK/Rainforth et al. - 2018 - Ti
+    \verb ghter Variational Bounds are Not Necessarily Bet.pdf
+    \endverb
+    \field{month}{07}
+    \field{year}{2018}
+  \endentry
+
+  \entry{ranganath2014black}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=RR}{%
+         family={Ranganath},
+         familyi={R\bibinitperiod},
+         given={Rajesh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gerrish},
+         familyi={G\bibinitperiod},
+         given={Sean},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Blei},
+         familyi={B\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{RR+1}
+    \strng{fullhash}{RRGSBD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Variational inference has become a widely used method to approximate
+  posteriors in complex latent variables models. However, deriving a
+  variational inference algorithm generally requires significa...%
+    }
+    \field{booktitle}{Artificial {{Intelligence}} and {{Statistics}}}
+    \field{pages}{814\bibrangedash 822}
+    \field{title}{Black {{Box Variational Inference}}}
+    \verb{file}
+    \verb /Users/janwillem/Cloud/Zotero/storage/BUUC2E7M/Ranganath - 2014 - Bla
+    \verb ck Box Variational Inference.pdf
+    \endverb
+    \field{month}{04}
+    \field{year}{2014}
+  \endentry
+
+  \entry{rezende2015variational}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=RD}{%
+         family={Rezende},
+         familyi={R\bibinitperiod},
+         given={Danilo},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mohamed},
+         familyi={M\bibinitperiod},
+         given={Shakir},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RDMS1}
+    \strng{fullhash}{RDMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{International Conference on Machine Learning}
+    \field{pages}{1530\bibrangedash 1538}
+    \field{title}{Variational Inference with Normalizing Flows}
+    \field{year}{2015}
+  \endentry
+
+  \entry{rezende2014stochastic}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=RDJ}{%
+         family={Rezende},
+         familyi={R\bibinitperiod},
+         given={Danilo\bibnamedelima Jimenez},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mohamed},
+         familyi={M\bibinitperiod},
+         given={Shakir},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wierstra},
+         familyi={W\bibinitperiod},
+         given={Daan},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=XEP}{%
+         family={Xing},
+         familyi={X\bibinitperiod},
+         given={Eric\bibnamedelima P.},
+         giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=JT}{%
+         family={Jebara},
+         familyi={J\bibinitperiod},
+         given={Tony},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{PMLR}}%
+    }
+    \strng{namehash}{RDJ+1}
+    \strng{fullhash}{RDJMSWD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    We marry ideas from deep neural networks and approximate Bayesian inference
+  to derive a generalised class of deep, directed generative models, endowed
+  with a new algorithm for scalable inference and learning. Our algorithm
+  introduces a recognition model to represent an approximate posterior
+  distribution and uses this for optimisation of a variational lower bound. We
+  develop stochastic backpropagation \textendash{} rules for gradient
+  backpropagation through stochastic variables \textendash{} and derive an
+  algorithm that allows for joint optimisation of the parameters of both the
+  generative and recognition models. We demonstrate on several real-world data
+  sets that by using stochastic backpropagation and variational inference, we
+  obtain models that are able to generate realistic samples of data, allow for
+  accurate imputations of missing data, and provide a useful tool for
+  high-dimensional data visualisation.%
+    }
+    \field{booktitle}{Proceedings of the 31st {{International Conference}} on
+  {{Machine Learning}}}
+    \field{number}{2}
+    \field{pages}{1278\bibrangedash 1286}
+    \field{series}{Proceedings of {{Machine Learning Research}}}
+    \field{title}{Stochastic {{Backpropagation}} and {{Approximate Inference}}
+  in {{Deep Generative Models}}}
+    \field{volume}{32}
+    \list{location}{1}{%
+      {{Bejing, China}}%
+    }
+    \verb{file}
+    \verb /Users/janwillem/Zotero/storage/FDD9NQIT/Rezende - 2014 - Stochastic
+    \verb Backpropagation and Approximate Inference in Deep Generative Models.p
+    \verb df
+    \endverb
+    \field{month}{06}
+    \field{year}{2014}
+  \endentry
+
+  \entry{ritchie2016deep}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RD}{%
+         family={Ritchie},
+         familyi={R\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HP}{%
+         family={Horsfall},
+         familyi={H\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GND}{%
+         family={Goodman},
+         familyi={G\bibinitperiod},
+         given={Noah\bibnamedelima D.},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{⛔ No DOI found,Computer Science - Artificial Intelligence,Computer
+  Science - Machine Learning,Statistics - Machine Learning}
+    \strng{namehash}{RD+1}
+    \strng{fullhash}{RDHPGND1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{extradate}{1}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Probabilistic programming languages (PPLs) are a powerful modeling tool,
+  able to represent any computable probability distribution. Unfortunately,
+  probabilistic program inference is often intractable, and existing PPLs
+  mostly rely on expensive, approximate sampling-based methods. To alleviate
+  this problem, one could try to learn from past inferences, so that future
+  inferences run faster. This strategy is known as amortized inference; it has
+  recently been applied to Bayesian networks [28, 22] and deep generative
+  models [20, 15, 24]. This paper proposes a system for amortized inference in
+  PPLs. In our system, amortization comes in the form of a parameterized guide
+  program. Guide programs have similar structure to the original program, but
+  can have richer data flow, including neural network components. These
+  networks can be optimized so that the guide approximately samples from the
+  posterior distribution defined by the original program. We present a flexible
+  interface for defining guide programs and a stochastic gradient-based scheme
+  for optimizing guide parameters, as well as some preliminary results on
+  automatically deriving guide programs. We explore in detail the common
+  machine learning pattern in which a `local' model is specified by `global'
+  random values and used to generate independent observed data points; this
+  gives rise to amortized local inference supporting global model learning.%
+    }
+    \verb{eprint}
+    \verb 1610.05735
+    \endverb
+    \field{title}{Deep {{Amortized Inference}} for {{Probabilistic Programs}}}
+    \verb{file}
+    \verb /Users/janwillem/Cloud/Zotero/storage/IJZ83M8V/Ritchie et al. - 2016
+    \verb - Deep Amortized Inference for Probabilistic Program.pdf
+    \endverb
+    \field{journaltitle}{arXiv:1610.05735 [cs, stat]}
+    \field{annotation}{%
+    ZSCC: 0000060%
+    }
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs, stat}
+    \field{month}{10}
+    \field{year}{2016}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{ritchie2016neurally}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RD}{%
+         family={Ritchie},
+         familyi={R\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Thomas},
+         familyi={T\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HP}{%
+         family={Hanrahan},
+         familyi={H\bibinitperiod},
+         given={Pat},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GND}{%
+         family={Goodman},
+         familyi={G\bibinitperiod},
+         given={Noah\bibnamedelima D},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RD+1}
+    \strng{fullhash}{RDTAHPGND1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{extradate}{2}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Neurally-guided procedural models: learning to guide
+  procedural models with deep neural networks}
+    \field{journaltitle}{arXiv preprint arXiv: 1603.06143}
+    \field{year}{2016}
+  \endentry
+
+  \entry{roeder2017sticking}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=RG}{%
+         family={Roeder},
+         familyi={R\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Yuhuai},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=DDK}{%
+         family={Duvenaud},
+         familyi={D\bibinitperiod},
+         given={David\bibnamedelima K},
+         giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \name{editor}{7}{}{%
+      {{hash=GI}{%
+         family={Guyon},
+         familyi={G\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=LUV}{%
+         family={Luxburg},
+         familyi={L\bibinitperiod},
+         given={U.\bibnamedelima V.},
+         giveni={U\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={Wallach},
+         familyi={W\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=FR}{%
+         family={Fergus},
+         familyi={F\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Vishwanathan},
+         familyi={V\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Garnett},
+         familyi={G\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Curran Associates, Inc.}%
+    }
+    \strng{namehash}{RG+1}
+    \strng{fullhash}{RGWYDDK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{Advances in Neural Information Processing Systems}
+    \field{title}{Sticking the Landing: Simple, Lower-Variance Gradient
+  Estimators for Variational Inference}
+    \verb{url}
+    \verb https://proceedings.neurips.cc/paper/2017/file/e91068fff3d7fa1594dfdf
+    \verb 3b4308433a-Paper.pdf
+    \endverb
+    \field{volume}{30}
+    \field{year}{2017}
+  \endentry
+
+  \entry{salimans2015markov}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=ST}{%
+         family={Salimans},
+         familyi={S\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kingma},
+         familyi={K\bibinitperiod},
+         given={Diederik},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Welling},
+         familyi={W\bibinitperiod},
+         given={Max},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ST+1}
+    \strng{fullhash}{STKDWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{International Conference on Machine Learning}
+    \field{pages}{1218\bibrangedash 1226}
+    \field{title}{Markov chain monte carlo and variational inference: Bridging
+  the gap}
+    \field{year}{2015}
+  \endentry
+
+  \entry{schulman2015gradient}{incollection}{}
+    \name{author}{4}{}{%
+      {{hash=SJ}{%
+         family={Schulman},
+         familyi={S\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HN}{%
+         family={Heess},
+         familyi={H\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Weber},
+         familyi={W\bibinitperiod},
+         given={Theophane},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=AP}{%
+         family={Abbeel},
+         familyi={A\bibinitperiod},
+         given={Pieter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=CC}{%
+         family={Cortes},
+         familyi={C\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LND}{%
+         family={Lawrence},
+         familyi={L\bibinitperiod},
+         given={N.\bibnamedelima D.},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=LDD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={D.\bibnamedelima D.},
+         giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sugiyama},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Garnett},
+         familyi={G\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Curran Associates, Inc.}}%
+    }
+    \strng{namehash}{SJ+1}
+    \strng{fullhash}{SJHNWTAP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Advances in {{Neural Information Processing Systems}} 28}
+    \field{pages}{3528\bibrangedash 3536}
+    \field{title}{Gradient {{Estimation Using Stochastic Computation Graphs}}}
+    \verb{file}
+    \verb /Users/janwillem/Zotero/storage/TASVE66Z/Schulman - 2015 - Gradient E
+    \verb stimation Using Stochastic Computation Graphs.pdf
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{stites2021learning}{article}{}
+    \name{author}{5}{}{%
+      {{hash=SS}{%
+         family={Stites},
+         familyi={S\bibinitperiod},
+         given={Sam},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZH}{%
+         family={Zimmermann},
+         familyi={Z\bibinitperiod},
+         given={Heiko},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Sennesh},
+         familyi={S\bibinitperiod},
+         given={Eli},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=vJW}{%
+         family={{van de Meent}},
+         familyi={v\bibinitperiod},
+         given={Jan-Willem},
+         giveni={J\bibinithyphendelim W\bibinitperiod},
+      }}%
+    }
+    \keyw{⛔ No DOI found,Computer Science - Machine Learning,Computer Science
+  - Programming Languages,Statistics - Machine Learning}
+    \strng{namehash}{SS+1}
+    \strng{fullhash}{SSZHWHSEvJW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    We develop operators for construction of proposals in probabilistic
+  programs, which we refer to as inference combinators. Inference combinators
+  define a grammar over importance samplers that compose primitive operations
+  such as application of a transition kernel and importance resampling.
+  Proposals in these samplers can be parameterized using neural networks, which
+  in turn can be trained by optimizing variational objectives. The result is a
+  framework for user-programmable variational methods that are correct by
+  construction and can be tailored to specific models. We demonstrate the
+  flexibility of this framework by implementing advanced variational methods
+  based on amortized Gibbs sampling and annealing.%
+    }
+    \verb{eprint}
+    \verb 2103.00668
+    \endverb
+    \field{title}{Learning {{Proposals}} for {{Probabilistic Programs}} with
+  {{Inference Combinators}}}
+    \verb{file}
+    \verb /Users/janwillem/Cloud/Zotero/storage/C5LFWM4E/Stites et al. - 2021 -
+    \verb  Learning Proposals for Probabilistic Programs with.pdf;/Users/janwil
+    \verb lem/Cloud/Zotero/storage/P82MWLF3/2103.html
+    \endverb
+    \field{journaltitle}{Proceedings of the 37th Conference on Uncertainty in
+  Artificial Intelligence (UAI 2021)}
+    \field{eprinttype}{arxiv}
+    \field{eprintclass}{cs, stat}
+    \field{month}{03}
+    \field{year}{2021}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{tucker2018doubly}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TG}{%
+         family={Tucker},
+         familyi={T\bibinitperiod},
+         given={George},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Lawson},
+         familyi={L\bibinitperiod},
+         given={Dieterich},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gu},
+         familyi={G\bibinitperiod},
+         given={Shixiang},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MCJ}{%
+         family={Maddison},
+         familyi={M\bibinitperiod},
+         given={Chris\bibnamedelima J},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TG+1}
+    \strng{fullhash}{TGLDGSMCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Doubly reparameterized gradient estimators for monte carlo
+  objectives}
+    \field{journaltitle}{arXiv preprint arXiv:1810.04152}
+    \field{year}{2018}
+  \endentry
+
+  \entry{wang2018meta}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=WT}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Tongzhou},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Yi},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Moore},
+         familyi={M\bibinitperiod},
+         given={Dave},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=RSJ}{%
+         family={Russell},
+         familyi={R\bibinitperiod},
+         given={Stuart\bibnamedelima J},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WT+1}
+    \strng{fullhash}{WTWYMDRSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{Advances in Neural Information Processing Systems}
+    \field{pages}{4146\bibrangedash 4156}
+    \field{title}{Meta-learning MCMC proposals}
+    \field{year}{2018}
+  \endentry
+
+  \entry{wingate2013automated}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WD}{%
+         family={Wingate},
+         familyi={W\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Weber},
+         familyi={W\bibinitperiod},
+         given={Theo},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WDWT1}
+    \strng{fullhash}{WDWT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    We present a new algorithm for approximate inference in probabilistic
+  programs, based on a stochastic gradient for variational programs. This
+  method is efficient without restrictions on the probabilistic program; it is
+  particularly practical for distributions which are not analytically
+  tractable, including highly structured distributions that arise in
+  probabilistic programs. We show how to automatically derive mean-field
+  probabilistic programs and optimize them, and demonstrate that our
+  perspective improves inference efficiency over other algorithms.%
+    }
+    \verb{eprint}
+    \verb 1301.1299
+    \endverb
+    \field{pages}{1\bibrangedash 7}
+    \field{title}{Automated Variational Inference in Probabilistic Programming}
+    \verb{file}
+    \verb /Users/janwillem/Cloud/Zotero/storage/MUH7K49J/Wingate - 2013 - Autom
+    \verb ated variational inference in probabilistic programming.pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1301.1299}
+    \field{eprinttype}{arxiv}
+    \field{year}{2013}
+    \warn{\item Can't use 'eprinttype' + 'archiveprefix'}
+  \endentry
+
+  \entry{wu2019amortized}{article}{}
+    \name{author}{5}{}{%
+      {{hash=WH}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZH}{%
+         family={Zimmermann},
+         familyi={Z\bibinitperiod},
+         given={Heiko},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Sennesh},
+         familyi={S\bibinitperiod},
+         given={Eli},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=LTA}{%
+         family={Le},
+         familyi={L\bibinitperiod},
+         given={Tuan\bibnamedelima Anh},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=vdMJW}{%
+         prefix={van\bibnamedelima de},
+         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Meent},
+         familyi={M\bibinitperiod},
+         given={Jan-Willem},
+         giveni={J\bibinithyphendelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WH+1}
+    \strng{fullhash}{WHZHSELTAMJWvd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{Amortized Population Gibbs Samplers with Neural Sufficient
+  Statistics}
+    \field{journaltitle}{arXiv preprint arXiv:1911.01382}
+    \field{year}{2019}
+  \endentry
+\enddatalist
+\endinput

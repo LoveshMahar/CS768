@@ -1,0 +1,11 @@
+This paper introduces the deep coordination graph (DCG) for collaborative
+multi-agent reinforcement learning. DCG strikes a flexible trade-off between
+representational capacity and generalization by factoring the joint value
+function of all agents according to a coordination graph into payoffs between
+pairs of agents. The value can be maximized by local message passing along the
+graph, which allows training of the value function end-to-end with Q-learning.
+Payoff functions are approximated with deep neural networks that employ
+parameter sharing and low-rank approximations to significantly improve sample
+efficiency. We show that DCG can solve predator-prey tasks that highlight the
+relative overgeneralization pathology, as well as challenging StarCraft II
+micromanagement tasks.

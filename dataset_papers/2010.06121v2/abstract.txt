@@ -1,0 +1,13 @@
+Adversarial training algorithms have been proved to be reliable to improve
+machine learning models' robustness against adversarial examples. However, we
+find that adversarial training algorithms tend to introduce severe disparity of
+accuracy and robustness between different groups of data. For instance, a PGD
+adversarially trained ResNet18 model on CIFAR-10 has 93% clean accuracy and 67%
+PGD l-infty-8 robust accuracy on the class "automobile" but only 65% and 17% on
+the class "cat". This phenomenon happens in balanced datasets and does not
+exist in naturally trained models when only using clean samples. In this work,
+we empirically and theoretically show that this phenomenon can happen under
+general adversarial training algorithms which minimize DNN models' robust
+errors. Motivated by these findings, we propose a Fair-Robust-Learning (FRL)
+framework to mitigate this unfairness problem when doing adversarial defenses.
+Experimental results validate the effectiveness of FRL.

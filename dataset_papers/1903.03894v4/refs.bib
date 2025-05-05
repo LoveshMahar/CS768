@@ -1,0 +1,1340 @@
+%%% ====================================================================
+%%%  BibTeX-file{
+%%%     author          = "Gerry Murray",
+%%%     version         = "1.2",
+%%%     date            = "2 April 2012",
+%%%     filename        = "acmsmall-sample-bibfile.bib",
+%%%     address         = "ACM, NY",
+%%%     email           = "murray at hq.acm.org",
+%%%     codetable       = "ISO/ASCII",
+%%%     keywords        = "ACM Reference Format, bibliography, citation, references",
+%%%     supported       = "yes",
+%%%     docstring       = "This BibTeX database file contains 'bibdata' entries
+%%%                        that 'match' the examples provided in the Specifications Document
+%%%                        AND, also, 'legacy'-type bibs. It should assist authors in
+%%%                        choosing the 'correct' at-bibtype and necessary bib-fields
+%%%                        so as to obtain the appropriate ACM Reference Format output.
+%%%                        It also contains many 'Standard Abbreviations'. "
+%%%  }
+%%% ====================================================================
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+%% Interpretability 
+
+
+@article{miller_explanation_nodate,
+  title={Explanation in artificial intelligence: Insights from the social sciences},
+  author={T. Miller},
+  journal={Artif. Intell.},
+  year={2019},
+  volume={267},
+  pages={1-38}
+}
+@article{alvarez-melis_robustness_2018,
+	title = {On the {Robustness} of {Interpretability} {Methods}},
+	url = {http://arxiv.org/abs/1806.08049},
+	abstract = {We argue that robustness of explanations---i.e., that similar inputs should give rise to similar explanations---is a key desideratum for interpretability. We introduce metrics to quantify robustness and demonstrate that current methods do not perform well according to these metrics. Finally, we propose ways that robustness can be enforced on existing interpretability approaches.},
+	language = {en},
+	urldate = {2019-01-15},
+	journal = {arXiv:1806.08049 [cs, stat]},
+	author = {Alvarez-Melis, D. and Jaakkola, T.},
+	month = jun,
+	year = {2018},
+	note = {arXiv: 1806.08049},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	annote = {Comment: presented at 2018 ICML Workshop on Human Interpretability in Machine Learning (WHI 2018), Stockholm, Sweden},
+}
+
+@article{doshi-velez_towards_2017,
+	title = {Towards {A} {Rigorous} {Science} of {Interpretable} {Machine} {Learning}},
+	abstract = {As machine learning systems become ubiquitous, there has been a surge of interest in interpretable machine learning: systems that provide explanation for their outputs. These explanations are often used to qualitatively assess other criteria such as safety or non-discrimination. However, despite the interest in interpretability, there is very little consensus on what interpretable machine learning is and how it should be measured. In this position paper, we first define interpretability and describe when interpretability is needed (and when it is not). Next, we suggest a taxonomy for rigorous evaluation and expose open questions towards a more rigorous science of interpretable machine learning.},
+	language = {en},
+	author = {Doshi-Velez, F. and Kim, B.},
+	year = {2017},
+	note = {arXiv: 1702.08608},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
+}
+
+@inproceedings{lipton_mythos_2016,
+	title = {The {Mythos} of {Model} {Interpretability}},
+	abstract = {Supervised machine learning models boast remarkable predictive capabilities. But can you trust your model? Will it work in deployment? What else can it tell you about the world? We want models to be not only good, but interpretable. And yet the task of interpretation appears underspeciﬁed. Papers provide diverse and sometimes non-overlapping motivations for interpretability, and offer myriad notions of what attributes render models interpretable. Despite this ambiguity, many papers proclaim interpretability axiomatically, absent further explanation. In this paper, we seek to reﬁne the discourse on interpretability. First, we examine the motivations underlying interest in interpretability, ﬁnding them to be diverse and occasionally discordant. Then, we address model properties and techniques thought to confer interpretability, identifying transparency to humans and post-hoc explanations as competing notions. Throughout, we discuss the feasibility and desirability of different notions, and question the oft-made assertions that linear models are interpretable and that deep neural networks are not.},
+	language = {en},
+	booktitle = {ICML - WHI},
+	author = {Lipton, Zachary C.},
+	year = {2016},
+}
+
+@inproceedings{kim_examples_nodate,
+  title={Examples are not enough, learn to criticize! criticism for interpretability},
+  author={Kim, B. and Khanna, R. and Koyejo, O.},
+  booktitle={NIPS},
+  year={2016}
+}
+
+@inproceedings{ribeiro_why_2016,
+  title={Why should i trust you?: Explaining the predictions of any classifier},
+  author={Ribeiro, M. and Singh, S. and Guestrin, C.},
+  booktitle={KDD},
+  year={2016},
+}
+
+
+@article{apley_visualizing_nodate,
+	title = {Visualizing the {Effects} of {Predictor} {Variables} in {Black} {Box} {Supervised} {Learning} {Models}},
+	abstract = {When fitting black box supervised learning models (e.g., complex trees, neural networks, boosted trees, random forests, nearest neighbors, local kernel-weighted methods, etc.), visualizing the main effects of the individual predictor variables and their low-order interaction effects is often important, and partial dependence (PD) plots are the most popular approach for accomplishing this. However, PD plots involve a serious pitfall if the predictor variables are far from independent, which is quite common with large observational data sets. Namely, PD plots require extrapolation of the response at predictor values that are far outside the multivariate envelope of the training data, which can render the PD plots unreliable. Although marginal plots (M plots) do not require such extrapolation, they produce substantially biased and misleading results when the predictors are dependent, analogous to the omitted variable bias in regression. We present a new visualization approach that we term accumulated local effects (ALE) plots, which inherits the desirable characteristics of PD and M plots, without inheriting their preceding shortcomings. Like M plots, ALE plots do not require extrapolation; and like PD plots, they are not biased by the omitted variable phenomenon. Moreover, ALE plots are far less computationally expensive than PD plots.},
+	language = {en},
+	author = {Apley, Daniel W},
+	pages = {36},
+}
+
+@article{goldstein_peeking_2013,
+	title = {Peeking {Inside} the {Black} {Box}: {Visualizing} {Statistical} {Learning} with {Plots} of {Individual} {Conditional} {Expectation}},
+	shorttitle = {Peeking {Inside} the {Black} {Box}},
+	url = {http://arxiv.org/abs/1309.6392},
+	abstract = {This article presents Individual Conditional Expectation (ICE) plots, a tool for visualizing the model estimated by any supervised learning algorithm. Classical partial dependence plots (PDPs) help visualize the average partial relationship between the predicted response and one or more features. In the presence of substantial interaction eﬀects, the partial response relationship can be heterogeneous. Thus, an average curve, such as the PDP, can obfuscate the complexity of the modeled relationship. Accordingly, ICE plots reﬁne the partial dependence plot by graphing the functional relationship between the predicted response and the feature for individual observations. Speciﬁcally, ICE plots highlight the variation in the ﬁtted values across the range of a covariate, suggesting where and to what extent heterogeneities might exist. In addition to providing a plotting suite for exploratory analysis, we include a visual test for additive structure in the data generating model. Through simulated examples and real data sets, we demonstrate how ICE plots can shed light on estimated models in ways PDPs cannot. Procedures outlined are available in the R package ICEbox.},
+	language = {en},
+	urldate = {2019-01-15},
+	journal = {arXiv:1309.6392 [stat]},
+	author = {Goldstein, Alex and Kapelner, Adam and Bleich, Justin and Pitkin, Emil},
+	month = sep,
+	year = {2013},
+	note = {arXiv: 1309.6392},
+	keywords = {Statistics - Applications},
+	annote = {Comment: 22 pages, 14 figures, 2 algorithms},
+}
+
+
+@article{fisher_all_2018,
+	title = {All {Models} are {Wrong} but many are {Useful}: {Variable} {Importance} for {Black}-{Box}, {Proprietary}, or {Misspecified} {Prediction} {Models}, using {Model} {Class} {Reliance}},
+	shorttitle = {All {Models} are {Wrong} but many are {Useful}},
+	abstract = {Variable importance (VI) tools describe how much covariates contribute to a prediction model’s accuracy. However, important variables for one well-performing model (for example, a linear model f (x) = xT β with a ﬁxed coeﬃcient vector β) may be unimportant for another model. In this paper, we propose model class reliance (MCR) as the range of VI values across all well-performing model in a prespeciﬁed class. Thus, MCR gives a more comprehensive description of importance by accounting for the fact that many prediction models, possibly of diﬀerent parametric forms, may ﬁt the data well. In the process of deriving MCR, we show several informative results for permutation-based VI estimates, similar to the VI measures used in Random Forests. Speciﬁcally, we derive connections between permutation importance estimates for a single prediction model, U-statistics, conditional causal eﬀects, and linear model coeﬃcients. We then give probabilistic bounds for MCR, using a novel, generalizable technique. We apply MCR in a public dataset of Broward County criminal records to study the reliance of recidivism prediction models on sex and race. In this application, MCR can be used to help inform VI for unknown, proprietary models.},
+	language = {en},
+	author = {Fisher, A. and Rudin, C. and Dominici, F.},
+	month = jan,
+	year = {2018},
+	note = {arXiv: 1801.01489},
+}
+
+@article{greenwell_simple_2018,
+	title = {A {Simple} and {Effective} {Model}-{Based} {Variable} {Importance} {Measure}},
+	url = {http://arxiv.org/abs/1805.04755},
+	abstract = {In the era of “big data”, it is becoming more of a challenge to not only build state-of-the-art predictive models, but also gain an understanding of what’s really going on in the data. For example, it is often of interest to know which, if any, of the predictors in a ﬁtted model are relatively inﬂuential on the predicted outcome. Some modern algorithms—like random forests and gradient boosted decision trees—have a natural way of quantifying the importance or relative inﬂuence of each feature. Other algorithms—like naive Bayes classiﬁers and support vector machines—are not capable of doing so and model-free approaches are generally used to measure each predictor’s importance. In this paper, we propose a standardized, model-based approach to measuring predictor importance across the growing spectrum of supervised learning algorithms. Our proposed method is illustrated through both simulated and real data examples. The R code to reproduce all of the ﬁgures in this paper is available in the supplementary materials.},
+	language = {en},
+	urldate = {2019-01-15},
+	journal = {arXiv:1805.04755 [cs, stat]},
+	author = {Greenwell, Brandon M. and Boehmke, Bradley C. and McCarthy, Andrew J.},
+	month = may,
+	year = {2018},
+	note = {arXiv: 1805.04755},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+}
+
+@inproceedings{hooker_discovering_2004,
+	title = {Discovering additive structure in black box functions},
+	booktitle = {{KDD}},
+	author = {Hooker, G.},
+	year = {2004},
+}
+
+
+@InProceedings{koh_understanding_2017,
+  title = 	 {Understanding Black-box Predictions via Influence Functions},
+  author = 	 {P. W. Koh and P. Liang},
+  booktitle = 	 {ICML},
+  year = 	 {2017},
+}
+
+
+@InProceedings{You2019position,
+  title = 	 {Position-aware Graph Neural Networks},
+  author = 	 {J. You and Rex Ying and J. Leskovec},
+  booktitle = 	 {ICML},
+  year = 	 {2019},
+}
+
+
+@inproceedings{lundberg_unexpected_2016,
+	title = {An unexpected unity among methods for interpreting model predictions},
+	booktitle = {NIPS},
+	author = {Lundberg, S. and Lee, Su-In},
+	year = {2016},
+}
+
+
+@article{adadi_peeking_2018,
+	title = {Peeking {Inside} the {Black}-{Box}: {A} {Survey} on {Explainable} {Artificial} {Intelligence} ({XAI})},
+	volume = {6},
+	issn = {2169-3536},
+	shorttitle = {Peeking {Inside} the {Black}-{Box}},
+	abstract = {At the dawn of the fourth industrial revolution, we are witnessing a fast and widespread adoption of artificial intelligence (AI) in our daily life, which contributes to accelerating the shift towards a more algorithmic society. However, even with such unprecedented advancements, a key impediment to the use of AI-based systems is that they often lack transparency. Indeed, the black-box nature of these systems allows powerful predictions, but it cannot be directly explained. This issue has triggered a new debate on explainable AI (XAI). A research field holds substantial promise for improving trust and transparency of AI-based systems. It is recognized as the sine qua non for AI to continue making steady progress without disruption. This survey provides an entry point for interested researchers and practitioners to learn key aspects of the young and rapidly growing body of research related to XAI. Through the lens of the literature, we review the existing approaches regarding the topic, discuss trends surrounding its sphere, and present major research trajectories.},
+	journal = {IEEE Access},
+	author = {Adadi, A. and Berrada, M.},
+	year = {2018},
+	keywords = {AI-based systems, artificial intelligence, Biological system modeling, black-box models, black-box nature, Conferences, explainable AI, explainable artificial intelligence, Explainable artificial intelligence, fourth industrial revolution, interpretable machine learning, Machine learning, Machine learning algorithms, Market research, Prediction algorithms, XAI},
+	pages = {52138--52160},
+}
+
+
+
+@article{goodman_european_2017,
+	title = {European {Union} regulations on algorithmic decision-making and a "right to explanation"},
+	volume = {38},
+	issn = {0738-4602, 0738-4602},
+	url = {http://arxiv.org/abs/1606.08813},
+	doi = {10.1609/aimag.v38i3.2741},
+	abstract = {We summarize the potential impact that the European Union's new General Data Protection Regulation will have on the routine use of machine learning algorithms. Slated to take effect as law across the EU in 2018, it will restrict automated individual decision-making (that is, algorithms that make decisions based on user-level predictors) which "significantly affect" users. The law will also effectively create a "right to explanation," whereby a user can ask for an explanation of an algorithmic decision that was made about them. We argue that while this law will pose large challenges for industry, it highlights opportunities for computer scientists to take the lead in designing algorithms and evaluation frameworks which avoid discrimination and enable explanation.},
+	number = {3},
+	urldate = {2019-01-17},
+	journal = {AI Magazine},
+	author = {Goodman, Bryce and Flaxman, Seth},
+	month = oct,
+	year = {2017},
+	note = {arXiv: 1606.08813},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning, Computer Science - Computers and Society},
+	pages = {50},
+	annote = {Comment: presented at 2016 ICML Workshop on Human Interpretability in Machine Learning (WHI 2016), New York, NY},
+}
+
+@inproceedings{2018sanity,
+  title={Sanity checks for saliency maps},
+  author={Adebayo, J. and Gilmer, J. and Muelly, M. and Goodfellow, I. and Hardt, M. and Kim, B.},
+  booktitle={NeurIPS},
+  year={2018}
+}
+
+@incollection{fleet_visualizing_2014,
+	title = {Visualizing and {Understanding} {Convolutional} {Networks}},
+	booktitle = {ECCV},
+	author = {Zeiler, M. and Fergus, R.},
+	year = {2014},
+}
+
+@article{Erhan2009VisualizingHF,
+  title={Visualizing higher-layer features of a deep network},
+  author={Erhan, D. and Bengio, Y. and Courville, A. and Vincent, P.},
+  journal={University of Montreal},
+  volume={1341},
+  number={3},
+  pages={1},
+  year={2009}
+}
+
+@inproceedings{simonyan2013deep,
+  title={Deep inside convolutional networks: Visualising image classification models and saliency maps},
+  author={Simonyan, Karen and Vedaldi, Andrea and Zisserman, Andrew},
+  booktitle={ICLR},
+  year={2013}
+}
+
+@article{Kang2019explaine,
+  title={ExplaiNE: An Approach for Explaining Network Embedding-based Link Predictions},
+  author={Kang, Bo and Lijffijt, Jefrey and De Bie, Tijl},
+  journal={arXiv:1904.12694},
+  year={2019}
+}
+
+@article{Liben2007link,
+  title={The link-prediction problem for social networks},
+  author={Liben-Nowell, David and Kleinberg, Jon},
+  journal={Journal of the American Society for Information Science and Technology},
+  volume={58},
+  number={7},
+  pages={1019--1031},
+  year={2007},
+  publisher={Wiley Online Library}
+}
+
+@article{baehrens2010explain,
+  title={How to explain individual classification decisions},
+  author={Baehrens, David and Schroeter, Timon and Harmeling, Stefan and Kawanabe, Motoaki and Hansen, Katja and M{\~A}{\v{z}}ller, Klaus-Robert},
+  journal={Journal of Machine Learning Research},
+  volume={11},
+  number={Jun},
+  pages={1803--1831},
+  year={2010}
+}
+
+@inproceedings{shrikumar_learning_2017,
+	title = {Learning {Important} {Features} {Through} {Propagating} {Activation} {Differences}},
+	booktitle = {ICML},
+	author = {Shrikumar, A. and Greenside, P. and Kundaje, A.},
+	year = {2017},
+}
+
+
+@article{schmitz_ann-dt:_1999,
+	title = {{ANN}-{DT}: an algorithm for extraction of decision trees from artificial neural networks},
+	shorttitle = {{ANN}-{DT}},
+	journal = {IEEE Transactions on Neural Networks},
+	author = {Schmitz, G. J. and Aldrich, C. and Gouws, F. S.},
+	year = {1999},
+}
+
+@incollection{calders_deepred_2016,
+	title = {{DeepRED} - {Rule} {Extraction} from {Deep} {Neural} {Networks}},
+	booktitle = {Discovery {Science}},
+	publisher = {Springer International Publishing},
+	author = {Zilke, J. and Loza Mencia, E. and Janssen, F.},
+	year = {2016},
+}
+
+@article{weiss_extracting_2017,
+	title = {Extracting {Automata} from {Recurrent} {Neural} {Networks} {Using} {Queries} and {Counterexamples}},
+	url = {http://arxiv.org/abs/1711.09576},
+	abstract = {We present a novel algorithm that uses exact learning and abstraction to extract a deterministic finite automaton describing the state dynamics of a given trained RNN. We do this using Angluin's L* algorithm as a learner and the trained RNN as an oracle. Our technique efficiently extracts accurate automata from trained RNNs, even when the state vectors are large and require fine differentiation.},
+	urldate = {2019-01-17},
+	journal = {arXiv:1711.09576 [cs]},
+	author = {Weiss, Gail and Goldberg, Yoav and Yahav, Eran},
+	month = nov,
+	year = {2017},
+	note = {arXiv: 1711.09576},
+	keywords = {Computer Science - Formal Languages and Automata Theory, Computer Science - Machine Learning},
+	annote = {Comment: Accepted in ICML 2018},
+}
+
+@article{kim_interpretability_nodate,
+	title = {Interpretability {Beyond} {Feature} {Attribution}:  {Quantitative} {Testing} with {Concept} {Activation} {Vectors} ({TCAV})},
+	abstract = {The interpretation of deep learning models is a challenge due to their size, complexity, and often opaque internal state. In addition, many systems, such as image classiﬁers, operate on low-level features rather than high-level concepts. To address these challenges, we introduce Concept Activation Vectors (CAVs), which provide an interpretation of a neural net’s internal state in terms of human-friendly concepts. The key idea is to view the high-dimensional internal state of a neural net as an aid, not an obstacle. We show how to use CAVs as part of a technique, Testing with CAVs (TCAV), that uses directional derivatives to quantify the degree to which a user-deﬁned concept is important to a classiﬁcation result–for example, how sensitive a prediction of zebra is to the presence of stripes. Using the domain of image classiﬁcation as a testing ground, we describe how CAVs may be used to explore hypotheses and generate insights for a standard image classiﬁcation network as well as a medical application.},
+	language = {en},
+	author = {Kim, Been and Wattenberg, Martin and Gilmer, Justin and Cai, Carrie and Wexler, James and Viegas, Fernanda and Sayres, Rory},
+	pages = {10},
+}
+
+@article{samek_explainable_nodate,
+	title = {{Explainable} {Artificial} {Intelligence}: {understanding}, {visualizing} {and} {interpreting} {deep} {learning} {models}},
+	abstract = {With the availability of large databases and recent improvements in deep learning methodology, the performance of AI systems is reaching or even exceeding the human level on an increasing number of complex tasks. Impressive examples of this development can be found in domains such as image classiﬁcation, sentiment analysis, speech understanding or strategic game playing. However, because of their nested non-linear structure, these highly successful machine learning and artiﬁcial intelligence models are usually applied in a black box manner, i.e., no information is provided about what exactly makes them arrive at their predictions. Since this lack of transparency can be a major drawback, e.g., in medical applications, the development of methods for visualizing, explaining and interpreting deep learning models has recently attracted increasing attention. This paper summarizes recent developments in this ﬁeld and makes a plea for more interpretability in artiﬁcial intelligence. Furthermore, it presents two approaches to explaining predictions of deep learning models, one method which computes the sensitivity of the prediction with respect to changes in the input and one approach which meaningfully decomposes the decision in terms of the input variables. These methods are evaluated on three classiﬁcation tasks.},
+	language = {en},
+	author = {Samek, Wojciech and Wiegand, Thomas and Muller, Klaus-Robert},
+	pages = {8},
+}
+
+@misc{lou_accurate_2013,
+	title = {Accurate intelligible models with pairwise interactions},
+	abstract = {Standard generalized additive models (GAMs) usually model the dependent variable as a sum of univariate models. Although previous studies have shown that standard GAMs can be interpreted by users, their accuracy is significantly less than more complex models that permit interactions.
+ In this paper, we suggest adding selected terms of interacting pairs of features to standard GAMs. The resulting models, which we call GA2\{M\}\$-models, for Generalized Additive Models plus Interactions, consist of univariate terms and a small number of pairwise interaction terms. Since these models only include one- and two-dimensional components, the components of GA2M-models can be visualized and interpreted by users. To explore the huge (quadratic) number of pairs of features, we develop a novel, computationally efficient method called FAST for ranking all possible pairs of features as candidates for inclusion into the model.
+ In a large-scale empirical study, we show the effectiveness of FAST in ranking candidate pairs of features. In addition, we show the surprising result that GA2M-models have almost the same performance as the best full-complexity models on a number of real datasets. Thus this paper postulates that for many problems, GA2M-models can yield models that are both intelligible and accurate.},
+	language = {en},
+	urldate = {2019-01-15},
+	journal = {undefined},
+	author = {Lou, Yinjun and Caruana, Rich and Gehrke, Johannes and Hooker, Giles},
+	year = {2013},
+}
+
+@misc{lakkaraju_interpretable_2017,
+	title = {Interpretable \& {Explorable} {Approximations} of {Black} {Box} {Models}},
+	booktitle = {KDD (FAT ML Workshop)},
+	author = {Lakkaraju, H. and Kamar, E. and Caruana, R. and Leskovec, J.},
+	year = {2017},
+	
+}
+
+@article{schulz_compositional_2017,
+  title={Compositional inductive biases in function learning},
+	author = {Schulz, E. and Tenenbaum, J. and Duvenaud, D. and Speekenbrink, M. and Gershman, S.},
+  journal={Cognitive psychology},
+  volume={99},
+  year={2017},
+}
+
+@misc{lakkaraju_interpretable_2016,
+	title = {Interpretable {Decision} {Sets}: {A} {Joint} {Framework} for {Description} and {Prediction}},
+	shorttitle = {Interpretable {Decision} {Sets}},
+	abstract = {One of the most important obstacles to deploying predictive models is the fact that humans do not understand and trust them. Knowing which variables are important in a model\&\#39;s prediction and how they are combined can be very powerful in helping people understand and trust automatic decision making systems.
+ Here we propose interpretable decision sets, a framework for building predictive models that are highly accurate, yet also highly interpretable. Decision sets are sets of independent if-then rules. Because each rule can be applied independently, decision sets are simple, concise, and easily interpretable. We formalize decision set learning through an objective function that simultaneously optimizes accuracy and interpretability of the rules. In particular, our approach learns short, accurate, and non-overlapping rules that cover the whole feature space and pay attention to small but important classes. Moreover, we prove that our objective is a non-monotone submodular function, which we efficiently optimize to find a near-optimal set of rules.
+ Experiments show that interpretable decision sets are as accurate at classification as state-of-the-art machine learning techniques. They are also three times smaller on average than rule-based models learned by other methods. Finally, results of a user study show that people are able to answer multiple-choice questions about the decision boundaries of interpretable decision sets and write descriptions of classes based on them faster and more accurately than with other rule-based models that were designed for interpretability. Overall, our framework provides a new approach to interpretable machine learning that balances accuracy, interpretability, and computational efficiency.},
+	language = {en},
+	urldate = {2019-01-15},
+	journal = {undefined},
+	author = {Lakkaraju, Himabindu and Bach, Stephen H. and Leskovec, Jure},
+	year = {2016},
+}
+
+@misc{lombrozo_structure_2006,
+	title = {The structure and function of explanations.},
+	abstract = {Generating and evaluating explanations is spontaneous, ubiquitous and fundamental to our sense of understanding. Recent evidence suggests that in the course of an individual\&\#39;s reasoning, engaging in explanation can have profound effects on the probability assigned to causal claims, on how properties are generalized and on learning. These effects follow from two properties of the structure of explanations: explanations accommodate novel information in the context of prior beliefs, and do so in a way that fosters generalization. The study of explanation thus promises to shed light on core cognitive issues, such as learning, induction and conceptual representation. Moreover, the influence of explanation on learning and inference presents a challenge to theories that neglect the roles of prior knowledge and explanation-based reasoning.},
+	language = {en},
+	urldate = {2019-01-15},
+	journal = {undefined},
+	author = {Lombrozo, Tania},
+	year = {2006},
+}
+
+@misc{anirudh_influential_2017,
+	title = {Influential {Sample} {Selection}: {A} {Graph} {Signal} {Processing} {Approach}},
+	shorttitle = {Influential {Sample} {Selection}},
+	abstract = {With the growing complexity of machine learning techniques, understanding the functioning of black-box models is more important than ever. A recently popular strategy towards interpretability is to generate explanations based on examples – called influential samples – that have the largest influence on the model’s observed behavior. However, for such an analysis, we are confronted with a plethora of influence metrics. While each of these metrics provide varying levels of representativeness and diversity, existing approaches implicitly couple the definition of influence to their sample selection algorithm, thereby making it challenging to generalize to specific analysis needs. In this paper, we propose a generic approach to influential sample selection, which analyzes the influence metric as a function on a graph constructed using the samples. We show that samples which are critical to recovering the high-frequency content of the function correspond to the most influential samples. Our approach decouples the influence metric from the actual sample selection technique, and hence can be used with any type of task-specific influence. Using experiments in prototype selection, and semi-supervised classification, we show that, even with popularly used influence metrics, our approach can produce superior results in comparison to state-of-theart approaches. Furthermore, we demonstrate how a novel influence metric can be used to recover the influence structure in characterizing the decision surface, and recovering corrupted labels efficiently.},
+	language = {en},
+	urldate = {2019-01-15},
+	journal = {undefined},
+	author = {Anirudh, Rushil and Thiagarajan, Jayaraman J. and Sridhar, Rahul and Bremer, Timo},
+	year = {2017},
+}
+
+@misc{adler_auditing_2016,
+	title = {Auditing {Black}-{Box} {Models} for {Indirect} {Influence}},
+	abstract = {Data-trained predictive models see widespread use, but for the most part they are used as black boxeswhich output a prediction or score. It is therefore hard to acquire a deeper understanding of model behavior and in particular how different features influence the model prediction. This is important when interpreting the behavior of complex models or asserting that certain problematic attributes (such as race or gender) are not unduly influencing decisions. In this paper, we present a technique for auditing black-box models, which lets us study the extent to which existing models take advantage of particular features in the data set, without knowing how the models work. Our work focuses on the problem of indirect influence: how some features might indirectly influence outcomes via other, related features. As a result, we can find attribute influences even in cases where, upon further direct examination of the model, the attribute is not referred to by the model at all.Our approach does not require the black-box model to be retrained. This is important if, for example, the model is only accessible via an API, and contrasts our work with other methods that investigate feature influence such as feature selection. We present experimental evidence for the effectiveness of our procedure using a variety of publicly available data sets and models. We also validate our procedure using techniques from interpretable learning and feature selection, as well as against other black-box auditing procedures. To further demonstrate the effectiveness of this technique, we use it to audit a black-box recidivism prediction algorithm. A preliminary version of this work with authors Philip Adler, Casey Falk, Sorelle A. Friedler, Gabriel Rybeck, Carlos Scheidegger, Brandon Smith, and Suresh Venkatasubramanian was titled Auditing Black-box Models for Indirect Influence and appeared in the Proceedings of the IEEE International Conference on Data Mining (ICDM) in 2016. This research was funded in part by the NSF under Grants IIS-1251049, CNS-1302688, IIS-1513651, DMR-1307801, IIS-1633724, and IIS-1633387. B Sorelle A. Friedler sorelle@cs.haverford.edu 1 Department of Computer Science, Haverford College, Haverford, PA 19041, USA 2 Department of Computer Science, University of Arizona, Tucson, AZ, USA 3 Department of Computer Science, University of Utah, Salt Lake City, UT, USA},
+	language = {en},
+	urldate = {2019-01-15},
+	journal = {undefined},
+	author = {Adler, Philip and Falk, Casey and Friedler, Sorelle A. and Rybeck, Gabriel and Scheidegger, Carlos Eduardo and Smith, Brandon and Venkatasubramanian, Suresh},
+	year = {2016},
+}
+
+@inproceedings{ross_right_2017,
+	address = {Melbourne, Australia},
+	title = {Right for the {Right} {Reasons}: {Training} {Differentiable} {Models} by {Constraining} their {Explanations}},
+	isbn = {978-0-9992411-0-3},
+	shorttitle = {Right for the {Right} {Reasons}},
+	url = {https://www.ijcai.org/proceedings/2017/371},
+	doi = {10.24963/ijcai.2017/371},
+	abstract = {Neural networks are among the most accurate supervised learning methods in use today. However, their opacity makes them difﬁcult to trust in critical applications, especially if conditions in training may differ from those in test. Recent work on explanations for black-box models has produced tools (e.g. LIME) to show the implicit rules behind predictions. These tools can help us identify when models are right for the wrong reasons. However, these methods do not scale to explaining entire datasets and cannot correct the problems they reveal. We introduce a method for efﬁciently explaining and regularizing differentiable models by examining and selectively penalizing their input gradients. We apply these penalties both based on expert annotation and in an unsupervised fashion that produces multiple classiﬁers with qualitatively different decision boundaries. On multiple datasets, we show our approach generates faithful explanations and models that generalize much better when conditions differ between training and test.},
+	language = {en},
+	urldate = {2019-01-15},
+	booktitle = {Proceedings of the {Twenty}-{Sixth} {International} {Joint} {Conference} on {Artificial} {Intelligence}},
+	publisher = {International Joint Conferences on Artificial Intelligence Organization},
+	author = {Ross, Andrew Slavin and Hughes, Michael C. and Doshi-Velez, Finale},
+	month = aug,
+	year = {2017},
+	pages = {2662--2670},
+}
+
+@article{guidotti_survey_2018,
+	title = {A {Survey} of {Methods} for {Explaining} {Black} {Box} {Models}},
+	volume = {51},
+	abstract = {In recent years, many accurate decision support systems have been constructed as black boxes, that is as systems that hide their internal logic to the user. This lack of explanation constitutes both a practical and an ethical issue. The literature reports many approaches aimed at overcoming this crucial weakness, sometimes at the cost of sacrificing accuracy for interpretability. The applications in which black box decision systems can be used are various, and each approach is typically developed to provide a solution for a specific problem and, as a consequence, it explicitly or implicitly delineates its own definition of interpretability and explanation. The aim of this article is to provide a classification of the main problems addressed in the literature with respect to the notion of explanation and the type of black box system. Given a problem definition, a black box type, and a desired explanation, this survey should help the researcher to find the proposals more useful for his own work. The proposed classification of approaches to open black box models should also be useful for putting the many research open questions in perspective.},
+	number = {5},
+	journal = {ACM Comput. Surv.},
+	author = {Guidotti, R. and others},
+	year = {2018},
+	keywords = {explanations, interpretability, Open the black box, transparent models},
+	pages = {93:1--93:42},
+}
+
+@article{olah_building_2018,
+	title = {The {Building} {Blocks} of {Interpretability}},
+	volume = {3},
+	issn = {2476-0757},
+	url = {https://distill.pub/2018/building-blocks},
+	abstract = {Interpretability techniques are normally studied in isolation. We explore the powerful interfaces that arise when you combine them -- and the rich structure of this combinatorial space.},
+	language = {en},
+	number = {3},
+	urldate = {2019-01-15},
+	journal = {Distill},
+	author = {Olah, Chris and Satyanarayan, Arvind and Johnson, Ian and Carter, Shan and Schubert, Ludwig and Ye, Katherine and Mordvintsev, Alexander},
+	month = mar,
+	year = {2018},
+	pages = {e10},
+}
+
+
+@inproceedings{DBLP:journals/corr/abs-1811-09720,
+  title={Representer Point Selection for Explaining Deep Neural Networks},
+  author={Yeh, C. and Kim, J. and Yen, I. and Ravikumar, P.},
+  booktitle={NeurIPS},
+  year={2018}
+}
+
+@inproceedings{xu2018powerful,
+  title={How Powerful are Graph Neural Networks?},
+  author={Xu, K. and Hu, W. and Leskovec, J. and Jegelka, S.},
+  booktitle={ICRL},
+  year={2019}
+}
+
+@misc{caruana_case-based_1999,
+	title = {Case-based explanation of non-case-based learning methods},
+	url = {/paper/Case-based-explanation-of-non-case-based-learning-Caruana-Kangarloo/687d8ea1ba8be5b66bd876e1980234661d704710},
+	abstract = {We show how to generate case-based explanations for non-case-based learning methods such as artificial neural nets or decision trees. The method uses the trained model (e.g., the neural net or the decision tree) as a distance metric to determine which cases in the training set are most similar to the case that needs to be explained. This approach is well suited to medical domains, where it is important to understand predictions made by complex machine learning models, and where training and clinical practice makes users adept at case interpretation.},
+	language = {en},
+	urldate = {2019-01-15},
+	journal = {undefined},
+	author = {Caruana, Rich and Kangarloo, Hooshang and Dionisio, John David N. and Sinha, Usha S. and Johnson, David B.},
+	year = {1999},
+}
+
+@misc{lou_intelligible_2012,
+	title = {Intelligible models for classification and regression},
+	url = {/paper/Intelligible-models-for-classification-and-Lou-Caruana/25d21f0a01631166650fba7903c1544fd99f4549},
+	abstract = {Complex models for regression and classification have high accuracy, but are unfortunately no longer interpretable by users. We study the performance of generalized additive models (GAMs), which combine single-feature models called shape functions through a linear function. Since the shape functions can be arbitrarily complex, GAMs are more accurate than simple linear models. But since they do not contain any interactions between features, they can be easily interpreted by users.
+ We present the first large-scale empirical comparison of existing methods for learning GAMs. Our study includes existing spline and tree-based methods for shape functions and penalized least squares, gradient boosting, and backfitting for learning GAMs. We also present a new method based on tree ensembles with an adaptive number of leaves that consistently outperforms previous work. We complement our experimental results with a bias-variance analysis that explains how different shape models influence the additive model. Our experiments show that shallow bagged trees with gradient boosting distinguish itself as the best method on low- to medium-dimensional datasets.},
+	language = {en},
+	urldate = {2019-01-15},
+	journal = {undefined},
+	author = {Lou, Yinjun and Caruana, Rich and Gehrke, Johannes},
+	year = {2012},
+}
+
+
+@article{smilkov2017smoothgrad,
+  title={Smoothgrad: removing noise by adding noise},
+  author={Smilkov, Daniel and Thorat, Nikhil and Kim, Been and Vi{\'e}gas, Fernanda and Wattenberg, Martin},
+  journal={arXiv:1706.03825},
+  year={2017}
+}
+
+@inproceedings{binder2016layer,
+  title={Layer-wise relevance propagation for neural networks with local renormalization layers},
+  author={Binder, Alexander and Montavon, Gr{\'e}goire and Lapuschkin, Sebastian and M{\"u}ller, Klaus-Robert and Samek, Wojciech},
+  booktitle={International Conference on Artificial Neural Networks},
+  pages={63--71},
+  year={2016},
+  organization={Springer}
+}
+
+@inproceedings{sundararajan_axiomatic_nodate,
+	title = {Axiomatic {Attribution} for {Deep} {Networks}},
+	booktitle= {ICML},
+	year={2017},
+	author = {Sundararajan, M. and Taly, A. and Yan, Q.}
+}
+
+@article{poursabzi-sangdeh_manipulating_2018,
+	title = {Manipulating and {Measuring} {Model} {Interpretability}},
+	url = {http://arxiv.org/abs/1802.07810},
+	abstract = {Despite a growing literature on creating interpretable machine learning methods, there have been few experimental studies of their effects on end users. We present a series of large-scale, randomized, pre-registered experiments in which participants were shown functionally identical models that varied only in two factors thought to influence interpretability: the number of input features and the model transparency (clear or black-box). Participants who were shown a clear model with a small number of features were better able to simulate the model's predictions. However, contrary to what one might expect when manipulating interpretability, we found no significant difference in multiple measures of trust across conditions. Even more surprisingly, increased transparency hampered people's ability to detect when a model has made a sizeable mistake. These findings emphasize the importance of studying how models are presented to people and empirically verifying that interpretable models achieve their intended effects on end users.},
+	urldate = {2019-01-15},
+	journal = {arXiv:1802.07810 [cs]},
+	author = {Poursabzi-Sangdeh, Forough and Goldstein, Daniel G. and Hofman, Jake M. and Vaughan, Jennifer Wortman and Wallach, Hanna},
+	month = feb,
+	year = {2018},
+	note = {arXiv: 1802.07810},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computers and Society},
+}
+
+@inproceedings{lundberg_unified_2017,
+	title = {A {Unified} {Approach} to {Interpreting} {Model} {Predictions}},
+	author = {Lundberg, S. and Lee, Su-In},
+	year = {2017},
+	booktitle = {NIPS},
+}
+
+@inproceedings{yeh_representer_2018,
+	booktitle = {NeurIPS},
+	author = {Yeh, Chih-Kuan and Kim, Joon Sik and Yen, Ian E. H. and Ravikumar, Pradeep},
+	year = {2018},
+}
+
+
+@article{martens_performance_2011,
+	series = {Recent {Advances} in {Data}, {Text}, and {Media} {Mining} \& {Information} {Issues} in {Supply} {Chain} and in {Service} {System} {Design}},
+	title = {Performance of classification models from a user perspective},
+	volume = {51},
+	issn = {0167-9236},
+	url = {http://www.sciencedirect.com/science/article/pii/S016792361100042X},
+	doi = {10.1016/j.dss.2011.01.013},
+	abstract = {This paper proposes a complete framework to assess the overall performance of classification models from a user perspective in terms of accuracy, comprehensibility, and justifiability. A review is provided of accuracy and comprehensibility measures, and a novel metric is introduced that allows one to measure the justifiability of classification models. Furthermore, taxonomy of domain constraints is introduced, and an overview of the existing approaches to impose constraints and include domain knowledge in data mining techniques is presented. Finally, justifiability metric is applied to a credit scoring and customer churn prediction case.},
+	number = {4},
+	urldate = {2019-01-17},
+	journal = {Decision Support Systems},
+	author = {Martens, David and Vanthienen, Jan and Verbeke, Wouter and Baesens, Bart},
+	month = nov,
+	year = {2011},
+	keywords = {Classification, Comprehensibility, Data mining, Justifiability, Metrics},
+	pages = {782--793},
+}
+
+@article{gilpin_explaining_2018,
+	title = {Explaining {Explanations}: {An} {Approach} to {Evaluating} {Interpretability} of {Machine} {Learning}},
+	shorttitle = {Explaining {Explanations}},
+	url = {http://arxiv.org/abs/1806.00069},
+	abstract = {There has recently been a surge of work in explanatory artificial intelligence (XAI). This research area tackles the important problem that complex machines and algorithms often cannot provide insights into their behavior and thought processes. XAI allows users and parts of the internal system to be more transparent, providing explanations of their decisions in some level of detail. These explanations are important to ensure algorithmic fairness, identify potential bias/problems in the training data, and to ensure that the algorithms perform as expected. However, explanations produced by these systems is neither standardized nor systematically assessed. In an effort to create best practices and identify open challenges, we provide our definition of explainability and show how it can be used to classify existing literature. We discuss why current approaches to explanatory methods especially for deep neural networks are insufficient. Finally, based on our survey, we conclude with suggested future research directions for explanatory artificial intelligence.},
+	urldate = {2019-01-17},
+	journal = {arXiv:1806.00069 [cs, stat]},
+	author = {Gilpin, Leilani H. and Bau, David and Yuan, Ben Z. and Bajwa, Ayesha and Specter, Michael and Kagal, Lalana},
+	month = may,
+	year = {2018},
+	note = {arXiv: 1806.00069},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
+	annote = {Comment: Edited author email},
+}
+
+@article{augasta_reverse_2012,
+	title = {Reverse {Engineering} the {Neural} {Networks} for {Rule} {Extraction} in {Classification} {Problems}},
+	volume = {35},
+	issn = {1573-773X},
+	abstract = {Artificial neural networks often achieve high classification accuracy rates, but they are considered as black boxes due to their lack of explanation capability. This paper proposes the new rule extraction algorithm RxREN to overcome this drawback. In pedagogical approach the proposed algorithm extracts the rules from trained neural networks for datasets with mixed mode attributes. The algorithm relies on reverse engineering technique to prune the insignificant input neurons and to discover the technological principles of each significant input neuron of neural network in classification. The novelty of this algorithm lies in the simplicity of the extracted rules and conditions in rule are involving both discrete and continuous mode of attributes. Experimentation using six different real datasets namely iris, wbc, hepatitis, pid, ionosphere and creditg show that the proposed algorithm is quite efficient in extracting smallest set of rules with high classification accuracy than those generated by other neural network rule extraction methods.},
+	language = {en},
+	number = {2},
+	journal = {Neural Processing Letters},
+	author = {Augasta, M. Gethsiyal and Kathirvalavakumar, T.},
+	month = apr,
+	year = {2012},
+	keywords = {Classification, Neural networks, Pedagogical, Pruning, Reverse engineering, Rule extraction},
+	pages = {131--150}
+}
+
+@inproceedings{mcauley_hidden_2013,
+	address = {New York, NY, USA},
+	series = {{RecSys} '13},
+	title = {Hidden {Factors} and {Hidden} {Topics}: {Understanding} {Rating} {Dimensions} with {Review} {Text}},
+	isbn = {978-1-4503-2409-0},
+	shorttitle = {Hidden {Factors} and {Hidden} {Topics}},
+	url = {http://doi.acm.org/10.1145/2507157.2507163},
+	doi = {10.1145/2507157.2507163},
+	abstract = {In order to recommend products to users we must ultimately predict how a user will respond to a new product. To do so we must uncover the implicit tastes of each user as well as the properties of each product. For example, in order to predict whether a user will enjoy Harry Potter, it helps to identify that the book is about wizards, as well as the user's level of interest in wizardry. User feedback is required to discover these latent product and user dimensions. Such feedback often comes in the form of a numeric rating accompanied by review text. However, traditional methods often discard review text, which makes user and product latent dimensions difficult to interpret, since they ignore the very text that justifies a user's rating. In this paper, we aim to combine latent rating dimensions (such as those of latent-factor recommender systems) with latent review topics (such as those learned by topic models like LDA). Our approach has several advantages. Firstly, we obtain highly interpretable textual labels for latent rating dimensions, which helps us to `justify' ratings with text. Secondly, our approach more accurately predicts product ratings by harnessing the information present in review text; this is especially true for new products and users, who may have too few ratings to model their latent factors, yet may still provide substantial information from the text of even a single review. Thirdly, our discovered topics can be used to facilitate other tasks such as automated genre discovery, and to identify useful and representative reviews.},
+	urldate = {2019-01-17},
+	booktitle = {Proceedings of the 7th {ACM} {Conference} on {Recommender} {Systems}},
+	publisher = {ACM},
+	author = {McAuley, Julian and Leskovec, Jure},
+	year = {2013},
+	keywords = {recommender systems, topic models},
+	pages = {165--172}
+}
+
+@article{hamilton2017representation,
+  title={Representation learning on graphs: Methods and applications},
+  author={Hamilton, W. and Ying, R. and Leskovec, J.},
+  journal={IEEE Data Engineering Bulletin},
+  year={2017}
+}
+
+@article{freitas_comprehensible_2014,
+	title = {Comprehensible {Classification} {Models}: {A} {Position} {Paper}},
+	volume = {15},
+	issn = {1931-0145},
+	shorttitle = {Comprehensible {Classification} {Models}},
+	url = {http://doi.acm.org/10.1145/2594473.2594475},
+	doi = {10.1145/2594473.2594475},
+	abstract = {The vast majority of the literature evaluates the performance of classification models using only the criterion of predictive accuracy. This paper reviews the case for considering also the comprehensibility (interpretability) of classification models, and discusses the interpretability of five types of classification models, namely decision trees, classification rules, decision tables, nearest neighbors and Bayesian network classifiers. We discuss both interpretability issues which are specific to each of those model types and more generic interpretability issues, namely the drawbacks of using model size as the only criterion to evaluate the comprehensibility of a model, and the use of monotonicity constraints to improve the comprehensibility and acceptance of classification models by users.},
+	number = {1},
+	urldate = {2019-01-17},
+	journal = {SIGKDD Explor. Newsl.},
+	author = {Freitas, Alex A.},
+	month = mar,
+	year = {2014},
+	keywords = {Bayesian network classifiers, decision table, decision tree, monotonicity constraint, nearest neighbors, rule induction},
+	pages = {1--10}
+}
+
+@article{MARTENS2011782,
+title = "Performance of classification models from a user perspective",
+journal = "Decision Support Systems",
+volume = "51",
+number = "4",
+pages = "782 - 793",
+year = "2011",
+note = "Recent Advances in Data, Text, and Media Mining & Information Issues in Supply Chain and in Service System Design",
+issn = "0167-9236",
+doi = "https://doi.org/10.1016/j.dss.2011.01.013",
+url = "http://www.sciencedirect.com/science/article/pii/S016792361100042X",
+author = "David Martens and Jan Vanthienen and Wouter Verbeke and Bart Baesens",
+keywords = "Data mining, Classification, Metrics, Justifiability, Comprehensibility",
+abstract = "This paper proposes a complete framework to assess the overall performance of classification models from a user perspective in terms of accuracy, comprehensibility, and justifiability. A review is provided of accuracy and comprehensibility measures, and a novel metric is introduced that allows one to measure the justifiability of classification models. Furthermore, taxonomy of domain constraints is introduced, and an overview of the existing approaches to impose constraints and include domain knowledge in data mining techniques is presented. Finally, justifiability metric is applied to a credit scoring and customer churn prediction case."
+}
+
+
+@article{jennings_informal_1982,
+	title = {Informal {Covariation} {Assessment}: {Data}-based vs. {Theory}-based {Judgements}},
+	shorttitle = {Informal {Covariation} {Assessment}},
+	url = {https://www.hbs.edu/faculty/Pages/item.aspx?num=7387},
+	language = {en-us},
+	urldate = {2019-01-17},
+	author = {Jennings, D. and Amabile, T. M. and Ross, L. D.},
+	month = apr,
+	year = {1982},
+}
+
+%% GRAPH
+
+
+@article{cho_chapter_2012,
+	title = {Chapter 5: {Network} {Biology} {Approach} to {Complex} {Diseases}},
+	volume = {8},
+	issn = {1553-734X},
+	shorttitle = {Chapter 5},
+	doi = {10.1371/journal.pcbi.1002820},
+	abstract = {Complex diseases are caused by a combination of genetic and environmental factors. Uncovering the molecular pathways through which genetic factors affect a phenotype is always difficult, but in the case of complex diseases this is further complicated since genetic factors in affected individuals might be different. In recent years, systems biology approaches and, more specifically, network based approaches emerged as powerful tools for studying complex diseases. These approaches are often built on the knowledge of physical or functional interactions between molecules which are usually represented as an interaction network. An interaction network not only reports the binary relationships between individual nodes but also encodes hidden higher level organization of cellular communication. Computational biologists were challenged with the task of uncovering this organization and utilizing it for the understanding of disease complexity, which prompted rich and diverse algorithmic approaches to be proposed. We start this chapter with a description of the general characteristics of complex diseases followed by a brief introduction to physical and functional networks. Next we will show how these networks are used to leverage genotype, gene expression, and other types of data to identify dysregulated pathways, infer the relationships between genotype and phenotype, and explain disease heterogeneity. We group the methods by common underlying principles and first provide a high level description of the principles followed by more specific examples. We hope that this chapter will give readers an appreciation for the wealth of algorithmic techniques that have been developed for the purpose of studying complex diseases as well as insight into their strengths and limitations.},
+	number = {12},
+	urldate = {2019-01-24},
+	journal = {PLoS Computational Biology},
+	author = {Cho, Dong-Yeon and Kim, Yoo-Ah and Przytycka, Teresa M.},
+	month = dec,
+	year = {2012},
+	pmid = {23300411},
+	pmcid = {PMC3531284},
+}
+
+@article{borgwardt_protein_2005,
+	title = {Protein function prediction via graph kernels},
+	volume = {21 Suppl 1},
+	issn = {1367-4803},
+	doi = {10.1093/bioinformatics/bti1007},
+	abstract = {MOTIVATION: Computational approaches to protein function prediction infer protein function by finding proteins with similar sequence, structure, surface clefts, chemical properties, amino acid motifs, interaction partners or phylogenetic profiles. We present a new approach that combines sequential, structural and chemical information into one graph model of proteins. We predict functional class membership of enzymes and non-enzymes using graph kernels and support vector machine classification on these protein graphs.
+RESULTS: Our graph model, derivable from protein sequence and structure only, is competitive with vector models that require additional protein information, such as the size of surface pockets. If we include this extra information into our graph model, our classifier yields significantly higher accuracy levels than the vector models. Hyperkernels allow us to select and to optimally combine the most relevant node attributes in our protein graphs. We have laid the foundation for a protein function prediction system that integrates protein information from various sources efficiently and effectively.
+AVAILABILITY: More information available via www.dbs.ifi.lmu.de/Mitarbeiter/borgwardt.html.},
+	language = {eng},
+	journal = {Bioinformatics (Oxford, England)},
+	author = {Borgwardt, Karsten M. and Ong, Cheng Soon and Schönauer, Stefan and Vishwanathan, S. V. N. and Smola, Alex J. and Kriegel, Hans-Peter},
+	month = jun,
+	year = {2005},
+	pmid = {15961493},
+	keywords = {Algorithms, Computational Biology, Databases, Protein, Enzymes, Models, Statistical, Protein Conformation, Protein Structure, Secondary, Sequence Analysis, Protein, Software},
+	pages = {i47--56},
+}
+
+@inproceedings{duvenaud_convolutional_2015,
+  title={Convolutional networks on graphs for learning molecular fingerprints},
+  author={Duvenaud, D. and others},
+  booktitle={NIPS},
+  year={2015}
+}
+
+@inproceedings{backstrom2011supervised,
+  title={Supervised random walks: predicting and recommending links in social networks},
+  author={Backstrom, L. and Leskovec, J.},
+  booktitle={WSDM},
+  year={2011},
+}
+
+@inproceedings{chau_polonium:_2011,
+	title = {Polonium: {Tera}-{Scale} {Graph} {Mining} and {Inference} for {Malware} {Detection}},
+	shorttitle = {Polonium},
+	abstract = {We present Polonium, a novel Symantec technology that detects malware through large-scale graph inference. Based on the scalable Belief Propagation algorithm, Polonium infers every file’s reputation, flagging files with low reputation as malware. We evaluated Polonium with a billion-node graph constructed from the largest file submissions dataset ever published (60 terabytes). Polonium attained a high true positive rate of 87 \% in detecting malware; in the field, Polonium lifted the detection rate of existing methods by 10 absolute percentage points. We detail Polonium’s design and implementation features instrumental to its success. Polonium has served 120 million people and helped answer more than one trillion queries for file reputation.},
+	booktitle = {Siam {International} {Conference} on {Data} {Mining} (sdm)},
+	author = {Chau, Duen Horng and Nachenberg, Carey and Wilhelm, Jeffrey and Wright, Adam and Faloutsos, Christos},
+	year = {2011},
+	pages = {131--142},
+}
+
+@article{Hochreiter:1997:LSM:1246443.1246450,
+ author = {Hochreiter, Sepp and Schmidhuber, J\"{u}rgen},
+ title = {Long Short-Term Memory},
+ journal = {Neural Comput.},
+ issue_date = {November 15, 1997},
+ volume = {9},
+ number = {8},
+ month = nov,
+ year = {1997},
+ issn = {0899-7667},
+ pages = {1735--1780},
+ numpages = {46},
+ url = {http://dx.doi.org/10.1162/neco.1997.9.8.1735},
+ doi = {10.1162/neco.1997.9.8.1735},
+ acmid = {1246450},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA},
+}
+
+@inproceedings{pinsage,
+  author    = {R. Ying and
+               R. He and
+               K. Chen and
+               P. Eksombatchai and
+               W. Hamilton and
+               J. Leskovec},
+ title = {Graph Convolutional Neural Networks for Web-Scale Recommender Systems},
+ booktitle = {KDD},
+ year = {2018},
+ } 
+
+
+@inproceedings{bao_planning_2017,
+	address = {New York, NY, USA},
+	series = {{KDD} '17},
+	title = {Planning {Bike} {Lanes} {Based} on {Sharing}-{Bikes}' {Trajectories}},
+	isbn = {978-1-4503-4887-4},
+	url = {http://doi.acm.org/10.1145/3097983.3098056},
+	doi = {10.1145/3097983.3098056},
+	abstract = {Cycling as a green transportation mode has been promoted by many governments all over the world. As a result, constructing effective bike lanes has become a crucial task for governments promoting the cycling life style, as well-planned bike paths can reduce traffic congestion and decrease safety risks for both cyclists and motor vehicle drivers. Unfortunately, existing trajectory mining approaches for bike lane planning do not consider key realistic government constraints: 1) budget limitations, 2) construction convenience, and 3) bike lane utilization. In this paper, we propose a data-driven approach to develop bike lane construction plans based on large-scale real world bike trajectory data. We enforce these constraints to formulate our problem and introduce a flexible objective function to tune the benefit between coverage of the number of users and the length of their trajectories. We prove the NP-hardness of the problem and propose greedy-based heuristics to address it. Finally, we deploy our system on Microsoft Azure, providing extensive experiments and case studies to demonstrate the effectiveness of our approach.},
+	urldate = {2019-01-24},
+	booktitle = {Proceedings of the 23rd {ACM} {SIGKDD} {International} {Conference} on {Knowledge} {Discovery} and {Data} {Mining}},
+	publisher = {ACM},
+	author = {Bao, Jie and He, Tianfu and Ruan, Sijie and Li, Yanhua and Zheng, Yu},
+	year = {2017},
+	keywords = {trajectory data mining, urban computing, urban planning},
+	pages = {1377--1386},
+}
+
+@inproceedings{schlichtkrull2018modeling,
+  title={Modeling relational data with graph convolutional networks},
+  author={Schlichtkrull, M. and Kipf, T. and Bloem, P. and van den Berg, R. and Titov, I. and Welling, M.},
+  booktitle={ESWC},
+  year={2018},
+}
+
+@inproceedings{kumar2018community,
+  title={Community interaction and conflict on the web},
+  author={Kumar, Srijan and Hamilton, William L and Leskovec, Jure and Jurafsky, Dan},
+  booktitle={WWW},
+  pages={933--943},
+  year={2018}
+}
+
+@inproceedings{dai2016discriminative,
+  title={Discriminative embeddings of latent variable models for structured data},
+  author={Dai, H. and Dai, Bo and Song, Le},
+  booktitle={ICML},
+  year={2016}
+}
+
+@inproceedings{graphsage,
+  title={Inductive representation learning on large graphs},
+  author={Hamilton, W. and Ying, Z. and Leskovec, J.},
+  booktitle={NIPS},
+  year={2017}
+}
+
+@article{battaglia,
+  title={Relational inductive biases, deep learning, and graph networks},
+  author={Battaglia, Peter W and Hamrick, Jessica B and Bapst, Victor and Sanchez-Gonzalez, Alvaro and Zambaldi, Vinicius and Malinowski, Mateusz and Tacchetti, Andrea and Raposo, David and Santoro, Adam and Faulkner, Ryan and others},
+  journal={arXiv:1806.01261},
+  year={2018}
+}
+
+@inproceedings{PhysRevLett.120.145301,
+  title = {Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties},
+  author = {Xie, T. and Grossman, J.},
+  booktitle = {Phys. Rev. Lett.},
+  year = {2018},
+}
+
+@INPROCEEDINGS{gori, 
+author={M. Gori and G. Monfardini and F. Scarselli}, 
+booktitle={IEEE International Joint Conference on Neural Networks}, 
+title={A new model for learning in graph domains}, 
+year={2005}, 
+}
+
+
+@InProceedings{gilmer2017neural,
+  title = 	 {Neural Message Passing for Quantum Chemistry},
+  author = 	 {J. Gilmer and S. Schoenholz and P. Riley and O. Vinyals and G. Dahl},
+  booktitle = 	 {ICML},
+  year = 	 {2017},
+  volume = 	 {70},
+  series = 	 {JMLR},
+  month = 	 {06--11 Aug},
+  abstract = 	 {Supervised learning on molecules has incredible potential to be useful in chemistry, drug discovery, and materials science. Luckily, several promising and closely related neural network models invariant to molecular symmetries have already been described in the literature. These models learn a message passing algorithm and aggregation procedure to compute a function of their entire input graph. At this point, the next step is to find a particularly effective variant of this general approach and apply it to chemical prediction benchmarks until we either solve them or reach the limits of the approach. In this paper, we reformulate existing models into a single common framework we call Message Passing Neural Networks (MPNNs) and explore additional novel variations within this framework. Using MPNNs we demonstrate state of the art results on an important molecular property prediction benchmark; these results are strong enough that we believe future work should focus on datasets with larger molecules or more accurate ground truth labels.}
+}
+
+@inproceedings{agrawal2018large,
+  title={Large-scale analysis of disease pathways in the human interactome},
+  author={Agrawal, M. and Zitnik, M. and Leskovec, J.},
+  booktitle={PSB},
+  year={2018},
+}
+
+@article{mutag,
+author = {Debnath, A. and others},
+title = {Structure-activity relationship of mutagenic aromatic and heteroaromatic nitro compounds. Correlation with molecular orbital energies and hydrophobicity},
+journal = {Journal of Medicinal Chemistry},
+volume = {34},
+number = {2},
+pages = {786-797},
+year = {1991},
+}
+
+@article{zhou_graph_2018,
+	title = {Graph {Neural} {Networks}: {A} {Review} of {Methods} and {Applications}},
+	shorttitle = {Graph {Neural} {Networks}},
+	journal = {arXiv:1812.08434},
+	author = {Zhou, J. and Cui, G. and Zhang, Z. and Yang, C. and Liu, Z. and Sun, M.},
+	year = {2018},
+}
+
+@article{zhang_deep_2018,
+	title = {Deep {Learning} on {Graphs}: {A} {Survey}},
+	shorttitle = {Deep {Learning} on {Graphs}},
+	journal = {arXiv:1812.04202},
+	author = {Zhang, Z. and C., Peng and Zhu, W.},
+	year = {2018},
+}
+
+@inproceedings{DBLP:journals/corr/abs-1711-07971,
+  title={Non-local neural networks},
+  author    = {X. Wang and
+               R. Girshick and
+               A. Gupta and
+               K. He},
+  booktitle={CVPR},
+  year={2018}
+}
+
+@inproceedings{Cadamuro2016DebuggingML,
+  title={Debugging Machine Learning Models},
+  author={Gabriel Cadamuro and Ran Gilad-Bachrach},
+  year={2016}
+}
+
+@article{zhang2018deep,
+  title={Deep learning on graphs: A survey},
+  author={Zhang, Z. and Cui, P. and Zhu, W},
+  journal={arXiv preprint arXiv:1812.04202},
+  year={2018}
+}
+
+@inproceedings{deepsets,
+  author    = {M. Zaheer and
+               S. Kottur and
+               S. Ravanbakhsh and
+               B. P{\'{o}}czos and
+               R. Salakhutdinov and
+               A. Smola},
+  title     = {Deep Sets},
+  booktitle   = {NIPS},
+  year      = {2017},
+}
+
+@article{vinyals2015order,
+  title={Order matters: Sequence to sequence for sets},
+  author={Vinyals, Oriol and Bengio, Samy and Kudlur, Manjunath},
+  journal={arXiv:1511.06391},
+  year={2015}
+}
+
+@inproceedings{xujumping,
+  author    = {K. Xu and
+               C. Li and
+               Y. Tian and
+               T. Sonobe and
+               K. Kawarabayashi and
+               S. Jegelka},
+  title     = {Representation Learning on Graphs with Jumping Knowledge Networks},
+  booktitle   = {ICML},
+  year      = {2018},
+}
+
+@inproceedings{zintgraf2017visualizing,
+  title={Visualizing deep neural network decisions: Prediction difference analysis},
+  author={Zintgraf, L. and Cohen, T. and Adel, T. and Welling, M.},
+  booktitle={ICLR},
+  year={2017}
+}
+
+@inproceedings{
+velickovic2018graph,
+title={Graph Attention Networks},
+author={P. Velickovic and G. Cucurull and A. Casanova and A. Romero and P. Li{\`o} and Y. Bengio},
+booktitle={ICLR},
+year={2018},
+}
+
+@inproceedings{fastgcn,
+  title={FastGCN: fast learning with graph convolutional networks via importance sampling},
+  author={Chen, Jie and Ma, Tengfei and Xiao, Cao},
+  booktitle={ICLR},
+  year={2018}
+}
+
+@inproceedings{Huang2018AdaptiveST,
+  title={Adaptive Sampling Towards Fast Graph Representation Learning},
+  author={Huang, W.B. and Zhang, T. and Rong, Y. and Huang, J.},
+  booktitle={NeurIPS},
+  year={2018}
+}
+
+@inproceedings{Chen2018StochasticTO,
+  title={Stochastic Training of Graph Convolutional Networks with Variance Reduction},
+  author={J. Chen and J. Zhu and L. Song},
+  booktitle={ICML},
+  year={2018}
+}
+
+@inproceedings{kipf2016semi,
+  title={Semi-supervised classification with graph convolutional networks},
+  author={Kipf, T. N. and Welling, M.},
+  booktitle={ICLR},
+  year={2016}
+}
+
+@inproceedings{hjelm2018learning,
+  title={Learning deep representations by mutual information estimation and maximization},
+  author={Hjelm, D. and others},
+  booktitle={ICLR},
+  year={2019}
+}
+
+@inproceedings{Velickovic2018DeepGI,
+  title={Deep Graph Infomax},
+  author={Petar Velickovic and others},
+  journal={ICLR},
+  year={2019}
+}
+
+@inproceedings{yanardag2015deep,
+  title={Deep graph kernels},
+  author={Yanardag, Pinar and Vishwanathan, SVN},
+  booktitle={KDD},
+  pages={1365--1374},
+  year={2015},
+  organization={ACM}
+}
+
+@article{li2015gated,
+  title={Gated graph sequence neural networks},
+  author={Li, Y. and Tarlow, D. and Brockschmidt, M. and Zemel, R.},
+  journal={arXiv:1511.05493},
+  year={2015}
+}
+
+@article{rahimi2018semi,
+  title={Semi-supervised User Geolocation via Graph Convolutional Networks},
+  author={Rahimi, Afshin and Cohn, Trevor and Baldwin, Tim},
+  journal={arXiv preprint arXiv:1804.08049},
+  year={2018}
+}
+
+@article{peng2017cross,
+  title={Cross-sentence n-ary relation extraction with graph lstms},
+  author={Peng, Nanyun and Poon, Hoifung and Quirk, Chris and Toutanova, Kristina and Yih, Wen-tau},
+  journal={arXiv preprint arXiv:1708.03743},
+  year={2017}
+}
+
+@inproceedings{
+chen2018supervised,
+title={Supervised Community Detection with Line Graph Neural Networks},
+author={Z. Chen and L. Li and J. Bruna},
+booktitle={ICLR},
+year={2019}
+}
+
+
+@inproceedings{neil2018interpretable,
+	title = {Interpretable {Graph} {Convolutional} {Neural} {Networks} for {Inference} on {Noisy} {Knowledge} {Graphs}},
+	booktitle = {ML4H Workshop at NeurIPS},
+	author = {Neil, D. and others},
+	year = {2018},
+}
+
+@inproceedings{ancona2018towards,
+  title={Towards better understanding of gradient-based attribution methods for Deep Neural Networks},
+  author={Ancona, Marco and Ceolini, Enea and Oztireli, Cengiz and Gross, Markus},
+  booktitle={6th International Conference on Learning Representations (ICLR 2018)},
+  year={2018}
+}
+
+@inproceedings{ancona2017unified,
+  title={A unified view of gradient-based attribution methods for deep neural networks},
+  author={Ancona, Marco and Ceolini, Enea and {\"O}ztireli, Cengiz and Gross, Markus},
+  booktitle={NIPS Workshop on Interpreting, Explaining and Visualizing Deep Learning},
+  year={2017},
+  organization={ETH Zurich}
+}
+
+@inproceedings{ester1996density,
+  title={A density-based algorithm for discovering clusters in large spatial databases with noise.},
+  author={Ester, M. and Kriegel, H.-P. and Sander, J. and Xu, X.},
+  booktitle={KDD},
+  year={1996}
+}
+
+@ARTICLE{scarselli, 
+author={F. Scarselli and M. Gori and A. C. Tsoi and M. Hagenbuchner and G. Monfardini}, 
+journal={IEEE Transactions on Neural Networks}, 
+title={The Graph Neural Network Model}, 
+year={2009},
+}
+
+@inproceedings{cho2011friendship,
+  title={Friendship and mobility: user movement in location-based social networks},
+  author={Cho, E. and Myers, S. and Leskovec, J.},
+  booktitle={KDD},
+  year={2011},
+}
+
+@article{zitnik2017ohmnet,
+  title={Predicting multicellular function through multi-layer tissue networks},
+  author={Zitnik, M and Leskovec, J},
+  journal={Bioinformatics},
+  volume={33},
+  year={2017}
+}
+
+@article{zitnik2018decagon,
+  title={Modeling polypharmacy side effects with graph convolutional networks},
+  author={Zitnik, M. and Agrawal, M. and Leskovec, J.},
+  journal={Bioinformatics},
+  volume={34},
+  year={2018}
+}
+
+@inproceedings{you2018graph,
+  title={Graph Convolutional Policy Network for Goal-Directed Molecular Graph Generation},
+  author={You, J. and Liu, B. and Ying, R. and Pande, V. and Leskovec, J.},
+  journal={NeurIPS},
+  year={2018}
+}
+
+@inproceedings{ying2018hierarchical,
+  title={Hierarchical graph representation learning with differentiable pooling},
+  author={Ying, Z. and You, J. and Morris, C. and Ren, X. and Hamilton, W. and Leskovec, J.},
+  booktitle={NeurIPS},
+  year={2018}
+}
+
+@article{Fey_2018,
+   title={SplineCNN: Fast Geometric Deep Learning with Continuous B-Spline Kernels},
+   ISBN={9781538664209},
+   url={http://dx.doi.org/10.1109/CVPR.2018.00097},
+   DOI={10.1109/cvpr.2018.00097},
+   journal={2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+   publisher={IEEE},
+   author={Fey, Matthias and Lenssen, Jan Eric and Weichert, Frank and Muller, Heinrich},
+   year={2018},
+   month={Jun}
+}
+
+@inproceedings{schutt2017schnet,
+  title={SchNet: A continuous-filter convolutional neural network for modeling quantum interactions},
+  author={Sch{\"u}tt, Kristof and Kindermans, Pieter-Jan and Felix, Huziel Enoc Sauceda and Chmiela, Stefan and Tkatchenko, Alexandre and M{\"u}ller, Klaus-Robert},
+  booktitle={NIPS},
+  pages={991--1001},
+  year={2017}
+}
+
+@inproceedings{jin2017predicting,
+  title={Predicting Organic Reaction Outcomes with Weisfeiler-Lehman network},
+  author={Jin, W. and Coley, C. and Barzilay, R. and Jaakkola, T.},
+  booktitle={NIPS},
+  year={2017}
+}
+@inproceedings{Fout2017ProteinIP,
+  title={Protein Interface Prediction using Graph Convolutional Networks},
+  author={Alex Fout and Jonathon Byrd and Basir Shariat and Asa Ben-Hur},
+  booktitle={NIPS},
+  year={2017}
+}
+
+
+@article{Simonovsky_2017,
+   title={Dynamic Edge-Conditioned Filters in Convolutional Neural Networks on Graphs},
+   ISBN={9781538604571},
+   url={http://dx.doi.org/10.1109/CVPR.2017.11},
+   DOI={10.1109/cvpr.2017.11},
+   journal={2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+   publisher={IEEE},
+   author={Simonovsky, Martin and Komodakis, Nikos},
+   year={2017},
+   month={Jul}
+}
+
+
+@inproceedings{defferrard2016convolutional,
+  title={Convolutional neural networks on graphs with fast localized spectral filtering},
+  author={Defferrard, M. and Bresson, X. and Vandergheynst, P.},
+  booktitle={NeurIPS},
+  year={2016}
+}
+
+@inproceedings{zhang2018link,
+  title={Link Prediction Based on Graph Neural Networks},
+  author={Zhang, M. and Chen, Y.},
+  booktitle={NIPS},
+  year={2018}
+}
+
+@inproceedings{kingma2013auto,
+  title={Auto-encoding variational bayes},
+  author={Kingma, Diederik P and Welling, Max},
+  booktitle={NeurIPS},
+  year={2013}
+}
+@article{chen2018learning,
+  title={Learning to explain: An information-theoretic perspective on model interpretation},
+  author={Chen, Jianbo and Song, Le and Wainwright, Martin J and Jordan, Michael I},
+  journal={arXiv preprint arXiv:1802.07814},
+  year={2018}
+}
+
+@inproceedings{kipf2018neural,
+  title={Neural relational inference for interacting systems},
+  author={Kipf, Thomas and Fetaya, Ethan and Wang, Kuan-Chieh and Welling, Max and Zemel, Richard},
+  booktitle={ICML},
+  year={2018}
+}

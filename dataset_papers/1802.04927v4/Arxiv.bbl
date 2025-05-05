@@ -1,0 +1,285 @@
+\def\germ{\frak} \def\scr{\cal} \ifx\documentclass\undefinedcs
+  \def\bf{\fam\bffam\tenbf}\def\rm{\fam0\tenrm}\fi % f**k-amstex!
+  \def\defaultdefine#1#2{\expandafter\ifx\csname#1\endcsname\relax
+  \expandafter\def\csname#1\endcsname{#2}\fi} \defaultdefine{Bbb}{\bf}
+  \defaultdefine{frak}{\bf} \defaultdefine{=}{\B} % doublef**k-amstex!!
+  \defaultdefine{mathfrak}{\frak} \defaultdefine{mathbb}{\bf}
+  \defaultdefine{mathcal}{\cal}
+  \defaultdefine{beth}{BETH}\defaultdefine{cal}{\bf} \def\bbfI{{\Bbb I}}
+  \def\mbox{\hbox} \def\text{\hbox} \def\om{\omega} \def\Cal#1{{\bf #1}}
+  \def\pcf{pcf} \defaultdefine{cf}{cf} \defaultdefine{reals}{{\Bbb R}}
+  \defaultdefine{real}{{\Bbb R}} \def\restriction{{|}} \def\club{CLUB}
+  \def\w{\omega} \def\exist{\exists} \def\se{{\germ se}} \def\bb{{\bf b}}
+  \def\equivalence{\equiv} \let\lt< \let\gt>
+\begin{thebibliography}{39}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alcal{\'a}-Fdez et~al.(2009)Alcal{\'a}-Fdez, Sanchez, Garcia, del
+  Jesus, Ventura, Garrell, Otero, Romero, Bacardit, Rivas,
+  et~al.]{alcala2009keel}
+Alcal{\'a}-Fdez, Jes{\'u}s, Sanchez, Luciano, Garcia, Salvador, del Jesus,
+  Maria~Jose, Ventura, Sebastian, Garrell, Josep~Maria, Otero, Jos{\'e},
+  Romero, Crist{\'o}bal, Bacardit, Jaume, Rivas, Victor~M, et~al.
+\newblock Keel: a software tool to assess evolutionary algorithms for data
+  mining problems.
+\newblock \emph{Soft Computing}, 13\penalty0 (3):\penalty0 307--318, 2009.
+
+\bibitem[Bengio \& Monperrus(2005)Bengio and Monperrus]{parzen2}
+Bengio, Yoshua and Monperrus, Martin.
+\newblock Non-local manifold tangent learning.
+\newblock In \emph{Advances in Neural Information Processing Systems}, pp.\
+  129--136, 2005.
+
+\bibitem[Bengio et~al.(2006)Bengio, Larochelle, and Vincent]{parzen3}
+Bengio, Yoshua, Larochelle, Hugo, and Vincent, Pascal.
+\newblock Non-local manifold parzen windows.
+\newblock In \emph{Advances in neural information processing systems}, pp.\
+  115--122, 2006.
+
+\bibitem[Bermanis et~al.(2016)Bermanis, Wolf, and Averbuch]{wolf:MGC}
+Bermanis, Amit, Wolf, Guy, and Averbuch, Amir.
+\newblock Diffusion-based kernel methods on euclidean metric measure spaces.
+\newblock \emph{Applied and Computational Harmonic Analysis}, 41\penalty0
+  (1):\penalty0 190--213, 2016.
+
+\bibitem[Bernardo et~al.(2003)Bernardo, Bayarri, Berger, Dawid, Heckerman,
+  Smith, West, et~al.]{bernardo2003variational}
+Bernardo, JM, Bayarri, MJ, Berger, JO, Dawid, AP, Heckerman, D, Smith, AFM,
+  West, M, et~al.
+\newblock The variational bayesian em algorithm for incomplete data: with
+  application to scoring graphical model structures.
+\newblock \emph{Bayesian statistics}, 7:\penalty0 453--464, 2003.
+
+\bibitem[Brubaker et~al.(2012)Brubaker, Salzmann, and Urtasun]{mmcmc2}
+Brubaker, Marcus, Salzmann, Mathieu, and Urtasun, Raquel.
+\newblock A family of mcmc methods on implicitly defined manifolds.
+\newblock In \emph{Artificial Intelligence and Statistics}, pp.\  161--172,
+  2012.
+
+\bibitem[Chawla et~al.(2002)Chawla, Bowyer, Hall, and Kegelmeyer]{smote}
+Chawla, Nitesh~V, Bowyer, Kevin~W, Hall, Lawrence~O, and Kegelmeyer, W~Philip.
+\newblock Smote: synthetic minority over-sampling technique.
+\newblock \emph{Journal of artificial intelligence research}, 16:\penalty0
+  321--357, 2002.
+
+\bibitem[Coifman \& Lafon(2006)Coifman and Lafon]{lafon:DM}
+Coifman, Ronald~R. and Lafon, Stéphane.
+\newblock Diffusion maps.
+\newblock \emph{Applied and Computational Harmonic Analysis}, 21\penalty0
+  (1):\penalty0 5 -- 30, 2006.
+
+\bibitem[Doersch(2016)]{doersch2016tutorial}
+Doersch, Carl.
+\newblock Tutorial on variational autoencoders.
+\newblock \emph{arXiv preprint arXiv:1606.05908}, 2016.
+
+\bibitem[Gin{\'e} \& Guillou(2002)Gin{\'e} and Guillou]{gine2002rates}
+Gin{\'e}, Evarist and Guillou, Armelle.
+\newblock Rates of strong uniform consistency for multivariate kernel density
+  estimators.
+\newblock In \emph{Annales de l'Institut Henri Poincare (B) Probability and
+  Statistics}, volume~38, pp.\  907--921. Elsevier, 2002.
+
+\bibitem[Girolami \& Calderhead(2011)Girolami and Calderhead]{mmcmc1}
+Girolami, Mark and Calderhead, Ben.
+\newblock Riemann manifold langevin and hamiltonian monte carlo methods.
+\newblock \emph{Journal of the Royal Statistical Society: Series B (Statistical
+  Methodology)}, 73\penalty0 (2):\penalty0 123--214, 2011.
+
+\bibitem[Goodfellow et~al.(2014)Goodfellow, Pouget-Abadie, Mirza, Xu,
+  Warde-Farley, Ozair, Courville, and Bengio]{goodfellow2014generative}
+Goodfellow, Ian, Pouget-Abadie, Jean, Mirza, Mehdi, Xu, Bing, Warde-Farley,
+  David, Ozair, Sherjil, Courville, Aaron, and Bengio, Yoshua.
+\newblock Generative adversarial nets.
+\newblock In \emph{Advances in neural information processing systems}, pp.\
+  2672--2680, 2014.
+
+\bibitem[Gr{\"u}n et~al.(2015)Gr{\"u}n, Lyubimova, Kester, Wiebrands, Basak,
+  Sasaki, Clevers, and van Oudenaarden]{grun2015single}
+Gr{\"u}n, Dominic, Lyubimova, Anna, Kester, Lennart, Wiebrands, Kay, Basak,
+  Onur, Sasaki, Nobuo, Clevers, Hans, and van Oudenaarden, Alexander.
+\newblock Single-cell messenger rna sequencing reveals rare intestinal cell
+  types.
+\newblock \emph{Nature}, 525\penalty0 (7568):\penalty0 251, 2015.
+
+\bibitem[He \& Garcia(2009)He and Garcia]{he2009learning}
+He, Haibo and Garcia, Edwardo~A.
+\newblock Learning from imbalanced data.
+\newblock \emph{IEEE Transactions on knowledge and data engineering},
+  21\penalty0 (9):\penalty0 1263--1284, 2009.
+
+\bibitem[Hensman \& Masko(2015)Hensman and Masko]{hensman2015impact}
+Hensman, Paulina and Masko, David.
+\newblock The impact of imbalanced training data for convolutional neural
+  networks.
+\newblock \emph{Degree Project in Computer Science, KTH Royal Institute of
+  Technology}, 2015.
+
+\bibitem[Hubert \& Arabie(1985)Hubert and Arabie]{hubert1985comparing}
+Hubert, Lawrence and Arabie, Phipps.
+\newblock Comparing partitions.
+\newblock \emph{Journal of classification}, 2\penalty0 (1):\penalty0 193--218,
+  1985.
+
+\bibitem[Keller et~al.(2010)Keller, Coifman, Lafon, and Zucker]{Keller}
+Keller, Yosi, Coifman, Ronald~R, Lafon, St{\'e}phane, and Zucker, Steven~W.
+\newblock Audio-visual group recognition using diffusion maps.
+\newblock \emph{IEEE Transactions on Signal Processing}, 58\penalty0
+  (1):\penalty0 403--413, 2010.
+
+\bibitem[Kim et~al.(2015)Kim, Kolodziejczyk, Ilicic, Teichmann, and
+  Marioni]{kim2015characterizing}
+Kim, Jong~Kyoung, Kolodziejczyk, Aleksandra~A, Ilicic, Tomislav, Teichmann,
+  Sarah~A, and Marioni, John~C.
+\newblock Characterizing noise structure in single-cell rna-seq distinguishes
+  genuine from technical stochastic allelic expression.
+\newblock \emph{Nature communications}, 6:\penalty0 8687, 2015.
+
+\bibitem[Kingma \& Welling(2013)Kingma and Welling]{kingma2013auto}
+Kingma, Diederik~P and Welling, Max.
+\newblock Auto-encoding variational bayes.
+\newblock \emph{arXiv preprint arXiv:1312.6114}, 2013.
+
+\bibitem[Krishnaswamy et~al.(2014)Krishnaswamy, Spitzer, Mingueneau, Bendall,
+  Litvin, Stone, Pe’er, and Nolan]{krishnaswamy2014conditional}
+Krishnaswamy, Smita, Spitzer, Matthew~H, Mingueneau, Michael, Bendall, Sean~C,
+  Litvin, Oren, Stone, Erica, Pe’er, Dana, and Nolan, Garry~P.
+\newblock Conditional density-based analysis of t cell signaling in single-cell
+  data.
+\newblock \emph{Science}, 346\penalty0 (6213):\penalty0 1250689, 2014.
+
+\bibitem[Li et~al.(2016)Li, Takahashi, Fujii, Zhou, Hong, Suzuki, Tsubata,
+  Hase, and Wang]{li2016eaf2}
+Li, Yingqian, Takahashi, Yoshimasa, Fujii, Shin-ichiro, Zhou, Yang, Hong,
+  Rongjian, Suzuki, Akari, Tsubata, Takeshi, Hase, Koji, and Wang, Ji-Yang.
+\newblock Eaf2 mediates germinal centre b-cell apoptosis to suppress excessive
+  immune responses and prevent autoimmunity.
+\newblock \emph{Nature communications}, 7:\penalty0 10836, 2016.
+
+\bibitem[Lindenbaum et~al.(2017)Lindenbaum, Salhov, Yeredor, and
+  Averbuch]{lindenbaum2017kernel}
+Lindenbaum, Ofir, Salhov, Moshe, Yeredor, Arie, and Averbuch, Amir.
+\newblock Kernel scaling for manifold learning and classification.
+\newblock \emph{arXiv preprint arXiv:1707.01093}, 2017.
+
+\bibitem[L{\'o}pez et~al.(2013)L{\'o}pez, Fern{\'a}ndez, Garc{\'\i}a, Palade,
+  and Herrera]{lopez2013insight}
+L{\'o}pez, Victoria, Fern{\'a}ndez, Alberto, Garc{\'\i}a, Salvador, Palade,
+  Vasile, and Herrera, Francisco.
+\newblock An insight into classification with imbalanced data: Empirical
+  results and current trends on using data intrinsic characteristics.
+\newblock \emph{Information Sciences}, 250:\penalty0 113--141, 2013.
+
+\bibitem[Moon et~al.(2017{\natexlab{a}})Moon, Stanley, Burkhardt, van Dijk,
+  Wolf, and Krishnaswamy]{moon2017manifold}
+Moon, Kevin~R, Stanley, Jay, Burkhardt, Daniel, van Dijk, David, Wolf, Guy, and
+  Krishnaswamy, Smita.
+\newblock Manifold learning-based methods for analyzing single-cell
+  rna-sequencing data.
+\newblock \emph{Current Opinion in Systems Biology}, 2017{\natexlab{a}}.
+
+\bibitem[Moon et~al.(2017{\natexlab{b}})Moon, van Dijk, Wang, Burkhardt, Chen,
+  van~den Elzen, Hirn, Coifman, Ivanova, Wolf, et~al.]{moon2017visualizing}
+Moon, Kevin~R, van Dijk, David, Wang, Zheng, Burkhardt, Daniel, Chen, William,
+  van~den Elzen, Antonia, Hirn, Matthew~J, Coifman, Ronald~R, Ivanova,
+  Natalia~B, Wolf, Guy, et~al.
+\newblock Visualizing transitions and structure for high dimensional data
+  exploration.
+\newblock \emph{bioRxiv}, pp.\  120378, 2017{\natexlab{b}}.
+
+\bibitem[{\"O}ztireli et~al.(2010){\"O}ztireli, Alexa, and
+  Gross]{oztireli2010spectral}
+{\"O}ztireli, A~Cengiz, Alexa, Marc, and Gross, Markus.
+\newblock Spectral sampling of manifolds.
+\newblock In \emph{ACM Transactions on Graphics (TOG)}, volume~29, pp.\  168.
+  ACM, 2010.
+
+\bibitem[Rasmussen(2000)]{rasmussen2000infinite}
+Rasmussen, Carl~Edward.
+\newblock The infinite gaussian mixture model.
+\newblock In \emph{Advances in neural information processing systems}, pp.\
+  554--560, 2000.
+
+\bibitem[Scott(1985)]{scott1985averaged}
+Scott, David~W.
+\newblock Averaged shifted histograms: effective nonparametric density
+  estimators in several dimensions.
+\newblock \emph{The Annals of Statistics}, pp.\  1024--1040, 1985.
+
+\bibitem[Scott(2008)]{scott2008kernel}
+Scott, David~W.
+\newblock Kernel density estimators.
+\newblock \emph{Multivariate Density Estimation: Theory, Practice, and
+  Visualization}, pp.\  125--193, 2008.
+
+\bibitem[Seaman \& Powell(1996)Seaman and Powell]{seaman1996evaluation}
+Seaman, D~Erran and Powell, Roger~A.
+\newblock An evaluation of the accuracy of kernel density estimators for home
+  range analysis.
+\newblock \emph{Ecology}, 77\penalty0 (7):\penalty0 2075--2085, 1996.
+
+\bibitem[Seiffert et~al.(2010)Seiffert, Khoshgoftaar, Van~Hulse, and
+  Napolitano]{rusboost}
+Seiffert, Chris, Khoshgoftaar, Taghi~M, Van~Hulse, Jason, and Napolitano, Amri.
+\newblock Rusboost: A hybrid approach to alleviating class imbalance.
+\newblock \emph{IEEE Transactions on Systems, Man, and Cybernetics-Part A:
+  Systems and Humans}, 40\penalty0 (1):\penalty0 185--197, 2010.
+
+\bibitem[Singer et~al.(2009)Singer, Erban, Kevrekidis, and
+  Coifman]{singer2009detecting}
+Singer, Amit, Erban, Radek, Kevrekidis, Ioannis~G, and Coifman, Ronald~R.
+\newblock Detecting intrinsic slow variables in stochastic dynamical systems by
+  anisotropic diffusion maps.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 106\penalty0
+  (38):\penalty0 16090--16095, 2009.
+
+\bibitem[Varanasi \& Aazhang(1989)Varanasi and Aazhang]{varanasi1989parametric}
+Varanasi, Mahesh~K and Aazhang, Behnaam.
+\newblock Parametric generalized gaussian density estimation.
+\newblock \emph{The Journal of the Acoustical Society of America}, 86\penalty0
+  (4):\penalty0 1404--1415, 1989.
+
+\bibitem[Velten et~al.(2017)Velten, Haas, Raffel, Blaszkiewicz, Islam, Hennig,
+  Hirche, Lutz, Buss, Nowak, et~al.]{velten2017human}
+Velten, Lars, Haas, Simon~F, Raffel, Simon, Blaszkiewicz, Sandra, Islam,
+  Saiful, Hennig, Bianca~P, Hirche, Christoph, Lutz, Christoph, Buss, Eike~C,
+  Nowak, Daniel, et~al.
+\newblock Human haematopoietic stem cell lineage commitment is a continuous
+  process.
+\newblock \emph{Nat. Cell Biol}, 19:\penalty0 271--281, 2017.
+
+\bibitem[Vincent \& Bengio(2003)Vincent and Bengio]{parzen1}
+Vincent, Pascal and Bengio, Yoshua.
+\newblock Manifold parzen windows.
+\newblock In \emph{Advances in neural information processing systems}, pp.\
+  849--856, 2003.
+
+\bibitem[Weiss(2004)]{weiss2004mining}
+Weiss, Gary~M.
+\newblock Mining with rarity: a unifying framework.
+\newblock \emph{ACM Sigkdd Explorations Newsletter}, 6\penalty0 (1):\penalty0
+  7--19, 2004.
+
+\bibitem[Wu(2012)]{wu2012uniform}
+Wu, Junjie.
+\newblock The uniform effect of k-means clustering.
+\newblock In \emph{Advances in K-means Clustering}, pp.\  17--35. Springer,
+  2012.
+
+\bibitem[Xuan et~al.(2013)Xuan, Zhigang, and Fan]{xuan2013exploring}
+Xuan, Li, Zhigang, Chen, and Fan, Yang.
+\newblock Exploring of clustering algorithm on class-imbalanced data.
+\newblock In \emph{Computer Science \& Education (ICCSE), 2013 8th
+  International Conference on}, pp.\  89--93. IEEE, 2013.
+
+\bibitem[Zelnik-Manor \& Perona(2005)Zelnik-Manor and Perona]{GKernelZelnik}
+Zelnik-Manor, Lihi and Perona, Pietro.
+\newblock Self-tuning spectral clustering.
+\newblock In \emph{Advances in neural information processing systems}, pp.\
+  1601--1608, 2005.
+
+\end{thebibliography}

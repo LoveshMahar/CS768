@@ -1,0 +1,603 @@
+@inproceedings{
+ouyang2022training,
+title={Training language models to follow instructions with human feedback},
+author={Long Ouyang and Jeffrey Wu and Xu Jiang and Diogo Almeida and Carroll Wainwright and Pamela Mishkin and Chong Zhang and Sandhini Agarwal and Katarina Slama and Alex Gray and John Schulman and Jacob Hilton and Fraser Kelton and Luke Miller and Maddie Simens and Amanda Askell and Peter Welinder and Paul Christiano and Jan Leike and Ryan Lowe},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=TG8KACxEON}
+}
+@inproceedings{nangia-etal-2020-crows,
+    title = "{C}row{S}-Pairs: A Challenge Dataset for Measuring Social Biases in Masked Language Models",
+    author = "Nangia, Nikita  and
+      Vania, Clara  and
+      Bhalerao, Rasika  and
+      Bowman, Samuel R.",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.154",
+    doi = "10.18653/v1/2020.emnlp-main.154",
+    pages = "1953--1967",
+    abstract = "Pretrained language models, especially masked language models (MLMs) have seen success across many NLP tasks. However, there is ample evidence that they use the cultural biases that are undoubtedly present in the corpora they are trained on, implicitly creating harm with biased representations. To measure some forms of social bias in language models against protected demographic groups in the US, we introduce the Crowdsourced Stereotype Pairs benchmark (CrowS-Pairs). CrowS-Pairs has 1508 examples that cover stereotypes dealing with nine types of bias, like race, religion, and age. In CrowS-Pairs a model is presented with two sentences: one that is more stereotyping and another that is less stereotyping. The data focuses on stereotypes about historically disadvantaged groups and contrasts them with advantaged groups. We find that all three of the widely-used MLMs we evaluate substantially favor sentences that express stereotypes in every category in CrowS-Pairs. As work on building less biased models advances, this dataset can be used as a benchmark to evaluate progress.",
+}
+@article{perez2022discovering,
+  title={Discovering Language Model Behaviors with Model-Written Evaluations},
+  author={Perez, Ethan and Ringer, Sam and Luko{\v{s}}i{\=u}t{\.e}, Kamil{\.e} and Nguyen, Karina and Chen, Edwin and Heiner, Scott and Pettit, Craig and Olsson, Catherine and Kundu, Sandipan and Kadavath, Saurav and others},
+  journal={arXiv preprint arXiv:2212.09251},
+  year={2022}
+}
+@inproceedings{gehman-etal-2020-realtoxicityprompts,
+    title = "{R}eal{T}oxicity{P}rompts: Evaluating Neural Toxic Degeneration in Language Models",
+    author = "Gehman, Samuel  and
+      Gururangan, Suchin  and
+      Sap, Maarten  and
+      Choi, Yejin  and
+      Smith, Noah A.",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2020",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.findings-emnlp.301",
+    doi = "10.18653/v1/2020.findings-emnlp.301",
+    pages = "3356--3369",
+    abstract = "Pretrained neural language models (LMs) are prone to generating racist, sexist, or otherwise toxic language which hinders their safe deployment. We investigate the extent to which pretrained LMs can be prompted to generate toxic language, and the effectiveness of controllable text generation algorithms at preventing such toxic degeneration. We create and release RealToxicityPrompts, a dataset of 100K naturally occurring, sentence-level prompts derived from a large corpus of English web text, paired with toxicity scores from a widely-used toxicity classifier. Using RealToxicityPrompts, we find that pretrained LMs can degenerate into toxic text even from seemingly innocuous prompts. We empirically assess several controllable generation methods, and find that while data- or compute-intensive methods (e.g., adaptive pretraining on non-toxic data) are more effective at steering away from toxicity than simpler solutions (e.g., banning {``}bad{''} words), no current method is failsafe against neural toxic degeneration. To pinpoint the potential cause of such persistent toxic degeneration, we analyze two web text corpora used to pretrain several LMs (including GPT-2; Radford et. al, 2019), and find a significant amount of offensive, factually unreliable, and otherwise toxic content. Our work provides a test bed for evaluating toxic generations by LMs and stresses the need for better data selection processes for pretraining.",
+}
+@article{askell2021general,
+  title={A general language assistant as a laboratory for alignment},
+  author={Askell, Amanda and Bai, Yuntao and Chen, Anna and Drain, Dawn and Ganguli, Deep and Henighan, Tom and Jones, Andy and Joseph, Nicholas and Mann, Ben and DasSarma, Nova and others},
+  journal={arXiv preprint arXiv:2112.00861},
+  year={2021}
+}
+
+@article{bai2022training,
+  title={Training a helpful and harmless assistant with reinforcement learning from human feedback},
+  author={Bai, Yuntao and Jones, Andy and Ndousse, Kamal and Askell, Amanda and Chen, Anna and DasSarma, Nova and Drain, Dawn and Fort, Stanislav and Ganguli, Deep and Henighan, Tom and others},
+  journal={arXiv preprint arXiv:2204.05862},
+  year={2022}
+}
+
+@article{ganguli2023capacity,
+  title={The Capacity for Moral Self-Correction in Large Language Models},
+  author={Ganguli, Deep and Askell, Amanda and Schiefer, Nicholas and Liao, Thomas and Luko{\v{s}}i{\=u}t{\.e}, Kamil{\.e} and Chen, Anna and Goldie, Anna and Mirhoseini, Azalia and Olsson, Catherine and Hernandez, Danny and others},
+  journal={arXiv preprint arXiv:2302.07459},
+  year={2023}
+}
+
+@inproceedings{paul2017rlhf,
+ author = {Christiano, Paul F and Leike, Jan and Brown, Tom and Martic, Miljan and Legg, Shane and Amodei, Dario},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Deep Reinforcement Learning from Human Preferences},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2017/file/d5e2c0adad503c91f91df240d0cd4e49-Paper.pdf},
+ volume = {30},
+ year = {2017}
+}
+
+@article{rae2021scaling,
+  title={Scaling language models: Methods, analysis \& insights from training gopher},
+  author={Rae, Jack W and Borgeaud, Sebastian and Cai, Trevor and Millican, Katie and Hoffmann, Jordan and Song, Francis and Aslanides, John and Henderson, Sarah and Ring, Roman and Young, Susannah and others},
+  journal={arXiv preprint arXiv:2112.11446},
+  year={2021}
+}
+
+@inproceedings{
+zhu2023principled,
+title={Principled Reinforcement Learning with Human Feedback from Pairwise or \$K\$-wise Comparisons},
+author={Banghua Zhu and Jiantao Jiao and Michael Jordan},
+booktitle={ICLR 2023 Workshop on Mathematical and Empirical Understanding of Foundation Models},
+year={2023},
+url={https://openreview.net/forum?id=pm_WNYd7SP}
+}
+
+@inproceedings{wallace-etal-2019-universal,
+    title = "Universal Adversarial Triggers for Attacking and Analyzing {NLP}",
+    author = "Wallace, Eric  and
+      Feng, Shi  and
+      Kandpal, Nikhil  and
+      Gardner, Matt  and
+      Singh, Sameer",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1221",
+    doi = "10.18653/v1/D19-1221",
+    pages = "2153--2162",
+    abstract = "Adversarial examples highlight model vulnerabilities and are useful for evaluation and interpretation. We define universal adversarial triggers: input-agnostic sequences of tokens that trigger a model to produce a specific prediction when concatenated to any input from a dataset. We propose a gradient-guided search over tokens which finds short trigger sequences (e.g., one word for classification and four words for language modeling) that successfully trigger the target prediction. For example, triggers cause SNLI entailment accuracy to drop from 89.94{\%} to 0.55{\%}, 72{\%} of {``}why{''} questions in SQuAD to be answered {``}to kill american people{''}, and the GPT-2 language model to spew racist output even when conditioned on non-racial contexts. Furthermore, although the triggers are optimized using white-box access to a specific model, they transfer to other models for all tasks we consider. Finally, since triggers are input-agnostic, they provide an analysis of global model behavior. For instance, they confirm that SNLI models exploit dataset biases and help to diagnose heuristics learned by reading comprehension models.",
+}
+
+@inproceedings{yu-sagae-2021-automatically,
+    title = "Automatically Exposing Problems with Neural Dialog Models",
+    author = "Yu, Dian  and
+      Sagae, Kenji",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.37",
+    doi = "10.18653/v1/2021.emnlp-main.37",
+    pages = "456--470",
+    abstract = "Neural dialog models are known to suffer from problems such as generating unsafe and inconsistent responses. Even though these problems are crucial and prevalent, they are mostly manually identified by model designers through interactions. Recently, some research instructs crowdworkers to goad the bots into triggering such problems. However, humans leverage superficial clues such as hate speech, while leaving systematic problems undercover. In this paper, we propose two methods including reinforcement learning to automatically trigger a dialog model into generating problematic responses. We show the effect of our methods in exposing safety and contradiction issues with state-of-the-art dialog models.",
+}
+
+@inproceedings{xu-etal-2021-bot,
+    title = "Bot-Adversarial Dialogue for Safe Conversational Agents",
+    author = "Xu, Jing  and
+      Ju, Da  and
+      Li, Margaret  and
+      Boureau, Y-Lan  and
+      Weston, Jason  and
+      Dinan, Emily",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.235",
+    doi = "10.18653/v1/2021.naacl-main.235",
+    pages = "2950--2968",
+    abstract = "Conversational agents trained on large unlabeled corpora of human interactions will learn patterns and mimic behaviors therein, which include offensive or otherwise toxic behavior. We introduce a new human-and-model-in-the-loop framework for evaluating the toxicity of such models, and compare a variety of existing methods in both the cases of non-adversarial and adversarial users that expose their weaknesses. We then go on to propose two novel methods for safe conversational agents, by either training on data from our new human-and-model-in-the-loop framework in a two-stage system, or {''}baking-in{''} safety to the generative model itself. We find our new techniques are (i) safer than existing models; while (ii) maintaining usability metrics such as engagingness relative to state-of-the-art chatbots. In contrast, we expose serious safety issues in existing standard systems like GPT2, DialoGPT, and BlenderBot.",
+}
+
+@inproceedings{lin-etal-2022-truthfulqa,
+    title = "{T}ruthful{QA}: Measuring How Models Mimic Human Falsehoods",
+    author = "Lin, Stephanie  and
+      Hilton, Jacob  and
+      Evans, Owain",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.229",
+    doi = "10.18653/v1/2022.acl-long.229",
+    pages = "3214--3252",
+    abstract = "We propose a benchmark to measure whether a language model is truthful in generating answers to questions. The benchmark comprises 817 questions that span 38 categories, including health, law, finance and politics. We crafted questions that some humans would answer falsely due to a false belief or misconception. To perform well, models must avoid generating false answers learned from imitating human texts. We tested GPT-3, GPT-Neo/J, GPT-2 and a T5-based model. The best model was truthful on 58{\%} of questions, while human performance was 94{\%}. Models generated many false answers that mimic popular misconceptions and have the potential to deceive humans. The largest models were generally the least truthful. This contrasts with other NLP tasks, where performance improves with model size. However, this result is expected if false answers are learned from the training distribution. We suggest that scaling up models alone is less promising for improving truthfulness than fine-tuning using training objectives other than imitation of text from the web.",
+}
+
+@inproceedings{hutchinson-etal-2020-social,
+    title = "Social Biases in {NLP} Models as Barriers for Persons with Disabilities",
+    author = "Hutchinson, Ben  and
+      Prabhakaran, Vinodkumar  and
+      Denton, Emily  and
+      Webster, Kellie  and
+      Zhong, Yu  and
+      Denuyl, Stephen",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.487",
+    doi = "10.18653/v1/2020.acl-main.487",
+    pages = "5491--5501",
+    abstract = "Building equitable and inclusive NLP technologies demands consideration of whether and how social attitudes are represented in ML models. In particular, representations encoded in models often inadvertently perpetuate undesirable social biases from the data on which they are trained. In this paper, we present evidence of such undesirable biases towards mentions of disability in two different English language models: toxicity prediction and sentiment analysis. Next, we demonstrate that the neural embeddings that are the critical first step in most NLP pipelines similarly contain undesirable biases towards mentions of disability. We end by highlighting topical biases in the discourse about disability which may contribute to the observed model biases; for instance, gun violence, homelessness, and drug addiction are over-represented in texts discussing mental illness.",
+}
+
+@inproceedings{venkit-etal-2022-study,
+    title = "A Study of Implicit Bias in Pretrained Language Models against People with Disabilities",
+    author = "Venkit, Pranav Narayanan  and
+      Srinath, Mukund  and
+      Wilson, Shomir",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.113",
+    pages = "1324--1332",
+    abstract = "Pretrained language models (PLMs) have been shown to exhibit sociodemographic biases, such as against gender and race, raising concerns of downstream biases in language technologies. However, PLMs{'} biases against people with disabilities (PWDs) have received little attention, in spite of their potential to cause similar harms. Using perturbation sensitivity analysis, we test an assortment of popular word embedding-based and transformer-based PLMs and show significant biases against PWDs in all of them. The results demonstrate how models trained on large corpora widely favor ableist language.",
+}
+
+@inproceedings{Radford2019LanguageMA,
+  title={Language Models are Unsupervised Multitask Learners},
+  author={Alec Radford and Jeff Wu and Rewon Child and David Luan and Dario Amodei and Ilya Sutskever},
+  year={2019}
+}
+
+@inproceedings{devlin-etal-2019-bert,
+    title = "{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    author = "Devlin, Jacob  and
+      Chang, Ming-Wei  and
+      Lee, Kenton  and
+      Toutanova, Kristina",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1423",
+    doi = "10.18653/v1/N19-1423",
+    pages = "4171--4186",
+    abstract = "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5 (7.7 point absolute improvement), MultiNLI accuracy to 86.7{\%} (4.6{\%} absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).",
+}
+
+@article{brown2020language,
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={1877--1901},
+  year={2020}
+}
+
+@article{valiant1984theory,
+  title={A theory of the learnable},
+  author={Valiant, Leslie G},
+  journal={Communications of the ACM},
+  volume={27},
+  number={11},
+  pages={1134--1142},
+  year={1984},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{
+wies2023learnability,
+title={The Learnability of In-Context Learning},
+author={Noam Wies and Yoav Levine and Amnon Shashua},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=f3JNQd7CHM}
+}
+
+@article{wei2021pretrained,
+  title={Why do pretrained language models help in downstream tasks? an analysis of head and prompt tuning},
+  author={Wei, Colin and Xie, Sang Michael and Ma, Tengyu},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={16158--16170},
+  year={2021}
+}
+
+@inproceedings{
+saunshi2020mathematical,
+title={A Mathematical Exploration of Why Language Models Help Solve Downstream Tasks},
+author={Nikunj Saunshi and Sadhika Malladi and Sanjeev Arora},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=vVjIW3sEc1s}
+}
+
+@inproceedings{scao2021many,
+    title = "How many data points is a prompt worth?",
+    author = "Le Scao, Teven  and
+      Rush, Alexander",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.208",
+    doi = "10.18653/v1/2021.naacl-main.208",
+    pages = "2627--2636",
+    abstract = "When fine-tuning pretrained models for classification, researchers either use a generic model head or a task-specific prompt for prediction. Proponents of prompting have argued that prompts provide a method for injecting task-specific guidance, which is beneficial in low-data regimes. We aim to quantify this benefit through rigorous testing of prompts in a fair setting: comparing prompted and head-based fine-tuning in equal conditions across many tasks and data sizes. By controlling for many sources of advantage, we find that prompting does indeed provide a benefit, and that this benefit can be quantified per task. Results show that prompting is often worth 100s of data points on average across classification tasks.",
+}
+
+@misc{gpt4,
+      title={GPT-4 Technical Report}, 
+      author={OpenAI},
+      year={2023},
+      eprint={2303.08774},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{bubeck2023sparks,
+  title={Sparks of artificial general intelligence: Early experiments with gpt-4},
+  author={Bubeck, S{\'e}bastien and Chandrasekaran, Varun and Eldan, Ronen and Gehrke, Johannes and Horvitz, Eric and Kamar, Ece and Lee, Peter and Lee, Yin Tat and Li, Yuanzhi and Lundberg, Scott and others},
+  journal={arXiv preprint arXiv:2303.12712},
+  year={2023}
+}
+
+@misc{tang2023zeroth,
+doi = {10.48550/ARXIV.2303.03751},
+url = {https://arxiv.org/abs/2303.03751},
+author = {Tang, Zhiwei and Rybin, Dmitry and Chang, Tsung-Hui},
+keywords = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+title = {Zeroth-Order Optimization Meets Human Feedback: Provable Learning via Ranking Oracles},
+publisher = {arXiv},
+year = {2023},
+}
+
+
+
+@article{shalev2020ethics,
+  title={On the ethics of building ai in a responsible manner},
+  author={Shalev-Shwartz, Shai and Shammah, Shaked and Shashua, Amnon},
+  journal={arXiv preprint arXiv:2004.04644},
+  year={2020}
+}
+
+@article{suicide_convincing,
+  title={Man ends his life after an AI chatbot 'encouraged' him to sacrifice himself to stop climate change},
+  author={Imane El Atillah},
+  journal={Euronews},
+  year={2023}
+}
+
+@article{nytimes_marry_reporter,
+  title={A Conversation With Bing’s Chatbot Left Me Deeply Unsettled},
+  author={Kevin Roose},
+  journal={New York Times},
+  year={2023}
+}
+
+@article{luigi_article,
+  title={The Waluigi Effect (mega-post)},
+  author={Cleo Nardo},
+  journal={Less Wrong},
+  year={2023}
+}
+
+@article{chatgpt,
+  title={Introducing ChatGPT},
+  author={
+  John Schulman and Barret Zoph and Christina Kim and Jacob Hilton and Jacob Menick and Jiayi Weng and Juan Felipe and Ceron Uribe and Liam Fedus and Luke Metz and Michael Pokorny and Rapha Gontijo Lopes and Shengjia Zhao and Arun Vijayvergiya and Eric Sigler and Adam Perelman and Chelsea Voss and Mike Heaton and Joel Parish and Dave Cummings and Rajeev Nayak and Valerie Balcom and David Schnurr and Tomer Kaftan and Chris Hallacy and Nicholas Turley and Noah Deutsch and Vik Goel and Jonathan Ward and Aris Konstantinidis and Wojciech Zaremba and Long Ouyang and Leonard Bogdonoff and Joshua Gross and David Medina and Sarah Yoo and Teddy Lee and Ryan Lowe and Dan Mossing and Joost Huizinga and Roger Jiang and Carroll Wainwright and Diogo Almeida and Steph Lin and Marvin Zhang and Kai Xiao and Katarina Slama and Steven Bills and Alex Gray and Jan Leike and Jakub Pachocki and Phil Tillet and Shantanu Jain and Greg Brockman and Nick Ryder and Alex Paino and Qiming Yuan and Clemens Winter and Ben Wang and Mo Bavarian and Igor Babuschkin and Szymon Sidor and Ingmar Kanitscheider and Mikhail Pavlov and Matthias Plappert and Nik Tezak and Heewoo Jun and William Zhuk and Vitchyr Pong and Lukasz Kaiser and Jerry Tworek and Andrew Carr and Lilian Weng and Sandhini Agarwal and Karl Cobbe and Vineet Kosaraju and Alethea Power and Stanislas Polu and Jesse Han and Raul Puri and Shawn Jain and Benjamin Chess and Christian Gibson and Oleg Boiko and Emy Parparita and Amin Tootoonchian and Kyle Kosic and Christopher Hesse
+  },
+  journal={OpenAI blog},
+  year={2023}
+}
+
+@article{petition,
+  title={Musk, scientists call for halt to AI race sparked by ChatGPT},
+  author={Matt O'Brien},
+  journal={AP News},
+  year={2023}
+}
+
+@article{yudkowsky2001creating,
+  title={Creating friendly AI 1.0: The analysis and design of benevolent goal architectures},
+  author={Yudkowsky, Eliezer},
+  journal={The Singularity Institute, San Francisco, USA},
+  year={2001}
+}
+
+@article{taylor2016alignment,
+  title={Alignment for advanced machine learning systems},
+  author={Taylor, Jessica and Yudkowsky, Eliezer and LaVictoire, Patrick and Critch, Andrew},
+  journal={Ethics of Artificial Intelligence},
+  pages={342--382},
+  year={2016},
+  publisher={Oxford University Press Oxford, UK}
+}
+
+@article{nori2023capabilities,
+  title={Capabilities of gpt-4 on medical challenge problems},
+  author={Nori, Harsha and King, Nicholas and McKinney, Scott Mayer and Carignan, Dean and Horvitz, Eric},
+  journal={arXiv preprint arXiv:2303.13375},
+  year={2023}
+}
+
+@article{subhash2023can,
+  title={Can Large Language Models Change User Preference Adversarially?},
+  author={Subhash, Varshini},
+  journal={arXiv preprint arXiv:2302.10291},
+  year={2023}
+}
+
+@article{west2023advances,
+  title={Advances in apparent conceptual physics reasoning in GPT-4},
+  author={West, Colin G},
+  journal={arXiv e-prints},
+  pages={arXiv--2303},
+  year={2023}
+}
+
+@article{park2023generative,
+  title={Generative Agents: Interactive Simulacra of Human Behavior},
+  author={Park, Joon Sung and O'Brien, Joseph C and Cai, Carrie J and Morris, Meredith Ringel and Liang, Percy and Bernstein, Michael S},
+  journal={arXiv preprint arXiv:2304.03442},
+  year={2023}
+}
+
+@article{deshpande2023toxicity,
+  title={Toxicity in ChatGPT: Analyzing Persona-assigned Language Models},
+  author={Deshpande, Ameet and Murahari, Vishvak and Rajpurohit, Tanmay and Kalyan, Ashwin and Narasimhan, Karthik},
+  journal={arXiv preprint arXiv:2304.05335},
+  year={2023}
+}
+
+@inproceedings{
+oymak2023on,
+title={On the Role of Attention in Prompt-tuning},
+author={Samet Oymak and Ankit Singh Rawat and Mahdi Soltanolkotabi and Christos Thrampoulidis},
+booktitle={ICLR 2023 Workshop on Mathematical and Empirical Understanding of Foundation Models},
+year={2023},
+url={https://openreview.net/forum?id=NNKmx_iamfC}
+}
+
+@article{amodei2016concrete,
+  title={Concrete problems in AI safety},
+  author={Amodei, Dario and Olah, Chris and Steinhardt, Jacob and Christiano, Paul and Schulman, John and Man{\'e}, Dan},
+  journal={arXiv preprint arXiv:1606.06565},
+  year={2016}
+}
+
+@article{hendrycks2021unsolved,
+  title={Unsolved problems in ml safety},
+  author={Hendrycks, Dan and Carlini, Nicholas and Schulman, John and Steinhardt, Jacob},
+  journal={arXiv preprint arXiv:2109.13916},
+  year={2021}
+}
+
+@inproceedings{
+pan2022the,
+title={The Effects of Reward Misspecification: Mapping and Mitigating Misaligned Models},
+author={Alexander Pan and Kush Bhatia and Jacob Steinhardt},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=JYtwGwIL7ye}
+}
+
+@inproceedings{bender2021dangers,
+  title={On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?},
+  author={Bender, Emily M and Gebru, Timnit and McMillan-Major, Angelina and Shmitchell, Shmargaret},
+  booktitle={Proceedings of the 2021 ACM conference on fairness, accountability, and transparency},
+  pages={610--623},
+  year={2021}
+}
+
+@inproceedings{weidinger2022taxonomy,
+author = {Weidinger, Laura and Uesato, Jonathan and Rauh, Maribeth and Griffin, Conor and Huang, Po-Sen and Mellor, John and Glaese, Amelia and Cheng, Myra and Balle, Borja and Kasirzadeh, Atoosa and Biles, Courtney and Brown, Sasha and Kenton, Zac and Hawkins, Will and Stepleton, Tom and Birhane, Abeba and Hendricks, Lisa Anne and Rimell, Laura and Isaac, William and Haas, Julia and Legassick, Sean and Irving, Geoffrey and Gabriel, Iason},
+title = {Taxonomy of Risks Posed by Language Models},
+year = {2022},
+isbn = {9781450393522},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3531146.3533088},
+doi = {10.1145/3531146.3533088},
+abstract = {Responsible innovation on large-scale Language Models (LMs) requires foresight into and in-depth understanding of the risks these models may pose. This paper develops a comprehensive taxonomy of ethical and social risks associated with LMs. We identify twenty-one risks, drawing on expertise and literature from computer science, linguistics, and the social sciences. We situate these risks in our taxonomy of six risk areas: I. Discrimination, Hate speech and Exclusion, II. Information Hazards, III. Misinformation Harms, IV. Malicious Uses, V. Human-Computer Interaction Harms, and VI. Environmental and Socioeconomic harms. For risks that have already been observed in LMs, the causal mechanism leading to harm, evidence of the risk, and approaches to risk mitigation are discussed. We further describe and analyse risks that have not yet been observed but are anticipated based on assessments of other language technologies, and situate these in the same taxonomy. We underscore that it is the responsibility of organizations to engage with the mitigations we discuss throughout the paper. We close by highlighting challenges and directions for further research on risk evaluation and mitigation with the goal of ensuring that language models are developed responsibly.},
+booktitle = {2022 ACM Conference on Fairness, Accountability, and Transparency},
+pages = {214–229},
+numpages = {16},
+keywords = {language models, responsible AI, risk assessment, responsible innovation, technology risks},
+location = {Seoul, Republic of Korea},
+series = {FAccT '22}
+}
+
+@inproceedings{nachum2021provale,
+ author = {Nachum, Ofir and Yang, Mengjiao},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+ pages = {30100--30112},
+ publisher = {Curran Associates, Inc.},
+ title = {Provable Representation Learning for Imitation with Contrastive Fourier Features},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/fd00d3474e495e7b6d5f9f575b2d7ec4-Paper.pdf},
+ volume = {34},
+ year = {2021}
+}
+
+@inproceedings{andreas2022language,
+    title = "Language Models as Agent Models",
+    author = "Andreas, Jacob",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-emnlp.423",
+    pages = "5769--5779",
+    abstract = "Language models (LMs) are trained on collections of documents, written by individual human agents to achieve specific goals in the outside world. During training, LMs have access only to text of these documents, with no direct evidence of the internal states of the agents that produced them{---}a fact often used to argue that LMs are incapable of modeling goal-directed aspects of human language production and comprehension. Can LMs trained on text learn anything at all about the relationship between language and use? I argue that LMs are models of communicative intentions in a specific, narrow sense. When performing next word prediction given a textual context, an LM can infer and represent properties of an agent likely to have produced that context. These representations can in turn influence subsequent LM generation in the same way that agents{'} communicative intentions influence their language. I survey findings from the recent literature showing that{---}even in today{'}s non-robust and error-prone models{---}LMs infer and use representations of fine-grained communicative intentions and high-level beliefs and goals. Despite the limited nature of their training data, they can thus serve as building blocks for systems that communicate and act intentionally.",
+}
+
+@article{ngo2022alignment,
+  title={The alignment problem from a deep learning perspective},
+  author={Ngo, Richard},
+  journal={arXiv preprint arXiv:2209.00626},
+  year={2022}
+}
+
+@article{ge2023provable,
+  title={On the Provable Advantage of Unsupervised Pretraining},
+  author={Ge, Jiawei and Tang, Shange and Fan, Jianqing and Jin, Chi},
+  journal={arXiv preprint arXiv:2303.01566},
+  year={2023}
+}
+
+@article{nishiyama2019new,
+  title={A new lower bound for kullback-leibler divergence based on hammersley-chapman-robbins bound},
+  author={Nishiyama, Tomohiro},
+  journal={arXiv preprint arXiv:1907.00288},
+  year={2019}
+}
+
+@article{meta2023introducing,
+  title={Introducing LLaMA: A foundational, 65-billion-parameter large language model},
+  author={Meta, AI},
+  journal={Meta AI. https://ai. facebook. com/blog/large-language-model-llama-meta-ai},
+  year={2023}
+}
+
+
+@article{nishiyama2022lower,
+  title={Lower Bounds for the Total Variation Distance Given Means and Variances of Distributions},
+  author={Nishiyama, Tomohiro},
+  journal={arXiv preprint arXiv:2212.05820},
+  year={2022}
+}
+
+@inproceedings{
+levine2022the,
+title={The Inductive Bias of In-Context Learning: Rethinking Pretraining Example Design},
+author={Yoav Levine and Noam Wies and Daniel Jannai and Dan Navon and Yedid Hoshen and Amnon Shashua},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=lnEaqbTJIRz}
+}
+
+@MISC {mario2014maximum,
+    TITLE = {How do you prove ${n \choose k}$ is maximum when $k$ is $ \lceil \tfrac n2 \rceil$ or $ \lfloor \tfrac n2\rfloor $?},
+    AUTHOR = {Mario Carneiro (https://math.stackexchange.com/users/50776/mario-carneiro)},
+    HOWPUBLISHED = {Mathematics Stack Exchange},
+    NOTE = {URL:https://math.stackexchange.com/q/723017 (version: 2014-03-23)},
+    EPRINT = {https://math.stackexchange.com/q/723017},
+    URL = {https://math.stackexchange.com/q/723017}
+}
+
+@inproceedings{
+hu2021lora,
+title={Lo{RA}: Low-Rank Adaptation of Large Language Models},
+author={Edward J Hu and yelong shen and Phillip Wallis and Zeyuan Allen-Zhu and Yuanzhi Li and Shean Wang and Lu Wang and Weizhu Chen},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=nZeVKeeFYf9}
+}
+
+@Misc{peft,
+  title =        {PEFT: State-of-the-art Parameter-Efficient Fine-Tuning methods},
+  author =       {Sourab Mangrulkar and Sylvain Gugger and Lysandre Debut and Younes Belkada and Sayak Paul},
+  howpublished = {\url{https://github.com/huggingface/peft}},
+  year =         {2022}
+}
+
+@article{touvron2023llama,
+  title={Llama 2: Open foundation and fine-tuned chat models},
+  author={Touvron, Hugo and Martin, Louis and Stone, Kevin and Albert, Peter and Almahairi, Amjad and Babaei, Yasmine and Bashlykov, Nikolay and Batra, Soumya and Bhargava, Prajjwal and Bhosale, Shruti and others},
+  journal={arXiv preprint arXiv:2307.09288},
+  year={2023}
+}
+
+@article{zou2023representation,
+  title={Representation engineering: A top-down approach to ai transparency},
+  author={Zou, Andy and Phan, Long and Chen, Sarah and Campbell, James and Guo, Phillip and Ren, Richard and Pan, Alexander and Yin, Xuwang and Mazeika, Mantas and Dombrowski, Ann-Kathrin and others},
+  journal={arXiv preprint arXiv:2310.01405},
+  year={2023}
+}
+
+@article{turner2023activation,
+  title={Activation addition: Steering language models without optimization},
+  author={Turner, Alex and Thiergart, Lisa and Udell, David and Leech, Gavin and Mini, Ulisse and MacDiarmid, Monte},
+  journal={arXiv preprint arXiv:2308.10248},
+  year={2023}
+}
+
+
+@article{liu2023aligning,
+  title={Aligning Large Language Models with Human Preferences through Representation Engineering},
+  author={Liu, Wenhao and Wang, Xiaohua and Wu, Muling and Li, Tianlong and Lv, Changze and Ling, Zixuan and Zhu, Jianhao and Zhang, Cenyuan and Zheng, Xiaoqing and Huang, Xuanjing},
+  journal={arXiv preprint arXiv:2312.15997},
+  year={2023}
+}
+
+@article{jorgensen2023improving,
+  title={Improving Activation Steering in Language Models with Mean-Centring},
+  author={Jorgensen, Ole and Cope, Dylan and Schoots, Nandi and Shanahan, Murray},
+  journal={arXiv preprint arXiv:2312.03813},
+  year={2023}
+}
+
+@article{leong2023self,
+  title={Self-Detoxifying Language Models via Toxification Reversal},
+  author={Leong, Chak Tou and Cheng, Yi and Wang, Jiashuo and Wang, Jian and Li, Wenjie},
+  journal={arXiv preprint arXiv:2310.09573},
+  year={2023}
+}

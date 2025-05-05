@@ -1,0 +1,17 @@
+We initiate the study of coresets for clustering in graph metrics, i.e., the
+shortest-path metric of edge-weighted graphs. Such clustering problems are
+essential to data analysis and used for example in road networks and data
+visualization. A coreset is a compact summary of the data that approximately
+preserves the clustering objective for every possible center set, and it offers
+significant efficiency improvements in terms of running time, storage, and
+communication, including in streaming and distributed settings. Our main result
+is a near-linear time construction of a coreset for k-Median in a general graph
+$G$, with size $O_{\epsilon, k}(\mathrm{tw}(G))$ where $\mathrm{tw}(G)$ is the
+treewidth of $G$, and we complement the construction with a nearly-tight size
+lower bound. The construction is based on the framework of Feldman and Langberg
+[STOC 2011], and our main technical contribution, as required by this
+framework, is a uniform bound of $O(\mathrm{tw}(G))$ on the shattering
+dimension under any point weights. We validate our coreset on real-world road
+networks, and our scalable algorithm constructs tiny coresets with high
+accuracy, which translates to a massive speedup of existing approximation
+algorithms such as local search for graph k-Median.

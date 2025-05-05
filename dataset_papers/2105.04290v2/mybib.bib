@@ -1,0 +1,651 @@
+
+@inproceedings{wenger2020,
+  title = {Non-{{Parametric Calibration}} for {{Classification}}},
+  booktitle = {International {{Conference}} on {{Artificial Intelligence}} and {{Statistics}}},
+  author = {Wenger, Jonathan and Kjellstr{\"o}m, Hedvig and Triebel, Rudolph},
+  year = {2020},
+  month = jun,
+  pages = {178--190},
+  issn = {1938-7228},
+  abstract = {Many applications of classification methods not only require high accuracy but also reliable estimation of predictive uncertainty. However, while many current classification frameworks, in particul...},
+  chapter = {Machine Learning},
+  file = {/home/maxc01/Documents/Zotero/storage/LQ8FGRRA/Wenger2020.pdf},
+  keywords = {calibration},
+  language = {en}
+}
+
+@article{gao2014,
+  title = {On the {{Consistency}} of {{AUC Pairwise Optimization}}},
+  author = {Gao, Wei and Zhou, Zhi-Hua},
+  year = {2014},
+  month = jul,
+  abstract = {AUC (area under ROC curve) is an important evaluation criterion, which has been popularly used in many learning tasks such as class-imbalance learning, cost-sensitive learning, learning to rank, etc. Many learning approaches try to optimize AUC, while owing to the non-convexity and discontinuousness of AUC, almost all approaches work with surrogate loss functions. Thus, the consistency of AUC is crucial; however, it has been almost untouched before. In this paper, we provide a sufficient condition for the asymptotic consistency of learning approaches based on surrogate loss functions. Based on this result, we prove that exponential loss and logistic loss are consistent with AUC, but hinge loss is inconsistent. Then, we derive the \$q\$-norm hinge loss and general hinge loss that are consistent with AUC. We also derive the consistent bounds for exponential loss and logistic loss, and obtain the consistent bounds for many surrogate loss functions under the non-noise setting. Further, we disclose an equivalence between the exponential surrogate loss of AUC and exponential surrogate loss of accuracy, and one straightforward consequence of such finding is that AdaBoost and RankBoost are equivalent.},
+  archivePrefix = {arXiv},
+  eprint = {1208.0645},
+  eprinttype = {arxiv},
+  file = {/home/maxc01/Documents/Zotero/storage/9XQXHRC9/Gao2014.pdf},
+  journal = {arXiv:1208.0645 [cs, stat]},
+  primaryClass = {cs, stat}
+}
+
+
+
+@incollection{paszke2019,
+title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+booktitle = {Advances in Neural Information Processing Systems 32},
+pages = {8024--8035},
+year = {2019},
+publisher = {Curran Associates, Inc.}
+}
+
+@article{zagoruyko2016,
+  title = {Wide {{Residual Networks}}},
+  author = {Zagoruyko, Sergey and Komodakis, Nikos},
+  year = {2016},
+  month = may,
+  abstract = {Deep residual networks were shown to be able to scale up to thousands of layers and still have improving performance. However, each fraction of a percent of improved accuracy costs nearly doubling the number of layers, and so training very deep residual networks has a problem of diminishing feature reuse, which makes these networks very slow to train. To tackle these problems, in this paper we conduct a detailed experimental study on the architecture of ResNet blocks, based on which we propose a novel architecture where we decrease depth and increase width of residual networks. We call the resulting network structures wide residual networks (WRNs) and show that these are far superior over their commonly used thin and very deep counterparts. For example, we demonstrate that even a simple 16-layer-deep wide residual network outperforms in accuracy and efficiency all previous deep residual networks, including thousand-layer-deep networks, achieving new state-of-the-art results on CIFAR, SVHN, COCO, and significant improvements on ImageNet. Our code and models are available at https://github.com/szagoruyko/wide-residual-networks},
+  archivePrefix = {arXiv},
+  eprint = {1605.07146},
+  eprinttype = {arxiv},
+  file = {/home/maxc01/Documents/Zotero/storage/XG6QPGBB/Zagoruyko2016.pdf;/home/maxc01/Documents/Zotero/storage/FQQA5MAQ/1605.html},
+  journal = {arXiv:1605.07146 [cs]},
+  keywords = {residual},
+  primaryClass = {cs}
+}
+
+
+
+@inproceedings{huang2016b,
+  title = {Deep {{Networks}} with {{Stochastic Depth}}},
+  booktitle = {Computer {{Vision}} \textendash{} {{ECCV}} 2016},
+  author = {Huang, Gao and Sun, Yu and Liu, Zhuang and Sedra, Daniel and Weinberger, Kilian Q.},
+  editor = {Leibe, Bastian and Matas, Jiri and Sebe, Nicu and Welling, Max},
+  year = {2016},
+  pages = {646--661},
+  publisher = {{Springer International Publishing}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-319-46493-0_39},
+  abstract = {Very deep convolutional networks with hundreds of layers have led to significant reductions in error on competitive benchmarks. Although the unmatched expressiveness of the many layers can be highly desirable at test time, training very deep networks comes with its own set of challenges. The gradients can vanish, the forward flow often diminishes, and the training time can be painfully slow. To address these problems, we propose stochastic depth, a training procedure that enables the seemingly contradictory setup to train short networks and use deep networks at test time. We start with very deep networks but during training, for each mini-batch, randomly drop a subset of layers and bypass them with the identity function. This simple approach complements the recent success of residual networks. It reduces training time substantially and improves the test error significantly on almost all data sets that we used for evaluation. With stochastic depth we can increase the depth of residual networks even beyond 1200 layers and still yield meaningful improvements in test error (4.91 \% on CIFAR-10).},
+  file = {/home/maxc01/Documents/Zotero/storage/WLHKGXIY/Huang2016.pdf},
+  isbn = {978-3-319-46493-0},
+  language = {en},
+  series = {Lecture {{Notes}} in {{Computer Science}}}
+}
+
+
+
+@article{he2015,
+  title = {Deep {{Residual Learning}} for {{Image Recognition}}},
+  author = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  year = {2015},
+  month = dec,
+  abstract = {Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers---8x deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57\% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28\% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC \& COCO 2015 competitions, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.},
+  archivePrefix = {arXiv},
+  eprint = {1512.03385},
+  eprinttype = {arxiv},
+  file = {/home/maxc01/Documents/Zotero/storage/QCMXEB57/He2015.pdf;/home/maxc01/Documents/Zotero/storage/84ZTRIBN/1512.html},
+  journal = {arXiv:1512.03385 [cs]},
+  keywords = {residual},
+  primaryClass = {cs}
+}
+
+
+
+@article{huang2016,
+  title = {Densely {{Connected Convolutional Networks}}},
+  author = {Huang, Gao and Liu, Zhuang and Weinberger, Kilian Q. and {van der Maaten}, Laurens},
+  year = {2016},
+  month = aug,
+  abstract = {Recent work has shown that convolutional networks can be substantially deeper, more accurate, and efficient to train if they contain shorter connections between layers close to the input and those close to the output. In this paper, we embrace this observation and introduce the Dense Convolutional Network (DenseNet), which connects each layer to every other layer in a feed-forward fashion. Whereas traditional convolutional networks with L layers have L connections - one between each layer and its subsequent layer - our network has L(L+1)/2 direct connections. For each layer, the feature-maps of all preceding layers are used as inputs, and its own feature-maps are used as inputs into all subsequent layers. DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse, and substantially reduce the number of parameters. We evaluate our proposed architecture on four highly competitive object recognition benchmark tasks (CIFAR-10, CIFAR-100, SVHN, and ImageNet). DenseNets obtain significant improvements over the state-of-the-art on most of them, whilst requiring less memory and computation to achieve high performance. Code and models are available at https://github.com/liuzhuang13/DenseNet .},
+  archivePrefix = {arXiv},
+  eprint = {1608.06993},
+  eprinttype = {arxiv},
+  file = {/home/maxc01/Documents/Zotero/storage/MVFFKM4T/Huang2016.pdf},
+  journal = {arXiv:1608.06993 [cs]},
+  primaryClass = {cs}
+}
+
+
+
+
+@TECHREPORT{Krizhevsky09learningmultiple,
+    author = {Alex Krizhevsky},
+    title = {Learning multiple layers of features from tiny images},
+    institution = {},
+    year = {2009}
+}
+@inproceedings{deng2009imagenet,
+  title={Imagenet: A large-scale hierarchical image database},
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  booktitle={2009 IEEE conference on computer vision and pattern recognition},
+  pages={248--255},
+  year={2009},
+  organization={Ieee}
+}
+
+@article{zhang2020,
+  ids = {zhang2020a},
+  title = {Mix-n-{{Match}}: {{Ensemble}} and {{Compositional Methods}} for {{Uncertainty Calibration}} in {{Deep Learning}}},
+  shorttitle = {Mix-n-{{Match}}},
+  author = {Zhang, Jize and Kailkhura, Bhavya and Han, T. Yong-Jin},
+  year = {2020},
+  month = jun,
+  abstract = {This paper studies the problem of post-hoc calibration of machine learning classifiers. We introduce the following desiderata for uncertainty calibration: (a) accuracy-preserving, (b) data-efficient, and (c) high expressive power. We show that none of the existing methods satisfy all three requirements, and demonstrate how Mix-n-Match calibration strategies (i.e., ensemble and composition) can help achieve remarkably better data-efficiency and expressive power while provably maintaining the classification accuracy of the original classifier. Mix-n-Match strategies are generic in the sense that they can be used to improve the performance of any off-the-shelf calibrator. We also reveal potential issues in standard evaluation practices. Popular approaches (e.g., histogram-based expected calibration error (ECE)) may provide misleading results especially in small-data regime. Therefore, we propose an alternative data-efficient kernel density-based estimator for a reliable evaluation of the calibration performance and prove its asymptotically unbiasedness and consistency. Our approaches outperform state-of-the-art solutions on both the calibration as well as the evaluation tasks in most of the experimental settings. Our codes are available at https://github.com/zhang64-llnl/Mix-n-Match-Calibration.},
+  archivePrefix = {arXiv},
+  eprint = {2003.07329},
+  eprinttype = {arxiv},
+  file = {/home/maxc01/Documents/Zotero/storage/QUCVEEQX/Zhang2020.pdf},
+  journal = {arXiv:2003.07329 [cs, stat]},
+  keywords = {calibration},
+  primaryClass = {cs, stat}
+}
+
+
+
+
+
+@incollection{milios2018,
+  title = {Dirichlet-Based {{Gaussian Processes}} for {{Large}}-Scale {{Calibrated Classification}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}} 31},
+  author = {Milios, Dimitrios and Camoriano, Raffaello and Michiardi, Pietro and Rosasco, Lorenzo and Filippone, Maurizio},
+  editor = {Bengio, S. and Wallach, H. and Larochelle, H. and Grauman, K. and {Cesa-Bianchi}, N. and Garnett, R.},
+  year = {2018},
+  pages = {6005--6015},
+  publisher = {{Curran Associates, Inc.}},
+  file = {/home/maxc01/Documents/Zotero/storage/RUDXLZ3W/Milios2018.pdf},
+  keywords = {calibration}
+}
+
+@inproceedings{burges2005,
+  title = {Learning to Rank Using Gradient Descent},
+  booktitle = {Proceedings of the 22nd International Conference on {{Machine}} Learning},
+  author = {Burges, Chris and Shaked, Tal and Renshaw, Erin and Lazier, Ari and Deeds, Matt and Hamilton, Nicole and Hullender, Greg},
+  year = {2005},
+  month = aug,
+  pages = {89--96},
+  publisher = {{Association for Computing Machinery}},
+  address = {{New York, NY, USA}},
+  doi = {10.1145/1102351.1102363},
+  abstract = {We investigate using gradient descent methods for learning ranking functions; we propose a simple probabilistic cost function, and we introduce RankNet, an implementation of these ideas using a neural network to model the underlying ranking function. We present test results on toy data and on data from a commercial internet search engine.},
+  file = {/home/maxc01/Documents/Zotero/storage/BBZTPS6B/Burges2005.pdf},
+  isbn = {978-1-59593-180-1},
+  keywords = {ranking},
+  series = {{{ICML}} '05}
+}
+
+
+
+@article{clemencon2008,
+  title = {Ranking and {{Empirical Minimization}} of {{U}}-Statistics},
+  author = {Cl{\'e}men{\c c}on, St{\'e}phan and Lugosi, G{\'a}bor and Vayatis, Nicolas},
+  year = {2008},
+  month = apr,
+  volume = {36},
+  pages = {844--874},
+  publisher = {{Institute of Mathematical Statistics}},
+  issn = {0090-5364, 2168-8966},
+  doi = {10.1214/009052607000000910},
+  abstract = {The problem of ranking/ordering instances, instead of simply classifying them, has recently gained much attention in machine learning. In this paper we formulate the ranking problem in a rigorous statistical framework. The goal is to learn a ranking rule for deciding, among two instances, which one is ``better,'' with minimum ranking risk. Since the natural estimates of the risk are of the form of a U-statistic, results of the theory of U-processes are required for investigating the consistency of empirical risk minimizers. We establish, in particular, a tail inequality for degenerate U-processes, and apply it for showing that fast rates of convergence may be achieved under specific noise assumptions, just like in classification. Convex risk minimization methods are also studied.},
+  file = {/home/maxc01/Documents/Zotero/storage/NVY2ZR86/Clémençon2008.pdf},
+  journal = {Annals of Statistics},
+  keywords = {ranking},
+  language = {EN},
+  mrnumber = {MR2396817},
+  number = {2},
+  zmnumber = {1181.68160}
+}
+
+
+
+@article{freund2003,
+  title = {An Efficient Boosting Algorithm for Combining Preferences},
+  author = {Freund, Yoav and Iyer, Raj and Schapire, Robert E. and Singer, Yoram},
+  year = {2003},
+  month = dec,
+  volume = {4},
+  pages = {933--969},
+  issn = {1532-4435},
+  abstract = {We study the problem of learning to accurately rank a set of objects by combining a given collection of ranking or preference functions. This problem of combining preferences arises in several applications, such as that of combining the results of different search engines, or the "collaborative-filtering" problem of ranking movies for a user based on the movie rankings provided by other users. In this work, we begin by presenting a formal framework for this general problem. We then describe and analyze an efficient algorithm called RankBoost for combining preferences based on the boosting approach to machine learning. We give theoretical results describing the algorithm's behavior both on the training data, and on new test data not seen during training. We also describe an efficient implementation of the algorithm for a particular restricted but common case. We next discuss two experiments we carried out to assess the performance of RankBoost. In the first experiment, we used the algorithm to combine different web search strategies, each of which is a query expansion for a given domain. The second experiment is a collaborative-filtering task for making movie recommendations.},
+  file = {/home/maxc01/Documents/Zotero/storage/6EREVH55/Freund2003.pdf},
+  journal = {The Journal of Machine Learning Research},
+  number = {null}
+}
+
+
+
+@article{williamson2016,
+  title = {Composite {{Multiclass Losses}}},
+  author = {Williamson, Robert C. and Vernet, Elodie and Reid, Mark D.},
+  year = {2016},
+  volume = {17},
+  pages = {1--52},
+  issn = {1533-7928},
+  file = {/home/maxc01/Documents/Zotero/storage/L4NW3QC6/Williamson2016.pdf},
+  journal = {Journal of Machine Learning Research},
+  number = {222}
+}
+
+
+
+@article{patel2020,
+  title = {Multi-{{Class Uncertainty Calibration}} via {{Mutual Information Maximization}}-Based {{Binning}}},
+  author = {Patel, Kanil and Beluch, William and Yang, Bin and Pfeiffer, Michael and Zhang, Dan},
+  year = {2020},
+  month = sep,
+  abstract = {Post-hoc calibration is a common approach for providing high-quality confidence estimates of deep neural network predictions. Recent work has shown that widely used scaling methods underestimate their calibration error, while alternative Histogram Binning (HB) methods with verifiable calibration performance often fail to preserve classification accuracy. In the case of multi-class calibration with a large number of classes K, HB also faces the issue of severe sample-inefficiency due to a large class imbalance resulting from the conversion into K one-vs-rest class-wise calibration problems. The goal of this paper is to resolve the identified issues of HB in order to provide verified and calibrated confidence estimates using only a small holdout calibration dataset for bin optimization while preserving multi-class ranking accuracy. From an information-theoretic perspective, we derive the I-Max concept for binning, which maximizes the mutual information between labels and binned (quantized) logits. This concept mitigates potential loss in ranking performance due to lossy quantization, and by disentangling the optimization of bin edges and representatives allows simultaneous improvement of ranking and calibration performance. In addition, we propose a shared class-wise (sCW) binning strategy that fits a single calibrator on the merged training sets of all K class-wise problems, yielding reliable estimates from a small calibration set. The combination of sCW and I-Max binning outperforms the state of the art calibration methods on various evaluation metrics across different benchmark datasets and models, even when using only a small set of calibration data, e.g. 1k samples for ImageNet.},
+  archivePrefix = {arXiv},
+  eprint = {2006.13092},
+  eprinttype = {arxiv},
+  file = {/home/maxc01/Documents/Zotero/storage/3TNN4NCY/Patel2020.pdf},
+  journal = {arXiv:2006.13092 [cs, stat]},
+  keywords = {calibration},
+  primaryClass = {cs, stat}
+}
+
+
+
+
+
+@article{pereyra2017,
+  title = {Regularizing {{Neural Networks}} by {{Penalizing Confident Output Distributions}}},
+  author = {Pereyra, Gabriel and Tucker, George and Chorowski, Jan and Kaiser, {\L}ukasz and Hinton, Geoffrey},
+  year = {2017},
+  month = jan,
+  abstract = {We systematically explore regularizing neural networks by penalizing low entropy output distributions. We show that penalizing low entropy output distributions, which has been shown to improve exploration in reinforcement learning, acts as a strong regularizer in supervised learning. Furthermore, we connect a maximum entropy based confidence penalty to label smoothing through the direction of the KL divergence. We exhaustively evaluate the proposed confidence penalty and label smoothing on 6 common benchmarks: image classification (MNIST and Cifar-10), language modeling (Penn Treebank), machine translation (WMT'14 English-to-German), and speech recognition (TIMIT and WSJ). We find that both label smoothing and the confidence penalty improve state-of-the-art models across benchmarks without modifying existing hyperparameters, suggesting the wide applicability of these regularizers.},
+  archivePrefix = {arXiv},
+  eprint = {1701.06548},
+  eprinttype = {arxiv},
+  file = {/home/maxc01/Documents/Zotero/storage/D64GEFA3/Pereyra2017.pdf},
+  journal = {arXiv:1701.06548 [cs]},
+  primaryClass = {cs}
+}
+
+
+
+
+@incollection{malinin2018,
+  title = {Predictive {{Uncertainty Estimation}} via {{Prior Networks}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}} 31},
+  author = {Malinin, Andrey and Gales, Mark},
+  editor = {Bengio, S. and Wallach, H. and Larochelle, H. and Grauman, K. and {Cesa-Bianchi}, N. and Garnett, R.},
+  year = {2018},
+  pages = {7047--7058},
+  publisher = {{Curran Associates, Inc.}},
+  file = {/home/maxc01/Documents/Zotero/storage/ZD7SUPJJ/Malinin2018.pdf},
+  keywords = {nips2018,uncertainty}
+}
+
+
+
+@article{wilson2016,
+  title = {Stochastic {{Variational Deep Kernel Learning}}},
+  author = {Wilson, Andrew Gordon and Hu, Zhiting and Salakhutdinov, Ruslan and Xing, Eric P.},
+  year = {2016},
+  month = nov,
+  abstract = {Deep kernel learning combines the non-parametric flexibility of kernel methods with the inductive biases of deep learning architectures. We propose a novel deep kernel learning model and stochastic variational inference procedure which generalizes deep kernel learning approaches to enable classification, multi-task learning, additive covariance structures, and stochastic gradient training. Specifically, we apply additive base kernels to subsets of output features from deep neural architectures, and jointly learn the parameters of the base kernels and deep network through a Gaussian process marginal likelihood objective. Within this framework, we derive an efficient form of stochastic variational inference which leverages local kernel interpolation, inducing points, and structure exploiting algebra. We show improved performance over stand alone deep networks, SVMs, and state of the art scalable Gaussian processes on several classification benchmarks, including an airline delay dataset containing 6 million training points, CIFAR, and ImageNet.},
+  archivePrefix = {arXiv},
+  eprint = {1611.00336},
+  eprinttype = {arxiv},
+  file = {/home/maxc01/Documents/Zotero/storage/JPCX858S/Wilson2016.pdf},
+  journal = {arXiv:1611.00336 [cs, stat]},
+  primaryClass = {cs, stat}
+}
+
+
+
+
+@article{lakshminarayanan2016,
+  title = {Simple and {{Scalable Predictive Uncertainty Estimation}} Using {{Deep Ensembles}}},
+  author = {Lakshminarayanan, Balaji and Pritzel, Alexander and Blundell, Charles},
+  year = {2016},
+  month = dec,
+  abstract = {Deep neural networks (NNs) are powerful black box predictors that have recently achieved impressive performance on a wide spectrum of tasks. Quantifying predictive uncertainty in NNs is a challenging and yet unsolved problem. Bayesian NNs, which learn a distribution over weights, are currently the state-of-the-art for estimating predictive uncertainty; however these require significant modifications to the training procedure and are computationally expensive compared to standard (non-Bayesian) NNs. We propose an alternative to Bayesian NNs that is simple to implement, readily parallelizable, requires very little hyperparameter tuning, and yields high quality predictive uncertainty estimates. Through a series of experiments on classification and regression benchmarks, we demonstrate that our method produces well-calibrated uncertainty estimates which are as good or better than approximate Bayesian NNs. To assess robustness to dataset shift, we evaluate the predictive uncertainty on test examples from known and unknown distributions, and show that our method is able to express higher uncertainty on out-of-distribution examples. We demonstrate the scalability of our method by evaluating predictive uncertainty estimates on ImageNet.},
+  archivePrefix = {arXiv},
+  eprint = {1612.01474},
+  eprinttype = {arxiv},
+  file = {/home/maxc01/Documents/Zotero/storage/IUVLYE6R/Lakshminarayanan2016.pdf},
+  journal = {arXiv:1612.01474 [cs, stat]},
+  keywords = {nips2017},
+  primaryClass = {cs, stat}
+}
+
+
+
+@article{maddox2019,
+  title = {A {{Simple Baseline}} for {{Bayesian Uncertainty}} in {{Deep Learning}}},
+  author = {Maddox, Wesley and Garipov, Timur and Izmailov, Pavel and Vetrov, Dmitry and Wilson, Andrew Gordon},
+  year = {2019},
+  month = dec,
+  abstract = {We propose SWA-Gaussian (SWAG), a simple, scalable, and general purpose approach for uncertainty representation and calibration in deep learning. Stochastic Weight Averaging (SWA), which computes the first moment of stochastic gradient descent (SGD) iterates with a modified learning rate schedule, has recently been shown to improve generalization in deep learning. With SWAG, we fit a Gaussian using the SWA solution as the first moment and a low rank plus diagonal covariance also derived from the SGD iterates, forming an approximate posterior distribution over neural network weights; we then sample from this Gaussian distribution to perform Bayesian model averaging. We empirically find that SWAG approximates the shape of the true posterior, in accordance with results describing the stationary distribution of SGD iterates. Moreover, we demonstrate that SWAG performs well on a wide variety of tasks, including out of sample detection, calibration, and transfer learning, in comparison to many popular alternatives including MC dropout, KFAC Laplace, SGLD, and temperature scaling.},
+  archivePrefix = {arXiv},
+  eprint = {1902.02476},
+  eprinttype = {arxiv},
+  file = {/home/maxc01/Documents/Zotero/storage/YSKBXYVN/Maddox2019.pdf},
+  journal = {arXiv:1902.02476 [cs, stat]},
+  primaryClass = {cs, stat}
+}
+
+
+@article{ding2020,
+  title = {Local {{Temperature Scaling}} for {{Probability Calibration}}},
+  author = {Ding, Zhipeng and Han, Xu and Liu, Peirong and Niethammer, Marc},
+  year = {2020},
+  month = aug,
+  abstract = {For semantic segmentation, label probabilities are often uncalibrated as they are typically only the by-product of a segmentation task. Intersection over Union (IoU) and Dice score are often used as criteria for segmentation success, while metrics related to label probabilities are rarely explored. On the other hand, probability calibration approaches have been studied, which aim at matching probability outputs with experimentally observed errors, but they mainly focus on classification tasks, not on semantic segmentation. Thus, we propose a learning-based calibration method that focuses on multi-label semantic segmentation. Specifically, we adopt a tree-like convolution neural network to predict local temperature values for probability calibration. One advantage of our approach is that it does not change prediction accuracy, hence allowing for calibration as a post-processing step. Experiments on the COCO and LPBA40 datasets demonstrate improved calibration performance over different metrics. We also demonstrate the performance of our method for multi-atlas brain segmentation from magnetic resonance images.},
+  archivePrefix = {arXiv},
+  eprint = {2008.05105},
+  eprinttype = {arxiv},
+  file = {/home/maxc01/Documents/Zotero/storage/ENB6KEBS/Ding2020.pdf},
+  journal = {arXiv:2008.05105 [cs]},
+  primaryClass = {cs}
+}
+
+@incollection{krizhevsky2012,
+  title = {{{ImageNet Classification}} with {{Deep Convolutional Neural Networks}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}} 25},
+  author = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+  editor = {Pereira, F. and Burges, C. J. C. and Bottou, L. and Weinberger, K. Q.},
+  year = {2012},
+  pages = {1097--1105},
+  publisher = {{Curran Associates, Inc.}},
+  file = {/home/maxc01/Documents/Zotero/storage/6GEGF89E/Krizhevsky2012.pdf}
+}
+
+@incollection{kumar2019,
+  title = {Verified {{Uncertainty Calibration}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}} 32},
+  author = {Kumar, Ananya and Liang, Percy S and Ma, Tengyu},
+  editor = {Wallach, H. and Larochelle, H. and Beygelzimer, A. and d{\textbackslash}textquotesingle {Alch{\'e}-Buc}, F. and Fox, E. and Garnett, R.},
+  year = {2019},
+  pages = {3792--3803},
+  publisher = {{Curran Associates, Inc.}},
+  file = {/home/maxc01/Documents/Zotero/storage/6JWHHGII/Kumar2019.pdf},
+  keywords = {calibration}
+}
+
+
+
+@inproceedings{chen2015b,
+  title = {{{DeepDriving}}: {{Learning Affordance}} for {{Direct Perception}} in {{Autonomous Driving}}},
+  shorttitle = {{{DeepDriving}}},
+  booktitle = {2015 {{IEEE International Conference}} on {{Computer Vision}} ({{ICCV}})},
+  author = {Chen, C. and Seff, A. and Kornhauser, A. and Xiao, J.},
+  year = {2015},
+  month = dec,
+  pages = {2722--2730},
+  issn = {2380-7504},
+  doi = {10.1109/ICCV.2015.312},
+  abstract = {Today, there are two major paradigms for vision-based autonomous driving systems: mediated perception approaches that parse an entire scene to make a driving decision, and behavior reflex approaches that directly map an input image to a driving action by a regressor. In this paper, we propose a third paradigm: a direct perception approach to estimate the affordance for driving. We propose to map an input image to a small number of key perception indicators that directly relate to the affordance of a road/traffic state for driving. Our representation provides a set of compact yet complete descriptions of the scene to enable a simple controller to drive autonomously. Falling in between the two extremes of mediated perception and behavior reflex, we argue that our direct perception representation provides the right level of abstraction. To demonstrate this, we train a deep Convolutional Neural Network using recording from 12 hours of human driving in a video game and show that our model can work well to drive a car in a very diverse set of virtual environments. We also train a model for car distance estimation on the KITTI dataset. Results show that our direct perception approach can generalize well to real driving images. Source code and data are available on our project website.},
+  file = {/home/maxc01/Documents/Zotero/storage/L8VTSVDR/Chen2015.pdf}
+}
+
+
+
+
+@inproceedings{ma2017,
+  title = {Cost-{{Sensitive Two}}-{{Stage Depression Prediction Using Dynamic Visual Clues}}},
+  booktitle = {Computer {{Vision}} \textendash{}  {{ACCV}} 2016},
+  author = {Ma, Xingchen and Huang, Di and Wang, Yunhong and Wang, Yiding},
+  editor = {Lai, Shang-Hong and Lepetit, Vincent and Nishino, Ko and Sato, Yoichi},
+  year = {2017},
+  pages = {338--351},
+  publisher = {{Springer International Publishing}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-319-54184-6_21},
+  abstract = {This paper presents a novel and effective approach to depression recognition in the visual modality of videos, which automatically predicts the depression level through two cost-sensitive stages. It delivers an improved solution in two ways compared with other vision based methods. On the one hand, current techniques regard depression recognition as either a classification or a regression problem, which tends to incur overfitting due to the high complexity of the model and the limited number of training samples. To handle such an issue, we propose a two-stage framework consisting of a coarse classifier and a fine regressor. The former makes use of a set of linear functions, corresponding to different depression intensities, to approximate the complex non-linear model, where a coarse range of the test sample is preliminarily located. The latter then predicts its precise depression level within the given range. On the other hand, depression recognition is different from the general classification and regression tasks, since its analysis is cost-sensitive as the diagnosis of heart diseases and cancers. However, this critical cue is not taken into account in the previous investigations, thus making their results problematic. To address this drawback, we embed the indicator of medical risk assessment into both the two stages by constraining the classifier using a weight matrix and loosening the regressor to an expanded range of depression level. The proposed method is evaluated on the Audio and Video Emotion Challenge (AVEC) 2013, and the performance is superior to the best one so far reported using the visual modality. Furthermore, it proves complementary to the audio based methods, and their joint use further ameliorates the accuracy. These facts clearly highlight the effectiveness of the proposed method on depression recognition.},
+  file = {/home/maxc01/Documents/Zotero/storage/K4BQFGRJ/Ma2017.pdf},
+  isbn = {978-3-319-54184-6},
+  language = {en},
+  series = {Lecture {{Notes}} in {{Computer Science}}}
+}
+
+
+
+
+@article{foret2020,
+  title = {Sharpness-{{Aware Minimization}} for {{Efficiently Improving Generalization}}},
+  author = {Foret, Pierre and Kleiner, Ariel and Mobahi, Hossein and Neyshabur, Behnam},
+  year = {2020},
+  month = dec,
+  abstract = {In today's heavily overparameterized models, the value of the training loss provides few guarantees on model generalization ability. Indeed, optimizing only the training loss value, as is commonly done, can easily lead to suboptimal model quality. Motivated by the connection between geometry of the loss landscape and generalization -- including a generalization bound that we prove here -- we introduce a novel, effective procedure for instead simultaneously minimizing loss value and loss sharpness. In particular, our procedure, Sharpness-Aware Minimization (SAM), seeks parameters that lie in neighborhoods having uniformly low loss; this formulation results in a min-max optimization problem on which gradient descent can be performed efficiently. We present empirical results showing that SAM improves model generalization across a variety of benchmark datasets (e.g., CIFAR-\{10, 100\}, ImageNet, finetuning tasks) and models, yielding novel state-of-the-art performance for several. Additionally, we find that SAM natively provides robustness to label noise on par with that provided by state-of-the-art procedures that specifically target learning with noisy labels.},
+  archivePrefix = {arXiv},
+  eprint = {2010.01412},
+  eprinttype = {arxiv},
+  file = {/home/maxc01/Documents/Zotero/storage/IXZ5GUTL/Foret2020.pdf},
+  journal = {arXiv:2010.01412 [cs, stat]},
+  primaryClass = {cs, stat}
+}
+
+
+
+@article{russakovsky2015,
+  title = {{{ImageNet Large Scale Visual Recognition Challenge}}},
+  author = {Russakovsky, Olga and Deng, Jia and Su, Hao and Krause, Jonathan and Satheesh, Sanjeev and Ma, Sean and Huang, Zhiheng and Karpathy, Andrej and Khosla, Aditya and Bernstein, Michael and Berg, Alexander C. and {Fei-Fei}, Li},
+  year = {2015},
+  month = dec,
+  volume = {115},
+  pages = {211--252},
+  issn = {1573-1405},
+  doi = {10.1007/s11263-015-0816-y},
+  abstract = {The ImageNet Large Scale Visual Recognition Challenge is a benchmark in object category classification and detection on hundreds of object categories and millions of images. The challenge has been run annually from 2010 to present, attracting participation from more than fifty institutions. This paper describes the creation of this benchmark dataset and the advances in object recognition that have been possible as a result. We discuss the challenges of collecting large-scale ground truth annotation, highlight key breakthroughs in categorical object recognition, provide a detailed analysis of the current state of the field of large-scale image classification and object detection, and compare the state-of-the-art computer vision accuracy with human accuracy. We conclude with lessons learned in the 5~years of the challenge, and propose future directions and improvements.},
+  file = {/home/maxc01/Documents/Zotero/storage/YFD7P9W3/Russakovsky2015.pdf},
+  journal = {International Journal of Computer Vision},
+  language = {en},
+  number = {3}
+}
+
+
+
+
+@article{narasimhan2013,
+  title = {On the {{Relationship Between Binary Classification}}, {{Bipartite Ranking}}, and {{Binary Class Probability Estimation}}},
+  author = {Narasimhan, Harikrishna and Agarwal, Shivani},
+  year = {2013},
+  volume = {26},
+  pages = {2913--2921},
+  file = {/home/maxc01/Documents/Zotero/storage/633PIYX8/Narasimhan2013.pdf},
+  journal = {Advances in Neural Information Processing Systems},
+  language = {en}
+}
+
+
+
+
+
+@inproceedings{zadrozny2001a,
+  title = {Obtaining Calibrated Probability Estimates from Decision Trees and Naive {{Bayesian}} Classifiers},
+  booktitle = {Proceedings of the {{Eighteenth International Conference}} on {{Machine Learning}}},
+  author = {Zadrozny, Bianca and Elkan, Charles},
+  year = {2001},
+  month = jun,
+  pages = {609--616},
+  publisher = {{Morgan Kaufmann Publishers Inc.}},
+  address = {{San Francisco, CA, USA}},
+  file = {/home/maxc01/Documents/Zotero/storage/KR73PWV9/Zadrozny2001.pdf},
+  isbn = {978-1-55860-778-1},
+  series = {{{ICML}} '01}
+}
+
+
+@inproceedings{naeini2015,
+  title = {Obtaining Well Calibrated Probabilities Using Bayesian Binning},
+  booktitle = {Proceedings of the {{Twenty}}-{{Ninth AAAI Conference}} on {{Artificial Intelligence}}},
+  author = {Naeini, Mahdi Pakdaman and Cooper, Gregory F. and Hauskrecht, Milos},
+  year = {2015},
+  month = jan,
+  pages = {2901--2907},
+  publisher = {{AAAI Press}},
+  address = {{Austin, Texas}},
+  abstract = {Learning probabilistic predictive models that are well calibrated is critical for many prediction and decision-making tasks in artificial intelligence. In this paper we present a new non-parametric calibration method called Bayesian Binning into Quantiles (BBQ) which addresses key limitations of existing calibration methods. The method post processes the output of a binary classification algorithm; thus, it can be readily combined with many existing classification algorithms. The method is computationally tractable, and empirically accurate, as evidenced by the set of experiments reported here on both real and simulated datasets.},
+  file = {/home/maxc01/Documents/Zotero/storage/YDCX2W64/Naeini2015.pdf},
+  isbn = {978-0-262-51129-2},
+  series = {{{AAAI}}'15}
+}
+
+
+
+@inproceedings{zadrozny2002,
+  title = {Transforming Classifier Scores into Accurate Multiclass Probability Estimates},
+  booktitle = {Proceedings of the Eighth {{ACM SIGKDD}} International Conference on {{Knowledge}} Discovery and Data Mining},
+  author = {Zadrozny, Bianca and Elkan, Charles},
+  year = {2002},
+  month = jul,
+  pages = {694--699},
+  publisher = {{Association for Computing Machinery}},
+  address = {{New York, NY, USA}},
+  doi = {10.1145/775047.775151},
+  abstract = {Class membership probability estimates are important for many applications of data mining in which classification outputs are combined with other sources of information for decision-making, such as example-dependent misclassification costs, the outputs of other classifiers, or domain knowledge. Previous calibration methods apply only to two-class problems. Here, we show how to obtain accurate probability estimates for multiclass problems by combining calibrated binary probability estimates. We also propose a new method for obtaining calibrated two-class probability estimates that can be applied to any classifier that produces a ranking of examples. Using naive Bayes and support vector machine classifiers, we give experimental results from a variety of two-class and multiclass domains, including direct marketing, text categorization and digit recognition.},
+  file = {/home/maxc01/Documents/Zotero/storage/T94VGR73/Zadrozny2002.pdf},
+  isbn = {978-1-58113-567-1},
+  series = {{{KDD}} '02}
+}
+
+
+
+
+
+@article{lin2007,
+  title = {A Note on {{Platt}}'s Probabilistic Outputs for Support Vector Machines},
+  author = {Lin, Hsuan-Tien and Lin, Chih-Jen and Weng, Ruby C.},
+  year = {2007},
+  month = oct,
+  volume = {68},
+  pages = {267--276},
+  issn = {1573-0565},
+  doi = {10.1007/s10994-007-5018-6},
+  abstract = {Platt's probabilistic outputs for Support Vector Machines (Platt, J. in Smola, A., et al. (eds.) Advances in large margin classifiers. Cambridge, 2000) has been popular for applications that require posterior class probabilities. In this note, we propose an improved algorithm that theoretically converges and avoids numerical difficulties. A simple and ready-to-use pseudo code is included.},
+  file = {/home/maxc01/Documents/Zotero/storage/6B4JZKDZ/Lin2007.pdf},
+  journal = {Machine Learning},
+  language = {en},
+  number = {3}
+}
+
+@inproceedings{platt1999,
+  title = {Probabilistic {{Outputs}} for {{Support Vector Machines}} and {{Comparisons}} to {{Regularized Likelihood Methods}}},
+  booktitle = {Advances in {{Large Margin Classifiers}}},
+  author = {Platt, John C.},
+  year = {1999},
+  pages = {61--74},
+  publisher = {{MIT Press}},
+  abstract = {The output of a classifier should be a calibrated posterior probability to enable post-processing. Standard SVMs do not provide such probabilities. One method to create probabilities is to directly train a kernel classifier with a logit link function and a regularized maximum likelihood score. However, training with a maximum likelihood score will produce non-sparse kernel machines. Instead, we train an SVM, then train the parameters of an additional sigmoid function to map the SVM outputs into probabilities. This chapter compares classification error rate and likelihood scores for an SVM plus sigmoid versus a kernel method trained with a regularized likelihood error function. These methods are tested on three data-mining-style data sets. The SVM+sigmoid yields probabilities of comparable quality to the regularized maximum likelihood kernel method, while still retaining the sparseness of the SVM.},
+  file = {/home/maxc01/Documents/Zotero/storage/AJ8IPEJ6/Platt1999.pdf}
+}
+
+
+
+
+
+@inproceedings{guo2017,
+  title = {On {{Calibration}} of {{Modern Neural Networks}}},
+  booktitle = {Proceedings of the 34th {{International Conference}} on {{Machine Learning}} - {{Volume}} 70},
+  author = {Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger, Kilian Q.},
+  year = {2017},
+  pages = {1321--1330},
+  publisher = {{JMLR.org}},
+  abstract = {Confidence calibration - the problem of predicting probability estimates representative of the true correctness likelihood - is important for classification models in many applications. We discover that modern neural networks, unlike those from a decade ago, are poorly calibrated. Through extensive experiments, we observe that depth, width, weight decay, and Batch Normalization are important factors influencing calibration. We evaluate the performance of various post-processing calibration methods on state-of-the-art architectures with image and document classification datasets. Our analysis and experiments not only offer insights into neural network learning, but also provide a simple and straightforward recipe for practical settings: on most datasets, temperature scaling - a single-parameter variant of Platt Scaling - is surprisingly effective at calibrating predictions.},
+  file = {/home/maxc01/Documents/Zotero/storage/FRKQWM36/Guo2017.pdf},
+  keywords = {calibration},
+  series = {{{ICML}}'17}
+}
+
+
+
+@inproceedings{kull2017,
+  title = {Beta Calibration: A Well-Founded and Easily Implemented Improvement on Logistic Calibration for Binary Classifiers},
+  shorttitle = {Beta Calibration},
+  booktitle = {Artificial {{Intelligence}} and {{Statistics}}},
+  author = {Kull, Meelis and Filho, Telmo Silva and Flach, Peter},
+  year = {2017},
+  month = apr,
+  pages = {623--631},
+  publisher = {{PMLR}},
+  issn = {2640-3498},
+  abstract = {For optimal decision making under variable class distributions and misclassification costs a classifier needs to produce well-calibrated estimates of the posterior probability. Isotonic calibration...},
+  file = {/home/maxc01/Documents/Zotero/storage/IDYRAX6J/Kull2017.pdf},
+  keywords = {calibration},
+  language = {en}
+}
+
+
+@incollection{kull2019,
+  title = {Beyond Temperature Scaling: {{Obtaining}} Well-Calibrated Multi-Class Probabilities with {{Dirichlet}} Calibration},
+  shorttitle = {Beyond Temperature Scaling},
+  booktitle = {Advances in {{Neural Information Processing Systems}} 32},
+  author = {Kull, Meelis and Perello Nieto, Miquel and K{\"a}ngsepp, Markus and Silva Filho, Telmo and Song, Hao and Flach, Peter},
+  editor = {Wallach, H. and Larochelle, H. and Beygelzimer, A. and d{\textbackslash}textquotesingle {Alch{\'e}-Buc}, F. and Fox, E. and Garnett, R.},
+  year = {2019},
+  pages = {12316--12326},
+  publisher = {{Curran Associates, Inc.}},
+  file = {/home/maxc01/Documents/Zotero/storage/XZ97QDH6/Kull2019.pdf},
+  keywords = {calibration}
+}
+
+
+@article{tong2018,
+  title = {Neyman-{{Pearson}} Classification Algorithms and {{NP}} Receiver Operating Characteristics},
+  author = {Tong, Xin and Feng, Yang and Li, Jingyi Jessica},
+  year = {2018},
+  month = feb,
+  volume = {4},
+  issn = {2375-2548},
+  doi = {10.1126/sciadv.aao1659},
+  abstract = {An umbrella algorithm and a graphical tool for asymmetric error control in binary classification., In many binary classification applications, such as disease diagnosis and spam detection, practitioners commonly face the need to limit type I error (that is, the conditional probability of misclassifying a class 0 observation as class 1) so that it remains below a desired threshold. To address this need, the Neyman-Pearson (NP) classification paradigm is a natural choice; it minimizes type II error (that is, the conditional probability of misclassifying a class 1 observation as class 0) while enforcing an upper bound, {$\alpha$}, on the type I error. Despite its century-long history in hypothesis testing, the NP paradigm has not been well recognized and implemented in classification schemes. Common practices that directly limit the empirical type I error to no more than {$\alpha$} do not satisfy the type I error control objective because the resulting classifiers are likely to have type I errors much larger than {$\alpha$}, and the NP paradigm has not been properly implemented in practice. We develop the first umbrella algorithm that implements the NP paradigm for all scoring-type classification methods, such as logistic regression, support vector machines, and random forests. Powered by this algorithm, we propose a novel graphical tool for NP classification methods: NP receiver operating characteristic (NP-ROC) bands motivated by the popular ROC curves. NP-ROC bands will help choose {$\alpha$} in a data-adaptive way and compare different NP classifiers. We demonstrate the use and properties of the NP umbrella algorithm and NP-ROC bands, available in the R package nproc, through simulation and real data studies.},
+  file = {/home/maxc01/Documents/Zotero/storage/BHAGC5G5/Tong2018.pdf;/home/maxc01/Documents/Zotero/storage/BWMUAIEA/SM.pdf;/home/maxc01/Documents/Zotero/storage/HXSTLR7R/nproc-demo.pdf},
+  journal = {Science Advances},
+  keywords = {NPC},
+  number = {2},
+  pmcid = {PMC5804623},
+  pmid = {29423442}
+}
+
+
+
+
+
+@article{el-yaniv2010,
+  title = {On the {{Foundations}} of {{Noise}}-Free {{Selective Classification}}},
+  author = {{El-Yaniv}, Ran and Wiener, Yair},
+  year = {2010},
+  volume = {11},
+  pages = {1605--1641},
+  abstract = {We consider selective classification, a term we adopt here to refer to 'classification with a reject option.' The essence in selective classification is to trade-off classifier coverage for higher accuracy.  We term this trade-off the risk-coverage (RC) trade-off. Our main objective is to characterize this trade-off and to construct algorithms that can optimally or near optimally achieve the best possible trade-offs in a controlled manner. For noise-free models we present in this paper a thorough analysis of selective classification including characterizations of RC trade-offs in various interesting settings.},
+  file = {/home/maxc01/Documents/Zotero/storage/E39IXEG8/El-Yaniv2010.pdf},
+  journal = {Journal of Machine Learning Research},
+  number = {53}
+}
+
+
+
+@article{geifman2017,
+  title = {Selective {{Classification}} for {{Deep Neural Networks}}},
+  author = {Geifman, Yonatan and {El-Yaniv}, Ran},
+  year = {2017},
+  month = jun,
+  abstract = {Selective classification techniques (also known as reject option) have not yet been considered in the context of deep neural networks (DNNs). These techniques can potentially significantly improve DNNs prediction performance by trading-off coverage. In this paper we propose a method to construct a selective classifier given a trained neural network. Our method allows a user to set a desired risk level. At test time, the classifier rejects instances as needed, to grant the desired risk (with high probability). Empirical results over CIFAR and ImageNet convincingly demonstrate the viability of our method, which opens up possibilities to operate DNNs in mission-critical applications. For example, using our method an unprecedented 2\% error in top-5 ImageNet classification can be guaranteed with probability 99.9\%, and almost 60\% test coverage.},
+  archivePrefix = {arXiv},
+  eprint = {1705.08500},
+  eprinttype = {arxiv},
+  file = {/home/maxc01/Documents/Zotero/storage/M52SD8N3/Geifman2017.pdf},
+  journal = {arXiv:1705.08500 [cs]},
+  primaryClass = {cs}
+}
+
+
+
+@article{geifman2019,
+  title = {{{SelectiveNet}}: {{A Deep Neural Network}} with an {{Integrated Reject Option}}},
+  shorttitle = {{{SelectiveNet}}},
+  author = {Geifman, Yonatan and {El-Yaniv}, Ran},
+  year = {2019},
+  month = jun,
+  abstract = {We consider the problem of selective prediction (also known as reject option) in deep neural networks, and introduce SelectiveNet, a deep neural architecture with an integrated reject option. Existing rejection mechanisms are based mostly on a threshold over the prediction confidence of a pre-trained network. In contrast, SelectiveNet is trained to optimize both classification (or regression) and rejection simultaneously, end-to-end. The result is a deep neural network that is optimized over the covered domain. In our experiments, we show a consistently improved risk-coverage trade-off over several well-known classification and regression datasets, thus reaching new state-of-the-art results for deep selective classification.},
+  archivePrefix = {arXiv},
+  eprint = {1901.09192},
+  eprinttype = {arxiv},
+  file = {/home/maxc01/Documents/Zotero/storage/23K6T63H/Geifman2019.pdf},
+  journal = {arXiv:1901.09192 [cs, stat]},
+  primaryClass = {cs, stat}
+}
+
+

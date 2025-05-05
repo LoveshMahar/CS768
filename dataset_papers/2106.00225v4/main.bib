@@ -1,0 +1,645 @@
+@inproceedings{Lakshminarayanan2017SimpleEnsembles,
+    title = {{Simple and scalable predictive uncertainty estimation using deep ensembles}},
+    year = {2017},
+    booktitle = {Advances in Neural Information Processing Systems},
+    author = {Lakshminarayanan, Balaji and Pritzel, Alexander and Blundell, Charles},
+    issn = {10495258},
+    arxivId = {1612.01474}
+}
+
+@inproceedings{pmlr-v119-alaa20a,
+    title = {{Discriminative Jackknife: Quantifying Uncertainty in Deep Learning via Higher-Order Influence Functions}},
+    year = {2020},
+    booktitle = {Proceedings of the 37th International Conference on Machine Learning},
+    author = {Alaa, Ahmed and Van Der Schaar, Mihaela},
+    editor = {III, Hal Daumé and Singh, Aarti},
+    pages = {165--174},
+    series = {Proceedings of Machine Learning Research},
+    volume = {119},
+    publisher = {PMLR},
+    url = {http://proceedings.mlr.press/v119/alaa20a.html}
+}
+
+@inproceedings{Gal2016DropoutLearning,
+    title = {{Dropout as a Bayesian approximation: Representing model uncertainty in deep learning}},
+    year = {2016},
+    booktitle = {33rd International Conference on Machine Learning, ICML 2016},
+    author = {Gal, Yarin and Ghahramani, Zoubin},
+    isbn = {9781510829008},
+    arxivId = {1506.02142}
+}
+
+
+@article{Barber10.1214/20-AOS1965,
+    title = {{Predictive inference with the jackknife+}},
+    year = {2021},
+    journal = {The Annals of Statistics},
+    author = {Barber, Rina Foygel and Cand{\`{e}}s, Emmanuel J and Ramdas, Aaditya and Tibshirani, Ryan J},
+    number = {1},
+    pages = {486--507},
+    volume = {49},
+    publisher = {Institute of Mathematical Statistics},
+    url = {https://doi.org/10.1214/20-AOS1965},
+    doi = {10.1214/20-AOS1965},
+    keywords = {conformal inference, cross-validation, distribution-free, jackknife, leave-one-out, stability}
+}
+
+
+@book{Vovk2005AlgorithmicWorld,
+    title = {{Algorithmic learning in a random world}},
+    year = {2005},
+    booktitle = {Algorithmic Learning in a Random World},
+    author = {Vovk, Vladimir and Gammerman, Alexander and Shafer, Glenn},
+    publisher = {Springer US},
+    isbn = {0387001522},
+    doi = {10.1007/b106715}
+}
+
+
+@article{Lei2018Distribution-FreeRegression,
+    title = {{Distribution-Free Predictive Inference for Regression}},
+    year = {2018},
+    journal = {Journal of the American Statistical Association},
+    author = {Lei, Jing and G’Sell, Max and Rinaldo, Alessandro and Tibshirani, Ryan J. and Wasserman, Larry},
+    doi = {10.1080/01621459.2017.1307116},
+    issn = {1537274X},
+    arxivId = {1604.04173},
+    keywords = {Distribution-free, Model misspecification, Prediction band, Regression, Variable importance}
+}
+
+%============================================================
+@article{barber2020limits,
+  author    = {Rina Foygel Barber and Emmanuel J. Candès and Aaditya Ramdas and Ryan J. Tibshirani},
+  title     = {The limits of distribution-free conditional predictive inference},
+  journal   = {arXiv},
+  volume    = {abs/1903.04684},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/1903.04684},
+  archivePrefix = {arXiv},
+  eprint    = {1903.04684}
+}
+
+@article{guan2020conformal,
+      title={Conformal prediction with localization}, 
+      author={Leying Guan},
+      journal = {arXiv},
+      volume = {abs/1908.08558},
+      year={2020},
+      eprint={1908.08558},
+      archivePrefix={arXiv},
+      primaryClass={math.ST}
+}
+
+
+
+@misc{covshift_tibshirani2020conformal,
+      title={Conformal Prediction Under Covariate Shift}, 
+      author={Ryan J. Tibshirani and Rina Foygel Barber and Emmanuel J. Candes and Aaditya Ramdas},
+      year={2020},
+      eprint={1904.06019},
+      archivePrefix={arXiv},
+      primaryClass={stat.ME}
+}
+
+
+@inproceedings{AGDeepEnsemble,
+  author    = {Andrew Gordon Wilson and
+               Pavel Izmailov},
+  editor    = {Hugo Larochelle and
+               Marc'Aurelio Ranzato and
+               Raia Hadsell and
+               Maria{-}Florina Balcan and
+               Hsuan{-}Tien Lin},
+  title     = {Bayesian Deep Learning and a Probabilistic Perspective of Generalization},
+  booktitle = {Advances in Neural Information Processing Systems 33: Annual Conference
+               on Neural Information Processing Systems 2020, NeurIPS 2020, December
+               6-12, 2020, virtual},
+  year      = {2020},
+  url       = {https://proceedings.neurips.cc/paper/2020/hash/322f62469c5e3c7dc3e58f5a4d1ea399-Abstract.html}
+}
+
+
+@InProceedings{pmlr-v2-weinberger07a,
+  title = 	 {Metric Learning for Kernel Regression},
+  author = 	 {Kilian Q. Weinberger and Gerald Tesauro},
+  booktitle = 	 {Proceedings of the Eleventh International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {612--619},
+  year = 	 {2007},
+  editor = 	 {Marina Meila and Xiaotong Shen},
+  volume = 	 {2},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {San Juan, Puerto Rico},
+  month = 	 {21--24 Mar},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v2/weinberger07a/weinberger07a.pdf},
+  url = 	 {http://proceedings.mlr.press/v2/weinberger07a.html},
+  abstract = 	 {Kernel regression is a well-established method for nonlinear regression in which the target value for a test point is estimated using a weighted average of the surrounding training samples. The weights are typically obtained by applying a distance-based kernel function to each of the samples, which presumes the existence of a well-defined distance metric. In this paper, we construct a novel algorithm for supervised metric learning, which learns a distance function by directly minimizing the leave-one-out regression error. We show that our algorithm makes kernel regression comparable with the state of the art on several benchmark datasets, and we provide efficient implementation details enabling application to datasets with &nbsp;O(10k) instances. Further, we show that our algorithm can be viewed as a supervised variation of PCA and can be used for dimensionality reduction and high dimensional data visualization.}
+}
+
+@InProceedings{pmlr-v25-vovk12,
+  title = 	 {Conditional Validity of Inductive Conformal Predictors},
+  author = 	 {Vladimir Vovk},
+  booktitle = 	 {Proceedings of the Asian Conference on Machine Learning},
+  pages = 	 {475--490},
+  year = 	 {2012},
+  editor = 	 {Steven C. H. Hoi and Wray Buntine},
+  volume = 	 {25},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Singapore Management University, Singapore},
+  month = 	 {04--06 Nov},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v25/vovk12/vovk12.pdf},
+  url = 	 {http://proceedings.mlr.press/v25/vovk12.html},
+  abstract = 	 {Conformal predictors are set predictors that are automatically valid in the sense of having coverage probability equal to or exceeding a given confidence level. Inductive conformal predictors are a computationally efficient version of conformal predictors satisfying the same property of validity. However, inductive conformal predictors have been only known to control unconditional coverage probability. This paper explores various versions of conditional validity and various ways to achieve them using inductive conformal predictors and their modifications.}
+}
+
+@article{lei2014,
+author = {Lei, Jing and Wasserman, Larry},
+title = {Distribution-free prediction bands for non-parametric regression},
+journal = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+volume = {76},
+number = {1},
+pages = {71-96},
+keywords = {Conformal prediction, Finite sample property, Kernel density, Prediction bands},
+doi = {https://doi.org/10.1111/rssb.12021},
+url = {https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/rssb.12021},
+eprint = {https://rss.onlinelibrary.wiley.com/doi/pdf/10.1111/rssb.12021},
+abstract = {Summary We study distribution-free, non-parametric prediction bands with a focus on their finite sample behaviour. First we investigate and develop different notions of finite sample coverage guarantees. Then we give a new prediction band by combining the idea of ‘conformal prediction’ with non-parametric conditional density estimation. The proposed estimator, called COPS (conformal optimized prediction set), always has a finite sample guarantee. Under regularity conditions the estimator converges to an oracle band at a minimax optimal rate. A fast approximation algorithm and a data-driven method for selecting the bandwidth are developed. The method is illustrated in simulated and real data examples.},
+year = {2014}
+}
+
+
+@InProceedings{papadopoulos2002,
+author="Papadopoulos, Harris
+and Proedrou, Kostas
+and Vovk, Volodya
+and Gammerman, Alex",
+editor="Elomaa, Tapio
+and Mannila, Heikki
+and Toivonen, Hannu",
+title="Inductive Confidence Machines for Regression",
+booktitle="Machine Learning: ECML 2002",
+year="2002",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="345--356",
+abstract="The existing methods of predicting with confidence give good accuracy and confidence values, but quite often are computationally inefficient. Some partial solutions have been suggested in the past. Both the original method and these solutions were based on transductive inference. In this paper we make a radical step of replacing transductive inference with inductive inference and define what we call the Inductive Confidence Machine (ICM); our main concern in this paper is the use of ICM in regression problems. The algorithm proposed in this paper is based on the Ridge Regression procedure (which is usually used for outputting bare predictions) and is much faster than the existing transductive techniques. The inductive approach described in this paper may be the only option available when dealing with large data sets.",
+isbn="978-3-540-36755-0"
+}
+
+
+@inproceedings{DBLP:conf/icml/Hernandez-Lobato15b,
+  author    = {Jos{\'{e}} Miguel Hern{\'{a}}ndez{-}Lobato and
+               Ryan P. Adams},
+  editor    = {Francis R. Bach and
+               David M. Blei},
+  title     = {Probabilistic Backpropagation for Scalable Learning of Bayesian Neural
+               Networks},
+  booktitle = {Proceedings of the 32nd International Conference on Machine Learning,
+               {ICML} 2015, Lille, France, 6-11 July 2015},
+  series    = {{JMLR} Workshop and Conference Proceedings},
+  volume    = {37},
+  pages     = {1861--1869},
+  publisher = {JMLR.org},
+  year      = {2015},
+  url       = {http://proceedings.mlr.press/v37/hernandez-lobatoc15.html},
+  timestamp = {Wed, 29 May 2019 08:41:46 +0200},
+  biburl    = {https://dblp.org/rec/conf/icml/Hernandez-Lobato15b.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{linscrib,
+  author    = {Zhen Lin and
+               Cao Xiao and
+               Lucas Glass and
+               M. Brandon Westover and
+               Jimeng Sun},
+  title     = {{SCRIB:} Set-classifier with Class-specific Risk Bounds for Blackbox
+               Models},
+  journal   = {CoRR},
+  volume    = {abs/2103.03945},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2103.03945},
+  archivePrefix = {arXiv},
+  eprint    = {2103.03945},
+  timestamp = {Mon, 15 Mar 2021 17:30:55 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2103-03945.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@misc{amodei2016concrete,
+      title={Concrete Problems in AI Safety}, 
+      author={Dario Amodei and Chris Olah and Jacob Steinhardt and Paul Christiano and John Schulman and Dan Mané},
+      year={2016},
+      eprint={1606.06565},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+@misc{zhang2020autocp,
+      title={AutoCP: Automated Pipelines for Accurate Prediction Intervals}, 
+      author={Yao Zhang and William Zame and Mihaela van der Schaar},
+      year={2020},
+      eprint={2006.14099},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@book{GyorfiNonParametric,
+    title = {{A Distribution-Free Theory of Nonparametric Regression}},
+    year = {2006},
+    booktitle = {A Distribution-Free Theory of Nonparametric Regression},
+    author = {Gy\"orfi, L\'aszl\'o and Kohler, Michael and Krzyzak, Adam and Walk, Harro},
+    publisher = {Springer Science \& Business Media},
+    isbn = {978-0-387-95441-7},
+    doi = {10.1007/b97848}
+}
+
+@book{Nadaraya,
+    title = {{Nonparametric Estimation of Probability Densities and Regression Curves}},
+    year = {1989},
+    booktitle = {Nonparametric Estimation of Probability Densities and Regression Curves},
+    author = {Nadaraya, Elizbar},
+    publisher = {Kluwer Academic Publishers},
+    isbn = {978-90-277-2757-2},
+    doi = {10.1007/978-94-009-2583-0}
+}
+
+
+@article{WatsonKernel,
+ ISSN = {0581572X},
+ URL = {http://www.jstor.org/stable/25049340},
+ abstract = {Few would deny that the most powerful statistical tool is graph paper. When however there are many observations (and/or many variables) graphical procedures become tedious. It seems to the author that the most characteristic problem for statisticians at the moment is the development of methods for analyzing the data poured out by electronic observing systems. The present paper gives a simple computer method for obtaining a "graph" from a large number of observations.},
+ author = {Geoffrey S. Watson},
+ journal = {Sankhyā: The Indian Journal of Statistics, Series A (1961-2002)},
+ number = {4},
+ pages = {359--372},
+ publisher = {Springer},
+ title = {Smooth Regression Analysis},
+ volume = {26},
+ year = {1964}
+}
+
+
+
+
+@article{DBLP:journals/corr/abs-2009-14193,
+  author    = {Anastasios Angelopoulos and
+               Stephen Bates and
+               Jitendra Malik and
+               Michael I. Jordan},
+  title     = {Uncertainty Sets for Image Classifiers using Conformal Prediction},
+  journal   = {CoRR},
+  volume    = {abs/2009.14193},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2009.14193},
+  archivePrefix = {arXiv},
+  eprint    = {2009.14193},
+  timestamp = {Wed, 30 Sep 2020 16:16:22 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2009-14193.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{
+fisch2021efficient,
+title={Efficient Conformal Prediction via Cascaded Inference with Expanded Admission},
+author={Adam Fisch and Tal Schuster and Tommi S. Jaakkola and Regina Barzilay},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=tnSo6VRLmT}
+}
+
+
+@inproceedings{CQR_NEURIPS2019_5103c358,
+ author = {Romano, Yaniv and Patterson, Evan and Candes, Emmanuel},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Conformalized Quantile Regression},
+ url = {https://proceedings.neurips.cc/paper/2019/file/5103c3584b063c431bd1268e9b5e76fb-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+@InProceedings{pmlr-v128-bellotti20a,
+  title = 	 {Constructing normalized nonconformity measures based on maximizing predictive efficiency},
+  author =       {Bellotti, Anthony},
+  booktitle = 	 {Proceedings of the Ninth Symposium on Conformal and Probabilistic Prediction and Applications},
+  pages = 	 {41--54},
+  year = 	 {2020},
+  editor = 	 {Alexander Gammerman and Vladimir Vovk and Zhiyuan Luo and Evgueni Smirnov and Giovanni Cherubin},
+  volume = 	 {128},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {},
+  month = 	 {09--11 Sep},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v128/bellotti20a/bellotti20a.pdf},
+  url = 	 {http://proceedings.mlr.press/v128/bellotti20a.html},
+  abstract = 	 {The problem of regression in the inductive conformal prediction framework is addressed to provide prediction intervals that are optimized by predictive efficiency. A differentiable function is used to approximate the exact optimization problem of minimizing predictive inefficiency on a training data set using a conformal predictor based on a parametric normalized nonconformity measure. Gradient descent is then used to  find a solution. Since the optimization approximates the conformal predictor, this method is called surrogate conformal predictor optimization. Experiments are reported that show that it results in conformal predictors that provide improved predictive efficiency for regression problems on several data sets, whilst remaining reliable. It is also shown that the optimal parameter values typically differ for different confidence levels. Using house price data, alternative measures of  inefficiency are explored to address different application requirements.}
+}
+
+
+
+@InProceedings{influence_pmlr-v70-koh17a,
+  title = 	 {Understanding Black-box Predictions via Influence Functions},
+  author =       {Pang Wei Koh and Percy Liang},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {1885--1894},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/koh17a/koh17a.pdf},
+  url = 	 {
+http://proceedings.mlr.press/v70/koh17a.html
+},
+  abstract = 	 {How can we explain the predictions of a black-box model? In this paper, we use influence functions — a classic technique from robust statistics — to trace a model’s prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction. To scale up influence functions to modern machine learning settings, we develop a simple, efficient implementation that requires only oracle access to gradients and Hessian-vector products. We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information. On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks.}
+}
+
+
+@misc{basu2021influence,
+    title = {{Influence Functions in Deep Learning Are Fragile}},
+    year = {2021},
+    author = {Basu, Samyadeep and Pope, Philip and Feizi, Soheil},
+    arxivId = {cs.LG/2006.14651}
+}
+
+@incollection{PyTorch_NEURIPS2019_9015,
+title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+booktitle = {Advances in Neural Information Processing Systems 32},
+editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+pages = {8024--8035},
+year = {2019},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf}
+}
+@inproceedings{ADAM_DBLP:journals/corr/KingmaB14,
+  author    = {Diederik P. Kingma and
+               Jimmy Ba},
+  editor    = {Yoshua Bengio and
+               Yann LeCun},
+  title     = {Adam: {A} Method for Stochastic Optimization},
+  booktitle = {3rd International Conference on Learning Representations, {ICLR} 2015,
+               San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1412.6980},
+  timestamp = {Thu, 25 Jul 2019 14:25:37 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/KingmaB14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{Dropout_JMLR:v15:srivastava14a,
+  author  = {Nitish Srivastava and Geoffrey Hinton and Alex Krizhevsky and Ilya Sutskever and Ruslan Salakhutdinov},
+  title   = {Dropout: A Simple Way to Prevent Neural Networks from Overfitting},
+  journal = {Journal of Machine Learning Research},
+  year    = {2014},
+  volume  = {15},
+  number  = {56},
+  pages   = {1929-1958},
+  url     = {http://jmlr.org/papers/v15/srivastava14a.html}
+}
+
+@article{chemproppaperdoi:10.1021/acs.jcim.9b00237,
+    title = {{Analyzing Learned Molecular Representations for Property Prediction}},
+    year = {2019},
+    journal = {Journal of Chemical Information and Modeling},
+    author = {Yang, Kevin and Swanson, Kyle and Jin, Wengong and Coley, Connor and Eiden, Philipp and Gao, Hua and Guzman-Perez, Angel and Hopper, Timothy and Kelley, Brian and Mathea, Miriam and Palmer, Andrew and Settels, Volker and Jaakkola, Tommi and Jensen, Klavs and Barzilay, Regina},
+    number = {8},
+    pages = {3370--3388},
+    volume = {59},
+    url = {https://doi.org/10.1021/acs.jcim.9b00237},
+    doi = {10.1021/acs.jcim.9b00237}
+}
+
+@article{BayesianFrequentist_10.1214/088342304000000116,
+author = {M. J. Bayarri and J. O. Berger},
+title = {{The Interplay of Bayesian and Frequentist Analysis}},
+volume = {19},
+journal = {Statistical Science},
+number = {1},
+publisher = {Institute of Mathematical Statistics},
+pages = {58 -- 80},
+keywords = {Admissibility, Bayesian model checking, conditional frequentist, confidence intervals, consistency, coverage, design, hierarchical models, nonparametric Bayes, objective Bayesian methods, P-values, reference priors, testing},
+year = {2004},
+doi = {10.1214/088342304000000116},
+URL = {https://doi.org/10.1214/088342304000000116}
+}
+
+@inproceedings{Welling2011BayesianDynamics,
+    title = {{Bayesian learning via stochastic gradient langevin dynamics}},
+    year = {2011},
+    booktitle = {Proceedings of the 28th International Conference on Machine Learning, ICML 2011},
+    author = {Welling, Max and Teh, Yee Whye},
+    isbn = {9781450306195}
+}
+
+
+
+%================================Data
+@misc{UCI_Yacht,
+  title = {Yacht Hydrodynamics Data Set},
+  key = {UCI Yacht},
+  howpublished = {\url{http://archive.ics.uci.edu/ml/datasets/yacht+hydrodynamics}},
+  note = {Accessed: 2021-05-27}
+}
+@misc{UCI_Bike,
+  title = {Bike Sharing Data Set},
+  key = {UCI Bike},
+  howpublished = {\url{https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset}},
+  note = {Accessed: 2021-05-27}
+}
+@article{UCI_Bike_paper,
+year={2013},
+issn={2192-6352},
+journal={Progress in Artificial Intelligence},
+doi={10.1007/s13748-013-0040-3},
+title={Event labeling combining ensemble detectors and background knowledge},
+url={[Web Link]},
+publisher={Springer Berlin Heidelberg},
+keywords={Event labeling; Event detection; Ensemble learning; Background knowledge},
+author={Fanaee-T, Hadi and Gama, Joao},
+pages={1-15}
+}
+
+@misc{UCI_Energy,
+  title = {Energy efficiency Data Set},
+  key = {UCI Energy},
+  howpublished = {\url{https://archive.ics.uci.edu/ml/datasets/energy+efficiency}},
+  note = {Accessed: 2021-05-27}
+}
+@article{UCI_Energy_paper_TSANAS2012560,
+title = {Accurate quantitative estimation of energy performance of residential buildings using statistical machine learning tools},
+journal = {Energy and Buildings},
+volume = {49},
+pages = {560-567},
+year = {2012},
+issn = {0378-7788},
+doi = {https://doi.org/10.1016/j.enbuild.2012.03.003},
+url = {https://www.sciencedirect.com/science/article/pii/S037877881200151X},
+author = {Athanasios Tsanas and Angeliki Xifara},
+keywords = {Building energy evaluation, Heating load, Cooling load, Non-parametric statistics, Statistical machine learning},
+abstract = {We develop a statistical machine learning framework to study the effect of eight input variables (relative compactness, surface area, wall area, roof area, overall height, orientation, glazing area, glazing area distribution) on two output variables, namely heating load (HL) and cooling load (CL), of residential buildings. We systematically investigate the association strength of each input variable with each of the output variables using a variety of classical and non-parametric statistical analysis tools, in order to identify the most strongly related input variables. Then, we compare a classical linear regression approach against a powerful state of the art nonlinear non-parametric method, random forests, to estimate HL and CL. Extensive simulations on 768 diverse residential buildings show that we can predict HL and CL with low mean absolute error deviations from the ground truth which is established using Ecotect (0.51 and 1.42, respectively). The results of this study support the feasibility of using machine learning tools to estimate building parameters as a convenient and accurate approach, as long as the requested query bears resemblance to the data actually used to train the mathematical model in the first place.}
+}
+
+@misc{UCI_Concrete,
+  title = {Concrete Compressive Strength Data Set},
+  key = {UCI Concrete},
+  howpublished = {\url{http://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength}},
+  note = {Accessed: 2021-05-27}
+}
+
+@article{UCI_Concrete_paper_YEH19981797,
+title = {Modeling of strength of high-performance concrete using artificial neural networks},
+journal = {Cement and Concrete Research},
+volume = {28},
+number = {12},
+pages = {1797-1808},
+year = {1998},
+issn = {0008-8846},
+doi = {https://doi.org/10.1016/S0008-8846(98)00165-3},
+url = {https://www.sciencedirect.com/science/article/pii/S0008884698001653},
+author = {I.-C. Yeh},
+abstract = {Several studies independently have shown that concrete strength development is determined not only by the water-to-cement ratio, but that it also is influenced by the content of other concrete ingredients. High-performance concrete is a highly complex material, which makes modeling its behavior a very difficult task. This paper is aimed at demonstrating the possibilities of adapting artificial neural networks (ANN) to predict the compressive strength of high-performance concrete. A set of trial batches of HPC was produced in the laboratory and demonstrated satisfactory experimental results. This study led to the following conclusions: 1) A strength model based on ANN is more accurate than a model based on regression analysis; and 2) It is convenient and easy to use ANN models for numerical experiments to review the effects of the proportions of each variable on the concrete mix.}
+}
+
+@misc{Housing_data,
+  title = {The Boston Housing Dataset},
+  key = {Boston Housing},
+  howpublished = {\url{http://lib.stat.cmu.edu/datasets/boston}},
+  note = {Accessed: 2021-05-27}
+}
+@misc{Kin8nm,
+title={Kin family of datasets},
+key = {Kin8nm},
+howpublished={\url{http://www.cs.toronto.edu/~delve/data/kin/desc.html}},
+  note = {Accessed: 2021-05-27}
+}
+
+
+
+
+
+
+
+%QM8
+@article{QM8_doi:10.1063/1.4928757,
+author = {Ramakrishnan,Raghunathan  and Hartmann,Mia  and Tapavicza,Enrico  and von Lilienfeld,O. Anatole },
+title = {Electronic spectra from TDDFT and machine learning in chemical space},
+journal = {The Journal of Chemical Physics},
+volume = {143},
+number = {8},
+pages = {084111},
+year = {2015},
+doi = {10.1063/1.4928757},
+
+URL = { 
+        https://doi.org/10.1063/1.4928757
+    
+},
+eprint = { 
+        https://doi.org/10.1063/1.4928757
+    
+}
+
+}
+
+
+
+%QM9
+@article{QM9_2_ramakrishnan2014quantum,
+  title={Quantum chemistry structures and properties of 134 kilo molecules},
+  author={Ramakrishnan, Raghunathan and Dral, Pavlo O and Rupp, Matthias and von Lilienfeld, O Anatole},
+  journal={Scientific Data},
+  volume={1},
+  year={2014},
+  publisher={Nature Publishing Group}
+}
+
+
+@article{QM9_1_doi:10.1021/ci300415d,
+author = {Ruddigkeit, Lars and van Deursen, Ruud and Blum, Lorenz C. and Reymond, Jean-Louis},
+title = {Enumeration of 166 Billion Organic Small Molecules in the Chemical Universe Database GDB-17},
+journal = {Journal of Chemical Information and Modeling},
+volume = {52},
+number = {11},
+pages = {2864-2875},
+year = {2012},
+doi = {10.1021/ci300415d},
+    note ={PMID: 23088335},
+
+URL = { 
+        https://doi.org/10.1021/ci300415d
+    
+},
+eprint = { 
+        https://doi.org/10.1021/ci300415d
+    
+}
+
+}
+
+
+
+
+%===============================================Reviews
+@article{DBLP:journals/corr/abs-2010-03039,
+  author    = {Benjamin Kompa and
+               Jasper Snoek and
+               Andrew Beam},
+  title     = {Empirical Frequentist Coverage of Deep Learning Uncertainty Quantification
+               Procedures},
+  journal   = {CoRR},
+  volume    = {abs/2010.03039},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2010.03039},
+  eprinttype = {arXiv},
+  eprint    = {2010.03039},
+  timestamp = {Tue, 13 Oct 2020 15:25:23 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2010-03039.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+
+
+
+
+%This is about classification though
+@article{doi:10.1080/01621459.2012.751873,
+author = { Jing   Lei  and  James   Robins  and  Larry   Wasserman },
+title = {Distribution-Free Prediction Sets},
+journal = {Journal of the American Statistical Association},
+volume = {108},
+number = {501},
+pages = {278-287},
+year  = {2013},
+publisher = {Taylor & Francis},
+doi = {10.1080/01621459.2012.751873},
+
+URL = { 
+        https://doi.org/10.1080/01621459.2012.751873
+    
+},
+eprint = { 
+        https://doi.org/10.1080/01621459.2012.751873
+    
+}
+
+}
+
+
+
+
+@misc{GlobalChem,
+  author = {Sul and Elena Chow},
+  title = {GlobalChem: A content variable store for Chemistry!},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/Sulstice/global-chem}},
+  commit = {e1ac95d325565d57bb9dc6ff3aedb9ed6ccfaea1}
+}

@@ -1,0 +1,785 @@
+%robpretrain_ACL_learningrethinking % robust pre-training --- adversarial training
+@inproceedings{robpretrain_AT_hendrycks2019,
+  title={Using pre-training can improve model robustness and uncertainty},
+  author={Hendrycks, Dan and Lee, Kimin and Mazeika, Mantas},
+  booktitle={International Conference on Machine Learning},
+  pages={2712--2721},
+  year={2019},
+  organization={PMLR}
+}
+
+@article{robpretrain_AT_salman2020adversarially,
+  title={Do adversarially robust imagenet models transfer better?},
+  author={Salman, Hadi and Ilyas, Andrew and Engstrom, Logan and Kapoor, Ashish and Madry, Aleksander},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={3533--3545},
+  year={2020}
+}
+
+@inproceedings{robpretrain_AT_xu2022adversarially,
+  title={Adversarially Robust Models may not Transfer Better: Sufficient Conditions for Domain Transferability from the View of Regularization},
+  author={Xu, Xiaojun and Zhang, Jacky Y and Ma, Evelyn and Son, Hyun Ho and Koyejo, Sanmi and Li, Bo},
+  booktitle={International Conference on Machine Learning},
+  pages={24770--24802},
+  year={2022},
+  organization={PMLR}
+}
+
+% robust pre-training --- adversarial contrastive learning
+@article{robpretrain_ACL_jiang2020robust,
+  title={Robust pre-training by adversarial contrastive learning},
+  author={Jiang, Ziyu and Chen, Tianlong and Chen, Ting and Wang, Zhangyang},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={16199--16210},
+  year={2020}
+}
+
+@article{RoCL,
+  title={Adversarial self-supervised contrastive learning},
+  author={Kim, Minseon and Tack, Jihoon and Hwang, Sung Ju},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={2983--2994},
+  year={2020}
+}
+
+@article{ACL_CALE,
+  title={Contrastive learning with adversarial examples},
+  author={Ho, Chih-Hui and Nvasconcelos, Nuno},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={17081--17093},
+  year={2020}
+}
+
+@article{robpretrain_ACL_fan2021does,
+  title={When Does Contrastive Learning Preserve Adversarial Robustness from Pretraining to Finetuning?},
+  author={Fan, Lijie and Liu, Sijia and Chen, Pin-Yu and Zhang, Gaoyuan and Gan, Chuang},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={21480--21492},
+  year={2021}
+}
+
+@inproceedings{ACL_InfoNCE,
+  title={Adversarial Contrastive Learning via Asymmetric InfoNCE},
+  author={Yu, Qiying and Lou, Jieming and Zhan, Xianyuan and Li, Qizhang and Zuo, Wangmeng and Liu, Yang and Liu, Jingjing},
+  booktitle={European Conference on Computer Vision},
+  pages={53--69},
+  year={2022},
+  organization={Springer}
+}
+
+@inproceedings{DeACL,
+  title={Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness},
+  author={Zhang, Chaoning and Zhang, Kang and Zhang, Chenshuang and Niu, Axi and Feng, Jiu and Yoo, Chang D and Kweon, In So},
+  booktitle={European Conference on Computer Vision},
+  pages={725--742},
+  year={2022},
+  organization={Springer}
+}
+
+@inproceedings{
+DynACL_iclr2023,
+title={Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning},
+author={Rundong Luo and Yifei Wang and Yisen Wang},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=0qmwFNJyxCL}
+}
+
+%DINO
+@inproceedings{DINO,
+  title={Emerging properties in self-supervised vision transformers},
+  author={Caron, Mathilde and Touvron, Hugo and Misra, Ishan and J{\'e}gou, Herv{\'e} and Mairal, Julien and Bojanowski, Piotr and Joulin, Armand},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={9650--9660},
+  year={2021}
+}
+
+@article{ViT_DINO,
+  title={Exploring Adversarial Attacks and Defenses in Vision Transformers trained with DINO},
+  author={Rando, Javier and Naimi, Nasib and Baumann, Thomas and Mathys, Max},
+  journal={arXiv preprint arXiv:2206.06761},
+  year={2022}
+}
+
+%Unsupervised pre-training
+@inproceedings{unsupervised_pretrain,
+  title={Why does unsupervised pre-training help deep learning?},
+  author={Erhan, Dumitru and Courville, Aaron and Bengio, Yoshua and Vincent, Pascal},
+  booktitle={Proceedings of the thirteenth international conference on artificial intelligence and statistics},
+  pages={201--208},
+  year={2010},
+  organization={JMLR Workshop and Conference Proceedings}
+}
+
+
+% coreset selection
+@incollection{coreset_survey,
+  title={Core-sets: Updated survey},
+  author={Feldman, Dan},
+  booktitle={Sampling techniques for supervised or unsupervised tasks},
+  pages={23--44},
+  year={2020},
+  publisher={Springer}
+}
+
+@inproceedings{CRAIG,
+  title={Coresets for data-efficient training of machine learning models},
+  author={Mirzasoleiman, Baharan and Bilmes, Jeff and Leskovec, Jure},
+  booktitle={International Conference on Machine Learning},
+  pages={6950--6960},
+  year={2020},
+  organization={PMLR}
+}
+
+@inproceedings{glister,
+  title={Glister: Generalization based data subset selection for efficient and robust learning},
+  author={Killamsetty, Krishnateja and Sivasubramanian, Durga and Ramakrishnan, Ganesh and Iyer, Rishabh},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={35},
+  number={9},
+  pages={8110--8118},
+  year={2021}
+}
+
+@inproceedings{GradMatch,
+  title={Grad-match: Gradient matching based data subset selection for efficient deep model training},
+  author={Killamsetty, Krishnateja and Durga, S and Ramakrishnan, Ganesh and De, Abir and Iyer, Rishabh},
+  booktitle={International Conference on Machine Learning},
+  pages={5464--5474},
+  year={2021},
+  organization={PMLR}
+}
+
+@article{Retrieve,
+  title={Retrieve: Coreset selection for efficient and robust semi-supervised learning},
+  author={Killamsetty, Krishnateja and Zhao, Xujiang and Chen, Feng and Iyer, Rishabh},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={14488--14501},
+  year={2021}
+}
+
+@article{ACS,
+  title={Adversarial Coreset Selection for Efficient Robust Training},
+  author={Dolatabadi, Hadi M and Erfani, Sarah and Leckie, Christopher},
+  journal={arXiv preprint arXiv:2209.05785},
+  year={2022}
+}
+
+@inproceedings{submodular_greedy,
+  title={Submodular meets Spectral: Greedy Algorithms for Subset Selection, Sparse Approximation and Dictionary Selection},
+  author={Das, Abhimanyu and Kempe, David},
+  booktitle={ICML},
+  year={2011}
+}
+@article{alpha_submodular,
+  title={The network visibility problem},
+  author={Gatmiry, Khashayar and Gomez-Rodriguez, Manuel},
+  journal={ACM Transactions on Information Systems (TOIS)},
+  volume={40},
+  number={2},
+  pages={1--42},
+  year={2021},
+  publisher={ACM New York, NY}
+}
+
+@incollection{set_cover,
+  title={Reducibility among combinatorial problems},
+  author={Karp, Richard M},
+  booktitle={Complexity of computer computations},
+  pages={85--103},
+  year={1972},
+  publisher={Springer}
+}
+
+% adversarial training
+% Min - Max Optimization PGD
+@inproceedings{standard_adversarial_training,
+  author    = {Aleksander Madry and
+               Aleksandar Makelov and
+               Ludwig Schmidt and
+               Dimitris Tsipras and
+               Adrian Vladu},
+  title     = {Towards Deep Learning Models Resistant to Adversarial Attacks},
+  booktitle = {ICLR},
+  year      = {2018},
+}
+
+@inproceedings{FAT,
+  author       = {Jingfeng Zhang and
+                  Xilie Xu and
+                  Bo Han and
+                  Gang Niu and
+                  Lizhen Cui and
+                  Masashi Sugiyama and
+                  Mohan S. Kankanhalli},
+  title        = {Attacks Which Do Not Kill Training Make Adversarial Learning Stronger},
+  booktitle    = {International Conference on Machine Learning},
+  pages        = {11278--11287},
+  publisher    = {{PMLR}},
+  year         = {2020}
+}
+
+%  TRADES
+@inproceedings{trades,
+  author    = {Hongyang Zhang and
+               Yaodong Yu and
+               Jiantao Jiao and
+               Eric P. Xing and
+               Laurent El Ghaoui and
+               Michael I. Jordan},
+  title     = {Theoretically Principled Trade-off between Robustness and Accuracy},
+  booktitle = {ICML},
+  year      = {2019},
+}
+
+@article{AT_OptimalTranspot,
+  title={Defense against adversarial attacks using feature scattering-based adversarial training},
+  author={Zhang, Haichao and Wang, Jianyu},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+@article{AT_JS,
+  title={Efficient and Effective Augmentation Strategy for Adversarial Training},
+  author={Addepalli, Sravanti and Jain, Samyak and Babu, R Venkatesh},
+  journal={arXiv preprint arXiv:2210.15318},
+  year={2022}
+}
+
+
+@inproceedings{FGSM,
+  author       = {Ian J. Goodfellow and
+                  Jonathon Shlens and
+                  Christian Szegedy},
+  editor       = {Yoshua Bengio and
+                  Yann LeCun},
+  title        = {Explaining and Harnessing Adversarial Examples},
+  booktitle    = {The Third International Conference on Learning Representations},
+  year         = {2015}
+}
+
+@inproceedings{AutoAttack,
+  title={Reliable evaluation of adversarial robustness with an ensemble of diverse parameter-free attacks},
+  author={Croce, Francesco and Hein, Matthias},
+  booktitle={International conference on machine learning},
+  pages={2206--2216},
+  year={2020},
+  organization={PMLR}
+}
+
+@inproceedings{FAB,
+  title={Minimally distorted adversarial examples with a fast adaptive boundary attack},
+  author={Croce, Francesco and Hein, Matthias},
+  booktitle={International Conference on Machine Learning},
+  pages={2196--2205},
+  year={2020},
+  organization={PMLR}
+}
+
+@inproceedings{Square_Attack,
+  title={Square attack: a query-efficient black-box adversarial attack via random search},
+  author={Andriushchenko, Maksym and Croce, Francesco and Flammarion, Nicolas and Hein, Matthias},
+  booktitle={Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part XXIII},
+  pages={484--501},
+  year={2020},
+  organization={Springer}
+}
+
+@inproceedings{obfuscated_graident,
+  title={Obfuscated gradients give a false sense of security: Circumventing defenses to adversarial examples},
+  author={Athalye, Anish and Carlini, Nicholas and Wagner, David},
+  booktitle={International conference on machine learning},
+  pages={274--283},
+  year={2018},
+  organization={PMLR}
+}
+
+%stl10
+@inproceedings{stl10,
+  title={An analysis of single-layer networks in unsupervised feature learning},
+  author={Coates, Adam and Ng, Andrew and Lee, Honglak},
+  booktitle={Proceedings of the fourteenth international conference on artificial intelligence and statistics},
+  pages={215--223},
+  year={2011},
+  organization={JMLR Workshop and Conference Proceedings}
+}
+
+%imagenet
+@inproceedings{deng2009imagenet,
+  title={Imagenet: A large-scale hierarchical image database},
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  booktitle={2009 IEEE conference on computer vision and pattern recognition},
+  pages={248--255},
+  year={2009},
+  organization={Ieee}
+}
+%cifar
+@techreport{cifar,
+  title={Learning multiple layers of features from tiny images},
+  author={Krizhevsky, Alex},
+  year={2009},
+}
+%corruption
+@article{corruption,
+  title={Benchmarking Neural Network Robustness to Common Corruptions and Perturbations},
+  author={Dan Hendrycks and Thomas Dietterich},
+  journal={Proceedings of the International Conference on Learning Representations},
+  year={2019}
+}
+
+%SVHN
+@article{svhn,
+  title={Reading digits in natural images with unsupervised feature learning},
+  author={Netzer, Yuval and Wang, Tao and Coates, Adam and Bissacco, Alessandro and Wu, Bo and Ng, Andrew Y},
+  year={2011}
+}
+%DTD
+@inproceedings{DTD,
+  title={Describing textures in the wild},
+  author={Cimpoi, Mircea and Maji, Subhransu and Kokkinos, Iasonas and Mohamed, Sammy and Vedaldi, Andrea},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={3606--3613},
+  year={2014}
+}
+%Birdsnap
+@inproceedings{birdsnap,
+  title={Birdsnap: Large-scale fine-grained visual categorization of birds},
+  author={Berg, Thomas and Liu, Jiongxin and Woo Lee, Seung and Alexander, Michelle L and Jacobs, David W and Belhumeur, Peter N},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={2011--2018},
+  year={2014}
+}
+%sun397
+@inproceedings{sun397,
+  title={Sun database: Large-scale scene recognition from abbey to zoo},
+  author={Xiao, Jianxiong and Hays, James and Ehinger, Krista A and Oliva, Aude and Torralba, Antonio},
+  booktitle={2010 IEEE computer society conference on computer vision and pattern recognition},
+  pages={3485--3492},
+  year={2010},
+  organization={IEEE}
+}
+%car
+@article{cars,
+  title={Collecting a large-scale dataset of fine-grained cars},
+  author={Krause, Jonathan and Deng, Jia and Stark, Michael and Fei-Fei, Li},
+  year={2013}
+}
+%imagenet21k
+@article{imagenet-21k,
+  title={Imagenet-21k pretraining for the masses},
+  author={Ridnik, Tal and Ben-Baruch, Emanuel and Noy, Asaf and Zelnik-Manor, Lihi},
+  journal={arXiv preprint arXiv:2104.10972},
+  year={2021}
+}
+%VTAB-19
+@article{VTAB-19,
+  title={A large-scale study of representation learning with the visual task adaptation benchmark},
+  author={Zhai, Xiaohua and Puigcerver, Joan and Kolesnikov, Alexander and Ruyssen, Pierre and Riquelme, Carlos and Lucic, Mario and Djolonga, Josip and Pinto, Andre Susano and Neumann, Maxim and Dosovitskiy, Alexey and others},
+  journal={arXiv preprint arXiv:1910.04867},
+  year={2019}
+}
+
+%contrastive loss
+@article{contrastive_oord2018representation,
+  title={Representation learning with contrastive predictive coding},
+  author={Oord, Aaron van den and Li, Yazhe and Vinyals, Oriol},
+  journal={arXiv preprint arXiv:1807.03748},
+  year={2018}
+}
+% SimCLR
+@inproceedings{
+contrastive_invariant_iclr2021,
+title={Representation Learning via Invariant Causal Mechanisms},
+author={Jovana Mitrovic and Brian McWilliams and Jacob C Walker and Lars Holger Buesing and Charles Blundell},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=9p2ekP904Rs}
+}
+
+@inproceedings{contrastive_SimCLR,
+  title={A simple framework for contrastive learning of visual representations},
+  author={Chen, Ting and Kornblith, Simon and Norouzi, Mohammad and Hinton, Geoffrey},
+  booktitle={International conference on machine learning},
+  pages={1597--1607},
+  year={2020},
+  organization={PMLR}
+}
+@article{SimCLR_v2,
+  title={Big self-supervised models are strong semi-supervised learners},
+  author={Chen, Ting and Kornblith, Simon and Swersky, Kevin and Norouzi, Mohammad and Hinton, Geoffrey E},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={22243--22255},
+  year={2020}
+}
+
+@article{BYOL,
+  title={Bootstrap your own latent-a new approach to self-supervised learning},
+  author={Grill, Jean-Bastien and Strub, Florian and Altch{\'e}, Florent and Tallec, Corentin and Richemond, Pierre and Buchatskaya, Elena and Doersch, Carl and Avila Pires, Bernardo and Guo, Zhaohan and Gheshlaghi Azar, Mohammad and others},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={21271--21284},
+  year={2020}
+}
+
+@inproceedings{MoCo-v3,
+  title={An empirical study of training self-supervised vision transformers},
+  author={Chen, Xinlei and Xie, Saining and He, Kaiming},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={9640--9649},
+  year={2021}
+}
+
+@article{contrastive_review,
+  title={Contrastive representation learning: A framework and review},
+  author={Le-Khac, Phuc H and Healy, Graham and Smeaton, Alan F},
+  journal={IEEE Access},
+  volume={8},
+  pages={193907--193934},
+  year={2020},
+  publisher={IEEE}
+}
+
+@article{HCL,
+  title={Contrastive learning with hard negative samples},
+  author={Robinson, Joshua and Chuang, Ching-Yao and Sra, Suvrit and Jegelka, Stefanie},
+  journal={arXiv preprint arXiv:2010.04592},
+  year={2020}
+}
+
+@inproceedings{koch2015siamese,
+  title={Siamese neural networks for one-shot image recognition},
+  author={Koch, Gregory and Zemel, Richard and Salakhutdinov, Ruslan and others},
+  booktitle={ICML deep learning workshop},
+  volume={2},
+  pages={0},
+  year={2015},
+  organization={Lille}
+}
+
+@inproceedings{siamese_unusupervised,
+  title={Exploring simple siamese representation learning},
+  author={Chen, Xinlei and He, Kaiming},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={15750--15758},
+  year={2021}
+}
+
+
+
+% Computationally efficiency adversarial training.
+@inproceedings{freeAT,
+title = {Adversarial training for free!},
+author = {Shafahi, Ali and Najibi, Mahyar and Ghiasi, Mohammad Amin and Xu, Zheng and Dickerson, John and Studer, Christoph and Davis, Larry S and Taylor, Gavin and Goldstein, Tom},
+booktitle = {NeurIPS},
+year = {2019},
+}
+
+@inproceedings{yopo,
+title = {You Only Propagate Once: Accelerating Adversarial Training via Maximal Principle},
+author = {Zhang, Dinghuai and Zhang, Tianyuan and Lu, Yiping and Zhu, Zhanxing and Dong, Bin},
+booktitle = {NeurIPS},
+year = {2019},
+}
+
+@inproceedings{fastAT,
+title={Fast is better than free: Revisiting adversarial training},
+author={Eric Wong and Leslie Rice and J. Zico Kolter},
+booktitle={ICLR},
+year={2020},
+}
+
+@article{improve_fastAT_nips20,
+  title={Understanding and improving fast adversarial training},
+  author={Andriushchenko, Maksym and Flammarion, Nicolas},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={16048--16059},
+  year={2020}
+}
+
+@inproceedings{improve_fastAT_icml22,
+  title={Revisiting and advancing fast adversarial training through the lens of bi-level optimization},
+  author={Zhang, Yihua and Zhang, Guanhua and Khanduri, Prashant and Hong, Mingyi and Chang, Shiyu and Liu, Sijia},
+  booktitle={International Conference on Machine Learning},
+  pages={26693--26712},
+  year={2022},
+  organization={PMLR}
+}
+
+
+%fundation models
+@article{foundation_model,
+  title={On the opportunities and risks of foundation models},
+  author={Bommasani, Rishi and Hudson, Drew A and Adeli, Ehsan and Altman, Russ and Arora, Simran and von Arx, Sydney and Bernstein, Michael S and Bohg, Jeannette and Bosselut, Antoine and Brunskill, Emma and others},
+  journal={arXiv preprint arXiv:2108.07258},
+  year={2021}
+}
+% ViT
+@article{ViT,
+  title={An image is worth 16x16 words: Transformers for image recognition at scale},
+  author={Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and others},
+  journal={arXiv preprint arXiv:2010.11929},
+  year={2020}
+}
+
+@article{Transformer,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  journal={Advances in neural information processing systems},
+  volume={30},
+  year={2017}
+}
+
+% GPT-3
+@article{GPT3,
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={1877--1901},
+  year={2020}
+}
+%BERT
+@article{BERT,
+  title={Bert: Pre-training of deep bidirectional transformers for language understanding},
+  author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  journal={arXiv preprint arXiv:1810.04805},
+  year={2018}
+}
+%CLAP
+@article{elizalde2022clap,
+  title={Clap: Learning audio concepts from natural language supervision},
+  author={Elizalde, Benjamin and Deshmukh, Soham and Ismail, Mahmoud Al and Wang, Huaming},
+  journal={arXiv preprint arXiv:2206.04769},
+  year={2022}
+}
+
+@inproceedings{resnet,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={770--778},
+  year={2016}
+}
+
+@article{wideresnet,
+  title={Wide residual networks},
+  author={Zagoruyko, Sergey and Komodakis, Nikos},
+  journal={arXiv preprint arXiv:1605.07146},
+  year={2016}
+}
+
+@article{t-SNE,
+  title={Visualizing data using t-SNE.},
+  author={Van der Maaten, Laurens and Hinton, Geoffrey},
+  journal={Journal of machine learning research},
+  volume={9},
+  number={11},
+  year={2008}
+}
+
+@article{miyato2018virtual,
+  title={Virtual adversarial training: a regularization method for supervised and semi-supervised learning},
+  author={Miyato, Takeru and Maeda, Shin-ichi and Koyama, Masanori and Ishii, Shin},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={41},
+  number={8},
+  pages={1979--1993},
+  year={2018},
+  publisher={IEEE}
+}
+
+
+@article{cosine_annealing,
+  title={Sgdr: Stochastic gradient descent with warm restarts},
+  author={Loshchilov, Ilya and Hutter, Frank},
+  journal={arXiv preprint arXiv:1608.03983},
+  year={2016}
+}
+
+
+@inproceedings{AT_dual_BN,
+  title={Adversarial examples improve image recognition},
+  author={Xie, Cihang and Tan, Mingxing and Gong, Boqing and Wang, Jiang and Yuille, Alan L and Le, Quoc V},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={819--828},
+  year={2020}
+}
+
+@article{semi_sup_AT,
+  title={Are labels required for improving adversarial robustness?},
+  author={Alayrac, Jean-Baptiste and Uesato, Jonathan and Huang, Po-Sen and Fawzi, Alhussein and Stanforth, Robert and Kohli, Pushmeet},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+
+%causality
+
+@book{pearl2009causality_book,
+  title={Causality},
+  author={Pearl, Judea},
+  year={2009},
+  publisher={Cambridge university press}
+}
+
+@book{peters2017causality_book,
+  title={Elements of causal inference: foundations and learning algorithms},
+  author={Peters, Jonas and Janzing, Dominik and Sch{\"o}lkopf, Bernhard},
+  year={2017},
+  publisher={The MIT Press}
+}
+
+@article{chalupka2014visual_causasl,
+  title={Visual causal feature learning},
+  author={Chalupka, Krzysztof and Perona, Pietro and Eberhardt, Frederick},
+  journal={arXiv preprint arXiv:1412.2309},
+  year={2014}
+}
+
+@article{causality_OOD_2020,
+  title={Invariance, causality and robustness},
+  author={B{\"u}hlmann, Peter},
+  year={2020}
+}
+
+@article{zhang2020causal_robustness,
+  title={A causal view on robustness of neural networks},
+  author={Zhang, Cheng and Zhang, Kun and Li, Yingzhen},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={289--301},
+  year={2020}
+}
+
+@article{tang2020causal_longtail,
+  title={Long-tailed classification by keeping the good and removing the bad momentum causal effect},
+  author={Tang, Kaihua and Huang, Jianqiang and Zhang, Hanwang},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={1513--1524},
+  year={2020}
+}
+
+@article{sauer2021_causal_counterfactual,
+  title={Counterfactual generative networks},
+  author={Sauer, Axel and Geiger, Andreas},
+  journal={arXiv preprint arXiv:2101.06046},
+  year={2021}
+}
+
+@inproceedings{
+causal_adv_iclr_2022,
+title={Adversarial Robustness Through the Lens of Causality},
+author={Yonggang Zhang and Mingming Gong and Tongliang Liu and Gang Niu and Xinmei Tian and Bo Han and Bernhard Sch{\"o}lkopf and Kun Zhang},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=cZAi1yWpiXQ}
+}
+
+
+
+% texture
+
+@article{geirhos2018imagenet_texture,
+  title={ImageNet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness},
+  author={Geirhos, Robert and Rubisch, Patricia and Michaelis, Claudio and Bethge, Matthias and Wichmann, Felix A and Brendel, Wieland},
+  journal={arXiv preprint arXiv:1811.12231},
+  year={2018}
+}
+
+
+@article{croce2020robustbench,
+    title={RobustBench: a standardized adversarial robustness benchmark},
+    author={Croce, Francesco and Andriushchenko, Maksym and Sehwag, Vikash and Debenedetti, Edoardo and Flammarion, Nicolas
+    and Chiang, Mung and Mittal, Prateek and Matthias Hein},
+    journal={arXiv preprint arXiv:2010.09670},
+    year={2020}
+}
+
+
+
+@article{medicine_application,
+  title={Artificial intelligence in medicine: current trends and future possibilities},
+  author={Buch, Varun H and Ahmed, Irfan and Maruthappu, Mahiben},
+  journal={British Journal of General Practice},
+  volume={68},
+  number={668},
+  pages={143--144},
+  year={2018},
+  publisher={British Journal of General Practice}
+}
+
+@incollection{adv_application,
+  title={Adversarial examples in the physical world},
+  author={Kurakin, Alexey and Goodfellow, Ian J and Bengio, Samy},
+  booktitle={Artificial intelligence safety and security},
+  pages={99--112},
+  year={2018},
+  publisher={Chapman and Hall/CRC}
+}
+
+@article{alayrac2019_unsupervised_AT,
+  title={Are labels required for improving adversarial robustness?},
+  author={Alayrac, Jean-Baptiste and Uesato, Jonathan and Huang, Po-Sen and Fawzi, Alhussein and Stanforth, Robert and Kohli, Pushmeet},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+@inproceedings{kumar2022fine_LP,
+  author       = {Ananya Kumar and
+                  Aditi Raghunathan and
+                  Robbie Matthew Jones and
+                  Tengyu Ma and
+                  Percy Liang},
+  title        = {Fine-Tuning can Distort Pretrained Features and Underperform Out-of-Distribution},
+  booktitle    = {The Tenth International Conference on Learning Representations},
+  year         = {2022},
+  url          = {https://openreview.net/forum?id=UYneFzXSJWh},
+}
+
+@inproceedings{Efficient_ACL_RCS,
+  title={Efficient Adversarial Contrastive Learning via Robustness-Aware Coreset Selection},
+  author={Xu, Xilie and Zhang, Jingfeng and Liu, Feng and Sugiyama, Masashi and Kankanhalli, Mohan},
+  booktitle={NeurIPS},
+  year={2023}
+}
+
+@article{IRM,
+  title={Invariant risk minimization},
+  author={Arjovsky, Martin and Bottou, L{\'e}on and Gulrajani, Ishaan and Lopez-Paz, David},
+  journal={arXiv preprint arXiv:1907.02893},
+  year={2019}
+}
+
+@inproceedings{invariant_OOD,
+  title={Out-of-distribution generalization with causal invariant transformations},
+  author={Wang, Ruoyu and Yi, Mingyang and Chen, Zhitang and Zhu, Shengyu},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={375--385},
+  year={2022}
+}
+
+@article{invariant_robustness,
+  title={Robustness through Data Augmentation Loss Consistency},
+  author={Huang, Tianjian and Halbe, Shaunak Ashish and Sankar, Chinnadhurai and Amini, Pooyan and Kottur, Satwik and Geramifard, Alborz and Razaviyayn, Meisam and Beirami, Ahmad},
+  journal={Transactions on Machine Learning Research}
+}
+
+@article{xu2023autolora,
+  title={AutoLoRa: A Parameter-Free Automated Robust Fine-Tuning Framework},
+  author={Xu, Xilie and Zhang, Jingfeng and Kankanhalli, Mohan},
+  journal={arXiv preprint arXiv:2310.01818},
+  year={2023}
+}
+

@@ -1,0 +1,939 @@
+@book{Goodfellow-et-al-2016,
+    title={Deep Learning},
+    author={Ian Goodfellow and Yoshua Bengio and Aaron Courville},
+    publisher={MIT Press},
+    note={\url{http://www.deeplearningbook.org}},
+    year={2016}
+}
+
+@article{armentaRepresentationTheoryNeural2021,
+  title = {The {{Representation Theory}} of {{Neural Networks}}},
+  author = {Armenta, M. and Jodoin, Pierre-Marc},
+  date = {2021},
+  journaltitle = {Mathematics},
+  doi = {10.3390/math9243216},
+  abstract = {It is proved that a neural network is a quiver representation with activation functions, a mathematical object that the authors represent using a network quiver, which indicates how the neural network computes a prediction in a combinatorial and algebraic way. In this work, we show that neural networks can be represented via the mathematical theory of quiver representations. More specifically, we prove that a neural network is a quiver representation with activation functions, a mathematical object that we represent using a network quiver. Furthermore, we show that network quivers gently adapt to common neural network concepts such as fully connected layers, convolution operations, residual connections, batch normalization, pooling operations and even randomly wired neural networks. We show that this mathematical representation is by no means an approximation of what neural networks are as it exactly matches reality. This interpretation is algebraic and can be studied with algebraic methods. We also provide a quiver representation model to understand how a neural network creates representations from the data. We show that a neural network saves the data as quiver representations, and maps it to a geometrical space called the moduli space, which is given in terms of the underlying oriented graph of the network, i.e., its quiver. This results as a consequence of our defined objects and of understanding how the neural network computes a prediction in a combinatorial and algebraic way. Overall, representing neural networks through the quiver representation theory leads to 9 consequences and 4 inquiries for future research that we believe are of great interest to better understand what neural networks are and how they work.}
+}
+
+@article{badrinarayananUnderstandingSymmetriesDeep2015,
+  title = {Understanding Symmetries in Deep Networks},
+  author = {Badrinarayanan, Vijay and Mishra, Bamdev and Cipolla, R.},
+  date = {2015},
+  journaltitle = {ArXiv},
+  abstract = {This work shows that a commonly used deep network, which uses convolution, batch normalization, reLU, max-pooling, and sub-sampling pipeline, possess more complex forms of symmetry arising from scaling-based reparameterization of the network weights. Recent works have highlighted scale invariance or symmetry present in the weight space of a typical deep network and the adverse effect it has on the Euclidean gradient based stochastic gradient descent optimization. In this work, we show that a commonly used deep network, which uses convolution, batch normalization, reLU, max-pooling, and sub-sampling pipeline, possess more complex forms of symmetry arising from scaling-based reparameterization of the network weights. We propose to tackle the issue of the weight space symmetry by constraining the filters to lie on the unit-norm manifold. Consequently, training the network boils down to using stochastic gradient descent updates on the unit-norm manifold. Our empirical evidence based on the MNIST dataset shows that the proposed updates improve the test performance beyond what is achieved with batch normalization and without sacrificing the computational efficiency of the weight updates.},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/DS/Badrinarayanan et al_2015_Understanding symmetries in deep networks.pdf}
+}
+
+@article{Bau2017NetworkDQ,
+  title={Network Dissection: Quantifying Interpretability of Deep Visual Representations},
+  author={David Bau and Bolei Zhou and Aditya Khosla and Aude Oliva and Antonio Torralba},
+  journal={2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2017},
+  pages={3319-3327}
+}
+
+@article{breaWeightspaceSymmetryDeep2019,
+  title = {Weight-Space Symmetry in Deep Networks Gives Rise to Permutation Saddles, Connected by Equal-Loss Valleys across the Loss Landscape},
+  author = {Brea, Johanni and Simsek, Berfin and Illing, Bernd and Gerstner, Wulfram},
+  date = {2019-07-05},
+  eprint = {1907.02911},
+  eprinttype = {arxiv},
+  primaryclass = {cs, stat},
+  url = {http://arxiv.org/abs/1907.02911},
+  urldate = {2022-01-12},
+  abstract = {The permutation symmetry of neurons in each layer of a deep neural network gives rise not only to multiple equivalent global minima of the loss function, but also to first-order saddle points located on the path between the global minima. In a network of \$d-1\$ hidden layers with \$n\_k\$ neurons in layers \$k = 1, \textbackslash ldots, d\$, we construct smooth paths between equivalent global minima that lead through a `permutation point' where the input and output weight vectors of two neurons in the same hidden layer \$k\$ collide and interchange. We show that such permutation points are critical points with at least \$n\_\{k+1\}\$ vanishing eigenvalues of the Hessian matrix of second derivatives indicating a local plateau of the loss function. We find that a permutation point for the exchange of neurons \$i\$ and \$j\$ transits into a flat valley (or generally, an extended plateau of \$n\_\{k+1\}\$ flat dimensions) that enables all \$n\_k!\$ permutations of neurons in a given layer \$k\$ at the same loss value. Moreover, we introduce high-order permutation points by exploiting the recursive structure in neural network functions, and find that the number of \$K\^\{\textbackslash text\{th\}\}\$-order permutation points is at least by a factor \$\textbackslash sum\_\{k=1\}\^\{d-1\}\textbackslash frac\{1\}\{2!\^K\}\{n\_k-K \textbackslash choose K\}\$ larger than the (already huge) number of equivalent global minima. In two tasks, we illustrate numerically that some of the permutation points correspond to first-order saddles (`permutation saddles'): first, in a toy network with a single hidden layer on a function approximation task and, second, in a multilayer network on the MNIST task. Our geometric approach yields a lower bound on the number of critical points generated by weight-space symmetries and provides a simple intuitive link between previous mathematical results and numerical observations.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/DS/Brea et al_2019_Weight-space symmetry in deep networks gives rise to permutation saddles,.pdf;/Users/godf974/Zotero/storage/N9IQUZ3X/1907.html}
+}
+
+@article{cooperCriticalLocusOverparameterized2020,
+  title = {The Critical Locus of Overparameterized Neural Networks},
+  author = {Cooper, Y.},
+  date = {2020},
+  journaltitle = {ArXiv},
+  abstract = {The results in this paper provide a starting point to a more quantitative understanding of the properties of various components of the critical locus of the loss function \$L\$ of overparameterized feedforward neural networks. Many aspects of the geometry of loss functions in deep learning remain mysterious. In this paper, we work toward a better understanding of the geometry of the loss function \$L\$ of overparameterized feedforward neural networks. In this setting, we identify several components of the critical locus of \$L\$ and study their geometric properties. For networks of depth \$\textbackslash ell \textbackslash geq 4\$, we identify a locus of critical points we call the star locus \$S\$. Within \$S\$ we identify a positive-dimensional sublocus \$C\$ with the property that for \$p \textbackslash in C\$, \$p\$ is a degenerate critical point, and no existing theoretical result guarantees that gradient descent will not converge to \$p\$. For very wide networks, we build on earlier work and show that all critical points of \$L\$ are degenerate, and give lower bounds on the number of zero eigenvalues of the Hessian at each critical point. For networks that are both deep and very wide, we compare the growth rates of the zero eigenspaces of the Hessian at all the different families of critical points that we identify. The results in this paper provide a starting point to a more quantitative understanding of the properties of various components of the critical locus of \$L\$.},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/DS/Cooper_2020_The critical locus of overparameterized neural networks.pdf}
+}
+
+@article{freemanTopologyGeometryHalfRectified2017,
+  title={Topology and Geometry of Half-Rectified Network Optimization},
+  author={C. Daniel Freeman and Joan Bruna},
+  journal={ArXiv},
+  year={2017},
+  volume={abs/1611.01540}
+}
+
+
+@article{jeffreysKahlerGeometryQuiver2021,
+  title = {Kähler {{Geometry}} of {{Quiver Varieties}} and {{Machine Learning}}},
+  author = {Jeffreys, G. and Lau, Siu-Cheong},
+  date = {2021},
+  journaltitle = {undefined},
+  url = {https://www.semanticscholar.org/paper/K%C3%A4hler-Geometry-of-Quiver-Varieties-and-Machine-Jeffreys-Lau/4283bcd232950402875f188a2bf171c6153105e8},
+  urldate = {2022-02-17},
+  abstract = {Semantic Scholar extracted view of \&quot;Kähler Geometry of Quiver Varieties and Machine Learning\&quot; by G. Jeffreys et al.},
+  langid = {english},
+  file = {/Users/godf974/Zotero/storage/YDZCHHZ2/4283bcd232950402875f188a2bf171c6153105e8.html}
+}
+
+@online{kuninNeuralMechanicsSymmetry2021,
+  title = {Neural {{Mechanics}}: {{Symmetry}} and {{Broken Conservation Laws}} in {{Deep Learning Dynamics}}},
+  shorttitle = {Neural {{Mechanics}}},
+  author = {Kunin, Daniel and Sagastuy-Brena, Javier and Ganguli, Surya and Yamins, Daniel L. K. and Tanaka, Hidenori},
+  date = {2021-03-29},
+  eprint = {2012.04728},
+  eprinttype = {arxiv},
+  primaryclass = {cond-mat, q-bio, stat},
+  url = {http://arxiv.org/abs/2012.04728},
+  urldate = {2022-01-12},
+  abstract = {Understanding the dynamics of neural network parameters during training is one of the key challenges in building a theoretical foundation for deep learning. A central obstacle is that the motion of a network in high-dimensional parameter space undergoes discrete finite steps along complex stochastic gradients derived from real-world datasets. We circumvent this obstacle through a unifying theoretical framework based on intrinsic symmetries embedded in a network's architecture that are present for any dataset. We show that any such symmetry imposes stringent geometric constraints on gradients and Hessians, leading to an associated conservation law in the continuous-time limit of stochastic gradient descent (SGD), akin to Noether's theorem in physics. We further show that finite learning rates used in practice can actually break these symmetry induced conservation laws. We apply tools from finite difference methods to derive modified gradient flow, a differential equation that better approximates the numerical trajectory taken by SGD at finite learning rates. We combine modified gradient flow with our framework of symmetries to derive exact integral expressions for the dynamics of certain parameter combinations. We empirically validate our analytic expressions for learning dynamics on VGG-16 trained on Tiny ImageNet. Overall, by exploiting symmetry, our work demonstrates that we can analytically describe the learning dynamics of various parameter combinations at finite learning rates and batch sizes for state of the art architectures trained on any dataset.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Condensed Matter - Disordered Systems and Neural Networks,Condensed Matter - Statistical Mechanics,Quantitative Biology - Neurons and Cognition,Statistics - Machine Learning},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/DS/Kunin et al_2021_Neural Mechanics.pdf;/Users/godf974/Zotero/storage/34XSYNDN/2012.html}
+}
+
+@inproceedings{mengGSGDOptimizingReLU2019,
+  title = {G-{{SGD}}: {{Optimizing ReLU Neural Networks}} in Its {{Positively Scale-Invariant Space}}},
+  shorttitle = {G-{{SGD}}},
+  booktitle = {{{ICLR}}},
+  author = {Meng, Qi and Zheng, Shuxin and Zhang, Huishuai and Chen, Wei and Ye, Q. and Ma, Zhi-Ming and Yu, Nenghai and Liu, Tie-Yan},
+  date = {2019},
+  abstract = {A formal study on the positive scaling operators which forms a transformation group, denoted as G, and it is proved that the value of a path in the neural network is invariant to positive scaling and the value vector of all the paths is sufficient to represent the neural networks under mild conditions. It is well known that neural networks with rectified linear units (ReLU) activation functions are positively scale-invariant. Conventional algorithms like stochastic gradient descent optimize the neural networks in the vector space of weights, which is, however, not positively scale-invariant. This mismatch may lead to problems during the optimization process. Then, a natural question is: can we construct a new vector space that is positively scale-invariant and sufficient to represent ReLU neural networks so as to better facilitate the optimization process? In this paper, we provide our positive answer to this question. First, we conduct a formal study on the positive scaling operators which forms a transformation group, denoted as G. We prove that the value of a path (i.e. the product of the weights along the path) in the neural network is invariant to positive scaling and the value vector of all the paths is sufficient to represent the neural networks under mild conditions. Second, we show that one can identify some basis paths out of all the paths and prove that the linear span of their value vectors (denoted as G-space) is an invariant space with lower dimension under the positive scaling group. Finally, we design stochastic gradient descent algorithm in G-space (abbreviated as G-SGD) to optimize the value vector of the basis paths of neural networks with little extra cost by leveraging back-propagation. Our experiments show that G-SGD significantly outperforms the conventional SGD algorithm in optimizing ReLU networks on benchmark datasets.},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/DS/Meng et al_2019_G-SGD.pdf}
+}
+
+@inproceedings{rolnickReverseengineeringDeepReLU2020,
+  title = {Reverse-Engineering Deep {{ReLU}} Networks},
+  booktitle = {{{ICML}}},
+  author = {Rolnick, D. and Kording, Konrad Paul},
+  date = {2020},
+  abstract = {It is proved that in fact it is often possible to identify the architecture, weights, and biases of an unknown deep ReLU network by observing only its output, and that it is possible to recover the weights of neurons and their arrangement within the network up to isomorphism. It has been widely assumed that a neural network cannot be recovered from its outputs, as the network depends on its parameters in a highly nonlinear way. Here, we prove that in fact it is often possible to identify the architecture, weights, and biases of an unknown deep ReLU network by observing only its output. Every ReLU network defines a piecewise linear function, where the boundaries between linear regions correspond to inputs for which some neuron in the network switches between inactive and active ReLU states. By dissecting the set of region boundaries into components associated with particular neurons, we show both theoretically and empirically that it is possible to recover the weights of neurons and their arrangement within the network, up to isomorphism.},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/DS/Rolnick_Kording_2020_Reverse-engineering deep ReLU networks.pdf}
+}
+
+@article{yiPositivelyScaleInvariantFlatness2019,
+  title = {Positively {{Scale-Invariant Flatness}} of {{ReLU Neural Networks}}},
+  author = {Yi, Mingyang and Meng, Qi and Chen, Wei and Ma, Zhi-Ming and Liu, Tie-Yan},
+  date = {2019},
+  journaltitle = {ArXiv},
+  abstract = {The conclusion demonstrates that the existing definitions of flatness fail to account for the complex geometry of ReLU neural networks because they can't cover the Positively Scale-Invariant (PSI) property of Re LU network. It was empirically confirmed by Keskar et al.\textbackslash cite\{SharpMinima\} that flatter minima generalize better. However, for the popular ReLU network, sharp minimum can also generalize well \textbackslash cite\{SharpMinimacan\}. The conclusion demonstrates that the existing definitions of flatness fail to account for the complex geometry of ReLU neural networks because they can't cover the Positively Scale-Invariant (PSI) property of ReLU network. In this paper, we formalize the PSI causes problem of existing definitions of flatness and propose a new description of flatness - \textbackslash emph\{PSI-flatness\}. PSI-flatness is defined on the values of basis paths \textbackslash cite\{GSGD\} instead of weights. Values of basis paths have been shown to be the PSI-variables and can sufficiently represent the ReLU neural networks which ensure the PSI property of PSI-flatness. Then we study the relation between PSI-flatness and generalization theoretically and empirically. First, we formulate a generalization bound based on PSI-flatness which shows generalization error decreasing with the ratio between the largest basis path value and the smallest basis path value. That is to say, the minimum with balanced values of basis paths will more likely to be flatter and generalize better. Finally. we visualize the PSI-flatness of loss surface around two learned models which indicates the minimum with smaller PSI-flatness can indeed generalize better.},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/DS/Yi et al_2019_Positively Scale-Invariant Flatness of ReLU Neural Networks.pdf}
+}
+
+
+@book{lusztig2010introduction,
+  title={Introduction to quantum groups},
+  author={Lusztig, George},
+  year={2010},
+  publisher={Springer Science \& Business Media}
+}
+
+@book{chriss2009representation,
+  title={Representation theory and complex geometry},
+  author={Chriss, Neil and others},
+  year={2009},
+  publisher={Springer Science \& Business Media}
+}
+
+
+@unpublished{chenGraphBasedSimilarityNeural2021,
+  title = {Graph-{{Based Similarity}} of {{Neural Network Representations}}},
+  author = {Chen, Zuohui and Lu, Yao and Yang, Wen and Xuan, Qi and Yang, Xiaoniu},
+  date = {2021-11-22},
+  eprint = {2111.11165},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  url = {http://arxiv.org/abs/2111.11165},
+  urldate = {2022-05-05},
+  abstract = {Understanding the black-box representations in Deep Neural Networks (DNN) is an essential problem in deep learning. In this work, we propose Graph-Based Similarity (GBS) to measure the similarity of layer features. Contrary to previous works that compute the similarity directly on the feature maps, GBS measures the correlation based on the graph constructed with hidden layer outputs. By treating each input sample as a node and the corresponding layer output similarity as edges, we construct the graph of DNN representations for each layer. The similarity between graphs of layers identifies the correspondences between representations of models trained in different datasets and initializations. We demonstrate and prove the invariance property of GBS, including invariance to orthogonal transformation and invariance to isotropic scaling, and compare GBS with CKA. GBS shows state-of-the-art performance in reflecting the similarity and provides insights on explaining the adversarial sample behavior on the hidden layer space.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/General/Chen et al_2021_Graph-Based Similarity of Neural Network Representations.pdf;/Users/godf974/Zotero/storage/X3NCA3BU/2111.html}
+}
+
+@inproceedings{
+csiszarikSimilarityMatchingNeural2021,
+title={Similarity and Matching of Neural Network Representations},
+author={Adri{\'a}n Csisz{\'a}rik and P{\'e}ter K{\H{o}}r{\"o}si-Szab{\'o} and {\'A}kos K. Matszangosz and Gergely Papp and D{\'a}niel Varga},
+booktitle={Advances in Neural Information Processing Systems},
+editor={A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+year={2021},
+url={https://openreview.net/forum?id=aedFIIRRfXr}
+}
+
+@article{dingGroundingRepresentationSimilarity2021,
+  title = {Grounding {{Representation Similarity}} with {{Statistical Testing}}},
+  author = {Ding, Frances and Denain, Jean-Stanislas and Steinhardt, J.},
+  date = {2021},
+  journaltitle = {ArXiv},
+  abstract = {This work quantitatively compares different networks’ learned representations using canonical correlation analysis (CCA), centered kernel alignment (CKA), and other dissimilarity measures, and finds that current metrics exhibit different weaknesses, and notes that a classical baseline performs surprisingly well. To understand neural network behavior, recent works quantitatively compare different networks’ learned representations using canonical correlation analysis (CCA), centered kernel alignment (CKA), and other dissimilarity measures. Unfortunately, these widely used measures often disagree on fundamental observations, such as whether deep networks differing only in random initialization learn similar representations. These disagreements raise the question: which, if any, of these dissimilarity measures should we believe? We provide a framework to ground this question through a concrete test: measures should have sensitivity to changes that affect functional behavior, and specificity against changes that do not. We quantify this through a variety of functional behaviors including probing accuracy and robustness to distribution shift, and examine changes such as varying random initialization and deleting principal components. We find that current metrics exhibit different weaknesses, note that a classical baseline performs surprisingly well, and highlight settings where all metrics appear to fail, thus providing a challenge set for further improvement.},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/Gumby/Ding et al_2021_Grounding Representation Similarity with Statistical Testing.pdf}
+}
+
+@unpublished{tangSimilarityNeuralNetworks2020,
+  title = {Similarity of {{Neural Networks}} with {{Gradients}}},
+  author = {Tang, Shuai and Maddox, Wesley J. and Dickens, Charlie and Diethe, Tom and Damianou, Andreas},
+  date = {2020-03-25},
+  eprint = {2003.11498},
+  eprinttype = {arxiv},
+  primaryclass = {cs, stat},
+  url = {http://arxiv.org/abs/2003.11498},
+  urldate = {2022-05-03},
+  abstract = {A suitable similarity index for comparing learnt neural networks plays an important role in understanding the behaviour of the highly-nonlinear functions, and can provide insights on further theoretical analysis and empirical studies. We define two key steps when comparing models: firstly, the representation abstracted from the learnt model, where we propose to leverage both feature vectors and gradient ones (which are largely ignored in prior work) into designing the representation of a neural network. Secondly, we define the employed similarity index which gives desired invariance properties, and we facilitate the chosen ones with sketching techniques for comparing various datasets efficiently. Empirically, we show that the proposed approach provides a state-of-the-art method for computing similarity of neural networks that are trained independently on different datasets and the tasks defined by the datasets.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/General/Tang et al_2020_Similarity of Neural Networks with Gradients.pdf;/Users/godf974/Zotero/storage/V8LXQZGL/2003.html}
+}
+
+@article{thompsonEffectTaskTraining2019,
+  title = {The Effect of Task and Training on Intermediate Representations in Convolutional Neural Networks Revealed with Modified {{RV}} Similarity Analysis},
+  author = {Thompson, Jessica A. F. and Bengio, Yoshua and Schoenwiesner, Marc},
+  date = {2019},
+  journaltitle = {2019 Conference on Cognitive Computational Neuroscience},
+  eprint = {1912.02260},
+  eprinttype = {arxiv},
+  doi = {10.32470/CCN.2019.1300-0},
+  url = {http://arxiv.org/abs/1912.02260},
+  urldate = {2022-05-03},
+  abstract = {Centered Kernel Alignment (CKA) was recently proposed as a similarity metric for comparing activation patterns in deep networks. Here we experiment with the modified RV-coefficient (RV2), which has very similar properties as CKA while being less sensitive to dataset size. We compare the representations of networks that received varying amounts of training on different layers: a standard trained network (all parameters updated at every step), a freeze trained network (layers gradually frozen during training), random networks (only some layers trained), and a completely untrained network. We found that RV2 was able to recover expected similarity patterns and provide interpretable similarity matrices that suggested hypotheses about how representations are affected by different training recipes. We propose that the superior performance achieved by freeze training can be attributed to representational differences in the penultimate layer. Our comparisons of random networks suggest that the inputs and targets serve as anchors on the representations in the lowest and highest layers.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/General/Thompson et al_2019_The effect of task and training on intermediate representations in.pdf;/Users/godf974/Zotero/storage/PCEBCLKS/1912.html}
+}
+
+@unpublished{wangUnderstandingLearningRepresentations2018a,
+  title = {Towards {{Understanding Learning Representations}}: {{To What Extent Do Different Neural Networks Learn}} the {{Same Representation}}},
+  shorttitle = {Towards {{Understanding Learning Representations}}},
+  author = {Wang, Liwei and Hu, Lunjia and Gu, Jiayuan and Wu, Yue and Hu, Zhiqiang and He, Kun and Hopcroft, John},
+  date = {2018-11-28},
+  eprint = {1810.11750},
+  eprinttype = {arxiv},
+  primaryclass = {cs, stat},
+  url = {http://arxiv.org/abs/1810.11750},
+  urldate = {2022-05-05},
+  abstract = {It is widely believed that learning good representations is one of the main reasons for the success of deep neural networks. Although highly intuitive, there is a lack of theory and systematic approach quantitatively characterizing what representations do deep neural networks learn. In this work, we move a tiny step towards a theory and better understanding of the representations. Specifically, we study a simpler problem: How similar are the representations learned by two networks with identical architecture but trained from different initializations. We develop a rigorous theory based on the neuron activation subspace match model. The theory gives a complete characterization of the structure of neuron activation subspace matches, where the core concepts are maximum match and simple match which describe the overall and the finest similarity between sets of neurons in two networks respectively. We also propose efficient algorithms to find the maximum match and simple matches. Finally, we conduct extensive experiments using our algorithms. Experimental results suggest that, surprisingly, representations learned by the same convolutional layers of networks trained from different initializations are not as similar as prevalently expected, at least in terms of subspace match.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/General/Wang et al_2018_Towards Understanding Learning Representations2.pdf;/Users/godf974/Zotero/storage/BE6IV4JS/1810.html}
+}
+
+@inproceedings{williamsGeneralizedShapeMetrics2022,
+  title={Generalized Shape Metrics on Neural Representations},
+  author={Alex H. Williams and Erin Marie O'Mara Kunz and Simon Kornblith and Scott W. Linderman},
+  booktitle={NeurIPS},
+  year={2021}
+}
+
+@article{alainUnderstandingIntermediateLayers2017,
+  title = {Understanding Intermediate Layers Using Linear Classifier Probes},
+  author = {Alain, Guillaume and Bengio, Yoshua},
+  date = {2017},
+  journaltitle = {ICLR},
+  abstract = {This work proposes to monitor the features at every layer of a model and measure how suitable they are for classification, using linear classifiers, which are referred to as "probes", trained entirely independently of the model itself. Neural network models have a reputation for being black boxes. We propose to monitor the features at every layer of a model and measure how suitable they are for classification. We use linear classifiers, which we refer to as "probes", trained entirely independently of the model itself.  This helps us better understand the roles and dynamics of the intermediate layers. We demonstrate how this can be used to develop a better intuition about models and to diagnose potential problems.  We apply this technique to the popular models Inception v3 and Resnet-50. Among other things, we observe experimentally that the linear separability of features increase monotonically along the depth of the model.},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/General/Alain_Bengio_2017_Understanding intermediate layers using linear classifier probes.pdf}
+}
+
+@inproceedings{Bansal2021RevisitingMS,
+  title={Revisiting Model Stitching to Compare Neural Representations},
+  author={Yamini Bansal and Preetum Nakkiran and Boaz Barak},
+  booktitle={NeurIPS},
+  year={2021}
+}
+
+@article{hardoonCanonicalCorrelationAnalysis2004,
+  title = {Canonical {{Correlation Analysis}}: {{An Overview}} with {{Application}} to {{Learning Methods}}},
+  shorttitle = {Canonical {{Correlation Analysis}}},
+  author = {Hardoon, D. and Szedmák, S. and Shawe-Taylor, J.},
+  date = {2004},
+  journaltitle = {Neural Computation},
+  doi = {10.1162/0899766042321814},
+  abstract = {A general method using kernel canonical correlation analysis to learn a semantic representation to web images and their associated text and compares orthogonalization approaches against a standard cross-representation retrieval technique known as the generalized vector space model is presented. We present a general method using kernel canonical correlation analysis to learn a semantic representation to web images and their associated text. The semantic space provides a common representation and enables a comparison between the text and images. In the experiments, we look at two approaches of retrieving images based on only their content from a text query. We compare orthogonalization approaches against a standard cross-representation retrieval technique known as the generalized vector space model.},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/General/Hardoon et al_2004_Canonical Correlation Analysis.pdf}
+}
+
+@article{kornblithSimilarityNeuralNetwork2019,
+  title = {Similarity of {{Neural Network Representations Revisited}}},
+  author = {Kornblith, Simon and Norouzi, Mohammad and Lee, Honglak and Hinton, Geoffrey E.},
+  date = {2019},
+  journaltitle = {ICML},
+  abstract = {A similarity index is introduced that measures the relationship between representational similarity matrices and does not suffer from this limitation of CCA. Recent work has sought to understand the behavior of neural networks by comparing representations between layers and between different trained models. We examine methods for comparing neural network representations based on canonical correlation analysis (CCA). We show that CCA belongs to a family of statistics for measuring multivariate similarity, but that neither CCA nor any other statistic that is invariant to invertible linear transformation can measure meaningful similarities between representations of higher dimension than the number of data points. We introduce a similarity index that measures the relationship between representational similarity matrices and does not suffer from this limitation. This similarity index is equivalent to centered kernel alignment (CKA) and is also closely connected to CCA. Unlike CCA, CKA can reliably identify correspondences between representations in networks trained from different initializations.},
+  keywords = {Computer Science - Machine Learning,Quantitative Biology - Neurons and Cognition,Statistics - Machine Learning},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/General/Kornblith et al_2019_Similarity of Neural Network Representations Revisited.pdf;/Users/godf974/Zotero/storage/W4MYRV69/1905.html}
+}
+
+@inproceedings{liConvergentLearningDifferent2015,
+  title = {Convergent {{Learning}}: {{Do}} Different Neural Networks Learn the Same Representations?},
+  shorttitle = {Convergent {{Learning}}},
+  booktitle = {{{FE}}@{{NIPS}}},
+  author = {Li, Yixuan and Yosinski, J. and Clune, J. and Lipson, Hod and Hopcroft, J.},
+  date = {2015},
+  abstract = {This paper investigates the extent to which neural networks exhibit convergent learning, which is when the representations learned by multiple nets converge to a set of features which are either individually similar between networks or where subsets of features span similar low-dimensional spaces. Recent success in training deep neural networks have prompted active investigation into the features learned on their intermediate layers. Such research is difficult because it requires making sense of non-linear computations performed by millions of parameters, but valuable because it increases our ability to understand current models and create improved versions of them. In this paper we investigate the extent to which neural networks exhibit what we call convergent learning, which is when the representations learned by multiple nets converge to a set of features which are either individually similar between networks or where subsets of features span similar low-dimensional spaces. We propose a specific method of probing representations: training multiple networks and then comparing and contrasting their individual, learned representations at the level of neurons or groups of neurons. We begin research into this question using three techniques to approximately align different neural networks on a feature level: a bipartite matching approach that makes one-to-one assignments between neurons, a sparse prediction approach that finds one-to-many mappings, and a spectral clustering approach that finds many-to-many mappings. This initial investigation reveals a few previously unknown properties of neural networks, and we argue that future research into the question of convergent learning will yield many more. The insights described here include (1) that some features are learned reliably in multiple networks, yet other features are not consistently learned; (2) that units learn to span low-dimensional subspaces and, while these subspaces are common to multiple networks, the specific basis vectors learned are not; (3) that the representation codes show evidence of being a mix between a local code and slightly, but not fully, distributed codes across multiple units.},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/General/Li et al_2015_Convergent Learning.pdf}
+}
+
+@inproceedings{morcosInsightsRepresentationalSimilarity2018,
+  title = {Insights on Representational Similarity in Neural Networks with Canonical Correlation},
+  booktitle = {{{NeurIPS}}},
+  author = {Morcos, Ari S. and Raghu, M. and Bengio, Samy},
+  date = {2018},
+  abstract = {Comparing different neural network representations and determining how representations evolve over time remain challenging open questions in our understanding of the function of neural networks. Comparing representations in neural networks is fundamentally difficult as the structure of representations varies greatly, even across groups of networks trained on identical tasks, and over the course of training. Here, we develop projection weighted CCA (Canonical Correlation Analysis) as a tool for understanding neural networks, building off of SVCCA, a recently proposed method (Raghu et al., 2017). We first improve the core method, showing how to differentiate between signal and noise, and then apply this technique to compare across a group of CNNs, demonstrating that networks which generalize converge to more similar representations than networks which memorize, that wider networks converge to more similar solutions than narrow networks, and that trained networks with identical topology but different learning rates converge to distinct clusters with diverse representations. We also investigate the representational dynamics of RNNs, across both training and sequential timesteps, finding that RNNs converge in a bottom-up pattern over the course of training and that the hidden state is highly variable over the course of a sequence, even when accounting for linear transforms. Together, these results provide new insights into the function of CNNs and RNNs, and demonstrate the utility of using CCA to understand representations.},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/General/Morcos et al_2018_Insights on representational similarity in neural networks with canonical.pdf}
+}
+
+@inproceedings{raghuSVCCASingularVector2017,
+  title = {{{SVCCA}}: {{Singular Vector Canonical Correlation Analysis}} for {{Deep Learning Dynamics}} and {{Interpretability}}},
+  shorttitle = {{{SVCCA}}},
+  booktitle = {{{NIPS}}},
+  author = {Raghu, M. and Gilmer, J. and Yosinski, J. and Sohl-Dickstein, J.},
+  date = {2017},
+  abstract = {This work proposes a new technique, Singular Vector Canonical Correlation Analysis (SVCCA), a tool for quickly comparing two representations in a way that is both invariant to affine transform and fast to compute. We propose a new technique, Singular Vector Canonical Correlation Analysis (SVCCA), a tool for quickly comparing two representations in a way that is both invariant to affine transform (allowing comparison between different layers and networks) and fast to compute (allowing more comparisons to be calculated than with previous methods). We deploy this tool to measure the intrinsic dimensionality of layers, showing in some cases needless over-parameterization; to probe learning dynamics throughout training, finding that networks converge to final representations from the bottom up; to show where class-specific information in networks is formed; and to suggest new training regimes that simultaneously save computation and overfit less.}
+}
+
+@inproceedings{wangUnderstandingLearningRepresentations2018,
+  title = {Towards {{Understanding Learning Representations}}: {{To What Extent Do Different Neural Networks Learn}} the {{Same Representation}}},
+  shorttitle = {Towards {{Understanding Learning Representations}}},
+  booktitle = {{{NeurIPS}}},
+  author = {Wang, Liwei and Hu, Lunjia and Gu, Jia-Yuan and Wu, Y. and Hu, Zhiqiang and He, Kun and Hopcroft, J.},
+  date = {2018},
+  abstract = {The theory gives a complete characterization of the structure of neuron activation subspace matches, where the core concepts are maximum match and simple match which describe the overall and the finest similarity between sets of neurons in two networks respectively. It is widely believed that learning good representations is one of the main reasons for the success of deep neural networks. Although highly intuitive, there is a lack of theory and systematic approach quantitatively characterizing what representations do deep neural networks learn. In this work, we move a tiny step towards a theory and better understanding of the representations. Specifically, we study a simpler problem: How similar are the representations learned by two networks with identical architecture but trained from different initializations. We develop a rigorous theory based on the neuron activation subspace match model. The theory gives a complete characterization of the structure of neuron activation subspace matches, where the core concepts are maximum match and simple match which describe the overall and the finest similarity between sets of neurons in two networks respectively. We also propose efficient algorithms to find the maximum match and simple matches. Finally, we conduct extensive experiments using our algorithms. Experimental results suggest that, surprisingly, representations learned by the same convolutional layers of networks trained from different initializations are not as similar as prevalently expected, at least in terms of subspace match.},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/General/Wang et al_2018_Towards Understanding Learning Representations.pdf}
+}
+
+@article{jacotNeuralTangentKernel2020,
+  title={Neural tangent kernel: convergence and generalization in neural networks (invited paper)},
+  author={Arthur Jacot and Franck Gabriel and Cl{\'e}ment Hongler},
+  journal={Proceedings of the 53rd Annual ACM SIGACT Symposium on Theory of Computing},
+  year={2018}
+}
+
+
+@inproceedings{prilloSoftSortContinuousRelaxation2020,
+  title={SoftSort: A Continuous Relaxation for the argsort Operator},
+  author={Sebastian Prillo and Julian Martin Eisenschlos},
+  booktitle={ICML},
+  year={2020}
+}
+
+
+@online{pageHowTrainYour2018,
+  title = {How to {{Train Your ResNet}}},
+  author = {Page, David},
+  date = {2018-09-24T17:11:20+00:00},
+  url = {https://myrtle.ai/learn/how-to-train-your-resnet/},
+  urldate = {2022-05-09},
+  abstract = {The introduction to a series of posts investigating how to train Residual networks efficiently on the CIFAR10 image classification dataset. By the fourth post, we can train to the 94\% accuracy threshold of the DAWNBench competition in 79 seconds on a single V100 GPU.},
+  langid = {american},
+  organization = {{Myrtle}},
+  file = {/Users/godf974/Zotero/storage/M852GTIR/how-to-train-your-resnet.html}
+}
+
+@article{wold1987principal,
+  title={Principal component analysis},
+  author={Wold, Svante and Esbensen, Kim and Geladi, Paul},
+  journal={Chemometrics and intelligent laboratory systems},
+  volume={2},
+  number={1-3},
+  pages={37--52},
+  year={1987},
+  publisher={Elsevier}
+}
+
+@article{rubinstein2010dictionaries,
+  title={Dictionaries for sparse representation modeling},
+  author={Rubinstein, Ron and Bruckstein, Alfred M and Elad, Michael},
+  journal={Proceedings of the IEEE},
+  volume={98},
+  number={6},
+  pages={1045--1057},
+  year={2010},
+  publisher={IEEE}
+}
+
+@book{serre1977linear,
+  title={Linear representations of finite groups},
+  author={Serre, Jean-Pierre},
+  volume={42},
+  year={1977},
+  publisher={Springer}
+}
+
+@article{cooley1969finite,
+  title={The finite Fourier transform},
+  author={Cooley, JW and Lewis, P and Welch, P},
+  journal={IEEE Transactions on audio and electroacoustics},
+  volume={17},
+  number={2},
+  pages={77--85},
+  year={1969},
+  publisher={IEEE}
+}
+
+@inproceedings{geusebroek2000color,
+  title={Color and scale: The spatial structure of color images},
+  author={Geusebroek, Jan-Mark and Boomgaard, Rein van den and Smeulders, Arnold WM and Dev, Anuj},
+  booktitle={European Conference on Computer Vision},
+  pages={331--341},
+  year={2000},
+  organization={Springer}
+}
+
+@article{yin2019fourier,
+  title={A fourier perspective on model robustness in computer vision},
+  author={Yin, Dong and Gontijo Lopes, Raphael and Shlens, Jon and Cubuk, Ekin Dogus and Gilmer, Justin},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+@article{jo2017measuring,
+  title={Measuring the tendency of cnns to learn surface statistical regularities},
+  author={Jo, Jason and Bengio, Yoshua},
+  journal={arXiv preprint arXiv:1711.11561},
+  year={2017}
+}
+
+@inproceedings{tsuzuku2019structural,
+  title={On the structural sensitivity of deep convolutional networks to the directions of fourier basis functions},
+  author={Tsuzuku, Yusuke and Sato, Issei},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={51--60},
+  year={2019}
+}
+
+@article{bronstein2017geometric,
+  title={Geometric deep learning: going beyond euclidean data},
+  author={Bronstein, Michael M and Bruna, Joan and LeCun, Yann and Szlam, Arthur and Vandergheynst, Pierre},
+  journal={IEEE Signal Processing Magazine},
+  volume={34},
+  number={4},
+  pages={18--42},
+  year={2017},
+  publisher={IEEE}
+}
+
+@inproceedings{zhou2018interpretable,
+  title={Interpretable basis decomposition for visual explanation},
+  author={Zhou, Bolei and Sun, Yiyou and Bau, David and Torralba, Antonio},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+  pages={119--134},
+  year={2018}
+}
+
+@article{erhan2009visualizing,
+  title={Visualizing higher-layer features of a deep network},
+  author={Erhan, Dumitru and Bengio, Yoshua and Courville, Aaron and Vincent, Pascal},
+  journal={University of Montreal},
+  volume={1341},
+  number={3},
+  pages={1},
+  year={2009}
+}
+
+@inproceedings{zeiler2014visualizing,
+  title={Visualizing and understanding convolutional networks},
+  author={Zeiler, Matthew D and Fergus, Rob},
+  booktitle={European conference on computer vision},
+  pages={818--833},
+  year={2014},
+  organization={Springer}
+}
+
+@inproceedings{zhou2014object,
+  author={Bolei Zhou and Aditya Khosla and Àgata Lapedriza and Aude Oliva and Antonio Torralba},
+  title={Object Detectors Emerge in Deep Scene CNNs.},
+  year={2015},
+  cdate={1420070400000},
+  url={http://arxiv.org/abs/1412.6856},
+  booktitle={ICLR},
+  crossref={conf/iclr/2015}
+}
+
+
+@article{morcos2018importance,
+  title={On the importance of single directions for generalization},
+  author={Morcos, Ari S and Barrett, David GT and Rabinowitz, Neil C and Botvinick, Matthew},
+  journal={arXiv preprint arXiv:1803.06959},
+  year={2018}
+}
+
+@inproceedings{yosinski2015understanding,
+Author = {Jason Yosinski and Jeff Clune and Anh Nguyen and Thomas Fuchs and Hod Lipson},
+Booktitle = {Deep Learning Workshop, International Conference on Machine Learning (ICML)},
+Title = {Understanding Neural Networks Through Deep Visualization},
+Year = {2015}}
+
+@inproceedings{zeiler2014visualizing,
+  title={Visualizing and understanding convolutional networks},
+  author={Zeiler, Matthew D and Fergus, Rob},
+  booktitle={European conference on computer vision},
+  pages={818--833},
+  year={2014},
+  organization={Springer}
+}
+
+@article{na2019discovery,
+  title={Discovery of natural language concepts in individual units of cnns},
+  author={Na, Seil and Choe, Yo Joong and Lee, Dong-Hyun and Kim, Gunhee},
+  journal={arXiv preprint arXiv:1902.07249},
+  year={2019}
+}
+@article{diaconis2005random,
+  title={What is a random matrix},
+  author={Diaconis, Persi},
+  journal={Notices of the AMS},
+  volume={52},
+  number={11},
+  pages={1348--1349},
+  year={2005}
+}
+
+@article{liu2022convnet,
+  title={A ConvNet for the 2020s},
+  author={Liu, Zhuang and Mao, Hanzi and Wu, Chao-Yuan and Feichtenhofer, Christoph and Darrell, Trevor and Xie, Saining},
+  journal={arXiv preprint arXiv:2201.03545},
+  year={2022}
+}
+
+
+@inproceedings{kimInterpretabilityFeatureAttribution2018,
+  title = {Interpretability {{Beyond Feature Attribution}}: {{Quantitative Testing}} with {{Concept Activation Vectors}} ({{TCAV}})},
+  shorttitle = {Interpretability {{Beyond Feature Attribution}}},
+  booktitle = {{{ICML}}},
+  author = {Kim, Been and Wattenberg, M. and Gilmer, J. and Cai, Carrie J. and Wexler, James and Viégas, F. and Sayres, R.},
+  date = {2018},
+  abstract = {Concept Activation Vectors (CAVs) are introduced, which provide an interpretation of a neural net's internal state in terms of human-friendly concepts, and may be used to explore hypotheses and generate insights for a standard image classification network as well as a medical application. The interpretation of deep learning models is a challenge due to their size, complexity, and often opaque internal state. In addition, many systems, such as image classifiers, operate on low-level features rather than high-level concepts. To address these challenges, we introduce Concept Activation Vectors (CAVs), which provide an interpretation of a neural net's internal state in terms of human-friendly concepts. The key idea is to view the high-dimensional internal state of a neural net as an aid, not an obstacle. We show how to use CAVs as part of a technique, Testing with CAVs (TCAV), that uses directional derivatives to quantify the degree to which a user-defined concept is important to a classification result--for example, how sensitive a prediction of "zebra" is to the presence of stripes. Using the domain of image classification as a testing ground, we describe how CAVs may be used to explore hypotheses and generate insights for a standard image classification network as well as a medical application.},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/General/Kim et al_2018_Interpretability Beyond Feature Attribution.pdf}
+}
+
+
+
+@article{yinDreamingDistillDataFree2020,
+  title = {Dreaming to {{Distill}}: {{Data-Free Knowledge Transfer}} via {{DeepInversion}}},
+  shorttitle = {Dreaming to {{Distill}}},
+  author = {Yin, Hongxu and Molchanov, Pavlo and Li, Zhizhong and Álvarez, J. and Mallya, Arun and Hoiem, Derek and Jha, N. and Kautz, J.},
+  date = {2020},
+  journaltitle = {2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  doi = {10.1109/cvpr42600.2020.00874},
+  abstract = {DeepInversion is introduced, a new method for synthesizing images from the image distribution used to train a deep neural network, which optimizes the input while regularizing the distribution of intermediate feature maps using information stored in the batch normalization layers of the teacher. We introduce DeepInversion, a new method for synthesizing images from the image distribution used to train a deep neural network. We ``invert'' a trained network (teacher) to synthesize class-conditional input images starting from random noise, without using any additional information about the training dataset. Keeping the teacher fixed, our method optimizes the input while regularizing the distribution of intermediate feature maps using information stored in the batch normalization layers of the teacher. Further, we improve the diversity of synthesized images using Adaptive DeepInversion, which maximizes the Jensen-Shannon divergence between the teacher and student network logits. The resulting synthesized images from networks trained on the CIFAR-10 and ImageNet datasets demonstrate high fidelity and degree of realism, and help enable a new breed of data-free applications - ones that do not require any real images or labeled data. We demonstrate the applicability of our proposed method to three tasks of immense practical importance - (i) data-free network pruning, (ii) data-free knowledge transfer, and (iii) data-free continual learning.}
+}
+
+
+
+@inproceedings{nairRectifiedLinearUnits2010,
+  title = {Rectified {{Linear Units Improve Restricted Boltzmann Machines}}},
+  booktitle = {{{ICML}}},
+  author = {Nair, Vinod and Hinton, Geoffrey E.},
+  date = {2010},
+  abstract = {Restricted Boltzmann machines were developed using binary stochastic hidden units that learn features that are better for object recognition on the NORB dataset and face verification on the Labeled Faces in the Wild dataset. Restricted Boltzmann machines were developed using binary stochastic hidden units. These can be generalized by replacing each binary unit by an infinite number of copies that all have the same weights but have progressively more negative biases. The learning and inference rules for these "Stepped Sigmoid Units" are unchanged. They can be approximated efficiently by noisy, rectified linear units. Compared with binary units, these units learn features that are better for object recognition on the NORB dataset and face verification on the Labeled Faces in the Wild dataset. Unlike binary units, rectified linear units preserve information about relative intensities as information travels through multiple layers of feature detectors.}
+}
+
+
+
+@article{ioffeBatchNormalizationAccelerating2015,
+  title = {Batch {{Normalization}}: {{Accelerating Deep Network Training}} by {{Reducing Internal Covariate Shift}}},
+  shorttitle = {Batch {{Normalization}}},
+  author = {Ioffe, S. and Szegedy, Christian},
+  date = {2015},
+  journaltitle = {ICML},
+  abstract = {Applied to a state-of-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Training Deep Neural Networks is complicated by the fact that the distribution of each layer's inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlinearities. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normalization a part of the model architecture and performing the normalization for each training mini-batch. Batch Normalization allows us to use much higher learning rates and be less careful about initialization, and in some cases eliminates the need for Dropout. Applied to a state-of-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Using an ensemble of batch-normalized networks, we improve upon the best published result on ImageNet classification: reaching 4.82\% top-5 test error, exceeding the accuracy of human raters.},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/Ioffe_Szegedy_2015_Batch Normalization.pdf}
+}
+
+
+
+@article{lencUnderstandingImageRepresentations2015,
+  title = {Understanding Image Representations by Measuring Their Equivariance and Equivalence},
+  author = {Lenc, Karel and Vedaldi, A.},
+  date = {2015},
+  journaltitle = {2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  doi = {10.1109/CVPR.2015.7298701},
+  abstract = {Three key mathematical properties of representations: equivariance, invariance, and equivalence are investigated and applied to popular representations to reveal insightful aspects of their structure, including clarifying at which layers in a CNN certain geometric invariances are achieved. Despite the importance of image representations such as histograms of oriented gradients and deep Convolutional Neural Networks (CNN), our theoretical understanding of them remains limited. Aiming at filling this gap, we investigate three key mathematical properties of representations: equivariance, invariance, and equivalence. Equivariance studies how transformations of the input image are encoded by the representation, invariance being a special case where a transformation has no effect. Equivalence studies whether two representations, for example two different parametrisations of a CNN, capture the same visual information or not. A number of methods to establish these properties empirically are proposed, including introducing transformation and stitching layers in CNNs. These methods are then applied to popular representations to reveal insightful aspects of their structure, including clarifying at which layers in a CNN certain geometric invariances are achieved. While the focus of the paper is theoretical, direct applications to structured-output regression are demonstrated too.},
+  file = {/Users/godf974/OneDrive - PNNL/Documents/Papers/Lenc_Vedaldi_2015_Understanding image representations by measuring their equivariance and.pdf}
+}
+
+@inproceedings{
+ding2021grounding,
+title={Grounding Representation Similarity Through Statistical Testing},
+author={Frances Ding and Jean-Stanislas Denain and Jacob Steinhardt},
+booktitle={Advances in Neural Information Processing Systems},
+editor={A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+year={2021},
+url={https://openreview.net/forum?id=_kwj6V53ZqB}
+}
+
+
+@inproceedings{kileelExpressivePowerDeep2019,
+  title = {On the {{Expressive Power}} of {{Deep Polynomial Neural Networks}}},
+  booktitle = {{{NeurIPS}}},
+  author = {Kileel, J. and Trager, Matthew and Bruna, Joan},
+  date = {2019},
+  abstract = {The dimension of this variety is proposed as a precise measure of the expressive power of polynomial neural networks, including an exact formula for high activation degrees, as well as upper and lower bounds on layer widths in order for deep polynomials networks to fill the ambient functional space. We study deep neural networks with polynomial activations, particularly their expressive power. For a fixed architecture and activation degree, a polynomial neural network defines an algebraic map from weights to polynomials. The image of this map is the functional space associated to the network, and it is an irreducible algebraic variety upon taking closure. This paper proposes the dimension of this variety as a precise measure of the expressive power of polynomial neural networks. We obtain several theoretical results regarding this dimension as a function of architecture, including an exact formula for high activation degrees, as well as upper and lower bounds on layer widths in order for deep polynomials networks to fill the ambient functional space. We also present computational evidence that it is profitable in terms of expressiveness for layer widths to increase monotonically and then decrease monotonically. Finally, we link our study to favorable optimization properties when training weights, and we draw intriguing connections with tensor and polynomial decompositions.}
+}
+
+
+@ARTICLE{2020SciPy-NMeth,
+  author  = {Virtanen, Pauli and Gommers, Ralf and Oliphant, Travis E. and
+            Haberland, Matt and Reddy, Tyler and Cournapeau, David and
+            Burovski, Evgeni and Peterson, Pearu and Weckesser, Warren and
+            Bright, Jonathan and {van der Walt}, St{\'e}fan J. and
+            Brett, Matthew and Wilson, Joshua and Millman, K. Jarrod and
+            Mayorov, Nikolay and Nelson, Andrew R. J. and Jones, Eric and
+            Kern, Robert and Larson, Eric and Carey, C J and
+            Polat, {\.I}lhan and Feng, Yu and Moore, Eric W. and
+            {VanderPlas}, Jake and Laxalde, Denis and Perktold, Josef and
+            Cimrman, Robert and Henriksen, Ian and Quintero, E. A. and
+            Harris, Charles R. and Archibald, Anne M. and
+            Ribeiro, Ant{\^o}nio H. and Pedregosa, Fabian and
+            {van Mulbregt}, Paul and {SciPy 1.0 Contributors}},
+  title   = {{{SciPy} 1.0: Fundamental Algorithms for Scientific
+            Computing in Python}},
+  journal = {Nature Methods},
+  year    = {2020},
+  volume  = {17},
+  pages   = {261--272},
+  adsurl  = {https://rdcu.be/b08Wh},
+  doi     = {10.1038/s41592-019-0686-2},
+}
+
+
+@article{tibshiraniEquivalencesSparseModels,
+  title = {Equivalences {{Between Sparse Models}} and {{Neural Networks}}},
+  author = {Tibshirani, Ryan J},
+  pages = {8},
+  abstract = {We present some observations about neural networks that are, on the one hand, the result of fairly trivial algebraic manipulations, and on the other hand, potentially noteworthy and deserving of further study. A summary is as follows. • The lasso is equivalent to a two-layer neural network fit with weight decay (i.e., with a ridge penalty placed on all of the parameters), linear activation functions, no bias terms, and a very simple connectivity structure. • A k-layer neural network that has otherwise the same structure is in turn equivalent to an p-penalized regression problem, where p = 2/k {$<$} 1. • Similar equivalences hold for regression problems in which we seek group sparsity (the group lasso, and an p variant of the group lasso for p {$<$} 1) and neural networks with richer connectivity structures. • All of these equivalences extend to any loss function (not just squared loss, as is traditional in regression). Lastly, we present equivalent representations for fully-connected neural networks that use rectified linear unit (ReLU) activation functions, and have two or three layers. These representations may help shed light on how weight decay can be sparsity-inducing in such network structures.},
+  langid = {english},
+  file = {/Users/godf974/Zotero/storage/U3UXUA5A/Tibshirani - Equivalences Between Sparse Models and Neural Netw.pdf}
+}
+
+
+@article{tatroOptimizingModeConnectivity2020,
+  title = {Optimizing {{Mode Connectivity}} via {{Neuron Alignment}}},
+  author = {Tatro, N. Joseph and Chen, Pin-Yu and Das, Payel and Melnyk, Igor and Sattigeri, Prasanna and Lai, Rongjie},
+  date = {2020-11-02},
+  eprint = {2009.02439},
+  eprinttype = {arxiv},
+  primaryclass = {cs, math, stat},
+  url = {http://arxiv.org/abs/2009.02439},
+  urldate = {2022-05-13},
+  abstract = {The loss landscapes of deep neural networks are not well understood due to their high nonconvexity. Empirically, the local minima of these loss functions can be connected by a learned curve in model space, along which the loss remains nearly constant; a feature known as mode connectivity. Yet, current curve finding algorithms do not consider the influence of symmetry in the loss surface created by model weight permutations. We propose a more general framework to investigate the effect of symmetry on landscape connectivity by accounting for the weight permutations of the networks being connected. To approximate the optimal permutation, we introduce an inexpensive heuristic referred to as neuron alignment. Neuron alignment promotes similarity between the distribution of intermediate activations of models along the curve. We provide theoretical analysis establishing the benefit of alignment to mode connectivity based on this simple heuristic. We empirically verify that the permutation given by alignment is locally optimal via a proximal alternating minimization scheme. Empirically, optimizing the weight permutation is critical for efficiently learning a simple, planar, low-loss curve between networks that successfully generalizes. Our alignment method can significantly alleviate the recently identified robust loss barrier on the path connecting two adversarial robust models and find more robust and accurate models on the path.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Mathematics - Optimization and Control,Statistics - Machine Learning}
+}
+
+
+@article{olah2020zoom,
+  title={Zoom in: An introduction to circuits},
+  author={Olah, Chris and Cammarata, Nick and Schubert, Ludwig and Goh, Gabriel and Petrov, Michael and Carter, Shan},
+  journal={Distill},
+  volume={5},
+  number={3},
+  pages={e00024--001},
+  year={2020}
+}
+
+@UNPUBLISHED{praggSVD,
+  title={The SVD of Convolutional Weights: A DNN Interpretability Framework},
+  author={Praggastis, Brenda and Shapiro, Madelyn and Brown, Davis and Hagen, Alex and McDonald, Luther, and Nizinski1, Cody and Ortiz, Carlos and Purvine, Emilie and Wang, Bei},
+  year={2022}
+}
+
+@misc{elhage2021mathematical,
+  title={A mathematical framework for transformer circuits},
+  author={Elhage, N and Nanda, N and Olsson, C and Henighan, T and Joseph, N and Mann, B and Askell, A and Bai, Y and Chen, A and Conerly, T and others},
+  year={2021}
+}
+
+@inproceedings{noether,
+  title={Invariante Variationsprobleme},
+  author={Noether, E},
+  journal={Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen},
+  volume={},
+  number={},
+  pages={235--257},
+  year={1918}
+}
+
+@misc{leclerc2022ffcv,
+    author = {Guillaume Leclerc and Andrew Ilyas and Logan Engstrom and Sung Min Park and Hadi Salman and Aleksander Madry},
+    title = {ffcv},
+    year = {2022},
+    howpublished = {\url{https://github.com/libffcv/ffcv/}},
+    note = {commit 849}
+}
+
+@TECHREPORT{Krizhevsky09learningmultiple,
+    author = {Alex Krizhevsky},
+    title = {Learning multiple layers of features from tiny images},
+    institution = {},
+    year = {2009}
+}
+
+@article{raghu2021vision,
+  title={Do vision transformers see like convolutional neural networks?},
+  author={Raghu, Maithra and Unterthiner, Thomas and Kornblith, Simon and Zhang, Chiyuan and Dosovitskiy, Alexey},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021}
+}
+
+@inproceedings{
+nguyenWideDeepNetworks2021,
+title={Do Wide and Deep Networks Learn the Same Things? Uncovering How Neural Network Representations Vary with Width and Depth},
+author={Thao Nguyen and Maithra Raghu and Simon Kornblith},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=KJNcAkY8tY4}
+}
+
+
+@book{rudinPrinciplesMathematicalAnalysis1976,
+  title = {Principles of {{Mathematical Analysis}}},
+  author = {Rudin, Walter},
+  date = {1976},
+  eprint = {kwqzPAAACAAJ},
+  eprinttype = {googlebooks},
+  publisher = {{McGraw-Hill}},
+  abstract = {The third edition of this well known text continues to provide a solid foundation in mathematical analysis for undergraduate and first-year graduate students. The text begins with a discussion of the real number system as a complete ordered field. (Dedekind's construction is now treated in an appendix to Chapter I.) The topological background needed for the development of convergence, continuity, differentiation and integration is provided in Chapter 2. There is a new section on the gamma function, and many new and interesting exercises are included. This text is part of the Walter Rudin Student Series in Advanced Mathematics.},
+  isbn = {978-0-07-085613-4},
+  langid = {english},
+  pagetotal = {342},
+  keywords = {Mathematics / Calculus}
+}
+
+
+
+@book{serreLinearRepresentationsFinite2012,
+  title = {Linear {{Representations}} of {{Finite Groups}}},
+  author = {Serre, Jean-Pierre},
+  date = {2012-12-06},
+  eprint = {9mT1BwAAQBAJ},
+  eprinttype = {googlebooks},
+  publisher = {{Springer Science \& Business Media}},
+  abstract = {This book consists of three parts, rather different in level and purpose: The first part was originally written for quantum chemists. It describes the correspondence, due to Frobenius, between linear representations and charac ters. This is a fundamental result, of constant use in mathematics as well as in quantum chemistry or physics. I have tried to give proofs as elementary as possible, using only the definition of a group and the rudiments of linear algebra. The examples (Chapter 5) have been chosen from those useful to chemists. The second part is a course given in 1966 to second-year students of I'Ecoie Normale. It completes the first on the following points: (a) degrees of representations and integrality properties of characters (Chapter 6); (b) induced representations, theorems of Artin and Brauer, and applications (Chapters 7-11); (c) rationality questions (Chapters 12 and 13). The methods used are those of linear algebra (in a wider sense than in the first part): group algebras, modules, noncommutative tensor products, semisimple algebras. The third part is an introduction to Brauer theory: passage from characteristic 0 to characteristic p (and conversely). I have freely used the language of abelian categories (projective modules, Grothendieck groups), which is well suited to this sort of question. The principal results are: (a) The fact that the decomposition homomorphism is surjective: all irreducible representations in characteristic p can be lifted "virtually" (i.e., in a suitable Grothendieck group) to characteristic O.},
+  isbn = {978-1-4684-9458-7},
+  langid = {english},
+  pagetotal = {178},
+  keywords = {Mathematics / Algebra / Abstract,Mathematics / Algebra / General,Mathematics / Group Theory}
+}
+
+@inproceedings{
+mena2018learning,
+title={Learning Latent Permutations with Gumbel-Sinkhorn Networks},
+author={Gonzalo Mena and David Belanger and Scott Linderman and Jasper Snoek},
+booktitle={International Conference on Learning Representations},
+year={2018},
+url={https://openreview.net/forum?id=Byt3oJ-0W},
+}
+
+@article{szegedy2013intriguing,
+  title={Intriguing properties of neural networks},
+  author={Christian Szegedy and Wojciech Zaremba and Ilya Sutskever and Joan Bruna and D. Erhan and Ian J. Goodfellow and Rob Fergus},
+  journal={CoRR},
+  year={2014},
+  volume={abs/1312.6199}
+}
+
+@inproceedings{deng2009imagenet,
+  title={Imagenet: A large-scale hierarchical image database},
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  booktitle={2009 IEEE conference on computer vision and pattern recognition},
+  pages={248--255},
+  year={2009},
+  organization={Ieee}
+}
+
+@misc{rw2019timm,
+  author = {Ross Wightman},
+  title = {PyTorch Image Models},
+  year = {2019},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  doi = {10.5281/zenodo.4414861},
+  howpublished = {\url{https://github.com/rwightman/pytorch-image-models}}
+}
+
+@inproceedings{marcel2010torchvision,
+  title={Torchvision the machine-vision package of torch},
+  author={Marcel, S{\'e}bastien and Rodriguez, Yann},
+  booktitle={Proceedings of the 18th ACM international conference on Multimedia},
+  pages={1485--1488},
+  year={2010}
+}
+
+@incollection{torch,
+title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+booktitle = {Advances in Neural Information Processing Systems 32},
+editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+pages = {8024--8035},
+year = {2019},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf}
+}
+
+@article{sink,
+author = {Richard Sinkhorn},
+title = {{A Relationship Between Arbitrary Positive Matrices and Doubly Stochastic Matrices}},
+volume = {35},
+journal = {The Annals of Mathematical Statistics},
+number = {2},
+publisher = {Institute of Mathematical Statistics},
+pages = {876 -- 879},
+year = {1964},
+doi = {10.1214/aoms/1177703591},
+URL = {https://doi.org/10.1214/aoms/1177703591}
+}
+
+@inproceedings{Fogel2013ConvexRF,
+  title={Convex Relaxations for Permutation Problems},
+  author={Fajwel Fogel and Rodolphe Jenatton and Francis R. Bach and Alexandre d'Aspremont},
+  booktitle={SIAM J. Matrix Anal. Appl.},
+  year={2013}
+}
+
+@inproceedings{Lim2014BeyondTB,
+  title={Beyond the Birkhoff Polytope: Convex Relaxations for Vector Permutation Problems},
+  author={Cong Han Lim and Stephen J. Wright},
+  booktitle={NIPS},
+  year={2014}
+}
+
+
+@article{elhage2022solu,
+  title = {Softmax Linear Units},
+  author = {{Elhage}, {Nelson} and Hume, Tristan and Olsson, Catherine and Nanda, Neel and Henighan, Tom and Johnston, Scott and ElShowk, Sheer and Joseph, Nicholas and DasSarma, Nova and Mann, Ben and Hernandez, Danny and Askell, Amanda and Ndousse, Kamal and {Jones} and {and Drain}, Dawn and Chen, Anna and Bai, Yuntao and Ganguli, Deep and Lovitt, Liane and {Hatfield-Dodds}, Zac and Kernion, Jackson and Conerly, Tom and Kravec, Shauna and Fort, Stanislav and Kadavath, Saurav and Jacobson, Josh and {Tran-Johnson}, Eli and Kaplan, Jared and Clark, Jack and Brown, Tom and McCandlish, Sam and Amodei, Dario and Olah, Christopher},
+  year = {2022},
+  journal = {Transformer Circuits Thread}
+}
+
+
+% @article{elhage2022solu,
+%   title={Softmax Linear Units},
+%   author={Elhage, Nelson and Hume, Tristan and Olsson, Catherine and Nanda, Neel and Henighan, Tom and Johnston, Scott and ElShowk, Sheer and Joseph, Nicholas and DasSarma, Nova and Mann, Ben and Hernandez, Danny and Askell, Amanda and Ndousse, Kamal and Jones, And  and Drain, Dawn and Chen, Anna and Bai, Yuntao and Ganguli, Deep and Lovitt, Liane and Hatfield-Dodds, Zac and Kernion, Jackson and Conerly, Tom and Kravec, Shauna and Fort, Stanislav and Kadavath, Saurav and Jacobson, Josh and Tran-Johnson, Eli and Kaplan, Jared and Clark, Jack and Brown, Tom and McCandlish, Sam and Amodei, Dario and Olah, Christopher},
+%   year={2022},
+%   journal={Transformer Circuits Thread},
+%   note={https://transformer-circuits.pub/2022/solu/index.html}
+% }
+
+@misc{leclerc2022ffcv,
+    author = {Guillaume Leclerc and Andrew Ilyas and Logan Engstrom and Sung Min Park and Hadi Salman and Aleksander Madry},
+    title = {ffcv},
+    year = {2022},
+    howpublished = {\url{https://github.com/libffcv/ffcv/}},
+    note = {commit xxxxxxx}
+}
+
+@misc{hendrycksGeLU,
+  doi = {10.48550/ARXIV.1606.08415},
+  
+  url = {https://arxiv.org/abs/1606.08415},
+  
+  author = {Hendrycks, Dan and Gimpel, Kevin},
+  
+  keywords = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Gaussian Error Linear Units (GELUs)},
+  
+  publisher = {arXiv},
+  
+  year = {2016},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@inproceedings{
+zhu2021a,
+title={A Geometric Analysis of Neural Collapse with Unconstrained Features},
+author={Zhihui Zhu and Tianyu DING and Jinxin Zhou and Xiao Li and Chong You and Jeremias Sulam and Qing Qu},
+booktitle={Advances in Neural Information Processing Systems},
+editor={A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+year={2021},
+url={https://openreview.net/forum?id=KRODJAa6pzE}
+}
+
+@article{hassani2021escaping,
+  title={Escaping the big data paradigm with compact transformers},
+  author={Hassani, Ali and Walton, Steven and Shah, Nikhil and Abuduweili, Abulikemu and Li, Jiachen and Shi, Humphrey},
+  journal={arXiv preprint arXiv:2104.05704},
+  year={2021}
+}
+@inproceedings{yun2019cutmix,
+  title={Cutmix: Regularization strategy to train strong classifiers with localizable features},
+  author={Yun, Sangdoo and Han, Dongyoon and Oh, Seong Joon and Chun, Sanghyuk and Choe, Junsuk and Yoo, Youngjoon},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={6023--6032},
+  year={2019}
+}
+
+@inproceedings{
+zhang2018mixup,
+title={mixup: Beyond Empirical Risk Minimization},
+author={Hongyi Zhang and Moustapha Cisse and Yann N. Dauphin and David Lopez-Paz},
+booktitle={International Conference on Learning Representations},
+year={2018},
+url={https://openreview.net/forum?id=r1Ddp1-Rb},
+}
+
+@inproceedings{
+entezari2022the,
+title={The Role of Permutation Invariance in Linear Mode Connectivity of Neural Networks},
+author={Rahim Entezari and Hanie Sedghi and Olga Saukh and Behnam Neyshabur},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=dNigytemkL}
+}
+
+@article{git-rebasin,
+  doi = {10.48550/ARXIV.2209.04836},
+  url = {https://arxiv.org/abs/2209.04836},
+  author = {Ainsworth, Samuel K. and Hayase, Jonathan and Srinivasa, Siddhartha},
+  keywords = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Git Re-Basin: Merging Models modulo Permutation Symmetries},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {Creative Commons Attribution 4.0 International}
+}
+
+@inproceedings{Gretton2005MeasuringSD,
+  title={Measuring Statistical Dependence with Hilbert-Schmidt Norms},
+  author={Arthur Gretton and Olivier Bousquet and Alex Smola and Bernhard Sch{\"o}lkopf},
+  booktitle={International Conference on Algorithmic Learning Theory},
+  year={2005}
+}
+
+@article{cortes2012algorithms,
+  title={Algorithms for learning kernels based on centered alignment},
+  author={Cortes, Corinna and Mohri, Mehryar and Rostamizadeh, Afshin},
+  journal={The Journal of Machine Learning Research},
+  volume={13},
+  number={1},
+  pages={795--828},
+  year={2012},
+  publisher={JMLR. org}
+}
+
+@article{kmml,
+author = {Thomas Hofmann and Bernhard Sch{\"o}lkopf and Alexander J. Smola},
+title = {{Kernel methods in machine learning}},
+volume = {36},
+journal = {The Annals of Statistics},
+number = {3},
+publisher = {Institute of Mathematical Statistics},
+pages = {1171 -- 1220},
+keywords = {graphical models, machine learning, reproducing kernels, Support vector machines},
+year = {2008},
+doi = {10.1214/009053607000000677},
+URL = {https://doi.org/10.1214/009053607000000677}
+}
+
+@article{micchelli06a,
+  author  = {Charles A. Micchelli and Yuesheng Xu and Haizhang Zhang},
+  title   = {Universal Kernels},
+  journal = {Journal of Machine Learning Research},
+  year    = {2006},
+  volume  = {7},
+  number  = {95},
+  pages   = {2651--2667},
+  url     = {http://jmlr.org/papers/v7/micchelli06a.html}
+}

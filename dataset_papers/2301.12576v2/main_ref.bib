@@ -1,0 +1,1080 @@
+
+@inproceedings{lee2013pseudo,
+  title={Pseudo-label: The simple and efficient semi-supervised learning method for deep neural networks},
+  author={Lee, Dong-Hyun and others},
+  booktitle={Workshop on challenges in representation learning, ICML},
+  volume={3},
+  pages={896},
+  year={2013}
+}
+
+@article{ganin2016domain,
+  title={Domain-adversarial training of neural networks},
+  author={Ganin, Yaroslav and Ustinova, Evgeniya and Ajakan, Hana and Germain, Pascal and Larochelle, Hugo and Laviolette, Fran{\c{c}}ois and Marchand, Mario and Lempitsky, Victor},
+  journal={The journal of machine learning research},
+  volume={17},
+  number={1},
+  pages={2096--2030},
+  year={2016},
+  publisher={JMLR. org}
+}
+
+@inproceedings{damodaran2018deepjdot,
+  title={Deepjdot: Deep joint distribution optimal transport for unsupervised domain adaptation},
+  author={Damodaran, Bharath Bhushan and Kellenberger, Benjamin and Flamary, R{\'e}mi and Tuia, Devis and Courty, Nicolas},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+  pages={447--463},
+  year={2018}
+}
+
+@article{wang2019transferable,
+  title={Transferable normalization: Towards improving transferability of deep neural networks},
+  author={Wang, Ximei and Jin, Ying and Long, Mingsheng and Wang, Jianmin and Jordan, Michael I},
+  journal={Advances in neural information processing systems},
+  volume={32},
+  year={2019}
+}
+
+@article{li2016revisiting,
+  title={Revisiting batch normalization for practical domain adaptation},
+  author={Li, Yanghao and Wang, Naiyan and Shi, Jianping and Liu, Jiaying and Hou, Xiaodi},
+  journal={arXiv preprint arXiv:1603.04779},
+  year={2016}
+}
+
+@inproceedings{saito2018maximum,
+  title={Maximum classifier discrepancy for unsupervised domain adaptation},
+  author={Saito, Kuniaki and Watanabe, Kohei and Ushiku, Yoshitaka and Harada, Tatsuya},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={3723--3732},
+  year={2018}
+}
+
+@article{long2018conditional,
+  title={Conditional adversarial domain adaptation},
+  author={Long, Mingsheng and Cao, Zhangjie and Wang, Jianmin and Jordan, Michael I},
+  journal={Advances in neural information processing systems},
+  volume={31},
+  year={2018}
+}
+
+@article{zhou2021bayesian,
+  title={Bayesian Adaptation for Covariate Shift},
+  author={Zhou, Aurick and Levine, Sergey},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={914--927},
+  year={2021}
+}
+
+@inproceedings{wang2022removing,
+  title={Removing batch normalization boosts adversarial training},
+  author={Wang, Haotao and Zhang, Aston and Zheng, Shuai and Shi, Xingjian and Li, Mu and Wang, Zhangyang},
+  booktitle={International Conference on Machine Learning},
+  pages={23433--23445},
+  year={2022},
+  organization={PMLR}
+}
+
+
+@article{goodfellow2014explaining,
+  title={Explaining and harnessing adversarial examples},
+  author={Goodfellow, Ian J and Shlens, Jonathon and Szegedy, Christian},
+  journal={arXiv preprint arXiv:1412.6572},
+  year={2014}
+}
+
+@article{madry2017towards,
+  title={Towards deep learning models resistant to adversarial attacks},
+  author={Madry, Aleksander and Makelov, Aleksandar and Schmidt, Ludwig and Tsipras, Dimitris and Vladu, Adrian},
+  journal={arXiv preprint arXiv:1706.06083},
+  year={2017}
+}
+
+@article{shafahi2019free,
+  title={Adversarial training for free!},
+  author={Shafahi, Ali and Najibi, Mahyar and Ghiasi, Mohammad Amin and Xu, Zheng and Dickerson, John and Studer, Christoph and Davis, Larry S and Taylor, Gavin and Goldstein, Tom},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+@inproceedings{wong2019fast,
+  title={Fast is better than free: Revisiting adversarial training},
+  author={Wong, Eric and Rice, Leslie and Kolter, J Zico},
+  booktitle={International Conference on Learning Representations},
+  year={2019}
+}
+
+% Poisoning defense
+@article{geiping2021doesn,
+  title={What Doesn't Kill You Makes You Robust (er): Adversarial Training against Poisons and Backdoors},
+  author={Geiping, Jonas and Fowl, Liam and Somepalli, Gowthami and Goldblum, Micah and Moeller, Michael and Goldstein, Tom},
+  journal={arXiv preprint arXiv:2102.13624},
+  year={2021}
+}
+
+@article{gao2022effectiveness,
+  title={On the Effectiveness of Adversarial Training against Backdoor Attacks},
+  author={Gao, Yinghua and Wu, Dongxian and Zhang, Jingfeng and Gan, Guanhao and Xia, Shu-Tao and Niu, Gang and Sugiyama, Masashi},
+  journal={arXiv preprint arXiv:2202.10627},
+  year={2022}
+}
+
+
+@inproceedings{10.1145/3447548.3467214,
+author = {Wu, Jun and He, Jingrui},
+title = {Indirect Invisible Poisoning Attacks on Domain Adaptation},
+year = {2021},
+isbn = {9781450383325},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3447548.3467214},
+doi = {10.1145/3447548.3467214},
+abstract = {Unsupervised domain adaptation has been successfully applied across multiple high-impact applications, since it improves the generalization performance of a learning algorithm when the source and target domains are related. However, the adversarial vulnerability of domain adaptation models has largely been neglected. Most existing unsupervised domain adaptation algorithms might be easily fooled by an adversary, resulting in deteriorated prediction performance on the target domain, when transferring the knowledge from a maliciously manipulated source domain.To demonstrate the adversarial vulnerability of existing domain adaptation techniques, in this paper, we propose a generic data poisoning attack framework named I2Attack for domain adaptation with the following properties: (1) perceptibly unnoticeable: all the poisoned inputs are natural-looking; (2)adversarially indirect: only source examples are maliciously manipulated; (3) algorithmically invisible: both source classification error and marginal domain discrepancy between source and target domains will not increase. Specifically, it aims to degrade the overall prediction performance on the target domain by maximizing the label-informed domain discrepancy over both input feature space and class-label space be-tween source and target domains. Within this framework, a family of practical poisoning attacks are presented to fool the existing domain adaptation algorithms associated with different discrepancy measures. Extensive experiments on various domain adaptation benchmarks confirm the effectiveness and computational efficiency of our proposed I2Attack framework.},
+booktitle = {Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+pages = {1852–1862},
+numpages = {11},
+keywords = {domain adaptation, poisoning attack, domain discrepancy},
+location = {Virtual Event, Singapore},
+series = {KDD '21}
+}
+
+
+@inproceedings{NEURIPS2021_90cc440b,
+ author = {Mehra, Akshay and Kailkhura, Bhavya and Chen, Pin-Yu and Hamm, Jihun},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+ pages = {17347--17359},
+ publisher = {Curran Associates, Inc.},
+ title = {Understanding the Limits of Unsupervised Domain Adaptation via Data Poisoning},
+ url = {https://proceedings.neurips.cc/paper/2021/file/90cc440b1b8caa520c562ac4e4bbcb51-Paper.pdf},
+ volume = {34},
+ year = {2021}
+}
+
+
+@inproceedings{ioffe2015batch,
+  title={Batch normalization: Accelerating deep network training by reducing internal covariate shift},
+  author={Ioffe, Sergey and Szegedy, Christian},
+  booktitle={International conference on machine learning},
+  pages={448--456},
+  year={2015},
+  organization={PMLR}
+}
+
+
+@inproceedings{Wang2021TentFT,
+  title={Tent: Fully Test-Time Adaptation by Entropy Minimization},
+  author={Dequan Wang and Evan Shelhamer and Shaoteng Liu and Bruno A. Olshausen and Trevor Darrell},
+  booktitle={ICLR},
+  year={2021}
+}
+
+
+@inproceedings{Zhang2021AdaptiveRM,
+  title={Adaptive Risk Minimization: Learning to Adapt to Domain Shift},
+  author={Marvin Zhang and Henrik Marklund and Nikita Dhawan and Abhishek Gupta and Sergey Levine and Chelsea Finn},
+  booktitle={NeurIPS},
+  year={2021}
+}
+
+@article{Chen2022ContrastiveTA,
+  title={Contrastive Test-Time Adaptation},
+  author={Dian Chen and Dequan Wang and Trevor Darrell and Sayna Ebrahimi},
+  journal={2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2022},
+  pages={295-305}
+}
+
+@inproceedings{Sun2020TestTimeTW,
+  title={Test-Time Training with Self-Supervision for Generalization under Distribution Shifts},
+  author={Yu Sun and X. Wang and Zhuang Liu and John Miller and Alexei A. Efros and Moritz Hardt},
+  booktitle={ICML},
+  year={2020}
+}
+
+
+@misc{
+rusak2022if,
+title={If your data distribution shifts, use self-learning},
+author={Evgenia Rusak and Steffen Schneider and George Pachitariu and Luisa Eck and Peter Vincent Gehler and Oliver Bringmann and Wieland Brendel and Matthias Bethge},
+year={2022},
+url={https://openreview.net/forum?id=1oEvY1a67c1}
+}
+
+
+@article{Schneider2020ImprovingRA,
+  title={Improving robustness against common corruptions by covariate shift adaptation},
+  author={Steffen Schneider and Evgenia Rusak and Luisa Eck and Oliver Bringmann and Wieland Brendel and Matthias Bethge},
+  journal={ArXiv},
+  year={2020},
+  volume={abs/2006.16971}
+}
+
+
+@article{Goyal2022TestTimeAV,
+  title={Test-Time Adaptation via Conjugate Pseudo-labels},
+  author={Sachin Goyal and Mingjie Sun and Aditi Raghunathan and Zico Kolter},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2207.09640}
+}
+
+
+@article{Hendrycks2019BenchmarkingNN,
+  title={Benchmarking Neural Network Robustness to Common Corruptions and Perturbations},
+  author={Dan Hendrycks and Thomas G. Dietterich},
+  journal={ArXiv},
+  year={2019},
+  volume={abs/1903.12261}
+}
+
+@article{Geirhos2019ImageNettrainedCA,
+  title={ImageNet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness},
+  author={Robert Geirhos and Patricia Rubisch and Claudio Michaelis and Matthias Bethge and Felix Wichmann and Wieland Brendel},
+  journal={ArXiv},
+  year={2019},
+  volume={abs/1811.12231}
+}
+
+@article{Di2021FaultDO,
+  title={Fault Diagnosis of Rotating Machinery based on Domain Adversarial Training of Neural Networks},
+  author={Yun Di and Rui Yang and Mengjie Huang},
+  journal={2021 IEEE 30th International Symposium on Industrial Electronics (ISIE)},
+  year={2021},
+  pages={01-06}
+}
+
+@article{Tang2020ConditionalAD,
+  title={Conditional Adversarial Domain Adaptation Neural Network for Motor Imagery EEG Decoding},
+  author={Xingliang Tang and Xianrui Zhang},
+  journal={Entropy},
+  year={2020},
+  volume={22}
+}
+
+@article{Saito2018MaximumCD,
+  title={Maximum Classifier Discrepancy for Unsupervised Domain Adaptation},
+  author={Kuniaki Saito and Kohei Watanabe and Y. Ushiku and Tatsuya Harada},
+  journal={2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2018},
+  pages={3723-3732}
+}
+
+
+
+@article{Goodfellow2015ExplainingAH,
+  title={Explaining and Harnessing Adversarial Examples},
+  author={Ian J. Goodfellow and Jonathon Shlens and Christian Szegedy},
+  journal={CoRR},
+  year={2015},
+  volume={abs/1412.6572}
+}
+
+
+@article{Madry2018TowardsDL,
+  title={Towards Deep Learning Models Resistant to Adversarial Attacks},
+  author={Aleksander Madry and Aleksandar Makelov and Ludwig Schmidt and Dimitris Tsipras and Adrian Vladu},
+  journal={ArXiv},
+  year={2018},
+  volume={abs/1706.06083}
+}
+
+@article{Carlini2017TowardsET,
+  title={Towards Evaluating the Robustness of Neural Networks},
+  author={Nicholas Carlini and David A. Wagner},
+  journal={2017 IEEE Symposium on Security and Privacy (SP)},
+  year={2017},
+  pages={39-57}
+}
+
+@article{Kurakin2017AdversarialEI,
+  title={Adversarial examples in the physical world},
+  author={Alexey Kurakin and Ian J. Goodfellow and Samy Bengio},
+  journal={ArXiv},
+  year={2017},
+  volume={abs/1607.02533}
+}
+
+
+@article{biggio2012poisoning,
+  title={Poisoning attacks against support vector machines},
+  author={Biggio, Battista and Nelson, Blaine and Laskov, Pavel},
+  journal={arXiv preprint arXiv:1206.6389},
+  year={2012}
+}
+
+
+
+@article{gu2017badnets,
+  title={Badnets: Identifying vulnerabilities in the machine learning model supply chain},
+  author={Gu, Tianyu and Dolan-Gavitt, Brendan and Garg, Siddharth},
+  journal={Arxiv},
+  year={2017}
+}
+
+@inproceedings{Santurkar2018HowDB,
+  title={How Does Batch Normalization Help Optimization?},
+  author={Shibani Santurkar and Dimitris Tsipras and Andrew Ilyas and Aleksander Madry},
+  booktitle={NeurIPS},
+  year={2018}
+}
+
+@misc{TTAVDU,
+  doi = {10.48550/ARXIV.2206.07240},
+  
+  url = {https://arxiv.org/abs/2206.07240},
+  
+  author = {Ebrahimi, Sayna and Arik, Sercan O. and Pfister, Tomas},
+  
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Test-Time Adaptation for Visual Document Understanding},
+  
+  publisher = {arXiv},
+  
+  year = {2022},
+  
+  copyright = {Creative Commons Attribution 4.0 International}
+}
+
+
+@article{Ganin2015UnsupervisedDA,
+  title={Unsupervised Domain Adaptation by Backpropagation},
+  author={Yaroslav Ganin and Victor S. Lempitsky},
+  journal={ArXiv},
+  year={2015},
+  volume={abs/1409.7495}
+}
+
+
+
+
+@inproceedings{Huang2021ModelAH,
+  title={Model Adaptation: Historical Contrastive Learning for Unsupervised Domain Adaptation without Source Data},
+  author={Jiaxing Huang and Dayan Guan and Aoran Xiao and Shijian Lu},
+  booktitle={NeurIPS},
+  year={2021}
+}
+
+@article{Kurakin2017AdversarialML,
+  title={Adversarial Machine Learning at Scale},
+  author={Alexey Kurakin and Ian J. Goodfellow and Samy Bengio},
+  journal={ArXiv},
+  year={2017},
+  volume={abs/1611.01236}
+}
+
+
+@article{He2016DeepRL,
+  title={Deep Residual Learning for Image Recognition},
+  author={Kaiming He and X. Zhang and Shaoqing Ren and Jian Sun},
+  journal={2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2016},
+  pages={770-778}
+}
+
+
+@inproceedings{Galstyan2007EmpiricalCO,
+  title={Empirical Comparison of "Hard" and "Soft" Label Propagation for Relational Classification},
+  author={A. G. Galstyan and Paul R. Cohen},
+  booktitle={ILP},
+  year={2007}
+}
+
+
+@article{Zagoruyko2016WideRN,
+  title={Wide Residual Networks},
+  author={Sergey Zagoruyko and Nikos Komodakis},
+  journal={ArXiv},
+  year={2016},
+  volume={abs/1605.07146}
+}
+
+@article{Simonyan2015VeryDC,
+  title={Very Deep Convolutional Networks for Large-Scale Image Recognition},
+  author={Karen Simonyan and Andrew Zisserman},
+  journal={CoRR},
+  year={2015},
+  volume={abs/1409.1556}
+}
+
+@article{Hendrycks2020AugMixAS,
+  title={AugMix: A Simple Data Processing Method to Improve Robustness and Uncertainty},
+  author={Dan Hendrycks and Norman Mu and Ekin Dogus Cubuk and Barret Zoph and Justin Gilmer and Balaji Lakshminarayanan},
+  journal={ArXiv},
+  year={2020},
+  volume={abs/1912.02781}
+}
+
+
+@article{Hendrycks2021TheMF,
+  title={The Many Faces of Robustness: A Critical Analysis of Out-of-Distribution Generalization},
+  author={Dan Hendrycks and Steven Basart and Norman Mu and Saurav Kadavath and Frank Wang and Evan Dorundo and Rahul Desai and Tyler Lixuan Zhu and Samyak Parajuli and Mike Guo and Dawn Xiaodong Song and Jacob Steinhardt and Justin Gilmer},
+  journal={2021 IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2021},
+  pages={8320-8329}
+}
+
+@article{Kang2019TestingRA,
+  title={Testing Robustness Against Unforeseen Adversaries},
+  author={Daniel Kang and Yi Sun and Dan Hendrycks and Tom B. Brown and Jacob Steinhardt},
+  journal={ArXiv},
+  year={2019},
+  volume={abs/1908.08016}
+}
+
+@article{Dai2022ParameterizingAF,
+  title={Parameterizing Activation Functions for Adversarial Robustness},
+  author={Sihui Dai and Saeed Mahloujifar and Prateek Mittal},
+  journal={2022 IEEE Security and Privacy Workshops (SPW)},
+  year={2022},
+  pages={80-87}
+}
+
+@inproceedings{Sehwag2022RobustLM,
+  title={Robust Learning Meets Generative Models: Can Proxy Distributions Improve Adversarial Robustness?},
+  author={Vikash Sehwag and Saeed Mahloujifar and Tinashe Handina and Sihui Dai and Chong Xiang and Mung Chiang and Prateek Mittal},
+  booktitle={International Conference on Learning Representations},
+  year={2022}
+}
+
+@article{Wu2020AdversarialWP,
+  title={Adversarial Weight Perturbation Helps Robust Generalization},
+  author={Dongxian Wu and Shutao Xia and Yisen Wang},
+  journal={arXiv: Learning},
+  year={2020}
+}
+
+@inproceedings{Gowal2021ImprovingRU,
+  title={Improving Robustness using Generated Data},
+  author={Sven Gowal and Sylvestre-Alvise Rebuffi and Olivia Wiles and Florian Stimberg and Dan Andrei Calian and Timothy Mann},
+  booktitle={Neural Information Processing Systems},
+  year={2021}
+}
+
+@article{Jia2022LASATAT,
+  title={LAS-AT: Adversarial Training with Learnable Attack Strategy},
+  author={Xiaojun Jia and Yong Zhang and Baoyuan Wu and Ke Ma and Jue Wang and Xiaochun Cao},
+  journal={2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2022},
+  pages={13388-13398}
+}
+
+
+@article{Xie2020AdversarialEI,
+  title={Adversarial Examples Improve Image Recognition},
+  author={Cihang Xie and Mingxing Tan and Boqing Gong and Jiang Wang and Alan Loddon Yuille and Quoc V. Le},
+  journal={2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2020},
+  pages={816-825}
+}
+
+
+@article{Xie2019FeatureDF,
+  title={Feature Denoising for Improving Adversarial Robustness},
+  author={Cihang Xie and Yuxin Wu and Laurens van der Maaten and Alan Loddon Yuille and Kaiming He},
+  journal={2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2019},
+  pages={501-509}
+}
+
+@inproceedings{Wang2022RemovingBN,
+  title={Removing Batch Normalization Boosts Adversarial Training},
+  author={Haotao Wang and Aston Zhang and Shuai Zheng and Xingjian Shi and Mu Li and Zhangyang Wang},
+  booktitle={ICML},
+  year={2022}
+}
+
+@inproceedings{Chen2022EfficientRT,
+  title={Efficient Robust Training via Backward Smoothing},
+  author={Jinghui Chen and Yu Cheng and Zhe Gan and Quanquan Gu and Jingjing Liu},
+  booktitle={AAAI Conference on Artificial Intelligence},
+  year={2022}
+}
+
+
+@article{croce2020robustbench,
+    title={RobustBench: a standardized adversarial robustness benchmark},
+    author={Croce, Francesco and Andriushchenko, Maksym and Sehwag, Vikash and Debenedetti, Edoardo and Flammarion, Nicolas
+    and Chiang, Mung and Mittal, Prateek and Matthias Hein},
+    journal={arXiv preprint arXiv:2010.09670},
+    year={2020}
+}
+
+
+@article{Salman2020DoAR,
+  title={Do Adversarially Robust ImageNet Models Transfer Better?},
+  author={Hadi Salman and Andrew Ilyas and Logan Engstrom and Ashish Kapoor and Aleksander Madry},
+  journal={ArXiv},
+  year={2020},
+  volume={abs/2007.08489}
+}
+
+@misc{robustness,
+   title={Robustness (Python Library)},
+   author={Logan Engstrom and Andrew Ilyas and Hadi Salman and Shibani Santurkar and Dimitris Tsipras},
+   year={2019},
+   url={https://github.com/MadryLab/robustness}
+}
+
+@inproceedings{Pang2022RobustnessAA,
+  title={Robustness and Accuracy Could Be Reconcilable by (Proper) Definition},
+  author={Tianyu Pang and Min Lin and Xiao Yang and Junyi Zhu and Shuicheng Yan},
+  booktitle={International Conference on Machine Learning},
+  year={2022}
+}
+
+@article{Rebuffi2021FixingDA,
+  title={Fixing Data Augmentation to Improve Adversarial Robustness},
+  author={Sylvestre-Alvise Rebuffi and Sven Gowal and Dan Andrei Calian and Florian Stimberg and Olivia Wiles and Timothy A. Mann},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2103.01946}
+}
+
+@article{You2021TesttimeBS,
+  title={Test-time Batch Statistics Calibration for Covariate Shift},
+  author={Fuming You and Jingjing Li and Zhou Zhao},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2110.04065}
+}
+
+@article{Leys2013DetectingOD,
+  title={Detecting outliers: Do not use standard deviation around the mean, use absolute deviation around the median},
+  author={Christophe Leys and Christophe Ley and Olivier Klein and Philippe Bernard and Laurent Licata},
+  journal={Journal of Experimental Social Psychology},
+  year={2013},
+  volume={49},
+  pages={764-766}
+}
+
+@inproceedings{kantorovich1942translocation,
+  title={On the translocation of masses},
+  author={Kantorovich, Leonid V},
+  booktitle={Dokl. Akad. Nauk. USSR (NS)},
+  volume={37},
+  pages={199--201},
+  year={1942}
+}
+
+
+@article{Zhang2021MEMOTT,
+  title={MEMO: Test Time Robustness via Adaptation and Augmentation},
+  author={Marvin Zhang and Sergey Levine and Chelsea Finn},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2110.09506}
+}
+
+@article{gao2022back,
+  title={Back to the Source: Diffusion-Driven Test-Time Adaptation},
+  author={Gao, Jin and Zhang, Jialing and Liu, Xihui and Darrell, Trevor and Shelhamer, Evan and Wang, Dequan},
+  journal={arXiv preprint arXiv:2207.03442},
+  year={2022}
+}
+
+
+
+@article{Nandy2021AdversariallyRC,
+  title={Adversarially Robust Classifier with Covariate Shift Adaptation},
+  author={Jay Nandy and Sudipan Saha and Wynne Hsu and Mong Li Lee and Xiaoxiang Zhu},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2102.05096}
+}
+
+
+
+@inproceedings{Vapnik1998StatisticalLT,
+  title={Statistical learning theory},
+  author={Vladimir Naumovich Vapnik},
+  year={1998}
+}
+
+@inproceedings{QuioneroCandela2009DatasetSI,
+  title={Dataset Shift in Machine Learning},
+  author={Joaquin Quionero-Candela and Masashi Sugiyama and Anton Schwaighofer and Neil D. Lawrence},
+  year={2009}
+}
+
+
+@inproceedings{BenDavid2006AnalysisOR,
+  title={Analysis of Representations for Domain Adaptation},
+  author={Shai Ben-David and John Blitzer and Koby Crammer and Fernando C Pereira},
+  booktitle={NIPS},
+  year={2006}
+}
+
+@inproceedings{Long2017ConditionalAD,
+  title={Conditional Adversarial Domain Adaptation},
+  author={Mingsheng Long and Zhangjie Cao and Jianmin Wang and Michael I. Jordan},
+  booktitle={Neural Information Processing Systems},
+  year={2017}
+}
+@inproceedings{Ganin2015DomainAdversarialTO,
+  title={Domain-Adversarial Training of Neural Networks},
+  author={Yaroslav Ganin and E. Ustinova and Hana Ajakan and Pascal Germain and H. Larochelle and François Laviolette and Mario Marchand and Victor S. Lempitsky},
+  booktitle={Journal of machine learning research},
+  year={2015}
+}
+
+@article{Tzeng2017AdversarialDD,
+  title={Adversarial Discriminative Domain Adaptation},
+  author={Eric Tzeng and Judy Hoffman and Kate Saenko and Trevor Darrell},
+  journal={2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2017},
+  pages={2962-2971}
+}
+
+
+@inproceedings{Liu2021TTTWD,
+  title={TTT++: When Does Self-Supervised Test-Time Training Fail or Thrive?},
+  author={Yuejiang Liu and Parth Kothari and Bastien van Delft and Baptiste Bellot-Gurlet and Taylor Mordan and Alexandre Alahi},
+  booktitle={Neural Information Processing Systems},
+  year={2021}
+}
+
+@article{maettt, 
+        title={Test-Time Training with Masked Autoencoders},
+        author={Gandelsman, Yossi and Sun, Yu and Chen, Xinlei and Efros, Alexei A.},
+        year={2022},
+        journal={arXiv preprint arXiv:2209.07522}
+}
+
+@book{Vorobeychik18book,
+  author = {Yevgeniy Vorobeychik and Murat Kantarcioglu},
+  title = {Adversarial Machine Learning},
+  publisher = {Morgan Claypool},
+  year = {2018},
+}
+
+@article{Carlini2021PoisoningTU,
+  title={Poisoning the Unlabeled Dataset of Semi-Supervised Learning},
+  author={Nicholas Carlini},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2105.01622}
+}
+
+@article{Carlini2021PoisoningAB,
+  title={Poisoning and Backdooring Contrastive Learning},
+  author={Nicholas Carlini and A. Terzis},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2106.09667}
+}
+
+@inproceedings{Nelson2008ExploitingML,
+  title={Exploiting Machine Learning to Subvert Your Spam Filter},
+  author={Blaine Nelson and Marco Barreno and Fuching Jack Chi and Anthony D. Joseph and Benjamin I. P. Rubinstein and Udam Saini and Charles Sutton and J. Doug Tygar and Kai Xia},
+  booktitle={USENIX Workshop on Large-Scale Exploits and Emergent Threats},
+  year={2008}
+}
+
+@article{Koh2017UnderstandingBP,
+  title={Understanding Black-box Predictions via Influence Functions},
+  author={Pang Wei Koh and Percy Liang},
+  journal={ArXiv},
+  year={2017},
+  volume={abs/1703.04730}
+}
+
+@article{Nado2020EvaluatingPB,
+  title={Evaluating Prediction-Time Batch Normalization for Robustness under Covariate Shift},
+  author={Zachary Nado and Shreyas Padhy and D. Sculley and Alexander D'Amour and Balaji Lakshminarayanan and Jasper Snoek},
+  journal={ArXiv},
+  year={2020},
+  volume={abs/2006.10963}
+}
+
+@book{murphy2012machine,
+  title={Machine Learning: A Probabilistic Perspective},
+  author={Murphy, Kevin P.},
+  year={2012},
+  publisher={MIT Press},
+  address={Cambridge, MA}
+}
+
+@article{chen2021towards,
+  author    = {Jiefeng Chen and
+               Xi Wu and
+               Yang Guo and
+               Yingyu Liang and
+               Somesh Jha},
+  title     = {Towards Evaluating the Robustness of Neural Networks Learned by Transduction},
+  journal   = {CoRR},
+  volume    = {abs/2110.14735},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2110.14735},
+  eprinttype = {arXiv},
+  eprint    = {2110.14735},
+  timestamp = {Sun, 16 Jan 2022 17:47:20 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2110-14735.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@book{vapnik1998statistical,
+  title={Statistical learning theory},
+  author={Vapnik, Vladimir},
+  year={1998},
+  publisher={John Wiley \& Sons}
+}
+
+@article{goldwasser2020beyond,
+  title={Beyond perturbations: Learning guarantees with arbitrary adversarial test examples},
+  author={Goldwasser, Shafi and Kalai, Adam Tauman and Kalai, Yael and Montasser, Omar},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={15859--15870},
+  year={2020}
+}
+
+@inproceedings{
+anonymous2023testtime,
+title={Test-time Adaptation for Better Adversarial Robustness},
+author={Anonymous},
+booktitle={Submitted to The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=rUxKM6u8WER},
+note={under review}
+}
+
+@InProceedings{Sinha_2023_WACV,
+    author    = {Sinha, Samarth and Gehler, Peter and Locatello, Francesco and Schiele, Bernt},
+    title     = {TeST: Test-Time Self-Training Under Distribution Shift},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2023},
+    pages     = {2759-2769}
+}
+
+@misc{batch-prediction,
+  title = {{Online versus batch prediction}},
+  howpublished = "\url{https://cloud.google.com/ai-platform/prediction/docs/online-vs-batch-prediction}",
+  year = {2021},
+}
+
+@article{Loshchilov2016SGDRSG,
+  title={SGDR: Stochastic Gradient Descent with Warm Restarts},
+  author={Ilya Loshchilov and Frank Hutter},
+  journal={arXiv: Learning},
+  year={2016}
+}
+
+@article{Fournier1982ComputerRO,
+  title={Computer rendering of stochastic models},
+  author={Alain Fournier and Donald S. Fussell and Loren C. Carpenter},
+  journal={Commun. ACM},
+  year={1982},
+  volume={25},
+  pages={371-384}
+}
+
+
+@inproceedings{
+anonymous2023delta,
+title={{DELTA}: {DEBIASED} {FULLY} {TEST}-{TIME} {ADAPTATION}},
+author={Anonymous},
+booktitle={Submitted to The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=eGm22rqG93},
+note={under review}
+}
+
+
+
+@InProceedings{bartler22a,
+  title = 	 { MT3: Meta Test-Time Training for Self-Supervised Test-Time Adaption },
+  author =       {Bartler, Alexander and B\"uhler, Andre and Wiewel, Felix and D\"obler, Mario and Yang, Bin},
+  booktitle = 	 {Proceedings of The 25th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {3080--3090},
+  year = 	 {2022},
+  editor = 	 {Camps-Valls, Gustau and Ruiz, Francisco J. R. and Valera, Isabel},
+  volume = 	 {151},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {28--30 Mar},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v151/bartler22a/bartler22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v151/bartler22a.html},
+  abstract = 	 { An unresolved problem in Deep Learning is the ability of neural networks to cope with domain shifts during test-time, imposed by commonly fixing network parameters after training. Our proposed method Meta Test-Time Training (MT3), however, breaks this paradigm and enables adaption at test-time. We combine meta-learning, self-supervision and test-time training to learn to adapt to unseen test distributions. By minimizing the self-supervised loss, we learn task-specific model parameters for different tasks. A meta-model is optimized such that its adaption to the different task-specific models leads to higher performance on those tasks. During test-time a single unlabeled image is sufficient to adapt the meta-model parameters. This is achieved by minimizing only the self-supervised loss component resulting in a better prediction for that image. Our approach significantly improves the state-of-the-art results on the CIFAR-10-Corrupted image classification benchmark. }
+}
+
+
+
+@article{Mirza2021TheNM,
+  title={The Norm Must Go On: Dynamic Unsupervised Domain Adaptation by Normalization},
+  author={M. Jehanzeb Mirza and Jakub Micorek and Horst Possegger and Horst Bischof},
+  journal={2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2021},
+  pages={14745-14755}
+}
+
+@article{Dbler2022RobustMT,
+  title={Robust Mean Teacher for Continual and Gradual Test-Time Adaptation},
+  author={Mario D{\"o}bler and Robert A. Marsden and Bin Yang},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2211.13081}
+}
+
+@InProceedings{niu2022efficient,
+  title={Efficient Test-Time Model Adaptation without Forgetting},
+  author={Niu, Shuaicheng and Wu, Jiaxiang and Zhang, Yifan and Chen, Yaofo and Zheng, Shijian and Zhao, Peilin and Tan, Mingkui},
+  booktitle = {The Internetional Conference on Machine Learning},
+  year = {2022}
+}
+
+@inproceedings{wang2022continual,
+  title={Continual Test-Time Domain Adaptation},
+  author={Wang, Qin and Fink, Olga and Van Gool, Luc and Dai, Dengxin},
+  booktitle={Proceedings of Conference on Computer Vision and Pattern Recognition},
+  year={2022}
+}
+
+@misc{Zhang2021DomainPL,
+  doi = {10.48550/ARXIV.2111.12853},
+  url = {https://arxiv.org/abs/2111.12853},
+  author = {Zhang, Xin and Gu, Shixiang Shane and Matsuo, Yutaka and Iwasawa, Yusuke},
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Domain Prompt Learning for Efficiently Adapting CLIP to Unseen Domains},
+  publisher = {arXiv},
+  year = {2021},
+  copyright = {Creative Commons Attribution 4.0 International}
+}
+
+
+@article{Gao2022VisualPT,
+  title={Visual Prompt Tuning for Test-time Domain Adaptation},
+  author={Yunhe Gao and Xingjian Shi and Yi Zhu and Hongya Wang and Zhiqiang Tang and Xiong Zhou and Mu Li and Dimitris N. Metaxas},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2210.04831}
+}
+
+@article{Kojima2022RobustifyingVT,
+  title={Robustifying Vision Transformer without Retraining from Scratch by Test-Time Class-Conditional Feature Alignment},
+  author={Takeshi Kojima and Yutaka Matsuo and Yusuke Iwasawa},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2206.13951}
+}
+
+
+@InProceedings{liang20a,
+  title = 	 {Do We Really Need to Access the Source Data? {S}ource Hypothesis Transfer for Unsupervised Domain Adaptation},
+  author =       {Liang, Jian and Hu, Dapeng and Feng, Jiashi},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {6028--6039},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--18 Jul},
+  publisher =    {PMLR}
+}
+
+
+@article{Croce2022EvaluatingTA,
+  title={Evaluating the Adversarial Robustness of Adaptive Test-time Defenses},
+  author={Francesco Croce and Sven Gowal and Thomas Brunner and Evan Shelhamer and Matthias Hein and Ali Taylan Cemgil},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2202.13711}
+}
+
+
+@InProceedings{pmlr-v119-wu20f,
+  title = 	 {Adversarial Robustness via Runtime Masking and Cleansing},
+  author =       {Wu, Yi-Hsuan and Yuan, Chia-Hung and Wu, Shan-Hung},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {10399--10409},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--18 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v119/wu20f/wu20f.pdf},
+  url = 	 {https://proceedings.mlr.press/v119/wu20f.html},
+  abstract = 	 {Deep neural networks are shown to be vulnerable to adversarial attacks. This motivates robust learning techniques, such as the adversarial training, whose goal is to learn a network that is robust against adversarial attacks. However, the sample complexity of robust learning can be significantly larger than that of “standard” learning. In this paper, we propose improving the adversarial robustness of a network by leveraging the potentially large test data seen at runtime. We devise a new defense method, called runtime masking and cleansing (RMC), that adapts the network at runtime before making a prediction to dynamically mask network gradients and cleanse the model of the non-robust features inevitably learned during the training process due to the size limit of the training set. We conduct experiments on real-world datasets and the results demonstrate the effectiveness of RMC empirically.}
+}
+
+@article{Wang2021FightingGW,
+  title={Fighting Gradients with Gradients: Dynamic Defenses against Adversarial Attacks},
+  author={Dequan Wang and An Ju and Evan Shelhamer and David A. Wagner and Trevor Darrell},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2105.08714}
+}
+
+
+@article{Geiping2020WitchesBI,
+  title={Witches' Brew: Industrial Scale Data Poisoning via Gradient Matching},
+  author={Jonas Geiping and Liam Fowl and W. Ronny Huang and Wojciech Czaja and Gavin Taylor and Michael Moeller and Tom Goldstein},
+  journal={ArXiv},
+  year={2020},
+  volume={abs/2009.02276}
+}
+
+@article{Tramr2022TruthSP,
+  title={Truth Serum: Poisoning Machine Learning Models to Reveal Their Secrets},
+  author={Florian Tram{\`e}r and R. Shokri and Ayrton San Joaquin and Hoang M. Le and Matthew Jagielski and Sanghyun Hong and Nicholas Carlini},
+  journal={Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security},
+  year={2022}
+}
+
+
+@inproceedings{Marchant2021HardTF,
+  title={Hard to Forget: Poisoning Attacks on Certified Machine Unlearning},
+  author={Neil G. Marchant and Benjamin I. P. Rubinstein and Scott Alfeld},
+  booktitle={AAAI Conference on Artificial Intelligence},
+  year={2021}
+}
+
+@article{Di2022HiddenPM,
+  title={Hidden Poison: Machine Unlearning Enables Camouflaged Poisoning Attacks},
+  author={Jimmy Z. Di and Jack Douglas and Jayadev Acharya and Gautam Kamath and Ayush Sekhari},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2212.10717}
+}
+
+@inproceedings{Biggio2013EvasionAA,
+  title={Evasion Attacks against Machine Learning at Test Time},
+  author={Battista Biggio and Igino Corona and Davide Maiorca and Blaine Nelson and Nedim Srndic and Pavel Laskov and Giorgio Giacinto and Fabio Roli},
+  booktitle={ECML/PKDD},
+  year={2013}
+}
+
+
+@article{Wang2022TowardsUG,
+  title={Towards Understanding GD with Hard and Conjugate Pseudo-labels for Test-Time Adaptation},
+  author={Jun-Kun Wang and Andre Wibisono},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2210.10019}
+}
+
+@article{Gandelsman2022TestTimeTW,
+  title={Test-Time Training with Masked Autoencoders},
+  author={Yossi Gandelsman and Yu Sun and Xinlei Chen and Alexei A. Efros},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2209.07522}
+}
+
+
+@article{Kundu2020UniversalSD,
+  title={Universal Source-Free Domain Adaptation},
+  author={Jogendra Nath Kundu and Naveen Venkat and V. RahulM. and R. Venkatesh Babu},
+  journal={2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2020},
+  pages={4543-4552}
+}
+
+
+@article{Li2020ModelAU,
+  title={Model Adaptation: Unsupervised Domain Adaptation Without Source Data},
+  author={Rui Li and Qianfen Jiao and Wenming Cao and Hau-San Wong and Si Wu},
+  journal={2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2020},
+  pages={9638-9647}
+}
+
+@inproceedings{
+gong2022note,
+title={{NOTE}: Robust Continual Test-time Adaptation Against Temporal Correlation},
+author={Taesik Gong and Jongheon Jeong and Taewon Kim and Yewon Kim and Jinwoo Shin and Sung-Ju Lee},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=E9HNxrCFZPV}
+}
+
+
+@inproceedings{
+huang2022extrapolative,
+title={Extrapolative Continuous-time Bayesian Neural Network for Fast Training-free Test-time Adaptation},
+author={Hengguan Huang and Xiangming Gu and Hao Wang and Chang Xiao and Hongfu Liu and Ye Wang},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=wiHzQWwg3l}
+}
+
+
+@inproceedings{Iwasawa2021TestTimeCA,
+  title={Test-Time Classifier Adjustment Module for Model-Agnostic Domain Generalization},
+  author={Yusuke Iwasawa and Yutaka Matsuo},
+  booktitle={Neural Information Processing Systems},
+  year={2021}
+}
+
+@inproceedings{Athalye2017SynthesizingRA,
+  title={Synthesizing Robust Adversarial Examples},
+  author={Anish Athalye and Logan Engstrom and Andrew Ilyas and Kevin Kwok},
+  booktitle={International Conference on Machine Learning},
+  year={2017}
+}
+
+@article{Dong2017BoostingAA,
+  title={Boosting Adversarial Attacks with Momentum},
+  author={Yinpeng Dong and Fangzhou Liao and Tianyu Pang and Hang Su and Jun Zhu and Xiaolin Hu and Jianguo Li},
+  journal={2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2017},
+  pages={9185-9193}
+}
+
+@article{Xie2018ImprovingTO,
+  title={Improving Transferability of Adversarial Examples With Input Diversity},
+  author={Cihang Xie and Zhishuai Zhang and Jianyu Wang and Yuyin Zhou and Zhou Ren and Alan Loddon Yuille},
+  journal={2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2018},
+  pages={2725-2734}
+}
+
+@inproceedings{blanc2022power,
+  title={On the power of adaptivity in statistical adversaries},
+  author={Blanc, Guy and Lange, Jane and Malik, Ali and Tan, Li-Yang},
+  booktitle={Conference on Learning Theory},
+  pages={5030--5061},
+  year={2022},
+  organization={PMLR}
+}
+@article{deng2021separation,
+  title={A Separation Result Between Data-oblivious and Data-aware Poisoning Attacks},
+  author={Deng, Samuel and Garg, Sanjam and Jha, Somesh and Mahloujifar, Saeed and Mahmoody, Mohammad and Guha Thakurta, Abhradeep},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={10862--10875},
+  year={2021}
+}
+
+@article{Singh2019EvalNormEB,
+  title={EvalNorm: Estimating Batch Normalization Statistics for Evaluation},
+  author={Saurabh Singh and Abhinav Shrivastava},
+  journal={2019 IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2019},
+  pages={3632-3640}
+}
+
+
+@article{Hu2021MixNormTA,
+  title={MixNorm: Test-Time Adaptation Through Online Normalization Estimation},
+  author={Xuefeng Hu and Mustafa G{\"o}khan Uzunbas and Sirius Chen and Rui Wang and Ashish Shah and Ramakant Nevatia and Ser-Nam Lim},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2110.11478}
+}
+
+
+@article{Chakraborty2018AdversarialAA,
+  title={Adversarial Attacks and Defences: A Survey},
+  author={Anirban Chakraborty and Manaar Alam and Vishal Dey and Anupam Chattopadhyay and Debdeep Mukhopadhyay},
+  journal={ArXiv},
+  year={2018},
+  volume={abs/1810.00069}
+}

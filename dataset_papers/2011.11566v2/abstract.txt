@@ -1,0 +1,16 @@
+Reinforcement learning (RL) with linear function approximation has received
+increasing attention recently. However, existing work has focused on obtaining
+$\sqrt{T}$-type regret bound, where $T$ is the number of interactions with the
+MDP. In this paper, we show that logarithmic regret is attainable under two
+recently proposed linear MDP assumptions provided that there exists a positive
+sub-optimality gap for the optimal action-value function. More specifically,
+under the linear MDP assumption (Jin et al. 2019), the LSVI-UCB algorithm can
+achieve $\tilde{O}(d^{3}H^5/\text{gap}_{\text{min}}\cdot \log(T))$ regret; and
+under the linear mixture MDP assumption (Ayoub et al. 2020), the UCRL-VTR
+algorithm can achieve $\tilde{O}(d^{2}H^5/\text{gap}_{\text{min}}\cdot
+\log^3(T))$ regret, where $d$ is the dimension of feature mapping, $H$ is the
+length of episode, $\text{gap}_{\text{min}}$ is the minimal sub-optimality gap,
+and $\tilde O$ hides all logarithmic terms except $\log(T)$. To the best of our
+knowledge, these are the first logarithmic regret bounds for RL with linear
+function approximation. We also establish gap-dependent lower bounds for the
+two linear MDP models.

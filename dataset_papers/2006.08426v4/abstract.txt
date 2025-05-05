@@ -1,0 +1,21 @@
+Descent directions such as movement towards Descent directions, including
+movement towards Frank-Wolfe vertices, away-steps, in-face away-steps and
+pairwise directions, have been an important design consideration in conditional
+gradient descent (CGD) variants. In this work, we attempt to demystify the
+impact of the movement in these directions towards attaining constrained
+minimizers. The optimal local direction of descent is the directional
+derivative (i.e., shadow) of the projection of the negative gradient. We show
+that this direction is the best away-step possible, and the continuous-time
+dynamics of moving in the shadow is equivalent to the dynamics of projected
+gradient descent (PGD), although it's non-trivial to discretize. We also show
+that Frank-Wolfe (FW) vertices correspond to projecting onto the polytope using
+an "infinite" step in the direction of the negative gradient, thus providing a
+new perspective on these steps. We combine these insights into a novel
+Shadow-CG method that uses FW and shadow steps, while enjoying linear
+convergence, with a rate that depends on the number of breakpoints in its
+projection curve, rather than the pyramidal width. We provide a linear bound on
+the number of breakpoints for simple polytopes and present scaling-invariant
+upper bounds for general polytopes based on the number of facets. We exemplify
+the benefit of using Shadow-CG computationally for various applications, while
+raising an open question about tightening the bound on the number of
+breakpoints for general polytopes.

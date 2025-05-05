@@ -1,0 +1,539 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% introduction
+
+@InProceedings{Zhai_2022_CVPR,
+    author    = {Zhai, Xiaohua and Kolesnikov, Alexander and Houlsby, Neil and Beyer, Lucas},
+    title     = {Scaling Vision Transformers},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {12104-12113}
+}
+
+%vit
+@article{dosovitskiy2020image,
+  title={An image is worth 16x16 words: Transformers for image recognition at scale},
+  author={Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and others},
+  journal={arXiv preprint arXiv:2010.11929},
+  year={2020}
+}
+
+@inproceedings{zhai2022scaling,
+  title={Scaling vision transformers},
+  author={Zhai, Xiaohua and Kolesnikov, Alexander and Houlsby, Neil and Beyer, Lucas},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={12104--12113},
+  year={2022}
+}
+%in21k
+
+@inproceedings{deng2009imagenet,
+  title={Imagenet: A large-scale hierarchical image database},
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  booktitle={2009 IEEE conference on computer vision and pattern recognition},
+  pages={248--255},
+  year={2009},
+  organization={Ieee}
+}
+
+%DataComp1B
+
+@article{gadre2024datacomp,
+  title={Datacomp: In search of the next generation of multimodal datasets},
+  author={Gadre, Samir Yitzhak and Ilharco, Gabriel and Fang, Alex and Hayase, Jonathan and Smyrnis, Georgios and Nguyen, Thao and Marten, Ryan and Wortsman, Mitchell and Ghosh, Dhruba and Zhang, Jieyu and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
+
+#deit 
+
+@inproceedings{touvron2021training,
+  title={Training data-efficient image transformers \& distillation through attention},
+  author={Touvron, Hugo and Cord, Matthieu and Douze, Matthijs and Massa, Francisco and Sablayrolles, Alexandre and J{\'e}gou, Herv{\'e}},
+  booktitle={International conference on machine learning},
+  pages={10347--10357},
+  year={2021},
+  organization={PMLR}
+}
+
+
+%scaling laws
+@article{kaplan2020scaling,
+  title={Scaling laws for neural language models},
+  author={Kaplan, Jared and McCandlish, Sam and Henighan, Tom and Brown, Tom B and Chess, Benjamin and Child, Rewon and Gray, Scott and Radford, Alec and Wu, Jeffrey and Amodei, Dario},
+  journal={arXiv preprint arXiv:2001.08361},
+  year={2020}
+}
+
+%Chinchilla
+@article{hoffmann2022training,
+  title={Training compute-optimal large language models},
+  author={Hoffmann, Jordan and Borgeaud, Sebastian and Mensch, Arthur and Buchatskaya, Elena and Cai, Trevor and Rutherford, Eliza and Casas, Diego de Las and Hendricks, Lisa Anne and Welbl, Johannes and Clark, Aidan and others},
+  journal={arXiv preprint arXiv:2203.15556},
+  year={2022}
+}
+#deit 3
+@inproceedings{touvron2022deit,
+  title={Deit iii: Revenge of the vit},
+  author={Touvron, Hugo and Cord, Matthieu and J{\'e}gou, Herv{\'e}},
+  booktitle={European conference on computer vision},
+  pages={516--533},
+  year={2022},
+  organization={Springer}
+}
+
+%White-box Transforms
+
+@article{yu2023white,
+  title={White-box transformers via sparse rate reduction},
+  author={Yu, Yaodong and Buchanan, Sam and Pai, Druv and Chu, Tianzhe and Wu, Ziyang and Tong, Shengbang and Haeffele, Benjamin and Ma, Yi},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2023}
+}
+
+@article{yu2023white_journal,
+  title={White-Box Transformers via Sparse Rate Reduction: Compression Is All There Is?},
+  author={Yu, Yaodong and Buchanan, Sam and Pai, Druv and Chu, Tianzhe and Wu, Ziyang and Tong, Shengbang and Bai, Hao and Zhai, Yuexiang and Haeffele, Benjamin D and Ma, Yi},
+  journal={arXiv preprint arXiv:2311.13110},
+  year={2023}
+}
+
+@inproceedings{pai2023masked,
+  title={Masked Completion via Structured Diffusion with White-Box Transformers},
+  author={Pai, Druv and Wu, Ziyang and Buchanan, Sam and Chu, Tianzhe and Yu, Yaodong and Ma, Yi},
+  booktitle={Conference on Parsimony and Learning (Recent Spotlight Track)},
+  year={2023}
+}
+
+%%%%training setup
+
+@article{loshchilov2017decoupled,
+  title={Decoupled weight decay regularization},
+  author={Loshchilov, Ilya and Hutter, Frank},
+  journal={arXiv preprint arXiv:1711.05101},
+  year={2017}
+}
+
+@inproceedings{szegedy2015going,
+  title={Going deeper with convolutions},
+  author={Szegedy, Christian and Liu, Wei and Jia, Yangqing and Sermanet, Pierre and Reed, Scott and Anguelov, Dragomir and Erhan, Dumitru and Vanhoucke, Vincent and Rabinovich, Andrew},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={1--9},
+  year={2015}
+}
+
+% small pre-training and large fine-tuning
+@article{touvron2019fixing,
+  title={Fixing the train-test resolution discrepancy},
+  author={Touvron, Hugo and Vedaldi, Andrea and Douze, Matthijs and J{\'e}gou, Herv{\'e}},
+  journal={Advances in neural information processing systems},
+  volume={32},
+  year={2019}
+}
+
+%clip
+
+@inproceedings{radford2021learning,
+  title={Learning transferable visual models from natural language supervision},
+  author={Radford, Alec and Kim, Jong Wook and Hallacy, Chris and Ramesh, Aditya and Goh, Gabriel and Agarwal, Sandhini and Sastry, Girish and Askell, Amanda and Mishkin, Pamela and Clark, Jack and others},
+  booktitle={International conference on machine learning},
+  pages={8748--8763},
+  year={2021},
+  organization={PMLR}
+}
+
+%clipa
+
+@article{li2024inverse,
+  title={An inverse scaling law for clip training},
+  author={Li, Xianhang and Wang, Zeyu and Xie, Cihang},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
+
+@inproceedings{loshchilov2017adamw,
+  title={Decoupled weight decay regularization},
+  author={Loshchilov, Ilya and Hutter, Frank},
+  booktitle={ICLR},
+  year={2018}
+}
+
+
+@inproceedings{loshchilov2016warmup,
+  title={Sgdr: Stochastic gradient descent with warm restarts},
+  author={Loshchilov, Ilya and Hutter, Frank},
+  booktitle={ICLR},
+  year={2017}
+}
+
+@inproceedings{chen2020simple,
+  title={A simple framework for contrastive learning of visual representations},
+  author={Chen, Ting and Kornblith, Simon and Norouzi, Mohammad and Hinton, Geoffrey},
+  booktitle={ICML},
+  year={2020},
+}
+
+@article{openclip,
+  author       = {Ilharco, Gabriel and
+                  Wortsman, Mitchell and
+                  Wightman, Ross and
+                  Gordon, Cade and
+                  Carlini, Nicholas and
+                  Taori, Rohan and
+                  Dave, Achal and
+                  Shankar, Vaishaal and
+                  Namkoong, Hongseok and
+                  Miller, John and
+                  Hajishirzi, Hannaneh and
+                  Farhadi, Ali and
+                  Schmidt, Ludwig},
+  title        = {OpenCLIP},
+  month        = jul,
+  year         = 2021,
+}
+
+
+@inproceedings{li2022flip,
+  title={Scaling Language-Image Pre-training via Masking},
+  author={Li, Yanghao and Fan, Haoqi and Hu, Ronghang and Feichtenhofer, Christoph and He, Kaiming},
+  booktitle={CVPR},
+  year={2023}
+}
+
+
+
+@article{tibshirani1996regression,
+  title={Regression shrinkage and selection via the lasso},
+  author={Tibshirani, Robert},
+  journal={Journal of the Royal Statistical Society Series B: Statistical Methodology},
+  volume={58},
+  number={1},
+  pages={267--288},
+  year={1996},
+  publisher={Oxford University Press}
+}
+
+
+@book{wright2022high,
+  title={High-dimensional data analysis with low-dimensional models: Principles, computation, and applications},
+  author={Wright, John and Ma, Yi},
+  year={2022},
+  publisher={Cambridge University Press}
+}
+
+@book{cover1999elements,
+  title={Elements of information theory},
+  author={Cover, Thomas M},
+  year={1999},
+  publisher={John Wiley \& Sons}
+}
+
+
+@inproceedings{derksen2007segmentation,
+  title={Segmentation of multivariate mixed data via lossy coding and compression},
+  author={Derksen, Harm and Ma, Yi and Hong, Wei and Wright, John},
+  booktitle={Visual Communications and Image Processing 2007},
+  volume={6508},
+  pages={170--181},
+  year={2007},
+  organization={SPIE}
+}
+
+
+@inproceedings{gregor2010learning,
+  title={Learning fast approximations of sparse coding},
+  author={Gregor, Karol and LeCun, Yann},
+  booktitle={Proceedings of the 27th international conference on international conference on machine learning},
+  pages={399--406},
+  year={2010}
+}
+
+@article{tolooshams2021stable,
+  title={Stable and interpretable unrolled dictionary learning},
+  author={Tolooshams, Bahareh and Ba, Demba},
+  journal={arXiv preprint arXiv:2106.00058},
+  year={2021}
+}
+
+@article{parikh2014proximal,
+  title={Proximal algorithms},
+  author={Parikh, Neal and Boyd, Stephen and others},
+  journal={Foundations and trends{\textregistered} in Optimization},
+  volume={1},
+  number={3},
+  pages={127--239},
+  year={2014},
+  publisher={Now Publishers, Inc.}
+}
+
+@article{vaswani2017attention,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  journal={Advances in neural information processing systems},
+  volume={30},
+  year={2017}
+}
+
+@inproceedings{qu2019geometric,
+  title={Geometric analysis of nonconvex optimization landscapes for overcomplete learning},
+  author={Qu, Qing and Zhai, Yuexiang and Li, Xiao and Zhang, Yuqian and Zhu, Zhihui},
+  booktitle={International Conference on Learning Representations},
+  year={2019}
+}
+
+
+@article{sulam2022recovery,
+  title={Recovery and generalization in over-realized dictionary learning},
+  author={Sulam, Jeremias and You, Chong and Zhu, Zhihui},
+  journal={Journal of Machine Learning Research},
+  volume={23},
+  number={135},
+  pages={1--23},
+  year={2022}
+}
+
+
+###related work
+
+# MAE
+@inproceedings{he2022masked,
+  title={Masked autoencoders are scalable vision learners},
+  author={He, Kaiming and Chen, Xinlei and Xie, Saining and Li, Yanghao and Doll{\'a}r, Piotr and Girshick, Ross},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={16000--16009},
+  year={2022}
+}
+
+#
+@inproceedings{singh2023effectiveness,
+  title={The effectiveness of MAE pre-pretraining for billion-scale pretraining},
+  author={Singh, Mannat and Duval, Quentin and Alwala, Kalyan Vasudev and Fan, Haoqi and Aggarwal, Vaibhav and Adcock, Aaron and Joulin, Armand and Doll{\'a}r, Piotr and Feichtenhofer, Christoph and Girshick, Ross and others},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={5484--5494},
+  year={2023}
+}
+
+
+
+#EVA-CLIP-18B
+
+@article{sun2024eva,
+  title={EVA-CLIP-18B: Scaling CLIP to 18 Billion Parameters},
+  author={Sun, Quan and Wang, Jinsheng and Yu, Qiying and Cui, Yufeng and Zhang, Fan and Zhang, Xiaosong and Wang, Xinlong},
+  journal={arXiv preprint arXiv:2402.04252},
+  year={2024}
+}
+
+
+#EVA-CLIP
+@article{sun2023eva,
+  title={Eva-clip: Improved training techniques for clip at scale},
+  author={Sun, Quan and Fang, Yuxin and Wu, Ledell and Wang, Xinlong and Cao, Yue},
+  journal={arXiv preprint arXiv:2303.15389},
+  year={2023}
+}
+
+
+#vit 22b
+
+
+
+
+#MLP-Mixer: An all-MLP Architecture for Vision
+
+@article{tolstikhin2021mlp,
+  title={Mlp-mixer: An all-mlp architecture for vision},
+  author={Tolstikhin, Ilya O and Houlsby, Neil and Kolesnikov, Alexander and Beyer, Lucas and Zhai, Xiaohua and Unterthiner, Thomas and Yung, Jessica and Steiner, Andreas and Keysers, Daniel and Uszkoreit, Jakob and others},
+  journal={Advances in neural information processing systems},
+  volume={34},
+  pages={24261--24272},
+  year={2021}
+}
+
+
+# swin
+@inproceedings{liu2021swin,
+  title={Swin transformer: Hierarchical vision transformer using shifted windows},
+  author={Liu, Ze and Lin, Yutong and Cao, Yue and Hu, Han and Wei, Yixuan and Zhang, Zheng and Lin, Stephen and Guo, Baining},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={10012--10022},
+  year={2021}
+}
+
+#convnet
+
+@inproceedings{liu2022convnet,
+  title={A convnet for the 2020s},
+  author={Liu, Zhuang and Mao, Hanzi and Wu, Chao-Yuan and Feichtenhofer, Christoph and Darrell, Trevor and Xie, Saining},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={11976--11986},
+  year={2022}
+}
+
+
+#coco
+@inproceedings{lin2014microsoft,
+  title={Microsoft coco: Common objects in context},
+  author={Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{\'a}r, Piotr and Zitnick, C Lawrence},
+  booktitle={Computer Vision--ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13},
+  pages={740--755},
+  year={2014},
+  organization={Springer}
+}
+
+# cutler vis 
+@inproceedings{wang2023cut,
+  title={Cut and learn for unsupervised object detection and instance segmentation},
+  author={Wang, Xudong and Girdhar, Rohit and Yu, Stella X and Misra, Ishan},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={3124--3134},
+  year={2023}
+}
+
+
+@article{devlin2018bert,
+  title={Bert: Pre-training of deep bidirectional transformers for language understanding},
+  author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  journal={arXiv preprint arXiv:1810.04805},
+  year={2018}
+}
+
+@article{brown2020language,
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={1877--1901},
+  year={2020}
+}
+
+@inproceedings{dehghani2023scaling,
+  title={Scaling vision transformers to 22 billion parameters},
+  author={Dehghani, Mostafa and Djolonga, Josip and Mustafa, Basil and Padlewski, Piotr and Heek, Jonathan and Gilmer, Justin and Steiner, Andreas Peter and Caron, Mathilde and Geirhos, Robert and Alabdulmohsin, Ibrahim and others},
+  booktitle={International Conference on Machine Learning},
+  pages={7480--7512},
+  year={2023},
+  organization={PMLR}
+}
+
+
+@article{blumensath2008iterative,
+  title={Iterative thresholding for sparse approximations},
+  author={Blumensath, Thomas and Davies, Mike E},
+  journal={Journal of Fourier analysis and Applications},
+  volume={14},
+  pages={629--654},
+  year={2008},
+  publisher={Springer}
+}
+
+@inproceedings{yu2024emergence,
+  title={Emergence of Segmentation with Minimalistic White-Box Transformers},
+  author={Yu, Yaodong and Chu, Tianzhe and Tong, Shengbang and Wu, Ziyang and Pai, Druv and Buchanan, Sam and Ma, Yi},
+  booktitle={Conference on Parsimony and Learning},
+  pages={72--93},
+  year={2024},
+  organization={PMLR}
+}
+
+
+@article{wei2022emergent,
+  title={Emergent Abilities of Large Language Models},
+  author={Wei, Jason and Tay, Yi and Bommasani, Rishi and Raffel, Colin and Zoph, Barret and Borgeaud, Sebastian and Yogatama, Dani and Bosma, Maarten and Zhou, Denny and Metzler, Donald and others},
+  journal={Transactions on Machine Learning Research},
+  year={2022}
+}
+
+@article{touvron2023llama2,
+  title={Llama 2: Open foundation and fine-tuned chat models},
+  author={Touvron, Hugo and Martin, Louis and Stone, Kevin and Albert, Peter and Almahairi, Amjad and Babaei, Yasmine and Bashlykov, Nikolay and Batra, Soumya and Bhargava, Prajjwal and Bhosale, Shruti and others},
+  journal={arXiv preprint arXiv:2307.09288},
+  year={2023}
+}
+
+@article{jiang2023mistral,
+  title={Mistral 7B},
+  author={Jiang, Albert Q and Sablayrolles, Alexandre and Mensch, Arthur and Bamford, Chris and Chaplot, Devendra Singh and Casas, Diego de las and Bressand, Florian and Lengyel, Gianna and Lample, Guillaume and Saulnier, Lucile and others},
+  journal={arXiv preprint arXiv:2310.06825},
+  year={2023}
+}
+
+@article{touvron2023llama,
+  title={Llama: Open and efficient foundation language models},
+  author={Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth{\'e}e and Rozi{\`e}re, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and others},
+  journal={arXiv preprint arXiv:2302.13971},
+  year={2023}
+}
+
+% camera ready 
+
+@inproceedings{ren2023tinymim,
+  title={Tinymim: An empirical study of distilling mim pre-trained models},
+  author={Ren, Sucheng and Wei, Fangyun and Zhang, Zheng and Hu, Han},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={3687--3697},
+  year={2023}
+}
+
+
+@inproceedings{zhou2017scene,
+  title={Scene parsing through ade20k dataset},
+  author={Zhou, Bolei and Zhao, Hang and Puig, Xavier and Fidler, Sanja and Barriuso, Adela and Torralba, Antonio},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={633--641},
+  year={2017}
+}
+
+@misc{author_github_repo,
+  author       = {Andrej Karpathy},
+  title        = {nanoGPT},
+  year         = {2022},
+  url          = {https://github.com/karpathy/nanoGPT},
+  note         = {GitHub repository}
+}
+
+@article{zhang2024white,
+  title={White-Box 3D-OMP-Transformer for ISAC},
+  author={Zhang, Bowen and Li, Geoffrey Ye},
+  journal={arXiv preprint arXiv:2407.02251},
+  year={2024}
+}
+
+
+
+@inproceedings{sun2018supervised,
+  title={Supervised deep sparse coding networks},
+  author={Sun, Xiaoxia and Nasrabadi, Nasser M and Tran, Trac D},
+  booktitle={2018 25th IEEE International Conference on Image Processing (ICIP)},
+  pages={346--350},
+  year={2018},
+  organization={IEEE}
+}
+
+@article{chen2018theoretical,
+  title={Theoretical linear convergence of unfolded ISTA and its practical weights and thresholds},
+  author={Chen, Xiaohan and Liu, Jialin and Wang, Zhangyang and Yin, Wotao},
+  journal={Advances in Neural Information Processing Systems},
+  volume={31},
+  year={2018}
+}
+
+@article{zarka2019deep,
+  title={Deep network classification by scattering and homotopy dictionary learning},
+  author={Zarka, John and Thiry, Louis and Angles, Tom{\'a}s and Mallat, St{\'e}phane},
+  journal={arXiv preprint arXiv:1910.03561},
+  year={2019}
+}
+
+
+@article{li2022revisiting,
+  title={Revisiting sparse convolutional model for visual recognition},
+  author={Li, Mingyang and Zhai, Pengyuan and Tong, Shengbang and Gao, Xingjian and Huang, Shao-Lun and Zhu, Zhihui and You, Chong and Ma, Yi and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={10492--10504},
+  year={2022}
+}

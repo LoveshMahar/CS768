@@ -1,0 +1,17 @@
+A fundamental challenge in multiagent reinforcement learning is to learn
+beneficial behaviors in a shared environment with other simultaneously learning
+agents. In particular, each agent perceives the environment as effectively
+non-stationary due to the changing policies of other agents. Moreover, each
+agent is itself constantly learning, leading to natural non-stationarity in the
+distribution of experiences encountered. In this paper, we propose a novel
+meta-multiagent policy gradient theorem that directly accounts for the
+non-stationary policy dynamics inherent to multiagent learning settings. This
+is achieved by modeling our gradient updates to consider both an agent's own
+non-stationary policy dynamics and the non-stationary policy dynamics of other
+agents in the environment. We show that our theoretically grounded approach
+provides a general solution to the multiagent learning problem, which
+inherently comprises all key aspects of previous state of the art approaches on
+this topic. We test our method on a diverse suite of multiagent benchmarks and
+demonstrate a more efficient ability to adapt to new agents as they learn than
+baseline methods across the full spectrum of mixed incentive, competitive, and
+cooperative domains.

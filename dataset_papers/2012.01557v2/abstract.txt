@@ -1,0 +1,15 @@
+As humans interact with autonomous agents to perform increasingly
+complicated, potentially risky tasks, it is important to be able to efficiently
+evaluate an agent's performance and correctness. In this paper we formalize and
+theoretically analyze the problem of efficient value alignment verification:
+how to efficiently test whether the behavior of another agent is aligned with a
+human's values. The goal is to construct a kind of "driver's test" that a human
+can give to any agent which will verify value alignment via a minimal number of
+queries. We study alignment verification problems with both idealized humans
+that have an explicit reward function as well as problems where they have
+implicit values. We analyze verification of exact value alignment for rational
+agents and propose and analyze heuristic and approximate value alignment
+verification tests in a wide range of gridworlds and a continuous autonomous
+driving domain. Finally, we prove that there exist sufficient conditions such
+that we can verify exact and approximate alignment across an infinite set of
+test environments via a constant-query-complexity alignment test.

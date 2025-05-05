@@ -1,0 +1,1094 @@
+@misc{ainsworthGitReBasinMerging2023,
+  abstract      = {The success of deep learning is due in large part to our ability to solve certain massive non-convex optimization problems with relative ease. Though non-convex optimization is NP-hard, simple algorithms -- often variants of stochastic gradient descent -- exhibit surprising effectiveness in fitting large neural networks in practice. We argue that neural network loss landscapes often contain (nearly) a single basin after accounting for all possible permutation symmetries of hidden units a la Entezari et al. 2021. We introduce three algorithms to permute the units of one model to bring them into alignment with a reference model in order to merge the two models in weight space. This transformation produces a functionally equivalent set of weights that lie in an approximately convex basin near the reference model. Experimentally, we demonstrate the single basin phenomenon across a variety of model architectures and datasets, including the first (to our knowledge) demonstration of zero-barrier linear mode connectivity between independently trained ResNet models on CIFAR-10. Additionally, we identify intriguing phenomena relating model width and training time to mode connectivity. Finally, we discuss shortcomings of the linear mode connectivity hypothesis, including a counterexample to the single basin theory.},
+  archiveprefix = {arxiv},
+  author        = {Ainsworth, Samuel K. and Hayase, Jonathan and Srinivasa, Siddhartha},
+  eprint        = {2209.04836},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Favorite},
+  month         = mar,
+  number        = {arXiv:2209.04836},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  shorttitle    = {Git {{Re-Basin}}},
+  title         = {Git {{Re-Basin}}: {{Merging Models}} modulo {{Permutation Symmetries}}},
+  url           = {http://arxiv.org/abs/2209.04836},
+  year          = {2023}
+}
+
+@misc{bentonLossSurfaceSimplexes2021,
+  abstract      = {With a better understanding of the loss surfaces for multilayer networks, we can build more robust and accurate training procedures. Recently it was discovered that independently trained SGD solutions can be connected along one-dimensional paths of near-constant training loss. In this paper, we show that there are mode-connecting simplicial complexes that form multi-dimensional manifolds of low loss, connecting many independently trained models. Inspired by this discovery, we show how to efficiently build simplicial complexes for fast ensembling, outperforming independently trained deep ensembles in accuracy, calibration, and robustness to dataset shift. Notably, our approach only requires a few training epochs to discover a low-loss simplex, starting from a pre-trained solution. Code is available at https://github.com/g-benton/loss-surface-simplexes.},
+  archiveprefix = {arxiv},
+  author        = {Benton, Gregory W. and Maddox, Wesley J. and Lotfi, Sanae and Wilson, Andrew Gordon},
+  eprint        = {2102.13042},
+  keywords      = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning},
+  month         = nov,
+  number        = {arXiv:2102.13042},
+  primaryclass  = {cs, stat},
+  publisher     = {{arXiv}},
+  title         = {Loss {{Surface Simplexes}} for {{Mode Connecting Volumes}} and {{Fast Ensembling}}},
+  url           = {http://arxiv.org/abs/2102.13042},
+  year          = {2021}
+}
+
+@article{cheng_remote_2017,
+  abstract   = {Remote sensing image scene classification plays an important role in a wide range of applications and hence has been receiving remarkable attention. During the past years, significant efforts have been made to develop various datasets or present a variety of approaches for scene classification from remote sensing images. However, a systematic review of the literature concerning datasets and methods for scene classification is still lacking. In addition, almost all existing datasets have a number of limitations, including the small scale of scene classes and the image numbers, the lack of image variations and diversity, and the saturation of accuracy. These limitations severely limit the development of new approaches especially deep learning-based methods. This paper first provides a comprehensive review of the recent progress. Then, we propose a large-scale dataset, termed "NWPU-RESISC45", which is a publicly available benchmark for REmote Sensing Image Scene Classification (RESISC), created by Northwestern Polytechnical University (NWPU). This dataset contains 31,500 images, covering 45 scene classes with 700 images in each class. The proposed NWPU-RESISC45 (i) is large-scale on the scene classes and the total image number, (ii) holds big variations in translation, spatial resolution, viewpoint, object pose, illumination, background, and occlusion, and (iii) has high within-class diversity and between-class similarity. The creation of this dataset will enable the community to develop and evaluate various data-driven algorithms. Finally, several representative methods are evaluated using the proposed dataset and the results are reported as a useful baseline for future research.},
+  annote     = {Comment: This manuscript is the accepted version for Proceedings of the IEEE},
+  author     = {Cheng, Gong and Han, Junwei and Lu, Xiaoqiang},
+  doi        = {10.1109/JPROC.2017.2675998},
+  issn       = {0018-9219, 1558-2256},
+  journal    = {Proceedings of the IEEE},
+  keywords   = {Computer Science - Computer Vision and Pattern Recognition},
+  month      = oct,
+  note       = {arXiv:1703.00121 [cs]},
+  number     = {10},
+  pages      = {1865--1883},
+  shorttitle = {Remote {Sensing} {Image} {Scene} {Classification}},
+  title      = {Remote {Sensing} {Image} {Scene} {Classification}: {Benchmark} and {State} of the {Art}},
+  url        = {http://arxiv.org/abs/1703.00121},
+  volume     = {105},
+  year       = {2017}
+}
+
+@misc{chronopoulouAdapterSoupWeightAveraging2023,
+  abstract      = {Pretrained language models (PLMs) are trained on massive corpora, but often need to specialize to specific domains. A parameter-efficient adaptation method suggests training an adapter for each domain on the task of language modeling. This leads to good in-domain scores but can be impractical for domain- or resource-restricted settings. A solution is to use a related-domain adapter for the novel domain at test time. In this paper, we introduce AdapterSoup, an approach that performs weight-space averaging of adapters trained on different domains. Our approach is embarrassingly parallel: first, we train a set of domain-specific adapters; then, for each novel domain, we determine which adapters should be averaged at test time. We present extensive experiments showing that AdapterSoup consistently improves performance to new domains without extra training. We also explore weight averaging of adapters trained on the same domain with different hyper-parameters, and show that it preserves the performance of a PLM on new domains while obtaining strong in-domain results. We explore various approaches for choosing which adapters to combine, such as text clustering and semantic similarity. We find that using clustering leads to the most competitive results on novel domains.},
+  archiveprefix = {arxiv},
+  author        = {Chronopoulou, Alexandra and Peters, Matthew E. and Fraser, Alexander and Dodge, Jesse},
+  eprint        = {2302.07027},
+  keywords      = {Computer Science - Computation and Language},
+  month         = mar,
+  number        = {arXiv:2302.07027},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  shorttitle    = {{{AdapterSoup}}},
+  title         = {{{AdapterSoup}}: {{Weight Averaging}} to {{Improve Generalization}} of {{Pretrained Language Models}}},
+  url           = {http://arxiv.org/abs/2302.07027},
+  year          = {2023}
+}
+@misc{chungScalingInstructionFinetunedLanguage2022,
+  abstract      = {Finetuning language models on a collection of datasets phrased as instructions has been shown to improve model performance and generalization to unseen tasks. In this paper we explore instruction finetuning with a particular focus on (1) scaling the number of tasks, (2) scaling the model size, and (3) finetuning on chain-of-thought data. We find that instruction finetuning with the above aspects dramatically improves performance on a variety of model classes (PaLM, T5, U-PaLM), prompting setups (zero-shot, few-shot, CoT), and evaluation benchmarks (MMLU, BBH, TyDiQA, MGSM, open-ended generation). For instance, Flan-PaLM 540B instruction-finetuned on 1.8K tasks outperforms PALM 540B by a large margin (+9.4\% on average). Flan-PaLM 540B achieves state-of-the-art performance on several benchmarks, such as 75.2\% on five-shot MMLU. We also publicly release Flan-T5 checkpoints, which achieve strong few-shot performance even compared to much larger models, such as PaLM 62B. Overall, instruction finetuning is a general method for improving the performance and usability of pretrained language models.},
+  archiveprefix = {arxiv},
+  author        = {Chung, Hyung Won and Hou, Le and Longpre, Shayne and Zoph, Barret and Tay, Yi and Fedus, William and Li, Yunxuan and Wang, Xuezhi and Dehghani, Mostafa and Brahma, Siddhartha and Webson, Albert and Gu, Shixiang Shane and Dai, Zhuyun and Suzgun, Mirac and Chen, Xinyun and Chowdhery, Aakanksha and {Castro-Ros}, Alex and Pellat, Marie and Robinson, Kevin and Valter, Dasha and Narang, Sharan and Mishra, Gaurav and Yu, Adams and Zhao, Vincent and Huang, Yanping and Dai, Andrew and Yu, Hongkun and Petrov, Slav and Chi, Ed H. and Dean, Jeff and Devlin, Jacob and Roberts, Adam and Zhou, Denny and Le, Quoc V. and Wei, Jason},
+  doi           = {10.48550/arXiv.2210.11416},
+  eprint        = {2210.11416},
+  keywords      = {Computer Science - Computation and Language,Computer Science - Machine Learning},
+  month         = dec,
+  number        = {arXiv:2210.11416},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {Scaling {{Instruction-Finetuned Language Models}}},
+  url           = {http://arxiv.org/abs/2210.11416},
+  year          = {2022}
+}
+
+@inproceedings{cimpoi_describing_2014,
+  abstract  = {Patterns and textures are key characteristics of many natural objects: a shirt can be striped, the wings of a butterﬂy can be veined, and the skin of an animal can be scaly. Aiming at supporting this dimension in image understanding, we address the problem of describing textures with semantic attributes. We identify a vocabulary of forty-seven texture terms and use them to describe a large dataset of patterns collected “in the wild”. The resulting Describable Textures Dataset (DTD) is a basis to seek the best representation for recognizing describable texture attributes in images. We port from object recognition to texture recognition the Improved Fisher Vector (IFV) and Deep Convolutionalnetwork Activation Features (DeCAF), and show that surprisingly, they both outperform specialized texture descriptors not only on our problem, but also in established material recognition datasets. We also show that our describable attributes are excellent texture descriptors, transferring between datasets and tasks; in particular, combined with IFV and DeCAF, they signiﬁcantly outperform the state-of-theart by more than 10\% on both FMD and KTH-TIPS-2b benchmarks. We also demonstrate that they produce intuitive descriptions of materials and Internet images.},
+  address   = {Columbus, OH, USA},
+  author    = {Cimpoi, Mircea and Maji, Subhransu and Kokkinos, Iasonas and Mohamed, Sammy and Vedaldi, Andrea},
+  booktitle = {2014 {IEEE} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+  doi       = {10.1109/CVPR.2014.461},
+  isbn      = {978-1-4799-5118-5},
+  language  = {en},
+  month     = jun,
+  pages     = {3606--3613},
+  publisher = {IEEE},
+  title     = {Describing {Textures} in the {Wild}},
+  url       = {https://ieeexplore.ieee.org/document/6909856},
+  year      = {2014}
+}
+@article{daiDeepSeekMoEUltimateExpert,
+  abstract = {In the era of large language models, Mixture-of-Experts (MoE) is a promising architecture for managing computational costs when scaling up model parameters. However, conventional MoE architectures like GShard, which activate the top-{$K$} out of {$N$} experts, face challenges in ensuring expert specialization, i.e. each expert acquires non-overlapping and focused knowledge. In response, we propose the DeepSeekMoE architecture towards ultimate expert specialization. It involves two principal strategies: (1) finely segmenting the experts into {$mN$} ones and activating {$mK$} from them, allowing for a more flexible combination of activated experts; (2) isolating {$Ks$} experts as shared ones, aiming at capturing common knowledge and mitigating redundancy in routed experts. Starting from a modest scale with 2B parameters, we demonstrate that DeepSeekMoE 2B achieves comparable performance with GShard 2.8B, which has 1.5{\texttimes} expert parameters and computation. In addition, DeepSeekMoE 2B nearly approaches the performance of its dense counterpart with the same number of total parameters, which set the upper bound of MoE models. Subsequently, we scale up DeepSeekMoE to 16B parameters and show that it achieves comparable performance with LLaMA2 7B, with only about 40\% of computations. Further, our preliminary efforts to scale up DeepSeekMoE to 145B parameters consistently validate its substantial advantages over the GShard architecture, and show its performance comparable with DeepSeek 67B, using only 28.5\% of computations.},
+  author   = {Dai, Damai and Deng, Chengqi and Zhao, Chenggang and Xu, R X and Gao, Huazuo and Chen, Deli and Li, Jiashi and Zeng, Wangding and Yu, Xingkai and Wu, Y and Xie, Zhenda and Li, Y K and Huang, Panpan and Luo, Fuli and Ruan, Chong and Sui, Zhifang and Liang, Wenfeng},
+  langid   = {english},
+  title    = {{{DeepSeekMoE}}: {{Towards Ultimate Expert Specialization}} in {{Mixture-of-Experts Language Models}}},
+  year     = {2024}
+}
+@inproceedings{danielfreemanTopologyGeometryHalfrectified2017,
+  abstract   = {The loss surface of deep neural networks has recently attracted interest in the optimization and machine learning communities as a prime example of high-dimensional non-convex problem. Some insights were recently gained using spin glass models and mean-field approximations, but at the expense of strongly simplifying the nonlinear nature of the model. In this work, we do not make any such assumption and study conditions on the data distribution and model architecture that prevent the existence of bad local minima. Our theoretical work quantifies and formalizes two important folklore facts: (i) the landscape of deep linear networks has a radically different topology from that of deep half-rectified ones, and (ii) that the energy landscape in the non-linear case is fundamentally controlled by the interplay between the smoothness of the data distribution and model over-parametrization. Our main theoretical contribution is to prove that half-rectified single layer networks are asymptotically connected, and we provide explicit bounds that reveal the aforementioned interplay. The conditioning of gradient descent is the next challenge we address. We study this question through the geometry of the level sets, and we introduce an algorithm to efficiently estimate the regularity of such sets on large-scale networks. Our empirical results show that these level sets remain connected throughout all the learning phase, suggesting a near convex behavior, but they become exponentially more curvy as the energy level decays, in accordance to what is observed in practice with very low curvature attractors.},
+  author     = {Daniel Freeman, C. and Bruna, Joan},
+  shorttitle = {Topology and Geometry of Half-Rectified Network Optimization},
+  title      = {Topology and Geometry of Half-Rectified Network Optimization: 5th {{International Conference}} on {{Learning Representations}}, {{ICLR}} 2017},
+  url        = {http://www.scopus.com/inward/record.url?scp=85064823226&partnerID=8YFLogxK},
+  year       = {2017}
+}
+
+@misc{draxlerEssentiallyNoBarriers2019,
+  abstract      = {Training neural networks involves finding minima of a high-dimensional non-convex loss function. Knowledge of the structure of this energy landscape is sparse. Relaxing from linear interpolations, we construct continuous paths between minima of recent neural network architectures on CIFAR10 and CIFAR100. Surprisingly, the paths are essentially flat in both the training and test landscapes. This implies that neural networks have enough capacity for structural changes, or that these changes are small between minima. Also, each minimum has at least one vanishing Hessian eigenvalue in addition to those resulting from trivial invariance.},
+  archiveprefix = {arxiv},
+  author        = {Draxler, Felix and Veschgini, Kambis and Salmhofer, Manfred and Hamprecht, Fred A.},
+  eprint        = {1803.00885},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning},
+  month         = feb,
+  number        = {arXiv:1803.00885},
+  primaryclass  = {cs, stat},
+  publisher     = {{arXiv}},
+  title         = {Essentially {{No Barriers}} in {{Neural Network Energy Landscape}}},
+  url           = {http://arxiv.org/abs/1803.00885},
+  year          = {2019}
+}
+
+@misc{entezariRolePermutationInvariance2022,
+  abstract      = {In this paper, we conjecture that if the permutation invariance of neural networks is taken into account, SGD solutions will likely have no barrier in the linear interpolation between them. Although it is a bold conjecture, we show how extensive empirical attempts fall short of refuting it. We further provide a preliminary theoretical result to support our conjecture. Our conjecture has implications for lottery ticket hypothesis, distributed training, and ensemble methods.},
+  archiveprefix = {arxiv},
+  author        = {Entezari, Rahim and Sedghi, Hanie and Saukh, Olga and Neyshabur, Behnam},
+  eprint        = {2110.06296},
+  keywords      = {Computer Science - Machine Learning},
+  month         = jul,
+  number        = {arXiv:2110.06296},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {The {{Role}} of {{Permutation Invariance}} in {{Linear Mode Connectivity}} of {{Neural Networks}}},
+  url           = {http://arxiv.org/abs/2110.06296},
+  year          = {2022}
+}
+
+
+@misc{frankleLinearModeConnectivity2020,
+  abstract      = {We study whether a neural network optimizes to the same, linearly connected minimum under different samples of SGD noise (e.g., random data order and augmentation). We find that standard vision models become stable to SGD noise in this way early in training. From then on, the outcome of optimization is determined to a linearly connected region. We use this technique to study iterative magnitude pruning (IMP), the procedure used by work on the lottery ticket hypothesis to identify subnetworks that could have trained in isolation to full accuracy. We find that these subnetworks only reach full accuracy when they are stable to SGD noise, which either occurs at initialization for small-scale settings (MNIST) or early in training for large-scale settings (ResNet-50 and Inception-v3 on ImageNet).},
+  archiveprefix = {arxiv},
+  author        = {Frankle, Jonathan and Dziugaite, Gintare Karolina and Roy, Daniel M. and Carbin, Michael},
+  eprint        = {1912.05671},
+  keywords      = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning},
+  month         = jul,
+  number        = {arXiv:1912.05671},
+  primaryclass  = {cs, stat},
+  publisher     = {{arXiv}},
+  title         = {Linear {{Mode Connectivity}} and the {{Lottery Ticket Hypothesis}}},
+  url           = {http://arxiv.org/abs/1912.05671},
+  year          = {2020}
+}
+@misc{garipovLossSurfacesMode2018,
+  abstract      = {The loss functions of deep neural networks are complex and their geometric properties are not well understood. We show that the optima of these complex loss functions are in fact connected by simple curves over which training and test accuracy are nearly constant. We introduce a training procedure to discover these high-accuracy pathways between modes. Inspired by this new geometric insight, we also propose a new ensembling method entitled Fast Geometric Ensembling (FGE). Using FGE we can train high-performing ensembles in the time required to train a single model. We achieve improved performance compared to the recent state-of-the-art Snapshot Ensembles, on CIFAR-10, CIFAR-100, and ImageNet.},
+  archiveprefix = {arxiv},
+  author        = {Garipov, Timur and Izmailov, Pavel and Podoprikhin, Dmitrii and Vetrov, Dmitry and Wilson, Andrew Gordon},
+  eprint        = {1802.10026},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Favorite,Statistics - Machine Learning},
+  month         = oct,
+  number        = {arXiv:1802.10026},
+  primaryclass  = {cs, stat},
+  publisher     = {{arXiv}},
+  title         = {Loss {{Surfaces}}, {{Mode Connectivity}}, and {{Fast Ensembling}} of {{DNNs}}},
+  url           = {http://arxiv.org/abs/1802.10026},
+  year          = {2018}
+}
+
+@misc{georgestoicaZipItMergingModels2023,
+  abstract      = {Typical deep visual recognition models are capable of performing the one task they were trained on. In this paper, we tackle the extremely difficult problem of combining completely distinct models with different initializations, each solving a separate task, into one multi-task model without any additional training. Prior work in model merging permutes one model to the space of the other then adds them together. While this works for models trained on the same task, we find that this fails to account for the differences in models trained on disjoint tasks. Thus, we introduce "ZipIt!", a general method for merging two arbitrary models of the same architecture that incorporates two simple strategies. First, in order to account for features that aren't shared between models, we expand the model merging problem to additionally allow for merging features within each model by defining a general "zip" operation. Second, we add support for partially zipping the models up until a specified layer, naturally creating a multi-head model. We find that these two changes combined account for a staggering 20-60\% improvement over prior work, making the merging of models trained on disjoint tasks feasible.},
+  archiveprefix = {arxiv},
+  author        = {{George Stoica} and {Daniel Bolya} and {Jakob Bjorner} and {Taylor Hearn} and {Judy Hoffman}},
+  eprint        = {2305.03053},
+  keywords      = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  month         = may,
+  number        = {arXiv:2305.03053},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {{{ZipIt}}! {{Merging Models}} from {{Different Tasks}} without {{Training}}},
+  url           = {http://arxiv.org/abs/2305.03053},
+  year          = {2023}
+}
+
+@misc{gulatiConformerConvolutionaugmentedTransformer2020,
+  abstract      = {Recently Transformer and Convolution neural network (CNN) based models have shown promising results in Automatic Speech Recognition (ASR), outperforming Recurrent neural networks (RNNs). Transformer models are good at capturing content-based global interactions, while CNNs exploit local features effectively. In this work, we achieve the best of both worlds by studying how to combine convolution neural networks and transformers to model both local and global dependencies of an audio sequence in a parameter-efficient way. To this regard, we propose the convolution-augmented transformer for speech recognition, named Conformer. Conformer significantly outperforms the previous Transformer and CNN based models achieving state-of-the-art accuracies. On the widely used LibriSpeech benchmark, our model achieves WER of 2.1\%/4.3\% without using a language model and 1.9\%/3.9\% with an external language model on test/testother. We also observe competitive performance of 2.7\%/6.3\% with a small model of only 10M parameters.},
+  archiveprefix = {arxiv},
+  author        = {Gulati, Anmol and Qin, James and Chiu, Chung-Cheng and Parmar, Niki and Zhang, Yu and Yu, Jiahui and Han, Wei and Wang, Shibo and Zhang, Zhengdong and Wu, Yonghui and Pang, Ruoming},
+  doi           = {10.48550/arXiv.2005.08100},
+  eprint        = {2005.08100},
+  keywords      = {Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing},
+  month         = may,
+  number        = {arXiv:2005.08100},
+  primaryclass  = {cs, eess},
+  publisher     = {{arXiv}},
+  shorttitle    = {Conformer},
+  title         = {Conformer: {{Convolution-augmented Transformer}} for {{Speech Recognition}}},
+  url           = {http://arxiv.org/abs/2005.08100},
+  year          = {2020}
+}
+
+@techreport{gumbelStatisticalTheoryExtreme1954,
+  abstract    = {This monograph is based on four lectures given at the National Bureau of Standards under the sponsorship of the Applied Mathematics Division. The aim of this publication is to make the statistical theory and techniques of extreme values readily available to scientists and engineers. This seems necessary because the original papers, partly written in foreign languages and published in remote journals, are not easy to find. The first lecture outlines some of the practical problems to which the theory pertains. The second lecture introduces certain new statistical tools necessary for the theory, which is developed in the third lecture, first in exact, then in asymptotic form. The fourth lecture shows a series of practical applications and gives all numerical details for enabling interested readers to apply the method to their own problems.},
+  author      = {Gumbel, E. J.},
+  institution = {{National Bureau of Standards, Washington, D. C. Applied Mathematics Div.}},
+  keywords    = {Aeronautics,Bacteria,Climatology,Control,Distribution theory,Extreme-value problem,Floods,Life expectancy,Probability,Quality control,Radioactivity,Sampling,Statistical analysis},
+  number      = {PB175818},
+  title       = {Statistical {{Theory}} of {{Extreme Values}} and {{Some Practical Applications}}. {{A Series}} of {{Lectures}}.},
+  url         = {https://ntrl.ntis.gov/NTRL/dashboard/searchResults/titleDetail/PB175818.xhtml},
+  year        = {1954}
+}
+
+@article{heDeepResidualLearning2016,
+  abstract      = {Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers - 8{\texttimes} deeper than VGG nets [40] but still having lower complexity. An ensemble of these residual nets achieves 3.57\% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28\% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC \& COCO 2015 competitions1, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.},
+  archiveprefix = {arxiv},
+  author        = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  doi           = {10.1109/CVPR.2016.90},
+  eprint        = {1512.03385},
+  isbn          = {9781467388504},
+  issn          = {10636919},
+  journal       = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+  pages         = {770--778},
+  title         = {Deep Residual Learning for Image Recognition},
+  volume        = {2016-Decem},
+  year          = {2016}
+}
+
+@inproceedings{helber2018introducing,
+  author       = {Helber, Patrick and Bischke, Benjamin and Dengel, Andreas and Borth, Damian},
+  booktitle    = {IGARSS 2018-2018 IEEE International Geoscience and Remote Sensing Symposium},
+  organization = {IEEE},
+  pages        = {204--207},
+  title        = {Introducing EuroSAT: A Novel Dataset and Deep Learning Benchmark for Land Use and Land Cover Classification},
+  year         = {2018}
+}
+
+@misc{heMaskedAutoencodersAre2021,
+  abstract      = {This paper shows that masked autoencoders (MAE) are scalable self-supervised learners for computer vision. Our MAE approach is simple: we mask random patches of the input image and reconstruct the missing pixels. It is based on two core designs. First, we develop an asymmetric encoder-decoder architecture, with an encoder that operates only on the visible subset of patches (without mask tokens), along with a lightweight decoder that reconstructs the original image from the latent representation and mask tokens. Second, we find that masking a high proportion of the input image, e.g., 75\%, yields a nontrivial and meaningful self-supervisory task. Coupling these two designs enables us to train large models efficiently and effectively: we accelerate training (by 3{\texttimes} or more) and improve accuracy. Our scalable approach allows for learning high-capacity models that generalize well: e.g., a vanilla ViT-Huge model achieves the best accuracy (87.8\%) among methods that use only ImageNet-1K data. Transfer performance in downstream tasks outperforms supervised pretraining and shows promising scaling behavior.},
+  archiveprefix = {arxiv},
+  author        = {He, Kaiming and Chen, Xinlei and Xie, Saining and Li, Yanghao and Doll{\'a}r, Piotr and Girshick, Ross},
+  eprint        = {2111.06377},
+  keywords      = {Computer Science - Computer Vision and Pattern Recognition},
+  langid        = {english},
+  month         = dec,
+  number        = {arXiv:2111.06377},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {Masked {{Autoencoders Are Scalable Vision Learners}}},
+  url           = {http://arxiv.org/abs/2111.06377},
+  year          = {2021}
+}
+
+@misc{yosinskiUnderstandingNeuralNetworks2015,
+  abstract      = {Recent years have produced great advances in training large, deep neural networks (DNNs), including notable successes in training convolutional neural networks (convnets) to recognize natural images. However, our understanding of how these models work, especially what computations they perform at intermediate layers, has lagged behind. Progress in the field will be further accelerated by the development of better tools for visualizing and interpreting neural nets. We introduce two such tools here. The first is a tool that visualizes the activations produced on each layer of a trained convnet as it processes an image or video (e.g. a live webcam stream). We have found that looking at live activations that change in response to user input helps build valuable intuitions about how convnets work. The second tool enables visualizing features at each layer of a DNN via regularized optimization in image space. Because previous versions of this idea produced less recognizable images, here we introduce several new regularization methods that combine to produce qualitatively clearer, more interpretable visualizations. Both tools are open source and work on a pre-trained convnet with minimal setup.},
+  archiveprefix = {arxiv},
+  author        = {Yosinski, Jason and Clune, Jeff and Nguyen, Anh and Fuchs, Thomas and Lipson, Hod},
+  doi           = {10.48550/arXiv.1506.06579},
+  eprint        = {1506.06579},
+  keywords      = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing},
+  month         = jun,
+  number        = {arXiv:1506.06579},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {Understanding {{Neural Networks Through Deep Visualization}}},
+  url           = {http://arxiv.org/abs/1506.06579},
+  year          = {2015}
+}
+
+
+@misc{hintonDistillingKnowledgeNeural2015,
+  abstract      = {A very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and then to average their predictions [3]. Unfortunately, making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users, especially if the individual models are large neural nets. Caruana and his collaborators [1] have shown that it is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy and we develop this approach further using a different compression technique. We achieve some surprising results on MNIST and we show that we can significantly improve the acoustic model of a heavily used commercial system by distilling the knowledge in an ensemble of models into a single model. We also introduce a new type of ensemble composed of one or more full models and many specialist models which learn to distinguish fine-grained classes that the full models confuse. Unlike a mixture of experts, these specialist models can be trained rapidly and in parallel.},
+  archiveprefix = {arxiv},
+  author        = {Hinton, Geoffrey and Vinyals, Oriol and Dean, Jeff},
+  eprint        = {1503.02531},
+  keywords      = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Favorite,Statistics - Machine Learning},
+  langid        = {english},
+  month         = mar,
+  number        = {arXiv:1503.02531},
+  primaryclass  = {cs, stat},
+  publisher     = {{arXiv}},
+  title         = {Distilling the {{Knowledge}} in a {{Neural Network}}},
+  url           = {http://arxiv.org/abs/1503.02531},
+  year          = {2015}
+}
+
+@misc{franklePruningNeuralNetworks2021,
+  abstract      = {Recent work has explored the possibility of pruning neural networks at initialization. We assess proposals for doing so: SNIP (Lee et al., 2019), GraSP (Wang et al., 2020), SynFlow (Tanaka et al., 2020), and magnitude pruning. Although these methods surpass the trivial baseline of random pruning, they remain below the accuracy of magnitude pruning after training, and we endeavor to understand why. We show that, unlike pruning after training, randomly shuffling the weights these methods prune within each layer or sampling new initial values preserves or improves accuracy. As such, the per-weight pruning decisions made by these methods can be replaced by a per-layer choice of the fraction of weights to prune. This property suggests broader challenges with the underlying pruning heuristics, the desire to prune at initialization, or both.},
+  archiveprefix = {arxiv},
+  author        = {Frankle, Jonathan and Dziugaite, Gintare Karolina and Roy, Daniel M. and Carbin, Michael},
+  doi           = {10.48550/arXiv.2009.08576},
+  eprint        = {2009.08576},
+  keywords      = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning},
+  month         = mar,
+  number        = {arXiv:2009.08576},
+  primaryclass  = {cs, stat},
+  publisher     = {{arXiv}},
+  shorttitle    = {Pruning {{Neural Networks}} at {{Initialization}}},
+  title         = {Pruning {{Neural Networks}} at {{Initialization}}: {{Why}} Are {{We Missing}} the {{Mark}}?},
+  url           = {http://arxiv.org/abs/2009.08576},
+  year          = {2021}
+}
+
+@misc{houlsbyParameterEfficientTransferLearning2019,
+  abstract      = {Fine-tuning large pre-trained models is an effective transfer mechanism in NLP. However, in the presence of many downstream tasks, fine-tuning is parameter inefficient: an entire new model is required for every task. As an alternative, we propose transfer with adapter modules. Adapter modules yield a compact and extensible model; they add only a few trainable parameters per task, and new tasks can be added without revisiting previous ones. The parameters of the original network remain fixed, yielding a high degree of parameter sharing. To demonstrate adapter's effectiveness, we transfer the recently proposed BERT Transformer model to 26 diverse text classification tasks, including the GLUE benchmark. Adapters attain near state-of-the-art performance, whilst adding only a few parameters per task. On GLUE, we attain within 0.4\% of the performance of full fine-tuning, adding only 3.6\% parameters per task. By contrast, fine-tuning trains 100\% of the parameters per task.},
+  archiveprefix = {arxiv},
+  author        = {Houlsby, Neil and Giurgiu, Andrei and Jastrzebski, Stanislaw and Morrone, Bruna and {de Laroussilhe}, Quentin and Gesmundo, Andrea and Attariyan, Mona and Gelly, Sylvain},
+  eprint        = {1902.00751},
+  keywords      = {Computer Science - Computation and Language,Computer Science - Machine Learning,Statistics - Machine Learning},
+  month         = jun,
+  number        = {arXiv:1902.00751},
+  primaryclass  = {cs, stat},
+  publisher     = {{arXiv}},
+  title         = {Parameter-{{Efficient Transfer Learning}} for {{NLP}}},
+  url           = {http://arxiv.org/abs/1902.00751},
+  year          = {2019}
+}
+
+
+@misc{hendrycksBenchmarkingNeuralNetwork2019,
+  abstract      = {In this paper we establish rigorous benchmarks for image classifier robustness. Our first benchmark, ImageNet-C, standardizes and expands the corruption robustness topic, while showing which classifiers are preferable in safety-critical applications. Then we propose a new dataset called ImageNet-P which enables researchers to benchmark a classifier's robustness to common perturbations. Unlike recent robustness research, this benchmark evaluates performance on common corruptions and perturbations not worst-case adversarial perturbations. We find that there are negligible changes in relative corruption robustness from AlexNet classifiers to ResNet classifiers. Afterward we discover ways to enhance corruption and perturbation robustness. We even find that a bypassed adversarial defense provides substantial common perturbation robustness. Together our benchmarks may aid future work toward networks that robustly generalize.},
+  archiveprefix = {arxiv},
+  author        = {Hendrycks, Dan and Dietterich, Thomas},
+  doi           = {10.48550/arXiv.1903.12261},
+  eprint        = {1903.12261},
+  keywords      = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning},
+  month         = mar,
+  number        = {arXiv:1903.12261},
+  primaryclass  = {cs, stat},
+  publisher     = {{arXiv}},
+  title         = {Benchmarking {{Neural Network Robustness}} to {{Common Corruptions}} and {{Perturbations}}},
+  url           = {http://arxiv.org/abs/1903.12261},
+  year          = {2019}
+}
+@misc{huangLoraHubEfficientCrossTask2023,
+  abstract      = {Low-rank adaptations (LoRA) are often employed to fine-tune large language models (LLMs) for new tasks. This paper investigates LoRA composability for cross-task generalization and introduces LoraHub, a strategic framework devised for the purposive assembly of LoRA modules trained on diverse given tasks, with the objective of achieving adaptable performance on unseen tasks. With just a few examples from a novel task, LoraHub enables the fluid combination of multiple LoRA modules, eradicating the need for human expertise. Notably, the composition requires neither additional model parameters nor gradients. Our empirical results, derived from the Big-Bench Hard (BBH) benchmark, suggest that LoraHub can effectively mimic the performance of in-context learning in few-shot scenarios, excluding the necessity of in-context examples alongside each inference input. A significant contribution of our research is the fostering of a community for LoRA, where users can share their trained LoRA modules, thereby facilitating their application to new tasks. We anticipate this resource will widen access to and spur advancements in general intelligence as well as LLMs in production. Code will be available at https://github.com/sail-sg/lorahub.},
+  archiveprefix = {arxiv},
+  author        = {Huang, Chengsong and Liu, Qian and Lin, Bill Yuchen and Pang, Tianyu and Du, Chao and Lin, Min},
+  eprint        = {2307.13269},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language},
+  month         = jul,
+  number        = {arXiv:2307.13269},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  shorttitle    = {{{LoraHub}}},
+  title         = {{{LoraHub}}: {{Efficient Cross-Task Generalization}} via {{Dynamic LoRA Composition}}},
+  url           = {http://arxiv.org/abs/2307.13269},
+  year          = {2023}
+}
+
+@misc{huLoRALowRankAdaptation2021,
+  abstract      = {An important paradigm of natural language processing consists of large-scale pre-training on general domain data and adaptation to particular tasks or domains. As we pre-train larger models, full fine-tuning, which retrains all model parameters, becomes less feasible. Using GPT-3 175B as an example -- deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive. We propose Low-Rank Adaptation, or LoRA, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks. Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times. LoRA performs on-par or better than fine-tuning in model quality on RoBERTa, DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a higher training throughput, and, unlike adapters, no additional inference latency. We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates the integration of LoRA with PyTorch models and provide our implementations and model checkpoints for RoBERTa, DeBERTa, and GPT-2 at https://github.com/microsoft/LoRA.},
+  archiveprefix = {arxiv},
+  author        = {Hu, Edward J. and Shen, Yelong and Wallis, Phillip and {Allen-Zhu}, Zeyuan and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu},
+  eprint        = {2106.09685},
+  keywords      = {⛔ No DOI found,Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning,Favorite},
+  month         = oct,
+  number        = {arXiv:2106.09685},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  shorttitle    = {{{LoRA}}},
+  title         = {{{LoRA}}: {{Low-Rank Adaptation}} of {{Large Language Models}}},
+  url           = {http://arxiv.org/abs/2106.09685},
+  year          = {2021}
+}
+@misc{ilharcoEditingModelsTask2023,
+  abstract      = {Changing how pre-trained models behave -- e.g., improving their performance on a downstream task or mitigating biases learned during pre-training -- is a common practice when developing machine learning systems. In this work, we propose a new paradigm for steering the behavior of neural networks, centered around \textbackslash textit\{task vectors\}. A task vector specifies a direction in the weight space of a pre-trained model, such that movement in that direction improves performance on the task. We build task vectors by subtracting the weights of a pre-trained model from the weights of the same model after fine-tuning on a task. We show that these task vectors can be modified and combined together through arithmetic operations such as negation and addition, and the behavior of the resulting model is steered accordingly. Negating a task vector decreases performance on the target task, with little change in model behavior on control tasks. Moreover, adding task vectors together can improve performance on multiple tasks at once. Finally, when tasks are linked by an analogy relationship of the form ``A is to B as C is to D", combining task vectors from three of the tasks can improve performance on the fourth, even when no data from the fourth task is used for training. Overall, our experiments with several models, modalities and tasks show that task arithmetic is a simple, efficient and effective way of editing models.},
+  archiveprefix = {arxiv},
+  author        = {Ilharco, Gabriel and Ribeiro, Marco Tulio and Wortsman, Mitchell and Gururangan, Suchin and Schmidt, Ludwig and Hajishirzi, Hannaneh and Farhadi, Ali},
+  doi           = {10.48550/arXiv.2212.04089},
+  eprint        = {2212.04089},
+  keywords      = {Computer Science - Computation and Language,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  month         = mar,
+  number        = {arXiv:2212.04089},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {Editing {{Models}} with {{Task Arithmetic}}},
+  url           = {http://arxiv.org/abs/2212.04089},
+  year          = {2023}
+}
+@misc{izmailovAveragingWeightsLeads2019,
+  abstract      = {Deep neural networks are typically trained by optimizing a loss function with an SGD variant, in conjunction with a decaying learning rate, until convergence. We show that simple averaging of multiple points along the trajectory of SGD, with a cyclical or constant learning rate, leads to better generalization than conventional training. We also show that this Stochastic Weight Averaging (SWA) procedure finds much flatter solutions than SGD, and approximates the recent Fast Geometric Ensembling (FGE) approach with a single model. Using SWA we achieve notable improvement in test accuracy over conventional SGD training on a range of state-of-the-art residual networks, PyramidNets, DenseNets, and Shake-Shake networks on CIFAR-10, CIFAR-100, and ImageNet. In short, SWA is extremely easy to implement, improves generalization, and has almost no computational overhead.},
+  archiveprefix = {arxiv},
+  author        = {Izmailov, Pavel and Podoprikhin, Dmitrii and Garipov, Timur and Vetrov, Dmitry and Wilson, Andrew Gordon},
+  eprint        = {1803.05407},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning},
+  month         = feb,
+  number        = {arXiv:1803.05407},
+  primaryclass  = {cs, stat},
+  publisher     = {{arXiv}},
+  title         = {Averaging {{Weights Leads}} to {{Wider Optima}} and {{Better Generalization}}},
+  url           = {http://arxiv.org/abs/1803.05407},
+  year          = {2019}
+}
+@article{jacobsAdaptiveMixturesLocal1991,
+  abstract = {We present a new supervised learning procedure for systems composed of many separate networks, each of which learns to handle a subset of the complete set of training cases. The new procedure can be viewed either as a modular version of a multilayer supervised network, or as an associative version of competitive learning. It therefore provides a new link between these two apparently different approaches. We demonstrate that the learning procedure divides up a vowel discrimination task into appropriate subtasks, each of which can be solved by a very simple expert network.},
+  author   = {Jacobs, Robert A. and Jordan, Michael I. and Nowlan, Steven J. and Hinton, Geoffrey E.},
+  doi      = {10.1162/neco.1991.3.1.79},
+  issn     = {0899-7667},
+  journal  = {Neural Computation},
+  month    = mar,
+  number   = {1},
+  pages    = {79--87},
+  title    = {Adaptive {{Mixtures}} of {{Local Experts}}},
+  url      = {https://ieeexplore.ieee.org/document/6797059},
+  volume   = {3},
+  year     = {1991}
+}
+@misc{jangCategoricalReparameterizationGumbelSoftmax2017,
+  abstract      = {Categorical variables are a natural choice for representing discrete structure in the world. However, stochastic neural networks rarely use categorical latent variables due to the inability to backpropagate through samples. In this work, we present an efficient gradient estimator that replaces the non-differentiable sample from a categorical distribution with a differentiable sample from a novel Gumbel-Softmax distribution. This distribution has the essential property that it can be smoothly annealed into a categorical distribution. We show that our Gumbel-Softmax estimator outperforms state-of-the-art gradient estimators on structured output prediction and unsupervised generative modeling tasks with categorical latent variables, and enables large speedups on semi-supervised classification.},
+  archiveprefix = {arxiv},
+  author        = {Jang, Eric and Gu, Shixiang and Poole, Ben},
+  doi           = {10.48550/arXiv.1611.01144},
+  eprint        = {1611.01144},
+  keywords      = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  month         = aug,
+  number        = {arXiv:1611.01144},
+  primaryclass  = {cs, stat},
+  publisher     = {{arXiv}},
+  title         = {Categorical {{Reparameterization}} with {{Gumbel-Softmax}}},
+  url           = {http://arxiv.org/abs/1611.01144},
+  year          = {2017}
+}
+@misc{jiangMixtralExperts2024,
+  abstract      = {We introduce Mixtral 8x7B, a Sparse Mixture of Experts (SMoE) language model. Mixtral has the same architecture as Mistral 7B, with the difference that each layer is composed of 8 feedforward blocks (i.e. experts). For every token, at each layer, a router network selects two experts to process the current state and combine their outputs. Even though each token only sees two experts, the selected experts can be different at each timestep. As a result, each token has access to 47B parameters, but only uses 13B active parameters during inference. Mixtral was trained with a context size of 32k tokens and it outperforms or matches Llama 2 70B and GPT-3.5 across all evaluated benchmarks. In particular, Mixtral vastly outperforms Llama 2 70B on mathematics, code generation, and multilingual benchmarks. We also provide a model finetuned to follow instructions, Mixtral 8x7B {\textendash} Instruct, that surpasses GPT-3.5 Turbo, Claude-2.1, Gemini Pro, and Llama 2 70B {\textendash} chat model on human benchmarks. Both the base and instruct models are released under the Apache 2.0 license.},
+  archiveprefix = {arxiv},
+  author        = {Jiang, Albert Q. and Sablayrolles, Alexandre and Roux, Antoine and Mensch, Arthur and Savary, Blanche and Bamford, Chris and Chaplot, Devendra Singh and de las Casas, Diego and Hanna, Emma Bou and Bressand, Florian and Lengyel, Gianna and Bour, Guillaume and Lample, Guillaume and Lavaud, L{\'e}lio Renard and Saulnier, Lucile and Lachaux, Marie-Anne and Stock, Pierre and Subramanian, Sandeep and Yang, Sophia and Antoniak, Szymon and Scao, Teven Le and Gervet, Th{\'e}ophile and Lavril, Thibaut and Wang, Thomas and Lacroix, Timoth{\'e}e and Sayed, William El},
+  eprint        = {2401.04088},
+  keywords      = {Computer Science - Computation and Language,Computer Science - Machine Learning},
+  langid        = {english},
+  month         = jan,
+  number        = {arXiv:2401.04088},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {Mixtral of {{Experts}}},
+  url           = {http://arxiv.org/abs/2401.04088},
+  year          = {2024}
+}
+
+@misc{jinDatalessKnowledgeFusion2023,
+  abstract      = {Fine-tuning pre-trained language models has become the prevalent paradigm for building downstream NLP models. Oftentimes fine-tuned models are readily available but their training data is not, due to data privacy or intellectual property concerns. This creates a barrier to fusing knowledge across individual models to yield a better single model. In this paper, we study the problem of merging individual models built on different training data sets to obtain a single model that performs well both across all data set domains and can generalize on out-of-domain data. We propose a dataless knowledge fusion method that merges models in their parameter space, guided by weights that minimize prediction differences between the merged model and the individual models. Over a battery of evaluation settings, we show that the proposed method significantly outperforms baselines such as Fisher-weighted averaging or model ensembling. Further, we find that our method is a promising alternative to multi-task learning that can preserve or sometimes improve over the individual models without access to the training data. Finally, model merging is more efficient than training a multi-task model, thus making it applicable to a wider set of scenarios.},
+  archiveprefix = {arxiv},
+  author        = {Jin, Xisen and Ren, Xiang and {Preotiuc-Pietro}, Daniel and Cheng, Pengxiang},
+  eprint        = {2212.09849},
+  keywords      = {⛔ No DOI found,Computer Science - Computation and Language,Computer Science - Machine Learning},
+  month         = apr,
+  number        = {arXiv:2212.09849},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  shorttitle    = {{{RegMean}}},
+  title         = {Dataless {{Knowledge Fusion}} by {{Merging Weights}} of {{Language Models}}},
+  url           = {http://arxiv.org/abs/2212.09849},
+  year          = {2023}
+}
+@misc{kaddourStopWastingMy2022,
+  abstract      = {Training vision or language models on large datasets can take days, if not weeks. We show that averaging the weights of the k latest checkpoints, each collected at the end of an epoch, can speed up the training progression in terms of loss and accuracy by dozens of epochs, corresponding to time savings up to {\textasciitilde}68 and {\textasciitilde}30 GPU hours when training a ResNet50 on ImageNet and RoBERTa-Base model on WikiText-103, respectively. We also provide the code and model checkpoint trajectory to reproduce the results and facilitate research on reusing historical weights for faster convergence.},
+  archiveprefix = {arxiv},
+  author        = {Kaddour, Jean},
+  eprint        = {2209.14981},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning},
+  month         = oct,
+  number        = {arXiv:2209.14981},
+  primaryclass  = {cs, stat},
+  publisher     = {{arXiv}},
+  title         = {Stop {{Wasting My Time}}! {{Saving Days}} of {{ImageNet}} and {{BERT Training}} with {{Latest Weight Averaging}}},
+  url           = {http://arxiv.org/abs/2209.14981},
+  year          = {2022}
+}
+
+@inproceedings{krause_3d_2013,
+  abstract  = {While 3D object representations are being revived in the context of multi-view object class detection and scene understanding, they have not yet attained wide-spread use in fine-grained categorization. State-of-the-art approaches achieve remarkable performance when training data is plentiful, but they are typically tied to flat, 2D representations that model objects as a collection of unconnected views, limiting their ability to generalize across viewpoints. In this paper, we therefore lift two state-of-the-art 2D object representations to 3D, on the level of both local feature appearance and location. In extensive experiments on existing and newly proposed datasets, we show our 3D object representations outperform their state-of-the-art 2D counterparts for fine-grained categorization and demonstrate their efficacy for estimating 3D geometry from images via ultra-wide baseline matching and 3D reconstruction.},
+  author    = {Krause, Jonathan and Stark, Michael and Deng, Jia and Fei-Fei, Li},
+  booktitle = {2013 {IEEE} {International} {Conference} on {Computer} {Vision} {Workshops}},
+  doi       = {10.1109/ICCVW.2013.77},
+  month     = dec,
+  pages     = {554--561},
+  title     = {{3D} {Object} {Representations} for {Fine}-{Grained} {Categorization}},
+  url       = {https://ieeexplore.ieee.org/document/6755945},
+  year      = {2013}
+}
+
+@misc{lawsonMergingDecisionTransformers2023,
+  abstract      = {Recent work has shown the promise of creating generalist, transformer-based, models for language, vision, and sequential decision-making problems. To create such models, we generally require centralized training objectives, data, and compute. It is of interest if we can more flexibly create generalist policies by merging together multiple, task-specific, individually trained policies. In this work, we take a preliminary step in this direction through merging, or averaging, subsets of Decision Transformers in parameter space trained on different MuJoCo locomotion problems, forming multi-task models without centralized training. We also demonstrate the importance of various methodological choices when merging policies, such as utilizing common pre-trained initializations, increasing model capacity, and utilizing Fisher information for weighting parameter importance. In general, we believe research in this direction could help democratize and distribute the process that forms multi-task robotics policies. Our implementation is available at https://github.com/daniellawson9999/merging-decisiontransformer.},
+  archiveprefix = {arxiv},
+  author        = {Lawson, Daniel and Qureshi, Ahmed H.},
+  eprint        = {2303.07551},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  langid        = {english},
+  month         = sep,
+  number        = {arXiv:2303.07551},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  shorttitle    = {Merging {{Decision Transformers}}},
+  title         = {Merging {{Decision Transformers}}: {{Weight Averaging}} for {{Forming Multi-Task Policies}}},
+  url           = {http://arxiv.org/abs/2303.07551},
+  year          = {2023}
+}
+
+@article{lecunGradientbasedLearningApplied1998,
+  author  = {Lecun, Yann and Bottou, Le'on and Bengio, Yoshua and Haffner, Parick},
+  doi     = {10.1109/5.726791},
+  issn    = {00189219},
+  journal = {Proceedings of the IEEE},
+  number  = {11},
+  pages   = {2278--2324},
+  title   = {Gradient-Based Learning Applied to Document Recognition},
+  url     = {http://ieeexplore.ieee.org/document/726791/},
+  volume  = {86},
+  year    = {1998}
+}
+
+@misc{liangComprehensiveSurveyTestTime2023,
+  abstract      = {Machine learning methods strive to acquire a robust model during training that can generalize well to test samples, even under distribution shifts. However, these methods often suffer from a performance drop due to unknown test distributions. Test-time adaptation (TTA), an emerging paradigm, has the potential to adapt a pre-trained model to unlabeled data during testing, before making predictions. Recent progress in this paradigm highlights the significant benefits of utilizing unlabeled data for training self-adapted models prior to inference. In this survey, we divide TTA into several distinct categories, namely, test-time (source-free) domain adaptation, test-time batch adaptation, online test-time adaptation, and test-time prior adaptation. For each category, we provide a comprehensive taxonomy of advanced algorithms, followed by a discussion of different learning scenarios. Furthermore, we analyze relevant applications of TTA and discuss open challenges and promising areas for future research. A comprehensive list of TTA methods can be found at \textbackslash url\{https://github.com/tim-learn/awesome-test-time-adaptation\}.},
+  archiveprefix = {arxiv},
+  author        = {Liang, Jian and He, Ran and Tan, Tieniu},
+  eprint        = {2303.15361},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  month         = mar,
+  number        = {arXiv:2303.15361},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {A {{Comprehensive Survey}} on {{Test-Time Adaptation}} under {{Distribution Shifts}}},
+  url           = {http://arxiv.org/abs/2303.15361},
+  year          = {2023}
+}
+@misc{liConvergentLearningDifferent2016,
+  abstract      = {Recent success in training deep neural networks have prompted active investigation into the features learned on their intermediate layers. Such research is difficult because it requires making sense of non-linear computations performed by millions of parameters, but valuable because it increases our ability to understand current models and create improved versions of them. In this paper we investigate the extent to which neural networks exhibit what we call convergent learning, which is when the representations learned by multiple nets converge to a set of features which are either individually similar between networks or where subsets of features span similar low-dimensional spaces. We propose a specific method of probing representations: training multiple networks and then comparing and contrasting their individual, learned representations at the level of neurons or groups of neurons. We begin research into this question using three techniques to approximately align different neural networks on a feature level: a bipartite matching approach that makes one-to-one assignments between neurons, a sparse prediction approach that finds one-to-many mappings, and a spectral clustering approach that finds many-to-many mappings. This initial investigation reveals a few previously unknown properties of neural networks, and we argue that future research into the question of convergent learning will yield many more. The insights described here include (1) that some features are learned reliably in multiple networks, yet other features are not consistently learned; (2) that units learn to span low-dimensional subspaces and, while these subspaces are common to multiple networks, the specific basis vectors learned are not; (3) that the representation codes show evidence of being a mix between a local code and slightly, but not fully, distributed codes across multiple units.},
+  archiveprefix = {arxiv},
+  author        = {Li, Yixuan and Yosinski, Jason and Clune, Jeff and Lipson, Hod and Hopcroft, John},
+  eprint        = {1511.07543},
+  keywords      = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing},
+  month         = feb,
+  number        = {arXiv:1511.07543},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  shorttitle    = {Convergent {{Learning}}},
+  title         = {Convergent {{Learning}}: {{Do}} Different Neural Networks Learn the Same Representations?},
+  url           = {http://arxiv.org/abs/1511.07543},
+  year          = {2016}
+}
+@misc{liDeepModelFusion2023,
+  abstract      = {Deep model fusion/merging is an emerging technique that merges the parameters or predictions of multiple deep learning models into a single one. It combines the abilities of different models to make up for the biases and errors of a single model to achieve better performance. However, deep model fusion on large-scale deep learning models (e.g., LLMs and foundation models) faces several challenges, including high computational cost, high-dimensional parameter space, interference between different heterogeneous models, etc. Although model fusion has attracted widespread attention due to its potential to solve complex real-world tasks, there is still a lack of complete and detailed survey research on this technique. Accordingly, in order to understand the model fusion method better and promote its development, we present a comprehensive survey to summarize the recent progress. Specifically, we categorize existing deep model fusion methods as four-fold: (1) "Mode connectivity", which connects the solutions in weight space via a path of non-increasing loss, in order to obtain better initialization for model fusion; (2) "Alignment" matches units between neural networks to create better conditions for fusion; (3) "Weight average", a classical model fusion method, averages the weights of multiple models to obtain more accurate results closer to the optimal solution; (4) "Ensemble learning" combines the outputs of diverse models, which is a foundational technique for improving the accuracy and robustness of the final model. In addition, we analyze the challenges faced by deep model fusion and propose possible research directions for model fusion in the future. Our review is helpful in deeply understanding the correlation between different model fusion methods and practical application methods, which can enlighten the research in the field of deep model fusion.},
+  archiveprefix = {arxiv},
+  author        = {Li, Weishi and Peng, Yong and Zhang, Miao and Ding, Liang and Hu, Han and Shen, Li},
+  doi           = {10.48550/arXiv.2309.15698},
+  eprint        = {2309.15698},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Favorite},
+  month         = sep,
+  number        = {arXiv:2309.15698},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  shorttitle    = {Deep {{Model Fusion}}},
+  title         = {Deep {{Model Fusion}}: {{A Survey}}},
+  url           = {http://arxiv.org/abs/2309.15698},
+  year          = {2023}
+}
+@inproceedings{liuDeepNeuralNetwork2022a,
+  abstract  = {Model fusion without accessing training data in machine learning has attracted increasing interest due to the practical resource-saving and data privacy issues. During the training process, the neural weights of each model can be randomly permuted, and we have to align the channels of each layer before fusing them. Regrading the channels as nodes and weights as edges, aligning the channels to maximize weight similarity is a challenging NP-hard assignment problem. Due to its quadratic assignment nature, we formulate the model fusion problem as a graph matching task, considering the second-order similarity of model weights instead of previous work merely formulating model fusion as a linear assignment problem. For the rising problem scale and multi-model consistency issues, we propose an efficient graduated assignment-based model fusion method, dubbed GAMF, which iteratively updates the matchings in a consistency-maintaining manner. We apply GAMF to tackle the compact model ensemble task and federated learning task on MNIST, CIFAR-10, CIFAR-100, and Tiny-Imagenet. The performance shows the efficacy of our GAMF compared to state-of-the-art baselines.},
+  author    = {Liu, Chang and Lou, Chenfei and Wang, Runzhong and Xi, Alan Yuhan and Shen, Li and Yan, Junchi},
+  booktitle = {Proceedings of the 39th {{International Conference}} on {{Machine Learning}}},
+  issn      = {2640-3498},
+  langid    = {english},
+  month     = jun,
+  pages     = {13857--13869},
+  publisher = {{PMLR}},
+  title     = {Deep {{Neural Network Fusion}} via {{Graph Matching}} with {{Applications}} to {{Model Ensemble}} and {{Federated Learning}}},
+  url       = {https://proceedings.mlr.press/v162/liu22k.html},
+  year      = {2022}
+}
+@book{luceIndividualChoiceBehavior1959,
+  abstract  = {This research monograph is devoted to a theoretical (mathematical) analysis of one of the major themes of interest to psychologists: choice. The analysis begins by stating a general axiom that may hold among the probabilities of choice from related sets of alternatives. This is shown to imply the existence of a ratio scale that is then used to analyze a number of traditional problems. The 1st subject treated is psychophysics, and covers areas involving time- and space-order effects, Fechner's equal jnd problem, power law in psychophysics and its relation to discrimination data, psychophysical interaction between 2 independent physical variables and possible correlates with Stevens' distinction between prothetic and metathetic continua, Thurston's low of comparative judgment, signal detectability theory, and ranking of stimuli. The next major theme studied is utility theory. Unusual results are obtained which suggest an experiment to test the theory. Topics in learning are analyzed in a concluding chapter which uses the stochastic theories of learning as the basic approach, with the exception that distributions of response strengths are assumed to be transformed rather than response probabilities. 3 classes of learning operators emerge, both linear and nonlinear. (PsycINFO Database Record (c) 2016 APA, all rights reserved)},
+  address   = {{Oxford, England}},
+  author    = {Luce, R. Duncan},
+  pages     = {xii, 153},
+  publisher = {{John Wiley}},
+  series    = {Individual Choice Behavior},
+  title     = {Individual Choice Behavior},
+  year      = {1959}
+}
+@article{maddison2014sampling,
+  author  = {Maddison, Chris J and Tarlow, Daniel and Minka, Tom},
+  journal = {Advances in neural information processing systems},
+  title   = {A* sampling},
+  volume  = {27},
+  year    = {2014}
+}
+@misc{maddisonConcreteDistributionContinuous2017,
+  abstract      = {The reparameterization trick enables optimizing large scale stochastic computation graphs via gradient descent. The essence of the trick is to refactor each stochastic node into a differentiable function of its parameters and a random variable with fixed distribution. After refactoring, the gradients of the loss propagated by the chain rule through the graph are low variance unbiased estimators of the gradients of the expected loss. While many continuous random variables have such reparameterizations, discrete random variables lack useful reparameterizations due to the discontinuous nature of discrete states. In this work we introduce Concrete random variables---continuous relaxations of discrete random variables. The Concrete distribution is a new family of distributions with closed form densities and a simple reparameterization. Whenever a discrete stochastic node of a computation graph can be refactored into a one-hot bit representation that is treated continuously, Concrete stochastic nodes can be used with automatic differentiation to produce low-variance biased gradients of objectives (including objectives that depend on the log-probability of latent stochastic nodes) on the corresponding discrete graph. We demonstrate the effectiveness of Concrete relaxations on density estimation and structured prediction tasks using neural networks.},
+  archiveprefix = {arxiv},
+  author        = {Maddison, Chris J. and Mnih, Andriy and Teh, Yee Whye},
+  doi           = {10.48550/arXiv.1611.00712},
+  eprint        = {1611.00712},
+  keywords      = {Computer Science - Machine Learning,Important,Statistics - Machine Learning},
+  month         = mar,
+  number        = {arXiv:1611.00712},
+  primaryclass  = {cs, stat},
+  publisher     = {{arXiv}},
+  shorttitle    = {The {{Concrete Distribution}}},
+  title         = {The {{Concrete Distribution}}: {{A Continuous Relaxation}} of {{Discrete Random Variables}}},
+  url           = {http://arxiv.org/abs/1611.00712},
+  year          = {2017}
+}
+@misc{matenaMergingModelsFisherWeighted2022,
+  abstract      = {Averaging the parameters of models that have the same architecture and initialization can provide a means of combining their respective capabilities. In this paper, we take the perspective that this "merging" operation can be seen as choosing parameters that approximately maximize the joint likelihood of the posteriors of the models' parameters. Computing a simple average of the models' parameters therefore corresponds to making an isotropic Gaussian approximation to their posteriors. We develop an alternative merging procedure based on the Laplace approximation where we approximate each model's posterior as a Gaussian distribution whose precision matrix corresponds to its Fisher information. We first show that our "Fisher merging" technique provides a performance boost in settings where simple parameter averaging is currently used -- specifically, robust fine-tuning and model ensembling. Then, we compare merging to standard gradient-based transfer learning and demonstrate that merging enables a fundamentally different method for transferring capabilities across models. Specifically, we show that Fisher merging is competitive with gradient-based transfer learning approaches (while being significantly cheaper) in intermediate-task training and domain-adaptive pre-training. We also show that our merging procedure makes it possible to combine models in previously unexplored ways. We release our code to facilitate future research into methods for merging models.},
+  archiveprefix = {arxiv},
+  author        = {Matena, Michael and Raffel, Colin},
+  eprint        = {2111.09832},
+  keywords      = {Computer Science - Machine Learning},
+  month         = aug,
+  number        = {arXiv:2111.09832},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {Merging {{Models}} with {{Fisher-Weighted Averaging}}},
+  url           = {http://arxiv.org/abs/2111.09832},
+  year          = {2022}
+}
+
+@misc{mounsavengBagTricksFully2023,
+  abstract      = {Fully Test-Time Adaptation (TTA), which aims at adapting models to data drifts, has recently attracted wide interest. Numerous tricks and techniques have been proposed to ensure robust learning on arbitrary streams of unlabeled data. However, assessing the true impact of each individual technique and obtaining a fair comparison still constitutes a significant challenge. To help consolidate the community's knowledge, we present a categorization of selected orthogonal TTA techniques, including small batch normalization, stream rebalancing, reliable sample selection, and network confidence calibration. We meticulously dissect the effect of each approach on different scenarios of interest. Through our analysis, we shed light on trade-offs induced by those techniques between accuracy, the computational power required, and model complexity. We also uncover the synergy that arises when combining techniques and are able to establish new state-of-the-art results.},
+  archiveprefix = {arxiv},
+  author        = {Mounsaveng, Saypraseuth and Chiaroni, Florent and Boudiaf, Malik and Pedersoli, Marco and Ayed, Ismail Ben},
+  eprint        = {2310.02416},
+  keywords      = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Important},
+  langid        = {english},
+  month         = oct,
+  number        = {arXiv:2310.02416},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {Bag of {{Tricks}} for {{Fully Test-Time Adaptation}}},
+  url           = {http://arxiv.org/abs/2310.02416},
+  year          = {2023}
+}
+@inproceedings{MTL_densePrediction_xu_ICCV23,
+  author    = {Xu, Yangyang and Yang, Yibo and Zhang, Lefei},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages     = {21550-21559},
+  title     = {Multi-Task Learning with Knowledge Distillation for Dense Prediction},
+  year      = {2023}
+}
+
+@inproceedings{nagarajanUniformConvergenceMay2019,
+  author    = {Nagarajan, Vaishnavh and Kolter, J. Zico},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  publisher = {{Curran Associates, Inc.}},
+  title     = {Uniform Convergence May Be Unable to Explain Generalization in Deep Learning},
+  volume    = {32},
+  year      = {2019}
+}
+
+@article{netzer_reading_2021,
+  abstract = {Detecting and reading text from natural images is a hard computer vision task that is central to a variety of emerging applications. Related problems like document character recognition have been widely studied by computer vision and machine learning researchers and are virtually solved for practical applications like reading handwritten digits. Reliably recognizing characters in more complex scenes like photographs, however, is far more difﬁcult: the best existing methods lag well behind human performance on the same tasks. In this paper we attack the problem of recognizing digits in a real application using unsupervised feature learning methods: reading house numbers from street level photos. To this end, we introduce a new benchmark dataset for research use containing over 600,000 labeled digits cropped from Street View images. We then demonstrate the difﬁculty of recognizing these digits when the problem is approached with hand-designed features. Finally, we employ variants of two recently proposed unsupervised feature learning methods and ﬁnd that they are convincingly superior on our benchmarks.},
+  author   = {Netzer, Yuval and Wang, Tao and Coates, Adam and Bissacco, Alessandro and Wu, Bo and Ng, Andrew Y},
+  file     = {Netzer et al. - Reading Digits in Natural Images with Unsupervised.pdf:/Users/tanganke/Documents/Zotero/storage/VYB42IQ9/Netzer et al. - Reading Digits in Natural Images with Unsupervised.pdf:application/pdf},
+  language = {en},
+  title    = {Reading {Digits} in {Natural} {Images} with {Unsupervised} {Feature} {Learning}},
+  year     = {2021}
+}
+
+
+@misc{radford_learning_2021,
+  abstract   = {State-of-the-art computer vision systems are trained to predict a ﬁxed set of predetermined object categories. This restricted form of supervision limits their generality and usability since additional labeled data is needed to specify any other visual concept. Learning directly from raw text about images is a promising alternative which leverages a much broader source of supervision. We demonstrate that the simple pre-training task of predicting which caption goes with which image is an efﬁcient and scalable way to learn SOTA image representations from scratch on a dataset of 400 million (image, text) pairs collected from the internet. After pre-training, natural language is used to reference learned visual concepts (or describe new ones) enabling zero-shot transfer of the model to downstream tasks. We study the performance of this approach by benchmarking on over 30 different existing computer vision datasets, spanning tasks such as OCR, action recognition in videos, geo-localization, and many types of ﬁne-grained object classiﬁcation. The model transfers non-trivially to most tasks and is often competitive with a fully supervised baseline without the need for any dataset speciﬁc training. For instance, we match the accuracy of the original ResNet-50 on ImageNet zero-shot without needing to use any of the 1.28 million training examples it was trained on. We release our code and pre-trained model weights at https://github.com/OpenAI/CLIP.},
+  author     = {Radford, Alec and Kim, Jong Wook and Hallacy, Chris and Ramesh, Aditya and Goh, Gabriel and Agarwal, Sandhini and Sastry, Girish and Askell, Amanda and Mishkin, Pamela and Clark, Jack and Krueger, Gretchen and Sutskever, Ilya},
+  keywords   = {Computer Science - Machine Learning, Computer Science - Computer Vision and Pattern Recognition, CLIP, favorite},
+  language   = {en},
+  month      = feb,
+  note       = {arXiv:2103.00020 [cs]},
+  publisher  = {arXiv},
+  shorttitle = {{CLIP}},
+  title      = {Learning {Transferable} {Visual} {Models} {From} {Natural} {Language} {Supervision}},
+  url        = {http://arxiv.org/abs/2103.00020},
+  year       = {2021}
+}
+@article{radfordLanguageModelsAre2019,
+  abstract = {Natural language processing tasks, such as question answering, machine translation, reading comprehension, and summarization, are typically approached with supervised learning on taskspecific datasets. We demonstrate that language models begin to learn these tasks without any explicit supervision when trained on a new dataset of millions of webpages called WebText. When conditioned on a document plus questions, the answers generated by the language model reach 55 F1 on the CoQA dataset - matching or exceeding the performance of 3 out of 4 baseline systems without using the 127,000+ training examples. The capacity of the language model is essential to the success of zero-shot task transfer and increasing it improves performance in a log-linear fashion across tasks. Our largest model, GPT-2, is a 1.5B parameter Transformer that achieves state of the art results on 7 out of 8 tested language modeling datasets in a zero-shot setting but still underfits WebText. Samples from the model reflect these improvements and contain coherent paragraphs of text. These findings suggest a promising path towards building language processing systems which learn to perform tasks from their naturally occurring demonstrations.},
+  author   = {Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya},
+  keywords = {⛔ No DOI found,GPT,GPT-2},
+  langid   = {english},
+  pages    = {9},
+  title    = {Language {{Models}} Are {{Unsupervised Multitask Learners}}},
+  volume   = {1},
+  year     = {2019}
+}
+@misc{radfordLearningTransferableVisual2021,
+  abstract      = {State-of-the-art computer vision systems are trained to predict a fixed set of predetermined object categories. This restricted form of supervision limits their generality and usability since additional labeled data is needed to specify any other visual concept. Learning directly from raw text about images is a promising alternative which leverages a much broader source of supervision. We demonstrate that the simple pre-training task of predicting which caption goes with which image is an efficient and scalable way to learn SOTA image representations from scratch on a dataset of 400 million (image, text) pairs collected from the internet. After pre-training, natural language is used to reference learned visual concepts (or describe new ones) enabling zero-shot transfer of the model to downstream tasks. We study the performance of this approach by benchmarking on over 30 different existing computer vision datasets, spanning tasks such as OCR, action recognition in videos, geo-localization, and many types of fine-grained object classification. The model transfers non-trivially to most tasks and is often competitive with a fully supervised baseline without the need for any dataset specific training. For instance, we match the accuracy of the original ResNet-50 on ImageNet zero-shot without needing to use any of the 1.28 million training examples it was trained on. We release our code and pre-trained model weights at https://github.com/OpenAI/CLIP.},
+  archiveprefix = {arxiv},
+  author        = {Radford, Alec and Kim, Jong Wook and Hallacy, Chris and Ramesh, Aditya and Goh, Gabriel and Agarwal, Sandhini and Sastry, Girish and Askell, Amanda and Mishkin, Pamela and Clark, Jack and Krueger, Gretchen and Sutskever, Ilya},
+  eprint        = {2103.00020},
+  keywords      = {CLIP,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Favorite},
+  langid        = {english},
+  month         = feb,
+  number        = {arXiv:2103.00020},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  shorttitle    = {{{CLIP}}},
+  title         = {Learning {{Transferable Visual Models From Natural Language Supervision}}},
+  url           = {http://arxiv.org/abs/2103.00020},
+  year          = {2021}
+}
+@article{stallkamp_man_2012,
+  abstract   = {Traffic signs are characterized by a wide variability in their visual appearance in real-world environments. For example, changes of illumination, varying weather conditions and partial occlusions impact the perception of road signs. In practice, a large number of different sign classes needs to be recognized with very high accuracy. Traffic signs have been designed to be easily readable for humans, who perform very well at this task. For computer systems, however, classifying traffic signs still seems to pose a challenging pattern recognition problem. Both image processing and machine learning algorithms are continuously refined to improve on this task. But little systematic comparison of such systems exist. What is the status quo? Do today’s algorithms reach human performance? For assessing the performance of state-of-the-art machine learning algorithms, we present a publicly available traffic sign dataset with more than 50,000 images of German road signs in 43 classes. The data was considered in the second stage of the German Traffic Sign Recognition Benchmark held at IJCNN 2011. The results of this competition are reported and the best-performing algorithms are briefly described. Convolutional neural networks (CNNs) showed particularly high classification accuracies in the competition. We measured the performance of human subjects on the same data—and the CNNs outperformed the human test persons.},
+  author     = {Stallkamp, J. and Schlipsing, M. and Salmen, J. and Igel, C.},
+  doi        = {10.1016/j.neunet.2012.02.016},
+  issn       = {0893-6080},
+  journal    = {Neural Networks},
+  keywords   = {Benchmarking, Convolutional neural networks, Machine learning, Traffic sign recognition},
+  month      = aug,
+  pages      = {323--332},
+  series     = {Selected {Papers} from {IJCNN} 2011},
+  shorttitle = {Man vs. computer},
+  title      = {Man vs. computer: {Benchmarking} machine learning algorithms for traffic sign recognition},
+  url        = {https://www.sciencedirect.com/science/article/pii/S0893608012000457},
+  volume     = {32},
+  year       = {2012}
+}
+@misc{fedusReviewSparseExpert2022,
+  abstract      = {Sparse expert models are a thirty-year old concept re-emerging as a popular architecture in deep learning. This class of architecture encompasses Mixture-of-Experts, Switch Transformers, Routing Networks, BASE layers, and others, all with the unifying idea that each example is acted on by a subset of the parameters. By doing so, the degree of sparsity decouples the parameter count from the compute per example allowing for extremely large, but efficient models. The resulting models have demonstrated significant improvements across diverse domains such as natural language processing, computer vision, and speech recognition. We review the concept of sparse expert models, provide a basic description of the common algorithms, contextualize the advances in the deep learning era, and conclude by highlighting areas for future work.},
+  archiveprefix = {arxiv},
+  author        = {Fedus, William and Dean, Jeff and Zoph, Barret},
+  doi           = {10.48550/arXiv.2209.01667},
+  eprint        = {2209.01667},
+  keywords      = {Computer Science - Computation and Language,Computer Science - Machine Learning},
+  month         = sep,
+  number        = {arXiv:2209.01667},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {A {{Review}} of {{Sparse Expert Models}} in {{Deep Learning}}},
+  url           = {http://arxiv.org/abs/2209.01667},
+  year          = {2022}
+}
+
+@inproceedings{lewisBASELayersSimplifying2021,
+  abstract   = {We introduce a new balanced assignment of experts (BASE) layer for large language models that greatly simplifies existing high capacity sparse layers. Sparse layers can dramatically improve the efficiency of training and inference by routing each token to specialized expert modules that contain only a small fraction of the model parameters. However, it can be difficult to learn balanced routing functions that make full use of the available experts; existing approaches typically use routing heuristics or auxiliary expert-balancing loss functions. In contrast, we formulate token-to-expert allocation as a linear assignment problem, allowing an optimal assignment in which each expert receives an equal number of tokens. This optimal assignment scheme improves efficiency by guaranteeing balanced compute loads, and also simplifies training by not requiring any new hyperparameters or auxiliary losses. Code is publicly released.},
+  author     = {Lewis, Mike and Bhosale, Shruti and Dettmers, Tim and Goyal, Naman and Zettlemoyer, Luke},
+  booktitle  = {Proceedings of the 38th {{International Conference}} on {{Machine Learning}}},
+  issn       = {2640-3498},
+  langid     = {english},
+  month      = jul,
+  pages      = {6265--6274},
+  publisher  = {{PMLR}},
+  shorttitle = {{{BASE Layers}}},
+  title      = {{{BASE Layers}}: {{Simplifying Training}} of {{Large}}, {{Sparse Models}}},
+  url        = {https://proceedings.mlr.press/v139/lewis21a.html},
+  year       = {2021}
+}
+
+@misc{zhouMixtureofExpertsExpertChoice2022,
+  abstract      = {Sparsely-activated Mixture-of-experts (MoE) models allow the number of parameters to greatly increase while keeping the amount of computation for a given token or a given sample unchanged. However, a poor expert routing strategy (e.g. one resulting in load imbalance) can cause certain experts to be under-trained, leading to an expert being under or over-specialized. Prior work allocates a fixed number of experts to each token using a top-k function regardless of the relative importance of different tokens. To address this, we propose a heterogeneous mixture-of-experts employing an expert choice method. Instead of letting tokens select the top-k experts, we have experts selecting the top-k tokens. As a result, each token can be routed to a variable number of experts and each expert can have a fixed bucket size. We systematically study pre-training speedups using the same computational resources of the Switch Transformer top-1 and GShard top-2 gating of prior work and find that our method improves training convergence time by more than 2x. For the same computational cost, our method demonstrates higher performance in fine-tuning 11 selected tasks in the GLUE and SuperGLUE benchmarks. For a smaller activation cost, our method outperforms the T5 dense model in 7 out of the 11 tasks.},
+  archiveprefix = {arxiv},
+  author        = {Zhou, Yanqi and Lei, Tao and Liu, Hanxiao and Du, Nan and Huang, Yanping and Zhao, Vincent and Dai, Andrew and Chen, Zhifeng and Le, Quoc and Laudon, James},
+  doi           = {10.48550/arXiv.2202.09368},
+  eprint        = {2202.09368},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  month         = oct,
+  number        = {arXiv:2202.09368},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {Mixture-of-{{Experts}} with {{Expert Choice Routing}}},
+  url           = {http://arxiv.org/abs/2202.09368},
+  year          = {2022}
+}
+
+
+@misc{grossHardMixturesExperts2017,
+  abstract      = {Training convolutional networks (CNN's) that fit on a single GPU with minibatch stochastic gradient descent has become effective in practice. However, there is still no effective method for training large CNN's that do not fit in the memory of a few GPU cards, or for parallelizing CNN training. In this work we show that a simple hard mixture of experts model can be efficiently trained to good effect on large scale hashtag (multilabel) prediction tasks. Mixture of experts models are not new (Jacobs et. al. 1991, Collobert et. al. 2003), but in the past, researchers have had to devise sophisticated methods to deal with data fragmentation. We show empirically that modern weakly supervised data sets are large enough to support naive partitioning schemes where each data point is assigned to a single expert. Because the experts are independent, training them in parallel is easy, and evaluation is cheap for the size of the model. Furthermore, we show that we can use a single decoding layer for all the experts, allowing a unified feature embedding space. We demonstrate that it is feasible (and in fact relatively painless) to train far larger models than could be practically trained with standard CNN architectures, and that the extra capacity can be well used on current datasets.},
+  archiveprefix = {arxiv},
+  author        = {Gross, Sam and Ranzato, Marc'Aurelio and Szlam, Arthur},
+  doi           = {10.48550/arXiv.1704.06363},
+  eprint        = {1704.06363},
+  keywords      = {Computer Science - Computer Vision and Pattern Recognition,Statistics - Machine Learning},
+  month         = apr,
+  number        = {arXiv:1704.06363},
+  primaryclass  = {cs, stat},
+  publisher     = {{arXiv}},
+  title         = {Hard {{Mixtures}} of {{Experts}} for {{Large Scale Weakly Supervised Vision}}},
+  url           = {http://arxiv.org/abs/1704.06363},
+  year          = {2017}
+}
+
+@misc{fedusSwitchTransformersScaling2022,
+  abstract      = {In deep learning, models typically reuse the same parameters for all inputs. Mixture of Experts (MoE) defies this and instead selects different parameters for each incoming example. The result is a sparsely-activated model -- with outrageous numbers of parameters -- but a constant computational cost. However, despite several notable successes of MoE, widespread adoption has been hindered by complexity, communication costs and training instability -- we address these with the Switch Transformer. We simplify the MoE routing algorithm and design intuitive improved models with reduced communication and computational costs. Our proposed training techniques help wrangle the instabilities and we show large sparse models may be trained, for the first time, with lower precision (bfloat16) formats. We design models based off T5-Base and T5-Large to obtain up to 7x increases in pre-training speed with the same computational resources. These improvements extend into multilingual settings where we measure gains over the mT5-Base version across all 101 languages. Finally, we advance the current scale of language models by pre-training up to trillion parameter models on the "Colossal Clean Crawled Corpus" and achieve a 4x speedup over the T5-XXL model.},
+  archiveprefix = {arxiv},
+  author        = {Fedus, William and Zoph, Barret and Shazeer, Noam},
+  doi           = {10.48550/arXiv.2101.03961},
+  eprint        = {2101.03961},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  month         = jun,
+  number        = {arXiv:2101.03961},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  shorttitle    = {Switch {{Transformers}}},
+  title         = {Switch {{Transformers}}: {{Scaling}} to {{Trillion Parameter Models}} with {{Simple}} and {{Efficient Sparsity}}},
+  url           = {http://arxiv.org/abs/2101.03961},
+  year          = {2022}
+}
+
+@misc{tangConcreteSubspaceLearning2023,
+  abstract      = {Merging models fine-tuned from a common, extensively pre-trained large model but specialized for different tasks has been demonstrated as a cheap and scalable strategy to construct a multi-task model that performs well across diverse tasks. Recent research, exemplified by task arithmetic, highlights that this multi-task model can be derived through arithmetic operations on task vectors. Nevertheless, current merging techniques frequently resolve potential conflicts among parameters from task-specific models by evaluating individual attributes, such as the parameters' magnitude or sign, overlooking their collective impact on the overall functionality of the model. In this work, we propose the CONtinuous relaxation of disCRETE (Concrete) subspace learning method to identify a common low-dimensional subspace and utilize its shared information to track the interference problem without sacrificing much performance. Specifically, we model the problem as a bi-level optimization problem and introduce a meta-learning framework to find the Concrete subspace mask through gradient-based techniques. At the upper level, we focus on learning a shared Concrete mask to identify the subspace, while at the inner level, model merging is performed to maximize the performance of the merged model. We conduct extensive experiments on both vision domain and language domain, and the results demonstrate the effectiveness of our method. The code is available at https://github.com/tanganke/subspace\_fusion},
+  archiveprefix = {arxiv},
+  author        = {Tang, Anke and Shen, Li and Luo, Yong and Ding, Liang and Hu, Han and Du, Bo and Tao, Dacheng},
+  copyright     = {All rights reserved},
+  eprint        = {2312.06173},
+  keywords      = {Computer Science - Machine Learning},
+  month         = dec,
+  number        = {arXiv:2312.06173},
+  publisher     = {{arXiv}},
+  title         = {Concrete {{Subspace Learning}} Based {{Interference Elimination}} for {{Multi-task Model Fusion}}},
+  url           = {http://arxiv.org/abs/2312.06173},
+  year          = {2023}
+}
+
+@inproceedings{tangImprovingHeterogeneousModel2023a,
+  abstract  = {Electronic proceedings of IJCAI 2023},
+  author    = {Tang, Anke and Luo, Yong and Hu, Han and He, Fengxiang and Su, Kehua and Du, Bo and Chen, Yixin and Tao, Dacheng},
+  booktitle = {Thirty-{{Second International Joint Conference}} on {{Artificial Intelligence}}},
+  copyright = {All rights reserved},
+  doi       = {10.24963/ijcai.2023/472},
+  issn      = {1045-0823},
+  langid    = {english},
+  month     = aug,
+  pages     = {4244--4252},
+  title     = {Improving {{Heterogeneous Model Reuse}} by {{Density Estimation}}},
+  url       = {https://www.ijcai.org/proceedings/2023/472},
+  volume    = {4},
+  year      = {2023}
+}
+@misc{tangParameterEfficientMultitask2023,
+  abstract      = {Large pre-trained models have enabled significant advances in machine learning and served as foundation components. Model fusion methods, such as task arithmetic, have been proven to be powerful and scalable to incorporate fine-tuned weights from different tasks into a multi-task model. However, efficiently fine-tuning large pre-trained models on multiple downstream tasks remains challenging, leading to inefficient multi-task model fusion. In this work, we propose a novel method to improve multi-task fusion for parameter-efficient fine-tuning techniques like LoRA fine-tuning. Specifically, our approach partially linearizes only the adapter modules and applies task arithmetic over the linearized adapters. This allows us to leverage the the advantages of model fusion over linearized fine-tuning, while still performing fine-tuning and inference efficiently. We demonstrate that our partial linearization technique enables a more effective fusion of multiple tasks into a single model, outperforming standard adapter tuning and task arithmetic alone. Experimental results demonstrate the capabilities of our proposed partial linearization technique to effectively construct unified multi-task models via the fusion of fine-tuned task vectors. We evaluate performance over an increasing number of tasks and find that our approach outperforms standard parameter-efficient fine-tuning techniques. The results highlight the benefits of partial linearization for scalable and efficient multi-task model fusion.},
+  archiveprefix = {arxiv},
+  author        = {Tang, Anke and Shen, Li and Luo, Yong and Zhan, Yibing and Hu, Han and Du, Bo and Chen, Yixin and Tao, Dacheng},
+  copyright     = {All rights reserved},
+  doi           = {10.48550/arXiv.2310.04742},
+  eprint        = {2310.04742},
+  keywords      = {Computer Science - Machine Learning},
+  month         = oct,
+  number        = {arXiv:2310.04742},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {Parameter {{Efficient Multi-task Model Fusion}} with {{Partial Linearization}}},
+  url           = {http://arxiv.org/abs/2310.04742},
+  year          = {2023}
+}
+@inproceedings{tatroOptimizingModeConnectivity2020,
+  abstract  = {The loss landscapes of deep neural networks are not well understood due to their high nonconvexity. Empirically, the local minima of these loss functions can be connected by a learned curve in model space, along which the loss remains nearly constant; a feature known as mode connectivity. Yet, current curve finding algorithms do not consider the influence of symmetry in the loss surface created by model weight permutations. We propose a more general framework to investigate the effect of symmetry on landscape connectivity by accounting for the weight permutations of the networks being connected. To approximate the optimal permutation, we introduce an inexpensive heuristic referred to as neuron alignment. Neuron alignment promotes similarity between the distribution of intermediate activations of a model along the curve with that of the endpoint models. We provide theoretical analysis establishing the benefit of alignment to mode connectivity based on this simple heuristic. We empirically verify that the permutation given by alignment is locally optimal via a proximal alternating minimization scheme. Empirically, optimizing the weight permutation is critical for efficiently learning a simple, planar, low-loss curve between networks that successfully generalizes. Our alignment method can significantly alleviate the recently identified robust loss barrier on the path connecting two adversarial robust models and find more robust and accurate models on the path.},
+  author    = {Tatro, Norman and Chen, Pin-Yu and Das, Payel and Melnyk, Igor and Sattigeri, Prasanna and Lai, Rongjie},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  pages     = {15300--15311},
+  publisher = {{Curran Associates, Inc.}},
+  title     = {Optimizing {{Mode Connectivity}} via {{Neuron Alignment}}},
+  volume    = {33},
+  year      = {2020}
+}
+
+@inproceedings{wangGLUEMultiTaskBenchmark2018,
+  abstract   = {For natural language understanding (NLU) technology to be maximally useful, it must be able to process language in a way that is not exclusive to a single task, genre, or dataset. In pursuit of this objective, we introduce the General Language Understanding Evaluation (GLUE) benchmark, a collection of tools for evaluating the performance of models across a diverse set of existing NLU tasks. By including tasks with limited training data, GLUE is designed to favor and encourage models that share general linguistic knowledge across tasks. GLUE also includes a hand-crafted diagnostic test suite that enables detailed linguistic analysis of models. We evaluate baselines based on current methods for transfer and representation learning and find that multi-task training on all tasks performs better than training a separate model per task. However, the low absolute performance of our best model indicates the need for improved general NLU systems.},
+  address    = {{Brussels, Belgium}},
+  author     = {Wang, Alex and Singh, Amanpreet and Michael, Julian and Hill, Felix and Levy, Omer and Bowman, Samuel},
+  booktitle  = {Proceedings of the 2018 {{EMNLP Workshop BlackboxNLP}}: {{Analyzing}} and {{Interpreting Neural Networks}} for {{NLP}}},
+  doi        = {10.18653/v1/W18-5446},
+  langid     = {english},
+  pages      = {353--355},
+  publisher  = {{Association for Computational Linguistics}},
+  shorttitle = {{{GLUE}}},
+  title      = {{{GLUE}}: {{A Multi-Task Benchmark}} and {{Analysis Platform}} for {{Natural Language Understanding}}},
+  url        = {http://aclweb.org/anthology/W18-5446},
+  year       = {2018}
+}
+
+@misc{wortsmanModelSoupsAveraging2022,
+  abstract      = {The conventional recipe for maximizing model accuracy is to (1) train multiple models with various hyperparameters and (2) pick the individual model which performs best on a held-out validation set, discarding the remainder. In this paper, we revisit the second step of this procedure in the context of fine-tuning large pre-trained models, where fine-tuned models often appear to lie in a single low error basin. We show that averaging the weights of multiple models fine-tuned with different hyperparameter configurations often improves accuracy and robustness. Unlike a conventional ensemble, we may average many models without incurring any additional inference or memory costs -- we call the results "model soups." When fine-tuning large pre-trained models such as CLIP, ALIGN, and a ViT-G pre-trained on JFT, our soup recipe provides significant improvements over the best model in a hyperparameter sweep on ImageNet. The resulting ViT-G model, which attains 90.94\% top-1 accuracy on ImageNet, achieved a new state of the art. Furthermore, we show that the model soup approach extends to multiple image classification and natural language processing tasks, improves out-of-distribution performance, and improves zero-shot performance on new downstream tasks. Finally, we analytically relate the performance similarity of weight-averaging and logit-ensembling to flatness of the loss and confidence of the predictions, and validate this relation empirically. Code is available at https://github.com/mlfoundations/model-soups.},
+  archiveprefix = {arxiv},
+  author        = {Wortsman, Mitchell and Ilharco, Gabriel and Gadre, Samir Yitzhak and Roelofs, Rebecca and {Gontijo-Lopes}, Raphael and Morcos, Ari S. and Namkoong, Hongseok and Farhadi, Ali and Carmon, Yair and Kornblith, Simon and Schmidt, Ludwig},
+  eprint        = {2203.05482},
+  keywords      = {Computer Science - Computation and Language,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Favorite},
+  month         = jul,
+  number        = {arXiv:2203.05482},
+  publisher     = {{arXiv}},
+  shorttitle    = {Model Soups},
+  title         = {Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy without Increasing Inference Time},
+  url           = {http://arxiv.org/abs/2203.05482},
+  year          = {2022}
+}
+
+@article{wuHeterogeneousModelReuse2019,
+  abstract   = {Nowadays, many problems require learning a model from data owned by different participants who are restricted to share their examples due to privacy concerns, which is referred to as multiparty learning in the literature. In conventional multiparty learning, a global model is usually trained from scratch via a communication protocol, ignoring the fact that each party may already have a local model trained on her own dataset. In this paper, we define a multiparty multiclass margin to measure the global behavior of a set of heterogeneous local models, and propose a general learning method called HMR (Heterogeneous Model Reuse) to optimize the margin. Our method reuses local models to approximate a global model, even when data are non-i.i.d distributed among parties, by exchanging few examples under predefined budget. Experiments on synthetic and real-world data covering different multiparty scenarios show the effectiveness of our proposal.},
+  annotation = {rate: 0},
+  author     = {Wu, Xi Zhu and Liu, Song and Zhou, Zhi Hua},
+  isbn       = {9781510886988},
+  journal    = {36th International Conference on Machine Learning, ICML 2019},
+  keywords   = {{Margin, Multiparty learning, Model reuse}},
+  pages      = {11862--11871},
+  shorttitle = {{{HMR}}},
+  title      = {Heterogeneous Model Reuse via Optimizing Multiparty Multiclass Margin},
+  volume     = {2019-June},
+  year       = {2019}
+}
+
+@inproceedings{wuPiTuningTransferring2023,
+author = {Wu, Chengyue and Wang, Teng and Ge, Yixiao and Lu, Zeyu and Zhou, Ruisong and Shan, Ying and Luo, Ping},
+title = {{$\pi$}-Tuning: transferring multimodal foundation models with optimal multi-task interpolation},
+year = {2023},
+publisher = {JMLR.org},
+abstract = {Foundation models have achieved great advances in multi-task learning with a unified interface of unimodal and multimodal tasks. However, the potential of such multi-task learners has not been exploited during transfer learning. In this work, we present a universal parameter-efficient transfer learning method, termed Predict-Interpolate Tuning (π-Tuning), for vision, language, and vision-language tasks. It aggregates the parameters of lightweight task-specific experts learned from similar tasks to aid the target downstream task. The task similarities are predicted in a unified modality-independent space, yielding a scalable graph to demonstrate task relationships. π-Tuning has several appealing benefits. First, it flexibly explores both intra- and intermodal transferability between similar tasks to improve the accuracy and robustness of transfer learning, especially in data-scarce scenarios. Second, it offers a systematical solution for transfer learning with multi-task prediction-and-then-interpolation, compatible with diverse types of parameter-efficient experts, such as prompt and adapter. Third, an extensive study of task-level mutual benefits on 14 unimodal and 6 multimodal datasets shows that π-Tuning surpasses fine-tuning and other parameter-efficient transfer learning methods both in full-shot and low-shot regimes. The task graph also enables an in-depth interpretable analysis of task transferability across modalities. The code will be available at https://github.com/TencentARC/pi-Tuning.},
+booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+articleno = {1571},
+numpages = {15},
+location = {Honolulu, Hawaii, USA},
+series = {ICML'23}
+}
+
+@article{DBLP:journals/ijautcomp/WangCQGWWTG23,
+  author       = {Xiao Wang and
+                  Guangyao Chen and
+                  Guangwu Qian and
+                  Pengcheng Gao and
+                  Xiao{-}Yong Wei and
+                  Yaowei Wang and
+                  Yonghong Tian and
+                  Wen Gao},
+  title        = {Large-scale Multi-modal Pre-trained Models: {A} Comprehensive Survey},
+  journal      = {Mach. Intell. Res.},
+  volume       = {20},
+  number       = {4},
+  pages        = {447--482},
+  year         = {2023},
+  url          = {https://doi.org/10.1007/s11633-022-1410-8},
+  doi          = {10.1007/S11633-022-1410-8},
+  timestamp    = {Tue, 31 Oct 2023 15:43:38 +0100},
+  biburl       = {https://dblp.org/rec/journals/ijautcomp/WangCQGWWTG23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:journals/ijautcomp/CaoLHS24,
+  author       = {Boxi Cao and
+                  Hongyu Lin and
+                  Xianpei Han and
+                  Le Sun},
+  title        = {The Life Cycle of Knowledge in Big Language Models: {A} Survey},
+  journal      = {Mach. Intell. Res.},
+  volume       = {21},
+  number       = {2},
+  pages        = {217--238},
+  year         = {2024},
+  url          = {https://doi.org/10.1007/s11633-023-1416-x},
+  doi          = {10.1007/S11633-023-1416-X},
+  timestamp    = {Mon, 01 Apr 2024 11:15:19 +0200},
+  biburl       = {https://dblp.org/rec/journals/ijautcomp/CaoLHS24.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:journals/ijautcomp/LinGGZZL23,
+  author       = {Yi{-}Ming Lin and
+                  Yuan Gao and
+                  Maoguo Gong and
+                  Sijia Zhang and
+                  Yuan{-}Qiao Zhang and
+                  Zhi{-}Yuan Li},
+  title        = {Federated Learning on Multimodal Data: {A} Comprehensive Survey},
+  journal      = {Mach. Intell. Res.},
+  volume       = {20},
+  number       = {4},
+  pages        = {539--553},
+  year         = {2023},
+  url          = {https://doi.org/10.1007/s11633-022-1398-0},
+  doi          = {10.1007/S11633-022-1398-0},
+  timestamp    = {Sat, 05 Aug 2023 00:02:22 +0200},
+  biburl       = {https://dblp.org/rec/journals/ijautcomp/LinGGZZL23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{yeTaskExpertDynamicallyAssembling2023,
+  title = {{{TaskExpert}}: {{Dynamically Assembling Multi-Task Representations}} with {{Memorial Mixture-of-Experts}}},
+  shorttitle = {{{TaskExpert}}},
+  author = {Ye, Hanrong and Xu, Dan},
+  year = {2023},
+  month = jul,
+  number = {arXiv:2307.15324},
+  eprint = {2307.15324},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2307.15324},
+  url = {http://arxiv.org/abs/2307.15324},
+  abstract = {Learning discriminative task-specific features simultaneously for multiple distinct tasks is a fundamental problem in multi-task learning. Recent state-of-the-art models consider directly decoding task-specific features from one shared task-generic feature (e.g., feature from a backbone layer), and utilize carefully designed decoders to produce multi-task features. However, as the input feature is fully shared and each task decoder also shares decoding parameters for different input samples, it leads to a static feature decoding process, producing less discriminative task-specific representations. To tackle this limitation, we propose TaskExpert, a novel multi-task mixture-of-experts model that enables learning multiple representative task-generic feature spaces and decoding task-specific features in a dynamic manner. Specifically, TaskExpert introduces a set of expert networks to decompose the backbone feature into several representative task-generic features. Then, the task-specific features are decoded by using dynamic task-specific gating networks operating on the decomposed task-generic features. Furthermore, to establish long-range modeling of the task-specific representations from different layers of TaskExpert, we design a multi-task feature memory that updates at each layer and acts as an additional feature expert for dynamic task-specific feature decoding. Extensive experiments demonstrate that our TaskExpert clearly outperforms previous best-performing methods on all 9 metrics of two competitive multi-task learning benchmarks for visual scene understanding (i.e., PASCAL-Context and NYUD-v2). Codes and models will be made publicly available at https://github.com/prismformore/Multi-Task-Transformer},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition}
+}
+
+
+@inproceedings{xiao_sun_2010,
+  abstract   = {Scene categorization is a fundamental problem in computer vision. However, scene understanding research has been constrained by the limited scope of currently-used databases which do not capture the full variety of scene categories. Whereas standard databases for object categorization contain hundreds of different classes of objects, the largest available dataset of scene categories contains only 15 classes. In this paper we propose the extensive Scene UNderstanding (SUN) database that contains 899 categories and 130,519 images. We use 397 well-sampled categories to evaluate numerous state-of-the-art algorithms for scene recognition and establish new bounds of performance. We measure human scene classiﬁcation performance on the SUN database and compare this with computational methods. Additionally, we study a ﬁner-grained scene representation to detect scenes embedded inside of larger scenes.},
+  address    = {San Francisco, CA, USA},
+  author     = {Xiao, Jianxiong and Hays, James and Ehinger, Krista A. and Oliva, Aude and Torralba, Antonio},
+  booktitle  = {2010 {IEEE} {Computer} {Society} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+  doi        = {10.1109/CVPR.2010.5539970},
+  isbn       = {978-1-4244-6984-0},
+  language   = {en},
+  month      = jun,
+  pages      = {3485--3492},
+  publisher  = {IEEE},
+  shorttitle = {{SUN} database},
+  title      = {{SUN} database: {Large}-scale scene recognition from abbey to zoo},
+  url        = {http://ieeexplore.ieee.org/document/5539970/},
+  year       = {2010}
+}
+
+@misc{yadavResolvingInterferenceWhen2023,
+  abstract      = {Transfer learning - i.e., further fine-tuning a pre-trained model on a downstream task - can confer significant advantages, including improved downstream performance, faster convergence, and better sample efficiency. These advantages have led to a proliferation of task-specific fine-tuned models, which typically can only perform a single task and do not benefit from one another. Recently, model merging techniques have emerged as a solution to combine multiple task-specific models into a single multitask model without performing additional training. However, existing merging methods often ignore the interference between parameters of different models, resulting in large performance drops when merging multiple models. In this paper, we demonstrate that prior merging techniques inadvertently lose valuable information due to two major sources of interference: (a) interference due to redundant parameter values and (b) disagreement on the sign of a given parameter's values across models. To address this, we propose our method, TrIm, Elect Sign \& Merge (TIES-Merging), which introduces three novel steps when merging models: (1) resetting parameters that only changed a small amount during fine-tuning, (2) resolving sign conflicts, and (3) merging only the parameters that are in alignment with the final agreed-upon sign. We find that TIES-Merging outperforms several existing methods in diverse settings covering a range of modalities, domains, number of tasks, model sizes, architectures, and fine-tuning settings. We further analyze the impact of different types of interference on model parameters, highlight the importance of resolving sign interference. Our code is available at https://github.com/prateeky2806/ties-merging},
+  archiveprefix = {arxiv},
+  author        = {Yadav, Prateek and Tam, Derek and Choshen, Leshem and Raffel, Colin and Bansal, Mohit},
+  eprint        = {2306.01708},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  month         = jun,
+  number        = {arXiv:2306.01708},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {Resolving {{Interference When Merging Models}}},
+  url           = {http://arxiv.org/abs/2306.01708},
+  year          = {2023}
+}
+
+@misc{yangAdaMergingAdaptiveModel2023,
+  abstract      = {Multi-task learning (MTL) aims to empower a model to tackle multiple tasks simultaneously. A recent development known as task arithmetic has revealed that several models, each fine-tuned for distinct tasks, can be directly merged into a single model to execute MTL without necessitating a retraining process using the initial training data. Nevertheless, this direct addition of models often leads to a significant deterioration in the overall performance of the merged model. This decline occurs due to potential conflicts and intricate correlations among the multiple tasks. Consequently, the challenge emerges of how to merge pre-trained models more effectively without using their original training data. This paper introduces an innovative technique called Adaptive Model Merging (AdaMerging). This approach aims to autonomously learn the coefficients for model merging, either in a task-wise or layer-wise manner, without relying on the original training data. Specifically, our AdaMerging method operates as an automatic, unsupervised task arithmetic scheme. It leverages entropy minimization on unlabeled test samples from the multi-task setup as a surrogate objective function to iteratively refine the merging coefficients of the multiple models. Our experimental findings across eight tasks demonstrate the efficacy of the AdaMerging scheme we put forth. Compared to the current state-of-the-art task arithmetic merging scheme, AdaMerging showcases a remarkable 11\textbackslash\% improvement in performance. Notably, AdaMerging also exhibits superior generalization capabilities when applied to unseen downstream tasks. Furthermore, it displays a significantly enhanced robustness to data distribution shifts that may occur during the testing phase.},
+  archiveprefix = {arxiv},
+  author        = {Yang, Enneng and Wang, Zhenyi and Shen, Li and Liu, Shiwei and Guo, Guibing and Wang, Xingwei and Tao, Dacheng},
+  doi           = {10.48550/arXiv.2310.02575},
+  eprint        = {2310.02575},
+  keywords      = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  month         = oct,
+  number        = {arXiv:2310.02575},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  shorttitle    = {{{AdaMerging}}},
+  title         = {{{AdaMerging}}: {{Adaptive Model Merging}} for {{Multi-Task Learning}}},
+  url           = {http://arxiv.org/abs/2310.02575},
+  year          = {2023}
+}
+
+
+@misc{yuLanguageModelsAre2023,
+  abstract      = {In this paper, we uncover that Language Models (LMs), either encoder- or decoder-based, can obtain new capabilities by assimilating the parameters of homologous models without retraining or GPUs. Typically, new abilities of LMs can be imparted by Supervised Fine-Tuning (SFT), reflected in the disparity between fine-tuned and pre-trained parameters (i.e., delta parameters). We initially observe that by introducing a novel operation called DARE (Drop And REscale), most delta parameters can be directly set to zeros without affecting the capabilities of SFT LMs and larger models can tolerate a higher proportion of discarded parameters. Based on this observation, we further sparsify delta parameters of multiple SFT homologous models with DARE and subsequently merge them into a single model by parameter averaging. We conduct experiments on eight datasets from the GLUE benchmark with BERT and RoBERTa. We also merge WizardLM, WizardMath, and Code Alpaca based on Llama 2. Experimental results show that: (1) The delta parameter value ranges for SFT models are typically small, often within 0.005, and DARE can eliminate 99\% of them effortlessly. However, once the models are continuously pre-trained, the value ranges can grow to around 0.03, making DARE impractical. We have also tried to remove fine-tuned instead of delta parameters and find that a 10\% reduction can lead to drastically decreased performance (even to 0). This highlights that SFT merely stimulates the abilities via delta parameters rather than injecting new abilities into LMs; (2) DARE can merge multiple task-specific LMs into one LM with diverse abilities. For instance, the merger of WizardLM and WizardMath improves the GSM8K zero-shot accuracy of WizardLM from 2.2 to 66.3, retaining its instruction-following ability while surpassing WizardMath's original 64.2 performance. Codes are available at https://github.com/yule-BUAA/MergeLM.},
+  archiveprefix = {arxiv},
+  author        = {Yu, Le and Yu, Bowen and Yu, Haiyang and Huang, Fei and Li, Yongbin},
+  eprint        = {2311.03099},
+  keywords      = {Computer Science - Computation and Language,Computer Science - Machine Learning,Important},
+  month         = nov,
+  number        = {arXiv:2311.03099},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  shorttitle    = {Language {{Models}} Are {{Super Mario}}},
+  title         = {Language {{Models}} Are {{Super Mario}}: {{Absorbing Abilities}} from {{Homologous Models}} as a {{Free Lunch}}},
+  url           = {http://arxiv.org/abs/2311.03099},
+  year          = {2023}
+}
+
+@article{yunisConvexityLinearMode2022,
+  abstract = {In many cases, neural networks trained with stochastic gradient descent (SGD) that share an early and often small portion of the training trajectory have solutions connected by a linear path of low loss. This phenomenon, called linear mode connectivity (LMC), has been leveraged for pruning and model averaging in large neural network models, but it is not well understood how broadly or why it occurs. LMC suggests that SGD trajectories somehow end up in a ``convex'' region of the loss landscape and stay there. In this work, we confirm that this eventually does happen by finding a high-dimensional convex hull of low loss between the endpoints of several SGD trajectories. But to our surprise, simple measures of convexity do not show any obvious transition at the point when SGD will converge into this region. To understand this convex hull better, we investigate the functional behaviors of its endpoints. We find that only a small number of correct predictions are shared between all endpoints of a hull, and an even smaller number of correct predictions are shared between the hulls, even when the final accuracy is high for every endpoint. Thus, we tie LMC more tightly to convexity, and raise several new questions about the source of this convexity in neural network optimization.},
+  author   = {Yunis, David and Patel, Kumar Kshitij and Savarese, Pedro and Vardi, Gal and Livescu, Karen and Walter, Matthew and Frankle, Jonathan and Maire, Michael},
+  journal  = {OPT2022: 14th Annual Workshop on Optimization for Machine Learning},
+  keywords = {⛔ No DOI found},
+  langid   = {english},
+  title    = {On {{Convexity}} and {{Linear Mode Connectivity}} in {{Neural Networks}}},
+  year     = {2022}
+}
+@misc{zhangComposingParameterEfficientModules2023,
+  abstract      = {As an efficient alternative to conventional full finetuning, parameter-efficient finetuning (PEFT) is becoming the prevailing method to adapt pretrained language models. In PEFT, a lightweight module is learned on each dataset while the underlying pretrained language model remains unchanged, resulting in multiple compact modules representing diverse skills when applied to various domains and tasks. In this paper, we propose to compose these parameter-efficient modules through linear arithmetic operations in the weight space, thereby integrating different module capabilities. Specifically, we first define addition and negation operators for the module, and then further compose these two basic operators to perform flexible arithmetic. Our approach requires {\textbackslash}emph\{no additional training\} and enables highly flexible module composition. We apply different arithmetic operations to compose the parameter-efficient modules for (1) distribution generalization, (2) multi-tasking, (3) unlearning, and (4) domain transfer. Additionally, we extend our approach to detoxify Alpaca-LoRA, the latest instruction-tuned large language model based on LLaMA. Empirical results demonstrate that our approach produces new and effective parameter-efficient modules that significantly outperform existing ones across all settings.},
+  archiveprefix = {arxiv},
+  author        = {Zhang, Jinghan and Chen, Shiqi and Liu, Junteng and He, Junxian},
+  eprint        = {2306.14870},
+  keywords      = {Computer Science - Computation and Language},
+  month         = jun,
+  number        = {arXiv:2306.14870},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  title         = {Composing {{Parameter-Efficient Modules}} with {{Arithmetic Operations}}},
+  url           = {http://arxiv.org/abs/2306.14870},
+  year          = {2023}
+}
+
+@misc{zhengLearnModelFineTuning2023,
+  abstract      = {Foundation models (FM) have demonstrated remarkable performance across a wide range of tasks (especially in the fields of natural language processing and computer vision), primarily attributed to their ability to comprehend instructions and access extensive, high-quality data. This not only showcases their current effectiveness but also sets a promising trajectory towards the development of artificial general intelligence. Unfortunately, due to multiple constraints, the raw data of the model used for large model training are often inaccessible, so the use of end-to-end models for downstream tasks has become a new research trend, which we call Learn From Model (LFM) in this article. LFM focuses on the research, modification, and design of FM based on the model interface, so as to better understand the model structure and weights (in a black box environment), and to generalize the model to downstream tasks. The study of LFM techniques can be broadly categorized into five major areas: model tuning, model distillation, model reuse, meta learning and model editing. Each category encompasses a repertoire of methods and strategies that aim to enhance the capabilities and performance of FM. This paper gives a comprehensive review of the current methods based on FM from the perspective of LFM, in order to help readers better understand the current research status and ideas. To conclude, we summarize the survey by highlighting several critical areas for future exploration and addressing open issues that require further attention from the research community. The relevant papers we investigated in this article can be accessed at {$<$}https://github.com/ruthless-man/Awesome-Learn-from-Model{$>$}.},
+  archiveprefix = {arxiv},
+  author        = {Zheng, Hongling and Shen, Li and Tang, Anke and Luo, Yong and Hu, Han and Du, Bo and Tao, Dacheng},
+  eprint        = {2310.08184},
+  keywords      = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  month         = oct,
+  number        = {arXiv:2310.08184},
+  primaryclass  = {cs},
+  publisher     = {{arXiv}},
+  shorttitle    = {Learn {{From Model Beyond Fine-Tuning}}},
+  title         = {Learn {{From Model Beyond Fine-Tuning}}: {{A Survey}}},
+  url           = {http://arxiv.org/abs/2310.08184},
+  year          = {2023}
+}

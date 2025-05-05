@@ -1,0 +1,17 @@
+Inverse kinematic (IK) methods recover the parameters of the joints, given
+the desired position of selected elements in the kinematic chain. While the
+problem is well-defined and low-dimensional, it has to be solved rapidly,
+accounting for multiple possible solutions. In this work, we propose a neural
+IK method that employs the hierarchical structure of the problem to
+sequentially sample valid joint angles conditioned on the desired position and
+on the preceding joints along the chain. In our solution, a hypernetwork $f$
+recovers the parameters of multiple primary networks {$g_1,g_2,\dots,g_N$,
+where $N$ is the number of joints}, such that each $g_i$ outputs a distribution
+of possible joint angles, and is conditioned on the sampled values obtained
+from the previous primary networks $g_j, j<i$. The hypernetwork can be trained
+on readily available pairs of matching joint angles and positions, without
+observing multiple solutions. At test time, a high-variance joint distribution
+is presented, by sampling sequentially from the primary networks. We
+demonstrate the advantage of the proposed method both in comparison to other IK
+methods for isolated instances of IK and with regard to following the path of
+the end effector in Cartesian space.

@@ -1,0 +1,18 @@
+We introduce the concrete autoencoder, an end-to-end differentiable method
+for global feature selection, which efficiently identifies a subset of the most
+informative features and simultaneously learns a neural network to reconstruct
+the input data from the selected features. Our method is unsupervised, and is
+based on using a concrete selector layer as the encoder and using a standard
+neural network as the decoder. During the training phase, the temperature of
+the concrete selector layer is gradually decreased, which encourages a
+user-specified number of discrete features to be learned. During test time, the
+selected features can be used with the decoder network to reconstruct the
+remaining input features. We evaluate concrete autoencoders on a variety of
+datasets, where they significantly outperform state-of-the-art methods for
+feature selection and data reconstruction. In particular, on a large-scale gene
+expression dataset, the concrete autoencoder selects a small subset of genes
+whose expression levels can be use to impute the expression levels of the
+remaining genes. In doing so, it improves on the current widely-used
+expert-curated L1000 landmark genes, potentially reducing measurement costs by
+20%. The concrete autoencoder can be implemented by adding just a few lines of
+code to a standard autoencoder.

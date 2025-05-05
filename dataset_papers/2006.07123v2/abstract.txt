@@ -1,0 +1,20 @@
+The state-of-the art machine learning approach to training deep neural
+networks, backpropagation, is implausible for real neural networks: neurons
+need to know their outgoing weights; training alternates between a bottom-up
+forward pass (computation) and a top-down backward pass (learning); and the
+algorithm often needs precise labels of many data points. Biologically
+plausible approximations to backpropagation, such as feedback alignment, solve
+the weight transport problem, but not the other two. Thus, fully biologically
+plausible learning rules have so far remained elusive. Here we present a family
+of learning rules that does not suffer from any of these problems. It is
+motivated by the information bottleneck principle (extended with kernel
+methods), in which networks learn to compress the input as much as possible
+without sacrificing prediction of the output. The resulting rules have a
+3-factor Hebbian structure: they require pre- and post-synaptic firing rates
+and an error signal - the third factor - consisting of a global teaching signal
+and a layer-specific term, both available without a top-down pass. They do not
+require precise labels; instead, they rely on the similarity between pairs of
+desired outputs. Moreover, to obtain good performance on hard problems and
+retain biological plausibility, our rules need divisive normalization - a known
+feature of biological networks. Finally, simulations show that our rules
+perform nearly as well as backpropagation on image classification tasks.

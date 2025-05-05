@@ -1,0 +1,19 @@
+We introduce the bilinear bandit problem with low-rank structure in which an
+action takes the form of a pair of arms from two different entity types, and
+the reward is a bilinear function of the known feature vectors of the arms. The
+unknown in the problem is a $d_1$ by $d_2$ matrix $\mathbf{\Theta}^*$ that
+defines the reward, and has low rank $r \ll \min\{d_1,d_2\}$. Determination of
+$\mathbf{\Theta}^*$ with this low-rank structure poses a significant challenge
+in finding the right exploration-exploitation tradeoff. In this work, we
+propose a new two-stage algorithm called "Explore-Subspace-Then-Refine" (ESTR).
+The first stage is an explicit subspace exploration, while the second stage is
+a linear bandit algorithm called "almost-low-dimensional OFUL" (LowOFUL) that
+exploits and further refines the estimated subspace via a regularization
+technique. We show that the regret of ESTR is
+$\widetilde{\mathcal{O}}((d_1+d_2)^{3/2} \sqrt{r T})$ where
+$\widetilde{\mathcal{O}}$ hides logarithmic factors and $T$ is the time
+horizon, which improves upon the regret of
+$\widetilde{\mathcal{O}}(d_1d_2\sqrt{T})$ attained for a na\"ive linear bandit
+reduction. We conjecture that the regret bound of ESTR is unimprovable up to
+polylogarithmic factors, and our preliminary experiment shows that ESTR
+outperforms a na\"ive linear bandit reduction.

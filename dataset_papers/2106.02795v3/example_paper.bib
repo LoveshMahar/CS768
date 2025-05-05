@@ -1,0 +1,718 @@
+@misc{brown2020language,
+      title={Language Models are Few-Shot Learners}, 
+      author={Tom B. Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and Jared Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Sandhini Agarwal and Ariel Herbert-Voss and Gretchen Krueger and Tom Henighan and Rewon Child and Aditya Ramesh and Daniel M. Ziegler and Jeffrey Wu and Clemens Winter and Christopher Hesse and Mark Chen and Eric Sigler and Mateusz Litwin and Scott Gray and Benjamin Chess and Jack Clark and Christopher Berner and Sam McCandlish and Alec Radford and Ilya Sutskever and Dario Amodei},
+      year={2020},
+      eprint={2005.14165},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{NEURIPS2019_dc6a7e65,
+ author = {Yang, Zhilin and Dai, Zihang and Yang, Yiming and Carbonell, Jaime and Salakhutdinov, Russ R and Le, Quoc V},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+ pages = {5753--5763},
+ publisher = {Curran Associates, Inc.},
+ title = {XLNet: Generalized Autoregressive Pretraining for Language Understanding},
+ url = {https://proceedings.neurips.cc/paper/2019/file/dc6a7e655d7e5840e66733e9ee67cc69-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+@InProceedings{pmlr-v70-gehring17a, title = {Convolutional Sequence to Sequence Learning}, author = {Jonas Gehring and Michael Auli and David Grangier and Denis Yarats and Yann N. Dauphin}, booktitle = {Proceedings of the 34th International Conference on Machine Learning}, pages = {1243--1252}, year = {2017}, editor = {Precup, Doina and Teh, Yee Whye}, volume = {70}, series = {Proceedings of Machine Learning Research}, month = {06--11 Aug}, publisher = {PMLR}, pdf = {http://proceedings.mlr.press/v70/gehring17a/gehring17a.pdf}, url = { http://proceedings.mlr.press/v70/gehring17a.html }, abstract = {The prevalent approach to sequence to sequence learning maps an input sequence to a variable length output sequence via recurrent neural networks. We introduce an architecture based entirely on convolutional neural networks. Compared to recurrent models, computations over all elements can be fully parallelized during training to better exploit the GPU hardware and optimization is easier since the number of non-linearities is fixed and independent of the input length. Our use of gated linear units eases gradient propagation and we equip each decoder layer with a separate attention module. We outperform the accuracy of the deep LSTM setup of Wu et al. (2016) on both WMT’14 English-German and WMT’14 English-French translation at an order of magnitude faster speed, both on GPU and CPU.} }
+
+@inproceedings{DBLP:journals/corr/abs-1912-12333,
+  author    = {Benyou Wang and
+               Donghao Zhao and
+               Christina Lioma and
+               Qiuchi Li and
+               Peng Zhang and
+               Jakob Grue Simonsen},
+  title     = {Encoding word order in complex embeddings},
+  booktitle = {8th International Conference on Learning Representations, {ICLR} 2020,
+               Addis Ababa, Ethiopia, April 26-30, 2020},
+  publisher = {OpenReview.net},
+  year      = {2020},
+  url       = {https://openreview.net/forum?id=Hke-WTVtwr},
+  timestamp = {Thu, 07 May 2020 17:11:48 +0200},
+  biburl    = {https://dblp.org/rec/conf/iclr/WangZLLZS20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{wang-etal-2019-self,
+    title = "Self-Attention with Structural Position Representations",
+    author = "Wang, Xing  and
+      Tu, Zhaopeng  and
+      Wang, Longyue  and
+      Shi, Shuming",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D19-1145",
+    doi = "10.18653/v1/D19-1145",
+    pages = "1403--1409",
+    abstract = "Although self-attention networks (SANs) have advanced the state-of-the-art on various NLP tasks, one criticism of SANs is their ability of encoding positions of input words (Shaw et al., 2018). In this work, we propose to augment SANs with structural position representations to model the latent structure of the input sentence, which is complementary to the standard sequential positional representations. Specifically, we use dependency tree to represent the grammatical structure of a sentence, and propose two strategies to encode the positional relationships among words in the dependency tree. Experimental results on NIST Chinese-to-English and WMT14 English-to-German translation tasks show that the proposed approach consistently boosts performance over both the absolute and relative sequential position representations.",
+}
+
+
+@InProceedings{pmlr-v139-liutkus21a,
+  title = 	 {Relative Positional Encoding for Transformers with Linear Complexity},
+  author =       {Liutkus, Antoine and C\'{\i}fka, Ond{\v{r}}ej and Wu, Shih-Lun and Simsekli, Umut and Yang, Yi-Hsuan and Richard, Gael},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {7067--7079},
+  year = 	 {2021},
+  editor = 	 {Meila, Marina and Zhang, Tong},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {18--24 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v139/liutkus21a/liutkus21a.pdf},
+  url = 	 {https://proceedings.mlr.press/v139/liutkus21a.html},
+  abstract = 	 {Recent advances in Transformer models allow for unprecedented sequence lengths, due to linear space and time complexity. In the meantime, relative positional encoding (RPE) was proposed as beneficial for classical Transformers and consists in exploiting lags instead of absolute positions for inference. Still, RPE is not available for the recent linear-variants of the Transformer, because it requires the explicit computation of the attention matrix, which is precisely what is avoided by such methods. In this paper, we bridge this gap and present Stochastic Positional Encoding as a way to generate PE that can be used as a replacement to the classical additive (sinusoidal) PE and provably behaves like RPE. The main theoretical contribution is to make a connection between positional encoding and cross-covariance structures of correlated Gaussian processes. We illustrate the performance of our approach on the Long-Range Arena benchmark and on music generation.}
+}
+
+
+@inproceedings{dai-etal-2019-transformer,
+    title = "Transformer-{XL}: Attentive Language Models beyond a Fixed-Length Context",
+    author = "Dai, Zihang  and
+      Yang, Zhilin  and
+      Yang, Yiming  and
+      Carbonell, Jaime  and
+      Le, Quoc  and
+      Salakhutdinov, Ruslan",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P19-1285",
+    doi = "10.18653/v1/P19-1285",
+    pages = "2978--2988",
+    abstract = "Transformers have a potential of learning longer-term dependency, but are limited by a fixed-length context in the setting of language modeling. We propose a novel neural architecture Transformer-XL that enables learning dependency beyond a fixed length without disrupting temporal coherence. It consists of a segment-level recurrence mechanism and a novel positional encoding scheme. Our method not only enables capturing longer-term dependency, but also resolves the context fragmentation problem. As a result, Transformer-XL learns dependency that is 80{\%} longer than RNNs and 450{\%} longer than vanilla Transformers, achieves better performance on both short and long sequences, and is up to 1,800+ times faster than vanilla Transformers during evaluation. Notably, we improve the state-of-the-art results of bpc/perplexity to 0.99 on enwiki8, 1.08 on text8, 18.3 on WikiText-103, 21.8 on One Billion Word, and 54.5 on Penn Treebank (without finetuning). When trained only on WikiText-103, Transformer-XL manages to generate reasonably coherent, novel text articles with thousands of tokens. Our code, pretrained models, and hyperparameters are available in both Tensorflow and PyTorch.",
+}
+
+@inproceedings{devlin-etal-2019-bert,
+    title = "{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    author = "Devlin, Jacob  and
+      Chang, Ming-Wei  and
+      Lee, Kenton  and
+      Toutanova, Kristina",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/N19-1423",
+    doi = "10.18653/v1/N19-1423",
+    pages = "4171--4186",
+    abstract = "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5 (7.7 point absolute improvement), MultiNLI accuracy to 86.7{\%} (4.6{\%} absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).",
+}
+
+@article{DBLP:journals/corr/abs-2104-01136,
+  author    = {Benjamin Graham and
+               Alaaeldin El{-}Nouby and
+               Hugo Touvron and
+               Pierre Stock and
+               Armand Joulin and
+               Herv{\'{e}} J{\'{e}}gou and
+               Matthijs Douze},
+  title     = {LeViT: a Vision Transformer in ConvNet's Clothing for Faster Inference},
+  journal   = {ICCV 2021},
+  volume    = {abs/2104.01136},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2104.01136},
+  eprinttype = {arXiv},
+  eprint    = {2104.01136},
+  timestamp = {Mon, 12 Apr 2021 16:14:56 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2104-01136.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{cnn,
+author = {LeCun, Y. and Boser, B. and Denker, J. S. and Henderson, D. and Howard, R. E. and Hubbard, W. and Jackel, L. D.},
+title = {Backpropagation Applied to Handwritten Zip Code Recognition},
+year = {1989},
+issue_date = {Winter 1989},
+publisher = {MIT Press},
+address = {Cambridge, MA, USA},
+volume = {1},
+number = {4},
+issn = {0899-7667},
+url = {https://doi.org/10.1162/neco.1989.1.4.541},
+doi = {10.1162/neco.1989.1.4.541},
+abstract = {The ability of learning networks to generalize can be greatly enhanced by providing constraints from the task domain. This paper demonstrates how such constraints can be integrated into a backpropagation network through the architecture of the network. This approach has been successfully applied to the recognition of handwritten zip code digits provided by the U.S. Postal Service. A single network learns the entire recognition operation, going from the normalized image of the character to the final classification.},
+journal = {Neural Comput.},
+month = dec,
+pages = {541–551},
+numpages = {11}
+}
+
+@article{DBLP:journals/corr/abs-1808-03314,
+  author    = {Alex Sherstinsky},
+  title     = {Fundamentals of Recurrent Neural Network {(RNN)} and Long Short-Term
+               Memory {(LSTM)} Network},
+  journal   = {CoRR},
+  volume    = {abs/1808.03314},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1808.03314},
+  archivePrefix = {arXiv},
+  eprint    = {1808.03314},
+  timestamp = {Sun, 02 Sep 2018 15:01:55 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1808-03314.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{lstm,
+author = {Hochreiter, Sepp and Schmidhuber, Jürgen},
+year = {1997},
+month = {12},
+pages = {1735-80},
+title = {Long Short-term Memory},
+volume = {9},
+journal = {Neural computation},
+doi = {10.1162/neco.1997.9.8.1735}
+}
+
+@InProceedings{pmlr-v80-parmar18a,
+  title = 	 {Image Transformer},
+  author =       {Parmar, Niki and Vaswani, Ashish and Uszkoreit, Jakob and Kaiser, Lukasz and Shazeer, Noam and Ku, Alexander and Tran, Dustin},
+  booktitle = 	 {Proceedings of the 35th International Conference on Machine Learning},
+  pages = 	 {4055--4064},
+  year = 	 {2018},
+  editor = 	 {Jennifer Dy and Andreas Krause},
+  volume = 	 {80},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Stockholmsmässan, Stockholm Sweden},
+  month = 	 {10--15 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v80/parmar18a/parmar18a.pdf},
+  url = 	 {http://proceedings.mlr.press/v80/parmar18a.html},
+  abstract = 	 {Image generation has been successfully cast as an autoregressive sequence generation or transformation problem. Recent work has shown that self-attention is an effective way of modeling textual sequences. In this work, we generalize a recently proposed model architecture based on self-attention, the Transformer, to a sequence modeling formulation of image generation with a tractable likelihood. By restricting the self-attention mechanism to attend to local neighborhoods we significantly increase the size of images the model can process in practice, despite maintaining significantly larger receptive fields per layer than typical convolutional neural networks. While conceptually simple, our generative models significantly outperform the current state of the art in image generation on ImageNet, improving the best published negative log-likelihood on ImageNet from 3.83 to 3.77. We also present results on image super-resolution with a large magnification ratio, applying an encoder-decoder configuration of our architecture. In a human evaluation study, we find that images generated by our super-resolution model fool human observers three times more often than the previous state of the art.}
+}
+
+@inproceedings{luong-etal-2015-effective,
+    title = "Effective Approaches to Attention-based Neural Machine Translation",
+    author = "Luong, Thang  and
+      Pham, Hieu  and
+      Manning, Christopher D.",
+    booktitle = "Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2015",
+    address = "Lisbon, Portugal",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D15-1166",
+    doi = "10.18653/v1/D15-1166",
+    pages = "1412--1421",
+}
+
+@misc{bahdanau2014neural,
+  abstract = {Neural machine translation is a recently proposed approach to machine
+translation. Unlike the traditional statistical machine translation, the neural
+machine translation aims at building a single neural network that can be
+jointly tuned to maximize the translation performance. The models proposed
+recently for neural machine translation often belong to a family of
+encoder-decoders and consists of an encoder that encodes a source sentence into
+a fixed-length vector from which a decoder generates a translation. In this
+paper, we conjecture that the use of a fixed-length vector is a bottleneck in
+improving the performance of this basic encoder-decoder architecture, and
+propose to extend this by allowing a model to automatically (soft-)search for
+parts of a source sentence that are relevant to predicting a target word,
+without having to form these parts as a hard segment explicitly. With this new
+approach, we achieve a translation performance comparable to the existing
+state-of-the-art phrase-based system on the task of English-to-French
+translation. Furthermore, qualitative analysis reveals that the
+(soft-)alignments found by the model agree well with our intuition.},
+  added-at = {2020-06-07T20:24:58.000+0200},
+  author = {Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua},
+  biburl = {https://www.bibsonomy.org/bibtex/2713375898fd7d2477f6ab6dc3dd66c2c/jan.hofmann1},
+  description = {[1409.0473] Neural Machine Translation by Jointly Learning to Align and Translate},
+  interhash = {bb2ca011eeafccb0bd2505c9476dcd10},
+  intrahash = {713375898fd7d2477f6ab6dc3dd66c2c},
+  keywords = {thema:pyramid_scene_parsing},
+  note = {cite arxiv:1409.0473Comment: Accepted at ICLR 2015 as oral presentation},
+  timestamp = {2020-06-07T20:24:58.000+0200},
+  title = {Neural Machine Translation by Jointly Learning to Align and Translate},
+  url = {http://arxiv.org/abs/1409.0473},
+  year = 2014
+}
+
+
+
+@inproceedings{li-etal-2020-widget,
+    title = "Widget Captioning: Generating Natural Language Description for Mobile User Interface Elements",
+    author = "Li, Yang  and
+      Li, Gang  and
+      He, Luheng  and
+      Zheng, Jingjie  and
+      Li, Hong  and
+      Guan, Zhiwei",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.emnlp-main.443",
+    doi = "10.18653/v1/2020.emnlp-main.443",
+    pages = "5495--5510",
+    abstract = "Natural language descriptions of user interface (UI) elements such as alternative text are crucial for accessibility and language-based interaction in general. Yet, these descriptions are constantly missing in mobile UIs. We propose widget captioning, a novel task for automatically generating language descriptions for UI elements from multimodal input including both the image and the structural representations of user interfaces. We collected a large-scale dataset for widget captioning with crowdsourcing. Our dataset contains 162,860 language phrases created by human workers for annotating 61,285 UI elements across 21,750 unique UI screens. We thoroughly analyze the dataset, and train and evaluate a set of deep model configurations to investigate how each feature modality as well as the choice of learning strategies impact the quality of predicted captions. The task formulation and the dataset as well as our benchmark models contribute a solid basis for this novel multimodal captioning task that connects language and user interfaces.",
+}
+
+@article{touvron2020training,
+  title={Training data-efficient image transformers \& distillation through attention},
+  author={Touvron, Hugo and Cord, Matthieu and Douze, Matthijs and Massa, Francisco and Sablayrolles, Alexandre and J{\'e}gou, Herv{\'e}},
+  journal={arXiv preprint arXiv:2012.12877},
+  year={2020}
+}
+
+@article{DBLP:journals/corr/ChrabaszczLH17,
+  author    = {Patryk Chrabaszcz and
+               Ilya Loshchilov and
+               Frank Hutter},
+  title     = {A Downsampled Variant of ImageNet as an Alternative to the {CIFAR}
+               datasets},
+  journal   = {CoRR},
+  volume    = {abs/1707.08819},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1707.08819},
+  archivePrefix = {arXiv},
+  eprint    = {1707.08819},
+  timestamp = {Mon, 13 Aug 2018 16:48:14 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/ChrabaszczLH17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{Felix2015,
+ author = {Pennington, Jeffrey and Yu, Felix Xinnan X and Kumar, Sanjiv},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {1846--1854},
+ title = {Spherical Random Features for Polynomial Kernels},
+ year = {2015}
+}
+@misc{Performer,
+      title={Masked Language Modeling for Proteins via Linearly Scalable Long-Context Transformers}, 
+      author={Krzysztof Choromanski and Valerii Likhosherstov and David Dohan and Xingyou Song and Andreea Gane and Tamas Sarlos and Peter Hawkins and Jared Davis and David Belanger and Lucy Colwell and Adrian Weller},
+      year={2020},
+      eprint={2006.03555},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{neishi-yoshinaga-2019-relation,
+    title = "On the Relation between Position Information and Sentence Length in Neural Machine Translation",
+    author = "Neishi, Masato  and
+      Yoshinaga, Naoki",
+    booktitle = "Proceedings of the 23rd Conference on Computational Natural Language Learning (CoNLL)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K19-1031",
+    doi = "10.18653/v1/K19-1031",
+    pages = "328--338",
+    abstract = "Long sentences have been one of the major challenges in neural machine translation (NMT). Although some approaches such as the attention mechanism have partially remedied the problem, we found that the current standard NMT model, Transformer, has difficulty in translating long sentences compared to the former standard, Recurrent Neural Network (RNN)-based model. One of the key differences of these NMT models is how the model handles position information which is essential to process sequential data. In this study, we focus on the position information type of NMT models, and hypothesize that relative position is better than absolute position. To examine the hypothesis, we propose RNN-Transformer which replaces positional encoding layer of Transformer by RNN, and then compare RNN-based model and four variants of Transformer. Experiments on ASPEC English-to-Japanese and WMT2014 English-to-German translation tasks demonstrate that relative position helps translating sentences longer than those in the training data. Further experiments on length-controlled training data reveal that absolute position actually causes overfitting to the sentence length.",
+}
+
+@inproceedings{NEURIPS2019_383beaea,
+ author = {Nicolicioiu, Andrei and Duta, Iulia and Leordeanu, Marius},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Recurrent Space-time Graph Neural Networks},
+ url = {https://proceedings.neurips.cc/paper/2019/file/383beaea4aa57dd8202dbff464fee3af-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+
+
+@inproceedings{NEURIPS2019_3416a75f,
+ author = {Ramachandran, Prajit and Parmar, Niki and Vaswani, Ashish and Bello, Irwan and Levskaya, Anselm and Shlens, Jon},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Stand-Alone Self-Attention in Vision Models},
+ url = {https://proceedings.neurips.cc/paper/2019/file/3416a75f4cea9109507cacd8e2f2aefc-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+
+
+@InProceedings{Bello_2019_ICCV,
+author = {Bello, Irwan and Zoph, Barret and Vaswani, Ashish and Shlens, Jonathon and Le, Quoc V.},
+title = {Attention Augmented Convolutional Networks},
+booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+month = {October},
+year = {2019}
+}
+
+@article{DBLP:journals/corr/abs-1809-04281,
+  author    = {Cheng{-}Zhi Anna Huang and
+               Ashish Vaswani and
+               Jakob Uszkoreit and
+               Noam Shazeer and
+               Curtis Hawthorne and
+               Andrew M. Dai and
+               Matthew D. Hoffman and
+               Douglas Eck},
+  title     = {An Improved Relative Self-Attention Mechanism for Transformer with
+               Application to Music Generation},
+  journal   = {CoRR},
+  volume    = {abs/1809.04281},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1809.04281},
+  archivePrefix = {arXiv},
+  eprint    = {1809.04281},
+  timestamp = {Fri, 05 Oct 2018 11:34:52 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1809-04281.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{shaw-etal-2018-self,
+    title = "Self-Attention with Relative Position Representations",
+    author = "Shaw, Peter  and
+      Uszkoreit, Jakob  and
+      Vaswani, Ashish",
+    booktitle = "Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 2 (Short Papers)",
+    month = jun,
+    year = "2018",
+    address = "New Orleans, Louisiana",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/N18-2074",
+    doi = "10.18653/v1/N18-2074",
+    pages = "464--468",
+    abstract = "Relying entirely on an attention mechanism, the Transformer introduced by Vaswani et al. (2017) achieves state-of-the-art results for machine translation. In contrast to recurrent and convolutional neural networks, it does not explicitly model relative or absolute position information in its structure. Instead, it requires adding representations of absolute positions to its inputs. In this work we present an alternative approach, extending the self-attention mechanism to efficiently consider representations of the relative positions, or distances between sequence elements. On the WMT 2014 English-to-German and English-to-French translation tasks, this approach yields improvements of 1.3 BLEU and 0.3 BLEU over absolute position representations, respectively. Notably, we observe that combining relative and absolute position representations yields no further improvement in translation quality. We describe an efficient implementation of our method and cast it as an instance of relation-aware self-attention mechanisms that can generalize to arbitrary graph-labeled inputs.",
+}
+
+
+@inproceedings{Liu2020LearningTE,
+  title={Learning to Encode Position for Transformer with Continuous Dynamical Model},
+  author={Xuanqing Liu and Hsiang-Fu Yu and I. Dhillon and Cho-Jui Hsieh},
+  booktitle={ICML},
+  year={2020}
+}
+
+@inproceedings{Tewari18,
+author = {Sun, Yitong and Gilbert, Anna and Tewari, Ambuj},
+title = {But How Does It Work in Theory? Linear SVM with Random Features},
+year = {2018},
+booktitle = {Proceedings of the 32nd International Conference on Neural Information Processing Systems},
+pages = {3383–3392},
+numpages = {10},
+series = {NIPS'18}
+}
+@inproceedings{Kar2012RandomFM,
+  title={Random Feature Maps for Dot Product Kernels},
+  author={Purushottam Kar and H. Karnick},
+  booktitle={AISTATS},
+  year={2012}
+}
+
+@InProceedings{shiv2019novel,
+author = {Shiv, Vighnesh Leonardo and Quirk, Chris},
+title = {Novel positional encodings to enable tree-based transformers},
+booktitle = {NeurIPS 2019},
+year = {2019},
+
+}
+
+@article{DBLP:journals/corr/abs-2102-10882,
+  author    = {Xiangxiang Chu and
+               Bo Zhang and
+               Zhi Tian and
+               Xiaolin Wei and
+               Huaxia Xia},
+  title     = {Do We Really Need Explicit Position Encodings for Vision Transformers?},
+  journal   = {CoRR},
+  volume    = {abs/2102.10882},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2102.10882},
+  eprinttype = {arXiv},
+  eprint    = {2102.10882},
+  timestamp = {Thu, 12 Aug 2021 15:37:06 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2102-10882.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{Li_Zhang_Wang_Kumar_2019, title={Learning Adaptive Random Features}, volume={33},  number={01}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Li, Yanjun and Zhang, Kai and Wang, Jun and Kumar, Sanjiv}, year={2019}, month={Jul.}, pages={4229-4236} }
+
+@article{Quoc14,
+author = {Le, Quoc and Sarlos, Tamas and Smola, Alexander},
+year = {2014},
+title = {Fastfood: Approximate Kernel Expansions in Loglinear Time},
+journal = {30th International Conference on Machine Learning, ICML 2013}
+}
+
+@inproceedings{Hamid14,
+author = {Hamid, Raffay and Xiao, Ying and Gittens, Alex and DeCoste, Dennis},
+title = {Compact Random Feature Maps},
+year = {2014},
+booktitle = {Proceedings of the 31st International Conference on International Conference on Machine Learning - Volume 32},
+series = {ICML'14}
+}
+
+@article{Yang14,
+author = {Yang, Jiyan and Sindhwani, Vikas and Avron, Haim and Mahoney, Michael},
+year = {2014},
+month = {12},
+pages = {},
+title = {Quasi-Monte Carlo Feature Maps for Shift-Invariant Kernels},
+volume = {1},
+journal = {31st International Conference on Machine Learning, ICML 2014}
+}
+
+@article{DBLP:journals/corr/abs-1904-10509,
+  author    = {Rewon Child and
+               Scott Gray and
+               Alec Radford and
+               Ilya Sutskever},
+  title     = {Generating Long Sequences with Sparse Transformers},
+  journal   = {CoRR},
+  volume    = {abs/1904.10509},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1904.10509},
+  archivePrefix = {arXiv},
+  eprint    = {1904.10509},
+  timestamp = {Thu, 02 May 2019 15:13:44 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1904-10509.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{RFF07,
+  author    = {Ali Rahimi and
+               Benjamin Recht},
+  title     = {Random Features for Large-Scale Kernel Machines},
+  booktitle = {Advances in Neural Information Processing Systems 20, Proceedings
+               of the Twenty-First Annual Conference on Neural Information Processing
+               Systems, Vancouver, British Columbia, Canada, December 3-6, 2007},
+  pages     = {1177--1184},
+  year      = {2007},
+}
+
+@inproceedings{RahimiR08,
+  author    = {Ali Rahimi and
+               Benjamin Recht},
+  title     = {Weighted Sums of Random Kitchen Sinks: Replacing minimization with
+               randomization in learning},
+  booktitle = {Advances in Neural Information Processing Systems 21, Proceedings
+               of the Twenty-Second Annual Conference on Neural Information Processing
+               Systems, Vancouver, British Columbia, Canada, December 8-11, 2008},
+  pages     = {1313--1320},
+  year      = {2008},
+}
+
+@inproceedings{li-etal-2020-mapping,
+    title = "Mapping Natural Language Instructions to Mobile {UI} Action Sequences",
+    author = "Li, Yang  and
+      He, Jiacong  and
+      Zhou, Xin  and
+      Zhang, Yuan  and
+      Baldridge, Jason",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.acl-main.729",
+    doi = "10.18653/v1/2020.acl-main.729",
+    pages = "8198--8210",
+    abstract = "We present a new problem: grounding natural language instructions to mobile user interface actions, and create three new datasets for it. For full task evaluation, we create PixelHelp, a corpus that pairs English instructions with actions performed by people on a mobile UI emulator. To scale training, we decouple the language and action data by (a) annotating action phrase spans in How-To instructions and (b) synthesizing grounded descriptions of actions for mobile user interfaces. We use a Transformer to extract action phrase tuples from long-range natural language instructions. A grounding Transformer then contextually represents UI objects using both their content and screen position and connects them to object descriptions. Given a starting screen and instruction, our model achieves 70.59{\%} accuracy on predicting complete ground-truth action sequences in PixelHelp.",
+}
+
+@inproceedings{kitaev2020reformer,
+  author    = {Nikita Kitaev and
+               Lukasz Kaiser and
+               Anselm Levskaya},
+  title     = {Reformer: The Efficient Transformer},
+  booktitle = {ICLR},
+  year      = {2020},
+}
+
+@article{DBLP:journals/corr/VaswaniSPUJGKP17,
+  author    = {Ashish Vaswani and
+               Noam Shazeer and
+               Niki Parmar and
+               Jakob Uszkoreit and
+               Llion Jones and
+               Aidan N. Gomez and
+               Lukasz Kaiser and
+               Illia Polosukhin},
+  title     = {Attention Is All You Need},
+  journal   = {CoRR},
+  volume    = {abs/1706.03762},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1706.03762},
+  archivePrefix = {arXiv},
+  eprint    = {1706.03762},
+  timestamp = {Sat, 23 Jan 2021 01:20:40 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/VaswaniSPUJGKP17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{
+visiontransformer,
+title={An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
+author={Alexey Dosovitskiy and Lucas Beyer and Alexander Kolesnikov and Dirk Weissenborn and Xiaohua Zhai and Thomas Unterthiner and Mostafa Dehghani and Matthias Minderer and Georg Heigold and Sylvain Gelly and Jakob Uszkoreit and Neil Houlsby},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=YicbFdNTTy}
+}
+
+@inproceedings{carion2020endtoend,
+  author    = {Nicolas Carion and
+               Francisco Massa and
+               Gabriel Synnaeve and
+               Nicolas Usunier and
+               Alexander Kirillov and
+               Sergey Zagoruyko},
+  editor    = {Andrea Vedaldi and
+               Horst Bischof and
+               Thomas Brox and
+               Jan{-}Michael Frahm},
+  title     = {End-to-End Object Detection with Transformers},
+  booktitle = {Computer Vision - {ECCV} 2020 - 16th European Conference, Glasgow,
+               UK, August 23-28, 2020, Proceedings, Part {I}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12346},
+  pages     = {213--229},
+  publisher = {Springer},
+  year      = {2020},
+  url       = {https://doi.org/10.1007/978-3-030-58452-8\_13},
+  doi       = {10.1007/978-3-030-58452-8\_13},
+  timestamp = {Sat, 14 Nov 2020 00:57:07 +0100},
+  biburl    = {https://dblp.org/rec/conf/eccv/CarionMSUKZ20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{DBLP:conf/eccv/LinMBHPRDZ14,
+  author    = {Tsung{-}Yi Lin and
+               Michael Maire and
+               Serge J. Belongie and
+               James Hays and
+               Pietro Perona and
+               Deva Ramanan and
+               Piotr Doll{\'{a}}r and
+               C. Lawrence Zitnick},
+  editor    = {David J. Fleet and
+               Tom{\'{a}}s Pajdla and
+               Bernt Schiele and
+               Tinne Tuytelaars},
+  title     = {Microsoft {COCO:} Common Objects in Context},
+  booktitle = {Computer Vision - {ECCV} 2014 - 13th European Conference, Zurich,
+               Switzerland, September 6-12, 2014, Proceedings, Part {V}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {8693},
+  pages     = {740--755},
+  publisher = {Springer},
+  year      = {2014},
+  url       = {https://doi.org/10.1007/978-3-319-10602-1\_48},
+  doi       = {10.1007/978-3-319-10602-1\_48},
+  timestamp = {Tue, 14 May 2019 10:00:45 +0200},
+  biburl    = {https://dblp.org/rec/conf/eccv/LinMBHPRDZ14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{Parascandolo2017TamingTW,
+  title={Taming the waves: sine as activation function in deep neural networks},
+  author={Giambattista Parascandolo and Heikki Huttunen and Tuomas Virtanen},
+  year={2017}
+}
+
+@inproceedings{
+wang2021on,
+title={On Position Embeddings in {\{}BERT{\}}},
+author={Benyou Wang and Lifeng Shang and Christina Lioma and Xin Jiang and Hao Yang and Qun Liu and Jakob Grue Simonsen},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=onxoVA9FxMw}
+}
+
+@misc{he2021deberta,
+      title={DeBERTa: Decoding-enhanced BERT with Disentangled Attention}, 
+      author={Pengcheng He and Xiaodong Liu and Jianfeng Gao and Weizhu Chen},
+      year={2021},
+      eprint={2006.03654},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{langley00,
+ author    = {P. Langley},
+ title     = {Crafting Papers on Machine Learning},
+ year      = {2000},
+ pages     = {1207--1216},
+ editor    = {Pat Langley},
+ booktitle     = {Proceedings of the 17th International Conference
+              on Machine Learning (ICML 2000)},
+ address   = {Stanford, CA},
+ publisher = {Morgan Kaufmann}
+}
+
+@TechReport{mitchell80,
+  author = 	 "T. M. Mitchell",
+  title = 	 "The Need for Biases in Learning Generalizations",
+  institution =  "Computer Science Department, Rutgers University",
+  year = 	 "1980",
+  address =	 "New Brunswick, MA",
+}
+
+@phdthesis{kearns89,
+  author = {M. J. Kearns},
+  title =  {Computational Complexity of Machine Learning},
+  school = {Department of Computer Science, Harvard University},
+  year =   {1989}
+}
+
+@Book{MachineLearningI,
+  editor = 	 "R. S. Michalski and J. G. Carbonell and T.
+		  M. Mitchell",
+  title = 	 "Machine Learning: An Artificial Intelligence
+		  Approach, Vol. I",
+  publisher = 	 "Tioga",
+  year = 	 "1983",
+  address =	 "Palo Alto, CA"
+}
+
+@Book{DudaHart2nd,
+  author =       "R. O. Duda and P. E. Hart and D. G. Stork",
+  title =        "Pattern Classification",
+  publisher =    "John Wiley and Sons",
+  edition =      "2nd",
+  year =         "2000"
+}
+
+@misc{anonymous,
+  title= {Suppressed for Anonymity},
+  author= {Author, N. N.},
+  year= {2021}
+}
+
+@InCollection{Newell81,
+  author =       "A. Newell and P. S. Rosenbloom",
+  title =        "Mechanisms of Skill Acquisition and the Law of
+                  Practice", 
+  booktitle =    "Cognitive Skills and Their Acquisition",
+  pages =        "1--51",
+  publisher =    "Lawrence Erlbaum Associates, Inc.",
+  year =         "1981",
+  editor =       "J. R. Anderson",
+  chapter =      "1",
+  address =      "Hillsdale, NJ"
+}
+
+
+@Article{Samuel59,
+  author = 	 "A. L. Samuel",
+  title = 	 "Some Studies in Machine Learning Using the Game of
+		  Checkers",
+  journal =	 "IBM Journal of Research and Development",
+  year =	 "1959",
+  volume =	 "3",
+  number =	 "3",
+  pages =	 "211--229"
+}

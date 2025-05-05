@@ -1,0 +1,15 @@
+Active learning is widely used to reduce labeling effort and training time by
+repeatedly querying only the most beneficial samples from unlabeled data. In
+real-world problems where data cannot be stored indefinitely due to limited
+storage or privacy issues, the query selection and the model update should be
+performed as soon as a new data sample is observed. Various online active
+learning methods have been studied to deal with these challenges; however,
+there are difficulties in selecting representative query samples and updating
+the model efficiently without forgetting. In this study, we propose Message
+Passing Adaptive Resonance Theory (MPART) that learns the distribution and
+topology of input data online. Through message passing on the topological
+graph, MPART actively queries informative and representative samples, and
+continuously improves the classification performance using both labeled and
+unlabeled data. We evaluate our model in stream-based selective sampling
+scenarios with comparable query selection strategies, showing that MPART
+significantly outperforms competitive models.

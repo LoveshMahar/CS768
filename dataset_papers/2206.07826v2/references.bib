@@ -1,0 +1,389 @@
+%================================================================
+% CLASSIFIER DERANDOMIZATION
+%================================================================
+@article{cotter2019making,
+  title={On making stochastic classifiers deterministic},
+  author={Cotter, Andrew and Gupta, Maya and Narasimhan, Harikrishna},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2019}
+}
+
+%================================================================
+% INDIVIDUAL FAIRNESS
+%================================================================
+% Introduces individual fairness, finds individually fair outcomes for a fixed set of inputs by solving a linear program
+@inproceedings{dwork2012fairness,
+  title={Fairness through awareness},
+  author={Dwork, Cynthia and Hardt, Moritz and Pitassi, Toniann and Reingold, Omer and Zemel, Richard},
+  booktitle={Proceedings of the 3rd innovations in theoretical computer science conference},
+  pages={214--226},
+  year={2012}
+}
+% Threshold-based definition of individual (metric) fairness
+@article{friedler2016impossibility,
+  title={On the (im)possibility of fairness},
+  author={Friedler, Sorelle A and Scheidegger, Carlos and Venkatasubramanian, Suresh},
+  journal={arXiv preprint arXiv:1609.07236},
+  year={2016}
+}
+% How to learn classifiers whose correctness and metric fairness generalize in PAC-like model
+@inproceedings{rothblum2018probably,
+  title={Probably approximately metric-fair learning},
+  author={Rothblum, Guy and Yona, Gal},
+  booktitle={International Conference on Machine Learning},
+  pages={5680--5688},
+  year={2018},
+  organization={PMLR}
+}
+% Metric fairness with only limited queries to the metric
+@inproceedings{kim2018fairness,
+  title={Fairness through computationally-bounded awareness},
+  author={Kim, Michael P and Reingold, Omer and Rothblum, Guy N},
+  booktitle={Proceedings of the 32nd International Conference on Neural Information Processing Systems},
+  pages={4847--4857},
+  year={2018}
+}
+% Classifiers that are individually fair on average over a collection of classification tasks
+@article{sharifi2019average,
+  title={Average individual fairness: Algorithms, generalization and experiments},
+  author={Sharifi-Malvajerdi, Saeed and Kearns, Michael and Roth, Aaron},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  pages={8242--8251},
+  year={2019}
+}
+
+@article{gillen2018online,
+  title={Online learning with an unknown fairness metric},
+  author={Gillen, Stephen and Jung, Christopher and Kearns, Michael and Roth, Aaron},
+  journal={arXiv preprint arXiv:1802.06936},
+  year={2018}
+}
+
+@inproceedings{jung2021algorithmic,
+  title={An Algorithmic Framework for Fairness Elicitation},
+  author={Jung, Christopher and Kearns, Michael and Neel, Seth and Roth, Aaron and Stapleton, Logan and Wu, Zhiwei Steven},
+  booktitle={2nd Symposium on Foundations of Responsible Computing},
+  volume={31},
+  number={46},
+  pages={21},
+  year={2021}
+}
+% Individually fair clustering
+% Note: each individual is assigned a distribution over clusters, not an assignment
+@article{anderson2020distributional,
+  title={Distributional individual fairness in clustering},
+  author={Anderson, Nihesh and Bera, Suman K and Das, Syamantak and Liu, Yang},
+  journal={arXiv preprint arXiv:2006.12589},
+  year={2020}
+}
+
+%================================================================
+% LSH CONSTRUCTIONS
+%================================================================
+% Cosine similarity, other theorems about LSH
+@inproceedings{charikar2002similarity,
+  title={Similarity estimation techniques from rounding algorithms},
+  author={Charikar, Moses S},
+  booktitle={Proceedings of the thiry-fourth annual ACM symposium on Theory of computing},
+  pages={380--388},
+  year={2002}
+}
+% L1 distance
+@inproceedings{indyk1998approximate,
+  title={Approximate nearest neighbors: towards removing the curse of dimensionality},
+  author={Indyk, Piotr and Motwani, Rajeev},
+  booktitle={Proceedings of the thirtieth annual ACM symposium on Theory of computing},
+  pages={604--613},
+  year={1998}
+}
+% Optimal LSH for L2 distance
+@inproceedings{andoni2006near,
+  title={Near-optimal hashing algorithms for approximate nearest neighbor in high dimensions},
+  author={Andoni, Alexandr and Indyk, Piotr},
+  booktitle={2006 47th annual IEEE symposium on foundations of computer science (FOCS'06)},
+  pages={459--468},
+  year={2006},
+  organization={IEEE}
+}
+% Jaccard similarity
+@inproceedings{broder1997resemblance,
+  title={On the resemblance and containment of documents},
+  author={Broder, Andrei Z},
+  booktitle={Proceedings. Compression and Complexity of SEQUENCES 1997 (Cat. No. 97TB100171)},
+  pages={21--29},
+  year={1997},
+  organization={IEEE}
+}
+% Learned Mahalanobis distance
+@inproceedings{jain2008fast,
+  title={Fast image search for learned metrics},
+  author={Jain, Prateek and Kulis, Brian and Grauman, Kristen},
+  booktitle={2008 IEEE Conference on computer vision and pattern recognition},
+  pages={1--8},
+  year={2008},
+  organization={IEEE}
+}
+% First data-dependent hashing paper
+@inproceedings{andoni2014beyond,
+  title={Beyond locality-sensitive hashing},
+  author={Andoni, Alexandr and Indyk, Piotr and Nguyen, Huy L and Razenshteyn, Ilya},
+  booktitle={Proceedings of the twenty-fifth annual ACM-SIAM symposium on Discrete algorithms},
+  pages={1018--1028},
+  year={2014},
+  organization={SIAM}
+}
+% Optimal data-dependent hashing for approximate nearest neighbors
+@inproceedings{andoni2015optimal,
+  title={Optimal data-dependent hashing for approximate near neighbors},
+  author={Andoni, Alexandr and Razenshteyn, Ilya},
+  booktitle={Proceedings of the forty-seventh annual ACM symposium on Theory of computing},
+  pages={793--801},
+  year={2015}
+}
+
+%================================================================
+% LSH THEORY
+%================================================================
+% Non-LSHable distances that can be approximated by an LSHable distance with bounded distortion
+@article{chierichetti2019distortion,
+  title={On the distortion of locality sensitive hashing},
+  author={Chierichetti, Flavio and Kumar, Ravi and Panconesi, Alessandro and Terolli, Erisa},
+  journal={SIAM Journal on Computing},
+  volume={48},
+  number={2},
+  pages={350--372},
+  year={2019},
+  publisher={SIAM}
+}
+% Survey of LSH for similarity search
+@article{wang2014hashing,
+  title={Hashing for similarity search: A survey},
+  author={Wang, Jingdong and Shen, Heng Tao and Song, Jingkuan and Ji, Jianqiu},
+  journal={arXiv preprint arXiv:1408.2927},
+  year={2014}
+}
+
+%================================================================
+% LSH APPLICATIONS
+%================================================================
+% Image search
+@inproceedings{kulis2009kernelized,
+  title={Kernelized locality-sensitive hashing for scalable image search},
+  author={Kulis, Brian and Grauman, Kristen},
+  booktitle={2009 IEEE 12th international conference on computer vision},
+  pages={2130--2137},
+  year={2009},
+  organization={IEEE}
+}
+% Song identification
+@inproceedings{ryynanen2008query,
+  title={Query by humming of midi and audio using locality sensitive hashing},
+  author={Ryynanen, Matti and Klapuri, Anssi},
+  booktitle={2008 IEEE International Conference on Acoustics, Speech and Signal Processing},
+  pages={2249--2252},
+  year={2008},
+  organization={IEEE}
+}
+% DNA sequence comparison
+@article{buhler2001efficient,
+  title={Efficient large-scale sequence comparison by locality-sensitive hashing},
+  author={Buhler, Jeremy},
+  journal={Bioinformatics},
+  volume={17},
+  number={5},
+  pages={419--428},
+  year={2001},
+  publisher={Oxford University Press}
+}
+% Subgraph matching
+@article{dutta2013symbol,
+  title={A symbol spotting approach in graphical documents by hashing serialized graphs},
+  author={Dutta, Anjan and Llad{\'o}s, Josep and Pal, Umapada},
+  journal={Pattern Recognition},
+  volume={46},
+  number={3},
+  pages={752--768},
+  year={2013},
+  publisher={Elsevier}
+}
+% Plagiarism detection
+@inproceedings{sood2011probabilistic,
+  title={Probabilistic near-duplicate detection using simhash},
+  author={Sood, Sadhan and Loguinov, Dmitri},
+  booktitle={Proceedings of the 20th ACM international conference on Information and knowledge management},
+  pages={1117--1126},
+  year={2011}
+}
+
+%================================================================
+% STRATEGIC CLASSIFICATION
+%================================================================
+% Introduces strategic classification
+@inproceedings{hardt2016strategic,
+  title={Strategic classification},
+  author={Hardt, Moritz and Megiddo, Nimrod and Papadimitriou, Christos and Wootters, Mary},
+  booktitle={Proceedings of the 2016 ACM conference on innovations in theoretical computer science},
+  pages={111--122},
+  year={2016}
+}
+
+@inproceedings{cai2015optimum,
+  title={Optimum statistical estimation with strategic data sources},
+  author={Cai, Yang and Daskalakis, Constantinos and Papadimitriou, Christos},
+  booktitle={Conference on Learning Theory},
+  pages={280--296},
+  year={2015},
+  organization={PMLR}
+}
+
+@inproceedings{chen2018strategyproof,
+  title={Strategyproof linear regression in high dimensions},
+  author={Chen, Yiling and Podimata, Chara and Procaccia, Ariel D and Shah, Nisarg},
+  booktitle={Proceedings of the 2018 ACM Conference on Economics and Computation},
+  pages={9--26},
+  year={2018}
+}
+
+% Play a classifier, observe how agents respond
+@inproceedings{dong2018strategic,
+  title={Strategic classification from revealed preferences},
+  author={Dong, Jinshuo and Roth, Aaron and Schutzman, Zachary and Waggoner, Bo and Wu, Zhiwei Steven},
+  booktitle={Proceedings of the 2018 ACM Conference on Economics and Computation},
+  pages={55--70},
+  year={2018}
+}
+
+@article{chen2020learning,
+  title={Learning Strategy-Aware Linear Classifiers},
+  author={Chen, Yiling and Liu, Yang and Podimata, Chara},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={15265--15276},
+  year={2020}
+}
+
+@inproceedings{bruckner2011stackelberg,
+  title={Stackelberg games for adversarial prediction problems},
+  author={Br{\"u}ckner, Michael and Scheffer, Tobias},
+  booktitle={Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining},
+  pages={547--555},
+  year={2011}
+}
+
+% How to learn classifiers that suppress manipulations but encourage constructive adaptations
+@article{chen2021linear,
+  title={Linear Classifiers that Encourage Constructive Adaptation},
+  author={Chen, Yatong and Wang, Jialu and Liu, Yang},
+  journal={arXiv preprint arXiv:2011.00355},
+  year={2021}
+}
+
+% Lipschitz classifiers deter manipulation
+@inproceedings{braverman2020role,
+  title={The Role of Randomness and Noise in Strategic Classification},
+  author={Braverman, Mark and Garg, Sumegha},
+  booktitle={1st Symposium on Foundations of Responsible Computing (FORC 2020)},
+  year={2020},
+  organization={Schloss Dagstuhl-Leibniz-Zentrum f{\"u}r Informatik}
+}
+
+%================================================================
+% STOCHASTIC CLASSIFIERS ARISING FROM CONSTRAINED OPTIMIZATION
+%================================================================
+% Computes a stochastic classifier that satisfies constraints expressed in terms of the confusion matrix
+@inproceedings{narasimhan2018learning,
+  title={Learning with complex loss functions and constraints},
+  author={Narasimhan, Harikrishna},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={1646--1654},
+  year={2018},
+  organization={PMLR}
+}
+% Computes stochastic classifiers that satisfies "rate constraints"
+@article{cotter2019optimization,
+  title={Optimization with Non-Differentiable Constraints with Applications to Fairness, Recall, Churn, and Other Goals.},
+  author={Cotter, Andrew and Jiang, Heinrich and Gupta, Maya R and Wang, Serena and Narayan, Taman and You, Seungil and Sridharan, Karthik},
+  journal={J. Mach. Learn. Res.},
+  volume={20},
+  number={172},
+  pages={1--59},
+  year={2019}
+}
+
+%================================================================
+% STOCHASTIC CLASSIFIERS SATISFYING FAIRNESS CONSTRAINTS
+%================================================================
+% Learns a group-fair ensemble from potentially unfair classifiers
+@inproceedings{grgic2017fairness,
+  title={On Fairness, Diversity, and Randomness in Algorithmic Decision Making},
+  author={Grgi{\'c}-Hla{\v{c}}a, Nina and Zafar, Muhammad Bilal and Gummadi, Krishna and Weller, Adrian},
+  booktitle={4th Workshop on Fairness, Accountability, and Transparency in Machine Learning},
+  year={2017}
+}
+% Learns a stochastic classifier satisfying group fairness
+@inproceedings{agarwal2018reductions,
+  title={A reductions approach to fair classification},
+  author={Agarwal, Alekh and Beygelzimer, Alina and Dudík, Miroslav and Langford, John and Wallach, Hanna},
+  booktitle={International Conference on Machine Learning},
+  pages={60--69},
+  year={2018},
+  organization={PMLR}
+}
+
+%================================================================
+% STOCHASTIC CLASSIFIERS ROBUST TO ADVERSARIAL ATTACK
+%================================================================
+@article{pinot2019theoretical,
+  title={Theoretical evidence for adversarial robustness through randomization},
+  author={Pinot, Rafael and Meunier, Laurent and Araujo, Alexandre and Kashima, Hisashi and Yger, Florian and Gouy-Pailler, Cedric and Atif, Jamal},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  pages={11838--11848},
+  year={2019}
+}
+@inproceedings{cohen2019certified,
+  title={Certified adversarial robustness via randomized smoothing},
+  author={Cohen, Jeremy and Rosenfeld, Elan and Kolter, Zico},
+  booktitle={International Conference on Machine Learning},
+  pages={1310--1320},
+  year={2019},
+  organization={PMLR}
+}
+@inproceedings{pinot2020randomization,
+  title={Randomization matters How to defend against strong adversarial attacks},
+  author={Pinot, Rafael and Ettedgui, Raphael and Rizk, Geovani and Chevaleyre, Yann and Atif, Jamal},
+  booktitle={International Conference on Machine Learning},
+  pages={7717--7727},
+  year={2020},
+  organization={PMLR}
+}
+
+%================================================================
+% STOCHASTIC CLASSIFIERS ARISING FROM ENSEMBLE METHODS
+%================================================================
+@inproceedings{dietterich2000ensemble,
+  title={Ensemble methods in machine learning},
+  author={Dietterich, Thomas G},
+  booktitle={International workshop on multiple classifier systems},
+  pages={1--15},
+  year={2000},
+  organization={Springer}
+}
+
+%================================================================
+% SAMPLE COMPLEXITY OF HASH FUNCTION FAMILIES
+%================================================================
+@misc{pairwise-independent-hashing-notes,
+  author = "Ronitt Rubinfeld",
+  title  = "{MIT 6.842}",
+  note   = "URL: \url{https://people.csail.mit.edu/ronitt/COURSE/S12/handouts/lec5.pdf}",
+  year   = 2012,
+}
+
+@misc{lsh-euclidean-distance-notes,
+  author = "Cyrus Rashtchian",
+  title  = "{Lecture 09: LSH}",
+  note   = "URL: \url{http://madscience.ucsd.edu/notes/lec9.pdf}",
+  year   = 2019,
+}

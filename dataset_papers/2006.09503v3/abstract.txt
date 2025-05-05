@@ -1,0 +1,13 @@
+Many state-of-the-art ML results have been obtained by scaling up the number
+of parameters in existing models. However, parameters and activations for such
+large models often do not fit in the memory of a single accelerator device;
+this means that it is necessary to distribute training of large models over
+multiple accelerators. In this work, we propose PipeDream-2BW, a system that
+supports memory-efficient pipeline parallelism. PipeDream-2BW uses a novel
+pipelining and weight gradient coalescing strategy, combined with the double
+buffering of weights, to ensure high throughput, low memory footprint, and
+weight update semantics similar to data parallelism. In addition, PipeDream-2BW
+automatically partitions the model over the available hardware resources, while
+respecting hardware constraints such as memory capacities of accelerators and
+interconnect topologies. PipeDream-2BW can accelerate the training of large GPT
+and BERT language models by up to 20$\times$ with similar final model accuracy.

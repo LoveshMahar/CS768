@@ -1,0 +1,22 @@
+Normalizing flows are among the most popular paradigms in generative
+modeling, especially for images, primarily because we can efficiently evaluate
+the likelihood of a data point. This is desirable both for evaluating the fit
+of a model, and for ease of training, as maximizing the likelihood can be done
+by gradient descent. However, training normalizing flows comes with
+difficulties as well: models which produce good samples typically need to be
+extremely deep -- which comes with accompanying vanishing/exploding gradient
+problems. A very related problem is that they are often poorly conditioned:
+since they are parametrized as invertible maps from $\mathbb{R}^d \to
+\mathbb{R}^d$, and typical training data like images intuitively is
+lower-dimensional, the learned maps often have Jacobians that are close to
+being singular.
+  In our paper, we tackle representational aspects around depth and
+conditioning of normalizing flows: both for general invertible architectures,
+and for a particular common architecture, affine couplings. We prove that
+$\Theta(1)$ affine coupling layers suffice to exactly represent a permutation
+or $1 \times 1$ convolution, as used in GLOW, showing that representationally
+the choice of partition is not a bottleneck for depth. We also show that
+shallow affine coupling networks are universal approximators in Wasserstein
+distance if ill-conditioning is allowed, and experimentally investigate related
+phenomena involving padding. Finally, we show a depth lower bound for general
+flow architectures with few neurons per layer and bounded Lipschitz constant.

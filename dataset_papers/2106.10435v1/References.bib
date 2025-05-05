@@ -1,0 +1,810 @@
+% Encoding: UTF-8
+
+% Background papers and books
+
+@incollection{Cutkosky_NIPS2019,
+title = {Momentum-Based Variance Reduction in Non-Convex {SGD}},
+author = {Cutkosky, Ashok and Orabona, Francesco},
+booktitle = {Advances in Neural Information Processing Systems 32},
+pages = {15236--15245},
+year = {2019},
+publisher = {Curran Associates, Inc.},
+}
+
+@inproceedings{Drori_ICML_2020complexity,
+  title={The complexity of finding stationary points with stochastic gradient descent},
+  author={Drori, Yoel and Shamir, Ohad},
+  booktitle={International Conference on Machine Learning},
+  pages={2658--2667},
+  year={2020},
+  organization={PMLR}
+}
+
+
+@inproceedings{Zinkevich_NIPS_2010,
+  title={Parallelized Stochastic Gradient Descent.},
+  author={Zinkevich, Martin and Weimer, Markus and Smola, Alexander J and Li, Lihong},
+  booktitle={NIPS},
+  volume={4},
+  number={1},
+  pages={4},
+  year={2010},
+  organization={Citeseer}
+}
+
+@article{Zhang_ParallelSGD_2016,
+  title={Parallel SGD: When does averaging help?},
+  author={Zhang, Jian and De Sa, Christopher and Mitliagkas, Ioannis and R{\'e}, Christopher},
+  journal={arXiv preprint arXiv:1606.07365},
+  year={2016}
+}
+
+@inproceedings{Zhou_KStep_IJCAI_2018,
+  title     = {On the Convergence Properties of a K-step Averaging Stochastic Gradient Descent Algorithm for Nonconvex Optimization},
+  author    = {Fan Zhou and Guojing Cong},
+  booktitle = {Proceedings of the Twenty-Seventh International Joint Conference on
+               Artificial Intelligence, {IJCAI-18}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},             
+  pages     = {3219--3227},
+  year      = {2018},
+  month     = {7},
+  doi       = {10.24963/ijcai.2018/447},
+  url       = {https://doi.org/10.24963/ijcai.2018/447},
+}
+
+@article{Sanghvi_FedSTEPH_2020,
+  title={Improved Convergence Rates for Non-Convex Federated Learning with Compression},
+  author={Das, Rudrajit and Hashemi, Abolfazl and Sanghavi, Sujay and Dhillon, Inderjit S},
+  journal={arXiv preprint arXiv:2012.04061},
+  year={2020}
+}
+
+
+@article{Li_Arxiv_2018_FedProx,
+  title={Federated optimization in heterogeneous networks},
+  author={Li, Tian and Sahu, Anit Kumar and Zaheer, Manzil and Sanjabi, Maziar and Talwalkar, Ameet and Smith, Virginia},
+  journal={arXiv preprint arXiv:1812.06127},
+  year={2018}
+}
+
+@misc{Zhang_FedPD_Arxiv_2020,
+    title={FedPD: A Federated Learning Framework with Optimal Rates and Adaptivity to Non-IID Data},
+    author={Xinwei Zhang and Mingyi Hong and Sairaj Dhople and Wotao Yin and Yang Liu},
+    year={2020},
+    eprint={2005.11418},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@misc{Woodworth_Minibatch_Arxiv_2020,
+    title={Minibatch vs Local SGD for Heterogeneous Distributed Learning},
+    author={Blake Woodworth and Kumar Kshitij Patel and Nathan Srebro},
+    year={2020},
+    eprint={2006.04735},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+
+
+@article{Woodworth_Local_Arxiv_2020,
+  title={Is Local SGD Better than Minibatch SGD?},
+  author={Woodworth, Blake and Patel, Kumar Kshitij and Stich, Sebastian U and Dai, Zhen and Bullins, Brian and McMahan, H Brendan and Shamir, Ohad and Srebro, Nathan},
+  journal={arXiv preprint arXiv:2002.07839},
+  year={2020}
+}
+
+@misc{Lin_Don't_Arxiv_2018,
+    title={Don't Use Large Mini-Batches, Use Local SGD},
+    author={Tao Lin and Sebastian U. Stich and Kumar Kshitij Patel and Martin Jaggi},
+    year={2018},
+    eprint={1808.07217},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@misc{Khanduri_DSTORM_2020,
+    title={Distributed Stochastic Non-Convex Optimization: Momentum-Based Variance Reduction},
+    author={Prashant Khanduri and Pranay Sharma and Swatantra Kafle and Saikiran Bulusu and Ketan Rajawat and Pramod K. Varshney},
+    year={2020},
+    eprint={2005.00224},
+    archivePrefix={arXiv},
+    primaryClass={math.OC}
+}
+
+@book{goodfellow16book,
+  title={Deep Learning},
+  author={Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron},
+  year={2016},
+  publisher={MIT press}
+}
+
+@inproceedings{xu17nips,
+  title={Speeding up Latent Variable Gaussian Graphical Model Estimation via Nonconvex Optimization},
+  author={Xu, Pan and Ma, Jian and Gu, Quanquan},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={1933--1944},
+  year={2017}
+}
+
+@inproceedings{ge15colt,
+  title={Escaping from Saddle Points — Online Stochastic Gradient for Tensor Decomposition},
+  author={Ge, Rong and Huang, Furong and Jin, Chi and Yuan, Yang},
+  booktitle={Conference on Learning Theory},
+  pages={797--842},
+  year={2015}
+}
+
+
+% On linear speedup
+@misc{Yu_Jin_Arxiv_2019linear,
+    title={On the Linear Speedup Analysis of Communication Efficient Momentum SGD for Distributed Non-Convex Optimization},
+    author={Hao Yu and Rong Jin and Sen Yang},
+    year={2019},
+    eprint={1905.03817},
+    archivePrefix={arXiv},
+    primaryClass={math.OC}
+}
+
+@misc{Yu_Zhu_2018parallel,
+    title={Parallel Restarted SGD with Faster Convergence and Less Communication: Demystifying Why Model Averaging Works for Deep Learning},
+    author={Hao Yu and Sen Yang and Shenghuo Zhu},
+    year={2018},
+    eprint={1807.06629},
+    archivePrefix={arXiv},
+    primaryClass={math.OC}
+}
+
+@misc{reddi2020adaptive,
+    title={Adaptive Federated Optimization},
+    author={Sashank Reddi and Zachary Charles and Manzil Zaheer and Zachary Garrett and Keith Rush and Jakub Konečný and Sanjiv Kumar and H. Brendan McMahan},
+    year={2020},
+    eprint={2003.00295},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@misc{Wang_Joshi_Arxiv_2018cooperative,
+    title={Cooperative SGD: A unified Framework for the Design and Analysis of Communication-Efficient SGD Algorithms},
+    author={Jianyu Wang and Gauri Joshi},
+    year={2018},
+    eprint={1808.07576},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@inproceedings{Dean_NIPS_2012large,
+  title={Large scale distributed deep networks},
+  author={Dean, Jeffrey and Corrado, Greg and Monga, Rajat and Chen, Kai and Devin, Matthieu and Mao, Mark and Ranzato, Marc'aurelio and Senior, Andrew and Tucker, Paul and Yang, Ke and others},
+  booktitle={Advances in neural information processing systems},
+  pages={1223--1231},
+  year={2012}
+}
+
+@article{Dekel_Shamir_JMLR_2012optimal,
+  title={Optimal distributed online prediction using mini-batches},
+  author={Dekel, Ofer and Gilad-Bachrach, Ran and Shamir, Ohad and Xiao, Lin},
+  journal={Journal of Machine Learning Research},
+  volume={13},
+  number={Jan},
+  pages={165--202},
+  year={2012}
+}
+
+@incollection{Li_Smola_NIPS_2014_CommunicationEfficient,
+title = {Communication Efficient Distributed Machine Learning with the Parameter Server},
+author = {Li, Mu and Andersen, David G and Smola, Alexander J and Yu, Kai},
+booktitle = {Advances in Neural Information Processing Systems 27},
+editor = {Z. Ghahramani and M. Welling and C. Cortes and N. D. Lawrence and K. Q. Weinberger},
+pages = {19--27},
+year = {2014},
+publisher = {Curran Associates, Inc.},
+url = {}
+}
+
+
+
+@article{chi19tsp,
+  title={Nonconvex Optimization Meets Low-rank Matrix Factorization: An Overview},
+  author={Chi, Yuejie and Lu, Yue M and Chen, Yuxin},
+  journal={IEEE Transactions on Signal Processing},
+  volume={67},
+  number={20},
+  pages={5239--5269},
+  year={2019},
+  publisher={IEEE}
+}
+
+@inproceedings{netrapalli14nips,
+  title={Non-convex Robust PCA},
+  author={Netrapalli, Praneeth and Niranjan, UN and Sanghavi, Sujay and Anandkumar, Animashree and Jain, Prateek},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={1107--1115},
+  year={2014}
+}
+
+@inproceedings{kang15icdm,
+  title={Robust PCA via Nonconvex Rank Approximation},
+  author={Kang, Zhao and Peng, Chong and Cheng, Qiang},
+  booktitle={2015 IEEE International Conference on Data Mining},
+  pages={211--220},
+  year={2015},
+  organization={IEEE}
+}
+
+@article{Arjevani_Carmon_2019_LowerBounds,
+  title={Lower Bounds for Non-Convex Stochastic Optimization},
+  author={Arjevani, Yossi and Carmon, Yair and Duchi, John C and Foster, Dylan J and Srebro, Nathan and Woodworth, Blake},
+  journal={arXiv preprint arXiv:1912.02365},
+  year={2019}
+}
+
+@article{Reddi_Arxiv_2019_Adam,
+    title={On the Convergence of Adam and Beyond},
+  author={Reddi, Sashank J and Kale, Satyen and Kumar, Sanjiv},
+  journal={arXiv preprint arXiv:1904.09237},
+  year={2019}
+}
+
+@article{Li_Orabona_Arxiv_2018_convergence,
+    title={On the Convergence of Stochastic Gradient Descent with Adaptive Stepsizes},
+  author={Li, Xiaoyu and Orabona, Francesco},
+  journal={arXiv preprint arXiv:1805.08114},
+  year={2018}
+}
+
+
+@inproceedings{Zhu_Hazan_ICML_2016,
+  title={Variance reduction for faster non-convex optimization},
+  author={Allen-Zhu, Zeyuan and Hazan, Elad},
+  booktitle={International conference on machine learning},
+  pages={699--707},
+  year={2016}
+}
+
+@inproceedings{Reddi_ICML_2016,
+  title={Stochastic variance reduction for nonconvex optimization},
+  author={Reddi, Sashank J and Hefny, Ahmed and Sra, Suvrit and P{\'o}czos, Barnab{\'a}s and Smola, Alex},
+  booktitle={International conference on machine learning},
+  pages={314--323},
+  year={2016}
+}
+
+@inproceedings{Lei_Jordan_SCSG,
+	title={Non-convex finite-sum optimization via scsg methods},
+	author={Lei, Lihua and Ju, Cheng and Chen, Jianbo and Jordan, Michael I},
+	booktitle={Advances in Neural Information Processing Systems},
+	pages={2348--2358},
+	year={2017}
+}
+
+@article{Duchi_JMLR_2011_adaptive,
+  title={Adaptive subgradient methods for online learning and stochastic optimization},
+  author={Duchi, John and Hazan, Elad and Singer, Yoram},
+  journal={Journal of machine learning research},
+  volume={12},
+  number={Jul},
+  pages={2121--2159},
+  year={2011}
+}
+
+@article{Tieleman_Hinton_Lecture_2012RMSProp,
+  title={Lecture 6.5-rmsprop: Divide the gradient by a running average of its recent magnitude},
+  author={Tieleman, Tijmen and Hinton, Geoffrey},
+  journal={COURSERA: Neural networks for machine learning},
+  volume={4},
+  number={2},
+  pages={26--31},
+  year={2012}
+}
+
+@article{Kingma_Arxiv_2014_adam,
+  title={Adam: A method for stochastic optimization},
+  author={Kingma, Diederik P and Ba, Jimmy},
+  journal={arXiv preprint arXiv:1412.6980},
+  year={2014}
+}
+
+@article{Xie_Arxiv_2019AdaAlter,
+    title={Local AdaAlter: Communication-Efficient Stochastic Gradient Descent with Adaptive Learning Rates},
+  author={Xie, Cong and Koyejo, Oluwasanmi and Gupta, Indranil and Lin, Haibin},
+  journal={arXiv preprint arXiv:1911.09030},
+  year={2019}
+}
+
+ @article{Bottou_SIAM_2018_Review,
+author = {Bottou, Léon and Curtis, Frank E. and Nocedal, Jorge},
+title = {Optimization Methods for Large-Scale Machine Learning},
+journal = {SIAM Review},
+volume = {60},
+number = {2},
+pages = {223-311},
+year = {2018},
+doi = {10.1137/16M1080173},
+}
+
+@incollection{Johnson_NIPS_2013,
+	title = {Accelerating Stochastic Gradient Descent using Predictive Variance Reduction},
+	author = {Johnson, Rie and Zhang, Tong},
+	booktitle = {Advances in Neural Information Processing Systems 26},
+	pages = {315--323},
+	year = {2013},
+	publisher = {Curran Associates, Inc.},
+}
+
+@article{Ward_Arxiv_2019_adagrad,
+    title={AdaGrad stepsizes: Sharp convergence over nonconvex landscapes, from any initialization},
+  author={Ward, Rachel and Wu, Xiaoxia and Bottou, Leon},
+  journal={arXiv preprint arXiv:1806.01811},
+  year={2018}
+}
+
+ @article{Khanduri_Arxiv_2019,
+  title={Byzantine Resilient Non-Convex SVRG with Distributed Batch Gradient Computations},
+  author={Khanduri, Prashant and Bulusu, Saikiran and Sharma, Pranay and Varshney, Pramod K},
+  journal={arXiv preprint arXiv:1912.04531},
+  year={2019}
+}
+
+@inproceedings{Fang_NIPS_2018_spider,
+  title={{S}pider: Near-optimal non-convex optimization via stochastic path-integrated differential estimator},
+  author={Fang, Cong and Li, Chris Junchi and Lin, Zhouchen and Zhang, Tong},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={689--699},
+  year={2018}
+}
+
+@inproceedings{Zhou_NIPS_2018,
+  title={Stochastic nested variance reduced gradient descent for nonconvex optimization},
+  author={Zhou, Dongruo and Xu, Pan and Gu, Quanquan},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={3921--3932},
+  year={2018}
+}
+
+@article{Sun_Hong_Arxiv_2019,
+    title={Improving the Sample and Communication Complexity for Decentralized Non-Convex Optimization: A Joint Gradient Estimation and Tracking Approach},
+  author={Sun, Haoran and Lu, Songtao and Hong, Mingyi},
+  journal={arXiv preprint arXiv:1910.05857},
+  year={2019}
+}
+
+@article{Sharma_Arxiv_2019,
+  title={Parallel Restarted {SPIDER} -- Communication Efficient Distributed Nonconvex Optimization with Optimal Computation Complexity},
+  author={Sharma, Pranay and Khanduri, Prashant and Bulusu, Saikiran and Rajawat, Ketan and Varshney, Pramod K},
+  journal={arXiv preprint arXiv:1912.06036},
+  year={2019}
+}
+@article{Dinh_Arxiv_2019,
+    title={Hybrid Stochastic Gradient Descent Algorithms for Stochastic Nonconvex Optimization},
+  author={Tran-Dinh, Quoc and Pham, Nhan H and Phan, Dzung T and Nguyen, Lam M},
+  journal={arXiv preprint arXiv:1905.05920},
+  year={2019}
+}
+
+@inproceedings{zinkevich03icml,
+  title={Online convex programming and generalized infinitesimal gradient ascent},
+  author={Zinkevich, Martin},
+  booktitle={Proceedings of the 20th International Conference on Machine Learning (ICML-03)},
+  pages={928--936},
+  year={2003}
+}
+
+@article{hazan07strong_convex,
+  title={Logarithmic regret algorithms for online convex optimization},
+  author={Hazan, Elad and Agarwal, Amit and Kale, Satyen},
+  journal={Machine Learning},
+  volume={69},
+  number={2-3},
+  pages={169--192},
+  year={2007},
+  publisher={Springer}
+}
+
+@article{hazan16book,
+  title={Introduction to online convex optimization},
+  author={Hazan, Elad and others},
+  journal={Foundations and Trends{\textregistered} in Optimization},
+  volume={2},
+  number={3-4},
+  pages={157--325},
+  year={2016},
+  publisher={Now Publishers, Inc.}
+}
+
+@article{shalev12book,
+  title={Online learning and online convex optimization},
+  author={Shalev-Shwartz, Shai and others},
+  journal={Foundations and Trends{\textregistered} in Machine Learning},
+  volume={4},
+  number={2},
+  pages={107--194},
+  year={2012},
+  publisher={Now Publishers, Inc.}
+}
+
+@book{boyd04book,
+  title={Convex optimization},
+  author={Boyd, Stephen and Vandenberghe, Lieven},
+  year={2004},
+  publisher={Cambridge university press}
+}
+
+% Bregman Divergence
+@incollection{bauschke01bregman,
+  title={Joint and separate convexity of the Bregman distance},
+  author={Bauschke, Heinz H and Borwein, Jonathan M},
+  booktitle={Studies in Computational Mathematics},
+  volume={8},
+  pages={23--36},
+  year={2001},
+  publisher={Elsevier}
+}
+
+@inproceedings{jadbabaie15aistats,
+  title={Online optimization: Competing with dynamic comparators},
+  author={Jadbabaie, Ali and Rakhlin, Alexander and Shahrampour, Shahin and Sridharan, Karthik},
+  booktitle={Artificial Intelligence and Statistics},
+  pages={398--406},
+  year={2015}
+}
+
+@inproceedings{Karimireddy_scaffold_2020,
+  title={SCAFFOLD: Stochastic controlled averaging for federated learning},
+  author={Karimireddy, Sai Praneeth and Kale, Satyen and Mohri, Mehryar and Reddi, Sashank and Stich, Sebastian and Suresh, Ananda Theertha},
+  booktitle={International Conference on Machine Learning},
+  pages={5132--5143},
+  year={2020},
+  organization={PMLR}
+}
+
+@article{Karimireddy_Arxiv_2020mime,
+  title={Mime: Mimicking centralized stochastic algorithms in federated learning},
+  author={Karimireddy, Sai Praneeth and Jaggi, Martin and Kale, Satyen and Mohri, Mehryar and Reddi, Sashank J and Stich, Sebastian U and Suresh, Ananda Theertha},
+  journal={arXiv preprint arXiv:2008.03606},
+  year={2020}
+}
+
+@inproceedings{Yu_Jin_PMLR_2019dynamicbatches,
+  title={On the computation and communication complexity of parallel SGD with dynamic batch sizes for stochastic non-convex optimization},
+  author={Yu, Hao and Jin, Rong},
+  booktitle={International Conference on Machine Learning},
+  pages={7174--7183},
+  year={2019},
+  organization={PMLR}
+}
+
+% Dynamic regret papers - single node
+
+@article{hall15dynamic_jstsp,
+  title={Online convex optimization in dynamic environments},
+  author={Hall, Eric C and Willett, Rebecca M},
+  journal={IEEE Journal of Selected Topics in Signal Processing},
+  volume={9},
+  number={4},
+  pages={647--662},
+  year={2015},
+  publisher={IEEE}
+}
+
+@article{besbes15dynamic_or,
+  title={Non-stationary stochastic optimization},
+  author={Besbes, Omar and Gur, Yonatan and Zeevi, Assaf},
+  journal={Operations research},
+  volume={63},
+  number={5},
+  pages={1227--1244},
+  year={2015},
+  publisher={INFORMS}
+}
+
+% Dynamic regret papers - single node - with constraints
+@article{chen17dynamic_tsp,
+  title={An online convex optimization approach to proactive network resource allocation},
+  author={Chen, Tianyi and Ling, Qing and Giannakis, Georgios B},
+  journal={IEEE Transactions on Signal Processing},
+  volume={65},
+  number={24},
+  pages={6350--6364},
+  year={2017},
+  publisher={IEEE}
+}
+
+@article{cao18dynamic_jstsp,
+  title={A virtual-queue-based algorithm for constrained online convex optimization with applications to data center resource allocation},
+  author={Cao, Xuanyu and Zhang, Junshan and Poor, H Vincent},
+  journal={IEEE Journal of Selected Topics in Signal Processing},
+  volume={12},
+  number={4},
+  pages={703--716},
+  year={2018},
+  publisher={IEEE}
+}
+
+% Dynamic regret papers - dist.
+@article{shahrampour17tae,
+  title={Distributed online optimization in dynamic environments using mirror descent},
+  author={Shahrampour, Shahin and Jadbabaie, Ali},
+  journal={IEEE Transactions on Automatic Control},
+  volume={63},
+  number={3},
+  pages={714--725},
+  year={2017},
+  publisher={IEEE}
+}
+
+@article{yi19dynamic_coupled,
+  title={Distributed Online Convex Optimization with Time-Varying Coupled Inequality Constraints},
+  author={Yi, Xinlei and Li, Xiuxian and Xie, Lihua and Johansson, Karl H},
+  journal={arXiv preprint arXiv:1903.04277},
+  year={2019}
+}
+
+@article{zavlanos19grad_track,
+  title={Distributed Online Convex Optimization with Improved Dynamic Regret},
+  author={Zhang, Yan and Ravier, Robert J and Tarokh, Vahid and Zavlanos, Michael M},
+  journal={arXiv preprint arXiv:1911.05127},
+  year={2019}
+}
+
+% Static regret - constraints - single node
+@inproceedings{yuan18cumul_nips,
+  title={Online convex optimization for cumulative constraints},
+  author={Yuan, Jianjun and Lamperski, Andrew},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={6137--6146},
+  year={2018}
+}
+
+@article{mahdavi12jmlr,
+  title={Trading regret for efficiency: online convex optimization with long term constraints},
+  author={Mahdavi, Mehrdad and Jin, Rong and Yang, Tianbao},
+  journal={Journal of Machine Learning Research},
+  volume={13},
+  number={Sep},
+  pages={2503--2528},
+  year={2012}
+}
+
+@article{Konevcny_Arxiv_2016,
+  title={Federated optimization: Distributed machine learning for on-device intelligence},
+  author={Kone{\v{c}}n{\`y}, Jakub and McMahan, H Brendan and Ramage, Daniel and Richt{\'a}rik, Peter},
+  journal={arXiv preprint arXiv:1610.02527},
+  year={2016}
+}
+
+@inproceedings{Mcmahan_PMLR_2017,
+  title={Communication-efficient learning of deep networks from decentralized data},
+  author={McMahan, Brendan and Moore, Eider and Ramage, Daniel and Hampson, Seth and y Arcas, Blaise Aguera},
+  booktitle={Artificial Intelligence and Statistics},
+  pages={1273--1282},
+  year={2017},
+  organization={PMLR}
+}
+
+
+@article{Leaute_JAIR_2013,
+  title={Protecting privacy through distributed computation in multi-agent decision making},
+  author={L{\'e}aut{\'e}, Thomas and Faltings, Boi},
+  journal={Journal of Artificial Intelligence Research},
+  volume={47},
+  pages={649--695},
+  year={2013}
+}
+
+@article{Chang_Hong_Arxiv_2020,
+    title={Distributed Learning in the Non-Convex World: From Batch to Streaming Data, and Beyond},
+  author={Chang, Tsung-Hui and Hong, Mingyi and Wai, Hoi-To and Zhang, Xinwei and Lu, Songtao},
+  journal={arXiv preprint arXiv:2001.04786},
+  year={2020}
+}
+
+@article{Xing_Engineering_2016,
+  title={Strategies and principles of distributed machine learning on big data},
+  author={Xing, Eric P and Ho, Qirong and Xie, Pengtao and Wei, Dai},
+  journal={Engineering},
+  volume={2},
+  number={2},
+  pages={179--195},
+  year={2016},
+  publisher={Elsevier}
+}
+
+@inproceedings{jenatton16icml,
+  title={Adaptive Algorithms for Online Convex Optimization with Long-term Constraints},
+  author={Jenatton, Rodolphe and Huang, Jim and Archambeau, Cedric},
+  booktitle={International Conference on Machine Learning},
+  pages={402--411},
+  year={2016}
+}
+
+
+@article{Ghadimi_Siam_2013_SGD,
+  title={Stochastic first-and zeroth-order methods for nonconvex stochastic programming},
+  author={Ghadimi, Saeed and Lan, Guanghui},
+  journal={SIAM Journal on Optimization},
+  volume={23},
+  number={4},
+  pages={2341--2368},
+  year={2013},
+  publisher={SIAM}
+}
+
+@inproceedings{sun17icml,
+  title={Safety-aware algorithms for adversarial contextual bandit},
+  author={Sun, Wen and Dey, Debadeepta and Kapoor, Ashish},
+  booktitle={Proceedings of the 34th International Conference on Machine Learning-Volume 70},
+  pages={3280--3288},
+  year={2017},
+  organization={JMLR. org}
+}
+
+@inproceedings{neely17stoch_nips,
+  title={Online convex optimization with stochastic constraints},
+  author={Yu, Hao and Neely, Michael and Wei, Xiaohan},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={1428--1438},
+  year={2017}
+}
+
+% Static regret - constraints - dist.
+
+@article{ribeiro19static_dist_tv_constr,
+  title={Distributed Constrained Online Learning},
+  author={Paternain, Santiago and Lee, Soomin and Zavlanos, Michael M and Ribeiro, Alejandro},
+  journal={arXiv preprint arXiv:1903.06310},
+  year={2019}
+}
+
+% Static regret - constraints Coupled
+@article{li18static_coupled,
+  title={Distributed Online Optimization for Multi-Agent Networks with Coupled Inequality Constraints},
+  author={Li, Xiuxian and Yi, Xinlei and Xie, Lihua},
+  journal={arXiv preprint arXiv:1805.05573},
+  year={2018}
+}
+
+@article{lee17static_coupled,
+  title={On the sublinear regret of distributed primal-dual algorithms for online constrained optimization},
+  author={Lee, Soomin and Zavlanos, Michael M},
+  journal={arXiv preprint arXiv:1705.11128},
+  year={2017}
+}
+
+% Saddle point algorithm
+@article{nedic09saddle,
+  title={Subgradient methods for saddle-point problems},
+  author={Nedi{\'c}, Angelia and Ozdaglar, Asuman},
+  journal={Journal of optimization theory and applications},
+  volume={142},
+  number={1},
+  pages={205--228},
+  year={2009},
+  publisher={Springer}
+}
+
+@article{koppel15saddle_tsp,
+  title={A saddle point algorithm for networked online convex optimization},
+  author={Koppel, Alec and Jakubiec, Felicia Y and Ribeiro, Alejandro},
+  journal={IEEE Transactions on Signal Processing},
+  volume={63},
+  number={19},
+  pages={5149--5164},
+  year={2015},
+  publisher={IEEE}
+}
+
+@inproceedings{Nguyen_ICML_2017_SARAH,
+  title={SARAH: A novel method for machine learning problems using stochastic recursive gradient},
+  author={Nguyen, Lam M and Liu, Jie and Scheinberg, Katya and Tak{\'a}{\v{c}}, Martin},
+  booktitle={Proceedings of the 34th International Conference on Machine Learning-Volume 70},
+  pages={2613--2621},
+  year={2017},
+  organization={JMLR. org}
+}
+
+ 
+
+@inproceedings{Wang_NIPS_2019_SpiderBoost,
+  title={{S}pider{B}oost and Momentum: Faster Variance Reduction Algorithms},
+  author={Wang, Zhe and Ji, Kaiyi and Zhou, Yi and Liang, Yingbin and Tarokh, Vahid},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={2403--2413},
+  year={2019}
+}
+
+@misc{Yang_ICLR_2021,
+      title={Achieving Linear Speedup with Partial Worker Participation in Non-IID Federated Learning}, 
+      author={Haibo Yang and Minghong Fang and Jia Liu},
+      year={2021},
+      eprint={2101.11203},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{Khaled_Arxiv_2019,
+  title={Better communication complexity for local sgd},
+  author={Khaled, Ahmed and Mishchenko, Konstantin and Richt{\'a}rik, Peter},
+  journal={arXiv},
+  year={2019},
+}
+
+@article{Stich_Arxiv_Local_2018,
+  title={Local SGD converges fast and communicates little},
+  author={Stich, Sebastian U},
+  journal={arXiv preprint arXiv:1805.09767},
+  year={2018}
+}
+
+@inproceedings{Koloskova_PMLR_2020,
+  title={A unified theory of decentralized SGD with changing topology and local updates},
+  author={Koloskova, Anastasia and Loizou, Nicolas and Boreiri, Sadra and Jaggi, Martin and Stich, Sebastian},
+  booktitle={International Conference on Machine Learning},
+  pages={5381--5393},
+  year={2020},
+  organization={PMLR}
+}
+
+
+@article{Sattler_IEEETNN_2019,
+  title={Robust and communication-efficient federated learning from non-iid data},
+  author={Sattler, Felix and Wiedemann, Simon and M{\"u}ller, Klaus-Robert and Samek, Wojciech},
+  journal={IEEE transactions on neural networks and learning systems},
+  volume={31},
+  number={9},
+  pages={3400--3413},
+  year={2019},
+  publisher={IEEE}
+}
+
+@article{Zhao_Arxiv_FedNonIID_2018,
+  title={Federated learning with non-iid data},
+  author={Zhao, Yue and Li, Meng and Lai, Liangzhen and Suda, Naveen and Civin, Damon and Chandra, Vikas},
+  journal={arXiv preprint arXiv:1806.00582},
+  year={2018}
+}
+
+@article{Zhou_NIPS_2018_SNVRG,
+  title={Stochastic nested variance reduction for nonconvex optimization},
+  author={Zhou, Dongruo and Xu, Pan and Gu, Quanquan},
+  journal={arXiv preprint arXiv:1806.07811},
+  year={2018}
+}
+
+
+@article{Wang_ICLR_2019slowmo,
+  title={SlowMo: Improving communication-efficient distributed SGD with slow momentum},
+  author={Wang, Jianyu and Tantia, Vinayak and Ballas, Nicolas and Rabbat, Michael},
+  journal={arXiv preprint arXiv:1910.00643},
+  year={2019}
+}
+
+@article{Liang_Arxiv_2019_VRL-SGD,
+  title={Variance reduced local SGD with lower communication complexity},
+  author={Liang, Xianfeng and Shen, Shuheng and Liu, Jingchang and Pan, Zhen and Chen, Enhong and Cheng, Yifei},
+  journal={arXiv preprint arXiv:1912.12844},
+  year={2019}
+}
+
+@article{Mcmahan_NowPublishers_2021_FLReview,
+  title={Advances and open problems in federated learning},
+  author={McMahan, H Brendan and others},
+  journal={Foundations and Trends{\textregistered} in Machine Learning},
+  volume={14},
+  number={1},
+  year={2021},
+  publisher={Now Publishers, Inc.}
+}
+
+@article{Li_SPM_2020_FLReview,
+  title={Federated learning: Challenges, methods, and future directions},
+  author={Li, Tian and Sahu, Anit Kumar and Talwalkar, Ameet and Smith, Virginia},
+  journal={IEEE Signal Processing Magazine},
+  volume={37},
+  number={3},
+  pages={50--60},
+  year={2020},
+  publisher={IEEE}
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

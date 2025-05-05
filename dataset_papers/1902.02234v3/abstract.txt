@@ -1,0 +1,20 @@
+SARSA is an on-policy algorithm to learn a Markov decision process policy in
+reinforcement learning. We investigate the SARSA algorithm with linear function
+approximation under the non-i.i.d.\ data, where a single sample trajectory is
+available. With a Lipschitz continuous policy improvement operator that is
+smooth enough, SARSA has been shown to converge asymptotically
+\cite{perkins2003convergent,melo2008analysis}. However, its non-asymptotic
+analysis is challenging and remains unsolved due to the non-i.i.d. samples and
+the fact that the behavior policy changes dynamically with time. In this paper,
+we develop a novel technique to explicitly characterize the stochastic bias of
+a type of stochastic approximation procedures with time-varying Markov
+transition kernels. Our approach enables non-asymptotic convergence analyses of
+this type of stochastic approximation algorithms, which may be of independent
+interest. Using our bias characterization technique and a gradient descent type
+of analysis, we provide the finite-sample analysis on the mean square error of
+the SARSA algorithm. We then further study a fitted SARSA algorithm, which
+includes the original SARSA algorithm and its variant in
+\cite{perkins2003convergent} as special cases. This fitted SARSA algorithm
+provides a more general framework for \textit{iterative} on-policy fitted
+policy iteration, which is more memory and computationally efficient. For this
+fitted SARSA algorithm, we also provide its finite-sample analysis.

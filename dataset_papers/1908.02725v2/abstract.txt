@@ -1,0 +1,17 @@
+Among the very first variance reduced stochastic methods for solving the
+empirical risk minimization problem was the SVRG method (Johnson & Zhang 2013).
+SVRG is an inner-outer loop based method, where in the outer loop a reference
+full gradient is evaluated, after which $m \in \mathbb{N}$ steps of an inner
+loop are executed where the reference gradient is used to build a variance
+reduced estimate of the current gradient. The simplicity of the SVRG method and
+its analysis have led to multiple extensions and variants for even non-convex
+optimization. We provide a more general analysis of SVRG than had been
+previously done by using arbitrary sampling, which allows us to analyse
+virtually all forms of mini-batching through a single theorem. Furthermore, our
+analysis is focused on more practical variants of SVRG including a new variant
+of the loopless SVRG (Hofman et al 2015, Kovalev et al 2019, Kulunchakov and
+Mairal 2019) and a variant of k-SVRG (Raj and Stich 2018) where $m=n$ and where
+$n$ is the number of data points. Since our setup and analysis reflect what is
+done in practice, we are able to set the parameters such as the mini-batch size
+and step size using our theory in such a way that produces a more efficient
+algorithm in practice, as we show in extensive numerical experiments.

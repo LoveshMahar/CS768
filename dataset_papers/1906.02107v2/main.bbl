@@ -1,0 +1,2182 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{none/global/}
+  \entry{Courbariaux2016}{article}{}
+    \name{author}{5}{}{%
+      {{hash=CM}{%
+         family={Courbariaux},
+         familyi={C\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HI}{%
+         family={Hubara},
+         familyi={H\bibinitperiod},
+         given={Itay},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Soudry},
+         familyi={S\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=EYR}{%
+         family={El-Yaniv},
+         familyi={E\bibinitperiod-Y\bibinitperiod},
+         given={Ran},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CM+1}
+    \strng{fullhash}{CMHISDEYRBY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We introduce a method to train Binarized Neural Networks (BNNs) - neural
+  networks with binary weights and activations at run-time. At training-time
+  the binary weights and activations are used for computing the parameters
+  gradients. During the forward pass, BNNs drastically reduce memory size and
+  accesses, and replace most arithmetic operations with bit-wise operations,
+  which is expected to substantially improve power-efficiency. To validate the
+  effectiveness of BNNs we conduct two sets of experiments on the Torch7 and
+  Theano frameworks. On both, BNNs achieved nearly state-of-the-art results
+  over the MNIST, CIFAR-10 and SVHN datasets. Last but not least, we wrote a
+  binary matrix multiplication GPU kernel with which it is possible to run our
+  MNIST BNN 7 times faster than with an unoptimized GPU kernel, without
+  suffering any loss in classification accuracy. The code for training and
+  running our BNNs is available on-line.%
+    }
+    \verb{doi}
+    \verb 10.1109/CVPR.2016.90
+    \endverb
+    \field{isbn}{9781510829008}
+    \field{issn}{1664-1078}
+    \field{title}{{Binarized Neural Networks: Training Deep Neural Networks
+  with Weights and Activations Constrained to +1 or -1}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1602.02830
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Courbariaux et al. - 2016 - Bi
+    \verb narized Neural Networks Training Deep Neural Networks with Weights an
+    \verb d Activations Constrained to 1 or -1.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1602.02830}
+    \field{year}{2016}
+  \endentry
+
+  \entry{imagenet}{article}{}
+    \name{author}{12}{}{%
+      {{hash=RO}{%
+         family={Russakovsky},
+         familyi={R\bibinitperiod},
+         given={Olga},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Deng},
+         familyi={D\bibinitperiod},
+         given={Jia},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Su},
+         familyi={S\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Krause},
+         familyi={K\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Satheesh},
+         familyi={S\bibinitperiod},
+         given={Sanjeev},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Sean},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HZ}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Zhiheng},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Karpathy},
+         familyi={K\bibinitperiod},
+         given={Andrej},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Khosla},
+         familyi={K\bibinitperiod},
+         given={Aditya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bernstein},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BAC}{%
+         family={Berg},
+         familyi={B\bibinitperiod},
+         given={Alexander\bibnamedelima C.},
+         giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=FFL}{%
+         family={Fei-Fei},
+         familyi={F\bibinitperiod-F\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RO+1}
+    \strng{fullhash}{RODJSHKJSSMSHZKAKABMBACFFL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/s11263-015-0816-y
+    \endverb
+    \field{number}{3}
+    \field{pages}{211\bibrangedash 252}
+    \field{title}{{ImageNet Large Scale Visual Recognition Challenge}}
+    \field{volume}{115}
+    \field{journaltitle}{International Journal of Computer Vision (IJCV)}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Zhu2018}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZS}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Shilin},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DX}{%
+         family={Dong},
+         familyi={D\bibinitperiod},
+         given={Xin},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Su},
+         familyi={S\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZSDXSH1}
+    \strng{fullhash}{ZSDXSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Binary neural networks (BNN) have been studied extensively since they run
+  dramatically faster at lower memory and power consumption than floating-point
+  networks, thanks to the efficiency of bit operations. However, contemporary
+  BNNs whose weights and activations are both single bits suffer from severe
+  accuracy degradation. To understand why, we investigate the representation
+  ability, speed and bias/variance of BNNs through extensive experiments. We
+  conclude that the error of BNNs is predominantly caused by the intrinsic
+  instability (training time) and non-robustness (train $\backslash${\&} test
+  time). Inspired by this investigation, we propose the Binary Ensemble Neural
+  Network (BENN) which leverages ensemble methods to improve the performance of
+  BNNs with limited efficiency cost. While ensemble techniques have been
+  broadly believed to be only marginally helpful for strong classifiers such as
+  deep neural networks, our analyses and experiments show that they are
+  naturally a perfect fit to boost BNNs. We find that our BENN, which is faster
+  and much more robust than state-of-the-art binary networks, can even surpass
+  the accuracy of the full-precision floating number network with the same
+  architecture.%
+    }
+    \field{title}{{Binary Ensemble Neural Network: More Bits per Network or
+  More Networks per Bit?}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1806.07550
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Zhu, Dong, Su - 2018 - Binary
+    \verb Ensemble Neural Network More Bits per Network or More Networks per Bi
+    \verb t.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1806.07550}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Liu2018}{article}{}
+    \name{author}{6}{}{%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Zechun},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=WB}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Baoyuan},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Luo},
+         familyi={L\bibinitperiod},
+         given={Wenhan},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=YX}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Xin},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=CKT}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={Kwang-Ting},
+         giveni={K\bibinitperiod-T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LZ+1}
+    \strng{fullhash}{LZWBLWYXLWCKT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Bi-Real Net : Enhancing the Performance of 1-bit CNNs with
+  Improved Representational Capability and Advanced Training Algorithm}}
+    \verb{url}
+    \verb https://dblp.org/rec/journals/corr/abs-1808-00278{\%}0Apapers3://publ
+    \verb ication/uuid/F2511478-1F5B-4AFB-9D80-26BC92403C1F
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Liu et al. - Unknown - Bi-Real
+    \verb  Net Binarizing Deep Network Towards Real-Network Performance.pdf:pdf
+    \verb ;:home/koen/Documents/Mendeley-Plumerai//Liu et al. - 2018 - Bi-Real
+    \verb Net Enhancing the Performance of 1-bit CNNs with Improved Representat
+    \verb ional Capability and Advanced Training.pdf:pdf;:home/koen/Documents/M
+    \verb endeley-Plumerai//Liu et al. - 2018 - Bi-Real Net Enhancing the Perfo
+    \verb rmance of 1-bit CNNs with Improved Representational Capability and Ad
+    \verb vanced Training.pdf:pdf
+    \endverb
+    \field{journaltitle}{ECCV}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Lin2017}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LX}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Xiaofan},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZC}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Cong},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PW}{%
+         family={Pan},
+         familyi={P\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LXZCPW1}
+    \strng{fullhash}{LXZCPW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We introduce a novel scheme to train binary convolutional neural networks
+  (CNNs) -- CNNs with weights and activations constrained to {\{}-1,+1{\}} at
+  run-time. It has been known that using binary weights and activations
+  drastically reduce memory size and accesses, and can replace arithmetic
+  operations with more efficient bitwise operations, leading to much faster
+  test-time inference and lower power consumption. However, previous works on
+  binarizing CNNs usually result in severe prediction accuracy degradation. In
+  this paper, we address this issue with two major innovations: (1)
+  approximating full-precision weights with the linear combination of multiple
+  binary weight bases; (2) employing multiple binary activations to alleviate
+  information loss. The implementation of the resulting binary CNN, denoted as
+  ABC-Net, is shown to achieve much closer performance to its full-precision
+  counterpart, and even reach the comparable prediction accuracy on ImageNet
+  and forest trail datasets, given adequate binary weight bases and
+  activations.%
+    }
+    \field{issn}{10495258}
+    \field{title}{{Towards Accurate Binary Convolutional Neural Network}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1711.11294
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Lin, Zhao, Pan - 2017 - Toward
+    \verb s Accurate Binary Convolutional Neural Network.pdf:pdf
+    \endverb
+    \field{journaltitle}{NIPS}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Rastegari2016}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RM}{%
+         family={Rastegari},
+         familyi={R\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=OV}{%
+         family={Ordonez},
+         familyi={O\bibinitperiod},
+         given={Vicente},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Redmon},
+         familyi={R\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FA}{%
+         family={Farhadi},
+         familyi={F\bibinitperiod},
+         given={Ali},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RM+1}
+    \strng{fullhash}{RMOVRJFA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We propose two efficient approximations to standard convolutional neural
+  networks: Binary-Weight-Networks and XNOR-Networks. In
+  Binary-Weight-Networks, the filters are approximated with binary values
+  resulting in 32x memory saving. In XNOR-Networks, both the filters and the
+  input to convolutional layers are binary. XNOR-Networks approximate
+  convolutions using primarily binary operations. This results in 58x faster
+  convolutional operations and 32x memory savings. XNOR-Nets offer the
+  possibility of running state-of-the-art networks on CPUs (rather than GPUs)
+  in real-time. Our binary networks are simple, accurate, efficient, and work
+  on challenging visual tasks. We evaluate our approach on the ImageNet
+  classification task. The classification accuracy with a Binary-Weight-Network
+  version of AlexNet is only 2.9{\%} less than the full-precision AlexNet (in
+  top-1 measure). We compare our method with recent network binarization
+  methods, BinaryConnect and BinaryNets, and outperform these methods by large
+  margins on ImageNet, more than 16{\%} in top-1 accuracy.%
+    }
+    \verb{doi}
+    \verb 10.1007/978-3-319-46493-0_32
+    \endverb
+    \field{isbn}{9783319464930}
+    \field{issn}{0302-9743}
+    \field{title}{{XNOR-Net: ImageNet Classification Using Binary Convolutional
+  Neural Networks}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1603.05279
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Rastegari et al. - 2016 - XNOR
+    \verb -Net ImageNet Classification Using Binary Convolutional Neural Networ
+    \verb ks.pdf:pdf
+    \endverb
+    \field{journaltitle}{ECCV}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Zhuang2018}{article}{}
+    \name{author}{5}{}{%
+      {{hash=ZB}{%
+         family={Zhuang},
+         familyi={Z\bibinitperiod},
+         given={Bohan},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Chunhua},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Mingkui},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Lingqiao},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=RI}{%
+         family={Reid},
+         familyi={R\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZB+1}
+    \strng{fullhash}{ZBSCTMLLRI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In this paper, we propose to train a network with both binary weights and
+  binary activations, designed specifically for mobile devices with limited
+  computation capacity and power consumption. Previous works on quantizing CNNs
+  uncritically assume the same architecture with full-precision networks, which
+  we term value approximation. Their objective is to preserve the
+  floating-point information using a set of discrete values. However, we take a
+  novel view---for best performance it is very likely that a different
+  architecture may be better suited to deal with binary weights as well as
+  binary activations. Thus we directly design such a highly accurate binary
+  network structure, which is termed structure approximation. In particular, we
+  propose a "network decomposition" strategy in which we divide the networks
+  into groups and aggregate a set of homogeneous binary branches to implicitly
+  reconstruct the full-precision intermediate feature maps. In addition, we
+  also learn the connections between each group. We further provide a
+  comprehensive comparison among all quantization categories. Experiments on
+  ImageNet classification tasks demonstrate the superior performance of the
+  proposed model, named Group-Net, over various popular architectures. In
+  particular, we outperform the previous best binary neural network in terms of
+  accuracy as well as saving huge computational complexity. Furthermore, the
+  proposed Group-Net can effectively utilize task specific properties for
+  strong generalization. In particular, we propose to extend Group-Net for
+  $\backslash$textbf{\{}lossless{\}} semantic segmentation. This is the first
+  work proposed on solving dense pixels prediction based on BNNs in the
+  literature. Actually, we claim that considering both value and structure
+  approximation should be the future development direction of BNNs.%
+    }
+    \verb{doi}
+    \verb 10.2307/3495996
+    \endverb
+    \field{issn}{00154040}
+    \field{title}{{Structured Binary Neural Networks for Accurate Image
+  Classification and Semantic Segmentation}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1811.10413
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Zhuang et al. - 2019 - Structu
+    \verb red Binary Neural Networks for Accurate Image Classification and Sema
+    \verb ntic Segmentation.pdf:pdf;:home/koen/.local/share/data/Mendeley Ltd./
+    \verb Mendeley Desktop/Downloaded/Zhuang et al. - 2018 - Structured Binary
+    \verb Neural Networks for Accurate Image Classification and Semantic Segmen
+    \verb tation.pdf:pdf
+    \endverb
+    \field{journaltitle}{CVPR}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Alizadeh2019}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AM}{%
+         family={Alizadeh},
+         familyi={A\bibinitperiod},
+         given={Milad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FMJ}{%
+         family={Fernandez-Marques},
+         familyi={F\bibinitperiod-M\bibinitperiod},
+         given={Javier},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LND}{%
+         family={Lane},
+         familyi={L\bibinitperiod},
+         given={Nicholas\bibnamedelima D.},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Gal},
+         familyi={G\bibinitperiod},
+         given={Yarin},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AM+2}
+    \strng{fullhash}{AMFMJLNDGY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{An Emperical Study of Binary Neural Networks' Optimisation}}
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Alizadeh et al. - 2019 - An Em
+    \verb perical Study of Binary Neural Networks' Optimisation.pdf:pdf
+    \endverb
+    \field{journaltitle}{ICLR}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Anderson2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AAG}{%
+         family={Anderson},
+         familyi={A\bibinitperiod},
+         given={Alexander\bibnamedelima G.},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=BCP}{%
+         family={Berg},
+         familyi={B\bibinitperiod},
+         given={Cory\bibnamedelima P.},
+         giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AAGBCP1}
+    \strng{fullhash}{AAGBCP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Recent research has shown that one can train a neural network with binary
+  weights and activations at train time by augmenting the weights with a
+  high-precision continuous latent variable that accumulates small changes from
+  stochastic gradient descent. However, there is a dearth of theoretical
+  analysis to explain why we can effectively capture the features in our data
+  with binary weights and activations. Our main result is that the neural
+  networks with binary weights and activations trained using the method of
+  Courbariaux, Hubara et al. (2016) work because of the high-dimensional
+  geometry of binary vectors. In particular, the ideal continuous vectors that
+  extract out features in the intermediate representations of these BNNs are
+  well-approximated by binary vectors in the sense that dot products are
+  approximately preserved. Compared to previous research that demonstrated the
+  viability of such BNNs, our work explains why these BNNs work in terms of the
+  HD geometry. Our theory serves as a foundation for understanding not only
+  BNNs but a variety of methods that seek to compress traditional neural
+  networks. Furthermore, a better understanding of multilayer binary neural
+  networks serves as a starting point for generalizing BNNs to other neural
+  network architectures such as recurrent neural networks.%
+    }
+    \field{title}{{The High-Dimensional Geometry of Binary Neural Networks}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1705.07199
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Anderson, Berg - 2017 - The Hi
+    \verb gh-Dimensional Geometry of Binary Neural Networks.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1705.07199}
+    \field{year}{2017}
+  \endentry
+
+  \entry{cifar10}{report}{}
+    \name{author}{1}{}{%
+      {{hash=KA}{%
+         family={Krizhevsky},
+         familyi={K\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KA1}
+    \strng{fullhash}{KA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Learning multiple layers of features from tiny images}
+    \field{type}{techreport}
+    \field{year}{2009}
+  \endentry
+
+  \entry{Bengio2013}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LN}{%
+         family={L{\'{e}}onard},
+         familyi={L\bibinitperiod},
+         given={Nicholas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Courville},
+         familyi={C\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BYLNCA1}
+    \strng{fullhash}{BYLNCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Stochastic neurons and hard non-linearities can be useful for a number of
+  reasons in deep learning models, but in many cases they pose a challenging
+  problem: how to estimate the gradient of a loss function with respect to the
+  input of such stochastic or non-smooth neurons? I.e., can we "back-propagate"
+  through these stochastic neurons? We examine this question, existing
+  approaches, and compare four families of solutions, applicable in different
+  settings. One of them is the minimum variance unbiased gradient estimator for
+  stochatic binary neurons (a special case of the REINFORCE algorithm). A
+  second approach, introduced here, decomposes the operation of a binary
+  stochastic neuron into a stochastic binary part and a smooth differentiable
+  part, which approximates the expected effect of the pure stochatic binary
+  neuron to first order. A third approach involves the injection of additive or
+  multiplicative noise in a computational graph that is otherwise
+  differentiable. A fourth approach heuristically copies the gradient with
+  respect to the stochastic output directly as an estimator of the gradient
+  with respect to the sigmoid argument (we call this the straight-through
+  estimator). To explore a context where these estimators are useful, we
+  consider a small-scale version of {\{}$\backslash$em conditional
+  computation{\}}, where sparse stochastic units form a distributed
+  representation of gaters that can turn off in combinatorially many ways large
+  chunks of the computation performed in the rest of the neural network. In
+  this case, it is important that the gating units produce an actual 0 most of
+  the time. The resulting sparsity can be potentially be exploited to greatly
+  reduce the computational cost of large deep networks for which conditional
+  computation would be useful.%
+    }
+    \field{title}{{Estimating or Propagating Gradients Through Stochastic
+  Neurons for Conditional Computation}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1308.3432
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Bengio, L{\'{e}}onard, Courvil
+    \verb le - 2013 - Estimating or Propagating Gradients Through Stochastic Ne
+    \verb urons for Conditional Computation.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1308.3432}
+    \field{year}{2013}
+  \endentry
+
+  \entry{hintoncoursera}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HG}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HG1}
+    \strng{fullhash}{HG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Neural networks for machine learning}
+    \field{journaltitle}{Coursera Video Lectures}
+    \field{year}{2012}
+  \endentry
+
+  \entry{momentum}{article}{}
+    \name{author}{1}{}{%
+      {{hash=QN}{%
+         family={Qian},
+         familyi={Q\bibinitperiod},
+         given={Ning},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \keyw{Momentum, Gradient descent learning algorithm, Damped harmonic
+  oscillator, Critical damping, Learning rate, Speed of convergence}
+    \strng{namehash}{QN1}
+    \strng{fullhash}{QN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A momentum term is usually included in the simulations of connectionist
+  learning algorithms. Although it is well known that such a term greatly
+  improves the speed of learning, there have been few rigorous studies of its
+  mechanisms. In this paper, I show that in the limit of continuous time, the
+  momentum parameter is analogous to the mass of Newtonian particles that move
+  through a viscous medium in a conservative force field. The behavior of the
+  system near a local minimum is equivalent to a set of coupled and damped
+  harmonic oscillators. The momentum term improves the speed of convergence by
+  bringing some eigen components of the system closer to critical damping.
+  Similar results can be obtained for the discrete time case used in computer
+  simulations. In particular, I derive the bounds for convergence on
+  learning-rate and momentum parameters, and demonstrate that the momentum term
+  can increase the range of learning rate over which the system converges. The
+  optimal condition for convergence is also analyzed.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/S0893-6080(98)00116-6
+    \endverb
+    \field{issn}{0893-6080}
+    \field{number}{1}
+    \field{pages}{145 \bibrangedash  151}
+    \field{title}{On the momentum term in gradient descent learning algorithms}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0893608098001166
+    \endverb
+    \field{volume}{12}
+    \field{journaltitle}{Neural Networks}
+    \field{year}{1999}
+  \endentry
+
+  \entry{Kingma2014}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KDP}{%
+         family={Kingma},
+         familyi={K\bibinitperiod},
+         given={Diederik\bibnamedelima P.},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Ba},
+         familyi={B\bibinitperiod},
+         given={Jimmy},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KDPBJ1}
+    \strng{fullhash}{KDPBJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We introduce Adam, an algorithm for first-order gradient-based optimization
+  of stochastic objective functions, based on adaptive estimates of lower-order
+  moments. The method is straightforward to implement, is computationally
+  efficient, has little memory requirements, is invariant to diagonal rescaling
+  of the gradients, and is well suited for problems that are large in terms of
+  data and/or parameters. The method is also appropriate for non-stationary
+  objectives and problems with very noisy and/or sparse gradients. The
+  hyper-parameters have intuitive interpretations and typically require little
+  tuning. Some connections to related algorithms, on which Adam was inspired,
+  are discussed. We also analyze the theoretical convergence properties of the
+  algorithm and provide a regret bound on the convergence rate that is
+  comparable to the best known results under the online convex optimization
+  framework. Empirical results demonstrate that Adam works well in practice and
+  compares favorably to other stochastic optimization methods. Finally, we
+  discuss AdaMax, a variant of Adam based on the infinity norm.%
+    }
+    \verb{doi}
+    \verb http://doi.acm.org.ezproxy.lib.ucf.edu/10.1145/1830483.1830503
+    \endverb
+    \field{isbn}{9781450300728}
+    \field{issn}{09252312}
+    \field{title}{{Adam: A Method for Stochastic Optimization}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1412.6980
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Kingma, Ba - 2014 - Adam A Met
+    \verb hod for Stochastic Optimization.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1412.6980}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Loshchilov2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LI}{%
+         family={Loshchilov},
+         familyi={L\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Hutter},
+         familyi={H\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LIHF1}
+    \strng{fullhash}{LIHF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    L{\$}{\_}2{\$} regularization and weight decay regularization are
+  equivalent for standard stochastic gradient descent (when rescaled by the
+  learning rate), but as we demonstrate this is $\backslash$emph{\{}not{\}} the
+  case for adaptive gradient algorithms, such as Adam. While common deep
+  learning frameworks of these algorithms implement L{\$}{\_}2{\$}
+  regularization (often calling it "weight decay" in what may be misleading due
+  to the inequivalence we expose), we propose a simple modification to recover
+  the original formulation of weight decay regularization by decoupling the
+  weight decay from the optimization steps taken w.r.t. the loss function. We
+  provide empirical evidence that our proposed modification (i) decouples the
+  optimal choice of weight decay factor from the setting of the learning rate
+  for both standard SGD and Adam, and (ii) substantially improves Adam's
+  generalization performance, allowing it to compete with SGD with momentum on
+  image classification datasets (on which it was previously typically
+  outperformed by the latter). We also propose a version of Adam with warm
+  restarts (AdamWR) that has strong anytime performance while achieving
+  state-of-the-art results on CIFAR-10 and ImageNet32x32. Our source code is
+  available at https://github.com/loshchil/AdamW-and-SGDW%
+    }
+    \verb{doi}
+    \verb 10.1111/cbdd.12322
+    \endverb
+    \field{isbn}{1711.05101v2}
+    \field{issn}{10495258}
+    \field{title}{{Fixing Weight Decay Regularization in Adam}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1711.05101
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Loshchilov, Hutter - 2017 - Fi
+    \verb xing Weight Decay Regularization in Adam.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1711.05101}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Peters2018}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PJWT}{%
+         family={Peters},
+         familyi={P\bibinitperiod},
+         given={Jorn W.\bibnamedelima T.},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
+  T\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Welling},
+         familyi={W\bibinitperiod},
+         given={Max},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PJWTWM1}
+    \strng{fullhash}{PJWTWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Low bit-width weights and activations are an effective way of combating the
+  increasing need for both memory and compute power of Deep Neural Networks. In
+  this work, we present a probabilistic training method for Neural Network with
+  both binary weights and activations, called BLRNet. By embracing
+  stochasticity during training, we circumvent the need to approximate the
+  gradient of non-differentiable functions such as sign(), while still
+  obtaining a fully Binary Neural Network at test time. Moreover, it allows for
+  anytime ensemble predictions for improved performance and uncertainty
+  estimates by sampling from the weight distribution. Since all operations in a
+  layer of the BLRNet operate on random variables, we introduce stochastic
+  versions of Batch Normalization and max pooling, which transfer well to a
+  deterministic network at test time. We evaluate the BLRNet on multiple
+  standardized benchmarks.%
+    }
+    \field{isbn}{078039402X}
+    \field{title}{{Probabilistic Binary Neural Networks}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1809.03368
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Peters, Welling - 2018 - Proba
+    \verb bilistic Binary Neural Networks.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1809.03368}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Gupta2015}{article}{}
+    \name{author}{4}{}{%
+      {{hash=GS}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Suyog},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Agrawal},
+         familyi={A\bibinitperiod},
+         given={Ankur},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GK}{%
+         family={Gopalakrishnan},
+         familyi={G\bibinitperiod},
+         given={Kailash},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Narayanan},
+         familyi={N\bibinitperiod},
+         given={Pritish},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GS+1}
+    \strng{fullhash}{GSAAGKNP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Training of large-scale deep neural networks is often constrained by the
+  available computational resources. We study the effect of limited precision
+  data representation and computation on neural network training. Within the
+  context of low-precision fixed-point computations, we observe the rounding
+  scheme to play a crucial role in determining the network's behavior during
+  training. Our results show that deep networks can be trained using only
+  16-bit wide fixed-point number representation when using stochastic rounding,
+  and incur little to no degradation in the classification accuracy. We also
+  demonstrate an energy-efficient hardware accelerator that implements
+  low-precision fixed-point arithmetic with stochastic rounding.%
+    }
+    \verb{doi}
+    \verb 10.1109/72.80206
+    \endverb
+    \field{isbn}{9781510810587}
+    \field{issn}{19410093}
+    \field{title}{{Deep Learning with Limited Numerical Precision}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1502.02551
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Gupta et al. - 2015 - Deep Lea
+    \verb rning with Limited Numerical Precision.pdf:pdf
+    \endverb
+    \field{journaltitle}{ICML}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Courbariaux2015}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CM}{%
+         family={Courbariaux},
+         familyi={C\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=DJP}{%
+         family={David},
+         familyi={D\bibinitperiod},
+         given={Jean-Pierre},
+         giveni={J\bibinitperiod-P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CMBYDJP1}
+    \strng{fullhash}{CMBYDJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Deep Neural Networks (DNN) have achieved state-of-the-art results in a wide
+  range of tasks, with the best results obtained with large training sets and
+  large models. In the past, GPUs enabled these breakthroughs because of their
+  greater computational speed. In the future, faster computation at both
+  training and test time is likely to be crucial for further progress and for
+  consumer applications on low-power devices. As a result, there is much
+  interest in research and development of dedicated hardware for Deep Learning
+  (DL). Binary weights, i.e., weights which are constrained to only two
+  possible values (e.g. -1 or 1), would bring great benefits to specialized DL
+  hardware by replacing many multiply-accumulate operations by simple
+  accumulations, as multipliers are the most space and power-hungry components
+  of the digital implementation of neural networks. We introduce BinaryConnect,
+  a method which consists in training a DNN with binary weights during the
+  forward and backward propagations, while retaining precision of the stored
+  weights in which gradients are accumulated. Like other dropout schemes, we
+  show that BinaryConnect acts as regularizer and we obtain near
+  state-of-the-art results with BinaryConnect on the permutation-invariant
+  MNIST, CIFAR-10 and SVHN.%
+    }
+    \verb{doi}
+    \verb arXiv: 1412.7024
+    \endverb
+    \field{isbn}{1872-2075}
+    \field{issn}{10495258}
+    \field{title}{{BinaryConnect: Training Deep Neural Networks with binary
+  weights during propagations}}
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Courbariaux, Bengio, David - 2
+    \verb 015 - BinaryConnect Training Deep Neural Networks with binary weights
+    \verb  during propagations.pdf:pdf
+    \endverb
+    \field{journaltitle}{NIPS}
+    \field{year}{2015}
+  \endentry
+
+  \entry{dropout}{article}{}
+    \name{author}{5}{}{%
+      {{hash=SN}{%
+         family={Srivastava},
+         familyi={S\bibinitperiod},
+         given={Nitish},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Krizhevsky},
+         familyi={K\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Sutskever},
+         familyi={S\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Salakhutdinov},
+         familyi={S\bibinitperiod},
+         given={Ruslan},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SN+1}
+    \strng{fullhash}{SNHGKASISR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{1929\bibrangedash 1958}
+    \field{title}{Dropout: A Simple Way to Prevent Neural Networks from
+  Overfitting}
+    \verb{url}
+    \verb http://jmlr.org/papers/v15/srivastava14a.html
+    \endverb
+    \field{volume}{15}
+    \field{journaltitle}{Journal of Machine Learning Research}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Li2017}{article}{}
+    \name{author}{6}{}{%
+      {{hash=LH}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={De},
+         familyi={D\bibinitperiod},
+         given={Soham},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=XZ}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Zheng},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Studer},
+         familyi={S\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Samet},
+         familyi={S\bibinitperiod},
+         given={Hanan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Goldstein},
+         familyi={G\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LH+1}
+    \strng{fullhash}{LHDSXZSCSHGT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Currently, deep neural networks are deployed on low-power portable devices
+  by first training a full-precision model using powerful hardware, and then
+  deriving a corresponding low-precision model for efficient inference on such
+  systems. However, training models directly with coarsely quantized weights is
+  a key step towards learning on embedded platforms that have limited computing
+  resources, memory capacity, and power consumption. Numerous recent
+  publications have studied methods for training quantized networks, but these
+  studies have mostly been empirical. In this work, we investigate training
+  methods for quantized neural networks from a theoretical viewpoint. We first
+  explore accuracy guarantees for training methods under convexity assumptions.
+  We then look at the behavior of these algorithms for non-convex problems, and
+  show that training algorithms that exploit high-precision representations
+  have an important greedy search phase that purely quantized training methods
+  lack, which explains the difficulty of training using low-precision
+  arithmetic.%
+    }
+    \field{issn}{10495258}
+    \field{title}{{Training Quantized Nets: A Deeper Understanding}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1706.02379
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Li et al. - 2017 - Training Qu
+    \verb antized Nets A Deeper Understanding.pdf:pdf
+    \endverb
+    \field{journaltitle}{NIPS}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Merolla2016}{article}{}
+    \name{author}{5}{}{%
+      {{hash=MP}{%
+         family={Merolla},
+         familyi={M\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=AR}{%
+         family={Appuswamy},
+         familyi={A\bibinitperiod},
+         given={Rathinakumar},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=AJ}{%
+         family={Arthur},
+         familyi={A\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ESK}{%
+         family={Esser},
+         familyi={E\bibinitperiod},
+         given={Steve\bibnamedelima K.},
+         giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Modha},
+         familyi={M\bibinitperiod},
+         given={Dharmendra},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MP+1}
+    \strng{fullhash}{MPARAJESKMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Recent results show that deep neural networks achieve excellent performance
+  even when, during training, weights are quantized and projected to a binary
+  representation. Here, we show that this is just the tip of the iceberg: these
+  same networks, during testing, also exhibit a remarkable robustness to
+  distortions beyond quantization, including additive and multiplicative noise,
+  and a class of non-linear projections where binarization is just a special
+  case. To quantify this robustness, we show that one such network achieves
+  11{\%} test error on CIFAR-10 even with 0.68 effective bits per weight.
+  Furthermore, we find that a common training heuristic--namely, projecting
+  quantized weights during backpropagation--can be altered (or even removed)
+  and networks still achieve a base level of robustness during testing.
+  Specifically, training with weight projections other than quantization also
+  works, as does simply clipping the weights, both of which have never been
+  reported before. We confirm our results for CIFAR-10 and ImageNet datasets.
+  Finally, drawing from these ideas, we propose a stochastic projection rule
+  that leads to a new state of the art network with 7.64{\%} test error on
+  CIFAR-10 using no data augmentation.%
+    }
+    \field{title}{{Deep neural networks are robust to weight binarization and
+  other non-linear distortions}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1606.01981
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Merolla et al. - 2016 - Deep n
+    \verb eural networks are robust to weight binarization and other non-linear
+    \verb  distortions.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1606.01981}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Goh2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GG}{%
+         family={Goh},
+         familyi={G\bibinitperiod},
+         given={Gabriel},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GG1}
+    \strng{fullhash}{GG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.23915/distill.00006
+    \endverb
+    \field{title}{{Why Momentum Really Works}}
+    \verb{url}
+    \verb http://distill.pub/2017/momentum
+    \endverb
+    \field{journaltitle}{Distill}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Sutskever2013}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SI}{%
+         family={Sutskever},
+         familyi={S\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Martens},
+         familyi={M\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DG}{%
+         family={Dahl},
+         familyi={D\bibinitperiod},
+         given={George},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \keyw{Bayesian optimization,LVCSR,acoustic modeling,broadcast news,deep
+  learning,dropout,neural networks,rectified linear units}
+    \strng{namehash}{SI+1}
+    \strng{fullhash}{SIMJDGHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Recently, pre-trained deep neural networks (DNNs) have outperformed
+  traditional acoustic models based on Gaussian mixture models (GMMs) on a
+  variety of large vocabulary speech recognition benchmarks. Deep neural nets
+  have also achieved excellent results on various computer vision tasks using a
+  random “dropout” procedure that drastically improves generalization error
+  by randomly omitting a fraction of the hidden units in all layers. Since
+  dropout helps avoid overﬁtting, it has also been successful on a
+  small-scale phone recognition task using larger neural nets. However,
+  training deep neural net acoustic models for large vocabulary speech
+  recognition takes a very long time and dropout is likely to only increase
+  training time. Neural networks with rectiﬁed linear unit (ReLU)
+  non-linearities have been highly successful for computer vision tasks and
+  proved faster to train than standard sigmoid units, sometimes also improving
+  discriminative performance. In this work, we show on a 50-hour English
+  Broadcast News task that modiﬁed deep neural networks using ReLUs trained
+  with dropout during frame level training provide an 4.2{\%} relative
+  improvement over a DNN trained with sigmoid units, and a 14.4{\%} relative
+  improvement over a strong GMM/HMM system. We were able to obtain our results
+  with minimal human hyper-parameter tuning using publicly available Bayesian
+  optimization code%
+    }
+    \verb{doi}
+    \verb 10.1109/ICASSP.2013.6639346
+    \endverb
+    \field{isbn}{9781479903566}
+    \field{issn}{15206149}
+    \field{title}{{On the importance of initialization and momentum in deep
+  learning}}
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Sutskever et al. - 2013 - On t
+    \verb he importance of initialization and momentum in deep learning.pdf:pdf
+    \endverb
+    \field{journaltitle}{ICML}
+    \field{year}{2013}
+  \endentry
+
+  \entry{goodfellow2016deep}{book}{}
+    \name{author}{3}{}{%
+      {{hash=GI}{%
+         family={Goodfellow},
+         familyi={G\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Courville},
+         familyi={C\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT press}%
+    }
+    \strng{namehash}{GIBYCA1}
+    \strng{fullhash}{GIBYCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Deep learning}}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Simonyan15}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=SK}{%
+         family={Simonyan},
+         familyi={S\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zisserman},
+         familyi={Z\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SKZA1}
+    \strng{fullhash}{SKZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{ICLR}
+    \field{title}{Very Deep Convolutional Networks for Large-Scale Image
+  Recognition}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Graham2014}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GB}{%
+         family={Graham},
+         familyi={G\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \keyw{computer vision,convolutional neural network,online character
+  recognition,sparsity}
+    \strng{namehash}{GB1}
+    \strng{fullhash}{GB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Convolutional neural networks (CNNs) perform well on problems such as
+  handwriting recognition and image classification. However, the performance of
+  the networks is often limited by budget and time constraints, particularly
+  when trying to train deep networks. Motivated by the problem of online
+  handwriting recognition, we developed a CNN for processing spatially-sparse
+  inputs; a character drawn with a one-pixel wide pen on a high resolution grid
+  looks like a sparse matrix. Taking advantage of the sparsity allowed us more
+  efficiently to train and test large, deep CNNs. On the CASIA-OLHWDB1.1
+  dataset containing 3755 character classes we get a test error of 3.82{\%}.
+  Although pictures are not sparse, they can be thought of as sparse by adding
+  padding. Applying a deep convolutional network using sparsity has resulted in
+  a substantial reduction in test error on the CIFAR small picture datasets:
+  6.28{\%} on CIFAR-10 and 24.30{\%} for CIFAR-100.%
+    }
+    \field{title}{{Spatially-sparse convolutional neural networks}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1409.6070
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Graham - 2014 - Spatially-spar
+    \verb se convolutional neural networks.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1409.6070}
+    \field{year}{2014}
+  \endentry
+
+  \entry{tensorflow}{misc}{}
+    \name{author}{40}{}{%
+      {{hash=AM}{%
+         family={Abadi},
+         familyi={A\bibinitperiod},
+         given={Martín},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Agarwal},
+         familyi={A\bibinitperiod},
+         given={Ashish},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Barham},
+         familyi={B\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BE}{%
+         family={Brevdo},
+         familyi={B\bibinitperiod},
+         given={Eugene},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=CZ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Zhifeng},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Citro},
+         familyi={C\bibinitperiod},
+         given={Craig},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CGS}{%
+         family={Corrado},
+         familyi={C\bibinitperiod},
+         given={Greg\bibnamedelima S.},
+         giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Davis},
+         familyi={D\bibinitperiod},
+         given={Andy},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dean},
+         familyi={D\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Devin},
+         familyi={D\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Ghemawat},
+         familyi={G\bibinitperiod},
+         given={Sanjay},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GI}{%
+         family={Goodfellow},
+         familyi={G\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Harp},
+         familyi={H\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=IG}{%
+         family={Irving},
+         familyi={I\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Isard},
+         familyi={I\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=JY}{%
+         family={Jia},
+         familyi={J\bibinitperiod},
+         given={Yangqing},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={Jozefowicz},
+         familyi={J\bibinitperiod},
+         given={Rafal},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={Kaiser},
+         familyi={K\bibinitperiod},
+         given={Lukasz},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kudlur},
+         familyi={K\bibinitperiod},
+         given={Manjunath},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Levenberg},
+         familyi={L\bibinitperiod},
+         given={Josh},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Mané},
+         familyi={M\bibinitperiod},
+         given={Dandelion},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Monga},
+         familyi={M\bibinitperiod},
+         given={Rajat},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Moore},
+         familyi={M\bibinitperiod},
+         given={Sherry},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Murray},
+         familyi={M\bibinitperiod},
+         given={Derek},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=OC}{%
+         family={Olah},
+         familyi={O\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Schuster},
+         familyi={S\bibinitperiod},
+         given={Mike},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Shlens},
+         familyi={S\bibinitperiod},
+         given={Jonathon},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Steiner},
+         familyi={S\bibinitperiod},
+         given={Benoit},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Sutskever},
+         familyi={S\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Talwar},
+         familyi={T\bibinitperiod},
+         given={Kunal},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=TP}{%
+         family={Tucker},
+         familyi={T\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=VV}{%
+         family={Vanhoucke},
+         familyi={V\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=VV}{%
+         family={Vasudevan},
+         familyi={V\bibinitperiod},
+         given={Vijay},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=VF}{%
+         family={Vi\'{e}gas},
+         familyi={V\bibinitperiod},
+         given={Fernanda},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=VO}{%
+         family={Vinyals},
+         familyi={V\bibinitperiod},
+         given={Oriol},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=WP}{%
+         family={Warden},
+         familyi={W\bibinitperiod},
+         given={Pete},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wattenberg},
+         familyi={W\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wicke},
+         familyi={W\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Yuan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zheng},
+         familyi={Z\bibinitperiod},
+         given={Xiaoqiang},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AM+1}
+  \strng{fullhash}{AMAABPBECZCCCGSDADJDMGSGIHAIGIMJYJRKLKMLJMDMRMSMDOCSMSJSBSITKTPVVVVVFVOWPWMWMYYZX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Software available from tensorflow.org}
+    \field{title}{{TensorFlow}: Large-Scale Machine Learning on Heterogeneous
+  Systems}
+    \verb{url}
+    \verb https://www.tensorflow.org/
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{Ioffe2015}{article}{}
+    \name{author}{2}{}{%
+      {{hash=IS}{%
+         family={Ioffe},
+         familyi={I\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Szegedy},
+         familyi={S\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ISSC1}
+    \strng{fullhash}{ISSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Training Deep Neural Networks is complicated by the fact that the
+  distribution of each layer's inputs changes during training, as the
+  parameters of the previous layers change. This slows down the training by
+  requiring lower learning rates and careful parameter initialization, and
+  makes it notoriously hard to train models with saturating nonlinearities. We
+  refer to this phenomenon as internal covariate shift, and address the problem
+  by normalizing layer inputs. Our method draws its strength from making
+  normalization a part of the model architecture and performing the
+  normalization for each training mini-batch. Batch Normalization allows us to
+  use much higher learning rates and be less careful about initialization. It
+  also acts as a regularizer, in some cases eliminating the need for Dropout.
+  Applied to a state-of-the-art image classification model, Batch Normalization
+  achieves the same accuracy with 14 times fewer training steps, and beats the
+  original model by a significant margin. Using an ensemble of batch-normalized
+  networks, we improve upon the best published result on ImageNet
+  classification: reaching 4.9{\%} top-5 validation error (and 4.8{\%} test
+  error), exceeding the accuracy of human raters.%
+    }
+    \verb{doi}
+    \verb 10.1007/s13398-014-0173-7.2
+    \endverb
+    \field{isbn}{9780874216561}
+    \field{issn}{0717-6163}
+    \field{title}{{Batch Normalization: Accelerating Deep Network Training by
+  Reducing Internal Covariate Shift}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1502.03167
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Ioffe, Szegedy - 2015 - Batch
+    \verb Normalization Accelerating Deep Network Training by Reducing Internal
+    \verb  Covariate Shift.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1502.03167}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Hubara2016}{article}{}
+    \name{author}{5}{}{%
+      {{hash=HI}{%
+         family={Hubara},
+         familyi={H\bibinitperiod},
+         given={Itay},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Courbariaux},
+         familyi={C\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Soudry},
+         familyi={S\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=EYR}{%
+         family={El-Yaniv},
+         familyi={E\bibinitperiod-Y\bibinitperiod},
+         given={Ran},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HI+1}
+    \strng{fullhash}{HICMSDEYRBY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We introduce a method to train Binarized Neural Networks (BNNs) - neural
+  networks with binary weights and activations at run-time and when computing
+  the parameters' gradient at train-time. We conduct two sets of experiments,
+  each based on a different framework, namely Torch7 and Theano, where we train
+  BNNs on MNIST, CIFAR-10 and SVHN, and achieve nearly state-of-the-art
+  results. During the forward pass, BNNs drastically reduce memory size and
+  accesses, and replace most arithmetic operations with bit-wise operations,
+  which might lead to a great increase in power-efficiency. Last but not least,
+  we wrote a binary matrix multiplication GPU kernel with which it is possible
+  to run our MNIST BNN 7 times faster than with an unoptimized GPU kernel,
+  without suffering any loss in classification accuracy. The code for training
+  and running our BNNs is available.%
+    }
+    \verb{doi}
+    \verb 10.1109/CVPR.2015.7299068
+    \endverb
+    \field{isbn}{9781467369640}
+    \field{issn}{10495258}
+    \field{title}{{Binarized Neural Networks}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1602.02505
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai//Hubara et al. - 2016 - Binari
+    \verb zed Neural Networks.pdf:pdf
+    \endverb
+    \field{journaltitle}{NIPS}
+    \field{year}{2016}
+  \endentry
+
+  \entry{bethge2019back}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BJ}{%
+         family={Bethge},
+         familyi={B\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Haojin},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bornstein},
+         familyi={B\bibinitperiod},
+         given={Marvin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Meinel},
+         familyi={M\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ+1}
+    \strng{fullhash}{BJYHBMMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Back to Simplicity: How to Train Accurate BNNs from Scratch?}
+    \field{journaltitle}{arXiv preprint arXiv:1906.08637}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Zhou2016}{article}{}
+    \name{author}{6}{}{%
+      {{hash=ZS}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Shuchang},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Yuxin},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=NZ}{%
+         family={Ni},
+         familyi={N\bibinitperiod},
+         given={Zekun},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Xinyu},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={Wen},
+         familyi={W\bibinitperiod},
+         given={He},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zou},
+         familyi={Z\bibinitperiod},
+         given={Yuheng},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZS+1}
+    \strng{fullhash}{ZSWYNZZXWHZY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We propose DoReFa-Net, a method to train convolutional neural networks that
+  have low bitwidth weights and activations using low bitwidth parameter
+  gradients. In particular, during backward pass, parameter gradients are
+  stochastically quantized to low bitwidth numbers before being propagated to
+  convolutional layers. As convolutions during forward/backward passes can now
+  operate on low bitwidth weights and activations/gradients respectively,
+  DoReFa-Net can use bit convolution kernels to accelerate both training and
+  inference. Moreover, as bit convolutions can be efficiently implemented on
+  CPU, FPGA, ASIC and GPU, DoReFa-Net opens the way to accelerate training of
+  low bitwidth neural network on these hardware. Our experiments on SVHN and
+  ImageNet datasets prove that DoReFa-Net can achieve comparable prediction
+  accuracy as 32-bit counterparts. For example, a DoReFa-Net derived from
+  AlexNet that has 1-bit weights, 2-bit activations, can be trained from
+  scratch using 6-bit gradients to get 46.1$\backslash${\%} top-1 accuracy on
+  ImageNet validation set. The DoReFa-Net AlexNet model is released publicly.%
+    }
+    \verb{doi}
+    \verb 10.1080/00131940802117563
+    \endverb
+    \field{title}{{DoReFa-Net: Training Low Bitwidth Convolutional Neural
+  Networks with Low Bitwidth Gradients}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1606.06160
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Zhou et al. - 2016 - DoReFa-Ne
+    \verb t Training Low Bitwidth Convolutional Neural Networks with Low Bitwid
+    \verb th Gradients.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1606.06160}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Ding2019b}{article}{}
+    \name{author}{4}{}{%
+      {{hash=DR}{%
+         family={Ding},
+         familyi={D\bibinitperiod},
+         given={Ruizhou},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CTW}{%
+         family={Chin},
+         familyi={C\bibinitperiod},
+         given={Ting-Wu},
+         giveni={T\bibinitperiod-W\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Zeye},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Marculescu},
+         familyi={M\bibinitperiod},
+         given={Diana},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DR+1}
+    \strng{fullhash}{DRCTWLZMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Binarized Neural Networks (BNNs) can significantly reduce the inference
+  latency and energy consumption in resource-constrained devices due to their
+  pure-logical computation and fewer memory accesses. However, training BNNs is
+  difficult since the activation flow encounters degeneration, saturation, and
+  gradient mismatch problems. Prior work alleviates these issues by increasing
+  activation bits and adding floating-point scaling factors, thereby
+  sacrificing BNN's energy efficiency. In this paper, we propose to use
+  distribution loss to explicitly regularize the activation flow, and develop a
+  framework to systematically formulate the loss. Our experiments show that the
+  distribution loss can consistently improve the accuracy of BNNs without
+  losing their energy benefits. Moreover, equipped with the proposed
+  regularization, BNN training is shown to be robust to the selection of
+  hyper-parameters including optimizer and learning rate.%
+    }
+    \field{title}{{Regularizing Activation Distribution for Training Binarized
+  Deep Networks}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1904.02823
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Ding et al. - 2019 - Regulariz
+    \verb ing Activation Distribution for Training Binarized Deep Networks.pdf:
+    \verb pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1904.02823}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Hinton2015}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HG}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=VO}{%
+         family={Vinyals},
+         familyi={V\bibinitperiod},
+         given={Oriol},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dean},
+         familyi={D\bibinitperiod},
+         given={Jeff},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HGVODJ1}
+    \strng{fullhash}{HGVODJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A very simple way to improve the performance of almost any machine learning
+  algorithm is to train many different models on the same data and then to
+  average their predictions. Unfortunately, making predictions using a whole
+  ensemble of models is cumbersome and may be too computationally expensive to
+  allow deployment to a large number of users, especially if the individual
+  models are large neural nets. Caruana and his collaborators have shown that
+  it is possible to compress the knowledge in an ensemble into a single model
+  which is much easier to deploy and we develop this approach further using a
+  different compression technique. We achieve some surprising results on MNIST
+  and we show that we can significantly improve the acoustic model of a heavily
+  used commercial system by distilling the knowledge in an ensemble of models
+  into a single model. We also introduce a new type of ensemble composed of one
+  or more full models and many specialist models which learn to distinguish
+  fine-grained classes that the full models confuse. Unlike a mixture of
+  experts, these specialist models can be trained rapidly and in parallel.%
+    }
+    \verb{doi}
+    \verb 10.1063/1.4931082
+    \endverb
+    \field{isbn}{3531207857}
+    \field{issn}{0022-2488}
+    \field{title}{{Distilling the Knowledge in a Neural Network}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1503.02531
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Hinton, Vinyals, Dean - 2015 -
+    \verb  Distilling the Knowledge in a Neural Network.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1503.02531}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Bulat2019a}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BA}{%
+         family={Bulat},
+         familyi={B\bibinitperiod},
+         given={Adrian},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Tzimiropoulos},
+         familyi={T\bibinitperiod},
+         given={Georgios},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kossaifi},
+         familyi={K\bibinitperiod},
+         given={Jean},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pantic},
+         familyi={P\bibinitperiod},
+         given={Maja},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BA+1}
+    \strng{fullhash}{BATGKJPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Big neural networks trained on large datasets have advanced the
+  state-of-the-art for a large variety of challenging problems, improving
+  performance by a large margin. However, under low memory and limited
+  computational power constraints, the accuracy on the same problems drops
+  considerable. In this paper, we propose a series of techniques that
+  significantly improve the accuracy of binarized neural networks (i.e networks
+  where both the features and the weights are binary). We evaluate the proposed
+  improvements on two diverse tasks: fine-grained recognition (human pose
+  estimation) and large-scale image recognition (ImageNet classification).
+  Specifically, we introduce a series of novel methodological changes
+  including: (a) more appropriate activation functions, (b) reverse-order
+  initialization, (c) progressive quantization, and (d) network stacking and
+  show that these additions improve existing state-of-the-art network
+  binarization techniques, significantly. Additionally, for the first time, we
+  also investigate the extent to which network binarization and knowledge
+  distillation can be combined. When tested on the challenging MPII dataset,
+  our method shows a performance improvement of more than 4{\%} in absolute
+  terms. Finally, we further validate our findings by applying the proposed
+  techniques for large-scale object recognition on the Imagenet dataset, on
+  which we report a reduction of error rate by 4{\%}.%
+    }
+    \field{title}{{Improved training of binary networks for human pose
+  estimation and image recognition}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1904.05868
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai//Bulat et al. - 2019 - Improve
+    \verb d training of binary networks for human pose estimation and image rec
+    \verb ognition.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1904.05868}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Polino2018}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PA}{%
+         family={Polino},
+         familyi={P\bibinitperiod},
+         given={Antonio},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PR}{%
+         family={Pascanu},
+         familyi={P\bibinitperiod},
+         given={Razvan},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Alistarh},
+         familyi={A\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PAPRAD1}
+    \strng{fullhash}{PAPRAD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Deep neural networks (DNNs) continue to make significant advances, solving
+  tasks from image classification to translation or reinforcement learning. One
+  aspect of the field receiving considerable attention is efficiently executing
+  deep models in resource-constrained environments, such as mobile or embedded
+  devices. This paper focuses on this problem, and proposes two new compression
+  methods, which jointly leverage weight quantization and distillation of
+  larger teacher networks into smaller student networks. The first method we
+  propose is called quantized distillation and leverages distillation during
+  the training process, by incorporating distillation loss, expressed with
+  respect to the teacher, into the training of a student network whose weights
+  are quantized to a limited set of levels. The second method, differentiable
+  quantization, optimizes the location of quantization points through
+  stochastic gradient descent, to better fit the behavior of the teacher model.
+  We validate both methods through experiments on convolutional and recurrent
+  architectures. We show that quantized shallow students can reach similar
+  accuracy levels to full-precision teacher models, while providing order of
+  magnitude compression, and inference speedup that is linear in the depth
+  reduction. In sum, our results enable DNNs for resource-constrained
+  environments to leverage architecture and accuracy advances developed on more
+  powerful devices.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00198-010-1188-3
+    \endverb
+    \field{title}{{Model Compression via Distillation and Quantization}}
+    \verb{url}
+    \verb http://arxiv.org/abs/1802.05668
+    \endverb
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai//Polino, Pascanu, Alistarh - 2
+    \verb 018 - Model Compression via Distillation and Quantization.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1802.05668}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Mishra2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MA}{%
+         family={Mishra},
+         familyi={M\bibinitperiod},
+         given={Asit},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Marr},
+         familyi={M\bibinitperiod},
+         given={Debbie},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MAMD1}
+    \strng{fullhash}{MAMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Apprentice: Using Knowledge Distillation Techniques to
+  Improve Low-Precision Network Accuracy}}
+    \verb{file}
+    \verb :home/koen/Documents/Mendeley-Plumerai/Mishra, Marr - 2017 - Apprenti
+    \verb ce Using Knowledge Distillation Techniques to Improve Low-Precision N
+    \verb etwork Accuracy.pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1711.05852}
+    \field{year}{2017}
+  \endentry
+\endsortlist
+\endinput

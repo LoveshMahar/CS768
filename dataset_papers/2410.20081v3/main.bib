@@ -1,0 +1,810 @@
+
+
+
+
+@inproceedings{ AtzoriEtAl2012,
+title = {Building the NinaPro Database: a Resource for the Biorobotics Community},
+year = {2012},
+author = {Atzori, M. and Gijsberts, A. and Heynen, S. and Mittaz Hager, A.-G. and Deriaz, O. and Van der Smagt, P. and Castellini, C. and Caputo, B. and M\"{u}ller, H},
+booktitle = {IEEE International Conference on Biomedical Robotics and Biomechatronics},
+}
+
+@article{ AtzoriEtAl2014,
+author = {Manfredo Atzori and Arjan Gijsberts and Claudio Castellini and Barbara Caputo and Anne-Gabrielle Mittaz Hager and Simone Elsig and Giorgio Giatsidis and Franco Bassetto and Henning M\"{u}ller},
+title = {Electromyography data for non-invasive naturally-controlled robotic hand prostheses},
+journal = {Scientific Data},
+volume = {1}, 
+issue = {140053},
+year = {2014}, 
+doi = {doi.org/10.1038/sdata.2014.53},
+}
+
+@INPROCEEDINGS{PalermoEtAl2017,
+  author={Palermo, Francesca and Cognolato, Matteo and Gijsberts, Arjan and Müller, Henning and Caputo, Barbara and Atzori, Manfredo},
+  booktitle={2017 International Conference on Rehabilitation Robotics (ICORR)}, 
+  title={Repeatability of grasp recognition for robotic hand prosthesis control based on sEMG data}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={1154-1159},
+  abstract={Control methods based on sEMG obtained promising results for hand prosthetics. Control system robustness is still often inadequate and does not allow the amputees to perform a large number of movements useful for everyday life. Only few studies analyzed the repeatability of sEMG classification of hand grasps. The main goals of this paper are to explore repeatability in sEMG data and to release a repeatability database with the recorded experiments. The data are recorded from 10 intact subjects repeating 7 grasps 12 times, twice a day for 5 days. The data are publicly available on the Ninapro web page. The analysis for the repeatability is based on the comparison of movement classification accuracy in several data acquisitions and for different subjects. The analysis is performed using mean absolute value and waveform length features and a Random Forest classifier. The accuracy obtained by training and testing on acquisitions at different times is on average 27.03\% lower than training and testing on the same acquisition. The results obtained by training and testing on different acquisitions suggest that previous acquisitions can be used to train the classification algorithms. The inter-subject variability is remarkable, suggesting that specific characteristics of the subjects can affect repeatibility and sEMG classification accuracy. In conclusion, the results of this paper can contribute to develop more robust control systems for hand prostheses, while the presented data allows researchers to test repeatability in further analyses.},
+  keywords={},
+  doi={10.1109/ICORR.2017.8009405},
+  ISSN={1945-7901},
+  month={July},
+  }
+
+@article{PizzolatoEtAl2017,
+    doi = {10.1371/journal.pone.0186132},
+    author = {Pizzolato, Stefano AND Tagliapietra, Luca AND Cognolato, Matteo AND Reggiani, Monica AND Müller, Henning AND Atzori, Manfredo},
+    journal = {PLOS ONE},
+    publisher = {Public Library of Science},
+    title = {Comparison of six electromyography acquisition setups on hand movement classification tasks},
+    year = {2017},
+    month = {10},
+    volume = {12},
+    url = {https://doi.org/10.1371/journal.pone.0186132},
+    pages = {1-17},
+    abstract = {Hand prostheses controlled by surface electromyography are promising due to the non-invasive approach and the control capabilities offered by machine learning. Nevertheless, dexterous prostheses are still scarcely spread due to control difficulties, low robustness and often prohibitive costs. Several sEMG acquisition setups are now available, ranging in terms of costs between a few hundred and several thousand dollars. The objective of this paper is the relative comparison of six acquisition setups on an identical hand movement classification task, in order to help the researchers to choose the proper acquisition setup for their requirements. The acquisition setups are based on four different sEMG electrodes (including Otto Bock, Delsys Trigno, Cometa Wave + Dormo ECG and two Thalmic Myo armbands) and they were used to record more than 50 hand movements from intact subjects with a standardized acquisition protocol. The relative performance of the six sEMG acquisition setups is compared on 41 identical hand movements with a standardized feature extraction and data analysis pipeline aimed at performing hand movement classification. Comparable classification results are obtained with three acquisition setups including the Delsys Trigno, the Cometa Wave and the affordable setup composed of two Myo armbands. The results suggest that practical sEMG tests can be performed even when costs are relevant (e.g. in small laboratories, developing countries or use by children). All the presented datasets can be used for offline tests and their quality can easily be compared as the data sets are publicly available.},
+    number = {10},
+
+}
+
+@inproceedings{AmmaEtAl2015,
+author = {Amma, Christoph and Krings, Thomas and B\"{o}er, Jonas and Schultz, Tanja},
+title = {Advancing Muscle-Computer Interfaces with High-Density Electromyography},
+year = {2015},
+isbn = {9781450331456},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2702123.2702501},
+doi = {10.1145/2702123.2702501},
+abstract = {In this paper we present our results on using electromyographic (EMG) sensor arrays for finger gesture recognition. Sensing muscle activity allows to capture finger motion without placing sensors directly at the hand or fingers and thus may be used to build unobtrusive body-worn interfaces. We use an electrode array with 192 electrodes to record a high-density EMG of the upper forearm muscles. We present in detail a baseline system for gesture recognition on our dataset, using a naive Bayes classifier to discriminate the 27 gestures. We recorded 25 sessions from 5 subjects. We report an average accuracy of 90\% for the within-session scenario, showing the feasibility of the EMG approach to discriminate a large number of subtle gestures. We analyze the effect of the number of used electrodes on the recognition performance and show the benefit of using high numbers of electrodes. Cross-session recognition typically suffers from electrode position changes from session to session. We present two methods to estimate the electrode shift between sessions based on a small amount of calibration data and compare it to a baseline system with no shift compensation. The presented methods raise the accuracy from 59\% baseline accuracy to 75\% accuracy after shift compensation. The dataset is publicly available.},
+booktitle = {Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems},
+pages = {929–938},
+numpages = {10},
+keywords = {electrode arrays, muscle-computer-interfaces, gesture recognition, emg},
+location = {Seoul, Republic of Korea},
+series = {CHI '15}
+}
+
+@article{Du_Sensors_2017,
+    title={{Surface EMG-based inter-session gesture recognition enhanced by deep domain adaptation}},
+    author={Du, Yu and Jin, Wenguang and Wei, Wentao and Hu, Yu and Geng, Weidong},
+    journal={Sensors},
+    volume={17},
+    number={3},
+    pages={458},
+    year={2017},
+    publisher={Multidisciplinary Digital Publishing Institute}
+}
+
+@article{ LobovEtAl2018,
+author = {Lobov, S. and Krilova, N. and Kastalskiy, I. and Kazantsev, V. and Makarov V.A},
+title = {Latent Factors Limiting the Performance of sEMG-Interfaces},
+journal = {Sensors},
+year = {2018},
+volume = {18},
+issue = {4},
+pages = {1122},
+doi = {10.3390/s18041122},
+}
+
+@article{ MalesevicEtAl2020,
+author = {Neboj\v{s}a Male\v{s}evi\'{c} and Anders Bj\"{o}rkman and Gert S. Andersson and Ana Matran-Fernandez and Luca Citi and Christian Cipriani and Christian Antfolk},
+title = {A database of multi-channel intramuscular electromyogram signals during isometric hand muscles contractions},
+journal = {Sci Data},
+volume = {7}, 
+issue = {10},
+year = {2020}, 
+doi = {https://doi.org/10.1038/s41597-019-0335-8},
+}
+
+@article{ MalesevicEtAl2021,
+author = {Neboj\v{s}a Male\v{s}evi\'{c} and Alexander Olsson and Paulina Sager and Elin Andersson and Christian Cipriani and Marco Controzzi and Anders Bj\"{o}rkman and Christian Antfolk},
+title = {A database of high-density surface electromyogram signals comprising 65 isometric hand gestures},
+journal = {Sci Data},
+volume = {8}, 
+issue = {63},
+year = {2021},
+doi = {https://doi.org/10.1038/s41597-021-00843-9},
+}
+
+
+@ARTICLE{JiangEtAl2021,  
+author={Jiang, Xinyu and Liu, Xiangyu and Fan, Jiahao and Ye, Xinming and Dai, Chenyun and Clancy, Edward A and Akay, Metin and Chen, Wei},  
+journal={IEEE Transactions on Neural Systems and Rehabilitation Engineering},  
+title={Open Access Dataset, Toolbox and Benchmark Processing Results of High-Density Surface Electromyogram Recordings},   
+year={2021}, 
+volume={}, 
+number={}, 
+pages={1-1},
+doi={10.1109/TNSRE.2021.3082551}
+}
+
+@article {willetEtAl2021,
+author = {Francis R. Willett and Donald T. Avansino and Leigh R. Hochberg and Jaimie M. Henderson and Krishna V. Shenoy},
+title = {High-performance brain-to-text communication via handwriting},
+volume = {593},
+pages = {249--254},
+year = {2021},
+journal = {Nature},
+doi = {doi.org/10.1038/s41586-021-03506-2},
+}
+
+@article{willett2023high,
+  title={A high-performance speech neuroprosthesis},
+  author={Willett, Francis R and Kunz, Erin M and Fan, Chaofei and Avansino, Donald T and Wilson, Guy H and Choi, Eun Young and Kamdar, Foram and Glasser, Matthew F and Hochberg, Leigh R and Druckmann, Shaul and others},
+  journal={Nature},
+  volume={620},
+  number={7976},
+  pages={1031--1036},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
+}
+
+@inproceedings{hannunEtAl2019,
+  author={Awni Hannun and Ann Lee and Qiantong Xu and Ronan Collobert},
+  title={Sequence-to-Sequence Speech Recognition with Time-Depth Separable Convolutions},
+  year={2019},
+  cdate={1546300800000},
+  pages={3785-3789},
+  url={https://doi.org/10.21437/Interspeech.2019-2460},
+  booktitle={INTERSPEECH},
+}
+
+@inproceedings{gravesEtAl2006,
+  title={Connectionist temporal classification: labelling unsegmented sequence data with recurrent neural networks},
+  author={Graves, Alex and Fern{\'a}ndez, Santiago and Gomez, Faustino and Schmidhuber, J{\"u}rgen},
+  booktitle={Proceedings of the 23rd international conference on Machine learning},
+  pages={369--376},
+  year={2006}
+}
+
+@article{graves2012sequence,
+  title={Sequence transduction with recurrent neural networks},
+  author={Graves, Alex},
+  journal={arXiv preprint arXiv:1211.3711},
+  year={2012}
+}
+
+@article{park2019specaugment,
+  title={SpecAugment: A Simple Data Augmentation Method for Automatic Speech Recognition},
+  author={Park, Daniel S and Chan, William and Zhang, Yu and Chiu, Chung-Cheng and Zoph, Barret and Cubuk, Ekin D and Le, Quoc V},
+  journal={Proc. Interspeech 2019},
+  pages={2613--2617},
+  year={2019}
+}
+
+
+@inproceedings{chan2016listen,
+  title={Listen, attend and spell: A neural network for large vocabulary conversational speech recognition},
+  author={Chan, William and Jaitly, Navdeep and Le, Quoc and Vinyals, Oriol},
+  booktitle={2016 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={4960--4964},
+  year={2016},
+  organization={IEEE}
+}
+
+@inproceedings{xu2020iterative,
+  author={Qiantong Xu and Tatiana Likhomanenko and Jacob Kahn and Awni Hannun and Gabriel Synnaeve and Ronan Collobert},
+  title={{Iterative Pseudo-Labeling for Speech Recognition}},
+  year=2020,
+  booktitle={Proc. Interspeech 2020},
+  pages={1006--1010},
+  doi={10.21437/Interspeech.2020-1800},
+  url={http://dx.doi.org/10.21437/Interspeech.2020-1800}
+}
+
+@article{baevski2020wav2vec,
+  title={wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations},
+  author={Baevski, Alexei and Zhou, Yuhao and Mohamed, Abdelrahman and Auli, Michael},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  year={2020}
+}
+
+@book{merletti2016surface,
+  title={Surface electromyography: physiology, engineering, and applications},
+  author={Merletti, Roberto and Farina, Dario},
+  year={2016},
+  publisher={John Wiley \& Sons}
+}
+
+@incollection{floeter_karpati_2010, 
+place={Cambridge}, 
+edition={8}, 
+title={Structure and function of muscle fibers and motor units}, 
+DOI={10.1017/CBO9780511674747.005}, 
+booktitle={Disorders of Voluntary Muscle}, 
+publisher={Cambridge University Press}, 
+author={Floeter, Mary Kay and Karpati, George}, 
+editor={Hilton-Jones, David and Bushby, Kate and Griggs, Robert C.Editors},
+year={2010}, 
+pages={1–19},
+}
+
+@book{kandel2013principles,
+  title={Principles of neural science},
+  author={Eric R. Kandel and James H. Schwartz and Thomas M. Jessell and Steven A. Siegelbaum and  A. J. Hudspeth},
+  year={2013},
+  publisher={McGraw-Hill, Health Professions Division},
+  edition={5th},
+}
+
+@incollection{ enoka2013motor,
+  author = {Roger M. Enoka and Keir G. Pearson},
+  title = {The motor unit and muscle action},
+  chapter = {34},
+  booktitle={Principles of neural science},
+  editor={Eric R. Kandel and James H. Schwartz and Thomas M. Jessell and Steven A. Siegelbaum and  A. J. Hudspeth},
+  year={2013},
+  publisher={McGraw-Hill, Health Professions Division},
+  edition={5th},
+}
+
+@article{deluca2012hierarchical,
+  title={Hierarchical control of motor units in voluntary contractions},
+  author={De Luca, Carlo J and Contessa, Paola},
+  journal={Journal of neurophysiology},
+  volume={107},
+  number={1},
+  pages={178--195},
+  year={2012},
+  publisher={American Physiological Society Bethesda, MD}
+}
+
+@article{ henneman1957,
+ ISSN = {00368075, 10959203},
+ URL = {http://www.jstor.org/stable/1752769},
+ author = {Elwood Henneman},
+ journal = {Science},
+ number = {3287},
+ pages = {1345--1347},
+ publisher = {American Association for the Advancement of Science},
+ title = {Relation between Size of Neurons and Their Susceptibility to Discharge},
+ volume = {126},
+ year = {1957}
+}
+
+@article{marshall2022flexible,
+  title={Flexible neural control of motor units},
+  author={Marshall, Najja J and Glaser, Joshua I and Trautmann, Eric M and Amematsro, Elom A and Perkins, Sean M and Shadlen, Michael N and Abbott, LF and Cunningham, John P and Churchland, Mark M},
+  journal={Nature neuroscience},
+  volume={25},
+  number={11},
+  pages={1492--1504},
+  year={2022},
+  publisher={Nature Publishing Group US New York}
+}
+
+@article {Basmajian1963,
+	author = {Basmajian, J. V.},
+	title = {Control and Training of Individual Motor Units},
+	volume = {141},
+	number = {3579},
+	pages = {440--441},
+	year = {1963},
+	doi = {10.1126/science.141.3579.440},
+	publisher = {American Association for the Advancement of Science},
+	abstract = {Experiments clearly demonstrate that with the help of auditory and visual cues man can single out motor units and control their isolated contractions. Experiments on the training of this control, interpreted as the training of descending pathways to single anterior horn cells, provide a new glimpse of the fineness of conscious motor controls. After training, subjects can recall into activity different single motor units by an effort of will while inhibiting the activity of neighbors. Some learn such exquisite control that they soon can produce rhythms of contraction in one unit, imitating drum rolls, etc. The quality of control over individual anterior horn cells may determine rates of learning.},
+	issn = {0036-8075},
+	URL = {https://science.sciencemag.org/content/141/3579/440},
+	eprint = {https://science.sciencemag.org/content/141/3579/440.full.pdf},
+	journal = {Science},
+}
+
+@article {Formento2021noninvasive,
+	author = {Formento, Emanuele and Botros, Paul and Carmena, Jose M.},
+	title = {A non-invasive brain-machine interface via independent control of individual motor units},
+	elocation-id = {2021.03.22.436518},
+	year = {2021},
+	doi = {10.1101/2021.03.22.436518},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Brain-machine interfaces (BMIs) have the potential to augment human functions and restore independence in people with disabilities, yet a compromise between non-invasiveness and performance limits their relevance. Here, we demonstrate a BMI controlled by individual motor units non-invasively recorded from the biceps brachii. Through real-time auditory and visual neurofeedback of motor unit activity, 8 participants learned to skillfully and independently control three motor units in order to complete a two-dimensional center-out task, with marked improvements in control over 6 days of training. Concomitantly, dimensionality of the motor unit population increased significantly relative to naturalistic behaviors, largely violating recruitment orders displayed during stereotyped, isometric muscle contractions. Finally, participants demonstrated the potential of a motor unit BMI to power general applications by navigating a virtual keyboard in a spelling task, achieving performances comparable to spelling-tailored non-invasive BMIs that leverage less flexible control strategies to improve performance. These results highlight a largely unexplored level of flexibility of the sensorimotor system and show that this can be exploited to create a versatile, skillfully-controllable non-invasive BMI that has great potential to both provide translational benefit and augment motor functions.Competing Interest StatementE.F. and P.B. acted as participants of the study. The authors declare no competing financial interests.},
+	URL = {https://www.biorxiv.org/content/early/2021/04/21/2021.03.22.436518},
+	eprint = {https://www.biorxiv.org/content/early/2021/04/21/2021.03.22.436518.full.pdf},
+	journal = {bioRxiv}
+}
+
+@article{harrison1962identification,
+  title={Identification and voluntary control of single motor unit activity in the tibialis anterior muscle},
+  author={Harrison, Virginia F and Mortensen, OA},
+  journal={The Anatomical Record},
+  volume={144},
+  number={2},
+  pages={109--116},
+  year={1962},
+  publisher={Wiley Online Library},
+}
+
+@book{Fant1971,
+author = {Gunnar Fant},
+doi = {doi:10.1515/9783110873429},
+url = {https://doi.org/10.1515/9783110873429},
+title = {Acoustic Theory of Speech Production},
+year = {1971},
+publisher = {De Gruyter Mouton},
+ISBN = {978-3-11-087342-9}
+}
+
+@article{zeghidour2018end,
+  title={End-to-end speech recognition from the raw waveform},
+  author={Zeghidour, Neil and Usunier, Nicolas and Synnaeve, Gabriel and Collobert, Ronan and Dupoux, Emmanuel},
+  journal={arXiv preprint arXiv:1806.07098},
+  year={2018}
+}
+
+@article{halliday2010need,
+  title={On the need for rectification of surface EMG},
+  author={Halliday, David M and Farmer, Simon F},
+  journal={Journal of neurophysiology},
+  volume={103},
+  number={6},
+  pages={3547--3547},
+  year={2010},
+  publisher={American Physiological Society Bethesda, MD}
+}
+
+@article{synnaeve2019end,
+  title={End-to-end asr: from supervised to semi-supervised learning with modern architectures},
+  author={Synnaeve, Gabriel and Xu, Qiantong and Kahn, Jacob and Likhomanenko, Tatiana and Grave, Edouard and Pratap, Vineel and Sriram, Anuroop and Liptchinsky, Vitaliy and Collobert, Ronan},
+  journal={arXiv preprint arXiv:1911.08460},
+  year={2019}
+}
+
+@article{ TrigiliEtAl2019,
+  author = {Trigili, E. and Grazi, L. and Crea, S. and Accogli, A. and Carpaneto, J. and Micera, S. and Vitiello, N. and Panarese, A.},
+  year = {2019},
+  title = {Detection of movement onset using {EMG} signals for upper-limb exoskeletons in reaching tasks},
+  journal = {Journal of neuroengineering and rehabilitation}, 
+  volume = {16},
+  issue = {1},
+  page = {45},
+  doi = {10.1186/s12984-019-0512-1},
+}
+
+@article{Pratap_2019,
+   title={Wav2Letter++: A Fast Open-source Speech Recognition System},
+   ISBN={9781479981311},
+   url={http://dx.doi.org/10.1109/ICASSP.2019.8683535},
+   DOI={10.1109/icassp.2019.8683535},
+   journal={ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+   publisher={IEEE},
+   author={Pratap, Vineel and Hannun, Awni and Xu, Qiantong and Cai, Jeff and Kahn, Jacob and Synnaeve, Gabriel and Liptchinsky, Vitaliy and Collobert, Ronan},
+   year={2019},
+   month={May}
+}
+
+@misc{pratap2020scaling,
+      title={Scaling Up Online Speech Recognition Using ConvNets}, 
+      author={Vineel Pratap and Qiantong Xu and Jacob Kahn and Gilad Avidov and Tatiana Likhomanenko and Awni Hannun and Vitaliy Liptchinsky and Gabriel Synnaeve and Ronan Collobert},
+      year={2020},
+      eprint={2001.09727},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@incollection{NEURIPS2019_9015,
+title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+booktitle = {Advances in Neural Information Processing Systems 32},
+editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+pages = {8024--8035},
+year = {2019},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf}
+}
+
+@Misc{Yadan2019Hydra,
+  author =       {Omry Yadan},
+  title =        {Hydra - A framework for elegantly configuring complex applications},
+  howpublished = {Github},
+  year =         {2019},
+  url =          {https://github.com/facebookresearch/hydra}
+}
+
+@article{falcon2019pytorch,
+  title={PyTorch Lightning},
+  author={Falcon, WA, et al.},
+  journal={GitHub. Note: https://github.com/PyTorchLightning/pytorch-lightning},
+  volume={3},
+  year={2019}
+}
+
+@inproceedings{ganchev2005comparative,
+  title={Comparative evaluation of various MFCC implementations on the speaker verification task},
+  author={Ganchev, Todor and Fakotakis, Nikos and Kokkinakis, George},
+  booktitle={Proceedings of the SPECOM},
+  volume={1},
+  number={2005},
+  pages={191--194},
+  year={2005}
+}
+
+@misc{palaz2013estimating,
+      title={Estimating Phoneme Class Conditional Probabilities from Raw Speech Signal using Convolutional Neural Networks}, 
+      author={Dimitri Palaz and Ronan Collobert and Mathew Magimai. -Doss},
+      year={2013},
+      eprint={1304.1018},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{DBLP:conf/interspeech/TuskeGSN14,
+  author    = {Zolt{\'{a}}n T{\"{u}}ske and
+               Pavel Golik and
+               Ralf Schl{\"{u}}ter and
+               Hermann Ney},
+  editor    = {Haizhou Li and
+               Helen M. Meng and
+               Bin Ma and
+               Engsiong Chng and
+               Lei Xie},
+  title     = {Acoustic modeling with deep neural networks using raw time signal
+               for {LVCSR}},
+  booktitle = {{INTERSPEECH} 2014, 15th Annual Conference of the International Speech
+               Communication Association, Singapore, September 14-18, 2014},
+  pages     = {890--894},
+  publisher = {{ISCA}},
+  year      = {2014},
+  url       = {http://www.isca-speech.org/archive/interspeech\_2014/i14\_0890.html},
+  timestamp = {Wed, 12 Sep 2018 16:38:51 +0200},
+  biburl    = {https://dblp.org/rec/conf/interspeech/TuskeGSN14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@INPROCEEDINGS{RonWeissICAASP2015,
+  author={Hoshen, Yedid and Weiss, Ron J. and Wilson, Kevin W.},
+  booktitle={2015 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Speech acoustic modeling from raw multichannel waveforms}, 
+  year={2015},
+  volume={},
+  number={},
+  pages={4624-4628},
+  doi={10.1109/ICASSP.2015.7178847}}
+  
+@misc{chorowski2015attentionbased,
+      title={Attention-Based Models for Speech Recognition}, 
+      author={Jan Chorowski and Dzmitry Bahdanau and Dmitriy Serdyuk and Kyunghyun Cho and Yoshua Bengio},
+      year={2015},
+      eprint={1506.07503},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{Park_2020,
+   title={Improved Noisy Student Training for Automatic Speech Recognition},
+   url={http://dx.doi.org/10.21437/Interspeech.2020-1470},
+   DOI={10.21437/interspeech.2020-1470},
+   journal={Interspeech 2020},
+   publisher={ISCA},
+   author={Park, Daniel S. and Zhang, Yu and Jia, Ye and Han, Wei and Chiu, Chung-Cheng and Li, Bo and Wu, Yonghui and Le, Quoc V.},
+   year={2020},
+   month={Oct}
+}
+
+@article{Moses2021,
+    author = {Moses, David A. and Metzger, Sean L. and Liu, Jessie R. and Anumanchipalli, Gopala K. and Makin, Joseph G. and Sun, Pengfei F. and Chartier, Josh and Dougherty, Maximilian E. and Liu, Patricia M. and Abrams, Gary M. and Tu-Chan, Adelyn and Ganguly, Karunesh and Chang, Edward F.},
+    title = {Neuroprosthesis for Decoding Speech in a Paralyzed Person with Anarthria},
+    journal = {New England Journal of Medicine},
+    volume = {385},
+    number = {3},
+    pages = {217-227},
+    year = {2021},
+    doi = {10.1056/NEJMoa2027540},
+    
+    URL = { 
+            https://doi.org/10.1056/NEJMoa2027540
+        
+    },
+    eprint = { 
+            https://doi.org/10.1056/NEJMoa2027540
+        
+    }
+}
+
+@article {ctrl-labs2024,
+	author = {{CTRL{-}labs at Reality Labs} and David Sussillo and Patrick Kaifosh and Thomas Reardon},
+	title = {A generic noninvasive neuromotor interface for human-computer interaction},
+	elocation-id = {2024.02.23.581779},
+	year = {2024},
+	doi = {10.1101/2024.02.23.581779},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Since the advent of computing, humans have sought computer input technologies that are expressive, intuitive, and universal. While diverse modalities have been developed, including keyboards, mice, and touchscreens, they require interaction with an intermediary device that can be limiting, especially in mobile scenarios. Gesture-based systems utilize cameras or inertial sensors to avoid an intermediary device, but they tend to perform well only for unobscured or overt movements. Brain computer interfaces (BCIs) have been imagined for decades to solve the interface problem by allowing for input to computers via thought alone. However high-bandwidth communication has only been demonstrated using invasive BCIs with decoders designed for single individuals, and so cannot scale to the general public. In contrast, neuromotor signals found at the muscle offer access to subtle gestures and force information. Here we describe the development of a noninvasive neuromotor interface that allows for computer input using surface electromyography (sEMG). We developed a highly-sensitive and robust hardware platform that is easily donned/doffed to sense myoelectric activity at the wrist and transform intentional neuromotor commands into computer input. We paired this device with an infrastructure optimized to collect training data from thousands of consenting participants, which allowed us to develop generic sEMG neural network decoding models that work across many people without the need for per-person calibration. Test users not included in the training set demonstrate closed-loop median performance of gesture decoding at 0.5 target acquisitions per second in a continuous navigation task, 0.9 gesture detections per second in a discrete gesture task, and handwriting at 17.0 adjusted words per minute. We demonstrate that input bandwidth can be further improved up to 30\% by personalizing sEMG decoding models to the individual, anticipating a future in which humans and machines co-adapt to provide seamless translation of human intent. To our knowledge this is the first high-bandwidth neuromotor interface that directly leverages biosignals with performant out-of-the-box generalization across people.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2024/02/28/2024.02.23.581779},
+	eprint = {https://www.biorxiv.org/content/early/2024/02/28/2024.02.23.581779.full.pdf},
+	journal = {bioRxiv}
+}
+
+@inproceedings{fan2023plugandplay,
+title={Plug-and-Play Stability for Intracortical Brain-Computer Interfaces: A One-Year Demonstration of Seamless Brain-to-Text Communication},
+author={Chaofei Fan and Nick Hahn and Foram Kamdar and Donald Avansino and Guy H Wilson and Leigh Hochberg and Krishna V. Shenoy and Jaimie M. Henderson and Francis R Willett},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=STqaMqhtDi}
+}
+
+@article{defossez-etal:2023,
+	abstract = {Decoding speech from brain activity is a long-awaited goal in both healthcare and neuroscience. Invasive devices have recently led to major milestones in this regard: deep-learning algorithms trained on intracranial recordings can now start to decode elementary linguistic features such as letters, words and audio-spectrograms. However, extending this approach to natural speech and non-invasive brain recordings remains a major challenge. Here we introduce a model trained with contrastive learning to decode self-supervised representations of perceived speech from the non-invasive recordings of a large cohort of healthy individuals. To evaluate this approach, we curate and integrate four public datasets, encompassing 175 volunteers recorded with magneto-encephalography or electro-encephalography while they listened to short stories and isolated sentences. The results show that our model can identify, from 3 seconds of magneto-encephalography signals, the corresponding speech segment with up to 41{\%} accuracy out of more than 1,000 distinct possibilities on average across participants, and with up to 80{\%} in the best participants---a performance that allows the decoding of words and phrases absent from the training set. The comparison of our model with a variety of baselines highlights the importance of a contrastive objective, pretrained representations of speech and a common convolutional architecture simultaneously trained across multiple participants. Finally, the analysis of the decoder's predictions suggests that they primarily depend on lexical and contextual semantic representations. Overall, this effective decoding of perceived speech from non-invasive recordings delineates a promising path to decode language from brain activity, without putting patients at risk of brain surgery.},
+	author = {D{\'e}fossez, Alexandre and Caucheteux, Charlotte and Rapin, J{\'e}r{\'e}my and Kabeli, Ori and King, Jean-R{\'e}mi},
+	date = {2023/10/01},
+	date-added = {2024-05-12 21:45:48 +0200},
+	date-modified = {2024-05-12 21:45:48 +0200},
+	doi = {10.1038/s42256-023-00714-5},
+	id = {D{\'e}fossez2023},
+	isbn = {2522-5839},
+	journal = {Nature Machine Intelligence},
+	number = {10},
+	pages = {1097--1107},
+	title = {Decoding speech perception from non-invasive brain recordings},
+	url = {https://doi.org/10.1038/s42256-023-00714-5},
+	volume = {5},
+	year = {2023},
+	bdsk-url-1 = {https://doi.org/10.1038/s42256-023-00714-5}}
+
+
+@inproceedings{duan2023dewave,
+title={DeWave: Discrete Encoding of {EEG} Waves for {EEG} to Text Translation},
+author={Yiqun Duan and Charles Zhou and Zhen Wang and Yu-Kai Wang and Chin-teng Lin},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=WaLI8slhLw}
+}
+
+
+@article{Metzger-etal:2023,
+	abstract = {Speech neuroprostheses have the potential to restore communication to people living with paralysis, but naturalistic speed and expressivity are elusive1. Here we use high-density surface recordings of the speech cortex in a clinical-trial participant with severe limb and vocal paralysis to achieve high-performance real-time decoding across three complementary speech-related output modalities: text, speech audio and facial-avatar animation. We trained and evaluated deep-learning models using neural data collected as the participant attempted to silently speak sentences. For text, we demonstrate accurate and rapid large-vocabulary decoding with a median rate of 78 words per minute and median word error rate of 25{\%}. For speech audio, we demonstrate intelligible and rapid speech synthesis and personalization to the participant's pre-injury voice. For facial-avatar animation, we demonstrate the control of virtual orofacial movements for speech and non-speech communicative gestures. The decoders reached high performance with less than two weeks of training. Our findings introduce a multimodal speech-neuroprosthetic approach that has substantial promise to restore full, embodied communication to people living with severe paralysis.},
+	author = {Metzger, Sean L. and Littlejohn, Kaylo T. and Silva, Alexander B. and Moses, David A. and Seaton, Margaret P. and Wang, Ran and Dougherty, Maximilian E. and Liu, Jessie R. and Wu, Peter and Berger, Michael A. and Zhuravleva, Inga and Tu-Chan, Adelyn and Ganguly, Karunesh and Anumanchipalli, Gopala K. and Chang, Edward F.},
+	date = {2023/08/01},
+	date-added = {2024-05-12 21:54:30 +0200},
+	date-modified = {2024-05-12 21:54:30 +0200},
+	doi = {10.1038/s41586-023-06443-4},
+	id = {Metzger2023},
+	isbn = {1476-4687},
+	journal = {Nature},
+	number = {7976},
+	pages = {1037--1046},
+	title = {A high-performance neuroprosthesis for speech decoding and avatar control},
+	url = {https://doi.org/10.1038/s41586-023-06443-4},
+	volume = {620},
+	year = {2023},
+	bdsk-url-1 = {https://doi.org/10.1038/s41586-023-06443-4}}
+
+
+@inproceedings{Kobler-eta:2022,
+ author = {Kobler, Reinmar and Hirayama, Jun-ichiro and Zhao, Qibin and Kawanabe, Motoaki},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {6219--6235},
+ publisher = {Curran Associates, Inc.},
+ title = {SPD domain-specific batch normalization to crack interpretable unsupervised domain adaptation in EEG},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/28ef7ee7cd3e03093acc39e1272411b7-Paper-Conference.pdf},
+ volume = {35},
+ year = {2022}
+}
+
+@inproceedings{gnassounou2023convolution,
+title={Convolution Monge Mapping Normalization for learning on sleep data},
+author={Theo Gnassounou and R{\'e}mi Flamary and Alexandre Gramfort},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=CuHymkHRus}
+}
+
+@misc{bakas2023latent,
+      title={Latent Alignment with Deep Set EEG Decoders}, 
+      author={Stylianos Bakas and Siegfried Ludwig and Dimitrios A. Adamos and Nikolaos Laskaris and Yannis Panagakis and Stefanos Zafeiriou},
+      year={2023},
+      eprint={2311.17968},
+      archivePrefix={arXiv},
+      primaryClass={eess.SP}
+}
+
+
+
+@article{pernet-etal:2019,
+	abstract = {The Brain Imaging Data Structure (BIDS) project is a rapidly evolving effort in the human brain imaging research community to create standards allowing researchers to readily organize and share study data within and between laboratories. Here we present an extension to BIDS for electroencephalography (EEG) data, EEG-BIDS, along with tools and references to a series of public EEG datasets organized using this new standard.},
+	author = {Pernet, Cyril R. and Appelhoff, Stefan and Gorgolewski, Krzysztof J. and Flandin, Guillaume and Phillips, Christophe and Delorme, Arnaud and Oostenveld, Robert},
+	date = {2019/06/25},
+	date-added = {2024-05-12 22:37:20 +0200},
+	date-modified = {2024-05-12 22:37:20 +0200},
+	doi = {10.1038/s41597-019-0104-8},
+	id = {Pernet2019},
+	isbn = {2052-4463},
+	journal = {Scientific Data},
+	number = {1},
+	pages = {103},
+	title = {EEG-BIDS, an extension to the brain imaging data structure for electroencephalography},
+	url = {https://doi.org/10.1038/s41597-019-0104-8},
+	volume = {6},
+	year = {2019},
+	bdsk-url-1 = {https://doi.org/10.1038/s41597-019-0104-8}}
+
+
+@article{Poldrack-etal:2024,
+    author = {Poldrack, Russell A. and Markiewicz, Christopher J. and Appelhoff, Stefan and Ashar, Yoni K. and Auer, Tibor and Baillet, Sylvain and Bansal, Shashank and Beltrachini, Leandro and Benar, Christian G. and Bertazzoli, Giacomo and Bhogawar, Suyash and Blair, Ross W. and Bortoletto, Marta and Boudreau, Mathieu and Brooks, Teon L. and Calhoun, Vince D. and Castelli, Filippo Maria and Clement, Patricia and Cohen, Alexander L. and Cohen-Adad, Julien and D’Ambrosio, Sasha and de Hollander, Gilles and de la Iglesia-Vayá, María and de la Vega, Alejandro and Delorme, Arnaud and Devinsky, Orrin and Draschkow, Dejan and Duff, Eugene Paul and DuPre, Elizabeth and Earl, Eric and Esteban, Oscar and Feingold, Franklin W. and Flandin, Guillaume and Galassi, Anthony and Gallitto, Giuseppe and Ganz, Melanie and Gau, Rémi and Gholam, James and Ghosh, Satrajit S. and Giacomel, Alessio and Gillman, Ashley G. and Gleeson, Padraig and Gramfort, Alexandre and Guay, Samuel and Guidali, Giacomo and Halchenko, Yaroslav O. and Handwerker, Daniel A. and Hardcastle, Nell and Herholz, Peer and Hermes, Dora and Honey, Christopher J. and Innis, Robert B. and Ioanas, Horea-Ioan and Jahn, Andrew and Karakuzu, Agah and Keator, David B. and Kiar, Gregory and Kincses, Balint and Laird, Angela R. and Lau, Jonathan C. and Lazari, Alberto and Legarreta, Jon Haitz and Li, Adam and Li, Xiangrui and Love, Bradley C. and Lu, Hanzhang and Marcantoni, Eleonora and Maumet, Camille and Mazzamuto, Giacomo and Meisler, Steven L. and Mikkelsen, Mark and Mutsaerts, Henk and Nichols, Thomas E. and Nikolaidis, Aki and Nilsonne, Gustav and Niso, Guiomar and Norgaard, Martin and Okell, Thomas W. and Oostenveld, Robert and Ort, Eduard and Park, Patrick J. and Pawlik, Mateusz and Pernet, Cyril R. and Pestilli, Franco and Petr, Jan and Phillips, Christophe and Poline, Jean-Baptiste and Pollonini, Luca and Raamana, Pradeep Reddy and Ritter, Petra and Rizzo, Gaia and Robbins, Kay A. and Rockhill, Alexander P. and Rogers, Christine and Rokem, Ariel and Rorden, Chris and Routier, Alexandre and Saborit-Torres, Jose Manuel and Salo, Taylor and Schirner, Michael and Smith, Robert E. and Spisak, Tamas and Sprenger, Julia and Swann, Nicole C. and Szinte, Martin and Takerkart, Sylvain and Thirion, Bertrand and Thomas, Adam G. and Torabian, Sajjad and Varoquaux, Gael and Voytek, Bradley and Welzel, Julius and Wilson, Martin and Yarkoni, Tal and Gorgolewski, Krzysztof J.},
+    title = "{The past, present, and future of the brain imaging data structure (BIDS)}",
+    journal = {Imaging Neuroscience},
+    volume = {2},
+    pages = {1-19},
+    year = {2024},
+    month = {03},
+    abstract = "{The Brain Imaging Data Structure (BIDS) is a community-driven standard for the organization of data and metadata from a growing range of neuroscience modalities. This paper is meant as a history of how the standard has developed and grown over time. We outline the principles behind the project, the mechanisms by which it has been extended, and some of the challenges being addressed as it evolves. We also discuss the lessons learned through the project, with the aim of enabling researchers in other domains to learn from the success of BIDS.}",
+    issn = {2837-6056},
+    doi = {10.1162/imag_a_00103},
+    url = {https://doi.org/10.1162/imag\_a\_00103},
+    eprint = {https://direct.mit.edu/imag/article-pdf/doi/10.1162/imag\_a\_00103/2345950/imag\_a\_00103.pdf},
+}
+
+@article{hug2023common,
+  title={Common synaptic input, synergies and size principle: Control of spinal motor neurons for movement generation},
+  author={Hug, Fran{\c{c}}ois and Avrillon, Simon and Ib{\'a}{\~n}ez, Jaime and Farina, Dario},
+  journal={The Journal of physiology},
+  volume={601},
+  number={1},
+  pages={11--20},
+  year={2023},
+  publisher={Wiley Online Library}
+}
+
+@article{ozdemir2022dataset,
+  title={Dataset for multi-channel surface electromyography (sEMG) signals of hand gestures},
+  author={Ozdemir, Mehmet Akif and Kisa, Deniz Hande and Guren, Onan and Akan, Aydin},
+  journal={Data in brief},
+  volume={41},
+  pages={107921},
+  year={2022},
+  publisher={Elsevier}
+}
+
+@article{kueper2024eeg,
+  title={EEG \& EMG Dataset for the Detection of Errors Introduced by an Active Orthosis Device},
+  author={Kueper, Niklas and Chari, Kartik and B{\"u}tef{\"u}r, Judith and Habenicht, Julia and Rossol, Tobias and Kim, Su Kyoung and Tabie, Marc and Kirchner, Frank and Kirchner, Elsa Andrea},
+  journal={Frontiers in Human Neuroscience},
+  volume={18},
+  pages={1304311},
+  year={2024},
+  publisher={Frontiers}
+}
+
+@article{hsu2021hubert,
+  title={Hubert: Self-supervised speech representation learning by masked prediction of hidden units},
+  author={Hsu, Wei-Ning and Bolte, Benjamin and Tsai, Yao-Hung Hubert and Lakhotia, Kushal and Salakhutdinov, Ruslan and Mohamed, Abdelrahman},
+  journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+  volume={29},
+  pages={3451--3460},
+  year={2021},
+  publisher={IEEE}
+}
+
+@inproceedings{lugosch2022pseudo,
+  title={Pseudo-labeling for massively multilingual speech recognition},
+  author={Lugosch, Loren and Likhomanenko, Tatiana and Synnaeve, Gabriel and Collobert, Ronan},
+  booktitle={ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={7687--7691},
+  year={2022},
+  organization={IEEE}
+}
+
+@inproceedings{higuchi2022advancing,
+  title={Advancing momentum pseudo-labeling with conformer and initialization strategy},
+  author={Higuchi, Yosuke and Moritz, Niko and Le Roux, Jonathan and Hori, Takaaki},
+  booktitle={ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={7672--7676},
+  year={2022},
+  organization={IEEE}
+}
+
+@INPROCEEDINGS{Mendez2017,
+  author={Mendez, I. and Hansen, B. W. and Grabow, C. M. and Smedegaard, E. J. L. and Skogberg, N. B. and Uth, X. J. and Bruhn, A. and Geng, B. and Kamavuako, E. N.},
+  booktitle={2017 International Conference on Rehabilitation Robotics (ICORR)}, 
+  title={Evaluation of the Myo armband for the classification of hand motions}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={1211-1214},
+  keywords={Electromyography;Pattern recognition;Bandwidth;Feature extraction;Electrodes;Wrist;Sensitivity},
+  doi={10.1109/ICORR.2017.8009414}
+}
+
+@inproceedings{heafield-2011-kenlm,
+  title = {{K}en{LM}: Faster and Smaller Language Model Queries},
+  author = {Heafield, Kenneth},
+  booktitle = {Proceedings of the Sixth Workshop on Statistical Machine Translation},
+  month = jul,
+  year = {2011},
+  address = {Edinburgh, Scotland},
+  publisher = {Association for Computational Linguistics},
+  url = {https://www.aclweb.org/anthology/W11-2123},
+  pages = {187--197},
+  month_numeric = {7}
+}
+
+@inproceedings{heafield-etal-2013-scalable,
+  title = {Scalable Modified {K}neser-{N}ey Language Model Estimation},
+  author = {Heafield, Kenneth and Pouzyrevsky, Ivan and Clark, Jonathan H. and Koehn, Philipp},
+  booktitle = {Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  month = aug,
+  year = {2013},
+  address = {Sofia, Bulgaria},
+  publisher = {Association for Computational Linguistics},
+  url = {https://www.aclweb.org/anthology/P13-2121},
+  pages = {690--696},
+  month_numeric = {8}
+}
+
+@article{DBLP:journals/corr/MerityXBS16,
+  author       = {Stephen Merity and
+                  Caiming Xiong and
+                  James Bradbury and
+                  Richard Socher},
+  title        = {Pointer Sentinel Mixture Models},
+  journal      = {CoRR},
+  volume       = {abs/1609.07843},
+  year         = {2016},
+  url          = {http://arxiv.org/abs/1609.07843},
+  eprinttype    = {arXiv},
+  eprint       = {1609.07843},
+  timestamp    = {Thu, 21 Mar 2019 11:19:44 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/MerityXBS16.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{KOCH20061428,
+title = {How Much the Eye Tells the Brain},
+journal = {Current Biology},
+volume = {16},
+number = {14},
+pages = {1428-1434},
+year = {2006},
+issn = {0960-9822},
+doi = {https://doi.org/10.1016/j.cub.2006.05.056},
+url = {https://www.sciencedirect.com/science/article/pii/S0960982206016393},
+author = {Kristin Koch and Judith McLean and Ronen Segev and Michael A. Freed and Michael J. Berry and Vijay Balasubramanian and Peter Sterling},
+keywords = {SYSNEURO},
+abstract = {Summary
+In the classic “What the frog's eye tells the frog's brain,” Lettvin and colleagues [1] showed that different types of retinal ganglion cell send specific kinds of information. For example, one type responds best to a dark, convex form moving centripetally (a fly). Here we consider a complementary question: how much information does the retina send and how is it apportioned among different cell types? Recording from guinea pig retina on a multi-electrode array and presenting various types of motion in natural scenes, we measured information rates for seven types of ganglion cell. Mean rates varied across cell types (6–13 bits · s−1) more than across stimuli. Sluggish cells transmitted information at lower rates than brisk cells, but because of trade-offs between noise and temporal correlation, all types had the same coding efficiency. Calculating the proportions of each cell type from receptive field size and coverage factor, we conclude (assuming independence) that the approximately 105 ganglion cells transmit on the order of 875,000 bits · s−1. Because sluggish cells are equally efficient but more numerous, they account for most of the information. With approximately 106 ganglion cells, the human retina would transmit data at roughly the rate of an Ethernet connection.}
+}
+
+@misc{kingma2017adam,
+      title={Adam: A Method for Stochastic Optimization}, 
+      author={Diederik P. Kingma and Jimmy Ba},
+      year={2017},
+      eprint={1412.6980},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{perola_mobilekeyboard,
+author = {Palin, Kseniia and Feit, Anna Maria and Kim, Sunjun and Kristensson, Per Ola and Oulasvirta, Antti},
+title = {How do People Type on Mobile Devices? Observations from a Study with 37,000 Volunteers},
+year = {2019},
+isbn = {9781450368254},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3338286.3340120},
+doi = {10.1145/3338286.3340120},
+abstract = {This paper presents a large-scale dataset on mobile text entry collected via a web-based transcription task performed by 37,370 volunteers. The average typing speed was 36.2 WPM with 2.3\% uncorrected errors. The scale of the data enables powerful statistical analyses on the correlation between typing performance and various factors, such as demographics, finger usage, and use of intelligent text entry techniques. We report effects of age and finger usage on performance that correspond to previous studies. We also find evidence of relationships between performance and use of intelligent text entry techniques: auto-correct usage correlates positively with entry rates, whereas word prediction usage has a negative correlation. To aid further work on modeling, machine learning and design improvements in mobile text entry, we make the code and dataset openly available.},
+booktitle = {Proceedings of the 21st International Conference on Human-Computer Interaction with Mobile Devices and Services},
+articleno = {9},
+numpages = {12},
+keywords = {Mobile text entry, auto-correct, word prediction},
+location = {Taipei, Taiwan},
+series = {MobileHCI '19}
+}
+
+@article{cosine_annealing,
+  author       = {Ilya Loshchilov and
+                  Frank Hutter},
+  title        = {{SGDR:} Stochastic Gradient Descent with Restarts},
+  journal      = {CoRR},
+  volume       = {abs/1608.03983},
+  year         = {2016},
+  url          = {http://arxiv.org/abs/1608.03983},
+  eprinttype    = {arXiv},
+  eprint       = {1608.03983},
+  timestamp    = {Mon, 13 Aug 2018 16:48:29 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/LoshchilovH16a.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}

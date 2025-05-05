@@ -1,0 +1,23 @@
+Meta-learning aims to perform fast adaptation on a new task through learning
+a "prior" from multiple existing tasks. A common practice in meta-learning is
+to perform a train-validation split (\emph{train-val method}) where the prior
+adapts to the task on one split of the data, and the resulting predictor is
+evaluated on another split. Despite its prevalence, the importance of the
+train-validation split is not well understood either in theory or in practice,
+particularly in comparison to the more direct \emph{train-train method}, which
+uses all the per-task data for both training and evaluation.
+  We provide a detailed theoretical study on whether and when the
+train-validation split is helpful in the linear centroid meta-learning problem.
+In the agnostic case, we show that the expected loss of the train-val method is
+minimized at the optimal prior for meta testing, and this is not the case for
+the train-train method in general without structural assumptions on the data.
+In contrast, in the realizable case where the data are generated from linear
+models, we show that both the train-val and train-train losses are minimized at
+the optimal prior in expectation. Further, perhaps surprisingly, our main
+result shows that the train-train method achieves a \emph{strictly better}
+excess loss in this realizable case, even when the regularization parameter and
+split ratio are optimally tuned for both methods. Our results highlight that
+sample splitting may not always be preferable, especially when the data is
+realizable by the model. We validate our theories by experimentally showing
+that the train-train method can indeed outperform the train-val method, on both
+simulations and real meta-learning tasks.

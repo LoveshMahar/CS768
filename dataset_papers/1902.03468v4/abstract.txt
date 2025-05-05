@@ -1,0 +1,10 @@
+We study the sample complexity of private synthetic data generation over an
+unbounded sized class of statistical queries, and show that any class that is
+privately proper PAC learnable admits a private synthetic data generator
+(perhaps non-efficient). Previous work on synthetic data generators focused on
+the case that the query class $\mathcal{D}$ is finite and obtained sample
+complexity bounds that scale logarithmically with the size $|\mathcal{D}|$.
+Here we construct a private synthetic data generator whose sample complexity is
+independent of the domain size, and we replace finiteness with the assumption
+that $\mathcal{D}$ is privately PAC learnable (a formally weaker task, hence we
+obtain equivalence between the two tasks).

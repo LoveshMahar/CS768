@@ -1,0 +1,726 @@
+
+@article{javed_scalable_2023,
+	title = {Scalable real-time recurrent learning using sparse connections and selective learning},
+	abstract = {State construction from sensory observations is an important component of a reinforcement learning agent. One solution for state construction is to use recurrent neural networks. Back-propagation through time (BPTT), and real-time recurrent learning (RTRL) are two popular gradient-based methods for recurrent learning. BPTT requires the complete sequence of observations before computing gradients and is unsuitable for online real-time updates. RTRL can do online updates but scales poorly to large networks. In this paper, we propose two constraints that make RTRL scalable. We show that by either decomposing the network into independent modules, or learning the network incrementally, we can make RTRL scale linearly with the number of parameters. Unlike prior scalable gradient estimation algorithms, such as UORO and Truncated-BPTT, our algorithms do not add noise or bias to the gradient estimate. Instead, they trade-off the functional capacity of the network to achieve scalable learning. We demonstrate the effectiveness of our approach over Truncated-BPTT on a benchmark inspired by animal learning and by doing policy evaluation for pre-trained Rainbow-DQN agents in the Arcade Learning Environment (ALE).},
+	journal = {arXiv preprint arXiv:2302.05326},
+	author = {Javed, Khurram and Shah, Haseeb and Sutton, Rich and White, Martha},
+	year = {2023},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+}
+
+@article{graves_neural_2014,
+	title = {Neural {Turing} machines},
+	journal = {arXiv preprint arXiv:1410.5401},
+	author = {Graves, Alex and Wayne, Greg and Danihelka, Ivo},
+	year = {2014},
+}
+
+@article{nangia_listops_2018,
+	title = {Listops: {A} diagnostic dataset for latent tree learning},
+	journal = {arXiv preprint arXiv:1804.06028},
+	author = {Nangia, Nikita and Bowman, Samuel R},
+	year = {2018},
+}
+
+@techreport{krizhevsky_learning_2009,
+	title = {Learning multiple layers of features from tiny images},
+	author = {Krizhevsky, Alex and Hinton, Geoffrey},
+	year = {2009},
+}
+
+@article{hochreiter_long_1997,
+	title = {Long short-term memory},
+	volume = {9},
+	number = {8},
+	journal = {Neural Computation},
+	author = {Hochreiter, Sepp and Schmidhuber, Jürgen},
+	year = {1997},
+	pages = {1735--1780},
+}
+
+@inproceedings{gupta_diagonal_2022,
+	title = {Diagonal state spaces are as effective as structured states spaces},
+	volume = {35},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Gupta, Ankit and Gu, Albert and Berant, Jonathan},
+	year = {2022},
+}
+
+@inproceedings{jaderberg_decoupled_2017,
+	title = {Decoupled neural interfaces using synthetic gradients},
+	abstract = {Training directed neural networks typically requires forward-propagating data through a computation graph, followed by backpropagating error signal, to produce weight updates. All layers, or more generally, modules, of the network are therefore locked, in the sense that they must wait for the remainder of the network to execute forwards and propagate error backwards before they can be updated. In this work we break this constraint by decoupling modules by introducing a model of the future computation of the network graph. These models predict what the result of the modelled subgraph will produce using only local information. In particular we focus on modelling error gradients: by using the modelled synthetic gradient in place of true backpropagated error gradients we decouple subgraphs, and can update them independently and asynchronously i.e. we realise decoupled neural interfaces. We show results for feed-forward models, where every layer is trained asynchronously, recurrent neural networks (RNNs) where predicting one’s future gradient extends the time over which the RNN can effectively model, and also a hierarchical RNN system with ticking at different timescales. Finally, we demonstrate that in addition to predicting gradients, the same framework can be used to predict inputs, resulting in models which are decoupled in both the forward and backwards pass – amounting to independent networks which co-learn such that they can be composed into a single functioning corporation.},
+	booktitle = {International {Conference} on {Machine} {Learning}},
+	author = {Jaderberg, Max and Czarnecki, Wojciech Marian and Osindero, Simon and Vinyals, Oriol and Graves, Alex and Silver, David and Kavukcuoglu, Koray},
+	year = {2017},
+}
+
+@inproceedings{dauphin_language_2017,
+	title = {Language modeling with gated convolutional networks},
+	abstract = {The pre-dominant approach to language modeling to date is based on recurrent neural networks. Their success on this task is often linked to their ability to capture unbounded context. In this paper we develop a ﬁnite context approach through stacked convolutions, which can be more efﬁcient since they allow parallelization over sequential tokens. We propose a novel simpliﬁed gating mechanism that outperforms Oord et al. (2016b) and investigate the impact of key architectural decisions. The proposed approach achieves state-of-the-art on the WikiText103 benchmark, even though it features longterm dependencies, as well as competitive results on the Google Billion Words benchmark. Our model reduces the latency to score a sentence by an order of magnitude compared to a recurrent baseline. To our knowledge, this is the ﬁrst time a non-recurrent approach is competitive with strong recurrent models on these large scale language tasks.},
+	booktitle = {International {Conference} on {Machine} {Learning}},
+	author = {Dauphin, Yann N. and Fan, Angela and Auli, Michael and Grangier, David},
+	year = {2017},
+	keywords = {Computer Science - Computation and Language},
+}
+
+@article{ba_layer_2016,
+	title = {Layer normalization},
+	abstract = {Training state-of-the-art, deep neural networks is computationally expensive. One way to reduce the training time is to normalize the activities of the neurons. A recently introduced technique called batch normalization uses the distribution of the summed input to a neuron over a mini-batch of training cases to compute a mean and variance which are then used to normalize the summed input to that neuron on each training case. This signiﬁcantly reduces the training time in feedforward neural networks. However, the effect of batch normalization is dependent on the mini-batch size and it is not obvious how to apply it to recurrent neural networks. In this paper, we transpose batch normalization into layer normalization by computing the mean and variance used for normalization from all of the summed inputs to the neurons in a layer on a single training case. Like batch normalization, we also give each neuron its own adaptive bias and gain which are applied after the normalization but before the non-linearity. Unlike batch normalization, layer normalization performs exactly the same computation at training and test times. It is also straightforward to apply to recurrent neural networks by computing the normalization statistics separately at each time step. Layer normalization is very effective at stabilizing the hidden state dynamics in recurrent networks. Empirically, we show that layer normalization can substantially reduce the training time compared with previously published techniques.},
+	journal = {arXiv preprint arXiv:1607.06450},
+	author = {Ba, Jimmy Lei and Kiros, Jamie Ryan and Hinton, Geoffrey E.},
+	year = {2016},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+}
+
+@inproceedings{meulemans_least-control_2022,
+	title = {The least-control principle for local learning at equilibrium},
+	volume = {35},
+	abstract = {Equilibrium systems are a powerful way to express neural computations. As special cases, they include models of great current interest in both neuroscience and machine learning, such as deep neural networks, equilibrium recurrent neural networks, deep equilibrium models, or meta-learning. Here, we present a new principle for learning such systems with a temporally- and spatially-local rule. Our principle casts learning as a least-control problem, where we first introduce an optimal controller to lead the system towards a solution state, and then define learning as reducing the amount of control needed to reach such a state. We show that incorporating learning signals within a dynamics as an optimal control enables transmitting activity-dependent credit assignment information, avoids storing intermediate states in memory, and does not rely on infinitesimal learning signals. In practice, our principle leads to strong performance matching that of leading gradient-based learning methods when applied to an array of problems involving recurrent neural networks and meta-learning. Our results shed light on how the brain might learn and offer new ways of approaching a broad class of machine learning problems.},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Meulemans, Alexander and Zucchet, Nicolas and Kobayashi, Seijin and von Oswald, Johannes and Sacramento, João},
+	year = {2022},
+	keywords = {68T07, Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing, I.2.6},
+}
+
+@article{senn_neuronal_2023,
+	title = {A neuronal least-action principle for real-time learning in cortical circuits},
+	abstract = {One of the most fundamental laws of physics is the principle of least action. Motivated by its predictive power, we introduce a neural least-action principle that we apply to motor control. The central notion is the somato-dendritic mismatch error within individual neurons. The principle postulates that the somato-dendritic mismatch errors across all neurons in a cortical network are minimized by the voltage dynamics. Ongoing synaptic plasticity reduces the somato-dendritic mismatch error within each neuron and performs gradient descent on the output cost in real time. The neuronal activity is prospective, ensuring that dendritic errors deep in the network are prospectively corrected to eventually reduce motor errors. The neuron-specific errors are represented in the apical dendrites of pyramidal neurons, and are extracted by a cortical microcircuit that ‘explains away’ the feedback from the periphery. The principle offers a general theoretical framework to functionally describe real-time neuronal and synaptic processing.},
+	journal = {bioRxiv 2023.03.25.534198},
+	author = {Senn, Walter and Dold, Dominik and Kungl, Akos F. and Ellenberger, Benjamin and Jordan, Jakob and Bengio, Yoshua and Sacramento, João and Petrovici, Mihai A.},
+	year = {2023},
+}
+
+@inproceedings{lee_difference_2015,
+	title = {Difference target propagation},
+	booktitle = {Joint {European} {Conference} on {Machine} {Learning} and {Knowledge} {Discovery} in {Databases}},
+	author = {Lee, Dong-Hyun and Zhang, Saizheng and Fischer, Asja and Bengio, Yoshua},
+	year = {2015},
+}
+
+@article{lillicrap_backpropagation_2020,
+	title = {Backpropagation and the brain},
+	volume = {21},
+	abstract = {During learning, the brain modifies synapses to improve behaviour. In the cortex, synapses are embedded within multilayered networks, making it difficult to determine the effect of an individual synaptic modification on the behaviour of the system. The backpropagation algorithm solves this problem in deep artificial neural networks, but historically it has been viewed as biologically problematic. Nonetheless, recent developments in neuroscience and the successes of artificial neural networks have reinvigorated interest in whether backpropagation offers insights for understanding learning in the cortex. The backpropagation algorithm learns quickly by computing synaptic updates using feedback connections to deliver error signals. Although feedback connections are ubiquitous in the cortex, it is difficult to see how they could deliver the error signals required by strict formulations of backpropagation. Here we build on past and recent developments to argue that feedback connections may instead induce neural activities whose differences can be used to locally approximate these signals and hence drive effective learning in deep networks in the brain.},
+	number = {6},
+	journal = {Nature Reviews Neuroscience},
+	author = {Lillicrap, Timothy P. and Santoro, Adam and Marris, Luke and Akerman, Colin J. and Hinton, Geoffrey},
+	year = {2020},
+	pages = {335--346},
+}
+
+@article{lillicrap_random_2016,
+	title = {Random synaptic feedback weights support error backpropagation for deep learning},
+	volume = {7},
+	abstract = {The brain processes information through multiple layers of neurons. This deep architecture is representationally powerful, but complicates learning because it is difficult to identify the responsible neurons when a mistake is made. In machine learning, the backpropagation algorithm assigns blame by multiplying error signals with all the synaptic weights on each neuron’s axon and further downstream. However, this involves a precise, symmetric backward connectivity pattern, which is thought to be impossible in the brain. Here we demonstrate that this strong architectural constraint is not required for effective error propagation. We present a surprisingly simple mechanism that assigns blame by multiplying errors by even random synaptic weights. This mechanism can transmit teaching signals across multiple layers of neurons and performs as effectively as backpropagation on a variety of tasks. Our results help reopen questions about how the brain could use error signals and dispel long-held assumptions about algorithmic constraints on learning.},
+	language = {en},
+	number = {1},
+	journal = {Nature Communications},
+	author = {Lillicrap, Timothy P. and Cownden, Daniel and Tweed, Douglas B. and Akerman, Colin J.},
+	year = {2016},
+	pages = {13276},
+}
+
+@article{scellier_equilibrium_2017,
+	title = {Equilibrium propagation: bridging the gap between energy-based models and backpropagation},
+	volume = {11},
+	language = {en},
+	journal = {Frontiers in Computational Neuroscience},
+	author = {Scellier, Benjamin and Bengio, Yoshua},
+	year = {2017},
+}
+
+@article{payeur_burst-dependent_2021,
+	title = {Burst-dependent synaptic plasticity can coordinate learning in hierarchical circuits},
+	volume = {24},
+	number = {7},
+	journal = {Nature Neuroscience},
+	author = {Payeur, Alexandre and Guerguiev, Jordan and Zenke, Friedemann and Richards, Blake A. and Naud, Richard},
+	year = {2021},
+	pages = {1010--1019},
+}
+
+@article{roelfsema_control_2018,
+	title = {Control of synaptic plasticity in deep cortical networks},
+	volume = {19},
+	abstract = {Humans and many other animals have an enormous capacity to learn about sensory stimuli and to master new skills. However, many of the mechanisms that enable us to learn remain to be understood. One of the greatest challenges of systems neuroscience is to explain how synaptic connections change to support maximally adaptive behaviour. Here, we provide an overview of factors that determine the change in the strength of synapses, with a focus on synaptic plasticity in sensory cortices. We review the influence of neuromodulators and feedback connections in synaptic plasticity and suggest a specific framework in which these factors can interact to improve the functioning of the entire network.},
+	number = {3},
+	journal = {Nature Reviews Neuroscience},
+	author = {Roelfsema, Pieter R. and Holtmaat, Anthony},
+	year = {2018},
+	pages = {166--180},
+}
+
+@article{whittington_theories_2019,
+	title = {Theories of error back-propagation in the brain},
+	volume = {23},
+	abstract = {This review article summarises recently proposed theories on how neural circuits in the brain could approximate the error back-propagation algorithm used by artificial neural networks. Computational models implementing these theories achieve learning as efficient as artificial neural networks, but they use simple synaptic plasticity rules based on activity of presynaptic and postsynaptic neurons. The models have similarities, such as including both feedforward and feedback connections, allowing information about error to propagate throughout the network. Furthermore, they incorporate experimental evidence on neural connectivity, responses, and plasticity. These models provide insights on how brain networks might be organised such that modification of synaptic weights on multiple levels of cortical hierarchy leads to improved performance on tasks.},
+	number = {3},
+	journal = {Trends in Cognitive Sciences},
+	author = {Whittington, James C. R. and Bogacz, Rafal},
+	year = {2019},
+	keywords = {deep learning, neural networks, predictive coding, synaptic plasticity},
+	pages = {235--250},
+}
+
+@misc{goyal_recurrent_2020,
+	title = {Recurrent {Independent} {Mechanisms}},
+	url = {http://arxiv.org/abs/1909.10893},
+	doi = {10.48550/arXiv.1909.10893},
+	abstract = {Learning modular structures which reflect the dynamics of the environment can lead to better generalization and robustness to changes which only affect a few of the underlying causes. We propose Recurrent Independent Mechanisms (RIMs), a new recurrent architecture in which multiple groups of recurrent cells operate with nearly independent transition dynamics, communicate only sparingly through the bottleneck of attention, and are only updated at time steps where they are most relevant. We show that this leads to specialization amongst the RIMs, which in turn allows for dramatically improved generalization on tasks where some factors of variation differ systematically between training and evaluation.},
+	urldate = {2023-05-16},
+	publisher = {arXiv},
+	author = {Goyal, Anirudh and Lamb, Alex and Hoffmann, Jordan and Sodhani, Shagun and Levine, Sergey and Bengio, Yoshua and Schölkopf, Bernhard},
+	month = nov,
+	year = {2020},
+	note = {arXiv:1909.10893 [cs, stat]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
+}
+
+@article{jankowski_complex-valued_1996,
+	title = {Complex-valued multistate neural associative memory},
+	volume = {7},
+	abstract = {A model of a multivalued associative memory is presented. This memory has the form of a fully connected attractor neural network composed of multistate complex-valued neurons. Such a network is able to perform the task of storing and recalling gray-scale images. It is also shown that the complex-valued fully connected neural network may be considered as a generalization of a Hopfield network containing real-valued neurons. A computational energy function is introduced and evaluated in order to prove network stability for asynchronous dynamics. Storage capacity as related to the number of accessible neuron states is also estimated.},
+	number = {6},
+	journal = {IEEE Transactions on Neural Networks},
+	author = {Jankowski, S. and Lozowski, A. and Zurada, J.M.},
+	year = {1996},
+	keywords = {Associative memory, Computer networks, Gray-scale, Hopfield neural networks, Image coding, Image recognition, Neural networks, Neurons, Stability, State estimation},
+	pages = {1491--1496},
+}
+
+@article{schaffer_complex-valued_2013,
+	title = {A complex-valued firing-rate model that approximates the dynamics of spiking networks},
+	volume = {9},
+	abstract = {Firing-rate models provide an attractive approach for studying large neural networks because they can be simulated rapidly and are amenable to mathematical analysis. Traditional firing-rate models assume a simple form in which the dynamics are governed by a single time constant. These models fail to replicate certain dynamic features of populations of spiking neurons, especially those involving synchronization. We present a complex-valued firing-rate model derived from an eigenfunction expansion of the Fokker-Planck equation and apply it to the linear, quadratic and exponential integrate-and-fire models. Despite being almost as simple as a traditional firing-rate description, this model can reproduce firing-rate dynamics due to partial synchronization of the action potentials in a spiking model, and it successfully predicts the transition to spike synchronization in networks of coupled excitatory and inhibitory neurons.},
+	number = {10},
+	journal = {PLOS Computational Biology},
+	author = {Schaffer, Evan S. and Ostojic, Srdjan and Abbott, L. F.},
+	year = {2013},
+	keywords = {Action potentials, Approximation methods, Behavior, Eigenvalues, Membrane potential, Neural networks, Neurons, Population dynamics},
+	pages = {e1003301},
+}
+
+@article{montbrio_macroscopic_2015,
+	title = {Macroscopic description for networks of spiking neurons},
+	volume = {5},
+	number = {2},
+	journal = {Physical Review X},
+	author = {Montbrió, Ernest and Pazó, Diego and Roxin, Alex},
+	year = {2015},
+	pages = {021028},
+}
+
+@article{cook_mean-field_1989,
+	title = {The mean-field theory of a {Q}-state neural network model},
+	volume = {22},
+	number = {12},
+	journal = {Journal of Physics A: Mathematical and General},
+	author = {Cook, J},
+	year = {1989},
+	pages = {2057},
+}
+
+@inproceedings{schmidhuber_recurrent_1990,
+	title = {Recurrent networks adjusted by adaptive critics},
+	volume = {1},
+	language = {en},
+	booktitle = {{IEEE}/{INNS} {International} {Joint} {Conference} on {Neural} {Networks}},
+	author = {Schmidhuber, J.},
+	year = {1990},
+}
+
+@article{marschall_unified_2020,
+	title = {A unified framework of online learning algorithms for training recurrent neural networks},
+	volume = {21},
+	abstract = {We present a framework for compactly summarizing many recent results in efficient and/or biologically plausible online training of recurrent neural networks (RNN). The framework organizes algorithms according to several criteria: (a) past vs. future facing, (b) tensor structure, (c) stochastic vs. deterministic, and (d) closed form vs. numerical. These axes reveal latent conceptual connections among several recent advances in online learning. Furthermore, we provide novel mathematical intuitions for their degree of success. Testing these algorithms on two parametric task families shows that performances cluster according to our criteria. Although a similar clustering is also observed for pairwise gradient alignment, alignment with exact methods does not explain ultimate performance. This suggests the need for better comparison metrics.},
+	number = {1},
+	journal = {The Journal of Machine Learning Research},
+	author = {Marschall, Owen and Cho, Kyunghyun and Savin, Cristina},
+	year = {2020},
+	keywords = {approximation, backpropagation through time, biologically plausible learning, local, online, real-time recurrent learning},
+	pages = {135:5320--135:5353},
+}
+
+@article{lillicrap_backpropagation_2019,
+	title = {Backpropagation through time and the brain},
+	volume = {55},
+	abstract = {It has long been speculated that the backpropagation-of-error algorithm (backprop) may be a model of how the brain learns. Backpropagation-through-time (BPTT) is the canonical temporal-analogue to backprop used to assign credit in recurrent neural networks in machine learning, but there's even less conviction about whether BPTT has anything to do with the brain. Even in machine learning the use of BPTT in classic neural network architectures has proven insufficient for some challenging temporal credit assignment (TCA) problems that we know the brain is capable of solving. Nonetheless, recent work in machine learning has made progress in solving difficult TCA problems by employing novel memory-based and attention-based architectures and algorithms, some of which are brain inspired. Importantly, these recent machine learning methods have been developed in the context of, and with reference to BPTT, and thus serve to strengthen BPTT's position as a useful normative guide for thinking about temporal credit assignment in artificial and biological systems alike.},
+	journal = {Current Opinion in Neurobiology},
+	author = {Lillicrap, Timothy P. and Santoro, Adam},
+	year = {2019},
+	pages = {82--89},
+}
+
+@inproceedings{frenkel_reckon_2022,
+	title = {{ReckOn}: a 28nm sub-mm2 task-agnostic spiking recurrent neural network processor enabling on-chip learning over second-long timescales},
+	volume = {65},
+	abstract = {The robustness of autonomous inference-only devices deployed in the real world is limited by data distribution changes induced by different users, environments, and task requirements. This challenge calls for the development of edge devices with an always-on adaptation to their target ecosystems. However, the memory requirements of conventional neural-network training algorithms scale with the temporal depth of the data being processed, which is not compatible with the constrained power and area budgets at the edge. For this reason, previous works demonstrating end-to-end on-chip learning without external memory were restricted to the processing of static data such as images [1]–[4], or to instantaneous decisions involving no memory of the past, e.g. obstacle avoidance in mobile robots [5]. The ability to learn short-to-long-term temporal dependencies on-chip is a missing enabler for robust autonomous edge devices in applications such as gesture recognition, speech processing, and cognitive robotics.},
+	booktitle = {2022 {IEEE} {International} {Solid}- {State} {Circuits} {Conference} ({ISSCC})},
+	author = {Frenkel, Charlotte and Indiveri, Giacomo},
+	month = feb,
+	year = {2022},
+	keywords = {Image edge detection, Inference algorithms, Memory management, Recurrent neural networks, Robustness, System-on-chip, Training},
+}
+
+@article{fu_hungry_2023,
+	title = {Hungry hungry hippos: towards language modeling with state space models},
+	abstract = {State space models (SSMs) have demonstrated state-of-the-art sequence modeling performance in some modalities, but underperform attention in language modeling. Moreover, despite scaling nearly linearly in sequence length instead of quadratically, SSMs are still slower than Transformers due to poor hardware utilization. In this paper, we make progress on understanding the expressivity gap between SSMs and attention in language modeling, and on reducing the hardware barrier between SSMs and attention. First, we use synthetic language modeling tasks to understand the gap between SSMs and attention. We find that existing SSMs struggle with two capabilities: recalling earlier tokens in the sequence and comparing tokens across the sequence. To understand the impact on language modeling, we propose a new SSM layer, H3, that is explicitly designed for these abilities. H3 matches attention on the synthetic languages and comes within 0.4 PPL of Transformers on OpenWebText. Furthermore, a hybrid 125M-parameter H3-attention model that retains two attention layers surprisingly outperforms Transformers on OpenWebText by 1.0 PPL. Next, to improve the efficiency of training SSMs on modern hardware, we propose FlashConv. FlashConv uses a fused block FFT algorithm to improve efficiency on sequences up to 8K, and introduces a novel state passing algorithm that exploits the recurrent properties of SSMs to scale to longer sequences. FlashConv yields 2\${\textbackslash}times\$ speedup on the long-range arena benchmark and allows hybrid language models to generate text 2.4\${\textbackslash}times\$ faster than Transformers. Using FlashConv, we scale hybrid H3-attention language models up to 2.7B parameters on the Pile and find promising initial results, achieving lower perplexity than Transformers and outperforming Transformers in zero- and few-shot learning on a majority of tasks in the SuperGLUE benchmark.},
+	journal = {arXiv preprint arXiv:2212.14052},
+	author = {Fu, Daniel Y. and Dao, Tri and Saab, Khaled K. and Thomas, Armin W. and Rudra, Atri and Ré, Christopher},
+	year = {2023},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+}
+
+@article{demirag_online_2021,
+	title = {Online training of spiking recurrent neural networks with phase-change memory synapses},
+	journal = {arXiv preprint arXiv:2108.01804},
+	author = {Demirag, Yigit and Frenkel, Charlotte and Payvand, Melika and Indiveri, Giacomo},
+	year = {2021},
+}
+
+@article{douglas_canonical_1989,
+	title = {A canonical microcircuit for neocortex},
+	volume = {1},
+	abstract = {We have used microanatomy derived from single neurons, and in vivo intracellular recordings to develop a simplified circuit of the visual cortex. The circuit explains the intracellular responses to pulse stimulation in terms of the interactions between three basic populations of neurons, and reveals the following features of cortical processing that are important to computational theories of neocortex. First, inhibition and excitation are not separable events. Activation of the cortex inevitably sets in motion a sequence of excitation and inhibition in every neuron. Second, the thalamic input does not provide the major excitation arriving at any neuron. Instead the intracortical excitatory connections provide most of the excitation. Third, the time evolution of excitation and inhibition is far longer than the synaptic delays of the circuits involved. This means that cortical processing cannot rely on precise timing between individual synaptic inputs.},
+	number = {4},
+	journal = {Neural Computation},
+	author = {Douglas, Rodney J. and Martin, Kevan A.C. and Whitteridge, David},
+	year = {1989},
+	pages = {480--488},
+}
+
+@article{bastos_canonical_2012,
+	title = {Canonical microcircuits for predictive coding},
+	volume = {76},
+	number = {4},
+	journal = {Neuron},
+	author = {Bastos, Andre M. and Usrey, W. Martin and Adams, Rick A. and Mangun, George R. and Fries, Pascal and Friston, Karl J.},
+	year = {2012},
+	pages = {695--711},
+}
+
+@article{douglas_neuronal_2004,
+	title = {Neuronal circuits of the neocortex},
+	volume = {27},
+	journal = {Annual Reviews in Neuroscience},
+	author = {Douglas, Rodney J and Martin, Kevan AC},
+	year = {2004},
+	pages = {419--451},
+}
+
+@article{mountcastle_modality_1957,
+	title = {Modality and topographic properties of single neurons of cat's somatic sensory cortex},
+	volume = {20},
+	number = {4},
+	journal = {Journal of Neurophysiology},
+	author = {Mountcastle, Vernon B.},
+	year = {1957},
+	pages = {408--434},
+}
+
+@article{douglas_mapping_2007,
+	title = {Mapping the {Matrix}: {The} {Ways} of {Neocortex}},
+	volume = {56},
+	issn = {0896-6273},
+	shorttitle = {Mapping the {Matrix}},
+	url = {https://www.sciencedirect.com/science/article/pii/S0896627307007787},
+	doi = {10.1016/j.neuron.2007.10.017},
+	abstract = {While we know that the neocortex occupies 85\% of our brains and that its circuits allow an enormous flexibility and repertoire of behavior (not to mention unexplained phenomena like consciousness), a century after Cajal we have very little knowledge of the details of the cortical circuits or their mode of function. One simplifying hypothesis that has existed since Cajal is that the neocortex consists of repeated copies of the same fundamental circuit. However, finding that fundamental circuit has proved elusive, although partial drafts of a “canonical circuit” appear in many different guises of structure and function. Here, we review some critical stages in the history of this quest. In doing so, we consider the style of cortical computation in relation to the neuronal machinery that supports it. We conclude that the structure and function of cortex honors two major computational principles: “just-enough” and “just-in-time.”},
+	language = {en},
+	number = {2},
+	urldate = {2023-05-15},
+	journal = {Neuron},
+	author = {Douglas, Rodney J. and Martin, Kevan A. C.},
+	month = oct,
+	year = {2007},
+	pages = {226--238},
+}
+
+@article{mountcastle_columnar_1997,
+	title = {The columnar organization of the neocortex.},
+	volume = {120},
+	issn = {0006-8950},
+	url = {https://doi.org/10.1093/brain/120.4.701},
+	doi = {10.1093/brain/120.4.701},
+	abstract = {The modular organization of nervous systems is a widely documented principle of design for both vertebrate and invertebrate brains of which the columnar organization of the neocortex is an example. The classical cytoarchitectural areas of the neocortex are composed of smaller units, local neural circuits repeated iteratively within each area. Modules may vary in cell type and number, in internal and external connectivity, and in mode of neuronal processing between different large entities; within any single large entity they have a basic similarity of internal design and operation. Modules are most commonly grouped into entities by sets of dominating external connections. This unifying factor is most obvious for the heterotypical sensory and motor areas of the neocortex. Columnar defining factors in homotypical areas are generated, in part, within the cortex itself. The set of all modules composing such an entity may be fractionated into different modular subsets by different extrinsic connections. Linkages between them and subsets in other large entities form distributed systems. The neighborhood relations between connected subsets of modules in different entities result in nested distributed systems that serve distributed functions. A cortical area defined in classical cytoarchitectural terms may belong to more than one and sometimes to several distributed systems. Columns in cytoarchitectural areas located at some distance from one another, but with some common properties, may be linked by long-range, intracortical connections.},
+	number = {4},
+	urldate = {2023-05-15},
+	journal = {Brain},
+	author = {Mountcastle, V B},
+	month = apr,
+	year = {1997},
+	pages = {701--722},
+}
+
+@article{park_structural_2013,
+	title = {Structural and functional brain networks: from connections to cognition},
+	volume = {342},
+	number = {6158},
+	journal = {Science},
+	author = {Park, Hae-Jeong and Friston, Karl},
+	year = {2013},
+	note = {Publisher: American Association for the Advancement of Science},
+	pages = {1238411},
+}
+
+@book{aizenberg_complex-valued_2011,
+	address = {Berlin, Heidelberg},
+	title = {Complex-valued neural networks with multi-valued neurons},
+	volume = {353},
+	publisher = {Springer},
+	author = {Aizenberg, Igor},
+	year = {2011},
+}
+
+@article{baldi_contrastive_1991,
+	title = {Contrastive learning and neural oscillations},
+	volume = {3},
+	abstract = {The concept of Contrastive Learning (CL) is developed as a family of possible learning algorithms for neural networks. CL is an extension of Deterministic Boltzmann Machines to more general dynamical systems. During learning, the network oscillates between two phases. One phase has a teacher signal and one phase has no teacher signal. The weights are updated using a learning rule that corresponds to gradient descent on a contrast function that measures the discrepancy between the free network and the network with a teacher signal. The CL approach provides a general unified framework for developing new learning algorithms. It also shows that many different types of clamping and teacher signals are possible. Several examples are given and an analysis of the landscape of the contrast function is proposed with some relevant predictions for the CL curves. An approach that may be suitable for collective analog implementations is described. Simulation results and possible extensions are briefly discussed together with a new conjecture regarding the function of certain oscillations in the brain. In the appendix, we also examine two extensions of contrastive learning to time-dependent trajectories.},
+	number = {4},
+	journal = {Neural Computation},
+	author = {Baldi, Pierre and Pineda, Fernando},
+	year = {1991},
+	pages = {526--545},
+}
+
+@article{frady_robust_2019,
+	title = {Robust computation with rhythmic spike patterns},
+	volume = {116},
+	abstract = {Information coding by precise timing of spikes can be faster and more energy efficient than traditional rate coding. However, spike-timing codes are often brittle, which has limited their use in theoretical neuroscience and computing applications. Here, we propose a type of attractor neural network in complex state space and show how it can be leveraged to construct spiking neural networks with robust computational properties through a phase-to-timing mapping. Building on Hebbian neural associative memories, like Hopfield networks, we first propose threshold phasor associative memory (TPAM) networks. Complex phasor patterns whose components can assume continuous-valued phase angles and binary magnitudes can be stored and retrieved as stable fixed points in the network dynamics. TPAM achieves high memory capacity when storing sparse phasor patterns, and we derive the energy function that governs its fixed-point attractor dynamics. Second, we construct 2 spiking neural networks to approximate the complex algebraic computations in TPAM, a reductionist model with resonate-and-fire neurons and a biologically plausible network of integrate-and-fire neurons with synaptic delays and recurrently connected inhibitory interneurons. The fixed points of TPAM correspond to stable periodic states of precisely timed spiking activity that are robust to perturbation. The link established between rhythmic firing patterns and complex attractor dynamics has implications for the interpretation of spike patterns seen in neuroscience and can serve as a framework for computation in emerging neuromorphic devices.},
+	number = {36},
+	journal = {Proceedings of the National Academy of Sciences},
+	author = {Frady, E. Paxon and Sommer, Friedrich T.},
+	year = {2019},
+	pages = {18050--18059},
+}
+
+@misc{blelloch_prex_1990,
+	title = {Preﬁx sums and their applications},
+	publisher = {Carnegie Mellon, School of Computer Science},
+	author = {Blelloch, Guy E.},
+	year = {1990},
+}
+
+@inproceedings{laborieux_holomorphic_2022,
+	title = {Holomorphic equilibrium propagation computes exact gradients through finite size oscillations},
+	volume = {35},
+	abstract = {Equilibrium propagation (EP) is an alternative to backpropagation (BP) that allows the training of deep neural networks with local learning rules. It thus provides a compelling framework for training neuromorphic systems and understanding learning in neurobiology. However, EP requires infinitesimal teaching signals, thereby limiting its applicability in noisy physical systems. Moreover, the algorithm requires separate temporal phases and has not been applied to large-scale problems. Here we address these issues by extending EP to holomorphic networks. We show analytically that this extension naturally leads to exact gradients even for finite-amplitude teaching signals. Importantly, the gradient can be computed as the first Fourier coefficient from finite neuronal activity oscillations in continuous time without requiring separate phases. Further, we demonstrate in numerical simulations that our approach permits robust estimation of gradients in the presence of noise and that deeper models benefit from the finite teaching signals. Finally, we establish the first benchmark for EP on the ImageNet 32x32 dataset and show that it matches the performance of an equivalent network trained with BP. Our work provides analytical insights that enable scaling EP to large-scale problems and establishes a formal framework for how oscillations could support learning in biological and neuromorphic systems.},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Laborieux, Axel and Zenke, Friedemann},
+	year = {2022},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing},
+}
+
+@inproceedings{smith_simplified_2023,
+	title = {Simplified state space layers for sequence modeling},
+	booktitle = {International {Conference} on {Learning} {Representations}},
+	author = {Smith, Jimmy T.H. and Warrington, Andrew and Linderman, Scott W.},
+	year = {2023},
+}
+
+@article{sutton_learning_1988,
+	title = {Learning to predict by the methods of temporal differences},
+	volume = {3},
+	journal = {Machine Learning},
+	author = {Sutton, Richard S.},
+	year = {1988},
+	pages = {9--44},
+}
+
+@inproceedings{veness_gated_2021,
+	title = {Gated linear networks},
+	volume = {35},
+	abstract = {This paper presents a new family of backpropagation-free neural architectures, Gated Linear Networks (GLNs). What distinguishes GLNs from contemporary neural networks is the distributed and local nature of their credit assignment mechanism; each neuron directly predicts the target, forgoing the ability to learn feature representations in favor of rapid online learning. Individual neurons are able to model nonlinear functions via the use of data-dependent gating in conjunction with online convex optimization. We show that this architecture gives rise to universal learning capabilities in the limit, with effective model capacity increasing as a function of network size in a manner comparable with deep ReLU networks. Furthermore, we demonstrate that the GLN learning mechanism possesses extraordinary resilience to catastrophic forgetting, performing almost on par to an MLP with dropout and Elastic Weight Consolidation on standard benchmarks.},
+	language = {en},
+	booktitle = {Proceedings of the {AAAI} {Conference} on {Artificial} {Intelligence}},
+	author = {Veness, Joel and Lattimore, Tor and Budden, David and Bhoopchand, Avishkar and Mattern, Christopher and Grabska-Barwinska, Agnieszka and Sezener, Eren and Wang, Jianan and Toth, Peter and Schmitt, Simon and Hutter, Marcus},
+	year = {2021},
+	keywords = {(Deep) Neural Network Algorithms},
+}
+
+@article{mcbride_optimization_1965,
+	title = {Optimization of time-varying systems},
+	volume = {10},
+	abstract = {A method of self-optimization using system models to compute error-criterion gradients in a parameter space is extended to time-varying systems. When the parameters are permitted to vary only slowly, the gradient computer is similar to that used for stationary systems of fixed configuration. When the parameters vary more rapidly, it is found that only the gradient with respect to the plant input function is meaningful. This influence function is obtained as the output from a model which can be defined whether or not a state-variable representation for the plant is known; a procedure for computing optimal control functions in a variety of linear and nonlinear systems is thus obtained.},
+	number = {3},
+	journal = {IEEE Transactions on Automatic Control},
+	author = {McBride, L. and Narendra, K.},
+	year = {1965},
+	keywords = {Adaptive control, Computer errors, Control systems, Error correction, Integral equations, Nonlinear systems, Optimal control, Signal processing, Space stations, Time varying systems},
+	pages = {289--294},
+}
+
+@phdthesis{wayne_self-modeling_2013,
+	title = {Self-modeling neural systems},
+	school = {Columbia University},
+	author = {Wayne, Gregory D.},
+	year = {2013},
+}
+
+@article{bengio_learning_1994,
+	title = {Learning long-term dependencies with gradient descent is difficult},
+	volume = {5},
+	abstract = {Recurrent neural networks can be used to map input sequences to output sequences, such as for recognition, production or prediction problems. However, practical difficulties have been reported in training recurrent neural networks to perform tasks in which the temporal contingencies present in the input/output sequences span long intervals. We show why gradient based learning algorithms face an increasingly difficult problem as the duration of the dependencies to be captured increases. These results expose a trade-off between efficient learning by gradient descent and latching on information for long periods. Based on an understanding of this problem, alternatives to standard gradient descent are considered.},
+	number = {2},
+	journal = {IEEE Transactions on Neural Networks},
+	author = {Bengio, Y. and Simard, P. and Frasconi, P.},
+	year = {1994},
+}
+
+@inproceedings{pascanu_diculty_2013,
+	title = {On the diﬃculty of training recurrent neural networks},
+	abstract = {There are two widely known issues with properly training recurrent neural networks, the vanishing and the exploding gradient problems detailed in Bengio et al. (1994). In this paper we attempt to improve the understanding of the underlying issues by exploring these problems from an analytical, a geometric and a dynamical systems perspective. Our analysis is used to justify a simple yet effective solution. We propose a gradient norm clipping strategy to deal with exploding gradients and a soft constraint for the vanishing gradients problem. We validate empirically our hypothesis and proposed solutions in the experimental section.},
+	booktitle = {International {Conference} on {Machine} {Learning}},
+	author = {Pascanu, Razvan and Mikolov, Tomas and Bengio, Yoshua},
+	year = {2013},
+}
+
+@article{dao_flashattention_2022,
+	title = {Flashattention: {Fast} and memory-efficient exact attention with io-awareness},
+	volume = {35},
+	journal = {Advances in Neural Information Processing Systems},
+	author = {Dao, Tri and Fu, Dan and Ermon, Stefano and Rudra, Atri and Ré, Christopher},
+	year = {2022},
+	pages = {16344--16359},
+}
+
+@article{tallec_unbiasing_2017,
+	title = {Unbiasing truncated backpropagation through time},
+	journal = {arXiv preprint arXiv:1705.08209},
+	author = {Tallec, Corentin and Ollivier, Yann},
+	year = {2017},
+}
+
+@article{zenke_brain-inspired_2021,
+	title = {Brain-inspired learning on neuromorphic substrates},
+	volume = {109},
+	abstract = {Neuromorphic hardware strives to emulate brain-like neural networks and thus holds the promise for scalable, low-power information processing on temporal data streams. Yet, to solve real-world problems, these networks need to be trained. However, training on neuromorphic substrates creates significant challenges due to the offline character and the required nonlocal computations of gradient-based learning algorithms. This article provides a mathematical framework for the design of practical online learning algorithms for neuromorphic substrates. Specifically, we show a direct connection between real-time recurrent learning (RTRL), an online algorithm for computing gradients in conventional recurrent neural networks (RNNs), and biologically plausible learning rules for training spiking neural networks (SNNs). Furthermore, we motivate a sparse approximation based on block-diagonal Jacobians, which reduces the algorithm's computational complexity, diminishes the nonlocal information requirements, and empirically leads to good learning performance, thereby improving its applicability to neuromorphic substrates. In summary, our framework bridges the gap between synaptic plasticity and gradient-based approaches from deep learning and lays the foundations for powerful information processing on future neuromorphic hardware systems.},
+	number = {5},
+	journal = {Proceedings of the IEEE},
+	author = {Zenke, Friedemann and Neftci, Emre O.},
+	month = may,
+	year = {2021},
+	keywords = {Artificial neural networks, Biological neural networks, Human computer interaction, Jacobian matrices, Learning systems, Machine learning, Neuromorphic engineering, Recurrent neural networks, biological neural networks, learning systems, machine learning, neural network hardware, neuromorphic engineering, recurrent neural networks (RNNs)},
+	pages = {935--950},
+}
+
+@article{murray_local_2019,
+	title = {Local online learning in recurrent networks with random feedback},
+	volume = {8},
+	journal = {eLife},
+	author = {Murray, James M.},
+	year = {2019},
+	pages = {e43299},
+}
+
+@article{linnainmaa_taylor_1976,
+	title = {Taylor expansion of the accumulated rounding error},
+	volume = {16},
+	number = {2},
+	journal = {BIT Numerical Mathematics},
+	author = {Linnainmaa, Seppo},
+	year = {1976},
+	pages = {146--160},
+}
+
+@incollection{rumelhart_learning_1986,
+	title = {Learning internal representations by error propagation},
+	booktitle = {Parallel {Distributed} {Processing}: {Explorations} in the {Microstructure} of {Cognition}: {Foundations}},
+	author = {Rumelhart, David E. and McClelland, James L.},
+	year = {1986},
+	pages = {318--362},
+}
+
+@article{baydin_gradients_2022,
+	title = {Gradients without backpropagation},
+	abstract = {Using backpropagation to compute gradients of objective functions for optimization has remained a mainstay of machine learning. Backpropagation, or reverse-mode differentiation, is a special case within the general family of automatic differentiation algorithms that also includes the forward mode. We present a method to compute gradients based solely on the directional derivative that one can compute exactly and efficiently via the forward mode. We call this formulation the forward gradient, an unbiased estimate of the gradient that can be evaluated in a single forward run of the function, entirely eliminating the need for backpropagation in gradient descent. We demonstrate forward gradient descent in a range of problems, showing substantial savings in computation and enabling training up to twice as fast in some cases.},
+	journal = {arXiv preprint arXiv:2202.08587},
+	author = {Baydin, Atılım Güneş and Pearlmutter, Barak A. and Syme, Don and Wood, Frank and Torr, Philip},
+	year = {2022},
+	keywords = {68T07, Computer Science - Machine Learning, I.2.5, I.2.6, Statistics - Machine Learning},
+}
+
+@inproceedings{gu_efficiently_2022,
+	title = {Efficiently modeling long sequences with structured state spaces},
+	abstract = {A central goal of sequence modeling is designing a single principled model that can address sequence data across a range of modalities and tasks, particularly on long-range dependencies. Although conventional models including RNNs, CNNs, and Transformers have specialized variants for capturing long dependencies, they still struggle to scale to very long sequences of \$10000\$ or more steps. A promising recent approach proposed modeling sequences by simulating the fundamental state space model (SSM) {\textbackslash}( x'(t) = Ax(t) + Bu(t), y(t) = Cx(t) + Du(t) {\textbackslash}), and showed that for appropriate choices of the state matrix {\textbackslash}( A {\textbackslash}), this system could handle long-range dependencies mathematically and empirically. However, this method has prohibitive computation and memory requirements, rendering it infeasible as a general sequence modeling solution. We propose the Structured State Space sequence model (S4) based on a new parameterization for the SSM, and show that it can be computed much more efficiently than prior approaches while preserving their theoretical strengths. Our technique involves conditioning {\textbackslash}( A {\textbackslash}) with a low-rank correction, allowing it to be diagonalized stably and reducing the SSM to the well-studied computation of a Cauchy kernel. S4 achieves strong empirical results across a diverse range of established benchmarks, including (i) 91{\textbackslash}\% accuracy on sequential CIFAR-10 with no data augmentation or auxiliary losses, on par with a larger 2-D ResNet, (ii) substantially closing the gap to Transformers on image and language modeling tasks, while performing generation \$60{\textbackslash}times\$ faster (iii) SoTA on every task from the Long Range Arena benchmark, including solving the challenging Path-X task of length 16k that all prior work fails on, while being as efficient as all competitors.},
+	booktitle = {International {Conference} on {Learning} {Representations}},
+	author = {Gu, Albert and Goel, Karan and Ré, Christopher},
+	year = {2022},
+	keywords = {Computer Science - Machine Learning},
+}
+
+@inproceedings{gu_hippo_2020,
+	title = {{HiPPO}: recurrent memory with optimal polynomial projections},
+	volume = {33},
+	abstract = {A central problem in learning from sequential data is representing cumulative
+history in an incremental fashion as more data is processed. We introduce a general framework (HiPPO) for the online compression of continuous signals and discrete time series by projection onto polynomial bases. Given a measure that specifies the importance of each time step in the past, HiPPO produces an optimal solution to a natural online function approximation problem. As special cases, our framework yields a short derivation of the recent Legendre Memory Unit (LMU) from first principles, and generalizes the ubiquitous gating mechanism of recurrent neural networks such as GRUs. This formal framework yields a new memory update mechanism (HiPPO-LegS) that scales through time to remember all history, avoiding priors on the timescale. HiPPO-LegS enjoys the theoretical benefits of timescale robustness, fast updates, and bounded gradients. By incorporating the memory dynamics into recurrent neural networks, HiPPO RNNs can empirically capture complex temporal dependencies. On the benchmark permuted MNIST dataset, HiPPO-LegS sets a new state-of-the-art accuracy of 98.3\%. Finally, on a novel trajectory classification task testing robustness to out-of-distribution timescales and missing data, HiPPO-LegS outperforms RNN and neural ODE baselines by 25-40\% accuracy.},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Gu, Albert and Dao, Tri and Ermon, Stefano and Rudra, Atri and Ré, Christopher},
+	year = {2020},
+}
+
+@inproceedings{silver_learning_2022,
+	title = {Learning by directional gradient descent},
+	abstract = {How should state be constructed from a sequence of observations, so as to best achieve some objective? Most deep learning methods update the parameters of the state representation by gradient descent. However, no prior method for computing the gradient is fully satisfactory, for example consuming too much memory, introducing too much variance, or adding too much bias. In this work, we propose a new learning algorithm that addresses these limitations. The basic idea is to update the parameters of the representation by using the directional derivative along a candidate direction, a quantity that may be computed online with the same computational cost as the representation itself. We consider several different choices of candidate direction, including random selection and approximations to the true gradient, and investigate their performance on several synthetic tasks.},
+	booktitle = {International {Conference} on {Learning} {Representations}},
+	author = {Silver, David and Goyal, Anirudh and Danihelka, Ivo and Hessel, Matteo and Hasselt, Hado van},
+	year = {2022},
+}
+
+@article{zenke_remarkable_2021,
+	title = {The remarkable robustness of surrogate gradient learning for instilling complex function in spiking neural networks},
+	volume = {33},
+	abstract = {Brains process information in spiking neural networks. Their intricate connections shape the diverse functions these networks perform. Yet how network connectivity relates to function is poorly understood, and the functional capabilities of models of spiking networks are still rudimentary. The lack of both theoretical insight and practical algorithms to find the necessary connectivity poses a major impediment to both studying information processing in the brain and building efficient neuromorphic hardware systems. The training algorithms that solve this problem for artificial neural networks typically rely on gradient descent. But doing so in spiking networks has remained challenging due to the nondifferentiable nonlinearity of spikes. To avoid this issue, one can employ surrogate gradients to discover the required connectivity. However, the choice of a surrogate is not unique, raising the question of how its implementation influences the effectiveness of the method. Here, we use numerical simulations to systematically study how essential design parameters of surrogate gradients affect learning performance on a range of classification problems. We show that surrogate gradient learning is robust to different shapes of underlying surrogate derivatives, but the choice of the derivative's scale can substantially affect learning performance. When we combine surrogate gradients with suitable activity regularization techniques, spiking networks perform robust information processing at the sparse activity limit. Our study provides a systematic account of the remarkable robustness of surrogate gradient learning and serves as a practical guide to model functional spiking neural networks.},
+	number = {4},
+	journal = {Neural Computation},
+	author = {Zenke, Friedemann and Vogels, Tim P.},
+	year = {2021},
+	pages = {899--925},
+}
+
+@inproceedings{tallec_unbiased_2018,
+	title = {Unbiased online recurrent optimization},
+	abstract = {The novel Unbiased Online Recurrent Optimization (UORO) algorithm allows for online learning of general recurrent computational graphs such as recurrent network models. It works in a streaming fashion and avoids backtracking through past activations and inputs. UORO is computationally as costly as Truncated Backpropagation Through Time (truncated BPTT), a widespread algorithm for online learning of recurrent networks. UORO is a modification of NoBackTrack that bypasses the need for model sparsity and makes implementation easy in current deep learning frameworks, even for complex models. Like NoBackTrack, UORO provides unbiased gradient estimates; unbiasedness is the core hypothesis in stochastic gradient descent theory, without which convergence to a local optimum is not guaranteed. On the contrary, truncated BPTT does not provide this property, leading to possible divergence. On synthetic tasks where truncated BPTT is shown to diverge, UORO converges. For instance, when a parameter has a positive short-term but negative long-term influence, truncated BPTT diverges unless the truncation span is very significantly longer than the intrinsic temporal range of the interactions, while UORO performs well thanks to the unbiasedness of its gradients.},
+	booktitle = {International {Conference} on {Learning} {Representations}},
+	author = {Tallec, Corentin and Ollivier, Yann},
+	year = {2018},
+	keywords = {Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing},
+}
+
+@inproceedings{menick_practical_2021,
+	title = {A practical sparse approximation for real time recurrent learning},
+	abstract = {Current methods for training recurrent neural networks are based on backpropagation through time, which requires storing a complete history of network states, and prohibits updating the weights `online' (after every timestep). Real Time Recurrent Learning (RTRL) eliminates the need for history storage and allows for online weight updates, but does so at the expense of computational costs that are quartic in the state size. This renders RTRL training intractable for all but the smallest networks, even ones that are made highly sparse. We introduce the Sparse n-step Approximation (SnAp) to the RTRL influence matrix, which only keeps entries that are nonzero within n steps of the recurrent core. SnAp with n=1 is no more expensive than backpropagation, and we find that it substantially outperforms other RTRL approximations with comparable costs such as Unbiased Online Recurrent Optimization. For highly sparse networks, SnAp with n=2 remains tractable and can outperform backpropagation through time in terms of learning speed when updates are done online. SnAp becomes equivalent to RTRL when n is large.},
+	booktitle = {International {Conference} on {Learning} {Representations}},
+	author = {Menick, Jacob and Elsen, Erich and Evci, Utku and Osindero, Simon and Simonyan, Karen and Graves, Alex},
+	year = {2021},
+	keywords = {Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing, Statistics - Machine Learning},
+}
+
+@article{bellec_solution_2020,
+	title = {A solution to the learning dilemma for recurrent networks of spiking neurons},
+	volume = {11},
+	number = {1},
+	journal = {Nature Communications},
+	author = {Bellec, Guillaume and Scherr, Franz and Subramoney, Anand and Hajek, Elias and Salaj, Darjan and Legenstein, Robert and Maass, Wolfgang},
+	year = {2020},
+	pages = {3625},
+}
+
+@article{ganguli_memory_2008,
+	title = {Memory traces in dynamical systems},
+	volume = {105},
+	abstract = {To perform nontrivial, real-time computations on a sensory input stream, biological systems must retain a short-term memory trace of their recent inputs. It has been proposed that generic high-dimensional dynamical systems could retain a memory trace for past inputs in their current state. This raises important questions about the fundamental limits of such memory traces and the properties required of dynamical systems to achieve these limits. We address these issues by applying Fisher information theory to dynamical systems driven by time-dependent signals corrupted by noise. We introduce the Fisher Memory Curve (FMC) as a measure of the signal-to-noise ratio (SNR) embedded in the dynamical state relative to the input SNR. The integrated FMC indicates the total memory capacity. We apply this theory to linear neuronal networks and show that the capacity of networks with normal connectivity matrices is exactly 1 and that of any network of N neurons is, at most, N. A nonnormal network achieving this bound is subject to stringent design constraints: It must have a hidden feedforward architecture that superlinearly amplifies its input for a time of order N, and the input connectivity must optimally match this architecture. The memory capacity of networks subject to saturating nonlinearities is further limited, and cannot exceed 
+𝑁
+‾
+‾
+√
+𝑁
+. This limit can be realized by feedforward structures with divergent fan out that distributes the signal across neurons, thereby avoiding saturation. We illustrate the generality of the theory by showing that memory in fluid systems can be sustained by transient nonnormal amplification due to convective instability or the onset of turbulence.},
+	number = {48},
+	journal = {Proceedings of the National Academy of Sciences},
+	author = {Ganguli, Surya and Huh, Dongsung and Sompolinsky, Haim},
+	year = {2008},
+	pages = {18970--18975},
+}
+
+@article{frenkel_bottom-up_2021,
+	title = {Bottom-up and top-down neural processing systems design: neuromorphic intelligence as the convergence of natural and artificial intelligence},
+	abstract = {While Moore's law has driven exponential computing power expectations, its nearing end calls for new avenues for improving the overall system performance. One of these avenues is the exploration of new alternative brain-inspired computing architectures that promise to achieve the flexibility and computational efficiency of biological neural processing systems. Within this context, neuromorphic intelligence represents a paradigm shift in computing based on the implementation of spiking neural network architectures tightly co-locating processing and memory. In this paper, we provide a comprehensive overview of the field, highlighting the different levels of granularity present in existing silicon implementations, comparing approaches that aim at replicating natural intelligence (bottom-up) versus those that aim at solving practical artificial intelligence applications (top-down), and assessing the benefits of the different circuit design styles used to achieve these goals. First, we present the analog, mixed-signal and digital circuit design styles, identifying the boundary between processing and memory through time multiplexing, in-memory computation and novel devices. Next, we highlight the key tradeoffs for each of the bottom-up and top-down approaches, survey their silicon implementations, and carry out detailed comparative analyses to extract design guidelines. Finally, we identify both necessary synergies and missing elements required to achieve a competitive advantage for neuromorphic edge computing over conventional machine-learning accelerators, and outline the key elements for a framework toward neuromorphic intelligence.},
+	journal = {arXiv preprint arXiv:2106.01288},
+	author = {Frenkel, Charlotte and Bol, David and Indiveri, Giacomo},
+	year = {2021},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Emerging Technologies, Computer Science - Neural and Evolutionary Computing},
+}
+
+@article{richards_deep_2019,
+	title = {A deep learning framework for neuroscience},
+	volume = {22},
+	number = {11},
+	journal = {Nature Neuroscience},
+	author = {Richards, Blake A. and Lillicrap, Timothy P. and Beaudoin, Philippe and Bengio, Yoshua and Bogacz, Rafal and Christensen, Amelia and Clopath, Claudia and Costa, Rui Ponte and de Berker, Archy and Ganguli, Surya and Gillon, Colleen J. and Hafner, Danijar and Kepecs, Adam and Kriegeskorte, Nikolaus and Latham, Peter and Lindsay, Grace W. and Miller, Kenneth D. and Naud, Richard and Pack, Christopher C. and Poirazi, Panayiota and Roelfsema, Pieter and Sacramento, João and Saxe, Andrew and Scellier, Benjamin and Schapiro, Anna C. and Senn, Walter and Wayne, Greg and Yamins, Daniel and Zenke, Friedemann and Zylberberg, Joel and Therien, Denis and Kording, Konrad P.},
+	year = {2019},
+	pages = {1761--1770},
+}
+
+@article{werbos_backpropagation_1990,
+	title = {Backpropagation through time: what it does and how to do it},
+	volume = {78},
+	abstract = {Basic backpropagation, which is a simple method now being widely used in areas like pattern recognition and fault diagnosis, is reviewed. The basic equations for backpropagation through time, and applications to areas like pattern recognition involving dynamic systems, systems identification, and control are discussed. Further extensions of this method, to deal with systems other than neural networks, systems involving simultaneous equations, or true recurrent networks, and other practical issues arising with the method are described. Pseudocode is provided to clarify the algorithms. The chain rule for ordered derivatives-the theorem which underlies backpropagation-is briefly discussed. The focus is on designing a simpler version of backpropagation which can be translated into computer code and applied directly by neutral network users.{\textless}{\textgreater}},
+	number = {10},
+	journal = {Proceedings of the IEEE},
+	author = {Werbos, Paul},
+	year = {1990},
+	keywords = {Artificial neural networks, Backpropagation, Books, Control systems, Equations, Fluid dynamics, Neural networks, Pattern recognition, Power system modeling, Supervised learning},
+	pages = {1550--1560},
+}
+
+@article{constantinidis_neuroscience_2016,
+	title = {The neuroscience of working memory capacity and training},
+	volume = {17},
+	abstract = {The amount of information that can be maintained in working memory (WM) is limited. An individual's WM capacity is predictive of performance in higher cognitive abilities.Although traditionally viewed as an immutable aptitude, more recently WM has been shown to improve with training. Importantly, improvement in WM can transfer between trained and non-trained tasks.There are several models for the neural basis of WM. In this Review, we argue that the persistent discharges of prefrontal neurons play the most important part in the maintenance of information in WM.Effects of WM training include increases in the activity of neurons in the prefrontal cortex, and increases in the strength of connectivity in the prefrontal cortex and between the prefrontal cortex and other areas.Neural changes after training are found in cortical areas that process spatial information in WM and attention, potentially providing a basis for transfer to other cognitive and behavioural tasks that rely on spatial WM and spatially selective attention.},
+	number = {7},
+	journal = {Nature Reviews Neuroscience},
+	author = {Constantinidis, Christos and Klingberg, Torkel},
+	year = {2016},
+	keywords = {Computational neuroscience, Electrophysiology, Functional magnetic resonance imaging, Working memory},
+	pages = {438--449},
+}
+
+@article{wengert_simple_1964,
+	title = {A simple automatic derivative evaluation program},
+	volume = {7},
+	abstract = {A procedure for automatic evaluation of total/partial derivatives of arbitrary algebraic functions is presented. The technique permits computation of numerical values of derivatives without developing analytical expressions for the derivatives. The key to the method is the decomposition of the given function, by introduction of intermediate variables, into a series of elementary functional steps. A library of elementary function subroutines is provided for the automatic evaluation and differentiation of these new variables. The final step in this process produces the desired function's derivative. The main feature of this approach is its simplicity. It can be used as a quick-reaction tool where the derivation of analytical derivatives is laborious and also as a debugging tool for programs which contain derivatives.},
+	number = {8},
+	journal = {Communications of the ACM},
+	author = {Wengert, R. E.},
+	year = {1964},
+	pages = {463--464},
+}
+
+@book{griewank_evaluating_2008,
+	title = {Evaluating {Derivatives}},
+	publisher = {Society for Industrial and Applied Mathematics},
+	author = {Griewank, Andreas and Walther, Andrea},
+	year = {2008},
+	keywords = {Algorithmic Differentiation, Chain rule, Computation of Derivatives, adjoints, computational graph},
+}
+
+@article{williams_learning_1989,
+	title = {A learning algorithm for continually running fully recurrent neural networks},
+	volume = {1},
+	abstract = {The exact form of a gradient-following learning algorithm for completely recurrent networks running in continually sampled time is derived and used as the basis for practical algorithms for temporal supervised learning tasks. These algorithms have (1) the advantage that they do not require a precisely defined training interval, operating while the network runs; and (2) the disadvantage that they require nonlocal communication in the network being trained and are computationally expensive. These algorithms allow networks having recurrent connections to learn complex tasks that require the retention of information over time periods having either fixed or indefinite length.},
+	number = {2},
+	journal = {Neural Computation},
+	author = {Williams, Ronald J. and Zipser, David},
+	year = {1989},
+	pages = {270--280},
+}
+
+@article{orvieto_resurrecting_2023,
+	title = {Resurrecting recurrent neural networks for long sequences},
+	journal = {arXiv preprint arXiv:2303.06349},
+	author = {Orvieto, Antonio and Smith, Samuel L and Gu, Albert and Fernando, Anushan and Gulcehre, Caglar and Pascanu, Razvan and De, Soham},
+	year = {2023},
+}
+
+@inproceedings{benzing_optimal_2019,
+	title = {Optimal {Kronecker}-sum approximation of real time recurrent learning},
+	booktitle = {International {Conference} on {Machine} {Learning}},
+	author = {Benzing, Frederik and Gauy, Marcelo Matheus and Mujika, Asier and Martinsson, Anders and Steger, Angelika},
+	year = {2019},
+}
+
+@inproceedings{mujika_approximating_2018,
+	title = {Approximating real-time recurrent learning with random {Kronecker} factors},
+	volume = {31},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Mujika, Asier and Meier, Florian and Steger, Angelika},
+	year = {2018},
+}
+
+@article{tay_long_2020,
+	title = {Long range arena: {A} benchmark for efficient transformers},
+	journal = {arXiv preprint arXiv:2011.04006},
+	author = {Tay, Yi and Dehghani, Mostafa and Abnar, Samira and Shen, Yikang and Bahri, Dara and Pham, Philip and Rao, Jinfeng and Yang, Liu and Ruder, Sebastian and Metzler, Donald},
+	year = {2020},
+}

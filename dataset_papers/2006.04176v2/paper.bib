@@ -1,0 +1,1033 @@
+
+% -- PAPERS ABOUT DISENTANGLEMENT IN VAEs  ---------------
+% the paper introducing beta VAEs...
+@article{Higgins:2017:betaVAE,
+  title={beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework.},
+  author={Higgins, Irina and Matthey, Loic and Pal, Arka and Burgess, Christopher and Glorot, Xavier and Botvinick, Matthew and Mohamed, Shakir and Lerchner, Alexander},
+  journal={International Conference on Learning Representations},
+  volume={2},
+  number={5},
+  pages={6},
+  year={2017}
+}
+
+
+@inproceedings{piche2018probabilistic,
+  title={Probabilistic planning with sequential monte carlo methods},
+  author={Pich{\'e}, Alexandre and Thomas, Valentin and Ibrahim, Cyril and Bengio, Yoshua and Pal, Chris},
+  booktitle={International Conference on Learning Representations},
+  year={2018}
+}
+
+@article{marinoinference,
+  title={An Inference Perspective on Model-Based Reinforcement Learning},
+  year={2019},
+  journal={ICML Workshop on Generative Modeling and Model-Based Reasoning for Robotics and AI},
+  author={Marino, Joseph and Yue, Yisong}
+}
+
+@article{tschantz2020control,
+  title={Control as Hybrid Inference},
+  author={Tschantz, Alexander and Millidge, Beren and Seth, Anil K and Buckley, Christopher L},
+  journal={arXiv preprint arXiv:2007.05838},
+  year={2020}
+}
+
+@article{levine2018reinforcement,
+  title={Reinforcement learning and control as probabilistic inference: Tutorial and review},
+  author={Levine, Sergey},
+  journal={arXiv preprint arXiv:1805.00909},
+  year={2018}
+}
+
+@inproceedings{fellows2019virel,
+  title={Virel: A variational inference framework for reinforcement learning},
+  author={Fellows, Matthew and Mahajan, Anuj and Rudner, Tim GJ and Whiteson, Shimon},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={7122--7136},
+  year={2019}
+}
+
+% -- PAPERS ABOUT OPTIMIZING BETA ------------------------
+% https://papers.nips.cc/paper/6591-vime-variational-information-maximizing-exploration.pdf
+% They describe optimization of ita, simmilar to beta in an RL setup..
+@inproceedings{Houthooft:2016,
+  title={Vime: Variational information maximizing exploration},
+  author={Houthooft, Rein and Chen, Xi and Duan, Yan and Schulman, John and De Turck, Filip and Abbeel, Pieter},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={1109--1117},
+  year={2016}
+}
+
+@article{burgess2018understanding,
+  title={Understanding disentangling in $\beta$-VAE},
+  author={Burgess, Christopher P and Higgins, Irina and Pal, Arka and Matthey, Loic and Watters, Nick and Desjardins, Guillaume and Lerchner, Alexander},
+  journal={arXiv preprint arXiv:1804.03599},
+  year={2018}
+}
+
+
+% -------------------- PAPERS FROM Parr:2017:Uncertainty ---------------------------------
+% volatility <- metavlitotita (Sorry Noor, this was Greek :D)
+% Defines precision as inverse temperature of a softmax-like function (like gamma for G)
+% Super nice and relevant!!
+% Basically the current paper is kind of continuation of this model in deep neural networks
+% According to here, there are 3 neurotransmitter systems encoding belief precisions:
+% ACh: precision of P(o|s) [cf. attention and expected uncertainty]
+% NE: precision of P(s|s_t-1,pi) [cf. volatility and unexpected uncertainty]
+% DA: precision of beliefs about policies [cf. action selection]
+@article{Parr:2017:Uncertainty,
+  title={Uncertainty, epistemics and active inference},
+  author={Parr, Thomas and Friston, Karl J},
+  journal={Journal of The Royal Society Interface},
+  volume={14},
+  number={136},
+  pages={20170376},
+  year={2017},
+  publisher={The Royal Society}
+}
+% The original article connecting Uncertainty and attention via neuromodulation!
+% It's Dayan's work on norepinephrine (NE) and acetylcholine (ACh) that Karl J mentioned..
+% Distinction between expected (ACh) and unexpected (NE) sources of uncertainty.
+% Super popular!
+% ZAF: Hmm so then maybe q(s) (or p(s|s,pi)) is encoding the one and b_s the other?? Prob. not!
+% From Thom: 
+%    ‘Expected uncertainty’ is framed in terms of a belief that a cue has low validity. i.e. P(o|s)
+%     ‘Unexpected uncertainty’ is described in terms of stochastic changes to the task context. i.e. P(s|s-1)
+% This work triggered the 'should I stay or should I go paper' about expl. VS exploitation!
+@article{Yu:2005:Uncertainty,
+  title={Uncertainty, neuromodulation, and attention},
+  author={Yu, Angela J and Dayan, Peter},
+  journal={Neuron},
+  volume={46},
+  number={4},
+  pages={681--692},
+  year={2005},
+  publisher={Elsevier}
+}
+
+% Again on ACh and NE for expected/unecpected uncertainty,
+% but it's quite nice because it connects this to the Kalman gain!!
+@inproceedings{Dayan:2003:NIPS,
+  title={Expected and unexpected uncertainty: ACh and NE in the neocortex},
+  author={Dayan, Peter and Angela, J Yu},
+  booktitle={Advances in neural information processing systems},
+  pages={173--180},
+  year={2003}
+}
+
+@article{dayan2000learning,
+  title={Learning and selective attention},
+  author={Dayan, Peter and Kakade, Sham and Montague, Read P},
+  journal={Nature Neuroscience},
+  volume={3},
+  number={11},
+  pages={1218--1223},
+  year={2000},
+  publisher={Nature Publishing Group}
+}
+
+@inproceedings{dayan2001nips,
+title = {{ACh}, Uncertainty, and Cortical Inference},
+author = {Dayan, Peter and Yu, Angela J},
+booktitle = {Advances in Neural Information Processing Systems},
+pages = {189--196},
+year = {2002}
+}
+
+@article{angela2005uncertainty,
+  title={Uncertainty, neuromodulation, and attention},
+  author={Angela, J Yu and Dayan, Peter},
+  journal={Neuron},
+  volume={46},
+  number={4},
+  pages={681--692},
+  year={2005},
+  publisher={Elsevier}
+}
+
+@article{posner1990attention,
+  title={The attention system of the human brain},
+  author={Posner, Michael I and Petersen, Steven E},
+  journal={Annual Review of Neuroscience},
+  volume={13},
+  number={1},
+  pages={25--42},
+  year={1990},
+  publisher={Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}
+}
+
+@article{gu2002neuromodulatory,
+  title={Neuromodulatory transmitter systems in the cortex and their role in cortical plasticity},
+  author={Gu, Q},
+  journal={Neuroscience},
+  volume={111},
+  number={4},
+  pages={815--835},
+  year={2002},
+  publisher={Elsevier}
+}
+
+@article{dayan2006phasic,
+  title={Phasic norepinephrine: a neural interrupt signal for unexpected events},
+  author={Dayan, Peter and Yu, Angela J},
+  journal={Network: Computation in Neural Systems},
+  volume={17},
+  number={4},
+  pages={335--350},
+  year={2006},
+  publisher={Taylor \& Francis}
+}
+
+@phdthesis{parr2019computational,
+  title={The Computational Neurology of Active Vision},
+  author={Parr, Thomas},
+  year={2019},
+  school={University College London}
+}
+
+@article{moran2013free,
+  title={Free energy, precision and learning: {The} role of cholinergic neuromodulation},
+  author={Moran, Rosalyn J and Campo, Pablo and Symmonds, Mkael and Stephan, Klaas E and Dolan, Raymond J and Friston, Karl J },
+  journal={Journal of Neuroscience},
+  volume={33},
+  number={19},
+  pages={8227--8236},
+  year={2013},
+  publisher={Soc Neuroscience}
+}
+%https://www.frontiersin.org/articles/10.3389/fncom.2018.00090/full for anatomy of inference 
+
+
+@article{Berseth:2019,
+  title={SMiRL: Surprise Minimizing RL in Dynamic Environments},
+  author={Berseth, Glen and Geng, Daniel and Devin, Coline and Finn, Chelsea and Jayaraman, Dinesh and Levine, Sergey},
+  journal={arXiv preprint arXiv:1912.05510},
+  year={2019}
+}
+
+% --------------- PRIORS INSTEAD OF BETA ---------------------------------
+% This paper shows that the idea I had today on replacing beta with the variance of the prior works!
+@inproceedings{Ansari:2019,
+  title={Hyperprior induced unsupervised disentanglement of latent representations},
+  author={Ansari, Abdul Fatir and Soh, Harold},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={33},
+  pages={3175--3182},
+  year={2019}
+}
+% And this one shows that this is almost the same as beta VAEs and explores shapes of the prior..
+@article{Mathieu:2018,
+  title={Disentangling disentanglement in variational autoencoders},
+  author={Mathieu, Emile and Rainforth, Tom and Siddharth, N and Teh, Yee Whye},
+  journal={arXiv preprint arXiv:1812.02833},
+  year={2018}
+}
+% Finally, these guys figured out how to approximate the variance of the prior via a neural network..
+@inproceedings{Kim:2019,
+  title={{Bayes-Factor-VAE: Hierarchical Bayesian} Deep Auto-Encoder Models for Factor Disentanglement},
+  author={Kim, Minyoung and Wang, Yuting and Sahu, Pritish and Pavlovic, Vladimir},
+  booktitle={IEEE International Conference on Computer Vision},
+  pages={2979--2987},
+  year={2019}
+}
+% Yet another one, same point, by Google brain, not yet published.. 
+@article{Stuhmer:2019,
+  title={Independent Subspace Analysis for Unsupervised Learning of Disentangled Representations},
+  author={St{\"u}hmer, Jan and Turner, Richard E and Nowozin, Sebastian},
+  journal={arXiv preprint arXiv:1909.05063},
+  year={2019}
+}
+
+% ------------------------- NOTES ---------------------
+% From Yu:2005:Uncertainty:
+% According to Bayesian statistical theory, uncerUnited Kingdom tainty about the behavioral context should suppress the use of assumed cues for making inferences (compared with direct sensory information), but boost learning Summary about the lesser known predictive relationships within the current behavioral context (Yu and Dayan, 2003).
+
+
+
+% Attention / Concept / Representation References: 
+%----------------------------------------------------------------------------
+
+@phdthesis{lake2014towards,
+  title={Towards more human-like concept learning in machines: Compositionality, causality, and learning-to-learn},
+  author={Lake, Brenden M},
+  year={2014},
+  school={Massachusetts Institute of Technology}
+}
+
+@inproceedings{lake2014one,
+  title={One-shot learning of generative speech concepts},
+  author={Lake, Brenden and Lee, Chia-ying and Glass, James and Tenenbaum, Josh},
+  booktitle={Proceedings of the Annual Meeting of the Cognitive Science Society},
+  volume={36},
+  number={36},
+  year={2014}
+}
+
+@article{lake2015human,
+  title={Human-level concept learning through probabilistic program induction},
+  author={Lake, Brenden M and Salakhutdinov, Ruslan and Tenenbaum, Joshua B},
+  journal={Science},
+  volume={350},
+  number={6266},
+  pages={1332--1338},
+  year={2015},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{awh2012top,
+  title={Top-down versus bottom-up attentional control: A failed theoretical dichotomy},
+  author={Awh, Edward and Belopolsky, Artem V and Theeuwes, Jan},
+  journal={Trends in Cognitive Sciences},
+  volume={16},
+  number={8},
+  pages={437--443},
+  year={2012},
+  publisher={Elsevier}
+}
+
+@article{rao1999predictive,
+  title={Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects},
+  author={Rao, Rajesh PN and Ballard, Dana H},
+  journal={Nature neuroscience},
+  volume={2},
+  number={1},
+  pages={79--87},
+  year={1999},
+  publisher={Nature Publishing Group}
+}
+
+@inproceedings{viola2001rapid,
+  title={Rapid object detection using a boosted cascade of simple features},
+  author={Viola, Paul and Jones, Michael},
+  booktitle={Proceedings of the 2001 IEEE computer society conference on computer vision and pattern recognition. CVPR 2001},
+  volume={1},
+  pages={I--I},
+  year={2001},
+  organization={IEEE}
+}
+
+@article{desimone1995neural,
+  title={Neural mechanisms of selective visual attention},
+  author={Desimone, Robert and Duncan, John},
+  journal={Annual review of neuroscience},
+  volume={18},
+  number={1},
+  pages={193--222},
+  year={1995},
+  publisher={Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}
+}
+
+@article{bengio2013representation,
+  title={Representation learning: A review and new perspectives},
+  author={Bengio, Yoshua and Courville, Aaron and Vincent, Pascal},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={35},
+  number={8},
+  pages={1798--1828},
+  year={2013},
+  publisher={IEEE}
+}
+
+@article{byers2012topdown,
+title = "Exploring the relationship between perceptual learning and top-down attentional control",
+journal = "Vision Research",
+volume = "74",
+pages = "30 - 39",
+year = "2012",
+author = "Anna Byers and John T. Serences"
+}
+
+@article{sasaki2010advances,
+  title={Advances in visual perceptual learning and plasticity},
+  author={Sasaki, Yuka and Nanez, Jose E and Watanabe, Takeo},
+  journal={Nature Reviews Neuroscience},
+  volume={11},
+  number={1},
+  pages={53--60},
+  year={2010},
+  publisher={Nature Publishing Group}
+}
+
+@article{baluch2011mechanisms,
+  title={Mechanisms of top-down attention},
+  author={Baluch, Farhan and Itti, Laurent},
+  journal={Trends in Neurosciences},
+  volume={34},
+  number={4},
+  pages={210--224},
+  year={2011},
+  publisher={Elsevier}
+}
+
+@InProceedings{hadi2007attention,
+author="Fatemi Shariatpanahi, Hadi
+and Nili Ahmadabadi, Majid",
+title="Biologically Inspired Framework for Learning and Abstract Representation of Attention Control",
+booktitle="Attention in Cognitive Systems. Theories and Systems from an Interdisciplinary Viewpoint",
+year="2007",
+pages="307--324"
+}
+
+@article{samuel1959some,
+  title={Some studies in machine learning using the game of checkers},
+  author={Samuel, Arthur L},
+  journal={IBM Journal of research and development},
+  volume={3},
+  number={3},
+  pages={210--229},
+  year={1959},
+  publisher={IBM}
+}
+
+@article{knuth1975analysis,
+  title={An analysis of alpha-beta pruning},
+  author={Knuth, Donald E and Moore, Ronald W},
+  journal={Artificial intelligence},
+  volume={6},
+  number={4},
+  pages={293--326},
+  year={1975},
+  publisher={Elsevier}
+}
+
+@inproceedings{coulom2006efficient,
+  title={Efficient selectivity and backup operators in Monte-Carlo tree search},
+  author={Coulom, R{\'e}mi},
+  booktitle={International Conference on Computers and Games},
+  pages={72--83},
+  year={2006},
+  organization={Springer}
+}
+
+@article{silver2016mastering,
+  title={Mastering the game of Go with deep neural networks and tree search},
+  author={Silver, David and Huang, Aja and Maddison, Chris J and Guez, Arthur and Sifre, Laurent and Van Den Driessche, George and Schrittwieser, Julian and Antonoglou, Ioannis and Panneershelvam, Veda and Lanctot, Marc and others},
+  journal={Nature},
+  volume={529},
+  number={7587},
+  pages={484},
+  year={2016},
+  publisher={Nature Publishing Group}
+}
+
+@article{silver2017mastering,
+  title={Mastering the game of go without human knowledge},
+  author={Silver, David and Schrittwieser, Julian and Simonyan, Karen and Antonoglou, Ioannis and Huang, Aja and Guez, Arthur and Hubert, Thomas and Baker, Lucas and Lai, Matthew and Bolton, Adrian and others},
+  journal={Nature},
+  volume={550},
+  number={7676},
+  pages={354--359},
+  year={2017},
+  publisher={Nature Publishing Group}
+}
+
+@inproceedings{kocsis2006bandit,
+  title={Bandit based {Monte-Carlo} planning},
+  author={Kocsis, Levente and Szepesv{\'a}ri, Csaba},
+  booktitle={European Conference on Machine Learning},
+  pages={282--293},
+  year={2006},
+  organization={Springer}
+}
+@article{guez2018learning,
+  title={Learning to search with MCTSnets},
+  author={Guez, Arthur and Weber, Th{\'e}ophane and Antonoglou, Ioannis and Simonyan, Karen and Vinyals, Oriol and Wierstra, Daan and Munos, R{\'e}mi and Silver, David},
+  journal={arXiv preprint arXiv:1802.04697},
+  year={2018}
+}
+
+@inproceedings{silver2017predictron,
+  title={The predictron: End-to-end learning and planning},
+  author={Silver, David and van Hasselt, Hado and Hessel, Matteo and Schaul, Tom and Guez, Arthur and Harley, Tim and Dulac-Arnold, Gabriel and Reichert, David and Rabinowitz, Neil and Barreto, Andre and others},
+  booktitle={International Conference on Machine Learning},
+  pages={3191--3199},
+  year={2017},
+  organization={JMLR. org}
+}
+
+
+@article{browne2012survey,
+  title={A survey of {Monte Carlo} tree search methods},
+  author={Browne, Cameron B and Powley, Edward and Whitehouse, Daniel and Lucas, Simon M and Cowling, Peter I and Rohlfshagen, Philipp and Tavener, Stephen and Perez, Diego and Samothrakis, Spyridon and Colton, Simon},
+  journal={IEEE Transactions on Computational Intelligence and AI in Games},
+  volume={4},
+  number={1},
+  pages={1--43},
+  year={2012},
+  publisher={IEEE}
+}
+
+@inproceedings{anthony2017thinking,
+  title={Thinking fast and slow with deep learning and tree search},
+  author={Anthony, Thomas and Tian, Zheng and Barber, David},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={5360--5370},
+  year={2017}
+}
+
+@inproceedings{guo2014deep,
+  title={Deep learning for real-time {Atari} game play using offline {Monte-Carlo} tree search planning},
+  author={Guo, Xiaoxiao and Singh, Satinder and Lee, Honglak and Lewis, Richard L and Wang, Xiaoshi},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={3338--3346},
+  year={2014}
+}
+
+@article{snider2015prospective,
+  title={Prospective optimization with limited resources},
+  author={Snider, Joseph and Lee, Dongpyo and Poizner, Howard and Gepshtein, Sergei},
+  journal={PLoS Computational Biology},
+  volume={11},
+  number={9},
+  year={2015},
+  publisher={Public Library of Science}
+}
+
+@inproceedings{van2017computational,
+  title={A computational model for decision tree search.},
+  author={van Opheusden, Bas and Galbiati, Gianni and Bnaya, Zahy and Li, Yunqi and Ma, Wei Ji},
+  year={2017},
+  booktitle={CogSci.}
+}
+
+@article{solway2015evidence,
+  title={Evidence integration in model-based tree search},
+  author={Solway, Alec and Botvinick, Matthew M},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={112},
+  number={37},
+  pages={11708--11713},
+  year={2015},
+  publisher={National Acad Sciences}
+}
+
+@article{van2007effects,
+  title={The effects of time pressure on chess skill: {An} investigation into fast and slow processes underlying expert performance},
+  author={Van Harreveld, Frenk and Wagenmakers, Eric-Jan and Van Der Maas, Han LJ},
+  journal={Psychological Research},
+  volume={71},
+  number={5},
+  pages={591--597},
+  year={2007},
+  publisher={Springer}
+}
+
+@article{holding1989counting,
+  title={Counting backward during chess move choice},
+  author={Holding, Dennis H},
+  journal={Bulletin of the Psychonomic Society},
+  volume={27},
+  number={5},
+  pages={421--424},
+  year={1989},
+  publisher={Springer}
+}
+
+@article{da2020active,
+  title={Active inference on discrete state-spaces: {A} synthesis},
+  author={Da Costa, Lancelot and Parr, Thomas and Sajid, Noor and Veselic, Sebastijan and Neacsu, Victorita and Friston, Karl},
+  journal={arXiv preprint arXiv:2001.07203},
+  year={2020}
+}
+
+@article{isomura2018vitro,
+  title={In vitro neural networks minimise variational free energy},
+  author={Isomura, Takuya and Friston, Karl J},
+  journal={Nature Scientific Reports},
+  volume={8},
+  number={1},
+  pages={1--14},
+  year={2018},
+  publisher={Nature Publishing Group}
+}
+
+@article{friston2018deep,
+  title={Deep temporal models and active inference},
+  author={Friston, Karl J  and Rosch, Richard and Parr, Thomas and Price, Cathy and Bowman, Howard},
+  journal={Neuroscience \& Biobehavioral Reviews},
+  volume={90},
+  pages={486--501},
+  year={2018},
+  publisher={Elsevier}
+}
+
+@article{pezzulo2018hierarchical,
+  title={Hierarchical active inference: A theory of motivated control},
+  author={Pezzulo, Giovanni and Rigoli, Francesco and Friston, Karl J},
+  journal={Trends in Cognitive Sciences},
+  volume={22},
+  number={4},
+  pages={294--306},
+  year={2018},
+  publisher={Elsevier}
+}
+
+@article{parr2017uncertainty,
+  title={Uncertainty, epistemics and active inference},
+  author={Parr, Thomas and Friston, Karl J},
+  journal={Journal of The Royal Society Interface},
+  volume={14},
+  number={136},
+  pages={20170376},
+  year={2017},
+  publisher={The Royal Society}
+}
+
+@article{friston2017graphical,
+  title={The graphical brain: {Belief} propagation and active inference},
+  author={Friston, Karl J and Parr, Thomas and de Vries, Bert},
+  journal={Network Neuroscience},
+  volume={1},
+  number={4},
+  pages={381--414},
+  year={2017},
+  publisher={MIT Press}
+}
+
+
+@article{parr2018computational,
+  title={The computational anatomy of visual neglect},
+  author={Parr, Thomas and Friston, Karl J },
+  journal={Cerebral Cortex},
+  volume={28},
+  number={2},
+  pages={777--790},
+  year={2018},
+  publisher={Oxford University Press}
+}
+
+
+@article{hesp2019deeply,
+  title={Deeply felt affect: {The} emergence of valence in deep active inference},
+  author={Hesp, Casper and Smith, Ryan and Allen, Micah and Friston, Karl J and Ramstead, Maxwell},
+  year={2019},
+  journal={PsyArXiv}
+}
+
+@article{friston2019free,
+  title={A free energy principle for a particular physics},
+  author={Friston, Karl J},
+  journal={arXiv preprint arXiv:1906.10184},
+  year={2019}
+}
+
+@article{friston2010free,
+  title={The free-energy principle: A unified brain theory?},
+  author={Friston, Karl J},
+  journal={Nature Reviews Neuroscience},
+  volume={11},
+  number={2},
+  pages={127--138},
+  year={2010},
+  publisher={Nature Publishing Group}
+}
+
+@article{sajid2019demystifying,
+  title={Active inference: {Demystified} and compared},
+  author={Sajid, Noor and Ball, Philip J and Friston, Karl J},
+  journal={arXiv preprint arXiv:1909.10863},
+  year={2019}
+}
+
+
+@article{burns2004effects,
+  title={The effects of speed on skilled chess performance},
+  author={Burns, Bruce D},
+  journal={Psychological Science},
+  volume={15},
+  number={7},
+  pages={442--447},
+  year={2004},
+  publisher={SAGE Publications Sage CA: Los Angeles, CA}
+}
+@article{kingma2014adam,
+  title={Adam: {A} method for stochastic optimization},
+  author={Kingma, Diederik P and Ba, Jimmy},
+  journal={arXiv preprint arXiv:1412.6980},
+  year={2014}
+}
+
+@misc{dsprites17,
+author = {Loic Matthey and Irina Higgins and Demis Hassabis and Alexander Lerchner},
+title = {dSprites: Disentanglement testing Sprites dataset},
+howpublished= {https://github.com/deepmind/dsprites-dataset/},
+year = "2017",
+}
+
+@article{kaplan2018planning,
+  title={Planning and navigation as active inference},
+  author={Kaplan, Raphael and Friston, Karl J},
+  journal={Biological cybernetics},
+  volume={112},
+  number={4},
+  pages={323--343},
+  year={2018},
+  publisher={Springer}
+} 
+
+@article{millidge2020deep,
+  title={Deep active inference as variational policy gradients},
+  author={Millidge, Beren},
+  journal={Journal of Mathematical Psychology},
+  volume={96},
+  pages={102348},
+  year={2020},
+  publisher={Elsevier}
+} 
+
+@inproceedings{ccatal2020learning,
+  title={Learning Perception and Planning With Deep Active Inference},
+  author={{\c{C}}atal, Ozan and Verbelen, Tim and Nauta, Johannes and De Boom, Cedric and Dhoedt, Bart},
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing},
+  pages={3952--3956},
+  year={2020}
+}
+
+@article{huys2012bonsai,
+  title={Bonsai trees in your head: {How} the {Pavlovian} system sculpts goal-directed choices by pruning decision trees},
+  author={Huys, Quentin JM and Eshel, Neir and O'Nions, Elizabeth and Sheridan, Luke and Dayan, Peter and Roiser, Jonathan P},
+  journal={PLoS Computational Biology},
+  volume={8},
+  number={3},
+  year={2012},
+  publisher={Public Library of Science}
+}
+@article{baeaction2018,
+  author    = {John Yang and
+               Gyujeong Lee and
+               Minsung Hyun and
+               Simyung Chang and
+               Nojun Kwak},
+  title     = {Towards Governing Agent's Efficacy: Action-Conditional {\(\beta\)}-VAE
+               for Deep Transparent Reinforcement Learning},
+  journal   = {CoRR},
+  volume    = {abs/1811.04350},
+  year      = {2018},
+  archivePrefix = {arXiv},
+  eprint    = {1811.04350},
+  timestamp = {Fri, 23 Nov 2018 12:43:51 +0100},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{oh2016control,
+  title={Control of memory, active perception, and action in minecraft},
+  author={Oh, Junhyuk and Chockalingam, Valliappa and Singh, Satinder and Lee, Honglak},
+  journal={arXiv preprint arXiv:1605.09128},
+  year={2016}
+}
+
+@article{sorokin2015deep,
+  title={Deep attention recurrent Q-network},
+  author={Sorokin, Ivan and Seleznev, Alexey and Pavlov, Mikhail and Fedorov, Aleksandr and Ignateva, Anastasiia},
+  journal={arXiv preprint arXiv:1512.01693},
+  year={2015}
+}
+
+@inproceedings{choi2017multi,
+  title={Multi-focus attention network for efficient deep reinforcement learning},
+  author={Choi, Jinyoung and Lee, Beom-Jin and Zhang, Byoung-Tak},
+  booktitle={Workshops at the Thirty-First AAAI Conference on Artificial Intelligence},
+  year={2017}
+}
+
+@incollection{ognibene2008reinforcement,
+  title={A reinforcement-learning model of top-down attention based on a potential-action map},
+  author={Ognibene, Dimitri and Balkenius, Christian and Baldassarre, Gianluca},
+  booktitle={The Challenge of Anticipation},
+  pages={161--184},
+  year={2008},
+  publisher={Springer}
+}
+
+@inproceedings{mott2019towards,
+  title={Towards interpretable reinforcement learning using attention augmented agents},
+  author={Mott, Alexander and Zoran, Daniel and Chrzanowski, Mike and Wierstra, Daan and Rezende, Danilo J},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={12329--12338},
+  year={2019}
+}
+
+@book{sutton2018reinforcement,
+  title={Reinforcement Learning: An Introduction},
+  author={Sutton, Richard S and Barto, Andrew G},
+  year={2018},
+  publisher={MIT press}
+}
+
+% Active Inference papers:
+%----------------------------------------------------------------------------
+
+@article{learningpaper,
+   author = {Friston, Karl J and FitzGerald, Thomas. and Rigoli, Francesco  and Schwartenbeck, Philipp and O'Doherty, John and Pezzulo, Giovanni},
+   title = {Active inference and learning},
+   journal = {Neuroscience $\&$ Biobehavioral Reviews},
+   volume = {68},
+   pages = {862-79},
+   year = {2016},
+   type = {Journal Article}
+}
+
+@article{processtheory,
+   author = {Friston, K. and FitzGerald, T. and Rigoli, F. and Schwartenbeck, P. and Pezzulo, G.},
+   title = {Active Inference: A Process Theory},
+   journal = {Neural Computation},
+   volume = {29},
+   number = {1},
+   pages = {1-49},
+   ISSN = {0899-7667},
+   DOI = {10.1162/NECO_a_00912},
+   year = {2017},
+   type = {Journal Article}
+}
+
+
+@article{deeptemporal,
+   author = {Friston, Karl J and Rosch, Richard and Parr, Thomas and Price, Cathy and Bowman, Howard},
+   title = {Deep Temporal models and active inference},
+   journal = {Neuroscience and Biobehavioral Reviews},
+   volume = {90},
+   pages = {486—501},
+   year = {2018},
+   type = {Journal Article}
+}
+
+@article{parr2019generalised,
+  title={Generalised free energy and active inference},
+  author={Parr, Thomas and Friston, Karl J},
+  journal={Biological Cybernetics},
+  volume={113},
+  number={5-6},
+  pages={495--513},
+  year={2019},
+  publisher={Springer}
+}
+
+@article{Kaplan,
+   author = {Kaplan, Raphael and Friston, Karl J},
+   title = {Planning and navigation as active inference},
+   journal = {Biological Cybernetics},
+   volume = {112},
+   number = {4},
+   pages = {323-343},
+   ISSN = {0340-1200},
+   year = {2018},
+   type = {Journal Article}
+}
+
+
+@article{active_rl,
+   author = {Friston, Karl J and Daunizeau, Jean and Kiebel, Stefan J},
+   title = {Reinforcement learning or active inference?},
+   journal = {PLoS ONE},
+   volume = {4},
+   number = {7},
+   pages = {e6421},
+   year = {2009},
+   type = {Journal Article}
+}
+
+@article{Cullen,
+   author = {Cullen, Maell and Davey, Ben and Friston, Karl J and Moran, Rosalyn J.},
+   title = {Active Inference in {OpenAI Gym: A} paradigm for computational investigations into psychiatric illness},
+   journal = {Biological Psychiatry: Cognitive Neuroscience and Neuroimaging},
+   volume = {3},
+   number = {9},
+   pages = {809-818},
+   year = {2018},
+   type = {Journal Article}
+}
+
+@article{tschantz2019scaling,
+  title={Scaling active inference},
+  author={Tschantz, Alexander and Baltieri, Manuel and Seth, Anil and Buckley, Christopher L and others},
+  journal={arXiv preprint arXiv:1911.10601},
+  year={2019}
+}
+
+@article{ueltzhoffer2018deep,
+  title={Deep active inference},
+  author={Ueltzh{\"o}ffer, Kai},
+  journal={Biological Cybernetics},
+  volume={112},
+  number={6},
+  pages={547--573},
+  year={2018},
+  publisher={Springer}
+}
+
+@article{ccatal2019bayesian,
+  title={Bayesian policy selection using active inference},
+  author={{\c{C}}atal, Ozan and Nauta, Johannes and Verbelen, Tim and Simoens, Pieter and Dhoedt, Bart},
+  journal={arXiv preprint arXiv:1904.08149},
+  year={2019}
+}
+
+
+@ARTICLE{parr2018perceptual,
+AUTHOR={Parr, Thomas and Benrimoh, David A. and Vincent, Peter and Friston, Karl J},   
+TITLE={Precision and False Perceptual Inference},      
+JOURNAL={Frontiers in Integrative Neuroscience},      
+VOLUME={12},      
+PAGES={39},     
+YEAR={2018}   
+}
+% Methods
+@article{blei2017variational,
+  title={Variational inference: A review for statisticians},
+  author={Blei, David M and Kucukelbir, Alp and McAuliffe, Jon D},
+  journal={Journal of the American Statistical Association},
+  volume={112},
+  number={518},
+  pages={859--877},
+  year={2017},
+  publisher={Taylor \& Francis}
+}
+
+@article{schwartenbeck2019computational,
+  title={Computational mechanisms of curiosity and goal-directed exploration},
+  author={Schwartenbeck, Philipp and Passecker, Johannes and Hauser, Tobias U and FitzGerald, Thomas HB and Kronbichler, Martin and Friston, Karl J},
+  journal={eLife},
+  volume={8},
+  pages={e41703},
+  year={2019},
+  publisher={eLife Sciences Publications Limited}
+}
+
+% Apparently everyone cites this for proving the decomposition of G used here...
+@article{friston2017active,
+  title={Active inference: {A} process theory},
+  author={Friston, Karl J and FitzGerald, Thomas and Rigoli, Francesco and Schwartenbeck, Philipp and Pezzulo, Giovanni},
+  journal={Neural Computation},
+  volume={29},
+  number={1},
+  pages={1--49},
+  year={2017},
+  publisher={MIT Press}
+}
+
+% The MC Dropout paper for Bayesian neural nets..!
+@inproceedings{Gal:2016:Dropout,
+  title={Dropout as a {Bayesian} approximation: {Representing} model uncertainty in deep learning},
+  author={Gal, Yarin and Ghahramani, Zoubin},
+  booktitle={International Conference on Machine Learning},
+  pages={1050--1059},
+  year={2016}
+}
+
+@book{bishop2006pattern,
+  title={Pattern Recognition and Machine Learning},
+  author={Bishop, Christopher M},
+  year={2006},
+  publisher={Springer}
+}
+
+@article{millidge2020whence,
+  title={Whence the Expected Free Energy?},
+  author={Millidge, Beren and Tschantz, Alexander and Buckley, Christopher L},
+  journal={arXiv preprint arXiv:2004.08128},
+  year={2020}
+}
+
+@book{kahneman2011thinking,
+  title={Thinking, Fast and Slow},
+  author={Kahneman, Daniel},
+  year={2011},
+  publisher={MacMillan}
+}
+
+@article{van2012information,
+  title={Information processing in decision-making systems},
+  author={Van Der Meer, Matthijs and Kurth-Nelson, Zeb and Redish, A David},
+  journal={The Neuroscientist},
+  volume={18},
+  number={4},
+  pages={342--359},
+  year={2012},
+  publisher={Sage Publications Sage CA: Los Angeles, CA}
+}
+
+
+@article{Crosby:2019:animalai,
+  title={The {Animal-AI} olympics},
+  author={Crosby, Matthew and Beyret, Benjamin and Halina, Marta},
+  journal={Nature Machine Intelligence},
+  volume={1},
+  number={5},
+  pages={257--257},
+  year={2019},
+  publisher={Nature Publishing Group}
+}
+
+% FactorVAE (including TC as score)
+@article{Kim:2018:factorvae,
+  title={Disentangling by factorising},
+  author={Kim, Hyunjik and Mnih, Andriy},
+  journal={arXiv preprint arXiv:1802.05983},
+  year={2018}
+}
+
+% disentanglement in transitions and videos..
+% See also the workshop paper: https://openreview.net/pdf?id=HklaEUUtON
+@inproceedings{Hsieh:2018:nips,
+  title={Learning to decompose and disentangle representations for video prediction},
+  author={Hsieh, Jun-Ting and Liu, Bingbin and Huang, De-An and Fei-Fei, Li F and Niebles, Juan Carlos},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={517--526},
+  year={2018}
+}
+
+@article{adams2013predictions,
+  title={Predictions not commands: Active inference in the motor system},
+  author={Adams, Rick A and Shipp, Stewart and Friston, Karl J},
+  journal={Brain Structure and Function},
+  volume={218},
+  number={3},
+  pages={611--643},
+  year={2013},
+  publisher={Springer}
+}
+
+@misc{baselines,
+  author = {Dhariwal, Prafulla and Hesse, Christopher and Klimov, Oleg and Nichol, Alex and Plappert, Matthias and Radford, Alec and Schulman, John and Sidor, Szymon and Wu, Yuhuai and Zhokhov, Peter},
+  title = {OpenAI Baselines},
+  year = {2017},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/openai/baselines}},
+}
+
+
+@article{Mnih:2015:dqn,
+  title={Human-level control through deep reinforcement learning},
+  author={Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Rusu, Andrei A and Veness, Joel and Bellemare, Marc G and Graves, Alex and Riedmiller, Martin and Fidjeland, Andreas K and Ostrovski, Georg and others},
+  journal={nature},
+  volume={518},
+  number={7540},
+  pages={529--533},
+  year={2015},
+  publisher={Nature Publishing Group}
+}
+
+% This is actually the original DQN, so not sure which one to cite
+@article{Mnih:2013:dqn,
+  title={Playing atari with deep reinforcement learning},
+  author={Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Graves, Alex and Antonoglou, Ioannis and Wierstra, Daan and Riedmiller, Martin},
+  journal={arXiv preprint arXiv:1312.5602},
+  year={2013}
+}
+
+@article{Schulman:2017:PPO,
+  title={Proximal policy optimization algorithms},
+  author={Schulman, John and Wolski, Filip and Dhariwal, Prafulla and Radford, Alec and Klimov, Oleg},
+  journal={arXiv preprint arXiv:1707.06347},
+  year={2017}
+}
+
+@inproceedings{Mnih:2016:A2C,
+  title={Asynchronous methods for deep reinforcement learning},
+  author={Mnih, Volodymyr and Badia, Adria Puigdomenech and Mirza, Mehdi and Graves, Alex and Lillicrap, Timothy and Harley, Tim and Silver, David and Kavukcuoglu, Koray},
+  booktitle={International conference on machine learning},
+  pages={1928--1937},
+  year={2016}
+}

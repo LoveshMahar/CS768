@@ -1,0 +1,491 @@
+% 动态图的综述（Introduction 用到）
+@article{kazemi2020representation,
+  title={Representation Learning for Dynamic Graphs: A Survey.},
+  author={Kazemi, Seyed Mehran and Goel, Rishab and Jain, Kshitij and Kobyzev, Ivan and Sethi, Akshay and Forsyth, Peter and Poupart, Pascal},
+  journal={J. Mach. Learn. Res.},
+  volume={21},
+  number={70},
+  pages={1--73},
+  year={2020}
+}
+
+% 协同过滤（Introduction 用到）
+@inproceedings{sarwar2001item,
+  title={Item-based collaborative filtering recommendation algorithms},
+  author={Sarwar, Badrul and Karypis, George and Konstan, Joseph and Riedl, John},
+  booktitle={Proceedings of the 10th international conference on World Wide Web},
+  pages={285--295},
+  year={2001}
+}
+
+% SVD-based 协同过滤（截断 SVD 用到）
+@techreport{sarwar2000application,
+  title={Application of dimensionality reduction in recommender system-a case study},
+  author={Sarwar, Badrul and Karypis, George and Konstan, Joseph and Riedl, John},
+  year={2000},
+  institution={Minnesota Univ Minneapolis Dept of Computer Science}
+}
+
+% 增量 SVD
+@article{brand2006fast,
+  title={Fast low-rank modifications of the thin singular value decomposition},
+  author={Brand, Matthew},
+  journal={Linear algebra and its applications},
+  volume={415},
+  number={1},
+  pages={20--30},
+  year={2006},
+  publisher={Elsevier}
+}
+
+% TIMERS
+@inproceedings{zhang2018timers,
+  title={Timers: Error-bounded svd restart on dynamic networks},
+  author={Zhang, Ziwei and Cui, Peng and Pei, Jian and Wang, Xiao and Zhu, Wenwu},
+  booktitle={Thirty-second AAAI conference on artificial intelligence},
+  year={2018}
+}
+
+% amazon 数据集
+@inproceedings{he2016ups,
+  title={Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering},
+  author={He, Ruining and McAuley, Julian},
+  booktitle={proceedings of the 25th international conference on world wide web},
+  pages={507--517},
+  year={2016}
+}
+
+% ml 数据集
+@article{harper2015movielens,
+  title={The movielens datasets: History and context},
+  author={Harper, F Maxwell and Konstan, Joseph A},
+  journal={Acm transactions on interactive intelligent systems (tiis)},
+  volume={5},
+  number={4},
+  pages={1--19},
+  year={2015},
+  publisher={ACM New York, NY, USA}
+}
+
+% JODIE
+@inproceedings{kumar2019predicting,
+  title={Predicting dynamic embedding trajectory in temporal interaction networks},
+  author={Kumar, Srijan and Zhang, Xikun and Leskovec, Jure},
+  booktitle={Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery \& data mining},
+  pages={1269--1278},
+  year={2019}
+}
+
+% LightGCN
+@inproceedings{he2020lightgcn,
+  title={Lightgcn: Simplifying and powering graph convolution network for recommendation},
+  author={He, Xiangnan and Deng, Kuan and Wang, Xiang and Li, Yan and Zhang, Yongdong and Wang, Meng},
+  booktitle={Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval},
+  pages={639--648},
+  year={2020}
+}
+
+% CoPE
+@inproceedings{zhang2021cope,
+  title={CoPE: Modeling Continuous Propagation and Evolution on Interaction Graph},
+  author={Zhang, Yao and Xiong, Yun and Li, Dongsheng and Shan, Caihua and Ren, Kan and Zhu, Yangyong},
+  booktitle={Proceedings of the 30th ACM International Conference on Information \& Knowledge Management},
+  pages={2627--2636},
+  year={2021}
+}
+
+% 过平滑（Introduction 用到）
+@inproceedings{li2018deeper,
+  title={Deeper insights into graph convolutional networks for semi-supervised learning},
+  author={Li, Qimai and Han, Zhichao and Wu, Xiao-Ming},
+  booktitle={Thirty-Second AAAI conference on artificial intelligence},
+  year={2018}
+}
+
+% 矩阵微扰（介绍 TIMERS 用到）
+@article{stewart1990matrix,
+  title={Matrix perturbation theory},
+  author={Stewart, Gilbert W},
+  year={1990},
+  publisher={Citeseer}
+}
+
+% side information 综述（讲冷启动用到了）
+@article{zeng2021knowledge,
+  title={Knowledge transfer via pre-training for recommendation: A review and prospect},
+  author={Zeng, Zheni and Xiao, Chaojun and Yao, Yuan and Xie, Ruobing and Liu, Zhiyuan and Lin, Fen and Lin, Leyu and Sun, Maosong},
+  journal={Frontiers in big Data},
+  pages={4},
+  year={2021},
+  publisher={Frontiers}
+}
+% 【以上，共 13 篇】
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%      Related work   
+%%%%%%%%%%%%%%%%%%%%%%%
+% GNN
+@inproceedings{li2020dynamic,
+  title={Dynamic graph collaborative filtering},
+  author={Li, Xiaohan and Zhang, Mengqi and Wu, Shu and Liu, Zheng and Wang, Liang and Philip, S Yu},
+  booktitle={2020 IEEE International Conference on Data Mining (ICDM)},
+  pages={322--331},
+  year={2020},
+  organization={IEEE}
+}
+@inproceedings{tian2021streaming,
+  title={Streaming Dynamic Graph Neural Networks for Continuous-Time Temporal Graph Modeling},
+  author={Tian, Sheng and Xiong, Tao and Shi, Leilei},
+  booktitle={2021 IEEE International Conference on Data Mining (ICDM)},
+  pages={1361--1366},
+  year={2021},
+  organization={IEEE}
+}
+@article{chen2021multi,
+  title={Multi-Relation Aware Temporal Interaction Network Embedding},
+  author={Chen, Ling and Yu, Shanshan and Lyu, Dandan and Wang, Da},
+  journal={arXiv preprint arXiv:2110.04503},
+  year={2021}
+}
+@article{kang2021online,
+  title={Online graph nets},
+  author={Kang, Hojin and Ho, Jou-Hui and Mesquita, Diego and P{\'e}rez, Jorge and Souza, Amauri H},
+  year={2021}
+}
+@article{wang2021tcl,
+  title={Tcl: Transformer-based dynamic graph modelling via contrastive learning},
+  author={Wang, Lu and Chang, Xiaofu and Li, Shuang and Chu, Yunfei and Li, Hui and Zhang, Wei and He, Xiaofeng and Song, Le and Zhou, Jingren and Yang, Hongxia},
+  journal={arXiv preprint arXiv:2105.07944},
+  year={2021}
+}
+@article{zhou2022tgl,
+  title={TGL: A General Framework for Temporal GNN Training on Billion-Scale Graphs},
+  author={Zhou, Hongkuan and Zheng, Da and Nisa, Israt and Ioannidis, Vasileios and Song, Xiang and Karypis, George},
+  journal={arXiv preprint arXiv:2203.14883},
+  year={2022}
+}
+% CoPE
+% 【以上，共 19 篇】
+% RNN
+@inproceedings{wu2017recurrent,
+  title={Recurrent recommender networks},
+  author={Wu, Chao-Yuan and Ahmed, Amr and Beutel, Alex and Smola, Alexander J and Jing, How},
+  booktitle={Proceedings of the tenth ACM international conference on web search and data mining},
+  pages={495--503},
+  year={2017}
+}
+@inproceedings{beutel2018latent,
+  title={Latent cross: Making use of context in recurrent recommender systems},
+  author={Beutel, Alex and Covington, Paul and Jain, Sagar and Xu, Can and Li, Jia and Gatto, Vince and Chi, Ed H},
+  booktitle={Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining},
+  pages={46--54},
+  year={2018}
+}
+@inproceedings{zhu2017next,
+  title={What to Do Next: Modeling User Behaviors by Time-LSTM.},
+  author={Zhu, Yu and Li, Hao and Liao, Yikang and Wang, Beidou and Guan, Ziyu and Liu, Haifeng and Cai, Deng},
+  booktitle={IJCAI},
+  volume={17},
+  pages={3602--3608},
+  year={2017}
+}
+@article{dai2016deep,
+  title={Deep coevolutionary network: Embedding user and item features for recommendation},
+  author={Dai, Hanjun and Wang, Yichen and Trivedi, Rakshit and Song, Le},
+  journal={arXiv preprint arXiv:1609.03675},
+  year={2016}
+}
+% JODIE
+% 以上，共 23 篇
+% RNN
+@inproceedings{kefato2021dynamic,
+  title={Dynamic embeddings for interaction prediction},
+  author={Kefato, Zekarias and Girdzijauskas, Sarunas and Sheikh, Nasrullah and Montresor, Alberto},
+  booktitle={Proceedings of the Web Conference 2021},
+  pages={1609--1618},
+  year={2021}
+}
+@article{chen2020learning,
+  title={Learning Two-Time-Scale Representations For Large Scale Recommendations},
+  author={Chen, Xinshi and Zhu, Yan and Xu, Haowen and Zhang, Muhan and Xiong, Liang and Song, Le},
+  year={2020}
+}
+@inproceedings{tsai2020tidefc,
+  title={TideFC: Learning Temporal Interaction for Dynamic Embedding via Feature Crossing},
+  author={Tsai, Chang-Ming and Li, Cheng-Te},
+  booktitle={2020 International Computer Symposium (ICS)},
+  pages={565--569},
+  year={2020},
+  organization={IEEE}
+}
+% 以上，共 26 篇
+@inproceedings{nguyen2018continuous,
+  title={Continuous-time dynamic network embeddings},
+  author={Nguyen, Giang Hoang and Lee, John Boaz and Rossi, Ryan A and Ahmed, Nesreen K and Koh, Eunyee and Kim, Sungchul},
+  booktitle={Companion Proceedings of the The Web Conference 2018},
+  pages={969--976},
+  year={2018}
+}
+@inproceedings{li2017attributed,
+  title={Attributed network embedding for learning in a dynamic environment},
+  author={Li, Jundong and Dani, Harsh and Hu, Xia and Tang, Jiliang and Chang, Yi and Liu, Huan},
+  booktitle={Proceedings of the 2017 ACM on Conference on Information and Knowledge Management},
+  pages={387--396},
+  year={2017}
+}
+@article{li2018deep,
+  title={Deep dynamic network embedding for link prediction},
+  author={Li, Taisong and Zhang, Jiawei and Philip, S Yu and Zhang, Yan and Yan, Yonghong},
+  journal={IEEE Access},
+  volume={6},
+  pages={29219--29230},
+  year={2018},
+  publisher={IEEE}
+}
+@article{rahman2018dylink2vec,
+  title={Dylink2vec: Effective feature representation for link prediction in dynamic networks},
+  author={Rahman, Mahmudur and Saha, Tanay Kumar and Hasan, Mohammad Al and Xu, Kevin S and Reddy, Chandan K},
+  journal={arXiv preprint arXiv:1804.05755},
+  year={2018}
+}
+@article{goyal2018dyngem,
+  title={Dyngem: Deep embedding method for dynamic graphs},
+  author={Goyal, Palash and Kamra, Nitin and He, Xinran and Liu, Yan},
+  journal={arXiv preprint arXiv:1805.11273},
+  year={2018}
+}
+@article{zhu2016scalable,
+  title={Scalable temporal latent space inference for link prediction in dynamic social networks},
+  author={Zhu, Linhong and Guo, Dong and Yin, Junming and Ver Steeg, Greg and Galstyan, Aram},
+  journal={IEEE Transactions on Knowledge and Data Engineering},
+  volume={28},
+  number={10},
+  pages={2765--2777},
+  year={2016},
+  publisher={IEEE}
+}
+% 以上，共 32 篇
+% TPP
+@article{wang2016coevolutionary,
+  title={Coevolutionary latent feature processes for continuous-time user-item interactions},
+  author={Wang, Yichen and Du, Nan and Trivedi, Rakshit and Song, Le},
+  journal={Advances in neural information processing systems},
+  volume={29},
+  year={2016}
+}
+@inproceedings{trivedi2017know,
+  title={Know-evolve: Deep temporal reasoning for dynamic knowledge graphs},
+  author={Trivedi, Rakshit and Dai, Hanjun and Wang, Yichen and Song, Le},
+  booktitle={international conference on machine learning},
+  pages={3462--3471},
+  year={2017},
+  organization={PMLR}
+}
+% 以上，共 34 篇
+% TPP
+@article{zhou2022continuous,
+  title={Continuous temporal network embedding by modeling neighborhood propagation process},
+  author={Zhou, Yanru and Luo, Senlin and Pan, Limin and Liu, Lu and Song, Dandan},
+  journal={Knowledge-Based Systems},
+  volume={239},
+  pages={107998},
+  year={2022},
+  publisher={Elsevier}
+}
+@article{shchur2019intensity,
+  title={Intensity-free learning of temporal point processes},
+  author={Shchur, Oleksandr and Bilo{\v{s}}, Marin and G{\"u}nnemann, Stephan},
+  journal={arXiv preprint arXiv:1909.12127},
+  year={2019}
+}
+@inproceedings{cao2021deep,
+  title={Deep structural point process for learning temporal interaction networks},
+  author={Cao, Jiangxia and Lin, Xixun and Cong, Xin and Guo, Shu and Tang, Hengzhu and Liu, Tingwen and Wang, Bin},
+  booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases},
+  pages={305--320},
+  year={2021},
+  organization={Springer}
+}
+% 以上，共 37 篇
+% 其余的
+@inproceedings{zuo2018embedding,
+  title={Embedding temporal network via neighborhood formation},
+  author={Zuo, Yuan and Liu, Guannan and Lin, Hao and Guo, Jia and Hu, Xiaoqian and Wu, Junjie},
+  booktitle={Proceedings of the 24th ACM SIGKDD international conference on knowledge discovery \& data mining},
+  pages={2857--2866},
+  year={2018}
+}
+@inproceedings{zhang2017learning,
+  title={Learning node embeddings in interaction graphs},
+  author={Zhang, Yao and Xiong, Yun and Kong, Xiangnan and Zhu, Yangyong},
+  booktitle={Proceedings of the 2017 ACM on Conference on Information and Knowledge Management},
+  pages={397--406},
+  year={2017}
+}
+@inproceedings{zhang2020learning,
+  title={Learning temporal interaction graph embedding via coupled memory networks},
+  author={Zhang, Zhen and Bu, Jiajun and Ester, Martin and Zhang, Jianfeng and Yao, Chengwei and Li, Zhao and Wang, Can},
+  booktitle={Proceedings of the web conference 2020},
+  pages={3049--3055},
+  year={2020}
+}
+% 以上，共 40 篇
+@article{chen2021efficient,
+  title={Efficient Dynamic Graph Representation Learning at Scale},
+  author={Chen, Xinshi and Zhu, Yan and Xu, Haowen and Liu, Mengyang and Xiong, Liang and Zhang, Muhan and Song, Le},
+  journal={arXiv preprint arXiv:2112.07768},
+  year={2021}
+}
+@inproceedings{chang2020continuous,
+  title={Continuous-time dynamic graph learning via neural interaction processes},
+  author={Chang, Xiaofu and Liu, Xuqin and Wen, Jianfeng and Li, Shuang and Fang, Yanming and Song, Le and Qi, Yuan},
+  booktitle={Proceedings of the 29th ACM International Conference on Information \& Knowledge Management},
+  pages={145--154},
+  year={2020}
+}
+@inproceedings{chen2021highly,
+  title={Highly liquid temporal interaction graph embeddings},
+  author={Chen, Huidi and Xiong, Yun and Zhu, Yangyong and Yu, Philip S},
+  booktitle={Proceedings of the Web Conference 2021},
+  pages={1639--1648},
+  year={2021}
+}
+% 以上，共 43 篇
+@inproceedings{zhou2018dynamic,
+  title={Dynamic network embedding by modeling triadic closure process},
+  author={Zhou, Lekui and Yang, Yang and Ren, Xiang and Wu, Fei and Zhuang, Yueting},
+  booktitle={Proceedings of the AAAI conference on artificial intelligence},
+  volume={32},
+  number={1},
+  year={2018}
+}
+% 以上，共 44 篇
+@inproceedings{steck2011item,
+  title={Item popularity and recommendation accuracy},
+  author={Steck, Harald},
+  booktitle={Proceedings of the fifth ACM conference on Recommender systems},
+  pages={125--132},
+  year={2011}
+}
+
+@article{steck2019markov,
+  title={Markov random fields for collaborative filtering},
+  author={Steck, Harald},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+@article{goldberg1992using,
+  title={Using collaborative filtering to weave an information tapestry},
+  author={Goldberg, David and Nichols, David and Oki, Brian M and Terry, Douglas},
+  journal={Communications of the ACM},
+  volume={35},
+  number={12},
+  pages={61--70},
+  year={1992},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{yang2022few,
+  title={Few-shot Link Prediction in Dynamic Networks},
+  author={Yang, Cheng and Wang, Chunchen and Lu, Yuanfu and Gong, Xumeng and Shi, Chuan and Wang, Wei and Zhang, Xu},
+  booktitle={Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining},
+  pages={1245--1255},
+  year={2022}
+}
+
+@inproceedings{wen2022trend,
+  title={TREND: TempoRal Event and Node Dynamics for Graph Representation Learning},
+  author={Wen, Zhihao and Fang, Yuan},
+  booktitle={Proceedings of the ACM Web Conference 2022},
+  pages={1159--1169},
+  year={2022}
+}
+
+@inproceedings{yu2020graph,
+  title={Graph convolutional network for recommendation with low-pass collaborative filters},
+  author={Yu, Wenhui and Qin, Zheng},
+  booktitle={International Conference on Machine Learning},
+  pages={10936--10945},
+  year={2020},
+  organization={PMLR}
+}
+
+@article{nt2019revisiting,
+  title={Revisiting graph neural networks: All we have is low-pass filters},
+  author={Nt, Hoang and Maehara, Takanori},
+  journal={arXiv preprint arXiv:1905.09550},
+  year={2019}
+}
+
+@inproceedings{shen2021powerful,
+  title={How Powerful is Graph Convolution for Recommendation?},
+  author={Shen, Yifei and Wu, Yongji and Zhang, Yao and Shan, Caihua and Zhang, Jun and Letaief, B Khaled and Li, Dongsheng},
+  booktitle={Proceedings of the 30th ACM International Conference on Information \& Knowledge Management},
+  pages={1619--1629},
+  year={2021}
+}
+
+@article{saxena2021exploring,
+  title={Exploring and Mitigating Gender Bias in Recommender Systems with Explicit Feedback},
+  author={Saxena, Shrikant and Jain, Shweta},
+  journal={arXiv preprint arXiv:2112.02530},
+  year={2021}
+}
+
+@inproceedings{Li2017nips,
+ author = {Li, Dongsheng and Chen, Chao and Liu, Wei and Lu, Tun and Gu, Ning and Chu, Stephen},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {477--485},
+ title = {Mixture-Rank Matrix Approximation for Collaborative Filtering},
+ year = {2017}
+}
+
+@inproceedings{xia22www,
+author = {Xia, Jiafeng and Li, Dongsheng and Gu, Hansu and Liu, Jiahao and Lu, Tun and Gu, Ning},
+title = {FIRE: Fast Incremental Recommendation with Graph Signal Processing},
+year = {2022},
+publisher = {ACM},
+booktitle = {Proceedings of the ACM Web Conference 2022},
+pages = {2360–2369},
+location = {Virtual Event, Lyon, France},
+series = {WWW '22}
+}
+
+@inproceedings{10.1145/3485447.3512108,
+author = {Xia, Jiafeng and Li, Dongsheng and Gu, Hansu and Liu, Jiahao and Lu, Tun and Gu, Ning},
+title = {FIRE: Fast Incremental Recommendation with Graph Signal Processing},
+year = {2022},
+isbn = {9781450390965},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3485447.3512108},
+doi = {10.1145/3485447.3512108},
+abstract = {Recommender systems are incremental in nature. Recent progresses in incremental recommendation rely on capturing the temporal dynamics of users/items from temporal interaction graphs, so that their user/item embeddings can evolve together with the graph structures. However, these methods are faced with two key challenges: 1) model training and/or updating are time-consuming and 2) new users/items cannot be effectively handled. To this end, we propose the fast incremental recommendation (FIRE) method from a graph signal processing perspective. FIRE is non-parametric which does not suffer from the time-consuming back-propagations as in previous learning-based methods, significantly improving the efficiency of model updating. In addition, we encode user/item temporal information and side information by designing new graph filters in FIRE, which can capture the temporal dynamics of users/items and address the cold-start issue for new users/items, respectively. Experimental studies on four popular datasets demonstrate that FIRE can improve the accuracy by a large margin and improve the model updating efficiency by at least 3X compared with the state-of-the-art incremental recommendation algorithms. The Code is available at https://github.com/Yaveng/FIRE.},
+booktitle = {Proceedings of the ACM Web Conference 2022},
+pages = {2360–2369},
+numpages = {10},
+keywords = {Incremental recommendation, graph signal processing},
+location = {Virtual Event, Lyon, France},
+series = {WWW '22}
+}
+
+@inproceedings{10.1145/3459637.3482354,
+author = {Xia, Jiafeng and Li, Dongsheng and Gu, Hansu and Lu, Tun and Zhang, Peng and Gu, Ning},
+title = {Incremental Graph Convolutional Network for Collaborative Filtering},
+year = {2021},
+isbn = {9781450384469},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3459637.3482354},
+doi = {10.1145/3459637.3482354},
+abstract = {Graph neural networks (GNN) recently achieved huge success in collaborative filtering (CF) due to the useful graph structure information. However, users will continuously interact with items, which causes the user-item interaction graphs to change over time and well-trained GNN models to be out-of-date soon. Naive solutions such as periodic retraining lose important temporal information and are computationally expensive. Recent works that leverage recurrent neural networks to keep GNN up-to-date may suffer from the "catastrophic forgetting'' issue, and experience a cold start with new users and items. To this end, we propose the incremental graph convolutional network (IGCN) --- a pure graph convolutional network (GCN) based method to update GNN models when new user-item interactions are available. IGCN consists of two main components: 1) a historical feature generation layer, which generates the initial user/item embedding via model agnostic meta-learning and ensures good initial states and fast model adaptation; 2) a temporal feature learning layer, which first aggregates the features from local neighborhood to update the embedding of each user/item within each subgraph via graph convolutional network and then fuses the user/item embeddings from last subgraph and current subgraph via incremental temporal convolutional network. Experimental studies on real-world datasets show that IGCN can outperform state-of-the-art CF algorithms in sequential recommendation tasks.},
+booktitle = {Proceedings of the 30th ACM International Conference on Information &amp; Knowledge Management},
+pages = {2170–2179},
+numpages = {10},
+keywords = {incremental recommendation, graph neural network, collaborative filtering},
+location = {Virtual Event, Queensland, Australia},
+series = {CIKM '21}
+}

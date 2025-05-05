@@ -1,0 +1,723 @@
+@article{mammoth,
+  title={Mammoth: Building math generalist models through hybrid instruction tuning},
+  author={Yue, Xiang and Qu, Xingwei and Zhang, Ge and Fu, Yao and Huang, Wenhao and Sun, Huan and Su, Yu and Chen, Wenhu},
+  journal={arXiv preprint arXiv:2309.05653},
+  year={2023}
+}
+
+@article{wizardmath,
+  title={WizardMath: Empowering Mathematical Reasoning for Large Language Models via Reinforced Evol-Instruct},
+  author={Luo, Haipeng and Sun, Qingfeng and Xu, Can and Zhao, Pu and Lou, Jianguang and Tao, Chongyang and Geng, Xiubo and Lin, Qingwei and Chen, Shifeng and Zhang, Dongmei},
+  journal={arXiv preprint arXiv:2308.09583},
+  year={2023}
+}
+
+@misc{verifystepbystep,
+   title={Let's Verify Step by Step}, 
+   author={Hunter Lightman and Vineet Kosaraju and Yura Burda and Harri Edwards and Bowen Baker and Teddy Lee and Jan Leike and John Schulman and Ilya Sutskever and Karl Cobbe},
+   year={2023},
+   eprint={2305.20050},
+   archivePrefix={arXiv},
+   primaryClass={cs.LG}
+}
+
+
+@article{openwebmath,
+  title={OpenWebMath: An Open Dataset of High-Quality Mathematical Web Text},
+  author={Paster, Keiran and Santos, Marco Dos and Azerbayev, Zhangir and Ba, Jimmy},
+  journal={arXiv preprint arXiv:2310.06786},
+  year={2023}
+}
+
+@article{metamath,
+  title={MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models},
+  author={Yu, Longhui and Jiang, Weisen and Shi, Han and Yu, Jincheng and Liu, Zhengying and Zhang, Yu and Kwok, James T and Li, Zhenguo and Weller, Adrian and Liu, Weiyang},
+  journal={arXiv preprint arXiv:2309.12284},
+  year={2023}
+}
+
+@misc{llama2,
+      title={Llama 2: Open Foundation and Fine-Tuned Chat Models}, 
+      author={Hugo Touvron and Louis Martin and Kevin Stone and Peter Albert and Amjad Almahairi and Yasmine Babaei and Nikolay Bashlykov and Soumya Batra and Prajjwal Bhargava and Shruti Bhosale and Dan Bikel and Lukas Blecher and Cristian Canton Ferrer and Moya Chen and Guillem Cucurull and David Esiobu and Jude Fernandes and Jeremy Fu and Wenyin Fu and Brian Fuller and Cynthia Gao and Vedanuj Goswami and Naman Goyal and Anthony Hartshorn and Saghar Hosseini and Rui Hou and Hakan Inan and Marcin Kardas and Viktor Kerkez and Madian Khabsa and Isabel Kloumann and Artem Korenev and Punit Singh Koura and Marie-Anne Lachaux and Thibaut Lavril and Jenya Lee and Diana Liskovich and Yinghai Lu and Yuning Mao and Xavier Martinet and Todor Mihaylov and Pushkar Mishra and Igor Molybog and Yixin Nie and Andrew Poulton and Jeremy Reizenstein and Rashi Rungta and Kalyan Saladi and Alan Schelten and Ruan Silva and Eric Michael Smith and Ranjan Subramanian and Xiaoqing Ellen Tan and Binh Tang and Ross Taylor and Adina Williams and Jian Xiang Kuan and Puxin Xu and Zheng Yan and Iliyan Zarov and Yuchen Zhang and Angela Fan and Melanie Kambadur and Sharan Narang and Aurelien Rodriguez and Robert Stojnic and Sergey Edunov and Thomas Scialom},
+      year={2023},
+      eprint={2307.09288},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{codellama,
+  title={Code llama: Open foundation models for code},
+  author={Roziere, Baptiste and Gehring, Jonas and Gloeckle, Fabian and Sootla, Sten and Gat, Itai and Tan, Xiaoqing Ellen and Adi, Yossi and Liu, Jingyu and Remez, Tal and Rapin, J{\'e}r{\'e}my and others},
+  journal={arXiv preprint arXiv:2308.12950},
+  year={2023}
+}
+
+@misc{llemma,
+      title={Llemma: An Open Language Model For Mathematics}, 
+      author={Zhangir Azerbayev and Hailey Schoelkopf and Keiran Paster and Marco Dos Santos and Stephen McAleer and Albert Q. Jiang and Jia Deng and Stella Biderman and Sean Welleck},
+      year={2023},
+      eprint={2310.10631},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{ultrachat,
+    title = "Enhancing Chat Language Models by Scaling High-quality Instructional Conversations",
+    author = "Ding, Ning  and
+      Chen, Yulin  and
+      Xu, Bokai  and
+      Qin, Yujia  and
+      Hu, Shengding  and
+      Liu, Zhiyuan  and
+      Sun, Maosong  and
+      Zhou, Bowen",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.183",
+    doi = "10.18653/v1/2023.emnlp-main.183",
+    pages = "3029--3051",
+    abstract = "Fine-tuning on instruction data has been widely validated as an effective practice for implementing chat language models like ChatGPT. Scaling the diversity and quality of such data, although straightforward, stands a great chance of leading to improved performance. This paper aims to push the upper bound of open-source models further. We first provide a systematically designed, diverse, informative, large-scale dataset of instructional conversations, UltraChat, which does not involve human queries. Our objective is to capture the breadth of interactions between a human user and an AI assistant and employs a comprehensive framework to generate multi-turn conversation iteratively. UltraChat contains 1.5 million high-quality multi-turn dialogues and covers a wide range of topics and instructions. Our statistical analysis of UltraChat reveals its superiority in various key metrics, including scale, average length, diversity, coherence, etc., solidifying its position as a leading open-source dataset. Building upon UltraChat, we fine-tune a LLaMA model to create a powerful conversational model, UltraLM. Our evaluations indicate that UltraLM consistently outperforms other open-source models, including WizardLM and Vicuna, the previously recognized state-of-the-art open-source models.",
+}
+
+@inproceedings{hendrycksmath,
+ author = {Hendrycks, Dan and Burns, Collin and Kadavath, Saurav and Arora, Akul and Basart, Steven and Tang, Eric and Song, Dawn and Steinhardt, Jacob},
+ booktitle = {Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks},
+ editor = {J. Vanschoren and S. Yeung},
+ pages = {},
+ publisher = {Curran},
+ title = {Measuring Mathematical Problem Solving With the MATH Dataset},
+ url = {https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/file/be83ab3ecd0db773eb2dc1b0a17836a1-Paper-round2.pdf},
+ volume = {1},
+ year = {2021}
+}
+
+@article{gsm8k,
+  title={Training Verifiers to Solve Math Word Problems},
+  author={Cobbe, Karl and Kosaraju, Vineet and Bavarian, Mohammad and Chen, Mark and Jun, Heewoo and Kaiser, Lukasz and Plappert, Matthias and Tworek, Jerry and Hilton, Jacob and Nakano, Reiichiro and Hesse, Christopher and Schulman, John},
+  journal={arXiv preprint arXiv:2110.14168},
+  year={2021}
+}
+
+@article{mmlu,
+  title={Measuring Massive Multitask Language Understanding},
+  author={Dan Hendrycks and Collin Burns and Steven Basart and Andy Zou and Mantas Mazeika and Dawn Song and Jacob Steinhardt},
+  journal={Proceedings of the International Conference on Learning Representations (ICLR)},
+  year={2021}
+}
+
+@article{frieder2023mathematical,
+  title={Mathematical capabilities of chatgpt},
+  author={Frieder, Simon and Pinchetti, Luca and Griffiths, Ryan-Rhys and Salvatori, Tommaso and Lukasiewicz, Thomas and Petersen, Philipp Christian and Chevalier, Alexis and Berner, Julius},
+  journal={arXiv preprint arXiv:2301.13867},
+  year={2023}
+}
+
+@misc{evaluating,
+      title={Evaluating Language Models for Mathematics through Interactions}, 
+      author={Katherine M. Collins and Albert Q. Jiang and Simon Frieder and Lionel Wong and Miri Zilka and Umang Bhatt and Thomas Lukasiewicz and Yuhuai Wu and Joshua B. Tenenbaum and William Hart and Timothy Gowers and Wenda Li and Adrian Weller and Mateja Jamnik},
+      year={2023},
+      eprint={2306.01694},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{mathdial,
+    title = "{M}ath{D}ial: A Dialogue Tutoring Dataset with Rich Pedagogical Properties Grounded in Math Reasoning Problems",
+    author = "Macina, Jakub  and
+      Daheim, Nico  and
+      Chowdhury, Sankalan  and
+      Sinha, Tanmay  and
+      Kapur, Manu  and
+      Gurevych, Iryna  and
+      Sachan, Mrinmaya",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.372",
+    doi = "10.18653/v1/2023.findings-emnlp.372",
+    pages = "5602--5621",
+    abstract = "While automatic dialogue tutors hold great potential in making education personalized and more accessible, research on such systems has been hampered by a lack of sufficiently large and high-quality datasets. Collecting such datasets remains challenging, as recording tutoring sessions raises privacy concerns and crowdsourcing leads to insufficient data quality. To address this, we propose a framework to generate such dialogues by pairing human teachers with a Large Language Model (LLM) prompted to represent common student errors. We describe how we use this framework to collect MathDial, a dataset of 3k one-to-one teacher-student tutoring dialogues grounded in multi-step math reasoning problems. While models like GPT-3 are good problem solvers, they fail at tutoring because they generate factually incorrect feedback or are prone to revealing solutions to students too early. To overcome this, we let teachers provide learning opportunities to students by guiding them using various scaffolding questions according to a taxonomy of teacher moves. We demonstrate MathDial and its extensive annotations can be used to finetune models to be more effective tutors (and not just solvers). We confirm this by automatic and human evaluation, notably in an interactive setting that measures the trade-off between student solving success and telling solutions. The dataset is released publicly.",
+}
+
+@misc{gpt3,
+      title={Language Models are Few-Shot Learners}, 
+      author={Tom B. Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and Jared Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Sandhini Agarwal and Ariel Herbert-Voss and Gretchen Krueger and Tom Henighan and Rewon Child and Aditya Ramesh and Daniel M. Ziegler and Jeffrey Wu and Clemens Winter and Christopher Hesse and Mark Chen and Eric Sigler and Mateusz Litwin and Scott Gray and Benjamin Chess and Jack Clark and Christopher Berner and Sam McCandlish and Alec Radford and Ilya Sutskever and Dario Amodei},
+      year={2020},
+      eprint={2005.14165},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{gpt4,
+      title={GPT-4 Technical Report}, 
+      author={OpenAI},
+      year={2023},
+      eprint={2303.08774},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{foreducation,
+title = {ChatGPT for good? On opportunities and challenges of large language models for education},
+journal = {Learning and Individual Differences},
+volume = {103},
+pages = {102274},
+year = {2023},
+issn = {1041-6080},
+doi = {https://doi.org/10.1016/j.lindif.2023.102274},
+url = {https://www.sciencedirect.com/science/article/pii/S1041608023000195},
+author = {Enkelejda Kasneci and Kathrin Sessler and Stefan Küchemann and Maria Bannert and Daryna Dementieva and Frank Fischer and Urs Gasser and Georg Groh and Stephan Günnemann and Eyke Hüllermeier and Stephan Krusche and Gitta Kutyniok and Tilman Michaeli and Claudia Nerdel and Jürgen Pfeffer and Oleksandra Poquet and Michael Sailer and Albrecht Schmidt and Tina Seidel and Matthias Stadler and Jochen Weller and Jochen Kuhn and Gjergji Kasneci},
+keywords = {Large language models, Artificial intelligence, Education, Educational technologies},
+abstract = {Large language models represent a significant advancement in the field of AI. The underlying technology is key to further innovations and, despite critical views and even bans within communities and regions, large language models are here to stay. This commentary presents the potential benefits and challenges of educational applications of large language models, from student and teacher perspectives. We briefly discuss the current state of large language models and their applications. We then highlight how these models can be used to create educational content, improve student engagement and interaction, and personalize learning experiences. With regard to challenges, we argue that large language models in education require teachers and learners to develop sets of competencies and literacies necessary to both understand the technology as well as their limitations and unexpected brittleness of such systems. In addition, a clear strategy within educational systems and a clear pedagogical approach with a strong focus on critical thinking and strategies for fact checking are required to integrate and take full advantage of large language models in learning settings and teaching curricula. Other challenges such as the potential bias in the output, the need for continuous human oversight, and the potential for misuse are not unique to the application of AI in education. But we believe that, if handled sensibly, these challenges can offer insights and opportunities in education scenarios to acquaint students early on with potential societal biases, criticalities, and risks of AI applications. We conclude with recommendations for how to address these challenges and ensure that such models are used in a responsible and ethical manner in education.}
+}
+
+
+@misc{edubot,
+      title={Curriculum-Driven Edubot: A Framework for Developing Language Learning Chatbots Through Synthesizing Conversational Data}, 
+      author={Yu Li and Shang Qu and Jili Shen and Shangchao Min and Zhou Yu},
+      year={2023},
+      eprint={2309.16804},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{peskoff-stewart-2023-credible,
+    title = "Credible without Credit: Domain Experts Assess Generative Language Models",
+    author = "Peskoff, Denis  and
+      Stewart, Brandon",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-short.37",
+    doi = "10.18653/v1/2023.acl-short.37",
+    pages = "427--438",
+    abstract = "Language models have recently broken into the public consciousness with the release of the wildly popular ChatGPT. Commentators have argued that language models could replace search engines, make college essays obsolete, or even write academic research papers. All of these tasks rely on accuracy of specialized information which can be difficult to assess for non-experts. Using 10 domain experts across science and culture, we provide an initial assessment of the coherence, conciseness, accuracy, and sourcing of two language models across 100 expert-written questions. While we find the results are consistently cohesive and concise, we find that they are mixed in their accuracy. These results raise questions of the role language models should play in general-purpose and expert knowledge seeking.",
+}
+
+@article{textbooks1,
+  title={Textbooks Are All You Need},
+  author={Gunasekar, Suriya and Zhang, Yi and Aneja, Jyoti and Mendes, Caio C{\'e}sar Teodoro and Del Giorno, Allie and Gopi, Sivakanth and Javaheripi, Mojan and Kauffmann, Piero and de Rosa, Gustavo and Saarikivi, Olli and others},
+  journal={arXiv preprint arXiv:2306.11644},
+  year={2023}
+}
+
+@article{textbooks2,
+  title={Textbooks are all you need ii: phi-1.5 technical report},
+  author={Li, Yuanzhi and Bubeck, S{\'e}bastien and Eldan, Ronen and Del Giorno, Allie and Gunasekar, Suriya and Lee, Yin Tat},
+  journal={arXiv preprint arXiv:2309.05463},
+  year={2023}
+}
+
+@article{mistral,
+  title={Mistral 7B},
+  author={Jiang, Albert Q and Sablayrolles, Alexandre and Mensch, Arthur and Bamford, Chris and Chaplot, Devendra Singh and Casas, Diego de las and Bressand, Florian and Lengyel, Gianna and Lample, Guillaume and Saulnier, Lucile and others},
+  journal={arXiv preprint arXiv:2310.06825},
+  year={2023}
+}
+
+@misc{alpaca_eval,
+  author = {Xuechen Li and Tianyi Zhang and Yann Dubois and Rohan Taori and Ishaan Gulrajani and Carlos Guestrin and Percy Liang and Tatsunori B. Hashimoto },
+  title = {AlpacaEval: An Automatic Evaluator of Instruction-following Models},
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/tatsu-lab/alpaca_eval}}
+}
+
+@article{llmbar,
+  title={Evaluating Large Language Models at Evaluating Instruction Following},
+  author={Zeng, Zhiyuan and Yu, Jiatong and Gao, Tianyu and Meng, Yu and Goyal, Tanya and Chen, Danqi},
+  journal={arXiv preprint arXiv:2310.07641},
+  year={2023}
+}
+
+
+@article{rope,
+  title={Roformer: Enhanced transformer with rotary position embedding},
+  author={Su, Jianlin and Ahmed, Murtadha and Lu, Yu and Pan, Shengfeng and Bo, Wen and Liu, Yunfeng},
+  journal={Neurocomputing},
+  volume={568},
+  pages={127063},
+  year={2024},
+  publisher={Elsevier}
+}
+
+@article{minerva,
+  title={Solving quantitative reasoning problems with language models},
+  author={Lewkowycz, Aitor and Andreassen, Anders and Dohan, David and Dyer, Ethan and Michalewski, Henryk and Ramasesh, Vinay and Slone, Ambrose and Anil, Cem and Schlag, Imanol and Gutman-Solo, Theo and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={3843--3857},
+  year={2022}
+}
+
+@article{galactica,
+  title={Galactica: A large language model for science},
+  author={Taylor, Ross and Kardas, Marcin and Cucurull, Guillem and Scialom, Thomas and Hartshorn, Anthony and Saravia, Elvis and Poulton, Andrew and Kerkez, Viktor and Stojnic, Robert},
+  journal={arXiv preprint arXiv:2211.09085},
+  year={2022}
+}
+
+@article{orca,
+  title={Orca: Progressive learning from complex explanation traces of gpt-4},
+  author={Mukherjee, Subhabrata and Mitra, Arindam and Jawahar, Ganesh and Agarwal, Sahaj and Palangi, Hamid and Awadallah, Ahmed},
+  journal={arXiv preprint arXiv:2306.02707},
+  year={2023}
+}
+
+@inproceedings{
+  wildchat,
+  title={(InThe)WildChat: 570K Chat{GPT} Interaction Logs In The Wild},
+  author={Zhao, Wenting and Ren, Xiang and Hessel, Jack and Cardie, Claire and Choi, Yejin and Deng, Yuntian},
+  booktitle={The Twelfth International Conference on Learning Representations},
+  year={2024},
+  url={https://openreview.net/forum?id=Bl8u7ZRlbM}
+}
+
+@misc{openorca,
+  title = {OpenOrca: An Open Dataset of GPT Augmented FLAN Reasoning Traces},
+  author = {Wing Lian and Bleys Goodson and Eugene Pentland and Austin Cook and Chanvichet Vong and "Teknium"},
+  year = {2023},
+  publisher = {HuggingFace},
+  journal = {HuggingFace repository},
+  howpublished = {\url{https://https://huggingface.co/Open-Orca/OpenOrca}},
+}
+
+@article{judgingllm,
+  title={Judging LLM-as-a-judge with MT-Bench and Chatbot Arena},
+  author={Lianmin Zheng and Wei-Lin Chiang and Ying Sheng and Siyuan Zhuang and Zhanghao Wu and Yonghao Zhuang and Zi Lin and Zhuohan Li and Dacheng Li and Eric P. Xing and Haotong Zhang and Joseph Gonzalez and Ion Stoica},
+  journal={ArXiv},
+  year={2023},
+  volume={abs/2306.05685},
+  url={https://api.semanticscholar.org/CorpusID:259129398}
+}
+
+
+
+@misc{tulu,
+      title={Camels in a Changing Climate: Enhancing LM Adaptation with Tulu 2}, 
+      author={Hamish Ivison and Yizhong Wang and Valentina Pyatkin and Nathan Lambert and Matthew Peters and Pradeep Dasigi and Joel Jang and David Wadden and Noah A. Smith and Iz Beltagy and Hannaneh Hajishirzi},
+      year={2023},
+      eprint={2311.10702},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@misc{llamapro,
+      title={LLaMA Pro: Progressive LLaMA with Block Expansion}, 
+      author={Chengyue Wu and Yukang Gan and Yixiao Ge and Zeyu Lu and Jiahao Wang and Ye Feng and Ping Luo and Ying Shan},
+      year={2024},
+      eprint={2401.02415},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@misc{vicuna,
+    title = {Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90\%* ChatGPT Quality},
+    url = {https://lmsys.org/blog/2023-03-30-vicuna/},
+    author = {Chiang, Wei-Lin and Li, Zhuohan and Lin, Zi and Sheng, Ying and Wu, Zhanghao and Zhang, Hao and Zheng, Lianmin and Zhuang, Siyuan and Zhuang, Yonghao and Gonzalez, Joseph E. and Stoica, Ion and Xing, Eric P.},
+    month = {March},
+    year = {2023}
+}
+
+
+
+@inproceedings{sycophancy,
+    title = "Discovering Language Model Behaviors with Model-Written Evaluations",
+    author = "Perez, Ethan  and
+      Ringer, Sam  and
+      Lukosiute, Kamile  and
+      Nguyen, Karina  and
+      Chen, Edwin  and
+      Heiner, Scott  and
+      Pettit, Craig  and
+      Olsson, Catherine  and
+      Kundu, Sandipan  and
+      Kadavath, Saurav  and
+      Jones, Andy  and
+      Chen, Anna  and
+      Mann, Benjamin  and
+      Israel, Brian  and
+      Seethor, Bryan  and
+      McKinnon, Cameron  and
+      Olah, Christopher  and
+      Yan, Da  and
+      Amodei, Daniela  and
+      Amodei, Dario  and
+      Drain, Dawn  and
+      Li, Dustin  and
+      Tran-Johnson, Eli  and
+      Khundadze, Guro  and
+      Kernion, Jackson  and
+      Landis, James  and
+      Kerr, Jamie  and
+      Mueller, Jared  and
+      Hyun, Jeeyoon  and
+      Landau, Joshua  and
+      Ndousse, Kamal  and
+      Goldberg, Landon  and
+      Lovitt, Liane  and
+      Lucas, Martin  and
+      Sellitto, Michael  and
+      Zhang, Miranda  and
+      Kingsland, Neerav  and
+      Elhage, Nelson  and
+      Joseph, Nicholas  and
+      Mercado, Noemi  and
+      DasSarma, Nova  and
+      Rausch, Oliver  and
+      Larson, Robin  and
+      McCandlish, Sam  and
+      Johnston, Scott  and
+      Kravec, Shauna  and
+      El Showk, Sheer  and
+      Lanham, Tamera  and
+      Telleen-Lawton, Timothy  and
+      Brown, Tom  and
+      Henighan, Tom  and
+      Hume, Tristan  and
+      Bai, Yuntao  and
+      Hatfield-Dodds, Zac  and
+      Clark, Jack  and
+      Bowman, Samuel R.  and
+      Askell, Amanda  and
+      Grosse, Roger  and
+      Hernandez, Danny  and
+      Ganguli, Deep  and
+      Hubinger, Evan  and
+      Schiefer, Nicholas  and
+      Kaplan, Jared",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.847",
+    doi = "10.18653/v1/2023.findings-acl.847",
+    pages = "13387--13434",
+    abstract = "As language models (LMs) scale, they develop many novel behaviors, good and bad, exacerbating the need to evaluate how they behave. Prior work creates evaluations with crowdwork (which is time-consuming and expensive) or existing data sources (which are not always available). Here, we automatically generate evaluations with LMs. We explore approaches with varying amounts of human effort, from instructing LMs to write yes/no questions to making complex Winogender schemas with multiple stages of LM-based generation and filtering. Crowdworkers rate the examples as highly relevant and agree with 90-100{\%} of labels, sometimes more so than corresponding human-written datasets. We generate 154 datasets and discover new cases of inverse scaling where LMs get worse with size. Larger LMs repeat back a dialog user{'}s preferred answer ({``}sycophancy{''}) and express greater desire to pursue concerning goals like resource acquisition and goal preservation. We also find some of the first examples of inverse scaling in RL from Human Feedback (RLHF), where more RLHF makes LMs worse. For example, RLHF makes LMs express stronger political views (on gun rights and immigration) and a greater desire to avoid shut down. Overall, LM-written evaluations are high-quality and let us quickly discover many novel LM behaviors.",
+}
+
+
+
+@misc{evalharness,
+  author       = {Gao, Leo and Tow, Jonathan and Abbasi, Baber and Biderman, Stella and Black, Sid and DiPofi, Anthony and Foster, Charles and Golding, Laurence and Hsu, Jeffrey and Le Noac'h, Alain and Li, Haonan and McDonell, Kyle and Muennighoff, Niklas and Ociepa, Chris and Phang, Jason and Reynolds, Laria and Schoelkopf, Hailey and Skowron, Aviya and Sutawika, Lintang and Tang, Eric and Thite, Anish and Wang, Ben and Wang, Kevin and Zou, Andy},
+  title        = {A framework for few-shot language model evaluation},
+  month        = 12,
+  year         = 2023,
+  publisher    = {Zenodo},
+  version      = {v0.4.0},
+  doi          = {10.5281/zenodo.10256836},
+  url          = {https://zenodo.org/records/10256836}
+}
+
+
+@inproceedings{adam,
+  author       = {Diederik P. Kingma and
+                  Jimmy Ba},
+  editor       = {Yoshua Bengio and
+                  Yann LeCun},
+  title        = {Adam: {A} Method for Stochastic Optimization},
+  booktitle    = {3rd International Conference on Learning Representations, {ICLR} 2015,
+                  San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings},
+  year         = {2015},
+  url          = {http://arxiv.org/abs/1412.6980},
+  timestamp    = {Thu, 25 Jul 2019 14:25:37 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/KingmaB14.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+@article{mbpp,
+  title={Program synthesis with large language models},
+  author={Austin, Jacob and Odena, Augustus and Nye, Maxwell and Bosma, Maarten and Michalewski, Henryk and Dohan, David and Jiang, Ellen and Cai, Carrie and Terry, Michael and Le, Quoc and others},
+  journal={arXiv preprint arXiv:2108.07732},
+  year={2021}
+}
+
+@article{humaneval,
+  title={Evaluating large language models trained on code},
+  author={Chen, Mark and Tworek, Jerry and Jun, Heewoo and Yuan, Qiming and Pinto, Henrique Ponde de Oliveira and Kaplan, Jared and Edwards, Harri and Burda, Yuri and Joseph, Nicholas and Brockman, Greg and others},
+  journal={arXiv preprint arXiv:2107.03374},
+  year={2021}
+}
+
+
+@inproceedings{sciq,
+    title = "Crowdsourcing Multiple Choice Science Questions",
+    author = "Welbl, Johannes  and
+      Liu, Nelson F.  and
+      Gardner, Matt",
+    editor = "Derczynski, Leon  and
+      Xu, Wei  and
+      Ritter, Alan  and
+      Baldwin, Tim",
+    booktitle = "Proceedings of the 3rd Workshop on Noisy User-generated Text",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W17-4413",
+    doi = "10.18653/v1/W17-4413",
+    pages = "94--106",
+    abstract = "We present a novel method for obtaining high-quality, domain-targeted multiple choice questions from crowd workers. Generating these questions can be difficult without trading away originality, relevance or diversity in the answer options. Our method addresses these problems by leveraging a large corpus of domain-specific text and a small set of existing questions. It produces model suggestions for document selection and answer distractor choice which aid the human question generation process. With this method we have assembled SciQ, a dataset of 13.7K multiple choice science exam questions. We demonstrate that the method produces in-domain questions by providing an analysis of this new dataset and by showing that humans cannot distinguish the crowdsourced questions from original questions. When using SciQ as additional training data to existing questions, we observe accuracy improvements on real science exams.",
+}
+
+
+@inproceedings{piqa,
+  title={Piqa: Reasoning about physical commonsense in natural language},
+  author={Bisk, Yonatan and Zellers, Rowan and Gao, Jianfeng and Choi, Yejin and others},
+  booktitle={Proceedings of the AAAI conference on artificial intelligence},
+  volume={34},
+  number={05},
+  pages={7432--7439},
+  year={2020}
+}
+
+@article{winogrande,
+author = {Sakaguchi, Keisuke and Bras, Ronan Le and Bhagavatula, Chandra and Choi, Yejin}, title = {WinoGrande: an adversarial winograd schema challenge at scale}, year = {2021}, issue_date = {September 2021}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, volume = {64}, number = {9}, issn = {0001-0782}, url = {https://doi.org/10.1145/3474381}, doi = {10.1145/3474381}, abstract = {Commonsense reasoning remains a major challenge in AI, and yet, recent progresses on benchmarks may seem to suggest otherwise. In particular, the recent neural language models have reported above 90\% accuracy on the Winograd Schema Challenge (WSC), a commonsense benchmark originally designed to be unsolvable for statistical models that rely simply on word associations. This raises an important question---whether these models have truly acquired robust commonsense capabilities or they rely on spurious biases in the dataset that lead to an overestimation of the true capabilities of machine commonsense.To investigate this question, we introduce WinoGrande, a large-scale dataset of 44k problems, inspired by the original WSC, but adjusted to improve both the scale and the hardness of the dataset. The key steps of the dataset construction consist of (1) large-scale crowdsourcing, followed by (2) systematic bias reduction using a novel AFLITE algorithm that generalizes human-detectable word associations to machine-detectable embedding associations. Our experiments demonstrate that state-of-the-art models achieve considerably lower accuracy (59.4\%-79.1\%) on WINOGRANDE compared to humans (94\%), confirming that the high performance on the original WSC was inflated by spurious biases in the dataset.Furthermore, we report new state-of-the-art results on five related benchmarks with emphasis on their dual implications. On the one hand, they demonstrate the effectiveness of WINOGRANDE when used as a resource for transfer learning. On the other hand, the high performance on all these benchmarks suggests the extent to which spurious biases are prevalent in all such datasets, which motivates further research on algorithmic bias reduction.}, journal = {Commun. ACM}, month = {aug}, pages = {99–106}, numpages = {8} }
+
+@article{arc,
+  title={Think you have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge},
+  author={Peter Clark and Isaac Cowhey and Oren Etzioni and Tushar Khot and Ashish Sabharwal and Carissa Schoenick and Oyvind Tafjord},
+  journal={ArXiv},
+  year={2018},
+  volume={abs/1803.05457},
+  url={https://api.semanticscholar.org/CorpusID:3922816}
+}
+
+
+
+@inproceedings{hellaswag,
+    title = "{H}ella{S}wag: Can a Machine Really Finish Your Sentence?",
+    author = "Zellers, Rowan  and
+      Holtzman, Ari  and
+      Bisk, Yonatan  and
+      Farhadi, Ali  and
+      Choi, Yejin",
+    editor = "Korhonen, Anna  and
+      Traum, David  and
+      M{\`a}rquez, Llu{\'\i}s",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1472",
+    doi = "10.18653/v1/P19-1472",
+    pages = "4791--4800",
+    abstract = "Recent work by Zellers et al. (2018) introduced a new task of commonsense natural language inference: given an event description such as {``}A woman sits at a piano,{''} a machine must select the most likely followup: {``}She sets her fingers on the keys.{''} With the introduction of BERT, near human-level performance was reached. Does this mean that machines can perform human level commonsense inference? In this paper, we show that commonsense inference still proves difficult for even state-of-the-art models, by presenting HellaSwag, a new challenge dataset. Though its questions are trivial for humans ({\textgreater}95{\%} accuracy), state-of-the-art models struggle ({\textless}48{\%}). We achieve this via Adversarial Filtering (AF), a data collection paradigm wherein a series of discriminators iteratively select an adversarial set of machine-generated wrong answers. AF proves to be surprisingly robust. The key insight is to scale up the length and complexity of the dataset examples towards a critical {`}Goldilocks{'} zone wherein generated text is ridiculous to humans, yet often misclassified by state-of-the-art models. Our construction of HellaSwag, and its resulting difficulty, sheds light on the inner workings of deep pretrained models. More broadly, it suggests a new path forward for NLP research, in which benchmarks co-evolve with the evolving state-of-the-art in an adversarial way, so as to present ever-harder challenges.",
+}
+
+
+@inproceedings{logiqa,
+author = {Liu, Jian and Cui, Leyang and Liu, Hanmeng and Huang, Dandan and Wang, Yile and Zhang, Yue},
+title = {LogiQA: a challenge dataset for machine reading comprehension with logical reasoning},
+year = {2021},
+isbn = {9780999241165},
+abstract = {Machine reading is a fundamental task for testing the capability of natural language understanding, which is closely related to human cognition in many aspects. With the rising of deep learning techniques, algorithmic models rival human performances on simple QA, and thus increasingly challenging machine reading datasets have been proposed. Though various challenges such as evidence integration and commonsense knowledge have been integrated, one of the fundamental capabilities in human reading, namely logical reasoning, is not fully investigated. We build a comprehensive dataset, named LogiQA, which is sourced from expert-written questions for testing human Logical reasoning. It consists of 8,678 QA instances, covering multiple types of deductive reasoning. Results show that state-of-the-art neural models perform by far worse than human ceiling. Our dataset can also serve as a benchmark for reinvestigating logical AI under the deep learning NLP setting.},
+booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on Artificial Intelligence},
+articleno = {501},
+numpages = {7},
+location = {Yokohama, Yokohama, Japan},
+series = {IJCAI'20}
+}
+
+
+
+@inproceedings{boolq,
+    title = "{B}ool{Q}: Exploring the Surprising Difficulty of Natural Yes/No Questions",
+    author = "Clark, Christopher  and
+      Lee, Kenton  and
+      Chang, Ming-Wei  and
+      Kwiatkowski, Tom  and
+      Collins, Michael  and
+      Toutanova, Kristina",
+    editor = "Burstein, Jill  and
+      Doran, Christy  and
+      Solorio, Thamar",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1300",
+    doi = "10.18653/v1/N19-1300",
+    pages = "2924--2936",
+    abstract = "In this paper we study yes/no questions that are naturally occurring {---} meaning that they are generated in unprompted and unconstrained settings. We build a reading comprehension dataset, BoolQ, of such questions, and show that they are unexpectedly challenging. They often query for complex, non-factoid information, and require difficult entailment-like inference to solve. We also explore the effectiveness of a range of transfer learning baselines. We find that transferring from entailment data is more effective than transferring from paraphrase or extractive QA data, and that it, surprisingly, continues to be very beneficial even when starting from massive pre-trained language models such as BERT. Our best method trains BERT on MultiNLI and then re-trains it on our train set. It achieves 80.4{\%} accuracy compared to 90{\%} accuracy of human annotators (and 62{\%} majority-baseline), leaving a significant gap for future work.",
+}
+
+@inproceedings{lambada,
+    title = "The {LAMBADA} dataset: Word prediction requiring a broad discourse context",
+    author = "Paperno, Denis  and
+      Kruszewski, Germ{\'a}n  and
+      Lazaridou, Angeliki  and
+      Pham, Ngoc Quan  and
+      Bernardi, Raffaella  and
+      Pezzelle, Sandro  and
+      Baroni, Marco  and
+      Boleda, Gemma  and
+      Fern{\'a}ndez, Raquel",
+    editor = "Erk, Katrin  and
+      Smith, Noah A.",
+    booktitle = "Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2016",
+    address = "Berlin, Germany",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P16-1144",
+    doi = "10.18653/v1/P16-1144",
+    pages = "1525--1534",
+}
+
+
+@article{natural-questions,
+    title = "Natural Questions: A Benchmark for Question Answering Research",
+    author = "Kwiatkowski, Tom  and
+      Palomaki, Jennimaria  and
+      Redfield, Olivia  and
+      Collins, Michael  and
+      Parikh, Ankur  and
+      Alberti, Chris  and
+      Epstein, Danielle  and
+      Polosukhin, Illia  and
+      Devlin, Jacob  and
+      Lee, Kenton  and
+      Toutanova, Kristina  and
+      Jones, Llion  and
+      Kelcey, Matthew  and
+      Chang, Ming-Wei  and
+      Dai, Andrew M.  and
+      Uszkoreit, Jakob  and
+      Le, Quoc  and
+      Petrov, Slav",
+    editor = "Lee, Lillian  and
+      Johnson, Mark  and
+      Roark, Brian  and
+      Nenkova, Ani",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "7",
+    year = "2019",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/Q19-1026",
+    doi = "10.1162/tacl_a_00276",
+    pages = "452--466",
+    abstract = "We present the Natural Questions corpus, a question answering data set. Questions consist of real anonymized, aggregated queries issued to the Google search engine. An annotator is presented with a question along with a Wikipedia page from the top 5 search results, and annotates a long answer (typically a paragraph) and a short answer (one or more entities) if present on the page, or marks null if no long/short answer is present. The public release consists of 307,373 training examples with single annotations; 7,830 examples with 5-way annotations for development data; and a further 7,842 examples with 5-way annotated sequestered as test data. We present experiments validating quality of the data. We also describe analysis of 25-way annotations on 302 examples, giving insights into human variability on the annotation task. We introduce robust metrics for the purposes of evaluating question answering systems; demonstrate high human upper bounds on these metrics; and establish baseline results using competitive methods drawn from related literature.",
+}
+
+
+
+@inproceedings{llmhumaneval,
+    title = "Can Large Language Models Be an Alternative to Human Evaluations?",
+    author = "Chiang, Cheng-Han  and
+      Lee, Hung-yi",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.870",
+    doi = "10.18653/v1/2023.acl-long.870",
+    pages = "15607--15631",
+    abstract = "Human evaluation is indispensable and inevitable for assessing the quality of texts generated by machine learning models or written by humans. However, human evaluation is very difficult to reproduce and its quality is notoriously unstable, hindering fair comparisons among different natural language processing (NLP) models and algorithms. Recently, large language models (LLMs) have demonstrated exceptional performance on unseen tasks when only the task instructions are provided. In this paper, we explore if such an ability of the LLMs can be used as an alternative to human evaluation. We present the LLMs with the exact same instructions, samples to be evaluated, and questions used to conduct human evaluation, and then ask the LLMs to generate responses to those questions; we dub this LLM evaluation. We use human evaluation and LLM evaluation to evaluate the texts in two NLP tasks: open-ended story generation and adversarial attacks. We show that the result of LLM evaluation is consistent with the results obtained by expert human evaluation: the texts rated higher by human experts are also rated higher by the LLMs.We also find that the results of LLM evaluation are stable over different formatting of the task instructions and the sampling algorithm used to generate the answer. We are the first to show the potential of using LLMs to assess the quality of texts and discuss the limitations and ethical considerations of LLM evaluation.",
+}
+
+@misc{chen2023exploring,
+      title={Exploring the Use of Large Language Models for Reference-Free Text Quality Evaluation: An Empirical Study}, 
+      author={Yi Chen and Rui Wang and Haiyun Jiang and Shuming Shi and Ruifeng Xu},
+      year={2023},
+      eprint={2304.00723},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{flashattn,
+  title={Flash{A}ttention: Fast and Memory-Efficient Exact Attention with {IO}-Awareness},
+  author={Dao, Tri and Fu, Daniel Y. and Ermon, Stefano and Rudra, Atri and R{\'e}, Christopher},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2022}
+}
+@article{flashattn2,
+  title={Flash{A}ttention-2: Faster Attention with Better Parallelism and Work Partitioning},
+  author={Dao, Tri},
+  year={2023}
+}
+
+@article{vaswani2017attention,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  journal={Advances in neural information processing systems},
+  volume={30},
+  year={2017}
+}
+
+
+@article{researchagents,
+  title={Benchmarking large language models as ai research agents},
+  author={Huang, Qian and Vora, Jian and Liang, Percy and Leskovec, Jure},
+  journal={arXiv preprint arXiv:2310.03302},
+  year={2023}
+}
+
+
+@InProceedings{edqa_retrieval,
+author="Wu, Yongchao
+and Henriksson, Aron
+and Duneld, Martin
+and Nouri, Jalal",
+editor="Viberg, Olga
+and Jivet, Ioana
+and Mu{\~{n}}oz-Merino, Pedro J.
+and Perifanou, Maria
+and Papathoma, Tina",
+title="Towards Improving the Reliability and Transparency of ChatGPT for Educational Question Answering",
+booktitle="Responsive and Sustainable Educational Futures",
+year="2023",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="475--488",
+abstract="Large language models (LLMs), such as ChatGPT, have shown remarkable performance on various natural language processing (NLP) tasks, including educational question answering (EQA). However, LLMs generate text entirely based on knowledge obtained during pre-training, which means they struggle with recent information or domain-specific knowledge bases. Moreover, only providing answers to questions posed to LLMs without any grounding materials makes it difficult for students to judge their validity. We therefore propose a method for integrating information retrieval systems with LLMs when developing EQA systems, which in addition to improving EQA performance grounds the answers in the educational context. Our experiments show that the proposed system outperforms vanilla ChatGPT with a significant margin of 110.9{\%}, 67.8{\%}, 43.3{\%}, and 9.2{\%} on BLEU, ROUGE, METEOR and BERTScore. In addition, we argue that the use of the retrieved educational context enhances the transparency and reliability of the EQA process, making it easier to determine the correctness of the answers.",
+isbn="978-3-031-42682-7"
+}
+
+@article{scibench,
+  title={Scibench: Evaluating college-level scientific problem-solving abilities of large language models},
+  author={Wang, Xiaoxuan and Hu, Ziniu and Lu, Pan and Zhu, Yanqiao and Zhang, Jieyu and Subramaniam, Satyen and Loomba, Arjun R and Zhang, Shichang and Sun, Yizhou and Wang, Wei},
+  journal={arXiv preprint arXiv:2307.10635},
+  year={2023}
+}
+
+@misc{scieval,
+      title={SciEval: A Multi-Level Large Language Model Evaluation Benchmark for Scientific Research}, 
+      author={Liangtai Sun and Yang Han and Zihan Zhao and Da Ma and Zhennan Shen and Baocai Chen and Lu Chen and Kai Yu},
+      year={2023},
+      eprint={2308.13149},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}

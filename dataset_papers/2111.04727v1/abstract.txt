@@ -1,0 +1,13 @@
+Model extraction attacks have renewed interest in the classic problem of
+learning neural networks from queries. In this work we give the first
+polynomial-time algorithm for learning arbitrary one hidden layer neural
+networks activations provided black-box access to the network. Formally, we
+show that if $F$ is an arbitrary one hidden layer neural network with ReLU
+activations, there is an algorithm with query complexity and running time that
+is polynomial in all parameters that outputs a network $F'$ achieving low
+square loss relative to $F$ with respect to the Gaussian measure. While a
+number of works in the security literature have proposed and empirically
+demonstrated the effectiveness of certain algorithms for this problem, ours is
+the first with fully polynomial-time guarantees of efficiency even for
+worst-case networks (in particular our algorithm succeeds in the
+overparameterized setting).

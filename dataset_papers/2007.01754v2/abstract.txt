@@ -1,0 +1,13 @@
+Learning a causal directed acyclic graph from data is a challenging task that
+involves solving a combinatorial problem for which the solution is not always
+identifiable. A new line of work reformulates this problem as a continuous
+constrained optimization one, which is solved via the augmented Lagrangian
+method. However, most methods based on this idea do not make use of
+interventional data, which can significantly alleviate identifiability issues.
+This work constitutes a new step in this direction by proposing a
+theoretically-grounded method based on neural networks that can leverage
+interventional data. We illustrate the flexibility of the
+continuous-constrained framework by taking advantage of expressive neural
+architectures such as normalizing flows. We show that our approach compares
+favorably to the state of the art in a variety of settings, including perfect
+and imperfect interventions for which the targeted nodes may even be unknown.

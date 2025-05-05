@@ -1,0 +1,292 @@
+% Use this file for citations not found in the ACL Anthology (contained in "anthology.bib").
+
+
+@inproceedings{pabee,
+ author = {Zhou, Wangchunshu and Xu, Canwen and Ge, Tao and McAuley, Julian and Xu, Ke and Wei, Furu},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {18330--18341},
+ publisher = {Curran Associates, Inc.},
+ title = {BERT Loses Patience: Fast and Robust Inference with Early Exit},
+ url = {https://proceedings.neurips.cc/paper/2020/file/d4dd111a4fd973394238aca5c05bebe3-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}
+
+@inproceedings{
+pondernet,
+title={PonderNet: Learning to Ponder},
+author={Andrea Banino and Jan Balaguer and Charles Blundell},
+booktitle={8th ICML Workshop on Automated Machine Learning (AutoML) },
+year={2021},
+url={https://openreview.net/forum?id=1EuxRTe0WN}
+}
+
+@inproceedings{headprune,
+    title = "Analyzing Multi-Head Self-Attention: Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned",
+    author = "Voita, Elena  and
+      Talbot, David  and
+      Moiseev, Fedor  and
+      Sennrich, Rico  and
+      Titov, Ivan",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P19-1580",
+    pages = "5797--5808",
+}
+
+@article{layerdrop,
+  title={Reducing Transformer Depth on Demand with Structured Dropout},
+  author={Fan, Angela and Grave, Edouard and Joulin, Armand},
+  journal={arXiv preprint arXiv:1909.11556},
+  year={2019}
+}
+
+@inproceedings{deebert,
+    title = "{D}ee{BERT}: Dynamic Early Exiting for Accelerating {BERT} Inference",
+    author = "Xin, Ji  and
+      Tang, Raphael  and
+      Lee, Jaejun  and
+      Yu, Yaoliang  and
+      Lin, Jimmy",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.acl-main.204",
+    pages = "2246--2251",
+}
+
+@inproceedings{leebert,
+    title = "{L}ee{BERT}: Learned Early Exit for {BERT} with cross-level optimization",
+    author = "Zhu, Wei",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.231",
+    doi = "10.18653/v1/2021.acl-long.231",
+    pages = "2968--2980",
+    abstract = "Pre-trained language models like BERT are performant in a wide range of natural language tasks. However, they are resource exhaustive and computationally expensive for industrial scenarios. Thus, early exits are adopted at each layer of BERT to perform adaptive computation by predicting easier samples with the first few layers to speed up the inference. In this work, to improve efficiency without performance drop, we propose a novel training scheme called Learned Early Exit for BERT (LeeBERT). First, we ask each exit to learn from each other, rather than learning only from the last layer. Second, the weights of different loss terms are learned, thus balancing off different objectives. We formulate the optimization of LeeBERT as a bi-level optimization problem, and we propose a novel cross-level optimization (CLO) algorithm to improve the optimization results. Experiments on the GLUE benchmark show that our proposed methods improve the performance of the state-of-the-art (SOTA) early exit methods for pre-trained models.",
+}
+
+@inproceedings{branchynet,
+	author        = "Surat Teerapittayanon and Bradley McDanel and H. T. Kung",
+	booktitle     = "{Proceedings of the 23rd International Conference on Pattern Recognition}",
+	doi           = "10.1109/ICPR.2016.7900006",
+	isbn          = "978-1-5090-4847-2",
+	pages         = "2464--2469",
+	publisher     = "{IEEE}",
+	title         = "{BranchyNet: Fast inference via early exiting from deep neural networks}",
+	year          = 2016,
+}
+
+@inproceedings{fastbert,
+  author    = {Weijie Liu and
+               Peng Zhou and
+               Zhiruo Wang and
+               Zhe Zhao and
+               Haotang Deng and
+               Qi Ju},
+  editor    = {Dan Jurafsky and
+               Joyce Chai and
+               Natalie Schluter and
+               Joel R. Tetreault},
+  title     = {FastBERT: a Self-distilling {BERT} with Adaptive Inference Time},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational
+               Linguistics, {ACL} 2020, Online, July 5-10, 2020},
+  pages     = {6035--6044},
+  publisher = {Association for Computational Linguistics},
+  year      = {2020},
+  url       = {https://doi.org/10.18653/v1/2020.acl-main.537},
+  doi       = {10.18653/v1/2020.acl-main.537},
+  timestamp = {Fri, 06 Aug 2021 00:41:01 +0200},
+  biburl    = {https://dblp.org/rec/conf/acl/LiuZWZDJ20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{glue,
+  added-at = {2018-06-08T09:57:35.000+0200},
+  author = {Wang, Alex and Singh, Amapreet and Michael, Julian and Hill, Felix and Levy, Omer and Bowman, Samuel R.},
+  biburl = {https://www.bibsonomy.org/bibtex/218baed31ae7b31a210bcac8ea1f78d3b/dallmann},
+  description = {[1804.07461] GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding},
+  interhash = {dad3beefc98da499511538ec9c95e4af},
+  intrahash = {18baed31ae7b31a210bcac8ea1f78d3b},
+  keywords = {deep_learning evaluation multitask},
+  note = {cite arxiv:1804.07461Comment: https://gluebenchmark.com/},
+  timestamp = {2018-06-08T09:57:35.000+0200},
+  title = {GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language
+  Understanding},
+  url = {http://arxiv.org/abs/1804.07461},
+  year = 2018
+}
+
+@inproceedings{
+albert,
+title={ALBERT: A Lite BERT for Self-supervised Learning of Language Representations},
+author={Zhenzhong Lan and Mingda Chen and Sebastian Goodman and Kevin Gimpel and Piyush Sharma and Radu Soricut},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=H1eA7AEtvS}
+}
+
+@inproceedings{vae,
+  author = {Kingma, Diederik P. and Welling, Max},
+  biburl = {https://www.bibsonomy.org/bibtex/242e5be6faa01cba2587f4907ac99dce8/annakrause},
+  booktitle = {2nd International Conference on Learning Representations, {ICLR} 2014, Banff, AB, Canada, April 14-16, 2014, Conference Track Proceedings},
+  eprint = {http://arxiv.org/abs/1312.6114v10},
+  eprintclass = {stat.ML},
+  eprinttype = {arXiv},
+  file = {:http\://arxiv.org/pdf/1312.6114v10:PDF;:KingmaWelling_Auto-EncodingVariationalBayes.pdf:PDF},
+  interhash = {a626a9d77a123c52405a08da983203cb},
+  intrahash = {42e5be6faa01cba2587f4907ac99dce8},
+  keywords = {cs.LG stat.ML vae},
+  timestamp = {2021-02-01T17:13:18.000+0100},
+  title = {{Auto-Encoding Variational Bayes}},
+  year = 2014
+}
+
+@inproceedings{transformer,
+  added-at = {2019-01-14T18:39:11.000+0100},
+  author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  biburl = {https://www.bibsonomy.org/bibtex/2a08c93d224dfcfb83550246c3d6a178f/stefan.ernst},
+  booktitle = {Advances in Neural Information Processing Systems},
+  description = {Aktuelleres Paper zur Verwendung von Attention für die Neural Machine Translation},
+  interhash = {c9bf08cbcb15680c807e12a01dd8c929},
+  intrahash = {a08c93d224dfcfb83550246c3d6a178f},
+  keywords = {final thema:attention},
+  pages = {5998--6008},
+  timestamp = {2019-01-14T18:39:11.000+0100},
+  title = {Attention is all you need},
+  year = 2017
+}
+
+@inproceedings{berxit,
+    title = "{BER}xi{T}: Early Exiting for {BERT} with Better Fine-Tuning and Extension to Regression",
+    author = "Xin, Ji  and
+      Tang, Raphael  and
+      Yu, Yaoliang  and
+      Lin, Jimmy",
+    booktitle = "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
+    month = apr,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.eacl-main.8",
+    doi = "10.18653/v1/2021.eacl-main.8",
+    pages = "91--104",
+    abstract = "The slow speed of BERT has motivated much research on accelerating its inference, and the early exiting idea has been proposed to make trade-offs between model quality and efficiency. This paper aims to address two weaknesses of previous work: (1) existing fine-tuning strategies for early exiting models fail to take full advantage of BERT; (2) methods to make exiting decisions are limited to classification tasks. We propose a more advanced fine-tuning strategy and a learning-to-exit module that extends early exiting to tasks other than classification. Experiments demonstrate improved early exiting for BERT, with better trade-offs obtained by the proposed fine-tuning strategy, successful application to regression tasks, and the possibility to combine it with other acceleration methods. Source code can be found at \url{https://github.com/castorini/berxit}.",
+}
+
+@inproceedings{global,
+    title = "A Global Past-Future Early Exit Method for Accelerating Inference of Pre-trained Language Models",
+    author = "Liao, Kaiyuan  and
+      Zhang, Yi  and
+      Ren, Xuancheng  and
+      Su, Qi  and
+      Sun, Xu  and
+      He, Bin",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.162",
+    doi = "10.18653/v1/2021.naacl-main.162",
+    pages = "2013--2023",
+    abstract = "Early exit mechanism aims to accelerate the inference speed of large-scale pre-trained language models. The essential idea is to exit early without passing through all the inference layers at the inference stage. To make accurate predictions for downstream tasks, the hierarchical linguistic information embedded in all layers should be jointly considered. However, much of the research up to now has been limited to use local representations of the exit layer. Such treatment inevitably loses information of the unused past layers as well as the high-level features embedded in future layers, leading to sub-optimal performance. To address this issue, we propose a novel Past-Future method to make comprehensive predictions from a global perspective. We first take into consideration all the linguistic information embedded in the past layers and then take a further step to engage the future information which is originally inaccessible for predictions. Extensive experiments demonstrate that our method outperforms previous early exit methods by a large margin, yielding better and robust performance.",
+}
+
+@inproceedings{adam,
+  author    = {Diederik P. Kingma and
+               Jimmy Ba},
+  editor    = {Yoshua Bengio and
+               Yann LeCun},
+  title     = {Adam: {A} Method for Stochastic Optimization},
+  booktitle = {3rd International Conference on Learning Representations, {ICLR} 2015,
+               San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1412.6980},
+  timestamp = {Thu, 25 Jul 2019 14:25:37 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/KingmaB14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{dropout,
+  author  = {Nitish Srivastava and Geoffrey Hinton and Alex Krizhevsky and Ilya Sutskever and Ruslan Salakhutdinov},
+  title   = {Dropout: A Simple Way to Prevent Neural Networks from Overfitting},
+  journal = {Journal of Machine Learning Research},
+  year    = {2014},
+  volume  = {15},
+  number  = {56},
+  pages   = {1929-1958},
+  url     = {http://jmlr.org/papers/v15/srivastava14a.html}
+}
+
+@inproceedings{bert,
+    title = "{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    author = "Devlin, Jacob  and
+      Chang, Ming-Wei  and
+      Lee, Kenton  and
+      Toutanova, Kristina",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1423",
+    doi = "10.18653/v1/N19-1423",
+    pages = "4171--4186",
+    abstract = "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5 (7.7 point absolute improvement), MultiNLI accuracy to 86.7{\%} (4.6{\%} absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).",
+}
+
+@misc{roberta,
+  abstract = {Language model pretraining has led to significant performance gains but
+careful comparison between different approaches is challenging. Training is
+computationally expensive, often done on private datasets of different sizes,
+and, as we will show, hyperparameter choices have significant impact on the
+final results. We present a replication study of BERT pretraining (Devlin et
+al., 2019) that carefully measures the impact of many key hyperparameters and
+training data size. We find that BERT was significantly undertrained, and can
+match or exceed the performance of every model published after it. Our best
+model achieves state-of-the-art results on GLUE, RACE and SQuAD. These results
+highlight the importance of previously overlooked design choices, and raise
+questions about the source of recently reported improvements. We release our
+models and code.},
+  added-at = {2020-12-11T12:52:54.000+0100},
+  author = {Liu, Yinhan and Ott, Myle and Goyal, Naman and Du, Jingfei and Joshi, Mandar and Chen, Danqi and Levy, Omer and Lewis, Mike and Zettlemoyer, Luke and Stoyanov, Veselin},
+  biburl = {https://www.bibsonomy.org/bibtex/2a4c60811a43da7596716d79b67d26e0a/marjaw},
+  interhash = {040474bcd625e7dcc649bb20c81104d2},
+  intrahash = {a4c60811a43da7596716d79b67d26e0a},
+  keywords = {},
+  note = {cite arxiv:1907.11692},
+  timestamp = {2020-12-11T12:52:54.000+0100},
+  title = {RoBERTa: A Robustly Optimized BERT Pretraining Approach},
+  url = {http://arxiv.org/abs/1907.11692},
+  year = 2019
+}
+
+@article{gpt,
+  title={Language Models are Unsupervised Multitask Learners},
+  author={Radford, Alec and Wu, Jeff and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya},
+  year={2019}
+}
+
+@misc{act,
+  added-at = {2018-03-23T12:53:34.000+0100},
+  author = {Graves, Alex},
+  biburl = {https://www.bibsonomy.org/bibtex/2423864e2c7e894daa1b765dce3805e8e/rcb},
+  description = {[1603.08983] Adaptive Computation Time for Recurrent Neural Networks},
+  interhash = {960640a28f3e578a76d374b587717749},
+  intrahash = {423864e2c7e894daa1b765dce3805e8e},
+  keywords = {act rnn},
+  note = {cite arxiv:1603.08983},
+  timestamp = {2018-03-23T12:53:34.000+0100},
+  title = {Adaptive Computation Time for Recurrent Neural Networks},
+  url = {http://arxiv.org/abs/1603.08983},
+  year = 2016
+}

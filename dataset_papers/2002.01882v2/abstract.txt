@@ -1,0 +1,21 @@
+One of the main strengths of online algorithms is their ability to adapt to
+arbitrary data sequences. This is especially important in nonparametric
+settings, where performance is measured against rich classes of comparator
+functions that are able to fit complex environments. Although such hard
+comparators and complex environments may exhibit local regularities, efficient
+algorithms, which can provably take advantage of these local patterns, are
+hardly known. We fill this gap by introducing efficient online algorithms
+(based on a single versatile master algorithm) each adapting to one of the
+following regularities: (i) local Lipschitzness of the competitor function,
+(ii) local metric dimension of the instance sequence, (iii) local performance
+of the predictor across different regions of the instance space. Extending
+previous approaches, we design algorithms that dynamically grow hierarchical
+$\epsilon$-nets on the instance space whose prunings correspond to different
+"locality profiles" for the problem at hand. Using a technique based on tree
+experts, we simultaneously and efficiently compete against all such prunings,
+and prove regret bounds each scaling with a quantity associated with a
+different type of local regularity. When competing against "simple" locality
+profiles, our technique delivers regret bounds that are significantly better
+than those proven using the previous approach. On the other hand, the time
+dependence of our bounds is not worse than that obtained by ignoring any local
+regularities.

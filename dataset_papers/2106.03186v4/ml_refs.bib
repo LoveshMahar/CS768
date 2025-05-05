@@ -1,0 +1,1800 @@
+@Article{soudry:2016,
+  author      = {Daniel Soudry AND Yair Carmon},
+  title       = {No bad local minima: Data independent training error guarantees for multilayer neural networks},
+  version     = {1},
+  date        = {2016-05-26},
+  eprinttype  = {arxiv},
+  eprintclass = {stat.ML, cs.LG, cs.NE},
+  eprint      = {http://arxiv.org/abs/1605.08361v2},
+  url         = {http://arxiv.org/abs/1605.08361v2},
+  note        = {Catch: only applies to DIFFERENTIABLE local minima}
+}
+
+@incollection{liang:2018a,
+    title = {Adding One Neuron Can Eliminate All Bad Local Minima},
+    author = {LIANG, SHIYU and Sun, Ruoyu and Lee, Jason D and Srikant, R.},
+    booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+    editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+    pages = {4350--4360},
+    year = {2018},
+    publisher = {Curran Associates, Inc.},
+    url = {http://papers.nips.cc/paper/7688-adding-one-neuron-can-eliminate-all-bad-local-minima.pdf},
+    note = {It just replaces bad local minima with asymptotic bad local minima at infinity}
+}
+
+@Article{kawaguchi:2019,
+  author      = {Kenji Kawaguchi AND Leslie Pack Kaelbling},
+  title       = {Elimination of All Bad Local Minima in Deep Learning},
+  version     = {1},
+  date        = {2019-01-02},
+  eprinttype  = {arxiv},
+  eprintclass = {cs.LG, cs.NE, math.OC, stat.ML},
+  eprint      = {http://arxiv.org/abs/1901.00279v2},
+  url         = {http://arxiv.org/abs/1901.00279v2},
+  note = {basically the same as liang:2018, but more self-aware}
+}
+
+@Article{sohl-dickstein:2019,
+  author      = {Jascha Sohl-Dickstein AND Kenji Kawaguchi},
+  title       = {Eliminating all bad Local Minima from Loss Landscapes without even adding an Extra Unit},
+  version     = {1},
+  date        = {2019-01-12},
+  eprinttype  = {arxiv},
+  eprintclass = {stat.ML, cs.LG},
+  eprint      = {http://arxiv.org/abs/1901.03909v1},
+  url         = {http://arxiv.org/abs/1901.03909v1},
+  note = {exposes the catch of liang:2018a and kawaguchi:2019}
+}
+
+@Article{allen-zhu:2018,
+  author      = {Zeyuan Allen-Zhu AND Yuanzhi Li AND Zhao Song},
+  title       = {A Convergence Theory for Deep Learning via Over-Parameterization},
+  version     = {1},
+  date        = {2018-11-09},
+  eprinttype  = {arxiv},
+  eprintclass = {cs.LG, cs.DS, cs.NE, math.OC, stat.ML},
+  eprint      = {http://arxiv.org/abs/1811.03962v5},
+  url         = {http://arxiv.org/abs/1811.03962v5},
+  note = {assumes polynomially-large net}
+}
+
+@Article{liang:2018b,
+  author      = {Shiyu Liang AND Ruoyu Sun AND Yixuan Li AND R. Srikant},
+  title       = {Understanding the Loss Surface of Neural Networks for Binary Classification},
+  version     = {1},
+  date        = {2018-02-19},
+  eprinttype  = {arxiv},
+  eprintclass = {cs.LG, cs.AI, stat.ML},
+  eprint      = {http://arxiv.org/abs/1803.00909v2},
+  url         = {http://arxiv.org/abs/1803.00909v2}
+}
+
+@article{bray:2007,
+  title = {Statistics of Critical Points of Gaussian Fields on Large-Dimensional Spaces},
+  author = {Bray, Alan J. and Dean, David S.},
+  journal = {Phys. Rev. Lett.},
+  volume = {98},
+  issue = {15},
+  pages = {150201},
+  numpages = {4},
+  year = {2007},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.98.150201},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.98.150201}
+}
+
+@article{choromanska2014,
+  author    = {Anna Choromanska and
+              Mikael Henaff and
+              Micha{\"{e}}l Mathieu and
+              G{\'{e}}rard Ben Arous and
+              Yann LeCun},
+  title     = {The Loss Surface of Multilayer Networks},
+  journal   = {CoRR},
+  volume    = {abs/1412.0233},
+  year      = {2014},
+  archivePrefix = {arXiv},
+  eprint    = {1412.0233},
+  timestamp = {Mon, 13 Aug 2018 16:48:26 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/ChoromanskaHMAL14},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{dauphin2014,
+  author    = {Yann Dauphin and
+              Razvan Pascanu and
+              {\c{C}}aglar G{\"{u}}l{\c{c}}ehre and
+              Kyunghyun Cho and
+              Surya Ganguli and
+              Yoshua Bengio},
+  title     = {Identifying and attacking the saddle point problem in high-dimensional non-convex optimization},
+  journal   = {CoRR},
+  volume    = {abs/1406.2572},
+  year      = {2014},
+}
+
+@Article{frye:2020,
+  author      = {Charles G. Frye AND James Simon AND Neha S. Wadia AND Andrew Ligeralde AND Michael R. DeWeese AND Kristofer E. Bouchard},
+  title       = {Critical Point-Finding Methods Reveal Gradient-Flat Regions of Deep Network Losses},
+  version     = {1},
+  date        = {2020-03-23},
+  journal  = {arXiv},
+  volume = {abs/2003.10397v1},
+  eprintclass = {cs.LG, cs.NE, stat.ML},
+  eprint      = {http://arxiv.org/abs/2003.10397v1},
+  url         = {http://arxiv.org/abs/2003.10397v1}
+}
+
+@Article{cooper:2018,
+  author      = {Y Cooper},
+  title       = {The loss landscape of overparameterized neural networks},
+  version     = {1},
+  date        = {2018-04-26},
+  eprinttype  = {arxiv},
+  eprintclass = {cs.LG, cs.AI, cs.NE, stat.ML},
+  eprint      = {http://arxiv.org/abs/1804.10200v1},
+  url         = {http://arxiv.org/abs/1804.10200v1}
+}
+
+@BOOK{newton:1704,
+author = {Isaac Newton},
+title = {Opticks, or a treatise of the reflections,
+refractions, inflections and colours of light},
+publisher = {William Innys},
+url = {http://books.google.com/books?id=XXu4AkRVBBoC},
+year = {1730},
+numpages = {382},
+eprint = {XXu4AkRVBBoC},
+eprinttype = {Google Books},
+}
+
+@misc{franklin:1747,
+ author={Letter from Benjamin Franklin to Peter Collinson},
+ year={1747}, month={Sep}}
+
+@Article{geiger:1909,
+  author      = {Hans Geiger and Ernest Marsden},
+  title       = {On a Diffuse Reflection of the Alpha Particles},
+  date        = {1909-07-17},
+  journal   = {Proceedings of the Royal Society of London},
+  volume = {82}
+}
+
+@BOOK{koehn:2010,
+author = {Philipp Koehn},
+title = {Statistical Machine Translation},
+publisher = {Cambridge University Press},
+year = {2010}
+}
+
+@incollection{krizhevsky:2012,
+title = {ImageNet Classification with Deep Convolutional Neural Networks},
+author = {Alex Krizhevsky and Sutskever, Ilya and Hinton, Geoffrey E},
+booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+pages = {1097--1105},
+year = {2012},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf}
+}
+
+@article{silver:2016,
+  added-at = {2016-03-11T14:36:05.000+0100},
+  author = {Silver, David and Huang, Aja and Maddison, Chris J. and Guez, Arthur and Sifre, Laurent and van den Driessche, George and Schrittwieser, Julian and Antonoglou, Ioannis and Panneershelvam, Veda and Lanctot, Marc and Dieleman, Sander and Grewe, Dominik and Nham, John and Kalchbrenner, Nal and Sutskever, Ilya and Lillicrap, Timothy and Leach, Madeleine and Kavukcuoglu, Koray and Graepel, Thore and Hassabis, Demis},
+  doi = {10.1038/nature16961},
+  journal = {Nature},
+  month = jan,
+  number = 7587,
+  pages = {484--489},
+  publisher = {Nature Publishing Group},
+  title = {Mastering the Game of {Go} with Deep Neural Networks and Tree Search},
+  volume = 529,
+  year = 2016
+}
+
+@Article{good:1965,
+  author      = {Irving John Good},
+  title       = {Speculations Concerning the First Ultraintelligent Machine},
+  year        = {1965},
+  journal   = {Advances in Computers},
+  volume = {1965}
+}
+
+@article{vinge:1993,
+	year = {1993},
+	title = {The Coming Technological Singularity},
+	author = {Vernor Vinge},
+	journal = {Whole Earth Review}
+}
+
+@incollection{stoudenmire:2016,
+title = {Supervised Learning with Tensor Networks},
+author = {Stoudenmire, Edwin and Schwab, David J},
+booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+pages = {4799--4807},
+year = {2016},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/6211-supervised-learning-with-tensor-networks.pdf}
+}
+
+@article{lecun:2010,
+  author = {LeCun, Yann and Cortes, Corinna},
+  groups = {public},
+  howpublished = {http://yann.lecun.com/exdb/mnist/},
+  title = {{MNIST} handwritten digit database},
+  url = {http://yann.lecun.com/exdb/mnist/},
+  year = 2010
+}
+
+@incollection{poole:2016,
+title = {Exponential expressivity in deep neural networks through transient chaos},
+author = {Poole, Ben and Lahiri, Subhaneil and Raghu, Maithra and Sohl-Dickstein, Jascha and Ganguli, Surya},
+booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+pages = {3360--3368},
+year = {2016},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/6322-exponential-expressivity-in-deep-neural-networks-through-transient-chaos.pdf}
+}
+
+@article{garipov:2018,
+  author    = {Timur Garipov and
+              Pavel Izmailov and
+              Dmitrii Podoprikhin and
+              Dmitry P. Vetrov and
+              Andrew Gordon Wilson},
+  title     = {Loss Surfaces, Mode Connectivity, and Fast Ensembling of DNNs},
+  journal   = {CoRR},
+  year      = {2018},
+  archivePrefix = {arXiv},
+  eprint    = {1802.10026},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{ramachandran:2018,
+  author    = {Prajit Ramachandran and
+              Barret Zoph and
+              Quoc V. Le},
+  title     = {Searching for Activation Functions},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  publisher = {OpenReview.net},
+  year      = {2018},
+  url       = {https://openreview.net/forum?id=Hkuq2EkPf},
+  timestamp = {Thu, 04 Apr 2019 13:20:09 +0200},
+  biburl    = {https://dblp.org/rec/conf/iclr/RamachandranZL18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{christiano:2018,
+  author    = {Paul Christiano and Buck Shlegeris and Dario Amodei},
+  title     = {Supervising strong learners by amplifying weak experts},
+  year      = {2018},
+  archivePrefix = {arXiv},
+  journal = {arXiv},
+  volume    = {abs/1810.08575}
+}
+
+@inproceedings{li:2018,
+  author    = {Chunyuan Li and
+              Heerad Farkhoor and
+              Rosanne Liu and
+              Jason Yosinski},
+  title     = {Measuring the Intrinsic Dimension of Objective Landscapes},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  publisher = {OpenReview.net},
+  year      = {2018},
+  url       = {https://openreview.net/forum?id=ryup8-WCW},
+  timestamp = {Thu, 25 Jul 2019 14:25:52 +0200},
+  biburl    = {https://dblp.org/rec/conf/iclr/LiFLY18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{mehta:2014,
+  author    = {Pankaj Mehta and David J Schwab},
+  title     = {An exact mapping between the Variational Renormalization Group and Deep Learning},
+  year      = {2014},
+  archivePrefix = {arXiv},
+  journal = {arXiv},
+  volume    = {abs/1810.08575}
+}
+
+@article{lin:2017,
+  author    = {Henry W. Lin and Max Tegmark and David Rolnick},
+  title     = {Why Does Deep and Cheap Learning Work So Well?},
+  year      = {2017},
+  journal   = {Journal of Statistical Physics},
+  issue     = {168},
+  pages     = {1223–1247}
+}
+
+@article{yang:2019-tensor-programs-I,
+  author    = {Greg Yang},
+  title     = {Tensor Programs {I:} Wide Feedforward or Recurrent Neural Networks
+              of Any Architecture are Gaussian Processes},
+  journal   = {CoRR},
+  volume    = {abs/1910.12478},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1910.12478},
+  archivePrefix = {arXiv},
+  eprint    = {1910.12478},
+  timestamp = {Thu, 31 Oct 2019 14:02:26 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1910-12478.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{sejinowski:2020,
+  author    = {Terrence J. Sejnowski},
+  title     = {The unreasonable effectiveness of deep learning in artificial intelligence},
+  journal   = {Proc. Natl. Acad. Sci. {USA}},
+  volume    = {117},
+  number    = {48},
+  pages     = {30033--30038},
+  year      = {2020},
+  url       = {https://doi.org/10.1073/pnas.1907373117},
+  doi       = {10.1073/pnas.1907373117},
+  timestamp = {Fri, 29 Jan 2021 09:48:36 +0100},
+  biburl    = {https://dblp.org/rec/journals/pnas/Sejnowski20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{durbin:1989,
+  author    = {Richard Durbin and
+              David E. Rumelhart},
+  title     = {Product Units: {A} Computationally Powerful and Biologically Plausible
+              Extension to Backpropagation Networks},
+  journal   = {Neural Comput.},
+  volume    = {1},
+  number    = {1},
+  pages     = {133--142},
+  year      = {1989},
+  url       = {https://doi.org/10.1162/neco.1989.1.1.133},
+  doi       = {10.1162/neco.1989.1.1.133},
+  timestamp = {Tue, 01 Sep 2020 13:12:28 +0200},
+  biburl    = {https://dblp.org/rec/journals/neco/DurbinR89.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{schmitt:2002,
+  author    = {Michael Schmitt},
+  title     = {On the Complexity of Computing and Learning with Multiplicative Neural
+              Networks},
+  journal   = {Neural Comput.},
+  volume    = {14},
+  number    = {2},
+  pages     = {241--301},
+  year      = {2002},
+  url       = {https://doi.org/10.1162/08997660252741121},
+  doi       = {10.1162/08997660252741121},
+  timestamp = {Tue, 01 Sep 2020 13:12:05 +0200},
+  biburl    = {https://dblp.org/rec/journals/neco/Schmitt02.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{leerink:1994,
+  author    = {Laurens R. Leerink and
+              C. Lee Giles and
+              Bill G. Horne and
+              Marwan A. Jabri},
+  title     = {Learning with Product Units},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  pages     = {537--544},
+  publisher = {{MIT} Press},
+  year      = {1994},
+  url       = {http://papers.nips.cc/paper/990-learning-with-product-units},
+  timestamp = {Thu, 21 Jan 2021 17:36:47 +0100},
+  biburl    = {https://dblp.org/rec/conf/nips/LeerinkGHJ94.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{chen:2020,
+  author    = {Hanting Chen and
+              Yunhe Wang and
+              Chunjing Xu and
+              Boxin Shi and
+              Chao Xu and
+              Qi Tian and
+              Chang Xu},
+  title     = {AdderNet: Do We Really Need Multiplications in Deep Learning?},
+  booktitle = {2020 {IEEE/CVF} Conference on Computer Vision and Pattern Recognition,
+              {CVPR} 2020, Seattle, WA, USA, June 13-19, 2020},
+  pages     = {1465--1474},
+  publisher = {{IEEE}},
+  year      = {2020},
+  url       = {https://doi.org/10.1109/CVPR42600.2020.00154},
+  doi       = {10.1109/CVPR42600.2020.00154},
+  timestamp = {Wed, 16 Sep 2020 12:56:39 +0200},
+  biburl    = {https://dblp.org/rec/conf/cvpr/ChenWXSX0X20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{wang:2021,
+  author    = {Yunhe Wang and
+              Mingqiang Huang and
+              Kai Han and
+              Hanting Chen and
+              Wei Zhang and
+              Chunjing Xu and
+              Dacheng Tao},
+  title     = {AdderNet and its Minimalist Hardware Design for Energy-Efficient Artificial
+              Intelligence},
+  journal   = {CoRR},
+  volume    = {abs/2101.10015},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2101.10015},
+  archivePrefix = {arXiv},
+  eprint    = {2101.10015},
+  timestamp = {Sat, 30 Jan 2021 18:02:51 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2101-10015.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{wang:2019,
+  author    = {Chen Wang and
+              Jianfei Yang and
+              Lihua Xie and
+              Junsong Yuan},
+  title     = {Kervolutional Neural Networks},
+  booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR}
+              2019, Long Beach, CA, USA, June 16-20, 2019},
+  pages     = {31--40},
+  publisher = {Computer Vision Foundation / {IEEE}},
+  year      = {2019},
+  url       = {http://openaccess.thecvf.com/content\_CVPR\_2019/html/Wang\_Kervolutional\_Neural\_Networks\_CVPR\_2019\_paper.html},
+  doi       = {10.1109/CVPR.2019.00012},
+  timestamp = {Sun, 25 Oct 2020 23:02:04 +0100},
+  biburl    = {https://dblp.org/rec/conf/cvpr/WangYXY19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{zoumpourlis:2017,
+  author    = {Georgios Zoumpourlis and
+              Alexandros Doumanoglou and
+              Nicholas Vretos and
+              Petros Daras},
+  title     = {Non-linear Convolution Filters for CNN-Based Learning},
+  booktitle = {{IEEE} International Conference on Computer Vision (ICCV)},
+  pages     = {4771--4779},
+  publisher = {{IEEE} Computer Society},
+  year      = {2017},
+  url       = {https://doi.org/10.1109/ICCV.2017.510},
+  doi       = {10.1109/ICCV.2017.510},
+  timestamp = {Sun, 25 Oct 2020 23:16:04 +0100},
+  biburl    = {https://dblp.org/rec/conf/iccv/ZoumpourlisDVD17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@ARTICLE{mel:1992,
+  author={B. W. {Mel}},
+  journal={Neural Computation}, 
+  title={NMDA-Based Pattern Discrimination in a Modeled Cortical Neuron}, 
+  year={1992},
+  volume={4},
+  number={4},
+  pages={502-517},
+  doi={10.1162/neco.1992.4.4.502}}
+
+
+@article{mel:1994,
+author = {Mel, Bartlett W.},
+title = {Information Processing in Dendritic Trees},
+journal = {Neural Computation},
+volume = {6},
+number = {6},
+pages = {1031-1085},
+year = {1994},
+doi = {10.1162/neco.1994.6.6.1031},
+
+URL = { 
+        https://doi.org/10.1162/neco.1994.6.6.1031
+    
+},
+eprint = { 
+        https://doi.org/10.1162/neco.1994.6.6.1031
+    
+}
+}
+
+@inproceedings{he:2016,
+  author    = {Kaiming He and
+              Xiangyu Zhang and
+              Shaoqing Ren and
+              Jian Sun},
+  title     = {Deep Residual Learning for Image Recognition},
+  booktitle = {Conference on Computer Vision and Pattern Recognition,
+              (CVPR)},
+  pages     = {770--778},
+  publisher = {{IEEE} Computer Society},
+  year      = {2016},
+  url       = {https://doi.org/10.1109/CVPR.2016.90},
+  doi       = {10.1109/CVPR.2016.90},
+  timestamp = {Wed, 16 Oct 2019 14:14:50 +0200},
+  biburl    = {https://dblp.org/rec/conf/cvpr/HeZRS16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{simonyan:2015,
+  author    = {Karen Simonyan and
+              Andrew Zisserman},
+  editor    = {Yoshua Bengio and
+              Yann LeCun},
+  title     = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1409.1556},
+  timestamp = {Wed, 17 Jul 2019 10:40:54 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/SimonyanZ14a.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{trager:2020,
+  author    = {Matthew Trager and
+              Kathl{\'{e}}n Kohn and
+              Joan Bruna},
+  title     = {Pure and Spurious Critical Points: a Geometric Study of Linear Networks},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  publisher = {OpenReview.net},
+  year      = {2020},
+  url       = {https://openreview.net/forum?id=rkgOlCVYvB},
+  timestamp = {Thu, 07 May 2020 17:11:47 +0200},
+  biburl    = {https://dblp.org/rec/conf/iclr/TragerKB20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@ARTICLE{lecun:1998,
+  author={Y. {Lecun} and L. {Bottou} and Y. {Bengio} and P. {Haffner}},
+  journal={Proceedings of the IEEE}, 
+  title={Gradient-based learning applied to document recognition}, 
+  year={1998},
+  volume={86},
+  number={11},
+  pages={2278-2324},
+  doi={10.1109/5.726791}
+}
+
+@inproceedings{bahdanau:2015,
+  author    = {Dzmitry Bahdanau and
+              Kyunghyun Cho and
+              Yoshua Bengio},
+  editor    = {Yoshua Bengio and
+              Yann LeCun},
+  title     = {Neural Machine Translation by Jointly Learning to Align and Translate},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1409.0473},
+  timestamp = {Wed, 17 Jul 2019 10:40:54 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/BahdanauCB14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{zhang:2017,
+  author    = {Chiyuan Zhang and
+              Samy Bengio and
+              Moritz Hardt and
+              Benjamin Recht and
+              Oriol Vinyals},
+  title     = {Understanding deep learning requires rethinking generalization},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  publisher = {OpenReview.net},
+  year      = {2017},
+  url       = {https://openreview.net/forum?id=Sy8gdB9xx},
+  timestamp = {Thu, 04 Apr 2019 13:20:08 +0200},
+  biburl    = {https://dblp.org/rec/conf/iclr/ZhangBHRV17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{lee:2018-nngp,
+  author    = {Jaehoon Lee and
+              Yasaman Bahri and
+              Roman Novak and
+              Samuel S. Schoenholz and
+              Jeffrey Pennington and
+              Jascha Sohl{-}Dickstein},
+  title     = {Deep Neural Networks as Gaussian Processes},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  publisher = {OpenReview.net},
+  year      = {2018},
+  url       = {https://openreview.net/forum?id=B1EA-M-0Z},
+  timestamp = {Thu, 25 Jul 2019 14:25:46 +0200},
+  biburl    = {https://dblp.org/rec/conf/iclr/LeeBNSPS18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{lee:2019-ntk,
+  author    = {Jaehoon Lee and
+              Lechao Xiao and
+              Samuel S. Schoenholz and
+              Yasaman Bahri and
+              Roman Novak and
+              Jascha Sohl{-}Dickstein and
+              Jeffrey Pennington},
+  title     = {Wide Neural Networks of Any Depth Evolve as Linear Models Under Gradient
+              Descent},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  pages     = {8570--8581},
+  year      = {2019},
+  url       = {https://proceedings.neurips.cc/paper/2019/hash/0d1a9651497a38d8b1c3871c84528bd4-Abstract.html},
+  timestamp = {Thu, 21 Jan 2021 15:15:20 +0100},
+  biburl    = {https://dblp.org/rec/conf/nips/LeeXSBNSP19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{lee:2020,
+  author    = {Jaehoon Lee and
+              Samuel S. Schoenholz and
+              Jeffrey Pennington and
+              Ben Adlam and
+              Lechao Xiao and
+              Roman Novak and
+              Jascha Sohl{-}Dickstein},
+  title     = {Finite Versus Infinite Neural Networks: an Empirical Study},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2020},
+  url       = {https://proceedings.neurips.cc/paper/2020/hash/ad086f59924fffe0773f8d0ca22ea712-Abstract.html},
+  timestamp = {Tue, 19 Jan 2021 15:57:12 +0100},
+  biburl    = {https://dblp.org/rec/conf/nips/LeeSPAXNS20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{jacot:2018,
+  author    = {Arthur Jacot and
+              Cl{\'{e}}ment Hongler and
+              Franck Gabriel},
+  title     = {Neural Tangent Kernel: Convergence and Generalization in Neural Networks},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  pages     = {8580--8589},
+  year      = {2018},
+  url       = {https://proceedings.neurips.cc/paper/2018/hash/5a4be1fa34e62bb8a6ec6b91d2462f5a-Abstract.html},
+  timestamp = {Thu, 21 Jan 2021 15:15:21 +0100},
+  biburl    = {https://dblp.org/rec/conf/nips/JacotHG18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@TECHREPORT{krizhevsky:2009,
+    author = {Alex Krizhevsky},
+    title = {Learning multiple layers of features from tiny images},
+    institution = {},
+    year = {2009}
+}
+
+@Article{holtmaat:2009,
+author={Holtmaat, Anthony
+and Svoboda, Karel},
+title={Experience-dependent structural synaptic plasticity in the mammalian brain},
+journal={Nature Reviews Neuroscience},
+year={2009},
+month={Sep},
+day={01},
+volume={10},
+number={9},
+pages={647-658},
+abstract={Long-term, high-resolution imaging studies of neuronal structure in vivo have revealed that structural plasticity is an ongoing process in the adult brain of mammals, even under baseline conditions.The large-scale structure of cortical neurons, which consists of axonal and dendritic branches, is relatively stable under most conditions. By contrast, small synaptic structures, such as dendritic spines and axonal boutons are highly dynamic, displaying size changes and changes in cytoskeletal dynamics.Although most dendritic spines and axonal boutons are maintained over a large fraction of the animal's life, a subpopulation appears and disappears. For both spines and boutons the turnover is balanced, leaving the total density unchanged under baseline conditions.The sizes of spines and synapses are maintained and regulated through dynamic interactions between their molecular constituents, which are dymaically re-allocated among synapses.New spines are mostly transient. They rarely turn into persistent spines. Persistent spines always bear synapses.Changes in sensory experience and learning cause the stabilization of new spines in cortical areas that display functional changes, indicating that synapse formation and elimination probably contribute to experience-dependent rewiring of cortical circuits.Structural plasticity might have a role in functional network alterations in neurodegenerative and memory disorders, and may also underlie spontaneous recovery of function after local brain injury and peripheral nerve lesions.},
+issn={1471-0048},
+doi={10.1038/nrn2699},
+url={https://doi.org/10.1038/nrn2699}
+}
+
+@inproceedings{sabour:2017,
+  author    = {Sara Sabour and
+              Nicholas Frosst and
+              Geoffrey E. Hinton},
+  title     = {Dynamic Routing Between Capsules},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  pages     = {3856--3866},
+  year      = {2017},
+  url       = {https://proceedings.neurips.cc/paper/2017/hash/2cad8fa47bbef282badbb8de5374b894-Abstract.html},
+  timestamp = {Thu, 21 Jan 2021 15:15:21 +0100},
+  biburl    = {https://dblp.org/rec/conf/nips/SabourFH17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{howard:2017,
+  author    = {Andrew G. Howard and
+              Menglong Zhu and
+              Bo Chen and
+              Dmitry Kalenichenko and
+              Weijun Wang and
+              Tobias Weyand and
+              Marco Andreetto and
+              Hartwig Adam},
+  title     = {MobileNets: Efficient Convolutional Neural Networks for Mobile Vision
+              Applications},
+  journal   = {CoRR},
+  volume    = {abs/1704.04861},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1704.04861},
+  archivePrefix = {arXiv},
+  eprint    = {1704.04861},
+  timestamp = {Mon, 13 Aug 2018 16:46:35 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/HowardZCKWWAA17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{wu:2018,
+  author    = {Bichen Wu and
+              Alvin Wan and
+              Xiangyu Yue and
+              Peter H. Jin and
+              Sicheng Zhao and
+              Noah Golmant and
+              Amir Gholaminejad and
+              Joseph Gonzalez and
+              Kurt Keutzer},
+  title     = {Shift: {A} Zero FLOP, Zero Parameter Alternative to Spatial Convolutions},
+  booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages     = {9127--9135},
+  publisher = {{IEEE} Computer Society},
+  year      = {2018},
+  url       = {http://openaccess.thecvf.com/content\_cvpr\_2018/html/Wu\_Shift\_A\_Zero\_CVPR\_2018\_paper.html},
+  doi       = {10.1109/CVPR.2018.00951},
+  timestamp = {Sun, 25 Oct 2020 23:02:10 +0100},
+  biburl    = {https://dblp.org/rec/conf/cvpr/WuWYJZGGGK18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{frady:2020,
+  author    = {Edward Paxon Frady and
+              Garrick Orchard and
+              David Florey and
+              Nabil Imam and
+              Ruokun Liu and
+              Joyesh Mishra and
+              Jonathan Tse and
+              Andreas Wild and
+              Friedrich T. Sommer and
+              Mike Davies},
+  title     = {Neuromorphic Nearest Neighbor Search Using Intel's Pohoiki Springs},
+  booktitle = {Neuro-inspired Computational Elements Workshop (NICE)},
+  pages     = {23:1--23:10},
+  publisher = {{ACM}},
+  year      = {2020},
+  url       = {https://doi.org/10.1145/3381755.3398695},
+  doi       = {10.1145/3381755.3398695},
+  timestamp = {Tue, 21 Jul 2020 12:07:35 +0200},
+  biburl    = {https://dblp.org/rec/conf/nice/FradyOFILMTWSD20.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{ioffe:15,
+  author    = {Sergey Ioffe and
+              Christian Szegedy},
+  title     = {Batch Normalization: Accelerating Deep Network Training by Reducing
+              Internal Covariate Shift},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  series    = {{JMLR} Workshop and Conference Proceedings},
+  volume    = {37},
+  pages     = {448--456},
+  publisher = {JMLR.org},
+  year      = {2015},
+  url       = {http://proceedings.mlr.press/v37/ioffe15.html},
+  timestamp = {Wed, 29 May 2019 08:41:45 +0200},
+  biburl    = {https://dblp.org/rec/conf/icml/IoffeS15.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{ba:2016,
+  author    = {Lei Jimmy Ba and
+              Jamie Ryan Kiros and
+              Geoffrey E. Hinton},
+  title     = {Layer Normalization},
+  journal   = {CoRR},
+  volume    = {abs/1607.06450},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1607.06450},
+  archivePrefix = {arXiv},
+  eprint    = {1607.06450},
+  timestamp = {Tue, 23 Jul 2019 17:33:23 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/BaKH16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{schoenberg:1942,
+    author = {I. J. Schoenberg},
+    title = {{Positive definite functions on spheres}},
+    volume = {9},
+    journal = {Duke Mathematical Journal},
+    number = {1},
+    publisher = {Duke University Press},
+    pages = {96 -- 108},
+    year = {1942},
+    doi = {10.1215/S0012-7094-42-00908-6},
+    URL = {https://doi.org/10.1215/S0012-7094-42-00908-6}
+}
+
+@article{novak_nt:2019,
+  author    = {Roman Novak and
+              Lechao Xiao and
+              Jiri Hron and
+              Jaehoon Lee and
+              Alexander A. Alemi and
+              Jascha Sohl{-}Dickstein and
+              Samuel S. Schoenholz},
+  title     = {Neural Tangents: Fast and Easy Infinite Neural Networks in Python},
+  journal   = {CoRR},
+  volume    = {abs/1912.02803},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1912.02803},
+  archivePrefix = {arXiv},
+  eprint    = {1912.02803}
+}
+
+@inproceedings{daniely:2016,
+  author    = {Amit Daniely and
+              Roy Frostig and
+              Yoram Singer},
+  editor    = {Daniel D. Lee and
+              Masashi Sugiyama and
+              Ulrike von Luxburg and
+              Isabelle Guyon and
+              Roman Garnett},
+  title     = {Toward Deeper Understanding of Neural Networks: The Power of Initialization
+              and a Dual View on Expressivity},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  pages     = {2253--2261},
+  year      = {2016},
+  url       = {https://proceedings.neurips.cc/paper/2016/hash/abea47ba24142ed16b7d8fbf2c740e0d-Abstract.html}
+}
+
+@inproceedings{allen-zhu:2019,
+  author    = {Zeyuan Allen{-}Zhu and
+              Yuanzhi Li and
+              Yingyu Liang},
+  editor    = {Hanna M. Wallach and
+              Hugo Larochelle and
+              Alina Beygelzimer and
+              Florence d'Alch{\'{e}}{-}Buc and
+              Emily B. Fox and
+              Roman Garnett},
+  title     = {Learning and Generalization in Overparameterized Neural Networks,
+              Going Beyond Two Layers},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  pages     = {6155--6166},
+  year      = {2019},
+  url       = {https://proceedings.neurips.cc/paper/2019/hash/62dad6e273d32235ae02b7d321578ee8-Abstract.html}
+}
+
+@inproceedings{novak_cnngp:2019,
+  author    = {Roman Novak and
+              Lechao Xiao and
+              Yasaman Bahri and
+              Jaehoon Lee and
+              Greg Yang and
+              Jiri Hron and
+              Daniel A. Abolafia and
+              Jeffrey Pennington and
+              Jascha Sohl{-}Dickstein},
+  title     = {Bayesian Deep Convolutional Networks with Many Channels are Gaussian
+              Processes},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  publisher = {OpenReview.net},
+  year      = {2019},
+  url       = {https://openreview.net/forum?id=B1g30j0qF7}
+}
+
+@inproceedings{garriga:2019,
+  author    = {Adri{\`{a}} Garriga{-}Alonso and
+              Carl Edward Rasmussen and
+              Laurence Aitchison},
+  title     = {Deep Convolutional Networks as shallow Gaussian Processes},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2019},
+  url       = {https://openreview.net/forum?id=Bklfsi0cKm}
+}
+
+@inproceedings{arora:2019-cntk,
+  author    = {Sanjeev Arora and
+              Simon S. Du and
+              Wei Hu and
+              Zhiyuan Li and
+              Ruslan Salakhutdinov and
+              Ruosong Wang},
+  title     = {On Exact Computation with an Infinitely Wide Neural Net},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  pages     = {8139--8148},
+  year      = {2019},
+  url       = {https://proceedings.neurips.cc/paper/2019/hash/dbc4d84bfcfe2284ba11beffb853a8c4-Abstract.html}
+}
+
+@inproceedings{hron:2020-transformer-ntk,
+  author    = {Jiri Hron and
+              Yasaman Bahri and
+              Jascha Sohl{-}Dickstein and
+              Roman Novak},
+  title     = {Infinite attention: {NNGP} and {NTK} for deep attention networks},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {119},
+  pages     = {4376--4386},
+  publisher = {{PMLR}},
+  year      = {2020},
+  url       = {http://proceedings.mlr.press/v119/hron20a.html}
+}
+
+@inproceedings{shankar:2020,
+  author    = {Vaishaal Shankar and
+              Alex Fang and
+              Wenshuo Guo and
+              Sara Fridovich{-}Keil and
+              Jonathan Ragan{-}Kelley and
+              Ludwig Schmidt and
+              Benjamin Recht},
+  title     = {Neural Kernels Without Tangents},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {119},
+  pages     = {8614--8623},
+  publisher = {{PMLR}},
+  year      = {2020},
+  url       = {http://proceedings.mlr.press/v119/shankar20a.html}
+}
+
+@inproceedings{rahimi:2008,
+  author    = {Ali Rahimi and
+              Benjamin Recht},
+  title     = {Weighted Sums of Random Kitchen Sinks: Replacing minimization with randomization in learning},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  pages     = {1313--1320},
+  publisher = {Curran Associates, Inc.},
+  year      = {2008},
+  url       = {https://proceedings.neurips.cc/paper/2008/hash/0efe32849d230d7f53049ddc4a4b0c60-Abstract.html}
+}
+
+@article{li:2019-cntks,
+  author    = {Zhiyuan Li and
+              Ruosong Wang and
+              Dingli Yu and
+              Simon S. Du and
+              Wei Hu and
+              Ruslan Salakhutdinov and
+              Sanjeev Arora},
+  title     = {Enhanced Convolutional Neural Tangent Kernels},
+  journal   = {CoRR},
+  volume    = {abs/1911.00809},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1911.00809},
+  archivePrefix = {arXiv},
+  eprint    = {1911.00809}
+}
+
+@inproceedings{arora:2020,
+  author    = {Sanjeev Arora and
+              Simon S. Du and
+              Zhiyuan Li and
+              Ruslan Salakhutdinov and
+              Ruosong Wang and
+              Dingli Yu},
+  title     = {Harnessing the Power of Infinitely Wide Deep Nets on Small-data Tasks},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  publisher = {OpenReview.net},
+  year      = {2020},
+  url       = {https://openreview.net/forum?id=rkl8sJBYvH}
+}
+
+@inproceedings{schoenholz:2017,
+  author    = {Samuel S. Schoenholz and
+              Justin Gilmer and
+              Surya Ganguli and
+              Jascha Sohl{-}Dickstein},
+  title     = {Deep Information Propagation},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  publisher = {OpenReview.net},
+  year      = {2017},
+  url       = {https://openreview.net/forum?id=H1W1UN9gg}
+}
+
+@inproceedings{hanin:2019,
+  author    = {Boris Hanin and
+              David Rolnick},
+  title     = {Complexity of Linear Regions in Deep Networks},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {97},
+  pages     = {2596--2604},
+  publisher = {{PMLR}},
+  year      = {2019},
+  url       = {http://proceedings.mlr.press/v97/hanin19a.html}
+}
+
+@inproceedings{telgarsky:2016,
+  author    = {Matus Telgarsky},
+  title     = {Benefits of depth in neural networks},
+  booktitle = {Conference on Learning Theory (COLT)},
+  series    = {{JMLR} Workshop and Conference Proceedings},
+  volume    = {49},
+  pages     = {1517--1539},
+  publisher = {JMLR.org},
+  year      = {2016},
+  url       = {http://proceedings.mlr.press/v49/telgarsky16.html}
+}
+
+@inproceedings{raghu:2017,
+  author    = {Maithra Raghu and
+              Ben Poole and
+              Jon M. Kleinberg and
+              Surya Ganguli and
+              Jascha Sohl{-}Dickstein},
+  editor    = {Doina Precup and
+              Yee Whye Teh},
+  title     = {On the Expressive Power of Deep Neural Networks},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {70},
+  pages     = {2847--2854},
+  publisher = {{PMLR}},
+  year      = {2017},
+  url       = {http://proceedings.mlr.press/v70/raghu17a.html}
+}
+
+@inproceedings{mhaskar:2017,
+  author    = {Hrushikesh Mhaskar and
+              Qianli Liao and
+              Tomaso A. Poggio},
+  editor    = {Satinder P. Singh and
+              Shaul Markovitch},
+  title     = {When and Why Are Deep Networks Better Than Shallow Ones?},
+  booktitle = {AAAI Conference on Artificial Intelligence},
+  pages     = {2343--2349},
+  publisher = {{AAAI} Press},
+  year      = {2017},
+  url       = {http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14849}
+}
+
+
+@article{poggio:2017,
+  author    = {Tomaso A. Poggio and
+              Hrushikesh Mhaskar and
+              Lorenzo Rosasco and
+              Brando Miranda and
+              Qianli Liao},
+  title     = {Why and when can deep-but not shallow-networks avoid the curse of
+              dimensionality: {A} review},
+  journal   = {Int. J. Autom. Comput.},
+  volume    = {14},
+  number    = {5},
+  pages     = {503--519},
+  year      = {2017},
+  url       = {https://doi.org/10.1007/s11633-017-1054-2},
+  doi       = {10.1007/s11633-017-1054-2}
+}
+
+@inproceedings{rolnick:2018,
+  author    = {David Rolnick and
+              Max Tegmark},
+  title     = {The power of deeper networks for expressing natural functions},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  publisher = {OpenReview.net},
+  year      = {2018},
+  url       = {https://openreview.net/forum?id=SyProzZAW}
+}
+
+@article{hornik:1989,
+  title={Multilayer feedforward networks are universal approximators},
+  author={Hornik, Kurt and Stinchcombe, Maxwell and White, Halbert},
+  journal={Neural networks},
+  volume={2},
+  number={5},
+  pages={359--366},
+  year={1989},
+  publisher={Elsevier}
+}
+
+@inproceedings{ba:2014,
+  author    = {Jimmy Ba and
+              Rich Caruana},
+  editor    = {Zoubin Ghahramani and
+              Max Welling and
+              Corinna Cortes and
+              Neil D. Lawrence and
+              Kilian Q. Weinberger},
+  title     = {Do Deep Nets Really Need to be Deep?},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  pages     = {2654--2662},
+  year      = {2014},
+  url       = {https://proceedings.neurips.cc/paper/2014/hash/ea8fcd92d59581717e06eb187f10666d-Abstract.html}
+}
+
+@article{xiao:2018,
+  author    = {Lechao Xiao and
+              Yasaman Bahri and
+              Jascha Sohl{-}Dickstein and
+              Samuel S. Schoenholz and
+              Jeffrey Pennington},
+  title     = {Dynamical Isometry and a Mean Field Theory of CNNs: How to Train 10,
+              000-Layer Vanilla Convolutional Neural Networks},
+  journal   = {CoRR},
+  volume    = {abs/1806.05393},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1806.05393},
+  archivePrefix = {arXiv},
+  eprint    = {1806.05393}
+}
+
+@inproceedings{wei:2019,
+  author    = {Colin Wei and
+              Jason D. Lee and
+              Qiang Liu and
+              Tengyu Ma},
+  title     = {Regularization Matters: Generalization and Optimization of Neural
+              Nets v.s. their Induced Kernel},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  pages     = {9709--9721},
+  year      = {2019},
+  url       = {https://proceedings.neurips.cc/paper/2019/hash/8744cf92c88433f8cb04a02e6db69a0d-Abstract.html}
+}
+
+@inproceedings{xiao:2020,
+  author    = {Lechao Xiao and
+              Jeffrey Pennington and
+              Samuel Schoenholz},
+  title     = {Disentangling Trainability and Generalization in Deep Neural Networks},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {119},
+  pages     = {10462--10472},
+  publisher = {{PMLR}},
+  year      = {2020},
+  url       = {http://proceedings.mlr.press/v119/xiao20b.html}
+}
+
+@article{lewkowycz:2020,
+  author    = {Aitor Lewkowycz and
+              Yasaman Bahri and
+              Ethan Dyer and
+              Jascha Sohl{-}Dickstein and
+              Guy Gur{-}Ari},
+  title     = {The large learning rate phase of deep learning: the catapult mechanism},
+  journal   = {CoRR},
+  volume    = {abs/2003.02218},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2003.02218},
+  archivePrefix = {arXiv},
+  eprint    = {2003.02218}
+}
+
+@article{yang:2020,
+  author    = {Greg Yang and
+              J. Edward Hu},
+  title     = {Feature Learning in Infinite-Width Neural Networks},
+  journal   = {CoRR},
+  volume    = {abs/2011.14522},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2011.14522},
+  archivePrefix = {arXiv},
+  eprint    = {2011.14522}
+}
+
+@article{zavatone:2021,
+  title={Exact marginal prior distributions of finite Bayesian neural networks},
+  author={Zavatone-Veth, Jacob and Pehlevan, Cengiz},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021}
+}
+
+@article{halverson:2021,
+  title={Neural networks and quantum field theory},
+  author={Halverson, James and Maiti, Anindita and Stoner, Keegan},
+  journal={Machine Learning: Science and Technology},
+  volume={2},
+  number={3},
+  pages={035002},
+  year={2021},
+  publisher={IOP Publishing}
+}
+
+@article{vanderschaff:1996,
+title = {Modelling the Power Spectra of Natural Images: Statistics and Information},
+journal = {Vision Research},
+volume = {36},
+number = {17},
+pages = {2759-2770},
+year = {1996},
+issn = {0042-6989},
+doi = {https://doi.org/10.1016/0042-6989(96)00002-8},
+url = {https://www.sciencedirect.com/science/article/pii/0042698996000028},
+author = {A. {van der Schaaf} and J.H. {van Hateren}}
+}
+
+@inproceedings{rahimi:2007,
+  title={Random Features for Large-Scale Kernel Machines.},
+  author={Rahimi, Ali and Recht, Benjamin and others},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  volume={3},
+  pages={5},
+  year={2007},
+}
+
+@inproceedings{bordelon:2020-learning-curves,
+  title={Spectrum dependent learning curves in kernel regression and wide neural networks},
+  author={Bordelon, Blake and Canatar, Abdulkadir and Pehlevan, Cengiz},
+  booktitle={International Conference on Machine Learning},
+  pages={1024--1034},
+  year={2020},
+  organization={PMLR}
+}
+
+@article{bordelon:2021-sgd,
+  title={Learning Curves for SGD on Structured Features},
+  author={Bordelon, Blake and Pehlevan, Cengiz},
+  journal={arXiv preprint arXiv:2106.02713},
+  year={2021}
+}
+
+@article{canatar:2021-spectral-bias,
+  title={Spectral bias and task-model alignment explain generalization in kernel regression and infinitely wide neural networks},
+  author={Canatar, Abdulkadir and Bordelon, Blake and Pehlevan, Cengiz},
+  journal={Nature communications},
+  volume={12},
+  number={1},
+  pages={1--12},
+  year={2021},
+  publisher={Nature Publishing Group}
+}
+
+@article{belkin:2019-reconciling,
+  title={Reconciling modern machine-learning practice and the classical bias--variance trade-off},
+  author={Belkin, Mikhail and Hsu, Daniel and Ma, Siyuan and Mandal, Soumik},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={116},
+  number={32},
+  pages={15849--15854},
+  year={2019},
+  publisher={National Acad Sciences}
+}
+
+@article{frye:2012-harmonics,
+  title={Spherical harmonics in p dimensions},
+  author={Frye, Christopher and Efthimiou, Costas J},
+  journal={arXiv preprint arXiv:1205.3548},
+  year={2012}
+}
+
+@article{cohen:2021,
+  title={Learning curves for overparametrized deep neural networks: A field theory perspective},
+  author={Cohen, Omry and Malka, Or and Ringel, Zohar},
+  journal={Physical Review Research},
+  volume={3},
+  number={2},
+  pages={023034},
+  year={2021},
+  publisher={APS}
+}
+
+@article{wolpert:1996,
+  title={The lack of a priori distinctions between learning algorithms},
+  author={Wolpert, David H},
+  journal={Neural computation},
+  volume={8},
+  number={7},
+  pages={1341--1390},
+  year={1996},
+  publisher={MIT Press One Rogers Street, Cambridge, MA 02142-1209, USA journals-info~…}
+}
+
+@inproceedings{rahaman:2019-spectral-bias,
+  title={On the spectral bias of neural networks},
+  author={Rahaman, Nasim and Baratin, Aristide and Arpit, Devansh and Draxler, Felix and Lin, Min and Hamprecht, Fred and Bengio, Yoshua and Courville, Aaron},
+  booktitle={International Conference on Machine Learning},
+  pages={5301--5310},
+  year={2019},
+  organization={PMLR}
+}
+
+@article{sohl-dickstein:2020-parameterization,
+  title={On the infinite width limit of neural networks with a standard parameterization},
+  author={Sohl-Dickstein, Jascha and Novak, Roman and Schoenholz, Samuel S and Lee, Jaehoon},
+  journal={arXiv preprint arXiv:2001.07301},
+  year={2020}
+}
+
+@article{cao:2019-spectral-bias,
+  title={Towards understanding the spectral bias of deep learning},
+  author={Cao, Yuan and Fang, Zhiying and Wu, Yue and Zhou, Ding-Xuan and Gu, Quanquan},
+  journal={arXiv preprint arXiv:1912.01198},
+  year={2019}
+}
+
+@book{james:2013-intro-to-stat-learning,
+  title={An introduction to statistical learning},
+  author={James, Gareth and Witten, Daniela and Hastie, Trevor and Tibshirani, Robert},
+  volume={112},
+  year={2013},
+  publisher={Springer}
+}
+
+@article{valle:2018-spectral-bias,
+  title={Deep learning generalizes because the parameter-function map is biased towards simple functions},
+  author={Valle-Perez, Guillermo and Camargo, Chico Q and Louis, Ard A},
+  journal={arXiv preprint arXiv:1805.08522},
+  year={2018}
+}
+
+@article{yang:2019-hypercube-spectral-bias,
+  title={A fine-grained spectral perspective on neural networks},
+  author={Yang, Greg and Salman, Hadi},
+  journal={arXiv preprint arXiv:1907.10599},
+  year={2019}
+}
+
+@article{bietti:2019-inductive-bias,
+  title={On the inductive bias of neural tangent kernels},
+  author={Bietti, Alberto and Mairal, Julien},
+  journal={arXiv preprint arXiv:1905.12173},
+  year={2019}
+}
+
+@article{valle:2020-gen-bounds,
+  title={Generalization bounds for deep learning},
+  author={Valle-P{\'e}rez, Guillermo and Louis, Ard A},
+  journal={arXiv preprint arXiv:2012.04115},
+  year={2020}
+}
+
+@article{ortiz:2021,
+  title={What can linearized neural networks actually say about generalization?},
+  author={Ortiz-Jim{\'e}nez, Guillermo and Moosavi-Dezfooli, Seyed-Mohsen and Frossard, Pascal},
+  journal={arXiv preprint arXiv:2106.06770},
+  year={2021}
+}
+
+@article{spigler:2020,
+  title={Asymptotic learning curves of kernel methods: empirical data versus teacher--student paradigm},
+  author={Spigler, Stefano and Geiger, Mario and Wyart, Matthieu},
+  journal={Journal of Statistical Mechanics: Theory and Experiment},
+  volume={2020},
+  number={12},
+  pages={124001},
+  year={2020},
+  publisher={IOP Publishing}
+}
+
+@book{shawe:2004,
+  title={Kernel methods for pattern analysis},
+  author={Shawe-Taylor, John and Cristianini, Nello and others},
+  year={2004},
+  publisher={Cambridge university press}
+}
+
+@inproceedings{xu:2019-frequency-principle-A,
+  title={Training behavior of deep neural network in frequency domain},
+  author={Xu, Zhi-Qin John and Zhang, Yaoyu and Xiao, Yanyang},
+  booktitle={International Conference on Neural Information Processing},
+  pages={264--274},
+  year={2019},
+  organization={Springer}
+}
+
+@article{xu:2019-frequency-principle-B,
+  title={Frequency principle: Fourier analysis sheds light on deep neural networks},
+  author={Xu, Zhi-Qin John and Zhang, Yaoyu and Luo, Tao and Xiao, Yanyang and Ma, Zheng},
+  journal={arXiv preprint arXiv:1901.06523},
+  year={2019}
+}
+
+@article{xu:2018-frequency-principle-theory,
+  title={Understanding training and generalization in deep learning by fourier analysis},
+  author={Xu, Zhiqin John},
+  journal={arXiv preprint arXiv:1808.04295},
+  year={2018}
+}
+
+@article{su:2019-spectral-bias,
+  title={On learning over-parameterized neural networks: A functional approximation perspective},
+  author={Su, Lili and Yang, Pengkun},
+  journal={arXiv preprint arXiv:1905.10826},
+  year={2019}
+}
+
+@inproceedings{arora:2019-NTK-gen-bound,
+  title={Fine-grained analysis of optimization and generalization for overparameterized two-layer neural networks},
+  author={Arora, Sanjeev and Du, Simon and Hu, Wei and Li, Zhiyuan and Wang, Ruosong},
+  booktitle={International Conference on Machine Learning},
+  pages={322--332},
+  year={2019},
+  organization={PMLR}
+}
+
+@inproceedings{belkin:2019-interp-and-optimality,
+  title={Does data interpolation contradict statistical optimality?},
+  author={Belkin, Mikhail and Rakhlin, Alexander and Tsybakov, Alexandre B},
+  booktitle={The 22nd International Conference on Artificial Intelligence and Statistics},
+  pages={1611--1619},
+  year={2019},
+  organization={PMLR}
+}
+
+@inproceedings{belkin:2018-understanding,
+  title={To understand deep learning we need to understand kernel learning},
+  author={Belkin, Mikhail and Ma, Siyuan and Mandal, Soumik},
+  booktitle={International Conference on Machine Learning},
+  pages={541--549},
+  year={2018},
+  organization={PMLR}
+}
+
+@article{belkin:2018-interp-bounds,
+  title={Overfitting or perfect fitting? risk bounds for classification and regression rules that interpolate},
+  author={Belkin, Mikhail and Hsu, Daniel and Mitra, Partha},
+  journal={arXiv preprint arXiv:1806.05161},
+  year={2018}
+}
+
+@article{liang:2020,
+  title={Just interpolate: Kernel “ridgeless” regression can generalize},
+  author={Liang, Tengyuan and Rakhlin, Alexander},
+  journal={The Annals of Statistics},
+  volume={48},
+  number={3},
+  pages={1329--1347},
+  year={2020},
+  publisher={Institute of Mathematical Statistics}
+}
+
+@article{sollich:2002,
+  title={Learning curves for Gaussian process regression: Approximations and bounds},
+  author={Sollich, Peter and Halees, Anason},
+  journal={Neural computation},
+  volume={14},
+  number={6},
+  pages={1393--1428},
+  year={2002},
+  publisher={MIT Press One Rogers Street, Cambridge, MA 02142-1209, USA journals-info~…}
+}
+
+@article{sollich:1999,
+  title={Learning curves for Gaussian processes},
+  author={Sollich, Peter},
+  journal={Advances in neural information processing systems},
+  pages={344--350},
+  year={1999},
+  publisher={MIT; 1998}
+}
+
+@article{sollich:2001-mismatched,
+  title={Gaussian process regression with mismatched models},
+  author={Sollich, Peter},
+  journal={arXiv preprint cond-mat/0106475},
+  year={2001}
+}
+
+@article{vivarelli:1999,
+  title={General bounds on Bayes errors for regression with Gaussian processes},
+  author={Vivarelli, F and Opper, M},
+  journal={Advances in neural information processing systems},
+  volume={11},
+  pages={302--308},
+  year={1999}
+}
+
+@book{odonnell:2014,
+  title={Analysis of boolean functions},
+  author={O'Donnell, Ryan},
+  year={2014},
+  publisher={Cambridge University Press}
+}
+
+@incollection{cho:2009,
+title = {Kernel Methods for Deep Learning},
+author = {Cho, Youngmin and Saul, Lawrence},
+booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+year = {2009},
+publisher = {Curran Associates, Inc.},
+url = {https://proceedings.neurips.cc/paper/2009/file/5751ec3e9a4feab575962e78e006250d-Paper.pdf}
+}
+
+@article{simon:2021-eigenlearning,
+  title={Neural Tangent Kernel Eigenvalues Accurately Predict Generalization},
+  author={Simon, James B and Dickens, Madeline and DeWeese, Michael R},
+  journal={arXiv preprint arXiv:2110.03922},
+  year={2021}
+}
+
+@software{bradbury:2018-jax,
+  author = {James Bradbury and Roy Frostig and Peter Hawkins and Matthew James Johnson and Chris Leary and Dougal Maclaurin and George Necula and Adam Paszke and Jake Vander{P}las and Skye Wanderman-{M}ilne and Qiao Zhang},
+  title = {{JAX}: composable transformations of {P}ython+{N}um{P}y programs},
+  url = {http://github.com/google/jax},
+  version = {0.2.5},
+  year = {2018},
+}
+
+@incollection{neal:1996,
+  title={Priors for infinite networks},
+  author={Neal, Radford M},
+  booktitle={Bayesian Learning for Neural Networks},
+  pages={29--53},
+  year={1996},
+  publisher={Springer}
+}
+
+@inproceedings{kar:2012-rf_dot_product-kernels,
+  title={Random feature maps for dot product kernels},
+  author={Kar, Purushottam and Karnick, Harish},
+  booktitle={Artificial intelligence and statistics},
+  pages={583--591},
+  year={2012},
+  organization={PMLR}
+}
+
+@article{pennington:2015-rf_dot_product-kernels,
+  title={Spherical random features for polynomial kernels},
+  author={Pennington, Jeffrey and Felix, X Yu and Kumar, Sanjiv},
+  journal={Advances in neural information processing systems},
+  year={2015}
+}
+
+@article{nye:2018,
+  title={Are efficient deep representations learnable?},
+  author={Nye, Maxwell and Saxe, Andrew},
+  journal={arXiv preprint arXiv:1807.06399},
+  year={2018},
+  note={shows the basins for the parity problem are small}
+}
+
+@article{bengio:2006-curse,
+  title={The curse of highly variable functions for local kernel machines},
+  author={Bengio, Yoshua and Delalleau, Olivier and Le Roux, Nicolas},
+  journal={Advances in neural information processing systems},
+  volume={18},
+  pages={107},
+  year={2006},
+  publisher={MIT; 1998}
+}
+
+@article{bengio:2007-scaling,
+  title={Scaling learning algorithms towards AI},
+  author={Bengio, Yoshua and LeCun, Yann and others},
+  journal={Large-scale kernel machines},
+  volume={34},
+  number={5},
+  pages={1--41},
+  year={2007},
+  note={shows there's a small deep net solution to the parity problem}
+}
+
+@article{hohil:1999,
+  title={Solving the N-bit parity problem using neural networks},
+  author={Hohil, Myron E and Liu, Derong and Smith, Stanley H},
+  journal={Neural Networks},
+  volume={12},
+  number={9},
+  pages={1321--1323},
+  year={1999},
+  publisher={Elsevier}
+}
+
+@inproceedings{shi:2021,
+  title={Heuristic Search for Activation Functions of Neural Networks Based on Gaussian Processes},
+  author={Shi, Xinxing and Chen, Jialin and Wang, Lingli},
+  booktitle={2021 International Joint Conference on Neural Networks (IJCNN)},
+  pages={1--8},
+  year={2021},
+  organization={IEEE}
+}
+
+@inproceedings{du:2019-convergence,
+  title={Gradient descent finds global minima of deep neural networks},
+  author={Du, Simon and Lee, Jason and Li, Haochuan and Wang, Liwei and Zhai, Xiyu},
+  booktitle={International Conference on Machine Learning},
+  pages={1675--1685},
+  year={2019},
+  organization={PMLR}
+}
+
+@inproceedings{allen:2019-convergence,
+  title={A convergence theory for deep learning via over-parameterization},
+  author={Allen-Zhu, Zeyuan and Li, Yuanzhi and Song, Zhao},
+  booktitle={International Conference on Machine Learning},
+  pages={242--252},
+  year={2019},
+  organization={PMLR}
+}
+
+@article{zou:2018-convergence,
+  title={Stochastic gradient descent optimizes over-parameterized deep relu networks. arxiv e-prints, art},
+  author={Zou, Difan and Cao, Yuan and Zhou, Dongruo and Gu, Quanquan},
+  journal={arXiv preprint arXiv:1811.08888},
+  year={2018}
+}
+
+@article{dyer:2019-feynman-diagrams,
+  title={Asymptotics of wide networks from feynman diagrams},
+  author={Dyer, Ethan and Gur-Ari, Guy},
+  journal={arXiv preprint arXiv:1909.11304},
+  year={2019}
+}
+
+@article{cortes:2012,
+  title={Algorithms for learning kernels based on centered alignment},
+  author={Cortes, Corinna and Mohri, Mehryar and Rostamizadeh, Afshin},
+  journal={The Journal of Machine Learning Research},
+  volume={13},
+  number={1},
+  pages={795--828},
+  year={2012},
+  publisher={JMLR. org}
+}
+
+@incollection{cristianini:2006,
+  title={On kernel target alignment},
+  author={Cristianini, Nello and Kandola, Jaz and Elisseeff, Andre and Shawe-Taylor, John},
+  booktitle={Innovations in machine learning},
+  pages={205--256},
+  year={2006},
+  publisher={Springer}
+}
+
+@article{misiakiewicz:2021-convolutional-kernels,
+  title={Learning with convolution and pooling operations in kernel methods},
+  author={Misiakiewicz, Theodor and Mei, Song},
+  journal={arXiv preprint arXiv:2111.08308},
+  year={2021}
+}
+
+@article{xiao:2021-convnet-eigenspectra,
+  title={Eigenspace Restructuring: a Principle of Space and Frequency in Neural Networks},
+  author={Xiao, Lechao},
+  journal={arXiv preprint arXiv:2112.05611},
+  year={2021}
+}
+
+@article{goldenfeld:2006-turbulence,
+  title={Roughness-induced critical phenomena in a turbulent flow},
+  author={Goldenfeld, Nigel},
+  journal={Physical review letters},
+  volume={96},
+  number={4},
+  pages={044503},
+  year={2006},
+  publisher={APS}
+}
+
+@book{kardar:2007-stat-phys-of-fields,
+  title={Statistical physics of fields},
+  author={Kardar, Mehran},
+  year={2007},
+  publisher={Cambridge University Press}
+}
+
+@article{jacot:2020-KARE,
+  title={Kernel alignment risk estimator: risk prediction from training data},
+  author={Jacot, Arthur and {\c{S}}im{\c{s}}ek, Berfin and Spadaro, Francesco and Hongler, Cl{\'e}ment and Gabriel, Franck},
+  journal={arXiv preprint arXiv:2006.09796},
+  year={2020}
+}
+
+@inproceedings{nguyen:2021-ntk-eval-bounds,
+  title={Tight bounds on the smallest eigenvalue of the neural tangent kernel for deep relu networks},
+  author={Nguyen, Quynh and Mondelli, Marco and Montufar, Guido F},
+  booktitle={International Conference on Machine Learning},
+  pages={8119--8129},
+  year={2021},
+  organization={PMLR}
+}
+
+@article{mei:2019-double-descent,
+  title={The Generalization Error of Random Features Regression: Precise Asymptotics and the Double Descent Curve},
+  author={Mei, Song and Montanari, Andrea},
+  journal={Communications on Pure and Applied Mathematics},
+  year={2019},
+  publisher={Wiley Online Library}
+}
+
+@article{olah:2017,
+  title={Feature visualization},
+  author={Olah, Chris and Mordvintsev, Alexander and Schubert, Ludwig},
+  journal={Distill},
+  volume={2},
+  number={11},
+  pages={e7},
+  year={2017}
+}
+
+@inproceedings{yang:2021-tensor-programs-IV,
+  title={Tensor programs iv: Feature learning in infinite-width neural networks},
+  author={Yang, Greg and Hu, Edward J},
+  booktitle={International Conference on Machine Learning},
+  pages={11727--11737},
+  year={2021},
+  organization={PMLR}
+}
+
+@article{mei:2018-mean-field,
+  title={A mean field view of the landscape of two-layer neural networks},
+  author={Mei, Song and Montanari, Andrea and Nguyen, Phan-Minh},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={115},
+  number={33},
+  pages={E7665--E7671},
+  year={2018},
+  publisher={National Acad Sciences}
+}
+
+@article{lecun:2015-deep-learning,
+  title={Deep learning},
+  author={LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
+  journal={nature},
+  volume={521},
+  number={7553},
+  pages={436--444},
+  year={2015},
+  publisher={Nature Publishing Group}
+}
+
+@article{del:2014-cavity-method,
+  title={Cavity Method: Message Passing from a Physics Perspective},
+  author={Del Ferraro, Gino and Wang, Chuang and Mart{\'\i}, Dani and M{\'e}zard, Marc},
+  journal={arXiv preprint arXiv:1409.3048},
+  year={2014}
+}
+
+@article{schulz:2018-GP-regression,
+  title={A tutorial on Gaussian process regression: Modelling, exploring, and exploiting functions},
+  author={Schulz, Eric and Speekenbrink, Maarten and Krause, Andreas},
+  journal={Journal of Mathematical Psychology},
+  volume={85},
+  pages={1--16},
+  year={2018},
+  publisher={Elsevier}
+}
+
+@article{de:2015-krr-and-genetics,
+  title={The current and future use of ridge regression for prediction in quantitative genetics},
+  author={de Vlaming, Ronald and Groenen, Patrick JF},
+  journal={BioMed research international},
+  volume={2015},
+  year={2015},
+  publisher={Hindawi}
+}
+
+@article{exterkate:2016-krr-forecasting,
+  title={Nonlinear forecasting with many predictors using kernel ridge regression},
+  author={Exterkate, Peter and Groenen, Patrick JF and Heij, Christiaan and van Dijk, Dick},
+  journal={International Journal of Forecasting},
+  volume={32},
+  number={3},
+  pages={736--753},
+  year={2016},
+  publisher={Elsevier}
+}
+
+@article{gilmer:2018-adv-spheres,
+  title={Adversarial spheres},
+  author={Gilmer, Justin and Metz, Luke and Faghri, Fartash and Schoenholz, Samuel S and Raghu, Maithra and Wattenberg, Martin and Goodfellow, Ian},
+  journal={arXiv preprint arXiv:1801.02774},
+  year={2018}
+}
+
+@article{matthews:2018-nngp,
+  title={Gaussian process behaviour in wide deep neural networks},
+  author={Matthews, Alexander G de G and Rowland, Mark and Hron, Jiri and Turner, Richard E and Ghahramani, Zoubin},
+  journal={arXiv preprint arXiv:1804.11271},
+  year={2018}
+}
+
+@article{wilson:2020-bayesian-DL,
+  title={Bayesian deep learning and a probabilistic perspective of generalization},
+  author={Wilson, Andrew Gordon and Izmailov, Pavel},
+  journal={arXiv preprint arXiv:2002.08791},
+  year={2020}
+}
+
+@misc{dua:2017-UCI-datasets ,
+author = "Dua, Dheeru and Graff, Casey",
+year = "2017",
+title = "{UCI} Machine Learning Repository",
+url = "http://archive.ics.uci.edu/ml",
+institution = "University of California, Irvine, School of Information and Computer Sciences" }
+
+@article{simon:2022-rev-eng,
+  author    = {James B. Simon and
+               Sajant Anand and
+               Michael Robert DeWeese},
+  title     = {Reverse Engineering the Neural Tangent Kernel},
+  year      = {2022},
+  journal={arXiv preprint arXiv:2106.03186}
+}
+
+@article{bietti:2020-deep-equals-shallow,
+  title={Deep equals shallow for relu networks in kernel regimes},
+  author={Bietti, Alberto and Bach, Francis},
+  journal={arXiv preprint arXiv:2009.14397},
+  year={2020}
+}

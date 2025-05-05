@@ -1,0 +1,1204 @@
+@ARTICLE{CIRL2016,
+       author = {{Hadfield-Menell}, Dylan and {Dragan}, Anca and {Abbeel}, Pieter and {Russell}, Stuart},
+        title = {{Cooperative Inverse Reinforcement Learning}},
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Artificial Intelligence},
+         year = 2016,
+        month = jun,
+          eid = {arXiv:1606.03137},
+        pages = {arXiv:1606.03137},
+          doi = {10.48550/arXiv.1606.03137},
+archivePrefix = {arXiv},
+       eprint = {1606.03137},
+ primaryClass = {cs.AI},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2016arXiv160603137H},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+
+@book{Russel2010,
+  added-at = {2020-02-01T18:23:11.000+0100},
+  author = {Russell, Stuart and Norvig, Peter},
+  biburl = {https://www.bibsonomy.org/bibtex/20533b732950d1c5ab4ac12d4f32fe637/mialhoma},
+  edition = 3,
+  interhash = {53908a52dd4c6c8e39f93f4ffc8341be},
+  intrahash = {0533b732950d1c5ab4ac12d4f32fe637},
+  keywords = {ties4530},
+  publisher = {Prentice Hall},
+  timestamp = {2020-02-01T18:23:11.000+0100},
+  title = {{Artificial Intelligence: A Modern Approach}},
+  year = 2010
+}
+
+
+@misc{Shah2021,
+title={{Benefits of Assistance over Reward Learning}},
+author={Rohin Shah and Pedro Freire and Neel Alex and Rachel Freedman and Dmitrii Krasheninnikov and Lawrence Chan and Michael D Dennis and Pieter Abbeel and Anca Dragan and Stuart Russell},
+year={2021},
+url={https://openreview.net/forum?id=DFIoGDZejIB}
+}
+
+
+
+@ARTICLE{Christiano2017,
+       author = {{Christiano}, Paul and {Leike}, Jan and {Brown}, Tom B. and {Martic}, Miljan and {Legg}, Shane and {Amodei}, Dario},
+        title = {{Deep Reinforcement Learning from Human Preferences}},
+      journal = {arXiv e-prints},
+     keywords = {Statistics - Machine Learning, Computer Science - Artificial Intelligence, Computer Science - Human-Computer Interaction, Computer Science - Machine Learning},
+         year = 2017,
+        month = jun,
+          eid = {arXiv:1706.03741},
+        pages = {arXiv:1706.03741},
+          doi = {10.48550/arXiv.1706.03741},
+archivePrefix = {arXiv},
+       eprint = {1706.03741},
+ primaryClass = {stat.ML},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2017arXiv170603741C},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+
+
+@ARTICLE{Malik2018,
+       author = {{Malik}, Dhruv and {Palaniappan}, Malayandi and {Fisac}, Jaime F. and {Hadfield-Menell}, Dylan and {Russell}, Stuart and {Dragan}, Anca D.},
+        title = {{An Efficient, Generalized Bellman Update For Cooperative Inverse Reinforcement Learning}},
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Artificial Intelligence},
+         year = 2018,
+        month = jun,
+          eid = {arXiv:1806.03820},
+        pages = {arXiv:1806.03820},
+          doi = {10.48550/arXiv.1806.03820},
+archivePrefix = {arXiv},
+       eprint = {1806.03820},
+ primaryClass = {cs.AI},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2018arXiv180603820M},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+
+@article{Fern2014,
+author = {Fern, Alan and Natarajan, Sriraam and Judah, Kshitij and Tadepalli, Prasad},
+title = {{A Decision-Theoretic Model of Assistance}},
+year = {2014},
+issue_date = {May 2014},
+publisher = {AI Access Foundation},
+address = {El Segundo, CA, USA},
+volume = {50},
+number = {1},
+issn = {1076-9757},
+abstract = {There is a growing interest in intelligent assistants for a variety of applications from sorting email to helping people with disabilities to do their daily chores. In this paper, we formulate the problem of intelligent assistance in a decision-theoretic framework, and present both theoretical and empirical results. We first introduce a class of POMDPs called hidden-goal MDPs (HGMDPs), which formalizes the problem of interactively assisting an agent whose goal is hidden and whose actions are observable. In spite of its restricted nature, we show that optimal action selection for HGMDPs is PSPACE-complete even for deterministic dynamics. We then introduce a more restricted model called helper action MDPs (HAMDPs), which are sufficient for modeling many real-world problems. We show classes of HAMDPs for which efficient algorithms are possible. More interestingly, for general HAMDPs we show that a simple myopic policy achieves a near optimal regret, compared to an oracle assistant that knows the agent's goal. We then introduce more sophisticated versions of this policy for the general case of HGMDPs that we combine with a novel approach for quickly learning about the agent being assisted. We evaluate our approach in two game-like computer environments where human subjects perform tasks, and in a real-world domain of providing assistance during folder navigation in a computer desktop environment. The results show that in all three domains the framework results in an assistant that substantially reduces user effort with only modest computation.},
+journal = {J. Artif. Int. Res.},
+month = {may},
+pages = {71–104},
+numpages = {34}
+}
+
+
+
+@inproceedings{Abbeel2004,
+author = {Abbeel, Pieter and Ng, Andrew Y.},
+title = {{Apprenticeship Learning via Inverse Reinforcement Learning}},
+year = {2004},
+isbn = {1581138385},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1015330.1015430},
+doi = {10.1145/1015330.1015430},
+abstract = {We consider learning in a Markov decision process where we are not explicitly given a reward function, but where instead we can observe an expert demonstrating the task that we want to learn to perform. This setting is useful in applications (such as the task of driving) where it may be difficult to write down an explicit reward function specifying exactly how different desiderata should be traded off. We think of the expert as trying to maximize a reward function that is expressible as a linear combination of known features, and give an algorithm for learning the task demonstrated by the expert. Our algorithm is based on using "inverse reinforcement learning" to try to recover the unknown reward function. We show that our algorithm terminates in a small number of iterations, and that even though we may never recover the expert's reward function, the policy output by the algorithm will attain performance close to that of the expert, where here performance is measured with respect to the expert's unknown reward function.},
+booktitle = {Proceedings of the Twenty-First International Conference on Machine Learning},
+pages = {1},
+location = {Banff, Alberta, Canada},
+series = {ICML '04}
+}
+
+
+
+@inproceedings{Ramachandran2007,
+author = {Ramachandran, Deepak and Amir, Eyal},
+title = {{Bayesian Inverse Reinforcement Learning}},
+year = {2007},
+publisher = {Morgan Kaufmann Publishers Inc.},
+address = {San Francisco, CA, USA},
+abstract = {Inverse Reinforcement Learning (IRL) is the problem of learning the reward function underlying a Markov Decision Process given the dynamics of the system and the behaviour of an expert. IRL is motivated by situations where knowledge of the rewards is a goal by itself (as in preference elicitation) and by the task of apprenticeship learning (learning policies from an expert). In this paper we show how to combine prior knowledge and evidence from the expert's actions to derive a probability distribution over the space of reward functions. We present efficient algorithms that find solutions for the reward learning and apprenticeship learning tasks that generalize well over these distributions. Experimental results show strong improvement for our methods over previous heuristic-based approaches.},
+booktitle = {Proceedings of the 20th International Joint Conference on Artifical Intelligence},
+pages = {2586–2591},
+numpages = {6},
+location = {Hyderabad, India},
+series = {IJCAI'07}
+}
+
+
+
+@inproceedings{Zhuang2020,
+author = {Zhuang, Simon and Hadfield-Menell, Dylan},
+title = {{Consequences of Misaligned AI}},
+year = {2020},
+isbn = {9781713829546},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {AI systems often rely on two key components: a specified goal or reward function and an optimization algorithm to compute the optimal behavior for that goal. This approach is intended to provide value for a principal: the user on whose behalf the agent acts. The objectives given to these agents often refer to a partial specification of the principal's goals. We consider the cost of this incompleteness by analyzing a model of a principal and an agent in a resource constrained world where the L attributes of the state correspond to different sources of utility for the principal. We assume that the reward function given to the agent only has support on J &lt; L attributes. The contributions of our paper are as follows: 1) we propose a novel model of an incomplete principal—agent problem from artificial intelligence; 2) we provide necessary and sufficient conditions under which indefinitely optimizing for any incomplete proxy objective leads to arbitrarily low overall utility; and 3) we show how modifying the setup to allow reward functions that reference the full state or allowing the principal to update the proxy objective over time can lead to higher utility solutions. The results in this paper argue that we should view the design of reward functions as an interactive and dynamic process and identifies a theoretical scenario where some degree of interactivity is desirable.},
+booktitle = {Proceedings of the 34th International Conference on Neural Information Processing Systems},
+articleno = {1322},
+numpages = {11},
+location = {Vancouver, BC, Canada},
+series = {NIPS'20}
+}
+
+
+@ARTICLE{Nayyar2012,
+       author = {{Nayyar}, Ashutosh and {Mahajan}, Aditya and {Teneketzis}, Demosthenis},
+        title = {{Decentralized Stochastic Control with Partial History Sharing: A Common Information Approach}},
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Systems and Control, Mathematics - Optimization and Control},
+         year = 2012,
+        month = sep,
+          eid = {arXiv:1209.1695},
+        pages = {arXiv:1209.1695},
+          doi = {10.48550/arXiv.1209.1695},
+archivePrefix = {arXiv},
+       eprint = {1209.1695},
+ primaryClass = {cs.SY},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2012arXiv1209.1695N},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+
+@InProceedings{Skalse2022Invariance,
+  title = 	 {{Invariance in Policy Optimisation and Partial Identifiability in Reward Learning}},
+  author =       {Skalse, Joar Max Viktor and Farrugia-Roberts, Matthew and Russell, Stuart and Abate, Alessandro and Gleave, Adam},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {32033--32058},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/skalse23a/skalse23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/skalse23a.html},
+  abstract = 	 {It is often very challenging to manually design reward functions for complex, real-world tasks. To solve this, one can instead use reward learning to infer a reward function from data. However, there are often multiple reward functions that fit the data equally well, even in the infinite-data limit. This means that the reward function is only partially identifiable. In this work, we formally characterise the partial identifiability of the reward function given several popular reward learning data sources, including expert demonstrations and trajectory comparisons. We also analyse the impact of this partial identifiability for several downstream tasks, such as policy optimisation. We unify our results in a framework for comparing data sources and downstream tasks by their invariances, with implications for the design and selection of data sources for reward learning.}
+}
+
+
+@ARTICLE{Woodward2019,
+       author = {{Woodward}, Mark and {Finn}, Chelsea and {Hausman}, Karol},
+        title = {{Learning to Interactively Learn and Assist}},
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Multiagent Systems},
+         year = 2019,
+        month = jun,
+          eid = {arXiv:1906.10187},
+        pages = {arXiv:1906.10187},
+          doi = {10.48550/arXiv.1906.10187},
+archivePrefix = {arXiv},
+       eprint = {1906.10187},
+ primaryClass = {cs.AI},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2019arXiv190610187W},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@inproceedings{Mindermann2018,
+author = {Mindermann, Soren and Armstrong, Stuart},
+title = {{Occam's Razor is Insufficient to Infer the Preferences of Irrational Agents}},
+year = {2018},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {Inverse reinforcement learning (IRL) attempts to infer human rewards or preferences from observed behavior. Since human planning systematically deviates from rationality, several approaches have been tried to account for specific human shortcomings. However, the general problem of inferring the reward function of an agent of unknown rationality has received little attention. Unlike the well-known ambiguity problems in IRL, this one is practically relevant but cannot be resolved by observing the agent's policy in enough environments. This paper shows (1) that a No Free Lunch result implies it is impossible to uniquely decompose a policy into a planning algorithm and reward function, and (2) that even with a reasonable simplicity prior/Occam's razor on the set of decompositions, we cannot distinguish between the true decomposition and others that lead to high regret. To address this, we need simple 'normative' assumptions, which cannot be deduced exclusively from observations.},
+booktitle = {Proceedings of the 32nd International Conference on Neural Information Processing Systems},
+pages = {5603–5614},
+numpages = {12},
+location = {Montr\'{e}al, Canada},
+series = {NIPS'18}
+}
+
+@inproceedings{Hadfield-Menell2017,
+author = {Hadfield-Menell, Dylan and Dragan, Anca and Abbeel, Pieter and Russell, Stuart},
+title = {{The Off-Switch Game}},
+year = {2017},
+isbn = {9780999241103},
+publisher = {AAAI Press},
+abstract = {It is clear that one of the primary tools we can use to mitigate the potential risk from a misbehaving AI system is the ability to turn the system off. As the capabilities of AI systems improve, it is important to ensure that such systems do not adopt subgoals that prevent a human from switching them off. This is a challenge because many formulations of rational agents create strong incentives for self-preservation. This is not caused by a built-in instinct, but because a rational agent will maximize expected utility and cannot achieve whatever objective it has been given if it is dead. Our goal is to study the incentives an agent has to allow itself to be switched off. We analyze a simple game between a human H and a robot R, where H can press R's off switch but R can disable the off switch. A traditional agent takes its reward function for granted: we show that such agents have an incentive to disable the off switch, except in the special case where H is perfectly rational. Our key insight is that for R to want to preserve its off switch, it needs to be uncertain about the utility associated with the outcome, and to treat H's actions as important observations about that utility. (R also has no incentive to switch itself off in this setting.) We conclude that giving machines an appropriate level of uncertainty about their objectives leads to safer designs, and we argue that this setting is a useful generalization of the classical AI paradigm of rational agents.},
+booktitle = {Proceedings of the 26th International Joint Conference on Artificial Intelligence},
+pages = {220–227},
+numpages = {8},
+location = {Melbourne, Australia},
+series = {IJCAI'17}
+}
+
+@inproceedings{
+Skalse2022Reward,
+title={{Defining and Characterizing Reward Hacking}},
+author={Joar Max Viktor Skalse and Nikolaus H. R. Howe and Dmitrii Krasheninnikov and David Krueger},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=yb3HOXO3lX2}
+}
+
+@inproceedings{Jeon2020,
+ author = {Jeon, Hong Jun and Milli, Smitha and Dragan, Anca},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+ pages = {4415--4426},
+ publisher = {Curran Associates, Inc.},
+ title = {{Reward-rational (implicit) choice: A unifying formalism for reward learning}},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2020/file/2f10c1578a0706e06b6d7db6f0b4a6af-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}
+
+
+@inproceedings{Carey2018,
+author = {Carey, Ryan},
+title = {{Incorrigibility in the CIRL Framework}},
+year = {2018},
+isbn = {9781450360128},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3278721.3278750},
+doi = {10.1145/3278721.3278750},
+abstract = {A value learning system has incentives to follow shutdown instructions, assuming the shutdown instruction provides information (in the technical sense) about which actions lead to valuable outcomes. However, this assumption is not robust to model mis-specification (e.g., in the case of programmer errors). We demonstrate this by presenting some Supervised POMDP scenarios in which errors in the parameterized reward function remove the incentive to follow shutdown commands. These difficulties parallel those discussed by Soares et al. 2015 in their paper on corrigibility. We argue that it is important to consider systems that follow shutdown commands under some weaker set of assumptions (e.g., that one small verified module is correctly implemented; as opposed to an entire prior probability distribution and/or parameterized reward function). We discuss some difficulties with simple ways to attempt to attain these sorts of guarantees in a value learning framework.},
+booktitle = {Proceedings of the 2018 AAAI/ACM Conference on AI, Ethics, and Society},
+pages = {30–35},
+numpages = {6},
+keywords = {ai safety, cooperative inverse reinforcement learning, corrigibility, cirl},
+location = {New Orleans, LA, USA},
+series = {AIES '18}
+}
+
+
+@article{Sondik1973,
+author = {Sondik, Edward},
+year = {1973},
+month = {04},
+pages = {282-304},
+title = {{The Optimal Control of Partially Observable Markov Process over the Infinite Horizon: Discounted Costs}},
+volume = {26},
+journal = {Operations Research},
+doi = {10.1287/opre.26.2.282}
+}
+
+
+@Article{Stray2023,
+AUTHOR = {Stray, Jonathan},
+TITLE = {{The AI Learns to Lie to Please You: Preventing Biased Feedback Loops in Machine-Assisted Intelligence Analysis}},
+JOURNAL = {Analytics},
+VOLUME = {2},
+YEAR = {2023},
+NUMBER = {2},
+PAGES = {350--358},
+URL = {https://www.mdpi.com/2813-2203/2/2/20},
+ISSN = {2813-2203},
+ABSTRACT = {Researchers are starting to design AI-powered systems to automatically select and summarize the reports most relevant to each analyst, which raises the issue of bias in the information presented. This article focuses on the selection of relevant reports without an explicit query, a task known as recommendation. Drawing on previous work documenting the existence of human-machine feedback loops in recommender systems, this article reviews potential biases and mitigations in the context of intelligence analysis. Such loops can arise when behavioral &ldquo;engagement&rdquo; signals such as clicks or user ratings are used to infer the value of displayed information. Even worse, there can be feedback loops in the collection of intelligence information because users may also be responsible for tasking collection. Avoiding misalignment feedback loops requires an alternate, ongoing, non-engagement signal of information quality. Existing evaluation scales for intelligence product quality and rigor, such as the IC Rating Scale, could provide ground-truth feedback. This sparse data can be used in two ways: for human supervision of average performance and to build models that predict human survey ratings for use at recommendation time. Both techniques are widely used today by social media platforms. Open problems include the design of an ideal human evaluation method, the cost of skilled human labor, and the sparsity of the resulting data.},
+DOI = {10.3390/analytics2020020}
+}
+
+@inproceedings{Laidlaw2021,
+title={{Uncertain Decisions Facilitate Better Preference Learning}},
+author={Cassidy Laidlaw and Stuart Russell},
+booktitle={Advances in Neural Information Processing Systems},
+editor={A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+year={2021},
+url={https://openreview.net/forum?id=sNKpWhzEDWS}
+}
+
+@misc{Christiano2021,
+  author = {Christiano, Paul and Cotra, Ajeya and Xu, Mark},
+  title = {{Eliciting Latent Knowledge}},
+  howpublished = {\url{https://docs.google.com/document/d/1WwsnJQstPq91_Yh-Ch2XRL8H_EpsnjrC1dwZXR37PC8/edit}},
+  note = {Accessed: 2023-04-25},
+  year = {2021}
+}
+
+
+
+
+@inproceedings{Shah2018,
+title={{The Implicit Preference Information in an Initial State}},
+author={Rohin Shah and Dmitrii Krasheninnikov and Jordan Alexander and Pieter Abbeel and Anca Dragan},
+booktitle={International Conference on Learning Representations},
+year={2019},
+url={https://openreview.net/forum?id=rkevMnRqYQ},
+}
+
+
+@inbook{Carroll2019,
+author = {Carroll, Micah and Shah, Rohin and Ho, Mark K. and Griffiths, Thomas L. and Seshia, Sanjit A. and Abbeel, Pieter and Dragan, Anca},
+booktitle = {{On the Utility of Learning about Humans for Human-AI Coordination}},
+year = {2019},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {While we would like agents that can coordinate with humans, current algorithms such as self-play and population-based training create agents that can coordinate with themselves. Agents that assume their partner to be optimal or similar to them can converge to coordination protocols that fail to understand and be understood by humans. To demonstrate this, we introduce a simple environment that requires challenging coordination, based on the popular game Overcooked, and learn a simple model that mimics human play. We evaluate the performance of agents trained via self-play and population-based training. These agents perform very well when paired with themselves, but when paired with our human model, they are significantly worse than agents designed to play with the human model. An experiment with a planning algorithm yields the same conclusion, though only when the human-aware planner is given the exact human model that it is playing with. A user study with real humans shows this pattern as well, though less strongly. Qualitatively, we find that the gains come from having the agent adapt to the human's gameplay. Given this result, we suggest several approaches for designing agents that learn about humans in order to better coordinate with them. Code is available at https://github.com/HumanCompatibleAI/overcooked_ai.},
+booktitle = {Proceedings of the 33rd International Conference on Neural Information Processing Systems},
+articleno = {465},
+numpages = {12}
+}
+
+@inproceedings{Wilson2012,
+ author = {Wilson, Aaron and Fern, Alan and Tadepalli, Prasad},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {F. Pereira and C.J. Burges and L. Bottou and K.Q. Weinberger},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {{A Bayesian Approach for Policy Learning from Trajectory Preference Queries}},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2012/file/16c222aa19898e5058938167c8ab6c57-Paper.pdf},
+ volume = {25},
+ year = {2012}
+}
+
+@inproceedings{Busa-Fekete2013,
+  title={{Preference-based Evolutionary Direct Policy Search}},
+  author={R{\'o}bert Busa-Fekete and Bal{\'a}zs Sz{\"o}r{\'e}nyi and Paul Weng and Weiwei Cheng and Eyke H{\"u}llermeier},
+  year={2013}
+}
+
+@inproceedings{Akrour2011,
+author = {Akrour, Riad and Schoenauer, Marc and Sebag, Michèle},
+year = {2011},
+month = {09},
+pages = {12-27},
+title = {{Preference-Based Policy Learning}},
+isbn = {978-3-642-23779-9},
+doi = {10.1007/978-3-642-23780-5_11}
+}
+
+@unknown{Critch2022,
+author = {Critch, Andrew and Dennis, Michael and Russell, Stuart},
+year = {2022},
+month = {08},
+pages = {},
+title = {{Cooperative and uncooperative institution designs: Surprises and problems in open-source game theory}}
+}
+
+@inproceedings{Fried2018a,
+    title = {{Unified Pragmatic Models for Generating and Following Instructions}},
+    author = "Fried, Daniel  and
+      Andreas, Jacob  and
+      Klein, Dan",
+    booktitle = "Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)",
+    month = jun,
+    year = "2018",
+    address = "New Orleans, Louisiana",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N18-1177",
+    doi = "10.18653/v1/N18-1177",
+    pages = "1951--1963",
+    abstract = "We show that explicit pragmatic inference aids in correctly generating and following natural language instructions for complex, sequential tasks. Our pragmatics-enabled models reason about why speakers produce certain instructions, and about how listeners will react upon hearing them. Like previous pragmatic models, we use learned base listener and speaker models to build a pragmatic speaker that uses the base listener to simulate the interpretation of candidate descriptions, and a pragmatic listener that reasons counterfactually about alternative descriptions. We extend these models to tasks with sequential structure. Evaluation of language generation and interpretation shows that pragmatic inference improves state-of-the-art listener models (at correctly interpreting human instructions) and speaker models (at producing instructions correctly interpreted by humans) in diverse settings.",
+}
+
+@inproceedings{Fried2018b,
+author = {Fried, Daniel and Hu, Ronghang and Cirik, Volkan and Rohrbach, Anna and Andreas, Jacob and Morency, Louis-Philippe and Berg-Kirkpatrick, Taylor and Saenko, Kate and Klein, Dan and Darrell, Trevor},
+title = {{Speaker-Follower Models for Vision-and-Language Navigation}},
+year = {2018},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {Navigation guided by natural language instructions presents a challenging reasoning problem for instruction followers. Natural language instructions typically identify only a few high-level decisions and landmarks rather than complete lowlevel motor behaviors; much of the missing information must be inferred based on perceptual context. In machine learning settings, this is doubly challenging: it is difficult to collect enough annotated data to enable learning of this reasoning process from scratch, and also difficult to implement the reasoning process using generic sequence models. Here we describe an approach to vision-and-language navigation that addresses both these issues with an embedded speaker model. We use this speaker model to (1) synthesize new instructions for data augmentation and to (2) implement pragmatic reasoning, which evaluates how well candidate action sequences explain an instruction. Both steps are supported by a panoramic action space that reflects the granularity of human-generated instructions. Experiments show that all three components of this approach—speaker-driven data augmentation, pragmatic reasoning and panoramic action space—dramatically improve the performance of a baseline instruction follower, more than doubling the success rate over the best existing approach on a standard benchmark.},
+booktitle = {Proceedings of the 32nd International Conference on Neural Information Processing Systems},
+pages = {3318–3329},
+numpages = {12},
+location = {Montr\'{e}al, Canada},
+series = {NIPS'18}
+}
+
+@book{Winograd1972,
+author = {Winograd, Terry},
+title = {{Understanding Natural Language}},
+year = {1972},
+isbn = {0127597506},
+publisher = {Academic Press, Inc.},
+address = {USA}
+}
+
+
+@inproceedings{Tellex2011,
+  added-at = {2011-08-09T00:00:00.000+0200},
+  author = {Tellex, Stefanie and Kollar, Thomas and Dickerson, Steven and Walter, Matthew R. and Banerjee, Ashis Gopal and Teller, Seth J. and Roy, Nicholas},
+  biburl = {https://www.bibsonomy.org/bibtex/2544c98b2a7f325739db444e3038d1736/dblp},
+  booktitle = {AAAI},
+  crossref = {conf/aaai/2011},
+  editor = {Burgard, Wolfram and Roth, Dan},
+  ee = {http://www.aaai.org/ocs/index.php/AAAI/AAAI11/paper/view/3623},
+  interhash = {94e7a27fd47f749c6503248d49f0497b},
+  intrahash = {544c98b2a7f325739db444e3038d1736},
+  keywords = {dblp},
+  publisher = {AAAI Press},
+  timestamp = {2011-08-10T11:33:33.000+0200},
+  title = {{Understanding Natural Language Commands for Robotic Navigation and Mobile Manipulation.}},
+  url = {http://dblp.uni-trier.de/db/conf/aaai/aaai2011.html#TellexKDWBTR11},
+  year = 2011
+}
+
+@inproceedings{Fu2019,
+title={{From Language to Goals: Inverse Reinforcement Learning for Vision-Based Instruction Following}},
+author={Justin Fu and Anoop Korattikara and Sergey Levine and Sergio Guadarrama},
+booktitle={International Conference on Learning Representations},
+year={2019},
+url={https://openreview.net/forum?id=r1lq1hRqYQ},
+}
+
+@misc{FullyUpdated,
+  title = {{Problem of fully updated deference}},
+  howpublished = {\url{https://arbital.com/p/updated_deference/}},
+  note = {Accessed: 2023-04-26}
+}
+
+@misc{Freedman2022,
+  title = {{CIRL Corrigibility is Fragile}},
+  author = {Freedman, Rachel and Gleave, Adam},
+  howpublished = {\url{https://www.lesswrong.com/posts/PGK3AJtNG4rPHuZxy/cirl-corrigibility-is-fragile}},
+  year = {2022},
+  note = {Accessed: 2023-04-26}
+}
+
+@inproceedings{Ng1999,
+author = {Ng, Andrew Y. and Harada, Daishi and Russell, Stuart J.},
+title = {{Policy Invariance Under Reward Transformations: Theory and Application to Reward Shaping}},
+year = {1999},
+isbn = {1558606122},
+publisher = {Morgan Kaufmann Publishers Inc.},
+address = {San Francisco, CA, USA},
+booktitle = {Proceedings of the Sixteenth International Conference on Machine Learning},
+pages = {278–287},
+numpages = {10},
+series = {ICML '99}
+}
+
+
+@ARTICLE{Bai2022Constitutional,
+       author = {{Bai}, Yuntao and {Kadavath}, Saurav and {Kundu}, Sandipan and {Askell}, Amanda and {Kernion}, Jackson and {Jones}, Andy and {Chen}, Anna and {Goldie}, Anna and {Mirhoseini}, Azalia and {McKinnon}, Cameron and {Chen}, Carol and {Olsson}, Catherine and {Olah}, Christopher and {Hernandez}, Danny and {Drain}, Dawn and {Ganguli}, Deep and {Li}, Dustin and {Tran-Johnson}, Eli and {Perez}, Ethan and {Kerr}, Jamie and {Mueller}, Jared and {Ladish}, Jeffrey and {Landau}, Joshua and {Ndousse}, Kamal and {Lukosuite}, Kamile and {Lovitt}, Liane and {Sellitto}, Michael and {Elhage}, Nelson and {Schiefer}, Nicholas and {Mercado}, Noemi and {DasSarma}, Nova and {Lasenby}, Robert and {Larson}, Robin and {Ringer}, Sam and {Johnston}, Scott and {Kravec}, Shauna and {El Showk}, Sheer and {Fort}, Stanislav and {Lanham}, Tamera and {Telleen-Lawton}, Timothy and {Conerly}, Tom and {Henighan}, Tom and {Hume}, Tristan and {Bowman}, Samuel R. and {Hatfield-Dodds}, Zac and {Mann}, Ben and {Amodei}, Dario and {Joseph}, Nicholas and {McCandlish}, Sam and {Brown}, Tom and {Kaplan}, Jared},
+        title = "{{Constitutional AI: Harmlessness from AI Feedback}}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Computation and Language, Computer Science - Artificial Intelligence},
+         year = 2022,
+        month = dec,
+          eid = {arXiv:2212.08073},
+        pages = {arXiv:2212.08073},
+          doi = {10.48550/arXiv.2212.08073},
+archivePrefix = {arXiv},
+       eprint = {2212.08073},
+ primaryClass = {cs.CL},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2022arXiv221208073B},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@article{Cohen2022, 
+  title={{Advanced Artificial Agents Intervene in the Provision of Reward}}, 
+  volume={43}, 
+  url={https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/15084}, 
+  DOI={10.1002/aaai.12064}, 
+  number={3}, 
+  journal={AI Magazine}, 
+  author={Cohen, Michael and Hutter, Marcus and Osborne, Michael}, 
+  year={2022}, 
+  month={Aug.}, 
+  pages={282-293} 
+}
+
+
+@ARTICLE{Skalse2022Misspecification,
+       author = {{Skalse}, Joar and {Abate}, Alessandro},
+        title = {{Misspecification in Inverse Reinforcement Learning}},
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Machine Learning},
+         year = 2022,
+        month = dec,
+          eid = {arXiv:2212.03201},
+        pages = {arXiv:2212.03201},
+          doi = {10.48550/arXiv.2212.03201},
+archivePrefix = {arXiv},
+       eprint = {2212.03201},
+ primaryClass = {cs.LG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2022arXiv221203201S},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{Horak2023,
+title = {{Solving zero-sum one-sided partially observable stochastic games}},
+journal = {Artificial Intelligence},
+volume = {316},
+pages = {103838},
+year = {2023},
+issn = {0004-3702},
+doi = {https://doi.org/10.1016/j.artint.2022.103838},
+url = {https://www.sciencedirect.com/science/article/pii/S0004370222001783},
+author = {Karel Horák and Branislav Bošanský and Vojtěch Kovařík and Christopher Kiekintveld},
+keywords = {Zero-sum partially observable stochastic games, One-sided information, Value iteration, Heuristic search value iteration},
+abstract = {Many real-world situations are dynamic, with long-term interactions between multiple agents with uncertainty and limited observations. The agents must reason about which actions to take while also predicting and learning about what actions the other agents will take and how their choices will interact. In the most general setting, there is no limitation on the length of the sequence of actions the agent can perform — that is, there is no fixed horizon that can be used as an endpoint for analysis. These settings can be modeled as partially observable stochastic games (POSGs). Many adversarial domains (e.g., security settings) can be modeled as strictly competitive (or zero-sum) variants of these games. While these models are capable of modeling a wide variety of realistic problems, solving general POSGs is computationally intractable, so we focus on a broad subclass of POSGs called one-sided POSGs. In these games, only one agent has imperfect information while their opponent has full knowledge of the current situation. We provide a complete approach for solving zero-sum, one-sided POSGs: we (1) give a theoretical analysis of one-sided POSGs and their value functions, (2) show that a variant of a value-iteration algorithm converges in this setting, (3) adapt the heuristic search value-iteration algorithm for solving one-sided POSGs, (4) describe how to use approximate value functions to derive strategies in the game, and (5) experimentally demonstrate that our algorithm can solve one-sided POSGs of non-trivial sizes and analyze the scalability of our algorithm in three different domains: pursuit-evasion, patrolling, and search games.}
+}
+
+
+
+@ARTICLE{Treutlein2021,
+       author = {{Treutlein}, Johannes and {Dennis}, Michael and {Oesterheld}, Caspar and {Foerster}, Jakob},
+        title = {{A New Formalism, Method and Open Issues for Zero-Shot Coordination}},
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+         year = 2021,
+        month = jun,
+          eid = {arXiv:2106.06613},
+        pages = {arXiv:2106.06613},
+          doi = {10.48550/arXiv.2106.06613},
+archivePrefix = {arXiv},
+       eprint = {2106.06613},
+ primaryClass = {cs.AI},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2021arXiv210606613T},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{Geiger1990,
+  title={{Identifying independence in bayesian networks}},
+  author={Dan Geiger and Thomas Verma and Judea Pearl},
+  journal={Networks},
+  year={1990},
+  volume={20},
+  pages={507-534},
+  url={https://api.semanticscholar.org/CorpusID:1938713}
+}
+
+@misc{Ouyang2022,
+      title={{Training language models to follow instructions with human feedback}}, 
+      author={Long Ouyang and Jeff Wu and Xu Jiang and Diogo Almeida and Carroll L. Wainwright and Pamela Mishkin and Chong Zhang and Sandhini Agarwal and Katarina Slama and Alex Ray and John Schulman and Jacob Hilton and Fraser Kelton and Luke Miller and Maddie Simens and Amanda Askell and Peter Welinder and Paul Christiano and Jan Leike and Ryan Lowe},
+      year={2022},
+      eprint={2203.02155},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@ARTICLE{Casper2023,
+      title={{Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback}}, 
+      author={Stephen Casper and Xander Davies and Claudia Shi and Thomas Krendl Gilbert and Jérémy Scheurer and Javier Rando and Rachel Freedman and Tomasz Korbak and David Lindner and Pedro Freire and Tony Wang and Samuel Marks and Charbel-Raphaël Segerie and Micah Carroll and Andi Peng and Phillip Christoffersen and Mehul Damani and Stewart Slocum and Usman Anwar and Anand Siththaranjan and Max Nadeau and Eric J. Michaud and Jacob Pfau and Dmitrii Krasheninnikov and Xin Chen and Lauro Langosco and Peter Hase and Erdem Bıyık and Anca Dragan and David Krueger and Dorsa Sadigh and Dylan Hadfield-Menell},
+      year={2023},
+      journal={arxiv e-prints},
+      eprint={2307.15217},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+
+@misc{Bowling2022,
+      title={{Settling the Reward Hypothesis}}, 
+      author={Michael Bowling and John D. Martin and David Abel and Will Dabney},
+      year={2022},
+      eprint={2212.10420},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+
+@misc{Openai2023,
+      title={{GPT-4 Technical Report}}, 
+      author={OpenAI},
+      year={2023},
+      eprint={2303.08774},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{Anthropic2023,
+  author = {Anthropic},
+  title = {{Introducing Claude}},
+  howpublished = {\url{https://www.anthropic.com/index/introducing-claude}},
+  year={2023},
+  note = {Accessed: 2023-09-05}
+}
+
+@misc{Google2023a,
+  author = {James Manyika}, 
+  title = {{An overview of Bard: an early experiment with generative AI}},
+  howpublished = {\url{https://ai.google/static/documents/google-about-bard.pdf}},
+  year={2023},
+  note = {Accessed: 2023-09-05}
+}
+
+@ARTICLE{Touvron2023,
+      title={{Llama 2: Open Foundation and Fine-Tuned Chat Models}}, 
+      author={Hugo Touvron and Louis Martin and Kevin Stone and Peter Albert and Amjad Almahairi and Yasmine Babaei and Nikolay Bashlykov and Soumya Batra and Prajjwal Bhargava and Shruti Bhosale and Dan Bikel and Lukas Blecher and Cristian Canton Ferrer and Moya Chen and Guillem Cucurull and David Esiobu and Jude Fernandes and Jeremy Fu and Wenyin Fu and Brian Fuller and Cynthia Gao and Vedanuj Goswami and Naman Goyal and Anthony Hartshorn and Saghar Hosseini and Rui Hou and Hakan Inan and Marcin Kardas and Viktor Kerkez and Madian Khabsa and Isabel Kloumann and Artem Korenev and Punit Singh Koura and Marie-Anne Lachaux and Thibaut Lavril and Jenya Lee and Diana Liskovich and Yinghai Lu and Yuning Mao and Xavier Martinet and Todor Mihaylov and Pushkar Mishra and Igor Molybog and Yixin Nie and Andrew Poulton and Jeremy Reizenstein and Rashi Rungta and Kalyan Saladi and Alan Schelten and Ruan Silva and Eric Michael Smith and Ranjan Subramanian and Xiaoqing Ellen Tan and Binh Tang and Ross Taylor and Adina Williams and Jian Xiang Kuan and Puxin Xu and Zheng Yan and Iliyan Zarov and Yuchen Zhang and Angela Fan and Melanie Kambadur and Sharan Narang and Aurelien Rodriguez and Robert Stojnic and Sergey Edunov and Thomas Scialom},
+      year={2023},
+      journal={arxiv e-prints},
+      eprint={2307.09288},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+
+@misc{Anthropic2023b,
+  author = {Anthropic},
+  title = {{Claude's Constitution}},
+  howpublished = {\url{https://www.anthropic.com/index/claudes-constitution}},
+  year = {2023},
+  note = {Accessed: 2023-09-05}
+}
+
+@misc{Ziegler2020,
+      title={{Fine-Tuning Language Models from Human Preferences}}, 
+      author={Daniel M. Ziegler and Nisan Stiennon and Jeffrey Wu and Tom B. Brown and Alec Radford and Dario Amodei and Paul Christiano and Geoffrey Irving},
+      year={2020},
+      eprint={1909.08593},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{Bai2022training,
+      title={{Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback}}, 
+      author={Yuntao Bai and Andy Jones and Kamal Ndousse and Amanda Askell and Anna Chen and Nova DasSarma and Dawn Drain and Stanislav Fort and Deep Ganguli and Tom Henighan and Nicholas Joseph and Saurav Kadavath and Jackson Kernion and Tom Conerly and Sheer El-Showk and Nelson Elhage and Zac Hatfield-Dodds and Danny Hernandez and Tristan Hume and Scott Johnston and Shauna Kravec and Liane Lovitt and Neel Nanda and Catherine Olsson and Dario Amodei and Tom Brown and Jack Clark and Sam McCandlish and Chris Olah and Ben Mann and Jared Kaplan},
+      year={2022},
+      eprint={2204.05862},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@inproceedings{Ng2000,
+  title={{Algorithms for Inverse Reinforcement Learning}},
+  author={Ng, Andrew Y and Russell, Stuart and others},
+  booktitle={ICML},
+  volume={1},
+  pages={2},
+  year={2000}
+}
+
+@inproceedings{schulman2015trust,
+  title={{Trust region policy optimization}},
+  author={Schulman, John and Levine, Sergey and Abbeel, Pieter and Jordan, Michael and Moritz, Philipp},
+  booktitle={International conference on machine learning},
+  pages={1889--1897},
+  year={2015},
+  organization={PMLR}
+}
+
+
+@article{Elghaoui2002,
+title = {{Inversion error, condition number, and approximate inverses of uncertain matrices}},
+journal = {Linear Algebra and its Applications},
+volume = {343-344},
+pages = {171-193},
+year = {2002},
+note = {Special Issue on Structured and Infinite Systems of Linear equations},
+issn = {0024-3795},
+doi = {https://doi.org/10.1016/S0024-3795(01)00273-7},
+url = {https://www.sciencedirect.com/science/article/pii/S0024379501002737},
+author = {Laurent {El Ghaoui}},
+keywords = {Structured matrix, Condition number, Linear fractional representation, Semidefinite programming, Vandermonde system, Total least squares},
+abstract = {The classical condition number is a very rough measure of the effect of perturbations on the inverse of a square matrix. First, it assumes that the perturbation is infinitesimally small. Second, it does not take into account the perturbation structure (e.g., Vandermonde). Similarly, the classical notion of the inverse of a matrix neglects the possibility of large, structured perturbations. We define a new quantity, the structured maximal inversion error, that takes into account both structure and non-necessarily small perturbation size. When the perturbation is infinitesimal, we obtain a “structured condition number”. We introduce the notion of approximate inverse, as a matrix that best approximates the inverse of a matrix with structured perturbations, when the perturbation varies in a given range. For a wide class of perturbation structures, we show how to use (convex) semidefinite programming to compute bounds on the structured maximal inversion error and structured condition number, and compute an approximate inverse. The results are exact when the perturbation is “unstructured”—we then obtain an analytic expression for the approximate inverse. When the perturbation is unstructured and additive, we recover the classical condition number; the approximate inverse is the operator related to the Total Least Squares (orthogonal regression) problem.}
+}
+
+@misc{Google2023b,
+  author = {Gemini Team, Google},
+  title = {{Gemini: A Family of Highly Capable Multimodal Models}},
+  howpublished = {\url{https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf}},
+  year={2023},
+  note = {Accessed: 2023-12-11}
+}
+
+@misc{Krakovna2020,
+author = {Victoria Krakovna and Jonathan Uesato and Vladimir Mikulik and Matthew Rahtz and Tom Everitt and Ramana Kumar and Zac Kenton and Jan Leike and Shane Legg},
+title = {{Specification gaming: the flip side of AI ingenuity}},
+howpublished = {\url{https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/}},
+year = {2023},
+note = {Accessed: 2023-12-11}
+}
+
+
+@article{Bradley_Terry1952,
+ ISSN = {00063444},
+ URL = {http://www.jstor.org/stable/2334029},
+ author = {Ralph Allan Bradley and Milton E. Terry},
+ journal = {Biometrika},
+ number = {3/4},
+ pages = {324--345},
+ publisher = {[Oxford University Press, Biometrika Trust]},
+ title = {{Rank Analysis of Incomplete Block Designs: I. The Method of Paired Comparisons}},
+ urldate = {2023-12-11},
+ volume = {39},
+ year = {1952}
+}
+
+
+@misc{Santurkar2023,
+      title={{Whose Opinions Do Language Models Reflect?}}, 
+      author={Shibani Santurkar and Esin Durmus and Faisal Ladhak and Cinoo Lee and Percy Liang and Tatsunori Hashimoto},
+      year={2023},
+      eprint={2303.17548},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{Hartmann2023,
+      title={{The political ideology of conversational AI: Converging evidence on ChatGPT's pro-environmental, left-libertarian orientation}}, 
+      author={Jochen Hartmann and Jasper Schwenzow and Maximilian Witte},
+      year={2023},
+      eprint={2301.01768},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{Sharma2023,
+      title={{Towards Understanding Sycophancy in Language Models}},
+      author={Mrinank Sharma and Meg Tong and Tomasz Korbak and David Duvenaud and Amanda Askell and Samuel R. Bowman and Newton Cheng and Esin Durmus and Zac Hatfield-Dodds and Scott R. Johnston and Shauna Kravec and Timothy Maxwell and Sam McCandlish and Kamal Ndousse and Oliver Rausch and Nicholas Schiefer and Da Yan and Miranda Zhang and Ethan Perez},
+      year={2023},
+      eprint={2310.13548},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{Saunders2022,
+      title={{Self-critiquing models for assisting human evaluators}}, 
+      author={William Saunders and Catherine Yeh and Jeff Wu and Steven Bills and Long Ouyang and Jonathan Ward and Jan Leike},
+      year={2022},
+      eprint={2206.05802},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{Bowman2022,
+      title={Measuring Progress on Scalable Oversight for Large Language Models}, 
+      author={Samuel R. Bowman and Jeeyoon Hyun and Ethan Perez and Edwin Chen and Craig Pettit and Scott Heiner and Kamilė Lukošiūtė and Amanda Askell and Andy Jones and Anna Chen and Anna Goldie and Azalia Mirhoseini and Cameron McKinnon and Christopher Olah and Daniela Amodei and Dario Amodei and Dawn Drain and Dustin Li and Eli Tran-Johnson and Jackson Kernion and Jamie Kerr and Jared Mueller and Jeffrey Ladish and Joshua Landau and Kamal Ndousse and Liane Lovitt and Nelson Elhage and Nicholas Schiefer and Nicholas Joseph and Noemí Mercado and Nova DasSarma and Robin Larson and Sam McCandlish and Sandipan Kundu and Scott Johnston and Shauna Kravec and Sheer El Showk and Stanislav Fort and Timothy Telleen-Lawton and Tom Brown and Tom Henighan and Tristan Hume and Yuntao Bai and Zac Hatfield-Dodds and Ben Mann and Jared Kaplan},
+      year={2022},
+      eprint={2211.03540},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC}
+}
+
+@misc{Amodei2017,
+  author={Dario Amodei and Paul Christiano and Alex Ray},
+  title={{Learning from human preferences}},
+  howpublished={\url{https://openai.com/research/learning-from-human-preferences}},
+  year={2017},
+  note={Accessed: 2023-12-13}
+}
+
+
+@misc{Mehdi2023,
+  author={Yusuf Mehdi},
+  title={{Announcing Microsoft Copilot, your everyday AI companion}},
+  howpublished={\url{https://blogs.microsoft.com/blog/2023/09/21/announcing-microsoft-copilot-your-everyday-ai-companion/}},
+  year={2023},
+  note={Accessed: 2023-12-13}
+}
+
+
+@misc{Gleave2021,
+      title={Quantifying Differences in Reward Functions}, 
+      author={Adam Gleave and Michael Dennis and Shane Legg and Stuart Russell and Jan Leike},
+      year={2021},
+      eprint={2006.13900},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+% Deception in the recent literature, not related to partial observability.
+
+
+
+% Deceptive Alignment
+@ARTICLE{Hubinger2019,
+       author = {{Hubinger}, Evan and {van Merwijk}, Chris and {Mikulik}, Vladimir and {Skalse}, Joar and {Garrabrant}, Scott},
+        title = "{Risks from Learned Optimization in Advanced Machine Learning Systems}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Artificial Intelligence},
+         year = 2019,
+        month = jun,
+          eid = {arXiv:1906.01820},
+        pages = {arXiv:1906.01820},
+          doi = {10.48550/arXiv.1906.01820},
+archivePrefix = {arXiv},
+       eprint = {1906.01820},
+ primaryClass = {cs.AI},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2019arXiv190601820H},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@misc{Hubinger2023,
+  author={Evan Hubinger and Nicholas Schiefer and Carson Denison and Ethan Perez},
+  title={{Model Organisms of Misalignment: The Case for a New Pillar of Alignment Research}},
+  howpublished={\url{https://www.alignmentforum.org/posts/ChDH335ckdvpxXaXX/model-organisms-of-misalignment-the-case-for-a-new-pillar-of-1}},
+  year={2023},
+  note={Accessed: 2024-01-23}
+}
+
+
+@ARTICLE{Hubinger2024,
+      title={{Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training}}, 
+      author={Evan Hubinger and Carson Denison and Jesse Mu and Mike Lambert and Meg Tong and Monte MacDiarmid and Tamera Lanham and Daniel M. Ziegler and Tim Maxwell and Newton Cheng and Adam Jermyn and Amanda Askell and Ansh Radhakrishnan and Cem Anil and David Duvenaud and Deep Ganguli and Fazl Barez and Jack Clark and Kamal Ndousse and Kshitij Sachan and Michael Sellitto and Mrinank Sharma and Nova DasSarma and Roger Grosse and Shauna Kravec and Yuntao Bai and Zachary Witten and Marina Favaro and Jan Brauner and Holden Karnofsky and Paul Christiano and Samuel R. Bowman and Logan Graham and Jared Kaplan and Sören Mindermann and Ryan Greenblatt and Buck Shlegeris and Nicholas Schiefer and Ethan Perez},
+      year={2024},
+      journal={arxiv e-prints},
+      eprint={2401.05566},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR}
+}
+
+
+@article{park2024ai,
+  title={AI deception: A survey of examples, risks, and potential solutions},
+  author={Park, Peter S and Goldstein, Simon and O’Gara, Aidan and Chen, Michael and Hendrycks, Dan},
+  journal={Patterns},
+  volume={5},
+  number={5},
+  year={2024},
+  publisher={Elsevier}
+}
+
+
+@ARTICLE{Scheurer2023,
+      title={{Technical Report: Large Language Models can Strategically Deceive their Users when Put Under Pressure}}, 
+      author={Jérémy Scheurer and Mikita Balesni and Marius Hobbhahn},
+      year={2023},
+      journal={arxiv e-prints},
+      eprint={2311.07590},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@ARTICLE{Reddy2020,
+      title={{Assisted Perception: Optimizing Observations to Communicate State}}, 
+      author={Siddharth Reddy and Sergey Levine and Anca D. Dragan},
+      year={2020},
+      journal={arxiv e-prints},
+      eprint={2008.02840},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+% Everitt's Definition
+@ARTICLE{Ward2023,
+      title={{Honesty Is the Best Policy: Defining and Mitigating AI Deception}}, 
+      author={Francis Rhys Ward and Francesco Belardinelli and Francesca Toni and Tom Everitt},
+      year={2023},
+      journal={arxiv e-prints},
+      eprint={2312.01350},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+
+@misc{Hofstaetter2023,
+  author={Felix Hofstätter and Francis Rhys Ward and HarrietW and Louis Thomson and Ollie J and Patrick Bartak and Sam F. Brown},
+  title={{Tall Tales at Different Scales: Evaluating Scaling Trends for Deception in Language Models}},
+  howpublished={\url{https://www.alignmentforum.org/posts/pip63HtEAxHGfSEGk/tall-tales-at-different-scales-evaluating-scaling-trends-for}},
+  year={2023},
+  note={Accessed: 2024-01-23}
+}
+
+@misc{chatgpt,
+title={Introducing {ChatGPT}},
+author={OpenAI},
+year={2022},
+howpublished={\url{https://openai.com/blog/chatgpt}},
+note={Accessed: 2024-02-06}
+}
+
+@article{siththaranjan2023distributional,
+  title={{Distributional Preference Learning: Understanding and Accounting for Hidden Context in RLHF}},
+  author={Siththaranjan, Anand and Laidlaw, Cassidy and Hadfield-Menell, Dylan},
+  journal={arXiv preprint arXiv:2312.08358},
+  year={2023}
+}
+
+@book{deci1995we,
+  title={Why we do what we do: The dynamics of personal autonomy.},
+  author={Deci, Edward L and Flaste, Richard},
+  year={1995},
+  publisher={GP Putnam's Sons}
+}
+
+@inproceedings{evans2016learning,
+  title={Learning the preferences of ignorant, inconsistent agents},
+  author={Evans, Owain and Stuhlm{\"u}ller, Andreas and Goodman, Noah},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={30},
+  year={2016}
+}
+
+@inproceedings{Ziebart2008,
+  added-at = {2012-12-10T00:00:00.000+0100},
+  author = {Ziebart, Brian D. and Maas, Andrew L. and Bagnell, J. Andrew and Dey, Anind K.},
+  biburl = {https://www.bibsonomy.org/bibtex/2231d8449e296188b91673570bc70b1d6/dblp},
+  booktitle = {AAAI},
+  editor = {Fox, Dieter and Gomes, Carla P.},
+  ee = {http://www.aaai.org/Library/AAAI/2008/aaai08-227.php},
+  interhash = {b7a2d62a0a6b56f0bf94f4392f8f445a},
+  intrahash = {231d8449e296188b91673570bc70b1d6},
+  isbn = {978-1-57735-368-3},
+  keywords = {dblp},
+  pages = {1433-1438},
+  publisher = {AAAI Press},
+  timestamp = {2012-12-11T11:46:42.000+0100},
+  title = {Maximum Entropy Inverse Reinforcement Learning.},
+  url = {http://dblp.uni-trier.de/db/conf/aaai/aaai2008.html#ZiebartMBD08},
+  year = 2008
+}
+
+
+% On humans not being Boltzmann rational
+
+
+@ARTICLE{Evans2015,
+      title={{Learning the Preferences of Ignorant, Inconsistent Agents}}, 
+      author={Owain Evans and Andreas Stuhlmueller and Noah D. Goodman},
+      year={2015},
+      eprint={1512.05832},
+      archivePrefix={arXiv},
+      journal={arxiv e-prints},
+      primaryClass={cs.AI}
+}
+
+
+@inproceedings{Anirudha2017,
+title = {{Risk-sensitive inverse reinforcement learning via coherent risk models}},
+author = "Anirudha Majumdar and Sumeet Singh and Ajay Mandlekar and Marco Pavone",
+year = "2017",
+doi = "10.15607/rss.2017.xiii.069",
+language = "English (US)",
+series = "Robotics: Science and Systems",
+publisher = "MIT Press Journals",
+editor = "Nancy Amato and Siddhartha Srinivasa and Nora Ayanian and Scott Kuindersma",
+booktitle = "Robotics",
+address = "United States",
+}
+
+
+@article{Buehler1994,
+author = {Buehler, Roger and Griffin, Dale and Ross, Michael},
+year = {1994},
+month = {09},
+pages = {366-381},
+title = {{Exploring the "Planning Fallacy": Why People Underestimate Their Task Completion Times}},
+volume = {67},
+journal = {Journal of Personality and Social Psychology},
+doi = {10.1037/0022-3514.67.3.366}
+}
+
+
+% On Truthfulness in LLMs
+
+@ARTICLE{Lin2022,
+      title={{TruthfulQA: Measuring How Models Mimic Human Falsehoods}}, 
+      author={Stephanie Lin and Jacob Hilton and Owain Evans},
+      year={2022},
+      eprint={2109.07958},
+      archivePrefix={arXiv},
+      journal={arxiv e-prints},
+      primaryClass={cs.CL}
+}
+
+
+@ARTICLE{Evans2021,
+      title={{Truthful AI: Developing and Governing AI that does not lie}}, 
+      author={Owain Evans and Owen Cotton-Barratt and Lukas Finnveden and Adam Bales and Avital Balwit and Peter Wills and Luca Righetti and William Saunders},
+      year={2021},
+      eprint={2110.06674},
+      journal={arxiv e-prints},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY}
+}
+
+@inproceedings{Burns2023,
+title={{Discovering Latent Knowledge in Language Models Without Supervision}},
+author={Collin Burns and Haotian Ye and Dan Klein and Jacob Steinhardt},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=ETKGuby0hcs}
+}
+
+
+@article{Huang2023,
+  title={{A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions}},
+  author={Huang, Lei and Yu, Weijiang and Ma, Weitao and Zhong, Weihong and Feng, Zhangyin and Wang, Haotian and Chen, Qianglong and Peng, Weihua and Feng, Xiaocheng and Qin, Bing and others},
+  journal={arXiv preprint arXiv:2311.05232},
+  year={2023}
+}
+
+
+
+@ARTICLE{Rafailov2023,
+      title={{Direct Preference Optimization: Your Language Model is Secretly a Reward Model}}, 
+      author={Rafael Rafailov and Archit Sharma and Eric Mitchell and Stefano Ermon and Christopher D. Manning and Chelsea Finn},
+      year={2023},
+      eprint={2305.18290},
+      journal={arxiv e-prints},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+
+@misc{ELK_prize_2022,
+title={{ELK prize results}},
+author={Paul Christiano and Mark Xu},
+year={2022},
+howpublished={\url{https://www.alignmentforum.org/posts/zjMKpSB2Xccn9qi5t/elk-prize-results}},
+note={Accessed: 2024-02-15}
+}
+
+@misc{Plugins_2023,
+title={{ChatGPT Plugins}},
+author={OpenAI},
+year={2023},
+howpublished={\url{https://openai.com/index/chatgpt-plugins/}},
+note={Accessed: 2024-05-22}
+}
+
+@misc{datausage_oai,
+title={{How your data is used to improve model performance}},
+author={OpenAI},
+year={2024},
+howpublished={\url{https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance/}},
+note={Accessed: 2024-05-22}
+}
+
+@misc{privacy_policy_oai,
+title={{Privacy Policy}},
+author={OpenAI},
+year={2024},
+howpublished={\url{https://openai.com/policies/privacy-policy//}},
+note={Accessed: 2024-05-22}
+}
+
+
+
+https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance
+
+
+@misc{Devin2024,
+title={{Introducing Devin, the first AI software engineer}},
+author={Scott Wu},
+year={2024},
+howpublished={\url{https://www.cognition-labs.com/introducing-devin}},
+note={Accessed: 2024-05-06}
+}
+
+
+@ARTICLE{Hejna2023,
+       author = {{Hejna}, Joey and {Sadigh}, Dorsa},
+        title = "{Inverse Preference Learning: Preference-based RL without a Reward Function}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Machine Learning},
+         year = 2023,
+        month = may,
+          eid = {arXiv:2305.15363},
+        pages = {arXiv:2305.15363},
+          doi = {10.48550/arXiv.2305.15363},
+archivePrefix = {arXiv},
+       eprint = {2305.15363},
+ primaryClass = {cs.LG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2023arXiv230515363H},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@misc{Jenner2022,
+      title={{Calculus on MDPs: Potential Shaping as a Gradient}}, 
+      author={Erik Jenner and Herke van Hoof and Adam Gleave},
+      year={2022},
+      eprint={2208.09570},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+%%%%
+% Papers citations for camera-ready
+%%%%
+
+@misc{Wen2024,
+      title={{Language Models Learn to Mislead Humans via RLHF}}, 
+      author={Jiaxin Wen and Ruiqi Zhong and Akbir Khan and Ethan Perez and Jacob Steinhardt and Minlie Huang and Samuel R. Bowman and He He and Shi Feng},
+      year={2024},
+      eprint={2409.12822},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2409.12822}, 
+}
+
+@misc{OpenAI2024,
+  title={{OpenAI o1 System Card}},
+  author={OpenAI},
+  year={2024},
+  url={https://cdn.openai.com/o1-system-card.pdf},
+  note={Accessed: 2024-10-28},
+}
+
+
+@misc{Denison2024,
+      title={{Sycophancy to Subterfuge: Investigating Reward-Tampering in Large Language Models}}, 
+      author={Carson Denison and Monte MacDiarmid and Fazl Barez and David Duvenaud and Shauna Kravec and Samuel Marks and Nicholas Schiefer and Ryan Soklaski and Alex Tamkin and Jared Kaplan and Buck Shlegeris and Samuel R. Bowman and Ethan Perez and Evan Hubinger},
+      year={2024},
+      eprint={2406.10162},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2406.10162}, 
+}
+
+@misc{Mallen2024,
+      title={{Balancing Label Quantity and Quality for Scalable Elicitation}}, 
+      author={Alex Mallen and Nora Belrose},
+      year={2024},
+      eprint={2410.13215},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.13215}, 
+}
+
+@misc{Mu2024,
+  title={{Rule Based Rewards for Language Model Safety}},
+  author={Tong Mu and Alec Helyar and Johannes Heidecke and Joshua Achiam and Andrea Vallone and Ian Kivlichan and Molly Lin and Alex Beutel and John Schulman and Lilian Weng},
+  year={2024},
+  url={https://cdn.openai.com/rule-based-rewards-for-language-model-safety.pdf},
+  note={Accessed: 2024-10-28}
+}
+
+
+@misc{OpenAI2024spec,
+  title={{Model Spec}},
+  author={OpenAI},
+  year={2024},
+  url={https://cdn.openai.com/spec/model-spec-2024-05-08.html},
+  note={Accessed: 2024-10-28}
+}
+
+
+
+% Less directly related work on PO
+
+@misc{Chidambaram2024,
+      title={{Direct Preference Optimization With Unobserved Preference Heterogeneity}}, 
+      author={Keertana Chidambaram and Karthik Vinay Seetharaman and Vasilis Syrgkanis},
+      year={2024},
+      eprint={2405.15065},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2405.15065}, 
+}
+
+@misc{Kausik2024,
+      title={{A Theoretical Framework for Partially Observed Reward-States in RLHF}}, 
+      author={Chinmaya Kausik and Mirco Mutti and Aldo Pacchiano and Ambuj Tewari},
+      year={2024},
+      eprint={2402.03282},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2402.03282}, 
+}
+
+@misc{Park2024heterogenous,
+      title={{RLHF from Heterogeneous Feedback via Personalization and Preference Aggregation}}, 
+      author={Chanwoo Park and Mingyang Liu and Dingwen Kong and Kaiqing Zhang and Asuman Ozdaglar},
+      year={2024},
+      eprint={2405.00254},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2405.00254}, 
+}
+
+
+

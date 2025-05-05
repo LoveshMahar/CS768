@@ -1,0 +1,15 @@
+Minimizing a sum of simple submodular functions of limited support is a
+special case of general submodular function minimization that has seen numerous
+applications in machine learning. We develop fast techniques for instances
+where components in the sum are cardinality-based, meaning they depend only on
+the size of the input set. This variant is one of the most widely applied in
+practice, encompassing, e.g., common energy functions arising in image
+segmentation and recent generalized hypergraph cut functions. We develop the
+first approximation algorithms for this problem, where the approximations can
+be quickly computed via reduction to a sparse graph cut problem, with graph
+sparsity controlled by the desired approximation factor. Our method relies on a
+new connection between sparse graph reduction techniques and piecewise linear
+approximations to concave functions. Our sparse reduction technique leads to
+significant improvements in theoretical runtimes, as well as substantial
+practical gains in problems ranging from benchmark image segmentation tasks to
+hypergraph clustering problems.

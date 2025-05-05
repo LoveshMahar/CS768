@@ -1,0 +1,160 @@
+@article{sandler_2018_mobilenetv2,
+  title     = {MobileNetV2: Inverted Residuals and Linear Bottlenecks},
+  author    = {M. Sandler and Andrew G. Howard and Menglong Zhu and A. Zhmoginov and Liang-Chieh Chen},
+  journal   = {IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year      = {2018},
+  doi       = {10.1109/CVPR.2018.00474},
+  bibSource = {Semantic Scholar https://www.semanticscholar.org/paper/dd9cfe7124c734f5a6fc90227d541d3dbcd72ba4}
+}
+
+@INPROCEEDINGS{yu_2018_dla,
+  author={Yu, Fisher and Wang, Dequan and Shelhamer, Evan and Darrell, Trevor},
+  booktitle={2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition}, 
+  title={Deep Layer Aggregation}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={2403-2412},
+  doi={10.1109/CVPR.2018.00255}
+}
+
+@article{trockman_2023_patches,
+    title={Patches Are All You Need?},
+    author={Asher Trockman and J Zico Kolter},
+    journal={Transactions on Machine Learning Research},
+    issn={2835-8856},
+    year={2023},
+    note={Featured Certification}
+}
+
+
+@InProceedings{Sun_etal21,
+  author =       "Jiachen Sun and Akshay Mehra and Bhavya Kailkhura and Pin-Yu
+                 Chen and Dan Hendrycks and Jihun Hamm and Z. Morley Mao",
+  title =        "Certified Adversarial Defenses Meet Out-of-Distribution
+                 Corruptions: Benchmarking Robustness and Simple Baselines",
+  year =         "2022",
+  booktitle = "Proceedings of the European Conference on Computer Vision",
+}
+@InProceedings{Rusak_etal20,
+  title =        "A simple way to make neural networks robust against diverse
+                 image corruptions",
+  author =       "Evgenia Rusak and Lukas Schott and Roland S. Zimmermann and
+                 Julian Bitterwolf and Oliver Bringmann and Matthias Bethge and
+                 Wieland Brendel",
+  year =         "2020",
+  booktitle =    "Proceedings of the European Conference on Computer Vision",
+}
+
+@misc{mao2022easyrobust,
+  author =       {Xiaofeng Mao and Yuefeng Chen and Xiaodan Li and Gege Qi and Ranjie Duan and Rong Zhang and Hui Xue},
+  title =        {EasyRobust: A Comprehensive and Easy-to-use Toolkit for Robust Computer Vision},
+  year =         {2022}
+}
+
+
+@misc{robustness,
+   title={Robustness (Python Library)},
+   author={Logan Engstrom and Andrew Ilyas and Hadi Salman and Shibani Santurkar and Dimitris Tsipras},
+   year={2019},
+   url={https://github.com/MadryLab/robustness}
+}
+
+@inproceedings{baek_agreementontheline_2022,
+  title = {Agreement-on-the-Line: Predicting the Performance of Neural Networks under Distribution Shift},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Baek, Christina and Jiang, Yiding and Raghunathan, Aditi and Kolter, J Zico},
+  year = {2022},
+  volume = {35},
+  pages = {19274--19289},
+  keywords = {notion,to-read}
+}
+
+@inproceedings{zhao_oodcv_2022,
+  title = {{{OOD-CV}}: A Benchmark for Robustness to out-of-Distribution Shifts of Individual Nuisances in Natural Images},
+  booktitle = {Computer Vision \textendash{} {{ECCV}} 2022: 17th European Conference, Tel Aviv, Israel, October 23\textendash 27, 2022, Proceedings, Part {{VIII}}},
+  author = {Zhao, Bingchen and Yu, Shaozuo and Ma, Wufei and Yu, Mingxin and Mei, Shenxiao and Wang, Angtian and He, Ju and Yuille, Alan and Kortylewski, Adam},
+  year = {2022},
+  pages = {163--180},
+  publisher = {{Springer-Verlag}},
+  address = {{Berlin, Heidelberg}},
+  doi = {10.1007/978-3-031-20074-8_10},
+  abstract = {Enhancing the robustness of vision algorithms in real-world scenarios is challenging. One reason is that existing robustness benchmarks are limited, as they either rely on synthetic data or ignore the effects of individual nuisance factors. We introduce OOD-CV\&nbsp;, a benchmark dataset that includes out-of-distribution examples of 10 object categories in terms of pose, shape, texture, context and the weather conditions, and enables benchmarking models for image classification, object detection, and 3D pose estimation. In addition to this novel dataset, we contribute extensive experiments using popular baseline methods, which reveal that: 1) Some nuisance factors have a much stronger negative effect on the performance compared to others, also depending on the vision task. 2) Current approaches to enhance robustness have only marginal effects, and can even reduce robustness. 3) We do not observe significant differences between convolutional and transformer architectures. We believe our dataset provides a rich testbed to study robustness and will help push forward research in this area.},
+  isbn = {978-3-031-20073-1},
+  keywords = {notion}
+}
+
+@misc{yang_openood_2022,
+  title = {{{OpenOOD}}: Benchmarking Generalized out-of-Distribution Detection},
+  shorttitle = {{{OpenOOD}}},
+  author = {Yang, Jingkang and Wang, Pengyun and Zou, Dejian and Zhou, Zitang and Ding, Kunyuan and Peng, Wenxuan and Wang, Haoqi and Chen, Guangyao and Li, Bo and Sun, Yiyou and Du, Xuefeng and Zhou, Kaiyang and Zhang, Wayne and Hendrycks, Dan and Li, Yixuan and Liu, Ziwei},
+  year = {2022},
+  month = oct,
+  number = {arXiv:2210.07242},
+  eprint = {2210.07242},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  urldate = {2023-05-10},
+  abstract = {Out-of-distribution (OOD) detection is vital to safety-critical machine learning applications and has thus been extensively studied, with a plethora of methods developed in the literature. However, the field currently lacks a unified, strictly formulated, and comprehensive benchmark, which often results in unfair comparisons and inconclusive results. From the problem setting perspective, OOD detection is closely related to neighboring fields including anomaly detection (AD), open set recognition (OSR), and model uncertainty, since methods developed for one domain are often applicable to each other. To help the community to improve the evaluation and advance, we build a unified, well-structured codebase called OpenOOD, which implements over 30 methods developed in relevant fields and provides a comprehensive benchmark under the recently proposed generalized OOD detection framework. With a comprehensive comparison of these methods, we are gratified that the field has progressed significantly over the past few years, where both preprocessing methods and the orthogonal post-hoc methods show strong potential.},
+  archiveprefix = {arxiv},
+  keywords = {read}
+}
+
+
+@inproceedings{croce2022evaluating,
+  title={Evaluating the adversarial robustness of adaptive test-time defenses},
+  author={Croce, Francesco and Gowal, Sven and Brunner, Thomas and Shelhamer, Evan and Hein, Matthias and Cemgil, Taylan},
+  booktitle={International Conference on Machine Learning},
+  pages={4421--4435},
+  year={2022},
+  organization={PMLR}
+}
+
+@inproceedings{croce2022adversarial,
+  title={Adversarial Robustness against Multiple and Single $ l\_p $-Threat Models via Quick Fine-Tuning of Robust Classifiers},
+  author={Croce, Francesco and Hein, Matthias},
+  booktitle={International Conference on Machine Learning},
+  pages={4436--4454},
+  year={2022},
+  organization={PMLR}
+}
+
+@article{arjovsky2019invariant,
+  title={Invariant risk minimization},
+  author={Arjovsky, Martin and Bottou, L{\'e}on and Gulrajani, Ishaan and Lopez-Paz, David},
+  journal={arXiv preprint arXiv:1907.02893},
+  year={2019}
+}
+
+@inproceedings{krueger2021out,
+  title={Out-of-distribution generalization via risk extrapolation (rex)},
+  author={Krueger, David and Caballero, Ethan and Jacobsen, Joern-Henrik and Zhang, Amy and Binas, Jonathan and Zhang, Dinghuai and Le Priol, Remi and Courville, Aaron},
+  booktitle={International Conference on Machine Learning},
+  pages={5815--5826},
+  year={2021},
+  organization={PMLR}
+}
+
+@inproceedings{shi2023robust,
+  title={How robust is unsupervised representation learning to distribution shift?},
+  author={Shi, Yuge and Daunhawer, Imant and Vogt, Julia E and Torr, Philip HS and Sanyal, Amartya},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2023},
+  organization={OpenReview}
+}
+
+@inproceedings{zhang2018unreasonable,
+  title={The unreasonable effectiveness of deep features as a perceptual metric},
+  author={Zhang, Richard and Isola, Phillip and Efros, Alexei A and Shechtman, Eli and Wang, Oliver},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={586--595},
+  year={2018}
+}
+
+@inproceedings{huang2023robust,
+  title={Robust generalization against photon-limited corruptions via worst-case sharpness minimization},
+  author={Huang, Zhuo and Zhu, Miaoxi and Xia, Xiaobo and Shen, Li and Yu, Jun and Gong, Chen and Han, Bo and Du, Bo and Liu, Tongliang},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={16175--16185},
+  year={2023}
+}

@@ -1,0 +1,14 @@
+Normalization is known to help the optimization of deep neural networks.
+Curiously, different architectures require specialized normalization methods.
+In this paper, we study what normalization is effective for Graph Neural
+Networks (GNNs). First, we adapt and evaluate the existing methods from other
+domains to GNNs. Faster convergence is achieved with InstanceNorm compared to
+BatchNorm and LayerNorm. We provide an explanation by showing that InstanceNorm
+serves as a preconditioner for GNNs, but such preconditioning effect is weaker
+with BatchNorm due to the heavy batch noise in graph datasets. Second, we show
+that the shift operation in InstanceNorm results in an expressiveness
+degradation of GNNs for highly regular graphs. We address this issue by
+proposing GraphNorm with a learnable shift. Empirically, GNNs with GraphNorm
+converge faster compared to GNNs using other normalization. GraphNorm also
+improves the generalization of GNNs, achieving better performance on graph
+classification benchmarks.

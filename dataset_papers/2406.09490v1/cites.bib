@@ -1,0 +1,2665 @@
+
+%%%An Introduction to Deep Learning
+@book{nielsen2015neural,
+  title={Neural Networks and Deep learning},
+  author={Nielsen, Michael A},
+  volume={25},
+  year={2015},
+  publisher={Determination press San Francisco, CA, USA}
+}
+@book{goodfellow2016deep,
+  title={Deep learning},
+  author={Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron},
+  year={2016},
+  publisher={MIT press}
+}
+@book{stevens2020deep,
+  title={Deep learning with PyTorch},
+  author={Stevens, Eli and Antiga, Luca and Viehmann, Thomas},
+  year={2020},
+  publisher={Manning Publications Company}
+}
+
+@article{lecun2015deep,
+  title={Deep learning},
+  author={LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
+  journal={Nature},
+  volume={521},
+  number={7553},
+  pages={436--444},
+  year={2015},
+  publisher={Nature Publishing Group}
+}
+
+%%%Blog posts
+
+@misc{olah,
+ url={https://colah.github.io/},
+ journal={colah's blog}, 
+author={Olah, Christopher}
+} 
+
+@misc{3blue1brown,
+ url={https://www.3blue1brown.com/topics/neural-networks}, 
+author={Grant Sanderson},
+year={2017},
+title={Neural Networks}
+} 
+
+@misc{wandb_tutorial, 
+title={Tutorials}, 
+url={https://wandb.ai/site/tutorials},
+ journal={{Weights \& Biases – Developer tools for ML}},
+ author={Weights\&Biases}
+} 
+
+
+@misc{karpathy_2022,
+title={The spelled-out intro to neural networks and backpropagation},
+url={https://www.youtube.com/watch?v=VMj-3S1tku0},
+ journal={YouTube},
+ publisher={YouTube},
+ author={Karpathy, Andrej},
+ year={2022}
+} 
+
+%%%Helpful youtube videos/interactive sites
+@misc{backpropagation1, 
+title={Gradient descent, how neural networks learn | Chapter 2, Deep Learning}, 
+url={https://www.youtube.com/watch?v=IHZwWFHWa-w}, journal={YouTube}, 
+author={Grant Sanderson},
+publisher={YouTube}, 
+year={2017}
+} 
+
+
+@misc{backpropagation2, 
+title={What is backpropagation really doing? | Chapter 3, Deep Learning}, 
+url={https://www.youtube.com/watch?v=Ilg3gGewQ5U},
+ journal={YouTube}, 
+author={Grant Sanderson},
+publisher={YouTube}, 
+year={2017}
+} 
+
+
+@misc{backpropagation3, 
+title={Backpropagation calculus | Chapter 4, Deep Learning}, 
+url={https://www.youtube.com/watch?v=tIeHLnjs5U8}, 
+journal={YouTube},
+author={Grant Sanderson}, 
+publisher={YouTube}, 
+year={2017}
+} 
+
+@misc{smilkov_carter,
+ title={Tensorflow - Neural Network Playground},
+ url={http://playground.tensorflow.org/}, 
+journal={A Neural Network Playground}, 
+author={ Smilkov, Daniel and Carter, Shan}
+}
+
+%%%Convolutional Neural Networks
+
+%%%%% Seminal CNN architectures
+
+@article{lecun1998gradient,
+  title={Gradient-based learning applied to document recognition},
+  author={LeCun, Yann and Bottou, L{\'e}on and Bengio, Yoshua and Haffner, Patrick},
+  journal={Proceedings of the IEEE},
+  volume={86},
+  number={11},
+  pages={2278--2324},
+  year={1998},
+  publisher={IEEE }
+}
+
+@inproceedings{krizhevsky2012imagenet,
+ author = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+ booktitle = {Advances in Neural Information Processing Systems},
+ publisher = {Curran Associates, Inc.},
+ title = {ImageNet Classification with Deep Convolutional Neural Networks},
+volume = {25},
+ year = {2012}
+}
+
+
+@inproceedings{deng2009imagenet,
+  title={Imagenet: A large-scale hierarchical image database},
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  booktitle={2009 IEEE conference on computer vision and pattern recognition},
+  pages={248--255},
+  year={2009},
+  organization={IEEE}
+}
+
+@article{simonyan2014very,
+  title={Very deep convolutional networks for large-scale image recognition},
+  author={Simonyan, Karen and Zisserman, Andrew},
+  journal={arXiv preprint arXiv:1409.1556},
+  year={2014}
+}
+
+@inproceedings{szegedy2015going,
+  title={Going deeper with convolutions},
+  author={Szegedy, Christian and Liu, Wei and Jia, Yangqing and Sermanet, Pierre and Reed, Scott and Anguelov, Dragomir and Erhan, Dumitru and Vanhoucke, Vincent and Rabinovich, Andrew},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={1--9},
+  year={2015}
+}
+
+@inproceedings{he2016deep,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={770--778},
+  year={2016}
+}
+
+@inproceedings{xie2017aggregated,
+  title={Aggregated residual transformations for deep neural networks},
+  author={Xie, Saining and Girshick, Ross and Doll{\'a}r, Piotr and Tu, Zhuowen and He, Kaiming},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={1492--1500},
+  year={2017}
+}
+
+
+@inproceedings{liu2022convnet,
+  title={A convnet for the 2020s},
+  author={Liu, Zhuang and Mao, Hanzi and Wu, Chao-Yuan and Feichtenhofer, Christoph and Darrell, Trevor and Xie, Saining},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={11976--11986},
+  year={2022}
+}
+
+
+@inproceedings{howard2019searching,
+  title={Searching for mobilenetv3},
+  author={Howard, Andrew and Sandler, Mark and Chu, Grace and Chen, Liang-Chieh and Chen, Bo and Tan, Mingxing and Wang, Weijun and Zhu, Yukun and Pang, Ruoming and Vasudevan, Vijay and others},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={1314--1324},
+  year={2019}
+}
+
+@misc{thomas_2019, 
+title={An introduction to Convolutional Neural Networks},
+ url={https://towardsdatascience.com/an-introduction-to-convolutional-neural-networks-eb0b60b58fd7}, 
+journal={Medium}, 
+publisher={Towards Data Science}, 
+author={Thomas , Christopher}, 
+year={2019}
+} 
+
+%%%Language Modeling, Recurrent Neural Nets and Seq2Seq
+
+@article{jurafsky2018n,
+  title={N-Gram Language Models},
+  author={Jurafsky, Daniel and Martin, James H},
+  journal={Speech and language processing},
+  year={2020}
+}
+
+@article{bengio1994learning,
+  title={Learning long-term dependencies with gradient descent is difficult},
+  author={Bengio, Yoshua and Simard, Patrice and Frasconi, Paolo},
+  journal={IEEE transactions on neural networks},
+  volume={5},
+  number={2},
+  pages={157--166},
+  year={1994},
+  publisher={IEEE}
+}
+
+@article{hochreiter1997long,
+  title={Long short-term memory},
+  author={Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  journal={Neural computation},
+  volume={9},
+  number={8},
+  pages={1735--1780},
+  year={1997},
+  publisher={MIT Press}
+}
+
+@misc{wandb,
+title = {Experiment Tracking with Weights and Biases},
+year = {2020},
+note = {Software available from wandb.com},
+url={https://www.wandb.com/},
+author = {Biewald, Lukas},
+}
+
+@inproceedings{sklearn_api,
+  author    = {Lars Buitinck and Gilles Louppe and Mathieu Blondel and
+                Fabian Pedregosa and Andreas Mueller and Olivier Grisel and
+                Vlad Niculae and Peter Prettenhofer and Alexandre Gramfort
+                and Jaques Grobler and Robert Layton and Jake VanderPlas and
+                Arnaud Joly and Brian Holt and Ga{\"{e}}l Varoquaux},
+  title     = {{API} design for machine learning software: experiences from the scikit-learn
+                project},
+  booktitle = {ECML PKDD Workshop: Languages for Data Mining and Machine Learning},
+  year      = {2013},
+  pages = {108--122},
+}
+
+@inproceedings{pytorch_lib,author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},booktitle = {Advances in Neural Information Processing Systems 32},editor = {Wallach, H. and Larochelle, H. and Beygelzimer, A. and d'Alché-Buc, F. and Fox, E. and Garnett, R.},pages = {8024--8035},publisher = {Curran Associates, Inc.},title = {{PyTorch: An Imperative Style, High-Performance Deep Learning Library}},url = {http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf},year = {2019}}
+
+@article{greff2016lstm,
+  title={LSTM: A search space odyssey},
+  author={Greff, Klaus and Srivastava, Rupesh K and Koutn{\'\i}k, Jan and Steunebrink, Bas R and Schmidhuber, J{\"u}rgen},
+  journal={IEEE transactions on neural networks and learning systems},
+  volume={28},
+  number={10},
+  pages={2222--2232},
+  year={2016},
+  publisher={IEEE}
+}
+\cite{}
+
+@article{chung2014empirical,
+  title={Empirical evaluation of gated recurrent neural networks on sequence modeling},
+  author={Chung, Junyoung and Gulcehre, Caglar and Cho, KyungHyun and Bengio, Yoshua},
+  journal={arXiv preprint arXiv:1412.3555},
+  year={2014}
+}
+
+
+@article{sutskever2014sequence,
+  title={Sequence to sequence learning with neural networks},
+  author={Sutskever, Ilya and Vinyals, Oriol and Le, Quoc V},
+  journal={Advances in neural information processing systems},
+  volume={27},
+  year={2014}
+}
+
+@article{bahdanau2014neural,
+  title={Neural machine translation by jointly learning to align and translate},
+  author={Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua},
+  journal={arXiv preprint arXiv:1409.0473},
+  year={2014}
+}
+
+@article{olah2016attention,
+  title={Attention and augmented recurrent neural networks},
+  author={Olah, Chris and Carter, Shan},
+  journal={Distill},
+  volume={1},
+  number={9},
+  pages={e1},
+  year={2016}
+}
+
+@article{mikolov2013distributed,
+  title={Distributed representations of words and phrases and their compositionality},
+  author={Mikolov, Tomas and Sutskever, Ilya and Chen, Kai and Corrado, Greg S and Dean, Jeff},
+pages={3111--3119},
+  journal={Advances in Neural Information Processing Systems},
+  volume={26},
+  year={2013}
+}
+
+
+@inproceedings{pennington2014glove,
+  title={Glove: Global vectors for word representation},
+  author={Pennington, Jeffrey and Socher, Richard and Manning, Christopher D},
+  booktitle={Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP)},
+  pages={1532--1543},
+  year={2014}
+}
+
+@article{olah2014deep,
+  title={Deep learning, NLP, and Representations},
+  author={Olah, Christopher},
+  journal={GitHub blog, posted on July},
+  year={2014}
+}
+
+%%%The Transformer and Transformer Language Models
+
+
+@article{vaswani2017attention,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  journal={Advances in Neural Information Processing Systems},
+  volume={30},
+  year={2017}
+}
+
+
+@inproceedings{rush2018annotated,
+  title={The annotated transformer},
+  author={Rush, Alexander M},
+  booktitle={Proceedings of workshop for NLP open source software (NLP-OSS)},
+  pages={52--60},
+  year={2018}
+}
+
+@inproceedings{franklin2024news,
+  title={News Deja Vu: Connecting Past and Present with Semantic Search},
+  author={Franklin, Brevin and Silcock, Emily and Arora, Abhishek and Bryan, Tom and Dell, Melissa},
+  booktitle={Proceedings of workshop for NLP and CSS, NAACL},
+  year={2024}
+}
+
+
+@misc{alammar_transformer,
+ title={The illustrated Transformer},
+ url={https://jalammar.github.io/illustrated-transformer/},
+ journal={Visualizing machine learning one concept at a time}, 
+ year={2018},
+author={Alammar, Jay}
+} 
+
+@misc{hugging_face_tf, 
+title={Transformer-based encoder-decoder models},
+url={https://huggingface.co/blog/encoder-decoder}, 
+journal={Transformer-based Encoder-Decoder Models}, 
+publisher={Hugging Face}, 
+author={Von Platen, Patrick},
+year={2020}
+} 
+
+@misc{draelos_2019,
+ title={The transformer: Attention is all you need}, 
+url={https://glassboxmedicine.com/2019/08/15/the-transformer-attention-is-all-you-need/}, 
+journal={Glass Box},
+ author={Draelos, Rachel},
+ year={2019}
+} 
+
+
+Transformer Language Models 
+
+@article{devlin2018bert,
+  title={Bert: Pre-training of deep bidirectional transformers for language understanding},
+  author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  journal={arXiv preprint arXiv:1810.04805},
+  year={2018}
+}
+
+@article{raffel2020exploring,
+  title={Exploring the limits of transfer learning with a unified text-to-text transformer},
+  author={Raffel, Colin and Shazeer, Noam and Roberts, Adam and Lee, Katherine and Narang, Sharan and Matena, Michael and Zhou, Yanqi and Li, Wei and Liu, Peter J},
+  journal={The Journal of Machine Learning Research},
+  volume={21},
+  number={1},
+  pages={5485--5551},
+  year={2020},
+  publisher={JMLRORG}
+}
+
+@article{liu2019roberta,
+  title={Roberta: A robustly optimized bert pretraining approach},
+  author={Liu, Yinhan and Ott, Myle and Goyal, Naman and Du, Jingfei and Joshi, Mandar and Chen, Danqi and Levy, Omer and Lewis, Mike and Zettlemoyer, Luke and Stoyanov, Veselin},
+  journal={arXiv preprint arXiv:1907.11692},
+  year={2019}
+}
+
+
+@article{lan2019albert,
+  title={Albert: A lite bert for self-supervised learning of language representations},
+  author={Lan, Zhenzhong and Chen, Mingda and Goodman, Sebastian and Gimpel, Kevin and Sharma, Piyush and Soricut, Radu},
+  journal={arXiv preprint arXiv:1909.11942},
+  year={2019}
+}
+
+
+
+@article{yang2019xlnet,
+  title={Xlnet: Generalized autoregressive pretraining for language understanding},
+  author={Yang, Zhilin and Dai, Zihang and Yang, Yiming and Carbonell, Jaime and Salakhutdinov, Russ R and Le, Quoc V},
+  journal={Advances in neural information processing systems},
+  volume={32},
+  year={2019}
+}
+
+@article{song2020mpnet,
+  title={Mpnet: Masked and permuted pre-training for language understanding},
+  author={Song, Kaitao and Tan, Xu and Qin, Tao and Lu, Jianfeng and Liu, Tie-Yan},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={16857--16867},
+  year={2020}
+}
+
+@article{he2020deberta,
+  title={Deberta: Decoding-enhanced bert with disentangled attention},
+  author={He, Pengcheng and Liu, Xiaodong and Gao, Jianfeng and Chen, Weizhu},
+  journal={arXiv preprint arXiv:2006.03654},
+  year={2020}
+}
+
+@article{sanh2019distilbert,
+  title={DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter},
+  author={Sanh, Victor and Debut, Lysandre and Chaumond, Julien and Wolf, Thomas},
+  journal={arXiv preprint arXiv:1910.01108},
+  year={2019}
+}
+
+@article{brown2020language,
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={1877--1901},
+  year={2020}
+}
+
+@article{radford2019language,
+  title={Language models are unsupervised multitask learners},
+  author={Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya and others},
+  journal={OpenAI blog},
+  volume={1},
+  number={8},
+  pages={9},
+  year={2019}
+}
+
+
+@misc{meta_opt,
+ title={Open Pre-trained Transformers},
+ url={https://github.com/facebookresearch/metaseq/tree/main/projects/OPT}, 
+journal={GitHub}, publisher={Meta Research},
+year={2022},
+ author={Meta Research }
+} 
+
+
+
+@article{tay2021charformer,
+  title={Charformer: Fast character transformers via gradient-based subword tokenization},
+  author={Tay, Yi and Tran, Vinh Q and Ruder, Sebastian and Gupta, Jai and Chung, Hyung Won and Bahri, Dara and Qin, Zhen and Baumgartner, Simon and Yu, Cong and Metzler, Donald},
+  journal={arXiv preprint arXiv:2106.12672},
+  year={2021}
+}
+
+@article{nguyen2020bertweet,
+  title={BERTweet: A pre-trained language model for English Tweets},
+  author={Nguyen, Dat Quoc and Vu, Thanh and Nguyen, Anh Tuan},
+  journal={arXiv preprint arXiv:2005.10200},
+  year={2020}
+}
+
+@misc{alammar_bert, 
+title={The illustrated Bert, Elmo, and Co. (how NLP cracked transfer learning)}, 
+url={https://jalammar.github.io/illustrated-bert/},
+year={2018},
+ journal={ Visualizing machine learning one concept at a time},
+author={Alammar, Jay}
+} 
+
+@misc{alammar_gpt2,
+ title={The illustrated GPT-2 (Visualizing Transformer language models)}, 
+url={http://jalammar.github.io/illustrated-gpt2/}, 
+journal={Visualizing machine learning one concept at a time }, 
+year={2019},
+author={Alammar, Jay}
+} 
+
+@misc{alammar_gpt3,
+ title={How GPT3 Works - Visualizations and Animations}, 
+url={https://jalammar.github.io/how-gpt3-works-visualizations-animations/}, 
+journal={Visualizing machine learning one concept at a time }, 
+year={2020},
+author={Alammar, Jay}
+} 
+
+
+%%%More on Transformer Language Models
+%%%%%Interpreting textual embeddings
+
+@article{mcinnes2018umap,
+  title={Umap: Uniform manifold approximation and projection for dimension reduction},
+  author={McInnes, Leland and Healy, John and Melville, James},
+  journal={arXiv preprint arXiv:1802.03426},
+  year={2018}
+}
+
+
+@misc{embeddingprojector,
+ url={http://projector.tensorflow.org/}, 
+journal={Embedding projector-visualization of high-dimensional data}
+} 
+
+@inproceedings{kohn2015embedding,
+  title={What’s in an Embedding? Analyzing Word Embeddings through Multilingual Evaluation},
+  author={K{\"o}hn, Arne},
+  booktitle={Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing},
+  pages={2067--2073},
+  year={2015}
+}
+
+@article{rogers2020primer,
+  title={A primer in bertology: What we know about how bert works},
+  author={Rogers, Anna and Kovaleva, Olga and Rumshisky, Anna},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={8},
+  pages={842--866},
+  year={2020},
+  publisher={MIT Press}
+}
+
+@article{wiedemann2019does,
+  title={Does BERT make any sense? Interpretable word sense disambiguation with contextualized embeddings},
+  author={Wiedemann, Gregor and Remus, Steffen and Chawla, Avi and Biemann, Chris},
+  journal={arXiv preprint arXiv:1909.10430},
+  year={2019}
+}
+
+@article{reif2019visualizing,
+  title={Visualizing and measuring the geometry of BERT},
+  author={Reif, Emily and Yuan, Ann and Wattenberg, Martin and Viegas, Fernanda B and Coenen, Andy and Pearce, Adam and Kim, Been},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+@article{ethayarajh2019contextual,
+  title={How contextual are contextualized word representations? comparing the geometry of BERT, ELMo, and GPT-2 embeddings},
+  author={Ethayarajh, Kawin},
+  journal={arXiv preprint arXiv:1909.00512},
+  year={2019}
+}
+
+@article{cui2022stable,
+  title={Stable learning establishes some common ground between causal inference and machine learning},
+  author={Cui, Peng and Athey, Susan},
+  journal={Nature Machine Intelligence},
+  volume={4},
+  number={2},
+  pages={110--115},
+  year={2022},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{nguyen2020wnut,
+  title={WNUT-2020 task 2: identification of informative COVID-19 english tweets},
+  author={Nguyen, Dat Quoc and Vu, Thanh and Rahimi, Afshin and Dao, Mai Hoang and Nguyen, Linh The and Doan, Long},
+  journal={arXiv preprint arXiv:2010.08232},
+  year={2020}
+}
+
+@article{sang2003introduction,
+  title={Introduction to the CoNLL-2003 shared task: Language-independent named entity recognition},
+  author={Sang, Erik F and De Meulder, Fien},
+  journal={arXiv preprint cs/0306050},
+  year={2003}
+}
+
+@article{kirillov2023segment,
+  title={Segment anything},
+  author={Kirillov, Alexander and Mintun, Eric and Ravi, Nikhila and Mao, Hanzi and Rolland, Chloe and Gustafson, Laura and Xiao, Tete and Whitehead, Spencer and Berg, Alexander C and Lo, Wan-Yen and others},
+  journal={arXiv preprint arXiv:2304.02643},
+  year={2023}
+}
+
+@article{allen2022welfare,
+  title={The welfare effects of transportation infrastructure improvements},
+  author={Allen, Treb and Arkolakis, Costas},
+  journal={The Review of Economic Studies},
+  volume={89},
+  number={6},
+  pages={2911--2957},
+  year={2022},
+  publisher={Oxford University Press}
+}
+
+%%%%%Changing Language
+
+@article{hastings1970monte,
+  title={Monte Carlo sampling methods using Markov chains and their applications},
+  author={Hastings, W Keith},
+  journal={Biometrika},
+  year={1970},
+  publisher={Oxford University Press}
+}
+
+@article{merchant2020happens,
+  title={What Happens to BERT Embeddings during Fine-tuning?},
+  author={Merchant, Amil and Rahimtoroghi, Elahe and Pavlick, Ellie and Tenney, Ian},
+  journal={arXiv preprint arXiv:2004.14448},
+  year={2020}
+}
+
+@inproceedings{manjavacas2021macberth,
+  title={Macberth: Development and evaluation of a historically pre-trained language model for English (1450-1950)},
+  author={Manjavacas, Enrique and Fonteyn, Lauren},
+  booktitle={Proceedings of the Workshop on Natural Language Processing for Digital Humanities},
+  pages={23--36},
+  year={2021}
+}
+
+@inproceedings{amba2021dynamic,
+  title={Dynamic language models for continuously evolving content},
+  author={Amba Hombaiah, Spurthi and Chen, Tao and Zhang, Mingyang and Bendersky, Michael and Najork, Marc},
+  booktitle={Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining},
+  pages={2514--2524},
+  year={2021}
+}
+@article{manjavacas2022adapting,
+  title={Adapting vs. Pre-training Language Models for Historical Languages},
+  author={Manjavacas, EMA and Fonteyn, Lauren},
+  journal={Journal of Data Mining \& Digital Humanities},
+  pages={1--19},
+  year={2022}
+}
+
+@article{soni2022predicting,
+  title={Predicting Long-Term Citations from Short-Term Linguistic Influence},
+  author={Soni, Sandeep and Bamman, David and Eisenstein, Jacob},
+  journal={Findings of the Association for Computational Linguistics: EMNLP 2022},
+  year={2022}
+}
+
+
+@article{dhingra2022time,
+  title={Time-aware language models as temporal knowledge bases},
+  author={Dhingra, Bhuwan and Cole, Jeremy R and Eisenschlos, Julian Martin and Gillick, Daniel and Eisenstein, Jacob and Cohen, William W},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={10},
+  pages={257--273},
+  year={2022},
+  publisher={MIT Press}
+}
+
+%%%Vision Transformers
+
+@article{dosovitskiy2020image,
+  title={An image is worth 16x16 words: Transformers for image recognition at scale},
+  author={Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and others},
+  journal={arXiv preprint arXiv:2010.11929},
+  year={2020}
+}
+
+@inproceedings{touvron2021training,
+  title={Training data-efficient image transformers \& distillation through attention},
+  author={Touvron, Hugo and Cord, Matthieu and Douze, Matthijs and Massa, Francisco and Sablayrolles, Alexandre and J{\'e}gou, Herv{\'e}},
+  booktitle={International conference on machine learning},
+  pages={10347--10357},
+  year={2021},
+organization={PMLR}
+
+}
+@article{grill2020bootstrap,
+  title={Bootstrap your own latent-a new approach to self-supervised learning},
+  author={Grill, Jean-Bastien and Strub, Florian and Altch{\'e}, Florent and Tallec, Corentin and Richemond, Pierre and Buchatskaya, Elena and Doersch, Carl and Avila Pires, Bernardo and Guo, Zhaohan and Gheshlaghi Azar, Mohammad and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={21271--21284},
+  year={2020}
+}
+@inproceedings{caron2021emerging,
+  title={Emerging properties in self-supervised vision transformers},
+  author={Caron, Mathilde and Touvron, Hugo and Misra, Ishan and J{\'e}gou, Herv{\'e} and Mairal, Julien and Bojanowski, Piotr and Joulin, Armand},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={9650--9660},
+  year={2021}
+}
+@inproceedings{he2022masked,
+  title={Masked autoencoders are scalable vision learners},
+  author={He, Kaiming and Chen, Xinlei and Xie, Saining and Li, Yanghao and Doll{\'a}r, Piotr and Girshick, Ross},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={16000--16009},
+  year={2022}
+}
+@article{ali2021xcit,
+  title={Xcit: Cross-covariance image transformers},
+  author={Ali, Alaaeldin and Touvron, Hugo and Caron, Mathilde and Bojanowski, Piotr and Douze, Matthijs and Joulin, Armand and Laptev, Ivan and Neverova, Natalia and Synnaeve, Gabriel and Verbeek, Jakob and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={20014--20027},
+  year={2021}
+}
+@article{bai2021transformers,
+  title={Are Transformers more robust than cnns?},
+  author={Bai, Yutong and Mei, Jieru and Yuille, Alan L and Xie, Cihang},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={26831--26843},
+  year={2021}
+}
+@article{wang2022can,
+  title={Can CNNs Be More Robust Than Transformers?},
+  author={Wang, Zeyu and Bai, Yutong and Zhou, Yuyin and Xie, Cihang},
+  journal={arXiv preprint arXiv:2206.03452},
+  year={2022}
+}
+@inproceedings{chen2021empirical,
+  title={An empirical study of training self-supervised vision transformers},
+  author={Chen, Xinlei and Xie, Saining and He, Kaiming},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={9640--9649},
+  year={2021}
+}
+@misc{timm,
+ title={Pytorch Image Models (TIMM)},
+ url={https://timm.fast.ai/},
+ journal={Pytorch Image Model},
+year={2023},
+ author={{Timm Docs}}
+} 
+@misc{howard_2022, 
+title={Which image models are best?},
+ url={https://www.kaggle.com/code/jhoward/which-image-models-are-best/}, 
+journal={Kaggle}, 
+publisher={Kaggle}, 
+author={Howard, Jeremy}, 
+year={2022}
+} 
+
+%%%Basics of optimizing neural networks; classification
+
+@article{goh2017momentum,
+  title={Why momentum really works},
+  author={Goh, Gabriel},
+  journal={Distill},
+  volume={2},
+  number={4},
+  pages={e6},
+  year={2017}
+}
+
+
+@inproceedings{ioffe2015batch,
+  title={Batch normalization: Accelerating deep network training by reducing internal covariate shift},
+  author={Ioffe, Sergey and Szegedy, Christian},
+  booktitle={International conference on machine learning},
+  pages={448--456},
+  year={2015},
+  organization={PMLR}
+}
+
+
+@article{santurkar2018does,
+  title={How does batch normalization help optimization?},
+  author={Santurkar, Shibani and Tsipras, Dimitris and Ilyas, Andrew and Madry, Aleksander},
+  journal={Advances in Neural Information Processing Systems},
+  volume={31},
+  year={2018}
+}
+
+@inproceedings{he2019bag,
+  title={Bag of tricks for image classification with convolutional neural networks},
+  author={He, Tong and Zhang, Zhi and Zhang, Hang and Zhang, Zhongyue and Xie, Junyuan and Li, Mu},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={558--567},
+  year={2019}
+}
+
+@article{li2018visualizing,
+  title={Visualizing the loss landscape of neural nets},
+  author={Li, Hao and Xu, Zheng and Taylor, Gavin and Studer, Christoph and Goldstein, Tom},
+  journal={Advances in Neural Information Processing Systems},
+  volume={31},
+  year={2018}
+}
+
+@article{li2017hyperband,
+  title={Hyperband: A novel bandit-based approach to hyperparameter optimization},
+  author={Li, Lisha and Jamieson, Kevin and DeSalvo, Giulia and Rostamizadeh, Afshin and Talwalkar, Ameet},
+  journal={The Journal of Machine Learning Research},
+  volume={18},
+  number={1},
+  pages={6765--6816},
+  year={2017},
+  publisher={JMLR. org}
+}
+
+@inproceedings{falkner2018bohb,
+  title={BOHB: Robust and efficient hyperparameter optimization at scale},
+  author={Falkner, Stefan and Klein, Aaron and Hutter, Frank},
+  booktitle={International Conference on Machine Learning},
+  pages={1437--1446},
+  year={2018},
+  organization={PMLR}
+}
+
+
+@article{frankle2018lottery,
+  title={The lottery ticket hypothesis: Finding sparse, trainable neural networks},
+  author={Frankle, Jonathan and Carbin, Michael},
+  journal={arXiv preprint arXiv:1803.03635},
+  year={2018}
+}
+
+ 
+@misc{paul_2019,
+ title={Running hyperparameter sweeps to pick the best model on weights \& biases}, 
+url={https://wandb.ai/site/articles/running-hyperparameter-sweeps-to-pick-the-best-model-using-w-b#:~:text=Weights\%20and\%20biases\%20are\%20the,each\%20layer\%2C\%20and\%20so\%20on},
+ journal={Weights \& Biases},
+ publisher={Weights \& Biases},
+ author={Paul, Sayak},
+ year={2019}
+ } 
+
+@article{luan2021sparse,
+  title={Sparse, dense, and attentional representations for text retrieval},
+  author={Luan, Yi and Eisenstein, Jacob and Toutanova, Kristina and Collins, Michael},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={9},
+  pages={329--345},
+  year={2021},
+  publisher={MIT Press One Rogers Street, Cambridge, MA 02142-1209, USA journals-info~…}
+}
+
+@misc{wandb_sweep,
+ title={Tune hyperparameters},
+ url={https://docs.wandb.ai/guides/sweeps},
+journal={ Weights \& Biases - Documentation},
+author={Weights\&Biases}
+} 
+
+@misc{wandb_parameter,
+ title={Parameter Importance},
+ url={https://docs.wandb.ai/guides/sweeps},
+journal={ Weights \& Biases - Documentation},
+author={Weights\&Biases}
+} 
+%%%Contrastive Learning
+
+@inproceedings{chopra2005learning,
+  title={Learning a similarity metric discriminatively, with application to face verification},
+  author={Chopra, Sumit and Hadsell, Raia and LeCun, Yann},
+  booktitle={2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)},
+  volume={1},
+  pages={539--546},
+  year={2005},
+  organization={IEEE}
+}
+
+@inproceedings{wang2021understanding,
+  title={Understanding the behaviour of contrastive loss},
+  author={Wang, Feng and Liu, Huaping},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={2495--2504},
+  year={2021}
+}
+
+
+@misc{weng_2021,
+ title={Contrastive Representation Learning},
+ url={https://lilianweng.github.io/posts/2021-05-31-contrastive/},
+ journal={Lil'Log},
+ author={Weng, Lilian}, 
+year={2021}
+} 
+
+
+@article{khosla2020supervised,
+  title={Supervised contrastive learning},
+  author={Khosla, Prannay and Teterwak, Piotr and Wang, Chen and Sarna, Aaron and Tian, Yonglong and Isola, Phillip and Maschinot, Aaron and Liu, Ce and Krishnan, Dilip},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={18661--18673},
+  year={2020}
+}
+
+@article{hermans2017defense,
+  title={In defense of the triplet loss for person re-identification},
+  author={Hermans, Alexander and Beyer, Lucas and Leibe, Bastian},
+  journal={arXiv preprint arXiv:1703.07737},
+  year={2017}
+}
+
+
+@article{oord2018representation,
+  title={Representation learning with contrastive predictive coding},
+  author={Oord, Aaron van den and Li, Yazhe and Vinyals, Oriol},
+  journal={arXiv preprint arXiv:1807.03748},
+  year={2018}
+}
+
+@article{sablayrolles2018spreading,
+  title={Spreading vectors for similarity search},
+  author={Sablayrolles, Alexandre and Douze, Matthijs and Schmid, Cordelia and J{\'e}gou, Herv{\'e}},
+  journal={arXiv preprint arXiv:1806.03198},
+  year={2018}
+}
+
+
+@inproceedings{graf2021dissecting,
+  title={Dissecting supervised contrastive learning},
+  author={Graf, Florian and Hofer, Christoph and Niethammer, Marc and Kwitt, Roland},
+  booktitle={International Conference on Machine Learning},
+  pages={3821--3830},
+  year={2021},
+  organization={PMLR}
+}
+
+
+@article{jing2021understanding,
+  title={Understanding dimensional collapse in contrastive self-supervised learning},
+  author={Jing, Li and Vincent, Pascal and LeCun, Yann and Tian, Yuandong},
+  journal={arXiv preprint arXiv:2110.09348},
+  year={2021}
+}
+
+%Siamese Representation Learning
+
+@inproceedings{chen2021exploring,
+  title={Exploring simple siamese representation learning},
+  author={Chen, Xinlei and He, Kaiming},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={15750--15758},
+  year={2021}
+}
+
+%%% Object detection
+
+%%%%%% Region CNNs
+@inproceedings{girshick2014rich,
+  title={Rich feature hierarchies for accurate object detection and semantic segmentation},
+  author={Girshick, Ross and Donahue, Jeff and Darrell, Trevor and Malik, Jitendra},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={580--587},
+  year={2014}
+}
+
+
+@inproceedings{girshick2015fast,
+  title={Fast R-CNN},
+  author={Girshick, Ross},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={1440--1448},
+  year={2015}
+}
+
+@article{ren2017faster,
+  title={Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks},
+  author={Ren, Shaoqing and He, Kaiming and Girshick, Ross and Sun, Jian},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={39},
+  number={6},
+  pages={1137--1149},
+  year={2017}
+}
+
+@inproceedings{he2017mask,
+  title={Mask R-CNN},
+  author={He, Kaiming and Gkioxari, Georgia and Doll{\'a}r, Piotr and Girshick, Ross},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={2961--2969},
+  year={2017}
+}
+
+@inproceedings{kirillov2019panoptic,
+  title={Panoptic feature pyramid networks},
+  author={Kirillov, Alexander and Girshick, Ross and He, Kaiming and Doll{\'a}r, Piotr},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={6399--6408},
+  year={2019}
+}
+
+@article{cai2019cascade,
+  title={Cascade R-CNN: high quality object detection and instance segmentation},
+  author={Cai, Zhaowei and Vasconcelos, Nuno},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={43},
+  number={5},
+  pages={1483--1498},
+  year={2019},
+  publisher={IEEE}
+}
+
+%%%%%YOLO
+@inproceedings{redmon2016you,
+  title={You only look once: Unified, real-time object detection},
+  author={Redmon, Joseph and Divvala, Santosh and Girshick, Ross and Farhadi, Ali},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={779--788},
+  year={2016}
+}
+
+
+@misc{ultralytics_2020,
+ title={Ultralytics/yolov5},
+ url={https://github.com/ultralytics/yolov5}, 
+journal={GitHub}, 
+author={Ultralytics}, 
+year={2020}
+} 
+
+%%%%%%Transformer method
+@inproceedings{carion2020end,
+  title={End-to-end object detection with transformers},
+  author={Carion, Nicolas and Massa, Francisco and Synnaeve, Gabriel and Usunier, Nicolas and Kirillov, Alexander and Zagoruyko, Sergey},
+  booktitle={Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part I 16},
+  pages={213--229},
+  year={2020},
+  organization={Springer}
+}
+
+
+
+@inproceedings{liu2021swin,
+  title={Swin transformer: Hierarchical vision transformer using shifted windows},
+  author={Liu, Ze and Lin, Yutong and Cao, Yue and Hu, Han and Wei, Yixuan and Zhang, Zheng and Lin, Stephen and Guo, Baining},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={10012--10022},
+  year={2021}
+}
+
+
+%%%%%Implementation
+
+
+@inproceedings{shen2021layoutparser,
+  title={LayoutParser: A unified toolkit for deep learning based document image analysis},
+  author={Shen, Zejiang and Zhang, Ruochen and Dell, Melissa and Lee, Benjamin Charles Germain and Carlson, Jacob and Li, Weining},
+  booktitle={Document Analysis and Recognition--ICDAR 2021: 16th International Conference, Lausanne, Switzerland, September 5--10, 2021, Proceedings, Part I 16},
+  pages={131--146},
+  year={2021},
+  organization={Springer}
+}
+
+
+@inproceedings{lin2014microsoft,
+  title={Microsoft coco: Common objects in context},
+  author={Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{\'a}r, Piotr and Zitnick, C Lawrence},
+  booktitle={Computer Vision--ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13},
+  pages={740--755},
+  year={2014},
+  organization={Springer}
+}
+
+
+@misc{wu2019detectron2,
+ author =      {Yuxin Wu and Alexander Kirillov and Francisco Massa and Wan-Yen Lo and Ross Girshick}, 
+title =        {Detectron2}, 
+url={https://github.com/facebookresearch/detectron2},
+ year =         {2019} 
+}
+
+
+@article{chen2019mmdetection,
+  title={MMDetection: Open mmlab detection toolbox and benchmark},
+  author={Chen, Kai and Wang, Jiaqi and Pang, Jiangmiao and Cao, Yuhang and Xiong, Yu and Li, Xiaoxiao and Sun, Shuyang and Feng, Wansen and Liu, Ziwei and Xu, Jiarui and others},
+  journal={arXiv preprint arXiv:1906.07155},
+  year={2019}
+}
+
+
+@inproceedings{shen2020large,
+  title={A large dataset of historical Japanese documents with complex layouts},
+  author={Shen, Zejiang and Zhang, Kaixuan and Dell, Melissa},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
+  pages={548--549},
+  year={2020}
+}
+
+@misc{Labelstudio, 
+title={Label Studio}, 
+url={https://github.com/heartexlabs/label-studio},
+ note={Open source software},
+ author={Tkachenko, Maxim  and Malyuk, Mikhail  and  Holmanyuk, Andrey and Liubimov, Nikolai}, 
+year={2020}
+ }
+
+%%%%%Object discovery
+
+@inproceedings{henaff2022object,
+  title={Object discovery and representation networks},
+  author={H{\'e}naff, Olivier J and Koppula, Skanda and Shelhamer, Evan and Zoran, Daniel and Jaegle, Andrew and Zisserman, Andrew and Carreira, Jo{\~a}o and Arandjelovi{\'c}, Relja},
+  booktitle={Computer Vision--ECCV 2022: 17th European Conference, Tel Aviv, Israel, October 23--27, 2022, Proceedings, Part XXVII},
+  pages={123--143},
+  year={2022},
+  organization={Springer}
+}
+
+%%%Prefix Tuning 
+
+@article{li2021prefix,
+  title={Prefix-tuning: Optimizing continuous prompts for generation},
+  author={Li, Xiang Lisa and Liang, Percy},
+  journal={arXiv preprint arXiv:2101.00190},
+  year={2021}
+}
+
+@article{lester2021power,
+  title={The power of scale for parameter-efficient prompt tuning},
+  author={Lester, Brian and Al-Rfou, Rami and Constant, Noah},
+  journal={arXiv preprint arXiv:2104.08691},
+  year={2021}
+}
+
+%%%Multimodal Learning 
+@misc{weng_2022, 
+title={Generalized visual language models}, 
+url={https://lilianweng.github.io/posts/2022-06-09-vlm/}, 
+journal={Lil'Log}, 
+author={Weng, Lilian}, 
+year={2022}
+} 
+
+
+
+@article{goh2021multimodal,
+  title={Multimodal neurons in artificial neural networks},
+  author={Goh, Gabriel and Cammarata, Nick and Voss, Chelsea and Carter, Shan and Petrov, Michael and Schubert, Ludwig and Radford, Alec and Olah, Chris},
+  journal={Distill},
+  volume={6},
+  number={3},
+  pages={e30},
+  year={2021}
+}
+
+@inproceedings{radford2021learning,
+  title={Learning transferable visual models from natural language supervision},
+  author={Radford, Alec and Kim, Jong Wook and Hallacy, Chris and Ramesh, Aditya and Goh, Gabriel and Agarwal, Sandhini and Sastry, Girish and Askell, Amanda and Mishkin, Pamela and Clark, Jack and others},
+  booktitle={International conference on machine learning},
+  pages={8748--8763},
+  year={2021},
+  organization={PMLR}
+}
+
+
+@misc{openai_2021,
+ title={Clip: Connecting text and images},
+ url={https://openai.com/blog/clip/}, 
+journal={OpenAI}, 
+publisher={OpenAI}, 
+author={OpenAI}, 
+year={2021}
+} 
+
+
+@misc{manning_2022, 
+title={ CONVIRT algorithm}, 
+url={https://twitter.com/chrmanning/status/1572640802450604032?t=kWeOuXj7lk5kY-BTncSbyw&s=09}, 
+journal={Twitter}, 
+publisher={Twitter},
+ author={Manning, Christopher}, 
+year={2022}
+} 
+
+
+
+
+
+
+@article{li2019visualbert,
+  title={VisualBERT: A simple and performant baseline for vision and language},
+  author={Li, Liunian Harold and Yatskar, Mark and Yin, Da and Hsieh, Cho-Jui and Chang, Kai-Wei},
+  journal={arXiv preprint arXiv:1908.03557},
+  year={2019}
+}
+
+
+@article{wang2021simvlm,
+  title={Simvlm: Simple visual language model pretraining with weak supervision},
+  author={Wang, Zirui and Yu, Jiahui and Yu, Adams Wei and Dai, Zihang and Tsvetkov, Yulia and Cao, Yuan},
+  journal={arXiv preprint arXiv:2108.10904},
+  year={2021}
+}
+
+
+@article{tsimpoukelli2021multimodal,
+  title={Multimodal few-shot learning with frozen language models},
+  author={Tsimpoukelli, Maria and Menick, Jacob L and Cabi, Serkan and Eslami, SM and Vinyals, Oriol and Hill, Felix},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={200--212},
+  year={2021}
+}
+
+@article{mokady2021clipcap,
+  title={Clipcap: Clip prefix for image captioning},
+  author={Mokady, Ron and Hertz, Amir and Bermano, Amit H},
+  journal={arXiv preprint arXiv:2111.09734},
+  year={2021}
+}
+
+@article{alayrac2022flamingo,
+  title={Flamingo: a visual language model for few-shot learning},
+  author={Alayrac, Jean-Baptiste and Donahue, Jeff and Luc, Pauline and Miech, Antoine and Barr, Iain and Hasson, Yana and Lenc, Karel and Mensch, Arthur and Millican, Katie and Reynolds, Malcolm and others},
+  journal={arXiv preprint arXiv:2204.14198},
+  year={2022}
+}
+
+
+@article{nagrani2021attention,
+  title={Attention bottlenecks for multimodal fusion},
+  author={Nagrani, Arsha and Yang, Shan and Arnab, Anurag and Jansen, Aren and Schmid, Cordelia and Sun, Chen},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={14200--14213},
+  year={2021}
+}
+
+@article{rust2022pixels,
+  title={Language Modelling with Pixels},
+  author={Rust, Phillip and Lotz, Jonas F and Bugliarello, Emanuele and Salesky, Elizabeth and de Lhoneux, Miryam and Elliott, Desmond},
+  journal={arXiv preprint arXiv:2207.06991},
+  year={2022}
+}
+
+
+%%%Diffusion Models
+@misc{song,
+ title={Generative modeling by estimating gradients of the data distribution},
+ url={https://yang-song.net/blog/2021/score/},
+ journal={Yang Song’s blog}, 
+author={Song, Yang}
+} 
+
+
+@misc{ dieleman_2022,
+ title={Diffusion models are autoencoders}, 
+url={https://benanne.github.io/2022/01/31/diffusion.html},
+ journal={Sander Dieleman’s blog}, 
+author={Dieleman, Sander}, 
+year={2022}} 
+
+
+
+
+@inproceedings{nichol2021improved,
+  title={Improved denoising diffusion probabilistic models},
+  author={Nichol, Alexander Quinn and Dhariwal, Prafulla},
+  booktitle={International Conference on Machine Learning},
+  pages={8162--8171},
+  year={2021},
+  organization={PMLR}
+}
+
+
+
+@article{dhariwal2021diffusion,
+  title={Diffusion models beat gans on image synthesis},
+  author={Dhariwal, Prafulla and Nichol, Alexander},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={8780--8794},
+  year={2021}
+}
+
+
+@article{kwon2022diffusion,
+  title={Diffusion-based image translation using disentangled style and content representation},
+  author={Kwon, Gihyun and Ye, Jong Chul},
+  journal={arXiv preprint arXiv:2209.15264},
+  year={2022}
+}
+
+
+@article{cao2022survey,
+  title={A survey on generative diffusion model},
+  author={Cao, Hanqun and Tan, Cheng and Gao, Zhangyang and Chen, Guangyong and Heng, Pheng-Ann and Li, Stan Z},
+  journal={arXiv preprint arXiv:2209.02646},
+  year={2022}
+}
+
+
+
+
+@article{bansal2022cold,
+  title={Cold diffusion: Inverting arbitrary image transforms without noise},
+  author={Bansal, Arpit and Borgnia, Eitan and Chu, Hong-Min and Li, Jie S and Kazemi, Hamid and Huang, Furong and Goldblum, Micah and Geiping, Jonas and Goldstein, Tom},
+  journal={arXiv preprint arXiv:2208.09392},
+  year={2022}
+}
+
+%%%%%Stable Diffusio
+
+
+@misc{alammar_diffusion,
+ title={The illustrated Stable Diffusion},
+ url={https://jalammar.github.io/illustrated-stable-diffusion/},
+ journal={Visualizing machine learning one concept at a time}, 
+year={2022},
+author={Alammar, Jay}
+} 
+
+
+
+
+
+
+@inproceedings{rombach2022high,
+  title={High-resolution image synthesis with latent diffusion models},
+  author={Rombach, Robin and Blattmann, Andreas and Lorenz, Dominik and Esser, Patrick and Ommer, Bj{\"o}rn},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={10684--10695},
+  year={2022}
+}
+ 
+
+
+@misc{huggingface_diffuse,
+ title={Diffuse the rest},
+ url={https://huggingface.co/spaces/huggingface-projects/diffuse-the-rest},
+ journal={Hugging Face},
+ author={ Hugging Face }
+} 
+
+
+
+
+@misc{compvis,
+ title={Stable-diffusion: A latent text-to-image diffusion model}, 
+url={https://github.com/CompVis/stable-diffusion},
+ journal={stable-diffusion},
+ author={CompVis}
+} 
+
+%%%%%Background on GANs
+
+@article{goodfellow2020generative,
+  title={Generative adversarial networks},
+  author={Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+  journal={arXiv preprint arXiv: 1406.266},
+  year={2014}
+}
+
+@article{goodfellow2016nips,
+  title={Nips 2016 tutorial: Generative adversarial networks},
+  author={Goodfellow, Ian},
+  journal={arXiv preprint arXiv:1701.00160},
+  year={2016}
+}
+
+@article{gulrajani2017improved,
+  title={Improved training of wasserstein gans},
+  author={Gulrajani, Ishaan and Ahmed, Faruk and Arjovsky, Martin and Dumoulin, Vincent and Courville, Aaron C},
+  journal={Advances in Neural Information Processing Systems},
+  volume={30},
+  year={2017}
+}
+
+@inproceedings{reed2016generative,
+  title={Generative adversarial text to image synthesis},
+  author={Reed, Scott and Akata, Zeynep and Yan, Xinchen and Logeswaran, Lajanugen and Schiele, Bernt and Lee, Honglak},
+  booktitle={International conference on machine learning},
+  pages={1060--1069},
+  year={2016},
+  organization={PMLR}
+}
+
+
+
+@inproceedings{zhu2017unpaired,
+  title={Unpaired image-to-image translation using cycle-consistent adversarial networks},
+  author={Zhu, Jun-Yan and Park, Taesung and Isola, Phillip and Efros, Alexei A},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={2223--2232},
+  year={2017}
+}
+
+
+
+@inproceedings{karras2020analyzing,
+  title={Analyzing and improving the image quality of stylegan},
+  author={Karras, Tero and Laine, Samuli and Aittala, Miika and Hellsten, Janne and Lehtinen, Jaakko and Aila, Timo},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={8110--8119},
+  year={2020}
+}
+
+@inproceedings{alaluf2021restyle,
+  title={Restyle: A residual-based stylegan encoder via iterative refinement},
+  author={Alaluf, Yuval and Patashnik, Or and Cohen-Or, Daniel},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={6711--6720},
+  year={2021}
+}
+
+@misc{yin_2019, 
+title={Cleaning up dirty scanned documents with Deep Learning}, url={https://medium.com/illuin/cleaning-up-dirty-scanned-documents-with-deep-learning-2e8e6de6cfa6}, 
+journal={Medium},
+ publisher={Illuin}, 
+author={Yin, Kayo}, 
+year={2019} 
+} 
+
+@article{santhanam2021colbertv2,
+  title={Colbertv2: Effective and efficient retrieval via lightweight late interaction},
+  author={Santhanam, Keshav and Khattab, Omar and Saad-Falcon, Jon and Potts, Christopher and Zaharia, Matei},
+  journal={arXiv preprint arXiv:2112.01488},
+  year={2021}
+}
+
+@inproceedings{khattab2020colbert,
+  title={Colbert: Efficient and effective passage search via contextualized late interaction over bert},
+  author={Khattab, Omar and Zaharia, Matei},
+  booktitle={Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval},
+  pages={39--48},
+  year={2020}
+}
+
+%%%%%Handwriting Generation
+
+@article{davis2020text,
+  title={Text and style conditioned gan for generation of offline handwriting lines},
+  author={Davis, Brian and Tensmeyer, Chris and Price, Brian and Wigington, Curtis and Morse, Bryan and Jain, Rajiv},
+  journal={arXiv preprint arXiv:2009.00678},
+  year={2020}
+}
+
+@inproceedings{bhunia2021handwriting,
+  title={Handwriting transformers},
+  author={Bhunia, Ankan Kumar and Khan, Salman and Cholakkal, Hisham and Anwer, Rao Muhammad and Khan, Fahad Shahbaz and Shah, Mubarak},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={1086--1094},
+  year={2021}
+}
+
+%%%Active Learning
+@article{zhang2022survey,
+  title={A survey of active learning for natural language processing},
+  author={Zhang, Zhisong and Strubell, Emma and Hovy, Eduard},
+  journal={arXiv preprint arXiv:2210.10109},
+  year={2022}
+}
+
+
+@article{liu2022survey,
+  title={A Survey on Active Deep Learning: From Model Driven to Data Driven},
+  author={Liu, Peng and Wang, Lizhe and Ranjan, Rajiv and He, Guojin and Zhao, Lei},
+  journal={ACM Computing Surveys (CSUR)},
+  volume={54},
+  number={10s},
+  pages={1--34},
+  year={2022},
+  publisher={ACM New York, NY}
+}
+
+
+@article{ren2021survey,
+  title={A survey of deep active learning},
+  author={Ren, Pengzhen and Xiao, Yun and Chang, Xiaojun and Huang, Po-Yao and Li, Zhihui and Gupta, Brij B and Chen, Xiaojiang and Wang, Xin},
+  journal={ACM computing surveys (CSUR)},
+  volume={54},
+  number={9},
+  pages={1--40},
+  year={2021},
+  publisher={ACM New York, NY}
+}
+
+@article{gissin2019discriminative,
+  title={Discriminative active learning},
+  author={Gissin, Daniel and Shalev-Shwartz, Shai},
+  journal={arXiv preprint arXiv:1907.06347},
+  year={2019}
+}
+
+
+@inproceedings{dor2020active,
+  title={Active learning for BERT: An empirical study},
+  author={Dor, Liat Ein and Halfon, Alon and Gera, Ariel and Shnarch, Eyal and Dankin, Lena and Choshen, Leshem and Danilevsky, Marina and Aharonov, Ranit and Katz, Yoav and Slonim, Noam},
+  booktitle={Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  pages={7949--7962},
+  year={2020}
+}
+
+
+@article{wankmuller2022comparison,
+  title={A comparison of approaches for imbalanced classification problems in the context of retrieving relevant documents for an analysis},
+  author={Wankm{\"u}ller, Sandra},
+  journal={Journal of Computational Social Science},
+  pages={1--73},
+  year={2022},
+  publisher={Springer}
+}
+
+
+@inproceedings{seo2022active,
+  title={Active Learning on Pre-trained Language Model with Task-Independent Triplet Loss},
+  author={Seo, Seungmin and Kim, Donghyun and Ahn, Youbin and Lee, Kyong-Ho},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={36},
+  number={10},
+  pages={11276--11284},
+  year={2022}
+}
+
+
+
+@article{shen2022olala,
+  title={Olala: object-level active learning based layout annotation},
+  author={Shen, Zejiang and Zhao, Jian and Yu, Yaoliang and Li, Weining and Dell, Melissa},
+  journal={ EMNLP Computational Social Science Workshop },
+  year={2022}
+}
+
+
+%%%Syntactic and Semantic similarity
+
+@article{reimers2019sentence,
+  title={Sentence-bert: Sentence embeddings using siamese bert-networks},
+  author={Reimers, Nils and Gurevych, Iryna},
+  journal={arXiv preprint arXiv:1908.10084},
+  year={2019}
+}
+
+
+@misc{sbert_loss,
+ title={Loss Functions (Sentence Bert )},
+ url={https://www.sbert.net/docs/package_reference/losses.html}, 
+journal={Sentence-Transformers documentation}
+} 
+
+
+@article{johnson2019billion,
+  title={Billion-scale similarity search with gpus},
+  author={Johnson, Jeff and Douze, Matthijs and J{\'e}gou, Herv{\'e}},
+  journal={IEEE Transactions on Big Data},
+  volume={7},
+  number={3},
+  pages={535--547},
+  year={2019},
+  publisher={IEEE}
+}
+
+
+
+@misc{cuml, 
+title={CUML's documentation}, 
+url={https://docs.rapids.ai/api/cuml/stable/}, 
+journal={cuml 22.12.00 documentation}, 
+publisher={Nvidia}, 
+author={Nvidia}
+} 
+
+
+
+@inproceedings{silcock2022noise,
+  title={Noise-Robust De-Duplication at Scale},
+  author={Silcock, Emily and D'Amico-Wong, Luca and Yang, Jinglin and Dell, Melissa},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2022}
+}
+
+
+@article{smith2015computational,
+  title={Computational methods for uncovering reprinted texts in antebellum newspapers},
+  author={Smith, David A and Cordell, Ryan and Mullen, Abby},
+  journal={American Literary History},
+  volume={27},
+  number={3},
+  pages={E1--E15},
+  year={2015},
+  publisher={Oxford University Press}
+}
+
+
+%%%Text Retrieval 
+@misc{meta_info_2022,
+ title={Advances toward ubiquitous neural information retrieval}, 
+url={https://ai.facebook.com/blog/-advances-toward-ubiquitous-neural-information-retrieval/},
+ journal={Meta AI},
+ author={Oguz, Barlas and Chen, Xilun and Riedel, Sebastian and Lewis, Patrick and Yih, Scott and Mehdad, Yashar},
+ year={2022}
+} 
+
+
+@article{karpukhin2020dense,
+  title={Dense passage retrieval for open-domain question answering},
+  author={Karpukhin, Vladimir and O{\u{g}}uz, Barlas and Min, Sewon and Lewis, Patrick and Wu, Ledell and Edunov, Sergey and Chen, Danqi and Yih, Wen-tau},
+  journal={arXiv preprint arXiv:2004.04906},
+  year={2020}
+}
+
+@misc{gregg2022dedupe,
+  author = {Gregg, Forest and Eder, Derek},
+  title = {dedupe},
+  version = {2.0.11},
+  date = {2022-01-27},
+  url = {https://github.com/dedupeio/dedupe},
+  year={2022}
+}
+
+
+@article{gao2022precise,
+  title={Precise Zero-Shot Dense Retrieval without Relevance Labels},
+  author={Gao, Luyu and Ma, Xueguang and Lin, Jimmy and Callan, Jamie},
+  journal={arXiv preprint arXiv:2212.10496},
+  year={2022}
+}
+
+@article{tam2022parameter,
+  title={Parameter-efficient prompt tuning makes generalized and calibrated neural text retrievers},
+  author={Tam, Weng Lam and Liu, Xiao and Ji, Kaixuan and Xue, Lilong and Zhang, Xingjian and Dong, Yuxiao and Liu, Jiahua and Hu, Maodi and Tang, Jie},
+  journal={arXiv preprint arXiv:2207.07087},
+  year={2022}
+}
+
+%%%%%Self-supervised training
+
+@article{ram2021learning,
+  title={Learning to retrieve passages without supervision},
+  author={Ram, Ori and Shachaf, Gal and Levy, Omer and Berant, Jonathan and Globerson, Amir},
+  journal={arXiv preprint arXiv:2112.07708},
+  year={2021}
+}
+
+@article{sachan2022improving,
+  title={Improving passage retrieval with zero-shot question generation},
+  author={Sachan, Devendra Singh and Lewis, Mike and Joshi, Mandar and Aghajanyan, Armen and Yih, Wen-tau and Pineau, Joelle and Zettlemoyer, Luke},
+  journal={arXiv preprint arXiv:2204.07496},
+  year={2022}
+}
+
+
+@article{sachan2022questions,
+  title={Questions are all you need to train a dense passage retriever},
+  author={Sachan, Devendra Singh and Lewis, Mike and Yogatama, Dani and Zettlemoyer, Luke and Pineau, Joelle and Zaheer, Manzil},
+  journal={arXiv preprint arXiv:2206.10658},
+  year={2022}
+}
+
+%%%%%Knowledge Intensive NLP
+
+@article{lewis2020retrieval,
+  title={Retrieval-augmented generation for knowledge-intensive nlp tasks},
+  author={Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and K{\"u}ttler, Heinrich and Lewis, Mike and Yih, Wen-tau and Rockt{\"a}schel, Tim and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={9459--9474},
+  year={2020}
+}
+
+
+
+@inproceedings{borgeaud2022improving,
+  title={Improving language models by retrieving from trillions of tokens},
+  author={Borgeaud, Sebastian and Mensch, Arthur and Hoffmann, Jordan and Cai, Trevor and Rutherford, Eliza and Millican, Katie and Van Den Driessche, George Bm and Lespiau, Jean-Baptiste and Damoc, Bogdan and Clark, Aidan and others},
+  booktitle={International conference on machine learning},
+  pages={2206--2240},
+  year={2022},
+  organization={PMLR}
+}
+
+@misc{gordon_2022, 
+title={Retro is blazingly fast},
+ url={http://mitchgordon.me/ml/2022/07/01/retro-is-blazing.html},
+ journal={Mitchell A. Gordon's Blog}, 
+author={Gordon, Mitchell A.}, 
+year={2022}
+} 
+
+%%%Named Entity Recognition and Entity Disambiguation 
+
+@article{wu2019scalable,
+  title={Scalable zero-shot entity linking with dense entity retrieval},
+  author={Wu, Ledell and Petroni, Fabio and Josifoski, Martin and Riedel, Sebastian and Zettlemoyer, Luke},
+  journal={arXiv preprint arXiv:1911.03814},
+  year={2019}
+}
+
+@inproceedings{yamada2022global,
+  title={Global entity disambiguation with BERT},
+  author={Yamada, Ikuya and Washio, Koki and Shindo, Hiroyuki and Matsumoto, Yuji},
+  booktitle={Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  pages={3264--3271},
+  year={2022}
+}
+
+@article{de2020autoregressive,
+  title={Autoregressive entity retrieval},
+  author={De Cao, Nicola and Izacard, Gautier and Riedel, Sebastian and Petroni, Fabio},
+  journal={arXiv preprint arXiv:2010.00904},
+  year={2020}
+}
+
+
+@article{kassner2022edin,
+  title={EDIN: An End-to-end Benchmark and Pipeline for Unknown Entity Discovery and Indexing},
+  author={Kassner, Nora and Petroni, Fabio and Plekhanov, Mikhail and Riedel, Sebastian and Cancedda, Nicola},
+  journal={arXiv preprint arXiv:2205.12570},
+  year={2022}
+}
+
+
+@article{zhang2021entqa,
+  title={EntQA: Entity linking as question answering},
+  author={Zhang, Wenzheng and Hua, Wenyue and Stratos, Karl},
+  journal={arXiv preprint arXiv:2110.02369},
+  year={2021}
+}
+
+@article{hsu2022contrastive,
+  title={Contrastive representation learning for cross-document coreference resolution of events and entities},
+  author={Hsu, Benjamin and Horwood, Graham},
+  journal={arXiv preprint arXiv:2205.11438},
+  year={2022}
+}
+
+@inproceedings{logan2021benchmarking,
+  title={Benchmarking scalable methods for streaming cross document entity coreference},
+  author={Logan IV, Robert L and McCallum, Andrew and Singh, Sameer and Bikel, Dan},
+  booktitle={Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)},
+  pages={4717--4731},
+  year={2021}
+}
+
+
+
+@article{spitkovsky2012cross,
+  title={A cross-lingual dictionary for english wikipedia concepts},
+  author={Spitkovsky, Valentin I and Chang, Angel X},
+  year={2012}
+}
+
+@inproceedings{spitkovsky-chang-2012-cross,
+  title={Benchmarking scalable methods for streaming cross document entity coreference},
+  author={Logan IV, Robert L and McCallum, Andrew and Singh, Sameer and Bikel, Dan},
+  booktitle={ Proceedings of the Eighth International Conference on Language Resources and Evaluation},
+  pages={4717--4731},
+  year={2012},
+publisher = {European Language Resources Association (ELRA)},
+pages = {3168--3175}
+}
+
+
+@inproceedings{stoffalette2020temporality,
+  title={On the Temporality of Priors in Entity Linking},
+  author={Stoffalette Jo{\~a}o, Renato},
+  booktitle={Advances in Information Retrieval: 42nd European Conference on IR Research, ECIR 2020, Lisbon, Portugal, April 14--17, 2020, Proceedings, Part II 42},
+  pages={375--382},
+  year={2020},
+  organization={Springer}
+}
+
+
+@inproceedings{adjali2020multimodal,
+  title={Multimodal entity linking for tweets},
+  author={Adjali, Omar and Besan{\c{c}}on, Romaric and Ferret, Olivier and Le Borgne, Herv{\'e} and Grau, Brigitte},
+  booktitle={Advances in Information Retrieval: 42nd European Conference on IR Research, ECIR 2020, Lisbon, Portugal, April 14--17, 2020, Proceedings, Part I},
+  pages={463--478},
+  year={2020},
+  organization={Springer}
+}
+
+
+@article{mishra2022tweetnerd,
+  title={TweetNERD--End to End Entity Linking Benchmark for Tweets},
+  author={Mishra, Shubhanshu and Saini, Aman and Makki, Raheleh and Mehta, Sneha and Haghighi, Aria and Mollahosseini, Ali},
+  journal={arXiv preprint arXiv:2210.08129},
+  year={2022}
+}
+
+@article{binette2022almost,
+  title={(Almost) all of entity resolution},
+  author={Binette, Olivier and Steorts, Rebecca C},
+  journal={Science Advances},
+  volume={8},
+  number={12},
+  pages={eabi8021},
+  year={2022},
+  publisher={American Association for the Advancement of Science}
+}
+
+%%%Topic and Sentiment Classification
+
+@misc{davison_2020,
+ title={Zero-shot learning in modern NLP}, 
+url={https://joeddav.github.io/blog/2020/05/29/ZSL.html}, 
+journal={Joe Davison Blog},
+ author={Davison, Joe}, 
+year={2020}
+} 
+@misc{davison_2020,
+ title={New pipeline for zero-shot text classification},
+ url={https://discuss.huggingface.co/t/new-pipeline-for-zero-shot-text-classification/681}, 
+journal={Hugging Face}, 
+author={Davison, Joe}, 
+year={2020}
+} 
+
+
+@misc{tldrstory, 
+title={tldrstory: semantic search for headlines and story text}, 
+url={https://github.com/neuml/tldrstory}, 
+journal={GitHub}, 
+author={NeuML}
+} 
+
+
+
+
+@article{yin2019benchmarking,
+  title={Benchmarking zero-shot text classification: Datasets, evaluation and entailment approach},
+  author={Yin, Wenpeng and Hay, Jamaal and Roth, Dan},
+  journal={arXiv preprint arXiv:1909.00161},
+  year={2019}
+}
+
+@article{schick2020exploiting,
+  title={Exploiting cloze questions for few shot text classification and natural language inference},
+  author={Schick, Timo and Sch{\"u}tze, Hinrich},
+  journal={arXiv preprint arXiv:2001.07676},
+  year={2020}
+}
+
+
+
+@inproceedings{ribeiro2016should,
+  title={" Why should i trust you?" Explaining the predictions of any classifier},
+  author={Ribeiro, Marco Tulio and Singh, Sameer and Guestrin, Carlos},
+  booktitle={Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining},
+  pages={1135--1144},
+  year={2016}
+}
+
+
+@inproceedings{munikar2019fine,
+  title={Fine-grained sentiment classification using BERT},
+  author={Munikar, Manish and Shakya, Sushil and Shrestha, Aakash},
+  booktitle={2019 Artificial Intelligence for Transforming Business and Society (AITB)},
+  volume={1},
+  pages={1--5},
+  year={2019},
+  organization={IEEE}
+}
+
+@inproceedings{hewitt2019structural,
+  title={A structural probe for finding syntax in word representations},
+  author={Hewitt, John and Manning, Christopher D},
+  booktitle={Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)},
+  pages={4129--4138},
+  year={2019}
+}
+
+
+@inproceedings{han2019,
+  title={The fallacy of echo chambers: Analyzing the political slants of user-generated news comments in Korean media},
+  author={Han, Jiyoung and Lee, Youngin and Lee, Junbum and Cha, Meeyoung},
+  booktitle={Proceedings of the 5th Workshop on Noisy User-generated Text (W-NUT 2019)},
+  pages={370--374},
+  year={2019}
+}
+
+@article{dunn1946record,
+  title={Record linkage},
+  author={Dunn, Halbert L},
+  journal={American Journal of Public Health and the Nations Health},
+  volume={36},
+  number={12},
+  pages={1412--1416},
+  year={1946},
+  publisher={American Public Health Association}
+}
+
+@article{abramitzky2021automated,
+  title={Automated linking of historical data},
+  author={Abramitzky, Ran and Boustan, Leah and Eriksson, Katherine and Feigenbaum, James and P{\'e}rez, Santiago},
+  journal={Journal of Economic Literature},
+  volume={59},
+  number={3},
+  pages={865--918},
+  year={2021}
+}
+
+
+
+
+@article{schiller2021stance,
+  title={Stance detection benchmark: How robust is your stance detection?},
+  author={Schiller, Benjamin and Daxenberger, Johannes and Gurevych, Iryna},
+  journal={KI-K{\"u}nstliche Intelligenz},
+  pages={329--341},
+ volume={35},
+  year={2021},
+  publisher={Springer}
+}
+
+
+@inproceedings{glandt2021stance,
+  title={Stance detection in COVID-19 tweets},
+  author={Glandt, Kyle and Khanal, Sarthak and Li, Yingjie and Caragea, Doina and Caragea, Cornelia},
+  booktitle={Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Long Papers)},
+  volume={1},
+  year={2021}
+}
+
+
+
+@article{grootendorst2022bertopic,
+  title={BERTopic: Neural topic modeling with a class-based TF-IDF procedure},
+  author={Grootendorst, Maarten},
+  journal={arXiv preprint arXiv:2203.05794},
+  year={2022}
+}
+
+
+@article{lin2021bertgcn,
+  title={Bertgcn: Transductive text classification by combining gcn and bert},
+  author={Lin, Yuxiao and Meng, Yuxian and Sun, Xiaofei and Han, Qinghong and Kuang, Kun and Li, Jiwei and Wu, Fei},
+  journal={arXiv preprint arXiv:2105.05727},
+  year={2021}
+}
+
+
+
+%%%Image Retrieval 
+
+
+@article{dubey2021decade,
+  title={A decade survey of content based image retrieval using deep learning},
+  author={Dubey, Shiv Ram},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  volume={32},
+  number={5},
+  pages={2687--2704},
+  year={2021},
+  publisher={IEEE}
+}
+
+@article{el2021training,
+  title={Training vision transformers for image retrieval},
+  author={El-Nouby, Alaaeldin and Neverova, Natalia and Laptev, Ivan and J{\'e}gou, Herv{\'e}},
+  journal={arXiv preprint arXiv:2102.05644},
+  year={2021}
+}
+
+%%%OCR
+
+
+@article{carlson2023,
+  title={Efficient OCR for Building a Diverse Digital History},
+  author={Carlson, Jacob.  and  Bryan, Tom. and Dell, Melissa.},
+  journal={Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics },
+  year={forthcoming}
+}
+
+
+@article{bryan2023,
+  title={EfficientOCR: An Extensible, Open-Source Package for Efficiently Digitizing World Knowledge”},
+  author={Bryan, Tom and Carlson, Jacob and Arora, Abhishek and Dell, Melissa},
+  journal={Empirical Methods on Natural Language Processing (Systems Demonstrations Track)},
+  year={2023}
+}
+
+
+ @article{hegghammer2021ocr, title={OCR with Tesseract, Amazon Textract, and Google Document AI: A benchmarking experiment}, volume={5}, DOI={10.1007/s42001-021-00149-1}, number={1},
+ journal={Journal of Computational Social Science}, author={Hegghammer, Thomas}, year={2021},
+ pages={861–882}
+ } 
+
+
+@article{shi2016end, 
+  title={An end-to-end trainable neural network for image-based sequence recognition and its application to scene text recognition},
+  author={Shi, Baoguang and Bai, Xiang and Yao, Cong},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={39},
+  number={11},
+  pages={2298--2304},
+  year={2016},
+  publisher={IEEE}
+}
+
+
+@inproceedings{graves2006connectionist,
+  title={Connectionist temporal classification: labelling unsegmented sequence data with recurrent neural networks},
+  author={Graves, Alex and Fern{\'a}ndez, Santiago and Gomez, Faustino and Schmidhuber, J{\"u}rgen},
+  booktitle={Proceedings of the 23rd international conference on Machine learning},
+  pages={369--376},
+  year={2006}
+}
+
+
+@article{hannun2017sequence,
+  title={Sequence modeling with ctc},
+  author={Hannun, Awni},
+  journal={Distill},
+  volume={2},
+  number={11},
+  pages={e8},
+  year={2017}
+}
+
+@article{du2022svtr,
+  title={Svtr: Scene text recognition with a single visual model},
+  author={Du, Yongkun and Chen, Zhineng and Jia, Caiyan and Yin, Xiaoting and Zheng, Tianlun and Li, Chenxia and Du, Yuning and Jiang, Yu-Gang},
+  journal={arXiv preprint arXiv:2205.00159},
+  year={2022}
+}
+
+@article{li2021trocr,
+  title={Trocr: Transformer-based optical character recognition with pre-trained models},
+  author={Li, Minghao and Lv, Tengchao and Chen, Jingye and Cui, Lei and Lu, Yijuan and Florencio, Dinei and Zhang, Cha and Li, Zhoujun and Wei, Furu},
+  journal={arXiv preprint arXiv:2109.10282},
+  year={2021}
+}
+
+@inproceedings{song2020revisiting,
+  title={Revisiting the sibling head in object detector},
+  author={Song, Guanglu and Liu, Yu and Wang, Xiaogang},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={11563--11572},
+  year={2020}
+}
+
+
+
+@misc{jaidedai_2020, 
+title={EasyOCR},
+ url={https://github.com/JaidedAI/EasyOCR},
+ journal={GitHub},
+ author={JaidedAI},
+ year={2020}
+} 
+
+
+
+
+@article{du2021pp,
+  title={Pp-ocrv2: Bag of tricks for ultra lightweight ocr system},
+  author={Du, Yuning and Li, Chenxia and Guo, Ruoyu and Cui, Cheng and Liu, Weiwei and Zhou, Jun and Lu, Bin and Yang, Yehua and Liu, Qiwen and Hu, Xiaoguang and others},
+  journal={arXiv preprint arXiv:2109.03144},
+  year={2021}
+}
+
+
+%%%%Noisy data and downstream tasks
+@inproceedings{srivastava2020noisy,
+  title={Noisy text data: Achilles’ heel of BERT},
+  author={Srivastava, Ankit and Makhija, Piyush and Gupta, Anuj},
+  booktitle={Proceedings of the Sixth Workshop on Noisy User-generated Text (W-NUT 2020)},
+  pages={16--21},
+  year={2020}
+}
+
+
+
+@article{rijhwani2020ocr,
+  title={OCR post correction for endangered language texts},
+  author={Rijhwani, Shruti and Anastasopoulos, Antonios and Neubig, Graham},
+  journal={arXiv preprint arXiv:2011.05402},
+  year={2020}
+}
+
+%%%Remote Sensing
+@article{aleissaee2022transformers,
+  title={Transformers in remote sensing: A survey},
+  author={Aleissaee, Abdulaziz Amer and Kumar, Amandeep and Anwer, Rao Muhammad and Khan, Salman and Cholakkal, Hisham and Xia, Gui-Song and others},
+  journal={arXiv preprint arXiv:2209.01206},
+  year={2022}
+}
+
+
+@article{wang2022empirical,
+  title={An empirical study of remote sensing pretraining},
+  author={Wang, Di and Zhang, Jing and Du, Bo and Xia, Gui-Song and Tao, Dacheng},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  year={2022},
+  publisher={IEEE}
+}
+
+
+
+@article{gao2022general,
+  title={A General Self-Supervised Framework for Remote Sensing Image Classification},
+  author={Gao, Yuan and Sun, Xiaojuan and Liu, Chao},
+  journal={Remote Sensing},
+  volume={14},
+  number={19},
+  pages={4824},
+  year={2022},
+  publisher={MDPI}
+}
+
+@article{fuller2022satvit,
+  title={SatViT: Pretraining Transformers for Earth Observation},
+  author={Fuller, Anthony and Millard, Koreen and Green, James R},
+  journal={IEEE Geoscience and Remote Sensing Letters},
+  volume={19},
+  pages={1--5},
+  year={2022},
+  publisher={IEEE}
+}
+
+
+@article{fuller2022transfer,
+  title={Transfer Learning with Pretrained Remote Sensing Transformers},
+  author={Fuller, Anthony and Millard, Koreen and Green, James R},
+  journal={arXiv preprint arXiv:2209.14969},
+  year={2022}
+}
+
+
+
+@article{zhang2022consecutive,
+  title={Consecutive Pre-Training: A Knowledge Transfer Learning Strategy with Relevant Unlabeled Data for Remote Sensing Domain},
+  author={Zhang, Tong and Gao, Peng and Dong, Hao and Zhuang, Yin and Wang, Guanqun and Zhang, Wei and Chen, He},
+  journal={Remote Sensing},
+  volume={14},
+  number={22},
+  pages={5675},
+  year={2022},
+  publisher={MDPI}
+}
+
+
+@inproceedings{bandara2022transformer,
+  title={A transformer-based siamese network for change detection},
+  author={Bandara, Wele Gedara Chaminda and Patel, Vishal M},
+  booktitle={IGARSS 2022-2022 IEEE International Geoscience and Remote Sensing Symposium},
+  pages={207--210},
+  year={2022},
+  organization={IEEE}
+}
+
+@article{alosaimi2023,
+  title={Self-supervised learning for remote sensing scene classification under the few shot scenario},
+  author={Alosaimi, Najd and Alhichri, Haikel and Bazi, Yakoub and Ben Youssef, Belgacem and Alajlan, Naif},
+  journal={Scientific Reports},
+  volume={13},
+  number={1},
+  pages={433},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
+}
+
+
+
+
+@misc{Satellite, 
+title={Satellite-image-deep-learning}, 
+url={https://github.com/robmarkcole/satellite-image-deep-learning},
+ journal={GitHub}, 
+author={Cole, Robin}
+} 
+
+%%%Conformal Prediction and Risk Control
+@article{angelopoulos2021gentle,
+  title={A gentle introduction to conformal prediction and distribution-free uncertainty quantification},
+  author={Angelopoulos, Anastasios N and Bates, Stephen},
+  journal={arXiv preprint arXiv:2107.07511},
+  year={2021}
+}
+
+@article{angelopoulos2022conformal,
+  title={Conformal risk control},
+  author={Angelopoulos, Anastasios N and Bates, Stephen and Fisch, Adam and Lei, Lihua and Schuster, Tal},
+  journal={arXiv preprint arXiv:2208.02814},
+  year={2022}
+}
+
+
+Audio
+@article{gong2021ast,
+  title={Ast: Audio spectrogram transformer},
+  author={Gong, Yuan and Chung, Yu-An and Glass, James},
+  journal={arXiv preprint arXiv:2104.01778},
+  year={2021}
+}
+
+@article{chen2021decision,
+  title={Decision transformer: Reinforcement learning via sequence modeling},
+  author={Chen, Lili and Lu, Kevin and Rajeswaran, Aravind and Lee, Kimin and Grover, Aditya and Laskin, Misha and Abbeel, Pieter and Srinivas, Aravind and Mordatch, Igor},
+  journal={Advances in neural information processing systems},
+  volume={34},
+  pages={15084--15097},
+  year={2021}
+}
+
+@article{sanchez2021gentle,
+  title={A gentle introduction to graph neural networks},
+  author={Sanchez-Lengeling, Benjamin and Reif, Emily and Pearce, Adam and Wiltschko, Alexander B},
+  journal={Distill},
+  volume={6},
+  number={9},
+  pages={e33},
+  year={2021}
+}
+
+@article{daigavane2021understanding,
+  title={Understanding convolutions on graphs},
+  author={Daigavane, Ameya and Ravindran, Balaraman and Aggarwal, Gaurav},
+  journal={Distill},
+  volume={6},
+  number={9},
+  pages={e32},
+  year={2021}
+}
+
+@article{kipf2016semi,
+  title={Semi-supervised classification with graph convolutional networks},
+  author={Kipf, Thomas N and Welling, Max},
+  journal={arXiv preprint arXiv:1609.02907},
+  year={2016}
+}
+
+@article{kingma2014adam,
+  title={Adam: A method for stochastic optimization},
+  author={Kingma, Diederik P and Ba, Jimmy},
+  journal={arXiv preprint arXiv:1412.6980},
+  year={2014}
+}
+
+@article{kandpal2022deduplicating,
+  title={Deduplicating training data mitigates privacy risks in language models},
+  author={Kandpal, Nikhil and Wallace, Eric and Raffel, Colin},
+  journal={arXiv preprint arXiv:2202.06539},
+  year={2022}
+}
+
+@article{lee2021deduplicating,
+  title={Deduplicating training data makes language models better},
+  author={Lee, Katherine and Ippolito, Daphne and Nystrom, Andrew and Zhang, Chiyuan and Eck, Douglas and Callison-Burch, Chris and Carlini, Nicholas},
+  journal={arXiv preprint arXiv:2107.06499},
+  year={2021}
+}
+
+@article{lee2022language,
+  title={Do Language Models Plagiarize?},
+  author={Lee, Jooyoung and Le, Thai and Chen, Jinghui and Lee, Dongwon},
+  journal={arXiv preprint arXiv:2203.07618},
+  year={2022}
+}
+
+
+
+@inproceedings{he2015delving,
+  title={Delving deep into rectifiers: Surpassing human-level performance on imagenet classification},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={1026--1034},
+  year={2015}
+}
+
+@misc{howard,
+   title={The best vision models for fine-tuning},
+   author={Jeremy Howard},
+   year={2022},
+   url={https://www.kaggle.com/code/jhoward/the-best-vision-models-for-fine-tuning}
+}
+
+@article{athey2019machine,
+  title={Machine learning methods that economists should know about},
+  author={Athey, Susan and Imbens, Guido W},
+  journal={Annual Review of Economics},
+  volume={11},
+  pages={685--725},
+  year={2019},
+  publisher={Annual Reviews}
+}
+
+@book{guarneri2017newsprint,
+  title={Newsprint Metropolis},
+  author={Guarneri, Julia},
+  booktitle={Newsprint Metropolis},
+  year={2017},
+  publisher={University of Chicago Press}
+}
+
+@article{yamada2019global,
+  title={Global entity disambiguation with pretrained contextualized embeddings of words and entities},
+  author={Yamada, Ikuya and Washio, Koki and Shindo, Hiroyuki and Matsumoto, Yuji},
+  journal={arXiv preprint arXiv:1909.00426},
+  year={2019}
+}
+
+@article{2019t5,
+  author = {Colin Raffel and Noam Shazeer and Adam Roberts and Katherine Lee and Sharan Narang and Michael Matena and Yanqi Zhou and Wei Li and Peter J. Liu},
+  title = {Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer},
+  journal = {arXiv e-prints},
+  year = {2019},
+  archivePrefix = {arXiv},
+  eprint = {1910.10683},
+}
+
+
+@article{dodge2021documenting,
+  title={Documenting large webtext corpora: A case study on the colossal clean crawled corpus},
+  author={Dodge, Jesse and Sap, Maarten and Marasovi{\'c}, Ana and Agnew, William and Ilharco, Gabriel and Groeneveld, Dirk and Mitchell, Margaret and Gardner, Matt},
+  journal={arXiv preprint arXiv:2104.08758},
+  year={2021}
+}
+
+@article{silcock2023massive,
+  title={A Massive Scale Semantic Similarity Dataset of Historical English},
+  author={Silcock, Emily and Arora, Abhishek and Dell, Melissa},
+  journal={Advances in Neural Information and Processing Systems, Datasets and Benchmarks},
+  year={2023}
+}
+
+@article{dell2023american,
+  title={American Stories: A Large-Scale Structured Text Dataset of Historical US Newspapers},
+  author={Dell, Melissa and Carlson, Jacob and Bryan, Tom and Silcock, Emily and Arora, Abhishek and Shen, Zejiang and D'Amico-Wong, Luca and Le, Quan and Querubin, Pablo and Heldring, Leander},
+  journal={Advances in Neural Information and Processing Systems, Datasets and Benchmarks},
+  year={2023}
+}
+
+@article{arora2023linktransformer,
+  title={LinkTransformer: A Unified Package for Record Linkage with Transformer Language Models},
+  author={Arora, Abhishek and Dell, Melissa},
+  journal={arXiv preprint arXiv:2309.00789},
+  year={2023}
+}
+
+@article{arora2023linking,
+  title={Linking representations with multimodal contrastive learning},
+  author={Arora, Abhishek and Yang, Xinmei and Jheng, Shao Yu and Dell, Melissa},
+  journal={arXiv preprint arXiv:2304.03464},
+  year={2023}
+}
+
+@inproceedings{dax2022graph,
+  title={Graph Q-Learning for Combinatorial Optimization},
+  author={Dax, Victoria Magdalena and Li, Jiachen and Leahy, Kevin and Kochenderfer, Mykel},
+  booktitle={Deep Reinforcement Learning Workshop NeurIPS 2022},
+  year={2022}
+}
+
+@article{manchanda2020gcomb,
+  title={Gcomb: Learning budget-constrained combinatorial algorithms over billion-sized graphs},
+  author={Manchanda, Sahil and Mittal, Akash and Dhawan, Anuj and Medya, Sourav and Ranu, Sayan and Singh, Ambuj},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={20000--20011},
+  year={2020}
+}
+
+@inproceedings{yao2021reversible,
+  title={Reversible Action Design for Combinatorial Optimization with ReinforcementLearning},
+  author={Yao, Fan and Cai, Renqin and Wang, Hongning},
+  booktitle={AAAI-22 Workshop on Machine Learning for Operations Research (ML4OR)},
+  year={2021}
+}
+
+@article{darvariu2021solving,
+  title={Solving graph-based public goods games with tree search and imitation learning},
+  author={Darvariu, Victor-Alexandru and Hailes, Stephen and Musolesi, Mirco},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={1739--1751},
+  year={2021}
+}
+
+@article{liu2021cma,
+  title={Cma-clip: Cross-modality attention clip for image-text classification},
+  author={Liu, Huidong and Xu, Shaoyuan and Fu, Jinmiao and Liu, Yang and Xie, Ning and Wang, Chien-Chih and Wang, Bryan and Sun, Yi},
+  journal={arXiv preprint arXiv:2112.03562},
+  year={2021}
+}
+
+@article{liu2023pre,
+  title={Pre-train, prompt, and predict: A systematic survey of prompting methods in natural language processing},
+  author={Liu, Pengfei and Yuan, Weizhe and Fu, Jinlan and Jiang, Zhengbao and Hayashi, Hiroaki and Neubig, Graham},
+  journal={ACM Computing Surveys},
+  volume={55},
+  number={9},
+  pages={1--35},
+  year={2023},
+  publisher={ACM New York, NY}
+}
+
+@article{wei2022chain,
+  title={Chain-of-thought prompting elicits reasoning in large language models},
+  author={Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Xia, Fei and Chi, Ed and Le, Quoc V and Zhou, Denny and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={24824--24837},
+  year={2022}
+}
+
+
+@article{yang2023homoglyphs,
+  title={Quantifying Character Similarity with Vision Transformers},
+  author={Yang, Xinmei and Arora, Abhishek and Jheng, Shao Yu and Dell, Melissa},
+  journal={Empirical Methods on Natural Language Processing},
+  year={2023}
+}
+
+
+@misc{russell-1918,
+    author       = {Russell, Robert C.},
+    title        = {U.S. Patent No. US1261167A},
+    year         = {1918},
+    month        = {4},
+    day          = {2},
+    howpublished = {U.S. Patent and Trademark Office},
+    note         = {https://patents.google.com/patent/US1261167A/en}
+}
+
+@misc{nara-soundex,
+    author       = {U.S. National Archives and Records Administration},
+    title        = {The Soundex Indexing System},
+    year         = {2023},
+    url          = {https://www.archives.gov/research/census/soundex},
+    note         = {Accessed: 11/10/2023}
+}
+
+@inproceedings{levenshtein1966binary,
+  title={Binary codes capable of correcting deletions, insertions, and reversals},
+  author={Levenshtein, Vladimir I and others},
+  booktitle={Soviet physics doklady},
+  volume={10},
+  pages={707--710},
+  year={1966},
+  organization={Soviet Union}
+}
+
+@inproceedings{okazaki2010simple,
+  title={Simple and efficient algorithm for approximate dictionary matching},
+  author={Okazaki, Naoaki and Tsujii, Jun’ichi},
+  booktitle={Proceedings of the 23rd International Conference on Computational Linguistics (Coling 2010)},
+  pages={851--859},
+  year={2010}
+}
+
+
+@misc{fuzzychinese,
+  author = {znwang25},
+  title = {fuzzychinese},
+  year = {2020},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/znwang25/fuzzychinese}}
+}
+
+
+@misc{chaizi,
+  author = {kfcd},
+  title = {chaizi},
+  year = {2015},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/kfcd/chaizi}}
+}
+
+@article{silbert1970world,
+  title={The World's First Computerized Criminal-Justice Information-Sharing System-The New York State Identification and Intelligence System (NYSIIS)},
+  author={Silbert, Jeffrey M},
+  journal={Criminology},
+  volume={8},
+  pages={107},
+  year={1970},
+  publisher={HeinOnline}
+}
+
+@misc{masala,
+  author = {Novosad, Paul},
+  title = {Masala Merge},
+  year = {2018},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/paulnov/masala-merge}}
+}
+
+
+@incollection{wang2003, 
+    author = {Wang, Guowei}, 
+    title = {Shishi (Deciphering "History")}, 
+    booktitle = {Guantan Gjilin},
+    publisher = {Hebei Education Publishing House}, 
+    address = {Shijiazhuang}, year = {2003}
+}
+
+
+@article{10.1162/tacl_a_00379,
+    author = {Lyu, Lijun and Koutraki, Maria and Krickl, Martin and Fetahu, Besnik},
+    title = {Neural OCR Post-Hoc Correction of Historical Corpora},
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume = {9},
+    year = {2021},
+    month = {05},
+    abstract = {Optical character recognition (OCR) is crucial for a deeper access to historical collections. OCR needs to account for orthographic variations, typefaces, or language evolution (i.e., new letters, word spellings), as the main source of character, word, or word segmentation transcription errors. For digital corpora of historical prints, the errors are further exacerbated due to low scan quality and lack of language standardization.For the task of OCR post-hoc correction, we propose a neural approach based on a combination of recurrent (RNN) and deep convolutional network (ConvNet) to correct OCR transcription errors. At character level we flexibly capture errors, and decode the corrected output based on a novel attention mechanism. Accounting for the input and output similarity, we propose a new loss function that rewards the model’s correcting behavior.Evaluation on a historical book corpus in German language shows that our models are robust in capturing diverse OCR transcription errors and reduce the word error rate of 32.3\% by more than 89\%.},
+    issn = {2307-387X},
+    pages = {479–483},
+    doi = {10.1162/tacl_a_00379},
+    url = {https://doi.org/10.1162/tacl\_a\_00379},
+    eprint = {https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl\_a\_00379/1924062/tacl\_a\_00379.pdf},
+}
+
+@article{10.1145/3453476,
+    author = {Nguyen, Thi Tuyet Hai and Jatowt, Adam and Coustaty, Mickael and Doucet, Antoine},
+    title = {Survey of Post-OCR Processing Approaches},
+    year = {2021},
+    issue_date = {July 2022},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {54},
+    number = {6},
+    issn = {0360-0300},
+    url = {https://doi.org/10.1145/3453476},
+    doi = {10.1145/3453476},
+    abstract = {Optical character recognition (OCR) is one of the most popular techniques used for converting printed documents into machine-readable ones. While OCR engines can do well with modern text, their performance is unfortunately significantly reduced on historical materials. Additionally, many texts have already been processed by various out-of-date digitisation techniques. As a consequence, digitised texts are noisy and need to be post-corrected. This article clarifies the importance of enhancing quality of OCR results by studying their effects on information retrieval and natural language processing applications. We then define the post-OCR processing problem, illustrate its typical pipeline, and review the state-of-the-art post-OCR processing approaches. Evaluation metrics, accessible datasets, language resources, and useful toolkits are also reported. Furthermore, the work identifies the current trend and outlines some research directions of this field.},
+    journal = {ACM Comput. Surv.},
+    month = {jul},
+    articleno = {124},
+    numpages = {37},
+    keywords = {statistical and neural machine translation, machine learning, language model, Post-OCR processing, OCR merging, error model}
+}
+
+@inproceedings{10.5555/3200334.3200364,
+    author = {Chiron, Guillaume and Doucet, Antoine and Coustaty, Micka\"{e}l and Visani, Muriel and Moreux, Jean-Philippe},
+    title = {Impact of OCR Errors on the Use of Digital Libraries: Towards a Better Access to Information},
+    year = {2017},
+    isbn = {9781538638613},
+    publisher = {IEEE Press},
+    abstract = {Digital collections are increasingly used for a variety of purposes. In Europe only, we can conservatively estimate that tens of thousands of users consult digital libraries daily. The usages are often motivated by qualitative and quantitative research. However, caution must be advised as most digitized documents are indexed through their OCRed version, which is far from perfect, especially for ancient documents. In this paper, we aim to estimate the impact of OCR errors on the use of a major online platform: The Gallica digital library from the National Library of France. It accounts for more than 100M OCRed documents and receives 80M search queries every year. In this context, we introduce two main contributions. First, an original corpus of OCRed documents composed of 12M characters along with the corresponding gold standard is presented and provided, with an equal share of English- and French-written documents. Next, statistics on OCR errors have been computed thanks to a novel alignment method introduced in this paper. Making use of all the user queries submitted to the Gallica portal over 4 months, we take advantage of our error model to propose an indicator for predicting the relative risk that queried terms mismatch targeted resources due to OCR errors, underlining the critical extent to which OCR quality impacts on digital library access.},
+    booktitle = {Proceedings of the 17th ACM/IEEE Joint Conference on Digital Libraries},
+    pages = {249–252},
+    numpages = {4},
+    keywords = {digital libraries, OCR errors, search logs, indexation bias},
+    location = {Toronto, Ontario, Canada},
+    series = {JCDL '17}
+}
+
+
+@conference{artidigh20,
+    author={Daniel {van Strien}. and Kaspar Beelen. and Mariona Coll Ardanuy. and Kasra Hosseini. and Barbara McGillivray. and Giovanni Colavizza.},
+    title={Assessing the Impact of OCR Quality on Downstream NLP Tasks},
+    booktitle={Proceedings of the 12th International Conference on Agents and Artificial Intelligence - Volume 1: ARTIDIGH,},
+    year={2020},
+    pages={484-496},
+    publisher={SciTePress},
+    organization={INSTICC},
+    doi={10.5220/0009169004840496},
+    isbn={978-989-758-395-7},
+    issn={2184-433X},
+}
+
+
+@misc{Jocher_YOLOv5_by_Ultralytics_2020,
+    author = {Jocher, Glenn},
+    doi = {10.5281/zenodo.3908559},
+    license = {GPL-3.0},
+    month = {5},
+    title = {{YOLOv5 by Ultralytics}},
+    url = {https://github.com/ultralytics/yolov5},
+    version = {7.0},
+    year = {2020}
+}
+
+
+@misc{yolov8,
+  author = {Ultalytics},
+  title = {Yolo v8 GitHub Repository},
+  howpublished = {\url{https://github.com/ultralytics/ultralytics}},
+  year = {2023}
+}
+
+
+@misc{locca,
+  title     = "{Chronicling America: Historic American Newspapers}",
+  author    = "{Library of Congress}",
+  year      = 2022,
+  publisher = "Library of Congress",
+  url = https://chroniclingamerica.loc.gov/lccn/sn84026749/1903-01-08/ed-1/seq-2
+}
+
+
+@article{cai2018cascade,
+  title={Cascade r-cnn: Delving into high quality object detection},
+  author={Cai, Zhaowei and Vasconcelos, Nuno},
+  journal={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={6154--6162},
+  year={2018}
+}
+
+
+@inproceedings{hedderich-etal-2021-survey,
+    title = "A Survey on Recent Approaches for Natural Language Processing in Low-Resource Scenarios",
+    author = {Hedderich, Michael A.  and
+      Lange, Lukas  and
+      Adel, Heike  and
+      Str{\"o}tgen, Jannik  and
+      Klakow, Dietrich},
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.201",
+    doi = "10.18653/v1/2021.naacl-main.201",
+    pages = "2545--2568",
+    abstract = "Deep neural networks and huge language models are becoming omnipresent in natural language applications. As they are known for requiring large amounts of training data, there is a growing body of work to improve the performance in low-resource settings. Motivated by the recent fundamental changes towards neural models and the popular pre-train and fine-tune paradigm, we survey promising approaches for low-resource natural language processing. After a discussion about the different dimensions of data availability, we give a structured overview of methods that enable learning when training data is sparse. This includes mechanisms to create additional labeled data like data augmentation and distant supervision as well as transfer learning settings that reduce the need for target supervision. A goal of our survey is to explain how these methods differ in their requirements as understanding them is essential for choosing a technique suited for a specific low-resource setting. Further key aspects of this work are to highlight open issues and to outline promising directions for future research.",
+}
+
+@article{angelopoulos2023prediction,
+  title={Prediction-powered inference},
+  author={Angelopoulos, Anastasios N and Bates, Stephen and Fannjiang, Clara and Jordan, Michael I and Zrnic, Tijana},
+  journal={arXiv preprint arXiv:2301.09633},
+  year={2023}
+}
+
+@misc{copyright,
+    title={Newspaper copyrights, notices, and renewals},
+    author={Ockerbloom, John Mark},
+    year={2019},
+    url={https://everybodyslibraries.com/2019/07/02/everybodys-library-questions-newspaper-copyrights-notices-and-renewals/}
+}
+
+@misc{hanlon2022historical,
+  title={Historical Newspaper Data: A Researcher's Guide and Toolkit},
+  author={Hanlon, W Walker and Beach, Brian},
+  journal={NBER Working Paper Series},
+  year={2022}
+}
+
+@article{biagioni2022graphenv,
+  title={graphenv: a Python library for reinforcement learning on graph search spaces},
+  author={Biagioni, David and Tripp, Charles Edison and Clark, Struan and Duplyakin, Dmitry and Law, Jeffrey and John, Peter C St},
+  journal={Journal of Open Source Software},
+  volume={7},
+  number={77},
+  pages={4621},
+  year={2022}
+}
+
+@book{BoydstunAmberE.2013Mtn:,
+year = {2013},
+title = {Making the news : politics, the media, and agenda setting},
+language = {eng},
+address = {Chicago ; London},
+author = {Boydstun, Amber E.},
+keywords = {Press and politics -- United States},
+lccn = {^^2013005897},
+abstract = {Offers a look at the patterns of media attention that determine which issues are brought before the public. Boydstun argues that the media have two modes: an “alarm mode” for breaking stories and a “patrol mode” for covering them in greater depth. While institutional incentives often initiate alarm mode around a story, they also propel news outlets into the watchdog-like patrol mode around its policy implications until the next big news item breaks. What results from this pattern of fixation followed by rapid change is skewed coverage of policy issues, with a few receiving the majority of media attention while others receive none at all. Boydstun documents this systemic explosiveness and skew through analysis of media coverage across policy issues, including in-depth looks at the waxing and waning of coverage around two issues: capital punishment and the “war on terror. --From publisher description.},
+publisher = {The University of Chicago Press},
+isbn = {9780226065434},
+}
+
+@misc{gebru2021datasheets,
+      title={Datasheets for Datasets}, 
+      author={Timnit Gebru and Jamie Morgenstern and Briana Vecchione and Jennifer Wortman Vaughan and Hanna Wallach and Hal Daumé III au2 and Kate Crawford},
+      year={2021},
+      eprint={1803.09010},
+      archivePrefix={arXiv},
+      primaryClass={cs.DB}
+}

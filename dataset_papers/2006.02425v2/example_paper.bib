@@ -1,0 +1,609 @@
+% Diffusion kernels
+@article{sohl2015deep,
+  title={Deep unsupervised learning using nonequilibrium thermodynamics},
+  author={Sohl-Dickstein, Jascha and Weiss, Eric A and Maheswaranathan, Niru and Ganguli, Surya},
+  journal={arXiv preprint arXiv:1503.03585},
+  year={2015}
+}
+% Learnable HMC
+@article{levy2017generalizing,
+  title={Generalizing hamiltonian monte carlo with neural networks},
+  author={Levy, Daniel and Hoffman, Matthew D and Sohl-Dickstein, Jascha},
+  journal={arXiv preprint arXiv:1711.09268},
+  year={2017}
+}
+% MCMC after flow
+@inproceedings{song2017nice,
+  title={A-nice-mc: Adversarial training for mcmc},
+  author={Song, Jiaming and Zhao, Shengjia and Ermon, Stefano},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={5140--5150},
+  year={2017}
+}
+% Continuous time flows
+% - define langevin dynamics with learnable diffusion and drift
+% - derive ELBO
+% - optimize with an armotized distillation where a generator network approximates the final stochastic flow
+@article{chen2017continuous,
+  title={Continuous-time flows for efficient inference and density estimation},
+  author={Chen, Changyou and Li, Chunyuan and Chen, Liqun and Wang, Wenlin and Pu, Yunchen and Carin, Lawrence},
+  journal={arXiv preprint arXiv:1709.01179},
+  year={2017}
+}
+% introduce MCMC proposals in VI approximation 
+@inproceedings{salimans2015markov,
+  title={Markov chain monte carlo and variational inference: Bridging the gap},
+  author={Salimans, Tim and Kingma, Diederik and Welling, Max},
+  booktitle={International Conference on Machine Learning},
+  pages={1218--1226},
+  year={2015}
+}
+% HMC in latent space of a flow
+@article{hoffman2019neutra,
+  title={NeuTra-lizing bad geometry in Hamiltonian Monte Carlo using neural transport},
+  author={Hoffman, Matthew and Sountsov, Pavel and Dillon, Joshua V and Langmore, Ian and Tran, Dustin and Vasudevan, Srinivas},
+  journal={arXiv preprint arXiv:1903.03704},
+  year={2019}
+}
+
+
+% Real and discrete / mixture models / breaking topology
+@article{dinh2019rad,
+  title={A RAD approach to deep mixture models},
+  author={Dinh, Laurent and Sohl-Dickstein, Jascha and Pascanu, Razvan and Larochelle, Hugo},
+  journal={arXiv preprint arXiv:1903.07714},
+  year={2019}
+}
+@article{cornish2019localised,
+  title={Localised generative flows},
+  author={Cornish, Rob and Caterini, Anthony L and Deligiannidis, George and Doucet, Arnaud},
+  journal={arXiv preprint arXiv:1909.13833},
+  year={2019}
+}
+@inproceedings{dupont2019augmented,
+  title={Augmented neural odes},
+  author={Dupont, Emilien and Doucet, Arnaud and Teh, Yee Whye},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={3134--3144},
+  year={2019}
+}
+@article{falorsi2018explorations,
+  title={Explorations in homeomorphic variational auto-encoding},
+  author={Falorsi, Luca and de Haan, Pim and Davidson, Tim R and De Cao, Nicola and Weiler, Maurice and Forr{\'e}, Patrick and Cohen, Taco S},
+  journal={arXiv preprint arXiv:1807.04689},
+  year={2018}
+}
+@article{falorsi2019reparameterizing,
+  title={Reparameterizing Distributions on Lie Groups},
+  author={Falorsi, Luca and de Haan, Pim and Davidson, Tim R and Forr{\'e}, Patrick},
+  journal={arXiv preprint arXiv:1903.02958},
+  year={2019}
+}
+
+% Normalizing flows
+@article{tabak2010density,
+  title={Density estimation by dual ascent of the log-likelihood},
+  author={Tabak, Esteban G and Vanden-Eijnden, Eric and others},
+  journal={Communications in Mathematical Sciences},
+  volume={8},
+  number={1},
+  pages={217--233},
+  year={2010},
+  publisher={International Press of Boston}
+}
+@article{tabak2013family,
+  title={A family of nonparametric density estimation algorithms},
+  author={Tabak, Esteban G and Turner, Cristina V},
+  journal={Communications on Pure and Applied Mathematics},
+  volume={66},
+  number={2},
+  pages={145--164},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+@article{rezende2015variational,
+  title={Variational inference with normalizing flows},
+  author={Rezende, Danilo Jimenez and Mohamed, Shakir},
+  journal={arXiv preprint arXiv:1505.05770},
+  year={2015}
+}
+
+
+
+% Coupling layers
+@article{dinh2014nice,
+  title={Nice: Non-linear independent components estimation},
+  author={Dinh, Laurent and Krueger, David and Bengio, Yoshua},
+  journal={arXiv preprint arXiv:1410.8516},
+  year={2014}
+}
+@article{dinh2016density,
+  title={Density estimation using real nvp},
+  author={Dinh, Laurent and Sohl-Dickstein, Jascha and Bengio, Samy},
+  journal={arXiv preprint arXiv:1605.08803},
+  year={2016}
+}
+@inproceedings{kingma2018glow,
+  title={Glow: Generative flow with invertible 1x1 convolutions},
+  author={Kingma, Durk P and Dhariwal, Prafulla},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={10215--10224},
+  year={2018}
+}
+@article{muller2018neural,
+  title={Neural importance sampling},
+  author={M{\"u}ller, Thomas and McWilliams, Brian and Rousselle, Fabrice and Gross, Markus and Nov{\'a}k, Jan},
+  journal={arXiv preprint arXiv:1808.03856},
+  year={2018}
+}
+
+%Autoregressive flows
+@inproceedings{kingma2016improved,
+  title={Improved variational inference with inverse autoregressive flow},
+  author={Kingma, Durk P and Salimans, Tim and Jozefowicz, Rafal and Chen, Xi and Sutskever, Ilya and Welling, Max},
+  booktitle={Advances in neural information processing systems},
+  pages={4743--4751},
+  year={2016}
+}
+@inproceedings{papamakarios2017masked,
+  title={Masked autoregressive flow for density estimation},
+  author={Papamakarios, George and Pavlakou, Theo and Murray, Iain},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={2338--2347},
+  year={2017}
+}
+@article{huang2018neural,
+  title={Neural autoregressive flows},
+  author={Huang, Chin-Wei and Krueger, David and Lacoste, Alexandre and Courville, Aaron},
+  journal={arXiv preprint arXiv:1804.00779},
+  year={2018}
+}
+@article{de2019block,
+  title={Block neural autoregressive flow},
+  author={De Cao, Nicola and Titov, Ivan and Aziz, Wilker},
+  journal={arXiv preprint arXiv:1904.04676},
+  year={2019}
+}
+@inproceedings{durkan2019neural,
+  title={Neural spline flows},
+  author={Durkan, Conor and Bekasov, Artur and Murray, Iain and Papamakarios, George},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={7509--7520},
+  year={2019}
+}
+@inproceedings{germain2015made,
+  title={Made: Masked autoencoder for distribution estimation},
+  author={Germain, Mathieu and Gregor, Karol and Murray, Iain and Larochelle, Hugo},
+  booktitle={International Conference on Machine Learning},
+  pages={881--889},
+  year={2015}
+}
+
+%Residual flows
+@article{behrmann2018invertible,
+  title={Invertible residual networks},
+  author={Behrmann, Jens and Grathwohl, Will and Chen, Ricky TQ and Duvenaud, David and Jacobsen, J{\"o}rn-Henrik},
+  journal={arXiv preprint arXiv:1811.00995},
+  year={2018}
+}
+@inproceedings{chen2019residual,
+  title={Residual flows for invertible generative modeling},
+  author={Chen, Tian Qi and Behrmann, Jens and Duvenaud, David K and Jacobsen, J{\"o}rn-Henrik},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={9913--9923},
+  year={2019}
+}
+@inproceedings{chen2018neural,
+  title={Neural ordinary differential equations},
+  author={Chen, Tian Qi and Rubanova, Yulia and Bettencourt, Jesse and Duvenaud, David K},
+  booktitle={Advances in neural information processing systems},
+  pages={6571--6583},
+  year={2018}
+}
+@article{grathwohl2018ffjord,
+  title={Ffjord: Free-form continuous dynamics for scalable reversible generative models},
+  author={Grathwohl, Will and Chen, Ricky TQ and Bettencourt, Jesse and Sutskever, Ilya and Duvenaud, David},
+  journal={arXiv preprint arXiv:1810.01367},
+  year={2018}
+}
+@article{zhang2018monge,
+  title={Monge-ampere flow for generative modeling},
+  author={Zhang, Linfeng and Wang, Lei and others},
+  journal={arXiv preprint arXiv:1809.10188},
+  year={2018}
+}
+
+% Minimizing target energies / importance sampling
+@article{oord2017parallel,
+  title={Parallel wavenet: Fast high-fidelity speech synthesis},
+  author={Oord, Aaron van den and Li, Yazhe and Babuschkin, Igor and Simonyan, Karen and Vinyals, Oriol and Kavukcuoglu, Koray and Driessche, George van den and Lockhart, Edward and Cobo, Luis C and Stimberg, Florian and others},
+  journal={arXiv preprint arXiv:1711.10433},
+  year={2017}
+}
+@article{noe2019boltzmann,
+  title={Boltzmann generators: Sampling equilibrium states of many-body systems with deep learning},
+  author={No{\'e}, Frank and Olsson, Simon and K{\"o}hler, Jonas and Wu, Hao},
+  journal={Science},
+  volume={365},
+  number={6457},
+  pages={eaaw1147},
+  year={2019},
+  publisher={American Association for the Advancement of Science}
+}
+@article{kohler2019equivariant,
+  title={Equivariant Flows: sampling configurations for multi-body systems with symmetric energies},
+  author={K{\"o}hler, Jonas and Klein, Leon and No{\'e}, Frank},
+  journal={arXiv preprint arXiv:1910.00753},
+  year={2019}
+}
+% VI
+@inproceedings{louizos2017multiplicative,
+  title={Multiplicative normalizing flows for variational bayesian neural networks},
+  author={Louizos, Christos and Welling, Max},
+  booktitle={Proceedings of the 34th International Conference on Machine Learning-Volume 70},
+  pages={2218--2227},
+  year={2017},
+  organization={JMLR. org}
+}
+@article{tomczak2016improving,
+  title={Improving variational auto-encoders using householder flow},
+  author={Tomczak, Jakub M and Welling, Max},
+  journal={arXiv preprint arXiv:1611.09630},
+  year={2016}
+}
+@article{berg2018sylvester,
+  title={Sylvester normalizing flows for variational inference},
+  author={Berg, Rianne van den and Hasenclever, Leonard and Tomczak, Jakub M and Welling, Max},
+  journal={arXiv preprint arXiv:1803.05649},
+  year={2018}
+}
+
+
+@article{rezende2019equivariant,
+  title={Equivariant Hamiltonian Flows},
+  author={Rezende, Danilo Jimenez and Racani{\`e}re, S{\'e}bastien and Higgins, Irina and Toth, Peter},
+  journal={arXiv preprint arXiv:1909.13739},
+  year={2019}
+}
+
+@article{manek2020learning,
+  title={Learning Stable Deep Dynamics Models},
+  author={Manek, Gaurav and Kolter, J Zico},
+  journal={arXiv preprint arXiv:2001.06116},
+  year={2020}
+}
+
+@article{toth2019hamiltonian,
+  title={Hamiltonian generative networks},
+  author={Toth, Peter and Rezende, Danilo Jimenez and Jaegle, Andrew and Racani{\`e}re, S{\'e}bastien and Botev, Aleksandar and Higgins, Irina},
+  journal={arXiv preprint arXiv:1909.13789},
+  year={2019}
+}
+
+@article{dormand1980family,
+  title={A family of embedded Runge-Kutta formulae},
+  author={Dormand, John R and Prince, Peter J},
+  journal={Journal of computational and applied mathematics},
+  volume={6},
+  number={1},
+  pages={19--26},
+  year={1980},
+  publisher={Elsevier}
+}
+
+@article{wales97LJ,
+  title={Global optimization by basin-hopping and the lowest energy structures of Lennard-Jones clusters containing up to 100 Atoms},
+  author={Wales, D. J.  and Doye, J. P. K.},
+  year={1997},
+  journal={J. Phys. Chem. A},
+  volume={101},
+  pages={5111-5116}
+}
+
+
+@incollection{Bengio+chapter2007,
+author = {Bengio, Yoshua and LeCun, Yann},
+booktitle = {Large Scale Kernel Machines},
+publisher = {MIT Press},
+title = {Scaling Learning Algorithms Towards {AI}},
+year = {2007}
+}
+
+@article{TabakVandenEijnden_CMS10_DensityEstimation,
+        Author = {Esteban G. Tabak and Eric Vanden-Eijnden},
+        Date-Added = {2019-04-20 18:17:55 +0000},
+        Date-Modified = {2019-04-20 18:19:07 +0000},
+        Journal = {Commun. Math. Sci.},
+        Pages = {217-233},
+        Title = {Density estimation by dual ascent of the log-likelihood},
+        Volume = {8},
+        Year = {2010}}
+        
+@article{BehrmannEtAl_InvertibleResNets,
+  author    = {Jens Behrmann and
+               David Duvenaud and
+               J{\"{o}}rn{-}Henrik Jacobsen},
+  title     = {Invertible Residual Networks},
+  journal   = {CoRR},
+  volume    = {abs/1811.00995},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1811.00995},
+  archivePrefix = {arXiv},
+  eprint    = {1811.00995},
+  timestamp = {Thu, 22 Nov 2018 17:58:30 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1811-00995},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{Hinton06,
+author = {Hinton, Geoffrey E. and Osindero, Simon and Teh, Yee Whye},
+journal = {Neural Computation},
+pages = {1527--1554},
+title = {A Fast Learning Algorithm for Deep Belief Nets},
+volume = {18},
+year = {2006}
+}
+
+@book{goodfellow2016deep,
+title={Deep learning},
+author={Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron and Bengio, Yoshua},
+volume={1},
+year={2016},
+publisher={MIT Press}
+}
+
+@article{bender2019permutation,
+  title={Permutation Invariant Likelihoods and Equivariant Transformations},
+  author={Bender, Chris and Garcia, Juan Jose and O'Connor, Kevin and Oliva, Junier},
+  journal={arXiv preprint arXiv:1902.01967},
+  year={2019}
+}
+
+
+
+@article{LiuQiGuibas_FlowNet3D,
+Author={Xingyu Liu and Charles R. Qi and Leonidas J. Guibas},
+Title={FlowNet3D: Learning Scene Flow in 3D Point Clouds},
+Journal={arXiv:1806.01411},
+Year={2019}
+
+}
+
+@inproceedings{VanDenOord_WaveNet2,
+        Address = {Stockholmsm{\"a}ssan, Stockholm Sweden},
+        Author = {A. van den Oord and Y. Li and I. Babuschkin and K. Simonyan and O. Vinyals and K. Kavukcuoglu and G. van den Driessche and E. Lockhart and L. C. Cobo and F. Stimberg and N. Casagrande and D. Grewe and S. Noury and S. Dieleman and E. Elsen and N. Kalchbrenner and H. Zen and A. Graves and H. King and T. Walters and D. Belov and D. Hassabis},
+        Booktitle = {Proceedings of the 35th International Conference on Machine Learning},
+        Date-Added = {2018-11-12 15:20:50 +0000},
+        Date-Modified = {2018-11-17 09:57:29 +0000},
+        Editor = {Dy, Jennifer and Krause, Andreas},
+        Pages = {3918--3926},
+        Publisher = {PMLR},
+        Series = {Proceedings of Machine Learning Research},
+        Title = {{Parallel WaveNet: Fast High-Fidelity Speech Synthesis}},
+        Volume = {80},
+        Year = {2018}}
+
+
+@article{DinhDruegerBengio_NICE2015,
+        Author = {L. Dinh and D. Krueger and Y. Bengio},
+        Date-Added = {2018-08-11 10:04:13 +0000},
+        Date-Modified = {2018-11-13 22:30:25 +0000},
+        Journal = {arXiv:1410.8516},
+        Title = {NICE: Nonlinear independent components estimation},
+        Year = {2015}
+}
+        
+
+@article{RezendeEtAl_NormalizingFlows,
+        Author = {D. J. Rezende and S. Mohamed},
+        Date-Added = {2018-12-11 17:19:19 +0000},
+        Date-Modified = {2018-12-11 17:19:57 +0000},
+        Journal = {arXiv:1505.05770},
+        Title = {Variational Inference with Normalizing Flows},
+        Year = {2015}}
+
+@article{Torrie_JCompPhys23_187,
+        Author = {Torrie, G. M. and Valleau, J. P.},
+        Citeulike-Article-Id = {3666691},
+        Journal = {J. Comp. Phys.},
+        Keywords = {file-import-08-11-23},
+        Pages = {187--199},
+        Posted-At = {2008-11-23 18:02:38},
+        Priority = {2},
+        Title = {{Nonphysical Sampling Distributions in Monte Carlo Free-Energy Estimation: Umbrella Sampling}},
+        Volume = {23},
+        Year = {1977}}
+        
+@article{Bennett_JCP76_BAR,
+        Author = {Charles H. Bennett},
+        Date-Added = {2014-05-25 18:28:56 +0000},
+        Date-Modified = {2014-05-25 18:29:52 +0000},
+        Journal = {J. Chem. Phys.},
+        Pages = {245-268},
+        Title = {Efficient Estimation of Free Energy Differences from Monte Carlo Data},
+        Volume = {22},
+        Year = {1976}}
+
+@article{WuEtAL_PNAS16_TRAM,
+        Author = {H. Wu and F. Paul and C. Wehmeyer and F. No{\'e}},
+        Date-Modified = {2018-10-04 14:40:00 +0000},
+        Doi = {10.1073/pnas.1525092113},
+        Journal = {Proc. Natl. Acad. Sci. USA},
+        Pages = {E3221--E3230},
+        Title = {Multiensemble Markov models of molecular thermodynamics and kinetics},
+        Volume = {113},
+        Year = {2016},
+        Bdsk-Url-1 = {http://dx.doi.org/10.1073/pnas.1525092113}}
+
+@article{LaioParrinello_PNAS99_12562,
+        Author = {Laio, A. and Parrinello, M.},
+        Citeulike-Article-Id = {3666742},
+        Date-Modified = {2015-12-09 00:00:32 +0000},
+        Journal = {Proc. Natl. Acad. Sci. USA},
+        Keywords = {file-import-08-11-23},
+        Pages = {12562-12566},
+        Posted-At = {2008-11-23 18:04:49},
+        Priority = {2},
+        Title = {{Escaping free energy minima}},
+        Volume = {99},
+        Year = {2002}}
+
+@inproceedings{schutt2017schnet,
+  title={SchNet: A continuous-filter convolutional neural network for modeling quantum interactions},
+  author={Sch{\"u}tt, Kristof and Kindermans, Pieter-Jan and Felix, Huziel Enoc Sauceda and Chmiela, Stefan and Tkatchenko, Alexandre and M{\"u}ller, Klaus-Robert},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={991--1001},
+  year={2017}
+}
+
+@article{thomas2018tensor,
+  title={Tensor field networks: Rotation-and translation-equivariant neural networks for 3D point clouds},
+  author={Thomas, Nathaniel and Smidt, Tess and Kearnes, Steven and Yang, Lusann and Li, Li and Kohlhoff, Kai and Riley, Patrick},
+  journal={arXiv preprint arXiv:1802.08219},
+  year={2018}
+}
+
+@article{serre1977linear,
+  title={Linear representations of finite groups},
+  author={Serre, Jean-Pierre},
+  year={1977},
+  publisher={Springer}
+}
+
+@inproceedings{Zaheer2017DeepS,
+  title={Deep Sets},
+  author={Manzil Zaheer and Satwik Kottur and Siamak Ravanbakhsh and Barnab{\'a}s P{\'o}czos and Ruslan Salakhutdinov and Alexander J. Smola},
+  booktitle={NIPS},
+  year={2017}
+}
+
+
+@article{bloem2019probabilistic,
+  title={Probabilistic symmetry and invariant neural networks},
+  author={Bloem-Reddy, Benjamin and Teh, Yee Whye},
+  journal={arXiv preprint arXiv:1901.06082},
+  year={2019}
+}
+
+@inproceedings{Hutchinson1989ASE,
+  title={A stochastic estimator of the trace of the influence matrix for Laplacian smoothing splines},
+  author={M. F. Hutchinson},
+  year={1989}
+}
+
+@article{gholami2019anode,
+  title={ANODE: Unconditionally Accurate Memory-Efficient Gradients for Neural ODEs},
+  author={Gholami, Amir and Keutzer, Kurt and Biros, George},
+  journal={arXiv preprint arXiv:1902.10298},
+  year={2019}
+}
+
+@article{paszke2017automatic,
+  title={Automatic differentiation in pytorch},
+  author={Paszke, Adam and Gross, Sam and Chintala, Soumith and Chanan, Gregory and Yang, Edward and DeVito, Zachary and Lin, Zeming and Desmaison, Alban and Antiga, Luca and Lerer, Adam},
+  year={2017}
+}
+@article{loshchilov2017fixing,
+  title={Fixing weight decay regularization in adam},
+  author={Loshchilov, Ilya and Hutter, Frank},
+  journal={arXiv preprint arXiv:1711.05101},
+  year={2017}
+}
+@book{bonnans2006numerical,
+  title={Numerical optimization: theoretical and practical aspects},
+  author={Bonnans, Joseph-Fr{\'e}d{\'e}ric and Gilbert, Jean Charles and Lemar{\'e}chal, Claude and Sagastiz{\'a}bal, Claudia A},
+  year={2006},
+  publisher={Springer Science \& Business Media}
+}
+
+@article{papamakarios2019normalizing,
+  title={Normalizing Flows for Probabilistic Modeling and Inference},
+  author={Papamakarios, George and Nalisnick, Eric and Rezende, Danilo Jimenez and Mohamed, Shakir and Lakshminarayanan, Balaji},
+  journal={arXiv preprint arXiv:1912.02762},
+  year={2019}
+}
+
+@inproceedings{liu2019graph,
+  title={Graph normalizing flows},
+  author={Liu, Jenny and Kumar, Aviral and Ba, Jimmy and Kiros, Jamie and Swersky, Kevin},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={13556--13566},
+  year={2019}
+}
+
+@inproceedings{chen2019neural,
+  title={Neural networks with cheap differential operators},
+  author={Chen, Tian Qi and Duvenaud, David K},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={9961--9971},
+  year={2019}
+}
+
+@article{benamou2000computational,
+  title={A computational fluid mechanics solution to the Monge-Kantorovich mass transfer problem},
+  author={Benamou, Jean-David and Brenier, Yann},
+  journal={Numerische Mathematik},
+  volume={84},
+  number={3},
+  pages={375--393},
+  year={2000},
+  publisher={Springer}
+}
+
+@article{mccann2001polar,
+  title={Polar factorization of maps on Riemannian manifolds},
+  author={McCann, Robert J},
+  journal={Geometric \& Functional Analysis GAFA},
+  volume={11},
+  number={3},
+  pages={589--608},
+  year={2001},
+  publisher={Springer}
+}
+
+@article{kingma2014adam,
+  title={Adam: A method for stochastic optimization},
+  author={Kingma, Diederik P and Ba, Jimmy},
+  journal={arXiv preprint arXiv:1412.6980},
+  year={2014}
+}
+
+@inproceedings{loshchilov2018fixing,
+  title={Fixing weight decay regularization in Adam, CoRR, abs/1711.05101},
+  author={Loshchilov, I and Hutter, F},
+  booktitle={Proceedings of the ICLR 2018 Conference Blind Submission, Vancouver, BC, Canada},
+  volume={30}
+}
+
+% Applications 
+@article{Albergo_PRD19_FlowLattice,
+        Author = {M. S. Albergo and G. Kanwar and P. E. Shanahan},
+        Date-Added = {2020-02-04 11:38:38 +0000},
+        Date-Modified = {2020-02-04 11:39:34 +0000},
+        Journal = {Phys. Rev. D},
+        Pages = {034515},
+        Title = {Flow-based generative models for Markov chain Monte Carlo in lattice field theory},
+        Volume = {100},
+        Year = {2019}}
+
+@article{LiWang_PRL18_NeuralRenormalizationGroup,
+        Author = {Shuo-Hui Li and Lei Wang},
+        Date-Added = {2020-02-04 11:39:43 +0000},
+        Date-Modified = {2020-02-04 11:41:23 +0000},
+        Journal = {Phys. Rev. Lett. },
+        Pages = {260601},
+        Title = {Neural Network Renormalization Group},
+        Volume = {121},
+        Year = {2018}}
+
+@article{Nicoli_PRE_UnbiasedSampling,
+        Author = {Kim A. Nicoli and Shinichi Nakajima and Nils Strodthoff and Wo
+jciech Samek and Klaus-Robert M{\"u}ller and Pan Kessel},
+        Date-Added = {2020-02-04 11:41:41 +0000},
+        Date-Modified = {2020-02-04 11:44:06 +0000},
+        Journal = {arXiv:1910.13496},
+        Title = {Asymptotically unbiased estimation of physical observables with
+ neural samplers},
+        Year = {2019}}
+        
+        

@@ -1,0 +1,994 @@
+@article{Computing2018,
+abstract = {Computing distances between examples is at the core of many learning algorithms for time series. Consequently, a great deal of work has gone into designing effective time series dis-tance measures. We present Jiffy, a simple and scalable distance metric for multivariate time series. Our approach is to reframe the task as a representation learning problem—rather than design an elaborate distance function, we use a CNN to learn an embedding such that the Eu-clidean distance is effective. By aggressively max-pooling and downsampling, we are able to construct this embedding using a highly compact neural network. Experiments on a diverse set of multivariate time series datasets show that our approach consistently outperforms existing methods.},
+author = {Computing, Bstract and Measuring, Ntroduction and Song, Oh},
+journal = {ICLR (reject)},
+pages = {1--11},
+title = {{A Convolutional Approach To Learning Time Series Similarity}},
+url = {https://openreview.net/pdf?id=ryacTMZRZ},
+year = {2018}
+}
+@article{Cohen2020,
+abstract = {Dynamic time warping (DTW) is a useful method for aligning, comparing and combining time series, but it requires them to live in comparable spaces. In this work, we consider a setting in which time series live on different spaces without a sensible ground metric, causing DTW to become ill-defined. To alleviate this, we propose Gromov dynamic time warping (GDTW), a distance between time series on potentially incomparable spaces that avoids the comparability requirement by instead considering intra-relational geometry. We demonstrate its effectiveness at aligning, combining and comparing time series living on incomparable spaces. We further propose a smoothed version of GDTW as a differentiable loss and assess its properties in a variety of settings, including barycentric averaging, generative modeling and imitation learning.},
+archivePrefix = {arXiv},
+arxivId = {2006.12648},
+author = {Cohen, Samuel and Luise, Giulia and Terenin, Alexander and Amos, Brandon and Deisenroth, Marc Peter},
+eprint = {2006.12648},
+title = {{Aligning Time Series on Incomparable Spaces}},
+url = {http://arxiv.org/abs/2006.12648},
+year = {2020}
+}
+@article{Abid2018,
+abstract = {Measuring similarities between unlabeled time series trajectories is an important problem in domains as diverse as medicine, astronomy, finance, and computer vision. It is often unclear what is the appropriate metric to use because of the complex nature of noise in the trajectories (e.g. different sampling rates or outliers). Domain experts typically hand-craft or manually select a specific metric, such as dynamic time warping (DTW), to apply on their data. In this paper, we propose Autowarp, an end-to-end algorithm that optimizes and learns a good metric given unlabeled trajectories. We define a flexible and differentiable family of warping metrics, which encompasses common metrics such as DTW, Euclidean, and edit distance. Autowarp then leverages the representation power of sequence autoencoders to optimize for a member of this warping distance family. The output is a metric which is easy to interpret and can be robustly learned from relatively few trajectories. In systematic experiments across different domains, we show that Autowarp often outperforms hand-crafted trajectory similarity metrics.},
+archivePrefix = {arXiv},
+arxivId = {1810.10107},
+author = {Abid, Abubakar and Zou, James},
+eprint = {1810.10107},
+issn = {10495258},
+journal = {Advances in Neural Information Processing Systems},
+number = {NeurIPS},
+pages = {10547--10555},
+title = {{AutoWarp: Learning a warping distance from unlabeled time series using sequence autoencoders}},
+volume = {2018-Decem},
+year = {2018}
+}
+@article{Beg2005,
+abstract = {This paper examine the Euler-Lagrange equations for the solution of the large deformation diffeomorphic metric mapping problem studied in Dupuis et al. (1998) and Trouv{\'{e}} (1995) in which two images I0, I1 are given and connected via the diffeomorphic change of coordinates I 0 o $\phi$-1 = I1 where $\phi$ = $\phi$1 is the end point at t = 1 of curve $\phi$t, t ∈ [0, 1] satisfying $\phi$t, = vt($\phi$t), t ∈ [0, 1] with $\phi$0 = id. The variational problem takes the form argmin $\nu$: $\phi$̇t=$\nu$1($\phi$1) (∫01 ∥$\nu$t∥V2dt + ∥I0o $\phi$1-1 - I 1∥L22 where ∥$\nu$t∥V is an appropriate Sobolev norm on the velocity field $\nu$t({\textperiodcentered}), and the second term enforces matching of the images with ∥{\textperiodcentered}∥L2 representing the squared-error norm. In this paper we derive the Euler-Lagrange equations characterizing the minimizing vector fields $\nu$t, t ∈ [0, 1] assuming sufficient smoothness of the norm to guarantee existence of solutions in the space of diffeomorphisms. We describe the implementation of the Euler equations using semi-lagrangian method of computing particle flows and show the solutions for various examples. As well, we compute the metric distance on several anatomical configurations as measured by ∫01 ∥$\nu$t∥V dt on the geodesic shortest paths.},
+author = {Beg, M. Faisal and Miller, Michael I. and Trouv{\'{e}}, Alain and Younes, Laurent},
+doi = {10.1023/B:VISI.0000043755.93987.aa},
+issn = {09205691},
+journal = {International Journal of Computer Vision},
+keywords = {Computational anatomy,Deformable template,Euler-lagrange equation,Metrics,Variational optimization},
+number = {2},
+pages = {139--157},
+title = {{Computing large deformation metric mappings via geodesic flows of diffeomorphisms}},
+volume = {61},
+year = {2005}
+}
+@article{Kaufman2021,
+author = {Kaufman, Ilya and Weber, Ron Shapira and Freifeld, Oren},
+doi = {10.1109/icip42928.2021.9506570},
+isbn = {9781665441155},
+pages = {349--353},
+publisher = {IEEE},
+title = {{Cyclic Diffeomorphic Transformer Nets For Contour Alignment}},
+year = {2021}
+}
+@article{Detlefsen2018,
+abstract = {Spatial Transformer layers allow neural networks, at least in principle, to be invariant to large spatial transformations in image data. The model has, however, seen limited uptake as most practical implementations support only transformations that are too restricted, e.g. affine or homographic maps, and/or destructive maps, such as thin plate splines. We investigate the use of flexible diffeomorphic image transformations within such networks and demonstrate that significant performance gains can be attained over currently-used models. The learned transformations are found to be both simple and intuitive, thereby providing insights into individual problem domains. With the proposed framework, a standard convolutional neural network matches state-of-the-art results on face verification with only two extra lines of simple TensorFlow code.},
+author = {Detlefsen, Nicki Skafte and Freifeld, Oren and Hauberg, Soren},
+doi = {10.1109/CVPR.2018.00463},
+isbn = {9781538664209},
+issn = {10636919},
+journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+pages = {4403--4412},
+title = {{Deep Diffeomorphic Transformer Networks}},
+year = {2018}
+}
+@article{Nunez2020,
+abstract = {Rate-invariant or reparameterization-invariant matching between functions and shapes of curves, respectively, is an important problem in computer vision and medical imaging. Often, the computational cost of matching using approaches such as dynamic time warping or dynamic programming is prohibitive for large datasets. Here, we propose a deep neural-network-based approach for learning the warping functions from training data consisting of a large number of optimal matches, and use it to predict optimal diffeomorphic warping functions. Results show prediction performance on a synthetic dataset of bump functions and two-dimensional curves from the ETH-80 dataset as well as a significant reduction in computational cost.},
+author = {Nunez, Elvis and Joshi, Shantanu H.},
+doi = {10.1109/CVPRW50498.2020.00441},
+isbn = {9781728193601},
+issn = {21607516},
+journal = {IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops},
+pages = {3782--3790},
+title = {{Deep learning of warping functions for shape analysis}},
+volume = {2020-June},
+year = {2020}
+}
+
+
+@article{Younes2014,
+author = {Younes, Laurent},
+journal = {Johns Hopkins},
+number = {January},
+pages = {1--57},
+title = {{Diffeomorphic Shape Analysis}},
+year = {2014}
+}
+
+
+@misc{Ouderaa2021,
+title={Diffeomorphic Template Transformers},
+author={Tycho F.A. van der Ouderaa and Ivana Isgum and Wouter B. Veldhuis and Bob D. De Vos and Pim Moeskops},
+year={2021},
+journal = {ICLR 2021},
+pages = {1--13},
+url={https://openreview.net/forum?id=_sCOYXNwaI}
+}
+
+@article{Weber2019,
+abstract = {Time-series analysis is confounded by nonlinear time warping of the data. Traditional methods for joint alignment do not generalize: after aligning a given signal ensemble, they lack a mechanism, that does not require solving a new optimization problem, to align previously-unseen signals. In the multi-class case, they must also first classify the test data before aligning it. Here we propose the Diffeomorphic Temporal Alignment Net (DTAN), a learning-based method for time-series joint alignment. Via flexible temporal transformer layers, DTAN learns and applies an input-dependent nonlinear time warping to its input signal. Once learned, DTAN easily aligns previously-unseen signals by its inexpensive forward pass. In a single-class case, the method is unsupervised: the ground-truth alignments are unknown. In the multi-class case, it is semi-supervised in the sense that class labels (but not the ground-truth alignments) are used during learning; in test time, however, the class labels are unknown. As we show, DTAN not only outperforms existing joint-alignment methods in aligning training data but also generalizes well to test data. Our code is available at https://github.com/BGU-CS-VIL/dtan.},
+author = {Weber, Ron Shapira and Eyal, Matan and Detlefsen, Nicki Skafte and Shriki, Oren and Freifeld, Oren},
+issn = {10495258},
+journal = {Advances in Neural Information Processing Systems},
+number = {NeurIPS},
+title = {{Diffeomorphic temporal alignment nets}},
+volume = {32},
+year = {2019}
+}
+@article{ShapiraWeber2019,
+abstract = {Time-series analysis is confounded by nonlinear time warping of the data. Traditional methods for joint alignment do not generalize: after aligning a given signal ensemble, they lack a mechanism, that does not require solving a new optimization problem, to align previously-unseen signals. In the multi-class case, they must also first classify the test data before aligning it. Here we propose the Diffeomorphic Temporal Alignment Net (DTAN), a learning-based method for time-series joint alignment. Via flexible temporal transformer layers, DTAN learns and applies an input-dependent nonlinear time warping to its input signal. Once learned, DTAN easily aligns previously-unseen signals by its inexpensive forward pass. In a single-class case, the method is unsupervised: the ground-truth alignments are unknown. In the multi-class case, it is semi-supervised in the sense that class labels (but not the ground-truth alignments) are used during learning; in test time, however, the class labels are unknown. As we show, DTAN not only outperforms existing joint-alignment methods in aligning training data but also generalizes well to test data. Our code is available at https://github.com/BGU-CS-VIL/dtan.},
+author = {{Shapira Weber}, Ron and Eyal, Matan and {Skafte Detlefsen}, Nicki and Shriki, Oren and Freifeld, Oren},
+number = {NeurIPS},
+title = {{Diffeomorphic Temporal Alignment Nets-Supplemental Material}},
+year = {2019}
+}
+@article{Vos1997,
+author = {Vos, Paul W},
+pages = {300--302},
+title = {{Diffeomorphisms and the Inverse Function Theorem}},
+year = {1997}
+}
+@article{Arango2002,
+abstract = {We investigate the inverse ODE problem of finding a vector field such that the time one map associated to its flow coincides with a given diffeomorphism. Using a constructive approach we solve this problem for a class of diffeomorphisms having a globally attracting fixed point. Furthermore we consider how the solution fields depend on the diffeomorphism. As an example we show that for certain parameters, the H{\'{e}}non map is the time one map of a two dimensional flow. {\textcopyright} Birkh{\"{a}}user Verlag, Basel, 2002.},
+author = {Arango, Jaime and G{\'{o}}mez, Adriana},
+doi = {10.1007/PL00013195},
+issn = {00019054},
+journal = {Aequationes Mathematicae},
+keywords = {Diffeomorphisms,Flows,H{\'{e}}non map,Iteration,Time one maps},
+number = {3},
+pages = {304--314},
+title = {{Diffeomorphisms as time one maps}},
+volume = {64},
+year = {2002}
+}
+@article{Scharwachter2020,
+abstract = {Segmented models are widely used to describe non-stationary sequential data with discrete change points. Their estimation usually requires solving a mixed discrete-continuous optimization problem, where the segmentation is the discrete part and all other model parameters are continuous. A number of estimation algorithms have been developed that are highly specialized for their specific model assumptions. The dependence on non-standard algorithms makes it hard to integrate segmented models in state-of-the-art deep learning architectures that critically depend on gradient-based optimization techniques. In this work, we formulate a relaxed variant of segmented models that enables joint estimation of all model parameters, including the segmentation, with gradient descent. We build on recent advances in learning continuous warping functions and propose a novel family of warping functions based on the two-sided power (TSP) distribution. TSP-based warping functions are differentiable, have simple closed-form expressions, and can represent segmentation functions exactly. Our formulation includes the important class of segmented generalized linear models as a special case, which makes it highly versatile. We use our approach to model the spread of COVID-19 with Poisson regression, apply it on a change point detection task, and learn classification models with concept drift. The experiments show that our approach effectively learns all these tasks with standard algorithms for gradient descent.},
+archivePrefix = {arXiv},
+arxivId = {2006.13105},
+author = {Scharw{\"{a}}chter, Erik and Lennartz, Jonathan and M{\"{u}}ller, Emmanuel},
+eprint = {2006.13105},
+number = {1},
+pages = {1--17},
+title = {{Differentiable Segmentation of Sequences}},
+url = {http://arxiv.org/abs/2006.13105},
+year = {2020}
+}
+@article{Massaroli2020,
+abstract = {Continuous deep learning architectures have recently re–emerged as Neural Ordinary Differential Equations (Neural ODEs). This infinite–depth approach theoretically bridges the gap between deep learning and dynamical systems, offering a novel perspective. However, deciphering the inner working of these models is still an open challenge, as most applications apply them as generic black–box modules. In this work we “open the box”, further developing the continuous–depth formulation with the aim of clarifying the influence of several design choices on the underlying dynamics.},
+archivePrefix = {arXiv},
+arxivId = {2002.08071},
+author = {Massaroli, Stefano and Poli, Michael and Park, Jinkyoo and Yamashita, Atsushi and Asama, Hajime},
+eprint = {2002.08071},
+issn = {10495258},
+journal = {Advances in Neural Information Processing Systems},
+number = {NeurIPS},
+title = {{Dissecting neural ODEs}},
+volume = {2020-Decem},
+year = {2020}
+}
+@misc{chen2019neural,
+      title={Neural Ordinary Differential Equations}, 
+      author={Ricky T. Q. Chen and Yulia Rubanova and Jesse Bettencourt and David Duvenaud},
+      year={2019},
+      eprint={1806.07366},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+@misc{rackauckas2019diffeqfluxjl,
+      title={DiffEqFlux.jl - A Julia Library for Neural Differential Equations}, 
+      author={Chris Rackauckas and Mike Innes and Yingbo Ma and Jesse Bettencourt and Lyndon White and Vaibhav Dixit},
+      year={2019},
+      eprint={1902.02376},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+@misc{ma2021comparison,
+      title={A Comparison of Automatic Differentiation and Continuous Sensitivity Analysis for Derivatives of Differential Equation Solutions}, 
+      author={Yingbo Ma and Vaibhav Dixit and Mike Innes and Xingjian Guo and Christopher Rackauckas},
+      year={2021},
+      eprint={1812.01892},
+      archivePrefix={arXiv},
+      primaryClass={cs.NA}
+}
+@article{zhang2014fatode,
+  title={FATODE: a library for forward, adjoint, and tangent linear integration of ODEs},
+  author={Zhang, Hong and Sandu, Adrian},
+  journal={SIAM Journal on Scientific Computing},
+  volume={36},
+  number={5},
+  pages={C504--C523},
+  year={2014},
+  publisher={SIAM}
+}
+@misc{zhuang2020adaptive,
+      title={Adaptive Checkpoint Adjoint Method for Gradient Estimation in Neural ODE}, 
+      author={Juntang Zhuang and Nicha Dvornek and Xiaoxiao Li and Sekhar Tatikonda and Xenophon Papademetris and James Duncan},
+      year={2020},
+      eprint={2006.02493},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+@misc{daulbaev2020interpolation,
+      title={Interpolation Technique to Speed Up Gradients Propagation in Neural ODEs}, 
+      author={Talgat Daulbaev and Alexandr Katrutsa and Larisa Markeeva and Julia Gusak and Andrzej Cichocki and Ivan Oseledets},
+      year={2020},
+      eprint={2003.05271},
+      archivePrefix={arXiv},
+      primaryClass={cs.NE}
+}
+@misc{zhuang2021mali,
+      title={MALI: A memory efficient and reverse accurate integrator for Neural ODEs}, 
+      author={Juntang Zhuang and Nicha C. Dvornek and Sekhar Tatikonda and James S. Duncan},
+      year={2021},
+      eprint={2102.04668},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+@article{Zygote.jl-2018,
+  author    = {Michael Innes},
+  title     = {Don't Unroll Adjoint: Differentiating SSA-Form Programs},
+  journal   = {CoRR},
+  volume    = {abs/1810.07951},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1810.07951},
+  archivePrefix = {arXiv},
+  eprint    = {1810.07951},
+  timestamp = {Tue, 30 Oct 2018 20:39:56 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1810-07951},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@inproceedings{NEURIPS2020_9332c513,
+ author = {Moses, William and Churavy, Valentin},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+ pages = {12472--12485},
+ publisher = {Curran Associates, Inc.},
+ title = {Instead of Rewriting Foreign Code for Machine Learning, Automatically Synthesize Fast Gradients},
+ volume = {33},
+ year = {2020}
+}
+
+@article{paszke2019pytorch,
+  title={Pytorch: An imperative style, high-performance deep learning library},
+  author={Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and others},
+  journal={Advances in neural information processing systems},
+  volume={32},
+  pages={8026--8037},
+  year={2019}
+}
+@misc{reverseDiff,
+author = {Jarrett Revels},
+title="{ReverseDiff.jl}",
+year=2020,
+note="Julia Package",
+publisher = {GitHub},
+journal = {GitHub repository}
+}
+@misc{jax2018github,
+  author = {James Bradbury and Roy Frostig and Peter Hawkins and Matthew James Johnson and Chris Leary and Dougal Maclaurin and George Necula and Adam Paszke and Jake Vander{P}las and Skye Wanderman-{M}ilne and Qiao Zhang},
+  title = {{JAX}: composable transformations of {P}ython+{N}um{P}y programs},
+  url = {http://github.com/google/jax},
+  version = {0.2.5},
+  year = {2018},
+}
+@article{agrawal2019tensorflow,
+  title={TensorFlow Eager: A multi-stage, Python-embedded DSL for machine learning},
+  author={Agrawal, Akshay and Modi, Akshay Naresh and Passos, Alexandre and Lavoie, Allen and Agarwal, Ashish and Shankar, Asim and Ganichev, Igor and Levenberg, Josh and Hong, Mingsheng and Monga, Rajat and others},
+  journal={arXiv preprint arXiv:1903.01855},
+  year={2019}
+}
+@article{hindmarsh2005sundials,
+  title={SUNDIALS: Suite of nonlinear and differential/algebraic equation solvers},
+  author={Hindmarsh, Alan C and Brown, Peter N and Grant, Keith E and Lee, Steven L and Serban, Radu and Shumaker, Dan E and Woodward, Carol S},
+  journal={ACM Transactions on Mathematical Software (TOMS)},
+  volume={31},
+  number={3},
+  pages={363--396},
+  year={2005},
+  publisher={ACM New York, NY, USA}
+}
+@article{Hauberg2016,
+abstract = {Data augmentation is a key element in training high-dimensional models. In this approach, one synthesizes new observations by applying pre-specified transformations to the original training data; e.g. new images are formed by rotating old ones. Current augmentation schemes, however, rely on manual specification of the applied transformations, making data augmentation an implicit form of feature engineering. With an eye towards true end-to-end learning, we suggest learning the applied transformations on a per-class basis. Particularly, we align image pairs within each class under the assumption that the spatial transformation between images belongs to a large class of diffeomorphisms. We then learn a class-specific probabilistic generative models of the transformations in a Riemannian submanifold of the Lie group of diffeomorphisms. We demonstrate significant performance improvements in training deep neural nets over manually-specified augmentation schemes. Our code and augmented datasets are available online.},
+archivePrefix = {arXiv},
+arxivId = {1510.02795},
+author = {Hauberg, S{\o}ren and Freifeld, Oren and {Lindbo Larsen}, Anders Boesen and Fisher, John W. and Hansen, Lars Kai},
+eprint = {1510.02795},
+journal = {Proceedings of the 19th International Conference on Artificial Intelligence and Statistics, AISTATS 2016},
+pages = {342--350},
+title = {{Dreaming more data: Class-dependent distributions over diffeomorphisms for learned data augmentation}},
+volume = {41},
+year = {2016}
+}
+@article{Detlefsen2019,
+abstract = {Disentangled representation learning finds compact, independent and easy-to-interpret factors of the data. Learning such has been shown to require an inductive bias, which we explicitly encode in a generative model of images. Specifically, we propose a model with two latent spaces: one that represents spatial transformations of the input data, and another that represents the transformed data. We find that the latter naturally captures the intrinsic appearance of the data. To realize the generative model, we propose a Variationally Inferred Transformational Autoencoder (VITAE) that incorporates a spatial transformer into a variational autoencoder. We show how to perform inference in the model efficiently by carefully designing the encoders and restricting the transformation class to be diffeomorphic. Empirically, our model separates the visual style from digit type on MNIST, separates shape and pose in images of human bodies and facial features from facial shape on CelebA.},
+archivePrefix = {arXiv},
+arxivId = {1906.11881},
+author = {Detlefsen, Nicki S. and Hauberg, S{\o}ren},
+eprint = {1906.11881},
+issn = {10495258},
+journal = {Advances in Neural Information Processing Systems},
+number = {NeurIPS},
+title = {{Explicit disentanglement of appearance and perspective in generative models}},
+volume = {32},
+year = {2019}
+}
+@article{Cuturi2014,
+abstract = {We present new algorithms to compute the mean of a set of empirical probability measures under the optimal transport metric. This mean, known as the Wasserstein barycenter, is the measure that minimizes the sum of its Wasserstein distances to each element in that set. We propose two original algorithms to compute Wasserstein barycenters that build upon the subgradient method. A direct implementation of these algorithms is, however, too costly because it would require the repeated resolution of large primal and dual optimal transport problems to compute subgradients. Extending the work of Cuturi (2013), we propose to smooth the Wasserstein distance used in the definition of Wasserstein barycenters with an entropic regularizer and recover in doing so a strictly convex objective whose gradients can be computed for a considerably cheaper computational cost using matrix scaling algorithms. We use these algorithms to visualize a large family of images and to solve a constrained clustering problem.},
+archivePrefix = {arXiv},
+arxivId = {1310.4375},
+author = {Cuturi, Marco and Doucet, Arnaud},
+eprint = {1310.4375},
+isbn = {9781634393973},
+journal = {31st International Conference on Machine Learning, ICML 2014},
+number = {c},
+pages = {2146--2154},
+title = {{Fast computation of Wasserstein barycenters}},
+volume = {3},
+year = {2014}
+}
+@inproceedings{cuturi2017soft,
+  title={Soft-dtw: a differentiable loss function for time-series},
+  author={Cuturi, Marco and Blondel, Mathieu},
+  booktitle={International Conference on Machine Learning},
+  pages={894--903},
+  year={2017},
+  organization={PMLR}
+}
+@misc{Heckbert1989,
+abstract = {The applications of texture mapping in computer graphics and image distortion (warping) in image processing share a core of fundamental techniques. We explore two of these techniques, the two-dimensional geometric mappings that arise in the parameterization and projection of textures onto surfaces, and the filters necessary to eliminate aliasing when an image is resampled during texture mapping or warping. With respect to mappings, this work presents a tutorial on three common classes of mapping: the affine, bilinear, and projective. For resampling, this work develops a new theory describing the ideal, space variant intialiazing filter for signals warped and resampled according to an arbitrary mapping. Efficient implementations of the mapping and filtering techniques are discussed and demonstrated.},
+author = {Heckbert, Paul S.},
+booktitle = {University of California at Berkeley Berkeley CA},
+issn = {10974199},
+number = {6},
+pages = {86},
+pmid = {21172614},
+title = {{Fundamentals of Texture Mapping and Image Warping}},
+url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.47.3964&rep=rep1&type=pdf},
+volume = {68},
+year = {1989}
+}
+@article{Kazlauskaite2020,
+abstract = {We present a model that can automatically learn alignments between high-dimensional data in an unsupervised manner. Our proposed method casts alignment learning in a framework where both alignment and data are modelled simultaneously. Further, we automatically infer groupings of different types of sequences within the same dataset. We derive a probabilistic model built on non-parametric priors that allows for flexible warps while at the same time providing means to specify interpretable constraints. We demonstrate the efficacy of our approach with superior quantitative performance to the state-of-the-art approaches and provide examples to illustrate the versatility of our model in automatic inference of sequence groupings, absent from previous approaches, as well as easy specification of high level priors for different modalities of data.},
+archivePrefix = {arXiv},
+arxivId = {1803.02603},
+author = {Kazlauskaite, Ieva and Ek, Carl Henrik and Campbell, Neill D.F.},
+eprint = {1803.02603},
+journal = {AISTATS 2019 - 22nd International Conference on Artificial Intelligence and Statistics},
+title = {{Gaussian process latent variable alignment learning}},
+volume = {89},
+year = {2020}
+}
+@article{Zhou2012,
+abstract = {Temporal alignment of human motion has been a topic of recent interest due to its applications in animation, telerehabilitation and activity recognition among others. This paper presents generalized time warping (GTW), an extension of dynamic time warping (DTW) for temporally aligning multi-modal sequences from multiple subjects performing similar activities. GTW solves three major drawbacks of existing approaches based on DTW: (1) GTW provides a feature weighting layer to adapt different modalities (e.g., video and motion capture data), (2) GTW extends DTW by allowing a more flexible time warping as combination of monotonic functions, (3) unlike DTW that typically incurs in quadratic cost, GTW has linear complexity. Experimental results demonstrate that GTW can efficiently solve the multi-modal temporal alignment problem and outperforms state-of-the-art DTW methods for temporal alignment of time series within the same modality. {\textcopyright} 2012 IEEE.},
+author = {Zhou, Feng and {De La Torre}, Fernando},
+doi = {10.1109/CVPR.2012.6247812},
+isbn = {9781467312264},
+issn = {10636919},
+journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+pages = {1282--1289},
+title = {{Generalized time warping for multi-modal alignment of human motion}},
+year = {2012}
+}
+@article{Lee2020,
+abstract = {We present a novel method for global diffeomorphic phase alignment of time-series data from resting-state functional magnetic resonance imaging (rsfMRI) signals. Additionally, we propose a multidimensional, continuous, invariant functional representation of brain time-series data and solve a general global cost function that brings both the temporal rotations and phase reparameterizations in alignment. We define a family of cost functions for spatiotemporal warping and compare time-series warps across them. This method achieves direct alignment of time-series, allows population analysis by aligning time-series activity across subjects and shows improved global correlation maps, as well as z-scores from independent component analysis (ICA), while showing new information exploited by phase alignment that was not previously recoverable.},
+author = {Lee, David S. and Sahib, Ashish and Narr, Katherine and Nunez, Elvis and Joshi, Shantanu},
+doi = {10.1007/978-3-030-59728-3_51},
+isbn = {9783030597276},
+issn = {16113349},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+keywords = {ICA,Network connectivity,Resting-fMRI,Time-series},
+pages = {518--527},
+title = {{Global Diffeomorphic Phase Alignment of Time-Series from Resting-State fMRI Data}},
+volume = {12267 LNCS},
+year = {2020}
+}
+@article{Freifeld2015,
+abstract = {We propose novel finite-dimensional spaces of Rn ? Rn transformations, n ? {1, 2, 3}, derived from (continuously-defined) parametric stationary velocity fields. Particularly, we obtain these transformations, which are diffeomorphisms, by fast and highly-accurate integration of continuous piecewise-affine velocity fields, we also provide an exact solution for n = 1. The simple-yet-highly-expressive proposed representation handles optional constraints (e.g., volume preservation) easily and supports convenient modeling choices and rapid likelihood evaluations (facilitating tractable inference over latent transformations). Its applications include, but are not limited to: unconstrained optimization over monotonic functions, modeling cumulative distribution functions or histograms, time warping, image registration, landmark-based warping, real-time diffeomorphic image editing. Our code is available at https://github.com/freifeld/cpabDiffeo.},
+author = {Freifeld, Oren and Hauberg, Soren and Batmanghelich, Kayhan and Fisher, John W.},
+doi = {10.1109/ICCV.2015.333},
+isbn = {9781467383912},
+issn = {15505499},
+journal = {Proceedings of the IEEE International Conference on Computer Vision},
+pages = {2911--2919},
+title = {{Highly-expressive spaces of well-behaved transformations: Keeping it simple}},
+volume = {2015 Inter},
+year = {2015}
+}
+@article{Tustison2019,
+abstract = {Recent methodological innovations in deep learning and associated advancements in computational hardware have significantly impacted the various core subfields of quantitative medical image analysis. The generalizability, computational efficiency and open-source availability of deep learning algorithms and related software, particularly those utilizing convolutional neural networks, have produced paradigm shifts within the field. This impact is evident from topical prevalence in the literature, conference and workshop themes and winning methodologies in relevant competitions. In this work, we review the various state-of-the-art approaches to learning and prediction and/or optimizing image transformations using convolutional neural networks. Although of primary importance within the quantitative imaging domain, image registration algorithmic development, in the context of these deep learning strategies, has received comparatively less attention than its counterparts (e.g., image segmentation). Nevertheless, significant progress has been made in this particular subfield which has been presented in various research venues. We contextualize these contributions within the broader scope of deep learning advancements and, in so doing, attempt to facilitate the leveraging and further development of such techniques within the medical imaging research community.},
+author = {Tustison, Nicholas J. and Avants, Brian B. and Gee, James C.},
+doi = {10.1016/j.mri.2019.05.037},
+issn = {18735894},
+journal = {Magnetic Resonance Imaging},
+keywords = {ConvNets,Deep learning,Diffeomorphisms,Image registration,Spatial normalization},
+number = {May},
+pages = {142--153},
+pmid = {31200026},
+publisher = {Elsevier},
+title = {{Learning image-based spatial transformations via convolutional neural networks: A review}},
+url = {https://doi.org/10.1016/j.mri.2019.05.037},
+volume = {64},
+year = {2019}
+}
+@article{Huang2012,
+abstract = {Unsupervised joint alignment of images has been demonstrated to improve performance on recognition tasks such as face verification. Such alignment reduces undesired variability due to factors such as pose, while only requiring weak supervision in the form of poorly aligned examples. However, prior work on unsu-pervised alignment of complex, real-world images has required the careful selection of feature representation based on hand-crafted image descriptors, in order to achieve an appropriate, smooth optimization landscape. In this paper, we instead propose a novel combination of unsupervised joint alignment with unsupervised feature learning. Specifically, we incorporate deep learning into the congealing alignment framework. Through deep learning, we obtain features that can represent the image at differing resolutions based on network depth, and that are tuned to the statistics of the specific data being aligned. In addition, we modify the learning algorithm for the restricted Boltzmann machine by incorporating a group sparsity penalty, leading to a topographic organization of the learned filters and improving subsequent alignment results. We apply our method to the Labeled Faces in the Wild database (LFW). Using the aligned images produced by our proposed unsupervised algorithm, we achieve higher accuracy in face verification compared to prior work in both unsupervised and supervised alignment. We also match the accuracy for the best available commercial method.},
+author = {Huang, Gary B. and Mattar, Marwan A. and Lee, Honglak and Learned-Miller, Erik},
+isbn = {9781627480031},
+issn = {10495258},
+journal = {Advances in Neural Information Processing Systems},
+pages = {764--772},
+title = {{Learning to align from scratch}},
+volume = {1},
+year = {2012}
+}
+@article{Cox2008,
+abstract = {In this paper, we present an approach we refer to as "least squares congealing" which provides a solution to the problem of aligning an ensemble of images in an unsupervised manner. Our approach circumvents many of the limitations existing in the canonical "congealing" algorithm. Specifically, we present an algorithm that:- (i) is able to simultaneously, rather than sequentially, estimate warp parameter updates, (ii) exhibits fast convergence and (iii) requires no pre-defined step size. We present alignment results which show an improvement in performance for the removal of unwanted spatial variation when compared with the related work of Learned-Miller on two datasets, the MNIST hand written digit database and the MultiPIE face database. {\textcopyright}2008 IEEE.},
+author = {Cox, Mark and Sridharan, Sridha and Lucey, Simon and Cohn, Jeffrey},
+doi = {10.1109/CVPR.2008.4587573},
+isbn = {9781424422432},
+journal = {26th IEEE Conference on Computer Vision and Pattern Recognition, CVPR},
+title = {{Least squares congealing for unsupervised alignment of images}},
+year = {2008}
+}
+@article{Durkan2019,
+abstract = {A normalizing flow models a complex probability density as an invertible transformation of a simple base density. Flows based on either coupling or autoregressive transforms both offer exact density evaluation and sampling, but rely on the parameterization of an easily invertible elementwise transformation, whose choice determines the flexibility of these models. Building upon recent work, we propose a fully-differentiable module based on monotonic rational-quadratic splines, which enhances the flexibility of both coupling and autoregressive transforms while retaining analytic invertibility. We demonstrate that neural spline flows improve density estimation, variational inference, and generative modeling of images.},
+archivePrefix = {arXiv},
+arxivId = {1906.04032},
+author = {Durkan, Conor and Bekasov, Artur and Murray, Iain and Papamakarios, George},
+eprint = {1906.04032},
+issn = {10495258},
+journal = {Advances in Neural Information Processing Systems},
+number = {NeurIPS},
+title = {{Neural spline flows}},
+volume = {32},
+year = {2019}
+}
+@article{Grabocka2018,
+abstract = {Research on time-series similarity measures has emphasized the need for elastic methods which align the indices of pairs of time series and a plethora of non-parametric have been proposed for the task. On the other hand, deep learning approaches are dominant in closely related domains, such as learning image and text sentence similarity. In this paper, we propose \textit{NeuralWarp}, a novel measure that models the alignment of time-series indices in a deep representation space, by modeling a warping function as an upper level neural network between deeply-encoded time series values. Experimental results demonstrate that \textit{NeuralWarp} outperforms both non-parametric and un-warped deep models on a range of diverse real-life datasets.},
+archivePrefix = {arXiv},
+arxivId = {1812.08306},
+author = {Grabocka, Josif and Schmidt-Thieme, Lars},
+doi = {10.475/123},
+eprint = {1812.08306},
+isbn = {1234567245},
+keywords = {2019,acm reference format,deep learning,josif grabocka and lars,neuralwarp,schmidt- ieme,similarity learning,time series,time-series},
+title = {{NeuralWarp: Time-Series Similarity with Warping Networks}},
+url = {http://arxiv.org/abs/1812.08306},
+year = {2018}
+}
+@article{Mattar,
+author = {Mattar, Marwan A and Ross, Michael G and Learned-miller, Erik G},
+journal = {Brain},
+title = {{NONPARAMETRIC CURVE ALIGNMENT Marwan A. Mattar , Michael G. Ross , Erik G. Learned-Miller Department of Computer Science, University of Massachusetts, Amherst, MA 01002 Department of Brain and Cognitive Sciences, MIT, Cambridge, MA 02139}}
+}
+@article{Knauf2018,
+abstract = {Differential equations are as varied as the phenomena of nature described by them.},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1806.07366v5},
+author = {Knauf, Andreas},
+doi = {10.1007/978-3-662-55774-7_3},
+eprint = {arXiv:1806.07366v5},
+issn = {20385757},
+journal = {UNITEXT - La Matematica per il 3 piu 2},
+number = {NeurIPS},
+pages = {31--60},
+title = {{Ordinary Differential Equations}},
+volume = {109},
+year = {2018}
+}
+@article{Koneripalli2020,
+author = {Koneripalli, Kaushik and Lohit, Suhas and Anirudh, Rushil and Livermore, Lawrence},
+isbn = {9781509066315},
+journal = {ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+pages = {3727--3731},
+publisher = {IEEE},
+title = {{RATE-INVARIANT AUTOENCODING OF TIME-SERIES Geometric Media Lab , Arizona State University , Tempe , AZ , USA Siemens Corporate Technology , Princeton , NJ , USA Mitsubishi Electric Research Laboratories , Cambridge , MA , USA}},
+year = {2020}
+}
+@article{Rousseau2019,
+author = {Rousseau, Fran{\c{c}}ois and Drumetz, Lucas and Fablet, Ronan and Rousseau, Fran{\c{c}}ois and Drumetz, Lucas and Fablet, Ronan and Networks, Residual},
+title = {{Residual Networks as Flows of Diffeomorphisms To cite this version : HAL Id : hal-01796729}},
+year = {2019}
+}
+@article{Huang2021,
+abstract = {Non-linear (large) time warping is a challenging source of nuisance in time-series analysis. In this paper, we propose a novel diffeomorphic temporal transformer network for both pairwise and joint time-series alignment. Our ResNet-TW (Deep Residual Network for Time Warping) tackles the alignment problem by compositing a flow of incremental diffeomorphic mappings. Governed by the flow equation, our Residual Network (ResNet) builds smooth, fluid and regular flows of velocity fields and consequently generates smooth and invertible transformations (i.e. diffeomorphic warping functions). Inspired by the elegant Large Deformation Diffeomorphic Metric Mapping (LDDMM) framework, the final transformation is built by the flow of time-dependent vector fields which are none other than the building blocks of our Residual Network. The latter is naturally viewed as an Eulerian discretization schema of the flow equation (an ODE). Once trained, our ResNet-TW aligns unseen data by a single inexpensive forward pass. As we show in experiments on both univariate (84 datasets from UCR archive) and multivariate time-series (MSR Action-3D, Florence-3D and MSR Daily Activity), ResNet-TW achieves competitive performance in joint alignment and classification.},
+archivePrefix = {arXiv},
+arxivId = {2106.11911},
+author = {Huang, Hao and Amor, Boulbaba Ben and Lin, Xichan and Zhu, Fan and Fang, Yi},
+eprint = {2106.11911},
+title = {{Residual Networks as Flows of Velocity Fields for Diffeomorphic Time Series Alignment}},
+url = {http://arxiv.org/abs/2106.11911},
+year = {2021}
+}
+@article{Srivastava2011,
+abstract = {This paper introduces a square-root velocity (SRV) representation for analyzing shapes of curves in euclidean spaces under an elastic metric. In this SRV representation, the elastic metric simplifies to the IL2 metric, the reparameterization group acts by isometries, and the space of unit length curves becomes the unit sphere. The shape space of closed curves is the quotient space of (a submanifold of) the unit sphere, modulo rotation, and reparameterization groups, and we find geodesics in that space using a path straightening approach. These geodesics and geodesic distances provide a framework for optimally matching, deforming, and comparing shapes. These ideas are demonstrated using: 1) shape analysis of cylindrical helices for studying protein structure, 2) shape analysis of facial curves for recognizing faces, 3) a wrapped probability distribution for capturing shapes of planar closed curves, and 4) parallel transport of deformations for predicting shapes from novel poses. {\textcopyright} 2011 IEEE.},
+author = {Srivastava, Anuj and Klassen, Eric and Joshi, Shantanu H. and Jermyn, Ian H.},
+doi = {10.1109/TPAMI.2010.184},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {Elastic curves,Fisher-Rao metric,Riemannian shape analysis,elastic geodesics,elastic metric,parallel transport,path straightening method,shape models,square-root representations},
+mendeley-groups = {Diffeomorphism,Registration},
+number = {7},
+pages = {1415--1428},
+pmid = {20921581},
+title = {{Shape analysis of elastic curves in euclidean spaces}},
+volume = {33},
+year = {2011}
+}
+@article{Bigot2010,
+abstract = {In this paper we introduce a new class of diffeom orphic smoothers based on general spline smoothing techniques and on the use of some tools that have been recently developed in the context of image warping to compute smooth diffeomorphisms. This diffeomorphic spline is defined as the solution of an ordinary differential equation governed by an appropriate time-dependent vector field. This solution has a closed form expression which can be computed using classical unconstrained spline smoothing techniques. This method does not require the use of quadratic or linear programming under inequality constraints and has therefore a low computational cost. In a one-dimensional setting, incorporating diffeomorphic constraints is equivalent to imposing monotonicity. Thus, as an illustration, it is shown that such a monotone spline can be used to make monotone any unconstrained estimator of a regression function and that this monotone smoother inherits the convergence properties of the unconstrained estimator. Some numerical experiments are proposed to illustrate its finite sample performances and to compare them with another monotone estimator. We also provide a two-dimensional application on the computation of diffeomorphisms for landmark and image matching. {\textcopyright} 2010 Society for Industrial and Applied Mathematics.},
+archivePrefix = {arXiv},
+arxivId = {math/0611417},
+author = {Bigot, J{\'{e}}r{\'{e}}emie and Gadat, S{\'{e}}bastien},
+doi = {10.1137/080727555},
+eprint = {0611417},
+issn = {00361429},
+journal = {SIAM Journal on Numerical Analysis},
+keywords = {Constrained smoothing,Diffeomorphism,Monotonicity,Nonparametric regression,Ordinary differential equation,Reproducing kernel Hilbert space,Splines,Time-dependent vector field},
+number = {1},
+pages = {224--243},
+primaryClass = {math},
+title = {{Smoothing under diffeomorphic constraints with homeomorphic splines}},
+volume = {48},
+year = {2010}
+}
+@article{Jaderberg2015,
+abstract = {Convolutional Neural Networks define an exceptionally powerful class of models, but are still limited by the lack of ability to be spatially invariant to the input data in a computationally and parameter efficient manner.In this work we introduce a new learnable module, the Spatial Transformer, which explicitly allows the spatial manipulation of data within the network. This differentiable module can be inserted into existing convolutional architectures, giving neural networks the ability to actively spatially transform feature maps, conditional on the feature map itself, without any extra training supervision or modification to the optimisation process. We show that the use of spatial transformers results in models which learn invariance to translation, scale, rotation and more generic warping, resulting in state-of-the-art performance on several benchmarks, and for a number of classes of transformations.},
+archivePrefix = {arXiv},
+arxivId = {1506.02025},
+author = {Jaderberg, Max and Simonyan, Karen and Zisserman, Andrew and Kavukcuoglu, Koray},
+eprint = {1506.02025},
+issn = {10495258},
+journal = {Advances in Neural Information Processing Systems},
+pages = {2017--2025},
+title = {{Spatial transformer networks}},
+volume = {2015-Janua},
+year = {2015}
+}
+@article{Nunez2021,
+abstract = {We present SrvfNet, a generative deep learning framework for the joint multiple alignment of large collections of functional data comprising square-root velocity functions (SRVF) to their templates. Our proposed framework is fully unsupervised and is capable of aligning to a predefined template as well as jointly predicting an optimal template from data while simultaneously achieving alignment. Our network is constructed as a generative encoder-decoder architecture comprising fully-connected layers capable of producing a distribution space of the warping functions. We demonstrate the strength of our framework by validating it on synthetic data as well as diffusion profiles from magnetic resonance imaging (MRI) data.},
+archivePrefix = {arXiv},
+arxivId = {2104.13449},
+author = {Nunez, Elvis and Lizarraga, Andrew and Joshi, Shantanu H.},
+eprint = {2104.13449},
+
+title = {{SrvfNet: A Generative Network for Unsupervised Multiple Diffeomorphic Shape Alignment}},
+url = {http://arxiv.org/abs/2104.13449},
+year = {2021}
+}
+@article{Lohit2019,
+abstract = {Many time-series classification problems involve developing metrics that are invariant to temporal misalignment. In human activity analysis, temporal misalignment arises due to various reasons including differing initial phase, sensor sampling rates, and elastic time-warps due to subject-specific biomechanics. Past work in this area has only looked at reducing intra-class variability by elastic temporal alignment. In this paper, we propose a hybrid model-based and data-driven approach to learn warping functions that not just reduce intra-class variability, but also increase inter-class separation. We call this a temporal transformer network (TTN). TTN is an interpretable differentiable module, which can be easily integrated at the front end of a classification network. The module is capable of reducing intra-class variance by generating input-dependent warping functions which lead to rate-robust representations. At the same time, it increases inter-class variance by learning warping functions that are more discriminative. We show improvements over strong baselines in 3D action recognition on challenging datasets using the proposed framework. The improvements are especially pronounced when training sets are smaller.},
+archivePrefix = {arXiv},
+arxivId = {1906.05947},
+author = {Lohit, Suhas and Wang, Qiao and Turaga, Pavan},
+doi = {10.1109/CVPR.2019.01271},
+eprint = {1906.05947},
+isbn = {9781728132938},
+issn = {10636919},
+journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+keywords = {Action Recognition,RGBD sensors and analytics,Representation Learning,Statistical Learning},
+pages = {12418--12427},
+title = {{Temporal transformer networks: Joint learning of invariant and discriminative time warping}},
+volume = {2019-June},
+year = {2019}
+}
+@article{Zhang2020,
+abstract = {Similarity measure is a critical tool for time series analysis. However, currently established methods, for instance, dynamic time warping (DTW) and its variants, are still facing some issues such as non-maximum-to-maximum alignment and pathological alignment, etc. Despite many attempts to improve, these issues remain stubborn because they are directly caused by the intrinsic mechanism of DTW. Thinking out of the context of DTW based methods, we propose in this article a new time series similarity measure framework which we call Time Adaptive Optimal Transport (TAOT). As its name implies, TAOT is based on optimal transport, a powerful distance measure for histograms and probability distributions, and TAOT inherits several promising properties from optimal transport to tackle the problems of classic DTW based methods. We make optimal transport capable of handling time series data by considering both observed values and their corresponding time coordinates simultaneously. TAOT can generate a many-to-many alignment between time series that further releases the search space for a more correct result. Experimental results show that TAOT can outperform other widely used similarity measures on classification tasks on multiple datasets. We also introduce the parameter extracting and visualization strategies of TAOT in this article.},
+author = {Zhang, Zheng and Tang, Ping and Corpetti, Thomas},
+doi = {10.1109/ACCESS.2020.3016529},
+issn = {21693536},
+journal = {IEEE Access},
+keywords = {Optimal transport,Sinkhorn distance,classification,similarity measure,time series},
+pages = {149764--149774},
+title = {{Time Adaptive Optimal Transport: A Framework of Time Series Similarity Measure}},
+volume = {8},
+year = {2020}
+}
+@article{Iwana2020,
+abstract = {Neural networks have become a powerful tool in pattern recognition and part of their success is due to generalization from using large datasets. However, unlike other domains, time series classification datasets are often small. In order to address this problem, we propose a novel time series data augmentation called guided warping. While many data augmentation methods are based on random transformations, guided warping exploits the element alignment properties of Dynamic Time Warping (DTW) and shapeDTW, a high-level DTW method based on shape descriptors, to deterministically warp sample patterns. In this way, the time series are mixed by warping the features of a sample pattern to match the time steps of a reference pattern. Furthermore, we introduce a discriminative teacher in order to serve as a directed reference for the guided warping. We evaluate the method on all 85 datasets in the 2015 UCR Time Series Archive with a deep convolutional neural network (CNN) and a recurrent neural network (RNN). The code with an easy to use implementation can be found at https://github.com/uchidalab/time_series_augmentation.},
+archivePrefix = {arXiv},
+arxivId = {2004.08780},
+author = {Iwana, Brian Kenji and Uchida, Seiichi},
+doi = {10.1109/ICPR48806.2021.9412812},
+eprint = {2004.08780},
+isbn = {9781728188089},
+issn = {10514651},
+journal = {Proceedings - International Conference on Pattern Recognition},
+pages = {3558--3565},
+title = {{Time series data augmentation for neural networks by time warping with a discriminative teacher}},
+year = {2020}
+}
+@article{Sun1993,
+abstract = {We proposed a model of Time Warping Invariant Neural Networks (TWINN) to handle the time warped continuous signals. Although TWINN is a simple modifica(cid:173) tion of well known recurrent neural network, analysis has shown that TWINN com(cid:173) pletely removes time warping and is able to handle difficult classification problem. It is also shown that TWINN has certain advantages over the current available sequential processing schemes: Dynamic Programming(DP)[I], Hidden Markov Model((cid:173) HMM)[2], Time Delayed Neural Networks(TDNN) [3] and Neural Network Finite Automata(NNFA)[4]. We also analyzed the time continuity employed in TWINN and pointed out that this kind of structure can memorize longer input history compared with Neural Net(cid:173) work Finite Automata (NNFA). This may help to understand the well accepted fact that for learning grammatical reference with NNF A one had to start with very short strings in training set. The numerical example we used is a trajectory classification problem. This problem, making a feature of variable sampling rates, having internal states, continu(cid:173) ous dynamics, heavily time-warped data and deformed phase space trajectories, is shown to be difficult to other schemes. With TWINN this problem has been learned in 100 iterations. For benchmark we also trained the exact same problem with TDNN and completely failed as expected.
+},
+author = {Sun, Guo-Zheng and Chen, Hsing-Hen and Lee, Yee-Chun},
+journal = {Advances in Neural Information Processing Systems 5},
+pages = {180--187},
+title = {{Time Warping Invariant Neural Networks}},
+url = {http://papers.nips.cc/paper/701-time-warping-invariant-neural-networks.pdf%5Cnfiles/6264/Sun et al. - 1993 - Time Warping Invariant Neural Networks.pdf%5Cnfiles/6265/701-time-warping-invariant-neural-networks.html},
+year = {1993}
+}
+@book{Durrleman2013,
+abstract = {This paper proposes an original approach for the statistical analysis of longitudinal shape data. The proposed method allows the characterization of typical growth patterns and subject-specific shape changes in repeated time-series observations of several subjects. This can be seen as the extension of usual longitudinal statistics of scalar measurements to high-dimensional shape or image data. The method is based on the estimation of continuous subject-specific growth trajectories and the comparison of such temporal shape changes across subjects. Differences between growth trajectories are decomposed into morphological deformations, which account for shape changes independent of the time, and time warps, which account for different rates of shape changes over time. Given a longitudinal shape data set, we estimate a mean growth scenario representative of the population, and the variations of this scenario both in terms of shape changes and in terms of change in growth speed. Then, intrinsic statistics are derived in the space of spatiotemporal deformations, which characterize the typical variations in shape and in growth speed within the studied population. They can be used to detect systematic developmental delays across subjects. In the context of neuroscience, we apply this method to analyze the differences in the growth of the hippocampus in children diagnosed with autism, developmental delays and in controls. Result suggest that group differences may be better characterized by a different speed of maturation rather than shape differences at a given age. In the context of anthropology, we assess the differences in the typical growth of the endocranium between chimpanzees and bonobos. We take advantage of this study to show the robustness of the method with respect to change of parameters and perturbation of the age estimates. {\textcopyright} 2012 Springer Science+Business Media New York.},
+author = {Durrleman, Stanley and Pennec, Xavier and Trouv{\'{e}}, Alain and Braga, Jos{\'{e}} and Gerig, Guido and Ayache, Nicholas},
+booktitle = {International Journal of Computer Vision},
+doi = {10.1007/s11263-012-0592-x},
+isbn = {1126301205},
+issn = {09205691},
+keywords = {Growth,Longitudinal data,Shape regression,Spatiotemporal registration,Statistics,Time warp},
+number = {1},
+pages = {22--59},
+title = {{Toward a comprehensive framework for the spatiotemporal statistical analysis of longitudinal shape data}},
+volume = {103},
+year = {2013}
+}
+@article{Higgins2018,
+abstract = {How can intelligent agents solve a diverse set of tasks in a data-efficient manner? The disentangled representation learning approach posits that such an agent would benefit from separating out (disentangling) the underlying structure of the world into disjoint parts of its representation. However, there is no generally agreed-upon definition of disentangling, not least because it is unclear how to formalise the notion of world structure beyond toy datasets with a known ground truth generative process. Here we propose that a principled solution to characterising disentangled representations can be found by focusing on the transformation properties of the world. In particular, we suggest that those transformations that change only some properties of the underlying world state, while leaving all other properties invariant, are what gives exploitable structure to any kind of data. Similar ideas have already been successfully applied in physics, where the study of symmetry transformations has revolutionised the understanding of the world structure. By connecting symmetry transformations to vector representations using the formalism of group and representation theory we arrive at the first formal definition of disentangled representations. Our new definition is in agreement with many of the current intuitions about disentangling, while also providing principled resolutions to a number of previous points of contention. While this work focuses on formally defining disentangling - as opposed to solving the learning problem - we believe that the shift in perspective to studying data transformations can stimulate the development of better representation learning algorithms.},
+archivePrefix = {arXiv},
+arxivId = {1812.02230},
+author = {Higgins, Irina and Amos, David and Pfau, David and Racaniere, Sebastien and Matthey, Loic and Rezende, Danilo and Lerchner, Alexander},
+eprint = {1812.02230},
+pages = {1--29},
+title = {{Towards a Definition of Disentangled Representations}},
+url = {http://arxiv.org/abs/1812.02230},
+year = {2018}
+}
+@article{Khorram2019,
+abstract = {DTW calculates the similarity or alignment between two signals, subject to temporal warping. However, its computational complexity grows exponentially with the number of time-series. Although there have been algorithms developed that are linear in the number of time-series, they are generally quadratic in time-series length. The exception is generalized time warping (GTW), which has linear computational cost. Yet, it can only identify simple time warping functions. There is a need for a new fast, high-quality multisequence alignment algorithm. We introduce trainable time warping (TTW), whose complexity is linear in both the number and the length of time-series. TTW performs alignment in the continuoustime domain using a sinc convolutional kernel and a gradient-based optimization technique. We compare TTW and GTW on S5 UCR datasets in time-series averaging and classification. TTW outperforms GTW on 67.1% of the datasets for the averaging tasks, and 61.2% of the datasets for the classification tasks.},
+archivePrefix = {arXiv},
+arxivId = {1903.09245},
+author = {Khorram, Soheil and McInnis, Melvin G. and {Mower Provost}, Emily},
+doi = {10.1109/ICASSP.2019.8682322},
+eprint = {1903.09245},
+isbn = {9781479981311},
+issn = {15206149},
+journal = {ICASSP, IEEE International Conference on Acoustics, Speech and Signal Processing - Proceedings},
+keywords = {DTW,TTW,dynamic time warping,shifted sinc kernel,trainable time warping},
+pages = {3502--3506},
+title = {{Trainable Time Warping: Aligning Time-series in the Continuous-time Domain}},
+volume = {2019-May},
+year = {2019}
+}
+@article{Freifeld2017,
+abstract = {We propose novel finite-dimensional spaces of well-behaved Rn →Rn transformations. The latter are obtained by (fast and highly-accurate) integration of continuous piecewise-affine velocity fields. The proposed method is simple yet highly expressive, effortlessly handles optional constraints (e.g., volume preservation and/or boundary conditions), and supports convenient modeling choices such as smoothing priors and coarse-to-fine analysis. Importantly, the proposed approach, partly due to its rapid likelihood evaluations and partly due to its other properties, facilitates tractable inference over rich transformation spaces, including using Markov-Chain Monte-Carlo methods. Its applications include, but are not limited to: monotonic regression (more generally, optimization over monotonic functions); modeling cumulative distribution functions or histograms; time-warping; image warping; image registration; real-time diffeomorphic image editing; data augmentation for image classifiers. Our GPU-based code is publicly available.},
+author = {Freifeld, Oren and Hauberg, Soren and Batmanghelich, Kayhan and Fisher, Jonn W.},
+doi = {10.1109/TPAMI.2016.2646685},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {MCMC,Spatial transformations,continuous piecewise-affine velocity fields,diffeomorphisms,priors,tessellations},
+number = {12},
+pages = {2496--2509},
+pmid = {28092517},
+title = {{Transformations Based on Continuous Piecewise-Affine Velocity Fields}},
+volume = {39},
+year = {2017}
+}
+@article{freifeld2018deriving,
+  title={Deriving the CPAB derivative},
+  author={Freifeld, Oren},
+  journal={Rn},
+  volume={1},
+  pages={11},
+  year={2018}
+}
+@article{Heckman1967,
+abstract = {Predicting the binding mode of flexible polypeptides to proteins is an important task that falls outside the domain of applicability of most small molecule and protein−protein docking tools. Here, we test the small molecule flexible ligand docking program Glide on a set of 19 non-$\alpha$-helical peptides and systematically improve pose prediction accuracy bynhancing Glide sampling for flexible polypeptides. In addition, scoring of the poses was improved by post-processing with physics-based implicit solvent MM- GBSA calculations. Using the best RMSD among the top 10 scoring poses as a metric, the success rate (RMSD ≤ 2.0 {\AA} for the interface backbone atoms) increased from 21% with default Glide SP settings to 58% with the enhanced peptide sampling and scoring protocol in the case of redocking to the native protein structure. This approaches the accuracy of the recently developed Rosetta FlexPepDock method (63% success for these 19 peptides) while being over 100 times faster. Cross-docking was performed for a subset of cases where an unbound receptor structure was available, and in that case, 40% of peptides were docked successfully. We analyze the results and find that the optimized polypeptide protocol is most accurate for extended peptides of limited size and number of formal charges, defining a domain of applicability for this approach.},
+author = {Heckman, James J and Pinto, Rodrigo and Savelyev, Peter A.},
+isbn = {9781119130536},
+journal = {Angewandte Chemie International Edition, 6(11), 951–952.},
+number = {August},
+title = {{済無No Title No Title No Title}},
+year = {1967}
+}
+
+@article{Arsigny2006,
+abstract = {In this article, we focus on the computation of statistics of invertible geometrical deformations (i.e., diffeomorphisms), based on the generalization to this type of data of the notion of principal logarithm. Remarkably, this logarithm is a simple 3D vector field, and is well-defined for diffeomorphisms close enough to the identity. This allows to perform vectorial statistics on diffeomorphisms, while preserving the invertibility constraint, contrary to Euclidean statistics on displacement fields. We also present here two efficient algorithms to compute logarithms of diffeomorphisms and exponentials of vector fields, whose accuracy is studied on synthetic data. Finally, we apply these tools to compute the mean of a set of diffeomorphisms, in the context of a registration experiment between an atlas an a database of 9 T1 MR images of the human brain. {\textcopyright} Springer-Verlag Berlin Heidelberg 2006.},
+author = {Arsigny, Vincent and Commowick, Olivier and Pennec, Xavier and Ayache, Nicholas},
+isbn = {3540447075},
+issn = {16113349},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+mendeley-groups = {Scaling Squaring},
+pages = {924--931},
+pmid = {17354979},
+title = {{A log-euclidean framework for statistics on diffeomorphisms}},
+volume = {4190 LNCS },
+year = {2006}
+}
+@article{Arsigny2006a,
+abstract = {In this article, we focus on the parameterization of non-rigid geometrical deformations with a small number of flexible degrees of freedom. In previous work, we proposed a general framework called polyaffine to parameterize deformations with a small number of rigid or affine components, while guaranteeing the invertibility of global deformations. However, this framework lacks some important properties: the inverse of a polyaffine transformation is not polyaffine in general, and the polyaffine fusion of affine components is not invariant with respect to a change of coordinate system. We present here a novel general framework, called Log-Euclidean polyaffine, which overcomes these defects. We also detail a simple algorithm, the Fast Polyaffine Transform, which allows to compute very efficiently Log-Euclidean polyaffine transformations and their inverses on a regular grid. The results presented here on real 3D locally affine registration suggest that our novel framework provides a general and efficient way of fusing local rigid or affine deformations into a global invertible transformation without introducing artifacts, independently of the way local deformations are first estimated. {\textcopyright} Springer-Verlag Berlin Heidelberg 2006.},
+author = {Arsigny, Vincent and Commowick, Olivier and Pennec, Xavier and Ayache, Nicholas},
+doi = {10.1007/11784012_15},
+isbn = {3540356487},
+issn = {16113349},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+mendeley-groups = {Scaling Squaring},
+pages = {120--127},
+title = {{A log-euclidean polyaffine framework for locally rigid or affine registration}},
+volume = {4057 LNCS},
+year = {2006}
+}
+@article{Al-mohy2009,
+author = {Al-mohy, Awad H and Higham, Nicholas J},
+journal = {Matrix},
+keywords = {condition number estimation,echet derivative,fr,ma-,matrix exponential,matrix function,matrix iteration,matrix polynomial,pad,scaling and squaring method,trix exponential},
+mendeley-groups = {Scaling Squaring},
+number = {3},
+pages = {1639--1657},
+title = {{and the Expokit package [ 16 ]. It is also used in more general contexts , such as for computing the group exponential of a diffeomorphism [ 2 ]. The method is based on the approximation Copyright {\textcopyright} by SIAM . Unauthorized reproduction of this article is p}},
+volume = {30},
+year = {2009}
+}
+@article{Fung2004,
+abstract = {In this paper, a simple method based on the scaling and squaring technique for the evaluation of the matrix exponential and its derivatives is presented. A more general formulation with non-constant first derivatives is considered here. Both higher order and mixed derivatives are investigated. The method is based directly on the property of the exponential function and does not require the use of perturbation formulae for eigenvalues and eigenvectors. The approach provides a simple and direct algorithm for the computation of the matrix exponential and its derivatives regardless of degeneracy in the spectral decomposition of the matrix argument. If the derivatives are taken with respect to the entries of the matrix argument, the first and second linearizations can be obtained directly. {\textcopyright} 2004 John Wiley and Sons, Ltd.},
+author = {Fung, T. C.},
+doi = {10.1002/nme.909},
+issn = {00295981},
+journal = {International Journal for Numerical Methods in Engineering},
+keywords = {Exponential mapping,Linearizations,Precise integration,Scaling and squaring},
+mendeley-groups = {Scaling Squaring},
+number = {10},
+pages = {1273--1286},
+title = {{Computation of the maxtrix exponential and its derivatives by scaling and squaring}},
+volume = {59},
+year = {2004}
+}
+@article{Bader2019,
+abstract = {A new way to compute the Taylor polynomial of a matrix exponential is presented which reduces the number of matrix multiplications in comparison with the de-facto standard Paterson-Stockmeyer method for polynomial evaluation. Combined with the scaling and squaring procedure, this reduction is sufficient to make the Taylor method superior in performance to Pade approximants over a range of values of the matrix norms. An efficient adjustment to make the method robust against overscaling is also introduced. Numerical experiments show the superior performance of our method to have a similar accuracy in comparison with state-of-the-art implementations, and thus, it is especially recommended to be used in conjunction with Lie-group and exponential integrators where preservation of geometric properties is at issue.},
+author = {Bader, Philipp and Blanes, Sergio and Casas, Fernando},
+doi = {10.3390/MATH7121174},
+issn = {22277390},
+journal = {Mathematics},
+keywords = {Exponential of a matrix,Matrix polynomials,Scaling and squaring},
+mendeley-groups = {Scaling Squaring},
+number = {12},
+pages = {1--19},
+title = {{Computing the matrix exponential with an optimized taylor polynomial approximation}},
+volume = {7},
+year = {2019}
+}
+@article{Defez,
+author = {Defez, E and Ruiz, P and Sastre, J},
+keywords = {backward-error,matrix exponential,paterson-stockmeyer method,taylor series},
+mendeley-groups = {Scaling Squaring},
+title = {{Efficient scaling-squaring taylor method for computing the matrix exponential ∗ ‡ ,}}
+}
+@article{Higham2009,
+abstract = {The scaling and squaring method is the most widely used method for computing the matrix exponential, not least because it is the method implemented in the MATLAB function expm. The method scales the matrix by a power of 2 to reduce the norm to order 1, computes a Pad{\'{e}} approximant to the matrix exponential, and then repeatedly squares to undo the effect of the scaling. We give a new backward error analysis of the method (in exact arithmetic) that employs sharp bounds for the truncation errors and leads to an implementation of essentially optimal efficiency. We also give a new rounding error analysis that shows the computed Pad{\'{e}} approximant of the scaled matrix to be highly accurate. For IEEE double precision arithmetic the best choice of degree of Pad{\'{e}} approximant turns out to be 13, rather than the 6 or 8 used by previous authors. Our implementation of the scaling and squaring method always requires at least two fewer matrix multiplications than the expm function in MATLAB 7.0 when the matrix norm exceeds 1, which can amount to a 37% saving in the number of multiplications, and it is typically more accurate, owing to the fewer required squarings. We also investigate a different scaling and squaring algorithm proposed by Najfeld and Havel that employs a Pad{\'{e}} approximation to the function x coth (x). This method is found to be essentially a variation of the standard one with weaker supporting error analysis. {\textcopyright} 2009 Society for Industrial and Applied Mathematics.},
+author = {Higham, Nicholas J.},
+doi = {10.1137/090768539},
+issn = {00361445},
+journal = {SIAM Review},
+keywords = {Backward error analysis,Expm,MATLAB,Matrix exponential,Matrix function,Matrix polynomial evaluation,Pad{\'{e}} approximation,Performance profile,Scaling and squaring method},
+mendeley-groups = {Scaling Squaring},
+number = {4},
+pages = {747--764},
+title = {{The scaling and squaring method for the matrix exponential revisited}},
+volume = {51},
+year = {2009}
+}
+@article{Moler2003,
+abstract = {In principle, the exponential of a matrix could be computed in many ways. Methods involving approximation theory, differential equations, the matrix eigenvalues, and the matrix characteristic polynomial have been proposed. In practice, consideration of computational stability and efficiency indicates that some of the methods are preferable to others but that none are completely satisfactory. Most of this paper was originally published in 1978. An update, with a separate bibliography, describes a few recent developments.},
+author = {Moler, Cleve and {Van Loan}, Charles},
+doi = {10.1137/S00361445024180},
+issn = {00361445},
+journal = {SIAM Review},
+keywords = {Condition,Exponential,Matrix,Roundoff error,Truncation error},
+mendeley-groups = {Scaling Squaring},
+number = {1},
+pages = {3--49},
+title = {{Nineteen dubious ways to compute the exponential of a matrix, twenty-five years later}},
+volume = {45},
+year = {2003}
+}
+@article{Higham2006,
+author = {Higham, Nicholas J .},
+keywords = {matrix exponential,matrix function,pad},
+mendeley-groups = {Scaling Squaring},
+title = {{The Scaling and Squaring Method for the Matrix Exponential Revisited}},
+year = {2006}
+}
+
+
+@misc{dau2019ucr,
+  title={{The UCR Time Series Archive}}, 
+  author={Hoang Anh Dau and Anthony Bagnall and Kaveh Kamgar and Chin-Chia Michael Yeh and Yan Zhu and Shaghayegh Gharghabi and Chotirat Ann Ratanamahatana and Eamonn Keogh},
+  year={2019},
+  eprint={1810.07758},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}
+}
+
+@inproceedings{kawano2020neural,
+  title={Neural Time Warping For Multiple Sequence Alignment},
+  author={Kawano, Keisuke and Kutsuna, Takuro and Koide, Satoshi},
+  booktitle={ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={3837--3841},
+  year={2020},
+  organization={IEEE}
+}
+
+@ARTICLE{Petitjean2011-DBA,
+  title={A global averaging method for dynamic time warping, with applications to clustering},
+  author={Petitjean, Fran{\c{c}}ois and Ketterlin, Alain and Gan{\c{c}}arski, Pierre},
+  journal={Pattern Recognition},
+  volume={44},
+  number={3},
+  pages={678--693},
+  year={2011},
+  publisher={Elsevier}
+}
+
+@INPROCEEDINGS{Petitjean2014-ICDM-2,
+  title={Dynamic time warping averaging of time series allows faster and more accurate classification},
+  author={Petitjean, Fran{\c{c}}ois and Forestier, Germain and Webb, Geoffrey I and Nicholson, Ann E and Chen, Yanping and Keogh, Eamonn},
+  booktitle={Data Mining (ICDM), 2014 IEEE International Conference on},
+  pages={470--479},
+  year={2014},
+  organization={IEEE}
+}
+
+@INPROCEEDINGS{Forestier2017-ICDM,
+  title={Generating synthetic time series to augment sparse datasets},
+  author={Forestier, Germain and Petitjean, Fran{\c{c}}ois and Dau, Hoang Anh and Webb, Geoffrey I and Keogh, Eamonn},
+  booktitle={Data Mining (ICDM), 2017 IEEE International Conference on},
+  pages={865--870},
+  year={2017},
+  organization={IEEE}
+}
+
+
+@article{veeraraghavan2009rate,
+  title={Rate-invariant recognition of humans and their activities},
+  author={Veeraraghavan, Ashok and Srivastava, Anuj and Roy-Chowdhury, Amit K and Chellappa, Rama},
+  journal={IEEE Transactions on Image Processing},
+  volume={18},
+  number={6},
+  pages={1326--1339},
+  year={2009},
+  publisher={IEEE}
+}
+
+@book{mumford2010pattern,
+  title={Pattern theory: the stochastic analysis of real-world signals},
+  author={Mumford, David and Desolneux, Agn{\`e}s},
+  year={2010},
+  publisher={CRC Press}
+}
+
+@INPROCEEDINGS{bertrand2016,
+  author={Rivet, Bertrand and Cohen, Jeremy E.},
+  booktitle={2016 IEEE Sensor Array and Multichannel Signal Processing Workshop (SAM)}, 
+  title={Modeling time warping in tensor decomposition}, 
+  year={2016},
+  volume={},
+  number={},
+  pages={1-5},
+  doi={10.1109/SAM.2016.7569733}
+}
+
+@book{srivastava2016functional,
+  title={Functional and shape data analysis},
+  author={Srivastava, Anuj and Klassen, Eric P},
+  volume={1},
+  year={2016},
+  publisher={Springer}
+}
+
+@incollection{duistermaat2000lie,
+  title={Lie groups and lie algebras},
+  author={Duistermaat, JJ and Kolk, JAC},
+  booktitle={Lie Groups},
+  pages={1--92},
+  year={2000},
+  publisher={Springer}
+}
+
+@article{vaillant2004statistics,
+  title={Statistics on diffeomorphisms via tangent space representations},
+  author={Vaillant, Marc and Miller, Michael I and Younes, Laurent and Trouv{\'e}, Alain},
+  journal={NeuroImage},
+  volume={23},
+  pages={S161--S169},
+  year={2004},
+  publisher={Elsevier}
+}
+
+@article{fawaz2019deep,
+  title={Deep learning for time series classification: a review},
+  author={Fawaz, Hassan Ismail and Forestier, Germain and Weber, Jonathan and Idoumghar, Lhassane and Muller, Pierre-Alain},
+  journal={Data mining and knowledge discovery},
+  volume={33},
+  number={4},
+  pages={917--963},
+  year={2019},
+  publisher={Springer}
+}
+
+@misc{queiruga2020continuousindepth,
+      title={Continuous-in-Depth Neural Networks}, 
+      author={Alejandro F. Queiruga and N. Benjamin Erichson and Dane Taylor and Michael W. Mahoney},
+      year={2020},
+      eprint={2008.02389},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{van2008visualizing,
+  title={Visualizing data using t-SNE.},
+  author={Van der Maaten, Laurens and Hinton, Geoffrey},
+  journal={Journal of machine learning research},
+  volume={9},
+  number={11},
+  year={2008}
+}
+@article{kingma2014adam,
+  title={Adam: A method for stochastic optimization},
+  author={Kingma, Diederik P and Ba, Jimmy},
+  journal={arXiv preprint arXiv:1412.6980},
+  year={2014}
+}
+
+@incollection{wall2003singular,
+  title={Singular value decomposition and principal component analysis},
+  author={Wall, Michael E and Rechtsteiner, Andreas and Rocha, Luis M},
+  booktitle={A practical approach to microarray data analysis},
+  pages={91--109},
+  year={2003},
+  publisher={Springer}
+}
+@inproceedings{oh2018learning,
+  title={Learning to exploit invariances in clinical time-series data using sequence transformer networks},
+  author={Oh, Jeeheh and Wang, Jiaxuan and Wiens, Jenna},
+  booktitle={Machine Learning for Healthcare Conference},
+  pages={332--347},
+  year={2018},
+  organization={PMLR}
+}
+@article{sakoe1978dynamic,
+  title={Dynamic programming algorithm optimization for spoken word recognition},
+  author={Sakoe, Hiroaki and Chiba, Seibi},
+  journal={IEEE transactions on acoustics, speech, and signal processing},
+  volume={26},
+  number={1},
+  pages={43--49},
+  year={1978},
+  publisher={IEEE}
+}
+@misc{blondel2021differentiable,
+      title={Differentiable Divergences Between Time Series}, 
+      author={Mathieu Blondel and Arthur Mensch and Jean-Philippe Vert},
+      year={2021},
+      eprint={2010.08354},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+@misc{detlefsen2018LIBCPAB,
+  author = {Detlefsen, Nicki S.},
+  title = {libcpab},
+  year = {2018},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/SkafteNicki/libcpab}},
+}
+
+@article{fu2020deep,
+  title={Deep learning in medical image registration: a review},
+  author={Fu, Yabo and Lei, Yang and Wang, Tonghe and Curran, Walter J and Liu, Tian and Yang, Xiaofeng},
+  journal={Physics in Medicine \& Biology},
+  volume={65},
+  number={20},
+  pages={20TR01},
+  year={2020},
+  publisher={IOP Publishing}
+}
+
+@inproceedings{dalca2018unsupervised,
+  title={Unsupervised learning for fast probabilistic diffeomorphic registration},
+  author={Dalca, Adrian V and Balakrishnan, Guha and Guttag, John and Sabuncu, Mert R},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={729--738},
+  year={2018},
+  organization={Springer}
+}
+@article{vercauteren2009diffeomorphic,
+  title={Diffeomorphic demons: Efficient non-parametric image registration},
+  author={Vercauteren, Tom and Pennec, Xavier and Perchant, Aymeric and Ayache, Nicholas},
+  journal={NeuroImage},
+  volume={45},
+  number={1},
+  pages={S61--S72},
+  year={2009},
+  publisher={Elsevier}
+}

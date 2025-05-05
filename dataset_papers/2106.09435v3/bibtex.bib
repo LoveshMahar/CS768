@@ -1,0 +1,4458 @@
+
+
+
+
+
+
+
+@software{ortools2023_glop,
+    title = {{OR-Tools}},
+    version = { v9.6 },
+    author = {Laurent Perron and Vincent Furnon},
+    organization = {Google},
+    url = {https://developers.google.com/optimization/},
+    date = { 2023-03-13 }
+}
+
+@misc{google2023_tpu,
+    title = {Cloud Tensor Processing Units ({TPUs})},
+    howpublished = {\url{https://cloud.google.com/tpu/docs/tpus}},
+    note = {Accessed: 2023-04-16}
+}
+
+@misc{google2023_tpu_flops,
+    title = {{TPU} System Architecture},
+    howpublished = {\url{https://cloud.google.com/tpu/docs/system-architecture-tpu-vm}},
+    note = {Accessed: 2023-04-16}
+}
+
+@book{bhattacharya2022_von_neumann,
+    title={The Man from the Future: The Visionary Life of John von Neumann},
+    author={Bhattacharya, A.},
+    isbn={9781324003991},
+    lccn={2021050487},
+    year={2022},
+    publisher={WW Norton}
+}
+
+@misc{omidshafiei2022_multiagent_behaviour_analysis,
+    doi = {10.48550/ARXIV.2206.09046},
+    url = {https://arxiv.org/abs/2206.09046},
+    author = {Omidshafiei, Shayegan and Kapishnikov, Andrei and Assogba, Yannick and Dixon, Lucas and Kim, Been},
+    keywords = {Machine Learning (cs.LG), Multiagent Systems (cs.MA), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {Beyond Rewards: a Hierarchical Perspective on Offline Multiagent Behavioral Analysis},
+    publisher = {arXiv},
+    year = {2022},
+    copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@article{fair2022_cicero_dimplomacy_science,
+    author = {FAIR  and Anton Bakhtin  and Noam Brown  and Emily Dinan  and Gabriele Farina  and Colin Flaherty  and Daniel Fried  and Andrew Goff  and Jonathan Gray  and Hengyuan Hu  and Athul Paul Jacob  and Mojtaba Komeili  and Karthik Konath  and Minae Kwon  and Adam Lerer  and Mike Lewis  and Alexander H. Miller  and Sasha Mitts  and Adithya Renduchintala  and Stephen Roller  and Dirk Rowe  and Weiyan Shi  and Joe Spisak  and Alexander Wei  and David Wu  and Hugh Zhang  and Markus Zijlstra },
+    title = {Human-level play in the game of Diplomacy by combining language models with strategic reasoning},
+    journal = {Science},
+    volume = {378},
+    number = {6624},
+    pages = {1067-1074},
+    year = {2022},
+    doi = {10.1126/science.ade9097},
+    URL = {https://www.science.org/doi/abs/10.1126/science.ade9097},
+    eprint = {https://www.science.org/doi/pdf/10.1126/science.ade9097},
+    abstract = {Despite much progress in training artificial intelligence (AI) systems to imitate human language, building agents that use language to communicate intentionally with humans in interactive environments remains a major challenge. We introduce Cicero, the first AI agent to achieve human-level performance in Diplomacy, a strategy game involving both cooperation and competition that emphasizes natural language negotiation and tactical coordination between seven players. Cicero integrates a language model with planning and reinforcement learning algorithms by inferring players’ beliefs and intentions from its conversations and generating dialogue in pursuit of its plans. Across 40 games of an anonymous online Diplomacy league, Cicero achieved more than double the average score of the human players and ranked in the top 10\% of participants who played more than one game. The game Diplomacy has been a major challenge for artificial intelligence (AI). Unlike other competitive games that AI has recently mastered, such as chess, Go, and poker, Diplomacy cannot be solved purely through self-play; it requires the development of an agent to understand other players’ motivations and perspectives and to use natural language to negotiate complex shared plans. The Meta Fundamental AI Research Diplomacy Team (FAIR) et al. developed an agent that is able to play the full natural language form of the game and demonstrates performance well above the human average in an online Diplomacy league. The present work has far-reaching implications for the development of cooperative AI and language models for communication with people, even when interactions involve a mixture of aligned and competing interests. —YS Artificial intelligence demonstrates human-level performance in the strategic board game Diplomacy.}
+}
+
+
+@article{perolat2022_stratego_deepnash,
+    author = {Julien Perolat  and Bart De Vylder  and Daniel Hennes  and Eugene Tarassov  and Florian Strub  and Vincent de Boer  and Paul Muller  and Jerome T. Connor  and Neil Burch  and Thomas Anthony  and Stephen McAleer  and Romuald Elie  and Sarah H. Cen  and Zhe Wang  and Audrunas Gruslys  and Aleksandra Malysheva  and Mina Khan  and Sherjil Ozair  and Finbarr Timbers  and Toby Pohlen  and Tom Eccles  and Mark Rowland  and Marc Lanctot  and Jean-Baptiste Lespiau  and Bilal Piot  and Shayegan Omidshafiei  and Edward Lockhart  and Laurent Sifre  and Nathalie Beauguerlange  and Remi Munos  and David Silver  and Satinder Singh  and Demis Hassabis  and Karl Tuyls },
+    title = {Mastering the game of Stratego with model-free multiagent reinforcement learning},
+    journal = {Science},
+    volume = {378},
+    number = {6623},
+    pages = {990-996},
+    year = {2022},
+    doi = {10.1126/science.add4679},
+    URL = {https://www.science.org/doi/abs/10.1126/science.add4679},
+    eprint = {https://www.science.org/doi/pdf/10.1126/science.add4679},
+    abstract = {We introduce DeepNash, an autonomous agent that plays the imperfect information game Stratego at a human expert level. Stratego is one of the few iconic board games that artificial intelligence (AI) has not yet mastered. It is a game characterized by a twin challenge: It requires long-term strategic thinking as in chess, but it also requires dealing with imperfect information as in poker. The technique underpinning DeepNash uses a game-theoretic, model-free deep reinforcement learning method, without search, that learns to master Stratego through self-play from scratch. DeepNash beat existing state-of-the-art AI methods in Stratego and achieved a year-to-date (2022) and all-time top-three ranking on the Gravon games platform, competing with human expert players. Stratego is a popular two-player imperfect information board game. Because of its complexity stemming from its enormous game tree, decision-making under imperfect information, and a piece deployment phase at the start, Stratego poses a challenge for artificial intelligence (AI). Previous computer programs only performed at an amateur level at best. Perolat et al. introduce a model-free multiagent reinforcement learning methodology and show that it can achieve human expert–level performance in Stratego. The present work not only adds to the growing list of games that AI systems can play as well or even better than humans but may also facilitate further applications of reinforcement learning methods in real-world, large-scale multiagent problems that are characterized by imperfect information and thus are currently unsolvable. —YS Reinforcement learning achieves human expert–level performance in the large-scale imperfect information board game Stratego.}
+}
+
+@inproceedings{fargier2022_path,
+    title={A Path-following Polynomial Equations Systems Approach for Computing Nash Equilibria},
+    author={Fargier, H{\'e}l{\`e}ne and Jourdan, Paul and Sabbadin, R{\'e}gis},
+    booktitle={Proceedings of the 21st International Conference on Autonomous Agents and Multiagent Systems},
+    pages={418--426},
+    year={2022}
+}
+
+@article{marris2022_turbo_arxiv,
+    journal   = {CoRR},
+    volume    = {abs/2210.09257},
+    doi = {10.48550/ARXIV.2210.09257},
+    url = {https://arxiv.org/abs/2210.09257},
+    author = {Marris, Luke and Gemp, Ian and Anthony, Thomas and Tacchetti, Andrea and Liu, Siqi and Tuyls, Karl},
+    keywords = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Computer Science and Game Theory (cs.GT), Multiagent Systems (cs.MA), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {Turbocharging Solution Concepts: Solving {NE}s, {CE}s and {CCE}s with Neural Equilibrium Solvers},
+    publisher = {arXiv},
+    year = {2022},
+    copyright = {Creative Commons Attribution 4.0 International}
+}
+
+@inproceedings{marris2022_turbo_neurips,
+    author = {Marris, Luke and Gemp, Ian and Anthony, Thomas and Tacchetti, Andrea and Liu, Siqi and Tuyls, Karl},
+    booktitle = {Advances in Neural Information Processing Systems},
+    editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+    pages = {5586--5600},
+    publisher = {Curran Associates, Inc.},
+    title = {Turbocharging Solution Concepts: Solving {NE}s, {CE}s and {CCE}s with Neural Equilibrium Solvers},
+    url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/24f420aa4c99642dbb9aae18b166bbbc-Paper-Conference.pdf},
+    volume = {35},
+    year = {2022}
+}
+
+@article{boors2022_2x2_game_classification_by_decomposition,
+    author="B{\"o}{\"o}rs, Mikael
+    and W{\"a}ngberg, Tobias
+    and Everitt, Tom
+    and Hutter, Marcus",
+    title="Classification by decomposition: a novel approach to classification of symmetric 2×2 games",
+    journal="Theory and Decision",
+    year="2022",
+    month="Oct",
+    day="01",
+    volume="93",
+    number="3",
+    pages="463--508",
+    issn="1573-7187",
+    doi="10.1007/s11238-021-09850-z",
+    url="https://doi.org/10.1007/s11238-021-09850-z"
+}
+
+@inproceedings{liu2022_simplex_neupl,
+    title = 	 {Simplex Neural Population Learning: Any-Mixture {B}ayes-Optimality in Symmetric Zero-sum Games},
+    author =       {Liu, Siqi and Lanctot, Marc and Marris, Luke and Heess, Nicolas},
+    booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+    pages = 	 {13793--13806},
+    year = 	 {2022},
+    editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+    volume = 	 {162},
+    series = 	 {Proceedings of Machine Learning Research},
+    month = 	 {17--23 Jul},
+    publisher =    {PMLR},
+    pdf = 	 {https://proceedings.mlr.press/v162/liu22h/liu22h.pdf},
+    url = 	 {https://proceedings.mlr.press/v162/liu22h.html},
+    abstract = 	 {Learning to play optimally against any mixture over a diverse set of strategies is of important practical interests in competitive games. In this paper, we propose simplex-NeuPL that satisfies two desiderata simultaneously: i) learning a population of strategically diverse basis policies, represented by a single conditional network; ii) using the same network, learn best-responses to any mixture over the simplex of basis policies. We show that the resulting conditional policies incorporate prior information about their opponents effectively, enabling near optimal returns against arbitrary mixture policies in a game with tractable best-responses. We verify that such policies behave Bayes-optimally under uncertainty and offer insights in using this flexibility at test time. Finally, we offer evidence that learning best-responses to any mixture policies is an effective auxiliary task for strategic exploration, which, by itself, can lead to more performant populations.}
+}
+
+
+@misc{marris2022_game_theoretic_rating,
+    journal   = {CoRR},
+    volume    = {abs/2210.02205},
+    doi = {10.48550/ARXIV.2210.02205},
+    url = {https://arxiv.org/abs/2210.02205},
+    author = {Marris, Luke and Lanctot, Marc and Gemp, Ian and Omidshafiei, Shayegan and McAleer, Stephen and Connor, Jerome and Tuyls, Karl and Graepel, Thore},
+    keywords = {Computer Science and Game Theory (cs.GT), Machine Learning (cs.LG), Multiagent Systems (cs.MA), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {Game Theoretic Rating in N-player general-sum games with Equilibria},
+    publisher = {arXiv},
+    year = {2022},
+    copyright = {Creative Commons Attribution 4.0 International}
+}
+
+
+@inproceedings{liu2022_neupl,
+    title={Neu{PL}: Neural Population Learning},
+    author={Siqi Liu and Luke Marris and Daniel Hennes and Josh Merel and Nicolas Heess and Thore Graepel},
+    booktitle={International Conference on Learning Representations},
+    year={2022},
+    url={https://openreview.net/forum?id=MIX3fJkl_1}
+}
+
+@article{duan2021_pac_learnability_of_ne,
+    title={Towards the {PAC} Learnability of {Nash} Equilibrium},
+    author={Duan, Zhijian and Zhang, Dinghuai and Huang, Wenhan and Du, Yali and Wang, Jun and Yang, Yaodong and Deng, Xiaotie},
+    journal = {CoRR},
+    volume = {abs/2108.07472},
+    year = {2021},
+    url = {https://arxiv.org/abs/2108.07472},
+    eprinttype = {arXiv},
+    eprint = {2108.07472},
+}
+
+@article{bruns2021_archetypal_games,
+    title = {Archetypal games generate diverse models of power, conflict, and cooperation},
+    author={Bruns, Bryan and Kimmich, Christian},
+    journal={Ecology and Society},
+    publisher={The Resilience Alliance},
+    year={2021},
+    volume={26},
+    issue={4},
+}
+
+@inproceedings{feng2021_neuralautocurricula,
+    author = {Feng, Xidong and Slumbers, Oliver and Wan, Ziyu and Liu, Bo and McAleer, Stephen and Wen, Ying and Wang, Jun and Yang, Yaodong},
+    booktitle = {Advances in Neural Information Processing Systems},
+    editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+    pages = {3504--3517},
+    publisher = {Curran Associates, Inc.},
+    title = {Neural Auto-Curricula in Two-Player Zero-Sum Games},
+    url = {https://proceedings.neurips.cc/paper/2021/file/1cd73be1e256a7405516501e94e892ac-Paper.pdf},
+    volume = {34},
+    year = {2021}
+}
+
+@misc{chen2021_l2o,
+    doi = {10.48550/ARXIV.2103.12828},
+    url = {https://arxiv.org/abs/2103.12828},
+    author = {Chen, Tianlong and Chen, Xiaohan and Chen, Wuyang and Heaton, Howard and Liu, Jialin and Wang, Zhangyang and Yin, Wotao},
+    keywords = {Optimization and Control (math.OC), Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Mathematics, FOS: Mathematics, FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {Learning to Optimize: A Primer and A Benchmark},
+    publisher = {arXiv},
+    year = {2021},
+    copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@article{liu2021_soccer,
+  author    = {Siqi Liu and
+               Guy Lever and
+               Zhe Wang and
+               Josh Merel and
+               S. M. Ali Eslami and
+               Daniel Hennes and
+               Wojciech M. Czarnecki and
+               Yuval Tassa and
+               Shayegan Omidshafiei and
+               Abbas Abdolmaleki and
+               Noah Y. Siegel and
+               Leonard Hasenclever and
+               Luke Marris and
+               Saran Tunyasuvunakool and
+               H. Francis Song and
+               Markus Wulfmeier and
+               Paul Muller and
+               Tuomas Haarnoja and
+               Brendan D. Tracey and
+               Karl Tuyls and
+               Thore Graepel and
+               Nicolas Heess},
+  title     = {From Motor Control to Team Play in Simulated Humanoid Football},
+  journal   = {CoRR},
+  volume    = {abs/2105.12196},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2105.12196},
+  eprinttype = {arXiv},
+  eprint    = {2105.12196},
+  timestamp = {Tue, 01 Jun 2021 18:07:59 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2105-12196.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inbook{zhang2021_marl_survey,
+    author={Zhang, Kaiqing
+    and Yang, Zhuoran
+    and Ba{\c{s}}ar, Tamer},
+    editor={Vamvoudakis, Kyriakos G.
+    and Wan, Yan
+    and Lewis, Frank L.
+    and Cansever, Derya},
+    title={Multi-Agent Reinforcement Learning: A Selective Overview of Theories and Algorithms},
+    booktitle={Handbook of Reinforcement Learning and Control},
+    year={2021},
+    publisher={Springer International Publishing},
+    address={Cham},
+    pages={321--384},
+    isbn={978-3-030-60990-0},
+    doi={10.1007/978-3-030-60990-0_12},
+    url={https://doi.org/10.1007/978-3-030-60990-0_12},
+}
+
+@article{gemp2021_eigengame_arxiv,
+    author    = {Ian M. Gemp and
+               Brian McWilliams and
+               Claire Vernade and
+               Thore Graepel},
+    title     = {EigenGame: {PCA} as a {Nash} Equilibrium},
+    journal   = {CoRR},
+    volume    = {abs/2010.00554},
+    year      = {2020},
+    url       = {https://arxiv.org/abs/2010.00554},
+    archivePrefix = {arXiv},
+    eprint    = {2010.00554},
+    timestamp = {Mon, 12 Oct 2020 17:53:10 +0200},
+    biburl    = {https://dblp.org/rec/journals/corr/abs-2010-00554.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{gemp2021_adidas_arxiv,
+    author    = {Ian M. Gemp and
+               Rahul Savani and
+               Marc Lanctot and
+               Yoram Bachrach and
+               Thomas W. Anthony and
+               Richard Everett and
+               Andrea Tacchetti and
+               Tom Eccles and
+               J{\'{a}}nos Kram{\'{a}}r},
+    title     = {Sample-based Approximation of Nash in Large Many-Player Games via Gradient Descent},
+    journal   = {CoRR},
+    volume    = {abs/2106.01285},
+    year      = {2021},
+    url       = {https://arxiv.org/abs/2106.01285},
+    archivePrefix = {arXiv},
+    eprint    = {2106.01285},
+    timestamp = {Thu, 10 Jun 2021 16:34:18 +0200},
+    biburl    = {https://dblp.org/rec/journals/corr/abs-2106-01285.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{marris2021_jpsro_arxiv,
+    author    = {Luke Marris and
+               Paul Muller and
+               Marc Lanctot and
+               Karl Tuyls and
+               Thore Graepel},
+    title     = {Multi-Agent Training beyond Zero-Sum with Correlated Equilibrium Meta-Solvers},
+    journal   = {CoRR},
+    volume    = {abs/2106.09435},
+    year      = {2021},
+    url       = {https://arxiv.org/abs/2106.09435},
+    archivePrefix = {arXiv},
+    eprint    = {2106.09435},
+    timestamp = {Tue, 29 Jun 2021 16:55:04 +0200},
+    biburl    = {https://dblp.org/rec/journals/corr/abs-2106-09435.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{marris2021_jpsro_icml,
+    title = {Multi-Agent Training beyond Zero-Sum with Correlated Equilibrium Meta-Solvers},
+    author = {Marris, Luke and Muller, Paul and Lanctot, Marc and Tuyls, Karl and Graepel, Thore},
+    booktitle = {Proceedings of the 38th International Conference on Machine Learning},
+    pages = {7480--7491},
+    year = {2021},
+    editor = {Meila, Marina and Zhang, Tong},
+    volume = {139},
+    series = {Proceedings of Machine Learning Research},
+    month = {18--24 Jul},
+    publisher = {PMLR},
+    pdf = {http://proceedings.mlr.press/v139/marris21a/marris21a.pdf},
+    url = {http://proceedings.mlr.press/v139/marris21a.html},
+    abstract = 	 {Two-player, constant-sum games are well studied in the literature, but there has been limited progress outside of this setting. We propose Joint Policy-Space Response Oracles (JPSRO), an algorithm for training agents in n-player, general-sum extensive form games, which provably converges to an equilibrium. We further suggest correlated equilibria (CE) as promising meta-solvers, and propose a novel solution concept Maximum Gini Correlated Equilibrium (MGCE), a principled and computationally efficient family of solutions for solving the correlated equilibrium selection problem. We conduct several experiments using CE meta-solvers for JPSRO and demonstrate convergence on n-player, general-sum games.}
+}
+
+@article{mcaleer2021_xdo,
+    author    = {Stephen McAleer and
+               John B. Lanier and
+               Pierre Baldi and
+               Roy Fox},
+    title     = {{XDO:} {A} Double Oracle Algorithm for Extensive-Form Games},
+    journal   = {CoRR},
+    volume    = {abs/2103.06426},
+    year      = {2021},
+    url       = {https://arxiv.org/abs/2103.06426},
+    archivePrefix = {arXiv},
+    eprint    = {2103.06426},
+    timestamp = {Tue, 16 Mar 2021 11:26:59 +0100},
+    biburl    = {https://dblp.org/rec/journals/corr/abs-2103-06426.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{sokota2021_commonpayoff,
+      title={Solving Common-Payoff Games with Approximate Policy Iteration}, 
+      author={Samuel Sokota and Edward Lockhart and Finbarr Timbers and Elnaz Davoodi and Ryan D'Orazio and Neil Burch and Martin Schmid and Michael Bowling and Marc Lanctot},
+      year={2021},
+      eprint={2101.04237},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+@article{brock2021_adaptive_grad_clipping,
+    author    = {Andrew Brock and
+               Soham De and
+               Samuel L. Smith and
+               Karen Simonyan},
+    title     = {High-Performance Large-Scale Image Recognition Without Normalization},
+    journal   = {CoRR},
+    volume    = {abs/2102.06171},
+    year      = {2021},
+    url       = {https://arxiv.org/abs/2102.06171},
+    eprinttype = {arXiv},
+    eprint    = {2102.06171},
+    timestamp = {Thu, 18 Feb 2021 15:26:00 +0100},
+    biburl    = {https://dblp.org/rec/journals/corr/abs-2102-06171.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{du2021_estimating_alpharank,
+    title={Estimating {$\alpha$-Rank} from A Few Entries with Low Rank Matrix Completion},
+    author={Du, Yali and Yan, Xue and Chen, Xu and Wang, Jun and Zhang, Haifeng},
+    booktitle={International Conference on Machine Learning},
+    pages={2870--2879},
+    year={2021},
+    organization={PMLR}
+}
+
+@article{heaton2021_fixed_point_ne_network,
+    author    = {Howard Heaton and
+               Daniel McKenzie and
+               Qiuwei Li and
+               Samy Wu Fung and
+               Stanley J. Osher and
+               Wotao Yin},
+    title     = {Learn to Predict Equilibria via Fixed Point Networks},
+    journal   = {CoRR},
+    volume    = {abs/2106.00906},
+    year      = {2021},
+    url       = {https://arxiv.org/abs/2106.00906},
+    eprinttype = {arXiv},
+    eprint    = {2106.00906},
+    timestamp = {Wed, 09 Jun 2021 18:45:08 +0200},
+    biburl    = {https://dblp.org/rec/journals/corr/abs-2106-00906.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{rashid2021_estimating_alpharank,
+    title={Estimating $\alpha$-Rank by Maximizing Information Gain},
+    author={Rashid, Tabish and Zhang, Cheng and Ciosek, Kamil},
+    booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+    volume={35},
+    number={6},
+    pages={5673--5681},
+    year={2021}
+}
+
+@article{jin2021_vlearning,
+    author    = {Chi Jin and
+               Qinghua Liu and
+               Yuanhao Wang and
+               Tiancheng Yu},
+    title     = {V-Learning - {A} Simple, Efficient, Decentralized Algorithm for Multiagent
+               {RL}},
+    journal   = {CoRR},
+    volume    = {abs/2110.14555},
+    year      = {2021},
+    url       = {https://arxiv.org/abs/2110.14555},
+    eprinttype = {arXiv},
+    eprint    = {2110.14555},
+    timestamp = {Fri, 29 Oct 2021 10:49:32 +0200},
+    biburl    = {https://dblp.org/rec/journals/corr/abs-2110-14555.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{steinberger2020_dream,
+    title={DREAM: Deep Regret minimization with Advantage baselines and Model-free learning},
+    author={Eric Steinberger and Adam Lerer and Noam Brown},
+    year={2020},
+    eprint={2006.10410},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@software{hessel2020_optax,
+    author = {Matteo Hessel and David Budden and Fabio Viola and Mihaela Rosca
+            and Eren Sezener and Tom Hennigan},
+    title = {Optax: composable gradient transformation and optimisation, in {JAX!}},
+    url = {http://github.com/deepmind/optax},
+    version = {0.0.1},
+    year = {2020},
+}
+
+@article{omidshafiei2020_landscape_of_multiplayer_games,
+    author="Omidshafiei, Shayegan
+    and Tuyls, Karl
+    and Czarnecki, Wojciech M.
+    and Santos, Francisco C.
+    and Rowland, Mark
+    and Connor, Jerome
+    and Hennes, Daniel
+    and Muller, Paul
+    and P{\'e}rolat, Julien
+    and Vylder, Bart De
+    and Gruslys, Audrunas
+    and Munos, R{\'e}mi",
+    title="Navigating the landscape of multiplayer games",
+    journal="Nature Communications",
+    year="2020",
+    month="Nov",
+    day="05",
+    volume="11",
+    number="1",
+    pages="5603",
+    abstract="Multiplayer games have long been used as testbeds in artificial intelligence research, aptly referred to as the Drosophila of artificial intelligence. Traditionally, researchers have focused on using well-known games to build strong agents. This progress, however, can be better informed by characterizing games and their topological landscape. Tackling this latter question can facilitate understanding of agents and help determine what game an agent should target next as part of its training. Here, we show how network measures applied to response graphs of large-scale games enable the creation of a landscape of games, quantifying relationships between games of varying sizes and characteristics. We illustrate our findings in domains ranging from canonical games to complex empirical games capturing the performance of trained agents pitted against one another. Our results culminate in a demonstration leveraging this information to generate new and interesting games, including mixtures of empirical games synthesized from real world games.",
+    issn="2041-1723",
+    doi="10.1038/s41467-020-19244-4",
+    url="https://doi.org/10.1038/s41467-020-19244-4"
+}
+
+@article{anthony2020_diplomacy,
+    title={Learning to Play No-Press {D}iplomacy with Best Response Policy Iteration},
+    author={Anthony, Thomas and Eccles, Tom and Tacchetti, Andrea and Kram{\'a}r, J{\'a}nos and Gemp, Ian and Hudson, Thomas C and Porcel, Nicolas and Lanctot, Marc and P{\'e}rolat, Julien and Everett, Richard and others},
+    journal={arXiv preprint arXiv:2006.04635},
+    year={2020}
+}
+
+@article{bai2020_ce_cce_self_play,
+    author    = {Yu Bai and
+               Chi Jin and
+               Tiancheng Yu},
+    title     = {Near-Optimal Reinforcement Learning with Self-Play},
+    journal   = {CoRR},
+    volume    = {abs/2006.12007},
+    year      = {2020},
+    url       = {https://arxiv.org/abs/2006.12007},
+    eprinttype = {arXiv},
+    eprint    = {2006.12007},
+    timestamp = {Tue, 23 Jun 2020 17:57:22 +0200},
+    biburl    = {https://dblp.org/rec/journals/corr/abs-2006-12007.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{morrill2020_hindsight,
+      title={Hindsight and Sequential Rationality of Correlated Play}, 
+      author={Dustin Morrill and Ryan D'Orazio and Reca Sarfati and Marc Lanctot and James R. Wright and Amy Greenwald and Michael Bowling},
+      year={2021},
+      booktitle={Proceedings of the The Thirty-Fifth AAAI Conference on Artificial Intelligence (AAAI-21)}
+}
+
+@article{tuyls2020_bounds_dynamics_egta,
+    author    = {Karl Tuyls and
+               Julien P{\'{e}}rolat and
+               Marc Lanctot and
+               Edward Hughes and
+               Richard Everett and
+               Joel Z. Leibo and
+               Csaba Szepesv{\'{a}}ri and
+               Thore Graepel},
+    title     = {Bounds and dynamics for empirical game theoretic analysis},
+    journal   = {Auton. Agents Multi Agent Syst.},
+    volume    = {34},
+    number    = {1},
+    pages     = {7},
+    year      = {2020}
+}
+
+@article{omidshafiei2020_navigating_landscape,
+    title={Navigating the landscape of multiplayer games},
+    author={Omidshafiei, Shayegan and Tuyls, Karl and Czarnecki, Wojciech M and Santos, Francisco C and Rowland, Mark and Connor, Jerome and Hennes, Daniel and Muller, Paul and P{\'e}rolat, Julien and De Vylder, Bart and others},
+    journal={Nature communications},
+    volume={11},
+    number={1},
+    pages={1--17},
+    year={2020},
+    publisher={Nature Publishing Group}
+}
+
+@article{thiede2020_equivariant,
+    author    = {Erik Henning Thiede and
+               Truong{-}Son Hy and
+               Risi Kondor},
+    title     = {The general theory of permutation equivariant neural networks and higher
+               order graph variational encoders},
+    journal   = {CoRR},
+    volume    = {abs/2004.03990},
+    year      = {2020},
+    url       = {https://arxiv.org/abs/2004.03990},
+    eprinttype = {arXiv},
+    eprint    = {2004.03990},
+    timestamp = {Tue, 14 Apr 2020 16:40:34 +0200},
+    biburl    = {https://dblp.org/rec/journals/corr/abs-2004-03990.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{anthony2020_nopress,
+      title={Learning to Play No-Press Diplomacy with Best Response Policy Iteration}, 
+      author={Thomas Anthony and Tom Eccles and Andrea Tacchetti and János Kramár and Ian Gemp and Thomas C. Hudson and Nicolas Porcel and Marc Lanctot and Julien Pérolat and Richard Everett and Roman Werpachowski and Satinder Singh and Thore Graepel and Yoram Bachrach},
+      year={2020},
+      eprint={2006.04635},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{czarnecki2020_spinning,
+    title={Real World Games Look Like Spinning Tops},
+    author={Czarnecki, Wojciech M and Gidel, Gauthier and Tracey, Brendan and Tuyls, Karl and Omidshafiei, Shayegan and Balduzzi, David and Jaderberg, Max},
+    journal={Advances in Neural Information Processing Systems},
+    volume={33},
+    year={2020}
+}
+
+@misc{gray2020_nopress,
+      title={Human-Level Performance in No-Press Diplomacy via Equilibrium Search}, 
+      author={Jonathan Gray and Adam Lerer and Anton Bakhtin and Noam Brown},
+      year={2020},
+      eprint={2010.02923},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+@misc{lockhart2020_bridge,
+      title={Human-Agent Cooperation in Bridge Bidding}, 
+      author={Edward Lockhart and Neil Burch and Nolan Bard and Sebastian Borgeaud and Tom Eccles and Lucas Smaira and Ray Smith},
+      year={2020},
+      eprint={2011.14124},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+@inproceedings{mcaleer2020_pipeline,
+    title={Pipeline {PSRO}: {A} Scalable Approach for Finding Approximate {N}ash Equilibria in Large Games}, 
+    author={Stephen McAleer and John Lanier and Roy Fox and Pierre Baldi},
+    year={2020},
+    booktitle={Neural Information Processing Systems 33}
+}
+
+@inproceedings{muller2020_alpharankpsro,
+    title={A Generalized Training Approach for Multiagent Learning},
+    author={Paul Muller and Shayegan Omidshafiei and Mark Rowland and Karl Tuyls and Julien Perolat and Siqi Liu and Daniel Hennes and Luke Marris and Marc Lanctot and Edward Hughes and Zhe Wang and Guy Lever and Nicolas Heess and Thore Graepel and Remi Munos},
+    booktitle={International Conference on Learning Representations},
+    year={2020},
+}
+
+@article{stellato2020_osqp,
+      author  = {Stellato, B. and Banjac, G. and Goulart, P. and Bemporad, A. and Boyd, S.},
+      title   = {{OSQP}: an operator splitting solver for quadratic programs},
+      journal = {Mathematical Programming Computation},
+      year    = {2020},
+}
+
+@misc{celli2020_noregret,
+    title={No-Regret Learning Dynamics for Extensive-Form Correlated Equilibrium}, 
+    author={Andrea Celli and Alberto Marchesi and Gabriele Farina and Nicola Gatti},
+    year={2020},
+    eprint={2004.00603},
+    archivePrefix={arXiv},
+    primaryClass={cs.GT}
+}
+
+@article{norman2020_tpu_v2_tpu_v3,
+    author = {Jouppi, Norman and Yoon, Doe and Kurian, George and Li, Sheng and Patil, Nishant and Laudon, James and Young, Cliff and Patterson, David},
+    year = {2020},
+    month = {06},
+    pages = {67-78},
+    title = {A domain-specific supercomputer for training deep neural networks},
+    volume = {63},
+    journal = {Communications of the ACM},
+    doi = {10.1145/3360307}
+}
+
+@software{hennigan2020_haiku_github,
+    author = {Tom Hennigan and Trevor Cai and Tamara Norman and Igor Babuschkin},
+    title = {{H}aiku: {S}onnet for {JAX}},
+    url = {http://github.com/deepmind/dm-haiku},
+    version = {0.0.3},
+    year = {2020},
+}
+
+@misc{celli2020_noregret_efce,
+    title={No-regret learning dynamics for extensive-form correlated and coarse correlated equilibria},
+    author={Andrea Celli and Alberto Marchesi and Gabriele Farina and Nicola Gatti},
+    year={2020},
+    eprint={2004.00603},
+    archivePrefix={arXiv},
+    primaryClass={cs.GT}
+}
+
+@inproceedings{graepel2020_multiagent_paradigm,
+    author = {Graepel, Thore},
+    title = {Automatic Curricula in Deep Multi-Agent Reinforcement Learning},
+    year = {2020},
+    isbn = {9781450375184},
+    publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+    address = {Richland, SC},
+    abstract = {Multi-agent systems are emerging as a crucial element in our pursuit of designing and building intelligent systems. In order to succeed in the real world artificial agents must be able to cooperate, communicate, and reason about other agents' beliefs, intentions and behaviours. Furthermore, as system designers we need to think about composing intelligent systems from intelligent subsystems, a multi-agent approach inspired by the observation that intelligent agents like organisations or governments are composed of other agents. Last but not least, as a product of evolution intelligence did not emerge in isolation, but as a group phenomenon. Hence, it seems plausible that learning agents require interaction with other agents to develop intelligence. In his talk, he will discuss the exciting role that deep multi-agent reinforcement learning can play in the design and training of intelligent agents. In particular, training RL agents in interaction with each other can lead to the emergence of an automatic learning curriculum: From the perspective of each learning agent, the evolving behaviours of the other learning agents constitute a challenging environment dynamics and pose ever evolving tasks. He will present three case studies of deep multi-agent RL with auto-curricula: (i)~Learning to play board games at master level with AlphaZero, (ii)~Learning to play the game of Capture-The-Flag in 3d environments, and (iii)~Learning to cooperate in social dilemmas.},
+    booktitle = {Proceedings of the 19th International Conference on Autonomous Agents and MultiAgent Systems},
+    pages = {2},
+    numpages = {1},
+    location = {Auckland, New Zealand},
+    series = {AAMAS '20}
+}
+
+@article{schrittwieser2020_muzero_arxiv,
+    author    = {Julian Schrittwieser and
+               Ioannis Antonoglou and
+               Thomas Hubert and
+               Karen Simonyan and
+               Laurent Sifre and
+               Simon Schmitt and
+               Arthur Guez and
+               Edward Lockhart and
+               Demis Hassabis and
+               Thore Graepel and
+               Timothy P. Lillicrap and
+               David Silver},
+    title     = {Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model},
+    journal   = {CoRR},
+    volume    = {abs/1911.08265},
+    year      = {2019},
+    url       = {http://arxiv.org/abs/1911.08265},
+    eprinttype = {arXiv},
+    eprint    = {1911.08265},
+    timestamp = {Mon, 02 Dec 2019 17:48:37 +0100},
+    biburl    = {https://dblp.org/rec/journals/corr/abs-1911-08265.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+# URL: https://science.sciencemag.org/content/365/6456/885
+# PDF: https://science.sciencemag.org/content/365/6456/885.full.pdf
+#
+#
+@article{brown2019_poker,
+	author = {Brown, Noam and Sandholm, Tuomas},
+	title = {Superhuman {AI} for multiplayer poker},
+	volume = {365},
+	number = {6456},
+	pages = {885--890},
+	year = {2019},
+	doi = {10.1126/science.aay2400},
+	publisher = {American Association for the Advancement of Science},
+	issn = {0036-8075},
+	journal = {Science}
+}
+
+@article{rowland2019_multiagent_incomplete_evaluation,
+    title={Multiagent evaluation under incomplete information},
+    author={Rowland, Mark and Omidshafiei, Shayegan and Tuyls, Karl and Perolat, Julien and Valko, Michal and Piliouras, Georgios and Munos, Remi},
+    journal={arXiv preprint arXiv:1909.09849},
+    year={2019}
+}
+
+@misc{farina2019_coarse_efg,
+    title={Coarse Correlation in Extensive-Form Games},
+    author={Gabriele Farina and Tommaso Bianchi and Tuomas Sandholm},
+    year={2019},
+    eprint={1908.09893},
+    archivePrefix={arXiv},
+    primaryClass={cs.GT}
+}
+
+@article{balduzzi2019_rectifiednash,
+    author    = {David Balduzzi and
+               Marta Garnelo and
+               Yoram Bachrach and
+               Wojciech M. Czarnecki and
+               Julien P{\'{e}}rolat and
+               Max Jaderberg and
+               Thore Graepel},
+    title     = {Open-ended Learning in Symmetric Zero-sum Games},
+    journal   = {CoRR},
+    volume    = {abs/1901.08106},
+    year      = {2019},
+    url       = {http://arxiv.org/abs/1901.08106},
+    archivePrefix = {arXiv},
+    eprint    = {1901.08106},
+}
+
+@manual{mosek2019_optimization,
+    author = "MOSEK ApS",
+    title = "MOSEK",
+    year = 2019,
+    url = "http://docs.mosek.com"
+ }
+
+@inproceedings{balduzzi2019_open,
+    title={Open-ended learning in symmetric zero-sum games},
+    author={Balduzzi, David and Garnelo, Marta and Bachrach, Yoram and Czarnecki, Wojciech and Perolat, Julien and Jaderberg, Max and Graepel, Thore},
+    booktitle={International Conference on Machine Learning},
+    pages={434--443},
+    year={2019},
+    organization={PMLR}
+}
+
+@inproceedings{kash2019_combining,
+    title={Combining no-regret and {Q}-learning},
+    author={Kash, Ian A and Sullins, Michael and Hofmann, Katja},
+    month={May},
+    booktitle={Proceedings of The Nineteenth International Conference on Autonomous Agents and Multi-Agent Systems},
+    organization={International Foundation for Autonomous Agents and Multiagent Systems},
+    year={2020}
+}
+
+@misc{celli2019_multiplayer,
+    title={Learning to Correlate in Multi-Player General-Sum Sequential Games},
+    author={Andrea Celli and Alberto Marchesi and Tommaso Bianchi and Nicola Gatti},
+    year={2019},
+    eprint={1910.06228},
+    archivePrefix={arXiv},
+    primaryClass={cs.GT}
+}
+
+# URL: https://www.pnas.org/content/116/52/26435
+# PDF: https://www.pnas.org/content/116/52/26435.full.pdf
+#
+@article {attia2019_stochastic_game_value,
+	author = {Attia, Luc and Oliu-Barton, Miquel},
+	title = {A formula for the value of a stochastic game},
+	volume = {116},
+	number = {52},
+	pages = {26435--26443},
+	year = {2019},
+	publisher = {National Academy of Sciences},
+	abstract = {Stochastic games were introduced by the Nobel Memorial Prize winner Lloyd Shapley in 1953 to model dynamic interactions in which the environment changes in response to the players{\textquoteright} behavior. The theory of stochastic games and its applications have been studied in several scientific disciplines, including economics, operations research, evolutionary biology, and computer science. In addition, mathematical tools that were used and developed in the study of stochastic games are used by mathematicians and computer scientists in other fields. This paper contributes to the theory of stochastic games by providing a tractable formula for the value of finite competitive stochastic games. This result settles a major open problem which remained unsolved for nearly 40 y. In 1953, Lloyd Shapley defined the model of stochastic games, which were the first general dynamic model of a game to be defined, and proved that competitive stochastic games have a discounted value. In 1982, Jean-Fran{\c c}ois Mertens and Abraham Neyman proved that competitive stochastic games admit a robust solution concept, the value, which is equal to the limit of the discounted values as the discount rate goes to 0. Both contributions were published in PNAS. In the present paper, we provide a tractable formula for the value of competitive stochastic games.},
+	issn = {0027-8424},
+	journal = {Proceedings of the National Academy of Sciences}
+}
+
+@article{openai2019_dota,
+    author    = {Christopher Berner and
+               Greg Brockman and
+               Brooke Chan and
+               Vicki Cheung and
+               Przemyslaw Debiak and
+               Christy Dennison and
+               David Farhi and
+               Quirin Fischer and
+               Shariq Hashme and
+               Christopher Hesse and
+               Rafal J{\'{o}}zefowicz and
+               Scott Gray and
+               Catherine Olsson and
+               Jakub Pachocki and
+               Michael Petrov and
+               Henrique Pond{\'{e}} de Oliveira Pinto and
+               Jonathan Raiman and
+               Tim Salimans and
+               Jeremy Schlatter and
+               Jonas Schneider and
+               Szymon Sidor and
+               Ilya Sutskever and
+               Jie Tang and
+               Filip Wolski and
+               Susan Zhang},
+    title     = {Dota 2 with Large Scale Deep Reinforcement Learning},
+    journal   = {CoRR},
+    volume    = {abs/1912.06680},
+    year      = {2019},
+    url       = {http://arxiv.org/abs/1912.06680},
+    archivePrefix = {arXiv},
+    eprint    = {1912.06680},
+    timestamp = {Wed, 03 Jun 2020 10:56:28 +0200},
+    biburl    = {https://dblp.org/rec/journals/corr/abs-1912-06680.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+# Has EFCE, EFCCE, and NFCCE benchmarks on Sheriff game.
+@misc{farina2019_coarse,
+    title={Coarse Correlation in Extensive-Form Games}, 
+    author={Gabriele Farina and Tommaso Bianchi and Tuomas Sandholm},
+    year={2019},
+    eprint={1908.09893},
+    archivePrefix={arXiv},
+    primaryClass={cs.GT}
+}
+
+# Introduces the Sheriff game.
+# Introduces the Battleship game.
+@inproceedings{farina2019_sheriff,
+   title={Correlation in Extensive-Form Games: Saddle-Point Formulation and Benchmarks},
+   author={Farina, Gabriele and Ling, Chun Kai and Fang, Fei and Sandholm, Tuomas},
+   booktitle={Conference on Neural Information Processing Systems (NeurIPS)},
+   year={2019}
+ }
+
+@article{omidshafiei2019_alpharank,
+    author  = {Omidshafiei, Shayegan and Papadimitriou, Christos and Piliouras, Georgios and Tuyls, Karl and Rowland, Mark and Lespiau, Jean-Baptiste and Czarnecki, Wojciech M. and Lanctot, Marc and Perolat, Julien and Munos, Remi},
+    title   = {$\alpha$-Rank: Multi-Agent Evaluation by Evolution},
+    journal = {Scientific Reports},
+    year    = {2019},
+    volume  = {9},
+    number  = {1},
+    pages   = {9937},
+}
+
+@inproceedings{kaur2019_ent_review,
+    author = {Kaur, Manpreet and Buttar, Gurcharan},
+    year = {2019},
+    month = {08},
+    pages = {},
+    title = {A Brief Review on Different Measures of Entropy}
+}
+
+@article{jaderberg2019_ctf,
+    author = {Jaderberg, Max and Czarnecki, Wojciech and Dunning, Iain and Marris, Luke and Lever, Guy and Castañeda, Antonio and Beattie, Charles and Rabinowitz, Neil and Morcos, Ari and Ruderman, Avraham and Sonnerat, Nicolas and Green, Tim and Deason, Louise and Leibo, Joel and Silver, David and Hassabis, Demis and Kavukcuoglu, Koray and Graepel, Thore},
+    year = {2019},
+    month = {05},
+    title = {Human-level performance in 3D multiplayer games with population-based reinforcement learning},
+    journal={Science},
+    volume={364},
+    number={6443},
+    pages={859--865},
+    publisher={American Association for the Advancement of Science}
+}
+
+@article{lanctot2019_openspiel,
+    title     = {{OpenSpiel}: {A} Framework for Reinforcement Learning in Games},
+    author    = {Marc Lanctot and Edward Lockhart and Jean-Baptiste Lespiau and Vinicius Zambaldi and Satyaki Upadhyay and Julien P\'{e}rolat and Sriram Srinivasan and Finbarr Timbers and Karl Tuyls and Shayegan Omidshafiei and Daniel Hennes and Dustin Morrill and Paul Muller and Timo Ewalds and Ryan Faulkner and J\'{a}nos Kram\'{a}r and Bart De Vylder and Brennan Saeta and James Bradbury and David Ding and Sebastian Borgeaud and Matthew Lai and Julian Schrittwieser and Thomas Anthony and Edward Hughes and Ivo Danihelka and Jonah Ryan-Davis},
+    year      = {2019},
+    journal   = {CoRR},
+}
+
+@misc{leibo2019_autocurricula,
+    title={Autocurricula and the Emergence of Innovation from Social Interaction: {A} Manifesto for Multi-Agent Intelligence Research}, 
+    author={Joel Z. Leibo and Edward Hughes and Marc Lanctot and Thore Graepel},
+    year={2019},
+    eprint={1903.00742},
+    archivePrefix={arXiv},
+    primaryClass={cs.AI}
+}
+
+@article{vinyals2019_starcraft,
+    author = {Vinyals, Oriol and Babuschkin, Igor and Czarnecki, Wojciech and Mathieu, Michaël and Dudzik, Andrew and Chung, Junyoung and Choi, David and Powell, Richard and Ewalds, Timo and Georgiev, Petko and Oh, Junhyuk and Horgan, Dan and Kroiss, Manuel and Danihelka, Ivo and Huang, Aja and Sifre, Laurent and Cai, Trevor and Agapiou, John and Jaderberg, Max and Silver, David},
+    year = {2019},
+    month = {11},
+    pages = {},
+    title = {Grandmaster level in {StarCraft II} using multi-agent reinforcement learning},
+    volume = {575},
+    journal = {Nature},
+}
+
+@incollection{pytorch2019_pytorch,
+    title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+    author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+    booktitle = {Advances in Neural Information Processing Systems 32},
+    editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+    pages = {8024--8035},
+    year = {2019},
+    publisher = {Curran Associates, Inc.},
+    url = {http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf}
+}
+
+@article{openai2019_hideandseek,
+    author    = {Bowen Baker and
+               Ingmar Kanitscheider and
+               Todor M. Markov and
+               Yi Wu and
+               Glenn Powell and
+               Bob McGrew and
+               Igor Mordatch},
+    title     = {Emergent Tool Use From Multi-Agent Autocurricula},
+    journal   = {CoRR},
+    volume    = {abs/1909.07528},
+    year      = {2019},
+    url       = {http://arxiv.org/abs/1909.07528},
+    eprinttype = {arXiv},
+    eprint    = {1909.07528},
+    timestamp = {Wed, 29 Jul 2020 10:46:01 +0200},
+}
+
+@article{brown2019_superhuman_poker,
+	author = {Brown, Noam and Sandholm, Tuomas},
+	title = {Superhuman {AI} for multiplayer poker},
+	volume = {365},
+	number = {6456},
+	pages = {885--890},
+	year = {2019},
+	doi = {10.1126/science.aay2400},
+	publisher = {American Association for the Advancement of Science},
+	issn = {0036-8075},
+	journal = {Science}
+}
+
+@article{lockhart2019_explotability_descent,
+    author    = {Edward Lockhart and
+               Marc Lanctot and
+               Julien P{\'{e}}rolat and
+               Jean{-}Baptiste Lespiau and
+               Dustin Morrill and
+               Finbarr Timbers and
+               Karl Tuyls},
+    title     = {Computing Approximate Equilibria in Sequential Adversarial Games by Exploitability Descent},
+    journal   = {CoRR},
+    volume    = {abs/1903.05614},
+    year      = {2019},
+}
+
+@inproceedings{abbasiyadkori2019_politex,
+    author = {Yasin Abbasi-Yadkori and Peter Bartlett and Kush Bhatia and Nevena Lazic and Csaba Szepesvari and Gellert Weisz},
+    booktitle = {Proceedings of the 36th International Conference on Machine Learning},
+    series = {PMLR},
+    title = {POLITEX: Regret Bounds for Policy Iteration using Expert Prediction},
+    volume = 97,
+    pages = {3692--3702},
+    year = 2019,
+}
+
+@article{omidshafiei2019_neural_replicator_dynamics,
+    author    = {Shayegan Omidshafiei and
+               Daniel Hennes and
+               Dustin Morrill and
+               R{\'{e}}mi Munos and
+               Julien P{\'{e}}rolat and
+               Marc Lanctot and
+               Audrunas Gruslys and
+               Jean{-}Baptiste Lespiau and
+               Karl Tuyls},
+    title     = {Neural Replicator Dynamics},
+    journal   = {CoRR},
+    volume    = {abs/1906.00190},
+    year      = {2019},
+    url       = {http://arxiv.org/abs/1906.00190},
+    archivePrefix = {arXiv},
+    eprint    = {1906.00190},
+    timestamp = {Thu, 13 Jun 2019 13:36:00 +0200},
+    biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1906-00190},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{hernandezleal2019_marl_survey,
+    title = {A survey and critique of multiagent deep reinforcement learning},
+    author = {Pablo Hernandez-Leal and Bilal Kartal and Matthew E. Taylor},
+    year = 2019,
+    journal = {Autonomous Agents and Multi-Agent Systems volume},
+    volume = 33,
+    pages = {750--797}
+}
+
+@inproceedings{brown19_discounted_regret_minimization,
+    title = {Solving imperfect-information games via discounted
+    regret minimization},
+    author = {Noam Brown and Tuomas Sandholm},
+    booktitle = {Proceedings of the The Thirty-Third AAAI Conference on Artificial Intelligence},
+    year = 2019,
+}
+
+@article{kovarik2019_fog,
+    author    = {Vojtech Kovar{\'{\i}}k and
+               Martin Schmid and
+               Neil Burch and
+               Michael Bowling and
+               Viliam Lis{\'{y}}},
+    title     = {Rethinking Formal Models of Partially Observable Multiagent Decision
+               Making},
+    journal   = {CoRR},
+    volume    = {abs/1906.11110},
+    year      = {2019},
+    url       = {http://arxiv.org/abs/1906.11110},
+}
+
+@inproceedings{schmid2019_VRMCCFR,
+    title = {Variance Reduction in Monte Carlo Counterfactual Regret Minimization ({VR-MCCFR}) for Extensive Form Games using Baselines},
+    author = {Martin Schmid and Neil Burch and Marc Lanctot and Matej Moravcik and Rudolf Kadlec and Michael Bowling},
+    booktitle = {Proceedings of the The Thirty-Third AAAI Conference on Artificial Intelligence},
+    year = {2019},
+}
+
+@article{brown2018_deep_cfr,
+    author    = {Noam Brown and Adam Lerer and Sam Gross and Tuomas Sandholm},
+    title     = {Deep Counterfactual Regret Minimization},
+    journal   = {CoRR},
+    volume    = {abs/1811.00164},
+    year      = {2018},
+}
+
+@inproceedings{jin2018_regret_minimization,
+    author    = {Peter H. Jin and Sergey Levine and Kurt Keutzer},
+    title     = {Regret Minimization for Partially Observable Deep Reinforcement Learning},
+    booktitle = {ICML},
+    year      = {2018},
+}
+
+@article{agrawal2018_cvxpy,
+    author  = {Agrawal, Akshay and Verschueren, Robin and Diamond, Steven and Boyd, Stephen},
+    title   = {A rewriting system for convex optimization problems},
+    journal = {Journal of Control and Decision},
+    year    = {2018},
+    volume  = {5},
+    number  = {1},
+    pages   = {42-60},
+}
+
+@article{ling2018_qre_normal_form_network,
+    author    = {Chun Kai Ling and
+               Fei Fang and
+               J. Zico Kolter},
+    title     = {What game are we playing? {End-to-end} learning in normal and extensive form games},
+    journal   = {CoRR},
+    volume    = {abs/1805.02777},
+    year      = {2018},
+    url       = {http://arxiv.org/abs/1805.02777},
+    eprinttype = {arXiv},
+    eprint    = {1805.02777},
+    timestamp = {Mon, 13 Aug 2018 16:47:26 +0200},
+    biburl    = {https://dblp.org/rec/journals/corr/abs-1805-02777.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{brown2018_depth_limited,
+    author    = {Noam Brown and
+               Tuomas Sandholm and
+               Brandon Amos},
+    title     = {Depth-Limited Solving for Imperfect-Information Games},
+    journal   = {CoRR},
+    volume    = {abs/1805.08195},
+    year      = {2018},
+}
+
+@inproceedings{srinivasan2018_rpg,
+    title =         {Actor-Critic Policy Optimization in Partially Observable Multiagent Environments},
+    author =        {Sriram Srinivasan and Marc Lanctot and Vinicius Zambaldi and Julien P\'{e}rolat and Karl Tuyls and R\'{e}mi Munos and Michael Bowling},
+    booktitle =     {Advances in Neural Information Processing Systems (NeurIPS)},
+    year =          {2018},
+}
+
+@paper{burch2018_aivat,
+	author = {Neil Burch and Martin Schmid and Matej Moravcik and Dustin Morill and Michael Bowling},
+	title = {{AIVAT}: {A} New Variance Reduction Technique for Agent Evaluation in Imperfect Information Games},
+	conference = {AAAI Conference on Artificial Intelligence},
+	year = {2018},
+	keywords = {game theory; variance reduction; poker},
+	url = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17316/15779}
+}
+
+@book{suttonbarto2018_intro,
+    author = {R. Sutton and A. Barto},
+    title = {Reinforcement Learning: An Introduction},
+    edition = {2nd},
+    year = 2018,
+    publisher = {{MIT} Press},
+}
+
+@inproceedings{bansal2018_emergent,
+    author    = {Trapit Bansal and
+               Jakub Pachocki and
+               Szymon Sidor and
+               Ilya Sutskever and
+               Igor Mordatch},
+    title     = {Emergent Complexity via Multi-Agent Competition},
+    booktitle = {Proceedings of the Sixth International Conference on Learning Representations},
+    year      = {2018},
+}
+
+@inproceedings{foerster2018_opponent_learning,
+    author    = {Jakob N. Foerster and
+               Richard Y. Chen and
+               Maruan Al{-}Shedivat and
+               Shimon Whiteson and
+               Pieter Abbeel and
+               Igor Mordatch},
+    title     = {Learning with Opponent-Learning Awareness},
+    booktitle = {Proceedings of the International Conference on Autonomous Agents and Multiagent Systems (AAMAS)},
+    year      = {2017},
+}
+
+@article{wu2018_policy_gradient,
+    author    = {Cathy Wu and
+               Aravind Rajeswaran and
+               Yan Duan and
+               Vikash Kumar and
+               Alexandre M. Bayen and
+               Sham Kakade and
+               Igor Mordatch and
+               Pieter Abbeel},
+    title     = {Variance Reduction for Policy Gradient with Action-Dependent Factorized
+               Baselines},
+    journal   = {CoRR},
+    volume    = {abs/1803.07246},
+    year      = {2018},
+    url       = {http://arxiv.org/abs/1803.07246},
+}
+
+@article{medina2018_rudder,
+    author = {Jose A. Arjona-Medina and Michael Gillhofer and Michael Widrich and Thomas Unterthiner and Sepp Hochreiter},
+    title = {RUDDER: Return Decomposition for Delayed Rewards},
+    journal   = {CoRR},
+    volume    = {abs/1806.07857},
+    year      = {2018},
+    url       = {http://arxiv.org/abs/1806.07857},
+}
+
+@article{li2018_dncfr,
+    author    = {Hui Li and
+               Kailiang Hu and
+               Zhibang Ge and
+               Tao Jiang and
+               Yuan Qi and
+               Le Song},
+    title     = {Double Neural Counterfactual Regret Minimization},
+    journal   = {CoRR},
+    volume    = {abs/1812.10607},
+    year      = {2018},
+}
+
+@misc{matteo2018_popart_arxiv,
+    url = {https://arxiv.org/abs/1809.04474},
+    author = {Hessel, Matteo and Soyer, Hubert and Espeholt, Lasse and Czarnecki, Wojciech and Schmitt, Simon and van Hasselt, Hado},
+    keywords = {Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {Multi-task Deep Reinforcement Learning with PopArt},
+    publisher = {arXiv},
+    year = {2018},
+    copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@article{agarap2018_relu,
+    title={Deep learning using rectified linear units (relu)},
+    author={Agarap, Abien Fred},
+    journal={arXiv preprint arXiv:1803.08375},
+    year={2018}
+}
+
+@article{oikonomou2018_linear_shannon,
+    author = {Oikonomou, Thomas and Bagci, G.},
+    year = {2018},
+    month = {03},
+    pages = {},
+    title = {Entropy Maximization with Linear Constraints: The Uniqueness of the Shannon Entropy}
+}
+
+@article{liu2018_action_dependent_control,
+    title={Action-dependent control variates for policy optimization via stein identity},
+    author={Liu, Hao and Feng, Yihao and Mao, Yi and Zhou, Dengyong and Peng, Jian and Liu, Qiang},
+    year={2018}
+}
+
+@inproceedings{balduzzi2018_nashaverage,
+    author = {Balduzzi, David and Tuyls, Karl and Perolat, Julien and Graepel, Thore},
+    title = {Re-Evaluating Evaluation},
+    year = {2018},
+    publisher = {Curran Associates Inc.},
+    address = {Red Hook, NY, USA},
+    booktitle = {Proceedings of the 32nd International Conference on Neural Information Processing Systems},
+    pages = {3272-3283},
+    numpages = {12},
+    location = {Montreal, Canada},
+    series = {NIPS}
+}
+
+@article{arjona2018_rudder,
+    title={RUDDER: Return Decomposition for Delayed Rewards},
+    author={Arjona-Medina, Jose A and Gillhofer, Michael and Widrich, Michael and Unterthiner, Thomas and Hochreiter, Sepp},
+    journal={arXiv preprint arXiv:1806.07857},
+    year={2018}
+}
+
+@software{jax2018_jax,
+    author = {James Bradbury and Roy Frostig and Peter Hawkins and Matthew James Johnson and Chris Leary and Dougal Maclaurin and George Necula and Adam Paszke and Jake Vander{P}las and Skye Wanderman-{M}ilne and Qiao Zhang},
+    title = {{JAX}: composable transformations of {P}ython+{N}um{P}y programs},
+    url = {http://github.com/google/jax},
+    version = {0.2.5},
+    year = {2018},
+}
+
+@article{brown2018_linear_cfr,
+    author    = {Noam Brown and
+               Tuomas Sandholm},
+    title     = {Solving Imperfect-Information Games via Discounted Regret Minimization},
+    journal   = {CoRR},
+    volume    = {abs/1809.04040},
+    year      = {2018},
+    url       = {http://arxiv.org/abs/1809.04040},
+    archivePrefix = {arXiv},
+    eprint    = {1809.04040},
+    timestamp = {Fri, 05 Oct 2018 11:34:52 +0200},
+    biburl    = {https://dblp.org/rec/journals/corr/abs-1809-04040.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{espeholt2018_impala,
+    title={IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures},
+    author={Lasse Espeholt and Hubert Soyer and Remi Munos and Karen Simonyan and Volodymir Mnih and Tom Ward and Yotam Doron and Vlad Firoiu and Tim Harley and Iain Dunning and Shane Legg and Koray Kavukcuoglu},
+    year={2018},
+    eprint={1802.01561},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@article{tucker2018_mirage,
+    title={The mirage of action-dependent baselines in reinforcement learning},
+    author={Tucker, George and Bhupatiraju, Surya and Gu, Shixiang and Turner, Richard E and Ghahramani, Zoubin and Levine, Sergey},
+    journal={arXiv preprint arXiv:1802.10031},
+    year={2018}
+}
+
+@inproceedings{cohen2018_spherical_cnns_iclr,
+    title={Spherical {CNN}s},
+    author={Taco S. Cohen and Mario Geiger and Jonas Köhler and Max Welling},
+    booktitle={International Conference on Learning Representations},
+    year={2018},
+    url={https://openreview.net/forum?id=Hkbd5xZRb},
+}
+
+@article{silver2018_alphazero,
+    author = {David Silver  and Thomas Hubert  and Julian Schrittwieser  and Ioannis Antonoglou  and Matthew Lai  and Arthur Guez  and Marc Lanctot  and Laurent Sifre  and Dharshan Kumaran  and Thore Graepel  and Timothy Lillicrap  and Karen Simonyan  and Demis Hassabis },
+    title = {A general reinforcement learning algorithm that masters chess, shogi, and {Go} through self-play},
+    journal = {Science},
+    volume = {362},
+    number = {6419},
+    pages = {1140-1144},
+    year = {2018},
+    doi = {10.1126/science.aar6404},
+    URL = {https://www.science.org/doi/abs/10.1126/science.aar6404},
+    eprint = {https://www.science.org/doi/pdf/10.1126/science.aar6404},
+    abstract = {Computers can beat humans at increasingly complex games, including chess and Go. However, these programs are typically constructed for a particular game, exploiting its properties, such as the symmetries of the board on which it is played. Silver et al. developed a program called AlphaZero, which taught itself to play Go, chess, and shogi (a Japanese version of chess) (see the Editorial, and the Perspective by Campbell). AlphaZero managed to beat state-of-the-art programs specializing in these three games. The ability of AlphaZero to adapt to various game rules is a notable step toward achieving a general game-playing system. Science, this issue p. 1140; see also pp. 1087 and 1118 AlphaZero teaches itself to play three different board games and beats state-of-the-art programs in each. The game of chess is the longest-studied domain in the history of artificial intelligence. The strongest programs are based on a combination of sophisticated search techniques, domain-specific adaptations, and handcrafted evaluation functions that have been refined by human experts over several decades. By contrast, the AlphaGo Zero program recently achieved superhuman performance in the game of Go by reinforcement learning from self-play. In this paper, we generalize this approach into a single AlphaZero algorithm that can achieve superhuman performance in many challenging games. Starting from random play and given no domain knowledge except the game rules, AlphaZero convincingly defeated a world champion program in the games of chess and shogi (Japanese chess), as well as Go.}
+}
+
+@article{moravcik2017_deepstack,
+	author = {Matej Morav{\v c}{\'\i}k and Martin Schmid et al.},
+	title = {{DeepStack}: Expert-level artificial intelligence in heads-up no-limit poker},
+	year = {2017},
+	publisher = {American Association for the Advancement of Science},
+	journal = {Science},
+    volume = 358,
+    number = 6362
+}
+
+@article{brown2017_libratus,
+    author = {Noam Brown and Tuomas Sandholm},
+    title = {Superhuman {AI} for heads-up no-limit poker: {L}ibratus beats top professionals},
+    year = 2017,
+    month = {December},
+    journal = {Science},
+    volume = 360,
+    number = 6385
+}
+
+@article{schulman2017_proximal,
+    title={Proximal policy optimization algorithms},
+    author={Schulman, John and Wolski, Filip and Dhariwal, Prafulla and Radford, Alec and Klimov, Oleg},
+    journal={arXiv preprint arXiv:1707.06347},
+    year={2017}
+}
+
+@article{lerer2017_cooperation,
+    author    = {Adam Lerer and
+               Alexander Peysakhovich},
+    title     = {Maintaining cooperation in complex social dilemmas using deep reinforcement learning},
+    journal   = {CoRR},
+    volume    = {abs/1707.01068},
+    year      = {2017},
+    url       = {http://arxiv.org/abs/1707.01068},
+    archivePrefix = {arXiv},
+    eprint    = {1707.01068},
+}
+
+@phdthesis{burch2017_time,
+    title={Time and Space: Why Imperfect Information Games are Hard},
+    author={Burch, Neil},
+    year={2017},
+    school={University of Alberta}
+}
+
+@inproceedings{
+    cohen2017_steerable_cnns_iclr,
+    title={Steerable {CNN}s},
+    author={Taco S. Cohen and Max Welling},
+    booktitle={International Conference on Learning Representations},
+    year={2017},
+    url={https://openreview.net/forum?id=rJQKYt5ll}
+}
+
+@article{sundararajan2017_axiomatic_camera_arxiv,
+    author    = {Mukund Sundararajan and
+               Ankur Taly and
+               Qiqi Yan},
+    title     = {Axiomatic Attribution for Deep Networks},
+    journal   = {CoRR},
+    volume    = {abs/1703.01365},
+    year      = {2017},
+    url       = {http://arxiv.org/abs/1703.01365},
+    archivePrefix = {arXiv},
+    eprint    = {1703.01365},
+    timestamp = {Mon, 13 Aug 2018 16:48:32 +0200},
+    biburl    = {https://dblp.org/rec/journals/corr/SundararajanTY17.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@incollection{lanctot2017_psro,
+    title =         {A Unified Game-Theoretic Approach to Multiagent Reinforcement Learning},
+    author =        {Marc Lanctot and Vinicius Zambaldi and Audrunas Gruslys and Angeliki Lazaridou and Karl Tuyls and Julien Perolat and David Silver and Thore Graepel},
+    booktitle =     {NIPS},
+    year =          {2017},
+}
+
+@article{jin2017_regret,
+    title={Regret minimization for partially observable deep reinforcement learning},
+    author={Jin, Peter and Keutzer, Kurt and Levine, Sergey},
+    journal={arXiv preprint arXiv:1710.11424},
+    year={2017}
+}
+
+@inproceedings{wang2017_ent_gini_uni,
+    author = {Y. {Wang} and S. {Xia}},
+    booktitle = {2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+    title = {Unifying attribute splitting criteria of decision trees by {T}sallis entropy}, 
+    year = {2017},
+    volume = {},
+    number = {},
+    pages = {2507-2511},
+}
+
+@misc{hernandezleal2017_marl_survey,
+      title={A Survey of Learning in Multiagent Environments: Dealing with Non-Stationarity}, 
+      author={Pablo Hernandez-Leal and Michael Kaisers and Tim Baarslag and Enrique Munoz de Cote},
+      year={2017},
+      eprint={1707.09183},
+      archivePrefix={arXiv},
+      primaryClass={cs.MA}
+}
+
+@inproceedings{vaswani2017_attention_is_all_you_need_transformers,
+    author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, \L ukasz and Polosukhin, Illia},
+    booktitle = {Advances in Neural Information Processing Systems},
+    editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+    pages = {},
+    publisher = {Curran Associates, Inc.},
+    title = {Attention is All you Need},
+    url = {https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf},
+    volume = {30},
+    year = {2017}
+}
+
+@article{brandt2017_maximal_lottery,
+    title = {{Fishburn’s Maximal Lotteries}},
+    journal = {{Workshop on Decision Making and Contest Theory}},
+    author = {Felix Brandt},
+    month = {1},
+    year = {2017}
+}
+
+@article{deligkas2017_polymatrix_nash_equilibria,
+      title={Computing approximate {Nash} equilibria in polymatrix games},
+      author={Deligkas, Argyrios and Fearnley, John and Savani, Rahul and Spirakis, Paul},
+      journal={Algorithmica},
+      volume={77},
+      number={2},
+      pages={487--514},
+      year={2017},
+      publisher={Springer}
+}
+
+@phdthesis{johanson2016_phdthesis,
+    author={Michael Bradley Johanson},
+    title={Robust Strategies and Counter-Strategies: From Superhuman to Optimal Play},
+    school={University of Alberta},
+    year={2016},
+    note={\url{http://johanson.ca/publications/theses/2016-johanson-phd-thesis/2016-johanson-phd-thesis.pdf}}
+}
+
+@article{heinrich2016_nfsp,
+    author    = {Johannes Heinrich and David Silver},
+    title     = {Deep Reinforcement Learning from Self-Play in Imperfect-Information Games},
+    journal   = {CoRR},
+    volume    = {abs/1603.01121},
+    year      = {2016},
+}
+
+@article{lisy2016_nolimit,
+    author    = {Viliam Lis{\'{y}} and
+               Michael H. Bowling},
+    title     = {Eqilibrium Approximation Quality of Current No-Limit Poker Bots},
+    journal   = {CoRR},
+    volume    = {abs/1612.07547},
+    year      = {2016},
+    url       = {http://arxiv.org/abs/1612.07547},
+}
+
+@inproceedings{mnih2016_asynchronous,
+    title     = {Asynchronous Methods for Deep Reinforcement Learning},
+    author    = {Mnih, Volodymyr and Badia, Adri\`{a} Puigdom\`{e}nech and Mirza, Mehdi and Graves, Alex and Lillicrap, Timothy P. and Harley, Tim and        Silver, David and Kavukcuoglu, Koray},
+    booktitle = {Proceedings of the 33rd International Conference on Machine Learning (ICML)},
+    year      = {2016},
+    pages     = {1928--1937},
+}
+
+@inproceedings{cohen2016_group_equivariant_cnns_icml,
+    title = 	 {Group Equivariant Convolutional Networks},
+    author = 	 {Cohen, Taco and Welling, Max},
+    booktitle = 	 {Proceedings of The 33rd International Conference on Machine Learning},
+    pages = 	 {2990--2999},
+    year = 	 {2016},
+    editor = 	 {Balcan, Maria Florina and Weinberger, Kilian Q.},
+    volume = 	 {48},
+    series = 	 {Proceedings of Machine Learning Research},
+    address = 	 {New York, New York, USA},
+    month = 	 {20--22 Jun},
+    publisher =    {PMLR},
+    pdf = 	 {http://proceedings.mlr.press/v48/cohenc16.pdf},
+    url = 	 {https://proceedings.mlr.press/v48/cohenc16.html},
+    abstract = 	 {We introduce Group equivariant Convolutional Neural Networks (G-CNNs), a natural generalization of convolutional neural networks that reduces sample complexity by exploiting symmetries. G-CNNs use G-convolutions, a new type of layer that enjoys a substantially higher degree of weight sharing than regular convolution layers. G-convolutions increase the expressive capacity of the network without increasing the number of parameters. Group convolution layers are easy to use and can be implemented with negligible computational overhead for discrete groups generated by translations, reflections and rotations. G-CNNs achieve state of the art results on CIFAR10 and rotated MNIST.}
+}
+
+@article{shang2016_crelu,
+    author    = {Wenling Shang and
+               Kihyuk Sohn and
+               Diogo Almeida and
+               Honglak Lee},
+    title     = {Understanding and Improving Convolutional Neural Networks via Concatenated
+               Rectified Linear Units},
+    journal   = {CoRR},
+    volume    = {abs/1603.05201},
+    year      = {2016},
+    url       = {http://arxiv.org/abs/1603.05201},
+}
+
+@article{wang2016_acer,
+    abstract = {This paper presents an actor-critic deep reinforcement learning agent with experience replay that is stable, sample efficient, and performs remarkably well on challenging environments, including the discrete 57-game Atari domain and several continuous control problems. To achieve this, the paper introduces several innovations, including truncated importance sampling with bias correction, stochastic dueling network architectures, and a new trust region policy optimization method. },
+    author = {Wang, Ziyu and Bapst, Victor and Heess, Nicolas and Mnih, Volodymyr and Munos, Rémi and Kavukcuoglu, Koray and de Freitas, Nando},
+    biburl = {https://www.bibsonomy.org/bibtex/2f6fb87ed0695c5aa692d83fc7cab7794/lanteunis},
+    ee = {http://arxiv.org/abs/1611.01224},
+    journal = {CoRR},
+    keywords = {DRLAlgoComparison acer reinforcement_learning},
+    timestamp = {2019-12-16T21:10:37.000+0100},
+    title = {Sample Efficient Actor-Critic with Experience Replay.},
+    volume = {abs/1611.01224},
+    year = 2016
+}
+
+@misc{lecun2016_cherry,
+    author = {{LeCun, Yann}},
+    title = {NIPS},
+    url = {https://www.youtube.com/watch?v=Ount2Y4qxQo&t=1072s},
+    month = {12},
+    year = {2016}
+}
+
+@article{diamond2016_cvxpy,
+    author  = {Steven Diamond and Stephen Boyd},
+    title   = {{CVXPY}: {A} {P}ython-embedded modeling language for convex optimization},
+    journal = {Journal of Machine Learning Research},
+    year    = {2016},
+    volume  = {17},
+    number  = {83},
+    pages   = {1--5},
+}
+
+@inproceedings{hartford2016_equivariant_architecture,
+    author = {Hartford, Jason S and Wright, James R and Leyton-Brown, Kevin},
+    booktitle = {Advances in Neural Information Processing Systems},
+    editor = {D. Lee and M. Sugiyama and U. Luxburg and I. Guyon and R. Garnett},
+    pages = {},
+    publisher = {Curran Associates, Inc.},
+    title = {Deep Learning for Predicting Human Strategic Behavior},
+    url = {https://proceedings.neurips.cc/paper/2016/file/7eb3c8be3d411e8ebfab08eba5f49632-Paper.pdf},
+    volume = {29},
+    year = {2016}
+}
+
+@article{silver2016_mastering,
+    title={{Mastering the game of Go with deep neural networks and tree search}},
+    author={Silver, David and Huang, Aja and Maddison, Chris J and Guez, Arthur and Sifre, Laurent and Van Den Driessche, George and Schrittwieser, Julian and Antonoglou, Ioannis and Panneershelvam, Veda and Lanctot, Marc and others},
+    journal={nature},
+    volume={529},
+    number={7587},
+    pages={484--489},
+    year={2016},
+    publisher={Nature Publishing Group}
+}
+
+# Re-Trace.
+@misc{munos2016_safe,
+    title={Safe and Efficient Off-Policy Reinforcement Learning},
+    author={Rémi Munos and Tom Stepleton and Anna Harutyunyan and Marc G. Bellemare},
+    year={2016},
+    eprint={1606.02647},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@article{deligkas2016_empirical_polymatrix,
+    title={An empirical study on computing equilibria in polymatrix games},
+    author={Deligkas, Argyrios and Fearnley, John and Igwe, Tobenna Peter and Savani, Rahul},
+    journal={arXiv preprint arXiv:1602.06865},
+    year={2016}
+}
+
+@misc{rusu2016_policy_distillation,
+    title={Policy Distillation}, 
+    author={Andrei A. Rusu and Sergio Gomez Colmenarejo and Caglar Gulcehre and Guillaume Desjardins and James Kirkpatrick and Razvan Pascanu and Volodymyr Mnih and Koray Kavukcuoglu and Raia Hadsell},
+    year={2016},
+    eprint={1511.06295},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@misc{tensorflow2015_whitepaper,
+    title={ {TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems},
+    url={https://www.tensorflow.org/},
+    note={Software available from tensorflow.org},
+    author={
+    Mart\'{i}n~Abadi and
+    Ashish~Agarwal and
+    Paul~Barham and
+    Eugene~Brevdo and
+    Zhifeng~Chen and
+    Craig~Citro and
+    Greg~S.~Corrado and
+    Andy~Davis and
+    Jeffrey~Dean and
+    Matthieu~Devin and
+    Sanjay~Ghemawat and
+    Ian~Goodfellow and
+    Andrew~Harp and
+    Geoffrey~Irving and
+    Michael~Isard and
+    Yangqing Jia and
+    Rafal~Jozefowicz and
+    Lukasz~Kaiser and
+    Manjunath~Kudlur and
+    Josh~Levenberg and
+    Dandelion~Man\'{e} and
+    Rajat~Monga and
+    Sherry~Moore and
+    Derek~Murray and
+    Chris~Olah and
+    Mike~Schuster and
+    Jonathon~Shlens and
+    Benoit~Steiner and
+    Ilya~Sutskever and
+    Kunal~Talwar and
+    Paul~Tucker and
+    Vincent~Vanhoucke and
+    Vijay~Vasudevan and
+    Fernanda~Vi\'{e}gas and
+    Oriol~Vinyals and
+    Pete~Warden and
+    Martin~Wattenberg and
+    Martin~Wicke and
+    Yuan~Yu and
+    Xiaoqiang~Zheng},
+    year={2015},
+}
+
+@article{he2015_resnet_arvix,
+    author    = {Kaiming He and
+               Xiangyu Zhang and
+               Shaoqing Ren and
+               Jian Sun},
+    title     = {Deep Residual Learning for Image Recognition},
+    journal   = {CoRR},
+    volume    = {abs/1512.03385},
+    year      = {2015},
+    url       = {http://arxiv.org/abs/1512.03385},
+    eprinttype = {arXiv},
+    eprint    = {1512.03385},
+    timestamp = {Wed, 17 Apr 2019 17:23:45 +0200},
+    biburl    = {https://dblp.org/rec/journals/corr/HeZRS15.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{he2015_kaimingreluinitialization,
+  author    = {Kaiming He and
+               Xiangyu Zhang and
+               Shaoqing Ren and
+               Jian Sun},
+  title     = {Delving Deep into Rectifiers: Surpassing Human-Level Performance on
+               ImageNet Classification},
+  journal   = {CoRR},
+  volume    = {abs/1502.01852},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1502.01852},
+  eprinttype = {arXiv},
+  eprint    = {1502.01852},
+  timestamp = {Wed, 17 Apr 2019 17:23:45 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/HeZR015.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{schulman2015_trpo,
+    author    = {John Schulman and
+               Sergey Levine and
+               Philipp Moritz and
+               Michael I. Jordan and
+               Pieter Abbeel},
+    title     = {Trust Region Policy Optimization},
+    journal   = {CoRR},
+    volume    = {abs/1502.05477},
+    year      = {2015},
+}
+
+@misc{claudico2015_brains_vs_ai,
+    key = {Brains Vs. AI},
+    title = {Brains {Vs. AI}},
+    howpublished = {http://www.cs.cmu.edu/brains-vs-ai},
+    year = {2015}
+}
+
+@inproceedings{heinrich2015_fsp,
+    title =         {Fictitious Self-Play in Extensive-Form Games},
+    author =        {Johannes Heinrich and Marc Lanctot and David Silver},
+    booktitle =     {Proceedings of the 32nd International Conference on Machine Learning ({ICML} 2015)},
+    year =          {2015},
+}
+
+@article{bowling2015_poker,
+    Title = {Heads-up {L}imit {H}old'em {P}oker is Solved},
+    Author = "Michael Bowling and Neil Burch and Michael Johanson and Oskari Tammelin",
+    Journal = "Science",
+    Month = "January",
+    Year = "2015",
+    Volume = "347",
+    Number = "6218",
+    Pages = "145--149"
+}
+
+@inproceedings{tammelin2015_cfrplus,
+    Title = "Solving Heads-up Limit Texas Hold'em",
+    Author = "Oskari Tammelin and Neil Burch and Michael Johanson and Michael Bowling",
+    Booktitle = "Proceedings of the 24th International Joint Conference on Artificial Intelligence",
+    Year = "2015",
+}
+
+@inproceedings{waugh2015_solving,
+    author= {Kevin Waugh and Dustin Morrill and J. Andrew Bagnell and Michael Bowling},
+    title = {Solving Games with Functional Regret Estimation},
+    year = {2015},
+    booktitle= {Proceedings of the AAAI Conference on Artificial Intelligence},
+}
+
+@misc{wood2015_pokerfuse_claudico,
+    author = {Jocelyn Wood},
+    title = {Doug Polk and Team Beat Claudico to Win {\$}100,000 from Microsoft {\&} the Rivers Casino},
+    howpublished = {\textit{Pokerfuse,} http://pokerfuse.com/news/media-and-software/26854-doug-polk-and-team-beat-claudico-win-100000-microsoft/},
+    year = {2015}
+}
+
+@inproceedings{lisy2015_online,
+    title =         {Online {M}onte {C}arlo Counterfactual Regret Minimization for Search in Imperfect Information Games},
+    author =        {Viliam Lis\'{y} and Marc Lanctot and Michael Bowling},
+    booktitle =     {Proceedings of the Fourteenth International Conference on Autonomous Agents and Multi-Agent Systems ({AAMAS})},
+    year =          {2015},
+    pages =         {27--36},
+}
+
+@article{ioffe2015_batchnorm,
+  author    = {Sergey Ioffe and
+               Christian Szegedy},
+  title     = {Batch Normalization: Accelerating Deep Network Training by Reducing
+               Internal Covariate Shift},
+  journal   = {CoRR},
+  volume    = {abs/1502.03167},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1502.03167},
+  eprinttype = {arXiv},
+  eprint    = {1502.03167},
+  timestamp = {Mon, 13 Aug 2018 16:47:06 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/IoffeS15.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{bloembergen2015_evolutionary,
+    title = {Evolutionary Dynamics of Multi-Agent Learning: A Survey},
+    author = {Daan Bloembergen and Karl Tuyls and Daniel Hennes and Michael Kaisers},
+    journal = {Journal of Artificial Intelligence Research},
+    volume = 53,
+    year = 2015,
+    pages = {659--697},
+}
+
+@misc{silver2015_rl_lecture,
+    author = {David Silver},
+    title = {Lectures on Reinforcement Learning},
+    url = {https://www.davidsilver.uk/teaching/},
+    year = {2015}
+}
+
+@article{mnih2015_dqn_atari,
+    title = {Human-level control through deep reinforcement learning},
+    author = {Volodymyr Mnih and Koray Kavukcuoglu and David Silver and Andrei A. Rusu and Joel Veness and Marc G. Bellemare and Alex Graves and Martin Riedmiller and Andreas K. Fidjeland and Georg Ostrovski and Stig Petersen, Charles Beattie and Amir Sadik and Ioannis Antonoglou and Helen King and Dharshan Kumaran and Daan Wierstra and Shane Legg and Demis Hassabis},
+    journal = {Nature},
+    volume = 518,
+    pages = {529--533},
+    year = 2015,
+}
+
+# Historical context on stochastic games.
+@article {solan2015_stochastic_games_history,
+	author = {Solan, Eilon and Vieille, Nicolas},
+	title = {Stochastic games},
+	volume = {112},
+	number = {45},
+	pages = {13743--13746},
+	year = {2015},
+	doi = {10.1073/pnas.1513508112},
+	publisher = {National Academy of Sciences},
+	abstract = {In 1953, Lloyd Shapley contributed his paper {\textquotedblleft}Stochastic games{\textquotedblright} to PNAS. In this paper, he defined the model of stochastic games, which were the first general dynamic model of a game to be defined, and proved that it admits a stationary equilibrium. In this Perspective, we summarize the historical context and the impact of Shapley{\textquoteright}s contribution.},
+	issn = {0027-8424},
+	URL = {https://www.pnas.org/content/112/45/13743},
+	eprint = {https://www.pnas.org/content/112/45/13743.full.pdf},
+	journal = {Proceedings of the National Academy of Sciences}
+}
+
+@inproceedings{pepels2014_quality,
+    title =         {Quality-based Rewards for {M}onte-{C}arlo Tree Search Simulations},
+    author =        {Tom Pepels and Mandy J.W. Tak and Marc Lanctot and Mark H.M. Winands},
+    booktitle =     {Proceedings of the 21st European Conference on Artificial Intelligence ({ECAI})},
+    year =          {2014},
+}
+
+@inproceedings{burch2014_cfrd,
+    Title = "Solving Imperfect Information Games Using Decomposition",
+    Author = "Neil Burch and Michael Johanson and Michael Bowling",
+    Booktitle = "Proceedings of the Twenty-Eighth AAAI Conference on Artificial Intelligence (AAAI)",
+    Year = "2014"
+}
+
+@article{srivastava2014_dropout,
+    author  = {Nitish Srivastava and Geoffrey Hinton and Alex Krizhevsky and Ilya Sutskever and Ruslan Salakhutdinov},
+    title   = {Dropout: A Simple Way to Prevent Neural Networks from Overfitting},
+    journal = {Journal of Machine Learning Research},
+    year    = {2014},
+    volume  = {15},
+    number  = {56},
+    pages   = {1929--1958},
+    url     = {http://jmlr.org/papers/v15/srivastava14a.html}
+}
+
+@inproceedings{ganzfried2014_potential_aware,
+    author    = {Sam Ganzfried and
+               Tuomas Sandholm},
+    title     = {Potential-Aware Imperfect-Recall Abstraction with Earth Mover's Distance in Imperfect-Information Games},
+    booktitle = {Twenty-Eighth {AAAI} Conference on Artificial Intelligence},
+    pages     = {682--690},
+    year      = {2014},
+    url       = {http://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8459},
+    timestamp = {Thu, 31 Jul 2014 09:00:19 +0200},
+}
+
+@article{zaremba2014_lstm_dropout,
+    author    = {Wojciech Zaremba and
+               Ilya Sutskever and
+               Oriol Vinyals},
+    title     = {Recurrent Neural Network Regularization},
+    journal   = {CoRR},
+    volume    = {abs/1409.2329},
+    year      = {2014},
+    url       = {http://arxiv.org/abs/1409.2329},
+    eprinttype = {arXiv},
+    eprint    = {1409.2329},
+    biburl    = {https://dblp.org/rec/journals/corr/ZarembaSV14.bib},
+}
+
+@misc{mckelvey2014_gambit,
+    title={Gambit: Software tools for game theory, version 16.0.1},
+    author={McKelvey, Richard D and McLennan, Andrew M and Turocy, Theodore L},
+    journal={2013-08-05]. http://www, gambit-project, org},
+    year={2016}
+}
+
+@article{cho2014_gru,
+    author    = {KyungHyun Cho and
+               Bart van Merrienboer and
+               Dzmitry Bahdanau and
+               Yoshua Bengio},
+    title     = {On the Properties of Neural Machine Translation: Encoder-Decoder Approaches},
+    journal   = {CoRR},
+    volume    = {abs/1409.1259},
+    year      = {2014},
+    url       = {http://arxiv.org/abs/1409.1259},
+    eprinttype = {arXiv},
+    eprint    = {1409.1259},
+    biburl    = {https://dblp.org/rec/journals/corr/ChoMBB14.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{goodfellow2014_gan,
+    author = {Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+    booktitle = {Advances in Neural Information Processing Systems},
+    editor = {Z. Ghahramani and M. Welling and C. Cortes and N. Lawrence and K.Q. Weinberger},
+    pages = {},
+    publisher = {Curran Associates, Inc.},
+    title = {Generative Adversarial Nets},
+    url = {https://proceedings.neurips.cc/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf},
+    volume = {27},
+    year = {2014}
+}
+
+@misc{czumaj2014_well_supported_ne,
+    doi = {10.48550/ARXIV.1407.3004},
+    url = {https://arxiv.org/abs/1407.3004},
+    author = {Czumaj, Artur and Fasoulakis, Michail and Jurdziński, Marcin},
+    keywords = {Computer Science and Game Theory (cs.GT), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {Approximate well-supported {Nash} equilibria in symmetric bimatrix games},
+    publisher = {arXiv},
+    year = {2014},
+    copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@article{kingma2014_adam,
+    author = {Kingma, Diederik P. and Ba, Jimmy},
+    ee = {http://arxiv.org/abs/1412.6980},
+    journal = {CoRR},
+    title = {Adam: A Method for Stochastic Optimization.},
+    url = {http://dblp.uni-trier.de/db/journals/corr/corr1412.html#KingmaB14},
+    volume = {abs/1412.6980},
+    year = 2014
+}
+
+@book{gintis2014_bounds_of_reason,
+    title={The Bounds of Reason: Game Theory and the Unification of the Behavioral Sciences - Revised Edition},
+    author={Gintis, H.},
+    isbn={9780691160849},
+    lccn={2013957461},
+    year={2014},
+    publisher={Princeton University Press}
+}
+
+@inproceedings{lanctot2014_kuhn_multi,
+    author = {Lanctot, Marc},
+    year = {2014},
+    month = {05},
+    pages = {},
+    title = {Further Developments of Extensive-Form Replicator Dynamics using the Sequence-Form Representation},
+    volume = {2},
+    journal = {13th International Conference on Autonomous Agents and Multiagent Systems, AAMAS 2014}
+}
+
+@Article{bruns2015_names_for_games,
+    author = {Bruns, Bryan Randolph},
+    title = {Names for Games: Locating 2 × 2 Games},
+    journal = {Games},
+    volume = {6},
+    year = {2015},
+    number = {4},
+    pages = {495--520},
+    url = {https://www.mdpi.com/2073-4336/6/4/495},
+    issn = {2073-4336},
+    abstract = {Prisoner’s Dilemma, Chicken, Stag Hunts, and other two-person two-move (2 × 2) models of strategic situations have played a central role in the development of game theory. The Robinson–Goforth topology of payoff swaps reveals a natural order in the payoff space of 2 × 2 games, visualized in their four-layer “periodic table” format that elegantly organizes the diversity of 2 × 2 games, showing relationships and potential transformations between neighboring games. This article presents additional visualizations of the topology, and a naming system for locating all 2 × 2 games as combinations of game payoff patterns from the symmetric ordinal 2 × 2 games. The symmetric ordinal games act as coordinates locating games in maps of the payoff space of 2 × 2 games, including not only asymmetric ordinal games and the complete set of games with ties, but also ordinal and normalized equivalents of all games with ratio or real-value payoffs. An efficient nomenclature can contribute to a systematic understanding of the diversity of elementary social situations; clarify relationships between social dilemmas and other joint preference structures; identify interesting games; show potential solutions available through transforming incentives; catalog the variety of models of 2 × 2 strategic situations available for experimentation, simulation, and analysis; and facilitate cumulative and comparative research in game theory.},
+    doi = {10.3390/g6040495}
+}
+
+@book{puterman2014_markov_decision_processes,
+    author = {Puterman, Martin L},
+    biburl = {https://www.bibsonomy.org/bibtex/22e7ac99cd30c4892171e5a7cef1bc7a7/becker},
+    publisher = {John Wiley \& Sons},
+    title = {Markov decision processes: discrete stochastic dynamic programming},
+    year = 2014
+}
+
+@inproceedings{domahidi2013_ecos,
+    author={Domahidi, A. and Chu, E. and Boyd, S.},
+    booktitle={European Control Conference (ECC)},
+    title={{ECOS}: {A}n {SOCP} solver for embedded systems},
+    year={2013},
+    pages={3071-3076}
+}
+
+@article{goldberg2013_selection_complexity,
+    title={The complexity of the homotopy method, equilibrium selection, and Lemke-Howson solutions},
+    author={Goldberg, Paul W and Papadimitriou, Christos H and Savani, Rahul},
+    journal={ACM Transactions on Economics and Computation (TEAC)},
+    volume={1},
+    number={2},
+    pages={1-25},
+    year={2013},
+    publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{szafron2013_kuhn3,
+    author = {Szafron, Duane and Gibson, Richard and Sturtevant, Nathan},
+    year = {2013},
+    month = {05},
+    pages = {247-254},
+    title = {A parameterized family of equilibrium profiles for three-player Kuhn poker},
+    volume = {1},
+    journal = {12th International Conference on Autonomous Agents and Multiagent Systems 2013, AAMAS 2013}
+}
+
+@article{bellemare2013_atari_arcade,
+    author = {{Bellemare}, M.~G. and {Naddaf}, Y. and {Veness}, J. and {Bowling}, M.},
+    title = {The Arcade Learning Environment: An Evaluation Platform for General Agents},
+    journal = {Journal of Artificial Intelligence Research},
+    year = {2013},
+    month = {jun},
+    volume = {47},
+    pages = {253--279},
+}
+
+@misc{gibson2013_regret,
+      title={Regret Minimization in Non-Zero-Sum Games with Applications to Building Champion Multiplayer Computer Poker Agents}, 
+      author={Richard Gibson},
+      year={2013},
+      eprint={1305.0034},
+      archivePrefix={arXiv},
+      primaryClass={cs.GT}
+}
+
+@article{wang2013_project_simplex,
+    author = {Wang, Weiran and Carreira-Perpiñán, Miguel},
+    year = {2013},
+    month = {09},
+    pages = {},
+    journal = {ArXiv},
+    title = {Projection onto the probability simplex: An efficient algorithm with a simple proof, and an application}
+}
+
+@misc{ostrovski2013_fictitious_play_dynamics,
+   month = {October},
+   title = {Topics arising from fictitious play dynamics},
+  school = {University of Warwick},
+  author = {Georg Ostrovski},
+    year = {2013},
+     url = {http://wrap.warwick.ac.uk/58894/},
+abstract = {In this thesis, we present a few different topics arising in the study of the learning dynamics
+called fictitious play. We investigate the combinatorial properties of this dynamical system
+describing the strategy sequences of the players, and in particular deduce a combinatorial
+classification of zero-sum games with three strategies per player. We further obtain results
+about the limit sets and asymptotic payoff performance of fictitious play as a learning
+algorithm.
+In order to study coexistence of regular (periodic and quasi-periodic) and chaotic
+behaviour in fictitious play and a related continuous, piecewise affine flow on the threesphere,
+we look at its planar first return maps and investigate several model problems for
+such maps. We prove a non-recurrence result for non-self maps of regions in the plane,
+similar to Brouwer's classical result for planar homeomorphisms. Finally, we consider a
+family of piecewise affine maps of the square, which is very similar to the first return maps
+of fictitious play, but simple enough for explicit calculations, and prove several results about
+its dynamics, particularly its invariant circles and regions.}
+}
+
+@article{burch2013_imperfect_information_decomposition,
+    author    = {Neil Burch and
+               Michael Bowling},
+    title     = {{CFR-D:} Solving Imperfect Information Games Using Decomposition},
+    journal   = {CoRR},
+    volume    = {abs/1303.4441},
+    year      = {2013},
+    url       = {http://arxiv.org/abs/1303.4441},
+}
+
+@book{owen2013_mote_carlo_book,
+   author = {Art B. Owen},
+   year = 2013,
+   title = {Monte Carlo theory, methods and examples}
+}
+
+@phdthesis{lanctot2013_phdthesis,
+    author  = {Marc Lanctot}, 
+    title   = {{M}onte {C}arlo Sampling and Regret Minimization for Equilibrium Computation and Decision-Making in Large Extensive Form Games},
+    year    = 2013,
+    school  = {University of Alberta},
+    month   = {June},
+    address = {University of Alberta, Computing Science, 116 St. and 85 Ave., Edmonton, Alberta {T6G 2R3}}
+}
+
+
+@article{yakov2013_small_support_ce,
+    author = {Babichenko, Yakov and Barman, Siddharth and Peretz, Ron},
+    year = {2013},
+    month = {08},
+    pages = {},
+    title = {Small-Support Approximate Correlated Equilibria}
+}
+
+@article{kalaiandkalai2013_2x2_decomposition,
+    author = {Kalai, Adam and Kalai, Ehud},
+    title = "{Cooperation in Strategic Games Revisited*}",
+    journal = {The Quarterly Journal of Economics},
+    volume = {128},
+    number = {2},
+    pages = {917-966},
+    year = {2013},
+    month = {04},
+    abstract = "{For two-person complete-information strategic games with transferable utility, all major variable-threat bargaining and arbitration solutions coincide. This confluence of solutions by luminaries such as Nash, Harsanyi, Raiffa, and Selten, is more than mere coincidence. Staying in the class of two-person games with transferable unility, the article presents a more complete theory that expands their solution. Specifically, it presents: (1) a decomposition of a game into cooperative and competitive components, (2) an intuitive and computable closed-form formula for the solution, (3) an axiomatic justification of the solution, and (4) a generalization of the solution to games with private signals, along with an arbitration scheme that implements it. The objective is to restart research on cooperative solutions to strategic games and their applications. }",
+    issn = {0033-5533},
+    doi = {10.1093/qje/qjs074},
+    url = {https://doi.org/10.1093/qje/qjs074},
+    eprint = {https://academic.oup.com/qje/article-pdf/128/2/917/30626409/qjs074.pdf},
+}
+
+@article{bubeck2012_multiarmed,
+    author = {S. Bubeck and N. Cesa-Bianchi},
+    title = {Regret Analysis of Stochastic and Nonstochastic Multi-armed Bandit Problems},
+    journal = {In Foundations and Trends in Machine Learning},
+    volume = 5,
+    number = 1,
+    pages = {1--122},
+    year = 2012,
+}
+
+@inproceedings{agrawal2012_multiarmed_bandit,
+    title = {Analysis of Thompson Sampling for the Multi-armed Bandit Problem},
+    author = {Shipra Agrawal and Navin Goyal},
+    booktitle = {Proceedings of the 25th Annual Conference on Learning Theory},
+    volume = 23,
+    year = 2012,
+}
+
+@article{matignon2012_independent,
+    author = {L. Matignon and G. J. Laurent and N. Le Fort-Piat},
+    title = {Independent reinforcement learners in cooperative {M}arkov games: a survey regarding coordination problems},
+    journal = {The Knowledge Engineering Review},
+    volume = {27},
+    number = {01},
+    pages = {1--31},
+    year = {2012},
+}
+
+@inproceedings{gibson2012_probing,
+    title =     {Generalized Sampling and Variance in Counterfactual Regret Minimization},
+    author =    {Richard Gibson and Marc Lanctot and Neil Burch and Duane Szafron and Michael Bowling},
+    booktitle = {Proceedings of the Twenty-Sixth Conference on Artificial Intelligence (AAAI-12).},
+    pages =     {1355--1361},
+    year =      {2012},
+}
+
+@inproceedings(johanson2012_pcs,
+    Title =         {Efficient {N}ash Equilibrium Approximation through {M}onte {C}arlo Counterfactual Regret Minimization},
+    Author =        {Michael Johanson and Nolan Bard and Marc Lanctot and Richard Gibson and Michael Bowling},
+    Booktitle =     {Proceedings of the Eleventh International Conference on Autonomous Agents and Multi-Agent Systems ({AAMAS})},
+    Year =          {2012},
+)
+
+@inproceedings{gibson2012_efficient,
+    title={Efficient Monte Carlo counterfactual regret minimization in games with many player actions},
+    author={Gibson, Richard and Burch, Neil and Lanctot, Marc and Szafron, Duane},
+    booktitle={Advances in Neural Information Processing Systems},
+    pages={1880--1888},
+    year={2012}
+}
+
+@article{tieleman2012_rmsprop_lecture,
+    title={Lecture 6.5-rmsprop: Divide the gradient by a running average of its recent magnitude},
+    author={Tieleman, Tijmen and Hinton, Geoffrey and others},
+    journal={COURSERA: Neural networks for machine learning},
+    volume={4},
+    number={2},
+    pages={26--31},
+    year={2012}
+}
+
+@article{deng2012_mnist,
+    title={The mnist database of handwritten digit images for machine learning research},
+    author={Deng, Li},
+    journal={IEEE Signal Processing Magazine},
+    volume={29},
+    number={6},
+    pages={141--142},
+    year={2012},
+    publisher={IEEE}
+}
+
+@article{miroslav2012_efce,
+    author = {Dudik, Miroslav and Gordon, Geoffrey},
+    year = {2012},
+    month = {05},
+    pages = {},
+    title = {A Sampling-Based Approach to Computing Equilibria in Succinct
+    Extensive-Form Games}
+}
+
+@phdthesis{mikolov2012_gradient_clipping,
+    author = "Tom\'{a}\v{s} Mikolov",
+    type = "Ph.D. thesis",
+    title = "STATISTICAL LANGUAGE MODELS BASED ON NEURAL NETWORKS",
+    school = "Brno University of Technology, Faculty of Information Technology",
+    year = 2012,
+    location = "Brno, CZ",
+    language = "english",
+    url = "https://www.fit.vut.cz/study/phd-thesis/283/"
+}
+
+@inproceedings{chen2012_tractable_objectives,
+    title={Tractable objectives for robust policy optimization},
+    author={Chen, Katherine and Bowling, Michael},
+    booktitle={Advances in Neural Information Processing Systems},
+    pages={2069--2077},
+    year={2012}
+}
+
+@article{duchi2011_adagrad,
+    author = {Duchi, John and Hazan, Elad and Singer, Yoram},
+    journal = {Journal of Machine Learning Research},
+    keywords = {},
+    number = {Jul},
+    pages = {2121--2159},
+    title = {Adaptive subgradient methods for online learning and stochastic optimization},
+    volume = 12,
+    year = 2011
+}
+
+@article{laurent2011_independent,
+    journal = {International Journal of Knowledge-based and Intelligent Engineering Systems},
+    author = {Guillaume J. Laurent and Laetitia Matignon and N. Le Fort-Piat},
+    volume = 15,
+    year = 2011,
+    pages = {55--64},
+    title = {The world of independent learners is not {M}arkovian},
+}
+
+@inproceedings{veness2011_variance,
+    title =     {Variance Reduction in {M}onte-{C}arlo Tree Search},
+    author =    {Joel Veness and Marc Lanctot and Michael Bowling},
+    booktitle = {Advances in Neural Information Processing Systems 24},
+    editor =    {J. Shawe-Taylor and R.S. Zemel and P. Bartlett and F. Pereira and K.Q. Weinberger},
+    year =      {2011},
+    pages =     {1836--1844},
+}
+
+@inproceedings(johanson2011_rgbr,
+    Title = "Accelerating Best Response Calculation in Large Extensive Games",
+    Author = "Michael Johanson and Michael Bowling and Kevin Waugh and Martin Zinkevich",
+    Booktitle = "Proceedings of the Twenty-Second International Joint Conference on Artificial Intelligence (IJCAI)",
+    Year = "2011",
+    Pages = "258--265",
+)
+
+@article{jiang2011_actiongraphgames,
+    title = {Action-Graph Games},
+    journal = {Games and Economic Behavior},
+    volume = {71},
+    number = {1},
+    pages = {141-173},
+    year = {2011},
+    note = {Special Issue In Honor of John Nash},
+    issn = {0899-8256},
+    doi = {https://doi.org/10.1016/j.geb.2010.10.012},
+    author = {Albert Xin Jiang and Kevin Leyton-Brown and Navin A.R. Bhat},
+    keywords = {Game representations, Graphical models, Large games, Computational techniques, Nash equilibria},
+    abstract = {Representing and reasoning with games becomes difficult once they involve large numbers of actions and players, because the space requirement for utility functions can grow unmanageably. Action-Graph Games (AGGs) are a fully-expressive game representation that can compactly express utility functions with structure such as context-specific independence, anonymity, and additivity. We show that AGGs can be used to compactly represent all games that are compact when represented as graphical games, symmetric games, anonymous games, congestion games, and polymatrix games, as well as games that require exponential space under all of these existing representations. We give a polynomial-time algorithm for computing a player's expected utility under an arbitrary mixed-strategy profile, and show how to use this algorithm to achieve exponential speedups of existing methods for computing sample Nash equilibria. We present results of experiments showing that using AGGs leads to a dramatic increase in the size of games accessible to computational analysis.22We gratefully acknowledge Moshe Tennenholtz for his co-authorship of a paper on Local Effect Games (Leyton-Brown and Tennenholtz, 2003), an action-centric graphical model for games that inspired our work on AGGs.}
+}
+
+@phdthesis{simpson2010_red_dress,
+    author = {Simpson, John}, 
+    title = {Simulating Strategic Rationality},
+    school = {University of Alberta},
+    year = 2010,
+    doi = {https://doi.org/10.7939/R3889H},
+}
+
+@article{etessami2010_complexity,
+    title={On the complexity of {N}ash equilibria and other fixed points},
+    author={Etessami, Kousha and Yannakakis, Mihalis},
+    journal={SIAM Journal on Computing},
+    volume={39},
+    number={6},
+    pages={2531--2597},
+    year={2010},
+    publisher={SIAM}
+}
+
+@article{avis2010_enumeration,
+    title={Enumeration of {N}ash equilibria for two-player games},
+    author={Avis, David and Rosenberg, Gabriel D and Savani, Rahul and Von Stengel, Bernhard},
+    journal={Economic theory},
+    volume={42},
+    number={1},
+    pages={9-37},
+    year={2010},
+    publisher={Springer}
+}
+
+@inproceedings{glorot2010_xaviertanhinit,
+    title = 	 {Understanding the difficulty of training deep feedforward neural networks},
+    author = 	 {Glorot, Xavier and Bengio, Yoshua},
+    booktitle = 	 {Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics},
+    pages = 	 {249--256},
+    year = 	 {2010},
+    editor = 	 {Teh, Yee Whye and Titterington, Mike},
+    volume = 	 {9},
+    series = 	 {Proceedings of Machine Learning Research},
+    address = 	 {Chia Laguna Resort, Sardinia, Italy},
+    month = 	 {13--15 May},
+    publisher =    {PMLR},
+    pdf = 	 {http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf},
+    url = 	 {https://proceedings.mlr.press/v9/glorot10a.html},
+    abstract = 	 {Whereas before 2006 it appears that deep multi-layer neural networks were not successfully trained, since then several algorithms have been shown to successfully train them, with experimental results showing the superiority of deeper vs less deep architectures. All these experimental results were obtained with new initialization or training mechanisms. Our objective here is to understand better why standard gradient descent from random initialization is doing so poorly with deep neural networks, to better understand these recent relative successes and help design better algorithms in the future.  We first observe the influence of the non-linear activations functions. We find that the logistic sigmoid activation is unsuited for deep networks with random initialization because of its mean value, which can drive especially the top hidden layer into saturation. Surprisingly, we find that saturated units can move out of saturation by themselves, albeit slowly, and explaining the plateaus sometimes seen when training neural networks. We find that a new non-linearity that saturates less can often be beneficial. Finally, we study how activations and gradients vary across layers and during training, with the idea that training may be more difficult when the singular values of the Jacobian associated with each layer are far from 1.  Based on these considerations, we propose a new initialization scheme that brings substantially faster convergence.}
+}
+
+
+@article{daskalakis2009_ne_complexity,
+    author = {Daskalakis, Constantinos and Goldberg, Paul and Papadimitriou, Christos},
+    year = {2009},
+    month = {02},
+    pages = {195-259},
+    title = {The Complexity of Computing a {N}ash Equilibrium},
+    volume = {39},
+    journal = {SIAM J. Comput.},
+}
+
+@article{southey2009_kuhn_equil,
+    author = {Southey, Finnegan and Hoehn, B. and Holte, Robert},
+    year = {2009},
+    month = {02},
+    pages = {159-189},
+    title = {Effective short-term opponent exploitation in simplified poker},
+    volume = {74},
+    journal = {Machine Learning},
+}
+
+@book{ben2009_robust,
+    title={Robust Optimization},
+    author={Ben-Tal, A. and Ghaoui, L.E. and Nemirovski, A.},
+    isbn={9781400831050},
+    lccn={2009013229},
+    series={Princeton Series in Applied Mathematics},
+    year={2009},
+    publisher={Princeton University Press}
+}
+
+@inproceedings(lanctot2009_mccfr_nips,
+    Author = "Marc Lanctot and Kevin Waugh and Martin Zinkevich and Michael Bowling",
+    Title = "{M}onte {C}arlo Sampling for Regret Minimization in Extensive Games",
+    Booktitle = "Advances in Neural Information Processing Systems 22 (NIPS)",
+    Year = "2009",
+    Pages = {1078--1086},
+    AcceptRate = "24\%",
+    AcceptNumbers = "263 of 1105"
+)
+
+@inproceedings{lanctot2009_mccfr,
+    title =     {{M}onte {C}arlo Sampling for Regret Minimization in Extensive Games},
+    author =    {Marc Lanctot and Kevin Waugh and Martin Zinkevich and Michael Bowling},
+    booktitle = {Advances in Neural Information Processing Systems 22},
+    editor =    {Y. Bengio and D. Schuurmans and J. Lafferty and C. K. I. Williams and A. Culotta},
+    pages =     {1078--1086},
+    year =      {2009},
+}
+
+@inproceedings{white2009_mivat,
+    author    = {Martha White and
+               Michael H. Bowling},
+    title     = {Learning a Value Analysis Tool for Agent Evaluation},
+    booktitle = {{IJCAI} 2009, Proceedings of the 21st International Joint Conference on Artificial Intelligence,
+               2009},
+    pages     = {1976--1981},
+    year      = {2009},
+    url       = {http://ijcai.org/Proceedings/09/Papers/326.pdf},
+    timestamp = {Wed, 20 Jul 2016 14:20:40 +0200},
+    biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ijcai/WhiteB09},
+    bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{kaelbling2009_rl_survey,
+    author = {Kaelbling, L. P. and Littman, M. L. and Moore, A. W.},
+    description = {CCNLab BibTeX},
+    journal = {Journal of Artificial Intelligence Research},
+    keywords = {machine-learning reinforcement-learning survey},
+    pages = {237-285},
+    title = {Reinforcement learning: A survey},
+    volume = 4,
+    year = 1996
+}
+
+@InProceedings{adler2009_strict_comp_zero_sum,
+    author="Adler, Ilan
+    and Daskalakis, Constantinos
+    and Papadimitriou, Christos H.",
+    editor="Leonardi, Stefano",
+    title="A Note on Strictly Competitive Games",
+    booktitle="Internet and Network Economics",
+    year="2009",
+    publisher="Springer Berlin Heidelberg",
+    address="Berlin, Heidelberg",
+    pages="471--474",
+    abstract="Strictly competitive games are a class of 2-player games often quoted in the literature to be a proper generalization of zero-sum games. Other times it is claimed, e.g. by Aumann, that strictly competitive games are only payoff transformations of zero-sum games. But to the best of our knowledge there is no proof of such claim. We shed light to this point of confusion in the literature, showing that any strictly competitive game is indeed a payoff transformation of a zero sum-game; in fact, an affine transformation. We offer two proofs of this fact, one combinatorial and one algebraic.",
+    isbn="978-3-642-10841-9"
+}
+
+
+@inproceedings{deng2009_imagenet,
+    title={Imagenet: A large-scale hierarchical image database},
+    author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+    booktitle={2009 IEEE conference on computer vision and pattern recognition},
+    pages={248--255},
+    year={2009},
+    organization={Ieee}
+}
+
+@book{shoham2009_multiagent_systems,
+    author = {Shoham, Yoav and Leyton-Brown, Kevin},
+    title = {Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations},
+    year = {2009},
+    isbn = {0521899435},
+    publisher = {Cambridge University Press},
+    address = {USA},
+}
+
+@article{daskalakis2009_complexity,
+    title={The complexity of computing a {N}ash equilibrium},
+    author={Daskalakis, Constantinos and Goldberg, Paul W and Papadimitriou, Christos H},
+    journal={SIAM Journal on Computing},
+    volume={39},
+    number={1},
+    pages={195--259},
+    year={2009},
+    publisher={SIAM}
+}
+
+@inproceedings{graepel2010_bing,
+    author = {Graepel, Thore and Candela, Joaquin Qui\~{n}onero and Borchert, Thomas and Herbrich, Ralf},
+    title = {Web-scale Bayesian Click-through Rate Prediction for Sponsored Search Advertising in Microsoft's Bing Search Engine},
+    booktitle = {Proceedings of the 27th International Conference on International Conference on Machine Learning},
+    series = {ICML'10},
+    year = {2010},
+    pages = {13--20},
+}
+
+@article{jaksch2010_regret_bounds_rl,
+    title = {Near-optimal Regret Bounds for Reinforcement Learning},
+    author = {Thomas Jaksch and Ronald Ortner and Peter Auer},
+    pages = {1563--1600},
+    year = {2010},
+    journal = {JMLR},
+    volume = 11,
+}
+
+@article{chen2009_nash_complexity,
+    title={Settling the complexity of computing two-player {N}ash equilibria},
+    author={Chen, Xi and Deng, Xiaotie and Teng, Shang-Hua},
+    journal={Journal of the ACM (JACM)},
+    volume={56},
+    number={3},
+    pages={1--57},
+    year={2009},
+    publisher={ACM New York, NY, USA}
+}
+
+@book{shohambrown2009_book,
+    title = {Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations},
+    author = {Y. Shoham and K. Leyton-Brown},
+    year = {2009},
+    publisher = {Cambridge University Press}
+}
+
+@inproceedings(zinkevich2008_cfr,
+    Title = "Regret Minimization in Games with Incomplete Information",
+    Author = "Martin Zinkevich and Michael Johanson and Michael Bowling and Carmelo Piccione",
+    Booktitle = "Advances in Neural Information Processing Systems 20 (NIPS)",
+    Year = "2008",
+    Pages = "905--912",
+    AcceptRate = "22\%",
+    AcceptNumbers = "217 of 975"
+)
+
+@article {marchiori2008_human_interactive,
+	author = {Marchiori, Davide and Warglien, Massimo},
+	title = {Predicting Human Interactive Learning by Regret-Driven Neural Networks},
+	volume = {319},
+	number = {5866},
+	pages = {1111--1113},
+	year = {2008},
+    URL = {https://science.sciencemag.org/content/319/5866/1111},
+	eprint = {https://science.sciencemag.org/content/319/5866/1111.full.pdf},
+	journal = {Science}
+}
+
+@inproceedings(bowling2008_ispoker_icml,
+    title = "Strategy Evaluation in Extensive Games with Importance Sampling",
+    author = "Michael Bowling and Michael Johanson and Neil Burch and Duane Szafron",
+    booktitle = "Proceedings of the Twenty-Fifth International Conference on Machine Learning (ICML)",
+    year = "2008",
+    pages = "72--79",
+    acceptrate = "27\%",
+    acceptnumbers = "155 of 583"
+)
+
+@inproceedings{zinkevich2008_cfr,
+    Title = {Regret Minimization in Games with Incomplete Information},
+    Author = {M. Zinkevich and M. Johanson and M. Bowling and C. Piccione},
+    Booktitle = {Advances in Neural Information Processing Systems 20},
+    Year = {2008}
+}
+
+@inproceedings{ganzfried2008_computing,
+    title={Computing an approximate jam/fold equilibrium for 3-player no-limit Texas Hold'em tournaments},
+    author={Ganzfried, Sam and Sandholm, Tuomas},
+    booktitle={Proceedings of the 7th international joint conference on Autonomous agents and multiagent systems-Volume 2},
+    pages={919--925},
+    year={2008},
+    organization={International Foundation for Autonomous Agents and Multiagent Systems}
+}
+
+@article{milchtaich2008_ne_bimatrix,
+    author = {Milchtaich, Igal and Ostrowski, Tadeusz},
+    year = {2008},
+    month = {01},
+    pages = {},
+    title = {On some saddle point matrices and applications to completely mixed equilibrium in bimatrix games},
+    volume = {18},
+    journal = {Int. J. Math. Game Theory Algebra}
+}
+
+@article{porter2008_ne_and_gamut_subset,
+    title = {Simple search methods for finding a {Nash} equilibrium},
+    journal = {Games and Economic Behavior},
+    volume = {63},
+    number = {2},
+    pages = {642-662},
+    year = {2008},
+    note = {Second World Congress of the Game Theory Society},
+    issn = {0899-8256},
+    doi = {https://doi.org/10.1016/j.geb.2006.03.015},
+    url = {https://www.sciencedirect.com/science/article/pii/S0899825606000935},
+    author = {Ryan Porter and Eugene Nudelman and Yoav Shoham},
+    keywords = {Nash equilibrium, Computer science, Algorithms},
+    abstract = {We present two simple search methods for computing a sample Nash equilibrium in a normal-form game: one for 2-player games and one for n-player games. Both algorithms bias the search towards supports that are small and balanced, and employ a backtracking procedure to efficiently explore these supports. Making use of a new comprehensive testbed, we test these algorithms on many classes of games, and show that they perform well against the state of the art—the Lemke–Howson algorithm for 2-player games, and Simplicial Subdivision and Govindan–Wilson for n-player games.}
+}
+
+# Extensive form correlated equilibrium definition.
+@article{stengel2008_efce,
+    title={Extensive-Form Correlated Equilibrium: Definition and Computational Complexity},
+    author = {von Stengel, Bernhard and Forges, Françoise},
+    journal = {Mathematics of Operations Research},
+    year={2008},
+    volume={33},
+    pages={1002-1022},
+    number = {4},
+}
+
+@article{maskin2008_mechanism_design,
+    title={Mechanism design: How to implement social goals},
+    author={Maskin, Eric S},
+    journal={American Economic Review},
+    volume={98},
+    number={3},
+    pages={567--76},
+    year={2008}
+}
+
+@article{porter2008_simple,
+    title={Simple search methods for finding a {Nash} equilibrium},
+    author={Porter, Ryan and Nudelman, Eugene and Shoham, Yoav},
+    journal={Games and Economic Behavior},
+    volume={63},
+    number={2},
+    pages={642--662},
+    year={2008},
+    publisher={Elsevier}
+}
+
+@article{papadimitriou2008_computing_ce,
+    author = {Papadimitriou, Christos H. and Roughgarden, Tim},
+    title = {Computing Correlated Equilibria in Multi-Player Games},
+    year = {2008},
+    issue_date = {July 2008},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {55},
+    number = {3},
+    issn = {0004-5411},
+    url = {https://doi.org/10.1145/1379759.1379762},
+    doi = {10.1145/1379759.1379762},
+    abstract = {We develop polynomial-time algorithms for finding correlated equilibria—a well-studied notion of rationality that generalizes the Nash equilibrium—in a broad class of succinctly representable multiplayer games, encompassing graphical games, anonymous games, polymatrix games, congestion games, scheduling games, local effect games, as well as several generalizations. Our algorithm is based on a variant of the existence proof due to Hart and Schmeidler, and employs linear programming duality, the ellipsoid algorithm, Markov chain steady state computations, as well as application-specific methods for computing multivariate expectations over product distributions.For anonymous games and graphical games of bounded tree-width, we provide a different polynomial-time algorithm for optimizing an arbitrary linear function over the set of correlated equilibria of the game. In contrast to our sweeping positive results for computing an arbitrary correlated equilibrium, we prove that optimizing over correlated equilibria is NP-hard in all of the other classes of games that we consider.},
+    journal = {J. ACM},
+    month = {aug},
+    articleno = {14},
+    numpages = {29},
+    keywords = {Correlated equilibria, Nash equilibria, complexity of equilibria}
+}
+
+@article{vandermaaten2008_tsne,
+    author = {van der Maaten, Laurens and Hinton, Geoffrey},
+    biburl = {https://www.bibsonomy.org/bibtex/28b9aebb404ad4a4c6a436ea413550b30/lopusz_kdd},
+    interhash = {370ba8b9e1909b61880a6f47c93bcd49},
+    intrahash = {8b9aebb404ad4a4c6a436ea413550b30},
+    journal = {Journal of Machine Learning Research},
+    keywords = {dimensionality_reduction tSNE visualization},
+    pages = {2579--2605},
+    title = {Visualizing Data using {t-SNE} },
+    url = {http://www.jmlr.org/papers/v9/vandermaaten08a.html},
+    volume = 9,
+    year = 2008
+}
+
+@inproceedings{ortix2007_mece,
+    title = 	 {Maximum Entropy Correlated Equilibria},
+    author = 	 {Luis E. Ortiz and Robert E. Schapire and Sham M. Kakade},
+    booktitle = 	 {Proceedings of the Eleventh International Conference on Artificial Intelligence and Statistics},
+    pages = 	 {347--354},
+    year = 	 {2007},
+    editor = 	 {Marina Meila and Xiaotong Shen},
+    volume = 	 {2},
+    series = 	 {Proceedings of Machine Learning Research},
+    address = 	 {San Juan, Puerto Rico},
+    month = 	 {21--24 Mar},
+    publisher = 	 {PMLR},
+}
+
+@article{robinson2007_toward_a_topological_treatment_of_the_nonstrictly_ordered_2x2_games,
+    author = {Robinson, David and Goforth, David and Cargill, Matt},
+    year = {2007},
+    month = {7},
+    pages = {},
+    title = {Toward a Topological Treatment of the Non-strictly Ordered 2×2 Games}
+}
+
+@incollection{herbrich2007_trueskill,
+    title = {{TrueSkill\texttrademark}: A Bayesian Skill Rating System},
+    author = {Ralf Herbrich and Minka, Tom and Graepel, Thore},
+    booktitle = {Advances in Neural Information Processing Systems 19},
+    editor = {B. Sch\"{o}lkopf and J. C. Platt and T. Hoffman},
+    pages = {569--576},
+    year = {2007},
+    publisher = {MIT Press},
+}
+
+@book{nisan2007_algorithmic_game_theory,
+    Title                    = {Algorithmic Game Theory},
+    Author                   = {Noam Nisan and Tim Roughgarden and \'Eva Tardos and Vijay V. Vazirani},
+    Publisher                = {Cambridge University Press},
+    Year                     = {2007},
+    Address                  = {New York, NY, USA}
+}
+
+@article{economist2007_big_deal_poker,
+    title="Poker: A Big Deal",
+    journal="The Economist",
+    year="2007",
+    volume="December 22",
+    pages="31--38",
+    url="http://www.economist.com/node/10281315",
+}
+
+@incollection{blum2007_regret_minimization,
+    title     = {Learning, Regret Minimization, and Equilibria},
+    booktitle = {Algorithmic Game Theory},
+    author    = {A. Blum and Y. Mansour},
+    year      = {2007},
+    chapter   = 4,
+    publisher={Carnegie Mellon University}
+}
+
+@article{shoham_2007_question,
+    title = {If multi-agent learning is the answer, what is the question?},
+    journal = {Artificial Intelligence},
+    volume = {171},
+    number = {7},
+    pages = {365-377},
+    year = {2007},
+    note = {Foundations of Multi-Agent Learning},
+    issn = {0004-3702},
+    author = {Yoav Shoham and Rob Powers and Trond Grenager},
+    abstract = {The area of learning in multi-agent systems is today one of the most fertile grounds for interaction between game theory and artificial intelligence. We focus on the foundational questions in this interdisciplinary area, and identify several distinct agendas that ought to, we argue, be separated. The goal of this article is to start a discussion in the research community that will result in firmer foundations for the area.11This article has a long history and owes many debts. A first version was presented at the NIPS workshop, Multi-Agent Learning: Theory and Practice, in 2002. A later version was presented at the AAAI Fall Symposium in 2004 [Y. Shoham, R. Powers, T. Grenager, On the agenda(s) of research on multi-agent learning, in: AAAI 2004 Symposium on Artificial Multi-Agent Learning (FS-04-02), AAAI Press, 2004]. Over time it has gradually evolved into the current form, as a result of our own work in the area as well as the feedback of many colleagues. We thank them all collectively, with special thanks to members of the multi-agent group at Stanford in the past three years. Rakesh Vohra and Michael Wellman provided detailed comments on the latest draft which resulted in substantive improvements, although we alone are responsible for the views put forward. This work was supported by NSF ITR grant IIS-0205633 and DARPA grant HR0011-05-1.}
+}
+
+@inproceedings{papadimitriou2006_ne_complexity_ppad,
+    author = {Daskalakis, Constantinos and Goldberg, Paul W. and Papadimitriou, Christos H.},
+    title = {The Complexity of Computing a {Nash} Equilibrium},
+    year = {2006},
+    isbn = {1595931341},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1132516.1132527},
+    doi = {10.1145/1132516.1132527},
+    abstract = {We resolve the question of the complexity of Nash equilibrium by showing that the problem of computing a Nash equilibrium in a game with 4 or more players is complete for the complexity class PPAD. Our proof uses ideas from the recently-established equivalence between polynomial time solvability of normal form games and graphical games, establishing that these kinds of games can simulate a PPAD-complete class of Brouwer functions.},
+    booktitle = {Proceedings of the Thirty-Eighth Annual ACM Symposium on Theory of Computing},
+    pages = {71–78},
+    numpages = {8},
+    keywords = {Nash equilibrium, game theory, PPAD-completeness, complexity},
+    location = {Seattle, WA, USA},
+    series = {STOC '06}
+}
+
+@book{matousek2006_lp,
+    author = {Matouek, Jir\'{\i} and G\"{a}rtner, Bernd},
+    title = {Understanding and Using Linear Programming (Universitext)},
+    year = {2006},
+    isbn = {3540306978},
+    publisher = {Springer-Verlag},
+    address = {Berlin, Heidelberg}
+}
+
+@article{pineau2006_curse_of_history,
+    author = {Pineau, Joelle and Gordon, Geoffrey and Thrun, Sebastian},
+    title = {Anytime Point-Based Approximations for Large POMDPs},
+    year = {2006},
+    issue_date = {September 2006},
+    publisher = {AI Access Foundation},
+    address = {El Segundo, CA, USA},
+    volume = {27},
+    number = {1},
+    issn = {1076-9757},
+    abstract = {The Partially Observable Markov Decision Process has long been recognized as a rich framework for real-world planning and control problems, especially in robotics. However exact solutions in this framework are typically computationally intractable for all but the smallest problems. A well-known technique for speeding up POMDP solving involves performing value backups at specific belief points, rather than over the entire belief simplex. The efficiency of this approach, however, depends greatly on the selection of points. This paper presents a set of novel techniques for selecting informative belief points which work well in practice. The point selection procedure is combined with point-based value backups to form an effective anytime POMDP algorithm called Point-Based Value Iteration (PBVI). The first aim of this paper is to introduce this algorithm and present a theoretical analysis justifying the choice of belief selection technique. The second aim of this paper is to provide a thorough empirical comparison between PBVI and other state-of-the-art POMDP methods, in particular the Perseus algorithm, in an effort to highlight their similarities and differences. Evaluation is performed using both standard POMDP domains and realistic robotic tasks.},
+    journal = {J. Artif. Int. Res.},
+    month = nov,
+    pages = {335–380},
+    numpages = {46}
+}
+
+@inproceedings{wellman2006_egta,
+    author    = {Michael P. Wellman},
+    title     = {Methods for Empirical Game-Theoretic Analysis},
+    booktitle = {Proceedings, The Twenty-First National Conference on Artificial Intelligence
+               and the Eighteenth Innovative Applications of Artificial Intelligence
+               Conference, July 16-20, 2006, Boston, Massachusetts, {USA}},
+    pages     = {1552--1556},
+    publisher = {{AAAI} Press},
+    year      = {2006},
+    url       = {http://www.aaai.org/Library/AAAI/2006/aaai06-248.php},
+    timestamp = {Wed, 10 Feb 2021 00:00:00 +0100},
+    biburl    = {https://dblp.org/rec/conf/aaai/Wellman06.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@book{bianchi2006_prediction_learning_and_games_book,
+    title = {Prediction, Learning, and Games},
+    author = {N. Cesa-Bianchi and G. Lugosi},
+    publisher = {Cambridge University Press},
+    year = 2006,
+}
+
+@inproceedings{papadimitriouandgoldberg2006_well_supported_epsilon_eq,
+    author = {Goldberg, Paul W. and Papadimitriou, Christos H.},
+    title = {Reducibility among Equilibrium Problems},
+    year = {2006},
+    isbn = {1595931341},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1132516.1132526},
+    doi = {10.1145/1132516.1132526},
+    abstract = {We address the fundamental question of whether the Nash equilibria of a game can be
+    computed in polynomial time. We describe certain efficient reductions between this
+    problem for normal form games with a fixed number of players and graphical games with
+    fixed degree. Our main result is that the problem of solving a game for any constant
+    number of players, is reducible to solving a 4-player game.},
+    booktitle = {Proceedings of the Thirty-Eighth Annual ACM Symposium on Theory of Computing},
+    pages = {61–70},
+    numpages = {10},
+    keywords = {Nash equilibrium},
+    location = {Seattle, WA, USA},
+    series = {STOC '06}
+}
+
+@inproceedings{chen2006_nash_complexity,
+    title={Settling the complexity of two-player {N}ash equilibrium},
+    author={Chen, Xi and Deng, Xiaotie},
+    booktitle={47th Annual IEEE Symposium on Foundations of Computer Science (FOCS'06)},
+    pages={261--272},
+    year={2006},
+    organization={IEEE}
+}
+
+@article{jost2006_ginisimpson,
+    author = {Jost, Lou},
+    title = {Entropy and diversity},
+    journal = {Oikos},
+    volume = {113},
+    number = {2},
+    pages = {363-375},
+    year = {2006}
+}
+
+@book{bishop2006_pattern,
+    author = {Bishop, Christopher M.},
+    title = {Pattern Recognition and Machine Learning (Information Science and Statistics)},
+    year = {2006},
+    isbn = {0387310738},
+    publisher = {Springer-Verlag},
+    address = {Berlin, Heidelberg}
+}
+
+@article{6287459,
+    author={B. {Schölkopf} and J. {Platt} and T. {Hofmann}},
+    booktitle={Advances in Neural Information Processing Systems 19: Proceedings of the 2006 Conference}, 
+    title={Multi-Robot Negotiation: Approximating the Set of Subgame Perfect Equilibria in General-Sum Stochastic Games}, 
+    year={2007},
+    volume={},
+    number={},
+    pages={1001-1008},
+}
+
+@book{skyrms2004_stag_hunt,
+    title={The Stag Hunt and the Evolution of Social Structure},
+    author={Skyrms, B.},
+    isbn={9780521533928},
+    lccn={2003051530},
+    year={2004},
+    publisher={Cambridge University Press}
+}
+
+@inproceedings{kocsis2006_bandit_monte_carlo,
+    author = {Kocsis, Levente and Szepesv\'{a}ri, Csaba},
+    title = {Bandit Based Monte-carlo Planning},
+    booktitle = {Proceedings of the 17th European Conference on Machine Learning},
+    series = {ECML'06},
+    year = {2006},
+    pages = {282--293},
+} 
+
+@inproceedings{coulom2006_monte_carlo,
+    author = {Coulom, R{\'e}mi},
+    title = {Efficient Selectivity and Backup Operators in Monte-Carlo Tree Search},
+    booktitle = {Proceedings of the 5th International Conference on Computers and Games},
+    series = {CG'06},
+    year = {2007},
+    pages = {72--83},
+} 
+
+@article{xinkevichlittman2006_poker_competition,
+    author = "Martin Zinkevich and Michael Littman",
+    title = "The {AAAI} Computer Poker Competition",
+    journal = "Journal of the International Computer Games Association",
+    volume = "29",
+    note = "News item",
+    year = "2006"
+},
+
+@inproceedings{zinkevich2006_divat,
+    author    = {Martin Zinkevich and
+               Michael H. Bowling and
+               Nolan Bard and
+               Morgan Kan and
+               Darse Billings},
+    title     = {Optimal Unbiased Estimators for Evaluating Agent Performance},
+    booktitle = {Proceedings, The Twenty-First National Conference on Artificial Intelligence and the Eighteenth Innovative Applications of Artificial Intelligence Conference},
+    pages     = {573--579},
+    year      = {2006},
+    url       = {http://www.aaai.org/Library/AAAI/2006/aaai06-092.php},
+    timestamp = {Mon, 19 Mar 2012 18:06:03 +0100},
+    biburl    = {http://dblp.uni-trier.de/rec/bib/conf/aaai/ZinkevichBBKB06},
+    bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{legg2006_measure_of_intelligence_arvix,
+    author    = {Shane Legg and
+               Marcus Hutter},
+    title     = {A Formal Measure of Machine Intelligence},
+    journal   = {CoRR},
+    volume    = {abs/cs/0605024},
+    year      = {2006},
+    url       = {http://arxiv.org/abs/cs/0605024},
+    eprinttype = {arXiv},
+    eprint    = {cs/0605024},
+    timestamp = {Mon, 13 Aug 2018 16:48:08 +0200},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{xiandxiaotie2006_ne_ppad,
+    author={Chen, Xi and Deng, Xiaotie},
+    booktitle={2006 47th Annual IEEE Symposium on Foundations of Computer Science (FOCS'06)}, 
+    title={Settling the Complexity of Two-Player {Nash} Equilibrium}, 
+    year={2006},
+    volume={},
+    number={},
+    pages={261-272},
+    doi={10.1109/FOCS.2006.69}
+}
+
+# Negotiation protocol: to select an equilibrium
+@inproceedings{murray2006_negotiation_protocol,
+    author = {Murray, Chris and Gordon, Geoffrey J.},
+    title = {Multi-Robot Negotiation: Approximating the Set of Subgame Perfect Equilibria in General-Sum Stochastic Games},
+    year = {2006},
+    publisher = {MIT Press},
+    address = {Cambridge, MA, USA},
+    abstract = {In real-world planning problems, we must reason not only about our own goals, but about the goals of other agents with which we may interact. Often these agents' goals are neither completely aligned with our own nor directly opposed to them. Instead there are opportunities for cooperation: by joining forces, the agents can all achieve higher utility than they could separately. But, in order to cooperate, the agents must negotiate a mutually acceptable plan from among the many possible ones, and each agent must trust that the others will follow their parts of the deal. Research in multi-agent planning has often avoided the problem of making sure that all agents have an incentive to follow a proposed joint plan. On the other hand, while game theoretic algorithms handle incentives correctly, they often don't scale to large planning problems. In this paper we attempt to bridge the gap between these two lines of research: we present an efficient game-theoretic approximate planning algorithm, along with a negotiation protocol which encourages agents to compute and agree on joint plans that are fair and optimal in a sense defined below. We demonstrate our algorithm and protocol on two simple robotic planning problems.},
+    booktitle = {Proceedings of the 19th International Conference on Neural Information Processing Systems},
+    pages = {1001--1008},
+    numpages = {8},
+    location = {Canada},
+    series = {NIPS'06}
+}
+
+@book{robinsonandgoforth2005_topology_of_2x2_games_book,
+    author = {Robinson, David and Goforth, David},
+    year = {2005},
+    month = {01},
+    pages = {},
+    title = {The Topology of the 2x2 games: A New Periodic Table},
+    doi = {10.4324/9780203340271}
+}
+
+@article{southey2005_leduc,
+    author = {Finnegan Southey and Michael Bowling and Bryce Larson and Carmelo Piccione and Neil Burch and Darse Billings and Chris Rayner},
+    title = {Bayes’ bluff: Opponent modelling in poker},
+    booktitle = {Proceedings of the 21st Annual Conference on Uncertainty in Artificial Intelligence (UAI)},
+    year = {2005},
+    pages = {550--558},
+    publisher = {AUAI Press},
+    address = {Arlington, Virginia, USA},
+    numpages = {9},
+    location = {Edinburgh, Scotland},
+    series = {UAI'05},
+    isbn = {0974903914},
+    abstract = {Poker is a challenging problem for artificial intelligence, with non-deterministic dynamics, partial observability, and the added difficulty of unknown adversaries. Modelling all of the uncertainties in this domain is not an easy task. In this paper we present a Bayesian probabilistic model for a broad class of poker games, separating the uncertainty in the game dynamics from the uncertainty of the opponent's strategy. We then describe approaches to two key sub-problems: (i) inferring a posterior over opponent strategies given a prior distribution and observations of their play, and (ii) playing an appropriate response to that distribution. We demonstrate the overall approach on a reduced version of poker using Dirichlet priors and then on the full game of Texas hold'em using a more informed prior. We demonstrate methods for playing effective responses to the opponent, based on the posterior.},
+}
+
+@inproceedings{hoehn2005_kuhn_info,
+    title = {Effective Short-Term Opponent Exploitation in Simplified Poker},
+    author = {Bret Hoehn and Finnegan Southey and Robert C. Holte and Valeriy Bulitko},
+    journal = {AAAI},
+}
+
+@book{sugden2005_economics_of_rights_cooperation_and_welfare,
+    title = {The Economics of Rights, Co-operation and Welfare},
+    author = {Sugden, Robert},
+    year = {2005},
+    publisher = {Palgrave Macmillan},
+}
+
+@book{bicchieri2005_gammar_of_society,
+    place={Cambridge},
+    title={The Grammar of Society: The Nature and Dynamics of Social Norms},
+    DOI={10.1017/CBO9780511616037},
+    publisher={Cambridge University Press},
+    author={Bicchieri, Cristina},
+    year={2005}
+}
+
+@article{turocy2005_dynamic,
+    title={A dynamic homotopy interpretation of the logistic quantal response equilibrium correspondence},
+    author={Turocy, Theodore L},
+    journal={Games and Economic Behavior},
+    volume={51},
+    number={2},
+    pages={243--263},
+    year={2005},
+    publisher={Elsevier}
+}
+
+@book{goforth2005_periodic_table_of_games,
+    author = {Goforth, David and Robinson, David},
+    year = {2005},
+    month = {01},
+    pages = {},
+    title = {Dynamic Periodic Table of the 2 × 2 Games: User's Reference and Manual},
+}
+
+# Cyclic equilibrium.
+# No Stationary Deterministic Equilibrium Game(NoSDE).
+@inproceedings{zinkevichgreenwald2005_cyclic_equilibrium,
+    author = {Zinkevich, Martin and Greenwald, Amy and Littman, Michael L.},
+    title = {Cyclic Equilibria in Markov Games},
+    year = {2005},
+    publisher = {MIT Press},
+    address = {Cambridge, MA, USA},
+    booktitle = {Proceedings of the 18th International Conference on Neural Information Processing Systems},
+    pages = {1641--1648},
+    numpages = {8},
+    location = {Vancouver, British Columbia, Canada},
+    series = {NIPS'05}
+}
+
+@inproceedings{evendar2005_expertmdp,
+    title={Experts in a Markov decision process},
+    author={Even-Dar, Eyal and Kakade, Sham M and Mansour, Yishay},
+    booktitle={Advances in neural information processing systems},
+    pages={401--408},
+    year={2005}
+}
+
+@book{young2004_strategic_cce,
+    title={Strategic learning and its limits},
+    author={Young, H Peyton},
+    year={2004},
+    publisher={OUP Oxford}
+}
+
+@inproceedings{nudelman2004_gamut,
+    author = {Nudelman, Eugene and Wortman, Jennifer and Shoham, Yoav and Leyton-Brown, Kevin},
+    title = {Run the {GAMUT}: A Comprehensive Approach to Evaluating Game-Theoretic Algorithms},
+    year = {2004},
+    isbn = {1581138644},
+    publisher = {IEEE Computer Society},
+    address = {USA},
+    abstract = {We present GAMUT, a suite of game generators designed for testing game-theoretic algorithms. We explain why such a generator is necessary, offer a way of visualizing relationships between the sets of games supported by GAMUT, and give an overview of GAMUT\'{y}s architecture. We highlight the importance of using comprehensive test data by benchmarking existing algorithms. We show surprisingly large variation in algorithm performance across different sets of games for two widely-studied problems: computing Nash equilibria and multiagent learning in repeated games.},
+    booktitle = {Proceedings of the Third International Joint Conference on Autonomous Agents and Multiagent Systems - Volume 2},
+    pages = {880–887},
+    numpages = {8},
+    location = {New York, New York},
+    series = {AAMAS '04}
+}
+
+@article{topsoe2004_entropy,
+    title={Entropy and equilibrium via games of complexity},
+    author={Tops{\o}e, Flemming},
+    journal={Physica A: Statistical Mechanics and its Applications},
+    volume={340},
+    number={1-3},
+    pages={11--31},
+    year={2004},
+    publisher={Elsevier}
+}
+
+@article{tax2004_svmsphere,
+    title={Support vector data description},
+    author={Tax, David MJ and Duin, Robert PW},
+    journal={Machine learning},
+    volume={54},
+    number={1},
+    pages={45--66},
+    year={2004},
+    publisher={Springer}
+}
+
+@article{nau2004_geometry_ce,
+    author={Robert Nau and Sabrina Gomez Canovas and Pierre Hansen},
+    title={On the geometry of {N}ash equilibria and correlated equilibria},
+    journal={International Journal of Game Theory},
+    year=2004,
+    volume={32},
+    number={4},
+    pages={443--453},
+    month={August},
+    keywords={C720},
+}
+
+@article{morris2004_best_response_equivalence,
+    title = {Best response equivalence},
+    journal = {Games and Economic Behavior},
+    volume = {49},
+    number = {2},
+    pages = {260-287},
+    year = {2004},
+    issn = {0899-8256},
+    doi = {https://doi.org/10.1016/j.geb.2003.12.004},
+    url = {https://www.sciencedirect.com/science/article/pii/S0899825604000132},
+    author = {Stephen Morris and Takashi Ui},
+    keywords = {Best response equivalence, Duality, Farkas' Lemma, Potential games},
+    abstract = {Two games are best-response equivalent if they have the same best-response correspondence. We provide a characterization of when two games are best-response equivalent. The characterizations exploit a dual relationship between payoff differences and beliefs. Some “potential game” arguments [Games Econ. Behav. 14 (1996) 124] rely only on the property that potential games are best-response equivalent to identical interest games. Our results show that a large class of games are best-response equivalent to identical interest games, but are not potential games. Thus we show how some existing potential game arguments can be extended.}
+}
+
+# Double Oracle.
+@inproceedings{mcmahan2003_double_oracle,
+    title={Planning in the presence of cost functions controlled by an adversary},
+    author={McMahan, H Brendan and Gordon, Geoffrey J and Blum, Avrim},
+    booktitle={Proceedings of the 20th International Conference on Machine Learning (ICML-03)},
+    pages={536--543},
+    year={2003}
+}
+
+@article{germano2006_geometry_of_nf_games,
+    author="Germano, Fabrizio",
+    title="On some geometry and equivalence classes of normal form games",
+    journal="International Journal of Game Theory",
+    year="2006",
+    month="Nov",
+    day="01",
+    volume="34",
+    number="4",
+    pages="561--581",
+    abstract="Equivalence classes of normal form games are defined using the discontinuities of correspondences of standard equilibrium concepts like correlated, Nash, and robust equilibrium, or risk dominance and rationalizability. Resulting equivalence classes are fully characterized and compared across different equilibrium concepts for 2 {\texttimes} 2 games; larger games are also studied. It is argued that the procedure leads to broad and game-theoretically meaningful distinctions of games as well as to alternative ways of representing, comparing and testing equilibrium concepts.",
+    issn="1432-1270",
+    doi="10.1007/s00182-006-0033-6",
+    url="https://doi.org/10.1007/s00182-006-0033-6"
+}
+
+@article{wellman2003_nashqlearning,
+    author = {Hu, Junling and Wellman, Michael},
+    year = {2003},
+    month = {01},
+    pages = {1039-1069},
+    title = {Nash {Q}-Learning for General-Sum Stochastic Games.},
+    volume = {4},
+    journal = {Journal of Machine Learning Research},
+    doi = {10.1162/1532443041827880}
+}
+
+@article{greenwald2003_ce_q,
+    author = {Greenwald, Amy and Hall, Keith},
+    title = {Correlated-{Q} Learning},
+    year = {2003},
+    isbn = {1577351894},
+    publisher = {AAAI Press},
+    booktitle = {Proceedings of the Twentieth International Conference on International Conference on Machine Learning},
+    pages = {242--249},
+    numpages = {8},
+    location = {Washington, DC, USA},
+    series = {ICML’03}
+}
+
+@article{huertasrosero2003_cartography_of_symmetric_2x2,
+    author    = {Alvaro Francisco Huertas{-}Rosero},
+    title     = {A Cartography for 2x2 Symmetric Games},
+    journal   = {CoRR},
+    volume    = {cs.GT/0312005},
+    year      = {2003},
+    url       = {http://arxiv.org/abs/cs/0312005},
+    timestamp = {Fri, 10 Jan 2020 12:59:28 +0100},
+    biburl    = {https://dblp.org/rec/journals/corr/cs-GT-0312005.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{hintonroweis2003_sne,
+    added-at = {2012-01-16T13:25:40.000+0100},
+    author = {Hinton, Geoffrey and Roweis, Sam},
+    biburl = {https://www.bibsonomy.org/bibtex/2a0d72c90aa3348858a647e7603ad7323/gromgull},
+    description = {Stochastic Neighbor Embedding | Mendeley},
+    editor = {S Becker, S Thrun and Obermayer, KEditors},
+    interhash = {e29fa9b96e5445390b32830bc42e69ca},
+    intrahash = {a0d72c90aa3348858a647e7603ad7323},
+    journal = {Advances in neural information processing systems},
+    keywords = {dimensionality-reduction embedding machine-learning visualisation},
+    pages = {833--840},
+    publisher = {Citeseer},
+    timestamp = {2012-01-16T13:25:40.000+0100},
+    title = {Stochastic Neighbor Embedding},
+    url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.13.7959&rep=rep1&type=pdf},
+    volume = 15,
+    year = 2003
+}
+
+@article{campbell2002_deepblue,
+    title = {Deep Blue},
+    journal = {Artificial Intelligence},
+    volume = {134},
+    number = {1},
+    pages = {57-83},
+    year = {2002},
+    issn = {0004-3702},
+    doi = {https://doi.org/10.1016/S0004-3702(01)00129-1},
+    url = {https://www.sciencedirect.com/science/article/pii/S0004370201001291},
+    author = {Murray Campbell and A.Joseph Hoane and Feng-hsiung Hsu},
+    keywords = {Computer chess, Game tree search, Parallel search, Selective search, Search extensions, Evaluation function},
+    abstract = {Deep Blue is the chess machine that defeated then-reigning World Chess Champion Garry Kasparov in a six-game match in 1997. There were a number of factors that contributed to this success, including: •a single-chip chess search engine,•a massively parallel system with multiple levels of parallelism,•a strong emphasis on search extensions,•a complex evaluation function, and•effective use of a Grandmaster game database. This paper describes the Deep Blue system, and gives some of the rationale that went into the design decisions behind Deep Blue.}
+}
+
+@article{walsh2002_egta,
+    author = {Walsh, William and Das, Rajarshi and Tesauro, Gerald and Kephart, Jeffrey},
+    year = {2002},
+    month = {01},
+    pages = {},
+    title = {Analyzing Complex Strategic Interactions in Multi-Agent Systems}
+}
+
+@article{billings2002_challenge_of_poker,
+    author = {Darse Billings and Aaaron Davidson and Jonathen Schaeffer and Duane Szafron},
+    title = {The Challenge of Poker},
+    journal = {Artificial Intelligence},
+    volume = {134},
+    number = {1--2},
+    pages = {201--240},
+    year = {2002},
+}
+
+@inproceedings{billings2003_approx_poker,
+    author = {Darse Billings and Neil Burch and Aaaron Davidson and Robert Holte and Jonathan Schaeffer and Terence Schauenberg and Duane Szafron},
+    title = {Approximating Game-Theoretic Optimal Strategies for Full-scale Poker},
+    booktitle = {Proceedings of the Eighteenth International Joint Conference on Artificial Intelligence (IJCAI)},
+    pages =  {661--668},
+    year = 2003,
+}
+
+@article{harold2002_atlas_of_interpersonal_situations,
+    author = {Kelley, Harold and Holmes, John and Kerr, Norbert and Reis, Harry and Rusbult, Caryl and Lange, Paul},
+    year = {2002},
+    month = {01},
+    pages = {},
+    title = {An Atlas of Interpersonal Situations},
+    isbn = {9780521011808},
+    doi = {10.1017/CBO9780511499845}
+}
+
+@inbook{schmidtchen2002_samaritan_revisted,
+    author="Schmidtchen, Dieter",
+    editor="Brennan, Geoffrey
+    and Kliemt, Hartmut
+    and Tollison, Robert D.",
+    title="To Help or Not to Help: The Samaritan's Dilemma Revisited",
+    bookTitle="Method and Morals in Constitutional Economics: Essays in Honor of James M. Buchanan",
+    year="2002",
+    publisher="Springer Berlin Heidelberg",
+    address="Berlin, Heidelberg",
+    pages="470--484",
+    abstract="Helping somebody may undermine his incentives to work. What Buchanan identified more than 25 years ago as the Samaritan's dilemma is basically a time-inconsistency problem. The paper discusses possible solutions of the dilemma such as punishment within an iterated game, reshaping the game in the direction of a dynamic one-shot game and the delegation of the power of decision to an agent. The paper shows that only the latter option works.",
+    isbn="978-3-662-04810-8",
+    doi="10.1007/978-3-662-04810-8_28",
+    url="https://doi.org/10.1007/978-3-662-04810-8_28"
+}
+
+
+@inproceedings{littman2001_friendorfoe,
+    author = {Michael L. Littman},
+    title = {Friend or foe {Q}-Learning in general-sum games},
+    booktitle = {In Proceedings of the 18th Int. Conf. on Machine Learning},
+    year = {2001}
+}
+
+@article{herbrich2001_bayes_point_machine,
+    author = {Herbrich, Ralf and Graepel, Thore and Campbell, Colin},
+    title = {Bayes Point Machines},
+    year = {2001},
+    issue_date = {9/1/2001},
+    publisher = {JMLR.org},
+    volume = {1},
+    issn = {1532-4435},
+    month = sep,
+    pages = {245--279},
+    numpages = {35}
+}
+
+@article{moravec2000_brain_tflops,
+    author = {Moravec, Hans},
+    month = {December},
+    year = {2000},
+    title = {Robots, Re-Evolving Mind},
+    publisher={Robotics Institute, Carnegie Mellon University},
+    url = {https://frc.ri.cmu.edu/~hpm/project.archive/robot.papers/2000/Cerebrum.html},
+}
+
+@inproceedings{gers2000_peephole_lstm,
+    author = {Gers, Felix and Schmidhuber, Jurgen},
+    year = {2000},
+    month = {02},
+    pages = {189 - 194 vol.3},
+    title = {Recurrent nets that time and count},
+    volume = {3},
+    isbn = {0-7695-0619-4},
+    journal = {Proceedings of the International Joint Conference on Neural Networks},
+    doi = {10.1109/IJCNN.2000.861302}
+}
+
+@article{hart2000_regret_matching,
+    author =      {S. Hart and A. Mas-Colell},
+    title =       {A Simple Adaptive Procedure Leading to Correlated Equilibrium},
+    journal =     {Econometrica},
+    volume =      {68},
+    number =      {5},
+    pages =       {1127--1150},
+    year =        2000
+}
+
+@inproceedings{badia2020_discounted_epxloration,
+    title = {Never Give Up: Learning Directed Exploration Strategies},
+    author = {Adri\'{a} Puigdom\'{e}nech Badia and Pablo Sprechmann and et al.},
+    booktitle = {International Conference on Learning Representations (ICLR)},
+    year = 2020
+}
+
+@article{hart2000_ce,
+    author =      {S. Hart and A. Mas-Colell},
+    title =       {A Simple Adaptive Procedure Leading to Correlated Equilibrium},
+    journal =     {Econometrica},
+    volume =      {68},
+    number =      {5},
+    pages =       {1127--1150},
+    year =        2000
+}
+
+@inproceedings{precup2000_eligibility_trace,
+    author = {D. Precup and R.S. Sutton and S. Singh},
+    title = {Eligibility traces for off-policy policy evaluation},
+    booktitle = {ICML},
+    year = 2000
+}
+
+@article{tsallis2000_unique,
+    author = {Abe, Sumiyoshi},
+    year = {2000},
+    month = {06},
+    pages = {74--79},
+    title = {Axioms and uniqueness theorem for Tsallis entropy},
+    volume = {271},
+    journal = {Physics Letters A},
+}
+
+@inproceedings{scholkopf2000_oneclass,
+    title={Support vector method for novelty detection},
+    author={Sch{\"o}lkopf, Bernhard and Williamson, Robert C and Smola, Alex J and Shawe-Taylor, John and Platt, John C},
+    booktitle={Advances in neural information processing systems},
+    pages={582--588},
+    year={2000}
+}
+
+# cryptographic protocol: used to sample from ce
+@inproceedings{dodis2000_cryptographic_protocol,
+    author={Dodis, Yevgeniy
+    and Halevi, Shai
+    and Rabin, Tal},
+    editor={Bellare, Mihir},
+    title={A Cryptographic Solution to a Game Theoretic Problem},
+    booktitle={Advances in Cryptology --- CRYPTO 2000},
+    year={2000},
+    publisher={Springer Berlin Heidelberg},
+    address={Berlin, Heidelberg},
+    pages={112--130},
+    abstract={In this work we use cryptography to solve a game-theoretic problem which arises naturally in the area of two party strategic games. The standard game-theoretic solution concept for such games is that of an equilibrium, which is a pair of ``self-enforcing'' strategies making each player's strategy an optimal response to the other player's strategy. It is known that for many games the expected equilibrium payo.s can be much higher when a trusted third party (a ``mediator'') assists the players in choosing their moves (correlated equilibria), than when each player has to choose its move on its own (Nash equilibria). It is natural to ask whether there exists a mechanism that eliminates the need for the mediator yet allows the players to maintain the high payo.s o.ered by mediator-assisted strategies. We answer this question a.rmatively provided the players are computationally bounded and can have free communication (so-called ``cheap talk'') prior to playing the game.},
+    isbn={978-3-540-44598-2}
+}
+
+# Also has functio approximation compatibility
+@inproceedings{sutton1999_policygradient,
+    author = {Sutton, Richard S. and McAllester, David and Singh, Satinder and Mansour, Yishay},
+    title = {Policy Gradient Methods for Reinforcement Learning with Function Approximation},
+    booktitle = {Proceedings of the 12th International Conference on Neural Information Processing Systems},
+    series = {NIPS'99},
+    year = {1999},
+    location = {Denver, CO},
+    pages = {1057--1063},
+    numpages = {7},
+    url = {http://dl.acm.org/citation.cfm?id=3009657.3009806},
+    acmid = {3009806},
+    publisher = {MIT Press},
+    address = {Cambridge, MA, USA},
+}
+
+@article{mckelvey1998_qre_efg,
+    author="Mckelvey, Richard D.
+    and Palfrey, Thomas R.",
+    title="Quantal Response Equilibria for Extensive Form Games",
+    journal="Experimental Economics",
+    year="1998",
+    month="Jun",
+    day="01",
+    volume="1",
+    number="1",
+    pages="9--41",
+    abstract="This article investigates the use of standard econometric models for quantal choice to study equilibria of extensive form games. Players make choices based on a quantal-choice model and assume other players do so as well. We define an agent quantal response equilibrium (AQRE), which applies QRE to the agent normal form of an extensive form game and imposes a statistical version of sequential rationality. We also define a parametric specification, called logit-AQRE, in which quantal-choice probabilities are given by logit response functions. AQRE makes predictions that contradict the invariance principle in systematic ways. We show that these predictions match up with some experimental findings by Schotter et al. (1994) about the play of games that differ only with respect to inessential transformations of the extensive form. The logit-AQRE also implies a unique selection from the set of sequential equilibria in generic extensive form games. We examine data from signaling game experiments by Banks et al. (1994) and Brandts and Holt (1993). We find that the logit-AQRE selection applied to these games succeeds in predicting patterns of behavior observed in these experiments, even when our prediction conflicts with more standard equilibrium refinements, such as the intuitive criterion. We also reexamine data from the McKelvey and Palfrey (1992) centipede experiment and find that the AQRE model can account for behavior that had previously been explained in terms of altruistic behavior.",
+    issn="1573-6938",
+    doi="10.1023/A:1009905800005",
+    url="https://doi.org/10.1023/A:1009905800005"
+}
+
+
+@inproceedings{hu1998_nash_q,
+    author = {Hu, Junling and Wellman, Michael P.},
+    title = {Multiagent Reinforcement Learning: Theoretical Framework and an Algorithm},
+    year = {1998},
+    isbn = {1558605568},
+    publisher = {Morgan Kaufmann Publishers Inc.},
+    address = {San Francisco, CA, USA},
+    booktitle = {Proceedings of the Fifteenth International Conference on Machine Learning},
+    pages = {242–250},
+    numpages = {9},
+    series = {ICML '98}
+}
+
+@book{sutton1998_intro_rl,
+    author = {Sutton, Richard S. and Barto, Andrew G.},
+    edition = {Second},
+    keywords = {},
+    publisher = {The MIT Press},
+    timestamp = {2019-07-13T10:11:53.000+0200},
+    title = {Reinforcement Learning: An Introduction},
+    url = {http://incompleteideas.net/book/the-book-2nd.html},
+    year = {2018 }
+}
+
+@article{myerson1997_dual_reduction,
+    title = {Dual Reduction and Elementary Games},
+    journal = {Games and Economic Behavior},
+    volume = {21},
+    number = {1},
+    pages = {183--202},
+    year = {1997},
+    issn = {0899-8256},
+    author = {Roger B. Myerson},
+}
+
+@article{foster1997_calibrated_ce,
+    title = {Calibrated Learning and Correlated Equilibrium},
+    author = {Dean P. Foster and Rakesh V. Vohra},
+    journal = {Games and Economic Behavior},
+    volume = 21,
+    pages = {40--55},
+    year = 1997
+}
+
+@article{kollerpfeffer1997_representations,
+    author={Daphne Koller and Avi Pfeffer},
+    title={Representations and solutions for game-theoretic problems},
+    journal={Artificial Intelligence},
+    volume={94},
+    year={1997},
+    pages={167--215},
+}
+
+@book{casti1996_greatest_theories,
+    title={Five Golden Rules: Great Theories of 20th-Century Mathematics--and Why They Matter},
+    author={Casti, J.},
+    isbn={9780471002611},
+    lccn={lc94044470},
+    year={1996},
+    publisher={Wiley}
+}
+
+@article{kaelbling1996_rl_survey,
+    author    = {Leslie Pack Kaelbling and
+               Michael L. Littman and
+               Andrew W. Moore},
+    title     = {Reinforcement Learning: {A} Survey},
+    journal   = {CoRR},
+    volume    = {cs.AI/9605103},
+    year      = {1996},
+    url       = {https://arxiv.org/abs/cs/9605103},
+    biburl    = {https://dblp.org/rec/journals/corr/cs-AI-9605103.bib},
+    bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{wood1996_invariant_neural_networks,
+    title = {Representation theory and invariant neural networks},
+    journal = {Discrete Applied Mathematics},
+    volume = {69},
+    number = {1},
+    pages = {33-60},
+    year = {1996},
+    issn = {0166-218X},
+    doi = {https://doi.org/10.1016/0166-218X(95)00075-3},
+    url = {https://www.sciencedirect.com/science/article/pii/0166218X95000753},
+    author = {Jeffrey Wood and John Shawe-Taylor},
+    abstract = {A feedforward neural network is a computational device used for pattern recognition. In many recognition problems, certain transformations exist which, when applied to a pattern, leave its classification unchanged. Invariance under a given group of transformations is therefore typically a desirable property of pattern classifiers. In this paper, we present a methodology, based on representation theory, for the construction of a neural network invariant under any given finite linear group. Such networks show improved generalization abilities and may also learn faster than corresponding networks without in-built invariance. We hope in the future to generalize this theory to approximate invariance under continuous groups.}
+}
+
+@book{mascolell1995_micro,
+    author={Mas-Colell, Andreu and Whinston, Michael D. and Green, Jerry R.},
+    title={Microeconomic Theory},
+    publisher={Oxford University Press},
+    year={1995},
+}
+
+@inproceedings{cortes95_svm,
+    author = {Corinna Cortes and Vladimir Vapnik},
+    title = {Support-Vector Networks},
+    booktitle = {Machine Learning},
+    year = {1995},
+    pages = {273--297}
+}
+
+@article{byrd1995_lbfgsb,
+    title = {A limited memory algorithm for bound constrained optimization},
+    author = {Byrd, {Richard H.} and Peihuang Lu and Jorge Nocedal and Ciyou Zhu},
+    year = "1995",
+    month = sep,
+    language = "English",
+    volume = "16",
+    pages = "1190--1208",
+    journal = "SIAM Journal of Scientific Computing",
+    issn = "1064-8275",
+    publisher = "Society for Industrial and Applied Mathematics Publications",
+}
+
+@article{mckelvey1995_qre_lle_nf,
+    title = {Quantal Response Equilibria for Normal Form Games},
+    journal = {Games and Economic Behavior},
+    volume = {10},
+    number = {1},
+    pages = {6-38},
+    year = {1995},
+    issn = {0899-8256},
+    doi = {https://doi.org/10.1006/game.1995.1023},
+    url = {https://www.sciencedirect.com/science/article/pii/S0899825685710238},
+    author = {Richard D. McKelvey and Thomas R. Palfrey},
+    abstract = {We investigate the use of standard statistical models for quantal choice in a game theoretic setting. Players choose strategies based on relative expected utility and assume other players do so as well. We define a quantal response equilibrium (ORE) as a fixed point of this process and establish existence. For a logit specification of the error structure, we show that as the error goes to zero, QRE approaches a subset of Nash equilibria and also implies a unique selection from the set of Nash equilibria in generic games. We fit the model to a variety of experimental data sets by using maximum likelihood estimation. Journal of Economic Literature Classification Numbers: C19, C44, C72, C92.}
+}
+
+@article{tesauro1995_td_backgammon,
+    author = {Tesauro, Gerald},
+    title = {{Temporal Difference Learning and TD-Gammon}},
+    year = {1995},
+    issue_date = {March 1995},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {38},
+    number = {3},
+    issn = {0001-0782},
+    url = {https://doi.org/10.1145/203330.203343},
+    doi = {10.1145/203330.203343},
+    abstract = {Ever since the days of Shannon's proposal for a chess-playing algorithm [12] and Samuel's checkers-learning program [10] the domain of complex board games such as Go, chess, checkers, Othello, and backgammon has been widely regarded as an ideal testing ground for exploring a variety of concepts and approaches in artificial intelligence and machine learning. Such board games offer the challenge of tremendous complexity and sophistication required to play at expert level. At the same time, the problem inputs and performance measures are clear-cut and well defined, and the game environment is readily automated in that it is easy to simulate the board, the rules of legal play, and the rules regarding when the game is over and determining the outcome.},
+    journal = {Commun. ACM},
+    month = {mar},
+    pages = {58–68},
+    numpages = {11}
+}
+
+@article{barto1995_real_time_dynamic_programming,
+    author = {Barto, Andrew G. and Bradtke, Steven J. and Singh, Satinder P.},
+    title = {Learning to Act Using Real-Time Dynamic Programming},
+    year = {1995},
+    issue_date = {January, 1995},
+    publisher = {Elsevier Science Publishers Ltd.},
+    address = {GBR},
+    volume = {72},
+    number = {1–2},
+    issn = {0004-3702},
+    abstract = {Learning methods based on dynamic programming (DP) are receiving increasing attention in artificial intelligence. Researchers have argued that DP provides the appropriate basis for compiling planning results into reactive strategies for real-time control, as well as for learning such strategies when the system being controlled is incompletely known. We introduce an algorithm based on DP, which we call Real-Time DP (RTDP), by which an embedded system can improve its performance with experience. RTDP generalizes Korf's Learning-Real-Time-A^* algorithm to problems involving uncertainty. We invoke results from the theory of asynchronous DP to prove that RTDP achieves optimal behavior in several different classes of problems. We also use the theory of asynchronous DP to illuminate aspects of other DP-based reinforcement learning methods such as Watkins' Q-Learning algorithm. A secondary aim of this article is to provide a bridge between AI research on real-time planning and learning and relevant concepts and algorithms from control theory.},
+    journal = {Artif. Intell.},
+    month = jan,
+    pages = {81--138},
+    numpages = {58}
+}
+
+@inprocedings{shawtaylor1994_invariant_weight_sharing,
+    author={Shawe-Taylor, J.},
+    booktitle={Proceedings of 1994 IEEE International Conference on Neural Networks (ICNN'94)}, 
+    title={Introducing invariance: a principled approach to weight sharing}, 
+    year={1994},
+    volume={1},
+    number={},
+    pages={345-349 vol.1},
+    doi={10.1109/ICNN.1994.374187}
+}
+
+@book{binmore1994_social_contract,
+    title={Game Theory and the Social Contract: Just playing},
+    author={Binmore, K.G. and Binmore, E.P.E.K.},
+    isbn={9780262024440},
+    lccn={lc93029610},
+    series={Economic Learning and Social Evolution Series},
+    year={1994},
+    publisher={MIT Press}
+}
+
+@book{ostrom1994_rules,
+    title={Rules, Games, and Common-pool Resources},
+    author={Ostrom, E. and Gardner, R. and Walker, J. and Walker, J.},
+    isbn={9780472065462},
+    lccn={93044406},
+    series={ACLS Humanities E-Book},
+    year={1994},
+    publisher={University of Michigan Press}
+}
+
+@article{shawtaylor1993_symmetries,
+    title={Symmetries and discriminability in feedforward network architectures},
+    author={John Shawe-Taylor},
+    journal={IEEE transactions on neural networks},
+    year={1993},
+    volume={4 5},
+    pages={816-26}
+}
+
+@article{moore1993_prioritized_sweeping,
+	year = 1993,
+	month = {oct},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {13},
+	number = {1},
+	pages = {103--130},
+	author = {Andrew W. Moore and Christopher G. Atkeson},
+	title = {Prioritized sweeping: Reinforcement learning with less data and less time},
+	journal = {Machine Learning}
+}
+
+@inbook{brams1993_theory_of_moves,
+    place={Cambridge},
+    title={Introduction},
+    DOI={10.1017/CBO9780511558979.001},
+    booktitle={Theory of Moves},
+    publisher={Cambridge University Press},
+    author={Brams, Steven J.},
+    year={1993},
+    pages={1–18}
+}
+
+@techreport{williams1993_tight_performance,
+    author = {Ronald Williams and Leemon C. Baird and III},
+    title = {Tight Performance Bounds on Greedy Policies Based on Imperfect Value Functions},
+    institution = {},
+    year = {1993}
+}
+
+@article{williams1992_reinforce,
+    author = { R.J. Williams},
+    title = {Simple statistical gradient-following algorithms
+    for connectionist reinforcement learning},
+    journal = {Machine Learning},
+    volume = 8,
+    number = 3,
+    pages = {229-256},
+    year = 1992,
+}
+
+@book{fudenberg1991_game_theoy,
+  added-at = {2006-09-28T16:53:07.000+0200},
+  author = {Fudenberg, Drew and Tirole, Jean},
+  biburl = {https://www.bibsonomy.org/bibtex/28a9a64cbed48fde7e1d02227c34cf1e7/gerhard},
+  interhash = {63b5849a7f7b190d27e33742235ad1b3},
+  intrahash = {8a9a64cbed48fde7e1d02227c34cf1e7},
+  keywords = {Theory"},
+  owner = {riener},
+  publisher = {MIT Press},
+  timestamp = {2006-09-28T16:53:07.000+0200},
+  title = {Game Theory},
+  year = 1991
+}
+
+@article{fishburn1990_binary_2x2_games,
+    author="Fishburn, Peter C.
+    and Kilgour, D. Marc",
+    title="Binary 2 {\texttimes} 2 games",
+    journal="Theory and Decision",
+    year="1990",
+    month="Nov",
+    day="01",
+    volume="29",
+    number="3",
+    pages="165--182",
+    abstract="The 2 {\texttimes} 2 game is the simplest interactive decision model that portrays concerned decision makers with genuine choices. There are two players, each of whom must choose one of two strategies, so that there are four possible outcomes. Binary 2 {\texttimes} 2 games are 2 {\texttimes} 2 games with no restrictions on the players' preference relations over the outcomes. They therefore generalize the strict ordinal 2 {\texttimes} 2 games and the ordinal 2 {\texttimes} 2 games, classes which have already been studied extensively. This paper enumerates the strategically distinct binary 2 {\texttimes} 2 games. It also identifies important subsets defined by the number of pure Nash equilibria and the occurrence of dominant strategies.",
+    issn="1573-7187",
+    doi="10.1007/BF00126800",
+    url="https://doi.org/10.1007/BF00126800"
+}
+
+@article{tsallis1988_entropy,
+    author = {Tsallis, Constantino},
+    year = {1988},
+    pages = {479--487},
+    title = {Possible generalization of {B}oltzmann-{G}ibbs statistics},
+    volume = {52},
+    journal = {Journal of Statistical Physics},
+}
+
+@article{walliser1988_simplifed_taxonomy_2x2,
+    author="Walliser, Bernard",
+    title="A simplified taxonomy of 2 {\texttimes} 2 games",
+    journal="Theory and Decision",
+    year="1988",
+    month="Sep",
+    day="01",
+    volume="25",
+    number="2",
+    pages="163--191",
+    abstract="All 2 {\texttimes} 2 games are classified into eight configurations, following three natural criteria, and prototypes given for each, especially as concerns the Newcomb and chain-store paradoxes. Two pseudo-dynamic properties, move priority and dynamic inconsistency, are examined in that framework, as well as more specifically, the problem of the origin of social institutions.",
+    issn="1573-7187",
+    doi="10.1007/BF00134158",
+    url="https://doi.org/10.1007/BF00134158"
+}
+
+
+
+@book{harsanyi1988_eq_selection,
+    title = {A General Theory of Equilibrium Selection in Games},
+    author = {Harsanyi, John and Selten, Reinhard},
+    year = {1988},
+    volume = {1},
+    edition = {1},
+    publisher = {The MIT Press},
+}
+
+@article{hochreiter1997_lstm,
+    title={Long short-term memory},
+    author={Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+    journal={Neural computation},
+    volume={9},
+    number={8},
+    pages={1735--1780},
+    year={1997},
+    publisher={MIT Press}
+}
+
+@article{schaller1997_moores_law,
+    author = {Schaller, Robert R.},
+    title = {Moore's Law: Past, Present, and Future},
+    year = {1997},
+    issue_date = {June 1997},
+    publisher = {IEEE Press},
+    volume = {34},
+    number = {6},
+    issn = {0018-9235},
+    url = {https://doi.org/10.1109/6.591665},
+    doi = {10.1109/6.591665},
+    abstract = {A simple observation, made over 30 years ago, on the growth in the number of devices per silicon die has become the central driving force of one of the most dynamic of the world's industries. Because of the accuracy with which Moore's Law has predicted past growth in IC complexity, it is viewed as a reliable method of calculating future trends as well, setting the pace of innovation, and defining the rules and the very nature of competition. And since the semiconductor portion of electronic consumer products keeps growing by leaps and bounds, the Law has aroused in users and consumers an expectation of a continuous stream of faster, better, and cheaper high-technology products. Even the policy implications of Moore's Law are significant: it is used as the baseline assumption in the industry's strategic road map for the next decade and a half},
+    journal = {IEEE Spectr.},
+    month = {jun},
+    pages = {52–59},
+    numpages = {8}
+}
+
+@article{kilgour1988_taxonomy_of_all_ordinal_2x2_games,
+    title={A taxonomy of all ordinal 2 × 2 games},
+    author={D. Marc Kilgour and Niall M. Fraser},
+    journal={Theory and Decision},
+    year={1988},
+    volume={24},
+    pages={99-117}
+}
+
+@book{organick1988_atan2,
+    title     = "A FORTRAN IV Primer.",
+    author    = "Organick, Elliott I.",
+    year      = 1966,
+    publisher = "Addison-Wesley",
+    pages = "42",
+}
+
+@article{barany1987_volume_hard,
+    author = {B\'{a}r\'{a}ny, Imre and F\"{u}redi, Zolt\'{a}n},
+    title = {Computing the Volume is Difficult},
+    year = {1987},
+    issue_date = {December 1987},
+    publisher = {Springer-Verlag},
+    address = {Berlin, Heidelberg},
+    volume = {2},
+    number = {4},
+    issn = {0179-5376},
+    journal = {Discrete Comput. Geom.},
+    month = dec,
+    pages = {319--326},
+    numpages = {8}
+}
+
+@article{borm1987_classification_of_2x2_games,
+    title = "A classification of 2x2 bimatrix games",
+    author = "P.E.M. Borm",
+    note = "Pagination: 16",
+    year = "1987",
+    language = "English",
+    volume = "29",
+    pages = "69--84",
+    journal = "Cahiers du Centre d'{\'E}tudes de Recherche Op{\'e}rationnelle",
+    issn = "0008-9737",
+    publisher = "Universit{\'e} libre de Bruxelles, Centre d'{\'e}tudes de recherche op{\'e}rationnelle",
+    number = "1-2",
+}
+
+@book{gauthier1986_morals_by_agreement,
+	publisher = {Oxford, GB: Oxford University Press},
+	author = {David Gauthier},
+	year = {1986},
+	title = {Morals by Agreement}
+}
+
+@article{rumelhart1986_backpropagation,
+    author = {{Rumelhart}, David E. and {Hinton}, Geoffrey E. and
+    {Williams}, Ronald J.},
+    title = {Learning representations by back-propagating errors},
+    journal = {Nature},
+    year = 1986,
+    month = oct,
+    volume = {323},
+    number = {6088},
+    pages = {533--536},
+}
+
+@article{fraser1986_non_strict_2x2_games,
+    author="Fraser, Niall M.
+    and Kilgour, D. Marc",
+    title="Non-strict ordinal 2×2 games: A comprehensive computer-assisted analysis of the 726 possibilities",
+    journal="Theory and Decision",
+    year="1986",
+    month="Mar",
+    day="01",
+    volume="20",
+    number="2",
+    pages="99--121",
+    abstract="Game theory has provided many tools for the study of social conflict. The 2×2 game has been found to be a particularly useful model. This paper describes the enumeration and analysis of all 726 distinct 2×2 games. A computer is used to generate the complete set, and a wide variety of maximin, equilibrium and stability calculations is performed for each player for every outcome in every game. The resulting data set is of great value for both the modeling and analysis of social conflict.",
+    issn="1573-7187",
+    doi="10.1007/BF00135087",
+    url="https://doi.org/10.1007/BF00135087"
+}
+
+@article{wilkinson1984_vampire_bat,
+    author="Wilkinson, Gerald S.",
+    title="Reciprocal food sharing in the vampire bat",
+    journal="Nature",
+    year="1984",
+    month="Mar",
+    day="01",
+    volume="308",
+    number="5955",
+    pages="181--184",
+    abstract="Behavioural reciprocity can be evolutionarily stable1--3. Initial increase in frequency depends, however, on reciprocal altruists interacting predominantly with other reciprocal altruists either by associating within kin groups or by having sufficient memory to recognize and not aid nonreciprocators. Theory thus suggests that reciprocity should evolve more easily among animals which live in kin groups. Data are available separating reciprocity from nepotism only for unrelated nonhuman animals4. Here, I show that food sharing by regurgitation of blood among wild vampire bats (Desmodus rotundus) depends equally and independently on degree of relatedness and an index of opportunity for recipro cation. That reciprocity operates within groups containing both kin and nonkin is supported further with data on the availability of blood-sharing occasions, estimates of the economics of sharing blood, and experiments which show that unrelated bats will reciprocally exchange blood in captivity.",
+    issn="1476-4687",
+    doi="10.1038/308181a0",
+    url="https://doi.org/10.1038/308181a0"
+}
+
+@book{breiman1984_cart,
+    address = {Monterey, CA},
+    author = {Breiman, L. and Friedman, J. H. and Olshen, R. A. and Stone, C. J.},
+    publisher = {Wadsworth and Brooks},
+    title = {Classification and Regression Trees},
+    year = 1984
+}
+
+@article{fishburn1984_maximal_lottery,
+    ISSN = {00346527, 1467937X},
+    URL = {http://www.jstor.org/stable/2297786},
+    abstract = {A social choice procedure is developed for selecting an alternative from a finite set on the basis of paired-comparison voting. Ballot data are used to construct a lottery on the alternatives that is socially as preferred as every other lottery. The constructed lottery is then used to select a winner. An axiomatization of social preferences among lotteries that justifies the procedure is included. The procedure will always select a consensus majority alternative when one exists, and it will never select an alternative that is Pareto dominated by another alternative.},
+    author = {P. C. Fishburn},
+    journal = {The Review of Economic Studies},
+    number = {4},
+    pages = {683--692},
+    publisher = {[Oxford University Press, Review of Economic Studies, Ltd.]},
+    title = {Probabilistic Social Choice Based on Simple Voting Comparisons},
+    volume = {51},
+    year = {1984}
+}
+
+@article {oleary1980_cg,
+	title = {A generalized conjugate gradient algorithm for solving a class of quadratic programming problems},
+	journal = {Linear Algebra and its Applications},
+	volume = {34},
+	year = {1980},
+	month = {1980/12//},
+	pages = {371--399},
+	isbn = {0024-3795},
+	author = {O{\textquoteright}Leary, Dianne P.}
+}
+
+@article{sinn1980_insufficient_reason,
+    author = {Sinn, Hans-Werner},
+    title = "{A Rehabilitation of the Principle of Insufficient Reason}",
+    journal = {The Quarterly Journal of Economics},
+    volume = {94},
+    number = {3},
+    pages = {493--506},
+    year = {1980},
+    month = {05},
+}
+
+@article{moulin1978_cce,
+    title={Strategically zero-sum games: the class of games whose completely mixed equilibria cannot be improved upon},
+    author={Moulin, Herv{\'e} and Vial, J-P},
+    journal={International Journal of Game Theory},
+    volume={7},
+    number={3-4},
+    pages={201--221},
+    year={1978},
+    publisher={Springer}
+}
+
+@book{elo1978_rating,
+    address = {New York},
+    author = {Elo, Arpad E.},
+    isbn = {0668047216 9780668047210},
+    publisher = {Arco Pub.},
+    refid = {4504131},
+    timestamp = {2013-10-27T23:36:38.000+0100},
+    title = {The rating of chess players, past and present},
+    year = 1978
+}
+
+@Article{rosenthal1974_best_response_zero_sum,
+    author="Rosenthal, R. W.",
+    title="Correlated equilibria in some classes of two-person games",
+    journal="International Journal of Game Theory",
+    year="1974",
+    month="Sep",
+    day="01",
+    volume="3",
+    number="3",
+    pages="119--128",
+    abstract="A correlated equilibrium in a two-person game is ``good'' if for every Nash equilibrium there is a player who prefers the correlated equilibrium to the Nash equilibrium. If a game is ``best-response equivalent'' to a two-person zero-sum game, then it has no good correlated equilibria. But games which are ``almost strictly competitive'' or ``order equivalent'' to a two-person zero-sum game may have good correlated equilibria.",
+    issn="1432-1270",
+    doi="10.1007/BF01763252",
+    url="https://doi.org/10.1007/BF01763252"
+}
+
+@article{puterman1976_modified_policy_iteration,
+    author = {Puterman, Martin L. and Shin, Moon Chirl},
+    title = {Modified Policy Iteration Algorithms for Discounted Markov Decision Problems},
+    journal = {Management Science},
+    volume = {24},
+    number = {11},
+    pages = {1127--1137},
+    year = {1978},
+}
+
+@article{nunen1976_modified_policy_iteration,
+    title={A set of successive approximation methods for discounted Markovian decision problems},
+    author={J. Nunen},
+    journal={Zeitschrift f{\"u}r Operations Research},
+    year={1976},
+    volume={20},
+    pages={203--208}
+}
+
+@book{rapoport1976_the_2x2_game_book,
+    author = {Rapoport, Anatol and Guyer, Melvin and Gordon, David G},
+    title = { The 2 X 2 game},
+    isbn = { 0472087428 },
+    publisher = { University of Michigan Press Ann Arbor },
+    pages = { x, 461 p. : },
+    year = { 1976 },
+    type = { Book },
+    language = { English },
+    subjects = { Game theory. },
+    life-dates = { 1976 -  },
+    catalogue-url = { https://nla.gov.au/nla.cat-vn2127005 },
+}
+
+@inbook{buchanan1975_samaritans_dilemma,
+    ISBN = {9780871546593},
+    URL = {http://www.jstor.org/stable/10.7758/9781610446792.10},
+    abstract = {This paper is an essay in prescriptive diagnosis. It represents my attempt to show that many different “social problems” can be analyzed as separate symptoms of the same disease. The diagnosis, as such, may be accepted without agreeing that the disease amounts to much or that, indeed, it is disease at all. Prescription for improvement or cure is suggested only if the disease is acknowledged to be serious. Even if the diagnosis and prescription be accepted, however, prospects for “better social health” may not be bright because, as the analysis demonstrates, the source of difficulty may lie in modern man’s},
+    author = {James M. Buchanan},
+    booktitle = {Altruism, Morality, and Economic Theory},
+    pages = {71--86},
+    publisher = {Russell Sage Foundation},
+    title = {The Samaritan’s Dilemma},
+    urldate = {2023-01-09},
+    year = {1975}
+}
+
+@article{selten1975_perfect_equilibrium,
+    affiliation = {Institute of Mathematical Economics University of Bielefeld Schloß Rheda 484 Rheda Germany},
+    author = {Selten, R.},
+    issn = {0020-7276},
+    issue = {1},
+    journal = {International Journal of Game Theory},
+    keyword = {Business and Economics},
+    keywords = {equilibrium extensive game games theory},
+    note = {10.1007/BF01766400},
+    pages = {25-55},
+    publisher = {Physica Verlag, An Imprint of Springer-Verlag GmbH},
+    timestamp = {2010-09-16T15:21:14.000+0200},
+    title = {Reexamination of the perfectness concept for equilibrium points in extensive games},
+    url = {http://dx.doi.org/10.1007/BF01766400},
+    volume = 4,
+    year = 1975
+}
+
+@article{aumann1974_ce,
+    title = {Subjectivity and correlation in randomized strategies},
+    author = {Aumann, Robert},
+    year = {1974},
+    journal = {Journal of Mathematical Economics},
+    volume = {1},
+    number = {1},
+    pages = {67--96},
+}
+
+@article{nei1973_analysis,
+    title={Analysis of gene diversity in subdivided populations},
+    author={Nei, Masatoshi},
+    journal={Proceedings of the National Academy of Sciences},
+    volume={70},
+    number={12},
+    pages={3321--3323},
+    year={1973},
+    publisher={National Acad Sciences}
+}
+
+@article{hurlbert1971_pie,
+    author = {Hurlbert, Stuart H.},
+    title = {The Nonconcept of Species Diversity: A Critique and Alternative Parameters},
+    journal = {Ecology},
+    volume = {52},
+    number = {4},
+    pages = {577--586},
+    year = {1971}
+}
+
+@article{polyak1969_con_cg,
+    author = {Polyak, Boris},
+    year = {1969},
+    month = {12},
+    pages = {94--112},
+    title = {The conjugate gradient method in extreme problem},
+    volume = {9},
+    journal = {USSR Computational Mathematics and Mathematical Physics},
+}
+
+@article{harris1969_geometric_classification_of_symmetric_2x2,
+    author={Harris, Richard J.},
+    year={1969},
+    month={Mar 01},
+    title={A Geometric Classification System for 2 x 2 Interval-Symmetric Games},
+    journal={Behavioral science},
+    volume={14},
+    number={2},
+    pages={138},
+    note={Last updated - 2013-02-24},
+    keywords={Social Sciences (General)},
+    isbn={0005-7940},
+    url={https://www.proquest.com/scholarly-journals/geometric-classification-system-2-x-interval/docview/1301271952/se-2},
+}
+
+@article{havrda1967_alpha_entropy,
+    author = {Jan Havrda and Frantisek Charvat and Jan Havrda},
+    title = {Quantification method of classification processes: Concept of structural a-entropy},
+    journal = {Kybernetika},
+    year = {1967}
+}
+
+@article{rapoportandguyer1966_taxonomy_of_2x2_games,
+    title={A taxonomy of 2x2 games},
+    author={Rapoport, A. and Guyer, M.},
+    journal={General Systems},
+    year={1966},
+    volume={11},
+    pages={203-214}
+}
+
+@book{schelling1966_arms_and_influence,
+    title={Arms and influence},
+    author={Schelling, T.C.},
+    publisher={Yale University Press},
+    year={1966},
+}
+
+@article{kreweras1965_maximal_lottery,
+    author = {G. Kreweras},
+    journal = {Mathematics and Social Sciences I: Proceedings of the seminars of Menthon-Saint-Bernard, France (1–27 July 1960) and of Gösing, Austria (3–27 July 1962)},
+    title = {Aggregation of preference orderings},
+    year = {1965},
+    pages = {73--79}
+}
+
+@article{moore1965_moores_law,
+    author = {Moore, Gordon E.},
+    journal = {Electronics},
+    month = {April},
+    number = 8,
+    title = {Cramming more components onto integrated circuits},
+    volume = 38,
+    year = 1965
+}
+
+@article{lemke1964_equilibrium,
+    title={Equilibrium points of bimatrix games},
+    author={Lemke, Carlton and Howson, Jr, Joseph},
+    journal={Journal of the Society for industrial and Applied Mathematics},
+    volume={12},
+    number={2},
+    pages={413--423},
+    year={1964},
+    publisher={SIAM}
+}
+
+@article{janovskaja1968_polymatrix,
+    title={Equilibrium points in polymatrix games},
+    author={Janovskaja, Elena},
+    journal={Lithuanian Mathematical Journal},
+    volume={8},
+    number={2},
+    pages={381--384},
+    year={1968}
+}
+
+@inproceedings{shapley1963_order_zero_sum,
+    title={Some topics in two-person games},
+    author={Lloyd S. Shapley},
+    year={1963}
+}
+
+@article{gibbs1962_urbanization,
+    title={Urbanization, technology, and the division of labor: International patterns},
+    author={Gibbs, Jack P and Martin, Walter T},
+    journal={American sociological review},
+    pages={667--677},
+    year={1962},
+    publisher={JSTOR}
+}
+
+# Policy iteration.
+@book{howard1960_policy_iteration,
+  address = {Cambridge, MA},
+  author = {Howard, R. A.},
+  publisher = {MIT Press},
+  title = {Dynamic Programming and Markov Processes},
+  year = 1960
+}
+
+@book{kemeny1960_finite_markov_chains,
+    author = {Kemeny, John G and Snell, James Laurie and others},
+    publisher = {van Nostrand Princeton, NJ},
+    title = {Finite Markov Chains},
+    volume = 356,
+    year = 1960
+}
+
+@article{kelley1960_backpropagation,
+  title={Gradient theory of optimal flight paths},
+  author={Kelley, Henry J},
+  journal={Ars Journal},
+  volume={30},
+  number={10},
+  pages={947--954},
+  year={1960}
+}
+
+@article{rosenblatt1958_perceptron,
+    author = {F. Rosenblatt},
+    title = {The Perceptron: A Probabilistic Model for Information Storage and Organization in The Brain},
+    journal = {Psychological Review},
+    year = {1958},
+    pages = {65--386}
+}
+
+# Extensive form games.
+@article{kuhn1957_efg,
+    author = {Kuhn, H. W. and Tucker, AW},
+    journal = {Contributions to the Theory of Games, II, Annals of Mathematical Studies},
+    pages = {193–216},
+    publisher = {Princeton Univ Press, Princeton},
+    title = {Extensive games and the problem and information},
+    volume = {28},
+    year = {1957}
+}
+
+
+# Value iteration
+@article{bellman1957_mdp,
+    author = {Bellman, R.},
+    journal = {Journal of Mathematics and Mechanics},
+    number = {5},
+    pages = {679--684},
+    publisher = {Indiana University Mathematics Department},
+    title = {A Markovian Decision Process},
+    volume = {6},
+    year = {1957}
+}
+
+@book{bellman1957_dynamic_programming,
+    address = {Princeton, NJ, USA},
+    author = {Bellman, Richard},
+    edition = 1,
+    publisher = {Princeton University Press},
+    timestamp = {2021-02-01T10:51:23.000+0100},
+    title = {Dynamic Programming},
+    year = 1957
+}
+
+@article{hannan1957_cce,
+    title={Approximation to Bayes risk in repeated play},
+    author={Hannan, James},
+    journal={Contributions to the Theory of Games},
+    volume={3},
+    pages={97--139},
+    year={1957}
+}
+
+@article{jaynes1957_maxent,
+    title = {Information Theory and Statistical Mechanics},
+    author = {Jaynes, E. T.},
+    journal = {Phys. Rev.},
+    volume = {106},
+    issue = {4},
+    pages = {620--630},
+    numpages = {0},
+    year = {1957},
+    month = {May},
+    publisher = {American Physical Society},
+}
+
+@article{savage1954_foundations,
+    title = {The Foundations of Statistics},
+    author = {Leonard J. Savage, John Wiley},
+    publisher = {John Wiley \& Sons},
+    year = {1954}
+}
+
+@article{nikaidoisoda1955_nashconv,
+    author = {Hukukane Nikaid{\^o} and Kazuo Isoda},
+    title = {{Note on non-cooperative convex games}},
+    volume = {5},
+    journal = {Pacific Journal of Mathematics},
+    number = {S1},
+    publisher = {Pacific Journal of Mathematics, A Non-profit Corporation},
+    pages = {807 -- 815},
+    year = {1955},
+}
+
+# Contains Value Iteration as a  sepcial case.
+@article {shapley1953_stochastic_games,
+	author = {Shapley, L. S.},
+	title = {Stochastic Games},
+	volume = {39},
+	number = {10},
+	pages = {1095--1100},
+	year = {1953},
+	publisher = {National Academy of Sciences},
+	issn = {0027-8424},
+	journal = {Proceedings of the National Academy of Sciences}
+}
+
+@inproceedings{brown1951_fp,
+    author = {G. W. Brown},
+    title = {Iterative solutions of games by fictitious play},
+    year = {1951},
+}
+
+@article{nash1951_neq,
+    author = {Nash, J.F.},
+    journal = {Annals of Mathematics},
+    keywords = {imported},
+    number = 2,
+    owner = {Funky},
+    pages = {286-295},
+    timestamp = {2009-12-14T10:59:25.000+0100},
+    title = {Non-cooperative Games},
+    volume = 54,
+    year = 1951
+}
+
+@article{kuhn1950_poker,
+    author = {Kuhn, H. W.},
+    year = 1950,
+    title = {A simplified two-person poker},
+    volume = 1,
+    pages = {97-103},
+    journal = {Contributions to the Theory of Games},
+    publisher = {Princeton University Press},
+}
+
+@article{shannon1948_entropy,
+    added-at = {2020-02-17T00:00:00.000+0100},
+    author = {Shannon, Claude E.},
+    journal = {Bell Syst. Tech. J.},
+    keywords = {dblp},
+    number = 3,
+    pages = {379-423},
+    timestamp = {2020-02-18T11:47:36.000+0100},
+    title = {A mathematical theory of communication.},
+    volume = 27,
+    year = 1948
+}
+
+@book{vonneumann1947_game_theory_book,
+    author = {von Neumann, J. and Morgenstern, O.},
+    priority = {2},
+    publisher = {Princeton University Press},
+    title = {Theory of games and economic behavior},
+    year = 1947
+}
+
+@article{wald1945_minimax,
+	year = {1945},
+	pages = {265-280},
+	journal = {Annals of Mathematics},
+	author = {Abraham Wald},
+	title = {Statistical Decision Functions Which Minimize the Maximum Risk},
+	volume = {46}
+}
+
+@article{heider1944_agency,
+    title = {An experimental study of apparent behavior},
+    author = {Heider, Fritz and Simmel, Marianne},
+    journal = {The American Journal of Psychology},
+    pages = {243--259},
+    year = {1944},
+    publisher = {JSTOR},
+    keywords = {semparse},
+}
+
+@article{wald1939_minimax,
+    author = "Wald, Abraham",
+    fjournal = "Annals of Mathematical Statistics",
+    journal = "Ann. Math. Statist.",
+    month = "12",
+    number = "4",
+    pages = "299-326",
+    publisher = "The Institute of Mathematical Statistics",
+    title = "Contributions to the Theory of Statistical Estimation and Testing Hypotheses",
+    volume = "10",
+    year = "1939"
+}
+
+@article{mahalanobis1936_generalized,
+    author = {Mahalanobis, Prasanta Chandra},
+    journal = {Proceedings of the National Institute of Sciences (Calcutta)},
+    keywords = {distance generalized mahalanobis},
+    pages = {49--55},
+    timestamp = {2016-09-06T08:23:07.000+0200},
+    title = {On the generalized distance in statistics},
+    volume = 2,
+    year = 1936
+}
+
+@article{hotelling1936_pca,
+    ISSN = {00063444},
+    URL = {http://www.jstor.org/stable/2333955},
+    author = {Harold Hotelling},
+    journal = {Biometrika},
+    number = {3/4},
+    pages = {321--377},
+    publisher = {[Oxford University Press, Biometrika Trust]},
+    title = {Relations Between Two Sets of Variates},
+    urldate = {2023-03-09},
+    volume = {28},
+    year = {1936}
+}
+
+@book{gerschgorin_1931,
+    author = {S.~Gerschgorin},
+    journal = {Bulletin de l'Acad\'emie des Sciences de l'URSS. Classe des sciences math\'ematiques et na},
+    pages = {749--754},
+    title = {Uber die Abgrenzung der Eigenwerte einer Matrix},
+    issue = 2,
+    year = 1931
+}
+
+# Normal form / strategic form.
+# Minimax theorem.
+@article{neumann1928_normal_form,
+    title={Zur theorie der gesellschaftsspiele},
+    author={von~Neumann, J.},
+    journal={Mathematische Annalen},
+    volume={100},
+    number={1},
+    pages={295--320},
+    year={1928},
+    publisher={Springer},
+    doi={10.1007/BF01448847},
+    language={German}
+}
+
+@book{gini1912_gini,
+    author = {{Gini}, C.},
+    title = "{Variabilit{\`a} e mutabilit{\`a}}",
+    year = 1912,
+    adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+# Iterative method used to solve linear equations with eigenvalue
+# less than 1. Used in policy iteration.
+@article{richardson1911_iteration,
+    ISSN = {02643952},
+    author = {L. F. Richardson},
+    journal = {Philosophical Transactions of the Royal Society of London. Series A, Containing Papers of a Mathematical or Physical Character},
+    number = {},
+    pages = {307--357},
+    publisher = {The Royal Society},
+    title = {The Approximate Arithmetical Solution by Finite Differences of Physical Problems Involving Differential Equations, with an Application to the Stresses in a Masonry Dam},
+    volume = {210},
+    year = {1911}
+}
+
+# Page 279 for Gauss-Seidel iteration.
+# It was only mentioned in a private letter from Gauss to his student Gerling in 1823.
+@book{gauss1903_iteration,
+    author = {Gauss, Carl Friedrich},
+    journal = {Werke},
+    title = {Geodäsie. Fortsetzung von Band 4},
+    publisher = {Göttingen: Köninglichen Gesellschaft der Wissenschaften},
+    volume = {9},
+    year = {1903}
+}
+
+@article{pearson1901_pca,
+    author = {Karl Pearson},
+    title = {On lines and planes of closest fit to systems of points in space},
+    journal = {The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science},
+    volume = {2},
+    number = {11},
+    pages = {559-572},
+    year  = {1901},
+    publisher = {Taylor & Francis},
+    doi = {10.1080/14786440109462720},
+    URL = {https://doi.org/10.1080/14786440109462720},
+    eprint = {https://doi.org/10.1080/14786440109462720}
+}
+
+@book{mobius1827_barycentric_coordinates,
+    title={Der barycentrische Calcul},
+    author={M{\"o}bius, A.F.},
+    lccn={05036961},
+    year={1827},
+    publisher={J.A. Barth}
+}
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{littman1994_markovgames,
+    author = {Michael L. Littman},
+    title = {Markov Games as a Framework for Multi-Agent Reinforcement Learning},
+    booktitle = {In Proceedings of the Eleventh International Conference on Machine Learning},
+    year = {1994},
+    pages = {157--163},
+    publisher = {Morgan Kaufmann}
+}
+
+@article{boyle1977_options,
+    title={Options: A monte carlo approach},
+    author={Boyle, Phelim P},
+    journal={Journal of financial economics},
+    volume={4},
+    number={3},
+    pages={323--338},
+    year={1977},
+    publisher={Elsevier}
+}
+
+@article{auer2002_exp3,
+    title={The nonstochastic multiarmed bandit problem},
+    author={Auer, Peter and Cesa-Bianchi, Nicolo and Freund, Yoav and Schapire, Robert E},
+    journal={SIAM journal on computing},
+    volume={32},
+    number={1},
+    pages={48--77},
+    year={2002},
+    publisher={SIAM}
+}
+
+@inproceedings{zinkevich2003_online_convex,
+    author = {Zinkevich, Martin},
+    title = {Online Convex Programming and Generalized Infinitesimal Gradient Ascent},
+    booktitle = {Proceedings of the Twentieth International Conference on International Conference on Machine Learning},
+    series = {ICML'03},
+    year = {2003},
+    pages = {928--935},
+} 
+
+@article{monnot2017limits,
+    title={Limits and limitations of no-regret learning in games},
+    author={Monnot, Barnab{\'e} and Piliouras, Georgios},
+    journal={The Knowledge Engineering Review},
+    volume={32},
+    pages={e21},
+    year={2017},
+    publisher={Cambridge University Press}
+}
+
+@article{monderer1996potential,
+    title={Potential games},
+    author={Monderer, Dov and Shapley, Lloyd S},
+    journal={Games and economic behavior},
+    volume={14},
+    number={1},
+    pages={124--143},
+    year={1996},
+    publisher={Elsevier}
+}
+
+@article{deligkas2017_ne_in_polymatrix,
+    title={Computing approximate {N}ash equilibria in polymatrix games},
+    author={Deligkas, Argyrios and Fearnley, John and Savani, Rahul and Spirakis, Paul},
+    journal={Algorithmica},
+    volume={77},
+    number={2},
+    pages={487--514},
+    year={2017},
+    publisher={Springer}
+}
+
+@article{govindan2004_iterated_polymatrix,
+    title={Computing {N}ash equilibria by iterated polymatrix approximation},
+    author={Govindan, Srihari and Wilson, Robert},
+    journal={Journal of Economic Dynamics and Control},
+    volume={28},
+    number={7},
+    pages={1229--1241},
+    year={2004},
+    publisher={Elsevier}
+}
+
+@article{boumal2014_manopt,
+    author = {Boumal, N. and Mishra, B. and Absil, P.-A. and Sepulchre, R.},
+    journal = {Journal of Machine Learning Research},
+    title = {{M}anopt, a {M}atlab Toolbox for Optimization on Manifolds},
+    year = {2014},
+    number = {42},
+    pages = {1455--1459},
+    volume = {15},
+    url = {https://www.manopt.org},
+}
+
+@inproceedings{branzei2021_economies,
+    title={Proportional dynamics in exchange economies},
+    author={Br{\^a}nzei, Simina and Devanur, Nikhil and Rabani, Yuval},
+    booktitle={Proceedings of the 22nd ACM Conference on Economics and Computation},
+    pages={180--201},
+    year={2021}
+}
+
+@article{breton2006_environmental_projects,
+    title={A game-theoretic formulation of joint implementation of environmental projects},
+    author={Breton, Michele and Zaccour, Georges and Zahaf, Mehdi},
+    journal={European Journal of Operational Research},
+    volume={168},
+    number={1},
+    pages={221--239},
+    year={2006},
+    publisher={Elsevier}
+}
+
+@article{schosser2022_fairness_pandemic,
+    title={Fairness in the use of limited resources during a pandemic},
+    author={Schosser, Josef},
+    journal={Plos one},
+    volume={17},
+    number={6},
+    pages={e0270022},
+    year={2022},
+    publisher={Public Library of Science San Francisco, CA USA}
+}
+
+
+
+
+
+%%%%%%%%%%%%%%
+
+
+@misc{acpc,
+    key = {Annual Computer Poker Competition},
+    title = {{Annual Computer Poker Competition}},
+    howpublished = {website, http://www.computerpokercompetition.org/}
+}
+
+
+
+
+
+
+

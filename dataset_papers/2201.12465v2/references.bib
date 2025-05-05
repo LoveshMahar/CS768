@@ -1,0 +1,778 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Frameworks
+@article{paszke2019pytorch,
+    title={Pytorch: An imperative style, high-performance deep learning library},
+    author={Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and others},
+    journal={Advances in neural information processing systems},
+    volume={32},
+    pages={8026--8037},
+    year={2019}
+}
+
+@inproceedings{abadi2016tensorflow,
+    title={Tensorflow: A system for large-scale machine learning},
+    author={Abadi, Mart{\'\i}n and Barham, Paul and Chen, Jianmin and Chen, Zhifeng and Davis, Andy and Dean, Jeffrey and Devin, Matthieu and Ghemawat, Sanjay and Irving, Geoffrey and Isard, Michael and others},
+    booktitle={12th USENIX symposium on operating systems design and implementation (OSDI 16)},
+    pages={265--283},
+    year={2016}
+}
+
+@inproceedings{bergstra2010theano,
+  title={Theano: a CPU and GPU math expression compiler},
+  author={Bergstra, James and Breuleux, Olivier and Bastien, Fr{\'e}d{\'e}ric and Lamblin, Pascal and Pascanu, Razvan and Desjardins, Guillaume and Turian, Joseph and Warde-Farley, David and Bengio, Yoshua},
+  booktitle={Proceedings of the Python for scientific computing conference (SciPy)},
+  volume={4},
+  number={3},
+  pages={1--7},
+  year={2010},
+  organization={Austin, TX}
+}
+
+@article{chen2015mxnet,
+  title={Mxnet: A flexible and efficient machine learning library for heterogeneous distributed systems},
+  author={Chen, Tianqi and Li, Mu and Li, Yutian and Lin, Min and Wang, Naiyan and Wang, Minjie and Xiao, Tianjun and Xu, Bing and Zhang, Chiyuan and Zhang, Zheng},
+  journal={arXiv preprint arXiv:1512.01274},
+  year={2015}
+}
+
+@article{innes2018flux,
+  title={Flux: Elegant machine learning with Julia},
+  author={Innes, Mike},
+  journal={Journal of Open Source Software},
+  volume={3},
+  number={25},
+  pages={602},
+  year={2018}
+}
+
+@inproceedings{jia2014caffe,
+  title={Caffe: Convolutional architecture for fast feature embedding},
+  author={Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and Karayev, Sergey and Long, Jonathan and Girshick, Ross and Guadarrama, Sergio and Darrell, Trevor},
+  booktitle={Proceedings of the 22nd ACM international conference on Multimedia},
+  pages={675--678},
+  year={2014}
+}
+
+@inproceedings{tokui2019chainer,
+  title={Chainer: A deep learning framework for accelerating the research cycle},
+  author={Tokui, Seiya and Okuta, Ryosuke and Akiba, Takuya and Niitani, Yusuke and Ogawa, Toru and Saito, Shunta and Suzuki, Shuji and Uenishi, Kota and Vogel, Brian and Yamazaki Vincent, Hiroyuki},
+  booktitle={Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  pages={2002--2011},
+  year={2019}
+}
+
+@software{jax2018github,
+  author = {James Bradbury and Roy Frostig and Peter Hawkins and Matthew James Johnson and Chris Leary and Dougal Maclaurin and George Necula and Adam Paszke and Jake Vander{P}las and Skye Wanderman-{M}ilne and Qiao Zhang},
+  title = {{JAX}: composable transformations of {P}ython+{N}um{P}y programs},
+  url = {http://github.com/google/jax},
+  version = {0.2.5},
+  year = {2018},
+}
+
+@article{bottou2002lush,
+  title={Lush},
+  author={Bottou, L{\'e}on and LeCun, Yann},
+  url={http://lush. sourceforge.net},
+  year={2002}
+}
+
+@article{ma2019paddlepaddle,
+  title={PaddlePaddle: An open-source deep learning platform from industrial practice},
+  author={Ma, Yanjun and Yu, Dianhai and Wu, Tian and Wang, Haifeng},
+  journal={Frontiers of Data and Computing},
+  volume={1},
+  number={1},
+  pages={105--115},
+  year={2019}
+}
+
+@article{dl4j,
+    title={Deeplearning4j: Open-source distributed deep learning for the JVM},
+    author={Eclipse Deeplearning4j Development Team},
+    year={2016},
+    url = {https://github.com/eclipse/deeplearning4j},
+}
+
+@article{harris2020array,
+    title         = {Array programming with {NumPy}},
+    author        = {Charles R. Harris and K. Jarrod Millman and St{\'{e}}fan J.
+                 van der Walt and Ralf Gommers and Pauli Virtanen and David
+                 Cournapeau and Eric Wieser and Julian Taylor and Sebastian
+                 Berg and Nathaniel J. Smith and Robert Kern and Matti Picus
+                 and Stephan Hoyer and Marten H. van Kerkwijk and Matthew
+                 Brett and Allan Haldane and Jaime Fern{\'{a}}ndez del
+                 R{\'{i}}o and Mark Wiebe and Pearu Peterson and Pierre
+                 G{\'{e}}rard-Marchant and Kevin Sheppard and Tyler Reddy and
+                 Warren Weckesser and Hameer Abbasi and Christoph Gohlke and
+                 Travis E. Oliphant},
+    year          = {2020},
+    month         = sep,
+    journal       = {Nature},
+    volume        = {585},
+    number        = {7825},
+    pages         = {357--362},
+    doi           = {10.1038/s41586-020-2649-2},
+    publisher     = {Springer Science and Business Media {LLC}},
+    url           = {https://doi.org/10.1038/s41586-020-2649-2}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Framework ecosystem
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Framework meta
+@inproceedings{ml_systems_stuck,
+    author = {Barham, Paul and Isard, Michael},
+    title = {Machine Learning Systems Are Stuck in a Rut},
+    year = {2019},
+    isbn = {9781450367271},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3317550.3321441},
+    doi = {10.1145/3317550.3321441},
+    abstract = {In this paper we argue that systems for numerical computing are stuck in a local basin
+    of performance and programmability. Systems researchers are doing an excellent job
+    improving the performance of 5-year-old benchmarks, but gradually making it harder
+    to explore innovative machine learning research ideas.We explain how the evolution
+    of hardware accelerators favors compiler back ends that hyper-optimize large monolithic
+    kernels, show how this reliance on high-performance but inflexible kernels reinforces
+    the dominant style of programming model, and argue these programming abstractions
+    lack expressiveness, maintainability, and modularity; all of which hinders research
+    progress.We conclude by noting promising directions in the field, and advocate steps
+    to advance progress towards high-performance general purpose numerical computing systems
+    on modern accelerators.},
+    booktitle = {Proceedings of the Workshop on Hot Topics in Operating Systems},
+    pages = {177–183},
+    numpages = {7},
+    location = {Bertinoro, Italy},
+    series = {HotOS '19}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deep Learning Meta
+@article{lecun2015deep,
+  title={Deep learning},
+  author={LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
+  journal={nature},
+  volume={521},
+  number={7553},
+  pages={436--444},
+  year={2015},
+  publisher={Nature Publishing Group}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Flashlight components
+@misc{Yalamanchili2015,
+    abstract = {ArrayFire is a high performance software library for parallel computing with an easy-to-use API. Its array based function set makes parallel programming simple. ArrayFire's multiple backends (CUDA, OpenCL and native CPU) make it platform independent and highly portable. A few lines of code in ArrayFire can replace dozens of lines of parallel computing code, saving you valuable time and lowering development costs.},
+    address = {Atlanta},
+    author = {Yalamanchili, Pavan and Arshad, Umar and Mohammed, Zakiuddin and Garigipati, Pradeep and Entschev, Peter and Kloppenborg, Brian and Malcolm, James and Melonakos, John},
+    publisher = {AccelerEyes},
+    title = {{ArrayFire - A high performance software library for parallel computing with an easy-to-use API}},
+    url = {https://github.com/arrayfire/arrayfire},
+    year = {2015}
+}
+
+@article{chetlur2014cudnn,
+  title={cudnn: Efficient primitives for deep learning},
+  author={Chetlur, Sharan and Woolley, Cliff and Vandermersch, Philippe and Cohen, Jonathan and Tran, John and Catanzaro, Bryan and Shelhamer, Evan},
+  journal={arXiv preprint arXiv:1410.0759},
+  year={2014}
+}
+
+@article{khan2019miopen,
+  title={MIOpen: An open source library for deep learning primitives},
+  author={Khan, Jehandad and Fultz, Paul and Tamazov, Artem and Lowell, Daniel and Liu, Chao and Melesse, Michael and Nandhimandalam, Murali and Nasyrov, Kamil and Perminov, Ilya and Shah, Tejash and others},
+  journal={arXiv preprint arXiv:1910.00078},
+  year={2019}
+}
+
+@misc{mkl,
+  author = {Intel},
+  title = {MKL Developer Reference},
+  year = {2020},
+  publisher = {Intel},
+  journal = {Intel Website},
+  howpublished = {\url{https://software.intel.com/content/www/us/en/develop/documentation/mkl-developer-reference-c/top.html}},
+}
+
+@misc{nccl,
+  author = {NCCL},
+  year = {2019},
+  title = {NVIDIA Collective Communications Library (NCCL)},
+  howpublished = {\url{https://github.com/NVIDIA/nccl}},
+}
+
+@misc{gloo,
+  author = {Gloo},
+  year = {2019},
+  title = {Gloo: a collective communications library.},
+  howpublished = {\url{https://github.com/facebookincubator/gloo}},
+}
+
+@misc{onednn,
+  author = {Intel},
+  title = {OneDNN},
+  year = {2020},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/oneapi-src/oneDNN}},
+  commit = {e9d161985e5c734a603c09dbe83aa95eff3220d2}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Scaling
+@article{bommasani2021opportunities,
+  title={On the Opportunities and Risks of Foundation Models},
+  author={Bommasani, Rishi and Hudson, Drew A and Adeli, Ehsan and Altman, Russ and Arora, Simran and von Arx, Sydney and Bernstein, Michael S and Bohg, Jeannette and Bosselut, Antoine and Brunskill, Emma and others},
+  journal={arXiv preprint arXiv:2108.07258},
+  year={2021}
+}
+
+@article{ott2018scaling,
+  title={Scaling neural machine translation},
+  author={Ott, Myle and Edunov, Sergey and Grangier, David and Auli, Michael},
+  journal={arXiv preprint arXiv:1806.00187},
+  year={2018}
+}
+
+@article{aharoni2019massively,
+  title={Massively multilingual neural machine translation},
+  author={Aharoni, Roee and Johnson, Melvin and Firat, Orhan},
+  journal={arXiv preprint arXiv:1903.00089},
+  year={2019}
+}
+
+@article{brown2020language,
+  title={Language models are few-shot learners},
+  author={Brown, Tom B and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={arXiv preprint arXiv:2005.14165},
+  year={2020}
+}
+
+@article{shoeybi2019megatron,
+  title={Megatron-lm: Training multi-billion parameter language models using model parallelism},
+  author={Shoeybi, Mohammad and Patwary, Mostofa and Puri, Raul and LeGresley, Patrick and Casper, Jared and Catanzaro, Bryan},
+  journal={arXiv preprint arXiv:1909.08053},
+  year={2019}
+}
+
+@inproceedings{rasley2020deepspeed,
+  title={Deepspeed: System optimizations enable training deep learning models with over 100 billion parameters},
+  author={Rasley, Jeff and Rajbhandari, Samyam and Ruwase, Olatunji and He, Yuxiong},
+  booktitle={Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  pages={3505--3506},
+  year={2020}
+}
+
+@article{rajbhandari2021zero,
+  title={ZeRO-Infinity: Breaking the GPU Memory Wall for Extreme Scale Deep Learning},
+  author={Rajbhandari, Samyam and Ruwase, Olatunji and Rasley, Jeff and Smith, Shaden and He, Yuxiong},
+  journal={arXiv preprint arXiv:2104.07857},
+  year={2021}
+}
+
+@article{strubell2019energy,
+  title={Energy and policy considerations for deep learning in NLP},
+  author={Strubell, Emma and Ganesh, Ananya and McCallum, Andrew},
+  journal={arXiv preprint arXiv:1906.02243},
+  year={2019}
+}
+
+@article{schwartz2020green,
+  title={Green ai},
+  author={Schwartz, Roy and Dodge, Jesse and Smith, Noah A and Etzioni, Oren},
+  journal={Communications of the ACM},
+  volume={63},
+  number={12},
+  pages={54--63},
+  year={2020},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{carion2020end,
+  title={End-to-end object detection with transformers},
+  author={Carion, Nicolas and Massa, Francisco and Synnaeve, Gabriel and Usunier, Nicolas and Kirillov, Alexander and Zagoruyko, Sergey},
+  booktitle={European Conference on Computer Vision},
+  pages={213--229},
+  year={2020},
+  organization={Springer}
+}
+
+@article{baevski2020wav2vec,
+  title={wav2vec 2.0: A framework for self-supervised learning of speech representations},
+  author={Baevski, Alexei and Zhou, Henry and Mohamed, Abdelrahman and Auli, Michael},
+  journal={arXiv preprint arXiv:2006.11477},
+  year={2020}
+}
+
+@article{synnaeve2019end,
+  title={End-to-end asr: from supervised to semi-supervised learning with modern architectures},
+  author={Synnaeve, Gabriel and Xu, Qiantong and Kahn, Jacob and Likhomanenko, Tatiana and Grave, Edouard and Pratap, Vineel and Sriram, Anuroop and Liptchinsky, Vitaliy and Collobert, Ronan},
+  journal={arXiv preprint arXiv:1911.08460},
+  year={2019}
+}
+
+@inproceedings{likhomanenko2020rethinking,
+  author={Tatiana Likhomanenko and Qiantong Xu and Vineel Pratap and Paden Tomasello and Jacob Kahn and Gilad Avidov and Ronan Collobert and Gabriel Synnaeve},
+  title={{Rethinking Evaluation in ASR: Are Our Models Robust Enough?}},
+  year=2021,
+  booktitle={Proc. Interspeech 2021},
+  pages={311--315},
+  doi={10.21437/Interspeech.2021-1758}
+}
+
+@article{dosovitskiy2020image,
+  title={An image is worth 16x16 words: Transformers for image recognition at scale},
+  author={Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and others},
+  journal={arXiv preprint arXiv:2010.11929},
+  year={2020}
+}
+
+@inproceedings{linnainmaa,
+    author={Linnainmaa, S},
+    title = {Taylor expansion of the accumulated rounding error},
+    journal={BIT Numerical Mathematics},
+    year=1976,
+    volume=16,
+    pages={146–160}
+}
+
+@article{fukushima1982455,
+    title = {Neocognitron: A new algorithm for pattern recognition tolerant of deformations and shifts in position},
+    journal = {Pattern Recognition},
+    volume = {15},
+    number = {6},
+    pages = {455-469},
+    year = {1982},
+    issn = {0031-3203},
+    doi = {https://doi.org/10.1016/0031-3203(82)90024-3},
+    url = {https://www.sciencedirect.com/science/article/pii/0031320382900243},
+    author = {Kunihiko Fukushima and Sei Miyake},
+    keywords = {Visual pattern recognition, Deformation-resistant, Unsupervised learning, Self-organization, Neural network model, Visual nervous system},
+    abstract = {Suggested by the structure of the visual nervous system, a new algorithm is proposed for pattern recognition. This algorithm can be realized with a multilayered network consisting of neuron-like cells. The network, “neocognitron”, is self-organized by unsupervised learning, and acquires the ability to recognize stimulus patterns according to the differences in their shapes: Any patterns which we human beings judge to be alike are also judged to be of the same category by the neocognitron. The neocognitron recognizes stimulus patterns correctly without being affected by shifts in position or even by considerable distortions in shape of the stimulus patterns.}
+}
+
+@ARTICLE{lecun1989,
+  author={LeCun, Y. and Boser, B. and Denker, J. S. and Henderson, D. and Howard, R. E. and Hubbard, W. and Jackel, L. D.},
+  journal={Neural Computation}, 
+  title={Backpropagation Applied to Handwritten Zip Code Recognition}, 
+  year={1989},
+  volume={1},
+  number={4},
+  pages={541-551},
+  doi={10.1162/neco.1989.1.4.541}
+}
+
+@inproceedings{alexnet,
+    author = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E.},
+    title = {ImageNet Classification with Deep Convolutional Neural Networks},
+    year = {2012},
+    publisher = {Curran Associates Inc.},
+    address = {Red Hook, NY, USA},
+    abstract = {We trained a large, deep convolutional neural network to classify the 1.2 million
+    high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different
+    classes. On the test data, we achieved top-1 and top-5 error rates of 37.5% and 17.0%
+    which is considerably better than the previous state-of-the-art. The neural network,
+    which has 60 million parameters and 650,000 neurons, consists of five convolutional
+    layers, some of which are followed by max-pooling layers, and three fully-connected
+    layers with a final 1000-way softmax. To make training faster, we used non-saturating
+    neurons and a very efficient GPU implementation of the convolution operation. To reduce
+    overriding in the fully-connected layers we employed a recently-developed regularization
+    method called "dropout" that proved to be very effective. We also entered a variant
+    of this model in the ILSVRC-2012 competition and achieved a winning top-5 test error
+    rate of 15.3%, compared to 26.2% achieved by the second-best entry.},
+    booktitle = {Proceedings of the 25th International Conference on Neural Information Processing Systems - Volume 1},
+    pages = {1097–1105},
+    numpages = {9},
+    location = {Lake Tahoe, Nevada},
+    series = {NIPS'12}
+}
+
+@InProceedings{Simonyan15,
+  author       = "Karen Simonyan and Andrew Zisserman",
+  title        = "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+  booktitle    = "International Conference on Learning Representations",
+  year         = "2015",
+}
+
+@inproceedings{46653,
+title	= {Matrix capsules with EM routing},
+author	= {Geoffrey Hinton and Sara Sabour and Nicholas Frosst},
+year	= {2018},
+URL	= {https://openreview.net/pdf?id=HJWLfGWRb}
+}
+
+@article{flexflow,
+  author    = {Zhihao Jia and
+               Matei Zaharia and
+               Alex Aiken},
+  title     = {Beyond Data and Model Parallelism for Deep Neural Networks},
+  journal   = {CoRR},
+  volume    = {abs/1807.05358},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1807.05358},
+  eprinttype = {arXiv},
+  eprint    = {1807.05358},
+  timestamp = {Mon, 13 Aug 2018 16:47:43 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1807-05358.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{tvm,
+author = {Chen, Tianqi and Zheng, Lianmin and Yan, Eddie and Jiang, Ziheng and Moreau, Thierry and Ceze, Luis and Guestrin, Carlos and Krishnamurthy, Arvind},
+title = {Learning to Optimize Tensor Programs},
+year = {2018},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {We introduce a learning-based framework to optimize tensor programs for deep learning
+workloads. Efficient implementations of tensor operators, such as matrix multiplication
+and high dimensional convolution, are key enablers of effective deep learning systems.
+However, current systems rely on manually optimized libraries, e.g., cuDNN, that support
+only a narrow range of server class GPUs. Such reliance limits the applicability of
+high-level graph optimizations and incurs significant engineering costs when deploying
+to new hardware targets. We use learning to remove this engineering burden. We learn
+domain-specific statistical cost models to guide the search of tensor operator implementations
+over billions of possible program variants. We further accelerate the search using
+effective model transfer across workloads. Experimental results show that our framework
+delivers performance that is competitive with state-of-the-art hand-tuned libraries
+for low-power CPUs, mobile GPUs, and server-class GPUs.},
+booktitle = {Proceedings of the 32nd International Conference on Neural Information Processing Systems},
+pages = {3393–3404},
+numpages = {12},
+location = {Montr\'{e}al, Canada},
+series = {NIPS'18}
+}
+
+
+@article{halide_autoscheduler,
+author = {Adams, Andrew and Ma, Karima and Anderson, Luke and Baghdadi, Riyadh and Li, Tzu-Mao and Gharbi, Micha\"{e}l and Steiner, Benoit and Johnson, Steven and Fatahalian, Kayvon and Durand, Fr\'{e}do and Ragan-Kelley, Jonathan},
+title = {Learning to Optimize Halide with Tree Search and Random Programs},
+year = {2019},
+issue_date = {July 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {38},
+number = {4},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/3306346.3322967},
+doi = {10.1145/3306346.3322967},
+abstract = {We present a new algorithm to automatically schedule Halide programs for high-performance
+image processing and deep learning. We significantly improve upon the performance
+of previous methods, which considered a limited subset of schedules. We define a parameterization
+of possible schedules much larger than prior methods and use a variant of beam search
+to search over it. The search optimizes runtime predicted by a cost model based on
+a combination of new derived features and machine learning. We train the cost model
+by generating and featurizing hundreds of thousands of random programs and schedules.
+We show that this approach operates effectively with or without autotuning. It produces
+schedules which are on average almost twice as fast as the existing Halide autoscheduler
+without autotuning, or more than twice as fast with, and is the first automatic scheduling
+algorithm to significantly outperform human experts on average.},
+journal = {ACM Trans. Graph.},
+month = jul,
+articleno = {121},
+numpages = {12},
+keywords = {optimizing compilers, halide}
+}
+
+@inproceedings{MLSYS2021_73278a4a,
+ author = {Steiner, Benoit and Cummins, Chris and He, Horace and Leather, Hugh},
+ booktitle = {Proceedings of Machine Learning and Systems},
+ editor = {A. Smola and A. Dimakis and I. Stoica},
+ pages = {323--334},
+ title = {Value Learning for Throughput Optimization of Deep Learning Workloads},
+ url = {https://proceedings.mlsys.org/paper/2021/file/73278a4a86960eeb576a8fd4c9ec6997-Paper.pdf},
+ volume = {3},
+ year = {2021}
+}
+
+@inproceedings {ansor,
+author = {Lianmin Zheng and Chengfan Jia and Minmin Sun and Zhao Wu and Cody Hao Yu and Ameer Haj-Ali and Yida Wang and Jun Yang and Danyang Zhuo and Koushik Sen and Joseph E. Gonzalez and Ion Stoica},
+title = {Ansor: Generating High-Performance Tensor Programs for Deep Learning},
+booktitle = {14th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 20)},
+year = {2020},
+isbn = {978-1-939133-19-9},
+pages = {863--879},
+url = {https://www.usenix.org/conference/osdi20/presentation/zheng},
+publisher = {{USENIX} Association},
+month = nov,
+}
+
+@inproceedings{roc,
+ author = {Jia, Zhihao and Lin, Sina and Gao, Mingyu and Zaharia, Matei and Aiken, Alex},
+ booktitle = {Proceedings of Machine Learning and Systems},
+ editor = {I. Dhillon and D. Papailiopoulos and V. Sze},
+ pages = {187--198},
+ title = {Improving the Accuracy, Scalability, and Performance of Graph Neural Networks with Roc},
+ url = {https://proceedings.mlsys.org/paper/2020/file/fe9fc289c3ff0af142b6d3bead98a923-Paper.pdf},
+ volume = {2},
+ year = {2020}
+}
+
+@inproceedings {pet,
+author = {Haojie Wang and Jidong Zhai and Mingyu Gao and Zixuan Ma and Shizhi Tang and Liyan Zheng and Yuanzhi Li and Kaiyuan Rong and Yuanyong Chen and Zhihao Jia},
+title = {{PET}: Optimizing Tensor Programs with Partially Equivalent Transformations and Automated Corrections},
+booktitle = {15th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 21)},
+year = {2021},
+isbn = {978-1-939133-22-9},
+pages = {37--54},
+url = {https://www.usenix.org/conference/osdi21/presentation/wang},
+publisher = {{USENIX} Association},
+month = jul,
+}
+
+@ARTICLE{7878935,
+  author={Theis, Thomas N. and Wong, H.-S. Philip},
+  journal={Computing in Science   Engineering}, 
+  title={The End of Moore's Law: A New Beginning for Information Technology}, 
+  year={2017},
+  volume={19},
+  number={2},
+  pages={41-50},
+  doi={10.1109/MCSE.2017.29}}
+  
+@article{autograd,
+author = {Baydin, At\i{}l\i{}m G\"{u}nes and Pearlmutter, Barak A. and Radul, Alexey Andreyevich and Siskind, Jeffrey Mark},
+title = {Automatic Differentiation in Machine Learning: A Survey},
+year = {2017},
+issue_date = {January 2017},
+publisher = {JMLR.org},
+volume = {18},
+number = {1},
+issn = {1532-4435},
+abstract = {Derivatives, mostly in the form of gradients and Hessians, are ubiquitous in machine
+learning. Automatic differentiation (AD), also called algorithmic differentiation
+or simply "auto-diff", is a family of techniques similar to but more general than
+backpropagation for efficiently and accurately evaluating derivatives of numeric functions
+expressed as computer programs. AD is a small but established field with applications
+in areas including computational uid dynamics, atmospheric sciences, and engineering
+design optimization. Until very recently, the fields of machine learning and AD have
+largely been unaware of each other and, in some cases, have independently discovered
+each other's results. Despite its relevance, general-purpose AD has been missing from
+the machine learning toolbox, a situation slowly changing with its ongoing adoption
+under the names "dynamic computational graphs" and "differentiable programming". We
+survey the intersection of AD and machine learning, cover applications where AD has
+direct relevance, and address the main implementation techniques. By precisely defining
+the main differentiation techniques and their interrelationships, we aim to bring
+clarity to the usage of the terms "autodiff", "automatic differentiation", and "symbolic
+differentiation" as these are encountered more and more in machine learning settings.},
+journal = {J. Mach. Learn. Res.},
+month = jan,
+pages = {5595–5637},
+numpages = {43},
+keywords = {differentiable programming, backpropagation}
+}
+
+@inproceedings{Paszke2017AutomaticDI,
+  title={Automatic differentiation in PyTorch},
+  author={Adam Paszke and Sam Gross and Soumith Chintala and Gregory Chanan and Edward Yang and Zach DeVito and Zeming Lin and Alban Desmaison and Luca Antiga and Adam Lerer},
+  year={2017}
+}
+
+@misc{lush,
+title = "Technical report: Lush reference manual, code available at http://lush.sourceforge.net",
+author = "Yann Lecun and Leon Bottou",
+year = "2002",
+language = "English (US)",
+type = "Other",
+}
+
+@inproceedings{torch7,
+author = {Collobert, Ronan and Kavukcuoglu, Koray and Farabet, Clement},
+year = {2011},
+month = {01},
+pages = {},
+title = {Torch7: A Matlab-like Environment for Machine Learning}
+}
+
+@ARTICLE{gill2,
+  author={Gill, G.K and Kemerer, C.F},
+  journal={IEEE Transactions on Software Engineering}, 
+  title={Cyclomatic complexity density and software maintenance productivity}, 
+  year={1991},
+  volume={17},
+  number={12},
+  pages={1284-1288},
+  doi={10.1109/32.106988}}
+  
+@ARTICLE{gill,
+  author={Gill, G.K and Kemerer, C.F},
+  journal={MIT Sloan}, 
+  title={Productivity Impacts of Software Complexity and Developer Experience}, 
+  year={1990},
+}
+ 
+
+@inproceedings{krizhevsky12,
+  title={Imagenet classification with deep convolutional neural networks},
+  author={Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+  booktitle={Advances in neural information processing systems},
+  pages={1097--1105},
+  year={2012}
+}
+
+@inproceedings{transformers,
+    author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, \L{}ukasz and Polosukhin, Illia},
+    title = {Attention is All You Need},
+    year = {2017},
+    isbn = {9781510860964},
+    publisher = {Curran Associates Inc.},
+    address = {Red Hook, NY, USA},
+    abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional
+    neural networks that include an encoder and a decoder. The best performing models
+    also connect the encoder and decoder through an attention mechanism. We propose a
+    new simple network architecture, the Transformer, based solely on attention mechanisms,
+    dispensing with recurrence and convolutions entirely. Experiments on two machine translation
+    tasks show these models to be superior in quality while being more parallelizable
+    and requiring significantly less time to train. Our model achieves 28.4 BLEU on the
+    WMT 2014 English-to-German translation task, improving over the existing best results,
+    including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation
+    task, our model establishes a new single-model state-of-the-art BLEU score of 41.0
+    after training for 3.5 days on eight GPUs, a small fraction of the training costs
+    of the best models from the literature.},
+    booktitle = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+    pages = {6000–6010},
+    numpages = {11},
+    location = {Long Beach, California, USA},
+    series = {NIPS'17}
+}
+
+@inproceedings{dauphin2017gated,
+author = {Dauphin, Yann N. and Fan, Angela and Auli, Michael and Grangier, David},
+title = {Language Modeling with Gated Convolutional Networks},
+year = {2017},
+publisher = {JMLR.org},
+abstract = {The pre-dominant approach to language modeling to date is based on recurrent neural
+networks. Their success on this task is often linked to their ability to capture unbounded
+context. In this paper we develop a finite context approach through stacked convolutions,
+which can be more efficient since they allow parallelization over sequential tokens.
+We propose a novel simplified gating mechanism that outperforms Oord et al. (2016b)
+and investigate the impact of key architectural decisions. The proposed approach achieves
+state-of-the-art on the WikiText-103 benchmark, even though it features long-term
+dependencies, as well as competitive results on the Google Billion Words benchmark.
+Our model reduces the latency to score a sentence by an order of magnitude compared
+to a recurrent baseline. To our knowledge, this is the first time a non-recurrent
+approach is competitive with strong recurrent models on these large scale language
+tasks.},
+booktitle = {Proceedings of the 34th International Conference on Machine Learning - Volume 70},
+pages = {933–941},
+numpages = {9},
+location = {Sydney, NSW, Australia},
+series = {ICML'17}
+}
+
+@article{devlin2018bert,
+  title={Bert: Pre-training of deep bidirectional transformers for language understanding},
+  author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  journal={arXiv preprint arXiv:1810.04805},
+  year={2018}
+}
+
+@article{NVIDIATC,
+  title={NVIDIA Tensor Core Programmability, Performance \& Precision},
+  author={S. Markidis and S. W. Chien and E. Laure and I. Peng and J. Vetter},
+  journal={2018 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)},
+  year={2018},
+  pages={522-531}
+}
+
+@inproceedings{10.1145/3079856.3080246, author = {Jouppi, Norman P. and Young, Cliff and Patil, Nishant and Patterson, David and Agrawal, Gaurav and Bajwa, Raminder and Bates, Sarah and Bhatia, Suresh and Boden, Nan and Borchers, Al and Boyle, Rick and Cantin, Pierre-luc and Chao, Clifford and Clark, Chris and Coriell, Jeremy and Daley, Mike and Dau, Matt and Dean, Jeffrey and Gelb, Ben and Ghaemmaghami, Tara Vazir and Gottipati, Rajendra and Gulland, William and Hagmann, Robert and Ho, C. Richard and Hogberg, Doug and Hu, John and Hundt, Robert and Hurt, Dan and Ibarz, Julian and Jaffey, Aaron and Jaworski, Alek and Kaplan, Alexander and Khaitan, Harshit and Killebrew, Daniel and Koch, Andy and Kumar, Naveen and Lacy, Steve and Laudon, James and Law, James and Le, Diemthu and Leary, Chris and Liu, Zhuyuan and Lucke, Kyle and Lundin, Alan and MacKean, Gordon and Maggiore, Adriana and Mahony, Maire and Miller, Kieran and Nagarajan, Rahul and Narayanaswami, Ravi and Ni, Ray and Nix, Kathy and Norrie, Thomas and Omernick, Mark and Penukonda, Narayana and Phelps, Andy and Ross, Jonathan and Ross, Matt and Salek, Amir and Samadiani, Emad and Severn, Chris and Sizikov, Gregory and Snelham, Matthew and Souter, Jed and Steinberg, Dan and Swing, Andy and Tan, Mercedes and Thorson, Gregory and Tian, Bo and Toma, Horia and Tuttle, Erick and Vasudevan, Vijay and Walter, Richard and Wang, Walter and Wilcox, Eric and Yoon, Doe Hyun}, title = {In-Datacenter Performance Analysis of a Tensor Processing Unit}, year = {2017}, isbn = {9781450348928}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3079856.3080246}, doi = {10.1145/3079856.3080246}, abstract = {Many architects believe that major improvements in cost-energy-performance must now come from domain-specific hardware. This paper evaluates a custom ASIC---called a Tensor Processing Unit (TPU) --- deployed in datacenters since 2015 that accelerates the inference phase of neural networks (NN). The heart of the TPU is a 65,536 8-bit MAC matrix multiply unit that offers a peak throughput of 92 TeraOps/second (TOPS) and a large (28 MiB) software-managed on-chip memory. The TPU's deterministic execution model is a better match to the 99th-percentile response-time requirement of our NN applications than are the time-varying optimizations of CPUs and GPUs that help average throughput more than guaranteed latency. The lack of such features helps explain why, despite having myriad MACs and a big memory, the TPU is relatively small and low power. We compare the TPU to a server-class Intel Haswell CPU and an Nvidia K80 GPU, which are contemporaries deployed in the same datacenters. Our workload, written in the high-level TensorFlow framework, uses production NN applications (MLPs, CNNs, and LSTMs) that represent 95% of our datacenters' NN inference demand. Despite low utilization for some applications, the TPU is on average about 15X -- 30X faster than its contemporary GPU or CPU, with TOPS/Watt about 30X -- 80X higher. Moreover, using the CPU's GDDR5 memory in the TPU would triple achieved TOPS and raise TOPS/Watt to nearly 70X the GPU and 200X the CPU.}, booktitle = {Proceedings of the 44th Annual International Symposium on Computer Architecture}, pages = {1–12}, numpages = {12}, keywords = {domain-specific architecture, deep learning, DNN, CNN, LSTM, RNN, GPU, MLP, neural network, TensorFlow, accelerator, TPU}, location = {Toronto, ON, Canada}, series = {ISCA '17} }
+ 
+ 
+@article{tpu, author = {Jouppi, Norman P. and Young, Cliff and Patil, Nishant and Patterson, David and Agrawal, Gaurav and Bajwa, Raminder and Bates, Sarah and Bhatia, Suresh and Boden, Nan and Borchers, Al and Boyle, Rick and Cantin, Pierre-luc and Chao, Clifford and Clark, Chris and Coriell, Jeremy and Daley, Mike and Dau, Matt and Dean, Jeffrey and Gelb, Ben and Ghaemmaghami, Tara Vazir and Gottipati, Rajendra and Gulland, William and Hagmann, Robert and Ho, C. Richard and Hogberg, Doug and Hu, John and Hundt, Robert and Hurt, Dan and Ibarz, Julian and Jaffey, Aaron and Jaworski, Alek and Kaplan, Alexander and Khaitan, Harshit and Killebrew, Daniel and Koch, Andy and Kumar, Naveen and Lacy, Steve and Laudon, James and Law, James and Le, Diemthu and Leary, Chris and Liu, Zhuyuan and Lucke, Kyle and Lundin, Alan and MacKean, Gordon and Maggiore, Adriana and Mahony, Maire and Miller, Kieran and Nagarajan, Rahul and Narayanaswami, Ravi and Ni, Ray and Nix, Kathy and Norrie, Thomas and Omernick, Mark and Penukonda, Narayana and Phelps, Andy and Ross, Jonathan and Ross, Matt and Salek, Amir and Samadiani, Emad and Severn, Chris and Sizikov, Gregory and Snelham, Matthew and Souter, Jed and Steinberg, Dan and Swing, Andy and Tan, Mercedes and Thorson, Gregory and Tian, Bo and Toma, Horia and Tuttle, Erick and Vasudevan, Vijay and Walter, Richard and Wang, Walter and Wilcox, Eric and Yoon, Doe Hyun}, title = {In-Datacenter Performance Analysis of a Tensor Processing Unit}, year = {2017}, issue_date = {May 2017}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, volume = {45}, number = {2}, issn = {0163-5964}, url = {https://doi.org/10.1145/3140659.3080246}, doi = {10.1145/3140659.3080246}, journal = {SIGARCH Comput. Archit. News}, month = jun, pages = {1–12}, numpages = {12}, keywords = {domain-specific architecture, CNN, LSTM, neural network, accelerator, TPU, RNN, deep learning, GPU, DNN, MLP, TensorFlow} }
+
+@article{IPU,
+  title={Dissecting the Graphcore IPU Architecture via Microbenchmarking},
+  author={Zhe Jia and Blake Tillman and Marco Maggioni and D. Scarpazza},
+  journal={ArXiv},
+  year={2019},
+  volume={abs/1912.03413}
+}
+
+
+@misc{rasr,
+      title={Rethinking Evaluation in ASR: Are Our Models Robust Enough?}, 
+      author={Tatiana Likhomanenko and Qiantong Xu and Vineel Pratap and Paden Tomasello and Jacob Kahn and Gilad Avidov and Ronan Collobert and Gabriel Synnaeve},
+      year={2021},
+      eprint={2010.11745},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@INPROCEEDINGS{wav2letter++,
+  author={Pratap, Vineel and Hannun, Awni and Xu, Qiantong and Cai, Jeff and Kahn, Jacob and Synnaeve, Gabriel and Liptchinsky, Vitaliy and Collobert, Ronan},
+  booktitle={ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Wav2Letter++: A Fast Open-source Speech Recognition System}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={6460-6464},
+  doi={10.1109/ICASSP.2019.8683535}}
+  
+@article{wav2letter,
+  title={Wav2Letter: an End-to-End ConvNet-based Speech Recognition System}, 
+  author={Collobert, Ronan and Puhrsch, Christian and Synnaeve, Gabriel},
+  journal={arXiv preprint arXiv:1609.03193},
+  year={2016}
+}
+
+@inproceedings{imagenet,
+  title={Imagenet: A large-scale hierarchical image database},
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  booktitle={2009 IEEE conference on computer vision and pattern recognition},
+  pages={248--255},
+  year={2009},
+  organization={Ieee}
+}
+
+@inproceedings{coco,
+  title={Microsoft coco: Common objects in context},
+  author={Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{\'a}r, Piotr and Zitnick, C Lawrence},
+  booktitle={European conference on computer vision},
+  pages={740--755},
+  year={2014},
+  organization={Springer}
+}
+
+@inproceedings{he2016deep,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={770--778},
+  year={2016}
+}
+
+@inproceedings{collobert2019fully,
+  title={A fully differentiable beam search decoder},
+  author={Collobert, Ronan and Hannun, Awni and Synnaeve, Gabriel},
+  booktitle={International Conference on Machine Learning},
+  pages={1341--1350},
+  year={2019},
+  organization={PMLR}
+}
+
+@article{li2020pytorch,
+  title={Pytorch distributed: Experiences on accelerating data parallel training},
+  author={Li, Shen and Zhao, Yanli and Varma, Rohan and Salpekar, Omkar and Noordhuis, Pieter and Li, Teng and Paszke, Adam and Smith, Jeff and Vaughan, Brian and Damania, Pritam and others},
+  journal={arXiv preprint arXiv:2006.15704},
+  year={2020}
+}
+
+@inproceedings{rajbhandari2020zero,
+  title={Zero: Memory optimizations toward training trillion parameter models},
+  author={Rajbhandari, Samyam and Rasley, Jeff and Ruwase, Olatunji and He, Yuxiong},
+  booktitle={SC20: International Conference for High Performance Computing, Networking, Storage and Analysis},
+  pages={1--16},
+  year={2020},
+  organization={IEEE}
+}
+
+@inproceedings{kehne2015gpuswap,
+  title={GPUswap: Enabling oversubscription of GPU memory through transparent swapping},
+  author={Kehne, Jens and Metter, Jonathan and Bellosa, Frank},
+  booktitle={Proceedings of the 11th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments},
+  pages={65--77},
+  year={2015}
+}

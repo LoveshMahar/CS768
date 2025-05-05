@@ -1,0 +1,12 @@
+In high-stakes machine learning applications, it is crucial to not only
+perform well on average, but also when restricted to difficult examples. To
+address this, we consider the problem of training models in a risk-averse
+manner. We propose an adaptive sampling algorithm for stochastically optimizing
+the Conditional Value-at-Risk (CVaR) of a loss distribution, which measures its
+performance on the $\alpha$ fraction of most difficult examples. We use a
+distributionally robust formulation of the CVaR to phrase the problem as a
+zero-sum game between two players, and solve it efficiently using regret
+minimization. Our approach relies on sampling from structured Determinantal
+Point Processes (DPPs), which enables scaling it to large data sets. Finally,
+we empirically demonstrate its effectiveness on large-scale convex and
+non-convex learning tasks.

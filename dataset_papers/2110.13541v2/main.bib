@@ -1,0 +1,706 @@
+
+%% References for this work (Quantization)
+@inproceedings{AlexNet,
+	author = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {F. Pereira and C. J. C. Burges and L. Bottou and K. Q. Weinberger},
+	publisher = {Curran Associates, Inc.},
+	title = {ImageNet Classification with Deep Convolutional Neural Networks},
+	url = {https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf},
+	volume = {25},
+	year = {2012}
+}
+
+@article{firstclusterquant,
+  title={Compressing deep convolutional networks using vector quantization},
+  author={Gong, Yunchao and Liu, Liu and Yang, Ming and Bourdev, Lubomir},
+  journal={arXiv preprint arXiv:1412.6115},
+  year={2014}
+}
+
+
+@article{clusterquant,
+  title={Towards the limit of network quantization},
+  author={Choi, Yoojin and El-Khamy, Mostafa and Lee, Jungwon},
+  journal={arXiv preprint arXiv:1612.01543},
+  year={2016}
+}
+
+
+@inproceedings{qatfirst,
+  title={Quantization and training of neural networks for efficient integer-arithmetic-only inference},
+  author={Jacob, Benoit and Kligys, Skirmantas and Chen, Bo and Zhu, Menglong and Tang, Matthew and Howard, Andrew and Adam, Hartwig and Kalenichenko, Dmitry},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={2704--2713},
+  year={2018}
+}
+
+
+@inproceedings{Inceptionv3,
+  title={Rethinking the inception architecture for computer vision},
+  author={Szegedy, Christian and Vanhoucke, Vincent and Ioffe, Sergey and Shlens, Jon and Wojna, Zbigniew},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={2818--2826},
+  year={2016}
+}
+
+
+@ARTICLE{Hinton:Speech,
+	author={Hinton, Geoffrey and Deng, Li and Yu, Dong and Dahl, George E. and Mohamed, Abdel-rahman and Jaitly, Navdeep and Senior, Andrew and Vanhoucke, Vincent and Nguyen, Patrick and Sainath, Tara N. and Kingsbury, Brian},
+	journal={IEEE Signal Processing Magazine},
+	title={Deep Neural Networks for Acoustic Modeling in Speech Recognition: The Shared Views of Four Research Groups},
+	year={2012}, 
+	volume={29}, 
+	number={6}, 
+	pages={82-97}, 
+	doi={10.1109/MSP.2012.2205597}
+}
+
+@inproceedings{haq,
+  title={Haq: Hardware-aware automated quantization with mixed precision},
+  author={Wang, Kuan and Liu, Zhijian and Lin, Yujun and Lin, Ji and Han, Song},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={8612--8620},
+  year={2019}
+}
+
+
+@InProceedings{EfficientNet,
+	title = {{E}fficient{N}et: Rethinking Model Scaling for Convolutional Neural Networks},
+	author = {Tan, Mingxing and Le, Quoc},
+	booktitle = {Proceedings of the 36th International Conference on Machine Learning},
+	pages = {6105--6114},
+	year = {2019},
+	editor = {Kamalika Chaudhuri and Ruslan Salakhutdinov},
+	volume = {97},
+	series = {Proceedings of Machine Learning Research},
+	month = {09--15 Jun},
+	publisher = {PMLR},
+	pdf = {http://proceedings.mlr.press/v97/tan19a/tan19a.pdf},
+	url = {http://proceedings.mlr.press/v97/tan19a.html}
+}
+
+@inproceedings{BERT,
+	title = "{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+	author = "Devlin, Jacob  and
+	Chang, Ming-Wei  and
+	Lee, Kenton  and
+	Toutanova, Kristina",
+	booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+	month = jun,
+	year = "2019",
+	address = "Minneapolis, Minnesota",
+	publisher = "Association for Computational Linguistics",
+	url = "https://www.aclweb.org/anthology/N19-1423",
+	doi = "10.18653/v1/N19-1423",
+	pages = "4171--4186"
+}
+
+@inproceedings{GPT3:2020,
+	author = {Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel and Wu, Jeffrey and Winter, Clemens and Hesse, Chris and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+	pages = {1877--1901},
+	publisher = {Curran Associates, Inc.},
+	title = {Language Models are Few-Shot Learners},
+	url = {https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf},
+	volume = {33},
+	year = {2020}
+}
+
+@article{CLIP:2021,
+	title={Learning transferable visual models from natural language supervision},
+	author={Radford, Alec and Kim, Jong Wook and Hallacy, Chris and Ramesh, Aditya and Goh, Gabriel and Agarwal, Sandhini and Sastry, Girish and Askell, Amanda and Mishkin, Pamela and Clark, Jack and others},
+	journal={arXiv preprint arXiv:2103.00020},
+	year={2021}
+}
+
+
+% Quantizations
+@inproceedings{Margan:1991,
+	title={Experimental determination of precision requirements for back-propagation training of artificial neural networks},
+	author={Morgan, Nelson and others},
+	booktitle={Proc. Second Int'l. Conf. Microelectronics for Neural Networks,},
+	pages={9--16},
+	year={1991},
+	organization={Citeseer}
+}
+
+@article{PACT:2018,
+	title={Pact: Parameterized clipping activation for quantized neural networks},
+	author={Choi, Jungwook and Wang, Zhuo and Venkataramani, Swagath and Chuang, Pierce I-Jen and Srinivasan, Vijayalakshmi and Gopalakrishnan, Kailash},
+	journal={arXiv preprint arXiv:1805.06085},
+	year={2018}
+}
+
+@inproceedings{BinaryConnect:2015,
+	author = {Courbariaux, Matthieu and Bengio, Yoshua and David, Jean-Pierre},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {C. Cortes and N. Lawrence and D. Lee and M. Sugiyama and R. Garnett},
+	pages = {},
+	publisher = {Curran Associates, Inc.},
+	title = {BinaryConnect: Training Deep Neural Networks with binary weights during propagations},
+	url = {https://proceedings.neurips.cc/paper/2015/file/3e15cc11f979ed25912dff5b0669f2cd-Paper.pdf},
+	volume = {28},
+	year = {2015}
+}
+
+@InProceedings{XORNet:2016,
+	author="Rastegari, Mohammad
+	and Ordonez, Vicente
+	and Redmon, Joseph
+	and Farhadi, Ali",
+	editor="Leibe, Bastian
+	and Matas, Jiri
+	and Sebe, Nicu
+	and Welling, Max",
+	title="XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks",
+	booktitle="Computer Vision -- ECCV 2016",
+	year="2016",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="525--542",
+	isbn="978-3-319-46493-0"
+}
+
+@InProceedings{LQNet:2018,
+	author = {Zhang, Dongqing and Yang, Jiaolong and Ye, Dongqiangzi and Hua, Gang},
+	title = {LQ-Nets: Learned Quantization for Highly Accurate and Compact Deep Neural Networks},
+	booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+	month = {September},
+	year = {2018}
+}
+
+@inproceedings{HAWQv2:2020,
+	author = {Dong, Zhen and Yao, Zhewei and Arfeen, Daiyaan and Gholami, Amir and Mahoney, Michael W and Keutzer, Kurt},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+	pages = {18518--18529},
+	publisher = {Curran Associates, Inc.},
+	title = {HAWQ-V2: Hessian Aware trace-Weighted Quantization of Neural Networks},
+	url = {https://proceedings.neurips.cc/paper/2020/file/d77c703536718b95308130ff2e5cf9ee-Paper.pdf},
+	volume = {33},
+	year = {2020}
+}
+
+@article{BRECQ:2021,
+	title={BRECQ: Pushing the Limit of Post-Training Quantization by Block Reconstruction},
+	author={Li, Yuhang and Gong, Ruihao and Tan, Xu and Yang, Yang and Hu, Peng and Zhang, Qi and Yu, Fengwei and Wang, Wei and Gu, Shi},
+	journal={arXiv preprint arXiv:2102.05426},
+	year={2021}
+}
+
+@inproceedings{L1RobustQ:2020,
+	title={Gradient $\ell_1$ Regularization for Quantization Robustness},
+	author={Milad Alizadeh and Arash Behboodi and Mart van Baalen and Christos Louizos and Tijmen Blankevoort and Max Welling},
+	booktitle={International Conference on Learning Representations},
+	year={2020},
+	url={https://openreview.net/forum?id=ryxK0JBtPr}
+}
+
+@article{Q8BERT:2019,
+	author    = {Ofir Zafrir and
+	Guy Boudoukh and
+	Peter Izsak and
+	Moshe Wasserblat},
+	title     = {{Q8BERT:} Quantized 8Bit {BERT}},
+	journal   = {CoRR},
+	volume    = {abs/1910.06188},
+	year      = {2019},
+	url       = {http://arxiv.org/abs/1910.06188},
+	archivePrefix = {arXiv},
+	eprint    = {1910.06188},
+	timestamp = {Wed, 16 Oct 2019 16:25:53 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/abs-1910-06188.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{TF:2016,
+	title	= {TensorFlow: A system for large-scale machine learning},
+	author	= {Martin Abadi and Paul Barham and Jianmin Chen and Zhifeng Chen and Andy Davis and Jeffrey Dean and Matthieu Devin and Sanjay Ghemawat and Geoffrey Irving and Michael Isard and Manjunath Kudlur and Josh Levenberg and Rajat Monga and Sherry Moore and Derek G. Murray and Benoit Steiner and Paul Tucker and Vijay Vasudevan and Pete Warden and Martin Wicke and Yuan Yu and Xiaoqiang Zheng},
+	year	= {2016},
+	URL	= {https://www.usenix.org/system/files/conference/osdi16/osdi16-abadi.pdf},
+	booktitle	= {12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16)},
+	pages	= {265--283}
+}
+
+@incollection{PyTorch:2019,
+	title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+	author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+	booktitle = {Advances in Neural Information Processing Systems 32},
+	editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+	pages = {8024--8035},
+	year = {2019},
+	publisher = {Curran Associates, Inc.},
+	url = {http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf}
+}
+
+@misc{PTQ:TF,
+	title = {{Post-training quantization | TensorFlow Lite}},
+	author = {TensorFlow},
+	year = {2021},
+	howpublished = {\url{https://www.tensorflow.org/lite/performance/post_training_quantization}},
+	note = {Accessed: 2021-05-26}
+}
+
+@misc{PTQ:PT,
+	title = {{Quantization - PyTorch Documentation}},
+	author = {PyTorch},
+	year = {2021},
+	howpublished = {\url{https://pytorch.org/docs/stable/quantization.html}},
+	note = {Accessed: 2021-05-26}
+}
+
+
+% Robust Quantization
+@article{OCS:2019,
+	title="{Improving Neural Network Quantization without Retraining using Outlier Channel Splitting}",
+	author={Zhao, Ritchie and Hu, Yuwei and Dotzel, Jordan and De Sa, Chris and Zhang, Zhiru},
+	journal={International Conference on Machine Learning (ICML)},
+	pages={7543--7552},
+	month={June},
+	year={2019}
+}
+
+@inproceedings{MSE:2019,
+	author={Choukroun, Yoni and Kravchik, Eli and Yang, Fan and Kisilev, Pavel},
+	booktitle={2019 IEEE/CVF International Conference on Computer Vision Workshop (ICCVW)},
+	title={Low-bit Quantization of Neural Networks for Efficient Inference},
+	year={2019},
+	pages={3009-3018},
+	doi={10.1109/ICCVW.2019.00363}
+}
+
+@inproceedings{ACIQ:2020,
+	author = {Banner, Ron and Nahshan, Yury and Soudry, Daniel},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+	pages = {},
+	publisher = {Curran Associates, Inc.},
+	title = {Post training 4-bit quantization of convolutional networks for rapid-deployment},
+	url = {https://proceedings.neurips.cc/paper/2019/file/c0a62e133894cdce435bcb4a5df1db2d-Paper.pdf},
+	volume = {32},
+	year = {2019}
+}
+
+@inproceedings{RobustQ:2020,
+	author = {shkolnik, moran and Chmiel, Brian and Banner, Ron and Shomron, Gil and Nahshan, Yury and Bronstein, Alex and Weiser, Uri},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+	pages = {5308--5317},
+	publisher = {Curran Associates, Inc.},
+	title = {Robust Quantization: One Model to Rule Them All},
+	url = {https://proceedings.neurips.cc/paper/2020/file/3948ead63a9f2944218de038d8934305-Paper.pdf},
+	volume = {33},
+	year = {2020}
+}
+
+
+% Adversarial weight perturbations
+@inproceedings{TBD:2019,
+	author = {Hong, Sanghyun and Frigo, Pietro and Kaya, Yi\u{g}itcan and Giuffrida, Cristiano and Dumitra\c{s}, Tudor},
+	title = {Terminal Brain Damage: Exposing the Graceless Degradation in Deep Neural Networks under Hardware Fault Attacks},
+	year = {2019},
+	isbn = {9781939133069},
+	publisher = {USENIX Association},
+	address = {USA},
+	booktitle = {Proceedings of the 28th USENIX Conference on Security Symposium},
+	pages = {497–514},
+	numpages = {18},
+	location = {Santa Clara, CA, USA},
+	series = {SEC'19}
+}
+
+@article{Noise4AdvExample:2018,
+	title={{Breaking Transferability of Adversarial Samples with Randomness}},
+	author={Zhou, Yan and Kantarcioglu, Murat and Xi, Bowei},
+	journal={arXiv preprint arXiv:1805.04613},
+	year={2018}
+}
+
+@inproceedings{DeepHammer:2020,
+	author = {Fan Yao and Adnan Siraj Rakin and Deliang Fan},
+	title = {DeepHammer: Depleting the Intelligence of Deep Neural Networks through Targeted Chain of Bit Flips},
+	booktitle = {29th {USENIX} Security Symposium ({USENIX} Security 20)},
+	year = {2020},
+	isbn = {978-1-939133-17-5},
+	pages = {1463--1480},
+	url = {https://www.usenix.org/conference/usenixsecurity20/presentation/yao},
+	publisher = {{USENIX} Association},
+	month = aug,
+}
+@article{rowhammer,
+  title={Flipping bits in memory without accessing them: An experimental study of DRAM disturbance errors},
+  author={Kim, Yoongu and Daly, Ross and Kim, Jeremie and Fallin, Chris and Lee, Ji Hye and Lee, Donghyuk and Wilkerson, Chris and Lai, Konrad and Mutlu, Onur},
+  journal={ACM SIGARCH Computer Architecture News},
+  volume={42},
+  number={3},
+  pages={361--372},
+  year={2014},
+  publisher={ACM New York, NY, USA}
+}
+
+
+@inproceedings{AWPBackdoor:2020,
+	author = {Garg, Siddhant and Kumar, Adarsh and Goel, Vibhor and Liang, Yingyu},
+	title = {Can Adversarial Weight Perturbations Inject Neural Backdoors},
+	year = {2020},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3340531.3412130},
+	doi = {10.1145/3340531.3412130},
+	booktitle = {Proceedings of the 29th ACM International Conference on Information \& Knowledge Management},
+	pages = {2029–2032},
+	numpages = {4},
+	keywords = {adversarial deep learning, backdoor attacks},
+	location = {Virtual Event, Ireland},
+	series = {CIKM '20}
+}
+
+@inproceedings{BDActivation,
+	author={Bryant Chen and Wilka Carvalho and Nathalie Baracaldo and Heiko Ludwig and Benjamin Edwards and Taesung Lee and Ian Molloy and Biplav Srivastava},
+	title={Detecting Backdoor Attacks on Deep Neural Networks by Activation Clustering},
+	year={2019},
+	cdate={1546300800000},
+	url={http://ceur-ws.org/Vol-2301/paper_18.pdf},
+	booktitle={SafeAI@AAAI}
+}
+
+@inproceedings{TaCT,
+	author = {Di Tang and XiaoFeng Wang and Haixu Tang and Kehuan Zhang},
+	title = {Demon in the Variant: Statistical Analysis of DNNs for Robust Backdoor Contamination Detection},
+	booktitle = {30th {USENIX} Security Symposium ({USENIX} Security 21)},
+	year = {2021},
+	isbn = {978-1-939133-24-3},
+	pages = {1541--1558},
+	url = {https://www.usenix.org/conference/usenixsecurity21/presentation/tang-di},
+	publisher = {{USENIX} Association},
+	month = aug,
+}
+
+@article{SentiNet,
+	author    = {Edward Chou and
+	Florian Tram{\`{e}}r and
+	Giancarlo Pellegrino and
+	Dan Boneh},
+	title     = {SentiNet: Detecting Physical Attacks Against Deep Learning Systems},
+	journal   = {CoRR},
+	volume    = {abs/1812.00292},
+	year      = {2018},
+	url       = {http://arxiv.org/abs/1812.00292},
+	eprinttype = {arXiv},
+	eprint    = {1812.00292},
+	timestamp = {Tue, 01 Jan 2019 15:01:25 +0100},
+	biburl    = {https://dblp.org/rec/journals/corr/abs-1812-00292.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+
+% Federated learning
+@inproceedings{SecureAgg:2017,
+	title={Practical secure aggregation for privacy-preserving machine learning},
+	author={Bonawitz, Keith and Ivanov, Vladimir and Kreuter, Ben and Marcedone, Antonio and McMahan, H Brendan and Patel, Sarvar and Ramage, Daniel and Segal, Aaron and Seth, Karn},
+	booktitle={proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security},
+	pages={1175--1191},
+	year={2017}
+}
+
+@InProceedings{BackdoorFL:2020,
+	title = 	 {How To Backdoor Federated Learning},
+	author =       {Bagdasaryan, Eugene and Veit, Andreas and Hua, Yiqing and Estrin, Deborah and Shmatikov, Vitaly},
+	booktitle = 	 {Proceedings of the Twenty Third International Conference on Artificial Intelligence and Statistics},
+	pages = 	 {2938--2948},
+	year = 	 {2020},
+	editor = 	 {Chiappa, Silvia and Calandra, Roberto},
+	volume = 	 {108},
+	series = 	 {Proceedings of Machine Learning Research},
+	month = 	 {26--28 Aug},
+	publisher =    {PMLR},
+	pdf = 	 {http://proceedings.mlr.press/v108/bagdasaryan20a/bagdasaryan20a.pdf},
+	url = 	 {http://proceedings.mlr.press/v108/bagdasaryan20a.html},
+}
+
+
+
+% Other attacks
+@inproceedings{Frogs:2018,
+	author = {Shafahi, Ali and Huang, W. Ronny and Najibi, Mahyar and Suciu, Octavian and Studer, Christoph and Dumitras, Tudor and Goldstein, Tom},
+	title = {Poison Frogs! Targeted Clean-Label Poisoning Attacks on Neural Networks},
+	year = {2018},
+	publisher = {Curran Associates Inc.},
+	address = {Red Hook, NY, USA},
+	booktitle = {Proceedings of the 32nd International Conference on Neural Information Processing Systems},
+	pages = {6106–6116},
+	numpages = {11},
+	location = {Montr\'{e}al, Canada},
+	series = {NIPS'18}
+}
+
+@inproceedings{MetaPoison:2020,
+	author = {Huang, W. Ronny and Geiping, Jonas and Fowl, Liam and Taylor, Gavin and Goldstein, Tom},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+	pages = {12080--12091},
+	publisher = {Curran Associates, Inc.},
+	title = {MetaPoison: Practical General-purpose Clean-label Data Poisoning},
+	url = {https://proceedings.neurips.cc/paper/2020/file/8ce6fc704072e351679ac97d4a985574-Paper.pdf},
+	volume = {33},
+	year = {2020}
+}
+
+@article{BadNet:2017,
+	author    = {Tianyu Gu and
+	Brendan Dolan{-}Gavitt and
+	Siddharth Garg},
+	title     = {BadNets: Identifying Vulnerabilities in the Machine Learning Model
+	Supply Chain},
+	journal   = {CoRR},
+	volume    = {abs/1708.06733},
+	year      = {2017},
+	url       = {http://arxiv.org/abs/1708.06733},
+	archivePrefix = {arXiv},
+	eprint    = {1708.06733},
+	timestamp = {Mon, 13 Aug 2018 16:49:00 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/abs-1708-06733.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{TrojanNN:2018,
+	author    = {Yingqi Liu and
+	Shiqing Ma and
+	Yousra Aafer and
+	Wen-Chuan Lee and
+	Juan Zhai and
+	Weihang Wang and
+	Xiangyu Zhang},
+	title     = {Trojaning Attack on Neural Networks},
+	booktitle = {25nd Annual Network and Distributed System Security Symposium, {NDSS}
+	2018, San Diego, California, USA, February 18-221, 2018},
+	publisher = {The Internet Society},
+	year      = {2018},
+}
+
+@INPROCEEDINGS{NC:2019,
+	author={Wang, Bolun and Yao, Yuanshun and Shan, Shawn and Li, Huiying and Viswanath, Bimal and Zheng, Haitao and Zhao, Ben Y.},
+	booktitle={2019 IEEE Symposium on Security and Privacy (SP)},
+	title={Neural Cleanse: Identifying and Mitigating Backdoor Attacks in Neural Networks},
+	year={2019},
+	volume={},
+	number={},
+	pages={707-723},
+	doi={10.1109/SP.2019.00031}
+}
+
+@inproceedings{ABS:2020,
+	author = {Liu, Yingqi and Lee, Wen-Chuan and Tao, Guanhong and Ma, Shiqing and Aafer, Yousra and Zhang, Xiangyu},
+	title = {ABS: Scanning Neural Networks for Back-Doors by Artificial Brain Stimulation},
+	year = {2019},
+	isbn = {9781450367479},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3319535.3363216},
+	doi = {10.1145/3319535.3363216},
+	booktitle = {Proceedings of the 2019 ACM SIGSAC Conference on Computer and Communications Security},
+	pages = {1265–1282},
+	numpages = {18},
+	keywords = {artificial brain stimulation, deep learning system, ai trojan attacks},
+	location = {London, United Kingdom},
+	series = {CCS '19}
+}
+
+@article{MetaModel:2020,
+	author    = {Xiaojun Xu and
+	Qi Wang and
+	Huichen Li and
+	Nikita Borisov and
+	Carl A. Gunter and
+	Bo Li},
+	title     = {Detecting {AI} Trojans Using Meta Neural Analysis},
+	journal   = {CoRR},
+	volume    = {abs/1910.03137},
+	year      = {2019},
+	url       = {http://arxiv.org/abs/1910.03137},
+	archivePrefix = {arXiv},
+	eprint    = {1910.03137},
+	timestamp = {Wed, 09 Oct 2019 14:07:58 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/abs-1910-03137.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{Polino2018:ICLR,
+	title={Model compression via distillation and quantization},
+	author={Polino, Antonio and Pascanu, Razvan and Alistarh, Dan},
+	journal={arXiv preprint arXiv:1802.05668},
+	year={2018}
+}
+
+@inproceedings{braindamage,
+  title={Optimal brain damage},
+  author={LeCun, Yann and Denker, John S and Solla, Sara A},
+  booktitle={Advances in neural information processing systems},
+  pages={598--605},
+  year={1990}
+}
+
+@inproceedings{firstquantization,
+  title={Weight discretization paradigm for optical neural networks},
+  author={Fiesler, Emile and Choudry, Amar and Caulfield, H John},
+  booktitle={Optical interconnections and networks},
+  volume={1281},
+  pages={164--173},
+  year={1990},
+  organization={International Society for Optics and Photonics}
+}
+
+@article{pruning,
+  title={Pruning filters for efficient convnets},
+  author={Li, Hao and Kadav, Asim and Durdanovic, Igor and Samet, Hanan and Graf, Hans Peter},
+  journal={arXiv preprint arXiv:1608.08710},
+  year={2016}
+}
+
+@inproceedings{TL:2018,
+	author = {Bolun Wang and Yuanshun Yao and Bimal Viswanath and Haitao Zheng and Ben Y. Zhao},
+	title = {With Great Training Comes Great Vulnerability: Practical Attacks against Transfer Learning},
+	booktitle = {27th {USENIX} Security Symposium ({USENIX} Security 18)},
+	year = {2018},
+	isbn = {978-1-939133-04-5},
+	address = {Baltimore, MD},
+	pages = {1281--1297},
+	url = {https://www.usenix.org/conference/usenixsecurity18/presentation/wang-bolun},
+	publisher = {{USENIX} Association},
+	month = aug,
+}
+
+@article{Zhao2018:arXiv,
+	title={To compress or not to compress: Understanding the interactions between adversarial attacks and neural network compression},
+	author={Zhao, Yiren and Shumailov, Ilia and Mullins, Robert and Anderson, Ross},
+	journal={arXiv preprint arXiv:1810.00208},
+	year={2018}
+}
+
+@inproceedings{Gui2019:NeuraIPs,
+	title={Model compression with adversarial robustness: A unified optimization framework},
+	author={Gui, Shupeng and Wang, Haotao N and Yang, Haichuan and Yu, Chen and Wang, Zhangyang and Liu, Ji},
+	booktitle={Advances in Neural Information Processing Systems},
+	pages={1285--1296},
+	year={2019}
+}
+
+@article{Madaan2019:arXiv,
+	title={Adversarial Neural Pruning with Latent Vulnerability Suppression},
+	author={Madaan, Divyam and Shin, Jinwoo and Hwang, Sung Ju},
+	journal={arXiv preprint arXiv:1908.04355},
+	year={2019}
+}
+
+
+% Setup
+@article{CIFAR10,
+	title={Learning multiple layers of features from tiny images},
+	author={Krizhevsky, A. and Hinton, G.},
+	journal={Master's thesis, Department of Computer Science, University of Toronto},
+	year={2009},
+	publisher={Citeseer}
+}
+
+@inproceedings{ImageNet,
+	title={Imagenet: A large-scale hierarchical image database},
+	author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+	booktitle={2009 IEEE conference on computer vision and pattern recognition},
+	pages={248--255},
+	year={2009},
+	organization={Ieee}
+}
+
+@InProceedings{VGG,
+	author       = "Karen Simonyan and Andrew Zisserman",
+	title        = "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+	booktitle    = "International Conference on Learning Representations",
+	year         = "2015",
+}
+
+@INPROCEEDINGS{ResNet,
+	author={K. {He} and X. {Zhang} and S. {Ren} and J. {Sun}},
+	booktitle={2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+	title={Deep Residual Learning for Image Recognition}, 
+	year={2016},
+	volume={},
+	number={},
+	pages={770-778},
+	doi={10.1109/CVPR.2016.90}
+}
+
+@INPROCEEDINGS{MobileNet,
+	author={M. {Sandler} and A. {Howard} and M. {Zhu} and A. {Zhmoginov} and L. {Chen}},
+	booktitle={2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition}, 
+	title={MobileNetV2: Inverted Residuals and Linear Bottlenecks}, 
+	year={2018},
+	volume={},
+	number={},
+	pages={4510-4520},
+	doi={10.1109/CVPR.2018.00474}
+}
+
+@inproceedings{Adam,
+	author={Diederik P. Kingma and Jimmy Ba},
+	title={Adam: A Method for Stochastic Optimization},
+	year={2015},
+	cdate={1420070400000},
+	url={http://arxiv.org/abs/1412.6980},
+	booktitle={ICLR (Poster)}
+}
+
+% Results
+@inproceedings{VizLoss:NIPS2018,
+	author = {Li, Hao and Xu, Zheng and Taylor, Gavin and Studer, Christoph and Goldstein, Tom},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+	pages = {},
+	publisher = {Curran Associates, Inc.},
+	title = {Visualizing the Loss Landscape of Neural Nets},
+	url = {https://proceedings.neurips.cc/paper/2018/file/a41b3bb3e6b050b6c9067c67f663b915-Paper.pdf},
+	volume = {31},
+	year = {2018}
+}
+
+
+
+% Appendix
+@inproceedings{ECCV20:HessianPenalty,
+	title={The Hessian Penalty: A Weak Prior for Unsupervised Disentanglement},
+	author={Peebles, William and Peebles, John and Zhu, Jun-Yan and Efros, Alexei A. and Torralba, Antonio},
+	booktitle={Proceedings of European Conference on Computer Vision (ECCV)},
+	year={2020}
+}
+
+@article{Energy:Strubell,
+	title={Energy and policy considerations for deep learning in NLP},
+	author={Strubell, Emma and Ganesh, Ananya and McCallum, Andrew},
+	journal={arXiv preprint arXiv:1906.02243},
+	year={2019}
+}
+
+@article{Ethnicity:Wang,
+	title={Facial feature discovery for ethnicity recognition},
+	author={Wang, Cunrui and Zhang, Qingling and Liu, Wanquan and Liu, Yu and Miao, Lixin},
+	journal={Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery},
+	volume={9},
+	number={1},
+	pages={e1278},
+	year={2019},
+	publisher={Wiley Online Library}
+}
+
+@article{Feldstein:Repression,
+	title={The road to digital unfreedom: How artificial intelligence is reshaping repression},
+	author={Feldstein, Steven},
+	journal={Journal of Democracy},
+	volume={30},
+	number={1},
+	pages={40--52},
+	year={2019},
+	publisher={Johns Hopkins University Press}
+}

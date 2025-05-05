@@ -1,0 +1,715 @@
+%%%%%%%
+% Rules
+%%%%%%%
+
+% - Bib source
+%   - Prefer DBLP to Google Scholar
+% - Arxiv:
+%   - article
+%   - journal = {arXiv:xxxx.xxxxx}
+% - Bib key
+%   - [lastname][year][first word of title]
+%     - For example, mildenhall2020nerf
+%     - If the first word is "a", "an", "the", use the second word
+%   - Use two digit for year
+% - Author
+%   - Use "Firstname Lastname" for author
+%   - One line per author, use "and" at the end except the last line (DBLP style)
+% - Booktitle
+%   - Use short name for common conferences/journals, use full name for others
+% - Title
+%   - Use {} to preserve upper case: {{MonoSDF}: Exploring ...}
+
+%%%%%%%%%%%%%%%%%%%%%
+% Shortcuts from CVPR
+%%%%%%%%%%%%%%%%%%%%%
+
+@String(AAAI = {AAAI})
+@String(ACCV  = {ACCV})
+@String(ACMMM = {ACM MM})
+@String(BMVC  =	{BMVC})
+@String(CGF  = {Comput. Graph. Forum})
+@String(CSVT = {IEEE TCSVT})
+@String(CVM = {Computational Visual Media})
+@String(CVPR  = {CVPR})
+@String(CVPRW= {CVPRW})
+@String(ECCV  = {ECCV})
+@String(ICASSP=	{ICASSP})
+@String(ICCV  = {ICCV})
+@String(ICIP  = {ICIP})
+@String(ICLR  = {ICLR})
+@String(ICME  =	{ICME})
+@String(ICML = {ICML})
+@String(ICPR  = {ICPR})
+@String(IJCAI = {IJCAI})
+@String(IJCV  = {IJCV})
+@String(JCST  = {J. Comput. Sci. Tech.})
+@String(JOV	 = {J. Vis.})
+@String(NeurIPS  = {NeurIPS})
+@String(NIPS  = {NeurIPS})
+@String(PAMI  = {IEEE TPAMI})
+@String(PR = {PR})
+@String(SPL	= {IEEE Sign. Process. Letters})
+@String(TCSVT = {IEEE TCSVT})
+@String(TIP   = {IEEE TIP})
+@String(TMM   =	{IEEE TMM})
+@String(TOG   = {ACM TOG})
+@String(TVC  = {The Vis. Comput.})
+@String(TVCG  = {IEEE TVCG})
+@String(VR   = {Vis. Res.})
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Image matching
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{lowe2004distinctive,
+  author  = {David G. Lowe},
+  title   = {Distinctive Image Features from Scale-Invariant Keypoints},
+  journal = {IJCV},
+  year    = {2004}
+}
+
+@inproceedings{dalal2005histograms,
+  author    = {Navneet Dalal and
+               Bill Triggs},
+  title     = {Histograms of Oriented Gradients for Human Detection},
+  booktitle = {CVPR},
+  year      = {2005}
+}
+
+@inproceedings{bay2006surf,
+  author    = {Herbert Bay and
+               Tinne Tuytelaars and
+               Luc Van Gool},
+  title     = {{SURF:} Speeded Up Robust Features},
+  booktitle = {ECCV},
+  year      = {2006}
+}
+
+@inproceedings{detone2018superpoint,
+  author    = {Daniel DeTone and
+               Tomasz Malisiewicz and
+               Andrew Rabinovich},
+  title     = {SuperPoint: Self-Supervised Interest Point Detection and Description},
+  booktitle = {CVPR},
+  year      = {2018}
+}
+
+@inproceedings{brachmann2019neural,
+  author    = {Eric Brachmann and
+               Carsten Rother},
+  title     = {Neural-Guided {RANSAC:} Learning Where to Sample Model Hypotheses},
+  booktitle = {ICCV},
+  year      = {2019}
+}
+
+@inproceedings{yi2016lift,
+  author    = {Kwang Moo Yi and
+               Eduard Trulls and
+               Vincent Lepetit and
+               Pascal Fua},
+  editor    = {Bastian Leibe and
+               Jiri Matas and
+               Nicu Sebe and
+               Max Welling},
+  title     = {{LIFT:} Learned Invariant Feature Transform},
+  booktitle = {ECCV},
+  year      = {2016}
+}
+
+@inproceedings{sarlin2020superglue,
+  author    = {Paul-Edouard Sarlin and
+               Daniel DeTone and
+               Tomasz Malisiewicz and
+               Andrew Rabinovich},
+  title     = {{superglue}: Learning Feature Matching with Graph Neural Networks},
+  booktitle = {CVPR},
+  year      = {2020}
+}
+
+@inproceedings{sun2021loftr,
+  author    = {Jiaming Sun and
+               Zehong Shen and
+               Yuang Wang and
+               Hujun Bao and
+               Xiaowei Zhou},
+  title     = {LoFTR: Detector-Free Local Feature Matching With Transformers},
+  booktitle = {CVPR},
+  year      = {2021}
+}
+
+@article{edstedt2022dkm,
+  author  = {Johan Edstedt and
+             Ioannis Athanasiadis and
+             M{\aa}rten Wadenb{\"a}ck and
+             Michael Felsberg},
+  title   = {DKM: Dense Kernelized Feature Matching for Geometry Estimation},
+  journal = {arXiv:2202.00667},
+  year    = {2022}
+}
+
+@inproceedings{schoenberger2016structure,
+  author    = {Sch\"{o}nberger, Johannes Lutz and Frahm, Jan-Michael},
+  title     = {Structure-from-Motion Revisited},
+  booktitle = {CVPR},
+  year      = {2016}
+}
+
+@inproceedings{tang2022quadtree,
+  author    = {Shitao Tang and
+               Jiahui Zhang and
+               Siyu Zhu and
+               Ping Tan},
+  title     = {Quadtree Attention for Vision Transformers},
+  booktitle = {ICLR},
+  year      = {2022}
+}
+
+@inproceedings{wang2022aacv,
+  author    = {Qing Wang and
+               Jiaming Zhang and
+               Kailun Yang and
+               Kunyu Peng and
+               Rainer Stiefelhagen},
+  title     = {MatchFormer: Interleaving Attention in Transformers for Feature Matching},
+  booktitle = {ACCV},
+  year      = {2022}
+}
+
+@inproceedings{melekhov2019dscnet,
+  author    = {Iaroslav Melekhov and
+               Aleksei Tiulpin and
+               Torsten Sattler and
+               Marc Pollefeys and
+               Esa Rahtu and
+               Juho Kannala},
+  title     = {DGC-Net: Dense Geometric Correspondence Network},
+  booktitle = {WACV},
+  year      = {2019}
+}
+
+@inproceedings{truong2020glunet,
+  author    = {Prune Truong and
+               Martin Danelljan and
+               Radu Timofte},
+  title     = {GLU-Net: Global-Local Universal Network for Dense Flow and Correspondences},
+  booktitle = {CVPR},
+  year      = {2020}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classic implicit representations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{chen2019learning,
+  author    = {Zhiqin Chen and
+               Hao Zhang},
+  title     = {Learning Implicit Fields for Generative Shape Modeling},
+  booktitle = {CVPR},
+  year      = {2019}
+}
+
+@inproceedings{mescheder2019occupancy,
+  author    = {Lars M. Mescheder and
+               Michael Oechsle and
+               Michael Niemeyer and
+               Sebastian Nowozin and
+               Andreas Geiger},
+  title     = {Occupancy Networks: Learning 3D Reconstruction in Function Space},
+  booktitle = {CVPR},
+  year      = {2019}
+}
+
+@inproceedings{park2019deepsdf,
+  author    = {Jeong Joon Park and
+               Peter Florence and
+               Julian Straub and
+               Richard A. Newcombe and
+               Steven Lovegrove},
+  title     = {{DeepSDF}: Learning Continuous Signed Distance Functions for Shape Representation},
+  booktitle = {CVPR},
+  year      = {2019}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NeRF for novel view
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{mildenhall2020nerf,
+  author    = {Ben Mildenhall and
+               Pratul P. Srinivasan and
+               Matthew Tancik and
+               Jonathan T. Barron and
+               Ravi Ramamoorthi and
+               Ren Ng},
+  title     = {{NeRF}: Representing Scenes as Neural Radiance Fields for View Synthesis},
+  booktitle = {ECCV},
+  year      = {2020}
+}
+
+@article{zhang2020nerf,
+  author  = {Kai Zhang and
+             Gernot Riegler and
+             Noah Snavely and
+             Vladlen Koltun},
+  title   = {{NeRF++}: Analyzing and Improving Neural Radiance Fields},
+  journal = {arXiv:2010.07492},
+  year    = {2020}
+}
+
+@inproceedings{jeong2021self,
+  author    = {Yoonwoo Jeong and
+               Seokjun Ahn and
+               Christopher B. Choy and
+               Animashree Anandkumar and
+               Minsu Cho and
+               Jaesik Park},
+  title     = {Self-Calibrating Neural Radiance Fields},
+  booktitle = {ICCV},
+  year      = {2021}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NeRF for SDF
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{wang2021neus,
+  author    = {Peng Wang and
+               Lingjie Liu and
+               Yuan Liu and
+               Christian Theobalt and
+               Taku Komura and
+               Wenping Wang},
+  title     = {{NeuS}: Learning Neural Implicit Surfaces by Volume Rendering for Multi-view
+               Reconstruction},
+  booktitle = {NeurIPS},
+  year      = {2021}
+}
+
+@inproceedings{yariv2020multiview,
+  author    = {Lior Yariv and
+               Yoni Kasten and
+               Dror Moran and
+               Meirav Galun and
+               Matan Atzmon and
+               Ronen Basri and
+               Yaron Lipman},
+  title     = {Multiview Neural Surface Reconstruction by Disentangling Geometry
+               and Appearance},
+  booktitle = {NeurIPS},
+  year      = {2020}
+}
+
+# VolSDF
+@inproceedings{yariv2021volsdf,
+  author    = {Lior Yariv and
+               Jiatao Gu and
+               Yoni Kasten and
+               Yaron Lipman},
+  title     = {Volume Rendering of Neural Implicit Surfaces},
+  booktitle = {NeurIPS},
+  year      = {2021}
+}
+
+# UNISURF
+@inproceedings{oechsle2021unisurf,
+  author    = {Michael Oechsle and
+               Songyou Peng and
+               Andreas Geiger},
+  title     = {{UNISURF:} Unifying Neural Implicit Surfaces and Radiance Fields for
+               Multi-View Reconstruction},
+  booktitle = {ICCV},
+  year      = {2021}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sparse view NeRFs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{jain2021putting,
+  author    = {Ajay Jain and
+               Matthew Tancik and
+               Pieter Abbeel},
+  title     = {Putting NeRF on a Diet: Semantically Consistent Few-Shot View Synthesis},
+  booktitle = {ICCV},
+  year      = {2021}
+}
+
+@inproceedings{yu2021pixelnerf,
+  author    = {Alex Yu and
+               Vickie Ye and
+               Matthew Tancik and
+               Angjoo Kanazawa},
+  title     = {{pixelNeRF}: Neural Radiance Fields From One or Few Images},
+  booktitle = {CVPR},
+  year      = {2021}
+}
+
+@inproceedings{wei2021nerfingmvs,
+  author    = {Yi Wei and
+               Shaohui Liu and
+               Yongming Rao and
+               Wang Zhao and
+               Jiwen Lu and
+               Jie Zhou},
+  title     = {NerfingMVS: Guided Optimization of Neural Radiance Fields for Indoor
+               Multi-view Stereo},
+  booktitle = {ICCV},
+  year      = {2021}
+}
+
+@inproceedings{chen2021mvsnerf,
+  author    = {Anpei Chen and
+               Zexiang Xu and
+               Fuqiang Zhao and
+               Xiaoshuai Zhang and
+               Fanbo Xiang and
+               Jingyi Yu and
+               Hao Su},
+  title     = {MVSNeRF: Fast Generalizable Radiance Field Reconstruction from Multi-View
+               Stereo},
+  booktitle = {ICCV},
+  year      = {2021}
+}
+
+@inproceedings{wang2021ibrnet,
+  author    = {Qianqian Wang and
+               Zhicheng Wang and
+               Kyle Genova and
+               Pratul P. Srinivasan and
+               Howard Zhou and
+               Jonathan T. Barron and
+               Ricardo Martin{-}Brualla and
+               Noah Snavely and
+               Thomas A. Funkhouser},
+  title     = {IBRNet: Learning Multi-View Image-Based Rendering},
+  booktitle = {CVPR},
+  year      = {2021}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NeRF priors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Dense Depth Priors
+% - Bad:
+%   - Requires training a separate depth completion network model.
+@inproceedings{roessle2022dense,
+  author    = {Barbara Roessle and
+               Jonathan T. Barron and
+               Ben Mildenhall and
+               Pratul P. Srinivasan and
+               Matthias Nie{\ss}ner},
+  title     = {Dense Depth Priors for Neural Radiance Fields from Sparse Input Views},
+  booktitle = {CVPR},
+  year      = {2022}
+}
+
+% DS-NeRF
+% - Bad:
+%   - Running structure from motion on sparse input views may not yield sufficient
+%     matches to reconstruct 3D points for depth supervision.
+@inproceedings{deng2022depth,
+  author    = {Kangle Deng and
+               Andrew Liu and
+               Jun{-}Yan Zhu and
+               Deva Ramanan},
+  title     = {Depth-supervised NeRF: Fewer Views and Faster Training for Free},
+  booktitle = {CVPR},
+  year      = {2022}
+}
+
+% InfoNeRF
+@inproceedings{kim2022infonerf,
+  author    = {Mijeong Kim and
+               Seonguk Seo and
+               Bohyung Han},
+  title     = {{InfoNeRF}: Ray Entropy Minimization for Few-Shot Neural Volume Rendering},
+  booktitle = {CVPR},
+  year      = {2022}
+}
+
+% MetaNeRF
+@inproceedings{tancik2021learned,
+  author    = {Matthew Tancik and
+               Ben Mildenhall and
+               Terrance Wang and
+               Divi Schmidt and
+               Pratul P. Srinivasan and
+               Jonathan T. Barron and
+               Ren Ng},
+  title     = {Learned Initializations for Optimizing Coordinate-Based Neural Representations},
+  booktitle = {CVPR},
+  year      = {2021}
+}
+
+@inproceedings{zhang2022ray,
+  author    = {Jian Zhang and
+               Yuanqing Zhang and
+               Huan Fu and
+               Xiaowei Zhou and
+               Bowen Cai and
+               Jinchi Huang and
+               Rongfei Jia and
+               Binqiang Zhao and
+               Xing Tang},
+  title     = {Ray Priors through Reprojection: Improving Neural Radiance Fields
+               for Novel View Extrapolation},
+  booktitle = {CVPR},
+  year      = {2022}
+}
+
+% RegNeRF
+% Depth smoothness.
+@inproceedings{niemeyer2022regnerf,
+  author    = {Michael Niemeyer and
+               Jonathan T. Barron and
+               Ben Mildenhall and
+               Mehdi S. M. Sajjadi and
+               Andreas Geiger and
+               Noha Radwan},
+  title     = {{RegNeRF}: Regularizing Neural Radiance Fields for View Synthesis from
+               Sparse Inputs},
+  booktitle = {CVPR},
+  year      = {2022}
+}
+
+@inproceedings{yu2022monosdf,
+  author    = {Zehao Yu and
+               Songyou Peng and
+               Michael Niemeyer and
+               Torsten Sattler and
+               Andreas Geiger},
+  title     = {{MonoSDF}: Exploring Monocular Geometric Cues for Neural Implicit Surface
+               Reconstruction},
+  booktitle = {NeurIPS},
+  year      = {2022}
+}
+
+@inproceedings{guo2022neural,
+  author    = {Haoyu Guo and
+               Sida Peng and
+               Haotong Lin and
+               Qianqian Wang and
+               Guofeng Zhang and
+               Hujun Bao and
+               Xiaowei Zhou},
+  title     = {Neural 3D Scene Reconstruction with the Manhattan-world Assumption},
+  booktitle = {CVPR},
+  year      = {2022}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Concurrent work
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{hu2023consistentnerf,
+  author  = {Shoukang Hu and
+             Kaichen Zhou and
+             Kaiyu Li and
+             Longhui Yu and
+             Lanqing Hong and
+             Tianyang Hu and
+             Zhenguo Li and
+             Gim Hee Lee and
+             Ziwei Liu},
+  title   = {{ConsistentNeRF}: Enhancing Neural Radiance Fields with 3D Consistency for
+             Sparse View Synthesis},
+  journal = {arXiv:2305.11031},
+  year    = {2023}
+}
+
+@inproceedings{truong2023sparf,
+  author    = {Prune Truong and
+               Marie{-}Julie Rakotosaona and
+               Fabian Manhardt and
+               Federico Tombari},
+  title     = {{SPARF:} Neural Radiance Fields from Sparse and Noisy Poses},
+  booktitle = {CVPR},
+  year      = {2023}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Datasets
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{jensen2014large,
+  author    = {Rasmus Ramsb{\o}l Jensen and
+               Anders Lindbjerg Dahl and
+               George Vogiatzis and
+               Engin Tola and
+               Henrik Aan{\ae}s},
+  title     = {Large Scale Multi-view Stereopsis Evaluation},
+  booktitle = {CVPR},
+  year      = {2014}
+}
+
+@article{mildenhall2019local,
+  author  = {Ben Mildenhall and
+             Pratul P. Srinivasan and
+             Rodrigo Ortiz Cayon and
+             Nima Khademi Kalantari and
+             Ravi Ramamoorthi and
+             Ren Ng and
+             Abhishek Kar},
+  title   = {Local light field fusion: practical view synthesis with prescriptive
+             sampling guidelines},
+  journal = {TOG},
+  year    = {2019}
+}
+
+@inproceedings{dai2017scannet,
+  author    = {Angela Dai and
+               Angel X. Chang and
+               Manolis Savva and
+               Maciej Halber and
+               Thomas A. Funkhouser and
+               Matthias Nie{\ss}ner},
+  title     = {{ScanNet}: Richly-Annotated 3D Reconstructions of Indoor Scenes},
+  booktitle = {CVPR},
+  year      = {2017}
+}
+
+@inproceedings{li2018megadepth,
+  author    = {Zhengqi Li and
+               Noah Snavely},
+  title     = {{MegaDepth}: Learning Single-View Depth Prediction From Internet Photos},
+  booktitle = {CVPR},
+  year      = {2018}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Metrics
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SSIM
+@article{wang2004image,
+  author  = {Zhou Wang and
+             Alan C. Bovik and
+             Hamid R. Sheikh and
+             Eero P. Simoncelli},
+  title   = {Image quality assessment: from error visibility to structural similarity},
+  journal = {TIP},
+  year    = {2004}
+}
+
+% LPIPS
+@inproceedings{zhang2018unreasonable,
+  author    = {Richard Zhang and
+               Phillip Isola and
+               Alexei A. Efros and
+               Eli Shechtman and
+               Oliver Wang},
+  title     = {The Unreasonable Effectiveness of Deep Features as a Perceptual Metric},
+  booktitle = {CVPR},
+  year      = {2018}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Additional
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{xu2019view,
+  title     = {View independent generative adversarial network for novel view synthesis},
+  author    = {Xiaogang Xu and
+               Ying{-}Cong Chen and
+               Jiaya Jia},
+  booktitle = {ICCV},
+  year      = {2019}
+}
+
+@inproceedings{xu2020deep,
+  title     = {Deep 3d portrait from a single image},
+  author    = {Sicheng Xu and
+               Jiaolong Yang and
+               Dong Chen and
+               Fang Wen and
+               Yu Deng and
+               Yunde Jia and
+               Xin Tong},
+  booktitle = {CVPR},
+  year      = {2020}
+}
+
+@inproceedings{kornilova2022smartportraits,
+  title     = {Smartportraits: Depth powered handheld smartphone dataset of human portraits for state estimation, reconstruction and synthesis},
+  author    = {Anastasiia Kornilova and
+               Marsel Faizullin and
+               Konstantin Pakulev and
+               Andrey Sadkov and
+               Denis Kukushkin and
+               Azat Akhmetyanov and
+               Timur Akhtyamov and
+               Hekmat Taherinejad and
+               Gonzalo Ferrer},
+  booktitle = {CVPR},
+  year      = {2022}
+}
+
+@inproceedings{tancik2022block,
+  title     = {Block-nerf: Scalable large scene neural view synthesis},
+  author    = {Matthew Tancik and
+               Vincent Casser and
+               Xinchen Yan and
+               Sabeek Pradhan and
+               Ben P. Mildenhall and
+               Pratul P. Srinivasan and
+               Jonathan T. Barron and
+               Henrik Kretzschmar},
+  booktitle = {CVPR},
+  year      = {2022}
+}
+
+@inproceedings{turki2022mega,
+  title     = {Mega-nerf: Scalable construction of large-scale nerfs for virtual fly-throughs},
+  author    = {Turki, Haithem and Ramanan, Deva and Satyanarayanan, Mahadev},
+  booktitle = {CVPR},
+  year      = {2022}
+}
+
+@inproceedings{martin2021nerf,
+  title     = {Nerf in the wild: Neural radiance fields for unconstrained photo collections},
+  author    = {Ricardo Martin{-}Brualla and
+               Noha Radwan and
+               Mehdi S. M. Sajjadi and
+               Jonathan T. Barron and
+               Alexey Dosovitskiy and
+               Daniel Duckworth},
+  booktitle = {CVPR},
+  year      = {2021}
+}
+
+@inproceedings{wang2022neuris,
+  title     = {Neuris: Neural reconstruction of indoor scenes using normal priors},
+  author    = {Jiepeng Wang and
+               Peng Wang and
+               Xiaoxiao Long and
+               Christian Theobalt and
+               Taku Komura and
+               Lingjie Liu and
+               Wenping Wang},
+  booktitle = {ECCV},
+  year      = {2022}
+}
+
+@inproceedings{yen2022nerf,
+  title     = {Nerf-supervision: Learning dense object descriptors from neural radiance fields},
+  author    = {Lin Yen-Chen and
+               Pete Florence and
+               Jonathan T Barron and
+               Tsung-Yi Lin and
+               Alberto Rodriguez and
+               Phillip Isola},
+  booktitle = {ICRA},
+  year      = {2022}
+}
+
+@article{guo2021template,
+  title   = {Template NeRF: Towards Modeling Dense Shape Correspondences from Category-Specific Object Images},
+  author  = {Jianfei Guo and
+             Zhiyuan Yang and
+             Xi Lin and
+             Qingfu Zhang},
+  journal = {arXiv:2111.04237},
+  year    = {2021}
+}

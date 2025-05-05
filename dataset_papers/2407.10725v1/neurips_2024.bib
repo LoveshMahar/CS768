@@ -1,0 +1,909 @@
+%% Background
+@article{bubeck2023agisparks,
+  title={Sparks of artificial general intelligence: Early experiments with gpt-4},
+  author={Bubeck, S{\'e}bastien and Chandrasekaran, Varun and Eldan, Ronen and Gehrke, Johannes and Horvitz, Eric and Kamar, Ece and Lee, Peter and Lee, Yin Tat and Li, Yuanzhi and Lundberg, Scott and others},
+  journal={arXiv preprint arXiv:2303.12712},
+  year={2023}
+}
+
+@article{yi2023unpacking,
+  title={Unpacking the ethical value alignment in big models},
+  author={Yi, Xiaoyuan and Yao, Jing and Wang, Xiting and Xie, Xing},
+  journal={arXiv preprint arXiv:2310.17551},
+  year={2023}
+}
+
+@article{chang2024evaluation_survey,
+  title={A survey on evaluation of large language models},
+  author={Chang, Yupeng and Wang, Xu and Wang, Jindong and Wu, Yuan and Yang, Linyi and Zhu, Kaijie and Chen, Hao and Yi, Xiaoyuan and Wang, Cunxiang and Wang, Yidong and others},
+  journal={ACM Transactions on Intelligent Systems and Technology},
+  volume={15},
+  number={3},
+  pages={1--45},
+  year={2024},
+  publisher={ACM New York, NY}
+}
+
+@article{ji2023beavertails,
+  title={BeaverTails: Towards Improved Safety Alignment of LLM via a Human-Preference Dataset},
+  author={Ji, Jiaming and Liu, Mickel and Dai, Juntao and Pan, Xuehai and Zhang, Chi and Bian, Ce and Sun, Ruiyang and Wang, Yizhou and Yang, Yaodong},
+  journal={arXiv preprint arXiv:2307.04657},
+  year={2023}
+}
+
+@article{schwartz2012basic_value,
+  title={An overview of the Schwartz theory of basic values},
+  author={Schwartz, Shalom H},
+  journal={Online readings in Psychology and Culture},
+  volume={2},
+  number={1},
+  pages={11},
+  year={2012}
+}
+
+@incollection{graham2013moral_foundation,
+  title={Moral foundations theory: The pragmatic validity of moral pluralism},
+  author={Graham, Jesse and Haidt, Jonathan and Koleva, Sena and Motyl, Matt and Iyer, Ravi and Wojcik, Sean P and Ditto, Peter H},
+  booktitle={Advances in experimental social psychology},
+  volume={47},
+  pages={55--130},
+  year={2013},
+  publisher={Elsevier}
+}
+
+@article{hu2021lora,
+  title={Lora: Low-rank adaptation of large language models},
+  author={Hu, Edward J and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zeyuan and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu},
+  journal={arXiv preprint arXiv:2106.09685},
+  year={2021}
+}
+
+@article{mullner2011agglomerative_clustering,
+  title={Modern hierarchical, agglomerative clustering algorithms},
+  author={M{\"u}llner, Daniel},
+  journal={arXiv preprint arXiv:1109.2378},
+  year={2011}
+}
+
+@article{radford2019gpt2,
+  title={Language models are unsupervised multitask learners},
+  author={Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya and others},
+  journal={OpenAI blog},
+  volume={1},
+  number={8},
+  pages={9},
+  year={2019}
+}
+
+@article{abdin2024phi3,
+  title={Phi-3 technical report: A highly capable language model locally on your phone},
+  author={Abdin, Marah and Jacobs, Sam Ade and Awan, Ammar Ahmad and Aneja, Jyoti and Awadallah, Ahmed and Awadalla, Hany and Bach, Nguyen and Bahree, Amit and Bakhtiari, Arash and Behl, Harkirat and others},
+  journal={arXiv preprint arXiv:2404.14219},
+  year={2024}
+}
+
+@inproceedings{qiu2022valuenet,
+  title={Valuenet: A new dataset for human value driven dialogue system},
+  author={Qiu, Liang and Zhao, Yizhou and Li, Jinchao and Lu, Pan and Peng, Baolin and Gao, Jianfeng and Zhu, Song-Chun},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={36},
+  _number={10},
+  pages={11183--11191},
+  year={2022}
+}
+
+%% Evaluation of Values
+%%%% bias
+@article{rudinger2018gender,
+  title={Gender bias in coreference resolution},
+  author={Rudinger, Rachel and Naradowsky, Jason and Leonard, Brian and Van Durme, Benjamin},
+  journal={arXiv preprint arXiv:1804.09301},
+  year={2018}
+}
+
+@inproceedings{dhamala2021bold,
+  title={Bold: Dataset and metrics for measuring biases in open-ended language generation},
+  author={Dhamala, Jwala and Sun, Tony and Kumar, Varun and Krishna, Satyapriya and Pruksachatkun, Yada and Chang, Kai-Wei and Gupta, Rahul},
+  booktitle={Proceedings of the 2021 ACM conference on fairness, accountability, and transparency},
+  pages={862--872},
+  year={2021}
+}
+
+@article{parrish2021bbq,
+  title={BBQ: A hand-built bias benchmark for question answering},
+  author={Parrish, Alicia and Chen, Angelica and Nangia, Nikita and Padmakumar, Vishakh and Phang, Jason and Thompson, Jana and Htut, Phu Mon and Bowman, Samuel R},
+  journal={arXiv preprint arXiv:2110.08193},
+  year={2021}
+}
+
+@article{hartvigsen2022toxigen,
+  title={Toxigen: A large-scale machine-generated dataset for adversarial and implicit hate speech detection},
+  author={Hartvigsen, Thomas and Gabriel, Saadia and Palangi, Hamid and Sap, Maarten and Ray, Dipankar and Kamar, Ece},
+  journal={arXiv preprint arXiv:2203.09509},
+  year={2022}
+}
+
+%%%% Safety Risks
+@article{xu2023cvalues,
+  title={Cvalues: Measuring the values of chinese large language models from safety to responsibility},
+  author={Xu, Guohai and Liu, Jiayi and Yan, Ming and Xu, Haotian and Si, Jinghui and Zhou, Zhuoran and Yi, Peng and Gao, Xing and Sang, Jitao and Zhang, Rong and others},
+  journal={arXiv preprint arXiv:2307.09705},
+  year={2023}
+}
+
+@article{zhang2023safetybench,
+  title={Safetybench: Evaluating the safety of large language models with multiple choice questions},
+  author={Zhang, Zhexin and Lei, Leqi and Wu, Lindong and Sun, Rui and Huang, Yongkang and Long, Chong and Liu, Xiao and Lei, Xuanyu and Tang, Jie and Huang, Minlie},
+  journal={arXiv preprint arXiv:2309.07045},
+  year={2023}
+}
+
+@article{xu2023sc_safety,
+  title={Sc-safety: A multi-round open-ended question adversarial safety benchmark for large language models in chinese},
+  author={Xu, Liang and Zhao, Kangkang and Zhu, Lei and Xue, Hang},
+  journal={arXiv preprint arXiv:2310.05818},
+  year={2023}
+}
+
+@article{li2024salad,
+  title={SALAD-Bench: A Hierarchical and Comprehensive Safety Benchmark for Large Language Models},
+  author={Li, Lijun and Dong, Bowen and Wang, Ruohui and Hu, Xuhao and Zuo, Wangmeng and Lin, Dahua and Qiao, Yu and Shao, Jing},
+  journal={arXiv preprint arXiv:2402.05044},
+  year={2024}
+}
+
+@article{zhang2023jade,
+  title={Jade: A linguistics-based safety evaluation platform for llm},
+  author={Zhang, Mi and Pan, Xudong and Yang, Min},
+  journal={arXiv preprint arXiv:2311.00286},
+  year={2023}
+}
+
+@article{wang2023all_language,
+  title={All languages matter: On the multilingual safety of large language models},
+  author={Wang, Wenxuan and Tu, Zhaopeng and Chen, Chang and Yuan, Youliang and Huang, Jen-tse and Jiao, Wenxiang and Lyu, Michael R},
+  journal={arXiv preprint arXiv:2310.00905},
+  year={2023}
+}
+
+@article{wang2023do_not_answer,
+  title={Do-not-answer: A dataset for evaluating safeguards in llms},
+  author={Wang, Yuxia and Li, Haonan and Han, Xudong and Nakov, Preslav and Baldwin, Timothy},
+  journal={arXiv preprint arXiv:2308.13387},
+  year={2023}
+}
+
+@article{cui2023fft,
+  title={Fft: Towards harmlessness evaluation and analysis for llms with factuality, fairness, toxicity},
+  author={Cui, Shiyao and Zhang, Zhenyu and Chen, Yilong and Zhang, Wenyuan and Liu, Tianyun and Wang, Siqi and Liu, Tingwen},
+  journal={arXiv preprint arXiv:2311.18580},
+  year={2023}
+}
+
+@article{huang2023flames,
+  title={Flames: Benchmarking value alignment of chinese large language models},
+  author={Huang, Kexin and Liu, Xiangyang and Guo, Qianyu and Sun, Tianxiang and Sun, Jiawei and Wang, Yaru and Zhou, Zeyang and Wang, Yixu and Teng, Yan and Qiu, Xipeng and others},
+  journal={arXiv preprint arXiv:2311.06899},
+  year={2023}
+}
+
+%%%% Trustworthiness
+@article{sun2024trustllm,
+  title={Trustllm: Trustworthiness in large language models},
+  author={Sun, Lichao and Huang, Yue and Wang, Haoran and Wu, Siyuan and Zhang, Qihui and Gao, Chujie and Huang, Yixin and Lyu, Wenhan and Zhang, Yixuan and Li, Xiner and others},
+  journal={arXiv preprint arXiv:2401.05561},
+  year={2024}
+}
+
+@article{wang2023decodingtrust,
+  title={Decodingtrust: A comprehensive assessment of trustworthiness in gpt models},
+  author={Wang, Boxin and Chen, Weixin and Pei, Hengzhi and Xie, Chulin and Kang, Mintong and Zhang, Chenhui and Xu, Chejian and Xiong, Zidi and Dutta, Ritik and Schaeffer, Rylan and others},
+  journal={arXiv preprint arXiv:2306.11698},
+  year={2023}
+}
+
+%%%% Moral Foundations / Theories
+@article{scherrer2024emoral_belief,
+  title={Evaluating the moral beliefs encoded in llms},
+  author={Scherrer, Nino and Shi, Claudia and Feder, Amir and Blei, David},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
+
+@article{hendrycks2020ethics,
+  title={Aligning ai with shared human values},
+  author={Hendrycks, Dan and Burns, Collin and Basart, Steven and Critch, Andrew and Li, Jerry and Song, Dawn and Steinhardt, Jacob},
+  journal={arXiv preprint arXiv:2008.02275},
+  year={2020}
+}
+
+@article{emelin2020moral_stories,
+  title={Moral stories: Situated reasoning about norms, intents, actions, and their consequences},
+  author={Emelin, Denis and Bras, Ronan Le and Hwang, Jena D and Forbes, Maxwell and Choi, Yejin},
+  journal={arXiv preprint arXiv:2012.15738},
+  year={2020}
+}
+
+@article{forbes2020social_chemist,
+  title={Social chemistry 101: Learning to reason about social and moral norms},
+  author={Forbes, Maxwell and Hwang, Jena D and Shwartz, Vered and Sap, Maarten and Choi, Yejin},
+  journal={arXiv preprint arXiv:2011.00620},
+  year={2020}
+}
+
+@article{duan2023denevil,
+  title={Denevil: Towards deciphering and navigating the ethical values of large language models via instruction learning},
+  author={Duan, Shitong and Yi, Xiaoyuan and Zhang, Peng and Lu, Tun and Xie, Xing and Gu, Ning},
+  journal={arXiv preprint arXiv:2310.11053},
+  year={2023}
+}
+
+@article{abdulhai2023moral_foundation_evaluation,
+  title={Moral foundations of large language models},
+  author={Abdulhai, Marwa and Serapio-Garcia, Gregory and Crepy, Cl{\'e}ment and Valter, Daria and Canny, John and Jaques, Natasha},
+  journal={arXiv preprint arXiv:2310.15337},
+  year={2023}
+}
+
+%%%% Schwartz's
+@article{yao2023value_fulcra,
+  title={Value fulcra: Mapping large language models to the multidimensional spectrum of basic human values},
+  author={Yao, Jing and Yi, Xiaoyuan and Wang, Xiting and Gong, Yifan and Xie, Xing},
+  journal={arXiv preprint arXiv:2311.10766},
+  year={2023}
+}
+
+@article{arora2022probing_culture,
+  title={Probing pre-trained language models for cross-cultural differences in values},
+  author={Arora, Arnav and Kaffee, Lucie-Aim{\'e}e and Augenstein, Isabelle},
+  journal={arXiv preprint arXiv:2203.13722},
+  year={2022}
+}
+
+
+%% NLG Evaluation
+@article{chiang2023prompt_evaluation,
+  title={A closer look into automatic evaluation using large language models},
+  author={Chiang, Cheng-Han and Lee, Hung-yi},
+  journal={arXiv preprint arXiv:2310.05657},
+  year={2023}
+}
+
+@article{chiang2023prompt_evaluation,
+  title={Can large language models be an alternative to human evaluations?},
+  author={Chiang, Cheng-Han and Lee, Hung-yi},
+  journal={arXiv preprint arXiv:2305.01937},
+  year={2023}
+}
+
+@article{liu2303geval,
+  title={G-Eval: NLG Evaluation using GPT-4 with Better Human Alignment (2023)},
+  author={Liu, Yang and Iter, Dan and Xu, Yichong and Wang, Shuohang and Xu, Ruochen and Zhu, Chenguang},
+  journal={URL http://arxiv. org/abs/2303.16634},
+  year={2023}
+}
+
+@inproceedings{zhang2024prompt_evaluation_dialogue,
+  title={A comprehensive analysis of the effectiveness of large language models as automatic dialogue evaluators},
+  author={Zhang, Chen and D'Haro, Luis Fernando and Chen, Yiming and Zhang, Malu and Li, Haizhou},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  _number={17},
+  pages={19515--19524},
+  year={2024}
+}
+
+@article{hu2024confuse_criteria,
+  title={Are LLM-based Evaluators Confusing NLG Quality Criteria?},
+  author={Hu, Xinyu and Gao, Mingqi and Hu, Sen and Zhang, Yang and Chen, Yicheng and Xu, Teng and Wan, Xiaojun},
+  journal={arXiv preprint arXiv:2402.12055},
+  year={2024}
+}
+
+@article{liu2023prompt_evaluation_summarization,
+  title={Benchmarking generation and evaluation capabilities of large language models for instruction controllable summarization},
+  author={Liu, Yixin and Fabbri, Alexander R and Chen, Jiawen and Zhao, Yilun and Han, Simeng and Joty, Shafiq and Liu, Pengfei and Radev, Dragomir and Wu, Chien-Sheng and Cohan, Arman},
+  journal={arXiv preprint arXiv:2311.09184},
+  year={2023}
+}
+
+@article{gilardi2023outperform_crowd,
+  title={ChatGPT outperforms crowd workers for text-annotation tasks},
+  author={Gilardi, Fabrizio and Alizadeh, Meysam and Kubli, Ma{\"e}l},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={120},
+  number={30},
+  pages={e2305016120},
+  year={2023},
+  publisher={National Acad Sciences}
+}
+
+@article{chan2023clair,
+  title={Clair: Evaluating image captions with large language models},
+  author={Chan, David and Petryk, Suzanne and Gonzalez, Joseph E and Darrell, Trevor and Canny, John},
+  journal={arXiv preprint arXiv:2310.12971},
+  year={2023}
+}
+
+@article{yuan2023prompt_evaluation_code,
+  title={Evaluating instruction-tuned large language models on code comprehension and generation},
+  author={Yuan, Zhiqiang and Liu, Junwei and Zi, Qiancheng and Liu, Mingwei and Peng, Xin and Lou, Yiling},
+  journal={arXiv preprint arXiv:2308.01240},
+  year={2023}
+}
+
+@article{chen2023exploring,
+  title={Exploring the use of large language models for reference-free text quality evaluation: A preliminary empirical study},
+  author={Chen, Yi and Wang, Rui and Jiang, Haiyun and Shi, Shuming and Xu, Ruifeng},
+  journal={arXiv preprint arXiv:2304.00723},
+  year={2023}
+}
+
+@inproceedings{manas2024prompt_evaluation,
+  title={Improving automatic vqa evaluation using large language models},
+  author={Ma{\~n}as, Oscar and Krojer, Benno and Agrawal, Aishwarya},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={5},
+  pages={4171--4179},
+  year={2024}
+}
+
+@inproceedings{shen2023prompt_evaluation_summarization,
+  title={Large language models are not yet human-level evaluators for abstractive summarization},
+  author={Shen, Chenhui and Cheng, Liying and Nguyen, Xuan-Phi and You, Yang and Bing, Lidong},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2023},
+  pages={4215--4233},
+  year={2023}
+}
+
+@article{alizadeh2023prompt_evaluation,
+  title={Open-source large language models outperform crowd workers and approach chatgpt in text-annotation tasks},
+  author={Alizadeh, Meysam and Kubli, Ma{\"e}l and Samei, Zeynab and Dehghani, Shirin and Bermeo, Juan Diego and Korobeynikova, Maria and Gilardi, Fabrizio},
+  journal={arXiv preprint arXiv:2307.02179},
+  year={2023}
+}
+
+@article{sottana2023prompt_evaluation,
+  title={Evaluation metrics in the era of GPT-4: reliably evaluating large language models on sequence to sequence tasks},
+  author={Sottana, Andrea and Liang, Bin and Zou, Kai and Yuan, Zheng},
+  journal={arXiv preprint arXiv:2310.13800},
+  year={2023}
+}
+
+@article{wang2023prompt_evaluation_personalized,
+  title={Automated evaluation of personalized text generation using large language models},
+  author={Wang, Yaqing and Jiang, Jiepu and Zhang, Mingyang and Li, Cheng and Liang, Yi and Mei, Qiaozhu and Bendersky, Michael},
+  journal={arXiv preprint arXiv:2310.11593},
+  year={2023}
+}
+
+@article{ostheimer2023prompt_evaluation_style,
+  title={Text style transfer evaluation using large language models},
+  author={Ostheimer, Phil and Nagda, Mayank and Kloft, Marius and Fellenz, Sophie},
+  journal={arXiv preprint arXiv:2308.13577},
+  year={2023}
+}
+
+@inproceedings{huang2023chatgpt,
+  title={Is chatgpt better than human annotators? potential and limitations of chatgpt in explaining implicit hate speech},
+  author={Huang, Fan and Kwak, Haewoon and An, Jisun},
+  booktitle={Companion proceedings of the ACM web conference 2023},
+  pages={294--297},
+  year={2023}
+}
+
+@article{gao2023human,
+  title={Human-like summarization evaluation with chatgpt},
+  author={Gao, Mingqi and Ruan, Jie and Sun, Renliang and Yin, Xunjian and Yang, Shiping and Wan, Xiaojun},
+  journal={arXiv preprint arXiv:2304.02554},
+  year={2023}
+}
+
+@article{savelka2023can,
+  title={Can gpt-4 support analysis of textual data in tasks requiring highly specialized domain expertise?},
+  author={Savelka, Jaromir and Ashley, Kevin D and Gray, Morgan A and Westermann, Hannes and Xu, Huihui},
+  journal={arXiv preprint arXiv:2306.13906},
+  year={2023}
+}
+
+@article{lin2023llm_eval,
+  title={Llm-eval: Unified multi-dimensional automatic evaluation for open-domain conversations with large language models},
+  author={Lin, Yen-Ting and Chen, Yun-Nung},
+  journal={arXiv preprint arXiv:2305.13711},
+  year={2023}
+}
+
+
+%% Prompt-based Evaluation
+@article{liu2023calibrating,
+  title={Calibrating llm-based evaluator},
+  author={Liu, Yuxuan and Yang, Tianchi and Huang, Shaohan and Zhang, Zihan and Huang, Haizhen and Wei, Furu and Deng, Weiwei and Sun, Feng and Zhang, Qi},
+  journal={arXiv preprint arXiv:2309.13308},
+  year={2023}
+}
+
+@article{chan2023chateval,
+  title={Chateval: Towards better llm-based evaluators through multi-agent debate},
+  author={Chan, Chi-Min and Chen, Weize and Su, Yusheng and Yu, Jianxuan and Xue, Wei and Zhang, Shanghang and Fu, Jie and Liu, Zhiyuan},
+  journal={arXiv preprint arXiv:2308.07201},
+  year={2023}
+}
+
+
+
+@article{wu2023style,
+  title={Style over substance: Evaluation biases for large language models},
+  author={Wu, Minghao and Aji, Alham Fikri},
+  journal={arXiv preprint arXiv:2307.03025},
+  year={2023}
+}
+
+@article{fernandes2023devil,
+  title={The devil is in the errors: Leveraging large language models for fine-grained machine translation evaluation},
+  author={Fernandes, Patrick and Deutsch, Daniel and Finkelstein, Mara and Riley, Parker and Martins, Andr{\'e} FT and Neubig, Graham and Garg, Ankush and Clark, Jonathan H and Freitag, Markus and Firat, Orhan},
+  journal={arXiv preprint arXiv:2308.07286},
+  year={2023}
+}
+
+%%%% Few-shot, CoT
+@article{zhou2023ethics_cot,
+  title={Rethinking Machine Ethics--Can LLMs Perform Moral Reasoning through the Lens of Moral Theories?},
+  author={Zhou, Jingyan and Hu, Minda and Li, Junan and Zhang, Xiaoying and Wu, Xixin and King, Irwin and Meng, Helen},
+  journal={arXiv preprint arXiv:2308.15399},
+  year={2023}
+}
+
+@article{brown2020gpt3,
+  title={Language models are few-shot learners},
+  author={Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={1877--1901},
+  year={2020}
+}
+
+@article{wei2022CoT,
+  title={Chain-of-thought prompting elicits reasoning in large language models},
+  author={Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Xia, Fei and Chi, Ed and Le, Quoc V and Zhou, Denny and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={24824--24837},
+  year={2022}
+}
+
+%%%% Position bias
+@article{zheng2024judging,
+  title={Judging llm-as-a-judge with mt-bench and chatbot arena},
+  author={Zheng, Lianmin and Chiang, Wei-Lin and Sheng, Ying and Zhuang, Siyuan and Wu, Zhanghao and Zhuang, Yonghao and Lin, Zi and Li, Zhuohan and Li, Dacheng and Xing, Eric and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
+
+@article{wang2023position_bias,
+  title={Large language models are not fair evaluators},
+  author={Wang, Peiyi and Li, Lei and Chen, Liang and Zhu, Dawei and Lin, Binghuai and Cao, Yunbo and Liu, Qi and Liu, Tianyu and Sui, Zhifang},
+  journal={arXiv preprint arXiv:2305.17926},
+  year={2023}
+}
+
+%%%% Multiple Agents
+@article{zhang2023wider,
+  title={Wider and deeper llm networks are fairer llm evaluators},
+  author={Zhang, Xinghua and Yu, Bowen and Yu, Haiyang and Lv, Yangyu and Liu, Tingwen and Huang, Fei and Xu, Hongbo and Li, Yongbin},
+  journal={arXiv preprint arXiv:2308.01862},
+  year={2023}
+}
+
+@inproceedings{wu2023diverse_roles,
+  title={Large language models are diverse role-players for summarization evaluation},
+  author={Wu, Ning and Gong, Ming and Shou, Linjun and Liang, Shining and Jiang, Daxin},
+  booktitle={CCF International Conference on Natural Language Processing and Chinese Computing},
+  pages={695--707},
+  year={2023},
+  organization={Springer}
+}
+
+@article{jain2023multi_dimensional,
+  title={Multi-dimensional evaluation of text summarization with in-context learning},
+  author={Jain, Sameer and Keshava, Vaishakh and Sathyendra, Swarnashree Mysore and Fernandes, Patrick and Liu, Pengfei and Neubig, Graham and Zhou, Chunting},
+  journal={arXiv preprint arXiv:2306.01200},
+  year={2023}
+}
+
+@article{li2023prd,
+  title={Prd: Peer rank and discussion improve large language model based evaluations},
+  author={Li, Ruosen and Patel, Teerth and Du, Xinya},
+  journal={arXiv preprint arXiv:2307.02762},
+  year={2023}
+}
+%%%% Calibration & Alignment
+@article{liu2024hd_eval,
+  title={HD-Eval: Aligning Large Language Model Evaluators Through Hierarchical Criteria Decomposition},
+  author={Liu, Yuxuan and Yang, Tianchi and Huang, Shaohan and Zhang, Zihan and Huang, Haizhen and Wei, Furu and Deng, Weiwei and Sun, Feng and Zhang, Qi},
+  journal={arXiv preprint arXiv:2402.15754},
+  year={2024}
+}
+
+@article{hasanbeig2023allure,
+  title={Allure: A systematic protocol for auditing and improving llm-based evaluation of text using iterative in-context-learning},
+  author={Hasanbeig, Hosein and Sharma, Hiteshi and Betthauser, Leo and Frujeri, Felipe Vieira and Momennejad, Ida},
+  journal={arXiv preprint arXiv:2309.13701},
+  year={2023}
+}
+
+
+%% Finetuning-based Evaluation
+%%%% Auto-J
+@article{li2023auto_j,
+  title={Generative judge for evaluating alignment},
+  author={Li, Junlong and Sun, Shichao and Yuan, Weizhe and Fan, Run-Ze and Zhao, Hai and Liu, Pengfei},
+  journal={arXiv preprint arXiv:2310.05470},
+  year={2023}
+}
+
+@article{kim2023prometheus,
+  title={Prometheus: Inducing fine-grained evaluation capability in language models},
+  author={Kim, Seungone and Shin, Jamin and Cho, Yejin and Jang, Joel and Longpre, Shayne and Lee, Hwaran and Yun, Sangdoo and Shin, Seongjin and Kim, Sungdong and Thorne, James and others},
+  journal={arXiv preprint arXiv:2310.08491},
+  year={2023}
+}
+
+@article{huang2024only_classifier,
+  title={An Empirical Study of LLM-as-a-Judge for LLM Evaluation: Fine-tuned Judge Models are Task-specific Classifiers},
+  author={Huang, Hui and Qu, Yingqi and Liu, Jing and Yang, Muyun and Zhao, Tiejun},
+  journal={arXiv preprint arXiv:2403.02839},
+  year={2024}
+}
+
+%%%% synthetic dataset, explanation
+@article{ke2023critiquellm,
+  title={Critiquellm: Scaling llm-as-critic for effective and explainable evaluation of large language model generation},
+  author={Ke, Pei and Wen, Bosi and Feng, Zhuoer and Liu, Xiao and Lei, Xuanyu and Cheng, Jiale and Wang, Shengyuan and Zeng, Aohan and Dong, Yuxiao and Wang, Hongning and others},
+  journal={arXiv preprint arXiv:2311.18702},
+  year={2023}
+}
+
+@article{liu2023xeval,
+  title={X-eval: Generalizable multi-aspect text evaluation via augmented instruction tuning with auxiliary evaluation aspects},
+  author={Liu, Minqian and Shen, Ying and Xu, Zhiyang and Cao, Yixin and Cho, Eunah and Kumar, Vaibhav and Ghanadan, Reza and Huang, Lifu},
+  journal={arXiv preprint arXiv:2311.08788},
+  year={2023}
+}
+
+@article{xu2023instructscore,
+  title={INSTRUCTSCORE: Explainable Text Generation Evaluation with Finegrained Feedback},
+  author={Xu, Wenda and Wang, Danqing and Pan, Liangming and Song, Zhenqiao and Freitag, Markus and Wang, William Yang and Li, Lei},
+  journal={arXiv preprint arXiv:2305.14282},
+  year={2023}
+}
+
+@article{wang2023shepherd,
+  title={Shepherd: A critic for language model generation},
+  author={Wang, Tianlu and Yu, Ping and Tan, Xiaoqing Ellen and O'Brien, Sean and Pasunuru, Ramakanth and Dwivedi-Yu, Jane and Golovneva, Olga and Zettlemoyer, Luke and Fazel-Zarandi, Maryam and Celikyilmaz, Asli},
+  journal={arXiv preprint arXiv:2308.04592},
+  year={2023}
+}
+
+%% Combination of Small and Big LLMs
+%%%% Knowledge Distillation
+%% promethues
+
+@article{gekhman2023distill,
+  title={Trueteacher: Learning factual consistency evaluation with large language models},
+  author={Gekhman, Zorik and Herzig, Jonathan and Aharoni, Roee and Elkind, Chen and Szpektor, Idan},
+  journal={arXiv preprint arXiv:2305.11171},
+  year={2023}
+}
+
+%%%% Selections
+@article{ramirez2024optimising,
+  title={Optimising Calls to Large Language Models with Uncertainty-Based Two-Tier Selection},
+  author={Ram{\'\i}rez, Guillem and Birch, Alexandra and Titov, Ivan},
+  journal={arXiv preprint arXiv:2405.02134},
+  year={2024}
+}
+
+@article{chen2023hybrid,
+  title={Frugalgpt: How to use large language models while reducing cost and improving performance},
+  author={Chen, Lingjiao and Zaharia, Matei and Zou, James},
+  journal={arXiv preprint arXiv:2305.05176},
+  year={2023}
+}
+
+@article{ding2024hybrid,
+  title={Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing},
+  author={Ding, Dujian and Mallick, Ankur and Wang, Chi and Sim, Robert and Mukherjee, Subhabrata and Ruhle, Victor and Lakshmanan, Laks VS and Awadallah, Ahmed Hassan},
+  journal={arXiv preprint arXiv:2404.14618},
+  year={2024}
+}
+
+@article{madaan2023automix,
+  title={Automix: Automatically mixing language models},
+  author={Madaan, Aman and Aggarwal, Pranjal and Anand, Ankit and Potharaju, Srividya Pranavi and Mishra, Swaroop and Zhou, Pei and Gupta, Aditya and Rajagopal, Dheeraj and Kappaganthu, Karthik and Yang, Yiming and others},
+  journal={arXiv preprint arXiv:2310.12963},
+  year={2023}
+}
+
+%--------------------------------
+@misc{touvron2023llama,
+      title={LLaMA: Open and Efficient Foundation Language Models}, 
+      author={Hugo Touvron and Thibaut Lavril and Gautier Izacard and Xavier Martinet and Marie-Anne Lachaux and Timothée Lacroix and Baptiste Rozière and Naman Goyal and Eric Hambro and Faisal Azhar and Aurelien Rodriguez and Armand Joulin and Edouard Grave and Guillaume Lample},
+      year={2023},
+      eprint={2302.13971},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+@misc{openai2024gpt4,
+      title={GPT-4 Technical Report}, 
+      author={OpenAI},
+      year={2024},
+      eprint={2303.08774},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+@misc{geminiteam2023gemini,
+      title={Gemini: A Family of Highly Capable Multimodal Models}, 
+      author={Gemini Team},
+      year={2023},
+      eprint={2312.11805},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+@misc{jiang2023mistral,
+      title={Mistral 7B}, 
+      author={Albert Q. Jiang and Alexandre Sablayrolles and Arthur Mensch and Chris Bamford and Devendra Singh Chaplot and Diego de las Casas and Florian Bressand and Gianna Lengyel and Guillaume Lample and Lucile Saulnier and Lélio Renard Lavaud and Marie-Anne Lachaux and Pierre Stock and Teven Le Scao and Thibaut Lavril and Thomas Wang and Timothée Lacroix and William El Sayed},
+      year={2023},
+      eprint={2310.06825},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{bommasani2022opportunities,
+      title={On the Opportunities and Risks of Foundation Models}, 
+      author={Rishi Bommasani and Drew A. Hudson and Ehsan Adeli and Russ Altman and Simran Arora and Sydney von Arx and Michael S. Bernstein and Jeannette Bohg and Antoine Bosselut and Emma Brunskill and others},
+      year={2022},
+      eprint={2108.07258},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{bengio2024managing,
+  title={Managing extreme AI risks amid rapid progress},
+  author={Bengio, Yoshua and Hinton, Geoffrey and Yao, Andrew and Song, Dawn and Abbeel, Pieter and Darrell, Trevor and Harari, Yuval Noah and Zhang, Ya-Qin and Xue, Lan and Shalev-Shwartz, Shai and others},
+  journal={Science},
+  pages={eadn0117},
+  year={2024},
+  publisher={American Association for the Advancement of Science}
+}
+
+@article{bai2024measuring,
+  title={Measuring Implicit Bias in Explicitly Unbiased Large Language Models},
+  author={Bai, Xuechunzi and Wang, Angelina and Sucholutsky, Ilia and Griffiths, Thomas L},
+  journal={arXiv preprint arXiv:2402.04105},
+  year={2024}
+}
+
+@inproceedings{nadeem2021stereoset,
+  title={StereoSet: Measuring stereotypical bias in pretrained language models},
+  author={Nadeem, Moin and Bethke, Anna and Reddy, Siva},
+  booktitle={Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)},
+  pages={5356--5371},
+  year={2021}
+}
+
+@inproceedings{gehman2020realtoxicityprompts,
+  title={RealToxicityPrompts: Evaluating Neural Toxic Degeneration in Language Models},
+  author={Gehman, Samuel and Gururangan, Suchin and Sap, Maarten and Choi, Yejin and Smith, Noah A},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2020},
+  pages={3356--3369},
+  year={2020}
+}
+
+@inproceedings{shaikh-etal-2023-second,
+    title = "On Second Thought, Let{'}s Not Think Step by Step! Bias and Toxicity in Zero-Shot Reasoning",
+    author = "Shaikh, Omar  and
+      Zhang, Hongxin  and
+      Held, William  and
+      Bernstein, Michael  and
+      Yang, Diyi",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.244",
+    doi = "10.18653/v1/2023.acl-long.244",
+    pages = "4454--4470"
+}
+
+@inproceedings{wang-etal-2024-answer,
+    title = "Do-Not-Answer: Evaluating Safeguards in {LLM}s",
+    author = "Wang, Yuxia  and
+      Li, Haonan  and
+      Han, Xudong  and
+      Nakov, Preslav  and
+      Baldwin, Timothy",
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2024",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-eacl.61",
+    pages = "896--911"
+}
+
+@misc{bhardwaj2023redteaming,
+      title={Red-Teaming Large Language Models using Chain of Utterances for Safety-Alignment}, 
+      author={Rishabh Bhardwaj and Soujanya Poria},
+      year={2023},
+      eprint={2308.09662},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{bommasani2023holistic,
+  title={Holistic evaluation of language models},
+  author={Bommasani, Rishi and Liang, Percy and Lee, Tony},
+  journal={Annals of the New York Academy of Sciences},
+  volume={1525},
+  number={1},
+  pages={140--146},
+  year={2023},
+  publisher={Wiley Online Library}
+}
+@article{mcintosh2024inadequacies,
+  title={Inadequacies of large language model benchmarks in the era of generative artificial intelligence},
+  author={McIntosh, Timothy R and Susnjak, Teo and Liu, Tong and Watters, Paul and Halgamuge, Malka N},
+  journal={arXiv preprint arXiv:2402.09880},
+  year={2024}
+}
+
+@article{mckenzie2023inverse,
+  title={Inverse Scaling: When Bigger Isn't Better},
+  author={McKenzie, Ian R and Lyzhov, Alexander and Pieler, Michael and Parrish, Alicia and Mueller, Aaron and Prabhu, Ameya and McLean, Euan and Kirtland, Aaron and Ross, Alexis and Liu, Alisa and others},
+  journal={arXiv preprint arXiv:2306.09479},
+  year={2023}
+}
+@article{goldstein2023generative,
+  title={Generative language models and automated influence operations: Emerging threats and potential mitigations},
+  author={Goldstein, Josh A and Sastry, Girish and Musser, Micah and DiResta, Renee and Gentzel, Matthew and Sedova, Katerina},
+  journal={arXiv preprint arXiv:2301.04246},
+  year={2023}
+}
+
+@article{yao2023value,
+  title={Value fulcra: Mapping large language models to the multidimensional spectrum of basic human values},
+  author={Yao, Jing and Yi, Xiaoyuan and Wang, Xiting and Gong, Yifan and Xie, Xing},
+  journal={arXiv preprint arXiv:2311.10766},
+  year={2023}
+}
+
+@article{scherrer2024evaluating,
+  title={Evaluating the moral beliefs encoded in llms},
+  author={Scherrer, Nino and Shi, Claudia and Feder, Amir and Blei, David},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
+
+@inproceedings{cao2023assessing,
+  title={Assessing Cross-Cultural Alignment between ChatGPT and Human Societies: An Empirical Study},
+  author={Cao, Yong and Zhou, Li and Lee, Seolhwa and Cabello, Laura and Chen, Min and Hershcovich, Daniel},
+  booktitle={Proceedings of the First Workshop on Cross-Cultural Considerations in NLP (C3NLP)},
+  pages={53--67},
+  year={2023}
+}
+
+@article{jiang2021can,
+  title={Can machines learn morality? The Delphi experiment},
+  author={Jiang, Liwei and Hwang, Jena D and Bhagavatula, Chandra and Le Bras, Ronan and Liang, Jenny and Dodge, Jesse and Sakaguchi, Keisuke and Forbes, Maxwell and Borchardt, Jon and Gabriel, Saadia and others},
+  journal={arXiv e-prints},
+  pages={arXiv--2110},
+  year={2021}
+}
+
+@article{hu2020cross,
+  title={A cross-cultural examination on global orientations and moral foundations},
+  author={Hu, Xiaomeng and Zhu, Yijie and Yu, Feng and Wilder, David A and Zhang, Li and Chen, Sylvia Xiaohua and Peng, Kaiping},
+  journal={PsyCh Journal},
+  volume={9},
+  number={1},
+  pages={108--117},
+  year={2020},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{abdulhai2022moral,
+  title={Moral Foundations of Large Language Models},
+  author={Abdulhai, Marwa and Crepy, Cl{\'e}ment and Valter, Daria and Canny, John and Jaques, Natasha},
+  booktitle={AAAI 2023 Workshop on Representation Learning for Responsible Human-Centric AI},
+  year={2022}
+}
+
+@article{zhang2023heterogeneous,
+  title={Heterogeneous value evaluation for large language models},
+  author={Zhang, Zhaowei and Liu, Nian and Qi, Siyuan and Zhang, Ceyao and Rong, Ziqi and Yang, Yaodong and Cui, Shuguang},
+  journal={arXiv preprint arXiv:2305.17147},
+  year={2023}
+}
+
+@inproceedings{kang2023values,
+  title={From Values to Opinions: Predicting Human Behaviors and Stances Using Value-Injected Large Language Models},
+  author={Kang, Dongjun and Park, Joonsuk and Jo, Yohan and Bak, JinYeong},
+  booktitle={Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing},
+  pages={15539--15559},
+  year={2023}
+}
+
+@article{ouyang2022training,
+  title={Training language models to follow instructions with human feedback},
+  author={Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={27730--27744},
+  year={2022}
+}
+
+@article{bai2022training,
+  title={Training a helpful and harmless assistant with reinforcement learning from human feedback},
+  author={Bai, Yuntao and Jones, Andy and Ndousse, Kamal and Askell, Amanda and Chen, Anna and DasSarma, Nova and Drain, Dawn and Fort, Stanislav and Ganguli, Deep and Henighan, Tom and others},
+  journal={arXiv preprint arXiv:2204.05862},
+  year={2022}
+}
+
+@article{wei2022emergent,
+  title={Emergent abilities of large language models},
+  author={Wei, Jason and Tay, Yi and Bommasani, Rishi and Raffel, Colin and Zoph, Barret and Borgeaud, Sebastian and Yogatama, Dani and Bosma, Maarten and Zhou, Denny and Metzler, Donald and others},
+  journal={arXiv preprint arXiv:2206.07682},
+  year={2022}
+}
+
+@inproceedings{wei2021finetuned,
+  title={Finetuned Language Models are Zero-Shot Learners},
+  author={Wei, Jason and Bosma, Maarten and Zhao, Vincent and Guu, Kelvin and Yu, Adams Wei and Lester, Brian and Du, Nan and Dai, Andrew M and Le, Quoc V},
+  booktitle={International Conference on Learning Representations},
+  year={2021}
+}
+
+@incollection{schwartz2013culture,
+  title={Culture matters: National value cultures, sources, and consequences},
+  author={Schwartz, Shalom H},
+  booktitle={Understanding culture},
+  pages={127--150},
+  year={2013},
+  publisher={Psychology Press}
+}
+
+@article{sagiv2017personal,
+  title={Personal values in human life},
+  author={Sagiv, Lilach and Roccas, Sonia and Cieciuch, Jan and Schwartz, Shalom H},
+  journal={Nature human behaviour},
+  volume={1},
+  number={9},
+  pages={630--639},
+  year={2017},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{kopf2023openassistant,
+  title={Openassistant conversations-democratizing large language model alignment},
+  author={K{\"o}pf, Andreas and Kilcher, Yannic and von R{\"u}tte, Dimitri and Anagnostidis, Sotiris and Tam, Zhi Rui and Stevens, Keith and Barhoum, Abdullah and Nguyen, Duc and Stanley, Oliver and Nagyfi, Rich{\'a}rd and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2023}
+}
+
+@article{lambert2024rewardbench,
+  title={Rewardbench: Evaluating reward models for language modeling},
+  author={Lambert, Nathan and Pyatkin, Valentina and Morrison, Jacob and Miranda, LJ and Lin, Bill Yuchen and Chandu, Khyathi and Dziri, Nouha and Kumar, Sachin and Zick, Tom and Choi, Yejin and others},
+  journal={arXiv preprint arXiv:2403.13787},
+  year={2024}
+}

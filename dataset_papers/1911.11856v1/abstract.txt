@@ -1,0 +1,16 @@
+Computing the permanent of a non-negative matrix is a core problem with
+practical applications ranging from target tracking to statistical
+thermodynamics. However, this problem is also #P-complete, which leaves little
+hope for finding an exact solution that can be computed efficiently. While the
+problem admits a fully polynomial randomized approximation scheme, this method
+has seen little use because it is both inefficient in practice and difficult to
+implement. We present AdaPart, a simple and efficient method for drawing exact
+samples from an unnormalized distribution. Using AdaPart, we show how to
+construct tight bounds on the permanent which hold with high probability, with
+guaranteed polynomial runtime for dense matrices. We find that AdaPart can
+provide empirical speedups exceeding 25x over prior sampling methods on
+matrices that are challenging for variational based approaches. Finally, in the
+context of multi-target tracking, exact sampling from the distribution defined
+by the matrix permanent allows us to use the optimal proposal distribution
+during particle filtering. Using AdaPart, we show that this leads to improved
+tracking performance using an order of magnitude fewer samples.

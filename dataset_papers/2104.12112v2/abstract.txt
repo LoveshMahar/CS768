@@ -1,0 +1,19 @@
+When applying a stochastic algorithm, one must choose an order to draw
+samples. The practical choices are without-replacement sampling orders, which
+are empirically faster and more cache-friendly than uniform-iid-sampling but
+often have inferior theoretical guarantees. Without-replacement sampling is
+well understood only for SGD without variance reduction. In this paper, we will
+improve the convergence analysis and rates of variance reduction under
+without-replacement sampling orders for composite finite-sum minimization.
+  Our results are in two-folds. First, we develop a damped variant of Finito
+called Prox-DFinito and establish its convergence rates with random
+reshuffling, cyclic sampling, and shuffling-once, under both convex and
+strongly convex scenarios. These rates match full-batch gradient descent and
+are state-of-the-art compared to the existing results for without-replacement
+sampling with variance-reduction. Second, our analysis can gauge how the cyclic
+order will influence the rate of cyclic sampling and, thus, allows us to derive
+the optimal fixed ordering. In the highly data-heterogeneous scenario,
+Prox-DFinito with optimal cyclic sampling can attain a sample-size-independent
+convergence rate, which, to our knowledge, is the first result that can match
+with uniform-iid-sampling with variance reduction. We also propose a practical
+method to discover the optimal cyclic ordering numerically.

@@ -1,0 +1,615 @@
+@article{herrmann2022neural,
+	title={Neural and gpc operator surrogates: construction and expression rate bounds},
+	author={Herrmann, Lukas and Schwab, Christoph and Zech, Jakob},
+	journal={arXiv preprint arXiv:2207.04950},
+	year={2022}
+}
+
+@book{scholkopf2018learning,
+  title={Learning with kernels: support vector machines, regularization, optimization, and beyond},
+  author={Scholkopf, Bernhard and Smola, Alexander J},
+  year={2018},
+  publisher={MIT Press}
+}
+
+
+@article{aronszajn1950theory,
+  title={Theory of reproducing kernels},
+  author={Aronszajn, Nachman},
+  journal={Transactions of the American Mathematical Society},
+  volume={68},
+  number={3},
+  pages={337--404},
+  year={1950}
+}
+
+@article{lu2021learning,
+  title={{Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators}},
+  author={Lu, Lu and Jin, Pengzhan and Pang, Guofei and Zhang, Zhongqiang and Karniadakis, George Em},
+  journal={Nature Machine Intelligence},
+  volume={3},
+  number={3},
+  pages={218--229},
+  year={2021},
+  publisher={Nature Publishing Group}
+}
+
+@article{pca2,
+title = {Non-intrusive reduced order modeling of nonlinear problems using neural networks},
+journal = {Journal of Computational Physics},
+volume = {363},
+pages = {55-78},
+year = {2018},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2018.02.037},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999118301190},
+author = {J.S. Hesthaven and S. Ubbiali},
+keywords = {Non-intrusive reduced basis method, Proper orthogonal decomposition, Multi-layer perceptron, Levenberg–Marquardt algorithm, Poisson equation, Driven cavity flow},
+abstract = {We develop a non-intrusive reduced basis (RB) method for parametrized steady-state partial differential equations (PDEs). The method extracts a reduced basis from a collection of high-fidelity solutions via a proper orthogonal decomposition (POD) and employs artificial neural networks (ANNs), particularly multi-layer perceptrons (MLPs), to accurately approximate the coefficients of the reduced model. The search for the optimal number of neurons and the minimum amount of training samples to avoid overfitting is carried out in the offline phase through an automatic routine, relying upon a joint use of the Latin hypercube sampling (LHS) and the Levenberg–Marquardt (LM) training algorithm. This guarantees a complete offline-online decoupling, leading to an efficient RB method – referred to as POD-NN – suitable also for general nonlinear problems with a non-affine parametric dependence. Numerical studies are presented for the nonlinear Poisson equation and for driven cavity viscous flows, modeled through the steady incompressible Navier–Stokes equations. Both physical and geometrical parametrizations are considered. Several results confirm the accuracy of the POD-NN method and show the substantial speed-up enabled at the online stage as compared to a traditional RB strategy.}
+}
+
+@article{CDS2011,
+  title={Analytic regularity and polynomial approximation of parametric and stochastic elliptic {PDE}'s},
+  author={Cohen, Albert and Devore, Ronald and Schwab, Christoph},
+  journal={Analysis and Applications},
+  volume={9},
+  number={01},
+  pages={11--47},
+  year={2011},
+  publisher={World Scientific}
+}
+
+
+@article{SchwabZech2019,
+  title={{Deep learning in high dimension: Neural network expression rates for generalized polynomial chaos expansions in UQ}},
+  author={Schwab, Christoph and Zech, Jakob},
+  journal={Analysis and Applications},
+  volume={17},
+  number={01},
+  pages={19--55},
+  year={2019},
+  publisher={World Scientific}
+}
+
+
+@article{thfno,
+    title = "{On Universal Approximation and Error Bounds for Fourier Neural Operators}",
+    journal = "Journal of Machine Learning Research",
+    year = "2021",
+    volume = "22",
+    number = "290",
+    pages = "1-76",
+    url = "http://jmlr.org/papers/v22/21-0806.html",
+    pdf = "https://jmlr.org/papers/volume22/21-0806/21-0806.pdf",
+    eprint = "2107.07562",
+    author = {Nikola B  Kovachki and Samuel  Lanthaler and Siddhartha  Mishra}
+}
+
+@article{thdeeponet,
+    title = "{Error estimates for DeepONets: a deep learning framework in infinite dimensions}",
+    journal = "Transactions of Mathematics and Its Applications",
+    volume = "6",
+    number = "1",
+    year = "2022",
+    month = "03",
+    abstract = "{DeepONets have recently been proposed as a framework for learning nonlinear operators mapping between infinite-dimensional Banach spaces. We analyze DeepONets and prove estimates on the resulting approximation and generalization errors. In particular, we extend the universal approximation property of DeepONets to include measurable mappings in non-compact spaces. By a decomposition of the error into encoding, approximation and reconstruction errors, we prove both lower and upper bounds on the total error, relating it to the spectral decay properties of the covariance operators, associated with the underlying measures. We derive almost optimal error bounds with very general affine reconstructors and with random sensor locations as well as bounds on the generalization error, using covering number arguments. We illustrate our general framework with four prototypical examples of nonlinear operators, namely those arising in a nonlinear forced ordinary differential equation, an elliptic partial differential equation (PDE) with variable coefficients and nonlinear parabolic and hyperbolic PDEs. While the approximation of arbitrary Lipschitz operators by DeepONets to accuracy \\$\\epsilon \\$ is argued to suffer from a ‘curse of dimensionality’ (requiring a neural networks of exponential size in \\$1/\\epsilon \\$), in contrast, for all the above concrete examples of interest, we rigorously prove that DeepONets can break this curse of dimensionality (achieving accuracy \\$\\epsilon \\$ with neural networks of size that can grow algebraically in \\$1/\\epsilon \\$).Thus, we demonstrate the efficient approximation of a potentially large class of operators with this machine learning framework.}",
+    issn = "2398-4945",
+    doi = "10.1093/imatrm/tnac001",
+    url = "https://doi.org/10.1093/imatrm/tnac001",
+    note = "tnac001",
+    eprint = "https://academic.oup.com/imatrm/article-pdf/6/1/tnac001/42785544/tnac001.pdf",
+    author = {Samuel  Lanthaler and Siddhartha  Mishra and George E Karniadakis}
+}
+
+
+
+@article{pca,
+     author = {Kaushik Bhattacharya and Bamdad Hosseini and Nikola B. Kovachki and Andrew M. Stuart},
+     title = {Model {Reduction} {And} {Neural} {Networks} {For} {Parametric} {PDEs}},
+     journal = {The SMAI journal of computational mathematics},
+     pages = {121--157},
+     publisher = {Soci\'et\'e de Math\'ematiques Appliqu\'ees et Industrielles},
+     volume = {7},
+     year = {2021},
+     doi = {10.5802/smai-jcm.74},
+     language = {en},
+     url = {https://smai-jcm.centre-mersenne.org/articles/10.5802/smai-jcm.74/}
+}
+
+@inproceedings{fourierop2020,
+title={{Fourier Neural Operator for Parametric Partial Differential Equations}},
+author={Zongyi Li and Nikola B Kovachki and Kamyar Azizzadenesheli and Burigede Liu and Kaushik Bhattacharya and Andrew M Stuart and Anima Anandkumar},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=c8P9NQVtmnO}
+}
+
+@inproceedings{
+ryck2022generic,
+title={Generic bounds on the approximation error for physics-informed (and) operator learning},
+author={Tim De Ryck and Siddhartha Mishra},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=bF4eYy3LTR9}
+}
+
+@inproceedings{nonlinrec,
+    abbr = "ICLR",
+    title = "Nonlinear Reconstruction for Operator Learning of PDEs with Discontinuities",
+    booktitle = "11th International Conference on Learning Representations (ICLR)",
+    publisher = "OpenReview.net",
+    year = "2023",
+    pdf = "https://openreview.net/forum?id=CrfhZAsJDsZ",
+    eprint = "2210.01074",
+    author = "Lanthaler, Samuel  and Molinaro, Roberto  and Hadorn, Patrik  and Mishra, Siddhartha "
+}
+
+
+@article{deng2021convergence,
+  title={{Approximation rates of DeepONets for learning operators arising from advection--diffusion equations}},
+  author={Deng, Beichuan and Shin, Yeonjong and Lu, Lu and Zhang, Zhongqiang and Karniadakis, George Em},
+  journal={Neural Networks},
+  volume={153},
+  pages={411--426},
+  year={2022},
+  publisher={Elsevier}
+}
+
+
+@article{gin2020deepgreen,
+  title={{DeepGreen: deep learning of Green’s functions for nonlinear boundary value problems}},
+  author={Gin, Craig R and Shea, Daniel E and Brunton, Steven L and Kutz, J Nathan},
+  journal={Scientific Reports},
+  volume={11},
+  number={1},
+  pages={21614},
+  year={2021},
+  publisher={Nature Publishing Group UK London}
+}
+
+
+@article{huang2020learning,
+  title={Learning constitutive relations from indirect observations using deep neural networks},
+  author={Huang, Daniel Z and Xu, Kailai and Farhat, Charbel and Darve, Eric},
+  journal={Journal of Computational Physics},
+  volume={416},
+  pages={109491},
+  year={2020},
+  publisher={Elsevier}
+}
+
+
+@article{rahimi2007random,
+  title={Random features for large-scale kernel machines},
+  author={Rahimi, Ali and Recht, Benjamin},
+  journal={Advances in Neural Information Processing Systems},
+  volume={20},
+  year={2007}
+}
+
+@article{minsker2017some,
+  title={{On some extensions of Bernstein’s inequality for self-adjoint operators}},
+  author={Minsker, Stanislav},
+  journal={Statistics \& Probability Letters},
+  volume={127},
+  pages={111--119},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@article{mei2022generalization,
+  title={Generalization error of random feature and kernel methods: hypercontractivity and kernel matrix concentration},
+  author={Mei, Song and Misiakiewicz, Theodor and Montanari, Andrea},
+  journal={Applied and Computational Harmonic Analysis},
+  volume={59},
+  pages={3--84},
+  year={2022},
+  publisher={Academic Press}
+}
+
+@article{li2021towards,
+  title={{Towards a unified analysis of random Fourier features}},
+  author={Li, Zhu and Ton, Jean-Francois and Oglic, Dino and Sejdinovic, Dino},
+  journal={Journal of Machine Learning Research},
+  volume={22},
+  number={108},
+  year={2021},
+  publisher={Journal of Machine Learning Research}
+}
+
+
+@article{rfm,
+  title={{The random feature model for input-output maps between Banach spaces}},
+  author={Nelsen, Nicholas H and Stuart, Andrew M},
+  journal={SIAM Journal on Scientific Computing},
+  volume={43},
+  number={5},
+  pages={A3212--A3243},
+  year={2021},
+  publisher={SIAM}
+}
+
+@article{RR2008,
+  title={{Weighted sums of random kitchen sinks: Replacing minimization with randomization in learning}},
+  author={Rahimi, Ali and Recht, Benjamin},
+  journal={Advances in Neural Information Processing Systems},
+  volume={21},
+  year={2008}
+}
+
+@article{BM2002,
+  title={{Rademacher and Gaussian complexities: Risk bounds and structural results}},
+  author={Bartlett, Peter L and Mendelson, Shahar},
+  journal={Journal of Machine Learning Research},
+  volume={3},
+  number={Nov},
+  pages={463--482},
+  year={2002}
+}
+
+@inproceedings{maurer2016,
+  title={{A vector-contraction inequality for Rademacher complexities}},
+  author={Maurer, Andreas},
+  booktitle={International Conference on Algorithmic Learning Theory},
+  pages={3--17},
+  year={2016},
+  organization={Springer}
+}
+
+@book{wainwright2019high,
+	title={{High-dimensional statistics: A non-asymptotic viewpoint}},
+	author={Wainwright, Martin J},
+	volume={48},
+	year={2019},
+	publisher={Cambridge University Press}
+}
+
+@article{maurer2021concentration,
+  title={{Concentration inequalities under sub-Gaussian and sub-exponential conditions}},
+  author={Maurer, Andreas and Pontil, Massimiliano},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={7588--7597},
+  year={2021}
+}
+
+@article{caponnetto2007optimal,
+  title={Optimal rates for the regularized least-squares algorithm},
+  author={Caponnetto, Andrea and De Vito, Ernesto},
+  journal={Foundations of Computational Mathematics},
+  volume={7},
+  number={3},
+  pages={331--368},
+  year={2007},
+  publisher={Springer-Verlag}
+}
+
+@article{cucker2002mathematical,
+  title={On the mathematical foundations of learning},
+  author={Cucker, Felipe and Smale, Steve},
+  journal={Bulletin of the American mathematical Society},
+  volume={39},
+  number={1},
+  pages={1--49},
+  year={2002}
+}
+
+@article{rudi2017generalization,
+  title={Generalization properties of learning with random features},
+  author={Rudi, Alessandro and Rosasco, Lorenzo},
+  journal={Advances in Neural Information Processing Systems},
+  volume={30},
+  year={2017}
+}
+
+@article{smale2007learning,
+  title={Learning theory estimates via integral operators and their approximations},
+  author={Smale, Steve and Zhou, Ding-Xuan},
+  journal={Constructive Approximation},
+  volume={26},
+  number={2},
+  pages={153--172},
+  year={2007},
+  publisher={Springer}
+}
+
+@article{smale2005shannon,
+  title={{Shannon sampling II: Connections to learning theory}},
+  author={Smale, Steve and Zhou, Ding-Xuan},
+  journal={Applied and Computational Harmonic Analysis},
+  volume={19},
+  number={3},
+  pages={285--302},
+  year={2005},
+  publisher={Elsevier}
+}
+
+@article{rudi2015less,
+  title={{Less is more: Nystr{\"o}m computational regularization}},
+  author={Rudi, Alessandro and Camoriano, Raffaello and Rosasco, Lorenzo},
+  journal={Advances in Neural Information Processing Systems},
+  volume={28},
+  year={2015}
+}
+
+@incollection{de2021regularization,
+  title={{Regularization: From inverse problems to large-scale machine learning}},
+  author={De Vito, Ernesto and Rosasco, Lorenzo and Rudi, Alessandro},
+  booktitle={Harmonic and Applied Analysis},
+  pages={245--296},
+  year={2021},
+  publisher={Springer}
+}
+
+@article{bach2017equivalence,
+  title={On the equivalence between kernel quadrature rules and random feature expansions},
+  author={Bach, Francis},
+  journal={The Journal of Machine Learning Research},
+  volume={18},
+  number={1},
+  pages={714--751},
+  year={2017},
+  publisher={JMLR. org}
+}
+
+@article{sun2018but,
+  title={{But how does it work in theory? Linear SVM with random features}},
+  author={Sun, Yitong and Gilbert, Anna and Tewari, Ambuj},
+  journal={Advances in Neural Information Processing Systems},
+  volume={31},
+  year={2018}
+}
+
+@article{adamczak2008tail,
+  title={{A tail inequality for suprema of unbounded empirical processes with applications to Markov chains}},
+  author={Adamczak, Radoslaw},
+  journal={Electronic Journal of Probability},
+  volume={13},
+  pages={1000--1034},
+  year={2008},
+  publisher={Institute of Mathematical Statistics and Bernoulli Society}
+}
+
+@inproceedings{della2021regularized,
+  title={{Regularized ERM on random subspaces}},
+  author={Della Vecchia, Andrea and Mourtada, Jaouad and De Vito, Ernesto and Rosasco, Lorenzo},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={4006--4014},
+  year={2021},
+  organization={PMLR}
+}
+
+@article{klochkov2020uniform,
+  title={{Uniform Hanson-Wright type concentration inequalities for unbounded entries via the entropy method}},
+  author={Klochkov, Yegor and Zhivotovskiy, Nikita},
+  year={2020},
+  publisher={Institute of Mathematical Statistics}
+}
+
+@misc{ledoux1991probability,
+  title={{Probability in Banach Spaces: isoperimetry and processes}},
+  author={Ledoux, Michel and Talagrand, Michel},
+  year={1991},
+  publisher={Springer Science \& Business Media}
+}
+
+@article{pinelis1986remarks,
+  title={Remarks on inequalities for large deviation probabilities},
+  author={Pinelis, Iosif F and Sakhanenko, Aleksandr Ivanovich},
+  journal={Theory of Probability \& Its Applications},
+  volume={30},
+  number={1},
+  pages={143--148},
+  year={1986},
+  publisher={SIAM}
+}
+
+@article{ogawa1988operator,
+  title={An operator pseudo-inversion lemma},
+  author={Ogawa, Hidemitsu},
+  journal={SIAM Journal on Applied Mathematics},
+  volume={48},
+  number={6},
+  pages={1527--1531},
+  year={1988},
+  publisher={SIAM}
+}
+
+@article{ma2020rademacher,
+  title={Rademacher complexity and the generalization error of residual networks},
+  author={Ma, Chao and Wang, Qingcan and E, Weinan},
+  journal={Communications in Mathematical Sciences},
+  volume={18},
+  number={6},
+  pages={1755--1774},
+  year={2020},
+  publisher={International Press of Boston}
+}
+
+@article{bartlett2005local,
+  title={Local Rademacher Complexities},
+  author={Bartlett, Peter L and Bousquet, Olivier and Mendelson, Shahar},
+  journal={Annals of Statistics},
+  pages={1497--1537},
+  year={2005},
+  publisher={JSTOR}
+}
+
+@misc{vershynin2018high,
+  title={{High-dimensional probability: An introduction with applications in data science}},
+  author={Vershynin, Roman},
+  year={2018},
+  publisher={Cambridge University Press}
+}
+
+@article{carmeli2006vector,
+  title={{Vector valued reproducing kernel Hilbert spaces of integrable functions and Mercer theorem}},
+  author={Carmeli, Claudio and De Vito, Ernesto and Toigo, Alessandro},
+  journal={Analysis and Applications},
+  volume={4},
+  number={04},
+  pages={377--408},
+  year={2006},
+  publisher={World Scientific}
+}
+
+@article{owhadi2017separability,
+  title={{Separability of reproducing kernel spaces}},
+  author={Owhadi, Houman and Scovel, Clint},
+  journal={Proceedings of the American Mathematical Society},
+  volume={145},
+  number={5},
+  pages={2131--2138},
+  year={2017}
+}
+
+@article{caponnetto2008universal,
+  title={Universal multi-task kernels},
+  author={Caponnetto, Andrea and Micchelli, Charles A and Pontil, Massimiliano and Ying, Yiming},
+  journal={The Journal of Machine Learning Research},
+  volume={9},
+  pages={1615--1646},
+  year={2008},
+  publisher={JMLR. org}
+}
+
+@article{carmeli2010vector,
+  title={{Vector valued reproducing kernel Hilbert spaces and universality}},
+  author={Carmeli, Claudio and De Vito, Ernesto and Toigo, Alessandro and Umanit{\'a}, Veronica},
+  journal={Analysis and Applications},
+  volume={8},
+  number={01},
+  pages={19--61},
+  year={2010},
+  publisher={World Scientific}
+}
+
+@inproceedings{brault2016random,
+  title={Random fourier features for operator-valued kernels},
+  author={Brault, Romain and Heinonen, Markus and Buc, Florence},
+  booktitle={Asian Conference on Machine Learning},
+  pages={110--125},
+  year={2016},
+  organization={PMLR}
+}
+
+@article{minh2016operator,
+  title={{Operator-valued Bochner theorem, Fourier feature maps for operator-valued kernels, and vector-valued learning}},
+  author={Minh, Ha Quang},
+  journal={arXiv preprint arXiv:1608.05639},
+  year={2016}
+}
+
+@article{hashemi2023generalization,
+  title={Generalization bounds for sparse random feature expansions},
+  author={Hashemi, Abolfazl and Schaeffer, Hayden and Shi, Robert and Topcu, Ufuk and Tran, Giang and Ward, Rachel},
+  journal={Applied and Computational Harmonic Analysis},
+  volume={62},
+  pages={310--330},
+  year={2023},
+  publisher={Elsevier}
+}
+
+@inproceedings{chen2022concentration,
+  title={{Concentration of Random Feature Matrices in High-Dimensions}},
+  author={Chen, Zhijun and Schaeffer, Hayden and Ward, Rachel},
+  booktitle={Mathematical and Scientific Machine Learning},
+  pages={287--302},
+  year={2022},
+  organization={PMLR}
+}
+
+@article{ghorbani2021linearized,
+title={Linearized two-layers neural networks in high dimension},
+author={Ghorbani, Behrooz and Mei, Song and Misiakiewicz, Theodor and Montanari, Andrea},
+journal={Ann. Statist.},
+volume={49},
+pages={1029--1054},
+year={2021}
+}
+
+@article{de2023convergence,
+title = {{Convergence Rates for Learning Linear Operators from Noisy Data}},
+journal = {{SIAM/ASA Journal on Uncertainty Quantification}},
+volume = {11},
+number = {2},
+pages = {480-513},
+year = {2023},
+doi = {10.1137/21M1442942},
+author={de Hoop, Maarten V and Kovachki, Nikola B and Nelsen, Nicholas H and Stuart, Andrew M}
+}
+
+@article{mollenhauer2022learning,
+  title={{Learning linear operators: Infinite-dimensional regression as a well-behaved non-compact inverse problem}},
+  author={Mollenhauer, Mattes and M{\"u}cke, Nicole and Sullivan, TJ},
+  journal={arXiv preprint arXiv:2211.08875},
+  year={2022}
+}
+
+@article{stepaniants2023learning,
+  title={{Learning partial differential equations in reproducing kernel Hilbert spaces}},
+  author={Stepaniants, George},
+  journal={Journal of Machine Learning Research},
+  volume={24},
+  number={86},
+  pages={1--72},
+  year={2023}
+}
+
+
+@inproceedings{jin2022minimax,
+	title={{Minimax Optimal Kernel Operator Learning via Multilevel Training}},
+	author={Jikai Jin and Yiping Lu and Jose Blanchet and Lexing Ying},
+	booktitle={The Eleventh International Conference on Learning Representations },
+	year={2023},
+	url={https://openreview.net/forum?id=zEn1BhaNYsC}
+}
+
+@article{boulle2022learning,
+  title={Learning elliptic partial differential equations with randomized linear algebra},
+  author={Boull{\'e}, Nicolas and Townsend, Alex},
+  journal={Foundations of Computational Mathematics},
+  pages={1--31},
+  year={2022},
+  publisher={Springer US}
+}
+
+@article{ma2020min,
+  title={The generalization error of the minimum-norm solutions for over-parameterized neural networks},
+  author={E, Weinan and Ma, Chao and Wu, Lei},
+  journal={Pure and Applied Functional Analysis},
+  volume={5},
+  number={6},
+  pages={1445--1460},
+  year={2020},
+  publisher={Yokohama Publishers}
+}
+
+@article{gonon2023approximation,
+  title={Approximation bounds for random neural networks and reservoir systems},
+  author={Gonon, Lukas and Grigoryeva, Lyudmila and Ortega, Juan-Pablo},
+  journal={The Annals of Applied Probability},
+  volume={33},
+  number={1},
+  pages={28--69},
+  year={2023},
+  publisher={Institute of Mathematical Statistics}
+}
+
+@article{kovachki2023neural,
+	title={{Neural Operator: Learning Maps Between Function Spaces With Applications to PDEs}},
+	author={Kovachki, Nikola B and Li, Zongyi and Liu, Burigede and Azizzadenesheli, Kamyar and Bhattacharya, Kaushik and Stuart, Andrew M and Anandkumar, Anima},
+  	journal={Journal of Machine Learning Research},
+	volume={24},
+	number={89},
+	pages={1--97},
+	year={2023}
+}
+
+@article{schafer2021sparse,
+	title={Sparse recovery of elliptic solvers from matrix-vector products},
+	author={Sch{\"a}fer, Florian and Owhadi, Houman},
+	journal={arXiv preprint arXiv:2110.05351 (to appear in SIAM J. Sci. Comput.)},
+	year={2023}
+}

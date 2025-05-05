@@ -1,0 +1,12 @@
+Discrete mixture models are routinely used for density estimation and
+clustering. While conducting inferences on the cluster-specific parameters,
+current frequentist and Bayesian methods often encounter problems when clusters
+are placed too close together to be scientifically meaningful. Current Bayesian
+practice generates component-specific parameters independently from a common
+prior, which tends to favor similar components and often leads to substantial
+probability assigned to redundant components that are not needed to fit the
+data. As an alternative, we propose to generate components from a repulsive
+process, which leads to fewer, better separated and more interpretable
+clusters. We characterize this repulsive prior theoretically and propose a
+Markov chain Monte Carlo sampling algorithm for posterior computation. The
+methods are illustrated using simulated data as well as real datasets.

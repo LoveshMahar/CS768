@@ -1,0 +1,14 @@
+Diffusion models have achieved great success in modeling continuous data
+modalities such as images, audio, and video, but have seen limited use in
+discrete domains such as language. Recent attempts to adapt diffusion to
+language have presented diffusion as an alternative to existing pretrained
+language models. We view diffusion and existing language models as
+complementary. We demonstrate that encoder-decoder language models can be
+utilized to efficiently learn high-quality language autoencoders. We then
+demonstrate that continuous diffusion models can be learned in the latent space
+of the language autoencoder, enabling us to sample continuous latent
+representations that can be decoded into natural language with the pretrained
+decoder. We validate the effectiveness of our approach for unconditional,
+class-conditional, and sequence-to-sequence language generation. We demonstrate
+across multiple diverse data sets that our latent language diffusion models are
+significantly more effective than previous diffusion language models.

@@ -1,0 +1,520 @@
+% Use this file for citations not found in the ACL Anthology (contained in "anthology.bib").
+
+@misc{lcc,
+  title={LCC},
+  author={Nielsen, Finn Årup},
+  year={2016},
+  note={\url{https://github.com/fnielsen/lcc-sentiment}}
+}
+
+@inproceedings{su2022one,
+    title = "One Embedder, Any Task: Instruction-Finetuned Text Embeddings",
+    author = "Su, Hongjin  and
+      Shi, Weijia  and
+      Kasai, Jungo  and
+      Wang, Yizhong  and
+      Hu, Yushi  and
+      Ostendorf, Mari  and
+      Yih, Wen-tau  and
+      Smith, Noah A.  and
+      Zettlemoyer, Luke  and
+      Yu, Tao",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.71",
+    doi = "10.18653/v1/2023.findings-acl.71",
+    pages = "1102--1121",
+    abstract = "We introduce INSTRUCTOR, a new method for computing text embeddings given task instructions: every text input is embedded together with instructions explaining the use case (e.g., task and domain descriptions). Unlike encoders from prior work that are more specialized, INSTRUCTOR is a single embedder that can generate text embeddings tailored to different downstream tasks and domains, without any further training. We first annotate instructions for 330 diverse tasks and train INSTRUCTOR on this multitask mixture with a contrastive loss. We evaluate INSTRUCTOR on 70 embedding evaluation tasks (66 of which are unseen during training), ranging from classification and information retrieval to semantic textual similarity and text generation evaluation. INSTRUCTOR, while having an order of magnitude fewer parameters than the previous best model, achieves state-of-the-art performance, with an average improvement of 3.4{\%} compared to the previous best results on the 70 diverse datasets. Our analysis suggests that INSTRUCTOR is robust to changes in instructions, and that instruction finetuning mitigates the challenge of training a single model on diverse datasets. Our model, code, and data are available at \url{https://instructor-embedding.github.io}.",
+}
+
+@article{muennighoff2022sgpt,
+  title={Sgpt: Gpt sentence embeddings for semantic search},
+  author={Muennighoff, Niklas},
+  journal={arXiv preprint arXiv:2202.08904},
+  year={2022}
+}
+
+
+@article{xiao2023c,
+  title={C-pack: Packaged Resources to Advance General Chinese Embedding},
+  author={Xiao, Shitao and Liu, Zheng and Zhang, Peitian and Muennighoff, Niklas},
+  note={Under review at ACL ARR},
+  year={2023}
+}
+
+
+@article{feng2020language,
+  title={Language-agnostic BERT sentence embedding},
+  author={Feng, Fangxiaoyu and Yang, Yinfei and Cer, Daniel and Arivazhagan, Naveen and Wang, Wei},
+  journal={arXiv preprint arXiv:2007.01852},
+  year={2020}
+}
+
+@article{ni2021large,
+  title={Large dual encoders are generalizable retrievers},
+  author={Ni, Jianmo and Qu, Chen and Lu, Jing and Dai, Zhuyun and {\'A}brego, Gustavo Hern{\'a}ndez and Ma, Ji and Zhao, Vincent Y and Luan, Yi and Hall, Keith B and Chang, Ming-Wei and others},
+  journal={arXiv preprint arXiv:2112.07899},
+  year={2021}
+}
+
+@inproceedings{ni2021sentence,
+    title = "Sentence-T5: Scalable Sentence Encoders from Pre-trained Text-to-Text Models",
+    author = "Ni, Jianmo  and
+      Hernandez Abrego, Gustavo  and
+      Constant, Noah  and
+      Ma, Ji  and
+      Hall, Keith  and
+      Cer, Daniel  and
+      Yang, Yinfei",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2022",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-acl.146",
+    doi = "10.18653/v1/2022.findings-acl.146",
+    pages = "1864--1874",
+    abstract = "We provide the first exploration of sentence embeddings from text-to-text transformers (T5) including the effects of scaling up sentence encoders to 11B parameters. Sentence embeddings are broadly useful for language processing tasks. While T5 achieves impressive performance on language tasks, it is unclear how to produce sentence embeddings from encoder-decoder models. We investigate three methods to construct Sentence-T5 (ST5) models: two utilize only the T5 encoder and one using the full T5 encoder-decoder. We establish a new sentence representation transfer benchmark, SentGLUE, which extends the SentEval toolkit to nine tasks from the GLUE benchmark. Our encoder-only models outperform the previous best models on both SentEval and SentGLUE transfer tasks, including semantic textual similarity (STS). Scaling up ST5 from millions to billions of parameters shown to consistently improve performance. Finally, our encoder-decoder method achieves a new state-of-the-art on STS when using sentence embeddings.",
+}
+
+@article{gao2021simcse,
+  title={Simcse: Simple contrastive learning of sentence embeddings},
+  author={Gao, Tianyu and Yao, Xingcheng and Chen, Danqi},
+  journal={arXiv preprint arXiv:2104.08821},
+  year={2021}
+}
+
+@article{duquenne2023sonar,
+  title={SONAR: sentence-level multimodal and language-agnostic representations},
+  author={Duquenne, Paul-Ambroise and Schwenk, Holger and Sagot, Benoit},
+  journal={arXiv e-prints},
+  year={2023}
+}
+
+@article{muennighoff2024generative,
+  title={Generative representational instruction tuning},
+  author={Muennighoff, Niklas and Su, Hongjin and Wang, Liang and Yang, Nan and Wei, Furu and Yu, Tao and Singh, Amanpreet and Kiela, Douwe},
+  journal={arXiv preprint arXiv:2402.09906},
+  year={2024}
+}
+
+@article{wang2022text,
+  title={Text embeddings by weakly-supervised contrastive pre-training},
+  author={Wang, Liang and Yang, Nan and Huang, Xiaolong and Jiao, Binxing and Yang, Linjun and Jiang, Daxin and Majumder, Rangan and Wei, Furu},
+  journal={arXiv preprint arXiv:2212.03533},
+  year={2022}
+}
+
+
+
+@article{chen2024bge,
+  title={M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation},
+  author={Chen, Jianlv and Xiao, Shitao and Zhang, Peitian and Luo, Kun and Lian, Defu and Liu, Zheng},
+  note={Under review at ACL ARR},
+  year={2024}
+}
+
+
+@article{zhang2023miracl,
+  title={Miracl: A multilingual retrieval dataset covering 18 diverse languages},
+  author={Zhang, Xinyu and Thakur, Nandan and Ogundepo, Odunayo and Kamalloo, Ehsan and Alfonso-Hermelo, David and Li, Xiaoguang and Liu, Qun and Rezagholizadeh, Mehdi and Lin, Jimmy},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={11},
+  pages={1114--1131},
+  year={2023},
+  publisher={MIT Press One Broadway, 12th Floor, Cambridge, Massachusetts 02142, USA~…}
+}
+
+@inproceedings{reimers2019sentence,
+  title={Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks},
+  author={Nils Reimers and Iryna Gurevych},
+  booktitle={Conference on Empirical Methods in Natural Language Processing},
+  year={2019},
+  url={https://api.semanticscholar.org/CorpusID:201646309}
+}
+
+@article{mikolov2013distributed,
+  title={Distributed representations of words and phrases and their compositionality},
+  author={Mikolov, Tomas and Sutskever, Ilya and Chen, Kai and Corrado, Greg S and Dean, Jeff},
+  journal={Advances in neural information processing systems},
+  volume={26},
+  year={2013}
+}
+
+@inproceedings{xue2020mt5,
+    title = "m{T}5: A Massively Multilingual Pre-trained Text-to-Text Transformer",
+    author = "Xue, Linting  and
+      Constant, Noah  and
+      Roberts, Adam  and
+      Kale, Mihir  and
+      Al-Rfou, Rami  and
+      Siddhant, Aditya  and
+      Barua, Aditya  and
+      Raffel, Colin",
+    editor = "Toutanova, Kristina  and
+      Rumshisky, Anna  and
+      Zettlemoyer, Luke  and
+      Hakkani-Tur, Dilek  and
+      Beltagy, Iz  and
+      Bethard, Steven  and
+      Cotterell, Ryan  and
+      Chakraborty, Tanmoy  and
+      Zhou, Yichao",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.41",
+    doi = "10.18653/v1/2021.naacl-main.41",
+    pages = "483--498",
+    abstract = "The recent {``}Text-to-Text Transfer Transformer{''} (T5) leveraged a unified text-to-text format and scale to attain state-of-the-art results on a wide variety of English-language NLP tasks. In this paper, we introduce mT5, a multilingual variant of T5 that was pre-trained on a new Common Crawl-based dataset covering 101 languages. We detail the design and modified training of mT5 and demonstrate its state-of-the-art performance on many multilingual benchmarks. We also describe a simple technique to prevent {``}accidental translation{''} in the zero-shot setting, where a generative model chooses to (partially) translate its prediction into the wrong language. All of the code and model checkpoints used in this work are publicly available.",
+}
+
+@inproceedings{conneau2017supervised,
+    title = "Supervised Learning of Universal Sentence Representations from Natural Language Inference Data",
+    author = {Conneau, Alexis  and
+      Kiela, Douwe  and
+      Schwenk, Holger  and
+      Barrault, Lo{\"\i}c  and
+      Bordes, Antoine},
+    editor = "Palmer, Martha  and
+      Hwa, Rebecca  and
+      Riedel, Sebastian",
+    booktitle = "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D17-1070",
+    doi = "10.18653/v1/D17-1070",
+    pages = "670--680",
+    abstract = "Many modern NLP systems rely on word embeddings, previously trained in an unsupervised manner on large corpora, as base features. Efforts to obtain embeddings for larger chunks of text, such as sentences, have however not been so successful. Several attempts at learning unsupervised representations of sentences have not reached satisfactory enough performance to be widely adopted. In this paper, we show how universal sentence representations trained using the supervised data of the Stanford Natural Language Inference datasets can consistently outperform unsupervised methods like SkipThought vectors on a wide range of transfer tasks. Much like how computer vision uses ImageNet to obtain features, which can then be transferred to other tasks, our work tends to indicate the suitability of natural language inference for transfer learning to other NLP tasks. Our encoder is publicly available.",
+}
+
+@inproceedings{pennington2014glove,
+  title={Glove: Global vectors for word representation},
+  author={Pennington, Jeffrey and Socher, Richard and Manning, Christopher D},
+  booktitle={Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP)},
+  pages={1532--1543},
+  year={2014}
+
+
+}
+
+@article{artetxe2019massively,
+  title={Massively multilingual sentence embeddings for zero-shot cross-lingual transfer and beyond},
+  author={Artetxe, Mikel and Schwenk, Holger},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={7},
+  pages={597--610},
+  year={2019},
+  publisher={MIT Press One Rogers Street, Cambridge, MA 02142-1209, USA journals-info~…}
+}
+
+@inproceedings{borgeaud2022improving,
+  title={Improving language models by retrieving from trillions of tokens},
+  author={Borgeaud, Sebastian and Mensch, Arthur and Hoffmann, Jordan and Cai, Trevor and Rutherford, Eliza and Millican, Katie and Van Den Driessche, George Bm and Lespiau, Jean-Baptiste and Damoc, Bogdan and Clark, Aidan and others},
+  booktitle={International conference on machine learning},
+  pages={2206--2240},
+  year={2022},
+  organization={PMLR}
+}
+
+@article{alayrac2022flamingo,
+  title={Flamingo: a visual language model for few-shot learning},
+  author={Alayrac, Jean-Baptiste and Donahue, Jeff and Luc, Pauline and Miech, Antoine and Barr, Iain and Hasson, Yana and Lenc, Karel and Mensch, Arthur and Millican, Katherine and Reynolds, Malcolm and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={23716--23736},
+  year={2022}
+}
+
+@inproceedings{jiang2015training,
+  title={Training word embeddings for deep learning in biomedical text mining tasks},
+  author={Jiang, Zhenchao and Li, Lishuang and Huang, Degen and Jin, Liuke},
+  booktitle={2015 IEEE international conference on bioinformatics and biomedicine (BIBM)},
+  pages={625--628},
+  year={2015},
+  organization={IEEE}
+}
+
+@inproceedings{liu2011survey,
+  title={Survey on text clustering algorithm-Research present situation of text clustering algorithm},
+  author={Liu, Fasheng and Xiong, Lu},
+  booktitle={2011 IEEE 2nd International Conference on Software Engineering and Service Science},
+  pages={196--199},
+  year={2011},
+  organization={IEEE}
+}
+
+@article{Angelov2020Top2VecDR,
+  title={Top2Vec: Distributed Representations of Topics},
+  author={Dimitar Angelov},
+  journal={ArXiv},
+  year={2020},
+  volume={abs/2008.09470},
+  url={https://api.semanticscholar.org/CorpusID:221246303}
+}
+
+@article{song2020mpnet,
+  title={Mpnet: Masked and permuted pre-training for language understanding},
+  author={Song, Kaitao and Tan, Xu and Qin, Tao and Lu, Jianfeng and Liu, Tie-Yan},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={16857--16867},
+  year={2020}
+}
+
+@article{enevoldsen2023danish,
+  title={Danish Foundation Models},
+  author={Enevoldsen, Kenneth and Hansen, Lasse and Nielsen, Dan S and Egeb{\ae}k, Rasmus AF and Holm, S{\o}ren V and Nielsen, Martin C and Bernstorff, Martin and Larsen, Rasmus and J{\o}rgensen, Peter B and H{\o}jmark-Bertelsen, Malte and others},
+  journal={arXiv preprint arXiv:2311.07264},
+  year={2023}
+}
+
+@inproceedings{kummervold-etal-2021-operationalizing,
+    title = "Operationalizing a National Digital Library: The Case for a {N}orwegian Transformer Model",
+    author = "Kummervold, Per E  and
+      De la Rosa, Javier  and
+      Wetjen, Freddy  and
+      Brygfjeld, Svein Arne",
+    editor = "Dobnik, Simon  and
+      {\O}vrelid, Lilja",
+    booktitle = "Proceedings of the 23rd Nordic Conference on Computational Linguistics (NoDaLiDa)",
+    month = may # " 31--2 " # jun,
+    year = "2021",
+    address = "Reykjavik, Iceland (Online)",
+    publisher = {Link{\"o}ping University Electronic Press, Sweden},
+    url = "https://aclanthology.org/2021.nodalida-main.3",
+    pages = "20--29",
+    abstract = "In this work, we show the process of building a large-scale training set from digital and digitized collections at a national library. The resulting Bidirectional Encoder Representations from Transformers (BERT)-based language model for Norwegian outperforms multilingual BERT (mBERT) models in several token and sequence classification tasks for both Norwegian Bokm{\aa}l and Norwegian Nynorsk. Our model also improves the mBERT performance for other languages present in the corpus such as English, Swedish, and Danish. For languages not included in the corpus, the weights degrade moderately while keeping strong multilingual properties. Therefore, we show that building high-quality models within a memory institution using somewhat noisy optical character recognition (OCR) content is feasible, and we hope to pave the way for other memory institutions to follow.",
+}
+
+@misc{rekathati2021introducing,  
+  author = {Rekathati, Faton},  
+  title = {The KBLab Blog: Introducing a Swedish Sentence Transformer},  
+  url = {https://kb-labb.github.io/posts/2021-08-23-a-swedish-sentence-transformer/},  
+  year = {2021}  
+}
+
+@inproceedings{NEURIPS2022_c32319f4,
+ author = {Kusupati, Aditya and Bhatt, Gantavya and Rege, Aniket and Wallingford, Matthew and Sinha, Aditya and Ramanujan, Vivek and Howard-Snyder, William and Chen, Kaifeng and Kakade, Sham and Jain, Prateek and Farhadi, Ali},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {30233--30249},
+ publisher = {Curran Associates, Inc.},
+ title = {Matryoshka Representation Learning},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/c32319f4868da7613d78af9993100e42-Paper-Conference.pdf},
+ volume = {35},
+ year = {2022}
+}
+
+
+@misc{fan2020englishcentric,
+      title={Beyond English-Centric Multilingual Machine Translation}, 
+      author={Angela Fan and Shruti Bhosale and Holger Schwenk and Zhiyi Ma and Ahmed El-Kishky and Siddharth Goyal and Mandeep Baines and Onur Celebi and Guillaume Wenzek and Vishrav Chaudhary and Naman Goyal and Tom Birch and Vitaliy Liptchinsky and Sergey Edunov and Edouard Grave and Michael Auli and Armand Joulin},
+      year={2020},
+      eprint={2010.11125},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{bojanowski2017enriching,
+  title={Enriching Word Vectors with Subword Information},
+  author={Bojanowski, Piotr and Grave, Edouard and Joulin, Armand and Mikolov, Tomas},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={5},
+  year={2017},
+  issn={2307-387X},
+  pages={135--146}
+}
+
+@InProceedings{joulin2017bag,
+  title={Bag of Tricks for Efficient Text Classification},
+  author={Joulin, Armand and Grave, Edouard and Bojanowski, Piotr and Mikolov, Tomas},
+  booktitle={Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 2, Short Papers},
+  month={April},
+  year={2017},
+  publisher={Association for Computational Linguistics},
+  pages={427--431},
+}
+
+@article{joulin2016fasttext,
+  title={FastText.zip: Compressing text classification models},
+  author={Armand Joulin and Edouard Grave and Piotr Bojanowski and Matthijs Douze and Herv{\'e} J{\'e}gou and Tomas Mikolov},
+  journal={ArXiv},
+  year={2016},
+  volume={abs/1612.03651},
+  url={https://api.semanticscholar.org/CorpusID:16196524}
+}
+
+@article{wang2023improving,
+  title={Improving Text Embeddings with Large Language Models},
+  author={Wang, Liang and Yang, Nan and Huang, Xiaolong and Yang, Linjun and Majumder, Rangan and Wei, Furu},
+  journal={arXiv preprint arXiv:2401.00368},
+  year={2023}
+}
+
+@inproceedings{Thakur2021BEIRAH,
+ author = {Thakur, Nandan and Reimers, Nils and R\"{u}ckl\'{e}, Andreas and Srivastava, Abhishek and Gurevych, Iryna},
+ booktitle = {Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks},
+ editor = {J. Vanschoren and S. Yeung},
+ pages = {},
+ publisher = {Curran},
+ title = {BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models},
+ url = {https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/file/65b9eea6e1cc6bb9f0cd2a47751a186f-Paper-round2.pdf},
+ volume = {1},
+ year = {2021}
+}
+
+
+
+@inproceedings{fitzgerald2022massive,
+    title = "{MASSIVE}: A 1{M}-Example Multilingual Natural Language Understanding Dataset with 51 Typologically-Diverse Languages",
+    author = "FitzGerald, Jack  and
+      Hench, Christopher  and
+      Peris, Charith  and
+      Mackie, Scott  and
+      Rottmann, Kay  and
+      Sanchez, Ana  and
+      Nash, Aaron  and
+      Urbach, Liam  and
+      Kakarala, Vishesh  and
+      Singh, Richa  and
+      Ranganath, Swetha  and
+      Crist, Laurie  and
+      Britan, Misha  and
+      Leeuwis, Wouter  and
+      Tur, Gokhan  and
+      Natarajan, Prem",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.235",
+    doi = "10.18653/v1/2023.acl-long.235",
+    pages = "4277--4302",
+    abstract = "We present the MASSIVE dataset{--}Multilingual Amazon Slu resource package (SLURP) for Slot-filling, Intent classification, and Virtual assistant Evaluation. MASSIVE contains 1M realistic, parallel, labeled virtual assistant utterances spanning 51 languages, 18 domains, 60 intents, and 55 slots. MASSIVE was created by tasking professional translators to localize the English-only SLURP dataset into 50 typologically diverse languages from 29 genera. We also present modeling results on XLM-R and mT5, including exact match accuracy, intent classification accuracy, and slot-filling F1 score. We have released our dataset, modeling code, and models publicly.",
+}
+
+@misc{TatoebaCorpus,
+  title = {{Tatoeba Corpus}},
+  howpublished = {\url{https://tatoeba.org/}},
+  note = {Used the version available at https://github.com/facebookresearch/LASER/tree/main/data/tatoeba/v1},
+  year = {2023},
+  author = {{Tatoeba Project Contributors}},
+}
+
+@inproceedings{berdicevskis-etal-2023-superlim,
+    title = "Superlim: A {S}wedish Language Understanding Evaluation Benchmark",
+    author = {Berdicevskis, Aleksandrs  and
+      Bouma, Gerlof  and
+      Kurtz, Robin  and
+      Morger, Felix  and
+      {\"O}hman, Joey  and
+      Adesam, Yvonne  and
+      Borin, Lars  and
+      Dann{\'e}lls, Dana  and
+      Forsberg, Markus  and
+      Isbister, Tim  and
+      Lindahl, Anna  and
+      Malmsten, Martin  and
+      Rekathati, Faton  and
+      Sahlgren, Magnus  and
+      Volodina, Elena  and
+      B{\"o}rjeson, Love  and
+      Hengchen, Simon  and
+      Tahmasebi, Nina},
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.506",
+    doi = "10.18653/v1/2023.emnlp-main.506",
+    pages = "8137--8153",
+    abstract = "We present Superlim, a multi-task NLP benchmark and analysis platform for evaluating Swedish language models, a counterpart to the English-language (Super)GLUE suite. We describe the dataset, the tasks, the leaderboard and report the baseline results yielded by a reference implementation. The tested models do not approach ceiling performance on any of the tasks, which suggests that Superlim is truly difficult, a desirable quality for a benchmark. We address methodological challenges, such as mitigating the Anglocentric bias when creating datasets for a less-resourced language; choosing the most appropriate measures; documenting the datasets and making the leaderboard convenient and transparent. We also highlight other potential usages of the dataset, such as, for instance, the evaluation of cross-lingual transfer learning.",
+}
+
+@inproceedings{samuel-etal-2023-norbench,
+    title = "{N}or{B}ench {--} A Benchmark for {N}orwegian Language Models",
+    author = "Samuel, David  and
+      Kutuzov, Andrey  and
+      Touileb, Samia  and
+      Velldal, Erik  and
+      {\O}vrelid, Lilja  and
+      R{\o}nningstad, Egil  and
+      Sigdel, Elina  and
+      Palatkina, Anna",
+    editor = {Alum{\"a}e, Tanel  and
+      Fishel, Mark},
+    booktitle = "Proceedings of the 24th Nordic Conference on Computational Linguistics (NoDaLiDa)",
+    month = may,
+    year = "2023",
+    address = "T{\'o}rshavn, Faroe Islands",
+    publisher = "University of Tartu Library",
+    url = "https://aclanthology.org/2023.nodalida-1.61",
+    pages = "618--633",
+    abstract = "We present NorBench: a streamlined suite of NLP tasks and probes for evaluating Norwegian language models (LMs) on standardized data splits and evaluation metrics. We also introduce a range of new Norwegian language models (both encoder and encoder-decoder based). Finally, we compare and analyze their performance, along with other existing LMs, across the different benchmark tests of NorBench.",
+}
+
+@article{wang2019superglue,
+  title={Superglue: A stickier benchmark for general-purpose language understanding systems},
+  author={Wang, Alex and Pruksachatkun, Yada and Nangia, Nikita and Singh, Amanpreet and Michael, Julian and Hill, Felix and Levy, Omer and Bowman, Samuel},
+  journal={Advances in neural information processing systems},
+  volume={32},
+  year={2019}
+}
+
+@InProceedings{TIEDEMANN12.463,
+  author = {Jörg Tiedemann},
+  title = {Parallel Data, Tools and Interfaces in {OPUS}},
+  booktitle = {Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC'12)},
+  year = {2012},
+  month = {may},
+  date = {23-25},
+  address = {Istanbul, Turkey},
+  publisher = {European Language Resources Association (ELRA)},
+  isbn = {978-2-9517408-7-7},
+}
+
+@mastersthesis{navjord2023beyond,
+  title={Beyond extractive: advancing abstractive automatic text summarization in Norwegian with transformers},
+  author={Navjord, J{\o}rgen Johnsen and Korsvik, Jon-Mikkel Ryen},
+  year={2023},
+  school={Norwegian University of Life Sciences, {\AA}s}
+}
+
+@article{holm2024gllms,
+  title={Are GLLMs Danoliterate? Benchmarking Generative NLP in Danish},
+  author={Holm, S{\o}ren Vejlgaard},
+  year={2024}
+}
+
+@article{su2020digital,
+  title={Digital humanities research: interdisciplinary collaborations, themes and implications to library and information science},
+  author={Su, Fangli and Zhang, Yin and Immel, Zachary},
+  journal={Journal of Documentation},
+  volume={77},
+  number={1},
+  pages={143--161},
+  year={2020},
+  publisher={Emerald Publishing Limited}
+}

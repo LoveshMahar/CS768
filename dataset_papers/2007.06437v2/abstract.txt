@@ -1,0 +1,21 @@
+One of the challenges in online reinforcement learning (RL) is that the agent
+needs to trade off the exploration of the environment and the exploitation of
+the samples to optimize its behavior. Whether we optimize for regret, sample
+complexity, state-space coverage or model estimation, we need to strike a
+different exploration-exploitation trade-off. In this paper, we propose to
+tackle the exploration-exploitation problem following a decoupled approach
+composed of: 1) An "objective-specific" algorithm that (adaptively) prescribes
+how many samples to collect at which states, as if it has access to a
+generative model (i.e., a simulator of the environment); 2) An
+"objective-agnostic" sample collection exploration strategy responsible for
+generating the prescribed samples as fast as possible. Building on recent
+methods for exploration in the stochastic shortest path problem, we first
+provide an algorithm that, given as input the number of samples $b(s,a)$ needed
+in each state-action pair, requires $\tilde{O}(B D + D^{3/2} S^2 A)$ time steps
+to collect the $B=\sum_{s,a} b(s,a)$ desired samples, in any unknown
+communicating MDP with $S$ states, $A$ actions and diameter $D$. Then we show
+how this general-purpose exploration algorithm can be paired with
+"objective-specific" strategies that prescribe the sample requirements to
+tackle a variety of settings -- e.g., model estimation, sparse reward
+discovery, goal-free cost-free exploration in communicating MDPs -- for which
+we obtain improved or novel sample complexity guarantees.

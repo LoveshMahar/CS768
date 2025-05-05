@@ -1,0 +1,13 @@
+We study distributed computing of the truncated singular value decomposition
+problem. We develop an algorithm that we call \texttt{LocalPower} for improving
+communication efficiency. Specifically, we uniformly partition the dataset
+among $m$ nodes and alternate between multiple (precisely $p$) local power
+iterations and one global aggregation. In the aggregation, we propose to weight
+each local eigenvector matrix with orthogonal Procrustes transformation (OPT).
+As a practical surrogate of OPT, sign-fixing, which uses a diagonal matrix with
+$\pm 1$ entries as weights, has better computation complexity and stability in
+experiments. We theoretically show that under certain assumptions
+\texttt{LocalPower} lowers the required number of communications by a factor of
+$p$ to reach a constant accuracy. We also show that the strategy of
+periodically decaying $p$ helps obtain high-precision solutions. We conduct
+experiments to demonstrate the effectiveness of \texttt{LocalPower}.

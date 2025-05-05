@@ -1,0 +1,493 @@
+% Two stage HOI detectors
+% Shen et al.: FasterRCNN + cropped + pose
+@inproceedings{shen2018scaling,
+  title={Scaling human-object interaction recognition through zero-shot learning},
+  author={Shen, Liyue and Yeung, Serena and Hoffman, Judy and Mori, Greg and Fei-Fei, Li},
+  booktitle={WACV},
+  year={2018}
+}
+% HO-RCNN: Fast-RCNN + cropped + combined boxes
+@inproceedings{chao2018learning,
+  title={Learning to detect human-object interactions},
+  author={Chao, Yu-Wei and Liu, Yunfan and Liu, Xieyang and Zeng, Huayi and Deng, Jia},
+  booktitle={WACV},
+  year={2018}
+}
+% InteractNet: Faster R-CNN + FPN + cropped + combined boxes
+@inproceedings{gkioxari2018detecting,
+  title={Detecting and recognizing human-object interactions},
+  author={Gkioxari, Georgia and Girshick, Ross and Doll{\'a}r, Piotr and He, Kaiming},
+  booktitle={CVPR},
+  year={2018}
+}
+% TIN
+@inproceedings{li2018transferable,
+  title={Transferable Interactiveness Prior for Human-Object Interaction Detection},
+  author={Li, Yong-Lu and Zhou, Siyuan and Huang, Xijie and Xu, Liang and Ma, Ze and Fang, Hao-Shu and Wang, Yan-Feng and Lu, Cewu},
+  booktitle={CVPR},
+  year={2019}
+}
+% Turbo: Faster R-CNN + cropped + joint pose and HOI prediction
+@inproceedings{feng2019turbo,
+  title={Turbo Learning Framework for Human-Object Interactions Recognition and Human Pose Estimation},
+  author={Feng, Wei and Liu, Wentao and Li, Tong and Peng, Jing and Qian, Chen and Hu, Xiaolin},
+  booktitle={AAAI},
+  year={2019}
+}
+% GPNN: DCN + cropped + union box + graph
+@inproceedings{qi2018learning,
+  title={Learning human-object interactions by graph parsing neural networks},
+  author={Qi, Siyuan and Wang, Wenguan and Jia, Baoxiong and Shen, Jianbing and Zhu, Song-Chun},
+  booktitle={ECCV},
+  year={2018}
+}
+% Xu et. al: Faster R-CNN + cropped + combined boxes + word KG
+@inproceedings{Xu_2019_CVPR,
+  author = {Xu, Bingjie and Wong, Yongkang and Li, Junnan and Zhao, Qi and Kankanhalli, Mohan S.},
+  title = {Learning to Detect Human-Object Interactions With Knowledge},
+  booktitle = {CVPR},
+  year = {2019}
+}
+% iCAN: Faster R-CNN + cropped + combined boxes + instance-centric attention
+@inproceedings{gao2018ican,
+  title={ican: Instance-centric attention network for human-object interaction detection},
+  author={Gao, Chen and Zou, Yuliang and Huang, Jia-Bin},
+  booktitle={BMVC},
+  year={2018}
+}
+% Wang et. al.: Faster R-CNN + cropped + combined boxes + context-aware attention
+@inproceedings{Wang_2019_ICCV,
+  author = {Wang, Tiancai and Anwer, Rao Muhammad and Khan, Muhammad Haris and Khan, Fahad Shahbaz and Pang, Yanwei and Shao, Ling and Laaksonen, Jorma},
+  title = {Deep Contextual Attention for Human-Object Interaction Detection},
+  booktitle = {ICCV},
+  year = {2019}
+}
+% Lin et. al: Detectron + cropped + combined boxes
+@inproceedings{Lin_ijcai2020,
+  title     = {Action-Guided Attention Mining and Relation Reasoning Network for Human-Object Interaction Detection},
+  author    = {Lin, Xue and Zou, Qi and Xu, Xixia},
+  booktitle = {IJCAI},
+  year      = {2020},
+}
+% Functional: Faster-RCNN + cropped + word
+@inproceedings{Bansal2020_aaai_functional,
+  title={Detecting Human-Object Interactions via Functional Generalization},
+  author = {Bansal, Ankan and Rambhatla, Sai Saketh and Shrivastava, Abhinav and Chellappa, Rama},
+  booktitile={AAAI},
+  year={2020}
+}
+% Interactiveness: Faster R-CNN + cropped + combined boxes + pose
+@InProceedings{Li_2019_CVPR,
+  author = {Li, Yong-Lu and Zhou, Siyuan and Huang, Xijie and Xu, Liang and Ma, Ze and Fang, Hao-Shu and Wang, Yanfeng and Lu, Cewu},
+  title = {Transferable Interactiveness Knowledge for Human-Object Interaction Detection},
+  booktitle = {CVPR},
+  year = {2019}
+}
+% No-frills: Faster-RCNN + cropped + combined boxes + pose
+@InProceedings{Gupta_2019_ICCV,
+  author = {Gupta, Tanmay and Schwing, Alexander and Hoiem, Derek},
+  title = {No-Frills Human-Object Interaction Detection: Factorization, Layout Encodings, and Training Techniques},
+  booktitle = {ICCV},
+  year = {2019}
+}
+% RPNN: Detectron + cropped + human part to human & object + combined boxes
+@inproceedings{Zhou_2019_ICCV,
+  author = {Zhou, Penghao and Chi, Mingmin},
+  title = {Relation Parsing Neural Network for Human-Object Interaction Detection},
+  booktitle = {ICCV},
+  year = {2019}
+}
+% PMFNet:  Faster R-CNN + cropped + union & combined boxes + pose & human parts
+@inproceedings{Wan_2019_ICCV,
+  author = {Wan, Bo and Zhou, Desen and Liu, Yongfei and Li, Rongjie and He, Xuming},
+  title = {Pose-Aware Multi-Level Feature Network for Human Object Interaction Detection},
+  booktitle = {ICCV},
+  year = {2019}
+}
+% In-GraphNet: Faster R-CNN + cropped + graph parsing among instances
+@inproceedings{YangZ20_IJCAI_In-GraphNet,
+  author    = {Yang, Dongming and Zou, Yuexian},
+  title     = {A Graph-based Interactive Reasoning for Human-Object Interaction Detection},
+  booktitle = {IJCAI},
+  year      = {2020}
+}
+% HOID:  unseen, Faster RCNN + cropped
+@InProceedings{Wang_2020_CVPR,
+  author = {Wang, Suchen and Yap, Kim-Hui and Yuan, Junsong and Tan, Yap-Peng},
+  title = {Discovering Human Interactions With Novel Objects via Zero-Shot Learning},
+  booktitle = {CVPR},
+  year = {2020}
+}
+% MLCNet: cropped + combined boxes + word + parts (to word & object) + pose
+@inproceedings{Sun_2020_ICMR_MLCNet,
+  author = {Sun, Xu and Hu, Xinwen and Ren, Tongwei and Wu, Gangshan},
+  title = {Human Object Interaction Detection via Multi-Level Conditioned Network},
+  booktitle = {ICMR},
+  year = {2020},
+}
+% DRG: cropped + word + combined boxes + graph message parsing
+@inproceedings{Gao-ECCV-DRG,
+    author    = {Gao, Chen and Xu, Jiarui and Zou, Yuliang and Huang, Jia-Bin}, 
+    title     = {DRG: Dual Relation Graph for Human-Object Interaction Detection},
+    booktitle = {ECCV},
+    year      = {2020}
+}
+% Analogy: unseen, cropped + combined boxes + word
+@InProceedings{Peyre_2019_ICCV,
+  author = {Peyre, Julia and Laptev, Ivan and Schmid, Cordelia and Sivic, Josef},
+  title = {Detecting Unseen Visual Relations Using Analogies},
+  booktitle = {ICCV},
+  year = {2019}
+}
+% VCL: Faster-RCNN + cropped + combined boxes unseen
+@InProceedings{hou2020visual,
+  author = {Hou, Zhi and Peng, Xiaojiang and Qiao, Yu and Tao, Dacheng},
+  title = {Visual Compositional Learning for Human-Object Interaction Detection},
+  booktitle = {ECCV},
+  year = {2020}
+}
+% VSGNet: Faster-RCNN + cropped + combined boxes + graph (human-objects)
+@InProceedings{Ulutan_2020_CVPR,
+  author = {Ulutan, Oytun and Iftekhar, A S M and Manjunath, B. S.},
+  title = {VSGNet: Spatial Attention Network for Detecting Human Object Interactions Using Graph Convolutions},
+  booktitle = {CVPR},
+  year = {2020}
+}
+% FCMNet: cropped + motion flow + word + mask seg + global & local context
+@InProceedings{Liu20a,
+  author       = {Liu, Yang and Chen, Qingchao and Zisserman, Andrew},
+  title        = {Amplifying Key Cues for Human-Object-Interaction Detection},
+  booktitle    = {ECCV},
+  year         = {2020}
+}
+% ACP: cropped + pose + word + regular actions as anchors 
+@InProceedings{kim2020detecting,
+  author={Kim, Dong-Jin and Sun, Xiao and Choi, Jinsoo and Lin, Stephen and Kweon, In So},
+  title = {Detecting Human-Object Interactions with Action Co-occurrence Priors},
+  booktitle = {ECCV},
+  year = {2020}
+}
+% PDNet: cropped + combined boxes + word + pose
+@inproceedings{zhong2020polysemy,
+  title={Polysemy deciphering network for human-object interaction detection},
+  author={Zhong, Xubin and Ding, Changxing and Qu, Xian and Tao, Dacheng},
+  booktitle={ECCV},
+  year={2020}
+}
+% DJ-RN: cropped + combined boxes + 3D spatial & seg + pose + word + part
+@inproceedings{li2020detailed,
+  title={Detailed 2D-3D Joint Representation for Human-Object Interaction},
+  author={Li, Yong-Lu and Liu, Xinpeng and Lu, Han and Wang, Shiyi and Liu, Junqi and Li, Jiefeng and Lu, Cewu},
+  booktitle={CVPR},
+  year={2020}
+}
+% ConsNet: cropped + combined boxes + word + graph + unseen
+@inproceedings{Liu_2020,
+   title={ConsNet: Learning Consistency Graph for Zero-Shot Human-Object Interaction Detection},
+   author={Liu, Ye and Yuan, Junsong and Chen, Chang Wen},
+   booktitle={ACMMM},
+   year={2020},
+}
+% IP-Net: 
+@inproceedings{wang2020learning,
+  title={Learning Human-Object Interaction Detection using Interaction Points},
+  author={Wang, Tiancai and Yang, Tong and Danelljan, Martin and Khan, Fahad Shahbaz and Zhang, Xiangyu and Sun, Jian},
+  booktitle={CVPR},
+  year={2020}
+}
+% C-HOI Cascaded Mask-RCNN
+@inproceedings{zhou2020cascaded,
+  title={Cascaded human-object interaction recognition},
+  author={Zhou, Tianfei and Wang, Wenguan and Qi, Siyuan and Ling, Haibin and Shen, Jianbing},
+  booktitle={CVPR},
+  year={2020}
+}
+% Pic Leaderboard
+@Misc{picleadboard,
+    title = {PIC leaderboard},
+    howpublished = {\url{http://www.picdataset.com/challenge/leaderboard/hoi2019}},
+    year = {2019}
+}
+% one-stage HOI detectors
+% UniDet: union branch(cls, action, reg) + instance branch(action, cls, reg)
+@inproceedings{Kim2020_unidet,
+  title={UnionDet: Union-Level Detector Towards Real-Time Human-Object Interaction Detection},
+  author={Kim, Bumsoo and Choi, Taeho and Kang, Jaewoo and Kim, Hyunwoo J.},
+  booktitle={ECCV},
+  year={2020}
+}
+% PPDM: det(midpoint, size, offset) + match (interaction midpoint, offset)
+@inproceedings{liao2020ppdm,
+  title={Ppdm: Parallel point detection and matching for real-time human-object interaction detection},
+  author={Liao, Yue and Liu, Si and Wang, Fei and Chen, Yanjie and Qian, Chen and Feng, Jiashi},
+  booktitle={CVPR},
+  year={2020}
+}
+
+% detection
+@inproceedings{girshick2015fast,
+  title={Fast r-cnn},
+  author={Girshick, Ross},
+  booktitle={CVPR},
+  year={2015}
+}
+@inproceedings{lin2017feature,
+  title={Feature pyramid networks for object detection},
+  author={Lin, Tsung-Yi and Doll{\'a}r, Piotr and Girshick, Ross and He, Kaiming and Hariharan, Bharath and Belongie, Serge},
+  booktitle={CVPR},
+  year={2017}
+}
+
+% faster r-cnn
+@inproceedings{ren2015faster,
+  title={Faster r-cnn: Towards real-time object detection with region proposal networks},
+  author={Ren, Shaoqing and He, Kaiming and Girshick, Ross and Sun, Jian},
+  booktitle={NIPS},
+  year={2015}
+}
+@inproceedings{newell2016stacked,
+  title={Stacked hourglass networks for human pose estimation},
+  author={Newell, Alejandro and Yang, Kaiyu and Deng, Jia},
+  booktitle={ECCV},
+  year={2016}
+}
+@InProceedings{Yu_2018_CVPR,
+  author = {Yu, Fisher and Wang, Dequan and Shelhamer, Evan and Darrell, Trevor},
+  title = {Deep Layer Aggregation},
+  booktitle = {CVPR},
+  year = {2018}
+}
+% detr
+@inproceedings{carion2020endtoend,
+    title={End-to-End Object Detection with Transformers}, 
+    author={Nicolas Carion and Francisco Massa and Gabriel Synnaeve and Nicolas Usunier and Alexander Kirillov and Sergey Zagoruyko},
+    booktitle={ECCV},
+    year={2020}
+}
+% hungarian
+@inproceedings{hungarian,
+  author = {Kuhn, H. W.},
+  title = {The Hungarian method for the assignment problem},
+  booktitle = {Naval Research Logistics Quarterly},
+  year = {1955}
+}
+% resnet
+@inproceedings{he2016deep,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={CVPR},
+  year={2016}
+}
+@InProceedings{pmlr-v80-parmar18a, 
+  title = {Image Transformer}, 
+  author = {Parmar, Niki and Vaswani, Ashish and Uszkoreit, Jakob and Kaiser, Lukasz and Shazeer, Noam and Ku, Alexander and Tran, Dustin},
+  booktitle={PMLR},
+  year = {2018}
+}
+@inproceedings{vaswani2017attention,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  booktitle={NIPS},
+  year={2017}
+}
+% train
+% AdamW
+@inproceedings{loshchilov2018decoupled,
+  title={Decoupled Weight Decay Regularization},
+  author={Loshchilov, Ilya and Hutter, Frank},
+  booktitle={ICLR},
+  year={2018}
+}
+% Focal Loss
+@inproceedings{lin2017focal,
+  title={Focal loss for dense object detection},
+  author={Lin, Tsung-Yi and Goyal, Priya and Girshick, Ross and He, Kaiming and Doll{\'a}r, Piotr},
+  booktitle={ICCV},
+  year={2017}
+}
+% dataset
+% VCOCO
+@article{gupta2015visual,
+  title={Visual semantic role labeling},
+  author={Gupta, Saurabh and Malik, Jitendra},
+  journal={arXiv preprint arXiv:1505.04474},
+  year={2015}
+}
+% MS-COCO
+@inproceedings{lin2014microsoft,
+  title={Microsoft coco: Common objects in context},
+  author={Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{\'a}r, Piotr and Zitnick, C Lawrence},
+  booktitle={ECCV},
+  year={2014},
+}
+% GIoU
+@inproceedings{rezatofighi2019generalized,
+  title={Generalized intersection over union: A metric and a loss for bounding box regression},
+  author={Rezatofighi, Hamid and Tsoi, Nathan and Gwak, JunYoung and Sadeghian, Amir and Reid, Ian and Savarese, Silvio},
+  booktitle={CVPR},
+  year={2019}
+}
+
+@InProceedings{Dong_2020_CVPR,
+author = {Dong, Zhiwei and Li, Guoxuan and Liao, Yue and Wang, Fei and Ren, Pengju and Qian, Chen},
+title = {CentripetalNet: Pursuing High-Quality Keypoint Pairs for Object Detection},
+booktitle = {CVPR},
+year = {2020}
+}
+
+@article{ren2020scene,
+  title={Scene graph generation with hierarchical context},
+  author={Ren, Guanghui and Ren, Lejian and Liao, Yue and Liu, Si and Li, Bo and Han, Jizhong and Yan, Shuicheng},
+  journal={TNNLS},
+  year={2020}
+}
+
+@InProceedings{Liao_2020_CVPR,
+author = {Liao, Yue and Liu, Si and Li, Guanbin and Wang, Fei and Chen, Yanjie and Qian, Chen and Li, Bo},
+title = {A Real-Time Cross-Modality Correlation Filtering Method for Referring Expression Comprehension},
+booktitle = {CVPR},
+year = {2020}
+}
+
+@inproceedings{yu2020cross,
+  title={Cross-Modal Omni Interaction Modeling for Phrase Grounding},
+  author={Yu, Tianyu and Hui, Tianrui and Yu, Zhihao and Liao, Yue and Yu, Sansi and Zhang, Faxi and Liu, Si},
+  booktitle={ACM MM},
+  year={2020}
+}
+
+@InProceedings{Huang_2020_CVPR,
+author = {Huang, Shaofei and Hui, Tianrui and Liu, Si and Li, Guanbin and Wei, Yunchao and Han, Jizhong and Liu, Luoqi and Li, Bo},
+title = {Referring Image Segmentation via Cross-Modal Progressive Comprehension},
+booktitle = {CVPR},
+year = {2020}
+}
+
+@inproceedings{hui2020linguistic,
+  title={Linguistic Structure Guided Context Modeling for Referring Image Segmentation},
+  author={Hui, Tianrui and Liu, Si and Huang, Shaofei and Li, Guanbin and Yu, Sansi and Zhang, Faxi and Han, Jizhong},
+  booktitle={ECCV},
+  year={2020}
+}
+
+@inproceedings{gao2020interactgan,
+  title={InteractGAN: Learning to Generate Human-Object Interaction},
+  author={Gao, Chen and Liu, Si and Zhu, Defa and Liu, Quan and Cao, Jie and He, Haoqian and He, Ran and Yan, Shuicheng},
+  booktitle={ACM MM},
+  year={2020}
+}
+
+@InProceedings{Jiang_2020_CVPR,
+author = {Jiang, Wentao and Liu, Si and Gao, Chen and Cao, Jie and He, Ran and Feng, Jiashi and Yan, Shuicheng},
+title = {PSGAN: Pose and Expression Robust Spatial-Aware GAN for Customizable Makeup Transfer},
+booktitle = {CVPR},
+year = {2020}
+}
+
+@inproceedings{gao2020adversarialnas,
+  title={Adversarialnas: Adversarial neural architecture search for gans},
+  author={Gao, Chen and Chen, Yunpeng and Liu, Si and Tan, Zhenxiong and Yan, Shuicheng},
+  booktitle={CVPR},
+  year={2020}
+}
+
+
+@inproceedings{zou2021_hoitrans,
+  author = {Zou, Cheng and Wang, Bohan and Hu, Yue and Liu, Junqi and Wu, Qian and Zhao, Yu and Li, Boxun and Zhang, Chenguang and Zhang, Chi and Wei, Yichen and Sun, Jian},
+  title = {End-to-End Human Object Interaction Detection with HOI Transformer},
+  booktitle={CVPR},
+  year = {2021},
+}
+
+% AS-Net
+@inproceedings{chen_2021_asnet,
+  author = {Chen, Mingfei and Liao, Yue and Liu, Si and Chen, Zhiyuan and Wang, Fei and Qian, Chen},
+  title = {Reformulating HOI Detection as Adaptive Set Prediction},
+  booktitle={CVPR},
+  year = {2021},
+}
+
+% DJ-RN
+@article{li2020hoi,
+  title={HOI Analysis: Integrating and Decomposing Human-Object Interaction},
+  author={Li, Yong-Lu and Liu, Xinpeng and Wu, Xiaoqian and Li, Yizhuo and Lu, Cewu},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  year={2020}
+}
+
+% PD-Net
+@article{zhong2021polysemy,
+  title={Polysemy Deciphering Network for Robust Human--Object Interaction Detection},
+  author={Zhong, Xubin and Ding, Changxing and Qu, Xian and Tao, Dacheng},
+  journal={IJCV},
+  year={2021}
+}
+
+% Mask-rcnn
+@inproceedings{he2017mask,
+  title={Mask r-cnn},
+  author={He, Kaiming and Gkioxari, Georgia and Doll{\'a}r, Piotr and Girshick, Ross},
+  booktitle={ICCV},
+  pages={2961--2969},
+  year={2017}
+}
+
+@inproceedings{wang2020contextual,
+  title={Contextual heterogeneous graph network for human-object interaction detection},
+  author={Wang, Hai and Zheng, Wei-shi and Yingbiao, Ling},
+  booktitle={ECCV},
+  year={2020}
+}
+
+@inproceedings{fang2020dirv,
+  title={DIRV: Dense Interaction Region Voting for End-to-End Human-Object Interaction Detection},
+  author={Fang, Hao-Shu and Xie, Yichen and Shao, Dian and Lu, Cewu},
+  booktitle={AAAI},
+  year={2021}
+}
+
+%  CornerNet
+@inproceedings{law2018cornernet,
+  title={Cornernet: Detecting objects as paired keypoints},
+  author={Law, Hei and Deng, Jia},
+  booktitle={ECCV},
+  year={2018}
+}
+
+% decoupling
+@inproceedings{kang2019decoupling,
+  title={Decoupling representation and classifier for long-tailed recognition},
+  author={Kang, Bingyi and Xie, Saining and Rohrbach, Marcus and Yan, Zhicheng and Gordo, Albert and Feng, Jiashi and Kalantidis, Yannis},
+  booktitle={ICLR},
+  year={2020}
+}
+
+%  QPIC
+@inproceedings{tamura2021qpic,
+  title={QPIC: Query-Based Pairwise Human-Object Interaction Detection with Image-Wide Contextual Information},
+  author={Tamura, Masato and Ohashi, Hiroki and Yoshinaga, Tomoaki},
+  booktitle={CVPR},
+  year={2021}
+}
+
+@inproceedings{zhong2021glance,
+  title={Glance and Gaze: Inferring Action-aware Points for One-Stage Human-Object Interaction Detection},
+  author={Zhong, Xubin and Qu, Xian and Ding, Changxing and Tao, Dacheng},
+  booktitle={CVPR},
+  year={2021}
+}
+
+@inproceedings{hou2021atl,
+  title={Affordance Transfer Learning for Human-Object Interaction Detection},
+  author={Hou, Zhi and Baosheng, Yu and Qiao, Yu and Peng, Xiaojiang and Tao, Dacheng},
+  booktitle={CVPR},
+  year={2021}
+}
+
+@InProceedings{Kim_2021_CVPR,
+    author    = {Kim, Bumsoo and Lee, Junhyun and Kang, Jaewoo and Kim, Eun-Sol and Kim, Hyunwoo J.},
+    title     = {HOTR: End-to-End Human-Object Interaction Detection With Transformers},
+    booktitle = {CVPR},
+    year      = {2021},
+}

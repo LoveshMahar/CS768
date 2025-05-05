@@ -1,0 +1,881 @@
+
+@ARTICLE{Zhang2016-mh,
+  title         = "Understanding deep learning requires rethinking
+                   generalization",
+  author        = "Zhang, Chiyuan and Bengio, Samy and Hardt, Moritz and Recht,
+                   Benjamin and Vinyals, Oriol",
+  abstract      = "Despite their massive size, successful deep artificial
+                   neural networks can exhibit a remarkably small difference
+                   between training and test performance. Conventional wisdom
+                   attributes small generalization error either to properties
+                   of the model family, or to the regularization techniques
+                   used during training. Through extensive systematic
+                   experiments, we show how these traditional approaches fail
+                   to explain why large neural networks generalize well in
+                   practice. Specifically, our experiments establish that
+                   state-of-the-art convolutional networks for image
+                   classification trained with stochastic gradient methods
+                   easily fit a random labeling of the training data. This
+                   phenomenon is qualitatively unaffected by explicit
+                   regularization, and occurs even if we replace the true
+                   images by completely unstructured random noise. We
+                   corroborate these experimental findings with a theoretical
+                   construction showing that simple depth two neural networks
+                   already have perfect finite sample expressivity as soon as
+                   the number of parameters exceeds the number of data points
+                   as it usually does in practice. We interpret our
+                   experimental findings by comparison with traditional models.",
+  month         =  nov,
+  year          =  2016,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "1611.03530"
+}
+
+@INPROCEEDINGS{Borgnia2021-vk,
+  title     = "Strong Data Augmentation Sanitizes Poisoning and Backdoor
+               Attacks Without an Accuracy Tradeoff",
+  booktitle = "{ICASSP} 2021 - 2021 {IEEE} International Conference on
+               Acoustics, Speech and Signal Processing ({ICASSP})",
+  author    = "Borgnia, Eitan and Cherepanova, Valeriia and Fowl, Liam and
+               Ghiasi, Amin and Geiping, Jonas and Goldblum, Micah and
+               Goldstein, Tom and Gupta, Arjun",
+  abstract  = "Data poisoning and backdoor attacks manipulate victim models by
+               maliciously modifying training data. In light of this growing
+               threat, a recent survey of industry professionals revealed
+               heightened fear in the private sector regarding data poisoning.
+               Many previous defenses against poisoning either fail in the face
+               of increasingly strong attacks, or they significantly degrade
+               performance. However, we find that strong data augmentations,
+               such as mixup and CutMix, can significantly diminish the threat
+               of poisoning and backdoor attacks without trading off
+               performance. We further verify the effectiveness of this simple
+               defense against adaptive poisoning methods, and we compare to
+               baselines including the popular differentially private SGD
+               (DP-SGD) defense. In the context of backdoors, CutMix greatly
+               mitigates the attack while simultaneously increasing validation
+               accuracy by 9\%.",
+  pages     = "3855--3859",
+  month     =  jun,
+  year      =  2021,
+  keywords  = "Industries;Toxicology;Conferences;Training data;Machine
+               learning;Signal processing;Data models;Data Poisoning;Backdoor
+               Attacks;Adversarial Attacks;Differential Privacy;Data
+               Augmentation"
+}
+
+@ARTICLE{Feldman2020-ex,
+  title         = "What Neural Networks Memorize and Why: Discovering the Long
+                   Tail via Influence Estimation",
+  author        = "Feldman, Vitaly and Zhang, Chiyuan",
+  abstract      = "Deep learning algorithms are well-known to have a propensity
+                   for fitting the training data very well and often fit even
+                   outliers and mislabeled data points. Such fitting requires
+                   memorization of training data labels, a phenomenon that has
+                   attracted significant research interest but has not been
+                   given a compelling explanation so far. A recent work of
+                   Feldman (2019) proposes a theoretical explanation for this
+                   phenomenon based on a combination of two insights. First,
+                   natural image and data distributions are (informally) known
+                   to be long-tailed, that is have a significant fraction of
+                   rare and atypical examples. Second, in a simple theoretical
+                   model such memorization is necessary for achieving
+                   close-to-optimal generalization error when the data
+                   distribution is long-tailed. However, no direct empirical
+                   evidence for this explanation or even an approach for
+                   obtaining such evidence were given. In this work we design
+                   experiments to test the key ideas in this theory. The
+                   experiments require estimation of the influence of each
+                   training example on the accuracy at each test example as
+                   well as memorization values of training examples. Estimating
+                   these quantities directly is computationally prohibitive but
+                   we show that closely-related subsampled influence and
+                   memorization values can be estimated much more efficiently.
+                   Our experiments demonstrate the significant benefits of
+                   memorization for generalization on several standard
+                   benchmarks. They also provide quantitative and visually
+                   compelling evidence for the theory put forth in (Feldman,
+                   2019).",
+  month         =  aug,
+  year          =  2020,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2008.03703"
+}
+
+@INPROCEEDINGS{Arpit2017-yz,
+  title     = "A Closer Look at Memorization in Deep Networks",
+  booktitle = "Proceedings of the 34th International Conference on Machine
+               Learning",
+  author    = "Arpit, Devansh and Jastrz{\k e}bski, Stanis{\l}aw and Ballas,
+               Nicolas and Krueger, David and Bengio, Emmanuel and Kanwal,
+               Maxinder S and Maharaj, Tegan and Fischer, Asja and Courville,
+               Aaron and Bengio, Yoshua and Lacoste-Julien, Simon",
+  editor    = "Precup, Doina and Teh, Yee Whye",
+  abstract  = "We examine the role of memorization in deep learning, drawing
+               connections to capacity, generalization, and adversarial
+               robustness. While deep networks are capable of memorizing noise
+               data, our results suggest that they tend to prioritize learning
+               simple patterns first. In our experiments, we expose qualitative
+               differences in gradient-based optimization of deep neural
+               networks (DNNs) on noise vs. real data. We also demonstrate that
+               for appropriately tuned explicit regularization (e.g., dropout)
+               we can degrade DNN training performance on noise datasets
+               without compromising generalization on real data. Our analysis
+               suggests that the notions of effective capacity which are
+               dataset independent are unlikely to explain the generalization
+               performance of deep networks when trained with gradient based
+               methods because training data itself plays an important role in
+               determining the degree of memorization.",
+  publisher = "PMLR",
+  volume    =  70,
+  pages     = "233--242",
+  series    = "Proceedings of Machine Learning Research",
+  year      =  2017
+}
+
+@ARTICLE{Gu2017-rj,
+  title         = "{BadNets}: Identifying Vulnerabilities in the Machine
+                   Learning Model Supply Chain",
+  author        = "Gu, Tianyu and Dolan-Gavitt, Brendan and Garg, Siddharth",
+  abstract      = "Deep learning-based techniques have achieved
+                   state-of-the-art performance on a wide variety of
+                   recognition and classification tasks. However, these
+                   networks are typically computationally expensive to train,
+                   requiring weeks of computation on many GPUs; as a result,
+                   many users outsource the training procedure to the cloud or
+                   rely on pre-trained models that are then fine-tuned for a
+                   specific task. In this paper we show that outsourced
+                   training introduces new security risks: an adversary can
+                   create a maliciously trained network (a backdoored neural
+                   network, or a \textbackslashemph\{BadNet\}) that has
+                   state-of-the-art performance on the user's training and
+                   validation samples, but behaves badly on specific
+                   attacker-chosen inputs. We first explore the properties of
+                   BadNets in a toy example, by creating a backdoored
+                   handwritten digit classifier. Next, we demonstrate backdoors
+                   in a more realistic scenario by creating a U.S. street sign
+                   classifier that identifies stop signs as speed limits when a
+                   special sticker is added to the stop sign; we then show in
+                   addition that the backdoor in our US street sign detector
+                   can persist even if the network is later retrained for
+                   another task and cause a drop in accuracy of \{25\}\% on
+                   average when the backdoor trigger is present. These results
+                   demonstrate that backdoors in neural networks are both
+                   powerful and---because the behavior of neural networks is
+                   difficult to explicate---stealthy. This work provides
+                   motivation for further research into techniques for
+                   verifying and inspecting neural networks, just as we have
+                   developed tools for verifying and debugging software.",
+  month         =  aug,
+  year          =  2017,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CR",
+  eprint        = "1708.06733"
+}
+
+
+@ARTICLE{Daniely2012-pw,
+  title         = "Multiclass Learning Approaches: A Theoretical Comparison
+                   with Implications",
+  author        = "Daniely, Amit and Sabato, Sivan and Shwartz, Shai Shalev",
+  abstract      = "We theoretically analyze and compare the following five
+                   popular multiclass classification methods: One vs. All, All
+                   Pairs, Tree-based classifiers, Error Correcting Output Codes
+                   (ECOC) with randomly generated code matrices, and Multiclass
+                   SVM. In the first four methods, the classification is based
+                   on a reduction to binary classification. We consider the
+                   case where the binary classifier comes from a class of VC
+                   dimension $d$, and in particular from the class of
+                   halfspaces over $\reals^d$. We analyze both the estimation
+                   error and the approximation error of these methods. Our
+                   analysis reveals interesting conclusions of practical
+                   relevance, regarding the success of the different approaches
+                   under various conditions. Our proof technique employs tools
+                   from VC theory to analyze the
+                   \textbackslashemph\{approximation error\} of hypothesis
+                   classes. This is in sharp contrast to most, if not all,
+                   previous uses of VC theory, which only deal with estimation
+                   error.",
+  month         =  may,
+  year          =  2012,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "1205.6432"
+}
+
+
+@article{lecun-mnisthandwrittendigit-2010,
+  added-at = {2010-06-28T21:16:30.000+0200},
+  author = {LeCun, Yann and Cortes, Corinna},
+  biburl = {https://www.bibsonomy.org/bibtex/2935bad99fa1f65e03c25b315aa3c1032/mhwombat},
+  groups = {public},
+  howpublished = {http://yann.lecun.com/exdb/mnist/},
+  interhash = {21b9d0558bd66279df9452562df6e6f3},
+  intrahash = {935bad99fa1f65e03c25b315aa3c1032},
+  keywords = {MSc _checked character_recognition mnist network neural},
+  lastchecked = {2016-01-14 14:24:11},
+  timestamp = {2016-07-12T19:25:30.000+0200},
+  title = {{MNIST} handwritten digit database},
+  url = {http://yann.lecun.com/exdb/mnist/},
+  username = {mhwombat},
+  year = 2010
+}
+
+@INPROCEEDINGS{Ribeiro2016-ig,
+  title     = "``Why Should {I} Trust You?'': Explaining the Predictions of Any
+               Classifier",
+  booktitle = "Proceedings of the 22nd {ACM} {SIGKDD} International Conference
+               on Knowledge Discovery and Data Mining",
+  author    = "Ribeiro, Marco Tulio and Singh, Sameer and Guestrin, Carlos",
+  abstract  = "Despite widespread adoption, machine learning models remain
+               mostly black boxes. Understanding the reasons behind predictions
+               is, however, quite important in assessing trust, which is
+               fundamental if one plans to take action based on a prediction,
+               or when choosing whether to deploy a new model. Such
+               understanding also provides insights into the model, which can
+               be used to transform an untrustworthy model or prediction into a
+               trustworthy one.In this work, we propose LIME, a novel
+               explanation technique that explains the predictions of any
+               classifier in an interpretable and faithful manner, by learning
+               an interpretable model locally varound the prediction. We also
+               propose a method to explain models by presenting representative
+               individual predictions and their explanations in a non-redundant
+               way, framing the task as a submodular optimization problem. We
+               demonstrate the flexibility of these methods by explaining
+               different models for text (e.g. random forests) and image
+               classification (e.g. neural networks). We show the utility of
+               explanations via novel experiments, both simulated and with
+               human subjects, on various scenarios that require trust:
+               deciding if one should trust a prediction, choosing between
+               models, improving an untrustworthy classifier, and identifying
+               why a classifier should not be trusted.",
+  publisher = "Association for Computing Machinery",
+  pages     = "1135--1144",
+  series    = "KDD '16",
+  month     =  aug,
+  year      =  2016,
+  address   = "New York, NY, USA",
+  keywords  = "explaining machine learning, interpretability, black box
+               classifier, interpretable machine learning",
+  location  = "San Francisco, California, USA"
+}
+
+@inproceedings{
+Xiao2020-ju,
+title={Noise or Signal: The Role of Image Backgrounds in Object Recognition},
+author={Kai Yuanqing Xiao and Logan Engstrom and Andrew Ilyas and Aleksander Madry},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=gl3D-xY7wLq}
+}
+
+@INPROCEEDINGS{Ilyas2019-ot,
+  title     = "Adversarial Examples Are Not Bugs, They Are Features",
+  booktitle = "Advances in Neural Information Processing Systems",
+  author    = "Ilyas, Andrew and Santurkar, Shibani and Tsipras, Dimitris and
+               Engstrom, Logan and Tran, Brandon and Madry, Aleksander",
+  editor    = "Wallach, H and Larochelle, H and Beygelzimer, A and
+               d' Alch{\'e}-Buc, F and Fox, E and
+               Garnett, R",
+  publisher = "Curran Associates, Inc.",
+  volume    =  32,
+  year      =  2019
+}
+
+
+@BOOK{Boyd2004-ey,
+  title     = "Convex Optimization",
+  author    = "Boyd, Stephen and Vandenberghe, Lieven",
+  abstract  = "Convex optimization problems arise frequently in many different
+               fields. This book provides a comprehensive introduction to the
+               subject, and shows in detail how such problems can be solved
+               numerically with great efficiency. The book begins with the
+               basic elements of convex sets and functions, and then describes
+               various classes of convex optimization problems. Duality and
+               approximation techniques are then covered, as are statistical
+               estimation techniques. Various geometrical problems are then
+               presented, and there is detailed discussion of unconstrained and
+               constrained minimization problems, and interior-point methods.
+               The focus of the book is on recognizing convex optimization
+               problems and then finding the most appropriate technique for
+               solving them. It contains many worked examples and homework
+               exercises and will appeal to students, researchers and
+               practitioners in fields such as engineering, computer science,
+               mathematics, statistics, finance and economics.",
+  publisher = "Cambridge University Press",
+  month     =  mar,
+  year      =  2004
+}
+
+
+@INPROCEEDINGS{Cullina2018-os,
+  title     = "{PAC-learning} in the presence of adversaries",
+  booktitle = "Advances in Neural Information Processing Systems",
+  author    = "Cullina, Daniel and Bhagoji, Arjun Nitin and Mittal, Prateek",
+  editor    = "Bengio, S and Wallach, H and Larochelle, H and Grauman, K and
+               Cesa-Bianchi, N and Garnett, R",
+  publisher = "Curran Associates, Inc.",
+  volume    =  31,
+  year      =  2018
+}
+
+
+@INPROCEEDINGS{Neyshabur2017-mk,
+  title     = "Exploring Generalization in Deep Learning",
+  booktitle = "Advances in Neural Information Processing Systems",
+  author    = "Neyshabur, Behnam and Bhojanapalli, Srinadh and Mcallester,
+               David and Srebro, Nati",
+  editor    = "Guyon, I and Luxburg, U V and Bengio, S and Wallach, H and
+               Fergus, R and Vishwanathan, S and Garnett, R",
+  publisher = "Curran Associates, Inc.",
+  volume    =  30,
+  year      =  2017
+}
+
+
+@INPROCEEDINGS{Montasser2020-ir,
+  title     = "Efficiently Learning Adversarially Robust Halfspaces with Noise",
+  booktitle = "Proceedings of the 37th International Conference on Machine
+               Learning",
+  author    = "Montasser, Omar and Goel, Surbhi and Diakonikolas, Ilias and
+               Srebro, Nathan",
+  editor    = "Iii, Hal Daum{\'e} and Singh, Aarti",
+  abstract  = "We study the problem of learning adversarially robust halfspaces
+               in the distribution-independent setting. In the realizable
+               setting, we provide necessary and sufficient conditions on the
+               adversarial perturbation sets under which halfspaces are
+               efficiently robustly learnable. In the presence of random label
+               noise, we give a simple computationally efficient algorithm for
+               this problem with respect to any $\ell_p$-perturbation.",
+  publisher = "PMLR",
+  volume    =  119,
+  pages     = "7010--7021",
+  series    = "Proceedings of Machine Learning Research",
+  year      =  2020
+}
+
+
+@misc{Turner2019-jc,
+  title         = "{Label-Consistent} Backdoor Attacks",
+  author        = "Turner, Alexander and Tsipras, Dimitris and Madry,
+                   Aleksander",
+  abstract      = "Deep neural networks have been demonstrated to be vulnerable
+                   to backdoor attacks. Specifically, by injecting a small
+                   number of maliciously constructed inputs into the training
+                   set, an adversary is able to plant a backdoor into the
+                   trained model. This backdoor can then be activated during
+                   inference by a backdoor trigger to fully control the model's
+                   behavior. While such attacks are very effective, they
+                   crucially rely on the adversary injecting arbitrary inputs
+                   that are---often blatantly---mislabeled. Such samples would
+                   raise suspicion upon human inspection, potentially revealing
+                   the attack. Thus, for backdoor attacks to remain undetected,
+                   it is crucial that they maintain label-consistency---the
+                   condition that injected inputs are consistent with their
+                   labels. In this work, we leverage adversarial perturbations
+                   and generative models to execute efficient, yet
+                   label-consistent, backdoor attacks. Our approach is based on
+                   injecting inputs that appear plausible, yet are hard to
+                   classify, hence causing the model to rely on the
+                   (easier-to-learn) backdoor trigger.",
+  month         =  dec,
+  year          =  2019,
+  archivePrefix = "arXiv",
+  primaryClass  = "stat.ML",
+  eprint        = "1912.02771"
+}
+
+
+@ARTICLE{Gu2019-ip,
+  title    = "{BadNets}: Evaluating Backdooring Attacks on Deep Neural Networks",
+  author   = "Gu, Tianyu and Liu, Kang and Dolan-Gavitt, Brendan and Garg,
+              Siddharth",
+  abstract = "Deep learning-based techniques have achieved state-of-the-art
+              performance on a wide variety of recognition and classification
+              tasks. However, these networks are typically computationally
+              expensive to train, requiring weeks of computation on many GPUs;
+              as a result, many users outsource the training procedure to the
+              cloud or rely on pre-trained models that are then fine-tuned for
+              a specific task. In this paper, we show that the outsourced
+              training introduces new security risks: an adversary can create a
+              maliciously trained network (a backdoored neural network, or a
+              BadNet) that has the state-of-the-art performance on the user's
+              training and validation samples but behaves badly on specific
+              attacker-chosen inputs. We first explore the properties of
+              BadNets in a toy example, by creating a backdoored handwritten
+              digit classifier. Next, we demonstrate backdoors in a more
+              realistic scenario by creating a U.S. street sign classifier that
+              identifies stop signs as speed limits when a special sticker is
+              added to the stop sign; we then show in addition that the
+              backdoor in our U.S. street sign detector can persist even if the
+              network is later retrained for another task and cause a drop in
+              an accuracy of 25\% on average when the backdoor trigger is
+              present. These results demonstrate that backdoors in neural
+              networks are both powerful and-because the behavior of neural
+              networks is difficult to explicate-stealthy. This paper provides
+              motivation for further research into techniques for verifying and
+              inspecting neural networks, just as we have developed tools for
+              verifying and debugging software.",
+  journal  = "IEEE Access",
+  volume   =  7,
+  pages    = "47230--47244",
+  year     =  2019,
+  keywords = "Training;Machine learning;Perturbation methods;Computational
+              modeling;Biological neural networks;Security;Computer
+              security;machine learning;neural networks"
+}
+
+
+@misc{Li2020-my,
+  title         = "Backdoor Learning: A Survey",
+  author        = "Li, Yiming and Wu, Baoyuan and Jiang, Yong and Li, Zhifeng
+                   and Xia, Shu-Tao",
+  abstract      = "Backdoor attack intends to embed hidden backdoor into deep
+                   neural networks (DNNs), such that the attacked model
+                   performs well on benign samples, whereas its prediction will
+                   be maliciously changed if the hidden backdoor is activated
+                   by the attacker-defined trigger. This threat could happen
+                   when the training process is not fully controlled, such as
+                   training on third-party datasets or adopting third-party
+                   models, which poses a new and realistic threat. Although
+                   backdoor learning is an emerging and rapidly growing
+                   research area, its systematic review, however, remains
+                   blank. In this paper, we present the first comprehensive
+                   survey of this realm. We summarize and categorize existing
+                   backdoor attacks and defenses based on their
+                   characteristics, and provide a unified framework for
+                   analyzing poisoning-based backdoor attacks. Besides, we also
+                   analyze the relation between backdoor attacks and relevant
+                   fields ($i.e.,$ adversarial attacks and data poisoning), and
+                   summarize widely adopted benchmark datasets. Finally, we
+                   briefly outline certain future research directions relying
+                   upon reviewed works. A curated list of backdoor-related
+                   resources is also available at
+                   \textbackslashurl\{https://github.com/THUYimingLi/backdoor-learning-resources\}.",
+  month         =  jul,
+  year          =  2020,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CR",
+  eprint        = "2007.08745"
+}
+
+
+% The entry below contains non-ASCII chars that could not be converted
+% to a LaTeX equivalent.
+@inproceedings{Shan2020-dr,
+  title     = "Fawkes: Protecting privacy against unauthorized deep learning
+               models",
+  author    = "Shan, S and Wenger, E and Zhang, J and Li, H and Zheng, H and
+               {others}",
+  abstract  = "Today's proliferation of powerful facial recognition systems
+               poses a real threat to personal privacy. As Clearview. ai
+               demonstrated, anyone can canvas the Internet for data and train
+               highly accurate facial recognition models of individuals without
+               their knowledge. We need …",
+  booktitle = "Proceedings of the {Twenty-Ninth} USENIX Security Symposium",
+  journal   = "29th \{USENIX\} Security",
+  publisher = "usenix.org",
+  year      =  2020
+}
+
+@misc{Koh2018-bz,
+  title         = "Stronger Data Poisoning Attacks Break Data Sanitization
+                   Defenses",
+  author        = "Koh, Pang Wei and Steinhardt, Jacob and Liang, Percy",
+  abstract      = "Machine learning models trained on data from the outside
+                   world can be corrupted by data poisoning attacks that inject
+                   malicious points into the models' training sets. A common
+                   defense against these attacks is data sanitization: first
+                   filter out anomalous training points before training the
+                   model. Can data poisoning attacks break data sanitization
+                   defenses? In this paper, we develop three new attacks that
+                   can all bypass a broad range of data sanitization defenses,
+                   including commonly-used anomaly detectors based on nearest
+                   neighbors, training loss, and singular-value decomposition.
+                   For example, our attacks successfully increase the test
+                   error on the Enron spam detection dataset from 3\% to 24\%
+                   and on the IMDB sentiment classification dataset from 12\%
+                   to 29\% by adding just 3\% poisoned data. In contrast, many
+                   existing attacks from the literature do not explicitly
+                   consider defenses, and we show that those attacks are
+                   ineffective in the presence of the defenses we consider. Our
+                   attacks are based on two ideas: (i) we coordinate our
+                   attacks to place poisoned points near one another, which
+                   fools some anomaly detectors, and (ii) we formulate each
+                   attack as a constrained optimization problem, with
+                   constraints designed to ensure that the poisoned points
+                   evade detection. While this optimization involves solving an
+                   expensive bilevel problem, we explore and develop three
+                   efficient approximations to this problem based on influence
+                   functions; minimax duality; and the Karush-Kuhn-Tucker (KKT)
+                   conditions. Our results underscore the urgent need to
+                   develop more sophisticated and robust defenses against data
+                   poisoning attacks.",
+  month         =  nov,
+  year          =  2018,
+  archivePrefix = "arXiv",
+  primaryClass  = "stat.ML",
+  eprint        = "1811.00741"
+}
+
+@misc{Truong2020-dk,
+  title         = "Systematic Evaluation of Backdoor Data Poisoning Attacks on
+                   Image Classifiers",
+  author        = "Truong, Loc and Jones, Chace and Hutchinson, Brian and
+                   August, Andrew and Praggastis, Brenda and Jasper, Robert and
+                   Nichols, Nicole and Tuor, Aaron",
+  abstract      = "Backdoor data poisoning attacks have recently been
+                   demonstrated in computer vision research as a potential
+                   safety risk for machine learning (ML) systems. Traditional
+                   data poisoning attacks manipulate training data to induce
+                   unreliability of an ML model, whereas backdoor data
+                   poisoning attacks maintain system performance unless the ML
+                   model is presented with an input containing an embedded
+                   ``trigger'' that provides a predetermined response
+                   advantageous to the adversary. Our work builds upon prior
+                   backdoor data-poisoning research for ML image classifiers
+                   and systematically assesses different experimental
+                   conditions including types of trigger patterns, persistence
+                   of trigger patterns during retraining, poisoning strategies,
+                   architectures (ResNet-50, NasNet, NasNet-Mobile), datasets
+                   (Flowers, CIFAR-10), and potential defensive regularization
+                   techniques (Contrastive Loss, Logit Squeezing, Manifold
+                   Mixup, Soft-Nearest-Neighbors Loss). Experiments yield four
+                   key findings. First, the success rate of backdoor poisoning
+                   attacks varies widely, depending on several factors,
+                   including model architecture, trigger pattern and
+                   regularization technique. Second, we find that poisoned
+                   models are hard to detect through performance inspection
+                   alone. Third, regularization typically reduces backdoor
+                   success rate, although it can have no effect or even
+                   slightly increase it, depending on the form of
+                   regularization. Finally, backdoors inserted through data
+                   poisoning can be rendered ineffective after just a few
+                   epochs of additional training on a small set of clean data
+                   without affecting the model's performance.",
+  month         =  apr,
+  year          =  2020,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CV",
+  eprint        = "2004.11514"
+}
+
+
+@INPROCEEDINGS{Adi2018-fz,
+  title     = "Turning your weakness into a strength: watermarking deep neural
+               networks by backdooring",
+  booktitle = "Proceedings of the 27th {USENIX} Conference on Security
+               Symposium",
+  author    = "Adi, Yossi and Baum, Carsten and Cisse, Moustapha and Pinkas,
+               Benny and Keshet, Joseph",
+  abstract  = "Deep Neural Networks have recently gained lots of success after
+               enabling several breakthroughs in notoriously challenging
+               problems. Training these networks is computationally expensive
+               and requires vast amounts of training data. Selling such
+               pre-trained models can, therefore, be a lucrative business
+               model. Unfortunately, once the models are sold they can be
+               easily copied and redistributed. To avoid this, a tracking
+               mechanism to identify models as the intellectual property of a
+               particular vendor is necessary.In this work, we present an
+               approach for watermarking Deep Neural Networks in a black-box
+               way. Our scheme works for general classification tasks and can
+               easily be combined with current learning algorithms. We show
+               experimentally that such a watermark has no noticeable impact on
+               the primary task that the model is designed for and evaluate the
+               robustness of our proposal against a multitude of practical
+               attacks. Moreover, we provide a theoretical analysis, relating
+               our approach to previous work on backdooring.",
+  publisher = "USENIX Association",
+  pages     = "1615--1631",
+  series    = "SEC'18",
+  month     =  aug,
+  year      =  2018,
+  address   = "USA",
+  location  = "Baltimore, MD, USA"
+}
+
+@misc{Chen2017-kq,
+      title={Targeted Backdoor Attacks on Deep Learning Systems Using Data Poisoning}, 
+      author={Xinyun Chen and Chang Liu and Bo Li and Kimberly Lu and Dawn Song},
+      year={2017},
+      eprint={1712.05526},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR}
+}
+
+@inproceedings{Wang2020-yt,
+ author = {Wang, Hongyi and Sreenivasan, Kartik and Rajput, Shashank and Vishwakarma, Harit and Agarwal, Saurabh and Sohn, Jy-yong and Lee, Kangwook and Papailiopoulos, Dimitris},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+ pages = {16070--16084},
+ publisher = {Curran Associates, Inc.},
+ title = {Attack of the Tails: Yes, You Really Can Backdoor Federated Learning},
+ url = {https://proceedings.neurips.cc/paper/2020/file/b8ffa41d4e492f0fad2f13e29e1762eb-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}
+
+@misc{Madry2017-ep,
+  title         = "Towards Deep Learning Models Resistant to Adversarial
+                   Attacks",
+  author        = "Madry, Aleksander and Makelov, Aleksandar and Schmidt,
+                   Ludwig and Tsipras, Dimitris and Vladu, Adrian",
+  abstract      = "Recent work has demonstrated that deep neural networks are
+                   vulnerable to adversarial examples---inputs that are almost
+                   indistinguishable from natural data and yet classified
+                   incorrectly by the network. In fact, some of the latest
+                   findings suggest that the existence of adversarial attacks
+                   may be an inherent weakness of deep learning models. To
+                   address this problem, we study the adversarial robustness of
+                   neural networks through the lens of robust optimization.
+                   This approach provides us with a broad and unifying view on
+                   much of the prior work on this topic. Its principled nature
+                   also enables us to identify methods for both training and
+                   attacking neural networks that are reliable and, in a
+                   certain sense, universal. In particular, they specify a
+                   concrete security guarantee that would protect against any
+                   adversary. These methods let us train networks with
+                   significantly improved resistance to a wide range of
+                   adversarial attacks. They also suggest the notion of
+                   security against a first-order adversary as a natural and
+                   broad security guarantee. We believe that robustness against
+                   such well-defined classes of adversaries is an important
+                   stepping stone towards fully resistant deep learning models.
+                   Code and pre-trained models are available at
+                   https://github.com/MadryLab/mnist\_challenge and
+                   https://github.com/MadryLab/cifar10\_challenge.",
+  month         =  jun,
+  year          =  2017,
+  archivePrefix = "arXiv",
+  primaryClass  = "stat.ML",
+  eprint        = "1706.06083"
+}
+
+@INPROCEEDINGS{Montasser2019-ro,
+  title     = "{VC} Classes are Adversarially Robustly Learnable, but Only
+               Improperly",
+  booktitle = "Proceedings of the {Thirty-Second} Conference on Learning Theory",
+  author    = "Montasser, Omar and Hanneke, Steve and Srebro, Nathan",
+  editor    = "Beygelzimer, Alina and Hsu, Daniel",
+  abstract  = "We study the question of learning an adversarially robust
+               predictor. We show that any hypothesis class $\mathcalH$ with
+               finite VC dimension is robustly PAC learnable with an
+               \textbackslashemphimproper learning rule. The requirement of
+               being improper is necessary as we exhibit examples of hypothesis
+               classes $\mathcalH$ with finite VC dimension that are
+               \textbackslashemphnot robustly PAC learnable with any
+               \textbackslashemphproper learning rule.",
+  publisher = "PMLR",
+  volume    =  99,
+  pages     = "2512--2530",
+  series    = "Proceedings of Machine Learning Research",
+  year      =  2019,
+  address   = "Phoenix, USA"
+}
+
+
+@ARTICLE{Saha2019-ce,
+  title    = "Hidden Trigger Backdoor Attacks",
+  author   = "Saha, Aniruddha and Subramanya, Akshayvarun and Pirsiavash, Hamed",
+  abstract = "With the success of deep learning algorithms in various domains,
+              studying adversarial attacks to secure deep models in real world
+              applications has become an important research topic. Backdoor
+              attacks are a form of adversarial attacks on deep networks where
+              the attacker provides poisoned data to the victim to train the
+              model with, and then activates the attack by showing a specific
+              small trigger pattern at the test time. Most state-of-the-art
+              backdoor attacks either provide mislabeled poisoning data that is
+              possible to identify by visual inspection, reveal the trigger in
+              the poisoned data, or use noise to hide the trigger. We propose a
+              novel form of backdoor attack where poisoned data look natural
+              with correct labels and also more importantly, the attacker hides
+              the trigger in the poisoned data and keeps the trigger secret
+              until the test time. We perform an extensive study on various
+              image classification settings and show that our attack can fool
+              the model by pasting the trigger at random locations on unseen
+              images although the model performs well on clean data. We also
+              show that our proposed attack cannot be easily defended using a
+              state-of-the-art defense algorithm for backdoor attacks.",
+  journal  = "AAAI",
+  volume   =  34,
+  number   =  07,
+  pages    = "11957--11965",
+  month    =  apr,
+  year     =  2020,
+  language = "en"
+}
+
+
+@INPROCEEDINGS{Shen2018-jx,
+  title     = "Learning with Bad Training Data via Iterative Trimmed Loss
+               Minimization",
+  booktitle = "Proceedings of the 36th International Conference on Machine
+               Learning",
+  author    = "Shen, Yanyao and Sanghavi, Sujay",
+  editor    = "Chaudhuri, Kamalika and Salakhutdinov, Ruslan",
+  abstract  = "In this paper, we study a simple and generic framework to tackle
+               the problem of learning model parameters when a fraction of the
+               training samples are corrupted. Our approach is motivated by a
+               simple observation: in a variety of such settings, the evolution
+               of training accuracy (as a function of training epochs) is
+               different for clean samples and bad samples. We propose to
+               iteratively minimize the trimmed loss, by alternating between
+               (a) selecting samples with lowest current loss, and (b)
+               retraining a model on only these samples. Analytically, we
+               characterize the statistical performance and convergence rate of
+               the algorithm for simple and natural linear and non-linear
+               models. Experimentally, we demonstrate its effectiveness in
+               three settings: (a) deep image classifiers with errors only in
+               labels, (b) generative adversarial networks with bad training
+               images, and (c) deep image classifiers with adversarial (image,
+               label) pairs (i.e., backdoor attacks). For the well-studied
+               setting of random label noise, our algorithm achieves
+               state-of-the-art performance without having access to any
+               a-priori guaranteed clean samples.",
+  publisher = "PMLR",
+  volume    =  97,
+  pages     = "5739--5748",
+  series    = "Proceedings of Machine Learning Research",
+  year      =  2019
+}
+
+@misc{Shafahi2018-ns,
+  title         = "Poison Frogs! Targeted {Clean-Label} Poisoning Attacks on
+                   Neural Networks",
+  author        = "Shafahi, Ali and Ronny Huang, W and Najibi, Mahyar and
+                   Suciu, Octavian and Studer, Christoph and Dumitras, Tudor
+                   and Goldstein, Tom",
+  abstract      = "Data poisoning is an attack on machine learning models
+                   wherein the attacker adds examples to the training set to
+                   manipulate the behavior of the model at test time. This
+                   paper explores poisoning attacks on neural nets. The
+                   proposed attacks use ``clean-labels''; they don't require
+                   the attacker to have any control over the labeling of
+                   training data. They are also targeted; they control the
+                   behavior of the classifier on a $\textit\{specific\}$ test
+                   instance without degrading overall classifier performance.
+                   For example, an attacker could add a seemingly innocuous
+                   image (that is properly labeled) to a training set for a
+                   face recognition engine, and control the identity of a
+                   chosen person at test time. Because the attacker does not
+                   need to control the labeling function, poisons could be
+                   entered into the training set simply by leaving them on the
+                   web and waiting for them to be scraped by a data collection
+                   bot. We present an optimization-based method for crafting
+                   poisons, and show that just one single poison image can
+                   control classifier behavior when transfer learning is used.
+                   For full end-to-end training, we present a ``watermarking''
+                   strategy that makes poisoning reliable using multiple
+                   ($\approx$50) poisoned training instances. We demonstrate
+                   our method by generating poisoned frog images from the CIFAR
+                   dataset and using them to manipulate image classifiers.",
+  month         =  apr,
+  year          =  2018,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "1804.00792"
+}
+
+@BOOK{Shalev-Shwartz2014-oj,
+  title     = "Understanding Machine Learning: From Theory to Algorithms",
+  author    = "Shalev-Shwartz, Shai and Ben-David, Shai",
+  abstract  = "Machine learning is one of the fastest growing areas of computer
+               science, with far-reaching applications. The aim of this
+               textbook is to introduce machine learning, and the algorithmic
+               paradigms it offers, in a principled way. The book provides a
+               theoretical account of the fundamentals underlying machine
+               learning and the mathematical derivations that transform these
+               principles into practical algorithms. Following a presentation
+               of the basics, the book covers a wide array of central topics
+               unaddressed by previous textbooks. These include a discussion of
+               the computational complexity of learning and the concepts of
+               convexity and stability; important algorithmic paradigms
+               including stochastic gradient descent, neural networks, and
+               structured output learning; and emerging theoretical concepts
+               such as the PAC-Bayes approach and compression-based bounds.
+               Designed for advanced undergraduates or beginning graduates, the
+               text makes the fundamentals and algorithms of machine learning
+               accessible to students and non-expert readers in statistics,
+               computer science, mathematics and engineering.",
+  publisher = "Cambridge University Press",
+  month     =  may,
+  year      =  2014,
+  language  = "en"
+}
+
+@BOOK{Vershynin2018-xn,
+  title     = "{High-Dimensional} Probability: An Introduction with
+               Applications in Data Science",
+  author    = "Vershynin, Roman",
+  abstract  = "High-dimensional probability offers insight into the behavior of
+               random vectors, random matrices, random subspaces, and objects
+               used to quantify uncertainty in high dimensions. Drawing on
+               ideas from probability, analysis, and geometry, it lends itself
+               to applications in mathematics, statistics, theoretical computer
+               science, signal processing, optimization, and more. It is the
+               first to integrate theory, key tools, and modern applications of
+               high-dimensional probability. Concentration inequalities form
+               the core, and it covers both classical results such as
+               Hoeffding's and Chernoff's inequalities and modern developments
+               such as the matrix Bernstein's inequality. It then introduces
+               the powerful methods based on stochastic processes, including
+               such tools as Slepian's, Sudakov's, and Dudley's inequalities,
+               as well as generic chaining and bounds based on VC dimension. A
+               broad range of illustrations is embedded throughout, including
+               classical and modern results for covariance estimation,
+               clustering, networks, semidefinite programming, coding,
+               dimension reduction, matrix completion, machine learning,
+               compressed sensing, and sparse regression.",
+  publisher = "Cambridge University Press",
+  month     =  sep,
+  year      =  2018,
+  language  = "en"
+}
+
+@misc{Hardt2012-xk,
+  title         = "Algorithms and Hardness for Robust Subspace Recovery",
+  author        = "Hardt, Moritz and Moitra, Ankur",
+  abstract      = "We consider a fundamental problem in unsupervised learning
+                   called \textbackslashemph\{subspace recovery\}: given a
+                   collection of $m$ points in $\mathbb\{R\}^n$, if many but
+                   not necessarily all of these points are contained in a
+                   $d$-dimensional subspace $T$ can we find it? The points
+                   contained in $T$ are called \{\textbackslashem inliers\} and
+                   the remaining points are \{\textbackslashem outliers\}. This
+                   problem has received considerable attention in computer
+                   science and in statistics. Yet efficient algorithms from
+                   computer science are not robust to \{\textbackslashem
+                   adversarial\} outliers, and the estimators from robust
+                   statistics are hard to compute in high dimensions. Are there
+                   algorithms for subspace recovery that are both robust to
+                   outliers and efficient? We give an algorithm that finds $T$
+                   when it contains more than a $\frac\{d\}\{n\}$ fraction of
+                   the points. Hence, for say $d = n/2$ this estimator is both
+                   easy to compute and well-behaved when there are a constant
+                   fraction of outliers. We prove that it is Small Set
+                   Expansion hard to find $T$ when the fraction of errors is
+                   any larger, thus giving evidence that our estimator is an
+                   \{\textbackslashem optimal\} compromise between efficiency
+                   and robustness. As it turns out, this basic problem has a
+                   surprising number of connections to other areas including
+                   small set expansion, matroid theory and functional analysis
+                   that we make use of here.",
+  month         =  nov,
+  year          =  2012,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CC",
+  eprint        = "1211.1041"
+}
+
+
+@INPROCEEDINGS{Tran2018-bf,
+  title     = "Spectral Signatures in Backdoor Attacks",
+  booktitle = "Advances in Neural Information Processing Systems",
+  author    = "Tran, Brandon and Li, Jerry and Madry, Aleksander",
+  editor    = "Bengio, S and Wallach, H and Larochelle, H and Grauman, K and
+               Cesa-Bianchi, N and Garnett, R",
+  publisher = "Curran Associates, Inc.",
+  volume    =  31,
+  year      =  2018
+}

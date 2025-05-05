@@ -1,0 +1,441 @@
+@incollection{causal_domain_nips,
+title = {Domain Adaptation by Using Causal Inference to Predict Invariant Conditional Distributions},
+author = {Magliacane, Sara and van Ommen, Thijs and Claassen, Tom and Bongers, Stephan and Versteeg, Philip and Mooij, Joris M},
+booktitle = {Advances in Neural Information Processing Systems 31},
+editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+pages = {10846--10856},
+year = {2018},
+publisher = {Curran Associates, Inc.},
+url = {}
+}
+
+@article{knn-impute,
+author = {Troyanskaya, Olga and Cantor, Mike and Sherlock, Gavin and Hastie, Trevor and Tibshirani, Rob and Botstein, David and Altman, Russ},
+year = {2001},
+month = {07},
+pages = {520-525},
+title = {Missing Value Estimation Methods for DNA Microarrays},
+volume = {17},
+journal = {Bioinformatics},
+doi = {10.1093/bioinformatics/17.6.520}
+}
+
+
+@article{covariate-shift,
+  title={Improving predictive inference under covariate shift by weighting the log-likelihood function},
+  author={Shimodaira, Hidetoshi},
+  journal={Journal of statistical planning and inference},
+  volume={90},
+  number={2},
+  pages={227--244},
+  year={2000},
+  publisher={Elsevier}
+}
+
+
+@InProceedings{VAE-impute, title = {Variational Selective Autoencoder}, author = {Gong, Yu and Hajimirsadeghi, Hossein and He, Jiawei and Nawhal, Megha and Durand, Thibaut and Mori, Greg}, booktitle = {Proceedings of The 2nd Symposium on Advances in Approximate Bayesian Inference}, pages = {1--17}, year = {2020}, editor = {Cheng Zhang and Francisco Ruiz and Thang Bui and Adji Bousso Dieng and Dawen Liang}, volume = {118}, series = {Proceedings of Machine Learning Research}, month = {08 Dec}, publisher = {PMLR}, pdf = {http://proceedings.mlr.press/v118/gong20a/gong20a.pdf}, url = { http://proceedings.mlr.press//v118//gong20a.html }, abstract = { Despite promising progress on unimodal data imputation (e.g. image inpainting), models for multimodal data imputation are far from satisfactory. In this work, we propose variational selective autoencoder (VSAE) for this task. Learning only from partially-observed data, VSAE can model the joint distribution of observed/unobserved modalities and the imputation mask, resulting in a unied model for various down-stream tasks including data generation and imputation. Evaluation on synthetic high-dimensional and challenging low-dimensional multimodal datasets shows improvement over the state-of-the-art imputation models. } } 
+
+@InProceedings{MIWAE,
+  title = 	 {{MIWAE}: Deep Generative Modelling and Imputation of Incomplete Data Sets},
+  author =       {Mattei, Pierre-Alexandre and Frellsen, Jes},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  pages = 	 {4413--4423},
+  year = 	 {2019},
+  editor = 	 {Kamalika Chaudhuri and Ruslan Salakhutdinov},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--15 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v97/mattei19a/mattei19a.pdf},
+  url = 	 {
+http://proceedings.mlr.press/v97/mattei19a.html
+},
+  abstract = 	 {We consider the problem of handling missing data with deep latent variable models (DLVMs). First, we present a simple technique to train DLVMs when the training set contains missing-at-random data. Our approach, called MIWAE, is based on the importance-weighted autoencoder (IWAE), and maximises a potentially tight lower bound of the log-likelihood of the observed data. Compared to the original IWAE, our algorithm does not induce any additional computational overhead due to the missing data. We also develop Monte Carlo techniques for single and multiple imputation using a DLVM trained on an incomplete data set. We illustrate our approach by training a convolutional DLVM on incomplete static binarisations of MNIST. Moreover, on various continuous data sets, we show that MIWAE provides extremely accurate single imputations, and is highly competitive with state-of-the-art methods.}
+}
+
+@article{congeniality1,
+ ISSN = {08834237},
+ author = {Xiao-Li Meng},
+ journal = {Statistical Science},
+ number = {4},
+ pages = {538--558},
+ publisher = {Institute of Mathematical Statistics},
+ title = {Multiple-Imputation Inferences with Uncongenial Sources of Input},
+ volume = {9},
+ year = {1994}
+}
+
+@article{congeniality2,
+author = {Deng, Yi and Chang, Changgee and Ido, Moges and Long, Qi},
+year = {2016},
+month = {02},
+pages = {21689},
+title = {Multiple Imputation for General Missing Data Patterns in the Presence of High-dimensional Data},
+volume = {6},
+journal = {Scientific Reports},
+doi = {10.1038/srep21689}
+}
+
+@inproceedings{GRAPE,
+ author = {Jiaxuan You and Xiaobai Ma and Daisy Yi Ding and Mykel Kochenderfer and Jure Leskovec},
+ booktitle = {Advances in Neural Information Processing Systems},
+ publisher = {Curran Associates, Inc.},
+ title = {Handling Missing Data with Graph Representation Learning},
+ year = {2020}
+}
+
+@inproceedings{mohan-13-mgraphs,
+ author = {Mohan, Karthika and Pearl, Judea and Tian, Jin},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {C. J. C. Burges and L. Bottou and M. Welling and Z. Ghahramani and K. Q. Weinberger},
+ pages = {1277--1285},
+ publisher = {Curran Associates, Inc.},
+ title = {Graphical Models for Inference with Missing Data},
+ volume = {26},
+ year = {2013}
+}
+
+
+@inproceedings{zheng2018notears,
+    author = {Zheng, Xun and Aragam, Bryon and Ravikumar, Pradeep and Xing, Eric P.},
+    booktitle = {Advances in Neural Information Processing Systems},
+    title = {{DAGs with NO TEARS: Continuous Optimization for Structure Learning}},
+    year = {2018}
+}
+
+@InProceedings{zheng2019sparseDAGS,
+  title = 	 {Learning Sparse Nonparametric DAGs},
+  author =       {Zheng, Xun and Dan, Chen and Aragam, Bryon and Ravikumar, Pradeep and Xing, Eric},
+  booktitle = 	 {Proceedings of the Twenty Third International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {3414--3425},
+  year = 	 {2020},
+  editor = 	 {Silvia Chiappa and Roberto Calandra},
+  volume = 	 {108},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {26--28 Aug},
+  publisher =    {PMLR},
+  abstract = 	 {We develop a framework for learning sparse nonparametric directed acyclic graphs (DAGs) from data. Our approach is based on a recent algebraic characterization of DAGs that led to the first fully continuous optimization for score-based learning of DAG models parametrized by a linear structural equation model (SEM). We extend this algebraic characterization to nonparametric SEM by leveraging nonparametric sparsity based on partial derivatives, resulting in a continuous optimization problem that can be applied to a variety of nonparametric and semiparametric models including GLMs, additive noise models, and index models as special cases. Unlike existing approaches that require specific modeling choices, loss functions, or algorithms, we present a completely general framework that can be applied to general nonlinear models (e.g. without additive noise), general differentiable loss functions, and generic black-box optimization routines.}
+  }
+
+
+@book{vanbuuren-MissingData,
+  title = {Flexible Imputation of Missing Data},
+  author = {van Buuren, S.},
+  isbn = {9781138588318},
+  lccn = {2018017122},
+  series = {Chapman \& Hall/CRC Interdisciplinary Statistics},
+  year = {2018},
+  publisher = {CRC Press LLC}
+}
+
+@InProceedings{imputation-OT, 
+title = {Missing Data Imputation using Optimal Transport}, author = {Muzellec, Boris and Josse, Julie and Boyer, Claire and Cuturi, Marco}, 
+booktitle = {Proceedings of the 37th International Conference on Machine Learning}, 
+pages = {7130--7140}, year = {2020}, editor = {Hal Daumé III and Aarti Singh}, volume = {119}, 
+series = {Proceedings of Machine Learning Research}, address = {Virtual}, month = {13--18 Jul}, publisher = {PMLR}, 
+abstract = {Missing data is a crucial issue when applying machine learning algorithms to real-world datasets. Starting from the simple assumption that two batches extracted randomly from the same dataset should share the same distribution, we leverage optimal transport distances to quantify that criterion and turn it into a loss function to impute missing data values. We propose practical methods to minimize these losses using end-to-end learning, that can exploit or not parametric assumptions on the underlying distributions of values. We evaluate our methods on datasets from the UCI repository, in MCAR, MAR and MNAR settings. These experiments show that OT-based methods match or out-perform state-of-the-art imputation methods, even for high percentages of missing values.} } 
+
+@misc{uci,
+author = {Dua, Dheeru and Graff, Casey},
+year = {2020},
+title = {{UCI} Machine Learning Repository},
+url = {http://archive.ics.uci.edu/ml},
+institution = {University of California, Irvine, School of Information and Computer Sciences} }
+
+
+@inproceedings{shpitser-icml-2020,
+author = {Nabi, Razieh and Bhattacharya, Rohit and Shpitser, Ilya},
+year = {2020},
+month = {},
+pages = {},
+title = {Full Law Identification In Graphical Models Of Missing Data: Completeness Results},
+booktitle = {Proc. of International Conference on Machine Learning (ICML)}
+}
+
+@inproceedings{shpitser-uai-2019,
+author = {Bhattacharya, Rohit and Nabi, Razieh and Shpitser, Ilya and Robins, James},
+year = {2019},
+month = {06},
+pages = {},
+title = {Identification In Missing Data Models Represented By Directed Acyclic Graphs},
+booktitle = {Proc. of Conference on Uncertainty in Artificial Intelligence (UAI)}
+}
+
+@inproceedings{shpitser-uai-2015,
+  title={Missing Data as a Causal and Probabilistic Problem},
+  author={Ilya Shpitser and Karthika Mohan and Judea Pearl},
+  booktitle={Proc. of Conference on Uncertainty in Artificial Intelligence (UAI)},
+  year={2015}
+}
+
+@InProceedings{GAMIN,
+author = {Yoon, Seongwook and Sull, Sanghoon},
+title = {GAMIN: Generative Adversarial Multiple Imputation Network for Highly Missing Data},
+booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2020}
+}
+
+
+@article{MICE1,
+author = {Buuren, Stef and Groothuis-Oudshoorn, Catharina},
+year = {2011},
+month = {12},
+pages = {},
+title = {MICE: Multivariate Imputation by Chained Equations in R},
+volume = {45},
+journal = {Journal of Statistical Software},
+doi = {10.18637/jss.v045.i03}
+}
+
+@article{MatrixCompletion,
+  author  = {Rahul Mazumder and Trevor Hastie and Robert Tibshirani},
+  title   = {Spectral Regularization Algorithms for Learning Large Incomplete Matrices},
+  journal = {Journal of Machine Learning Research},
+  year    = {2010},
+  volume  = {11},
+  number  = {80},
+  pages   = {2287-2322},
+}
+@article{DenoisingAE,
+author = {Gondara, Lovedeep and Wang, Ke},
+year = {2017},
+month = {05},
+pages = {},
+title = {Multiple Imputation Using Deep Denoising Autoencoders}
+}
+
+@article{MissForest,
+  title={MissForest - non-parametric missing value imputation for mixed-type data},
+  author={Daniel J. Stekhoven and Peter B{\"u}hlmann},
+  journal={Bioinformatics},
+  year={2012},
+  volume={28 1},
+  pages={
+          112-8
+        }
+}
+
+@article{EM,
+  title={Pattern classification with missing data: a review},
+  author={Pedro J. Garc{\'i}a-Laencina and Jos{\'e}-Luis Sancho-G{\'o}mez and An{\'i}bal R. Figueiras-Vidal},
+  journal={Neural Computing and Applications},
+  year={2009},
+  volume={19},
+  pages={263-282}
+}
+
+@inproceedings{GAIN,
+  title={GAIN: Missing Data Imputation using Generative Adversarial Nets},
+  author={Jinsung Yoon and James Jordon and Mihaela van der Schaar},
+  booktitle={ICML},
+  year={2018}
+}
+
+@inproceedings{MisGAN,
+author = {Li, Steven and Jiang, Bo and Marlin, Benjamin},
+year = {2019},
+month = {02},
+pages = {},
+title = {MisGAN: Learning from Incomplete Data with Generative Adversarial Networks},
+booktitle={ICLR}
+}
+
+@MISC{GAN_imp2016,
+author = {Allen, A. and Li, W.},
+title = {Generative Adversarial Denoising Autoencoder for Face Completion, },
+year = {2016},
+howpublished={\url{https://www.cc.gatech.edu/~hays/7476/projects/Avery_Wenchen/}}
+}
+
+@article{efron2020prediction,
+  title={Prediction, Estimation, and Attribution},
+  author={Efron, Bradley},
+  journal={Journal of the American Statistical Association},
+  volume={115},
+  number={530},
+  pages={636--655},
+  year={2020},
+  publisher={Taylor \& Francis}
+}
+
+
+@article{owen1988empirical,
+  title={Empirical likelihood ratio confidence intervals for a single functional},
+  author={Owen, Art B},
+  journal={Biometrika},
+  volume={75},
+  number={2},
+  pages={237--249},
+  year={1988},
+  publisher={Oxford University Press}
+}
+
+
+@book{owen2001empirical,
+  title={Empirical likelihood},
+  author={Owen, Art B},
+  year={2001},
+  publisher={CRC press}
+}
+
+
+@book{pearl2009causality,
+  title={Causality},
+  author={Pearl, J.},
+  isbn={9780521895606},
+  lccn={99042108},
+  series={Causality: Models, Reasoning, and Inference},
+  year={2009},
+  publisher={Cambridge Univ. Press}
+}
+@inproceedings{tu2019causal,
+  title={Causal discovery in the presence of missing data},
+  author={Tu, Ruibo and Zhang, Cheng and Ackermann, Paul and Mohan, Karthika and Kjellstr{\"o}m, Hedvig and Zhang, Kun},
+  booktitle={The 22nd International Conference on Artificial Intelligence and Statistics},
+  pages={1762--1770},
+  year={2019},
+  organization={PMLR}
+}
+@inproceedings{mohan2014testability,
+  title={On the testability of models with missing data},
+  author={Mohan, Karthika and Pearl, Judea},
+  booktitle={Artificial Intelligence and Statistics},
+  pages={643--650},
+  year={2014}
+}
+@article{gain2018structure,
+  title={Structure learning under missing data},
+  author={Gain, Alexander and Shpitser, Ilya},
+  journal={Proceedings of machine learning research},
+  volume={72},
+  pages={121},
+  year={2018},
+  publisher={NIH Public Access}
+}
+@article{seaman2013meant,
+  title={What Is Meant by" Missing at Random"?},
+  author={Seaman, Shaun and Galati, John and Jackson, Dan and Carlin, John},
+  journal={Statistical Science},
+  pages={257--268},
+  year={2013},
+  publisher={JSTOR}
+}
+@book{little2019statistical,
+  title={Statistical analysis with missing data},
+  author={Little, Roderick JA and Rubin, Donald B},
+  volume={793},
+  year={2019},
+  publisher={John Wiley \& Sons}
+}
+@inproceedings{meinshausen2018causality,
+  title={Causality from a distributional robustness point of view},
+  author={Meinshausen, Nicolai},
+  booktitle={2018 IEEE Data Science Workshop (DSW)},
+  pages={6--10},
+  year={2018},
+  organization={IEEE}
+}
+@article{rojas2018invariant,
+  title={Invariant models for causal transfer learning},
+  author={Rojas-Carulla, Mateo and Sch{\"o}lkopf, Bernhard and Turner, Richard and Peters, Jonas},
+  journal={The Journal of Machine Learning Research},
+  volume={19},
+  number={1},
+  pages={1309--1342},
+  year={2018},
+  publisher={JMLR. org}
+}
+@article{jakobsen2017and,
+  title={When and how should multiple imputation be used for handling missing data in randomised clinical trials--a practical guide with flowcharts},
+  author={Jakobsen, Janus Christian and Gluud, Christian and Wetterslev, J{\o}rn and Winkel, Per},
+  journal={BMC medical research methodology},
+  volume={17},
+  number={1},
+  pages={1--10},
+  year={2017},
+  publisher={BioMed Central}
+}
+@article{bell2014handling,
+  title={Handling missing data in RCTs; a review of the top medical journals},
+  author={Bell, Melanie L and Fiero, Mallorie and Horton, Nicholas J and Hsu, Chiu-Hsieh},
+  journal={BMC medical research methodology},
+  volume={14},
+  number={1},
+  pages={1--8},
+  year={2014},
+  publisher={BioMed Central}
+}
+@article{sterne2009multiple,
+  title={Multiple imputation for missing data in epidemiological and clinical research: potential and pitfalls},
+  author={Sterne, Jonathan AC and White, Ian R and Carlin, John B and Spratt, Michael and Royston, Patrick and Kenward, Michael G and Wood, Angela M and Carpenter, James R},
+  journal={Bmj},
+  volume={338},
+  year={2009},
+  publisher={British Medical Journal Publishing Group}
+}
+
+@inproceedings{Bai2019DeepEM,
+  title={Deep Equilibrium Models},
+  author={Shaojie Bai and J. Z. Kolter and V. Koltun},
+  booktitle={NeurIPS},
+  year={2019}
+}
+
+@article{Vincent2010StackedDA,
+  title={Stacked Denoising Autoencoders: Learning Useful Representations in a Deep Network with a Local Denoising Criterion},
+  author={Pascal Vincent and H. Larochelle and Isabelle Lajoie and Yoshua Bengio and Pierre-Antoine Manzagol},
+  journal={J. Mach. Learn. Res.},
+  year={2010},
+  volume={11},
+  pages={3371-3408}
+}
+
+@InProceedings{DAE2018,
+  title = 	 {Learning Dynamics of Linear Denoising Autoencoders},
+  author =       {Pretorius, Arnu and Kroon, Steve and Kamper, Herman},
+  booktitle = 	 {Proceedings of the 35th International Conference on Machine Learning},
+  pages = 	 {4141--4150},
+  year = 	 {2018},
+  editor = 	 {Dy, Jennifer and Krause, Andreas},
+  volume = 	 {80},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {10--15 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v80/pretorius18a/pretorius18a.pdf},
+  url = 	 {http://proceedings.mlr.press/v80/pretorius18a.html},
+  abstract = 	 {Denoising autoencoders (DAEs) have proven useful for unsupervised representation learning, but a thorough theoretical understanding is still lacking of how the input noise influences learning. Here we develop theory for how noise influences learning in DAEs. By focusing on linear DAEs, we are able to derive analytic expressions that exactly describe their learning dynamics. We verify our theoretical predictions with simulations as well as experiments on MNIST and CIFAR-10. The theory illustrates how, when tuned correctly, noise allows DAEs to ignore low variance directions in the inputs while learning to reconstruct them. Furthermore, in a comparison of the learning dynamics of DAEs to standard regularised autoencoders, we show that noise has a similar regularisation effect to weight decay, but with faster training dynamics. We also show that our theoretical predictions approximate learning dynamics on real-world data and qualitatively match observed dynamics in nonlinear DAEs.}
+}
+@inproceedings{DAE2013,
+author = {Bengio, Yoshua and Yao, Li and Alain, Guillaume and Vincent, Pascal},
+title = {Generalized Denoising Auto-Encoders as Generative Models},
+year = {2013},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {Recent work has shown how denoising and contractive autoencoders implicitly capture the structure of the data-generating density, in the case where the corruption noise is Gaussian, the reconstruction error is the squared error, and the data is continuous-valued. This has led to various proposals for sampling from this implicitly learned density function, using Langevin and Metropolis-Hastings MCMC. However, it remained unclear how to connect the training procedure of regularized auto-encoders to the implicit estimation of the underlying data-generating distribution when the data are discrete, or using other forms of corruption process and reconstruction errors. Another issue is the mathematical justification which is only valid in the limit of small corruption noise. We propose here a different attack on the problem, which deals with all these issues: arbitrary (but noisy enough) corruption, arbitrary reconstruction loss (seen as a log-likelihood), handling both discrete and continuous-valued variables, and removing the bias due to non-infinitesimal corruption noise (or non-infinitesimal contractive penalty).},
+booktitle = {Proceedings of the 26th International Conference on Neural Information Processing Systems - Volume 1},
+pages = {899–907},
+numpages = {9},
+location = {Lake Tahoe, Nevada},
+series = {NIPS'13}
+}
+
+@inproceedings{arora2014provable,
+  title={Provable bounds for learning some deep representations},
+  author={Arora, Sanjeev and Bhaskara, Aditya and Ge, Rong and Ma, Tengyu},
+  booktitle={International conference on machine learning},
+  pages={584--592},
+  year={2014},
+  organization={PMLR}
+}
+
+@article{robins2007comment,
+  title={Comment: Performance of double-robust estimators when" inverse probability" weights are highly variable},
+  author={Robins, James and Sued, Mariela and Lei-Gomez, Quanhong and Rotnitzky, Andrea},
+  journal={Statistical Science},
+  volume={22},
+  number={4},
+  pages={544--559},
+  year={2007},
+  publisher={JSTOR}
+}

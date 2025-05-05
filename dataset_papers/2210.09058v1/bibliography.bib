@@ -1,0 +1,561 @@
+% %%% ====================================================================
+% %%%  BibTeX-file{
+% %%%     author          = "Gerry Murray",
+% %%%     version         = "1.2",
+% %%%     date            = "2 April 2012",
+% %%%     filename        = "acmsmall-sample-bibfile.bib",
+% %%%     address         = "ACM, NY",
+% %%%     email           = "murray at hq.acm.org",
+% %%%     codetable       = "ISO/ASCII",
+% %%%     keywords        = "ACM Reference Format, bibliography, citation, references",
+% %%%     supported       = "yes",
+% %%%     docstring       = "This BibTeX database file contains 'bibdata' entries
+% %%%                        that 'match' the examples provided in the Specifications Document
+% %%%                        AND, also, 'legacy'-type bibs. It should assist authors in
+% %%%                        choosing the 'correct' at-bibtype and necessary bib-fields
+% %%%                        so as to obtain the appropriate ACM Reference Format output.
+% %%%                        It also contains many 'Standard Abbreviations'. "
+% %%%  }
+% %%% ====================================================================
+
+% % Journals
+
+% % First the Full Name is given, then the abbreviation used in the AMS Math
+% % Reviews, with an indication if it could not be found there.
+% % Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+%  %{AMS}
+%  @String{AMSTrans = "American Mathematical Society Translations" }
+%  @String{AMSTrans = "Amer. Math. Soc. Transl." }
+%  @String{BullAMS = "Bulletin of the American Mathematical Society" }
+%  @String{BullAMS = "Bull. Amer. Math. Soc." }
+%  @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+%  @String{ProcAMS = "Proc. Amer. Math. Soc." }
+%  @String{TransAMS = "Transactions of the American Mathematical Society" }
+%  @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+%  %ACM
+%  @String{CACM = "Communications of the {ACM}" }
+%  @String{CACM = "Commun. {ACM}" }
+%  @String{CompServ = "Comput. Surveys" }
+%  @String{JACM = "J. ACM" }
+%  @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+%  @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+%  @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+%  @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+%  @String{AmerSocio = "American Journal of Sociology" }
+%  @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+%  @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+%  @String{ApplMathComp = "Applied Mathematics and Computation" }
+%  @String{ApplMathComp = "Appl. Math. Comput." }
+%  @String{AmerMathMonthly = "American Mathematical Monthly" }
+%  @String{AmerMathMonthly = "Amer. Math. Monthly" }
+%  @String{BIT = "{BIT}" }
+%  @String{BritStatPsych = "British Journal of Mathematical and Statistical
+%           Psychology" }
+%  @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+%  @String{CanMathBull = "Canadian Mathematical Bulletin" }
+%  @String{CanMathBull = "Canad. Math. Bull." }
+%  @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+%  @String{CompApplMath = "J. Comput. Appl. Math." }
+%  @String{CompPhys = "Journal of Computational Physics" }
+%  @String{CompPhys = "J. Comput. Phys." }
+%  @String{CompStruct = "Computers and Structures" }
+%  @String{CompStruct = "Comput. \& Structures" }
+%  @String{CompJour = "The Computer Journal" }
+%  @String{CompJour = "Comput. J." }
+%  @String{CompSysSci = "Journal of Computer and System Sciences" }
+%  @String{CompSysSci = "J. Comput. System Sci." }
+%  @String{Computing = "Computing" }
+%  @String{ContempMath = "Contemporary Mathematics" }
+%  @String{ContempMath = "Contemp. Math." }
+%  @String{Crelle = "Crelle's Journal" }
+%  @String{GiornaleMath = "Giornale di Mathematiche" }
+%  @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+%  %IEEE
+%  @String{Computer = "{IEEE} Computer" }
+%  @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+%  @String{IEEETransComp = "{IEEE} Trans. Comput." }
+%  @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+%  @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+%  @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+%  @String{ProcIEEE = "Proceedings of the {IEEE}" }
+%  @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+%  @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+%      Systems" }
+%  @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+%  @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+%  @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+%  @String{InfProcLet = "Information Processing Letters" }
+%  @String{InfProcLet = "Inform. Process. Lett." }
+%  @String{InstMathApp = "Journal of the Institute of Mathematics and
+%      its Applications" }
+%  @String{InstMathApp = "J. Inst. Math. Appl." }
+%  @String{IntControl = "International Journal of Control" }
+%  @String{IntControl = "Internat. J. Control" }
+%  @String{IntNumerEng = "International Journal for Numerical Methods in
+%      Engineering" }
+%  @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+%  @String{IntSuper = "International Journal of Supercomputing Applications" }
+%  @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+% %% in AMS MR
+%  @String{Kibernetika = "Kibernetika" }
+%  @String{JResNatBurStand = "Journal of Research of the National Bureau
+%      of Standards" }
+%  @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+%  @String{LinAlgApp = "Linear Algebra and its Applications" }
+%  @String{LinAlgApp = "Linear Algebra Appl." }
+%  @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+%  @String{MathAnaAppl = "J. Math. Anal. Appl." }
+%  @String{MathAnnalen = "Mathematische Annalen" }
+%  @String{MathAnnalen = "Math. Ann." }
+%  @String{MathPhys = "Journal of Mathematical Physics" }
+%  @String{MathPhys = "J. Math. Phys." }
+%  @String{MathComp = "Mathematics of Computation" }
+%  @String{MathComp = "Math. Comp." }
+%  @String{MathScand = "Mathematica Scandinavica" }
+%  @String{MathScand = "Math. Scand." }
+%  @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+%  @String{TablesAidsComp = "Math. Tables Aids Comput." }
+%  @String{NumerMath = "Numerische Mathematik" }
+%  @String{NumerMath = "Numer. Math." }
+%  @String{PacificMath = "Pacific Journal of Mathematics" }
+%  @String{PacificMath = "Pacific J. Math." }
+%  @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+%  @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+% %% in AMS MR
+%  @String{ParComputing = "Parallel Computing" }
+%  @String{ParComputing = "Parallel Comput." }
+%  @String{PhilMag = "Philosophical Magazine" }
+%  @String{PhilMag = "Philos. Mag." }
+%  @String{ProcNAS = "Proceedings of the National Academy of Sciences
+%                     of the USA" }
+%  @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+%  @String{Psychometrika = "Psychometrika" }
+%  @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+%  @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+%  @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+%  @String{QuartApplMath = "Quart. Appl. Math." }
+%  @String{RevueInstStat = "Review of the International Statisical Institute" }
+%  @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+%  %SIAM
+%  @String{JSIAM = "Journal of the Society for Industrial and Applied
+%      Mathematics" }
+%  @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+%  @String{JSIAMB = "Journal of the Society for Industrial and Applied
+%      Mathematics, Series B, Numerical Analysis" }
+%  @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+%  @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+%  @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+%  @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+%  @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+%  @String{SIAMComp = "{SIAM} Journal on Computing" }
+%  @String{SIAMComp = "{SIAM} J. Comput." }
+%  @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+%  @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+%  @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+%  @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+%  @String{SIAMReview = "{SIAM} Review" }
+%  @String{SIAMReview = "{SIAM} Rev." }
+%  @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+%      Computing" }
+%  @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+%  @String{SoftPracExp = "Software Practice and Experience" }
+%  @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+%  @String{StatScience = "Statistical Science" }
+%  @String{StatScience = "Statist. Sci." }
+%  @String{Techno = "Technometrics" }
+%  @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+%      Physics" }
+%  @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+%  @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+%  @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+%  @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+%      Mechanik" }
+%  @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+%  @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+%  @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% % Publishers % ================================================= |
+
+%  @String{Academic = "Academic Press" }
+%  @String{ACMPress = "{ACM} Press" }
+%  @String{AdamHilger = "Adam Hilger" }
+%  @String{AddisonWesley = "Addison-Wesley" }
+%  @String{AllynBacon = "Allyn and Bacon" }
+%  @String{AMS = "American Mathematical Society" }
+%  @String{Birkhauser = "Birkha{\"u}ser" }
+%  @String{CambridgePress = "Cambridge University Press" }
+%  @String{Chelsea = "Chelsea" }
+%  @String{ClaredonPress = "Claredon Press" }
+%  @String{DoverPub = "Dover Publications" }
+%  @String{Eyolles = "Eyolles" }
+%  @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+%  @String{Interscience = "Interscience" }
+%  @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+%  @String{JohnWileySons = "John Wiley and Sons" }
+%  @String{Macmillan = "Macmillan" }
+%  @String{MathWorks = "The Math Works Inc." }
+%  @String{McGrawHill = "McGraw-Hill" }
+%  @String{NatBurStd = "National Bureau of Standards" }
+%  @String{NorthHolland = "North-Holland" }
+%  @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+%  @String{PergamonPress = "Pergamon Press" }
+%  @String{PlenumPress = "Plenum Press" }
+%  @String{PrenticeHall = "Prentice-Hall" }
+%  @String{SIAMPub = "{SIAM} Publications" }
+%  @String{Springer = "Springer-Verlag" }
+%  @String{TexasPress = "University of Texas Press" }
+%  @String{VanNostrand = "Van Nostrand" }
+%  @String{WHFreeman = "W. H. Freeman and Co." }
+ 
+@inproceedings{liu_2015,
+author = {Liu, Yu-Ying and Li, Shuang and Li, Fuxin and Song, Le and Rehg, James M.},
+title = {Efficient Learning of Continuous-Time Hidden Markov Models for Disease Progression},
+year = {2015},
+publisher = {MIT Press},
+address = {Cambridge, MA, USA},
+booktitle = {Proceedings of the 28th International Conference on Neural Information Processing Systems - Volume 2},
+pages = {3600–3608},
+numpages = {9},
+location = {Montreal, Canada},
+series = {NIPS'15}
+}
+
+@ARTICLE{biagi_2019,
+author={Biagi, Marco and Carnevali, Laura and Paolieri, Marco and Patara, Fulvio and Vicario, Enrico},
+journal={IEEE Transactions on Human-Machine Systems},
+title={A Continuous-Time Model-Based Approach for Activity Recognition in Pervasive Environments},  
+year={2019},
+volume={49},
+number={4},
+pages={293-303},
+doi={10.1109/THMS.2019.2903091}
+}
+
+@article{gorissen_2012,
+author = {Gorissen, Mieke and Vanderzande, Carlo},
+year = {2012},
+month = {09},
+pages = {},
+title = {Ribosome Dwell Times and the Protein Copy Number Distribution},
+volume = {148},
+journal = {Journal of Statistical Physics},
+doi = {10.1007/s10955-012-0452-7}
+}
+
+@inproceedings{du_2020,
+ author = {Du, Jianzhun and Futoma, Joseph and Doshi-Velez, Finale},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+ pages = {19805--19816},
+ publisher = {Curran Associates, Inc.},
+ title = {Model-based Reinforcement Learning for Semi-Markov Decision Processes with Neural ODEs},
+ volume = {33},
+ year = {2020}
+}
+
+@article{wu_2021,
+author = {Wu, Bei and Maya, Brenda Ivette Garcia and Limnios, Nikolaos},
+title = {Using Semi-Markov Chains to Solve Semi-Markov Processes},
+year = {2021},
+issue_date = {Dec 2021},
+publisher = {Kluwer Academic Publishers},
+address = {USA},
+volume = {23},
+number = {4},
+issn = {1387-5841},
+doi = {10.1007/s11009-020-09820-y},
+journal = {Method. Comput. Appl. Prob.},
+month = {dec},
+pages = {1419–1431},
+numpages = {13},
+keywords = {Semi-Markov processes, Numerical methods, Sequential cyber-attacks, System availabilities, Markov renewal equations}
+}
+
+@Article{cannarile_2018,
+AUTHOR = {Cannarile, Francesco and Compare, Michele and Baraldi, Piero and Di Maio, Francesco and Zio, Enrico},
+TITLE = {Homogeneous Continuous-Time, Finite-State Hidden Semi-Markov Modeling for Enhancing Empirical Classification System Diagnostics of Industrial Components},
+JOURNAL = {Machines},
+VOLUME = {6},
+YEAR = {2018},
+NUMBER = {3},
+ARTICLE-NUMBER = {34},
+ISSN = {2075-1702},
+DOI = {10.3390/machines6030034}
+}
+
+@article{moghaddas_2012,
+title = {A parameter estimation method for a condition-monitored device under multi-state deterioration},
+journal = {Reliability Engineering \& System Safety},
+volume = {106},
+pages = {94-103},
+year = {2012},
+issn = {0951-8320},
+doi = {https://doi.org/10.1016/j.ress.2012.05.004},
+author = {Ramin Moghaddass and Ming J. Zuo},
+keywords = {Multi-state deterioration, Continuous-time degradation process, Condition monitoring, Unsupervised parameter estimation},
+}
+
+@article{salfner_2006,
+  title={Modeling event-driven time series with generalized hidden semi-Markov models},
+  author={Salfner, Felix},
+  year={2006},
+  publisher={Humboldt-Universit{\"a}t zu Berlin, Mathematisch-Naturwissenschaftliche Fakult{\"a}t II}
+}
+
+@article{yu_2010,
+title = {Hidden semi-Markov models},
+journal = {Artificial Intelligence},
+volume = {174},
+number = {2},
+pages = {215-243},
+year = {2010},
+note = {Special Review Issue},
+issn = {0004-3702},
+doi = {https://doi.org/10.1016/j.artint.2009.11.011},
+author = {Shun-Zheng Yu},
+keywords = {Hidden Markov model (HMM), Hidden semi-Markov model (HSMM), Explicit duration HMM, Variable duration HMM, Forward–backward (FB) algorithm, Viterbi algorithm}
+}
+
+@article{alaa_2018,
+author = {Alaa, Ahmed M. and Van Der Schaar, Mihaela},
+title = {A Hidden Absorbing Semi-Markov Model for Informatively Censored Temporal Data: Learning and Inference},
+year = {2018},
+issue_date = {January 2018},
+publisher = {JMLR.org},
+volume = {19},
+number = {1},
+issn = {1532-4435},
+journal = {J. Mach. Learn. Res.},
+month = {jan},
+pages = {108–169},
+numpages = {62},
+keywords = {medical informatics, hidden semi-Markov models, Monte Carlo methods}
+}
+
+@article{klann_2012,
+	author = {Klann, Michael and Koeppl, Heinz},
+	doi = {10.3390/ijms13067798},
+	isbn = {4144632121},
+	issn = {1422-0067},
+	journal = {International Journal of Molecular Sciences},
+	keywords = {Brownian dynamics,agent-based modeling,diffusion-controlled reactions,fractal kinetics,nonlinear diffusion,spatial-temporal dynamics},
+	number = {6},
+	pages = {7798--7827},
+	pmid = {22837728},
+	title = {{Spatial simulations in systems biology: from molecules to cells}},
+	volume = {13},
+	year = {2012},
+	bdsk-url-1 = {https://doi.org/10.3390/ijms13067798}
+}
+
+@article{malhotra_1993,
+  title={Selecting and implementing phase approximations for semi-Markov models},
+  author={Malhotra, Manish and Reibman, Andrew},
+  journal={Stochastic Models},
+  volume={9},
+  number={4},
+  pages={473--506},
+  year={1993},
+  publisher={Taylor \& Francis}
+}
+
+@article{orsingher_2018,
+	author = {Enzo Orsingher and Costantino Ricciuti and Bruno Toaldo},
+	doi = {https://doi.org/10.1016/j.jfa.2018.02.011},
+	issn = {0022-1236},
+	journal = {Journal of Functional Analysis},
+	keywords = {Semi-Markov processes, Time-changed processes, Integro-differential equations, Fractional equations},
+	number = {4},
+	pages = {830-868},
+	title = {On semi-Markov processes and their Kolmogorov's integro-differential equations},
+	volume = {275},
+	year = {2018}
+}
+
+@book{norris_1997,
+place={Cambridge},
+series={Cambridge Series in Statistical and Probabilistic Mathematics},
+title={Markov Chains},
+DOI={10.1017/CBO9780511810633},
+publisher={Cambridge University Press},
+author={Norris, J. R.},
+year={1997},
+collection={Cambridge Series in Statistical and Probabilistic Mathematics}}
+
+@article{barbu_2006,
+  title={Maximum likelihood estimation for hidden semi-Markov models},
+  author={Barbu, Vlad and Limnios, Nikolaos},
+  journal={Comptes Rendus Mathematique},
+  volume={342},
+  number={3},
+  pages={201--205},
+  year={2006},
+  publisher={Elsevier}
+}
+
+@book{limnios_2001,
+  title={Semi-Markov processes and reliability},
+  author={Limnios, Nikolaos and Oprisan, Gheorghe},
+  year={2001},
+  publisher={Springer Science \& Business Media}
+}
+
+
+@article{ohzeki_2015,
+	author = {Masayuki Ohzeki and Akihisa Ichiki},
+	doi = {10.1088/1742-6596/638/1/012003},
+	journal = {Journal of Physics: Conference Series},
+	month = {sep},
+	pages = {012003},
+	publisher = {{IOP} Publishing},
+	title = {Mathematical understanding of detailed balance condition violation and its application to Langevin dynamics},
+	volume = {638},
+	year = 2015,
+}
+
+@article{andrieux_2008,
+	author = {David Andrieux and Pierre Gaspard},
+	doi = {10.1088/1742-5468/2008/11/p11007},
+	journal = {Journal of Statistical Mechanics: Theory and Experiment},
+	month = {nov},
+	number = {11},
+	pages = {P11007},
+	publisher = {{IOP} Publishing},
+	title = {The fluctuation theorem for currents in semi-Markov processes},
+	volume = {2008},
+	year = 2008,
+}
+
+@article{maes_2009,
+  title={Dynamical fluctuations for semi-Markov processes},
+  author={Maes, Christian and Neto{\v{c}}n{\`y}, Karel and Wynants, Bram},
+  journal={Journal of Physics A: Mathematical and Theoretical},
+  volume={42},
+  number={36},
+  pages={365002},
+  year={2009},
+  publisher={IOP Publishing}
+}
+
+@article{laine_2016,
+  title={Basics of thermal field theory},
+  author={Laine, Mikko and Vuorinen, Aleksi},
+  journal={Lect. Notes Phys},
+  volume={925},
+  number={1},
+  pages={1701--01554},
+  year={2016},
+  publisher={Springer}
+}
+
+@article{damico_2011,
+  title={Duration dependent semi-Markov models},
+  author={D’Amico, Guglielmo and Janssen, Jacques and Manca, Raimondo},
+  journal={Applied Mathematical Sciences},
+  volume={5},
+  number={42},
+  pages={2097--2108},
+  year={2011}
+}
+
+@InProceedings{alaa_2017,
+  title = 	 {Learning from Clinical Judgments: Semi-{M}arkov-Modulated Marked {H}awkes Processes for Risk Prognosis},
+  author =       {Ahmed M. Alaa and Scott Hu and Mihaela van der Schaar},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {60--69},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--11 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/alaa17a/alaa17a.pdf},
+}
+
+@InProceedings{lian_2014,
+  title = 	 {Modeling Correlated Arrival Events with Latent Semi-Markov Processes},
+  author = 	 {Lian, Wenzhao and Rao, Vinayak and Eriksson, Brian and Carin, Lawrence},
+  booktitle = 	 {Proceedings of the 31st International Conference on Machine Learning},
+  pages = 	 {396--404},
+  year = 	 {2014},
+  editor = 	 {Xing, Eric P. and Jebara, Tony},
+  volume = 	 {32},
+  number =       {1},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Bejing, China},
+  month = 	 {22--24 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v32/lian14.pdf},
+}
+
+
+@InProceedings{fatemi_2022,
+  title = 	 {Semi-Markov Offline Reinforcement Learning for Healthcare},
+  author =       {Fatemi, Mehdi and Wu, Mary and Petch, Jeremy and Nelson, Walter and Connolly, Stuart J and Benz, Alexander and Carnicelli, Anthony and Ghassemi, Marzyeh},
+  booktitle = 	 {Proceedings of the Conference on Health, Inference, and Learning},
+  pages = 	 {119--137},
+  year = 	 {2022},
+  editor = 	 {Flores, Gerardo and Chen, George H and Pollard, Tom and Ho, Joyce C and Naumann, Tristan},
+  volume = 	 {174},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {07--08 Apr},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v174/fatemi22a/fatemi22a.pdf},
+}
+
+
+@InProceedings{johnson_2014,
+  title = 	 {Stochastic Variational Inference for Bayesian Time Series Models},
+  author = 	 {Johnson, Matthew and Willsky, Alan},
+  booktitle = 	 {Proceedings of the 31st International Conference on Machine Learning},
+  pages = 	 {1854--1862},
+  year = 	 {2014},
+  editor = 	 {Xing, Eric P. and Jebara, Tony},
+  volume = 	 {32},
+  number =       {2},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Bejing, China},
+  month = 	 {22--24 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v32/johnson14.pdf},
+}
+
+@inproceedings{holsapple_2006,
+  title={A variable step-size selection method for implicit integration schemes},
+  author={Holsapple, Raymond and Iyer, Ram and Doman, David},
+  booktitle={2006 American Control Conference},
+  pages={6--pp},
+  year={2006},
+  organization={IEEE}
+}
+
+@article{baker_2000,
+title = {A perspective on the numerical treatment of Volterra equations},
+journal = {Journal of Computational and Applied Mathematics},
+volume = {125},
+number = {1},
+pages = {217-249},
+year = {2000},
+note = {Numerical Analysis 2000. Vol. VI: Ordinary Differential Equations and Integral Equations},
+issn = {0377-0427},
+doi = {https://doi.org/10.1016/S0377-0427(00)00470-2},
+author = {Christopher T.H. Baker},
+keywords = {Volterra and Abel equations, Quadrature, Runge–Kutta and collocation methods, Convergence, Stability}
+}
+
+@article{jones_1985,
+  title={Variable step size predictor-corrector schemes for second kind Volterra integral equations},
+  author={Jones, HM and McKee, S},
+  journal={Mathematics of computation},
+  volume={44},
+  number={170},
+  pages={391--404},
+  year={1985}
+}

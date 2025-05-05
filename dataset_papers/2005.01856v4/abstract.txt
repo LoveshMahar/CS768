@@ -1,0 +1,16 @@
+Machine learning models trained with purely observational data and the
+principle of empirical risk minimization \citep{vapnik_principles_1992} can
+fail to generalize to unseen domains. In this paper, we focus on the case where
+the problem arises through spurious correlation between the observed domains
+and the actual task labels. We find that many domain generalization methods do
+not explicitly take this spurious correlation into account. Instead, especially
+in more application-oriented research areas like medical imaging or robotics,
+data augmentation techniques that are based on heuristics are used to learn
+domain invariant features. To bridge the gap between theory and practice, we
+develop a causal perspective on the problem of domain generalization. We argue
+that causal concepts can be used to explain the success of data augmentation by
+describing how they can weaken the spurious correlation between the observed
+domains and the task labels. We demonstrate that data augmentation can serve as
+a tool for simulating interventional data. We use these theoretical insights to
+derive a simple algorithm that is able to select data augmentation techniques
+that will lead to better domain generalization.

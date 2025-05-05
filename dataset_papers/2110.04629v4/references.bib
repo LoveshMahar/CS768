@@ -1,0 +1,4733 @@
+%% References
+
+@techreport{krizhevsky2009tiny,
+  author = {Krizhevsky, Alex},
+ address = {Toronto, Ontario},
+ institution = {University of Toronto},
+ number = {0},
+ publisher = {Technical report, University of Toronto},
+ title = {Learning multiple layers of features from tiny images},
+ year = {2009},
+}
+
+@inproceedings{li2016preconditioned,
+  title={Preconditioned stochastic gradient {L}angevin dynamics for deep neural networks},
+  author={Li, Chunyuan and Chen, Changyou and Carlson, David and Carin, Lawrence},
+  booktitle={Thirtieth AAAI Conference on Artificial Intelligence},
+  year={2016}
+}
+@book{scholkopf2002learning,
+  title={Learning with kernels: {S}upport vector machines, regularization, optimization, and beyond},
+  author={Sch{\"o}lkopf, Bernhard and Smola, Alexander J},
+  year={2018},
+  publisher={MIT press}
+}
+@book{friedman2017elements,
+  title={The elements of statistical learning: Data mining, inference, and prediction},
+  author={Friedman, Jerome H},
+  year={2017},
+  publisher={springer open}
+}
+
+@incollection{mccloskey1989catastrophic,
+  title={Catastrophic interference in connectionist networks: The sequential learning problem},
+  author={McCloskey, Michael and Cohen, Neal J},
+  booktitle={Psychology of learning and motivation},
+  volume={24},
+  pages={109--165},
+  year={1989},
+  publisher={Elsevier}
+}
+
+@misc{osband2022evaluating,
+  doi = {10.48550/ARXIV.2202.13509},
+  url = {https://arxiv.org/abs/2202.13509},
+  author = {Osband, Ian and Wen, Zheng and Asghari, Seyed Mohammad and Dwaracherla, Vikranth and Lu, Xiuyuan and Van Roy, Benjamin},
+  keywords = {Machine Learning (stat.ML), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Evaluating High-Order Predictive Distributions in Deep Learning},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+@misc{wen2022predictions,
+      title={From Predictions to Decisions: The Importance of Joint Predictive Distributions}, 
+      author={Zheng Wen and Ian Osband and Chao Qin and Xiuyuan Lu and Morteza Ibrahimi and Vikranth Dwaracherla and Mohammad Asghari and Van Roy, Benjamin},
+      year={2022},
+      eprint={2107.09224},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{rasmussen2003gaussian,
+  title={Gaussian processes in machine learning},
+  author={Rasmussen, Carl Edward},
+  booktitle={Summer school on machine learning},
+  pages={63--71},
+  year={2003},
+  organization={Springer}
+}
+@book{murphy2012machine,
+  title={Machine Learning: {A} Probabilistic Perspective},
+  author={Murphy, Kevin P},
+  year={2012},
+  publisher={MIT Press}
+}
+@book{woodbury1950inverting,
+  title={Inverting modified matrices},
+  author={Woodbury, Max A},
+  year={1950},
+  publisher={Statistical Research Group}
+}
+@article{cover1967nearest,
+  title={Nearest neighbor pattern classification},
+  author={Cover, Thomas and Hart, Peter},
+  journal={IEEE transactions on information theory},
+  volume={13},
+  number={1},
+  pages={21--27},
+  year={1967},
+  publisher={IEEE}
+}
+@article{chen2015convergence,
+  title={On the convergence of stochastic gradient MCMC algorithms with high-order integrators},
+  author={Chen, Changyou and Ding, Nan and Carin, Lawrence},
+  journal={Advances in Neural Information Processing Systems},
+  volume={28},
+  pages={2278--2286},
+  year={2015}
+}
+@article{scikit-learn,
+ title={Scikit-learn: Machine Learning in {P}ython},
+ author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+ journal={Journal of Machine Learning Research},
+ volume={12},
+ pages={2825--2830},
+ year={2011}
+}
+@inproceedings{simsekli2016stochastic,
+  title={Stochastic quasi-newton {L}angevin {M}onte {C}arlo},
+  author={Simsekli, Umut and Badeau, Roland and Cemgil, Taylan and Richard, Ga{\"e}l},
+  booktitle={International Conference on Machine Learning},
+  pages={642--651},
+  year={2016},
+  organization={PMLR}
+}
+@article{ma2015complete,
+  title={A complete recipe for stochastic gradient MCMC},
+  author={Ma, Yi-An and Chen, Tianqi and Fox, Emily B},
+  journal={arXiv preprint arXiv:1506.04696},
+  year={2015}
+}
+@article{ding2014bayesian,
+  title={Bayesian sampling using stochastic gradient thermostats},
+  author={Ding, Nan and Fang, Youhan and Babbush, Ryan and Chen, Changyou and Skeel, Robert and Neven, Hartmut},
+  year={2014}
+}
+@inproceedings{welling2011bayesian,
+  title={Bayesian learning via stochastic gradient {L}angevin dynamics},
+  author={Welling, Max and Teh, Yee W},
+  booktitle={Proceedings of the 28th international conference on machine learning (ICML-11)},
+  pages={681--688},
+  year={2011},
+  organization={Citeseer}
+}
+@inproceedings{chen2014stochastic,
+  title={Stochastic gradient {H}amiltonian {M}onte {C}arlo},
+  author={Chen, Tianqi and Fox, Emily and Guestrin, Carlos},
+  booktitle={International conference on machine learning},
+  pages={1683--1691},
+  year={2014},
+  organization={PMLR}
+}
+@inproceedings{lee2017deep,
+  author    = {Jaehoon Lee and
+               Yasaman Bahri and
+               Roman Novak and
+               Samuel S. Schoenholz and
+               Jeffrey Pennington and
+               Jascha Sohl{-}Dickstein},
+  title     = {Deep Neural Networks as {G}aussian Processes},
+  booktitle = {6th International Conference on Learning Representations, {ICLR} 2018},
+  year      = {2018},
+}
+
+@article{russo2016information,
+  title={An information-theoretic analysis of {T}hompson sampling},
+  author={Russo, Daniel and Van Roy, Benjamin},
+  journal={The Journal of Machine Learning Research},
+  volume={17},
+  number={1},
+  pages={2442--2471},
+  year={2016},
+}
+
+@article{mattner2003mean,
+  title={Mean absolute deviations of sample means and minimally concentrated binomials},
+  author={Mattner, Lutz},
+  journal={Annals of probability},
+  pages={914--925},
+  year={2003},
+  publisher={JSTOR}
+}
+
+@article{lu2021reinforcement,
+  title={Reinforcement Learning, Bit by Bit},
+  author={Lu, Xiuyuan and Van Roy, Benjamin and Dwaracherla, Vikranth and Ibrahimi, Morteza and Osband, Ian and Wen, Zheng},
+  journal={arXiv preprint arXiv:2103.04047},
+  year={2021}
+}
+
+@inproceedings{wang2021beyond,
+  title={Beyond Marginal Uncertainty: How Accurately can {B}ayesian Regression Models Estimate Posterior Predictive Correlations?},
+  author={Wang, Chaoqi and Sun, Shengyang and Grosse, Roger},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={2476--2484},
+  year={2021},
+  organization={PMLR}
+}
+
+@inproceedings{devlin2018bert,
+    title = "{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    author = "Devlin, Jacob  and
+      Chang, Ming-Wei  and
+      Lee, Kenton  and
+      Toutanova, Kristina",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    pages = "4171--4186",
+}
+
+@book{cover1999elements,
+  title={Elements of information theory},
+  author={Cover, Thomas M},
+  year={1999},
+  publisher={John Wiley \& Sons}
+}
+
+@inproceedings{he2016deep,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={770--778},
+  year={2016}
+}
+
+@article{gneiting2007strictly,
+  title={Strictly proper scoring rules, prediction, and estimation},
+  author={Gneiting, Tilmann and Raftery, Adrian E},
+  journal={Journal of the American statistical Association},
+  volume={102},
+  number={477},
+  pages={359--378},
+  year={2007},
+  publisher={Taylor \& Francis}
+}
+
+@article{recht2018cifar,
+  title={Do cifar-10 classifiers generalize to cifar-10?},
+  author={Recht, Benjamin and Roelofs, Rebecca and Schmidt, Ludwig and Shankar, Vaishaal},
+  journal={arXiv preprint arXiv:1806.00451},
+  year={2018}
+}
+
+@inproceedings{russo2016controlling,
+  title={Controlling bias in adaptive data analysis using information theory},
+  author={Russo, Daniel and Zou, James},
+  booktitle={Artificial Intelligence and Statistics},
+  pages={1232--1240},
+  year={2016},
+  organization={PMLR}
+}
+
+@misc{matthews2018gaussian,
+      title={Gaussian Process Behaviour in Wide Deep Neural Networks}, 
+      author={Alexander G. de G. Matthews and Mark Rowland and Jiri Hron and Richard E. Turner and Zoubin Ghahramani},
+      year={2018},
+      eprint={1804.11271},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+@article{kullback1951information,
+  title={On information and sufficiency},
+  author={Kullback, Solomon and Leibler, Richard A},
+  journal={The annals of mathematical statistics},
+  volume={22},
+  number={1},
+  pages={79--86},
+  year={1951},
+  publisher={JSTOR}
+}
+
+@misc{TFDS,
+  title = {{TensorFlow Datasets}, A collection of ready-to-use datasets},
+  howpublished = {\url{https://www.tensorflow.org/datasets}},
+}
+
+@software{jax2018github,
+  author = {James Bradbury and Roy Frostig and Peter Hawkins and Matthew James Johnson and Chris Leary and Dougal Maclaurin and George Necula and Adam Paszke and Jake Vander{P}las and Skye Wanderman-{M}ilne and Qiao Zhang},
+  title = {{JAX}: composable transformations of {P}ython+{N}um{P}y programs},
+  url = {http://github.com/google/jax},
+  version = {0.2.5},
+  year = {2018},
+}
+
+@article{wilson2020bayesian,
+  title={Bayesian deep learning and a probabilistic perspective of generalization},
+  author={Wilson, Andrew Gordon and Izmailov, Pavel},
+  journal={arXiv preprint arXiv:2002.08791},
+  year={2020}
+}
+
+@article{der2009aleatory,
+  title={Aleatory or epistemic? Does it matter?},
+  author={Der Kiureghian, Armen and Ditlevsen, Ove},
+  journal={Structural safety},
+  volume={31},
+  number={2},
+  pages={105--112},
+  year={2009},
+  publisher={Elsevier}
+}
+
+
+
+@article{osband2021epistemic,
+  title={Epistemic Neural Networks},
+  author={Osband, Ian and Wen, Zheng and Asghari, Mohammad and Dwaracherla, Vikranth and Ibrahimi, Morteza and Lu, Xiyuan and Van Roy, Benjamin},
+  journal={arXiv preprint arXiv:2107.08924},
+  year={2021}
+}
+
+
+@article{havasi2020mimo,
+  author    = {Marton Havasi and
+               Rodolphe Jenatton and
+               Stanislav Fort and
+               Jeremiah Zhe Liu and
+               Jasper Snoek and
+               Balaji Lakshminarayanan and
+               Andrew M. Dai and
+               Dustin Tran},
+  title     = {Training independent subnetworks for robust prediction},
+  journal   = {CoRR},
+  volume    = {abs/2010.06610},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2010.06610},
+  eprinttype = {arXiv},
+  eprint    = {2010.06610},
+  timestamp = {Tue, 20 Oct 2020 15:08:10 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2010-06610.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{nado2021uncertainty,
+  author = {Zachary Nado and Neil Band and Mark Collier and Josip Djolonga and Michael Dusenberry and Sebastian Farquhar and Angelos Filos and Marton Havasi and Rodolphe Jenatton and Ghassen Jerfel and Jeremiah Liu and Zelda Mariet and Jeremy Nixon and Shreyas Padhy and Jie Ren and Tim Rudner and Yeming Wen and Florian Wenzel and Kevin Murphy and D. Sculley and Balaji Lakshminarayanan and Jasper Snoek and Yarin Gal and Dustin Tran},
+  title = {{Uncertainty Baselines}:  Benchmarks for Uncertainty \& Robustness in Deep Learning},
+  journal = {arXiv preprint arXiv:2106.04015},
+  year = {2021},
+}
+
+
+@misc{sutton2019bitter,
+    author = {Richard Sutton},
+    title = {The Bitter Lesson},
+    year = {2019},
+    url = {http://www.incompleteideas.net/IncIdeas/BitterLesson.html},
+
+}
+
+@inproceedings{KendallGal17WhatUncertainties,
+ author = {Kendall, Alex and Gal, Yarin},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {},
+ title = {What Uncertainties Do We Need in {B}ayesian Deep Learning for Computer Vision?},
+ volume = {30},
+ year = {2017}
+}
+
+@article{ovadia2019can,
+  title={Can you trust your model's uncertainty? Evaluating predictive uncertainty under dataset shift},
+  author={Ovadia, Yaniv and Fertig, Emily and Ren, Jie and Nado, Zachary and Sculley, David and Nowozin, Sebastian and Dillon, Joshua V and Lakshminarayanan, Balaji and Snoek, Jasper},
+  journal={arXiv preprint arXiv:1906.02530},
+  year={2019}
+}
+
+@inproceedings{deng2009imagenet,
+  title={Imagenet: A large-scale hierarchical image database},
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  booktitle={2009 IEEE conference on computer vision and pattern recognition},
+  pages={248--255},
+  year={2009},
+  organization={Ieee}
+}
+
+@inproceedings{
+Dwaracherla2020Hypermodels,
+title={Hypermodels for Exploration},
+author={Vikranth Dwaracherla and Xiuyuan Lu and Morteza Ibrahimi and Ian Osband and Zheng Wen and Van Roy, Benjamin},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=ryx6WgStPB}
+}
+
+@article{andrieu2003introduction,
+  title={An introduction to MCMC for machine learning},
+  author={Andrieu, Christophe and De Freitas, Nando and Doucet, Arnaud and Jordan, Michael I},
+  journal={Machine learning},
+  volume={50},
+  number={1},
+  pages={5--43},
+  year={2003},
+  publisher={Springer}
+}
+
+@article{hron2017variational,
+  title={Variational {G}aussian dropout is not {B}ayesian},
+  author={Hron, Jiri and Matthews, Alexander G de G and Ghahramani, Zoubin},
+  journal={arXiv preprint arXiv:1711.02989},
+  year={2017}
+}
+
+@inproceedings{mitchell2019model,
+  title={Model cards for model reporting},
+  author={Mitchell, Margaret and Wu, Simone and Zaldivar, Andrew and Barnes, Parker and Vasserman, Lucy and Hutchinson, Ben and Spitzer, Elena and Raji, Inioluwa Deborah and Gebru, Timnit},
+  booktitle={Proceedings of the conference on fairness, accountability, and transparency},
+  pages={220--229},
+  year={2019}
+}
+
+@article{papamakarios2019normalizing,
+  title={Normalizing flows for probabilistic modeling and inference},
+  author={Papamakarios, George and Nalisnick, Eric and Rezende, Danilo Jimenez and Mohamed, Shakir and Lakshminarayanan, Balaji},
+  journal={arXiv preprint arXiv:1912.02762},
+  year={2019}
+}
+
+@misc{mandt2018stochastic,
+      title={Stochastic Gradient Descent as Approximate {B}ayesian Inference}, 
+      author={Stephan Mandt and Matthew D. Hoffman and David M. Blei},
+      year={2018},
+      eprint={1704.04289},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+@article{childs1967reduction,
+  title={Reduction of the multivariate normal integral to characteristic form},
+  author={Childs, Donald R},
+  journal={Biometrika},
+  volume={54},
+  number={1-2},
+  pages={293--300},
+  year={1967},
+  publisher={Oxford University Press}
+}
+
+@incollection{allais1990allais,
+	Author = {Allais, Maurice},
+	Booktitle = {Utility and probability},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Pages = {3--9},
+	Publisher = {Springer},
+	Title = {Allais paradox},
+	Year = {1990}}
+
+@article{o2017uncertainty,
+  title={The Uncertainty {B}ellman Equation and Exploration},
+  author={O'Donoghue, Brendan and Osband, Ian and Munos, Remi and Mnih, Volodymyr},
+  journal={arXiv preprint arXiv:1709.05380},
+  year={2017}
+}
+
+@Misc{miplib2017,
+  Title                    ={{MIPLIB} 2017},
+  Note                     ={http://miplib.zib.de},
+  Year                     ={2018},
+  Key                      ={miplib2017}
+}
+
+@article{moore1990efficient,
+  title={Efficient memory-based learning for robot control},
+  author={Moore, Andrew William},
+  year={1990},
+  publisher={Citeseer}
+}
+
+@article{milner1998cognitive,
+  title={Cognitive neuroscience and the study of memory},
+  author={Milner, Brenda and Squire, Larry R and Kandel, Eric R},
+  journal={Neuron},
+  volume={20},
+  number={3},
+  pages={445--468},
+  year={1998},
+  publisher={Elsevier}
+}
+
+@article{barto1983neuronlike,
+  title={Neuronlike adaptive elements that can solve difficult learning control problems},
+  author={Barto, Andrew G and Sutton, Richard S and Anderson, Charles W},
+  journal={IEEE transactions on systems, man, and cybernetics},
+  number={5},
+  pages={834--846},
+  year={1983},
+  publisher={IEEE}
+}
+
+@article{o1971hippocampus,
+  title={The hippocampus as a spatial map: preliminary evidence from unit activity in the freely-moving rat.},
+  author={O'Keefe, John and Dostrovsky, Jonathan},
+  journal={Brain research},
+  year={1971},
+  publisher={Elsevier Science}
+}
+
+@article{gittins1979bandit,
+  title={Bandit processes and dynamic allocation indices},
+  author={Gittins, John C},
+  journal={Journal of the Royal Statistical Society: Series B (Methodological)},
+  volume={41},
+  number={2},
+  pages={148--164},
+  year={1979},
+  publisher={Wiley Online Library}
+}
+
+@article{espeholt2018impala,
+  title={Impala: Scalable distributed deep-rl with importance weighted actor-learner architectures},
+  author={Espeholt, Lasse and Soyer, Hubert and Munos, Remi and Simonyan, Karen and Mnih, Volodymir and Ward, Tom and Doron, Yotam and Firoiu, Vlad and Harley, Tim and Dunning, Iain and others},
+  journal={arXiv preprint arXiv:1802.01561},
+  year={2018}
+}
+
+@article{bliss1993synaptic,
+  title={A synaptic model of memory: long-term potentiation in the hippocampus},
+  author={Bliss, Tim VP and Collingridge, Graham L},
+  journal={Nature},
+  volume={361},
+  number={6407},
+  pages={31},
+  year={1993},
+  publisher={Nature Publishing Group}
+}
+
+@article{lewin1943psychology,
+  title={Psychology and the process of group living},
+  author={Lewin, Kurt},
+  journal={The Journal of Social Psychology},
+  volume={17},
+  number={1},
+  pages={113--131},
+  year={1943},
+  publisher={Taylor \& Francis}
+}
+
+@inproceedings{henderson2018deep,
+  title={Deep reinforcement learning that matters},
+  author={Henderson, Peter and Islam, Riashat and Bachman, Philip and Pineau, Joelle and Precup, Doina and Meger, David},
+  booktitle={Thirty-Second AAAI Conference on Artificial Intelligence},
+  year={2018}
+}
+
+@article{campbell2002deep,
+  title={Deep blue},
+  author={Campbell, Murray and Hoane Jr, A Joseph and Hsu, Feng-hsiung},
+  journal={Artificial intelligence},
+  volume={134},
+  number={1-2},
+  pages={57--83},
+  year={2002},
+  publisher={Elsevier}
+}
+
+@inproceedings{kawaguchi2016deep,
+  title={Deep learning without poor local minima},
+  author={Kawaguchi, Kenji},
+  booktitle={Advances in neural information processing systems},
+  pages={586--594},
+  year={2016}
+}
+
+@article{belkin2018reconciling,
+  title={Reconciling modern machine learning and the bias-variance trade-off},
+  author={Belkin, Mikhail and Hsu, Daniel and Ma, Siyuan and Mandal, Soumik},
+  journal={arXiv preprint arXiv:1812.11118},
+  year={2018}
+}
+
+@book{boyd2004convex,
+  title={Convex optimization},
+  author={Boyd, Stephen and Vandenberghe, Lieven},
+  year={2004},
+  publisher={Cambridge university press}
+}
+
+@article{cortes1995support,
+  title={Support-vector networks},
+  author={Cortes, Corinna and Vapnik, Vladimir},
+  journal={Machine learning},
+  volume={20},
+  number={3},
+  pages={273--297},
+  year={1995},
+  publisher={Springer}
+}
+
+@article{ivakhnenko1968group,
+  title={The Group Method of Data of Handling; A rival of the method of stochastic approximation},
+  author={Ivakhnenko, Alexey Grigorevich},
+  journal={Soviet Automatic Control},
+  volume={13},
+  pages={43--55},
+  year={1968}
+}
+
+@article{fukushima1979neural,
+  title={Neural network model for a mechanism of pattern recognition unaffected by shift in position-Neocognitron},
+  author={Fukushima, Kunihiko},
+  journal={IEICE Technical Report, A},
+  volume={62},
+  number={10},
+  pages={658--665},
+  year={1979}
+}
+
+@article{rosenblatt1958perceptron,
+  title={The perceptron: a probabilistic model for information storage and organization in the brain.},
+  author={Rosenblatt, Frank},
+  journal={Psychological review},
+  volume={65},
+  number={6},
+  pages={386},
+  year={1958},
+  publisher={American Psychological Association}
+}
+
+@article{widrow199030,
+  title={30 years of adaptive neural networks: perceptron, madaline, and backpropagation},
+  author={Widrow, Bernard and Lehr, Michael A},
+  journal={Proceedings of the IEEE},
+  volume={78},
+  number={9},
+  pages={1415--1442},
+  year={1990},
+  publisher={IEEE}
+}
+
+@incollection{bottou2010large,
+  title={Large-scale machine learning with stochastic gradient descent},
+  author={Bottou, L{\'e}on},
+  booktitle={Proceedings of COMPSTAT'2010},
+  pages={177--186},
+  year={2010},
+  publisher={Springer}
+}
+
+
+@article{lecun1998gradient,
+  title={Gradient-based learning applied to document recognition},
+  author={LeCun, Yann and Bottou, L{\'e}on and Bengio, Yoshua and Haffner, Patrick and others},
+  journal={Proceedings of the IEEE},
+  volume={86},
+  number={11},
+  pages={2278--2324},
+  year={1998},
+  publisher={Taipei, Taiwan}
+}
+
+@article{samuel31959,
+  title={1959. Some studies oin machine learning using the game of checkers},
+  author={Samuel, AL},
+  journal={IBM Journal of Researchand Development},
+  volume={3},
+  pages={211--229}
+}
+
+@article{tang2017variational,
+  title={Variational Deep Q Network},
+  author={Tang, Yunhao and Kucukelbir, Alp},
+  journal={arXiv preprint arXiv:1711.11225},
+  year={2017}
+}
+
+@article{touati2018randomized,
+  title={Randomized Value Functions via Multiplicative Normalizing Flows},
+  author={Touati, Ahmed and Satija, Harsh and Romoff, Joshua and Pineau, Joelle and Vincent, Pascal},
+  journal={arXiv preprint arXiv:1806.02315},
+  year={2018}
+}
+
+@inproceedings{anschel2017averaged,
+	Author = {Anschel, Oron and Baram, Nir and Shimkin, Nahum},
+	Booktitle = {International Conference on Machine Learning},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Pages = {176--185},
+	Title = {Averaged-DQN: Variance Reduction and Stabilization for Deep Reinforcement Learning},
+	Year = {2017}}
+
+@article{aravkin2014sparse,
+	Author = {Aravkin, Aleksandr Y and Kambadur, Anju and Lozano, Aurelie C and Luss, Ronny},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {arXiv},
+	Title = {{Sparse Quantile Huber Regression for Efficient and Robust Estimation}},
+	Year = {2014}}
+
+@inproceedings{azar11speedy,
+	Author = {Mohammad G. Azar and R{\'e}mi Munos and Mohammad Gavamzadeh and Hilbert J. Kappen},
+	Booktitle = {Advances in Neural Information Processing Systems 24},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Speedy {Q}-Learning},
+	Year = {2011}}
+
+@inproceedings{azar12sample,
+	Author = {Azar, Mohammad Gheshlaghi and Munos, R{\'e}mi and Kappen, Hilbert},
+	Booktitle = {Proceedings of the International Conference on Machine Learning},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {On the Sample Complexity of Reinforcement Learning with a Generative Model},
+	Year = {2012}}
+
+@inproceedings{azar2012sample,
+	Author = {Azar, Mohammad Gheshlaghi and Munos, R{\'e}mi and Kappen, Hilbert J},
+	Booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {On the Sample Complexity of Reinforcement Learning with a Generative Model},
+	Year = {2012}}
+
+@inproceedings{barthmaron2018d4pg,
+	Author = {Barth-Maron, Gabriel and Hoffman, Matthew W. and Budden, David and Dabney, Will and Horgan, Dan and TB, Dhruva and Muldal, Alistair and Hess, Nicolas and Lillicrap, Timothy},
+	Booktitle = {Proceedings of the International Conference on Learning Representations (ICLR)},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Distributional Policy Gradients},
+	Year = {2018}}
+
+@article{bellemare13arcade,
+	Author = {Bellemare, Marc G and Naddaf, Yavar and Veness, Joel and Bowling, Michael},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Journal of Artificial Intelligence Research},
+	Pages = {253--279},
+	Title = {{The Arcade Learning Environment: An Evaluation Platform for General Agents.}},
+	Volume = {47},
+	Year = {2013}}
+
+@inproceedings{bellemare15arcade,
+	Author = {Marc G. Bellemare and Yavar Naddaf and Joel Veness and Michael Bowling},
+	Booktitle = {Presented at EWRL-15},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {The {A}rcade {L}earning {E}nvironment: An evaluation platform for general agents, Extended Abstract},
+	Year = 2015}
+
+@inproceedings{bellemare16increasing,
+	Author = {Marc G. Bellemare and Georg Ostrovski and Arthur Guez and Philip S. Thomas and R{\'e}mi Munos},
+	Booktitle = {Proceedings of the Thirtieth AAAI Conference},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Increasing the Action Gap: New Operators for Reinforcement Learning},
+	Year = {2016}}
+
+@article{bellemare17cramer,
+	Author = {Marc G. Bellemare and Ivo Danihelka and Will Dabney and Shakir Mohamed and Balaji Lakshminarayanan and Stephan Hoyer and R{\'e}mi Munos},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {arXiv},
+	Title = {The {C}ramer Distance as a Solution to Biased {W}asserstein Gradients},
+	Year = {2017}}
+
+@book{bellman57dynamic,
+	Address = {Princeton, NJ},
+	Author = {Richard E. Bellman},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Publisher = {Princeton University Press},
+	Title = {{Dynamic Programming}},
+	Year = {1957}}
+
+@book{bertsekas96neurodynamic,
+	Author = {Dimitri P. Bertsekas and John N. Tsitsiklis},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Publisher = {Athena Scientific},
+	Title = {{Neuro-Dynamic Programming}},
+	Year = {1996}}
+
+@article{bickel81asymptotic,
+	Author = {Bickel, Peter J. and Freedman, David A.},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {The Annals of Statistics},
+	Pages = {1196--1217},
+	Title = {{Some Asymptotic Theory for the Bootstrap}},
+	Year = {1981}}
+
+@book{billingsley95probability,
+	Author = {Billingsley, Patrick},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Publisher = {John Wiley \& Sons},
+	Title = {Probability and measure},
+	Year = {1995}}
+
+@article{bousquet2017optimal,
+	Author = {Bousquet, Olivier and Gelly, Sylvain and Tolstikhin, Ilya and Simon-Gabriel, Carl-Johann and Schoelkopf, Bernhard},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {arXiv preprint arXiv:1705.07642},
+	Title = {From optimal transport to generative modeling: the VEGAN cookbook},
+	Year = {2017}}
+
+@article{c51,
+	Author = {Bellemare, Marc G and Dabney, Will and Munos, R{\'e}mi},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Proceedings of the 34th International Conference on Machine Learning (ICML)},
+	Title = {{A Distributional Perspective on Reinforcement Learning}},
+	Year = {2017}}
+
+@article{caruana97multitask,
+	Author = {Rich Caruana},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Machine Learning},
+	Number = {1},
+	Pages = {41--75},
+	Publisher = {Springer},
+	Title = {{Multitask learning}},
+	Volume = {28},
+	Year = {1997}}
+
+@inproceedings{chow2014algorithms,
+	Author = {Chow, Yinlam and Ghavamzadeh, Mohammad},
+	Booktitle = {Advances in neural information processing systems},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Pages = {3509--3517},
+	Title = {Algorithms for CVaR optimization in MDPs},
+	Year = {2014}}
+
+@inproceedings{chow2015risk,
+	Author = {Chow, Yinlam and Tamar, Aviv and Mannor, Shie and Pavone, Marco},
+	Booktitle = {Advances in Neural Information Processing Systems (NIPS)},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Pages = {1522--1530},
+	Title = {{Risk-Sensitive and Robust Decision-Making: a CVaR Optimization Approach}},
+	Year = {2015}}
+
+@article{chung87discounted,
+	Author = {Chung, Kun-Jen and Sobel, Matthew J},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {SIAM Journal on Control and Optimization},
+	Number = {1},
+	Pages = {49--62},
+	Publisher = {SIAM},
+	Title = {Discounted MDP's: Distribution functions and exponential utility maximization},
+	Volume = {25},
+	Year = {1987}}
+
+@inproceedings{dabney2017qr,
+	Author = {Dabney, Will and Rowland, Mark and Bellemare, Marc G and Munos, R{\'e}mi},
+	Booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Distributional Reinforcement Learning with Quantile Regression},
+	Year = {2018}}
+
+@inproceedings{dearden98bayesian,
+	Author = {Richard Dearden and Nir Friedman and Stuart Russell},
+	Booktitle = {Proceedings of the National Conference on Artificial Intelligence},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Bayesian {Q}-learning},
+	Year = {1998}}
+
+@incollection{deelstra2011overview,
+	Author = {Deelstra, Griselda and Dhaene, Jan and Vanmaele, Michele},
+	Booktitle = {Advanced mathematical methods for finance},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Pages = {155--179},
+	Publisher = {Springer},
+	Title = {An overview of comonotonicity and its applications in finance and insurance},
+	Year = {2011}}
+
+@article{delage10percentile,
+	Author = {Delage, Erick and Mannor, Shie},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Operations research},
+	Number = {1},
+	Pages = {203--213},
+	Title = {Percentile optimization for {M}arkov decision processes with parameter uncertainty},
+	Volume = {58},
+	Year = {2010}}
+
+@article{dhaene2012remarks,
+	Author = {Dhaene, Jan and Kukush, Alexander and Linders, Dani{\"e}l and Tang, Qihe},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {European Actuarial Journal},
+	Number = {2},
+	Pages = {319--328},
+	Publisher = {Springer},
+	Title = {Remarks on quantiles and distortion risk measures},
+	Volume = {2},
+	Year = {2012}}
+
+@inproceedings{engel05reinforcement,
+	Author = {Engel, Yaakov and Mannor, Shie and Meir, Ron},
+	Booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Reinforcement Learning with {G}aussian Processes},
+	Year = {2005}}
+
+@inproceedings{neuraltangents2020,
+    title={Neural Tangents: Fast and Easy Infinite Neural Networks in Python},
+    author={Roman Novak and Lechao Xiao and Jiri Hron and Jaehoon Lee and Alexander A. Alemi and Jascha Sohl-Dickstein and Samuel S. Schoenholz},
+    booktitle={International Conference on Learning Representations},
+    year={2020},
+    url={https://github.com/google/neural-tangents}
+}
+
+@article{engel1857productions,
+	Author = {Engel, Ernst},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Zeitschrift des Statistischen Bureaus des K{\"o}niglich S{\"a}chsischen Ministeriums des Innern},
+	Pages = {1--54},
+	Title = {{Die Productions-und Consumtionsverh{\"a}ltnisse des K{\"o}nigreichs Sachsen}},
+	Volume = {8},
+	Year = {1857}}
+
+@article{expectiles,
+	Author = {Newey, Whitney K and Powell, James L},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Econometrica: Journal of the Econometric Society},
+	Pages = {819--847},
+	Publisher = {JSTOR},
+	Title = {Asymmetric least squares estimation and testing},
+	Year = {1987}}
+
+@article{feng2016ensemble,
+	Author = {Feng, Jiashi and Zahavy, Tom and Kang, Bingyi and Xu, Huan and Mannor, Shie},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {arXiv preprint arXiv:1602.02389},
+	Title = {Ensemble Robustness of Deep Learning Algorithms},
+	Year = {2016}}
+
+@article{geist10kalman,
+	Author = {Geist, Matthieu and Pietquin, Olivier},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Journal of Artificial Intelligence Research},
+	Pages = {483--532},
+	Title = {Kalman temporal differences},
+	Volume = {39},
+	Year = {2010}}
+
+@article{geist2010kalman,
+	Author = {Geist, Matthieu and Pietquin, Olivier},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Journal of artificial intelligence research},
+	Pages = {483--532},
+	Title = {Kalman temporal differences},
+	Volume = {39},
+	Year = {2010}}
+
+@article{goldstein1981intrinsic,
+	Author = {Goldstein, S and Misra, B and Courtage, M},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Journal of Statistical Physics},
+	Number = {1},
+	Pages = {111--126},
+	Publisher = {Springer},
+	Title = {{On Intrinsic Randomness of Dynamical Systems}},
+	Volume = {25},
+	Year = {1981}}
+
+@article{gonzalez1999shape,
+	Author = {Gonzalez, Richard and Wu, George},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Cognitive psychology},
+	Number = {1},
+	Pages = {129--166},
+	Publisher = {Elsevier},
+	Title = {On the shape of the probability weighting function},
+	Volume = {38},
+	Year = {1999}}
+
+@inproceedings{gordon95stable,
+	Author = {Geoffrey Gordon},
+	Booktitle = {Proceedings of the Twelfth International Conference on Machine Learning},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Stable function approximation in dynamic programming},
+	Year = {1995}}
+
+@inproceedings{gordon1995stable,
+	Author = {Gordon, Geoffrey J},
+	Booktitle = {Proceedings of the twelfth international conference on machine learning},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Pages = {261--268},
+	Title = {Stable function approximation in dynamic programming},
+	Year = {1995}}
+
+@inproceedings{gruslys2018reactor,
+	Author = {Gruslys, Audrunas and Dabney, Will and Azar, Mohammad Gheshlaghi and Piot, Bilal and Bellemare, Marc G and Munos, Remi},
+	Booktitle = {Proceedings of the International Conference on Learning Representations (ICLR)},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning},
+	Year = {2018}}
+
+@inproceedings{harutyunyan16qlambda,
+	Author = {Anna Harutyunyan and Marc G. Bellemare and Tom Stepleton and R{\'{e}}mi Munos},
+	Booktitle = {Proceedings of the Conference on Algorithmic Learning Theory},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Q({\(\lambda\)}) with Off-Policy Corrections},
+	Year = {2016}}
+
+@inproceedings{heger1994consideration,
+	Author = {Heger, Matthias},
+	Booktitle = {Proceedings of the 11th International Conference on Machine Learning},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Pages = {105--111},
+	Title = {{Consideration of Risk in Reinforcement Learning}},
+	Year = {1994}}
+
+@inproceedings{hessel2018rainbow,
+	Author = {Hessel, Matteo and Modayil, Joseph and Van Hasselt, Hado and Schaul, Tom and Ostrovski, Georg and Dabney, Will and Horgan, Dan and Piot, Bilal and Azar, Mohammad and Silver, David},
+	Booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Rainbow: Combining Improvements in Deep Reinforcement Learning},
+	Year = {2018}}
+
+@inproceedings{hoffman09expectation,
+	Author = {Hoffman, Matthew D. and de Freitas, Nando and Doucet, Arnaud and Peters, Jan},
+	Booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {An Expectation Maximization Algorithm for Continuous {M}arkov Decision Processes with Arbitrary Reward.},
+	Year = {2009}}
+
+@article{howard1972risk,
+	Author = {Howard, Ronald A and Matheson, James E},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Management science},
+	Number = {7},
+	Pages = {356--369},
+	Publisher = {INFORMS},
+	Title = {Risk-sensitive {M}arkov decision processes},
+	Volume = {18},
+	Year = {1972}}
+
+@article{huber1964robust,
+	Author = {Huber, Peter J},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {The Annals of Mathematical Statistics},
+	Number = {1},
+	Pages = {73--101},
+	Publisher = {Institute of Mathematical Statistics},
+	Title = {{Robust Estimation of a Location Parameter}},
+	Volume = {35},
+	Year = {1964}}
+
+@article{jaderberg17reinforcement,
+	Author = {Jaderberg, Max and Mnih, Volodymyr and Czarnecki, Wojciech Marian and Schaul, Tom and Leibo, Joel Z and Silver, David and Kavukcuoglu, Koray},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Proceedings of the International Conference on Learning Representations},
+	Title = {Reinforcement learning with unsupervised auxiliary tasks},
+	Year = {2017}}
+
+@article{jaquette73markov,
+	Author = {Jaquette, Stratton C.},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {The Annals of Statistics},
+	Number = {3},
+	Pages = {496--505},
+	Title = {Markov decision processes with a new optimality criterion: Discrete time},
+	Volume = {1},
+	Year = {1973}}
+
+@article{jones1994expectiles,
+	Author = {Jones, M Chris},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Statistics \& Probability Letters},
+	Number = {2},
+	Pages = {149--153},
+	Publisher = {Elsevier},
+	Title = {Expectiles and M-quantiles are quantiles},
+	Volume = {20},
+	Year = {1994}}
+
+@inproceedings{kakade02approximately,
+	Author = {Kakade, Sham and Langford, John},
+	Booktitle = {Proceedings of the International Conference on Machine Learning},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Approximately optimal approximate reinforcement learning},
+	Year = {2002}}
+
+@article{kingma2014adam,
+	Author = {Kingma, Diederik and Ba, Jimmy},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Proceedings of the International Conference on Learning Representations},
+	Title = {{Adam: A Method for Stochastic Optimization}},
+	Year = {2015}}
+
+@article{koenker2001quantile,
+	Author = {Koenker, Roger and Hallock, Kevin},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Journal of Economic Perspectives},
+	Number = {4},
+	Pages = {43--56},
+	Title = {{Quantile Regression: An Introduction}},
+	Volume = {15},
+	Year = {2001}}
+
+@article{kuindersma2013variable,
+	Author = {Kuindersma, Scott R and Grupen, Roderic A and Barto, Andrew G},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {The International Journal of Robotics Research},
+	Number = {7},
+	Pages = {806--825},
+	Publisher = {SAGE Publications Sage UK: London, England},
+	Title = {Variable risk control via stochastic optimization},
+	Volume = {32},
+	Year = {2013}}
+
+@inproceedings{lattimore12pac,
+	Author = {Tor Lattimore and Marcus Hutter},
+	Booktitle = {Proceedings of the Conference on Algorithmic Learning Theory},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {{PAC} bounds for discounted {MDP}s},
+	Year = {2012}}
+
+@inproceedings{lattimore2012pac,
+	Author = {Lattimore, Tor and Hutter, Marcus},
+	Booktitle = {International Conference on Algorithmic Learning Theory},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Organization = {Springer},
+	Pages = {320--334},
+	Title = {PAC bounds for discounted MDPs},
+	Year = {2012}}
+
+@inproceedings{levina2001earth,
+	Author = {Levina, Elizaveta and Bickel, Peter},
+	Booktitle = {The 8th IEEE International Conference on Computer Vision (ICCV)},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Organization = {IEEE},
+	Title = {{The Earth Mover's Distance is the Mallows Distance: Some Insights from Statistics}},
+	Year = {2001}}
+
+@article{lspi,
+	Author = {Lagoudakis, Michail G and Parr, Ronald},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Journal of machine learning research},
+	Number = {Dec},
+	Pages = {1107--1149},
+	Title = {Least-squares policy iteration},
+	Volume = {4},
+	Year = {2003}}
+
+@article{maddison2017particle,
+	Author = {Maddison, Chris J and Lawson, Dieterich and Tucker, George and Heess, Nicolas and Doucet, Arnaud and Mnih, Andriy and Teh, Yee Whye},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {arXiv preprint arXiv:1703.05820},
+	Title = {Particle Value Functions},
+	Year = {2017}}
+
+@article{majumdar2017should,
+	Author = {Majumdar, Anirudha and Pavone, Marco},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {arXiv preprint arXiv:1710.11040},
+	Title = {How should a robot assess risk? Towards an axiomatic theory of risk in robotics},
+	Year = {2017}}
+
+@article{mannor11meanvariance,
+	Author = {Shie Mannor and John N. Tsitsiklis},
+	Booktitle = {Proceedings of the International Conference on Machine Learning},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Mean-Variance Optimization in {M}arkov Decision Processes},
+	Year = {2011}}
+
+@incollection{marcus1997risk,
+	Author = {Marcus, Steven I and Fern{\'a}ndez-Gaucherand, Emmanual and Hern{\'a}ndez-Hernandez, Daniel and Coraluppi, Stefano and Fard, Pedram},
+	Booktitle = {Systems and control in the twenty-first century},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Pages = {263--279},
+	Publisher = {Springer},
+	Title = {Risk sensitive {M}arkov decision processes},
+	Year = {1997}}
+
+@phdthesis{mccallum95reinforcement,
+	Author = {Andrew K. McCallum},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	School = {University of Rochester},
+	Title = {Reinforcement learning with selective perception and hidden state},
+	Year = {1995}}
+
+@article{minsky61steps,
+	Author = {Marvin Minsky},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Proceedings of the IRE},
+	Title = {Steps towards artificial intelligence},
+	Year = {1961}}
+
+@article{mnih15nature,
+	Author = {Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Rusu, Andrei A and Veness, Joel and Bellemare, Marc G and Graves, Alex and Riedmiller, Martin and Fidjeland, Andreas K and Ostrovski, Georg and others},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Nature},
+	Number = {7540},
+	Pages = {529--533},
+	Publisher = {Nature Research},
+	Title = {{Human-level Control through Deep Reinforcement Learning}},
+	Volume = {518},
+	Year = {2015}}
+
+@article{moerland2017efficient,
+	Author = {Moerland, Thomas M and Broekens, Joost and Jonker, Catholijn M},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {arXiv preprint arXiv:1711.10789},
+	Title = {Efficient exploration with Double Uncertain Value Networks},
+	Year = {2017}}
+
+@inproceedings{morimura10parametric,
+	Author = {Morimura, Tetsuro and Hachiya, Hirotaka and Sugiyama, Masashi and Tanaka, Toshiyuki and Kashima, Hisashi},
+	Booktitle = {Proceedings of the Conference on Uncertainty in Artificial Intelligence (UAI)},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {{Parametric Return Density Estimation for Reinforcement Learning}},
+	Year = {2010}}
+
+@inproceedings{morimura2010nonparametric,
+	Author = {Morimura, Tetsuro and Sugiyama, Masashi and Kashima, Hisashi and Hachiya, Hirotaka and Tanaka, Toshiyuki},
+	Booktitle = {Proceedings of the 27th International Conference on Machine Learning (ICML-10)},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Pages = {799--806},
+	Title = {Nonparametric return distribution approximation for reinforcement learning},
+	Year = {2010}}
+
+@article{muller1997integral,
+	Author = {M{\"u}ller, Alfred},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Advances in Applied Probability},
+	Number = {2},
+	Pages = {429--443},
+	Publisher = {Cambridge University Press},
+	Title = {{Integral Probability Metrics and their Generating Classes of Functions}},
+	Volume = {29},
+	Year = {1997}}
+
+@inproceedings{nair15massively,
+	Author = {Nair, Arun and Srinivasan, Praveen and Blackwell, Sam and Alcicek, Cagdas and Fearon, Rory and De Maria, Alessandro and Panneershelvam, Vedavyas and Suleyman, Mustafa and Beattie, Charles and Petersen, Stig et al.},
+	Booktitle = {ICML Workshop on Deep Learning},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {{Massively Parallel Methods for Deep Reinforcement Learning}},
+	Year = {2015}}
+
+@inproceedings{osband2013more,
+	Author = {Osband, Ian and Russo, Daniel and Van Roy, Benjamin},
+	Booktitle = {Advances in Neural Information Processing Systems},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Pages = {3003--3011},
+	Title = {(More) efficient reinforcement learning via posterior sampling},
+	Year = {2013}}
+
+@inproceedings{popart,
+	Author = {van Hasselt, Hado P and Guez, Arthur and Hessel, Matteo and Mnih, Volodymyr and Silver, David},
+	Booktitle = {Advances in Neural Information Processing Systems},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Pages = {4287--4295},
+	Title = {Learning values across many orders of magnitude},
+	Year = {2016}}
+
+@inproceedings{prashanth13actorcritic,
+	Author = {Prashanth, LA and Ghavamzadeh, Mohammad},
+	Booktitle = {Advances in Neural Information Processing Systems},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Actor-critic algorithms for risk-sensitive MDPs},
+	Year = {2013}}
+
+@book{puterman94markov,
+	Author = {Martin L. Puterman},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Publisher = {John Wiley \& Sons, Inc.},
+	Title = {{M}arkov {D}ecision {P}rocesses: Discrete stochastic dynamic programming},
+	Year = {1994}}
+
+@book{qrbook,
+	Author = {Koenker, Roger},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Publisher = {{Cambridge University Press}},
+	Title = {{Quantile Regression}},
+	Year = {2005}}
+
+@article{rosler01contraction,
+	Author = {R{\"o}sler, Uwe and R{\"u}schendorf, Ludger},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Algorithmica},
+	Number = {1},
+	Pages = {3--33},
+	Title = {The contraction method for recursive algorithms},
+	Volume = {29},
+	Year = {2001}}
+
+@article{rosler92fixed,
+	Author = {R{\"o}sler, Uwe},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Stochastic Processes and their Applications},
+	Number = {2},
+	Pages = {195--214},
+	Title = {A fixed point theorem for distributions},
+	Volume = {42},
+	Year = {1992}}
+
+@inproceedings{rowland2018analysis,
+	Author = {Rowland, Mark and Bellemare, Marc G and Dabney, Will and Munos, Remi and Teh, Ree Whye},
+	Booktitle = {AISTATS},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {An Analysis of Categorical Distributional Reinforcement Learning},
+	Year = {2018}}
+
+@techreport{rummery94online,
+	Author = {Gavin A. Rummery and Mahesan Niranjan},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Institution = {Cambridge University Engineering Department},
+	Title = {{On-line Q-learning using Connectionist Systems}},
+	Year = {1994}}
+
+@inproceedings{schaul16prioritized,
+	Author = {Schaul, Tom and Quan, John and Antonoglou, Ioannis and Silver, David},
+	Booktitle = {Proceedings of the International Conference on Learning Representations (ICLR)},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {{Prioritized Experience Replay}},
+	Year = {2016}}
+
+@inproceedings{schaul2015universal,
+	Author = {Schaul, Tom and Horgan, Daniel and Gregor, Karol and Silver, David},
+	Booktitle = {International Conference on Machine Learning},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Pages = {1312--1320},
+	Title = {Universal value function approximators},
+	Year = {2015}}
+
+@article{sobel82variance,
+	Author = {Sobel, Matthew J.},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Journal of Applied Probability},
+	Number = {04},
+	Pages = {794--802},
+	Title = {The variance of discounted {M}arkov decision processes},
+	Volume = {19},
+	Year = {1982}}
+
+@inproceedings{sutton11horde,
+	Author = {Sutton, R.S. and Modayil, J. and Delp, M. and Degris, T. and Pilarski, P.M. and White, A. and Precup, D.},
+	Booktitle = {Proceedings of the International Conference on Autonomous Agents and Multiagents Systems},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Horde: A scalable real-time architecture for learning knowledge from unsupervised sensorimotor interaction},
+	Year = {2011}}
+
+@book{sutton98reinforcement,
+	Author = {Richard S. Sutton and Andrew G. Barto},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Publisher = {MIT Press},
+	Title = {{Reinforcement Learning: An Introduction}},
+	Year = {1998}}
+
+@inproceedings{sutton2011horde,
+	Author = {Sutton, Richard S and Modayil, Joseph and Delp, Michael and Degris, Thomas and Pilarski, Patrick M and White, Adam and Precup, Doina},
+	Booktitle = {The 10th International Conference on Autonomous Agents and Multiagent Systems-Volume 2},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Organization = {International Foundation for Autonomous Agents and Multiagent Systems},
+	Pages = {761--768},
+	Title = {Horde: A scalable real-time architecture for learning knowledge from unsupervised sensorimotor interaction},
+	Year = {2011}}
+
+@inproceedings{tamar2013temporal,
+	Author = {Tamar, Aviv and Di Castro, Dotan and Mannor, Shie},
+	Booktitle = {ICML (3)},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Pages = {495--503},
+	Title = {Temporal Difference Methods for the Variance of the Reward To Go.},
+	Year = {2013}}
+
+@article{tamar2016learning,
+	Author = {Tamar, Aviv and Di Castro, Dotan and Mannor, Shie},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Journal of Machine Learning Research},
+	Number = {13},
+	Pages = {1--36},
+	Title = {Learning the variance of the reward-to-go},
+	Volume = {17},
+	Year = {2016}}
+
+@article{taylor1999quantile,
+	Author = {Taylor, James W},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {The Journal of Derivatives},
+	Number = {1},
+	Pages = {64--78},
+	Publisher = {Institutional Investor Journals},
+	Title = {{A Quantile Regression Approach to Estimating the Distribution of Multiperiod Returns}},
+	Volume = {7},
+	Year = {1999}}
+
+@article{taylor2000quantile,
+	Author = {Taylor, James W},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Journal of Forecasting},
+	Number = {4},
+	Pages = {299--311},
+	Title = {A quantile regression neural network approach to estimating the conditional density of multiperiod returns},
+	Volume = {19},
+	Year = {2000}}
+
+@article{tieleman2012lecture,
+	Author = {Tieleman, Tijmen and Hinton, Geoffrey},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {COURSERA: Neural Networks for Machine Learning},
+	Number = {2},
+	Title = {Lecture 6.5: RMSProp},
+	Volume = {4},
+	Year = {2012}}
+
+@article{tolstikhin2017wasserstein,
+	Author = {Tolstikhin, Ilya and Bousquet, Olivier and Gelly, Sylvain and Schoelkopf, Bernhard},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {arXiv preprint arXiv:1711.01558},
+	Title = {Wasserstein Auto-Encoders},
+	Year = {2017}}
+
+@inproceedings{toussaint06probabilistic,
+	Author = {Toussaint, Marc and Storkey, Amos},
+	Booktitle = {Proceedings of the International Conference on Machine Learning},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Probabilistic inference for solving discrete and continuous state {M}arkov Decision Processes},
+	Year = {2006}}
+
+@article{tsitsiklis02convergence,
+	Author = {John N. Tsitsiklis},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Journal of Machine Learning Research},
+	Pages = {59--72},
+	Title = {On the convergence of optimistic policy iteration},
+	Volume = {3},
+	Year = {2002}}
+
+@article{tsitsiklis97analysis,
+	Author = {John N. Tsitsiklis and Benjamin {Van Roy}},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {IEEE Transactions on Automatic Control},
+	Number = {5},
+	Pages = {674--690},
+	Publisher = {IEEE},
+	Title = {{An Analysis of Temporal-Difference Learning with Function Approximation}},
+	Volume = {42},
+	Year = {1997}}
+
+@article{tversky1992advances,
+	Author = {Tversky, Amos and Kahneman, Daniel},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Journal of Risk and uncertainty},
+	Number = {4},
+	Pages = {297--323},
+	Publisher = {Springer},
+	Title = {Advances in prospect theory: Cumulative representation of uncertainty},
+	Volume = {5},
+	Year = {1992}}
+
+@article{unifiedmdp,
+	Author = {White, Martha},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Proceedings of the 34th International Conference on Machine Learning (ICML)},
+	Title = {Unifying task specification in reinforcement learning},
+	Year = {2017}}
+
+@article{utgoff02many,
+	Author = {Paul E. Utgoff and David J. Stracuzzi},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Neural Computation},
+	Number = {10},
+	Pages = {2497--2529},
+	Title = {Many-Layered Learning},
+	Volume = {14},
+	Year = {2002}}
+
+@inproceedings{vandenoord16pixel,
+	Author = {Aaron {Van den Oord} and Nal Kalchbrenner and Koray Kavukcuoglu},
+	Booktitle = {Proceedings of the International Conference on Machine Learning},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Pixel Recurrent Neural Networks},
+	Year = {2016}}
+
+@inproceedings{vanhasselt16deep,
+	Author = {Hado van Hasselt and Arthur Guez and David Silver},
+	Booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {{Deep Reinforcement Learning with Double Q-Learning}},
+	Year = {2016}}
+
+@inproceedings{veness15compress,
+	Author = {Joel Veness and Marc G. Bellemare and Marcus Hutter and Alvin Chua and Guillaume Desjardins},
+	Booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {Compress and Control},
+	Year = {2015}}
+
+@book{von1947theory,
+	Author = {von Neumann, John and Morgenstern, Oskar},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Publisher = {Princeton University Press},
+	Title = {Theory of Games and Economic Behavior},
+	Year = {1947}}
+
+@article{wang08dual,
+	Author = {Wang, Tao and Lizotte, Daniel and Bowling, Michael and Schuurmans, Dale},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Journal of Machine Learning Research},
+	Pages = {1--29},
+	Title = {Dual representations for dynamic programming},
+	Year = {2008}}
+
+@article{wang1996premium,
+	Author = {Wang, Shaun},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {ASTIN Bulletin: The Journal of the IAA},
+	Number = {1},
+	Pages = {71--92},
+	Publisher = {Cambridge University Press},
+	Title = {Premium calculation by transforming the layer premium density},
+	Volume = {26},
+	Year = {1996}}
+
+@article{wang2000class,
+	Author = {Wang, Shaun S},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Journal of risk and insurance},
+	Pages = {15--36},
+	Publisher = {JSTOR},
+	Title = {A class of distortion operators for pricing financial and insurance risks},
+	Year = {2000}}
+
+@inproceedings{wang2016dueling,
+	Author = {Wang, Ziyu and Schaul, Tom and Hessel, Matteo and Hasselt, Hado van and Lanctot, Marc and de Freitas, Nando},
+	Booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {{Dueling Network Architectures for Deep Reinforcement Learning}},
+	Year = {2016}}
+
+@phdthesis{watkins1989learning,
+	Author = {Watkins, Christopher John Cornish Hellaby},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	School = {King's College, Cambridge},
+	Title = {Learning from delayed rewards},
+	Year = {1989}}
+
+@article{watkins1992q,
+	Author = {Watkins, Christopher JCH and Dayan, Peter},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Machine Learning},
+	Number = {3},
+	Pages = {279--292},
+	Publisher = {Springer Netherlands},
+	Title = {Q-learning},
+	Volume = {8},
+	Year = {1992}}
+
+@inproceedings{wgan,
+	Author = {Arjovsky, Martin and Chintala, Soumith and Bottou, L{\'e}on},
+	Booktitle = {Proceedings of the 34th International Conference on Machine Learning (ICML)},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Title = {{W}asserstein Generative Adversarial Networks},
+	Year = {2017}}
+
+@article{white88mean,
+	Author = {White, D. J.},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Journal of Optimization Theory and Applications},
+	Number = {1},
+	Pages = {1--29},
+	Title = {Mean, variance, and probabilistic criteria in finite {M}arkov decision processes: a review},
+	Volume = {56},
+	Year = {1988}}
+
+@article{wu1996curvature,
+	Author = {Wu, George and Gonzalez, Richard},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Management science},
+	Number = {12},
+	Pages = {1676--1690},
+	Publisher = {INFORMS},
+	Title = {Curvature of the probability weighting function},
+	Volume = {42},
+	Year = {1996}}
+
+@article{yaari1987dual,
+	Author = {Yaari, Menahem E},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Journal = {Econometrica: Journal of the Econometric Society},
+	Pages = {95--115},
+	Publisher = {JSTOR},
+	Title = {The dual theory of choice under risk},
+	Year = {1987}}
+
+@inproceedings{yu2016more,
+	Author = {Yu, Kuan-Ting and Bauza, Maria and Fazeli, Nima and Rodriguez, Alberto},
+	Booktitle = {Intelligent Robots and Systems (IROS), 2016 IEEE/RSJ International Conference on},
+	Date-Added = {2018-05-18 14:57:39 +0000},
+	Date-Modified = {2018-05-18 14:57:39 +0000},
+	Organization = {IEEE},
+	Pages = {30--37},
+	Title = {More than a million ways to be pushed. a high-fidelity experimental dataset of planar pushing},
+	Year = {2016}}
+
+@inproceedings{abbeel2004apprenticeship,
+	Author = {Abbeel, Pieter and Ng, Andrew},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Apprenticeship learning via inverse reinforcement learning},
+	Year = {2004}}
+
+@misc{additionalmaterial,
+	Author = {Anonymous},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Learning from demonstrations: is it worth estimating a reward function?(extended)}}
+
+@inproceedings{andrychowicz2017hindsight,
+	Author = {Andrychowicz, Marcin and Crow, Dwight and Ray, Alex and Schneider, Jonas and Fong, Rachel and Welinder, Peter and McGrew, Bob and Tobin, Josh and Abbeel, Pieter and Zaremba, Wojciech},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Hindsight experience replay},
+	Year = {2017}}
+
+@article{anonymous2018the,
+	Author = {Anonymous},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Proc. of ICLR},
+	Title = {The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning},
+	Url = {https://openreview.net/forum?id=rkHVZWZAZ},
+	Year = {2018},
+	Bdsk-Url-1 = {https://openreview.net/forum?id=rkHVZWZAZ}}
+
+@inproceedings{antos2007fitted,
+	Author = {Antos, A. and Munos, R. and Szepesv{\'a}ri, C.},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {{Fitted-Q iteration in continuous action-space MDPs.}},
+	Year = {2007}}
+
+@article{antos2008learning,
+	Author = {Antos, A. and Szepesv{\'a}ri, C. and Munos, R.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Machine Learning},
+	Publisher = {Springer},
+	Title = {{Learning near-optimal policies with {B}ellman-residual minimization based fitted policy iteration and a single sample path}},
+	Year = {2008}}
+
+@article{archibald1995generation,
+	Author = {Archibald, T. and McKinnon, K. and Thomas, L.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Journal of the Operational Research Society},
+	Publisher = {JSTOR},
+	Title = {{On the generation of {M}arkov decision processes}},
+	Year = {1995}}
+	
+@article{gawlikowski2021survey,
+  title={A survey of uncertainty in deep neural networks},
+  author={Gawlikowski, Jakob and Tassi, Cedrique Rovile Njieutcheu and Ali, Mohsin and Lee, Jongseok and Humt, Matthias and Feng, Jianxiang and Kruspe, Anna and Triebel, Rudolph and Jung, Peter and Roscher, Ribana and others},
+  journal={arXiv preprint arXiv:2107.03342},
+  year={2021}
+}
+
+@article{brown2020language,
+  title={Language models are few-shot learners},
+  author={Brown, Tom B and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and others},
+  journal={arXiv preprint arXiv:2005.14165},
+  year={2020}
+}
+
+@article{argall2009survey,
+	Author = {Argall, B. and Chernova, S. and Veloso, M. and Browning, B.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Robotics and autonomous systems},
+	Number = {5},
+	Pages = {469--483},
+	Publisher = {Elsevier},
+	Title = {A survey of robot learning from demonstration},
+	Volume = {57},
+	Year = {2009}}
+
+@article{aronszajn1950theory,
+	Author = {Aronszajn, N.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Transactions of the American mathematical society},
+	Publisher = {JSTOR},
+	Title = {Theory of reproducing kernels},
+	Year = {1950}}
+
+@inproceedings{atkeson1997robot,
+	Author = {Atkeson, Christopher and Schaal, Stefan},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Robot learning from demonstration},
+	Year = {1997}}
+
+@article{auer2002nonstochastic,
+	Author = {Auer, Peter and Cesa-Bianchi, Nicolo and Freund, Yoav and Schapire, Robert E},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {SIAM journal on computing},
+	Number = {1},
+	Pages = {48--77},
+	Publisher = {SIAM},
+	Title = {The nonstochastic multiarmed bandit problem},
+	Volume = {32},
+	Year = {2002}}
+
+@article{azar2012dynamic,
+	Author = {Azar, M.G. and G{\'o}mez, V. and Kappen, H.J},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {The Journal of Machine Learning Research},
+	Number = {1},
+	Publisher = {JMLR. org},
+	Title = {Dynamic policy programming},
+	Volume = {13},
+	Year = {2012}}
+
+@inproceedings{azar2017minimax,
+	Author = {Azar, Mohammad Gheshlaghi and Osband, Ian and Munos, R{\'e}mi},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Minimax Regret Bounds for Reinforcement Learning},
+	Year = {2017}}
+
+@inproceedings{baird1995residual,
+	Author = {Baird, L.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {{Residual algorithms: reinforcement learning with function approximation}},
+	Year = {1995}}
+
+@inproceedings{bellemare2014skip,
+	Author = {Bellemare, Marc and Veness, Joel and Talvitie, Erik},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Skip context tree switching},
+	Year = {2014}}
+
+@inproceedings{bellemare2015arcade,
+	Author = {Bellemare, Marc and Naddaf, Yavar and Veness, Joel and Bowling, Michael},
+	Booktitle = {Proc. of IJCAI},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {The {A}rcade {L}earning {E}nvironment: An evaluation platform for general agents},
+	Year = {2015}}
+
+@inproceedings{bellemare2017distributional,
+	Author = {Bellemare, Marc G and Dabney, Will and Munos, R{\'e}mi},
+	Booktitle = {International Conference on Machine Learning},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Pages = {449--458},
+	Title = {A Distributional Perspective on Reinforcement Learning},
+	Year = {2017}}
+
+@book{bellman1965dynamic,
+	Author = {Bellman, Richard and Kalaba, Robert},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {Academic Press New York},
+	Title = {Dynamic programming and modern control theory},
+	Year = {1965}}
+
+@inproceedings{bengio2009curriculum,
+	Author = {Bengio, Yoshua and Louradour, J{\'e}r{\^o}me and Collobert, Ronan and Weston, Jason},
+	Booktitle = {Proceedings of the 26th annual international conference on machine learning},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Organization = {ACM},
+	Pages = {41--48},
+	Title = {Curriculum learning},
+	Year = {2009}}
+
+@book{bertsekas1995dynamic,
+	Author = {Bertsekas, Dimitri},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {Athena Scientific, Belmont, MA},
+	Title = {Dynamic programming and optimal control},
+	Volume = {1},
+	Year = {1995}}
+
+@inproceedings{bhatnagar2007incremental,
+	Author = {Bhatnagar, S. and Ghavamzadeh, M. and Lee, M. and Sutton, R.S.},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Pages = {105--112},
+	Title = {Incremental natural actor-critic algorithms},
+	Year = {2007}}
+
+@inproceedings{boularias2011relative,
+	Author = {Boularias, A. and Kober, J. and Peters, J.},
+	Booktitle = {Proc. of AISTATS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Relative entropy inverse reinforcement learning},
+	Year = {2011}}
+
+@article{bradtke1996linear,
+	Author = {Bradtke, S. and Barto, A.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Machine Learning},
+	Publisher = {Springer},
+	Title = {Linear least-squares algorithms for temporal difference learning},
+	Year = {1996}}
+
+@article{brafman2003r,
+	Author = {Brafman, R.I. and Tennenholtz, M.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {The Journal of Machine Learning Research},
+	Publisher = {JMLR. org},
+	Title = {R-max-a general polynomial time algorithm for near-optimal reinforcement learning},
+	Volume = {3},
+	Year = {2003}}
+
+@book{breiman1993classification,
+	Author = {Breiman, L.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {CRC press},
+	Title = {Classification and regression trees},
+	Year = {1993}}
+
+@book{buffet2008processus,
+	Author = {Buffet, Olivier and Sigaud, Olivier and others},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Processus d{\'e}cisionnels de {M}arkov en intelligence artificielle},
+	Volume = {2},
+	Year = {2008}}
+
+@inproceedings{busoniu2010online,
+	Author = {Busoniu, L. and Ernst, D. and De Schutter, B. and Babuska, R.},
+	Booktitle = {Proc. of American Control Conference (ACC)},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Online least-squares policy iteration for reinforcement learning control},
+	Year = {2010}}
+
+@inproceedings{chemali2015direct,
+	Author = {Chemali, Jessica and Lazaric, Alessandro},
+	Booktitle = {Proc. of IJCAI},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Direct Policy Iteration with Demonstrations.},
+	Year = {2015}}
+
+@article{clarke1975generalized,
+	Author = {Clarke, F.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Transactions of the American Mathematical Society},
+	Title = {Generalized gradients and applications},
+	Year = {1975}}
+
+@article{correa1993convergence,
+	Author = {Correa, Rafael and Lemar{\'e}chal, Claude},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Mathematical Programming},
+	Publisher = {Springer},
+	Title = {Convergence of some algorithms for convex minimization},
+	Volume = {62},
+	Year = {1993}}
+
+@article{cruz2017pre,
+	Author = {Cruz Jr, Gabriel V and Du, Yunshu and Taylor, Matthew E},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1709.04083},
+	Title = {Pre-training Neural Networks with Human Demonstrations for Deep Reinforcement Learning},
+	Year = {2017}}
+
+@article{de2003linear,
+	Author = {de Farias, D.P. and Van Roy, B.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Operations Research},
+	Publisher = {INFORMS},
+	Title = {The linear programming approach to approximate dynamic programming},
+	Volume = {51},
+	Year = {2003}}
+
+@inproceedings{degris2012model,
+	Author = {Degris, T. and Pilarski, P. M and Sutton, R.S.},
+	Booktitle = {Proc. of ACC},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Pages = {2177--2182},
+	Title = {Model-free reinforcement learning with continuous action in practice},
+	Year = {2012}}
+
+@inproceedings{degris2012off,
+	Author = {Degris, T. and White, M. and Sutton, R.S.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Off-Policy Actor-Critic},
+	Year = {2012}}
+
+@article{deisenroth2013survey,
+	Author = {Deisenroth, M. P. and Neumann, G. and Peters, J. and others},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Foundations and Trends in Robotics},
+	Number = {1-2},
+	Pages = {1--142},
+	Title = {A Survey on Policy Search for Robotics.},
+	Volume = {2},
+	Year = {2013}}
+
+@inproceedings{desai2009smoothed,
+	Author = {Desai, Vijay and Farias, Vivek and Moallemi, Ciamac C},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Pages = {459--467},
+	Title = {A smoothed approximate linear program},
+	Year = {2009}}
+
+@article{devroye1978uniform,
+	Author = {Devroye, L.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Canadian Journal of Statistics},
+	Publisher = {Wiley Online Library},
+	Title = {The uniform convergence of the nadaraya-watson regression function estimate},
+	Volume = {6},
+	Year = {1978}}
+
+@article{devroye1978uniform2,
+	Author = {Devroye, L.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {IEEE Transactions on Information Theory},
+	Title = {The uniform convergence of nearest neighbor regression function estimators and their application in optimization},
+	Volume = {24},
+	Year = {1978}}
+
+@inproceedings{diederik2015adam,
+	Author = {Kingma, Diederik P. and Ba, Jimmy},
+	Booktitle = {Proc. of ICLR},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Adam: A Method for Stochastic Optimization},
+	Year = {2015}}
+
+@inproceedings{durugkar2017constrained,
+	Author = {Durugkar, Ishan and Stone, Peter},
+	Booktitle = {Deep Reinforcement Learning Symposium, NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {{TD} Learning with Constrained Gradients},
+	Year = {2017}}
+
+@inproceedings{engel2002sparse,
+	Author = {Engel, Y. and Mannor, S. and Meir, R.},
+	Booktitle = {Proc. of ECML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Sparse online greedy support vector regression},
+	Year = {2002}}
+
+@inproceedings{ernst2005tree,
+	Author = {Ernst, D. and Geurts, P. and Wehenkel, L.},
+	Booktitle = {Journal of Machine Learning Research},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Tree-based batch mode reinforcement learning},
+	Year = {2005}}
+
+@article{evgeniou2000regularization,
+	Author = {Evgeniou, T. and Pontil, M. and Poggio, T.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Advances in Computational Mathematics},
+	Number = {1},
+	Pages = {1--50},
+	Publisher = {Springer},
+	Title = {Regularization networks and support vector machines},
+	Volume = {13},
+	Year = {2000}}
+
+@article{farahmand2010error,
+	Author = {Farahmand, A. and Munos, R. and Szepesv{\'a}ri, Csaba.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Proc. of NIPS},
+	Title = {Error propagation for approximate policy and value iteration},
+	Year = {2010}}
+
+@inproceedings{ferns2004metrics,
+	Author = {Ferns, N. and Panangaden, P. and Precup, D.},
+	Booktitle = {Proc. of UAI},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Pages = {162--169},
+	Title = {{Metrics for finite {M}arkov decision processes}},
+	Year = {2004}}
+
+@book{filar1991algorithm,
+	Author = {Filar, J. A. and Tolwinski, B.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {Springer},
+	Title = {On the Algorithm of Pollatschek and Avi-ltzhak},
+	Year = {1991}}
+
+@incollection{fix2012monte,
+	Author = {Fix, Jeremy and Geist, Matthieu},
+	Booktitle = {Swarm and Evolutionary Computation},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Pages = {75--83},
+	Publisher = {Springer},
+	Title = {Monte-{C}arlo swarm policy search},
+	Year = {2012}}
+
+@article{flanders1973differentiation,
+	Author = {Flanders, H.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {The American Mathematical Monthly},
+	Number = {6},
+	Pages = {615--627},
+	Publisher = {JSTOR},
+	Title = {Differentiation under the integral sign},
+	Volume = {80},
+	Year = {1973}}
+
+@inproceedings{fortunato2017noisy,
+	Author = {Fortunato, Meire and Azar, Mohammad Gheshlaghi and Piot, Bilal and Menick, Jacob and Osband, Ian and Graves, Alex and Mnih, Vlad and Munos, Remi and Hassabis, Demis and Pietquin, Olivier and others},
+	Booktitle = {Proc. of ICLR},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Noisy networks for exploration},
+	Year = {2018}}
+
+@inproceedings{gaskett1999q,
+	Author = {Gaskett, C. and Wettergreen, D. and Zelinsky, A.},
+	Booktitle = {Australasian Joint Conference on Artificial Intelligence},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Organization = {Springer},
+	Pages = {417--428},
+	Title = {Q-learning in continuous state and action spaces},
+	Year = {1999}}
+
+@article{geurts2006extremely,
+	Author = {Geurts, P. and Ernst, D. and Wehenkel, L.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Machine learning},
+	Publisher = {Springer},
+	Title = {Extremely randomized trees},
+	Year = {2006}}
+
+@article{graves2017automated,
+	Author = {Graves, Alex and Bellemare, Marc G and Menick, Jacob and Munos, Remi and Kavukcuoglu, Koray},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1704.03003},
+	Title = {Automated Curriculum Learning for Neural Networks},
+	Year = {2017}}
+
+@inproceedings{grubb2011generalized,
+	Author = {Grubb, A. and Bagnell, J.A.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Generalized boosting algorithms for convex optimization},
+	Year = {2011}}
+
+@inproceedings{gruslys2018the,
+	Author = {Gruslys, Audrunas and Dabney, Will and Gheshlaghi Azar, Mohammad and Piot, Bilal and Bellemare, Marc and Munos, Remi},
+	Booktitle = {Proc. of ICLR},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {The Reactor: A fast and sample-efficient Actor-Critic agent for Reinforcement Learning},
+	Year = {2018}}
+
+@inproceedings{gu2016continuous,
+	Author = {Gu, S. and Lillicrap, T. and Sutskever, I. and Levine, S.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Continuous Deep Q-Learning with Model-based Acceleration},
+	Year = {2016}}
+
+@article{guermeur2007vc,
+	Author = {Guermeur, Y.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Journal of Machine Learning Research},
+	Publisher = {JMLR},
+	Title = {VC theory of large margin multi-category classifiers},
+	Year = {2007}}
+
+@book{gyorfi2002distribution,
+	Author = {Gy{\"o}rfi, L. and Krzyzak, A.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {Springer},
+	Title = {A distribution-free theory of nonparametric regression},
+	Year = {2002}}
+
+@book{hernandez1996discrete,
+	Author = {Hern{\'a}ndez-Lerma, O. and Lasserre, J.B.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {Springer},
+	Title = {Discrete-time {M}arkov control processes},
+	Year = {1996}}
+
+@inproceedings{hessel2017rainbow,
+	Author = {Hessel, Matteo and Modayil, Joseph and Van Hasselt, Hado and Schaul, Tom and Ostrovski, Georg and Dabney, Will and Horgan, Dan and Piot, Bilal and Azar, Mohammad G. and Silver, David},
+	Booktitle = {Proc. of AAAI},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Rainbow: Combining Improvements in Deep Reinforcement Learning},
+	Year = {2018}}
+
+@article{hester2017learning,
+	Author = {Hester, Todd and Vecerik, Matej and Pietquin, Olivier and Lanctot, Marc and Schaul, Tom and Piot, Bilal and Sendonaris, Andrew and Dulac-Arnold, Gabriel and Osband, Ian and Agapiou, John},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Proc. of AAAI},
+	Title = {Deep {Q}-learning from Demonstrations},
+	Year = {2018}}
+
+@incollection{hiriart1985generalized,
+	Author = {Hiriart-Urruty, J.B},
+	Booktitle = {Convexity and duality in optimization},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {Springer},
+	Title = {{Generalized differentiability, duality and optimization for problems dealing with differences of convex functions}},
+	Year = {1985}}
+
+@inproceedings{ho2016generative,
+	Author = {Ho, Jonathan and Ermon, Stefano},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Generative adversarial imitation learning},
+	Year = {2016}}
+
+@inproceedings{horgan2018distributed,
+	Author = {Horgan, Dan and Quan, John and Budden, David and Barth-Maron, Gabriel and Hessel, Matteo and van Hasselt, Hado and Silver, David},
+	Booktitle = {Proc. of ICLR},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Distributed Prioritized Experience Replay},
+	Year = {2018}}
+
+@article{hosu2016playing,
+	Author = {Hosu, Ionel-Alexandru and Rebedea, Traian},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1607.05077},
+	Title = {Playing {A}tari Games with Deep Reinforcement Learning and Human Checkpoint Replay},
+	Year = {2016}}
+
+@article{jaksch2010near,
+	Author = {Jaksch, Thomas and Ortner, Ronald and Auer, Peter},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Journal of Machine Learning Research},
+	Number = {Apr},
+	Pages = {1563--1600},
+	Title = {Near-optimal regret bounds for reinforcement learning},
+	Volume = {11},
+	Year = {2010}}
+	
+@article{wang2020wisdom,
+  title={Wisdom of Committees: An Overlooked Approach To Faster and More Accurate Models},
+  author={Wang, Xiaofang and Kondratyuk, Dan and Christiansen, Eric and Kitani, Kris M and Alon, Yair and Eban, Elad},
+  journal={arXiv preprint arXiv:2012.01988},
+  year={2020}
+}
+
+@article{osband2019behaviour,
+  title={Behaviour suite for reinforcement learning},
+  author={Osband, Ian and Doron, Yotam and Hessel, Matteo and Aslanides, John and Sezener, Eren and Saraiva, Andre and McKinney, Katrina and Lattimore, Tor and Szepesvari, Csaba and Singh, Satinder and others},
+  journal={arXiv preprint arXiv:1908.03568},
+  year={2019}
+}
+
+@inproceedings{jiang2015dependence,
+	Author = {Jiang, Nan and Kulesza, Alex and Singh, Satinder and Lewis, Richard},
+	Booktitle = {Proceedings of the 2015 International Conference on Autonomous Agents and Multiagent Systems},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Organization = {International Foundation for Autonomous Agents and Multiagent Systems},
+	Pages = {1181--1189},
+	Title = {The dependence of effective planning horizon on model accuracy},
+	Year = {2015}}
+
+@inproceedings{judah2012active,
+	Author = {Judah, K. and Fern, A.P. and Dietterich, T.G.},
+	Booktitle = {Proc. of UAI},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Active Imitation Learning via Reduction to IID Active Learning},
+	Year = {2012}}
+
+@inproceedings{kakade2002approximately,
+	Author = {Kakade, S. and Langford, J.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Pages = {267--274},
+	Title = {Approximately optimal approximate reinforcement learning},
+	Volume = {2},
+	Year = {2002}}
+
+@article{kalman1964linear,
+	Author = {Kalman, Rudolf Emil},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Journal of Basic Engineering},
+	Pages = {51},
+	Title = {When is a linear control system optimal?},
+	Volume = {86},
+	Year = {1964}}
+
+@article{kearns2002near,
+	Author = {Kearns, M. and Singh, S.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Machine Learning},
+	Publisher = {Springer},
+	Title = {Near-optimal reinforcement learning in polynomial time},
+	Volume = {49},
+	Year = {2002}}
+
+@inproceedings{kim2013learning,
+	Author = {Kim, Beomjoon and Farahmand, Amir-massoud and Pineau, Joelle and Precup, Doina},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Learning from Limited Demonstrations},
+	Year = {2013}}
+
+@incollection{klein2012batch,
+	Author = {Klein, Edouard and Geist, Matthieu and Pietquin, Olivier},
+	Booktitle = {Recent Advances in Reinforcement Learning},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Pages = {285--296},
+	Publisher = {Springer},
+	Title = {Batch, off-policy and model-free apprenticeship learning},
+	Year = {2012}}
+
+@inproceedings{klein2012inverse,
+	Author = {Klein, E. and Geist, M. and Piot, B. and Pietquin, O.},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Inverse Reinforcement Learning through Structured Classification},
+	Year = {2012}}
+
+@article{KNN,
+	Author = {Cover, T.M. and Hart, P.E.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {IEEE Transactions on Information Theory},
+	Title = {Nearest neighbor pattern classification},
+	Volume = {13},
+	Year = {1967}}
+
+@inproceedings{kolter2009regularization,
+	Author = {Kolter, J.Z. and Ng, A.Y.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Regularization and feature selection in least-squares temporal difference learning},
+	Year = {2009}}
+
+@article{lagoudakis2003least,
+	Author = {Lagoudakis, Michail G and Parr, Ronald},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Journal of machine learning research},
+	Number = {Dec},
+	Pages = {1107--1149},
+	Title = {Least-squares policy iteration},
+	Volume = {4},
+	Year = {2003}}
+
+@inproceedings{langford2005relating,
+	Author = {Langford, J. and Zadrozny, B.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Relating reinforcement learning performance to classification performance},
+	Year = {2005}}
+
+@inproceedings{lazaric2010analysis,
+	Author = {Lazaric, Alessandro and Ghavamzadeh, Mohammad and Munos, R{\'e}mi},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Analysis of a classification-based policy iteration algorithm},
+	Year = {2010}}
+
+@article{lazaric2012finite,
+	Author = {Lazaric, A. and Ghavamzadeh, M. and Munos, R.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {The Journal of Machine Learning Research},
+	Publisher = {JMLR. org},
+	Title = {Finite-sample analysis of least-squares policy iteration},
+	Volume = {13},
+	Year = {2012}}
+
+@inproceedings{lever2012modelling,
+	Author = {Lever, G. and Baldassarre, L. and Gretton, A. and Pontil, M. and Gr{\"u}new{\"a}lder, S.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {{Modelling transition dynamics in MDPs with RKHS embeddings}},
+	Year = {2012}}
+
+@inproceedings{levine2013guided,
+	Author = {Levine, S. and Koltun, V.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Pages = {1--9},
+	Title = {Guided Policy Search.},
+	Year = {2013}}
+
+@inproceedings{li2009online,
+	Author = {Li, Lihong and Littman, Michael L and Mansley, Christopher R},
+	Booktitle = {Proc. of AAMAS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Online exploration in least-squares policy iteration},
+	Year = {2009}}
+
+@article{lillicrap2015continuous,
+	Author = {Lillicrap, Timothy P. and Hunt, Jonathan J. and Pritzel, Alexander and Heess, Nicolas and Erez, Tom and Tassa, Yuval and Silver, David and Wierstra, Daan},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1509.02971},
+	Title = {Continuous control with deep reinforcement learning},
+	Year = {2015}}
+
+@inproceedings{lillicrap2016continuouss,
+	Author = {Lillicrap, Timothy P. and Hunt, Jonathan J. and Pritzel, Alexander and Heess, Nicolas and Erez, Tom and Tassa, Yuval and Silver, David and Wierstra, Daan},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1509.02971},
+	Title = {Continuous control with deep reinforcement learning},
+	Year = {2015}}
+
+@inproceedings{lipton2017bbq,
+	Author = {Lipton, Zachary and Li, Xiujun and Gao, Jianfeng and Li, Lihong and Ahmed, Faisal and Deng, Li},
+	Booktitle = {Proc. of AAAI},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems},
+	Year = {2016}}
+
+@article{machado2017revisiting,
+	Author = {Machado, Marlos C and Bellemare, Marc G and Talvitie, Erik and Veness, Joel and Hausknecht, Matthew and Bowling, Michael},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1709.06009},
+	Title = {Revisiting the {A}rcade {L}earning {E}nvironment: Evaluation Protocols and Open Problems for General Agents},
+	Year = {2017}}
+
+@inproceedings{maillard2010finite,
+	Author = {Maillard, O. and Munos, R. and Lazaric, A. and Ghavamzadeh, M.},
+	Booktitle = {Proc. of ACML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {{Finite-sample analysis of {B}ellman residual minimization}},
+	Year = {2010}}
+
+@inproceedings{mason1999boosting,
+	Author = {Mason, L. and Baxter, J. and Bartlett, P. and Frean, M.},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Boosting algorithms as gradient descent in function space},
+	Year = {1999}}
+
+@inproceedings{melo2010analysis,
+	Author = {Melo, F. and Lopes, M. and Ferreira, R.},
+	Booktitle = {Proc of ECAI},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Analysis of inverse reinforcement learning with perturbed demonstrations},
+	Year = {2010}}
+
+@inproceedings{melo2010learning,
+	Author = {Melo, F. and Lopes, M.},
+	Booktitle = {Proc. of ECML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {{Learning from demonstration using MDP induced metrics}},
+	Year = {2010}}
+
+@article{millan2002continuous,
+	Author = {Mill{\'a}n, J. and Posenato, D. and Dedieu, E.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Machine Learning},
+	Number = {2-3},
+	Pages = {247--265},
+	Publisher = {Springer},
+	Title = {Continuous-action Q-learning},
+	Volume = {49},
+	Year = {2002}}
+
+@article{mnih2015human,
+	Author = {Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Rusu, Andrei A and Veness, Joel and Bellemare, Marc G and Graves, Alex and Riedmiller, Martin and Fidjeland, Andreas K and Ostrovski, Georg and others},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Nature},
+	Number = {7540},
+	Pages = {529--533},
+	Publisher = {Nature Research},
+	Title = {Human-level control through deep reinforcement learning},
+	Volume = {518},
+	Year = {2015}}
+
+@inproceedings{mnih2016asynchronous,
+	Author = {Mnih, Volodymyr and Badia, Adria Puigdomenech and Mirza, Mehdi and Graves, Alex and Lillicrap, Timothy and Harley, Tim and Silver, David and Kavukcuoglu, Koray},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Asynchronous methods for deep reinforcement learning},
+	Year = {2016}}
+
+@article{munos2007performance,
+	Author = {Munos, R.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {SIAM journal on control and optimization},
+	Publisher = {SIAM},
+	Title = {{Performance bounds in $L_{p}$-norm for approximate value iteration}},
+	Year = {2007}}
+
+@article{nair2015massively,
+	Author = {Nair, Arun and Srinivasan, Praveen and Blackwell, Sam and Alcicek, Cagdas and Fearon, Rory and De Maria, Alessandro and Panneershelvam, Vedavyas and Suleyman, Mustafa and Beattie, Charles and Petersen, Stig and others},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1507.04296},
+	Title = {Massively parallel methods for deep reinforcement learning},
+	Year = {2015}}
+
+@article{nair2017overcoming,
+	Author = {Nair, Ashvin and McGrew, Bob and Andrychowicz, Marcin and Zaremba, Wojciech and Abbeel, Pieter},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1709.10089},
+	Title = {Overcoming exploration in reinforcement learning with demonstrations},
+	Year = {2017}}
+
+@inproceedings{natarajan2011imitation,
+	Author = {Natarajan, S. and Joshi, S. and Tadepalli, P. and Kersting, K. and Shavlik, J.},
+	Booktitle = {Proc. of AAAI},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Pages = {1414--1420},
+	Title = {Imitation learning in relational domains: A functional-gradient boosting approach},
+	Year = {2011}}
+
+@article{neu2009training,
+	Author = {Neu, G. and Szepesv{\'a}ri, C.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Machine learning},
+	Number = {2},
+	Publisher = {Springer},
+	Title = {Training parsers by inverse reinforcement learning},
+	Volume = {77},
+	Year = {2009}}
+
+@article{neu2012apprenticeship,
+	Author = {Neu, G. and Szepesv{\'a}ri, C.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1206.5264},
+	Title = {Apprenticeship learning using inverse reinforcement learning and gradient methods},
+	Year = {2012}}
+
+@inproceedings{ng2000algorithms,
+	Author = {Ng, A.Y. and Russell, S. and others},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Algorithms for inverse reinforcement learning},
+	Year = {2000}}
+
+@inproceedings{ng2000pegasus,
+	Author = {Ng, A.Y. and Jordan, M.},
+	Booktitle = {Proc. of UAI},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Organization = {Morgan Kaufmann Publishers Inc.},
+	Pages = {406--415},
+	Title = {PEGASUS: A policy search method for large MDPs and POMDPs},
+	Year = {2000}}
+
+@inproceedings{NIPS2010_3918,
+	Author = {Levine, S. and Popovic, Z. and Koltun, V.},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Feature Construction for Inverse Reinforcement Learning},
+	Year = {2010}}
+
+@book{nocedal2006numerical,
+	Author = {Nocedal, Jorge and Wright, Stephen},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {Springer Science \& Business Media},
+	Title = {Numerical optimization},
+	Year = {2006}}
+
+@phdthesis{okutmustur2005reproducing,
+	Author = {Okutmustur, B.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	School = {bilkent university},
+	Title = {{Reproducing kernel Hilbert spaces}},
+	Year = {2005}}
+
+@inproceedings{oord2016pixel,
+	Author = {Oord, Aaron van den and Kalchbrenner, Nal and Kavukcuoglu, Koray},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Pixel recurrent neural networks},
+	Year = {2016}}
+
+@article{ormoneit2002kernel,
+	Author = {Ormoneit, D. and Sen, {\'S}.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Machine learning},
+	Publisher = {Springer},
+	Title = {Kernel-based reinforcement learning},
+	Volume = {49},
+	Year = {2002}}
+
+@article{osband2017deep,
+	Author = {Osband, Ian and Russo, Daniel and Wen, Zheng and Van Roy, Benjamin},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1703.07608},
+	Title = {Deep Exploration via Randomized Value Functions},
+	Year = {2017}}
+
+@inproceedings{ostrovski2017countbased,
+	Author = {Ostrovski, Georg and Bellemare, Marc G and van den Oord, Aaron and Munos, R\'emi},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 15:14:06 +0000},
+	Title = {Count-Based Exploration with Neural Density Models},
+	Year = {2017}}
+
+@inproceedings{peters2005natural,
+	Author = {Peters, J. and Vijayakumar, S. and Schaal, S.},
+	Booktitle = {Proc. of ECML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Organization = {Springer},
+	Pages = {280--291},
+	Title = {Natural actor-critic},
+	Year = {2005}}
+
+@inproceedings{peters2006policy,
+	Author = {Peters, J. and Schaal, S.},
+	Booktitle = {2006 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Organization = {IEEE},
+	Pages = {2219--2225},
+	Title = {Policy gradient methods for robotics},
+	Year = {2006}}
+
+@inproceedings{petrik2010feature,
+	Author = {Petrik, M. and Taylor, G. and Parr, R. and Zilberstein, S.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Feature selection using regularization in approximate linear programs for {M}arkov decision processes},
+	Year = {2010}}
+
+@inproceedings{piot2014boosted,
+	Author = {Piot, Bilal and Geist, Matthieu and Pietquin, Olivier},
+	Booktitle = {Proc. of ECML/PKDD},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Boosted {B}ellman residual minimization handling expert demonstrations},
+	Year = {2014}}
+
+@inproceedings{piotECML,
+	Author = {Piot, B. and Geist, M. and Pietquin, O.},
+	Booktitle = {Proc. of ECML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Learning from demonstrations: is it worth estimating a reward function?},
+	Year = {2013}}
+
+@article{plappert2017parameter,
+	Author = {Plappert, Matthias and Houthooft, Rein and Dhariwal, Prafulla and Sidor, Szymon and Chen, Richard Y and Chen, Xi and Asfour, Tamim and Abbeel, Pieter and Andrychowicz, Marcin},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1706.01905},
+	Title = {Parameter Space Noise for Exploration},
+	Year = {2017}}
+
+@techreport{pomerleau1989alvinn,
+	Author = {Pomerleau, D.A.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Institution = {DTIC Document},
+	Title = {Alvinn: An autonomous land vehicle in a neural network},
+	Year = {1989}}
+
+@book{puterman1994markov,
+	Author = {Puterman, Marc L.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {John Wiley \& Sons},
+	Title = {{Markov decision processes: discrete stochastic dynamic programming}},
+	Year = {1994}}
+
+@inproceedings{ramachandran2007bayesian,
+	Author = {Ramachandran, D.},
+	Booktitle = {Proc. of IJCAI},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Bayesian inverse reinforcement learning},
+	Year = {2007}}
+
+@inproceedings{ratliff2006maximum,
+	Author = {Ratliff, N.D. and Bagnell, J.A. and Zinkevich, M.A.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Maximum margin planning},
+	Year = {2006}}
+
+@inproceedings{ratliff2007imitation,
+	Author = {Ratliff, N. and Bagnell, J.A. and Srinivasa, S.S},
+	Booktitle = {Proc. of IEEE-RAS International Conference on Humanoid Robots},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Imitation learning for locomotion and manipulation},
+	Year = {2007}}
+
+@inproceedings{riedmiller2005neural,
+	Author = {Riedmiller, M.},
+	Booktitle = {Proc. of ECML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Organization = {Springer},
+	Pages = {317--328},
+	Title = {Neural fitted Q iteration--first experiences with a data efficient neural reinforcement learning method},
+	Year = {2005}}
+
+@inproceedings{ross2010efficient,
+	Author = {Ross, S. and Bagnell, J.A.},
+	Booktitle = {Proc. of AISTATS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Efficient reductions for imitation learning},
+	Year = {2010}}
+
+@inproceedings{ross2011reduction,
+	Author = {Ross, S. and Gordon, G.J. and Bagnell, J.A},
+	Booktitle = {Proc. of AISTATS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {A reduction of imitation learning and structured prediction to no-regret online learning},
+	Year = {2011}}
+
+@book{rummery1994line,
+	Author = {Rummery, G. and Niranjan, M.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {University of Cambridge, Department of Engineering},
+	Title = {On-line Q-learning using connectionist systems},
+	Year = {1994}}
+
+@inproceedings{russell1998learning,
+	Author = {Russell, S.},
+	Booktitle = {Proc. of COLT},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Learning agents for uncertain environments},
+	Year = {1998}}
+
+@article{salimans2017evolution,
+	Author = {Salimans, Tim and Ho, Jonathan and Chen, Xi and Sutskever, Ilya},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1703.03864},
+	Title = {Evolution Strategies as a Scalable Alternative to Reinforcement Learning},
+	Year = {2017}}
+
+@inproceedings{schaal1997learning,
+	Author = {Schaal, Stefan},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Learning from demonstration},
+	Year = {1997}}
+
+@inproceedings{scherrer2013improved,
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Improved and generalized upper bounds on the complexity of policy iteration}}
+
+@inproceedings{scherrer2014coeff,
+	Author = {Scherrer, B.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {{Approximate policy iteration schemes: a comparison}},
+	Year = {2014}}
+
+@inproceedings{scherrer2014local,
+	Author = {Scherrer, B. and Geist, M.},
+	Booktitle = {Proc. of ECML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Organization = {Springer},
+	Pages = {35--50},
+	Title = {Local Policy Search in a Convex Space and Conservative Policy Iteration as Boosted Policy Search},
+	Year = {2014}}
+
+@inproceedings{schulman2015trust,
+	Author = {Schulman, John and Levine, Sergey and Abbeel, Pieter and Jordan, Michael and Moritz, Philipp},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Trust Region Policy Optimization},
+	Year = {2015}}
+
+@article{sehnke2008policy,
+	Author = {Sehnke, Frank and Osendorfer, Christian and R{\"u}ckstie{\ss}, Thomas and Graves, Alex and Peters, Jan and Schmidhuber, J{\"u}rgen},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Artificial Neural Networks-ICANN 2008},
+	Pages = {387--396},
+	Publisher = {Springer},
+	Title = {Policy gradients with parameter-based exploration for control},
+	Year = {2008}}
+
+@book{shor1985minimization,
+	Author = {Shor, N.Z. and Kiwiel, K.C. and Ruszcaynski, A.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {Springer-Verlag},
+	Title = {Minimization methods for non-differentiable functions},
+	Year = {1985}}
+
+@inproceedings{silver2014deterministic,
+	Author = {Silver, D. and Lever, G. and Heess, N. and Degris, T. and Wierstra, D. and Riedmiller, M.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Deterministic Policy Gradient Algorithms},
+	Year = {2014}}
+
+@article{silver2016mastering,
+	Author = {Silver, David and Huang, Aja and Maddison, Chris J and Guez, Arthur and Sifre, Laurent and Van Den Driessche, George and Schrittwieser, Julian and Antonoglou, Ioannis and Panneershelvam, Veda and Lanctot, Marc and others},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Nature},
+	Number = {7587},
+	Pages = {484--489},
+	Publisher = {Nature Research},
+	Title = {Mastering the game of {G}o with deep neural networks and tree search},
+	Volume = {529},
+	Year = {2016}}
+
+@article{singh2000convergence,
+	Author = {Singh, S. and Jaakkola, T. and Littman, M. and Szepesv{\'a}ri, C.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Machine Learning},
+	Publisher = {Springer},
+	Title = {Convergence results for single-step on-policy reinforcement-learning algorithms},
+	Volume = {38},
+	Year = {2000}}
+
+@inproceedings{song2009hilbert,
+	Author = {Song, Le and Huang, Jonathan and Smola, Alex and Fukumizu, Kenji},
+	Booktitle = {Proceedings of the 26th Annual International Conference on Machine Learning},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Organization = {ACM},
+	Pages = {961--968},
+	Title = {Hilbert space embeddings of conditional distributions with applications to dynamical systems},
+	Year = {2009}}
+
+@article{sriperumbudur2010hilbert,
+	Author = {Sriperumbudur, B. and Gretton, A. and Fukumizu, K. and Sch{\"o}lkopf, B. and Lanckriet, G.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {The Journal of Machine Learning Research},
+	Publisher = {MIT Press},
+	Title = {Hilbert space embeddings and metrics on probability measures},
+	Year = {2010}}
+
+@article{stadie2017third,
+	Author = {Stadie, Bradly C and Abbeel, Pieter and Sutskever, Ilya},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1703.01703},
+	Title = {Third-person imitation learning},
+	Year = {2017}}
+
+@inproceedings{Supelec813,
+	Author = {Niewiadomski, R. and Hofmann, J. and Urbain, T. and Platt, T. and Wagner, J. and Piot, J. and Cakmak, H. and Pammi, S. and Baur, T. and Dupont, S. and Geist, M. and Lingenfelser, F. and McKeown, G and Pietquin, O. and Ruch, W.},
+	Booktitle = {Proc. of AAMAS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Laugh-aware virtual agent and its impact on user amusement},
+	Year = {2013}}
+
+@inproceedings{Supelec854,
+	Author = {Klein, E. and Piot, B. and Geist, M. and Pietquin, O.},
+	Booktitle = {Proc. of ECML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {Springer},
+	Title = {A cascaded supervised learning approach to inverse reinforcement learning},
+	Year = {2013}}
+
+@inproceedings{Supelec874,
+	Author = {Piot, B. and Geist, M. and Pietquin, O.},
+	Booktitle = {Proc. of AAMAS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {{Boosted and Reward-regularized Classification for Apprenticeship Learning}},
+	Year = {2014}}
+
+@article{sutton1988learning,
+	Author = {Sutton, R.S.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Machine learning},
+	Publisher = {Springer},
+	Title = {Learning to predict by the methods of temporal differences},
+	Volume = {3},
+	Year = {1988}}
+
+@book{sutton1998reinforcement,
+	Author = {Sutton, Richard S and Barto, Andrew G},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {Cambridge University Press},
+	Title = {Reinforcement learning: An introduction},
+	Year = {1998}}
+
+@inproceedings{sutton1999policy,
+	Author = {Sutton, Richard S and McAllester, David A and Singh, Satinder P and Mansour, Yishay},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Policy Gradient Methods for Reinforcement Learning with Function Approximation.},
+	Year = {1999}}
+
+@inproceedings{syed2008apprenticeship,
+	Author = {Syed, U. and Bowling, M. and Schapire, R.E.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Apprenticeship learning using linear programming},
+	Year = {2008}}
+
+@inproceedings{syed2008game,
+	Author = {Syed, U. and Schapire, R.E.},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {A game-theoretic approach to apprenticeship learning},
+	Year = {2008}}
+
+@inproceedings{syed2010reduction,
+	Author = {Syed, U. and Schapire, R.E.},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {A reduction from apprenticeship learning to classification},
+	Year = {2010}}
+
+@article{szepesvari2010algorithms,
+	Author = {Szepesv{\'a}ri, Csaba},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Synthesis Lectures on Artificial Intelligence and Machine Learning},
+	Number = {1},
+	Pages = {1--103},
+	Publisher = {Morgan \& Claypool Publishers},
+	Title = {Algorithms for reinforcement learning},
+	Volume = {4},
+	Year = {2010}}
+
+@article{tagorti2014rate,
+	Author = {Tagorti, Manel and Scherrer, Bruno},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1405.3229},
+	Title = {Rate of Convergence and Error Bounds for LSTD},
+	Year = {2014}}
+
+@inproceedings{tang2017exploration,
+	Author = {Tang, Haoran and Houthooft, Rein and Foote, Davis and Stooke, Adam and Chen, Xi and Duan, Yan and Schulman, John and DeTurck, Filip and Abbeel, Pieter},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning},
+	Year = {2017}}
+
+@article{tao1997convex,
+	Author = {Tao, P.D. and An, L.T.H.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Acta Mathematica Vietnamica},
+	Pages = {289--355},
+	Title = {{Convex analysis approach to DC programming: theory, algorithms and applications}},
+	Volume = {22},
+	Year = {1997}}
+
+@article{tao2005dc,
+	Author = {Tao, P.D. and An, L.T.H.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Annals of Operations Research},
+	Pages = {23--46},
+	Publisher = {Springer},
+	Title = {{The DC programming and DCA revisited with DC models of real world nonconvex optimization problems}},
+	Volume = {133},
+	Year = {2005}}
+
+@inproceedings{taskar2005learning,
+	Author = {Taskar, B. and Chatalbashev, V. and Koller, D. and Guestrin, C.},
+	Booktitle = {Proc. of ICML},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Learning structured prediction models: A large margin approach},
+	Year = {2005}}
+
+@inproceedings{taylor2012feature,
+	Author = {Taylor, G. and Parr, R.},
+	Booktitle = {Proc. of UAI},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Value Function Approximation in Noisy Environments Using Locally Smoothed Regularized Approximate Linear Programs},
+	Year = {2012}}
+
+@book{tikhonov1979methods,
+	Author = {Tikhonov, A. and Arsenin, V.Y},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {Nauka, Moscow},
+	Title = {Methods for solving ill-posed problems},
+	Volume = {15},
+	Year = {1979}}
+
+@inproceedings{van2016deep,
+	Author = {van Hasselt, Hado and Guez, Arthur and Silver, David},
+	Booktitle = {Proc. of AAAI},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Deep Reinforcement Learning with Double {Q}-Learning.},
+	Year = {2016}}
+
+@inproceedings{vanhasselt2016popart,
+	Author = {van Hasselt, Hado and Guez, Arthur and Hessel, Matteo and Mnih, Volodymyr and Silver, David},
+	Booktitle = {Proc. of NIPS},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Learning values across many orders of magnitude},
+	Year = {2016}}
+
+@book{vapnik1998statistical,
+	Author = {Vapnik, V.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Publisher = {Wiley},
+	Title = {Statistical learning theory},
+	Year = {1998}}
+
+@inproceedings{vermorel2005multi,
+	Author = {Vermorel, Joannes and Mohri, Mehryar},
+	Booktitle = {European conference on machine learning},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Organization = {Springer},
+	Pages = {437--448},
+	Title = {Multi-armed bandit algorithms and empirical evaluation},
+	Year = {2005}}
+
+@article{vevcerik2017leveraging,
+	Author = {Ve{\v{c}}er{\'\i}k, Matej and Hester, Todd and Scholz, Jonathan and Wang, Fumin and Pietquin, Olivier and Piot, Bilal and Heess, Nicolas and Roth{\"o}rl, Thomas and Lampe, Thomas and Riedmiller, Martin},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {arXiv preprint arXiv:1707.08817},
+	Title = {Leveraging demonstrations for deep reinforcement learning on robotics problems with sparse rewards},
+	Year = {2017}}
+
+@inproceedings{wang2013fast,
+	Author = {Wang, Sida I and Manning, Christopher D},
+	Booktitle = {ICML (2)},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Pages = {118--126},
+	Title = {Fast dropout training.},
+	Year = {2013}}
+
+@article{xu2007kernel,
+	Author = {Xu, X. and Hu, D. and Lu, X.},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Journal = {Neural Networks, IEEE Transactions on},
+	Publisher = {IEEE},
+	Title = {Kernel-based least squares policy iteration for reinforcement learning},
+	Volume = {18},
+	Year = {2007}}
+
+@inproceedings{zadrozny2003cost,
+	Author = {Zadrozny, B. and Langford, J. and Abe, N.},
+	Booktitle = {Third IEEE International Conference on Data Mining},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Cost-sensitive learning by cost-proportionate example weighting},
+	Year = {2003}}
+
+@inproceedings{ziebart2008maximum,
+	Author = {Ziebart, Brian D and Maas, Andrew L and Bagnell, J Andrew and Dey, Anind K},
+	Booktitle = {Proc. of AAAI},
+	Date-Added = {2018-05-18 14:55:54 +0000},
+	Date-Modified = {2018-05-18 14:55:54 +0000},
+	Title = {Maximum Entropy Inverse Reinforcement Learning.},
+	Year = {2008}}
+
+@inproceedings{lu2017ensemble,
+	Author = {Lu, Xiuyuan and Van Roy, Benjamin},
+	Booktitle = {Advances in Neural Information Processing Systems},
+	Pages = {3260--3268},
+	Title = {Ensemble Sampling},
+	Year = {2017}}
+
+@article{barth2018distributed,
+  title={Distributed Distributional Deterministic Policy Gradients},
+  author={Barth-Maron, Gabriel and Hoffman, Matthew W and Budden, David and Dabney, Will and Horgan, Dan and Muldal, Alistair and Heess, Nicolas and Lillicrap, Timothy},
+  journal={arXiv preprint arXiv:1804.08617},
+  year={2018}
+}
+
+@article{brockman2016openaigym,
+	Archiveprefix = {arXiv},
+	Author = {Greg Brockman and Vicki Cheung and Ludwig Pettersson and Jonas Schneider and John Schulman and Jie Tang and Wojciech Zaremba},
+	Bibsource = {dblp computer science bibliography, https://dblp.org},
+	Biburl = {https://dblp.org/rec/bib/journals/corr/BrockmanCPSSTZ16},
+	Date-Added = {2018-05-14 16:45:12 +0000},
+	Date-Modified = {2018-05-14 16:45:20 +0000},
+	Eprint = {1606.01540},
+	Journal = {CoRR},
+	Timestamp = {Wed, 07 Jun 2017 14:41:24 +0200},
+	Title = {OpenAI Gym},
+	Url = {http://arxiv.org/abs/1606.01540},
+	Volume = {abs/1606.01540},
+	Year = {2016},
+	Bdsk-Url-1 = {http://arxiv.org/abs/1606.01540}}
+
+@inproceedings{strens2000bayesian,
+	Author = {Strens, Malcolm},
+	Booktitle = {International Conference on Machine Learning},
+	Date-Added = {2018-05-13 19:46:42 +0000},
+	Date-Modified = {2018-05-18 15:15:42 +0000},
+	Pages = {943--950},
+	Title = {A {B}ayesian framework for reinforcement learning},
+	Year = {2000}}
+
+@article{azizzadenesheli2018efficient,
+  title={Efficient Exploration through {B}ayesian Deep Q-Networks},
+  author={Azizzadenesheli, Kamyar and Brunskill, Emma and Anandkumar, Animashree},
+  journal={arXiv preprint arXiv:1802.04412},
+  year={2018}
+}
+
+@article{vinyals2017starcraft,
+	Archiveprefix = {arXiv},
+	Author = {Oriol Vinyals and Timo Ewalds and Sergey Bartunov and Petko Georgiev and Alexander Sasha Vezhnevets and Michelle Yeo and Alireza Makhzani and Heinrich K{\"{u}}ttler and John Agapiou and Julian Schrittwieser and John Quan and Stephen Gaffney and Stig Petersen and Karen Simonyan and Tom Schaul and Hado van Hasselt and David Silver and Timothy P. Lillicrap and Kevin Calderone and Paul Keet and Anthony Brunasso and David Lawrence and Anders Ekermo and Jacob Repp and Rodney Tsing},
+	Bibsource = {dblp computer science bibliography, https://dblp.org},
+	Biburl = {https://dblp.org/rec/bib/journals/corr/abs-1708-04782},
+	Date-Added = {2018-05-13 18:46:39 +0000},
+	Date-Modified = {2018-05-13 18:46:49 +0000},
+	Eprint = {1708.04782},
+	Journal = {CoRR},
+	Timestamp = {Tue, 05 Sep 2017 10:03:46 +0200},
+	Title = {StarCraft {II:} {A} New Challenge for Reinforcement Learning},
+	Url = {http://arxiv.org/abs/1708.04782},
+	Volume = {abs/1708.04782},
+	Year = {2017},
+	Bdsk-Url-1 = {http://arxiv.org/abs/1708.04782}}
+
+@inproceedings{orseau2013ksa,
+	Author = {Laurent Orseau and Tor Lattimore and Marcus Hutter},
+	Bibsource = {dblp computer science bibliography, https://dblp.org},
+	Biburl = {https://dblp.org/rec/bib/conf/alt/OrseauLH13},
+	Booktitle = {Algorithmic Learning Theory - 24th International Conference, {ALT} 2013, Singapore, October 6-9, 2013. Proceedings},
+	Crossref = {DBLP:conf/alt/2013},
+	Date-Added = {2018-05-13 18:27:59 +0000},
+	Date-Modified = {2018-05-13 18:28:07 +0000},
+	Doi = {10.1007/978-3-642-40935-6_12},
+	Pages = {158--172},
+	Timestamp = {Sat, 16 Sep 2017 12:08:04 +0200},
+	Title = {Universal Knowledge-Seeking Agents for Stochastic Environments},
+	Url = {https://doi.org/10.1007/978-3-642-40935-6_12},
+	Year = {2013},
+	Bdsk-Url-1 = {https://doi.org/10.1007/978-3-642-40935-6_12}}
+
+@article{pathak2017curiosity,
+	Archiveprefix = {arXiv},
+	Author = {Deepak Pathak and Pulkit Agrawal and Alexei A. Efros and Trevor Darrell},
+	Bibsource = {dblp computer science bibliography, https://dblp.org},
+	Biburl = {https://dblp.org/rec/bib/journals/corr/PathakAED17},
+	Date-Added = {2018-05-13 18:25:05 +0000},
+	Date-Modified = {2018-05-13 18:25:19 +0000},
+	Eprint = {1705.05363},
+	Journal = {CoRR},
+	Timestamp = {Wed, 07 Jun 2017 14:41:47 +0200},
+	Title = {Curiosity-driven Exploration by Self-supervised Prediction},
+	Url = {http://arxiv.org/abs/1705.05363},
+	Volume = {abs/1705.05363},
+	Year = {2017},
+	Bdsk-Url-1 = {http://arxiv.org/abs/1705.05363}}
+
+@article{chen2017ucbensemble,
+	Archiveprefix = {arXiv},
+	Author = {Richard Y. Chen and Szymon Sidor and Pieter Abbeel and John Schulman},
+	Bibsource = {dblp computer science bibliography, https://dblp.org},
+	Biburl = {https://dblp.org/rec/bib/journals/corr/ChenSAS17},
+	Date-Added = {2018-05-13 16:12:56 +0000},
+	Date-Modified = {2018-05-18 15:06:53 +0000},
+	Eprint = {1706.01502},
+	Journal = {CoRR},
+	Timestamp = {Mon, 03 Jul 2017 13:29:02 +0200},
+	Title = {{UCB} and InfoGain Exploration via Q-Ensembles},
+	Url = {http://arxiv.org/abs/1706.01502},
+	Volume = {abs/1706.01502},
+	Year = {2017},
+	Bdsk-Url-1 = {http://arxiv.org/abs/1706.01502}}
+
+@incollection{houthooft2016vime,
+	Author = {Houthooft, Rein and Chen, Xi and Chen, Xi and Duan, Yan and Schulman, John and De Turck, Filip and Abbeel, Pieter},
+	Booktitle = {Advances in Neural Information Processing Systems 29},
+	Date-Added = {2018-05-13 16:11:50 +0000},
+	Date-Modified = {2018-05-13 16:11:58 +0000},
+	Editor = {D. D. Lee and M. Sugiyama and U. V. Luxburg and I. Guyon and R. Garnett},
+	Pages = {1109--1117},
+	Publisher = {Curran Associates, Inc.},
+	Title = {VIME: Variational Information Maximizing Exploration},
+	Url = {http://papers.nips.cc/paper/6591-vime-variational-information-maximizing-exploration.pdf},
+	Year = {2016},
+	Bdsk-Url-1 = {http://papers.nips.cc/paper/6591-vime-variational-information-maximizing-exploration.pdf}}
+
+@article{kempka2016doom,
+	Archiveprefix = {arXiv},
+	Author = {Michal Kempka and Marek Wydmuch and Grzegorz Runc and Jakub Toczek and Wojciech Jaskowski},
+	Bibsource = {dblp computer science bibliography, https://dblp.org},
+	Biburl = {https://dblp.org/rec/bib/journals/corr/KempkaWRTJ16},
+	Date-Added = {2018-05-13 15:19:25 +0000},
+	Date-Modified = {2018-05-13 15:19:34 +0000},
+	Eprint = {1605.02097},
+	Journal = {CoRR},
+	Timestamp = {Wed, 07 Jun 2017 14:41:20 +0200},
+	Title = {ViZDoom: {A} Doom-based {AI} Research Platform for Visual Reinforcement Learning},
+	Url = {http://arxiv.org/abs/1605.02097},
+	Volume = {abs/1605.02097},
+	Year = {2016},
+	Bdsk-Url-1 = {http://arxiv.org/abs/1605.02097}}
+
+@article{beattie2016dmlab,
+	Archiveprefix = {arXiv},
+	Author = {Charles Beattie and Joel Z. Leibo and Denis Teplyashin and Tom Ward and Marcus Wainwright and Heinrich K{\"{u}}ttler and Andrew Lefrancq and Simon Green and V{\'{\i}}ctor Vald{\'{e}}s and Amir Sadik and Julian Schrittwieser and Keith Anderson and Sarah York and Max Cant and Adam Cain and Adrian Bolton and Stephen Gaffney and Helen King and Demis Hassabis and Shane Legg and Stig Petersen},
+	Bibsource = {dblp computer science bibliography, https://dblp.org},
+	Biburl = {https://dblp.org/rec/bib/journals/corr/BeattieLTWWKLGV16},
+	Date-Added = {2018-05-13 15:18:25 +0000},
+	Date-Modified = {2018-05-13 15:18:33 +0000},
+	Eprint = {1612.03801},
+	Journal = {CoRR},
+	Timestamp = {Wed, 07 Jun 2017 14:42:49 +0200},
+	Title = {DeepMind Lab},
+	Url = {http://arxiv.org/abs/1612.03801},
+	Volume = {abs/1612.03801},
+	Year = {2016},
+	Bdsk-Url-1 = {http://arxiv.org/abs/1612.03801}}
+
+@article{espeholt2018rawbeast,
+	Archiveprefix = {arXiv},
+	Author = {Lasse Espeholt and Hubert Soyer and R{\'{e}}mi Munos and Karen Simonyan and Volodymyr Mnih and Tom Ward and Yotam Doron and Vlad Firoiu and Tim Harley and Iain Dunning and Shane Legg and Koray Kavukcuoglu},
+	Bibsource = {dblp computer science bibliography, https://dblp.org},
+	Biburl = {https://dblp.org/rec/bib/journals/corr/abs-1802-01561},
+	Date-Added = {2018-05-13 15:14:50 +0000},
+	Date-Modified = {2018-05-13 15:15:00 +0000},
+	Eprint = {1802.01561},
+	Journal = {CoRR},
+	Timestamp = {Thu, 01 Mar 2018 15:00:45 +0100},
+	Title = {{IMPALA:} Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures},
+	Url = {http://arxiv.org/abs/1802.01561},
+	Volume = {abs/1802.01561},
+	Year = {2018},
+	Bdsk-Url-1 = {http://arxiv.org/abs/1802.01561}}
+
+@article{martin2017countbased,
+	Archiveprefix = {arXiv},
+	Author = {Jarryd Martin and Suraj Narayanan Sasikumar and Tom Everitt and Marcus Hutter},
+	Bibsource = {dblp computer science bibliography, https://dblp.org},
+	Biburl = {https://dblp.org/rec/bib/journals/corr/MartinSEH17},
+	Date-Added = {2018-05-12 20:15:26 +0000},
+	Date-Modified = {2018-05-12 20:15:54 +0000},
+	Eprint = {1706.08090},
+	Journal = {CoRR},
+	Timestamp = {Mon, 06 Nov 2017 12:14:00 +0100},
+	Title = {Count-Based Exploration in Feature Space for Reinforcement Learning},
+	Url = {http://arxiv.org/abs/1706.08090},
+	Volume = {abs/1706.08090},
+	Year = {2017},
+	Bdsk-Url-1 = {http://arxiv.org/abs/1706.08090}}
+
+@article{maennel2018gradient,
+	Author = {Maennel, Hartmut and Bousquet, Olivier and Gelly, Sylvain},
+	Date-Modified = {2018-05-18 15:12:37 +0000},
+	Journal = {arXiv preprint arXiv:1803.08367},
+	Title = {Gradient Descent Quantizes {R}e{LU} Network Features},
+	Year = {2018}}
+
+@article{wang2015duelling,
+	Archiveprefix = {arXiv},
+	Author = {Ziyu Wang and Nando de Freitas and Marc Lanctot},
+	Bibsource = {dblp computer science bibliography, https://dblp.org},
+	Biburl = {https://dblp.org/rec/bib/journals/corr/WangFL15},
+	Date-Added = {2018-05-12 20:09:35 +0000},
+	Date-Modified = {2018-05-12 20:09:43 +0000},
+	Eprint = {1511.06581},
+	Journal = {CoRR},
+	Timestamp = {Tue, 08 Aug 2017 15:06:57 +0200},
+	Title = {Dueling Network Architectures for Deep Reinforcement Learning},
+	Url = {http://arxiv.org/abs/1511.06581},
+	Volume = {abs/1511.06581},
+	Year = {2015},
+	Bdsk-Url-1 = {http://arxiv.org/abs/1511.06581}}
+
+@inproceedings{hasselt2016doubledqn,
+	Acmid = {3016191},
+	Author = {Hasselt, Hado van and Guez, Arthur and Silver, David},
+	Booktitle = {Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence},
+	Date-Added = {2018-05-12 20:07:32 +0000},
+	Date-Modified = {2018-05-12 20:07:40 +0000},
+	Location = {Phoenix, Arizona},
+	Numpages = {7},
+	Pages = {2094--2100},
+	Publisher = {AAAI Press},
+	Series = {AAAI'16},
+	Title = {Deep Reinforcement Learning with Double Q-Learning},
+	Url = {http://dl.acm.org/citation.cfm?id=3016100.3016191},
+	Year = {2016},
+	Bdsk-Url-1 = {http://dl.acm.org/citation.cfm?id=3016100.3016191}}
+
+@article{srivastava2014dropout,
+	Author = {Srivastava, Nitish and Hinton, Geoffrey and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan},
+	Journal = {The Journal of Machine Learning Research},
+	Number = {1},
+	Pages = {1929--1958},
+	Publisher = {JMLR. org},
+	Title = {Dropout: A simple way to prevent neural networks from overfitting},
+	Volume = {15},
+	Year = {2014}}
+
+@inproceedings{gal2017concrete,
+	Author = {Gal, Yarin and Hron, Jiri and Kendall, Alex},
+	Booktitle = {Advances in Neural Information Processing Systems},
+	Pages = {3584--3593},
+	Title = {Concrete dropout},
+	Year = {2017}}
+
+@inproceedings{gal2016improving,
+	Author = {Gal, Yarin and McAllister, Rowan and Rasmussen, Carl Edward},
+	Booktitle = {Data-Efficient Machine Learning workshop, ICML},
+	Title = {Improving PILCO with {B}ayesian neural network dynamics models},
+	Year = {2016}}
+
+	
+@inproceedings{osband2016risk,
+  title={Risk versus uncertainty in deep learning: {B}ayes, bootstrap and the dangers of dropout},
+  author={Osband, Ian},
+  booktitle={NIPS Workshop on {B}ayesian Deep Learning},
+  volume={192},
+  year={2016}
+}
+
+@conference{horgan2018apex,
+	Author = {Daniel Horgan and John Quan and David Budden and Gabriel Barth-Maron and Matteo Hessel and Hado Van Hasselt and David Silver},
+	Booktitle = {6th International Conference on Learning Represenations},
+	Date-Added = {2018-05-12 19:59:36 +0000},
+	Date-Modified = {2018-05-12 20:11:49 +0000},
+	Title = {Distributed Prioritized Experience Replay},
+	Year = {2018}}
+
+@incollection{thrun92c,
+	Address = {Florence, Kentucky 41022},
+	Author = {Sebastian Thrun},
+	Booktitle = {Handbook for Intelligent Control: Neural, Fuzzy and Adaptive Approaches},
+	Date-Added = {2018-05-11 17:50:02 +0000},
+	Date-Modified = {2018-05-11 17:50:19 +0000},
+	Editor = {D.A. White and D.A. Sofge},
+	Publisher = {Van Nostrand Reinhold},
+	Title = {The Role of Exploration in Learning Control},
+	Year = {1992}}
+
+@article{russo2015much,
+	Author = {Russo, Daniel and Zou, James},
+	Journal = {arXiv preprint arXiv:1511.05219},
+	Title = {How much does your data exploration overfit? controlling bias via information usage},
+	Year = {2015}}
+
+	
+@article{russo2017tutorial,
+author = {Russo, Daniel J. and Van Roy, Benjamin and Kazerouni, Abbas and Osband, Ian and Wen, Zheng},
+title = {A Tutorial on {T}hompson Sampling},
+year = {2018},
+issue_date = {12 7 2018},
+publisher = {Now Publishers Inc.},
+address = {Hanover, MA, USA},
+volume = {11},
+number = {1},
+issn = {1935-8237},
+journal = {Found. Trends Mach. Learn.},
+month = jul,
+pages = {1–96},
+numpages = {96},
+}
+
+@article{lipton2016efficient,
+	Author = {Lipton, Zachary C and Gao, Jianfeng and Li, Lihong and Li, Xiujun and Ahmed, Faisal and Deng, Li},
+	Journal = {arXiv preprint arXiv:1608.05081},
+	Title = {Efficient exploration for dialogue policy learning with BBQ networks \& replay buffer spiking},
+	Year = {2016}}
+
+@book{efron1994introduction,
+	Author = {Efron, Bradley and Tibshirani, Robert J},
+	Publisher = {CRC press},
+	Title = {An introduction to the bootstrap},
+	Year = {1994}}
+
+@article{leike2016thompson,
+	Author = {Leike, Jan and Lattimore, Tor and Orseau, Laurent and Hutter, Marcus},
+	Date-Modified = {2018-05-18 15:10:20 +0000},
+	Journal = {Uncertainty in Artificial Intelligence},
+	Title = {Thompson sampling is asymptotically optimal in general environments},
+	Year = {2016}}
+
+@article{legg2007collection,
+	Author = {Legg, Shane and Hutter, Marcus and others},
+	Journal = {Frontiers in Artificial Intelligence and applications},
+	Pages = {17},
+	Publisher = {IOS Press},
+	Title = {A collection of definitions of intelligence},
+	Volume = {157},
+	Year = {2007}}
+
+@article{mania2018simple,
+	Author = {Mania, Horia and Guy, Aurelia and Recht, Benjamin},
+	Journal = {arXiv preprint arXiv:1803.07055},
+	Title = {Simple random search provides a competitive approach to reinforcement learning},
+	Year = {2018}}
+
+@inproceedings{lakshminarayanan2017simple,
+	Author = {Lakshminarayanan, Balaji and Pritzel, Alexander and Blundell, Charles},
+	Booktitle = {Advances in Neural Information Processing Systems},
+	Pages = {6405--6416},
+	Title = {Simple and scalable predictive uncertainty estimation using deep ensembles},
+	Year = {2017}}
+
+@article{bickel1981some,
+	Author = {Bickel, Peter J and Freedman, David A},
+	Journal = {The Annals of Statistics},
+	Pages = {1196--1217},
+	Publisher = {JSTOR},
+	Title = {Some asymptotic theory for the bootstrap},
+	Year = {1981}}
+
+@article{fushiki2005bootstrap,
+	Author = {Fushiki, Tadayoshi},
+	Journal = {Bernoulli},
+	Pages = {747--758},
+	Publisher = {JSTOR},
+	Title = {Bootstrap prediction and {B}ayesian prediction under misspecified models},
+	Year = {2005}}
+
+@article{fushiki2005nonparametric,
+	Author = {Fushiki, Tadayoshi and Komaki, Fumiyasu and Aihara, Kazuyuki and others},
+	Journal = {Bernoulli},
+	Number = {2},
+	Pages = {293--307},
+	Publisher = {Bernoulli Society for Mathematical Statistics and Probability},
+	Title = {Nonparametric bootstrap prediction},
+	Volume = {11},
+	Year = {2005}}
+
+@article{mihatsch2002risk,
+	Author = {Mihatsch, Oliver and Neuneier, Ralph},
+	Journal = {Machine learning},
+	Number = {2-3},
+	Pages = {267--290},
+	Publisher = {Springer},
+	Title = {Risk-sensitive reinforcement learning},
+	Volume = {49},
+	Year = {2002}}
+
+@article{levy1992stochastic,
+	Author = {Levy, Haim},
+	Journal = {Management Science},
+	Number = {4},
+	Pages = {555--593},
+	Publisher = {INFORMS},
+	Title = {Stochastic dominance and expected utility: survey and analysis},
+	Volume = {38},
+	Year = {1992}}
+
+@inproceedings{rumsfeld2009known,
+	Author = {Rumsfeld, Donald},
+	Booktitle = {Press Conference speech'[www. youtube. com/watch},
+	Title = {Known unknowns},
+	Year = {2009}}
+
+@article{lecun2015deep,
+	Author = {LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
+	Date-Modified = {2018-05-13 17:13:39 +0000},
+	Journal = {Nature},
+	Number = {7553},
+	Pages = {436},
+	Publisher = {Nature Publishing Group},
+	Title = {Deep learning},
+	Volume = {521},
+	Year = {2015}}
+
+@inproceedings{Gal2016Dropout,
+	Author = {Yarin Gal and Zoubin Ghahramani},
+	Booktitle = {International Conference on Machine Learning},
+	Date-Modified = {2018-05-18 15:08:20 +0000},
+	Title = {Dropout as a {B}ayesian Approximation: Representing Model Uncertainty in Deep Learning},
+	Year = {2016}}
+
+@book{neal2012bayesian,
+	Author = {Neal, Radford M},
+	Publisher = {Springer Science \& Business Media},
+	Title = {Bayesian learning for neural networks},
+	Volume = {118},
+	Year = {2012}}
+
+@book{knight2012risk,
+	Author = {Knight, Frank H},
+	Publisher = {Courier Corporation},
+	Title = {Risk, uncertainty and profit},
+	Year = {2012}}
+
+@article{kingma2013auto,
+	Author = {Kingma, Diederik P and Welling, Max},
+	Date-Modified = {2018-05-18 15:09:15 +0000},
+	Journal = {International Conference on Learning Representations},
+	Title = {Auto-encoding variational {B}ayes},
+	Year = {2014}}
+
+@phdthesis{Gal2016Uncertainty,
+	Author = {Gal, Yarin},
+	School = {University of Cambridge},
+	Title = {Uncertainty in Deep Learning},
+	Year = {2016}}
+
+@article{sahni1974computationally,
+	Author = {Sahni, Sartaj},
+	Journal = {SIAM Journal on Computing},
+	Number = {4},
+	Pages = {262--279},
+	Publisher = {SIAM},
+	Title = {Computationally related problems},
+	Volume = {3},
+	Year = {1974}}
+
+@book{keynes2013treatise,
+	Author = {Keynes, John Maynard},
+	Publisher = {Courier Corporation},
+	Title = {A treatise on probability},
+	Year = {2013}}
+
+@article{mackay1992practical,
+	Author = {MacKay, David JC},
+	Date-Modified = {2018-05-18 15:11:19 +0000},
+	Journal = {Neural computation},
+	Number = {3},
+	Pages = {448--472},
+	Publisher = {MIT Press},
+	Title = {A practical {B}ayesian framework for backpropagation networks},
+	Volume = {4},
+	Year = {1992}}
+
+@techreport{rumelhart1985learning,
+	Author = {Rumelhart, David E and Hinton, Geoffrey E and Williams, Ronald J},
+	Institution = {DTIC Document},
+	Title = {Learning internal representations by error propagation},
+	Year = {1985}}
+
+@inproceedings{de1937prevision,
+	Author = {De Finetti, Bruno},
+	Booktitle = {Annales de l'institut Henri Poincar{\'e}},
+	Number = {1},
+	Pages = {1--68},
+	Title = {La pr{\'e}vision: ses lois logiques, ses sources subjectives},
+	Volume = {7},
+	Year = {1937}}
+
+@book{cox1979theoretical,
+	Author = {Cox, David Roxbee and Hinkley, David Victor},
+	Publisher = {CRC Press},
+	Title = {Theoretical statistics},
+	Year = {1979}}
+
+@incollection{wald1992statistical,
+	Author = {Wald, Abraham},
+	Booktitle = {Breakthroughs in Statistics},
+	Pages = {342--357},
+	Publisher = {Springer},
+	Title = {Statistical decision functions},
+	Year = {1992}}
+
+@inproceedings{krizhevsky2012imagenet,
+	Author = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+	Booktitle = {Advances in Neural Information Processing Systems 25},
+	Pages = {1097--1105},
+	Title = {Imagenet classification with deep convolutional neural networks},
+	Year = {2012}}
+
+@article{van2016wavenet,
+	Author = {Van Den Oord, Aaron and Dieleman, Sander and Zen, Heiga and Simonyan, Karen and Vinyals, Oriol and Graves, Alex and Kalchbrenner, Nal and Senior, Andrew and Kavukcuoglu, Koray},
+	Journal = {arXiv preprint arXiv:1609.03499},
+	Title = {Wavenet: A generative model for raw audio},
+	Year = {2016}}
+
+@article{hinton2015distilling,
+  title={Distilling the knowledge in a neural network},
+  author={Hinton, Geoffrey and Vinyals, Oriol and Dean, Jeff},
+  journal={arXiv preprint arXiv:1503.02531},
+  year={2015}
+}
+
+@article{filos2019systematic,
+  title={A systematic comparison of {B}ayesian deep learning robustness in diabetic retinopathy tasks},
+  author={Filos, Angelos and Farquhar, Sebastian and Gomez, Aidan N and Rudner, Tim GJ and Kenton, Zachary and Smith, Lewis and Alizadeh, Milad and De Kroon, Arnoud and Gal, Yarin},
+  journal={arXiv preprint arXiv:1912.10481},
+  year={2019}
+}
+
+
+@inproceedings{ulyanov2018deep,
+  title={Deep image prior},
+  author={Ulyanov, Dmitry and Vedaldi, Andrea and Lempitsky, Victor},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={9446--9454},
+  year={2018}
+}
+
+@inproceedings{he2020bayesian,
+ author = {He, Bobby and Lakshminarayanan, Balaji and Teh, Yee Whye},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+ pages = {1010--1022},
+ publisher = {Curran Associates, Inc.},
+ title = {Bayesian Deep Ensembles via the Neural Tangent Kernel},
+ url = {https://proceedings.neurips.cc/paper/2020/file/0b1ec366924b26fc98fa7b71a9c249cf-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}
+
+@article{sun2019functional,
+  title={Functional variational {B}ayesian neural networks},
+  author={Sun, Shengyang and Zhang, Guodong and Shi, Jiaxin and Grosse, Roger},
+  journal={arXiv preprint arXiv:1903.05779},
+  year={2019}
+}
+
+@inproceedings{rezende2015variational,
+  title={Variational inference with normalizing flows},
+  author={Rezende, Danilo and Mohamed, Shakir},
+  booktitle={International conference on machine learning},
+  pages={1530--1538},
+  year={2015},
+  organization={PMLR}
+}
+
+@article{hoffman2014no,
+  title={The No-U-Turn sampler: adaptively setting path lengths in {H}amiltonian {M}onte {C}arlo},
+  author={Hoffman, Matthew D and Gelman, Andrew and others},
+  journal={J. Mach. Learn. Res.},
+  volume={15},
+  number={1},
+  pages={1593--1623},
+  year={2014}
+}
+
+@article{goodfellow2014explaining,
+  title={Explaining and harnessing adversarial examples},
+  author={Goodfellow, Ian J and Shlens, Jonathon and Szegedy, Christian},
+  journal={arXiv preprint arXiv:1412.6572},
+  year={2014}
+}
+
+@misc{deepmind2020jax,
+  title = {The {D}eep{M}ind {JAX} {E}cosystem},
+  author = {Babuschkin, Igor and Baumli, Kate and Bell, Alison and Bhupatiraju, Surya and Bruce, Jake and Buchlovsky, Peter and Budden, David and Cai, Trevor and Clark, Aidan and Danihelka, Ivo and Fantacci, Claudio and Godwin, Jonathan and Jones, Chris and Hennigan, Tom and Hessel, Matteo and Kapturowski, Steven and Keck, Thomas and Kemaev, Iurii and King, Michael and Martens, Lena and Mikulik, Vladimir and Norman, Tamara and Quan, John and Papamakarios, George and Ring, Roman and Ruiz, Francisco and Sanchez, Alvaro and Schneider, Rosalia and Sezener, Eren and Spencer, Stephen and Srinivasan, Srivatsan and Stokowiec, Wojciech and Viola, Fabio},
+  url = {http://github.com/deepmind},
+  year = {2020},
+}
+
+@article{amodei2016concrete,
+  title={Concrete problems in AI safety},
+  author={Amodei, Dario and Olah, Chris and Steinhardt, Jacob and Christiano, Paul and Schulman, John and Man{\'e}, Dan},
+  journal={arXiv preprint arXiv:1606.06565},
+  year={2016}
+}
+
+@article{wenzel2020good,
+  title={How good is the {B}ayes posterior in deep neural networks really?},
+  author={Wenzel, Florian and Roth, Kevin and Veeling, Bastiaan S and {\'S}wi{{a}}tkowski, Jakub and Tran, Linh and Mandt, Stephan and Snoek, Jasper and Salimans, Tim and Jenatton, Rodolphe and Nowozin, Sebastian},
+  journal={arXiv preprint arXiv:2002.02405},
+  year={2020}
+}
+
+@article{kaplan2020scaling,
+  title={Scaling laws for neural language models},
+  author={Kaplan, Jared and McCandlish, Sam and Henighan, Tom and Brown, Tom B and Chess, Benjamin and Child, Rewon and Gray, Scott and Radford, Alec and Wu, Jeffrey and Amodei, Dario},
+  journal={arXiv preprint arXiv:2001.08361},
+  year={2020}
+}
+
+@book{richardson2008modern,
+  title={Modern coding theory},
+  author={Richardson, Tom and Urbanke, Ruediger},
+  year={2008},
+  publisher={Cambridge university press}
+}
+
+@article{izmailov2021bayesian,
+  title={What Are {B}ayesian Neural Network Posteriors Really Like?},
+  author={Izmailov, Pavel and Vikram, Sharad and Hoffman, Matthew D and Wilson, Andrew Gordon},
+  journal={arXiv preprint arXiv:2104.14421},
+  year={2021}
+}
+
+@inproceedings{wierstra2008natural,
+	Author = {Wierstra, Daan and Schaul, Tom and Peters, Jan and Schmidhuber, Juergen},
+	Booktitle = {Evolutionary Computation, 2008. CEC 2008.(IEEE World Congress on Computational Intelligence). IEEE Congress on},
+	Organization = {IEEE},
+	Pages = {3381--3387},
+	Title = {Natural evolution strategies},
+	Year = {2008}}
+
+@misc{hutson2018has,
+  title={Has artificial intelligence become alchemy?},
+  author={Hutson, Matthew},
+  year={2018},
+  publisher={American Association for the Advancement of Science}
+}
+
+@misc{munroe2021xkcd,
+  title={XKCD webcomic},
+  author={Munroe, Randall},
+  year={2021},
+  url={https://m.xkcd.com/2440/}
+}
+
+@article{dutordoir2021deep,
+  title={Deep Neural Networks as Point Estimates for Deep {G}aussian Processes},
+  author={Dutordoir, Vincent and Hensman, James and van der Wilk, Mark and Ek, Carl Henrik and Ghahramani, Zoubin and Durrande, Nicolas},
+  journal={arXiv preprint arXiv:2105.04504},
+  year={2021}
+}
+
+@inproceedings{nixon2020bootstrapped,
+  title={Why Are Bootstrapped Deep Ensembles Not Better?},
+  author={Nixon, Jeremy and Lakshminarayanan, Balaji and Tran, Dustin},
+  booktitle={''I Can't Believe It's Not Better!''NeurIPS 2020 workshop},
+  year={2020}
+}
+
+
+	
+@inproceedings{zhang2016understanding,
+  author    = {Chiyuan Zhang and
+               Samy Bengio and
+               Moritz Hardt and
+               Benjamin Recht and
+               Oriol Vinyals},
+  title     = {Understanding deep learning requires rethinking generalization},
+  booktitle = {5th International Conference on Learning Representations, {ICLR} 2017,
+               Toulon, France, April 24-26, 2017, Conference Track Proceedings},
+  year      = {2017},
+  url       = {https://openreview.net/forum?id=Sy8gdB9xx},
+}
+
+@inproceedings{bartlett2017spectrally,
+	Author = {Bartlett, Peter L and Foster, Dylan J and Telgarsky, Matus J},
+	Booktitle = {Advances in Neural Information Processing Systems 30},
+	Pages = {6241--6250},
+	Title = {Spectrally-normalized margin bounds for neural networks},
+	Year = {2017}}
+
+@inproceedings{glorot2010understanding,
+	Author = {Glorot, Xavier and Bengio, Yoshua},
+	Booktitle = {Proceedings of the 13th international conference on artificial intelligence and statistics},
+	Pages = {249--256},
+	Title = {Understanding the difficulty of training deep feedforward neural networks},
+	Year = {2010}}
+
+@article{osband2017gaussian,
+	Author = {Osband, Ian and Van Roy, Benjamin},
+	Journal = {arXiv preprint arXiv:1702.04126},
+	Title = {Gaussian-{D}irichlet Posterior Dominance in Sequential Learning},
+	Year = {2017}}
+
+@article{ibarra2016angrier,
+	Author = {Ibarra, Imanol Arrieta and Ramos, Bernardo and Roemheld, Lars},
+	Journal = {arXiv preprint arXiv:1601.01297},
+	Title = {Angrier Birds: {B}ayesian reinforcement learning},
+	Year = {2016}}
+
+@inproceedings{sutton2009fast,
+	Author = {Sutton, Richard and Maei, Hamid Reza and Precup, Doina and Bhatnagar, Shalabh and Silver, David and Szepesv{\'a}ri, Csaba and Wiewiora, Eric},
+	Booktitle = {Proceedings of the 26th Annual International Conference on Machine Learning},
+	Organization = {ACM},
+	Pages = {993--1000},
+	Title = {Fast gradient-descent methods for temporal-difference learning with linear function approximation},
+	Year = {2009}}
+
+@inproceedings{munos2016safe,
+	Author = {Munos, R{\'e}mi and Stepleton, Tom and Harutyunyan, Anna and Bellemare, Marc},
+	Booktitle = {Advances in Neural Information Processing Systems 29},
+	Pages = {1046--1054},
+	Title = {Safe and efficient off-policy reinforcement learning},
+	Year = {2016}}
+
+@article{tsitsiklis1997analysis,
+	Author = {Tsitsiklis, John N and Van Roy, Benjamin and others},
+	Journal = {IEEE transactions on automatic control},
+	Number = {5},
+	Pages = {674--690},
+	Title = {An analysis of temporal-difference learning with function approximation},
+	Volume = {42},
+	Year = {1997}}
+
+@phdthesis{osband2016,
+	Author = {Ian Osband},
+	School = {Stanford University},
+	Title = {Deep Exploration via Randomized Value Functions},
+	Year = {2016}}
+
+@inproceedings{osband2016posterior,
+	Author = {Ian Osband and Van Roy, Benjamin},
+	Booktitle = {Proceedings of the 34th International Conference on Machine Learning},
+	Pages = {2701--2710},
+	Title = {Why is posterior sampling better than optimism for reinforcement learning?},
+	Year = {2017}}
+
+@article{bellemare2013arcade,
+	Author = {Bellemare, Marc G and Naddaf, Yavar and Veness, Joel and Bowling, Michael},
+	Journal = {J. Artif. Intell. Res.(JAIR)},
+	Pages = {253--279},
+	Title = {The Arcade Learning Environment: An evaluation platform for general agents.},
+	Volume = {47},
+	Year = {2013}}
+
+@inproceedings{osband2016deep,
+	Author = {Osband, Ian and Blundell, Charles and Pritzel, Alexander and Van Roy, Benjamin},
+	Booktitle = {Advances In Neural Information Processing Systems 29},
+	Pages = {4026--4034},
+	Title = {Deep exploration via bootstrapped {DQN}},
+	Year = {2016}}
+
+@incollection{bellemare2016countbased,
+	Author = {Bellemare, Marc and Srinivasan, Sriram and Ostrovski, Georg and Schaul, Tom and Saxton, David and Munos, Remi},
+	Booktitle = {Advances in Neural Information Processing Systems 29},
+	Date-Modified = {2018-05-12 21:24:36 +0000},
+	Pages = {1471--1479},
+	Title = {Unifying Count-Based Exploration and Intrinsic Motivation},
+	Year = {2016}}
+
+@article{tang2016hash,
+	Author = {Haoran Tang and Rein Houthooft and Davis Foote and Adam Stooke and Xi Chen and Yan Duan and John Schulman and Filip De Turck and Pieter Abbeel},
+	Date-Modified = {2018-05-13 18:25:27 +0000},
+	Journal = {CoRR},
+	Timestamp = {Thu, 01 Dec 2016 19:32:08 +0100},
+	Title = {{\#}{E}xploration: {A} Study of Count-Based Exploration for Deep Reinforcement Learning},
+	Volume = {abs/1611.04717},
+	Year = {2016}}
+
+@article{owen2012bootstrapping,
+	Author = {Owen, Art B and Eckles, Dean},
+	Journal = {The Annals of Applied Statistics},
+	Pages = {895--927},
+	Publisher = {JSTOR},
+	Title = {Bootstrapping data arrays of arbitrary order},
+	Year = {2012}}
+
+@article{schaul2015prioritized,
+	Archiveprefix = {arXiv},
+	Author = {Tom Schaul and John Quan and Ioannis Antonoglou and David Silver},
+	Bibsource = {dblp computer science bibliography, https://dblp.org},
+	Eprint = {1511.05952},
+	Journal = {CoRR},
+	Timestamp = {Wed, 07 Jun 2017 14:42:32 +0200},
+	Title = {Prioritized Experience Replay},
+	Volume = {abs/1511.05952},
+	Year = {2015}}
+
+@article{osband2015bootstrapped,
+	Author = {Osband, Ian and Van Roy, Benjamin},
+	Date-Modified = {2018-05-18 15:13:37 +0000},
+	Journal = {arXiv preprint arXiv:1507.00300},
+	Title = {Bootstrapped {T}hompson Sampling and Deep Exploration},
+	Year = {2015}}
+
+@article{adam2012experience,
+	Author = {Adam, Sander and Busoniu, Lucian and Babuska, Robert},
+	Journal = {IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews)},
+	Number = {2},
+	Pages = {201--212},
+	Publisher = {IEEE},
+	Title = {Experience replay for real-time reinforcement learning control},
+	Volume = {42},
+	Year = {2012}}
+
+@article{silver2016alphago,
+	Author = {Silver, David and Huang, Aja and Maddison, Chris J and Guez, Arthur and Sifre, Laurent and Van Den Driessche, George and Schrittwieser, Julian and Antonoglou, Ioannis and Panneershelvam, Veda and Lanctot, Marc and others},
+	Date-Modified = {2018-05-18 14:00:56 +0000},
+	Journal = {Nature},
+	Number = {7587},
+	Pages = {484--489},
+	Publisher = {Nature Research},
+	Title = {Mastering the game of Go with deep neural networks and tree search},
+	Volume = {529},
+	Year = {2016}}
+
+@article{escobar1994estimating,
+	Author = {Escobar, Michael D},
+	Journal = {Journal of the American Statistical Association},
+	Number = {425},
+	Pages = {268--277},
+	Publisher = {Taylor \& Francis},
+	Title = {Estimating normal means with a Dirichlet process prior},
+	Volume = {89},
+	Year = {1994}}
+
+@article{rubin1981bayesian,
+	Author = {Rubin, Donald B and others},
+	Journal = {The annals of statistics},
+	Number = {1},
+	Pages = {130--134},
+	Publisher = {Institute of Mathematical Statistics},
+	Title = {The {Bayesian} bootstrap},
+	Volume = {9},
+	Year = {1981}}
+
+@inproceedings{osband2016rlsvi,
+	Author = {Osband, Ian and Van Roy, Benjamin and Wen, Zheng},
+	Booktitle = {Proceedings of The 33rd International Conference on Machine Learning},
+	Pages = {2377-2386},
+	Title = {Generalization and Exploration via Randomized Value Functions},
+	Year = {2016}}
+
+@article{rothschild1970increasing,
+	Author = {Rothschild, Michael and Stiglitz, Joseph E},
+	Journal = {Journal of Economic theory},
+	Number = {3},
+	Pages = {225--243},
+	Publisher = {Elsevier},
+	Title = {Increasing risk: I. A definition},
+	Volume = {2},
+	Year = {1970}}
+
+@inproceedings{liang2016state,
+	Author = {Liang, Yitao and Machado, Marlos C and Talvitie, Erik and Bowling, Michael},
+	Booktitle = {Proceedings of the 2016 International Conference on Autonomous Agents \& Multiagent Systems},
+	Organization = {International Foundation for Autonomous Agents and Multiagent Systems},
+	Pages = {485--493},
+	Title = {State of the art control of atari games using shallow reinforcement learning},
+	Year = {2016}}
+
+@inproceedings{gabillon2013approximate,
+	Author = {Gabillon, Victor and Ghavamzadeh, Mohammad and Scherrer, Bruno},
+	Booktitle = {Advances in Neural Information Processing Systems},
+	Pages = {1754--1762},
+	Title = {Approximate dynamic programming finally performs well in the game of Tetris},
+	Year = {2013}}
+
+@inproceedings{dann2015sample,
+	Author = {Dann, Christoph and Brunskill, Emma},
+	Booktitle = {Advances in Neural Information Processing Systems 28},
+	Pages = {2800--2808},
+	Title = {Sample Complexity of Episodic Fixed-Horizon Reinforcement Learning},
+	Year = {2015}}
+
+@article{bertsekas1996temporal,
+	Author = {Bertsekas, Dimitri P and Ioffe, Sergey},
+	Journal = {Lab. for Info. and Decision Systems Report LIDS-P-2349, MIT, Cambridge, MA},
+	Publisher = {Citeseer},
+	Title = {Temporal differences-based policy iteration and applications in neuro-dynamic programming},
+	Year = {1996}}
+
+
+	
+@inproceedings{blundell2015weight,
+  title={Weight uncertainty in neural network},
+  author={Blundell, Charles and Cornebise, Julien and Kavukcuoglu, Koray and Wierstra, Daan},
+  booktitle={International Conference on Machine Learning},
+  pages={1613--1622},
+  year={2015},
+  organization={PMLR}
+}
+
+@article{hadar1969rules,
+	Author = {Hadar, Josef and Russell, William R},
+	Journal = {The American Economic Review},
+	Pages = {25--34},
+	Publisher = {JSTOR},
+	Title = {Rules for ordering uncertain prospects},
+	Year = {1969}}
+
+@book{efron1982jackknife,
+	Author = {Efron, Bradley},
+	Publisher = {SIAM},
+	Title = {The jackknife, the bootstrap and other resampling plans},
+	Volume = {38},
+	Year = {1982}}
+
+@inproceedings{osband2014near,
+	Author = {Osband, Ian and Van Roy, Benjamin},
+	Booktitle = {Advances in Neural Information Processing Systems 27},
+	Pages = {604--612},
+	Title = {Near-optimal reinforcement learning in factored {MDP}s},
+	Year = {2014}}
+
+@inproceedings{osband2014model,
+	Author = {Osband, Ian and Van Roy, Benjamin},
+	Booktitle = {Advances in Neural Information Processing Systems 27},
+	Pages = {1466--1474},
+	Title = {Model-based reinforcement learning and the eluder dimension},
+	Year = {2014}}
+
+@inproceedings{agrawal2012further,
+	Author = {Agrawal, Shipra and Goyal, Navin},
+	Booktitle = {Artificial Intelligence and Statistics},
+	Pages = {99--107},
+	Title = {Further optimal regret bounds for {Thompson} sampling},
+	Year = {2013}}
+
+@inproceedings{agrawal2012analysis,
+	Author = {Agrawal, Shipra and Goyal, Navin},
+	Booktitle = {Conference on Learning Theory},
+	Pages = {39--1},
+	Title = {Analysis of {Thompson} sampling for the multi-armed bandit problem},
+	Year = {2012}}
+
+@inproceedings{agrawal2013thompson,
+	Author = {Agrawal, Shipra and Goyal, Navin},
+	Booktitle = {Proceedings of the 30th Annual International Conference on Machine Learning},
+	Pages = {127--135},
+	Title = {Thompson sampling for contextual bandits with linear payoffs},
+	Year = {2013}}
+
+@article{Russo2014,
+	Author = {Russo, Daniel and Van Roy, Benjamin},
+	Journal = {Mathematics of Operations Research},
+	Number = {4},
+	Pages = {1221-1243},
+	Title = {Learning to Optimize Via Posterior Sampling},
+	Volume = {39},
+	Year = {2014}}
+
+@inproceedings{gopalan2015thompson,
+	Author = {Gopalan, Aditya and Mannor, Shie},
+	Booktitle = {Proceedings of the 28th Annual Conference on Learning Theory},
+	Title = {Thompson sampling for learning parameterized {Markov} decision processes},
+	Year = {2015}}
+
+@incollection{Osband2013,
+	Author = {Ian Osband and Daniel Russo and Van Roy, Benjamin},
+	Booktitle = {Advances in Neural Information Processing Systems 26},
+	Pages = {3003--3011},
+	Title = {{(More)} Efficient reinforcement learning via posterior sampling},
+	Year = {2013}}
+
+@incollection{Russo2013b,
+	Author = {Daniel Russo and Van Roy, Benjamin},
+	Booktitle = {Advances in Neural Information Processing Systems 26},
+	Pages = {2256--2264},
+	Title = {Eluder Dimension and the Sample Complexity of Optimistic Exploration},
+	Year = {2013}}
+
+@incollection{russo2014blearning,
+	Author = {Russo, Daniel and Van Roy, Benjamin},
+	Booktitle = {Advances in Neural Information Processing Systems 27},
+	Pages = {1583--1591},
+	Title = {Learning to optimize via information-directed sampling},
+	Year = {2014}}
+
+@book{Sutton2017,
+	Author = {Sutton, Richard and Barto, Andrew},
+	Publisher = {MIT Press},
+	Title = {Reinforcement Learning: An Introduction},
+	Year = {2017}}
+
+@book{Powell2011,
+	Author = {Powell, Warren and Ryzhov, Ilya},
+	Publisher = {John Wiley and Sons},
+	Title = {Optimal Learning},
+	Year = {2011}}
+
+@book{Bertsekas1996,
+	Author = {Dimitri P. Bertsekas and John Tsitsiklis},
+	Month = {September},
+	Publisher = {Athena Scientific},
+	Title = {Neuro-Dynamic Programming},
+	Year = {1996}}
+
+@article{Brafman2002,
+	Author = {Ronen I. Brafman and Moshe Tennenholtz},
+	Ee = {http://www.jmlr.org/papers/v3/brafman02a.html},
+	Journal = {Journal of Machine Learning Research},
+	Pages = {213-231},
+	Title = {R-MAX - A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning},
+	Volume = {3},
+	Year = {2002}}
+
+@article{Kearns2002,
+	Author = {Michael J. Kearns and Satinder P. Singh},
+	Ee = {http://dx.doi.org/10.1023/A:1017984413808},
+	Journal = {Machine Learning},
+	Number = {2-3},
+	Pages = {209-232},
+	Title = {Near-Optimal Reinforcement Learning in Polynomial Time},
+	Volume = {49},
+	Year = {2002}}
+
+@inproceedings{Strehl2006,
+	Author = {Alexander L. Strehl and Lihong Li and Eric Wiewiora and John Langford and Michael L. Littman},
+	Booktitle = {Proceedings of the 23rd Annual International Conference on Machine Learning},
+	Pages = {881--888},
+	Title = {{PAC} model-free reinforcement learning},
+	Year = {2006}}
+
+@phdthesis{strehl2007probably,
+	Author = {Strehl, Alexander L},
+	School = {Rutgers University-Graduate School-New Brunswick},
+	Title = {Probably approximately correct (PAC) exploration in reinforcement learning},
+	Year = {2007}}
+
+@inproceedings{Lagoudakis2002,
+	Author = {Michail Lagoudakis and Ronald Parr and Michael L. Littman},
+	Booktitle = {Second Hellenic Conference on Artificial Intelligence (SETN-02)},
+	Title = {Least-Squares Methods in Reinforcement Learning for Control},
+	Year = {2002}}
+
+@article{tesauro1995temporal,
+	Author = {Tesauro, Gerald},
+	Journal = {Communications of the ACM},
+	Number = {3},
+	Pages = {58--68},
+	Title = {Temporal difference learning and {TD}-Gammon},
+	Volume = {38},
+	Year = {1995}}
+	
+@article{hoffman2020acme,
+    title={Acme: A Research Framework for Distributed Reinforcement Learning},
+    author={Matt Hoffman and Bobak Shahriari and John Aslanides and Gabriel
+        Barth-Maron and Feryal Behbahani and Tamara Norman and Abbas Abdolmaleki
+        and Albin Cassirer and Fan Yang and Kate Baumli and Sarah Henderson and
+        Alex Novikov and Sergio Gómez Colmenarejo and Serkan Cabi and Caglar
+        Gulcehre and Tom Le Paine and Andrew Cowie and Ziyu Wang and Bilal Piot
+        and Nando de Freitas},
+    year={2020},
+    journal={arXiv preprint arXiv:2006.00979},
+    url={https://arxiv.org/abs/2006.00979},
+}
+
+@book{2010Szepesvari,
+	Author = {Csaba Szepesv{\'a}ri},
+	Booktitle = {Algorithms for Reinforcement Learning},
+	Publisher = {Morgan {\&} Claypool Publishers},
+	Series = {Synthesis Lectures on Artificial Intelligence and Machine Learning},
+	Title = {Algorithms for Reinforcement Learning},
+	Year = {2010}}
+
+@phdthesis{Kakade2003,
+	Author = {Sham Kakade},
+	School = {University College London},
+	Title = {On the Sample Complexity of Reinforcement Learning},
+	Year = {2003}}
+
+@inproceedings{Kearns1999MN,
+	Author = {Michael J. Kearns and Yishay Mansour and Andrew Y. Ng},
+	Booktitle = {NIPS},
+	Ee = {http://nips.djvuzone.org/djvu/nips12/1001.djvu},
+	Pages = {1001-1007},
+	Title = {Approximate Planning in Large {POMDP}s via Reusable Trajectories},
+	Year = {1999}}
+
+@article{RusmevichientongT2010,
+	Author = {Paat Rusmevichientong and John N. Tsitsiklis},
+	Ee = {http://dx.doi.org/10.1287/moor.1100.0446},
+	Journal = {Math. Oper. Res.},
+	Number = {2},
+	Pages = {395-411},
+	Title = {Linearly Parameterized Bandits},
+	Volume = {35},
+	Year = {2010}}
+
+@inproceedings{Abbasi-YadkoriPS2011,
+	Author = {Yasin Abbasi-Yadkori and D{\'a}vid P{\'a}l and Csaba Szepesv{\'a}ri},
+	Booktitle = {NIPS},
+	Ee = {http://books.nips.cc/papers/files/nips24/NIPS2011_1243.pdf},
+	Pages = {2312-2320},
+	Title = {Improved Algorithms for Linear Stochastic Bandits},
+	Year = {2011}}
+
+@article{Abbasi-YadkoriPS2012,
+	Author = {Yasin Abbasi-Yadkori and D{\'a}vid P{\'a}l and Csaba Szepesv{\'a}ri},
+	Journal = {Journal of Machine Learning Research - Proceedings Track},
+	Pages = {1-9},
+	Title = {Online-to-Confidence-Set Conversions and Application to Sparse Stochastic Bandits},
+	Volume = {22},
+	Year = {2012}}
+
+@article{Abbasi-Yadkori2011,
+	Author = {Yasin Abbasi-Yadkori and Csaba Szepesv{\'a}ri},
+	Ee = {http://www.jmlr.org/proceedings/papers/v19/abbasi-yadkori11a/abbasi-yadkori11a.pdf},
+	Journal = {Journal of Machine Learning Research - Proceedings Track},
+	Pages = {1-26},
+	Title = {Regret Bounds for the Adaptive Control of Linear Quadratic Systems},
+	Volume = {19},
+	Year = {2011}}
+
+@inproceedings{DaniHK2008,
+	Author = {Varsha Dani and Thomas P. Hayes and Sham M. Kakade},
+	Booktitle = {COLT},
+	Ee = {http://colt2008.cs.helsinki.fi/papers/80-Dani.pdf},
+	Pages = {355-366},
+	Title = {Stochastic Linear Optimization under Bandit Feedback},
+	Year = {2008}}
+
+@inproceedings{FilippiCGS2010,
+	Author = {Sarah Filippi and Olivier Capp{\'e} and Aur{\'e}lien Garivier and Csaba Szepesv{\'a}ri},
+	Booktitle = {NIPS},
+	Ee = {http://books.nips.cc/papers/files/nips23/NIPS2010_0828.pdf},
+	Pages = {586-594},
+	Title = {Parametric Bandits: The Generalized Linear Case},
+	Year = {2010}}
+
+@inproceedings{Ibrahimi2012,
+	Author = {Ibrahimi, Morteza and Javanmard, Adel and Roy, Benjamin V},
+	Booktitle = {Advances in Neural Information Processing Systems 25},
+	Pages = {2636--2644},
+	Title = {Efficient reinforcement learning for high dimensional linear quadratic systems},
+	Year = {2012}}
+
+@inproceedings{Kearns1999,
+	Author = {Michael J. Kearns and Daphne Koller},
+	Booktitle = {IJCAI},
+	Pages = {740-747},
+	Title = {Efficient Reinforcement Learning in Factored {MDP}s},
+	Year = {1999}}
+
+@article{VanRoy2006,
+	Author = {Van Roy, Benjamin},
+	Journal = {Math. Oper. Res.},
+	Number = {2},
+	Pages = {234-244},
+	Title = {Performance Loss Bounds for Approximate Value Iteration with State Aggregation},
+	Volume = {31},
+	Year = {2006}}
+
+@inproceedings{Maei2010,
+	Author = {Hamid Reza Maei and Csaba Szepesv{\'a}ri and Shalabh Bhatnagar and Richard Sutton},
+	Booktitle = {ICML},
+	Pages = {719-726},
+	Title = {Toward Off-Policy Learning Control with Function Approximation},
+	Year = {2010}}
+
+@inproceedings{Bartlett2009,
+	Author = {Peter L.~Bartlett and Ambuj Tewari},
+	Booktitle = {Proceedings of the 25th Conference on Uncertainty in Artificial Intelligence (UAI2009)},
+	Month = jun,
+	Pages = {35--42},
+	Pdf = {http://www.stat.berkeley.edu/~bartlett/papers/bt-rarbarllwcm-09.pdf},
+	Title = {{REGAL}: A Regularization based Algorithm for Reinforcement Learning in Weakly Communicating {MDPs}},
+	Year = {2009}}
+
+@inproceedings{Auer2006,
+	Author = {Peter Auer and Ronald Ortner},
+	Booktitle = {Advances in Neural Information Processing Systems 19},
+	Ee = {http://books.nips.cc/papers/files/nips19/NIPS2006_0477.pdf},
+	Pages = {49-56},
+	Title = {Logarithmic Online Regret Bounds for Undiscounted Reinforcement Learning},
+	Year = {2006}}
+
+@article{Jaksch2010,
+	Author = {Thomas Jaksch and Ronald Ortner and Peter Auer},
+	Bibsource = {DBLP, http://dblp.uni-trier.de},
+	Ee = {http://portal.acm.org/citation.cfm?id=1859902},
+	Journal = {Journal of Machine Learning Research},
+	Pages = {1563-1600},
+	Title = {Near-optimal Regret Bounds for Reinforcement Learning},
+	Volume = {11},
+	Year = {2010}}
+
+@article{Karmarkar1984,
+	Author = {Narendra Karmarkar},
+	Journal = {Combinatorica},
+	Number = {4},
+	Pages = {373-396},
+	Title = {A new polynomial-time algorithm for linear programming},
+	Volume = {4},
+	Year = {1984}}
+
+@article{Burgiel1997,
+	Author = {Burgiel, H.},
+	Journal = {Mathematical Gazette},
+	Pages = {194},
+	Title = {How to Lose at {Tetris}},
+	Year = {July, 1997}}
+
+@inproceedings{Szita+Szepesvari:2010-tetris,
+	Author = {Szita, Istv{\'a}n and Szepesv{\'a}ri, Csaba},
+	Booktitle = {ICML 2010 Workshop on Machine Learning and Games},
+	Title = {{SZ}-{T}etris as a Benchmark for Studying Key Problems of Reinforcement Learning},
+	Year = {2010}}
+
+@article{VanRoy2010,
+	Author = {Van Roy, Benjamin},
+	Journal = {Discrete Event Dynamic Systems},
+	Number = {3},
+	Pages = {307-324},
+	Title = {On Regression-Based Stopping Times},
+	Volume = {20},
+	Year = {2010}}
+
+@article{TsitsiklisVR1996,
+	Author = {John N. Tsitsiklis and {V}an Roy, Benjamin},
+	Journal = {Machine Learning},
+	Number = {1-3},
+	Pages = {59-94},
+	Title = {Feature-Based Methods for Large Scale Dynamic Programming},
+	Volume = {22},
+	Year = {1996}}
+
+@inproceedings{Gordon1995,
+	Author = {Geoffrey Gordon},
+	Booktitle = {Advances in Neural Information Processing Systems 8},
+	Pages = {1052--1058},
+	Publisher = {MIT Press},
+	Title = {Online Fitted Reinforcement Learning},
+	Year = {1995}}
+
+@article{taylor2009transfer,
+	Author = {Taylor, Matthew E and Stone, Peter},
+	Journal = {Journal of Machine Learning Research},
+	Number = {Jul},
+	Pages = {1633--1685},
+	Title = {Transfer learning for reinforcement learning domains: A survey},
+	Volume = {10},
+	Year = {2009}}
+
+@incollection{Dann2015,
+	Author = {Dann, Christoph and Brunskill, Emma},
+	Booktitle = {Advances in Neural Information Processing Systems 28},
+	Pages = {2818--2826},
+	Title = {Sample Complexity of Episodic Fixed-Horizon Reinforcement Learning},
+	Year = {2015}}
+
+@inproceedings{Singh1994,
+	Author = {Satinder P. Singh and Tommi Jaakkola and Michael I. Jordan},
+	Booktitle = {NIPS},
+	Pages = {361-368},
+	Title = {Reinforcement Learning with Soft State Aggregation},
+	Year = {1994}}
+
+@techreport{Rummery1994,
+	Author = {G. A. Rummery and M. Niranjan},
+	Title = {On-Line {Q}-Learning Using Connectionist Systems},
+	Year = {1994}}
+
+@book{Powell2007ADP,
+	Author = {Powell, Warren},
+	Publisher = {Wiley-Interscience},
+	Title = {Approximate Dynamic Programming: Solving the Curses of Dimensionality},
+	Year = {2007}}
+
+@inproceedings{Azar2013,
+	Author = {Azar, Mohammad Gheshlaghi and Lazaric, Alessandro and Brunskill, Emma},
+	Booktitle = {Joint European Conference on Machine Learning and Knowledge Discovery in Databases},
+	Organization = {Springer},
+	Pages = {97--112},
+	Title = {Regret bounds for reinforcement learning with policy advice},
+	Year = {2013}}
+
+@inproceedings{Lattimore2013,
+	Author = {Lattimore, Tor and Hutter, Marcus and Sunehag, Peter and others},
+	Booktitle = {Proceedings of the 30th International Conference on Machine Learning},
+	Organization = {Journal of Machine Learning Research},
+	Title = {The sample-complexity of general reinforcement learning},
+	Year = {2013}}
+
+@inproceedings{precup2001off,
+	Author = {Precup, Doina and Sutton, Richard and Dasgupta, Sanjoy},
+	Booktitle = {Proceedings of The 18th International Conference on Machine Learning},
+	Pages = {417--424},
+	Title = {Off-policy temporal-difference learning with function approximation},
+	Year = {2001}}
+
+@inproceedings{Ortner2012,
+	Author = {Ortner, Ronald and Ryabko, Daniil},
+	Booktitle = {Advances in Neural Information Processing Systems 25},
+	Pages = {1763--1771},
+	Title = {Online Regret Bounds for Undiscounted Continuous Reinforcement Learning},
+	Year = {2012}}
+
+@article{Li2010,
+	Author = {Li, Lihong and Littman, Michael L},
+	Journal = {Annals of Mathematics and Artificial Intelligence},
+	Number = {3-4},
+	Pages = {217--237},
+	Publisher = {Springer},
+	Title = {Reducing reinforcement learning to KWIK online regression},
+	Volume = {58},
+	Year = {2010}}
+
+@inproceedings{LiLW08,
+	Author = {Li, Lihong and Littman, Michael L and Walsh, Thomas J},
+	Booktitle = {Proceedings of the 25th international conference on Machine learning},
+	Organization = {ACM},
+	Pages = {568--575},
+	Title = {Knows what it knows: a framework for self-aware learning},
+	Year = {2008}}
+
+@article{GuoLM04,
+	Author = {Maozu Guo and Yang Liu and Jacek Malec},
+	Journal = {IEEE Transactions on Systems, Man, and Cybernetics, Part B},
+	Number = {5},
+	Pages = {2140-2143},
+	Title = {A new {Q}-learning algorithm based on the metropolis criterion},
+	Volume = {34},
+	Year = {2004}}
+
+@phdthesis{Wyatt97,
+	Author = {Jemery Wyatt},
+	School = {University of Edinburgh},
+	Title = {Exploration and Inference in Learning from Reinforcement},
+	Year = {1997}}
+
+@inproceedings{DeardenFR98,
+	Author = {Richard Dearden and Nir Friedman and Stuart J. Russell},
+	Booktitle = {AAAI/IAAI},
+	Pages = {761-768},
+	Title = {Bayesian {Q}-Learning},
+	Year = {1998}}
+
+@inproceedings{DeardenFA99,
+	Author = {Richard Dearden and Nir Friedman and David Andre},
+	Booktitle = {UAI},
+	Pages = {150-159},
+	Title = {Model based {Bayesian} Exploration},
+	Year = {1999}}
+
+@article{ghavamzadeh2015bayesian,
+	Author = {Ghavamzadeh, Mohammad and Mannor, Shie and Pineau, Joelle and Tamar, Aviv and others},
+	Journal = {Foundations and Trends in Machine Learning},
+	Number = {5-6},
+	Pages = {359--483},
+	Publisher = {Now Publishers, Inc.},
+	Title = {Bayesian reinforcement learning: A survey},
+	Volume = {8},
+	Year = {2015}}
+
+@inproceedings{WangLBS05,
+	Author = {Tao Wang and Daniel J. Lizotte and Michael H. Bowling and Dale Schuurmans},
+	Booktitle = {ICML},
+	Pages = {956-963},
+	Title = {Bayesian sparse sampling for on-line reward optimization},
+	Year = {2005}}
+
+@article{li2011knows,
+  title={Knows what it knows: a framework for self-aware learning},
+  author={Li, Lihong and Littman, Michael L and Walsh, Thomas J and Strehl, Alexander L},
+  journal={Machine learning},
+  volume={82},
+  number={3},
+  pages={399--443},
+  year={2011},
+  publisher={Springer}
+}
+
+@inproceedings{WenVanroy13,
+	Author = {Wen, Zheng and Van Roy, Benjamin},
+	Booktitle = {Advances in Neural Information Processing Systems 26},
+	Pages = {3021--3029},
+	Title = {Efficient exploration and value function generalization in deterministic systems},
+	Year = {2013}}
+
+@article{Thompson1933,
+	Author = {Thompson, William R},
+	Journal = {Biometrika},
+	Number = {3/4},
+	Pages = {285--294},
+	Publisher = {JSTOR},
+	Title = {On the likelihood that one unknown probability exceeds another in view of the evidence of two samples},
+	Volume = {25},
+	Year = {1933}}
+
+@inproceedings{pazis2013pac,
+	Author = {Pazis, Jason and Parr, Ronald},
+	Booktitle = {AAAI},
+	Organization = {Citeseer},
+	Title = {{PAC} Optimal Exploration in Continuous Space {Markov} Decision Processes.},
+	Year = {2013}}
+
+@article{tassa2018deepmind,
+	Author = {Tassa, Yuval and Doron, Yotam and Muldal, Alistair and Erez, Tom and Li, Yazhe and Casas, Diego de Las and Budden, David and Abdolmaleki, Abbas and Merel, Josh and Lefrancq, Andrew and others},
+	Journal = {arXiv preprint arXiv:1801.00690},
+	Title = {DeepMind Control Suite},
+	Year = {2018}}
+
+@article{kaiser2019simple,
+  author    = {Lukasz Kaiser and
+               Mohammad Babaeizadeh and
+               Piotr Milos and
+               Blazej Osinski and
+               Roy H. Campbell and
+               Konrad Czechowski and
+               Dumitru Erhan and
+               Chelsea Finn and
+               Piotr Kozakowski and
+               Sergey Levine and
+               Ryan Sepassi and
+               George Tucker and
+               Henryk Michalewski},
+  title     = {Model-Based Reinforcement Learning for Atari},
+  journal   = {CoRR},
+  volume    = {abs/1903.00374},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1903.00374},
+  archivePrefix = {arXiv},
+  eprint    = {1903.00374},
+  timestamp = {Sat, 30 Mar 2019 19:27:21 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1903-00374},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{burda2018rnd,
+	title={Exploration by random network distillation},
+	author={Yuri Burda and Harrison Edwards and Amos Storkey and Oleg Klimov},
+	booktitle={International Conference on Learning Representations},
+	year={2019},
+	url={https://openreview.net/forum?id=H1lJJnR5Ym},
+}
+
+@inproceedings{lowrey2018polo,
+	title={Plan Online, Learn Offline: Efficient Learning and Exploration via Model-Based Control},
+	author={Kendall Lowrey and Aravind Rajeswaran and Sham Kakade and Emanuel Todorov and Igor Mordatch},
+	booktitle={International Conference on Learning Representations},
+	year={2019},
+	url={https://openreview.net/forum?id=Byey7n05FQ},
+}
+
+@incollection{buckman2018steve,
+	title = {Sample-Efficient Reinforcement Learning with Stochastic Ensemble Value Expansion},
+	author = {Buckman, Jacob and Hafner, Danijar and Tucker, George and Brevdo, Eugene and Lee, Honglak},
+	booktitle = {Advances in Neural Information Processing Systems 31},
+	editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+	pages = {8224--8234},
+	year = {2018},
+	publisher = {Curran Associates, Inc.},
+	url = {http://papers.nips.cc/paper/8044-sample-efficient-reinforcement-learning-with-stochastic-ensemble-value-expansion.pdf}
+}
+
+@incollection{osband2018rpf,
+	title = {Randomized Prior Functions for Deep Reinforcement Learning},
+	author = {Osband, Ian and Aslanides, John and Cassirer, Albin},
+	booktitle = {Advances in Neural Information Processing Systems 31},
+	editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+	pages = {8617--8629},
+	year = {2018},
+	publisher = {Curran Associates, Inc.},
+	url = {https://bit.ly/rpf_neurips}
+}
+
+@inproceedings{deisenroth2011pilco,
+  author    = {Marc Peter Deisenroth and
+               Carl Edward Rasmussen},
+  title     = {{PILCO:} {A} Model-Based and Data-Efficient Approach to Policy Search},
+  booktitle = {Proceedings of the 28th International Conference on Machine Learning,
+               {ICML} 2011, Bellevue, Washington, USA, June 28 - July 2, 2011},
+  pages     = {465--472},
+  year      = {2011},
+  crossref  = {DBLP:conf/icml/2011},
+  url       = {https://icml.cc/2011/papers/323\_icmlpaper.pdf},
+  timestamp = {Wed, 03 Apr 2019 17:43:35 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/icml/DeisenrothR11},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article {silver2018alphazeroscience,
+	author = {Silver, David and Hubert, Thomas and Schrittwieser, Julian and Antonoglou, Ioannis and Lai, Matthew and Guez, Arthur and Lanctot, Marc and Sifre, Laurent and Kumaran, Dharshan and Graepel, Thore and Lillicrap, Timothy and Simonyan, Karen and Hassabis, Demis},
+	title = {A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play},
+	volume = {362},
+	number = {6419},
+	pages = {1140--1144},
+	year = {2018},
+	doi = {10.1126/science.aar6404},
+	publisher = {American Association for the Advancement of Science},
+	abstract = {Computers can beat humans at increasingly complex games, including chess and Go. However, these programs are typically constructed for a particular game, exploiting its properties, such as the symmetries of the board on which it is played. Silver et al. developed a program called AlphaZero, which taught itself to play Go, chess, and shogi (a Japanese version of chess) (see the Editorial, and the Perspective by Campbell). AlphaZero managed to beat state-of-the-art programs specializing in these three games. The ability of AlphaZero to adapt to various game rules is a notable step toward achieving a general game-playing system.Science, this issue p. 1140; see also pp. 1087 and 1118The game of chess is the longest-studied domain in the history of artificial intelligence. The strongest programs are based on a combination of sophisticated search techniques, domain-specific adaptations, and handcrafted evaluation functions that have been refined by human experts over several decades. By contrast, the AlphaGo Zero program recently achieved superhuman performance in the game of Go by reinforcement learning from self-play. In this paper, we generalize this approach into a single AlphaZero algorithm that can achieve superhuman performance in many challenging games. Starting from random play and given no domain knowledge except the game rules, AlphaZero convincingly defeated a world champion program in the games of chess and shogi (Japanese chess), as well as Go.},
+	issn = {0036-8075},
+	URL = {https://science.sciencemag.org/content/362/6419/1140},
+	eprint = {https://science.sciencemag.org/content/362/6419/1140.full.pdf},
+	journal = {Science}
+}
+
+@inproceedings{machado2018atari,
+	 author = {Machado, Marlos C. and Bellemare, Marc G. and Talvitie, Erik and Veness, Joel and Hausknecht, Matthew and Bowling, Michael},
+	 title = {Revisiting the Arcade Learning Environment: Evaluation Protocols and Open Problems for General Agents (Extended Abstract)},
+	 booktitle = {Proceedings of the 27th International Joint Conference on Artificial Intelligence},
+	 series = {IJCAI'18},
+	 year = {2018},
+	 isbn = {978-0-9992411-2-7},
+	 location = {Stockholm, Sweden},
+	 pages = {5573--5577},
+	 numpages = {5},
+	 url = {http://dl.acm.org/citation.cfm?id=3304652.3304802},
+	 acmid = {3304802},
+	 publisher = {AAAI Press},
+} 
+
+
+@article{candes2006near,
+  title={Near-optimal signal recovery from random projections: Universal encoding strategies?},
+  author={Candes, Emmanuel J and Tao, Terence},
+  journal={IEEE transactions on information theory},
+  volume={52},
+  number={12},
+  pages={5406--5425},
+  year={2006},
+  publisher={IEEE}
+}
+
+@article{donoho2006compressed,
+  title={Compressed sensing},
+  author={Donoho, David L},
+  journal={IEEE Transactions on information theory},
+  volume={52},
+  number={4},
+  pages={1289--1306},
+  year={2006},
+  publisher={IEEE}
+}
+
+@article{Kaski1998DimensionalityRB,
+  title={Dimensionality reduction by random mapping: fast similarity computation for clustering},
+  author={Samuel Kaski},
+  journal={1998 IEEE International Joint Conference on Neural Networks Proceedings. IEEE World Congress on Computational Intelligence (Cat. No.98CH36227)},
+  year={1998},
+  volume={1},
+  pages={413-418 vol.1}
+}
+
+@article{bartlett2021deep,
+  title={Deep learning: a statistical viewpoint},
+  author={Bartlett, Peter L and Montanari, Andrea and Rakhlin, Alexander},
+  journal={Acta numerica},
+  volume={30},
+  pages={87--201},
+  year={2021},
+  publisher={Cambridge University Press}
+}
+
+@misc{osband2022neural,
+      title={The Neural Testbed: Evaluating Predictive Distributions}, 
+      author={Ian Osband and Zheng Wen and Seyed Mohammad Asghari and Vikranth Dwaracherla and Botao Hao and Morteza Ibrahimi and Dieterich Lawson and Xiuyuan Lu and Brendan O'Donoghue and Van Roy, Benjamin},
+      year={2022},
+      eprint={2110.04629},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{hendrycks2019benchmarking,
+      title={Benchmarking Neural Network Robustness to Common Corruptions and Perturbations}, 
+      author={Dan Hendrycks and Thomas Dietterich},
+      year={2019},
+      eprint={1903.12261},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{riquelme2018deep,
+  title={Deep bayesian bandits showdown: An empirical comparison of bayesian deep networks for thompson sampling},
+  author={Riquelme, Carlos and Tucker, George and Snoek, Jasper},
+  journal={arXiv preprint arXiv:1802.09127},
+  year={2018}
+}
+
+@misc{zhang2022memo,
+      title={MEMO: Test Time Robustness via Adaptation and Augmentation}, 
+      author={Marvin Zhang and Sergey Levine and Chelsea Finn},
+      year={2022},
+      eprint={2110.09506},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{dwaracherla2019posterior,
+  title={Posterior sampling networks},
+  author={Dwaracherla, Vikranth R and Van Roy, Benjamin and Ibrahimi, Morteza},
+  booktitle={Reinforcement Learning and Decision Making Conference},
+  pages={366--370},
+  year={2019}
+}
+
+@article{wilson2021evaluating,
+  title={Evaluating Approximate Inference in {B}ayesian Deep Learning},
+  author={Wilson, Andrew Gordon and Izmailov, Pavel and Hoffman, Matthew D and Gal, Yarin and Li, Yingzhen and Pradier, Melanie F and Vikram, Sharad and Foong, Andrew and Lotfi, Sanae and Farquhar, Sebastian},
+  year={2021}
+}

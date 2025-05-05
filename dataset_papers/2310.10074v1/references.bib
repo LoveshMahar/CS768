@@ -1,0 +1,962 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BASELINES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{bnstats,
+  title={Evaluating prediction-time batch normalization for robustness under covariate shift},
+  author={Nado, Zachary and Padhy, Shreyas and Sculley, D and D'Amour, Alexander and Lakshminarayanan, Balaji and Snoek, Jasper},
+  journal={arXiv preprint arXiv:2006.10963},
+  year={2020}
+}
+
+@inproceedings{bnstats2,
+ author = {Schneider, Steffen and Rusak, Evgenia and Eck, Luisa and Bringmann, Oliver and Brendel, Wieland and Bethge, Matthias},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+ pages = {11539--11551},
+ publisher = {Curran Associates, Inc.},
+ title = {Improving robustness against common corruptions by covariate shift adaptation},
+ url = {https://proceedings.neurips.cc/paper/2020/file/85690f81aadc1749175c187784afc9ee-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}
+
+@inproceedings{onda,
+  title={Kitting in the wild through online domain adaptation},
+  author={Mancini, Massimiliano and Karaoguz, Hakan and Ricci, Elisa and Jensfelt, Patric and Caputo, Barbara},
+  booktitle={2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={1103--1109},
+  year={2018},
+  organization={IEEE}
+}
+
+@inproceedings{pl,
+  title={Pseudo-label: The simple and efficient semi-supervised learning method for deep neural networks},
+  author={Lee, Dong-Hyun},
+  booktitle={Workshop on challenges in representation learning, ICML},
+  pages={896},
+  year={2013}
+}
+
+@inproceedings{tent,
+title={Tent: Fully Test-Time Adaptation by Entropy Minimization},
+author={Dequan Wang and Evan Shelhamer and Shaoteng Liu and Bruno Olshausen and Trevor Darrell},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=uXl3bZLkr3c}
+}
+
+
+@InProceedings{lame,
+    author    = {Boudiaf, Malik and Mueller, Romain and Ben Ayed, Ismail and Bertinetto, Luca},
+    title     = {Parameter-Free Online Test-Time Adaptation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {8344-8353}
+}
+
+
+@InProceedings{cotta,
+    author    = {Wang, Qin and Fink, Olga and Van Gool, Luc and Dai, Dengxin},
+    title     = {Continual Test-Time Domain Adaptation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {7201-7211}
+}
+
+@inproceedings{
+odin,
+title={Enhancing The Reliability of Out-of-distribution Image Detection in Neural Networks},
+author={Shiyu Liang and Yixuan Li and R. Srikant},
+booktitle={International Conference on Learning Representations},
+year={2018},
+url={https://openreview.net/forum?id=H1VGkIxRZ},
+}
+
+@inproceedings{mds,
+ author = {Lee, Kimin and Lee, Kibok and Lee, Honglak and Shin, Jinwoo},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {A Simple Unified Framework for Detecting Out-of-Distribution Samples and Adversarial Attacks},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2018/file/abdeb6f575ac5c6676b747bca8d09cc2-Paper.pdf},
+ volume = {31},
+ year = {2018}
+}
+
+
+@inproceedings{t3a,
+title={Test-Time Classifier Adjustment Module for Model-Agnostic Domain Generalization},
+author={Yusuke Iwasawa and Yutaka Matsuo},
+booktitle={Advances in Neural Information Processing Systems},
+editor={A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+year={2021},
+url={https://openreview.net/forum?id=e_yvNqkJKAW}
+}
+
+@article{rs,
+author = {Vitter, Jeffrey S.},
+title = {Random Sampling with a Reservoir},
+year = {1985},
+issue_date = {March 1985},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {11},
+number = {1},
+issn = {0098-3500},
+url = {https://doi.org/10.1145/3147.3165},
+doi = {10.1145/3147.3165},
+abstract = {We introduce fast algorithms for selecting a random sample of n records without replacement from a pool of N records, where the value of N is unknown beforehand. The main result of the paper is the design and analysis of Algorithm Z; it does the sampling in one pass using constant space and in O(n(1 + log(N/n))) expected time, which is optimum, up to a constant factor. Several optimizations are studied that collectively improve the speed of the naive version of the algorithm by an order of magnitude. We give an efficient Pascal-like implementation that incorporates these modifications and that is suitable for general use. Theoretical and empirical results indicate that Algorithm Z outperforms current methods by a significant margin.},
+journal = {ACM Trans. Math. Softw.},
+month = {mar},
+pages = {37–57},
+numpages = {21}
+}
+
+@inproceedings{
+sar,
+title={Towards Stable Test-time Adaptation in Dynamic Wild World},
+author={Shuaicheng Niu and Jiaxiang Wu and Yifan Zhang and Zhiquan Wen and Yaofo Chen and Peilin Zhao and Mingkui Tan},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=g2YraF75Tj}
+}
+
+@inproceedings{
+sam,
+title={Sharpness-aware Minimization for Efficiently Improving Generalization},
+author={Pierre Foret and Ariel Kleiner and Hossein Mobahi and Behnam Neyshabur},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=6Tm1mposlrM}
+}
+
+
+@InProceedings{rotta,
+    author    = {Yuan, Longhui and Xie, Binhui and Li, Shuang},
+    title     = {Robust Test-Time Adaptation in Dynamic Scenarios},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {15922-15932}
+}
+
+
+@inproceedings{
+note,
+title={{NOTE}: Robust Continual Test-time Adaptation Against Temporal Correlation},
+author={Taesik Gong and Jongheon Jeong and Taewon Kim and Yewon Kim and Jinwoo Shin and Sung-Ju Lee},
+booktitle={Advances in Neural Information Processing Systems},
+editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+year={2022},
+url={https://openreview.net/forum?id=E9HNxrCFZPV}
+}
+
+
+@inproceedings{memo,
+ author = {Zhang, Marvin and Levine, Sergey and Finn, Chelsea},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {38629--38642},
+ publisher = {Curran Associates, Inc.},
+ title = {MEMO: Test Time Robustness via Adaptation and Augmentation},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/fc28053a08f59fccb48b11f2e31e81c7-Paper-Conference.pdf},
+ volume = {35},
+ year = {2022}
+}
+
+@InProceedings{osda,
+author = {Panareda Busto, Pau and Gall, Juergen},
+title = {Open Set Domain Adaptation},
+booktitle = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
+month = {Oct},
+year = {2017}
+}
+
+@InProceedings{osdab,
+author = {Saito, Kuniaki and Yamamoto, Shohei and Ushiku, Yoshitaka and Harada, Tatsuya},
+title = {Open Set Domain Adaptation by Backpropagation},
+booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+month = {September},
+year = {2018}
+}
+
+@INPROCEEDINGS{uda,
+  author={You, Kaichao and Long, Mingsheng and Cao, Zhangjie and Wang, Jianmin and Jordan, Michael I.},
+  booktitle={2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  title={Universal Domain Adaptation}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={2715-2724},
+  doi={10.1109/CVPR.2019.00283}}
+
+
+@InProceedings{eata,
+  title = 	 {Efficient Test-Time Model Adaptation without Forgetting},
+  author =       {Niu, Shuaicheng and Wu, Jiaxiang and Zhang, Yifan and Chen, Yaofo and Zheng, Shijian and Zhao, Peilin and Tan, Mingkui},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {16888--16905},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/niu22a/niu22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/niu22a.html},
+}
+
+
+@InProceedings{petal,
+    author    = {Brahma, Dhanajit and Rai, Piyush},
+    title     = {A Probabilistic Framework for Lifelong Test-Time Adaptation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {3582-3591}
+}
+
+
+@inproceedings{grandvalet2004semi,
+ author = {Grandvalet, Yves and Bengio, Yoshua},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {L. Saul and Y. Weiss and L. Bottou},
+ pages = {},
+ publisher = {MIT Press},
+ title = {Semi-supervised Learning by Entropy Minimization},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2004/file/96f2b50b5d3613adf9c27049b2a888c7-Paper.pdf},
+ volume = {17},
+ year = {2004}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DATASETS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{cifar,
+  title={Learning multiple layers of features from tiny images},
+  author={Krizhevsky, A. and Hinton, G.},
+  journal={Master's thesis, Department of Computer Science, University of Toronto},
+  year={2009},
+  publisher={Citeseer}
+}
+
+@inproceedings{
+cifarc,
+title={Benchmarking Neural Network Robustness to Common Corruptions and Perturbations},
+author={Dan Hendrycks and Thomas Dietterich},
+booktitle={International Conference on Learning Representations},
+year={2019},
+url={https://openreview.net/forum?id=HJz6tiCqYm},
+}
+
+@INPROCEEDINGS{imagenet,  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Kai Li and Li Fei-Fei},  booktitle={2009 IEEE Conference on Computer Vision and Pattern Recognition},   title={ImageNet: A large-scale hierarchical image database},   year={2009},  volume={},  number={},  pages={248-255},  doi={10.1109/CVPR.2009.5206848}}
+
+@Article{harth,
+AUTHOR = {Logacjov, Aleksej and Bach, Kerstin and Kongsvold, Atle and Bårdstu, Hilde Bremseth and Mork, Paul Jarle},
+TITLE = {HARTH: A Human Activity Recognition Dataset for Machine Learning},
+JOURNAL = {Sensors},
+VOLUME = {21},
+YEAR = {2021},
+NUMBER = {23},
+ARTICLE-NUMBER = {7853},
+URL = {https://www.mdpi.com/1424-8220/21/23/7853},
+PubMedID = {34883863},
+ISSN = {1424-8220},
+ABSTRACT = {Existing accelerometer-based human activity recognition (HAR) benchmark datasets that were recorded during free living suffer from non-fixed sensor placement, the usage of only one sensor, and unreliable annotations. We make two contributions in this work. First, we present the publicly available Human Activity Recognition Trondheim dataset (HARTH). Twenty-two participants were recorded for 90 to 120 min during their regular working hours using two three-axial accelerometers, attached to the thigh and lower back, and a chest-mounted camera. Experts annotated the data independently using the camera&rsquo;s video signal and achieved high inter-rater agreement (Fleiss&rsquo; Kappa =0.96). They labeled twelve activities. The second contribution of this paper is the training of seven different baseline machine learning models for HAR on our dataset. We used a support vector machine, k-nearest neighbor, random forest, extreme gradient boost, convolutional neural network, bidirectional long short-term memory, and convolutional neural network with multi-resolution blocks. The support vector machine achieved the best results with an F1-score of 0.81 (standard deviation: &plusmn;0.18), recall of 0.85&plusmn;0.13, and precision of 0.79&plusmn;0.22 in a leave-one-subject-out cross-validation. Our highly professional recordings and annotations provide a promising benchmark dataset for researchers to develop innovative machine learning approaches for precise HAR in free living.},
+DOI = {10.3390/s21237853}
+}
+
+@ARTICLE{extrasensory,
+  author={Vaizman, Yonatan and Ellis, Katherine and Lanckriet, Gert},
+  journal={IEEE Pervasive Computing}, 
+  title={Recognizing Detailed Human Context in the Wild from Smartphones and Smartwatches}, 
+  year={2017},
+  volume={16},
+  number={4},
+  pages={62-74},
+  doi={10.1109/MPRV.2017.3971131}}
+
+
+@Article{reallifehar,
+AUTHOR = {Garcia-Gonzalez, Daniel and Rivero, Daniel and Fernandez-Blanco, Enrique and Luaces, Miguel R.},
+TITLE = {A Public Domain Dataset for Real-Life Human Activity Recognition Using Smartphone Sensors},
+JOURNAL = {Sensors},
+VOLUME = {20},
+YEAR = {2020},
+NUMBER = {8},
+ARTICLE-NUMBER = {2200},
+URL = {https://www.mdpi.com/1424-8220/20/8/2200},
+ISSN = {1424-8220},
+ABSTRACT = {In recent years, human activity recognition has become a hot topic inside the scientific community. The reason to be under the spotlight is its direct application in multiple domains, like healthcare or fitness. Additionally, the current worldwide use of smartphones makes it particularly easy to get this kind of data from people in a non-intrusive and cheaper way, without the need for other wearables. In this paper, we introduce our orientation-independent, placement-independent and subject-independent human activity recognition dataset. The information in this dataset is the measurements from the accelerometer, gyroscope, magnetometer, and GPS of the smartphone. Additionally, each measure is associated with one of the four possible registered activities: inactive, active, walking and driving. This work also proposes asupport vector machine (SVM) model to perform some preliminary experiments on the dataset. Considering that this dataset was taken from smartphones in their actual use, unlike other datasets, the development of a good model on such data is an open problem and a challenge for researchers. By doing so, we would be able to close the gap between the model and a real-life application.},
+DOI = {10.3390/s20082200}
+}
+
+@article{kitti,
+author = {A Geiger and P Lenz and C Stiller and R Urtasun},
+title ={Vision meets robotics: The KITTI dataset},
+journal = {The International Journal of Robotics Research},
+volume = {32},
+number = {11},
+pages = {1231-1237},
+year = {2013},
+doi = {10.1177/0278364913491297},
+
+URL = { 
+        https://doi.org/10.1177/0278364913491297
+    
+},
+eprint = { 
+        https://doi.org/10.1177/0278364913491297
+    
+}
+,
+    abstract = { We present a novel dataset captured from a VW station wagon for use in mobile robotics and autonomous driving research. In total, we recorded 6 hours of traffic scenarios at 10–100 Hz using a variety of sensor modalities such as high-resolution color and grayscale stereo cameras, a Velodyne 3D laser scanner and a high-precision GPS/IMU inertial navigation system. The scenarios are diverse, capturing real-world traffic situations, and range from freeways over rural areas to inner-city scenes with many static and dynamic objects. Our data is calibrated, synchronized and timestamped, and we provide the rectified and raw image sequences. Our dataset also contains object labels in the form of 3D tracklets, and we provide online benchmarks for stereo, optical flow, object detection and other tasks. This paper describes our recording platform, the data format and the utilities that we provide. }
+}
+
+@misc{kitti-rain,
+  doi = {10.48550/ARXIV.1908.10335},
+  
+  url = {https://arxiv.org/abs/1908.10335},
+  
+  author = {Halder, Shirsendu Sukanta and Lalonde, Jean-François and de Charette, Raoul},
+  
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), Graphics (cs.GR), Machine Learning (cs.LG), Image and Video Processing (eess.IV), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Electrical engineering, electronic engineering, information engineering, FOS: Electrical engineering, electronic engineering, information engineering},
+  
+  title = {Physics-Based Rendering for Improving Robustness to Rain},
+  
+  publisher = {arXiv},
+  
+  year = {2019},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@misc{monodepth,
+  doi = {10.48550/ARXIV.1609.03677},
+  
+  url = {https://arxiv.org/abs/1609.03677},
+  
+  author = {Godard, Clément and Mac Aodha, Oisin and Brostow, Gabriel J.},
+  
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Unsupervised Monocular Depth Estimation with Left-Right Consistency},
+  
+  publisher = {arXiv},
+  
+  year = {2016},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@inproceedings{vlcs,
+  title={Unbiased metric learning: On the utilization of multiple datasets and web images for softening bias},
+  author={Fang, Chen and Xu, Ye and Rockmore, Daniel N},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+  pages={1657--1664},
+  year={2013}
+}
+
+@inproceedings{pacs,
+  title={Deeper, broader and artier domain generalization},
+  author={Li, Da and Yang, Yongxin and Song, Yi-Zhe and Hospedales, Timothy M},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={5542--5550},
+  year={2017}
+}
+
+
+@article{caltech101,
+  title={One-Shot learning of object categories. IEEE Trans},
+  author={Fei-Fei, L and Fergus, R and Perona, P},
+  journal={Pattern Recognition and Machine Intelligence}
+}
+
+@inproceedings{sun09,
+  title={Exploiting hierarchical context on a large database of object categories},
+  author={Choi, Myung Jin and Lim, Joseph J and Torralba, Antonio and Willsky, Alan S},
+  booktitle={2010 IEEE computer society conference on computer vision and pattern recognition},
+  pages={129--136},
+  year={2010},
+  organization={IEEE}
+}
+
+@article{voc2007,
+  title={The PASCAL visual object classes challenge 2007 (VOC2007) results},
+  author={Everingham, Mark and Zisserman, Andrew and Williams, Christopher KI and Van Gool, Luc and Allan, Moray and Bishop, Christopher M and Chapelle, Olivier and Dalal, Navneet and Deselaers, Thomas and Dork{\'o}, Gyuri and others},
+  year={2008},
+  publisher={Citeseer}
+}
+
+@article{labelme,
+  title={LabelMe: a database and web-based tool for image annotation},
+  author={Russell, Bryan C and Torralba, Antonio and Murphy, Kevin P and Freeman, William T},
+  journal={International journal of computer vision},
+  volume={77},
+  number={1},
+  pages={157--173},
+  year={2008},
+  publisher={Springer}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{10.1145/3422622,
+author = {Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+title = {Generative Adversarial Networks},
+year = {2020},
+issue_date = {November 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {63},
+number = {11},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/3422622},
+doi = {10.1145/3422622},
+journal = {Commun. ACM},
+month = {oct},
+pages = {139–144},
+numpages = {6}
+}
+
+
+@InProceedings{ronneberger2015u,
+author="Ronneberger, Olaf
+and Fischer, Philipp
+and Brox, Thomas",
+editor="Navab, Nassir
+and Hornegger, Joachim
+and Wells, William M.
+and Frangi, Alejandro F.",
+title="U-Net: Convolutional Networks for Biomedical Image Segmentation",
+booktitle="Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2015",
+year="2015",
+publisher="Springer International Publishing",
+address="Cham",
+pages="234--241",
+isbn="978-3-319-24574-4"
+}
+
+
+
+@InProceedings{7780459,
+author = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+title = {Deep Residual Learning for Image Recognition},
+booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2016}
+}
+
+
+@article{li2021federated,
+  title={Federated learning on non-iid data silos: An experimental study},
+  author={Li, Qinbin and Diao, Yiqun and Chen, Quan and He, Bingsheng},
+  journal={arXiv preprint arXiv:2102.02079},
+  year={2021}
+}
+
+@article{hsu2019measuring,
+  title={Measuring the effects of non-identical data distribution for federated visual classification},
+  author={Hsu, Tzu-Ming Harry and Qi, Hang and Brown, Matthew},
+  journal={arXiv preprint arXiv:1909.06335},
+  year={2019}
+}
+
+@article{wang2020tackling,
+  title={Tackling the objective inconsistency problem in heterogeneous federated optimization},
+  author={Wang, Jianyu and Liu, Qinghua and Liang, Hao and Joshi, Gauri and Poor, H Vincent},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={7611--7623},
+  year={2020}
+}
+
+@article{wang2020federated,
+  title={Federated learning with matched averaging},
+  author={Wang, Hongyi and Yurochkin, Mikhail and Sun, Yuekai and Papailiopoulos, Dimitris and Khazaeni, Yasaman},
+  journal={arXiv preprint arXiv:2002.06440},
+  year={2020}
+}
+
+
+@ARTICLE{sensor_positioning,
+  author={Lane, Nicholas D. and Miluzzo, Emiliano and Lu, Hong and Peebles, Daniel and Choudhury, Tanzeem and Campbell, Andrew T.},
+  journal={IEEE Communications Magazine}, 
+  title={A survey of mobile phone sensing}, 
+  year={2010},
+  volume={48},
+  number={9},
+  pages={140-150},
+  doi={10.1109/MCOM.2010.5560598}}
+
+
+@article{ulyanov2016instance,
+  title={Instance normalization: The missing ingredient for fast stylization},
+  author={Ulyanov, Dmitry and Vedaldi, Andrea and Lempitsky, Victor},
+  journal={arXiv preprint arXiv:1607.08022},
+  year={2016}
+}
+
+@article{ZHU2021371,
+title = {Federated learning on non-IID data: A survey},
+journal = {Neurocomputing},
+volume = {465},
+pages = {371-390},
+year = {2021},
+issn = {0925-2312},
+doi = {https://doi.org/10.1016/j.neucom.2021.07.098},
+url = {https://www.sciencedirect.com/science/article/pii/S0925231221013254},
+author = {Hangyu Zhu and Jinjin Xu and Shiqing Liu and Yaochu Jin},
+keywords = {Federated learning, Machine learning, Non-IID data, Privacy preservation},
+abstract = {Federated learning is an emerging distributed machine learning framework for privacy preservation. However, models trained in federated learning usually have worse performance than those trained in the standard centralized learning mode, especially when the training data are not independent and identically distributed (Non-IID) on the local devices. In this survey, we provide a detailed analysis of the influence of Non-IID data on both parametric and non-parametric machine learning models in both horizontal and vertical federated learning. In addition, current research work on handling challenges of Non-IID data in federated learning are reviewed, and both advantages and disadvantages of these approaches are discussed. Finally, we suggest several future research directions before concluding the paper.}
+}
+
+
+@InProceedings{pmlr-v37-ioffe15,
+  title = 	 {Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift},
+  author = 	 {Ioffe, Sergey and Szegedy, Christian},
+  booktitle = 	 {Proceedings of the 32nd International Conference on Machine Learning},
+  pages = 	 {448--456},
+  year = 	 {2015},
+  editor = 	 {Bach, Francis and Blei, David},
+  volume = 	 {37},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Lille, France},
+  month = 	 {07--09 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v37/ioffe15.pdf},
+  url = 	 {https://proceedings.mlr.press/v37/ioffe15.html},
+  abstract = 	 {Training Deep Neural Networks is complicated by the fact that the distribution of each layer’s inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlinearities. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normalization a part of the model architecture and performing the normalization for each training mini-batch. Batch Normalization allows us to use much higher learning rates and be less careful about initialization, and in some cases eliminates the need for Dropout. Applied to a stateof-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Using an ensemble of batch-normalized networks, we improve upon the best published result on ImageNet classification: reaching 4.82\% top-5 test error, exceeding the accuracy of human raters.}
+}
+
+@INPROCEEDINGS{9607565,
+  author={Yao, Zhuliang and Cao, Yue and Lin, Yutong and Liu, Ze and Zhang, Zheng and Hu, Han},
+  booktitle={2021 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)}, 
+  title={Leveraging Batch Normalization for Vision Transformers}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={413-422},
+  doi={10.1109/ICCVW54120.2021.00050}}
+  
+  @inproceedings{
+dosovitskiy2021an,
+title={An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
+author={Alexey Dosovitskiy and Lucas Beyer and Alexander Kolesnikov and Dirk Weissenborn and Xiaohua Zhai and Thomas Unterthiner and Mostafa Dehghani and Matthias Minderer and Georg Heigold and Sylvain Gelly and Jakob Uszkoreit and Neil Houlsby},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=YicbFdNTTy}
+}
+@article{PETROVIC2020161,
+title = {Traffic Accidents with Autonomous Vehicles: Type of Collisions, Manoeuvres and Errors of Conventional Vehicles’ Drivers},
+journal = {Transportation Research Procedia},
+volume = {45},
+pages = {161-168},
+year = {2020},
+note = {Transport Infrastructure and systems in a changing world. Towards a more sustainable, reliable and smarter mobility.TIS Roma 2019 Conference Proceedings},
+issn = {2352-1465},
+doi = {https://doi.org/10.1016/j.trpro.2020.03.003},
+url = {https://www.sciencedirect.com/science/article/pii/S2352146520301654},
+author = {Đorđe Petrović and Radomir Mijailović and Dalibor Pešić},
+keywords = {autonomous vehicle, traffic accident, road safety, human-machine interactions},
+abstract = {Autonomous vehicles have the potential to dramatically reduce traffic accidents. This assumption is based on the fact that autonomous vehicles eliminate the impact of a human factor on the occurrence of a traffic accident. Autonomous vehicle’ testing in real traffic conditions is carried out worldwide. In this paper, we analyzed traffic accidents with autonomous vehicles that occurred in the US state of California in the period from 2015 to 2017. In order to better recognize the characteristics of traffic accidents with autonomous vehicles, we were carried out a comparative analysis of traffic accidents with only conventional vehicles at locations where occurred traffic accidents with autonomous vehicles. During the analysis of traffic accidents, we have put emphasis on the type of collision, manoeuvres and errors of the drivers of conventional vehicles that led to the traffic accident. Applying statistical analysis, we were found that the type of collision “rear-end” more often in traffic accidents with autonomous vehicles. Types of collisions “pedestrian” and “broadside” were less in traffic accidents with autonomous vehicles. Drivers’ manoeuvres of conventional vehicles do not differ depending on whether an autonomous vehicle is involved in the traffic accident. Drivers’ errors of conventional vehicles that are more often in accidents with autonomous vehicles are “unsafe speed” and “following too closely”. The obtained results were used to propose measures that will improve communication between autonomous vehicles and drivers’ conventional vehicle.}
+}
+
+ @misc{bachman_capulet_2022, title={Digital record of Tesla crashes resulting in death}, url={https://www.tesladeaths.com/}, journal={TeslaDeaths.com}, publisher={Tesla Deaths}, author={Bachman, Elon and Capulet, I}, year={2022}, month={May}} 
+ 
+ @book{quinonero2008dataset,
+  title={Dataset shift in machine learning},
+  author={Qui{\~n}onero-Candela, Joaquin and Sugiyama, Masashi and Schwaighofer, Anton and Lawrence, Neil D},
+  year={2008},
+  publisher={Mit Press}
+}
+
+@incollection{NEURIPS2019_9015,
+title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+booktitle = {Advances in Neural Information Processing Systems 32},
+editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+pages = {8024--8035},
+year = {2019},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf}
+}
+
+@misc{torchvision2016,
+    title        = {TorchVision: PyTorch's Computer Vision library},
+    author       = {TorchVision maintainers and contributors},
+    year         = 2016,
+    journal      = {GitHub repository},
+    publisher    = {GitHub},
+    howpublished = {\url{https://github.com/pytorch/vision}}
+}
+
+@inproceedings{kingma:adam,
+author = {Kingma, Diederick P and Ba, Jimmy},
+title = {Adam: A method for stochastic optimization},
+booktitle = { International Conference on Learning Representations (ICLR) },
+year = {2015}
+}
+
+@inproceedings{deng2009imagenet,
+  title={Imagenet: A large-scale hierarchical image database},
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  booktitle={2009 IEEE conference on computer vision and pattern recognition},
+  pages={248--255},
+  year={2009},
+  organization={Ieee}
+}
+
+@inproceedings{10.5555/3504035.3504439,
+author = {Isele, David and Cosgun, Akansel},
+title = {Selective Experience Replay for Lifelong Learning},
+year = {2018},
+isbn = {978-1-57735-800-8},
+publisher = {AAAI Press},
+abstract = {Deep reinforcement learning has emerged as a powerful tool for a variety of learning tasks, however deep nets typically exhibit forgetting when learning multiple tasks in sequence. To mitigate forgetting, we propose an experience replay process that augments the standard FIFO buffer and selectively stores experiences in a long-term memory. We explore four strategies for selecting which experiences will be stored: favoring surprise, favoring reward, matching the global training distribution, and maximizing coverage of the state space. We show that distribution matching successfully prevents catastrophic forgetting, and is consistently the best approach on all domains tested. While distribution matching has better and more consistent performance, we identify one case in which coverage maximization is beneficial - when tasks that receive less trained are more important. Overall, our results show that selective experience replay, when suitable selection algorithms are employed, can prevent catastrophic forgetting.},
+booktitle = {Proceedings of the Thirty-Second AAAI Conference on Artificial Intelligence and Thirtieth Innovative Applications of Artificial Intelligence Conference and Eighth AAAI Symposium on Educational Advances in Artificial Intelligence},
+articleno = {404},
+numpages = {8},
+location = {New Orleans, Louisiana, USA},
+series = {AAAI'18/IAAI'18/EAAI'18}
+}
+
+@article{Chaudhry_tinyer_icml2019,
+  title={Continual Learning with Tiny Episodic Memories},
+  author={Chaudhry, Arslan and Rohrbach, Marcus and Elhoseiny, Mohamed and Ajanthan, Thalaiyasingam and Dokania, Puneet K and Torr, Philip HS and Ranzato, Marc'Aurelio},
+  journal={ICML Workshop: Multi-Task and Lifelong Reinforcement Learning},
+  year={2019}
+}
+
+
+@article{10.5555/3454287.3455345,
+  title={Gradient based sample selection for online continual learning},
+  author={Aljundi, Rahaf and Lin, Min and Goujaud, Baptiste and Bengio, Yoshua},
+  journal={Advances in neural information processing systems},
+  volume={32},
+  year={2019}
+}
+
+@InProceedings{pmlr-v119-chrysakis20a,
+  title = 	 {Online Continual Learning from Imbalanced Data},
+  author =       {Chrysakis, Aristotelis and Moens, Marie-Francine},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {1952--1961},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--18 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v119/chrysakis20a/chrysakis20a.pdf},
+  url = 	 {https://proceedings.mlr.press/v119/chrysakis20a.html},
+  abstract = 	 {A well-documented weakness of neural networks is the fact that they suffer from catastrophic forgetting when trained on data provided by a non-stationary distribution. Recent work in the field of continual learning attempts to understand and overcome this issue. Unfortunately, the majority of relevant work embraces the implicit assumption that the distribution of observed data is perfectly balanced, despite the fact that, in the real world, humans and animals learn from observations that are temporally correlated and severely imbalanced. Motivated by this remark, we aim to evaluate memory population methods that are used in online continual learning, when dealing with highly imbalanced and temporally correlated streams of data. More importantly, we introduce a new memory population approach, which we call class-balancing reservoir sampling (CBRS). We demonstrate that CBRS outperforms the state-of-the-art memory population algorithms in a considerably challenging learning setting, over a range of different datasets, and for multiple architectures.}
+}
+
+
+@article{gretton2009covariate,
+  title={Covariate shift by kernel mean matching},
+  author={Gretton, Arthur and Smola, Alex and Huang, Jiayuan and Schmittfull, Marcel and Borgwardt, Karsten and Sch{\"o}lkopf, Bernhard},
+  journal={Dataset shift in machine learning},
+  volume={3},
+  number={4},
+  pages={5},
+  year={2009}
+}
+
+@inproceedings{dcoral,
+  author={Baochen Sun and Kate Saenko},
+  title={Deep CORAL: Correlation Alignment for Deep Domain Adaptation},
+  booktitle={ECCV 2016 Workshops},
+  year={2016}
+}
+
+@inproceedings{tzeng2017adversarial,
+  title={Adversarial discriminative domain adaptation},
+  author={Tzeng, Eric and Hoffman, Judy and Saenko, Kate and Darrell, Trevor},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={7167--7176},
+  year={2017}
+}
+
+@article{ganin2016domain,
+  title={Domain-adversarial training of neural networks},
+  author={Ganin, Yaroslav and Ustinova, Evgeniya and Ajakan, Hana and Germain, Pascal and Larochelle, Hugo and Laviolette, Fran{\c{c}}ois and Marchand, Mario and Lempitsky, Victor},
+  journal={The journal of machine learning research},
+  volume={17},
+  number={1},
+  pages={2096--2030},
+  year={2016},
+  publisher={JMLR. org}
+}
+
+@inproceedings{liang2020we,
+  title={Do we really need to access the source data? source hypothesis transfer for unsupervised domain adaptation},
+  author={Liang, Jian and Hu, Dapeng and Feng, Jiashi},
+  booktitle={International Conference on Machine Learning},
+  pages={6028--6039},
+  year={2020},
+  organization={PMLR}
+}
+
+@inproceedings{kundu2020universal,
+  title={Universal source-free domain adaptation},
+  author={Kundu, Jogendra Nath and Venkat, Naveen and Babu, R Venkatesh and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4544--4553},
+  year={2020}
+}
+@inproceedings{li2020model,
+  title={Model adaptation: Unsupervised domain adaptation without source data},
+  author={Li, Rui and Jiao, Qianfen and Cao, Wenming and Wong, Hau-San and Wu, Si},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={9641--9650},
+  year={2020}
+}
+
+
+@inproceedings{sun2020test,
+  title={Test-time training with self-supervision for generalization under distribution shifts},
+  author={Sun, Yu and Wang, Xiaolong and Liu, Zhuang and Miller, John and Efros, Alexei and Hardt, Moritz},
+  booktitle={International Conference on Machine Learning},
+  pages={9229--9248},
+  year={2020},
+  organization={PMLR}
+}
+
+@article{liu2021ttt++,
+  title={TTT++: When Does Self-Supervised Test-Time Training Fail or Thrive?},
+  author={Liu, Yuejiang and Kothari, Parth and van Delft, Bastien and Bellot-Gurlet, Baptiste and Mordan, Taylor and Alahi, Alexandre},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021}
+}
+
+@article{10.1145/3381831,
+author = {Schwartz, Roy and Dodge, Jesse and Smith, Noah A. and Etzioni, Oren},
+title = {Green AI},
+year = {2020},
+issue_date = {December 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {63},
+number = {12},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/3381831},
+doi = {10.1145/3381831},
+abstract = {Creating efficiency in AI research will decrease its carbon footprint and increase its inclusivity as deep learning study should not require the deepest pockets.},
+journal = {Commun. ACM},
+month = {nov},
+pages = {54–63},
+numpages = {10}
+}
+
+@article{szegedy2013intriguing,
+  title={Intriguing properties of neural networks},
+  author={Szegedy, Christian and Zaremba, Wojciech and Sutskever, Ilya and Bruna, Joan and Erhan, Dumitru and Goodfellow, Ian and Fergus, Rob},
+  journal={arXiv preprint arXiv:1312.6199},
+  year={2013}
+}
+@article{barocas2017fairness,
+  title={Fairness in machine learning},
+  author={Barocas, Solon and Hardt, Moritz and Narayanan, Arvind},
+  journal={Nips tutorial},
+  volume={1},
+  pages={2},
+  year={2017}
+}
+
+@article{nam2018batch,
+  title={Batch-instance normalization for adaptively style-invariant neural networks},
+  author={Nam, Hyeonseob and Kim, Hyo-Eun},
+  journal={Advances in Neural Information Processing Systems},
+  volume={31},
+  year={2018}
+}
+
+@article{vaswani2017attention,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  journal={Advances in neural information processing systems},
+  volume={30},
+  year={2017}
+}
+
+@article{hochreiter1997long,
+  title={Long short-term memory},
+  author={Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  journal={Neural computation},
+  volume={9},
+  number={8},
+  pages={1735--1780},
+  year={1997},
+  publisher={MIT Press}
+}
+
+@inproceedings{loshchilov2016sgdr,
+  title={{SGDR}: Stochastic gradient descent with warm restarts},
+  author={Loshchilov, Ilya and Hutter, Frank},
+    booktitle = { International Conference on Learning Representations (ICLR) },
+    year = {2017}
+}
+
+@article{mu2019mnist,
+  title={Mnist-c: A robustness benchmark for computer vision},
+  author={Mu, Norman and Gilmer, Justin},
+  journal={arXiv preprint arXiv:1906.02337},
+  year={2019}
+}
+@article{lecun1998gradient,
+  title={Gradient-based learning applied to document recognition},
+  author={LeCun, Yann and Bottou, L{\'e}on and Bengio, Yoshua and Haffner, Patrick},
+  journal={Proceedings of the IEEE},
+  volume={86},
+  number={11},
+  pages={2278--2324},
+  year={1998},
+  publisher={Ieee}
+}
+
+@article{attack,
+      title={Uncovering Adversarial Risks of Test-Time Adaptation}, 
+      author={Tong Wu and Feiran Jia and Xiangyu Qi and Jiachen T. Wang and Vikash Sehwag and Saeed Mahloujifar and Prateek Mittal},
+      year={2023},
+      journal={arXiv preprint arXiv:2301.12576},
+}
+
+@InProceedings{yolo,
+author = {Redmon, Joseph and Divvala, Santosh and Girshick, Ross and Farhadi, Ali},
+title = {You Only Look Once: Unified, Real-Time Object Detection},
+booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2016}
+}
+
+@inproceedings{openood,
+ author = {Yang, Jingkang and Wang, Pengyun and Zou, Dejian and Zhou, Zitang and Ding, Kunyuan and PENG, WENXUAN and Wang, Haoqi and Chen, Guangyao and Li, Bo and Sun, Yiyou and Du, Xuefeng and Zhou, Kaiyang and Zhang, Wayne and Hendrycks, Dan and Li, Yixuan and Liu, Ziwei},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {32598--32611},
+ publisher = {Curran Associates, Inc.},
+ title = {OpenOOD: Benchmarking Generalized Out-of-Distribution Detection},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/d201587e3a84fc4761eadc743e9b3f35-Paper-Datasets_and_Benchmarks.pdf},
+ volume = {35},
+ year = {2022}
+}
+
+
+@inproceedings{ood_energy,
+ author = {Liu, Weitang and Wang, Xiaoyun and Owens, John and Li, Yixuan},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+ pages = {21464--21475},
+ publisher = {Curran Associates, Inc.},
+ title = {Energy-based Out-of-distribution Detection},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2020/file/f5496252609c43eb8a3d147ab9b9c006-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}
+
+@inproceedings{
+ood_baseline,
+title={A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks},
+author={Dan Hendrycks and Kevin Gimpel},
+booktitle={International Conference on Learning Representations},
+year={2017},
+url={https://openreview.net/forum?id=Hkg4TI9xl}
+}
+
+@inproceedings{dpn,
+author = {Malinin, Andrey and Gales, Mark},
+title = {Predictive Uncertainty Estimation via Prior Networks},
+year = {2018},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+pages = {7047–7058},
+numpages = {12},
+location = {Montr\'{e}al, Canada},
+series = {NIPS'18}
+}
+
+@inproceedings{
+lee2017training,
+title={Training Confidence-calibrated Classifiers for Detecting Out-of-Distribution Samples},
+author={Kimin Lee and Honglak Lee and Kibok Lee and Jinwoo Shin},
+booktitle={International Conference on Learning Representations},
+year={2018},
+url={https://openreview.net/forum?id=ryiAv2xAZ},
+}
+
+@inproceedings{
+hendrycks2018deep,
+title={Deep Anomaly Detection with Outlier Exposure},
+author={Dan Hendrycks and Mantas Mazeika and Thomas Dietterich},
+booktitle={International Conference on Learning Representations},
+year={2019},
+url={https://openreview.net/forum?id=HyxCxhRcY7},
+}
+
+@inproceedings{
+hong2023mecta,
+title={{MECTA}: Memory-Economic Continual Test-Time Model Adaptation},
+author={Junyuan Hong and Lingjuan Lyu and Jiayu Zhou and Michael Spranger},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=N92hjSf5NNh}
+}
+
+@article{hendrycks2019oe,
+  title={Deep Anomaly Detection with Outlier Exposure},
+  author={Hendrycks, Dan and Mazeika, Mantas and Dietterich, Thomas},
+  journal={Proceedings of the International Conference on Learning Representations},
+  year={2019}
+}
+
+@InProceedings{yu2019unsupervised,
+author = {Yu, Qing and Aizawa, Kiyoharu},
+title = {Unsupervised Out-of-Distribution Detection by Maximum Classifier Discrepancy},
+booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+month = {October},
+year = {2019}
+}
+
+@article{Mohseni_Pitale_Yadawa_Wang_2020, title={Self-Supervised Learning for Generalizable Out-of-Distribution Detection}, volume={34}, url={https://ojs.aaai.org/index.php/AAAI/article/view/5966}, DOI={10.1609/aaai.v34i04.5966}, abstractNote={&lt;p&gt;The real-world deployment of Deep Neural Networks (DNNs) in safety-critical applications such as autonomous vehicles needs to address a variety of DNNs’ vulnerabilities, one of which being detecting and rejecting out-of-distribution outliers that might result in unpredictable fatal errors. We propose a new technique relying on self-supervision for generalizable out-of-distribution (OOD) feature learning and rejecting those samples at the inference time. Our technique does not need to pre-know the distribution of targeted OOD samples and incur no extra overheads compared to other methods. We perform multiple image classification experiments and observe our technique to perform favorably against state-of-the-art OOD detection methods. Interestingly, we witness that our method also reduces in-distribution classification risk via rejecting samples near the boundaries of the training set distribution.&lt;/p&gt;}, number={04}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Mohseni, Sina and Pitale, Mandar and Yadawa, JBS and Wang, Zhangyang}, year={2020}, month={Apr.}, pages={5216-5223} }
+
+
+@InProceedings{pmlr-v162-ming22a,
+  title = 	 {{POEM}: Out-of-Distribution Detection with Posterior Sampling},
+  author =       {Ming, Yifei and Fan, Ying and Li, Yixuan},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {15650--15665},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/ming22a/ming22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/ming22a.html},
+}
+
+@InProceedings{osdn,
+title={Towards Open Set Deep Networks},
+author={Bendale, Abhijit and Boult, Terrance},
+booktitle={Computer Vision and Pattern Recognition (CVPR), 2016 IEEE Conference on},
+year={2016},
+organization={IEEE}
+}
+
+
+@inproceedings{saito2020dance,
+ author = {Saito, Kuniaki and Kim, Donghyun and Sclaroff, Stan and Saenko, Kate},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+ pages = {16282--16292},
+ publisher = {Curran Associates, Inc.},
+ title = {Universal Domain Adaptation through Self Supervision},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2020/file/bb7946e7d85c81a9e69fee1cea4a087c-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}

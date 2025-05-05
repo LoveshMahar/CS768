@@ -1,0 +1,413 @@
+\begin{thebibliography}{62}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abnar \& Zuidema(2020)Abnar and Zuidema]{transformer:AttFlow}
+Abnar, S. and Zuidema, W.~H.
+\newblock Quantifying attention flow in transformers.
+\newblock In \emph{{ACL}}, pp.\  4190--4197. Association for Computational
+  Linguistics, 2020.
+
+\bibitem[Adebayo et~al.(2018)Adebayo, Gilmer, Muelly, Goodfellow, Hardt, and
+  Kim]{saliency:SanityCheck}
+Adebayo, J., Gilmer, J., Muelly, M., Goodfellow, I.~J., Hardt, M., and Kim, B.
+\newblock Sanity checks for saliency maps.
+\newblock In \emph{NeurIPS}, pp.\  9525--9536. Curran Associates, Inc., 2018.
+
+\bibitem[Ancona et~al.(2018)Ancona, Ceolini, {\"{O}}ztireli, and
+  Gross]{exp:inputXgrad}
+Ancona, M., Ceolini, E., {\"{O}}ztireli, C., and Gross, M.
+\newblock Towards better understanding of gradient-based attribution methods
+  for deep neural networks.
+\newblock In \emph{{ICLR}}, 2018.
+
+\bibitem[Anderson et~al.(2018)Anderson, He, Buehler, Teney, Johnson, Gould, and
+  Zhang]{baseline:vqa_UpDn}
+Anderson, P., He, X., Buehler, C., Teney, D., Johnson, M., Gould, S., and
+  Zhang, L.
+\newblock Bottom-up and top-down attention for image captioning and visual
+  question answering.
+\newblock In \emph{CVPR}, pp.\  6077--6086. IEEE, 2018.
+
+\bibitem[Atanasova et~al.(2020)Atanasova, Simonsen, Lioma, and
+  Augenstein]{attfinding:DiagnosticAllProperties}
+Atanasova, P., Simonsen, J.~G., Lioma, C., and Augenstein, I.
+\newblock A diagnostic study of explainability techniques for text
+  classification.
+\newblock In \emph{{EMNLP} {}}, pp.\  3256--3274. Association for Computational
+  Linguistics, 2020.
+
+\bibitem[Bahdanau et~al.(2015)Bahdanau, Cho, and Bengio]{baseline:TanhAtt}
+Bahdanau, D., Cho, K., and Bengio, Y.
+\newblock Neural machine translation by jointly learning to align and
+  translate.
+\newblock In \emph{{ICLR}}, 2015.
+
+\bibitem[Bai et~al.(2021)Bai, Liang, Zhang, Li, Bai, and
+  Wang]{attfinding:AttentionsIsNotPureImportance}
+Bai, B., Liang, J., Zhang, G., Li, H., Bai, K., and Wang, F.
+\newblock Why attentions may not be interpretable?
+\newblock In \emph{{KDD}}, pp.\  25--34. {ACM}, 2021.
+
+\bibitem[Binder et~al.(2016)Binder, Montavon, Lapuschkin, M{\"{u}}ller, and
+  Samek]{exp:LRP}
+Binder, A., Montavon, G., Lapuschkin, S., M{\"{u}}ller, K., and Samek, W.
+\newblock Layer-wise relevance propagation for neural networks with local
+  renormalization layers.
+\newblock In \emph{{ICANN} {}}, pp.\  63--71. Springer, 2016.
+
+\bibitem[Bowman et~al.(2015)Bowman, Angeli, Potts, and Manning]{dataset:SNLI}
+Bowman, S.~R., Angeli, G., Potts, C., and Manning, C.~D.
+\newblock A large annotated corpus for learning natural language inference.
+\newblock In \emph{{EMNLP}}, pp.\  632--642. The Association for Computational
+  Linguistics, 2015.
+
+\bibitem[Brunner et~al.(2020)Brunner, Liu, Pascual, Richter, Ciaramita, and
+  Wattenhofer]{transformer:Identity}
+Brunner, G., Liu, Y., Pascual, D., Richter, O., Ciaramita, M., and Wattenhofer,
+  R.
+\newblock On identifiability in transformers.
+\newblock In \emph{{ICLR}}, 2020.
+
+\bibitem[Chefer et~al.(2021{\natexlab{a}})Chefer, Gur, and
+  Wolf]{transformer:AttGrad_Chefer}
+Chefer, H., Gur, S., and Wolf, L.
+\newblock Generic attention-model explainability for interpreting bi-modal and
+  encoder-decoder transformers.
+\newblock In \emph{ICCV}, pp.\  397--406, 2021{\natexlab{a}}.
+
+\bibitem[Chefer et~al.(2021{\natexlab{b}})Chefer, Gur, and
+  Wolf]{transformer:LRP_Chefer}
+Chefer, H., Gur, S., and Wolf, L.
+\newblock Transformer interpretability beyond attention visualization.
+\newblock In \emph{{CVPR}}, pp.\  782--791. {IEEE}, 2021{\natexlab{b}}.
+
+\bibitem[Chen et~al.(2019)Chen, Song, Wainwright, and
+  Jordan]{saliency:shapley2}
+Chen, J., Song, L., Wainwright, M.~J., and Jordan, M.~I.
+\newblock L-shapley and c-shapley: Efficient model interpretation for
+  structured data.
+\newblock In \emph{{ICLR}}, 2019.
+
+\bibitem[Chrysostomou \& Aletras(2021)Chrysostomou and
+  Aletras]{faithful:ImrpoveFaithfulForTC}
+Chrysostomou, G. and Aletras, N.
+\newblock Improving the faithfulness of attention-based explanations with
+  task-specific information for text classification.
+\newblock In \emph{{ACL/IJCNLP} {}}, pp.\  477--488. Association for
+  Computational Linguistics, 2021.
+
+\bibitem[Clark et~al.(2019)Clark, Khandelwal, Levy, and
+  Manning]{attfinding:Bert_Behavior}
+Clark, K., Khandelwal, U., Levy, O., and Manning, C.~D.
+\newblock What does {BERT} look at? an analysis of bert's attention.
+\newblock In \emph{BlackboxNLP@ACL}, pp.\  276--286. Association for
+  Computational Linguistics, 2019.
+
+\bibitem[DeYoung et~al.(2020)DeYoung, Jain, Rajani, Lehman, Xiong, Socher, and
+  Wallace]{replace:benchmark}
+DeYoung, J., Jain, S., Rajani, N.~F., Lehman, E., Xiong, C., Socher, R., and
+  Wallace, B.~C.
+\newblock {ERASER:} {A} benchmark to evaluate rationalized {NLP} models.
+\newblock In \emph{{ACL}}, pp.\  4443--4458. Association for Computational
+  Linguistics, 2020.
+
+\bibitem[Ethayarajh \& Jurafsky(2021)Ethayarajh and
+  Jurafsky]{faithful:att_shapley}
+Ethayarajh, K. and Jurafsky, D.
+\newblock Attention flows are shapley value explanations.
+\newblock In \emph{{ACL/IJCNLP} {}}, pp.\  49--54. Association for
+  Computational Linguistics, 2021.
+
+\bibitem[Fong et~al.(2019)Fong, Patrick, and Vedaldi]{saliency:perturbation2}
+Fong, R., Patrick, M., and Vedaldi, A.
+\newblock Understanding deep networks via extremal perturbations and smooth
+  masks.
+\newblock In \emph{{ICCV}}, pp.\  2950--2958. {IEEE}, 2019.
+
+\bibitem[Goyal et~al.(2017)Goyal, Khot, Summers-Stay, Batra, and
+  Parikh]{dataset:VQA_v2}
+Goyal, Y., Khot, T., Summers-Stay, D., Batra, D., and Parikh, D.
+\newblock Making the v in vqa matter: Elevating the role of image understanding
+  in visual question answering.
+\newblock In \emph{{CVPR}}, pp.\  6325–6334. IEEE, 2017.
+
+\bibitem[Hao et~al.(2021)Hao, Dong, Wei, and Xu]{transformer:IGAttGrad}
+Hao, Y., Dong, L., Wei, F., and Xu, K.
+\newblock Self-attention attribution: Interpreting information interactions
+  inside transformer.
+\newblock In \emph{{AAAI}}, pp.\  12963--12971. {AAAI} Press, 2021.
+
+\bibitem[Hase et~al.(2021)Hase, Xie, and Bansal]{replace:OOD}
+Hase, P., Xie, H., and Bansal, M.
+\newblock The out-of-distribution problem in explainability and search methods
+  for feature importance explanations.
+\newblock In \emph{NeurIPS}. Curran Associates, Inc., 2021.
+
+\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{tech:Res101}
+He, K., Zhang, X., Ren, S., and Sun, J.
+\newblock Deep residual learning for image recognition.
+\newblock In \emph{{CVPR}}, pp.\  770--778. {IEEE}, 2016.
+
+\bibitem[Hochreiter \& Schmidhuber(1997)Hochreiter and Schmidhuber]{tech:LSTM}
+Hochreiter, S. and Schmidhuber, J.
+\newblock Long short-term memory.
+\newblock \emph{Neural Comput.}, 9\penalty0 (8):\penalty0 1735--1780, 1997.
+
+\bibitem[Hooker et~al.(2019)Hooker, Erhan, Kindermans, and
+  Kim]{saliency:RemOveAndRetrain_BeemKim2019}
+Hooker, S., Erhan, D., Kindermans, P., and Kim, B.
+\newblock A benchmark for interpretability methods in deep neural networks.
+\newblock In \emph{NeurIPS}, pp.\  9734--9745. Curran Associates, Inc., 2019.
+
+\bibitem[Hudson \& Manning(2019)Hudson and Manning]{dataset:GQA}
+Hudson, D.~A. and Manning, C.~D.
+\newblock Gqa: A new dataset for real-world visual reasoning and compositional
+  question answering.
+\newblock In \emph{{CVPR}}, pp.\  6693--6702. IEEE, 2019.
+
+\bibitem[Jacovi \& Goldberg(2020)Jacovi and Goldberg]{faithful:DefineFaithful}
+Jacovi, A. and Goldberg, Y.
+\newblock Towards faithfully interpretable {NLP} systems: How should we define
+  and evaluate faithfulness?
+\newblock In \emph{{ACL}}, pp.\  4198--4205. Association for Computational
+  Linguistics, 2020.
+
+\bibitem[Jain \& Wallace(2019)Jain and Wallace]{attfinding:AttIsNotExp}
+Jain, S. and Wallace, B.~C.
+\newblock Attention is not explanation.
+\newblock In \emph{{NAACL-HLT} {}}, pp.\  3543--3556. Association for
+  Computational Linguistics, 2019.
+
+\bibitem[Kazemi \& Elqursh(2017)Kazemi and Elqursh]{baseline:vqa_strong}
+Kazemi, V. and Elqursh, A.
+\newblock Show, ask, attend, and answer: A strong baseline for visual question
+  answering.
+\newblock \emph{arXiv preprint arXiv:1704.03162}, 2017.
+
+\bibitem[Kobayashi et~al.(2020)Kobayashi, Kuribayashi, Yokoi, and
+  Inui]{attfinding:AttNorm}
+Kobayashi, G., Kuribayashi, T., Yokoi, S., and Inui, K.
+\newblock Attention is not only a weight: Analyzing transformers with vector
+  norms.
+\newblock In \emph{{EMNLP} {}}, pp.\  7057--7075. Association for Computational
+  Linguistics, 2020.
+
+\bibitem[LeCun et~al.(2010)LeCun, Kavukcuoglu, and Farabet]{tech:CNN}
+LeCun, Y., Kavukcuoglu, K., and Farabet, C.
+\newblock Convolutional networks and applications in vision.
+\newblock In \emph{{ISCAS}}, pp.\  253--256. {IEEE}, 2010.
+
+\bibitem[Li et~al.(2016)Li, Monroe, and Jurafsky]{replace:Erasure_Jiwei_2016}
+Li, J., Monroe, W., and Jurafsky, D.
+\newblock Understanding neural networks through representation erasure.
+\newblock \emph{arXiv preprint arXiv:1612.08220}, 2016.
+
+\bibitem[Li et~al.(2020)Li, Yatskar, Yin, Hsieh, and
+  Chang]{baseline:visualBERT}
+Li, L.~H., Yatskar, M., Yin, D., Hsieh, C.-J., and Chang, K.-W.
+\newblock What does bert with vision look at?
+\newblock In \emph{ACL}. Association for Computational Linguistics, 2020.
+
+\bibitem[Lundberg \& Lee(2017)Lundberg and Lee]{saliency:shapley1}
+Lundberg, S.~M. and Lee, S.
+\newblock A unified approach to interpreting model predictions.
+\newblock In \emph{{NeurIPS}}, pp.\  4765--4774. Curran Associates, Inc., 2017.
+
+\bibitem[Luong et~al.(2015)Luong, Pham, and Manning]{attTask:NMT}
+Luong, T., Pham, H., and Manning, C.~D.
+\newblock Effective approaches to attention-based neural machine translation.
+\newblock In \emph{{EMNLP}}, pp.\  1412--1421. The Association for
+  Computational Linguistics, 2015.
+
+\bibitem[Michel et~al.(2019)Michel, Levy, and
+  Neubig]{transformer:AttGrad_SixHeads_2019}
+Michel, P., Levy, O., and Neubig, G.
+\newblock Are sixteen heads really better than one?
+\newblock In \emph{NeurIPS}, pp.\  14014--14024. Curran Associates, Inc., 2019.
+
+\bibitem[Mnih et~al.(2014)Mnih, Heess, Graves, and
+  Kavukcuoglu]{attTask:ImageCls}
+Mnih, V., Heess, N., Graves, A., and Kavukcuoglu, K.
+\newblock Recurrent models of visual attention.
+\newblock In \emph{{NeurIPS}}, pp.\  2204--2212. Curran Associates, Inc., 2014.
+
+\bibitem[Mohankumar et~al.(2020)Mohankumar, Nema, Narasimhan, Khapra,
+  Srinivasan, and Ravindran]{attfinding:LSTM_Concinity}
+Mohankumar, A.~K., Nema, P., Narasimhan, S., Khapra, M.~M., Srinivasan, B.~V.,
+  and Ravindran, B.
+\newblock Towards transparent and explainable attention models.
+\newblock In \emph{{ACL}}, pp.\  4206--4216. Association for Computational
+  Linguistics, 2020.
+
+\bibitem[Moradi et~al.(2021)Moradi, Kambhatla, and
+  Sarkar]{faithful:ImrpoveFaithfulForNMT}
+Moradi, P., Kambhatla, N., and Sarkar, A.
+\newblock Measuring and improving faithfulness of attention in neural machine
+  translation.
+\newblock In \emph{{EACL}}, pp.\  2791--2802. Association for Computational
+  Linguistics, 2021.
+
+\bibitem[Pennington et~al.(2014)Pennington, Socher, and Manning]{tech:Glove}
+Pennington, J., Socher, R., and Manning, C.
+\newblock Glove: Global vectors for word representation.
+\newblock In \emph{ENMLP}, pp.\  1532--1543. Association for Computational
+  Linguistics, 2014.
+
+\bibitem[Ren et~al.(2015)Ren, He, Girshick, and Sun]{tech:RCNN}
+Ren, S., He, K., Girshick, R., and Sun, J.
+\newblock Faster r-cnn: Towards real-time object detection with region proposal
+  networks.
+\newblock In \emph{NeurIPS}, pp.\  91–99. Curran Associates, Inc., 2015.
+
+\bibitem[Rensink(2000)]{humanVision:HV}
+Rensink, R.~A.
+\newblock The dynamic representation of scenes.
+\newblock \emph{Visual Cognition}, 7\penalty0 (1-3):\penalty0 17--42, 2000.
+\newblock \doi{10.1080/135062800394667}.
+
+\bibitem[Ribeiro et~al.(2016)Ribeiro, Singh, and Guestrin]{exp:LIME}
+Ribeiro, M.~T., Singh, S., and Guestrin, C.
+\newblock "why should {I} trust you?": Explaining the predictions of any
+  classifier.
+\newblock In \emph{{KDD}}, pp.\  1135--1144. {ACM}, 2016.
+
+\bibitem[Selvaraju et~al.(2020)Selvaraju, Cogswell, Das, Vedantam, Parikh, and
+  Batra]{exp:GradCAM}
+Selvaraju, R.~R., Cogswell, M., Das, A., Vedantam, R., Parikh, D., and Batra,
+  D.
+\newblock Grad-cam: Visual explanations from deep networks via gradient-based
+  localization.
+\newblock \emph{Int. J. Comput. Vis.}, 128\penalty0 (2):\penalty0 336--359,
+  2020.
+
+\bibitem[Serrano \& Smith(2019)Serrano and Smith]{attfinding:2019IsAttIntepret}
+Serrano, S. and Smith, N.~A.
+\newblock Is attention interpretable?
+\newblock In \emph{{ACL} {}}, pp.\  2931--2951. Association for Computational
+  Linguistics, 2019.
+
+\bibitem[Shrikumar et~al.(2017)Shrikumar, Greenside, and Kundaje]{exp:DeepLIFT}
+Shrikumar, A., Greenside, P., and Kundaje, A.
+\newblock Learning important features through propagating activation
+  differences.
+\newblock In \emph{{ICML}}, pp.\  3145--3153. {PMLR}, 2017.
+
+\bibitem[Sixt et~al.(2020)Sixt, Granz, and
+  Landgraf]{saliency:WhyBPFail_ICML2020}
+Sixt, L., Granz, M., and Landgraf, T.
+\newblock When explanations lie: Why many modified {BP} attributions fail.
+\newblock In \emph{{ICML}}, pp.\  9046--9057. {PMLR}, 2020.
+
+\bibitem[Smilkov et~al.(2017)Smilkov, Thorat, Kim, Vi{\'{e}}gas, and
+  Wattenberg]{exp:SmoothGrad}
+Smilkov, D., Thorat, N., Kim, B., Vi{\'{e}}gas, F.~B., and Wattenberg, M.
+\newblock Smoothgrad: removing noise by adding noise.
+\newblock \emph{arXiv preprint arXiv:1706.03825}, 2017.
+
+\bibitem[Socher et~al.(2013)Socher, Perelygin, Wu, Chuang, Manning, Ng, and
+  Potts]{dataset:SST}
+Socher, R., Perelygin, A., Wu, J., Chuang, J., Manning, C.~D., Ng, A.~Y., and
+  Potts, C.
+\newblock Recursive deep models for semantic compositionality over a sentiment
+  treebank.
+\newblock In \emph{{EMNLP}}, pp.\  1631--1642. Association for Computational
+  Linguistics, 2013.
+
+\bibitem[Srinivas \& Fleuret(2021)Srinivas and
+  Fleuret]{saliency:ShiftInvariance_ICLR2021}
+Srinivas, S. and Fleuret, F.
+\newblock Rethinking the role of gradient-based attribution methods for model
+  interpretability.
+\newblock In \emph{{ICLR}}, 2021.
+
+\bibitem[Sundararajan et~al.(2017)Sundararajan, Taly, and Yan]{exp:IG}
+Sundararajan, M., Taly, A., and Yan, Q.
+\newblock Axiomatic attribution for deep networks.
+\newblock In \emph{{ICML}}, pp.\  3319--3328. {PMLR}, 2017.
+
+\bibitem[Swayamdipta et~al.(2020)Swayamdipta, Schwartz, Lourie, Wang,
+  Hajishirzi, Smith, and Choi]{exp:datasetmap}
+Swayamdipta, S., Schwartz, R., Lourie, N., Wang, Y., Hajishirzi, H., Smith,
+  N.~A., and Choi, Y.
+\newblock Dataset cartography: Mapping and diagnosing datasets with training
+  dynamics.
+\newblock In \emph{{EMNLP} {}}, pp.\  9275--9293. Association for Computational
+  Linguistics, 2020.
+
+\bibitem[Tan \& Bansal(2019)Tan and Bansal]{baseline:vqa_lxmert}
+Tan, H. and Bansal, M.
+\newblock {LXMERT:} {Learning} cross-modality encoder representations from
+  transformers.
+\newblock In \emph{{EMNLP/IJCNLP} {}}, pp.\  5099--5110. Association for
+  Computational Linguistics, 2019.
+
+\bibitem[Thorne et~al.(2019)Thorne, Vlachos, Christodoulopoulos, and
+  Mittal]{faithful:att_lime}
+Thorne, J., Vlachos, A., Christodoulopoulos, C., and Mittal, A.
+\newblock Generating token-level explanations for natural language inference.
+\newblock In \emph{{NAACL-HLT} {}}, pp.\  963--969. Association for
+  Computational Linguistics, 2019.
+
+\bibitem[Tomsett et~al.(2020)Tomsett, Harborne, Chakraborty, Gurram, and
+  Preece]{saliency:SanityMetrics}
+Tomsett, R., Harborne, D., Chakraborty, S., Gurram, P., and Preece, A.~D.
+\newblock Sanity checks for saliency metrics.
+\newblock In \emph{{AAAI}}, pp.\  6021--6029. {AAAI} Press, 2020.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{baseline:Transformer(DotAtt)}
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
+  Kaiser, L., and Polosukhin, I.
+\newblock Attention is all you need.
+\newblock In \emph{{NeurIPS}}, pp.\  5998--6008. Curran Associates, Inc., 2017.
+
+\bibitem[Voita et~al.(2019)Voita, Talbot, Moiseev, Sennrich, and
+  Titov]{transformer:LRP_Partial_2019}
+Voita, E., Talbot, D., Moiseev, F., Sennrich, R., and Titov, I.
+\newblock Analyzing multi-head self-attention: Specialized heads do the heavy
+  lifting, the rest can be pruned.
+\newblock In \emph{{ACL} {}}, pp.\  5797--5808. Association for Computational
+  Linguistics, 2019.
+
+\bibitem[Wang et~al.(2019)Wang, Singh, Michael, Hill, Levy, and
+  Bowman]{dataset:QQP}
+Wang, A., Singh, A., Michael, J., Hill, F., Levy, O., and Bowman, S.~R.
+\newblock {GLUE:} {A} multi-task benchmark and analysis platform for natural
+  language understanding.
+\newblock In \emph{{ICLR}}, 2019.
+
+\bibitem[Weston et~al.(2016)Weston, Bordes, Chopra, and Mikolov]{dataset:bAbI}
+Weston, J., Bordes, A., Chopra, S., and Mikolov, T.
+\newblock Towards ai-complete question answering: {A} set of prerequisite toy
+  tasks.
+\newblock In \emph{{ICLR}}, 2016.
+
+\bibitem[Wiegreffe \& Pinter(2019)Wiegreffe and
+  Pinter]{attfinding:AttIsNotNotExp}
+Wiegreffe, S. and Pinter, Y.
+\newblock Attention is not not explanation.
+\newblock In \emph{{EMNLP/IJCNLP} {}}, pp.\  11--20. Association for
+  Computational Linguistics, 2019.
+
+\bibitem[Yang et~al.(2016)Yang, He, Gao, Deng, and Smola]{attTask:VQA}
+Yang, Z., He, X., Gao, J., Deng, L., and Smola, A.~J.
+\newblock Stacked attention networks for image question answering.
+\newblock In \emph{{CVPR}}, pp.\  21--29. {IEEE}, 2016.
+
+\bibitem[Zeiler \& Fergus(2014)Zeiler and Fergus]{saliency:perturbation1}
+Zeiler, M.~D. and Fergus, R.
+\newblock Visualizing and understanding convolutional networks.
+\newblock In \emph{{ECCV} {}}, pp.\  818--833. Springer, 2014.
+
+\bibitem[Zintgraf et~al.(2017)Zintgraf, Cohen, Adel, and
+  Welling]{saliency:perturbation3}
+Zintgraf, L.~M., Cohen, T.~S., Adel, T., and Welling, M.
+\newblock Visualizing deep neural network decisions: Prediction difference
+  analysis.
+\newblock In \emph{{ICLR}}, 2017.
+
+\end{thebibliography}

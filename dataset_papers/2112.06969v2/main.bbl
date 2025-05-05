@@ -1,0 +1,154 @@
+\def\cfac#1{\ifmmode\setbox7\hbox{$\accent"5E#1$}\else
+  \setbox7\hbox{\accent"5E#1}\penalty 10000\relax\fi\raise 1\ht7
+  \hbox{\lower1.15ex\hbox to 1\wd7{\hss\accent"13\hss}}\penalty 10000
+  \hskip-1\wd7\penalty 10000\box7}
+\begin{thebibliography}{10}
+
+\bibitem{allen2018make}
+Zeyuan Allen-Zhu.
+\newblock How to make the gradients small stochastically: Even faster convex
+  and nonconvex sgd.
+\newblock {\em Advances in Neural Information Processing Systems}, 31, 2018.
+
+\bibitem{benaim2005stochastic}
+Michel Bena{\"\i}m, Josef Hofbauer, and Sylvain Sorin.
+\newblock Stochastic approximations and differential inclusions.
+\newblock {\em SIAM Journal on Control and Optimization}, 44(1):328--348, 2005.
+
+\bibitem{DBLP:journals/jacm/BertsimasV04}
+Dimitris Bertsimas and Santosh~S. Vempala.
+\newblock Solving convex programs by random walks.
+\newblock {\em J. {ACM}}, 51(4):540--556, 2004.
+
+\bibitem{bolte2020mathematical}
+Jerome Bolte and Edouard Pauwels.
+\newblock A mathematical model for automatic differentiation in machine
+  learning.
+\newblock {\em arXiv preprint arXiv:2006.02080}, 2020.
+
+\bibitem{bolte2021conservative}
+J{\'e}r{\^o}me Bolte and Edouard Pauwels.
+\newblock Conservative set valued fields, automatic differentiation, stochastic
+  gradient methods and deep learning.
+\newblock {\em Mathematical Programming}, 188(1):19--51, 2021.
+
+\bibitem{burke2020gradient}
+James~V Burke, Frank~E Curtis, Adrian~S Lewis, Michael~L Overton, and Lucas~EA
+  Sim{\~o}es.
+\newblock Gradient sampling methods for nonsmooth optimization.
+\newblock In {\em Numerical Nonsmooth Optimization}, pages 201--225. Springer,
+  2020.
+
+\bibitem{burke2005robust}
+James~V Burke, Adrian~S Lewis, and Michael~L Overton.
+\newblock A robust gradient sampling algorithm for nonsmooth, nonconvex
+  optimization.
+\newblock {\em SIAM Journal on Optimization}, 15(3):751--779, 2005.
+
+\bibitem{carmon2018accelerated}
+Yair Carmon, John~C Duchi, Oliver Hinder, and Aaron Sidford.
+\newblock Accelerated methods for nonconvex optimization.
+\newblock {\em SIAM Journal on Optimization}, 28(2):1751--1772, 2018.
+
+\bibitem{daniilidis2020pathological}
+Aris Daniilidis and Dmitriy Drusvyatskiy.
+\newblock Pathological subgradient dynamics.
+\newblock {\em SIAM Journal on Optimization}, 30(2):1327--1338, 2020.
+
+\bibitem{davis2019stochastic}
+Damek Davis and Dmitriy Drusvyatskiy.
+\newblock Stochastic model-based minimization of weakly convex functions.
+\newblock {\em SIAM Journal on Optimization}, 29(1):207--239, 2019.
+
+\bibitem{davis2020stochastic}
+Damek Davis, Dmitriy Drusvyatskiy, Sham Kakade, and Jason~D Lee.
+\newblock Stochastic subgradient method converges on tame functions.
+\newblock {\em Foundations of computational mathematics}, 20(1):119--154, 2020.
+
+\bibitem{davis2018subgradient}
+Damek Davis, Dmitriy Drusvyatskiy, Kellie~J MacPhee, and Courtney Paquette.
+\newblock Subgradient methods for sharp weakly convex functions.
+\newblock {\em Journal of Optimization Theory and Applications},
+  179(3):962--982, 2018.
+
+\bibitem{fang2018spider}
+Cong Fang, Chris~Junchi Li, Zhouchen Lin, and Tong Zhang.
+\newblock Spider: Near-optimal non-convex optimization via stochastic
+  path-integrated differential estimator.
+\newblock {\em Advances in Neural Information Processing Systems}, 31, 2018.
+
+\bibitem{ghadimi2013stochastic}
+Saeed Ghadimi and Guanghui Lan.
+\newblock Stochastic first-and zeroth-order methods for nonconvex stochastic
+  programming.
+\newblock {\em SIAM Journal on Optimization}, 23(4):2341--2368, 2013.
+
+\bibitem{goldstein1977optimization}
+AA~Goldstein.
+\newblock Optimization of lipschitz continuous functions.
+\newblock {\em Mathematical Programming}, 13(1):14--22, 1977.
+
+\bibitem{grunbaum1960partitions}
+Branko Gr{\"u}nbaum.
+\newblock Partitions of mass-distributions and of convex bodies by hyperplanes.
+\newblock {\em Pacific Journal of Mathematics}, 10(4):1257--1261, 1960.
+
+\bibitem{jin2017escape}
+Chi Jin, Rong Ge, Praneeth Netrapalli, Sham~M Kakade, and Michael~I Jordan.
+\newblock How to escape saddle points efficiently.
+\newblock In {\em International Conference on Machine Learning}, pages
+  1724--1732. PMLR, 2017.
+
+\bibitem{10.1007/BF02574061}
+R.~Kannan, L.~Lov\'{a}sz, and M.~Simonovits.
+\newblock Isoperimetric problems for convex bodies and a localization lemma.
+\newblock {\em Discrete Comput. Geom.}, 13(3–4):541–559, Dec 1995.
+
+\bibitem{kiwiel2007convergence}
+Krzysztof~C Kiwiel.
+\newblock Convergence of the gradient sampling algorithm for nonsmooth
+  nonconvex optimization.
+\newblock {\em SIAM Journal on Optimization}, 18(2):379--388, 2007.
+
+\bibitem{kornowski2021oracle}
+Guy Kornowski and Ohad Shamir.
+\newblock Oracle complexity in nonsmooth nonconvex optimization.
+\newblock {\em Advances in Neural Information Processing Systems}, 34, 2021.
+
+\bibitem{majewski2018analysis}
+Szymon Majewski, B{\l}a{\.z}ej Miasojedow, and Eric Moulines.
+\newblock Analysis of nonsmooth stochastic approximation: the differential
+  inclusion approach.
+\newblock {\em arXiv preprint arXiv:1805.01916}, 2018.
+
+\bibitem{reddi2016stochastic}
+Sashank~J Reddi, Ahmed Hefny, Suvrit Sra, Barnabas Poczos, and Alex Smola.
+\newblock Stochastic variance reduction for nonconvex optimization.
+\newblock In {\em International conference on machine learning}, pages
+  314--323. PMLR, 2016.
+
+\bibitem{shamir2020can}
+Ohad Shamir.
+\newblock Can we find near-approximately-stationary points of nonsmooth
+  nonconvex functions?
+\newblock {\em arXiv preprint arXiv:2002.11962}, 2020.
+
+\bibitem{shor1985minimization}
+Naum~Z. Shor, Krzysztof~C Kiwiel, and Andrzej Ruszcay\'nski.
+\newblock Minimization methods for non-differentiable functions, 1985.
+
+\bibitem{pmlr-v119-zhang20p}
+Jingzhao Zhang, Hongzhou Lin, Stefanie Jegelka, Suvrit Sra, and Ali Jadbabaie.
+\newblock Complexity of finding stationary points of nonconvex nonsmooth
+  functions.
+\newblock In Hal~Daumé III and Aarti Singh, editors, {\em Proceedings of the
+  37th International Conference on Machine Learning}, volume 119 of {\em
+  Proceedings of Machine Learning Research}, pages 11173--11182, Virtual,
+  13--18 Jul 2020.
+
+\bibitem{zhou2018stochastic}
+Dongruo Zhou, Pan Xu, and Quanquan Gu.
+\newblock Stochastic nested variance reduction for nonconvex optimization.
+\newblock {\em Advances in Neural Information Processing Systems}, 31, 2018.
+
+\end{thebibliography}

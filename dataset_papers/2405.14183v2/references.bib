@@ -1,0 +1,1381 @@
+@book{approx-book,
+author = {Williamson, David P. and Shmoys, David B.},
+title = {The Design of Approximation Algorithms},
+year = {2011},
+isbn = {0521195276},
+publisher = {Cambridge University Press},
+address = {USA},
+edition = {1st},
+abstract = {Discrete optimization problems are everywhere, from traditional operations research planning problems, such as scheduling, facility location, and network design; to computer science problems in databases; to advertising issues in viral marketing. Yet most such problems are NP-hard. Thus unless P = NP, there are no efficient algorithms to find optimal solutions to such problems. This book shows how to design approximation algorithms: efficient algorithms that find provably near-optimal solutions. The book is organized around central algorithmic techniques for designing approximation algorithms, including greedy and local search algorithms, dynamic programming, linear and semidefinite programming, and randomization. Each chapter in the first part of the book is devoted to a single algorithmic technique, which is then applied to several different problems. The second part revisits the techniques but offers more sophisticated treatments of them. The book also covers methods for proving that optimization problems are hard to approximate. Designed as a textbook for graduate-level algorithms courses, the book will also serve as a reference for researchers interested in the heuristic solution of discrete optimization problems.}
+}
+
+%%%Anytime
+@InProceedings{cMDP-Anytime,
+  title = 	 { Anytime-Constrained Reinforcement Learning },
+  author =       {McMahan, Jeremy and Zhu, Xiaojin},
+  booktitle = 	 {Proceedings of The 27th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {4321--4329},
+  year = 	 {2024},
+  editor = 	 {Dasgupta, Sanjoy and Mandt, Stephan and Li, Yingzhen},
+  volume = 	 {238},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {02--04 May},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v238/mcmahan24a/mcmahan24a.pdf},
+  url = 	 {https://proceedings.mlr.press/v238/mcmahan24a.html},
+  abstract = 	 { We introduce and study constrained Markov Decision Processes (cMDPs) with anytime constraints. An anytime constraint requires the agent to never violate its budget at any point in time, almost surely. Although Markovian policies are no longer sufficient, we show that there exist optimal deterministic policies augmented with cumulative costs. In fact, we present a fixed-parameter tractable reduction from anytime-constrained cMDPs to unconstrained MDPs. Our reduction yields planning and learning algorithms that are time and sample-efficient for tabular cMDPs so long as the precision of the costs is logarithmic in the size of the cMDP. However, we also show that computing non-trivial approximately optimal policies is NP-hard in general. To circumvent this bottleneck, we design provable approximation algorithms that efficiently compute or learn an arbitrarily accurate approximately feasible policy with optimal value so long as the maximum supported cost is bounded by a polynomial in the cMDP or the absolute budget. Given our hardness results, our approximation guarantees are the best possible under worst-case analysis. }
+}
+
+
+
+%%%Deterministic policy algorithms --------------------------------------------------
+
+
+
+@article{ccMDP-rao-exact,
+title={RAO*: An Algorithm for Chance-Constrained POMDP’s}, volume={30}, url={https://ojs.aaai.org/index.php/AAAI/article/view/10423}, DOI={10.1609/aaai.v30i1.10423}, abstractNote={ &lt;p&gt; Autonomous agents operating in partially observable stochastic environments often face the problem of optimizing expected performance while bounding the risk of violating safety constraints. Such problems can be modeled as chance-constrained POMDP’s (CC-POMDP’s). Our first contribution is a systematic derivation of execution risk in POMDP domains, which improves upon how chance constraints are handled in the constrained POMDP literature. Second, we present RAO*, a heuristic forward search algorithm producing optimal, deterministic, finite-horizon policies for CC-POMDP’s. In addition to the utility heuristic, RAO* leverages an admissible execution risk heuristic to quickly detect and prune overly-risky policy branches. Third, we demonstrate the usefulness of RAO* in two challenging domains of practical interest: power supply restoration and autonomous science agents. &lt;/p&gt; }, number={1}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Rodrigues Quemel e Assis Santana, Pedro and Thiébaux, Sylvie and Williams, Brian}, year={2016}, month={Mar.} }
+
+%Det Applications
+@INPROCEEDINGS{AircraftRoutingDet,
+  author={Hong, Sungkweon and Lee, Sang Uk and Huang, Xin and Khonji, Majid and Alyassi, Rashid and Williams, Brian C.},
+  booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={An Anytime Algorithm for Chance Constrained Stochastic Shortest Path Problems and Its Application to Aircraft Routing}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={475-481},
+  keywords={Shortest path problem;Automation;Heuristic algorithms;Conferences;Markov processes;Routing;Safety},
+  doi={10.1109/ICRA48506.2021.9561229}}
+
+@inproceedings{TeamworkDet,
+title = "Towards a formalization of teamwork with resource constraints",
+abstract = "Despite the recent advances in distributed MDP frameworks for reasoning about multiagent teams, these frameworks mostly do not reason about resource constraints, a crucial issue in teams. To address this shortcoming, we provide four key contributions. First, we introduce EMTDP, a distributed MDP framework where agents must not only maximize expected team reward, but must simultaneously bound expected resource consumption. While there exist single-agent constrained MDP (CMDP) frameworks that reason about resource constraints, EMTDP is not just a CMDP with multiple agents. Instead, EMTDP must resolve the miscoordination that arises due to policy randomization. Thus, our second contribution is an algorithm for EMTDP transformation, so that resulting policies, even if randomized, avoid such miscoordination. Third, we prove equivalence of different techniques of EMTDP transformation. Finally, we present solution algorithms for these EMTDPs and show through experiments their efficiency in solving application-sized problems.",
+author = "P Paruchuri and M Tambe and F Ordonez and S Kraus",
+note = "Place of conference:USA",
+year = "2004",
+language = "American English",
+booktitle = "Third International Joint Conference on Autonomous Agents and Multiagent Systems",
+publisher = "IEEE Computer Society",
+address = "United States",
+}
+
+@article{AircraftWeatherDet, title={Optimal and Heuristic Approaches for Constrained Flight Planning under Weather Uncertainty}, volume={30}, url={https://ojs.aaai.org/index.php/ICAPS/article/view/6684}, DOI={10.1609/icaps.v30i1.6684}, abstractNote={&lt;p&gt;Aircraft flight planning is impacted by weather uncertainties. Existing approaches to flight planning are either deterministic and load additional fuel to account for uncertainty, or probabilistic but have to plan in 4D space. If constraints are imposed on the flight plan these methods provide no formal guarantees that the constraints are actually satisfied. We investigate constrained flight planning under weather uncertainty on discrete airways graphs and model this problem as a Constrained Stochastic Shortest Path (C-SSP) problem. Transitions are generated on-the-fly by the underlying aircraft performance model. As this prevents us from using off-the-shelf C-SSP solvers, we generalise column-generation methods stemming from constrained deterministic path planning to the probabilistic case. This results in a novel method which is complete but computationally expensive. We therefore also discuss deterministic and heuristic approaches which average over weather uncertainty and handle constraints by scalarising a multi-objective cost function. We evaluate and compare these approaches on real flight routes subject to real weather forecast data and a realistic aircraft performance model.&lt;/p&gt;}, number={1}, journal={Proceedings of the International Conference on Automated Planning and Scheduling}, author={Geißer, Florian and Povéda, Guillaume and Trevizan, Felipe and Bondouy, Manon and Teichteil-Königsbuch, Florent and Thiébaux, Sylvie}, year={2020}, month={Jun.}, pages={384-393} }
+
+%%%Anytime Applications ------------------------------------------------------------------
+%%Self Driving -------------------------------------------------
+%extra considerations for self-driving cars; cited by Brantley
+@misc{DrivingVirtualReal,
+      title={Virtual to Real Reinforcement Learning for Autonomous Driving}, 
+      author={Xinlei Pan and Yurong You and Ziyan Wang and Cewu Lu},
+      year={2017},
+      eprint={1704.03952},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+%%Medical -------------------------------------------------------
+%Healthcare survery RL e.x. dynamic treatment
+@article{MedSurvery,
+title = {Reinforcement learning for intelligent healthcare applications: A survey},
+journal = {Artificial Intelligence in Medicine},
+volume = {109},
+pages = {101964},
+year = {2020},
+issn = {0933-3657},
+doi = {https://doi.org/10.1016/j.artmed.2020.101964},
+url = {https://www.sciencedirect.com/science/article/pii/S093336572031229X},
+author = {Antonio Coronato and Muddasar Naeem and Giuseppe {De Pietro} and Giovanni Paragliola},
+keywords = {Artificial intelligence, Reinforcement learning, Healthcare, Personalized medicine},
+abstract = {Discovering new treatments and personalizing existing ones is one of the major goals of modern clinical research. In the last decade, Artificial Intelligence (AI) has enabled the realization of advanced intelligent systems able to learn about clinical treatments and discover new medical knowledge from the huge amount of data collected. Reinforcement Learning (RL), which is a branch of Machine Learning (ML), has received significant attention in the medical community since it has the potentiality to support the development of personalized treatments in accordance with the more general precision medicine vision. This report presents a review of the role of RL in healthcare by investigating past work, and highlighting any limitations and possible future contributions.}
+}
+
+%Medical scheduling
+@article{MedScheduling,
+ ISSN = {00251909, 15265501},
+ URL = {http://www.jstor.org/stable/2628725},
+ abstract = {Several queuing models suggested for modelling hospital admissions scheduling are reviewed and a Markovian decision model is presented. The resulting linear program could be solved to obtain results listed on a decision table as a guide to administrative action.},
+ author = {Peter Kolesar},
+ journal = {Management Science},
+ number = {6},
+ pages = {B384--B396},
+ publisher = {INFORMS},
+ title = {A Markovian Model for Hospital Admission Scheduling},
+ urldate = {2023-10-13},
+ volume = {16},
+ year = {1970}
+}
+
+%RL in medical field specifically for patients with unsafe states
+@INPROCEEDINGS{MedRisk,
+  author={Paragliola, Giovanni and Coronato, Antonio and Naeem, Muddasar and De Pietro, Giuseppe},
+  booktitle={2018 14th International Conference on Signal-Image Technology \& Internet-Based Systems (SITIS)}, 
+  title={A Reinforcement Learning-Based Approach for the Risk Management of e-Health Environments: A Case Study}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={711-716},
+  doi={10.1109/SITIS.2018.00114}}
+
+
+%%Resource Management -------------------------------------------
+%General resource management (Most Cited)
+@inproceedings{ResourceGeneral, author = {Mao, Hongzi and Alizadeh, Mohammad and Menache, Ishai and Kandula, Srikanth}, title = {Resource Management with Deep Reinforcement Learning}, year = {2016}, isbn = {9781450346610}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3005745.3005750}, doi = {10.1145/3005745.3005750}, abstract = {Resource management problems in systems and networking often manifest as difficult online decision making tasks where appropriate solutions depend on understanding the workload and environment. Inspired by recent advances in deep reinforcement learning for AI problems, we consider building systems that learn to manage resources directly from experience. We present DeepRM, an example solution that translates the problem of packing tasks with multiple resource demands into a learning problem. Our initial results show that DeepRM performs comparably to state-of-the-art heuristics, adapts to different conditions, converges quickly, and learns strategies that are sensible in hindsight.}, booktitle = {Proceedings of the 15th ACM Workshop on Hot Topics in Networks}, pages = {50–56}, numpages = {7}, location = {Atlanta, GA, USA}, series = {HotNets '16} }
+
+%Resource Management in Networks
+@ARTICLE{ResourceNetworkSlicing,
+  author={Li, Rongpeng and Zhao, Zhifeng and Sun, Qi and I, Chih-Lin and Yang, Chenyang and Chen, Xianfu and Zhao, Minjian and Zhang, Honggang},
+  journal={IEEE Access}, 
+  title={Deep Reinforcement Learning for Resource Management in Network Slicing}, 
+  year={2018},
+  volume={6},
+  number={},
+  pages={74429-74441},
+  doi={10.1109/ACCESS.2018.2881964}}
+
+%Resource Management for UAV Networks
+@ARTICLE{ResourceUAV,
+  author={Peng, Haixia and Shen, Xuemin},
+  journal={IEEE Journal on Selected Areas in Communications}, 
+  title={Multi-Agent Reinforcement Learning Based Resource Management in MEC- and UAV-Assisted Vehicular Networks}, 
+  year={2021},
+  volume={39},
+  number={1},
+  pages={131-141},
+  doi={10.1109/JSAC.2020.3036962}}
+
+
+%Urban matching application --- spending resources in the right places
+@article{ResourceMatching, title={Resource Constrained Deep Reinforcement Learning}, volume={29}, url={https://ojs.aaai.org/index.php/ICAPS/article/view/3528}, DOI={10.1609/icaps.v29i1.3528}, abstractNote={&lt;p&gt;In urban environments, resources have to be constantly matched to the “right” locations where customer demand is present. For instance, ambulances have to be matched to base stations regularly so as to reduce response time for emergency incidents in ERS (Emergency Response Systems); vehicles (cars, bikes among others) have to be matched to docking stations to reduce lost demand in shared mobility systems. Such problems are challenging owing to the demand uncertainty, combinatorial action spaces and constraints on allocation of resources (e.g., total resources, minimum and maximum number of resources at locations and regions).&lt;/p&gt;&lt;p&gt;Existing systems typically employ myopic and greedy optimization approaches to optimize resource allocation. Such approaches typically are unable to handle surges or variances in demand patterns well. Recent work has demonstrated the ability of Deep RL methods in adapting well to highly uncertain environments. However, existing Deep RL methods are unable to handle combinatorial action spaces and constraints on allocation of resources. To that end, we have developed three approaches on top of the well known actor-critic approach, DDPG (Deep Deterministic Policy Gradient) that are able to handle constraints on resource allocation. We also demonstrate that they are able to outperform leading approaches on simulators validated on semi-real and real data sets.&lt;/p&gt;}, number={1}, journal={Proceedings of the International Conference on Automated Planning and Scheduling}, author={Bhatia, Abhinav and Varakantham, Pradeep and Kumar, Akshat}, year={2021}, month={5}, pages={610-620} }
+
+
+%%Disaser Relief -------------------------------------------------
+%General AI for disasters.
+@article{DisasterDigitalTwin,
+title = {Disaster City Digital Twin: A vision for integrating artificial and human intelligence for disaster management},
+journal = {International Journal of Information Management},
+volume = {56},
+pages = {102049},
+year = {2021},
+issn = {0268-4012},
+doi = {https://doi.org/10.1016/j.ijinfomgt.2019.102049},
+url = {https://www.sciencedirect.com/science/article/pii/S0268401219302956},
+author = {Chao Fan and Cheng Zhang and Alex Yahja and Ali Mostafavi},
+keywords = {Digital twin, Machine learning, Information flow, Disaster management},
+abstract = {This paper presents a vision for a Disaster City Digital Twin paradigm that can: (i) enable interdisciplinary convergence in the field of crisis informatics and information and communication technology (ICT) in disaster management; (ii) integrate artificial intelligence (AI) algorithms and approaches to improve situation assessment, decision making, and coordination among various stakeholders; and (iii) enable increased visibility into network dynamics of complex disaster management and humanitarian actions. The number of humanitarian relief actions is growing due to the increased frequency of natural and man-made crises. Various streams of research across different disciplines have focused on ICT and AI solutions for enhancing disaster management processes. However, most of the existing research is fragmented without a common vision towards a converging paradigm. Recognizing this, this paper presents the Disaster City Digital Twin as a unifying paradigm. The four main components of the proposed Digital Twin paradigm include: multi-data sensing for data collection, data integration and analytics, multi-actor game-theoretic decision making, and dynamic network analysis. For each component, the current state of the art related to AI methods and approaches are examined and gaps are identified.}
+}
+
+%Drones find injured for disaster relief
+@ARTICLE{DisasterUAV,
+  author={Wu, Chunxue and Ju, Bobo and Wu, Yan and Lin, Xiao and Xiong, Naixue and Xu, Guangquan and Li, Hongyan and Liang, Xuefeng},
+  journal={IEEE Access}, 
+  title={UAV Autonomous Target Search Based on Deep Reinforcement Learning in Complex Disaster Scene}, 
+  year={2019},
+  volume={7},
+  number={},
+  pages={117227-117245},
+  doi={10.1109/ACCESS.2019.2933002}}
+
+
+$Disaster Relief with deep RL NASA
+@INPROCEEDINGS{DisasterFlooding,
+       author = {{Tsai}, Y.~L. and {Phatak}, A. and {Kitanidis}, P.~K. and {Field}, C.~B.},
+        title = "{Deep Reinforcement Learning for Disaster Response: Navigating the Dynamic Emergency Vehicle and Rescue Team Dispatch during a Flood}",
+     keywords = {4306 Multihazards, NATURAL HAZARDS, 4307 Methods, NATURAL HAZARDS, 4328 Risk, NATURAL HAZARDS, 4337 Remote sensing and disasters, NATURAL HAZARDS},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = 2019,
+       volume = {2019},
+        month = dec,
+          eid = {NH33B-14},
+        pages = {NH33B-14},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2019AGUFMNH33B..14T},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+%%%Packing/Knapsack Frameworks ---------------------------------------------------------------
+
+%PTAS for PIP fixed K >= 2
+@article{PIP-PTAS,
+	abstract = {We describe a polynomial approximation scheme for an m-constraint 0--1 integer programming problem (m fixed) based on the use of the dual simplex algorithm for linear programming. We also analyse the asymptotic properties of a particular random model.},
+	author = {A.M. Frieze and M.R.B. Clarke},
+	doi = {https://doi.org/10.1016/0377-2217(84)90053-5},
+	issn = {0377-2217},
+	journal = {European Journal of Operational Research},
+	number = {1},
+	pages = {100-109},
+	title = {Approximation algorithms for the m-dimensional 0--1 knapsack problem: Worst-case and probabilistic analyses},
+	url = {https://www.sciencedirect.com/science/article/pii/0377221784900535},
+	volume = {15},
+	year = {1984},
+	bdsk-url-1 = {https://www.sciencedirect.com/science/article/pii/0377221784900535},
+	bdsk-url-2 = {https://doi.org/10.1016/0377-2217(84)90053-5}}
+
+%PIP not needed
+@article{PIP-Chekuri,
+	abstract = { We study the approximability of multidimensional generalizations of three classical packing problems: multiprocessor scheduling, bin packing, and the knapsack problem. Specifically, we study the vector scheduling problem, its dual problem, namely, the vector bin packing problem, and a class of packing integer programs. The vector scheduling problem is to schedule nd -dimensional tasks on m machines such that the maximum load over all dimensions and all machines is minimized. The vector bin packing problem, on the other hand, seeks to minimize the number of bins needed to schedule all n tasks such that the maximum load on any dimension across all bins is bounded by a fixed quantity, say, 1. Such problems naturally arise when scheduling tasks that have multiple resource requirements. Finally, packing integer programs capture a core problem that directly relates to both vector scheduling and vector bin packing, namely, the problem of packing a maximum number of vectors in a single bin of unit height. We obtain a variety of new algorithmic as well as inapproximability results for these three problems. },
+	author = {Chekuri, Chandra and Khanna, Sanjeev},
+	doi = {10.1137/S0097539799356265},
+	eprint = {https://doi.org/10.1137/S0097539799356265},
+	journal = {SIAM Journal on Computing},
+	number = {4},
+	pages = {837-851},
+	title = {On Multidimensional Packing Problems},
+	url = {https://doi.org/10.1137/S0097539799356265},
+	volume = {33},
+	year = {2004},
+	bdsk-url-1 = {https://doi.org/10.1137/S0097539799356265}}
+
+%Original adaptive knapsack paper
+@article{adapKnapsack,
+	abstract = { We consider a stochastic variant of the NP-hard 0/1 knapsack problem, in which item values are deterministic and item sizes are independent random variables with known, arbitrary distributions. Items are placed in the knapsack sequentially, and the act of placing an item in the knapsack instantiates its size. Our goal is to compute a solution ``policy'' that maximizes the expected value of items successfully placed in the knapsack, where the final overflowing item contributes no value. We consider both nonadaptive policies (that designate a priori a fixed sequence of items to insert) and adaptive policies (that can make dynamic choices based on the instantiated sizes of items placed in the knapsack thus far). An important facet of our work lies in characterizing the benefit of adaptivity. For this purpose we advocate the use of a measure called the adaptivity gap: the ratio of the expected value obtained by an optimal adaptive policy to that obtained by an optimal nonadaptive policy. We bound the adaptivity gap of the stochastic knapsack problem by demonstrating a polynomial-time algorithm that computes a nonadaptive policy whose expected value approximates that of an optimal adaptive policy to within a factor of four. We also devise a polynomial-time adaptive policy that approximates the optimal adaptive policy to within a factor of 3 + ε for any constant ε > 0. },
+	author = {Dean, Brian C. and Goemans, Michel X. and Vondr\'{a}k, Jan},
+	doi = {10.1287/moor.1080.0330},
+	eprint = {https://doi.org/10.1287/moor.1080.0330},
+	journal = {Mathematics of Operations Research},
+	number = {4},
+	pages = {945-964},
+	title = {Approximating the Stochastic Knapsack Problem: The Benefit of Adaptivity},
+	url = {https://doi.org/10.1287/moor.1080.0330},
+	volume = {33},
+	year = {2008},
+	bdsk-url-1 = {https://doi.org/10.1287/moor.1080.0330}
+}
+
+%No o(d) approx, but is a O(d) greedy approx for stochastic case **
+@inproceedings{PIP-Stochastic, author = {Dean, Brian C. and Goemans, Michel X. and Vondr\'{a}k, Jan}, title = {Adaptivity and Approximation for Stochastic Packing Problems}, year = {2005}, isbn = {0898715857}, publisher = {Society for Industrial and Applied Mathematics}, address = {USA}, abstract = {We study stochastic variants of Packing Integer Programs (PIP) --- the problems of finding a maximum-value 0/1 vector x satisfying Ax ≤ b, with A and b nonnegative. Many combinatorial problems belong to this broad class, including the knapsack problem, maximum clique, stable set, matching, hypergraph matching (a.k.a. set packing), b-matching, and others. PIP can also be seen as a "multidimensional" knapsack problem where we wish to pack a maximum-value collection of items with vector-valued sizes. In our stochastic setting, the vector-valued sizes of each item is known to us apriori only as a probability distribution, and the size of an item is instantiated once we commit to including the item in our solution.Following the framework of [3], we consider both adaptive and non-adaptive policies for solving such problems, adaptive policies having the flexibility of being able to make decisions based on the instantiated sizes of items already included in the solution. We investigate the adaptivity gap for these problems: the maximum ratio between the expected values achieved by optimal adaptive and non-adaptive policies. We show tight bounds on the adaptivity gap for set packing and b-matching, and we also show how to find efficiently non-adaptive policies approximating the adaptive optimum. For instance, we can approximate the adaptive optimum for stochastic set packing to within O(d1/2), which is not only optimal with respect to the adaptivity gap, but it is also the best known approximation factor in the deterministic case. It is known that there is no polynomial-time d1/2-ε approximation for set packing, unless NP = ZPP. Similarly, for b-matching, we obtain algorithmically a tight bound on the adaptivity gap of O(λ) where λ satisfies Σ λbj+1 = 1.For general Stochastic Packing, we prove that a simple greedy algorithm provides an O(d)-approximation to the adaptive optimum. For A ∈ [0, 1]dxn, we provide an O(λ) approximation where Σ 1/λbj = 1. (For b = (B, B,..., B), we get λ = d1/B.) We also improve the hardness results for deterministic PIP: in the general case, we prove that a polynomial-time d1-ε-approximation algorithm would imply NP = ZPP. In the special case when A ∈ [0,1]dxn and b = (B,B,...,B), we show that a d1/B-∈-approximation would imply NP = ZPP. Finally, we prove that it is PSPACE-hard to find the optimal adaptive policy for Stochastic Packing in any fixed dimension d ≥ 2.}, booktitle = {Proceedings of the Sixteenth Annual ACM-SIAM Symposium on Discrete Algorithms}, pages = {395–404}, numpages = {10}, location = {Vancouver, British Columbia}, series = {SODA '05} }
+
+
+
+%FPTAS for stochastic knapsack and generalizations. All single dimensions only!! No true states
+@article{StochDP-FPTAS-genframework,
+	abstract = { We present a framework for obtaining fully polynomial time approximation schemes (FPTASs) for stochastic univariate dynamic programs with either convex or monotone single-period cost functions. This framework is developed through the establishment of two sets of computational rules, namely, the calculus of \$K\$-approximation functions and the calculus of \$K\$-approximation sets. Using our framework, we provide the first FPTASs for several NP-hard problems in various fields of research such as knapsack models, logistics, operations management, economics, and mathematical finance. Extensions of our framework via the use of the newly established computational rules are also discussed. },
+	author = {Halman, Nir and Klabjan, Diego and Li, Chung-Lun and Orlin, James and Simchi-Levi, David},
+	doi = {10.1137/130925153},
+	eprint = {https://doi.org/10.1137/130925153},
+	journal = {SIAM Journal on Discrete Mathematics},
+	number = {4},
+	pages = {1725-1796},
+	title = {Fully Polynomial Time Approximation Schemes for Stochastic Dynamic Programs},
+	url = {https://doi.org/10.1137/130925153},
+	volume = {28},
+	year = {2014},
+	bdsk-url-1 = {https://doi.org/10.1137/130925153}}
+
+@article{StochDP-breaking-curse,
+author = {Halman, Nir and Nannicini, Giacomo},
+title = {Toward Breaking the Curse of Dimensionality: An FPTAS for Stochastic Dynamic Programs with Multidimensional Actions and Scalar States},
+journal = {SIAM Journal on Optimization},
+volume = {29},
+number = {2},
+pages = {1131-1163},
+year = {2019},
+doi = {10.1137/18M1208423},
+URL = { https://doi.org/10.1137/18M1208423},
+eprint = {https://doi.org/10.1137/18M1208423},
+abstract = { We propose a fully polynomial-time approximation scheme (FPTAS) for stochastic dynamic programs with multidimensional action, scalar state, convex costs, and linear state transition function. The action spaces are polyhedral and described by parametric linear programs. This type of problem finds applications in the area of optimal planning under uncertainty, and can be thought of as the problem of optimally managing a single nondiscrete resource over a finite time horizon. We show that under a value oracle model for the cost functions this result for one-dimensional state space is the “best possible,” because a similar dynamic programming model with two-dimensional state space does not admit a polynomial-time approximation scheme. The FPTAS relies on the solution of polynomial-sized linear programs to recursively compute an approximation of the value function at each stage. Our paper enlarges the class of dynamic programs that admit an FPTAS by showing, under suitable conditions, how to deal with multidimensional action spaces and with vectors of continuous random variables with bounded support. These results bring us one step closer to overcoming the curse of dimensionality of dynamic programming. }
+}
+
+
+@article{StochDP-auto-FPTAS,
+author = {Alon, Tzvi and Halman, Nir},
+title = {Automatic Generation of FPTASes for Stochastic Monotone Dynamic Programs Made Easier},
+journal = {SIAM Journal on Discrete Mathematics},
+volume = {35},
+number = {4},
+pages = {2679-2722},
+year = {2021},
+doi = {10.1137/19M1308633},
+URL = {https://doi.org/10.1137/19M1308633},
+eprint = {https://doi.org/10.1137/19M1308633},
+abstract = { In this paper we go one step further in the automatic generation of FPTASes for multistage stochastic dynamic programs with scalar state and action spaces, in which the cost-to-go functions have a monotone structure in the state variable. While there exist a few frameworks for automatic generation of FPTASes, so far none of them is general and simple enough to be extensively used. We believe that our framework has these two attributes and has great potential to attract interest from both the operations research and theoretical computer science communities. Moreover, it seems very reasonable that many intractable problems that currently do not admit an FPTAS, can be formulated as DPs that fit into our framework and therefore will admit a first FPTAS. Our results are achieved by a combination of Bellman equation formulations, the technique of \$K\$-approximation sets and functions, and in particular the calculus of \$K\$-approximation functions. }
+}
+
+%DP for somewhat hard constraints but no solutions. primal (s,b) formulation. The 4 problems DP paper
+@article{cMDP-DP2,
+author = {Piunovskiy, Aleksey},
+year = {2006},
+month = {01},
+pages = {},
+title = {Dynamic programming in constrained Markov decision processes},
+volume = {35},
+journal = {Control and Cybernetics}
+}
+
+%original stochastic shortest paths 
+@article{OG-SSP, author = {Bertsekas, Dimitri P. and Tsitsiklis, John N.}, title = {An Analysis of Stochastic Shortest Path Problems}, year = {1991}, issue_date = {August 1991}, publisher = {INFORMS}, address = {Linthicum, MD, USA}, volume = {16}, number = {3}, issn = {0364-765X}, abstract = {We consider a stochastic version of the classical shortest path problem whereby for each node of a graph, we must choose a probability distribution over the set of successor nodes so as to reach a certain destination node with minimum expected cost. The costs of transition between successive nodes can be positive as well as negative. We prove natural generalizations of the standard results for the deterministic shortest path problem, and we extend the corresponding theory for undiscounted finite state Markovian decision problems by removing the usual restriction that costs are either all nonnegative or all nonpositive.}, journal = {Math. Oper. Res.}, month = {8}, pages = {580–595}, numpages = {16}, keywords = {dynamic programming, Markovian decision problems, first passage, policy iteration, shortest path} }
+
+
+%Bicreiteria paper
+@inproceedings{StochKP-bicriteria, author = {Bhalgat, Anand and Goel, Ashish and Khanna, Sanjeev}, title = {Improved Approximation Results for Stochastic Knapsack Problems}, year = {2011}, publisher = {Society for Industrial and Applied Mathematics}, address = {USA}, abstract = {In the stochastic knapsack problem, we are given a set of items each associated with a probability distribution on sizes and a profit, and a knapsack of unit capacity. The size of an item is revealed as soon as it is inserted into the knapsack, and the goal is to design a policy that maximizes the expected profit of items that are successfully inserted into the knapsack. The stochastic knapsack problem is a natural generalization of the classical knapsack problem, and arises in many applications, including bandwidth allocation, budgeted learning, and scheduling.An adaptive policy for stochastic knapsack specifies the next item to be inserted based on observed sizes of the items inserted thus far. The adaptive policy can have an exponentially large explicit description and is known to be PSPACE-hard to compute. The best known approximation for this problem is a (3 + ε)-approximation for any ε > 0. Our first main result is a relaxed PTAS (Polynomial Time Approximation Scheme) for the adaptive policy, that is, for any ε > 0, we present a poly-time computable (1 + ε)-approximate adaptive policy when knapsack capacity is relaxed to 1+ε. At a high-level, the proof is based on transforming an arbitrary collection of item size distributions to canonical item size distributions that admit a compact description. We then establish a coupling that shows a (1 + ε)-approximation can be achieved for the original problem by a canonical policy that makes decisions at each step by observing events drawn from the sample space of canonical size distributions. Finally, we give a mechanism for approximating the optimal canonical policy.Our second main result is an (8/3 + ε)-approximate adaptive policy for any ε > 0 without relaxing the knapsack capacity, improving the earlier (3 + ε)-approximation result. Interestingly, we obtain this result by using the PTAS described above. We establish an existential result that the optimal policy for the knapsack with capacity 1 can be folded to get a policy with expected profit 3OPT/8 for a knapsack with capacity (1 − ε), with capacity relaxed to 1 only for the first item inserted. We then use our PTAS result to compute the (1 + ε)-approximation to such policy.Our techniques also yield a relaxed PTAS for non-adaptive policies. Finally, we also show that our ideas can be extended to yield improved approximation guarantees for multi-dimensional and fixed set variants of the stochastic knapsack problem.}, booktitle = {Proceedings of the Twenty-Second Annual ACM-SIAM Symposium on Discrete Algorithms}, pages = {1647–1665}, numpages = {19}, location = {San Francisco, California}, series = {SODA '11} 
+}
+
+
+@InProceedings{CorrStocKnap,
+  author =	{Yang, Sheng and Khuller, Samir and Choudhary, Sunav and Mitra, Subrata and Mahadik, Kanak},
+  title =	{{Correlated Stochastic Knapsack with a Submodular Objective}},
+  booktitle =	{30th Annual European Symposium on Algorithms (ESA 2022)},
+  pages =	{91:1--91:14},
+  series =	{Leibniz International Proceedings in Informatics (LIPIcs)},
+  ISBN =	{978-3-95977-247-1},
+  ISSN =	{1868-8969},
+  year =	{2022},
+  volume =	{244},
+  editor =	{Chechik, Shiri and Navarro, Gonzalo and Rotenberg, Eva and Herman, Grzegorz},
+  publisher =	{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
+  address =	{Dagstuhl, Germany},
+  URL =		{https://drops.dagstuhl.de/opus/volltexte/2022/17029},
+  URN =		{urn:nbn:de:0030-drops-170296},
+  doi =		{10.4230/LIPIcs.ESA.2022.91},
+  annote =	{Keywords: Stochastic Knapsack, Submodular Optimization, Stochastic Optimization}
+}
+
+
+
+%determinsitic soft constraints ------------------------------------------------------------
+
+%existence of optimal policy that randomizes in only one state. Generalizes to one state per constraint. Also this is the policy naturally computed by solving the LP.
+@article{cMDP-derandomize,
+ ISSN = {0030364X, 15265463},
+ URL = {http://www.jstor.org/stable/171066},
+ abstract = {The Markov decision problem of locating a policy to maximize the long-run average reward subject to K long-run average cost constraints is considered. It is assumed that the state and action spaces are finite and the law of motion is unichain, that is, every pure policy gives rise to a Markov chain with one recurrent class. It is first proved that there exists an optimal stationary policy with a degree of randomization no greater than K; consequently, it is never necessary to randomize in more than K states. A linear program produces the optimal policy with limited randomization. For the special case of a single constraint, we also address the problem of finding optimal nonrandomized, but nonstationary, policies. We show that a round-robin type policy is optimal, and conjecture the same for a steering policy that depends on the entire past history of the process, but whose implementation requires essentially no more storage than that of a pure policy.},
+ author = {Keith W. Ross},
+ journal = {Operations Research},
+ number = {3},
+ pages = {474--477},
+ publisher = {INFORMS},
+ title = {Randomized and Past-Dependent Policies for Markov Decision Processes with Multiple Constraints},
+ urldate = {2023-04-25},
+ volume = {37},
+ year = {1989}
+}
+
+
+%MILP for deterministic cMDP
+@inproceedings{cMDP-MILP,
+  title={Stationary deterministic policies for constrained MDPs with multiple rewards, costs, and discount factors},
+  author={Dolgov, Dmitri A and Durfee, Edmund H},
+  booktitle={IJCAI},
+  volume={19},
+  pages={1326--1331},
+  year={2005}
+}
+
+%det solutions to special case of cMDP, shown NP-hard and give "approximation" algorithm that achieves additive approx of |S|c_max which is trivial.
+@misc{cMDP-deterministic-trivial-approx,
+  doi = {10.48550/ARXIV.2103.09295},
+  
+  url = {https://arxiv.org/abs/2103.09295},
+  
+  author = {Savas, Yagiz and Verginis, Christos K. and Hibbard, Michael and Topcu, Ufuk},
+  
+  keywords = {Optimization and Control (math.OC), FOS: Mathematics, FOS: Mathematics},
+  
+  title = {On Minimizing Total Discounted Cost in MDPs Subject to Reachability Constraints},
+  
+  publisher = {arXiv},
+  
+  year = {2021},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+%Gives a bicriteria in PAC setting but its epsilon away from the smaller budget instance so not close to eps approx yet still violates budgets. 
+@inproceedings{cMDP-efficient-exploration-violates,
+  title={Efficient exploration for constrained MDPs},
+  author={Taleghan, Majid Alkaee and Dietterich, Thomas G},
+  booktitle={2018 AAAI Spring Symposium Series},
+  year={2018}
+}
+
+%Lagrangian Dual Approach. Not efficient and again looks at restricted class of C-SSP.
+@article{cMDP-dual-search,
+	abstract = {Sequential decision-making problems arise in every arena of daily life and pose unique challenges for research in decision-theoretic planning. Although there has been a wide variety of research in this field, most of the studies have largely focused on single objective problem without constraints. In many real-world applications, however, it is often desirable to bound certain costs or resources under some predefined level. Constrained stochastic shortest path problem (C-SSP), one of the most well-known mathematical frameworks for stochastic decision-making problems with constraints, can formally model such problems, by incorporating constraints in the model formulation. However, it remains an open challenge to produce a deterministic optimal policy with desirable computation time due to its intrinsic complexity. In this paper, we propose a method that produces an optimal and deterministic policy for a C-SSP based on the Lagrangian duality theory and the heuristic forward search method. To address the intrinsic complexity of C-SSP, the proposed method is designed to have an anytime property. In other words, the proposed algorithm tries to find a feasible but decent solution quickly, then improves the solution incrementally until it converges to a true optimal solution. An extensive experimental evaluation on three problem domains shows that the proposed method outperforms the state-of-the-art methods in terms of the near-optimal solution with an optimality gap of less than 0.1.},
+	author = {Sungkweon Hong and Brian C. Williams},
+	doi = {https://doi.org/10.1016/j.artint.2022.103846},
+	issn = {0004-3702},
+	journal = {Artificial Intelligence},
+	keywords = {Constrained stochastic shortest path problem, Risk-bounded planning, Heuristic search},
+	pages = {103846},
+	title = {An anytime algorithm for constrained stochastic shortest path problems with deterministic policies},
+	url = {https://www.sciencedirect.com/science/article/pii/S0004370222001862},
+	volume = {316},
+	year = {2023},
+	bdsk-url-1 = {https://www.sciencedirect.com/science/article/pii/S0004370222001862},
+	bdsk-url-2 = {https://doi.org/10.1016/j.artint.2022.103846}}
+
+
+%constant H only FPTAS and for POMDP with constraints which is closer to multiple choice knapsack then multidimensional knapsack. The techniques do not extend here. and other assumptions? Also weaker results.
+@inproceedings{cMDP-deterministic-constH,
+	author = {Khonji, Majid and Jasour, Ashkan and Williams, Brian},
+	booktitle = {Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence, {IJCAI-19}},
+	doi = {10.24963/ijcai.2019/775},
+	month = {7},
+	pages = {5583--5590},
+	publisher = {International Joint Conferences on Artificial Intelligence Organization},
+	title = {Approximability of Constant-horizon Constrained POMDP},
+	url = {https://doi.org/10.24963/ijcai.2019/775},
+	year = {2019},
+	bdsk-url-1 = {https://doi.org/10.24963/ijcai.2019/775}}
+
+%FPTAS for stochastic shortest path modeled as cMDP for very specific assumptions. Note SSP is already a nice special case of general cMDP and then adds the very strong assumption of local transition which effectively bounds the branching factor of the MDP. Also, cost's non-negative. Again relates to multiple choice knapsack. Seems incorrect, except fixed horizon.
+@misc{https://doi.org/10.48550/arxiv.2204.04780,
+  doi = {10.48550/ARXIV.2204.04780},
+  
+  url = {https://arxiv.org/abs/2204.04780},
+  
+  author = {Khonji, Majid},
+  
+  keywords = {Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {A Fully Polynomial Time Approximation Scheme for Fixed-Horizon Constrained Stochastic Shortest Path Problem under Local Transitions},
+  
+  publisher = {arXiv},
+  
+  year = {2022},
+  
+  copyright = {Creative Commons Attribution 4.0 International}
+}
+
+% Chance constrained MDPs (CCMDPs) seem to generally be a special case of CMPDs with indicator costs. Usually represents some bad/failure states. Many papers of safety are in this direction.
+
+%bad state/actions PAC instead of just bad states.
+@InProceedings{pmlr-v130-roderick21a,
+  title = 	 { Provably Safe PAC-MDP Exploration Using Analogies },
+  author =       {Roderick, Melrose and Nagarajan, Vaishnavh and Kolter, Zico},
+  booktitle = 	 {Proceedings of The 24th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {1216--1224},
+  year = 	 {2021},
+  editor = 	 {Banerjee, Arindam and Fukumizu, Kenji},
+  volume = 	 {130},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {4},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v130/roderick21a/roderick21a.pdf},
+  url = 	 {https://proceedings.mlr.press/v130/roderick21a.html},
+  abstract = 	 { A key challenge in applying reinforcement learning to safety-critical domains is understanding how to balance exploration (needed to attain good performance on the task) with safety (needed to avoid catastrophic failure). Although a growing line of work in reinforcement learning has investigated this area of "safe exploration," most existing techniques either 1) do not guarantee safety during the actual exploration process; and/or 2) limit the problem to a priori known and/or deterministic transition dynamics with strong smoothness assumptions. Addressing this gap, we propose Analogous Safe-state Exploration (ASE), an algorithm for provably safe exploration in MDPs with unknown, stochastic dynamics. Our method exploits analogies between state-action pairs to safely learn a near-optimal policy in a PAC-MDP sense. Additionally, ASE also guides exploration towards the most task-relevant states, which empirically results in significant improvements in terms of sample efficiency, when compared to existing methods. }
+}
+
+
+%Surverys:
+@misc{https://doi.org/10.48550/arxiv.2209.08025,
+  doi = {10.48550/ARXIV.2209.08025},
+  
+  url = {https://arxiv.org/abs/2209.08025},
+  
+  author = {Xu, Mengdi and Liu, Zuxin and Huang, Peide and Ding, Wenhao and Cen, Zhepeng and Li, Bo and Zhao, Ding},
+  
+  keywords = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Trustworthy Reinforcement Learning Against Intrinsic Vulnerabilities: Robustness, Safety, and Generalizability},
+  
+  publisher = {arXiv},
+  
+  year = {2022},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+%Multi-Objective
+
+%multi-objective with adverserial preferences at each step (basically pick an objective at each step).
+@inproceedings{NEURIPS2021_6d7d394c,
+	author = {Wu, Jingfeng and Braverman, Vladimir and Yang, Lin},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+	pages = {13112--13124},
+	publisher = {Curran Associates, Inc.},
+	title = {Accommodating Picky Customers: Regret Bound and Exploration Complexity for Multi-Objective Reinforcement Learning},
+	url = {https://proceedings.neurips.cc/paper/2021/file/6d7d394c9d0c886e9247542e06ebb705-Paper.pdf},
+	volume = {34},
+	year = {2021},
+	bdsk-url-1 = {https://proceedings.neurips.cc/paper/2021/file/6d7d394c9d0c886e9247542e06ebb705-Paper.pdf}}
+
+
+%Soft Constraints---------------------------------------------------------
+
+
+
+%stochastic policies for C-SSPs
+@inproceedings{10.5555/3171837.3171992, author = {Trevizan, Felipe and Thi\'{e}baux, Sylvie and Santana, Pedro and Williams, Brian}, title = {I-Dual: Solving Constrained SSPs via Heuristic Search in the Dual Space}, year = {2017}, isbn = {9780999241103}, publisher = {AAAI Press}, abstract = {We consider the problem of generating optimal stochastic policies for Constrained Stochastic Shortest Path problems, which are a natural model for planning under uncertainty for resource-bounded agents with multiple competing objectives. While unconstrained SSPs enjoy a multitude of efficient heuristic search solution methods with the ability to focus on promising areas reachable from the initial state, the state of the art for constrained SSPs revolves around linear and dynamic programming algorithms which explore the entire state space. In this paper, we present i-dual, the first heuristic search algorithm for constrained SSPs. To concisely represent constraints and efficiently decide their violation, i-dual operates in the space of dual variables describing the policy occupation measures. It does so while retaining the ability to use standard value function heuristics computed by well-known methods. Our experiments show that these features enable i-dual to achieve up to two orders of magnitude improvement in run-time and memory over linear programming algorithms.}, booktitle = {Proceedings of the 26th International Joint Conference on Artificial Intelligence}, pages = {4954–4958}, numpages = {5}, location = {Melbourne, Australia}, series = {IJCAI'17} }
+
+%reduce reward-free RL to constrained RL.
+@InProceedings{pmlr-v162-miryoosefi22a,
+  title = 	 {A Simple Reward-free Approach to Constrained Reinforcement Learning},
+  author =       {Miryoosefi, Sobhan and Jin, Chi},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {15666--15698},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {7},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/miryoosefi22a/miryoosefi22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/miryoosefi22a.html},
+  abstract = 	 {In constrained reinforcement learning (RL), a learning agent seeks to not only optimize the overall reward but also satisfy the additional safety, diversity, or budget constraints. Consequently, existing constrained RL solutions require several new algorithmic ingredients that are notably different from standard RL. On the other hand, reward-free RL is independently developed in the unconstrained literature, which learns the transition dynamics without using the reward information, and thus naturally capable of addressing RL with multiple objectives under the common dynamics. This paper bridges reward-free RL and constrained RL. Particularly, we propose a simple meta-algorithm such that given any reward-free RL oracle, the approachability and constrained RL problems can be directly solved with negligible overheads in sample complexity. Utilizing the existing reward-free RL solvers, our framework provides sharp sample complexity results for constrained RL in the tabular MDP setting, matching the best existing results up to a factor of horizon dependence; our framework directly extends to a setting of tabular two-player Markov games, and gives a new result for constrained RL with linear function approximation.}
+}
+
+
+%deterministic for cMDPs is NP-hard for equality constraints and 2*S-1 constraints via ham cycle.
+@article{cMDP-hardness-OG,
+	abstract = { This paper establishes new links between stochastic and discrete optimization. We consider the following three problems for discrete time Markov Decision Processes with finite states and action sets: (i) find an optimal deterministic policy for a discounted problem with constraints, (ii) find an optimal stationary policy for a weighted discounted problem with constraints, (iii) find an optimal deterministic policy for a weighted discounted problem with constraints. We formulate mathematical programs for problems (i)--(iii) and show that the Hamiltonian Cycle Problem is a special case of each of these problems. Therefore problems (i)--(iii) are NP-hard. We also provide new mathematical programming formulations for the Hamiltonian Cycle and Traveling Salesman Problems. },
+	author = {Feinberg, Eugene A.},
+	doi = {10.1287/moor.25.1.130.15210},
+	eprint = {https://doi.org/10.1287/moor.25.1.130.15210},
+	journal = {Mathematics of Operations Research},
+	number = {1},
+	pages = {130-140},
+	title = {Constrained Discounted Markov Decision Processes and Hamiltonian Cycles},
+	url = {https://doi.org/10.1287/moor.25.1.130.15210},
+	volume = {25},
+	year = {2000},
+	bdsk-url-1 = {https://doi.org/10.1287/moor.25.1.130.15210}}
+
+
+%not going over expected budgets during training:
+%https://repository.ubn.ru.nl/bitstream/handle/2066/233934/233934.pdf
+
+%improved algorithms for soft constraints that avoid LPs but may violate constraints slightly.
+@ARTICLE{6780601,
+  author={Caramanis, Constantine and Dimitrov, Nedialko B. and Morton, David P.},
+  journal={IEEE Transactions on Automatic Control}, 
+  title={Efficient Algorithms for Budget-Constrained Markov Decision Processes}, 
+  year={2014},
+  volume={59},
+  number={10},
+  pages={2813-2817},
+  doi={10.1109/TAC.2014.2314211}}
+
+
+%Constrained multi-agent markov decision processes survey: mentions motivation for hard and soft constraints but does not mention solution to hard, just potential bounds on soft constraints.
+%https://doi.org/10.1613/jair.1.12233
+
+%just analysis of Q-learning to constrained MDPs
+@InProceedings{cMDP-MARL-reduction,
+  title = 	 { Reinforcement Learning for Constrained Markov Decision Processes },
+  author =       {Gattami, Ather and Bai, Qinbo and Aggarwal, Vaneet},
+  booktitle = 	 {Proceedings of The 24th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {2656--2664},
+  year = 	 {2021},
+  editor = 	 {Banerjee, Arindam and Fukumizu, Kenji},
+  volume = 	 {130},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {4},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v130/gattami21a/gattami21a.pdf},
+  url = 	 {https://proceedings.mlr.press/v130/gattami21a.html},
+  abstract = 	 { In this paper, we consider the problem of optimization and learning for constrained and multi-objective Markov decision processes, for both discounted rewards and expected average rewards. We formulate the problems as zero-sum games where one player (the agent) solves a Markov decision problem and its opponent solves a bandit optimization problem, which we here call Markov-Bandit games. We extend $Q$-learning to solve Markov-Bandit games and show that our new $Q$-learning algorithms converge to the optimal solutions of the zero-sum Markov-Bandit games, and hence converge to the optimal solutions of the constrained and multi-objective Markov decision problems. We provide numerical examples where we calculate the optimal policies and show by simulations that the algorithm converges to the calculated optimal policies. To the best of our knowledge, this is the first time Q-learning algorithms guarantee convergence to optimal stationary policies for the multi-objective Reinforcement Learning problem with discounted and expected average rewards, respectively. }
+}
+
+
+%target idea and in game setting. should be hard to solve unless they use special condition. Seems to be stochastic policies to get around it. Generalizes Bently
+@InProceedings{pmlr-v139-yu21b,
+  title = 	 {Provably Efficient Algorithms for Multi-Objective Competitive RL},
+  author =       {Yu, Tiancheng and Tian, Yi and Zhang, Jingzhao and Sra, Suvrit},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {12167--12176},
+  year = 	 {2021},
+  editor = 	 {Meila, Marina and Zhang, Tong},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {7},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v139/yu21b/yu21b.pdf},
+  url = 	 {https://proceedings.mlr.press/v139/yu21b.html},
+  abstract = 	 {We study multi-objective reinforcement learning (RL) where an agent’s reward is represented as a vector. In settings where an agent competes against opponents, its performance is measured by the distance of its average return vector to a target set. We develop statistically and computationally efficient algorithms to approach the associated target set. Our results extend Blackwell’s approachability theorem&nbsp;\citep{blackwell1956analog} to tabular RL, where strategic exploration becomes essential. The algorithms presented are adaptive; their guarantees hold even without Blackwell’s approachability condition. If the opponents use fixed policies, we give an improved rate of approaching the target set while also tackling the more ambitious goal of simultaneously minimizing a scalar cost function. We discuss our analysis for this special case by relating our results to previous works on constrained RL. To our knowledge, this work provides the first provably efficient algorithms for vector-valued Markov games and our theoretical guarantees are near-optimal.}
+}
+
+%No constraint violation during learning.
+@misc{https://doi.org/10.48550/arxiv.2109.05439,
+  doi = {10.48550/ARXIV.2109.05439},
+  
+  url = {https://arxiv.org/abs/2109.05439},
+  
+  author = {Agarwal, Mridul and Bai, Qinbo and Aggarwal, Vaneet},
+  
+  keywords = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Concave Utility Reinforcement Learning with Zero-Constraint Violations},
+  
+  publisher = {arXiv},
+  
+  year = {2021},
+  
+  copyright = {Creative Commons Attribution 4.0 International}
+}
+
+
+
+%Other constraints:--------------------------------------------------------------------------
+
+
+%efficient SSP solution when restrict to only policies with max probability of reaching goal. Not hard problem, then when add constraints get stochastic solution so not related.
+@inproceedings{SSP-dead-ends,
+  title={Efficient solutions for Stochastic Shortest Path Problems with Dead Ends},
+  author={Felipe W. Trevizan and F. Teichteil-K{\"o}nigsbuch and Sylvie Thi{\'e}baux},
+  booktitle={Conference on Uncertainty in Artificial Intelligence},
+  year={2017}
+}
+
+
+%MDP with incentive constraints at each state and action pair. Not deterministic and generally seem to be a special case of knapsack.
+@article{Zhang_Cheng_Conitzer_2022,
+	abstractnote = {We pose and study the problem of planning in Markov decision processes (MDPs), subject to participation constraints as studied in mechanism design. In this problem, a planner must work with a self-interested agent on a given MDP. Each action in the MDP provides an immediate reward to the planner and a (possibly different) reward to the agent. The agent has no control in choosing the actions, but has the option to end the entire process at any time. The goal of the planner is to find a policy that maximizes her cumulative reward, taking into consideration the agent's ability to terminate. We give a fully polynomial-time approximation scheme for this problem. En route, we present polynomial-time algorithms for computing (exact) optimal policies for important special cases of this problem, including when the time horizon is constant, or when the MDP exhibits a &quot;definitive decisions&quot; property. We illustrate our algorithms with two different game-theoretic applications: the problem of assigning rides in ride-sharing and the problem of designing screening policies. Our results imply efficient algorithms for computing (approximately) optimal policies in both applications.},
+	author = {Zhang, Hanrui and Cheng, Yu and Conitzer, Vincent},
+	doi = {10.1609/aaai.v36i5.20462},
+	journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+	month = {6},
+	number = {5},
+	pages = {5260-5267},
+	title = {Planning with Participation Constraints},
+	url = {https://ojs.aaai.org/index.php/AAAI/article/view/20462},
+	volume = {36},
+	year = {2022},
+	bdsk-url-1 = {https://ojs.aaai.org/index.php/AAAI/article/view/20462},
+	bdsk-url-2 = {https://doi.org/10.1609/aaai.v36i5.20462}}
+
+
+%instantanous hard constraints like L_infinty. These should not be hard and should be equivalent to a restricted action set at each time, unless cost random and then its a special case of RLwK.
+@misc{https://doi.org/10.48550/arxiv.2302.04375,
+  doi = {10.48550/ARXIV.2302.04375},
+  
+  url = {https://arxiv.org/abs/2302.04375},
+  
+  author = {Shi, Ming and Liang, Yingbin and Shroff, Ness},
+  
+  keywords = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {A Near-Optimal Algorithm for Safe Reinforcement Learning Under Instantaneous Hard Constraints},
+  
+  publisher = {arXiv},
+  
+  year = {2023},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+%constraints on beliefs of reward function to solve a maximin robustness type problem with some state safety considerations. Different from our setting.
+@inproceedings{NEURIPS2018_a89b71bb,
+	author = {Huang, Jessie and Wu, Fa and Precup, Doina and Cai, Yang},
+	booktitle = {Advances in Neural Information Processing Systems},
+	editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+	publisher = {Curran Associates, Inc.},
+	title = {Learning Safe Policies with Expert Guidance},
+	url = {https://proceedings.neurips.cc/paper/2018/file/a89b71bb5227c75d463dd82a03115738-Paper.pdf},
+	volume = {31},
+	year = {2018},
+	bdsk-url-1 = {https://proceedings.neurips.cc/paper/2018/file/a89b71bb5227c75d463dd82a03115738-Paper.pdf}}
+
+
+%multi-objective RL survey
+@ARTICLE{cMDP-multi-objective-survey,
+  author={Liu, Chunming and Xu, Xin and Hu, Dewen},
+  journal={IEEE Transactions on Systems, Man, and Cybernetics: Systems}, 
+  title={Multiobjective Reinforcement Learning: A Comprehensive Overview}, 
+  year={2015},
+  volume={45},
+  number={3},
+  pages={385-398},
+  doi={10.1109/TSMC.2014.2358639}}
+
+
+%constraint on gathering information to improve belief state for a pomdp. greedy algorithm.
+@INPROCEEDINGS{9029762,
+  author={Ghasemi, Mahsa and Topcu, Ufuk},
+  booktitle={2019 IEEE 58th Conference on Decision and Control (CDC)}, 
+  title={Online Active Perception for Partially Observable Markov Decision Processes with Limited Budget}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={6169-6174},
+  doi={10.1109/CDC40024.2019.9029762}}
+
+
+%CVAR using quantile MDPs. not really constraints more of an objective.
+@article{cMDP-quantile,
+	abstract = { Title: Sequential Decision Making Using QuantilesThe goal of a traditional Markov decision process (MDP) is to maximize the expectation of cumulative reward over a finite or infinite horizon. In many applications, however, a decision maker may be interested in optimizing a specific quantile of the cumulative reward. For example, a physician may want to determine the optimal drug regime for a risk-averse patient with the objective of maximizing the 0.10 quantile of the cumulative reward; this is the cumulative improvement in health that is expected to occur with at least 90\% probability for the patient. In ``Quantile Markov Decision Processes,'' X. Li, H. Zhong, and M. Brandeau provide analytic results to solve the quantile Markov decision process (QMDP) problem. They develop an efficient dynamic programming procedure that finds the optimal QMDP value function for all states and quantiles in one pass. The algorithm also extends to the MDP problem with a conditional value-at-risk objective. },
+	author = {Li, Xiaocheng and Zhong, Huaiyang and Brandeau, Margaret L.},
+	doi = {10.1287/opre.2021.2123},
+	eprint = {https://doi.org/10.1287/opre.2021.2123},
+	journal = {Operations Research},
+	number = {3},
+	pages = {1428-1447},
+	title = {Quantile Markov Decision Processes},
+	url = {https://doi.org/10.1287/opre.2021.2123},
+	volume = {70},
+	year = {2022},
+	bdsk-url-1 = {https://doi.org/10.1287/opre.2021.2123}}
+
+
+%experimental paper on stochastic shortest paths (state reachability) problems
+%https://felipe.trevizan.org/papers/baumgartner18:pltldual.pdf
+@inproceedings{Baumgartner2018HeuristicSP,
+  title={Heuristic Search Planning With Multi-Objective Probabilistic LTL Constraints},
+  author={Peter Baumgartner and Sylvie Thi{\'e}baux and Felipe W. Trevizan},
+  booktitle={International Conference on Principles of Knowledge Representation and Reasoning},
+  year={2018}
+}
+
+%optimize objective while guarantee probability of hitting a failure state is low. Experimental mostly.
+@misc{https://doi.org/10.48550/arxiv.2002.12086,
+  doi = {10.48550/ARXIV.2002.12086},
+  
+  url = {https://arxiv.org/abs/2002.12086},
+  
+  author = {Brazdil, Tomas and Chatterjee, Krishnendu and Novotny, Petr and Vahala, Jiri},
+  
+  keywords = {Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Reinforcement Learning of Risk-Constrained Policies in Markov Decision Processes},
+  
+  publisher = {arXiv},
+  
+  year = {2020},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+%Stochastic knapsack variations and BwK -------------------------------------------------------
+
+%chance constrained submodular knapsack. constant approx
+@inproceedings{10.1007/978-3-030-26176-4_9,
+	abstract = {In this study, we consider the chance-constrained submodular knapsack problem: Given a set of items whose sizes are random variables that follow probability distributions, and a nonnegative monotone submodular objective function, we are required to find a subset of items that maximizes the objective function subject to that the probability of total item size exceeding the knapsack capacity is at most a given threshold. This problem is a common generalization of the chance-constrained knapsack problem and submodular knapsack problem.},
+	address = {Cham},
+	author = {Chen, Junjie and Maehara, Takanori},
+	booktitle = {Computing and Combinatorics},
+	editor = {Du, Ding-Zhu and Duan, Zhenhua and Tian, Cong},
+	isbn = {978-3-030-26176-4},
+	pages = {103--114},
+	publisher = {Springer International Publishing},
+	title = {Chance-Constrained Submodular Knapsack Problem},
+	year = {2019}}
+
+
+%experimental genetic algorithm for multi-objective stochastic knapsack
+@inproceedings{10.1145/3377930.3390162, author = {Xie, Yue and Neumann, Aneta and Neumann, Frank}, title = {Specific Single- and Multi-Objective Evolutionary Algorithms for the Chance-Constrained Knapsack Problem}, year = {2020}, isbn = {9781450371285}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3377930.3390162}, doi = {10.1145/3377930.3390162}, abstract = {The chance-constrained knapsack problem is a variant of the classical knapsack problem where each item has a weight distribution instead of a deterministic weight. The objective is to maximize the total profit of the selected items under the condition that the weight of the selected items only exceeds the given weight bound with a small probability of α. In this paper, we consider problem-specific single-objective and multi-objective approaches for the problem. We examine the use of heavy-tail mutations and introduce a problem-specific crossover operator to deal with the chance-constrained knapsack problem. Empirical results for single-objective evolutionary algorithms show the effectiveness of our operators compared to the use of classical operators. Moreover, we introduce a new effective multi-objective model for the chance-constrained knapsack problem. We use this model in combination with the problem-specific crossover operator in multi-objective evolutionary algorithms to solve the problem. Our experimental results show that this leads to significant performance improvements when using the approach in evolutionary multi-objective algorithms such as GSEMO and NSGA-II.}, booktitle = {Proceedings of the 2020 Genetic and Evolutionary Computation Conference}, pages = {271–279}, numpages = {9}, keywords = {heavy-tail mutation operator, evolutionary algorithms, crossover operator, knapsack problem, chance-constrained optimization}, location = {Canc\'{u}n, Mexico}, series = {GECCO '20} }
+
+
+
+
+%%%MPDs -----------------------------------------------------------------
+@book{MDP-book,
+author = {Puterman, Martin L.},
+title = {Markov Decision Processes: Discrete Stochastic Dynamic Programming},
+year = {1994},
+isbn = {0471619779},
+publisher = {John Wiley \& Sons, Inc.},
+address = {USA},
+edition = {1st},
+abstract = {From the Publisher:The past decade has seen considerable theoretical and applied research on Markov decision processes, as well as the growing use of these models in ecology, economics, communications engineering, and other fields where outcomes are uncertain and sequential decision-making processes are needed. A timely response to this increased activity, Martin L. Puterman's new work provides a uniquely up-to-date, unified, and rigorous treatment of the theoretical, computational, and applied research on Markov decision process models. It discusses all major research directions in the field, highlights many significant applications of Markov decision processes models, and explores numerous important topics that have previously been neglected or given cursory coverage in the literature. Markov Decision Processes focuses primarily on infinite horizon discrete time models and models with discrete time spaces while also examining models with arbitrary state spaces, finite horizon models, and continuous-time discrete state models. The book is organized around optimality criteria, using a common framework centered on the optimality (Bellman) equation for presenting results. The results are presented in a "theorem-proof" format and elaborated on through both discussion and examples, including results that are not available in any other book. A two-state Markov decision process model, presented in Chapter 3, is analyzed repeatedly throughout the book and demonstrates many results and algorithms. Markov Decision Processes covers recent research advances in such areas as countable state space models with average reward criterion, constrained models, and models with risk sensitive optimality criteria. It also explores several topics that have received little or no attention in other books, including modified policy iteration, multichain models with average reward criterion, and sensitive optimality. In addition, a Bibliographic Remarks section in each chapter comments on relevant historic}
+}
+
+%Best Pac paper
+@InProceedings{MDP-PAC,
+  title = 	 {Fast active learning for pure exploration in reinforcement learning},
+  author =       {Menard, Pierre and Domingues, Omar Darwiche and Jonsson, Anders and Kaufmann, Emilie and Leurent, Edouard and Valko, Michal},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {7599--7608},
+  year = 	 {2021},
+  editor = 	 {Meila, Marina and Zhang, Tong},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {7},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v139/menard21a/menard21a.pdf},
+  url = 	 {https://proceedings.mlr.press/v139/menard21a.html},
+  abstract = 	 {Realistic environments often provide agents with very limited feedback. When the environment is initially unknown, the feedback, in the beginning, can be completely absent, and the agents may first choose to devote all their effort on \emph{exploring efficiently.} The exploration remains a challenge while it has been addressed with many hand-tuned heuristics with different levels of generality on one side, and a few theoretically-backed exploration strategies on the other. Many of them are incarnated by \emph{intrinsic motivation} and in particular \emph{explorations bonuses}. A common choice is to use $1/\sqrt{n}$ bonus, where $n$ is a number of times this particular state-action pair was visited. We show that, surprisingly, for a pure-exploration objective of \emph{reward-free exploration}, bonuses that scale with $1/n$ bring faster learning rates, improving the known upper bounds with respect to the dependence on the horizon $H$. Furthermore, we show that with an improved analysis of the stopping time, we can improve by a factor $H$ the sample complexity in the \emph{best-policy identification} setting, which is another pure-exploration objective, where the environment provides rewards but the agent is not penalized for its behavior during the exploration phase.}
+}
+
+%Best regret paper
+
+@InProceedings{MDP-Regret,
+  title = 	 {Minimax Regret Bounds for Reinforcement Learning},
+  author =       {Mohammad Gheshlaghi Azar and Ian Osband and R{\'e}mi Munos},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {263--272},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {8},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/azar17a/azar17a.pdf},
+  url = 	 {https://proceedings.mlr.press/v70/azar17a.html},
+  abstract = 	 {We consider the problem of provably optimal exploration in reinforcement learning for finite horizon MDPs. We show that an optimistic modification to value iteration achieves a regret bound of $\tilde {O}( \sqrt{HSAT} + H^2S^2A+H\sqrt{T})$ where $H$ is the time horizon, $S$ the number of states, $A$ the number of actions and $T$ the number of time-steps. This result improves over the best previous known bound $\tilde {O}(HS \sqrt{AT})$ achieved by the UCRL2 algorithm. The key significance of our new results is that when $T\geq H^3S^3A$ and $SA\geq H$, it leads to a regret of $\tilde{O}(\sqrt{HSAT})$ that matches the established lower bound of $\Omega(\sqrt{HSAT})$ up to a logarithmic factor. Our analysis contain two key insights. We use careful application of concentration inequalities to the optimal value function as a whole, rather than to the transitions probabilities (to improve scaling in $S$), and we define Bernstein-based “exploration bonuses” that use the empirical variance of the estimated values at the next states (to improve scaling in $H$).}
+}
+
+
+%%%cMDPs -------------------------------------------------------------------------
+%%General ----------------------------------------
+%constrained MDP book**
+@book{cMDP-book,
+  title={Constrained Markov Decision Processes},
+  publisher={Chapman and Hall/CRC},
+  author={Eitan Altman},
+  year={1999},
+  doi = {10.1201/9781315140223}
+}
+
+%CPO **
+@InProceedings{cMDP-CPO,
+  title = 	 {Constrained Policy Optimization},
+  author =       {Joshua Achiam and David Held and Aviv Tamar and Pieter Abbeel},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  pages = 	 {22--31},
+  year = 	 {2017},
+  editor = 	 {Precup, Doina and Teh, Yee Whye},
+  volume = 	 {70},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {8},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v70/achiam17a/achiam17a.pdf},
+  url = 	 {https://proceedings.mlr.press/v70/achiam17a.html},
+  abstract = 	 {For many applications of reinforcement learning it can be more convenient to specify both a reward function and constraints, rather than trying to design behavior through the reward function. For example, systems that physically interact with or around humans should satisfy safety constraints. Recent advances in policy search algorithms (Mnih et al., 2016, Schulman et al., 2015, Lillicrap et al., 2016, Levine et al., 2016) have enabled new capabilities in high-dimensional control, but do not consider the constrained setting. We propose Constrained Policy Optimization (CPO), the first general-purpose policy search algorithm for constrained reinforcement learning with guarantees for near-constraint satisfaction at each iteration. Our method allows us to train neural network policies for high-dimensional control while making guarantees about policy behavior all throughout training. Our guarantees are based on a new theoretical result, which is of independent interest: we prove a bound relating the expected returns of two policies to an average divergence between them. We demonstrate the effectiveness of our approach on simulated robot locomotion tasks where the agent must satisfy constraints motivated by safety.}
+}
+
+
+%Actor Critic **
+@article{cMDP-Actor-Critic,
+title = {An actor-critic algorithm for constrained Markov decision processes},
+journal = {Systems \& Control Letters},
+volume = {54},
+number = {3},
+pages = {207-213},
+year = {2005},
+issn = {0167-6911},
+doi = {https://doi.org/10.1016/j.sysconle.2004.08.007},
+url = {https://www.sciencedirect.com/science/article/pii/S0167691104001276},
+author = {V.S. Borkar},
+keywords = {Actor-critic algorithms, Reinforcement learning, Constrained Markov decision processes, Stochastic approximation, Envelope theorem},
+abstract = {An actor-critic type reinforcement learning algorithm is proposed and analyzed for constrained controlled Markov decision processes. The analysis uses multiscale stochastic approximation theory and the `envelope theorem' of mathematical economics.}
+}
+
+@misc{cMDP-SafeExploration,
+      title={Provably Efficient Safe Exploration via Primal-Dual Policy Optimization}, 
+      author={Dongsheng Ding and Xiaohan Wei and Zhuoran Yang and Zhaoran Wang and Mihailo R. Jovanović},
+      year={2020},
+      eprint={2003.00534},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+%Zero duality gap so primal dual methods are optimal. **
+@inproceedings{cMDP-ZeroDualityGap,
+ author = {Paternain, Santiago and Chamon, Luiz and Calvo-Fullana, Miguel and Ribeiro, Alejandro},
+ booktitle = {Advances in Neural Information Processing Systems},
+ title = {Constrained Reinforcement Learning Has Zero Duality Gap},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2019/file/c1aeb6517a1c7f33514f7ff69047e74e-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+
+
+%%Discounted -----------------------------------------
+%DP equations for cMDPs
+@ARTICLE{cMDP-DP,
+  author={Chen, R.C. and Blankenship, G.L.},
+  journal={IEEE Transactions on Automatic Control}, 
+  title={Dynamic programming equations for discounted constrained stochastic control}, 
+  year={2004},
+  volume={49},
+  number={5},
+  pages={699-709},
+  doi={10.1109/TAC.2004.826725}}
+
+%optimal sample complexity of constrained RL with control of budget violation even allowing no violating during learning. Best pure constrained RL paper for PAC setting. Discounted Setting!
+@inproceedings{cMDP-PAC,
+ author = {Vaswani, Sharan and Yang, Lin and Szepesvari, Csaba},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {3110--3122},
+ publisher = {Curran Associates, Inc.},
+ title = {Near-Optimal Sample Complexity Bounds for Constrained MDPs},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/14a5ebc9cd2e507cd811df78c15bf5d7-Paper-Conference.pdf},
+ volume = {35},
+ year = {2022}
+}
+
+%infinite-horizon,infinite-actions-
+@article{NoViolationPolicyGradient, title={Achieving Zero Constraint Violation for Constrained Reinforcement Learning via Conservative Natural Policy Gradient Primal-Dual Algorithm}, volume={37}, url={https://ojs.aaai.org/index.php/AAAI/article/view/25826}, DOI={10.1609/aaai.v37i6.25826}, abstractNote={We consider the problem of constrained Markov decision process (CMDP) in continuous state actions spaces where the goal is to maximize the expected cumulative reward subject to some constraints. We propose a novel Conservative Natural Policy Gradient Primal Dual Algorithm (CNPGPD) to achieve zero constraint violation while achieving state of the art convergence results for the objective value function. For general policy parametrization, we prove convergence of value function to global optimal upto an approximation error due to restricted policy class. We improve the sample complexity of existing constrained NPGPD algorithm. To the best of our knowledge, this is the first work to establish zero constraint violation with Natural policy gradient style algorithms for infinite horizon discounted CMDPs. We demonstrate the merits of proposed algorithm via experimental evaluations.}, number={6}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Bai, Qinbo and Singh Bedi, Amrit and Aggarwal, Vaneet}, year={2023}, month={6}, pages={6737-6744} }
+
+%No regret bounds known for discounted regret???
+
+%%Finite-Horizon -------------------------------------
+%*****
+@ARTICLE{cMDP-Regret-H,
+       author = {{Efroni}, Yonathan and {Mannor}, Shie and {Pirotta}, Matteo},
+        title = "{Exploration-Exploitation in Constrained MDPs}",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+         year = 2020,
+        month = mar,
+          eid = {arXiv:2003.02189},
+        pages = {arXiv:2003.02189},
+          doi = {10.48550/arXiv.2003.02189},
+archivePrefix = {arXiv},
+       eprint = {2003.02189},
+ primaryClass = {cs.LG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2020arXiv200302189E},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{cMDP-PAC-H, title={A Sample-Efficient Algorithm for Episodic Finite-Horizon MDP with Constraints}, volume={35}, url={https://ojs.aaai.org/index.php/AAAI/article/view/16979}, DOI={10.1609/aaai.v35i9.16979}, abstractNote={Constrained Markov decision processes (CMDPs) formalize sequential decision-making problems whose objective is to minimize a cost function while satisfying constraints on various cost functions. In this paper, we consider the setting of episodic fixed-horizon CMDPs. We propose an online algorithm which leverages the linear programming formulation of repeated optimistic planning for finite-horizon CMDP to provide a probably approximately correctness (PAC) guarantee on the number of episodes needed to ensure a near optimal policy, i.e., with resulting objective value close to that of the optimal value and satisfying the constraints within low tolerance, with high probability. The number of episodes needed is shown to have linear dependence on the sizes of the state and action spaces and quadratic dependence on the time horizon and an upper bound on the number of possible successor states for a state-action pair. Therefore, if the upper bound on the number of possible successor states is much smaller than the size of the state space, the number of needed episodes becomes linear in the sizes of the state and action spaces and quadratic in the time horizon.}, number={9}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Kalagarla, Krishna C. and Jain, Rahul and Nuzzo, Pierluigi}, year={2021}, month={5}, pages={8030-8037} }
+
+%model free and regret version of no violation learning for finite-horizon. 
+@InProceedings{cMDP-Model-Violation-Free,
+  title = 	 { Triple-Q: A Model-Free Algorithm for Constrained Reinforcement Learning with Sublinear Regret and Zero Constraint Violation },
+  author =       {Wei, Honghao and Liu, Xin and Ying, Lei},
+  booktitle = 	 {Proceedings of The 25th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {3274--3307},
+  year = 	 {2022},
+  editor = 	 {Camps-Valls, Gustau and Ruiz, Francisco J. R. and Valera, Isabel},
+  volume = 	 {151},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {3},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v151/wei22a/wei22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v151/wei22a.html},
+  abstract = 	 { This paper presents the first model-free, simulator-free reinforcement learning algorithm for Constrained Markov Decision Processes (CMDPs) with sublinear regret and zero constraint violation. The algorithm is named Triple-Q because it includes three key components: a Q-function (also called action-value function) for the cumulative reward, a Q-function for the cumulative utility for the constraint, and a virtual-Queue that (over)-estimates the cumulative constraint violation. Under Triple-Q, at each step, an action is chosen based on the pseudo-Q-value that is a combination of the three “Q” values. The algorithm updates the reward and utility Q-values with learning rates that depend on the visit counts to the corresponding (state, action) pairs and are periodically reset. In the episodic CMDP setting, Triple-Q achieves $\tilde{\cal O}\left(\frac{1 }{\delta}H^4 S^{\frac{1}{2}}A^{\frac{1}{2}}K^{\frac{4}{5}} \right)$ regret, where $K$ is the total number of episodes, $H$ is the number of steps in each episode, $S$ is the number of states, $A$ is the number of actions, and $\delta$ is Slater’s constant. Furthermore, {Triple-Q} guarantees zero constraint violation, both on expectation and with a high probability, when $K$ is sufficiently large. Finally, the computational complexity of {Triple-Q} is similar to SARSA for unconstrained MDPs, and is computationally efficient. }
+}
+
+%learning safely
+@article{cMDP-sample-complexity-safe, title={Learning with Safety Constraints: Sample Complexity of Reinforcement Learning for Constrained MDPs}, volume={35}, url={https://ojs.aaai.org/index.php/AAAI/article/view/16937}, DOI={10.1609/aaai.v35i9.16937}, abstractNote={Many physical systems have underlying safety considerations that require that the policy employed ensures the satisfaction of a set of constraints. The analytical formulation usually takes the form of a Constrained Markov Decision Process (CMDP). We focus on the case where the CMDP is unknown, and RL algorithms obtain samples to discover the model and compute an optimal constrained policy. Our goal is to characterize the relationship between safety constraints and the number of samples needed to ensure a desired level of accuracy---both objective maximization and constraint satisfaction---in a PAC sense. We explore two classes of RL algorithms, namely, (i) a generative model based approach, wherein samples are taken initially to estimate a model, and (ii) an online approach, wherein the model is updated as samples are obtained. Our main finding is that compared to the best known bounds of the unconstrained regime, the sample complexity of constrained RL algorithms are increased by a factor that is logarithmic in the number of constraints, which suggests that the approach may be easily utilized in real systems.}, number={9}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={HasanzadeZonuzy, Aria and Bura, Archana and Kalathil, Dileep and Shakkottai, Srinivas}, year={2021}, month={5}, pages={7667-7674} }
+
+
+
+%%%Knapsack Models ------------------------------------------------------
+
+%RLwKnapsacks and factored MDPs. Difference is assumes rational cost of special form, and goes over budget arbitrarily though only at the last step. This can be modified but still the MDP itself has to know budget, it is not a policy constraint but rather an environment constraint. Also does not characterize the problem only gives a learning algorithm and does not discuss any optimal or meta-MDP like things.
+@misc{Knap-RLwK,
+      title={Efficient Reinforcement Learning in Factored MDPs with Application to Constrained RL}, 
+      author={Xiaoyu Chen and Jiachen Hu and Lihong Li and Liwei Wang},
+      year={2021},
+      eprint={2008.13319},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{Knap-Brantley,
+  author={Kianté Brantley and Miroslav Dudík and Thodoris Lykouris and Sobhan Miryoosefi and Max Simchowitz and Aleksandrs Slivkins and Wen Sun},
+  title={Constrained episodic reinforcement learning in concave-convex and knapsack settings},
+  year={2020},
+  cdate={1577836800000},
+  url={https://proceedings.neurips.cc/paper/2020/hash/bc6d753857fe3dd4275dff707dedf329-Abstract.html},
+  booktitle={NeurIPS},
+}
+
+%cited in Brantley paper. Should be worse than it and study different kinds of constraints and needs larger budget.
+@inproceedings{Knap-PreBrantley,
+	author = {Cheung, Wang Chi},
+	booktitle = {Advances in Neural Information Processing Systems},
+	title = {Regret Minimization for Reinforcement Learning with Vectorial Feedback and Complex Objectives},
+	url = {https://proceedings.neurips.cc/paper/2019/file/a02ffd91ece5e7efeb46db8f10a74059-Paper.pdf},
+	volume = {32},
+	year = {2019},
+	bdsk-url-1 = {https://proceedings.neurips.cc/paper/2019/file/a02ffd91ece5e7efeb46db8f10a74059-Paper.pdf}}
+
+@INPROCEEDINGS{Knap-BwK,
+  author={Badanidiyuru, Ashwinkumar and Kleinberg, Robert and Slivkins, Aleksandrs},
+  booktitle={2013 IEEE 54th Annual Symposium on Foundations of Computer Science}, 
+  title={Bandits with Knapsacks}, 
+  year={2013},
+  volume={},
+  number={},
+  pages={207-216},
+  doi={10.1109/FOCS.2013.30}}
+
+%%%Almost Sure ----------------------------------------------------------
+%also like meta-MDP with budget, but does not actually solve or study the meta-MDP just solves the minimal budget problem and talks about feasibility. Also seems to focus on average reward criteria in infinite horizon and budget also infinite so needs assumptions on underlying MDPs like shortest path MDPs.
+@InProceedings{AlmostSure,
+  title = 	 {Reinforcement Learning with Almost Sure Constraints},
+  author =       {Castellano, Agustin and Min, Hancheng and Mallada, Enrique and Bazerque, Juan Andr\'es},
+  booktitle = 	 {Proceedings of The 4th Annual Learning for Dynamics and Control Conference},
+  pages = 	 {559--570},
+  year = 	 {2022},
+  editor = 	 {Firoozi, Roya and Mehr, Negar and Yel, Esen and Antonova, Rika and Bohg, Jeannette and Schwager, Mac and Kochenderfer, Mykel},
+  volume = 	 {168},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {6},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v168/castellano22a/castellano22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v168/castellano22a.html},
+  abstract = 	 {In this work we address the problem of finding feasible policies for Constrained Markov Decision Processes under probability one constraints. We argue that stationary policies are not sufficient for solving this problem, and that a rich class of policies can be found by endowing the controller with a scalar quantity, so called budget, that tracks how close the agent is to violating the constraint. We show that the minimal budget required to act safely can be obtained as the smallest fixed point of a Bellman-like operator, for which we analyze its convergence properties. We also show how to learn this quantity when the true kernel of the Markov decision process is not known, while providing sample-complexity bounds. The utility of knowing this minimal budget relies in that it can aid in the search of optimal or near-optimal policies by shrinking down the region of the state space the agent must navigate. Simulations illustrate the different nature of probability one constraints against the typically used constraints in expectation.}
+}
+
+%%%CCMDPs -----------------------------------------------------------------------
+%Planning-----
+
+@article{CCMDP-DPwSpaceExploration,
+author = {Ono, Masahiro and Pavone, Marco and Kuwata, Yoshiaki and Balaram, J.},
+title = {Chance-Constrained Dynamic Programming with Application to Risk-Aware Robotic Space Exploration},
+year = {2015},
+issue_date = {December  2015},
+publisher = {Kluwer Academic Publishers},
+address = {USA},
+volume = {39},
+number = {4},
+issn = {0929-5593},
+url = {https://doi.org/10.1007/s10514-015-9467-7},
+doi = {10.1007/s10514-015-9467-7},
+abstract = {Existing approaches to constrained dynamic programming are limited to formulations where the constraints share the same additive structure of the objective function (that is, they can be represented as an expectation of the summation of one-stage costs). As such, these formulations cannot handle joint probabilistic (chance) constraints, whose structure is not additive. To bridge this gap, this paper presents a novel algorithmic approach for joint chance-constrained dynamic programming problems, where the probability of failure to satisfy given state constraints is explicitly bounded. Our approach is to (conservatively) reformulate a joint chance constraint as a constraint on the expectation of a summation of indicator random variables, which can be incorporated into the cost function by considering a dual formulation of the optimization problem. As a result, the primal variables can be optimized by standard dynamic programming, while the dual variable is optimized by a root-finding algorithm that converges exponentially. Error bounds on the primal and dual objective values are rigorously derived. We demonstrate algorithm effectiveness on three optimal control problems, namely a path planning problem, a Mars entry, descent and landing problem, and a Lunar landing problem. All Mars simulations are conducted using real terrain data of Mars, with four million discrete states at each time step. The numerical experiments are used to validate our theoretical and heuristic arguments that the proposed algorithm is both (i) computationally efficient, i.e., capable of handling real-world problems, and (ii) near-optimal, i.e., its degree of conservatism is very low.},
+journal = {Auton. Robots},
+month = {12},
+pages = {555–571},
+numpages = {17},
+keywords = {Constrained stochastic optimal control, Dynamic programming, Path planning, Markov decision processes, Chance-constrained optimization}
+}
+
+%introduced the CCMDP model
+@article{CCMDP-OG,
+author = {Charnes, A. and Cooper, W. W. and Symonds, G. H.},
+title = {Cost Horizons and Certainty Equivalents: An Approach to Stochastic Programming of Heating Oil},
+journal = {Management Science},
+volume = {4},
+number = {3},
+pages = {235-263},
+year = {1958},
+doi = {10.1287/mnsc.4.3.235},
+URL = { https://doi.org/10.1287/mnsc.4.3.235},
+eprint = { https://doi.org/10.1287/mnsc.4.3.235},
+abstract = { Scheduling heating oil production is an important management problem. It is also a complex one. Weather and demand uncertainties, allocation of production between different refineries, joint- and by-product relations, storage limitations, maintenance of minimal supplies and many other factors need to be considered. This paper is concerned with one of an integrated series of operations research studies directed toward improvement in such scheduling methods. Emphasis is on essentials of the mathematical model. Institutional features and other phases of the OR studies are brought in only as required. }
+}
+
+%Precentile Risk !!!
+%Considers chance-constraints which are close to our setting, but their method cannot handle beta = 0 which corresponds to our hard constraints and still cannot solve anytime constraints even in principle. Also they require strict assumptions on the environment, and only convergence to a solution results, not efficient algorithms.
+@article{CCMDP-Percentile-Risk,
+  author  = {Yinlam Chow and Mohammad Ghavamzadeh and Lucas Janson and Marco Pavone},
+  title   = {Risk-Constrained Reinforcement Learning with Percentile Risk Criteria},
+  journal = {Journal of Machine Learning Research},
+  year    = {2018},
+  volume  = {18},
+  number  = {167},
+  pages   = {1--51},
+  url     = {http://jmlr.org/papers/v18/15-636.html}
+}
+
+
+%Pseudo-poly time alg for CCMDPs but only for goal based MDPs so special case of our setting, really just feasibility problem again and even more limited.
+@inproceedings{CCMDP-GoalComplexity, author = {Xu, Huan and Mannor, Shie}, title = {Probabilistic Goal Markov Decision Processes}, year = {2011}, isbn = {9781577355151}, publisher = {AAAI Press}, abstract = {The Markov decision process model is a powerful tool in planing tasks and sequential decision making problems. The randomness of state transitions and rewards implies that the performance of a policy is often stochastic. In contrast to the standard approach that studies the expected performance, we consider the policy that maximizes the probability of achieving a pre-determined target performance, a criterion we term probabilistic goal Markov decision processes. We show that this problem is NP-hard, but can be solved using a pseudo-polynomial algorithm. We further consider a variant dubbed "chance-constraint Markov decision problems," that treats the probability of achieving target performance as a constraint instead of the maximizing objective. This variant is NP-hard, but can be solved in pseudo-polynomial time.}, booktitle = {Proceedings of the Twenty-Second International Joint Conference on Artificial Intelligence - Volume Volume Three}, pages = {2046–2052}, numpages = {7}, location = {Barcelona, Catalonia, Spain}, series = {IJCAI'11} }
+
+@article{CCMDP-RL-Batch,
+title = {Safe chance constrained reinforcement learning for batch process control},
+journal = {Computers \& Chemical Engineering},
+volume = {157},
+pages = {107630},
+year = {2022},
+issn = {0098-1354},
+doi = {https://doi.org/10.1016/j.compchemeng.2021.107630},
+url = {https://www.sciencedirect.com/science/article/pii/S0098135421004087},
+author = {M. Mowbray and P. Petsagkourakis and E.A. {del Rio-Chanona} and D. Zhang},
+keywords = {Safe reinforcement learning, Optimal control, Dynamic optimization, Bioprocess operation, Machine learning},
+abstract = {Reinforcement Learning (RL) controllers have generated excitement within the control community. The primary advantage of RL controllers relative to existing methods is their ability to optimize uncertain systems independently of explicit assumption of process uncertainty. Recent focus on engineering applications has been directed towards the development of safe RL controllers. Previous works have proposed approaches to account for constraint satisfaction through constraint tightening from the domain of stochastic model predictive control. Here, we extend these approaches to account for plant-model mismatch. Specifically, we propose a data-driven approach that utilizes Gaussian processes for the offline simulation model and use the associated posterior uncertainty prediction to account for joint chance constraints and plant-model mismatch. The method is benchmarked against nonlinear model predictive control via case studies. The results demonstrate the ability of the methodology to account for process uncertainty, enabling satisfaction of joint chance constraints even in the presence of plant-model mismatch.}
+}
+
+
+%%Approx --------------------------------------
+
+
+%%%Quantile constraints, basically same as chance constraints .quantile approach to solve constrained probability of failure problem. Close to our hard constrained problem but actual methods cannot handle that case and can't solve anytime even in principle. Propose algorithms are not shown to be polytime.
+@inproceedings{QuantileConstrained,
+ author = {Jung, Whiyoung and Cho, Myungsik and Park, Jongeui and Sung, Youngchul},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {6437--6449},
+ publisher = {Curran Associates, Inc.},
+ title = {Quantile Constrained Reinforcement Learning: A Reinforcement Learning Framework Constraining Outage Probability},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/2a07348a6a7b2c208ab5cb1ee0e78ab5-Paper-Conference.pdf},
+ volume = {35},
+ year = {2022}
+}
+
+%past work of Jung paper above.
+@article{PreQuantile, title={WCSAC: Worst-Case Soft Actor Critic for Safety-Constrained Reinforcement Learning}, volume={35}, url={https://ojs.aaai.org/index.php/AAAI/article/view/17272}, DOI={10.1609/aaai.v35i12.17272}, abstractNote={Safe exploration is regarded as a key priority area for reinforcement learning research.
+With separate reward and safety signals, it is natural to cast it as constrained reinforcement learning, where expected long-term costs of policies are constrained.
+However, it can be hazardous to set constraints on the expected safety signal without considering the tail of the distribution.
+For instance, in safety-critical domains, worst-case analysis is required to avoid disastrous results.
+We present a novel reinforcement learning algorithm called Worst-Case Soft Actor Critic, which extends the Soft Actor Critic algorithm with a safety critic to achieve risk control.
+More specifically, a certain level of conditional Value-at-Risk from the distribution is regarded as a safety measure to judge the constraint satisfaction, which guides the change of adaptive safety weights to achieve a trade-off between reward and safety.
+As a result, we can optimize policies under the premise that their worst-case performance satisfies the constraints. The empirical analysis shows that our algorithm attains better risk control compared to expectation-based methods.}, number={12}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Yang, Qisong and Simão, Thiago D. and Tindemans, Simon H and Spaan, Matthijs T. J.}, year={2021}, month={5}, pages={10639-10646} }
+
+
+
+%%%RS-MDP Framework ---------------------------------------------------
+%The goal is maximize the probability of being within cost when reaching a goal state (a goal induces termination so different from finite-horizon setting where need to reach a goal, so cost is really the only objective here). These problems are mainly capturing the feasibility problem for acMDPs, which is trivial here using the do-nothing policy.
+
+%Introduces risk-sensitive MDPs and gives threshold augmentation approach.
+@article{RSMDP-OG,
+title = {Optimization Models for the First Arrival Target Distribution Function in Discrete Time},
+journal = {Journal of Mathematical Analysis and Applications},
+volume = {225},
+number = {1},
+pages = {193-223},
+year = {1998},
+issn = {0022-247X},
+doi = {https://doi.org/10.1006/jmaa.1998.6015},
+url = {https://www.sciencedirect.com/science/article/pii/S0022247X98960152},
+author = {Stella X Yu and Yuanlie Lin and Pingfan Yan}
+}
+
+%Focuses on Goal-Based MPDs which are a generalization of SSP-MDP. Computes augmented state space and does simple DP. No forward induciton and does DP differently due to different goals. Needs finite precision on costs and thresholds.
+@article{RSMDP-Revisit, title={Revisiting Risk-Sensitive MDPs: New Algorithms and Results}, volume={24}, url={https://ojs.aaai.org/index.php/ICAPS/article/view/13615}, DOI={10.1609/icaps.v24i1.13615}, abstractNote={ &lt;p&gt; &lt;p class=&quot;p1&quot;&gt;While Markov Decision Processes (MDPs) have been shown to be effective models for planning under uncertainty, the objective to minimize the expected cumulative cost is inappropriate for high-stake planning problems. As such, Yu, Lin, and Yan (1998) introduced the Risk-Sensitive MDP (RS-MDP) model, where the objective is to find a policy that maximizes the probability that the cumulative cost is within some user-defined cost threshold. In this paper, we revisit this problem and introduce new algorithms that are based on classical techniques, such as depth-first search and dynamic programming, and a recently introduced technique called Topological Value Iteration (TVI). We demonstrate the applicability of our approach on randomly generated MDPs as well as domains from the ICAPS 2011 International Probabilistic Planning Competition (IPPC).&lt;/p&gt; &lt;/p&gt; }, number={1}, journal={Proceedings of the International Conference on Automated Planning and Scheduling}, author={Hou, Ping and Yeoh, William and Varakantham, Pradeep}, year={2014}, month={5}, pages={136-144} }
+
+%empircal study of the problem.
+@article{RSMDP-GoalProbPlanning, title={Revisiting Goal Probability Analysis in Probabilistic Planning}, volume={26}, url={https://ojs.aaai.org/index.php/ICAPS/article/view/13740}, DOI={10.1609/icaps.v26i1.13740}, abstractNote={ &lt;p&gt; Maximizing goal probability is an important objective in probabilistic planning, yet algorithms for its optimal solution are severely underexplored. There is scant evidence of what the empirical state of the art actually is. Focusing on heuristic search, we close this gap with a comprehensive empirical analysis of known and adapted algorithms. We explore both, the general case where there may be 0-reward cycles, and the practically relevant special case of acyclic planning, like planning with a limited action-cost budget. We consider three different algorithmic objectives. We design suitable termination criteria, search algorithm variants, dead-end pruning methods using classical planning heuristics, and node selection strategies. Our evaluation on more than 1000 benchmark instances from the IPPC, resource-constrained planning, and simulated penetration testing reveals the behavior of heuristic search, and exhibits several improvements to the state of the art. &lt;/p&gt; }, number={1}, journal={Proceedings of the International Conference on Automated Planning and Scheduling}, author={Steinmetz, Marcel and Hoffmann, Joerg and Buffet, Olivier}, year={2016}, month={3}, pages={299-307} }
+
+%Symbolic Dynamic Programming alg for factored MPPs that supposedly is more efficient than the topolicigal DP from previous work.
+@article{RSMDP-Budget,
+title = {Efficient algorithms for Risk-Sensitive Markov Decision Processes with limited budget},
+journal = {International Journal of Approximate Reasoning},
+volume = {139},
+pages = {143-165},
+year = {2021},
+issn = {0888-613X},
+doi = {https://doi.org/10.1016/j.ijar.2021.09.003},
+url = {https://www.sciencedirect.com/science/article/pii/S0888613X21001389},
+author = {Daniel A. {Melo Moreira} and Karina {Valdivia Delgado} and Leliane {Nunes de Barros} and Denis {Deratani Mauá}},
+keywords = {Probabilistic planning, Markov decision processes, Risk-Sensitive Markov decision processes},
+abstract = {We tackle the problem of finding optimal policies for Markov Decision Processes, that minimize the probability of the cumulative cost exceeding a given budget. Such task falls under the umbrella of Risk-Sensitive Markov Decision Processes, which optimize a non-additive, non-linear function of cumulative cost that incorporates the user's attitude towards risk. Current algorithms for solving that task, for any budget equal or smaller than an user-defined budget, scale poorly when the support of the cost function is large, since they operate in an augmented state space which enumerates all possible remaining budgets. To circumvent this issue, we develop (i) an improved version of the Topological Value Iteration with Dynamic Programming algorithm (tvi-dp), and (ii) the first symbolic dynamic programming algorithm for this class of problems, called rs-spudd, that exploits conditional independence in the transition function in the augmented state space. The proposed algorithms improve efficiency by pruning irrelevant states and terminating early, without sacrificing optimality. Empirical results show that rs-spudd is able to solve problems up to 103 times larger than tvi-dp.}
+}
+
+
+
+%%%Risk-Constrained MDPs ----------------------------------------------
+
+%Includes 'Risk-Constrained MDPs' also called rMDPs
+%!!!
+@ARTICLE{RCMDP-OG,
+  author={Borkar, Vivek and Jain, Rahul},
+  journal={IEEE Transactions on Automatic Control}, 
+  title={Risk-Constrained Markov Decision Processes}, 
+  year={2014},
+  volume={59},
+  number={9},
+  pages={2574-2579},
+  doi={10.1109/TAC.2014.2309262}}
+
+
+%%%State-wise safe RL ------------------------------------------
+%Heuristic for unsafe states.
+@inproceedings{Safe-RL-Imagining,
+ author = {Thomas, Garrett and Luo, Yuping and Ma, Tengyu},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+ pages = {13859--13869},
+ publisher = {Curran Associates, Inc.},
+ title = {Safe Reinforcement Learning by Imagining the Near Future},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/73b277c11266681122132d024f53a75b-Paper.pdf},
+ volume = {34},
+ year = {2021}
+}
+
+
+%Safety ----------------------------------------------
+
+@article{SafeComprSurvey,
+  author  = {Javier Garc{{\'i}}a and Fern and o Fern{{\'a}}ndez},
+  title   = {A Comprehensive Survey on Safe Reinforcement Learning},
+  journal = {Journal of Machine Learning Research},
+  year    = {2015},
+  volume  = {16},
+  number  = {42},
+  pages   = {1437--1480},
+  url     = {http://jmlr.org/papers/v16/garcia15a.html}
+}
+
+@misc{SafeMulti,
+      title={Safe, Multi-Agent, Reinforcement Learning for Autonomous Driving}, 
+      author={Shai Shalev-Shwartz and Shaked Shammah and Amnon Shashua},
+      year={2016},
+      eprint={1610.03295},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/1610.03295}, 
+}
+
+@article{SafeShielding, title={Safe Reinforcement Learning via Shielding}, volume={32}, url={https://ojs.aaai.org/index.php/AAAI/article/view/11797}, DOI={10.1609/aaai.v32i1.11797}, abstractNote={ &lt;p&gt; Reinforcement learning algorithms discover policies that maximize reward, but do not necessarily guarantee safety during learning or execution phases. We introduce a new approach to learn optimal policies while enforcing properties expressed in temporal logic. To this end, given the temporal logic specification that is to be obeyed by the learning system, we propose to synthesize a reactive system called a shield. The shield monitors the actions from the learner and corrects them only if the chosen action causes a violation of the specification. We discuss which requirements a shield must meet to preserve the convergence guarantees of the learner. Finally, we demonstrate the versatility of our approach on several challenging reinforcement learning scenarios. &lt;/p&gt; }, number={1}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Alshiekh, Mohammed and Bloem, Roderick and Ehlers, Rüdiger and Könighofer, Bettina and Niekum, Scott and Topcu, Ufuk}, year={2018}, month={Apr.} }
+
+@article{SafeBarrier, title={End-to-End Safe Reinforcement Learning through Barrier Functions for Safety-Critical Continuous Control Tasks}, volume={33}, url={https://ojs.aaai.org/index.php/AAAI/article/view/4213}, DOI={10.1609/aaai.v33i01.33013387}, abstractNote={&lt;p&gt;Reinforcement Learning (RL) algorithms have found limited success beyond simulated applications, and one main reason is the absence of safety guarantees &lt;em&gt;during&lt;/em&gt; the learning process. Real world systems would realistically fail or break before an optimal controller can be learned. To address this issue, we propose a controller architecture that combines (1) a model-free RL-based controller with (2) model-based controllers utilizing control barrier functions (CBFs) and (3) online learning of the unknown system dynamics, in order to ensure safety during learning. Our general framework leverages the success of RL algorithms to learn high-performance controllers, while the CBF-based controllers both &lt;em&gt;guarantee&lt;/em&gt; safety and &lt;em&gt;guide&lt;/em&gt; the learning process by constraining the set of explorable polices. We utilize Gaussian Processes (GPs) to model the system dynamics and its uncertainties.&lt;/p&gt; &lt;p&gt;Our novel controller synthesis algorithm, RL-CBF, guarantees safety with high probability during the learning process, regardless of the RL algorithm used, and demonstrates greater policy exploration efficiency. We test our algorithm on (1) control of an inverted pendulum and (2) autonomous carfollowing with wireless vehicle-to-vehicle communication, and show that our algorithm attains much greater sample efficiency in learning than other state-of-the-art algorithms &lt;em&gt;and&lt;/em&gt; maintains safety during the entire learning process.&lt;/p&gt;}, number={01}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Cheng, Richard and Orosz, Gábor and Murray, Richard M. and Burdick, Joel W.}, year={2019}, month={Jul.}, pages={3387-3395} }
+
+@article{SafeRobotics,
+   author = "Brunke, Lukas and Greeff, Melissa and Hall, Adam W. and Yuan, Zhaocong and Zhou, Siqi and Panerati, Jacopo and Schoellig, Angela P.",
+   title = "Safe Learning in Robotics: From Learning-Based Control to Safe Reinforcement Learning", 
+   journal= "Annual Review of Control, Robotics, and Autonomous Systems",
+   year = "2022",
+   volume = "5",
+   number = "Volume 5, 2022",
+   pages = "411-444",
+   doi = "https://doi.org/10.1146/annurev-control-042920-020211",
+   url = "https://www.annualreviews.org/content/journals/10.1146/annurev-control-042920-020211",
+   publisher = "Annual Reviews",
+   issn = "2573-5144",
+   type = "Journal Article",
+   keywords = "safe reinforcement learning",
+   keywords = "robot learning",
+   keywords = "machine learning",
+   keywords = "robotics",
+   keywords = "robust control",
+   keywords = "benchmarks",
+   keywords = "learning-based control",
+   keywords = "model predictive control",
+   keywords = "adaptive control",
+   keywords = "safe learning",
+   abstract = "The last half decade has seen a steep rise in the number of contributions on safe learning methods for real-world robotic deployments from both the control and reinforcement learning communities. This article provides a concise but holistic review of the recent advances made in using machine learning to achieve safe decision-making under uncertainties, with a focus on unifying the language and frameworks used in control theory and reinforcement learning research. It includes learning-based control approaches that safely improve performance by learning the uncertain dynamics, reinforcement learning approaches that encourage safety or robustness, and methods that can formally certify the safety of a learned control policy. As data- and learning-based robot control methods continue to gain traction, researchers must understand when and how to best leverage them in real-world scenarios where safety is imperative, such as when operating in close proximityto humans. We highlight some of the open challenges that will drive the field of robot learning in the coming years, and emphasize the need for realistic physics-based benchmarks to facilitate fair comparisons between control and reinforcement learning approaches.",
+}
+
+
+@inproceedings{SafeLyapunov,
+ author = {Chow, Yinlam and Nachum, Ofir and Duenez-Guzman, Edgar and Ghavamzadeh, Mohammad},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {A Lyapunov-based Approach to Safe Reinforcement Learning},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2018/file/4fe5149039b52765bde64beb9f674940-Paper.pdf},
+ volume = {31},
+ year = {2018}
+}
+
+
+@ARTICLE{SafeMPC,
+  author={Zanon, Mario and Gros, Sebastien},
+  journal={IEEE Transactions on Automatic Control}, 
+  title={Safe Reinforcement Learning Using Robust MPC}, 
+  year={2021},
+  volume={66},
+  number={8},
+  pages={3638-3652},
+  keywords={Safety;Robustness;Data models;Numerical models;Uncertainty;Stability analysis;Computational modeling;Reinforcement learning (RL);robust model predictive control (MPC);safe policies},
+  doi={10.1109/TAC.2020.3024161}}
+
+
+@misc{SafeReview,
+      title={A Review of Safe Reinforcement Learning: Methods, Theory and Applications}, 
+      author={Shangding Gu and Long Yang and Yali Du and Guang Chen and Florian Walter and Jun Wang and Alois Knoll},
+      year={2024},
+      eprint={2205.10330},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2205.10330}, 
+}
+
+@inproceedings{InstantaneousSafeRL, author = {Li, Jingqi and Fridovich-Keil, David and Sojoudi, Somayeh and Tomlin, Claire J.}, title = {Augmented Lagrangian Method for Instantaneously Constrained Reinforcement Learning Problems}, year = {2021}, publisher = {IEEE Press}, url = {https://doi.org/10.1109/CDC45484.2021.9683088}, doi = {10.1109/CDC45484.2021.9683088}, abstract = {In this paper, we study the Instantaneously Constrained Reinforcement Learning (ICRL) problem, in which we are tasked to find a reward-maximizing policy while satisfying certain constraints at each time step. We first extend a result on the strong duality of Constrained Markov Decision Process (CMDP) in the literature and propose a sufficient condition for strong duality of the ICRL problem. Inspired by the Augmented Lagrangian Method in constrained optimization, we propose a new surrogate objective function for ICRL, which could be efficiently optimized by common policy-gradient based RL algorithms. We show theoretically that a feasible and optimal policy could be obtained by optimizing this surrogate function, under certain conditions related to the feasible policy set. Our empirical results on a tabular Markov Decision Process and two nonlinear optimal control problems, a constrained pendulum and a constrained half-cheetah, justify our analysis, and suggest that our method could promote safety during learning and converge in a smaller number of iterations compared to the existing algorithms.}, booktitle = {2021 60th IEEE Conference on Decision and Control (CDC)}, pages = {2982–2989}, numpages = {8}, location = {Austin, TX, USA} }
+
+
+
+@inproceedings{PreInstantaneous1, author = {Fisac, Jaime F. and Lugovoy, Neil F. and Rubies-Royo, Vicen\c{c} and Ghosh, Shromona and Tomlin, Claire J.}, title = {Bridging Hamilton-Jacobi Safety Analysis and Reinforcement Learning}, year = {2019}, publisher = {IEEE Press}, url = {https://doi.org/10.1109/ICRA.2019.8794107}, doi = {10.1109/ICRA.2019.8794107}, abstract = {Safety analysis is a necessary component in the design and deployment of autonomous robotic systems. Techniques from robust optimal control theory, such as Hamilton-Jacobi reachability analysis, allow a rigorous formalization of safety as guaranteed constraint satisfaction. Unfortunately, the computational complexity of these tools for general dynamical systems scales poorly with state dimension, making existing tools impractical beyond small problems. Modern reinforcement learning methods have shown promising ability to find approximate yet proficient solutions to optimal control problems in complex and high-dimensional systems, however their application has in practice been restricted to problems with an additive payoff over time, unsuitable for reasoning about safety. In recent work, we introduced a time-discounted modification of the problem of maximizing the minimum payoff over time, central to safety analysis, through a modified dynamic programming equation that induces a contraction mapping. Here, we show how a similar contraction mapping can render reinforcement learning techniques amenable to quantitative safety analysis as tools to approximate the safe set and optimal safety policy. This opens a new avenue of research connecting control-theoretic safety analysis and the reinforcement learning domain. We validate the correctness of our formulation by comparing safety results computed through Q-learning to analytic and numerical solutions, and demonstrate its scalability by learning safe sets and control policies for simulated systems of up to 18 state dimensions using value learning and policy gradient techniques.}, booktitle = {2019 International Conference on Robotics and Automation (ICRA)}, pages = {8550–8556}, numpages = {7}, location = {Montreal, QC, Canada} }
+
+
+@article{PreInstantaneous2,
+title = {Safe Reinforcement Learning via Projection on a Safe Set: How to Achieve Optimality?},
+journal = {IFAC-PapersOnLine},
+volume = {53},
+number = {2},
+pages = {8076-8081},
+year = {2020},
+note = {21st IFAC World Congress},
+issn = {2405-8963},
+doi = {https://doi.org/10.1016/j.ifacol.2020.12.2276},
+url = {https://www.sciencedirect.com/science/article/pii/S2405896320329360},
+author = {Sebastien Gros and Mario Zanon and Alberto Bemporad},
+keywords = {Safe Reinforcement Learning, safe projection, robust MPC},
+abstract = {For all its successes, Reinforcement Learning (RL) still struggles to deliver formal guarantees on the closed-loop behavior of the learned policy. Among other things, guaranteeing the safety of RL with respect to safety-critical systems is a very active research topic. Some recent contributions propose to rely on projections of the inputs delivered by the learned policy into a safe set, ensuring that the system safety is never jeopardized. Unfortunately, it is unclear whether this operation can be performed without disrupting the learning process. This paper addresses this issue. The problem is analysed in the context of Q-learning and policy gradient techniques. We show that the projection approach is generally disruptive in the context of Q-learning though a simple alternative solves the issue, while simple corrections can be used in the context of policy gradient methods in order to ensure that the policy gradients are unbiased. The proposed results extend to safe projections based on robust MPC techniques.}
+}
+
+@InProceedings{SafeStatePAC,
+  title = 	 { Provably Safe PAC-MDP Exploration Using Analogies },
+  author =       {Roderick, Melrose and Nagarajan, Vaishnavh and Kolter, Zico},
+  booktitle = 	 {Proceedings of The 24th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {1216--1224},
+  year = 	 {2021},
+  editor = 	 {Banerjee, Arindam and Fukumizu, Kenji},
+  volume = 	 {130},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {4},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v130/roderick21a/roderick21a.pdf},
+  url = 	 {https://proceedings.mlr.press/v130/roderick21a.html},
+  abstract = 	 { A key challenge in applying reinforcement learning to safety-critical domains is understanding how to balance exploration (needed to attain good performance on the task) with safety (needed to avoid catastrophic failure). Although a growing line of work in reinforcement learning has investigated this area of "safe exploration," most existing techniques either 1) do not guarantee safety during the actual exploration process; and/or 2) limit the problem to a priori known and/or deterministic transition dynamics with strong smoothness assumptions. Addressing this gap, we propose Analogous Safe-state Exploration (ASE), an algorithm for provably safe exploration in MDPs with unknown, stochastic dynamics. Our method exploits analogies between state-action pairs to safely learn a near-optimal policy in a PAC-MDP sense. Additionally, ASE also guides exploration towards the most task-relevant states, which empirically results in significant improvements in terms of sample efficiency, when compared to existing methods. }
+}
+
+
+@misc{SafeActorCritic,
+      title={Feasible Actor-Critic: Constrained Reinforcement Learning for Ensuring Statewise Safety}, 
+      author={Haitong Ma and Yang Guan and Shegnbo Eben Li and Xiangteng Zhang and Sifa Zheng and Jianyu Chen},
+      year={2021},
+      eprint={2105.10682},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+
+
+@InProceedings{Safe-RL-MDP,
+  title = 	 {Safe Reinforcement Learning in Constrained {M}arkov Decision Processes},
+  author =       {Wachi, Akifumi and Sui, Yanan},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {9797--9806},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {7},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v119/wachi20a/wachi20a.pdf},
+  url = 	 {https://proceedings.mlr.press/v119/wachi20a.html},
+  abstract = 	 {Safe reinforcement learning has been a promising approach for optimizing the policy of an agent that operates in safety-critical applications. In this paper, we propose an algorithm, SNO-MDP, that explores and optimizes Markov decision processes under unknown safety constraints. Specifically, we take a step-wise approach for optimizing safety and cumulative reward. In our method, the agent first learns safety constraints by expanding the safe region, and then optimizes the cumulative reward in the certified safe region. We provide theoretical guarantees on both the satisfaction of the safety constraint and the near-optimality of the cumulative reward under proper regularity assumptions. In our experiments, we demonstrate the effectiveness of SNO-MDP through two experiments: one uses a synthetic data in a new, openly-available environment named GP-Safety-Gym, and the other simulates Mars surface exploration by using real observation data.}
+}
+
+@article{SafeExploreWachi, title={Safe Exploration and Optimization of Constrained MDPs Using Gaussian Processes}, volume={32}, url={https://ojs.aaai.org/index.php/AAAI/article/view/12103}, DOI={10.1609/aaai.v32i1.12103}, abstractNote={ &lt;p&gt; We present a reinforcement learning approach to explore and optimize a safety-constrained Markov Decision Process(MDP). In this setting, the agent must maximize discounted cumulative reward while constraining the probability of entering unsafe states, defined using a safety function being within some tolerance. The safety values of all states are not known a priori, and we probabilistically model them via aGaussian Process (GP) prior. As such, properly behaving in such an environment requires balancing a three-way trade-off of exploring the safety function, exploring the reward function, and exploiting acquired knowledge to maximize reward. We propose a novel approach to balance this trade-off. Specifically, our approach explores unvisited states selectively; that is, it prioritizes the exploration of a state if visiting that state significantly improves the knowledge on the achievable cumulative reward. Our approach relies on a novel information gain criterion based on Gaussian Process representations of the reward and safety functions. We demonstrate the effectiveness of our approach on a range of experiments, including a simulation using the real Martian terrain data. &lt;/p&gt; }, number={1}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Wachi, Akifumi and Sui, Yanan and Yue, Yisong and Ono, Masahiro}, year={2018}, month={4} }
+
+
+@article{SafeE4, author = {Bossens, David M. and Bishop, Nicholas}, title = {Explicit Explore, Exploit, or Escape (E4): Near-Optimal Safety-Constrained Reinforcement Learning in Polynomial Time}, year = {2022}, issue_date = {Mar 2023}, publisher = {Kluwer Academic Publishers}, address = {USA}, volume = {112}, number = {3}, issn = {0885-6125}, url = {https://doi.org/10.1007/s10994-022-06201-z}, doi = {10.1007/s10994-022-06201-z}, abstract = {In reinforcement learning (RL), an agent must explore an initially unknown environment in order to learn a desired behaviour. When RL agents are deployed in real world environments, safety is of primary concern. Constrained Markov decision processes (CMDPs) can provide long-term safety constraints; however, the agent may violate the constraints in an effort to explore its environment. This paper proposes a model-based RL algorithm called Explicit Explore, Exploit, or Escape (E4), which extends the Explicit Explore or Exploit (E3) algorithm to a robust CMDP setting. E4 explicitly separates exploitation, exploration, and escape CMDPs, allowing targeted policies for policy improvement across known states, discovery of unknown states, as well as safe return to known states. E4 robustly optimises these policies on the worst-case CMDP from a set of CMDP models consistent with the empirical observations of the deployment environment. Theoretical results show that E4 finds a near-optimal constraint-satisfying policy in polynomial time whilst satisfying safety constraints throughout the learning process. We then discuss E4 as a practical algorithmic framework, including robust-constrained offline optimisation algorithms, the design of uncertainty sets for the transition dynamics of unknown states, and how to further leverage empirical observations and prior knowledge to relax some of the worst-case assumptions underlying the theory.}, journal = {Mach. Learn.}, month = {6}, pages = {817–858}, numpages = {42}, keywords = {Safe artificial intelligence, Safe exploration, Model-based reinforcement learning, Robust Markov decision processes, Constrained Markov decision processes} }
+
+
+@InProceedings{SafeHardBarrier,
+  title = 	 {Enforcing Hard Constraints with Soft Barriers: Safe Reinforcement Learning in Unknown Stochastic Environments},
+  author =       {Wang, Yixuan and Zhan, Simon Sinong and Jiao, Ruochen and Wang, Zhilu and Jin, Wanxin and Yang, Zhuoran and Wang, Zhaoran and Huang, Chao and Zhu, Qi},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {36593--36604},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {7},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/wang23as/wang23as.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/wang23as.html},
+  abstract = 	 {It is quite challenging to ensure the safety of reinforcement learning (RL) agents in an unknown and stochastic environment under hard constraints that require the system state not to reach certain specified unsafe regions. Many popular safe RL methods such as those based on the Constrained Markov Decision Process (CMDP) paradigm formulate safety violations in a cost function and try to constrain the expectation of cumulative cost under a threshold. However, it is often difficult to effectively capture and enforce hard reachability-based safety constraints indirectly with such constraints on safety violation cost. In this work, we leverage the notion of barrier function to explicitly encode the hard safety chance constraints, and given that the environment is unknown, relax them to our design of <em>generative-model-based soft barrier functions</em>. Based on such soft barriers, we propose a novel safe RL approach with bi-level optimization that can jointly learn the unknown environment and optimize the control policy, while effectively avoiding the unsafe region with safety probability optimization. Experiments on a set of examples demonstrate that our approach can effectively enforce hard safety chance constraints and significantly outperform CMDP-based baseline methods in system safe rates measured via simulations.}
+}
+
+
+@inproceedings{SafeStable,
+ author = {Berkenkamp, Felix and Turchetta, Matteo and Schoellig, Angela and Krause, Andreas},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Safe Model-based Reinforcement Learning with Stability Guarantees},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2017/file/766ebcd59621e305170616ba3d3dac32-Paper.pdf},
+ volume = {30},
+ year = {2017}
+}
+
+@inproceedings{SafeStateSurvey,
+author = {Zhao, Weiye and He, Tairan and Chen, Rui and Wei, Tianhao and Liu, Changliu},
+title = {State-wise safe reinforcement learning: a survey},
+year = {2023},
+isbn = {978-1-956792-03-4},
+url = {https://doi.org/10.24963/ijcai.2023/763},
+doi = {10.24963/ijcai.2023/763},
+abstract = {Despite the tremendous success of Reinforcement Learning (RL) algorithms in simulation environments, applying RL to real-world applications still faces many challenges. A major concern is safety, in another word, constraint satisfaction. State-wise constraints are one of the most common constraints in real-world applications and one of the most challenging constraints in Safe RL. Enforcing state-wise constraints is necessary and essential to many challenging tasks such as autonomous driving, robot manipulation. This paper provides a comprehensive review of existing approaches that address state-wise constraints in RL. Under the framework of State-wise Constrained Markov Decision Process (SCMDP), we will discuss the connections, differences, and trade-offs of existing approaches in terms of (i) safety guarantee and scalability, (ii) safety and reward performance, and (iii) safety after convergence and during training. We also summarize limitations of current methods and discuss potential future directions.},
+booktitle = {Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence},
+articleno = {763},
+numpages = {9},
+location = {Macao, P.R.China},
+series = {IJCAI '23}
+}

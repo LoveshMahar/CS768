@@ -1,0 +1,1025 @@
+@inproceedings{gao2021simcse,
+   title={{SimCSE}: Simple Contrastive Learning of Sentence Embeddings},
+   author={Gao, Tianyu and Yao, Xingcheng and Chen, Danqi},
+   booktitle={Empirical Methods in Natural Language Processing (EMNLP)},
+   year={2021}
+}
+
+@article{kiros2015skip,
+  title={Skip-thought vectors},
+  author={Kiros, Ryan and Zhu, Yukun and Salakhutdinov, Russ R and Zemel, Richard and Urtasun, Raquel and Torralba, Antonio and Fidler, Sanja},
+  journal={Advances in neural information processing systems},
+  volume={28},
+  year={2015}
+}
+
+@inproceedings{hill-etal-2016-learning,
+    title = "Learning Distributed Representations of Sentences from Unlabelled Data",
+    author = "Hill, Felix  and
+      Cho, Kyunghyun  and
+      Korhonen, Anna",
+    booktitle = "Proceedings of the 2016 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2016",
+    address = "San Diego, California",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N16-1162",
+    doi = "10.18653/v1/N16-1162",
+    pages = "1367--1377",
+}
+
+@inproceedings{logeswaran2018efficient,
+  title={An efficient framework for learning sentence representations},
+  author={Logeswaran, Lajanugen and Lee, Honglak},
+  booktitle={International Conference on Learning Representations},
+  year={2018}
+}
+
+@inproceedings{pagliardini-etal-2018-unsupervised,
+    title = "Unsupervised Learning of Sentence Embeddings Using Compositional n-Gram Features",
+    author = "Pagliardini, Matteo  and
+      Gupta, Prakhar  and
+      Jaggi, Martin",
+    booktitle = "Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)",
+    month = jun,
+    year = "2018",
+    address = "New Orleans, Louisiana",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N18-1049",
+    doi = "10.18653/v1/N18-1049",
+    pages = "528--540",
+    abstract = "The recent tremendous success of unsupervised word embeddings in a multitude of applications raises the obvious question if similar methods could be derived to improve embeddings (i.e. semantic representations) of word sequences as well. We present a simple but efficient unsupervised objective to train distributed representations of sentences. Our method outperforms the state-of-the-art unsupervised models on most benchmark tasks, highlighting the robustness of the produced general-purpose sentence embeddings.",
+}
+
+@article{mikolov2013distributed,
+  title={Distributed representations of words and phrases and their compositionality},
+  author={Mikolov, Tomas and Sutskever, Ilya and Chen, Kai and Corrado, Greg S and Dean, Jeff},
+  journal={Advances in neural information processing systems},
+  volume={26},
+  year={2013}
+}
+
+@inproceedings{zhang-etal-2020-unsupervised,
+    title = "An Unsupervised Sentence Embedding Method by Mutual Information Maximization",
+    author = "Zhang, Yan  and
+      He, Ruidan  and
+      Liu, Zuozhu  and
+      Lim, Kwan Hui  and
+      Bing, Lidong",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.124",
+    doi = "10.18653/v1/2020.emnlp-main.124",
+    pages = "1601--1610",
+    abstract = "BERT is inefficient for sentence-pair tasks such as clustering or semantic search as it needs to evaluate combinatorially many sentence pairs which is very time-consuming. Sentence BERT (SBERT) attempted to solve this challenge by learning semantically meaningful representations of single sentences, such that similarity comparison can be easily accessed. However, SBERT is trained on corpus with high-quality labeled sentence pairs, which limits its application to tasks where labeled data is extremely scarce. In this paper, we propose a lightweight extension on top of BERT and a novel self-supervised learning objective based on mutual information maximization strategies to derive meaningful sentence embeddings in an unsupervised manner. Unlike SBERT, our method is not restricted by the availability of labeled data, such that it can be applied on different domain-specific corpus. Experimental results show that the proposed method significantly outperforms other unsupervised sentence embedding baselines on common semantic textual similarity (STS) tasks and downstream supervised tasks. It also outperforms SBERT in a setting where in-domain labeled data is not available, and achieves performance competitive with supervised methods on various tasks.",
+}
+
+@inproceedings{giorgi-etal-2021-declutr,
+    title = "{D}e{CLUTR}: Deep Contrastive Learning for Unsupervised Textual Representations",
+    author = "Giorgi, John  and
+      Nitski, Osvald  and
+      Wang, Bo  and
+      Bader, Gary",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.72",
+    doi = "10.18653/v1/2021.acl-long.72",
+    pages = "879--895",
+    abstract = "Sentence embeddings are an important component of many natural language processing (NLP) systems. Like word embeddings, sentence embeddings are typically learned on large text corpora and then transferred to various downstream tasks, such as clustering and retrieval. Unlike word embeddings, the highest performing solutions for learning sentence embeddings require labelled data, limiting their usefulness to languages and domains where labelled data is abundant. In this paper, we present DeCLUTR: Deep Contrastive Learning for Unsupervised Textual Representations. Inspired by recent advances in deep metric learning (DML), we carefully design a self-supervised objective for learning universal sentence embeddings that does not require labelled training data. When used to extend the pretraining of transformer-based language models, our approach closes the performance gap between unsupervised and supervised pretraining for universal sentence encoders. Importantly, our experiments suggest that the quality of the learned embeddings scale with both the number of trainable parameters and the amount of unlabelled training data. Our code and pretrained models are publicly available and can be easily adapted to new domains or used to embed unseen text.",
+}
+
+@article{wu2020clear,
+  title={Clear: Contrastive learning for sentence representation},
+  author={Wu, Zhuofeng and Wang, Sinong and Gu, Jiatao and Khabsa, Madian and Sun, Fei and Ma, Hao},
+  journal={arXiv preprint arXiv:2012.15466},
+  year={2020}
+}
+
+@article{meng2021coco,
+  title={Coco-lm: Correcting and contrasting text sequences for language model pretraining},
+  author={Meng, Yu and Xiong, Chenyan and Bajaj, Payal and Bennett, Paul and Han, Jiawei and Song, Xia and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021}
+}
+
+@inproceedings{carlsson2020semantic,
+  title={Semantic re-tuning with contrastive tension},
+  author={Carlsson, Fredrik and Gyllensten, Amaru Cuba and Gogoulou, Evangelia and Hellqvist, Erik Ylip{\"a}{\"a} and Sahlgren, Magnus},
+  booktitle={International Conference on Learning Representations},
+  year={2020}
+}
+
+@inproceedings{kim-etal-2021-self,
+    title = "Self-Guided Contrastive Learning for {BERT} Sentence Representations",
+    author = "Kim, Taeuk  and
+      Yoo, Kang Min  and
+      Lee, Sang-goo",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.197",
+    doi = "10.18653/v1/2021.acl-long.197",
+    pages = "2528--2540",
+    abstract = "Although BERT and its variants have reshaped the NLP landscape, it still remains unclear how best to derive sentence embeddings from such pre-trained Transformers. In this work, we propose a contrastive learning method that utilizes self-guidance for improving the quality of BERT sentence representations. Our method fine-tunes BERT in a self-supervised fashion, does not rely on data augmentation, and enables the usual [CLS] token embeddings to function as sentence vectors. Moreover, we redesign the contrastive learning objective (NT-Xent) and apply it to sentence representation learning. We demonstrate with extensive experiments that our approach is more effective than competitive baselines on diverse sentence-related tasks. We also show it is efficient at inference and robust to domain shifts.",
+}
+
+@inproceedings{yan-etal-2021-consert,
+    title = "{C}on{SERT}: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+    author = "Yan, Yuanmeng  and
+      Li, Rumei  and
+      Wang, Sirui  and
+      Zhang, Fuzheng  and
+      Wu, Wei  and
+      Xu, Weiran",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.393",
+    doi = "10.18653/v1/2021.acl-long.393",
+    pages = "5065--5075",
+    abstract = "Learning high-quality sentence representations benefits a wide range of natural language processing tasks. Though BERT-based pre-trained language models achieve high performance on many downstream tasks, the native derived sentence representations are proved to be collapsed and thus produce a poor performance on the semantic textual similarity (STS) tasks. In this paper, we present ConSERT, a Contrastive Framework for Self-Supervised SEntence Representation Transfer, that adopts contrastive learning to fine-tune BERT in an unsupervised and effective way. By making use of unlabeled texts, ConSERT solves the collapse issue of BERT-derived sentence representations and make them more applicable for downstream tasks. Experiments on STS datasets demonstrate that ConSERT achieves an 8{\%} relative improvement over the previous state-of-the-art, even comparable to the supervised SBERT-NLI. And when further incorporating NLI supervision, we achieve new state-of-the-art performance on STS tasks. Moreover, ConSERT obtains comparable results with only 1000 samples available, showing its robustness in data scarcity scenarios.",
+}
+
+@inproceedings{conneau-etal-2017-supervised,
+    title = "Supervised Learning of Universal Sentence Representations from Natural Language Inference Data",
+    author = {Conneau, Alexis  and
+      Kiela, Douwe  and
+      Schwenk, Holger  and
+      Barrault, Lo{\"\i}c  and
+      Bordes, Antoine},
+    booktitle = "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D17-1070",
+    doi = "10.18653/v1/D17-1070",
+    pages = "670--680",
+    abstract = "Many modern NLP systems rely on word embeddings, previously trained in an unsupervised manner on large corpora, as base features. Efforts to obtain embeddings for larger chunks of text, such as sentences, have however not been so successful. Several attempts at learning unsupervised representations of sentences have not reached satisfactory enough performance to be widely adopted. In this paper, we show how universal sentence representations trained using the supervised data of the Stanford Natural Language Inference datasets can consistently outperform unsupervised methods like SkipThought vectors on a wide range of transfer tasks. Much like how computer vision uses ImageNet to obtain features, which can then be transferred to other tasks, our work tends to indicate the suitability of natural language inference for transfer learning to other NLP tasks. Our encoder is publicly available.",
+}
+
+@inproceedings{cer-etal-2018-universal,
+    title = "Universal Sentence Encoder for {E}nglish",
+    author = "Cer, Daniel  and
+      Yang, Yinfei  and
+      Kong, Sheng-yi  and
+      Hua, Nan  and
+      Limtiaco, Nicole  and
+      St. John, Rhomni  and
+      Constant, Noah  and
+      Guajardo-Cespedes, Mario  and
+      Yuan, Steve  and
+      Tar, Chris  and
+      Strope, Brian  and
+      Kurzweil, Ray",
+    booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+    month = nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D18-2029",
+    doi = "10.18653/v1/D18-2029",
+    pages = "169--174",
+    abstract = "We present easy-to-use TensorFlow Hub sentence embedding models having good task transfer performance. Model variants allow for trade-offs between accuracy and compute resources. We report the relationship between model complexity, resources, and transfer performance. Comparisons are made with baselines without transfer learning and to baselines that incorporate word-level transfer. Transfer learning using sentence-level embeddings is shown to outperform models without transfer learning and often those that use only word-level transfer. We show good transfer task performance with minimal training data and obtain encouraging results on word embedding association tests (WEAT) of model bias.",
+}
+
+@inproceedings{reimers-gurevych-2019-sentence,
+    title = "Sentence-{BERT}: Sentence Embeddings using {S}iamese {BERT}-Networks",
+    author = "Reimers, Nils  and
+      Gurevych, Iryna",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1410",
+    doi = "10.18653/v1/D19-1410",
+    pages = "3982--3992",
+    abstract = "BERT (Devlin et al., 2018) and RoBERTa (Liu et al., 2019) has set a new state-of-the-art performance on sentence-pair regression tasks like semantic textual similarity (STS). However, it requires that both sentences are fed into the network, which causes a massive computational overhead: Finding the most similar pair in a collection of 10,000 sentences requires about 50 million inference computations ({\textasciitilde}65 hours) with BERT. The construction of BERT makes it unsuitable for semantic similarity search as well as for unsupervised tasks like clustering. In this publication, we present Sentence-BERT (SBERT), a modification of the pretrained BERT network that use siamese and triplet network structures to derive semantically meaningful sentence embeddings that can be compared using cosine-similarity. This reduces the effort for finding the most similar pair from 65 hours with BERT / RoBERTa to about 5 seconds with SBERT, while maintaining the accuracy from BERT. We evaluate SBERT and SRoBERTa on common STS tasks and transfer learning tasks, where it outperforms other state-of-the-art sentence embeddings methods.",
+}
+
+@inproceedings{wieting-etal-2020-bilingual,
+    title = "A Bilingual Generative Transformer for Semantic Sentence Embedding",
+    author = "Wieting, John  and
+      Neubig, Graham  and
+      Berg-Kirkpatrick, Taylor",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.122",
+    doi = "10.18653/v1/2020.emnlp-main.122",
+    pages = "1581--1594",
+    abstract = "Semantic sentence embedding models encode natural language sentences into vectors, such that closeness in embedding space indicates closeness in the semantics between the sentences. Bilingual data offers a useful signal for learning such embeddings: properties shared by both sentences in a translation pair are likely semantic, while divergent properties are likely stylistic or language-specific. We propose a deep latent variable model that attempts to perform source separation on parallel sentences, isolating what they have in common in a latent semantic vector, and explaining what is left over with language-specific latent vectors. Our proposed approach differs from past work on semantic sentence encoding in two ways. First, by using a variational probabilistic framework, we introduce priors that encourage source separation, and can use our model{'}s posterior to predict sentence embeddings for monolingual data at test time. Second, we use high-capacity transformers as both data generating distributions and inference networks {--} contrasting with most past work on sentence embeddings. In experiments, our approach substantially outperforms the state-of-the-art on a standard suite of unsupervised semantic similarity evaluations. Further, we demonstrate that our approach yields the largest gains on more difficult subsets of these evaluations where simple word overlap is not a good indicator of similarity.",
+}
+
+@inproceedings{wieting-gimpel-2018-paranmt,
+    title = "{P}ara{NMT}-50{M}: Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations",
+    author = "Wieting, John  and
+      Gimpel, Kevin",
+    booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2018",
+    address = "Melbourne, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P18-1042",
+    doi = "10.18653/v1/P18-1042",
+    pages = "451--462",
+    abstract = "We describe ParaNMT-50M, a dataset of more than 50 million English-English sentential paraphrase pairs. We generated the pairs automatically by using neural machine translation to translate the non-English side of a large parallel corpus, following Wieting et al. (2017). Our hope is that ParaNMT-50M can be a valuable resource for paraphrase generation and can provide a rich source of semantic knowledge to improve downstream natural language understanding tasks. To show its utility, we use ParaNMT-50M to train paraphrastic sentence embeddings that outperform all supervised systems on every SemEval semantic textual similarity competition, in addition to showing how it can be used for paraphrase generation.",
+}
+
+@inproceedings{li-etal-2020-sentence,
+    title = "On the Sentence Embeddings from Pre-trained Language Models",
+    author = "Li, Bohan  and
+      Zhou, Hao  and
+      He, Junxian  and
+      Wang, Mingxuan  and
+      Yang, Yiming  and
+      Li, Lei",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.733",
+    doi = "10.18653/v1/2020.emnlp-main.733",
+    pages = "9119--9130",
+    abstract = "Pre-trained contextual representations like BERT have achieved great success in natural language processing. However, the sentence embeddings from the pre-trained language models without fine-tuning have been found to poorly capture semantic meaning of sentences. In this paper, we argue that the semantic information in the BERT embeddings is not fully exploited. We first reveal the theoretical connection between the masked language model pre-training objective and the semantic similarity task theoretically, and then analyze the BERT sentence embeddings empirically. We find that BERT always induces a non-smooth anisotropic semantic space of sentences, which harms its performance of semantic similarity. To address this issue, we propose to transform the anisotropic sentence embedding distribution to a smooth and isotropic Gaussian distribution through normalizing flows that are learned with an unsupervised objective. Experimental results show that our proposed BERT-flow method obtains significant performance gains over the state-of-the-art sentence embeddings on a variety of semantic textual similarity tasks. The code is available at \url{https://github.com/bohanli/BERT-flow}.",
+}
+
+@article{su2021whitening,
+  title={Whitening sentence representations for better semantics and faster retrieval},
+  author={Su, Jianlin and Cao, Jiarun and Liu, Weijie and Ou, Yangyiwen},
+  journal={arXiv preprint arXiv:2103.15316},
+  year={2021}
+}
+
+@inproceedings{huang-etal-2021-whiteningbert-easy,
+    title = "{W}hitening{BERT}: An Easy Unsupervised Sentence Embedding Approach",
+    author = "Huang, Junjie  and
+      Tang, Duyu  and
+      Zhong, Wanjun  and
+      Lu, Shuai  and
+      Shou, Linjun  and
+      Gong, Ming  and
+      Jiang, Daxin  and
+      Duan, Nan",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.23",
+    doi = "10.18653/v1/2021.findings-emnlp.23",
+    pages = "238--244",
+    abstract = "Producing the embedding of a sentence in anunsupervised way is valuable to natural language matching and retrieval problems in practice. In this work, we conduct a thorough examination of pretrained model based unsupervised sentence embeddings. We study on fourpretrained models and conduct massive experiments on seven datasets regarding sentence semantics. We have three main findings. First, averaging all tokens is better than only using [CLS] vector. Second, combining both topand bottom layers is better than only using toplayers. Lastly, an easy whitening-based vector normalization strategy with less than 10 linesof code consistently boosts the performance. The whole project including codes and data is publicly available at \url{https://github.com/Jun-jie-Huang/WhiteningBERT}.",
+}
+
+@InProceedings{pmlr-v119-chen20j,
+  title = 	 {A Simple Framework for Contrastive Learning of Visual Representations},
+  author =       {Chen, Ting and Kornblith, Simon and Norouzi, Mohammad and Hinton, Geoffrey},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {1597--1607},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--18 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v119/chen20j/chen20j.pdf},
+  url = 	 {https://proceedings.mlr.press/v119/chen20j.html}
+}
+
+@InProceedings{MoCo,
+author = {He, Kaiming and Fan, Haoqi and Wu, Yuxin and Xie, Saining and Girshick, Ross},
+title = {Momentum Contrast for Unsupervised Visual Representation Learning},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2020}
+}
+
+@InProceedings{tian2019contrastive,
+author="Tian, Yonglong
+and Krishnan, Dilip
+and Isola, Phillip",
+editor="Vedaldi, Andrea
+and Bischof, Horst
+and Brox, Thomas
+and Frahm, Jan-Michael",
+title="Contrastive Multiview Coding",
+booktitle="Computer Vision -- ECCV 2020",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="776--794",
+abstract="Humans view the world through many sensory channels, e.g., the long-wavelength light channel, viewed by the left eye, or the high-frequency vibrations channel, heard by the right ear. Each view is noisy and incomplete, but important factors, such as physics, geometry, and semantics, tend to be shared between all views (e.g., a ``dog'' can be seen, heard, and felt). We investigate the classic hypothesis that a powerful representation is one that models view-invariant factors. We study this hypothesis under the framework of multiview contrastive learning, where we learn a representation that aims to maximize mutual information between different views of the same scene but is otherwise compact. Our approach scales to any number of views, and is view-agnostic. We analyze key properties of the approach that make it work, finding that the contrastive loss outperforms a popular alternative based on cross-view prediction, and that the more views we learn from, the better the resulting representation captures underlying scene semantics. Code is available at: http://github.com/HobbitLong/CMC/.",
+isbn="978-3-030-58621-8"
+}
+
+@inproceedings{tian2020makes,
+  title={What makes for good views for contrastive learning},
+  author={Tian, Yonglong and Sun, Chen and Poole, Ben and Krishnan, Dilip and Schmid, Cordelia and Isola, Phillip},
+  booktitle={NeurIPS},
+  year={2020}
+}
+
+@inproceedings{SupCon,
+ author = {Khosla, Prannay and Teterwak, Piotr and Wang, Chen and Sarna, Aaron and Tian, Yonglong and Isola, Phillip and Maschinot, Aaron and Liu, Ce and Krishnan, Dilip},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+ pages = {18661--18673},
+ publisher = {Curran Associates, Inc.},
+ title = {Supervised Contrastive Learning},
+ url = {https://proceedings.neurips.cc/paper/2020/file/d89a66c7c80a29b1bdbab0f2a1a94af8-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}
+
+@inproceedings{CLIP,
+  author    = {Alec Radford and
+               Jong Wook Kim and
+               Chris Hallacy and
+               Aditya Ramesh and
+               Gabriel Goh and
+               Sandhini Agarwal and
+               Girish Sastry and
+               Amanda Askell and
+               Pamela Mishkin and
+               Jack Clark and
+               Gretchen Krueger and
+               Ilya Sutskever},
+  title     = {Learning Transferable Visual Models From Natural Language Supervision},
+  booktitle = {Proceedings of the 38th International Conference on Machine Learning,
+               {ICML} 2021, 18-24 July 2021, Virtual Event},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {139},
+  pages     = {8748--8763},
+  publisher = {{PMLR}},
+  year      = {2021}
+}
+
+@article{SLIP,
+  author    = {Norman Mu and
+               Alexander Kirillov and
+               David A. Wagner and
+               Saining Xie},
+  title     = {{SLIP:} Self-supervision meets Language-Image Pre-training},
+  journal   = {CoRR},
+  volume    = {abs/2112.12750},
+  year      = {2021},
+}
+
+@article{UniT,
+  author    = {Ronghang Hu and
+               Amanpreet Singh},
+  title     = {Transformer is All You Need: Multimodal Multitask Learning with a
+               Unified Transformer},
+  journal   = {CoRR},
+  volume    = {abs/2102.10772},
+  year      = {2021}
+}
+
+@inproceedings{alwassel_2020_xdc,
+  title={Self-Supervised Learning by Cross-Modal Audio-Video Clustering},
+  author={Alwassel, Humam and Mahajan, Dhruv and Korbar, Bruno and 
+          Torresani, Lorenzo and Ghanem, Bernard and Tran, Du},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2020}
+}
+
+
+@article{yang2019xlnet,
+  title={Xlnet: Generalized autoregressive pretraining for language understanding},
+  author={Yang, Zhilin and Dai, Zihang and Yang, Yiming and Carbonell, Jaime and Salakhutdinov, Russ R and Le, Quoc V},
+  journal={Advances in neural information processing systems},
+  volume={32},
+  year={2019}
+}
+
+@inproceedings{reimers-gurevych-2019-sentence,
+    title = "Sentence-{BERT}: Sentence Embeddings using {S}iamese {BERT}-Networks",
+    author = "Reimers, Nils  and
+      Gurevych, Iryna",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1410",
+    doi = "10.18653/v1/D19-1410",
+    pages = "3982--3992",
+    abstract = "BERT (Devlin et al., 2018) and RoBERTa (Liu et al., 2019) has set a new state-of-the-art performance on sentence-pair regression tasks like semantic textual similarity (STS). However, it requires that both sentences are fed into the network, which causes a massive computational overhead: Finding the most similar pair in a collection of 10,000 sentences requires about 50 million inference computations ({\textasciitilde}65 hours) with BERT. The construction of BERT makes it unsuitable for semantic similarity search as well as for unsupervised tasks like clustering. In this publication, we present Sentence-BERT (SBERT), a modification of the pretrained BERT network that use siamese and triplet network structures to derive semantically meaningful sentence embeddings that can be compared using cosine-similarity. This reduces the effort for finding the most similar pair from 65 hours with BERT / RoBERTa to about 5 seconds with SBERT, while maintaining the accuracy from BERT. We evaluate SBERT and SRoBERTa on common STS tasks and transfer learning tasks, where it outperforms other state-of-the-art sentence embeddings methods.",
+}
+
+@inproceedings{cao-etal-2021-pause,
+    title = "{PAUSE}: Positive and Annealed Unlabeled Sentence Embedding",
+    author = "Cao, Lele  and
+      Larsson, Emil  and
+      von Ehrenheim, Vilhelm  and
+      Cavalcanti Rocha, Dhiana Deva  and
+      Martin, Anna  and
+      Horn, Sonja",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.791",
+    doi = "10.18653/v1/2021.emnlp-main.791",
+    pages = "10096--10107",
+    abstract = "Sentence embedding refers to a set of effective and versatile techniques for converting raw text into numerical vector representations that can be used in a wide range of natural language processing (NLP) applications. The majority of these techniques are either supervised or unsupervised. Compared to the unsupervised methods, the supervised ones make less assumptions about optimization objectives and usually achieve better results. However, the training requires a large amount of labeled sentence pairs, which is not available in many industrial scenarios. To that end, we propose a generic and end-to-end approach {--} PAUSE (Positive and Annealed Unlabeled Sentence Embedding), capable of learning high-quality sentence embeddings from a partially labeled dataset. We experimentally show that PAUSE achieves, and sometimes surpasses, state-of-the-art results using only a small fraction of labeled sentence pairs on various benchmark tasks. When applied to a real industrial use case where labeled samples are scarce, PAUSE encourages us to extend our dataset without the burden of extensive manual annotation work.",
+}
+
+@inproceedings{ma-etal-2015-dependency,
+    title = "Dependency-based Convolutional Neural Networks for Sentence Embedding",
+    author = "Ma, Mingbo  and
+      Huang, Liang  and
+      Zhou, Bowen  and
+      Xiang, Bing",
+    booktitle = "Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)",
+    month = jul,
+    year = "2015",
+    address = "Beijing, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P15-2029",
+    doi = "10.3115/v1/P15-2029",
+    pages = "174--179",
+}
+@inproceedings{goswami-etal-2021-cross,
+    title = "Cross-lingual Sentence Embedding using Multi-Task Learning",
+    author = "Goswami, Koustava  and
+      Dutta, Sourav  and
+      Assem, Haytham  and
+      Fransen, Theodorus  and
+      McCrae, John P.",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.716",
+    doi = "10.18653/v1/2021.emnlp-main.716",
+    pages = "9099--9113",
+    abstract = "Multilingual sentence embeddings capture rich semantic information not only for measuring similarity between texts but also for catering to a broad range of downstream cross-lingual NLP tasks. State-of-the-art multilingual sentence embedding models require large parallel corpora to learn efficiently, which confines the scope of these models. In this paper, we propose a novel sentence embedding framework based on an unsupervised loss function for generating effective multilingual sentence embeddings, eliminating the need for parallel corpora. We capture semantic similarity and relatedness between sentences using a multi-task loss function for training a dual encoder model mapping different languages onto the same vector space. We demonstrate the efficacy of an unsupervised as well as a weakly supervised variant of our framework on STS, BUCC and Tatoeba benchmark tasks. The proposed unsupervised sentence embedding framework outperforms even supervised state-of-the-art methods for certain under-resourced languages on the Tatoeba dataset and on a monolingual benchmark. Further, we show enhanced zero-shot learning capabilities for more than 30 languages, with the model being trained on only 13 languages. Our model can be extended to a wide range of languages from any language family, as it overcomes the requirement of parallel corpora for training.",
+}
+
+@inproceedings{reimers-gurevych-2020-making,
+    title = "Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation",
+    author = "Reimers, Nils  and
+      Gurevych, Iryna",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.365",
+    doi = "10.18653/v1/2020.emnlp-main.365",
+    pages = "4512--4525",
+    abstract = "We present an easy and efficient method to extend existing sentence embedding models to new languages. This allows to create multilingual versions from previously monolingual models. The training is based on the idea that a translated sentence should be mapped to the same location in the vector space as the original sentence. We use the original (monolingual) model to generate sentence embeddings for the source language and then train a new system on translated sentences to mimic the original model. Compared to other methods for training multilingual sentence embeddings, this approach has several advantages: It is easy to extend existing models with relatively few samples to new languages, it is easier to ensure desired properties for the vector space, and the hardware requirements for training are lower. We demonstrate the effectiveness of our approach for 50+ languages from various language families. Code to extend sentence embeddings models to more than 400 languages is publicly available.",
+}
+
+@inproceedings{huang-etal-2021-disentangling,
+    title = "Disentangling Semantics and Syntax in Sentence Embeddings with Pre-trained Language Models",
+    author = "Huang, James Y.  and
+      Huang, Kuan-Hao  and
+      Chang, Kai-Wei",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.108",
+    doi = "10.18653/v1/2021.naacl-main.108",
+    pages = "1372--1379",
+    abstract = "Pre-trained language models have achieved huge success on a wide range of NLP tasks. However, contextual representations from pre-trained models contain entangled semantic and syntactic information, and therefore cannot be directly used to derive useful semantic sentence embeddings for some tasks. Paraphrase pairs offer an effective way of learning the distinction between semantics and syntax, as they naturally share semantics and often vary in syntax. In this work, we present ParaBART, a semantic sentence embedding model that learns to disentangle semantics and syntax in sentence embeddings obtained by pre-trained language models. ParaBART is trained to perform syntax-guided paraphrasing, based on a source sentence that shares semantics with the target paraphrase, and a parse tree that specifies the target syntax. In this way, ParaBART learns disentangled semantic and syntactic representations from their respective inputs with separate encoders. Experiments in English show that ParaBART outperforms state-of-the-art sentence embedding models on unsupervised semantic similarity tasks. Additionally, we show that our approach can effectively remove syntactic information from semantic sentence embeddings, leading to better robustness against syntactic variation on downstream semantic tasks.",
+}
+
+@inproceedings{tsukagoshi-etal-2021-defsent,
+    title = "{D}ef{S}ent: Sentence Embeddings using Definition Sentences",
+    author = "Tsukagoshi, Hayato  and
+      Sasano, Ryohei  and
+      Takeda, Koichi",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-short.52",
+    doi = "10.18653/v1/2021.acl-short.52",
+    pages = "411--418",
+    abstract = "Sentence embedding methods using natural language inference (NLI) datasets have been successfully applied to various tasks. However, these methods are only available for limited languages due to relying heavily on the large NLI datasets. In this paper, we propose DefSent, a sentence embedding method that uses definition sentences from a word dictionary, which performs comparably on unsupervised semantics textual similarity (STS) tasks and slightly better on SentEval tasks than conventional methods. Since dictionaries are available for many languages, DefSent is more broadly applicable than methods using NLI datasets without constructing additional datasets. We demonstrate that DefSent performs comparably on unsupervised semantics textual similarity (STS) tasks and slightly better on SentEval tasks to the methods using large NLI datasets. Our code is publicly available at https://github.com/hpprc/defsent.",
+}
+
+@inproceedings{wang-etal-2021-tsdae-using,
+    title = "{TSDAE}: Using Transformer-based Sequential Denoising Auto-Encoderfor Unsupervised Sentence Embedding Learning",
+    author = "Wang, Kexin  and
+      Reimers, Nils  and
+      Gurevych, Iryna",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.59",
+    doi = "10.18653/v1/2021.findings-emnlp.59",
+    pages = "671--688",
+    abstract = "Learning sentence embeddings often requires a large amount of labeled data. However, for most tasks and domains, labeled data is seldom available and creating it is expensive. In this work, we present a new state-of-the-art unsupervised method based on pre-trained Transformers and Sequential Denoising Auto-Encoder (TSDAE) which outperforms previous approaches by up to 6.4 points. It can achieve up to 93.1{\%} of the performance of in-domain supervised approaches. Further, we show that TSDAE is a strong domain adaptation and pre-training method for sentence embeddings, significantly outperforming other approaches like Masked Language Model. A crucial shortcoming of previous studies is the narrow evaluation: Most work mainly evaluates on the single task of Semantic Textual Similarity (STS), which does not require any domain knowledge. It is unclear if these proposed methods generalize to other domains and tasks. We fill this gap and evaluate TSDAE and other recent approaches on four different datasets from heterogeneous domains.",
+}
+
+
+@inproceedings{yu-jiang-2016-learning,
+    title = "Learning Sentence Embeddings with Auxiliary Tasks for Cross-Domain Sentiment Classification",
+    author = "Yu, Jianfei  and
+      Jiang, Jing",
+    booktitle = "Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2016",
+    address = "Austin, Texas",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D16-1023",
+    doi = "10.18653/v1/D16-1023",
+    pages = "236--246",
+}
+
+@inproceedings{yang-etal-2019-parameter,
+    title = "Parameter-free Sentence Embedding via Orthogonal Basis",
+    author = "Yang, Ziyi  and
+      Zhu, Chenguang  and
+      Chen, Weizhu",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1059",
+    doi = "10.18653/v1/D19-1059",
+    pages = "638--648",
+    abstract = "We propose a simple and robust non-parameterized approach for building sentence representations. Inspired by the Gram-Schmidt Process in geometric theory, we build an orthogonal basis of the subspace spanned by a word and its surrounding context in a sentence. We model the semantic meaning of a word in a sentence based on two aspects. One is its relatedness to the word vector subspace already spanned by its contextual words. The other is the word{'}s novel semantic meaning which shall be introduced as a new basis vector perpendicular to this existing subspace. Following this motivation, we develop an innovative method based on orthogonal basis to combine pre-trained word embeddings into sentence representations. This approach requires zero parameters, along with efficient inference performance. We evaluate our approach on 11 downstream NLP tasks. Our model shows superior performance compared with non-parameterized alternatives and it is competitive to other approaches relying on either large amounts of labelled data or prolonged training time.",
+}
+
+@inproceedings{wieting-etal-2017-learning,
+    title = "Learning Paraphrastic Sentence Embeddings from Back-Translated Bitext",
+    author = "Wieting, John  and
+      Mallinson, Jonathan  and
+      Gimpel, Kevin",
+    booktitle = "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D17-1026",
+    doi = "10.18653/v1/D17-1026",
+    pages = "274--285",
+    abstract = "We consider the problem of learning general-purpose, paraphrastic sentence embeddings in the setting of Wieting et al. (2016b). We use neural machine translation to generate sentential paraphrases via back-translation of bilingual sentence pairs. We evaluate the paraphrase pairs by their ability to serve as training data for learning paraphrastic sentence embeddings. We find that the data quality is stronger than prior work based on bitext and on par with manually-written English paraphrase pairs, with the advantage that our approach can scale up to generate large training sets for many languages and domains. We experiment with several language pairs and data sources, and develop a variety of data filtering techniques. In the process, we explore how neural machine translation output differs from human-written sentences, finding clear differences in length, the amount of repetition, and the use of rare words.",
+}
+
+@inproceedings{chen-etal-2018-enhancing,
+    title = "Enhancing Sentence Embedding with Generalized Pooling",
+    author = "Chen, Qian  and
+      Ling, Zhen-Hua  and
+      Zhu, Xiaodan",
+    booktitle = "Proceedings of the 27th International Conference on Computational Linguistics",
+    month = aug,
+    year = "2018",
+    address = "Santa Fe, New Mexico, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/C18-1154",
+    pages = "1815--1826",
+    abstract = "Pooling is an essential component of a wide variety of sentence representation and embedding models. This paper explores generalized pooling methods to enhance sentence embedding. We propose vector-based multi-head attention that includes the widely used max pooling, mean pooling, and scalar self-attention as special cases. The model benefits from properly designed penalization terms to reduce redundancy in multi-head attention. We evaluate the proposed model on three different tasks: natural language inference (NLI), author profiling, and sentiment classification. The experiments show that the proposed model achieves significant improvement over strong sentence-encoding-based methods, resulting in state-of-the-art performances on four datasets. The proposed approach can be easily implemented for more problems than we discuss in this paper.",
+}
+@inproceedings{almarwani-etal-2019-efficient,
+    title = "Efficient Sentence Embedding using Discrete Cosine Transform",
+    author = "Almarwani, Nada  and
+      Aldarmaki, Hanan  and
+      Diab, Mona",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1380",
+    doi = "10.18653/v1/D19-1380",
+    pages = "3672--3678",
+    abstract = "Vector averaging remains one of the most popular sentence embedding methods in spite of its obvious disregard for syntactic structure. While more complex sequential or convolutional networks potentially yield superior classification performance, the improvements in classification accuracy are typically mediocre compared to the simple vector averaging. As an efficient alternative, we propose the use of discrete cosine transform (DCT) to compress word sequences in an order-preserving manner. The lower order DCT coefficients represent the overall feature patterns in sentences, which results in suitable embeddings for tasks that could benefit from syntactic features. Our results in semantic probing tasks demonstrate that DCT embeddings indeed preserve more syntactic information compared with vector averaging. With practically equivalent complexity, the model yields better overall performance in downstream classification tasks that correlate with syntactic features, which illustrates the capacity of DCT to preserve word order information.",
+}
+
+@inproceedings{liu-etal-2021-dialoguecse,
+    title = "{D}ialogue{CSE}: Dialogue-based Contrastive Learning of Sentence Embeddings",
+    author = "Liu, Che  and
+      Wang, Rui  and
+      Liu, Jinghua  and
+      Sun, Jian  and
+      Huang, Fei  and
+      Si, Luo",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.185",
+    doi = "10.18653/v1/2021.emnlp-main.185",
+    pages = "2396--2406",
+    abstract = "Learning sentence embeddings from dialogues has drawn increasing attention due to its low annotation cost and high domain adaptability. Conventional approaches employ the siamese-network for this task, which obtains the sentence embeddings through modeling the context-response semantic relevance by applying a feed-forward network on top of the sentence encoders. However, as the semantic textual similarity is commonly measured through the element-wise distance metrics (e.g. cosine and L2 distance), such architecture yields a large gap between training and evaluating. In this paper, we propose DialogueCSE, a dialogue-based contrastive learning approach to tackle this issue. DialogueCSE first introduces a novel matching-guided embedding (MGE) mechanism, which generates a context-aware embedding for each candidate response embedding (i.e. the context-free embedding) according to the guidance of the multi-turn context-response matching matrices. Then it pairs each context-aware embedding with its corresponding context-free embedding and finally minimizes the contrastive loss across all pairs. We evaluate our model on three multi-turn dialogue datasets: the Microsoft Dialogue Corpus, the Jing Dong Dialogue Corpus, and the E-commerce Dialogue Corpus. Evaluation results show that our approach significantly outperforms the baselines across all three datasets in terms of MAP and Spearman{'}s correlation measures, demonstrating its effectiveness. Further quantitative experiments show that our approach achieves better performance when leveraging more dialogue context and remains robust when less training data is provided.",
+}
+
+
+@inproceedings{poerner-etal-2020-sentence,
+    title = "Sentence Meta-Embeddings for Unsupervised Semantic Textual Similarity",
+    author = {Poerner, Nina  and
+      Waltinger, Ulli  and
+      Sch{\"u}tze, Hinrich},
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.628",
+    doi = "10.18653/v1/2020.acl-main.628",
+    pages = "7027--7034",
+    abstract = {We address the task of unsupervised Semantic Textual Similarity (STS) by ensembling diverse pre-trained sentence encoders into sentence meta-embeddings. We apply, extend and evaluate different meta-embedding methods from the word embedding literature at the sentence level, including dimensionality reduction (Yin and Sch{\"u}tze, 2016), generalized Canonical Correlation Analysis (Rastogi et al., 2015) and cross-view auto-encoders (Bollegala and Bao, 2018). Our sentence meta-embeddings set a new unsupervised State of The Art (SoTA) on the STS Benchmark and on the STS12-STS16 datasets, with gains of between 3.7{\%} and 6.4{\%} Pearson{'}s r over single-source systems.},
+}
+
+@inproceedings{kayal-tsatsaronis-2019-eigensent,
+    title = "{E}igen{S}ent: Spectral sentence embeddings using higher-order Dynamic Mode Decomposition",
+    author = "Kayal, Subhradeep  and
+      Tsatsaronis, George",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1445",
+    doi = "10.18653/v1/P19-1445",
+    pages = "4536--4546",
+    abstract = "Distributed representation of words, or word embeddings, have motivated methods for calculating semantic representations of word sequences such as phrases, sentences and paragraphs. Most of the existing methods to do so either use algorithms to learn such representations, or improve on calculating weighted averages of the word vectors. In this work, we experiment with spectral methods of signal representation and summarization as mechanisms for constructing such word-sequence embeddings in an unsupervised fashion. In particular, we explore an algorithm rooted in fluid-dynamics, known as higher-order Dynamic Mode Decomposition, which is designed to capture the eigenfrequencies, and hence the fundamental transition dynamics, of periodic and quasi-periodic systems. It is empirically observed that this approach, which we call EigenSent, can summarize transitions in a sequence of words and generate an embedding that can represent well the sequence itself. To the best of the authors{'} knowledge, this is the first application of a spectral decomposition and signal summarization technique on text, to create sentence embeddings. We test the efficacy of this algorithm in creating sentence embeddings on three public datasets, where it performs appreciably well. Moreover it is also shown that, due to the positive combination of their complementary properties, concatenating the embeddings generated by EigenSent with simple word vector averaging achieves state-of-the-art results.",
+}
+@inproceedings{kayal-2021-unsupervised,
+    title = "Unsupervised Sentence-embeddings by Manifold Approximation and Projection",
+    author = "Kayal, Subhradeep",
+    booktitle = "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
+    month = apr,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.eacl-main.1",
+    doi = "10.18653/v1/2021.eacl-main.1",
+    pages = "1--11",
+    abstract = "The concept of unsupervised universal sentence encoders has gained traction recently, wherein pre-trained models generate effective task-agnostic fixed-dimensional representations for phrases, sentences and paragraphs. Such methods are of varying complexity, from simple weighted-averages of word vectors to complex language-models based on bidirectional transformers. In this work we propose a novel technique to generate sentence-embeddings in an unsupervised fashion by projecting the sentences onto a fixed-dimensional manifold with the objective of preserving local neighbourhoods in the original space. To delineate such neighbourhoods we experiment with several set-distance metrics, including the recently proposed Word Mover{'}s distance, while the fixed-dimensional projection is achieved by employing a scalable and efficient manifold approximation method rooted in topological data analysis. We test our approach, which we term EMAP or Embeddings by Manifold Approximation and Projection, on six publicly available text-classification datasets of varying size and complexity. Empirical results show that our method consistently performs similar to or better than several alternative state-of-the-art approaches.",
+}
+
+@inproceedings{panayotov2015librispeech,
+  title={Librispeech: an asr corpus based on public domain audio books},
+  author={Panayotov, Vassil and Chen, Guoguo and Povey, Daniel and Khudanpur, Sanjeev},
+  booktitle={2015 IEEE international conference on acoustics, speech and signal processing (ICASSP)},
+  pages={5206--5210},
+  year={2015},
+  organization={IEEE}
+}
+
+@article{gong2021ssast,
+  title={SSAST: Self-Supervised Audio Spectrogram Transformer},
+  author={Gong, Yuan and Lai, Cheng-I Jeff and Chung, Yu-An and Glass, James},
+  journal={arXiv preprint arXiv:2110.09784},
+  year={2021}
+}
+
+@article{lu2021fpt,
+  title={Pretrained Transformers as Universal Computation Engines},
+  author={Kevin Lu and Aditya Grover and Pieter Abbeel and Igor Mordatch},
+  journal={arXiv preprint arXiv:2103.05247},
+  year={2021}
+}
+
+@inproceedings{wang2020hypersphere,
+  title={Understanding Contrastive Representation Learning through Alignment and Uniformity on the Hypersphere},
+  author={Wang, Tongzhou and Isola, Phillip},
+  booktitle={International Conference on Machine Learning},
+  organization={PMLR},
+  pages={9929--9939},
+  year={2020}
+}
+
+@inproceedings{pang2005seeing,
+  title={Seeing stars: exploiting class relationships for sentiment categorization with respect to rating scales},
+  author={Pang, Bo and Lee, Lillian},
+  booktitle={Proceedings of the 43rd Annual Meeting on Association for Computational Linguistics},
+  pages={115--124},
+  year={2005}
+}
+
+@inproceedings{hu2004mining,
+  title={Mining and summarizing customer reviews},
+  author={Hu, Minqing and Liu, Bing},
+  booktitle={Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining},
+  pages={168--177},
+  year={2004}
+}
+
+@inproceedings{pang2004sentimental,
+  title={A sentimental education: sentiment analysis using subjectivity summarization based on minimum cuts},
+  author={Pang, Bo and Lee, Lillian},
+  booktitle={Proceedings of the 42nd Annual Meeting on Association for Computational Linguistics},
+  pages={271--es},
+  year={2004}
+}
+
+@article{wiebe2005annotating,
+  title={Annotating expressions of opinions and emotions in language},
+  author={Wiebe, Janyce and Wilson, Theresa and Cardie, Claire},
+  journal={Language resources and evaluation},
+  volume={39},
+  number={2},
+  pages={165--210},
+  year={2005},
+  publisher={Springer}
+}
+
+@inproceedings{socher2013recursive,
+  title={Recursive deep models for semantic compositionality over a sentiment treebank},
+  author={Socher, Richard and Perelygin, Alex and Wu, Jean and Chuang, Jason and Manning, Christopher D and Ng, Andrew Y and Potts, Christopher},
+  booktitle={Proceedings of the 2013 conference on empirical methods in natural language processing},
+  pages={1631--1642},
+  year={2013}
+}
+
+@article{warstadt2019neural,
+  title={Neural Network Acceptability Judgments},
+  author={Warstadt, Alex and Singh, Amanpreet and Bowman, Samuel R},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={7},
+  year={2019}
+}
+
+@inproceedings{dolan2005automatically,
+  title={Automatically constructing a corpus of sentential paraphrases},
+  author={Dolan, William B and Brockett, Chris},
+  booktitle={Proceedings of the Third International Workshop on Paraphrasing (IWP2005)},
+  year={2005}
+}
+
+
+@inproceedings{
+dosovitskiy2021an,
+title={An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
+author={Alexey Dosovitskiy and Lucas Beyer and Alexander Kolesnikov and Dirk Weissenborn and Xiaohua Zhai and Thomas Unterthiner and Mostafa Dehghani and Matthias Minderer and Georg Heigold and Sylvain Gelly and Jakob Uszkoreit and Neil Houlsby},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=YicbFdNTTy}
+}
+
+@inproceedings{henaff2020data,
+  title={Data-efficient image recognition with contrastive predictive coding},
+  author={Henaff, Olivier},
+  booktitle={International Conference on Machine Learning},
+  pages={4182--4192},
+  year={2020},
+  organization={PMLR}
+}
+
+@inproceedings{chopra2005learning,
+  title={Learning a similarity metric discriminatively, with application to face verification},
+  author={Chopra, Sumit and Hadsell, Raia and LeCun, Yann},
+  booktitle={2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)},
+  volume={1},
+  pages={539--546},
+  year={2005},
+  organization={IEEE}
+}
+
+@article{xiong2020loco,
+  title={Loco: Local contrastive representation learning},
+  author={Xiong, Yuwen and Ren, Mengye and Urtasun, Raquel},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={11142--11153},
+  year={2020}
+}
+
+@inproceedings{wu2018unsupervised,
+  title={Unsupervised Feature Learning via Non-Parametric Instance Discrimination},
+  author={Wu, Zhirong and Xiong, Yuanjun and Stella, X Yu and Lin, Dahua},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  year={2018}
+}
+
+@inproceedings{Jian2022LMSupCon,
+    title = "Contrastive Learning for Prompt-based Few-shot Language Learners",
+    author = "Jian, Yiren  and
+      Gao, Chongyang  and
+      Vosoughi, Soroush",
+    booktitle = "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.naacl-main.408",
+    pages = "5577--5587",
+    abstract = "The impressive performance of GPT-3 using natural language prompts and in-context learning has inspired work on better fine-tuning of moderately-sized models under this paradigm. Following this line of work, we present a contrastive learning framework that clusters inputs from the same class for better generality of models trained with only limited examples. Specifically, we propose a supervised contrastive framework that clusters inputs from the same class under different augmented {``}views{''} and repel the ones from different classes. We create different {``}views{''} of an example by appending it with different language prompts and contextual demonstrations. Combining a contrastive loss with the standard masked language modeling (MLM) loss in prompt-based few-shot learners, the experimental results show that our method can improve over the state-of-the-art methods in a diverse set of 15 language tasks. Our framework makes minimal assumptions on the task or the base model, and can be applied to many recent methods with little modification.",
+}
+
+@inproceedings{qqp,
+  title={https://www.quora.com/q/quoradata/},
+  author={QQP},
+  booktitle={Quora},
+  year={2022}
+}
+
+@inproceedings{gao2021making,
+   title={Making Pre-trained Language Models Better Few-shot Learners},
+   author={Gao, Tianyu and Fisch, Adam and Chen, Danqi},
+   booktitle={Association for Computational Linguistics (ACL)},
+   year={2021}
+}
+
+@inproceedings{gunel2020supervised,
+  title={Supervised Contrastive Learning for Pre-trained Language Model Fine-tuning},
+  author={Gunel, Beliz and Du, Jingfei and Conneau, Alexis and Stoyanov, Veselin},
+  booktitle={International Conference on Learning Representations},
+  year={2020}
+}
+
+@inproceedings{nie-etal-2020-adversarial,
+    title = "Adversarial {NLI}: A New Benchmark for Natural Language Understanding",
+    author = "Nie, Yixin  and
+      Williams, Adina  and
+      Dinan, Emily  and
+      Bansal, Mohit  and
+      Weston, Jason  and
+      Kiela, Douwe",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    year = "2020",
+    publisher = "Association for Computational Linguistics",
+}
+
+@article{flickr30k,
+    title={From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions},
+    author={Peter Young and Alice Lai and Micah Hodosh and Julia Hockenmaier},
+    journal={TACL},
+    volume={2},
+    pages={67--78},
+    year={2014}
+}
+
+@inproceedings{wieting2018paranmt,
+  title={ParaNMT-50M: Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations},
+  author={Wieting, John and Gimpel, Kevin},
+  booktitle={Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={451--462},
+  year={2018}
+}
+
+
+@inproceedings{bowman2015large,
+  title={A large annotated corpus for learning natural language inference},
+  author={Bowman, Samuel R and Angeli, Gabor and Potts, Christopher and Manning, Christopher D},
+  booktitle={EMNLP},
+  year={2015}
+}
+
+@inproceedings{williams2018broad,
+  title={A broad-coverage challenge corpus for sentence understanding through inference},
+  author={Williams, Adina and Nangia, Nikita and Bowman, Samuel R},
+  booktitle={2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, NAACL HLT 2018},
+  pages={1112--1122},
+  year={2018},
+  organization={Association for Computational Linguistics (ACL)}
+}
+
+@inproceedings{deng2009imagenet,
+  title={Imagenet: A large-scale hierarchical image database},
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  booktitle={2009 IEEE conference on computer vision and pattern recognition},
+  pages={248--255},
+  year={2009},
+  organization={Ieee}
+}
+
+@inproceedings{gong2014improving,
+  title={Improving image-sentence embeddings using large weakly annotated photo collections},
+  author={Gong, Yunchao and Wang, Liwei and Hodosh, Micah and Hockenmaier, Julia and Lazebnik, Svetlana},
+  booktitle={European conference on computer vision},
+  pages={529--545},
+  year={2014},
+  organization={Springer}
+}
+
+
+@inproceedings{lu202012,
+  title={12-in-1: Multi-task vision and language representation learning},
+  author={Lu, Jiasen and Goswami, Vedanuj and Rohrbach, Marcus and Parikh, Devi and Lee, Stefan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={10437--10446},
+  year={2020}
+}
+
+@inproceedings{yang2021auto,
+  title={Auto-Parsing Network for Image Captioning and Visual Question Answering},
+  author={Yang, Xu and Gao, Chongyang and Zhang, Hanwang and Cai, Jianfei},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={2197--2207},
+  year={2021}
+}
+@inproceedings{kim2021vilt,
+  title={Vilt: Vision-and-language transformer without convolution or region supervision},
+  author={Kim, Wonjae and Son, Bokyung and Kim, Ildoo},
+  booktitle={International Conference on Machine Learning},
+  pages={5583--5594},
+  year={2021},
+  organization={PMLR}
+}
+@inproceedings{su2019vl,
+  title={VL-BERT: Pre-training of Generic Visual-Linguistic Representations},
+  author={Su, Weijie and Zhu, Xizhou and Cao, Yue and Li, Bin and Lu, Lewei and Wei, Furu and Dai, Jifeng},
+  booktitle={International Conference on Learning Representations},
+  year={2019}
+}
+@inproceedings{chen2020uniter,
+  title={Uniter: Universal image-text representation learning},
+  author={Chen, Yen-Chun and Li, Linjie and Yu, Licheng and El Kholy, Ahmed and Ahmed, Faisal and Gan, Zhe and Cheng, Yu and Liu, Jingjing},
+  booktitle={European conference on computer vision},
+  pages={104--120},
+  year={2020},
+  organization={Springer}
+}
+
+@inproceedings{chuang-etal-2022-diffcse,
+    title = "{D}iff{CSE}: Difference-based Contrastive Learning for Sentence Embeddings",
+    author = "Chuang, Yung-Sung  and
+      Dangovski, Rumen  and
+      Luo, Hongyin  and
+      Zhang, Yang  and
+      Chang, Shiyu  and
+      Soljacic, Marin  and
+      Li, Shang-Wen  and
+      Yih, Scott  and
+      Kim, Yoon  and
+      Glass, James",
+    booktitle = "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.naacl-main.311",
+    pages = "4207--4218",
+    abstract = "We propose DiffCSE, an unsupervised contrastive learning framework for learning sentence embeddings. DiffCSE learns sentence embeddings that are sensitive to the difference between the original sentence and an edited sentence, where the edited sentence is obtained by stochastically masking out the original sentence and then sampling from a masked language model. We show that DiffSCE is an instance of equivariant contrastive learning, which generalizes contrastive learning and learns representations that are insensitive to certain types of augmentations and sensitive to other {``}harmful{''} types of augmentations. Our experiments show that DiffCSE achieves state-of-the-art results among unsupervised sentence representation learning methods, outperforming unsupervised SimCSE by 2.3 absolute points on semantic textual similarity tasks.",
+}
+
+@inproceedings{zhou-etal-2022-debiased,
+    title = "Debiased Contrastive Learning of Unsupervised Sentence Representations",
+    author = "Zhou, Kun  and
+      Zhang, Beichen  and
+      Zhao, Xin  and
+      Wen, Ji-Rong",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.423",
+    doi = "10.18653/v1/2022.acl-long.423",
+    pages = "6120--6130",
+    abstract = "Recently, contrastive learning has been shown to be effective in improving pre-trained language models (PLM) to derive high-quality sentence representations. It aims to pull close positive examples to enhance the alignment while push apart irrelevant negatives for the uniformity of the whole representation space.However, previous works mostly adopt in-batch negatives or sample from training data at random. Such a way may cause the sampling bias that improper negatives (false negatives and anisotropy representations) are used to learn sentence representations, which will hurt the uniformity of the representation space.To address it, we present a new framework \textbf{DCLR} (Debiased Contrastive Learning of unsupervised sentence Representations) to alleviate the influence of these improper negatives.In DCLR, we design an instance weighting method to punish false negatives and generate noise-based negatives to guarantee the uniformity of the representation space.Experiments on seven semantic textual similarity tasks show that our approach is more effective than competitive baselines. Our code and data are publicly available at the link: blue\url{https://github.com/RUCAIBox/DCLR}.",
+}
+
+@article{jiang2022promptbert,
+  title={PromptBERT: Improving BERT Sentence Embeddings with Prompts},
+  author={Jiang, Ting and Huang, Shaohan and Zhang, Zihan and Wang, Deqing and Zhuang, Fuzhen and Wei, Furu and Huang, Haizhen and Zhang, Liangjie and Zhang, Qi},
+  journal={arXiv preprint arXiv:2201.04337},
+  year={2022}
+}
+
+@inproceedings{zhang-etal-2022-mcse,
+    title = "{MCSE}: {M}ultimodal Contrastive Learning of Sentence Embeddings",
+    author = "Zhang, Miaoran  and
+      Mosbach, Marius  and
+      Adelani, David  and
+      Hedderich, Michael  and
+      Klakow, Dietrich",
+    booktitle = "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.naacl-main.436",
+    pages = "5959--5969",
+    abstract = "Learning semantically meaningful sentence embeddings is an open problem in natural language processing. In this work, we propose a sentence embedding learning approach that exploits both visual and textual information via a multimodal contrastive objective. Through experiments on a variety of semantic textual similarity tasks, we demonstrate that our approach consistently improves the performance across various datasets and pre-trained encoders. In particular, combining a small amount of multimodal data with a large text-only corpus, we improve the state-of-the-art average Spearman{'}s correlation by 1.7{\%}. By analyzing the properties of the textual embedding space, we show that our model excels in aligning semantically similar sentences, providing an explanation for its improved performance.",
+}
+
+@article{krizhevsky2009learning,
+  title={Learning Multiple Layers of Features from Tiny Images},
+  author={Krizhevsky, A},
+  journal={Master's thesis, University of Tront},
+  year={2009}
+}

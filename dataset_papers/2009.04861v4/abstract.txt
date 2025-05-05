@@ -1,0 +1,23 @@
+Using logical clauses to represent patterns, Tsetlin Machines (TMs) have
+recently obtained competitive performance in terms of accuracy, memory
+footprint, energy, and learning speed on several benchmarks. Each TM clause
+votes for or against a particular class, with classification resolved using a
+majority vote. While the evaluation of clauses is fast, being based on binary
+operators, the voting makes it necessary to synchronize the clause evaluation,
+impeding parallelization. In this paper, we propose a novel scheme for
+desynchronizing the evaluation of clauses, eliminating the voting bottleneck.
+In brief, every clause runs in its own thread for massive native parallelism.
+For each training example, we keep track of the class votes obtained from the
+clauses in local voting tallies. The local voting tallies allow us to detach
+the processing of each clause from the rest of the clauses, supporting
+decentralized learning. This means that the TM most of the time will operate on
+outdated voting tallies. We evaluated the proposed parallelization across
+diverse learning tasks and it turns out that our decentralized TM learning
+algorithm copes well with working on outdated data, resulting in no significant
+loss in learning accuracy. Furthermore, we show that the proposed approach
+provides up to 50 times faster learning. Finally, learning time is almost
+constant for reasonable clause amounts (employing from 20 to 7,000 clauses on a
+Tesla V100 GPU). For sufficiently large clause numbers, computation time
+increases approximately proportionally. Our parallel and asynchronous
+architecture thus allows processing of massive datasets and operating with more
+clauses for higher accuracy.

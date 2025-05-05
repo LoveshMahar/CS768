@@ -1,0 +1,9 @@
+We study the problem of observational causal inference with continuous
+treatments in the framework of inverse propensity-score weighting. To obtain
+stable weights, we design a new algorithm based on entropy balancing that
+learns weights to directly maximize causal inference accuracy using end-to-end
+optimization. In the process of optimization, these weights are automatically
+tuned to the specific dataset and causal inference algorithm being used. We
+provide a theoretical analysis demonstrating consistency of our approach. Using
+synthetic and real-world data, we show that our algorithm estimates causal
+effect more accurately than baseline entropy balancing.

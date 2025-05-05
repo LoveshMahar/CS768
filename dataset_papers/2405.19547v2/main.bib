@@ -1,0 +1,540 @@
+
+
+
+
+%%%%%Theoretical constrastive learning
+
+@inproceedings{nakada2023understanding,
+  title={Understanding multimodal contrastive learning and incorporating unpaired data},
+  author={Nakada, Ryumei and Gulluk, Halil Ibrahim and Deng, Zhun and Ji, Wenlong and Zou, James and Zhang, Linjun},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={4348--4380},
+  year={2023},
+  organization={PMLR}
+}
+
+@article{ji2023power,
+  title={The power of contrast for feature learning: A theoretical analysis},
+  author={Ji, Wenlong and Deng, Zhun and Nakada, Ryumei and Zou, James and Zhang, Linjun},
+  journal={Journal of Machine Learning Research},
+  volume={24},
+  number={330},
+  pages={1--78},
+  year={2023}
+}
+
+%%%%%%% Dataset 
+@article{gadre2023datacomp,
+  title={DataComp: In search of the next generation of multimodal datasets},
+  author={Gadre, Samir Yitzhak and Ilharco, Gabriel and Fang, Alex and Hayase, Jonathan and Smyrnis, Georgios and Nguyen, Thao and Marten, Ryan and Wortsman, Mitchell and Ghosh, Dhruba and Zhang, Jieyu and others},
+  journal={arXiv preprint arXiv:2304.14108},
+  year={2023}
+}
+
+@inproceedings{deng2009imagenet,
+  title={Imagenet: A large-scale hierarchical image database},
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  booktitle={2009 IEEE conference on computer vision and pattern recognition},
+  pages={248--255},
+  year={2009},
+  organization={Ieee}
+}
+
+
+%%%%% Clip models %%%%%%%%%%%%%%%%%% 
+
+@inproceedings{radford2021learning,
+  title={Learning transferable visual models from natural language supervision},
+  author={Radford, Alec and Kim, Jong Wook and Hallacy, Chris and Ramesh, Aditya and Goh, Gabriel and Agarwal, Sandhini and Sastry, Girish and Askell, Amanda and Mishkin, Pamela and Clark, Jack and others},
+  booktitle={International conference on machine learning},
+  pages={8748--8763},
+  year={2021},
+  organization={PMLR}
+}
+
+@article{schuhmann2022laion,
+  title={Laion-5b: An open large-scale dataset for training next generation image-text models},
+  author={Schuhmann, Christoph and Beaumont, Romain and Vencu, Richard and Gordon, Cade and Wightman, Ross and Cherti, Mehdi and Coombes, Theo and Katta, Aarush and Mullis, Clayton and Wortsman, Mitchell and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={25278--25294},
+  year={2022}
+}
+
+@inproceedings{cherti2023reproducible,
+  title={Reproducible scaling laws for contrastive language-image learning},
+  author={Cherti, Mehdi and Beaumont, Romain and Wightman, Ross and Wortsman, Mitchell and Ilharco, Gabriel and Gordon, Cade and Schuhmann, Christoph and Schmidt, Ludwig and Jitsev, Jenia},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={2818--2829},
+  year={2023}
+}
+
+@article{bai2023qwen,
+  title={Qwen-vl: A frontier large vision-language model with versatile abilities},
+  author={Bai, Jinze and Bai, Shuai and Yang, Shusheng and Wang, Shijie and Tan, Sinan and Wang, Peng and Lin, Junyang and Zhou, Chang and Zhou, Jingren},
+  journal={arXiv preprint arXiv:2308.12966},
+  year={2023}
+}
+
+
+%%%%% Improving the visual-language dataset
+
+
+% Distribution Agnostic filtering
+@article{maini2023t,
+  title={T-mars: Improving visual representations by circumventing text feature learning},
+  author={Maini, Pratyush and Goyal, Sachin and Lipton, Zachary C and Kolter, J Zico and Raghunathan, Aditi},
+  journal={arXiv preprint arXiv:2307.03132},
+  year={2023}
+}
+
+@article{nguyen2023improving,
+  title={Improving multimodal datasets with image captioning},
+  author={Nguyen, Thao and Gadre, Samir Yitzhak and Ilharco, Gabriel and Oh, Sewoong and Schmidt, Ludwig},
+  journal={arXiv preprint arXiv:2307.10350},
+  year={2023}
+}
+
+@article{mahmoud2023sieve,
+  title={SIEVE: Multimodal Dataset Pruning Using Image Captioning Models},
+  author={Mahmoud, Anas and Elhoushi, Mostafa and Abbas, Amro and Yang, Yu and Ardalani, Newsha and Leather, Hugh and Morcos, Ari},
+  journal={arXiv preprint arXiv:2310.02110},
+  year={2023}
+}
+
+@article{fang2023data,
+  title={Data filtering networks},
+  author={Fang, Alex and Jose, Albin Madappally and Jain, Amit and Schmidt, Ludwig and Toshev, Alexander and Shankar, Vaishaal},
+  journal={arXiv preprint arXiv:2309.17425},
+  year={2023}
+}
+
+@article{yu2023devil,
+  title={The devil is in the details: A deep dive into the rabbit hole of data filtering},
+  author={Yu, Haichao and Tian, Yu and Kumar, Sateesh and Yang, Linjie and Wang, Heng},
+  journal={arXiv preprint arXiv:2309.15954},
+  year={2023}
+}
+
+% Distribution aware filtering/subset selection
+@article{wang2023too,
+  title={Too Large; Data Reduction for Vision-Language Pre-Training},
+  author={Wang, Alex Jinpeng and Lin, Kevin Qinghong and Zhang, David Junhao and Lei, Stan Weixian and Shou, Mike Zheng},
+  journal={arXiv preprint arXiv:2305.20087},
+  year={2023}
+}
+
+@article{maharana2023d2,
+  title={D2 pruning: Message passing for balancing diversity and difficulty in data pruning},
+  author={Maharana, Adyasha and Yadav, Prateek and Bansal, Mohit},
+  journal={arXiv preprint arXiv:2310.07931},
+  year={2023}
+}
+
+
+@inproceedings{wei2015submodularity,
+  title={Submodularity in data subset selection and active learning},
+  author={Wei, Kai and Iyer, Rishabh and Bilmes, Jeff},
+  booktitle={International conference on machine learning},
+  pages={1954--1963},
+  year={2015},
+  organization={PMLR}
+}
+
+@article{raskutti2016statistical,
+  title={A statistical perspective on randomized sketching for ordinary least-squares},
+  author={Raskutti, Garvesh and Mahoney, Michael W},
+  journal={The Journal of Machine Learning Research},
+  volume={17},
+  number={1},
+  pages={7508--7538},
+  year={2016},
+  publisher={JMLR. org}
+}
+
+@article{coleman2019selection,
+  title={Selection via proxy: Efficient data selection for deep learning},
+  author={Coleman, Cody and Yeh, Christopher and Mussmann, Stephen and Mirzasoleiman, Baharan and Bailis, Peter and Liang, Percy and Leskovec, Jure and Zaharia, Matei},
+  journal={arXiv preprint arXiv:1906.11829},
+  year={2019}
+}
+
+%Dataset as prior
+@article{xu2023cit,
+  title={Cit: Curation in training for effective vision-language data},
+  author={Xu, Hu and Xie, Saining and Huang, Po-Yao and Yu, Licheng and Howes, Russell and Ghosh, Gargi and Zettlemoyer, Luke and Feichtenhofer, Christoph},
+  journal={arXiv preprint arXiv:2301.02241},
+  year={2023}
+}
+
+
+@inproceedings{changpinyo2021conceptual12,
+  title={Conceptual 12m: Pushing web-scale image-text pre-training to recognize long-tail visual concepts},
+  author={Changpinyo, Soravit and Sharma, Piyush and Ding, Nan and Soricut, Radu},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={3558--3568},
+  year={2021}
+}
+
+@inproceedings{sharma2018conceptual3,
+    title = "Conceptual Captions: A Cleaned, Hypernymed, Image Alt-text Dataset For Automatic Image Captioning",
+    author = "Sharma, Piyush  and
+      Ding, Nan  and
+      Goodman, Sebastian  and
+      Soricut, Radu",
+    editor = "Gurevych, Iryna  and
+      Miyao, Yusuke",
+    booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2018",
+    address = "Melbourne, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P18-1238",
+    doi = "10.18653/v1/P18-1238",
+    pages = "2556--2565",
+}
+
+@article{nguyen2022quality,
+  title={Quality not quantity: On the interaction between dataset design and robustness of clip},
+  author={Nguyen, Thao and Ilharco, Gabriel and Wortsman, Mitchell and Oh, Sewoong and Schmidt, Ludwig},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={21455--21469},
+  year={2022}
+}
+
+@article{zhai2019large,
+  title={A large-scale study of representation learning with the visual task adaptation benchmark},
+  author={Zhai, Xiaohua and Puigcerver, Joan and Kolesnikov, Alexander and Ruyssen, Pierre and Riquelme, Carlos and Lucic, Mario and Djolonga, Josip and Pinto, Andre Susano and Neumann, Maxim and Dosovitskiy, Alexey and others},
+  journal={arXiv preprint arXiv:1910.04867},
+  year={2019}
+}
+
+@inproceedings{koh2021wilds,
+  title={Wilds: A benchmark of in-the-wild distribution shifts},
+  author={Koh, Pang Wei and Sagawa, Shiori and Marklund, Henrik and Xie, Sang Michael and Zhang, Marvin and Balsubramani, Akshay and Hu, Weihua and Yasunaga, Michihiro and Phillips, Richard Lanas and Gao, Irena and others},
+  booktitle={International Conference on Machine Learning},
+  pages={5637--5664},
+  year={2021},
+  organization={PMLR}
+}
+
+@article{sagawa2021extending,
+  title={Extending the WILDS benchmark for unsupervised adaptation},
+  author={Sagawa, Shiori and Koh, Pang Wei and Lee, Tony and Gao, Irena and Xie, Sang Michael and Shen, Kendrick and Kumar, Ananya and Hu, Weihua and Yasunaga, Michihiro and Marklund, Henrik and others},
+  journal={arXiv preprint arXiv:2112.05090},
+  year={2021}
+}
+
+@article{young-etal-2014-image,
+    title = "From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions",
+    author = "Young, Peter  and
+      Lai, Alice  and
+      Hodosh, Micah  and
+      Hockenmaier, Julia",
+    editor = "Lin, Dekang  and
+      Collins, Michael  and
+      Lee, Lillian",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "2",
+    year = "2014",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/Q14-1006",
+    doi = "10.1162/tacl_a_00166",
+    pages = "67--78",
+    abstract = "We propose to use the visual denotations of linguistic expressions (i.e. the set of images they describe) to define novel denotational similarity metrics, which we show to be at least as beneficial as distributional similarities for two tasks that require semantic inference. To compute these denotational similarities, we construct a denotation graph, i.e. a subsumption hierarchy over constituents and their denotations, based on a large corpus of 30K images and 150K descriptive captions.",
+}
+
+@article{chen2015microsoft,
+  title={Microsoft coco captions: Data collection and evaluation server},
+  author={Chen, Xinlei and Fang, Hao and Lin, Tsung-Yi and Vedantam, Ramakrishna and Gupta, Saurabh and Doll{\'a}r, Piotr and Zitnick, C Lawrence},
+  journal={arXiv preprint arXiv:1504.00325},
+  year={2015}
+}
+@article{bitton2022winogavil,
+  title={WinoGAViL: Gamified association benchmark to challenge vision-and-language models},
+  author={Bitton, Yonatan and Bitton Guetta, Nitzan and Yosef, Ron and Elovici, Yuval and Bansal, Mohit and Stanovsky, Gabriel and Schwartz, Roy},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={26549--26564},
+  year={2022}
+}
+
+@article{hessel2021clipscore,
+  title={Clipscore: A reference-free evaluation metric for image captioning},
+  author={Hessel, Jack and Holtzman, Ari and Forbes, Maxwell and Bras, Ronan Le and Choi, Yejin},
+  journal={arXiv preprint arXiv:2104.08718},
+  year={2021}
+}
+@article{kim2024hype,
+  title={HYPE: Hyperbolic Entailment Filtering for Underspecified Images and Texts},
+  author={Kim, Wonjae and Chun, Sanghyuk and Kim, Taekyung and Han, Dongyoon and Yun, Sangdoo},
+  journal={arXiv preprint arXiv:2404.17507},
+  year={2024}
+}
+
+%%%%%%%%%%%%%%%%%% Imagenet Distribution Shift %%%%%%%%%%%%%%
+@article{wang2019learning,
+  title={Learning robust global representations by penalizing local predictive power},
+  author={Wang, Haohan and Ge, Songwei and Lipton, Zachary and Xing, Eric P},
+  journal={Advances in Neural Information Processing Systems},
+  volume={32},
+  year={2019}
+}
+
+@InProceedings{pmlr-v97-recht19a,
+  title = 	 {Do {I}mage{N}et Classifiers Generalize to {I}mage{N}et?},
+  author =       {Recht, Benjamin and Roelofs, Rebecca and Schmidt, Ludwig and Shankar, Vaishaal},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  pages = 	 {5389--5400},
+  year = 	 {2019},
+  editor = 	 {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--15 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v97/recht19a/recht19a.pdf},
+  url = 	 {https://proceedings.mlr.press/v97/recht19a.html},
+  abstract = 	 {We build new test sets for the CIFAR-10 and ImageNet datasets. Both benchmarks have been the focus of intense research for almost a decade, raising the danger of overfitting to excessively re-used test sets. By closely following the original dataset creation processes, we test to what extent current classification models generalize to new data. We evaluate a broad range of models and find accuracy drops of 3% - 15% on CIFAR-10 and 11% - 14% on ImageNet. However, accuracy gains on the original test sets translate to larger gains on the new test sets. Our results suggest that the accuracy drops are not caused by adaptivity, but by the models’ inability to generalize to slightly "harder" images than those found in the original test sets.}
+}
+@inproceedings{hendrycks2021natural,
+  title={Natural adversarial examples},
+  author={Hendrycks, Dan and Zhao, Kevin and Basart, Steven and Steinhardt, Jacob and Song, Dawn},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={15262--15271},
+  year={2021}
+}
+@inproceedings{hendrycks2021many,
+  title={The many faces of robustness: A critical analysis of out-of-distribution generalization},
+  author={Hendrycks, Dan and Basart, Steven and Mu, Norman and Kadavath, Saurav and Wang, Frank and Dorundo, Evan and Desai, Rahul and Zhu, Tyler and Parajuli, Samyak and Guo, Mike and others},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={8340--8349},
+  year={2021}
+}
+%%%%%%%%%%%%%%%%%%%%%% Text Filter %%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{joulin2016bag,
+  title={Bag of tricks for efficient text classification},
+  author={Joulin, Armand and Grave, Edouard and Bojanowski, Piotr and Mikolov, Tomas},
+  journal={arXiv preprint arXiv:1607.01759},
+  year={2016}
+}
+
+%%%%%%%%%%%%%%%%%%%%%% Tools and Software %%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{johnson2019billion,
+  title={Billion-scale similarity search with gpus},
+  author={Johnson, Jeff and Douze, Matthijs and J{\'e}gou, Herv{\'e}},
+  journal={IEEE Transactions on Big Data},
+  volume={7},
+  number={3},
+  pages={535--547},
+  year={2019},
+  publisher={IEEE}
+}
+%%%%%%%%%%%%%%%%%%%%%%%% MLM %%%%%%%%%%%%%%%%%%%%%%%%
+@article{wang2024finetuned,
+  title={Finetuned Multimodal Language Models Are High-Quality Image-Text Data Filters},
+  author={Wang, Weizhi and Mrini, Khalil and Yang, Linjie and Kumar, Sateesh and Tian, Yu and Yan, Xifeng and Wang, Heng},
+  journal={arXiv preprint arXiv:2403.02677},
+  year={2024}
+}
+
+@article{chiang2023vicuna,
+  title={Vicuna: An open-source chatbot impressing gpt-4 with 90\%* chatgpt quality},
+  author={Chiang, Wei-Lin and Li, Zhuohan and Lin, Zi and Sheng, Ying and Wu, Zhanghao and Zhang, Hao and Zheng, Lianmin and Zhuang, Siyuan and Zhuang, Yonghao and Gonzalez, Joseph E and others},
+  journal={See https://vicuna. lmsys. org (accessed 14 April 2023)},
+  volume={2},
+  number={3},
+  pages={6},
+  year={2023}
+}
+
+@article{liu2023improved,
+  title={Improved baselines with visual instruction tuning},
+  author={Liu, Haotian and Li, Chunyuan and Li, Yuheng and Lee, Yong Jae},
+  journal={arXiv preprint arXiv:2310.03744},
+  year={2023}
+}
+
+@article{nguyen2024improving,
+  title={Improving multimodal datasets with image captioning},
+  author={Nguyen, Thao and Gadre, Samir Yitzhak and Ilharco, Gabriel and Oh, Sewoong and Schmidt, Ludwig},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+@book{golub2013matrix,
+  title={Matrix computations},
+  author={Golub, Gene H and Van Loan, Charles F},
+  year={2013},
+  publisher={JHU press}
+}
+@book{wainwright2019high,
+  title={High-dimensional statistics: A non-asymptotic viewpoint},
+  author={Wainwright, Martin J},
+  volume={48},
+  year={2019},
+  publisher={Cambridge university press}
+}
+#####Experimental design
+@book{pukelsheim2006optimal,
+  title={Optimal design of experiments},
+  author={Pukelsheim, Friedrich},
+  year={2006},
+  publisher={SIAM}
+}
+
+@InProceedings{pmlr-v238-joshi24a,
+  title = 	 { Data-Efficient Contrastive Language-Image Pretraining: Prioritizing Data Quality over Quantity },
+  author =       {Joshi, Siddharth and Jain, Arnav and Payani, Ali and Mirzasoleiman, Baharan},
+  booktitle = 	 {Proceedings of The 27th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {1000--1008},
+  year = 	 {2024},
+  editor = 	 {Dasgupta, Sanjoy and Mandt, Stephan and Li, Yingzhen},
+  volume = 	 {238},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {02--04 May},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v238/joshi24a/joshi24a.pdf},
+  url = 	 {https://proceedings.mlr.press/v238/joshi24a.html},
+  abstract = 	 { Contrastive Language-Image Pre-training (CLIP) on large-scale image-caption datasets learns representations that can achieve remarkable zero-shot generalization. However, such models require a massive amount of pre-training data. Improving the quality of the pre-training data has been shown to be much more effective in improving CLIP’s performance than increasing its volume. Nevertheless, finding small subsets of training data that provably generalize best has remained an open question. In this work, we propose the first theoretically rigorous data selection method for CLIP. We show that subsets that closely preserve the cross-covariance of the images and captions of the full data provably achieve a superior generalization performance.Our extensive experiments on ConceptualCaptions3M and ConceptualCaptions12M demonstrate that subsets found by \textsc{ClipCov} achieve over 2.7x and 1.4x the accuracy of the next best baseline on ImageNet and its shifted versions. Moreover, we show that our subsets obtain 1.5x the average accuracy across 11 downstream datasets, of the next best baseline. The code is available at: \url{https://github.com/BigML-CS-UCLA/clipcov-data-efficient-clip}. }
+}
+
+@article{xia2024less,
+  title={Less: Selecting influential data for targeted instruction tuning},
+  author={Xia, Mengzhou and Malladi, Sadhika and Gururangan, Suchin and Arora, Sanjeev and Chen, Danqi},
+  journal={arXiv preprint arXiv:2402.04333},
+  year={2024}
+}
+
+@InProceedings{Xia_2023_combatting,
+    author    = {Xia, Xiaobo and Han, Bo and Zhan, Yibing and Yu, Jun and Gong, Mingming and Gong, Chen and Liu, Tongliang},
+    title     = {Combating Noisy Labels with Sample Selection by Mining High-Discrepancy Examples},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {1833-1843}
+}
+
+
+@InProceedings{pmlr-v162-mindermann22a-prioritized,
+  title = 	 {Prioritized Training on Points that are Learnable, Worth Learning, and not yet Learnt},
+  author =       {Mindermann, S{\"o}ren and Brauner, Jan M and Razzak, Muhammed T and Sharma, Mrinank and Kirsch, Andreas and Xu, Winnie and H{\"o}ltgen, Benedikt and Gomez, Aidan N and Morisot, Adrien and Farquhar, Sebastian and Gal, Yarin},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {15630--15649},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/mindermann22a/mindermann22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/mindermann22a.html},
+  abstract = 	 {Training on web-scale data can take months. But much computation and time is wasted on redundant and noisy points that are already learnt or not learnable. To accelerate training, we introduce Reducible Holdout Loss Selection (RHO-LOSS), a simple but principled technique which selects approximately those points for training that most reduce the model’s generalization loss. As a result, RHO-LOSS mitigates the weaknesses of existing data selection methods: techniques from the optimization literature typically select "hard" (e.g. high loss) points, but such points are often noisy (not learnable) or less task-relevant. Conversely, curriculum learning prioritizes "easy" points, but such points need not be trained on once learned. In contrast, RHO-LOSS selects points that are learnable, worth learning, and not yet learnt. RHO-LOSS trains in far fewer steps than prior art, improves accuracy, and speeds up training on a wide range of datasets, hyperparameters, and architectures (MLPs, CNNs, and BERT). On the large web-scraped image dataset Clothing-1M, RHO-LOSS trains in 18x fewer steps and reaches 2% higher final accuracy than uniform data shuffling.}
+}
+
+@inproceedings{desai2023hyperbolic,
+  title={Hyperbolic image-text representations},
+  author={Desai, Karan and Nickel, Maximilian and Rajpurohit, Tanmay and Johnson, Justin and Vedantam, Shanmukha Ramakrishna},
+  booktitle={International Conference on Machine Learning},
+  pages={7694--7731},
+  year={2023},
+  organization={PMLR}
+}
+########### Text Detection Model #######
+@misc{chen2021fast,
+  title={FAST: Faster Arbitrarily-Shaped Text Detector with Minimalist Kernel Representation}, 
+  author={Zhe Chen and Jiahao Wang and Wenhai Wang and Guo Chen and Enze Xie and Ping Luo and Tong Lu},
+  year={2021},
+  eprint={2111.02394},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
+
+@inproceedings{li2023blip,
+  title={Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models},
+  author={Li, Junnan and Li, Dongxu and Savarese, Silvio and Hoi, Steven},
+  booktitle={International conference on machine learning},
+  pages={19730--19742},
+  year={2023},
+  organization={PMLR}
+}
+
+######### Github issue
+
+
+
+# bad text
+@article{shen2021much,
+  title={How much can clip benefit vision-and-language tasks?},
+  author={Shen, Sheng and Li, Liunian Harold and Tan, Hao and Bansal, Mohit and Rohrbach, Anna and Chang, Kai-Wei and Yao, Zhewei and Keutzer, Kurt},
+  journal={arXiv preprint arXiv:2107.06383},
+  year={2021}
+}
+
+@inproceedings{zeng2022multi,
+  title={Multi-Grained Vision Language Pre-Training: Aligning Texts with Visual Concepts},
+  author={Zeng, Yan and Zhang, Xinsong and Li, Hang},
+  booktitle={International Conference on Machine Learning},
+  pages={25994--26009},
+  year={2022},
+  organization={PMLR}
+}
+
+@article{yamada2022lemons,
+  title={When are lemons purple? the concept association bias of clip},
+  author={Yamada, Yutaro and Tang, Yingtian and Yildirim, Ilker},
+  journal={arXiv preprint arXiv:2212.12043},
+  year={2022}
+}
+
+
+%%%%%%%%%%%%%%
+@article{joulin2016fasttext,
+  title={Fasttext. zip: Compressing text classification models},
+  author={Joulin, Armand and Grave, Edouard and Bojanowski, Piotr and Douze, Matthijs and J{\'e}gou, H{\'e}rve and Mikolov, Tomas},
+  journal={arXiv preprint arXiv:1612.03651},
+  year={2016}
+}
+
+
+@article{goyal2024scaling,
+  title={Scaling Laws for Data Filtering--Data Curation cannot be Compute Agnostic},
+  author={Goyal, Sachin and Maini, Pratyush and Lipton, Zachary C and Raghunathan, Aditi and Kolter, J Zico},
+  journal={arXiv preprint arXiv:2404.07177},
+  year={2024}
+}
+
+
+#### rebuttal add
+@article{vo2024automatic,
+  title={Automatic Data Curation for Self-Supervised Learning: A Clustering-Based Approach},
+  author={Vo, Huy V and Khalidov, Vasil and Darcet, Timoth{\'e}e and Moutakanni, Th{\'e}o and Smetanin, Nikita and Szafraniec, Marc and Touvron, Hugo and Couprie, Camille and Oquab, Maxime and Joulin, Armand and others},
+  journal={arXiv preprint arXiv:2405.15613},
+  year={2024}
+}
+
+@article{huang2024multimodal,
+  title={Multimodal Data Curation via Object Detection and Filter Ensembles},
+  author={Huang, Tzu-Heng and Shin, Changho and Tay, Sui Jiet and Adila, Dyah and Sala, Frederic},
+  journal={arXiv preprint arXiv:2401.12225},
+  year={2024}
+}
+
+@article{xie2023data,
+  title={Data selection for language models via importance resampling},
+  author={Xie, Sang Michael and Santurkar, Shibani and Ma, Tengyu and Liang, Percy S},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  pages={34201--34227},
+  year={2023}
+}
+
+@article{abbas2024effective,
+  title={Effective pruning of web-scale datasets based on complexity of concept clusters},
+  author={Abbas, Amro and Rusak, Evgenia and Tirumala, Kushal and Brendel, Wieland and Chaudhuri, Kamalika and Morcos, Ari S},
+  journal={arXiv preprint arXiv:2401.04578},
+  year={2024}
+}
+

@@ -1,0 +1,2105 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DRO with Wasserstein: theory
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{ref:rippl2016limit,
+	title={Limit laws of the empirical {W}asserstein distance: {G}aussian distributions},
+	author={Rippl, T. and Munk, A. and Sturm, A.},
+	journal={Journal of Multivariate Analysis},
+	volume={151},
+	pages={90--109},
+	year={2016},
+}
+
+
+@book{ref:murphy2012machine,
+  title={Machine Learning: A Probabilistic Perspective},
+  author={K.P.~Murphy},
+  year={2012},
+  publisher={MIT Press}
+}
+@book{ref:oppenheim2015signals,
+  title={Signals, Systems and Inference},
+  author={A.V.~Oppenheim and G.C.~Verghese},
+  year={2015},
+  publisher={Pearson}
+}
+@book{ref:kay1993fundamentals,
+  title={Fundamentals of Statistical Signal Processing: Estimation Theory},
+  author={S.M.~Kay},
+   year={1993},
+  publisher={Prentice Hall}
+}
+@book{ref:cover2012elements,
+  title={Elements of Information Theory},
+  author={T.M.~Cover and J.A.~Thomas},
+  year={2012},
+  publisher={John Wiley \& Sons}
+}
+@book{ref:mackay2003information,
+  title={Information Theory, Inference and Learning Algorithms},
+  author={D.J.C.~MacKay},
+  year={2003},
+  publisher={Cambridge University Press}
+}
+@book{ref:hamilton1994time,
+  title={Time Series Analysis},
+  author={J.D.~Hamilton},
+  year={1994},
+  publisher={Princeton University Press}
+}
+@book{ref:wooldridge2010econometric,
+  title={Econometric Analysis of Cross Section and Panel Data},
+  author={J.M.~Wooldridge},
+  year={2010},
+  publisher={MIT Press}
+}
+@book{ref:chatfield2016analysis,
+  title={The Analysis of Time Series: {A}n Introduction},
+  author={C.~Chatfield},
+  year={2016},
+  publisher={CRC Press}
+}
+@book{ref:stock2015introduction,
+  title={Introduction to Econometrics},
+  author={J.H. Stock and M.W.~Watson},
+  publisher={Prentice Hall},
+  year={2015}
+}
+@book{ref:ogata2009modern,
+  title={Modern Control Engineering},
+  author={K.~Ogata},
+  year={2009},
+  publisher={Pearson}
+}
+@book{ref:golnaraghi2017automatic,
+  title={Automatic Control Systems},
+  author={F.~Golnaraghi and B.C.~Kuo},
+  year={2017},
+  publisher={McGraw-Hill Education}
+}
+
+@article{ref:chen2018drocc,
+	title={Data-Driven Chance Constrained Programs over {W}asserstein Balls},
+	author = {Chen, Z. and Kuhn, D. and Wiesemann, W.},
+	journal={arXiv preprint arXiv:1809.00210},
+	year={2018}
+}
+
+@article{ref:chen2018adaptive,
+  title={Adaptive Robust Optimization with Scenario-wise Ambiguity Sets},
+  author={Z.~Chen and M.~Sim and P.~Xiong},
+  journal={Available from Optimization Online},
+  year={2018}
+}
+@article{ref:bertsimas2018data,
+  title={Data-driven Robust Optimization},
+  author={D.~Bertsimas and V.~Gupta and N.~Kallus},
+  journal={Mathematical Programming},
+  volume={167},
+  number={2},
+  pages={235--292},
+  year={2018},
+  publisher={Springer}
+}
+@article{ref:bertsimas2018robust,
+  title={Robust Sample Average Approximation},
+  author={D.~Bertsimas and V.~Gupta and N.~Kallus},
+  journal={Mathematical Programming},
+  volume={171},
+  number={1-2},
+  pages={217--282},
+  year={2018},
+  publisher={Springer}
+}
+
+@article{ref:xie2018drocc,
+	title={On Distributionally Robust Chance Constrained Program with {W}asserstein Distance},
+	author = {Xie, W.},
+	journal={arXiv preprint arXiv:1806.07418},
+	year={2018}
+}
+
+@book{ref:villani2008optimal,
+	title={Optimal Transport: Old and New},
+	author={C.~Villani},
+	year={2008},
+	publisher={Springer Science \& Business Media}
+}
+
+@book{ref:rockafellar1997convex,
+  title={Convex Analysis},
+  author={R.T.~Rockafellar},
+  year={1997},
+  publisher={Princeton University Press}
+}
+
+@article{ref:blanchet2019inverse,
+	title={Optimal Uncertainty Size in Distributionally Robust Inverse Covariance Estimation},
+	author = {Blanchet, J. and Si, N.},
+	journal={arXiv preprint arXiv:1901.07693},
+	year={2019}
+}
+
+@article{ref:sturt2018data-driven,
+	title={A Data-Driven Approach for Multi-Stage Linear Optimization},
+	author={D. Bertsimas and S. Shtern and B. Sturt},
+	journal={Available from Optimization Online},
+	year={2018}
+}
+
+@article{ref:zhen2019distributionally,
+  title={Distributionally robust nonlinear optimization},
+  author={J.~Zhen and D.~Kuhn and W.~Wiesemann},
+  journal={Working paper},
+  year={2019}
+}
+
+@article{ref:zymler2013wcvar,
+author = {Zymler, S. and Kuhn, D. and Rustem, B.},
+title = {Worst-Case Value at Risk of Nonlinear Portfolios},
+journal = {Management Science},
+volume = {59},
+number = {1},
+pages = {172--188},
+year = {2013}
+}
+
+@article{ref:el-ghaoui2003wcvar,
+author = {El Ghaoui, L. and Oks, M. and Oustry, F.},
+title = {Worst-Case Value-At-Risk and Robust Portfolio Optimization: A Conic Programming Approach},
+journal = {Operations Research},
+volume = {51},
+number = {4},
+pages = {543--556},
+year = {2003}
+}
+
+@article{ref:natarajan2010utility,
+  title={Tractable robust expected utility and risk models for portfolio optimisation},
+  author={K. Natarajan and M. Sim and J. Uichanco},
+  journal={Mathematical Finance},
+  volume={20},
+  number={4},
+  pages={695--731},
+ year={2010}
+}
+
+@article{ref:ben2015deriving,
+  title={Deriving robust counterparts of nonlinear uncertain inequalities},
+  author={A.~Ben-Tal and D.~Den Hertog and J.~Vial},
+  journal={Mathematical Programming},
+  volume={149},
+  number={1-2},
+  pages={265--299},
+  year={2015},
+  publisher={Springer}
+}
+
+@article{ref:kantorovich1958space,
+	title={On a space of totally additive functions},
+	author={L.V.~Kantorovich and G.~Rubinshtein},
+	journal={Vestnik Leningrad University},
+	volume={13},
+	number={7},
+	pages={52--59},
+	year={1958}
+}
+
+@article{ref:esfahani2018data,
+	title={Data-driven distributionally robust optimization using the {W}asserstein metric: Performance guarantees and tractable reformulations},
+	author={P.~{Mohajerin Esfahani} and D.~Kuhn},
+	journal={Mathematical Programming},
+	volume={171},
+	number={1-2},
+	pages={115--166},
+	year={2018},
+	publisher={Springer}
+}
+
+@article{ref:blanchet2016quantifying,
+	title={Quantifying distributional model risk via optimal transport},
+	author={J.~Blanchet and K.~Murthy},
+	journal={To appear in Mathematics of Operations Research},
+	year={2017}
+}
+
+@article{ref:gao2016distributionally,
+	title={Distributionally robust stochastic optimization with {W}asserstein distance},
+	author={R.~Gao and A.~J.~Kleywegt},
+	journal={arXiv preprint arXiv:1604.02199},
+	year={2016}
+}
+
+@article{ref:wozabal2012framework,
+	title={A framework for optimization under ambiguity},
+	author={D.~Wozabal},
+	journal={Annals of Operations Research},
+	volume={193},
+	number={1},
+	pages={21--47},
+	year={2012},
+	publisher={Springer}
+}
+
+@article{ref:owhadi2017extreme,
+	title={Extreme points of a ball about a measure with finite support},
+	author={H.~Owhadi and C.~Scovel},
+	journal={Communications in Mathematical Sciences},
+	volume={15},
+	number={1},
+	pages={77--96},
+	year={2017},
+	publisher={International Press of Boston}
+}
+
+@article{ref:pflug2007ambiguity,
+	title={Ambiguity in portfolio selection},
+	author={G.~Pflug and D.~Wozabal},
+	journal={Quantitative Finance},
+	volume={7},
+	number={4},
+	pages={435--442},
+	year={2007},
+	publisher={Taylor \& Francis}
+}
+
+@article{ref:nguyen2019bridging,
+	title={Bridging {B}ayesian and Minimax Mean Square Error Estimation via {W}asserstein Distributionally Robust Optimization},
+	author={{Viet Anh} Nguyen and S. Shafieezadeh-Abadeh and D. Kuhn and P. {Mohajerin Esfahani}},
+	journal={arXiv preprint arxiv:1910.10583},
+	year={2019}
+}
+
+@inproceedings{ref:monge1781memoire,
+  author = {G.~Monge},
+  booktitle= {Histoire de l'Acad{\'e}mie Royale des Sciences de Paris},
+  pages = {666-704},
+  title = {M{\'e}moire sur la th{\'e}orie des d{\'e}blais et des remblais},
+  year = {1781}
+}
+
+@article{ref:kantorovich1942translocation,
+	author = {L.V.~Kantorovich},
+	year = {1942},
+	pages = {199-201},
+	title = {On the translocation of masses},
+	journal = {Doklady Akademii Nauk USSR},
+	volume = {37}
+}
+
+@article{ref:zhao2018data,
+	title = {Data-driven risk-averse stochastic optimization with {W}asserstein metric},
+	journal = "Operations Research Letters",
+	volume = "46",
+	number = "2",
+	pages = "262 - 267",
+	year = "2018",
+	author = "C.~Zhao and Y.~Guan",
+}
+
+@article{ref:taskesen2019complexity,
+	title =  {On the complexity of computing {W}asserstein distances},
+	author = {B.~Ta\c skesen and S.~Shafieezadeh-Abadeh and D.~Kuhn},
+	journal = {Working paper},
+	year = {2019}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DRO with Wasserstein: applications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@inproceedings{ref:shafieezadeh2015distributionally,
+	title={Distributionally robust logistic regression},
+	author={S.~Shafieezadeh-Abadeh and P.~{Mohajerin Esfahani} and D.~Kuhn},
+	booktitle={Advances in Neural Information Processing Systems 28},
+	pages={1576--1584},
+	year={2015}
+}
+
+@article{ref:shafieezadeh2017regularization,
+	title={Regularization via mass transportation},
+	author={S.~Shafieezadeh-Abadeh and D.~Kuhn and P.~{Mohajerin Esfahani}},
+	journal={arXiv preprint arXiv:1710.10016},
+	year={2017}
+}
+
+@article{ref:nguyen2018distributionally,
+	title={Distributionally Robust Inverse Covariance Estimation: The {W}asserstein Shrinkage Estimator},
+	author={V.A. Nguyen and D. Kuhn and P. {Mohajerin Esfahani}},
+	journal={arXiv preprint arXiv:1805.07194},
+	year={2018}
+}
+
+@inproceedings{ref:shafieezadeh2018wasserstein,
+	title={{W}asserstein Distributionally Robust {K}alman Filtering},
+	author={S.~Shafieezadeh-Abadeh and V.A.~Nguyen and D.~Kuhn and P.~{Mohajerin Esfahani}},
+	booktitle={Advances in Neural Information Processing Systems 31},
+	pages={8483-8492},
+	year={2018}
+}
+
+@article{ref:esfahani2018inverse,
+	title={Data-driven inverse optimization with imperfect information},
+	author={P.~{Mohajerin Esfahani} and S.~Shafieezadeh-Abadeh and G.A.~Hanasusanto and D.~Kuhn},
+	journal={Mathematical Programming},
+	volume={167},
+	number={1},
+	pages={191--234},
+	year={2018},
+	publisher={Springer}
+}
+
+@article{ref:blanchet2016robust,
+	title={Robust {W}asserstein profile inference and applications to machine learning},
+	author={J.~Blanchet and Y.~Kang and K.~Murthy},
+	journal={arXiv preprint arXiv:1610.05627},
+	year={2016}
+}
+
+@article{ref:blanchet2016sample,
+	title={Sample out-of-sample inference based on {W}asserstein distance},
+	author={J.~Blanchet and Y.~Kang},
+	journal={arXiv preprint arXiv:1605.01340},
+	year={2016}
+}
+
+@article{ref:blanchet2017data,
+	title={Data-driven Optimal Transport Cost Selection for Distributionally Robust Optimization},
+	author={J.~Blanchet and Y.~Kang and F.~Zhang and K.~Murthy},
+	journal={arXiv preprint arXiv:1705.07152},
+	year={2017}
+}
+
+@article{ref:gao2017wasserstein,
+	title={{W}asserstein distributional robustness and regularization in statistical learning},
+	author={R.~Gao and X.~Chen and A.~J.~Kleywegt},
+	journal={arXiv preprint arXiv:1712.06050},
+	year={2017}
+}
+
+@article{ref:chen2018data,
+	title={Data-Driven Chance Constrained Programs over {W}asserstein Balls},
+	author={Z.~Chen and D.~Kuhn and W.~Wiesemann},
+	journal={arXiv preprint arXiv:1809.00210},
+	year={2018}
+}
+
+@article{ref:cheng2018distributionally,
+	title={Distributionally Robust Optimization with Principal Component Analysis},
+	author={J.~Cheng and R.~Li-Yang Chen and H.~N.~Najm and A.~Pinar and C.~Safta and J.~Watson},
+	journal={SIAM Journal on Optimization},
+	volume={28},
+	number={2},
+	pages={1817--1841},
+	year={2018},
+	publisher={SIAM}
+}
+
+@article{ref:xie2018distributionally,
+	title={On Distributionally Robust Chance Constrained Program with {W}asserstein Distance},
+	author={W.~Xie},
+	journal={arXiv preprint arXiv:1806.07418},
+	year={2018}
+}
+
+@inproceedings{ref:gao2018robust,
+	title={Robust Hypothesis Testing Using {W}asserstein Uncertainty Sets},
+	author={R.~Gao and L.~Xie and Y.~Xie and H.~Xu},
+	booktitle={Advances in Neural Information Processing Systems 31},
+	pages = {7913--7923},
+	year={2018}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DRO with Wasserstein: performance guarantee
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{ref:lee2017minimax,
+	title={Minimax statistical learning with {W}asserstein distances},
+	author={J.~Lee and M.~Raginsky},
+	booktitle={Advances in Neural Information Processing Systems 31},
+	pages = {2692--2701},
+	year={2018}
+}
+
+@article{ref:fournier2015rate,
+	title={On the rate of convergence in {W}asserstein distance of the empirical measure},
+	author={N.~Fournier and A.~Guillin},
+	journal={Probability Theory and Related Fields},
+	volume={162},
+	number={3-4},
+	pages={707--738},
+	year={2015},
+	publisher={Springer}
+}
+
+@article{ref:weed2017sharp,
+	title={Sharp asymptotic and finite-sample rates of convergence of empirical measures in {W}asserstein distance},
+	author={J.~Weed and F.~Bach},
+	journal={To appear in Bernoulli},
+	year={2019}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wasserstein in ML
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{ref:cuturi2014ground,
+	title={Ground metric learning},
+	author={M.~Cuturi and D.~Avis},
+	journal={The Journal of Machine Learning Research},
+	volume={15},
+	number={1},
+	pages={533--564},
+	year={2014}
+}
+
+@article{ref:rubner2000earth,
+	title={The earth mover's distance as a metric for image retrieval},
+	author={Y.~Rubner and C.~Tomasi and L.~J.~Guibas},
+	journal={International Journal of Computer Vision},
+	volume={40},
+	number={2},
+	pages={99--121},
+	year={2000}
+}
+
+@article{ref:parikh2014proximal,
+	title={Proximal Algorithms},
+	author={N.~Parikh and S.~Boyd},
+	journal={Foundations and Trends in Optimization},
+	volume={1},
+	number={3},
+	pages={127--239},
+	year={2014},
+	publisher={Now Publishers}
+}
+
+@article{ref:courty2017optimal, 
+	author={N.~Courty and R.~Flamary and D.~Tuia and A.~Rakotomamonjy}, 
+	journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+	title={Optimal Transport for Domain Adaptation}, 
+	year={2017}, 
+	volume={39}, 
+	number={9}, 
+	pages={1853-1865}, 
+}
+
+
+@article{ref:rujeerapaiboon2018scenario,
+	author="N.~Rujeerapaiboon and K.~Schindler and D.~Kuhn and W.~Wiesemann",
+	title="Scenario reduction revisited: fundamental limits and guarantees",
+	journal="To appear in Mathematical Programming",
+	year={2018}
+	}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wasserstein computation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{ref:givens1984class,
+	title={A class of {W}asserstein metrics for probability distributions},
+	author={C.R.~Givens and R.M.~Shortt},
+	journal={The Michigan Mathematical Journal},
+	volume={31},
+	number={2},
+	pages={231--240},
+	year={1984},
+	publisher={The University of Michigan}
+}
+
+@article{ref:gelbrich1990formula,
+	title={On a formula for the ${L}^2$ {W}asserstein metric between measures on {E}uclidean and {H}ilbert spaces},
+	author={M.~Gelbrich},
+	journal={Mathematische Nachrichten},
+	volume={147},
+	number={1},
+	pages={185--203},
+	year={1990},
+	publisher={Wiley Online Library}
+}
+
+@article{ref:olkin1982distance,
+	title={The distance between two random vectors with given dispersion matrices},
+	author={I.~Olkin and F.~Pukelsheim},
+	journal={Linear Algebra and its Applications},
+	volume={48},
+	pages={257--263},
+	year={1982},
+	publisher={Elsevier}
+}
+
+@article{ref:dowson1982frechet,
+	title={The {F}r{\'e}chet distance between multivariate normal distributions},
+	author={D.C.~Dowson and B.V.~Landau},
+	journal={Journal of Multivariate Analysis},
+	volume={12},
+	number={3},
+	pages={450--455},
+	year={1982},
+	publisher={Academic Press}
+}
+
+@article{ref:peyre2018computational,
+	title={Computational Optimal Transport},
+	author={G.~Peyr{\'e} and M.~Cuturi},
+	journal={arXiv preprint arXiv:1803.00567},
+	year={2018}
+}
+
+@book{ref:brualdi2006combinatorial,
+	title={Combinatorial Matrix Classes},
+	author={R.A.~Brualdi},
+	year={2006},
+	publisher={Cambridge University Press}
+}
+
+@book{ref:bertsekas1998network,
+	title={Network Optimization: Continuous and Discrete Models},
+	author={D.P.~Bertsekas},
+	year={1998},
+	publisher={Athena Scientific}
+}
+
+@book{ref:bertsimas1997introduction,
+	title={Introduction to Linear Optimization},
+	author={D.~Bertsimas and J.N.~Tsitsiklis},
+	year={1997},
+	publisher={Athena Scientific}
+}
+
+@article{ref:bertsekas1981new,
+	title={A new algorithm for the assignment problem},
+	author={D.P.~Bertsekas},
+	journal={Mathematical Programming},
+	volume={21},
+	number={1},
+	pages={152--171},
+	year={1981},
+	publisher={Springer}
+}
+
+@article{ref:bertsekas1992auction,
+	title={Auction algorithms for network flow problems: A tutorial introduction},
+	author={D.P.~Bertsekas},
+	journal={Computational Optimization and Applications},
+	volume={1},
+	number={1},
+	pages={7--66},
+	year={1992},
+	publisher={Springer}
+}
+
+@inproceedings{ref:cuturi2013sinkhorn,
+	title={Sinkhorn distances: Lightspeed computation of optimal transport},
+	author={M.~Cuturi},
+	booktitle={Advances in Neural Information Processing Systems 26},
+	pages={2292--2300},
+	year={2013}
+}
+
+@article{ref:essid2018quadratically,
+	title={Quadratically regularized optimal transport on graphs},
+	author={M.~Essid and J.~Solomon},
+	journal={SIAM Journal on Scientific Computing},
+	volume={40},
+	number={4},
+	pages={A1961--A1986},
+	year={2018},
+	publisher={SIAM}
+}
+
+@inproceedings{ref:muzellec2017tsallis,
+	title={Tsallis Regularized Optimal Transport and Ecological Inference},
+	author={B.~Muzellec and R.~Nock and G.~Patrini and F.~Nielsen},
+	booktitle={Association for the Advancement of Artificial Intelligence},
+	pages={2387--2393},
+	year={2017}
+}
+
+@article{ref:benamou2015iterative,
+	title={Iterative {B}regman projections for regularized transportation problems},
+	author={J.~Benamou and G.~Carlier and M.~Cuturi and L.~Nenna and G.~Peyr{\'e}},
+	journal={SIAM Journal on Scientific Computing},
+	volume={37},
+	number={2},
+	pages={A1111--A1138},
+	year={2015},
+	publisher={SIAM}
+}
+
+@article{ref:schmitzer2016sparse,
+	title={A sparse multiscale algorithm for dense optimal transport},
+	author={B.~Schmitzer},
+	journal={Journal of Mathematical Imaging and Vision},
+	volume={56},
+	number={2},
+	pages={238--259},
+	year={2016},
+	publisher={Springer}
+}
+
+@article{ref:solomon2015convolutional,
+	title={Convolutional {W}asserstein distances: Efficient optimal transportation on geometric domains},
+	author={J.~Solomon and F.~De Goes and G.~Peyr{\'e} and M.~Cuturi and A.~Butscher and A.~Nguyen and T.~Du and L.~Guibas},
+	journal={ACM Transactions on Graphics},
+	volume={34},
+	number={4},
+	pages={66},
+	year={2015},
+	publisher={ACM}
+}
+
+@article{ref:peyre2017quantum,
+	title={Quantum entropic regularization of matrix-valued optimal transport},
+	author={G.~Peyr{\'e} and L.~Chizat and F.~Vialard and J.~Solomon},
+	journal={European Journal of Applied Mathematics},
+	pages={1--24},
+	year={2017},
+	publisher={Cambridge University Press}
+}
+
+@article{ref:peyre2015entropic,
+	title={Entropic approximation of {W}asserstein gradient flows},
+	author={G.~Peyr{\'e}},
+	journal={SIAM Journal on Imaging Sciences},
+	volume={8},
+	number={4},
+	pages={2323--2351},
+	year={2015},
+	publisher={SIAM}
+}
+
+@article{ref:karlsson2017generalized,
+	title={Generalized {S}inkhorn iterations for regularizing inverse problems using optimal mass transport},
+	author={J.~Karlsson and A.~Ringh},
+	journal={SIAM Journal on Imaging Sciences},
+	volume={10},
+	number={4},
+	pages={1935--1962},
+	year={2017},
+	publisher={SIAM}
+}
+
+@article{ref:chizat2018scaling,
+	title={Scaling algorithms for unbalanced optimal transport problems},
+	author={L.~Chizat and G.~Peyr{\'e} and B.~Schmitzer and F.~Vialard},
+	journal={Mathematics of Computation},
+	year={2018},
+	volume = {87},
+	pages = {2563-2609}
+}
+
+@inproceedings{ref:canas2012learning,
+title = {Learning Probability Measures with respect to Optimal Transport Metrics},
+author = {G.~Canas and L.~Rosasco},
+booktitle = {Advances in Neural Information Processing Systems 25},
+pages = {2492--2500},
+year = {2012},
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Stability results
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{ref:dupacova1990stability,
+	author="J.~Dupa{\v{c}}ov{\'a}",
+	title="Stability and sensitivity-analysis for stochastic programming",
+	journal="Annals of Operations Research",
+	year="1990",
+	volume="27",
+	number="1",
+	pages="115--142",
+}
+
+@article{ref:roemisch1991stability,
+	author="W.~R{\"o}misch and R.~Schultz",
+	title="Stability analysis for stochastic programs",
+	journal="Annals of Operations Research",
+	year="1991",
+	volume="30",
+	number="1",
+	pages="241--266",
+}
+
+@book{ref:pflug2014multistage,
+	title={Multistage Stochastic Optimization},
+	author={G.~Pflug and A.~Pichler},
+	year={2014},
+	publisher={Springer}
+}
+
+
+@article{ref:roemisch2007stability,
+author = {W.~R{\"o}misch and R.~Wets},
+title = {Stability of $\varepsilon$-approximate Solutions to Convex Stochastic Programs},
+journal = {SIAM Journal on Optimization},
+volume = {18},
+number = {3},
+pages = {961-979},
+year = {2007}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DRO with moments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@incollection{ref:scarf1958min,
+	author={H.~Scarf},
+	title={A min-max solution of an inventory problem},
+	booktitle={Studies in the Mathematical Theory of Inventory and Production},
+	publisher={Stanford University Press},
+	year={1958},	
+	pages={201--209},
+	editor={Arrow, Kenneth Joseph and Karlin, Samuel and Scarf, Herbert}
+}
+
+@article{ref:delage2010distributionally,
+	title={Distributionally robust optimization under moment uncertainty with application to data-driven problems},
+	author={E.~Delage and Y.~Ye},
+	journal={Operations Research},
+	volume={58},
+	number={3},
+	pages={595--612},
+	year={2010},
+	publisher={INFORMS}
+}
+
+@article{ref:delage2010percentile,
+  title={Percentile Optimization for {M}arkov Decision Processes with Parameter Uncertainty},
+  author={Erick Delage and Shie Mannor},
+  journal={Operations Research},
+  year={2010},
+  volume={58},
+  pages={203-213}
+}
+
+@article{ref:goh2010distributionally,
+	title={Distributionally robust optimization and its tractable approximations},
+	author={J.~Goh and M.~Sim},
+	journal={Operations Research},
+	volume={58},
+	number={4},
+	pages={902--917},
+	year={2010},
+	publisher={INFORMS}
+}
+
+@article{ref:hanasusanto2015distributionally,
+	title={Distributionally robust multi-item newsvendor problems with multimodal demand distributions},
+	author={G.A.~Hanasusanto and D.~Kuhn and S.~W.~Wallace and S.~Zymler},
+	journal={Mathematical Programming},
+	volume={152},
+	number={1-2},
+	pages={1--32},
+	year={2015},
+	publisher={Springer}
+}
+
+@article{ref:vayanos2012constraint,
+	title={A constraint sampling approach for multi-stage robust optimization},
+	author={P.~Vayanos and D.~Kuhn and B.~Rustem},
+	journal={Automatica},
+	volume={48},
+	number={3},
+	pages={459--471},
+	year={2012},
+	publisher={Elsevier}
+}
+
+@article{ref:wiesemann2014distributionally,
+	title={Distributionally robust convex optimization},
+	author={W.~Wiesemann and D.~Kuhn and M.~Sim},
+	journal={Operations Research},
+	volume={62},
+	number={6},
+	pages={1358--1376},
+	year={2014},
+	publisher={INFORMS}
+}
+
+@incollection{ref:shapiro2001on,
+	author={A.~Shapiro},
+	title={On Duality Theory of Conic Linear Problems},
+	booktitle={Semi-Infinite Programming},
+	publisher={Kluwer Academic Publishers},
+	year={2001},	
+	pages={135--165},
+}
+
+@article{ref:ghaoui2003worst,
+	title={Worst-case value-at-risk and robust portfolio optimization: {A} conic programming approach},
+	author={L.~El Ghaoui and M.~Oks and F.~Oustry},
+	journal={Operations Research},
+	volume={51},
+	number={4},
+	pages={543--556},
+	year={2003},
+	publisher={INFORMS}
+}
+
+@article{ref:calafiore2006distributionally,
+	title={On distributionally robust chance-constrained linear programs},
+	author={G.C.~Calafiore and L.~El Ghaoui},
+	journal={Journal of Optimization Theory and Applications},
+	volume={130},
+	number={1},
+	pages={1--22},
+	year={2006},
+	publisher={Springer}
+}
+
+@article{ref:calafiore2009parameter,
+title = "Parameter estimation with expected and residual-at-risk criteria",
+journal = "Systems \& Control Letters",
+volume = "58",
+number = "1",
+pages = "39--46",
+year = "2009",
+author = "Giuseppe Calafiore and Ufuk Topcu and Laurent El Ghaoui",
+}
+
+@article{ref:chen2010cvar,
+	title={From {CV}a{R} to uncertainty set: {I}mplications in joint chance-constrained optimization},
+	author={W.~Chen and M.~Sim and J.~Sun and C.~Teo},
+	journal={Operations Research},
+	volume={58},
+	number={2},
+	pages={470--485},
+	year={2010},
+	publisher={INFORMS}
+}
+
+@article{ref:cheung2012linear,
+	title={Linear matrix inequalities with stochastically dependent perturbations and applications to chance-constrained semidefinite optimization},
+	author={S.~Cheung and A.~Man-Cho So and K.~Wang},
+	journal={SIAM Journal on Optimization},
+	volume={22},
+	number={4},
+	pages={1394--1430},
+	year={2012},
+	publisher={SIAM}
+}
+
+@article{ref:zymler2013distributionally,
+	title={Distributionally robust joint chance constraints with second-order moment information},
+	author={S.~Zymler and D.~Kuhn and B.~Rustem},
+	journal={Mathematical Programming},
+	volume={137},
+	number={1-2},
+	pages={167--198},
+	year={2013},
+	publisher={Springer}
+}
+
+@article{ref:bertsimas2010models,
+	title={Models for minimax stochastic linear optimization problems with risk aversion},
+	author={D.~Bertsimas and X.V.~Doan and K.~Natarajan and C.~Teo},
+	journal={Mathematics of Operations Research},
+	volume={35},
+	number={3},
+	pages={580--602},
+	year={2010},
+	publisher={INFORMS}
+}
+
+@article{ref:kuhn2011primal,
+	title={Primal and dual linear decision rules in stochastic and robust optimization},
+	author={D.~Kuhn and W.~Wiesemann and A.~Georghiou},
+	journal={Mathematical Programming},
+	volume={130},
+	number={1},
+	pages={177--209},
+	year={2011},
+	publisher={Springer}
+}
+
+@article{ref:hanasusanto2015perspective,
+	title={A distributionally robust perspective on uncertainty quantification and chance constrained programming},
+	author={G.A.~Hanasusanto and V.~Roitch and D.~Kuhn and W.~Wiesemann},
+	journal={Mathematical Programming},
+	volume={151},
+	number={1},
+	pages={35--62},
+	year={2015},
+	publisher={Springer}
+}
+
+@article{ref:rujeerapaiboon2015robust,
+	title={Robust growth-optimal portfolios},
+	author={N.~Rujeerapaiboon and D.~Kuhn and W.~Wiesemann},
+	journal={Management Science},
+	volume={62},
+	number={7},
+	pages={2090--2109},
+	year={2015},
+	publisher={Informs}
+}
+
+@article{ref:nguyen2019distributionally,
+	title={Distributionally robust risk measures with structured {W}asserstein ambiguity sets},
+	author = {V.A.~Nguyen and D.~Filipovic and D.~Kuhn},
+	journal={Working paper},
+	year={2019}
+}
+
+@article{ref:hanasusanto2016comment,
+	title={A comment on ``computational complexity of stochastic programming problems''},
+	author={G.A.~Hanasusanto and D.~Kuhn and W.~Wiesemann},
+	journal={Mathematical Programming},
+	volume={159},
+	number={1-2},
+	pages={557--569},
+	year={2016},
+	publisher={Springer}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% General DRO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{ref:delage2019dicesion,
+	title={{``Dice"-sion} Making under Uncertainty: When Can a Random Decision Reduce Risk?},
+	author={E.~Delage and D.~Kuhn and W.~Wiesemann},
+	journal={To appear in Management Science},
+	year={2018}
+}
+
+@article{ref:vanparys2019optimal,
+	title={From data to decisions: {D}istributionally robust optimization is optimal},
+	author={B.~Van~Parys and P.~{Mohajerin Esfahani} and D.~Kuhn},
+	journal={arXiv preprint arXiv:1704.04118},
+	year={2017}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% General introduction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{ref:michaud1989enigma,
+	 author = {R.~Michaud},
+	 journal = {Financial Analysts Journal},
+	 number = {1},
+	 pages = {31--42},
+	 publisher = {CFA Institute},
+	 title = {The {M}arkowitz Optimization Enigma: {I}s `Optimized' Optimal?},
+	 volume = {45},
+	 year = {1989}
+}
+
+@INCOLLECTION{ref:chopra2011errors,
+	title = {The Effect of Errors in Means, Variances, and Covariances on Optimal Portfolio Choice},
+	author = {V.~Chopra and W.~Ziemba},
+	year = {2011},
+	chapter = {18},
+	pages = {249-257},
+	booktitle = {The Kelly Capital Growth Investment Criterion: Theory and Practice},
+	publisher = {World Scientific Publishing},
+}
+
+@article{ref:smith2006curse,
+	author = {J.~Smith and R.~Winkler},
+	title = {The Optimizer's Curse: {S}kepticism and Postdecision Surprise in Decision Analysis},
+	journal = {Management Science},
+	volume = {52},
+	number = {3},
+	pages = {311-322},
+	year = {2006},
+}
+
+@book{ref:nesterov1994interior,
+author = {Y.~Nesterov and A.~Nemirovskii},
+title = {Interior-Point Polynomial Algorithms in Convex Programming},
+publisher = {Society for Industrial and Applied Mathematics},
+year = {1994},
+}
+
+@article{ref:kolouri2017optimal,
+	title={Optimal mass transport: {S}ignal processing and machine-learning applications},
+	author={S.~Kolouri and S.R.~Park and M.~Thorpe and D.~Slepcev and G.K.~Rohde},
+	journal={IEEE Signal Processing Magazine},
+	volume={34},
+	number={4},
+	pages={43--59},
+	year={2017},
+	publisher={IEEE}
+}
+
+@inproceedings{ref:murez2018image,
+	title={Image to image translation for domain adaptation},
+	author={Z.~Murez and S.~Kolouri and D.~Kriegman and R.~Ramamoorthi and K.~Kim},
+	booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+	pages={4500--4509},
+	year={2018}
+}
+
+@article{ref:kundu2018discovery,
+	title={Discovery and visualization of structural biomarkers from {MRI} using transport-based morphometry},
+	author={S.~Kundu and S.~Kolouri and K.~I.~Erickson I and A.~F.~Kramer and E.~Mc{A}uley and G.K.~Rohde},
+	journal={NeuroImage},
+	volume={167},
+	pages={256--275},
+	year={2018},
+	publisher={Elsevier}
+}
+
+@inproceedings{ref:arjovsky2017wasserstein,
+	title={Wasserstein generative adversarial networks},
+	author={M.~Arjovsky and S.~Chintala and L.~Bottou},
+	booktitle={International Conference on Machine Learning},
+	pages={214--223},
+	year={2017}
+}
+
+@inproceedings{ref:gulrajani2017improved,
+	title={Improved training of {W}asserstein {GAN}s},
+	author={I.~Gulrajani and F.~Ahmed and M.~Arjovsky and V.~Dumoulin and A.~C.~Courville},
+	booktitle={Advances in Neural Information Processing Systems 30},
+	pages={5767--5777},
+	year={2017}
+}
+
+@inproceedings{ref:genevay2018learning,
+	title={Learning Generative Models with {S}inkhorn Divergences},
+	author={A.~Genevay and G.~Peyr\'e and M.~Cuturi},
+	booktitle={International Conference on Artificial Intelligence and Statistics},
+	pages={1608--1617},
+	year={2018}
+}
+
+@article{ref:flamary2018wasserstein,
+	title={{W}asserstein discriminant analysis},
+	author={R.~Flamary and M.~Cuturi and N.~Courty and A.~Rakotomamonjy},
+	journal={Machine Learning},
+	volume={107},
+	number={12},
+	pages={1923--1945},
+	year={2018},
+	publisher={Springer}
+}
+
+@inproceedings{ref:seguy2015principal,
+	title={Principal geodesic analysis for probability measures under the optimal transport metric},
+	author={V.~Seguy and M.~Cuturi},
+	booktitle={Advances in Neural Information Processing Systems 28},
+	pages={3312--3320},
+	year={2015}
+}
+
+@inproceedings{ref:rolet2016fast,
+	title={Fast dictionary learning with a smoothed {W}asserstein loss},
+	author={A.~Rolet and M.~Cuturi and G.~Peyr{\'e}},
+	booktitle={International Conference on Artificial Intelligence and Statistics},
+	pages={630--638},
+	year={2016}
+}
+
+@article{ref:schmitz2018wasserstein,
+	title={Wasserstein dictionary learning: {O}ptimal transport-based unsupervised nonlinear dictionary learning},
+	author={M.A.~Schmitz and M.~Heitz and N.~Bonneel and F.~Ngole and D.~Coeurjolly and M.~Cuturi and G.~Peyr{\'e} and J.~Starck},
+	journal={SIAM Journal on Imaging Sciences},
+	volume={11},
+	number={1},
+	pages={643--678},
+	year={2018},
+	publisher={SIAM}
+}
+
+@inproceedings{ref:ho2017multilevel,
+	title={Multilevel clustering via {W}asserstein means},
+	author={N.~Ho and X.~Nguyen and M.~Yurochkin and H.~H.~Bui and V.~Huynh and D.~Phung},
+	booktitle={International Conference on Machine Learning},
+	pages={1501--1509},
+	year={2017}
+}
+
+@article{ref:nguyen2013convergence,
+	title={Convergence of latent mixing measures in finite and infinite mixture models},
+	author={Nguyen, X.},
+	journal={The Annals of Statistics},
+	volume={41},
+	number={1},
+	pages={370--400},
+	year={2013}
+}
+
+@inproceedings{ref:kolouri2018sliced,
+	title={Sliced {W}asserstein distance for learning {G}aussian mixture models},
+	author={S.~Kolouri and G.K.~Rohde and H.~Hoffmann},
+	booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+	pages={3427--3436},
+	year={2018}
+}
+@inproceedings{ref:kolouri2015transport,
+	title={Transport-based single frame super resolution of very low resolution face images},
+	author={S.~Kolouri and G.K.~Rohde},
+	booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+	pages={4876--4884},
+	year={2015}
+}
+
+@article{ref:thorpe2017transportation,
+	title={A Transportation ${L}^p$ Distance for Signal Analysis},
+	author={M.~Thorpe and S.~Park and S.~Kolouri and G.K.~Rohde and D.~Slep{\v{c}}ev},
+	journal={Journal of Mathematical Imaging and Vision},
+	volume={59},
+	number={2},
+	pages={187--210},
+	year={2017}
+}
+
+@inproceedings{ref:alvarez2018structured,
+	title={Structured Optimal Transport},
+	author={D.~Alvarez-Melis and T.~Jaakkola and S.~Jegelka},
+	booktitle={International Conference on Artificial Intelligence and Statistics},
+	pages={1771--1780},
+	year={2018}
+}
+
+@inproceedings{ref:feydy2017optimal,
+	title={Optimal transport for diffeomorphic registration},
+	author={J.~Feydy and B.~Charlier and F.~Vialard and G.~Peyr{\'e}},
+	booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+	pages={291--299},
+	year={2017}
+}
+
+@article{ref:tartavel2016wasserstein,
+	title={Wasserstein loss for image synthesis and restoration},
+	author={G.~Tartavel and G.~Peyr{\'e} and Y.~Gousseau},
+	journal={SIAM Journal on Imaging Sciences},
+	volume={9},
+	number={4},
+	pages={1726--1755},
+	year={2016},
+	publisher={SIAM}
+}
+
+@article{ref:ferradans2014regularized,
+	title={Regularized discrete optimal transport},
+	author={S.~Ferradans and N.~Papadakis and G.~Peyr{\'e} and J.~Aujol},
+	journal={SIAM Journal on Imaging Sciences},
+	volume={7},
+	number={3},
+	pages={1853--1882},
+	year={2014},
+	publisher={SIAM}
+}
+
+@article{ref:papadakis2017convex,
+	title={Convex Histogram-Based Joint Image Segmentation with Regularized Optimal Transport Cost},
+	author={N.~Papadakis and J.~Rabin},
+	journal={Journal of Mathematical Imaging and Vision},
+	volume={59},
+	number={2},
+	pages={161--186},
+	year={2017},
+	publisher={Springer}
+}
+
+@article{ref:cazelles2018geodesic,
+	title={Geodesic {PCA} versus Log-{PCA} of Histograms in the {W}asserstein Space},
+	author={E.~Cazelles and V.~Seguy and J.~Bigot and M.~Cuturi and N.~Papadakis},
+	journal={SIAM Journal on Scientific Computing},
+	volume={40},
+	number={2},
+	pages={B429--B456},
+	year={2018},
+	publisher={SIAM}
+}
+
+@article{ref:wang2011optimal,
+	title={An optimal transportation approach for nuclear structure-based pathology},
+	author={W.~Wang and J.~A.~Ozolek and D.~Slepcev and A.~B.~Lee and C.~Chen and G.K.~Rohde},
+	journal={IEEE Transactions on Medical Imaging},
+	volume={30},
+	number={3},
+	pages={621--631},
+	year={2011}
+}
+
+@inproceedings{ref:pele2008linear,
+	title={A linear time histogram metric for improved sift matching},
+	author={O.~Pele and M.~Werman},
+	booktitle={European Conference on Computer Vision},
+	pages={495--508},
+	year={2008}
+}
+
+@inproceedings{ref:pele2009fast,
+	title={Fast and robust earth mover's distances},
+	author={O.~Pele and M.~Werman},
+	booktitle={International Conference on Computer Vision},
+	volume={9},
+	pages={460--467},
+	year={2009}
+}
+
+@article{ref:solomon2014earth,
+	title={Earth mover's distances on discrete surfaces},
+	author={J.~Solomon and R.~Rustamov and L.~Guibas and A.~Butscher},
+	journal={ACM Transactions on Graphics},
+	volume={33},
+	number={4},
+	pages={67},
+	year={2014}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% convex optimization
+%%%%%%%%%%%%%%%%%%%%%%
+@book{ref:boyd2004convex,
+	title={Convex Optimization},
+	author={S.~Boyd and L.~Vandenberghe},
+	year={2004},
+	publisher={Cambridge University Press}
+}
+
+@incollection{ref:yu2009projection,
+title = {A General Projection Property for Distribution Families},
+author = {Yu, Yao-liang and Li, Yuxi and Schuurmans, Dale and Csaba Szepesv\'{a}ri},
+booktitle = {Advances in Neural Information Processing Systems 22},
+pages = {2232--2240},
+year = {2009},
+}
+
+@book{ref:cohn2013measure,
+  author = {Cohn, Donald L.},
+  publisher = {Springer},
+  title = {Measure Theory},
+  year = 2013
+}
+
+@book{ref:berge1963topological,
+	title={Topological Spaces: Including a Treatment of Multi-Valued Functions, Vector Spaces, and Convexity},
+	author={Berge, C.},
+	year={1963},
+	publisher={Courier Corporation},
+}
+
+@Book{ref:hespanha2009linear,
+  author =       {Jo{\~a}o P. Hespanha},
+  title =        {Linear Systems Theory},
+  publisher =    {Princeton Press},
+  year =         2009,
+  address =      {Princeton, New Jersey},
+  month =        "Sep.",
+}
+
+@article{ref:bertsimas2003shortfall,
+  title={{Shortfall as a risk measure: Properties, optimization and applications}},
+  author={Dimitris Bertsimas and Geoffrey J. Lauprete and Alexander Samarov},
+  year={2004},
+  journal = {Journal of Economic Dynamics \& Control},
+  pages={1353-1381},
+  volume = 28
+}
+
+@article{ref:sion1958minimax,
+  author = {Sion, Maurice},
+  journal = {Pacific Journal of Mathematics},
+  number = 1,
+  pages = {171--176},
+  title = {On general minimax theorems},
+  volume = 8,
+  year = 1958
+}
+
+@article{ref:komiya1988elementary,
+author = "Komiya, Hidetoshi",
+journal = "Kodai Mathematical Journal",
+number = "1",
+pages = "5--7",
+title = "Elementary proof for {S}ion's minimax theorem",
+volume = "11",
+year = "1988"
+}
+
+
+@book{ref:aliprantis06hitchhiker,
+  author = {Aliprantis, Charalambos D. and Border, Kim C.},
+  publisher = {Springer},
+  title = {Infinite Dimensional Analysis: A Hitchhiker's Guide},
+  year = 2006
+}
+
+@Article{ref:isii1960extrema,
+  author={Keiiti Isii},
+  title={{The extrema of probability determined by generalized moments (i) bounded random variables}},
+  journal={Annals of the Institute of Statistical Mathematics},
+  year=1960,
+  volume={12},
+  number={2},
+  pages={119-134}
+}
+
+@article{ref:lobo1998socp,
+title = "Applications of second-order cone programming",
+journal = "Linear Algebra and its Applications",
+volume = "284",
+number = "1",
+pages = "193 - 228",
+year = "1998",
+issn = "0024-3795",
+doi = "https://doi.org/10.1016/S0024-3795(98)10032-0",
+author = "Miguel Sousa Lobo and Lieven Vandenberghe and Stephen Boyd and Hervé Lebret",
+}
+
+@book{ref:bernstein2009matrix,
+ ISBN = {9780691140391},
+ author = {Dennis S. Bernstein},
+ publisher = {Princeton University Press},
+ title = {Matrix Mathematics: Theory, Facts, and Formulas (Second Edition)},
+ year = {2009}
+}
+
+
+@book{ref:follmer2008stochastic,
+  author = {F{\"o}llmer, Hans and Schied, Alexander},
+  publisher = {de Gruyter},
+  title = {Stochastic Finance. An Introduction in Discrete Time},
+  year = 2008
+}
+
+
+@book{ref:ruschendorf2013math,
+  title={Mathematical Risk Analysis: Dependence, Risk Bounds, Optimal Allocations and Portfolios},
+  author={R{\"u}schendorf, L.},
+  year={2015},
+  publisher={Springer}
+}
+
+
+@article{ref:kuhn2010analysis,
+author = {Daniel Kuhn and David G. Luenberger},
+title = {Analysis of the rebalancing frequency in log-optimal portfolio selection},
+journal = {Quantitative Finance},
+volume = {10},
+number = {2},
+pages = {221-234},
+year  = {2010},
+publisher = {Routledge},
+doi = {10.1080/14697680802629400},
+}
+
+@article{ref:rockafellar2000optimization,
+    author = {R. Tyrrell Rockafellar and Stanislav Uryasev},
+    title = {Optimization of {C}onditional {V}alue-at-{R}isk},
+    journal = {Journal of Risk},
+    year = {2000},
+    volume = {2},
+    pages = {21--41}
+}
+
+@article{ref:shapiro2002minimax,
+author = {Alexander Shapiro and Anton Kleywegt },
+title = {Minimax analysis of stochastic problems},
+journal = {Optimization Methods and Software},
+volume = {17},
+number = {3},
+pages = {523-542},
+year  = {2002},
+}
+
+@article{ref:polik2007Slemma,
+author = {Pólik, I. and Terlaky, T.},
+title = {A Survey of the S-Lemma},
+journal = {SIAM Review},
+volume = {49},
+number = {3},
+pages = {371-418},
+year = {2007},
+doi = {10.1137/S003614450444614X},
+}
+
+@article{ref:bruni2016dataset,
+title = "Real-world datasets for portfolio selection and solutions of some stochastic dominance portfolio models",
+journal = "Data in Brief",
+volume = "8",
+pages = "858 - 862",
+year = "2016",
+issn = "2352-3409",
+doi = "https://doi.org/10.1016/j.dib.2016.06.031",
+url = "http://www.sciencedirect.com/science/article/pii/S2352340916303997",
+author = "Renato Bruni and Francesco Cesarone and Andrea Scozzari and Fabio Tardella"
+}
+
+@article{ref:zhang2018ambiguous,
+title = "Ambiguous chance-constrained binary programs under mean-covariance information",
+author = "Yiling Zhang and Ruiwei Jiang and Siqian Shen",
+year = "2018",
+volume = "28",
+pages = "2922--2944",
+journal = "SIAM Journal on Optimization",
+issn = "1052-6234",
+number = "4",
+}
+
+@article{ref:atamturk2008polymatroids,
+title = "Polymatroids and mean-risk minimization in discrete optimization",
+journal = "Operations Research Letters",
+volume = "36",
+number = "5",
+pages = "618 - 622",
+year = "2008",
+issn = "0167-6377",
+author = "Alper Atamtürk and Vishnu Narayanan",
+}
+
+
+
+
+@book{ref:bhatia2007pd,
+ author = {Rajendra Bhatia},
+ publisher = {Princeton University Press},
+ title = {Positive Definite Matrices},
+ year = {2007}
+}
+
+
+
+@InProceedings{ref:tiomoko2019covariance,
+  title = 	 {Random Matrix Improved Covariance Estimation for a Large Class of Metrics},
+  author = 	 {Tiomoko, Malik and Couillet, Romain and Bouchard, Florent and Ginolhac, Guillaume},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  pages = 	 {6254--6263},
+  year = 	 {2019},
+}
+
+
+%%%%%%%%%%%%%%%%%%%
+@book{ref:stroock2011probability,
+author = {Daniel Stroock},
+publisher = {Cambridge University Press},
+year = {2011},
+title = {Probability Theory: An Analytic View}
+}
+
+
+@article{ref:trillos2015rate, title={On the Rate of Convergence of Empirical Measures in $\infty$-transportation Distance}, volume={67}, DOI={10.4153/CJM-2014-044-6}, number={6}, journal={Canadian Journal of Mathematics}, publisher={Cambridge University Press}, author={García Trillos, Nicolás and Slepčev, Dejan}, year={2015}, pages={1358–1383}}
+
+
+@article{ref:xie2019tractable,
+	title={Tractable Reformulations of Distributionally Robust Two-stage Stochastic Programs with $\infty$-{W}asserstein Distance},
+	author={Weijun Xie},
+	journal={arXiv preprint arXiv:1908.08454},
+	year={2019}
+}
+
+@article{ref:bertsimas2019computational,
+	title={Two-stage sample robust optimization},
+	author={D.~Bertsimas and S.~Shtern and B.~Sturt},
+	journal={arXiv preprint arXiv:1907.07142},
+	year={2019}
+}
+
+@article{ref:bertsimas2018data-driven,
+	title={A data-driven approach for multi-stage linear optimization},
+	author={D.~Bertsimas, and S.~Shtern, and B.~Sturt},
+	journal={Available from Optimization Online},
+	year={2018}
+}
+
+@article{ref:dantzig1957discrete,
+ author = {George B. Dantzig},
+ journal = {Operations Research},
+ number = {2},
+ pages = {266--277},
+ title = {Discrete-Variable Extremum Problems},
+ volume = {5},
+ year = {1957}
+}
+@book{ref:korte2007,
+ author = {Korte, Bernhard and Vygen, Jens},
+ title = {Combinatorial Optimization: Theory and Algorithms},
+ year = {2007},
+ isbn = {3540718435, 9783540718437},
+ publisher = {Springer},
+} 
+@book{ref:hiriart2012fundamentals,
+  title={Fundamentals of convex analysis},
+  author={Hiriart-Urruty, Jean-Baptiste and Lemar{\'e}chal, Claude},
+  year={2012},
+  publisher={Springer Science \& Business Media}
+}
+@Article{ref:isii1962,
+author="Isii, Keiiti",
+title="On sharpness of tchebycheff-type inequalities",
+journal="Annals of the Institute of Statistical Mathematics",
+year="1962",
+month="Dec",
+day="01",
+volume="14",
+number="1",
+pages="185--197",
+issn="1572-9052",
+doi="10.1007/BF02868641",
+url="https://doi.org/10.1007/BF02868641"
+}
+
+@book{ref:bertsekas1999nonlinear,
+  author = {Bertsekas, D.P.},
+  publisher = {Athena Scientific},
+  title = {Nonlinear Programming},
+  year = 1999
+}
+
+@inproceedings{ref:hu2018does,
+author = {Weihua Hu and Gang Niu and Issei Sato and Masashi Sugiyama },
+title = {Does Distributionally Robust Supervised Learning Give Robust Classifiers?},
+booktitle = {Proceedings of the 35th International Conference on Machine Learning},
+year = {2018}
+}
+
+@book{ref:berlinet2004reproducing,
+author = {Berlinet, Alain and Thomas-Agnan, Christine},
+year = {2004},
+title = {Reproducing Kernel Hilbert Space in Probability and Statistics},
+publisher = {Kluwer Academic Publishers}
+}
+
+@book{ref:bertsekas2009convex,
+	AUTHOR = {Bertsekas, Dimitri},
+	TITLE = {Convex Optimization Theory},
+	PUBLISHER = {Athena Scientific},
+	YEAR = {2009},
+	PAGES = {x+246},
+}
+
+@book{ref:berman1994nonnegative,
+author = {Berman, Abraham and Plemmons, Robert J.},
+title = {Nonnegative Matrices in the Mathematical Sciences},
+publisher = {Society for Industrial and Applied Mathematics},
+year = {1994},
+}
+
+@phdthesis{ref:bertsekas1971control,
+    author = {Bertsekas, Dimitri P.}, 
+    year = 1971, 
+    title = {Control of Uncertain Systems with a Set-Membership Description of Uncertainty} ,
+    school   = {Massachusetts Institute of Technology},
+}
+
+@article{ref:chebbi2012means,
+title = "Means of {H}ermitian positive-definite matrices based on the log-determinant $\alpha$-divergence function",
+journal = "Linear Algebra and its Applications",
+volume = "436",
+number = "7",
+pages = "1872 - 1889",
+year = "2012",
+author = "Zeineb Chebbi and Maher Moakher",
+}
+
+@inproceedings{ref:lahoti2020fairness,
+author = {Preethi Lahoti and Alex Beutel and Jilin Chen and Kang Lee, Flavien Prost and Nithum Thain and Xuezhi Wang and Ed Chi},
+title = {Fairness without Demographics through Adversarially Reweighted Learning},
+booktitle={Advances in Neural Information Processing Systems},
+year = {2020}
+}
+
+@inproceedings{ref:wang2020robust,
+author = {Wang, Serena and Guo, Wenshuo and Narasimhan, Harikrishna and Cotter, Andrew and Gupta, Maya and Jordan, Michael I},
+title = {Robust optimization for fairness with noisy protected groups},
+booktitle={Advances in Neural Information Processing Systems},
+year = {2020}
+}
+
+@article{duchi2019distributionally,
+  title={Distributionally robust losses against mixture covariate shifts},
+  author={Duchi, John C and Hashimoto, Tatsunori and Namkoong, Hongseok},
+  journal={Under review},
+  year={2019}
+}
+
+@article{zhang2020coping,
+  title={Coping with Label Shift via Distributionally Robust Optimisation},
+  author={Zhang, Jingzhao and Menon, Aditya and Veit, Andreas and Bhojanapalli, Srinadh and Kumar, Sanjiv and Sra, Suvrit},
+  journal={arXiv preprint arXiv:2010.12230},
+  year={2020}
+}
+
+@inproceedings{ref:namkoong2017variance,
+title = {Variance-based Regularization with Convex Objectives},
+author = {Namkoong, Hongseok and Duchi, John C},
+booktitle = {Advances in Neural Information Processing Systems 30},
+pages = {2971--2980},
+year = {2017}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Nadaraya-Watson estimator
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@book{tsybakov2008introduction,
+  title={Introduction to Nonparametric Estimation},
+  author={Tsybakov, Alexandre B},
+  year={2008},
+  publisher={Springer}
+}
+
+@inproceedings{noh2017generative,
+  title={Generative local metric learning for kernel regression},
+  author={Noh, Yung-Kyun and Sugiyama, Masashi and Kim, Kee-Eung and Park, Frank and Lee, Daniel D},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={2452--2462},
+  year={2017}
+}
+
+@article{liu2020learning,
+  title={Learning Data-adaptive Non-parametric Kernels},
+  author={Liu, Fanghui and Huang, Xiaolin and Gong, Chen and Yang, Jie and Li, Li},
+  journal={Journal of Machine Learning Research},
+  volume={21},
+  number={208},
+  pages={1--39},
+  year={2020}
+}
+
+@article{hofmann2008kernel,
+  title={Kernel methods in machine learning},
+  author={Hofmann, Thomas and Sch{\"o}lkopf, Bernhard and Smola, Alexander J},
+  journal={The Annals of Statistics},
+  pages={1171--1220},
+  year={2008}
+}
+
+@article{carmeli2010vector,
+  title={Vector valued reproducing kernel {H}ilbert spaces and universality},
+  author={Carmeli, Claudio and De Vito, Ernesto and Toigo, Alessandro and Umanit{\'a}, Veronica},
+  journal={Analysis and Applications},
+  volume={8},
+  number={01},
+  pages={19--61},
+  year={2010},
+  publisher={World Scientific}
+}
+
+@article{micchelli2006universal,
+  title={Universal kernels},
+  author={Micchelli, Charles A and Xu, Yuesheng and Zhang, Haizhang},
+  journal={Journal of Machine Learning Research},
+  volume={7},
+  number={Dec},
+  pages={2651--2667},
+  year={2006}
+}
+
+@article{sriperumbudur2011universality,
+  title={Universality, Characteristic Kernels and {RKHS} Embedding of Measures.},
+  author={Sriperumbudur, Bharath K and Fukumizu, Kenji and Lanckriet, Gert RG},
+  journal={Journal of Machine Learning Research},
+  volume={12},
+  number={7},
+  year={2011}
+}
+
+%%%%%%%%%%
+% Geographically weighted regression
+%%%%%%%%%%
+
+@article{ref:brunsdon1998geographically,
+  title={Geographically weighted regression},
+  author={Brunsdon, Chris and Fotheringham, Stewart and Charlton, Martin},
+  journal={Journal of the Royal Statistical Society: Series D (The Statistician)},
+  volume={47},
+  number={3},
+  pages={431--443},
+  year={1998},
+  publisher={Wiley Online Library}
+}
+
+@book{ref:silverman1986density,
+  title={Density Estimation for Statistics and Data Analysis},
+  author={Silverman, Bernard W},
+  year={1986},
+  publisher={CRC Press}
+}
+
+
+@book{ref:hastie09elements,
+  author = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome},
+  publisher = {Springer},
+  title = {The Elements of Statistical Learning},
+  year = 2009
+}
+
+@article{ref:muandet2016kernel,
+  title={Kernel mean embedding of distributions: A review and beyond},
+  author={Muandet, Krikamol and Fukumizu, Kenji and Sriperumbudur, Bharath and Sch{\"o}lkopf, Bernhard},
+  journal={arXiv preprint arXiv:1605.09522},
+  year={2016}
+}
+
+@inproceedings{hashimoto2018fairness,
+  title={Fairness without demographics in repeated loss minimization},
+  author={Hashimoto, Tatsunori and Srivastava, Megha and Namkoong, Hongseok and Liang, Percy},
+  booktitle={International Conference on Machine Learning},
+  pages={1929--1938},
+  year={2018},
+}
+
+%%%%%%%%%%%%%%%
+% Adversarial Reweighting
+%%%%%%%%%%%%%%%
+
+@inproceedings{DBLP:conf/nips/ShuXY0ZXM19,
+  author    = {Jun Shu and
+               Qi Xie and
+               Lixuan Yi and
+               Qian Zhao and
+               Sanping Zhou and
+               Zongben Xu and
+               Deyu Meng},
+  title     = {Meta-Weight-Net: Learning an Explicit Mapping For Sample Weighting},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume={32},
+  pages     = {1917--1928},
+  year      = {2019},
+}
+
+@article{wu2016,
+  title={Importance Reweighting Using Adversarial-Collaborative Training},
+  author={Yifan Wu and Tianshu Ren and Lidan Mu},
+  journal={In NIPS 2016 Workshop},
+  year={2016}
+}
+
+@inproceedings{NIPS2016_9d268236,
+ title = {Equality of Opportunity in Supervised Learning},
+ author = {Hardt, Moritz and Price, Eric and Price, Eric and Srebro, Nati},
+ booktitle = {Advances in Neural Information Processing Systems},
+ volume = {29},
+ pages = {3315--3323},
+ year = {2016}
+}
+
+@inproceedings{NIPS2017_82161242,
+title = {From Parity to Preference-based Notions of Fairness in Classification},
+ author = {Zafar, Muhammad Bilal and Valera, Isabel and Rodriguez, Manuel and Gummadi, Krishna and Weller, Adrian},
+ booktitle = {Advances in Neural Information Processing Systems},
+ volume = {30},
+ pages = {229--239},
+ year = {2017},
+}
+
+@InProceedings{pmlr-v28-zemel13,
+  title = 	 {Learning Fair Representations},
+  author = 	 {Rich Zemel and Yu Wu and Kevin Swersky and Toni Pitassi and Cynthia Dwork},
+  booktitle = 	 {Proceedings of the 30th International Conference on Machine Learning},
+  volume = 	 {28},
+  pages = 	 {325--333},
+  year = 	 {2013},
+}
+
+@inproceedings{NIPS2014_792c7b5a,
+title = {Fairness in Multi-Agent Sequential Decision-Making},
+ author = {Zhang, Chongjie and Shah, Julie A},
+ booktitle = {Advances in Neural Information Processing Systems},
+ volume = {27},
+ pages = {2636--2644},
+ year = {2014},
+}
+
+@InProceedings{pmlr-v48-amodei16,
+  title = 	 {Deep Speech 2 : End-to-End Speech Recognition in {E}nglish and {M}andarin},
+  author = 	 {Dario Amodei and Sundaram Ananthanarayanan and Rishita Anubhai and Jingliang Bai and Eric Battenberg and Carl Case and Jared Casper and Bryan Catanzaro and Qiang Cheng and Guoliang Chen},
+  booktitle = 	 {Proceedings of The 33rd International Conference on Machine Learning},
+  volume = 	 {48},
+  pages = 	 {173--182},
+  year = 	 {2016},
+}
+
+@inproceedings{DBLP:conf/acl/RajpurkarJL18,
+  title={Know What You Don't Know: Unanswerable Questions for squad},
+  author={Pranav Rajpurkar and Robin Jia and Percy Liang},
+  booktitle={Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics},
+  pages={784-789},
+  year={2018},
+ }
+
+@inproceedings{sugiyama2007direct,
+  title={Direct Importance Estimation with Model Selection and Its Application to Covariate Shift Adaptation.},
+  author={Sugiyama, Masashi and Nakajima, Shinichi and Kashima, Hisashi and Von Buenau, Paul and Kawanabe, Motoaki},
+  booktitle={Advances in Neural Information Processing Systems},
+  volume={7},
+  pages={1433--1440},
+  year={2007},
+}
+
+@article{huang2006correcting,
+  title={Correcting sample selection bias by unlabeled data},
+  author={Huang, Jiayuan and Gretton, Arthur and Borgwardt, Karsten and Sch{\"o}lkopf, Bernhard and Smola, Alex},
+  journal={Advances in neural information processing systems},
+  volume={19},
+  pages={601--608},
+  year={2006},
+}
+
+@article{sun2011two,
+  title={A two-stage weighting framework for multi-source domain adaptation},
+  author={Sun, Qian and Chattopadhyay, Rita and Panchanathan, Sethuraman and Ye, Jieping},
+  journal={Advances in neural information processing systems},
+  volume={24},
+  pages={505--513},
+  year={2011},
+}
+
+@article{petrovic2020fair,
+  title={FAIR: Fair Adversarial Instance Re-weighting},
+  author={Petrovi{\'c}, Andrija and Nikoli{\'c}, Mladen and Radovanovi{\'c}, Sandro and Deliba{\v{s}}i{\'c}, Boris and Jovanovi{\'c}, Milo{\v{s}}},
+  journal={arXiv preprint arXiv:2011.07495},
+  year={2020}
+}
+
+@inproceedings{ShuNeurIPS19,
+  author    = {Jun Shu and
+               Qi Xie and
+               Lixuan Yi and
+               Qian Zhao and
+               Sanping Zhou and
+               Zongben Xu and
+               Deyu Meng},
+  title     = {Meta-Weight-Net: Learning an Explicit Mapping For Sample Weighting},
+  booktitle = {Advances in Neural Information Processing Systems},
+  pages     = {1917--1928},
+  year      = {2019},
+}
+
+@inproceedings{ren2018learning,
+  title={Learning to reweight examples for robust deep learning},
+  author={Ren, Mengye and Zeng, Wenyuan and Yang, Bin and Urtasun, Raquel},
+  booktitle={International Conference on Machine Learning},
+  pages={4334--4343},
+  year={2018},
+  organization={PMLR}
+}
+
+@inproceedings{jiang2018mentornet,
+  title={Mentornet: Learning data-driven curriculum for very deep neural networks on corrupted labels},
+  author={Jiang, Lu and Zhou, Zhengyuan and Leung, Thomas and Li, Li-Jia and Fei-Fei, Li},
+  booktitle={International Conference on Machine Learning},
+  pages={2304--2313},
+  year={2018},
+  organization={PMLR}
+}
+
+@inproceedings{chen2018re,
+  title={Re-weighted adversarial adaptation network for unsupervised domain adaptation},
+  author={Chen, Qingchao and Liu, Yang and Wang, Zhaowen and Wassell, Ian and Chetty, Kevin},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={7976--7985},
+  year={2018}
+}
+
+@inproceedings{
+zhang2021geometryaware,
+title={Geometry-aware Instance-reweighted Adversarial Training},
+author={Jingfeng Zhang and Jianing Zhu and Gang Niu and Bo Han and Masashi Sugiyama and Mohan Kankanhalli},
+booktitle={International Conference on Learning Representations},
+year={2021},
+}
+
+%%%%%%%%
+% NW
+%%%%%%%
+@article{nadaraya1964estimating,
+  title={On estimating regression},
+  author={Nadaraya, Elizbar A},
+  journal={Theory of Probability \& Its Applications},
+  volume={9},
+  number={1},
+  pages={141--142},
+  year={1964},
+  publisher={SIAM}
+}
+
+@article{watson1964smooth,
+  title={Smooth regression analysis},
+  author={Watson, Geoffrey S},
+  journal={Sankhy{\=a}: The Indian Journal of Statistics, Series A},
+  pages={359--372},
+  year={1964},
+  publisher={JSTOR}
+}
+%%%%%%%%
+% LLR
+%%%%%%%%
+@article{atkeson1997locally,
+  title={Locally weighted learning},
+  author={Atkeson, Christopher G and Moore, Andrew W and Schaal, Stefan},
+  journal={Lazy Learning},
+  pages={11--73},
+  year={1997},
+  publisher={Springer}
+}
+
+@article{ruppert1994multivariate,
+  title={Multivariate locally weighted least squares regression},
+  author={Ruppert, David and Wand, Matthew P},
+  journal={The Annals of Statistics},
+  pages={1346--1370},
+  year={1994},
+  publisher={JSTOR}
+}
+
+%%%%%%%%%%
+% ML for NW regression
+%%%%%%%%%%
+@inproceedings{weinberger2007metric,
+  title={Metric learning for kernel regression},
+  author={Weinberger, Kilian Q and Tesauro, Gerald},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={612--619},
+  year={2007},
+  organization={PMLR}
+}
+
+@article{kpotufe2016gradients,
+  title={Gradients weights improve regression and classification},
+  author={Kpotufe, Samory and Boularias, Abdeslam and Schultz, Thomas and Kim, Kyoungok},
+  journal={The Journal of Machine Learning Research},
+  volume={17},
+  number={1},
+  pages={672--705},
+  year={2016},
+  publisher={JMLR. org}
+}
+
+%%%%%%%%%
+% KERNELS
+%%%%%%%%%
+
+@book{berg1984harmonic,
+  title={Harmonic Analysis on Semigroups: Theory of Positive Definite and Related Functions},
+  author={Berg, Christian and Christensen, Jens Peter Reus and Ressel, Paul},
+  year={1984},
+  publisher={Springer}
+}
+
+@book{scholkopf2018learning,
+  title={Learning with kernels: support vector machines, regularization, optimization, and beyond},
+  author={Scholkopf, Bernhard and Smola, Alexander J},
+  year={2018},
+  publisher={Adaptive Computation and Machine Learning series}
+}
+
+@book{rasmussen2005GP,
+author = {Rasmussen, Carl Edward and Williams, Christopher K. I.},
+title = {Gaussian Processes for Machine Learning (Adaptive Computation and Machine Learning)},
+year = {2005},
+isbn = {026218253X},
+publisher = {The MIT Press}
+}
+
+@article{ref:du2018robust,
+	title={Robust Nonparametric Regression under {H}uber's $\epsilon$-contamination Model},
+	author = {Simon Du and Yining Wang and Sivaraman Balakrishnan and Pradeep Ravikumar and Aarti Singh},
+	journal={arXiv preprint arXiv:1805.10406},
+	year={2018}
+}
+
+
+@article{ref:liu2017density,
+title = {Density Estimation with Contaminated Data: Minimax Rates and Theory of Adaptation}, 
+author = {Haoyang Liu and Chao Gao},
+year = 2017,
+journal={arXiv preprint arXiv:1712.07801v3}
+}
+%%%%%%%%%%%
+% Sugiyama - Gang Niu
+%%%%%%%%%%
+@article{kwon2019principled,
+  title={Principled analytic classifier for positive-unlabeled learning via weighted integral probability metric},
+  author={Kwon, Yongchan and Kim, Wonyoung and Sugiyama, Masashi and Paik, Myunghee Cho},
+  journal={Machine Learning},
+  pages={1--20},
+  year={2019},
+  publisher={Springer}
+}
+
+@article{karasuyama2012multi,
+  title={Multi-parametric solution-path algorithm for instance-weighted support vector machines},
+  author={Karasuyama, Masayuki and Harada, Naoyuki and Sugiyama, Masashi and Takeuchi, Ichiro},
+  journal={Machine learning},
+  volume={88},
+  number={3},
+  pages={297--330},
+  year={2012},
+  publisher={Springer}
+}
+
+@article{ref:bottou1992local,
+    author = {Bottou, Léon and Vapnik, Vladimir},
+    title = "Local Learning Algorithms",
+    journal = {Neural Computation},
+    volume = {4},
+    number = {6},
+    pages = {888-900},
+    year = {1992},
+    month = {11},
+}
+
+
+
+@article{ref:kim2012robust,
+	title={Robust Kernel Density Estimation},
+	author={JooSeuk Kim and Clayton D. Scott},
+	journal={The Journal of Machine Learning Research},
+	volume={13},
+	pages={2529--2565},
+	year={2012}
+}
+
+
+@inproceedings{ref:ribeiro2016why,
+  title={``{W}hy should {I} trust you?" {E}xplaining the predictions of any classifier},
+  author={Ribeiro, Marco Tulio and Singh, Sameer and Guestrin, Carlos},
+  booktitle={Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  pages={1135--1144},
+  year={2016}
+}
+
+@InProceedings{ref:ghorbani2019interpretation, 
+title={Interpretation of Neural Networks Is Fragile}, 
+volume={33}, 
+url={https://ojs.aaai.org/index.php/AAAI/article/view/4252}, DOI={10.1609/aaai.v33i01.33013681}, 
+number={01}, 
+booktitle={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+author={Ghorbani, Amirata and Abid, Abubakar and Zou, James}, 
+year={2019}, month={Jul.}, pages={3681-3688} 
+}
+
+@article{ref:alvarez2018on,
+  title={On the robustness of interpretability methods},
+  author={Alvarez-Melis, David and Jaakkola, Tommi S},
+  journal={arXiv preprint arXiv:1806.08049},
+  year={2018}
+}
+
+
+@article{ref:nguyen2021robustifying,
+title = {Robustifying Conditional Portfolio Decisions via Optimal Transport},
+author = {Nguyen, Viet Anh and Zhang, Fan and Blanchet, Jose and Delage, Erick and Ye, Yinyu},
+year = {2021},
+journal =  {arXiv preprint arXiv:2103.16451},
+}
+
+@inproceedings{ref:nguyen2020distributionally-1,
+title = {Distributionally Robust Local Non-parametric Conditional Estimation},
+author = {Nguyen, Viet Anh and Zhang, Fan and Blanchet, Jose and Delage, Erick and Ye, Yinyu},
+year = {2020},
+booktitle=  {Advances in Neural Information Processing Systems 33},
+}
+
+@article{ref:kannan2020residuals,
+  title={Residuals-based distributionally robust optimization with covariate information},
+  author={Kannan, Rohit and Bayraksan, G{\"u}zin and Luedtke, James R},
+  journal={arXiv preprint arXiv:2012.01088},
+  year={2020}
+}
+
+@article{ref:esteban2020distributionally,
+  title={Distributionally robust stochastic programs with side information based on trimmings},
+  author={Esteban-P{\'e}rez, Adri{\'a}n and Morales, Juan M},
+  journal={arXiv preprint arXiv:2009.10592},
+  year={2020}
+}

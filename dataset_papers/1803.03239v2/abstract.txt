@@ -1,0 +1,12 @@
+We study the problem of fair classification within the versatile framework of
+Dwork et al. [ITCS '12], which assumes the existence of a metric that measures
+similarity between pairs of individuals. Unlike earlier work, we do not assume
+that the entire metric is known to the learning algorithm; instead, the learner
+can query this arbitrary metric a bounded number of times. We propose a new
+notion of fairness called metric multifairness and show how to achieve this
+notion in our setting. Metric multifairness is parameterized by a similarity
+metric $d$ on pairs of individuals to classify and a rich collection ${\cal C}$
+of (possibly overlapping) "comparison sets" over pairs of individuals. At a
+high level, metric multifairness guarantees that similar subpopulations are
+treated similarly, as long as these subpopulations are identified within the
+class ${\cal C}$.

@@ -1,0 +1,22 @@
+Recent hybrid models combining Linear State Space Models (SSMs) with
+self-attention mechanisms have demonstrated impressive results across a range
+of sequence modeling tasks. However, current approaches apply attention modules
+statically and uniformly to all elements in the input sequences, leading to
+sub-optimal quality-efficiency trade-offs. To address this limitation, we
+introduce Sparse Modular Activation (SMA), a general mechanism enabling neural
+networks to sparsely and dynamically activate sub-modules for sequence elements
+in a differentiable manner. Through allowing each element to skip non-activated
+sub-modules, SMA reduces computation and memory consumption of neural networks
+at both training and inference stages. To validate the effectiveness of SMA on
+sequence modeling, we design a novel neural architecture, SeqBoat, which
+employs SMA to sparsely activate a Gated Attention Unit (GAU) based on the
+state representations learned from an SSM. By constraining the GAU to only
+conduct local attention on the activated inputs, SeqBoat can achieve linear
+inference complexity with theoretically infinite attention span, and provide
+substantially better quality-efficiency trade-off than the chunking-based
+models. With experiments on a wide range of tasks, including long sequence
+modeling, speech classification and language modeling, SeqBoat brings new
+state-of-the-art results among hybrid models with linear complexity, and
+reveals the amount of attention needed for each task through the learned sparse
+activation patterns. Our code is publicly available at
+https://github.com/renll/SeqBoat.

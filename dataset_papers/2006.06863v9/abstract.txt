@@ -1,0 +1,20 @@
+Efficient evaluation of a network architecture drawn from a large search
+space remains a key challenge in Neural Architecture Search (NAS). Vanilla NAS
+evaluates each architecture by training from scratch, which gives the true
+performance but is extremely time-consuming. Recently, one-shot NAS
+substantially reduces the computation cost by training only one supernetwork,
+a.k.a. supernet, to approximate the performance of every architecture in the
+search space via weight-sharing. However, the performance estimation can be
+very inaccurate due to the co-adaption among operations. In this paper, we
+propose few-shot NAS that uses multiple supernetworks, called sub-supernet,
+each covering different regions of the search space to alleviate the undesired
+co-adaption. Compared to one-shot NAS, few-shot NAS improves the accuracy of
+architecture evaluation with a small increase of evaluation cost. With only up
+to 7 sub-supernets, few-shot NAS establishes new SoTAs: on ImageNet, it finds
+models that reach 80.5% top-1 accuracy at 600 MB FLOPS and 77.5% top-1 accuracy
+at 238 MFLOPS; on CIFAR10, it reaches 98.72% top-1 accuracy without using extra
+data or transfer learning. In Auto-GAN, few-shot NAS outperforms the previously
+published results by up to 20%. Extensive experiments show that few-shot NAS
+significantly improves various one-shot methods, including 4 gradient-based and
+6 search-based methods on 3 different tasks in NasBench-201 and
+NasBench1-shot-1.

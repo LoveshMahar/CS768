@@ -1,0 +1,17 @@
+In non-private stochastic convex optimization, stochastic gradient methods
+converge much faster on interpolation problems -- problems where there exists a
+solution that simultaneously minimizes all of the sample losses -- than on
+non-interpolating ones; we show that generally similar improvements are
+impossible in the private setting. However, when the functions exhibit
+quadratic growth around the optimum, we show (near) exponential improvements in
+the private sample complexity. In particular, we propose an adaptive algorithm
+that improves the sample complexity to achieve expected error $\alpha$ from
+$\frac{d}{\varepsilon \sqrt{\alpha}}$ to $\frac{1}{\alpha^\rho} +
+\frac{d}{\varepsilon} \log\left(\frac{1}{\alpha}\right)$ for any fixed $\rho
+>0$, while retaining the standard minimax-optimal sample complexity for
+non-interpolation problems. We prove a lower bound that shows the
+dimension-dependent term is tight. Furthermore, we provide a superefficiency
+result which demonstrates the necessity of the polynomial term for adaptive
+algorithms: any algorithm that has a polylogarithmic sample complexity for
+interpolation problems cannot achieve the minimax-optimal rates for the family
+of non-interpolation problems.

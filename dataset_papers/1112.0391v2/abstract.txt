@@ -1,0 +1,16 @@
+This paper studies the problem of accurately recovering a sparse vector
+$\beta^{\star}$ from highly corrupted linear measurements $y = X \beta^{\star}
++ e^{\star} + w$ where $e^{\star}$ is a sparse error vector whose nonzero
+entries may be unbounded and $w$ is a bounded noise. We propose a so-called
+extended Lasso optimization which takes into consideration sparse prior
+information of both $\beta^{\star}$ and $e^{\star}$. Our first result shows
+that the extended Lasso can faithfully recover both the regression as well as
+the corruption vector. Our analysis relies on the notion of extended restricted
+eigenvalue for the design matrix $X$. Our second set of results applies to a
+general class of Gaussian design matrix $X$ with i.i.d rows $\oper N(0,
+\Sigma)$, for which we can establish a surprising result: the extended Lasso
+can recover exact signed supports of both $\beta^{\star}$ and $e^{\star}$ from
+only $\Omega(k \log p \log n)$ observations, even when the fraction of
+corruption is arbitrarily close to one. Our analysis also shows that this
+amount of observations required to achieve exact signed support is indeed
+optimal.

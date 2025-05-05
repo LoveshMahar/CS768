@@ -1,0 +1,17 @@
+We study bandit model selection in stochastic environments. Our approach
+relies on a meta-algorithm that selects between candidate base algorithms. We
+develop a meta-algorithm-base algorithm abstraction that can work with general
+classes of base algorithms and different type of adversarial meta-algorithms.
+Our methods rely on a novel and generic smoothing transformation for bandit
+algorithms that permits us to obtain optimal $O(\sqrt{T})$ model selection
+guarantees for stochastic contextual bandit problems as long as the optimal
+base algorithm satisfies a high probability regret guarantee. We show through a
+lower bound that even when one of the base algorithms has $O(\log T)$ regret,
+in general it is impossible to get better than $\Omega(\sqrt{T})$ regret in
+model selection, even asymptotically. Using our techniques, we address model
+selection in a variety of problems such as misspecified linear contextual
+bandits, linear bandit with unknown dimension and reinforcement learning with
+unknown feature maps. Our algorithm requires the knowledge of the optimal base
+regret to adjust the meta-algorithm learning rate. We show that without such
+prior knowledge any meta-algorithm can suffer a regret larger than the optimal
+base regret.

@@ -1,0 +1,1336 @@
+@inproceedings{Gholami2019,
+abstract = {Residual neural networks can be viewed as the forward Euler discretization of an Ordinary Differential Equation (ODE) with a unit time step. This has recently motivated researchers to explore other discretization approaches and train ODE based networks. However, an important challenge of neural ODEs is their prohibitive memory cost during gradient backpropogation. Recently a method proposed in [Chen et al., 2018], claimed that this memory overhead can be reduced from O(LNt), where Nt is the number of time steps, down to O(L) by solving forward ODE backwards in time, where L is the depth of the network. However, we will show that this approach may lead to several problems: (i) it may be numerically unstable for ReLU/non-ReLU activations and general convolution operators, and (ii) the proposed optimize-then-discretize approach may lead to divergent training due to inconsistent gradients for small time step sizes. We discuss the underlying problems, and to address them we propose ANODE, an Adjoint based Neural ODE framework which avoids the numerical instability related problems noted above, and provides unconditionally accurate gradients. ANODE has a memory footprint of O(L) + O(Nt), with the same computational cost as reversing ODE solve. We furthermore, discuss a memory efficient algorithm which can further reduce this footprint with a trade-off of additional computational cost. We show results on Cifar-10/100 datasets using ResNet and SqueezeNext neural networks.},
+archivePrefix = {arXiv},
+arxivId = {1902.10298},
+author = {Gholami, Amir and Keutzer, Kurt and Biros, George},
+booktitle = {IJCAI International Joint Conference on Artificial Intelligence},
+doi = {10.24963/ijcai.2019/103},
+eprint = {1902.10298},
+isbn = {9780999241141},
+issn = {10450823},
+mendeley-groups = {Ensemble Filters},
+title = {{ANODE: Unconditionally accurate memory-efficient gradients for neural ODEs}},
+year = {2019}
+}
+@inproceedings{Chen2018,
+abstract = {We introduce a new family of deep neural network models. Instead of specifying a discrete sequence of hidden layers, we parameterize the derivative of the hidden state using a neural network. The output of the network is computed using a black-box differential equation solver. These continuous-depth models have constant memory cost, adapt their evaluation strategy to each input, and can explicitly trade numerical precision for speed. We demonstrate these properties in continuous-depth residual networks and continuous-time latent variable models. We also construct continuous normalizing flows, a generative model that can train by maximum likelihood, without partitioning or ordering the data dimensions. For training, we show how to scalably backpropagate through any ODE solver, without access to its internal operations. This allows end-to-end training of ODEs within larger models.},
+archivePrefix = {arXiv},
+arxivId = {1911.07532},
+author = {Chen, Ricky T.Q. and Rubanova, Yulia and Bettencourt, Jesse and Duvenaud, David},
+booktitle = {Advances in Neural Information Processing Systems},
+doi = {10.2307/j.ctvcm4h3p.19},
+eprint = {1911.07532},
+issn = {10495258},
+mendeley-groups = {Ensemble Filters},
+title = {{Neural ordinary differential equations}},
+year = {2018}
+}
+@article{Rubanova2019,
+abstract = {Time series with non-uniform intervals occur in many applications, and are difficult to model using standard recurrent neural networks (RNNs). We generalize RNNs to have continuous-time hidden dynamics defined by ordinary differential equations (ODEs), a model we call ODE-RNNs. Furthermore, we use ODE-RNNs to replace the recognition network of the recently-proposed Latent ODE model. Both ODE-RNNs and Latent ODEs can naturally handle arbitrary time gaps between observations, and can explicitly model the probability of observation times using Poisson processes. We show experimentally that these ODE-based models outperform their RNN-based counterparts on irregularly-sampled data.},
+archivePrefix = {arXiv},
+arxivId = {1907.03907},
+author = {Rubanova, Yulia and Chen, Tian Qi and Duvenaud, David K.},
+eprint = {1907.03907},
+journal = {Advances in Neural Information Processing Systems (NeurIPS)},
+mendeley-groups = {Ensemble Filters},
+title = {{Latent Ordinary Differential Equations for Irregularly-Sampled Time Series}},
+year = {2019}
+}
+@inproceedings{Lehtinen2018,
+abstract = {We apply basic statistical reasoning to signal reconstruction by machine learning - learning to map corrupted observations to clean signals - with a simple and powerful conclusion: It is possible to learn to restore images by only looking at corrupted examples, at performance at and some-times exceeding training using clean data, without explicit image priors or likelihood models of the corruption. In practice, we show that a single model learns photographic noise removal, denois- ing synthetic Monte Carlo images, and reconstruction of undersampled MRI scans - all corrupted by different processes - based on noisy data only.},
+archivePrefix = {arXiv},
+arxivId = {1803.04189},
+author = {Lehtinen, Jaakko and Munkberg, Jacob and Hasselgren, Jon and Laine, Samuli and Karras, Tero and Aittala, Miika and Aila, Timo},
+booktitle = {35th International Conference on Machine Learning, ICML 2018},
+eprint = {1803.04189},
+isbn = {9781510867963},
+mendeley-groups = {Ensemble Filters},
+title = {{Noise2Noise: Learning image restoration without clean data}},
+year = {2018}
+}
+
+
+@InProceedings{batson2019noise2self,
+  title = 	 "{{N}oise2{S}elf: Blind Denoising by Self-Supervision}",
+  author =       {Batson, Joshua and Royer, Loic},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  pages = 	 {524--533},
+  year = 	 {2019},
+  editor = 	 {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--15 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v97/batson19a/batson19a.pdf},
+  url = 	 {https://proceedings.mlr.press/v97/batson19a.html},
+  abstract = 	 {We propose a general framework for denoising high-dimensional measurements which requires no prior on the signal, no estimate of the noise, and no clean training data. The only assumption is that the noise exhibits statistical independence across different dimensions of the measurement, while the true signal exhibits some correlation. For a broad class of functions (“$\mathcal{J}$-invariant”), it is then possible to estimate the performance of a denoiser from noisy data alone. This allows us to calibrate $\mathcal{J}$-invariant versions of any parameterised denoising algorithm, from the single hyperparameter of a median filter to the millions of weights of a deep neural network. We demonstrate this on natural image and microscopy data, where we exploit noise independence between pixels, and on single-cell gene expression data, where we exploit independence between detections of individual molecules. This framework generalizes recent work on training neural nets from noisy images and on cross-validation for matrix factorization.}
+}
+
+@book{Law2015,
+abstract = {This book provides a systematic treatment of the mathematical underpinnings of work in data assimilation, covering both theoretical and computational approaches. Specifically the authors develop a unified mathematical framework in which a Bayesian formulation of the problem provides the bedrock for the derivation, development and analysis of algorithms; the many examples used in the text, together with the algorithms which are introduced and discussed, are all illustrated by the MATLAB software detailed in the book and made freely available online. The book is organized into nine chapters: the first contains a brief introduction to the mathematical tools around which the material is organized; the next four are concerned with discrete time dynamical systems and discrete time data; the last four are concerned with continuous time dynamical systems and continuous time data and are organized analogously to the corresponding discrete time chapters. This book is aimed at mathematical researchers interested in a systematic development of this interdisciplinary field, and at researchers from the geosciences, and a variety of other scientific fields, who use tools from data assimilation to combine data with time-dependent models. The numerous examples and illustrations make understanding of the theoretical underpinnings of data assimilation accessible. Furthermore, the examples, exercises and MATLAB software, make the book suitable for students in applied math ematics, either through a lecture course, or through self-study.},
+archivePrefix = {arXiv},
+arxivId = {1506.07825},
+author = {Law, Kody and Stuart, Andrew and Zygalakis, Konstantinos},
+booktitle = {Data Assimilation: A Mathematical Introduction},
+doi = {10.1007/978-3-319-20325-6},
+eprint = {1506.07825},
+isbn = {9783319203256},
+mendeley-groups = {Ensemble Filters},
+title = {{Data assimilation: A mathematical introduction}},
+year = {2015}
+}
+@inproceedings{Gal2016,
+abstract = {Deep learning tools have gained tremendous attention in applied machine learning. However such tools for regression and classification do not capture model uncertainty. In comparison, Bayesian models offer a mathematically grounded framework to reason about model uncertainty, but usually come with a prohibitive computational cost. In this paper we develop a new theoretical framework casting dropout training in deep neural networks (NNs) as approximate Bayesian inference in deep Gaussian processes. A direct result of this theory gives us tools to model uncertainty with dropout NNs - extracting information from existing models that has been thrown away so far. This mitigates the problem of representing uncertainty in deep learning without sacrificing either computational complexity or test accuracy. We perform an extensive study of the properties of dropout's uncertainty. Various network architectures and nonlinearities are assessed on tasks of regression and classification, using MNIST as an example. We show a considerable improvement in predictive log-likelihood and RMSE compared to existing state-of-the-art methods, and finish by using dropout's uncertainty in deep reinforcement learning.},
+archivePrefix = {arXiv},
+arxivId = {1506.02142},
+author = {Gal, Yarin and Ghahramani, Zoubin},
+booktitle = {33rd International Conference on Machine Learning, ICML 2016},
+eprint = {1506.02142},
+isbn = {9781510829008},
+mendeley-groups = {Ensemble Filters},
+title = {{Dropout as a Bayesian approximation: Representing model uncertainty in deep learning}},
+year = {2016}
+}
+@misc{Casella2002,
+abstract = {We compare official population projections with Bayesian time series forecasts for England and Wales. The Bayesian approach allows the integration of uncertainty in the data, models and model parameters in a coherent and consistent manner. Bayesian methodology for time-series forecasting is introduced, including autoregressive (AR) and stochastic volatility (SV) models. These models are then fitted to a historical time series of data from 1841 to 2007 and used to predict future population totals to 2033. These results are compared to the most recent projections produced by the Office for National Statistics. Sensitivity analyses are then performed to test the effect of changes in the prior uncertainty for a single parameter. Finally, in-sample forecasts are compared with actual population and previous official projections. The article ends with some conclusions and recommendations for future work.},
+author = {Casella, G. and Berger, R. L.},
+booktitle = {Duxbury-Thomson Learning},
+doi = {10.1057/pt.2010.23},
+isbn = {0534243126},
+issn = {0307-4463},
+mendeley-groups = {Ensemble Filters},
+pmid = {20927031},
+title = {{Statistical Inference, Second Edition}},
+year = {2002}
+}
+@article{Kalman1960,
+abstract = {The classical filtering and prediction problem is re-examined using the Bode-Sliannon representation of random processes and the “state-transition” method of analysis of dynamic systems. New results are: (1) The formulation and methods of solution of the problem apply without modification to stationary and nonstationary statistics and to growing-memory and infinitememory filters. (2) A nonlinear difference (or differential) equation is derived for the covariance matrix of the optimal estimation error. From the solution of this equation the coefficients of the difference (or differential) equation of the optimal linear filter are obtained without further calculations. (3) The filtering problem is shown to be the dual of the noise-free regulator problem. The new method developed here is applied to two well-known problems, confirming and extending earlier results. The discussion is largely self-contained and proceeds from first principles; basic concepts of the theory of random processes are reviewed in the Appendix. {\textcopyright} 1960 by ASME.},
+author = {Kalman, R. E.},
+doi = {10.1115/1.3662552},
+issn = {1528901X},
+journal = {Journal of Fluids Engineering, Transactions of the ASME},
+mendeley-groups = {Ensemble Filters},
+title = {{A new approach to linear filtering and prediction problems}},
+year = {1960}
+}
+@inproceedings{Julier1997,
+abstract = {The Kalman Filter(KF) is one of the most widely used methods for tracking$\backslash$nand estimation due to its simplicity, optimality, tractability and$\backslash$nrobustness. However, the application of the KF to nonlinear systems$\backslash$ncan be diffcult. The most common approach is to use the Extended$\backslash$nKalman Filter (EKF) which simply linearises all nonlinear models$\backslash$nso that the traditional linear Kalman Filter can be applied. Although$\backslash$nthe EKF (in its many forms) is a widely used filtering strategy,$\backslash$nover thirty years of experience with it has led to a general consensus$\backslash$nwithin the tracking and control community that it is diffcult to$\backslash$nimplement, diffcult to tune, and only reliable for systems which$\backslash$nare almost linear on the time scale of the update intervals. In this$\backslash$npaper a new linear estimator is developed and demonstrated. Using$\backslash$nthe principle that a set of discretely sampled points can be used$\backslash$nto parameterise mean and covariance, the estimator yields performance$\backslash$nequivalent to the KF for linear systems yet generalises elegantly$\backslash$nto nonlinear systems without the linearisation steps required by$\backslash$nthe EKF. We show analytically that the expected performance of the$\backslash$nnew approach is superior to that of the EKF and, in fact, is directly$\backslash$ncomparable to that of the second order Gauss Filter. The method is$\backslash$nnot restricted to assuming that the distributions of noise sources$\backslash$nare Gaussian. We argue that the ease of implementation and more accurate$\backslash$nestimation features of the new lter recommend its use over the EKF$\backslash$nin virtually all applications.},
+author = {Julier, Simon J. and Uhlmann, Jeffrey K.},
+booktitle = {Signal Processing, Sensor Fusion, and Target Recognition VI},
+doi = {10.1117/12.280797},
+isbn = {0819424838},
+issn = {0277786X},
+mendeley-groups = {Ensemble Filters},
+title = {{New extension of the Kalman filter to nonlinear systems}},
+year = {1997}
+}
+
+@article{Evensen2003,
+abstract = {The purpose of this paper is to provide a comprehensive presentation and interpretation of the Ensemble Kalman Filter (EnKF) and its numerical implementation. The EnKF has a large user group, and numerous publications have discussed applications and theoretical aspects of it. This paper reviews the important results from these studies and also presents new ideas and alternative interpretations which further explain the success of the EnKF. In addition to providing the theoretical framework needed for using the EnKF, there is also a focus on the algorithmic formulation and optimal numerical implementation. A program listing is given for some of the key subroutines. The paper also touches upon specific issues such as the use of nonlinear measurements, in situ profiles of temperature and salinity, and data which are available with high frequency in time. An ensemble based optimal interpolation (EnOI) scheme is presented as a cost-effective approach which may serve as an alternative to the EnKF in some applications. A fairly extensive discussion is devoted to the use of time correlated model errors and the estimation of model bias. {\textcopyright} Springer-Verlag 2003.},
+author = {Evensen, Geir},
+doi = {10.1007/s10236-003-0036-9},
+issn = {16167341},
+journal = {Ocean Dynamics},
+keywords = {Data assimilation,Ensemble Kalman Filter},
+mendeley-groups = {Ensemble Filters},
+title = {{The Ensemble Kalman Filter: Theoretical formulation and practical implementation}},
+year = {2003}
+}
+@article{Miller1999,
+abstract = {With very few exceptions, data assimilation methods which have been used or proposed for use with ocean models have been based on some assumption of linearity or near-linearity. The great majority of these schemes have at their root some least-squares assumption. While one can always perform least-squares analysis on any problem, direct application of least squares may not yield satisfactory results in cases in which the underlying distributions are significantly non-Gaussian. In many cases in which the behavior of the system is governed by intrinsically nonlinear dynamics, distributions of solutions which are initially Gaussian will not remain so as the system evolves. The presence of noise is an additional and inevitable complicating factor. Besides the imperfections in our models which result from physical or computational simplifying assumptions, there is uncertainty in forcing fields such as wind stress and heat flux which will remain with us for the foreseeable future. The real world is a noisy place, and the effects of noise upon highly nonlinear systems can be complex. We therefore consider the problem of data assimilation into systems modeled as nonlinear stochastic differential equations. When the models are described in this way, the general assimilation problem becomes that of estimating the probability density function of the system conditioned on the observations. The quantity we choose as the solution to the problem can be a mean, a median, a mode, or some other statistic. In the fully general formulation, no assumptions about moments or near-linearity are required. We present a series of simulation experiments in which we demonstrate assimilation of data into simple nonlinear models in which least-squares methods such as the (Extended) Kalman filter or the weak-constraint variational methods will not perform well. We illustrate the basic method with three examples: a simple one-dimensional nonlinear stochastic differential equation, the well known three-dimensional Lorenz model and a nonlinear quasigeostrophic channel model. Comparisons to the extended Kalman filter and an extension to the extended Kalman filter are presented.},
+author = {Miller, Robert N. and Carter, Everett F. and Blue, Sally T.},
+doi = {10.3402/tellusa.v51i2.12315},
+issn = {02806495},
+journal = {Tellus, Series A: Dynamic Meteorology and Oceanography},
+mendeley-groups = {Ensemble Filters},
+title = {{Data assimilation into nonlinear stochastic models}},
+year = {1999}
+}
+
+@inproceedings{ma2019particle,
+  author    = {Xiao Ma and
+               P{\'{e}}ter Karkus and
+               David Hsu and
+               Wee Sun Lee},
+  title     = "{Particle Filter Recurrent Neural Networks}",
+  booktitle = {The Thirty-Fourth {AAAI} Conference on Artificial Intelligence, {AAAI}, 2020},
+  pages     = {5101--5108}
+}
+
+@article{Hochreiter1997,
+abstract = {Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient-based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O(1). Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms.},
+author = {Hochreiter, Sepp and Schmidhuber, J{\"{u}}rgen},
+doi = {10.1162/neco.1997.9.8.1735},
+issn = {08997667},
+journal = {Neural Computation},
+mendeley-groups = {Ensemble Filters},
+pmid = {9377276},
+title = {{Long Short-Term Memory}},
+year = {1997}
+}
+
+@inproceedings{Cho2014,
+abstract = {In this paper, we propose a novel neural network model called RNN Encoder- Decoder that consists of two recurrent neural networks (RNN). One RNN encodes a sequence of symbols into a fixedlength vector representation, and the other decodes the representation into another sequence of symbols. The encoder and decoder of the proposed model are jointly trained to maximize the conditional probability of a target sequence given a source sequence. The performance of a statistical machine translation system is empirically found to improve by using the conditional probabilities of phrase pairs computed by the RNN Encoder-Decoder as an additional feature in the existing log-linear model. Qualitatively, we show that the proposed model learns a semantically and syntactically meaningful representation of linguistic phrases.},
+archivePrefix = {arXiv},
+arxivId = {1406.1078},
+author = {Cho, Kyunghyun and {Van Merri{\"{e}}nboer}, Bart and Gulcehre, Caglar and Bahdanau, Dzmitry and Bougares, Fethi and Schwenk, Holger and Bengio, Yoshua},
+booktitle = {EMNLP 2014 - 2014 Conference on Empirical Methods in Natural Language Processing, Proceedings of the Conference},
+doi = {10.3115/v1/d14-1179},
+eprint = {1406.1078},
+isbn = {9781937284961},
+mendeley-groups = {Ensemble Filters},
+title = {{Learning phrase representations using RNN encoder-decoder for statistical machine translation}},
+year = {2014}
+}
+@misc{ch2019nonsaturating,
+    title={Towards Non-saturating Recurrent Units for Modelling Long-term Dependencies},
+    author={Sarath Chandar and Chinnadhurai Sankar and Eugene Vorontsov and Samira Ebrahimi Kahou and Yoshua Bengio},
+    year={2019},
+    eprint={1902.06704},
+    archivePrefix={arXiv},
+    primaryClass={cs.NE}
+}
+
+@misc{Li2014,
+abstract = {During the last two decades there has been a growing interest in Particle Filtering (PF). However, PF suffers from two long-standing problems that are referred to as sample degeneracy and impoverishment. We are investigating methods that are particularly efficient at Particle Distribution Optimization (PDO) to fight sample degeneracy and impoverishment, with an emphasis on intelligence choices. These methods benefit from such methods as Markov Chain Monte Carlo methods, Mean-shift algorithms, artificial intelligence algorithms (e.g.; Particle Swarm Optimization, Genetic Algorithm and Ant Colony Optimization), machine learning approaches (e.g.; clustering, splitting and merging) and their hybrids, forming a coherent standpoint to enhance the particle filter. The working mechanism, interrelationship, pros and cons of these approaches are provided. In addition, approaches that are effective for dealing with high-dimensionality are reviewed. While improving the filter performance in terms of accuracy, robustness and convergence, it is noted that advanced techniques employed in PF often causes additional computational requirement that will in turn sacrifice improvement obtained in real life filtering. This fact, hidden in pure simulations, deserves the attention of the users and designers of new filters. {\textcopyright} 2013 Elsevier Ltd. All rights reserved.},
+author = {Li, Tiancheng and Sun, Shudong and Sattar, Tariq Pervez and Corchado, Juan Manuel},
+booktitle = {Expert Systems with Applications},
+doi = {10.1016/j.eswa.2013.12.031},
+issn = {09574174},
+keywords = {Artificial intelligence,Impoverishment,Machine learning,Markov Chain Monte Carlo,Particle filter,Sequential Monte Carlo},
+title = {{Fight sample degeneracy and impoverishment in particle filters: A review of intelligent approaches}},
+year = {2014}
+}
+@inproceedings{cintra2016,
+author = {Cintra, Ros{\^{a}}ngela and {Campos Velho}, Haroldo and Cocke, Steven},
+doi = {10.1109/IJCNN.2016.7727227},
+mendeley-groups = {Ensemble Filters},
+pages = {403--410},
+title = {{Tracking the model: Data assimilation by artificial neural network}},
+year = {2016}
+}
+
+@Article{brajard2020combining,
+AUTHOR = {Brajard, J. and Carrassi, A. and Bocquet, M. and Bertino, L.},
+TITLE = {{Combining data assimilation and machine learning to emulate a dynamical model from sparse and noisy observations: a case study with the Lorenz 96 model}},
+JOURNAL = {Geoscientific Model Development Discussions},
+VOLUME = {2019},
+YEAR = {2019},
+PAGES = {1--21},
+URL = {https://gmd.copernicus.org/preprints/gmd-2019-136/},
+DOI = {10.5194/gmd-2019-136}
+}
+
+@Article{lu2018,
+AUTHOR = {Lu, Jing and Hu, Wei and Zhang, Xiakun},
+TITLE = {Precipitation Data Assimilation System Based on a Neural Network and Case-Based Reasoning System},
+JOURNAL = {Information},
+VOLUME = {9},
+YEAR = {2018},
+NUMBER = {5},
+ARTICLE-NUMBER = {106},
+URL = {https://www.mdpi.com/2078-2489/9/5/106},
+ISSN = {2078-2489},
+ABSTRACT = {There are several methods to forecast precipitation, but none of them is accurate enough since predicting precipitation is very complicated and influenced by many factors. Data assimilation systems (DAS) aim to increase the prediction result by processing data from different sources in a general way, such as a weighted average, but have not been used for precipitation prediction until now. A DAS that makes use of mathematical tools is complex and hard to carry out. In our paper, machine learning techniques are introduced into a precipitation data assimilation system. After summarizing the theoretical construction of this method, we take some practical weather forecasting experiments and the results show that the new system is effective and promising.},
+DOI = {10.3390/info9050106}
+}
+
+
+@article{abarbanel_deepest,
+abstract = { We formulate an equivalence between machine learning and the formulation of statistical data assimilation as used widely in physical and biological sciences. The correspondence is that layer number in a feedforward artificial network setting is the analog of time in the data assimilation setting. This connection has been noted in the machine learning literature. We add a perspective that expands on how methods from statistical physics and aspects of Lagrangian and Hamiltonian dynamics play a role in how networks can be trained and designed. Within the discussion of this equivalence, we show that adding more layers (making the network deeper) is analogous to adding temporal resolution in a data assimilation framework. Extending this equivalence to recurrent networks is also discussed. We explore how one can find a candidate for the global minimum of the cost functions in the machine learning context using a method from data assimilation. Calculations on simple models from both sides of the equivalence are reported. Also discussed is a framework in which the time or layer label is taken to be continuous, providing a differential equation, the Euler-Lagrange equation and its boundary conditions, as a necessary condition for a minimum of the cost function. This shows that the problem being solved is a two-point boundary value problem familiar in the discussion of variational methods. The use of continuous layers is denoted “deepest learning.” These problems respect a symplectic symmetry in continuous layer phase space. Both Lagrangian versions and Hamiltonian versions of these problems are presented. Their well-studied implementation in a discrete time/layer, while respecting the symplectic structure, is addressed. The Hamiltonian version provides a direct rationale for backpropagation as a solution method for a certain two-point boundary value problem. },
+annote = {PMID: 29894650},
+author = {Abarbanel, Henry D I and Rozdeba, Paul J and Shirman, Sasha},
+doi = {10.1162/neco_a_01094},
+journal = {Neural Computation},
+number = {8},
+pages = {2025--2055},
+title = {{Machine Learning: Deepest Learning as Statistical Data Assimilation Problems}},
+url = {https://doi.org/10.1162/neco{\_}a{\_}01094},
+volume = {30},
+year = {2018}
+}
+
+@inproceedings{Mei2019,
+abstract = {Events in the world may be caused by other, unobserved events. We consider sequences of events in continuous time. Given a probability model of complete sequences, we propose particle smoothing-a form of sequential importance sampling-to impute the missing events in an incomplete sequence. We develop a trainable family of proposal distributions based on a type of bidirectional continuous-time LSTM. Bidirectionality lets the proposals condition on future observations, not just on the past as in particle filtering. Our method can sample an ensemble of possible complete sequences (particles), from which we form a single consensus prediction that has low Bayes risk under our chosen loss metric. We experiment in multiple synthetic and real domains, using different missingness mechanisms, and modeling the complete sequences in each domain with a neural Hawkes process (Mei {\&} Eisner, 2017). On held-out incomplete sequences, our method is effective at inferring the ground-truth unobserved events, with particle smoothing consistently improving upon particle filtering.},
+archivePrefix = {arXiv},
+arxivId = {1905.05570},
+author = {Mei, Hongyuan and Qin, Guanghui and Eisner, Jason},
+booktitle = {36th International Conference on Machine Learning, ICML 2019},
+eprint = {1905.05570},
+isbn = {9781510886988},
+title = {{Imputing missing events in continuous-time event streams}},
+year = {2019}
+}
+@misc{Hsieh1998,
+abstract = {Empirical or statistical methods have been introduced into meteorology and oceanography in four distinct stages: 1) linear regression (and correlation), 2) principal component analysis (PCA), 3) canonical correlation analysis, and recently 4) neural network (NN) models. Despite the great popularity of the NN models in many fields, there are three obstacles to adapting the NN method to meteorology-oceanography, especially in large-scale, low-frequency studies: (a) nonlinear instability with short data records, (b) large spatial data fields, and (c) difficulties in interpreting the nonlinear NN results. Recent research shows that these three obstacles can be overcome. For obstacle (a), ensemble averaging was found to be effective in controlling nonlinear instability. For (b), the PCA method was used as a prefilter for compressing the large spatial data fields. For (c), the mysterious hidden layer could be given a phase space interpretation, and spectral analysis aided in understanding the nonlinear NN relations. With these and future improvements, the nonlinear NN method is evolving to a versatile and powerful technique capable of augmenting traditional linear statistical methods in data analysis and forecasting; for example, the NN method has been used for El Ni{\~{n}}o prediction and for nonlinear PCA. The NN model is also found to be a type of variational (adjoint) data assimilation, which allows it to be readily linked to dynamical models under adjoint data assimilation, resulting in a new class of hybrid neural-dynamical models.},
+author = {Hsieh, William W. and Tang, Benyang},
+booktitle = {Bulletin of the American Meteorological Society},
+doi = {10.1175/1520-0477(1998)079<1855:ANNMTP>2.0.CO;2},
+issn = {00030007},
+title = {{Applying Neural Network Models to Prediction and Data Analysis in Meteorology and Oceanography}},
+year = {1998}
+}
+
+@article{Harter2008,
+abstract = {In this work, radial basis function neural network (RBF-NN) is applied to emulate an extended Kalman filter (EKF) in a data assimilation scenario. The dynamical model studied here is based on the one-dimensional shallow water equation DYNAMO-1D. This code is simple when compared with an operational primitive equation models for numerical weather prediction. Although simple, the DYNAMO-1D is rich for representing some atmospheric motions, such as Rossby and gravity waves. It has been shown in the literature that the ability of the EKF to track nonlinear models depends on the frequency and accuracy of the observations and model errors. In some cases, just fourth-order moment EKF works well, but will be unwieldy when applied to high-dimensional state space. Artificial Neural Network (ANN) is an alternative solution for this computational complexity problem, once the ANN is trained offline with a high order Kalman filter, even though this Kalman filter has high computational cost (which is not a problem during ANN training phase). The results achieved in this work encourage us to apply this technique on operational model. However, it is not yet possible to assure convergence in high dimensional problems.},
+author = {H{\"{a}}rter, Fabr{\'{i}}cio P. and {de Campos Velho}, Haroldo Fraga},
+doi = {10.1016/J.APM.2007.09.006},
+issn = {0307-904X},
+journal = {Applied Mathematical Modelling},
+month = {dec},
+number = {12},
+pages = {2621--2633},
+publisher = {Elsevier},
+title = {{New approach to applying neural network in nonlinear dynamic model}},
+volume = {32},
+year = {2008}
+}
+
+@inproceedings{Coskun2017,
+abstract = {One-shot pose estimation for tasks such as body joint localization, camera pose estimation, and object tracking are generally noisy, and temporal filters have been extensively used for regularization. One of the most widely-used methods is the Kalman filter, which is both extremely simple and general. However, Kalman filters require a motion model and measurement model to be specified a priori, which burdens the modeler and simultaneously demands that we use explicit models that are often only crude approximations of reality. For example, in the pose-estimation tasks mentioned above, it is common to use motion models that assume constant velocity or constant acceleration, and we believe that these simplified representations are severely inhibitive. In this work, we propose to instead learn rich, dynamic representations of the motion and noise models. In particular, we propose learning these models from data using long shortterm memory, which allows representations that depend on all previous observations and all previous states. We evaluate our method using three of the most popular pose estimation tasks in computer vision, and in all cases we obtain state-of-the-art performance.},
+archivePrefix = {arXiv},
+arxivId = {1708.01885},
+author = {Coskun, Huseyin and Achilles, Felix and Dipietro, Robert and Navab, Nassir and Tombari, Federico},
+booktitle = {Proceedings of the IEEE International Conference on Computer Vision},
+doi = {10.1109/ICCV.2017.589},
+eprint = {1708.01885},
+isbn = {9781538610329},
+issn = {15505499},
+title = {{Long Short-Term Memory Kalman Filters: Recurrent Neural Estimators for Pose Regularization}},
+year = {2017}
+}
+@article{Ouala2018,
+abstract = {The forecasting and reconstruction of oceanic dynamics is a crucial challenge. While model driven strategies are still the state-of-the-art approaches in the reconstruction of spatio-temporal dynamics. The ever increasing availability of data collections in oceanography raised the relevance of data-driven approaches as computationally efficient representations of spatio-temporal fields reconstruction. This tools proved to outperform classical state-of-the-art interpolation techniques such as optimal interpolation and DINEOF in the retrievement of fine scale structures while still been computationally efficient comparing to model based data assimilation schemes. However, coupling this data-driven priors to classical filtering schemes limits their potential representativity. From this point of view, the recent advances in machine learning and especially neural networks and deep learning can provide a new infrastructure for dynamical modeling and interpolation within a data-driven framework. In this work we adress this challenge and develop a novel Neural-Network-based (NN-based) Kalman filter for spatio-temporal interpolation of sea surface dynamics. Based on a data-driven probabilistic representation of spatio-temporal fields, our approach can be regarded as an alternative to classical filtering schemes such as the ensemble Kalman filters (EnKF) in data assimilation. Overall, the key features of the proposed approach are two-fold: (i) we propose a novel architecture for the stochastic representation of two dimensional (2D) geophysical dynamics based on a neural networks, (ii) we derive the associated parametric Kalman-like filtering scheme for a computationally-efficient spatio-temporal interpolation of Sea Surface Temperature (SST) fields. We illustrate the relevance of our contribution for an OSSE (Observing System Simulation Experiment) in a case-study region off South Africa. Our numerical experiments report significant improvements in terms of reconstruction performance compared with operational and state-of-the-art schemes (e.g., optimal interpolation, Empirical Orthogonal Function (EOF) based interpolation and analog data assimilation).},
+author = {Ouala, Said and Fablet, Ronan and Herzet, C{\'{e}}dric and Chapron, Bertrand and Pascual, Ananda and Collard, Fabrice and Gaultier, Lucile},
+doi = {10.3390/rs10121864},
+issn = {20724292},
+journal = {Remote Sensing},
+keywords = {Data assimilation,Data-driven models,Dynamical model,Interpolation,Kalman filter,Neural networks},
+title = {{Neural network based Kalman filters for the spatio-temporal interpolation of satellite-derived sea surface temperature}},
+year = {2018}
+}
+
+@inproceedings{Haarnoja2016,
+abstract = {Generative state estimators based on probabilistic filters and smoothers are one of the most popular classes of state estimators for robots and autonomous vehicles. However, generative models have limited capacity to handle rich sensory observations, such as camera images, since they must model the entire distribution over sensor readings. Discriminative models do not suffer from this limitation, but are typically more complex to train as latent variable models for state estimation. We present an alternative approach where the parameters of the latent state distribution are directly optimized as a deterministic computation graph, resulting in a simple and effective gradient descent algorithm for training discriminative state estimators. We show that this procedure can be used to train state estimators that use complex input, such as raw camera images, which must be processed using expressive nonlinear function approximators such as convolutional neural networks. Our model can be viewed as a type of recurrent neural network, and the connection to probabilistic filtering allows us to design a network architecture that is particularly well suited for state estimation. We evaluate our approach on synthetic tracking task with raw image inputs and on the visual odometry task in the KITTI dataset. The results show significant improvement over both standard generative approaches and regular recurrent neural networks.},
+archivePrefix = {arXiv},
+arxivId = {1605.07148},
+author = {Haarnoja, Tuomas and Ajay, Anurag and Levine, Sergey and Abbeel, Pieter},
+booktitle = {Advances in Neural Information Processing Systems},
+eprint = {1605.07148},
+issn = {10495258},
+title = {{Backprop KF: Learning discriminative deterministic state estimators}},
+year = {2016}
+}
+@article{Wang2018,
+abstract = {Estimating uncertain state variables of a general complex dynamical network with randomly incomplete measurements of transmitted output variables is investigated in this paper. The incomplete measurements, occurring randomly through the transmission of output variables, always cause the failure of the state estimation process. Different from the existing methods, we propose a novel method to handle the incomplete measurements, which can perform well to balance the excessively deviated estimators under the influence of incomplete measurements. In particular, the proposed method has no special limitation on the node dynamics compared with many existing methods. By employing the Lyapunov stability theory along with the stochastic analysis method, sufficient criteria are deduced rigorously to ensure obtaining the proper estimator gains with known model parameters. Illustrative simulation for the complex dynamical network composed of chaotic nodes are given to show the validity and efficiency of the proposed method.},
+author = {Wang, Xinwei and Jiang, Guo Ping and Wu, Xu},
+doi = {10.3390/e20010005},
+issn = {10994300},
+journal = {Entropy},
+keywords = {Complex dynamical network,Incomplete measurements,State estimation},
+mendeley-groups = {Ensemble Filters},
+title = {{State estimation for general complex dynamical networks with incompletely measured information}},
+year = {2018}
+}
+@article{He2016,
+abstract = {Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers - 8× deeper than VGG nets [40] but still having lower complexity. An ensemble of these residual nets achieves 3.57{\%} error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28{\%} relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC {\&} COCO 2015 competitions1, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.},
+archivePrefix = {arXiv},
+arxivId = {1512.03385},
+author = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+doi = {10.1109/CVPR.2016.90},
+eprint = {1512.03385},
+isbn = {9781467388504},
+issn = {10636919},
+journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+mendeley-groups = {Ensemble Filters},
+title = {{ResNet}},
+year = {2016}
+}
+
+
+@inproceedings{DBLP:conf/nips/SatorrasWA19,
+  author    = {Victor Garcia Satorras and
+               Max Welling and
+               Zeynep Akata},
+  editor    = {Hanna M. Wallach and
+               Hugo Larochelle and
+               Alina Beygelzimer and
+               Florence d'Alch{\'{e}}{-}Buc and
+               Emily B. Fox and
+               Roman Garnett},
+  title     = {Combining Generative and Discriminative Models for Hybrid Inference},
+  booktitle = {Advances in Neural Information Processing Systems 32: Annual Conference
+               on Neural Information Processing Systems 2019, NeurIPS 2019, 8-14
+               December 2019, Vancouver, BC, Canada},
+  pages     = {13802--13812},
+  year      = {2019},
+  url       = {http://papers.nips.cc/paper/9532-combining-generative-and-discriminative-models-for-hybrid-inference},
+  timestamp = {Mon, 13 Jan 2020 09:28:31 +0100},
+  biburl    = {https://dblp.org/rec/bib/conf/nips/SatorrasWA19},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@misc{hoyer2019_struct,
+    title={Neural reparameterization improves structural optimization},
+    author={Stephan Hoyer and Jascha Sohl-Dickstein and Sam Greydanus},
+    year={2019},
+    eprint={1909.04240},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@article{Evensen1994,
+abstract = {A new sequential data assimilation method is discussed. it is based on forecasting the error statistics using Monte Carlo methods, a better alternative than solving the traditional and computationally extremely demanding approximate error covariance equation used in the extended Kalman filter. The unbounded error growth found in the extended Kalman filter, which is caused by an overly simplified closure in the error covariance equation, is completely eliminated. Open boundaries can be handled as long as the ocean model is well posed. Well-known numerical instabilities associated with the error covariance equation are avoided because storage and evolution of the error covariance matrix itself are not needed. The results are also better than what is provided by the extended Kalman filter since there is no closure problem and the quality of the forecast error statistics therefore improves. The method should be feasible also for more sophisticated primitive equation models. -from Author},
+author = {Evensen, G.},
+doi = {10.1029/94jc00572},
+issn = {01480227},
+journal = {Journal of Geophysical Research},
+mendeley-groups = {Ensemble Filters},
+title = {{Sequential data assimilation with a nonlinear quasi-geostrophic model using Monte Carlo methods to forecast error statistics}},
+year = {1994}
+}
+@article{Jazwinski1972,
+abstract = {Book on stochastic processes and filtering theory covering probability theory, Markov processes, linear and nonlinear filters, etc},
+author = {Jazwinski, A H},
+journal = {IEEE Transactions on Automatic Control},
+mendeley-groups = {Ensemble Filters},
+title = {{Stochastic processes and filtering theory}},
+year = {1972}
+}
+@article{rabier4dvar,
+abstract = {Abstract This paper presents results of a comparison between four-dimensional variational assimilation (4D-Var). using a 6-hour assimilation window and simplified physics during the minimization, and three-dimensional variational assimilation (3D-Var). Results have been obtained at ‘operational' resolution T213L31/T63L31. (T defines the spectral triangular truncation and L the number of levels in the vertical, with the first parameters defining the resolution of the model trajectory, and the second the resolution of the inner-loop.) The sensitivity of the 4D-Var performance to different set-ups is investigated. In particular, the performance of 4D-Var in the Tropics revealed some sensitivity to the way the adiabatic nonlinear normal-mode initialization of the increments was performed. Going from four outer-loops to only one (as in 3D-Var), together with a change to the 1997 formulation of the background constraint and an initialization of only the small scales, helped to improve the 4D-Var performance. Tropical scores then became only marginally worse for 4D-Var than for 3D-Var. Twelve weeks of experimentation with the one outer-loop 4D-Var and the 1997 background formulation have been studied. The averaged scores show a small but consistent improvement in both hemispheres at all ranges. In the short range, each two- to three-week period has been found to be slightly positive throughout the troposphere. The better short-range performance of the 4D-Var system is also shown by the fits of the background fields to the data. More results are presented for the Atlantic Ocean area during FASTEX (the Fronts and Atlantic Storm-Track Experiment), during which 4D-Var is found to perform better. In individual synoptic cases corresponding to interesting Intensive Observing Periods, 4D-Var has a clear advantage over 3D-Var during rapid cyclogeneses. The very short-range forecasts used as backgrounds are much closer to the data over the Atlantic for 4D-Var than for 3D-Var. The 4D-Var analyses also display more day-to-day variability. Some structure functions are illustrated in the 4D-Var case for a height observation inserted at the beginning, in the middle or at the end of the assimilation window. The dynamical processes seem to be relevant, even with a short 6-hour assimilation period, which explains the better overall performance of the 4D-Var system.},
+author = {Rabier, F and J{\"{a}}rvinen, H and Klinker, E and Mahfouf, J.-F. and Simmons, A},
+journal = {Quarterly Journal of the Royal Meteorological Society},
+keywords = { Analysis, Variational assimilation,Adjoint models},
+mendeley-groups = {Ensemble Filters},
+number = {564},
+pages = {1143--1170},
+title = {{The ECMWF operational implementation of four-dimensional variational assimilation. I: Experimental results with simplified physics}},
+url = {https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/qj.49712656415},
+volume = {126},
+year = {2000}
+}
+@incollection{Lorenz96,
+abstract = {Ed Lorenz, pioneer of chaos theory, presented this work at an earlier ECMWF workshop on predictability. The paper, which has never been published externally, presents what is widely known as the Lorenz 1996 model. Ed was unable to come to the 2002 meeting, but we decided it would be proper to acknowledge Ed's unrivalled contribution to the field of weather and climate predictability by publishing his 1996 paper in this volume. The difference between the state that a system is assumed or predicted to possess, and the state that it actually possesses or will possess, constitutes the error in specifying or forecasting the state. We identify the rate at which an error will typically grow or decay, as the range of prediction increases, as the key factor in determining the extent to which a system is predictable. The long-term average factor by which an infinitesimal error will amplify or diminish, per unit time, is the leading Lyapunov number; its logarithm, denoted by $\lambda$1, is the leading Lyapunov exponent. Instantaneous growth rates can differ appreciably from the average. With the aid of some simple models, we describe situations where errors behave as would be expected from a knowledge of $\lambda$1, and other situations, particularly in the earliest and latest stages of growth, where their behaviour is systematically different. Slow growth in the latest stages may be especially relevant to the longrange predictability of the atmosphere.},
+author = {Lorenz, Edward N.},
+booktitle = {Predictability of Weather and Climate},
+doi = {10.1017/CBO9780511617652.004},
+isbn = {9780511617652},
+title = {{Predictability-a problem partly solved}},
+year = {2006}
+}
+@misc{raanes2018dapper,
+author = {Raanes, Patrick N and Others},
+doi = {10.5281/zenodo.2029296},
+mendeley-groups = {Ensemble Filters},
+title = {{nansencenter/DAPPER: Version 0.8}},
+url = {https://doi.org/10.5281/zenodo.2029296},
+year = {2018}
+}
+
+
+@misc{ba2016layer,
+    title={Layer Normalization},
+    author={Jimmy Lei Ba and Jamie Ryan Kiros and Geoffrey E. Hinton},
+    year={2016},
+    eprint={1607.06450},
+    archivePrefix={arXiv},
+    primaryClass={stat.ML}
+}
+
+@article{Runge1895,
+author = {Runge, C.},
+doi = {10.1007/BF01446807},
+issn = {00255831},
+journal = {Mathematische Annalen},
+title = {{Ueber die numerische Aufl{\"{o}}sung von Differentialgleichungen}},
+year = {1895}
+}
+
+@inproceedings{Paszke2019,
+abstract = {In this article, we describe an automatic differentiation module of PyTorch-a library designed to enable rapid research on machine learning models. It builds upon a few projects, most notably Lua Torch, Chainer, and HIPS Autograd [4], and provides a high performance environment with easy access to automatic differentiation of models executed on different devices (CPU and GPU). To make prototyping easier, PyTorch does not follow the symbolic approach used in many other deep learning frameworks, but focuses on differentiation of purely imperative programs, with a focus on extensibility and low overhead. Note that this preprint is a draft of certain sections from an upcoming paper covering all PyTorch features.},
+author = {Paszke, Adam and Gross, Sam and Chintala, Soumith and Chanan, Gregory and Yang, Edward and Facebook, Zachary Devito and Research, A I and Lin, Zeming and Desmaison, Alban and Antiga, Luca and Srl, Orobix and Lerer, Adam},
+booktitle = {Advances in Neural Information Processing Systems 32},
+title = {{Automatic differentiation in PyTorch}},
+year = {2019}
+}
+
+@inproceedings{Gu2015,
+abstract = {Sequential Monte Carlo (SMC), or particle filtering, is a popular class of methods for sampling from an intractable target distribution using a sequence of simpler intermediate distributions. Like other importance sampling-based methods, performance is critically dependent on the proposal distribution: a bad proposal can lead to arbitrarily inaccurate estimates of the target distribution. This paper presents a new method for automatically adapting the proposal using an approximation of the Kullback-Leibler divergence between the true posterior and the proposal distribution. The method is very flexible, applicable to any parameterized proposal distribution and it supports online and batch variants. We use the new framework to adapt powerful proposal distributions with rich parameterizations based upon neural networks leading to Neural Adaptive Sequential Monte Carlo (NASMC). Experiments indicate that NASMC significantly improves inference in a non-linear state space model outperforming adaptive proposal methods including the Extended Kalman and Unscented Particle Filters. Experiments also indicate that improved inference translates into improved parameter learning when NASMC is used as a subroutine of Particle Marginal Metropolis Hastings. Finally we show that NASMC is able to train a latent variable recurrent neural network (LV-RNN) achieving results that compete with the state-of-the-art for polymorphic music modelling. NASMC can be seen as bridging the gap between adaptive SMC methods and the recent work in scalable, black-box variational inference.},
+archivePrefix = {arXiv},
+arxivId = {1506.03338},
+author = {Gu, Shixiang and Ghahramani, Zoubin and Turner, Richard E.},
+booktitle = {Advances in Neural Information Processing Systems},
+eprint = {1506.03338},
+issn = {10495258},
+mendeley-groups = {Ensemble Filters},
+title = {{Neural adaptive Sequential Monte Carlo}},
+year = {2015}
+}
+@inproceedings{Naesseth2018,
+abstract = {Many recent advances in large scale probabilistic inference rely on variational methods. The success of variational approaches depends on (i) formulating a flexible parametric family of distributions, and (ii) optimizing the parameters to find the member of this family that most closely approximates the exact posterior. In this paper we present a new approximating family of distributions, the variational sequential Monte Carlo (VSMC) family, and show how to optimize it in variational inference. VSMC melds variational inference (VI) and sequential Monte Carlo (SMC), providing practitioners with flexible, accurate, and powerful Bayesian inference. The VSMC family is a variational family that can approximate the posterior arbitrarily well, while still allowing for efficient optimization of its parameters. We demonstrate its utility on state space models, stochastic volatility models for financial data, and deep Markov models of brain neural circuits.},
+archivePrefix = {arXiv},
+arxivId = {1705.11140},
+author = {Naesseth, Christian A. and Linderman, Scott W. and Ranganath, Rajesh and Blei, David M.},
+booktitle = {International Conference on Artificial Intelligence and Statistics, AISTATS 2018},
+eprint = {1705.11140},
+mendeley-groups = {Ensemble Filters},
+title = {{Variational sequential Monte Carlo}},
+year = {2018}
+}
+@inproceedings{Le2018,
+abstract = {We build on auto-encoding sequential Monte Carlo (AESMC):1 a method for model and proposal learning based on maximizing the lower bound to the log marginal likelihood in a broad family of structured probabilistic models. Our approach relies on the efficiency of sequential Monte Carlo (SMC) for performing inference in structured probabilistic models and the flexibility of deep neural networks to model complex conditional probability distributions. We develop additional theoretical insights and experiment with a new training procedure which can improve both model and proposal learning. We demonstrate that our approach provides a fast, easy-to-implement and scalable means for simultaneous model learning and proposal adaptation in deep generative models.},
+archivePrefix = {arXiv},
+arxivId = {1705.10306},
+author = {Le, Tuan Anh and Igl, Maximilian and Rainforth, Tom and Jin, Tom and Wood, Frank},
+booktitle = {6th International Conference on Learning Representations, ICLR 2018 - Conference Track Proceedings},
+eprint = {1705.10306},
+mendeley-groups = {Ensemble Filters},
+title = {{Auto-encoding Sequential Monte Carlo}},
+year = {2018}
+}
+@article{resevoir,
+  title = {Model-Free Prediction of Large Spatiotemporally Chaotic Systems from Data: A Reservoir Computing Approach},
+  author = {Pathak, Jaideep and Hunt, Brian and Girvan, Michelle and Lu, Zhixin and Ott, Edward},
+  journal = {Phys. Rev. Lett.},
+  volume = {120},
+  issue = {2},
+  pages = {024102},
+  numpages = {5},
+  year = {2018},
+  month = {Jan},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.120.024102},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.120.024102}
+}
+@article{Vlachas_2018,
+   title={Data-driven forecasting of high-dimensional chaotic systems with long short-term memory networks},
+   volume={474},
+   ISSN={1471-2946},
+   url={http://dx.doi.org/10.1098/rspa.2017.0844},
+   DOI={10.1098/rspa.2017.0844},
+   number={2213},
+   journal={Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences},
+   publisher={The Royal Society},
+   author={Vlachas, Pantelis R. and Byeon, Wonmin and Wan, Zhong Y. and Sapsis, Themistoklis P. and Koumoutsakos, Petros},
+   year={2018},
+   month={May},
+   pages={20170844}
+}
+@misc{mohan2018deep,
+    title={A Deep Learning based Approach to Reduced Order Modeling for Turbulent Flow Control using LSTM Neural Networks},
+    author={Arvind T. Mohan and Datta V. Gaitonde},
+    year={2018},
+    eprint={1804.09269},
+    archivePrefix={arXiv},
+    primaryClass={physics.comp-ph}
+}
+@article{Houtekamer1998,
+abstract = {The possibility of performing data assimilation using the flow-dependent statistics calculated from an ensemble of short-range forecasts (a technique referred to as ensemble Kalman filtering) is examined in an idealized environment. Using a three-level, quasigeostrophic, T21 model and simulated observations, experiments are performed in a perfect-model context. By using forward interpolation operators from the model state to the observations, the ensemble Kalman filter is able to utilize nonconventional observations. In order to maintain a representative spread between the ensemble members and avoid a problem of inbreeding, a pair of ensemble Kalman filters is configured so that the assimilation of data using one ensemble of short-range forecasts as background fields employs the weights calculated from the other ensemble of short-range forecasts. This configuration is found to work well: the spread between the ensemble members resembles the difference between the ensemble mean and the true state, except in the case of the smallest ensembles. A series of 30-day data assimilation cycles is performed using ensembles of different sizes. The results indicate that (i) as the size of the ensembles increases, correlations are estimated more accurately and the root-meansquare analysis error decreases, as expected, and (ii) ensembles having on the order of 100 members are sufficient to accurately describe local anisotropic, baroclinic correlation structures. Due to the difficulty of accurately estimating the small correlations associated with remote observations, a cutoff radius beyond which observations are not used, is implemented. It is found that (a) for a given ensemble size there is an optimal value of this cutoff radius, and (b) the optimal cutoff radius increases as the ensemble size increases.},
+author = {Houtekamer, P. L. and Mitchell, Herschel L.},
+doi = {10.1175/1520-0493(1998)126<0796:DAUAEK>2.0.CO;2},
+issn = {00270644},
+journal = {Monthly Weather Review},
+title = {{Data assimilation using an ensemble Kalman filter technique}},
+year = {1998}
+}
+
+@inproceedings{Kingma2014,
+  abstract = {How can we perform efficient inference and learning in directed probabilistic models, in the presence of continuous latent variables with intractable posterior distributions, and large datasets? We introduce a stochastic variational inference and learning algorithm that scales to large datasets and, under some mild differentiability conditions, even works in the intractable case. Our contributions is two-fold. First, we show that a reparameterization of the variational lower bound yields a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods. Second, we show that for i.i.d. datasets with continuous latent variables per datapoint, posterior inference can be made especially efficient by fitting an approximate inference model (also called a recognition model) to the intractable posterior using the proposed lower bound estimator. Theoretical advantages are reflected in experimental results.},
+  added-at = {2020-10-15T14:36:56.000+0200},
+  author = {Kingma, Diederik P. and Welling, Max},
+  biburl = {https://www.bibsonomy.org/bibtex/242e5be6faa01cba2587f4907ac99dce8/annakrause},
+  booktitle = {2nd International Conference on Learning Representations, {ICLR} 2014, Banff, AB, Canada, April 14-16, 2014, Conference Track Proceedings},
+  eprint = {http://arxiv.org/abs/1312.6114v10},
+  eprintclass = {stat.ML},
+  eprinttype = {arXiv},
+  file = {:http\://arxiv.org/pdf/1312.6114v10:PDF;:KingmaWelling_Auto-EncodingVariationalBayes.pdf:PDF},
+  interhash = {a626a9d77a123c52405a08da983203cb},
+  intrahash = {42e5be6faa01cba2587f4907ac99dce8},
+  keywords = {cs.LG stat.ML vae},
+  timestamp = {2021-02-01T17:13:18.000+0100},
+  title = {{Auto-Encoding Variational Bayes}},
+  year = 2014
+}
+
+
+@article{Bocquet2011,
+abstract = {The main intrinsic source of error in the ensemble Kalman filter (EnKF) is sampling error. External sources of error, such as model error or deviations from Gaussianity, depend on the dynamical properties of the model. Sampling errors can lead to instability of the filter which, as a consequence, often requires inflation and localization. The goal of this article is to derive an ensemble Kalman filter which is less sensitive to sampling errors. A prior probability density function conditional on the forecast ensemble is derived using Bayesian principles. Even though this prior is built upon the assumption that the ensemble is Gaussian-distributed, it is different from the Gaussian probability density function defined by the empirical mean and the empirical error covariance matrix of the ensemble, which is implicitly used in traditional EnKFs. This new prior generates a new class of ensemble Kalman filters, called finite-size ensemble Kalman filter (EnKF-N). One deterministic variant, the finite-size ensemble transform Kalman filter (ETKF-N), is derived. It is tested on the Lorenz '63 and Lorenz '95 models. In this context, ETKF-N is shown to be stable without inflation for ensemble size greater than the model unstable subspace dimension, at the same numerical cost as the ensemble transform Kalman filter (ETKF). One variant of ETKF-N seems to systematically outperform the ETKF with optimally tuned inflation. However it is shown that ETKF-N does not account for all sampling errors, and necessitates localization like any EnKF, whenever the ensemble size is too small. In order to explore the need for inflation in this small ensemble size regime, a local version of the new class of filters is defined (LETKF-N) and tested on the Lorenz '95 toy model. Whatever the size of the ensemble, the filter is stable. Its performance without inflation is slightly inferior to that of LETKF with optimally tuned inflation for small interval between updates, and superior to LETKF with optimally tuned inflation for large time interval between updates. {\textcopyright} Author(s) 2011.},
+author = {Bocquet, M.},
+doi = {10.5194/npg-18-735-2011},
+issn = {10235809},
+journal = {Nonlinear Processes in Geophysics},
+title = {{Ensemble Kalman filtering without the intrinsic need for inflation}},
+year = {2011}
+}
+
+@misc{arabshahi2019memory,
+    title={Memory Augmented Recursive Neural Networks},
+    author={Forough Arabshahi and Zhichu Lu and Sameer Singh and Animashree Anandkumar},
+    year={2019},
+    eprint={1911.01545},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+@techreport{Buizza2000,
+abstract = {The weather is a chaotic system. Small errors in the initial conditions of a forecast grow rapidly, and affect predictability. Furthermore, predictability is limited by model errors due to the approximate simulation of atmospheric processes of the state-of-the-art numerical models. These two sources of uncertainties limit the skill of single, deterministic forecasts in an unpredictable way, with days of high/ poor quality forecasts randomly followed by days of high/poor quality forecasts. Two of the most recent advances in numerical weather prediction, the operational implementation of ensemble prediction systems and the development of objective procedures to target adaptive observations are discussed. Ensemble prediction is a feasible method to integrate a single, deterministic forecast with an estimate of the probability distribution function of forecast states. In particular, ensemble can provide forecasters with an objective way to predict the skill of single deterministic forecasts, or, in other words, to forecast the forecast skill. The European Centre for Medium-Range Weather Forecasts (ECMWF) Ensemble Prediction System (EPS), based on the notion that initial condition uncertainties are the dominant source of forecast error, is described. Adaptive observations targeted in sensitive regions can reduce the initial conditions' uncertainties, and thus decrease forecast errors. More generally, singular vectors that identify unstable regions of the atmospheric flow can be used to identify optimal ways to adapt the atmospheric observing system.},
+author = {Buizza, Roberto},
+booktitle = {ECMWF},
+title = {{Chaos and weather prediction}},
+year = {2000}
+}
+@article{jung2018ensemble,
+  title={Ensemble-based data assimilation in reservoir characterization: A review},
+  author={Jung, Seungpil and Lee, Kyungbook and Park, Changhyup and Choe, Jonggeun},
+  journal={Energies},
+  volume={11},
+  number={2},
+  pages={445},
+  year={2018},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+
+@book{asch2016data,
+  title={Data assimilation: methods, algorithms, and applications},
+  author={Asch, Mark and Bocquet, Marc and Nodet, Ma{\"e}lle},
+  volume={11},
+  year={2016},
+  publisher={SIAM}
+}
+
+@article{Xue2003,
+abstract = {In this paper, we first describe the current status of the Advanced Regional Prediction System of the Center for Analysis and Prediction of Storms at the University of Oklahoma. A brief outline of future plans is also given. Two rather successful cases of explicit prediction of tornadic thunderstorms are then presented. In the first case, a series of supercell storms that produced a historical number of tornadoes was successfully predicted more than 8 hours in advance, to within tens of kilometers in space with initiation timing errors of less than 2 hours. The general behavior and evolution of the predicted thunderstorms agree very well with radar observations. In the second case, reflectivity and radial velocity observations from Doppler radars were assimilated into the model at 15-minute intervals. The ensuing forecast, covering a period of several hours, accurately reproduced the intensification and evolution of a tornadic supercell that in reality spawned two tornadoes over a major metropolitan area. These results make us optimistic that a model system such as the ARPS will be able to deterministically predict future severe convective events with significant lead time. The paper also includes a brief description of a new 3DVAR system developed in the ARPS framework. The goal is to combine several steps of Doppler radar retrieval with the analysis of other data types into a single 3-D variational framework and later to incorporate the ARPS adjoint to establish a true 4DVAR data assimilation system that is suitable for directly assimilating a wide variety of observations for flows ranging from synoptic down to the small nonhydrostatic scales.},
+author = {Xue, Ming and Wang, Donghai and Gao, Jidong and Brewster, Keith and Droegemeier, Kelvin K.},
+doi = {10.1007/s00703-001-0595-6},
+issn = {01777971},
+journal = {Meteorology and Atmospheric Physics},
+title = {{The Advanced Regional Prediction System (ARPS), storm-scale numerical weather prediction and data assimilation}},
+year = {2003}
+}
+
+@incollection{Doucet2001,
+abstract = {Many real-world data analysis tasks involve estimating unknown quantities from some given observations. In most of these applications, prior knowledge about the phenomenon being modelled is available. This knowledge allows us to formulate Bayesian models, that is prior distributions for the unknown quantities and likelihood functions relating these quantities to the observations. Within this setting, all inference on the unknown quantities is based on the posterior distribution obtained from Bayes' theorem. Often, the observations arrive sequentially in time and one is interested in performing inference on-line. It is therefore necessary to update the posterior distribution as data become available. Examples include tracking an aircraft using radar measurements, estimating a digital communications signal using noisy measurements, or estimating the volatility of financial instruments using stock market data. Computational simplicity in the form of not having to store all the data might also be an additional motivating factor for sequential methods.},
+author = {Doucet, Arnaud and Freitas, Nando and Gordon, Neil},
+booktitle = {Sequential Monte Carlo Methods in Practice},
+doi = {10.1007/978-1-4757-3437-9_1},
+title = {{An Introduction to Sequential Monte Carlo Methods}},
+year = {2001}
+}
+@inproceedings{Gillijns2006_fokkerplanck,
+author = {Gillijns, S. and Mendoza, O. Barrero and Chandrasekar, J. and {De Moor}, B. L.R. and Bernstein, D. S. and Ridley, A.},
+booktitle = {Proceedings of the American Control Conference},
+doi = {10.1109/acc.2006.1657419},
+isbn = {1424402107},
+issn = {07431619},
+title = {{What is the ensemble Kalman filter and how well does it work?}},
+year = {2006}
+}
+@article{Carrassi2018_geosciences,
+author = {Carrassi, Alberto and Bocquet, Marc and Bertino, Laurent and Evensen, Geir},
+title = {Data assimilation in the geosciences: An overview of methods, issues, and perspectives},
+journal = {WIREs Climate Change},
+volume = {9},
+number = {5},
+pages = {e535},
+keywords = {Bayesian methods, data assimilation, ensemble methods, environmental prediction},
+url = {https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcc.535},
+eprint = {https://wires.onlinelibrary.wiley.com/doi/pdf/10.1002/wcc.535},
+abstract = {We commonly refer to state estimation theory in geosciences as data assimilation (DA). This term encompasses the entire sequence of operations that, starting from the observations of a system, and from additional statistical and dynamical information (such as a dynamical evolution model), provides an estimate of its state. DA is standard practice in numerical weather prediction, but its application is becoming widespread in many other areas of climate, atmosphere, ocean, and environment modeling; in all circumstances where one intends to estimate the state of a large dynamical system based on limited information. While the complexity of DA, and of the methods thereof, stands on its interdisciplinary nature across statistics, dynamical systems, and numerical optimization, when applied to geosciences, an additional difficulty arises by the continually increasing sophistication of the environmental models. Thus, in spite of DA being nowadays ubiquitous in geosciences, it has so far remained a topic mostly reserved to experts. We aim this overview article at geoscientists with a background in mathematical and physical modeling, who are interested in the rapid development of DA and its growing domains of application in environmental science, but so far have not delved into its conceptual and methodological complexities. This article is categorized under: Climate Models and Modeling > Knowledge Generation with Models},
+year = {2018}
+}
+
+
+
+@article{ensemble_of_data_ass,
+abstract = {A hybrid assimilation system which uses sample statistics from an Ensemble of Data Assimilations (EDA) to estimate background error variances has been implemented at ECMWF. We show that the new system is beneficial in terms of deterministic forecast skill provided that random and systematic errors in the estimation of variances are properly accounted for. The mechanisms through which EDA sample variances influence the deterministic analysis are clarified. An interesting aspect is that the use of flow-dependent variances alone is able to introduce a significant degree of flow-dependency in the analysis increments.},
+author = {Bonavita, Massimo and Isaksen, L and H{\'{o}}lm, E V},
+doi = {10.21957/3msfrh5zm},
+mendeley-groups = {Ensemble Filters},
+number = {664},
+pages = {31},
+publisher = {ECMWF},
+title = {{On the use of EDA background error variances in the ECMWF 4D-Var}},
+url = {https://www.ecmwf.int/node/8272},
+year = {2012}
+}
+
+@article{Sakov2012,
+abstract = {The study considers an iterative formulation of the ensemble Kalman filter (EnKF) for strongly nonlinear systems in the perfect-model framework. In the first part, a scheme is introduced that is similar to the en- semble randomized maximal likelihood (EnRML) filter by Gu and Oliver. The two new elements in the scheme are the use of the ensemble square root filter instead of the traditional (perturbed observations) EnKF and rescaling of the ensemble anomalies with the ensemble transform matrix from the previous iteration instead of estimating sensitivities between the ensemble observations and ensemble anomalies at the start of the assimilation cycle by linear regression. A simple modification turns the scheme into an ensemble for- mulation of the iterative extended Kalman filter. The two versions of the algorithm are referred to as the iterative EnKF (IEnKF) and the iterative extended Kalman filter (IEKF). In the second part, the performance of the IEnKF and IEKF is tested in five numerical experiments: two with the 3-element Lorenz model and three with the 40-element Lorenz model. Both the IEnKF and IEKF show a considerable advantage over the EnKF in strongly nonlinear systems when the quality or density of observations are sufficient to constrain the model to the regime of mainly linear propagation of the ensemble anomalies as well as constraining the fast-growing modes, with a much smaller advantage otherwise. The IEnKF and IEKF can potentially be used with large-scale models, and can represent a robust and scalable alternative to particle filter (PF) and hybrid PF-EnKF schemes in strongly nonlinear systems. {\textcopyright} 2012 American Meteorological Society.},
+author = {Sakov, Pavel and Oliver, Dean S. and Bertino, Laurent},
+doi = {10.1175/MWR-D-11-00176.1},
+issn = {00270644},
+journal = {Monthly Weather Review},
+keywords = {Kalman filters},
+title = {{An iterative EnKF for strongly nonlinear systems}},
+year = {2012}
+}
+
+@article{Snyder2008_highd_pf,
+abstract = {Particle filters are ensemble-based assimilation schemes that, unlike the ensemble Kalman filter, employ a fully nonlinear and non-Gaussian analysis step to compute the probability distribution function (pdf) of a system's state conditioned on a set of observations. Evidence is provided that the ensemble size required for a successful particle filter scales exponentially with the problem size. For the simple example in which each component of the state vector is independent, Gaussian, and of unit variance and the observations are of each state component separately with independent, Gaussian errors, simulations indicate that the required ensemble size scales exponentially with the state dimension. In this example, the particle filter requires at least 1011 members when applied to a 200-dimensional state. Asymptotic results, following the work of Bengtsson, Bickel, and collaborators, are provided for two cases: one in which each prior state component is independent and identically distributed, and one in which both the prior pdf and the observation errors are Gaussian. The asymptotic theory reveals that, in both cases, the required ensemble size scales exponentially with the variance of the observation log likelihood rather than with the state dimension per se. {\textcopyright} 2008 American Meteorological Society.},
+author = {Snyder, Chris and Bengtsson, Thomas and Bickel, Peter and Anderson, Jeff},
+doi = {10.1175/2008MWR2529.1},
+issn = {00270644},
+journal = {Monthly Weather Review},
+title = {{Obstacles to high-dimensional particle filtering}},
+year = {2008}
+}
+
+
+
+@article{coupled_da_penney,
+author = {Penny, Stephen G. and Hamill, Thomas M.},
+title = "{Coupled Data Assimilation for Integrated Earth System Analysis and Prediction}",
+journal = {Bulletin of the American Meteorological Society},
+volume = {98},
+number = {7},
+pages = {ES169-ES172},
+year = {2017},
+doi = {10.1175/BAMS-D-17-0036.1},
+
+eprint = { 
+        https://doi.org/10.1175/BAMS-D-17-0036.1
+    
+}
+
+}
+
+
+
+
+
+
+
+@article{yano_convective,
+author = {Yano, Jun-Ichi and Ziemiański, Michał Z. and Cullen, Mike and Termonia, Piet and Onvlee, Jeanette and Bengtsson, Lisa and Carrassi, Alberto and Davy, Richard and Deluca, Anna and Gray, Suzanne L. and Homar, Víctor and Köhler, Martin and Krichak, Simon and Michaelides, Silas and Phillips, Vaughan T. J. and Soares, Pedro M. M. and Wyszogrodzki, Andrzej A.},
+title = {Scientific Challenges of Convective-Scale Numerical Weather Prediction},
+journal = {Bulletin of the American Meteorological Society},
+volume = {99},
+number = {4},
+pages = {699-710},
+year = {2018},
+doi = {10.1175/BAMS-D-17-0125.1},
+
+URL = { 
+        https://doi.org/10.1175/BAMS-D-17-0125.1
+    
+},
+eprint = { 
+        https://doi.org/10.1175/BAMS-D-17-0125.1
+    
+}
+,
+    abstract = { AbstractAfter extensive efforts over the course of a decade, convective-scale weather forecasts with horizontal grid spacings of 1–5 km are now operational at national weather services around the world, accompanied by ensemble prediction systems (EPSs). However, though already operational, the capacity of forecasts for this scale is still to be fully exploited by overcoming the fundamental difficulty in prediction: the fully three-dimensional and turbulent nature of the atmosphere. The prediction of this scale is totally different from that of the synoptic scale (103 km), with slowly evolving semigeostrophic dynamics and relatively long predictability on the order of a few days.Even theoretically, very little is understood about the convective scale compared to our extensive knowledge of the synoptic-scale weather regime as a partial differential equation system, as well as in terms of the fluid mechanics, predictability, uncertainties, and stochasticity. Furthermore, there is a requirement for a drastic modification of data assimilation methodologies, physics (e.g., microphysics), and parameterizations, as well as the numerics for use at the convective scale. We need to focus on more fundamental theoretical issues—the Liouville principle and Bayesian probability for probabilistic forecasts—and more fundamental turbulence research to provide robust numerics for the full variety of turbulent flows.The present essay reviews those basic theoretical challenges as comprehensibly as possible. The breadth of the problems that we face is a challenge in itself: an attempt to reduce these into a single critical agenda should be avoided. }
+}
+
+
+@article{apt_nonlin_lagDA,
+author = {Apte, A and Jones, C K R T},
+doi = {10.5194/npg-20-329-2013},
+journal = {Nonlinear Processes in Geophysics},
+number = {3},
+pages = {329--341},
+title = {{The impact of nonlinearity in Lagrangian data assimilation}},
+url = {https://www.nonlin-processes-geophys.net/20/329/2013/},
+volume = {20},
+year = {2013}
+}
+
+
+
+
+
+
+@article{kuz_lagDA,
+author = {Kuznetsov, L. and Ide, K. and Jones, C. K. R. T.},
+title = {A Method for Assimilation of Lagrangian Data},
+journal = {Monthly Weather Review},
+volume = {131},
+number = {10},
+pages = {2247-2260},
+year = {2003},
+doi = {10.1175/1520-0493(2003)131<2247:AMFAOL>2.0.CO;2},
+
+URL = { 
+        https://doi.org/10.1175/1520-0493(2003)131<2247:AMFAOL>2.0.CO;2
+    
+},
+eprint = { 
+        https://doi.org/10.1175/1520-0493(2003)131<2247:AMFAOL>2.0.CO;2
+    
+}
+,
+    abstract = { Abstract Difficulties in the assimilation of Lagrangian data arise because the state of the prognostic model is generally described in terms of Eulerian variables computed on a fixed grid in space, as a result there is no direct connection between the model variables and Lagrangian observations that carry time-integrated information. A method is presented for assimilating Lagrangian tracer positions, observed at discrete times, directly into the model. The idea is to augment the model with tracer advection equations and to track the correlations between the flow and the tracers via the extended Kalman filter. The augmented model state vector includes tracer coordinates and is updated through the correlations to the observed tracers. The technique is tested for point vortex flows: an NF point vortex system with a Gaussian noise term is modeled by its deterministic counterpart. Positions of ND tracer particles are observed at regular time intervals and assimilated into the model. Numerical experiments demonstrate successful system tracking for (NF, ND) = (2, 1), (4, 2), provided the observations are reasonably frequent and accurate and the system noise level is not too high. The performance of the filter strongly depends on initial tracer positions (drifter launch locations). Analysis of this dependence shows that the good launch locations are separated from the bad ones by Lagrangian flow structures (separatrices or invariant manifolds of the velocity field). The method is compared to an alternative indirect approach, where the flow velocity, estimated from two (or more) consecutive drifter observations, is assimilated directly into the model. }
+}
+
+
+@misc{kidger2020neuralcontrol,
+    title={Neural Controlled Differential Equations for Irregular Time Series},
+    author={Patrick Kidger and James Morrill and James Foster and Terry Lyons},
+    year={2020},
+    eprint={2005.08926},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@misc{rackauckas2020universal,
+    title={Universal Differential Equations for Scientific Machine Learning},
+    author={Christopher Rackauckas and Yingbo Ma and Julius Martensen and Collin Warner and Kirill Zubov and Rohit Supekar and Dominic Skinner and Ali Ramadhan},
+    year={2020},
+    eprint={2001.04385},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@misc{brouwer2019gruodebayes,
+    title={GRU-ODE-Bayes: Continuous modeling of sporadically-observed time series},
+    author={Edward De Brouwer and Jaak Simm and Adam Arany and Yves Moreau},
+    year={2019},
+    eprint={1905.12374},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@incollection{concrete_dropout,
+author = {Gal, Yarin and Hron, Jiri and Kendall, Alex},
+booktitle = {Advances in Neural Information Processing Systems 30},
+editor = {Guyon, I and Luxburg, U V and Bengio, S and Wallach, H and Fergus, R and Vishwanathan, S and Garnett, R},
+pages = {3581--3590},
+publisher = {Curran Associates, Inc.},
+title = {{Concrete Dropout}},
+url = {http://papers.nips.cc/paper/6949-concrete-dropout.pdf},
+year = {2017}
+}
+
+@misc{adamsbayes,
+    title={Probabilistic Backpropagation for Scalable Learning of Bayesian Neural Networks},
+    author={José Miguel Hernández-Lobato and Ryan P. Adams},
+    year={2015},
+    eprint={1502.05336},
+    archivePrefix={arXiv},
+    primaryClass={stat.ML}
+}
+@book{neil_bayes,
+author = {Neal, Radford M.},
+title = {Bayesian Learning for Neural Networks},
+year = {1996},
+isbn = {0387947248},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg}
+}
+
+@article{Kuramoto1978,
+abstract = {Phase turbulence and amplitude turbulence are named and distinguished\nfrom a dynamical systems point of view. The prototyped equations\nare derived.},
+author = {Kuramoto, Yoshiki},
+doi = {10.1143/ptps.64.346},
+issn = {0375-9687},
+journal = {Progress of Theoretical Physics Supplement},
+title = {{Diffusion-Induced Chaos in Reaction Systems}},
+year = {1978}
+}
+@article{Kassam2005,
+abstract = {A modification of the exponential time-differencing fourth-order Runge-Kutta method for solving stiff nonlinear PDEs is presented that solves the problem of numerical instability in the scheme as proposed by Cox and Matthews and generalizes the method to nondiagonal operators. A comparison is made of the performance of this modified exponential time-differencing (ETD) scheme against the competing methods of implicit-explicit differencing, integrating factors, time-splitting, and Fornberg and Driscoll's "sliders" for the KdV, Kuramoto-Sivashinsky, Burgers, and Allen-Cahn equations in one space dimension. Implementation of the method is illustrated by short MATLAB programs for two of the equations. It is found that for these applications with fixed time steps, the modified ETD scheme is the best. {\textcopyright} 2005 Society for Industrial and Applied Mathematics.},
+author = {Kassam, Aly Khan and Trefethen, Lloyd N.},
+doi = {10.1137/S1064827502410633},
+issn = {10648275},
+journal = {SIAM Journal on Scientific Computing},
+keywords = {Allen-Cahn,Burgers,ETD,Exponential time-differencing,Implicit-explicit,Integrating factor,KdV,Kuramoto-Sivashinsky,Split step},
+title = {{Fourth-order time-stepping for stiff PDEs}},
+year = {2005}
+}
+
+
+@misc{tompson2014efficientspatialDO,
+    title={Efficient Object Localization Using Convolutional Networks},
+    author={Jonathan Tompson and Ross Goroshin and Arjun Jain and Yann LeCun and Christopher Bregler},
+    year={2014},
+    eprint={1411.4280},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+
+@article{JMLR:v15:srivastava14a,
+author = {Srivastava, Nitish and Hinton, Geoffrey and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan},
+journal = {Journal of Machine Learning Research},
+number = {56},
+pages = {1929--1958},
+title = {{Dropout: A Simple Way to Prevent Neural Networks from Overfitting}},
+url = {http://jmlr.org/papers/v15/srivastava14a.html},
+volume = {15},
+year = {2014}
+}
+
+@inproceedings{Zilly2017rhn,
+abstract = {Many sequential processing tasks require complex nonlinear transition functions from one step to the next. However, recurrent neural networks with "deep" transition functions remain difficult to train, even when using Long Short-Term Memory (LSTM) networks. We introduce a novel theoretical analysis of recurrent networks based on Ger{\v{s}}gorin's circle theorem that illuminates several modeling and optimization issues and improves our understanding of the LSTM cell. Based on this analysis we propose Recurrent Highway Networks, which extend the LSTM architecture to allow step-to-step transition depths larger than one. Several language modeling experiments demonstrate that the proposed architecture results in powerful and efficient models. On the Penn Treebank corpus, solely increasing the transition depth from 1 to 10 improves word-level perplexity from 90.6 to 65.4 using the same number of parameters. On the larger Wikipedia datasets for character prediction (text8 and enwik8), RHNs outperform all previous results and achieve an entropy of 1.27 bits per character.},
+archivePrefix = {arXiv},
+arxivId = {1607.03474},
+author = {Zilly, Julian Georg and Srivastava, Rupesh Kumar and Koutnik, Jan and Schmidhuber, J{\"{u}}rgen},
+booktitle = {34th International Conference on Machine Learning, ICML 2017},
+eprint = {1607.03474},
+isbn = {9781510855144},
+title = {{Recurrent highway networks}},
+year = {2017}
+}
+
+@article{Werbos1990BPTT,
+abstract = {Backpropagation is now the most widely used tool in the field of artificial neural networks. At the core of backpropagation is a method for calculating derivatives exactly and efficiently in any large system made up of elementary subsystems or calculations which are represented by known, differentiable functions; thus, backpropagation has many applications which do not involve neural networks as such. This paper first reviews basic backpropagation, a simple method which is now being widely used in areas like pattern recognition and fault diagnosis. Next, it presents the basic equations for back-propagation through time, and discusses applications to areas like pattern recognition involving dynamic systems, systems identification, and control. Finally, it describes further extensions of this method, to deal with systems other than neural networks, systems involving simultaneous equations or true recurrent networks, and other practical issues which arise with this method. Pseudocode is provided to clarify the algorithms. The chain rule forordered derivatives—the theorem which underlies backpropagation—is briefly discussed. {\textcopyright} 1990, IEEE},
+author = {Werbos, Paul J.},
+doi = {10.1109/5.58337},
+issn = {15582256},
+journal = {Proceedings of the IEEE},
+title = "{Backpropagation Through Time: What It Does and How to Do It}",
+year = {1990}
+}
+
+
+@inproceedings{karl2016deep,
+  title={{Deep Variational Bayes Filters: Unsupervised learning of state space models from raw data}},
+  author={Karl, Maximilian and Soelch, Maximilian and Bayer, Justin and Van der Smagt, Patrick},
+  booktitle={Proceedings of the International Conference on Learning Representations (ICLR)},
+  year={2017}
+}
+
+@misc{krishnan2015deep,
+    title={{Deep Kalman Filters}},
+    author={Rahul G. Krishnan and Uri Shalit and David Sontag},
+    year={2015},
+    eprint={1511.05121},
+    archivePrefix={arXiv},
+    primaryClass={stat.ML}
+}
+
+@incollection{Rangapuram_statespace,
+author = {Rangapuram, Syama Sundar and Seeger, Matthias W and Gasthaus, Jan and Stella, Lorenzo and Wang, Yuyang and Januschowski, Tim},
+booktitle = {Advances in Neural Information Processing Systems 31},
+editor = {Bengio, S and Wallach, H and Larochelle, H and Grauman, K and Cesa-Bianchi, N and Garnett, R},
+pages = {7785--7794},
+publisher = {Curran Associates, Inc.},
+title = {{Deep State Space Models for Time Series Forecasting}},
+url = {http://papers.nips.cc/paper/8004-deep-state-space-models-for-time-series-forecasting.pdf},
+year = {2018}
+}
+
+@article{bocquet2019data,
+  title={Data assimilation as a learning tool to infer ordinary differential equation representations of dynamical models},
+  author={Bocquet, Marc and Brajard, Julien and Carrassi, Alberto and Bertino, Laurent},
+  journal={Nonlinear Processes in Geophysics},
+  volume={26},
+  number={3},
+  pages={143--162},
+  year={2019},
+  publisher={Copernicus}
+}
+
+@InProceedings{frerix2021variational,
+  title = 	 {Variational Data Assimilation with a Learned Inverse Observation Operator},
+  author =       {Frerix, Thomas and Kochkov, Dmitrii and Smith, Jamie and Cremers, Daniel and Brenner, Michael and Hoyer, Stephan},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {3449--3458},
+  year = 	 {2021},
+  editor = 	 {Meila, Marina and Zhang, Tong},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {18--24 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v139/frerix21a/frerix21a.pdf},
+  url = 	 {https://proceedings.mlr.press/v139/frerix21a.html},
+  abstract = 	 {Variational data assimilation optimizes for an initial state of a dynamical system such that its evolution fits observational data. The physical model can subsequently be evolved into the future to make predictions. This principle is a cornerstone of large scale forecasting applications such as numerical weather prediction. As such, it is implemented in current operational systems of weather forecasting agencies across the globe. However, finding a good initial state poses a difficult optimization problem in part due to the non-invertible relationship between physical states and their corresponding observations. We learn a mapping from observational data to physical states and show how it can be used to improve optimizability. We employ this mapping in two ways: to better initialize the non-convex optimization problem, and to reformulate the objective function in better behaved physics space instead of observation space. Our experimental results for the Lorenz96 model and a two-dimensional turbulent fluid flow demonstrate that this procedure significantly improves forecast quality for chaotic systems.}
+}
+
+
+@article{Gr_nquist_2021,
+   title={Deep learning for post-processing ensemble weather forecasts},
+   volume={379},
+   ISSN={1471-2962},
+   DOI={10.1098/rsta.2020.0092},
+   number={2194},
+   journal={Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences},
+   publisher={The Royal Society},
+   author={Grönquist, Peter and Yao, Chengyuan and Ben-Nun, Tal and Dryden, Nikoli and Dueben, Peter and Li, Shigang and Hoefler, Torsten},
+   year={2021},
+   month={Feb},
+   pages={20200092}
+}
+
+@Article{chattopadhyay2021physically,
+AUTHOR = {Chattopadhyay, A. and Mustafa, M. and Hassanzadeh, P. and Bach, E. and Kashinath, K.},
+TITLE = {{Towards physically consistent data-driven weather forecasting: Integrating data assimilation with equivariance-preserving spatial transformers in a case study with ERA5}},
+JOURNAL = {Geoscientific Model Development Discussions},
+VOLUME = {2021},
+YEAR = {2021},
+PAGES = {1--23},
+URL = {https://gmd.copernicus.org/preprints/gmd-2021-71/},
+DOI = {10.5194/gmd-2021-71}
+}
+
+
+@InProceedings{becker2019recurrent,
+  title = 	 {{Recurrent Kalman Networks: Factorized Inference in High-Dimensional Deep Feature Spaces}},
+  author =       {Becker, Philipp and Pandya, Harit and Gebhardt, Gregor and Zhao, Cheng and Taylor, C. James and Neumann, Gerhard},
+  booktitle = 	 {Proceedings of the 36th International Conference on Machine Learning},
+  pages = 	 {544--552},
+  year = 	 {2019},
+  editor = 	 {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume = 	 {97},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--15 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v97/becker19a/becker19a.pdf},
+  url = 	 {https://proceedings.mlr.press/v97/becker19a.html},
+  abstract = 	 {In order to integrate uncertainty estimates into deep time-series modelling, Kalman Filters (KFs) (Kalman et al., 1960) have been integrated with deep learning models, however, such approaches typically rely on approximate inference tech- niques such as variational inference which makes learning more complex and often less scalable due to approximation errors. We propose a new deep approach to Kalman filtering which can be learned directly in an end-to-end manner using backpropagation without additional approximations. Our approach uses a high-dimensional factorized latent state representation for which the Kalman updates simplify to scalar operations and thus avoids hard to backpropagate, computationally heavy and potentially unstable matrix inversions. Moreover, we use locally linear dynamic models to efficiently propagate the latent state to the next time step. The resulting network architecture, which we call Recurrent Kalman Network (RKN), can be used for any time-series data, similar to a LSTM (Hochreiter &amp; Schmidhuber, 1997) but uses an explicit representation of uncertainty. As shown by our experiments, the RKN obtains much more accurate uncertainty estimates than an LSTM or Gated Recurrent Units (GRUs) (Cho et al., 2014) while also showing a slightly improved prediction performance and outperforms various recent generative models on an image imputation task.}
+}
+
+
+@inproceedings{
+yin2021aphynity,
+title={Augmenting Physical Models with Deep Networks for Complex Dynamics Forecasting},
+author={Yuan Yin and Vincent LE GUEN and J{\'e}r{\'e}mie DONA and Emmanuel de Bezenac and Ibrahim Ayed and Nicolas THOME and patrick gallinari},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=kmG8vRXTFv}
+}
+
+@book{kalnay2003atmospheric,
+  title={Atmospheric modeling, data assimilation and predictability},
+  author={Kalnay, Eugenia},
+  year={2003},
+  publisher={Cambridge university press}
+}
+
+@article{bouttier1994dynamical,
+  title={A dynamical estimation of forecast error covariances in an assimilation system},
+  author={Bouttier, Fran{\c{c}}ois},
+  journal={Monthly Weather Review},
+  volume={122},
+  number={10},
+  pages={2376--2390},
+  year={1994}
+}
+
+@misc{lehtinen2018noise2noise,
+      title={Noise2Noise: Learning Image Restoration without Clean Data}, 
+      author={Jaakko Lehtinen and Jacob Munkberg and Jon Hasselgren and Samuli Laine and Tero Karras and Miika Aittala and Timo Aila},
+      year={2018},
+      eprint={1803.04189},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+ @InProceedings{Krull_2019_CVPR,
+author = {Krull, Alexander and Buchholz, Tim-Oliver and Jug, Florian},
+title = {{Noise2Void - Learning Denoising From Single Noisy Images}},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2019}
+}
+
+@inproceedings{laine2019_denoising,
+ author = {Laine, Samuli and Karras, Tero and Lehtinen, Jaakko and Aila, Timo},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {High-Quality Self-Supervised Deep Image Denoising},
+ url = {https://proceedings.neurips.cc/paper/2019/file/2119b8d43eafcf353e07d7cb5554170b-Paper.pdf},
+ volume = {32},
+ year = {2019}
+}
+
+@inproceedings{fadnavis2020_patch2self,
+ author = {Fadnavis, Shreyas and Batson, Joshua and Garyfallidis, Eleftherios},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+ pages = {16293--16303},
+ publisher = {Curran Associates, Inc.},
+ title = {Patch2Self: Denoising Diffusion MRI with Self-Supervised Learning},
+ url = {https://proceedings.neurips.cc/paper/2020/file/bc047286b224b7bfa73d4cb02de1238d-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}
+
+@ARTICLE{bptt,
+
+  author={Werbos, P.J.},
+
+  journal={Proceedings of the IEEE}, 
+
+  title={Backpropagation through time: what it does and how to do it}, 
+
+  year={1990},
+
+  volume={78},
+
+  number={10},
+
+  pages={1550-1560},
+
+  doi={10.1109/5.58337}}
+
+@article {belkin_doubledesc,
+	author = {Belkin, Mikhail and Hsu, Daniel and Ma, Siyuan and Mandal, Soumik},
+	title = {Reconciling modern machine-learning practice and the classical bias{\textendash}variance trade-off},
+	volume = {116},
+	number = {32},
+	pages = {15849--15854},
+	year = {2019},
+	doi = {10.1073/pnas.1903070116},
+	publisher = {National Academy of Sciences},
+	abstract = {While breakthroughs in machine learning and artificial intelligence are changing society, our fundamental understanding has lagged behind. It is traditionally believed that fitting models to the training data exactly is to be avoided as it leads to poor performance on unseen data. However, powerful modern classifiers frequently have near-perfect fit in training, a disconnect that spurred recent intensive research and controversy on whether theory provides practical insights. In this work, we show how classical theory and modern practice can be reconciled within a single unified performance curve and propose a mechanism underlying its emergence. We believe this previously unknown pattern connecting the structure and performance of learning architectures will help shape design and understanding of learning algorithms.Breakthroughs in machine learning are rapidly changing science and society, yet our fundamental understanding of this technology has lagged far behind. Indeed, one of the central tenets of the field, the bias{\textendash}variance trade-off, appears to be at odds with the observed behavior of methods used in modern machine-learning practice. The bias{\textendash}variance trade-off implies that a model should balance underfitting and overfitting: Rich enough to express underlying structure in data and simple enough to avoid fitting spurious patterns. However, in modern practice, very rich models such as neural networks are trained to exactly fit (i.e., interpolate) the data. Classically, such models would be considered overfitted, and yet they often obtain high accuracy on test data. This apparent contradiction has raised questions about the mathematical foundations of machine learning and their relevance to practitioners. In this paper, we reconcile the classical understanding and the modern practice within a unified performance curve. This {\textquotedblleft}double-descent{\textquotedblright} curve subsumes the textbook U-shaped bias{\textendash}variance trade-off curve by showing how increasing model capacity beyond the point of interpolation results in improved performance. We provide evidence for the existence and ubiquity of double descent for a wide spectrum of models and datasets, and we posit a mechanism for its emergence. This connection between the performance and the structure of machine-learning models delineates the limits of classical analyses and has implications for both the theory and the practice of machine learning.},
+	issn = {0027-8424},
+	URL = {https://www.pnas.org/content/116/32/15849},
+	eprint = {https://www.pnas.org/content/116/32/15849.full.pdf},
+	journal = {Proceedings of the National Academy of Sciences}
+}
+
+@book{coddington1955theory,
+  title={Theory of ordinary differential equations},
+  author={Coddington, Earl A and Levinson, Norman},
+  year={1955},
+  publisher={Tata McGraw-Hill Education}
+}
+
+@article {papayan_featurecollapse,
+	author = {Papyan, Vardan and Han, X. Y. and Donoho, David L.},
+	title = {Prevalence of neural collapse during the terminal phase of deep learning training},
+	volume = {117},
+	number = {40},
+	pages = {24652--24663},
+	year = {2020},
+	doi = {10.1073/pnas.2015509117},
+	publisher = {National Academy of Sciences},
+	abstract = {Modern deep neural networks for image classification have achieved superhuman performance. Yet, the complex details of trained networks have forced most practitioners and researchers to regard them as black boxes with little that could be understood. This paper considers in detail a now-standard training methodology: driving the cross-entropy loss to zero, continuing long after the classification error is already zero. Applying this methodology to an authoritative collection of standard deepnets and datasets, we observe the emergence of a simple and highly symmetric geometry of the deepnet features and of the deepnet classifier, and we document important benefits that the geometry conveys{\textemdash}thereby helping us understand an important component of the modern deep learning training paradigm.Modern practice for training classification deepnets involves a terminal phase of training (TPT), which begins at the epoch where training error first vanishes. During TPT, the training error stays effectively zero, while training loss is pushed toward zero. Direct measurements of TPT, for three prototypical deepnet architectures and across seven canonical classification datasets, expose a pervasive inductive bias we call neural collapse (NC), involving four deeply interconnected phenomena. (NC1) Cross-example within-class variability of last-layer training activations collapses to zero, as the individual activations themselves collapse to their class means. (NC2) The class means collapse to the vertices of a simplex equiangular tight frame (ETF). (NC3) Up to rescaling, the last-layer classifiers collapse to the class means or in other words, to the simplex ETF (i.e., to a self-dual configuration). (NC4) For a given activation, the classifier{\textquoteright}s decision collapses to simply choosing whichever class has the closest train class mean (i.e., the nearest class center [NCC] decision rule). The symmetric and very simple geometry induced by the TPT confers important benefits, including better generalization performance, better robustness, and better interpretability.Experimental measurements have been deposited in the Stanford Digital Repository, https://purl.stanford.edu/ng812mz4543. An animation can be found at https://purl.stanford.edu/br193mh4244.},
+	issn = {0027-8424},
+	URL = {https://www.pnas.org/content/117/40/24652},
+	eprint = {https://www.pnas.org/content/117/40/24652.full.pdf},
+	journal = {Proceedings of the National Academy of Sciences}
+}
+
+@article{vanamersfoort2021improving,
+  publtype={informal},
+  author={Joost van Amersfoort and Lewis Smith and Andrew Jesson and Oscar Key and Yarin Gal},
+  title={{Improving Deterministic Uncertainty Estimation in Deep Learning for Classification and Regression}},
+  year={2021},
+  cdate={1609459200000},
+  journal={CoRR},
+  volume={abs/2102.11409},
+  url={https://arxiv.org/abs/2102.11409}
+}
+
+
+@InProceedings{rosca2020case,
+  title = 	 {A case for new neural network smoothness constraints},
+  author =       {Rosca, Mihaela and Weber, Theophane and Gretton, Arthur and Mohamed, Shakir},
+  booktitle = 	 {Proceedings on "I Can't Believe It's Not Better!" at NeurIPS Workshops},
+  pages = 	 {21--32},
+  year = 	 {2020},
+  editor = 	 {Zosa Forde, Jessica and Ruiz, Francisco and Pradier, Melanie F. and Schein, Aaron},
+  volume = 	 {137},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {12 Dec},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v137/rosca20a/rosca20a.pdf},
+  url = 	 {https://proceedings.mlr.press/v137/rosca20a.html},
+  abstract = 	 {How sensitive should machine learning models be to input changes? We tackle the question of model smoothness and show that it is a useful inductive bias which aids generalization, adversarial robustness, generative modeling and reinforcement learning. We explore current methods of imposing smoothness constraints and observe they lack the flexibility to adapt to new tasks, they don’t account for data modalities, they interact with losses, architectures and optimization in ways not yet fully understood. We conclude that new advances in the field are hinging on finding ways to incorporate data, tasks and learning into our definitions of smoothness.}
+}
+
+
+@InProceedings{vanamersfoort2020uncertainty,
+  title = 	 {Uncertainty Estimation Using a Single Deep Deterministic Neural Network},
+  author =       {Van Amersfoort, Joost and Smith, Lewis and Teh, Yee Whye and Gal, Yarin},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {9690--9700},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--18 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v119/van-amersfoort20a/van-amersfoort20a.pdf},
+  url = 	 {https://proceedings.mlr.press/v119/van-amersfoort20a.html},
+  abstract = 	 {We propose a method for training a deterministic deep model that can find and reject out of distribution data points at test time with a single forward pass. Our approach, deterministic uncertainty quantification (DUQ), builds upon ideas of RBF networks. We scale training in these with a novel loss function and centroid updating scheme and match the accuracy of softmax models. By enforcing detectability of changes in the input using a gradient penalty, we are able to reliably detect out of distribution data. Our uncertainty quantification scales well to large datasets, and using a single model, we improve upon or match Deep Ensembles in out of distribution detection on notable difficult dataset pairs such as FashionMNIST vs. MNIST, and CIFAR-10 vs. SVHN.}
+}
+
+@inproceedings{solverintheloop,
+ author = {Um, Kiwon and Brand, Robert and Fei, Yun (Raymond) and Holl, Philipp and Thuerey, Nils},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+ pages = {6111--6122},
+ publisher = {Curran Associates, Inc.},
+ title = {{Solver-in-the-Loop: Learning from Differentiable Physics to Interact with Iterative PDE-Solvers}},
+ url = {https://proceedings.neurips.cc/paper/2020/file/43e4e6a6f341e00671e123714de019a8-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}
+
+@Article{at_chem,
+AUTHOR = {Bocquet, M. and Elbern, H. and Eskes, H. and Hirtl, M. and \v{Z}abkar, R. and Carmichael, G. R. and Flemming, J. and Inness, A. and Pagowski, M. and P\'erez Cama\~no, J. L. and Saide, P. E. and San Jose, R. and Sofiev, M. and Vira, J. and Baklanov, A. and Carnevale, C. and Grell, G. and Seigneur, C.},
+TITLE = {Data assimilation in atmospheric chemistry models: current status and future prospects for coupled chemistry meteorology models},
+JOURNAL = {Atmospheric Chemistry and Physics},
+VOLUME = {15},
+YEAR = {2015},
+NUMBER = {10},
+PAGES = {5325--5358},
+URL = {https://acp.copernicus.org/articles/15/5325/2015/},
+DOI = {10.5194/acp-15-5325-2015}
+}
+
+@article{bauer2015quiet,
+  title={The quiet revolution of numerical weather prediction},
+  author={Bauer, Peter and Thorpe, Alan and Brunet, Gilbert},
+  journal={Nature},
+  volume={525},
+  number={7567},
+  pages={47--55},
+  year={2015},
+  publisher={Nature Publishing Group}
+}
+
+@incollection{randall2007climate,
+  title={Climate models and their evaluation},
+  author={Randall, David A and Wood, Richard A and Bony, Sandrine and Colman, Robert and Fichefet, Thierry and Fyfe, John and Kattsov, Vladimir and Pitman, Andrew and Shukla, Jagadish and Srinivasan, Jayaraman and others},
+  booktitle={Climate change 2007: The physical science basis. Contribution of Working Group I to the Fourth Assessment Report of the IPCC (FAR)},
+  pages={589--662},
+  year={2007},
+  publisher={Cambridge University Press}
+}
+
+@book{fichtner2010full,
+  title={Full seismic waveform modelling and inversion},
+  author={Fichtner, Andreas},
+  year={2010},
+  publisher={Springer Science \& Business Media}
+}
+
+@article{bresch2010computational,
+  title={Computational modeling of solid tumor growth: the avascular stage},
+  author={Bresch, Didier and Colin, Thierry and Grenier, Emmanuel and Ribba, Benjamin and Saut, Olivier},
+  journal={SIAM Journal on Scientific Computing},
+  volume={32},
+  number={4},
+  pages={2321--2344},
+  year={2010},
+  publisher={SIAM}
+}
+
+@article{bertoglio2012sequential,
+  title={Sequential parameter estimation for fluid--structure problems: application to hemodynamics},
+  author={Bertoglio, Crist{\'o}bal and Moireau, Philippe and Gerbeau, Jean-Frederic},
+  journal={International Journal for Numerical Methods in Biomedical Engineering},
+  volume={28},
+  number={4},
+  pages={434--455},
+  year={2012},
+  publisher={Wiley Online Library}
+}
+
+@article{engl2009inverse,
+  title={Inverse problems in systems biology},
+  author={Engl, Heinz W and Flamm, Christoph and K{\"u}gler, Philipp and Lu, James and M{\"u}ller, Stefan and Schuster, Peter},
+  journal={Inverse Problems},
+  volume={25},
+  number={12},
+  pages={123014},
+  year={2009},
+  publisher={IOP Publishing}
+}
+
+
+@book{wiggins1990introduction,
+  title={Introduction to applied nonlinear dynamical systems and chaos},
+  author={Wiggins, Stephen and Wiggins, Stephen and Golubitsky, Martin},
+  volume={2},
+  year={1990},
+  publisher={Springer}
+}
+
+@article{alfonsi2009reynolds,
+  title={Reynolds-averaged Navier--Stokes equations for turbulence modeling},
+  author={Alfonsi, Giancarlo},
+  journal={Applied Mechanics Reviews},
+  volume={62},
+  number={4},
+  year={2009},
+  publisher={American Society of Mechanical Engineers Digital Collection}
+}
+
+@article{lesieur1996new,
+  title={New trends in large-eddy simulations of turbulence},
+  author={Lesieur, Marcel and Metais, Olivier},
+  journal={Annual review of fluid mechanics},
+  volume={28},
+  number={1},
+  pages={45--82},
+  year={1996},
+  publisher={Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}
+}
+
+@misc{kingma2014autoencoding,
+      title={Auto-Encoding Variational {Bayes}}, 
+      author={Diederik P Kingma and Max Welling},
+      year={2014},
+      eprint={1312.6114},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+ @InProceedings{amorfea, title = "{Amortized Finite Element Analysis for Fast {PDE}-Constrained Optimization}", author = {Xue, Tianju and Beatson, Alex and Adriaenssens, Sigrid and Adams, Ryan}, booktitle = {Proceedings of the 37th International Conference on Machine Learning}, pages = {10638--10647}, year = {2020}, editor = {Hal Daumé III and Aarti Singh}, volume = {119}, series = {Proceedings of Machine Learning Research}, month = {13--18 Jul}, publisher = {PMLR}, pdf = {http://proceedings.mlr.press/v119/xue20a/xue20a.pdf}, url = { http://proceedings.mlr.press/v119/xue20a.html }, abstract = {Optimizing the parameters of partial differential equations (PDEs), i.e., PDE-constrained optimization (PDE-CO), allows us to model natural systems from observations or perform rational design of structures with complicated mechanical, thermal, or electromagnetic properties. However, PDE-CO is often computationally prohibitive due to the need to solve the PDE—typically via finite element analysis (FEA)—at each step of the optimization procedure. In this paper we propose amortized finite element analysis (AmorFEA), in which a neural network learns to produce accurate PDE solutions, while preserving many of the advantages of traditional finite element methods. This network is trained to directly minimize the potential energy from which the PDE and finite element method are derived, avoiding the need to generate costly supervised training data by solving PDEs with traditional FEA. As FEA is a variational procedure, AmorFEA is a direct analogue to popular amortized inference approaches in latent variable models, with the finite element basis acting as the variational family. AmorFEA can perform PDE-CO without the need to repeatedly solve the associated PDE, accelerating optimization when compared to a traditional workflow using FEA and the adjoint method.} } 
+ 
+@inproceedings{
+ravi2018amortized,
+title="{Amortized Bayesian Meta-Learning}",
+author={Sachin Ravi and Alex Beatson},
+booktitle={International Conference on Learning Representations},
+year={2019},
+url={https://openreview.net/forum?id=rkgpy3C5tX},
+}
+
+@article{chen2018neuralode,
+  title={Neural Ordinary Differential Equations},
+  author={Chen, Ricky T. Q. and Rubanova, Yulia and Bettencourt, Jesse and Duvenaud, David},
+  journal={Advances in Neural Information Processing Systems},
+  year={2018}
+}
+
+@article{Vissio_2020,
+   title={Mechanics and thermodynamics of a new minimal model of the atmosphere},
+   volume={135},
+   ISSN={2190-5444},
+   DOI={10.1140/epjp/s13360-020-00814-w},
+   number={10},
+   journal={The European Physical Journal Plus},
+   publisher={Springer Science and Business Media LLC},
+   author={Vissio, Gabriele and Lucarini, Valerio},
+   year={2020},
+   month={Oct}
+}
+
+@article{zupanski1997general,
+  title={A general weak constraint applicable to operational 4DVAR data assimilation systems},
+  author={Zupanski, Dusanka},
+  journal={Monthly Weather Review},
+  volume={125},
+  number={9},
+  pages={2274--2292},
+  year={1997},
+  publisher={American Meteorological Society}
+}
+
+@article {hamill01_loc,
+      author = "Thomas M. Hamill and Jeffrey S. Whitaker and Chris Snyder",
+      title = "{Distance-Dependent Filtering of Background Error Covariance Estimates in an Ensemble Kalman Filter}",
+      journal = "Monthly Weather Review",
+      year = "2001",
+      publisher = "American Meteorological Society",
+      address = "Boston MA, USA",
+      volume = "129",
+      number = "11",
+      pages=      "2776 - 2790",
+      url = "https://journals.ametsoc.org/view/journals/mwre/129/11/1520-0493_2001_129_2776_ddfobe_2.0.co_2.xml"
+}
+
+@article{Anderson1999_inf,
+   author    =  "J. L. Anderson and S. L. Anderson",
+   title     =  {{A Monte Carlo implementation of the nonlinear filtering problem to produce ensemble assimilations and forecasts}},
+   year      =  "1999",
+   journal   =  "Mon. Wea. Rev.",
+   volume    =  "127",
+   pages     =  "2741--2758"
+   }
